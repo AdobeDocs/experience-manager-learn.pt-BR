@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 3%
 
 ---
@@ -30,16 +30,17 @@ ht-degree: 3%
    + [Configuração do painel de ativos](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Uso de funções personalizadas e do editor de código](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Tratamento de envios de formulário {#handling-af-form-submissions}
-   + [Criando um Fluxo de Trabalho de Revisão](handling-form-submissions/create-workflow-to-review.md)
-   + [Configuração do formulário adaptável para acionar o fluxo de trabalho](handling-form-submissions/trigger-workflow-on-form-submission.md)
+   + [Criando um Fluxo de Trabalho de Revisão](handling-form-submissions/creating-a-review-workflow.md)
+   + [Configuração do formulário adaptável para acionar o fluxo de trabalho](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Exibindo a Página de Agradecimentos](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Submetendo ao Ponto Final Externo](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envio de email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [Fluxo de Trabalho de Solicitação de Tempo de Desativação Pago](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Configuração do formulário adaptável para acionar AEM fluxo de trabalho - vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
-   + [Fluxo de trabalho de AEM PTO](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
    + [Personalizar Atribuir notificação de Tarefa](handling-form-submissions/customize-assign-task-notification.md)
 + Integrações úteis{#some-useful-integrations}
    + [Autenticação de dois fatores](some-useful-integrations/two-factor-authentication.md)
+
 + Formulários adaptáveis {#adaptive-forms}
    + [Instalação do AEM Forms no Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Serviço de pré-preenchimento no Forms adaptável](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
@@ -169,17 +170,17 @@ ht-degree: 3%
    + [Certificar Documentos](document-services/certifying-documents-aem-forms-tutorial.md)
 + Interative Communications for Print Canal {#ic-print-channel-tutorial}
    + [Introdução](ic-print-channel-tutorial/introduction.md)
-   + [Configurar o Tomcat](ic-print-channel-tutorial/partone.md)
-   + [Criar fonte de dados](ic-print-channel-tutorial/parttwo.md)
-   + [Criar modelo de dados do formulário](ic-print-channel-tutorial/partthree.md)
-   + [Criar layout XDP usando o Forms Designer](ic-print-channel-tutorial/partfour.md)
-   + [Criar fragmento de Documento](ic-print-channel-tutorial/partfive.md)
-   + [Criar Documento de Canal de impressão](ic-print-channel-tutorial/partsix.md)
-   + [Adicionar conteúdo às áreas de Público alvo](ic-print-channel-tutorial/partseven.md)
-   + [Configurando Gráfico de Linhas](ic-print-channel-tutorial/parteight.md)
-   + [Adicionando tabela ao Canal de impressão](ic-print-channel-tutorial/partnine.md)
-   + [Usando a pasta assistida para gerar Documentos de impressão](ic-print-channel-tutorial/partten.md)
-   + [Abrindo a interface do usuário do agente no envio do formulário](ic-print-channel-tutorial/parteleven.md)
+   + [Configurar o Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [Criar fonte de dados](ic-print-channel-tutorial/create-data-source.md)
+   + [Criar modelo de dados do formulário](ic-print-channel-tutorial/create-form-data-model.md)
+   + [Criar layout XDP usando o Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [Criar fragmento de Documento](ic-print-channel-tutorial/create-document-fragment.md)
+   + [Criar Documento de Canal de impressão](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [Adicionar conteúdo às áreas de Público alvo](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [Configurando Gráfico de Linhas](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [Adicionando tabela ao Canal de impressão](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [Usar a pasta assistida para gerar Documentos](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [Abrindo a interface do usuário do agente no envio do formulário](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Comunicações interativas {#interactive-communications}
    + [Uso da API em lote](interactive-communications/batch-generation-interactive-communications.md)
    + [Gráficos de várias séries](interactive-communications/multiseriescharts.md)
