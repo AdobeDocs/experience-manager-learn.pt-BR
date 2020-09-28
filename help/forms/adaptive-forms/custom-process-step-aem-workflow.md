@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Como estamos usando um objeto de Documento específico para o AEM Forms, é nece
 
 #### Criar e implantar
 
-[Crie o pacote conforme descrito aqui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verifique se ele está implantado e no estado ativo](http://localhost:450/system/console/bundles)
+[Crie o pacote conforme descrito aqui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verifique se ele está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
 
 Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos de formulário adaptável no sistema de arquivos&quot;.
 
