@@ -10,9 +10,9 @@ audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
 translation-type: tm+mt
-source-git-commit: 1eb15af3d9d2904856218aaad4d5c52233603a71
+source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '990'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,12 @@ As IDs de pod são fornecidas em cada instrução de log e permitem a filtragem 
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
 + Exemplo: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+
+## Arquivos de registro personalizados
+
+AEM como um Cloud Services não suporta arquivos de log personalizados, no entanto, ele oferece suporte a logs personalizados.
+
+Para que os registros Java fiquem disponíveis em AEM como Cloud Service (via [Cloud Manager](#cloud-manager) ou [Adobe I/O CLI](#aio)), as declarações de log personalizadas devem ser gravadas como `error.log`. Os registros gravados em registros nomeados personalizados, como `example.log`, não serão acessíveis a partir de AEM como Cloud Service.
 
 ## Logs do serviço de autor e publicação do AEM
 
@@ -54,7 +60,7 @@ Somente o AEM Publish Dispatcher fornece o servidor da Web do Apache e os logs d
    + Estágio: `WARN`
    + Produção: `ERROR`
 
-## Cloud Manager
+## Cloud Manager{#cloud-manager}
 
 O Adobe Cloud Manager permite o download de logs, por dia, por meio de uma ação de Logs de download de ambientes.
 
@@ -62,7 +68,7 @@ O Adobe Cloud Manager permite o download de logs, por dia, por meio de uma açã
 
 Esses registros podem ser baixados e inspecionados por meio de qualquer ferramenta de análise de log.
 
-## CLI de E/S de Adobe com o plug-in do Cloud Manager
+## CLI de E/S de Adobe com o plug-in do Cloud Manager{#aio}
 
 O Adobe Cloud Manager oferece suporte ao acesso a AEM como registros de Cloud Service por meio da CLI [de E/S do](https://github.com/adobe/aio-cli) Adobe com o plug-in [Cloud Manager para a CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)de E/S do Adobe.
 
