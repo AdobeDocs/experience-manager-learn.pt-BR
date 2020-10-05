@@ -10,7 +10,7 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -29,40 +29,40 @@ O site da WKND reprojetou seu home page e gostaria de redirecionar seus visitant
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
 1. Faça logon no Adobe Target e navegue até a guia Atividade
-2. Clique no botão **Criar Atividade** e escolha **atividade de teste** A/B
+1. Clique no botão **Criar Atividade** e escolha **atividade de teste** A/B
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-3. Selecione a opção **Visual Experience Composer** , forneça o URL da Atividade e clique em **Avançar**
+1. Selecione a opção **Visual Experience Composer** , forneça o URL da Atividade e clique em **Avançar**
 
    ![URL de atividade](assets/ab-test-url.png)
 
-4. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência** .
+1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência** .
 
    ![Opções de experiência](assets/experience-options.png)
 
-5. Opções de visualização disponíveis para a Experiência A e, em seguida, selecione a opção **Redirecionar para URL** e forneça um URL para o novo home page do site WKND.
+1. Opções de visualização disponíveis para a Experiência A e, em seguida, selecione a opção **Redirecionar para URL** e forneça um URL para o novo home page do site WKND.
 
    ![URI de redirecionamento](assets/redirect-url.png)
 
-6. Renomeie a *experiência A* para o *novo Home page* WKND e a *experiência B* para o Home page *WKND*
+1. Renomeie a *experiência A* para o *novo Home page* WKND e a *experiência B* para o Home page *WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-7. Clique em **Avançar** para ir para Definição de metas e manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
+1. Clique em **Avançar** para ir para Definição de metas e manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
 
    ![Direcionar](assets/targeting.png)
 
-8. Para Metas e configurações, escolha a fonte do Relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de visualização de página.
+1. Para Metas e configurações, escolha a fonte do Relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de visualização de página.
 
    ![Metas](assets/goals.png)
 
-9. Forneça um nome para sua atividade e Salvar.
-10. Ative sua atividade salva para colocar suas alterações em execução.
+1. Forneça um nome para sua atividade e Salvar.
+1. Ative sua atividade salva para colocar suas alterações em execução.
 
    ![Metas](assets/activate.png)
 
-11. Abra a página do site (URL da Atividade da etapa 3) em uma nova guia e você deve ser capaz de visualização de qualquer uma das experiências (Home page WKND ou Novo Home page WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para `us/home.html`.
+1. Abra a página do site (URL da Atividade da etapa 3) em uma nova guia e você deve ser capaz de visualização de qualquer uma das experiências (Home page WKND ou Novo Home page WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para `us/home.html`.
 
    ![Metas](assets/redirect-test.png)
 
