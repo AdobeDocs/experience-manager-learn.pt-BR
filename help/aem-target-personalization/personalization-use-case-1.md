@@ -4,10 +4,10 @@ seo-title: Personalização usando fragmentos de experiência do Adobe Experienc
 description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando os Adobe Experience Manager Experience Fragments e o Adobe Target.
 seo-description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando os Adobe Experience Manager Experience Fragments e o Adobe Target.
 translation-type: tm+mt
-source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +52,9 @@ Para este exercício, os usuários a seguir precisam estar envolvidos e para exe
       * **Texto**: &quot;Inscreva-se para os Audition&quot;
       * **Botão**: &quot;Detalhes do Evento&quot; apontando para a página WKND SkateFest
       * **Página** WKND SkateFest: uma nova página com detalhes do evento, incluindo o local do teste, a data e a hora.
-2. Com base nos requisitos, AEM Editor de conteúdo cria um Fragmento de experiência para o bloco de conteúdo e o exporta para a Adobe Target como uma Oferta. Para fornecer conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação principal do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um Fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos. Quando um Fragmento de experiência é exportado para a Adobe Target, todas as suas variações também são enviadas para a Adobe Target como Oferta.
+1. Com base nos requisitos, AEM Editor de conteúdo cria um Fragmento de experiência para o bloco de conteúdo e o exporta para a Adobe Target como uma Oferta. Para fornecer conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação principal do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um Fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos. Quando um Fragmento de experiência é exportado para a Adobe Target, todas as suas variações também são enviadas para a Adobe Target como Oferta.
 
-3. Após exportar o Fragmento de experiência de AEM para Adobe Target como Oferta, os profissionais de marketing podem criar Atividades no Público alvo usando essas Ofertas. Com base na campanha SkateFest do site da WKND, o profissional de marketing precisa criar e fornecer uma experiência personalizada para visitantes do site da WKND de cada estado. Para criar uma atividade de direcionamento de experiência, o comerciante precisa identificar as audiências. Para nossa campanha WKND SkateFest, precisamos criar 50 audiências separadas, com base em sua localização a partir da qual elas estão visitando o site da WKND.
+1. Após exportar o Fragmento de experiência de AEM para Adobe Target como Oferta, os profissionais de marketing podem criar Atividades no Público alvo usando essas Ofertas. Com base na campanha SkateFest do site da WKND, o profissional de marketing precisa criar e fornecer uma experiência personalizada para visitantes do site da WKND de cada estado. Para criar uma atividade de direcionamento de experiência, o comerciante precisa identificar as audiências. Para nossa campanha WKND SkateFest, precisamos criar 50 audiências separadas, com base em sua localização a partir da qual elas estão visitando o site da WKND.
    * [As audiências](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) definem o público alvo para a sua atividade e são usadas em qualquer lugar onde a definição de metas está disponível. Audiências públicos alvos são um conjunto definido de critérios de visitante. Ofertas podem ser direcionadas a audiências específicas (ou segmentos). Somente visitantes que pertencem a essa audiência veem a experiência direcionada a eles.  Por exemplo, você pode fornecer uma oferta para uma audiência composta de visitantes que usam um navegador específico ou de uma localização geográfica específica.
    * Uma [Oferta](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) é o conteúdo que é exibido em suas páginas da Web durante o campanha ou o atividade. Ao testar suas páginas da Web, você mede o sucesso de cada experiência com diferentes ofertas em seus locais. Uma Oferta pode conter diferentes tipos de conteúdo, incluindo:
       * Imagem
@@ -77,27 +77,27 @@ Para este exercício, os usuários a seguir precisam estar envolvidos e para exe
 ### Criar uma Audiência com GeoTargeting {#marketer-audience}
 
 1. Navegue até a sua empresa [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experience.ecloud.adobe.com)
-2. Faça logon usando seu Adobe ID e verifique se você está na organização correta.
-3. No alternador de soluções, clique no **Público alvo** e **inicie** o Adobe Target.
+1. Faça logon usando seu Adobe ID e verifique se você está na organização correta.
+1. No alternador de soluções, clique no **Público alvo** e **inicie** o Adobe Target.
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/exp-cloud-adobe-target.png)
 
-4. Navegue até a guia **Oferta** e pesquise por ofertas &quot;WKND&quot;. É possível visualizar a lista de variações de Fragmentos de experiência, exportadas de AEM como Ofertas HTML. Cada Oferta corresponde a um estado. Por exemplo, *WKND SkateFest California* é a oferta que é servida para um visitante WKND Site da Califórnia.
+1. Navegue até a guia **Oferta** e pesquise por ofertas &quot;WKND&quot;. É possível visualizar a lista de variações de Fragmentos de experiência, exportadas de AEM como Ofertas HTML. Cada Oferta corresponde a um estado. Por exemplo, *WKND SkateFest California* é a oferta que é servida para um visitante WKND Site da Califórnia.
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/html-offers.png)
 
-5. Na navegação principal, clique em **Audiência**.
+1. Na navegação principal, clique em **Audiência**.
 
    Um profissional de marketing precisa criar 50 audiências separadas para visitantes de site WKND provenientes de cada estado nos Estados Unidos da América.
 
-6. Para criar uma audiência, clique no botão **Criar Audiência** e forneça um nome para a audiência.
+1. Para criar uma audiência, clique no botão **Criar Audiência** e forneça um nome para a audiência.
 
    **Formato do nome da audiência: WKND-\&lt;*estado*\>**
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/audience-target-1.png)
 
-7. Clique em **Adicionar regra > Geo**.
-8. Clique em **Selecionar** e selecione uma das seguintes opções:
+1. Clique em **Adicionar regra > Geo**.
+1. Clique em **Selecionar** e selecione uma das seguintes opções:
    * País
    * **Estado** *(selecione Estado para a Campanha SkateFest do site WKND)*
    * Cidade
@@ -112,14 +112,14 @@ Para este exercício, os usuários a seguir precisam estar envolvidos e para exe
    >[!NOTE]
    >Um endereço IP do visitante é enviado com uma solicitação de mbox, uma vez por visita (sessão), para resolver os parâmetros de geolocalização do visitante.
 
-9. Selecione o operador como **correspondências**, forneça um valor apropriado (por exemplo: Califórnia) e **Salve** suas alterações. Em nosso caso, forneça o nome do estado.
+1. Selecione o operador como **correspondências**, forneça um valor apropriado (por exemplo: Califórnia) e **Salve** suas alterações. Em nosso caso, forneça o nome do estado.
 
    ![Adobe Target - Regra geográfica](assets/personalization-use-case-1/audience-geo-rule.png)
 
    >[!NOTE]
    >É possível ter várias regras atribuídas a uma audiência.
 
-10. Repita as etapas de 6 a 9 para criar audiências para os outros estados.
+1. Repita as etapas de 6 a 9 para criar audiências para os outros estados.
 
    ![Adobe Target - Audiências WKND](assets/personalization-use-case-1/adobe-target-audiences-50.png)
 
@@ -128,44 +128,60 @@ Nesse ponto, criamos com êxito audiências para todos os visitantes do site WKN
 ### Criar uma Atividade com GeoTargeting
 
 1. Na janela do Adobe Target, navegue até a guia **Atividade** .
-2. Clique em **Criar Atividade** e selecione o tipo de atividade de direcionamento de **experiência** .
-3. Selecione o canal **Web** e escolha o **Visual Experience Composer**.
-4. Insira o URL **da** Atividade e clique em **Avançar** para abrir o Visual Experience Composer.
+1. Clique em **Criar Atividade** e selecione o tipo de atividade de direcionamento de **experiência** .
+1. Selecione o canal **Web** e escolha o **Visual Experience Composer**.
+1. Insira o URL **da** Atividade e clique em **Avançar** para abrir o Visual Experience Composer.
 
    URL de publicação do Home page do site WKND: http://localhost:4503/content/wknd/en.html
+
    ![Atividade de direcionamento de experiência](assets/personalization-use-case-1/target-activity.png)
-5. Para que o **Visual Experience Composer** carregue, ative **Permitir carregamento de scripts** não seguros no seu navegador e recarregue sua página.
+
+1. Para que o **Visual Experience Composer** carregue, ative **Permitir carregamento de scripts** não seguros no seu navegador e recarregue sua página.
+
    ![Atividade de direcionamento de experiência](assets/personalization-use-case-1/load-unsafe-scripts.png)
-6. Observe que o home page do site WKND é aberto no editor do Visual Experience Composer.
+
+1. Observe que o home page do site WKND é aberto no editor do Visual Experience Composer.
+
    ![VEC](assets/personalization-use-case-1/vec.png)
-7. Para adicionar uma audiência ao seu VEC, clique em **Adicionar direcionamento** de experiência em Audiência e selecione a audiência WKND-California e clique em **Avançar**.
+
+1. Para adicionar uma audiência ao seu VEC, clique em **Adicionar direcionamento** de experiência em Audiência e selecione a audiência WKND-California e clique em **Avançar**.
+
    ![VEC](assets/personalization-use-case-1/vec-select-audience.png)
-8. Clique na página do site WKND no VEC, selecione o elemento HTML para adicionar a oferta para a audiência WKND-California, escolha **Substituir por** e selecione a Oferta ****HTML.
+
+1. Clique na página do site WKND no VEC, selecione o elemento HTML para adicionar a oferta para a audiência WKND-California, escolha **Substituir por** e selecione a Oferta **** HTML.
+
    ![Atividade de direcionamento de experiência](assets/personalization-use-case-1/vec-selecting-div.png)
-9. Selecione a oferta HTML **WKND SkateFest California** para a audiência **WKND-California** na oferta selecione UI e clique em **Concluído**.
-10. Agora você pode ver a Oferta HTML **WKND SkateFest California** adicionada à sua página do Site WKND para a audiência WKND-California.
-11. Repita as etapas de 7 a 10 para adicionar o direcionamento de experiência para os outros estados e escolha a Oferta HTML correspondente.
-12. Clique em **Avançar** para continuar e você poderá ver um mapeamento de Audiências para experiências.
-13. Clique em **Avançar** para ir para Metas e configurações.
-14. Escolha sua fonte de relatórios e identifique uma meta principal para sua atividade. Para nosso Cenário, vamos selecionar a Fonte do Relatórios como **Adobe Target**, medindo a atividade como **Conversão**, a ação como visualizada em uma página e o URL apontando para a página Detalhes do SkateFest WKND.
+
+1. Selecione a oferta HTML **WKND SkateFest California** para a audiência **WKND-California** na oferta selecione UI e clique em **Concluído**.
+1. Agora você pode ver a Oferta HTML **WKND SkateFest California** adicionada à sua página do Site WKND para a audiência WKND-California.
+1. Repita as etapas de 7 a 10 para adicionar o direcionamento de experiência para os outros estados e escolha a Oferta HTML correspondente.
+1. Clique em **Avançar** para continuar e você poderá ver um mapeamento de Audiências para experiências.
+1. Clique em **Avançar** para ir para Metas e configurações.
+1. Escolha sua fonte de relatórios e identifique uma meta principal para sua atividade. Para nosso Cenário, vamos selecionar a Fonte do Relatórios como **Adobe Target**, medindo a atividade como **Conversão**, a ação como visualizada em uma página e o URL apontando para a página Detalhes do SkateFest WKND.
+
    ![Meta e segmentação - Público alvo](assets/personalization-use-case-1/goal-metric-target.png)
 
    >[!NOTE]
    >Você também pode escolher Adobe Analytics como sua fonte de relatórios.
 
-15. Passe o mouse sobre o nome da atividade atual e renomeie-o para **WKND SkateFest - EUA** e, em seguida, **Salve e feche** suas alterações.
-16. Na tela de detalhes da Atividade, certifique-se de **Ativar** sua atividade.
+1. Passe o mouse sobre o nome da atividade atual e renomeie-o para **WKND SkateFest - EUA** e, em seguida, **Salve e feche** suas alterações.
+1. Na tela de detalhes da Atividade, certifique-se de **Ativar** sua atividade.
+
    ![Ativar Atividade](assets/personalization-use-case-1/activate-activity.png)
-17. Sua Campanha WKND SkateFest agora está ao vivo para todos os visitantes do site WKND.
-18. Navegue até o Home page [do site](http://localhost:4503/content/wknd/en.html)WKND e você deverá ser capaz de ver a Oferta WKND SkateFest com base na sua localização geográfica (*estado: Califórnia*).
+
+1. Sua Campanha WKND SkateFest agora está ao vivo para todos os visitantes do site WKND.
+1. Navegue até o Home page [do site](http://localhost:4503/content/wknd/en.html)WKND e você deverá ser capaz de ver a Oferta WKND SkateFest com base na sua localização geográfica (*estado: Califórnia*).
+
    ![QA da atividade](assets/personalization-use-case-1/wknd-california.png)
 
 ### QA da Atividade do público alvo
 
 1. Em Detalhes da **Atividade > guia Visão geral** , clique no botão de QA **da** Atividade e você pode obter o link de QA direto para todas as suas experiências.
+
    ![QA da atividade](assets/personalization-use-case-1/activity-qa.png)
-2. Navegue até o Home page [do site](http://localhost:4503/content/wknd/en.html)WKND e você deverá ser capaz de ver a Oferta WKND SkateFest com base em sua localização geográfica (estado).
-3. Assista ao vídeo abaixo para entender como uma oferta é entregue à sua página, como personalizar tokens de resposta e executar uma verificação de qualidade.
+
+1. Navegue até o Home page [do site](http://localhost:4503/content/wknd/en.html)WKND e você deverá ser capaz de ver a Oferta WKND SkateFest com base em sua localização geográfica (estado).
+1. Assista ao vídeo abaixo para entender como uma oferta é entregue à sua página, como personalizar tokens de resposta e executar uma verificação de qualidade.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28658?quality=12&learn=on)
 
