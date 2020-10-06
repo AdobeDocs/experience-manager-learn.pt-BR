@@ -9,7 +9,7 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -25,7 +25,7 @@ A Visão geral [!UICONTROL do] sistema Adobe Experience Manager (AEM) fornece um
 
 1. A Visão geral do sistema pode ser acessada de: **start** AEM > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Visão geral **[!UICONTROL do sistema]**
 
-   Diretamente em **[!DNL <server-host>/libs/granite/operations/content/systemoverview.html]**
+   Diretamente em **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. As informações da Visão geral [!UICONTROL do] sistema podem ser exportadas clicando no botão [!UICONTROL Download] . A informação é também exposta através do seguinte [!DNL REST] parâmetro:
 1. Abaixo está um exemplo de saída do JSON que é exportado da Visão geral [!UICONTROL do]sistema:
