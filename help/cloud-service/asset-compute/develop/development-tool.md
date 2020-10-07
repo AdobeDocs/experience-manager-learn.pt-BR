@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ A Asset Compute Development Tool é um recurso da Web local que permite aos dese
 
 ## Execute a ferramenta de desenvolvimento Asset Compute
 
-A Ferramenta de desenvolvimento de computação de ativos pode ser executada a partir da raiz do projeto de aplicativo Computação de ativos por meio do comando terminal:
+A Ferramenta de desenvolvimento de computação de ativos pode ser executada a partir da raiz do projeto Computação de ativos por meio do comando terminal:
 
 ```
 $ aio app run
@@ -42,9 +42,9 @@ Isso start a ferramenta de desenvolvimento em __http://localhost:9000__ e a abre
 1. __Definição do perfil do Asset Compute:__ Define o trabalhador do Asset Compute a ser executado incluindo parâmetros: incluindo o ponto final do URL do trabalhador, o nome da representação resultante e quaisquer parâmetros
 1. __Executar:__ O botão Executar executa o perfil Asset Compute, conforme definido no editor do perfil de configuração Asset Compute
 1. __Abortar:__ O botão Abortar cancela uma execução iniciada ao tocar no botão Executar
-1. __Solicitação/resposta:__ Fornece a solicitação HTTP e a resposta para/do aplicativo Asset Compute em execução no Adobe Runtime. Isso pode ser útil para depurar
-1. __Logs de ativação:__ Os registros que descrevem a execução do aplicativo Asset Compute, juntamente com quaisquer erros. Essas informações também estão disponíveis no `aio app run` padrão
-1. __Representações:__ Exibe todas as execuções geradas pela execução do aplicativo Asset Compute
+1. __Solicitação/resposta:__ Fornece a solicitação HTTP e a resposta para/do trabalhador Asset Compute em execução no Adobe I/O Runtime. Isso pode ser útil para depurar
+1. __Logs de ativação:__ Os registros que descrevem a execução do trabalhador do Asset Compute, juntamente com quaisquer erros. Essas informações também estão disponíveis no `aio app run` padrão
+1. __Representações:__ Exibe todas as representações geradas pela execução do trabalhador do Asset Compute
 1. __parâmetro do query devToolToken:__ O token Asset Compute Development Tool requer que um parâmetro de `devToolToken` query válido esteja presente. Esse token é gerado automaticamente sempre que uma nova ferramenta de desenvolvimento é gerada
 
 ### Executar um trabalhador personalizado
@@ -89,9 +89,9 @@ A Ferramenta de Desenvolvimento de Computação de Ativo pode inserir um estado 
 
 + __Erro:__ A lista suspensa do arquivo de origem exibe itens incorretos.
 + __Causa:__ O estado do navegador em cache obsoleto causa a
-+ __Resolução:__ No navegador, limpe completamente o estado do aplicativo da guia do navegador, o cache do navegador, o armazenamento local e o trabalhador do serviço.
++ __Resolução:__ Em seu navegador, limpe completamente o &quot;estado do aplicativo&quot; da guia do navegador, o cache do navegador, o armazenamento local e o trabalhador do serviço.
 
-### Parâmetro de query devToolToken ausente{#troubleshooting__devtooltoken}
+### Parâmetro de query devToolToken ausente ou inválido{#troubleshooting__devtooltoken}
 
 + __Erro:__ Notificação &quot;Não autorizada&quot; na ferramenta de desenvolvimento de computação de ativos
 + __Causa:__ `devToolToken` está ausente ou inválido
@@ -101,6 +101,6 @@ A Ferramenta de Desenvolvimento de Computação de Ativo pode inserir um estado 
 
 + __Erro:__ Não há como remover arquivos de origem adicionados da interface do usuário das Ferramentas de Desenvolvimento
 + __Causa:__ Esta funcionalidade não foi implementada
-+ __Resolução:__ Faça logon no provedor de armazenamentos na nuvem usando as credenciais definidas em `.env`. Localize o container usado pelas Ferramentas de desenvolvimento (também especificadas em `.env`), navegue até a pasta __de origem__ e exclua as imagens de origem. Talvez seja necessário executar as etapas descritas na lista suspensa Arquivos [de origem incorretas](#troubleshooting__dev-tool-application-cache) se os arquivos de origem excluídos continuarem a ser exibidos na lista suspensa, pois podem ser armazenados em cache localmente no estado do aplicativo Ferramentas de desenvolvimento.
++ __Resolução:__ Faça logon no provedor de armazenamentos na nuvem usando as credenciais definidas em `.env`. Localize o container usado pelas Ferramentas de desenvolvimento (também especificadas em `.env`), navegue até a pasta __de origem__ e exclua as imagens de origem. Talvez seja necessário executar as etapas descritas na lista suspensa Arquivos [de origem incorretas](#troubleshooting__dev-tool-application-cache) se os arquivos de origem excluídos continuarem a ser exibidos na lista suspensa, pois podem ser armazenados em cache localmente no &quot;estado do aplicativo&quot; das Ferramentas de desenvolvimento.
 
    ![Armazenamento Blob do Microsoft Azure](./assets/development-tool/troubleshooting__remove-source-files.png)
