@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: ecee5f83dc778b016b6d236c1e3bcc4919ee55a7
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Este tutorial percorre a criação de um trabalhador da Computação de ativos s
 
 Saiba como se preparar adequadamente para estender os funcionários da Asset Compute, e entender quais serviços e contas devem ser provisionados e configurados e o software instalado localmente para o desenvolvimento.
 
-### Provisionamento de conta e serviços
+### Provisionamento de conta e serviços{#accounts-and-services}
 
 As contas e os serviços a seguir exigem provisionamento e acesso para concluir o tutorial, AEM como um ambiente de desenvolvedor de Cloud Service ou programa Sandbox, acesso ao Adobe Project Firefly e ao Armazenamento Blob do Microsoft Azure.
 
@@ -50,13 +50,13 @@ As contas e os serviços a seguir exigem provisionamento e acesso para concluir 
 
 ### Ambiente de desenvolvimento local
 
-O desenvolvimento local de aplicativos de Computação de ativos exige um conjunto de ferramentas de desenvolvedor específico, diferente do desenvolvimento AEM tradicional, incluindo: Código do Microsoft Visual Studio, Docker Desktop, Node.js e módulos npm de suporte.
+O desenvolvimento local de projetos de Computação de ativos requer um conjunto de ferramentas de desenvolvedor específico, diferente do desenvolvimento AEM tradicional, incluindo: Código do Microsoft Visual Studio, Docker Desktop, Node.js e módulos npm de suporte.
 
 + [Configurar ambiente de desenvolvimento local](./set-up/development-environment.md)
 
 ### Adobe Project Firefly
 
-Os projetos de Computação de ativos são aplicativos Adobe Project Firefly especialmente definidos e, como tal, exigem acesso ao Adobe Project Firefly no Adobe Developer Console para configurá-los e implantá-los.
+Os projetos de Computação de ativos são projetos Adobe Project Firefly especialmente definidos e, como tal, exigem acesso ao Adobe Project Firefly no Adobe Developer Console para configurá-los e implantá-los.
 
 + [Configurar o Adobe Project Firefly](./set-up/firefly.md)
 
@@ -66,7 +66,7 @@ Saiba como criar e configurar um projeto de Computação de ativos e, em seguida
 
 ### Criar um novo projeto de Computação de ativos
 
-Os projetos de aplicativos Asset Compute, que contêm um ou mais funcionários da Asset Compute, são gerados usando a CLI de E/S do Adobe interativa. Os aplicativos de Computação de ativos são aplicativos Adobe Project Firefly especialmente estruturados, que, por sua vez, são aplicativos Node.js.
+Os projetos de Computação de ativos, que contêm um ou mais funcionários da Computação de ativos, são gerados usando a CLI de E/S do Adobe interativa. Os projetos de computação de ativos são projetos Adobe Project Firefly especialmente estruturados, que são por sua vez projetos Node.js.
 
 + [Criar um novo projeto de Computação de ativos](./develop/project.md)
 
@@ -78,7 +78,7 @@ As variáveis de ambiente são mantidas no `.env` arquivo para desenvolvimento l
 
 ### Configurar o manifest.yml
 
-Os aplicativos de Computação de ativos contêm manifestos que definem todos os funcionários da Computação de ativos contidos no projeto, bem como quais recursos eles têm disponíveis quando implantados na Adobe I/O Runtime para execução.
+Os projetos de Computação de ativos contêm manifestos que definem todos os funcionários da Computação de ativos contidos no projeto, bem como quais recursos eles têm disponíveis quando implantados na Adobe I/O Runtime para execução.
 
 + [Configurar o manifest.yml](./develop/manifest.md)
 
@@ -106,7 +106,7 @@ A Asset Compute fornece uma estrutura de teste para a criação de conjuntos de 
 
 ### Depurar um trabalhador
 
-Os aplicativos de Computação de ativos fornecem vários níveis de depuração desde a saída tradicional `console.log(..)` até integrações com o Código ____ VS e __wskdebug__, permitindo que os desenvolvedores avancem pelo código de trabalho conforme ele é executado em tempo real.
+Os funcionários da Asset Compute fornecem vários níveis de depuração, desde a saída tradicional, até integrações com o Código `console.log(..)` __VS e__ wskdebug ____, permitindo que os desenvolvedores avancem pelo código de trabalho conforme ele é executado em tempo real.
 
 + [Depurar um trabalhador](./test-debug/debug.md)
 
@@ -125,6 +125,14 @@ Os funcionários da Asset Compute devem ser implantados na Adobe I/O Runtime par
 Depois de implantados na Adobe I/O Runtime, os funcionários da Asset Compute podem ser registrados em AEM como Cloud Service através dos Perfis [de processamento de](../../assets/configuring/processing-profiles.md)ativos. Os Perfis de processamento são, por sua vez, aplicados às pastas Ativos que se aplicam aos ativos neles contidos.
 
 + [Integrar a Perfis de processamento AEM](./deploy/processing-profiles.md)
+
+## Base de código do tutorial sobre o Github
+
+A base de códigos do tutorial está disponível no Github em:
+
++ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ ramo principal
+
+O código-fonte não contém os arquivos necessários `.env` ou `config.json` . Eles devem ser adicionados e configurados usando suas [contas e informações de serviços](#accounts-and-services) .
 
 ## Recursos adicionais
 
