@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Todos os serviços de Adobe devem estar acessíveis por meio da mesma Organizaç
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-O acesso a um AEM como ambiente Cloud Service é necessário para configurar Perfis de processamento AEM Assets para chamar o aplicativo personalizado Asset Compute.
+O acesso a um AEM como ambiente Cloud Service é necessário para configurar Perfis de processamento AEM Assets para chamar o funcionário personalizado Asset Compute.
 
 O ideal é que um programa sandbox ou um ambiente de Desenvolvimento que não seja sandbox esteja disponível para uso.
 
@@ -47,7 +47,7 @@ Observe que um SDK de AEM local é insuficiente para concluir este tutorial, já
 
 ## Adobe Project Firefly{#adobe-project-firefly}
 
-A estrutura [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) é usada para criar e implantar aplicativos personalizados na plataforma Adobe I/O Runtime, Adobe Server Fireverless. AEM os aplicativos de computação de ativos são aplicativos Firefly especialmente criados para integração com a AEM Assets por meio de Perfis de processamento, e oferecem a capacidade de acessar e processar binários de ativos.
+A estrutura [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) é usada para criar e implantar ações personalizadas na plataforma Adobe I/O Runtime, Adobe Server Fireverless. AEM Os projetos de Computação de ativos são projetos Firefly especialmente construídos que se integram à AEM Assets por meio de Perfis de processamento e oferecem a capacidade de acessar e processar binários de ativos.
 
 Para obter acesso ao Project Firefly, inscreva-se para a pré-visualização.
 
@@ -57,9 +57,9 @@ Para obter acesso ao Project Firefly, inscreva-se para a pré-visualização.
 
 ## Armazenamento em nuvem
 
-O armazenamento Cloud é necessário para o desenvolvimento local de aplicativos de Computação de ativos.
+O armazenamento Cloud é necessário para o desenvolvimento local de projetos de Computação de ativos.
 
-Quando os aplicativos Asset Compute são implantados na Adobe I/O Runtime para uso direto por AEM como Cloud Service, esse armazenamento em nuvem não é estritamente necessário, pois AEM fornece o armazenamento em nuvem do qual o ativo é lido e renderizado.
+Quando os funcionários da Asset Compute são implantados na Adobe I/O Runtime para uso direto por AEM como Cloud Service, esse armazenamento em nuvem não é estritamente necessário, pois AEM fornece o armazenamento em nuvem do qual o ativo é lido e renderizado.
 
 ### Armazenamento Blob do Microsoft Azure{#azure-blob-storage}
 
