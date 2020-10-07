@@ -1,6 +1,6 @@
 ---
 title: Desenvolver um funcionário da Asset Computing
-description: Os funcionários da Computação de ativos são o núcleo de um aplicativo da Computação de ativos que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova execução.
+description: Os funcionários da Computação de ativos são o núcleo de um projeto da Computação de ativos que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova execução.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # Desenvolver um funcionário da Asset Computing
 
-Os funcionários da Computação de ativos são o núcleo de um aplicativo da Computação de ativos que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova execução.
+Os funcionários da Computação de ativos são o núcleo de um projeto da Computação de ativos que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova representação.
 
 O projeto Computação de ativos gera automaticamente um trabalhador simples que copia o binário original do ativo em uma representação nomeada, sem transformações. Neste tutorial, modificaremos esse funcionário para fazer uma execução mais interessante, a fim de ilustrar o poder dos trabalhadores da Asset Compute.
 
-Criaremos um funcionário Asset Compute que gera uma nova representação de imagem horizontal, que cobre o espaço vazio à esquerda e à direita da representação do ativo com uma versão borrada do ativo. A largura, a altura e o desfoque da representação final serão parametrizados.
+Criaremos um funcionário de Computação de ativos que gera uma nova representação de imagem horizontal, que cobre o espaço vazio à esquerda e à direita da representação de ativos com uma versão borrada do ativo. A largura, a altura e o desfoque da representação final serão parametrizados.
 
-## Noções básicas sobre a execução de um trabalhador da Computação de ativos
+## Fluxo lógico de uma invocação de trabalho do Asset Compute
 
-Os funcionários da Asset Compute implementam o contrato da API de trabalho do Asset Compute SDK, que é simplesmente:
+Os funcionários da Asset Compute implementam o contrato da API de trabalho do Asset Compute SDK, na `renditionCallback(...)` função, que é conceitualmente:
 
 + __Entrada:__ Um binário e parâmetros de ativo original do ativo AEM
 + __Saída:__ Uma ou mais representações a serem adicionadas ao ativo AEM
 
-![Fluxo de execução do trabalhador da Computação de ativos](./assets/worker/execution-flow.png)
+![Fluxo lógico do trabalhador Computação de ativos](./assets/worker/logical-flow.png)
 
 1. Quando um funcionário de Computação de ativos é chamado do serviço de autor de AEM, ele é contra um ativo AEM por meio de um Perfil de processamento. O binário original do ativo __(1a)__ é passado ao trabalhador por meio do `source` parâmetro da função de retorno de chamada de representação, e __(1b)__ quaisquer parâmetros definidos no Perfil Processamento por meio do conjunto de `rendition.instructions` parâmetros.
-1. O código de trabalho do Asset Compute transforma o binário de origem fornecido em __(1a)__ com base em qualquer parâmetro fornecido por __(1b)__ para gerar uma representação do binário de origem.
+1. A camada do SDK do Asset Compute aceita a solicitação do perfil de processamento e orquestra a execução da `renditionCallback(...)` função do funcionário personalizado do Asset Compute, transformando o binário de origem fornecido em __(1a)__ com base em qualquer parâmetro fornecido pelo __(1b)__ para gerar uma representação do binário de origem.
    + Neste tutorial, a execução é criada &quot;em andamento&quot;, o que significa que o trabalhador compõe a execução, no entanto, o binário de origem também pode ser enviado para outras APIs de serviço da Web para geração de renderização.
 1. O funcionário da Computação de ativos salva a representação binária da execução, na qual ela fica disponível para ser salva no serviço Autor de AEM. `rendition.path`
-1. Após a conclusão, os dados binários gravados `rendition.path` são expostos pelo Serviço de autor de AEM como uma execução para o ativo AEM no qual o trabalhador do Asset Compute foi chamado.
+1. Após a conclusão, os dados binários gravados `rendition.path` são transportados pelo SDK do Asset Compute e expostos pelo Serviço de autor de AEM como uma execução disponível na interface do usuário AEM.
+
+O diagrama acima articula as preocupações do desenvolvedor do Asset Compute e o fluxo lógico para a invocação do trabalhador do Asset Compute. Para o curioso, os detalhes [internos da execução](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) da Computação de ativos estão disponíveis, no entanto, somente os contratos públicos da API SDK da Computação de ativos devem ser dependentes.
 
 ## Anatomia de um trabalhador
 
@@ -106,7 +108,7 @@ Este é o arquivo JavaScript do trabalhador que modificaremos neste tutorial.
 
 ## Instalar e importar módulos npm de suporte
 
-Como os aplicativos Node.js, os aplicativos Asset Compute se beneficiam do ecossistema [robusto do módulo](https://npmjs.com)npm. Para aproveitar os módulos npm, primeiro é necessário instalá-los em nosso projeto de aplicativo Asset Compute.
+Sendo baseados em Node.js, os projetos de Computação de ativos se beneficiam do ecossistema [robusto do módulo](https://npmjs.com)npm. Para aproveitar os módulos npm, primeiro é necessário instalá-los em nosso projeto Asset Compute.
 
 Neste trabalhador, aproveitamos o [jimp](https://www.npmjs.com/package/jimp) para criar e manipular a imagem de execução diretamente no código Node.js.
 
@@ -380,6 +382,12 @@ Estes são lidos no trabalhador `index.js` por meio de:
    ![Execução PNG com parâmetros](./assets/worker/parameterized-rendition.png)
 
 1. Faça upload de outras imagens para a lista suspensa Arquivo __de__ origem e tente executar o trabalhador contra elas com parâmetros diferentes!
+
+## Worker index.js no Github
+
+A versão final `index.js` está disponível no site Github:
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Resolução de problemas
 
