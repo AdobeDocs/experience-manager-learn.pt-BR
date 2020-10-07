@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: 59bfc9ae08acca6c41234f23eaa60f56e2eda890
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '778'
 ht-degree: 2%
 
 ---
@@ -76,6 +76,14 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
 ## Concluído!
 
 Parabéns! Você concluiu o [tutorial](../overview.md) sobre como estender AEM como um Cloud Service Asset Compute microservices! Agora você deve ter a capacidade de configurar, desenvolver, testar, depurar e implantar funcionários personalizados da Asset Compute para uso pelo seu AEM como um serviço de Autor de Cloud Service.
+
+### Revise o código-fonte completo do projeto no Github
+
+O projeto final Asset Compute está disponível no Github em:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contém o estado final do projeto, totalmente preenchido com os casos de trabalhador e teste, mas não contém quaisquer credenciais, ou seja,`.env`,`.config.json`ou`.aio`._
 
 ## Resolução de problemas
 
