@@ -5,9 +5,9 @@ description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager As
 seo-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets
 sub-product: ativos, mídia dinâmica
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 5%
 O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos digitais em AEM plataforma que permite que os usuários criem, gerenciem e compartilhem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e recursos do AEM Assets.
 
 ## Novidades
+
+* **[Marcas d&#39;água (Vídeo)](./advanced/watermarks.md)**
+
+   <br>
+   *Saiba como marcar as representações de ativos como um Cloud Service em AEM*
 
 * **[Permissões da linha de base (Vídeo)](./configuring/baseline-permissions.md)**
 
@@ -38,12 +43,6 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 
    <br>
    *Explore como as coleções no AEM Assets oferecem novas maneiras de organizar e descobrir ativos*
-
-* **[Uso da Tarefa de revisão (vídeo)](./collaboration/review-task.md)**
-
-   <br>
-   *Use o fluxo de trabalho de Revisão da Tarefa para aprovar (ou rejeitar) ativos de forma rápida e fácil*
-
 
 ## Separações de Pessoal
 
@@ -91,7 +90,7 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 
 ## Recursos adicionais
 
-* [Experience League - Explore AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentação do AEM Assets](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html)
 * [AEM como Tutorials Cloud Service](/help/cloud-service/overview.md)
 * [Tutorials AEM Sites](/help/sites/overview.md)
