@@ -1,6 +1,6 @@
 ---
 title: Criar um projeto de Computação de ativos para extensibilidade de Computação de ativos
-description: Os aplicativos Asset Compute são projetos Node.js, gerados usando a CLI de E/S do Adobe, que seguem uma estrutura específica, permitindo que eles sejam implantados na Adobe I/O Runtime e integrados com AEM como Cloud Service.
+description: Os projetos de Computação de ativos são projetos Node.js, gerados usando a CLI de E/S do Adobe, que seguem uma estrutura específica, permitindo que eles sejam implantados na Adobe I/O Runtime e integrados ao AEM como um Cloud Service.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Criar um projeto de Computação de ativos
 
-Os aplicativos Asset Compute são projetos Node.js, gerados usando a CLI de E/S do Adobe, que seguem uma estrutura específica que permite a implantação desses projetos na Adobe I/O Runtime e a integração com AEM como Cloud Service. Um único projeto de Computação de ativos pode conter um ou mais funcionários da Computação de ativos, cada um com um ponto final HTTP distinto referenciável de um AEM como um Perfil de Processamento de Cloud Service.
+Os projetos de Computação de ativos são projetos Node.js, gerados usando a CLI de E/S do Adobe, que seguem uma estrutura específica que permite que eles sejam implantados na Adobe I/O Runtime e integrados ao AEM como um Cloud Service. Um único projeto de Computação de ativos pode conter um ou mais funcionários da Computação de ativos, cada um com um ponto final HTTP distinto referenciável de um AEM como um Perfil de Processamento de Cloud Service.
 
 ## Gerar um projeto
 
@@ -51,7 +51,7 @@ Use o plug-in [](../set-up/development-environment.md#aio-cli) Adobe I/O CLI Ass
 
 ## Rever a anatomia do projeto
 
-O projeto Asset Compute gerado é um projeto Node.js para um aplicativo especializado Adobe Project Firefly, sendo os seguintes idiossincráticos para o projeto Asset Compute:
+O projeto Asset Compute gerado é um projeto Node.js para um projeto especializado do Adobe Project Firefly; os seguintes projetos são idiossincráticos para o projeto Asset Compute:
 
 + `/actions` contém subpastas e cada subpasta define um funcionário do Asset Compute.
    + `/actions/<worker-name>/index.js` define o JavaScript executado para executar o trabalho desse trabalhador.
@@ -65,6 +65,14 @@ O projeto Asset Compute gerado é um projeto Node.js para um aplicativo especial
 + `/.env` define variáveis de ambiente em uma `key=value` sintaxe e contém segredos que não devem ser compartilhados. Para proteger esses segredos, este arquivo NÃO deve ser verificado no Git e é ignorado pelo `.gitignore` arquivo padrão do projeto.
    + As variáveis definidas neste arquivo podem ser substituídas pela [exportação de variáveis](../deploy/runtime.md) na linha de comando.
 
-Para obter mais detalhes sobre a revisão da estrutura do projeto, reveja a [Anatomia de um aplicativo](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)Firefly do Adobe Project.
+Para obter mais detalhes sobre a revisão da estrutura do projeto, reveja a [Anatomia de um projeto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)do Adobe Project Firefly.
 
 A maior parte do desenvolvimento ocorre na `/actions` pasta que desenvolve implementações de funcionários e em testes `/test/asset-compute` escritos para os funcionários personalizados da Asset Compute.
+
+## Projeto Asset Compute no Github
+
+O projeto final Asset Compute está disponível no Github em:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contém o estado final do projeto, totalmente preenchido com os casos de trabalhador e teste, mas não contém quaisquer credenciais, ou seja,`.env`,`.config.json`ou`.aio`._
