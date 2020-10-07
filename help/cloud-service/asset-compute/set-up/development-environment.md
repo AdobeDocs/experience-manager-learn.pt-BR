@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
 translation-type: tm+mt
-source-git-commit: 53e4235c55d890765e9f13ffeb37a2c805fb307b
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurar ambiente de desenvolvimento local
 
-Os aplicativos Adobe Asset Compute não podem ser integrados com o tempo de execução local AEM fornecido pelo SDK AEM e são desenvolvidos usando sua própria cadeia de ferramentas, diferente da exigida pelos aplicativos AEM com base no arquétipo de projeto AEM Maven.
+Os projetos de Computação de ativos de Adobe não podem ser integrados com o tempo de execução local AEM fornecido pelo SDK AEM e são desenvolvidos usando sua própria cadeia de ferramentas, separada da exigida por AEM aplicativos baseados no arquétipo de projeto AEM Maven.
 
 Para estender os microserviços da Asset Compute, as seguintes ferramentas devem ser instaladas na máquina de desenvolvedor local.
 
@@ -46,7 +46,7 @@ Veja a seguir as instruções para a configuração do abridge. Detalhes sobre e
 
 ## Instalar código do Visual Studio{#vscode}
 
-[O código](https://code.visualstudio.com/download) do Microsoft Visual Studio é usado para desenvolver e depurar aplicativos do Asset Compute. Embora outros IDE [compatíveis com](../../local-development-environment/development-tools.md#set-up-the-development-ide) JavaScript possam ser usados para desenvolver o aplicativo, somente o Código do Visual Studio pode ser integrado para [depurar](../test-debug/debug.md) aplicativos do Asset Compute.
+[O código](https://code.visualstudio.com/download) do Microsoft Visual Studio é usado para desenvolver e depurar os trabalhadores do Asset Compute. Embora outros IDE [compatíveis com](../../local-development-environment/development-tools.md#set-up-the-development-ide) JavaScript possam ser usados para desenvolver o trabalhador, somente o Código do Visual Studio pode ser integrado ao trabalho de [depuração](../test-debug/debug.md) do Asset Compute.
 
 _Visual Studio Code 1.48.x+ é necessário para que[wskdebug](#wskdebug)funcione._
 
@@ -67,7 +67,7 @@ Os desenvolvedores em máquinas Windows devem certificar-se de que estão usando
 
 ## Instalar Node.js (e npm){#node-js}
 
-Os funcionários da Asset Compute são aplicativos [Node.js](https://nodejs.org/) e, portanto, exigem que Node.js 10+ (e npm) seja desenvolvido e construído.
+Os funcionários da Asset Compute têm base no [Node.js](https://nodejs.org/)e, portanto, exigem que o Node.js 10+ (e npm) seja desenvolvido e construído.
 
 + [Instale o Node.js (e npm)](../../local-development-environment/development-tools.md#node-js) da mesma maneira que para o desenvolvimento AEM tradicional.
 
@@ -89,7 +89,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Instalar wskdebug{#wskdebug}
 
-Baixe e instale o módulo [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm para facilitar a depuração local dos aplicativos Asset Compute.
+Baixe e instale o módulo [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm para facilitar a depuração local dos trabalhadores do Asset Compute.
 
 _Visual Studio Code 1.48.x+ é necessário para que[wskdebug](#wskdebug)funcione._
 
@@ -99,7 +99,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## Instalar o ngrok{#ngrok}
 
-Baixe e instale o módulo [ngrok](https://www.npmjs.com/package/ngrok) npm, que fornece acesso público à sua máquina de desenvolvimento local, para facilitar a depuração local dos aplicativos Asset Compute.
+Baixe e instale o módulo [ngrok](https://www.npmjs.com/package/ngrok) npm, que fornece acesso público à sua máquina de desenvolvimento local, para facilitar a depuração local dos trabalhadores da Asset Compute.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
