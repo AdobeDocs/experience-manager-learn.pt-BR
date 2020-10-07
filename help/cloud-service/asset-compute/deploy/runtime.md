@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Como este projeto foi gerado usando `aio app init` a `Development` área de trab
 
 Para implantar no espaço de trabalho, defina no arquivo de projetos `.env` :
 
-1. Abra a linha de comando na raiz do projeto do aplicativo Asset Compute
+1. Abra a linha de comando na raiz do projeto Computação de ativos
 1. Executar o comando `aio app deploy`
 1. Execute o comando `aio app get-url` para obter o URL do trabalhador para uso no AEM como um Perfil de processamento de Cloud Service para fazer referência a esse funcionário personalizado do Asset Compute. Se o projeto contiver vários trabalhadores, URLs separados para cada trabalhador serão listados.
 
@@ -54,7 +54,7 @@ A definição de variáveis de ambiente verdadeiras substitui os valores das var
 A abordagem geral, normalmente automatizada por um sistema de CI/CD, para implantação em ambientes de estágio e produção é:
 
 1. Verifique se o módulo [Adobe I/O CLI npm e o plug-in](../set-up/development-environment.md#aio) Asset Compute estão instalados
-1. Confira o aplicativo Asset Compute a ser implantado do Git
+1. Confira o projeto Asset Compute a ser implantado do Git
 1. Defina as variáveis do ambiente com os valores que correspondem à área de trabalho do público alvo (Palco ou Produção)
    + As duas variáveis necessárias são `AIO_runtime_namespace` e são obtidas por espaço de trabalho no Console do desenvolvedor de E/S do Adobe por meio do recurso `AIO_runtime_auth` Download de tudo ____ da Workspace.
 
@@ -74,7 +74,7 @@ Se os funcionários da Computação de ativos exigirem outras variáveis, como n
 1. Os URLs de trabalho referenciados pelo AEM como Perfil de processamento de Cloud Service também estão disponíveis via:
    + `aio app get-url`.
 
-Se a versão do aplicativo Asset Compute alterar o(s) URL(s) do trabalhador também é alterado para refletir a nova versão, e o URL precisará ser atualizado nos Perfis de processamento.
+Se a versão do projeto do Asset Compute alterar os URLs do trabalhador também mudarão para refletir a nova versão, e o URL precisará ser atualizado nos Perfis de processamento.
 
 ## Provisionamento da API do espaço de trabalho{#workspace-api-provisioning}
 
