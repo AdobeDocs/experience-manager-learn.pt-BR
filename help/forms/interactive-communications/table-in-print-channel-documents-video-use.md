@@ -9,7 +9,7 @@ doc-type: technical video
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -26,7 +26,8 @@ O vídeo a seguir apresenta as etapas necessárias para usar o componente de tab
 Tabelas são usadas para exibir dados de maneira tabular. As linhas na tabela precisam aumentar ou diminuir dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento do canal de impressão, é necessário criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Neste arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto de campo de coluna é TextField ou Numeric Field, dependendo de seus requisitos. Para cada coluna, os campos garantem que o vínculo de dados esteja definido como Usar nome.
 
 >[!NOTE]
-Para tornar a tabela dinâmica, certifique-se de ter marcado a Linha como repetida.
+>
+>Para tornar a tabela dinâmica, certifique-se de ter marcado a Linha como repetida.
 
 **Experimente no seu próprio servidor**
 
