@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 2%
@@ -74,6 +74,7 @@ A versão das Ferramentas do Dispatcher é diferente da do SDK AEM. Verifique se
 Observe que todos os comandos emitidos abaixo assumem que o diretório de trabalho atual contém o conteúdo expandindo as Ferramentas do Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *Este vídeo usa o macOS para fins ilustrativos. Os comandos Windows/Linux equivalentes podem ser usados para obter resultados semelhantes*
 
 ## Entenda os arquivos de configuração do Dispatcher
@@ -86,6 +87,7 @@ As Ferramentas do Dispatcher fornecem um conjunto de arquivos de configuração 
 Esses arquivos devem ser copiados em um projeto Experience Manager Maven para a `dispatcher/src` pasta, caso ainda não existam no projeto Experience Manager Maven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *Este vídeo usa o macOS para fins ilustrativos. Os comandos Windows/Linux equivalentes podem ser usados para obter resultados semelhantes*
 
 Uma descrição completa dos arquivos de configuração está disponível nas Ferramentas do Dispatcher descompactadas como `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -142,6 +144,7 @@ Para executar as Ferramentas do Dispatcher em relação à configuração do Dis
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *Este vídeo usa o macOS para fins ilustrativos. Os comandos Windows/Linux equivalentes podem ser usados para obter resultados semelhantes*
 
 ## Logs de ferramentas do Dispatcher
@@ -177,6 +180,7 @@ Um ou vários parâmetros podem ser transmitidos para `docker_run`
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *Este vídeo usa o macOS para fins ilustrativos. Os comandos Windows/Linux equivalentes podem ser usados para obter resultados semelhantes*
 
 ## Quando atualizar as Ferramentas do Dispatcher{#dispatcher-tools-version}
