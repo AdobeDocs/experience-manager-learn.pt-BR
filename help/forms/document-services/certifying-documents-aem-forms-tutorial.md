@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -49,8 +49,10 @@ Você pode gravar seu próprio pacote OSGi e usar o AEM Forms Client SDK para im
 * [Usar a API de serviço de Documento](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Ou você pode usar o conjunto de amostras incluído como parte dos ativos do tutorial.
+
 >[!NOTE]
-O pacote de amostra usa alias chamado &quot;ares&quot; para certificar os documentos. Portanto, certifique-se de que o seu alias se chama &quot;ares&quot; ao utilizar este pacote
+>
+>O pacote de amostra usa alias chamado &quot;ares&quot; para certificar os documentos. Portanto, certifique-se de que o seu alias se chama &quot;ares&quot; ao utilizar este pacote
 
 ## Teste da amostra no sistema local
 
