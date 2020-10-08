@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Isso start a ferramenta de desenvolvimento em __http://localhost:9000__ e a abre
 ### Executar um trabalhador personalizado
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _Click-through de executar um trabalho de Computação de ativos na Ferramenta de desenvolvimento (Sem áudio)_
 
 1. Certifique-se de que a Ferramenta de desenvolvimento de computação de ativo seja iniciada da raiz do seu projeto usando o `aio app run` comando.
