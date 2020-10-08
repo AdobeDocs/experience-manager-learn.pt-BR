@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -88,8 +88,10 @@ Se estiver a utilizar Homebrew, siga as instruções de __instalação utilizand
 ![Node.js e npm](./assets/development-tools/nodejs-and-npm.png)
 
 >[!TIP]
-> [AEM Projetos baseados no AEM Project Archetype](https://github.com/adobe/aem-project-archetype)instalam uma versão isolada do Node.js no momento da criação. É bom manter a versão do sistema de desenvolvimento local sincronizada (ou próxima) das versões Node.js e npm especificadas no AEM Maven project&#39;s Reator pom.xml.
-Consulte este exemplo [AEM Project Reator pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) para saber onde localizar as versões de compilação Node.js e npm.
+>
+>[AEM Projetos baseados no AEM Project Archetype](https://github.com/adobe/aem-project-archetype)instalam uma versão isolada do Node.js no momento da criação. É bom manter a versão do sistema de desenvolvimento local sincronizada (ou próxima) das versões Node.js e npm especificadas no AEM Maven project&#39;s Reator pom.xml.
+>
+>Consulte este exemplo [AEM Project Reator pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) para saber onde localizar as versões de compilação Node.js e npm.
 
 ## Instalar o Maven
 
