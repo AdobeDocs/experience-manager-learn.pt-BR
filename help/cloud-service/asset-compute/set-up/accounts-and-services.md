@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -68,6 +68,7 @@ Se você ainda não tiver acesso ao Armazenamento Blob do Microsoft Azure, inscr
 Este tutorial usará o Armazenamento Blob do Azure, no entanto, o [Amazon S3](#amazon-s3) também pode ser usado somente para variações secundárias do tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
 _Click-through de provisionamento do Armazenamento Blob do Azure (Sem áudio)_
 
 
