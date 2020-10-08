@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,11 @@ ht-degree: 0%
 Saiba como criar e testar uma Atividade Adobe Target usando AEM ofertas de fragmento de experiência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
+
+Antes de criar uma Atividade no Público alvo, é necessário fazer a configuração:
+
+1. [Integrar Experience Platform Launch e AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+2. [Integre o Adobe Experience Manager ao Adobe Target usando Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
 
 ## Links de suporte
 
