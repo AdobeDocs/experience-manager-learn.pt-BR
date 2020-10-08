@@ -13,10 +13,10 @@ version: 6.4, 6.5
 uuid: 7b91f65d-5a35-419a-8cf7-be850165dd33
 discoiquuid: 45fc8d83-73fb-42e5-9c92-ce588c085ed4
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 10%
+source-wordcount: '459'
+ht-degree: 11%
 
 ---
 
@@ -52,6 +52,5 @@ O Adobe Experience Manager 6.4 reinventa o fluxo de trabalho de personalização
 
 ## Recursos adicionais {#additional-resources}
 
-* [Personalização fluida - AEM fragmentos de experiência no Adobe Target](https://www.youtube.com/watch?v=ohvKDjCb1yM)
 * [Documentação dos fragmentos de experiência](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Uso de Fragmentos de experiência](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)
