@@ -12,7 +12,7 @@ activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Faça logon no AEM Forms.
 
 * Defina o número da conta no valor de vínculo, como mostrado abaixo.
 
-* Dessa forma, estamos transmitindo o número da conta pelo atributo de solicitação para o modelo de dados do formulário
+* Desta forma, estamos transmitindo o número da conta pelo atributo de solicitação para o modelo de dados do formulário
 
 * Certifique-se de salvar suas alterações.
    ![fdm](assets/requestattribute.gif)
@@ -68,5 +68,7 @@ Faça logon no AEM Forms.
 * [Abrir getad.html](http://localhost:4502/content/getad.html)
 
 * O código associado a esse URL obterá o número da conta do usuário conectado. Esse número de conta é então passado como requestattribute para o FDM. O FDM buscará os dados associados a esse número de conta e preencherá o documento do canal da Web.
+
 >[!NOTE]
-Consulte o arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
+>
+>Consulte o arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
