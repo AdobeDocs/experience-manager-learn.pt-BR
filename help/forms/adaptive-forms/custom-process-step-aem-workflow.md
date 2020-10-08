@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -129,7 +129,8 @@ Linhas 24-26 - Obtenha o ResourceResolver e o recurso apontando para o attachmen
 O restante do código cria objetos de Documento ao interagir pelo objeto filho do recurso que aponta para attachmentFilePath usando a API. Esse objeto de documento é específico do AEM Forms. Em seguida, usamos o método copyToFile do objeto de documento para salvar o objeto de documento.
 
 >[!NOTE]
-Como estamos usando um objeto de Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk no seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
+>
+>Como estamos usando um objeto de Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk no seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
 
 #### Criar e implantar
 
