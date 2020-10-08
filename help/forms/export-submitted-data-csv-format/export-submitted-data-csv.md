@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -40,7 +40,8 @@ O seguinte serviço OSGI foi criado para exportar os dados enviados no formato C
 * Linha 89: Este é o ponto de entrada do serviço. O método `getCSVFile(..)` utiliza formName como parâmetro de entrada e busca os dados enviados pertencendo ao nome de formulário fornecido.
 
 >[!NOTE]
-O código assume que você definiu a conexão como DataSource agrupada chamada &quot;aemformstutorial&quot; no Felix Web Console.O código também presume que você tenha um schema no banco de dados chamado aemformstutorial
+>
+>O código assume que você definiu a conexão como DataSource agrupada chamada &quot;aemformstutorial&quot; no Felix Web Console.O código também presume que você tenha um schema no banco de dados chamado aemformstutorial
 
 ```java
 package com.aemforms.storeandexport.core;
