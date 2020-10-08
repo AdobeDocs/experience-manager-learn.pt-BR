@@ -12,7 +12,7 @@ doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Fornece instruções passo a passo para integrar o Adobe Experience Manager (AEM
 
 >[!NOTE]
 >
-> Para configurar o Smart Content Service, é necessário ter uma conta Adobe ID com privilégios de administrador para a organização com o Smart Content Service ativado.
+>Para configurar o Serviço de conteúdo inteligente, é necessário ter uma conta da Adobe ID com privilégios de administrador para a organização com o Serviço de conteúdo inteligente ativado.
 
 O vídeo detalha as seguintes tarefas principais necessárias para configurar o Serviço de conteúdo inteligente.
 
