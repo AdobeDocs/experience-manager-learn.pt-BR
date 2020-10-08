@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 2%
@@ -32,4 +32,5 @@ A próxima etapa é criar um schema a partir da Acroform criada na etapa anterio
 Para que esta demonstração funcione no seu sistema, será necessário criar uma pasta chamada `acroforms` no AEM Assets. Carregue a Acroform nesta `acroforms` pasta.
 
 >[!NOTE]
-O código de amostra procura o acroform nesta pasta. O acroform é necessário para unir os dados enviados do formulário adaptável.
+>
+>O código de amostra procura o acroform nesta pasta. O acroform é necessário para unir os dados enviados do formulário adaptável.
