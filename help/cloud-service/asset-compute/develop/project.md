@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 1%
@@ -25,6 +25,7 @@ Os projetos de Computação de ativos são projetos Node.js, gerados usando a CL
 ## Gerar um projeto
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+
 _Click-through de geração de um projeto Asset Compute (Sem áudio)_
 
 
