@@ -10,7 +10,7 @@ version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
 translation-type: tm+mt
-source-git-commit: fc85af36c7619783045f172ccd4b88c265a63166
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 1%
@@ -61,7 +61,8 @@ A próxima etapa é vincular os campos de texto do Formulário adaptável aos el
 | Sobrenome | /newhire/lastName |
 
 >[!NOTE]
-Sinta-se à vontade para adicionar campos de texto adicionais e vinculá-los aos elementos apropriados do modelo de dados de formulário
+>
+>Sinta-se à vontade para adicionar campos de texto adicionais e vinculá-los aos elementos apropriados do modelo de dados de formulário
 
 ## Configurar tabela de beneficiários
 
