@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 Saiba como exportar AEM Fragmento de experiência como Adobe Target Oferta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
+
+## Próximas etapas
+
+1. [Criar uma Atividade de Público alvo usando Ofertas de fragmento de experiência](./create-target-activity.md)
 
 ## Links de suporte
 
