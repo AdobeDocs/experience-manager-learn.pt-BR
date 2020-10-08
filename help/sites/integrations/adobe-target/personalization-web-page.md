@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Personalização da experiência completa da página da Web {#personalization-fpe}
 
 Saiba como criar uma atividade para redirecionar as páginas do site hospedadas em AEM para uma nova página usando o Adobe Target.
+
+Antes de criar uma Atividade no Público alvo, é necessário fazer a configuração:
+
+1. [Integrar Experience Platform Launch e AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ## Visão geral do cenário
 
