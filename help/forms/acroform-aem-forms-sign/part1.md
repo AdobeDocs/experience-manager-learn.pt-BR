@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -38,8 +38,12 @@ Os formulários são formulários criados usando o Acrobat. Você pode criar um 
 [documento de Tags de Texto Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-Verifique se o nome do arquivo acroform não tem espaços nele. O código de amostra atual não lida com espaços.
-Os nomes de campos de formulário só podem conter o seguinte
-* espaço único
-* sublinhado único
-* caracteres alfanuméricos
+>
+>Verifique se o nome do arquivo acroform não tem espaços nele. O código de amostra atual não lida com espaços.
+>
+>Os nomes de campos de formulário só podem conter o seguinte:
+>
+>* espaço único
+>* sublinhado único
+>* caracteres alfanuméricos
+
