@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ A seguir está a estrutura da pasta de carga após os anexos do formulário sere
 * Baixe o formulário [de](assets/assemble-form-attachments-af.zip) Montagem de anexos de formulário no sistema local.
 * Importe o formulário[da página Formulários e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
 * Baixe o [fluxo de trabalho](assets/assemble-form-attachments.zip) e importe para AEM usando o gerenciador de pacotes.
-* Baixe o pacote personalizado(assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Download do pacote [personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Implantar e start o pacote usando o console [da Web](http://localhost:4502/system/console/bundles)
 * Aponte seu navegador para o formulário [AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Adicione um anexo no Documento de ID e alguns documentos pdf à seção de extratos bancários
