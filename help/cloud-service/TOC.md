@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutoriais do Adobe Experience Manager as a Cloud Service
-user-guide-description: A collection of tutorials for Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: AEM as a Cloud Service Tutorials
+user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager as a Cloud Service.
+breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: serviço em nuvem
 team: TM
 translation-type: tm+mt
 source-git-commit: 50519b9526182b528047069f211498099e3a4c88
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 26%
+source-wordcount: '197'
+ht-degree: 32%
 
 ---
 
