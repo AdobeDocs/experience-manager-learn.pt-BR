@@ -1,6 +1,6 @@
 ---
-user-guide-title: Tutorial do Cache do Dispatcher AEM
-user-guide-description: A tutorial that helps you better understand how the Dispatcher works and how you can work with it.
+user-guide-title: Tutorial do cache do AEM Dispatcher
+user-guide-description: Um tutorial que ajuda você a entender melhor como o Dispatcher funciona e como você pode trabalhar com ele.
 version: 6.x
 sub-product: fundação
 doc-type: tutorial
@@ -13,13 +13,13 @@ team: TM
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 5%
+source-wordcount: '37'
+ht-degree: 72%
 
 ---
 
 
-# Tutorial do Cache do Dispatcher AEM{#dispatcher-tutorial}
+# Tutorial do cache do AEM Dispatcher{#dispatcher-tutorial}
 
 + [Visão geral](overview.md)
 + [1 - Conceitos, padrões e antipadrões](chapter-1.md)
