@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1831'
 ht-degree: 1%
 
 ---
@@ -255,9 +255,13 @@ Atualmente, a regra CTA Clicked **do** CTA simplesmente gera uma declaração do
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![Definir eVar e eventos](assets/track-clicked-component/set-evar-prop-event.png)
+
+   >[!NOTE]
+   >
+   > Isso `%Component ID%` é usado, pois garantirá um identificador exclusivo para o CTA que foi clicado. Uma desvantagem potencial de usar `%Component ID%` é que o relatório do Analytics conterá valores como `button-2e6d32893a`. O uso `%Component Title%` daria um nome mais amigável, mas o valor pode não ser único.
 
 1. Em seguida, adicione uma Ação adicional à direita de **Adobe Analytics - Definir variáveis** tocando no ícone de **adição** :
 
@@ -265,9 +269,11 @@ Atualmente, a regra CTA Clicked **do** CTA simplesmente gera uma declaração do
 
 1. Defina o tipo de **extensão** como **Adobe Analytics** e defina o Tipo **de** ação como **Enviar beacon**.
 1. Em **Rastreamento** , defina o botão de opção como **`s.tl()`**.
-1. Para Tipo **de** link, escolha Link **** personalizado e, para Nome **do** link, defina o valor para o elemento de dados Título **do** componente:
+1. Para Tipo **de** link, escolha Link **** personalizado e, para Nome **de** link, defina o valor como: **`%Component Title%: CTA Clicked`**:
 
    ![Configuração para beacon Enviar link](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   Isso combinará a variável dinâmica do elemento de dados Título **do** componente e a string estática CTA **clicada**.
 
 1. Salve as alterações. A regra CTA Clicked **do** CTA agora deve ter a seguinte configuração:
 
