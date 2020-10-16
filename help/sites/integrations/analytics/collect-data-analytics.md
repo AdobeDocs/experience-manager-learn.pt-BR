@@ -10,9 +10,9 @@ version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2414'
 ht-degree: 2%
 
 ---
@@ -270,6 +270,10 @@ Em seguida, adicione a extensão do Analytics à propriedade Launch. Precisamos 
    >[!TIP]
    >
    >Recomendamos usar a opção ** Gerenciar a biblioteca como a configuração Gerenciamento de biblioteca, pois facilita muito a atualização da `AppMeasurement.js` biblioteca.
+
+1. Marque a caixa para ativar **Usar Activity Map**.
+
+   ![Habilitar uso de Activity Map](assets/track-clicked-component/analytic-track-click.png)
 
 1. Em **Geral** > Servidor **de** rastreamento, digite seu servidor de rastreamento, por exemplo, `tmd.sc.omtrdc.net`. Digite seu Servidor de rastreamento SSL se o site suportar `https://`
 
