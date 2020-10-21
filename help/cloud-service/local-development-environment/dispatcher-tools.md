@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1534'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,8 @@ O Dispatcher da Adobe Experience Manager (AEM) é um módulo de servidor da Web 
 O AEM como um SDK do Cloud Service inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são compostas de:
 
 + um conjunto básico de arquivos de configuração do Apache HTTP Web Server e Dispatcher, localizados em `.../dispatcher-sdk-x.x.x/src`
-+ uma ferramenta CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validator`
++ uma ferramenta CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
++ uma ferramenta CLI de geração de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validator`
 + uma ferramenta CLI de implantação de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + uma imagem Docker que executa o servidor Web Apache HTTP com o módulo Dispatcher
 
@@ -39,7 +40,7 @@ Observe que `~` é usado como abreviação para o Diretório do usuário. No Win
 ## Pré-requisitos
 
 1. Os usuários do Windows devem usar o Windows 10 Professional
-1. Instale o [Experience Manager Publish QuickStart](./aem-runtime.md) na máquina de desenvolvimento local.
+1. Instale o [Experience Manager Publish Quickstart Jar](./aem-runtime.md) na máquina de desenvolvimento local.
    + Opcionalmente, instale o site [de referência mais recente](https://github.com/adobe/aem-guides-wknd/releases) AEM no serviço de publicação de AEM local. Este site é usado neste tutorial para visualizar um Dispatcher em funcionamento.
 1. Instale e start a versão mais recente do [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) no computador de desenvolvimento local.
 
@@ -49,13 +50,10 @@ O AEM como Cloud Service SDK, ou AEM SDK, contém as Ferramentas do Dispatcher u
 
 Se o AEM como um SDK Cloud Service já tiver sido baixado para [configurar o tempo de execução](./aem-runtime.md)AEM local, ele não precisará ser baixado novamente.
 
-1. Faça logon em [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) com seu Adobe ID
-   + Observe que sua Organização Adobe __deve__ ser provisionada para AEM como Cloud Service para baixar o AEM como um SDK Cloud Service.
-1. Navegue até a __AEM como uma guia Cloud Service__
-1. Classificar por data __de__ publicação em ordem __decrescente__
-1. Clique na linha de resultado mais recente do __AEM SDK__
-1. Revise e aceite o EULA e toque no botão __Download__
-1. Verifique se AEM as ferramentas do Dispatcher v2.0.21+ do SDK foram usadas
+1. Faça logon em [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=lista&amp;p.offset=0&amp;p.limit=1) com seu Adobe ID
+   + Sua organização do Adobe __deve__ ser provisionada para AEM como Cloud Service para baixar o AEM como um SDK Cloud Service
+1. Clique na linha de resultado mais recente do SDK ____ AEM para fazer download
+   + Verifique se AEM as ferramentas do Dispatcher v2.0.29+ do SDK estão anotadas na descrição do download
 
 ## Extraia as ferramentas do Dispatcher do zip do SDK AEM
 
@@ -92,20 +90,25 @@ Esses arquivos devem ser copiados em um projeto Experience Manager Maven para a 
 
 Uma descrição completa dos arquivos de configuração está disponível nas Ferramentas do Dispatcher descompactadas como `dispatcher-sdk-x.x.x/docs/Config.html`.
 
+## Validar configurações
+
+Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) podem ser validadas usando o `validate` script (não confundir com o `validator` executável).
+
++ Uso:
+   + Windows: `bin\validate src`
+   + macOS / Linux: `./bin/validate ./src`
+
 ## Executar Dispatcher localmente
 
-Para executar o Dispatcher localmente, os arquivos de configuração do Dispatcher a serem usados para configurá-lo devem ser validados com a ferramenta CLI `validator` das Ferramentas do Dispatcher.
+Para executar o Dispatcher localmente, os arquivos de configuração do Dispatcher devem ser gerados usando a ferramenta CLI `validator` das Ferramentas do Dispatcher.
 
 + Uso:
    + Windows: `bin\validator full -d out src`
    + macOS / Linux: `./bin/validator full -d ./out ./src`
 
-A validação tem dupla finalidade:
+Este comando transpila as configurações em um conjunto de arquivos compatível com o Pacote de container do Docker HTTP Web Server.
 
-+ Valida os arquivos de configuração do servidor Web Apache HTTP e do Dispatcher para corrigir
-+ Transmite as configurações em um conjunto de arquivos compatível com o Pacote de container do Docker HTTP Web Server.
-
-Depois de validadas, as configurações transpiladas são usadas para executar o Dispatcher localmente no container Docker. É importante garantir que as configurações mais recentes tenham sido validadas __e__ exibidas usando a `-d` opção do validador.
+Depois de geradas, as configurações transpiladas são usadas para executar o Dispatcher localmente no container Docker. É importante garantir que as configurações mais recentes tenham sido validadas com o uso `validate` e a saída, __usando a__ `-d` opção do validador.
 
 + Uso:
    + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
