@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ A geração de imagens inteligentes funciona com imagens entregues por HTTP, HTT
 
 O Smart Imaging está incluído na sua licença existente do Dynamic Media Classic. Não há custos adicionais para este recurso. Para tirar proveito disso, você deve atender a dois requisitos: têm um CDN fornecido em Adobe e um domínio dedicado. Em seguida, você deve ativá-la para sua conta, pois ela não é ativada automaticamente.
 
-Habilitar start de Imagem Inteligente para enviar uma solicitação ao suporte técnico, enviando um email para [s7support@adobe.com](mailto:s7support@adobe.com). Eles trabalharão com você para configurar um domínio personalizado que você associará com o Smart Imaging. Você alterará um parâmetro relacionado ao armazenamento em cache (Time To Live, ou TTL) e o suporte limpará o cache. Você também pode executar uma etapa de preparo opcional se desejar antes de encaminhar para a produção. Quando a opção Imagens inteligentes estiver ativada, você fornecerá aos clientes imagens de tamanho menor, mas com a mesma qualidade solicitada. Isso significa que eles experimentam tempos de carregamento de página mais rápidos. e tudo isso é feito automaticamente porque a Adobe Sensei ajuda a escolher o tamanho mais eficiente.
+Habilitar start de Imagem Inteligente com você enviando uma solicitação ao suporte técnico por meio da |criação de um caso de suporte| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O suporte trabalhará com você para configurar um domínio personalizado que você associará ao Smart Imaging. Você alterará um parâmetro relacionado ao armazenamento em cache (Time To Live, ou TTL) e o suporte limpará o cache. Você também pode executar uma etapa de preparo opcional se desejar antes de encaminhar para a produção. Quando a opção Imagens inteligentes estiver ativada, você fornecerá aos clientes imagens de tamanho menor, mas com a mesma qualidade solicitada. Isso significa que eles experimentam tempos de carregamento de página mais rápidos. e tudo isso é feito automaticamente porque a Adobe Sensei ajuda a escolher o tamanho mais eficiente.
 
 Depois de ativar a Imagem inteligente, verifique se ela está funcionando como esperado.
 
