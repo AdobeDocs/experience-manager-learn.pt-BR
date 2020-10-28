@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriais do AEM Assets
 sub-product: ativos
 team: TM
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 33%
+ht-degree: 32%
 
 ---
 
@@ -55,10 +55,9 @@ ht-degree: 33%
 
 + Gerenciamento avançado de metadados{#metadata}
    + [Metadados em cascata](metadata/cascade-metadata-feature-video-use.md)
-   + [Visão geral das tags inteligentes](metadata/smart-tags-feature-video-use.md)
-   + [Configurar tags inteligentes](metadata/smart-tags-technical-video-setup.md)
-   + [Tags inteligentes aprimoradas](metadata/enhanced-smart-tags-feature-video-use.md)
-   + [Configurar Tags inteligentes aprimoradas](metadata/enhanced-smart-tags-technical-video-setup.md)
+   + [Tags inteligentes para imagens](metadata/image-smart-tags.md)
+   + [Tags inteligentes personalizadas para imagens](metadata/custom-smart-tags.md)
+   + [Etiquetas Inteligentes para vídeos](metadata/video-smart-tags.md)
    + [Importar e exportar metadados](metadata/metadata-import-feature-video-use.md)
 
 + Compartilhamento e distribuição{#sharing}
