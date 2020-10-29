@@ -9,9 +9,9 @@ doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '396'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Esta série de vídeos cobre o ciclo de vida de criação de Fragmentos de conte
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM Modelos de fragmentos de conteúdo, os schemas de dados de Fragmentos de conteúdo, devem ser ativados por meio AEM Navegador [!UICONTROL de]configuração, que permite que os Modelos de fragmento de conteúdo sejam definidos com base em configuração.
+AEM Modelos de fragmentos de conteúdo, os schemas de dados de Fragmentos de conteúdo, devem ser ativados por meio AEM Navegador [[!UICONTROL de]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)configuração, que permite que os Modelos de fragmento de conteúdo sejam definidos com base em configuração.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
