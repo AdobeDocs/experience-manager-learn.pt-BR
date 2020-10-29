@@ -4,9 +4,9 @@ seo-title: Introdução ao AEM Content Services - Capítulo 2 - Definição de m
 description: O Capítulo 2 do tutorial sem cabeçalho AEM abrange a ativação e a definição de Modelos de fragmento de conteúdo usados para definir uma estrutura de dados normalizada e uma interface de criação para a criação de Eventos.
 seo-description: O Capítulo 2 do tutorial sem cabeçalho AEM abrange a ativação e a definição de Modelos de fragmento de conteúdo usados para definir uma estrutura de dados normalizada e uma interface de criação para a criação de Eventos.
 translation-type: tm+mt
-source-git-commit: 885e30dea2a21dff789c98bdc5beb2f758b806f3
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '994'
 ht-degree: 7%
 
 ---
@@ -25,9 +25,9 @@ Este capítulo aborda a ativação e a definição de Modelos de fragmento de co
 
 ## Ativar modelos de fragmento de conteúdo
 
-Os Modelos de fragmento de conteúdo **devem** ser ativados por meio **AEM navegador** de configuração.
+Os Modelos de fragmento de conteúdo **devem** ser ativados por meio **[AEM navegador ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** de configuração.
 
-Se os Modelos de fragmento de conteúdo **não** estiverem ativados para uma configuração, o botão **[!UICONTROL Criar]> Fragmento[!UICONTROL de]** conteúdo não será exibido para a configuração relevante do AEM.
+Se os Modelos de fragmento de conteúdo **não** estiverem ativados para uma configuração, o botão **[!UICONTROL Criar] > Fragmento [!UICONTROL de]** conteúdo não será exibido para a configuração relevante do AEM.
 
 >[!NOTE]
 >
@@ -36,11 +36,13 @@ Se os Modelos de fragmento de conteúdo **não** estiverem ativados para uma con
 >Para que uma configuração afete uma hierarquia de conteúdo, a configuração deve ser referenciada pela `cq:conf` propriedade na hierarquia de conteúdo. (Isso é feito para a [!DNL WKND Mobile] configuração na **Etapa 5** abaixo).
 >
 >Quando a `global` configuração é usada, a configuração se aplica a todo o conteúdo e não `cq:conf` precisa ser definida.
+>
+>See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
 
 1. Faça logon no AEM Author como um usuário com as permissões apropriadas para modificar a configuração relevante.
    * Para este tutorial, o usuário **administrador** pode ser usado.
-1. Navegue até **[!UICONTROL Ferramenta]>[!UICONTROL Geral]> Navegador[!UICONTROL de configuração]**
-1. Toque no ícone **de** pasta ao lado de **[!DNL WKND Mobile]** para selecionar e, em seguida, toque no botão **[!UICONTROL Editar]no canto superior esquerdo** .
+1. Navegue até **[!UICONTROL Ferramenta] > [!UICONTROL Geral] > Navegador [!UICONTROL de configuração]**
+1. Toque no ícone **de** pasta ao lado de **[!DNL WKND Mobile]** para selecionar e, em seguida, toque no botão **[!UICONTROL Editar] no canto superior esquerdo** .
 1. Selecione Modelos **[!UICONTROL de fragmento de]** conteúdo e toque em **[!UICONTROL Salvar e fechar]** no canto superior direito.
 
    Isso permite a utilização de Modelos de fragmento de conteúdo em árvores de conteúdo da Pasta de ativos com a [!DNL WKND Mobile] configuração aplicada.
@@ -58,7 +60,7 @@ Se os Modelos de fragmento de conteúdo **não** estiverem ativados para uma con
 
 1. Aplique a **[!DNL WKND Mobile]** configuração à pasta **[!DNL WKND Mobile]** Ativos para permitir que os Fragmentos de conteúdo dos Modelos de fragmento de conteúdo sejam criados na hierarquia da pasta Ativos:
 
-   1. Navegue até **[!UICONTROL AEM]>[!UICONTROL Ativos]>[!UICONTROL Arquivos]**
+   1. Navegue até **[!UICONTROL AEM] > [!UICONTROL Ativos] > [!UICONTROL Arquivos]**
    1. Selecione a pasta **[!UICONTROL WKND Mobile]**
    1. Toque no botão **[!UICONTROL Propriedades]** na barra de ação superior para abrir Propriedades [!UICONTROL da pasta]
    1. Em Propriedades [!UICONTROL da]pasta, toque na guia **[!UICONTROL Cloud Services]**
@@ -79,7 +81,7 @@ Munido do mapeamento, podemos definir o Fragmento do conteúdo que será usado p
 
 ## Criação do modelo de fragmento de conteúdo
 
-1. Navegue até **[!UICONTROL Ferramentas]>[!UICONTROL Ativos]> Modelos[!UICONTROL de fragmento de]** conteúdo.
+1. Navegue até **[!UICONTROL Ferramentas] > [!UICONTROL Ativos] > Modelos [!UICONTROL de fragmento de]** conteúdo.
 1. Toque na **[!DNL WKND Mobile]** pasta para abrir.
 1. Toque em **[!UICONTROL Criar]** para abrir o assistente de criação do Modelo de fragmento de conteúdo.
 1. Digite **[!DNL Event]** como o Título **[!UICONTROL do]** Modelo *(a descrição é opcional)* e toque em **[!UICONTROL Criar]** para salvar.
@@ -88,9 +90,9 @@ Munido do mapeamento, podemos definir o Fragmento do conteúdo que será usado p
 
 ## Definição da estrutura do Modelo de fragmento de conteúdo
 
-1. Navegue até **[!UICONTROL Ferramentas]>[!UICONTROL Ativos]> Modelos[!UICONTROL de fragmento de]conteúdo >[!DNL WKND]**.
+1. Navegue até **[!UICONTROL Ferramentas] > [!UICONTROL Ativos] > Modelos [!UICONTROL de fragmento de] conteúdo >[!DNL WKND]**.
 1. Selecione o Modelo de fragmento de **[!DNL Event]** conteúdo e toque em **[!UICONTROL Editar]** na barra de ação superior.
-1. Na guia **[!UICONTROL Tipos]de dados à direita, arraste a entrada** de texto de linha **[!UICONTROL Única para a zona suspensa esquerda para definir o]** **[!DNL Question]** campo.
+1. Na guia **[!UICONTROL Tipos] de dados à direita, arraste a entrada** de texto de linha **[!UICONTROL Única para a zona suspensa esquerda para definir o]** **[!DNL Question]** campo.
 1. Verifique se a nova entrada **[!UICONTROL de texto de linha]** única está selecionada à esquerda e a guia **[!UICONTROL Propriedades]** está selecionada à direita. Preencha os campos Propriedades da seguinte forma:
 
    * [!UICONTROL Renderizar como] : `textfield`
