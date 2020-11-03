@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,20 @@ Criaremos um funcionário de Computação de ativos que gera uma nova representa
 
 Os funcionários da Asset Compute implementam o contrato da API de trabalho do Asset Compute SDK, na `renditionCallback(...)` função, que é conceitualmente:
 
-+ __Entrada:__ Um binário e parâmetros de ativo original do ativo AEM
++ __Entrada:__ Parâmetros de Perfil de processamento e binário originais de um ativo AEM
 + __Saída:__ Uma ou mais representações a serem adicionadas ao ativo AEM
 
 ![Fluxo lógico do trabalhador Computação de ativos](./assets/worker/logical-flow.png)
 
-1. Quando um funcionário de Computação de ativos é chamado do serviço de autor de AEM, ele é contra um ativo AEM por meio de um Perfil de processamento. O binário original do ativo __(1a)__ é passado ao trabalhador por meio do `source` parâmetro da função de retorno de chamada de representação, e __(1b)__ quaisquer parâmetros definidos no Perfil Processamento por meio do conjunto de `rendition.instructions` parâmetros.
-1. A camada do SDK do Asset Compute aceita a solicitação do perfil de processamento e orquestra a execução da `renditionCallback(...)` função do funcionário personalizado do Asset Compute, transformando o binário de origem fornecido em __(1a)__ com base em qualquer parâmetro fornecido pelo __(1b)__ para gerar uma representação do binário de origem.
-   + Neste tutorial, a execução é criada &quot;em andamento&quot;, o que significa que o trabalhador compõe a execução, no entanto, o binário de origem também pode ser enviado para outras APIs de serviço da Web para geração de renderização.
-1. O funcionário da Computação de ativos salva a representação binária da execução, na qual ela fica disponível para ser salva no serviço Autor de AEM. `rendition.path`
-1. Após a conclusão, os dados binários gravados `rendition.path` são transportados pelo SDK do Asset Compute e expostos pelo Serviço de autor de AEM como uma execução disponível na interface do usuário AEM.
+1. O serviço de autor de AEM chama o funcionário de Computação de ativos, fornecendo o binário original __(1a)__ do ativo (`source` parâmetro) e __(1b)__ quaisquer parâmetros definidos no Perfil de processamento (`rendition.instructions` parâmetro).
+1. O SDK do Asset Compute orquestra a execução da `renditionCallback(...)` função personalizada do trabalhador de metadados do Asset Compute, gerando uma nova execução binária, com base no binário original do ativo __(1a)__ e em qualquer parâmetro __(1b)__.
 
-O diagrama acima articula as preocupações do desenvolvedor do Asset Compute e o fluxo lógico para a invocação do trabalhador do Asset Compute. Para o curioso, os detalhes [internos da execução](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) da Computação de ativos estão disponíveis, no entanto, somente os contratos públicos da API SDK da Computação de ativos devem ser dependentes.
+   + Neste tutorial, a execução é criada &quot;em andamento&quot;, o que significa que o trabalhador compõe a execução, no entanto, o binário de origem também pode ser enviado para outras APIs de serviço da Web para geração de renderização.
+
+1. O funcionário da Computação de ativos salva os dados binários da nova execução `rendition.path`.
+1. Os dados binários gravados `rendition.path` são transportados pelo SDK do Asset Compute para o serviço de autor de AEM e expostos como __(4a)__ uma execução de texto e __(4b)__ persistidos no nó de metadados do ativo.
+
+O diagrama acima articula as preocupações do desenvolvedor do Asset Compute e o fluxo lógico para a invocação do trabalhador do Asset Compute. Para o curioso, os detalhes [internos da execução](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) da Computação de ativos estão disponíveis, no entanto, somente os contratos públicos da API SDK da Computação de ativos podem ser dependentes.
 
 ## Anatomia de um trabalhador
 
@@ -316,7 +318,7 @@ class RenditionInstructionsError extends ClientError {
 Agora que o código de trabalho está completo e foi registrado e configurado anteriormente no [manifest.yml](./manifest.md), ele pode ser executado usando a ferramenta local Asset Compute Development Tool para ver os resultados.
 
 1. Na raiz do projeto Computação de ativos
-1. Executar `app aio run`
+1. Executar `aio app run`
 1. Aguarde a Ferramenta de desenvolvimento de computação de ativos abrir em uma nova janela
 1. Na página __Selecionar um arquivo...__ , selecione uma imagem de amostra para processar
    + Selecione um arquivo de imagem de amostra para usar como binário de ativo de origem
@@ -391,11 +393,4 @@ A versão final `index.js` está disponível no site Github:
 
 ## Resolução de problemas
 
-### A representação é parcialmente desenhada
-
-+ __Erro__: A execução é renderizada incompletamente, quando o tamanho total do arquivo de representação é grande
-
-   ![Solução de problemas - a execução é retornada parcialmente desenhada](./assets/worker/troubleshooting__await.png)
-
-+ __Causa__: A `renditionCallback` função do trabalhador está saindo antes que a representação possa ser completamente gravada `rendition.path`.
-+ __Resolução__: Revise o código de trabalho personalizado e verifique se todas as chamadas assíncronas são sincronizadas.
++ [Representação devolvida parcialmente desenhada/corrompida](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
