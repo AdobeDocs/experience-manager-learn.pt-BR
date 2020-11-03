@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Isso start a ferramenta de desenvolvimento em __http://localhost:9000__ e a abre
 1. __Arquivo de origem:__ A seleção do arquivo de origem é usada para:
    + Selecionado o binário de ativo que será o `source` binário passado para o funcionário de Computação de ativos
    + Carregar arquivos de origem
-1. __Definição do perfil do Asset Compute:__ Define o trabalhador do Asset Compute a ser executado incluindo parâmetros: incluindo o ponto final do URL do trabalhador, o nome da representação resultante e quaisquer parâmetros
+1. __Definição dos perfis de computação de ativos:__ Define o trabalhador do Asset Compute a ser executado incluindo parâmetros: incluindo o ponto final do URL do trabalhador, o nome da representação resultante e quaisquer parâmetros
 1. __Executar:__ O botão Executar executa o perfil Asset Compute, conforme definido no editor do perfil de configuração Asset Compute
 1. __Abortar:__ O botão Abortar cancela uma execução iniciada ao tocar no botão Executar
 1. __Solicitação/resposta:__ Fornece a solicitação HTTP e a resposta para/do trabalhador Asset Compute em execução no Adobe I/O Runtime. Isso pode ser útil para depurar
@@ -84,24 +84,10 @@ Fazer alterações de código no código de trabalho enquanto a Ferramenta de De
 
 ## Resolução de problemas
 
-### Menu suspenso de arquivos de origem incorreto{#troubleshooting__dev-tool-application-cache}
-
-A Ferramenta de Desenvolvimento de Computação de Ativo pode inserir um estado em que extrai dados obsoletos e é mais visível na lista suspensa Arquivo ____ de origem exibindo itens incorretos.
-
-+ __Erro:__ A lista suspensa do arquivo de origem exibe itens incorretos.
-+ __Causa:__ O estado do navegador em cache obsoleto causa a
-+ __Resolução:__ Em seu navegador, limpe completamente o &quot;estado do aplicativo&quot; da guia do navegador, o cache do navegador, o armazenamento local e o trabalhador do serviço.
-
-### Parâmetro de query devToolToken ausente ou inválido{#troubleshooting__devtooltoken}
-
-+ __Erro:__ Notificação &quot;Não autorizada&quot; na ferramenta de desenvolvimento de computação de ativos
-+ __Causa:__ `devToolToken` está ausente ou inválido
-+ __Resolução:__ Feche a janela do navegador Asset Compute Development Tool, encerre todos os processos em execução da Ferramenta de desenvolvimento iniciados por meio do `aio app run` comando e refaça o start Development Tool (usando `aio app run`).
-
-### Não é possível remover arquivos de origem{#troubleshooting__remove-source-files}
-
-+ __Erro:__ Não há como remover arquivos de origem adicionados da interface do usuário das Ferramentas de Desenvolvimento
-+ __Causa:__ Esta funcionalidade não foi implementada
-+ __Resolução:__ Faça logon no provedor de armazenamentos na nuvem usando as credenciais definidas em `.env`. Localize o container usado pelas Ferramentas de desenvolvimento (também especificadas em `.env`), navegue até a pasta __de origem__ e exclua as imagens de origem. Talvez seja necessário executar as etapas descritas na lista suspensa Arquivos [de origem incorretas](#troubleshooting__dev-tool-application-cache) se os arquivos de origem excluídos continuarem a ser exibidos na lista suspensa, pois podem ser armazenados em cache localmente no &quot;estado do aplicativo&quot; das Ferramentas de desenvolvimento.
-
-   ![Armazenamento Blob do Microsoft Azure](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [Recuo YAML incorreto](../troubleshooting.md#incorrect-yaml-indentation)
++ [o limite memorySize está definido como muito baixo](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [A Ferramenta de Desenvolvimento não pode start devido à falta de private.key](../troubleshooting.md#missing-private-key)
++ [Menu suspenso de arquivos de origem incorreto](../troubleshooting.md#source-files-dropdown-incorrect)
++ [Parâmetro de query devToolToken ausente ou inválido](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [Não é possível remover arquivos de origem](../troubleshooting.md#unable-to-remove-source-files)
++ [Representação devolvida parcialmente desenhada/corrompida](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
