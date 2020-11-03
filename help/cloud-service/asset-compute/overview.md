@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Os funcionários da Asset Compute fornecem vários níveis de depuração, desde
 
 ## Implantar
 
-Saiba como integrar os funcionários personalizados da Asset Compute com AEM como Cloud Service, implantando-os primeiro na Adobe I/O Runtime e, em seguida, chamando-os de AEM como um autor de Cloud Service através dos Perfis de processamento da AEM Assets.
+Saiba como integrar os funcionários personalizados da Asset Compute com AEM como Cloud Service, implantando-os primeiro na Adobe I/O Runtime e chamando-os de AEM como um autor Cloud Service por meio dos Perfis de processamento dos ativos AEM.
 
 ### Implantar no Adobe I/O Runtime
 
@@ -122,11 +122,17 @@ Os funcionários da Asset Compute devem ser implantados na Adobe I/O Runtime par
 
 ### Integrar trabalhadores por meio de Perfis de processamento AEM
 
-Depois de implantados na Adobe I/O Runtime, os funcionários da Asset Compute podem ser registrados em AEM como Cloud Service através dos Perfis [de processamento de](../../assets/configuring/processing-profiles.md)ativos. Os Perfis de processamento são, por sua vez, aplicados às pastas Ativos que se aplicam aos ativos neles contidos.
+Depois de implantados na Adobe I/O Runtime, os funcionários da Asset Compute podem ser registrados em AEM como Cloud Service através dos Perfis [de processamento de](../../assets/configuring/processing-profiles.md)ativos. Os Perfis de processamento são, por sua vez, aplicados às pastas de ativos que se aplicam aos ativos neles contidos.
 
 + [Integrar a Perfis de processamento AEM](./deploy/processing-profiles.md)
 
-## Base de código do tutorial sobre o Github
+## Avançado 
+
+Esses tutoriais resumidos tratam de casos de uso mais avançados baseados em aprendizados fundamentais estabelecidos nos capítulos anteriores.
+
++ [Desenvolver um trabalhador](./advanced/metadata.md) de metadados do Asset Compute que possa gravar metadados de volta no
+
+## Base de código do Github
 
 A base de códigos do tutorial está disponível no Github em:
 
@@ -142,14 +148,13 @@ A seguir estão vários recursos de Adobe que fornecem mais informações e APIs
 
 + [Documentação do Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Leia-me da ferramenta de desenvolvimento de computação de ativos](https://github.com/adobe/asset-compute-devtool)
-
-### Outras amostras de código
-
 + [Funcionários de exemplo da Asset Compute](https://github.com/adobe/asset-compute-example-workers)
 
 ### APIs e SDKs
 
 + [SDK de computação de ativos](https://github.com/adobe/asset-compute-sdk)
    + [Pacotes de computação de ativos](https://github.com/adobe/asset-compute-commons)
+   + [XMP de computação de ativos](https://github.com/adobe/asset-compute-xmp#readme)
 + [Biblioteca do Wrapper da Adobe Cloud Blobstore](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Biblioteca de tentativas de busca de nó de Adobe](https://github.com/adobe/node-fetch-retry)
++ [Funcionários de exemplo da Asset Compute](https://github.com/adobe/asset-compute-example-workers)
