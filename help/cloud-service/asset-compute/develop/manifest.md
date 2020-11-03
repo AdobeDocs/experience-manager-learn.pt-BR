@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ Para start Asset Compute Development Tool para o projeto Asset Compute:
 
 ## Resolução de problemas
 
-### Recuo YAML incorreto
-
-+ __Erro:__ YAMLException: recuo incorreto de uma entrada de mapeamento na linha X, coluna Y:(via padrão fora do `aio app run` comando)
-+ __Causa:__ Os arquivos Yaml são sensíveis ao espaço em branco, provavelmente seu recuo está incorreto.
-+ __Resolução:__ Revise seu `manifest.yml` recuo e verifique se ele está correto.
-
-### o limite memorySize está definido como muito baixo
-
-+ __Erro:__  OpenWhiskError do Servidor de Desenvolvimento Local: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Retornou HTTP 400 (Solicitação incorreta) —> &quot;O conteúdo da solicitação foi malformado:falha no requisito: memória 64 MB abaixo do limite permitido de 134217728 B&quot;
-+ __Causa:__ Um `memorySize` limite no manifesto foi definido abaixo do limite mínimo permitido, conforme relatado pela mensagem de erro em bytes.
-+ __Resolução:__  Revise os `memorySize` limites no `manifest.yml` e verifique se eles são todos maiores que o limite mínimo permitido.
++ [Recuo YAML incorreto](../troubleshooting.md#incorrect-yaml-indentation)
++ [o limite memorySize está definido como muito baixo](../troubleshooting.md#memorysize-limit-is-set-too-low)
