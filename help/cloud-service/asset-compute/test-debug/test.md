@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ A estrutura dos testes em um projeto do Asset Compute é a seguinte:
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ Os testes finais estão disponíveis no Github em:
 
 ## Resolução de problemas
 
-### Nenhuma execução gerada
-
-O caso de teste falha sem gerar uma execução.
-
-+ __Erro:__ Falha: Nenhuma execução gerada.
-+ __Causa:__ O trabalhador não conseguiu gerar uma execução devido a um erro inesperado, como um erro de sintaxe JavaScript.
-+ __Resolução:__ Verifique se a execução do teste está `test.log` em `/build/test-results/test-worker/test.log`. Localize a seção neste arquivo correspondente ao caso de teste com falha e verifique se há erros.
-
-   ![Solução de problemas - nenhuma execução gerada](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### O teste gera representação incorreta
-
-O caso de teste falha ao gerar uma execução incorreta.
-
-+ __Erro:__ Falha: A execução &#39;rendition.xxx&#39; não é a esperada.
-+ __Causa:__ O trabalhador gera uma execução que não é a mesma que a `rendition.<extension>` fornecida no caso de teste.
-   + Se o arquivo esperado não for criado exatamente da mesma maneira que a execução gerada localmente no caso de teste, o teste poderá falhar, pois pode haver alguma diferença nos bits. `rendition.<extension>` Se a renderização esperada no caso de teste for salva da Ferramenta de desenvolvimento, o que significa gerada no Adobe I/O Runtime, os bits poderão ser tecnicamente diferentes, causando a falha do teste, mesmo se, de uma perspectiva humana, os arquivos de renderização esperados e reais forem idênticos.
-+ __Resolução:__ Revise a saída de representação do teste navegando até `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`o arquivo de representação esperado no caso de teste e compare-o com ele.
++ [Nenhuma execução gerada durante a execução do teste](../troubleshooting.md#test-no-rendition-generated)
++ [O teste gera representação incorreta](../troubleshooting.md#tests-generates-incorrect-rendition)
