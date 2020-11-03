@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
    + __Extensão:__ `png`
       + A extensão da representação que será gerada. Definido como `png` o formato de saída suportado pelo serviço da Web do trabalhador e que resulta em plano de fundo transparente atrás do recorte do círculo.
    + __Ponto de extremidade:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Esse é o URL para o trabalhador obtido por meio do `aio app get-url`. Verifique se o URL aponta para a área de trabalho correta com base no AEM como um ambiente no qual o Perfil de processamento está sendo configurado. Observe que esse subdomínio corresponde ao espaço de `development` trabalho.
+      + Esse é o URL para o trabalhador obtido por meio do `aio app get-url`. Verifique se o URL aponta para a área de trabalho correta com base no AEM como um ambiente Cloud Service.
       + Verifique se o URL do trabalhador aponta para a área de trabalho correta. AEM como Cloud Service Stage deve usar o URL da área de trabalho Stage e AEM como um Cloud Service Production deve usar o URL da área de trabalho Production.
    + __Parâmetros de serviço__
       + Toque em __Adicionar parâmetro__
@@ -54,7 +54,7 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
       + Esses pares de chave/valor que são passados para o trabalho do Asset Compute e estão disponíveis por meio do objeto `rendition.instructions` JavaScript.
    + __Tipos de mime__
       + __Inclui:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + Esses tipos MIME são os únicos compatíveis com o serviço Web do trabalhador, isso limita quais ativos podem ser processados pelo trabalhador personalizado.
+         + Esses tipos MIME são os únicos que os módulos npm do trabalhador. Essa lista limita quais ativos serão processados pelo trabalhador personalizado.
       + __Exclui:__ `Leave blank`
          + Nunca processe ativos com esses tipos MIME usando essa configuração de serviço. Neste caso, usamos apenas uma lista de permissões.
 1. Toque em __Salvar__ na parte superior direita
@@ -83,26 +83,9 @@ O projeto final Asset Compute está disponível no Github em:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contém o estado final do projeto, totalmente preenchido com os casos de trabalhador e teste, mas não contém quaisquer credenciais, ou seja,`.env`,`.config.json`ou`.aio`._
+_Github contém o estado final do projeto, totalmente preenchido com os casos de trabalhador e teste, mas não contém quaisquer credenciais, ou seja, `.env`, `.config.json` ou `.aio`._
 
 ## Resolução de problemas
 
-### Representação personalizada ausente do ativo
-
-+ __Erro:__ O processo de ativos novos e reprocessados foi bem-sucedido, mas a execução personalizada está ausente
-
-#### Perfil de processamento não aplicado à pasta anterior
-
-+ __Causa:__ O ativo não existe em uma pasta com o Perfil Processamento que usa o trabalhador personalizado
-+ __Resolução:__ Aplicar o Perfil de processamento a uma pasta ancestral do ativo
-
-#### Perfil de processamento substituído pelo Perfil de processamento mais baixo
-
-+ __Causa:__ O ativo existe abaixo de uma pasta com o Perfil Processamento de trabalho personalizado aplicado, no entanto, um Perfil de processamento diferente que não usa o trabalhador do cliente foi aplicado entre essa pasta e o ativo.
-+ __Resolução:__ Combine ou reconcilie os dois Perfis de processamento e remova o Perfil de processamento intermediário
-
-### Falha no processamento do ativo
-
-+ __Erro:__ Processamento de ativos Falha ao exibir o selo no ativo
-+ __Causa:__ Ocorreu um erro na execução do trabalhador personalizado
-+ __Resolução:__ Siga as instruções em [depurar o Adobe I/O Runtime ativação](../test-debug/debug.md#aio-app-logs) usando `aio app logs`.
++ [Representação personalizada ausente do ativo no AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [Falha no processamento de ativos em AEM](../troubleshooting.md#asset-processing-fails)
