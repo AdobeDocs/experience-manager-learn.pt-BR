@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: serviço em nuvem
 team: TM
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 32%
+source-wordcount: '201'
+ht-degree: 33%
 
 ---
 
@@ -69,4 +69,8 @@ ht-degree: 32%
    + Implantar{#deploy}
       + [Implantar no Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrar com AEM](./asset-compute/deploy/processing-profiles.md)
+   + Avançado {#advanced}
+      + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
+   + [Resolução de Problemas](./asset-compute/troubleshooting.md)
+
 + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](./develop-wknd-tutorial.md)
