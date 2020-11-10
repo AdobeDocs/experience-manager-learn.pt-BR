@@ -1,14 +1,12 @@
 ---
-title: Vídeos e Tutorials AEM Assets
-seo-title: Vídeos e Tutorials AEM Assets
+title: Vídeos e Tutoriais do AEM Assets
 description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets
-seo-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets
 sub-product: ativos, mídia dinâmica
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 5%
+source-wordcount: '228'
+ht-degree: 19%
 
 ---
 
@@ -21,27 +19,22 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 
 * **[Marcas d&#39;água (Vídeo)](./advanced/watermarks.md)**
 
-   <br>
    *Saiba como marcar as representações de ativos como um Cloud Service em AEM*
 
 * **[Permissões da linha de base (Vídeo)](./configuring/baseline-permissions.md)**
 
-   <br>
    *Saiba como e por que é importante configurar o AEM Assets com permissões básicas*
 
 * **[Workflows de start automático (Vídeo)](./configuring/auto-start-workflows.md)**
 
-   <br>
    *Explore como chamar automaticamente AEM fluxo de trabalho em ativos carregados ou reprocessados*
 
 * **[Perfis de processamento (vídeo)](./configuring/processing-profiles.md)**
 
-   <br>
    *Explore como invocar os microserviços do Assets para ativos de representação*
 
 * **[Uso de coleções de ativos (vídeo)](./search-and-discovery/collections.md)**
 
-   <br>
    *Explore como as coleções no AEM Assets oferecem novas maneiras de organizar e descobrir ativos*
 
 ## Separações de Pessoal
@@ -92,7 +85,7 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 
 * [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentação do AEM Assets](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html)
-* [AEM como Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [Tutorials AEM Sites](/help/sites/overview.md)
-* [Tutorials AEM Forms](/help/forms/overview.md)
-* [Tutorials AEM Foundation](/help/foundation/overview.md)
+* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriais do AEM Sites](/help/sites/overview.md)
+* [Tutoriais do AEM Forms](/help/forms/overview.md)
+* [Tutoriais do AEM Foundation](/help/foundation/overview.md)
