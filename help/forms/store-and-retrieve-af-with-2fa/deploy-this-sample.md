@@ -1,0 +1,71 @@
+---
+title: Implantar a amostra
+description: Obter caso de uso em execução na sua instância AEM Forms local
+feature: adaptive-forms
+topics: development
+audience: developer
+doc-type: tutorial
+activity: implement
+version: 6.4,6.5
+kt: 6602
+thumbnail: 6602.jpg
+translation-type: tm+mt
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 1%
+
+---
+
+
+
+# Implantar a amostra
+
+Para que esse caso de uso funcione no seu sistema, siga as seguintes instruções:
+
+>[!NOTE]
+>Pressupõe-se que você esteja executando o AEM Forms na porta 4502.
+
+
+## Criar banco de dados
+
+Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Será necessário criar o schema do [banco de dados importando o arquivo](assets/data-base-schema.sql) do schema para a bancada MySQL.
+
+## Criar fonte de dados
+
+É necessário criar uma fonte de dados chamada **StoreAndRetrieveAfData**. O código no pacote OSGi usa esse nome de fonte de dados
+
+## Criar modelo de dados do formulário
+
+O Modelo de Dados de Formulário precisa ser criado com base nessa fonte de dados chamada **StoreAndRetrieveAfData**. Este modelo de dados de formulário é usado para buscar o número do telefone celular associado à ID do aplicativo. O modelo de dados de formulário pode ser [baixado aqui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+
+## Criar conta de desenvolvedor com anexo
+
+Crie uma conta de desenvolvedor com o [Nexmo](https://dashboard.nexmo.com/) para enviar e verificar códigos OTP. Anote a chave da API e a chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e são incluídos com os ativos mencionados na etapa anterior.
+
+## Implantar os seguintes pacotes OSGi
+
+Implante o pacote que tem o [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)Implante o pacote [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+
+## Implantar a biblioteca do cliente
+
+A amostra usa 2 bibliotecas de clientes. Importe essas bibliotecas [de](assets/client-libraries.zip) clientes para o AEM.
+
+## Importar o modelo de formulário adaptativo personalizado
+
+Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importar o modelo [personalizado para AEM](assets/custom-template-with-page-component.zip)
+
+## Importar os formulários adaptativos de amostra
+
+Os 2 formulários que compõem essa amostra precisam ser importados para AEM. Os formulários de amostra podem ser [baixados aqui](assets/sample-forms.zip)
+
+Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Especifique a chave da API e os valores do segredo da API nos campos apropriados no formulário adaptável.
+
+## Teste a solução
+
+Pré-visualização [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)Insira seu número de celular incluindo o código do país, preencha os detalhes do usuário e adicione alguns anexos. Clique no botão &quot;Salvar e sair&quot; para salvar o formulário adaptável e seus anexos
+
+
+## Demonstração do caso de uso
+
+>[!VIDEO](https://video.tv.adobe.com/v/327122?quality=9&learn=on)
