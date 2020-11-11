@@ -6,9 +6,9 @@ user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores 
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '898'
 ht-degree: 6%
 
 ---
@@ -94,7 +94,18 @@ ht-degree: 6%
    + [Adicionar coluna personalizada](inbox-customization/add-married-column.md)
    + [Uso de modelo inteligente](inbox-customization/use-sightly-template.md)
 
-
++ Armazenar e recuperar formulário adaptável{#store-and-retrieve-af-with-2fa}
+   + [Introdução](store-and-retrieve-af-with-2fa/introduction.md)
+   + [Configurar fonte de dados](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [Armazenar anexos de formulário](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [Armazenar dados de formulário](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [Criar servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [Renderizar formulário com dados salvos](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [Criar biblioteca do cliente](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [Integrar ao Serviço OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [Criar o formulário principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [Criar o formulário MyAccount (Minha conta)](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [Implantar a amostra](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Exportação de dados enviados no formato CSV{#export-submitted-data-csv-format}
    + [Exportar dados enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formulários HTML5{#html5-forms}
@@ -109,7 +120,7 @@ ht-degree: 6%
    + [Criar e configurar formulário adaptável](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurar formulário adaptável para um único assinante](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurar formulário adaptável para dois signatários](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurar o serviço de conversão automatizado Forms](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configurar o serviço de Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Converter formulário PDF em formulário adaptável](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulário adaptável convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de modelos XDP com Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
