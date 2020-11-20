@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Para implantar os ativos no sistema local:
 
 * [Baixe e implante DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
+* [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
 
 * [Baixe e extraia o conteúdo do arquivo zip](assets/set-value-jsondata.zip)
    * Aponte seu navegador para o gerenciador de [pacotes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ Para implantar os ativos no sistema local:
 * Observe que os campos no primeiro painel estão desativados.
 * Observe que o painel para aprovar ou recusar a solicitação agora está visível.
 
-
-
 >[!NOTE]
-
+>
 >Como estamos preenchendo previamente o Formulário adaptativo usando o perfil do usuário, verifique se as informações do perfil do [usuário administrador ](http://localhost:4502/security/users.html). No mínimo, certifique-se de ter definido os valores dos campos Nome, Sobrenome e Email.
 >Você pode ativar o registro de depuração ativando o agente de log para com.aemforms.setvalue.core.SetValueInJson [aqui](http://localhost:4502/system/console/slinglog)
 
