@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,12 @@ ht-degree: 0%
 
 Saiba como criar uma Atividade de teste A/B usando o Visual Experience Composer (VEC).
 
-Antes de criar uma Atividade no Público alvo, é necessário fazer a configuração:
+## Pré-requisitos
 
-1. [Integrar Experience Platform Launch e AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-2. [Integre o Adobe Experience Manager ao Adobe Target usando Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
+Para utilizar a VEC num sítio Web AEM, deve ser concluída a seguinte configuração:
+
+1. [Adicionar Adobe Target ao seu site AEM](./add-target-launch-extension.md)
+1. [Acionar uma chamada do Adobe Target do Launch](./load-and-fire-target.md)
 
 ## Visão geral do cenário
 
@@ -33,7 +35,10 @@ O home page do site WKND exibe atividades locais ou a melhor coisa a se fazer em
 
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
-1. Faça logon no Adobe Target e navegue até a guia Atividade
+1. Faça logon no [Adobe Experience Cloud](https://experience.adobe.com/), toque no __Público alvo__ e navegue até a guia __Atividade__
+
+   + Se você não vir o __Público alvo__ no painel Experience Cloud, verifique se a organização do Adobe correta está selecionada no alternador da organização no canto superior direito e se o usuário recebeu acesso ao Público alvo no [Adobe Admin Console](https://adminconsole.adobe.com/).
+
 1. Clique no botão **Criar Atividade** e escolha **atividade de teste** A/B
 
    ![Atividade A/B](assets/ab-target-activity.png)
@@ -82,5 +87,5 @@ Neste capítulo, um profissional de marketing conseguiu criar uma experiência u
 
 ## Links de suporte
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
