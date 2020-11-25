@@ -1,5 +1,5 @@
 ---
-title: Exportar fragmento de experiência para Adobe Target
+title: Exporte fragmentos de experiência do para o Adobe Target
 description: Saiba como publicar e exportar AEM Fragmento de experiência como Ofertas Adobe Target.
 feature: experience-fragments
 topics: integrations, authoring
@@ -10,10 +10,10 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 4%
 
 ---
 
@@ -26,9 +26,34 @@ Saiba como exportar AEM Fragmento de experiência como Adobe Target Oferta.
 
 ## Próximas etapas
 
-1. [Criar uma Atividade de Público alvo usando Ofertas de fragmento de experiência](./create-target-activity.md)
++ [Criar uma Atividade de Público alvo usando Ofertas de fragmento de experiência](./create-target-activity.md)
+
+## Resolução de problemas
+
+### Falha ao exportar fragmentos de experiência para o Público alvo
+
+#### Erro
+
+Exportar o fragmento de experiência para o Adobe Target sem as permissões corretas no Adobe Admin Console resulta no seguinte erro no serviço de autor de AEM:
+
+    ![Erro de interface de usuário da API do Público alvo](assets/error-target-offer.png)
+
+... e as seguintes mensagens de registro no `aemerror` registro:
+
+    ![Erro do console da API do Público alvo](assets/target-console-error.png)
+
+#### Resolução
+
+1. Faça logon no [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de produtos Adobe Target usado, mas a integração AEM
+2. Selecione __Produtos > Adobe Target > Perfil do produto__
+3. Na guia __Integrações__ , selecione a integração do seu AEM como ambiente (o mesmo nome do projeto de E/S do Adobe)
+4. Atribuir função __de editor__ ou __aprovador__
+
+   ![Erro de API de público alvo](assets/target-permissions.png)
+
+A adição da permissão correta à sua integração com o Adobe Target resolverá esse erro.
 
 ## Links de suporte
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
