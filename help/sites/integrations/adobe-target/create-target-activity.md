@@ -10,24 +10,28 @@ version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 6%
 
 ---
 
 
-# Criar Atividade Adobe Target usando o fragmento de experiência {#target-activity-experience-fragment}
+# Criar Atividade Adobe Target usando Ofertas de fragmento de experiência {#target-activity-experience-fragment}
 
-Saiba como criar e testar uma Atividade Adobe Target usando AEM ofertas de fragmento de experiência.
+Saiba como criar e testar uma Atividade Adobe Target usando AEM Ofertas de fragmento de experiência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
 
-Antes de criar uma Atividade no Público alvo, é necessário fazer a configuração:
+## Pré-requisitos
 
-1. [Integrar Experience Platform Launch e AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-2. [Integre o Adobe Experience Manager ao Adobe Target usando Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
+Para criar o Adobe Target Atividade usando Ofertas de fragmento de experiência, a seguinte configuração deve ser concluída:
+
+1. [Adicionar Adobe Target ao seu site AEM](./add-target-launch-extension.md)
+1. [Acionar uma chamada do Adobe Target do Launch](./load-and-fire-target.md)
+1. [Integrar o serviço de autor de AEM à Adobe Target](./setup-aem-target-cloud-service.md)
+1. [Exporte fragmentos de experiência do AEM para o Adobe Target](./export-experience-fragment-target.md)
 
 ## Links de suporte
 
