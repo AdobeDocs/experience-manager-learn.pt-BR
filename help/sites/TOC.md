@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience
 breadcrumb-title: Tutoriais do AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 16%
       + [Adicionar Extensão do target à propriedade Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Carregar e acionar uma chamada de Público alvo](integrations/adobe-target/load-and-fire-target.md)
       + [Criar conta do Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exportar fragmento de experiência para Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Exporte fragmentos de experiência do para o Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Criar Atividade de Público alvo usando Ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
       + [Personalização usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Personalização da experiência completa da página da Web](integrations/adobe-target/personalization-web-page.md)
