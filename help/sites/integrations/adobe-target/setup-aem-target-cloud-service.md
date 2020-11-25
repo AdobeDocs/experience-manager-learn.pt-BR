@@ -1,6 +1,6 @@
 ---
-title: Criar conta do Adobe Target Cloud Service
-description: Passo a passo sobre como integrar o Adobe Experience Manager como Cloud Service com o Adobe Target usando a autenticação Cloud Service e Adobe
+title: Criar conta do Adobe Target Cloud Service em AEM
+description: Integre o Adobe Experience Manager como um Cloud Service com o Adobe Target usando a autenticação Cloud Service e Adobe IMS.
 feature: cloud-services
 topics: integrations, administration, development
 audience: administrator, developer
@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6044
 thumbnail: 41244.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
@@ -20,30 +20,13 @@ ht-degree: 0%
 
 # Criar conta do Adobe Target Cloud Service {#adobe-target-cloud-service}
 
-Passo a passo sobre como integrar o Adobe Experience Manager como Cloud Service com o Adobe Target usando a autenticação Cloud Service e Adobe IMS.
+O vídeo a seguir mostra como conectar AEM como um Cloud Service com o Adobe Target.
+
+Essa integração permite que o serviço de autor de AEM se comunique diretamente com a Adobe Target e envie Fragmentos de experiência de AEM para Público alvo como ofertas.  Essa integração *não* adiciona o Adobe Target JavaScript (AT.js) às páginas da Web da AEM Sites, para isso integrar [AEM com o Launch usando a Extensão do target](../experience-platform-launch/connect-aem-launch-adobe-io.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Há um problema conhecido com a configuração dos Cloud Services Adobe Target mostrado no vídeo. Em vez disso, é recomendável seguir as mesmas etapas no vídeo, mas usar a configuração [](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)Legacy Adobe Target Cloud Services.
+>Há um problema conhecido com a configuração dos Cloud Services Adobe Target mostrado no vídeo. Até que esse problema seja resolvido, siga as mesmas etapas no vídeo, mas use a configuração [](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)herdada dos Cloud Services Adobe Target.
 
-## Problemas comuns
-
-Ao exportar o Fragmento de experiência para o público alvo Adobe, se a integração de Público alvo no console de administração não tiver a permissão correta, você poderá receber um erro, como mostrado abaixo.
-
-**Erro** de interface do usuário da API do![Público alvo de erro da interface do usuário](assets/error-target-offer.png)
-
-**Erro no Console da API do Erro** de Log![do Público alvo](assets/target-console-error.png)
-
-
-**Solução**
-
-1. Navegue até [Admin Console](https://adminconsole.adobe.com/)
-2. Selecione Produtos > Adobe Target > Perfil do produto
-3. Na guia Integrações, selecione sua integração (projeto de E/S do Adobe)
-4. Atribuir função de Editor ou Aprovador.
-
-![Erro de API de público alvo](assets/target-permissions.png)
-
-Adicionar a permissão correta à integração do Público alvo ajudará você a resolver o problema acima.
