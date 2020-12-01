@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Configuração do Painel de Gravação do Outlook{#configuring-retirement-outlook-panel}
+# Configurando o Painel de Gravação do Outlook{#configuring-retirement-outlook-panel}
 
 * Esta é a parte 10 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, iremos configurar o Painel Retirada do Outlook adicionando componentes de texto e gráfico.
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * Selecione o ícone &quot;lápis&quot; para editar o texto padrão.
 
-* Substitua o texto padrão por &quot;**suas Perspectivas de Renda de Baixa&quot;**
+* Substitua o texto padrão por &quot;**Seu Outlook de Renda de Baixa&quot;**
 
 **Configurar a área de público alvo do Painel direito**
 
@@ -52,15 +52,15 @@ ht-degree: 0%
 
 * Selecione o ícone &quot;lápis&quot; para editar o texto padrão.
 
-* Substitua o texto padrão por &quot;Receita de **Baixa Mensal Estimada&quot;**
+* Substitua o texto padrão por &quot;**Renda de Baixa Mensal Estimada&quot;**
 
-## Adicionar Fragmento de Documento do Outlook de Receita de Baixa {#add-retirement-income-outlook-document-fragment}
+## Adicionar Fragmento de Documento do Outlook de Renda {#add-retirement-income-outlook-document-fragment}
 
 * Clique no ícone Ativos e aplique o filtro para exibir ativos do tipo &quot;Fragmentos de Documento&quot;. Arraste e solte o fragmento de documento RetimentaçãoRendaOutlook na área de público alvo do painel esquerdo.
 
-* Você pode consultar [esta página](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) sobre como adicionar fragmento de documento a áreas de conteúdo.
+* Você pode consultar [esta página](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) ao adicionar fragmento de documento a áreas de conteúdo.
 
-## Adição de gráfico de rendimento mensal estimado {#adding-estimated-monthly-income-chart}
+## Adicionar gráfico de rendimento mensal estimado {#adding-estimated-monthly-income-chart}
 
 * Clique na área público alvo RightPanel no lado direito. Clique no ícone &quot;+&quot; para inserir o componente gráfico. Usaremos um gráfico de colunas para exibir a renda mensal estimada. Toque com cuidado no componente de gráfico recém-inserido. Selecione o ícone &quot;chave inglesa&quot; para abrir a folha de propriedades de configuração.Configure o gráfico com as seguintes propriedades, conforme mostrado na captura de tela abaixo.
 
