@@ -20,7 +20,7 @@ ht-degree: 15%
 ---
 
 
-# Visão geral de criação {#authoring-overview}
+# Visão geral da criação {#authoring-overview}
 
 O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de autor AEM para AEM Sites.
 
