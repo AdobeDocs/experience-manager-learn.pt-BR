@@ -25,16 +25,16 @@ Um Documento certificado fornece aos recipient de formulários e documentos de P
 
 Para certificar um documento, você pode usar o Acrobat DC no desktop ou os Serviços de Documento AEM Forms como parte de um processo automatizado em um servidor.
 
-Este artigo fornece uma amostra do pacote OSGI para certificar documentos pdf usando o AEM Forms Documento Services.O código usado na amostra está [disponível aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+Este artigo fornece uma amostra do pacote OSGI para certificar documentos pdf usando o AEM Forms Documento Services. O código usado na amostra é [disponível aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Para certificar documentos usando o AEM Forms, siga as etapas a seguir
 
-## Adicionando certificado ao armazenamento confiável {#adding-certificate-to-trust-store}
+## Adicionando certificado ao repositório de confiança {#adding-certificate-to-trust-store}
 
 Siga as etapas abaixo para adicionar o certificado ao keystore no AEM
 
 * [Inicializar o repositório de confiança global](http://localhost:4502/libs/granite/security/content/truststore.html)
-* [Procurar utilizador fd-service](http://localhost:4502/security/users.html)
+* [Procurar fd-](http://localhost:4502/security/users.html) serviceuser
 * **Será necessário rolar a página de resultados para carregar todos os usuários para encontrar o usuário fd-service**
 * Duplo clique no usuário fd-service para abrir a janela de configurações do usuário
 * Clique em &quot;Adicionar chave privada do arquivo de armazenamento de chaves&quot;.Especifique o alias e a senha específicos do seu certificado
@@ -56,17 +56,17 @@ Ou você pode usar o conjunto de amostras incluído como parte dos ativos do tut
 
 ## Teste da amostra no sistema local
 
-* Baixar e instalar o Pacote de serviços de Documento [personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Baixar e instalar o [Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Baixe e instale o [Pacote personalizado de serviços de Documento](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Baixe e instale [Desenvolvimento com o Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Verifique se você adicionou a seguinte entrada ao serviço Mapeador de Usuário do Apache Sling Service](http://localhost:4502/system/console/configMgr)
 
-   **DevelopingWithServiceUser.core:getformsresouresolver=fd-service** como mostrado na captura de tela abaixo
+   **DevelopingWithServiceUser.core:getformsresouresolver=fd-** serviceconforme mostrado na captura de tela abaixo
    ![Mapeador de usuário](assets/user-mapper-service.PNG)
 * [Importar formulário adaptável de amostra](assets/certify-pdf-af.zip)
 * [Importe e instale o envio personalizado](assets/custom-submit-certify.zip)
 * [Abra o formulário adaptativo](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Carregar documento PDF que precisa ser certificado
-   **opcional** - Especifique o campo de assinatura que deseja usar na certificação do documento
+   **opcional**  - Especifique o campo de assinatura que deseja usar na certificação do documento
 * Clique em enviar.
 * O PDF certificado deve ser devolvido a você.
 
