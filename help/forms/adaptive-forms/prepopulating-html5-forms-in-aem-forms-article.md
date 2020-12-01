@@ -20,9 +20,9 @@ ht-degree: 0%
 ---
 
 
-# Pré-preencher HTML5 Forms usando atributo de dados {#prepopulate-html-forms-using-data-attribute}
+# Preencher HTML5 Forms usando o atributo de dados {#prepopulate-html-forms-using-data-attribute}
 
-Visite a página de exemplos [da](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
 
 Os modelos XDP renderizados no formato HTML usando o AEM Forms são chamados de HTML5 ou Mobile Forms. Um caso de uso comum é o preenchimento prévio desses formulários ao serem renderizados.
 
@@ -38,7 +38,7 @@ slingRequest.setAttribute(&quot;data&quot;, conteúdo);
 
 Neste exemplo, estamos configurando o atributo de dados com o conteúdo. O conteúdo representa os dados com os quais você deseja pré-preencher o formulário. Normalmente, você buscaria o &quot;conteúdo&quot; fazendo uma chamada REST para um serviço interno.
 
-Para obter esse caso de uso, é necessário criar um perfil personalizado. Os detalhes sobre a criação de perfis personalizados estão claramente documentados na documentação [AEM Forms aqui](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Para obter esse caso de uso, é necessário criar um perfil personalizado. Os detalhes sobre a criação de perfis personalizados estão claramente documentados na [documentação da AEM Forms aqui](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
 Depois de criar o perfil personalizado, você criará um arquivo JSP que buscará os dados fazendo chamadas para o sistema de backend. Quando os dados forem obtidos, você usará slingRequest.setAttribute(&quot;data&quot;, content); para preencher previamente o formulário
 
@@ -49,7 +49,8 @@ Quando o XDP está sendo renderizado, você também pode passar alguns parâmetr
 O JSP que você gravar terá acesso ao parâmetro name por meio do request.getParameter(&quot;name&quot;). Você pode passar o valor desse parâmetro para o processo de backend para buscar os dados necessários.
 Para que esse recurso funcione no seu sistema, siga as etapas mencionadas abaixo:
 
-* [Baixar e importar os ativos para AEM usando o gerenciador](assets/prepopulatemobileform.zip)de pacotes O pacote instalará o seguinte
+* [Baixe e importe os ativos para AEM usando o ](assets/prepopulatemobileform.zip)
+gerenciador de pacotesO pacote instalará o seguinte
 
    * CustomProfile
    * XDP de exemplo
