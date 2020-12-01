@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Apenas para execução de disposição (FPO){#for-placement-only-rendition}
+# Apenas para representação de disposição (FPO){#for-placement-only-rendition}
 
 Explore como criar e usar uma representação Somente disposição para ativos AEM.
 
