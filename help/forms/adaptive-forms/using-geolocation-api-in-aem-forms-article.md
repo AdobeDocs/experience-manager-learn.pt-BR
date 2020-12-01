@@ -20,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# Usando APIs de localização geográfica no Forms adaptável{#using-geolocation-api-s-in-adaptive-forms}
+# Usando APIs de localização geográfica em Forms adaptável{#using-geolocation-api-s-in-adaptive-forms}
 
-Visite a página de exemplos [da](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
 
 Neste artigo, vamos observar o uso da API de localização geográfica do Google para preencher campos de um Formulário adaptável. Esse caso de uso costuma ser usado quando você deseja preencher os campos de endereço atuais em um formulário.
 
 As etapas a seguir foram seguidas para usar a API de localização geográfica no Adaptive Forms.
 
-1. [Obtenha a chave](https://developers.google.com/maps/documentation/javascript/get-api-key) da API do Google para usar a plataforma do Google Maps. Você pode obter uma chave de avaliação válida por 1 ano.
+1. [Obtenha o API ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyfrom Google para usar a plataforma Google Maps. Você pode obter uma chave de avaliação válida por 1 ano.
 
 1. O fragmento de formulário adaptativo foi criado com campos para manter o endereço atual
 
@@ -102,7 +102,7 @@ Para colocar esse recurso em seu servidor, siga as etapas a seguir
 * Instale e start o servidor AEM Forms.
 
 >!![NOTE] Esse recurso foi testado no AEM Forms 6.3 e superior
-* [Obtenha a chave](https://developers.google.com/maps/documentation/javascript/get-api-key)da API do Google.
+* [Obtenha a chave](https://developers.google.com/maps/documentation/javascript/get-api-key) da API do Google.
 * [Importe os ativos relacionados a este artigo para AEM.](assets/geolocationapi.zip)
 * [Abra o fragmento Formulário adaptável no modo de edição.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra o editor de regras para o componente de Escolha de imagem.
