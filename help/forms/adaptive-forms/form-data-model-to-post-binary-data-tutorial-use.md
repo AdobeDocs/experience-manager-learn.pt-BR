@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso Do Modelo De Dados De Formulário Para Postar Dados Binários{#using-form-data-model-to-post-binary-data}
+# Usando o Modelo de Dados de Formulário para Publicar Dados Binários{#using-form-data-model-to-post-binary-data}
 
 A partir do AEM Forms 6.4, agora temos a capacidade de chamar o serviço de modelo de dados de formulário como uma etapa AEM fluxo de trabalho. Este artigo o guiará por um exemplo de caso de uso para postar Documento de Registro usando o serviço de Modelo de Dados de Formulário.
 
@@ -46,24 +46,24 @@ Entrada do serviço
 
 >[!NOTE]
 >
->Dicas para fotografar problemas - se por algum motivo o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando [aqui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação AEM, que por padrão são admin/admin.
+>Dicas para fotografar problemas - Se por algum motivo o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando em [here](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação AEM, que por padrão são admin/admin.
 
 Para testar esse recurso em seu servidor, siga as etapas mencionadas abaixo:
 
 1.[Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue.Esse pacote OSGI personalizado é usado para criar a propriedade de metadados e definir seu valor a partir dos dados de formulário enviados.
+1. [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue.Esse pacote OSGI personalizado é usado para criar a propriedade de metadados e definir seu valor a partir dos dados de formulário enviados.
 
-1. [Importe os ativos](assets/postdortodam.zip) associados a este artigo para AEM usando o gerenciador de pacotes.Você obterá o seguinte
+1. [Importe os ativos ](assets/postdortodam.zip) associados a este artigo para AEM usando o gerenciador de pacotes.Você obterá o seguinte
 
    1. Modelo de fluxo de trabalho
    1. Formulário adaptável configurado para enviar ao fluxo de trabalho AEM
    1. Fonte de dados configurada para usar o arquivo PostToDam.JSON
    1. Modelo de dados de formulário que usa a fonte de dados
 
-1. Aponte seu [navegador para abrir o formulário adaptativo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Aponte seu [navegador para abrir o Formulário adaptativo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Preencha o formulário e envie.
 1. Verifique o aplicativo Ativos se o Documento de Registro foi criado e armazenado.
 
 
-[O Arquivo](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Swagger usado na criação da fonte de dados está disponível para sua referência
+[O ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) arquivo Swagger usado na criação da fonte de dados está disponível para sua referência
