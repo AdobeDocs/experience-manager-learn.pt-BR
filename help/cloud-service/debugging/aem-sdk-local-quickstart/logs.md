@@ -27,33 +27,33 @@ Acessar os registros do SDK AEM, as ferramentas de Início Rápido local do SDK 
 
 Os registros atuam como linha de frente para depurar aplicativos AEM, mas dependem do logon adequado no aplicativo AEM implantado. A Adobe recomenda manter o desenvolvimento local e a AEM como um Cloud Service Dev logging settings tão semelhantes quanto possível, pois normaliza a visibilidade do registro no início rápido local do SDK AEM e AEM como um Cloud Service Dev ambiente, reduzindo a ociosidade e a reimplantação da configuração.
 
-O [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG para os pacotes Java de seu aplicativo AEM para desenvolvimento local por meio da configuração Sling Logger OSGi encontrada em
+O [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG dos pacotes Java da sua aplicação AEM para desenvolvimento local através da configuração Sling Logger OSGi encontrada em
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-que se conecta ao `error.log`.
+que faz logon em `error.log`.
 
-Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc poderá ser configurado por meio do console da Web do suporte ao registro AEM SDK, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas em Git, a menos que essas mesmas configurações de registro sejam necessárias em AEM como ambientes Cloud Service Dev também. Lembre-se de que as alterações por meio do console Suporte de log são mantidas diretamente no repositório local do Início rápido do SDK AEM.
+Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc poderá ser configurado por meio do console da Web do suporte ao registro do SDK local, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas no Git, a menos que essas mesmas configurações de registro sejam necessárias em AEM como ambientes de desenvolvedor Cloud Service. Lembre-se de que as alterações por meio do console Suporte de log são mantidas diretamente no repositório local do Início rápido do SDK AEM.
 
-As declarações do log Java podem ser visualizações no `error.log` arquivo:
+As declarações do log Java podem ser visualizações no arquivo `error.log`:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Muitas vezes é útil &quot;cortar&quot; a saída `error.log` que transmite a saída para o terminal.
+Muitas vezes, é útil &quot;rastrear&quot; o `error.log` que transmite sua saída para o terminal.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ O Windows requer aplicativos [de terceiros ou o uso do comando](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) Get-Content do [](https://stackoverflow.com/a/46444596/133936)Powershell.
++ O Windows requer [aplicativos de rastreamento de terceiros](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou o uso do [comando Get-Content do Powershell](https://stackoverflow.com/a/46444596/133936).
 
 ## Logs do Dispatcher
 
-Os registros do Dispatcher são enviados para stdout quando `bin/docker_run` são chamados, no entanto, os logs podem ser acessados diretamente no conteúdo do Docker.
+Os logs do Dispatcher são enviados para stdout quando `bin/docker_run` é chamado, no entanto, os logs podem ser acessados diretamente com o no Docker contém.
 
 ### Acessar registros no container Docker
 
-Os registros do Dispatcher podem ser acessados diretamente no container Docker em `/etc/httpd/logs`.
+Os registros do Dispatcher podem estar acessando diretamente no container Docker em `/etc/httpd/logs`.
 
 ```shell
 $ docker ps
@@ -75,7 +75,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copiando os registros do Docker para o sistema de arquivos local
 
-Os registros do Dispatcher podem ser copiados do container Docker em `/etc/httpd/logs` para o sistema de arquivos local para inspeção usando a ferramenta de análise de log favorita. Observe que esta é uma cópia point-in-time e não fornece atualizações em tempo real para os registros.
+Os registros do Dispatcher podem ser copiados do container do Docker em `/etc/httpd/logs` para o sistema de arquivos local para inspeção usando sua ferramenta de análise de log favorita. Observe que esta é uma cópia point-in-time e não fornece atualizações em tempo real para os registros.
 
 ```shell
 $ docker ps
