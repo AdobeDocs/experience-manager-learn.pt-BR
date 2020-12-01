@@ -44,11 +44,11 @@ Este tutorial estabeleceu o local do AEM como artefatos SDK de Cloud Service e A
 + `~/aem-sdk/dispatcher` contém as Ferramentas do Dispatcher
 + `~/code/<project name>` contém o código-fonte personalizado AEM Project
 
-Observe que `~` é abreviado para o Diretório do usuário. No Windows, isso equivale a `%HOMEPATH%`;
+Observe que `~` é abreviado para o Diretório do usuário. No Windows, isso é o equivalente a `%HOMEPATH%`;
 
 ## Ferramentas de desenvolvimento para projetos AEM
 
-O projeto AEM é a base de código personalizada que contém o código, a configuração e o conteúdo implantados pelo Cloud Manager para AEM como Cloud Service. A estrutura de projeto de linha de base é gerada pelo [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype).
+O projeto AEM é a base de código personalizada que contém o código, a configuração e o conteúdo implantados pelo Cloud Manager para AEM como Cloud Service. A estrutura de projeto da linha de base é gerada pelo [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype).
 
 Esta seção do tutorial mostra como:
 
@@ -61,7 +61,7 @@ Esta seção do tutorial mostra como:
 
 ## Tempo de execução de AEM local
 
-O AEM como um SDK Cloud Service fornece uma versão [!DNL QuickStart Jar] que executa uma versão local do AEM. O [!DNL QuickStart Jar] pode ser usado para executar o serviço de autor de AEM ou o serviço de publicação de AEM localmente. Observe que embora o [!DNL QuickStart Jar] ofereça uma experiência de desenvolvimento local, nem todos os recursos disponíveis no AEM como Cloud Service são incluídos no [!DNL QuickStart Jar].
+O AEM como um SDK Cloud Service fornece um [!DNL QuickStart Jar] que executa uma versão local do AEM. O [!DNL QuickStart Jar] pode ser usado para executar o serviço de autor de AEM ou o serviço de publicação de AEM localmente. Observe que, embora o [!DNL QuickStart Jar] ofereça uma experiência de desenvolvimento local, nem todos os recursos disponíveis no AEM como Cloud Service estão incluídos no [!DNL QuickStart Jar].
 
 Esta seção do tutorial mostra como:
 
@@ -72,14 +72,14 @@ Esta seção do tutorial mostra como:
 
 [Configurar o tempo de execução Local AEM](./aem-runtime.md)
 
-## Tempo de [!DNL Dispatcher] execução local
+## Local [!DNL Dispatcher] Tempo de execução
 
-AEM como as Ferramentas do Dispatcher do SDK do Cloud Service fornece tudo o que é necessário para configurar o [!DNL Dispatcher] tempo de execução local. [!DNL Dispatcher] As ferramentas são [!DNL Docker]baseadas e fornecem ferramentas de linha de comando para transformar o Servidor [!DNL Apache HTTP] Web e os arquivos de [!DNL Dispatcher] configuração em formatos compatíveis e implantá-los em [!DNL Dispatcher] execução no [!DNL Docker] container.
+AEM como um Dispatcher Tools do SDK do Cloud Service fornece tudo o que é necessário para configurar o tempo de execução local [!DNL Dispatcher]. [!DNL Dispatcher] As ferramentas são baseadas em  [!DNL Docker]e fornecem ferramentas de linha de comando para transpor o Servidor  [!DNL Apache HTTP] Web e os arquivos  [!DNL Dispatcher] de configuração para formatos compatíveis e implantá-los em  [!DNL Dispatcher] execução no  [!DNL Docker] container.
 
 Esta seção do tutorial mostra como:
 
 + Baixar o SDK do AEM
-+ Instalar [!DNL Dispatcher] ferramentas
-+ Executar o [!DNL Dispatcher] tempo de execução local
++ Instalar ferramentas [!DNL Dispatcher]
++ Executar o tempo de execução local [!DNL Dispatcher]
 
-[Configurar o [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
+[Configurar o  [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
