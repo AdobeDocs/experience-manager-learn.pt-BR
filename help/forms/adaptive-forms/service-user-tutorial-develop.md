@@ -34,7 +34,7 @@ Este artigo percorre a criação de um usuário do sistema e configura as propri
 1. Defina o tipo de usuário como &#39; data &#39; e clique no ícone verde para concluir o processo de criação do usuário do sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
 1. Procure &#39; Serviço Mapeador de Usuário do Serviço Apache Sling &#39; e clique para abrir as propriedades
-1. Clique no ícone *+* (mais) para adicionar o seguinte Mapeamento de serviço
+1. Clique no ícone *+* (mais) para adicionar o seguinte Mapeamento de serviços
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -49,7 +49,7 @@ Também podemos obter o resolvedor de recursos em nome do usuário do fd-service
 1. Navegue até [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carregar e start o pacote OSGi
 1. Verifique se o pacote está no estado ativo
-1. Agora você criou com êxito um Usuário *do* Sistema e também implantou o pacote *Usuário do* Serviço.
+1. Agora você criou com êxito um *Usuário do sistema* e também implantou o *pacote de Usuário do serviço*.
 
    Para fornecer acesso a /content, atribua ao usuário do sistema (&#39; dados &#39;) permissões de leitura no nó de conteúdo.
 
