@@ -37,7 +37,7 @@ Há três conjuntos de regras dinâmicas que podem ser ativados para um determin
 >
 >As regras em cascata SÓ podem ser criadas com base nos valores de um campo suspenso. É possível aplicar todos os três conjuntos de regras ao mesmo campo de metadados, mas como prática recomendada, é recomendado tornar cada conjunto de regras dependente da mesma lista suspensa de metadados.
 
-Download do pacote de metadados [personalizados](assets/cascade-metadata-values-001.zip)
+Baixar [Pacote de metadados personalizados](assets/cascade-metadata-values-001.zip)
 
 ## Recursos adicionais{#additional-resources}
 
