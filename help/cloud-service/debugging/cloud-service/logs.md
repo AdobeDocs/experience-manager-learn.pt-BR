@@ -33,13 +33,13 @@ As IDs de pod são fornecidas em cada instrução de log e permitem a filtragem 
 
 AEM como um Cloud Services não suporta arquivos de log personalizados, no entanto, ele oferece suporte a logs personalizados.
 
-Para que os registros Java fiquem disponíveis em AEM como Cloud Service (via [Cloud Manager](#cloud-manager) ou [Adobe I/O CLI](#aio)), as declarações de log personalizadas devem ser gravadas como `error.log`. Os registros gravados em registros nomeados personalizados, como `example.log`, não serão acessíveis a partir de AEM como Cloud Service.
+Para que os registros Java fiquem disponíveis em AEM como Cloud Service (via [Gerenciador de nuvem](#cloud-manager) ou [Adobe I/O CLI](#aio)), as declarações de log personalizadas devem ser gravadas como `error.log`. Os registros gravados em registros nomeados personalizados, como `example.log`, não serão acessíveis a partir de AEM como Cloud Service.
 
 ## Logs do serviço de autor e publicação do AEM
 
 Os serviços de autor e publicação do AEM fornecem registros AEM servidor de tempo de execução:
 
-+ `aemerror` é o log de erros do Java (encontrado `/crx-quickstart/error.log` no Início rápido local do SDK do AEM). Estes são os níveis [de log](#log-levels) recomendados para os registradores personalizados por tipo de ambiente:
++ `aemerror` é o log de erros Java (encontrado  `/crx-quickstart/error.log` no Início rápido local do SDK AEM). Estes são os [níveis de log recomendados](#log-levels) para registradores personalizados por tipo de ambiente:
    + Desenvolvimento: `DEBUG`
    + Estágio: `WARN`
    + Produção: `ERROR`
@@ -51,7 +51,7 @@ Os serviços de autor e publicação do AEM fornecem registros AEM servidor de t
 Somente o AEM Publish Dispatcher fornece o servidor da Web do Apache e os logs do Dispatcher, pois esses aspectos só existem na camada de publicação do AEM e não na camada de autor do AEM.
 
 + `httpdaccess` Solicitações HTTP do lista feitas no servidor da Web Apache/Dispatcher do serviço AEM.
-+ `httperror`  Mensagens de registro do lista do servidor Web Apache e ajuda na depuração de módulos Apache suportados, como `mod_rewrite`.
++ `httperror`  Mensagens de registro do lista do servidor Web Apache e ajuda na depuração de módulos Apache suportados, como  `mod_rewrite`.
    + Desenvolvimento: `DEBUG`
    + Estágio: `WARN`
    + Produção: `ERROR`
@@ -68,13 +68,13 @@ O Adobe Cloud Manager permite o download de logs, por dia, por meio de uma açã
 
 Esses registros podem ser baixados e inspecionados por meio de qualquer ferramenta de análise de log.
 
-## CLI de E/S de Adobe com o plug-in do Cloud Manager{#aio}
+## Adobe I/O CLI com plug-in do Cloud Manager{#aio}
 
-O Adobe Cloud Manager oferece suporte ao acesso a AEM como registros de Cloud Service por meio da CLI [de E/S do](https://github.com/adobe/aio-cli) Adobe com o plug-in [Cloud Manager para a CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)de E/S do Adobe.
+O Adobe Cloud Manager oferece suporte ao acesso a AEM como registros de Cloud Service por meio do [Adobe I/O CLI](https://github.com/adobe/aio-cli) com o [plug-in do Cloud Manager para o Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-Primeiro, [configure a E/S do Adobe com o plug-in](../../local-development-environment/development-tools.md#aio-cli)do Cloud Manager.
+Primeiro, [configure o Adobe I/O com o plug-in do Cloud Manager](../../local-development-environment/development-tools.md#aio-cli).
 
-Verifique se a ID do Programa e a ID do Ambiente relevantes foram identificadas e use as opções [de log disponíveis para](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerlist-available-log-options-environmentid) lista para lista das opções de log usadas para [rastrear](#aio-cli-tail-logs) ou [baixar](#aio-cli-download-logs) logs.
+Verifique se a ID do Programa e a ID do Ambiente relevantes foram identificadas e use [lista-available-log-options](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerlist-available-log-options-environmentid) para lista das opções de log usadas nos registros [tail](#aio-cli-tail-logs) ou [download](#aio-cli-download-logs).
 
 ```
 $ aio cloudmanager:list-programs
@@ -104,26 +104,26 @@ Environment Id Service    Name
 22295          dispatcher aemdispatcher 
 ```
 
-### Registros à direita{#aio-cli-tail-logs}
+### Registros de navegação{#aio-cli-tail-logs}
 
-A CLI de E/S do Adobe fornece a capacidade de rastrear registros em tempo real de AEM como um Cloud Service usando o comando [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name) . A navegação é útil para observar a atividade do registro em tempo real, pois as ações são executadas no AEM como um ambiente Cloud Service.
+O Adobe I/O CLI fornece a capacidade de rastrear registros em tempo real de AEM como um Cloud Service usando o comando [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name). A navegação é útil para observar a atividade do registro em tempo real, pois as ações são executadas no AEM como um ambiente Cloud Service.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
 $ aio cloudmanager:tail-logs <ENVIRONMENT ID> <SERVICE> <NAME>
 ```
 
-Outras ferramentas de linha de comando, como `grep` podem ser usadas em conjunto com `tail-logs` o para ajudar a isolar declarações de interesse de log, por exemplo:
+Outras ferramentas de linha de comando, como `grep`, podem ser usadas em conjunto com `tail-logs` para ajudar a isolar declarações de interesse de log, por exemplo:
 
 ```
 $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 ```
 
-... exibe somente instruções de log geradas a partir `com.example.MySlingModel` ou que contêm essa string.
+... exibe somente instruções de log geradas de `com.example.MySlingModel` ou contêm essa string nelas.
 
-### Download de logs{#aio-cli-download-logs}
+### Baixando logs{#aio-cli-download-logs}
 
-A CLI de E/S do Adobe fornece a capacidade de baixar registros do AEM como Cloud Service usando o comando [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Isso fornece o mesmo resultado final que o download dos logs da interface do usuário da Web do Cloud Manager, com a diferença de ser o `download-logs` comando que consolida os logs ao longo dos dias, com base na quantidade de dias de registros solicitados.
+O Adobe I/O CLI fornece a capacidade de baixar registros do AEM como um Cloud Service usando o comando [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Isso fornece o mesmo resultado final que o download dos logs da interface do usuário da Web do Cloud Manager, com a diferença de que o comando `download-logs` consolida os logs ao longo dos dias, com base em quantos dias os logs são solicitados.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -132,7 +132,7 @@ $ aio cloudmanager:download-logs <ENVIRONMENT> <SERVICE> <NAME> <DAYS>
 
 ## Como entender os logs
 
-Os registros AEM como Cloud Service têm vários pods que gravam declarações de log neles. Como várias instâncias AEM gravam no mesmo arquivo de log, é importante entender como analisar e reduzir o ruído durante a depuração. Para explicar, o seguinte trecho de `aemerror` log será usado:
+Os registros AEM como Cloud Service têm vários pods que gravam declarações de log neles. Como várias instâncias AEM gravam no mesmo arquivo de log, é importante entender como analisar e reduzir o ruído durante a depuração. Para explicar, o trecho de log `aemerror` a seguir será usado:
 
 ```
 01.01.2020 12:00:00.000 [cm-p12345-e56789-aem-author-abcdefg-1111] *DEBUG* [qtp2078364989-269] com.example.components.impl.ExampleModelImpl Preparing to collect resources
@@ -173,9 +173,9 @@ Definir o nível de log mais apropriado para cada tipo de ambiente é com AEM co
 
 ### Variáveis específicas do ambiente para definir níveis de log do Java
 
-Uma alternativa para configurar níveis estáticos de log Java conhecidos para cada ambiente é usar AEM como variáveis [específicas do Cloud Service para parametrizar os níveis de log, permitindo que os valores sejam alterados dinamicamente por meio da CLI de E/S do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) Adobe com o plug-in [](#aio-cli)do Cloud Manager.
+Uma alternativa para configurar níveis estáticos de log Java conhecidos para cada ambiente é usar AEM como Cloud Service [variáveis específicas do ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) para parametrizar os níveis de log, permitindo que os valores sejam alterados dinamicamente por meio do [Adobe I/O CLI com o plug-in do Cloud Manager](#aio-cli).
 
-Isso requer a atualização das configurações de registro OSGi para usar os espaços reservados para variáveis específicas do ambiente. [Os valores](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) padrão para níveis de log devem ser definidos de acordo com as recomendações [de](#log-levels)Adobe. Por exemplo:
+Isso requer a atualização das configurações de registro OSGi para usar os espaços reservados para variáveis específicas do ambiente. [Os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valores padrão para os níveis de log devem ser definidos de acordo com as recomendações [ de ](#log-levels)Adobe. Por exemplo:
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
@@ -188,8 +188,8 @@ Isso requer a atualização das configurações de registro OSGi para usar os es
 
 Esta abordagem tem desvantagens que devem ser tidas em conta:
 
-+ [Um número limitado de variáveis de ambiente é permitido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables)e a criação de uma variável para gerenciar o nível de log usará uma.
-+ As variáveis de ambiente só podem ser gerenciadas de forma programática por meio da CLI [de E/S do](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) Adobe ou das APIs [HTTP do](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties)Cloud Manager.
++ [Um número limitado de variáveis de ambiente é permitido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) e a criação de uma variável para gerenciar o nível de log usará uma.
++ As variáveis de ambiente só podem ser gerenciadas programaticamente por [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [APIs HTTP do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + As alterações nas variáveis do ambiente devem ser redefinidas manualmente por uma ferramenta compatível. Esquecer de redefinir um ambiente de tráfego alto, como Produção, para um nível de log menos detalhado pode inundar os registros e afetar o desempenho AEM.
 
 _As variáveis específicas do ambiente não funcionam para o servidor Web Apache ou para as configurações de log do Dispatcher, pois não estão configuradas pela configuração OSGi._
