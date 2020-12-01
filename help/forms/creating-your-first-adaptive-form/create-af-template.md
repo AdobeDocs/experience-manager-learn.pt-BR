@@ -25,9 +25,9 @@ O vídeo a seguir mostra o processo básico de criação do modelo de formulári
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Consulte a documentação [do modelo de formulário](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) adaptável para obter mais detalhes
+Consulte [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) para obter mais detalhes
 
-Se necessário, é possível baixar o modelo [de formulário](assets/peak-application-template.zip) adaptável e importar para AEM usando o gerenciador de [pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessário, você pode baixar o [modelo de formulário adaptável](assets/peak-application-template.zip) e importar para AEM usando o [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
