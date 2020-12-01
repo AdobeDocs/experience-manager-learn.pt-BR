@@ -28,7 +28,7 @@ O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um co
 
 Você pode adicionar itens usando o editor visual, bem como o editor de código, dependendo do caso de uso.
 
-**Uso do editor visual:** Você pode preencher os itens do grupo de escolha a partir dos resultados de uma chamada de função ou chamada de serviço. Por exemplo, você pode definir os itens do grupo de escolha usando a resposta de uma chamada REST API.
+**Usando o editor visual:** você pode preencher os itens do grupo de escolha a partir dos resultados de uma chamada de função ou chamada de serviço. Por exemplo, você pode definir os itens do grupo de escolha usando a resposta de uma chamada REST API.
 
 Na captura de tela abaixo, estamos definindo as opções de Período de empréstimo (anos) com os resultados de uma chamada de serviço chamada getLoanPeriods.
 
