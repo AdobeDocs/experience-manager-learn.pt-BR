@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Serviço de códigos de barras com Forms adaptável{#barcode-service-with-adaptive-forms}
+# Serviço de códigos de barras com Forms{#barcode-service-with-adaptive-forms} adaptável
 
 Este artigo demonstrará o uso do serviço de código de barras para preencher o formulário adaptável. O caso de utilização é o seguinte:
 
@@ -31,7 +31,7 @@ Este artigo demonstrará o uso do serviço de código de barras para preencher o
 
 O código a seguir decodifica o código de barras e preenche um objeto JSON com os valores decodificados. Em seguida, o servlet retorna o objeto JSON em sua resposta ao aplicativo de chamada.
 
-Você pode ver esse recurso ao vivo. Visite o portal [de](https://forms.enablementadobe.com/content/samples/samples.html?query=0) amostras e procure a demonstração do serviço de código de barras
+Você pode ver esse recurso ao vivo, visite o [portal de amostras](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e pesquise a demonstração do serviço de código de barras
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -146,11 +146,11 @@ Linha 23 - Chame o método extractBarCode do DocumentServices para obter o objet
 
 Para executá-lo no sistema, siga as seguintes etapas
 
-1. [Baixe BarcodeService.zip](assets/barcodeservice.zip) e importe para AEM usando o gerenciador de pacote
+1. [Baixar a importação de BarcodeService.](assets/barcodeservice.zip) zipand para AEM usando o gerenciador de pacote
 1. [Baixe e instale o pacote personalizado do Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Download do formulário PDF de amostra](assets/barcode.pdf)
-1. Aponte seu navegador para o formulário adaptável de [amostra](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Aponte seu navegador para [exemplo de formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Carregar a amostra de PDF fornecida
 1. É necessário ver os formulários preenchidos com os dados
 
