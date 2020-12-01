@@ -31,12 +31,14 @@ Para realizar o caso de uso acima, você normalmente escreverá um serviço OSGi
 
 ## Criar projeto Maven
 
-A primeira etapa é criar um projeto maven usando o Adobe Maven Archetype apropriado. As etapas detalhadas são listadas neste [artigo](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Depois que seu projeto de maven for importado para o eclipse, você estará pronto para o start gravando seu primeiro componente OSGi que pode ser usado na etapa do processo.
+A primeira etapa é criar um projeto maven usando o Adobe Maven Archetype apropriado. As etapas detalhadas estão listadas neste [artigo](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Depois que seu projeto de maven for importado para o eclipse, você estará pronto para o start gravando seu primeiro componente OSGi que pode ser usado na etapa do processo.
 
 
 ### Criar classe que implementa WorkflowProcess
 
-Abra o projeto maven em seu IDE eclipse. Expanda **project name** > pasta **principal** . Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;núcleo&quot;. Crie uma classe Java que implemente WorkflowProcess neste pacote. Será necessário substituir o método execute. A assinatura do método execute é a seguinte:public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)lança WorkflowExceptionO método execute dá acesso às três variáveis a seguir
+Abra o projeto maven em seu IDE eclipse. Expanda a pasta **projectname** > **core**. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;núcleo&quot;. Crie uma classe Java que implemente WorkflowProcess neste pacote. Será necessário substituir o método execute. A assinatura do método execute é a seguinte
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)lança WorkflowException
+O método execute dá acesso às três variáveis a seguir
 
 **ItemTrabalho**: A variável workItem dará acesso aos dados relacionados ao fluxo de trabalho. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
@@ -134,7 +136,8 @@ O restante do código cria objetos de Documento ao interagir pelo objeto filho d
 
 #### Criar e implantar
 
-[Crie o pacote conforme descrito aqui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verifique se ele está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
+[Crie o pacote conforme descrito ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[aquiVerifique se ele está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
 
 Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos de formulário adaptável no sistema de arquivos&quot;.
 
