@@ -64,8 +64,8 @@ Como os Modelos básicos são normalmente projetados no Photoshop, mas implantad
 
 Os projetos modelo podem ser relativamente simples ou extremamente complexos dependendo das regras de negócios e das necessidades do aplicativo. Os modelos básicos são chamados do servidor de imagens, no entanto, devido à flexibilidade do ambiente do Dynamic Media Classic, você pode até aninhar modelos dentro de outros modelos, permitindo que você crie imagens bastante complexas que podem ser vinculadas por variáveis comumente nomeadas.
 
-- Saiba mais sobre as noções básicas sobre [modelo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Saiba como criar um modelo [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template)básico.
+- Saiba mais sobre [Noções básicas sobre o modelo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
+- Saiba como criar um [Modelo básico](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Criando um Modelo Básico
 
@@ -76,7 +76,7 @@ Ao trabalhar com um modelo básico, você geralmente segue as etapas do fluxo de
 _O fluxo de trabalho do modelo básico._
 
 1. Crie e crie seus ativos. A maioria dos usuários faz isso no Adobe Photoshop. Projete ativos com o tamanho exato de que precisa. se for uma imagem de 200 pixels para uma página em miniatura, crie-a em 200 pixels. Se precisar aplicar zoom nele, projete-o em um tamanho de cerca de 2.000 pixels. Use o Photoshop (e/ou o Illustrator salvo como bitmap) para criar os ativos e use o Dynamic Media Classic para reunir as peças, gerenciar as camadas e adicionar variáveis.
-2. Depois de projetar os ativos gráficos, carregue-os no Dynamic Media Classic. Em vez de fazer upload de ativos individuais a partir do PSD, recomendamos que você carregue todo o arquivo PSD em camadas e que o Dynamic Media Classic crie um arquivo por camada, usando a opção **Manter camadas** no upload (consulte abaixo para obter mais detalhes). _Fluxo de trabalho de texto: Se estiver criando um texto dinâmico, faça upload de suas fontes também. O texto dinâmico é variável e controlado pelo URL. Se o seu texto estiver estático ou tiver apenas algumas frases curtas que não mudam... por exemplo, tags que dizem &quot;Novo&quot; ou &quot;Venda&quot;, em vez de &quot;X% Desativado&quot;, com o X sendo um número variável. recomendamos pré-renderizar o texto no Photoshop e fazer upload de camadas rasterizadas como imagens. Será mais fácil e você poderá estilizar o texto exatamente como quiser._
+2. Depois de projetar os ativos gráficos, carregue-os no Dynamic Media Classic. Em vez de carregar ativos individuais do PSD, recomendamos que você carregue todo o arquivo PSD em camadas e que o Dynamic Media Classic crie um arquivo por camada, usando a opção **Manter camadas** no upload (consulte abaixo para obter mais detalhes). _Fluxo de trabalho de texto: Se estiver criando um texto dinâmico, faça upload de suas fontes também. O texto dinâmico é variável e controlado pelo URL. Se o seu texto estiver estático ou tiver apenas algumas frases curtas que não mudam... por exemplo, tags que dizem &quot;Novo&quot; ou &quot;Venda&quot;, em vez de &quot;X% Desativado&quot;, com o X sendo um número variável. recomendamos pré-renderizar o texto no Photoshop e fazer upload de camadas rasterizadas como imagens. Será mais fácil e você poderá criar o estilo do texto exatamente como desejar._
 3. Crie o modelo no Dynamic Media Classic usando o editor de fundamentos do modelo do menu Criar e adicione camadas de imagem. Fluxo de trabalho de texto: Crie camadas de texto no mesmo editor. Esta etapa é necessária ao criar um modelo manualmente no Dynamic Media Classic. Escolha um tamanho de tela que corresponda ao seu design, arraste e solte imagens na tela e defina as propriedades da camada (tamanho, rotação, opacidade, etc.). Não está colocando todas as camadas possíveis no modelo, apenas um espaço reservado por camada de imagem. _Fluxo de trabalho de texto: Crie camadas de texto com a ferramenta Texto, de modo semelhante à criação de camadas de texto no Photoshop. É possível escolher uma fonte e estilo usando as mesmas opções disponíveis com a ferramenta Photoshop Type._ Outro fluxo de trabalho é carregar um PSD e fazer com que o Dynamic Media Classic gere um modelo &quot;gratuito&quot;, podendo até mesmo recriar camadas de texto. Esta questão será discutida mais pormenorizadamente mais tarde.
 4. Depois que as camadas forem criadas, adicione parâmetros (variáveis) a qualquer propriedade de qualquer camada que você gostaria de controlar por meio do URL, incluindo a origem da camada (a própria imagem ). _Fluxo de trabalho de texto: Também é possível adicionar parâmetros às camadas de texto, tanto para controlar o conteúdo do texto, o tamanho e a posição da própria camada, como todas as opções de formatação, como cor da fonte, tamanho da fonte, rastreamento horizontal etc._
 5. Crie uma predefinição de imagem que corresponda ao tamanho do modelo. Recomendamos fazer isso para que o modelo seja sempre chamado em um tamanho 1:1 e também para adicionar nitidez a qualquer camada de imagem grande que seja redimensionada para se ajustar ao modelo. Se você estiver criando um modelo para ser ampliado, essa etapa será desnecessária.
@@ -131,10 +131,10 @@ Os formatos de arquivo de fonte mais comuns encontrados em sistemas Windows e Ma
 Não é necessário carregar um arquivo Photoshop (PSD) para criar um modelo; um modelo pode ser construído a partir de qualquer ativo de imagem no Dynamic Media Classic. No entanto, fazer upload de um PSD pode facilitar a criação, pois você já terá esses ativos em um PSD em camadas. Além disso, o Dynamic Media Classic gera automaticamente um modelo quando você carrega um PSD em camadas.
 
 - **Manter camadas.** Esta é a opção mais importante. Isso instrui o Dynamic Media Classic a criar um ativo de imagem por camada do Photoshop. Se desmarcada, todas as outras opções serão desativadas e o PSD será nivelado em uma única imagem.
-- **Criar** **modelo.** Essa opção pega as várias camadas geradas e cria automaticamente um modelo ao combiná-las novamente. Uma desvantagem para usar o modelo gerado automaticamente é que o Dynamic Media Classic coloca todas as camadas em um arquivo, ao passo que só precisamos de um único espaço reservado por camada. É fácil o suficiente excluir as camadas extras, mas se você tiver muitas camadas, é mais rápido recriá-las. Certifique-se de renomear o novo modelo; caso contrário, ele será substituído na próxima vez que você carregar novamente o mesmo PSD.
-- **Extrair texto.** Isso recria camadas de texto no PSD como camadas de texto no modelo usando a fonte carregada. Essa etapa é necessária se o texto estiver em um caminho no Photoshop e você quiser manter esse caminho no modelo. Este recurso exige que você use a opção **Criar modelo** , já que o texto extraído só pode ser criado por um modelo gerado no upload.
+- **** **CreateTemplate.** Essa opção pega as várias camadas geradas e cria automaticamente um modelo ao combiná-las novamente. Uma desvantagem para usar o modelo gerado automaticamente é que o Dynamic Media Classic coloca todas as camadas em um arquivo, ao passo que só precisamos de um único espaço reservado por camada. É fácil o suficiente excluir as camadas extras, mas se você tiver muitas camadas, é mais rápido recriá-las. Certifique-se de renomear o novo modelo; caso contrário, ele será substituído na próxima vez que você carregar novamente o mesmo PSD.
+- **Extrair texto.** Isso recria camadas de texto no PSD como camadas de texto no modelo usando a fonte carregada. Essa etapa é necessária se o texto estiver em um caminho no Photoshop e você quiser manter esse caminho no modelo. Este recurso exige que você use a opção **Criar modelo**, já que o texto extraído só pode ser criado por um modelo gerado no upload.
 - **Estende as camadas para o tamanho do plano de fundo.** Essa configuração faz com que cada camada tenha o mesmo tamanho da tela PSD geral. Isso é muito útil para camadas que sempre permanecerão fixas na posição: caso contrário, ao trocar imagens na mesma camada, talvez seja necessário reposicioná-las.
-- **Nomenclatura de camada.** Isso diz ao Dynamic Media Classic como nomear cada ativo gerado por camada. Recomendamos o **Photoshop** **e o** Nome **da Camada** ou o Photoshop e **o** Número **** da Camada. Ambas as opções usam o nome PSD como a primeira parte do nome e adicionam o nome ou o número da camada no final. Por exemplo, se você tiver um PSD chamado &quot;shirt.psd&quot; e ele tiver camadas com o nome &quot;front&quot;, &quot;sleves&quot; e &quot;collar&quot;, se fizer upload usando a opção **Photoshop e Camada** Name **** , o Dynamic Media Classic gerará as IDs de ativo &quot;shirt_front&quot;, &quot;shirt_sleves&quot; e &quot;shirt_collar&quot;. Usar uma dessas opções ajuda a garantir que o nome seja exclusivo no Dynamic Media Classic.
+- **Nomenclatura de camada.** Isso diz ao Dynamic Media Classic como nomear cada ativo gerado por camada. Recomendamos **Photoshop** **e Layer** **Name** ou Photoshop e **Layer** **Number**. Ambas as opções usam o nome PSD como a primeira parte do nome e adicionam o nome ou o número da camada no final. Por exemplo, se você tiver um PSD chamado &quot;shirt.psd&quot; e ele tiver camadas chamadas &quot;front&quot;, &quot;truques&quot; e &quot;collar&quot;, se fizer upload usando a opção **Photoshop e** Camada **Name**, o Dynamic Media Classic gerará as IDs de ativo &quot;shirt_front&quot;, &quot;shirt_sleves&quot; e &quot;shirt_collar .&quot; Usar uma dessas opções ajuda a garantir que o nome seja exclusivo no Dynamic Media Classic.
 
 ## Criação de um modelo com camadas de imagem
 
@@ -153,13 +153,13 @@ _Página Criar fundamentos do modelo._
 - **Pré-visualização/Área de trabalho.** Esta é a janela principal. Aqui você pode mover, redimensionar e girar camadas com o mouse. Os contornos de camada são mostrados como linhas tracejadas.
 - **Camadas.** É semelhante ao painel de camadas do Photoshop. À medida que você adiciona camadas ao modelo, elas serão exibidas aqui. As camadas são empilhadas de cima para baixo. a camada superior no painel Camadas será vista acima das outras abaixo na lista.
 - **Propriedades da camada.** Aqui, você pode ajustar todas as propriedades de uma camada usando controles numéricos. Primeiro, selecione uma camada e ajuste suas propriedades.
-- **** URL composto **.** Na parte inferior da interface do usuário está a área de URL composto. Isso não será discutido nesta seção do tutorial, no entanto, aqui você verá seu modelo desconstruído como uma série de modificadores de URL do Servidor de imagens. Esta área é editável. se você estiver familiarizado com os comandos do Servidor de imagens, poderá editar manualmente o modelo aqui. No entanto, você também pode quebrá-lo. Como o Photoshop, start de numeração de camadas em 0. A tela de desenho é a camada 0 e a primeira camada que você mesmo adicionar é a camada 1. Os modos de mesclagem determinam como os pixels de uma camada se mesclam com os pixels abaixo dela. Você pode criar uma variedade de efeitos especiais usando modos de mesclagem.
+- **** **CompositeURL.** Na parte inferior da interface do usuário está a área de URL composto. Isso não será discutido nesta seção do tutorial, no entanto, aqui você verá seu modelo desconstruído como uma série de modificadores de URL do Servidor de imagens. Esta área é editável. se você estiver familiarizado com os comandos do Servidor de imagens, poderá editar manualmente o modelo aqui. No entanto, você também pode quebrá-lo. Como o Photoshop, start de numeração de camadas em 0. A tela de desenho é a camada 0 e a primeira camada que você mesmo adicionar é a camada 1. Os modos de mesclagem determinam como os pixels de uma camada se mesclam com os pixels abaixo dela. Você pode criar uma variedade de efeitos especiais usando modos de mesclagem.
 
 #### Uso do Editor de fundamentos de modelo
 
 Estas são as etapas do fluxo de trabalho para start do seu Modelo básico:
 
-1. No Dynamic Media Classic, vá para **Build > Fundamentos** do modelo. Você não pode ter nada selecionado ou start selecionando uma imagem, que se tornará a primeira camada do modelo.
+1. No Dynamic Media Classic, vá para **Criar > Noções básicas do modelo**. Você não pode ter nada selecionado ou start selecionando uma imagem, que se tornará a primeira camada do modelo.
 2. Escolha um Tamanho e pressione **OK**. Esse tamanho deve corresponder ao tamanho projetado no Photoshop. O editor de modelos será carregado.
 3. Se você não tiver uma imagem selecionada na etapa 1, procure ou navegue até uma imagem no painel de ativos à esquerda e arraste-a para a área de trabalho.
 
@@ -167,7 +167,7 @@ Estas são as etapas do fluxo de trabalho para start do seu Modelo básico:
    - Essa deve ser a camada mais inferior do modelo, no entanto, é possível reordenar as camadas mais tarde.
 
 4. Redimensione ou reposicione a camada diretamente na área de trabalho ou ajustando as configurações no painel Propriedades da camada.
-5. Arraste outras camadas de imagem conforme necessário. Adicione efeitos de camadas, se desejar. Consulte o tópico _Adicionar efeitos_ de camada, abaixo.
+5. Arraste outras camadas de imagem conforme necessário. Adicione efeitos de camadas, se desejar. Consulte o tópico _Adicionar efeitos de camada_, abaixo.
 6. Clique em **Salvar**, escolha um local e dê um nome ao modelo. Podem pré-visualização, no entanto neste momento o vosso modelo será exatamente como uma imagem Photoshop achatada. ainda não é alterável.
 
 ### Adicionar efeitos de camada
@@ -187,7 +187,7 @@ Para adicionar um efeito, clique em **Adicionar efeito** e escolha um efeito no 
 
 Os efeitos de sombra são deslocados horizontal ou verticalmente para longe da camada, enquanto os efeitos de Brilho são aplicados uniformemente em todas as direções. Os efeitos internos atuam sobre as partes opacas da camada, enquanto os efeitos externos afetam apenas as áreas transparentes.
 
-Saiba mais[sobre como Adicionar efeitos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers)de camada.
+Saiba mais sobre[Adicionar efeitos de camada](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
 
 ### Adicionar parâmetros
 
@@ -208,13 +208,13 @@ Finalmente, seu conjunto inicial de parâmetros se tornará os valores padrão d
 Este é o fluxo de trabalho para criar parâmetros:
 
 1. Clique no botão **Parâmetros** ao lado do nome da camada para a qual você deseja criar parâmetros. A tela Parâmetros é aberta. Ele lista cada propriedade na camada e seu valor.
-1. Selecione a opção **Ativado** ao lado do nome de cada propriedade que você deseja transformar em um parâmetro. Um nome de parâmetro padrão será exibido. Você só pode adicionar parâmetros a propriedades que foram alteradas a partir de seu estado padrão.
+1. Selecione a opção **On** ao lado do nome de cada propriedade que você deseja transformar em um parâmetro. Um nome de parâmetro padrão será exibido. Você só pode adicionar parâmetros a propriedades que foram alteradas a partir de seu estado padrão.
 
-   - Por exemplo, se você adicionar uma camada e mantê-la em sua posição de proxy padrão de 0,0, o Dynamic Media Classic não exporá uma propriedade **Position** . Para corrigir, mova a camada pelo menos um pixel. Agora o Dynamic Media Classic exporá a **Posição** como uma propriedade que você pode parametrizar.
+   - Por exemplo, se você adicionar uma camada e mantê-la em sua posição de proxy padrão de 0,0, o Dynamic Media Classic não exporá uma propriedade **Position**. Para corrigir, mova a camada pelo menos um pixel. Agora o Dynamic Media Classic exporá **Position** como uma propriedade que você pode parametrizar.
    - Para adicionar um parâmetro à propriedade show/hide (que ativa e desativa a camada ), clique no ícone **Mostrar** ou **Ocultar camada** para desligar a camada (você pode ativá-la novamente depois, se desejar). O Dynamic Media Classic agora expõe uma propriedade **Ocultar** que pode ser parametrizada.
 
 1. Renomeie os nomes dos parâmetros padrão para algo que será mais fácil de identificar no URL. Por exemplo, se você quiser adicionar um parâmetro para alterar a camada do banner na parte superior de uma imagem, altere o nome padrão de &quot;layer_2_src&quot; para &quot;banner&quot;.
-1. Pressione **Close (Fechar** ) para sair da tela Parameters (Parâmetros).
+1. Pressione **Close** para sair da tela Parâmetros.
 1. Repita esse processo para outras camadas clicando no botão **Parâmetros** e adicionando e renomeando parâmetros.
 1. Salve as alterações quando terminar.
 
@@ -224,7 +224,7 @@ Este é o fluxo de trabalho para criar parâmetros:
 >
 >Não é possível adicionar um parâmetro porque você não vê a propriedade? Basta alterar a propriedade da camada do padrão (movendo, redimensionando, ocultando etc.). Agora você deve ver essa propriedade exposta.
 
-Saiba mais sobre os Parâmetros [do](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html)modelo.
+Saiba mais sobre [Parâmetros de Modelo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
 
 ## Criação de um modelo com camadas de texto
 
@@ -257,7 +257,7 @@ A boa notícia é que o Dynamic Media Classic gera o RTF para você. Sempre que 
 Você pode criar camadas de texto em um modelo no Dynamic Media Classic das duas maneiras a seguir:
 
 1. Ferramenta de texto no Dynamic Media Classic. Vamos discutir este método abaixo. O Editor de fundamentos do modelo tem uma ferramenta que permite criar uma caixa de texto, inserir texto e formatar o texto. O Dynamic Media Classic gera o RTF conforme necessário e o coloca em uma camada separada.
-2. Extrair texto (no upload). O outro método é criar a camada de texto no Photoshop e salvá-la no PSD como uma camada de texto normal (em vez de rasterizá-la como uma camada de imagem). Em seguida, carregue o arquivo no Dynamic Media Classic e use a opção **Extrair texto** . O Dynamic Media Classic converterá cada camada de texto do Photoshop em uma camada de texto do Servidor de imagens usando comandos RTF. Se você usar esse método, primeiro faça upload das fontes para o Dynamic Media Classic. Caso contrário, o Dynamic Media Classic substituirá uma fonte padrão no upload e não haverá uma maneira fácil de substituir a fonte correta.
+2. Extrair texto (no upload). O outro método é criar a camada de texto no Photoshop e salvá-la no PSD como uma camada de texto normal (em vez de rasterizá-la como uma camada de imagem). Em seguida, carregue o arquivo no Dynamic Media Classic e use a opção **Extrair texto**. O Dynamic Media Classic converterá cada camada de texto do Photoshop em uma camada de texto do Servidor de imagens usando comandos RTF. Se você usar esse método, primeiro faça upload das fontes para o Dynamic Media Classic. Caso contrário, o Dynamic Media Classic substituirá uma fonte padrão no upload e não haverá uma maneira fácil de substituir a fonte correta.
 
 ### O Editor de texto
 
@@ -267,7 +267,7 @@ Insira o texto usando o Editor de texto. O Editor de texto é uma interface WYSI
 
 _Editor de texto de fundamentos do modelo._
 
-Você fará a maior parte do seu trabalho na guia **Pré-visualização** , que permite que você insira o texto e o visualize como ele aparecerá no modelo. Também há uma guia **Origem** , que é usada para editar manualmente o RTF, se necessário.
+Você fará a maior parte do seu trabalho na guia **Pré-visualização**, que permite que você insira o texto e o visualize como ele aparecerá no modelo. Também há uma guia **Source**, que é usada para editar manualmente o RTF, se necessário.
 
 O fluxo de trabalho geral é usar a guia **Pré-visualização** para digitar algum texto.
 
@@ -285,10 +285,10 @@ Estas são as etapas do fluxo de trabalho para adicionar texto dentro da página
    - Há muitas opções de formatação. Alguns dos mais comuns são fonte (face), tamanho de fonte e cor de fonte, bem como justificação esquerda/centro/direita.
    - Não se esqueça de selecionar o texto primeiro. Caso contrário, não será possível aplicar nenhuma formatação.
    - Para escolher uma fonte diferente, selecione o texto e abra o menu Fonte. O editor mostrará uma lista de todas as fontes carregadas no Dynamic Media Classic. Se uma fonte também estiver instalada no computador, ela aparecerá em preto. Se não estiver instalado no computador, será exibido em vermelho. No entanto, ele ainda será renderizado na janela pré-visualização quando você clicar em **Aplicar**. Você só precisa carregar fontes no Dynamic Media Classic para disponibilizá-las a qualquer pessoa usando o Dynamic Media Classic. Após a publicação, o Servidor de imagens usará essas fontes para gerar o texto. os usuários não precisam instalar fontes para ver o texto criado por fazer parte de uma imagem.
-   - Diferentemente do Photoshop e do Illustrator, o Servidor de imagens pode alinhar o texto verticalmente na caixa de texto. O padrão é o alinhamento superior. Para alterar isso, selecione o texto e escolha **Meio** ou **Inferior** no menu Alinhamento **** vertical.
+   - Diferentemente do Photoshop e do Illustrator, o Servidor de imagens pode alinhar o texto verticalmente na caixa de texto. O padrão é o alinhamento superior. Para alterar isso, selecione o texto e escolha **Médio** ou **Inferior** no menu **Alinhamento Vertical**.
    - Se o texto ficar grande demais para a caixa (ou se a caixa de texto estiver muito pequena), todo ou parte dele será cortado e desaparecerá. Reduza o tamanho da fonte ou torne a caixa maior.
 
-5. Clique em **Aplicar** para ver suas alterações entrarem em vigor na janela da área de trabalho. Você deve clicar em **Aplicar**, caso contrário, suas edições serão perdidas.
+5. Clique em **Aplicar** para ver as alterações entrarem em vigor na janela da área de trabalho. Você deve clicar em **Aplicar**, caso contrário, as edições serão perdidas.
 6. Quando terminar, clique em **Fechar**. Se quiser voltar ao modo de edição, clique com o duplo na camada de texto para reabrir o Editor de texto.
 
 O editor de texto pré-visualização exatamente o tamanho da fonte se você tiver a fonte instalada localmente no sistema.
@@ -313,25 +313,25 @@ Podem ver a frase Chocolate Mint Sandal. esse é o próprio texto.
 - Você pode ver um valor RGB: \red56\green53\blue4 — esta é a cor do texto.
 - Embora o tamanho da fonte seja 20, você não vê o número 20. No entanto, você verá um comando \fs40 — por algum motivo estranho, o RTF mede as fontes como pontos intermediários. Portanto, \fs40 é o tamanho da fonte!
 
-Você tem informações suficientes para criar seus parâmetros, no entanto, há uma referência completa de todos os comandos RTF na documentação do Servidor de imagens. Visite a Documentação [de disponibilização de](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c)imagens.
+Você tem informações suficientes para criar seus parâmetros, no entanto, há uma referência completa de todos os comandos RTF na documentação do Servidor de imagens. Visite a [Documentação de disponibilização de imagem](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Adicionar parâmetros a camadas de texto
 
 Estas são as etapas para adicionar parâmetros a camadas de texto.
 
 1. Clique no botão **Parâmetros** (um &quot;P&quot;) ao lado do nome da camada de texto para a qual você deseja criar parâmetros. A tela Parâmetros é aberta. A guia **Comum** lista cada propriedade na camada e seu valor. Aqui você pode adicionar parâmetros de camada regulares.
-1. Clique na guia **Texto** . Aqui vocês podem ver o RTF no topo. os parâmetros adicionados estarão abaixo disso.
-1. Para adicionar um parâmetro, primeiro destaque o valor que você deseja alterar e clique no botão **Adicionar parâmetro** . Certifique-se de selecionar apenas os valores para comandos e não o comando inteiro em si. Por exemplo, para definir um parâmetro para o nome da fonte na amostra RTF acima, eu destacaria apenas &quot;Poor Richard&quot; e adicionaria um parâmetro a isso, mas não também &quot;\f0&quot;. Quando você clica em **Adicionar parâmetro** , ele aparecerá na lista abaixo e o valor do parâmetro aparecerá em vermelho no RTF enquanto ele ainda estiver selecionado. Se você precisar remover um parâmetro, clique na caixa de seleção ao lado de **Ligado** para desativar esse parâmetro e ele desaparecerá.
+1. Clique na guia **Texto**. Aqui vocês podem ver o RTF no topo. os parâmetros adicionados estarão abaixo disso.
+1. Para adicionar um parâmetro, primeiro destaque o valor que você deseja alterar e clique no botão **Adicionar parâmetro**. Certifique-se de selecionar apenas os valores para comandos e não o comando inteiro em si. Por exemplo, para definir um parâmetro para o nome da fonte na amostra RTF acima, eu destacaria apenas &quot;Poor Richard&quot; e adicionaria um parâmetro a isso, mas não também &quot;\f0&quot;. Quando você clica em **Adicionar parâmetro**, ele aparece na lista abaixo e o valor do parâmetro aparecerá em vermelho no RTF enquanto ele ainda estiver selecionado. Se precisar remover um parâmetro, clique na caixa de seleção ao lado de **On** para desativar esse parâmetro e ele desaparecerá.
 1. Clique para renomear seu parâmetro para um nome mais significativo.
 1. Quando terminar, seu RTF será realçado em verde, onde os parâmetros existem, e seus nomes e valores de parâmetro serão listados abaixo.
-1. Clique em **Fechar** para sair da tela Parâmetros. Em seguida, pressione **Salvar** para salvar o modelo. Se você tiver terminado de editar, pressione **Fechar** para sair da página Informações básicas sobre o modelo.
+1. Clique em **Fechar** para sair da tela Parâmetros. Em seguida, pressione **Save** para salvar o modelo. Se tiver terminado a edição, pressione **Fechar** para sair da página Informações básicas sobre o modelo.
 1. Clique em **Pré-visualização** para testar seu modelo no Dynamic Media Classic. Para testar seus parâmetros de texto, digite um novo texto ou novos valores na janela pré-visualização. Para alterar a fonte, digite o nome RTF exato da fonte.
 
 >[!TIP]
 >
 >Para adicionar parâmetros à cor do texto, adicione separadamente parâmetros para vermelho, verde e azul. Por exemplo, se o RTF for `\red56\green53\blue46`, você adicionaria parâmetros separados vermelho, verde e azul para os valores 56, 53 e 46. No URL, você alteraria a cor chamando os três: `&$red=56&$green=53&$blue=46`.
 
-Saiba como [criar parâmetros](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters)de texto dinâmicos.
+Saiba como [Criar parâmetros de texto dinâmicos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## Publicar e criar URLs de modelo
 
@@ -345,7 +345,7 @@ Não há nada especial sobre uma predefinição de imagem para um modelo. Se voc
 
 Será necessário executar uma publicação para ver as alterações enviadas ao vivo para o Servidor de imagens. Lembre-se do que precisa ser publicado: as várias camadas de ativos de imagem, as fontes do texto dinâmico e o próprio modelo. Semelhante a outros ativos de mídia avançada do Dynamic Media Classic, como Conjuntos de Imagens e Conjuntos de rotação, um Modelo básico é uma construção artificial. é um item de linha no banco de dados que faz referência às imagens e fontes usando uma série de comandos do Serviço de imagem. Portanto, ao publicar o modelo, tudo o que você está fazendo é atualizar os dados no Servidor de imagens.
 
-Saiba mais sobre como [publicar seu modelo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Saiba mais sobre [Publicar seu modelo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
 ### Construção do URL do modelo
 
@@ -369,4 +369,5 @@ Diferentemente das predefinições de imagem, que têm um cifrão ($) em cada la
 
 Como observado anteriormente, os parâmetros são usados para alterar o modelo. Se você chamar o modelo sem parâmetros, ele reverterá para suas configurações padrão, conforme projetado na ferramenta de criação Fundamentos do modelo. Se uma propriedade não precisar ser alterada, não será necessário definir um parâmetro.
 
-![image](assets/basic-templates/sandals-without-with-parameters.png)_Exemplos de um modelo sem definir parâmetros (acima) e com parâmetros (abaixo)._
+![](assets/basic-templates/sandals-without-with-parameters.png)
+_imageExemplos de um modelo sem definir parâmetros (acima) e com parâmetros (abaixo)._
