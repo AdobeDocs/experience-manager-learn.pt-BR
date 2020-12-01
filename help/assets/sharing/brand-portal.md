@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Uso do Brand Portal com a AEM Assets{#using-brand-portal-with-aem-assets}
+# Uso do Brand Portal com o AEM Assets{#using-brand-portal-with-aem-assets}
 
 Guias de vídeo da integração do Portal de marcas dos ativos Adobe Experience Manager (AEM).
 
@@ -35,7 +35,7 @@ A Seleção de ativos do Portal de marcas é usada para coletar ativos de agênc
 
 *O Experience Manager Author 6.5 SP2 (6.5.2) ou superior é necessário para usar a Origem de ativos*
 
-Revise [Ativar autor de Experience Manager para seleção](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) de recursos para obter instruções sobre como configurar e configurar a seleção de fonte de ativos no autor de Experience Manager.
+Consulte [Ativar o Autor do Experience Manager para Origem de ativos](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) para obter instruções sobre como configurar e configurar a Origem de ativos no Autor do Experience Manager.
 
 ## Recursos e melhorias do Brand Portal, fevereiro de 2019{#brand-portal-features-and-enhancements-644}
 
@@ -53,7 +53,7 @@ Leia para saber mais sobre pesquisa de texto parcial e pesquisa de curinga.
 
 Agora você pode pesquisar ativos especificando apenas uma parte (ou seja, uma palavra ou duas) da frase pesquisada no painel de filtragem.
 
-**Caso** de uso: A pesquisa de frases parciais é útil quando você não tem certeza da combinação exata de palavras que ocorrem na frase pesquisada.
+**Caso**  de uso: A pesquisa de frases parciais é útil quando você não tem certeza da combinação exata de palavras que ocorrem na frase pesquisada.
 
 Por exemplo, se o formulário de pesquisa no Brand Portal usar o Predicado de propriedade para uma pesquisa parcial sobre o título dos ativos, a especificação do termo campo retornará todos os ativos com o campo de palavras em suas frases de título.
 
@@ -61,7 +61,7 @@ Por exemplo, se o formulário de pesquisa no Brand Portal usar o Predicado de pr
 
 O Brand Portal permite o uso do asterisco (*) no query de pesquisa junto com uma parte da palavra na frase pesquisada.
 
-**Caso** de uso: se você não tiver certeza das palavras exatas que ocorrem na frase pesquisada, poderá usar uma pesquisa curinga para preencher as lacunas no query de pesquisa.
+**Caso**  de uso: se você não tiver certeza das palavras exatas que ocorrem na frase pesquisada, poderá usar uma pesquisa curinga para preencher as lacunas no query de pesquisa.
 
 Por exemplo, especificar climb* retorna todos os ativos com palavras que começam com os caracteres que sobem em suas frases de título se o formulário de pesquisa no Portal de marcas usar o Predicado de propriedade para pesquisa parcial no título dos ativos.
 
@@ -73,12 +73,12 @@ Da mesma forma, especificando:
 #### Ativar hierarquia de pastas
 
 Agora, os administradores podem configurar como as pastas são exibidas para usuários não administradores (editores, visualizadores e usuários convidados) no logon.
-[A configuração Ativar hierarquia](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) de pastas é adicionada em Configurações gerais, no painel de ferramentas administrativas. Se a configuração for:
+[Ativar ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) hierarquia de pastas A configuração é adicionada em Configurações gerais, no painel de ferramentas administrativas. Se a configuração for:
 
 * Habilitada, a árvore de pastas que começa na pasta raiz está visível para usuários não administradores. Assim, concedendo a eles uma experiência de navegação semelhante aos administradores.
 * Desativado, somente as pastas compartilhadas são exibidas na landing page.
 
-[A funcionalidade Ativar hierarquia](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) de pastas (quando ativada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de diferentes hierarquias. Ao fazer logon, usuários não administradores agora veem as pastas pai virtual (e ancestral) das pastas compartilhadas.
+[A funcionalidade Ativar ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) hierarquia de pastas (quando ativada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de diferentes hierarquias. Ao fazer logon, usuários não administradores agora veem as pastas pai virtual (e ancestral) das pastas compartilhadas.
 
 As pastas compartilhadas são organizadas nos respectivos diretórios em pastas virtuais. É possível reconhecer essas pastas virtuais com um ícone de cadeado.
 
@@ -103,7 +103,7 @@ As codificações de Vídeo do Dynamic Media podem ser baixadas de:
 
 ### Publicação agendada para o Brand Portal
 
-O fluxo de trabalho de publicação de ativos (e pastas) de [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) Instância do autor para o Brand Portal pode ser agendado para uma data e hora posteriores.
+O fluxo de trabalho de publicação de ativos (e pastas) de [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) instância do autor para o Brand Portal pode ser agendado para uma data e hora posteriores.
 
 Da mesma forma, os recursos publicados podem ser removidos do portal em uma data posterior (hora), agendando o fluxo de trabalho Cancelar publicação do Brand Portal.
 
@@ -112,11 +112,11 @@ Da mesma forma, os recursos publicados podem ser removidos do portal em uma data
 As organizações podem personalizar o URL do portal, tendo um prefixo alternativo no URL. Para obter um alias para o nome do locatário em seu URL de portal existente, as organizações precisam entrar em contato com o suporte ao Adobe.
 
 Observe que somente o prefixo do URL do Portal de Marcas pode ser personalizado e não o URL inteiro.
-Por exemplo, uma organização com domínio existente `wknd.brand-portal.adobe.com` pode ser `wkndinc.brand-portal.adobe.com` criada mediante solicitação.
+Por exemplo, uma organização com o domínio existente `wknd.brand-portal.adobe.com` pode ser criada `wkndinc.brand-portal.adobe.com` mediante solicitação.
 
 No entanto, a instância do autor de AEM pode ser [configurada](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com o URL de ID do locatário e não com o URL de alias do locatário (alternativo).
 
-**Caso** de uso: As organizações podem atender às suas necessidades de marca ao personalizar o URL do portal, em vez de se manterem no URL fornecido pelo Adobe.
+**Caso**  de uso: As organizações podem atender às suas necessidades de marca ao personalizar o URL do portal, em vez de se manterem no URL fornecido pelo Adobe.
 
 ## Recursos e melhorias do Brand Portal, dezembro de 2018{#brand-portal-features-and-enhancements-642}
 
@@ -156,12 +156,12 @@ Seis novas configurações são adicionadas aos administradores para ativar/desa
 
 ### Outras melhorias
 
-* *Caminho da hierarquia de pastas nas visualizações* de cartão e lista — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
-* *Opção* Visão geral — fornece aos usuários não administradores metadados sobre o ativo/pasta selecionando o ativo/pasta e, em seguida, selecionando a opção de visão geral na barra de ferramentas. Atualmente, exibe o título, a data de criação e o caminho
+* *Caminho da hierarquia de pastas nas visualizações*  de cartão e lista— permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
+* *Opção*  Visão geral— fornece aos usuários não administradores metadados sobre o ativo/pasta selecionando o ativo/pasta e, em seguida, selecionando a opção de visão geral na barra de ferramentas. Atualmente, exibe o título, a data de criação e o caminho
 
 ### Adobe I/O Hosts UI para configurar as integrações de autenticação
 
-O Brand Portal usa a interface [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) do Adobe para criar o aplicativo JWT, que permite a configuração de integrações do oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface do usuário para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para a publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+O Brand Portal usa a interface Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar o aplicativo JWT, que permite a configuração de integrações de Auth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface do usuário para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para a publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e melhorias do Brand Portal, fevereiro de 2018{#brand-portal-features-and-enhancements-632}
 
