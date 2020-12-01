@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do Smart Crop com o AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
+# Usando o Smart Crop com o AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
 O Smart Crop usa a Adobe Sensei para eliminar as tarefas demoradas e caras de cortar conteúdo para obter um design responsivo.
 
