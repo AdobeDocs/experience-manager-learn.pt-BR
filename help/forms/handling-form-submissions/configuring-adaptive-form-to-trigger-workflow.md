@@ -27,13 +27,13 @@ O formulário de amostra usado neste fluxo de trabalho é baseado em um modelo d
 
 ### Obter os modelos de formulário adaptáveis
 
-* Baixar modelo de formulário [adaptável](assets/af-form-template.zip)
+* Baixar [Modelo de Formulário Adaptável](assets/af-form-template.zip)
 * [Importar o modelo usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Carregar e instalar o modelo de formulário adaptativo
 
 ### Obtenha o formulário adaptável de amostra
 
-* Download do formulário [adaptativo](assets/peak-application-form.zip)
+* Baixar [Formulário adaptável](assets/peak-application-form.zip)
 * Navegue até [Formulário e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar -> Upload de arquivo
 * O formulário adaptável de amostra será colocado em uma pasta chamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
