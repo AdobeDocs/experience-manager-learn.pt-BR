@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Este vídeo mostra como fornecer estilos personalizados para a funcionalidade Diferença de página do AEM Sites.
 
-## Personalização de estilos de diferença de página {#customizing-page-difference-styles}
+## Personalizar estilos de diferença de página {#customizing-page-difference-styles}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18871/?quality=9&learn=on)
 
@@ -36,7 +36,7 @@ Isso tem a vantagem de permitir que essas substituições de estilo personalizad
 
 ### Preparar a clientlib de criação {#prepare-the-authoring-clientlib}
 
-Verifique a existência de uma `authoring` clientlib para o seu projeto em `/apps/my-project/clientlib/authoring.`
+Verifique a existência de uma clientlib `authoring` para o seu projeto em `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -45,9 +45,9 @@ Verifique a existência de uma `authoring` clientlib para o seu projeto em `/app
         categories="[my-project.authoring]"/>
 ```
 
-### Fornecer o CSS personalizado {#provide-the-custom-css}
+### Forneça o CSS personalizado {#provide-the-custom-css}
 
-Adicione à clientlib do projeto um arquivo que aponte para o arquivo menor que fornecerá os estilos de substituição. `authoring` `css.txt` [Menos](https://lesscss.org/) é preferido devido aos seus muitos recursos convenientes, incluindo o encapsulamento de classe, que é aproveitado neste exemplo.
+Adicione ao clientlib do projeto `authoring` um `css.txt` que aponte para o arquivo menor que fornecerá os estilos de substituição. [A ](https://lesscss.org/) lição é preferida devido aos seus muitos recursos convenientes, incluindo o encapsulamento de classe que é aproveitado neste exemplo.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Crie o `less` arquivo que contém as substituições de estilo em `/apps/my-project/clientlibs/authoring/css/htmldiff.less`e forneça os estilos de substituição conforme necessário.
+Crie o arquivo `less` que contém as substituições de estilo em `/apps/my-project/clientlibs/authoring/css/htmldiff.less` e forneça os estilos de sobreposição conforme necessário.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -101,9 +101,9 @@ body {
 }
 ```
 
-### Incluir o CSS clientlib de criação por meio do componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
+### Incluir o CSS clientlib de criação pelo componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Inclua a categoria clientlibs de criação na página base do projeto `/apps/my-project/components/structure/page/customheaderlibs.html` diretamente antes da `</head>` tag para garantir que os estilos sejam carregados.
+Inclua a categoria clientlibs de criação no `/apps/my-project/components/structure/page/customheaderlibs.html` da página base do projeto diretamente antes da tag `</head>` para garantir que os estilos sejam carregados.
 
 Esses estilos devem ser limitados aos modos [!UICONTROL Editar] e [!UICONTROL pré-visualização] WCM.
 
