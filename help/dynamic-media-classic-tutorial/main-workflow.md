@@ -32,7 +32,7 @@ O fluxo de trabalho nas soluções do Dynamic Media Classic consiste em três et
 
 Este é o início do fluxo de trabalho. Nesta etapa, você coleta ou cria o conteúdo de origem que se encaixa no fluxo de trabalho que está usando e o carrega no Dynamic Media Classic. O sistema oferece suporte a vários tipos de arquivos para imagens, vídeo e fontes, mas também para PDF, Adobe Illustrator e Adobe InDesign.
 
-Consulte a lista completa de Tipos [de arquivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)suportados.
+Consulte a lista completa de [Tipos de arquivos suportados](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Você pode carregar o conteúdo de origem de várias maneiras diferentes:
 
@@ -47,29 +47,29 @@ O modo padrão é Da área de trabalho, onde você procura arquivos na rede loca
 >
 >Não adicione manualmente suas pastas. Em vez disso, execute um upload do FTP e use a opção **Incluir subpastas** para recriar a estrutura de pastas no Dynamic Media Classic.
 
-As duas opções de carregamento mais importantes estão ativadas por padrão. **Marque para Publicar**, o que discutimos anteriormente, e **Substitua**. Substituir significa que, se o arquivo que está sendo carregado tiver o mesmo nome de um arquivo que já está no sistema, o novo arquivo substituirá a versão existente. Se você desmarcar essa opção, talvez o arquivo não seja carregado.
+As duas opções de carregamento mais importantes estão ativadas por padrão. **Marque para Publicar**, o que discutimos anteriormente, e **Substituir**. Substituir significa que, se o arquivo que está sendo carregado tiver o mesmo nome de um arquivo que já está no sistema, o novo arquivo substituirá a versão existente. Se você desmarcar essa opção, talvez o arquivo não seja carregado.
 
 ### Opções de substituição ao carregar imagens
 
 Há quatro variações da opção Substituir imagem que podem ser definidas para toda a sua empresa e muitas vezes são mal compreendidas. Resumindo, você define as regras de forma que deseja que os ativos com o mesmo nome sejam substituídos com mais frequência, ou deseja que as substituições ocorram com menos frequência (nesse caso, a nova imagem será renomeada com uma extensão &quot;-1&quot; ou &quot;-2&quot;).
 
-- **Substituir na pasta atual, mesmo nome/extensão**da imagem base.
+- **Substituir na pasta atual, mesmo nome/extensão** da imagem base.
 Essa opção é a regra mais rigorosa para substituição. Ele requer que você carregue a imagem de substituição na mesma pasta que a original e que a imagem de substituição tenha a mesma extensão de nome de arquivo que a original. Se esses requisitos não forem atendidos, um duplicado será criado.
 
 - **Substituir na pasta atual, o mesmo nome do ativo base, independentemente da extensão**.
 Requer que você carregue a imagem de substituição na mesma pasta do original, no entanto, a extensão do nome do arquivo pode ser diferente do original. Por exemplo, o arquivo visit.tif substitui o arquivo
 
-- **Substituir em qualquer pasta, mesmo nome/extensão**do ativo base.
+- **Substituir em qualquer pasta, mesmo nome/extensão** do ativo base.
 Exige que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, o arquivo visit.jpg deve substituir o arquivo President.jpg, e não o domínio.tif ). No entanto, é possível carregar a imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original.
 
 - **Substituir em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão**.
 Essa opção é a regra de substituição mais inclusiva. Você pode carregar uma imagem de substituição para uma pasta diferente da original, carregar um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
 
-Saiba mais sobre a opção [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)Substituir imagens.
+Saiba mais sobre a [opção Substituir imagens](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Embora não seja necessário, ao fazer upload usando qualquer um dos dois métodos acima, você pode especificar Opções de trabalho para esse upload em particular. por exemplo, para agendar um upload recorrente, defina opções de recorte ao carregar e muitas outras. Estes podem ser valiosos para alguns workflows, então vale a pena considerar se podem ser para os seus.
 
-Saiba mais sobre as Opções [de](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)trabalho.
+Saiba mais sobre [Opções de Trabalho](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 O upload é a primeira etapa necessária em qualquer fluxo de trabalho, pois o Dynamic Media Classic não pode funcionar com nenhum conteúdo que ainda não esteja em seu sistema. Em segundo plano durante o upload, o sistema registra cada ativo carregado com o banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem em um formato que permite redimensionamento e zoom dinâmicos e converte arquivos de vídeo para o formato compatível com a Web MP4.
 
@@ -98,7 +98,7 @@ Da mesma forma, você pode carregar o vídeo de origem principal no Dynamic Medi
 
 **Embora não haja um mínimo para tamanho de imagem, não recomendamos carregar imagens gigantes.** Uma imagem gigante pode ser considerada mais de 4000 pixels. Carregar imagens desse tamanho pode mostrar possíveis falhas como grãos de poeira ou pêlos na imagem. Essas imagens também ocuparão mais espaço no servidor do Dynamic Media Classic, o que pode fazer com que você ultrapasse os limites de armazenamentos contratados.
 
-Saiba mais sobre como [carregar arquivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Saiba mais sobre [Carregar arquivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Etapa 2: Autor (e publicar)
 
@@ -140,18 +140,18 @@ Os ativos recém-carregados e publicados serão vistos imediatamente, enquanto o
 
 Normalmente, isso não ocorre a menos que ocorra um erro e a imagem/ativo tenha o mesmo nome da versão publicada anteriormente, mas há um problema com a imagem. Por exemplo, você carregou acidentalmente uma versão de baixa resolução ou seu diretor de arte não aprovou a imagem. Nesse caso, lembre-se da imagem original e substitua-a por uma nova versão usando a mesma ID de ativo.
 
-Saiba como limpar [manualmente o cache para os URLs que precisam ser atualizados](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Saiba como [Limpar manualmente o cache para os URLs que precisam ser atualizados](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Para evitar problemas com atraso no armazenamento em cache, sempre trabalhe com antecedência. uma noite, um dia, duas semanas, etc. Acelere o tempo de garantia de qualidade/aceitação para que as partes internas provas seu trabalho antes de lançá-lo ao público. Mesmo trabalhando uma noite antes permite que você faça mudanças e republique essa noite. Pela manhã, as 10 horas passaram e o cache é atualizado com a imagem correta.
 
-- Saiba mais sobre como [Criar um trabalho](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)de publicação.
-- Saiba mais sobre a [Publicação](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Saiba mais sobre [Criar um trabalho de publicação](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Saiba mais sobre [Publicação](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Etapa 3: Entregar
 
-Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou outra coleção ou vídeo do Conjunto de imagens. Você precisa pegar esse URL e fazer algo com ele, como editar seu HTML para que as `<IMG>` tags apontem para a imagem do Dynamic Media Classic em vez de apontar para uma imagem que vem do site atual.
+Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou outra coleção ou vídeo do Conjunto de imagens. Você precisa pegar esse URL e fazer algo com ele, como editar seu HTML para que as tags `<IMG>` apontem para a imagem do Dynamic Media Classic em vez de apontar para uma imagem que vem do site atual.
 
 Na etapa de entrega, você deve integrar esses URLs ao seu site, aplicativo móvel, campanha de email ou qualquer outro ponto de contato digital no qual deseja exibir o ativo.
 
@@ -175,14 +175,14 @@ Exemplo de um link (em vermelho) que abrirá um Conjunto de imagens em um visual
 
 ## Visualizar ativos
 
-Você provavelmente vai querer pré-visualização nos ativos que carregou ou que estão criando ou editando para garantir que eles sejam exibidos como você deseja quando seus clientes os visualizações. Você pode acessar a janela Pré-visualização clicando em qualquer botão de **Pré-visualização** , na miniatura do ativo, na parte superior do painel **** Procurar/Criar ou indo até **Arquivo > Pré-visualização**. Em uma janela do navegador, ele fará a pré-visualização de qualquer ativo que estiver atualmente no painel, seja uma imagem, um vídeo ou um ativo criado, como um Conjunto de imagens.
+Você provavelmente vai querer pré-visualização nos ativos que carregou ou que estão criando ou editando para garantir que eles sejam exibidos como você deseja quando seus clientes os visualizações. Você pode acessar a janela Pré-visualização clicando em qualquer botão **Pré-visualização**, na miniatura do ativo, na parte superior do **Painel de navegação/criação**, ou indo para **Arquivo > Pré-visualização**. Em uma janela do navegador, ele fará a pré-visualização de qualquer ativo que estiver atualmente no painel, seja uma imagem, um vídeo ou um ativo criado, como um Conjunto de imagens.
 
 ### Pré-visualização de tamanho dinâmico (predefinições de imagem)
 
-Você pode pré-visualização suas imagens em vários tamanhos usando a pré-visualização **Tamanhos** . Isso carrega uma lista de suas predefinições de imagem disponíveis. Discutiremos as predefinições de imagens mais tarde, mas considere-as como &quot;receitas&quot; para carregar a imagem em um tamanho nomeado com quantidades específicas de nitidez e qualidade de imagem.
+Você pode pré-visualização suas imagens em vários tamanhos usando a pré-visualização **Tamanhos**. Isso carrega uma lista de suas predefinições de imagem disponíveis. Discutiremos as predefinições de imagens mais tarde, mas considere-as como &quot;receitas&quot; para carregar a imagem em um tamanho nomeado com quantidades específicas de nitidez e qualidade de imagem.
 
 ### Pré-visualização de zoom
 
 Você também pode usar a opção **Zoom** para pré-visualização da imagem em uma das várias predefinições de zoom pré-criadas, que são baseadas em diferentes visualizadores de zoom incluídos.
 
-Saiba mais sobre a [Visualização de ativos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Saiba mais sobre [Visualizar ativos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
