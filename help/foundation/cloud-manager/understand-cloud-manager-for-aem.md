@@ -31,29 +31,29 @@ Esta série de vídeos explora os principais recursos do Cloud Manager para AEM,
 * [Gasodutos IC/CD de não produção](#cicd-non-production-pipeline)
 * [Atividade](#activity)
 
-Para obter uma visão geral completa, consulte o Guia [do usuário do](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)Cloud Manager.
+Para obter uma visão geral completa, consulte [Guia do usuário do Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ## Programas {#programs}
 
-[Os Programas](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) do Cloud Manager representam conjuntos de ambientes AEM que suportam conjuntos lógicos de iniciativas de negócios, geralmente correspondentes a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM Central interno.
+[Os ](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) programas do Cloud Manager representam conjuntos de AEM ambientes que oferecem suporte a conjuntos lógicos de iniciativas de negócios, geralmente correspondentes a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM Central interno.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on)
 
 ## Ambientes {#environments}
 
-[Os Ambientes](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) do Gerenciador de nuvem são compostos por instâncias de autor de AEM, publicação de AEM e Dispatcher. Diferentes ambientes suportam funções e podem ser envolvidos usando diferentes Pipelines CI/CD (descrito abaixo). Os ambientes do Cloud Manager geralmente têm um ambiente de produção e um ambiente de estágio.
+[Os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) Ambientes do Gerenciador de nuvem são compostos por instâncias do AEM Author, AEM Publish e Dispatcher. Diferentes ambientes suportam funções e podem ser envolvidos usando diferentes Pipelines CI/CD (descrito abaixo). Os ambientes do Cloud Manager geralmente têm um ambiente de produção e um ambiente de estágio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12&learn=on)
 
 ## Relatórios {#reports}
 
-[Os Relatórios](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/monitor-your-environments.html) do Gerenciador de nuvem fornecem uma visualização para os Ambientes do Programa e AEM instâncias por meio de um conjunto de gráficos que relatam e rastreiam várias métricas para cada instância AEM.
+[Os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/monitor-your-environments.html) Relatórios do Gerenciador de nuvem fornecem uma visualização para os Ambientes do Programa e AEM instâncias por meio de um conjunto de gráficos que relatam e rastreiam várias métricas para cada instância AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/?quality=12&learn=on)
 
-## CI/CD Production Pipeline {#cicd-production-pipeline}
+## Pipeline de produção CI/CD {#cicd-production-pipeline}
 
-*[Usar o pipeline de CI/CD na série de vídeos do Adobe Cloud Manager](./use-the-cicd-pipeline-in-cloud-manager-for-aem.md)fornece um mergulho profundo na execução do pipeline de produção, incluindo a exploração de implantações com falha e bem-sucedidas.*
+*[Usar o pipeline CI/CD na série Adobe Cloud ](./use-the-cicd-pipeline-in-cloud-manager-for-aem.md) Managervideo fornece um aprofundamento da execução do pipeline de produção, incluindo a exploração de implantações com falha e bem-sucedidas.*
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ Para obter uma visão geral completa, consulte o Guia [do usuário do](https://d
 
 ### Configuração
 
-A configuração [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) define o acionador que iniciará o pipeline, parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
+A configuração [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) define o acionador que iniciará o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### Execução do pipeline
 
-O [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) é usado para criar e implantar o código por meio do Stage no ambiente Production, diminuindo o tempo de implantação.
+O [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) é usado para criar e implantar o código pelo Stage no ambiente Production, diminuindo o tempo de implantação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
 
-## Gasodutos IC/CD de não produção {#cicd-non-production-pipeline}
+## Pipelines de não produção CI/CD {#cicd-non-production-pipeline}
 
-[IC/CD Os gasodutos](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#non-production--code-quality-only-pipelines) de não produção são divididos em duas categorias, pipelines Code Quality e pipelines Deployment. A qualidade do código anula todos os códigos de uma ramificação Git para criar e ser avaliada em relação à verificação da qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada de código do repositório Git para qualquer ambiente que não seja de produção, ou seja, qualquer ambiente provisionado AEM que não seja Estágio ou Produção.
+[IC/CD Os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#non-production--code-quality-only-pipelines) pipelines de não produção são divididos em duas categorias, pipelines de qualidade de código e pipelines de implantação. A qualidade do código anula todos os códigos de uma ramificação Git para criar e ser avaliada em relação à verificação da qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada de código do repositório Git para qualquer ambiente que não seja de produção, ou seja, qualquer ambiente provisionado AEM que não seja Estágio ou Produção.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/?quality=12&learn=on)
 
@@ -81,6 +81,6 @@ O [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experience-
 
 O Cloud Manager fornece uma visualização consolidada para uma atividade, relacionando todas as execuções do pipeline de CI/CD, tanto a produção quanto a não-produção, permitindo a visibilidade da atividade atual e passada, e todos os detalhes da atividade podem ser revisados.
 
-O Cloud Manager também se integra a um nível por usuário com as Notificações [da](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/notifications.html)Adobe Experience Cloud, fornecendo uma visualização onipresente em eventos e ações de interesse.
+O Cloud Manager também se integra a um nível por usuário com [Notificações da Adobe Experience Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/notifications.html), fornecendo uma visualização onipresente em eventos e ações de interesse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
