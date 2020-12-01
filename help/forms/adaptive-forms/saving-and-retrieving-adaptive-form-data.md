@@ -30,7 +30,7 @@ Este artigo o guiará pelas etapas envolvidas na gravação e recuperação de D
 * [Demonstração de capacidade](#capability-demo)
 * [Implantar em seu servidor](#deploy-on-your-server)
 
-## Configurar fonte de dados {#Configure-Data-Source}
+## Configurar Fonte de Dados {#Configure-Data-Source}
 
 A Apache Sling Connection Pooling DataSource está configurada para apontar para o banco de dados que será usado para armazenar os dados do Formulário adaptável. A seguinte captura de tela mostra a configuração da minha instância. As seguintes propriedades podem ser copiadas e coladas
 
@@ -410,11 +410,11 @@ $(document).ready(function()
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
 
-### Demonstração da capacidade {#capability-demo}
+### Demonstração do recurso {#capability-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### Implantar em seu servidor {#deploy-on-your-server}
+#### Implantar no servidor {#deploy-on-your-server}
 
 Para testar esse recurso em sua instância do AEM Forms, siga as etapas a seguir
 
