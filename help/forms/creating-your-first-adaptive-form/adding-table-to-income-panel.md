@@ -32,7 +32,7 @@ Adicionaremos uma tabela ao painel Renda. Configure as linhas da tabela e use o 
 
 
 
-## Tornar a tabela de receita dinâmica {#make-the-income-table-dynamic}
+## Tornar a Tabela de Renda Dinâmica {#make-the-income-table-dynamic}
 
 **Verifique se você está no modo de edição. O botão de edição está localizado no lado superior direito do navegador.**
 
