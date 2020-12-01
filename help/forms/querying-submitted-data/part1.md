@@ -21,7 +21,7 @@ ht-degree: 0%
 # Criar formulário adaptável com base no Schema JSON
 
 
-A capacidade de criar um Forms adaptável baseado no schema JSON foi introduzida com a versão AEM Forms 6.3. Os detalhes sobre a criação do Adaptive Forms com o schema JSON são explicados detalhadamente neste [artigo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+A capacidade de criar um Forms adaptável baseado no schema JSON foi introduzida com a versão AEM Forms 6.3. Os detalhes sobre a criação do Adaptive Forms com o schema JSON são explicados em detalhes neste [artigo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
 
 Depois de criar o Formulário adaptável com base no schema JSON, a próxima etapa é armazenar os dados enviados no banco de dados. Para essa finalidade, usaremos o novo tipo de dados JSON introduzido por vários fornecedores de banco de dados. Para a finalidade deste artigo, usaremos o banco de dados MySql 8 para armazenar os dados enviados.
 
