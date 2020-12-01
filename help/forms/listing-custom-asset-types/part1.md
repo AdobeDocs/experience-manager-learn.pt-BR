@@ -30,7 +30,7 @@ Ativar tipos de ativos personalizados para listagem no AEMForms Portal
 
 ## Especificar caminho básico {#specify-base-path}
 
-O caminho base é o caminho de repositório de nível superior que compreende todos os ativos que um usuário pode querer lista no componente de pesquisa e lister. Se desejado, o usuário também pode configurar locais específicos dentro do caminho base da caixa de diálogo de edição de componentes, para que a pesquisa seja acionada em locais específicos, em vez de pesquisar todos os nós dentro do caminho base. Por padrão, o caminho base é usado como critério de caminho de pesquisa para buscar os ativos, a menos que o usuário configure um conjunto de caminhos específicos a partir desse local. É importante ter um valor ótimo desse caminho para fazer uma pesquisa de desempenho. O valor padrão do caminho base permanecerá como **_/content/dam/formsanddocuments_** , pois todos os ativos da AEM Forms residem em **_/content/dam/formsanddocuments._**
+O caminho base é o caminho de repositório de nível superior que compreende todos os ativos que um usuário pode querer lista no componente de pesquisa e lister. Se desejado, o usuário também pode configurar locais específicos dentro do caminho base da caixa de diálogo de edição de componentes, para que a pesquisa seja acionada em locais específicos, em vez de pesquisar todos os nós dentro do caminho base. Por padrão, o caminho base é usado como critério de caminho de pesquisa para buscar os ativos, a menos que o usuário configure um conjunto de caminhos específicos a partir desse local. É importante ter um valor ótimo desse caminho para fazer uma pesquisa de desempenho. O valor padrão do caminho base permanecerá como **_/content/dam/formsanddocuments_** porque todos os ativos AEM Forms residem em **_/content/dam/formsanddocuments._**
 
 Etapas para configurar o caminho básico
 
@@ -46,7 +46,7 @@ Etapas para configurar o caminho básico
 1. Altere o valor da propriedade path para **&quot;/content/dam&quot;**
 1. Clique em Salvar
 
-Especificando a propriedade path como **&quot;/content/dam&quot;** , você está basicamente definindo o Caminho básico como /content/dam. Isso pode ser verificado abrindo o componente de Pesquisa e Lister.
+Ao especificar a propriedade path para **&quot;/content/dam&quot;**, você está basicamente definindo o Caminho básico como /content/dam. Isso pode ser verificado abrindo o componente de Pesquisa e Lister.
 
 ![base](assets/basepath.png)
 
@@ -89,5 +89,5 @@ Após executar as etapas acima, o novo tipo de ativo (Arquivos Mp4) será exibid
 
 [Se tiver problemas para fazer isso funcionar, você pode importar o seguinte pacote.](assets/assettypeskt1.zip) O pacote tem dois tipos de ativos personalizados definidos. Arquivos Mp4 e documentos do Word. Sugestão: analise os **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Instale o pacote](assets/customportalpage.zip)customeportal. Este pacote contém uma página de portal de exemplo. Esta página será usada na parte2 deste tutorial
+[Instale o pacote](assets/customportalpage.zip) customeportal. Este pacote contém uma página de portal de exemplo. Esta página será usada na parte2 deste tutorial
 
