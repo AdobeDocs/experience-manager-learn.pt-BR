@@ -24,26 +24,26 @@ ht-degree: 5%
 
 ## Resumo
 
-Este artigo aborda algumas vulnerabilidades recentes e antigas que foram recentemente reportadas em AEM. Observe que a maioria das vulnerabilidades identificadas eram problemas conhecidos do produto AEM e da mitigação foram identificados anteriormente, uma nova versão do dispatcher está disponível para as novas vulnerabilidades. A Adobe também recomenda que os clientes preencham a lista de verificação [de segurança](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) AEM e sigam as diretrizes relevantes.
+Este artigo aborda algumas vulnerabilidades recentes e antigas que foram recentemente reportadas em AEM. Observe que a maioria das vulnerabilidades identificadas eram problemas conhecidos do produto AEM e da mitigação foram identificados anteriormente, uma nova versão do dispatcher está disponível para as novas vulnerabilidades. A Adobe também solicita que os clientes concluam a [AEM Security Checklist](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) e sigam as diretrizes relevantes.
 
 ## Ação obrigatória
 
 * AEM implantações devem ser start usando a versão mais recente do Dispatcher.
 * As regras de segurança do dispatcher devem ser aplicadas de acordo com a configuração recomendada.
-* A Lista de Verificação [de Segurança](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) AEM deve ser concluída para implantações AEM.
+* A [Lista de verificação de segurança AEM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) deve ser concluída para implementações AEM.
 
 ## Vulnerabilidades e resoluções
 
 | Problema | Resolução | Links |
 |-------|------------|-------|
-| Ignorando AEM regras do Dispatcher | Instale a versão mais recente do Dispatcher(4.3.1) e siga as configurações recomendadas do dispatcher. | Consulte [AEM Notas](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) de versão do Dispatcher e [Configuração do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
-| Vulnerabilidade de desvio de filtro de URL que pode ser usada para contornar as regras do dispatcher - CVE-2016-0957 | Isso foi corrigido em uma versão anterior do Dispatcher, mas agora é recomendável instalar a versão mais recente do Dispatcher (4.3.1) e seguir a configuração recomendada do Dispatcher. | Consulte [AEM Notas](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) de versão do Dispatcher e [Configuração do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
+| Ignorando AEM regras do Dispatcher | Instale a versão mais recente do Dispatcher(4.3.1) e siga as configurações recomendadas do dispatcher. | Consulte [AEM Notas de versão do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) e [Configurando o Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
+| Vulnerabilidade de desvio de filtro de URL que pode ser usada para contornar as regras do dispatcher - CVE-2016-0957 | Isso foi corrigido em uma versão anterior do Dispatcher, mas agora é recomendável instalar a versão mais recente do Dispatcher (4.3.1) e seguir a configuração recomendada do Dispatcher. | Consulte [AEM Notas de versão do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) e [Configurando o Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). |
 | Vulnerabilidade XSS relacionada a arquivos SWF armazenados | Isso foi solucionado com correções de segurança lançadas anteriormente. | Consulte [AEM Boletim de segurança APSB18-10](https://helpx.adobe.com/security/products/experience-manager/apsb18-10.html). |
-| Explosões relacionadas a senha | Siga as recomendações na lista de verificação Segurança para obter senhas mais fortes. | Consulte Lista de verificação de segurança [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) |
-| Exposição do uso do disco para usuários anônimos | Esse problema foi resolvido para o AEM 6.1 e posterior, para o AEM 6.0, as permissões prontas para uso podem ser modificadas para serem mais restritivas. | Consulte as notas [de versão](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)para AEM 6.1 e mais recentes. |
-| Exposição do Proxy Social Aberto para usuários anônimos | Isso foi resolvido em versões a partir do 6.0 SP2. | Consulte as notas [de](https://helpx.adobe.com/experience-manager/aem-previous-versions.html) versão para AEM 6.1 e mais recentes. |
-| Acesso ao CRX Explorer em instâncias de produção | O gerenciamento do acesso ao CRX Explorer já está coberto na Lista de verificação de segurança, o CRX Explorer deve ser removido do autor e da publicação da produção e a verificação de integridade da segurança a relata se não for removida. | Consulte [AEM Lista de verificação](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security-checklist.html)de segurança. |
-| BGServlets está exposto | Esta questão foi resolvida desde AEM 6.2. | See [AEM 6.2 Release Notes](https://helpx.adobe.com/experience-manager/6-2/release-notes.html) |
+| Explosões relacionadas a senha | Siga as recomendações na lista de verificação Segurança para obter senhas mais fortes. | Consulte [Lista de verificação de segurança AEM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-checklist.html) |
+| Exposição do uso do disco para usuários anônimos | Esse problema foi resolvido para o AEM 6.1 e posterior, para o AEM 6.0, as permissões prontas para uso podem ser modificadas para serem mais restritivas. | Consulte [notas de versão](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)para AEM 6.1 e anteriores. |
+| Exposição do Proxy Social Aberto para usuários anônimos | Isso foi resolvido em versões a partir do 6.0 SP2. | Consulte [notas de versão](https://helpx.adobe.com/experience-manager/aem-previous-versions.html) para AEM 6.1 e anteriores. |
+| Acesso ao CRX Explorer em instâncias de produção | O gerenciamento do acesso ao CRX Explorer já está coberto na Lista de verificação de segurança, o CRX Explorer deve ser removido do autor e da publicação da produção e a verificação de integridade da segurança a relata se não for removida. | Consulte [Lista de verificação de segurança AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security-checklist.html). |
+| BGServlets está exposto | Esta questão foi resolvida desde AEM 6.2. | Consulte [Notas de versão AEM 6.2](https://helpx.adobe.com/experience-manager/6-2/release-notes.html) |
 
 >[!MORELIKETHIS]
 >
