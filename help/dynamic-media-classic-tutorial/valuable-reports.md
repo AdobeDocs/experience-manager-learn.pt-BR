@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Relatórios valiosos para administradores {#valuable-reports}
 
-Neste capítulo final, só queremos que você saiba sobre dois relatórios importantes que você pode considerar configurar se for um administrador: o relatório Largura de banda e Armazenamento e o relatório Erros de imagem.
+Neste capítulo final, só queremos que você saiba mais sobre dois relatórios importantes que você pode considerar configurar se for um administrador: o relatório Largura de banda e Armazenamento e o relatório Erros de imagem.
 
 ## Relatório de largura de banda e Armazenamento
 
@@ -42,8 +42,8 @@ Esperamos que você tenha encontrado o conteúdo neste guia de práticas recomen
 
 Para saber mais sobre o Dynamic Media Classic, consulte os seguintes recursos:
 
-- [Dynamic Media Classic na Experience League - Obtenha valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic na Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic no Experience League - Obtenha valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic no Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Os arquivos da newsletter do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Página de Subscrição da newsletter do Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentação do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
