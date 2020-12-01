@@ -2,7 +2,7 @@
 title: Compreensão da multitenacidade e do desenvolvimento simultâneo
 seo-title: Compreensão da multitenacidade e do desenvolvimento simultâneo
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 682093fe-ce55-4ef8-af10-99f7062f8b1b
 discoiquuid: 0dfcdf39-7423-459f-8f35-ee5b4b829f2c
 feature: connected-assets
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Compreensão da multitenacidade e do desenvolvimento simultâneo {#understanding-multitenancy-and-concurrent-development}
+# Compreensão da multitenância e do desenvolvimento simultâneo {#understanding-multitenancy-and-concurrent-development}
 
 ## Introdução {#introduction}
 
@@ -53,7 +53,7 @@ Se os negócios exigirem uma verdadeira multilocalidade, sem conhecimento de out
 
 ## Técnicas de desenvolvimento {#development-techniques}
 
-### Gerenciamento de dependências {#managing-dependencies}
+### Gerenciando Dependências {#managing-dependencies}
 
 Ao gerenciar as dependências do projeto Maven, é importante que todas as equipes usem a mesma versão de um determinado pacote OSGi no servidor. Para ilustrar o que pode dar errado quando os projetos Maven são mal gerenciados, apresentamos um exemplo:
 
@@ -96,7 +96,7 @@ Isso não elimina a necessidade de várias equipes dependerem e atualizarem o me
 
 Para garantir que as alterações feitas neste pacote principal não interromperão a funcionalidade do sistema, recomendamos que um desenvolvedor sênior ou uma equipe de desenvolvedores mantenha a supervisão. Uma opção é ter uma única equipe que gerencie todas as alterações neste pacote; outra é fazer com que as equipes enviem solicitações que são revisadas e mescladas por esses recursos. É importante que um modelo de governança seja projetado e aceito pelas equipes e que os desenvolvedores o sigam.
 
-## Gerenciamento do Escopo de Implantação {#managing-deployment-scope}
+## Gerenciando Escopo de Implantação &amp;nbsp {#managing-deployment-scope}
 
 À medida que equipes diferentes implantam seus códigos no mesmo repositório, é importante que elas não substituam as alterações umas das outras. AEM tem um mecanismo para controlar isso ao implantar pacotes de conteúdo, o filtro. arquivo xml. É importante que não haja sobreposição entre o filtro.  arquivos xml; caso contrário, a implantação de uma equipe poderia apagar a implantação anterior de outra equipe. Para ilustrar este ponto, consulte os seguintes exemplos de arquivos de filtro bem-criados e problemáticos:
 
