@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de pastas vigiadas no AEM Forms{#using-watched-folders-in-aem-forms}
+# Usando pastas monitoradas no AEM Forms{#using-watched-folders-in-aem-forms}
 
 Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, para que quando um usuário coloca um arquivo (como um arquivo PDF) na Pasta assistida, uma operação de fluxo de trabalho, serviço ou script pré-configurado seja iniciada para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script.
 
@@ -34,7 +34,7 @@ O serviço de saída é um serviço OSGi que faz parte AEM Documento Services. O
 
 Para saber mais sobre o serviço de saída, [clique aqui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar a pasta monitorada no sistema, siga as etapas abaixo:
-* [Baixe e extraia o conteúdo do arquivo](assets/outputservicewatchedfolderkt.zip)zip. Este arquivo zip contém o pacote para criação de pastas monitoradas e arquivos de amostra para testar o serviço de saída usando o mecanismo de pasta monitorada
+* [Baixe e extraia o conteúdo do arquivo](assets/outputservicewatchedfolderkt.zip) zip. Este arquivo zip contém o pacote para criação de pastas monitoradas e arquivos de amostra para testar o serviço de saída usando o mecanismo de pasta monitorada
    * Sistema Windows
 
       * Importe o outputservicewatchedfolder.zip para AEM usando o gerenciador de pacote
