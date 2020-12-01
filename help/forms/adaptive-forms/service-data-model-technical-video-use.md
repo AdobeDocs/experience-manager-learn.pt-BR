@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de modelos de dados de serviço com a AEM Forms{#using-service-data-models-with-aem-forms}
+# Usando modelos de dados de serviço com AEM Forms{#using-service-data-models-with-aem-forms}
 
 O editor de regras da AEM Adaptive Forms pode aproveitar os Serviços criados no Modelo de dados de formulário.
 
