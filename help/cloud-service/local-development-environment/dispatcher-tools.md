@@ -25,13 +25,13 @@ O Dispatcher da Adobe Experience Manager (AEM) é um módulo de servidor da Web 
 
 O AEM como um SDK do Cloud Service inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são compostas de:
 
-+ um conjunto básico de arquivos de configuração do Apache HTTP Web Server e Dispatcher, localizados em `.../dispatcher-sdk-x.x.x/src`
++ um conjunto de linhas de base de arquivos de configuração do Apache HTTP Web Server e Dispatcher, localizados em `.../dispatcher-sdk-x.x.x/src`
 + uma ferramenta CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
 + uma ferramenta CLI de geração de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validator`
 + uma ferramenta CLI de implantação de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + uma imagem Docker que executa o servidor Web Apache HTTP com o módulo Dispatcher
 
-Observe que `~` é usado como abreviação para o Diretório do usuário. No Windows, isso é o equivalente a `%HOMEPATH%`.
+Observe que `~` é usado como abreviação para o Diretório do usuário. No Windows, isso equivale a `%HOMEPATH%`.
 
 >[!NOTE]
 >
@@ -40,32 +40,32 @@ Observe que `~` é usado como abreviação para o Diretório do usuário. No Win
 ## Pré-requisitos
 
 1. Os usuários do Windows devem usar o Windows 10 Professional
-1. Instale o [Experience Manager Publish Quickstart Jar](./aem-runtime.md) na máquina de desenvolvimento local.
-   + Opcionalmente, instale o site [de referência mais recente](https://github.com/adobe/aem-guides-wknd/releases) AEM no serviço de publicação de AEM local. Este site é usado neste tutorial para visualizar um Dispatcher em funcionamento.
-1. Instale e start a versão mais recente do [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) no computador de desenvolvimento local.
+1. Instale [Experience Manager Publish Quickstart Jar](./aem-runtime.md) no computador de desenvolvimento local.
+   + Opcionalmente, instale o [site de referência mais recente](https://github.com/adobe/aem-guides-wknd/releases) no serviço de publicação de AEM local. Este site é usado neste tutorial para visualizar um Dispatcher em funcionamento.
+1. Instale e start a versão mais recente de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) no computador de desenvolvimento local.
 
 ## Baixe as ferramentas do Dispatcher (como parte do SDK AEM)
 
 O AEM como Cloud Service SDK, ou AEM SDK, contém as Ferramentas do Dispatcher usadas para executar o servidor Web HTTP Apache com o módulo Dispatcher localmente para desenvolvimento, bem como o QuickStart Jar compatível.
 
-Se o AEM como um SDK Cloud Service já tiver sido baixado para [configurar o tempo de execução](./aem-runtime.md)AEM local, ele não precisará ser baixado novamente.
+Se o AEM como um SDK Cloud Service já tiver sido baixado para [configurar o tempo de execução AEM local](./aem-runtime.md), ele não precisará ser baixado novamente.
 
 1. Faça logon em [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=lista&amp;p.offset=0&amp;p.limit=1) com seu Adobe ID
    + Sua organização do Adobe __deve__ ser provisionada para AEM como Cloud Service para baixar o AEM como um SDK Cloud Service
-1. Clique na linha de resultado mais recente do SDK ____ AEM para fazer download
+1. Clique na linha de resultado mais recente do __AEM SDK__ para baixar
    + Verifique se AEM as ferramentas do Dispatcher v2.0.29+ do SDK estão anotadas na descrição do download
 
 ## Extraia as ferramentas do Dispatcher do zip do SDK AEM
 
 >[!TIP]
 >
-> Os usuários do Windows não podem ter espaços ou caracteres especiais no caminho para a pasta que contém as Ferramentas do Dispatcher Local. Se houver espaços no caminho, o `docker_run.cmd` erro ocorrerá.
+> Os usuários do Windows não podem ter espaços ou caracteres especiais no caminho para a pasta que contém as Ferramentas do Dispatcher Local. Se houver espaços no caminho, o `docker_run.cmd` falhará.
 
 A versão das Ferramentas do Dispatcher é diferente da do SDK AEM. Verifique se a versão das Ferramentas do Dispatcher é fornecida pela versão do SDK AEM que corresponde ao AEM como uma versão do Cloud Service.
 
-1. Descompacte o arquivo baixado `aem-sdk-xxx.zip`
-1. Desempacotar as Ferramentas do Dispatcher em `~/aem-sdk/dispatcher`
-   + Windows: Descompactar `aem-sdk-dispatcher-tools-x.x.x-windows.zip` em `C:\Users\<My User>\aem-sdk\dispatcher` (criando pastas ausentes, conforme necessário)
+1. Descompacte o arquivo `aem-sdk-xxx.zip` baixado
+1. Descompacte as Ferramentas do Dispatcher em `~/aem-sdk/dispatcher`
+   + Windows: Descompacte `aem-sdk-dispatcher-tools-x.x.x-windows.zip` em `C:\Users\<My User>\aem-sdk\dispatcher` (criando pastas ausentes, conforme necessário)
    + macOS / Linux: Execute o script de shell associado `aem-sdk-dispatcher-tools-x.x.x-unix.sh` para desempacotar as Ferramentas do Dispatcher
       + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
 
@@ -78,11 +78,11 @@ Observe que todos os comandos emitidos abaixo assumem que o diretório de trabal
 ## Entenda os arquivos de configuração do Dispatcher
 
 >[!TIP]
-> Os projetos de Experience Manager criados a partir do [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) são pré-preenchidos nesse conjunto de arquivos de configuração do Dispatcher, portanto não há necessidade de copiar da pasta src das Ferramentas do Dispatcher.
+> Os projetos de Experience Manager criados a partir do [AEM Project Maven Archetype](https://github.com/adobe/aem-project-archetype) são pré-preenchidos neste conjunto de arquivos de configuração do Dispatcher, portanto, não há necessidade de copiar da pasta src das Ferramentas do Dispatcher.
 
 As Ferramentas do Dispatcher fornecem um conjunto de arquivos de configuração do Apache HTTP Web Server e do Dispatcher que definem o comportamento para todos os ambientes, incluindo o desenvolvimento local.
 
-Esses arquivos devem ser copiados em um projeto Experience Manager Maven para a `dispatcher/src` pasta, caso ainda não existam no projeto Experience Manager Maven.
+Esses arquivos devem ser copiados em um projeto Experience Manager Maven para a pasta `dispatcher/src`, caso ainda não existam no projeto Experience Manager Maven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
 
@@ -92,7 +92,7 @@ Uma descrição completa dos arquivos de configuração está disponível nas Fe
 
 ## Validar configurações
 
-Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) podem ser validadas usando o `validate` script (não confundir com o `validator` executável).
+Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) podem ser validadas usando o script `validate` (não confundir com o executável `validator`).
 
 + Uso:
    + Windows: `bin\validate src`
@@ -108,17 +108,17 @@ Para executar o Dispatcher localmente, os arquivos de configuração do Dispatch
 
 Este comando transpila as configurações em um conjunto de arquivos compatível com o Pacote de container do Docker HTTP Web Server.
 
-Depois de geradas, as configurações transpiladas são usadas para executar o Dispatcher localmente no container Docker. É importante garantir que as configurações mais recentes tenham sido validadas com o uso `validate` e a saída, __usando a__ `-d` opção do validador.
+Depois de geradas, as configurações transpiladas são usadas para executar o Dispatcher localmente no container Docker. É importante garantir que as configurações mais recentes tenham sido validadas com a saída `validate` __e__ usando a opção `-d` do validador.
 
 + Uso:
    + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
    + macOS / Linux: `./bin/docker_run.sh <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
 
-O `aem-publish-host` pode ser definido como `host.docker.internal`, um nome DNS especial fornecido pelo Docker no container que resolve o IP da máquina host. Se ele `host.docker.internal` não resolver, consulte a seção [solução de problemas](#troubleshooting-host-docker-internal) abaixo.
+O `aem-publish-host` pode ser definido como `host.docker.internal`, um nome DNS especial fornecido pelo Docker no container que resolve o IP da máquina host. Se `host.docker.internal` não for resolvido, consulte a seção [solução de problemas](#troubleshooting-host-docker-internal) abaixo.
 
 Por exemplo, para start do container Dispatcher Docker usando os arquivos de configuração padrão fornecidos pelas Ferramentas do Dispatcher:
 
-1. Gere o `deployment-folder`, nomeado `out` por convenção, do zero sempre que uma configuração for alterada:
+1. Gere o `deployment-folder`, chamado `out` por convenção, do zero sempre que uma configuração for alterada:
 
    + Windows: `del /Q out && bin\validator full -d out src`
    + macOS / Linux: `rm -rf ./out && ./bin/validator full -d ./out ./src`
@@ -128,9 +128,9 @@ Por exemplo, para start do container Dispatcher Docker usando os arquivos de con
    + Windows: `bin\docker_run out host.docker.internal:4503 8080`
    + macOS / Linux: `./bin/docker_run.sh ./out host.docker.internal:4503 8080`
 
-O AEM como um serviço de publicação do SDK do Cloud Service, executado localmente na porta 4503, estará disponível por meio do Dispatcher em `http://localhost:8080`.
+O AEM como serviço de publicação do SDK do Cloud Service, executado localmente na porta 4503, estará disponível por meio do Dispatcher em `http://localhost:8080`.
 
-Para executar as Ferramentas do Dispatcher em relação à configuração do Dispatcher de um projeto do Experience Manager, gere simplesmente o `deployment-folder` usando a `dispatcher/src` pasta do projeto.
+Para executar as Ferramentas do Dispatcher em relação à configuração do Dispatcher de um projeto do Experience Manager, gere simplesmente a `deployment-folder` utilizando a pasta `dispatcher/src` do projeto.
 
 + Windows:
 
@@ -154,7 +154,7 @@ Para executar as Ferramentas do Dispatcher em relação à configuração do Dis
 
 Os registros do Dispatcher são úteis durante o desenvolvimento local para entender se e por que as Solicitações HTTP estão bloqueadas. O nível de log pode ser definido prefixando a execução de `docker_run` com parâmetros de ambiente.
 
-Os logs de Ferramentas do Dispatcher são emitidos para o padrão de saída quando `docker_run` é executado.
+Os logs de Ferramentas do Dispatcher são emitidos para o padrão final quando `docker_run` é executado.
 
 Parâmetros úteis para depurar o Dispatcher incluem:
 
@@ -164,7 +164,7 @@ Parâmetros úteis para depurar o Dispatcher incluem:
    + O valor padrão é: `Warn`
 + `DISP_RUN_MODE` define o &quot;modo de execução&quot; do ambiente Dispatcher, carregando os modos de execução correspondentes dos arquivos de configuração do Dispatcher.
    + O padrão é `dev`
-+ Valores válidos: `dev`, `stage`ou `prod`
++ Valores válidos: `dev`, `stage` ou `prod`
 
 Um ou vários parâmetros podem ser transmitidos para `docker_run`
 
@@ -190,9 +190,9 @@ Um ou vários parâmetros podem ser transmitidos para `docker_run`
 
 As versões das Ferramentas do Dispatcher aumentam com menos frequência do que o Experience Manager e, portanto, as Ferramentas do Dispatcher exigem menos atualizações no ambiente de desenvolvimento local.
 
-A versão recomendada das Ferramentas do Dispatcher é aquela que é fornecida com o AEM como um SDK Cloud Service que corresponde ao Experience Manager como uma versão Cloud Service. A versão do AEM como Cloud Service pode ser encontrada pelo [Cloud Manager](https://my.cloudmanager.adobe.com/).
+A versão recomendada das Ferramentas do Dispatcher é aquela que é fornecida com o AEM como um SDK Cloud Service que corresponde ao Experience Manager como uma versão Cloud Service. A versão do AEM como Cloud Service pode ser encontrada via [Gerenciador de nuvem](https://my.cloudmanager.adobe.com/).
 
-+ __Gerenciador de nuvem > Ambientes__, por ambiente especificado pelo rótulo __AEM versão__
++ __Gerenciador de nuvem > Ambientes__, por ambiente especificado pela  __AEM__ Liberável
 
 ![Versão Experience Manager](./assets/dispatcher-tools/aem-version.png)
 
@@ -209,13 +209,13 @@ _Observe que a própria versão das Ferramentas do Dispatcher não corresponder�
 Se, quando `bin/docker_run out host.docker.internal:4503 8080` resultar na mensagem __Aguardando até que host.docker.internal esteja disponível__, então:
 
 1. Verifique se a versão instalada do Docker é 18.03 ou superior
-2. Você pode ter uma configuração de máquina local que esteja impedindo o registro/resolução do `host.docker.internal` nome. Em vez disso, use seu IP local.
+2. Você pode ter uma configuração de máquina local que esteja impedindo o registro/resolução do nome `host.docker.internal`. Em vez disso, use seu IP local.
    + Windows:
-      + No prompt de comando, execute `ipconfig`e registre o endereço ____ IPv4 do host do computador host.
+      + No prompt de comando, execute `ipconfig` e registre o __Endereço IPv4__ do host.
       + Em seguida, execute `docker_run` usando este endereço IP:
          `bin\docker_run out <HOST IP>:4503 8080`
    + macOS / Linux:
-      + No terminal, execute `ifconfig` e registre o endereço IP __indefinido__ do host, geralmente o dispositivo __en0__ .
+      + No terminal, execute `ifconfig` e registre o endereço IP do host __inet__, normalmente o dispositivo __en0__.
       + Em seguida, execute `docker_run` usando o endereço IP do host:
          `bin/docker_run.sh out <HOST IP>:4503 8080`
 
@@ -232,9 +232,9 @@ Waiting until host.docker.internal is available
 
 ### docker_run resulta no erro &#39;**: Pasta de implantação não encontrada&#39;
 
-Durante a execução `docker_run.cmd`, é exibido um erro que indica __** erro: Pasta de implantação não encontrada:__. Isso normalmente ocorre porque há espaços no caminho. Se possível, remova os espaços na pasta ou mova a `aem-sdk` pasta para um caminho que não contenha espaços.
+Ao executar `docker_run.cmd`, é exibido um erro que indica __**: Pasta de implantação não encontrada:__. Isso normalmente ocorre porque há espaços no caminho. Se possível, remova os espaços na pasta ou mova a pasta `aem-sdk` para um caminho que não contenha espaços.
 
-Por exemplo, as pastas de usuário do Windows geralmente são `<First name> <Last name>`as pastas, com um espaço entre elas. No exemplo abaixo, a pasta `...\My User\...` contém um espaço que quebra a execução local das Ferramentas do Dispatcher `docker_run` . Se os espaços estiverem em uma pasta de usuário do Windows, não tente renomear essa pasta, pois ela quebrará o Windows, em vez disso, mova a `aem-sdk` pasta para um novo local onde seu usuário tenha permissões para modificar totalmente. Observe que as instruções que presumem que a `aem-sdk` pasta está no diretório inicial do usuário precisarão ser ajustadas ao novo local.
+Por exemplo, as pastas de usuário do Windows geralmente são `<First name> <Last name>`, com um espaço entre elas. No exemplo abaixo, a pasta `...\My User\...` contém um espaço que quebra a execução local das Ferramentas do Dispatcher. `docker_run` Se os espaços estiverem em uma pasta de usuário do Windows, não tente renomear essa pasta, pois ela quebrará o Windows. Em vez disso, mova a pasta `aem-sdk` para um novo local que seu usuário tenha permissões para modificar completamente. Observe que as instruções que presumem que a pasta `aem-sdk` está no diretório inicial do usuário precisarão ser ajustadas ao novo local.
 
 #### Exemplo de erro
 
@@ -246,9 +246,9 @@ operable program or batch file.
 ** error: Deployment folder not found: c:\Users\My User\aem-sdk\dispatcher\out
 ```
 
-### docker_run falha ao start no Windows{#troubleshooting-windows-compatible}
+### o docker_run falha ao start no Windows{#troubleshooting-windows-compatible}
 
-A execução `docker_run` no Windows pode resultar no seguinte erro, impedindo o Dispatcher de iniciar. Esse é um problema reportado com o Dispatcher no Windows e será corrigido em uma versão futura.
+Executar `docker_run` no Windows pode resultar no seguinte erro, impedindo o Dispatcher de iniciar. Esse é um problema reportado com o Dispatcher no Windows e será corrigido em uma versão futura.
 
 #### Exemplo de erro
 
