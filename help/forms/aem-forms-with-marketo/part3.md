@@ -28,7 +28,7 @@ A Integração de dados da AEM Forms permite que você configure e conecte-se a 
 1. Serviços Web baseados em SOAP
 1. Serviços OData
 
-Para a integração do AEM Forms com o Marketing, usaremos os serviços Web RESTful. A primeira etapa da integração é configurar uma fonte [de dados.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas ao configurar a fonte de dados.
+Para a integração do AEM Forms com o Marketing, usaremos os serviços Web RESTful. A primeira etapa da integração é configurar uma fonte de dados [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas ao configurar a fonte de dados.
 ![fonte de dados](assets/datasource.jfif)
 
 O &quot;marketo.json&quot; é o arquivo swagger e é fornecido a você como parte dos ativos deste tutorial.
@@ -39,7 +39,7 @@ O Tipo de autenticação é personalizado e a Implementação de autenticação 
 
 Depois disso, configurar a fonte de dados na próxima etapa é criar um Modelo de dados de formulário que tenha por base a fonte de dados configurada na etapa anterior. Para criar um Modelo de dados de formulário, siga as seguintes etapas:
 
-Aponte seu navegador para a página de integrações de [dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas em sua instância AEM.
+Aponte seu navegador para a página [integrações de dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas em sua instância AEM.
 
 1. Clique em Criar | Modelo de dados de formulário
 1. Forneça um título significativo, como FormsAndMarketo, e clique em Avançar
