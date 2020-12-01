@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Configurar o Asset Share Commons em AEM locais {#setup-asset-share-commons}
+# Configurar Commons de compartilhamento de ativos em AEM locais {#setup-asset-share-commons}
 
 Um breve guia para que o Asset Share Commons seja executado em uma instância AEM local.
 
