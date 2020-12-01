@@ -26,7 +26,7 @@ AEM como um recurso de marcação d&#39;água de representação Cloud Service p
 
 ## Configuração do OSGi
 
-O seguinte stub de configuração OSGi pode ser atualizado e adicionado ao `ui.config` subprojeto do projeto AEM.
+O seguinte stub de configuração OSGi pode ser atualizado e adicionado ao subprojeto `ui.config` do seu AEM.
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
