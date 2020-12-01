@@ -29,7 +29,7 @@ Neste vídeo, exploramos o Gerenciamento dinâmico de cores do Media e como ele 
 
 >[!NOTE]
 >
->[Ative o Dynamic Media](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) no AEM para usar esse recurso.
+>[Ative o Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM para usar esse recurso.
 
 Este recurso está disponível para as versões AEM 6.1 e 6.2 como um Feature Pack.
 
@@ -91,7 +91,7 @@ A seguir está o modelo XML do nó de configuração Gerenciamento de cores. Est
 />
 ```
 
-### Lista dos perfis de cor de Adobe estão listados abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
+### Lista dos perfis de cor de Adobe estão listados abaixo de {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Espaço de cor | Descrição |
 | ------------------- | ---------- | ------------------------------------- |
@@ -114,13 +114,13 @@ A seguir está o modelo XML do nó de configuração Gerenciamento de cores. Est
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | CMYK padrão Photoshop 4 |
+| PS4Padrão | CMYK | CMYK padrão Photoshop 4 |
 | PS5Default | CMYK | CMYK padrão Photoshop 5 |
 | SheetfeedCoated | CMYK | U.S. Sheetfeed Coated v2 |
 | SheetfeedNãoRevelado | CMYK | U.S. Sheetfeed UnRevelado v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
+| Fogra29 | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Revestido pela Web FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel SWOP 2006 Grau 3 Revestido pela Web |
