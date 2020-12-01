@@ -31,5 +31,5 @@ Este vídeo aborda os destaques da Caixa de entrada AEM.
 * Console de informações do fluxo de trabalho
 * Criação de tarefas ad-hoc
 * Tarefa e visibilidade do item de trabalho
-* [!DNL Inbox] e [!DNL Omnisearch] integração
-* [!DNL Inbox] e [!DNL AEM Projects] integração
+* [!DNL Inbox] e  [!DNL Omnisearch] integração
+* [!DNL Inbox] e  [!DNL AEM Projects] integração
