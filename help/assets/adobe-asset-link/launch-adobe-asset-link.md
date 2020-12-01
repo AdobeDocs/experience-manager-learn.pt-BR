@@ -18,7 +18,7 @@ ht-degree: 24%
 ---
 
 
-# Link do ativo do Access Adobe {#access-adobe-asset-link}
+# Acessar o link do ativo do Adobe {#access-adobe-asset-link}
 
 O Adobe Asset Link reforça a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. Você pode acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop do Creative Cloud. Saiba como iniciar o painel Link de ativos do Adobe a partir do aplicativo de desktop da Creative Cloud.
 
