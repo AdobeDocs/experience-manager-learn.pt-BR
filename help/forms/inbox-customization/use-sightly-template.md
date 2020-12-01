@@ -18,13 +18,14 @@ ht-degree: 2%
 
 # Uso de modelo inteligente para exibir dados da caixa de entrada
 
-Você pode usar um modelo simples para formatar os dados que serão exibidos nas colunas da caixa de entrada. Neste exemplo, exibiremos ícones coral-ui dependendo do valor da coluna de renda. A captura de tela a seguir mostra o uso de ícones na coluna![renda dos ícones de renda](assets/income-column.PNG)
+Você pode usar um modelo simples para formatar os dados que serão exibidos nas colunas da caixa de entrada. Neste exemplo, exibiremos ícones coral-ui dependendo do valor da coluna de renda. A captura de tela a seguir mostra o uso de ícones na coluna de renda
+![ícones de rendimento](assets/income-column.PNG)
 
-[O modelo](assets/sightly-template.zip) sightly usado para exibir os ícones personalizados de interface do usuário do coral é fornecido como parte deste artigo.
+[O ](assets/sightly-template.zip) modelo suave usado para exibir os ícones personalizados de interface do coral é fornecido como parte deste artigo.
 
 ## Modelo Sightly
 
-Veja a seguir o modelo suave. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da biblioteca [de ícones de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) interface de usuário de coral fornecida com AEM.
+Veja a seguir o modelo suave. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface de usuário coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que acompanha o AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -78,7 +79,7 @@ return val;
 
 >[!NOTE]
 >
->Este artigo supõe que você tenha instalado o fluxo de trabalho [de](assets/review-workflow.zip) amostra e o formulário [de](assets/snap-form.zip) amostra do artigo [](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) anterior nesta série.
+>Este artigo supõe que você tenha instalado o [fluxo de trabalho de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) nesta série.
 
 * [Logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo inteligente](assets/sightly-template.zip)
@@ -88,7 +89,7 @@ return val;
 * Abra o Admin Control clicando na Visualização da Lista ao lado do botão Criar
 * Adicionar coluna de renda à Caixa de entrada e salvar suas alterações
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecione o status _civil_ e envie o formulário
+* Selecione o _estado civil_ e envie o formulário
 * [Caixa de entrada visualização](http://localhost:4502/aem/inbox)
 
 O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;admin&quot;. Você deve ver o ícone apropriado na coluna de renda
