@@ -27,15 +27,15 @@ Modelos editáveis permitem que autores especializados criem e atualizem modelos
 
 Modelos editáveis são a recomendação para a criação de um novo AEM Sites.
 
-**Experiência** consistente do autor - As melhorias na criação do AEM Sites são levadas para a edição de modelo, incluindo o modo Layout em linha e o Painel da árvore de conteúdo.
+**Experiência**  consistente do autor - As melhorias na criação do AEM Sites são levadas para a edição de modelo, incluindo o modo Layout em linha e o Painel da árvore de conteúdo.
 
-**Configurações** avançadas de política - A seguir, são destacadas algumas configurações avançadas de política disponibilizadas com Modelos editáveis:
+**Configurações**  avançadas de política - O seguinte destaca algumas configurações avançadas de política disponibilizadas com Modelos editáveis:
 
-* **Container** de layout - capacidade de configurar os componentes permitidos, gerenciar o mapeamento Arrastar e soltar de ativos e as colunas Grade responsiva.
-* **Componente** de texto - capacidade de configurar plug-ins do Editor de Rich Text com uma nova interface do usuário e reutilizar políticas RTE em modelos.
-* **Componente** de imagem - capacidade de ativar/desativar recursos como recorte, upload de arquivo para desktop com uma nova interface e reutilizar políticas de imagem em modelos.
+* **Container**  de layout - capacidade de configurar os componentes permitidos, gerenciar o mapeamento Arrastar e soltar de ativos e as colunas Grade responsiva.
+* **Componente**  de texto - capacidade de configurar plug-ins do Editor de Rich Text com uma nova interface do usuário e reutilizar políticas RTE em modelos.
+* **Componente**  de imagem - capacidade de ativar/desativar recursos como recorte, upload de arquivo para desktop com uma nova interface e reutilizar políticas de imagem em modelos.
 
-Modelos editáveis podem ser encontrados em **Ferramentas** `>`**Gerais** `>` de **Modelos**.\
+Modelos editáveis podem ser encontrados em **Ferramentas** `>` **Geral** `>` **Modelos**.\
 URL de modelos editáveis (instância AEM local): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Recursos adicionais {#additional-resources}
