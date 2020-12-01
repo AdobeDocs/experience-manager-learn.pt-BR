@@ -88,8 +88,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 Para testar esse recurso no servidor, execute o seguinte procedimento:
 
 * [Baixe e extraia o conteúdo do arquivo zip no seu computador](assets/prefillservice.zip)
-* Verifique se as informações de perfil [do](http://localhost:4502/libs/granite/security/content/useradmin) usuário conectado foram preenchidas completamente. Isso é necessário para que a amostra funcione. A amostra não tem nenhuma verificação de erro para propriedades de perfil de usuário ausentes.
-* Implantar o pacote usando o console da Web [AEM](http://localhost:4502/system/console/bundles)
+* Verifique se as informações de perfil](http://localhost:4502/libs/granite/security/content/useradmin) do usuário conectado [estão totalmente preenchidas. Isso é necessário para que a amostra funcione. A amostra não tem nenhuma verificação de erro para propriedades de perfil de usuário ausentes.
+* Implantar o pacote usando o [AEM console da Web](http://localhost:4502/system/console/bundles)
 * Criar formulário adaptável usando o XSD
 * Associe o &quot;Serviço de preenchimento prévio de formulário personalizado&quot; como o serviço de preenchimento prévio do formulário adaptável
 * Arraste e solte elementos do schema no formulário
@@ -99,5 +99,5 @@ Para testar esse recurso no servidor, execute o seguinte procedimento:
 >
 >Se o formulário adaptável for baseado em XSD, verifique se o documento XML retornado pelo serviço de preenchimento prévio corresponde ao XSD no qual o formulário adaptável se baseia.
 >
->Se o formulário adaptável não for baseado em XSD, então será necessário vincular os campos manualmente. Por exemplo, para vincular um campo de formulário adaptável ao elemento fname nos dados XML, você usará `/data/fname` a referência Bind do campo de formulário adaptável.
+>Se o formulário adaptável não for baseado em XSD, então será necessário vincular os campos manualmente. Por exemplo, para vincular um campo de formulário adaptável ao elemento fname nos dados XML, você usará `/data/fname` na referência Vincular do campo de formulário adaptável.
 
