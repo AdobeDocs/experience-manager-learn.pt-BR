@@ -68,12 +68,15 @@ A seguir estão os dados do envio do formulário adaptável. O formulário adapt
 ```
 
 Para inicializar a variável ArrayList da string de subtipo, é possível usar o modo de mapeamento JSON Dot Notation ou XPath. A seguinte captura de tela mostra o preenchimento de uma variável ArrayList chamada CustomRoutes usando a Notação de ponto JSON. Verifique se você está apontando para um elemento em um objeto de matriz, como mostrado na captura de tela abaixo. Estamos preenchendo a CustomRoutes ArrayList com os nomes do objeto de matriz managementchain.
-A CustomRoutes ArrayList é então usada para preencher as Rotas no componente![customroute](assets/arraylist.jpg)Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos dados enviados, as Rotas do componente AssignTask são então preenchidas usando a variável CustomRoutes. A captura de tela abaixo mostra as rotas personalizadas em uma![tarefa AssignTask](assets/customactions.jpg)
+A CustomRoutes ArrayList é então usada para preencher as Rotas no componente AssignTask
+![customroute](assets/arraylist.jpg)
+Quando a variável CustomRoutes ArrayList for inicializada com os valores dos dados enviados, as Rotas do componente AssignTask serão então preenchidas usando a variável CustomRoutes. A captura de tela abaixo mostra as rotas personalizadas em uma AssignTask
+![asingtask](assets/customactions.jpg)
 
 Para testar esse fluxo de trabalho no sistema, siga as etapas a seguir
 
 * Baixe e salve o arquivo ArrayListVariable.zip em seu sistema de arquivos
-* [Importe o arquivo](assets/arraylistvariable.zip) zip usando o Gerenciador de pacote AEM
+* [Importe o arquivo zip ](assets/arraylistvariable.zip) usando o Gerenciador de pacotes AEM
 * [Abrir o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Insira algumas despesas e os 2 nomes dos gerentes
 * Pressione o botão Enviar
