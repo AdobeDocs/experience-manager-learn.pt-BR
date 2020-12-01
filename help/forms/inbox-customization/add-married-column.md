@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [Fazer logon no console da Web AEM](http://localhost:4502/system/console/bundles)
 * [Pacote de personalização da caixa de entrada de implantação e start](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abrir sua caixa de entrada](http://localhost:4502/aem/inbox)
-* Abra o Admin Control clicando no ícone de Visualização _da_ Lista ao lado do botão _Criar_
+* Abra o Admin Control clicando no ícone _Visualização de Lista_ ao lado do botão _Criar_
 * Adicionar coluna Casado à Caixa de entrada e salvar suas alterações
 * [Ir para a interface do usuário do FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importe o formulário](assets/snap-form.zip) de amostra selecionando Carregar __ arquivo no menu _Criar_
+* [Importe o ](assets/snap-form.zip) formulário de amostra selecionando  _Arquivo_ Upload no  __ menu Criar
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecione o status _civil_ e envie o formulário
+* Selecione o _estado civil_ e envie o formulário
    [Caixa de entrada visualização](http://localhost:4502/aem/inbox)
 
 O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;admin&quot;. Você deve ver um valor na coluna Casado, como mostrado nesta captura de tela
