@@ -36,8 +36,8 @@ Você precisará do seguinte:
 
 * **Pressupõe-se que você esteja executando o AEM Forms versão 6.4 ou superior no localhost:4502.**
 
-* [Baixe o cliente-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) no disco rígido.
+* [Baixe o cliente-libs-and-](assets/client-libs-and-logo.zip) logoand  [getting-started-](assets/getting-started-fragment.zip) fragmentmentmentmentation no disco rígido.
 
-* Importe os arquivos zip para AEM usando o gerenciador [de pacotes ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe arquivos zip para AEM usando [gerenciador de pacote ](http://localhost:4502/crx/packmgr/index.jsp)
 
 
