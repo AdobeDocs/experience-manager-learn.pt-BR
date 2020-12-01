@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Usando o Relatórios de transação no AEM Forms{#using-transaction-reporting-in-aem-forms}
+# Usando o Relatórios Transaction no AEM Forms{#using-transaction-reporting-in-aem-forms}
 
 O relatórios de transação para capturar o número de envios de Formulário, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais de Web e Impressão) foi introduzido com o AEM Forms 6.4.1. Esse recurso destina-se principalmente aos clientes que desejam licenciar o software com base no número de envios de formulário e/ou documentos renderizados. Este recurso está disponível apenas na pilha OSGI AEM Forms.
 
@@ -41,7 +41,7 @@ Para visualização do relatório de transação, faça logon no AEM Forms como 
 
 Selecionar ferramentas | Forms | Relatório de transação de Visualização
 
-ou visualização o relatório de transação clicando [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+ou visualização o relatório de transação clicando em [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![TransctionReporting](assets/transactionreporting.gif)
 
@@ -53,5 +53,5 @@ Ações como enviar um formulário PDF, usar a interface do usuário do agente p
 
 Se você estiver exibindo o relatório de transação na instância do autor, verifique se a replicação reversa está configurada em todas as instâncias de publicação.
 
-Para saber mais sobre o relatórios de transação, [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para saber mais sobre o relatórios de transação [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
