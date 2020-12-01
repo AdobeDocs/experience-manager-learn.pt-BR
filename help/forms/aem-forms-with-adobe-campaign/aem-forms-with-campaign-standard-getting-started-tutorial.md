@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Introdução ao AEM Forms e Adobe Campaign Standard {#getting-started-with-aem-forms-and-adobe-campaign-standard}
+# Introdução ao AEM Forms e ao Adobe Campaign Standard {#getting-started-with-aem-forms-and-adobe-campaign-standard}
 
 ![formsandcampaign](assets/helpx-cards-forms.png)
 
@@ -38,7 +38,7 @@ Para integrar o AEM Forms ao ACS, é necessário seguir as seguintes etapas:
 Para começar, siga as instruções a seguir
 
 * [Baixe e descompacte os ativos relacionados a este tutorial.](assets/aem-forms-and-acs-bundles.zip)
-* Implantar os pacotes usando o console da Web [Felix](http://localhost:4502/system/console/bundles)
+* Implantar os pacotes usando [console da Web Felix](http://localhost:4502/system/console/bundles)
 * Forneça as configurações apropriadas para o Adobe Campaign na Configuração do Felix OSGI.
 * [Crie um usuário de serviço como mencionado neste artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Certifique-se de implantar o pacote OSGi associado ao artigo.
 * Armazene a chave privada ACS em etc/key/campaign/private.key. Será necessário criar uma pasta chamada campanha em etc/key.
