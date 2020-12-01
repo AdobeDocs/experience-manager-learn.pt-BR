@@ -39,7 +39,7 @@ Nesta parte, criaremos a Interative Communication for Web Canal.
 
    1. Desmarque a caixa de seleção Imprimir canal. Não estamos criando o documento para o canal impresso.
    1. Web: Selecione esta opção para gerar o documento para o canal da Web
-   1. Comunicação interativa: Modelo: **global>** RetiREERMENTAccountStatement(Este é o modelo criado na etapa anterior)
+   1. Comunicação interativa: Modelo: **global>RegressoAccountStatemen** t(Este é o modelo criado na etapa anterior)
    1. Tema:** Tema de referência ->Tela 2.0**
 
 1. Tocar em Criar
