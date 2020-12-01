@@ -23,12 +23,12 @@ O suporte ao Dynamic Media 3D para Adobe Experience Manager permite personalizar
 
 >[!VIDEO](https://video.tv.adobe.com/v/35156/?quality=9&learn=on)
 
-Confira o Visualizador [3D](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) Dimensional aqui.
+Verifique o visualizador 3D [Dimensional](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) aqui.
 
 
 ## Uso do Visualizador de experiência 3D
 
-* **Transformar câmera** : Para orbitar ao redor do objeto - Clique com o botão esquerdo + arraste ou pressione + arraste
-* **Câmera** panorâmica: Para deslocar (visualização esquerda, direita, para cima e para baixo) - Clique com o botão direito + Arraste / Control + Arraste / Dois dedos Pressione + Arraste
+* **Vire a câmera** : Para orbitar ao redor do objeto - Clique com o botão esquerdo + arraste ou pressione + arraste
+* **Câmera**  panorâmica: Para deslocar (visualização esquerda, direita, para cima e para baixo) - Clique com o botão direito + Arraste / Control + Arraste / Dois dedos Pressione + Arraste
 * **Zoom da câmera** : Para aplicar zoom - Roda de rolagem ou Pinch
-* **Redefinir/Centralizar câmera** : Objeto central - Clique no Duplo ou toque no Duplo
+* **Câmera**  de reinicialização/central: Objeto central - Clique no Duplo ou toque no Duplo
