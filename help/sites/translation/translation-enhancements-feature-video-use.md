@@ -26,11 +26,11 @@ AEM robusta estrutura de tradução permite que o conteúdo AEM seja traduzido p
 
 AEM 6.5 melhorias na tradução incluem:
 
-**Aprovar trabalhos** de tradução automaticamente: O sinalizador de aprovação no trabalho de tradução é uma propriedade binária. Ele não orienta nem integra com workflows de revisão e aprovação prontos para uso. Para manter o número mínimo de etapas em um trabalho de tradução, o padrão é &quot;aprovar automaticamente&quot; em Propriedades  avançadas de um projeto de tradução. Se sua organização exigir aprovação para um trabalho de tradução, você poderá desmarcar a opção &quot;aprovar automaticamente&quot; em Propriedades  avançadas de um projeto de tradução.
+**Aprovar trabalhos** de tradução automaticamente: O sinalizador de aprovação no trabalho de tradução é uma propriedade binária. Ele não orienta nem integra com workflows de revisão e aprovação prontos para uso. Para manter o número mínimo de etapas em um trabalho de tradução, por padrão, ele está definido como &quot;aprovar automaticamente&quot; em [!UICONTROL Propriedades avançadas] de um projeto de tradução. Se sua organização exigir aprovação para um trabalho de tradução, você poderá desmarcar a opção &quot;aprovar automaticamente&quot; em [!UICONTROL Propriedades avançadas] de um projeto de tradução.
 
 **Excluir automaticamente inicializações** de tradução: Em vez de excluir manualmente as inicializações de tradução em Inicializações administrativas após o fato, agora é possível excluir automaticamente as inicializações de tradução após elas terem sido promovidas.
 
-**Exportar objetos de tradução no formato** JSON: AEM 6.4 e versões anteriores oferecem suporte aos formatos XML e XLIFF de objetos de tradução. Agora é possível configurar o formato de exportação para o formato JSON usando o [!UICONTROL Config Manager]do console do sistema. Procure Configuração [!UICONTROL da plataforma de]tradução e selecione o formato de exportação como JSON.
+**Exportar objetos de tradução no formato** JSON: AEM 6.4 e versões anteriores oferecem suporte aos formatos XML e XLIFF de objetos de tradução. Agora você pode configurar o formato de exportação para o formato JSON usando o console de sistemas [!UICONTROL Config Manager]. Procure [!UICONTROL Configuração da plataforma de tradução] e selecione o formato de exportação como JSON.
 
 **Atualize o conteúdo AEM traduzido na Memória de Tradução (TMS)**: autor local que não tem acesso ao AEM pode fazer atualizações para conteúdo traduzido, que já foi assimilado de volta ao AEM, diretamente no TM (Translation Memory, no TMS) e atualizar as traduções no AEM, reenviando o trabalho de tradução do TMS para AEM
 
