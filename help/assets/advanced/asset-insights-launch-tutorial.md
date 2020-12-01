@@ -34,12 +34,12 @@ Visão geral do Asset Insights. Instale os componentes principais, o componente 
 
 >[!CAUTION]
 >
->Faça o download da versão [mais recente dos Componentes](https://github.com/adobe/aem-core-wcm-components) principais para sua implementação.
+>Certifique-se de baixar a versão mais recente [dos Componentes principais](https://github.com/adobe/aem-core-wcm-components) para sua implementação.
 
 O vídeo usa Componentes principais v2.2.2 que não são mais a versão mais recente; utilize a versão mais recente antes de prosseguir para a próxima seção.
 
-* Baixar conteúdo de imagem de amostra do [Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* Baixe [os componentes principais do AEM WCM mais recentes](https://github.com/adobe/aem-core-wcm-components/releases)
+* Baixar [Conteúdo da imagem de amostra do Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
+* Baixe [os componentes principais mais recentes do AEM WCM](https://github.com/adobe/aem-core-wcm-components/releases)
 
 ## Parte 2 : Ativando o rastreamento de insights de ativos para o componente de imagem de amostra {#sample-image-component-asset-insights}
 
@@ -53,14 +53,14 @@ Aprimoramentos aos componentes principais e uso do componente proxy (Componente 
 
 O componente Imagem principal usa o atributo ***data-asset-id*** dentro do pai &lt;div> de uma tag de imagem para ativar/desativar esse recurso. O componente proxy substitui o componente principal pelas seguintes alterações.
 
-* Remove o ***data-asset-id*** do div pai de um elemento &lt;img> em image.html
+* Remove o ***data-asset-id*** do div pai de um elemento &lt;img> dentro do image.html
 * Adiciona ***data-aem-asset-id*** diretamente ao elemento &lt;img> dentro de image.html
 * Adiciona o valor ***data-trackable=&#39;true&#39;*** ao elemento &lt;img> dentro de image.html
-* ***data-aem-asset-id*** e ***data-trackable=&#39;true&#39;*** são mantidos no mesmo nível de nó
+* ***data-aem-asset-*** idand  ***data-trackable=&#39;true&#39;*** são mantidos no mesmo nível de nó
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UID&#39;* e *data-trackable=&#39;true&#39;* são os principais atributos que precisam estar presentes para impressões de ativos. Para Insights de cliques de ativos, além dos atributos de dados acima presentes na tag &lt;img>, a tag pai &lt;a> deve ter um valor href válido.
+>*data-aem-asset-id=&#39;image.UUID&#39;* e  *data-trackable=&#39;true&#39;* são os principais atributos que precisam estar presentes para impressões de ativos. Para Insights de cliques de ativos, além dos atributos de dados acima presentes na tag &lt;img>, a tag pai &lt;a> deve ter um valor href válido.
 
 ## Parte 3: Adobe Analytics — Criação do conjunto de relatórios, habilitando a coleta de dados em tempo real e o Relatórios AEM Assets {#adobe-analytics-asset-insights}
 
@@ -76,7 +76,7 @@ Para a configuração do AEM Assets Insights, você precisa das seguintes creden
 * Centro de dados
 * Nome da Empresa do Analytics
 * Nome de usuário do Analytics
-* Segredo compartilhado (pode ser obtido em *Adobe Analytics > Admin > Configurações de Empresa > Serviço* da Web).
+* Segredo compartilhado (pode ser obtido em *Adobe Analytics > Admin > Configurações de Empresa > Serviço Web*).
 * Conjunto de relatórios (certifique-se de selecionar o conjunto de relatórios correto que é usado para o Relatórios do ativo)
 
 ## Parte 4: Uso do Adobe Experience Platform Launch para adicionar a extensão Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
@@ -102,13 +102,13 @@ Certifique-se de replicar todas as suas alterações da instância do autor para
 
 O rastreador de páginas implementa duas chamadas de retorno (registradas no código incorporado do ativo)
 
-* **\&lt;código>assetAnalytics.core.assetLoaded\&lt;código>** : chamado quando o evento &#39;load&#39; é despachado para o elemento asset-DOM.
-* **\&lt;código>assetAnalytics.core.assetClicked\&lt;código>** : chamado quando o evento &#39;click&#39; é despachado para o elemento asset-DOM, isso só é relevante quando o elemento asset-DOM tem uma tag de âncora como pai com um atributo &#39;href&#39; externo válido
+* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;/code>** &lt;code>&lt;code>: chamado quando o evento &#39;load&#39; é despachado para o elemento asset-DOM.&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.core.assetClicked\&lt;/code>** &lt;code>&lt;code>: chamado quando o evento &#39;click&#39; é despachado para o elemento asset-DOM, isso só é relevante quando o elemento asset-DOM tem uma tag de âncora como pai com um atributo &#39;href&#39; externo válido&lt;/code>&lt;/code>
 
 Por fim, o Pagetracker implementa uma função de inicialização como.
 
-* **\&lt;código>assetAnalytics.dispatcher.init()\&lt;código>** : chamado para inicializar o componente Pagetracker. ISSO DEVE ser chamado antes que qualquer evento-insights-ativos (impressões e/ou cliques) seja gerado da página da Web.
-* **\&lt;código>assetAnalytics.dispatcher.init()\&lt;código>** : aceita opcionalmente um objeto AppMeasurement — se fornecido, ele não tentará criar uma nova instância do objeto AppMeasurement.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: chamado para inicializar o componente Pagetracker.&lt;/code>&lt;/code> ISSO DEVE ser chamado antes que qualquer evento-insights-ativos (impressões e/ou cliques) seja gerado da página da Web.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: aceita opcionalmente um objeto AppMeasurement — se fornecido, ele não tentará criar uma nova instância do objeto AppMeasurement.&lt;/code>&lt;/code>
 
 ### Regra 2: Controlador de imagens — Ação 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -190,9 +190,9 @@ Duas extensões do navegador Google Chrome são mencionadas no vídeo como manei
 * [Iniciar extensão do Chrome do Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
 * [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
 
-Também é possível alternar o DTM para o modo de depuração com a seguinte Extensão do Chrome: [Iniciar e DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Isso facilita ver se há erros relacionados à implantação do DTM. Além disso, é possível alternar manualmente o DTM para o modo de depuração por meio de qualquer ferramenta de *desenvolvedor de navegadores -> Console* JS adicionando o seguinte trecho:
+Também é possível alternar o DTM para o modo de depuração com a seguinte Extensão do Chrome: [Iniciar e Comutador DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Isso facilita ver se há erros relacionados à implantação do DTM. Além disso, você pode alternar manualmente o DTM para o modo de depuração por meio de qualquer navegador *ferramentas do desenvolvedor -> Console JS* adicionando o seguinte trecho:
 
-## Parte 5 : Teste de rastreamento analítico e sincronização de dados de insight{#analytics-tracking-asset-insights}
+## Parte 5 : Testando o rastreamento analítico e a sincronização de dados do Insight{#analytics-tracking-asset-insights}
 
 Configuração AEM Scheduler de Trabalho de Sincronização de Relatórios de Ativos e Relatório de Insights de Ativos
 
