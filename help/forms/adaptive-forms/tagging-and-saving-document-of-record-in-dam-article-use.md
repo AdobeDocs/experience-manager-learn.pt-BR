@@ -46,7 +46,7 @@ tagManager.setTags(metadata, tagArray, true);
 Para que este exemplo funcione no seu sistema, siga as etapas listadas abaixo:
 * [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Esse é o pacote OSGI personalizado que define as tags dos dados de formulário enviados.
+* [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Esse é o pacote OSGI personalizado que define as tags dos dados de formulário enviados.
 
 * [Download do formulário adaptável de amostra](assets/tag-and-store-in-dam-assets.zip)
 
@@ -54,8 +54,8 @@ Para que este exemplo funcione no seu sistema, siga as etapas listadas abaixo:
 
 * Clique em Criar | Carregar e carregar o sampleadaptiveform.zip
 
-* [Importar ativos](assets/tag-and-store-in-dam-assets.zip) do artigo usando AEM gerenciador de pacote
-* Abra o formulário de [amostra no modo](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled)pré-visualização. Preencha a seção Pessoas e envie o formulário.
+* [Importar a ](assets/tag-and-store-in-dam-assets.zip) avaliação do artigo usando AEM gerenciador de pacote
+* Abra o formulário de amostra [no modo de pré-visualização](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Preencha a seção Pessoas e envie o formulário.
 * [Navegue até a pasta Pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Deve ser devidamente marcada.
 Parabéns!! A amostra foi instalada com êxito no sistema
 
