@@ -37,7 +37,7 @@ Esta série de vídeo aborda as opções de delivery para usar Fragmentos de con
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Fragmentos de conteúdo podem ser usados em páginas do AEM Sites ou de maneira semelhante, em Fragmentos de experiência, usando o componente [Fragmento de](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)conteúdo dos Componentes principais do AEM WCM.
+Os Fragmentos de conteúdo podem ser usados em páginas do AEM Sites ou de maneira semelhante, nos Fragmentos de experiência, usando o componente do Fragmento de conteúdo [Componentes principais do AEM WCM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Os componentes do Fragmento de conteúdo podem ser estilizados usando AEM Sistema de estilo para exibir o conteúdo conforme necessário.
 
@@ -47,7 +47,7 @@ Os componentes do Fragmento de conteúdo podem ser estilizados usando AEM Sistem
 
 AEM Content Services facilita a criação de pontos finais HTTP baseados em AEM página que renderizam o conteúdo em um formato JSON normalizado.
 
-O vídeo acima usa o Componente [de fragmento de](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html) conteúdo para expor Fragmentos de conteúdo individuais. O Componente [de Lista de fragmento de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) conteúdo é um novo componente que permite que um autor defina um query que preencherá dinamicamente a página com uma lista de Fragmentos de conteúdo. O componente de Lista do fragmento do conteúdo é preferido quando vários Fragmentos do conteúdo precisam ser expostos.
+O vídeo acima usa o [Componente de fragmento de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) para expor fragmentos de conteúdo individuais. O [Componente de Lista do fragmento de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) é um novo componente que permite que um autor defina um query que preencherá dinamicamente a página com uma lista de Fragmentos de conteúdo. O componente de Lista do fragmento do conteúdo é preferido quando vários Fragmentos do conteúdo precisam ser expostos.
 
 *Exemplo de carga JSON de ponto final do Content Services:*\
 **[athletes.json](assets/athletes.json)**
@@ -79,7 +79,7 @@ Há duas opções para expor o Fragmento de conteúdo como JSON para suportar um
 
 * [Criação de fragmentos de conteúdo](content-fragments-feature-video-use.md)
 * [Componentes principais do AEM WCM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
-* [Componente de fragmento de conteúdo principal do AEM WCM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componente de fragmento de conteúdo principal do AEM WCM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Para baixar e instalar o pacote abaixo em uma instância AEM 6.4+ para o estado final da série de vídeo:\
 **[aem_demo_fluidescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
