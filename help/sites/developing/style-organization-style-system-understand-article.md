@@ -20,16 +20,16 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Leia o conteúdo em [Understanding how to code for the Style System](style-system-technical-video-understand.md)(Como codificar para o sistema de estilo), para garantir a compreensão das convenções semelhantes às da BEM usadas pelo AEM Style System (Sistema de estilo).
+>Revise o conteúdo em [Entendendo como codificar para o Sistema de estilo](style-system-technical-video-understand.md), para garantir uma compreensão das convenções semelhantes a BEM usadas pelo Sistema de estilo AEM.
 
 Há dois sabores ou estilos principais que são implementados para o Sistema de estilo AEM:
 
 * **Estilos de layout**
 * **Exibir estilos**
 
-**Os estilos** de layout afetam muitos elementos de um Componente para criar uma renderização bem definida e identificável (design e layout) do componente, geralmente alinhando-se a um conceito de Marca reutilizável específico. Por exemplo, um componente Teaser pode ser apresentado no layout tradicional baseado em cartão, em um estilo promocional horizontal ou como um layout principal sobrepondo o texto em uma imagem.
+**Os** estilos de layout afetam muitos elementos de um componente para criar uma renderização bem definida e identificável (design e layout) do componente, geralmente alinhando-se a um conceito de Marca reutilizável específico. Por exemplo, um componente Teaser pode ser apresentado no layout tradicional baseado em cartão, em um estilo promocional horizontal ou como um layout principal sobrepondo o texto em uma imagem.
 
-**Os estilos** de exibição são usados para afetar pequenas variações nos estilos de Layout, no entanto, eles não alteram a natureza fundamental ou a intenção do estilo de Layout. Por exemplo, um estilo de layout Herói pode ter estilos de exibição que mudam o esquema de cores do esquema de cores da marca principal para o esquema de cores da marca secundária.
+**Os** estilos de exibição são usados para afetar pequenas variações nos estilos de Layout, no entanto, eles não alteram a natureza fundamental ou a intenção do estilo de Layout. Por exemplo, um estilo de layout Herói pode ter estilos de exibição que mudam o esquema de cores do esquema de cores da marca principal para o esquema de cores da marca secundária.
 
 ## Práticas recomendadas de organização de estilo {#style-organization-best-practices}
 
@@ -49,15 +49,15 @@ Os nomes de estilo ou as opções apresentadas aos autores AEM e os nomes de cla
 
 Isso permite que as opções de Estilo sejam rotuladas em um vocabulário claro e entendidas pelos autores AEM, mas permite que os desenvolvedores de CSS nomeiem as classes de CSS de uma forma semântica e de prova futura. Por exemplo:
 
-Um componente deve ter as opções para ser colorido com as cores **primária** e **secundária** da marca, no entanto, os autores AEM conhecem as cores como **verde** e **amarelo**, em vez da linguagem de design do primário e secundário.
+Um componente deve ter as opções para ser colorido com as cores **primárias** e **secundárias** da marca, no entanto, os autores AEM conhecem as cores como **verde** e **amarelo**, em vez da linguagem de design primária e secundária.
 
-O Sistema de estilo AEM pode expor esses estilos de exibição de cores usando rótulos amigáveis aos autores, **Verde** e **Amarelo**, ao mesmo tempo em que permite que os desenvolvedores de CSS usem o nome semântico de `.cmp-component--primary-color` e `.cmp-component--secondary-color` definam a implementação de estilo real no CSS.
+O Sistema de Estilos de AEM pode expor esses estilos de exibição de cores usando rótulos amigáveis ao autor **Verde** e **Amarelo**, ao mesmo tempo em que permite que os desenvolvedores de CSS usem o nome semântico de `.cmp-component--primary-color` e `.cmp-component--secondary-color` para definir a implementação de estilo real no CSS.
 
-O nome de Estilo do **Verde** está mapeado para `.cmp-component--primary-color`e **Amarelo** para `.cmp-component--secondary-color`.
+O nome de Estilo de **Verde** está mapeado para `.cmp-component--primary-color` e **Amarelo** para `.cmp-component--secondary-color`.
 
-Se a cor da marca do empresa mudar no futuro, tudo o que precisa ser alterado é a implementação única de `.cmp-component--primary-color` e `.cmp-component--secondary-color`, e os nomes de estilo.
+Se a cor da marca do empresa mudar no futuro, tudo o que precisa ser alterado é a implementação única de `.cmp-component--primary-color` e `.cmp-component--secondary-color` e os nomes de estilo.
 
-## O componente Teaser como exemplo de caso de uso {#the-teaser-component-as-an-example-use-case}
+## O componente Teaser como exemplo usa case {#the-teaser-component-as-an-example-use-case}
 
 A seguir está um exemplo de uso de estilização de um componente Teaser para ter vários estilos diferentes de Layout e Exibição.
 
@@ -65,31 +65,31 @@ Isso explorará como os nomes de estilo (expostos aos autores) e como as classes
 
 ### Configuração de estilos de componentes do Teaser {#component-styles-configuration}
 
-A imagem a seguir mostra a configuração de [!UICONTROL Estilos] para o componente Teaser para as variações discutidas no caso de uso.
+A imagem a seguir mostra a configuração [!UICONTROL Estilos] do componente Teaser para as variações discutidas no caso de uso.
 
-Os nomes do Grupo [!UICONTROL de] estilos, Layout e Exibição, por acaso, correspondem aos conceitos gerais de Estilos de exibição e Estilos de layout usados para categorizar conceitualmente tipos de estilos neste artigo.
+Os nomes [!UICONTROL Grupo de estilos], Layout e Exibição correspondem, por acaso, aos conceitos gerais de Estilos de exibição e Estilos de layout usados para categorizar conceitualmente tipos de estilos neste artigo.
 
-Os nomes do Grupo [!UICONTROL de] estilos e o número de Grupos [!UICONTROL de] estilos devem ser adaptados às convenções de estilização de componentes específicos e de casos de uso.
+Os nomes [!UICONTROL Grupo de Estilos] e o número de [!UICONTROL Grupos de Estilos] devem ser adaptados às convenções de estilização de componentes de caso de uso e de componente específico do projeto.
 
-Por exemplo, o nome do grupo **Exibir** estilo poderia ter sido chamado de **Cores**.
+Por exemplo, o nome do grupo de estilos **Display** poderia ter sido chamado de **Cores**.
 
 ![Exibir grupo de estilos](assets/style-config.png)
 
 ### Menu de seleção de estilo {#style-selection-menu}
 
-A imagem abaixo exibe o menu [!UICONTROL Estilo] com o qual os autores interagem para selecionar os estilos apropriados para o componente. Observe que os nomes [!UICONTROL de Style Grpi] , bem como os nomes de Estilo, estão expostos ao autor.
+A imagem abaixo exibe os autores do menu [!UICONTROL Estilo] com os quais interagem para selecionar os estilos apropriados para o componente. Observe que os nomes [!UICONTROL Style Grpi], bem como os nomes de Estilo, estão expostos ao autor.
 
 ![Menu suspenso Estilo](assets/style-menu.png)
 
-### Default style {#default-style}
+### Estilo padrão {#default-style}
 
 O estilo padrão é frequentemente o estilo mais usado do componente, e a visualização padrão e sem estilo do teaser quando adicionada a uma página.
 
-Dependendo da compatibilidade do estilo padrão, o CSS pode ser aplicado diretamente no `.cmp-teaser` (sem modificadores) ou em um `.cmp-teaser--default`.
+Dependendo da compatibilidade do estilo padrão, o CSS pode ser aplicado diretamente em `.cmp-teaser` (sem modificadores) ou em um `.cmp-teaser--default`.
 
-Se as regras de estilo padrão se aplicarem com mais frequência do que não a todas as variações, é melhor usar `.cmp-teaser` como as classes CSS do estilo padrão, já que todas as variações devem herdá-las implicitamente, supondo que as convenções semelhantes a BEM sejam seguidas. Caso contrário, elas devem ser aplicadas por meio do modificador padrão, como `.cmp-teaser--default`, que por sua vez precisa ser adicionado ao campo Classes [CSS padrão da configuração do estilo do](#component-styles-configuration) componente, caso contrário, essas regras de estilo terão de ser substituídas em cada variação.
+Se as regras de estilo padrão se aplicarem com mais frequência do que não a todas as variações, é melhor usar `.cmp-teaser` como as classes CSS do estilo padrão, já que todas as variações devem herdá-las implicitamente, supondo que as convenções semelhantes a BEM sejam seguidas. Caso contrário, eles devem ser aplicados por meio do modificador padrão, como `.cmp-teaser--default`, que por sua vez precisa ser adicionado ao campo [Classes CSS Padrão](#component-styles-configuration) da configuração de estilo do componente, caso contrário, essas regras de estilo terão de ser substituídas em cada variação.
 
-É possível atribuir um estilo &quot;nomeado&quot; como o estilo padrão, por exemplo, o estilo Herói `(.cmp-teaser--hero)` definido abaixo, no entanto, é mais claro implementar o estilo padrão em relação às implementações de classe `.cmp-teaser` ou `.cmp-teaser--default` CSS.
+É possível atribuir um estilo &quot;nomeado&quot; como o estilo padrão, por exemplo, o estilo Hero `(.cmp-teaser--hero)` definido abaixo, no entanto, é mais claro implementar o estilo padrão em relação às implementações de classe `.cmp-teaser` ou `.cmp-teaser--default` CSS.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Se as regras de estilo padrão se aplicarem com mais frequência do que não a t
 >
 >**Expor somente combinações de estilo que tenham um efeito**
 >
->Se um autor selecionar o estilo de exibição de **Verde** , nada acontecerá.
+>Se um autor selecionar o estilo de exibição de **Verde**, nada acontecerá.
 >
 >Nesse caso de uso, concederemos essa violação, pois todos os outros estilos de layout devem ser coloridos usando as cores da marca.
 >
@@ -111,13 +111,13 @@ Se as regras de estilo padrão se aplicarem com mais frequência do que não a t
    * Padrão
 * **Estilo de exibição**
    * Nenhum
-* **Classes** CSS efetivas: `.cmp-teaser--promo` ou `.cmp-teaser--default`
+* **Classes** CSS efetivas:  `.cmp-teaser--promo` ou  `.cmp-teaser--default`
 
-### Estilo de promoção {#promo-style}
+### Estilo promocional {#promo-style}
 
-O estilo **de layout** promocional é usado para promover conteúdo de alto valor no site e é apresentado horizontalmente para ocupar uma faixa de espaço na página da Web e deve ser compatível com estilo por cores de marca, com o estilo padrão de layout promocional usando texto preto.
+O **Estilo de layout promocional** é usado para promover conteúdo de alto valor no site e é apresentado horizontalmente para ocupar uma faixa de espaço na página da Web e deve ser compatível com estilo por cores de marca, com o estilo de layout promocional padrão usando texto preto.
 
-Para isso, um estilo **de** layout de **Promoção** e os estilos **de** exibição de **Verde** e **Amarelo** são configurados no Sistema de estilo AEM para o componente Teaser.
+Para isso, um **estilo de layout** de **Promo** e os **estilos de exibição** de **Verde** e **Amarelo** são configurados no Sistema de estilo AEM para o componente Teaser.
 
 #### Padrão de promoção
 
@@ -128,7 +128,7 @@ Para isso, um estilo **de** layout de **Promoção** e os estilos **de** exibiç
    * Classe CSS: `cmp-teaser--promo`
 * **Estilo de exibição**
    * Nenhum
-* **Classes** CSS efetivas: `.cmp-teaser--promo`
+* **Classes** CSS efetivas:  `.cmp-teaser--promo`
 
 #### Principal da Promo
 
@@ -140,7 +140,7 @@ Para isso, um estilo **de** layout de **Promoção** e os estilos **de** exibiç
 * **Estilo de exibição**
    * Nome do estilo: **Verde**
    * Classe CSS: `cmp-teaser--primary-color`
-* **Classes** CSS efetivas: `cmp-teaser--promo.cmp-teaser--primary-color`
+* **Classes** CSS efetivas:  `cmp-teaser--promo.cmp-teaser--primary-color`
 
 #### Promo secundário
 
@@ -152,17 +152,17 @@ Para isso, um estilo **de** layout de **Promoção** e os estilos **de** exibiç
 * **Estilo de exibição**
    * Nome do estilo: **Amarelo**
    * Classe CSS: `cmp-teaser--secondary-color`
-* **Classes** CSS efetivas: `cmp-teaser--promo.cmp-teaser--secondary-color`
+* **Classes** CSS efetivas:  `cmp-teaser--promo.cmp-teaser--secondary-color`
 
-### Estilo alinhado à direita promocional {#promo-r-align}
+### Estilo promocional alinhado à direita {#promo-r-align}
 
-O estilo de layout alinhado **** à direita promocional é uma variação do estilo promocional que gira o local da imagem e do texto (imagem à direita, texto à esquerda).
+O estilo de layout **Promo alinhado à direita** é uma variação do estilo promocional que gira o local da imagem e do texto (imagem à direita, texto à esquerda).
 
 O alinhamento direito, no núcleo, é um estilo de exibição; ele pode ser inserido no Sistema de estilo AEM como um estilo de exibição selecionado em conjunto com o estilo de layout Promoção. Isso viola a melhor prática de:
 
 **Expor somente combinações de estilo que tenham um efeito**
 
-..que já foi violado no estilo [](#default-style)Padrão.
+...que já foi violado no [Estilo padrão](#default-style).
 
 Como o alinhamento direito afeta apenas o estilo de layout Promoção, e não os outros 2 estilos de layout: padrão e principal, podemos criar um novo estilo de layout promocional (alinhado à direita) que inclui a classe CSS que alinha com o direito o conteúdo de estilos de layout promocional: `cmp -teaser--alternate`.
 
@@ -179,7 +179,7 @@ Observe que o nome da classe CSS, `cmp-teaser--alternate`, não precisa correspo
    * Classes em CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de exibição**
    * Nenhum
-* **Classes** CSS efetivas: `.cmp-teaser--promo.cmp-teaser--alternate`
+* **Classes** CSS efetivas:  `.cmp-teaser--promo.cmp-teaser--alternate`
 
 #### Principal alinhado à direita promocional
 
@@ -191,7 +191,7 @@ Observe que o nome da classe CSS, `cmp-teaser--alternate`, não precisa correspo
 * **Estilo de exibição**
    * Nome do estilo: **Verde**
    * Classe CSS: `cmp-teaser--primary-color`
-* **Classes** CSS efetivas: `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--primary-color`
+* **Classes** CSS efetivas:  `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--primary-color`
 
 #### Promo secundário alinhado à direita
 
@@ -203,9 +203,9 @@ Observe que o nome da classe CSS, `cmp-teaser--alternate`, não precisa correspo
 * **Estilo de exibição**
    * Nome do estilo: **Amarelo**
    * Classe CSS: `cmp-teaser--secondary-color`
-* **Classes** CSS efetivas: `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--secondary-color`
+* **Classes** CSS efetivas:  `.cmp-teaser--promo.cmp-teaser--alternate.cmp-teaser--secondary-color`
 
-### Estilo do herói {#hero-style}
+### Estilo principal {#hero-style}
 
 O estilo de layout Herdado exibe a imagem dos componentes como um plano de fundo com o título e o link sobrepostos. O estilo de layout Herói, como o estilo de layout Promoção, deve ser colorido com as cores da marca.
 
@@ -215,7 +215,7 @@ Por componente, o nome do estilo é mapeado para o conjunto único de classes CS
 
 Isso pode ser alcançado com o escopo das regras de CSS, no entanto, isso exige que os desenvolvedores de CSS entendam como essas permutações serão implementadas no AEM.
 
-CSS para colorir o plano de fundo do estilo de layout **Promover** com a cor principal (verde):
+CSS para colorir o plano de fundo do estilo de layout **Promote** com a cor primária (verde):
 
 ```css
 .cmp-teaser--promo.cmp-teaser--primary--color {
@@ -225,7 +225,7 @@ CSS para colorir o plano de fundo do estilo de layout **Promover** com a cor pri
 }
 ```
 
-CSS para colorir o texto do estilo de layout **Herói** com a cor principal (verde):
+CSS para colorir o texto do estilo de layout **Herói** com a cor primária (verde):
 
 ```css
 .cmp-teaser--hero.cmp-teaser--primary--color {
@@ -240,11 +240,11 @@ CSS para colorir o texto do estilo de layout **Herói** com a cor principal (ver
 ![Estilo Herdado](assets/hero.png)
 
 * **Estilo de layout**
-   * Nome do estilo: **Herói**
+   * Nome do estilo: **Hero**
    * Classe CSS: `cmp-teaser--hero`
 * **Estilo de exibição**
    * Nenhum
-* **Classes** CSS efetivas: `.cmp-teaser--hero`
+* **Classes** CSS efetivas:  `.cmp-teaser--hero`
 
 #### Principal Principal Principal
 
@@ -256,7 +256,7 @@ CSS para colorir o texto do estilo de layout **Herói** com a cor principal (ver
 * **Estilo de exibição**
    * Nome do estilo: **Verde**
    * Classe CSS: `cmp-teaser--primary-color`
-* **Classes** CSS efetivas: `cmp-teaser--hero.cmp-teaser--primary-color`
+* **Classes** CSS efetivas:  `cmp-teaser--hero.cmp-teaser--primary-color`
 
 #### Secundário Herdado
 
@@ -268,7 +268,7 @@ CSS para colorir o texto do estilo de layout **Herói** com a cor principal (ver
 * **Estilo de exibição**
    * Nome do estilo: **Amarelo**
    * Classe CSS: `cmp-teaser--secondary-color`
-* **Classes** CSS efetivas: `cmp-teaser--hero.cmp-teaser--secondary-color`
+* **Classes** CSS efetivas:  `cmp-teaser--hero.cmp-teaser--secondary-color`
 
 ## Recursos adicionais {#additional-resources}
 
