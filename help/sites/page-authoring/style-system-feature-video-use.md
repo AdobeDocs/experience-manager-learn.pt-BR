@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Uso do sistema de estilo {#using-the-style-system-with-aem-sites}
+# Usando o sistema de estilo {#using-the-style-system-with-aem-sites}
 
 O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento back-end, permitindo uma melhor reutilização de componentes AEM e uma criação de conteúdo mais versátil e eficiente. O Sistema de estilo, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferta recursos poderosos para compor experiências avançadas rapidamente.
 
@@ -28,7 +28,7 @@ O Adobe Experience Manager Style System permite variações visuais de component
 
 Este vídeo demonstra como o Sistema de estilo pode ser aproveitado para criar aparências visuais drasticamente diferentes para um único Componente, usando apenas o CSS.
 
-Os estilos mostrados são fornecidos pelo aplicativo [](https://github.com/adobe/aem-guides-wknd)WKND. Esses estilos são definidos como CSS e não exigem alterações na lógica de backend do componente, no script HTL ou no Modelo Sling.
+Os estilos mostrados são fornecidos pelo [aplicativo WKND](https://github.com/adobe/aem-guides-wknd). Esses estilos são definidos como CSS e não exigem alterações na lógica de backend do componente, no script HTL ou no Modelo Sling.
 
 ## Recursos adicionais {#additional-resources}
 
