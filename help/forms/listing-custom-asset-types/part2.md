@@ -76,7 +76,7 @@ O código a seguir lista os vários tipos de ativos usando o componente de pesqu
 >
 >Para lista do Forms adaptável neste modelo, crie um novo div e defina seu atributo de tipo de dados como &quot;guia&quot;. É possível copiar e colar o div cujo data-type=&quot;printForm e definir o tipo de dados div copiado recentemente como &quot;guide&quot;
 
-## Configurar Componente De Pesquisa E Lister {#configure-search-and-lister-component}
+## Configurar Componente de Pesquisa e Lister {#configure-search-and-lister-component}
 
 Depois de definir o modelo personalizado, agora temos que associar esse modelo personalizado ao componente &quot;Pesquisar e Lister&quot;. Aponte seu navegador [para este url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
@@ -112,6 +112,7 @@ Agora que você configurou seu Componente do Portal de Pesquisa e Lister, é hor
 
 >[!NOTE]
 >
->Se o portal estiver listando tipos de ativos personalizados em um servidor de publicação, certifique-se de conceder a permissão &quot;leitura&quot; para o usuário &quot;fd-service&quot; ao nó **/apps/fd/fp/extensions/querybuilder**
+>Se seu portal estiver listando tipos de ativos personalizados em um servidor de publicação, certifique-se de conceder permissão de &quot;leitura&quot; para o usuário &quot;fd-service&quot; ao nó **/apps/fd/fp/extensions/querybuilder**
 
-![tipos](assets/assettypeslistings.png)de ativos[Baixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém documentos mp4 e word de amostra e arquivos xdp que serão usados como tipos de ativos para a lista usando o componente de pesquisa e lister
+![](assets/assettypeslistings.png)
+[tipos de ativosBaixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém documentos mp4 e word de amostra e arquivos xdp que serão usados como tipos de ativos para a lista usando o componente de pesquisa e lister
