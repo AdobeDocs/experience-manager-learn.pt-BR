@@ -24,4 +24,4 @@ O vídeo explica as várias etapas necessárias para configurar um formulário a
 
 Os ativos relacionados a este vídeo podem ser baixados do link a seguir
 
-* [Alteração Do Formulário De Beneficiário ](assets/change-of-beneficiary-form.zip)
+* [Alteração Do Formulário De Beneficiário  ](assets/change-of-beneficiary-form.zip)
