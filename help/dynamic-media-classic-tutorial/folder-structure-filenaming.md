@@ -46,7 +46,7 @@ Para sua estratégia de pasta, considere o que faz sentido para sua organizaçã
 
 A maneira como você escolhe nomear seus arquivos é talvez a decisão mais importante que você tomará no início do Dynamic Media Classic. Isso ocorre porque todos os ativos no Dynamic Media Classic devem ter nomes exclusivos, independentemente de onde estejam armazenados na conta.
 
-Todos os URLs e transações no Dynamic Media Classic são direcionados por uma ID de ativo, que é um identificador exclusivo do ativo no banco de dados. Quando você carrega um arquivo, a ID do ativo é criada com o nome do arquivo e a remoção da extensão. Por exemplo, _896649.jpg_ obtém a _ID do ativo 896649_.
+Todos os URLs e transações no Dynamic Media Classic são direcionados por uma ID de ativo, que é um identificador exclusivo do ativo no banco de dados. Quando você carrega um arquivo, a ID do ativo é criada com o nome do arquivo e a remoção da extensão. Por exemplo, _896649.jpg_ obtém o Asset _ID 896649_.
 
 Regras referentes às IDs de ativos:
 
@@ -78,7 +78,7 @@ Este é um sistema muito simples, e bom se você tem necessidades modestas. No e
 | AA123 | Visualizações Alt | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | Visualizações coloridas | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |  | Amostras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Conjunto de imagens ou conjunto de amostras |  | AA123 ou AA123_SET | -- |
+|  | Conjunto de imagens ou conjunto de amostras |  | AA123 ou AA123_SET | — |
 
 Ao lidar com coleções definidas, como Conjuntos de imagens e Conjuntos de amostras, o próprio conjunto também deve ter um nome exclusivo. Portanto, nesse caso, o conjunto poderia receber o SKU base como seu nome, ou o SKU com uma extensão &quot;_SET&quot;.
 
