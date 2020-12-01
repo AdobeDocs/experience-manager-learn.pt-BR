@@ -41,10 +41,10 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 
 ### Uso da ferramenta Corte demarcado
 
-Você pode acessar a ferramenta Recortar no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar** . Você pode usar a ferramenta para cortar de duas formas:
+Você pode acessar a ferramenta Recortar no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar**. Você pode usar a ferramenta para cortar de duas formas:
 
-- O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como cortar [manualmente](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Aparar. Use essa opção para remover espaços em branco extras ao redor da imagem, calculando o número de pixels que não correspondem à imagem. Saiba como [cortar por aparar](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como [Recortar manualmente](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Aparar. Use essa opção para remover espaços em branco extras ao redor da imagem, calculando o número de pixels que não correspondem à imagem. Saiba como [Recortar ao aparar](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Corte manual_
 
@@ -64,19 +64,19 @@ A imagem à direita é muito mais destacada ao remover o espaço extra ao redor 
 
 >[!NOTE]
 >
->Aparar não cria transparência em torno da imagem. Para isso, seria necessário incorporar um caminho de recorte na imagem e usar a opção de upload **Criar máscara a partir do caminho** do clipe.
+>Aparar não cria transparência em torno da imagem. Para isso, seria necessário incorporar um caminho de recorte na imagem e usar a opção de carregamento **Criar máscara do caminho do clipe**.
 >
->Além disso, para restaurar uma imagem para seu estado original depois de cortá-la quando você tiver usado a opção **Salvar** , exiba a imagem na tela do Editor de corte e selecione o botão **Redefinir** .
+>Além disso, para restaurar uma imagem para seu estado original depois de cortá-la quando você tiver usado a opção **Salvar**, exiba a imagem na tela do Editor de corte e selecione o botão **Redefinir**.
 
 ### _Recortar no upload_
 
-Como mencionado anteriormente, você também pode optar por recortar as imagens à medida que as carrega. Para usar recorte de aparagem no upload, clique no botão Opções **de** trabalho e, em Opções de corte, escolha **Aparar**.
+Como mencionado anteriormente, você também pode optar por recortar as imagens à medida que as carrega. Para usar recorte de aparagem no upload, clique no botão **Opções de trabalho** e, em Opções de corte, escolha **Aparar**.
 
 O Dynamic Media Classic lembrará essa opção para o próximo upload. Embora você queira que ele recorte imagens para este upload, talvez você não queira que elas sejam cortadas para cada upload. Outra opção seria definir um trabalho de upload FTP programado especial e colocar as opções de recorte lá. Dessa forma, você só executaria o trabalho quando precisasse cortar suas imagens.
 
 >[!IMPORTANT]
 >
->Se você definir um recorte para o upload, o Dynamic Media Classic colocará um cookie para lembrar essa configuração da próxima vez. Como prática recomendada, clique no botão **Redefinir para padrões** de Empresa antes do próximo upload para eliminar quaisquer opções de corte restantes do último upload; caso contrário, você pode recortar acidentalmente o próximo lote de imagens.
+>Se você definir um recorte para o upload, o Dynamic Media Classic colocará um cookie para lembrar essa configuração da próxima vez. Como prática recomendada, clique no botão **Redefinir para padrões de Empresa** antes do próximo upload para limpar quaisquer opções de recorte restantes do último upload; caso contrário, você pode recortar acidentalmente o próximo lote de imagens.
 
 ### Recortar por URL
 
@@ -84,7 +84,8 @@ Embora não seja óbvio no Dynamic Media Classic, também é possível cortar ap
 
 Sempre que usar a ferramenta Recortar, você verá valores de URL no campo na parte inferior. Você pode usar esses valores e aplicá-los diretamente a uma imagem como modificadores de URL.
 
-![modificadores de comando image](assets/crop-adjusted-zoom-targets/cropping-by-url.png)_Crop na parte inferior do Editor de corte_
+![modificadores de comando ](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+_imageCrop na parte inferior do Editor de corte_
 
 ![imagem](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
@@ -94,7 +95,8 @@ Como o tamanho tem de ser calculado com base em imagem por imagem quando você u
 
 As predefinições de imagens têm um campo onde você pode adicionar comandos adicionais de disponibilização de imagens. Para adicionar o mesmo recorte acima à predefinição de imagem, edite a predefinição e cole ou digite os valores no campo Modificadores de URL e salve e publique.
 
-![imagem](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)_Adicione comandos de corte (ou qualquer comando) aos Modificadores de URL da Predefinição de imagem._
+![](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+_imageAdicione comandos de corte (ou qualquer comando) aos Modificadores de URL da Predefinição de imagem._
 
 O corte fará parte dessa Predefinição de imagem e será aplicado automaticamente toda vez que for usado. Claro, esse método depende de todas as imagens que precisam da mesma quantidade de colheita. Se suas imagens não forem todas filmadas da mesma maneira, este método não funcionará para você.
 
@@ -102,7 +104,7 @@ O corte fará parte dessa Predefinição de imagem e será aplicado automaticame
 
 Ao usar a ferramenta Recortar, você tem a opção de **Salvar como Visualização adicional de Principal**. Quando salvo, isso cria um novo tipo de ativo do Dynamic Media Classic. uma imagem ajustada. Uma imagem ajustada, também chamada de derivada, é uma imagem virtual. Na verdade não é uma imagem. é uma referência de banco de dados (como um alias ou atalho) para a imagem principal física.
 
-### A imagem real ficará em pé?`?`
+### A imagem real está posicionada`?`
 
 Você pode dizer qual é a principal, e qual é a imagem ajustada?
 
@@ -116,9 +118,10 @@ Uma Imagem Ajustada não usa espaço em disco, pois só existe como um item de l
 
 Geralmente, é possível criar imagens ajustadas com a ferramenta Recortar; no entanto, também podem ser criados com outros editores de imagem. as ferramentas Ajustar e aumentar a nitidez.
 
-Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, é possível visualização de Imagens ajustadas associadas a uma imagem principal na guia **Construir e derivados** .
+Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, é possível visualização de Imagens ajustadas associadas a uma imagem principal na guia **Criar e derivados**.
 
-![visualizações de imagem](assets/crop-adjusted-zoom-targets/derivatives.jpg)_ajustadas para a imagem principal ASIAN_BR_MAIN_
+![visualizações ](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+_imageAjustadas para imagem principal ASIAN_BR_MAIN_
 
 ## Públicos alvos de zoom
 
@@ -132,7 +135,7 @@ O processo é muito fácil. clique no recurso, dê um nome descritivo e salve-o.
 
 Outro fator para decidir se deseja usar Públicos alvos de zoom é a sua escolha do visualizador. Nem todos os tipos de visualizador podem exibir Públicos alvos de zoom (por exemplo, o visualizador de fallout não oferece suporte para eles).
 
-Saiba como [Criar Públicos alvos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets)de zoom.
+Saiba como [Criar Públicos alvos de zoom](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![imagem](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
@@ -140,12 +143,12 @@ Saiba como [Criar Públicos alvos](https://docs.adobe.com/content/help/en/dynami
 
 Este é o fluxo de trabalho para criar públicos alvos no Dynamic Media Classic.
 
-1. Navegue até a imagem, clique no botão **Editar** e escolha **Zoom em Públicos alvos**.
+1. Navegue até a imagem, clique no botão **Editar** e escolha **Públicos alvos de zoom**.
 2. O Editor de Públicos alvos de zoom será carregado. Você verá sua imagem no meio, alguns botões no topo e um painel público alvo vazio à direita. Na parte inferior esquerda, você verá uma predefinição do visualizador selecionada. O padrão é &quot;Zoom1-Guiado&quot;.
 3. Mova a caixa vermelha com o mouse e clique para criar um novo público alvo.
 
    - A caixa vermelha é a área do público alvo. Quando um usuário clica nesse público alvo, o zoom é aplicado na área dentro da caixa.
-   - O tamanho do público alvo é determinado pelo tamanho da visualização dentro da predefinição do visualizador. Isso determina o tamanho da imagem de zoom principal. Consulte _Configuração do tamanho_ da Visualização, abaixo.
+   - O tamanho do público alvo é determinado pelo tamanho da visualização dentro da predefinição do visualizador. Isso determina o tamanho da imagem de zoom principal. Consulte _Definição do tamanho da Visualização_, abaixo.
 
 4. Você verá o público alvo que acabou de criar ficar azul, e à direita você verá uma versão em miniatura desse público alvo, bem como o nome padrão &quot;público alvo 0&quot;.
 5. Para renomear seu público alvo, clique em sua miniatura, digite um novo **Nome** e clique em **Enter** ou **Tab** — se você clicar fora, seu nome não será salvo.
@@ -156,9 +159,9 @@ Este é o fluxo de trabalho para criar públicos alvos no Dynamic Media Classic.
 
       ![imagem](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Além disso, se for necessário remover um público alvo, selecione-o clicando em sua miniatura e pressione o botão **Excluir Público alvo** ou pressione a tecla DELETE no teclado.
+7. Além disso, se precisar remover um público alvo, selecione-o clicando em sua miniatura e pressione o botão **Excluir Público alvo** ou pressione a tecla DELETE no teclado.
 8. Continue clicando para adicionar novos públicos alvos, renomeando e/ou redimensionando após a adição.
-9. Quando terminar, clique no botão **Salvar** e, em seguida, em **Pré-visualização**.
+9. Quando terminar, clique no botão **Salvar** e, em seguida, **Pré-visualização**.
 
 ### Configuração do tamanho da Visualização na predefinição do visualizador de zoom
 
@@ -178,7 +181,7 @@ Você pode ver que a predefinição integrada tem um tamanho de 900 x 550, o que
 
 Para definir o tamanho da visualização, crie ou edite uma predefinição do visualizador compatível com Públicos alvos de zoom.
 
-1. Na predefinição do visualizador, vá para a opção Configurações **de** zoom.
+1. Na predefinição do visualizador, vá para a opção **Configurações de zoom**.
 2. Defina Largura e Altura.
 3. Salve a predefinição e feche-a. Se você quiser usar essa predefinição em seu site ativo, será necessário publicar também mais tarde.
 4. Vá para a ferramenta Público alvo de zoom e escolha a predefinição editada na parte inferior esquerda. Você verá imediatamente o novo tamanho da visualização refletido em seus públicos alvos.
