@@ -40,14 +40,14 @@ ht-degree: 2%
 >* Microsoft Visual C++ 2013 redistribuível (a partir de 6.5)
 
 
-Embora seja recomendável seguir a documentação [](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) oficial para instalar o AEM Forms. As etapas a seguir podem ser seguidas para instalar e configurar o AEM Forms no ambiente Windows:
+Embora seja recomendável seguir a [documentação oficial](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) para instalar o AEM Forms. As etapas a seguir podem ser seguidas para instalar e configurar o AEM Forms no ambiente Windows:
 
 * Verifique se o JDK apropriado está instalado
    * AEM 6.2 é necessário: Oracle SE 8 JDK 1.8.x (64 bits)
 * 
    * AEM 6.3 e AEM 6.4 é necessário: Oracle SE 8 JDK 1.8.x (64 bits)
 * AEM 6.5 você precisa de JDK 8 ou JDK 11
-* [Os requisitos](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) oficiais do JDK estão listados aqui
+* [Os ](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) requisitos oficiais do JDK estão listados aqui
 * Verifique se o JAVA_HOME está definido para apontar para o JDK que você instalou.
    * Para criar a variável JAVA_HOME no Windows, siga as etapas abaixo:
       * Clique com o botão direito do mouse em Meu computador e selecione Propriedades
@@ -78,7 +78,7 @@ Embora seja recomendável seguir a documentação [](https://helpx.adobe.com/exp
 
    * Você precisará do Adobe Id para fazer logon no compartilhamento de pacote
    * Procurar o pacote AEM Forms Add on apropriado para a sua versão do AEM Forms e do sistema operacional
-   * Ou [você pode baixar o pacote de addon de formulários apropriado](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
+   * Ou [você pode baixar os formulários apropriados e adicionar package](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
    * Após instalar o pacote de adição, siga as etapas a seguir
 
       * **Verifique se todos os pacotes estão no estado ativo. (Exceto para o pacote Assinaturas do AEMFD).**
@@ -86,12 +86,12 @@ Embora seja recomendável seguir a documentação [](https://helpx.adobe.com/exp
    * **Quando todos os pacotes estiverem ativos (exceto o pacote Assinaturas do AEMFD), reinicie o sistema para concluir a instalação do AEM Forms**
 
 
-* Adicione `sun.util.calendar` o pacote à lista de permissões:
+* Adicione o pacote `sun.util.calendar` à lista de permissões:
 
-   1. Abra o console da Web do Felix na janela [do navegador](http://localhost:4502/system/console/configMgr)
+   1. Abra o console da Web do Felix na [janela do navegador](http://localhost:4502/system/console/configMgr)
    2. Pesquise e abra a Configuração do Firewall de desserialização: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
    3. Adicionar `sun.util.calendar` como uma nova entrada em `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
    4. Salve as alterações.
 
 Parabéns!!! Agora você instalou e configurou o AEM Forms em seu sistema.
-Dependendo das suas necessidades, é possível configurar Extensões [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) Reader ou [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) no servidor
+Dependendo das suas necessidades, você pode configurar [Extensões de Reader](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) ou [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) no seu servidor
