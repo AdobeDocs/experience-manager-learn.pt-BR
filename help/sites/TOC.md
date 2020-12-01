@@ -69,7 +69,7 @@ ht-degree: 17%
    + [Olá tutorial do mundo](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Introdução ao AEM SPA Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Introdução ao AEM Editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-+ Multi Site Management {#multi-site-management}
++ Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
    + [Criar uma Live Copy](./multi-site-management/create-live-copy.md)
@@ -93,10 +93,10 @@ ht-degree: 17%
    + Experience Platform Launch {#experience-platform-launch}
       + [Visão geral](integrations/experience-platform-launch/overview.md)
       + [Criar uma propriedade de inicialização](integrations/experience-platform-launch/create-launch-property.md)
-      + [Conectar AEM com o Launch usando E/S do Adobe](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+      + [Conectar AEM com o Launch usando o Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Criar um Cloud Service de inicialização](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Depuração de uma implementação do Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Camada de dados do cliente Adobe {#adobe-client-data-layer}
+   + Camada de Dados do Cliente Adobe {#adobe-client-data-layer}
       + [Usando a camada de dados do cliente Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
    + Análise {#analytics}
       + [Coletar dados de página com o Adobe Analytics](integrations/analytics/collect-data-analytics.md)
