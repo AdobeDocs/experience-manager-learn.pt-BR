@@ -42,7 +42,7 @@ Neste guia, discutiremos os seguintes recursos principais do Dynamic Media Class
 - **Vídeo.** Carregue vídeos finais, publique-os e baixe-os progressivamente em visualizadores de vídeo configuráveis.
 - **Imagem inteligente.** A tecnologia que aproveita os recursos do Adobe Sensei AI e funciona com as &quot;predefinições de imagens&quot; existentes para melhorar o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem, com base nos recursos do navegador do cliente.
 
-Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Para descobrir recursos adicionais da solução, visite a [Documentation for Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
 
 ## A interface do usuário do Dynamic Media Classic (UI)
 
@@ -64,12 +64,12 @@ _Interface clássica do Dynamic Media_
 
 >[!IMPORTANT]
 >
->Ao lado de cada ID de ativo está o switch **Mark for Publish (Marcar para publicação** ). Quando a alternância está ativada (verde), isso indica que o ativo está marcado para publicação.
+>Além de cada ID de ativo, há a opção **Marcar para Publicar**. Quando a alternância está ativada (verde), isso indica que o ativo está marcado para publicação.
 
 ![imagem](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Marque a caixa de seleção **Publicar após upload** na caixa de diálogo Carregar para publicar automaticamente os ativos após o upload.
+>Marque a caixa de seleção **Publicar depois de carregar** na caixa de diálogo Carregar para publicar automaticamente os ativos após o upload.
 
-Saiba mais sobre como [navegar na interface do usuário do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Saiba mais sobre [Navegar na interface do usuário do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
