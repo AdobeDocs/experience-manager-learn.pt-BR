@@ -26,7 +26,7 @@ Neste artigo, olhamos para o email como um mecanismo de delivery para o document
 
 Vamos ver o seguinte trecho de código. Esse código faz parte do GET.jsp, que é acionado quando o usuário clica no link no email para visualização do documento do canal da Web. O usuário conectado usa o Jackrabbit UserManager. Quando obtemos o usuário conectado, obtemos o valor da propriedade accountNumber associada ao perfil do usuário.
 
-Em seguida, associamos o valor accountNumber a uma chave chamada account number no mapa. O número da **conta** principal é definido no formato modal de dados como um Atributo de solicitação. O valor desse atributo é passado como um parâmetro de entrada para o método de serviço de leitura do Form Data Modal.
+Em seguida, associamos o valor accountNumber a uma chave chamada account number no mapa. A tecla **accountnumber** está definida no formato modal de dados como um Atributo de solicitação. O valor desse atributo é passado como um parâmetro de entrada para o método de serviço de leitura do Form Data Modal.
 
 Linha 7: Estamos enviando a solicitação recebida para outro servlet, com base no tipo de recurso identificado pelo url do Documento do Interative Communication. A resposta retornada por este segundo servlet está incluída na resposta do primeiro servlet.
 
