@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Usando cópia de idioma {#using-language-copy}
+# Usando a Cópia de Idioma {#using-language-copy}
 
 Com AEM 6.3 do Assistente para Criar Cópia de Idioma, os usuários podem criar uma cópia de idioma a partir de um idioma principal sem precisar criar uma página raiz.
 
