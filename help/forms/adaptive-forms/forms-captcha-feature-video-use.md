@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# Uso de CAPTCHAs com AEM Forms adaptável{#using-captchas-with-aem-adaptive-forms}
+# Uso de CAPTCHAs com AEM Forms{#using-captchas-with-aem-adaptive-forms} adaptável
 
 Adicionar e usar um CAPTCHA com AEM Forms adaptável.
 
-Visite a página de exemplos [da](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ Visite a página de exemplos [da](https://forms.enablementadobe.com/content/samp
 >
 >Configurar reCaptach na instância do autor
 >
->abrir o console [da](http://localhost:4502/system/console/bundles) Web felix na instância do autor
+>abra o felix [console da Web](http://localhost:4502/system/console/bundles) na instância do autor
 >
 >pesquisar por um pacote com.adobe.granite.crypto.file
 >
@@ -51,7 +51,7 @@ Visite a página de exemplos [da](https://forms.enablementadobe.com/content/samp
 >* &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * Copie os arquivos HMAC e principais
 
-Abra o console [da Web](http://localhost:4502/system/console/bundles) felix na sua instância de publicação. Procure por um pacote com.adobe.granite.crypto.file. Observe a ID do pacote
+Abra o [console da Web felix](http://localhost:4502/system/console/bundles) em sua instância de publicação. Procure por um pacote com.adobe.granite.crypto.file. Observe a ID do pacote
 Navegue até a ID do pacote no sistema de arquivos da sua instância de publicação
 * &lt;publish-aem-install-dir>/crx-quickstart/launch/felix/bundle20/data
 * exclua o HMAC existente e os arquivos principais.
