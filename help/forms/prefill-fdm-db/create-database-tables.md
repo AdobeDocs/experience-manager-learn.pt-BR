@@ -22,13 +22,13 @@ ht-degree: 0%
 
 O modelo de dados de formulário pode ser baseado em fontes RDBMS, RESTfull, SOAP ou OData. O foco deste curso é o preenchimento prévio do formulário adaptável usando o modelo de dados de formulário respaldado pela fonte de dados RDBMS. Para a finalidade deste tutorial, foi usado o banco de dados MYSQL. Criamos as duas tabelas a seguir para demonstrar o caso de uso
 
-* **nova** tabela - Esta tabela armazena as informações novas
+* **** negrito - Esta tabela armazena as informações novas
 
    ![newhire](assets/newhire-table.png)
 
 
-* **quadro de beneficiários** - Esta reserva novos beneficiários
+* **** Beneficiários - Este artigo armazena os novos beneficiários
 
    ![beneficiários](assets/beneficiaries-table.png)
 
-Você pode importar o arquivo [](assets/db-schema.sql) sql usando a bancada MySQL para criar tabelas com alguns dados de amostra.
+Você pode importar o [arquivo sql](assets/db-schema.sql) usando a bancada MySQL para criar tabelas com alguns dados de amostra.
