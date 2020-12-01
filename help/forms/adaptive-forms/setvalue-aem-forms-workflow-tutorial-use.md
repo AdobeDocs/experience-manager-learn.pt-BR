@@ -44,15 +44,15 @@ Para implantar os ativos no sistema local, siga as etapas abaixo:
 
 * [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)de amostras. Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados xml enviados
+* [Implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) de amostras. Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados xml enviados
 
 * [Baixe e extraia o conteúdo do arquivo zip](assets/setvalueassets.zip)
-* Aponte seu navegador para o gerenciador de [pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Aponte seu navegador para [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale o setValueWorkflow.zip. Este tem o modelo de fluxo de trabalho de exemplo.
-* Aponte seu navegador para o [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Aponte seu navegador para [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Carregar TimeOfRequestForm.zip
-* Abrir o formulário [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Abra o [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Preencha os 3 campos obrigatórios e envie
 * Faça logon como &quot;admin&quot; no AEM (caso ainda não tenha feito isso)
 * Ir para [&quot;Caixa de entrada AEM&quot;](http://localhost:4502/aem/inbox)
