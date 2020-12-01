@@ -22,7 +22,7 @@ ht-degree: 4%
 
 # Usar o gerenciamento de vários sites {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Visão geral] da Live Copy e Gerenciador [!UICONTROL de configuração do] Blueprint são interfaces do autor de AEM para trabalhar com o recurso Multi Site Manager da Adobe Experience Manager Sites.
+[!UICONTROL A ] visão geral do Live Copy e o  [!UICONTROL Gerenciador de configuração do Blueprint ] são interfaces do autor de AEM para trabalhar com o recurso Multi Site Manager da Adobe Experience Manager Sites.
 
 ## Visão geral da Live Copy {#live-copy-overview}
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 *A visão geral do Live Copy é uma interface de interface de usuário de toque usada para gerenciar cópias online e seus respectivos blueprints. Este recurso, introduzido no AEM 6.3, substitui o Classic UI Blueprint Control Center.*
 
-## Gerenciador de configuração do Blueprint - IU de toque {#blueprint-config-mgr}
+## Gerenciador de configuração do Blueprint - Interface do usuário de toque {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
 
