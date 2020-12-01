@@ -19,7 +19,7 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
-## Entendendo o aumento da pesquisa no AEM Assets{#understanding-search-boosting-in-aem-assets}
+## Entendendo o incentivo à pesquisa no AEM Assets{#understanding-search-boosting-in-aem-assets}
 
 Uma análise aprofundada da otimização da pesquisa do AEM Assets e como ela funciona no contexto mais amplo da AEM.
 
