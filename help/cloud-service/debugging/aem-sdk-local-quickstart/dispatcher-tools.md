@@ -28,9 +28,9 @@ A depuração dos registros e do conteúdo do cache das Ferramentas do Dispatche
 
 ## Logs de ferramentas do Dispatcher
 
-Os registros das Ferramentas do Dispatcher estão disponíveis por meio do comando `stdout` ou do `bin/docker_run` comando, ou com mais detalhes, no container Docker em `/etc/https/logs`.
+Os registros das Ferramentas do Dispatcher estão disponíveis por meio do comando `stdout` ou `bin/docker_run`, ou com mais detalhes, disponíveis no container Docker em `/etc/https/logs`.
 
-Consulte [Logs](./logs.md#dispatcher-logs) do Dispatcher para obter instruções sobre como acessar diretamente os logs de container do Dispatcher Tools.
+Consulte [Registros do Dispatcher](./logs.md#dispatcher-logs) para obter instruções sobre como acessar diretamente os logs de container do Dispatcher Tools.
 
 ## Cache de ferramentas do Dispatcher
 
