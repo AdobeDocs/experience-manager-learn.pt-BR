@@ -26,7 +26,7 @@ Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de
 
 * Faça uma chamada de POST para um servlet. Este servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
 
-* Quando quiser preencher o Formulário adaptável com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute** .
+* Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute**.
 
 ## Demonstração do caso de uso
 
