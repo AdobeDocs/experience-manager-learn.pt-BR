@@ -29,7 +29,7 @@ Para que esse caso de uso funcione no seu sistema, siga as seguintes instruçõe
 
 ## Criar banco de dados
 
-Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Será necessário criar o schema do [banco de dados importando o arquivo](assets/data-base-schema.sql) do schema para a bancada MySQL.
+Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Será necessário criar o schema de banco de dados [importando o arquivo de schema](assets/data-base-schema.sql) para a bancada do MySQL.
 
 ## Criar fonte de dados
 
@@ -37,33 +37,35 @@ Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário a
 
 ## Criar modelo de dados do formulário
 
-O Modelo de Dados de Formulário precisa ser criado com base nessa fonte de dados chamada **StoreAndRetrieveAfData**. Este modelo de dados de formulário é usado para buscar o número do telefone celular associado à ID do aplicativo. O modelo de dados de formulário pode ser [baixado aqui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+O Modelo de Dados de Formulário precisa ser criado com base nessa fonte de dados chamada **StoreAndRetrieveAfData**. Este modelo de dados de formulário é usado para buscar o número do telefone celular associado à ID do aplicativo. O modelo de dados de formulário pode ser [baixado daqui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Criar conta de desenvolvedor com anexo
 
-Crie uma conta de desenvolvedor com o [Nexmo](https://dashboard.nexmo.com/) para enviar e verificar códigos OTP. Anote a chave da API e a chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e são incluídos com os ativos mencionados na etapa anterior.
+Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para enviar e verificar códigos OTP. Anote a chave da API e a chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e são incluídos com os ativos mencionados na etapa anterior.
 
 ## Implantar os seguintes pacotes OSGi
 
-Implante o pacote que tem o [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)Implante o pacote [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Implante o pacote que tem o código [para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Implante o pacote [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Implantar a biblioteca do cliente
 
-A amostra usa 2 bibliotecas de clientes. Importe essas bibliotecas [de](assets/client-libraries.zip) clientes para o AEM.
+A amostra usa 2 bibliotecas de clientes. Importe essas [bibliotecas do cliente](assets/client-libraries.zip) para AEM.
 
 ## Importar o modelo de formulário adaptativo personalizado
 
-Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importar o modelo [personalizado para AEM](assets/custom-template-with-page-component.zip)
+Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importe o modelo personalizado [para AEM](assets/custom-template-with-page-component.zip)
 
 ## Importar os formulários adaptativos de amostra
 
-Os 2 formulários que compõem essa amostra precisam ser importados para AEM. Os formulários de amostra podem ser [baixados aqui](assets/sample-forms.zip)
+Os 2 formulários que compõem essa amostra precisam ser importados para AEM. Os formulários de amostra podem ser [baixados daqui](assets/sample-forms.zip)
 
-Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Especifique a chave da API e os valores do segredo da API nos campos apropriados no formulário adaptável.
+Abra o [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique a chave da API e os valores do segredo da API nos campos apropriados no formulário adaptável.
 
 ## Teste a solução
 
-Pré-visualização [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)Insira seu número de celular incluindo o código do país, preencha os detalhes do usuário e adicione alguns anexos. Clique no botão &quot;Salvar e sair&quot; para salvar o formulário adaptável e seus anexos
+Pré-visualização de [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Insira seu número de celular, incluindo o código do país, preencha os detalhes do usuário e adicione alguns anexos. Clique no botão &quot;Salvar e sair&quot; para salvar o formulário adaptável e seus anexos
 
 
 ## Demonstração do caso de uso
