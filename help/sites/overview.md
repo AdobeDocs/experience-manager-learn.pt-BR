@@ -15,15 +15,15 @@ ht-degree: 21%
 
 # Visão geral {#overview}
 
-Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiências. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e recursos do AEM Sites.
+Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e recursos do AEM Sites.
 
 ## Novidades
 
-* **[Introdução ao AEM SPA Editor e Reagir](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (Tutorial)**
+* **[Introdução ao AEM SPA Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)  (Tutorial)**
 
    *Um guia de introdução para desenvolvedores que integram aplicativos de página única (SPA) com AEM usando React*
 
-* **[Introdução ao AEM Editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (Tutorial)**
+* **[Introdução ao AEM Editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)  (Tutorial)**
 
    *Um guia de introdução para desenvolvedores que integram aplicativos de página única (SPA) com AEM usando o Angular*
 
