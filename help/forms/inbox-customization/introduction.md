@@ -19,7 +19,8 @@ ht-degree: 3%
 # Caixa de entrada AEM
 
 AEM Caixa de entrada consolida notificações e tarefas de vários componentes AEM, incluindo workflows Forms. Quando um fluxo de trabalho de formulários contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário.
-A interface do usuário Caixa de entrada fornece visualizações de calendário e listas para tarefas de visualização. Você também pode definir as configurações de visualização. É possível filtrar tarefas com base em vários parâmetrosVocê pode personalizar uma Caixa de entrada de Experience Manager para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho
+A interface do usuário Caixa de entrada fornece visualizações de calendário e listas para tarefas de visualização. Você também pode definir as configurações de visualização. Você pode filtrar tarefas com base em vários parâmetros
+Você pode personalizar uma Caixa de entrada de Experience Manager para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho
 
 
 >[!NOTE]
@@ -28,7 +29,8 @@ A interface do usuário Caixa de entrada fornece visualizações de calendário 
 
 ## Personalização de colunas
 
-[Iniciar AEM caixa de entrada](http://localhost:4502/aem/inbox)Abra o Admin Control clicando no ícone de Visualização _da_ Lista e selecionando _Admin Control_ como mostrado na captura de tela abaixo
+[Iniciar AEM ](http://localhost:4502/aem/inbox)
+caixa de entradaAbra o Admin Control clicando no ícone  _Lista_ Viewicon e selecionando  _Admin_ Controles mostrados na captura de tela abaixo
 
 ![controle admin](assets/open-customization.png)
 
