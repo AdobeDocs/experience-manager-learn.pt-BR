@@ -1,16 +1,16 @@
 ---
-title: Introdução à AEM sem cabeça
-description: Um tutorial completo que ilustra como criar e expor conteúdo usando AEM sem cabeçalho.
+title: Introdução ao AEM Headless
+description: Um tutorial completo que ilustra como criar e expor conteúdo usando o AEM Headless.
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Introdução à AEM sem cabeça
+# Introdução ao AEM Headless
 
 Um tutorial completo que ilustra como criar e expor conteúdo usando AEM e consumido por um aplicativo móvel nativo, em um cenário de CMS sem cabeçalho.
 
@@ -28,6 +28,6 @@ Este tutorial abordará os seguintes tópicos:
 
 ## Projeto GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis nos Guias [AEM - Projeto](https://github.com/adobe/aem-guides-wknd-mobile)WKND Mobile GitHub.
+O código-fonte e os pacotes de conteúdo estão disponíveis nos [AEM Guias - Projeto GitHub do WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um problema com o [GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
