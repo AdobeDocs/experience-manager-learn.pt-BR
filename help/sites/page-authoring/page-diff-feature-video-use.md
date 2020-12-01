@@ -21,11 +21,11 @@ ht-degree: 1%
 ---
 
 
-# Uso do recurso Diferença de página {#using-page-difference-with-aem-sites}
+# Usando o recurso Diferença de página {#using-page-difference-with-aem-sites}
 
 Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
 
-## Comparação de versões de página {#comparing-page-versions}
+## Comparando versões de página {#comparing-page-versions}
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 * **Vermelho**: Componente removido
 * **Azul**: Componente modificado
 
-## Comparação de páginas de inicialização {#comparing-launch-pages}
+## Comparar páginas de inicialização {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
 
