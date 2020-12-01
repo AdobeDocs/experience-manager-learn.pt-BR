@@ -50,7 +50,7 @@ Faça logon no AEM Forms.
 * Certifique-se de salvar suas alterações.
    ![fdm](assets/requestattribute.gif)
 
-## Testar Delivery de e-mail do Documento de Canal da Web {#test-email-delivery-of-web-channel-document}
+## Testar Delivery de e-mail do Documento Canal da Web {#test-email-delivery-of-web-channel-document}
 
 * [Instale os ativos de amostra usando o gerenciador de pacotes](assets/webchanneldelivery.zip)
 * [Logon no crx](http://localhost:4502/crx/de/index.jsp#)
@@ -71,4 +71,4 @@ Faça logon no AEM Forms.
 
 >[!NOTE]
 >
->Consulte o arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
+>Dê uma olhada no arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
