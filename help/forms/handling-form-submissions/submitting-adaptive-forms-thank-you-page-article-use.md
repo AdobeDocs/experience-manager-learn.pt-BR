@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Página Enviar Para Agradecimentos {#submitting-to-thank-you-page}
+# Enviando para a página de agradecimento {#submitting-to-thank-you-page}
 
 A opção Enviar para ponto de extremidade REST transmite os dados preenchidos no formulário para uma página de confirmação configurada como parte da solicitação de GET HTTP. É possível adicionar o nome dos campos a serem solicitados. O formato da solicitação é:
 
@@ -39,8 +39,8 @@ Também é possível enviar para o terminal externo por POST. Para fazer isso, b
 
 Para testar esse recurso em seu servidor, siga as instruções mencionadas abaixo:
 
-* Importe o arquivo de [ativos associado a este artigo para AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
-* Aponte seu navegador para o formulário de solicitação de [tempo limite](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importe o arquivo [assets associado a este artigo para AEM usando o gerenciador de pacote](assets/submittingtorestendpoint.zip)
+* Aponte seu navegador para o [Formulário de solicitação de tempo limite](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha o campo obrigatório e envie o formulário
 * Você deve obter a página de agradecimento com suas informações preenchidas na página
 
