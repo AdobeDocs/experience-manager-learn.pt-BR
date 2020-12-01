@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# Personalização de ícones de componentes {#developing-component-icons-in-aem-sites}
+# Personalizar ícones de componentes {#developing-component-icons-in-aem-sites}
 
 Os ícones de componentes permitem que os autores identifiquem rapidamente um componente com ícones ou abreviações significativas. Os autores agora podem encontrar os Componentes necessários para criar suas experiências na Web mais rapidamente do que nunca.
 
@@ -36,9 +36,9 @@ O navegador Componente agora é exibido em um tema cinza consistente, exibindo:
 
 ### Abreviações {#abbreviations}
 
-Por padrão, os primeiros 2 caracteres do título do componente (**[cq:Component]@jcr:title**) são usados como abreviação. Por exemplo, se a Lista **[cq:Component]@jcr:title=Article** a abreviação seria exibida como &quot;**Ar**&quot;.
+Por padrão, os primeiros 2 caracteres do título do componente (**[cq:Component]@jcr:title**) são usados como abreviação. Por exemplo, se **[cq:Component]@jcr:title=Article Lista** a abreviação exibiria como &quot;**Ar**&quot;.
 
-A abreviação pode ser personalizada por meio da propriedade **[cq:Component]@abbreviation** . Embora esse valor possa aceitar mais de 2 caracteres, é recomendável limitar a abreviação a 2 caracteres para evitar qualquer perturbação visual.
+A abreviação pode ser personalizada por meio da propriedade **[cq:Component]@abbreviation**. Embora esse valor possa aceitar mais de 2 caracteres, é recomendável limitar a abreviação a 2 caracteres para evitar qualquer perturbação visual.
 
 ```plain
 /apps/.../components/content/my-component
@@ -46,9 +46,9 @@ A abreviação pode ser personalizada por meio da propriedade **[cq:Component]@a
   - abbreviation = "AL"
 ```
 
-### Ícones CoralUI {#coralui-icons}
+### Ícones de CoralUI {#coralui-icons}
 
-Os ícones CoralUI, fornecidos por AEM, podem ser usados para ícones de componentes. Para configurar um ícone CoralUI, defina uma propriedade **[cq:Component]@cq:icon** para o valor do atributo de ícone HTML do ícone CoralUI desejado (enumerado na documentação [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)CoralUI).
+Os ícones CoralUI, fornecidos por AEM, podem ser usados para ícones de componentes. Para configurar um ícone CoralUI, defina uma propriedade **[cq:Component]@cq:icon** para o valor de atributo de ícone HTML do ícone CoralUI desejado (enumerado na documentação [CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)).
 
 ```plain
 /apps/.../components/content/my-component
@@ -62,7 +62,7 @@ Imagens PNG podem ser usadas para ícones de componentes. Para configurar uma im
 
 O PNG deve ter um plano de fundo transparente ou uma cor de plano de fundo definida como **#707070**.
 
-As imagens PNG serão dimensionadas para **20px por 20px**. No entanto, para acomodar exibições de retina de **40px** por **40px** , pode ser preferível.
+As imagens PNG serão dimensionadas para **20px por 20px**. Entretanto, para acomodar exibições de retina **40px** por **40px** podem ser preferíveis.
 
 ```plain
 /apps/.../components/content/my-component
@@ -73,9 +73,9 @@ As imagens PNG serão dimensionadas para **20px por 20px**. No entanto, para aco
 
 ### Imagens SVG {#svg-images}
 
-Imagens SVG (baseadas em vetores) podem ser usadas para ícones de componentes. Para configurar uma imagem SVG como um ícone de componente, adicione o SVG desejado como um **nt:file** chamado **cq:icon.svg** sob o **[cq:Component]**.
+Imagens SVG (baseadas em vetores) podem ser usadas para ícones de componentes. Para configurar uma imagem SVG como um ícone de componente, adicione o SVG desejado como **nt:file** chamado **cq:icon.svg** sob **[cq:Component]**.
 
-As imagens SVG devem ter uma cor de plano de fundo definida como **#707070** e um tamanho de **20px por 20px.**
+As imagens SVG devem ter uma cor de fundo definida como **#707070** e um tamanho de **20px por 20px.**
 
 ```plain
 /apps/.../components/content/my-component
