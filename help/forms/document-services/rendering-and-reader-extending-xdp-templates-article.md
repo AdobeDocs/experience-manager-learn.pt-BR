@@ -203,7 +203,7 @@ Para testar isso no servidor local, siga as etapas a seguir
 1. [Baixe e importe os ativos relacionados a este artigo para AEM usando o gerenciador de pacote](assets/renderandextendxdp.zip)
    * Este pacote tem um portal de exemplo e um arquivo xdp
 1. Adicionar certificado de extensões de Reader ao usuário &quot;fd-service&quot;
-1. Aponte seu navegador para a página da Web do [portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Aponte seu navegador para [página da Web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Clique no ícone pdf para renderizar o xdp e obter o pdf que é Reader Extended
 
 
