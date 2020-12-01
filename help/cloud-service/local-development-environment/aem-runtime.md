@@ -22,7 +22,7 @@ ht-degree: 1%
 
 O Adobe Experience Manager (AEM) pode ser executado localmente usando o AEM como um Jar de Início Rápido do SDK do Cloud Service. Isso permite que os desenvolvedores implantem e testem código, configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um AEM como ambiente Cloud Service.
 
-Observe que `~` é usado como abreviação para o Diretório do usuário. No Windows, isso é o equivalente a `%HOMEPATH%`.
+Observe que `~` é usado como abreviação para o Diretório do usuário. No Windows, isso equivale a `%HOMEPATH%`.
 
 ## Instalar Java
 
@@ -41,26 +41,26 @@ O AEM como SDK do Cloud Service, ou SDK do AEM, contém o Jar do Quickstart usad
 
 1. Faça logon em [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) com seu Adobe ID
    + Observe que sua Organização Adobe __deve__ ser provisionada para AEM como Cloud Service para baixar o AEM como um SDK Cloud Service.
-1. Navegue até a __AEM como uma guia Cloud Service__
-1. Classificar por data __de__ publicação em ordem __decrescente__
-1. Clique na linha de resultado mais recente do __AEM SDK__
+1. Navegue até a guia __AEM como Cloud Service__
+1. Classificar por __Data de publicação__ em __Ordem decrescente__
+1. Clique na linha de resultado mais recente __AEM SDK__
 1. Revise e aceite o EULA e toque no botão __Download__
 
 ## Extraia o Jar do Quickstart do zip do SDK AEM
 
-1. Descompacte o arquivo baixado `aem-sdk-XXX.zip`
+1. Descompacte o arquivo `aem-sdk-XXX.zip` baixado
 
 ## Configurar o serviço de autor de AEM local{#set-up-local-aem-author-service}
 
 O serviço de autor de AEM local fornece aos desenvolvedores uma experiência local com os profissionais de marketing/conteúdo digital que os autores compartilharão para criar e gerenciar conteúdo.  O serviço de autor de AEM foi criado como um ambiente de criação e pré-visualização, permitindo que a maioria das validações do desenvolvimento de recursos seja executada contra ele, tornando-o um elemento vital do processo de desenvolvimento local.
 
 1. Criar a pasta `~/aem-sdk/author`
-1. Copie o arquivo JAR __do__ Quickstart para `~/aem-sdk/author` e renomeie-o para `aem-author-p4502.jar`
+1. Copie o arquivo __JAR__ do Quickstart para `~/aem-sdk/author` e renomeie-o para `aem-author-p4502.jar`
 1. Start o serviço de autor de AEM local executando o seguinte na linha de comando:
    + `java -jar aem-author-p4502.jar`
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfiguração.
 
-   Você *não pode* start o AEM como Cloud Service Quickstart Jar [clicando](#troubleshooting-double-click)no duplo.
+   Você *não pode* start o AEM como Cloud Service Quickstart Jar [clicando no duplo](#troubleshooting-double-click).
 1. Acesse o serviço de autor de AEM local em [http://localhost:4502](http://localhost:4502) em um navegador da Web
 
 Windows:
@@ -83,16 +83,16 @@ $ java -jar aem-author-p4502.jar
 
 ## Configurar o serviço local de publicação de AEM
 
-O serviço local de publicação de AEM fornece aos desenvolvedores a experiência local que os usuários finais do AEM terão, como navegar no site hospedado no AEM. Um serviço de publicação de AEM local é importante, pois integra-se às ferramentas [de](./dispatcher-tools.md) Dispatcher do SDK AEM e permite que os desenvolvedores façam um teste de fumaça e ajustem a experiência final com o usuário final.
+O serviço local de publicação de AEM fornece aos desenvolvedores a experiência local que os usuários finais do AEM terão, como navegar no site hospedado no AEM. Um serviço de publicação de AEM local é importante, pois integra-se às [ferramentas do Dispatcher](./dispatcher-tools.md) do AEM SDK e permite que os desenvolvedores façam um teste de fumaça e ajustem a experiência do usuário final.
 
 1. Criar a pasta `~/aem-sdk/publish`
-1. Copie o arquivo JAR __do__ Quickstart para `~/aem-sdk/publish` e renomeie-o para `aem-publish-p4503.jar`
+1. Copie o arquivo __JAR__ do Quickstart para `~/aem-sdk/publish` e renomeie-o para `aem-publish-p4503.jar`
 1. Start o serviço de publicação de AEM local executando o seguinte na linha de comando:
    + `java -jar aem-publish-p4503.jar`
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfiguração.
 
-   Você *não pode* start o AEM como Cloud Service Quickstart Jar [clicando](#troubleshooting-double-click)no duplo.
-1. Acesse o serviço local de publicação de AEM em [http://localhost:4503](http://localhost:4503) em um navegador da Web
+   Você *não pode* start o AEM como Cloud Service Quickstart Jar [clicando no duplo](#troubleshooting-double-click).
+1. Acesse o serviço de publicação de AEM local em [http://localhost:4503](http://localhost:4503) em um navegador da Web
 
 Windows:
 
@@ -114,9 +114,9 @@ $ java -jar aem-publish-p4503.jar
 
 ## Modos de start do Jar de início rápido
 
-O nome do Jar de Início Rápido, `aem-<tier>_<environment>-p<port number>.jar` especifica como ele será start. Depois de AEM como iniciado em uma camada específica, autor ou publicação, ele não pode ser alterado para a camada alternativa. Para fazer isso, a `crx-Quickstart` pasta gerada durante a primeira execução deve ser excluída e o Jar de Início Rápido deve ser executado novamente. Ambiente e portas podem ser alteradas, no entanto, exigem a interrupção/start da instância de AEM local.
+A nomeação do Jar do Início Rápido, `aem-<tier>_<environment>-p<port number>.jar` especifica como ele será start. Depois de AEM como iniciado em uma camada específica, autor ou publicação, ele não pode ser alterado para a camada alternativa. Para fazer isso, a pasta `crx-Quickstart` gerada durante a primeira execução deve ser excluída e o Quickstart Jar deve ser executado novamente. Ambiente e portas podem ser alteradas, no entanto, exigem a interrupção/start da instância de AEM local.
 
-A alteração de ambientes, `dev`e `stage` `prod`, pode ser útil para os desenvolvedores para garantir que as configurações específicas do ambiente sejam definidas e resolvidas corretamente pelo AEM. É recomendável que o desenvolvimento local seja feito principalmente em relação ao modo de execução padrão do `dev` ambiente.
+A alteração de ambientes, `dev`, `stage` e `prod`, pode ser útil para desenvolvedores para garantir que as configurações específicas do ambiente sejam definidas e resolvidas corretamente pela AEM. É recomendável que o desenvolvimento local seja feito principalmente em relação ao modo de execução padrão do ambiente `dev`.
 
 As permutações disponíveis são as seguintes:
 
@@ -139,14 +139,14 @@ As permutações disponíveis são as seguintes:
 
 Observe que o número da porta pode ser qualquer porta disponível na máquina de desenvolvimento local, no entanto, por convenção:
 
-+ A porta __4502__ é usada para o serviço de autor de AEM __local__
-+ A porta __4503__ é usada para o serviço de publicação de AEM __local__
++ A porta __4502__ é usada para o __serviço de autor de AEM local__
++ A porta __4503__ é usada para o __serviço local de publicação de AEM__
 
 A alteração dessas configurações pode exigir ajustes AEM configurações do SDK
 
 ## Interrompendo um tempo de execução de AEM local
 
-Para interromper um tempo de execução local AEM, seja o AEM Author ou o serviço Publish, abra a janela de linha de comando usada para start do tempo de execução AEM e toque em `Ctrl-C`. Aguarde AEM desligar. Quando o processo de desligamento estiver concluído, o prompt da linha de comando estará disponível.
+Para interromper um tempo de execução local AEM, seja o AEM Author ou Publish service, abra a janela de linha de comando usada para start do AEM Runtime e toque em `Ctrl-C`. Aguarde AEM desligar. Quando o processo de desligamento estiver concluído, o prompt da linha de comando estará disponível.
 
 ## Quando atualizar o Jar de Início Rápido
 
@@ -161,14 +161,14 @@ Atualize o SDK AEM pelo menos mensalmente na última quinta-feira de cada mês, 
 A atualização do SDK AEM está criando efetivamente um novo tempo de execução AEM, incluindo um novo repositório, o que significa que todas as alterações feitas em um repositório anterior AEM SDK serão perdidas. As estratégias a seguir são viáveis para auxiliar no conteúdo persistente entre atualizações AEM SDK e podem ser usadas discretamente ou em conjunto:
 
 1. Crie um pacote de conteúdo dedicado a conter conteúdo de &quot;amostra&quot; para auxiliar no desenvolvimento e mantê-lo no Git. Qualquer conteúdo que deva ser mantido por meio de atualizações AEM SDK seria mantido neste pacote e reimplantado após a atualização do SDK AEM.
-1. Use [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) com a `includepaths` diretiva para copiar o conteúdo do repositório anterior do SDK AEM para o novo repositório AEM do SDK.
+1. Use [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) com a diretiva `includepaths` para copiar o conteúdo do repositório anterior AEM SDK para o novo repositório AEM SDK.
 1. Faça backup de qualquer conteúdo usando AEM Package Manager e pacotes de conteúdo no SDK AEM anterior e reinstale-os no novo SDK AEM.
 
 Lembre-se, usar as abordagens acima para manter o código entre AEM atualizações do SDK indica um antipadrão de desenvolvimento. O código não descartável deve se originar no seu IDE de desenvolvimento e fluir para AEM SDK por meio de implantações.
 
 ## Resolução de problemas
 
-## Ao clicar no duplo no arquivo Jar do Quickstart, ocorre um erro{#troubleshooting-double-click}
+## Clicar no duplo do arquivo Jar do Quickstart resulta em um erro{#troubleshooting-double-click}
 
 Ao clicar com o duplo na barra de início rápido para o start, um modal de erro é exibido, impedindo o AEM de iniciar localmente.
 
@@ -176,15 +176,15 @@ Ao clicar com o duplo na barra de início rápido para o start, um modal de erro
 
 Isso ocorre porque AEM como um Jar de Início Rápido Cloud Service não suporta clique em duplo do Jar de Início Rápido para start AEM localmente. Em vez disso, você deve executar o arquivo Jar a partir dessa linha de comando.
 
-Para start do serviço de autor de AEM, entre `cd` no diretório que contém o Jar de Início Rápido e execute o comando:
+Para start do serviço de autor de AEM, `cd` no diretório que contém o Jar de Início Rápido e execute o comando:
 
 `$ java -jar aem-author-p4502.jar`
 
-ou, para start do serviço de publicação de AEM, `cd` no diretório que contém o Jar de Início Rápido e execute o comando:
+ou, para start do serviço de publicação de AEM, `cd` no diretório que contém o Jar do Quickstart e execute o comando:
 
 `$ java -jar aem-author-p4503.jar`
 
-## Iniciar o Jar de Início Rápido na linha de comando cancela imediatamente{#troubleshooting-java-8}
+## Iniciar o Jar de Início Rápido na linha de comando aborta imediatamente{#troubleshooting-java-8}
 
 Ao iniciar o Jar de Início Rápido na linha de comando, o processo é abortado imediatamente e o serviço AEM não é start, com o seguinte erro:
 
