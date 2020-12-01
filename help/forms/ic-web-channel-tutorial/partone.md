@@ -31,12 +31,12 @@ Para configurar o tomcat, siga as seguintes instruções:
 3. Baixe [tomcat](https://tomcat.apache.org/). Este arquivo de guerra foi testado com o Tomcat versão 8.5.x e 9.0.x.
 4. Baixe a versão tomcat de sua preferência. Você pode baixar o zip do Windows de 64 bits na seção principal.
 5. Descompacte o conteúdo em seu c:\tomcat.
-6. Você deve ver algo assim na unidade c **c:\tomcat\apache-tomcat-8.5.27** dependendo da versão do seu tomcat
+6. Você deve ver algo assim na sua unidade c **c:\tomcat\apache-tomcat-8.5.27** dependendo da versão do seu tomcat
 7. Crie uma variável de ambiente chamada &quot;CATALINA_HOME&quot; e defina seu valor para o exemplo da pasta de instalação tomcat c:\tomcat\apache- tomcat-8.5.27
 8. Copie o arquivo SampleRest.war para a pasta de aplicativos da sua instalação do Tomcat
 9. janela start new command prompt.
 10. Navegue até &lt;pasta de instalação tomcat>\bin e execute o startup.bat
-11. Depois que o tomcat for iniciado, teste o terminal exposto pelo Arquivo WAR [clicando aqui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
+11. Depois que o tomcat for iniciado, teste o terminal exposto pelo Arquivo WAR ao [clicar aqui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. Você deve obter dados de amostra como resultado desta chamada.
 
 Parabéns !!!. Você configurou o tomcat e implantou o arquivo SampleRest.war.
