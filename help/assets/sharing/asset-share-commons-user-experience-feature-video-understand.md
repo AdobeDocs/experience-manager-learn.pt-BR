@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Compreensão da experiência do usuário do Asset Share Commons{#understanding-asset-share-commons}
+# Noções Gerais da Experiência do Usuário do Commons de Compartilhamento de Ativos{#understanding-asset-share-commons}
 
 Uma breve introdução às experiências de criação e usuário do Asset Share Commons.
 
