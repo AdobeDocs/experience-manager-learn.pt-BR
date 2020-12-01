@@ -36,7 +36,7 @@ O editor de regras de conversão que atualizará o arquivo xml de conversão. A 
 
 Acesse a interface de usuário de configuração de tradução:
 
-* **[!UICONTROL Menu]Start AEM >[!UICONTROL Ferramentas]>[!UICONTROL Geral]> Configuração[[!UICONTROL de tradução]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL Menu]  Start AEM>  [!UICONTROL Ferramentas] >  [!UICONTROL Geral] > Configuração  [[!UICONTROL de tradução]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Antes do AEM 6.3 {#prior-to-aem}
 
