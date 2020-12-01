@@ -1,18 +1,18 @@
 ---
-title: Introdução ao AEM e Adobe Target
-seo-title: Introdução ao AEM e Adobe Target
+title: Introdução ao AEM e ao Adobe Target
+seo-title: Introdução ao AEM e ao Adobe Target
 description: Um tutorial completo mostrando como criar e fornecer experiências personalizadas usando o Adobe Experience Manager e o Adobe Target. Neste tutorial, você também aprenderá sobre as diferentes pessoas envolvidas no processo de ponta a ponta e como elas colaboram entre si
 seo-description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando Adobe Experience Manager e Adobe Target. Neste tutorial, você também aprenderá sobre as diferentes pessoas envolvidas no processo de ponta a ponta e como elas colaboram entre si
 translation-type: tm+mt
 source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Introdução ao AEM e Adobe Target {#getting-started-with-aem-target}
+# Introdução ao AEM e ao Adobe Target {#getting-started-with-aem-target}
 
 AEM e Público alvo são soluções poderosas com recursos aparentemente sobrepostos. Às vezes, os clientes se debatem com a compreensão de como e quando usar esses produtos em conjunto para fornecer experiência personalizada. Para fornecer experiência otimizada para cada usuário final, equipes diferentes em sua organização devem trabalhar em conjunto e definir quem faz o quê.
 
@@ -24,13 +24,13 @@ Neste tutorial, cobrimos três cenários diferentes para AEM e Público alvo, o 
 
 ## Personalização usando AEM fragmentos de experiência {#personalization-using-aem-experience-fragment}
 
-Para esse cenário, vamos usar AEM e Público alvo. Claramente, ambos os produtos têm seus próprios pontos fortes, e quando se trata de fornecer experiências personalizadas aos usuários do site, você precisa de conteúdo **personalizado (conteúdo de AEM)** e de uma maneira **inteligente (Público alvo)** para servir esse conteúdo com base em um usuário específico.
+Para esse cenário, vamos usar AEM e Público alvo. Claramente, ambos os produtos têm seus próprios pontos fortes, e quando se trata de fornecer experiências personalizadas aos usuários do site, você precisa de **conteúdo personalizado (conteúdo do AEM)** e um **modo inteligente (Público alvo)** para servir esse conteúdo com base em um usuário específico.
 
 AEM ajuda a criar conteúdo personalizado, reunindo todo o seu conteúdo e ativos em um local central para alimentar sua estratégia de personalização. AEM permite que você crie facilmente conteúdo para desktops, tablets e dispositivos móveis em um único lugar, sem gravar código. Não há necessidade de criar páginas para cada dispositivo. AEM ajusta automaticamente cada experiência usando seu conteúdo. Você também pode exportar o conteúdo do AEM para o Adobe Target como ofertas com um botão.
 
 Agora nós personalizamos o conteúdo na forma de Ofertas de AEM no Público alvo. O Público alvo permite que você forneça essas ofertas em escala com base em uma combinação de abordagens de aprendizado de máquina baseadas em regras e orientadas por IA que incorporam variáveis comportamentais, contextuais e offline.  Com o Público alvo, você pode facilmente configurar e executar atividades A/B e multivariadas (MVT) para determinar as melhores ofertas, conteúdo e experiências.
 
-**Os fragmentos** de experiência representam um grande passo em frente para vincular os criadores de conteúdo/experiência aos profissionais de personalização que estão conduzindo os resultados comerciais usando o Público alvo.
+**Os** fragmentos de experiência representam um grande passo em frente para vincular os criadores de conteúdo/experiência aos profissionais de personalização que estão acionando os resultados da empresa usando o Público alvo.
 
 * AEM autores do editor de conteúdo personalizaram o conteúdo como Fragmentos de experiência e suas variações
 * AEM exporta o HTML do fragmento de experiência para o &#x200B; do Público alvo
@@ -44,7 +44,7 @@ Agora nós personalizamos o conteúdo na forma de Ofertas de AEM no Público alv
 * [Integrar AEM e Adobe Target usando o Launch e o Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM e Adobe Target usando Cloud Services herdados](./implementation.md#integrating-aem-target-options)
 
-***Depois de implementar as integrações acima, vamos explorar o[cenário detalhadamente](./personalization-use-case-1.md).***
+***Depois de implementar as integrações acima, vamos explorar o  [cenário detalhadamente](./personalization-use-case-1.md).***
 
 ## Personalização usando o Visual Experience Composer
 
@@ -64,7 +64,7 @@ O VEC é um dos principais recursos do Adobe Target. O VEC permite que profissio
 
 * [Integrar AEM e Adobe Target usando o Launch e o Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Após implementar a integração acima, vamos explorar o[cenário detalhadamente.](./personalization-use-case-3.md)***
+***Após implementar a integração acima, vamos explorar o  [cenário detalhadamente.](./personalization-use-case-3.md)***
 
 ## Personalização de experiências completas de página da Web
 
@@ -82,4 +82,4 @@ Integrar o Adobe Experience Manager à Adobe Target ajuda você a fornecer uma e
 
 * [Integrar AEM e Adobe Target usando o Launch e o Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Após implementar a integração acima, vamos explorar o[cenário detalhadamente.](./personalization-use-case-2.md)***
+***Após implementar a integração acima, vamos explorar o  [cenário detalhadamente.](./personalization-use-case-2.md)***
