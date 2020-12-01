@@ -28,7 +28,7 @@ A captura de tela a seguir mostra as etapas envolvidas no fluxo de trabalho.
 
 ## Gerar etapa de fluxo de trabalho de PDF não interativo
 
-O modelo XDP e os dados a serem unidos ao modelo são especificados aqui. Os dados a serem unidos são os dados enviados do PDF. Esses dados enviados são armazenados sob o nó `/content/pdfsubmissions`.
+O modelo XDP e os dados a serem unidos ao modelo são especificados aqui. Os dados a serem unidos são os dados enviados do PDF. Esses dados enviados são armazenados no nó `/content/pdfsubmissions`.
 
 ![fluxo de trabalho](assets/generate-pdf1.PNG)
 
