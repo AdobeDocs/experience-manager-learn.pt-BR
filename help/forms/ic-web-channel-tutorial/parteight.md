@@ -32,7 +32,7 @@ Abra a 401KStatement no modo de edição.
 
 O AEM Forms 6.4 simplificou bastante a exibição de dados usando vários tipos de gráficos. Usaremos um gráfico de Linha para exibir os saldos por ano.
 
-Toque na área público alvo Progresso **da** conta no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
+Toque na área de público alvo **Andamento da conta** no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
 
 Selecione Gráfico para inserir o componente gráfico.
 
