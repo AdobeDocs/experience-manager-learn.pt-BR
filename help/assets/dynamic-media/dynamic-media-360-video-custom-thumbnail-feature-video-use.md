@@ -55,7 +55,7 @@ O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma 
    <tr>
       <td>Modo de execução do Dynamic Media</td>
       <td>Somente modo Scene7 do Dynamic Media</td>
-      <td>Somente modo Scene7 do Dynamic Media<br>
+      <td>Modo Scene7 do Dynamic Media apenas<br>
          <br>
       </td>
    </tr>
