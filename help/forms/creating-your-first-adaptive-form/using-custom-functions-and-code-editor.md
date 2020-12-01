@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Nesta parte, usaremos funções personalizadas e o editor de código para criar regras de negócios.
 
-você já instalou o [ClientLib com função](assets/client-libs-and-logo.zip) personalizada anteriormente neste tutorial.
+você já instalou o [ClientLib com função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
 
 Normalmente, uma biblioteca de cliente consiste em arquivos CSS e Javascript. Essa biblioteca de cliente contém um arquivo javascript que expõe uma função para preencher valores de lista suspensos.
 
@@ -35,7 +35,7 @@ Normalmente, uma biblioteca de cliente consiste em arquivos CSS e Javascript. Es
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Definir título do resumo do painel {#set-the-summary-title-of-panels}
+### Definir título de resumo do painel {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
