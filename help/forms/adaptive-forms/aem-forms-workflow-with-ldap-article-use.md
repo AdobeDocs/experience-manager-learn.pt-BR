@@ -26,7 +26,7 @@ Atribuindo a tarefa de fluxo de trabalho da AEM Forms ao gerente do remetente.
 
 Ao usar o Formulário adaptável no fluxo de trabalho AEM, você deve atribuir dinamicamente uma tarefa ao gerente do remetente do formulário. Para realizar esse caso de uso, teremos que configurar o AEM com o Ldap.
 
-As etapas necessárias para configurar o AEM com LDAP são explicadas em [detalhes aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+As etapas necessárias para configurar o AEM com LDAP são explicadas em [detail aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Para a finalidade deste artigo, estou anexando os arquivos de configuração usados na configuração do AEM com o Adobe Ldap. Esses arquivos estão incluídos no pacote que pode ser importado usando o gerenciador de pacotes.
 
@@ -66,16 +66,16 @@ Temos contato com a pessoa que iniciou o fluxo de trabalho. Em seguida, obtemos 
 
 Dependendo de como a propriedade manager é armazenada no LDAP, talvez seja necessário fazer alguma manipulação de sequência de caracteres para obter a ID do gerente.
 
-Leia este artigo para implementar seu próprio [ ParticipantChooser.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Leia este artigo para implementar seu próprio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para testar isso no sistema (para funcionários do Adobe, você pode usar essa amostra na caixa)
 
-* [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Este é o pacote OSGI personalizado para definir a propriedade do gerente.
+* [Baixe e implante o conjunto](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Este é o pacote OSGI personalizado para definir a propriedade do gerente.
 * [Baixe e instale o DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe os Ativos associados a este artigo para AEM usando o gerenciador](assets/aem-forms-ldap.zip)de pacotes.Incluídos como parte deste pacote estão os arquivos de configuração LDAP, o fluxo de trabalho e um formulário adaptável.
+* [Importe os Ativos associados a este artigo para AEM usando o gerenciador](assets/aem-forms-ldap.zip) de pacotes.Incluídos como parte deste pacote estão os arquivos de configuração LDAP, o fluxo de trabalho e um formulário adaptável.
 * Configure o AEM com seu LDAP usando as credenciais LDAP apropriadas.
 * Faça logon para AEM usando suas credenciais LDAP.
-* Abrir o [formulário timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Abra o [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha o formulário e envie.
 * O gerente do remetente deve obter o formulário para revisão.
 
