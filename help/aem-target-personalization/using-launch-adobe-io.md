@@ -1,8 +1,8 @@
 ---
-title: Integração do Adobe Experience Manager com o Adobe Target usando E/S Experience Platform Launch e Adobe
-seo-title: Integração do Adobe Experience Manager com o Adobe Target usando E/S Experience Platform Launch e Adobe
-description: Passo a passo sobre como integrar o Adobe Experience Manager ao Adobe Target usando E/S Experience Platform Launch e Adobe
-seo-description: Passo a passo sobre como integrar o Adobe Experience Manager ao Adobe Target usando E/S Experience Platform Launch e Adobe
+title: Integração do Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
+seo-title: Integração do Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
+description: Passo a passo sobre como integrar o Adobe Experience Manager ao Adobe Target usando o Experience Platform Launch e o Adobe I/O
+seo-description: Passo a passo sobre como integrar o Adobe Experience Manager ao Adobe Target usando o Experience Platform Launch e o Adobe I/O
 translation-type: tm+mt
 source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
 workflow-type: tm+mt
@@ -12,17 +12,17 @@ ht-degree: 2%
 ---
 
 
-# Uso do Adobe Experience Platform Launch via console de E/S do Adobe
+# Uso do Adobe Experience Platform Launch via Adobe I/O Console
 
 ## Pré-requisitos
 
-* [Instância](./implementation.md#set-up-aem) de autor e publicação AEM em execução na porta 4502 e 4503 localhost, respectivamente
+* [AEM criar e publicar ](./implementation.md#set-up-aem) instruções na porta 4502 e 4503 localhost, respectivamente
 * **Experience Cloud**
    * Acesso à Adobe Experience Cloud de suas organizações - <https://>`<yourcompany>`.experience.ecloud.adobe.com
    * Experience Cloud fornecido com as seguintes soluções
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Console de E/S Adobe](https://console.adobe.io)
+      * [Adobe I/O Console](https://console.adobe.io)
 
       >[!NOTE]
       >Você deve ter permissão para Desenvolver, Aprovar, Publicar, Gerenciar extensões e Gerenciar Ambientes no Launch. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis, entre em contato com o administrador do Experience Cloud para solicitar acesso. Para obter mais informações sobre permissões de inicialização, [consulte a documentação](https://docs.adobelaunch.com/administration/user-permissions).
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 * **Plug-ins do navegador**
    * Adobe Experience Cloud Debugger ([Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj))
-   * Inicialização e troca DTM ([Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk))
+   * Iniciar e Comutador DTM ([Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk))
 
 ## Usuários envolvidos
 
@@ -63,20 +63,20 @@ Nesta seção, estaríamos cobrindo as seguintes etapas de integração:
 
 Uma propriedade é um container que você preenche com extensões, regras, elementos de dados e bibliotecas à medida que implanta tags no site.
 
-1. Navegue até a sua empresa [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experience.ecloud.adobe.com)
+1. Navegue até suas organizações [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experience.ecloud.adobe.com)
 2. Faça logon usando seu Adobe ID e verifique se você está na organização correta.
-3. No alternador de soluções, clique em **Iniciar** e selecione o botão **Ir para inicialização** .
+3. No alternador de soluções, clique em **Iniciar** e selecione o botão **Ir para inicialização**.
 
    ![Experience Cloud - Iniciar](assets/using-launch-adobe-io/exc-cloud-launch.png)
 
 4. Verifique se você está na organização correta e continue criando uma propriedade Launch.
    ![Experience Cloud - Iniciar](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *Para obter mais informações sobre como criar propriedades, consulte[Criar uma propriedade](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property)na documentação do produto.*
+   *Para obter mais informações sobre como criar propriedades, consulte  [Criar uma ](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) propriedade na documentação do produto.*
 5. Clique no botão **Nova propriedade**
-6. Forneça um nome para sua propriedade (por exemplo, *AEM Tutorial* do Público alvo)
-7. Como o domínio, insira *localhost.com* , pois este é o domínio em que o site de demonstração WKND está sendo executado. Embora o campo &quot;*Domínio*&quot; seja obrigatório, a propriedade Launch funcionará em qualquer domínio em que for implementada. A finalidade principal desse campo é preencher previamente as opções de menu no Construtor de regras.
-8. Clique no botão **Salvar** .
+6. Forneça um nome para sua propriedade (Por exemplo, *AEM Tutorial do Público alvo*)
+7. Como o domínio, digite *localhost.com*, pois este é o domínio em que o site de demonstração WKND está sendo executado. Embora o campo &#39;*Domain*&#39; seja obrigatório, a propriedade Launch funcionará em qualquer domínio em que for implementada. A finalidade principal desse campo é preencher previamente as opções de menu no Construtor de regras.
+8. Clique no botão **Salvar**.
 
    ![Iniciar - Nova propriedade](assets/using-launch-adobe-io/exc-launch-property.png)
 
@@ -84,7 +84,7 @@ Uma propriedade é um container que você preenche com extensões, regras, eleme
 
 #### Adicionando Extensão do target
 
-A extensão do Adobe Target suporta implementações do lado do cliente usando o Público alvo JavaScript SDK para a Web moderna `at.js`. Os clientes que ainda usam a biblioteca mais antiga do Público alvo `mbox.js`devem atualizar para o at.js [](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) para usar o Launch.
+A extensão do Adobe Target suporta implementações do lado do cliente usando o Público alvo JavaScript SDK para a Web moderna, `at.js`. Os clientes que ainda usam a biblioteca mais antiga do Público alvo, `mbox.js`, [devem atualizar para at.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) para usar o Launch.
 
 A Extensão do target consiste em duas partes principais:
 
@@ -95,37 +95,37 @@ A Extensão do target consiste em duas partes principais:
    * Adicionar parâmetros à mbox global
    * Mbox global Fire
 
-1. Em **Extensões**, é possível ver a lista de Extensões que já estão instaladas para a propriedade Iniciar. ([Experience Platform Launch Core Extension](https://exchange.adobe.com/experiencecloud.details.100223.adobe-launch-core-extension.html) está instalado por padrão)
-2. Clique na opção Catálogo **de** extensões e procure o Público alvo no filtro.
-3. Selecione a versão mais recente do Adobe Target at.js e clique na opção **Instalar** .
+1. Em **Extensões**, você pode ver a lista de Extensões que já estão instaladas para a propriedade Iniciar. ([O Experience Platform Launch Core Extension](https://exchange.adobe.com/experiencecloud.details.100223.adobe-launch-core-extension.html) está instalado por padrão)
+2. Clique na opção **Catálogo de extensão** e procure o Público alvo no filtro.
+3. Selecione a versão mais recente do Adobe Target at.js e clique na opção **Instalar**.
    ![Iniciar - Nova propriedade](assets/using-launch-adobe-io/launch-target-extension.png)
 
-4. Clique no botão **Configurar** e você pode observar a janela de configuração com suas credenciais de conta de Público alvo importadas e a versão at.js para essa extensão.
+4. Clique no botão **Configurar** e você pode observar a janela de configuração com as credenciais de conta de Público alvo importadas e a versão at.js desta extensão.
    ![Público alvo - Configuração de extensão](assets/using-launch-adobe-io/launch-target-extension-2.png)
 
-   Quando o Público alvo é implantado por meio de códigos incorporados de inicialização assíncronos, você deve codificar um trecho pré-ocultado em suas páginas antes dos códigos incorporados de inicialização para gerenciar a oscilação do conteúdo. Aprenderemos mais sobre o snipper pré-oculto mais tarde. Você pode baixar o trecho pré-ocultação [aqui](assets/using-launch-adobe-io/prehiding.js)
+   Quando o Público alvo é implantado por meio de códigos incorporados de inicialização assíncronos, você deve codificar um trecho pré-ocultado em suas páginas antes dos códigos incorporados de inicialização para gerenciar a oscilação do conteúdo. Aprenderemos mais sobre o snipper pré-oculto mais tarde. Você pode baixar o snippet de pré-ocultação [aqui](assets/using-launch-adobe-io/prehiding.js)
 
-5. Clique em **Salvar** para concluir a adição da Extensão do target à propriedade Iniciar e agora você poderá ver a Extensão do target listada na lista de extensões **instaladas** .
+5. Clique em **Salvar** para concluir a adição da Extensão do target à propriedade Iniciar e agora você poderá ver a Extensão do target listada na lista de extensões **Instaladas**.
 
 6. Repita as etapas acima para pesquisar a extensão &quot;Serviço de ID de Experience Cloud&quot; e instale-a.
    ![Extensão - Serviço de ID de Experience Cloud](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
 
 #### Ambientes de configuração
 
-1. Clique na guia **Ambiente** da propriedade do site e você poderá ver a lista do ambiente que é criada para a propriedade do site. Por padrão, temos uma instância criada para desenvolvimento, armazenamento temporário e produção.
+1. Clique na guia **Ambiente** para obter a propriedade do site, e você pode ver a lista do ambiente que é criada para a propriedade do site. Por padrão, temos uma instância criada para desenvolvimento, armazenamento temporário e produção.
 
 ![Elemento de dados - Nome da página](assets/using-launch-adobe-io/launch-environment-setup.png)
 
 #### Criar e publicar
 
-1. Clique na guia **Publicação** da propriedade do site e vamos criar uma biblioteca para criar e implantar nossas alterações (elementos de dados, regras) em um ambiente de desenvolvimento.
+1. Clique na guia **Publicação** para a propriedade do site, e vamos criar uma biblioteca para criar e implantar nossas alterações (elementos de dados, regras) em um ambiente de desenvolvimento.
    >[!VIDEO](https://video.tv.adobe.com/v/28412?quality=12&learn=on)
 2. Publique suas alterações de Desenvolvimento para um ambiente de armazenamento temporário.
    >[!VIDEO](https://video.tv.adobe.com/v/28419?quality=12&learn=on)
 3. Execute a opção **Criar para armazenamento temporário**.
-4. Quando a criação estiver concluída, execute **Aprovar para publicação**, o que move suas alterações de um ambiente de armazenamento temporário para um ambiente de produção.
+4. Quando a compilação estiver concluída, execute **Aprovar para publicação**, o que move suas alterações de um ambiente de armazenamento temporário para um ambiente de produção.
    ![Preparação para produção](assets/using-launch-adobe-io/build-staging.png)
-5. Por fim, execute a opção **Criar e publicar na produção** para encaminhar suas alterações para a produção.
+5. Por fim, execute a opção **Criar e Publicar na produção** para encaminhar suas alterações para a produção.
    ![Criar e publicar na produção](assets/using-launch-adobe-io/build-and-publish.png)
 
 ### Adobe Experience Manager
@@ -134,16 +134,16 @@ A Extensão do target consiste em duas partes principais:
 
 >[!NOTE]
 >
-> Conceda à integração de E/S de Adobe o acesso a espaços de trabalho selecionados com a [função apropriada para permitir que uma equipe central faça alterações orientadas por API em apenas alguns espaços de trabalho](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Conceda à integração da Adobe I/O o acesso a espaços de trabalho selecionados com a função [apropriada para permitir que uma equipe central faça alterações orientadas por API em apenas alguns espaços de trabalho](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
-1. Crie a integração do IMS no AEM usando credenciais da E/S do Adobe. (01:12 às 03:55)
-2. No Experience Platform Launch, crie uma propriedade. (abrangido [acima](#create-launch-property))
+1. Crie a integração IMS em AEM usando credenciais da Adobe I/O. (01:12 às 03:55)
+2. No Experience Platform Launch, crie uma propriedade. (coberto [acima](#create-launch-property))
 3. Usando a integração do IMS da Etapa 1, crie a integração do Experience Platform Launch para importar a propriedade Launch.
 4. Em AEM, mapeie a integração do Experience Platform Launch para um site usando a configuração do navegador. (das 05:28 às 06:14)
 5. Valide a integração manualmente. (das 06:15 às 06:33)
 6. Usando o plug-in Iniciar/navegador DTM. (das 06:34 às 06:50)
 7. Usando o plug-in do navegador do Adobe Experience Cloud Debugger. (das 06:51 às 07:22)
 
-Neste ponto, você integrou com êxito o [AEM com a Adobe Target usando o Adobe Experience Platform Launch](./using-aem-cloud-services.md#integrating-aem-target-options) , conforme detalhado na Opção 1.
+Neste ponto, você integrou [AEM com êxito ao Adobe Target usando o Adobe Experience Platform Launch](./using-aem-cloud-services.md#integrating-aem-target-options) conforme detalhado na Opção 1.
 
 Para usar AEM ofertas de fragmento de experiência para potencializar suas atividades de personalização, vamos para o próximo capítulo e integremos AEM com a Adobe Target usando os serviços de nuvem herdados.
