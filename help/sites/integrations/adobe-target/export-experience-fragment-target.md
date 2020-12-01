@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Export Experience Fragment to Adobe Target {#experience-fragment-target}
+# Exportar fragmento de experiência para Adobe Target {#experience-fragment-target}
 
 Saiba como exportar AEM Fragmento de experiência como Adobe Target Oferta.
 
@@ -38,16 +38,16 @@ Exportar o fragmento de experiência para o Adobe Target sem as permissões corr
 
     ![Erro de interface de usuário da API do Público alvo](assets/error-target-offer.png)
 
-... e as seguintes mensagens de registro no `aemerror` registro:
+... e as seguintes mensagens de registro no registro `aemerror`:
 
     ![Erro do console da API do Público alvo](assets/target-console-error.png)
 
 #### Resolução
 
-1. Faça logon no [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de produtos Adobe Target usado, mas a integração AEM
+1. Faça logon em [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de produto Adobe Target usado, mas a integração AEM
 2. Selecione __Produtos > Adobe Target > Perfil do produto__
-3. Na guia __Integrações__ , selecione a integração do seu AEM como ambiente (o mesmo nome do projeto de E/S do Adobe)
-4. Atribuir função __de editor__ ou __aprovador__
+3. Na guia __Integrations__, selecione a integração do seu AEM como ambiente Cloud Service (o mesmo nome do projeto Adobe I/O)
+4. Atribuir função __Editor__ ou __Aprovador__
 
    ![Erro de API de público alvo](assets/target-permissions.png)
 
