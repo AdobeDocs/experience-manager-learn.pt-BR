@@ -20,7 +20,7 @@ ht-degree: 6%
 ---
 
 
-# Uso do Editor de páginas {#using-page-editor-with-aem-sites}
+# Usando o Editor de páginas {#using-page-editor-with-aem-sites}
 
 AEM Editor de páginas do site é uma ferramenta poderosa para criar e editar conteúdo da Web. As ferramentas e os recursos do Editor de páginas são acessados da barra de ferramentas da interface do usuário do Editor de páginas.
 
