@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do Cortar inteligente do Dynamic Media para vídeo {#using-smart-crop-video}
+# Usando o Corte Inteligente do Dynamic Media para vídeo {#using-smart-crop-video}
 
 O Dynamic Media Smart Crop para vídeo usa o Adobe Sensei para rastrear de forma inteligente o ponto de interesse no vídeo, garantindo que os vídeos fiquem com a melhor aparência em todos os tamanhos de tela.
 
