@@ -34,6 +34,6 @@ O Modelo de Dados de Formulário depende de uma Fonte de Dados configurada corre
 
 O Modelo de dados de formulário é a base para todas as suas Comunicações interativas. A operação Obter/Ler do Modelo de Dados de Formulário buscará os dados de sua fonte de dados de backend e será usada para preencher o documento do Interative Communications.
 
-Para obter mais informações sobre como configurar as Fontes de Dados, siga este [link&quot;](parttwo.md)
+Para obter mais informações sobre como configurar as Fontes de Dados, siga este [link`](parttwo.md)
 
 Depois de criar o Modelo de dados de formulário, você pode usá-lo como base para a criação de fragmentos de documento e Documentos de comunicação interativos.
