@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Adicionar tabela ao painel de saldo da conta{#adding-table-to-account-balance-panel}
+# Adicionar tabela ao painel de equilíbrio de contas{#adding-table-to-account-balance-panel}
 
 Nesta parte, adicionaremos uma tabela ao painel Saldo da conta.
 
