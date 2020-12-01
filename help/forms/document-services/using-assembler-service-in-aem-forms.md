@@ -107,19 +107,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Para obter esse recurso funcionando no servidor AEM
 
-* Baixe o [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) no sistema local.
-* Carregar e instalar o pacote usando o gerenciador de [pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Pacote[DownloadCustom Documento Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Baixar o [desenvolvimento com o pacote de usuários de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Implantar e start os pacotes usando o console da Web [felix](http://localhost:4502/system/console/bundles)
-* Aponte seu navegador para [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Baixe [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) no sistema local.
+* Carregue e instale o pacote usando o [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
+* Baixar[Pacote de serviços de Documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Baixar [Desenvolvimento com o pacote de usuários de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Implantar e start os pacotes usando o [console da Web felix](http://localhost:4502/system/console/bundles)
+* Aponte seu navegador para [AssemblyPdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Arraste e solte alguns arquivos de arquivos PDF
 
 >[!NOTE]
 >
 >Verifique se a instalação do AEM Forms foi concluída. Todos os seus pacotes precisam estar no estado ativo.
 >
->Verifique se você adicionou - as bibliotecas delegadas de inicialização RSA e BouncyCastle, conforme mencionado nesta [Instalação do AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Verifique se você adicionou - as bibliotecas delegadas de inicialização RSA e BouncyCastle, conforme mencionado neste [Instalação do AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avisos para esta demonstração**
 >
