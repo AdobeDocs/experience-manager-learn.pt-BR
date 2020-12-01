@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Gerenciar herança de Live Copy em uma página {#manage-live-copy-page}
+# Gerenciar herança do Live Copy em uma página {#manage-live-copy-page}
 
 Saiba como gerenciar herança entre uma Live Copy e seu Blueprint em nível de página.
 >[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
