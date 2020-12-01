@@ -28,7 +28,7 @@ ht-degree: 33%
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
    + [Tempo de execução de AEM local](./local-development-environment/aem-runtime.md)
    + [Ferramentas do Dispatcher Local](./local-development-environment/dispatcher-tools.md)
-+ Depuração de AEM{#debugging}
++ Depuração AEM{#debugging}
    + Depuração do SDK AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -51,14 +51,14 @@ ht-degree: 33%
    + [Configuração do acesso a AEM de navegação](./accessing/walk-through.md)
 + Migração {#migration}
    + [Ferramenta Transferência de conteúdo](./migration/content-transfer-tool.md)
-+ Extensibilidade da computação de ativos{#asset-compute}
++ Extensibilidade do asset compute{#asset-compute}
    + [Visão geral](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Provisionamento de conta e serviços](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente de desenvolvimento local](./asset-compute/set-up/development-environment.md)
       + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
    + Desenvolver{#develop}
-      + [Criar um projeto de Computação de ativos](./asset-compute/develop/project.md)
+      + [Criar um projeto de Asset compute](./asset-compute/develop/project.md)
       + [Configurar variáveis de ambiente](./asset-compute/develop/environment-variables.md)
       + [Configurar o manifest.yml](./asset-compute/develop/manifest.md)
       + [Desenvolver um trabalhador](./asset-compute/develop/worker.md)
