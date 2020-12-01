@@ -44,7 +44,7 @@ Tabelas são usadas para exibir dados de maneira tabular. As linhas na tabela pr
    * Documento de comunicação interativa
    * sampleretirementaccountdata.json
 
-* Abra o Documento de comunicação interativa no modo [de](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html)edição.
+* Abra o Documento Interative Communication no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Adicione o fragmento de layout TableDemo à seção de contribuições.
 * Vincule as células da tabela aos elementos apropriados do Modelo de dados de formulário, conforme mostrado no vídeo
