@@ -38,21 +38,21 @@ Este vídeo explora a configuração do Pipeline para o Programa no Cloud Manage
 
 ## Uma execução de pipeline com falha
 
-Este vídeo explora a execução do Pipeline de CI/CD usando o código que falha nas verificações de qualidade necessárias do Cloud Manager, usando a ramificação do **[!DNL yellow]** repositório.
+Este vídeo explora a execução do Pipeline CI/CD usando o código que falha nas verificações de qualidade necessárias do Cloud Manager, usando a ramificação do repositório **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Uma execução bem-sucedida do pipeline
 
-Este vídeo explora a execução bem-sucedida do CI/CD Pipeline usando o código que passa pelas verificações de qualidade necessárias do Cloud Manager, usando a ramificação do **[!DNL master]** repositório.
+Este vídeo explora a execução bem-sucedida do pipeline de CI/CD usando o código que passa pelas verificações de qualidade necessárias do Cloud Manager, usando a ramificação do repositório **[!DNL master]**.
 
-Este vídeo também toca no console de [!UICONTROL Atividade] no Cloud Manager, que permite a reentrada em execuções ativas ou a revisão de execuções concluídas ou com falha.
+Este vídeo também toca no console [!UICONTROL Atividade] no Cloud Manager, que permite a reentrada em execuções ativas ou a revisão de execuções concluídas ou com falha.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Materiais de suporte
 
 * [Guia do usuário do Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Baixar regras de [!DNL SonarQube] verificação de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Baixar regras de  [!DNL SonarQube] verificação de código](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX disponível na parte inferior da seção vinculada*
 * [[!DNL SonarQube] Índice de regras Java](https://rules.sonarsource.com/java/)
