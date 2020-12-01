@@ -26,8 +26,8 @@ Este artigo fornece ativos de amostra para gerar documentos de Comunicações in
 
 ## Geração de lote usando a pasta assistida
 
-* Importe o modelo [de comunicação](assets/Beneficiaries-confirmation.zip) interativa para o servidor AEM Forms.
-* Importe a configuração [da pasta](assets/batch-generation-api.zip)assistida. Isso criará uma pasta chamada `batchAPI` na sua unidade C.
+* Importe o [modelo de comunicação interativa](assets/Beneficiaries-confirmation.zip) para o servidor AEM Forms.
+* Importe a [configuração de pasta assistida](assets/batch-generation-api.zip). Isso criará uma pasta chamada `batchAPI` na unidade C.
 
 **Se você estiver executando o AEM Forms em sistemas operacionais que não sejam Windows, siga as três etapas mencionadas abaixo:**
 
@@ -37,14 +37,14 @@ Este artigo fornece ativos de amostra para gerar documentos de Comunicações in
 
 ![path](assets/watched-folder-batch-api-basic.PNG)
 
-* Baixe e extraia o conteúdo do arquivo [](assets/jsonfile.zip)zip. O arquivo zip contém a pasta chamada `jsonfile` que contém o `beneficiaries.json` arquivo. Esse arquivo tem os dados para gerar 3 documentos.
+* Baixe e extraia o conteúdo de [arquivo zip](assets/jsonfile.zip). O arquivo zip contém a pasta chamada `jsonfile` que contém o arquivo `beneficiaries.json`. Esse arquivo tem os dados para gerar 3 documentos.
 
-* Solte a `jsonfile` pasta na pasta de entrada da sua pasta assistida.
+* Solte a pasta `jsonfile` na pasta de entrada da sua pasta assistida.
 * Depois que a pasta for selecionada para processamento, verifique a pasta de resultados da pasta assistida. Você deve ver 3 arquivos PDF gerados
 
 ## Geração de lote usando solicitações REST
 
-Você pode invocar a API [](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) em lote por meio de solicitações REST. Você pode expor pontos de extremidade REST para outros aplicativos para chamar a API para gerar documentos.
+Você pode chamar a [API de lote](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) por meio de solicitações REST. Você pode expor pontos de extremidade REST para outros aplicativos para chamar a API para gerar documentos.
 A amostra de ativos fornecida expõe o ponto de extremidade REST para gerar documentos de comunicação interativa. O servlet aceita os seguintes parâmetros:
 
 * fileName - Localização do arquivo de dados no sistema de arquivos.
@@ -53,12 +53,13 @@ A amostra de ativos fornecida expõe o ponto de extremidade REST para gerar docu
 * channelType - Imprimir, Web ou ambos
 * recordId - caminho JSON para elemento para definir o nome de uma comunicação interativa
 
-A captura de tela a seguir mostra os parâmetros e seus valores![de solicitação de amostra](assets/generate-ic-batch-servlet.PNG)
+A captura de tela a seguir mostra os parâmetros e seus valores
+![solicitação de amostra](assets/generate-ic-batch-servlet.PNG)
 
 ## Implantar ativos de amostra em seu servidor
 
-* Importar [ICTemplate](assets/ICTemplate.zip) usando o gerenciador [de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importar manipulador [de envio](assets/BatchAPICustomSubmit.zip) personalizado usando o gerenciador [de pacote](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe o formulário [](assets/BatchGenerationAPIAF.zip) adaptativo usando a interface do [Forms e do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Implantar e start do pacote [OSGI](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) personalizado usando o console da Web [Felix](http://localhost:4502/system/console/bundles)
+* Importe [ICTemplate](assets/ICTemplate.zip) usando [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
+* Importar [processador de Submissão Personalizado](assets/BatchAPICustomSubmit.zip) utilizando [gestor de pacote](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe [Formulário adaptativo](assets/BatchGenerationAPIAF.zip) usando a [interface Forms e Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Implantar e start [Pacote OSGI personalizado](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) usando [console Web Felix](http://localhost:4502/system/console/bundles)
 * [Acionar geração de lote enviando o formulário](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
