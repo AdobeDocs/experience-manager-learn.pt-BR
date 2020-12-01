@@ -29,7 +29,7 @@ AEM pesquisa de tradução inteligente permite que os usuários façam buscas po
 
 A pesquisa de tradução inteligente é um complemento perfeito para AEM tags inteligentes que são aplicadas a ativos em inglês.
 
-Este vídeo supõe que [AEM Pesquisa](smart-translation-search-technical-video-setup.md) de tradução inteligente foi configurada.
+Este vídeo supõe que [AEM Pesquisa de tradução inteligente](smart-translation-search-technical-video-setup.md) foi configurada.
 
 ## Como a pesquisa de tradução inteligente funciona {#how-smart-translation-search-works}
 
