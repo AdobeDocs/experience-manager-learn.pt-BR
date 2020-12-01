@@ -35,19 +35,19 @@ O home page do site WKND exibe atividades locais ou a melhor coisa a se fazer em
 
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
-1. Faça logon no [Adobe Experience Cloud](https://experience.adobe.com/), toque no __Público alvo__ e navegue até a guia __Atividade__
+1. Faça logon em [Adobe Experience Cloud](https://experience.adobe.com/), toque em __Público alvo__, navegue até a guia __Atividade__
 
-   + Se você não vir o __Público alvo__ no painel Experience Cloud, verifique se a organização do Adobe correta está selecionada no alternador da organização no canto superior direito e se o usuário recebeu acesso ao Público alvo no [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se você não vir __Público alvo__ no painel Experience Cloud, verifique se a organização Adobe correta está selecionada no alternador da organização no canto superior direito e se o usuário recebeu acesso ao Público alvo em [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Clique no botão **Criar Atividade** e escolha **atividade de teste** A/B
+1. Clique no botão **Criar Atividade** e escolha **Teste A/B** atividade
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-1. Selecione a opção **Visual Experience Composer** , forneça o URL da Atividade e clique em **Avançar**
+1. Selecione a opção **Visual Experience Composer**, forneça o URL da Atividade e clique em **Avançar**
 
    ![URL de atividade](assets/ab-test-url.png)
 
-1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência** .
+1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência**.
 
    ![Experiência A](assets/experience.png)
 
@@ -55,16 +55,16 @@ O home page do site WKND exibe atividades locais ou a melhor coisa a se fazer em
 
    ![Elemento](assets/select-element.png)
 
-1. Altere o texto de *Camping in Western Australia* para *Adventures of Australia*. Uma lista de alterações adicionadas a uma Experiência será exibida em Modificações. Você pode clicar e editar o item modificado para visualização em seu seletor de CSS e o novo conteúdo adicionado a ele.
+1. Altere o texto de *Acampamento na Austrália Ocidental* para *Aventuras da Austrália*. Uma lista de alterações adicionadas a uma Experiência será exibida em Modificações. Você pode clicar e editar o item modificado para visualização em seu seletor de CSS e o novo conteúdo adicionado a ele.
 
    ![Aventuras](assets/adventures.png)
 
-1. Renomeie a *Experiência A* para *Aventura*
-1. Da mesma forma, atualize o texto sobre a *Experiência B* de *Camping no oeste da Austrália* para *Explorar a natureza selvagem* australiana.
+1. Renomear *Experiência A* para *Aventura*
+1. Da mesma forma, atualize o texto em *Experiência B* de *Compartilhamento na Austrália Ocidental* para *Explorar a natureza selvagem australiana*.
 
    ![Explorar](assets/explore.png)
 
-1. Clique em **Avançar** para ir para Definição de metas e vamos manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
+1. Clique em **Próximo** para ir para Definição de metas e vamos manter uma alocação de tráfego Manual de 50-50 entre as duas experiências.
 
    ![Direcionar](assets/targeting.png)
 
