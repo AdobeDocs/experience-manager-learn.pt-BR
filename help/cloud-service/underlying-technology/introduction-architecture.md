@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Introdução à pilha de arquitetura AEM {#introduction-architecture}
 
-Apresenta as tecnologias de [!DNL OSGi], [!DNL JCR], [!DNL Oak]e [!DNL Sling] como parte da pilha da tecnologia Adobe Experience Manager.
+Apresenta as tecnologias [!DNL OSGi], [!DNL JCR], [!DNL Oak] e [!DNL Sling] como parte da pilha de tecnologias Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32034/?quality=12&learn=on)
