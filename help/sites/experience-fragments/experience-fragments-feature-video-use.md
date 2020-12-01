@@ -56,5 +56,5 @@ AEM 6.5, agora oferece suporte aos recursos de pesquisa de texto completo para F
 
 >[!VIDEO](https://video.tv.adobe.com/v/27720/?quality=9&learn=on)
 
-* **Autores** de conteúdo (pesquisa interna) agora podem pesquisar por uma parte de texto em um Fragmento de experiência e o resultado inclui os fragmentos de experiência que contêm o texto, bem como a página que faz referência ao fragmento de experiência.
-* **Usuários** do site (pesquisa externa) agora podem realizar uma pesquisa de texto completo usando o componente de pesquisa, e o resultado inclui páginas do site que fazem referência ao fragmento da experiência que contém a palavra-chave de pesquisa.
+* **Autores**  de conteúdo (pesquisa interna) agora podem pesquisar por uma parte de texto em um Fragmento de experiência e o resultado inclui os fragmentos de experiência que contêm o texto, bem como a página que faz referência ao fragmento de experiência.
+* **Usuários**  do site (pesquisa externa) agora podem realizar uma pesquisa de texto completo usando o componente de pesquisa, e o resultado inclui páginas do site que fazem referência ao fragmento da experiência que contém a palavra-chave de pesquisa.
