@@ -6,10 +6,10 @@ user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores 
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 + [Visão geral](overview.md)
 + [Práticas recomendadas a serem seguidas](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configurar a autenticação OKTA com o autor de AEM](adaptive-forms/single-sign-on-with-okta.md)
-+ Criação do seu primeiro formulário adaptável {#creating-your-first-adaptive-form}
++ Criando seu primeiro formulário adaptável {#creating-your-first-adaptive-form}
    + [Introdução e configuração](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Criar modelo de formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Criar fragmento de formulário](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -106,7 +106,7 @@ ht-degree: 6%
    + [Criar o formulário principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [Criar o formulário MyAccount (Minha conta)](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [Implantar a amostra](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Exportação de dados enviados no formato CSV{#export-submitted-data-csv-format}
++ Exportar dados enviados no formato CSV{#export-submitted-data-csv-format}
    + [Exportar dados enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formulários HTML5{#html5-forms}
    + [Criar formulário HTML5](html5-forms/create-html5-form.md)
@@ -132,15 +132,15 @@ ht-degree: 6%
    + [Variável ArrayList](variables-aem-workflow/part4.md)
    + [Variável de modelo de dados de formulário](variables-aem-workflow/form-data-model.md)
    + [Editor de regras no fluxo de trabalho AEM](variables-aem-workflow/part5.md)
-+ Armazenamento e recuperação de dados de formulário no banco de dados MySQL{#storing-and-retrieving-form-data}
++ Armazenamento e Recuperação de Dados de Formulário no MySQL DB{#storing-and-retrieving-form-data}
    + [Introdução](storing-retrieving-form-data/introduction.md)
    + [Configurar fonte de dados](storing-retrieving-form-data/part1.md)
-   + [Servlet para armazenar dados](storing-retrieving-form-data/part2.md)
-   + [Serviço para buscar dados](storing-retrieving-form-data/part3.md)
+   + [Serviço para armazenar dados](storing-retrieving-form-data/part3.md)
+   + [Criar servlet](storing-retrieving-form-data/part2.md)
    + [Biblioteca do cliente](storing-retrieving-form-data/part4.md)
    + [Modelo de formulário adaptável](storing-retrieving-form-data/part5.md)
    + [Implantar ativos de amostra](storing-retrieving-form-data/part6.md)
-+ Acionando AEM fluxo de trabalho a partir do envio do Formulário móvel{#offline-mobile-form-submission}
++ Acionando AEM fluxo de trabalho a partir do envio do formulário móvel{#offline-mobile-form-submission}
    + [Introdução](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Processar envio de PDF](offline-mobile-form-submission/part-two.md)
@@ -155,7 +155,7 @@ ht-degree: 6%
 + Listando tipos de ativos personalizados no Forms Portal{#listing-custom-asset-types}
    + [Parte 1 - Registrar tipos de ativos personalizados](listing-custom-asset-types/part1.md)
    + [Parte2 - Criação de modelo personalizado](listing-custom-asset-types/part2.md)
-+ AEM Forms com Marketing{#aem-forms-with-marketo}
++ AEM Forms com Marketo{#aem-forms-with-marketo}
    + [Parte1 - Introdução](aem-forms-with-marketo/part1.md)
    + [Parte2 - Autenticação personalizada](aem-forms-with-marketo/part2.md)
    + [Parte3 - Fonte de dados](aem-forms-with-marketo/part3.md)
@@ -204,7 +204,7 @@ ht-degree: 6%
    + [Uso do componente Tabela no Documento Canal de impressão AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Geração de Documento do Interative Communications para Canal de Impressão usando Pastas de Monitoramento](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Interactive Communications For Web Channel {#ic-web-channel-tutorial}
++ Interative Communications For Web Canal {#ic-web-channel-tutorial}
    + [Introdução](ic-web-channel-tutorial/introduction.md)
    + [Configurar o Tomcat](ic-web-channel-tutorial/partone.md)
    + [Criar fonte de dados](ic-web-channel-tutorial/parttwo.md)
