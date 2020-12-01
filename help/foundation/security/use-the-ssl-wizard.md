@@ -13,7 +13,7 @@ discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
 translation-type: tm+mt
 source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Assistente de configuração de SSL da Adobe Experience Manager para facilitar a
 
 ## Chave privada e download de certificado autoassinado
 
-O zip a seguir contém [!DNL DER] e [!DNL CRT] arquivos necessários para a configuração AEM SSL no localhost e destina-se apenas a fins de desenvolvimento local.
+O zip a seguir contém os arquivos [!DNL DER] e [!DNL CRT] necessários para configurar AEM SSL no localhost e destinados apenas a fins de desenvolvimento local.
 
-Os arquivos [!DNL DER] e [!DNL CERT] os arquivos são fornecidos para conveniência e gerados usando as etapas descritas na seção Gerar chave privada e certificado autoassinado abaixo.
+Os arquivos [!DNL DER] e [!DNL CERT] são fornecidos para conveniência e gerados usando as etapas descritas na seção Gerar chave privada e certificado autoassinado abaixo.
 
 Se necessário, a senha do certificado é **admin**.
 
