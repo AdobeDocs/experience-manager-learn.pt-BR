@@ -26,11 +26,11 @@ A meta para este tutorial de várias partes é ensinar um desenvolvedor que é n
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-O tutorial é projetado para funcionar com **AEM como Cloud Service** e é compatível com versões anteriores **AEM 6.5+** e **AEM 6.4.2+**.
+O tutorial foi projetado para funcionar com **AEM como um Cloud Service** e é compatível com versões anteriores com **AEM 6.5+** e **AEM 6.4.2+**.
 
 **[Visualização o tutorial aqui!](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## Deploying WKND to AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## Implantação do WKND para AEM como Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
 Após concluir o tutorial da WKND, assista ao vídeo abaixo para obter uma visão geral de como implantar o projeto da WKND para AEM como um Cloud Service.
 
