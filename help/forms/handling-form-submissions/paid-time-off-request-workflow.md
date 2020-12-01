@@ -27,7 +27,7 @@ Neste artigo, observaremos um fluxo de trabalho simples usado para solicitar Tem
 * O administrador abre o formulário. O administrador não deve ser capaz de editar nenhuma informação preenchida pelo remetente.
 * A seção Aprovador deve estar visível para o aprovador (nesse caso, é o usuário administrador AEM).
 
-Para cumprir o requisito acima, usamos um campo oculto chamado **initialstep** no formulário e seu valor padrão é definido como Yes.Quando o formulário é submetido, a primeira etapa do fluxo de trabalho define o valor da etapa inicial como No. O formulário tem regras de negócios para ocultar e mostrar as seções apropriadas com base no valor da etapa inicial.
+Para cumprir o requisito acima, usamos um campo oculto chamado **initialstep** no formulário e seu valor padrão é definido como Sim.Quando o formulário é submetido, a primeira etapa do fluxo de trabalho define o valor da etapa inicial como Não. O formulário tem regras de negócios para ocultar e mostrar as seções apropriadas com base no valor da etapa inicial.
 
 **Configurar formulário para acionar AEM fluxo de trabalho**
 
@@ -51,8 +51,8 @@ Para testar este fluxo de trabalho no seu sistema, siga as etapas mencionadas ab
 * [Baixe e implante DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Baixe e implante o pacote OSGI personalizado SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [Importar os ativos relacionados a este artigo para AEM](assets/helpxworkflow.zip)
-* Abrir o formulário Solicitação de [tempo limite](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Abra o formulário [Solicitação de tempo limite](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie
-* Open the [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Você deve ver uma nova tarefa atribuída. Abra o formulário. Os dados do remetente devem ser somente leitura e uma nova seção do aprovador deve estar visível.
-* Explore o modelo [de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Abra a caixa de entrada [a1/>. ](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html) Você deve ver uma nova tarefa atribuída. Abra o formulário. Os dados do remetente devem ser somente leitura e uma nova seção do aprovador deve estar visível.
+* Explore o [modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
 * Explore a etapa do processo. Esta é a etapa que define o valor da etapa inicial como Não.
