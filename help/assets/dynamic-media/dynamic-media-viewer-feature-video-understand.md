@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Como entender o Asset Viewer com AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# Como entender o Visualizador de ativos com AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
 AEM aprimoramentos do Visualizador de Dynamic Media permitem que AEM autores definam e personalizem os ativos da experiência que serão apresentados aos usuários do site.
 
