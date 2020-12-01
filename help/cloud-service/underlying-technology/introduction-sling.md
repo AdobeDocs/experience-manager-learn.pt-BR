@@ -19,6 +19,6 @@ ht-degree: 4%
 
 # Introdução à [!DNL Sling] {#introduction-sling}
 
-Uma introdução ao [!DNL Sling], uma [!DNL RESTful] estrutura da Web de código aberto que faz parte da pilha de tecnologia básica da Adobe Experience Manager.
+Uma introdução ao [!DNL Sling], uma estrutura da Web de código aberto [!DNL RESTful] que faz parte da pilha de tecnologias subjacentes da Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
