@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do PDFG no AEM Forms{#using-pdfg-in-aem-forms}
+# Usando o PDFG no AEM Forms{#using-pdfg-in-aem-forms}
 
 Demonstração do recurso Arrastar e soltar para criar PDF usando o AEM Forms
 
@@ -31,13 +31,13 @@ Os ativos associados a este artigo permitirão que você arraste e solte documen
 
 Para instalar os ativos de demonstração, execute as seguintes etapas
 
-1. Configure o PDFG conforme mencionado neste documento [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Configure o PDFG conforme mencionado neste documento [here](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Siga a documentação apropriada relacionada à sua versão do AEM Forms.
 1. [Importe e instale ativos relacionados a este artigo usando o gerenciador de pacotes.](assets/createpdfgdemov2.zip)
-1. [Navegue até post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) em seu CRX
+1. [Navegue até post.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) jspin em seu CRX
 1. Altere o local de salvamento de acordo com sua preferência (linha 9)
 1. Salve as alterações.
-1. Abra a página [](http://localhost:4502/content/DocumentServices/CreatePDFG.html) html para arrastar e soltar arquivos para conversão.
+1. Abra a [ página html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) para arrastar e soltar arquivos para conversão.
 1. Solte um arquivo de palavras ou jpg na área de soltar.
 1. O documento de entrada será convertido em PDF e salvo no mesmo local especificado no ponto 4.
 
