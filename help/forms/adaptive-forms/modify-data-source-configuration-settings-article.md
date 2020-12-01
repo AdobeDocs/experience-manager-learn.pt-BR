@@ -30,5 +30,7 @@ As capturas de tela abaixo mostram as configurações da fonte de dados no AEM F
 
 **Configuração da fonte de dados no AEM 6.4**
 
-![64Configuração](assets/64release.gif)da fonte de dados **editável Configuração da fonte de dados na AEM 6.5 e superior**![65Configuração da fonte de dados](assets/modifiabledatasource.jfif)
+![64Configuração ](assets/64release.gif)
+**da fonte de dadosConfiguração da fonte de dados editável no AEM 6.5 e superior**
+![65Configuração da fonte de dados](assets/modifiabledatasource.jfif)
 
