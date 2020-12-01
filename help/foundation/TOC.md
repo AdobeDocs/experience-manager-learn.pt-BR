@@ -23,10 +23,10 @@ ht-degree: 19%
    + [Use o Painel Visão geral do sistema](./administration/use-the-system-overview-dashboard.md)
 + Autenticação {#authentication}
    + [Autenticação OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configurar chaves públicas/privadas para usar com E/S Adobe](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Configurar chaves públicas/privadas para usar com o Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Compreensão da autenticação](authentication/authentication-support-article-understand.md)
    + [Compreender a autenticação IMS no AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
-+ Gerenciador da Adobe Cloud{#cloud-manager}
++ Adobe Cloud Manager{#cloud-manager}
    + [Saiba mais sobre o Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [Usar o pipeline CI/CD no Gerenciador da Adobe Cloud](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
 + Desenvolvimento {#development}
