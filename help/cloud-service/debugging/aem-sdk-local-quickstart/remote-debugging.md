@@ -23,7 +23,7 @@ ht-degree: 0%
 
 O Início rápido local do SDK do AEM permite a depuração remota do Java a partir do seu IDE, permitindo que você passe pela execução do código ativo em AEM para entender o fluxo de execução exato.
 
-Para conectar um depurador remoto ao AEM, o início rápido local do SDK do AEM deve ser iniciado com parâmetros específicos (`-agentlib:...`) permitindo que o IDE se conecte a ele.
+Para conectar um depurador remoto ao AEM, o início rápido local do SDK do AEM deve ser iniciado com parâmetros específicos (`-agentlib:...`) que permitem que o IDE se conecte a ele.
 
 ```
 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
@@ -36,8 +36,8 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 
 A maioria dos IDEs Java fornecem suporte para a depuração remota de programas Java, no entanto, as etapas de configuração exatas de cada IDE variam. Consulte as instruções de configuração de depuração remota do IDE para saber mais sobre as etapas exatas. Geralmente, as configurações IDE exigem:
 
-+ O host AEM início rápido local do SDK está acompanhando, o que é `localhost`.
-+ A porta AEM início rápido local do SDK está acompanhando a conexão de depuração remota, que é a porta especificada pelo `address` parâmetro ao iniciar AEM início rápido local do SDK.
++ O início rápido local do host AEM SDK está acompanhando, que é `localhost`.
++ A porta AEM início rápido local do SDK está acompanhando a conexão de depuração remota, que é a porta especificada pelo parâmetro `address` ao iniciar AEM início rápido local do SDK.
 + Ocasionalmente, os projetos Maven que fornecem o código fonte para a depuração remota devem ser especificados; este é o(s) projeto(s) de projetos maven do pacote OSGi.
 
 ### Instruções de configuração
