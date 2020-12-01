@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Melhorias no Editor de formulários no AEM Forms {#form-editor-improvements-in-aem-forms}
+# Melhorias no Editor de Formulários no AEM Forms {#form-editor-improvements-in-aem-forms}
 
 O AEM 6.3 apresenta vários novos recursos e melhorias nesta versão para simplificar a experiência de criação de formulários e documentos adaptáveis. Os aprimoramentos ajudam a reduzir o tempo de entrada no mercado e permitem que os usuários corporativos trabalhem com formulários e documentos
 
