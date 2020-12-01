@@ -80,7 +80,7 @@ Neste vídeo, um novo tema será criado com base no tema Escuro Compartilhamento
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Baixar o tema da biblioteca de cliente [personalizada](assets/asc-theme-demo.zip)
+Baixar [Tema Personalizado da Biblioteca de Clientes](assets/asc-theme-demo.zip)
 
 ## Recursos adicionais{#additional-resources}
 
