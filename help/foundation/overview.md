@@ -14,18 +14,18 @@ ht-degree: 22%
 
 # Visão geral {#overview}
 
-A Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para os usuários do AEM Sites [!DNL Assets] e [!DNL Forms].
+A Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para usuários do AEM Sites, [!DNL Assets] e [!DNL Forms].
 
 ## Novidades
 
 * **[Usar gerenciamento de fluxo de trabalho em AEM (Vídeo)](./workflow/use-workflow-management.md)**
-   *AEM fornece visibilidade sobre workflows em execução e facilita o gerenciamento de [!DNL Workflow] definições.*
+   *AEM fornece visibilidade sobre workflows em execução e facilita o gerenciamento de  [!DNL Workflow] definições.*
 
 * **[Saiba mais sobre o Cloud Manager para AEM (Vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *O Cloud Manager for AEM permite gerenciamento, inspeção e autoatendimento fáceis de ambientes AEM.*
 
-* **[Configurar chaves públicas e privadas para uso com E/S de Adobe (Tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Saiba como as teclas e os armazenamentos de chaves são gerados usando [!DNL openssl] esse recurso com E/S de AEM e Adobe.*
+* **[Configurar chaves públicas e privadas para uso com o Adobe I/O (Tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
+   *Saiba como as teclas e os armazenamentos de chaves são gerados usando  [!DNL openssl] esses recursos com o AEM e o Adobe I/O.*
 
 * **[Usar o pipeline CI/CD do Cloud Manager (Vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Saiba como usar o pipeline de CI/CD do Cloud Manager para garantir implantações seguras e consistentes.*
