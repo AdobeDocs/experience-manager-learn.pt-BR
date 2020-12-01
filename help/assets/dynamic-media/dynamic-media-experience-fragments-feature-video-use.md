@@ -29,8 +29,8 @@ O AEM Assets Dynamic Media integra hotspots de ativos com Fragmentos de experiê
 
 >[!NOTE]
 >
->O uso AEM Fragmentos de experiência com os Pontos de conexão do AEM Assets Dynamic Media requer [AEM execução no modo Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) .
+>O uso AEM Fragmentos de experiência com os Pontos de acesso do AEM Assets Dynamic Media requer [AEM para ser executado no modo Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
 
 A variante do fragmento de experiência pop-up mostrada no vídeo está disponível como um pacote AEM abaixo.
 
-Baixar ativos de mídia dinâmica de fragmentos de [experiência](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Baixar [Ativos de Mídia Dinâmica de Fragmentos de Experiência](assets/experience-fragmentsdynamic-mediaassets-100.zip)
