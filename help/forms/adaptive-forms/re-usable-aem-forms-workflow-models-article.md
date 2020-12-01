@@ -27,7 +27,7 @@ A partir do AEM Forms 6.5, agora podemos criar modelos de fluxo de trabalho que 
 Para projetar esse fluxo de trabalho, execute as seguintes etapas
 
 1. Login no AEM
-1. Aponte seu navegador para o modelo [de fluxo de trabalho](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Aponte seu navegador para [modelo de fluxo de trabalho](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Clique em Criar | Criar modelo para adicionar modelo de fluxo de trabalho
 1. Forneça o Nome e o Título apropriados ao modelo de fluxo de trabalho e clique em Concluído
 1. Abrir o modelo recém-criado no modo de edição
@@ -39,7 +39,8 @@ Para projetar esse fluxo de trabalho, execute as seguintes etapas
 Há três maneiras de especificar o caminho do formulário
 
 1. Disponível em um caminho absoluto - isso significa que o fluxo de trabalho será estreitamente associado ao formulário adaptável. Não é isso que queremos aqui
-1. **Submetido ao fluxo de trabalho** - Isso significa que, quando o formulário adaptativo for enviado, o motor de workflow extrairá o nome do formulário dos dados enviados. Esta é a opção que precisa ser selecionada
-1. Disponível em um caminho em uma variável - Isso significa que o formulário adaptativo será selecionado da variável de fluxo de trabalho. A captura de tela a seguir mostra a opção correta que você precisa escolher para desacoplar o fluxo de trabalho do formulário adaptável
+1. **Submetido ao fluxo de trabalho**  - Isso significa que, quando o formulário adaptativo for enviado, o motor de workflow extrairá o nome do formulário dos dados enviados. Esta é a opção que precisa ser selecionada
+1. Disponível em um caminho em uma variável - Isso significa que o formulário adaptável será selecionado da variável de fluxo de trabalho
+A captura de tela a seguir mostra a opção correta que você precisa escolher para desacoplar o fluxo de trabalho do formulário adaptável
 
 ![modelo de fluxo de trabalho](assets/workflomodel.PNG)
