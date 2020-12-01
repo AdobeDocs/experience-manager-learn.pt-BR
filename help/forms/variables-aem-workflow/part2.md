@@ -37,7 +37,7 @@ Você pode mapear o schema com a variável do tipo JSON no modelo de fluxo de tr
 Para que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
 * [Baixar e importar ativos para AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
-* [Explore o modelo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) de fluxo de trabalho para entender as variáveis usadas no fluxo de trabalho
+* [Explore o ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modelo de fluxo de trabalho para entender as variáveis usadas no fluxo de trabalho
 * [Configurar o serviço de e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abra o formulário adaptativo](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie o formulário
