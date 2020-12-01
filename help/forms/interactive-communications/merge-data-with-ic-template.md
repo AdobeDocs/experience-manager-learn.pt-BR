@@ -65,7 +65,7 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### Criar implementação de WorkflowProcess
 
-O trecho de código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no Fluxo de trabalho AEM está associada a essa implementação. Essa implementação espera três argumentos do processo descritos abaixo:
+O trecho de código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no Fluxo de trabalho AEM está associada a essa implementação. Essa implementação espera três argumentos do processo, descritos abaixo:
 
 * Nome do caminho DataFile especificado ao configurar o Formulário adaptável
 * Nome do modelo de canal de impressão
