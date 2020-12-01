@@ -16,21 +16,21 @@ O Capítulo 7 do tutorial usa um aplicativo Android Mobile nativo para consumir 
 
 ## O aplicativo Android Mobile
 
-Este tutorial usa um aplicativo **Android Mobile nativo** simples para consumir e exibir conteúdo de Eventos exposto pelo AEM Content Services.
+Este tutorial usa um **aplicativo Android Mobile nativo simples** para consumir e exibir conteúdo de Eventos exposto pelo AEM Content Services.
 
-O uso do [Android](https://developer.android.com/) não é muito importante e o aplicativo móvel que consome pode ser gravado em qualquer estrutura para qualquer plataforma móvel, por exemplo, iOS.
+O uso do [Android](https://developer.android.com/) é pouco importante, e o aplicativo móvel que consome pode ser gravado em qualquer estrutura para qualquer plataforma móvel, por exemplo, iOS.
 
 O Android é usado para o tutorial devido à capacidade de executar um Emulador Android no Windows, MacOs e Linux, à sua popularidade, e pode ser escrito como Java, uma linguagem bem compreendida pelos desenvolvedores AEM.
 
-*O aplicativo Android Mobile do tutorial **não**tem como objetivo ensinar como criar aplicativos Android Mobile ou transmitir práticas recomendadas de desenvolvimento para Android, mas ilustrar como AEM Content Services pode ser consumido de um aplicativo móvel.*
+*O aplicativo Android Mobile do tutorial ****não tem como objetivo ensinar como criar aplicativos Android Mobile ou transmitir práticas recomendadas de desenvolvimento para Android, mas sim ilustrar como AEM Content Services pode ser consumido de um aplicativo móvel.*
 
 ### Como AEM o Content Services orienta a experiência do aplicativo móvel
 
 ![Mapeamento de aplicativos móveis para serviços de conteúdo](assets/chapter-7/content-services-mapping.png)
 
-1. O **logotipo** , conforme definido pelo componente [!DNL Events API] **Imagem da** página.
-1. A linha **da** tag conforme definido no componente [!DNL Events API] **Texto da** página.
-1. Esta lista **de** Evento é derivada da serialização dos Fragmentos de conteúdo do Evento, expostos através do componente **de Lista do fragmento de** conteúdo configurado.
+1. O logotipo ****, conforme definido pelo [!DNL Events API] componente de imagem **da página**.
+1. A **linha de tag**, conforme definido na [!DNL Events API] página **Componente de texto**.
+1. Essa **lista do Evento** é derivada da serialização dos Fragmentos do conteúdo do Evento, expostos pelo **componente de Lista do fragmento do conteúdo** configurado.
 
 ## Demonstração do aplicativo móvel
 
@@ -38,39 +38,40 @@ O Android é usado para o tutorial devido à capacidade de executar um Emulador 
 
 ### Configuração do aplicativo móvel para uso fora do host local
 
-Se o AEM Publish não estiver sendo executado em **http://localhost:4503** , o host e a porta podem ser atualizados no aplicativo móvel [!DNL Settings] para apontar para a propriedade host/porta do AEM Publish.
+Se o AEM Publish não estiver sendo executado em **http://localhost:4503** o host e a porta podem ser atualizados na [!DNL Settings] do aplicativo móvel para apontar para a propriedade host/porta do AEM Publish.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
 
 ## Execução local do aplicativo móvel
 
 1. Baixe e instale o [Android Studio](https://developer.android.com/studio/install) para instalar o Android Emulator.
-1. **Baixe** o arquivo Android [!DNL APK] [GitHub > Ativos > wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-1. Abrir o **Android Studio**
-   * Na primeira inicialização do Android Studio, um prompt para instalar o [!DNL Android SDK] será apresentado. Aceite os padrões e conclua a instalação.
+1. **** Baixe o  [!DNL APK] arquivo Android  [GitHub > Ativos > wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+1. Abrir **Android Studio**
+   * Na inicialização inicial do Android Studio, um prompt para instalar o [!DNL Android SDK] será apresentado. Aceite os padrões e conclua a instalação.
 1. Abra o Android Studio e selecione **Perfil ou Depurar APK**
 1. Selecione o arquivo APK (**wknd-mobile.x.x.apk**) baixado na Etapa 2 e clique em **OK**
-   * Se for solicitado a **Criar uma nova pasta** ou **Usar existente**, selecione **Usar existente**.
-1. Na inicialização inicial do Android Studio, clique com o botão direito do mouse em **wknd-mobile.x.x** na lista Projetos e selecione **Abrir configurações** do módulo.
-   * Em **Módulos > wknd-mobile.x.x > guia** Dependências, selecione Plataforma **** Android API 29. Toque em OK para fechar e salvar as alterações.
+   * Se for solicitado a **Criar uma nova pasta**, ou **Usar existente**, selecione **Usar existente**.
+1. Na inicialização inicial do Android Studio, clique com o botão direito do mouse em **wknd-mobile.x.x.x** na lista Projetos e selecione **Abrir configurações do módulo**.
+   * Em **Módulos > wknd-mobile.x.x.x > guia Dependências**, selecione **Plataforma Android API 29**. Toque em OK para fechar e salvar as alterações.
    * Se você não fizer isso, verá um erro &quot;Selecione o Android SDK&quot; ao tentar iniciar o emulador.
-1. Abra o Gerenciador **de** AVD selecionando **Ferramentas > Gerenciador** de AVD ou tocando no ícone do Gerenciador **de** AVD na barra superior.
-1. Na janela **AVD Manager** , clique em **+ Create Virtual Device (Criar dispositivo virtual)...** se você ainda não tiver um dispositivo registrado.
-   1. À esquerda, selecione a categoria de **telefone** .
+1. Abra o **Gerenciador AVD** selecionando **Ferramentas > Gerenciador AVD** ou tocando no ícone **Gerenciador AVD** na barra superior.
+1. Na janela **AVD Manager**, clique em **+ Criar dispositivo virtual...** se você ainda não tiver o dispositivo registrado.
+   1. À esquerda, selecione a categoria **Telefone**.
    1. Selecione um **Pixel 2**.
-   1. Clique no botão **Avançar** .
-   1. Selecione **P** com nível 29 **de** API.
+   1. Clique no botão **Next**.
+   1. Selecione **Q** com **API Level 29**.
       * Após a primeira inicialização do AVD Manager, você será solicitado a Baixar a API com versão. Clique no link Download ao lado da versão &quot;Q&quot; e conclua o download e a instalação.
-   1. Clique no botão **Avançar** .
-   1. Clique no botão **Concluir** .
-1. Feche a janela **AVD Manager** .
-1. Na barra de menus superior, selecione **wknd-mobile.x.x** no menu suspenso **Executar/Editar configurações** .
-1. Toque no botão **Executar** ao lado da opção **Executar/Editar configuração selecionada**
-1. No pop-up, selecione o dispositivo **[!DNL Pixel 2 API 29]** virtual recém-criado e toque em **OK**
-1. Se o [!DNL WKND Mobile] aplicativo não for carregado imediatamente, localize e toque no **[!DNL WKND]** ícone na tela inicial do Android no emulador.
-   * Se o emulador for iniciado, mas a tela do emulador permanecer preta, toque no botão **liga/desliga** na janela de ferramentas do emulador ao lado da janela do emulador.
+   1. Clique no botão **Next**.
+   1. Clique no botão **Concluir**.
+1. Feche a janela **AVD Manager**.
+1. Na barra de menus superior, selecione **wknd-mobile.x.x** no menu suspenso **Executar/Editar configurações**.
+1. Toque no botão **Executar** ao lado da **Executar/Editar Configuração** selecionada
+1. No pop-up, selecione o dispositivo virtual **[!DNL Pixel 2 API 29]** recém-criado e toque em **OK**
+1. Se o aplicativo [!DNL WKND Mobile] não for carregado imediatamente, localize e toque no ícone **[!DNL WKND]** na tela inicial do Android no emulador.
+   * Se o emulador for iniciado, mas a tela do emulador permanecer preta, toque no botão **power** na janela de ferramentas do emulador ao lado da janela do emulador.
    * Para rolar dentro do dispositivo virtual, clique e segure e arraste.
-   * Para atualizar o conteúdo do AEM, puxe para baixo até que o ícone Atualizar seja exibido e solte.
+   * Para atualizar o conteúdo do AEM, puxe para baixo até o ícone Atualizar
+é exibido e liberado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
 
@@ -78,14 +79,14 @@ Se o AEM Publish não estiver sendo executado em **http://localhost:4503** , o h
 
 Esta seção destaca o código do aplicativo móvel Android que mais interage e depende AEM Content Services e da saída JSON.
 
-Quando carregado, o aplicativo móvel atinge `HTTP GET` `/content/wknd-mobile/en/api/events.model.json` o ponto final do AEM Content Services configurado para fornecer o conteúdo para direcionar o aplicativo móvel.
+Após a carga, o aplicativo móvel coloca `HTTP GET` em `/content/wknd-mobile/en/api/events.model.json`, que é o ponto final do AEM Content Services configurado para fornecer o conteúdo para direcionar o aplicativo móvel.
 
 Como o Modelo editável da API de Eventos (`/content/wknd-mobile/en/api/events.model.json`) está bloqueado, o aplicativo móvel pode ser codificado para procurar informações específicas em locais específicos na resposta JSON.
 
 ### Fluxo de código de alto nível
 
-1. A abertura do [!DNL WKND Mobile] aplicativo chama uma `HTTP GET` solicitação para o AEM Publish em `/content/wknd-mobile/en/api/events.model.json` para coletar o conteúdo para preencher a interface do usuário do aplicativo móvel.
-2. Ao receber o conteúdo do AEM, cada um dos três elementos de visualização do aplicativo móvel, o **logotipo, a linha de tag e a lista** do evento são inicializados com o conteúdo do AEM.
+1. Abrir o aplicativo [!DNL WKND Mobile] chama uma solicitação `HTTP GET` para o AEM Publish em `/content/wknd-mobile/en/api/events.model.json` para coletar o conteúdo para preencher a interface do usuário do aplicativo móvel.
+2. Ao receber o conteúdo do AEM, cada um dos três elementos de visualização do aplicativo móvel, o logotipo **linha de tag e lista de evento** são inicializados com o conteúdo do AEM.
    * Para vincular ao conteúdo AEM ao elemento de visualização do aplicativo móvel, o JSON que representa cada componente AEM é um objeto mapeado para um POJO Java, que por sua vez está vinculado ao elemento de Visualização Android.
       * Componente de imagem JSON → POJO de logotipo → ImageView de logotipo
       * Componente de texto JSON → TagLine POJO → ImageView de texto
@@ -94,7 +95,7 @@ Como o Modelo editável da API de Eventos (`/content/wknd-mobile/en/api/events.m
 
 #### Invocar o ponto final do AEM Content Services
 
-A seguir está uma destilação do código no aplicativo móvel `MainActivity` responsável por chamar AEM Content Services para coletar o conteúdo que direciona a experiência do aplicativo móvel.
+A seguir está uma destilação do código `MainActivity` do aplicativo móvel responsável por chamar AEM Content Services para coletar o conteúdo que direciona a experiência do aplicativo móvel.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
@@ -125,13 +126,13 @@ private void initApp(final List<ViewBinder> viewBinders) {
 }
 ```
 
-`onCreate(..)` é o gancho de inicialização do aplicativo móvel e registra o 3 personalizado `ViewBinders` responsável pela análise do JSON e pelo vínculo dos valores aos `View` elementos.
+`onCreate(..)` é o gancho de inicialização do aplicativo móvel e registra o 3 personalizado  `ViewBinders` responsável pela análise do JSON e pelo vínculo dos valores aos  `View` elementos.
 
-`initApp(...)` é então chamada, o que faz com que o GET HTTP solicite ao ponto final AEM Content Services no AEM Publish para coletar o conteúdo. Ao receber uma resposta JSON válida, a resposta JSON é transmitida a cada um `ViewBinder` que é responsável por analisar o JSON e vinculá-lo aos `View` elementos móveis.
+`initApp(...)` é então chamada, o que faz com que o GET HTTP solicite ao ponto final AEM Content Services no AEM Publish para coletar o conteúdo. Ao receber uma resposta JSON válida, a resposta JSON é transmitida a cada `ViewBinder` responsável por analisar o JSON e vinculá-lo aos elementos `View` móveis.
 
 #### Analisando a resposta JSON
 
-A seguir vamos olhar para o `LogoViewBinder`, que é simples, mas destaca várias considerações importantes.
+Em seguida, vamos analisar o `LogoViewBinder`, que é simples, mas destaca várias considerações importantes.
 
 ```
 public class LogoViewBinder implements ViewBinder {
@@ -151,17 +152,17 @@ public class LogoViewBinder implements ViewBinder {
 }
 ```
 
-A primeira linha de `bind(...)` navega até a Resposta JSON por meio das teclas **:items → root → itens** que representam o Container Layout AEM ao qual os componentes foram adicionados.
+A primeira linha de `bind(...)` navega até a Resposta JSON por meio das teclas **:items → root → items → items**, que representa o Container Layout AEM ao qual os componentes foram adicionados.
 
-Aqui, uma verificação é feita para uma chave chamada **imagem**, que representa o componente de Imagem (novamente, é importante esse nome de nó → A chave JSON é estável). Se este objeto existir, ele lê e mapeia para o POJO [de imagem](#image-pojo) personalizado por meio da `ObjectMapper` biblioteca Jackson. O Image POJO é explorado abaixo.
+Aqui, uma verificação é feita para uma chave chamada **image**, que representa o componente de Imagem (novamente, é importante esse nome de nó → A chave JSON é estável). Se esse objeto existir, ele será lido e mapeado para o [POJO de imagem personalizado](#image-pojo) por meio da biblioteca Jackson `ObjectMapper`. O Image POJO é explorado abaixo.
 
-Por fim, o logotipo `src` é carregado no Android ImageView usando a biblioteca [!DNL Glide] auxiliar.
+Finalmente, o logotipo `src` é carregado no Android ImageView usando a biblioteca auxiliar [!DNL Glide].
 
 Observe que devemos fornecer o schema AEM, o host e a porta (via `aemHost`) para a instância de publicação de AEM, pois AEM Content Services fornecerá apenas o caminho JCR (ou seja, `/content/dam/wknd-mobile/images/wknd-logo.png`) ao conteúdo referenciado.
 
 #### A imagem POJO{#image-pojo}
 
-Embora opcional, o uso de [Jackson ObjectMapper](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) ou recursos semelhantes fornecidos por outras bibliotecas, como o Gson, ajuda a mapear estruturas JSON complexas para POJOs Java sem o tédio de lidar diretamente com os próprios objetos JSON nativos. Neste caso simples, mapeamos a `src` chave do objeto `image` JSON para o `src` atributo no POJO de imagem diretamente através da `@JSONProperty` anotação.
+Embora opcional, o uso de [Jackson ObjectMapper](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) ou recursos semelhantes fornecidos por outras bibliotecas como Gson ajuda a mapear estruturas JSON complexas para POJOs Java sem o tédio de lidar diretamente com os próprios objetos JSON nativos. Neste caso simples, mapeamos a tecla `src` do objeto JSON `image` para o atributo `src` no POJO de imagem diretamente através da anotação `@JSONProperty`.
 
 ```
 package com.adobe.aem.guides.wknd.mobile.android.models;
@@ -178,7 +179,7 @@ public class Image {
 }
 ```
 
-O POJO do Evento, que requer selecionar muito mais pontos de dados do objeto JSON, se beneficia dessa técnica mais do que a Imagem simples, que só queremos `src`.
+O POJO do Evento, que requer selecionar muito mais pontos de dados do objeto JSON, se beneficia dessa técnica mais do que a imagem simples, que só queremos que seja o `src`.
 
 ## Explore a experiência do aplicativo móvel
 
@@ -186,9 +187,9 @@ Agora que você tem uma ideia de como AEM Content Services pode conduzir a exper
 
 Após cada etapa, atualize o aplicativo móvel e verifique a atualização da experiência móvel.
 
-1. Criar e publicar **novo[!DNL Event]fragmento de conteúdo**
-1. Cancelar a publicação de um fragmento de **conteúdo[!DNL Event]existente**
-1. Publicar uma atualização na linha de **tag**
+1. Criar e publicar **novo [!DNL Event] Fragmento de conteúdo**
+1. Cancelar a publicação de um **fragmento de conteúdo [!DNL Event] existente**
+1. Publicar uma atualização na **Linha de tag**
 
 ## Parabéns
 
