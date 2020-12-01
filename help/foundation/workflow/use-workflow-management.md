@@ -33,7 +33,7 @@ Os seguintes aspectos do gerenciamento de fluxo de trabalho, introduzidos no AEM
 + Notifique os usuários com uma dica de ferramenta de aviso ao tentar editar um Modelo de Fluxo de Trabalho OTB ou Iniciador.
 + Capacidade de refazer alterações feitas em um Modelo de Fluxo de Trabalho OTB ou Iniciadores.
 
-Este vídeo usa [!DNL Workflow models] para demonstrar esse conjunto de capacidades, no entanto, eles também se aplicam a [!DNL AEM Launchers].
+Este vídeo usa [!DNL Workflow models] para demonstrar esse conjunto de recursos, no entanto, eles também se aplicam a [!DNL AEM Launchers].
 
 
 >[!NOTE]
