@@ -26,13 +26,13 @@ Cada AEM como ambiente tem seu próprio Developer Console.
 
 ## Acesso ao Developer Console
 
-Para acessar e usar o Console do desenvolvedor, as seguintes permissões devem ser concedidas ao Adobe ID do desenvolvedor por meio do Admin Console do [Adobe](https://adminconsole.adobe.com).
+Para acessar e usar o Console do desenvolvedor, as seguintes permissões devem ser dadas ao Adobe ID do desenvolvedor por meio do Admin Console[Adobe](https://adminconsole.adobe.com).
 
 1. Verifique se a Adobe Org que afetou o Cloud Manager e o AEM como Cloud Service está ativa no switch Adobe Org.
-1. O desenvolvedor deve ser membro do Perfil de produtos do __desenvolvedor - Cloud Service__ do produto do Cloud Manager.
+1. O desenvolvedor deve ser membro do __Developer - Cloud Service__ Perfil de produto do Cloud Manager.
    + Se essa associação não existir, o desenvolvedor não poderá fazer logon no Developer Console.
-1. O desenvolvedor deve ser membro do Perfil de produtos Administradores __de__ AEM do AEM Author and Publish do serviço.
-   + Se essa associação não existir, o [status](#status) de despejo expirará com um erro 401 Unauthorized.
+1. O desenvolvedor deve ser membro do Perfil de produto __Administradores AEM__ do AEM Author and Publish service.
+   + Se essa associação não existir, o [status](#status) despejo expirará com um erro 401 Unauthorized.
 
 ### Solução de problemas de acesso ao Console do desenvolvedor
 
@@ -72,7 +72,7 @@ O status fornece opções para a saída AEM estado de tempo de execução espec�
 
 ### Pacotes
 
-Os pacotes listas todos os pacotes OSGi no AEM. Essa funcionalidade é semelhante a [AEM Pacotes](http://localhost:4502/system/console/bundles) OSGi do Início Rápido local do SDK em `/system/console/bundles`.
+Os pacotes listas todos os pacotes OSGi no AEM. Essa funcionalidade é semelhante a [AEM Pacotes OSGi do Início Rápido local do SDK](http://localhost:4502/system/console/bundles) em `/system/console/bundles`.
 
 Ajuda do pacote na depuração por:
 
@@ -82,7 +82,7 @@ Ajuda do pacote na depuração por:
 
 ### Componentes
 
-Componentes lista todos os componentes OSGi no AEM. Essa funcionalidade é semelhante a [AEM componentes](http://localhost:4502/system/console/components) OSGi do Início rápido local do SDK em `/system/console/components`.
+Componentes lista todos os componentes OSGi no AEM. Essa funcionalidade é semelhante a [AEM componentes OSGi do Início rápido local do SDK](http://localhost:4502/system/console/components) em `/system/console/components`.
 
 Os componentes ajudam na depuração por:
 
@@ -93,7 +93,7 @@ Os componentes ajudam na depuração por:
 
 ### Configurações
 
-As configurações listas todas as configurações do componente OSGi (propriedades e valores OSGi). Essa funcionalidade é semelhante a [AEM Gerenciador](http://localhost:4502/system/console/configMgr) de configuração OSGi do SDK em `/system/console/configMgr`.
+As configurações listas todas as configurações do componente OSGi (propriedades e valores OSGi). Essa funcionalidade é semelhante a [AEM Gerenciador de Configuração OSGi do SDK](http://localhost:4502/system/console/configMgr) em `/system/console/configMgr`.
 
 As configurações ajudam na depuração ao:
 
@@ -102,7 +102,7 @@ As configurações ajudam na depuração ao:
 
 ### Índices de Oak
 
-Os Índices de Oak fornecem um despejo dos nós definidos abaixo `/oak:index`. Lembre-se de que isso não mostra índices unidos, o que ocorre quando um índice AEM é modificado.
+Os Índices de Oak fornecem um despejo dos nós definidos abaixo de `/oak:index`. Lembre-se de que isso não mostra índices unidos, o que ocorre quando um índice AEM é modificado.
 
 Ajuda dos Índices Oak na depuração ao:
 
@@ -110,7 +110,7 @@ Ajuda dos Índices Oak na depuração ao:
 
 ### Serviços OSGi
 
-Componentes listas todos os serviços OSGi. Essa funcionalidade é semelhante a [AEM serviços](http://localhost:4502/system/console/services) OSGi de início rápido local do SDK em `/system/console/services`.
+Componentes listas todos os serviços OSGi. Essa funcionalidade é semelhante a [AEM serviços OSGi do Início Rápido local do SDK](http://localhost:4502/system/console/services) em `/system/console/services`.
 
 Ajuda dos serviços OSGi na depuração ao:
 
@@ -118,7 +118,7 @@ Ajuda dos serviços OSGi na depuração ao:
 
 ### Tarefas de arremesso
 
-Tarefas de Venda listas todas as filas de Tarefas de Venda. Essa funcionalidade é semelhante a [AEM trabalhos](http://localhost:4502/system/console/slingevent) locais de início rápido do SDK em `/system/console/slingevent`.
+Tarefas de Venda listas todas as filas de Tarefas de Venda. Essa funcionalidade é semelhante a [AEM tarefas locais de início rápido](http://localhost:4502/system/console/slingevent) do SDK em `/system/console/slingevent`.
 
 Ajuda do Sling Jobs na depuração ao:
 
@@ -127,7 +127,7 @@ Ajuda do Sling Jobs na depuração ao:
 
 ## Pacotes Java
 
-Os Pacotes Java permitem verificar se um pacote Java e uma versão estão disponíveis para uso em AEM como Cloud Service. Essa funcionalidade é a mesma que [AEM Localizador](http://localhost:4502/system/console/depfinder) de Dependência do Início Rápido local do SDK em `/system/console/depfinder`.
+Os Pacotes Java permitem verificar se um pacote Java e uma versão estão disponíveis para uso em AEM como Cloud Service. Essa funcionalidade é igual a [AEM Localizador de Dependência de Início Rápido local do SDK](http://localhost:4502/system/console/depfinder) em `/system/console/depfinder`.
 
 ![Console do desenvolvedor - Pacotes Java](./assets/developer-console/java-packages.png)
 
@@ -136,11 +136,11 @@ Os Pacotes Java são usados para impedir que os Pacotes sejam iniciados devido a
 + Certifique-se de que a versão da dependência da API AEM do seu projeto corresponda à versão da versão AEM do ambiente (e, se possível, atualize tudo para a mais recente).
 + Se dependências Maven extras forem usadas no projeto Maven
    + Determine se uma API alternativa fornecida pela dependência da API do SDK AEM pode ser usada.
-   + Se a dependência extra for necessária, verifique se ela é fornecida como um pacote OSGi (em vez de um Jar simples) e se está incorporada ao pacote de código do seu projeto, (`ui.apps`), de forma semelhante à forma como o pacote OSGi principal está incorporado ao `ui.apps` pacote.
+   + Se a dependência extra for necessária, verifique se ela é fornecida como um pacote OSGi (em vez de um Jar simples) e se está incorporada ao pacote de código do seu projeto, (`ui.apps`), de modo semelhante à forma como o pacote OSGi principal está incorporado ao pacote `ui.apps`.
 
 ## Servlets
 
-Servlets são usados para fornecer informações sobre como AEM resolve um URL para um servlet ou script Java (HTL, JSP) que, em última análise, lida com a solicitação. Essa funcionalidade é a mesma que [AEM Resolvedor](http://localhost:4502/system/console/servletresolver) Sling Servlet do Início Rápido local do SDK em `/system/console/servletresolver`.
+Servlets são usados para fornecer informações sobre como AEM resolve um URL para um servlet ou script Java (HTL, JSP) que, em última análise, lida com a solicitação. Essa funcionalidade é igual a [AEM SDK do Sling Servlet Resolver](http://localhost:4502/system/console/servletresolver) em `/system/console/servletresolver`.
 
 ![Developer Console - Servlets](./assets/developer-console/servlets.png)
 
@@ -151,7 +151,7 @@ Servlets ajudam na depuração a determinar:
 
 ## Query
 
-Os query ajudam a fornecer informações sobre o que e como os query de pesquisa são executados em AEM. Essa funcionalidade é a mesma que [AEM console Ferramentas > Desempenho do Query do ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console de início rápido local do SDK.
+Os query ajudam a fornecer informações sobre o que e como os query de pesquisa são executados em AEM. Essa funcionalidade é a mesma do console [AEM Ferramentas > Desempenho do Query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) do Início rápido local do SDK.
 
 Os query só funcionam quando um pod específico é selecionado, pois abre o console Web Desempenho do Query desse pod, exigindo que o desenvolvedor tenha acesso para fazer logon no serviço AEM.
 
