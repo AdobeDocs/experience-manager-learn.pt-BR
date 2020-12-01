@@ -30,19 +30,19 @@ A pesquisa de tradução inteligente permite o uso de termos de pesquisa que nã
 >A pesquisa de tradução inteligente deve ser configurada em cada instância AEM que a exija.
 
 1. Baixe e instale o pacote Oak Search Machine Translation OSGi
-   * [Baixe o pacote Oak Search Machine Translation OSGi](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) que corresponde à versão AEM Oak.
-   * Instale o pacote Oak Search Machine Translation OSGi baixado no AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
+   * [Baixe o ](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) pacote OSGi de tradução do Oak Search Machine que corresponde à versão AEM Oak.
+   * Instale o pacote Oak Search Machine Translation OSGi baixado em AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Baixe e atualize os pacotes de idiomas do Apache Joshua
-   * Baixe e descompacte os pacotes [de idiomas do](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)Apache Joshua desejados.
-   * Edite o `joshua.config` arquivo e comente as 2 linhas que começam com:
+   * Baixe e descompacte os [pacotes de idioma do Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs) desejados.
+   * Edite o arquivo `joshua.config` e comente as 2 linhas que começam com:
 
       ```
       feature-function = LanguageModel ...
       ```
 
    * Determine e registre o tamanho da pasta modelo do pacote de idiomas, pois isso influencia o espaço extra AEM será necessário.
-   * Mova a pasta do pacote de idiomas Apache Joshua descompactada (com as `joshua.config` edições) para
+   * Mova a pasta do pacote de idiomas Apache Joshua descompactada (com as edições `joshua.config`) para
 
       ```
       .../crx-quickstart/opt/<source_language-target_language>
@@ -61,7 +61,7 @@ A pesquisa de tradução inteligente permite o uso de termos de pesquisa que nã
       * AEM tamanho do heap sem idioma + o tamanho do diretório do modelo arredondado para os 2 GB mais próximos
       * Por exemplo: Se os pacotes de idiomas pré-existentes exigirem a execução de 8 GB de heap e a pasta de modelo do pacote de idiomas estiver 3,8 GB descompactada, o novo tamanho do heap será:
 
-         O original `8GB` + ( `3.75GB` arredondado para o mais próximo `2GB`, que é `4GB`) para um total de `12GB`
+         O original `8GB` + ( `3.75GB` arredondado para cima até `2GB` mais próximo, que é `4GB`) para um total de `12GB`
    * Verifique se a máquina tem essa quantidade de memória extra disponível.
    * Atualize AEM scripts de start para ajustar para o novo tamanho do heap
 
@@ -73,20 +73,20 @@ A pesquisa de tradução inteligente permite o uso de termos de pesquisa que nã
    >O espaço de heap necessário para pacotes de idiomas pode ficar grande, especialmente quando vários pacotes de idiomas forem usados.
    >
    >
-   >Sempre verifique se **a instância tem memória** suficiente para acomodar os aumentos no espaço de heap alocado.
+   >Certifique-se sempre de que **a instância tenha memória suficiente** para acomodar os aumentos no espaço de heap alocado.
    >
    >
-   >O heap **base deve ser sempre calculado para suportar um desempenho aceitável sem nenhum pacote** de idiomas instalado.
+   >O heap de **base deve ser sempre calculado para suportar um desempenho aceitável sem pacotes de idiomas** instalados.
 
 4. Registre os pacotes de idiomas através das configurações OSGi do Provedor de Termos de Query de texto completo do Apache Jackrabbit Oak Machine Translation
 
-   * Para cada pacote de idiomas, [crie uma nova configuração](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) de OSGi do Provedor de Termos de Query de Texto Completo do Apache Jackrabbit Oak Machine através do gerenciador de Configuração do Console da Web AEM.
+   * Para cada pacote de idiomas, [crie um novo Apache Jackrabbit Oak Machine Translation Full-text Query Provider Configuração OSGi](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) através do gerenciador de Configuração do Console da Web AEM.
 
       * `Joshua Config Path` é o caminho absoluto para o arquivo joshua.config. O processo de AEM deve ser capaz de ler todos os arquivos na pasta do pacote de idiomas.
       * `Node types` são os tipos de nó candidatos cuja pesquisa em texto completo acionará este pacote de idiomas para tradução.
       * `Minimum score` é a pontuação de confiança mínima de um termo traduzido para ser usado.
 
-         * Por exemplo, hombre (espanhol para &quot;homem&quot;) pode traduzir para a palavra inglesa &quot;homem&quot; com uma pontuação de confiança de `0.9` e também traduzir para a palavra inglesa &quot;humano&quot; com uma pontuação de confiança `0.2`. Ajustar a pontuação mínima para `0.3`, manteria a tradução de &quot;hombre&quot; para &quot;homem&quot;, mas rejeitaria a tradução de &quot;hombre&quot; para &quot;humano&quot;, já que essa pontuação de tradução de `0.2` é inferior à pontuação mínima de `0.3`.
+         * Por exemplo, hombre (espanhol para &quot;homem&quot;) pode traduzir para a palavra inglesa &quot;homem&quot; com uma pontuação de confiança de `0.9` e também traduzir para a palavra inglesa &quot;humano&quot; com uma pontuação de confiança `0.2`. Ajustar a pontuação mínima para `0.3`, manterá a tradução &quot;hombre&quot; para &quot;man&quot;, mas descarte a tradução &quot;hombre&quot; para &quot;humana&quot;, já que essa pontuação de tradução de `0.2` é menor que a pontuação mínima de `0.3`.
 
 5. Executar uma pesquisa em texto completo em ativos
    * Como dam:Asset é o tipo de nó que este pacote de idiomas está registrado novamente, precisamos pesquisar a AEM Assets usando a pesquisa de texto completo para validar isso.
@@ -101,9 +101,9 @@ A pesquisa de tradução inteligente permite o uso de termos de pesquisa que nã
    * Se AEM não exigir uma reinicialização, a configuração OSGi do provedor de termos de Query de texto completo de Apache Jackrabbit Oak pertinente que pertencem ao(s) pacote(s) de idiomas atualizado(s) deverá(ão) ser salva novamente para AEM processar os arquivos atualizados.
 
 
-## Atualização do índice damAssetLucene {#updating-damassetlucene-index}
+## Atualização do damAssetLucene Index {#updating-damassetlucene-index}
 
-Para que [AEM Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) `/oak   :index  /damAssetLucene` inteligentes sejam afetadas pela AEM Smart Translation, AEM índice deve ser atualizado para marcar as predictedTags (nome do sistema para &quot;Smart Tags&quot;) como parte do índice Lucene de agregação do ativo.
+Para que [AEM Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) seja afetado por AEM Smart Translation, AEM índice `/oak   :index  /damAssetLucene` deve ser atualizado para marcar as predictedTags (o nome do sistema para &quot;Smart Tags&quot;) como parte do índice Lucene de agregação do Ativo.
 
 Em `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`, verifique se a configuração é a seguinte:
 
