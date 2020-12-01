@@ -22,7 +22,7 @@ Um dos aspectos mais importantes da experiência do cliente em seu site ou site 
 
 O Smart Imaging também se beneficia do aumento de desempenho ao ser totalmente integrado ao melhor serviço premium do Adobe. Este serviço encontra a melhor rota da Internet entre servidores, redes e pontos de peering que tem a menor latência e/ou a menor taxa de perda de pacotes do que a rota padrão da Internet.
 
-Saiba mais sobre Imagens [inteligentes](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Saiba mais sobre [Imagens inteligentes](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Benefícios do Smart Imaging
 
@@ -34,7 +34,7 @@ Como as imagens constituem a maioria do tempo de carregamento de uma página, o 
 
 Como observado anteriormente, o Smart Imaging aproveita os recursos do Adobe Sensei AI e funciona com as predefinições de imagens existentes para converter automaticamente as imagens em formatos ideais de imagem da próxima geração, como o WebP, mantendo a fidelidade visual.
 
-Saiba mais sobre [como a Imagem inteligente funciona](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem suportados (e o que acontece se você não usar esses formatos) e seu impacto nas predefinições de imagem existentes que estão em uso.
+Saiba mais sobre [Como a Imagem Inteligente funciona](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem suportados (e o que acontece se você não usar esses formatos) e seu impacto nas Predefinições de Imagem existentes que estão em uso.
 
 ## Impactos da criação de imagens inteligentes
 
@@ -56,4 +56,4 @@ Você provavelmente tem perguntas adicionais sobre o Smart Imaging. Nós compila
 
 ## Recursos adicionais
 
-Assista ao webinário de otimização de desempenho da página do [Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) para saber mais sobre o Smart Imaging.
+Assista ao webinar [Dynamic Media Classic Otimizing Page Performance Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) sob demanda para saber mais sobre o Smart Imaging.
