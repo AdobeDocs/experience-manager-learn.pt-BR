@@ -63,10 +63,10 @@ Linha 11: Retorna o pdf interativo gerado para o aplicativo chamador
 1. Adicione o seguinte caminho nas seções excluídas e salve
 1. /bin/generateinterativepdf
 1. [Abrir o formulário móvel](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Preencha alguns campos e clique em ***Download e preencha ....*** botão
+1. Preencha alguns campos e clique em ***Baixar e preencher ....*** botão
 1. O pdf interativo deve ser baixado no sistema local
 
 
-O pacote de amostra contém o perfil personalizado associado ao Formulário móvel. Explore o arquivo [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) . Esse jsp extrai os dados do formulário móvel e faz uma solicitação POST para o servlet montado no ***/bin/generateinterativepdf*** caminho. O servlet retorna o pdf interativo para o aplicativo de chamada. O código no customtoolbar.jsp, em seguida, baixa o arquivo no sistema local
+O pacote de amostra contém o perfil personalizado associado ao Formulário móvel. Explore o arquivo [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Esse jsp extrai os dados do formulário móvel e faz uma solicitação POST para o servlet montado no caminho ***/bin/generateinterativepdf***. O servlet retorna o pdf interativo para o aplicativo de chamada. O código no customtoolbar.jsp, em seguida, baixa o arquivo no sistema local
 
 
