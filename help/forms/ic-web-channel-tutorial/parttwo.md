@@ -26,4 +26,4 @@ Nesta parte, criaremos uma fonte de dados com backup REST.  O vídeo a seguir ap
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
 
-Use o arquivo swagger fornecido a você como parte dos ativos relacionados a este tutorial. Os ativos estão disponíveis na [introdução](introduction.md) deste tutorial.
+Use o arquivo swagger fornecido a você como parte dos ativos relacionados a este tutorial. Os ativos estão disponíveis em [introdução](introduction.md) deste tutorial.
