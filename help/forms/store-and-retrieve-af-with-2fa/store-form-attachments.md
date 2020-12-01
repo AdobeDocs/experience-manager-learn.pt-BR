@@ -31,7 +31,7 @@ A seguir está o FileMap enviado ao servlet. A tecla é o campo de formulário a
 }
 ```
 
-Este é o código que extrai os anexos da solicitação e os armazena na pasta **/content/afattachments** .
+Este é o código que extrai os anexos da solicitação e os armazena na pasta **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
