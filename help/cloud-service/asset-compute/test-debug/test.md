@@ -1,6 +1,6 @@
 ---
-title: Testar um trabalhador da Computação de ativos
-description: O projeto Asset Compute define um padrão para criar e executar facilmente testes de funcionários da Asset Compute.
+title: Testar um trabalhador Asset compute
+description: O projeto do Asset compute define um padrão para a fácil criação e execução de testes de Asset computes.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Testar um trabalhador da Computação de ativos
+# Testar um trabalhador Asset compute
 
-O projeto Asset Compute define um padrão para criar e executar facilmente [testes de funcionários](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html)da Asset Compute.
+O projeto do Asset compute define um padrão para criar e executar com facilidade [testes de Asset computes](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomia de um teste de trabalhador
 
-Os testes dos funcionários da Computação de ativos são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste que afirmam uma condição para teste.
+Os testes dos funcionários do asset compute são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste afirmando uma condição para teste.
 
-A estrutura dos testes em um projeto do Asset Compute é a seguinte:
+A estrutura dos ensaios de um projeto de Asset compute é a seguinte:
 
 ```
 /actions/<worker-name>/index.js
@@ -55,20 +55,20 @@ Cada transmissão de teste pode ter os seguintes arquivos:
    + Opcional
 + `validate`
    + Um script que recebe os caminhos de arquivo de renderização esperados e reais como argumentos e deve retornar o código de saída 0 se o resultado estiver ok, ou um código de saída diferente de zero se a validação ou comparação falhar.
-   + Opcional, o padrão é o `diff` comando
+   + Opcional, o padrão é `diff` comando
    + Usar um script de shell que vincula um comando docker run para usar diferentes ferramentas de validação
 + `mock-<host-name>.json`
-   + Respostas HTTP formatadas JSON para [monitorar chamadas](https://www.mock-server.com/mock_server/creating_expectations.html)de serviço externas.
+   + Respostas HTTP formatadas JSON para [alternar chamadas de serviço externo](https://www.mock-server.com/mock_server/creating_expectations.html).
    + Opcional, usado somente se o código de trabalho fizer solicitações HTTP de sua própria
 
 ## Gravando um caso de teste
 
-Este caso de teste declara a entrada parametrizada (`params.json`) para o arquivo de entrada (`file.jpg`) gera a renderização PNG esperada (`rendition.png`).
+Este caso de teste garante a entrada parametrizada (`params.json`) para o arquivo de entrada (`file.jpg`) gera a execução PNG esperada (`rendition.png`).
 
-1. Primeiro, exclua o caso de `simple-worker` testes gerados automaticamente em `/test/asset-compute/simple-worker` caso de inválido, já que nosso trabalhador não copia mais a fonte para a execução.
+1. Primeiro, exclua o caso de testes `simple-worker` gerados automaticamente em `/test/asset-compute/simple-worker`, pois isso é inválido, já que nosso trabalhador não copia mais a fonte para a execução.
 1. Crie uma nova pasta de caso de teste em `/test/asset-compute/worker/success-parameterized` para testar uma execução bem-sucedida do trabalhador que gera uma execução PNG.
-1. Na `success-parameterized` pasta, adicione o arquivo [de](./assets/test/success-parameterized/file.jpg) entrada de teste para este caso de teste e nomeie-o `file.jpg`.
-1. Na `success-parameterized` pasta, adicione um novo arquivo chamado `params.json` que define os parâmetros de entrada do trabalhador:
+1. Na pasta `success-parameterized`, adicione o arquivo de entrada [de teste](./assets/test/success-parameterized/file.jpg) para este caso de teste e nomeie-o `file.jpg`.
+1. Na pasta `success-parameterized`, adicione um novo arquivo chamado `params.json` que defina os parâmetros de entrada do trabalhador:
 
    ```json
    { 
@@ -77,21 +77,21 @@ Este caso de teste declara a entrada parametrizada (`params.json`) para o arquiv
        "brightness": "-0.50"
    }
    ```
-   Esses são os mesmos valores-chave passados para a definição [de perfil da ferramenta de](../develop/development-tool.md)desenvolvimento Asset Compute, menos a `worker` chave.
-1. Adicione o arquivo [de](./assets/test/success-parameterized/rendition.png) execução esperado a esse caso de teste e nomeie-o `rendition.png`. Esse arquivo representa a saída esperada do trabalhador para a entrada em questão `file.jpg`.
-1. Na linha de comando, execute os testes na raiz do projeto executando `aio app test`
-   + Verifique se o [Docker Desktop](../set-up/development-environment.md#docker) e as imagens Docker de suporte estão instalados e iniciados
+   Esses são os mesmos valores chave passados para a definição de perfil da ferramenta de desenvolvimento[, menos a chave ](../develop/development-tool.md).`worker`
+1. Adicione o arquivo de renderização esperado [](./assets/test/success-parameterized/rendition.png) a esse caso de teste e nomeie-o `rendition.png`. Este arquivo representa a saída esperada do trabalhador para a entrada `file.jpg` fornecida.
+1. Na linha de comando, execute os testes da raiz do projeto executando `aio app test`
+   + Verifique se [Docker Desktop](../set-up/development-environment.md#docker) e as imagens do Docker de suporte estão instaladas e iniciadas
    + Encerrar todas as instâncias em execução da ferramenta de desenvolvimento
 
-![Teste - Êxito ](./assets/test/success-parameterized/result.png)
+![Teste - Êxito  ](./assets/test/success-parameterized/result.png)
 
 ## Gravando um caso de teste de verificação de erro
 
-Este caso de teste testa para garantir que o trabalhador jogue o erro apropriado quando o `contrast` parâmetro estiver definido como um valor inválido.
+Este caso de teste testa para garantir que o trabalhador jogue o erro apropriado quando o parâmetro `contrast` estiver definido como um valor inválido.
 
-1. Crie uma nova pasta de caso de teste em `/test/asset-compute/worker/error-contrast` para testar uma execução de erro do trabalhador devido a um valor de `contrast` parâmetro inválido.
-1. Na `error-contrast` pasta, adicione o arquivo [de](./assets/test/error-contrast/file.jpg) entrada de teste para este caso de teste e nomeie-o `file.jpg`. O conteúdo deste arquivo é irrelevante para este teste, ele só precisa existir para passar da verificação &quot;Fonte corrompida&quot;, para chegar às verificações de `rendition.instructions` validade que esse caso de teste valida.
-1. Na `error-contrast` pasta, adicione um novo arquivo chamado `params.json` que define os parâmetros de entrada do trabalhador com o conteúdo:
+1. Crie uma nova pasta de caso de teste em `/test/asset-compute/worker/error-contrast` para testar uma execução de erro do trabalhador devido a um valor de parâmetro `contrast` inválido.
+1. Na pasta `error-contrast`, adicione o arquivo de entrada [de teste](./assets/test/error-contrast/file.jpg) para este caso de teste e nomeie-o `file.jpg`. O conteúdo deste arquivo é irrelevante para este teste, ele só precisa existir para passar da verificação &quot;Fonte corrompida&quot;, para que as verificações de validade `rendition.instructions` sejam alcançadas, que esse caso de teste valida.
+1. Na pasta `error-contrast`, adicione um novo arquivo chamado `params.json` que defina os parâmetros de entrada do trabalhador com o conteúdo:
 
    ```json
    {
@@ -100,12 +100,12 @@ Este caso de teste testa para garantir que o trabalhador jogue o erro apropriado
    }
    ```
 
-   + Defina `contrast` os parâmetros como `10`, um valor inválido, pois o contraste deve estar entre -1 e 1, para lançar um `RenditionInstructionsError`.
-   + Assegure-se de que o erro apropriado seja lançado nos testes definindo a `errorReason` chave para o &quot;motivo&quot; associado ao erro esperado. Esse parâmetro de contraste inválido lança o erro [](../develop/worker.md#errors)personalizado, `RenditionInstructionsError`portanto, define o `errorReason` para o motivo desse erro ou`rendition_instructions_error` para afirmar que ele é lançado.
+   + Defina os parâmetros `contrast` como `10`, um valor inválido, como o contraste deve estar entre -1 e 1, para lançar um `RenditionInstructionsError`.
+   + Assegure-se de que o erro apropriado seja lançado nos testes definindo a tecla `errorReason` para o &quot;motivo&quot; associado ao erro esperado. Esse parâmetro de contraste inválido lança o [erro personalizado](../develop/worker.md#errors), `RenditionInstructionsError`, portanto, define `errorReason` para o motivo desse erro, ou`rendition_instructions_error` para afirmar que ele é lançado.
 
-1. Como nenhuma execução deve ser gerada durante uma execução de erro, nenhum `rendition.<extension>` arquivo é necessário.
+1. Como nenhuma execução deve ser gerada durante uma execução de erro, nenhum arquivo `rendition.<extension>` é necessário.
 1. Execute o conjunto de testes da raiz do projeto executando o comando `aio app test`
-   + Verifique se o [Docker Desktop](../set-up/development-environment.md#docker) e as imagens Docker de suporte estão instalados e iniciados
+   + Verifique se [Docker Desktop](../set-up/development-environment.md#docker) e as imagens do Docker de suporte estão instaladas e iniciadas
    + Encerrar todas as instâncias em execução da ferramenta de desenvolvimento
 
 ![Teste - Contraste do erro](./assets/test/error-contrast/result.png)
