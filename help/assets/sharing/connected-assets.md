@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de ativos conectados à AEM Assets{#using-connected-assets-with-aem-assets}
+# Uso de ativos conectados com o AEM Assets{#using-connected-assets-with-aem-assets}
 
 O recurso Ativos conectados permite que um autor do AEM Sites compartilhe sem problemas ativos digitais hospedados em uma instância diferente do AEM.
 
@@ -28,4 +28,4 @@ O recurso Ativos conectados permite que um autor do AEM Sites compartilhe sem pr
 * 03:30 — Usar uma imagem dos ativos conectados
 * 04:42 — Configurações do administrador para ativar o recurso Ativos conectados
 
-Revise as implantações [compatíveis de Ativos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) conectados para entender se sua implantação de AEM pode suportar Ativos conectados.
+Revise as [implantações suportadas para os Ativos conectados](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) para saber se a implantação AEM pode suportar os Ativos conectados.
