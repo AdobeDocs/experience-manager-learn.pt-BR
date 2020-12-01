@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso da integração de dados de Perfil do usuário com o AEM Forms{#using-user-profile-data-integration-with-aem-forms}
+# Usando a integração de dados de Perfil do usuário com o AEM Forms{#using-user-profile-data-integration-with-aem-forms}
 
 A Integração de dados da AEM Forms permite que você configure e conecte-se a fontes de dados diferentes. Os itens a seguir são suportados prontamente. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
@@ -29,7 +29,8 @@ Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBM
 1. perfil do usuário AEM
 1. Serviços Web RESTful
 1. Serviços Web baseados em SOAP
-1. Serviços OData Este artigo destacará a integração AEM informações do perfil do usuário com o Forms adaptável.
+1. Serviços OData
+Este artigo destacará a integração AEM informações do perfil do usuário com o Forms adaptável.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
 
