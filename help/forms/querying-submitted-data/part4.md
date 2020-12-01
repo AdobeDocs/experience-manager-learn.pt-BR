@@ -23,9 +23,9 @@ ht-degree: 0%
 
 A próxima etapa é query dos dados enviados e exibir os resultados de forma tabular. Para conseguir isso, usaremos o seguinte software
 
-[QueryBuilder](https://querybuilder.js.org/) - componente de interface para criar query
+[QueryBuilder](https://querybuilder.js.org/)  - componente de interface para criar query
 
-[Tabelas](https://datatables.net/)de dados - Para exibir os resultados do query de forma tabular.
+[Tabelas](https://datatables.net/) de dados - Para exibir os resultados do query de forma tabular.
 
 A interface do usuário a seguir foi criada para permitir a consulta dos dados enviados. Somente os elementos marcados como obrigatórios no schema JSON são disponibilizados para o query. Na captura de tela abaixo, estamos consultando todos os envios nos quais o pref de entrega é SMS.
 
