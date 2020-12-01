@@ -29,17 +29,17 @@ Os Fragmentos de conteúdo e Fragmentos de experiência da Adobe Experience Mana
 <td><strong>Fragmentos de experiência (XF)</strong></td>
 </tr><tr><td><strong>Definição</strong></td>
 <td><ul>
-<li>Reutilizável, <strong>conteúdo</strong>agnóstico de apresentação, composto de elementos de dados estruturados (texto, datas, referências etc.)</li>
+<li>Reutilizável, agnóstico de apresentação <strong>conteúdo</strong>, composto por elementos de dados estruturados (texto, datas, referências, etc.)</li>
 </ul>
 </td>
 <td><ul>
-<li>Um composto reutilizável de um ou mais AEM Componentes que definem o conteúdo e a apresentação que formam uma <strong>experiência</strong> que faz sentido por si só</li>
+<li>Um composto reutilizável de um ou mais AEM Componentes que definem o conteúdo e a apresentação que forma uma <strong>experiência</strong> que faz sentido por si só</li>
 </ul>
 </td>
 </tr><tr><td><strong>Locatários principais</strong></td>
 <td><ul>
 <li>Centralizado ao conteúdo</li>
-<li>Definido por um modelo de dados <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">estruturado, baseado em forma.</a></li>
+<li>Definido por um <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">modelo de dados estruturado, baseado em forma.</a></li>
 <li>Design e layout agnósticos.</li>
 <li>O canal possui a apresentação do conteúdo do Fragmento de conteúdo (layout e design)</li>
 </ul>
@@ -54,7 +54,7 @@ Os Fragmentos de conteúdo e Fragmentos de experiência da Adobe Experience Mana
 </tr><tr><td><strong>Detalhes técnicos</strong></td>
 <td><ul>
 <li>Implementado como um <strong>dam:Asset</strong></li>
-<li>Definido por um modelo de fragmento <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">de conteúdo</a></li>
+<li>Definido por um <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-models.html" target="_blank">Modelo de fragmento de conteúdo</a></li>
 </ul>
 </td>
 <td><ul>
@@ -72,17 +72,17 @@ Os Fragmentos de conteúdo e Fragmentos de experiência da Adobe Experience Mana
 <td><ul>
 <li>As variações são específicas de canal ou contexto</li>
 <li>As variações são mantidas em sincronia por meio do AEM Live Copy</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#BuildingBlocks" target="_blank">Os blocos</a> de construção permitem a reutilização do conteúdo entre variações</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#BuildingBlocks" target="_blank">Criação de reutilização de conteúdo </a> bloqueado em variações</li>
 </ul>
 </td>
 </tr><tr><td><strong>Recursos</strong></td>
 <td><ul>
 <li>Variações</li>
 <li>Versões</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SynchronizingwithMaster" target="_blank">Sincronização</a> de conteúdo entre variações</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-managing.html#ComparingFragmentVersions" target="_blank">Diferença</a> visual das versões do Fragmento de conteúdo</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#AnnotatingaContentFragment" target="_blank">Anotações</a> de elementos de texto de várias linhas</li>
-<li>Resumo <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SummarizingText" target="_blank"></a> inteligente de elementos de texto de várias linhas.</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SynchronizingwithMaster" target="_blank"></a> Sincronização de conteúdo entre variações</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-managing.html#ComparingFragmentVersions" target="_blank">Versões </a> do fragmento de conteúdo de difusão visual</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#AnnotatingaContentFragment" target="_blank"></a> Anotações de elementos de texto de várias linhas</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/content-fragments-variations.html#SummarizingText" target="_blank">sumariação inteligente</a> de elementos de texto de várias linhas.</li>
 <li><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/creating-translation-projects-for-content-fragments.html" target="_blank">Tradução/localização</a></li>
 </ul>
 </td>
@@ -98,15 +98,15 @@ Os Fragmentos de conteúdo e Fragmentos de experiência da Adobe Experience Mana
 </td>
 </tr><tr><td><strong>Uso</strong></td>
 <td><ul>
-<li><a href="https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">Componentes principais AEM componente</a> Fragmento de conteúdo para uso no AEM Sites, AEM Screens ou em Fragmentos de experiência.</li>
+<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">Componentes principais AEM </a> componente Fragmento de conteúdo para uso no AEM Sites, AEM Screens ou em Fragmentos de experiência.</li>
 <li>Exportação JSON via <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a> para consumo de terceiros</li>
 <li>JSON por meio AEM APIs de ativos HTTP para consumo de terceiros.</li>
 </ul>
 </td>
 <td><ul>
 <li>AEM componente Fragmento de experiência para uso no AEM Sites, AEM Screens ou outros Fragmentos de experiência.</li>
-<li>Exportar como HTML <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank"></a> simples para uso por sistemas de terceiros</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">Exportação de HTML para Adobe Target</a> para ofertas direcionadas</li>
+<li>Exportar como <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank">HTML simples</a> para uso por sistemas de terceiros</li>
+<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">Exportação de HTML para o Adobe </a> Target para ofertas direcionadas</li>
 <li>Exportação JSON para Adobe Target para ofertas direcionadas</li>
 </ul>
 </td>
@@ -142,27 +142,27 @@ O diagrama a seguir ilustra a arquitetura geral para AEM Fragmentos de conteúdo
 
 !![Arquitetura de fragmentos de conteúdo](./assets/content-fragments-architecture.png)
 
-+ **Modelos** de fragmento de conteúdo definem os elementos (ou campos) que definem qual conteúdo o Fragmento de conteúdo pode capturar e expor.
-+ O Fragmento **de** conteúdo é uma instância de um Modelo de fragmento de conteúdo que representa uma entidade de conteúdo lógico.
-+ No entanto, **as variações** do Fragmento do conteúdo seguem o Modelo do fragmento do conteúdo, mas têm variações no conteúdo.
++ **Os** Modelos de fragmento de conteúdo definem os elementos (ou campos) que definem qual conteúdo o Fragmento de conteúdo pode capturar e expor.
++ O **Fragmento de conteúdo** é uma instância de um Modelo de fragmento de conteúdo que representa uma entidade de conteúdo lógico.
++ No entanto, o Fragmento do conteúdo **variações** adere ao Modelo de fragmento do conteúdo, tem variações no conteúdo.
 + Fragmentos de conteúdo podem ser expostos/consumidos por:
-   + Uso de fragmentos de conteúdo no **AEM Sites** (ou AEM Screens) por meio do componente Fragmento de conteúdo dos componentes principais do AEM WCM.
-   + Como incorporar um fragmento de conteúdo em um fragmento **de** experiência por meio do componente Fragmento de conteúdo dos componentes principais do AEM WCM, para uso em qualquer caso de uso do Fragmento de experiência.
-   + Expor um fragmento de conteúdo altera o conteúdo como JSON por meio de **AEM Content Services** e páginas de API para casos de uso somente leitura.
-   + Exposição direta do conteúdo do fragmento de conteúdo (todas as variações) como JSON por meio de chamadas diretas para a AEM Assets por meio da API **HTTP da** AEM Assets para casos de uso de CRUD.
+   + Usar fragmentos de conteúdo em **AEM Sites** (ou AEM Screens) por meio do componente Fragmento de conteúdo dos componentes principais do AEM WCM.
+   + Incorporar um fragmento de conteúdo em um **Fragmento de experiência** por meio do componente Fragmento de conteúdo dos componentes principais do AEM WCM, para uso em qualquer caso de uso do Fragmento de experiência.
+   + Expor um fragmento de conteúdo altera o conteúdo como JSON por **AEM Content Services** e Páginas de API para casos de uso somente leitura.
+   + Exposição direta do conteúdo do fragmento de conteúdo (todas as variações) como JSON por meio de chamadas diretas para a AEM Assets por meio da **AEM Assets HTTP API** para casos de uso de CRUD.
 
 ## Arquitetura de fragmentos de experiência
 
 !![Arquitetura de fragmentos de experiência](./assets/experience-fragments-architecture.png)
 
-+ **Modelos** editáveis, que por sua vez são definidos por Tipos **de modelo** editáveis e uma implementação **de componente de Página** AEM, definem os componentes AEM permitidos que podem ser usados para compor um Fragmento de experiência.
-+ O Fragmento **de** experiência é uma instância de um Modelo editável que representa uma experiência lógica.
-+ Entretanto, **as variações** do fragmento de experiência seguem o modelo editável, mas têm variações na experiência (conteúdo e design).
++ **Modelos** editáveis, que por sua vez são definidos por  **Tipos de modelo** editáveis e uma implementação **de componente de página** AEM, definem os AEM componentes permitidos que podem ser usados para compor um Fragmento de experiência.
++ O **Fragmento de experiência** é uma instância de um Modelo editável que representa uma experiência lógica.
++ No entanto, o Fragmento de experiência **variações** adere ao Modelo editável, tem variações na experiência (conteúdo e design).
 + Fragmentos de experiência podem ser expostos/consumidos por:
    + Uso de fragmentos de experiência no AEM Sites (ou AEM Screens) por meio do componente AEM do Fragmento de experiência.
-   + A exposição de um fragmento de experiência altera o conteúdo como JSON (com HTML incorporado) por meio de **AEM Content Services** e páginas de API.
-   + Exposição direta de uma variação do Fragmento de experiência como **&quot;HTML simples&quot;**.
-   + Exportar fragmentos de experiência para o **Adobe Target** como ofertas HTML ou JSON.
+   + A exposição de um fragmento de experiência altera o conteúdo como JSON (com HTML incorporado) via **AEM Content Services** e Páginas de API.
+   + Exposição direta de uma variação do Fragmento de experiência como **&quot;HTML comum&quot;**.
+   + Exportar fragmentos de experiência para **Adobe Target** como ofertas HTML ou JSON.
    + A AEM Sites suporta nativamente ofertas HTML, no entanto, as ofertas JSON exigem desenvolvimento personalizado.
 
 ## Materiais de suporte para fragmentos de conteúdo
