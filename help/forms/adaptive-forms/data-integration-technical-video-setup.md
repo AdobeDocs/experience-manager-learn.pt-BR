@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Configurar a integração de dados com a AEM Forms {#set-up-data-integration-with-aem-forms}
+# Configurar a integração de dados com o AEM Forms {#set-up-data-integration-with-aem-forms}
 
 Configuração da conexão de dados com uma fonte de dados JDBC
 
@@ -34,5 +34,5 @@ Configuração da conexão de dados com uma fonte de dados JDBC
 
 * [Baixar o pacote MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
 
-   * Baixe, descompacte e instale o arquivo JAR por meio do console da Web [AEM](http://localhost:4502/system/console/bundles)
+   * Baixe, descompacte e instale o arquivo JAR por meio do [AEM Web Console](http://localhost:4502/system/console/bundles)
 
