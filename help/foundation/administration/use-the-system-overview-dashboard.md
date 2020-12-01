@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Use o Painel Visão geral do sistema
 
-A Visão geral [!UICONTROL do] sistema Adobe Experience Manager (AEM) fornece uma visualização de alto nível da configuração, hardware e integridade da instância AEM, tudo isso a partir de um único painel.
+A Adobe Experience Manager (AEM) [!UICONTROL Visão geral do sistema] fornece uma visualização de alto nível da configuração, hardware e integridade da instância AEM, tudo a partir de um único painel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. A Visão geral do sistema pode ser acessada de: **start** AEM > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Visão geral **[!UICONTROL do sistema]**
+1. A Visão geral do sistema pode ser acessada de: **AEM Start** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
 
    Diretamente em **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. As informações da Visão geral [!UICONTROL do] sistema podem ser exportadas clicando no botão [!UICONTROL Download] . A informação é também exposta através do seguinte [!DNL REST] parâmetro:
-1. Abaixo está um exemplo de saída do JSON que é exportado da Visão geral [!UICONTROL do]sistema:
+1. As informações de [!UICONTROL Visão geral do sistema] podem ser exportadas clicando no botão [!UICONTROL Download]. As informações também são expostas por meio do seguinte terminal [!DNL REST]:
+1. Abaixo está um exemplo de saída do JSON que é exportado de [!UICONTROL Visão geral do sistema]:
 
    ```json
    {
