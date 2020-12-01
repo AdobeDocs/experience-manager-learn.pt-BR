@@ -33,7 +33,7 @@ Quando o Formulário adaptativo for enviado, o recipient receberá um email.
 
 ## Configurações necessárias {#configurations-needed}
 
-Você terá que configurar o serviço Day CQ Mail. Isso pode ser configurado apontando seu navegador para o [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Você terá que configurar o serviço Day CQ Mail. Isso pode ser configurado apontando seu navegador para [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 A captura de tela mostra as propriedades de configuração do adobe mail server.
 
@@ -41,7 +41,7 @@ A captura de tela mostra as propriedades de configuração do adobe mail server.
 
 Para experimentar isso no servidor, siga estas instruções:
 
-* [Importe os ativos](assets/timeoffrequest.zip) associados a este artigo em AEM usando o gerenciador de pacotes.
+* [Importe os ativos ](assets/timeoffrequest.zip) associados a este artigo no AEM usando o gerenciador de pacotes.
 
 * Abra o [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
