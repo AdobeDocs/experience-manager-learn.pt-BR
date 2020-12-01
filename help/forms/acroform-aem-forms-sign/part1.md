@@ -29,7 +29,7 @@ Os formulários são formulários criados usando o Acrobat. Você pode criar um 
 
 >[!NOTE]
 >
->Se desejar enviar o formulário preenchível para assinatura usando o Adobe Sign, nomeie os campos de acordo. Por exemplo, você pode nomear um campo como **Sig_es_:signer1:signature**. Esta é a sintaxe que a Adobe Sign entende.
+>Se desejar enviar o formulário preenchível para assinatura usando o Adobe Sign, nomeie os campos de acordo. Por exemplo, você pode nomear um campo **Sig_es_:signer1:signature**. Esta é a sintaxe que a Adobe Sign entende.
 
 >[!NOTE]
 >
