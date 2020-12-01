@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Publishing pages {#using-publication-management-with-aem-sites}
+# Páginas de publicação {#using-publication-management-with-aem-sites}
 
 A AEM Sites fornece várias opções para publicar e cancelar a publicação de conteúdo. Este vídeo explora os vários métodos e seus recursos.
 
