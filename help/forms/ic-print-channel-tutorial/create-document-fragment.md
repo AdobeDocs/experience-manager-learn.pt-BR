@@ -27,11 +27,11 @@ Nesta parte, criaremos um fragmento de documento para manter o nome e o endereç
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350/?quality=9&learn=on)
 
-Os fragmentos de documento contêm o conteúdo de texto dos documentos de comunicação interativos. Esse conteúdo de texto pode ser texto estático ou inserido a partir dos valores subjacentes dos elementos do modelo de dados. Por exemplo, **Prezado _{name}_**, onde Preto é texto estático e o nome é o nome do elemento do modelo de dados de formulário. No tempo de execução, isso resolverá para **Querido Gloria Rios**ou **Prezado John Jacobs**dependendo do valor do elemento name.
+Os fragmentos de documento contêm o conteúdo de texto dos documentos de comunicação interativos. Esse conteúdo de texto pode ser texto estático ou inserido a partir dos valores subjacentes dos elementos do modelo de dados. Por exemplo **Prezado _{name}_**, em que Preto é texto estático e o nome é o nome do elemento do modelo de dados de formulário. No tempo de execução, isso será resolvido para **Prezada Gloria Rios**ou **Prezado John Jacobs**, dependendo do valor do elemento name.
 
 O Editor de Rich Text é intuitivo o suficiente para que um usuário corporativo crie textos e insira elementos de dados do formulário. O editor de fragmentos de documento tem a capacidade de formatar texto, especificar tipos de fonte e estilos, inserir caracteres especiais e criar hiperlinks.
 
-O editor de fragmentos de documento também tem a capacidade de inserir condições em linha no seu texto, conforme demonstrado neste [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+O editor de fragmentos de documento também tem a capacidade de inserir condições embutidas em seu texto, conforme demonstrado neste [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
