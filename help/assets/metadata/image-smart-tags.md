@@ -31,16 +31,16 @@ As Tags inteligentes de imagens dos ativos AEM aumentam a pesquisa dos ativos AE
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração na E/S do Adobe:
+Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração no Adobe I/O:
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização
 * O serviço Smart Content Service está habilitado para sua organização
 
-O vídeo detalha as seguintes tarefas necessárias para configurar o serviço de conteúdo inteligente de E/S do Adobe usado para imagens de tags inteligentes.
+O vídeo detalha as seguintes tarefas necessárias para configurar o serviço Adobe I/O Smart Content usado para imagens de Smart Tag.
 
 * Crie uma configuração do Serviço de conteúdo inteligente em AEM para gerar uma chave pública. Obtenha um certificado público para a integração com o OAuth.
-* Crie uma integração em E/S de Adobe e carregue a chave pública gerada.
-* Configure sua instância AEM usando a chave da API e outras credenciais da E/S do Adobe.
+* Crie uma integração no Adobe I/O e carregue a chave pública gerada.
+* Configure sua instância AEM usando a chave da API e outras credenciais da Adobe I/O.
 * Ative a marcação automática no upload de ativos (opcional).
 
 ## Recursos adicionais
