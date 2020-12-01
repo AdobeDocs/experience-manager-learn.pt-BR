@@ -24,21 +24,21 @@ Este tutorial em vídeo aborda a definição de um arquivo de InDesign e todas a
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
-1. Baixar e abrir o modelo de arquivo de [**InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
+1. Baixe e abra o [**modelo de arquivo de InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Abra o painel Tags,** reveja a convenção de nomenclatura de tags e observe que os elementos que podem ser criados pelo autor no arquivo de InDesign já estão marcados. Lembre-se, somente os elementos marcados são editáveis no AEM.
 
    * **Janela > Utilitários > Tags**
 
-3. Na página, adicione um novo elemento de texto, forneça o texto &quot;Cabeçalho&quot; e aplique o Estilo de parágrafo do **cabeçalho** .
+3. Na página, adicione um novo elemento de texto, forneça o texto &quot;Cabeçalho&quot; e aplique o **Cabeçalho** Estilo de parágrafo.
 
    * **Janela > Estilos > Estilos de parágrafo**
 
-   Em seguida, crie e aplique uma nova tag chamada **Page2Title.**
+   Em seguida, crie e aplique uma nova tag chamada **Page2Head.**
 
 4. Adicione a imagem do logotipo FPO ([fornecida no zip](assets/asset-templates-tutorial-video--supporting-files.zip)) ao elemento Logotipo na página Principal.
 
-   * **Clique com o botão direito do mouse** e selecione **Ajustar > Opções de ajuste ao quadro... > Ajuste do conteúdo > Preencher quadro proporcionalmente**
-   [Saiba mais sobre as opções](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)de Ajuste de quadro e qual é a escolha certa para seu caso de uso.
+   * **Clique com o botão direito** e **selecione Ajuste > Opções de ajuste ao quadro... > Ajuste do conteúdo > Preencher quadro proporcionalmente**
+   [Saiba mais sobre as opções](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) de Ajuste de quadro e qual é a escolha certa para seu caso de uso.
 
 5. Copie o cabeçalho (Logotipo e Nome da Empresa) do modelo Principal na Página e Página por meio da opção Colar no local.
 
@@ -56,24 +56,24 @@ Este tutorial em vídeo aborda a definição de um arquivo de InDesign e todas a
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
-1. **InDesign Server** do start na porta 8080.
-2. Verifique se a instância do autor de **AEM está configurada para interagir com seu InDesign Server**(e vice-versa).
+1. **Start InDesign** Server na porta 8080.
+2. Verifique se a instância **Autor de AEM está configurada para interagir com seu InDesign Server** (e vice-versa).
 
    * [Configuração do Cloud Service do IDS Worker](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configuração do Cloud Service do Proxy Cloud](http://localhost:4502/etc/cloudservices/proxy.html)
    * [Configuração do AEM Externalizer OSGi](http://localhost:4502/system/console/configMgr)
 
-3. **Carregado o arquivo de InDesign para a AEM Assets** e permite que AEM fluxo de trabalho e InDesign Server processem totalmente os ativos.
-4. **Crie um novo modelo** em **Ativos > Modelos** e selecione o arquivo de InDesign carregado para AEM na Etapa 4.
-5. **Edite o Modelo** de ativo criado na Etapa 5 e crie os campos editáveis.
-6. Clique em **Concluído** para gerar as renderizações finais de alta fidelidade do Modelo de ativo.
+3. **Carregado o arquivo de InDesign para AEM** Ativos e permitir que AEM Fluxo de trabalho e InDesign Server processem totalmente os ativos.
+4. **Crie um novo** Modelo em  **Ativos >** Modelos e selecione o arquivo de InDesign carregado para AEM na Etapa 4.
+5. **Edite o** modelo de ativo criado na Etapa 5 e crie os campos editáveis.
+6. Clique em **Concluído** para gerar as representações finais de alta fidelidade do Modelo de ativo.
 7. Clique no cartão Modelo de ativo para abrir e revisar as Representações de ativo para baixar as representações de alta fidelidade.
 
 ## Recursos adicionais {#additional-resources}
 
 Arquivo de modelo de InDesign e imagens de suporte
 
-Baixar o arquivo de modelo de [InDesign e as imagens de suporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Baixar [arquivo de modelo de InDesign e imagens de suporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Download de avaliação do InDesign CC](https://creative.adobe.com/products/download/indesign)
 * [Download da versão de avaliação do InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
