@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Depuração de AEM como um Cloud Service com CRXDE Lite
 
-O CRXDE Lite __APENAS__ está disponível em AEM como ambientes de desenvolvimento de Cloud Service (bem como o SDK AEM local).
+O CRXDE Lite está __SOMENTE__ disponível em AEM como ambientes de Desenvolvimento de Cloud Service (bem como o SDK AEM local).
 
 ## Acessar CRXDE Lite no autor de AEM
 
-O CRXDE Lite __só__ pode ser acessado em AEM como ambientes de Desenvolvimento de Cloud Service e __não__ está disponível em ambientes de Palco ou Produção.
+O CRXDE Lite é __apenas__ acessível em AEM como ambientes de Desenvolvimento de Cloud Service e __não__ está disponível em ambientes de Estágio ou Produção.
 
 Para acessar o CRXDE Lite no autor de AEM:
 
@@ -37,7 +37,7 @@ Isso abrirá o CRXDE Lite usando as credenciais e permissões usadas para fazer 
 
 O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível via CRXDE Lite é limitado pelas permissões concedidas ao usuário, o que significa que você pode não conseguir ver ou modificar tudo no JCR dependendo do seu acesso.
 
-Observe que `/apps`, `/libs` e `/oak:index` são imutáveis, o que significa que não podem ser alterados por nenhum usuário no tempo de execução. Esses locais no JCR só podem ser modificados por meio de implantações de código.
+Observe que `/apps`, `/libs` e `/oak:index` são imutáveis, o que significa que não podem ser alterados em tempo de execução por qualquer usuário. Esses locais no JCR só podem ser modificados por meio de implantações de código.
 
 + A estrutura do JCR é navegada e manipulada usando o painel de navegação esquerdo
 + A seleção de um nó no painel de navegação esquerdo expõe os objetos de propriedade do nó no painel inferior.
@@ -48,7 +48,7 @@ Observe que `/apps`, `/libs` e `/oak:index` são imutáveis, o que significa que
 ![CRXDE Lite - Depuração de conteúdo](./assets/crxde-lite/debugging-content.png)
 
 Fazer alterações no conteúdo mutável em tempo de execução em AEM como ambientes de desenvolvimento de Cloud Service através do CRXDE Lite deve ser feito com cuidado.
-Qualquer alteração feita diretamente no AEM via CRXDE Lite pode ser difícil de rastrear e governar. Conforme apropriado, verifique se as alterações feitas via CRXDE Lite retornam aos pacotes de conteúdo mutável (`ui.content`) do projeto AEM e se comprometeram com o Git, para garantir que o problema seja resolvido. Idealmente, todas as alterações no conteúdo do aplicativo são originadas da base de código e fluem para AEM por meio de implantações, em vez de fazer alterações diretamente no AEM via CRXDE Lite.
+Qualquer alteração feita diretamente no AEM via CRXDE Lite pode ser difícil de rastrear e governar. Conforme apropriado, verifique se as alterações feitas via CRXDE Lite retornam aos pacotes de conteúdo mutável do projeto AEM (`ui.content`) e se vinculam ao Git, para garantir que o problema seja resolvido. Idealmente, todas as alterações no conteúdo do aplicativo são originadas da base de código e fluem para AEM por meio de implantações, em vez de fazer alterações diretamente no AEM via CRXDE Lite.
 
 ### Depuração de controles de acesso
 
@@ -66,18 +66,18 @@ Para acessar o console Testar Controle de acesso no CRXDE Lite, navegue até:
 
 Os resultados são exibidos abaixo:
 
-+ __Caminho__ reitera o caminho que foi avaliado
-+ __O principal__ reitera o usuário ou grupo para o qual o caminho foi avaliado
-+ __Os principais__ listas todos os principais dos quais o principal selecionado é parte.
++ ____ Padroniza o caminho que foi avaliado
++ __Principal__ reitera o usuário ou grupo para o qual o caminho foi avaliado
++ __O__ Principal lista todos os principais dos quais o principal selecionado é parte.
    + Isso é útil para entender as associações de grupo transitivas que podem fornecer permissões por herança
-+ __Privilégios no Caminho__ lista todas as permissões do JCR que o principal selecionado tem no caminho avaliado
++ __Privilégios no__ caminho lista todas as permissões do JCR que o principal selecionado tem no caminho avaliado
 
 ### Atividades de depuração não suportadas
 
-Veja a seguir atividades de depuração que __não__ podem ser executadas no CRXDE Lite.
+A seguir estão as atividades de depuração que podem __não__ ser executadas no CRXDE Lite.
 
 ### Depuração de configurações OSGi
 
-As configurações de OSGi implantadas não podem ser revisadas via CRXDE Lite. As configurações de OSGi são mantidas no pacote de `ui.apps` códigos do AEM Project em `/apps/example/config.xxx`, no entanto, após a implantação para AEM como ambientes Cloud Service, os recursos de configurações de OSGi não são persistentes para o JCR, portanto não são visíveis via CRXDE Lite.
+As configurações de OSGi implantadas não podem ser revisadas via CRXDE Lite. As configurações de OSGi são mantidas no pacote de códigos `ui.apps` do AEM Project em `/apps/example/config.xxx`, no entanto, após a implantação para AEM como um ambiente Cloud Service, os recursos de configurações de OSGi não são persistentes para o JCR, portanto não são visíveis via CRXDE Lite.
 
-Em vez disso, use o Console do [desenvolvedor > Configurações](./developer-console.md#configurations) para analisar as configurações do OSGi implantadas.
+Em vez disso, use o [Console do desenvolvedor > Configurações](./developer-console.md#configurations) para revisar as configurações implantadas do OSGi.
