@@ -36,7 +36,7 @@ Grupos de usuários fechados (CUGs) é um recurso usado para restringir o acesso
 
 Grupo de membros We.Retail adicionado como um Grupo de usuários fechado à pasta: /content/dam/we-retail/en/beta-products
 
-Uma mistura de **rep:CugMixin** é aplicada à pasta **/content/dam/we-retail/en/beta-products** . Um nó de **rep:cugPolicy** é adicionado abaixo da pasta e nós-retail-Members é especificado como principal. Outra mistura de **granite:AuthenticationRequired** é aplicada à pasta de produtos beta e a propriedade* granite*:loginPath** especifica a Página de login a ser usada se um usuário não estiver autenticado e tentar solicitar um ativo abaixo da pasta de produtos **** beta.
+Uma mistura de **rep:CugMixin** é aplicada à pasta **/content/dam/we-retail/en/beta-products**. Um nó de **rep:cugPolicy** é adicionado abaixo da pasta e nós-retail-Members é especificado como principal. Outra mistura de **granite:AuthenticationRequired** é aplicada à pasta de produtos beta e a propriedade* granite*:loginPath** especifica a Página de logon a ser usada se um usuário não estiver autenticado e tentar solicitar um ativo abaixo da pasta **produtos beta**.
 
 Descrição do JCR abaixo:
 
@@ -56,7 +56,7 @@ Os Grupos de usuários fechados (CUG) e as Listas de Controles de acesso (ACL) s
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Utilização prevista | Configure e aplique permissões para conteúdo na instância de AEM **atual** . | Configure as políticas de CUG para conteúdo AEM instância do **autor** . Aplique políticas CUG para conteúdo em AEM instância(s) de **publicação** (s). |
+| Utilização prevista | Configure e aplique permissões para conteúdo na instância AEM **atual**. | Configure as políticas de CUG para conteúdo na instância **author** AEM. Aplique políticas CUG para conteúdo em AEM **publicar** instância(s). |
 | Níveis de permissão | Define permissões concedidas/negadas para usuários/grupos para todos os níveis: Ler, Modificar, Criar, Excluir, Ler ACL, Editar ACL, Replicar. | Concede acesso de leitura a um conjunto de usuários/grupos. Nega acesso de leitura a todos os outros usuários/grupos. |
 | Replicação | As ACLs não são replicadas com conteúdo. | As políticas de CUG são replicadas com conteúdo. |
 
