@@ -26,19 +26,19 @@ Saiba como carregar, passar parâmetros para a solicitação de página e aciona
 
 ## Regra de carregamento de página
 
-A Camada de dados do cliente Adobe é uma camada de dados orientada por evento. Quando a camada de dados Página AEM for carregada, ela acionará um evento `cmp:show` . No vídeo, a `Launch Library Loaded` regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado, bem como para os elementos de dados.
+A Camada de dados do cliente Adobe é uma camada de dados orientada por evento. Quando a camada de dados da Página AEM for carregada, ela acionará um evento `cmp:show`. No vídeo, a regra `Launch Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado, bem como para os elementos de dados.
 
-### Evento de página personalizada exibida{#page-event}
+### Evento exibido na página personalizada{#page-event}
 
 ![Configuração de evento mostrada na página e código personalizado](assets/load-and-fire-target-call.png)
 
 Na propriedade Launch, adicione um novo **Evento** à **Regra**
 
-+ __Extensão:__ Núcleo
-+ __tipo de evento:__ Código personalizado
-+ __Nome:__ Manipulador de Eventos de exibição de página (ou algo descritivo)
++ __Extensão:__ Core
++ __tipo de evento:Código__ personalizado
++ __Nome:Manipulador de Eventos de Apresentação de__ Página (ou algo descritivo)
 
-Toque no botão __Abrir editor__ e cole no trecho de código a seguir. Esse código __deve__ ser adicionado à Configuração __do__ Evento e a uma __Ação__ subsequente.
+Toque no botão __Abrir editor__ e cole no seguinte trecho de código. Este código __deve__ ser adicionado à __Configuração do Evento__ e a uma __Ação__ subsequente.
 
 ```javascript
 // Define the event handler function
@@ -78,20 +78,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Uma função personalizada define o `pageShownEventHandler`e escuta os eventos emitidos pelos Componentes Principais AEM, deriva as informações relevantes do Componente Principal, agrupa-o em um objeto de evento e aciona o Evento Launch com as informações derivadas do evento em sua carga útil.
+Uma função personalizada define o `pageShownEventHandler` e escuta os eventos emitidos pelos Componentes Principais AEM, deriva as informações relevantes do Componente Principal, agrupa-o em um objeto de evento e aciona o Evento Launch com as informações do evento derivado em sua carga útil.
 
-A regra de inicialização é acionada usando a `trigger(...)` função do Launch, que está __somente__ disponível na definição do trecho de código personalizado do Evento de uma regra.
+A regra de inicialização é acionada usando a função `trigger(...)` do Launch, que é __only__ disponível na definição do trecho de código personalizado do Evento de uma regra.
 
-A `trigger(...)` função pega um objeto de evento como um parâmetro que, por sua vez, é exposto em Elementos de dados de inicialização, por outro nome reservado em Iniciar chamado `event`. Os Elementos de dados no Launch agora podem fazer referência aos dados desse objeto de evento a partir do `event` objeto usando sintaxe como `event.component['someKey']`.
+A função `trigger(...)` usa um objeto de evento como parâmetro que, por sua vez, é exposto em Elementos de dados de inicialização por outro nome reservado em Iniciar chamado `event`. Os elementos de dados no Launch agora podem fazer referência aos dados desse objeto de evento do objeto `event` usando sintaxe como `event.component['someKey']`.
 
-Se `trigger(...)` for usado fora do contexto de um tipo de evento de Código personalizado do Evento (por exemplo, em uma ação), o erro de JavaScript `trigger is undefined` será lançado no site integrado à propriedade Launch.
+Se `trigger(...)` for usado fora do contexto de um tipo de evento de Código Personalizado do Evento (por exemplo, em uma Ação), o erro de JavaScript `trigger is undefined` será lançado no site integrado à propriedade Launch.
 
 
 ### Elementos de dados
 
 ![Elementos de dados](assets/data-elements.png)
 
-Os Elementos de dados de inicialização do Adobe mapeiam os dados do objeto do evento [disparados no evento](#page-event) personalizado Página exibida para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
+Os Elementos de dados de inicialização do Adobe mapeiam os dados do objeto do evento [acionado no evento personalizado Página exibida](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
 
 #### Elemento de dados de ID da página
 
@@ -140,7 +140,7 @@ Esse código retorna o título da página AEM.
 #### Solução
 
 Os clientes do público alvo às vezes usam instâncias baseadas em nuvem com Público alvo para testes ou para fins simples de prova de conceito. Esses domínios, e muitos outros, fazem parte da Lista Sufixo Público .
-Os navegadores modernos não salvarão cookies se você estiver usando esses domínios, a menos que você personalize a `cookieDomain` configuração usando `targetGlobalSettings()`.
+Os navegadores modernos não salvarão cookies se você estiver usando esses domínios, a menos que personalize a configuração `cookieDomain` usando `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
