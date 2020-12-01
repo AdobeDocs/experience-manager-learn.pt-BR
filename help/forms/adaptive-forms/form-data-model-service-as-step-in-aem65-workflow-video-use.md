@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do serviço Form Data Model como Etapa do Fluxo de Trabalho AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
+# Uso do serviço de modelo de dados de formulário como etapa no fluxo de trabalho AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
 
 A partir do AEM Forms 6.4, agora temos a capacidade de usar o serviço de Modelo de dados de formulário como parte do Fluxo de trabalho AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no AEM Fluxo de trabalho
 
@@ -29,7 +29,7 @@ A partir do AEM Forms 6.4, agora temos a capacidade de usar o serviço de Modelo
 
 Para testar esse recurso em seu servidor, siga as instruções abaixo
 
-* Configure tomcat com o arquivo SampleRest.war, conforme descrito [aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo de guerra implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato.A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure tomcat com o arquivo SampleRest.war conforme descrito [here](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo de guerra implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato.A pontuação de crédito é um número aleatório entre 200 e 800
 
 * [ Importar ativos para AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
 * O pacote contém o seguinte:
@@ -37,7 +37,7 @@ Para testar esse recurso em seu servidor, siga as instruções abaixo
    * Modelo de fluxo de trabalho que usa a etapa FDM.
    * Modelo de dados de formulário usado na etapa FDM.
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
-* Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o fluxo de trabalho [do](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) aplicativo de empréstimo é acionado.
+* Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o fluxo de trabalho [loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
 ![ fluxo de trabalho ](assets/invokefdm651.PNG).
 O fluxo de trabalho utiliza o componente Ou dividir para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, o aplicativo será direcionado para a recuperação.
