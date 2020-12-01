@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Noções básicas sobre o teste automatizado Forms com a AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
+# Noções básicas sobre o teste automatizado do Forms com o AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
 
 AEM 6.3 A Forms introduz a capacidade de permitir que os usuários criem casos de teste dentro da AEM para a Adaptive Forms usando o Calvin SDK integrado à estrutura hobbes.js.
 
