@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do aplicativo de desktop Dynamic Media Classic{#using-dynamic-media-desktop-application}
+# Uso do Aplicativo de Área de Trabalho do Dynamic Media Classic{#using-dynamic-media-desktop-application}
 
 O Adobe apresenta um aplicativo de desktop para o Dynamic Media Classic que fornece uma experiência semelhante a um navegador e uma interface funcionalmente equivalente que não depende do player do Flash Adobe.
 
