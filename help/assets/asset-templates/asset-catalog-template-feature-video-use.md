@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do catálogo de ativos com comércio e InDesign Server AEM{#using-asset-catalog-with-aem-commerce-and-indesign-server}
+# Usando o Catálogo de ativos com AEM Commerce e InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
 
 AEM 6.4 O aprimoramento do catálogo fornece a capacidade de criar páginas de catálogo usando AEM modelos de ativos e InDesigns Server.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear as propriedades do produto para campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para produtos diferentes.
 
