@@ -32,7 +32,7 @@ O console Pacotes é um catálogo dos pacotes OSGi, e seus detalhes, implantados
 O console Pacotes está localizado em:
 
 + Ferramentas > Operações > Console da Web > OSGi > Pacotes
-+ Or directly at: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ Ou diretamente em: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 Clicar em cada pacote fornece detalhes que ajudam na depuração do aplicativo.
 
@@ -49,7 +49,7 @@ O console Componentes é um catálogo de todos os componentes OSGi implantados p
 O console Componentes está localizado em:
 
 + Ferramentas > Operações > Console da Web > OSGi > Componentes
-+ Or directly at: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ Ou diretamente em: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
 Principais aspectos que ajudam nas atividades de depuração:
 
@@ -66,7 +66,7 @@ Principais aspectos que ajudam nas atividades de depuração:
 O console Sling Models está localizado em:
 
 + Ferramentas > Operações > Console da Web > Status > Modelos Sling
-+ Or directly at: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ Ou diretamente em: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 Principais aspectos que ajudam nas atividades de depuração:
 
