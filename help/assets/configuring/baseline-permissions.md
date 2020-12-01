@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Permissões da linha de base
 
-O gerenciamento do acesso do usuário nas pastas [de ativos de](./baseline-folders.md) linha de base é um aspecto essencial no controle e garante que os processos possam ser suportados corretamente.
+O gerenciamento do acesso do usuário nas [pastas de ativos de linha de base](./baseline-folders.md) é um aspecto essencial no controle e garante que os processos possam ser suportados corretamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
