@@ -62,4 +62,4 @@ As fórmulas a seguir são usadas no vídeo para gerar o gráfico Ativos por tam
 
 ## Recursos adicionais{#additional-resources}
 
-Baixar [todos os arquivos Excel de ativos com gráfico](./assets/asset-reports/all-assets.xlsx)
+Baixar [Arquivo Excel de todos os ativos com o Gráfico](./assets/asset-reports/all-assets.xlsx)
