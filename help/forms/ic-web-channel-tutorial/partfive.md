@@ -30,7 +30,7 @@ Os fragmentos de documento contêm o conteúdo de texto dos documentos de comuni
 
 O editor de Rich Text é intuitivo o suficiente para que um usuário corporativo crie textos e insira elementos de dados do formulário. O editor de fragmentos de documento tem a capacidade de formatar texto, especificar tipos de fonte e estilos, inserir caracteres especiais e criar hiperlinks.
 
-O editor de fragmentos de documento também tem a capacidade de inserir condições em linha no seu texto, conforme demonstrado neste [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+O editor de fragmentos de documento também tem a capacidade de inserir condições em linha no seu texto, como demonstrado neste [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
