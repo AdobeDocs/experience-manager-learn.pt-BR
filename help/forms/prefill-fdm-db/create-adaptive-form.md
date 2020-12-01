@@ -26,26 +26,26 @@ Até agora criamos o seguinte
 * Fonte de dados agrupada da conexão Apache Sling configurada
 * Modelo de dados de formulário baseado em RDBMS
 
-A próxima etapa é criar e configurar um formulário adaptável para usar o modelo de dados do formulário.  Para obter o start principal, é possível [baixar e importar](assets/fdm-demo-af.zip) o formulário de amostra. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para a lista dos beneficiários do funcionário.
+A próxima etapa é criar e configurar um formulário adaptável para usar o modelo de dados do formulário.  Para obter o start principal, você pode [baixar e importar](assets/fdm-demo-af.zip) formulário de amostra. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para a lista dos beneficiários do funcionário.
 
 ## Associar formulário ao modelo de dados de formulário
 
 O formulário de amostra fornecido com esse curso não está associado a nenhum modelo de dados de formulário. Para configurar o formulário para usar o modelo de dados de formulário, é necessário fazer o seguinte:
 
 * Selecione o formulário FDMDemo
-* Clique em _Propriedades_->Modelo _de formulário_
+* Clique em _Propriedades_->_Modelo de Formulário_
 * Selecione Modelo de dados de formulário na lista suspensa
 * Pesquise e selecione seu Modelo de dados de formulário criado na lição anterior.
-* Click on _Save &amp; Close_
+* Clique em _Salvar e fechar_
 
 ## Configurar o serviço de Prefill
 
 A primeira etapa é associar o serviço de preenchimento prévio ao formulário. Para associar o serviço de preenchimento prévio, siga as etapas mencionadas abaixo
 
-* Selecionar o `FDMDemo` formulário
+* Selecione o formulário `FDMDemo`
 * Clique em _Editar_ para abrir o formulário no modo de edição
 * Selecione Container de formulário na hierarquia de conteúdo e clique no ícone de chave para abrir sua folha de propriedades
-* Selecione o serviço _de Pré-preenchimento do Modelo de Dados de_ Formulário na lista suspensa Serviço de Pré-preenchimento
+* Selecione _Serviço de Pré-preenchimento do Modelo de Dados de Formulário_ na lista suspensa Serviço de Pré-preenchimento
 * Clique em azul ☑ para salvar suas alterações
 
 * ![serviço de preenchimento prévio](assets/fdm-prefill.png)
@@ -71,7 +71,7 @@ O próximo passo é exibir os beneficiários do funcionário de forma tabular. O
 * Abra o formulário no modo de edição.
 * Expandir painel raiz->Seus beneficiários->Tabela
 * Selecione Linha1 e clique no ícone de chave para abrir sua folha de propriedades.
-* Defina a referência de vinculação como **/newhire/GetEmployeeBenaries**
+* Defina a Referência de vínculo como **/newhire/GetEmployeeBenaries**
 * Defina Repeat Settings (Repetir configurações) - Minimum Count (Contagem mínima) como 1 e Maximum Count (Contagem máxima) como 5.
 * A configuração da sua linha1 deve ser parecida com a captura de tela abaixo
    ![configuração de linha](assets/configure-row.PNG)
@@ -95,7 +95,9 @@ Por fim, precisamos vincular as células Linha aos elementos do Modelo de dados 
 
 ## Testar seu formulário
 
-Agora, precisamos abrir o formulário com a empID apropriada no url. Os 2 links a seguir preencherão formulários com informações do[Formulário de banco de dados com empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Formulário com empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+Agora, precisamos abrir o formulário com a empID apropriada no url. Os 2 links a seguir preencherão formulários com informações do banco de dados
+[Formulário com empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[Formulário com empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Resolução de problemas
 
