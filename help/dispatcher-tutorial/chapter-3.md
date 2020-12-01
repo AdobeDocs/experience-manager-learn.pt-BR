@@ -24,7 +24,7 @@ Esta é a Parte 3 de uma série de três partes para o armazenamento em AEM. Ond
 
 ## Cache em geral
 
-[O Capítulo 1](chapter-1.md) e o [Capítulo 2](chapter-2.md) desta série incidiram principalmente sobre o Dispatcher. Explicámos as noções básicas, as limitações e onde é necessário fazer certas escolhas.
+[O Capítulo 1](chapter-1.md) e o  [Capítulo 2 ](chapter-2.md) desta série incidiram principalmente sobre o Dispatcher. Explicámos as noções básicas, as limitações e onde é necessário fazer certas escolhas.
 
 A complexidade e as complexidades do cache não são problemas exclusivos do Dispatcher. Cache é difícil em geral.
 
@@ -93,19 +93,19 @@ Mas onde nessa cadeia faz sentido armazenar em cache? No começo? No fim? Em tod
 
 Para vos dar uma ideia aproximada dos fatores que podem levar em consideração.
 
-**Tempo de vida** - se os objetos tiverem um tempo de vida curto inerente (os dados de tráfego podem ter um tempo de vida útil menor do que os dados meteorológicos), talvez não valha a pena armazenar em cache.
+**Tempo de vida**  - se os objetos tiverem um tempo de vida curto inerente (os dados de tráfego podem ter um tempo de vida útil menor do que os dados meteorológicos), talvez não valha a pena armazenar em cache.
 
-**Custo de produção - O quão caro (em termos de ciclos da CPU e E/S) é a reprodução e o delivery de um objeto.** Se for um caching barato pode não ser necessário.
+**Custo de produção -** Quanto caro (em termos de ciclos de CPU e E/S) é a reprodução e o delivery de um objeto. Se for um caching barato pode não ser necessário.
 
-**Tamanho** - objetos grandes exigem mais recursos para serem armazenados em cache. Isso poderia ser um fator limitante e deve ser contrabalançado com os benefícios.
+**Tamanho**  - objetos grandes exigem mais recursos para serem armazenados em cache. Isso poderia ser um fator limitante e deve ser contrabalançado com os benefícios.
 
-**Frequência** de acesso - se os objetos forem acessados raramente, o cache pode não ser eficaz. Eles simplesmente ficariam obsoletos ou seriam invalidados antes de serem acessados pela segunda vez do cache. Tais itens apenas bloqueariam os recursos de memória.
+**Frequência**  de acesso - se os objetos forem acessados raramente, o cache pode não ser eficaz. Eles simplesmente ficariam obsoletos ou seriam invalidados antes de serem acessados pela segunda vez do cache. Tais itens apenas bloqueariam os recursos de memória.
 
-**Acesso** compartilhado - os dados usados por mais de uma entidade devem ser armazenados em cache mais acima da cadeia. Na verdade, a cadeia de caching não é uma cadeia, mas uma árvore. Um dado no repositório pode ser usado por mais de um modelo. Por sua vez, esses modelos podem ser usados por mais de um script de renderização para gerar fragmentos HTML. Esses fragmentos são incluídos em várias páginas que são distribuídas para vários usuários com seus caches privados no navegador. Então &quot;compartilhar&quot; não significa compartilhar apenas entre pessoas, mas entre softwares. Se você quiser encontrar um cache &quot;compartilhado&quot; em potencial, apenas rastreie a árvore até a raiz e localize um ancestral comum - é onde você deve armazenar em cache.
+**Acesso**  compartilhado - os dados usados por mais de uma entidade devem ser armazenados em cache mais acima da cadeia. Na verdade, a cadeia de caching não é uma cadeia, mas uma árvore. Um dado no repositório pode ser usado por mais de um modelo. Por sua vez, esses modelos podem ser usados por mais de um script de renderização para gerar fragmentos HTML. Esses fragmentos são incluídos em várias páginas que são distribuídas para vários usuários com seus caches privados no navegador. Então &quot;compartilhar&quot; não significa compartilhar apenas entre pessoas, mas entre softwares. Se você quiser encontrar um cache &quot;compartilhado&quot; em potencial, apenas rastreie a árvore até a raiz e localize um ancestral comum - é onde você deve armazenar em cache.
 
-**Distribuição** geoespacial - Se os usuários estiverem distribuídos pelo mundo, o uso de uma rede distribuída de caches pode ajudar a reduzir a latência.
+**Distribuição**  geoespacial - Se seus usuários estiverem distribuídos pelo mundo, o uso de uma rede distribuída de caches pode ajudar a reduzir a latência.
 
-**Largura de banda e latência** de rede - Falando de latência, quem são seus clientes e que tipo de rede eles estão usando? Talvez seus clientes sejam clientes móveis em um país subdesenvolvido usando conexão 3G de smartphones da geração mais antiga? Considere criar objetos menores e armazená-los em cache nos caches do navegador.
+**Largura de banda e latência**  de rede - Falando de latência, quem são seus clientes e que tipo de rede eles estão usando? Talvez seus clientes sejam clientes móveis em um país subdesenvolvido usando conexão 3G de smartphones da geração mais antiga? Considere criar objetos menores e armazená-los em cache nos caches do navegador.
 
 Esta lista de longe não é abrangente, mas pensamos que já percebemos a ideia.
 
@@ -121,9 +121,9 @@ Cada uma das camadas introduzidas no último capítulo fornece algum valor na ca
 
 Há três estratégias básicas de invalidação:
 
-* **TTL, Tempo de vida:** Um objeto expira após uma quantidade fixa de tempo (por exemplo, &quot;2 horas a partir de agora&quot;)
-* **Data de expiração:** O objeto expira em um horário definido no futuro (por exemplo, &quot;17:00 PM em 10 de junho de 2019&quot;)
-* **Baseado em eventos:** O objeto é invalidado explicitamente por um evento que ocorreu na plataforma (por exemplo, quando uma página é alterada e ativada)
+* **TTL, Tempo de vida:** um objeto expira após uma quantidade fixa de tempo (por exemplo, &quot;2 horas a partir de agora&quot;)
+* **Data de expiração:** o objeto expira em um horário definido no futuro (por exemplo, &quot;17:00 PM em 10 de junho de 2019&quot;)
+* **Baseado em eventos:** o objeto é invalidado explicitamente por um evento que ocorreu na plataforma (por exemplo, quando uma página é alterada e ativada)
 
 Agora você pode usar estratégias diferentes em diferentes camadas de cache, mas há algumas &quot;tóxicas&quot;.
 
@@ -141,7 +141,7 @@ Em termos simples, os caches são invalidados um por um após a alteração do o
 
 Você só precisa manter uma regra em mente:
 
-Sempre invalidar de dentro para fora do cache. Se você invalidou um cache externo primeiro, ele pode fazer o cache novamente de conteúdo obsoleto de um cache interno. Não faça pressuposições de quando o cache estiver atualizado novamente - verifique se ele está. Melhor, acionando a invalidação do cache externo _após_ a invalidação do interno.
+Sempre invalidar de dentro para fora do cache. Se você invalidou um cache externo primeiro, ele pode fazer o cache novamente de conteúdo obsoleto de um cache interno. Não faça pressuposições de quando o cache estiver atualizado novamente - verifique se ele está. Melhor, acionando a invalidação do cache externo _depois de_ invalidar o cache interno.
 
 Essa é a teoria. Mas, na prática, há um número de armadilhas. Os eventos devem ser distribuídos - possivelmente por uma rede. Na prática, isto torna mais difícil a implementação do sistema de invalidação.
 
@@ -223,7 +223,7 @@ Esta combinação é tóxica. Nunca coloque nem coloque o cache baseado em event
 
 #### Respeitar Controle de acesso
 
-As técnicas descritas aqui são bastante poderosas e _imperdíveis_ em cada caixa de ferramentas AEM desenvolvedor. Mas não se empolgue muito, use-os sabiamente. Armazenar um objeto em um cache e compartilhá-lo com outros usuários em solicitações de acompanhamento significa contornar o controle de acesso. Isso geralmente não é um problema em sites voltados para o público, mas pode ser, quando um usuário precisa fazer logon antes de obter acesso.
+As técnicas descritas aqui são bastante poderosas e _devem ter_ em cada caixa de ferramentas do desenvolvedor AEM. Mas não se empolgue muito, use-os sabiamente. Armazenar um objeto em um cache e compartilhá-lo com outros usuários em solicitações de acompanhamento significa contornar o controle de acesso. Isso geralmente não é um problema em sites voltados para o público, mas pode ser, quando um usuário precisa fazer logon antes de obter acesso.
 
 Considere armazenar uma marcação HTML do menu principal do site em um cache na memória para compartilhá-la entre várias páginas. Na verdade, esse é um exemplo perfeito para armazenar HTML parcialmente renderizado, já que a criação de uma navegação geralmente é cara, pois requer a passagem de muitas páginas.
 
@@ -247,7 +247,7 @@ O que isso significa?
 
 4. Mesmo que você crie um &quot;invólucro&quot; fino ao redor de um recurso da AEM, não deverá armazená-lo em cache - mesmo que seja seu próprio e imutável. O objeto encapsulado seria uma referência (que nós proibimos antes) e se olharmos nítidos, isso basicamente cria os mesmos problemas descritos no último item.
 
-5. Se desejar armazenar em cache, crie seus próprios objetos copiando dados primitivos em seus próprios objetos shallo. Você pode querer vincular entre seus próprios objetos por referências - por exemplo, você pode querer armazenar em cache uma árvore de objetos. Isso é bom - mas apenas armazena em cache objetos que você acabou de criar na mesma solicitação - e nenhum objeto que foi solicitado de outro lugar (mesmo se for o espaço de nome do objeto &#39;seu&#39;). _Copiar objetos_ é a chave. E certifique-se de limpar toda a estrutura de objetos vinculados de uma só vez e evitar referências de entrada e saída à sua estrutura.
+5. Se desejar armazenar em cache, crie seus próprios objetos copiando dados primitivos em seus próprios objetos shallo. Você pode querer vincular entre seus próprios objetos por referências - por exemplo, você pode querer armazenar em cache uma árvore de objetos. Isso é bom - mas apenas armazena em cache objetos que você acabou de criar na mesma solicitação - e nenhum objeto que foi solicitado de outro lugar (mesmo se for o espaço de nome do objeto &#39;seu&#39;). _Copiar_ objetos é a chave. E certifique-se de limpar toda a estrutura de objetos vinculados de uma só vez e evitar referências de entrada e saída à sua estrutura.
 
 6. Sim - e mantenha seus objetos imutáveis. Propriedades privadas, somente e sem setters.
 
@@ -259,13 +259,13 @@ Esta série é sobre entender conceitos e capacitar você a construir uma arquit
 
 Não estamos a promover nenhum instrumento em particular. Mas deem-vos pistas sobre como avaliá-las. Por exemplo, AEM tem um cache integrado simples com um TTL fixo desde a versão 6.0. Você deve usá-lo? Provavelmente não na publicação em que um cache baseado em eventos segue na cadeia (dica: O Dispatcher). Mas pode ser por uma escolha decente para um Autor. Há também um cache HTTP por Adobe ACS comuns que pode valer a pena ser considerado.
 
-Ou você constrói o seu próprio, baseado em uma estrutura de cache madura, como o [Ehcache](https://www.ehcache.org). Isso pode ser usado para armazenar em cache objetos Java e marcação renderizada (`String` objetos).
+Ou você cria seu próprio, com base em uma estrutura de cache madura, como [Ehcache](https://www.ehcache.org). Isso pode ser usado para armazenar em cache objetos Java e marcação renderizada (`String` objetos).
 
 Em alguns casos simples, você também pode se dar bem com o uso de mapas de hash simultâneos - você verá rapidamente limites aqui - na ferramenta ou em suas habilidades. A simultaneidade é tão difícil de ser principal quanto nomear e armazenar em cache.
 
 #### Referências
 
-* [Cache http comum ACS ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [Cache http comum ACS  ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Estrutura de cache do Ehcache](https://www.ehcache.org)
 
 ### Termos básicos
@@ -274,7 +274,7 @@ Não vamos entrar na teoria do caching muito fundo aqui, mas nos sentimos obriga
 
 #### Eliminação de Cache
 
-Nós falamos sobre invalidação e purga muito. _A remoção_ do cache está relacionada aos seguintes termos: Depois de uma entrada, ela é despejada, não está mais disponível. Mas o despejo acontece não quando uma entrada está desatualizada, mas quando o cache está cheio. Itens mais recentes ou &quot;mais importantes&quot; empurram itens mais antigos ou menos importantes para fora do cache. Quais entradas você terá que sacrificar é uma decisão caso a caso. Você pode querer despejar os mais antigos ou aqueles que foram usados muito raramente ou acessados por muito tempo.
+Nós falamos sobre invalidação e purga muito. _A_ remoção de cache está relacionada aos seguintes termos: Depois de uma entrada, ela é despejada, não está mais disponível. Mas o despejo acontece não quando uma entrada está desatualizada, mas quando o cache está cheio. Itens mais recentes ou &quot;mais importantes&quot; empurram itens mais antigos ou menos importantes para fora do cache. Quais entradas você terá que sacrificar é uma decisão caso a caso. Você pode querer despejar os mais antigos ou aqueles que foram usados muito raramente ou acessados por muito tempo.
 
 #### Cache preventivo
 
@@ -377,7 +377,7 @@ O cache de fragmentos será usado se você tiver algo constante (a navegação) 
 
 Mas você também pode ter o oposto, um contexto relativamente constante (uma página que raramente muda) e alguns fragmentos que mudam constantemente nessa página (por exemplo, um ticker ao vivo).
 
-Nesse caso, você pode dar uma chance ao [Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html) . Em essência, este é um filtro de componente, que envolve o componente dinâmico e, em vez de renderizar o componente na página, cria uma referência. Essa referência pode ser uma chamada Ajax, de modo que o componente seja incluído pelo navegador e, portanto, a página adjacente possa ser armazenada em cache estaticamente. Ou - alternativamente - a inclusão dinâmica de sling pode gerar uma diretiva SSI (Inclusão do lado do servidor). Esta diretiva seria executada no servidor Apache. Você pode até mesmo usar as diretivas ESI - Edge Side Include se você aproveitar o Varnish ou um CDN compatível com scripts ESI.
+Nesse caso, você pode dar uma chance a [Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html). Em essência, este é um filtro de componente, que envolve o componente dinâmico e, em vez de renderizar o componente na página, cria uma referência. Essa referência pode ser uma chamada Ajax, de modo que o componente seja incluído pelo navegador e, portanto, a página adjacente possa ser armazenada em cache estaticamente. Ou - alternativamente - a inclusão dinâmica de sling pode gerar uma diretiva SSI (Inclusão do lado do servidor). Esta diretiva seria executada no servidor Apache. Você pode até mesmo usar as diretivas ESI - Edge Side Include se você aproveitar o Varnish ou um CDN compatível com scripts ESI.
 
 ![Diagrama de sequência de uma solicitação usando a inclusão dinâmica Sling](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
@@ -413,7 +413,7 @@ Aconselhamos você a estudar cuidadosamente a documentação do SDI. Existem out
 
 Voltemos ao caso com a navegação. Estávamos assumindo que cada página exigiria a mesma marcação da navegação.
 
-Mas talvez não seja esse o caso. Você pode querer renderizar uma marcação diferente para o item na navegação que representa a página __ atual.
+Mas talvez não seja esse o caso. Talvez você queira renderizar uma marcação diferente para o item na navegação que representa a _página atual_.
 
 ```
 Travel Destinations
@@ -444,7 +444,7 @@ News
 <is
 ```
 
-Estas são duas representações completamente diferentes. Ainda assim, o objeto _de_ negócios - a árvore de navegação completa - é o mesmo.  O objeto __ comercial aqui seria um gráfico de objeto que representa os nós na árvore. Esse gráfico pode ser facilmente armazenado em um cache na memória. No entanto, lembre-se de que esse gráfico não deve conter nenhum objeto ou fazer referência a qualquer objeto que você mesmo não criou - especialmente agora nós JCR.
+Estas são duas representações completamente diferentes. Ainda assim, o _objeto de negócios_ - a árvore de navegação completa - é o mesmo.  O objeto _business_ aqui seria um gráfico de objetos que representa os nós na árvore. Esse gráfico pode ser facilmente armazenado em um cache na memória. No entanto, lembre-se de que esse gráfico não deve conter nenhum objeto ou fazer referência a qualquer objeto que você mesmo não criou - especialmente agora nós JCR.
 
 #### Armazenamento em cache no navegador
 
@@ -474,7 +474,7 @@ Há apenas uma coisa que pedimos que você não faça, quando estiver depurando 
 
 Não recarregue as páginas no navegador!
 
-Um &quot;recarregamento _do navegador&quot;, um recarregamento_ _simples, bem como um recarregamento__forçado (&quot;_ shift-reload&quot;) não é o mesmo que uma solicitação de página normal. Uma solicitação de recarregamento simples define um cabeçalho
+Um &quot;recarregamento do navegador&quot;, um _simples-reload_, bem como um _forçado-reload_ (&quot;_shift-reload_&quot;) não é o mesmo que uma solicitação de página normal. Uma solicitação de recarregamento simples define um cabeçalho
 
 ```
 Cache-Control: max-age=0
