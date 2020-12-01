@@ -1,6 +1,6 @@
 ---
-title: Estender um componente | Introdução ao Editor SPA AEM e Reação
-description: Saiba como estender um Componente principal existente para ser usado com o Editor SPA AEM. Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica avançada para expandir os recursos de uma implementação do Editor SPA AEM. Saiba como usar o padrão de delegação para estender os Modelos Sling e os recursos da Sling Resource Fusão.
+title: Estender um componente | Introdução ao editor de SPA AEM e reação
+description: Saiba como estender um Componente principal existente para ser usado com o AEM SPA Editor. Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor de SPA AEM. Saiba como usar o padrão de delegação para estender os Modelos Sling e os recursos da Sling Resource Fusão.
 sub-product: sites
 feature: SPA Editor
 doc-type: tutorial
@@ -21,27 +21,27 @@ ht-degree: 2%
 
 # Estender um componente principal {#extend-component}
 
-Saiba como estender um Componente principal existente para ser usado com o Editor SPA AEM. Entender como estender um componente existente é uma técnica avançada para personalizar e expandir os recursos de uma implementação do Editor SPA AEM.
+Saiba como estender um Componente principal existente para ser usado com o AEM SPA Editor. Entender como estender um componente existente é uma técnica poderosa para personalizar e expandir os recursos de uma implementação do Editor de SPA AEM.
 
 ## Objetivo
 
 1. Estenda um componente principal existente com propriedades e conteúdo adicionais.
 2. Entenda o básico da Herança de componentes com o uso de `sling:resourceSuperType`.
-3. Saiba como aproveitar o Padrão [de](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) delegação para modelos Sling para reutilizar a lógica e a funcionalidade existentes.
+3. Saiba como aproveitar o [Padrão de delegação](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para Modelos Sling para reutilizar a lógica e a funcionalidade existentes.
 
 ## O que você vai criar
 
-Neste capítulo, um novo `Card` componente será criado. O `Card` componente estenderá o Componente [principal da](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) imagem, adicionando campos de conteúdo adicionais, como um Título e um botão de Ação de chamada, para executar a função de um teaser para outro conteúdo dentro do SPA.
+Neste capítulo, um novo componente `Card` será criado. O componente `Card` estenderá o [Componente principal de imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) adicionando campos de conteúdo adicionais, como um Título e um botão de Ação de chamada, para executar a função de um teaser para outro conteúdo dentro do SPA.
 
 ![Criação final do componente de cartão](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> Em uma implementação real, pode ser mais apropriado simplesmente usar o componente [Teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/teaser.html) e estender o componente [principal da](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) imagem para fazer um `Card` componente dependendo dos requisitos do projeto. Sempre é recomendável usar os Componentes [](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais diretamente quando possível.
+> Em uma implementação real, pode ser mais apropriado usar o [Teaser Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/teaser.html) e estender o [Image Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) para fazer um componente `Card` dependendo dos requisitos do projeto. Sempre é recomendável usar [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) diretamente quando possível.
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um ambiente [de desenvolvimento](overview.md#local-dev-environment)local.
+Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
 
 ### Obter o código
 
@@ -59,24 +59,24 @@ Revise as ferramentas e instruções necessárias para configurar um ambiente [d
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Se estiver usando [AEM 6.x](overview.md#compatibility) , adicione o `classic` perfil:
+   Se estiver usando [AEM 6.x](overview.md#compatibility) adicione o perfil `classic`:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Instale o pacote finalizado para o site [de referência](https://github.com/adobe/aem-guides-wknd/releases/latest)WKND tradicional. As imagens fornecidas pelo site [de referência](https://github.com/adobe/aem-guides-wknd/releases/latest) WKND serão reutilizadas no SPA WKND. O pacote pode ser instalado usando [AEM Gerenciador](http://localhost:4502/crx/packmgr/index.jsp)de pacotes.
+3. Instale o pacote finalizado para o [site de referência WKND tradicional](https://github.com/adobe/aem-guides-wknd/releases/latest). As imagens fornecidas pelo [site de referência WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) serão reutilizadas no SPA WKND. O pacote pode ser instalado usando [AEM Gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![O gerenciador de pacotes instala wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
-Você sempre pode visualização o código finalizado no [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution) ou fazer check-out do código localmente ao alternar para a ramificação `React/extend-component-solution`.
+Você sempre pode visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution) ou fazer check-out do código localmente ao alternar para a ramificação `React/extend-component-solution`.
 
 ## Implementação inicial da placa Inspect
 
 Um componente de cartão inicial foi fornecido pelo código inicial do capítulo. Inspect o ponto de partida para a implementação do cartão.
 
-1. No IDE de sua escolha, abra o `ui.apps` módulo.
-2. Navegue até `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/card` o arquivo e faça a visualização dele `.content.xml` .
+1. No IDE de sua escolha, abra o módulo `ui.apps`.
+2. Navegue até `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/card` e visualização o arquivo `.content.xml`.
 
    ![Start de definição AEM componente de placa](assets/extend-component/aem-card-cmp-start-definition.png)
 
@@ -89,7 +89,7 @@ Um componente de cartão inicial foi fornecido pelo código inicial do capítulo
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   A propriedade `sling:resourceSuperType` indica `wknd-spa-react/components/image` que o `Card` componente herdará toda a funcionalidade do componente de Imagem SPA WKND.
+   A propriedade `sling:resourceSuperType` aponta para `wknd-spa-react/components/image`, indicando que o componente `Card` herdará toda a funcionalidade do componente de Imagem SPA WKND.
 
 3. Inspect o arquivo `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image/.content.xml`:
 
@@ -102,19 +102,19 @@ Um componente de cartão inicial foi fornecido pelo código inicial do capítulo
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   Observe que os `sling:resourceSuperType` pontos `core/wcm/components/image/v2/image`. Isso indica que o componente de Imagem SPA WKND herda toda a funcionalidade da Imagem do componente principal.
+   Observe que `sling:resourceSuperType` aponta para `core/wcm/components/image/v2/image`. Isso indica que o componente WKND SPA Image herda toda a funcionalidade da Imagem do componente principal.
 
-   Também conhecido como a herança do recurso Sling do padrão [de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) proxy é um padrão de design poderoso para permitir que os componentes filhos herdem a funcionalidade e estendam/substituam o comportamento quando desejado. A herança Sling suporta vários níveis de herança, portanto, em última análise, o novo `Card` componente herda a funcionalidade da Imagem do componente principal.
+   Também conhecido como [Padrão de proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) A herança de recursos Sling é um padrão de design avançado para permitir que os componentes filhos herdem a funcionalidade e estendam/substituam o comportamento quando desejado. A herança Sling suporta vários níveis de herança, portanto, em última análise, o novo componente `Card` herda a funcionalidade da Imagem do Componente Principal.
 
    Muitas equipes de desenvolvimento se esforçam para ser DRY. (não se repita). A herança de sling torna isso possível com a AEM.
 
-4. Abaixo da `card` pasta, abra o arquivo `_cq_dialog/.content.xml`.
+4. Abaixo da pasta `card`, abra o arquivo `_cq_dialog/.content.xml`.
 
-   Esse arquivo é a definição da caixa de diálogo Componente do `Card` componente. Se estiver usando a herança Sling, é possível usar os recursos da Fusão [de Recursos do](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html) Sling para substituir ou estender partes da caixa de diálogo. Nessa amostra, uma nova guia foi adicionada à caixa de diálogo para capturar dados adicionais de um autor para preencher o Componente de cartão.
+   Esse arquivo é a definição da caixa de diálogo Componente para o componente `Card`. Se estiver usando a herança Sling, é possível usar os recursos de [Fusão de recursos Sling](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html) para substituir ou estender partes da caixa de diálogo. Nessa amostra, uma nova guia foi adicionada à caixa de diálogo para capturar dados adicionais de um autor para preencher o Componente de cartão.
 
-   Propriedades como `sling:orderBefore` permitir que um desenvolvedor escolha onde inserir novas guias ou campos de formulário. Nesse caso, a `Text` guia será inserida antes da `asset` guia. Para utilizar totalmente a Fusão de recursos Sling, é importante saber a estrutura original do nó de diálogo para a caixa de diálogo [do componente de](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml)imagem.
+   Propriedades como `sling:orderBefore` permitem que um desenvolvedor escolha onde inserir novas guias ou campos de formulário. Nesse caso, a guia `Text` será inserida antes da guia `asset`. Para utilizar plenamente a Fusão de Recursos Sling, é importante saber a estrutura original do nó de diálogo para a caixa de diálogo [do componente de imagem](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml).
 
-5. Abaixo da `card` pasta, abra o arquivo `_cq_editConfig.xml`. Esse arquivo determina o comportamento de arrastar e soltar na interface de criação do AEM. Ao estender o componente de Imagem, é importante que o tipo de recurso corresponda ao próprio componente. Revise o `<parameters>` nó:
+5. Abaixo da pasta `card`, abra o arquivo `_cq_editConfig.xml`. Esse arquivo determina o comportamento de arrastar e soltar na interface de criação do AEM. Ao estender o componente de Imagem, é importante que o tipo de recurso corresponda ao próprio componente. Revise o nó `<parameters>`:
 
    ```xml
    <parameters
@@ -125,15 +125,15 @@ Um componente de cartão inicial foi fornecido pelo código inicial do capítulo
        imageRotate=""/>
    ```
 
-   A maioria dos componentes não requer um `cq:editConfig`, a imagem e os descendentes filhos do componente de imagem são exceções.
+   A maioria dos componentes não requer `cq:editConfig`, os descendentes de Imagem e filho do componente de Imagem são exceções.
 
-6. No switch IDE para o `ui.frontend` módulo, navegue até `ui.frontend/src/components/Card`:
+6. No switch IDE para o módulo `ui.frontend`, navegando até `ui.frontend/src/components/Card`:
 
    ![Reagir Start do componente](assets/extend-component/react-card-component-start.png)
 
 7. Inspect o arquivo `Card.js`.
 
-   O componente já foi posicionado para mapear para o AEM `Card` Componente usando a `MapTo` função padrão.
+   O componente já foi posicionado para mapear para o componente AEM `Card` usando a função padrão `MapTo`.
 
    ```js
    MapTo('wknd-spa-react/components/card')(Card, CardEditConfig);
@@ -150,11 +150,11 @@ Um componente de cartão inicial foi fornecido pelo código inicial do capítulo
    }
    ```
 
-   Neste exemplo, optamos por reutilizar o componente React Image existente `Image` simplesmente passando o componente `this.props` do `Card` . Posteriormente, no tutorial, o `get bodyContent()` método será implementado para exibir um título, uma data e um botão de ação.
+   Neste exemplo, optamos por reutilizar o componente Imagem de reação existente `Image` simplesmente transmitindo o `this.props` do componente `Card`. Posteriormente, no tutorial, o método `get bodyContent()` será implementado para exibir um título, uma data e um botão de ação.
 
 ## Atualizar a Política de Modelo
 
-Com essa `Card` implementação inicial, reveja a funcionalidade no Editor SPA AEM. Para ver o componente inicial, é necessário atualizar a política de modelo. `Card`
+Com essa implementação inicial `Card`, reveja a funcionalidade no Editor de SPA AEM. Para ver o componente `Card` inicial, é necessário atualizar a política de modelo.
 
 1. Implante o código inicial para uma instância local do AEM, caso ainda não tenha:
 
@@ -163,46 +163,46 @@ Com essa `Card` implementação inicial, reveja a funcionalidade no Editor SPA A
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Navegue até Modelo de página SPA em [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-3. Atualize a política de Container de layout para adicionar o novo `Card` componente como um componente permitido:
+2. Navegue até o Modelo de página SPA em [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+3. Atualize a política de Container de layout para adicionar o novo componente `Card` como um componente permitido:
 
    ![Atualizar política de Container de layout](assets/extend-component/card-component-allowed.png)
 
-   Salve as alterações na política e observe o `Card` componente como um componente permitido:
+   Salve as alterações na política e observe o componente `Card` como um componente permitido:
 
    ![Componente de cartão como um componente permitido](assets/extend-component/card-component-allowed-layout-container.png)
 
 ## Componente de cartão inicial do autor
 
-Em seguida, crie o `Card` componente usando o Editor SPA AEM.
+Em seguida, crie o componente `Card` usando o Editor de SPA AEM.
 
 1. Navegue até [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
-2. No `Edit` modo, adicione o `Card` componente ao `Layout Container`:
+2. No modo `Edit`, adicione o componente `Card` ao `Layout Container`:
 
    ![Inserir novo componente](assets/extend-component/insert-card-component.png)
 
-3. Arraste e solte uma imagem do Localizador de ativos no `Card` componente:
+3. Arraste e solte uma imagem do Localizador de ativos no componente `Card`:
 
    ![Adicionar imagem](assets/extend-component/card-add-image.png)
 
-4. Abra a caixa de diálogo do `Card` componente e observe a adição de uma guia **Texto** .
-5. Digite os seguintes valores na guia **Texto** :
+4. Abra a caixa de diálogo `Card` do componente e observe a adição de uma guia **Texto**.
+5. Digite os seguintes valores na guia **Texto**:
 
    ![Guia Componente de texto](assets/extend-component/card-component-text.png)
 
-   **Caminho** do cartão - escolha uma página abaixo da página inicial do SPA.
+   **Caminho**  do cartão - escolha uma página abaixo da página inicial SPA.
 
-   **Texto** CTA - &quot;Leia mais&quot;
+   **Texto**  CTA - &quot;Leia mais&quot;
 
-   **Título** do cartão - deixe em branco
+   **Título**  do cartão - deixe em branco
 
-   **Obter título da página** vinculada - marque a caixa de seleção para indicar true.
+   **Obter título da página**  vinculada - marque a caixa de seleção para indicar true.
 
-6. Atualize a guia Metadados **do** ativo para adicionar valores para Texto **** alternativo e **Legenda**.
+6. Atualize a guia **Metadados do ativo** para adicionar valores para **Texto alternativo** e **Legenda**.
 
-   No momento, nenhuma alteração adicional é exibida após a atualização da caixa de diálogo. Para expor os novos campos ao componente React, precisamos atualizar o Modelo Sling para o `Card` componente.
+   No momento, nenhuma alteração adicional é exibida após a atualização da caixa de diálogo. Para expor os novos campos ao componente React, precisamos atualizar o Modelo Sling para o componente `Card`.
 
-7. Abra uma nova guia e navegue até [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-react/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect os nós de conteúdo abaixo `/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid` para localizar o conteúdo do `Card` componente.
+7. Abra uma nova guia e navegue até [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-react/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect os nós de conteúdo abaixo de `/content/wknd-spa-react/us/en/home/jcr:content/root/responsivegrid` para localizar o conteúdo do componente `Card`.
 
    ![Propriedades de componentes CRXDE-Lite](assets/extend-component/crxde-lite-properties.png)
 
@@ -210,16 +210,16 @@ Em seguida, crie o `Card` componente usando o Editor SPA AEM.
 
 ## Atualizar modelo Sling da placa
 
-Para expor os valores da caixa de diálogo do componente ao componente React, precisamos atualizar o Modelo Sling que preenche o JSON para o `Card` componente. Também temos a oportunidade de implementar duas lógicas de negócios:
+Para expor os valores da caixa de diálogo do componente ao componente React, precisamos atualizar o Modelo Sling que preenche o JSON para o componente `Card`. Também temos a oportunidade de implementar duas lógicas de negócios:
 
-* Se `titleFromPage` for **true**, retornará o título da página especificada, caso contrário, retornará o valor do `cardPath` `cardTitle` campo de texto.
+* Se `titleFromPage` para **true**, retorne o título da página especificada por `cardPath`, caso contrário, retornará o valor de `cardTitle` campo de texto.
 * Retorna a última data modificada da página especificada por `cardPath`.
 
-Retorne ao IDE de sua escolha e abra o `core` módulo.
+Retorne ao IDE de sua escolha e abra o módulo `core`.
 
-1. Open the file `Card.java` at `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`.
+1. Abra o arquivo `Card.java` em `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`.
 
-   Observe que a `Card` interface atualmente se estende `com.adobe.cq.wcm.core.components.models.Image` e, portanto, herda todos os métodos da `Image` interface. A `Image` `ComponentExporter` interface já estende a interface que permite que o Modelo Sling seja exportado como JSON e mapeado pelo editor SPA. Portanto, não precisamos estender explicitamente a `ComponentExporter` interface como fizemos no capítulo [Componente](custom-component.md)personalizado.
+   Observe que a interface `Card` estende atualmente `com.adobe.cq.wcm.core.components.models.Image` e, portanto, herda todos os métodos da interface `Image`. A interface `Image` já estende a interface `ComponentExporter`, que permite que o Modelo Sling seja exportado como JSON e mapeado pelo editor de SPA. Portanto, não precisamos estender explicitamente a interface `ComponentExporter` como fizemos no [capítulo de Componente personalizado](custom-component.md).
 
 2. Adicione os seguintes métodos à interface:
 
@@ -261,9 +261,9 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
 
    Esses métodos serão expostos pela API do modelo JSON e passados para o componente React.
 
-3. Abrir `CardImpl.java`. Esta é a implementação da `Card.java` interface. Essa implementação já foi parcialmente adiada para acelerar o tutorial.  Observe o uso das anotações `@Model` e `@Exporter` para garantir que o Modelo Sling possa ser serializado como JSON por meio do Exportador do Modelo Sling.
+3. Abrir `CardImpl.java`. Esta é a implementação da interface `Card.java`. Essa implementação já foi parcialmente adiada para acelerar o tutorial.  Observe o uso das anotações `@Model` e `@Exporter` para garantir que o Modelo Sling possa ser serializado como JSON por meio do Exportador de Modelo Sling.
 
-   `CardImpl.java` também usa o padrão de [Delegação para Modelos](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) Sling para evitar a regravação de toda a lógica do componente principal da Imagem.
+   `CardImpl.java` também usa o padrão de  [Delegação para ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) Modelos Sling para evitar a regravação de toda a lógica do componente principal da Imagem.
 
 4. Observe as seguintes linhas:
 
@@ -273,7 +273,7 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
    private Image image;
    ```
 
-   A anotação acima instanciará um objeto de Imagem chamado `image` com base na `sling:resourceSuperType` herança do `Card` componente.
+   A anotação acima instanciará um objeto de Imagem chamado `image` com base na herança `sling:resourceSuperType` do componente `Card`.
 
    ```java
    @Override
@@ -282,9 +282,9 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
    }
    ```
 
-   Assim, é possível simplesmente usar o `image` objeto para implementar métodos definidos pela `Image` interface, sem ter que escrever a lógica nós mesmos. Essa técnica é usada para `getSrc()`, `getAlt()` e `getTitle()`.
+   É possível simplesmente usar o objeto `image` para implementar métodos definidos pela interface `Image`, sem precisar gravar a lógica por conta própria. Essa técnica é usada para `getSrc()`, `getAlt()` e `getTitle()`.
 
-5. Em seguida, implemente o `initModel()` método para iniciar uma variável privada `cardPage` com base no valor de `cardPath`
+5. Em seguida, implemente o método `initModel()` para iniciar uma variável particular `cardPage` com base no valor de `cardPath`
 
    ```java
    @PostConstruct
@@ -295,11 +295,11 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
    }
    ```
 
-   O `@PostConstruct initModel()` sempre será chamado quando o Modelo Sling for inicializado, portanto, é uma boa oportunidade de inicializar objetos que podem ser usados por outros métodos no modelo. O `pageManager` é um dos vários objetos [globais com suporte](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) Java disponibilizados para Modelos Sling por meio da `@ScriptVariable` anotação. O método [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) assume um caminho e retorna um objeto [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) AEM ou nulo se o caminho não apontar para uma página válida.
+   O `@PostConstruct initModel()` sempre será chamado quando o Modelo Sling for inicializado, portanto, é uma boa oportunidade para inicializar objetos que podem ser usados por outros métodos no modelo. `pageManager` é um entre vários [objetos globais com suporte Java](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) disponibilizados para Modelos Sling por meio da anotação `@ScriptVariable`. O método [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) assume um caminho e retorna um objeto AEM [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) ou nulo se o caminho não apontar para uma página válida.
 
-   Isso inicializará a `cardPage` variável, que será usada pelos outros novos métodos para retornar dados sobre a página vinculada subjacente.
+   Isso inicializará a variável `cardPage`, que será usada pelos outros novos métodos para retornar dados sobre a página vinculada subjacente.
 
-6. Revise as variáveis globais já mapeadas para as propriedades do JCR salvas na caixa de diálogo do autor. A `@ValueMapValue` anotação é usada para executar automaticamente o mapeamento.
+6. Revise as variáveis globais já mapeadas para as propriedades do JCR salvas na caixa de diálogo do autor. A anotação `@ValueMapValue` é usada para executar automaticamente o mapeamento.
 
    ```java
    @ValueMapValue
@@ -315,9 +315,9 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
    private String cardTitle;
    ```
 
-   Essas variáveis serão usadas para implementar os métodos adicionais para a `Card.java` interface.
+   Essas variáveis serão usadas para implementar os métodos adicionais para a interface `Card.java`.
 
-7. Implemente os métodos adicionais definidos na `Card.java` interface:
+7. Implemente os métodos adicionais definidos na interface `Card.java`:
 
    ```java
    @Override
@@ -352,18 +352,18 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
 
    >[!NOTE]
    >
-   > Você pode visualização o CardImpl.java [finalizado aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/impl/CardImpl.java).
+   > Você pode visualização o [CardImpl.java finalizado aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/impl/CardImpl.java).
 
-8. Abra uma janela de terminal e implante apenas as atualizações para o `core` módulo usando o `autoInstallBundle` perfil Maven do `core` diretório.
+8. Abra uma janela de terminal e implante apenas as atualizações no módulo `core` usando o perfil Maven `autoInstallBundle` do diretório `core`.
 
    ```shell
    $ cd core/
    $ mvn clean install -PautoInstallBundle
    ```
 
-   Se estiver usando [AEM 6.x](overview.md#compatibility) , adicione o `classic` perfil.
+   Se estiver usando [AEM 6.x](overview.md#compatibility), adicione o perfil `classic`.
 
-9. Visualização a resposta do modelo JSON em: [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e pesquise pelo `wknd-spa-react/components/card`:
+9. Visualização a resposta do modelo JSON em: [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e procure `wknd-spa-react/components/card`:
 
    ```json
    "card": {
@@ -378,13 +378,13 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
    }
    ```
 
-   Observe que o modelo JSON é atualizado com outros pares de chave/valor após a atualização dos métodos no Modelo `CardImpl` Sling.
+   Observe que o modelo JSON é atualizado com pares de chave/valor adicionais depois de atualizar os métodos no `CardImpl` Modelo Sling.
 
 ## Atualizar componente de reação
 
-Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, `ctaText`e `cardTitle` `cardLastModified` podemos atualizar o componente React para exibi-las.
+Agora que o modelo JSON está preenchido com novas propriedades para `ctaLinkURL`, `ctaText`, `cardTitle` e `cardLastModified`, podemos atualizar o componente React para exibi-las.
 
-1. Retorne ao IDE e abra o `ui.frontend` módulo. Opcionalmente, start o servidor dev de webpack de uma nova janela de terminal para ver as alterações em tempo real:
+1. Retorne ao IDE e abra o módulo `ui.frontend`. Opcionalmente, start o servidor dev de webpack de uma nova janela de terminal para ver as alterações em tempo real:
 
    ```shell
    $ cd ui.frontend
@@ -392,7 +392,7 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
    $ npm start
    ```
 
-2. Abra `Card.js` no `ui.frontend/src/components/Card/Card.js`.
+2. Abra `Card.js` em `ui.frontend/src/components/Card/Card.js`.
 3. Adicione o método `get ctaButton()` para renderizar a chamada à ação:
 
    ```js
@@ -419,7 +419,7 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
    }
    ```
 
-4. Adicione um método para `get lastModifiedDisplayDate()` transformar em uma string localizada que representa `this.props.cardLastModified` a data.
+4. Adicione um método para `get lastModifiedDisplayDate()` transformar `this.props.cardLastModified` em uma string localizada que representa a data.
 
    ```js
    export default class Card extends Component {
@@ -436,7 +436,7 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
    }
    ```
 
-5. Atualize o `get bodyContent()` para exibir `this.props.cardTitle` e usar os métodos criados nas etapas anteriores:
+5. Atualize `get bodyContent()` para exibir `this.props.cardTitle` e use os métodos criados nas etapas anteriores:
 
    ```js
    export default class Card extends Component {
@@ -455,7 +455,7 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
    }
    ```
 
-6. As regras Sass já foram adicionadas `Card.scss` para criar o estilo do título, chamar para ação e data da última modificação. Inclua esses estilos adicionando a seguinte linha à `Card.js` parte superior do arquivo:
+6. As regras Sass já foram adicionadas em `Card.scss` para criar o estilo do título, chamar para ação e data da última modificação. Inclua esses estilos adicionando a seguinte linha a `Card.js` na parte superior do arquivo:
 
    ```diff
      import {MapTo} from '@adobe/aem-react-editable-components';
@@ -467,7 +467,7 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
 
    >[!NOTE]
    >
-   > Você pode visualização o código do componente [React card finalizado aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/ui.frontend/src/components/Card/Card.js).
+   > Você pode visualização o [Reagir o código do componente do cartão finalizado aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/React/extend-component-solution/ui.frontend/src/components/Card/Card.js).
 
 7. Implante as alterações completas no AEM da raiz do projeto usando o Maven:
 
@@ -488,4 +488,4 @@ Agora que o modelo JSON é preenchido com novas propriedades para `ctaLinkURL`, 
 
 Parabéns, você aprendeu a estender um componente AEM usando o modelo e como os Modelos Sling e as caixas de diálogo funcionam com o modelo JSON.
 
-Você sempre pode visualização o código finalizado no [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution) ou fazer check-out do código localmente ao alternar para a ramificação `React/extend-component-solution`.
+Você sempre pode visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/extend-component-solution) ou fazer check-out do código localmente ao alternar para a ramificação `React/extend-component-solution`.
