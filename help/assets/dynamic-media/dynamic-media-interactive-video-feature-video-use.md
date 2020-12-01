@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de vídeo interativo com AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
+# Usando vídeo interativo com AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
 
 O AEM Assets agora tem a capacidade de criar vídeos interativos, onde os usuários podem dividir um vídeo em segmentos menores ou combinar pequenos segmentos para criar um segmento grande, permitindo que os usuários associem a chamada à ação.
 
