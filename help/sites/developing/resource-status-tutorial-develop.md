@@ -33,7 +33,7 @@ Exemplos de casos de uso para provedores de status de recursos personalizados s�
 
 ![Visão geral do status do recurso do editor AEM](assets/sample-editor-resource-status-screenshot.png)
 
-## Estrutura do provedor de status de recurso {#resource-status-provider-framework}
+## Estrutura do provedor de status de recursos {#resource-status-provider-framework}
 
 Ao desenvolver status de recursos personalizados, o trabalho de desenvolvimento é composto de:
 
@@ -44,19 +44,19 @@ Ao desenvolver status de recursos personalizados, o trabalho de desenvolvimento 
 
 3. O recurso de status fornecido como parte dos editores Página, Fragmento de experiência e Modelo recebe um tipo por meio da propriedade &quot;[!DNL statusType]&quot; de recursos.
 
-   * Page editor: `editor`
-   * Experience Fragment editor: `editor`
+   * Editor de páginas: `editor`
+   * Editor de fragmentos de experiência: `editor`
    * Editor de modelo: `template-editor`
 
-4. Os recursos de status `statusType` correspondem à propriedade configurada `CompositeStatusType` OSGi registrada `name` .
+4. O `statusType` do recurso de status corresponde à propriedade `CompositeStatusType` OSGi configurada `name` registrada.
 
-   Para todas as correspondências, os `CompositeStatusType's` tipos são coletados e usados para coletar as `ResourceStatusProvider` implementações que têm esse tipo, via `ResourceStatusProvider.getType()`.
+   Para todas as correspondências, os tipos `CompositeStatusType's` são coletados e usados para coletar as implementações `ResourceStatusProvider` que têm esse tipo, por meio de `ResourceStatusProvider.getType()`.
 
-5. A correspondência `ResourceStatusProvider` é transmitida `resource` no editor e determina se o `resource` tem um status a ser exibido. Se o status for necessário, essa implementação será responsável pela criação de 0 ou muitas `ResourceStatuses` para retornar, cada uma representando um status a ser exibido.
+5. O `ResourceStatusProvider` correspondente é transmitido ao `resource` no editor e determina se o `resource` tem o status a ser exibido. Se o status for necessário, essa implementação será responsável pela criação de 0 ou muitas `ResourceStatuses` para retornar, cada uma representando um status a ser exibido.
 
    Normalmente, um `ResourceStatusProvider` retorna 0 ou 1 `ResourceStatus` por `resource`.
 
-6. ResourceStatus é uma interface que pode ser implementada pelo cliente, ou a útil `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` pode ser usada para construir um status. Um status é composto de:
+6. ResourceStatus é uma interface que pode ser implementada pelo cliente, ou o `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` útil pode ser usado para construir um status. Um status é composto de:
 
    * Título
    * Mensagem
@@ -66,7 +66,7 @@ Ao desenvolver status de recursos personalizados, o trabalho de desenvolvimento 
    * Ações
    * Dados
 
-7. Opcionalmente, se `Actions` forem fornecidos para o `ResourceStatus` objeto, será necessário oferecer suporte a clientlibs para vincular a funcionalidade aos links de ação na barra de status.
+7. Opcionalmente, se `Actions` for fornecido para o objeto `ResourceStatus`, será necessário oferecer suporte a clientlibs para vincular a funcionalidade aos links de ação na barra de status.
 
    ```js
    (function(jQuery, document) {
