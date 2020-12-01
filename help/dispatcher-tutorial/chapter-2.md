@@ -92,7 +92,7 @@ Mesmo em um datacenter local, uma topologia &quot;Expandir&quot;, que apresenta 
 
 #### Limites da topologia de &quot;Scale Out&quot;
 
-A adição de servidores proxy normalmente aumenta o desempenho. Entretanto, há cenários em que a adição de servidores pode diminuir o desempenho. Como? Considere que você tem um portal de notícias, onde você apresenta novos artigos e páginas a cada minuto. Um Dispatcher invalida por &quot;invalidação automática&quot;: Sempre que uma página é publicada, todas as páginas no cache do mesmo site são invalidadas. Este é um recurso útil - nós abordamos isso no [Capítulo 1](chapter-1.md) desta série - mas também significa que, quando você tem mudanças frequentes em seu site, você está invalidando o cache com muita frequência. Se você tiver apenas uma instância do Dispatcher por Publicação, o primeiro visitante que solicitar uma página acionará um novo cache dessa página. O segundo visitante já obtém a versão em cache.
+A adição de servidores proxy normalmente aumenta o desempenho. Entretanto, há cenários em que a adição de servidores pode diminuir o desempenho. Como? Considere que você tem um portal de notícias, onde você apresenta novos artigos e páginas a cada minuto. Um Dispatcher invalida por &quot;invalidação automática&quot;: Sempre que uma página é publicada, todas as páginas no cache do mesmo site são invalidadas. Este é um recurso útil - cobrimos isso em [Capítulo 1](chapter-1.md) desta série - mas também significa que, quando você tem alterações frequentes em seu site, está invalidando o cache com muita frequência. Se você tiver apenas uma instância do Dispatcher por Publicação, o primeiro visitante que solicitar uma página acionará um novo cache dessa página. O segundo visitante já obtém a versão em cache.
 
 Se você tiver dois Dispatchers, o segundo visitante terá 50% de chance de a página não ser armazenada em cache e ele experimentará uma latência maior quando a página for renderizada novamente. Ter ainda mais Dispatchers por Publicação torna as coisas ainda piores. O que acontece é que o servidor de publicação recebe mais carga porque ele precisa renderizar novamente a página para cada Dispatcher separadamente.
 
@@ -108,11 +108,11 @@ Você pode considerar usar um armazenamento compartilhado central para todos os 
 
 Tivemos alguns experimentos com NFS - mas o NFS apresenta grandes problemas de desempenho devido ao bloqueio de conteúdo. Isso na verdade diminuiu o desempenho geral.
 
-**Conclusão** - O compartilhamento de um sistema de arquivos comum entre vários despachantes NÃO é uma abordagem recomendada.
+**Conclusão**  - O compartilhamento de um sistema de arquivos comum entre vários despachantes NÃO é uma abordagem recomendada.
 
 Se você estiver enfrentando problemas de desempenho, amplie o Publicar e o Dispatchers igualmente para evitar o pico de carga nas instâncias do Publisher. Não há regra de ouro sobre a taxa de Publicação/Dispatcher - ela depende muito da distribuição das solicitações e da frequência de publicações e invalidações de cache.
 
-Se você também estiver preocupado com a latência que um visitante apresenta, considere usar uma rede de delivery de conteúdo, rebuscar o cache, pré-aquecimento do cache, definir um tempo de carência conforme descrito no [Capítulo 1](chapter-1.md) desta série ou consultar algumas ideias avançadas da [Parte 3](chapter-3.md).
+Se você também estiver preocupado com a latência que um visitante apresenta, considere usar uma rede de delivery de conteúdo, rebuscar o cache, pré-aquecimento do cache, definir um tempo de carência conforme descrito em [Capítulo 1](chapter-1.md) desta série ou consulte algumas ideias avançadas de [Parte 3](chapter-3.md).
 
 ### A Configuração &quot;Cross Connected&quot;
 
