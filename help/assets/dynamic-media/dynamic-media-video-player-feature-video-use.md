@@ -21,13 +21,13 @@ ht-degree: 5%
 ---
 
 
-# Uso do reprodutor de vídeo no AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
+# Usar o reprodutor de vídeo no AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
 AEM player de vídeo do Dynamic Media costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes desktop e os navegadores se tornaram mais agressivos com o streaming de conteúdo baseado em flash. Com a introdução do HLS (HTTP Live Streaming video protocol) da Apple, o conteúdo agora pode ser transmitido em streaming sem depender do flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Análise rápida do player de vídeo não-Flash {#quick-look-into-non-flash-video-player}
+## Busca rápida no Player de vídeo não-Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
