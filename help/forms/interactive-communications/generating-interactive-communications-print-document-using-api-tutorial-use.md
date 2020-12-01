@@ -36,7 +36,7 @@ O arquivo solto na pasta assistida tem a seguinte estrutura. O código gerará d
 
 &lt;accountnumber>398762&lt;/accountnumber>
 
-&lt;accountnumber>291723&lt;/accountnumber>
+&lt;accountnumber>2917/23&lt;/accountnumber>
 
 &lt;/accountnumbers>
 
@@ -110,9 +110,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para testar isso no sistema local, siga as seguintes instruções:**
 
-* Configure o Tomcat conforme descrito neste [artigo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tem o arquivo de guerra que gera os dados de amostra.
-* Configure o usuário do sistema service aka como descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon ao administrador [do](https://localhost:4502/useradmin) usuário e pesquisar os &quot;dados&quot; do usuário do sistema e conceder as permissões de leitura no nó a seguir, tabulação para a guia de permissões
+* Configure o Tomcat conforme descrito neste artigo [.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tem o arquivo de guerra que gera os dados de amostra.
+* Configure o usuário do sistema service aka conforme descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon a [usuário admin](https://localhost:4502/useradmin) e pesquisar os &quot;dados&quot; do usuário do sistema e conceder as permissões de leitura no nó a seguir, tabulação para a guia de permissões
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
