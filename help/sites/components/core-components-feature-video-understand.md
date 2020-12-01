@@ -18,7 +18,7 @@ ht-degree: 14%
 ---
 
 
-# Noções básicas sobre os componentes principais{#understanding-core-components}
+# Como entender os componentes principais{#understanding-core-components}
 
 AEM Componentes principais são um conjunto padrão de componentes a ser usado com o Adobe Experience Manager. Construído com as práticas e padrões mais eficientes do Adobe, o Core oferece um conjunto básico de funcionalidades para qualquer implementação do Sites.
 
