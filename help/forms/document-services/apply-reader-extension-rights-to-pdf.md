@@ -71,7 +71,7 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 
 A próxima etapa é criar um servlet com um método POST para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores pdf que vêm com os navegadores não lidam com pdf dinâmicos.
 
-A seguir está o código do servlet. O servlet será chamado a partir da ação **customsubmit** do Formulário adaptável.
+A seguir está o código do servlet. O servlet será chamado da ação **customsubmit** do Formulário Adaptive.
 O servlet cria um objeto UsageRights e define suas propriedades com base nos valores inseridos pelo usuário no Formulário adaptável. O servlet então chama o método **applyUsageRights** do serviço criado para essa finalidade.
 
 ```java
