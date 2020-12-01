@@ -44,7 +44,7 @@ Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de inve
 
 * ![currentassetmix](assets/currentassetmixchart.png)
 
-## Mistura de ativos de modelo {#model-asset-mix}
+## Mistura de ativos do modelo {#model-asset-mix}
 
 * Toque no painel &quot;RecommendedAssetMix&quot; à direita e selecione o ícone &quot;+&quot; e insira o componente de texto. Altere o texto padrão para &quot;Mistura de ativos modelo&quot;.
 
