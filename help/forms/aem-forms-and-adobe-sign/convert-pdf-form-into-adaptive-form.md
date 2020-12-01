@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Converter formulário PDF em formulário adaptável
 
-O serviço AEM Forms Automated Forms Conversion, desenvolvido pela Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptativos responsivos e amigáveis ao dispositivo. Quer você esteja usando PDF forms não interativos, Acro Forms ou baseados em XFA, o serviço de Conversão automatizada do Forms pode converter facilmente esses formulários em formulários adaptáveis.
+O serviço de Automated forms conversion AEM Forms, acionado pela Adobe Sensei, converte automaticamente seus PDF forms em formulários adaptativos responsivos e amigáveis ao dispositivo. Quer você esteja usando PDF forms não interativos, Acro Forms ou baseados em XFA, o serviço de Automated forms conversion pode converter facilmente esses formulários em formulários adaptáveis.
 
-O vídeo a seguir explica as etapas necessárias para converter o formulário PDF em Formulário adaptável usando o serviço de conversão automatizado Forms
+O vídeo a seguir explica as etapas necessárias para converter o formulário PDF em Formulário adaptável usando o serviço de Automated forms conversion
 
 >[!VIDEO](https://video.tv.adobe.com/v/39495/?quality=9&learn=on)
 
