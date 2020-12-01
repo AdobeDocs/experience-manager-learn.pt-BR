@@ -22,9 +22,9 @@ ht-degree: 0%
 ---
 
 
-# Adicionar painéis filhos ao painel raiz {#adding-child-panels-to-root-panel}
+# Adicionando painéis filho ao painel raiz {#adding-child-panels-to-root-panel}
 
-Ao adicionar painéis filhos ao painel raiz, **verifique se você está no modo de edição. O botão de edição está localizado no lado superior direito do navegador.**
+Ao adicionar painéis filhos ao painel raiz, **Certifique-se de que você está no modo de edição. O botão de edição está localizado no lado superior direito do navegador.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
