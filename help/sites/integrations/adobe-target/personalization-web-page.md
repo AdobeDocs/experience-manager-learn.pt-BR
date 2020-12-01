@@ -36,15 +36,15 @@ O site da WKND reprojetou seu home page e gostaria de redirecionar seus visitant
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
 1. Faça logon no Adobe Target e navegue até a guia Atividade
-1. Clique no botão **Criar Atividade** e escolha **atividade de teste** A/B
+1. Clique no botão **Criar Atividade** e escolha **Teste A/B** atividade
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-1. Selecione a opção **Visual Experience Composer** , forneça o URL da Atividade e clique em **Avançar**
+1. Selecione a opção **Visual Experience Composer**, forneça o URL da Atividade e clique em **Avançar**
 
    ![URL de atividade](assets/ab-test-url.png)
 
-1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência** .
+1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência**.
 
    ![Opções de experiência](assets/experience-options.png)
 
@@ -52,11 +52,11 @@ O site da WKND reprojetou seu home page e gostaria de redirecionar seus visitant
 
    ![URI de redirecionamento](assets/redirect-url.png)
 
-1. Renomeie a *experiência A* para o *novo Home page* WKND e a *experiência B* para o Home page *WKND*
+1. Renomear *Experiência A* para *Novo Home page WKND* e *Experiência B* para *Home page WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-1. Clique em **Avançar** para ir para Definição de metas e manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
+1. Clique em **Próximo** para ir para Definição de metas e manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
 
    ![Direcionar](assets/targeting.png)
 
@@ -69,7 +69,7 @@ O site da WKND reprojetou seu home page e gostaria de redirecionar seus visitant
 
    ![Metas](assets/activate.png)
 
-1. Abra a página do site (URL da Atividade da etapa 3) em uma nova guia e você deve ser capaz de visualização de qualquer uma das experiências (Home page WKND ou Novo Home page WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para `us/home.html`.
+1. Abra a página do site (URL da Atividade da etapa 3) em uma nova guia e você deve ser capaz de visualização de qualquer uma das experiências (Home page WKND ou Novo Home page WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para  `us/home.html`.
 
    ![Metas](assets/redirect-test.png)
 
