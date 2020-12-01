@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Uso de funções de redutor no AEM Forms - Gráficos{#using-reducer-functions-in-aem-forms-charts}
+# Usando funções de redutor no AEM Forms - Gráficos{#using-reducer-functions-in-aem-forms-charts}
 
 As funções de redutor são usadas para agregação ou para agrupar valores exibidos no gráfico.
 
