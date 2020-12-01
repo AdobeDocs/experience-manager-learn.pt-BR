@@ -58,7 +58,7 @@ A Adobe Experience Manager (AEM) oferece uma solução fácil de usar para criar
     </a>
     </div>
     <p>
-    <em>A Interative Communications centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. </em>
+    <em>A Interative Communications centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.  </em>
     <p>
   </td>
   <td>
