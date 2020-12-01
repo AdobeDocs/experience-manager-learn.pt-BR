@@ -47,7 +47,7 @@ O Query de explicação está localizado em:
 
 ![Depurador do QueryBuilder](./assets/other-tools/query-debugger.png)
 
-O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda a depurar e entender query de pesquisa usando AEM sintaxe do [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) .
+O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda a depurar e entender query de pesquisa usando a sintaxe AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 O QueryBuilder Debugger está localizado em:
 
@@ -57,9 +57,9 @@ O QueryBuilder Debugger está localizado em:
 
 ![Sling Log Tracer e AEM plug-in do Chrome](./assets/other-tools/log-tracer.png)
 
-[O Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), que é fornecido com AEM início rápido local do SDK, permite o rastreamento detalhado das solicitações HTTP, expondo informações aprofundadas de depuração por solicitação. A configuração do [Log Tracer OSGi deve ser configurada](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) para ativar esse recurso.
+[O Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), que é fornecido com AEM início rápido local do SDK, permite o rastreamento detalhado das solicitações HTTP, expondo informações aprofundadas de depuração por solicitação. A configuração [Log Tracer OSGi deve ser configurada](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) para habilitar esse recurso.
 
-O plug-in [AEM Chrome de código aberto](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) para o navegador [da Web do](https://www.google.com/chrome/)Google Chrome, integra-se ao Log Tracer, expondo as informações de depuração diretamente nas Ferramentas de Desenvolvimento do Chrome.
+O plug-in de código aberto [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) para o [navegador da Web Google Chrome](https://www.google.com/chrome/), integra-se ao Log Tracer, expondo as informações de depuração diretamente nas Ferramentas de Desenvolvimento do Chrome.
 
 _O plug-in AEM Chrome é uma ferramenta de código aberto e o Adobe não oferece suporte para ele._
 
