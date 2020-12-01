@@ -18,11 +18,12 @@ ht-degree: 1%
 
 # Teste esse recurso em seu sistema
 
-[Baixe e importe este pacote para AEM](assets/acro-form-aem-form.zip)Este pacote contém o fluxo de trabalho de amostra e a página html que permite criar o schema a partir do Acroform carregado.
+[Baixe e importe este pacote para o ](assets/acro-form-aem-form.zip)
+AEMTis package contém o fluxo de trabalho de amostra e a página html que permite criar o schema a partir do Acroform carregado.
 
 ## Configurar fluxo de trabalho
 
-1. [Abra o Modelo de fluxo de trabalho no modo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html)de edição.
+1. [Abra o Modelo de fluxo de trabalho no modo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html) de edição.
 2. Abra as propriedades de configuração da etapa MergeAcroformData.
 3. Clique na guia Processo.
 4. Verifique se os argumentos que você está transmitindo são uma pasta válida no servidor.
