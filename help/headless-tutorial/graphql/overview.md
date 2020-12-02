@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,6 @@ Este tutorial abordará os seguintes tópicos:
 * Saiba como os Fragmentos de conteúdo no AEM podem ser consultados usando a ferramenta de desenvolvimento GraphiQL integrada.
 * Consumir AEM APIs GraphQL de um exemplo de aplicativo WKND GraphQL React
 * Executar modelagem de dados avançada com Referências de fragmento
-
-## Visão geral do GraphQL
-
-O vídeo abaixo apresenta uma visão geral da API GraphQL implementada no AEM. A API GraphQL no AEM foi projetada principalmente para fornecer dados de fragmento do conteúdo a aplicativos downstream como parte de uma implantação sem cabeçalho.
-
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## Visão geral do GraphQL
 
