@@ -7,12 +7,12 @@ topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: cloud-service
 translation-type: tm+mt
-source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 5%
+source-wordcount: '374'
+ht-degree: 6%
 
 ---
 
@@ -20,11 +20,6 @@ ht-degree: 5%
 # Criação de fragmentos de conteúdo {#authoring-content-fragments}
 
 Fragmentos de conteúdo são uma abstração de conteúdo em AEM que permite que o conteúdo baseado em texto seja criado e gerenciado independentemente dos canais suportados.
-
->[!NOTE]
->
->A funcionalidade AEM Fragmento de conteúdo abordado nesses vídeos foi introduzida pela primeira vez em [AEM 6.3 + FP 19008 e FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
-
 
 AEM Fragmentos de conteúdo são conteúdos editoriais baseados em texto que podem incluir alguns elementos de dados estruturados associados, mas considerados conteúdo puro sem informações de design ou layout. Os Fragmentos de conteúdo normalmente são criados como conteúdo agnóstico do canal, que deve ser usado e reutilizado em canais, o que, por sua vez, envolve o conteúdo em uma experiência específica do contexto.
 
