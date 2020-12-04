@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
+source-git-commit: 3e8b820939c2d39ef9a17f7d7aaef87cd9cdbbbb
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Criar DDX a partir dos nomes dos anexos
 
-Em seguida, precisamos criar o documento [Descrição do Documento XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço Assembler para montar documentos. A seguir está o DDX criado a partir dos argumentos do processo. Observe que os elementos de origem do PDF estão na ordem correta, conforme especificado nos argumentos do processo.
+Em seguida, precisamos criar o documento [Descrição do Documento XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço Assembler para montar documentos. A seguir está o DDX criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos baseados em XFA antes de serem montados. Observe que os elementos de origem do PDF estão na ordem correta, conforme especificado nos argumentos do processo.
 
-![ddx-xml](assets/ddx-xml.JPG)
+![ddx-xml](assets/ddx.PNG)
 
 ### Criar mapa de documentos
 
