@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1553'
 ht-degree: 2%
 
 ---
@@ -109,27 +109,15 @@ O conteúdo de amostra do site de referência WKND será instalado para acelerar
 >
 > Se estiver usando um ambiente Cloud Service, consulte a documentação para ver como [implantar uma base de código como o site de referência WKND para um ambiente Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## Permitir solicitações GraphQL
+## Instale os Endpoints do GraphQL{#graphql-endpoint}
 
-AEM, por padrão, bloqueia solicitações de origem cruzada, impedindo que aplicativos não autorizados se conectem e surjam seu conteúdo.
+É necessário configurar pontos finais GraphQL. Isso proporciona flexibilidade ao projeto para determinar o endpoint exato em que a API do GraphQL é exposta. Um [CORS](#cors-config) também é necessário para conceder acesso a um aplicativo externo. Para agilizar o tutorial, um pacote foi pré-criado.
 
-Para permitir que o aplicativo React deste tutorial interaja com AEM endpoints da API GraphQL, uma configuração de compartilhamento de recursos entre origens é definida.
+1. Baixe o pacote [aem-guides-wknd-grafql.all-1.0.0-SNAPSHOT.zip](./assets/setup/aem-guides-wknd-graphql.all-1.0.0-SNAPSHOT.zip).
+1. No menu **AEM Start**, navegue até **Ferramentas** > **Implantação** > **Pacotes**.
+1. Clique em **Carregar pacote** e escolha o pacote baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
 
-![Configuração de compartilhamento de recursos entre Origens](./assets/setup/cross-origin-resource-sharing-configuration.png)
-
-1. Navegue até AEM console Web do SDK em **Ferramentas** > **Operações** > **Console Web**
-1. Clique na linha **Adobe Granite Cross-Origem Resource Sharing Policy** para criar uma nova configuração
-1. Atualize os seguintes campos, deixando os outros com seus valores padrão:
-   * Origens permitidas: `localhost:3000`
-   * Origens permitidas (Regex): `.* `
-   * Caminhos permitidos: `/content/graphql/endpoint.gql`
-   * Métodos permitidos: `GET`, `HEAD`, `POST`
-      * Somente `POST` é necessário para o GraphQL, no entanto, os outros métodos podem ser úteis ao interagir com o AEM de forma imutável.
-   * Suporta Credenciais: `Yes`
-      * Isso é necessário, pois nosso aplicativo React se comunicará com os pontos finais GraphQL protegidos no serviço de autor de AEM.
-1. Clique em **Salvar**
-
-Essa configuração permite `POST` solicitações HTTP originárias de `localhost:3000` para o serviço de autor de AEM no caminho `/content/graphql/endpoint.gql`.
+O pacote acima também contém a [ferramenta GraphiQL](https://github.com/graphql/graphiql) que será usada em capítulos posteriores. Mais informações sobre a configuração do CORS podem ser [encontradas abaixo](#cors-config).
 
 ## Instale o aplicativo de amostra{#sample-app}
 
@@ -209,3 +197,29 @@ Parabéns, agora você tem um aplicativo externo que consome AEM conteúdo com o
 ## Próximas etapas {#next-steps}
 
 No próximo capítulo, [Definindo modelos de fragmento de conteúdo](content-fragment-models.md), saiba como modelar o conteúdo e criar um schema com **Modelos de fragmento de conteúdo**. Você revisará os modelos existentes e criará um novo modelo. Você também aprenderá sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
+
+## (Bônus) Configuração do CORS {#cors-config}
+
+AEM, por padrão, bloqueia solicitações de origem cruzada, impedindo que aplicativos não autorizados se conectem e surjam seu conteúdo.
+
+Para permitir que o aplicativo React deste tutorial interaja com AEM endpoints da API GraphQL, uma configuração de compartilhamento de recursos entre origens foi definida no pacote de endpoints GraphQL.
+
+![Configuração de compartilhamento de recursos entre Origens](./assets/setup/cross-origin-resource-sharing-configuration.png)
+
+Para configurar isso manualmente:
+
+1. Navegue até AEM console Web do SDK em **Ferramentas** > **Operações** > **Console Web**
+1. Clique na linha **Adobe Granite Cross-Origem Resource Sharing Policy** para criar uma nova configuração
+1. Atualize os seguintes campos, deixando os outros com seus valores padrão:
+   * Origens permitidas: `localhost:3000`
+   * Origens permitidas (Regex): `.* `
+   * Caminhos permitidos: `/content/graphql/endpoint.gql`
+   * Métodos permitidos: `GET`, `HEAD`, `POST`
+      * Somente `POST` é necessário para o GraphQL, no entanto, os outros métodos podem ser úteis ao interagir com o AEM de forma imutável.
+   * Suporta Credenciais: `Yes`
+      * Isso é necessário, pois nosso aplicativo React se comunicará com os pontos finais GraphQL protegidos no serviço de autor de AEM.
+1. Clique em **Salvar**
+
+Essa configuração permite `POST` solicitações HTTP originárias de `localhost:3000` para o serviço de autor de AEM no caminho `/content/graphql/endpoint.gql`.
+
+Essa configuração e os pontos finais GraphQL são gerados a partir de um projeto AEM. [Visualização os detalhes aqui](https://github.com/adobe/aem-guides-wknd-graphql/tree/master/aem-project).
