@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6718
+thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,12 @@ Em seguida, atualize os query usados pelo aplicativo React para incluir o novo C
 
    ![Colaborador adicionado ao aplicativo](assets/fragment-references/contributor-added-detail.png)
 
+## Recursos adicionais
+
+Para obter mais detalhes sobre os Fragmentos de conteúdo e o GraphQL, consulte os seguintes recursos:
+
+* [Delivery de conteúdo sem cabeçalho usando fragmentos de conteúdo com GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [AEM API GraphQL para uso com Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 
 ## Parabéns!{#congratulations}
 
