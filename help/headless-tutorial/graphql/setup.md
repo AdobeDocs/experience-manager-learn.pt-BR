@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6386
+thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1590'
 ht-degree: 2%
 
 ---
@@ -67,6 +67,10 @@ Este tutorial usa o AEM [como Cloud Service SDK](https://experienceleague.adobe.
 1. Forneça uma senha de administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfiguração.
 1. Após alguns minutos, a instância AEM terminará a instalação e uma nova janela do navegador deverá ser aberta em [http://localhost:4502](http://localhost:4502).
 1. Faça logon com o nome de usuário `admin` e a senha `admin`.
+
+>[!CAUTION]
+>
+> Para continuar a configuração, o recurso GraphQL agora deve ser ativado manualmente no SDK de início rápido. Entre em contato com seu Adobe para obter mais instruções. Esta etapa manual só é necessária até que o recurso seja lançado em 2021.
 
 ## Instalar conteúdo de amostra{#wknd-site}
 
