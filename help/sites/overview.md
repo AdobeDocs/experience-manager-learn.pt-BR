@@ -5,10 +5,10 @@ description: 'Uma coleção de vídeos e tutoriais do Adobe Experience Manager S
 seo-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites
 sub-product: sites, serviços de conteúdo
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 21%
+source-wordcount: '337'
+ht-degree: 25%
 
 ---
 
@@ -19,21 +19,13 @@ Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento d
 
 ## Novidades
 
-* **[Introdução ao AEM SPA Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)  (Tutorial)**
+* **[Personalizar a camada de dados do cliente Adobe com componentes AEM](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *Um guia de introdução para desenvolvedores que integram aplicativos de página única (SPA) com AEM usando React*
+   *Saiba como atualizar a Camada de dados do cliente Adobe com conteúdo dos componentes AEM personalizados.*
 
-* **[Introdução ao AEM Editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)  (Tutorial)**
+* **[Introdução ao AEM GraphQL sem cabeçalho (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *Um guia de introdução para desenvolvedores que integram aplicativos de página única (SPA) com AEM usando o Angular*
-
-* **[Introdução à AEM sem cabeçalho (Tutorial)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
-
-   *Como expor conteúdo de AEM para ser consumido por um aplicativo móvel nativo, em um cenário CMS sem cabeçalho.*
-
-* **[Uso de fragmentos de experiência (série de vídeo)](./experience-fragments/experience-fragments-feature-video-use.md)**
-
-   *Saiba mais sobre AEM Fragmentos de experiência para promover canais cruzados de conteúdo.*
+   *Como expor conteúdo de AEM para ser consumido por um aplicativo móvel nativo usando AEM APIs GraphQL.*
 
 * **[Uso de fragmentos de conteúdo (série de vídeo)](./content-fragments/content-fragments-feature-video-use.md)**
 
