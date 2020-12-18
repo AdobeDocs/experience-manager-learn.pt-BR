@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience
 breadcrumb-title: Tutoriais do AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '447'
 ht-degree: 23%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 23%
       + [Depuração de uma implementação do Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Camada de Dados do Cliente Adobe {#adobe-client-data-layer}
       + [Usando a camada de dados do cliente Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Personalizar a camada de dados do cliente Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Análise {#analytics}
       + [Coletar dados de página com o Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Rastrear componente clicado com o Adobe Analytics](integrations/analytics/track-clicked-component.md)
