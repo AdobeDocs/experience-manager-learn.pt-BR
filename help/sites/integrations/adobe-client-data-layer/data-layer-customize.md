@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: 46936876de355de9923f7a755aa6915a13cca354
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2027'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,8 @@ Para injetar dados sobre o componente na camada de dados, primeiro é necessári
 1. Adicione as seguintes declarações de importação ao início do arquivo:
 
    ```java
+   import java.util.HashMap;
+   import java.util.Map;
    import org.apache.sling.api.resource.Resource;
    import com.fasterxml.jackson.core.JsonProcessingException;
    import com.fasterxml.jackson.databind.ObjectMapper;
@@ -163,17 +165,6 @@ Para injetar dados sobre o componente na camada de dados, primeiro é necessári
 
    O `ObjectMapper` é usado para serializar as propriedades e retornar uma string JSON. Essa string JSON pode ser inserida na camada de dados.
 
-1. Abra o arquivo `package-info.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` e atualize a versão de `1.0` para `2.0`:
-
-   ```java
-   @Version("2.0")
-   package com.adobe.aem.guides.wknd.core.models;
-   
-   import org.osgi.annotation.versioning.Version;
-   ```
-
-   Como a interface `Byline.java` foi alterada, a versão do pacote Java deve ser atualizada.
-
 1. Abra uma janela de terminal. Crie e implante apenas o módulo `core` usando suas habilidades Maven:
 
    ```shell
@@ -194,13 +185,11 @@ Um atributo de dados especial `data-cmp-data-layer` em cada Componente AEM é us
 
 1. Atualize `byline.html` para incluir o atributo `data-cmp-data-layer`:
 
-   ```html
-    <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
+   ```diff
+     <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        data-sly-test.hasContent="${!byline.empty}"
-       <!--/* Add the data-cmp-data-layer */-->
-       data-cmp-data-layer="${byline.data}"
-   
+   +   data-cmp-data-layer="${byline.data}"
        class="cmp-byline">
        ...
    ```
@@ -256,8 +245,11 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
 
 1. Atualize `byline.html` para incluir o atributo `data-cmp-clickable` no elemento **name** da Linha de identificação:
 
-   ```html
-   <h2 class="cmp-byline__name" data-cmp-clickable>${byline.name}</h2>
+   ```diff
+     <h2 class="cmp-byline__name" 
+   +    data-cmp-clickable="${byline.data ? true : false}">
+        ${byline.name}
+     </h2>
    ```
 
 1. Abra um novo terminal. Crie e implante apenas o módulo `ui.apps` usando suas habilidades Maven:
@@ -289,7 +281,7 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
 
    ```javascript
    window.adobeDataLayer.push(function (dl) {
-        dl.addEventListener("cmp:show", bylineClickHandler);
+        dl.addEventListener("cmp:click", bylineClickHandler);
    });
    ```
 
@@ -419,6 +411,13 @@ Existe uma classe de utilitário, `DataLayerBuilder`, para executar a maioria do
    ```
 
    Observe que agora há um objeto `image` na entrada do componente `byline`. Isso tem muito mais informações sobre o ativo no DAM. Observe também que `@type` e a id exclusiva (neste caso, `byline-136073cfcb`) foram preenchidas automaticamente, bem como o `repo:modifyDate` que indica quando o componente foi modificado.
+
+## Exemplos adicionais {#additional-examples}
+
+1. Outro exemplo de extensão da camada de dados pode ser visualizado inspecionando o componente `ImageList` na base de código WKND:
+   * `ImageList.java` - interface Java no  `core` módulo.
+   * `ImageListImpl.java` - Modelo Sling no  `core` módulo.
+   * `image-list.html` - Modelo HTL no  `ui.apps` módulo.
 
    >[!NOTE]
    >
