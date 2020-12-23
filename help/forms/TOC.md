@@ -6,9 +6,9 @@ user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores 
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: c0db84f25334106c798d555c754d550113e91eac
+source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '902'
 ht-degree: 6%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 6%
    + [Parte3 - Formulário de pré-preenchimento usando informações sobre o Perfil ACS](aem-forms-with-adobe-campaign/partthree.md)
    + [Parte4 - Criar Perfil ACS usando o modelo de dados de formulário](aem-forms-with-adobe-campaign/partfour.md)
 
-+ Serviços de documentação {#document-services}
++ Serviços de documento {#document-services}
    + [Uso do serviço Assembler no AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Uso da pasta assistida no AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso do serviço de código de barras no AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
@@ -182,6 +182,7 @@ ht-degree: 6%
    + [Aplicar direitos de uso ao PDF carregado](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certificar Documentos](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Montagem de anexos de formulário](document-services/assemble-form-attachments.md)
+   + [Serviços utilitários úteis](document-services/useful-utility-services.md)
 + Interative Communications for Print Canal
 {#ic-print-channel-tutorial}
    + [Introdução](ic-print-channel-tutorial/introduction.md)
