@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
+source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -132,7 +132,7 @@ O plug-in do Adobe I/O Cloud Manager permite que a CLI do rádio interaja com o 
 
 O plug-in do Adobe I/O Cloud Manager permite que a CLI do rádio gere e execute funcionários do Asset compute por meio do comando `aio asset-compute`.
 
-1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` para instalar o [plug-in do Asset compute aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
+1. Execute `aio plugins:install @adobe/aio-cli-plugin-asset-compute` para instalar o [plug-in do Asset compute aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ### Configurar a autenticação CLI do Adobe I/O
 
