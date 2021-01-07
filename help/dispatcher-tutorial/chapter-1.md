@@ -4,9 +4,9 @@ seo-title: Introdução ao AEM Content Services - Capítulo 1 - Configuração d
 description: O Capítulo 1 do tutorial sem cabeçalho AEM a configuração da linha de base para a instância AEM do tutorial.
 seo-description: O Capítulo 1 do tutorial sem cabeçalho AEM a configuração da linha de base para a instância AEM do tutorial.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -581,7 +581,7 @@ Está vendo? O &quot;M&quot; no DAM significa &quot;Gerenciamento&quot; - como n
 
 Da perspectiva de um desenvolvedor AEM o padrão parecia super elegante. Mas com o Dispatcher levado em conta a equação, vocês podem concordar, que a abordagem ingênua pode não ser suficiente.
 
-Deixamos que vocês decidam se este é um padrão ou um padrão anti-padrão por enquanto. E talvez você já tenha algumas boas ideias em mente sobre como mitigar os problemas explicados acima? Bom. Então, você estará ansioso para ver como outros projetos resolveram essas questões.
+Deixamos a vocês decidir se este é um padrão ou um padrão anti-padrão por enquanto. E talvez você já tenha algumas boas ideias em mente sobre como mitigar os problemas explicados acima? Bom. Então, você estará ansioso para ver como outros projetos resolveram essas questões.
 
 ### Resolvendo problemas comuns do Dispatcher
 
@@ -599,7 +599,7 @@ Novamente, isso é baseado na experiência real. Já vimos todos esses padrões 
 >
 >Isto é um anti-padrão. Não o utilize. Nunca.
 
-Você já viu parâmetros de query como `?ck=398547283745`? Eles são chamados de cache-killer (&quot;ck&quot;). A ideia é que, se você adicionar qualquer parâmetro de query, o recurso não será acessado. Além disso, se você adicionar um número aleatório como valor do parâmetro (como &quot;398547283745&quot;), o URL se tornará único e você se certificar de que nenhum outro cache entre o sistema de AEM e sua tela seja capaz de armazenar em cache. Suspeitos intermediários normais seriam um cache &quot;Varnish&quot; na frente do Dispatcher, um CDN ou até mesmo o cache do navegador. Novamente: Não faça isso. Você quer que seus recursos sejam armazenados em cache tanto quanto possível. O cache é seu amigo. Não mate os amigos.
+Você já viu parâmetros de query como `?ck=398547283745`? Eles são chamados de cache-killer (&quot;ck&quot;). A ideia é que, se você adicionar qualquer parâmetro de query, o recurso não será armazenado em cache. Além disso, se você adicionar um número aleatório como valor do parâmetro (como &quot;398547283745&quot;), o URL se tornará único e você se certificar de que nenhum outro cache entre o sistema de AEM e sua tela seja capaz de armazenar em cache. Suspeitos intermediários normais seriam um cache &quot;Varnish&quot; na frente do Dispatcher, um CDN ou até mesmo o cache do navegador. Novamente: Não faça isso. Você quer que seus recursos sejam armazenados em cache tanto quanto possível. O cache é seu amigo. Não mate os amigos.
 
 #### Invalidação automática
 
