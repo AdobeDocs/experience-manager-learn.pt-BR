@@ -11,7 +11,7 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 1%
@@ -481,7 +481,7 @@ As próximas etapas serão executadas usando o Visual Studio Code IDE e [VSCode 
 
    ![Template de importação VSCode](assets/map-components/import-aem-servervscode.png)
 
-4. Repita as etapas para importar conteúdo, mas selecione a pasta **policies** localizada em `/conf/wknd-spa-angular/settings/wcm/templates/policies`.
+4. Repita as etapas para importar conteúdo, mas selecione a pasta **policies** localizada em `/conf/wknd-spa-angular/settings/wcm/policies`.
 
 5. Inspect o arquivo `filter.xml` localizado em `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
