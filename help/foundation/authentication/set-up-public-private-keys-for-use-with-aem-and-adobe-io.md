@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,14 @@ Se solicitado a criar um armazenamento de chaves, faça isso. Esse armazenamento
 No console de armazenamento de chaves do usuário, clique em **[!UICONTROL Adicionar chave privada do arquivo KeyStore]** e adicione as seguintes informações:
 
 * **[!UICONTROL Novo alias]**: o alias da chave no AEM. Isso pode ser qualquer coisa e não precisa corresponder ao nome do keystore criado com o comando openssl.
-* **[!UICONTROL Arquivo]** Keystore: a saída do comando openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Alias]** da chave privada: A senha definida no comando openssl pkcs12 por  `-  passout` argumento.
+* **[!UICONTROL Arquivo]** KeyStore: a saída do comando openssl pkcs12 (keystore.p12)
+* **[!UICONTROL Senha]** do arquivo KeyStore: A senha definida no comando openssl pkcs12 por  `-passout` argumento.
+* **[!UICONTROL Alias]** da chave privada: O valor fornecido ao  `-name` argumento no comando openssl pkcs12 acima (ou seja,  `my-key`).
+* **[!UICONTROL Senha]** da chave privada: A senha definida no comando openssl pkcs12 por  `-passout` argumento.
 
-* **[!UICONTROL Senha]** da chave privada: A senha definida no comando openssl pkcs12 por  `-  passout` argumento.
+>[!CAUTION]
+>
+>A Senha do arquivo KeyStore e a Senha da chave privada são as mesmas para ambas as entradas. Digitar uma senha incompatível resultará na não importação da chave.
 
 ### Verifique se a chave privada foi carregada no keystore AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
