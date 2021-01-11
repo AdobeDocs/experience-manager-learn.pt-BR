@@ -1,19 +1,16 @@
 ---
 title: Usando importação e exportação de metadados no AEM Assets
-seo-title: Usando importação e exportação de metadados no AEM Assets
 description: Os recursos de importação e exportação de metadados do AEM Assets permitem que os autores de conteúdo movam facilmente os metadados de ativos para dentro e para fora do AEM e aproveitem o poder do Microsoft Excel para manipular metadados em escala, facilitando os metadados de atualização em massa dos ativos existentes no AEM.
-seo-description: Os recursos de importação e exportação de metadados do AEM Assets permitem que os autores de conteúdo movam facilmente os metadados de ativos para dentro e para fora do AEM e aproveitem o poder do Microsoft Excel para manipular metadados em escala, facilitando os metadados de atualização em massa dos ativos existentes no AEM.
-uuid: db7e57a4-b0c1-4a48-906d-802c19964313
-discoiquuid: 72dd9230-73e1-454e-a3e0-9281e621d901
 topics: metadata
 audience: all
 doc-type: feature video
 activity: use
+kt: 647
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 2c0818d0223a3db55e6407068f4802b9e7f7dd83
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '256'
 ht-degree: 3%
 
 ---
@@ -56,7 +53,7 @@ Baixar [Pacote de metadados do ativo](assets/we-retail-sports-asset-metadata.zip
 
 * O Nome da propriedade diferencia maiúsculas e minúsculas
    * Correto : `dc:title {{String}}`
-   * Incorreto: `Dc:Ttle {{String}}`
+   * Incorreto: `Dc:Title {{String}}`
 
 * O Tipo de propriedade não diferencia maiúsculas de minúsculas
 * Todos os tipos válidos de [JCR Property](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são suportados
