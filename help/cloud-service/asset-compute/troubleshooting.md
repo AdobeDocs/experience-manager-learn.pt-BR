@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,15 @@ A seguir está um índice de erros e problemas comuns, juntamente com as resolu�
 + __Resolução__: Revise o código de trabalho personalizado e verifique se todas as chamadas assíncronas são sincronizadas usando  `await`.
 
 ## Ferramenta de desenvolvimento{#development-tool}
+
+### Arquivo Console.json ausente do projeto do Asset compute{#missing-console-json}
+
++ __Erro:__ Erro: Arquivos necessários ausentes na validação (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) em configuração assíncronaAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Causa:__ o  `console.json` arquivo está ausente da raiz do projeto do Asset compute
++ __Resolução:__ Baixe um novo  `console.json` formulário do projeto da Adobe I/O
+   1. No console.adobe.io, abra o projeto do Adobe I/O que o projeto do Asset compute está configurado para usar
+   1. Toque no botão __Download__ no canto superior direito
+   1. Salve o arquivo baixado na raiz do seu projeto de Asset compute usando o nome de arquivo `console.json`
 
 ### Recuo YAML incorreto no manifest.yml{#incorrect-yaml-indentation}
 
@@ -95,7 +104,6 @@ A Ferramenta de Desenvolvimento de asset computes pode inserir um estado onde ex
    + Ou valide o arquivo gerado pelo teste em `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide-o como correto e use-o como o arquivo de execução esperado
 
 ## Depurar
-
 
 ### O depurador não anexa{#debugger-does-not-attach}
 
