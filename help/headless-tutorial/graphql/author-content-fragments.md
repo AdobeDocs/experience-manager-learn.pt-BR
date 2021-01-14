@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> A API AEM GraphQL para o Delivery de fragmento de conteúdo será lançada no início de 2021.
-> A documentação relacionada está disponível para fins de pré-visualização.
+> A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
+> Entre em contato com o Suporte ao Adobe para habilitar a API do seu AEM como programa Cloud Service.
 
 Neste capítulo, você criará e editará um novo Fragmento de conteúdo com base no [modelo de fragmento de conteúdo do contribuidor recém-definido](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
 
@@ -69,7 +69,7 @@ No capítulo anterior, [Definindo modelos de fragmento de conteúdo](./content-f
 
 1. Para **Nome Completo** introduza: **Stacey Roswells**.
 1. Para **Biografia** inserir uma breve biografia. Precisa de alguma inspiração? Sinta-se à vontade para reutilizar este [ficheiro de texto](assets/author-content-fragments/stacey-roswells-bio.txt).
-1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **stacey-roswells.jpg&lt;a111111>.** Isso avaliará o caminho: `/content/dam/wknd/en/contributors/stacey-roswells.jpg`.
+1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **stacey-roswells.jpg**. Isso avaliará o caminho: `/content/dam/wknd/en/contributors/stacey-roswells.jpg`.
 1. Para **Ocupação** escolha **Fotógrafo**.
 
    ![Fragmento criado](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
@@ -116,7 +116,7 @@ Repita as etapas descritas em [Criar um fragmento de conteúdo](#create-content-
 1. Clique em **Abrir** na caixa de diálogo **Êxito** para abrir o fragmento recém-criado.
 1. Para **Nome Completo** introduza: **Jacob Wester**.
 1. Para **Biografia** inserir uma breve biografia. Precisa de alguma inspiração? Sinta-se à vontade para reutilizar este [ficheiro de texto](assets/author-content-fragments/jacob-wester.txt).
-1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **jacob_wester.jpg&lt;a111/>.** Isso avaliará o caminho: `/content/dam/wknd/en/contributors/jacob_wester.jpg`.
+1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **jacob_wester.jpg**. Isso avaliará o caminho: `/content/dam/wknd/en/contributors/jacob_wester.jpg`.
 1. Para **Ocupação** escolha **Escritor**.
 1. Clique em **Salvar** para salvar as alterações. Não há necessidade de criar uma variação, a menos que você deseje!
 
