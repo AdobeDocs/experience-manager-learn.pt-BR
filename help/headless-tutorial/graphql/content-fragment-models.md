@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> A API AEM GraphQL para o Delivery de fragmento de conteúdo será lançada no início de 2021.
-> A documentação relacionada está disponível para fins de pré-visualização.
+> A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
+> Entre em contato com o Suporte ao Adobe para habilitar a API do seu AEM como programa Cloud Service.
 
 Neste capítulo, saiba como modelar o conteúdo e criar um schema com **Modelos de fragmento de conteúdo**. Você revisará os modelos existentes e criará um novo modelo. Você também aprenderá sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
 
