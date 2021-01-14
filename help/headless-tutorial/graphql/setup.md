@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1599'
 ht-degree: 2%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> A API AEM GraphQL para o Delivery de fragmento de conteúdo será lançada no início de 2021.
-> A documentação relacionada está disponível para fins de pré-visualização.
+> A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
+> Entre em contato com o Suporte ao Adobe para habilitar a API do seu AEM como programa Cloud Service.
 
 Este capítulo oferta uma configuração rápida de um ambiente local para ver um aplicativo externo consumir conteúdo de AEM usando AEM APIs GraphQL. Os capítulos posteriores do tutorial serão desenvolvidos a partir dessa configuração.
 
