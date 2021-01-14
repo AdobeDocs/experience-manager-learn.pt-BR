@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> A API AEM GraphQL para o Delivery de fragmento de conteúdo será lançada no início de 2021.
-> A documentação relacionada está disponível para fins de pré-visualização.
+> A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
+> Entre em contato com o Suporte ao Adobe para habilitar a API do seu AEM como programa Cloud Service.
 
 Um tutorial completo que ilustra como criar e expor conteúdo usando AEM APIs GraphQL e consumido por um aplicativo externo, em um cenário CMS sem cabeçalho.
 
