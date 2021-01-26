@@ -12,10 +12,10 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 31%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,3 +40,7 @@ ht-degree: 31%
    + [4 - Explorar APIs GraphQL](./graphql/explore-graphql-api.md)
    + [5 - Query de um aplicativo externo](./graphql/graphql-and-external-app.md)
    + [6 - Modelagem avançada de dados com referências de fragmento](./graphql/fragment-references.md)
++ Autenticação baseada em token {#authentication}
+   + [Visão geral](./authentication/overview.md)
+   + [1 - Token de acesso de desenvolvimento local](./authentication/local-development-access-token.md)
+   + [2 - Credenciais de serviço](./authentication/service-credentials.md)
