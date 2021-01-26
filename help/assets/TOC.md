@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriais do AEM Assets
 sub-product: ativos
 team: TM
 translation-type: tm+mt
-source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
+source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '259'
 ht-degree: 32%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 32%
 
 + Compartilhamento e distribuição{#sharing}
    + [Baixar ativos](./sharing/download.md)
+   + [Publicar ativos](./sharing/publish.md)
    + [Brand Portal](./sharing/brand-portal.md)
    + Compartilhamento de ativos{#assets-share}
       + [Commons de compartilhamento de ativos](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
