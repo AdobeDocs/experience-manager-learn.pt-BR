@@ -2,10 +2,10 @@
 title: AEM Tutoriais sem cabeçalho
 description: Uma coleção de tutoriais sobre como usar o Adobe Experience Manager como um CMS sem cabeçalho.
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 5%
+source-wordcount: '460'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,13 @@ Uma moderna API de delivery de conteúdo é fundamental para a eficiência e o d
 
 Para superar esses desafios, o GraphQL fornece uma API baseada em query que permite que os clientes query AEM somente o conteúdo necessário e que recebam usando uma única chamada de API.
 
-* Saiba como usar AEM APIs GraphQL utilizando o tutorial [Introdução AEM APIs GraphQL](./graphql/overview.md)
+* Saiba como usar AEM APIs GraphQL no tutorial [Introdução às APIs AEM GraphQL](./graphql/overview.md)
+
+## Tutorial de autenticação baseada em token
+
+AEM expõe uma variedade de pontos de extremidade HTTP que podem ser interagidos de maneira ininterrupta, do GraphQL AEM Content Services à API HTTP Assets. Frequentemente, esses consumidores sem cabeça podem precisar se autenticar para AEM a fim de acessar o conteúdo protegido ou ações. Para facilitar isso, o AEM oferece suporte à autenticação baseada em token de solicitações HTTP de aplicativos, serviços ou sistemas externos.
+
+* Saiba como autenticar para AEM via HTTP usando tokens de acesso no [Autenticação para AEM como Cloud Service de um tutorial de aplicativo externo](./authentication/overview.md)
 
 ## Tutorial do AEM Content Services
 
