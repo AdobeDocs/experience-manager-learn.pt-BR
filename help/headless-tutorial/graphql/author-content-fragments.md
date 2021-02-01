@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
 
 # Criação de fragmento de conteúdo {#authoring-content-fragments}
-
->[!CAUTION]
->
-> A API AEM GraphQL para o Delivery de fragmentos de conteúdo está disponível sob solicitação.
-> Entre em contato com o Suporte ao Adobe para habilitar a API do seu AEM como programa Cloud Service.
 
 Neste capítulo, você criará e editará um novo Fragmento de conteúdo com base no [modelo de fragmento de conteúdo do contribuidor recém-definido](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
 
