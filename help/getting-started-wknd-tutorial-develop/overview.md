@@ -12,9 +12,9 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '873'
 ht-degree: 14%
 
 ---
@@ -30,7 +30,7 @@ A meta para este tutorial de várias partes é ensinar um desenvolvedor a implem
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-O tutorial foi projetado para funcionar com **AEM como um Cloud Service** e é compatível com versões anteriores com **AEM 6.5+** e **AEM 6.4.2+**. O site é implementado usando:
+O tutorial foi projetado para funcionar com **AEM como um Cloud Service** e é compatível com versões anteriores com **AEM 6.5.5.0+** e **AEM 6.4.8.1+**. O site é implementado usando:
 
 * [Arquétipo de Projeto Maven AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
@@ -40,6 +40,27 @@ O tutorial foi projetado para funcionar com **AEM como um Cloud Service** e é c
 * [Sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Estime de 1 a 2 horas para percorrer cada parte do tutorial.*
+
+## Ambiente de desenvolvimento local {#local-dev-environment}
+
+É necessário um ambiente de desenvolvimento local para concluir este tutorial. Capturas de tela e vídeo são capturados usando o AEM como um SDK Cloud Service em execução em um ambiente Mac OS com [Código do Visual Studio](https://code.visualstudio.com/) como o IDE. Os comandos e o código devem ser independentes do sistema operacional local, a menos que seja observado o contrário.
+
+### Software necessário
+
+Devem ser instalados:
+
+* Instância Local AEM **Author** (Cloud Service SDK, 6.5.5+ ou 6.4.8.1+)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
+* [Node.js](https://nodejs.org/en/) (LTS - Suporte a longo prazo)
+* [npm 6+](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
+
+>[!NOTE]
+>
+> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+>
+> **Novo no AEM 6.5?** Consulte o guia a  [seguir para configurar um ambiente](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de desenvolvimento local.
 
 ## Sobre o tutorial {#about-tutorial}
 
@@ -67,31 +88,6 @@ Além disso, cada parte do tutorial tem seu próprio ramo no GitHub. Um usuário
 >[!NOTE]
 >
 > Se você estava trabalhando com a versão anterior deste tutorial, ainda é possível encontrar os [pacotes de solução](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) e [código](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) no GitHub.
-
-## Ambiente de desenvolvimento local {#local-dev-environment}
-
-É necessário um ambiente de desenvolvimento local para concluir este tutorial. Capturas de tela e vídeo são capturados usando o AEM como um SDK Cloud Service em execução em um ambiente Mac OS. Os comandos e o código devem ser independentes do sistema operacional local, a menos que seja observado o contrário.
-
-**Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
-
-**Novo no AEM 6.5?** Consulte o guia a  [seguir para configurar um ambiente](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de desenvolvimento local.
-
-### Software necessário
-
-Devem ser instalados:
-
-* [SDK do AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) ou [AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/technical-requirements.html) ou [AEM 6.4 + SP2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)  (somente AEM 6.5+)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
-* [Git](https://git-scm.com/)
-
-### Ambiente de desenvolvimento integrado (IDE)
-
-Este tutorial usa [Eclipse](https://www.eclipse.org/) com o [AEM Developer Tool Plug-in](https://eclipse.adobe.com/aem/dev-tools/) como o IDE, no entanto qualquer IDE que tenha suporte para projetos Java e Maven pode ser usado. A confiança nos recursos específicos do IDE neste tutorial é mínima.
-
-Para obter etapas detalhadas para usar o Eclipse ou outros IDEs como [Código do Visual Studio](https://code.visualstudio.com/) ou [IntelliJ](https://www.jetbrains.com/idea/), [verifique o seguinte guia](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Site de referência {#reference-site}
 
