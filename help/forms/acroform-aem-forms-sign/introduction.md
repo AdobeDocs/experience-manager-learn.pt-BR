@@ -1,6 +1,6 @@
 ---
 title: Acrobat com AEM Forms
-seo-title: Mesclar dados do formulário adaptável com o Acroform
+description: Um tutorial que percorre a criação de um formulário adaptável usando o Acroform e mesclando os dados para obter um PDF. O PDF com os dados unidos pode ser enviado para assinatura usando o Adobe Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +8,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
