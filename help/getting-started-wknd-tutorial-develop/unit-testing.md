@@ -10,9 +10,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 translation-type: tm+mt
-source-git-commit: 836ef9b7f6a9dcb2ac78f5d1320797897931ef8c
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3015'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,40 @@ Este tutorial aborda a implementação de um Teste de unidade que valida o compo
 
 ## Pré-requisitos {#prerequisites}
 
+Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
+
+_Se o Java 8 e o Java 11 estiverem instalados no sistema, o executante de teste do Código VS pode escolher o tempo de execução do Java mais baixo ao executar os testes, resultando em falhas de teste. Se isso ocorrer, desinstale o Java 8._
+
+### Projeto inicial
+
+>[!NOTE]
+>
+> Se você tiver concluído com êxito o capítulo anterior, poderá reutilizar o projeto e ignorar as etapas para fazer check-out do projeto inicial.
+
 Confira o código básico no qual o tutorial se baseia:
 
-1. Clique no repositório [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Confira a ramificação `unit-testing/start`
+1. Verifique a ramificação `tutorial/unit-testing-start` de [GitHub](https://github.com/adobe/aem-guides-wknd)
 
-```shell
-$ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-$ cd ~/code/aem-guides-wknd
-$ git checkout unit-testing/start
-```
+   ```shell
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/unit-testing-start
+   ```
 
-Você sempre pode visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd/tree/unit-testing/solution) ou fazer check-out do código localmente ao alternar para a ramificação `unit-testing/solution`.
+1. Implante a base de código para uma instância AEM local usando suas habilidades Maven:
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage
+   ```
+
+   >[!NOTE]
+   >
+   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+Você sempre pode visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/unit-testing-start) ou fazer check-out do código localmente ao alternar para a ramificação `tutorial/unit-testing-start`.
 
 ## Objetivo
 
@@ -52,8 +74,6 @@ Usaremos AEM práticas recomendadas e:
 * [JUnit 5](https://junit.org/junit5/)
 * [Estrutura de teste Mockito](https://site.mockito.org/)
 * [wcm.io Test Framework](https://wcm.io/testing/)  (que se baseia em  [Mocks](https://sling.apache.org/documentation/development/sling-mock.html) Apache Sling)
-
->[!VIDEO](https://video.tv.adobe.com/v/30207/?quality=12&learn=on)
 
 ## Teste de unidade e Gerenciador da Adobe Cloud {#unit-testing-and-adobe-cloud-manager}
 
@@ -76,31 +96,25 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
 
    ```xml
    <dependencies>
-       ...
+       ...       
        <!-- Testing -->
        <dependency>
            <groupId>org.junit</groupId>
            <artifactId>junit-bom</artifactId>
-           <version>5.5.2</version>
+           <version>5.6.2</version>
            <type>pom</type>
            <scope>import</scope>
        </dependency>
        <dependency>
-           <groupId>org.slf4j</groupId>
-           <artifactId>slf4j-simple</artifactId>
-           <version>1.7.25</version>
-           <scope>test</scope>
-       </dependency>
-       <dependency>
            <groupId>org.mockito</groupId>
            <artifactId>mockito-core</artifactId>
-           <version>2.25.1</version>
+           <version>3.3.3</version>
            <scope>test</scope>
        </dependency>
        <dependency>
            <groupId>org.mockito</groupId>
            <artifactId>mockito-junit-jupiter</artifactId>
-           <version>2.25.1</version>
+           <version>3.3.3</version>
            <scope>test</scope>
        </dependency>
        <dependency>
@@ -113,9 +127,9 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
            <groupId>io.wcm</groupId>
            <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
            <!-- Prefer the latest version of AEM Mock Junit5 dependency -->
-           <version>2.5.2</version>
+           <version>3.0.2</version>
            <scope>test</scope>
-       </dependency>
+       </dependency>        
        ...
    </dependencies>
    ```
@@ -124,6 +138,7 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
 
    ```xml
    ...
+   <!-- Testing -->
    <dependency>
        <groupId>org.junit.jupiter</groupId>
        <artifactId>junit-jupiter</artifactId>
@@ -142,10 +157,29 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
    <dependency>
        <groupId>junit-addons</groupId>
        <artifactId>junit-addons</artifactId>
+       <scope>test</scope>
    </dependency>
    <dependency>
        <groupId>io.wcm</groupId>
        <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
+       <exclusions>
+           <exclusion>
+               <groupId>org.apache.sling</groupId>
+               <artifactId>org.apache.sling.models.impl</artifactId>
+           </exclusion>
+           <exclusion>
+               <groupId>org.slf4j</groupId>
+               <artifactId>slf4j-simple</artifactId>
+           </exclusion>
+       </exclusions>
+       <scope>test</scope>
+   </dependency>
+   <!-- Required to be able to support injection with @Self and @Via -->
+   <dependency>
+       <groupId>org.apache.sling</groupId>
+       <artifactId>org.apache.sling.models.impl</artifactId>
+       <version>1.4.4</version>
+       <scope>test</scope>
    </dependency>
    ...
    ```
@@ -156,68 +190,88 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
 
 Os testes de unidade normalmente mapeiam de 1 a 1 com classes Java. Neste capítulo, gravaremos um teste JUnit para o **BylineImpl.java**, que é o Modelo Sling que suporta o componente Byline.
 
-![explorador de pacotes de teste de unidade](assets/unit-testing/core-src-test-folder.png)
+![Pasta src de teste de unidade](assets/unit-testing/core-src-test-folder.png)
 
 *Local onde os testes de Unidade são armazenados.*
 
-1. Podemos fazer isso no Eclipse, clicando com o botão direito do mouse na classe Java para testar e selecionando **Novo > Outro > Java > JUnit > JUnit Test Case**.
+1. Crie um teste de unidade para `BylineImpl.java`, criando uma nova classe Java em `src/test/java` em uma estrutura de pasta de pacote Java que espelhe a localização da classe Java a ser testada.
 
-   ![Clique com o botão direito do mouse em BylineImpl.java para criar um teste de unidade](assets/unit-testing/junit-test-case-1.png)
+   ![Criar um novo arquivo BylineImplTest.java](assets/unit-testing/new-bylineimpltest.png)
 
-1. Na primeira tela do assistente, valide o seguinte:
+   Como estamos testando
 
-   * O tipo de teste JUnit é **New Jupiter test**, pois essas são as dependências JUnit Maven configuradas em nossos **pom.xml**.
-   * O **package** é o pacote java da classe que está sendo testada (`BylineImpl.java`)
-   * A pasta Origem aponta para o projeto **core**, (`aem-guides-wknd.core/src/test/java`) que instrui o Eclipse para onde os arquivos de teste de unidade são armazenados.
-   * O stub do método `setUp()` será criado manualmente; veremos como isso é usado mais tarde.
-   * E a classe em teste é `BylineImpl.java`, já que esta é a classe Java que queremos testar.
+   * `src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`
 
-   ![etapa 2 do assistente de teste da unidade](assets/unit-testing/junit-wizard-testcase.png)
+   criar uma classe Java de teste de unidade correspondente em
 
-   *Assistente de caso de teste JUnit - etapa 2*
+   * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-1. Clique no botão **Next** na parte inferior do assistente.
-
-   Esta próxima etapa ajuda na geração automática de métodos de teste. Normalmente, cada método público da classe Java tem pelo menos um método de teste correspondente, validando seu comportamento. Frequentemente, um teste de unidade terá vários métodos de teste testando um único método público, cada um representando um conjunto diferente de entradas ou estados.
-
-   No assistente, selecione todos os métodos em `BylineImpl`, com exceção de `init()`, que é um método usado pelo Modelo Sling internamente (via `@PostConstruct`). Nós testaremos com eficácia o `init()` testando todos os outros métodos, já que os outros dependem da `init()` execução com êxito.
-
-   Novos métodos de teste podem ser adicionados a qualquer momento à classe de teste JUnit, esta página do assistente é meramente para conveniência.
-
-   ![etapa 3 do assistente de teste da unidade](assets/unit-testing/junit-test-case-3.png)
-
-   *Assistente de caso de teste JUnit (continuação)*
-
-1. Clique no botão Finish (Concluir) na parte inferior do assistente para gerar o arquivo de teste JUnit5.
-1. Verifique se o arquivo de teste JUnit5 foi criado na estrutura do pacote correspondente em **aem-guides-wknd.core** > **/src/test/java** como um arquivo chamado `BylineImplTest.java`.
+2. Mas também diferencie o arquivo de teste    O sufixo `Test` no arquivo de teste de unidade, `BylineImplTest.java` é uma convenção que nos permite
+1. Identifique-o facilmente como o arquivo de teste _para_ `BylineImpl.java`
+2. Mas também, diferencie o arquivo de teste _de_ da classe que está sendo testada, `BylineImpl.java`
 
 ## Revisando BylineImplTest.java {#reviewing-bylineimpltest-java}
 
-Nosso arquivo de teste tem vários métodos gerados automaticamente. Neste ponto, não há nada AEM específico sobre esse arquivo de teste JUnit.
+Neste ponto, o arquivo de teste JUnit é uma classe Java vazia. Atualize o arquivo com o seguinte código:
 
-O primeiro método é `public void setUp() { .. }`, que é anotado com `@BeforeEach`.
+```java
+package com.adobe.aem.guides.wknd.core.models.impl;
 
-A anotação `@BeforeEach` é uma anotação JUnit que instrui o teste JUnit em execução a executar este método antes de executar cada método de teste nesta classe.
+import static org.junit.jupiter.api.Assertions.*;
 
-Os métodos subsequentes são os próprios métodos de teste e são marcados como tal com a anotação `@Test`. Observe que, por padrão, todos os nossos testes estão configurados para falhar.
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-Quando essa classe de teste JUnit (também conhecida como caso de teste JUnit) é executada, cada método marcado com `@Test` será executado como um teste que pode ser aprovado ou reprovado.
+public class BylineImplTest {
 
-![BylineImplTest gerado](assets/unit-testing/bylineimpltest-new.png)
+    @BeforeEach
+    void setUp() throws Exception {
+
+    }
+
+    @Test 
+    void testGetName() { 
+        fail("Not yet implemented");
+    }
+    
+    @Test 
+    void testGetOccupations() { 
+        fail("Not yet implemented");
+    }
+
+    @Test 
+    void testIsEmpty() { 
+        fail("Not yet implemented");
+    }
+}
+```
+
+1. O primeiro método `public void setUp() { .. }` é anotado com `@BeforeEach` da JUnit, que instrui o executante de teste JUnit a executar este método antes de executar cada método de teste nesta classe. Isso fornece um local útil para inicializar o estado de teste comum exigido por todos os testes.
+
+2. Os métodos subsequentes são os métodos de teste, cujos nomes recebem o prefixo `test` por convenção e são marcados com a anotação `@Test`. Observe que, por padrão, todos os nossos testes estão prontos para falhar, já que ainda não os implementamos.
+
+   Para começar, nós start um único método de teste para cada método público na classe que estamos testando, portanto:
+
+   | BylineImpl.java |  | BylineImplTest.java |
+   | ------------------|--------------|---------------------|
+   | getName() | é testado por | testGetName() |
+   | getOccupations() | é testado por | testGetOccupations() |
+   | isEmpty() | é testado por | testIsEmpty() |
+
+   Esses métodos podem ser expandidos conforme necessário, como veremos mais adiante neste capítulo.
+
+   Quando essa classe de teste JUnit (também conhecida como caso de teste JUnit) é executada, cada método marcado com `@Test` será executado como um teste que pode ser aprovado ou reprovado.
+
+![BylineImplTest gerado](assets/unit-testing/bylineimpltest-stub-methods.png)
 
 *`core/src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`*
 
-1. Execute o JUnit Test Case clicando com o botão direito do mouse no nome da classe e **Run As > JUnit Test**.
+1. Execute o JUnit Test Case clicando com o botão direito do mouse no arquivo `BylineImplTest.java` e tocando em **Run**.
+Como esperado, todos os testes falharam, já que ainda não foram implementados.
 
-   ![Executar como teste de junção](assets/unit-testing/run-as-junit-test.png)
+   ![Executar como teste de junção](assets/unit-testing/run-junit-tests.png)
 
-   *Clique com o botão direito do mouse em BylineImplTests.java > Executar como > Teste JUnit*
-
-1. Como esperado, todos os testes falharam.
-
-   ![falha nos testes](assets/unit-testing/all-tests-fail.png)
-
-   *Visualização JUnit no Eclipse > Janela > Mostrar Visualização > Java > JUnit*
+   *Clique com o botão direito do mouse em BylineImplTests.java > Executar*
 
 ## Revisando BylineImpl.java {#reviewing-bylineimpl-java}
 
@@ -226,17 +280,15 @@ Ao gravar testes de unidade, há duas abordagens principais:
 * [Desenvolvimento](https://en.wikipedia.org/wiki/Test-driven_development) orientado por TDD ou teste, que envolve a gravação gradual dos testes de unidade, imediatamente antes do desenvolvimento da implementação; escreva um teste, escreva a implementação para fazer o teste passar.
 * Implementação - primeiro desenvolvimento, que envolve o desenvolvimento de código de trabalho primeiro e, em seguida, a gravação de testes que validam esse código.
 
-Neste tutorial, a última abordagem é usada (já que criamos um **BylineImpl.java** em um capítulo anterior). Por isso, temos de rever e compreender os comportamentos dos seus métodos públicos, mas também alguns dos seus detalhes de implementação. Isso pode parecer contrário, uma vez que um bom teste só deve se preocupar com os dados recebidos e os resultados, no entanto, quando se trabalha em AEM, há uma variedade de considerações de implementação que devem ser compreendidas para se construir os testes em andamento.
+Neste tutorial, a última abordagem é usada (já que criamos um **BylineImpl.java** em um capítulo anterior). Por isso, temos de rever e compreender os comportamentos dos seus métodos públicos, mas também alguns dos seus detalhes de implementação. Isto pode parecer contrário, uma vez que um bom teste só deve preocupar-se com os fatores de produção e os resultados, contudo, quando se trabalha em AEM, há uma variedade de considerações de implementação que devem ser compreendidas para se construírem testes de trabalho.
 
 O TDD no contexto do AEM requer um nível de especialização e é melhor adotado por AEM desenvolvedores com capacidade para AEM desenvolvimento e teste de unidade do código AEM.
-
->[!VIDEO](https://video.tv.adobe.com/v/30208/?quality=12&learn=on)
 
 ## Configuração AEM contexto de teste {#setting-up-aem-test-context}
 
 A maioria dos códigos escritos para AEM depende de APIs JCR, Sling ou AEM, que, por sua vez, exigem que o contexto de um AEM em execução seja executado corretamente.
 
-Como os testes de unidade são executados na compilação, fora do contexto de uma instância AEM em execução, não há esse recurso. Para facilitar isso, o AEM Mocks[ do wcm.io cria um contexto simulado que permite que essas APIs atuem principalmente como se estivessem em execução no AEM.](https://wcm.io/testing/aem-mock/usage.html)
+Como os testes de unidade são executados na compilação, fora do contexto de uma instância AEM em execução, não há esse contexto. Para facilitar isso, o AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) de [wcm.io cria um contexto simulado que permite que essas APIs _principalmente_ atuem como se estivessem em execução no AEM.
 
 1. Crie um contexto AEM usando **wcm.io&#39;s** `AemContext` em **BylineImplTest.java** adicionando-o como uma extensão JUnit decorada com `@ExtendWith` no arquivo **BylineImplTest.java**. A extensão cuida de todas as tarefas de inicialização e limpeza necessárias. Crie uma variável de classe para `AemContext` que possa ser usada para todos os métodos de teste.
 
@@ -292,9 +344,9 @@ Como os testes de unidade são executados na compilação, fora do contexto de u
 
    ![BylineImplTest.json](assets/unit-testing/bylineimpltest-json.png)
 
-   Este JSON define uma definição de recurso de modelo para o teste de unidade de componente Byline. Nesse ponto, o JSON tem o conjunto mínimo de propriedades necessário para representar um recurso de conteúdo de componente Byline, os `jcr:primaryType` e `sling:resourceType`.
+   Este JSON define um recurso mock (nó JCR) para o teste de unidade do componente Byline. Nesse ponto, o JSON tem o conjunto mínimo de propriedades necessário para representar um recurso de conteúdo de componente Byline, os `jcr:primaryType` e `sling:resourceType`.
 
-   Uma regra geral para eles ao trabalhar com testes de unidade é criar o conjunto mínimo de conteúdo de simulação, contexto e código necessário para satisfazer cada teste. Evite a tentação de construir um contexto simulado completo antes de escrever os testes, já que geralmente resulta em artefatos desnecessários.
+   Uma regra geral ao trabalhar com testes de unidade é criar o conjunto mínimo de conteúdo de simulação, contexto e código necessário para satisfazer cada teste. Evite a tentação de construir um contexto simulado completo antes de escrever os testes, já que geralmente resulta em artefatos desnecessários.
 
    Agora, com a existência de **BylineImplTest.json**, quando `ctx.json("/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.json", "/content")` é executado, as definições de recurso mock são carregadas no contexto no caminho **/content.**
 
@@ -306,7 +358,6 @@ Agora que temos uma configuração básica de contexto simulado, vamos escrever 
 
    ```java
    import com.adobe.aem.guides.wknd.core.components.Byline;
-   import static org.junit.jupiter.api.Assertions.assertEquals;
    ...
    @Test
    public void testGetName() {
@@ -331,7 +382,7 @@ Agora que temos uma configuração básica de contexto simulado, vamos escrever 
 
    Observe que este teste NÃO falha porque nunca definimos uma propriedade `name` no teste JSON mock, que fará com que o teste falhe, no entanto a execução do teste não chegou a esse ponto! Esse teste falha devido a um `NullPointerException` no próprio objeto byline.
 
-1. No vídeo [Revisando BylineImpl.java](#reviewing-bylineimpl-java) acima, discutimos como, se `@PostConstruct init()` lançar uma exceção, isso impede que o Modelo Sling instancie, e isso é o que está acontecendo aqui.
+1. Em `BylineImpl.java`, se `@PostConstruct init()` lançar uma exceção, isso impedirá que o Modelo Sling instancie e fará com que esse objeto do Modelo Sling seja nulo.
 
    ```java
    @PostConstruct
@@ -340,7 +391,7 @@ Agora que temos uma configuração básica de contexto simulado, vamos escrever 
    }
    ```
 
-   Acontece que, embora o serviço ModelFactory OSGi seja fornecido por meio do `AemContext` (por meio do Apache Sling Context), nem todos os métodos são implementados, incluindo `getModelFromWrappedRequest(...)` que é chamado no método `init()` do BylineImpl. Isso resulta em [AbstractMethodError](https://docs.oracle.com/javase/8/docs/api/java/lang/AbstractMethodError.html), o que, por termo, faz com que `init()` falhe, e a adaptação resultante de `ctx.request().adaptTo(Byline.class)` é um objeto nulo.
+   Acontece que, embora o serviço ModelFactory OSGi seja fornecido por meio do `AemContext` (por meio do Apache Sling Context), nem todos os métodos são implementados, incluindo `getModelFromWrappedRequest(...)` que é chamado no método `init()` do BylineImpl. Isso resulta em [AbstractMethodError](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AbstractMethodError.html), o que, por termo, faz com que `init()` falhe, e a adaptação resultante de `ctx.request().adaptTo(Byline.class)` é um objeto nulo.
 
    Como os modelos fornecidos não podem acomodar nosso código, precisamos implementar o contexto simulado nós mesmos. Para isso, podemos usar o Mockito para criar um objeto ModelFactory que retorna um objeto de imagem simulada quando `getModelFromWrappedRequest(...)` é chamado sobre ele.
 
@@ -363,8 +414,7 @@ Agora que temos uma configuração básica de contexto simulado, vamos escrever 
    import org.junit.jupiter.api.Test;
    import org.junit.jupiter.api.extension.ExtendWith;
    
-   import static org.junit.jupiter.api.Assertions.assertEquals;
-   import static org.junit.jupiter.api.Assertions.fail;
+   import static org.junit.jupiter.api.Assertions.*;
    import static org.mockito.Mockito.*;
    import org.apache.sling.api.resource.Resource;
    
@@ -425,6 +475,9 @@ Agora que temos uma configuração básica de contexto simulado, vamos escrever 
 
 1. Execute novamente o teste e **`testGetName()`** agora passa!
 
+   ![aprovação do nome de teste](assets/unit-testing/testgetname-pass.png)
+
+
 ## Testando getOccupations() {#testing-get-occupations}
 
 Ok, ótimo! Nosso primeiro teste foi bem-sucedido! Vamos continuar e testar `getOccupations()`. Como a inicialização do contexto do modelo foi feita no método `@Before setUp()`, isso estará disponível para todos os métodos `@Test` neste caso de teste, incluindo `getOccupations()`.
@@ -462,7 +515,7 @@ Lembre-se de que esse método deve retornar uma lista ordenada alfabeticamente d
 
 1. Lembre-se, assim como **`getName()`** acima, o **BylineImplTest.json** não define ocupações, portanto, esse teste falhará se for executado, já que `byline.getOccupations()` retornará uma lista vazia.
 
-   Atualize **BylineImplTest.json** para incluir uma lista de ocupações e elas serão definidas em ordem não alfabética para garantir que nossos testes validem se as ocupações são classificadas por **`getOccupations()`**.
+   Atualize **BylineImplTest.json** para incluir uma lista de ocupações e elas serão definidas em ordem não alfabética para garantir que nossos testes validem se as ocupações são classificadas alfabeticamente por **`getOccupations()`**.
 
    ```json
    {
@@ -477,7 +530,7 @@ Lembre-se de que esse método deve retornar uma lista ordenada alfabeticamente d
 
 1. Executar o teste e nós passamos novamente! Parece que as ocupações organizadas funcionam!
 
-   ![Obter o passe de Ocupações](assets/unit-testing/testgetoccupations-success.png)
+   ![Obter o passe de Ocupações](assets/unit-testing/testgetoccupations-pass.png)
 
    *testGetOccupations() passa*
 
@@ -503,14 +556,14 @@ Observe que essa verificação nos permitiu ignorar o teste para quando `getName
    ```json
    {
        "byline": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe",
-       "occupations": ["Photographer", "Blogger", "YouTuber"]
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe",
+           "occupations": ["Photographer", "Blogger", "YouTuber"]
        },
        "empty": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline"
        }
    }
    ```
@@ -540,24 +593,24 @@ Observe que essa verificação nos permitiu ignorar o teste para quando `getName
    ```json
    {
        "byline": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe",
-       "occupations": ["Photographer", "Blogger", "YouTuber"]
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe",
+           "occupations": ["Photographer", "Blogger", "YouTuber"]
        },
        "empty": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline"
        },
        "without-name": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "occupations": "[Photographer, Blogger, YouTuber]"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "occupations": "[Photographer, Blogger, YouTuber]"
        },
        "without-occupations": {
-       "jcr:primaryType": "nt:unstructured",
-       "sling:resourceType": "wknd/components/content/byline",
-       "name": "Jane Doe"
+           "jcr:primaryType": "nt:unstructured",
+           "sling:resourceType": "wknd/components/content/byline",
+           "name": "Jane Doe"
        }
    }
    ```
@@ -632,98 +685,18 @@ Observe que essa verificação nos permitiu ignorar o teste para quando `getName
    ```java
    @Test
    public void testIsNotEmpty() {
-   ctx.currentResource("/content/byline");
-   when(image.getSrc()).thenReturn("/content/bio.png");
-   
-   Byline byline = ctx.request().adaptTo(Byline.class);
-   
-   assertFalse(byline.isEmpty());
-   }
-   ```
-
-## Cobertura de código {#code-coverage}
-
-Cobertura de código é a quantidade de código fonte coberta pelos testes de unidade. Os IDEs modernos fornecem ferramentas que verificam automaticamente qual código fonte é executado durante os testes da unidade. Embora a cobertura do código em si não seja um indicador da qualidade do código, é útil entender se existem áreas importantes do código-fonte não testadas por testes de unidade.
-
-1. No Explorador de projetos do Eclipse, clique com o botão direito do mouse em **BylineImplTest.java** e selecione **Cobertura como > JUnit Test**
-
-   Verifique se a visualização de resumo da Cobertura está aberta (Janela > Mostrar Visualização > Outro > Java > Cobertura).
-
-   Isso executará os testes de unidade dentro desse arquivo e fornecerá um relatório indicando a cobertura do código. A perfuração na classe e nos métodos dá indicações mais claras de quais partes do arquivo são testadas e quais não são.
-
-   ![executar como cobertura de código](assets/unit-testing/bylineimpl-coverage.png)
-
-   *Resumo da cobertura de código*
-
-   O Eclipse fornece uma visualização rápida de quanto de cada classe e método é coberto pelo teste de unidade. A cor par do Eclipse codifica as linhas do código:
-
-   * **Código** Greenis executado por pelo menos um teste
-   * **O** amarelo indica uma ramificação que não é avaliada por nenhum teste
-   * **** Redindica o código que não é executado por nenhum teste
-
-1. No relatório de cobertura, foi identificada a ramificação que é executada quando o campo de ocupação é nulo e retorna uma lista vazia, e nunca é avaliada. Isso é indicado pelo fato de as linhas 571 e 86 terem cor amarela, terem indicado uma ramificação do if/else não ser executada e a linha 75 em vermelho indicando que a linha de código nunca é executada.
-
-   ![código de cores da cobertura](assets/unit-testing/coverage-color-coding.png)
-
-1. Isso pode ser solucionado adicionando um teste para `getOccupations()` que afirma que uma lista vazia é retornada quando não há valor de ocupação no recurso. Adicione o novo método de teste a seguir a **BylineImplTests.java**.
-
-   ```java
-   @Test
-   public void testGetOccupations_WithoutOccupations() {
-       List<String> expected = Collections.emptyList();
-   
-       ctx.currentResource("/content/empty");
-       Byline byline = ctx.request().adaptTo(Byline.class);
-   
-       List<String> actual = byline.getOccupations();
-   
-       assertEquals(expected, actual);
-   }
-   ```
-
-   **`Collections.emptyList();`** define o valor esperado como uma lista vazia.
-
-   **`ctx.currentResource("/content/empty")`** define o recurso atual como /content/empty, que sabemos que não tem uma propriedade de ocupação definida.
-
-1. Reexecutando a Cobertura como, ela informa que **BylineImpl.java** está agora com 100% de cobertura, mas ainda há uma ramificação que não é avaliada em isEmpty(), o que tem a ver com as ocupações. Nesse caso, as ocupações == null estão sendo avaliadas, no entanto, o ocuations.isEmpty() não está sendo avaliado, pois não há definição de recurso mock que defina `"occupations": []`.
-
-   ![Cobertura com testGetOccupations_WithoutOccupations()](assets/unit-testing/getoccupations-withoutoccupations.png)
-
-   *Cobertura com testGetOccupations_WithoutOccupations()*
-
-1. Isso pode ser facilmente resolvido criando outro método de teste que é usado em uma definição de recurso de maquete que define as ocupações para a matriz vazia.
-
-   Adicione uma nova definição de recurso de modelo a **BylineImplTest.json** que é uma cópia de **&quot;without-ocuations&quot;** e adicione uma propriedade de ocupação definida à matriz vazia, nomeando-a **&quot;without-ocuations-empty-array&quot;**.
-
-   ```json
-   "without-occupations-empty-array": {
-      "jcr:primaryType": "nt:unstructured",
-      "sling:resourceType": "wknd/components/content/byline",
-      "name": "Jane Doe",
-      "occupations": []
-    }
-   ```
-
-   Crie um novo método **@Test** em `BylineImplTest.java` que utilize este novo recurso de tarefa, asserções `isEmpty()` retorna true.
-
-   ```java
-   @Test
-   public void testIsEmpty_WithEmptyArrayOfOccupations() {
-       ctx.currentResource("/content/without-occupations-empty-array");
+       ctx.currentResource("/content/byline");
+       when(image.getSrc()).thenReturn("/content/bio.png");
    
        Byline byline = ctx.request().adaptTo(Byline.class);
    
-       assertTrue(byline.isEmpty());
+       assertFalse(byline.isEmpty());
    }
    ```
 
-   ![Cobertura com testIsEmpty_WithEmptyArrayOfOccupations()](assets/unit-testing/testisempty_withemptyarrayofoccupations.png)
+1. Agora, execute todos os testes de unidade no arquivo BylineImplTest.java e reveja a saída do Relatório de teste Java.
 
-   *Cobertura com testIsEmpty_WithEmptyArrayOfOccupations()*
-
-1. Com esta última adição, `BylineImpl.java` desfruta de 100% de cobertura de código com toda a definição de caminho condicional avaliada.
-
-   Os testes validam o comportamento esperado de `BylineImpl` sem contar com um conjunto mínimo de detalhes de implementação.
+![Todos os testes foram bem-sucedidos](./assets/unit-testing/all-tests-pass.png)
 
 ## Execução de testes de unidade como parte da compilação {#running-unit-tests-as-part-of-the-build}
 
@@ -745,4 +718,4 @@ Da mesma forma, se mudarmos um método de teste para falhar, a construção falh
 
 ## Revise o código {#review-the-code}
 
-Visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd) ou revise e implante o código localmente no bloco Git `unit-testing/solution`.
+Visualização o código finalizado em [GitHub](https://github.com/adobe/aem-guides-wknd) ou revise e implante o código localmente no bloco Git `tutorial/unit-testing-solution`.
