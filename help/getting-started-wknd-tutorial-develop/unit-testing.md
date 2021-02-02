@@ -206,9 +206,9 @@ Os testes de unidade normalmente mapeiam de 1 a 1 com classes Java. Neste capít
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-2. Mas também diferencie o arquivo de teste    O sufixo `Test` no arquivo de teste de unidade, `BylineImplTest.java` é uma convenção que nos permite
-1. Identifique-o facilmente como o arquivo de teste _para_ `BylineImpl.java`
-2. Mas também, diferencie o arquivo de teste _de_ da classe que está sendo testada, `BylineImpl.java`
+   Mas também diferencie o arquivo de teste    O sufixo `Test` no arquivo de teste de unidade, `BylineImplTest.java` é uma convenção que nos permite
+      1. Identifique-o facilmente como o arquivo de teste _para_ `BylineImpl.java`
+      2. Mas também, diferencie o arquivo de teste _de_ da classe que está sendo testada, `BylineImpl.java`
 
 ## Revisando BylineImplTest.java {#reviewing-bylineimpltest-java}
 
