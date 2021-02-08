@@ -13,10 +13,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 1%
+source-wordcount: '3074'
+ht-degree: 0%
 
 ---
 
@@ -94,6 +94,66 @@ Em seguida, crie um novo modelo em AEM que corresponda à estrutura dos modelos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
+Etapas de alto nível para o vídeo abaixo:
+
+### Configurações de estrutura
+
+1. Crie um novo modelo usando o **Tipo de modelo de página**, chamado **Página do artigo**.
+1. Alterne para o modo **Estrutura**.
+1. Adicione um componente **Fragmento de experiência** para agir como o **Cabeçalho** na parte superior do modelo.
+   * Configure o componente para apontar para `/content/experience-fragments/wknd/us/en/site/header/master`.
+   * Defina a política como **Cabeçalho da página** e certifique-se de que **Elemento padrão** esteja definido como `header`. O elemento `header`será direcionado com CSS no próximo capítulo.
+1. Adicione um componente **Fragmento de experiência** para agir como o **rodapé** na parte inferior do modelo.
+   * Configure o componente para apontar para `/content/experience-fragments/wknd/us/en/site/footer/master`.
+   * Defina a política como **Rodapé da página** e certifique-se de que **Elemento padrão** esteja definido como `footer`. O elemento `footer` será direcionado com CSS no próximo capítulo.
+1. Bloqueie o container **main** que foi incluído quando o modelo foi criado pela primeira vez.
+   * Defina a política como **Página principal** e certifique-se de que **Elemento padrão** esteja definido como `main`. O elemento `main` será direcionado com CSS no próximo capítulo.
+1. Adicione um componente **Image** ao container **main**.
+   * Desbloqueie o componente **Image**.
+1. Adicione um componente **Breadcrumb** abaixo do componente **Image** no container principal.
+   * Crie uma nova política para o componente **Trilha de navegação** chamado **Página do artigo - Trilha de navegação**. Defina **Nível do Start de navegação** como **4**.
+1. Adicione um componente **Container** abaixo do componente **Trilha de navegação** e dentro do container **main**. Isso atuará como o **container de conteúdo** para o modelo.
+   * Desbloqueie o container **Content**.
+   * Defina a política como **Conteúdo da página**.
+1. Adicione outro componente **Container** abaixo de **container de conteúdo**. Isso atuará como o container **Side Rail** do modelo.
+   * Destrave o container **Side Rail**.
+   * Crie uma nova política chamada **Página do artigo - Painel lateral**.
+   * Configure **Componentes permitidos** em **Projeto de sites WKND - Conteúdo** para incluir: **Botão**, **Transferir**, **Imagem**, **Lista**, **Separador**, **Partilha de Mídia Social**, &lt;a 6/>Texto **e** Título **.**
+1. Atualize a política do container raiz da página. Este é o container mais externo do modelo. Defina a política para **Raiz da página**.
+   * Em **Configurações do Container**, defina **Layout** como **Grade Responsiva**.
+1. Ative o Modo de layout para o **container de conteúdo**. Arraste a alça da direita para a esquerda e diminua o container para ter 8 colunas de largura.
+1. Ative o modo Layout para o **container do painel lateral**. Arraste a alça da direita para a esquerda e reduza o container para ter 4 colunas de largura. Em seguida, arraste a alça esquerda para a direita 1 coluna para tornar o container 3 colunas largo e deixar uma lacuna de 1 coluna entre **container de conteúdo**.
+1. Abra o emulador móvel e alterne para um ponto de interrupção móvel. Ative o modo de layout novamente e torne o **container de conteúdo** e o **container do painel lateral** a largura total da página. Isso empilhará os container verticalmente no ponto de interrupção móvel.
+1. Atualize a política do componente **Text** no **container de conteúdo**.
+   * Defina a política para **Texto do conteúdo**.
+   * Em **Plug-ins** > **Estilos de parágrafo**, marque **Ativar estilos de parágrafo** e certifique-se de que **bloco de citação** esteja ativado.
+
+### Configurações iniciais do conteúdo
+
+1. Alterne para o modo **Conteúdo inicial**.
+1. Adicione um componente **Title** ao **container de conteúdo**. Isso atuará como o título do artigo. Quando deixado vazio, exibirá automaticamente o Título da página atual.
+1. Adicione um segundo componente **Title** abaixo do primeiro componente de Título.
+   * Configure o componente com o texto: &quot;Por autor&quot;. Esse será um espaço reservado para texto.
+   * Defina o tipo como `H4`.
+1. Adicione um componente **Text** abaixo do componente **By Author** Title.
+1. Adicione um componente **Title** ao Container **Side Rail**.
+   * Configure o componente com o texto: &quot;Compartilhe esta história&quot;.
+   * Defina o tipo como `H5`.
+1. Adicione um componente **Compartilhamento de mídia social** abaixo do componente **Compartilhar esta história** Título.
+1. Adicione um componente **Separator** abaixo do componente **Compartilhamento de mídia social**.
+1. Adicione um componente **Download** abaixo do componente **Separador**.
+1. Adicione um componente **Lista** abaixo do componente **Download**.
+1. Atualize **Propriedades da página inicial** para o modelo.
+   * Em **Mídia social** > **Compartilhamento de mídia social**, marque **Facebook** e **Pinterest**
+
+### Ative o modelo e adicione uma miniatura
+
+1. Visualização o modelo no console Modelo navegando até [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd)
+1. **** Habilite o modelo Página de artigo.
+1. Edite as propriedades do modelo Página do artigo e carregue a seguinte miniatura para identificar rapidamente as páginas criadas usando o modelo Página do artigo:
+
+   ![Miniatura do modelo de página do artigo](assets/pages-templates/article-page-template-thumbnail.png)
+
 ## Atualize o cabeçalho e o rodapé com fragmentos de experiência {#experience-fragments}
 
 Uma prática comum ao criar conteúdo global, como um cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragmentos de experiência, permite que os usuários combinem vários componentes para criar um único componente com capacidade de referência. Os Fragmentos de experiência têm a vantagem de suportar o gerenciamento de vários sites e [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
@@ -102,13 +162,73 @@ O AEM Project Archetype gerou um Cabeçalho e rodapé. Em seguida, atualize os F
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Baixe e instale o pacote de conteúdo de amostra **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+Etapas de alto nível para o vídeo abaixo:
+
+1. Baixe o pacote de conteúdo de amostra **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+1. Carregue e instale o pacote de conteúdo usando o Gerenciador de pacotes em [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+1. Atualize o modelo de Variação da Web, que é o modelo usado para Fragmentos de experiência em [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html)
+   * Atualize a política do componente **Container** no modelo.
+   * Defina a política para **Raiz XF**.
+   * Em **Componentes permitidos** selecione o grupo de componentes **Projeto de Sites WKND - Estrutura** para incluir **Navegação de idioma**, **Navegação** e **Componentes de Pesquisa rápida**.
+
+### Atualizar fragmento da experiência do cabeçalho
+
+1. Abra o fragmento de experiência que renderiza o cabeçalho em [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html)
+1. Configure a raiz **Container** do fragmento. Este é o Container mais externo ****.
+   * Defina **Layout** como **Grade responsiva**
+1. Adicione o **logotipo escuro WKND** como uma imagem na parte superior do Container **a3/>.** O logotipo foi incluído no pacote instalado em uma etapa anterior.
+   * Modifique o layout do logotipo escuro **WKND** para ter **2** colunas de largura. Arraste as alças da direita para a esquerda.
+   * Configure o logotipo com **Texto alternativo** de &quot;Logotipo WKND&quot;.
+   * Configure o logotipo para **Link** para `/content/wknd/us/en` o Home page.
+1. Configure o componente **Navigation** que já está colocado na página.
+   * Defina **Excluir níveis raiz** como **1**.
+   * Defina **Profundidade da estrutura de navegação** como **1**.
+   * Modifique o layout do componente **Navigation** para ter **8** colunas de largura. Arraste as alças da direita para a esquerda.
+1. Remova o componente **Navegação de idioma**.
+1. Modifique o layout do componente **Search** para ter **2** colunas de largura. Arraste as alças da direita para a esquerda. Todos os componentes agora devem ser alinhados horizontalmente em uma única linha.
+
+### Atualizar fragmento de experiência do rodapé
+
+1. Abra o Fragmento de experiência que renderiza o rodapé em [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html)
+1. Configure a raiz **Container** do fragmento. Este é o Container mais externo ****.
+   * Defina **Layout** como **Grade responsiva**
+1. Adicione o **logotipo de luz WKND** como uma imagem à parte superior do Container **a3/>.** O logotipo foi incluído no pacote instalado em uma etapa anterior.
+   * Modifique o layout do **logotipo claro WKND** para ter **2** colunas de largura. Arraste as alças da direita para a esquerda.
+   * Configure o logotipo com **Texto alternativo** de &quot;Luz do logotipo WKND&quot;.
+   * Configure o logotipo para **Link** para `/content/wknd/us/en` o Home page.
+1. Adicione um componente **Navigation** abaixo do logotipo. Configure o componente **Navigation**:
+   * Defina **Excluir níveis raiz** como **1**.
+   * Desmarque **Coletar todas as páginas secundárias**.
+   * Defina **Profundidade da estrutura de navegação** como **1**.
+   * Modifique o layout do componente **Navigation** para ter **8** colunas de largura. Arraste as alças da direita para a esquerda.
 
 ## Criar uma página de artigo
 
 Em seguida, crie uma nova página usando o modelo Página do artigo. Crie o conteúdo da página para corresponder aos modelos do site. Siga as etapas no vídeo abaixo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+
+Etapas de alto nível para o vídeo abaixo:
+
+1. Navegue até o console Sites em [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Crie uma nova página abaixo de **WKND** > **US** > **EN** > **Revista**.
+   * Escolha o modelo **Página do artigo**.
+   * Em **Propriedades** defina **Título** como &quot;Ultimate Guide to LA Skatepark&quot; (Guia Ultimate para os Skatepark)
+   * Defina **Name** como &quot;guide-la-skatepark&quot;
+1. Substitua o título **Por autor** pelo texto &quot;By Stacey Roswells&quot;.
+1. Atualize o componente **Texto** para incluir um parágrafo para preencher o artigo. Você pode usar o seguinte arquivo de texto como cópia: [la-skate-park-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
+1. Adicione outro componente **Text**.
+   * Atualize o componente para incluir a cotação: &quot;Não há lugar melhor para destruir que Los Angeles.&quot;
+   * Edite o Editor de Rich Text no modo de tela cheia e modifique a citação acima para usar o elemento **Bloco de aspas**.
+1. Continue preenchendo o corpo do artigo para corresponder aos modelos.
+1. Configure o componente **Download** para usar uma versão PDF do artigo.
+   * Em **Download** > **Propriedades**, clique na caixa de seleção para **Obter o título do ativo DAM**.
+   * Defina **Description** como: &quot;Obtenha a história completa&quot;.
+   * Defina **Texto de ação** como: &quot;Download de PDF&quot;.
+1. Configure o componente **Lista**.
+   * Em **Configurações de Lista** > **Criar Lista usando**, selecione **Páginas secundárias**.
+   * Defina **Página principal** como `/content/wknd/us/en/magazine`.
+   * Em **Configurações do item** marque **Vincular itens** e marque **Mostrar data**.
 
 ## Inspect a estrutura de nó {#node-structure}
 
