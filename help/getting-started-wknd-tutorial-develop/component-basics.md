@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ Neste capítulo, exploraremos a tecnologia subjacente de um componente Adobe Exp
 ## Pré-requisitos {#prerequisites}
 
 Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
+
+O IDE usado nos vídeos é [Código do Visual Studio](https://code.visualstudio.com/) e o plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
 
 ## Objetivo {#objective}
 
@@ -110,7 +112,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
 1. Alterne para o IDE e abra o projeto no módulo `ui.apps`.
 1. Abra o arquivo `helloworld.html` e faça uma alteração na marcação HTML.
-1. Use as ferramentas IDE para sincronizar a alteração de arquivo com a instância AEM local.
+1. Use as ferramentas IDE como [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) para sincronizar a alteração de arquivo com a instância AEM local.
 1. Retorne ao navegador e observe que a renderização do componente foi alterada.
 1. Abra o arquivo `.content.xml` que define a caixa de diálogo para o componente `HelloWorld` em:
 
@@ -209,14 +211,14 @@ Em seguida, faremos algumas atualizações no `HelloWorldModel` Sling Model para
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. Adicione o seguinte método `getTitle()` à classe `HelloWorldModel`, que retorna o valor da propriedade chamada `title`. Este método adiciona a lógica adicional para retornar um valor String de &quot;Valor padrão aqui!&quot; se a propriedade `title` for nula ou estiver em branco:
@@ -349,6 +351,10 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
    ```
 
 1. Implante as alterações em uma instância local do AEM usando o plug-in do desenvolvedor ou suas habilidades Maven.
+
+   >[!NOTE]
+   >
+   > O CSS e o JavaScript são frequentemente armazenados em cache pelo navegador por motivos de desempenho. Se você não vir imediatamente a alteração para a biblioteca do cliente, execute uma atualização e limpe o cache do navegador. Pode ser útil usar uma janela incognito para garantir um cache novo.
 
 ## Parabéns! {#congratulations}
 
