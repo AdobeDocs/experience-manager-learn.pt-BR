@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 14%
+source-wordcount: '893'
+ht-degree: 13%
 
 ---
 
@@ -55,6 +55,8 @@ Devem ser instalados:
 * [Node.js](https://nodejs.org/en/) (LTS - Suporte a longo prazo)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
+* [Visual Studio ](https://code.visualstudio.com/) Codeor equivalente IDE
+   * [Sincronização](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)  AEM VSCode - Ferramenta usada em todo o tutorial
 
 >[!NOTE]
 >
