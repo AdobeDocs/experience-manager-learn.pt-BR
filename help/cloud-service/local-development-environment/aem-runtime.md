@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -180,6 +180,10 @@ A alteração dessas configurações pode exigir ajustes AEM configurações do 
 ## Interrompendo um tempo de execução de AEM local
 
 Para interromper um tempo de execução local AEM, seja o AEM Author ou Publish service, abra a janela de linha de comando usada para start do AEM Runtime e toque em `Ctrl-C`. Aguarde AEM desligar. Quando o processo de desligamento estiver concluído, o prompt da linha de comando estará disponível.
+
+## Tempo de execução local opcional AEM configurar tarefa
+
++ __As variáveis de ambiente de configuração OSGi e__ variáveis secretas são  [especialmente definidas para o tempo de execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development) local AEM, em vez de gerenciá-las usando a CLI do rádio.
 
 ## Quando atualizar o Jar de Início Rápido
 
