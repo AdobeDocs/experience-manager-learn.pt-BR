@@ -6,9 +6,9 @@ user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores 
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
+source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '947'
 ht-degree: 6%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 6%
 
 + [Visão geral](overview.md)
 + [Práticas recomendadas a serem seguidas](adaptive-forms/best-practices-adaptive-forms.md)
-+ [Configurar a autenticação OKTA com o autor de AEM](adaptive-forms/single-sign-on-with-okta.md)
-+ [Criar seu primeiro pacote OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
++ [Configuração da autenticação OKTA com o autor de AEM](adaptive-forms/single-sign-on-with-okta.md)
++ [Criando seu primeiro pacote OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
 + Criando seu primeiro formulário adaptável {#creating-your-first-adaptive-form}
    + [Introdução e configuração](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Criar modelo de formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -96,7 +96,7 @@ ht-degree: 6%
    + [Adicionar coluna personalizada](inbox-customization/add-married-column.md)
    + [Uso de modelo inteligente](inbox-customization/use-sightly-template.md)
 
-+ Armazenar e recuperar formulário adaptável{#store-and-retrieve-af-with-2fa}
++ Como armazenar e recuperar formulário adaptável{#store-and-retrieve-af-with-2fa}
    + [Introdução](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configurar fonte de dados](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Armazenar anexos de formulário](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -183,6 +183,7 @@ ht-degree: 6%
    + [Parte4 - Criar Perfil ACS usando o modelo de dados de formulário](aem-forms-with-adobe-campaign/partfour.md)
 
 + Serviços de documento {#document-services}
+   + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Uso do serviço Assembler no AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Uso da pasta assistida no AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso do serviço de código de barras no AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
