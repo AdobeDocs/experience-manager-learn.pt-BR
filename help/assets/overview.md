@@ -3,9 +3,9 @@ title: Vídeos e Tutoriais do AEM Assets
 description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets
 sub-product: ativos, mídia dinâmica
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '230'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,9 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 
 ## Novidades
 
+* **[Relate e não se relacione (vídeo)](./authoring/relate-unrelate.md)**
+
+   *Saiba como estabelecer e gerenciar relações entre ativos no AEM*
 
 * **[Publicar ativos (vídeo)](./sharing/publish.md)**
 
@@ -33,10 +36,6 @@ O Adobe Experience Manager Assets é uma ferramenta de gerenciamento de ativos d
 * **[Workflows de start automático (Vídeo)](./configuring/auto-start-workflows.md)**
 
    *Explore como chamar automaticamente AEM fluxo de trabalho em ativos carregados ou reprocessados*
-
-* **[Perfis de processamento (vídeo)](./configuring/processing-profiles.md)**
-
-   *Explore como invocar os microserviços do Assets para ativos de representação*
 
 ## Separações de Pessoal
 
