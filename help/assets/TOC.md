@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriais do AEM Assets
 sub-product: ativos
 team: TM
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '262'
 ht-degree: 32%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 32%
    + [Operações básicas](./authoring/basic-operations.md)
    + [Metadados](./authoring/metadata.md)
    + [Representações](./authoring/renditions.md)
+   + [Relacionar e não relacionar](./authoring/relate-unrelate.md)
 
 + Colaboração{#collaboration}
    + [Linha do tempo e Caixa de entrada](./collaboration/timeline-and-inbox.md)
