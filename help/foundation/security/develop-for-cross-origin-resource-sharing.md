@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuração do Dispatcher {#dispatcher-configuration}
 
-Para permitir o armazenamento em cache e o serviço de cabeçalhos [!DNL CORS] em conteúdo em cache, adicione a seguinte configuração a todos os arquivos de suporte do AEM Publish `dispatcher.any`.
+Para permitir o armazenamento em cache e o serviço de cabeçalhos CORS em conteúdo em cache, adicione a seguir [/clientheaders configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a todos os arquivos AEM Publish `dispatcher.any` de suporte.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Para permitir o armazenamento em cache e o serviço de cabeçalhos [!DNL CORS] e
 
 **Reinicie o** aplicativo do servidor da Web depois de fazer alterações no  `dispatcher.any` arquivo.
 
-Provavelmente, a limpeza total do cache é necessária para garantir que os cabeçalhos sejam adequadamente armazenados em cache na próxima solicitação após uma atualização de configuração `/headers`.
+Provavelmente, a limpeza total do cache é necessária para garantir que os cabeçalhos sejam adequadamente armazenados em cache na próxima solicitação após uma atualização de configuração `/clientheaders`.
 
 ## Materiais de suporte {#supporting-materials}
 
