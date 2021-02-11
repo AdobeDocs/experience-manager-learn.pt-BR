@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ O Adobe Asset Link v1.1 agora oferece suporte a vinculação direta de InDesigns
 
 >[!NOTE]
 >
->Use apenas seu Enterprise ID ou Federated ID Adobe Creative Cloud. Certifique-se de [configurar o AEM para o Link do ativo Adobe](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html).
+>Use apenas seu Enterprise ID ou Federated ID Adobe Creative Cloud. Certifique-se de [configurar o AEM para o Link do ativo Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 
 ### Recursos de link do ativo do Adobe
@@ -73,8 +73,6 @@ As representações FPO são substitutos leves dos ativos originais. Elas têm a
 * BMP
 
 Se uma representação FPO não estiver disponível para um ativo específico no AEM Assets, o ativo original de alta resolução será referenciado. Para imagens FPO, o status FPO é exibido no painel Links de InDesign.
-
-
 
 ## Noções básicas sobre a autenticação do Link do ativo do Adobe com o AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}
 
