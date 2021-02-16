@@ -10,15 +10,22 @@ doc-type: feature video
 kt: 6060
 thumbnail: 39151.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 14%
+source-wordcount: '225'
+ht-degree: 13%
 
 ---
 
 
 # AEM usuários, grupos e permissões
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_aem_users_groups"
+>title="AEM usuários, grupos e permissões"
+>abstract="A Adobe Experience Manager baseia-se em usuários do Adobe IMS, grupos de usuários e perfis de produtos para fornecer aos usuários acesso personalizável ao AEM. Saiba mais sobre como definir grupos e permissões AEM e como eles trabalham em conjunto com abstrações do Adobe IMS para fornecer acesso fácil e personalizável a AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en" text="Suporte IMS do Adobe Experience Manager as a Cloud Service"
+>additional-url="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Grupos de usuários AEM e suas permissões"
 
 A Adobe Experience Manager baseia-se em usuários do Adobe IMS, grupos de usuários e perfis de produtos para fornecer aos usuários acesso personalizável ao AEM. Saiba mais sobre como definir grupos e permissões AEM e como eles trabalham em conjunto com abstrações do Adobe IMS para fornecer acesso fácil e personalizável a AEM.
 
