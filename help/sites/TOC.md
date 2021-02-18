@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience
 breadcrumb-title: Tutoriais do AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '448'
 ht-degree: 23%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 23%
    + [Modelos editáveis](page-authoring/template-editor-feature-video-use.md)
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
+   + [Lançamentos](page-authoring/launches.md)
 + Componentes {#components}
    + [Desenvolvimento de componentes](components/component-development.md)
    + [Componentes principais](components/core-components-feature-video-understand.md)
