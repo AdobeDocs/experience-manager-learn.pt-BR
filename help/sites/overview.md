@@ -5,21 +5,25 @@ description: 'Uma coleção de vídeos e tutoriais do Adobe Experience Manager S
 seo-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites
 sub-product: sites, serviços de conteúdo
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 25%
+source-wordcount: '363'
+ht-degree: 23%
 
 ---
 
 
 # Visão geral {#overview}
 
-Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e recursos do AEM Sites.
+Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiências. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e recursos do AEM Sites.
 
 ## Novidades
 
-* **[Personalizar a camada de dados do cliente Adobe com componentes AEM](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[Uso de inicializações com o AEM Sites (Vídeo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+
+   *Saiba mais sobre as Inicializações do AEM Sites e como elas podem ser usadas para preparar o conteúdo do site para uma versão futura.*
+
+* **[Personalizar a camada de dados do cliente Adobe com componentes AEM (Tutorial)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
    *Saiba como atualizar a Camada de dados do cliente Adobe com conteúdo dos componentes AEM personalizados.*
 
