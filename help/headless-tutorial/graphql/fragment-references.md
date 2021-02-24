@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -143,7 +143,7 @@ Em seguida, execute um query para uma Aventura e adicione propriedades aninhadas
 
 ## Atualize o aplicativo React para exibir o conteúdo do Contributor
 
-Em seguida, atualize os query usados pelo aplicativo React para incluir o novo Colaborador e exibir informações sobre o Colaborador como parte da visualização de detalhes da Aventura.
+Em seguida, atualize os query usados pelo aplicativo React para incluir o novo Contribuidor e exibir informações sobre o Contribuidor como parte da visualização de detalhes da Aventura.
 
 1. Abra o aplicativo WKND GraphQL React no IDE.
 
@@ -234,13 +234,10 @@ Em seguida, atualize os query usados pelo aplicativo React para incluir o novo C
 
    ![Colaborador adicionado ao aplicativo](assets/fragment-references/contributor-added-detail.png)
 
-## Recursos adicionais
-
-Para obter mais detalhes sobre os Fragmentos de conteúdo e o GraphQL, consulte os seguintes recursos:
-
-* [Delivery de conteúdo sem cabeçalho usando fragmentos de conteúdo com GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [AEM API GraphQL para uso com Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## Parabéns!{#congratulations}
 
 Parabéns! Você atualizou um Modelo de fragmento de conteúdo existente para fazer referência a um fragmento de conteúdo aninhado usando o campo **Referência de fragmento**. Você também aprendeu a modificar um query GraphQL para incluir campos de um modelo referenciado.
+
+## Próximas etapas {#next-steps}
+
+No próximo capítulo, [Implantação de produção usando um ambiente de publicação de AEM](./production-deployment.md), saiba mais sobre os serviços de autor e publicação de AEM e o padrão de implantação recomendado para aplicativos sem cabeçalho. Você atualizará um aplicativo existente para usar variáveis de ambiente para alterar dinamicamente um ponto de extremidade GraphQL com base no ambiente do público alvo. Você também aprenderá a configurar corretamente o AEM para o CORS (Cross-Origem resource sharing, compartilhamento de recursos entre ).
