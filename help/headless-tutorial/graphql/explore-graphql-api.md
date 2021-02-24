@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 A API GraphQL do AEM fornece uma linguagem de query avançada para expor dados de Fragmentos de conteúdo a aplicativos downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o schema é convertido e adicionado ao &quot;gráfico&quot; que compõe a API do GraphQL.
 
-Neste capítulo, exploraremos alguns query GraphQL comuns para coletar conteúdo. Incorporado ao AEM é um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente os query e os dados retornados. O GraphiQL também fornece acesso fácil à documentação, facilitando o aprendizado e a compreensão de quais métodos estão disponíveis.
+Neste capítulo, exploraremos alguns query GraphQL comuns para coletar conteúdo usando um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente os query e os dados retornados. O GraphiQL também fornece acesso fácil à documentação, facilitando o aprendizado e a compreensão de quais métodos estão disponíveis.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -36,6 +36,23 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas em [C
 * Saiba como filtrar e solicitar atributos de dados específicos.
 * Saiba como query uma variação de um Fragmento de conteúdo.
 * Saiba como participar de um query de vários modelos de Fragmento de conteúdo
+
+## Instale a ferramenta GraphiQL {#install-graphiql}
+
+O GraphiQL IDE é uma ferramenta de desenvolvimento e é necessário apenas em ambientes de nível inferior, como uma instância local ou de desenvolvimento. Portanto, não está incluído no projeto AEM, mas vem como um pacote separado que pode ser instalado numa base ad hoc.
+
+1. Navegue até **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM como Cloud Service**.
+1. Procure por &quot;GraphiQL&quot; (certifique-se de incluir **i** em **GraphiQL**.
+1. Baixe o **Pacote de conteúdo GraphiQL v.x.x.x** mais recente
+
+   ![Download do pacote GraphiQL](assets/explore-graphql-api/software-distribution.png)
+
+   O arquivo zip é um pacote AEM que pode ser instalado diretamente.
+
+1. No menu **AEM Start**, navegue até **Ferramentas** > **Implantação** > **Pacotes**.
+1. Clique em **Carregar pacote** e escolha o pacote baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
+
+   ![Instalar o pacote GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
 
 ## Query de uma lista de fragmentos de conteúdo {#query-list-cf}
 
@@ -181,7 +198,7 @@ Também é possível query direto de um único fragmento de conteúdo. O conteú
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
@@ -205,7 +222,7 @@ Também é possível query direto de um único fragmento de conteúdo. O conteú
        item {
          _path
          fullName
-         biography {
+         biographyText {
            html
          }
        }
