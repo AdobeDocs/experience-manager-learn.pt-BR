@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -68,7 +68,7 @@ A inicialização do aplicativo React é descrita com mais detalhes no capítulo
 
 1. Revise o aplicativo em [http://localhost:3000/](http://localhost:3000/). A amostra do aplicativo React tem duas partes principais:
 
-   * A experiência residencial atua como um índice de Aventuras WKND, mas consultando __Aventura__ Fragmentos de Conteúdo em AEM usando o GraphQL. Neste capítulo, modificaremos esta visualização para suportar a filtragem de aventuras por atividade.
+   * A experiência residencial atua como um índice de Aventuras WKND, consultando __Aventura__ Fragmentos de Conteúdo em AEM usando o GraphQL. Neste capítulo, modificaremos esta visualização para suportar a filtragem de aventuras por atividade.
 
       ![Aplicativo WKND GraphQL React - Experiência inicial](./assets/graphql-and-external-app/react-home-view.png)
 
