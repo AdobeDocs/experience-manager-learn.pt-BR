@@ -1,8 +1,8 @@
 ---
-title: Criar um componente personalizado | Introdução ao Editor SPA AEM e ao Angular
+title: Criar um componente personalizado | Introdução ao AEM SPA Editor e Angular
 description: Saiba como criar um componente personalizado para ser usado com o AEM SPA Editor. Saiba como desenvolver diálogos do autor e Modelos Sling para estender o modelo JSON para preencher um componente personalizado.
 sub-product: sites
-feature: SPA Editor
+feature: Editor SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5831-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 1fd4d31770a4eac37a88a7c6960fd51845601bee
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   O tipo de recurso do componente é o que vinculará o Modelo Sling ao componente AEM e será mapeado ao componente Angular.
+   O tipo de recurso do componente é o que vinculará o Modelo Sling ao componente AEM e, por fim, será mapeado ao componente de Angular.
 
 6. Adicione o método `getExportedType()` à classe `CustomComponentImpl` para retornar o tipo de recurso do componente:
 
@@ -215,7 +215,7 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    }
    ```
 
-   Este método é necessário ao implementar a interface `ComponentExporter` e exporá o tipo de recurso que permite o mapeamento para o componente Angular.
+   Esse método é necessário ao implementar a interface `ComponentExporter` e exporá o tipo de recurso que permite o mapeamento para o componente de Angular.
 
 7. Atualize o método `getMessage()` para retornar o valor da propriedade `message` persistente na caixa de diálogo do autor. Use a anotação `@ValueMap` para mapear o valor do JCR `message` para uma variável Java:
 
@@ -238,9 +238,9 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    >
    > Você pode visualização [CustomComponentImpl.java concluído aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## Atualizar o componente angular
+## Atualizar o componente Angular
 
-O código Angular do Componente Personalizado já foi criado. Em seguida, faça algumas atualizações para mapear o componente Angular para o componente AEM.
+O código de Angular do Componente personalizado já foi criado. Em seguida, faça algumas atualizações para mapear o componente de Angular para o componente de AEM.
 
 1. No módulo `ui.frontend` abra o arquivo `ui.frontend/src/app/components/custom/custom.component.ts`
 2. Observe a linha `@Input() message: string;`. Espera-se que o valor em maiúsculas transformado seja mapeado para essa variável.
