@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: serviço em nuvem
 team: TM
 translation-type: tm+mt
-source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
+source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '329'
 ht-degree: 25%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 25%
       + [Analisar resultados do teste](./cloud-manager/devops/analyze-test-results.md)
       + [Configurações do Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [APIs do Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
-+ Configuração do Ambiente de desenvolvimento local {#local-development-environment-set-up}
++ Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-setup}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
    + [Tempo de execução de AEM local](./local-development-environment/aem-runtime.md)
@@ -58,6 +58,7 @@ ht-degree: 25%
       + [Publicação de conteúdo](./developing/basics/content-publishing.md)
       + [Configurações do OSGi](./developing/basics/osgi-configurations.md)
       + [Migração de Configuração do Dispatcher](./developing/basics/dispatcher-configuration.md)
+   + [JavaDocs da API AEM SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
 + Depuração AEM{#debugging}
    + Depuração do SDK AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
