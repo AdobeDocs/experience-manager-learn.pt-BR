@@ -4,9 +4,9 @@ description: Uma coleção de tutoriais para Adobe Experience Manager (AEM) como
 sub-product: sites, gerenciador de nuvem, fundação, ativos
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '275'
 ht-degree: 8%
 
 ---
@@ -20,9 +20,13 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 
 ## Novidades
 
-* **[Autenticação baseada em token (Tutorial)](../headless-tutorial/authentication/overview.md)**
+* **[Autenticação baseada em token (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *Saiba como usar a autenticação baseada em token para interagir com o AEM como Cloud Service por HTTP*
+
+* **[GraphQL sem cabeçalho (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *Saiba como usar AEM APIs GraphQL para potencializar experiências em um aplicativo externo.*
 
 * **[Importação em massa (Vídeo)](./migration/bulk-import.md)**
 
@@ -34,12 +38,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 
 * **[Extensibilidade de microserviços do asset compute (Tutorial)](./asset-compute/overview.md)**
 
-   *Saiba como desenvolver funcionários de Asset computes para gerar representações de ativos personalizados*
-
-* **[Configuração do acesso ao AEM como Cloud Service (Tutorial)](./accessing/overview.md)**
-
-   *Saiba como configurar usuários do IMS no Adobe Admin Console para que possam acessar AEM*
-
+   *Saiba como desenvolver funcionários de Assets compute para gerar representações de ativos personalizados*
 
 ## Separações de Pessoal
 
