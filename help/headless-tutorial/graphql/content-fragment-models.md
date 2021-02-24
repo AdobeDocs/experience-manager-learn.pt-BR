@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -133,13 +133,13 @@ Em seguida, crie um novo modelo para um **Contributor**, que é o modelo de dado
 
 ## Ativar o modelo do contribuidor
 
-Os Modelos de fragmento de conteúdo assumem como padrão um estado **Draft** quando criados pela primeira vez. Isso permite que os usuários refinem o Modelo de fragmento de conteúdo **antes de** permitindo que os autores o usem. Lembre-se de que modificar o **Nome da propriedade** de um campo no modelo altera o schema de dados subjacente e pode ter efeitos descendentes significativos nos fragmentos existentes e aplicativos externos. É recomendável planejar cuidadosamente a convenção de nomenclatura usada para **Nome da propriedade** dos campos.
+Os Modelos de fragmento de conteúdo precisam estar **Ativados** antes que os autores de conteúdo possam usá-los. É possível **Desativar** um Modelo de fragmento de conteúdo, proibindo assim que os autores o usem. Lembre-se de que modificar o **Nome da propriedade** de um campo no modelo altera o schema de dados subjacente e pode ter efeitos descendentes significativos nos fragmentos existentes e aplicativos externos. É recomendável planejar cuidadosamente a convenção de nomenclatura usada para **Nome da propriedade** dos campos antes de ativar o Modelo de fragmento de conteúdo para usuários.
 
-1. Observe que o modelo **Contributor** está atualmente em um estado **Rascunho**.
+1. Verifique se o modelo **Contributor** está atualmente em um estado **Enabled**.
 
-1. Ative o **Modelo do contribuidor** passando o mouse sobre o cartão e clicando no ícone **Ativar**:
+   ![Modelo de contribuidor habilitado](assets/content-fragment-models/enable-contributor-model.png)
 
-   ![Ativar o modelo do contribuidor](assets/content-fragment-models/enable-contributor-model.png)
+   É possível alternar o estado de um Modelo de fragmento de conteúdo passando o mouse sobre o cartão e clicando no ícone **Desativar** / **Ativar**.
 
 ## Parabéns! {#congratulations}
 
