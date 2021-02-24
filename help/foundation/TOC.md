@@ -5,10 +5,10 @@ user-guide-description: 'Uma coleção de vídeos e tutoriais com os fundamentos
 sub-product: fundação
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 19%
+source-wordcount: '147'
+ht-degree: 21%
 
 ---
 
@@ -46,6 +46,5 @@ ht-degree: 19%
 + Fluxo de trabalho {#workflow}
    + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
    + [Usar gerenciamento de fluxo de trabalho](./workflow/use-workflow-management.md)
-   + [Usar a Visualização de calendário com AEM Projetos e Caixa de entrada](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [Usar a Caixa de entrada](./workflow/use-the-inbox.md)
 
