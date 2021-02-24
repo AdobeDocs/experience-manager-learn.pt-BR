@@ -1,35 +1,24 @@
 ---
-title: Usar a Caixa de entrada no AEM
+title: Como usar a Caixa de entrada no AEM
 description: AEM caixa de entrada facilita maior colaboração e visibilidade em tarefas e fluxo de trabalho.
-version: 6.3, 6.4, 6.5
-feature: inbox
-topics: collaboration, governance
-activity: use
-audience: author, analyst
-doc-type: feature video
+version: 6.3, 6.4, 6.5, cloud-service
+topic: Colaboração
+feature: Caixa de entrada
+role: Praticante de negócios
+level: Intermediário
+kt: 159
+thumbnail: 16827.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 0%
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
 
 # Uso da Caixa de entrada no AEM
 
-AEM caixa de entrada facilita maior colaboração e visibilidade em tarefas e fluxo de trabalho.
+AEM Caixa de entrada facilita maior colaboração e visibilidade em tarefas e fluxo de trabalho. A Visualização Calendário da Caixa de entrada rastreia projetos e tarefas em uma visualização baseada em tempo para facilitar o gerenciamento e o agendamento do projeto. Com a visualização do calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejados, vencidos e em breve.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827/?quality=12&learn=on)
-
-Este vídeo aborda os destaques da Caixa de entrada AEM.
-
-* Colunas da caixa de entrada
-* Itens de trabalho de tarefa e fluxo de trabalho
-* Gerenciamento de tarefas (editar, atribuir, exibir conteúdo associado)
-* Gerenciamento de itens de trabalho (concluído, recuo, delegado, comentário)
-* Console de informações do fluxo de trabalho
-* Criação de tarefas ad-hoc
-* Tarefa e visibilidade do item de trabalho
-* [!DNL Inbox] e  [!DNL Omnisearch] integração
-* [!DNL Inbox] e  [!DNL AEM Projects] integração
