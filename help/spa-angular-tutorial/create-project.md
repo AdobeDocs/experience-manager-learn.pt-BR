@@ -1,6 +1,6 @@
 ---
-title: Projeto do editor SPA | Introdução ao Editor SPA AEM e ao Angular
-description: Saiba como usar um projeto Adobe Experience Manager (AEM) Maven como ponto de partida para um aplicativo Angular integrado ao AEM SPA Editor.
+title: Projeto do editor SPA | Introdução ao AEM SPA Editor e Angular
+description: Saiba como usar um projeto Adobe Experience Manager (AEM) Maven como ponto de partida para um aplicativo de Angular integrado ao AEM SPA Editor.
 sub-product: sites
 feature: maven-archetype
 topics: development
@@ -13,7 +13,7 @@ thumbnail: 5309-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1110'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Projeto do Editor SPA {#create-project}
 
-Saiba como usar um projeto Adobe Experience Manager (AEM) Maven como ponto de partida para um aplicativo Angular integrado ao AEM SPA Editor.
+Saiba como usar um projeto Adobe Experience Manager (AEM) Maven como ponto de partida para um aplicativo de Angular integrado ao AEM SPA Editor.
 
 ## Objetivo
 
@@ -30,9 +30,9 @@ Saiba como usar um projeto Adobe Experience Manager (AEM) Maven como ponto de pa
 
 ## O que você vai criar
 
-Neste capítulo, um novo projeto AEM será implantado, com base no [AEM Project Archetype](https://github.com/adobe/aem-project-archetype). O projeto AEM será inicializado com um ponto de partida muito simples para o SPA Angular. O projeto utilizado neste capítulo servirá de base para a implementação da SPA da WKND e será desenvolvido em futuros capítulos.
+Neste capítulo, um novo projeto AEM será implantado, com base no [AEM Project Archetype](https://github.com/adobe/aem-project-archetype). O projeto AEM será inicializado com um ponto de partida muito simples para o SPA do Angular. O projeto utilizado neste capítulo servirá de base para a implementação da SPA da WKND e será desenvolvido em futuros capítulos.
 
-![Projeto de Início Angular SPA WKND](./assets/create-project/what-you-will-build.png)
+![Projeto inicial de Angular SPA WKND](./assets/create-project/what-you-will-build.png)
 
 *Uma mensagem clássica do Hello World.*
 
@@ -79,7 +79,7 @@ Há várias opções para criar um projeto Maven Multi-module para AEM. Este tut
    | Propriedade | Valor |
    |-----------------|---------------------------------------|
    | aemVersion | nuvem |
-   | appTitle | WKND SPA Angular |
+   | appTitle | Angular SPA WKND |
    | appId | wknd-spa-angular |
    | groupId | com.adobe.aem.guides |
    | fronendModule | angular |
@@ -88,7 +88,7 @@ Há várias opções para criar um projeto Maven Multi-module para AEM. Este tut
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular`. Isso instrui o AEM Project Archetype a inicializar o projeto com uma base de código angular [para ser usada com o AEM SPA Editor.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)
+   > Observe a propriedade `frontendModule=angular`. Isso instrui o AEM Project Archetype a inicializar o projeto com uma base [código de Angular ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o AEM SPA Editor.
 
 ## Criar o projeto
 
@@ -192,7 +192,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
    ...
    ```
 
-   `clientlib-angular.min.js` é o SPA Angular carregado na página e responsável pela renderização do conteúdo.
+   `clientlib-angular.min.js` é o SPA de Angular que é carregado na página e responsável pela renderização do conteúdo.
 
    *De onde vem o conteúdo?*
 
