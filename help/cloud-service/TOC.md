@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: serviço em nuvem
 team: TM
 translation-type: tm+mt
-source-git-commit: c7b3a6e408e46338a6a540c6403601be8c0893e2
+source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 25%
@@ -42,7 +42,7 @@ ht-degree: 25%
       + [Analisar resultados do teste](./cloud-manager/devops/analyze-test-results.md)
       + [Configurações do Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [APIs do Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
-+ Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-setup}
++ Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-set-up}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
    + [Tempo de execução de AEM local](./local-development-environment/aem-runtime.md)
