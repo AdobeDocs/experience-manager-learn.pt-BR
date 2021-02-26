@@ -1,26 +1,22 @@
 ---
-title: Impulsionar pesquisa
-description: Uma análise aprofundada da otimização da pesquisa do AEM Assets e como ela funciona no contexto mais amplo da AEM.
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
+title: O que é o Search Boost no AEM Assets?
+description: Saiba como adicionar palavras-chave e frases para aumentar a relevância de pesquisa de um ativo no Adobe Experience Manager.
+topic: Gerenciamento de conteúdo
+feature: 'Pesquisar  '
+role: Praticante de negócios
+level: Intermediário
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 103
+thumbnail: 16766.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a06a9ae0c57669578e1c11fa035f80583c90dd8
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 4%
+source-wordcount: '33'
+ht-degree: 15%
 
 ---
 
 
-# Pesquisar aprimoramento com metadados de ativos {#search-boost-asset}
+# Impulsionar pesquisa
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
-
-## Entendendo o incentivo à pesquisa no AEM Assets{#understanding-search-boosting-in-aem-assets}
-
-Uma análise aprofundada da otimização da pesquisa do AEM Assets e como ela funciona no contexto mais amplo da AEM.
-
->[!VIDEO](https://video.tv.adobe.com/v/16770/?quality=12&learn=on)
