@@ -20,11 +20,11 @@ ht-degree: 66%
 
 # Introdução ao AEM Sites - Tutorial do WKND {#getting-started-wknd-tutorial-develop}
 
-+ [Visão geral do tutorial da WKND](overview.md)
++ [Visão geral do tutorial WKND](overview.md)
 + [1 - Configuração do projeto](project-setup.md)
 + [2 - Noções básicas sobre componentes](component-basics.md)
 + [3 - Páginas e modelos](pages-templates.md)
-+ [4 - Bibliotecas do cliente](client-side-libraries.md)
-+ [5 - Sistema de estilo](style-system.md)
++ [4 - Bibliotecas do lado do cliente](client-side-libraries.md)
++ [5 - Sistema de estilos](style-system.md)
 + [6 - Componente personalizado](custom-component.md)
 + [7 - Teste de unidade](unit-testing.md)
