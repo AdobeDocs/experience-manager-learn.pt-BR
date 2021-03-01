@@ -20,9 +20,9 @@ ht-degree: 71%
 # Introdução ao Editor de SPA no AEM e React {#spa-react-tutorial}
 
 + [Visão geral](overview.md)
-+ [Projeto do editor SPA](create-project.md)
++ [Projeto do SPA Editor](create-project.md)
 + [Integrar o SPA](integrate-spa.md)
-+ [Mapear componentes SPA](map-components.md)
-+ [Navegação e roteamento](navigation-routing.md)
++ [Mapear componentes do SPA](map-components.md)
++ [Navegação e encaminhamento](navigation-routing.md)
 + [Componente personalizado](custom-component.md)
 + [Estender componente](extend-component.md)
