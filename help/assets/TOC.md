@@ -19,24 +19,24 @@ ht-degree: 32%
 
 + Configuração{#configuring}
    + [Pastas de linha de base](configuring/baseline-folders.md)
-   + [Permissões da linha de base](configuring/baseline-permissions.md)
+   + [Permissões de linha de base](configuring/baseline-permissions.md)
    + [Marcação com tags](configuring/tagging.md)
    + [Esquemas de metadados](configuring/metadata-schemas.md)
    + [Perfis de metadados](configuring/metadata-profiles.md)
-   + [Schemas de pastas de metadados](configuring/metadata-folder-schemas.md)
+   + [Esquemas da pasta de metadados](configuring/metadata-folder-schemas.md)
    + [Painel de pesquisa do administrador de ativos](configuring/assets-admin-search-rail.md)
    + [Processamento de perfis](configuring/processing-profiles.md)
-   + [Workflows de start automático](configuring/auto-start-workflows.md)
+   + [Workflows de início automático](configuring/auto-start-workflows.md)
 
 + Criação{#authoring}
    + [Navegação](./authoring/navigation.md)
    + [Operações básicas](./authoring/basic-operations.md)
    + [Metadados](./authoring/metadata.md)
    + [Representações](./authoring/renditions.md)
-   + [Relacionar e não relacionar](./authoring/relate-unrelate.md)
+   + [Relacionar e Não Relacionar](./authoring/relate-unrelate.md)
 
 + Colaboração{#collaboration}
-   + [Linha do tempo e Caixa de entrada](./collaboration/timeline-and-inbox.md)
+   + [Linha do tempo e caixa de entrada](./collaboration/timeline-and-inbox.md)
    + [Comentários e anotações](./collaboration/comments-and-annotations.md)
    + [Fazer check-in e check-out](./collaboration/check-in-and-check-out.md)
    + [Versões](./collaboration/versions.md)
@@ -66,26 +66,26 @@ ht-degree: 32%
    + [Publicar ativos](./sharing/publish.md)
    + [Brand Portal](./sharing/brand-portal.md)
    + Compartilhamento de ativos{#assets-share}
-      + [Commons de compartilhamento de ativos](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Configurar o Asset Share Commons em AEM locais](./sharing/asset-share-commons-technical-video-setup.md)
-      + [Comuns de compartilhamento de ativos do Theming](./sharing/asset-share-commons-feature-video-theming.md)
+      + [Compartilhamento de ativos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
+      + [Configurar o Asset Share Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Theming Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
    + [Connected Assets](./sharing/connected-assets.md)
 
-+ Integração com Workflows criativos{#creative-workflows}
-   + [Aplicativo para desktop AEM](./creative-workflows/aem-desktop-app.md)
++ Integração com fluxos de trabalho criativos{#creative-workflows}
+   + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link{#adobe-asset-link}
-   + [Link do ativo do Access Adobe](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Acessar o Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Visão geral do painel](./adobe-asset-link/panel-overview.md)
    + [Arquivos e coleções](./adobe-asset-link/files-and-collections.md)
-   + [Baixar e carregar](./adobe-asset-link/download-and-upload.md)
+   + [Download e upload](./adobe-asset-link/download-and-upload.md)
    + [Check-in Check-out](./adobe-asset-link/check-in-check-out.md)
    + [Controle de versão e comentários](./adobe-asset-link/file-versioning-and-comments.md)
    + [Inserir cópia](./adobe-asset-link/place-copy.md)
    + [Local vinculado](./adobe-asset-link/place-linked.md)
-   + [Somente para disposições (FPO)](./adobe-asset-link/for-placement-only.md)
+   + [Somente para inserções (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Pesquisa de ativos](./adobe-asset-link/asset-search.md)
 
 + Dynamic Media{#dynamic-media}
@@ -99,12 +99,12 @@ ht-degree: 32%
    + [Nitidez da imagem](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
    + [Gerenciamento de cores](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + [Espectadores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
-   + [Visualizadores de imagem panorâmicos e verticais](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
-   + [Visualizadores com Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
-   + [Aplicativo Dynamic Media Classic Desktop](dynamic-media/dynamic-media-classic-desktop-application.md)
+   + [Visualizadores de imagens panorâmica e vertical](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
+   + [Visualizadores com o Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
+   + [Aplicativo de desktop do Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Vídeo de corte inteligente da Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
-   + [Componentes principais Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+   + [Vídeo de recorte inteligente do Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
 + Tradução {#translation}
    + [Tradução do arquivo de origem](translation/source-file-translation-feature-video-use.md)
@@ -115,8 +115,8 @@ ht-degree: 32%
    + [Noções básicas sobre modelos de ativos](asset-templates/asset-templates-tutorial-understand.md)
    + [Uso de modelos de ativos](asset-templates/asset-templates-feature-video-use.md)
    + [Configurar modelos de ativos](asset-templates/asset-templates-technical-video-setup.md)
-   + [Usando catálogos de ativos](asset-templates/asset-catalog-template-feature-video-use.md)
+   + [Uso de catálogos de ativos](asset-templates/asset-catalog-template-feature-video-use.md)
 
 + Implantação{#deployment}
-   + [Multilenidade e desenvolvimento simultâneo](deployment/multitenancy-concurrent-article-understand.md)
+   + [Multilocação e desenvolvimento simultâneo](deployment/multitenancy-concurrent-article-understand.md)
 
