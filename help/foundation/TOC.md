@@ -17,34 +17,34 @@ ht-degree: 21%
 
 + [Visão geral](./overview.md)
 + Administração {#administration}
-   + [Entenda os motivos para atualizar AEM](./administration/understand-reasons-to-upgrade.md)
-   + [Use oak-run.jar para gerenciar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
-   + [Usar a limpeza de revisão online](./administration/use-online-revision-clean-up.md)
-   + [Use o Painel Visão geral do sistema](./administration/use-the-system-overview-dashboard.md)
+   + [Entenda os motivos para atualizar o AEM](./administration/understand-reasons-to-upgrade.md)
+   + [Usar o oak-run.jar para gerenciar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
+   + [Usar a Limpeza de Revisão Online](./administration/use-online-revision-clean-up.md)
+   + [Usar o painel Visão geral do sistema](./administration/use-the-system-overview-dashboard.md)
 + Autenticação {#authentication}
    + [Autenticação OAuth](authentication/oauth-code-sample-develop.md)
    + [Configurar chaves públicas/privadas para usar com o Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
-   + [Compreensão da autenticação](authentication/authentication-support-article-understand.md)
-   + [Compreender a autenticação IMS no AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
+   + [Noções básicas sobre autenticação](authentication/authentication-support-article-understand.md)
+   + [Entender a autenticação IMS no AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
-   + [Saiba mais sobre o Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
-   + [Usar o pipeline CI/CD no Gerenciador da Adobe Cloud](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [Entender o Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
+   + [Usar o pipeline de CI/CD no Adobe Cloud Manager](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
 + Desenvolvimento {#development}
-   + [Desenvolver Exportadores de Modelos Sling](./development/develop-sling-model-exporter.md)
-   + [Configurar um Ambiente local de desenvolvimento de AEM](./development/set-up-a-local-aem-development-environment.md)
-   + [Configurar inclusão dinâmica do Sling](./development/set-up-sling-dynamic-include.md)
+   + [Desenvolver exportadores de modelo do Sling](./development/develop-sling-model-exporter.md)
+   + [Configurar um Ambiente de desenvolvimento do AEM local](./development/set-up-a-local-aem-development-environment.md)
+   + [Configurar Sling Dynamic Include](./development/set-up-sling-dynamic-include.md)
    + [Entenda as práticas recomendadas da API Java](./development/understand-java-api-best-practices.md)
-   + [Entender o Exportador do Modelo Sling](./development/understand-sling-model-exporter.md)
+   + [Entender o Exportador de Modelo do Sling](./development/understand-sling-model-exporter.md)
 + Projetos {#projects}
-   + [Desenvolver projetos AEM](./projects/develop-aem-projects.md)
-   + [Usar páginas-mestre do projeto](./projects/use-project-masters.md)
+   + [Desenvolver projetos do AEM](./projects/develop-aem-projects.md)
+   + [Usar mestres do projeto](./projects/use-project-masters.md)
 + Segurança {#security}
-   + [Notificação de segurança da AEM (novembro de 2018)](./security/aem-security-notification-2018-11.md)
-   + [Desenvolver para o CORS (Cross-Origem Resource Sharing, compartilhamento de recursos entre várias empresas)](./security/develop-for-cross-origin-resource-sharing.md)
-   + [Compreender o CORS (Cross-Origem Resource Sharing, compartilhamento de recursos em várias )](./security/understand-cross-origin-resource-sharing.md)
+   + [Notificação de segurança do AEM (novembro de 2018)](./security/aem-security-notification-2018-11.md)
+   + [Desenvolver para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos de várias origens)](./security/develop-for-cross-origin-resource-sharing.md)
+   + [Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/understand-cross-origin-resource-sharing.md)
    + [Usar o Assistente de SSL](./security/use-the-ssl-wizard.md)
 + Fluxo de trabalho {#workflow}
-   + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
+   + [Usar o editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
    + [Usar gerenciamento de fluxo de trabalho](./workflow/use-workflow-management.md)
    + [Usar a Caixa de entrada](./workflow/use-the-inbox.md)
 
