@@ -1,19 +1,16 @@
 ---
 title: Configuração do OKTA com o AEM
 description: Entender várias configurações para usar o logon único usando o okta
-feature: Formulários adaptáveis
+feature: administração
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.5
-topic: Administração
-role: Administrador
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
