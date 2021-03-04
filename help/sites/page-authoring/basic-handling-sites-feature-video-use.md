@@ -1,9 +1,9 @@
 ---
 title: Manuseio básico no AEM Sites
 seo-title: Criar uma nova página no Adobe Experience Manager Sites
-description: O vídeo a seguir fornece uma visão geral da manipulação básica ao usar o ambiente do autor AEM. Usa o console Sites como base.
-seo-description: O vídeo a seguir fornece uma visão geral da manipulação básica ao usar o ambiente do autor AEM. Usa o console Sites como base.
-feature: page-editor, template-editor
+description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de criação do AEM. Usa o console Sites como base.
+seo-description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de criação do AEM. Usa o console Sites como base.
+feature: Editor de páginas, modelos editáveis
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,10 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 26760a76cfa523d28399c8e44c8db070cac49496
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '379'
 ht-degree: 55%
 
 ---
@@ -22,11 +25,11 @@ ht-degree: 55%
 
 # Interface do usuário e navegação do AEM Sites {#basic-handling-aem-sites}
 
-O vídeo a seguir fornece uma visão geral da manipulação básica ao usar o ambiente do autor AEM. Usa o console Sites como base.
+O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de criação do AEM. Usa o console Sites como base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
-Neste vídeo, os seguintes recursos são abordados:
+Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
 * Interface habilitada para toque
 * O painel Navegação global consiste em :
@@ -34,7 +37,7 @@ Neste vídeo, os seguintes recursos são abordados:
 
       | Console | Propósito |
       |---|---|
-      | Ativos | Esses consoles permitem importar e gerenciar ativos digitais, como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por qualquer site em execução na mesma instância AEM | Communities | Este console permite criar e gerenciar os sites da comunidade para a participação e capacitação | Commerce | Isso permite que você gerencie produtos, catálogos de produtos e pedidos relacionados aos seus sites de Comércio |
+      | Ativos | Esses consoles permitem importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM | Communities | Este console permite criar e gerenciar os sites da comunidade para a participação e capacitação | Commerce | Isso permite gerenciar produtos, catálogos de produtos e pedidos relacionados aos seus sites de Comércio |
       | Fragmentos de experiência | Um fragmento de experiência é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências |
       | Forms | Este console permite criar, gerenciar e processar os formulários e documentos |
       | Personalização | Esse console fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas |
@@ -48,7 +51,7 @@ Neste vídeo, os seguintes recursos são abordados:
 * Notificações
 * Propriedades do usuário
 * Seletor de painéis
-* visualizações do console do site AEM
+* Exibições do console do site do AEM
    * Exibição de lista  
    * Exibição de coluna
    * Exibição de cartão
@@ -60,5 +63,5 @@ Neste vídeo, os seguintes recursos são abordados:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Edição da documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Editar a documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [Guia de início rápido para a criação de páginas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
