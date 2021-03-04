@@ -1,33 +1,37 @@
 ---
-title: Introdução ao AEM sem cabeçalho - Serviços de conteúdo
+title: Introdução ao AEM Headless - Serviços de conteúdo
 description: Um tutorial completo que ilustra como criar e expor conteúdo usando o AEM Headless.
+feature: '"Fragmentos de conteúdo, APIs"'
+topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 9%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
 
-# Introdução ao AEM Headless - Content Services
+# Introdução ao AEM Headless - Serviços de conteúdo
 
-Um tutorial completo que ilustra como criar e expor conteúdo usando AEM e consumido por um aplicativo móvel nativo, em um cenário de CMS sem cabeçalho.
+Um tutorial completo que ilustra como criar e expor conteúdo usando o AEM e consumido por um aplicativo móvel nativo, em um cenário de CMS sem cabeçalho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12&learn=on)
 
-Este tutorial explora como AEM Content Services pode ser usado para potencializar a experiência de um aplicativo móvel que exibe informações do Evento (música, desempenho, arte etc.) que é preparado pela equipe da WKND.
+Este tutorial explica como os AEM Content Services podem ser usados para potencializar a experiência de um aplicativo móvel que exibe informações do evento (música, desempenho, arte, etc.) que é preparado pela equipe da WKND.
 
 Este tutorial abordará os seguintes tópicos:
 
-* Criar conteúdo que represente um Evento usando fragmentos de conteúdo
-* Defina um ponto final do AEM Content Services usando os modelos e páginas do AEM Sites que expõem os dados do Evento como JSON
-* Saiba como AEM componentes principais do WCM podem ser usados para permitir que os profissionais de marketing criem pontos de extremidade JSON
-* Consumir AEM Content Services JSON de um aplicativo móvel
-   * O uso do Android ocorre porque ele tem um emulador entre plataformas que todos os usuários (Windows, macOS e Linux) deste tutorial podem usar para executar o aplicativo nativo.
+* Criar conteúdo que represente um evento usando Fragmentos de conteúdo
+* Defina um ponto de extremidade dos serviços de conteúdo do AEM usando modelos e páginas do AEM Sites que expõem os dados do evento como JSON
+* Explore como os Componentes principais do WCM AEM podem ser usados para permitir que os profissionais de marketing criem pontos finais JSON
+* Consumir o JSON do AEM Content Services de um aplicativo móvel
+   * O uso do Android é porque ele tem um emulador de plataforma cruzada que todos os usuários (Windows, macOS e Linux) deste tutorial podem usar para executar o aplicativo nativo.
 
-## Projeto GitHub
+## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis nos [AEM Guias - Projeto GitHub do WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
+O código-fonte e os pacotes de conteúdo estão disponíveis nos [Guias do AEM - Projeto GitHub Móvel WKND](https://github.com/adobe/aem-guides-wknd-mobile).
 
 Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
