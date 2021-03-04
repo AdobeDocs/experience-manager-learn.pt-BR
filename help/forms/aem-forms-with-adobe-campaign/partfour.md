@@ -1,32 +1,35 @@
 ---
-title: Criar Perfil de Campanha usando o modelo de dados de formulário
-seo-title: Criar Perfil de Campanha usando o modelo de dados de formulário
-description: Etapas envolvidas na criação do Adobe Campaign Standard perfil usando o AEM Forms Form Data Model
-seo-description: Etapas envolvidas na criação do Adobe Campaign Standard perfil usando o AEM Forms Form Data Model
+title: Criar perfil de campanha usando modelo de dados de formulário
+seo-title: Criar perfil de campanha usando modelo de dados de formulário
+description: Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
+seo-description: Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
 uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: adaptive-forms, form-data-model
+feature: Serviço de saída
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 3%
+source-wordcount: '452'
+ht-degree: 4%
 
 ---
 
 
-# Criar Perfil de Campanha usando o Modelo de Dados de Formulário {#create-campaign-profile-using-form-data-model}
+# Criar perfil de campanha usando o modelo de dados de formulário {#create-campaign-profile-using-form-data-model}
 
-Etapas envolvidas na criação do Adobe Campaign Standard perfil usando o AEM Forms Form Data Model
+Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
 
 ## Criar autenticação personalizada {#create-custom-authentication}
 
-Ao criar a Fonte de Dados com o arquivo swagger, a AEM Forms oferece suporte aos seguintes tipos de autenticação
+Ao criar a Fonte de Dados com o arquivo swagger, o AEM Forms oferece suporte aos seguintes tipos de autenticação:
 
 * Nenhum
 * OAuth 2.0
@@ -34,15 +37,15 @@ Ao criar a Fonte de Dados com o arquivo swagger, a AEM Forms oferece suporte aos
 * Chave da API
 * Autenticação personalizada
 
-![campaignfdm](assets/campaignfdm.gif)
+![campaingfdm](assets/campaignfdm.gif)
 
-Teremos que usar a autenticação personalizada para fazer chamadas REST para a Adobe Campaign Standard.
+Teremos que usar a autenticação personalizada para fazer chamadas REST para o Adobe Campaign Standard.
 
-Para usar a autenticação personalizada, teremos que desenvolver um componente OSGi que implemente a interface IAuthentication
+Para usar a autenticação personalizada, teremos que desenvolver um componente OSGi que implemente a interface de autenticação IAuthentication
 
-O método getAuthDetails precisa ser implementado. Este método retornará o objeto AuthenticationDetails. Este objeto AuthenticationDetails terá os cabeçalhos HTTP necessários definidos para fazer a chamada REST API para a Adobe Campaign.
+O método getAuthDetails precisa ser implementado. Este método retornará o objeto AuthenticationDetails. Este objeto AuthenticationDetails terá o conjunto de cabeçalhos HTTP necessário para fazer a chamada da API REST para o Adobe Campaign.
 
-A seguir está o código usado na criação da autenticação personalizada. O método getAuthDetails faz todo o trabalho. Criamos um objeto AuthenticationDetails. Em seguida, adicionamos os HttpHeaders apropriados a esse objeto e retornamos esse objeto.
+Este é o código usado na criação da autenticação personalizada. O método getAuthDetails faz todo o trabalho. Criamos o objeto AuthenticationDetails . Em seguida, adicionamos os HttpHeaders apropriados a esse objeto e retornamos esse objeto.
 
 ```java
 package aemfd.campaign.core;
@@ -107,28 +110,28 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 ## Criar fonte de dados {#create-data-source}
 
-A primeira etapa é criar o arquivo swagger. O arquivo swagger define a REST API que será usada para criar um perfil no Adobe Campaign Standard. O arquivo swagger define os parâmetros de entrada e de saída da REST API.
+O primeiro passo é criar o arquivo swagger. O arquivo swagger define a REST API, que será usada para criar um perfil no Adobe Campaign Standard. O arquivo do swagger define os parâmetros de entrada e os parâmetros de saída da API REST.
 
-Uma fonte de dados é criada usando o arquivo swagger. Ao criar a Fonte de Dados, você pode especificar o tipo de autenticação. Nesse caso, usaremos autenticação personalizada para autenticar no Adobe Campaign. O código listado acima foi usado para autenticação no Adobe Campaign.
+Uma fonte de dados é criada usando o arquivo swagger. Ao criar a Fonte de Dados, é possível especificar o tipo de autenticação. Nesse caso, usaremos autenticação personalizada para autenticar no Adobe Campaign. O código listado acima foi usado para autenticar no Adobe Campaign.
 
-O arquivo de amostra swagger é fornecido a você como parte do ativo relacionado a este artigo.**Certifique-se de alterar o host e o basePath no arquivo swagger para que correspondam à sua instância ACS**
+O arquivo de troca de amostras é fornecido a você como parte do ativo relacionado a este artigo.**Certifique-se de alterar o host e o basePath no arquivo swagger para corresponder à instância do ACS**
 
-## Teste a solução {#test-the-solution}
+## Testar a solução {#test-the-solution}
 
 Para testar a solução, siga as seguintes etapas:
-* [Siga as etapas descritas aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Baixe e descompacte este arquivo para obter o arquivo swagger](assets/create-acs-profile-swagger-file.zip)
+* [Siga as etapas conforme descrito aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Baixe e descompacte este arquivo para obter o arquivo do swagger](assets/create-acs-profile-swagger-file.zip)
 * Criar fonte de dados usando o arquivo swagger
-Criar modelo de dados de formulário e baseá-lo na fonte de dados criada na etapa anterior
-* Crie um formulário adaptável com base no Modelo de dados de formulário criado na etapa anterior.
-* Arraste e solte os seguintes elementos da guia fontes de dados na guia Formulário adaptativo
+Criar Modelo de Dados de Formulário e baseá-lo na Fonte de Dados criada na etapa anterior
+* Crie um formulário adaptável com base no modelo de dados de formulário criado na etapa anterior.
+* Arraste e solte os seguintes elementos da guia fontes de dados no Formulário adaptável
 
    * E-mail
    * Nome
    * Sobrenome
-   * Telefone celular
+   * Telefone móvel
 
 * Configure a ação de envio para &quot;Enviar usando o Modelo de dados de formulário&quot;.
-* Configure o Modelo de dados para enviar apropriadamente.
+* Configure o Modelo de dados para enviar adequadamente.
 * Visualizar o formulário. Preencha os campos e envie.
 * Verifique se o perfil foi criado no Adobe Campaign Standard.
