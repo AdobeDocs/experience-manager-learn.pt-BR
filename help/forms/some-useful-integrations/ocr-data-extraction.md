@@ -1,20 +1,17 @@
 ---
 title: Extração de Dados OCR
 description: Extraia dados de documentos emitidos pelo governo para preencher formulários.
-feature: Formulários com códigos de barras
+feature: integrações
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6679
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '648'
 ht-degree: 2%
 
 ---
