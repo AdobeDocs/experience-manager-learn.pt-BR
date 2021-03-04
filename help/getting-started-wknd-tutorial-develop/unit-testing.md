@@ -9,14 +9,10 @@ audience: developer
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-feature: '"APIs, Arquétipo de projeto do AEM"'
-topic: '"Gestão de conteúdo, desenvolvimento"'
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '3015'
 ht-degree: 0%
 
 ---
