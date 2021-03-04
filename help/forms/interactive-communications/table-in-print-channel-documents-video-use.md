@@ -2,20 +2,17 @@
 title: Uso do Componente de tabela no Documento de canal de impressão do AEM Forms
 seo-title: Uso do Componente de tabela no Documento de canal de impressão do AEM Forms
 description: O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 2%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
