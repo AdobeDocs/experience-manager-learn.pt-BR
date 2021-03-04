@@ -2,7 +2,7 @@
 title: Criação de um fluxo de trabalho para analisar os dados enviados
 description: Criação do modelo de fluxo de trabalho do AEM usando componentes de fluxo de trabalho do AEM Forms para analisar os dados enviados.
 sub-product: formulários
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,14 +10,11 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 6%
+source-wordcount: '142'
+ht-degree: 4%
 
 ---
 
