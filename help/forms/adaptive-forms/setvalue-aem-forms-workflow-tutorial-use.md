@@ -4,20 +4,17 @@ seo-title: Uso de setvalue no fluxo de trabalho do AEM Forms
 description: Definir valor do elemento em formulários adaptáveis e dados enviados no AEM Forms OSGI
 seo-description: Definir valor do elemento em formulários adaptáveis e dados enviados no AEM Forms OSGI
 uuid: fe431e48-f05b-4b23-94d2-95d34d863984
-feature: Formulários adaptáveis
+feature: formulários adaptáveis,fluxo de trabalho
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
