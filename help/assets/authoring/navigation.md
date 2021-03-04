@@ -1,24 +1,24 @@
 ---
 title: Navegação
-description: Explore as noções básicas para navegação no AEM Assets.
-feature: Asset Management
-topics: Content Management
-role: Business Practitioner
-level: Beginner
+description: Explore as noções básicas de navegação no AEM Assets.
+feature: Gerenciamento de ativos
+role: Profissional
+level: Iniciante
 version: cloud-service
 kt: 4305
 thumbnail: 32046.jpg
+topic: Gerenciamento de conteúdo
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '16'
-ht-degree: 12%
+source-wordcount: '23'
+ht-degree: 17%
 
 ---
 
 
 # Navegação
 
-Explore as noções básicas para navegação no AEM Assets.
+Explore as noções básicas de navegação no AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32046/?quality=12&learn=on&hidetitle=true)
