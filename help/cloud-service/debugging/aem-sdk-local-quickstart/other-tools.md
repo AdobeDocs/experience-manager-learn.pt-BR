@@ -1,31 +1,34 @@
 ---
-title: Outras ferramentas para depurar AEM SDK
-description: Várias outras ferramentas podem ajudar na depuração do AEM Início rápido local do SDK.
-feature: null
+title: Outras ferramentas para depurar o SDK do AEM
+description: Várias outras ferramentas podem ajudar na depuração da inicialização rápida local do SDK do AEM.
+feature: Ferramentas do desenvolvedor
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante, Intermediário
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '339'
+ht-degree: 5%
 
 ---
 
 
-# Outras ferramentas para depurar AEM SDK
+# Outras ferramentas para depurar o SDK do AEM
 
-Uma variedade de outras ferramentas pode ajudar na depuração do aplicativo no início rápido local do SDK do AEM.
+Várias outras ferramentas podem ajudar na depuração do seu aplicativo na inicialização rápida local do SDK do AEM.
 
 ## CRXDE Lite
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-O CRXDE Lite é uma interface baseada na Web para interagir com o JCR, AEM repositório de dados. O CRXDE Lite oferece total visibilidade sobre o JCR, incluindo nós, propriedades, valores de propriedade e permissões.
+O CRXDE Lite é uma interface baseada na Web para interagir com o JCR, o repositório de dados do AEM. O CRXDE Lite oferece visibilidade total sobre o JCR, incluindo nós, propriedades, valores de propriedade e permissões.
 
 O CRXDE Lite está localizado em:
 
@@ -36,30 +39,30 @@ O CRXDE Lite está localizado em:
 
 ![Explicar consulta](./assets/other-tools/explain-query.png)
 
-Explique a ferramenta baseada na Web do Query AEM início rápido local do SDK, que fornece insights importantes sobre como AEM interpreta e executa query, e uma ferramenta inestimável para garantir que os query estejam sendo executados de maneira eficiente pela AEM.
+Explique a ferramenta baseada na Web de Query no início rápido local do SDK do AEM, que fornece informações importantes sobre como o AEM interpreta e executa consultas, e uma ferramenta inestimável para garantir que as consultas estejam sendo executadas de maneira eficiente pelo AEM.
 
-O Query de explicação está localizado em:
+Explicar Consulta está localizado em:
 
-+ Ferramentas > Diagnóstico > Desempenho do Query > Guia Explicar o Query
-+ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > Guia Explicar Query
++ Ferramentas > Diagnóstico > Desempenho da Consulta > Guia Explicar Consulta
++ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)  > Guia Explicar consulta
 
-## Depurador do QueryBuilder
+## QueryBuilder Debugger
 
-![Depurador do QueryBuilder](./assets/other-tools/query-debugger.png)
+![QueryBuilder Debugger](./assets/other-tools/query-debugger.png)
 
-O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda a depurar e entender query de pesquisa usando a sintaxe AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+O QueryBuilder Debugger é uma ferramenta baseada na Web que ajuda a depurar e entender as consultas de pesquisa usando a sintaxe [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) do AEM.
 
 O QueryBuilder Debugger está localizado em:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
-## Sling Log Tracer e AEM plug-in do Chrome
+## Sling Log Tracer e o plug-in AEM Chrome
 
-![Sling Log Tracer e AEM plug-in do Chrome](./assets/other-tools/log-tracer.png)
+![Sling Log Tracer e o plug-in AEM Chrome](./assets/other-tools/log-tracer.png)
 
-[O Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), que é fornecido com AEM início rápido local do SDK, permite o rastreamento detalhado das solicitações HTTP, expondo informações aprofundadas de depuração por solicitação. A configuração [Log Tracer OSGi deve ser configurada](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) para habilitar esse recurso.
+[O Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), que vem com o início rápido local do SDK do AEM, permite o rastreamento detalhado de solicitações HTTP, expondo informações de depuração profundas por solicitação. A configuração [Log Tracer OSGi deve ser configurada](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) para habilitar esse recurso.
 
-O plug-in de código aberto [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) para o [navegador da Web Google Chrome](https://www.google.com/chrome/), integra-se ao Log Tracer, expondo as informações de depuração diretamente nas Ferramentas de Desenvolvimento do Chrome.
+O plug-in de código aberto [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) para o [navegador Web Google Chrome](https://www.google.com/chrome/), integra-se ao Rastreador de log, expondo as informações de depuração diretamente nas Ferramentas de Desenvolvimento do Chrome.
 
-_O plug-in AEM Chrome é uma ferramenta de código aberto e o Adobe não oferece suporte para ele._
+_O plug-in AEM Chrome é uma ferramenta de código aberto e a Adobe não fornece suporte para ele._
 
