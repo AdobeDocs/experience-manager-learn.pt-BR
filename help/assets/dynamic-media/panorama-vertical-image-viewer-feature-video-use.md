@@ -1,64 +1,61 @@
 ---
-title: Usando o Panorama e o Visualizador de Imagem Vertical com o AEM Assets Dynamic Media
-seo-title: Usando o Panorama e o Visualizador de Imagem Vertical com o AEM Assets Dynamic Media
-description: Os aprimoramentos do Visualizador de mídia dinâmica no AEM 6.4 incluem a adição do Visualizador de imagem panorâmico, do Visualizador de imagem de realidade virtual panorâmica e do Visualizador de imagem vertical. O Visualizador panorâmico oferece uma maneira fácil de oferecer uma experiência envolvente e imersiva da sala, propriedade, local ou paisagem sem qualquer desenvolvimento personalizado.
-seo-description: Os aprimoramentos do Visualizador de mídia dinâmica no AEM 6.4 incluem a adição do Visualizador de imagem panorâmico, do Visualizador de imagem de realidade virtual panorâmica e do Visualizador de imagem vertical. O Visualizador panorâmico oferece uma maneira fácil de oferecer uma experiência envolvente e imersiva da sala, propriedade, local ou paisagem sem qualquer desenvolvimento personalizado.
+title: Uso do Panorama e do Visualizador de Imagem Vertical com o AEM Assets Dynamic Media
+description: Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de Imagem Panorâmica, Visualizador de Imagem de Realidade Virtual Panorâmica e Visualizador de Imagem Vertical. O Visualizador de panorâmica é uma maneira fácil de fornecer uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem, sem qualquer desenvolvimento personalizado.
 sub-product: dynamic-media
-feature: video-profiles, video-profiles, vr-360
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Perfis de vídeo, Perfis de vídeo, Vídeo 360 VR
 version: 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
 
-# Usando o Panorama e o Visualizador de Imagem Vertical com o AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Uso do Panorama e do Visualizador de Imagem Vertical com o AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Os aprimoramentos do Visualizador de mídia dinâmica no AEM 6.4 incluem a adição do Visualizador de imagem panorâmico, do Visualizador de imagem de realidade virtual panorâmica e do Visualizador de imagem vertical. O Visualizador panorâmico oferece uma maneira fácil de oferecer uma experiência envolvente e imersiva da sala, propriedade, local ou paisagem sem qualquer desenvolvimento personalizado.
+Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de Imagem Panorâmica, Visualizador de Imagem de Realidade Virtual Panorâmica e Visualizador de Imagem Vertical. O Visualizador de panorâmica é uma maneira fácil de fornecer uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem, sem qualquer desenvolvimento personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
 
 >[!NOTE]
 >
->O vídeo supõe que sua instância AEM esteja em execução no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>O Vídeo assume que a instância do AEM está sendo executada no modo Dynamic Media S7. [Instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visualizador VR panorâmico e panorâmico
 
-Uma imagem é considerada panorâmica com base em sua proporção ou palavras-chave. Por padrão, uma imagem com proporção de 2 será considerada uma imagem panorâmica. As predefinições do visualizador de imagens panorâmicas estarão disponíveis para uma pré-visualização de imagem se ela atender aos critérios acima. O critério de proporção da imagem panorâmica pode ser modificado na configuração do empresa DMS7 especificando a propriedade do duplo s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmsceno7/jcr:content. As palavras-chave são armazenadas na propriedade dc:keyword do nó de metadados do ativo. Se as palavras-chave contiverem qualquer uma das seguintes combinações:
+Uma imagem é considerada panorâmica com base em sua proporção ou palavras-chave. Por padrão, uma imagem com proporção de aspecto de 2 será considerada uma imagem panorâmica. As predefinições do visualizador de Imagem panorâmica ficarão disponíveis para uma visualização de imagem se ela atender aos critérios acima. O critério de proporção da imagem panorâmica pode ser modificado na configuração do DMS7 da empresa, especificando a propriedade dupla s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmscene7/jcr:content. As palavras-chave são armazenadas na propriedade dc:keyword do nó de metadados do ativo. Se as palavras-chave contiverem qualquer uma das seguintes combinações :
 
-* equirectangular,
-* esférico + panorâmico,
+* Retangular
+* esférico + panorâmica,
 * esférico + panorama,
 
-será considerado um ativo de Imagem panorâmica, independentemente da sua proporção.
+será considerado um ativo de Imagem panorâmica, independentemente de sua proporção.
 
 ## Visualizador de imagem vertical
 
-Com amostras horizontais, dependendo do tamanho da tela do desktop do consumidor, às vezes as amostras não ficariam visíveis até que o usuário role para baixo na página. Ao usar o visualizador de imagem vertical e colocar amostras verticais, ele garante que as amostras fiquem visíveis independentemente do tamanho da tela. Também maximiza o tamanho da imagem principal. Com amostras horizontais, foi necessário reservar espaço na página para garantir que elas tenham alta probabilidade de serem visíveis e diminuam o tamanho da imagem principal. Com um layout vertical, não é necessário se preocupar em alocar esse espaço e, portanto, pode maximizar o tamanho da imagem principal.
+Com amostras horizontais, dependendo do tamanho da tela da área de trabalho do consumidor, às vezes as amostras não ficavam visíveis até que o usuário rolasse a página para baixo. Ao usar o visualizador de imagem vertical e colocar amostras verticais, ele garante que as amostras sejam visíveis, independentemente do tamanho da tela. Também maximiza o tamanho da imagem principal. Com amostras horizontais, foi necessário reservar espaço na página para garantir que elas tenham uma alta probabilidade de serem visíveis e diminuam o tamanho da imagem principal. Com um layout vertical, não é necessário se preocupar com a alocação desse espaço e, portanto, pode maximizar o tamanho da imagem principal.
 
 <table> 
  <tbody>
   <tr>
    <td> </td>
-   <td>Visualizador Panorâmico e VR</td>
+   <td>Visualizador panorâmico e VR</td>
    <td>Visualizador de imagem vertical</td>
   </tr>
   <tr>
    <td>Modo de execução do Dynamic Media</td>
-   <td>Somente modo Scene7 do Dynamic Media</td>
+   <td>Somente Modo do Dynamic Media Scene7</td>
    <td>DMS7 e Dynamic Media</td>
   </tr>
   <tr>
    <td>Caso de uso </td>
-   <td><p>O visualizador panorâmico e o visualizador de realidade virtual fornecem aos usuários uma experiência mais envolvente. Um usuário pode dar uma olhada em um quarto de hotel mesmo antes de fazer uma reserva, ou dar uma olhada em uma propriedade de aluguel sem precisar marcar uma reunião. Um usuário pode verificar um local e muito mais possibilidades. O foco principal aqui é fornecer ao consumidor uma experiência melhor quando ele visitar seu site e eventualmente aumentar sua taxa de conversão.</p> <p> </p> </td> 
-   <td><p>O visualizador de Imagem vertical ajuda a maximizar a experiência de visualização de imagens de produtos para fornecer aos consumidores a melhor representação do produto, impulsionando a conversão e minimizando o retorno.</p> <p> </p> </td>
+   <td><p>O visualizador panorâmico e o visualizador de Realidade virtual fornecem aos usuários uma experiência mais envolvente. Um usuário pode fazer check-out de um quarto de hotel mesmo antes de fazer uma reserva ou fazer check-out de uma propriedade de aluguel sem precisar agendar um compromisso. Um usuário pode verificar um local e muitas outras possibilidades. O foco principal aqui é fornecer ao consumidor uma melhor experiência quando ele visitar seu site e eventualmente aumentar sua taxa de conversão.</p> <p> </p> </td> 
+   <td><p>O Visualizador de imagem vertical ajuda a maximizar a experiência de visualização de imagens do produto para fornecer aos consumidores a melhor representação do produto, aumentando a conversão e minimizando as devoluções.</p> <p> </p> </td>
   </tr>
   <tr>
    <td>Disponível </td>
@@ -74,4 +71,4 @@ Com amostras horizontais, dependendo do tamanho da tela do desktop do consumidor
 
 >[!NOTE]
 >
->Os visualizadores panorâmicos funcionam com imagens panorâmicas e não devem ser usados com imagens normais.
+>Os visualizadores panorâmicos trabalham com imagens panorâmicas e não devem ser usados com imagens normais.
