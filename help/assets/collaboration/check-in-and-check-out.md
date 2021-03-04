@@ -1,27 +1,26 @@
 ---
 title: Fazer check-in e check-out
-description: Saiba como usar AEM recursos de check-in e check-out para facilitar a colaboração de vários usuários em ativos.
+description: Saiba como usar os recursos de check-in e check-out do AEM para facilitar a colaboração de vários usuários em ativos.
 sub-product: ativos
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Gerenciamento de ativos
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
+topic: Colaboração
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 1%
 
 ---
 
 
 # Fazer check-in e check-out
 
-Saiba como usar AEM recursos de check-in e check-out para facilitar a colaboração de vários usuários em ativos.
+Saiba como usar os recursos de check-in e check-out do AEM para facilitar a colaboração de vários usuários em ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048/?quality=12&learn=on&hidetitle=true)
 
