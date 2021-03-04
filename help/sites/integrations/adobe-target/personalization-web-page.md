@@ -1,7 +1,6 @@
 ---
-title: Personalização da experiência completa da página da Web
-description: Saiba como criar uma atividade de Público alvo para redirecionar suas páginas AEM do site para novas páginas usando o Adobe Target.
-feature: targeting
+title: Personalização da página da Web completa Experiência
+description: Saiba como criar uma atividade do Target para redirecionar as páginas do site do AEM para novas páginas usando o Adobe Target.
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,73 +8,76 @@ activity: use
 version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
+topic: Integrações
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
 
 
-# Personalização da experiência completa da página da Web {#personalization-fpe}
+# Personalização da página da Web completa Experiência {#personalization-fpe}
 
-Saiba como criar uma atividade para redirecionar as páginas do site hospedadas em AEM para uma nova página usando o Adobe Target.
+Saiba como criar uma atividade para redirecionar as páginas do site hospedadas no AEM para uma nova página usando o Adobe Target.
 
 ## Pré-requisitos
 
-Para personalizar as páginas completas de um site AEM, é necessário concluir a seguinte configuração:
+Para personalizar páginas completas de um site do AEM, a seguinte configuração deve ser concluída:
 
-1. [Adicionar Adobe Target ao seu site AEM](./add-target-launch-extension.md)
-1. [Acionar uma chamada do Adobe Target do Launch](./load-and-fire-target.md)
+1. [Adicionar o Adobe Target ao site do AEM](./add-target-launch-extension.md)
+1. [Acionar uma chamada do Adobe Target a partir do Launch](./load-and-fire-target.md)
 
 ## Visão geral do cenário
 
-O site da WKND reprojetou seu home page e gostaria de redirecionar seus visitantes atuais para o novo home page. Ao mesmo tempo, também saiba como o home page reprojetado ajuda a melhorar a participação e a receita do usuário. Como comerciante, você recebeu a tarefa para criar uma atividade para redirecionar os visitantes para o novo home page. Vamos explorar o home page do site da WKND e aprender a criar uma atividade usando o Adobe Target.
+O site WKND reprojetou sua página inicial e gostaria de redirecionar seus visitantes atuais da página inicial para a nova página inicial. Ao mesmo tempo, também compreenda como a página inicial reprojetada ajuda a melhorar a participação do usuário e a receita. Como comerciante, você recebeu a tarefa de criar uma atividade para redirecionar os visitantes para a nova página inicial. Vamos explorar a página inicial do site WKND e saber como criar uma atividade usando o Adobe Target.
 
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
-1. Faça logon no Adobe Target e navegue até a guia Atividade
-1. Clique no botão **Criar Atividade** e escolha **Teste A/B** atividade
+1. Faça logon no Adobe Target e navegue até a guia Atividades
+1. Clique no botão **Criar atividade** e escolha **Teste A/B** atividade
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-1. Selecione a opção **Visual Experience Composer**, forneça o URL da Atividade e clique em **Avançar**
+1. Selecione a opção **Visual Experience Composer**, forneça o URL da atividade e clique em **Avançar**
 
-   ![URL de atividade](assets/ab-test-url.png)
+   ![URL da atividade](assets/ab-test-url.png)
 
-1. O Visual Experience Composer exibe duas guias no lado esquerdo após a criação de uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência**.
+1. O Visual Experience Composer exibe duas guias do lado esquerdo depois que você cria uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista, usando o botão **Adicionar Experiência**.
 
    ![Opções de experiência](assets/experience-options.png)
 
-1. Opções de visualização disponíveis para a Experiência A e, em seguida, selecione a opção **Redirecionar para URL** e forneça um URL para o novo home page do site WKND.
+1. Exiba as opções disponíveis para a Experiência A e selecione a opção **Redirecionar para URL** e forneça um URL para a nova página inicial do Site WKND.
 
    ![URI de redirecionamento](assets/redirect-url.png)
 
-1. Renomear *Experiência A* para *Novo Home page WKND* e *Experiência B* para *Home page WKND*
+1. Renomeie *Experiência A* para *Nova Página Inicial WKND* e *Experiência B* para *Página Inicial WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-1. Clique em **Próximo** para ir para Definição de metas e manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
+1. Clique em **Next** para ir até o Targeting e manter uma alocação de tráfego manual de 50-50 entre as duas experiências.
 
    ![Direcionar](assets/targeting.png)
 
-1. Para Metas e configurações, escolha a fonte do Relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de visualização de página.
+1. Para Metas e configurações, escolha a Fonte de relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de exibição de página.
 
    ![Metas](assets/goals.png)
 
-1. Forneça um nome para sua atividade e Salvar.
-1. Ative sua atividade salva para colocar suas alterações em execução.
+1. Forneça um nome para a atividade e Salve.
+1. Ative a atividade salva para colocar as alterações em funcionamento.
 
    ![Metas](assets/activate.png)
 
-1. Abra a página do site (URL da Atividade da etapa 3) em uma nova guia e você deve ser capaz de visualização de qualquer uma das experiências (Home page WKND ou Novo Home page WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para  `us/home.html`.
+1. Abra a página do site (URL da atividade da etapa 3) em uma nova guia e você deve ser capaz de visualizar qualquer uma das experiências (Página inicial WKND ou Nova página inicial WKND) da nossa atividade de teste A/B. `us/en.html` redireciona para  `us/home.html`.
 
    ![Metas](assets/redirect-test.png)
 
 ## Resumo
 
-Como profissional de marketing, foi possível criar uma atividade para redirecionar as páginas do site hospedadas em AEM para uma nova página usando o Adobe Target.
+Como profissional de marketing, você foi capaz de criar uma atividade para redirecionar as páginas do site hospedadas no AEM para uma nova página usando o Adobe Target.
 
 ## Links de suporte
 
