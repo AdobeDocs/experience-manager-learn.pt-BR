@@ -3,20 +3,17 @@ title: AEM Forms com esquema e dados JSON
 seo-title: AEM Forms com esquema e dados JSON
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
 seo-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '138'
+ht-degree: 0%
 
 ---
 
