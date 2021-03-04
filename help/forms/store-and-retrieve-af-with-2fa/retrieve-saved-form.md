@@ -1,7 +1,7 @@
 ---
 title: Recuperar formulário adaptável salvo
 description: Servlet para renderizar o formulário adaptável com dados salvos
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,18 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 3%
 
 ---
 
 # Recuperar formulário salvo
 
-A próxima etapa é criar um servlet que renderizará o formulário adaptável com os dados salvos e seus anexos.
-O código de servlet a seguir é executado após a verificação do código OTP. Os dados do formulário adaptável e seu mapa de anexos de arquivo associado à ID exclusiva do aplicativo são obtidos do banco de dados. O objeto request é preenchido com os dados do formulário adaptável salvo e o mapa de anexos do arquivo. A solicitação é encaminhada para renderizar o formulário &quot;storeafwithattachments&quot; (anexos storeafwithenhos pré-preenchidos com os dados originais e seus anexos).
+O próximo passo é criar um servlet que renderizará o formulário adaptável com os dados salvos e seus anexos.
+O código do servlet a seguir é executado depois que o código OTP é verificado. Os dados do formulário adaptável e seu mapa de anexos de arquivo associado à ID de aplicativo exclusiva são obtidos do banco de dados. O objeto de solicitação é preenchido com os dados do formulário adaptável salvo e o mapa de anexos de arquivo. A solicitação é encaminhada para renderizar o formulário &quot;storeafwithattachment&quot; pré-preenchido com os dados originais e seus anexos.
 
 ```java
 package store.and.fetch.core.servlets;
