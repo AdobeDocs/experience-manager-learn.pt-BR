@@ -1,7 +1,7 @@
 ---
 title: Armazenar anexos de formulário
 description: Extraia os anexos do formulário e armazene em um novo local no repositório CRX.
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,20 +9,23 @@ activity: implement
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 0%
+source-wordcount: '191'
+ht-degree: 2%
 
 ---
 
 # Armazenar anexos de formulário
 
-Ao adicionar anexos a um formulário adaptável, os anexos são armazenados em um local temporário no repositório CRX. Para que nosso caso de uso funcione, precisamos armazenar os anexos de formulário em um novo local no repositório CRX.
+Ao adicionar anexos a um formulário adaptável, os anexos são armazenados em um local temporário no repositório CRX. Para que nosso caso de uso funcione, precisamos armazenar os anexos do formulário em um novo local no repositório CRX.
 
-O serviço OSGi é criado para armazenar os anexos de formulário em um novo local no repositório CRX. Um novo mapa de arquivos é criado com o novo local dos anexos no CRX e retornado ao aplicativo chamador.
-A seguir está o FileMap enviado ao servlet. A tecla é o campo de formulário adaptável e o valor é o local temporário do anexo. Em nosso servlet, extrairemos o anexo e o armazenaremos em um novo local no repositório AEM e atualizaremos o FileMap com o novo local
+O serviço OSGi é criado para armazenar os anexos do formulário em um novo local no repositório CRX. Um novo mapa de arquivos é criado com o novo local dos anexos no CRX e retornado ao aplicativo chamador.
+Veja a seguir o FileMap que é enviado para o servlet. A chave é o campo de formulário adaptável e o valor é o local temporário do anexo. Em nosso servlet, extrairemos o anexo e o armazenaremos em um novo local no repositório do AEM e atualizaremos o FileMap com o novo local
 
 ```java
 {
