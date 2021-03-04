@@ -3,15 +3,17 @@ title: Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recurs
 description: O CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos de várias origens) do Adobe Experience Manager facilita as propriedades da Web que não são do AEM para fazer chamadas do lado do cliente para o AEM, autenticadas e não autenticadas, para buscar conteúdo ou interagir diretamente com o AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fundação, serviços de conteúdo, sites
-feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
+topic: Segurança
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
