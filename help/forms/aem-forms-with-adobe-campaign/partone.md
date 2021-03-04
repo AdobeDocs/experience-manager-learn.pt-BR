@@ -1,42 +1,45 @@
 ---
-title: 'Gerando Token de acesso e token da Web JSON '
-seo-title: 'Gerando Token de acesso e token da Web JSON '
-description: Este artigo explica o código necessário para gerar JWT e o Token de acesso necessários para fazer chamadas REST para a Adobe Campaign Standard
-seo-description: Este artigo explica o código necessário para gerar JWT e o Token de acesso necessários para fazer chamadas REST para a Adobe Campaign Standard
+title: 'Geração de token da Web JSON e token de acesso '
+seo-title: 'Geração de token da Web JSON e token de acesso '
+description: Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
+seo-description: Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: adaptive-forms, form-data-model
+feature: '"Formulários adaptáveis, Modelo de dados de formulário"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 
-# Gerando o token e o Token de acesso da Web JSON {#generating-json-web-token-and-access-token}
+# Geração de token Web JSON e token de acesso {#generating-json-web-token-and-access-token}
 
-Este artigo explica o código necessário para gerar JWT e o Token de acesso necessários para fazer chamadas REST para a Adobe Campaign Standard
+Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
 
 ## Gerar o token Web JSON {#generate-json-web-token}
 
-A primeira etapa do uso da API do Adobe Campaign é gerar JWT. Existem várias amostras de código sobre como gerar JWT para ACS. Você pode seguir esta [amostra de código java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) para gerar JWT.
+A primeira etapa no uso da API do Adobe Campaign é gerar JWT. Há vários exemplos de código sobre como gerar JWT para ACS. Você pode seguir esta [amostra de código java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) para gerar JWT.
 
-Para usar a API ACS com a AEM Forms, precisamos criar JWT dentro de um pacote OSGi. O trecho de código a seguir foi usado para gerar JWT neste pacote OSGI de amostra. Os detalhes sobre a instância ACS são obtidos a partir das propriedades de configuração OSGI que são definidas conforme mostrado acima.
+Para usar a API ACS com o AEM Forms, precisamos criar JWT dentro de um pacote OSGi. O trecho de código a seguir foi usado para gerar JWT neste pacote OSGI de amostra. Os detalhes sobre a instância ACS são obtidos a partir das propriedades de configuração OSGI, que são definidas conforme mostrado acima.
 
 ![configuração](assets/campaignconfiguration.gif)
 
-**A.** Os valores mostrados aqui são valores falsos
+**A.** Os valores mostrados aqui são valores fictícios
 
-O código a seguir busca os detalhes sobre o Adobe Campaign Server na configuração OSGI. Criamos uma chave privada das linhas 80 a 104.
+O código a seguir busca os detalhes sobre o Servidor do Adobe Campaign a partir da configuração OSGI. Criamos uma chave privada das linhas 80 a 104.
 
-Quando tivermos a chave privada, criaremos o JSON Web Token.
+Depois de ter a chave privada, criamos o JSON Web Token.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -245,6 +248,6 @@ public class CampaignServiceImpl implements CampaignService {
  }
 ```
 
-## Gerar Token de acesso {#generate-access-token}
+## Gerar Token de Acesso {#generate-access-token}
 
-Depois trocamos o JWT gerado por um Token de acesso, fazendo uma chamada de POST. Esse Token de acesso será enviado como uma chave de autorização no cabeçalho HTTP para chamadas REST subsequentes
+Em seguida, trocamos o JWT gerado por um Token de acesso fazendo uma chamada POST. Esse Token de acesso será enviado como uma chave de autorização no Cabeçalho HTTP para chamadas REST subsequentes
