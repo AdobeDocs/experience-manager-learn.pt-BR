@@ -4,7 +4,7 @@ seo-title: Abrindo a interface do usuário do agente no envio do POST
 description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nessa parte, iniciaremos a interface da interface do agente para criar uma correspondência ad-hoc no envio do formulário.
 seo-description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nessa parte, iniciaremos a interface da interface do agente para criar uma correspondência ad-hoc no envio do formulário.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: comunicação interativa
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,11 +12,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 0%
+source-wordcount: '369'
+ht-degree: 1%
 
 ---
 
