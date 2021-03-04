@@ -4,7 +4,7 @@ seo-title: Adicionar tabela à seção de contribuições
 description: Esta é a parte 9 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
 seo-description: Esta é a parte 9 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
-feature: comunicação interativa
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 kt: 5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 
