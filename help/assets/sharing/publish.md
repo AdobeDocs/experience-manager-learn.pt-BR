@@ -1,28 +1,27 @@
 ---
-title: Como publicar ativos usando AEM
-description: Saiba como publicar ativos e suas execuções do autor de AEM para o editor de AEM.
+title: Como publicar ativos usando o AEM
+description: Saiba como publicar ativos e suas representações do AEM Author para AEM Publish.
 sub-product: ativos
-feature: Publishing
-topics: Content Management
-audience: author
-doc-type: feature video
-activity: use
+feature: Gerenciamento de ativos
 version: cloud-service
 kt: 330932
 thumbnail: 32194.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 1%
+source-wordcount: '58'
+ht-degree: 5%
 
 ---
 
 
 # Publicação
 
-Saiba como publicar ativos e suas execuções do autor de AEM para o editor de AEM.
+Saiba como publicar ativos e suas representações do AEM Author para AEM Publish.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330932/?quality=12&learn=on&hidetitle=true)
 
-_Certifique-se de que a implantação da AEM Assets tenha um serviço de publicação de AEM licenciado antes dos ativos de publicação._
+_Certifique-se de que a implantação do AEM Assets tenha um serviço de publicação do AEM licenciado antes de publicar ativos._
