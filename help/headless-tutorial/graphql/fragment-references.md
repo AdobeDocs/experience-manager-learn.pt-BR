@@ -1,6 +1,6 @@
 ---
-title: Modelagem avançada de dados com referências de fragmento - Introdução ao AEM sem cabeçalho - GraphQL
-description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Saiba como usar o recurso Referência de fragmento para modelagem de dados avançada e criar uma relação entre dois Fragmentos de conteúdo diferentes. Saiba como modificar um query GraphQL para incluir um campo de um modelo referenciado.
+title: Modelagem de dados avançada com referências de fragmento - Introdução ao AEM Headless - GraphQL
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Saiba como usar o recurso Referência de fragmento para modelagem de dados avançada e criar uma relação entre dois Fragmentos de conteúdo diferentes. Saiba como modificar uma consulta GraphQL para incluir um campo de um modelo referenciado.
 sub-product: ativos
 topics: headless
 version: cloud-service
@@ -10,90 +10,94 @@ audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
+feature: '"Fragmentos de conteúdo, APIs GraphQL"'
+topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
 
 
-# Modelagem avançada de dados com referências de fragmento
+# Modelagem de dados avançada com referências de fragmento
 
-É possível fazer referência a um Fragmento de conteúdo a partir de outros Fragmentos de conteúdo. Isso permite que um usuário crie modelos de dados complexos com relações entre Fragmentos.
+É possível fazer referência a um Fragmento de conteúdo a partir de outro Fragmento de conteúdo. Isso permite que um usuário crie modelos de dados complexos com relações entre Fragmentos.
 
-Neste capítulo, você atualizará o modelo da Aventura para incluir uma referência ao modelo do Contribuidor usando o campo **Referência do fragmento**. Você também aprenderá a modificar um query GraphQL para incluir campos de um modelo referenciado.
+Neste capítulo, você atualizará o modelo do Adventure para incluir uma referência ao modelo do Contributor usando o campo **Referência do fragmento**. Você também aprenderá a modificar uma consulta GraphQL para incluir campos de um modelo referenciado.
 
 ## Pré-requisitos
 
-Este é um tutorial de várias partes e presume-se que as etapas descritas nas partes anteriores foram concluídas.
+Este é um tutorial com várias partes e presume-se que as etapas descritas nas partes anteriores foram concluídas.
 
 ## Objetivos
 
 Neste capítulo, aprenderemos a:
 
-* Atualizar um Modelo de fragmento de conteúdo para usar o campo Referência do fragmento
-* Criar um query GraphQL que retorna campos de um modelo referenciado
+* Atualize um Modelo de fragmento de conteúdo para usar o campo Referência de fragmento
+* Criar uma consulta GraphQL que retorna campos de um modelo referenciado
 
 ## Adicionar uma referência de fragmento {#add-fragment-reference}
 
-Atualize o modelo de fragmento de conteúdo da Adobe para adicionar uma referência ao modelo do contribuidor.
+Atualize o Modelo de fragmento do conteúdo de empreendimento para adicionar uma referência ao modelo do contribuidor.
 
-1. Abra um novo navegador e navegue até AEM.
-1. No menu **AEM Start**, navegue até **Ferramentas** > **Ativos** > **Modelos de fragmento de conteúdo** > **Site WKND**.
-1. Abra o **Modelo de fragmento de conteúdo do Adventure**
+1. Abra um novo navegador e acesse o AEM.
+1. No menu **Início do AEM**, navegue até **Ferramentas** > **Ativos** > **Modelos de Fragmento de Conteúdo** > **Site WKND**.
+1. Abra o **Modelo de Fragmento de Conteúdo do Adventure**
 
-   ![Abra o modelo de fragmento de conteúdo da Adobe](assets/fragment-references/adventure-content-fragment-edit.png)
+   ![Abra o modelo de fragmento de conteúdo de empreendimento](assets/fragment-references/adventure-content-fragment-edit.png)
 
 1. Em **Tipos de dados**, arraste e solte um campo **Referência de fragmento** no painel principal.
 
-   ![Adicionar campo Referência do fragmento](assets/fragment-references/add-fragment-reference-field.png)
+   ![Adicionar campo de referência do fragmento](assets/fragment-references/add-fragment-reference-field.png)
 
-1. Atualize **Propriedades** para este campo com o seguinte:
+1. Atualize as **Propriedades** para este campo com o seguinte:
 
    * Renderizar como - `fragmentreference`
    * Rótulo de campo - **Colaborador de risco**
    * Nome da Propriedade - `adventureContributor`
-   * Tipo de modelo - selecione o modelo **Contributor**
+   * Tipo de modelo - Selecione o modelo **Contributor**
    * Caminho raiz - `/content/dam/wknd`
 
-   ![Propriedades de referência de fragmento](assets/fragment-references/fragment-reference-properties.png)
+   ![Propriedades de referência do fragmento](assets/fragment-references/fragment-reference-properties.png)
 
-   O nome da propriedade `adventureContributor` agora pode ser usado para fazer referência a um Fragmento de conteúdo do contribuidor.
+   O nome da propriedade `adventureContributor` agora pode ser usado para fazer referência a um Fragmento do conteúdo do colaborador.
 
 1. Salve as alterações no modelo.
 
 ## Atribuir um contribuidor a uma empresa
 
-Agora que o modelo de Fragmento de conteúdo da Aventura foi atualizado, podemos editar um fragmento existente e fazer referência a um Colaborador. Observe que a edição do modelo de Fragmento de conteúdo *afeta* quaisquer Fragmentos de conteúdo criados a partir dele.
+Agora que o modelo de Fragmento de conteúdo de empreendimento foi atualizado, podemos editar um fragmento existente e fazer referência a um Contribuinte. Observe que a edição do modelo de Fragmento de conteúdo *afeta* qualquer Fragmento de conteúdo existente criado a partir dele.
 
-1. Navegue até **Assets** > **Arquivos** > **Site WKND** > **Inglês** > **Aventuras** > **[Campo de Surfe de Bali](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
+1. Navegue até **Assets** > **Arquivos** > **Site WKND** > **Inglês** > **Aventuras** > **[Campo de Surf Bali](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
 
    ![Pasta Bali Surf Camp](assets/setup/bali-surf-camp-folder.png)
 
-1. Clique no fragmento de conteúdo **Bali Surf Camp** para abrir o Editor de fragmentos de conteúdo.
-1. Atualize o campo **Colaborador de Aventura** e selecione um Colaborador clicando no ícone de pasta.
+1. Clique no fragmento de conteúdo **Campo de navegação de bali** para abrir o Editor de fragmento de conteúdo.
+1. Atualize o campo **Adventure Contributor** e selecione um Contribuidor clicando no ícone de pasta.
 
-   ![Selecionar Stacey Roswells como contribuinte](assets/fragment-references/stacey-roswell-contributor.png)
+   ![Selecione Stacey Roswells como colaborador](assets/fragment-references/stacey-roswell-contributor.png)
 
-   *Selecionar um caminho para um fragmento de contribuinte*
+   *Selecionar um caminho para um Fragmento do colaborador*
 
-   ![caminho preenchido para contribuidor](assets/fragment-references/populated-path.png)
+   ![caminho preenchido para colaborador](assets/fragment-references/populated-path.png)
 
    Observe que somente os fragmentos criados usando o modelo **Contributor** podem ser selecionados.
 
 1. Salve as alterações no fragmento.
 
-1. Repita as etapas acima para atribuir um contribuinte a aventuras como [Yosemite Backpacking](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) e [Colorado Rock Climbing](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
+1. Repita as etapas acima para atribuir um colaborador a aventuras como [Yosemite Backpackaging](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) e [Colorado Rock Climbing](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
 
-## Fragmento de conteúdo aninhado pelo query com GraphiQL
+## Consultar fragmento de conteúdo aninhado com GraphiQL
 
-Em seguida, execute um query para uma Aventura e adicione propriedades aninhadas do modelo de Colaborador referenciado. Usaremos a ferramenta GraphiQL para verificar rapidamente a sintaxe do query.
+Em seguida, execute uma consulta para uma Aventura e adicione propriedades aninhadas do modelo de contribuidor referenciado. Usaremos a ferramenta GraphiQL para verificar rapidamente a sintaxe do query.
 
 1. Navegue até a ferramenta GraphiQL no AEM: [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html)
 
-1. Digite o seguinte query:
+1. Insira a seguinte query:
 
    ```graphql
    {
@@ -115,7 +119,7 @@ Em seguida, execute um query para uma Aventura e adicione propriedades aninhadas
    }
    ```
 
-   O query acima é para uma única Aventura pelo caminho. A propriedade `adventureContributor` faz referência ao modelo do Colaborador e, em seguida, podemos solicitar propriedades do Fragmento de conteúdo aninhado.
+   A consulta acima é para uma única Aventura pelo caminho. A propriedade `adventureContributor` faz referência ao modelo do Contribuidor e, em seguida, podemos solicitar propriedades do Fragmento de conteúdo aninhado.
 
 1. Execute o query e você deverá obter um resultado como o seguinte:
 
@@ -139,21 +143,21 @@ Em seguida, execute um query para uma Aventura e adicione propriedades aninhadas
    }
    ```
 
-1. Experimente outros query como `adventureList` e adicione propriedades para o Fragmento de conteúdo referenciado em `adventureContributor`.
+1. Experimente com outras consultas, como `adventureList` e adicione propriedades para o Fragmento de conteúdo referenciado em `adventureContributor`.
 
 ## Atualize o aplicativo React para exibir o conteúdo do Contributor
 
-Em seguida, atualize os query usados pelo aplicativo React para incluir o novo Contribuidor e exibir informações sobre o Contribuidor como parte da visualização de detalhes da Aventura.
+Em seguida, atualize as consultas usadas pelo Aplicativo de Reação para incluir o novo Contribuidor e exibir informações sobre o Contribuidor como parte da visualização de detalhes da Aventura.
 
 1. Abra o aplicativo WKND GraphQL React no IDE.
 
 1. Abra o arquivo `src/components/AdventureDetail.js`.
 
-   ![Componente Detalhes da empresa IDE](assets/fragment-references/adventure-detail-ide.png)
+   ![Componente de detalhes da empresa IDE](assets/fragment-references/adventure-detail-ide.png)
 
-1. Encontre a função `adventureDetailQuery(_path)`. A função `adventureDetailQuery(..)` simplesmente envolve um query GraphQL de filtragem, que usa a sintaxe AEM `<modelName>ByPath` para query de um único Fragmento de conteúdo identificado pelo caminho JCR.
+1. Encontre a função `adventureDetailQuery(_path)`. A função `adventureDetailQuery(..)` simplesmente envolve uma consulta GraphQL de filtragem, que usa a sintaxe `<modelName>ByPath` do AEM para consultar um Fragmento de conteúdo único identificado por seu caminho JCR.
 
-1. Atualize o query para incluir informações sobre o Contribuidor referenciado:
+1. Atualize a consulta para incluir informações sobre o Contribuidor referenciado:
 
    ```javascript
    function adventureDetailQuery(_path) {
@@ -199,9 +203,9 @@ Em seguida, atualize os query usados pelo aplicativo React para incluir o novo C
    }
    ```
 
-   Com esta atualização, propriedades adicionais sobre `adventureContributor`, `fullName`, `occupation` e `pictureReference` serão incluídas no query.
+   Com esta atualização, propriedades adicionais sobre `adventureContributor`, `fullName`, `occupation` e `pictureReference` serão incluídas na consulta.
 
-1. Inspect o componente `Contributor` incorporado no arquivo `AdventureDetail.js` em `function Contributor(...)`. Esse componente renderizará o nome, a ocupação e a imagem do Colaborador, se as propriedades existirem.
+1. Inspecione o componente `Contributor` incorporado no arquivo `AdventureDetail.js` em `function Contributor(...)`. Esse componente renderizará o nome, a ocupação e a imagem do Colaborador, se as propriedades existirem.
 
    O componente `Contributor` é referenciado no método `AdventureDetail(...)` `return`:
 
@@ -223,21 +227,21 @@ Em seguida, atualize os query usados pelo aplicativo React para incluir o novo C
    ```
 
 1. Salve as alterações no arquivo.
-1. Start o aplicativo React, se ainda não estiver em execução:
+1. Inicie o aplicativo React, se ainda não estiver em execução:
 
    ```shell
    $ cd aem-guides-wknd-graphql/react-app
    $ npm start
    ```
 
-1. Navegue até [http://localhost:3000](http://localhost:3000/) e clique em uma Aventura que tenha um Contribuidor referenciado. Agora você deve ver as informações do Contribuidor listadas abaixo de **Itinerário**:
+1. Navegue até [http://localhost:3000](http://localhost:3000/) e clique em uma Aventura que tenha um Contribuidor referenciado. Agora, você deve ver as informações do Contribuidor listadas abaixo do **Itinerário**:
 
-   ![Colaborador adicionado ao aplicativo](assets/fragment-references/contributor-added-detail.png)
+   ![Colaborador adicionado no aplicativo](assets/fragment-references/contributor-added-detail.png)
 
 ## Parabéns!{#congratulations}
 
-Parabéns! Você atualizou um Modelo de fragmento de conteúdo existente para fazer referência a um fragmento de conteúdo aninhado usando o campo **Referência de fragmento**. Você também aprendeu a modificar um query GraphQL para incluir campos de um modelo referenciado.
+Parabéns! Você atualizou um Modelo de fragmento de conteúdo existente para fazer referência a um Fragmento de conteúdo aninhado usando o campo **Referência do fragmento**. Você também aprendeu a modificar uma consulta GraphQL para incluir campos de um modelo referenciado.
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Implantação de produção usando um ambiente de publicação de AEM](./production-deployment.md), saiba mais sobre os serviços de autor e publicação de AEM e o padrão de implantação recomendado para aplicativos sem cabeçalho. Você atualizará um aplicativo existente para usar variáveis de ambiente para alterar dinamicamente um ponto de extremidade GraphQL com base no ambiente do público alvo. Você também aprenderá a configurar corretamente o AEM para o CORS (Cross-Origem resource sharing, compartilhamento de recursos entre ).
+No próximo capítulo, [Implantação de produção usando um ambiente AEM Publish](./production-deployment.md), saiba mais sobre os serviços AEM Author and Publish e o padrão de implantação recomendado para aplicativos sem periféricos. Você atualizará um aplicativo existente para usar variáveis de ambiente para alterar dinamicamente um ponto de extremidade GraphQL com base no ambiente de destino. Você também aprenderá a configurar corretamente o AEM para o CORS (Cross-Origin resource sharing).
