@@ -3,16 +3,19 @@ title: Armazenamento de dados de formulário adaptável
 seo-title: Armazenamento de dados de formulário adaptável
 description: Armazenamento de dados de formulário adaptável no DataBase como parte do fluxo de trabalho do AEM
 seo-description: Armazenamento de dados de formulário adaptável no DataBase como parte do fluxo de trabalho do AEM
-feature: formulários adaptáveis,fluxo de trabalho
+feature: Formulários adaptáveis,Fluxo de trabalho,Modelo de dados de formulário
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
