@@ -1,7 +1,7 @@
 ---
 title: Criar formulários HTML5
 description: Criar e configurar formulários HTML5
-feature: formulários móveis
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
+topic: Desenvolvimento
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 4%
+source-wordcount: '491'
+ht-degree: 5%
 
 ---
 
