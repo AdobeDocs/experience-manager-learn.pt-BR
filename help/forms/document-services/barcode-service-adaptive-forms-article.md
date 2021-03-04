@@ -1,35 +1,38 @@
 ---
-title: Serviço de códigos de barras com Forms adaptável
-seo-title: Serviço de códigos de barras com Forms adaptável
+title: Serviço De Código De Barras Com Formulários Adaptáveis
+seo-title: Serviço De Código De Barras Com Formulários Adaptáveis
 description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
 seo-description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
+feature: formas em código de barras
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 
-# Serviço de códigos de barras com Forms{#barcode-service-with-adaptive-forms} adaptável
+# Serviço de códigos de barras com formulários adaptáveis{#barcode-service-with-adaptive-forms}
 
-Este artigo demonstrará o uso do serviço de código de barras para preencher o formulário adaptável. O caso de utilização é o seguinte:
+Este artigo demonstrará o uso do serviço de código de barras para preencher o formulário adaptável. O caso de uso é o seguinte:
 
 1. O usuário adiciona PDF com código de barras como anexo de formulário adaptável
 1. O caminho do anexo é enviado para o servlet
 1. O servlet decodificou o código de barras e retorna os dados no formato JSON
-1. O formulário adaptativo é então preenchido usando os dados decodificados
+1. O formulário adaptável é então preenchido usando os dados decodificados
 
-O código a seguir decodifica o código de barras e preenche um objeto JSON com os valores decodificados. Em seguida, o servlet retorna o objeto JSON em sua resposta ao aplicativo de chamada.
+O código a seguir decodifica o código de barras e preenche um objeto JSON com os valores decodificados. Em seguida, o servlet retorna o objeto JSON em sua resposta ao aplicativo chamador.
 
 Você pode ver esse recurso ao vivo, visite o [portal de amostras](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e pesquise a demonstração do serviço de código de barras
 
@@ -59,7 +62,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-A seguir está o código do servlet. Esse servlet é chamado quando o usuário adiciona um anexo ao Formulário adaptável. O servlet retorna o objeto JSON de volta ao aplicativo de chamada. O aplicativo de chamada preenche o formulário Adaptive com os valores extraídos do objeto JSON.
+A seguir, o código do servlet. Este servlet é chamado quando o usuário adiciona um anexo ao Formulário adaptável. O servlet retorna o objeto JSON de volta ao aplicativo que faz a chamada. O aplicativo que faz a chamada preenche o formulário adaptável com os valores extraídos do objeto JSON.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -138,19 +141,19 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->O formulário adaptativo incluído neste pacote foi criado usando o AEM Forms 6.4. Se você pretende usar este pacote no ambiente AEM Forms 6.3, crie o Formulário adaptável no AEM Formulário 6.3
+>O formulário adaptável incluído neste pacote foi criado usando o AEM Forms 6.4. Se você pretende usar este pacote no ambiente AEM Forms 6.3, crie o Formulário adaptável no AEM Form 6.3
 
-Linha 12 - Código personalizado para obter o resolvedor de serviços. Este pacote é incluído como parte dos ativos dos artigos.
+Linha 12 - Código personalizado para obter o resolvedor de serviço. Esse pacote é incluído como parte dos ativos dos artigos.
 
-Linha 23 - Chame o método extractBarCode do DocumentServices para obter o objeto JSON preenchido com dados decodificados
+Linha 23 - Chame o método extractBarCode de DocumentServices para obter o objeto JSON preenchido com dados decodificados
 
-Para executá-lo no sistema, siga as seguintes etapas
+Para executá-lo em seu sistema, siga as seguintes etapas
 
-1. [Baixar a importação de BarcodeService.](assets/barcodeservice.zip) zipand para AEM usando o gerenciador de pacote
-1. [Baixe e instale o pacote personalizado do Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Baixe a importação do BarcodeService.](assets/barcodeservice.zip) zipe para o AEM usando o gerenciador de pacotes
+1. [Baixe e instale o Pacote de serviços de documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Download do formulário PDF de amostra](assets/barcode.pdf)
-1. Aponte seu navegador para [exemplo de formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
-1. Carregar a amostra de PDF fornecida
-1. É necessário ver os formulários preenchidos com os dados
+1. [Baixe o formulário PDF de amostra](assets/barcode.pdf)
+1. Aponte seu navegador para o [formulário adaptável de amostra](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Faça upload do PDF de amostra fornecido
+1. Você deve ver os formulários preenchidos com os dados
 
