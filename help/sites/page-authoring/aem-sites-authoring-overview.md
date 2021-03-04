@@ -1,9 +1,9 @@
 ---
 title: Visão geral da criação no AEM Sites
 seo-title: Visão geral da criação no AEM Sites
-description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de autor AEM. Usa o console Sites como base.
-seo-description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de autor AEM. Usa o console Sites como base.
-feature: page-editor, template-editor
+description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação do AEM. Usa o console Sites como base.
+seo-description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação do AEM. Usa o console Sites como base.
+feature: Editor de páginas, modelos editáveis
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,22 +11,25 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4242
 thumbnail: 33594.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 15%
+source-wordcount: '124'
+ht-degree: 16%
 
 ---
 
 
-# Visão geral da criação {#authoring-overview}
+# Visão geral de criação {#authoring-overview}
 
-O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de autor AEM para AEM Sites.
+O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação do AEM para o AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
 ## Recursos adicionais {#additional-resources}
 
-* [Edição da documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Editar a documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [Guia do usuário de criação de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
