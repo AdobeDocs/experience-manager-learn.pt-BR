@@ -4,7 +4,7 @@ seo-title: Criar formulário adaptável
 description: Na Parte 1, criaremos o Formulário adaptável, adicionaremos e configuraremos a barra de ferramentas com os botões apropriados.
 seo-description: Na Parte 1, criaremos o Formulário adaptável, adicionaremos e configuraremos a barra de ferramentas com os botões apropriados.
 uuid: 4ab7f01e-a75b-4e08-a5d8-690c63773ec3
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ activity: understand
 discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 kt: 4208
 thumbnail: 22173.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 5%
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
