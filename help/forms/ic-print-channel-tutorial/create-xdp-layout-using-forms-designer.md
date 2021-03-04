@@ -4,7 +4,7 @@ seo-title: Criar layout usando o Designer do Forms
 description: Esta é a parte 4 do tutorial de várias partes para criar seu primeiro documento de comunicação interativa para o canal de impressão. Nesta parte, observamos o arquivo de layout criado usando o AEM Forms Designer.
 seo-description: Esta é a parte 4 do tutorial de várias partes para criar seu primeiro documento de comunicação interativa para o canal de impressão. Nesta parte, observamos o arquivo de layout criado usando o AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
