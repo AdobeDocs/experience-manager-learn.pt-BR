@@ -3,20 +3,17 @@ title: Variáveis no fluxo de trabalho do AEM[Parte5]
 seo-title: Variáveis no fluxo de trabalho do AEM[Parte5]
 description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
 seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: development
 audience: developer
 doc-type: technical video
 activity: understand
 version: 6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
