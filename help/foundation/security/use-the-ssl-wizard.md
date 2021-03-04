@@ -1,27 +1,29 @@
 ---
-title: Usar o Assistente SSL no AEM
-description: Assistente de configuração de SSL da Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
-seo-description: Assistente de configuração de SSL da Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
+title: Usar o assistente SSL no AEM
+description: O assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância do AEM para execução por HTTPS.
+seo-description: O assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância do AEM para execução por HTTPS.
 version: 6.3, 6,4, 6.5
-feature: null
 topics: security, operations
 activity: use
 audience: administrator
 doc-type: technical video
 uuid: 82a6962e-3658-427a-bfad-f5d35524f93b
 discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
+topic: Segurança
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
 
-# Usar o Assistente SSL no AEM
+# Usar o assistente SSL no AEM
 
-Assistente de configuração de SSL da Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
+O assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância do AEM para execução por HTTPS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993/?quality=12&learn=on)
 
@@ -29,23 +31,23 @@ Assistente de configuração de SSL da Adobe Experience Manager para facilitar a
 >
 >Para ambientes gerenciados, é melhor para o departamento de TI fornecer certificados e chaves confiáveis pela CA.
 >
->Os certificados autoassinados só podem ser utilizados para fins de desenvolvimento.
+>Certificados autoassinados só devem ser usados para fins de desenvolvimento.
 
 ## Chave privada e download de certificado autoassinado
 
-O zip a seguir contém os arquivos [!DNL DER] e [!DNL CRT] necessários para configurar AEM SSL no localhost e destinados apenas a fins de desenvolvimento local.
+O zip a seguir contém os arquivos [!DNL DER] e [!DNL CRT] necessários para a configuração do SSL do AEM no host local e destinados apenas a fins de desenvolvimento local.
 
 Os arquivos [!DNL DER] e [!DNL CERT] são fornecidos para conveniência e gerados usando as etapas descritas na seção Gerar chave privada e certificado autoassinado abaixo.
 
-Se necessário, a senha do certificado é **admin**.
+Se necessário, a frase de passagem do certificado é **admin**.
 
-localhost - chave privada e certificado autoassinado.zip (expira em julho de 2028)
+localhost - chave privada e certificate.zip autoassinado (expira em julho de 2028)
 
 [Baixar o arquivo de certificado](assets/use-the-ssl-wizard/certificate.zip)
 
-## Chave privada e geração de certificado autoassinada
+## Chave privada e geração de certificado autoassinado
 
-O vídeo acima mostra a configuração do SSL em uma instância do autor AEM usando certificados autoassinados. Os comandos abaixo usando [[!DNL OpenSSL]](https://www.openssl.org/) podem gerar uma chave privada e um certificado para serem usados na Etapa 2 do assistente.
+O vídeo acima descreve a configuração do SSL em uma instância de autor do AEM usando certificados autoassinados. Os comandos abaixo usando [[!DNL OpenSSL]](https://www.openssl.org/) podem gerar uma chave privada e um certificado a serem usados na Etapa 2 do assistente.
 
 ```shell
 ### Create Private Key
