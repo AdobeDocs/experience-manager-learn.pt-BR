@@ -1,9 +1,8 @@
 ---
-title: Usar diferença de página com o AEM Sites
-seo-title: Usar diferença de página com o AEM Sites
-description: Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
-seo-description: Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
-feature: page-diff
+title: Usando a diferença de página com o AEM Sites
+seo-title: Usando a diferença de página com o AEM Sites
+description: Os recursos de diferença de página do AEM Sites mostram uma exibição rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, lançamentos, cópia de idioma).
+seo-description: Os recursos de diferença de página do AEM Sites mostram uma exibição rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, lançamentos, cópia de idioma).
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -12,24 +11,27 @@ version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 2%
 
 ---
 
 
-# Usando o recurso Diferença de página {#using-page-difference-with-aem-sites}
+# Uso do recurso Diferença de página {#using-page-difference-with-aem-sites}
 
-Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
+Os recursos de diferença de página do AEM Sites mostram uma exibição rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, lançamentos, cópia de idioma).
 
-## Comparando versões de página {#comparing-page-versions}
+## Comparação das versões de página {#comparing-page-versions}
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
 
-**Alterações HTML**
+**Alterações no HTML**
 
 * **Verde**: Novo conteúdo
 * **Vermelho**: Conteúdo removido
@@ -40,7 +42,7 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 * **Vermelho**: Componente removido
 * **Azul**: Componente modificado
 
-## Comparar páginas de inicialização {#comparing-launch-pages}
+## Comparação de páginas de lançamento {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
 
