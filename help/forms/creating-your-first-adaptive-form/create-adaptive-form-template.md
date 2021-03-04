@@ -1,32 +1,35 @@
 ---
-title: Criando modelo de formulário adaptável
-description: O modelo define a estrutura e o conteúdo inicial do Formulário adaptativo.
-feature: adaptive-forms
+title: Criação do modelo de formulário adaptável
+description: O modelo define a estrutura e o conteúdo inicial do Formulário adaptável.
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 6%
 
 ---
 
 
-# Criando modelo de formulário adaptável
+# Criação do modelo de formulário adaptável
 
-Cada formulário adaptável é baseado em um modelo de formulário adaptável. O modelo define a estrutura, o conteúdo inicial, o tema etc., o formulário adaptativo herdará. Você pode criar um novo modelo de formulário adaptável ou usar o modelo out-of-box ao criar seu formulário adaptável.
-O modelo criado aqui será a base para o avanço de nosso formulário adaptativo.
+Cada formulário adaptável é baseado em um modelo de formulário adaptável. O modelo define a estrutura, o conteúdo inicial, o tema etc., o formulário adaptável herdará. Você pode criar um novo modelo de formulário adaptável ou usar o modelo pronto para uso ao criar seu formulário adaptável.
+O modelo criado aqui será a base para nosso formulário adaptável avançar.
 O vídeo a seguir mostra o processo básico de criação do modelo de formulário adaptável
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Consulte [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) para obter mais detalhes
+Consulte a [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) para obter mais detalhes
 
-Se necessário, você pode baixar o [modelo de formulário adaptável](assets/peak-application-template.zip) e importar para AEM usando o [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessário, você pode baixar o [modelo de formulário adaptável](assets/peak-application-template.zip) e importar para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
