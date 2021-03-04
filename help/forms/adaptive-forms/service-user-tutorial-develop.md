@@ -1,39 +1,42 @@
 ---
-title: Desenvolvimento com usuários de serviços no AEM Forms
-seo-title: Desenvolvimento com usuários de serviços no AEM Forms
-description: Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
-seo-description: Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
+title: Desenvolvimento com usuários de serviço no AEM Forms
+seo-title: Desenvolvimento com usuários de serviço no AEM Forms
+description: Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
+seo-description: Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
 uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development,administration
 audience: implementer,developer
 doc-type: article
 activity: setup
 discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 
-# Desenvolvimento com usuários de serviços no AEM Forms
+# Desenvolvimento com usuários de serviço no AEM Forms
 
-Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
+Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
 
-Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento back-end, que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos está obsoleto no AEM 6.3. Em vez disso, um usuário do sistema com permissões específicas no repositório é usado.
+Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos está obsoleto no AEM 6.3. Em vez disso, um usuário do sistema com permissões específicas no repositório é usado.
 
-Este artigo percorre a criação de um usuário do sistema e configura as propriedades do mapeador de usuário.
+Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador de usuários.
 
 1. Navegue até [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
-1. Fazer logon como &#39; admin &#39;
-1. Clique em &#39; Administração do usuário &#39;
-1. Clique em &#39; Criar usuário do sistema &#39;
+1. Efetuar logon como &#39; admin &#39;
+1. Clique em &quot;Administração de usuário&quot;
+1. Clique em &quot;Criar usuário do sistema&quot;
 1. Defina o tipo de usuário como &#39; data &#39; e clique no ícone verde para concluir o processo de criação do usuário do sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Procure &#39; Serviço Mapeador de Usuário do Serviço Apache Sling &#39; e clique para abrir as propriedades
+1. Procure por &#39; Serviço Mapeador de Usuário do Apache Sling Service &#39; e clique para abrir as propriedades
 1. Clique no ícone *+* (mais) para adicionar o seguinte Mapeamento de serviços
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
@@ -41,23 +44,23 @@ Este artigo percorre a criação de um usuário do sistema e configura as propri
 
 1. Clique em &#39; Salvar &#39;
 
-Na configuração acima, DevelopingWithServiceUser.core é o nome simbólico do conjunto. getresouresolver é o nome do subserviço.data é o usuário do sistema criado na etapa anterior.
+Na configuração acima, DevelopingWithServiceUser.core é o nome simbólico do pacote. getresourceresolver é o nome do subserviço.data é o usuário do sistema criado na etapa anterior.
 
-Também podemos obter o resolvedor de recursos em nome do usuário do fd-service. Este usuário de serviço é usado para serviços de documento. Por exemplo, se você deseja Certificar/Aplicar direitos de uso etc, usaremos o resolvedor de recursos do usuário fd-service para executar as operações
+Também podemos obter o resolvedor de recursos em nome do usuário do fd-service. Esse usuário de serviço é usado para serviços de documento. Por exemplo, se você deseja Certificar/Aplicar direitos de uso etc, usaremos o resolvedor de recursos do usuário do fd-service para executar as operações
 
 1. [Baixe e descompacte o arquivo zip associado a este artigo.](assets/developingwithserviceuser.zip)
 1. Navegue até [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
-1. Carregar e start o pacote OSGi
+1. Faça o upload e inicie o pacote OSGi
 1. Verifique se o pacote está no estado ativo
-1. Agora você criou com êxito um *Usuário do sistema* e também implantou o *pacote de Usuário do serviço*.
+1. Agora você criou com êxito um *Usuário do Sistema* e também implantou o *Pacote de Usuário do Serviço*.
 
-   Para fornecer acesso a /content, atribua ao usuário do sistema (&#39; dados &#39;) permissões de leitura no nó de conteúdo.
+   Para fornecer acesso a /content, forneça ao usuário do sistema (&#39; data &#39;) permissões de leitura no nó de conteúdo.
 
    1. Navegue até [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-   1. Procure os dados do usuário &#39; &#39;. Este é o mesmo usuário do sistema que você criou na etapa anterior.
-   1. Duplo clique no usuário e, em seguida, clique na guia &#39; Permissões &#39;
-   1. Atribua a &#39; read &#39; acesso à pasta &#39;content&#39;.
-   1. Para usar o usuário do serviço para obter acesso à pasta /content, use o seguinte código
+   1. Procure os dados do usuário &#39; &#39;. Esse é o mesmo usuário do sistema criado na etapa anterior.
+   1. Clique duas vezes no usuário e, em seguida, clique na guia &#39; Permissões &#39;
+   1. Conceder acesso de leitura à pasta &#39;conteúdo&#39;.
+   1. Para usar o usuário de serviço para obter acesso à pasta /content, use o seguinte código
 
    ```java
    com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
@@ -69,7 +72,7 @@ Também podemos obter o resolvedor de recursos em nome do usuário do fd-service
    Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
    ```
 
-   Se quiser acessar o arquivo /content/dam/data.json em seu pacote, você usará o seguinte código. Este código supõe que você tenha concedido permissões de leitura para o usuário &quot;data&quot; no nó /content/dam/
+   Se quiser acessar o arquivo /content/dam/data.json no seu pacote, use o seguinte código. Esse código supõe que você tenha dado permissões de leitura ao usuário &quot;dados&quot; no nó /content/dam/
 
    ```java
    @Reference
