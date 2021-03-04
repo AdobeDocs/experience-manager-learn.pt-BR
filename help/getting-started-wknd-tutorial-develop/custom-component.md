@@ -2,7 +2,7 @@
 title: Componente personalizado
 description: Abrange a criação completa de um componente de byline personalizado que exibe o conteúdo de criação. Inclui o desenvolvimento de um Modelo do Sling para encapsular a lógica de negócios para preencher o componente de linha de bytes e o HTL correspondente para renderizar o componente.
 sub-product: sites
-feature: modelos sling
+feature: Componentes principais, APIs
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+topic: Gerenciamento de conteúdo, desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '3962'
+source-wordcount: '3969'
 ht-degree: 0%
 
 ---
