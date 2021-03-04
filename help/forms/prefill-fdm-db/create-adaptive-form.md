@@ -1,7 +1,7 @@
 ---
 title: Criar formulário adaptável
 description: Criar e configurar um formulário adaptável para usar o serviço de preenchimento prévio do modelo de dados de formulário
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
+topic: Desenvolvimento
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
