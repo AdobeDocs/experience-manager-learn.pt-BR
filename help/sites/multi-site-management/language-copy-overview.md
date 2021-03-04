@@ -1,9 +1,9 @@
 ---
-title: Introdução à cópia de idioma
-seo-title: Introdução à cópia de idioma
+title: Introdução à Cópia de idioma
+seo-title: Introdução à Cópia de idioma
 description: Obtenha uma visão geral de como criar um site multilíngue usando a Cópia de idioma no AEM Sites
 seo-description: Obtenha uma visão geral de como criar um site multilíngue usando a Cópia de idioma no AEM Sites
-feature: language-copy, live-copy, multi-site-manager
+feature: Cópia de idioma, Gerenciador de vários sites
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,16 +11,19 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5370
 thumbnail: 36487.jpg
+topic: Localização
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 309bed2f0c137bdd245c017cd1f94d7f6ca2d396
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 0%
+source-wordcount: '69'
+ht-degree: 1%
 
 ---
 
 
-# Introdução à cópia de idioma {#introduction-language-copy}
+# Introdução à Cópia de idioma {#introduction-language-copy}
 
 Obtenha uma visão geral de como criar um site multilíngue usando a Cópia de idioma no AEM Sites.
 
