@@ -1,50 +1,53 @@
 ---
-title: Configurar o gráfico de linhas para seu primeiro documento de comunicação interativo
-seo-title: Configurar o gráfico de linhas para seu primeiro documento de comunicação interativo
-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativo. Nesta parte, adicionaremos um gráfico de linha ao painel de progresso da conta.
-seo-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativo. Nesta parte, adicionaremos um gráfico de linha ao painel de progresso da conta.
+title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
+seo-title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
+description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
+seo-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: interactive-communication
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 2%
 
 ---
 
 
-# Configurar o gráfico de linhas para seu primeiro documento de comunicação interativo
+# Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
 
-Nesta parte, adicionaremos um gráfico de linha ao painel de progresso da conta.
+Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e Documentos.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Formulários > Formulários e documentos.
 
-Abra a pasta 401KStatement.
+Abra a pasta 401KStatement .
 
-Abra a 401KStatement no modo de edição.
+Abra a declaração 401KS no modo de edição.
 
-O AEM Forms 6.4 simplificou bastante a exibição de dados usando vários tipos de gráficos. Usaremos um gráfico de Linha para exibir os saldos por ano.
+O AEM Forms 6.4 tornou bastante simples exibir dados usando vários tipos de gráficos. Usaremos um gráfico de Linha para exibir saldos por ano.
 
-Toque na área de público alvo **Andamento da conta** no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
+Toque na área de destino **Progresso da Conta** no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo inserir componente.
 
-Selecione Gráfico para inserir o componente gráfico.
+Selecione Chart para inserir o componente de gráfico.
 
 Configure o componente de gráfico de acordo com as configurações na captura de tela abaixo e salve suas configurações clicando no ícone de marca de seleção azul.
 
-Certifique-se de selecionar o elemento de modelo de dados de formulário correto nos eixos x e y.
+Selecione o elemento correto do modelo de dados de formulário no eixo x e y.
 
 **Configurações do gráfico de linha no AEM Forms 6.4**
 
 ![linechart64](assets/linechart.png)
 
-**Configurações do gráfico de linha no AEM Forms 6.5**
+**Configurações do gráfico de linhas no AEM Forms 6.5**
 
 ![linechart64](assets/linechart65.PNG)
 
