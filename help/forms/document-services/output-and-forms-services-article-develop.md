@@ -4,20 +4,17 @@ seo-title: Desenvolvimento com serviços de saída e formulários no AEM Forms
 description: Uso da API do Serviço de saída e formulários no AEM Forms
 seo-description: Uso da API do Serviço de saída e formulários no AEM Forms
 uuid: be018eb5-dbe7-4101-a1a9-bee11ac97273
-feature: Serviço de saída
+feature: output-service
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 57f478a9-8495-469e-8a06-ce1251172fda
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
