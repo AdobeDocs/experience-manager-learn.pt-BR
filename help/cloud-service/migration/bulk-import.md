@@ -1,25 +1,28 @@
 ---
 title: Uso da importação em massa com o AEM Assets
-description: A ferramenta Importação em massa em AEM como Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Armazenamento Blob do Azure ou Amazon S3) de uma maneira segura e eficiente.
+description: A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Azure Blob Storage ou Amazon S3) de maneira segura e eficiente.
 version: cloud-service
 doc-type: technical-video
 topics: Migration
-feature: Bulk Import
+feature: Migração
 activity: develop
 audience: developer
 kt: 6729
 thumbnail: 329680.jpg
+topic: Migração
+role: Arquiteto, desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 
-# Usando Importação em Massa
+# Uso da importação em massa
 
-A ferramenta Importação em massa em AEM como Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Armazenamento Blob do Azure ou Amazon S3) de uma maneira segura e eficiente.
+A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Azure Blob Storage ou Amazon S3) de maneira segura e eficiente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
