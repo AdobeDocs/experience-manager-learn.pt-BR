@@ -1,7 +1,6 @@
 ---
-title: Criar uma configuração do Cloud Service Launch
-description: Saiba como criar uma nova configuração do Launch Cloud Services. A configuração do Cloud Service Launch pode ser aplicada a um site existente e as bibliotecas Launch podem ser observadas ao carregar nos ambientes Author e Publish.
-feature: launch
+title: Criar uma configuração do Launch Cloud Service
+description: Saiba como criar uma nova configuração do Launch Cloud Services. A configuração do Launch Cloud Service pode ser aplicada a um site existente e as bibliotecas do Launch podem ser observadas nos ambientes de Autor e Publicação.
 topics: integrations
 audience: administrator
 doc-type: technical video
@@ -9,18 +8,21 @@ activity: setup
 version: cloud-service
 kt: 5982
 thumbnail: 38566.jpg
+topic: Integrações
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: eabc325c498b4d5b8b5a53b9004f0e89d82cefe3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 0%
+source-wordcount: '99'
+ht-degree: 2%
 
 ---
 
 
-# Criar uma configuração do Cloud Service Launch {#create-launch-cloud-service}
+# Criar uma configuração do Launch Cloud Service {#create-launch-cloud-service}
 
-Saiba como criar uma nova configuração do Launch Cloud Services no Adobe Experience Manager. AEM configuração do Cloud Service de inicialização pode ser aplicada a um Site existente e as bibliotecas de inicialização podem ser observadas ao carregar nos ambientes Autor e Publicar.
+Saiba como criar uma nova configuração do Launch Cloud Services no Adobe Experience Manager. A configuração do Launch Cloud Service do AEM pode ser aplicada a um site existente e as bibliotecas do Launch podem ser observadas nos ambientes de Autor e Publicação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38566?quality=12&learn=on)
 
