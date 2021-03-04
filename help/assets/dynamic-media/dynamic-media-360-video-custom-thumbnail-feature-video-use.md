@@ -1,61 +1,56 @@
 ---
-title: Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets
-seo-title: Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets
-description: As melhorias do Visualizador de mídia dinâmica no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (vídeo360Social e vídeo360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
-seo-description: As melhorias do Visualizador de mídia dinâmica no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (vídeo360Social e vídeo360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
-uuid: 44b91c22-635c-48c2-af27-49bdbfb61639
-discoiquuid: 67d5e0f2-3fde-4ea7-9e53-4fc0cf8b9f2a
+title: Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizado com o AEM Assets
+description: Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.5 incluem a adição de suporte para 360 renderização de vídeo, 360 visualizadores de mídia (vídeo360Social e vídeo360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
 sub-product: dynamic-media
-feature: video-profiles, viewer-presets
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-doc-type: feature video
-audience: all
-activity: use
+feature: Perfis de vídeo
 version: 6.3, 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
 
 
-# Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets
+# Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizado com o AEM Assets
 
-As melhorias do Visualizador de mídia dinâmica no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (vídeo360Social e vídeo360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
+Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.5 incluem a adição de suporte para 360 renderização de vídeo, 360 visualizadores de mídia (vídeo360Social e vídeo360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
 
 >[!NOTE]
 >
->O vídeo supõe que sua instância AEM esteja em execução no modo Dynamic Media S7.  [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Quando você carrega um vídeo, por padrão, o Dynamic Media processa a gravação como um vídeo 360, se ela tiver uma proporção de 2:1. ou seja, a relação largura/altura é de 2:1.
+>O Vídeo assume que a instância do AEM está sendo executada no modo Dynamic Media S7.  [Instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Ao fazer upload de um vídeo, por padrão, o Dynamic Media processa a gravação como um vídeo 360, se ela tiver uma proporção de aspecto de 2:1. ou seja, a relação largura/altura é de 2:1.
 
 >[!NOTE]
 >
->Os componentes do Dynamic Media 360 Media suportam apenas 360 vídeos.
+>Os componentes de Mídia dinâmica 360 suportam apenas 360 vídeos.
 
 ## Vídeos do Dynamic Media 360
 
-Os vídeos de 360 graus, também conhecidos como vídeos esféricos, são gravações de vídeo em que uma visualização em todas as direções é gravada ao mesmo tempo, fotografada usando uma câmera onidirecional ou uma coleção de câmeras. Durante a reprodução em uma tela plana, o usuário tem controle da direção de visualização e a reprodução em dispositivos móveis normalmente aproveita o controle de giroscópio integrado.  Ele permite que você se expanda além dos limites da fotografia única. Os profissionais de marketing podem oferecer aos usuários uma experiência envolvente com a ajuda de 360 vídeos.  Vamos começar. O critério de proporção da imagem panorâmica pode ser modificado na configuração do empresa DMS7 especificando a propriedade do duplo s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmsceno7/jcr:content.
+Vídeos de 360 graus, também conhecidos como vídeos esféricos, são gravações de vídeo em que uma exibição em todas as direções é gravada ao mesmo tempo, fotografada com uma câmera onidirecional ou com uma coleção de câmeras. Durante a reprodução em uma tela plana, o usuário tem o controle da direção de exibição e a reprodução em dispositivos móveis geralmente usam o controle de giroscópio integrado.  Permite que você se expanda além dos limites da fotografia única. Os profissionais de marketing podem fornecer aos usuários uma experiência envolvente com a ajuda de 360 vídeos.  Vamos começar. O critério de proporção da imagem panorâmica pode ser modificado na configuração do DMS7 da empresa, especificando a propriedade dupla s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
 
 ## Vídeos do Dynamic Media 360
 
-O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma miniatura personalizada para seu vídeo. Um usuário pode selecionar um ativo existente do AEM Assets ou selecionar um quadro de vídeo como miniatura.
+O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma miniatura personalizada para o vídeo. Um usuário pode selecionar um ativo existente nos ativos AEM ou selecionar um quadro de vídeo como miniatura.
 
-## Visualizadores de mídia dinâmicos 360
+## Visualizadores do Dynamic 360 Media
 
 <table> 
  <tbody>
    <tr>
       <td> </td>
-      <td>**Vídeo360Visualizador Social**</td>
-      <td>**Visualizador de vídeo360VR**</td>
+      <td>**Vídeo360Visualizador do Social**</td>
+      <td>**Visualizador de vídeo 360VR**</td>
    </tr>
    <tr>
       <td>Modo de execução do Dynamic Media</td>
-      <td>Somente modo Scene7 do Dynamic Media</td>
-      <td>Modo Scene7 do Dynamic Media apenas<br>
+      <td>Somente Modo do Dynamic Media Scene7</td>
+      <td>Somente Modo do Dynamic Media Scene7<br>
          <br>
       </td>
    </tr>
@@ -66,7 +61,7 @@ O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma 
          <p> </p>
       </td>
       <td>
-         <p>Fornece uma experiência de realidade virtual para um dispositivo compatível com giroscópio </p>
+         <p>Fornece uma experiência de Realidade Virtual para um dispositivo compatível com o giroscópio </p>
       </td>
    </tr>
    <tr>
@@ -80,7 +75,7 @@ O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma 
       <td>Sim</td>
    </tr>
    <tr>
-      <td>Navegação no ponto de visualização</td>
+      <td>Navegação de ponto de vista</td>
       <td>
          <ul>
             <li>Arrastar o mouse (em sistemas de desktop)</li>
@@ -89,13 +84,13 @@ O vídeo do Dynamic Media agora oferece suporte à capacidade de selecionar uma 
       </td>
       <td>
          <ul>
-            <li>As opções de mouse e arrastar estão desativadas</li>
+            <li>As opções de arrastar e mouse estão desativadas</li>
             <li>Usa giroscópio integrado</li>
          </ul>
       </td>
    </tr>
    <tr>
-      <td>HTML5 Player</td>
+      <td>Reprodutor HTML5</td>
       <td>Sim</td>
       <td>Sim</td>
    </tr>
