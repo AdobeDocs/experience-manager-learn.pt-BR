@@ -1,34 +1,36 @@
 ---
-title: Use o Painel Visão geral do sistema em AEM
-description: Em versões anteriores do AEM os administradores precisavam verificar vários locais para obter uma visão completa da instância do AEM. A Visão geral do sistema tem como objetivo solucionar esse problema fornecendo uma visualização de alto nível da configuração, hardware e integridade da instância AEM, tudo isso a partir de um único painel.
+title: Use o painel Visão geral do sistema no AEM
+description: Em versões anteriores dos administradores do AEM, era necessário consultar vários locais para obter uma imagem completa da instância do AEM. A Visão geral do sistema tem como objetivo resolver isso fornecendo uma visualização de alto nível da configuração, do hardware e da integridade da instância do AEM, tudo isso a partir de um único painel.
 version: 6.4, 6.5
-feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
+topic: Administração
+role: Administrador
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 
 
-# Use o Painel Visão geral do sistema
+# Usar o painel Visão geral do sistema
 
-A Adobe Experience Manager (AEM) [!UICONTROL Visão geral do sistema] fornece uma visualização de alto nível da configuração, hardware e integridade da instância AEM, tudo a partir de um único painel.
+A [!UICONTROL Visão geral do sistema do Adobe Experience Manager] fornece uma visualização de alto nível da configuração, do hardware e da integridade da instância do AEM, tudo a partir de um único painel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. A Visão geral do sistema pode ser acessada de: **AEM Start** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
+1. A Visão geral do sistema pode ser acessada em: **Início do AEM** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
 
    Diretamente em **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. As informações de [!UICONTROL Visão geral do sistema] podem ser exportadas clicando no botão [!UICONTROL Download]. As informações também são expostas por meio do seguinte terminal [!DNL REST]:
-1. Abaixo está um exemplo de saída do JSON que é exportado de [!UICONTROL Visão geral do sistema]:
+1. Abaixo está uma amostra de saída do JSON que é exportada do [!UICONTROL Visão geral do sistema]:
 
    ```json
    {
