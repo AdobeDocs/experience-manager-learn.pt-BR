@@ -1,10 +1,10 @@
 ---
 title: Adicionar componentes à seção Ativos
 seo-title: Adicionar componentes à seção Ativos
-description: Configure o layout do acordeão para o painel Ativos.O layout do acordeão fornece uma melhor experiência do usuário final para adicionar seções repetíveis.
-seo-description: Configure o layout do acordeão para o painel Ativos.O layout do acordeão fornece uma melhor experiência do usuário final para adicionar seções repetíveis.
+description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
+seo-description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
 uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,24 +13,27 @@ version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
 discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '83'
+ht-degree: 4%
 
 ---
 
 
 # Adicionar componentes à seção Ativos {#adding-components-to-assets-section}
 
-Configure o layout do acordeão para o painel Ativos.O layout do acordeão fornece uma melhor experiência do usuário final para adicionar seções repetíveis.
+Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
 
-**Configurar o painel Ativos**
+**Configurar painel Ativos**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
 
-**Definir título do resumo**
+**Definir título de resumo**
 >[!VIDEO](https://video.tv.adobe.com/v/28387)
 
 
