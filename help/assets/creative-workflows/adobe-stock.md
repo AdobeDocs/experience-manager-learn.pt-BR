@@ -1,16 +1,15 @@
 ---
-title: Uso de ativos da Adobe Stock com a AEM Assets
-description: 'AEM oferece aos usuários a capacidade de pesquisar, pré-visualização, salvar e licenciar ativos da Adobe Stock diretamente da AEM. As organizações agora podem integrar seu plano Adobe Stock Enterprise com a AEM Assets para garantir que os ativos licenciados estejam amplamente disponíveis para seus projetos de criação e marketing, com os poderosos recursos de gerenciamento de ativos da AEM. '
-feature: creative-cloud-integration
-topics: authoring, collaboration, operations, sharing, metadata, images, stock
-audience: all
-doc-type: feature video
-activity: use
+title: Uso de ativos do Adobe Stock com AEM Assets
+description: 'O AEM fornece aos usuários a capacidade de pesquisar, visualizar, salvar e licenciar ativos do Adobe Stock diretamente do AEM. As empresas agora podem integrar o plano Adobe Stock Enterprise com o AEM Assets para garantir que os ativos licenciados estejam amplamente disponíveis para seus projetos criativos e de marketing, com os poderosos recursos de gerenciamento de ativos do AEM. '
+feature: Adobe Stock
 version: 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -18,97 +17,97 @@ ht-degree: 6%
 
 # Uso do Adobe Stock com AEM Assets{#using-adobe-stock-assets-with-aem-assets}
 
-AEM 6.4.2 fornece aos usuários a capacidade de pesquisar, pré-visualização, salvar e licenciar ativos da Adobe Stock diretamente da AEM. As organizações agora podem integrar seu plano Adobe Stock Enterprise com a AEM Assets para garantir que os ativos licenciados estejam amplamente disponíveis para seus projetos de criação e marketing, com os poderosos recursos de gerenciamento de ativos da AEM.
+O AEM 6.4.2 fornece aos usuários a capacidade de pesquisar, visualizar, salvar e licenciar ativos do Adobe Stock diretamente do AEM. As empresas agora podem integrar o plano Adobe Stock Enterprise com o AEM Assets para garantir que os ativos licenciados estejam amplamente disponíveis para seus projetos criativos e de marketing, com os poderosos recursos de gerenciamento de ativos do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=9&learn=on)
 
 >[!NOTE]
 >
->A integração exige um [plano Adobe Stock corporativo](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 com pelo menos o Service Pack 2 implantado. Para obter AEM detalhes do service pack 6.4, consulte estas [notas de versão](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+>A integração exige um [plano corporativo do Adobe Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e o AEM 6.4 com pelo menos o Service Pack 2 implantado. Para obter os detalhes do service pack do AEM 6.4, consulte estas [notas de versão](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/sp-release-notes.html).
 
-A integração entre a Adobe Stock e a AEM Assets permite que autores e comerciantes de conteúdo licenciem e usem facilmente ativos de ações para fins criativos ou de marketing. Você pode realizar uma pesquisa de ativos do Stock usando o Omni Search, adicionando o filtro de localização como Adobe Stock ou navegando pela navegação principal do AEM Assets e clicando no ícone Pesquisar interface do usuário do Adobe Stock Coral.
+A integração entre o Adobe Stock e o AEM Assets permite que autores de conteúdo e profissionais de marketing licenciem e usem facilmente ativos de estoque para fins criativos ou de marketing. Você pode realizar uma pesquisa de ativos no Stock usando a Pesquisa do Omni, adicionando o filtro de localização como Adobe Stock ou navegando pela navegação principal dos ativos AEM e clicando no ícone Pesquisar interface do usuário do Adobe Stock Coral.
 
 ## Recursos
 
 ### Pesquisar e salvar
 
-* Execute a pesquisa de ativos Adobe Stock sem sair AEM espaço de trabalho.
-* Salve os ativos da Adobe Stock para pré-visualização, sem licenciar o ativo.
-* Capacidade de licenciar e salvar ativos Adobe Stock na AEM Assets
-* Capacidade de pesquisar ativos similares da Adobe Stock na interface do usuário do AEM Assets
-* Visualização de um ativo selecionado da Pesquisa de ações no AEM Assets no site da Adobe Stock
+* Realize a pesquisa de ativos do Adobe Stock sem sair da área de trabalho do AEM.
+* Salve os ativos do Adobe Stock para visualização, sem licenciar o ativo.
+* Capacidade de licenciar e salvar ativos do Adobe Stock no AEM Assets
+* Capacidade de pesquisar ativos semelhantes do Adobe Stock na interface do usuário do AEM Assets
+* Visualizar um ativo selecionado da Pesquisa de ações no AEM Assets no site do Adobe Stock
 * Os arquivos de ativos licenciados são marcados com um selo azul licenciado para fácil identificação
 
 ### Metadados dos ativos
 
-* O ativo licenciado é armazenado na AEM Assets. As propriedades do ativo contêm metadados do Stock em uma guia separada de metadados do ativo
+* O ativo licenciado é armazenado no AEM Assets. As propriedades do ativo contêm metadados de Estoque em uma guia de metadados de ativo separada
 * Capacidade de adicionar referências de licença aos metadados do ativo
 
 ### Perfil do Asset Stock
 
-* Um usuário pode selecionar perfil Adobe Stock em *Usuário > Minhas preferências > Configuração de ações*
+* Um usuário pode selecionar o perfil do Adobe Stock em *Usuário > Minhas preferências > Configuração do Stock*
 * Referências obrigatórias e opcionais podem ser adicionadas à janela Licenciamento de ativos.
 * Capacidade de escolher a preferência de idioma para a janela Licenciamento de ativos com base na região.
 
 ### Filtro
 
-* Um usuário pode filtrar ativos de ações com base em Tipo de ativo, Orientação e Visualização similar
+* Um usuário pode filtrar ativos de estoque com base em Tipo de ativo, Orientação e Exibir semelhante
 * O tipo de ativo inclui Fotos, Ilustrações, Vetores, Vídeos, Modelos, 3D, Premium, Editorial
-* A orientação inclui horizontal, vertical e quadrada.
-* O filtro visualização semelhante requer o número do arquivo Adobe Stock
+* A orientação inclui horizontal, vertical e quadrado.
+* Exibir filtro semelhante requer o número do arquivo do Adobe Stock
 
 ### Controle de acesso
 
-* Os administradores podem fornecer permissões a determinados usuários/grupos para licenciar ativos de ações ao configurar a configuração do serviço de nuvem da Adobe Stock.
-* Se um usuário/grupo específico não tiver permissão para licenciar ativos de ações, o recurso *Pesquisa de ativos de ações / Licenciamento de ativos* será desativado.
+* Os administradores podem fornecer permissões a determinados usuários/grupos para licenciar ativos de estoque ao configurar a configuração do serviço de nuvem do Adobe Stock.
+* Se um usuário/grupo específico não tiver permissão para licenciar ativos de estoque, o recurso *Pesquisa de ativos/Licenciamento de ativos* estaria desativado.
 
 ## Configurar o Adobe Stock com o AEM Assets{#set-up-adobe-stock-with-aem-assets}
 
-AEM 6.4.2 fornece aos usuários a capacidade de pesquisar, pré-visualização, salvar e licenciar ativos da Adobe Stock diretamente da AEM. Este vídeo aborda uma rápida apresentação de como configurar o Adobe Stocks com o AEM Assets usando o Adobe I/O Console.
+O AEM 6.4.2 fornece aos usuários a capacidade de pesquisar, visualizar, salvar e licenciar ativos do Adobe Stock diretamente do AEM. Este vídeo aborda uma apresentação rápida de como configurar o Adobe Stocks com o AEM Assets usando o Console de E/S da Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
 
 >[!NOTE]
 >
->Para a configuração do serviço Adobe Stock Cloud, é necessário selecionar o Ambiente PROD e o caminho do ativo licenciado como /content/dam. O campo ambiente seria removido na próxima versão AEM e o caminho do ativo licenciado faz parte de um recurso futuro e o suporte para esse campo será introduzido na próxima AEM.
+>Para a configuração do serviço Adobe Stock Cloud, você deve selecionar o Ambiente de PROD e o caminho do ativo licenciado para /content/dam. O campo Ambiente seria removido na próxima versão do AEM e o caminho do ativo licenciado faz parte de um recurso futuro e o suporte para esse campo será introduzido na próxima versão do AEM.
 
 >[!NOTE]
 >
->A integração requer um [plano Adobe Stock corporativo](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 com pelo menos [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) implantado. Para obter AEM detalhes do service pack 6.4, consulte estas [notas de versão](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Você também precisaria de permissões de administrador para [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager para configurar a integração.
+>A integração exige um [plano corporativo do Adobe Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e o AEM 6.4 com pelo menos [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) implantado. Para obter os detalhes do service pack do AEM 6.4, consulte estas [notas de versão](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Você também precisaria de permissões de administrador para [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager para configurar a integração.
 
 ### Instalação {#installations}
 
-* Para o AEM 6.4, é necessário instalar o [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) e reinstalar o arquivo cq-dam-stock-integration-content-1.0.4.zip.
-* Verifique se você tem permissões de administrador em [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager para configurar a integração.
+* Para o AEM 6.4, você precisa instalar o [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) e depois reinstalar o arquivo cq-dam-stock-integration-content-1.0.4.zip.
+* Verifique se você tem permissões de administrador no [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e no Adobe Experience Manager para configurar a integração.
 
-#### Configurar a configuração do Adobe IMS usando o Adobe I/O Console {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
+#### Configurar o Adobe IMS usando o Console do Adobe I/O {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
-1. Criar uma configuração de conta técnica Adobe IMS em **Ferramentas > Segurança**
-2. Selecione *Solução em nuvem* como *Adobe Stock* e crie um novo certificado ou reutilize um certificado existente para a configuração.
-3. Navegue até o Adobe I/O Console e crie uma nova integração de Conta de Serviço para *Adobe Stock*.
-4. Faça upload do certificado da Etapa 2 para a integração da sua Conta de serviço da Adobe Stock.
-5. Escolha a configuração necessária do perfil Adobe Stock e conclua a integração do serviço.
-6. Use os detalhes de integração para concluir a configuração da conta técnica Adobe IMS
-7. Verifique se você pode receber o token de acesso usando a Conta técnica Adobe IMS.
+1. Criar uma configuração de conta técnica do Adobe IMS em **Ferramentas > Segurança**
+2. Selecione a *Cloud Solution* como *Adobe Stock* e crie um novo certificado ou reutilize um certificado existente para a configuração.
+3. Navegue até o Console do Adobe I/O e crie uma nova integração da Conta de Serviço para *Adobe Stock*.
+4. Faça upload do certificado da Etapa 2 para a integração da conta do Adobe Stock Service.
+5. Escolha a configuração de perfil necessária do Adobe Stock e conclua a integração de serviço.
+6. Use os detalhes de integração para concluir a configuração da conta técnica do Adobe IMS
+7. Certifique-se de receber o token de acesso usando a conta técnica do Adobe IMS.
 
 ![Conta técnica do Adobe IMS](assets/screen_shot_2018-10-22at12219pm.png)
 
-#### Configurar Adobe Stock Cloud Services {#set-up-adobe-stock-cloud-services}
+#### Configurar os serviços da Adobe Stock Cloud {#set-up-adobe-stock-cloud-services}
 
-1. Crie uma nova configuração de serviço em nuvem para Adobe Stock em **Ferramentas > Cloud Services.**
-2. Selecione a *Configuração Adobe IMS* criada na seção acima para a configuração *Adobe Stock Cloud*
+1. Crie uma nova configuração do serviço em nuvem para o Adobe Stock em **Ferramentas > Serviços em nuvem.**
+2. Selecione a *Configuração do Adobe IMS* criada na seção acima para sua configuração *Adobe Stock Cloud*
 
-3. Certifique-se de selecionar **AMBIENTE** como PROD. O ambiente de preparo não é suportado e será removido na próxima versão do AEM.
-4. **O** caminho de ativo licenciado pode ser apontado para qualquer diretório em /content/dam. O suporte a recursos para este campo será adicionado na próxima versão do AEM
+3. Certifique-se de selecionar o **AMBIENTE** como PROD. O ambiente de preparo não é suportado e será removido na próxima versão do AEM.
+4. **O** caminho do Ativo licenciado pode ser apontado para qualquer diretório em /content/dam. O suporte a recursos desse campo será adicionado na próxima versão do AEM
 5. Selecione a localidade e conclua a configuração.
-6. Você também pode adicionar usuários/grupos ao serviço da Adobe Stock Cloud para permitir o acesso de usuários ou grupos específicos.
+6. Você também pode adicionar usuários/grupos ao seu serviço Adobe Stock Cloud para ativar o acesso de usuários ou grupos específicos.
 
-![Configuração de ações do Adobe Assets](assets/screen_shot_2018-10-22at12425pm.png)
+![Configuração do Adobe Assets Stock](assets/screen_shot_2018-10-22at12425pm.png)
 
 ### Recursos adicionais
 
-* [Plano de ações da empresa](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
+* [Plano de estoque empresarial](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [Notas de versão do AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Integrar AEM e Adobe Stock](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
-* [API de integração do Adobe I/O Console](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
-* [Documentos da API do Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)
+* [Integrar o AEM e o Adobe Stock](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
+* [API de integração do console do Adobe I/O](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
+* [Documentação da API do Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)
