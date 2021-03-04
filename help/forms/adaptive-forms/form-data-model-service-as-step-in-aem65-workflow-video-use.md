@@ -3,17 +3,20 @@ title: Uso do serviço do Modelo de dados de formulário como etapa no fluxo de 
 seo-title: Uso do serviço do Modelo de dados de formulário como etapa no fluxo de trabalho do AEM 6.5
 description: O AEM Forms 6.5 apresentou a capacidade de criar variáveis no fluxo de trabalho do AEM. Com esse novo recurso usando o "Invoke Form Data Model Service" no fluxo de trabalho do AEM tornou-se muito fácil. O vídeo a seguir guiará você pelas etapas envolvidas no uso do Invoke Form Data Model Service no fluxo de trabalho do AEM.
 seo-description: O AEM Forms 6.5 apresentou a capacidade de criar variáveis no fluxo de trabalho do AEM. Com esse novo recurso usando o "Invoke Form Data Model Service" no fluxo de trabalho do AEM tornou-se muito fácil. O vídeo a seguir guiará você pelas etapas envolvidas no uso do Invoke Form Data Model Service no fluxo de trabalho do AEM.
-feature: fluxo de trabalho.
+feature: Fluxo de trabalho
 topics: workflow.
 audience: developer.
 doc-type: technical video.
 activity: setup.
 version: 6.5.
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
