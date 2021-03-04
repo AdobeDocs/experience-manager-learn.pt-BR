@@ -4,21 +4,18 @@ seo-title: Melhorias no Editor de regras no AEM Forms
 description: 'O editor de regras permite que os usuários adicionem lógica aos AEM Adaptive Forms. O AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionar inteligência. '
 seo-description: 'O editor de regras permite que os usuários adicionem lógica aos AEM Adaptive Forms. O AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionar inteligência. '
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: authoring
 audience: author
 doc-type: technical video
 activity: use
 version: 6.3,6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5
-topic: Administração
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
