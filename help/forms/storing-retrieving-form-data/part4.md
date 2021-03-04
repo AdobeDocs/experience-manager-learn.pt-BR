@@ -1,27 +1,30 @@
 ---
-title: Armazenamento e Recuperação de Dados de Formulário do Banco de Dados MySQL
-description: Tutorial de várias peças para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: adaptive-forms
+title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
+description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
-# Criar biblioteca de cliente
+# Criar biblioteca do cliente
 
-AEM Biblioteca de clientes gerencia todo o código JavaScript do lado do cliente. Para este artigo, criei um JavaScript simples para buscar os dados do formulário adaptável usando a API de ponte guia. Quando os dados do Formulário adaptável são obtidos, a chamada de POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, então precisamos executar a operação de atualização, se não for uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento click da classe .savebutton.
+A Biblioteca de clientes do AEM gerencia todo o código JavaScript do lado do cliente. Para este artigo, criei um JavaScript simples para buscar os dados do Formulário adaptável usando a API do guia bridge. Depois que os dados do Formulário adaptável são obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, então precisamos executar a operação de atualização, se não for uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento click da classe .savebutton.
 
 >[!NOTE]
 >
->A biblioteca do cliente é fornecida como parte dos ativos deste tutorial
+>A biblioteca do cliente é fornecida como parte deste tutorial de ativos
 
 ```javascript
 function getAllUrlParams(url) {
