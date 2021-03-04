@@ -1,37 +1,35 @@
 ---
-title: Uso de modelos de ativos com AEM Assets e InDesign Server
-description: 'O modelo AEM Assets permite que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. Criar folhetos de marcação, cartões de visita, folhetos, anúncios e cartões de postagem são muito mais fáceis com os Modelos de ativos quando integrados ao servidor do InDesign. '
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: all
-doc-type: feature video
-activity: use
+title: Uso de modelos de ativos com o AEM Assets e o InDesign Server
+description: O modelo de ativos AEM permite que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marcação, cartões de visita, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos, quando integrado ao servidor do InDesign.
 version: 6.3, 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 1%
 
 ---
 
 
-# Uso de modelos de ativos com AEM Assets e InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
+# Uso de modelos de ativos com o AEM Assets e o InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
 
-O modelo AEM Assets permite que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. Criar folhetos de marcação, cartões de visita, folhetos, anúncios e cartões de postagem são muito mais fáceis com os Modelos de ativos quando integrados ao servidor do InDesign.
+O modelo de ativos AEM permite que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marcação, cartões de visita, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos, quando integrado ao servidor do InDesign.
 
 >[!NOTE]
 >
->Para obter as etapas sobre como configurar o InDesign Server, consulte [Configurar modelos de ativos com o InDesign Server](asset-templates-technical-video-setup.md).
+>Para obter as etapas sobre como configurar o InDesign Server, revise [Configurar modelos de ativos com o InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Visão geral {#overview}
 
-Este vídeo apresenta os conceitos e as etapas para gerar ativos prontos para impressão no AEM, usando Adobe InDesign, Adobe InDesign Server e AEM Assets.
+Este vídeo aborda os conceitos e as etapas para gerar ativos prontos para impressão no AEM, usando o Adobe InDesign, o Adobe InDesign Server e o AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25170?quality=12&learn=on)
 
 ## Visão geral técnica {#technical-overview}
 
-Este vídeo fornece uma visão geral mais técnica da funcionalidade AEM Assets Assert Template e como AEM facilita a composição do AEM Assets e do conteúdo por meio do InDesign para criar experiências de impressão avançadas e atraentes.
+Este vídeo fornece uma visão geral mais técnica da funcionalidade AEM Assets Assert Template e como o AEM facilita a composição de AEM Assets e conteúdo por meio do InDesign para criar experiências de impressão avançadas e atraentes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17071/?quality=9&learn=on)
