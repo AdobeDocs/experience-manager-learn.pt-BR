@@ -1,7 +1,7 @@
 ---
 title: Configuração do modelo de dados de formulário
 description: Criar modelo de dados de formulário com base na fonte de dados RDBMS
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5812
 thumbnail: kt-5812.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
@@ -23,52 +26,52 @@ ht-degree: 0%
 
 ## Fonte de dados agrupada da conexão Apache Sling
 
-A primeira etapa na criação do modelo de dados de formulário RDBMS é configurar a Apache Sling Connection Pooling DataSource. Para configurar a fonte de dados, siga as etapas listadas abaixo:
+A primeira etapa na criação do modelo de dados de formulário RDBMS é configurar a fonte de dados agrupada da conexão Apache Sling. Para configurar a fonte de dados, siga as etapas listadas abaixo:
 
 * Aponte seu navegador para [configMgr](http://localhost:4502/system/console/configMgr)
-* Procure **Apache Sling Connection Pooling Data Source**
+* Procure por **Origem de Dados agrupada da Conexão Apache Sling**
 * Adicione uma nova entrada e forneça os valores conforme mostrado na captura de tela.
 * ![fonte de dados](assets/data-source.png)
-* Salvar suas alterações
+* Salve as alterações
 
 >[!NOTE]
 >O URI, o nome de usuário e a senha da conexão JDBC serão alterados dependendo da configuração do banco de dados MySQL.
 
 
-## Criando Modelo de Dados de Formulário
+## Criação do Modelo de dados de formulário
 
 * Aponte seu navegador para [Integrações de dados](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Clique em _Criar_->_Modelo de Dados de Formulário_
-* Forneça um nome significativo e um título para o modelo de dados de formulário, como **Funcionário**
+* Forneça um nome e título significativos para o modelo de dados de formulário, como **Funcionário**
 * Clique em _Avançar_
 * Selecione a fonte de dados criada na seção anterior (fóruns)
 * Clique em _Criar_->Editar para abrir o modelo de dados de formulário recém-criado no modo de edição
 * Expanda o nó _forums_ para ver o schema do funcionário. Expanda o nó do funcionário para ver as 2 tabelas
 
-## Adicionar entidades ao seu modelo
+## Adicionar entidades ao modelo
 
-* Verifique se o nó do funcionário está expandido
-* Selecione as entidades atuais e de beneficiários e clique em _Adicionar Selecionados_
+* Certifique-se de que o nó do funcionário seja expandido
+* Selecione as entidades de novos e beneficiários e clique em _Adicionar Selecionados_
 
-## Adicionar Serviço de Leitura à entidade nova
+## Adicionar Serviço de Leitura a qualquer entidade
 
 * Selecionar entidade nova
-* Clique em _Editar propriedades_
+* Clique em _Editar Propriedades_
 * Selecione obter na lista suspensa Serviço de leitura
 * Clique no ícone + para adicionar um parâmetro ao serviço get
 * Especifique os valores como mostrado na captura de tela
 * ![get-service](assets/get-service.png)
 >[!NOTE]
-> O serviço get espera um valor mapeado para a coluna empID da entidade nova.Há várias maneiras de passar esse valor e neste tutorial, a empID será transmitida pelo parâmetro de solicitação chamado empID.
+> O serviço get espera um valor mapeado para a coluna empID de uma entidade nova.Há várias maneiras de transmitir esse valor e, neste tutorial, a empID será passada pelo parâmetro de solicitação chamado empID.
 * Clique em _Concluído_ para salvar os argumentos para o serviço get
 * Clique em _Concluído_ para salvar as alterações no modelo de dados de formulário
 
-## Adicionar associação entre duas entidades
+## Adicionar Associação entre duas entidades
 
-As associações definidas entre entidades de banco de dados não são criadas automaticamente no modelo de dados de formulário. As associações entre entidades precisam ser definidas usando o editor de modelo de dados de formulário. Todas as entidades envolvidas podem ter um ou mais beneficiários, precisamos de definir uma associação entre as entidades receptoras e as entidades beneficiárias.
-As etapas a seguir o guiarão pelo processo de criação da associação um para muitos
+As associações definidas entre entidades de banco de dados não são criadas automaticamente no modelo de dados de formulário. As associações entre entidades precisam ser definidas usando o editor de modelo de dados de formulário. Cada entidade pode ter um ou mais beneficiários, precisamos definir uma associação de um para muitos entre as entidades do país e os beneficiários.
+As etapas a seguir guiarão você pelo processo de criação da associação um para muitos
 
-* Selecione a entidade nova e clique em _Adicionar Associação_
+* Selecione qualquer entidade e clique em _Adicionar Associação_
 * Forneça um Título significativo e um identificador para a associação e outras propriedades, conforme mostrado na captura de tela abaixo
    ![associação](assets/association-entities-1.png)
 
@@ -76,15 +79,15 @@ As etapas a seguir o guiarão pelo processo de criação da associação um para
 
 * Especificar valores como mostrado nesta captura de tela
 * ![associação-2](assets/association-entities.png)
-* **Estamos ligando as duas entidades usando a coluna empID de beneficiários e entidades novas.**
-* Clique em _Concluído_ para salvar as alterações
+* **Estamos vinculando as duas entidades usando a coluna empID de beneficiários e novas entidades.**
+* Clique em _Concluído_ para salvar suas alterações
 
 ## Testar seu modelo de dados de formulário
 
-Nosso modelo de dados de formulário agora tem o serviço **_get_** que aceita empID e retorna os detalhes da empresa e seus beneficiários. Para testar o serviço get, siga as etapas listadas abaixo.
+Nosso modelo de dados de formulário agora tem o serviço **_get_** que aceita empID e retorna os detalhes do novo e de seus beneficiários. Para testar o serviço get, siga as etapas listadas abaixo.
 
 * Selecionar entidade nova
-* Clique em _Testar objeto de modelo_
+* Clique em _Objeto de Modelo de Teste_
 * Forneça empID válido e clique em _Testar_
-* Deve obter os resultados apresentados na captura de ecrã abaixo
+* Você deve obter os resultados conforme mostrado na captura de tela abaixo
 * ![test-fdm](assets/test-form-data-model.png)
