@@ -1,16 +1,19 @@
 ---
 title: Exportação dos dados de formulário enviados no formato CSV
 description: Exportar dados de formulário adaptável enviados no formato CSV
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 0%
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
