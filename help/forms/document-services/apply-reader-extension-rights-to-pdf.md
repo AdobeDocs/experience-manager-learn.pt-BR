@@ -1,6 +1,6 @@
 ---
-title: Como renderizar XDP em PDF com direitos de uso
-seo-title: Como renderizar XDP em PDF com direitos de uso
+title: Renderização do XDP em PDF com direitos de uso
+seo-title: Renderização do XDP em PDF com direitos de uso
 description: Aplicar direitos de uso ao pdf
 seo-description: Aplicar direitos de uso ao pdf
 uuid: 5e60c61e-821d-439c-ad89-ab169ffe36c0
@@ -9,23 +9,26 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-feature: forms-service
+feature: Serviço do Forms
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
 
-# Aplicação de extensões Reader
+# Aplicação de extensões do leitor
 
-Extensões de Reader permitem manipular direitos de uso em documentos PDF. Os direitos de uso pertencem à funcionalidade disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões de Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. DOCUMENTOS PDF com direitos de uso adicionados são chamados de documentos com direitos ativados. Um usuário que abre um documento PDF com direitos ativados no Adobe Reader pode executar as operações ativadas para esse documento.
+As Extensões de leitura permitem manipular direitos de uso em documentos PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas Extensões do Leitor inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos PDF que têm direitos de uso adicionados são chamados de documentos ativados por direitos. Um usuário que abre um documento PDF com direitos ativados no Adobe Reader pode executar as operações ativadas para esse documento.
 Para testar esse recurso, você pode tentar este [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0). O nome da amostra é &quot;Renderizar XDP com RE&quot;
 
-Para realizar esse caso de uso, é necessário fazer o seguinte:
-* Adicione o certificado de extensões de Reader ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões de Reader estão listadas [aqui](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+Para realizar esse caso de uso, precisamos fazer o seguinte:
+* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais das Extensões de Leitor são listadas [aqui](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Crie um serviço OSGi personalizado que aplicará direitos de uso aos documentos. O código para fazer isso está listado abaixo
 
@@ -69,10 +72,10 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 
 ## Criar servlet para transmitir o PDF {#create-servlet-to-stream-the-pdf}
 
-A próxima etapa é criar um servlet com um método POST para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores pdf que vêm com os navegadores não lidam com pdf dinâmicos.
+A próxima etapa é criar um servlet com um método POST para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
 
-A seguir está o código do servlet. O servlet será chamado da ação **customsubmit** do Formulário Adaptive.
-O servlet cria um objeto UsageRights e define suas propriedades com base nos valores inseridos pelo usuário no Formulário adaptável. O servlet então chama o método **applyUsageRights** do serviço criado para essa finalidade.
+A seguir, o código do servlet. O servlet será chamado da ação **customsubmit** do Formulário adaptável.
+O servlet cria o objeto UsageRights e o define com base nos valores inseridos pelo usuário no Formulário adaptável. O servlet então chama o método **applyUsageRights** do serviço criado para essa finalidade.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -189,15 +192,15 @@ try {
 }
 ```
 
-Para testar isso no servidor local, siga as seguintes etapas:
+Para testar isso em seu servidor local, siga as seguintes etapas:
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Baixe e instale o pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Isso tem o serviço personalizado e o servlet para aplicar direitos de uso e transmitir o pdf de volta
-1. [Importar as bibliotecas do cliente e enviar personalizado](assets/applyaresdemo.zip)
-1. [Importe o formulário adaptativo](assets/applyaresform.zip)
-1. Adicionar certificado de extensões de Reader ao usuário &quot;fd-service&quot;
-1. [Formulário adaptável de pré-visualização](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
+1. [Baixe e instale o pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Isso tem o serviço personalizado e o servlet para aplicar direitos de uso e retornar o pdf
+1. [Importe as bibliotecas do cliente e envie personalizado](assets/applyaresdemo.zip)
+1. [Importar o formulário adaptável](assets/applyaresform.zip)
+1. Adicionar certificado de extensões do leitor ao usuário &quot;fd-service&quot;
+1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecione os direitos apropriados e faça upload do arquivo PDF
-1. Clique em Enviar para obter um PDF estendido para Reader
+1. Clique em Enviar para obter o PDF estendido do leitor
 
 
 
