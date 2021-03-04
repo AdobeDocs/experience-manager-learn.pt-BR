@@ -1,26 +1,25 @@
 ---
-title: Schemas de pastas de metadados
-description: Os schemas de pastas de metadados permitem que os usuários gerenciem e revisem metadados associados às próprias pastas de ativos, em vez de diretamente nos ativos.
+title: Esquemas da pasta de metadados
+description: Os esquemas de pastas de metadados permitem que os usuários gerenciem e revisem metadados associados às próprias pastas de ativos, em vez de diretamente nos ativos.
 sub-product: ativos
-feature: metadata-schemas
-topics: configuring, content-architecture, metadata
-audience: administrator, implementer
-doc-type: feature video
-activity: use
+feature: Metadados
 version: cloud-service
 kt: 4983
 thumbnail: 34071.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 0%
+source-wordcount: '53'
+ht-degree: 5%
 
 ---
 
 
-# Schemas de pastas de metadados
+# Esquemas da pasta de metadados
 
-Os schemas de pastas de metadados permitem que os usuários gerenciem e revisem metadados associados às próprias pastas de ativos, em vez de diretamente nos ativos.
+Os esquemas de pastas de metadados permitem que os usuários gerenciem e revisem metadados associados às próprias pastas de ativos, em vez de diretamente nos ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34071/?quality=12&learn=on&hidetitle=true)
