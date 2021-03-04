@@ -4,17 +4,20 @@ seo-title: Gerar PDF a partir do envio de formulário HTML5
 description: Gerar PDF a partir do envio do formulário móvel
 seo-description: Gerar PDF a partir do envio do formulário móvel
 uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: formulários móveis
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
