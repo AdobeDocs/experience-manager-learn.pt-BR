@@ -1,7 +1,7 @@
 ---
 title: Criar serviço OSGi
-description: Criar serviço OSGi para armazenar os formulários a serem assinados
-feature: adaptive-forms
+description: Crie o serviço OSGi para armazenar os formulários a serem assinados
+feature: Fluxo de trabalho
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,25 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
 
 # Criar serviço OSGi
 
-O código a seguir foi gravado para armazenar os formulários que precisam ser assinados. Cada formulário a ser assinado está associado a um GUID exclusivo e a uma ID do cliente. Portanto, um ou mais formulários podem ser associados à mesma ID do cliente, mas terão uma GUID exclusiva atribuída ao formulário.
+O código a seguir foi gravado para armazenar os formulários que precisam ser assinados. Cada formulário a ser assinado está associado a um guia exclusivo e a uma ID do cliente. Assim, um ou mais formulários podem ser associados à mesma ID do cliente, mas terão uma GUID exclusiva atribuída ao formulário.
 
 ## Interface
 
-A seguir está a declaração da interface usada
+Veja a seguir a declaração de interface que foi usada
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -43,7 +46,7 @@ public interface SignMultipleForms
 
 ## Inserir dados
 
-O método insert data insere uma linha no banco de dados identificado pela fonte de dados. Cada linha no banco de dados corresponde a um formulário e é identificada exclusivamente por um GUID e uma ID do cliente. Os dados do formulário e o URL do formulário também são armazenados nessa linha. A coluna de status indica se o formulário foi preenchido e assinado. O valor 0 indica que o formulário ainda não foi assinado.
+O método insert data insere uma linha no banco de dados identificado pela fonte de dados. Cada linha no banco de dados corresponde a um formulário e é identificada exclusivamente por um GUID e ID do cliente. Os dados do formulário e o URL do formulário também são armazenados nesta linha. A coluna status indica se o formulário foi preenchido e assinado. O valor 0 indica que o formulário ainda não foi assinado.
 
 ```java
 @Override
@@ -105,7 +108,7 @@ log.debug(e.getMessage());
 
 ## Obter dados do formulário
 
-O código a seguir é usado para buscar dados de formulário adaptáveis associados ao GUID fornecido. Os dados do formulário são usados para preencher previamente o formulário adaptável.
+O código a seguir é usado para buscar dados de formulário adaptáveis associados ao GUID especificado. Os dados do formulário são usados para preencher previamente o formulário adaptável.
 
 ```java
 @Override
@@ -130,9 +133,9 @@ public String getFormData(String guid) {
 }
 ```
 
-## Atualizar status da assinatura
+## Atualizar Status da Assinatura
 
-A conclusão com êxito da cerimônia de assinatura aciona um fluxo de trabalho AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados da linha identificada pelo guid e pela ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável será preenchido com esses dados e o valor do elemento de dados assinado nos dados xml será usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa do processo personalizado.
+A conclusão bem-sucedida da cerimônia de assinatura aciona um fluxo de trabalho do AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados da linha identificada pelo guid e pela ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável será preenchido com esses dados e o valor do elemento de dados assinado nos dados xml será usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa do processo personalizado.
 
 
 ```java
@@ -166,7 +169,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obter o próximo formulário para assinar
 
-O código a seguir foi usado para obter o próximo formulário para assinatura de uma determinada ID do cliente com um status de 0. Se o query sql não retornar nenhuma linha, retornaremos a string **&quot;AllDone&quot;**, que indica que não há mais formulários para assinatura para a id do cliente em questão.
+O código a seguir foi usado para obter o próximo formulário para assinatura de uma determinada customerID com status 0. Se a consulta sql não retornar nenhuma linha, retornamos a string **&quot;AllComplete&quot;**, que indica que não há mais formulários para assinatura para a id do cliente em questão.
 
 ```java
 @Override
@@ -206,4 +209,4 @@ public String getNextFormToSign(int customerID) {
 
 ## Ativos
 
-O pacote OSGi com os serviços mencionados acima pode ser [baixado daqui](assets/sign-multiple-forms.jar)
+O pacote OSGi com os serviços mencionados acima pode ser [baixado aqui](assets/sign-multiple-forms.jar)
