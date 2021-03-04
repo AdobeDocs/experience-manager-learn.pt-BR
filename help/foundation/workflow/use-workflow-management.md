@@ -1,17 +1,22 @@
 ---
 title: Como gerenciar o fluxo de trabalho no AEM
-description: 'AEM Gerenciamento de fluxo de trabalho fornece ao usuário mais visibilidade sobre o conteúdo em fluxo de trabalho e permite gerenciamento mais fácil das definições do modelo de fluxo de trabalho. '
-version: 6.5, cloud-service
+description: 'O gerenciamento de fluxo de trabalho do AEM fornece ao usuário mais visibilidade sobre o conteúdo em fluxo de trabalho e facilita o gerenciamento das definições do modelo de fluxo de trabalho. '
+version: 6.5
+sub-product: fundação, sites, ativos
 feature: Fluxo de trabalho
-topic: Gerenciamento de conteúdo
-role: Administrador
-level: Intermediário
+topics: governance, collaboration
+activity: use
+audience: administrator
+doc-type: feature video
+topic: Colaboração
+role: Desenvolvedor
+level: Iniciante
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt
-source-git-commit: 46dead200ec61acf9fdf537f18818f5bb60dbc90
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '138'
 ht-degree: 2%
 
 ---
@@ -21,18 +26,18 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27848/?quality=12&learn=on)
 
-Os seguintes aspectos do gerenciamento de fluxo de trabalho são explorados neste vídeo:
+Os seguintes aspectos do gerenciamento de workflow são explorados neste vídeo:
 
-+ Habilitando metadados de fluxo de trabalho em configurações de visualização de lista.
-+ Navegar até a linha do tempo do fluxo de trabalho para conteúdo em AEM
-+ Personalização de um fluxo de trabalho fornecido pela AEM
++ Ativação de metadados de fluxo de trabalho em configurações de exibição de lista.
++ Navegar até a linha do tempo do fluxo de trabalho para conteúdo no AEM
++ Personalização de um fluxo de trabalho fornecido pelo AEM
 + Publicação rápida para [!DNL Workflow Models] e [!DNL Launchers]
 + Gerenciamento de publicação para [!DNL Workflow Models] e [!DNL Launchers]
-+ Reverter alterações feitas em um Modelo de Fluxo de Trabalho ou Iniciadores
++ Reverter alterações feitas em um Modelo de fluxo de trabalho ou Iniciadores
 
-Este vídeo usa [!DNL Workflow Models] para demonstrar esse conjunto de recursos, no entanto, eles também se aplicam a [!DNL AEM Launchers].
+Este vídeo usa [!DNL Workflow Models] para demonstrar esse conjunto de recursos, no entanto, também se aplica a [!DNL AEM Launchers].
 
 
 >[!NOTE]
 >
-> O vídeo usa a AEM Sites para demonstrar o recurso de metadados de status do fluxo de trabalho. Os metadados de status do fluxo de trabalho também são aplicáveis ao AEM Assets. Para ver o status do fluxo de trabalho nos ativos, verifique se a visualização da lista está ativada.
+> O vídeo usa o AEM Sites para demonstrar o recurso de metadados do status do fluxo de trabalho. Os metadados de status de fluxo de trabalho também se aplicam aos ativos AEM. Para ver o status do fluxo de trabalho nos ativos, verifique se a exibição em lista está ativada.
