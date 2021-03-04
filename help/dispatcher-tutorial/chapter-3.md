@@ -1,10 +1,12 @@
 ---
 title: Capítulo 3 - Tópicos avançados de cache
+seo-title: Cache do AEM Dispatcher Demystified - Capítulo 3 - Tópicos avançados de cache
 description: O Capítulo 3 do tutorial Demystified Cache do AEM Dispatcher aborda como superar as limitações discutidas no Capítulo 2.
+seo-description: O Capítulo 3 do tutorial Demystified Cache do AEM Dispatcher aborda como superar as limitações discutidas no Capítulo 2.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
