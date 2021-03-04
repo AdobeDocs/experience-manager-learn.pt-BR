@@ -1,7 +1,7 @@
 ---
 title: Criar formulário adaptável
-description: Criar e configurar formulários adaptáveis para usar o serviço de preenchimento prévio do modelo de dados de formulário
-feature: adaptive-forms
+description: Criar e configurar um formulário adaptável para usar o serviço de preenchimento prévio do modelo de dados de formulário
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
+topic: Desenvolvimento
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ Até agora criamos o seguinte
 * Fonte de dados agrupada da conexão Apache Sling configurada
 * Modelo de dados de formulário baseado em RDBMS
 
-A próxima etapa é criar e configurar um formulário adaptável para usar o modelo de dados do formulário.  Para obter o start principal, você pode [baixar e importar](assets/fdm-demo-af.zip) formulário de amostra. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para a lista dos beneficiários do funcionário.
+A próxima etapa é criar e configurar um formulário adaptável para usar o modelo de dados de formulário.  Para obter o início do cabeçalho, você pode [baixar e importar](assets/fdm-demo-af.zip) formulário de amostra. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para listar os beneficiários do funcionário.
 
 ## Associar formulário ao modelo de dados de formulário
 
@@ -35,24 +38,24 @@ O formulário de amostra fornecido com esse curso não está associado a nenhum 
 * Selecione o formulário FDMDemo
 * Clique em _Propriedades_->_Modelo de Formulário_
 * Selecione Modelo de dados de formulário na lista suspensa
-* Pesquise e selecione seu Modelo de dados de formulário criado na lição anterior.
+* Pesquise e selecione o Modelo de dados de formulário criado na lição anterior.
 * Clique em _Salvar e fechar_
 
-## Configurar o serviço de Prefill
+## Configurar o serviço de preenchimento prévio
 
 A primeira etapa é associar o serviço de preenchimento prévio ao formulário. Para associar o serviço de preenchimento prévio, siga as etapas mencionadas abaixo
 
 * Selecione o formulário `FDMDemo`
 * Clique em _Editar_ para abrir o formulário no modo de edição
-* Selecione Container de formulário na hierarquia de conteúdo e clique no ícone de chave para abrir sua folha de propriedades
-* Selecione _Serviço de Pré-preenchimento do Modelo de Dados de Formulário_ na lista suspensa Serviço de Pré-preenchimento
+* Selecione Contêiner de formulário na hierarquia de conteúdo e clique no ícone de chave de fenda para abrir sua folha de propriedades
+* Selecione _Serviço de preenchimento prévio do modelo de dados de formulário_ na lista suspensa Serviço de preenchimento prévio
 * Clique em azul ☑ para salvar suas alterações
 
 * ![serviço de preenchimento prévio](assets/fdm-prefill.png)
 
 ## Configurar Detalhes do Funcionário
 
-A próxima etapa é vincular os campos de texto do Formulário adaptável aos elementos do Modelo de dados de formulário. Será necessário abrir a folha de propriedades dos seguintes campos e definir bindRef como mostrado abaixo
+A próxima etapa é vincular os campos de texto do Formulário adaptável aos elementos do Modelo de dados de formulário. Será necessário abrir a folha de propriedades dos seguintes campos e definir o bindRef como mostrado abaixo
 
 
 | Nome do campo | Ref. de Ligação |
@@ -62,54 +65,54 @@ A próxima etapa é vincular os campos de texto do Formulário adaptável aos el
 
 >[!NOTE]
 >
->Sinta-se à vontade para adicionar campos de texto adicionais e vinculá-los aos elementos apropriados do modelo de dados de formulário
+>Você pode adicionar campos de texto adicionais e vinculá-los aos elementos apropriados do modelo de dados de formulário
 
-## Configurar tabela de beneficiários
+## Configurar Tabela de Beneficiários
 
-O próximo passo é exibir os beneficiários do funcionário de forma tabular. O formulário de amostra fornecido tem uma tabela com 4 colunas e uma única linha. Precisamos configurar o quadro para que cresça dependendo do número de beneficiários.
+O próximo passo é exibir os beneficiários do funcionário de forma tabular. O formulário de amostra fornecido tem uma tabela com 4 colunas e uma única linha. Precisamos configurar a tabela para crescer dependendo do número de beneficiários.
 
 * Abra o formulário no modo de edição.
-* Expandir painel raiz->Seus beneficiários->Tabela
-* Selecione Linha1 e clique no ícone de chave para abrir sua folha de propriedades.
-* Defina a Referência de vínculo como **/newhire/GetEmployeeBenaries**
-* Defina Repeat Settings (Repetir configurações) - Minimum Count (Contagem mínima) como 1 e Maximum Count (Contagem máxima) como 5.
-* A configuração da sua linha1 deve ser parecida com a captura de tela abaixo
-   ![configuração de linha](assets/configure-row.PNG)
-* Clique na ☑ azul para salvar suas alterações
+* Expanda o painel raiz->Seus beneficiários->Tabela
+* Selecione Linha1 e clique no ícone da chave de fenda para abrir sua folha de propriedades.
+* Defina a Referência de vinculação para **/new/GetEmployeeBeneficiaries**
+* Defina as Configurações de repetição - Contagem mínima para 1 e Contagem máxima para 5.
+* A configuração da Linha1 deve ser parecida com a captura de tela abaixo
+   ![row-configure](assets/configure-row.PNG)
+* Clique no ☑ azul para salvar as alterações
 
-## Vincular células de linha
+## Vincular células da linha
 
-Por fim, precisamos vincular as células Linha aos elementos do Modelo de dados de formulário.
+Por fim, precisamos vincular as células de Linha aos elementos do Modelo de dados de formulário.
 
 * Expanda o painel raiz->Seus beneficiários->Tabela->Linha1
-* Defina a Referência de vínculo de cada célula de linha de acordo com a tabela abaixo
+* Definir a Referência de associação de cada célula de linha de acordo com a tabela abaixo
 
 | Célula da linha | Referência de vinculação |
 |------------|----------------------------------------------|
-| Nome | /newhire/GetWorkersBeneficiaries/firstname |
-| Sobrenome | /newhire/GetWorkersBeneficiaries/lastname |
-| Relação | /newhire/GetWorkersBeneficiaries/relation |
-| Porcentagem | /newhire/GetWorkersBeneficiaries/percentual |
+| Nome | /newhire/GetEmployeeBeneficiaries/firstname |
+| Sobrenome | /newhire/GetEmployeeBeneficiaries/lastname |
+| Relação | /new/GetEmployeeBeneficiaries/relation |
+| Porcentagem | /new/GetEmployeeBeneficiaries/percentual |
 
-* Clique na ☑ azul para salvar suas alterações
+* Clique no ☑ azul para salvar as alterações
 
-## Testar seu formulário
+## Teste seu formulário
 
-Agora, precisamos abrir o formulário com a empID apropriada no url. Os 2 links a seguir preencherão formulários com informações do banco de dados
+Agora precisamos abrir o formulário com a empID apropriada no url. Os 2 links a seguir preencherão formulários com informações do Banco de Dados
 [Formulário com empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
 [Formulário com empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Resolução de problemas
 
-Meu formulário está em branco e não possui dados
+Meu formulário está em branco e não tem dados
 
-* Verifique se o modelo de dados de formulário está retornando os resultados corretos.
+* Certifique-se de que o modelo de dados de formulário esteja retornando os resultados corretos.
 * O formulário está associado ao Modelo de dados de formulário correto
-* Verificar os vínculos de campo
-* Verifique o arquivo de log stdout. Você deve ver empID sendo gravado no arquivo.Se você não vir esse valor, o formulário pode não estar usando o modelo personalizado fornecido.
+* Verificar vínculos de campo
+* Verifique o arquivo de log de stdout. Você deve ver o empID sendo gravado no arquivo.Se você não vir esse valor, o formulário pode não estar usando o modelo personalizado fornecido.
 
-A tabela não está preenchida
+Tabela não preenchida
 
-* Verifique o vínculo de Linha1
-* Verifique se as configurações de repetição para Row1 estão definidas corretamente (Min = 1 e Max = 5 ou mais)
+* Verificar o vínculo da Linha1
+* Verifique se as configurações de repetição para Linha1 estão definidas corretamente (Min = 1 e Max = 5 ou mais)
 
