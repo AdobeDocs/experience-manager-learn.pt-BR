@@ -1,28 +1,31 @@
 ---
-title: Uso do serviço Assembler no AEM Forms
-seo-title: Uso do serviço Assembler no AEM Forms
-description: Uso do Assembler Service no AEM Forms para montar vários arquivos pdf
-seo-description: Uso do Assembler Service no AEM Forms para montar vários arquivos pdf
+title: Uso do Serviço Assembler no AEM Forms
+seo-title: Uso do Serviço Assembler no AEM Forms
+description: Uso do Assembler Service no AEM Forms para reunir vários arquivos pdf
+seo-description: Uso do Assembler Service no AEM Forms para reunir vários arquivos pdf
 uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
-feature: assembler
+feature: Assembler
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
 
-# Uso do serviço Assembler no AEM Forms{#using-assembler-service-in-aem-forms}
+# Uso do Serviço Assembler no AEM Forms{#using-assembler-service-in-aem-forms}
 
-Este artigo fornece os ativos para demonstrar a capacidade de arrastar e soltar vários arquivos PDF no navegador e salvar o arquivo pdf montado em seu sistema de arquivos. A seguir está o código do servlet que monta os arquivos pdf carregados usando o navegador.
+Este artigo fornece os ativos para demonstrar a capacidade de arrastar e soltar vários arquivos PDF no navegador e salvar o arquivo pdf montado em seu sistema de arquivos. Este é o código do servlet que monta os arquivos pdf carregados por meio do navegador.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -105,28 +108,28 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-Para obter esse recurso funcionando no servidor AEM
+Para que esse recurso funcione no servidor AEM
 
-* Baixe [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) no sistema local.
-* Carregue e instale o pacote usando o [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
-* Baixar[Pacote de serviços de Documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Baixar [Desenvolvimento com o pacote de usuários de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Implantar e start os pacotes usando o [console da Web felix](http://localhost:4502/system/console/bundles)
-* Aponte seu navegador para [AssemblyPdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Baixe o [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) em seu sistema local.
+* Carregue e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Baixar[Pacote de serviços de documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Baixe [Desenvolvimento com o pacote de usuários de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Implante e inicie os pacotes usando o [console da Web felix](http://localhost:4502/system/console/bundles)
+* Aponte seu navegador para [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Arraste e solte alguns arquivos de arquivos PDF
 
 >[!NOTE]
 >
->Verifique se a instalação do AEM Forms foi concluída. Todos os seus pacotes precisam estar no estado ativo.
+>Certifique-se de que a instalação do AEM Forms está concluída. Todos os seus pacotes precisam estar no estado ativo.
 >
->Verifique se você adicionou - as bibliotecas delegadas de inicialização RSA e BouncyCastle, conforme mencionado neste [Instalação do AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Certifique-se de ter adicionado - As bibliotecas RSA e BouncyCastle do delegado de inicialização são mencionadas neste [Instalando AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avisos para esta demonstração**
 >
 > * O código não lida com documentos PDF baseados em XFA
    >
    > 
-* Certifique-se de arrastar e soltar somente arquivos PDF
+* Certifique-se de arrastar e soltar arquivos PDF somente
 >
 >
 
