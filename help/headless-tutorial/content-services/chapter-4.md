@@ -1,12 +1,16 @@
 ---
 title: Capítulo 4 - Definição de modelos de serviços de conteúdo - Serviços de conteúdo
-seo-title: Introdução ao AEM sem cabeçalho - Capítulo 4 - Definição de modelos de serviços de conteúdo
-description: O Capítulo 4 do tutorial AEM sem cabeçalho aborda a função AEM Modelos editáveis no contexto AEM Content Services. Modelos editáveis são usados para definir a estrutura de conteúdo JSON AEM os Serviços de conteúdo serão expostos.
-seo-description: O Capítulo 4 do tutorial AEM sem cabeçalho aborda a função AEM Modelos editáveis no contexto AEM Content Services. Modelos editáveis são usados para definir a estrutura de conteúdo JSON AEM os Serviços de conteúdo serão expostos.
+seo-title: Introdução ao AEM Headless - Capítulo 4 - Definição de modelos de serviços de conteúdo
+description: O Capítulo 4 do tutorial AEM Headless cobre a função de Modelos editáveis do AEM no contexto dos Serviços de conteúdo do AEM. Modelos editáveis são usados para definir a estrutura de conteúdo JSON que os AEM Content Services irão expor.
+seo-description: O Capítulo 4 do tutorial AEM Headless cobre a função de Modelos editáveis do AEM no contexto dos Serviços de conteúdo do AEM. Modelos editáveis são usados para definir a estrutura de conteúdo JSON que os AEM Content Services irão expor.
+feature: '"Fragmentos de conteúdo, APIs"'
+topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -14,57 +18,57 @@ ht-degree: 0%
 
 # Capítulo 4 - Definição de modelos de serviços de conteúdo
 
-O Capítulo 4 do tutorial AEM sem cabeçalho aborda a função AEM Modelos editáveis no contexto AEM Content Services. Modelos editáveis são usados para definir a estrutura de conteúdo JSON AEM os Serviços de conteúdo são expostos aos clientes por meio da composição dos Serviços de conteúdo ativados AEM Componentes.
+O Capítulo 4 do tutorial AEM Headless cobre a função de Modelos editáveis do AEM no contexto dos Serviços de conteúdo do AEM. Modelos editáveis são usados para definir a estrutura de conteúdo JSON que os AEM Content Services expõe aos clientes por meio da composição de Componentes do AEM habilitados para Content Services.
 
-## Como entender a função de Modelos no AEM Content Services
+## Noções básicas sobre a função dos modelos nos serviços de conteúdo do AEM
 
-AEM Modelos editáveis são usados para definir os pontos finais HTTP que serão acessados para expor o conteúdo do Evento como JSON.
+Modelos editáveis do AEM são usados para definir os pontos finais HTTP que serão acessados para expor o conteúdo do Evento como JSON.
 
-Tradicionalmente AEM Modelos editáveis são usados para definir páginas da Web, no entanto, esse uso é uma simples convenção. Modelos editáveis podem ser usados para compor **qualquer** conjunto de conteúdo; como esse conteúdo é acessado: como um HTML em um navegador, como JSON consumido pelo JavaScript (AEM SPA Editor) ou um aplicativo móvel é uma função da forma como essa página é solicitada.
+Tradicionalmente, os Modelos editáveis do AEM são usados para definir páginas da Web, no entanto, esse uso é simplesmente uma convenção. Modelos editáveis podem ser usados para compor **qualquer** conjunto de conteúdo; como esse conteúdo é acessado: como um HTML em um navegador, como JSON consumido pelo JavaScript (Editor SPA do AEM) ou um Aplicativo móvel é uma função de como essa página é solicitada.
 
-AEM Content Services, modelos editáveis são usados para definir como os dados JSON são expostos.
+Nos Serviços de conteúdo do AEM, os modelos editáveis são usados para definir como os dados JSON são expostos.
 
-Para o aplicativo [!DNL WKND Mobile], criaremos um único Modelo editável que será usado para direcionar um único terminal de API. Embora este exemplo seja simples de ilustrar os conceitos de AEM sem cabeçalho, você pode criar várias páginas (ou pontos de extremidade) cada uma expondo diferentes conjuntos de conteúdo para criar uma API mais complexa e mais organizada.
+Para o aplicativo [!DNL WKND Mobile], criaremos um modelo editável único que será usado para direcionar um único endpoint da API. Embora este exemplo seja simples de ilustrar os conceitos do AEM Headless, você pode criar várias páginas (ou endpoints) cada uma expondo diferentes conjuntos de conteúdo para criar uma API mais complexa e mais organizada.
 
-## Como entender o ponto final da API
+## Noções básicas do ponto final da API
 
-Para entender como compor nosso terminal de API e entender qual conteúdo deve ser exposto ao [!DNL WKND Mobile] aplicativo, vamos revisitar o design.
+Para entender como compor nosso ponto de extremidade de API e entender qual conteúdo deve ser exposto ao nosso [!DNL WKND Mobile] aplicativo, vamos revisitar o design.
 
-![Decomposição da página da API de eventos](./assets/chapter-4/design-to-component-mapping.png)
+![Decomposição da página da API Eventos](./assets/chapter-4/design-to-component-mapping.png)
 
 Como podemos ver, temos três conjuntos lógicos de conteúdo para fornecer ao aplicativo móvel.
 
 1. O **Logo**
-2. A **Linha de tag**
+2. A **Linha de Tag**
 3. A lista de **Eventos**
 
-Para fazer isso, podemos mapear esses requisitos para AEM Componentes (e, no nosso caso, AEM Componentes principais do WCM) para expor o conteúdo necessário como JSON.
+Para fazer isso, podemos mapear esses requisitos para os Componentes do AEM (e, no nosso caso, os Componentes principais do WCM no AEM) para expor o conteúdo necessário como JSON.
 
-1. O **logotipo** será exibido por meio de um **componente de imagem**
-2. O **Linha de tag** será exibido por meio de um **componente de texto**
-3. A lista de **Eventos** será exibida por meio de um **componente de Lista do fragmento de conteúdo** que, por sua vez, faz referência a um conjunto de Fragmentos de conteúdo do Evento.
+1. O **Logotipo** será exibido por meio de um **Componente de imagem**
+2. O **Linha de Tag** será exibido por meio de um **Componente de texto**
+3. A lista de **Eventos** será exibida por meio de um **componente da Lista de fragmentos de conteúdo** que, por sua vez, faz referência a um conjunto de Fragmentos de conteúdo de evento.
 
 >[!NOTE]
 >
->Para suportar AEM exportação JSON de Páginas e Componentes do Serviço de Conteúdo, as Páginas e os Componentes devem **derivar AEM Componentes Principais WCM**.
+>Para ser compatível com a exportação JSON de páginas e componentes do AEM Content Service, as páginas e os componentes devem **derivar dos Componentes principais do WCM AEM**.
 >
->[AEM Componentes principais do WCM ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) têm funcionalidade integrada para suportar um schema JSON normalizado de Páginas e Componentes exportados. Todos os componentes do WKND Mobile usados neste tutorial (Página, Imagem, Texto e Lista de fragmento de conteúdo) são derivados AEM Componentes principais do WCM.
+>[Os ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components) Componentes principais do WCM no AEM têm funcionalidade integrada para suportar um esquema JSON normalizado de páginas e componentes exportados. Todos os componentes WKND Mobile usados neste tutorial (Página, Imagem, Texto e Lista de fragmentos de conteúdo) são derivados dos Componentes principais WCM do AEM.
 
-## Definição do modelo de API de Eventos
+## Como definir o modelo da API de eventos
 
 1. Navegue até **[!UICONTROL Ferramentas] > [!UICONTROL Geral] > [!UICONTROL Modelos] >[!DNL WKND Mobile]**.
 
 1. Crie o modelo **[!DNL Events API]**:
 
-   1. Toque em **[!UICONTROL Criar]** na barra de ação superior
+   1. Toque em **[!UICONTROL Criar]** na barra de ações superior
    1. Selecione o modelo **[!DNL WKND Mobile - Empty Page]**
    1. Toque em **[!UICONTROL Próximo]** na barra de ação superior
-   1. Digite **[!DNL Events API]** no campo [!UICONTROL Título do modelo]
-   1. Toque em **[!UICONTROL Criar]** na barra de ação superior
+   1. Insira **[!DNL Events API]** no campo [!UICONTROL Título do modelo]
+   1. Toque em **[!UICONTROL Criar]** na barra de ações superior
    1. Toque em **[!UICONTROL Abrir]** para abrir o novo modelo para edição
 
-1. Primeiro, permitimos que os três componentes AEM identificados precisem modelar o conteúdo editando a [!UICONTROL Política] da Raiz [!UICONTROL Container de layout]. Verifique se o modo **[!UICONTROL Estrutura]** está ativo, selecione **[!DNL Layout Container \[Root\]]** e toque no botão **[!UICONTROL Política]**.
-1. Em **[!UICONTROL Propriedades] > [!UICONTROL Componentes permitidos]** procure **[!DNL WKND Mobile]**. Permita os seguintes componentes do grupo de componentes [!DNL WKND Mobile] para que possam ser usados na página da API [!DNL Events].
+1. Primeiro, permitimos os três Componentes do AEM identificados, necessários para modelar o conteúdo ao editar a [!UICONTROL Política] da Raiz [!UICONTROL Contêiner de layout]. Certifique-se de que o modo **[!UICONTROL Estrutura]** está ativo, selecione o **[!DNL Layout Container \[Root\]]** e toque no botão **[!UICONTROL Política]**.
+1. Em **[!UICONTROL Propriedades] > [!UICONTROL Componentes permitidos]** pesquise **[!DNL WKND Mobile]**. Permita os seguintes componentes do grupo de componentes [!DNL WKND Mobile] para que possam ser usados na página da API [!DNL Events].
 
    * **[!DNL WKND Mobile > Image]**
 
@@ -74,28 +78,28 @@ Para fazer isso, podemos mapear esses requisitos para AEM Componentes (e, no nos
       * O texto introdutório do aplicativo
    * **[!DNL WKND Mobile > Content Fragment List]**
 
-      * A lista das categorias do Evento disponível para exibição no aplicativo
+      * A lista de categorias de Evento disponíveis para exibição no aplicativo
 
 
 
-1. Pressione a marca de seleção **[!UICONTROL Done]** no canto superior direito quando concluído.
-1. **Atualize** a janela do navegador para ver a lista  [!UICONTROL de ] componentes recém-permitidos no painel esquerdo.
-1. No Localizador de componentes no painel esquerdo, arraste os seguintes componentes AEM:
+1. Toque na marca de seleção **[!UICONTROL Concluído]** no canto superior direito ao concluir.
+1. **** Atualize a janela do navegador para ver a lista de  [!UICONTROL Componentes recém-] permitidos no painel esquerdo.
+1. No Localizador de Componentes no painel esquerdo, arraste os seguintes Componentes do AEM:
    1. **[!DNL Image]** para o logotipo
    2. **[!DNL Text]** para a linha de tag
    3. **[!DNL Content Fragment List]** para os eventos
 1. **Para cada um dos componentes** acima, selecione-os e pressione o botão  **** de desbloqueio.
-1. No entanto, certifique-se de que **container de layout** esteja **bloqueado** para evitar que outros componentes sejam adicionados ou que esses três componentes sejam removidos.
-1. Toque em **[!UICONTROL Informações da página] > [!UICONTROL Visualização em Admin]** para voltar à lista de [!DNL WKND Mobile] modelos. Selecione o modelo **[!DNL Events API]** recém-criado e toque em **[!UICONTROL Ativar]** na barra de ação superior.
+1. No entanto, verifique se o **contêiner de layout** está **bloqueado** para impedir que outros componentes sejam adicionados ou que esses três componentes sejam removidos.
+1. Toque em **[!UICONTROL Informações da página] > [!UICONTROL Exibir em Admin]** para retornar à lista de modelos [!DNL WKND Mobile]. Selecione o modelo **[!DNL Events API]** recém-criado e toque em **[!UICONTROL Ativar]** na barra de ação superior.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Observe que os componentes usados para exibir o conteúdo são adicionados ao próprio Modelo e bloqueados. Isso permite que os autores editem os componentes predefinidos, mas não adicionem ou removam arbitrariamente os componentes, já que a alteração da própria API pode quebrar as premissas em torno da estrutura JSON e interromper os aplicativos de consumo. Todas as APIs precisam estar estáveis.
+> Observe que os componentes usados para exibir o conteúdo são adicionados ao próprio Modelo e bloqueados. Isso permite que os autores editem os componentes predefinidos, mas não adicione ou remova arbitrariamente os componentes, pois alterar a própria API pode quebrar as suposições em torno da estrutura JSON e interromper os aplicativos de consumo. Todas as APIs precisam ser estáveis.
 
-## Próximos passos
+## Próximas etapas
 
-Como opção, instale o pacote de conteúdo [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) no AEM Author por [AEM Gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Este pacote contém as configurações e o conteúdo descrito neste e nos capítulos anteriores do tutorial.
+Como opção, instale o pacote de conteúdo [com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) no AEM Author por meio do [Gerenciador de pacotes do AEM](http://localhost:4502/crx/packmgr/index.jsp). Este pacote contém as configurações e o conteúdo descrito neste e nos capítulos anteriores do tutorial.
 
-* [Capítulo 5 - Criação de páginas de serviços de conteúdo](./chapter-5.md)
+* [Capítulo 5 - Criação das páginas dos serviços de conteúdo](./chapter-5.md)
