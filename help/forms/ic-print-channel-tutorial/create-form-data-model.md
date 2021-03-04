@@ -4,7 +4,7 @@ seo-title: Criação do Modelo de dados de formulário
 description: Esta é a parte 3 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, criaremos o Modelo de dados de formulário. O Modelo de Dados de Formulário permite configurar e conectar-se a diferentes fontes de dados.Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificado de entidades comerciais e serviços em fontes de dados conectadas.O vídeo a seguir apresenta as etapas para criar o Modelo de Dados de Formulário.
 seo-description: Esta é a parte 3 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, criaremos o Modelo de dados de formulário. O Modelo de Dados de Formulário permite configurar e conectar-se a diferentes fontes de dados.Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificado de entidades e serviços de negócios em fontes de dados conectadas. O vídeo a seguir apresenta as etapas para criar o Modelo de dados de formulário.
 uuid: 4cba42f3-860a-4bd3-b4b0-79c63195b36d
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ activity: implement
 version: 6.4,6.5
 kt: 5952
 thumbnail: 27763.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
