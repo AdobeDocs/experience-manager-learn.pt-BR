@@ -1,24 +1,27 @@
 ---
-title: Armazenamento e Recuperação de Dados de Formulário do Banco de Dados MySQL
-description: Tutorial de várias peças para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: adaptive-forms
+title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
+description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 4%
 
 ---
 
 
 # Servlet para armazenar dados de formulário
 
-A próxima etapa é criar um servlet que insira ou atualize os dados do formulário. O servlet chama os métodos apropriados do serviço OSGi para inserir ou atualizar o banco de dados. Os dados do Formulário adaptativo armazenados estão associados a um GUID. O mesmo GUID é usado para atualizar os dados do formulário. Este servlet será chamado quando o botão &quot;SaveAndContinueLater&quot; for clicado.
+A próxima etapa é criar um servlet que inserirá ou atualizará os dados do formulário. O servlet chama os métodos apropriados do serviço OSGi para inserir ou atualizar o banco de dados. Os dados do Formulário adaptativo armazenados estão associados a um GUID. O mesmo GUID é usado para atualizar os dados do formulário. Este servlet será chamado quando o botão &quot;SaveAndContinueLater&quot; for clicado.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;
