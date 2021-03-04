@@ -1,26 +1,25 @@
 ---
-title: Workflows de start automático
-description: Os workflows de start automático estendem o processamento de ativos chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
+title: Workflows de início automático
+description: Os workflows de início automático estendem o processamento de ativos chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
 sub-product: ativos
-feature: workflows
-topics: workflow
-audience: administrator, implementer
-doc-type: feature-video
-activity: use
+feature: Microserviços do Asset Compute, Fluxo de trabalho
 version: cloud-service
 kt: 4994
 thumbnail: 37323.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 4e4f04e93113c863fc8de416917df8ed40dd676a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 0%
+source-wordcount: '46'
+ht-degree: 4%
 
 ---
 
 
-# Workflows de start automático
+# Workflows de início automático
 
-Os workflows de start automático estendem o processamento de ativos em AEM como um Cloud Service, chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
+Os fluxos de trabalho de início automático estendem o processamento de ativos no AEM as a Cloud Service, chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323/?quality=12&learn=on&hidetitle=true)
