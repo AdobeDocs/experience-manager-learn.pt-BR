@@ -4,7 +4,7 @@ seo-title: Configuração do gráfico de linhas para seu primeiro documento de c
 description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
 seo-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: comunicação interativa
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
