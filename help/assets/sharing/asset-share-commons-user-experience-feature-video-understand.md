@@ -1,35 +1,28 @@
 ---
-title: Compreensão da experiência do usuário do Asset Share Commons
-seo-title: Compreensão da experiência do usuário do Asset Share Commons
-description: Materiais para o entendimento funcional e técnico Ativos Compartilham Comuns
-seo-description: Materiais para o entendimento funcional e técnico Ativos Compartilham Comuns
-uuid: 16e58bb3-99de-49cf-a23c-dd46f4c34339
-discoiquuid: 64a45096-6fc4-41c9-8695-33dea5d45a3a
-contentOwner: dgonzale
-feature: asset-share, brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions
-audience: all
-doc-type: feature video
-activity: understand
+title: Noções básicas sobre a experiência do usuário do Compartilhamento de ativos Commons
+description: Materiais para o entendimento funcional e técnico Ativos Compartilham Commons
 version: 6.3, 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '133'
+ht-degree: 3%
 
 ---
 
 
-# Noções Gerais da Experiência do Usuário do Commons de Compartilhamento de Ativos{#understanding-asset-share-commons}
+# Compreender a experiência do usuário do Compartilhamento de ativos Commons{#understanding-asset-share-commons}
 
-Uma breve introdução às experiências de criação e usuário do Asset Share Commons.
+Uma introdução superficial às experiências de criação e do usuário do Compartilhamento de ativos Commons.
 
 ## Experiência do usuário
 
 >[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
 
-O vídeo fornece uma apresentação resumida da experiência do usuário para o Asset Share Commons. A revisão toca nos recursos da página Pesquisar, na página Detalhes do ativo, bem como em várias ações, como Download, Compartilhamento e Adicionar ao carrinho.
+O vídeo fornece uma apresentação resumida da experiência do usuário para o Asset Share Commons. A revisão aborda os recursos da página Pesquisa, da página Detalhes do ativo, bem como várias ações, como Download, Compartilhamento e Adicionar ao Carrinho.
 
 ## Experiência de criação
 
