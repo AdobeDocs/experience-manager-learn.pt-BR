@@ -1,7 +1,7 @@
 ---
 title: Criar bibliotecas de clientes
 description: Criar biblioteca de clientes para manipular o evento click do botão "Salvar e sair"
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,19 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 6%
+source-wordcount: '146'
+ht-degree: 8%
 
 ---
 
-# Criar biblioteca de cliente
+# Criar biblioteca do cliente
 
-Crie [client lib](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` da API `guideBridge` no evento click do botão identificado pela classe CSS **savebutton**.  Enviamos os dados de formulário adaptável, `fileMap`, e `mobileNumber` para o ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
+Crie [client lib](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` da API `guideBridge` no evento click do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável, `fileMap`, e `mobileNumber` para o ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
 
-Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é direcionado para o formulário, o que permite recuperar o formulário adaptativo salvo usando a ID exclusiva do aplicativo.
+Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é levado ao formulário, o que permite recuperar o formulário adaptável salvo usando a ID de aplicativo exclusiva.
 
 ```java
 $(document).ready(function () {
@@ -67,6 +70,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Usamos [biblioteca javascript da caixa de inicialização](http://bootboxjs.com/examples.html) para exibir a caixa de diálogo
+> Usamos [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para exibir a caixa de diálogo
 
-As bibliotecas de clientes usadas neste exemplo podem ser [baixadas daqui](assets/client-libraries.zip)
+As bibliotecas de clientes usadas neste exemplo podem ser [baixadas aqui](assets/client-libraries.zip)
