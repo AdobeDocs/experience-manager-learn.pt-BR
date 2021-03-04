@@ -1,47 +1,50 @@
 ---
-title: Envio de email no envio de formulário adaptável
-seo-title: Envio de email no envio de formulário adaptável
-description: Enviar email de confirmação no envio de formulário adaptável usando o componente de email de envio
-seo-description: Enviar email de confirmação no envio de formulário adaptável usando o componente de email de envio
+title: Envio de emails no envio do formulário adaptável
+seo-title: Envio de emails no envio do formulário adaptável
+description: Enviar email de confirmação no envio do formulário adaptável usando o componente enviar email
+seo-description: Enviar email de confirmação no envio do formulário adaptável usando o componente enviar email
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 
-# Envio de email no envio de formulário adaptável {#sending-email-on-adaptive-form-submission}
+# Envio de emails no envio do formulário adaptável {#sending-email-on-adaptive-form-submission}
 
-Uma das ações comuns é enviar um email de confirmação para o remetente após o envio bem-sucedido do Formulário adaptativo. Para conseguir isso, selecionaremos &quot;Enviar email&quot; como ação de envio.
+Uma das ações comuns é enviar um email de confirmação para o remetente no envio bem-sucedido do formulário adaptativo. Para fazer isso, selecionaremos a ação &quot;Enviar email&quot; como envio.
 
-Você pode usar o modelo de e-mail ou apenas digitar o corpo do e-mail, como mostrado nesta captura de tela abaixo.
+Você pode usar o modelo de email ou apenas digitar o corpo do email, como mostrado nesta captura de tela abaixo.
 
-Observe a sintaxe para inserir valores de campos de formulário no email.Também temos a opção de incluir anexos de formulário no email, marcando a caixa de seleção &quot;incluir anexos&quot; nas propriedades de configuração.
+Observe a sintaxe para inserir valores de campos de formulário no email. Também temos a opção de incluir anexos de formulário no email, marcando a caixa de seleção &quot;incluir anexos&quot; nas propriedades de configuração.
 
-Quando o Formulário adaptativo for enviado, o recipient receberá um email.
+Quando o formulário adaptável for enviado, o recipient receberá um email.
 
 ![SendEmail](assets/sendemailaction.gif)
 
 ## Configurações necessárias {#configurations-needed}
 
-Você terá que configurar o serviço Day CQ Mail. Isso pode ser configurado apontando seu navegador para [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Você terá que configurar o Serviço Day CQ Mail. Isso pode ser configurado apontando seu navegador para [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
-A captura de tela mostra as propriedades de configuração do adobe mail server.
+A captura de tela mostra as propriedades de configuração do servidor do adobe mail.
 
-![serviço postal](assets/mailservice.png)
+![mailservice](assets/mailservice.png)
 
 Para experimentar isso no servidor, siga estas instruções:
 
-* [Importe os ativos ](assets/timeoffrequest.zip) associados a este artigo no AEM usando o gerenciador de pacotes.
+* [Importe os ](assets/timeoffrequest.zip) ativos associados a este artigo no AEM usando o gerenciador de pacotes.
 
 * Abra o [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
