@@ -1,28 +1,31 @@
 ---
-title: Uso de modelos de dados de associação com a AEM Forms
-seo-title: Uso de modelos de dados de associação com a AEM Forms
-description: Adicionar associações entre entidades no Modelo de Dados de Formulário
-seo-description: Adicionar associações entre entidades no Modelo de Dados de Formulário
+title: Uso de modelos de dados de associação com AEM Forms
+seo-title: Uso de modelos de dados de associação com AEM Forms
+description: Adicionar associações entre entidades no Modelo de dados de formulário
+seo-description: Adicionar associações entre entidades no Modelo de dados de formulário
 uuid: 82626632-3251-4f7b-9af1-43a9161107c2
 discoiquuid: e01e9bd4-5b47-4356-9884-6968f385bb20
-feature: adaptive-forms, form-data-model
+feature: '"Formulários adaptáveis, Modelo de dados de formulário"'
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 0%
+source-wordcount: '53'
+ht-degree: 3%
 
 ---
 
 
-# Uso de modelos de dados de associação com AEM Forms{#using-association-data-models-with-aem-forms}
+# Uso de Modelos de Dados de Associação com AEM Forms{#using-association-data-models-with-aem-forms}
 
-Criar associações entre duas entidades no Modelo de Dados de Formulário
+Criar associações entre duas entidades no Modelo de dados de formulário
 
 >[!VIDEO](https://video.tv.adobe.com/v/17737/?quality=9&learn=on)
 
