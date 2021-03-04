@@ -3,7 +3,7 @@ title: Usar a API para gerar o documento de registro com o AEM Forms
 seo-title: Usar a API para gerar o documento de registro com o AEM Forms
 description: Gerar Documento de Registro (DOR) programaticamente
 seo-description: Usar a API para gerar o documento de registro com o AEM Forms
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
@@ -11,14 +11,11 @@ activity: implement
 version: 6.4,6.5
 uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
 discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 1%
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
