@@ -1,18 +1,21 @@
 ---
 title: Personalização da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais do fluxo de trabalho
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 3%
 
 ---
 
