@@ -2,18 +2,15 @@
 title: Desenvolver projetos no AEM
 description: Um tutorial de desenvolvimento que ilustra como desenvolver projetos do AEM.  Neste tutorial, criaremos um modelo de Projeto personalizado que pode ser usado para criar novos Projetos no AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
 version: 6.3, 6.4, 6.5
-feature: '"Projetos, fluxo de trabalho"'
+feature: projetos, fluxo de trabalho
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4651'
 ht-degree: 0%
 
 ---
