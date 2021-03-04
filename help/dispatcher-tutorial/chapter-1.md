@@ -1,12 +1,14 @@
 ---
-title: Capítulo 1 - Configuração e downloads do tutorial
-seo-title: Introdução aos serviços de conteúdo do AEM - Capítulo 1 - Configuração do tutorial
-description: O Capítulo 1 do tutorial AEM Headless mostra a configuração da linha de base para a instância do AEM para o tutorial.
-seo-description: O Capítulo 1 do tutorial AEM Headless mostra a configuração da linha de base para a instância do AEM para o tutorial.
+title: '"Capítulo 1 - Conceitos, padrões e padrões do Dispatcher"'
+description: Este capítulo fornece uma breve introdução sobre a história e a mecânica do Dispatcher e discute como isso influencia a forma como um desenvolvedor do AEM projetaria seus componentes.
+feature: Dispatcher
+topic: Arquitetura
+role: Arquiteto
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
@@ -46,7 +48,7 @@ No entanto, o conselho &quot;Primeiro faça funcionar - depois faça rápido&quo
 
 2. Artefatos, que estão envolvidos em algum cenário assíncrono e dependente do tempo em que a entrada - e, portanto, o comportamento do sistema pode variar muito aleatoriamente. As alterações podem ter efeitos imprevisíveis e podem ser difíceis de testar.
 
-3. Padrões de software que são usados e reutilizados repetidamente, em todas as peças e partes do sistema. Se o padrão de software se revelar sub-ideal, todos os artefatos que usam o padrão precisarão ser recodificados.
+3. Padrões de software que são usados e reutilizados repetidamente, em todas as peças e partes do sistema. Se o padrão de software for sub-ideal, todos os artefatos que usam o padrão precisam ser recodificados.
 
 Lembrar? Além dessa página, informamos que o Dispatcher é uma parte essencial de um aplicativo do AEM. O acesso a uma aplicação web é muito aleatório - os usuários estão chegando e chegando em momentos imprevisíveis. No final - todo o conteúdo será (ou deverá) armazenado em cache no Dispatcher. Então, se você prestasse muita atenção, poderia ter percebido que o armazenamento em cache poderia ser visto como um artefato &quot;arquitetônico&quot; e, portanto, deveria ser entendido por todos os membros da equipe, desenvolvedores e administradores, da mesma forma.
 
