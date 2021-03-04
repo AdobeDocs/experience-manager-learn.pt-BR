@@ -1,41 +1,44 @@
 ---
-title: Uso do componente Tabela no Documento Canal de impressão AEM Forms
-seo-title: Uso do componente Tabela no Documento Canal de impressão AEM Forms
-description: O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela no Interative Communications para documentos de canal de impressão.
-feature: interactive-communication
+title: Uso do Componente de tabela no Documento de canal de impressão do AEM Forms
+seo-title: Uso do Componente de tabela no Documento de canal de impressão do AEM Forms
+description: O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 2%
 
 ---
 
 
-# Uso do componente Tabela no Documento Canal de impressão AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Uso do Componente de tabela no Documento de canal de impressão do AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
-O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela no Interative Communications para documentos de canal de impressão.
+O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=9&learn=on)
 
-Tabelas são usadas para exibir dados de maneira tabular. As linhas na tabela precisam aumentar ou diminuir dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento do canal de impressão, é necessário criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Neste arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto de campo de coluna é TextField ou Numeric Field, dependendo de seus requisitos. Para cada coluna, os campos garantem que o vínculo de dados esteja definido como Usar nome.
+Tabelas são usadas para exibir dados de maneira tabular. As linhas da tabela precisam crescer ou diminuir dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento de canal de impressão, precisamos criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Nesse arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto de campo de coluna é TextField ou Numeric Field, dependendo de suas necessidades. Para cada coluna, os campos garantem que o vínculo de dados esteja definido como Usar nome.
 
 >[!NOTE]
 >
->Para tornar a tabela dinâmica, certifique-se de ter marcado a Linha como repetida.
+>Para tornar a tabela dinâmica, verifique se você marcou a Linha como repetitiva.
 
-**Experimente no seu próprio servidor**
+**Experimente-o no seu próprio servidor**
 
-* [Baixe e descompacte o arquivo de ativos no disco rígido](assets/usingtablesinprintchannel.zip)
+* [Baixe e descompacte o arquivo de ativos no seu disco rígido](assets/usingtablesinprintchannel.zip)
 
-* Importe os dois arquivos zip para AEM usando o gerenciador de pacote
+* Importe os dois arquivos zip para o AEM usando o gerenciador de pacotes
 
-* Os ativos associados a este artigo são os seguintes:
+* Os ativos associados a este artigo estão incluídos no seguinte:
 
    * Fragmento do layout
 
@@ -44,10 +47,10 @@ Tabelas são usadas para exibir dados de maneira tabular. As linhas na tabela pr
    * Documento de comunicação interativa
    * sampleretirementaccountdata.json
 
-* Abra o Documento Interative Communication no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Abra o Documento de comunicação interativa no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
-* Adicione o fragmento de layout TableDemo à seção de contribuições.
+* Adicione o fragmento de layout TableDemo à seção contribuições.
 * Vincule as células da tabela aos elementos apropriados do Modelo de dados de formulário, conforme mostrado no vídeo
 
-* Pré-visualização do Documento de comunicação interativa com o arquivo de dados json de amostra fornecido a você
+* Visualizar documento de comunicação interativa com o arquivo de dados json de amostra fornecido a você
 
