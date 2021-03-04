@@ -1,35 +1,38 @@
 ---
-title: Uso do AEM Forms com Adobe Sign
-description: A Adobe Sign e a AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
-feature: adaptive-forms
+title: Uso do AEM Forms com o Adobe Sign
+description: O Adobe Sign e o AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
+feature: '"Formulários adaptáveis,Adobe Sign"'
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 1%
 
 ---
 
-# Uso do AEM Forms com Adobe Sign
+# Uso do AEM Forms com o Adobe Sign
 
-A Adobe Sign habilita workflows de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os workflows para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras áreas.
-A integração entre a AEM Forms e a Adobe Sign permitirá que você faça o seguinte:
+O Adobe Sign habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras.
+A integração entre o AEM Forms e o Adobe Sign permitirá que você faça o seguinte
 
-* Use a Forms adaptativa para capturar dados e apresentar Documento de Record (DoR) gerado automaticamente para assinaturas
-* Crie um Forms adaptável com base no seu modelo de PDF. Mesclar os dados com o modelo pdf e apresentar o mesmo para assinaturas
-* Enviar documentos para assinatura usando o componente de fluxo de trabalho Assinar Documento
+* Use formulários adaptáveis para capturar dados e apresentar o Documento de registro (DoR) gerado automaticamente para assinaturas
+* Crie formulários adaptáveis com base no modelo em PDF. Mesclar os dados com o modelo pdf e apresentar o mesmo para assinaturas
+* Enviar documentos para assinatura usando o componente de fluxo de trabalho Assinar documento
 
 ## Pré-requisitos
 
-É necessário o seguinte para integrar o Adobe Sign à AEM Forms:
+Você precisa do seguinte para integrar o Adobe Sign com o AEM Forms:
 
 * Um servidor AEM Forms habilitado para SSL
-* Uma conta de desenvolvedor Adobe Sign ativa.
-* Um aplicativo de API da Adobe Sign
-* Credenciais (ID do cliente e segredo do cliente) do aplicativo da API Adobe Sign.
+* Uma conta ativa de desenvolvedor do Adobe Sign.
+* Um aplicativo da API do Adobe Sign
+* Credenciais (ID do cliente e Segredo do cliente) do aplicativo da API do Adobe Sign.
 
