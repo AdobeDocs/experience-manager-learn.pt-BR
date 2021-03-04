@@ -1,21 +1,18 @@
 ---
 title: Formulário adaptável com assinante único
 description: Formulário adaptável com assinante único. O vídeo explica as várias etapas necessárias para configurar um formulário adaptável com um único assinante.
-feature: '"Formulários adaptáveis,Adobe Sign"'
+feature: formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39475.jpg
 kt: 6103
-topic: Desenvolvimento
-role: Profissional
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 1%
+source-wordcount: '62'
+ht-degree: 0%
 
 ---
 
