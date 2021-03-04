@@ -4,18 +4,13 @@ user-guide-description: Um tutorial completo mostrando como entregar experiênci
 product: experience manager
 version: 6.5
 sub-product: sites
-audience: author, marketer, administrator, architect, developer
-doc-type: tutorial
-feature: fragmentos de experiência
-topics: personalization, activities, experiences, integrations, offers
-activity: develop, understand
 index: y
 kt: 2214
 translation-type: tm+mt
-source-git-commit: bdb62b3361f20a0d0f27f5818cb82276980755d1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 45%
+source-wordcount: '65'
+ht-degree: 46%
 
 ---
 
