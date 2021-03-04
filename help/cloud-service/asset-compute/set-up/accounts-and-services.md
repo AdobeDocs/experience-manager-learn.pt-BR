@@ -1,7 +1,7 @@
 ---
-title: Configurar contas e serviços para extensibilidade do Asset compute
-description: Os trabalhadores do Asset compute em desenvolvimento precisam de acesso a contas e serviços, inclusive AEM como Cloud Service, Adobe Project Firefly e armazenamento em nuvem fornecidos pela Microsoft ou Amazon.
-feature: asset-compute
+title: Configurar contas e serviços para a extensibilidade do Asset Compute
+description: O desenvolvimento de trabalhadores do Asset Compute requer acesso a contas e serviços, incluindo o AEM as a Cloud Service, Adobe Project Firefly e armazenamento em nuvem fornecido pela Microsoft ou Amazon.
+feature: Microserviços do Asset Compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,84 +9,87 @@ audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
+topic: Integrações, desenvolvimento
+role: Desenvolvedor
+level: Intermediário, Experienciado
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 1%
+source-wordcount: '635'
+ht-degree: 2%
 
 ---
 
 
 # Configurar contas e serviços
 
-Este tutorial requer que os seguintes serviços sejam provisionados e acessíveis via Adobe ID do aluno.
+Este tutorial requer que os seguintes serviços sejam provisionados e acessíveis por meio da Adobe ID do aluno.
 
-Todos os serviços de Adobe devem estar acessíveis por meio da mesma Organização de Adobe, usando seu Adobe ID.
+Todos os serviços da Adobe devem ser acessíveis por meio da mesma Adobe Org, usando sua Adobe ID.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [Adobe Project FireFly](#adobe-project-firefly)
    + O provisionamento pode levar de 2 a 10 dias
-+ Armazenamento em nuvem
-   + [Armazenamento Blob do Azure](https://azure.microsoft.com/en-us/services/storage/blobs/)
++ armazenamento na nuvem
+   + [Armazenamento Azure Blob](https://azure.microsoft.com/en-us/services/storage/blobs/)
    + ou [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card)
 
 >[!WARNING]
 >
->Verifique se você tem acesso a todos os serviços mencionados antes de continuar com este tutorial.
+>Certifique-se de ter acesso a todos os serviços mencionados anteriormente, antes de continuar com este tutorial.
 > 
-> Analise as seções abaixo sobre como definir e fornecer os serviços necessários.
+> Analise as seções abaixo sobre como definir e provisionar os serviços necessários.
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-O acesso a um AEM como ambiente Cloud Service é necessário para configurar Perfis de processamento AEM Assets para chamar o funcionário do Asset compute personalizado.
+O acesso a um ambiente do AEM as a Cloud Service é necessário para configurar os Perfis de processamento do AEM Assets para chamar o trabalhador personalizado do Asset Compute.
 
-O ideal é que um programa sandbox ou um ambiente de Desenvolvimento que não seja sandbox esteja disponível para uso.
+Idealmente, um programa de sandbox ou um ambiente de desenvolvimento que não seja de sandbox está disponível para uso.
 
-Observe que um SDK de AEM local é insuficiente para concluir este tutorial, já que o SDK de AEM local não pode se comunicar com microserviços de Asset compute, em vez disso, é necessário um AEM verdadeiro como ambiente.
+Observe que um SDK do AEM local é insuficiente para concluir este tutorial, pois o SDK do AEM local não pode se comunicar com os microsserviços do Asset Compute, em vez disso, um ambiente do AEM as a Cloud Service é necessário.
 
 ## Adobe Project Firefly{#adobe-project-firefly}
 
-A estrutura &lt;a0>Adobe Project Firefly[ é usada para criar e implantar ações personalizadas na plataforma Adobe I/O Runtime, Adobe Server/Wireless. ](https://www.adobe.io/apis/experienceplatform/project-firefly.html) AEM projetos de Asset computes são projetos Firefly especialmente construídos que se integram à AEM Assets por meio de Perfis de processamento e oferecem a capacidade de acessar e processar binários de ativos.
+A estrutura [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) é usada para criar e implantar ações personalizadas no Adobe I/O Runtime, a plataforma sem servidor da Adobe. Os projetos do AEM Asset Compute são projetos Firefly especialmente criados que se integram aos AEM Assets por meio de Perfis de processamento e fornecem a capacidade de acessar e processar binários de ativos.
 
 Para obter acesso ao Project Firefly, inscreva-se para a pré-visualização.
 
-1. [Inscreva-se para a pré-visualização](https://adobeio.typeform.com/to/obqgRm) do Project Firefly.
-1. Aguarde aproximadamente de 2 a 10 dias até ser notificado por email de que você foi provisionado antes de continuar com o tutorial.
-   + Se você não tiver certeza se foi provisionado, continue com as próximas etapas e se você não conseguir criar um projeto __Project Firefly__ no Console do desenvolvedor do Adobe[você ainda não foi provisionado.](https://console.adobe.io)
+1. [Inscreva-se para obter a visualização](https://adobeio.typeform.com/to/obqgRm) do Project Firefly.
+1. Aguarde aproximadamente 2 a 10 dias até ser notificado por email de que você está provisionado antes de continuar com o tutorial.
+   + Se não tiver certeza se foi provisionado, continue com as próximas etapas e se não conseguir criar um projeto __Project Firefly__ no [Adobe Developer Console](https://console.adobe.io) você ainda não foi provisionado.
 
-## Armazenamento em nuvem
+## armazenamento na nuvem
 
-O armazenamento em nuvem é necessário para o desenvolvimento local de projetos de Asset computes.
+O armazenamento na nuvem é necessário para o desenvolvimento local de projetos do Asset Compute.
 
-Quando os funcionários do Asset compute são implantados na Adobe I/O Runtime para uso direto por AEM como Cloud Service, esse armazenamento em nuvem não é estritamente necessário, pois AEM fornece o armazenamento em nuvem do qual o ativo é lido e renderizado.
+Quando os trabalhadores do Asset Compute são implantados no Adobe I/O Runtime para uso direto pelo AEM as a Cloud Service, esse armazenamento em nuvem não é estritamente necessário, pois o AEM fornece o armazenamento em nuvem do qual o ativo é lido e renderizado.
 
-### Armazenamento Blob do Microsoft Azure{#azure-blob-storage}
+### Armazenamento de blobs do Microsoft Azure{#azure-blob-storage}
 
-Se você ainda não tiver acesso ao Armazenamento Blob do Microsoft Azure, inscreva-se para uma conta gratuita de [12 meses](https://azure.microsoft.com/en-us/free/).
+Se você ainda não tiver acesso ao Armazenamento de blobs do Microsoft Azure, cadastre-se em uma [conta gratuita de 12 meses](https://azure.microsoft.com/en-us/free/).
 
-Este tutorial usará o Armazenamento Blob do Azure, no entanto, [O Amazon S3](#amazon-s3) também pode ser usado somente para variações secundárias do tutorial.
+Este tutorial usará o Armazenamento de Blobs do Azure. No entanto, [Amazon S3](#amazon-s3) também pode ser usado somente em pequenas variações para o tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
 
-_Click-through de provisionamento do Armazenamento Blob do Azure (Sem áudio)_
+_Click-through do provisionamento do Armazenamento Azure Blob (Sem áudio)_
 
 
-1. Efetue logon em sua [conta do Microsoft Azure](https://azure.microsoft.com/en-us/account/).
+1. Faça logon em sua [conta do Microsoft Azure](https://azure.microsoft.com/en-us/account/).
 1. Navegue até a seção __Contas de Armazenamento__ Serviços do Azure
-1. Toque em __+ Adicionar__ para criar uma nova conta de Armazenamento Blob
-1. Crie um novo __grupo de recursos__ conforme necessário, por exemplo: `aem-as-a-cloud-service`
-1. Forneça um __nome de conta de Armazenamento__, por exemplo: `aemguideswkndassetcomput`
-   + O __nome da conta do Armazenamento__ será utilizado para [configurar o armazenamento em nuvem](../develop/environment-variables.md) para a Ferramenta de Desenvolvimento de Asset computes local
-   + As __chaves de acesso__ associadas à conta do armazenamento também são necessárias quando [configurar o armazenamento de nuvem](../develop/environment-variables.md).
+1. Toque em __+ Adicionar__ para criar uma nova conta de Armazenamento de Blob
+1. Crie um novo __Grupo de recursos__ conforme necessário, por exemplo: `aem-as-a-cloud-service`
+1. Forneça um __Nome da conta de armazenamento__, por exemplo: `aemguideswkndassetcomput`
+   + O __Nome da conta de armazenamento__ será usado para [configurar o armazenamento na nuvem](../develop/environment-variables.md) para a Ferramenta de Desenvolvimento do Asset Compute local
+   + As __chaves de acesso__ associadas à conta de armazenamento também são necessárias quando [configurar o armazenamento na nuvem](../develop/environment-variables.md).
 1. Deixe tudo o resto como padrão e toque no botão __Revisar + criar__
-   + Como opção, selecione __location__ próximo a você.
-1. Revise a solicitação de provisionamento para corrigir e toque no botão __Criar__ se satisfeito
+   + Como opção, selecione o __local__ próximo a você.
+1. Revise a solicitação de provisionamento para corrigir e toque no botão __Create__ se satisfeito
 
 ### Amazon S3{#amazon-s3}
 
-É recomendável usar [O Armazenamento Blob do Microsoft Azure](#azure-blob-storage) para concluir este tutorial, no entanto, [O Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) também pode ser usado.
+É recomendável usar [Microsoft Azure Blob Storage](#azure-blob-storage) para concluir este tutorial, no entanto [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) também pode ser usado.
 
-Se estiver usando o armazenamento Amazon S3, especifique as credenciais do armazenamento em nuvem do Amazon S3 quando [configurar as variáveis do ambiente do projeto](../develop/environment-variables.md#amazon-s3).
+Se estiver usando o armazenamento Amazon S3, especifique as credenciais de armazenamento da nuvem do Amazon S3 quando [configurar as variáveis de ambiente do projeto](../develop/environment-variables.md#amazon-s3).
 
-Se precisar provisionar armazenamento em nuvem especialmente para este tutorial, recomendamos o uso de [Armazenamento Blob do Azure](#azure-blob-storage).
+Se você precisar provisionar o armazenamento em nuvem especialmente para este tutorial, recomendamos usar [Armazenamento Azure Blob](#azure-blob-storage).
