@@ -1,18 +1,21 @@
 ---
 title: Criação de fragmentos de formulário
 description: O AEM Forms fornece um mecanismo conveniente para criar segmentos de formulário, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis.
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 18%
+source-wordcount: '112'
+ht-degree: 21%
 
 ---
 
