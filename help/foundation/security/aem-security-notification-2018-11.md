@@ -4,18 +4,21 @@ seo-title: Notificação de segurança do AEM (novembro de 2018)
 description: Dispatcher de notificação de segurança do AEM Experience Manager
 seo-description: Dispatcher de notificação de segurança do AEM Experience Manager
 version: 6.4
-feature: dispatcher
+feature: Dispatcher
 topics: security
 activity: understand
 audience: all
 doc-type: article
 uuid: 3ccf7323-4061-49d7-ae95-eb003099fd77
 discoiquuid: 9d181b3e-fbd5-476d-9e97-4452176e495c
+topic: Segurança
+role: Arquiteto
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 7%
+source-wordcount: '442'
+ht-degree: 8%
 
 ---
 
