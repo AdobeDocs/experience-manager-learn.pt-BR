@@ -3,7 +3,7 @@ title: Noções básicas sobre o teste automatizado de formulários com o AEM Fo
 seo-title: Noções básicas sobre o teste automatizado de formulários com o AEM Forms
 description: O AEM 6.3 Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para Formulários adaptáveis usando o Calvin SDK criado sobre a estrutura do hobbes.js
 seo-description: O AEM 6.3 Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para Formulários adaptáveis usando o Calvin SDK criado sobre a estrutura do hobbes.js
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: development
 audience: developer
 doc-type: technical video
@@ -11,14 +11,11 @@ activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
 discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '131'
+ht-degree: 0%
 
 ---
 
