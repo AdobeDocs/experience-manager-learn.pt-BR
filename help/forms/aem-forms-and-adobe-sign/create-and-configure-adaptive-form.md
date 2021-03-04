@@ -1,18 +1,21 @@
 ---
 title: Criar e configurar um formulário adaptável
 description: Crie e configure um formulário adaptável. O vídeo a seguir destaca as etapas necessárias para criar e configurar um formulário adaptável para gerar DoR automaticamente. O vídeo também orienta você pelas etapas necessárias para configurar um formulário adaptável para acionar um fluxo de trabalho do AEM.
-feature: formulários adaptáveis
+feature: Formulários adaptáveis,Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 38348.jpg
 kt: 6039
+topic: Desenvolvimento
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 1%
 
 ---
 
