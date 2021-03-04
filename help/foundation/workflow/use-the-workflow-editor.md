@@ -1,23 +1,18 @@
 ---
-title: Usar o editor de fluxo de trabalho no AEM
-description: O fluxo de trabalho permite o gerenciamento de processos de negócios no Experience Manager e é usado para o processamento automático de conteúdo, bem como para facilitar a governança e o processo que exigem tomada de decisão humana. O fluxo de trabalho é definido por meio de Modelos de fluxo de trabalho que são compostos de uma série de etapas e criados e gerenciados no Editor de modelo de fluxo de trabalho.
-version: 6.4, 6.5, Cloud Service
-sub-product: fundação, sites, ativos
+title: Como criar fluxos de trabalho no AEM
+description: O fluxo de trabalho permite o gerenciamento de processos de negócios no Experience Manager e é usado para o processamento automático de conteúdo, bem como para facilitar a governança e o processo que exigem tomada de decisão humana.
+version: 6.4, 6.5, cloud-service
 feature: Fluxo de trabalho
-topics: governance, collaboration
-activity: use
-audience: administrator, implementer
-doc-type: feature video
-topic: Colaboração
-role: Desenvolvedor
-level: Iniciante
+topic: Gerenciamento de conteúdo
+level: Intermediário
+role: Administrador, Desenvolvedor
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 2%
+source-wordcount: '93'
+ht-degree: 3%
 
 ---
 
