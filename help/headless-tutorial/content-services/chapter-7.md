@@ -1,14 +1,10 @@
 ---
 title: Capítulo 7 - Consumo dos serviços de conteúdo do AEM a partir de um aplicativo móvel - Serviços de conteúdo
 description: O Capítulo 7 do tutorial executa o aplicativo móvel do Android para consumir conteúdo criado do AEM Content Services.
-feature: '"Fragmentos de conteúdo, APIs"'
-topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
