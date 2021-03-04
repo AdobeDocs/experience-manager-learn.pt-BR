@@ -1,26 +1,29 @@
 ---
-title: Variáveis no fluxo de trabalho AEM
-seo-title: Variáveis no fluxo de trabalho AEM
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho aem
-seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho aem
-feature: workflow
+title: Variáveis no fluxo de trabalho do AEM
+seo-title: Variáveis no fluxo de trabalho do AEM
+description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
+seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
+feature: Fluxo de trabalho
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 7%
+source-wordcount: '128'
+ht-degree: 9%
 
 ---
 
 
-# Variáveis no fluxo de trabalho AEM
+# Variáveis no fluxo de trabalho do AEM
 
-A partir do AEM 6.5, você pode criar e usar variáveis no Fluxo de trabalho AEM. Antes desse recurso, os autores do fluxo de trabalho normalmente criavam chaves usando o mapa de metadados do fluxo de trabalho. Isso significava escrever algum código personalizado para criar e preencher essas chaves. Com esse novo fluxo de trabalho de recursos, os autores agora podem criar variáveis facilmente e usar essas variáveis em qualquer lugar no fluxo de trabalho.
+A partir do AEM 6.5, você pode criar e usar variáveis no fluxo de trabalho do AEM. Antes desse recurso, os autores de fluxo de trabalho normalmente criavam chaves usando o mapa de metadados do fluxo de trabalho. Isso significava escrever algum código personalizado para criar e preencher essas chaves. Com esse novo fluxo de trabalho de recursos, os autores agora podem criar variáveis facilmente e usar essas variáveis em qualquer lugar no fluxo de trabalho.
 
 As variáveis podem ser dos seguintes tipos
 
@@ -41,4 +44,4 @@ As variáveis podem ser dos seguintes tipos
 * [Variáveis JSON](part2.md)
 * [Variáveis de documento](part3.md)
 * [Variável ArrayList](part4.md)
-* [Editor de regras no fluxo de trabalho AEM](part5.md)
+* [Editor de regras no fluxo de trabalho do AEM](part5.md)
