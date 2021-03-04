@@ -1,21 +1,18 @@
 ---
 title: Personalização da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais de fluxo de trabalho usando modelo sightly
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '292'
+ht-degree: 2%
 
 ---
 
