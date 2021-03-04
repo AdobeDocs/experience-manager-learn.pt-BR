@@ -3,14 +3,10 @@ title: Capítulo 4 - Definição de modelos de serviços de conteúdo - Serviço
 seo-title: Introdução ao AEM Headless - Capítulo 4 - Definição de modelos de serviços de conteúdo
 description: O Capítulo 4 do tutorial AEM Headless cobre a função de Modelos editáveis do AEM no contexto dos Serviços de conteúdo do AEM. Modelos editáveis são usados para definir a estrutura de conteúdo JSON que os AEM Content Services irão expor.
 seo-description: O Capítulo 4 do tutorial AEM Headless cobre a função de Modelos editáveis do AEM no contexto dos Serviços de conteúdo do AEM. Modelos editáveis são usados para definir a estrutura de conteúdo JSON que os AEM Content Services irão expor.
-feature: '"Fragmentos de conteúdo, APIs"'
-topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
