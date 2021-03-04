@@ -3,20 +3,17 @@ title: Gerando Documento de Comunicações Interativas para canal de impressão 
 seo-title: Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
 description: Usar pasta assistida para gerar documentos do canal de impressão
 seo-description: Usar pasta assistida para gerar documentos do canal de impressão
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 1%
+source-wordcount: '483'
+ht-degree: 0%
 
 ---
 
