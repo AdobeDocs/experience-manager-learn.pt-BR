@@ -4,20 +4,17 @@ seo-title: Configuração do formulário adaptável para acionar o fluxo de trab
 description: Entendendo as várias opções na configuração do Formulário adaptativo para acionar o fluxo de trabalho do AEM
 seo-description: Entendendo as várias opções na configuração do Formulário adaptativo para acionar o fluxo de trabalho do AEM
 sub-product: formulários
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 6%
+source-wordcount: '47'
+ht-degree: 2%
 
 ---
 
