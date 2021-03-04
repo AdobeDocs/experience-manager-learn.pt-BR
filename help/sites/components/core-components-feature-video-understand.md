@@ -1,7 +1,7 @@
 ---
-title: Noções básicas sobre os componentes principais
-description: 'AEM Componentes principais são um conjunto padrão de componentes a ser usado com o Adobe Experience Manager. Construído com as práticas e padrões mais eficientes do Adobe, o Core oferece um conjunto básico de funcionalidades para qualquer implementação do Sites. '
-feature: core-components
+title: Compreensão dos componentes principais
+description: 'Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Construídos com as práticas e padrões recomendadas da Adobe, os Componentes principais fornecem um conjunto básico de funcionalidades para qualquer implementação do Sites. '
+feature: Componentes principais
 topics: authoring
 audience: all
 activity: use
@@ -9,25 +9,28 @@ doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg
+topic: Desenvolvimento
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 14%
+source-wordcount: '104'
+ht-degree: 16%
 
 ---
 
 
-# Como entender os componentes principais{#understanding-core-components}
+# Compreender os componentes principais{#understanding-core-components}
 
-AEM Componentes principais são um conjunto padrão de componentes a ser usado com o Adobe Experience Manager. Construído com as práticas e padrões mais eficientes do Adobe, o Core oferece um conjunto básico de funcionalidades para qualquer implementação do Sites.
+Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Construídos com as práticas e padrões recomendadas da Adobe, os Componentes principais fornecem um conjunto básico de funcionalidades para qualquer implementação do Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=12&learn=on)
 
 ## Recursos adicionais {#additional-resources}
 
-* [Projeto GitHub](https://github.com/adobe/aem-core-wcm-components)
+* [Projeto do GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Exemplos de componentes principais](https://www.aemcomponents.dev/)
-* [Documentação do componente principal](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 
 
