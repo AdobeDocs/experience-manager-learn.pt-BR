@@ -1,7 +1,6 @@
 ---
-title: Adicionar Extensão do target a uma propriedade de inicialização
-description: Saiba como adicionar a extensão do Adobe Target a uma propriedade do Adobe Experience Platform Launch.
-feature: launch
+title: Adicionar extensão do Target a uma propriedade do Launch
+description: Saiba como adicionar a extensão Adobe Target a uma propriedade do Adobe Experience Platform Launch.
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,26 +8,29 @@ activity: setup
 version: cloud-service
 kt: 6131
 thumbnail: 41247.jpg
+topic: Integrações
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
 
-# Adicionar Extensão do target a uma propriedade de inicialização {#adobe-target-extension}
+# Adicionar a extensão do Target a uma propriedade do Launch {#adobe-target-extension}
 
-Para acompanhar este vídeo, você já deve ter [Experience Platform Launch integrado com AEM](../experience-platform-launch/overview.md).
+Para acompanhar este vídeo, você já deve ter [integrado Experience Platform Launch com o AEM](../experience-platform-launch/overview.md).
 
-Saiba como habilitar o Adobe Target no seu site AEM usando o Experience Platform Launch.
+Saiba como habilitar o Adobe Target no site do AEM usando o Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
 ## Próximas etapas
 
-+ [Carregar e acionar uma chamada de Público alvo](./load-and-fire-target.md)
++ [Carregar e acionar uma chamada do Target](./load-and-fire-target.md)
 
 ## Links de suporte
 
