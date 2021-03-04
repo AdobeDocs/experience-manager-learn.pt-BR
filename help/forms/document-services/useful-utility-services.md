@@ -1,24 +1,27 @@
 ---
 title: Serviços de utilidade pública
-description: Alguns serviços utilitários úteis para desenvolvedores AEM Forms
-feature: document-services
+description: Alguns serviços úteis de utilitários para desenvolvedores do AEM Forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 3%
 
 ---
 
 
 # Serviços de utilidade pública
 
-Este pacote de amostra fornece serviços utilitários úteis que podem ser usados por um desenvolvedor AEM Forms. Os seguintes serviços estão disponíveis.
+Este pacote de amostra fornece serviços úteis que podem ser usados por um desenvolvedor do AEM Forms. Os seguintes serviços estão disponíveis.
 
 
 ```java
@@ -35,11 +38,11 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 }
 ```
 
-O pacote de amostra pode ser [baixado daqui](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
+O pacote de amostra pode ser [baixado aqui](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
-## Exemplo de código para usar os serviços de utilidade pública
+## Código de exemplo para usar o(s) serviço(s) de utilitário(s)
 
-A seguir está o código que foi usado na página JSP para criar org.w3c.dom.Documento a partir da sequência de caracteres e converter o documento e armazená-lo no repositório CRX, conforme mostrado no trecho de código a seguir.
+Este é o código que foi usado na página JSP para criar org.w3c.dom.Document a partir da string e converter o documento e armazená-lo no repositório CRX, conforme mostrado no trecho de código a seguir.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -50,8 +53,8 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Pré-requisitos
 
 
-Você precisará implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e start o pacote.
+Você precisará implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e iniciar o pacote.
 
 
-Se você for salvar documentos no repositório CRX usando esse serviço de utilitários, siga o [artigo de desenvolvimento com o usuário do serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer as [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas ao usuário fd-service.
+Se você for salvar documentos no repositório CRX usando esse serviço de utilitário, siga o [desenvolvimento com artigo do usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer as [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas para o usuário fd-service.
 
