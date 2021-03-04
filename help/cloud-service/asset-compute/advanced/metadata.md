@@ -1,7 +1,7 @@
 ---
-title: Desenvolver um trabalhador de metadados de Asset computes
-description: Saiba como criar um trabalhador de metadados de Asset compute que deriva as cores mais usadas em um ativo de imagem e grava os nomes das cores de volta aos metadados do ativo no AEM.
-feature: asset-compute
+title: Desenvolver um trabalhador de metadados do Asset Compute
+description: Saiba como criar um trabalhador de metadados do Asset Compute que deriva as cores mais usadas em um ativo de imagem e grava os nomes das cores de volta nos metadados do ativo no AEM.
+feature: Microserviços do Asset Compute
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,54 +9,57 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
+topic: Integrações, desenvolvimento
+role: Desenvolvedor
+level: Intermediário, Experienciado
 translation-type: tm+mt
-source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
 
 
-# Desenvolver um trabalhador de metadados de Asset computes
+# Desenvolver um trabalhador de metadados do Asset Compute
 
-Os funcionários do Asset compute personalizado podem produzir dados de XMP (XML) que são enviados para AEM e armazenados como metadados em um ativo.
+Os trabalhadores do Custom Asset Compute podem produzir dados XMP (XML) que são enviados de volta ao AEM e armazenados como metadados em um ativo.
 
-Os casos de uso frequentes incluem:
+Os casos de uso comuns incluem:
 
 + Integrações com sistemas de terceiros, como um PIM (Product Information Management system), em que metadados adicionais devem ser recuperados e armazenados no ativo
-+ Integrações com serviços de Adobe, como o AI de Conteúdo e Comércio para aumentar os metadados de ativos com atributos adicionais de aprendizado de máquina
-+ Derivar metadados sobre o ativo de seu binário e armazená-lo como metadados de ativos em AEM como um Cloud Service
++ Integrações com serviços da Adobe, como Content e Commerce AI, para aumentar os metadados do ativo com atributos adicionais de aprendizado de máquina
++ Derivar metadados sobre o ativo de seu binário e armazená-lo como metadados de ativos no AEM as a Cloud Service
 
 ## O que você vai fazer
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-Neste tutorial, criaremos um trabalhador de metadados de Asset compute que deriva as cores mais usadas em um ativo de imagem e gravará os nomes das cores de volta nos metadados do ativo no AEM. Embora o próprio trabalhador seja básico, este tutorial o usa para explorar como os trabalhadores do Asset compute podem ser usados para gravar metadados em ativos no AEM como Cloud Service.
+Neste tutorial, criaremos um trabalhador de metadados do Asset Compute que deriva as cores mais usadas em um ativo de imagem e grava os nomes das cores de volta nos metadados do ativo no AEM. Embora o trabalhador em si seja básico, este tutorial o usa para explorar como os trabalhadores do Asset Compute podem ser usados para gravar metadados em ativos no AEM as a Cloud Service.
 
-## Fluxo lógico de uma invocação do trabalhador de metadados de Asset compute
+## Fluxo lógico de uma invocação do trabalhador de metadados do Asset Compute
 
-A invocação de trabalhadores de metadados de Asset compute é quase idêntica à de [trabalhadores geradores de execuções binárias](../develop/worker.md), com a diferença principal sendo o tipo de retorno é uma representação XMP (XML) cujos valores também são gravados nos metadados do ativo.
+A invocação de trabalhadores de metadados do Asset Compute é quase idêntica à invocação de [trabalhadores geradores de rendição binária](../develop/worker.md), com a principal diferença sendo o tipo de retorno é uma representação XMP (XML) cujos valores também são gravados nos metadados do ativo.
 
-Os funcionários do asset compute implementam o contrato da API de trabalho do SDK do Asset compute, na função `renditionCallback(...)`, que é conceitualmente:
+Os trabalhadores do Asset Compute implementam o contrato de API do trabalhador do SDK do Asset Compute, na função `renditionCallback(...)`, que é conceitualmente:
 
-+ __Entrada:__ os parâmetros originais do binário e do Perfil de processamento de um ativo AEM
-+ __Saída:__ uma representação XMP (XML) persistiu para o ativo AEM como uma representação e para os metadados do ativo
++ __Entrada:__ Parâmetros originais do binário e do perfil de processamento de um ativo AEM
++ __Saída:__ uma representação XMP (XML) persistente no ativo AEM como uma representação e nos metadados do ativo
 
-![Fluxo lógico do trabalhador de metadados do asset compute](./assets/metadata/logical-flow.png)
+![Fluxo lógico do trabalhador de metadados do Asset Compute](./assets/metadata/logical-flow.png)
 
-1. O serviço de autor de AEM chama o trabalhador de metadados do Asset compute, fornecendo o binário original __(1a)__ do ativo e __(1b)__ quaisquer parâmetros definidos no Perfil de processamento.
-1. O SDK do Asset compute orquestra a execução da função `renditionCallback(...)` do funcionário de metadados do Asset compute personalizado, derivando uma execução XMP (XML), com base no binário do ativo __(1a)__ e em quaisquer parâmetros do Perfil de processamento __(1b)__.
-1. O trabalhador do Asset compute salva a representação do XMP (XML) em `rendition.path`.
-1. Os dados XMP (XML) gravados em `rendition.path` são transportados pelo SDK do Asset compute para o serviço de autor de AEM e os expõe como __(4a)__ uma renderização de texto e __(4b)__ persistidos no nó de metadados do ativo.
+1. O serviço Autor do AEM chama o trabalhador de metadados do Asset Compute , fornecendo o __(1a)__ binário original do ativo e __(1b)__ qualquer parâmetro definido no Perfil de processamento.
+1. O SDK do Asset Compute orquestra a execução da função `renditionCallback(...)` do trabalhador de metadados do Asset Compute personalizado, derivando uma representação XMP (XML), com base no binário do ativo __(1a)__ e em qualquer parâmetro do Perfil de processamento __(1b)__.
+1. O trabalhador do Asset Compute salva a representação XMP (XML) em `rendition.path`.
+1. Os dados XMP (XML) gravados em `rendition.path` são transportados por meio do SDK do Asset Compute para o AEM Author Service e os expõem como __(4a)__ uma representação de texto e __(4b)__ persistem no nó de metadados do ativo.
 
-## Configure o manifest.yml{#manifest}
+## Configurar o manifest.yml{#manifest}
 
-Todos os trabalhadores do Asset compute devem estar registrados em [manifest.yml](../develop/manifest.md).
+Todos os trabalhadores do Asset Compute devem ser registrados no [manifest.yml](../develop/manifest.md).
 
 Abra o `manifest.yml` do projeto e adicione uma entrada de trabalhador que configure o novo trabalhador, neste caso `metadata-colors`.
 
-_Lembre-se de que  `.yml` o espaço em branco é sensível._
+_Lembre- `.yml` se de que o espaço em branco é sensível._
 
 ```
 packages:
@@ -81,17 +84,17 @@ packages:
           memorySize: 512 # in MB   
 ```
 
-`function` aponta para a implementação do trabalhador criada na  [próxima etapa](#metadata-worker). Nomeie trabalhadores semânticos (por exemplo, `actions/worker/index.js` pode ter sido mais bem nomeado `actions/rendition-circle/index.js`), como mostram o URL [do trabalhador](#deploy) e também determinam o [nome da pasta de conjunto de testes do trabalhador](#test).
+`function` aponta para a implementação do trabalhador criada na  [próxima etapa](#metadata-worker). Nomeie trabalhadores semanticamente (por exemplo, o `actions/worker/index.js` pode ter sido mais bem nomeado `actions/rendition-circle/index.js`), como eles mostram no [URL do trabalhador](#deploy) e também determinam o [nome da pasta do conjunto de testes do trabalhador](#test).
 
-Os `limits` e `require-adobe-auth` são configurados separadamente por trabalhador. Neste trabalhador, `512 MB` da memória é alocada como o código inspeciona (potencialmente) grandes dados de imagem binária. Os outros `limits` são removidos para usar os padrões.
+Os `limits` e `require-adobe-auth` são configurados discretamente por trabalhador. Neste trabalhador, `512 MB` da memória é alocada conforme o código inspeciona (potencialmente) grandes dados de imagem binária. Os outros `limits` são removidos para usar os padrões.
 
 ## Desenvolver um trabalhador de metadados{#metadata-worker}
 
-Crie um novo arquivo JavaScript do trabalhador de metadados no projeto do Asset compute no caminho [manifest.yml definido para o novo trabalhador](#manifest), em `/actions/metadata-colors/index.js`
+Crie um novo arquivo JavaScript de trabalhador de metadados no projeto do Asset Compute no caminho [manifest.yml definido para o novo trabalhador](#manifest), em `/actions/metadata-colors/index.js`
 
 ### Instalar módulos npm
 
-Instale os módulos npm adicionais ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors) e [color-namer](https://www.npmjs.com/package/color-namer)) que serão utilizados neste trabalhador de Asset computes.
+Instale os módulos npm adicionais ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-colors](https://www.npmjs.com/package/get-image-colors) e [color-namer](https://www.npmjs.com/package/color-namer)) que serão usados neste trabalhador do Asset Compute.
 
 ```
 $ npm install @adobe/asset-compute-xmp
@@ -101,7 +104,7 @@ $ npm install color-namer
 
 ### Código do trabalhador de metadados
 
-Este trabalhador parece muito semelhante ao [trabalhador gerador de execuções](../develop/worker.md), a principal diferença é que grava dados XMP (XML) no `rendition.path` para ser salvo de volta para AEM.
+Esse trabalhador é muito semelhante ao [trabalhador gerador de rendição](../develop/worker.md), a principal diferença é que ele grava dados XMP (XML) no `rendition.path` para ser salvo de volta no AEM.
 
 
 ```javascript
@@ -180,16 +183,16 @@ function getColorName(colorsFamily, color) {
 
 ## Executar o trabalhador de metadados localmente{#development-tool}
 
-Com o código de trabalho concluído, ele pode ser executado usando a ferramenta local de desenvolvimento de Asset computes.
+Com o código do trabalhador concluído, ele pode ser executado usando a Ferramenta de desenvolvimento Asset Compute local.
 
-Como nosso projeto de Asset compute contém dois trabalhadores (a renderização [círculo anterior](../develop/worker.md) e este `metadata-colors` trabalhador), a definição de perfil [Ferramenta de Desenvolvimento de Asset computes](../develop/development-tool.md) lista perfis de execução para ambos os trabalhadores. A segunda definição de perfil aponta para o novo trabalhador `metadata-colors`.
+Como nosso projeto do Asset Compute contém dois trabalhadores (a anterior [representação de círculo](../develop/worker.md) e esse trabalhador `metadata-colors`), a definição de perfil da [Ferramenta de desenvolvimento do Asset Compute](../develop/development-tool.md) lista os perfis de execução para ambos os trabalhadores. A segunda definição de perfil aponta para o novo trabalhador `metadata-colors`.
 
-![Execução de metadados XML](./assets/metadata/metadata-rendition.png)
+![Representação de metadados XML](./assets/metadata/metadata-rendition.png)
 
-1. Da raiz do projeto do Asset compute
-1. Execute `aio app run` para start da Ferramenta de Desenvolvimento de Asset computes
-1. Em __Selecione um ficheiro...__ menu suspenso, escolha [imagem de amostra](../assets/samples/sample-file.jpg) para processar
-1. Na segunda configuração de definição de perfil, que aponta para o trabalhador `metadata-colors`, atualize `"name": "rendition.xml"` à medida que este trabalhador gera uma execução XMP (XML). Como opção, adicione um parâmetro `colorsFamily` (valores suportados `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
+1. Na raiz do projeto Asset Compute
+1. Execute `aio app run` para iniciar a Ferramenta de desenvolvimento Asset Compute
+1. No __Selecione um arquivo...__ suspenso, escolha um [imagem de amostra](../assets/samples/sample-file.jpg) para processar
+1. Na segunda configuração de definição de perfil, que aponta para o trabalhador `metadata-colors` , atualize `"name": "rendition.xml"` conforme esse trabalhador gera uma representação XMP (XML). Opcionalmente, adicione um parâmetro `colorsFamily` (valores compatíveis `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
    ```json
    {
@@ -202,15 +205,15 @@ Como nosso projeto de Asset compute contém dois trabalhadores (a renderização
        ]
    }
    ```
-1. Toque em __Executar__ e aguarde a execução XML ser gerada
-   + Como ambos os trabalhadores estão listados na definição do perfil, ambas as execuções serão geradas. Como opção, a definição do perfil superior que aponta para o [trabalhador de representação em círculo](../develop/worker.md) pode ser excluída, para evitar executá-la da Ferramenta de Desenvolvimento.
-1. A seção __Representações__ pré-visualização a representação gerada. Toque em `rendition.xml` para baixá-lo e abra-o no Código VS (ou no editor de texto XML/texto favorito) para revisá-lo.
+1. Toque em __Executar__ e aguarde a representação XML ser gerada
+   + Como ambos os trabalhadores estão listados na definição do perfil, ambas as renderizações serão geradas. Opcionalmente, a definição do perfil superior apontando para [trabalhador de representação de círculo](../develop/worker.md) pode ser excluída, para evitar executá-la na Ferramenta de desenvolvimento.
+1. A seção __Representações__ visualiza a representação gerada. Toque em `rendition.xml` para baixá-lo e abra-o no Código VS (ou no editor de texto XML/favorito) para revisar.
 
 ## Testar o trabalhador{#test}
 
-Os trabalhadores de metadados podem ser testados usando a mesma estrutura de teste de Asset compute [que as renderizações binárias](../test-debug/test.md). A única diferença é que o arquivo `rendition.xxx` no caso de teste deve ser a execução XMP (XML) esperada.
+Os trabalhadores de metadados podem ser testados usando a [mesma estrutura de teste do Asset Compute que renderizações binárias](../test-debug/test.md). A única diferença é que o arquivo `rendition.xxx` no caso de teste deve ser a representação XMP (XML) esperada.
 
-1. Crie a seguinte estrutura no projeto do Asset compute:
+1. Crie a seguinte estrutura no projeto do Asset Compute:
 
    ```
    /test/asset-compute/metadata-colors/success-pantone/
@@ -230,89 +233,89 @@ Os trabalhadores de metadados podem ser testados usando a mesma estrutura de tes
    }
    ```
 
-   Observe que `"fmt": "xml"` é necessário para instruir o conjunto de testes a gerar uma renderização `.xml` baseada em texto.
+   Observe que `"fmt": "xml"` é necessário para instruir o conjunto de testes a gerar uma renderização baseada em texto `.xml`.
 
-4. Forneça o XML esperado no arquivo `rendition.xml`. Esta informação pode ser obtida:
-   + Executar o arquivo de entrada de teste por meio da ferramenta de desenvolvimento e salvar a execução XML (validada) fora.
+4. Forneça o XML esperado no arquivo `rendition.xml`. Para tal, pode recorrer-se:
+   + Executar o arquivo de entrada de teste por meio da Ferramenta de desenvolvimento e salvar a renderização XML (validada).
 
    ```
    <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wknd="https://wknd.site/assets/1.0/"><rdf:Description><wknd:colors><rdf:Seq><rdf:li>Silver</rdf:li><rdf:li>Black</rdf:li><rdf:li>Outer Space</rdf:li></rdf:Seq></wknd:colors><wknd:colorsFamily>pantone</wknd:colorsFamily></rdf:Description></rdf:RDF>
    ```
 
-5. Execute `aio app test` da raiz do projeto do Asset compute para executar todos os conjuntos de teste.
+5. Execute `aio app test` a partir da raiz do projeto Asset Compute para executar todos os conjuntos de teste.
 
-### Implantar o trabalhador no Adobe I/O Runtime{#deploy}
+### Implante o trabalhador no Adobe I/O Runtime{#deploy}
 
-Para chamar esse novo trabalhador de metadados do AEM Assets, ele deve ser implantado no Adobe I/O Runtime usando o comando:
+Para chamar esse novo trabalhador de metadados do AEM Assets, ele deve ser implantado no Adobe I/O Runtime, usando o comando:
 
 ```
 $ aio app deploy
 ```
 
-![implantação do aplicativo no rádio](./assets/metadata/aio-app-deploy.png)
+![implantação do aplicativo aio](./assets/metadata/aio-app-deploy.png)
 
-Observe que isso implantará todos os funcionários no projeto. Revise as [instruções de implantação não abreviadas](../deploy/runtime.md) para saber como implantar nos espaços de trabalho do Stage e do Production.
+Observe que isso implantará todos os trabalhadores no projeto. Revise as [instruções de implantação não resumidas](../deploy/runtime.md) para saber como implantar em espaços de trabalho de Preparo e Produção.
 
 ### Integrar a Perfis de processamento AEM{#processing-profile}
 
-Chame o trabalhador de AEM criando um novo serviço de Perfil de processamento personalizado existente ou modificando um existente que chame esse funcionário implantado.
+Chame o trabalhador do AEM criando um novo ou modificando um serviço de Perfil de processamento personalizado existente que chama esse trabalhador implantado.
 
 ![Perfil de processamento](./assets/metadata/processing-profile.png)
 
-1. Faça logon no AEM como um serviço de autor de Cloud Service como um __AEM Administrador__
+1. Faça logon no AEM as a Cloud Service Author como um __Administrador do AEM__
 1. Navegue até __Ferramentas > Ativos > Perfis de processamento__
-1. ____ Crie um Perfil de processamento novo ou  ____ editável e existente
+1. ____ Criar um perfil de processamento novo ou  ____ existente
 1. Toque na guia __Personalizado__ e toque em __Adicionar novo__
 1. Definir o novo serviço
-   + __Criar representação__ de metadados: Alternar para ativo
-   + __Ponto de extremidade:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/metadata-colors`
-      + Este é o URL do trabalhador obtido durante a [implantação](#deploy) ou usando o comando `aio app get-url`. Verifique se o URL aponta para a área de trabalho correta com base no AEM como um ambiente Cloud Service.
+   + __Criar representação de metadados__: Alternar para ativo
+   + __Endpoint:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/metadata-colors`
+      + Esse é o URL do trabalhador obtido durante a [implantação](#deploy) ou usando o comando `aio app get-url`. Verifique se o URL aponta para o espaço de trabalho correto com base no ambiente do AEM as a Cloud Service.
    + __Parâmetros de serviço__
       + Toque em __Adicionar Parâmetro__
          + Chave: `colorFamily`
          + Valor: `pantone`
-            + Valores suportados: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
+            + Valores compatíveis: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
    + __Tipos de mime__
       + __Inclui:__ `image/jpeg`,  `image/png`,  `image/gif`,  `image/svg`
          + Esses são os únicos tipos MIME suportados pelos módulos npm de terceiros usados para derivar as cores.
       + __Exclui:__ `Leave blank`
 1. Toque em __Salvar__ no canto superior direito
-1. Aplique o Perfil de processamento a uma pasta do AEM Assets se ainda não tiver feito isso
+1. Aplique o perfil de processamento a uma pasta do AEM Assets se ainda não tiver feito isso
 
-### Atualizar o Schema de Metadados{#metadata-schema}
+### Atualizar o Esquema de Metadados{#metadata-schema}
 
-Para revisar os metadados de cores, mapeie dois novos campos no schema de metadados da imagem para as novas propriedades de dados de metadados que o trabalhador preenche.
+Para analisar os metadados de cores, mapeie dois novos campos no esquema de metadados da imagem para as novas propriedades de dados de metadados que o trabalhador preenche.
 
 ![Esquema de metadados](./assets/metadata/metadata-schema.png)
 
-1. No serviço Autor de AEM, navegue até __Ferramentas > Ativos > Schemas de metadados__
-1. Navegue até __padrão__ e selecione e edite __imagem__ e adicione campos de formulário somente leitura para expor os metadados de cor gerados
+1. No serviço Autor do AEM, navegue até __Ferramentas > Ativos > Esquemas de metadados__
+1. Navegue até __padrão__, selecione e edite __imagem__ e adicione campos de formulário somente leitura para expor os metadados de cores gerados
 1. Adicionar um __Texto de Linha Única__
    + __Rótulo do campo__: `Colors Family`
    + __Mapear para a propriedade__: `./jcr:content/metadata/wknd:colorsFamily`
    + __Regras > Campo > Desativar edição__: Verificado
-1. Adicionar um __Texto com vários valores__
+1. Adicionar um __Texto de vários valores__
    + __Rótulo do campo__: `Colors`
    + __Mapear para a propriedade__: `./jcr:content/metadata/wknd:colors`
 1. Toque em __Salvar__ no canto superior direito
 
-## Processando ativos
+## Processamento de ativos
 
 ![Detalhes do ativo](./assets/metadata/asset-details.png)
 
-1. No serviço Autor de AEM, navegue até __Ativos > Arquivos__
-1. Navegue até a pasta ou subpasta à qual o Perfil Processamento é aplicado
-1. Carregue uma nova imagem (JPEG, PNG, GIF ou SVG) na pasta ou reprocesse imagens existentes usando o Perfil de processamento [atualizado](#processing-profile)
-1. Quando o processamento estiver concluído, selecione o ativo e toque __propriedades__ na barra de ação superior para exibir seus metadados
-1. Analise os `Colors Family` e `Colors` [campos de metadados](#metadata-schema) para obter os metadados escritos a partir do trabalhador de metadados de Asset compute personalizado.
+1. No serviço Autor do AEM, navegue até __Ativos > Arquivos__
+1. Navegue até a pasta, ou subpasta, o Perfil de processamento é aplicado a
+1. Carregue uma nova imagem (JPEG, PNG, GIF ou SVG) na pasta ou reprocesse as imagens existentes usando o [Perfil de processamento](#processing-profile) atualizado
+1. Quando o processamento estiver concluído, selecione o ativo e toque em __properties__ na barra de ação superior para exibir seus metadados
+1. Revise os `Colors Family` e `Colors` [campos de metadados](#metadata-schema) para os metadados escritos a partir do trabalhador de metadados personalizado do Asset Compute.
 
-Com os metadados coloridos gravados nos metadados do ativo, no recurso `[dam:Asset]/jcr:content/metadata`, esses metadados são indexados e aumentam a capacidade de descoberta do ativo usando esses termos por meio da pesquisa, e podem até ser gravados de volta no binário do ativo se o fluxo de trabalho __DAM Metadata Writeback__ for chamado nele.
+Com os metadados de cor gravados nos metadados do ativo, no recurso `[dam:Asset]/jcr:content/metadata`, esses metadados são indexados e aumentam a capacidade de descoberta do ativo usando esses termos por meio da pesquisa, e podem até ser gravados de volta no binário do ativo se, em seguida, o fluxo de trabalho __Writeback de metadados DAM__ for chamado nele.
 
-### Execução de metadados no AEM Assets
+### Representação de metadados no AEM Assets
 
-![Arquivo de execução de metadados do AEM Assets](./assets/metadata/cqdam-metadata-rendition.png)
+![Arquivo de representação de metadados do AEM Assets](./assets/metadata/cqdam-metadata-rendition.png)
 
-O arquivo de XMP real gerado pelo trabalhador de metadados do Asset compute também é armazenado como uma representação discreta no ativo. Normalmente, esse arquivo não é usado, em vez disso, os valores aplicados ao nó de metadados do ativo são usados, mas a saída XML bruta do trabalhador está disponível no AEM.
+O arquivo XMP real gerado pelo trabalhador de metadados do Asset Compute também é armazenado como uma representação discreta no ativo. Esse arquivo geralmente não é usado, em vez disso, os valores aplicados ao nó de metadados do ativo são usados, mas a saída XML bruta do trabalhador está disponível no AEM.
 
 ## código de trabalho de cores de metadados no Github
 
@@ -322,4 +325,4 @@ O `metadata-colors/index.js` final está disponível no Github em:
 
 O conjunto de testes final `test/asset-compute/metadata-colors` está disponível no Github em:
 
-+ [aem-guides-wknd-asset-compute/test/asset-compute/metadata-color](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/test/asset-compute/metadata-colors)
++ [aem-guides-wknd-asset-compute/test/asset-compute/metadata-colors](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/test/asset-compute/metadata-colors)
