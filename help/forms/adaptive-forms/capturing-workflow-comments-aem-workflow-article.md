@@ -4,21 +4,18 @@ seo-title: Capturando comentários do fluxo de trabalho no fluxo de trabalho de 
 description: Capturando comentários do fluxo de trabalho no fluxo de trabalho do AEM
 seo-description: Capturando comentários do fluxo de trabalho no fluxo de trabalho do AEM
 uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4
 discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 0%
 
 ---
 
