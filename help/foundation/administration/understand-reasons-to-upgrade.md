@@ -7,13 +7,10 @@ topics: best-practices, upgrade
 audience: all
 activity: understand
 doc-type: article
-topic: Atualização
-role: '"Líder, Arquiteto, Desenvolvedor, Administrador, Praticante de negócios"'
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '3548'
+source-wordcount: '3540'
 ht-degree: 3%
 
 ---
