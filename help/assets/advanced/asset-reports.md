@@ -1,25 +1,25 @@
 ---
 title: Relatórios de ativos no AEM Assets
-description: 'A AEM Assets fornece uma estrutura de relatórios de nível corporativo que é dimensionada para repositórios grandes por meio de uma experiência intuitiva do usuário. '
+description: 'O AEM Assets fornece uma estrutura de relatórios de nível empresarial que dimensiona repositórios grandes por meio de uma experiência intuitiva do usuário. '
 feature: Relatórios dos ativos
-topics: Administration
-role: Praticante de negócios
+topic: Administração
+role: Profissional
 level: Intermediário
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 648
 thumbnail: 22140.jpg
 translation-type: tm+mt
-source-git-commit: d34a26fde25ff1f0affcdefd74ed8b711d2ab138
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 4%
+source-wordcount: '49'
+ht-degree: 6%
 
 ---
 
 
 # Relatórios de ativos{#using-reports-in-aem-assets}
 
-A AEM Assets fornece uma estrutura de relatórios de nível corporativo que é dimensionada para repositórios grandes por meio de uma experiência intuitiva do usuário.
+O AEM Assets fornece uma estrutura de relatórios de nível empresarial que dimensiona repositórios grandes por meio de uma experiência intuitiva do usuário.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
 
