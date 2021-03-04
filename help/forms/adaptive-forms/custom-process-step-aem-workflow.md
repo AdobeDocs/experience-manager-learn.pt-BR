@@ -3,19 +3,16 @@ title: Etapa de processo personalizada
 seo-title: Etapa de processo personalizada
 description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
 seo-description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
