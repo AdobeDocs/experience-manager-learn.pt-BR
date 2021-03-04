@@ -4,18 +4,21 @@ seo-title: Configuração do delivery do documento de canal da Web
 description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, verificamos o delivery de documentos do canal da Web por email.
 seo-description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, verificamos o delivery de documentos do canal da Web por email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: comunicação interativa
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
