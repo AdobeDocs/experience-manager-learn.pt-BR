@@ -1,7 +1,7 @@
 ---
-title: Variáveis do modelo de dados de formulário de tipo
-description: Uso de variáveis do tipo de modelo de dados de formulário em um fluxo de trabalho AEM.
-feature: workflow
+title: Variáveis do tipo de modelo de dados de formulário
+description: Uso de variáveis do tipo de modelo de dados de formulário em um fluxo de trabalho do AEM.
+feature: Fluxo de trabalho
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,18 +9,21 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 
 
-# Variáveis do modelo de dados de formulário de tipo
+# Variáveis do tipo de modelo de dados de formulário
 
-As variáveis do tipo de modelo de dados de formulário geralmente são usadas para inserir linhas na fonte de dados subjacente do modelo de dados de formulário. Este vídeo explica as etapas necessárias para inserir uma linha no banco de dados usando AEM fluxo de trabalho.
+As variáveis do tipo de modelo de dados de formulário geralmente são usadas para inserir linhas na fonte de dados subjacente do modelo de dados de formulário. Este vídeo explica as etapas necessárias para inserir uma linha no banco de dados usando o fluxo de trabalho do AEM.
 
 
 
