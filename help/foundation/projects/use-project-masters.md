@@ -1,22 +1,18 @@
 ---
 title: Como usar os Mestres de projeto no AEM
 description: O Project Masters simplifica bastante o gerenciamento de usuários e de equipes com projetos do AEM.
-version: 6.4, 6.5, Cloud Service
-feature: Projetos, usuários e grupos
-topics: administration, collaboration, performance
-activity: use
-audience: administrator, implementer, architect
-doc-type: article
-topic: Colaboração
+version: 6.4, 6.5, cloud-service
+topic: Gerenciamento de conteúdo
+feature: Projetos
+level: Intermediário
 role: Profissional
-level: Iniciante
 kt: 256
 thumbnail: 17740.jpg
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
