@@ -4,20 +4,17 @@ seo-title: Usar a Exibição de calendário com projetos e caixa de entrada do A
 description: 'A Exibição de calendário do AEM acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento. '
 seo-description: A Exibição de calendário do AEM acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento.
 version: 6.3, 6.4, 6.5
-feature: '"Fluxo de trabalho, projetos"'
+feature: caixa de entrada, projetos, fluxo de trabalho
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Colaboração
-role: Profissional
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
