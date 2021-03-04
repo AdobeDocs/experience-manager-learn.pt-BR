@@ -11,14 +11,10 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: '"Componentes principais, Editor de páginas, Modelos editáveis, Arquétipo de projeto do AEM"'
-topic: '"Gestão de conteúdo, desenvolvimento"'
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '893'
 ht-degree: 14%
 
 ---
