@@ -3,17 +3,20 @@ title: Gráficos de várias séries no AEM Forms
 seo-title: Gráficos de várias séries no AEM Forms
 description: Crie o Modelo de dados de formulário apropriado para criar gráficos de várias séries em documentos impressos e de canal da Web.
 seo-description: Crie o Modelo de dados de formulário apropriado para criar gráficos de várias séries em documentos impressos e de canal da Web.
-feature: comunicação interativa
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
