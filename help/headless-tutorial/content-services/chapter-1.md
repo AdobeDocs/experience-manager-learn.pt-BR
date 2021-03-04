@@ -3,10 +3,14 @@ title: Capítulo 1 - Configuração e downloads do tutorial - Serviços de conte
 seo-title: Introdução aos serviços de conteúdo do AEM - Capítulo 1 - Configuração do tutorial
 description: O Capítulo 1 do tutorial AEM Headless mostra a configuração da linha de base para a instância do AEM para o tutorial.
 seo-description: O Capítulo 1 do tutorial AEM Headless mostra a configuração da linha de base para a instância do AEM para o tutorial.
+feature: Fragmentos de conteúdo, APIs
+topic: Sem periféricos, gerenciamento de conteúdo
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
