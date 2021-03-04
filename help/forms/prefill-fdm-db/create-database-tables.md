@@ -1,7 +1,7 @@
 ---
 title: Criar tabelas de banco de dados
 description: Criar banco de dados a ser usado pelo modelo de dados de formulário
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,26 +9,29 @@ activity: implement
 version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 3%
 
 ---
 
 
-# Criar tabelas de banco de dados
+# Criar Tabelas de Banco de Dados
 
-O modelo de dados de formulário pode ser baseado em fontes RDBMS, RESTfull, SOAP ou OData. O foco deste curso é o preenchimento prévio do formulário adaptável usando o modelo de dados de formulário respaldado pela fonte de dados RDBMS. Para a finalidade deste tutorial, foi usado o banco de dados MYSQL. Criamos as duas tabelas a seguir para demonstrar o caso de uso
+O modelo de dados de formulário pode ser baseado em fontes RDBMS, RESTfull, SOAP ou OData. O foco deste curso é no preenchimento prévio do formulário adaptável usando o modelo de dados de formulário apoiado pela fonte de dados RDBMS. Para a finalidade deste tutorial, foi usado o banco de dados MYSQL. Criamos as duas tabelas a seguir para demonstrar o caso de uso
 
-* **** negrito - Esta tabela armazena as informações novas
+* **** nwhiretable - Esta tabela armazena as informações completas
 
    ![newhire](assets/newhire-table.png)
 
 
-* **** Beneficiários - Este artigo armazena os novos beneficiários
+* **** beneficiários - Isso armazena beneficiários novos
 
    ![beneficiários](assets/beneficiaries-table.png)
 
-Você pode importar o [arquivo sql](assets/db-schema.sql) usando a bancada MySQL para criar tabelas com alguns dados de amostra.
+Você pode importar o [arquivo sql](assets/db-schema.sql) usando o Workbench MySQL para criar tabelas com alguns dados de amostra.
