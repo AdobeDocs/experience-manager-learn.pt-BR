@@ -3,7 +3,7 @@ title: Como entender as propriedades da página no AEM Sites
 seo-title: Como entender as propriedades da página no Adobe Experience Manager Sites
 description: O vídeo a seguir apresenta os metadados das propriedades da página associados a uma página no Adobe Experience Manager.
 seo-description: 'O vídeo a seguir apresenta os metadados das propriedades da página associados a uma página no Adobe Experience Manager. '
-feature: page-editor
+feature: Editor de página
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,22 +11,25 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
+topic: Gerenciamento de conteúdo
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 29%
+source-wordcount: '177'
+ht-degree: 30%
 
 ---
 
 
-# Como entender as propriedades da página {#understanding-page-properties-aem-sites}
+# Entendendo as propriedades da página {#understanding-page-properties-aem-sites}
 
 O vídeo a seguir apresenta as propriedades de página associadas a uma página no Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-Neste vídeo, os seguintes elementos de propriedade de página são abordados:
+Neste vídeo, os seguintes elementos de propriedade da página são abordados:
 
 * Básico
    * Título e tags
@@ -56,10 +59,10 @@ Neste vídeo, os seguintes elementos de propriedade de página são abordados:
 * Personalização
    * Configurações do ContextHub
    * Configuração de direcionamento
-* Permissões 
+* Permissões
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de edição de propriedades da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Edição da documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
+* [Editar a documentação das propriedades da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Editar a documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guia do usuário de criação de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
