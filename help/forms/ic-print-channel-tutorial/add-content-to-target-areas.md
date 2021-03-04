@@ -4,7 +4,7 @@ seo-title: Adicionar conteúdo de texto e imagem ao documento de canal de impres
 description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp). '
 seo-description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp). '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,11 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '197'
+ht-degree: 0%
 
 ---
 
