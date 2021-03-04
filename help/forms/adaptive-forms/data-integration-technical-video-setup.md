@@ -3,7 +3,7 @@ title: Configurar a integração de dados com o AEM Forms
 seo-title: Configurar a integração de dados com o AEM Forms
 description: Configuração da conexão de dados com uma fonte de dados JDBC
 seo-description: Configuração da conexão de dados com uma fonte de dados JDBC
-feature: formulários adaptáveis, formulário-modelo de dados
+feature: Formulários adaptáveis,Fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: setup
 version: 6.4,6.5
 uuid: 267de794-4462-4421-adee-d40a469fabb3
 discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
