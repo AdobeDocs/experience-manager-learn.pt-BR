@@ -2,17 +2,14 @@
 title: Configurar um Ambiente de desenvolvimento do AEM local
 description: Guia para configurar um desenvolvimento local para o Adobe Experience Manager, AEM. Abrange tópicos importantes de instalação local, Apache Maven, ambientes de desenvolvimento integrados e depuração/solução de problemas. O desenvolvimento com o Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ são discutidos.
 version: 6.4, 6.5
-feature: Ferramentas do desenvolvedor
+feature: maven-archetype
 topics: development
 activity: develop
 audience: developer
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
