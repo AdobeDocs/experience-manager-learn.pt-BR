@@ -4,7 +4,7 @@ seo-title: Gerando documentos de canal de impressão usando a pasta assistida
 description: Esta é a parte 10 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
 seo-description: Esta é a parte 10 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
