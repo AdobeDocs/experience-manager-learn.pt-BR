@@ -4,18 +4,17 @@ user-guide-description: Um tutorial completo que ilustra como criar e expor cont
 breadcrumb-title: Tutorial do AEM Headless
 version: cloud-service
 sub-product: serviços de conteúdo
-doc-type: tutorial
-feature: fragmento de conteúdo, componentes principais
-topics: content-delivery
 audience: architect, developer, implementer
+doc-type: tutorial
+topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 29%
+source-wordcount: '105'
+ht-degree: 30%
 
 ---
 
