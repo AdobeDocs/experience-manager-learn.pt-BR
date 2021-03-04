@@ -11,13 +11,10 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -143,7 +140,7 @@ $(document).ready(function()
 >
 >O formulário adaptável incluído neste pacote foi criado usando o AEM Forms 6.4. Se você pretende usar este pacote no ambiente AEM Forms 6.3, crie o Formulário adaptável no AEM Form 6.3
 
-Linha 12 - Código personalizado para obter o resolvedor de serviço. Esse pacote é incluído como parte dos ativos dos artigos.
+Linha 12 - Código personalizado para obter o resolvedor de serviços. Esse pacote é incluído como parte dos ativos dos artigos.
 
 Linha 23 - Chame o método extractBarCode de DocumentServices para obter o objeto JSON preenchido com dados decodificados
 
