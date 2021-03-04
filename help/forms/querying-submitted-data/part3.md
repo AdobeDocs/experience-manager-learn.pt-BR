@@ -1,29 +1,32 @@
 ---
-title: AEM Forms com Schema JSON e dados[Parte3]
-seo-title: AEM Forms com Schema JSON e dados[Parte3]
-description: Tutorial de várias peças para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com o schema JSON e consulta dos dados enviados.
-seo-description: Tutorial de várias peças para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com o schema JSON e consulta dos dados enviados.
-feature: adaptive-forms
+title: AEM Forms com esquema JSON e dados[Parte3]
+seo-title: AEM Forms com esquema JSON e dados[Parte3]
+description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+seo-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
 
-# Armazenamento do Schema JSON no banco de dados {#storing-json-schema-in-database}
+# Armazenamento do esquema JSON no banco de dados {#storing-json-schema-in-database}
 
 
-Para poder query nos dados enviados, será necessário armazenar o schema JSON associado ao formulário enviado. O schema JSON será usado no construtor de query para criar o query.
+Para consultar os dados enviados, é necessário armazenar o esquema JSON associado ao formulário enviado. O esquema JSON será usado no construtor de consultas para criar a consulta.
 
-Quando um Formulário adaptável é enviado, verificamos se o schema JSON associado está no banco de dados. Se o schema JSON não existir, buscamos o schema JSON e armazenamos o schema na tabela apropriada. Também associamos o nome do formulário ao schema JSON. A seguinte captura de tela mostra a tabela na qual os schemas JSON são armazenados.
+Quando um Formulário adaptável é enviado, verificamos se o esquema JSON associado está no banco de dados. Se o schema JSON não existir, buscamos o schema JSON e armazenamos o schema na tabela apropriada. Também associamos o nome do formulário ao esquema JSON. A captura de tela a seguir mostra a tabela onde os esquemas JSON são armazenados.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -105,9 +108,9 @@ public String getJSONSchema(String afPath) {
 
 >[!NOTE]
 >
->Ao criar um formulário adaptável, você pode usar o Schema JSON que está no repositório ou fazer upload de um schema JSON. O código acima funcionará em ambos os casos.
+>Ao criar um Formulário adaptável, você pode usar o Esquema JSON que está no repositório ou fazer upload de um esquema JSON. O código acima funcionará em ambos os casos.
 
-O schema obtido é armazenado no banco de dados usando as operações padrão JDBC. O código a seguir insere o schema no banco de dados
+O schema buscado é armazenado no banco de dados usando as operações JDBC padrão. O código a seguir insere o schema no banco de dados
 
 ```java
 public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
@@ -145,10 +148,10 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
 
 Resumindo, fizemos o seguinte até agora
 
-* Criar formulário adaptável com base no schema JSON
-* Se o formulário estiver sendo enviado na primeira vez, armazenaremos o schema JSON associado ao formulário no banco de dados.
-* Armazenamos os dados vinculados do Formulário adaptativo no banco de dados.
+* Criar formulário adaptável com base no esquema JSON
+* Se o formulário estiver sendo enviado na primeira vez, armazenaremos o esquema JSON associado ao formulário no banco de dados.
+* Armazenamos os dados vinculados do Formulário adaptável no banco de dados.
 
-As próximas etapas seriam usar o QueryBuilder para exibir os campos a serem pesquisados com base no Schema JSON
+As próximas etapas seriam usar o QueryBuilder para exibir os campos a serem pesquisados com base no esquema JSON
 
 
