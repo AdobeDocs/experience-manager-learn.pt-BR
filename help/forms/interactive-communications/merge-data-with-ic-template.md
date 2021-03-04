@@ -1,29 +1,32 @@
 ---
-title: Gerando Documento de Canal de impressão mesclando dados
-seo-title: Gerando Documento de Canal de impressão mesclando dados
-description: Saiba como gerar documentos de canal de impressão mesclando dados contidos no fluxo de entrada
-seo-description: Saiba como gerar documentos de canal de impressão mesclando dados contidos no fluxo de entrada
-feature: interactive-communication
+title: Gerando Documento de Canal de Impressão Mesclando Dados
+seo-title: Gerando Documento de Canal de Impressão Mesclando Dados
+description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
+seo-description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 0%
+source-wordcount: '506'
+ht-degree: 1%
 
 ---
 
-# Gerar Documentos de Canal de impressão usando dados enviados
+# Gerar documentos de canal de impressão usando dados enviados
 
-Documentos de canal de impressão geralmente são gerados pela busca de dados de uma fonte de dados de backend pelo serviço de obtenção do modelo de dados de formulário. Em alguns casos, pode ser necessário gerar documentos de canal de impressão com os dados fornecidos. Por exemplo: o Cliente preenche a alteração do formulário beneficiário e você pode gerar o documento do canal de impressão com os dados do formulário enviado. Para realizar esse caso de uso, siga as etapas a seguir
+Os documentos de canal de impressão geralmente são gerados pela busca de dados de uma fonte de dados de backend por meio do serviço de obtenção do modelo de dados de formulário. Em alguns casos, pode ser necessário gerar documentos do canal de impressão com os dados fornecidos. Por exemplo - O cliente preenche a alteração do formulário beneficiário e você pode gerar o documento do canal de impressão com os dados do formulário enviado. Para realizar esse caso de uso, siga as seguintes etapas
 
 ## Criar serviço de preenchimento prévio
 
-O nome do serviço &quot;ccm-print-test&quot; será usado para acessar este serviço. Depois que esse serviço de pré-preenchimento for definido, você poderá acessar esse serviço na implementação da etapa do servidor ou do processo de fluxo de trabalho para gerar o documento do canal de impressão.
+O nome do serviço &quot;ccm-print-test&quot; será usado para acessar este serviço . Depois que esse serviço de pré-preenchimento for definido, você poderá acessar esse serviço na implementação da etapa do processo do servlet ou do fluxo de trabalho para gerar o documento do canal de impressão.
 
 ```java
 import java.io.InputStream;
@@ -63,17 +66,17 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 }
 ```
 
-### Criar implementação de WorkflowProcess
+### Criar implementação do WorkflowProcess
 
-O trecho de código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no Fluxo de trabalho AEM está associada a essa implementação. Essa implementação espera três argumentos do processo, descritos abaixo:
+O snippet do código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no fluxo de trabalho do AEM é associada a essa implementação. Essa implementação espera três argumentos de processo, descritos abaixo:
 
 * Nome do caminho DataFile especificado ao configurar o Formulário adaptável
 * Nome do modelo de canal de impressão
-* Nome do documento de canal de impressão gerado
+* Nome do documento do canal de impressão gerado
 
-Linha 98 - Como o Formulário adaptável se baseia no Modelo de dados de formulário, os dados que residem no nó de dados do afBoundData são extraídos.
-Linha 128 - O nome do serviço Opções de dados está definido. Anote o nome do serviço. Ele deve corresponder ao nome retornado na Linha 45 da lista de códigos anterior.
-Linha 135 - O Documento é gerado usando o método de renderização do objeto PrintChannel
+Linha 98 - Como o Formulário adaptável é baseado no Modelo de dados de formulário, os dados residentes no nó de dados do afBoundData são extraídos.
+Linha 128 - O nome do serviço Opções de dados está definido. Observe o nome do serviço. Deve corresponder ao nome retornado na Linha 45 da lista de códigos anterior.
+Linha 135 - O documento é gerado usando o método de renderização do objeto PrintChannel
 
 
 ```java
@@ -162,22 +165,22 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Para testar isso em seu servidor, siga as seguintes etapas:
 
-* [Configure o serviço de e-mail Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Isso é necessário para enviar emails com o documento gerado como anexo.
-* [Implantar o pacote de desenvolvedores com usuários de serviços](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Verifique se você adicionou a seguinte entrada na Configuração do serviço Mapeador de Usuário do Apache Sling Service
-* **DevelopingWithServiceUser.core:getformsresouresolver=fd-service**
+* [Configure o Day CQ Mail Service.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Isso é necessário para enviar email com o documento gerado como anexo.
+* [Implantar o pacote de usuários Desenvolvimento com serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Certifique-se de ter adicionado a seguinte entrada na Configuração do serviço Mapeador de Usuário do Apache Sling Service
+* **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Baixe e descompacte os ativos relacionados a este artigo no seu sistema de arquivos](assets/prefillservice.zip)
-* [Importe os seguintes pacotes usando o Gerenciador de pacote AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe os seguintes pacotes usando o Gerenciador de pacotes do AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Implantar o seguinte usando o AEM Felix Web Console](http://localhost:4502/system/console/bundles)
+* [Implante o seguinte usando o Console da Web do AEM Felix](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Este pacote contém o código mencionado neste artigo.
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Verifique se o formulário adaptável está configurado para enviar para AEM fluxo de trabalho, como mostrado abaixo
+* Verifique se o formulário adaptável está configurado para enviar para o fluxo de trabalho do AEM, como mostrado abaixo
    ![imagem](assets/generateic.PNG)
-* [Configure o modelo de fluxo de trabalho.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifique se a etapa do processo e os componentes de e-mail de envio estão configurados de acordo com o seu ambiente
-* [Pré-visualização ChangeOfBenaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie
-* O fluxo de trabalho deve ser chamado e o documento de canal de impressão IC deve ser enviado para o recipient especificado no componente de email de envio como um anexo
+* [Configure o modelo de workflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Certifique-se de que a etapa do processo e o envio de componentes de email estejam configurados de acordo com seu ambiente
+* [Visualize ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie
+* O workflow deve ser chamado e o documento de canal de impressão IC deve ser enviado para o recipient especificado no componente de email de envio como anexo
