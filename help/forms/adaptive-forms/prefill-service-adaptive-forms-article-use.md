@@ -4,7 +4,7 @@ seo-title: Serviço de preenchimento prévio em formulários adaptáveis
 description: Preencha previamente formulários adaptáveis buscando dados de fontes de dados de backend.
 seo-description: Preencha previamente formulários adaptáveis buscando dados de fontes de dados de backend.
 sub-product: formulários
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: integrations
 audience: developer
 doc-type: article
@@ -12,14 +12,11 @@ activity: implement
 version: 6.4,6.5
 uuid: 26a8cba3-7921-4cbb-a182-216064e98054
 discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 1%
+source-wordcount: '479'
+ht-degree: 0%
 
 ---
 
