@@ -3,18 +3,15 @@ title: Entenda as práticas recomendadas da API Java no AEM
 description: O AEM é criado em uma pilha rica de software de código aberto que expõe muitas APIs Java para uso durante o desenvolvimento. Este artigo explora as principais APIs e quando e por que elas devem ser usadas.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: fundação, ativos, sites
-feature: APIs
+feature: null
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2023'
 ht-degree: 2%
 
 ---
@@ -131,7 +128,7 @@ A API preferencial é [AEM Query Builder](https://helpx.adobe.com/experience-man
 * Blocos básicos de processamento assíncrono de trabalho
 
    * [Manipuladores de evento e trabalho](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [Scheduler](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [Agendamentos](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 
 * [Usuários do serviço](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
