@@ -3,20 +3,17 @@ title: Criação da sua primeira comunicação interativa para o canal da Web
 seo-title: Criação da sua primeira comunicação interativa para o canal da Web
 description: As Comunicações interativas são novas no AEM Forms 6.4. Este documento guiará você pelas etapas necessárias para criar uma comunicação interativa para o canal da Web.
 seo-description: As Comunicações interativas são novas no AEM Forms 6.4. Este documento guiará você pelas etapas necessárias para criar uma comunicação interativa para o canal da Web.
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 4%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
