@@ -1,24 +1,27 @@
 ---
-title: Armazenamento e Recuperação de Dados de Formulário do Banco de Dados MySQL
-description: Tutorial de várias peças para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: adaptive-forms
+title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
+description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 1%
+source-wordcount: '98'
+ht-degree: 5%
 
 ---
 
 
 # Criar serviço OSGi para buscar dados
 
-O código a seguir foi gravado para armazenar e buscar os dados armazenados do Formulário adaptável. Um query simples é usado para buscar os dados do Formulário adaptável associados a um determinado GUID. Os dados obtidos são retornados para o aplicativo chamador. A mesma fonte de dados criada na etapa anterior é referenciada neste código
+O código a seguir foi gravado para armazenar e buscar os dados armazenados do Formulário adaptável. Uma consulta simples é usada para buscar os dados do Formulário adaptativo associados a um determinado GUID. Os dados buscados são retornados ao aplicativo chamador. A mesma fonte de dados criada na etapa anterior é referenciada neste código
 
 
 ```java
@@ -155,7 +158,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## Interface
 
-A seguir está a declaração da interface usada
+Veja a seguir a declaração de interface que foi usada
 
 ```java
 package com.aemforms.saveandcontinue.core;
