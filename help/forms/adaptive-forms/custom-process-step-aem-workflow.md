@@ -1,54 +1,57 @@
 ---
-title: Implementação da Etapa do Processo Personalizado
-seo-title: Implementação da Etapa do Processo Personalizado
+title: Etapa de processo personalizada
+seo-title: Etapa de processo personalizada
 description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
 seo-description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
-feature: workflow
+feature: Fluxo de trabalho
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
 
 
-# Etapa do processo personalizado
+# Etapa de processo personalizada
 
-Este tutorial é destinado aos clientes da AEM Forms que precisam implementar a etapa do processo personalizado. Uma etapa do processo pode executar o script ECMA ou chamar o código java personalizado para executar operações. Este tutorial explicará as etapas necessárias para implementar WorkflowProcess que são executadas pela etapa do processo.
+Este tutorial é destinado aos clientes do AEM Forms que precisam implementar a etapa de processo personalizada. Uma etapa do processo pode executar o script ECMA ou chamar o código java personalizado para executar operações. Este tutorial explicará as etapas necessárias para implementar o WorkflowProcess que é executado pela etapa do processo.
 
-A principal razão para implementar a etapa do processo personalizado é estender o Fluxo de trabalho AEM. Por exemplo, se você estiver usando componentes do AEM Forms em seu modelo de fluxo de trabalho, talvez você queira executar as seguintes operações
+O principal motivo para implementar a etapa do processo personalizado é estender o fluxo de trabalho do AEM. Por exemplo, se você estiver usando componentes do AEM Forms no seu modelo de fluxo de trabalho, talvez queira executar as seguintes operações
 
-* Salve os anexos do formulário adaptativo no sistema de arquivos
+* Salve os anexos do formulário adaptável no sistema de arquivos
 * Manipular os dados enviados
 
-Para realizar o caso de uso acima, você normalmente escreverá um serviço OSGi que é executado pela etapa do processo.
+Para realizar o caso de uso acima, você normalmente gravará um serviço OSGi que é executado pela etapa do processo.
 
 ## Criar projeto Maven
 
-A primeira etapa é criar um projeto maven usando o Adobe Maven Archetype apropriado. As etapas detalhadas estão listadas neste [artigo](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Depois que seu projeto de maven for importado para o eclipse, você estará pronto para o start gravando seu primeiro componente OSGi que pode ser usado na etapa do processo.
+A primeira etapa é criar um projeto maven usando o Arquétipo do Adobe Maven apropriado. As etapas detalhadas são listadas neste [artigo](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
 
 
-### Criar classe que implementa WorkflowProcess
+### Criar classe que implemente o WorkflowProcess
 
-Abra o projeto maven em seu IDE eclipse. Expanda a pasta **projectname** > **core**. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;núcleo&quot;. Crie uma classe Java que implemente WorkflowProcess neste pacote. Será necessário substituir o método execute. A assinatura do método execute é a seguinte
-public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)lança WorkflowException
-O método execute dá acesso às três variáveis a seguir
+Abra o projeto maven no eclipse IDE. Expanda a pasta **projectname** > **core**. Expanda a pasta src/main/java. Você deve ver um pacote que termine com &quot;núcleo&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Você precisará substituir o método de execução. A assinatura do método execute é a seguinte
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)aciona WorkflowException
+O método execute dá acesso às 3 variáveis a seguir
 
-**ItemTrabalho**: A variável workItem dará acesso aos dados relacionados ao fluxo de trabalho. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: A variável workItem dará acesso aos dados relacionados ao workflow. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Essa variável workflowSession lhe dará a capacidade de controlar o fluxo de trabalho. A documentação da API pública está disponível [aqui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Essa variável workflowSession fornecerá a capacidade de controlar o workflow. A documentação da API pública está disponível [aqui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**MetaDataMap**: Todos os metadados associados ao fluxo de trabalho. Quaisquer argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap.[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap**: Todos os metadados associados ao workflow. Quaisquer argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap .[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
-Neste tutorial, gravaremos os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
+Neste tutorial, gravaremos os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do fluxo de trabalho do AEM.
 
-Para realizar esse caso de uso, a seguinte classe java foi escrita
+Para realizar esse caso de uso, a seguinte classe java foi gravada
 
 Vamos dar uma olhada neste código
 
@@ -105,13 +108,13 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
     }
 ```
 
-Linha 1 - define as propriedades do nosso componente. A propriedade process.label é o que você verá ao associar o componente OSGi à etapa do processo, conforme mostrado em uma das capturas de tela abaixo.
+Linha 1 - define as propriedades do seu componente. A propriedade process.label é o que você verá ao associar o componente OSGi à etapa do processo, conforme mostrado em uma das capturas de tela abaixo.
 
-Linhas 13-15 - Os argumentos do processo passados para esse componente OSGi são divididos usando o separador &quot;,&quot;. Os valores para attachmentPath e saveToLocation são então extraídos da matriz da string.
+Linhas 13-15 - Os argumentos do processo transmitidos para este componente OSGi são divididos usando o separador &quot;,&quot;. Os valores para attachmentPath e saveToLocation são então extraídos da matriz de sequências de caracteres.
 
-* attachmentPath - Este é o mesmo local especificado no Formulário adaptável quando você configurou a ação de envio do Formulário adaptável para chamar AEM fluxo de trabalho. Este é o nome da pasta na qual você deseja que os anexos sejam salvos AEM em relação à carga do fluxo de trabalho.
+* attachmentPath - Esse é o mesmo local especificado no formulário adaptável quando você configura a ação de envio do formulário adaptável para chamar o fluxo de trabalho do AEM. Este é um nome da pasta que você deseja que os anexos sejam salvos no AEM em relação à carga do fluxo de trabalho.
 
-* saveToLocation - este é o local no qual você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
+* saveToLocation - esse é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
 
 Esses dois valores são passados como argumentos de processo, conforme mostrado na captura de tela abaixo.
 
@@ -120,30 +123,30 @@ Esses dois valores são passados como argumentos de processo, conforme mostrado 
 
 Linha 19: em seguida, construímos o attachmentFilePath. O caminho do arquivo anexo é como
 
-    /var/fd/painel/payload/server0/2018-11-19/3EF6ENASOQTHCPLNDYVNAM7OKA_7/Attachments/attachments
+    /var/fd/dashboard/payload/server0/2018-11-19/3EF6ENASOQTHCPLNDYVNAM7OKA_7/Attachments/attachments
 
-* Os &quot;Anexos&quot; são o nome da pasta em relação à carga do fluxo de trabalho que foi especificada quando você configurou a opção de envio do Formulário Adaptável.
+* Os &quot;Anexos&quot; são o nome da pasta relativo à carga útil do fluxo de trabalho que foi especificada quando você configurou a opção de envio do Formulário Adaptativo.
 
    ![submitoptions](assets/af-submit-options.gif)
 
-Linhas 24-26 - Obtenha o ResourceResolver e o recurso apontando para o attachmentFilePath.
+Linhas 24-26 - Obtenha ResourceResolver e, em seguida, o recurso apontando para attachmentFilePath.
 
-O restante do código cria objetos de Documento ao interagir pelo objeto filho do recurso que aponta para attachmentFilePath usando a API. Esse objeto de documento é específico do AEM Forms. Em seguida, usamos o método copyToFile do objeto de documento para salvar o objeto de documento.
+O restante do código cria objetos Document ao iterar pelo objeto filho do recurso apontando para attachmentFilePath usando a API. Esse objeto de documento é específico para o AEM Forms. Em seguida, usamos o método copyToFile do objeto do documento para salvar o objeto do documento.
 
 >[!NOTE]
 >
->Como estamos usando um objeto de Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk no seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
+>Como estamos usando o objeto de Documento específico do AEM Forms, é necessário incluir a dependência aemfd-client-sdk em seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
 
 #### Criar e implantar
 
 [Crie o pacote conforme descrito ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
-[aquiVerifique se ele está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
+[aqui. Verifique se ele foi implantado e está no estado ativo](http://localhost:4502/system/console/bundles)
 
-Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos de formulário adaptável no sistema de arquivos&quot;.
+Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos do formulário adaptável no sistema de arquivos&quot;.
 
-Forneça os argumentos do processo necessários separados por uma vírgula. Por exemplo, Anexos,c:\\scrappp\\. O primeiro argumento é a pasta na qual os anexos do Formulário adaptativo serão armazenados em relação à carga do fluxo de trabalho. Esse deve ser o mesmo valor especificado ao configurar a ação de envio do Formulário adaptável. O segundo argumento é o local em que você deseja que os anexos sejam armazenados.
+Forneça os argumentos do processo necessários separados por vírgula. Por exemplo, Anexos, c:\\scrappp\\. O primeiro argumento é a pasta em que os anexos do Formulário adaptativo serão armazenados em relação à carga do fluxo de trabalho. Esse deve ser o mesmo valor especificado ao configurar a ação de envio do Formulário adaptável. O segundo argumento é o local em que você deseja que os anexos sejam armazenados.
 
-Criar um formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação de envio do formulário para chamar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
+Crie um formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação Enviar do formulário para invocar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
 
 Salve as configurações.
 
