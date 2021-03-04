@@ -3,15 +3,18 @@ title: Desenvolver para o CORS (Cross-Origin Resource Sharing, compartilhamento 
 description: Um exemplo curto de como aproveitar o CORS para acessar conteúdo AEM de um aplicativo Web externo por meio do JavaScript do lado do cliente.
 version: 6.3, 6,4, 6.5
 sub-product: fundação, serviços de conteúdo, sites
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Segurança
+role: Desenvolvedor
+level: Iniciante
+feature: null
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
