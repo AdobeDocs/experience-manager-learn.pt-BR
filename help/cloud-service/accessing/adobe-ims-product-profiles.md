@@ -1,32 +1,30 @@
 ---
-title: Perfis de produtos e AEM Adobe IMS
-description: Os perfis de produtos Adobe IMS autorizam os usuários a fazer logon em um serviço de autor de AEM e a fornecer uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros.
-feature: users-and-groups
-topics: authorization, permissions
-version: cloud-service
-activity: setup
-audience: administrator
-doc-type: feature video
+title: Perfis de produto do Adobe IMS e AEM
+description: Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual são membros.
+feature: 'Usuários e grupos '
 kt: 5000
 thumbnail: 39156.jpg
+topic: Administração, segurança
+role: Administrador
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 9%
 
 ---
 
 
-# Perfis de produtos Adobe IMS
+# Perfis de produto do Adobe IMS
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_productprofiles"
->title="Perfis de produtos Adobe IMS"
->abstract="Os perfis de produtos Adobe IMS autorizam os usuários a fazer logon em um serviço de autor de AEM e a fornecer uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros. Saiba mais sobre os perfis de produtos Adobe IMS."
+>title="Perfis de produto do Adobe IMS"
+>abstract="Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual são membros. Saiba mais sobre os perfis de produto do Adobe IMS."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gerenciamento de produtos e acesso do usuário no Admin Console"
 
-Os perfis de produtos Adobe IMS autorizam os usuários a fazer logon em um serviço de autor de AEM e a fornecer uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros.
+Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual são membros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156/?quality=12&learn=on)
 
