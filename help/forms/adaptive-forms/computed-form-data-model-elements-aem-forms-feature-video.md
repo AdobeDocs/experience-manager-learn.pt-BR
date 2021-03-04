@@ -4,21 +4,18 @@ seo-title: Criação de elementos de modelo de dados de formulário calculados n
 description: Criação de elementos calculados do modelo de dados de formulário
 seo-description: Criação de elementos calculados do modelo de dados de formulário
 uuid: 30d72569-6a38-44f6-a091-b9a595d5ac77
-feature: Fluxo de trabalho
+feature: fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: b7b6d05b-7378-4028-add3-4f2a03a7455d
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 1%
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
