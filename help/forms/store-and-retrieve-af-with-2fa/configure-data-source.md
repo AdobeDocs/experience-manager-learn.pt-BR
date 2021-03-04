@@ -1,7 +1,7 @@
 ---
 title: Configurar fonte de dados
 description: Criar DataSource apontando para o banco de dados MySQL
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,26 +9,29 @@ activity: implement
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
 
 # Configurar fonte de dados
 
-Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração da DataSource de pool de conexão Apache Sling por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar os [drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados para AEM.
-Em seguida, defina as propriedades da Sling Connection Pooling DataSource específicas ao seu banco de dados. A seguinte captura de tela mostra as configurações usadas para este tutorial. O schema do banco de dados é fornecido a você como parte dos ativos do tutorial.
+Há muitas maneiras com as quais o AEM habilita a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar os drivers [MySQL adequados](https://mvnrepository.com/artifact/mysql/mysql-connector-java) no AEM.
+Em seguida, defina as propriedades da fonte de dados agrupadas da conexão do Sling específicas ao seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
 
 ![fonte de dados](assets/data-source.JPG)
 
 
-* Classe de driver JDBC: `com.mysql.cj.jdbc.Driver`
-* URI de conexão JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
+* Classe de Driver JDBC: `com.mysql.cj.jdbc.Driver`
+* URI da conexão JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
 
 >[!NOTE]
 >Certifique-se de nomear sua fonte de dados `StoreAndRetrieveAfData`, pois esse é o nome usado no serviço OSGi.
@@ -37,24 +40,24 @@ Em seguida, defina as propriedades da Sling Connection Pooling DataSource espec�
 ## Criar banco de dados
 
 
-A seguinte base de dados foi utilizada para este caso de utilização. O banco de dados tem uma tabela chamada `formdatawithattachments` com as 4 colunas, conforme mostrado na captura de tela abaixo.
+O banco de dados a seguir foi usado para o propósito deste caso de uso. O banco de dados tem uma tabela chamada `formdatawithattachments` com as 4 colunas, conforme mostrado na captura de tela abaixo.
 ![base de dados](assets/table-schema.JPG)
 
 * A coluna **afdata** manterá os dados do formulário adaptável.
-* A coluna **attachmentsInfo** manterá as informações sobre os anexos do formulário.
-* As colunas **phoneNumber** manterão o número de telefone da pessoa que preenche o formulário.
+* A coluna **attachmentInfo** manterá as informações sobre os anexos do formulário.
+* As colunas **phoneNumber** terão o número de celular da pessoa que preenche o formulário.
 
 Crie o banco de dados importando o [schema do banco de dados](assets/data-base-schema.sql)
-usando a bancada MySQL.
+usando o Workbench MySQL.
 
 ## Criar modelo de dados do formulário
 
-Crie um modelo de dados de formulário e baseie-o na fonte de dados criada na etapa anterior.
-Configure o serviço **get** deste modelo de dados de formulário como mostrado na captura de tela abaixo.
-Certifique-se de que não está retornando o storage no serviço **get**.
+Crie o modelo de dados de formulário e o baseie na fonte de dados criada na etapa anterior.
+Configure o serviço **get** desse modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
+Certifique-se de que você não está retornando a matriz no serviço **get**.
 
-Esse serviço **get** é usado para buscar o número de telefone associado à ID do aplicativo.
+Este serviço **get** é usado para buscar o número de telefone associado à ID do aplicativo.
 
 ![get-service](assets/get-service.JPG)
 
-Esse modelo de dados de formulário será usado em **MyAccountForm** para buscar o número de telefone associado à ID do aplicativo.
+Esse modelo de dados de formulário será usado no **MyAccountForm** para buscar o número de telefone associado à ID do aplicativo.
