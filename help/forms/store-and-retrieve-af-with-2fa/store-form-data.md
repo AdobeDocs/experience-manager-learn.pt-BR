@@ -1,7 +1,7 @@
 ---
 title: Armazenar dados de formulário
 description: Armazenar dados do formulário junto com o novo mapa de anexos no banco de dados
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,21 +9,24 @@ activity: implement
 version: 6.3,6.4,6.5
 kt: 6538
 thumbnail: 6538.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 0%
+source-wordcount: '74'
+ht-degree: 5%
 
 ---
 
 # Armazenar dados de formulário
 
-A próxima etapa é criar um serviço para inserir uma nova linha no banco de dados para armazenar os dados do formulário adaptável e os anexos associados.
-A seguinte captura de tela mostra uma linha no banco de dados.
+A próxima etapa é criar um serviço para inserir uma nova linha no banco de dados para armazenar os dados do formulário adaptável e as informações de anexos associadas.
+A captura de tela a seguir mostra uma linha no banco de dados.
 
 
-![linha de amostra](assets/sample-row.JPG)
+![exemplo de linha](assets/sample-row.JPG)
 
 
 O código a seguir insere uma nova linha no banco de dados com os dados apropriados
