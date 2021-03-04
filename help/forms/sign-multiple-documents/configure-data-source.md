@@ -1,7 +1,7 @@
 ---
 title: Configurar fonte de dados do AEM
 description: Configurar a fonte de dados com backup do MySQL para armazenar e recuperar dados de formulário
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 2%
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
