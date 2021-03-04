@@ -1,7 +1,7 @@
 ---
 title: Criar fluxo de trabalho principal para acionar o processo de assinatura
 description: Criar fluxo de trabalho para armazenar os formulários para assinatura no banco de dados
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,24 +9,27 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
 
 
-# Criar fluxo de trabalho principal
+# Criar workflow principal
 
-O fluxo de trabalho principal é acionado quando o usuário envia o formulário inicial (**RefinanceForm**). A seguir está o fluxo do fluxo de trabalho
+O fluxo de trabalho principal é acionado quando o usuário envia o formulário inicial (**RefinanceForm**). Este é o fluxo do workflow
 
 ![fluxo de trabalho principal](assets/main-workflow.PNG)
 
-**Armazenar o Forms para** assinaturas é uma etapa de processo personalizada.
+**Armazenar formulários para** assinaturas é uma etapa de processo personalizada.
 
-A motivação para implementar uma etapa de processo personalizada é estender um Fluxo de Trabalho AEM. O código a seguir implementa uma etapa do processo personalizado. O código extrai os nomes dos formulários a serem assinados e transmite os dados de formulário enviados para o método `insertData` no serviço SignMultipleForms. O método `insertData` insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
+A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho do AEM. O código a seguir implementa uma etapa do processo personalizado. O código extrai os nomes dos formulários para assinar e transmite os dados do formulário enviados para o método `insertData` no serviço SignMultipleForms. O método `insertData` insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
 
 O código nesta etapa do processo personalizado faz referência ao serviço `SignMultipleForms`.
 
@@ -119,7 +122,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Ativos
 
-O fluxo de trabalho Assinar vários Forms usado neste artigo pode ser [baixado daqui](assets/sign-multiple-forms-workflows.zip)
+O fluxo de trabalho Assinar vários formulários usado neste artigo pode ser [baixado aqui](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
-> Certifique-se de configurar o Serviço de Correio Day CQ para enviar uma notificação por email. O modelo de e-mail também é fornecido no pacote acima.
+> Certifique-se de configurar o Day CQ Mail Service para enviar a notificação por email. O template de email também é fornecido no pacote acima.
