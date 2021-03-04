@@ -1,30 +1,33 @@
 ---
-title: Exibição de imagens em linha no Forms adaptável
-seo-title: Exibição de imagens em linha no Forms adaptável
-description: Exibir imagens carregadas em linha no Forms adaptável
-seo-description: Exibir imagens carregadas em linha no Forms adaptável
-feature: adaptive-forms
+title: Exibição de imagens em linha no Adaptive Forms
+seo-title: Exibição de imagens em linha no Adaptive Forms
+description: Exibir imagens carregadas em linha nos Formulários adaptáveis
+seo-description: Exibir imagens carregadas em linha nos Formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
 
-# Imagens em linha no Forms adaptável
+# Imagens em linha em formulários adaptáveis
 
-Um caso de uso comum é exibir a imagem carregada como uma imagem embutida no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada exibindo a imagem em Formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
+Um caso de uso comum é exibir a imagem carregada como uma imagem embutida no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada ao exibir a imagem no formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
 
 ## Adicionar imagem de espaço reservado
 
-A primeira etapa é anexar um espaço reservado div ao componente de anexo do arquivo. No código abaixo, o componente de anexo de arquivo é identificado pelo nome de classe CSS do upload de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Essa função é chamada no evento initialize do componente de anexo de arquivo.
+A primeira etapa é anexar um espaço reservado div ao componente de anexo de arquivo. No código abaixo, o componente de anexo de arquivo é identificado por seu nome de classe CSS de carregamento de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Essa função é chamada no evento initialize do componente de anexo de arquivo.
 
 ```javascript
 /**
@@ -39,7 +42,7 @@ function addTempImage(){
 
 ### Exibir imagem em linha
 
-Depois que o usuário carregou a imagem, a função listada abaixo é chamada no evento de confirmação do componente de anexo do arquivo. A função recebe o objeto de arquivo carregado como argumento.
+Após o usuário ter carregado a imagem, a função listada abaixo é chamada no evento commit do componente de anexo de arquivo. A função recebe o objeto de arquivo carregado como argumento.
 
 ```javascript
 /**
@@ -65,9 +68,9 @@ function consumeImage (file) {
 }
 ```
 
-### Implantar em seu servidor
+### Implantar no servidor
 
-* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) em sua instância AEM usando AEM gerenciador de pacote.
-* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância AEM usando AEM gerenciador de pacote.
-* Aponte seu navegador para [Adicionar imagem em linha](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Clique no botão &quot;Anexar sua foto&quot; para adicionar uma imagem
+* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) em sua instância do AEM usando o gerenciador de pacotes do AEM.
+* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando o gerenciador de pacotes do AEM.
+* Aponte seu navegador para [Adicionar imagem embutida](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Clique no botão &quot;Anexar sua foto&quot; para adicionar a imagem
