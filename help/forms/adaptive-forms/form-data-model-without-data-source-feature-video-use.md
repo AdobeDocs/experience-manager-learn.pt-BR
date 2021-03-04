@@ -3,7 +3,7 @@ title: Criando Modelo de Dados de Formulário sem Fonte de Dados
 seo-title: Criando Modelo de Dados de Formulário sem Fonte de Dados
 description: A partir do AEM Forms 6.4, agora temos a capacidade de definir o Form Data Model (FDM) sem associá-lo a uma fonte de dados. O vídeo a seguir apresenta as etapas para criar o FDM sem nenhuma fonte de dados.
 seo-description: A partir do AEM Forms 6.4, agora temos a capacidade de definir o Form Data Model (FDM) sem associá-lo a uma fonte de dados. O vídeo a seguir apresenta as etapas para criar o FDM sem nenhuma fonte de dados.
-feature: form-data-model
+feature: Fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,11 +11,14 @@ activity: setup
 version: 6.4,6.5
 uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
 discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
@@ -28,8 +31,8 @@ A partir do AEM Forms 6.4, agora temos a capacidade de definir o Form Data Model
 
 Isso oferece as seguintes vantagens:
 
-* A velocidade é o desenvolvimento de Documentos de comunicação interativa/Forms.
-* O desenvolvimento de Documentos de comunicação interativa/Forms pode ser feito em paralelo ao desenvolvimento de fontes de dados.
+* Velocidade é o desenvolvimento de Documentos/Formulários de Comunicação Interativa.
+* O desenvolvimento de Documentos/Formulários de Comunicação Interativa pode ser feito em paralelo com o desenvolvimento da fonte de dados.
 * Depois que a fonte de dados for desenvolvida, você poderá fazer os vínculos usando o editor visual.
 * O recurso de vinculação automática mapeia elementos semelhantes.
 
