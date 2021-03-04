@@ -1,10 +1,10 @@
 ---
-title: Adicionar conteúdo de texto e imagem ao documento do canal de impressão
-seo-title: Adicionar conteúdo de texto e imagem ao documento do canal de impressão
-description: 'Esta é a parte 7 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos imagens e conteúdo de texto às áreas de público alvo definidas no layout(xdp). '
-seo-description: 'Esta é a parte 7 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos imagens e conteúdo de texto às áreas de público alvo definidas no layout(xdp). '
+title: Adicionar conteúdo de texto e imagem ao documento de canal de impressão
+seo-title: Adicionar conteúdo de texto e imagem ao documento de canal de impressão
+description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp). '
+seo-description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp). '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: interactive-communication
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,26 +13,29 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
 
-# Adicionar conteúdo de texto e imagem ao documento do canal de impressão
+# Adicionar conteúdo de texto e imagem ao documento de canal de impressão
 
-Nesta parte, adicionaremos imagens e conteúdo de texto às áreas de público alvo definidas no layout(xdp).
+Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp).
 
-Agora que você criou seu primeiro fragmento de documento que manterá o nome e o endereço do recipient, será necessário adicionar o fragmento do documento ao documento do canal de impressão.
+Agora que você criou seu primeiro fragmento de documento que manterá o nome e o endereço do recipient, precisaremos adicionar o fragmento do documento ao documento do canal de impressão.
 
-Você pode adicionar conteúdo de vários tipos, como Fragmentos de Documento, Imagens, Fragmentos de layout, etc., ao documento de canal de impressão.
+Você pode adicionar conteúdo de vários tipos, como Fragmentos de documento, Imagens, Fragmentos de layout, etc., ao documento de canal de impressão.
 
 Para adicionar conteúdo ao documento do canal de impressão, siga o vídeo abaixo.
 
-O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de público alvo apropriadas no documento do canal de impressão.
+O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de destino apropriadas no documento de canal de impressão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
 
