@@ -1,18 +1,21 @@
 ---
 title: Serviço de conversão automática de formulários
 description: Serviço de conversão automática de formulários. Este artigo descreve como um administrador do AEM pode configurar o serviço de Conversão automática de formulários para automatizar a conversão de seus formulários PDF em formulários adaptáveis. Essa ajuda é para administradores de TI e do AEM em sua organização.
-feature: formulários adaptáveis
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39493.jpg
 kt: 6114
+topic: Desenvolvimento
+role: Administrador
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '258'
+ht-degree: 1%
 
 ---
 
