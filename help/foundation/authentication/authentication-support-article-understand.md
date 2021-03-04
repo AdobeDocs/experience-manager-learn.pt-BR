@@ -1,27 +1,30 @@
 ---
-title: Compreender o suporte à Autenticação no AEM
-description: 'Uma visualização consolidada dos mecanismos de autenticação (e, ocasionalmente, de autorização) suportados pela AEM. '
+title: Compreender o suporte de autenticação no AEM
+description: 'Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente autorização) compatíveis com o AEM. '
 version: 6.3, 6.4, 6.5
-feature: authentication
+feature: 'Usuários e grupos '
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
+topic: Arquitetura
+role: Arquiteto
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 703321483454435e33c0aa26d66110271fc095d8
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 5%
 
 ---
 
 
-# Entenda o suporte à autenticação no AEM 6.x
+# Entenda o suporte de autenticação no AEM 6.x
 
-Uma visualização consolidada dos mecanismos de autenticação (e, ocasionalmente, de autorização) suportados pela AEM.
+Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente autorização) compatíveis com o AEM.
 
-*A tabela a seguir descreve como os usuários podem se autenticar em AEM.*
+*A tabela a seguir descreve como os usuários podem se autenticar no AEM.*
 
 <table>
     <tbody>
@@ -32,28 +35,28 @@ Uma visualização consolidada dos mecanismos de autenticação (e, ocasionalmen
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM como provedor de identidade canônico</strong></td>
+            <td><strong>AEM como provedor de identidade canônica</strong></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Autenticação básica</td>
-            <td>Can</td>
-            <td>Can</td>
-            <td>Can</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
-            <td>Baseado em Forms</td>
-            <td>Can</td>
-            <td>Can</td>
-            <td>Can</td>
+            <td>Baseado em formulários</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
             <td>Baseado em token (com <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
-            <td>Can</td>
-            <td>Can</td>
-            <td>Can</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
             <td><strong>Sistema não AEM como provedor de identidade canônica</strong></td>
@@ -62,27 +65,27 @@ Uma visualização consolidada dos mecanismos de autenticação (e, ocasionalmen
             <td></td>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
-                <td>Can</td>
-                <td>Can</td>
-                <td>Can</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
-                <td>Can</td>
-                <td>Can</td>
-                <td>Can</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
-                <td>Can</td>
-                <td>Can</td>
-                <td>Can</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a e 2.0</a></td>
-                <td>Can</td>
-                <td>Can</td>
-                <td>Can</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
@@ -93,4 +96,4 @@ Uma visualização consolidada dos mecanismos de autenticação (e, ocasionalmen
     </tbody>
 </table>
 
-⁕ *Fornecido através de projetos da comunidade, mas não diretamente suportado pelo Adobe.*
+⁕ *Fornecido por meio de projetos da comunidade, mas não suportado diretamente pela Adobe.*
