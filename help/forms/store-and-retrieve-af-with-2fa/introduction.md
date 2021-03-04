@@ -1,7 +1,7 @@
 ---
-title: Armazenamento e recuperação de dados de formulário com anexos do banco de dados MySQL
+title: Armazenando e Recuperando Dados de Formulário com anexos do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados de formulário com anexos
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,25 @@ activity: implement
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 4%
 
 ---
 
 
-# Armazenamento e recuperação de dados de formulário adaptável com o 2FA
+# Armazenamento e recuperação de dados de formulários adaptáveis com o 2FA
 
-Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de Dados de formulário adaptável com anexos usando o 2FA. Este tutorial usou o banco de dados MySQL para armazenar dados do Formulário adaptável. O banco de dados de sua escolha pode ser usado para armazenar os dados, desde que você tenha implantado os drivers específicos do banco de dados em AEM. Em um nível alto, as etapas a seguir são necessárias para obter o caso de uso:
+Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de dados de formulário adaptável com anexos usando o 2FA. Este tutorial usou o banco de dados MySQL para armazenar dados do Formulário adaptável. O banco de dados de sua escolha pode ser usado para armazenar os dados, desde que você tenha implantado os drivers específicos do banco de dados no AEM. Em um alto nível, as seguintes etapas são necessárias para alcançar o caso de uso:
 
-* Usar a API GuideBridge para obter acesso aos dados do Formulário adaptável
+* Use a API GuideBridge para obter acesso aos dados do formulário adaptável
 
-* Faça uma chamada de POST para um servlet. Este servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
+* Faça uma chamada POST para um servlet. Esse servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
 
 * Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute**.
 
@@ -34,9 +37,9 @@ Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de
 
 ## Pré-requisitos
 
-Espera-se que a audiência deste conteúdo tenha alguma experiência nas seguintes áreas:
+Espera-se que o público-alvo desse conteúdo tenha alguma experiência nas seguintes áreas:
 
 * Formulário adaptativo
 * Modelo de dados do formulário
-* Serviços/componentes OSGi
-* Bibliotecas do cliente AEM
+* Serviços/componentes do OSGi
+* Bibliotecas de clientes do AEM
