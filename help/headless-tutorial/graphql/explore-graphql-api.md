@@ -1,6 +1,6 @@
 ---
-title: Explorar APIs GraphQL - Introdução ao AEM sem cabeçalho - GraphQL
-description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Explore AEM APIs GraphQL usando o IDE GrapiQL integrado. Saiba como AEM automaticamente gera um schema GraphQL com base em um modelo de Fragmento de conteúdo. Experimente a construção de query básicos usando a sintaxe GraphQL.
+title: Explore APIs GraphQL - Introdução ao AEM Headless - GraphQL
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Explore as APIs GraphQL do AEM usando o GrapiQL integrado. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo. Experimente construir consultas básicas usando a sintaxe GraphQL.
 sub-product: ativos
 topics: headless
 version: cloud-service
@@ -10,20 +10,24 @@ audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
+feature: '"Fragmentos de conteúdo, APIs GraphQL"'
+topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 0%
+source-wordcount: '1143'
+ht-degree: 1%
 
 ---
 
 
-# Explore as APIs GraphQL {#explore-graphql-apis}
+# Explore APIs GraphQL {#explore-graphql-apis}
 
-A API GraphQL do AEM fornece uma linguagem de query avançada para expor dados de Fragmentos de conteúdo a aplicativos downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o schema é convertido e adicionado ao &quot;gráfico&quot; que compõe a API do GraphQL.
+A API GraphQL do AEM fornece uma linguagem de consulta avançada para expor os dados dos Fragmentos de conteúdo aos aplicativos de downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o esquema é traduzido e adicionado ao &quot;gráfico&quot; que compõe a API GraphQL.
 
-Neste capítulo, exploraremos alguns query GraphQL comuns para coletar conteúdo usando um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente os query e os dados retornados. O GraphiQL também fornece acesso fácil à documentação, facilitando o aprendizado e a compreensão de quais métodos estão disponíveis.
+Neste capítulo, exploraremos algumas consultas GraphQL comuns para coletar conteúdo usando um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente as consultas e os dados retornados. O GraphiQL também oferece acesso fácil à documentação, facilitando o aprendizado e a compreensão de quais métodos estão disponíveis.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -31,34 +35,34 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas em [C
 
 ## Objetivos {#objectives}
 
-* Saiba como usar a ferramenta GraphiQL para construir um query usando a sintaxe GraphQL.
-* Saiba como query uma lista de Fragmentos de conteúdo e um único Fragmento de conteúdo.
+* Saiba como usar a ferramenta GraphiQL para criar uma consulta usando a sintaxe GraphQL.
+* Saiba como consultar uma lista de Fragmentos de conteúdo e um único Fragmento de conteúdo.
 * Saiba como filtrar e solicitar atributos de dados específicos.
-* Saiba como query uma variação de um Fragmento de conteúdo.
-* Saiba como participar de um query de vários modelos de Fragmento de conteúdo
+* Saiba como consultar uma variação de um Fragmento de conteúdo.
+* Saiba como associar-se a uma consulta de vários modelos de Fragmento de conteúdo
 
-## Instale a ferramenta GraphiQL {#install-graphiql}
+## Instalar a ferramenta GraphiQL {#install-graphiql}
 
-O GraphiQL IDE é uma ferramenta de desenvolvimento e é necessário apenas em ambientes de nível inferior, como uma instância local ou de desenvolvimento. Portanto, não está incluído no projeto AEM, mas vem como um pacote separado que pode ser instalado numa base ad hoc.
+O GraphiQL IDE é uma ferramenta de desenvolvimento e é necessário apenas em ambientes de nível inferior, como uma instância de desenvolvimento ou local. Portanto, ele não está incluído no projeto AEM, mas vem como um pacote separado que pode ser instalado em uma base ad hoc.
 
-1. Navegue até **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM como Cloud Service**.
-1. Procure por &quot;GraphiQL&quot; (certifique-se de incluir **i** em **GraphiQL**.
-1. Baixe o **Pacote de conteúdo GraphiQL v.x.x.x** mais recente
+1. Navegue até **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Procure por &quot;GraphiQL&quot; (certifique-se de incluir o **i** em **GraphiQL**.
+1. Baixe o **Pacote de Conteúdo GraphiQL v.x.x** mais recente
 
    ![Download do pacote GraphiQL](assets/explore-graphql-api/software-distribution.png)
 
    O arquivo zip é um pacote AEM que pode ser instalado diretamente.
 
 1. No menu **AEM Start**, navegue até **Ferramentas** > **Implantação** > **Pacotes**.
-1. Clique em **Carregar pacote** e escolha o pacote baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
+1. Clique em **Upload Package** e escolha o pacote baixado na etapa anterior. Clique em **Install** para instalar o pacote.
 
    ![Instalar o pacote GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
 
-## Query de uma lista de fragmentos de conteúdo {#query-list-cf}
+## Consulte uma lista de Fragmentos de conteúdo {#query-list-cf}
 
-Um requisito comum será o query de vários Fragmentos de conteúdo.
+Um requisito comum será consultar vários Fragmentos de conteúdo.
 
-1. Navegue até GraphiQL IDE em [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html).
+1. Navegue até o GraphiQL IDE em [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html).
 1. Cole o seguinte query no painel esquerdo (abaixo da lista de comentários):
 
    ```graphql
@@ -71,21 +75,21 @@ Um requisito comum será o query de vários Fragmentos de conteúdo.
    }
    ```
 
-1. Pressione o botão **Reproduzir** no menu superior para executar o query. Você deve ver os resultados dos fragmentos de conteúdo dos Colaboradores do capítulo anterior:
+1. Pressione o botão **Play** no menu superior para executar a consulta. Você deve ver os resultados dos fragmentos de conteúdo dos Contribuidores do capítulo anterior:
 
-   ![Resultados da Lista do contribuidor](assets/explore-graphql-api/contributorlist-results.png)
+   ![Resultados da lista de colaboradores](assets/explore-graphql-api/contributorlist-results.png)
 
-1. Posicione o cursor abaixo do texto `_path` e digite **CTRL+Space** para acionar a dica de código. Adicione `fullName` e `occupation` ao query.
+1. Posicione o cursor abaixo do texto `_path` e insira **CTRL+Space** para acionar a dica de código. Adicione `fullName` e `occupation` à query.
 
-   ![Atualizar Query com ocorrências de código](assets/explore-graphql-api/update-query-codehinting.png)
+   ![Atualizar consulta com hitação de código](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Execute o query novamente pressionando o botão **Reproduzir** e você deverá ver que os resultados incluem as propriedades adicionais de `fullName` e `occupation`.
+1. Execute a consulta novamente pressionando o botão **Play** e você deverá ver que os resultados incluem as propriedades adicionais de `fullName` e `occupation`.
 
-   ![Resultados do nome e da ocupação](assets/explore-graphql-api/updated-query-fullname-occupation.png)
+   ![Nome completo e resultados da atividade profissional](assets/explore-graphql-api/updated-query-fullname-occupation.png)
 
-   `fullName` e  `occupation` são propriedades simples. Lembre-se do capítulo [Definindo modelos de fragmento de conteúdo](./content-fragment-models.md) que `fullName` e `occupation` são os valores usados ao definir **Nome da propriedade** dos respectivos campos.
+   `fullName` e  `occupation` são propriedades simples. Lembre-se do capítulo [Definindo Modelos de Fragmento de Conteúdo](./content-fragment-models.md) de que `fullName` e `occupation` são os valores usados ao definir o **Nome da Propriedade** dos respectivos campos.
 
-1. `pictureReference` e  `biographyText` representam campos mais complexos. Atualize o query com o seguinte para retornar dados sobre os campos `pictureReference` e `biographyText`.
+1. `pictureReference` e  `biographyText` representam campos mais complexos. Atualize a consulta com o seguinte para retornar dados sobre os campos `pictureReference` e `biographyText`.
 
    ```graphql
    {
@@ -109,11 +113,11 @@ Um requisito comum será o query de vários Fragmentos de conteúdo.
    }
    ```
 
-   `biographyText` é um campo de texto de várias linhas e a API do GraphQL nos permite escolher diversos formatos para os resultados, como  `html`,  `markdown`ou  `json`   `plaintext`.
+   `biographyText` é um campo de texto de várias linhas e a API GraphQL permite escolher diversos formatos para os resultados, como  `html`,  `markdown`ou  `json`   `plaintext`.
 
-   `pictureReference` é uma referência de conteúdo e espera-se que seja uma imagem, portanto,  `ImageRef` o objeto incorporado é usado. Isso nos permite solicitar dados adicionais sobre a imagem que está sendo referenciada, como `width` e `height`.
+   `pictureReference` é uma referência de conteúdo e deve ser uma imagem, portanto,  `ImageRef` o objeto incorporado é usado. Isso nos permite solicitar dados adicionais sobre a imagem que está sendo referenciada, como `width` e `height`.
 
-1. Em seguida, experimente consultar uma lista de **Aventuras**. Execute o seguinte query:
+1. Em seguida, experimente consultar uma lista de **Aventuras**. Execute a seguinte consulta:
 
    ```graphql
    {
@@ -132,13 +136,13 @@ Um requisito comum será o query de vários Fragmentos de conteúdo.
    }
    ```
 
-   Você deve ver uma lista de **Aventuras** retornada. Sinta-se à vontade para experimentar adicionando campos adicionais ao query.
+   Você deve ver uma lista de **Adventures** retornada. Você pode experimentar adicionando campos adicionais ao query.
 
-## Filtrar uma Lista de fragmentos de conteúdo {#filter-list-cf}
+## Filtrar uma lista de fragmentos de conteúdo {#filter-list-cf}
 
-Em seguida, vamos observar como é possível filtrar os resultados para um subconjunto de Fragmentos de conteúdo com base em um valor de propriedade.
+Em seguida, vamos examinar como é possível filtrar os resultados para um subconjunto de Fragmentos de conteúdo com base em um valor de propriedade.
 
-1. Digite o seguinte query na interface do usuário do GraphiQL:
+1. Insira a seguinte query na interface do usuário GraphiQL:
 
    ```graphql
    {
@@ -158,10 +162,10 @@ Em seguida, vamos observar como é possível filtrar os resultados para um subco
    }
    ```
 
-   O query acima realiza uma pesquisa em relação a todos os contribuidores no sistema. O filtro adicionado ao início do query executará uma comparação no campo `occupation` e na string &quot;**Fotógrafo**&quot;.
+   A consulta acima realiza uma pesquisa em relação a todos os contribuidores no sistema. O filtro adicionado ao início da consulta executará uma comparação no campo `occupation` e na string &quot;**Fotógrafo**&quot;.
 
-1. Execute o query, espera-se que apenas um único **Contributor** seja retornado.
-1. Digite o seguinte query para query de uma lista de **Aventuras** onde `adventureActivity` é **diferente** igual a **&quot;Surfing&quot;**:
+1. Execute a query, espera-se que apenas um único **Contributor** seja retornado.
+1. Insira a seguinte query para consultar uma lista de **Aventuras** onde `adventureActivity` é **não** igual a **&quot;Surfing&quot;**:
 
    ```graphql
    {
@@ -182,15 +186,15 @@ Em seguida, vamos observar como é possível filtrar os resultados para um subco
    }
    ```
 
-1. Execute o query e inspecione os resultados. Observe que nenhum dos resultados inclui um `adventureType` igual a **&quot;Surfing&quot;**.
+1. Execute a consulta e inspecione os resultados. Observe que nenhum dos resultados inclui um `adventureType` igual a **&quot;Navegação&quot;**.
 
-Há muitas outras opções para filtrar e criar query complexos, acima estão apenas alguns exemplos.
+Há muitas outras opções para filtrar e criar consultas complexas, acima estão apenas alguns exemplos.
 
-## Query de um único fragmento de conteúdo {#query-single-cf}
+## Consultar um único Fragmento de conteúdo {#query-single-cf}
 
-Também é possível query direto de um único fragmento de conteúdo. O conteúdo no AEM é armazenado de maneira hierárquica e o identificador exclusivo de um fragmento é baseado no caminho do fragmento. Se o objetivo for retornar dados sobre um único fragmento, é preferível usar o caminho e query o modelo diretamente. Usar essa sintaxe significa que a complexidade do query será muito baixa e gerará um resultado mais rápido.
+Também é possível consultar diretamente um único Fragmento de conteúdo. O conteúdo no AEM é armazenado de maneira hierárquica e o identificador exclusivo de um fragmento é baseado no caminho do fragmento. Se o objetivo for retornar dados sobre um único fragmento, é preferível usar o caminho e consultar o modelo diretamente. Usar essa sintaxe significa que a complexidade da consulta será muito baixa e gerará um resultado mais rápido.
 
-1. Digite o seguinte query no editor do GraphiQL:
+1. Insira a seguinte query no editor GraphiQL:
 
    ```graphql
    {
@@ -206,11 +210,11 @@ Também é possível query direto de um único fragmento de conteúdo. O conteú
    }
    ```
 
-1. Execute o query e observe que o único resultado do fragmento **Stacey Roswells** é retornado.
+1. Execute a query e observe que o único resultado do fragmento **Stacey Roswells** é retornado.
 
-   No exercício anterior, você usava um filtro para restringir uma lista de resultados. Você pode usar uma sintaxe semelhante para filtrar por caminho, no entanto, a sintaxe acima é preferida por motivos de desempenho.
+   No exercício anterior, você usou um filtro para restringir uma lista de resultados. Você pode usar uma sintaxe semelhante para filtrar por caminho, no entanto, a sintaxe acima é preferida por motivos de desempenho.
 
-1. Lembre-se no capítulo [Criação de fragmentos de conteúdo](./author-content-fragments.md) de que uma variação **Summary** foi criada para **Stacey Roswells**. Atualize o query para retornar a variação **Summary**:
+1. Lembre-se no capítulo [Criação de fragmentos de conteúdo](./author-content-fragments.md) de que uma variação **Resumo** foi criada para **Stacey Roswells**. Atualize a consulta para retornar a variação **Summary**:
 
    ```graphql
    {
@@ -230,15 +234,15 @@ Também é possível query direto de um único fragmento de conteúdo. O conteú
    }
    ```
 
-   Embora a variação tenha sido nomeada como **Summary**, as variações são mantidas em minúsculas e, portanto, `summary` é usado.
+   Mesmo que a variação tenha sido nomeada como **Summary**, as variações são persistentes em minúsculas e, portanto, `summary` é usada.
 
-1. Execute o query e observe que o campo `biography` contém um resultado `html` muito menor.
+1. Execute a query e observe que o campo `biography` contém um resultado `html` muito mais curto.
 
-## Query para vários modelos de fragmento de conteúdo {#query-multiple-models}
+## Consulta para vários modelos de fragmento de conteúdo {#query-multiple-models}
 
-Também é possível combinar query separados em um único query. Isso é útil para minimizar o número de solicitações HTTP necessárias para alimentar o aplicativo. Por exemplo, a visualização *Home* de um aplicativo pode exibir conteúdo com base em **dois** diferentes Modelos de fragmento de conteúdo. Em vez de executar **dois** query separados, podemos combinar os query em uma única solicitação.
+Também é possível combinar consultas separadas em um único query. Isso é útil para minimizar o número de solicitações HTTP necessárias para potencializar o aplicativo. Por exemplo, a visualização *Início* de um aplicativo pode exibir conteúdo com base em **dois** Modelos de Fragmento de Conteúdo diferentes. Em vez de executar **dois** consultas separadas, podemos combinar as consultas em uma única solicitação.
 
-1. Digite o seguinte query no editor do GraphiQL:
+1. Insira a seguinte query no editor GraphiQL:
 
    ```graphql
    {
@@ -257,7 +261,7 @@ Também é possível combinar query separados em um único query. Isso é útil 
    }
    ```
 
-1. Execute o query e observe que o conjunto de resultados contém dados de **Aventuras** e **Colaboradores**:
+1. Execute a query e observe que o conjunto de resultados contém dados de **Adventures** e **Contributors**:
 
 ```json
 {
@@ -293,12 +297,12 @@ Também é possível combinar query separados em um único query. Isso é útil 
 
 ## Recursos adicionais
 
-Para obter mais exemplos de query GraphQL, consulte: [Aprendendo a usar o GraphQL com AEM - Conteúdo de amostra e Query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
+Para obter mais exemplos de consultas GraphQL, consulte: [Aprender a usar GraphQL com AEM - Conteúdo de amostra e Consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
 
 ## Parabéns! {#congratulations}
 
-Parabéns, você acabou de criar e executar vários query GraphQL!
+Parabéns, você acabou de criar e executar várias consultas GraphQL!
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Consultando AEM de um aplicativo React](./graphql-and-external-app.md), você explorará como um aplicativo externo pode query AEM pontos finais GraphQL. O aplicativo externo que modifica o aplicativo de amostra WKND GraphQL React para adicionar query GraphQL filtrados, permitindo que o usuário do aplicativo filtre aventuras por atividade. Você também será apresentado a alguma manipulação básica de erros.
+No próximo capítulo, [Consultando o AEM de um aplicativo React](./graphql-and-external-app.md), você explorará como um aplicativo externo pode consultar os pontos de extremidade GraphQL do AEM. O aplicativo externo que modifica o aplicativo WKND GraphQL React para adicionar consultas GraphQL de filtragem, permitindo que o usuário do aplicativo filtre aventuras por atividade. Você também será apresentado a algum tratamento básico de erros.
