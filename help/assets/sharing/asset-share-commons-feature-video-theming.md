@@ -1,33 +1,26 @@
 ---
-title: Introdução ao tema no Asset Share Commons
-seo-title: Introdução ao tema no Asset Share Commons
-description: Materiais para o entendimento funcional e técnico Ativos Compartilham Comuns
-seo-description: Materiais para o entendimento funcional e técnico Ativos Compartilham Comuns
-uuid: 5991a015-392a-4bb5-8332-192681505b07
-discoiquuid: 08a5a394-c62b-4748-b303-33117f283612
-contentOwner: dgonzale
-feature: asset-share, brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+title: Introdução ao tema no compartilhamento de ativos Commons
+description: Materiais para o entendimento funcional e técnico Ativos Compartilham Commons
 version: 6.3, 6.4, 6.5
+topic: Gerenciamento de conteúdo
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 1%
+source-wordcount: '117'
+ht-degree: 4%
 
 ---
 
 
-# Introdução ao tema no Asset Share Commons {#asset-share-commons-theme}
+# Introdução ao tema no compartilhamento de ativos Commons {#asset-share-commons-theme}
 
-Uma breve introdução ao tema no Asset Share Commons. O vídeo acompanha o processo de criação de um novo tema com um esquema de cores personalizado.
+Uma breve introdução a eles no Asset Share Commons. O vídeo aborda o processo de criação de um novo tema com um esquema de cores personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
 
-Neste vídeo, um novo tema será criado com base no tema Escuro Compartilhamento de ativos. O esquema de cores corresponderá a um logotipo personalizado para dar ao site uma aparência consistente.
+Neste vídeo, um novo tema será criado com base no tema Escuro do Compartilhamento de Ativos Commons. O esquema de cores corresponderá a um logotipo personalizado para dar ao site uma aparência consistente.
 
 ## Variáveis de tema
 
