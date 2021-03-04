@@ -1,31 +1,34 @@
 ---
 title: Uso de funções de redutor em gráficos
-seo-title: Uso de funções de redutor no AEM Forms - Gráficos
-description: As funções de redutor são usadas para agregação ou para agrupar valores exibidos no gráfico. O vídeo a seguir percorre as etapas envolvidas no uso das funções de redutor.
-seo-description: As funções de redutor são usadas para agregação ou para agrupar valores exibidos no gráfico. O vídeo a seguir percorre as etapas envolvidas no uso das funções de redutor.
+seo-title: Uso de funções de redutor em AEM Forms - Gráficos
+description: As funções de redutor são usadas para agregar ou agrupar valores exibidos no gráfico. O vídeo a seguir percorre as etapas envolvidas no uso de funções de redutor.
+seo-description: As funções de redutor são usadas para agregar ou agrupar valores exibidos no gráfico. O vídeo a seguir percorre as etapas envolvidas no uso de funções de redutor.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: interactive-communication
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Intermediário
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 3%
 
 ---
 
 
-# Usando funções de redutor no AEM Forms - Gráficos{#using-reducer-functions-in-aem-forms-charts}
+# Uso de funções de redutor em AEM Forms - Gráficos{#using-reducer-functions-in-aem-forms-charts}
 
-As funções de redutor são usadas para agregação ou para agrupar valores exibidos no gráfico.
+As funções Redutor são usadas para agregar ou agrupar valores exibidos no gráfico.
 
 
-Por exemplo, podemos usar as funções redutoras para exibir o número de transações por categoria, ou exibir a maior despesa por categoria dos dados de amostra mostrados abaixo
+Por exemplo, podemos usar as funções redutoras para exibir o número de transações por categoria ou exibir a despesa mais alta por categoria dos dados de amostra mostrados abaixo
 
 ```json
 [{
