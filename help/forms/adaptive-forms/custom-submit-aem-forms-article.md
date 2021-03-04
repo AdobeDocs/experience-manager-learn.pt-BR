@@ -1,9 +1,9 @@
 ---
-title: Gravando um envio personalizado no AEM Forms
-seo-title: Gravando um envio personalizado no AEM Forms
-description: Uma maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
-seo-description: Uma maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
-feature: adaptive-forms
+title: Escrever um envio personalizado no AEM Forms
+seo-title: Escrever um envio personalizado no AEM Forms
+description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
+seo-description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
+feature: Formulários adaptáveis
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,31 +11,34 @@ activity: implement
 version: 6.3,6.4,6.5
 uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
 discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 1%
+source-wordcount: '232'
+ht-degree: 3%
 
 ---
 
 
-# Gravando um envio personalizado no AEM Forms {#writing-a-custom-submit-in-aem-forms}
+# Escrever um envio personalizado no AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
-Uma maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
+Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
 
-Este artigo o guiará pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio adaptável pela Forms.
+Este artigo o guiará pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio de formulários adaptativos.
 
 * Logon no crx
-* Crie um nó do tipo &quot;sling :folder&quot; em apps. Vamos chamar esse nó CustomSubmitHelpx.
+* Crie um nó do tipo &quot;sling :folder &quot; em aplicativos. Vamos chamar este nó CustomSubmitHelpx.
 * Salve o nó recém-criado.
 * Adicione as duas propriedades a seguir ao nó recém-criado
-* PropertyName       | Valor imobiliário
+* PropertyName       | Valor de propriedade
 * guideComponentType | fd/af/components/guidesubmittype
 * guideDataModel     | xfa,xsd,básico
 * jcr:description   | CustomSubmitHelpx
 * Salve as alterações
-* Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com suas necessidades neste arquivo. O código a seguir encaminha a solicitação para o servlet.
+* Crie um novo arquivo chamado post.POST.jsp sob o nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito neste arquivo. O código a seguir encaminha a solicitação para o servlet.
 
 ```java
 <%
@@ -52,8 +55,8 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 %>
 ```
 
-* Crie um arquivo chamado addfields .jsp sob o nó CustomSubmitHelpx. Esse arquivo permitirá que você acesse o documento assinado.
-* Adicionar o seguinte código a este arquivo
+* Crie um arquivo chamado addfields .jsp sob o nó CustomSubmitHelpx . Esse arquivo permitirá que você acesse o documento assinado.
+* Adicione o seguinte código a este arquivo
 
 ```java
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -65,9 +68,9 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
     <input type="hidden" id="useSignedPdf" name="_useSignedPdf" value=""/>;
 ```
 
-* Salvar suas alterações
+* Salve as alterações
 
-Agora você será start ao ver &quot;CustomSubmitHelpx&quot; nas ações de envio do seu Formulário adaptativo, como mostrado nesta imagem.
+Agora você verá &quot;CustomSubmitHelpx&quot; nas ações de envio do formulário adaptável, conforme mostrado nesta imagem.
 
 ![Formulário adaptável com envio personalizado](assets/capture-2.gif)
 
