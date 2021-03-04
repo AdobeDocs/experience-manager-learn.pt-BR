@@ -3,17 +3,20 @@ title: Acionar fluxo de trabalho do AEM no envio de formulário HTM5
 seo-title: Acione o fluxo de trabalho do AEM no envio do formulário HTML5
 description: Continue preenchendo o formulário móvel no modo offline e envie o formulário móvel para acionar o fluxo de trabalho do AEM
 seo-description: Continue preenchendo o formulário móvel no modo offline e envie o formulário móvel para acionar o fluxo de trabalho do AEM
-feature: formulários móveis
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
