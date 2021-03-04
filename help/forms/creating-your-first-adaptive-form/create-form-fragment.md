@@ -1,23 +1,26 @@
 ---
-title: Criar fragmento de formulário
-description: Os formulários AEM fornecem um mecanismo conveniente para criar segmentos de formulários como um painel ou um grupo de campos apenas uma vez e reutilizá-los em formulários adaptáveis.
-feature: adaptive-forms
+title: Criação de fragmentos de formulário
+description: O AEM Forms fornece um mecanismo conveniente para criar segmentos de formulário, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis.
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 21%
 
 ---
 
 
-# Criar fragmento de formulário
+# Criação de fragmentos de formulário
 
 Um fragmento é uma parte reutilizável de um formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal. O uso dos fragmentos simplifica e acelera a criação e manutenção de uma grande quantidade de formulários.
 
@@ -26,9 +29,9 @@ Um fragmento é uma parte reutilizável de um formulário. Por exemplo, um fragm
 
 
 
-Consulte [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obter mais detalhes
+Consulte a [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obter mais detalhes
 
-Se necessário, você pode baixar o [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar para AEM usando o [gerenciador de pacote](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessário, você pode baixar o [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
