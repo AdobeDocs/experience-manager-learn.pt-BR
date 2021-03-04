@@ -1,41 +1,44 @@
 ---
-title: Depuração AEM SDK usando registros
-description: Os registros atuam como linha de frente para depurar aplicativos AEM, mas dependem do logon adequado no aplicativo AEM implantado.
-feature: null
+title: Depuração do SDK do AEM usando logs
+description: Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado.
+feature: Ferramentas do desenvolvedor
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante, Intermediário
 translation-type: tm+mt
-source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
 
-# Depuração AEM SDK usando registros
+# Depuração do SDK do AEM usando logs
 
-Acessar os registros do SDK AEM, as ferramentas de Início Rápido local do SDK AEM ou as ferramentas do Dispatcher podem fornecer insights importantes para a depuração AEM aplicativos.
+Ao acessar os logs do SDK do AEM, as ferramentas locais de inicialização rápida do Jar ou do Dispatcher do SDK do AEM podem fornecer informações importantes sobre a depuração de aplicativos do AEM.
 
-## Logs AEM
+## Logs do AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334/?quality=12&learn=on)
 
-Os registros atuam como linha de frente para depurar aplicativos AEM, mas dependem do logon adequado no aplicativo AEM implantado. A Adobe recomenda manter o desenvolvimento local e a AEM como um Cloud Service Dev logging settings tão semelhantes quanto possível, pois normaliza a visibilidade do registro no início rápido local do SDK AEM e AEM como um Cloud Service Dev ambiente, reduzindo a ociosidade e a reimplantação da configuração.
+Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado. A Adobe recomenda manter as configurações de log de desenvolvimento local e de desenvolvimento do AEM as a Cloud Service da mesma maneira possível, pois normaliza a visibilidade do log nos ambientes de desenvolvimento do AEM SDK de inicialização rápida local e do AEM as a Cloud Service, reduzindo a duplicação da configuração e a reimplantação.
 
-O [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG dos pacotes Java da sua aplicação AEM para desenvolvimento local através da configuração Sling Logger OSGi encontrada em
+O [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG dos pacotes Java do aplicativo AEM para desenvolvimento local por meio da configuração OSGi do Sling Logger localizada em
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-que faz logon em `error.log`.
+que registra no `error.log`.
 
-Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc poderá ser configurado por meio do console da Web do suporte ao registro do SDK local, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas no Git, a menos que essas mesmas configurações de registro sejam necessárias em AEM como ambientes de desenvolvedor Cloud Service. Lembre-se de que as alterações por meio do console Suporte de log são mantidas diretamente no repositório local do Início rápido do SDK AEM.
+Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc pode ser configurado por meio do console da Web Suporte a log do quickstart local do AEM SDK, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas no Git, a menos que essas mesmas configurações de log sejam necessárias também em ambientes de desenvolvimento do AEM as a Cloud Service. Lembre-se, as alterações por meio do console Suporte de log são persistentes diretamente no repositório local do início rápido do AEM SDK.
 
-As declarações do log Java podem ser visualizações no arquivo `error.log`:
+As instruções de log do Java podem ser exibidas no arquivo `error.log`:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
@@ -45,15 +48,15 @@ Muitas vezes, é útil &quot;rastrear&quot; o `error.log` que transmite sua saí
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ O Windows requer [aplicativos de rastreamento de terceiros](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou o uso do [comando Get-Content do Powershell](https://stackoverflow.com/a/46444596/133936).
++ O Windows requer [aplicativos de tail de terceiros](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou o uso do [comando Get-Content do Powershell](https://stackoverflow.com/a/46444596/133936).
 
 ## Logs do Dispatcher
 
-Os logs do Dispatcher são enviados para stdout quando `bin/docker_run` é chamado, no entanto, os logs podem ser acessados diretamente com o no Docker contém.
+Os logs do Dispatcher são enviados para o stdout quando `bin/docker_run` é chamado, no entanto, os logs podem ser acessados diretamente com no conteúdo do Docker.
 
-### Acessar registros no container Docker{#dispatcher-tools-access-logs}
+### Acessar logs no container Docker{#dispatcher-tools-access-logs}
 
-Os registros do Dispatcher podem estar acessando diretamente no container Docker em `/etc/httpd/logs`.
+Os logs do Dispatcher podem ser acessados diretamente no container do Docker em `/etc/httpd/logs`.
 
 ```shell
 $ docker ps
@@ -73,12 +76,12 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-_A  `<CONTAINER ID>` entrada  `docker exec -it <CONTAINER ID> /bin/sh` deve ser substituída pela ID do CONTAINER Docker do público alvo listada a partir do  `docker ps` comando._
+_O  `<CONTAINER ID>` no  `docker exec -it <CONTAINER ID> /bin/sh` deve ser substituído pela ID de CONTÊINER do Docker de destino listada no  `docker ps` comando._
 
 
 ### Copiando os logs do Docker para o sistema de arquivos local{#dispatcher-tools-copy-logs}
 
-Os registros do Dispatcher podem ser copiados do container do Docker em `/etc/httpd/logs` para o sistema de arquivos local para inspeção usando sua ferramenta de análise de log favorita. Observe que esta é uma cópia point-in-time e não fornece atualizações em tempo real para os registros.
+Os logs do Dispatcher podem ser copiados do contêiner Docker em `/etc/httpd/logs` para o sistema de arquivos local para inspeção usando sua ferramenta de análise de log favorita. Observe que esta é uma cópia point-in-time e não fornece atualizações em tempo real para os logs.
 
 ```shell
 $ docker ps
@@ -93,4 +96,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
-_A  `<CONTAINER_ID>` entrada  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` deve ser substituída pela ID do CONTAINER Docker do público alvo listada a partir do  `docker ps` comando._
+_O  `<CONTAINER_ID>` no  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` deve ser substituído pela ID de CONTÊINER do Docker de destino listada no  `docker ps` comando._
