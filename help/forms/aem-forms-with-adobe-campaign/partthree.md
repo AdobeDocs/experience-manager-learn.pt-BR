@@ -1,47 +1,50 @@
 ---
-title: Preenchimento do formulário adaptável usando o Perfil ACS
-seo-title: Preenchimento do formulário adaptável usando o Perfil ACS
-description: Preenchimento de Forms adaptável usando o perfil ACS
-seo-description: Preenchimento de Forms adaptável usando o perfil ACS
+title: Preenchimento prévio do formulário adaptável usando o perfil ACS
+seo-title: Preenchimento prévio do formulário adaptável usando o perfil ACS
+description: Preenchimento prévio de formulários adaptáveis usando o perfil ACS
+seo-description: Preenchimento prévio de formulários adaptáveis usando o perfil ACS
 uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: adaptive-forms, form-data-model
+feature: '"Formulários adaptáveis, Modelo de dados de formulário"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
 
-# Preenchimento do formulário adaptável usando o Perfil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Preenchimento prévio do formulário adaptável usando o perfil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Nesta parte, preencheremos previamente o Formulário adaptável com informações de perfil obtidas do ACS. A AEM Forms tem essa poderosa capacidade de pré-preencher formulários adaptativos.
+Nessa parte, preencheremos previamente o Formulário adaptável com informações de perfil obtidas do ACS. O AEM Forms tem esse poderoso recurso de preencher previamente formulários adaptáveis.
 
-Para saber mais sobre como pré-preencher formulários adaptativos, leia este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Para saber mais sobre como preencher previamente formulários adaptáveis, leia este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Para pré-preencher o formulário adaptável buscando dados do ACS, supomos que haja um perfil no ACS que tenha o mesmo email do usuário conectado AEM. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email é csimms@adobe.com.
+Para pré-preencher o formulário adaptável buscando dados do ACS, assumiremos que há perfil no ACS que tem o mesmo email do usuário conectado no AEM. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email é csimms@adobe.com.
 
-As etapas a seguir são necessárias para obter informações do perfil do ACS usando a REST API
+As etapas a seguir são necessárias para buscar informações de perfil do ACS usando a REST API
 
 * Gerar JWT
-* Exchange JWT para Token de acesso
-* Faça uma chamada REST para o ACS e busque o perfil por e-mail
-* Criar documento XML com as informações do perfil
-* Retornar InputStream do documento XML que será consumido pela AEM Forms
+* Exchange JWT para Token de Acesso
+* Faça uma chamada REST para ACS e busque o perfil por email
+* Criar documento XML com as informações de perfil
+* Retornar InputStream do documento XML que será consumido pelo AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 
 Associar o serviço de preenchimento prévio ao formulário adaptável
 
-A seguir está o código para obter e retornar informações do perfil do ACS.
+Este é o código para buscar e retornar informações de perfil do ACS.
 
-Na linha 68, obtemos a ID do email do usuário AEM. Os detalhes do perfil são buscados fazendo uma chamada REST para a Adobe Campaign Standard. A partir dos detalhes do perfil buscado, o documento XML é construído de uma maneira entendida pela AEM Forms. O fluxo de entrada desse documento é retornado para consumo pela AEM Forms.
+Na linha 68, obtemos a ID do email do usuário do AEM. Os detalhes do perfil são obtidos fazendo uma chamada REST para o Adobe Campaign Standard. A partir dos detalhes do perfil buscado, o documento XML é construído de uma maneira compreendida pelos Formulários AEM. O fluxo de entrada deste documento é retornado para consumo pelo AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -233,10 +236,10 @@ return "Pre Fill Forms Using Campaign Profile";
 }
 ```
 
-Para que isso funcione no seu sistema, siga as seguintes instruções:
+Para que isso funcione em seu sistema, siga as seguintes instruções:
 
-* [Siga as etapas descritas aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar formulário adaptável de amostra para AEM usando o gerenciador de pacote](assets/pre-fill-af-from-campaign.zip)
-* Certifique-se de fazer logon no AEM com um usuário cuja ID de email é compartilhada por um perfil no Adobe Campaign. Por exemplo, se a ID de email do usuário AEM for johndoe@adobe.com, você precisará ter um perfil no ACS cujo email é johndoe@adobe.com.
+* [Siga as etapas conforme descrito aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importar formulário adaptável de amostra para o AEM usando o gerenciador de pacotes](assets/pre-fill-af-from-campaign.zip)
+* Faça logon no AEM com um usuário cuja ID de email é compartilhada por um perfil no Adobe Campaign. Por exemplo, se a ID de email do usuário do AEM for johndoe@adobe.com, você precisará ter um perfil no ACS cujo email é johndoe@adobe.com.
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
