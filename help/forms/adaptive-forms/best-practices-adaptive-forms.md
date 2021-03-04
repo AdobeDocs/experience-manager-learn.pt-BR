@@ -3,20 +3,17 @@ title: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao
 seo-title: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao criar formulários adaptáveis
 description: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao criar formulários adaptáveis
 seo-description: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao criar formulários adaptáveis
-feature: Formulários adaptáveis
+feature: formulários adaptáveis
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 2%
+source-wordcount: '312'
+ht-degree: 1%
 
 ---
 
