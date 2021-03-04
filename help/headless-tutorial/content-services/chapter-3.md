@@ -3,14 +3,10 @@ title: Capítulo 3 - Criação de fragmentos de conteúdo do evento - Serviços 
 seo-title: Introdução aos serviços de conteúdo do AEM - Capítulo 3 - Criação dos fragmentos de conteúdo do evento
 description: O Capítulo 3 do tutorial AEM Headless aborda a criação e criação de Fragmentos de conteúdo de evento do Modelo de fragmento de conteúdo criado no Capítulo 2.
 seo-description: O Capítulo 3 do tutorial AEM Headless aborda a criação e criação de Fragmentos de conteúdo de evento do Modelo de fragmento de conteúdo criado no Capítulo 2.
-feature: '"Fragmentos de conteúdo, APIs"'
-topic: '"Sem Cabeça, Gerenciamento De Conteúdo"'
-role: Desenvolvedor
-level: Iniciante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '510'
 ht-degree: 3%
 
 ---
