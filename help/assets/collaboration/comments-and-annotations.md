@@ -1,26 +1,25 @@
 ---
 title: Comentários e anotações
-description: Saiba como usar comentários e anotações em AEM para se comunicar e colaborar em ativos.
+description: Saiba como usar comentários e anotações no AEM para se comunicar e colaborar em ativos.
 sub-product: ativos
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Colaboração
 version: cloud-service
 kt: 4541
 thumbnail: 32049.jpg
+topic: Colaboração
+role: Profissional
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 4%
 
 ---
 
 
 # Comentários e anotações
 
-Saiba como usar comentários e anotações em AEM para se comunicar e colaborar em ativos.
+Saiba como usar comentários e anotações no AEM para se comunicar e colaborar em ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32049/?quality=12&learn=on&hidetitle=true)
