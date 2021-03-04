@@ -1,7 +1,7 @@
 ---
-title: Atualize o status de assinatura do formulário no banco de dados
-description: Atualizar o status de assinatura do formulário assinado no banco de dados usando o fluxo de trabalho AEM
-feature: adaptive-forms
+title: Atualizar o Status da Assinatura do Formulário no Banco de Dados
+description: Atualize o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho do AEM
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,24 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '109'
+ht-degree: 4%
 
 ---
 
 
-# Atualizar status de assinatura
+# Atualizar status da assinatura
 
-O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui a cerimônia de assinatura. A seguir está o fluxo do fluxo de trabalho
+O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui a cerimônia de assinatura. Este é o fluxo do workflow
 
 ![fluxo de trabalho principal](assets/update-signature.PNG)
 
-Atualizar status de assinatura é uma etapa do processo personalizado.
-A principal razão para implementar a etapa do processo personalizado é estender um Fluxo de trabalho AEM. A seguir está o código personalizado usado para atualizar o status da assinatura.
-O código nesta etapa do processo personalizado faz referência ao serviço SignMultipleForms.
+Atualizar Status da Assinatura é uma etapa de processo personalizada.
+O principal motivo para implementar a etapa do processo personalizado é estender um fluxo de trabalho do AEM. Este é o código personalizado usado para atualizar o status da assinatura.
+O código nesta etapa do processo personalizado faz referência ao serviço SignMultipleForms .
 
 
 ```java
@@ -72,5 +75,5 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Ativos
 
-O fluxo de trabalho de atualização do status da assinatura pode ser [baixado daqui](assets/update-signature-status-workflow.zip)
+O fluxo de trabalho de status da assinatura de atualização pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
 
