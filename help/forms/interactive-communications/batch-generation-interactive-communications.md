@@ -1,20 +1,17 @@
 ---
 title: Usando a API em lote para gerar documentos de comunicação interativa
 description: Amostra de ativos para gerar documentos do canal de impressão usando API em lote
-feature: Comunicação interativa
+feature: comunicação interativa
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '417'
+ht-degree: 2%
 
 ---
 
