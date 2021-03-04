@@ -1,10 +1,10 @@
 ---
 title: Uso de funções e editor de código
 seo-title: Uso de funções e editor de código
-description: Usar funções e editor de código para criar regras de negócios
-seo-description: Usar funções e editor de código para criar regras de negócios
+description: Uso do editor de funções e códigos para criar regras de negócios
+seo-description: Uso do editor de funções e códigos para criar regras de negócios
 uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: adaptive-forms
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,25 +13,28 @@ version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Iniciante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
 
 # Uso de funções personalizadas e do editor de código {#using-functions-and-code-editor}
 
-Nesta parte, usaremos funções personalizadas e o editor de código para criar regras de negócios.
+Nessa parte, usaremos funções personalizadas e o editor de códigos para criar regras de negócios.
 
-você já instalou o [ClientLib com função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
+você já instalou o [ClientLib com a função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
 
-Normalmente, uma biblioteca de cliente consiste em arquivos CSS e Javascript. Essa biblioteca de cliente contém um arquivo javascript que expõe uma função para preencher valores de lista suspensos.
+Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Essa biblioteca do cliente contém um arquivo javascript que expõe uma função para preencher valores de lista suspensa.
 
 
-## Função para preencher a Lista suspensa {#function-to-populate-drop-down-list}
+## Função para preencher a lista suspensa {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
@@ -43,7 +46,7 @@ Normalmente, uma biblioteca de cliente consiste em arquivos CSS e Javascript. Es
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
-A seguir está o código usado para validar campos do painel
+Este é o código usado para validar campos do painel
 
 ```javascript
 //debugger;
@@ -66,12 +69,12 @@ else
   }
 ```
 
-Você pode cancelar o comentário da linha 1 para depurar o código na janela do navegador.
+Você pode remover o comentário da linha 1 para depurar o código na janela do navegador.
 
 Linha 4 - Obter o painel atual
 
 Linha 5 - Valide o painel atual.
 
-Linha 9 - Se nenhum erro for movido para o painel seguinte
+Linha 9 - Se nenhum erro se mover para o painel seguinte
 
-Pré-visualização o formulário e teste a funcionalidade recém-ativada.
+Visualize o formulário e teste a funcionalidade recém-ativada.
