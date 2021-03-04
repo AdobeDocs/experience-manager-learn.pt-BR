@@ -4,17 +4,20 @@ seo-title: Configuração do valor do elemento de dados Json no fluxo de trabalh
 description: Como um formulário adaptável é roteado para usuários diferentes no fluxo de trabalho do AEM, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
 seo-description: Como um formulário adaptável é roteado para usuários diferentes no fluxo de trabalho do AEM, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: formulários adaptáveis,fluxo de trabalho
+feature: Formulários adaptáveis
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
+topic: Desenvolvimento
+role: Desenvolvedor
+level: Experienciado
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '767'
 ht-degree: 1%
 
 ---
