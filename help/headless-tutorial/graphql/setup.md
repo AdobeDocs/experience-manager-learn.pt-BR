@@ -15,9 +15,9 @@ topic: Sem periféricos, gerenciamento de conteúdo
 role: Desenvolvedor
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1832'
 ht-degree: 2%
 
 ---
@@ -127,11 +127,12 @@ Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um apl
    $ git clone --branch tutorial/react git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. No IDE de sua escolha, abra o arquivo `.env.development` em `aem-guides-wknd-graphql/react-app/.env.development`. Exclua a linha `REACT_APP_AUTHORIZATION` para que o arquivo tenha a seguinte aparência:
+1. No IDE de sua escolha, abra o arquivo `.env.development` em `aem-guides-wknd-graphql/react-app/.env.development`. Verifique se a linha `REACT_APP_AUTHORIZATION` não está comentada e se o arquivo tem a seguinte aparência:
 
    ```plain
    REACT_APP_HOST_URI=http://localhost:4502
    REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json
+   # Use Authorization when connecting to an AEM Author environment
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
@@ -139,7 +140,7 @@ Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um apl
 
    >[!NOTE]
    >
-   > Em um cenário de produção, o aplicativo se conectará a um ambiente **Publish** do AEM. Isso é abordado com mais detalhes, posteriormente no tutorial.
+   > Em um cenário de produção, o aplicativo se conectará a um ambiente **Publish** do AEM. Isso é abordado com mais detalhes no capítulo [Implantação de produção](production-deployment.md).
 
 1. Navegue até a pasta `aem-guides-wknd-graphql/react-app`. Instale e inicie o aplicativo:
 
