@@ -15,9 +15,9 @@ topic: Sem periféricos, gerenciamento de conteúdo
 role: Desenvolvedor
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas em [C
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 O vídeo acima fornece uma visão geral de alto nível do trabalho com Modelos de fragmento de conteúdo.
+
+>[!CAUTION]
+>
+> O vídeo acima mostra a criação do modelo **Contributor** com o nome `Contributors`. Ao executar as etapas em seu próprio ambiente, assegure-se de que o título use a forma singular: `Contributor` sem o **s**. A nomeação do Modelo do fragmento de conteúdo direciona as chamadas de API GraphQL que serão executadas posteriormente no tutorial.
 
 ## Inspecionar o modelo de fragmento de conteúdo de empreendimento
 
