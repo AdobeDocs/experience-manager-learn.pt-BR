@@ -6,10 +6,10 @@ topic: Sem periféricos, gerenciamento de conteúdo
 role: Desenvolvedor
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,6 @@ ht-degree: 4%
 O Adobe Experience Manager tem várias opções para definir endpoints sem periféricos e fornecer seu conteúdo como JSON. Use tutoriais práticos para explorar como usar as várias opções e escolher o que é certo para você.
 
 ## Tutorial de APIs GraphQL do AEM
-
->[!CAUTION]
->
-> A API GraphQL do AEM para entrega de fragmentos de conteúdo está disponível mediante solicitação.
-> Entre em contato com o Suporte da Adobe para ativar a API do seu programa AEM as a Cloud Service.
 
 APIs GraphQL do AEM para fragmentos de conteúdo
 O suporta cenários CMS sem periféricos, onde aplicativos cliente externos renderizam experiências usando conteúdo gerenciado no AEM.
