@@ -1,7 +1,7 @@
 ---
 title: Introdução ao AEM Sites - Páginas e modelos
 seo-title: Introdução ao AEM Sites - Páginas e modelos
-description: Saiba mais sobre a relação entre um componente de página base e modelos editáveis. Entenda como os Componentes principais são enviados por proxy no projeto e aprenda as configurações de política avançadas dos modelos editáveis para criar um modelo de página de artigo bem estruturado com base em um modelo do Adobe XD.
+description: Saiba mais sobre a relação entre um componente de página base e modelos editáveis. Entenda como os Componentes principais são transferidos por proxy para o projeto e aprenda configurações de política avançadas de modelos editáveis para criar um modelo de página de artigo bem estruturado com base em um modelo do Adobe XD.
 sub-product: sites
 feature: Componentes principais, modelos editáveis
 topics: development
@@ -16,9 +16,9 @@ topic: Gerenciamento de conteúdo, desenvolvimento
 role: Desenvolvedor
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b5b43ae8231bf23e0c53777b1e9c16bcc3fc188a
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Confira o código base que o tutorial constrói em:
    $ git checkout tutorial/pages-templates-start
    ```
 
-1. Implante a base de código em uma instância do AEM local usando suas habilidades Maven:
+1. Implante a base de código em uma instância de AEM local usando suas habilidades Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -55,7 +55,7 @@ Confira o código base que o tutorial constrói em:
 
    >[!NOTE]
    >
-   > Se estiver usando o AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -65,7 +65,7 @@ Você sempre pode visualizar o código concluído em [GitHub](https://github.com
 
 ## Objetivo
 
-1. Inspecione um design de página criado no Adobe XD e mapeie-o para Componentes principais.
+1. Inspect é um design de página criado no Adobe XD e o mapeia para Componentes principais.
 1. Entenda os detalhes de Modelos editáveis e como as políticas podem ser usadas para impor o controle granular do conteúdo da página.
 1. Saiba como Modelos e Páginas são vinculados
 
@@ -75,13 +75,17 @@ Nesta parte do tutorial, você criará um novo Modelo de página de artigo que p
 
 ![Design da página do artigo e versão sem estilo](assets/pages-templates/what-you-will-build.png)
 
-## Planejamento de interface com o Adobe XD {#adobexd}
+## Planejamento de interface do usuário com Adobe XD {#adobexd}
 
-Na maioria dos casos, o planejamento de um novo site começa com modelos e designs estáticos. [O Adobe ](https://www.adobe.com/products/xd.html) XD é uma ferramenta de design que cria experiências do usuário. Em seguida, inspecionaremos um Kit de interface do usuário e modelos para ajudar a planejar a estrutura do Modelo de página de artigo.
+Na maioria dos casos, o planejamento de um novo site começa com modelos e designs estáticos. [Adobe ](https://www.adobe.com/products/xd.html) XDé uma ferramenta de design que cria experiências do usuário. Em seguida, inspecionaremos um Kit de interface do usuário e modelos para ajudar a planejar a estrutura do Modelo de página de artigo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
 **Baixe o arquivo de design de artigo  [WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
+
+>[!NOTE]
+>
+> Um [Kit de interface dos componentes principais genérico também está disponível](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) como ponto de partida para projetos personalizados.
 
 ## Criar o modelo da página de artigo
 
@@ -93,7 +97,7 @@ Há 3 áreas principais de [Modelos editáveis](https://experienceleague.adobe.c
 1. **Conteúdo inicial**  - define os componentes com os quais o modelo começará, eles podem ser editados e/ou excluídos pelos autores de conteúdo
 1. **Políticas**  - define configurações sobre como os componentes se comportarão e quais opções os autores terão disponíveis.
 
-Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local do AEM. Siga as etapas do vídeo abaixo:
+Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local de AEM. Siga as etapas do vídeo abaixo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
@@ -161,7 +165,7 @@ Etapas de alto nível para o vídeo abaixo:
 
 Uma prática comum ao criar conteúdo global, como um cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragmentos de experiência, permite que os usuários combinem vários componentes para criar um único componente com capacidade de referência. Os Fragmentos de experiência têm a vantagem de suportar o gerenciamento de vários sites e [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
-O Arquétipo de projeto do AEM gerou um Cabeçalho e um Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
+O Arquétipo de projeto AEM gerou um Cabeçalho e um Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
@@ -233,11 +237,11 @@ Etapas de alto nível para o vídeo abaixo:
    * Defina a **Página principal** para `/content/wknd/us/en/magazine`.
    * Em **Configurações do item** marque **Vincular itens** e marque **Mostrar data**.
 
-## Inspecionar a estrutura do nó {#node-structure}
+## Inspect a estrutura do nó {#node-structure}
 
 Nesse momento, a página do artigo está claramente sem estilo. No entanto, a estrutura básica está em vigor. Em seguida, inspecione a estrutura de nós da página do artigo para obter uma melhor compreensão da função do modelo, da página e dos componentes.
 
-Use a ferramenta CRXDE-Lite em uma instância do AEM local para exibir a estrutura subjacente do nó.
+Use a ferramenta CRXDE-Lite em uma instância de AEM local para visualizar a estrutura subjacente do nó.
 
 1. Abra [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) e use a navegação em árvore para navegar até `/content/wknd/us/en/magazine/guide-la-skateparks`.
 
@@ -263,13 +267,13 @@ Use a ferramenta CRXDE-Lite em uma instância do AEM local para exibir a estrutu
 
    A propriedade `sling:resourceSuperType` aponta para `core/wcm/components/page/v2/page`. Essa propriedade permite que o componente de página da WKND herde **all** da funcionalidade do componente de página Componente principal. Este é o primeiro exemplo de algo chamado [Padrão do componente proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Mais informações podem ser encontradas [aqui.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
 
-1. Inspecione outro componente dentro dos componentes WKND, o componente `Breadcrumb` localizado em: `/apps/wknd/components/breadcrumb`. Observe que a mesma propriedade `sling:resourceSuperType` pode ser encontrada, mas dessa vez ela aponta para `core/wcm/components/breadcrumb/v2/breadcrumb`. Este é outro exemplo de uso do padrão de componente Proxy para incluir um Componente principal. Na verdade, todos os componentes na base de código WKND são proxies dos Componentes principais do AEM (exceto pelo nosso famoso componente HelloWorld). É uma prática recomendada tentar reutilizar o máximo possível da funcionalidade dos Componentes principais *antes de* gravar o código personalizado.
+1. Inspect outro componente dentro dos componentes WKND, o componente `Breadcrumb` localizado em: `/apps/wknd/components/breadcrumb`. Observe que a mesma propriedade `sling:resourceSuperType` pode ser encontrada, mas dessa vez ela aponta para `core/wcm/components/breadcrumb/v2/breadcrumb`. Este é outro exemplo de uso do padrão de componente Proxy para incluir um Componente principal. Na verdade, todos os componentes na base de código WKND são proxies AEM Componentes principais (exceto pelo nosso famoso componente HelloWorld). É uma prática recomendada tentar reutilizar o máximo possível da funcionalidade dos Componentes principais *antes de* gravar o código personalizado.
 
-1. Em seguida, inspecione a Página do Componente Principal em `/libs/core/wcm/components/page/v2/page` usando o CRXDE Lite:
+1. Em seguida, inspecione a Página do componente principal em `/libs/core/wcm/components/page/v2/page` usando o CRXDE Lite:
 
    >[!NOTE]
    >
-   > No AEM 6.5/6.4, os Componentes principais estão localizados em `/apps/core/wcm/components`. No AEM as a Cloud Service, os Componentes principais estão localizados em `/libs` e são atualizados automaticamente.
+   > No AEM 6.5/6.4, os Componentes principais estão localizados em `/apps/core/wcm/components`. No AEM como um Cloud Service, os Componentes principais estão localizados em `/libs` e são atualizados automaticamente.
 
    ![Página do componente principal](assets/pages-templates/core-page-component-properties.png)
 
@@ -313,21 +317,21 @@ Use a ferramenta CRXDE-Lite em uma instância do AEM local para exibir a estrutu
 
    Você pode saber mais sobre como o Modelo editável resulta na renderização da página de conteúdo [lendo este artigo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-1. Inspecione o outro Componente principal, como a navegação estrutural em `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualize o script `breadcrumb.html` para entender como a marcação do componente de navegação estrutural é finalmente gerada.
+1. Inspect o outro componente principal, como a navegação estrutural em `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualize o script `breadcrumb.html` para entender como a marcação do componente de navegação estrutural é finalmente gerada.
 
 ## Salvando Configurações no Controle de Origem {#configuration-persistence}
 
-Em muitos casos, especialmente no início de um projeto do AEM, é valioso manter configurações, como modelos e políticas de conteúdo relacionadas, para o controle de origem. Isso garante que todos os desenvolvedores estejam trabalhando com o mesmo conjunto de conteúdo e configurações e pode garantir uma consistência adicional entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
+Em muitos casos, especialmente no início de um projeto AEM, é valioso manter configurações, como modelos e políticas de conteúdo relacionadas, para o controle de origem. Isso garante que todos os desenvolvedores estejam trabalhando com o mesmo conjunto de conteúdo e configurações e pode garantir uma consistência adicional entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
 
-Por enquanto, trataremos os modelos como outras partes de código e sincronizaremos o **Modelo de página de artigo** como parte do projeto. Até agora, temos o código **enviado** do nosso projeto AEM para uma instância local do AEM. O **Modelo de página de artigo** foi criado diretamente em uma instância local do AEM, portanto, precisamos **importar** o modelo para o nosso projeto AEM. O módulo **ui.content** é incluído no projeto AEM para essa finalidade específica.
+Por enquanto, trataremos os modelos como outras partes de código e sincronizaremos o **Modelo de página de artigo** como parte do projeto. Até agora, temos o código **enviado** do nosso projeto AEM para uma instância local de AEM. O **Modelo de página de artigo** foi criado diretamente em uma instância local de AEM, portanto, precisamos **importar** o modelo para nosso projeto AEM. O módulo **ui.content** é incluído no projeto de AEM para essa finalidade específica.
 
-As próximas etapas serão executadas usando o VSCode IDE usando o plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview), mas podem estar fazendo uso de qualquer IDE que você tenha configurado para **importar** ou importar conteúdo de uma instância local do AEM.
+As próximas etapas serão executadas usando o VSCode IDE usando o plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview), mas podem estar fazendo uso de qualquer IDE que você tenha configurado para **importar** ou importar conteúdo de uma instância local de AEM.
 
 1. No VSCode, abra o projeto `aem-guides-wknd`.
 
 1. Expanda o módulo **ui.content** no Explorador de projetos. Expanda a pasta `src` e navegue até `/conf/wknd/settings/wcm/templates`.
 
-1. [!UICONTROL Clique com o botão direito do mouse ] na  `templates` pasta e selecione  **Importar do AEM Server**:
+1. [!UICONTROL Clique com o botão direito do mouse ] na  `templates` pasta e selecione  **Importar de AEM Servidor**:
 
    ![Modelo de importação do VSCode](assets/pages-templates/vscode-import-templates.png)
 
@@ -339,7 +343,7 @@ As próximas etapas serão executadas usando o VSCode IDE usando o plug-in [VSCo
 
    ![Políticas de importação do VSCode](assets/pages-templates/policies-article-page-template.png)
 
-1. Inspecione o arquivo `filter.xml` localizado em `ui.content/src/main/content/META-INF/vault/filter.xml`.
+1. Inspect o arquivo `filter.xml` localizado em `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
