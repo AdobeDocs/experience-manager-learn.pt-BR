@@ -16,10 +16,10 @@ topic: Gerenciamento de conteúdo, desenvolvimento
 role: Desenvolvedor
 level: Iniciante
 translation-type: tm+mt
-source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
+source-git-commit: 600d3e217b93b30cc673af85c1fd1b62ccc37eb1
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 4%
+source-wordcount: '1890'
+ht-degree: 5%
 
 ---
 
@@ -50,11 +50,11 @@ Neste capítulo, você gerará um novo projeto do Adobe Experience Manager usand
 
 ## Crie o projeto {#create}
 
-Há algumas opções para criar um projeto Maven Multi-module para AEM. Este tutorial aproveitará o [Arquétipo de projeto Maven AEM **25**](https://github.com/adobe/aem-project-archetype). O Cloud Manager também [fornece um assistente de interface do usuário](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) para iniciar a criação de um projeto de aplicativo AEM. O projeto subjacente gerado pela interface do usuário do Cloud Manager resulta na mesma estrutura que o uso direto do arquétipo.
+Há algumas opções para criar um projeto Maven Multi-module para AEM. Este tutorial aproveitará o [Arquétipo de projeto Maven AEM **26**](https://github.com/adobe/aem-project-archetype). O Cloud Manager também [fornece um assistente de interface do usuário](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/create-an-application-project.html) para iniciar a criação de um projeto de aplicativo AEM. O projeto subjacente gerado pela interface do usuário do Cloud Manager resulta na mesma estrutura que o uso direto do arquétipo.
 
 >[!NOTE]
 >
->Este tutorial usa a versão **25** do arquétipo. É sempre uma prática recomendada usar a versão **mais recente** do arquétipo para gerar um novo projeto.
+>Este tutorial usa a versão **26** do arquétipo. É sempre uma prática recomendada usar a versão **mais recente** do arquétipo para gerar um novo projeto.
 
 A próxima série de etapas ocorrerá usando um terminal de linha de comando baseado em UNIX, mas deve ser semelhante se estiver usando um terminal do Windows.
 
@@ -100,7 +100,7 @@ A próxima série de etapas ocorrerá usando um terminal de linha de comando bas
    mvn -B archetype:generate \
        -D archetypeGroupId=com.adobe.aem \
        -D archetypeArtifactId=aem-project-archetype \
-       -D archetypeVersion=25 \
+       -D archetypeVersion=26 \
        -D appTitle="WKND Sites Project" \
        -D appId="wknd" \
        -D groupId="com.adobe.aem.guides.wknd" \
@@ -111,7 +111,7 @@ A próxima série de etapas ocorrerá usando um terminal de linha de comando bas
 
    >[!NOTE]
    >
-   > Se estiver usando AEM 6.5.5.0+ ou 6.4.8.1+, substitua `aemVersion="cloud"` pela versão de destino de AEM ou seja `aemVersion="6.5.5"` ou `aemVersion="6.4.8.1"`
+   > Se o direcionamento AEM 6.5.5+, substitua `aemVersion="cloud"` por `aemVersion="6.5.5"`. Se o target for 6.4.8+, use `aemVersion="6.4.8"`.
 
    Uma lista completa das propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -134,24 +134,6 @@ A próxima série de etapas ocorrerá usando um terminal de linha de comando bas
            |--- pom.xml
            |--- README.md
            |--- .gitignore
-   ```
-
-### Atualizar versão do Analista de projeto
-
->[!CAUTION]
->
-> Um [problema conhecido existe](https://github.com/adobe/aem-project-archetype/issues/638) no Archetype versão 25 que requer uma atualização para a versão do **Project Analyser** no projeto gerado. As etapas abaixo são **somente** necessárias para projetos gerados com `aemVersion="cloud"`.
-
-1. Abra o arquivo `aem-guides-wknd/poml.xml` usando o editor de texto favorito.
-1. Atualize o `aemanalyser.version` para **`0.9.2`**:
-
-   ```diff
-    <properties>
-       ...
-   -   <aemanalyser.version>0.0.18</aemanalyser.version>
-   +   <aemanalyser.version>0.9.2</aemanalyser.version>
-       ...
-    </properties>
    ```
 
 ## Implantar e criar o projeto {#build}
