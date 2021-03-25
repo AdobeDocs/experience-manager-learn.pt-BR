@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
 translation-type: tm+mt
-source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 25%
+source-wordcount: '353'
+ht-degree: 24%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 25%
 
 + [Visão geral](./overview.md)
 + Introdução ao AEM as a Cloud Service{#introduction}
-   + [O que é o AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [O que é AEM como Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolução](./introduction/evolution.md)
    + [Arquitetura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
 + Tecnologia subjacente {#underlying-technology}
-   + [Arquitetura do AEM](./underlying-technology/introduction-architecture.md)
+   + [Arquitetura AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositório de conteúdo Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
@@ -45,7 +45,7 @@ ht-degree: 25%
 + Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-set-up}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
-   + [Tempo de execução local do AEM](./local-development-environment/aem-runtime.md)
+   + [Tempo de Execução do AEM Local](./local-development-environment/aem-runtime.md)
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desenvolvimento{#developing}
    + Noções básicas sobre desenvolvimento{#basics}
@@ -58,8 +58,8 @@ ht-degree: 25%
       + [Publicação de conteúdo](./developing/basics/content-publishing.md)
       + [Configurações do OSGi](./developing/basics/osgi-configurations.md)
       + [Migração de configuração do Dispatcher](./developing/basics/dispatcher-configuration.md)
-   + [JavaDocs da API do SDK do AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
-+ Depuração do AEM{#debugging}
+   + [JavaDocs da API do SDK AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
++ Depuração de AEM{#debugging}
    + Depuração do SDK do AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -67,30 +67,39 @@ ht-degree: 25%
       + [Console da Web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Ferramentas do Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Outras ferramentas](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Depuração do AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Depuração de AEM como um Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Visão geral](./debugging/cloud-service/overview.md)
       + [Logs](./debugging/cloud-service/logs.md)
       + [Criar e implantar](./debugging/cloud-service/build-and-deployment.md)
       + [Console do desenvolvedor](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Acesso ao AEM{#accessing}
++ Acessar AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
-   + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
+   + [Usuários de Adobe IMS](./accessing/adobe-ims-users.md)
    + [Grupos de usuários do Adobe IMS](./accessing/adobe-ims-user-groups.md)
-   + [Perfis de produto do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
-   + [Usuários, grupos e permissões do AEM](./accessing/aem-users-groups-and-permissions.md)
+   + [Perfis de produto Adobe IMS](./accessing/adobe-ims-product-profiles.md)
+   + [AEM usuários, grupos e permissões](./accessing/aem-users-groups-and-permissions.md)
    + [Configuração do acesso ao AEM](./accessing/walk-through.md)
 + Migração {#migration}
    + [Ferramenta Transferência de conteúdo](./migration/content-transfer-tool.md)
    + [Importação em massa de ativos](./migration/bulk-import.md)
-+ Extensibilidade do Asset Compute{#asset-compute}
++ Forms{#forms}
+   + [Integrar com o Salesforce]{#integrate-with-salesforce}
+      + [Introdução](./forms/integrate-with-salesforce/introduction.md)
+      + [Criar aplicativo conectado](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Criar arquivo swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Criar fonte de dados](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Criar modelo de dados de formulário](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Apresentação do formulário de teste](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Testar evento de clique](./forms/integrate-with-salesforce/create-lead-click-event.md)
++ Extensibilidade do Asset compute{#asset-compute}
    + [Visão geral](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Provisionamento de conta e serviços](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente de desenvolvimento local](./asset-compute/set-up/development-environment.md)
       + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
    + Desenvolver{#develop}
-      + [Criar um projeto do Asset Compute](./asset-compute/develop/project.md)
+      + [Criar um projeto do Asset compute](./asset-compute/develop/project.md)
       + [Configurar variáveis de ambiente](./asset-compute/develop/environment-variables.md)
       + [Configurar o manifest.yml](./asset-compute/develop/manifest.md)
       + [Desenvolver um trabalhador](./asset-compute/develop/worker.md)
@@ -100,15 +109,14 @@ ht-degree: 25%
       + [Depurar um trabalhador](./asset-compute/test-debug/debug.md)
    + Implantar{#deploy}
       + [Implantar no Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-      + [Integrar ao AEM](./asset-compute/deploy/processing-profiles.md)
+      + [Integrar com AEM](./asset-compute/deploy/processing-profiles.md)
    + Avançado {#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
    + [Resolução de Problemas](./asset-compute/troubleshooting.md)
-+ Tutoriais em várias etapas{#multi-step-tutorials}
++ Tutorials de várias etapas{#multi-step-tutorials}
    + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Editor SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Editor de SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Autenticação por token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
-
