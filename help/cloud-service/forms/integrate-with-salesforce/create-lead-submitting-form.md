@@ -1,7 +1,7 @@
 ---
 title: Enviar formulário usando a ação de envio do Modelo de dados de formulário
 description: Criar um formulário adaptável para testar a integração do Salesforce criando um objeto de lead no envio do formulário
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 type: Documentação
 role: Desenvolvedor
 level: Iniciante, Intermediário
@@ -10,7 +10,7 @@ feature: Formulários adaptáveis
 topic: Desenvolvimento
 kt: 7151
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 7%
