@@ -1,7 +1,7 @@
 ---
 title: Crie um arquivo swagger para descrever a API REST do Salesforce
 description: O arquivo Swagger definirá os pontos de extremidade da API e os parâmetros de entrada e saída
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 type: Documentação
 role: Desenvolvedor
 level: Iniciante, Intermediário
@@ -11,7 +11,7 @@ topic: Desenvolvimento
 kt: 7147
 thumbnail: 331754.jpg
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 9%
