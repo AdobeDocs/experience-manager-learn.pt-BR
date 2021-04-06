@@ -1,8 +1,8 @@
 ---
-title: Desenvolvimento com serviços de saída e formulários no AEM Forms
-seo-title: Desenvolvimento com serviços de saída e formulários no AEM Forms
-description: Uso da API do Serviço de saída e formulários no AEM Forms
-seo-description: Uso da API do Serviço de saída e formulários no AEM Forms
+title: Desenvolvimento com serviços de saída e Forms no AEM Forms
+seo-title: Desenvolvimento com serviços de saída e Forms no AEM Forms
+description: Uso da API de serviço do Output e Forms no AEM Forms
+seo-description: Uso da API de serviço do Output e Forms no AEM Forms
 uuid: be018eb5-dbe7-4101-a1a9-bee11ac97273
 feature: Serviço de saída
 topics: development
@@ -15,24 +15,23 @@ topic: Desenvolvimento
 role: Desenvolvedor
 level: Intermediário
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Desenvolvimento com serviços de saída e formulários no AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
+# Desenvolvimento com serviços de saída e Forms no AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
-Uso da API do Serviço de saída e formulários no AEM Forms
+Uso da API de serviço do Output e Forms no AEM Forms
 
 Neste artigo, analisaremos o seguinte
 
-* Serviço de saída - Normalmente, esse serviço é usado para unir dados xml ao modelo xdp ou pdf para gerar pdf nivelado
-* FormsService - Esse é um serviço muito versátil que permite exportar/importar dados de e para arquivo PDF
+* Serviço de saída - Normalmente, esse serviço é usado para unir dados xml ao modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o[javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o serviço de saída.
+* FormsService - é um serviço muito versátil que permite exportar/importar dados de e para arquivo PDF. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) para o serviço Forms.
 
-O javadoc oficial da API do AEM Forms é listado [aqui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 O trecho de código a seguir exporta dados do arquivo PDF
 
@@ -55,23 +54,23 @@ A Linha 6 exporta o xmlData do arquivo PDF
 
 **Para testar o pacote de amostra em seu sistema**
 
-[Baixe e instale o pacote usando o gerenciador de pacotes do AEM](assets/outputandformsservice.zip)
+[Baixe e instale o pacote usando o gerenciador de pacotes de AEM](assets/outputandformsservice.zip)
 
 
 
 
-**Depois de instalar o pacote, você terá que incluir os seguintes URLs na lista de permissões do Filtro CSRF do Adobe Granite.**
+**Depois de instalar o pacote, você terá que lista de permissões os seguintes URLs no Adobe Granite CSRF Filter.**
 
-1. Siga as etapas mencionadas abaixo para incluir os caminhos mencionados acima.
+1. Siga os passos mencionados abaixo para lista de permissões os caminhos mencionados acima.
 1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
-1. Pesquisar o filtro CSRF do Adobe Granite
+1. Procure por Filtro CSRF do Adobe Granite
 1. Adicione os três caminhos a seguir nas seções excluídas e salve
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Pesquise por &quot;Filtro do referenciador do Sling&quot;
 1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste)
-Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações POST ao seu servidor. Instale o aplicativo Postman no seu sistema.
+Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações de POST para seu servidor. Instale o aplicativo Postman no seu sistema.
 Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
 
 Certifique-se de ter selecionado &quot;POST&quot; na lista suspensa
@@ -81,12 +80,12 @@ Navegue até a guia &quot;Corpo&quot; e especifique os parâmetros da solicitaç
 ![exportar](assets/postexport.png)
 Em seguida, clique no botão Send
 
-A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Serviço do Forms, o url do serviço, os parâmetros de entrada que cada serviço espera
+A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Forms Service, o url do serviço, os parâmetros de entrada que cada serviço espera
 
 **Mesclar dados e Nivelar saída:**
 
 * Use o Serviço de Saída para unir dados ao documento xdp ou pdf para gerar pdf nivelado
-* **URL** DA PUBLICAÇÃO: http://localhost:4502/content/AemFormsSamples/outputservice.html
+* **POST URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Parâmetros da solicitação -**
 
    * xdp_or_pdf_file : O arquivo xdp ou pdf com o qual você deseja mesclar dados
@@ -95,7 +94,7 @@ A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o s
 
 **Importar dados para o arquivo PDF:**
 * Usar o FormsService para importar dados para um arquivo PDF
-* **URL**  DA PUBLICAÇÃO - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL do POST**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parâmetros da solicitação:**
 
    * pdffile : O arquivo pdf com o qual você deseja mesclar dados
