@@ -1,19 +1,19 @@
 ---
 title: Crie um formulário adaptável para usar a configuração do Adobe Sign Cloud Services criada
 description: Criar um formulário adaptável para usar com o Adobe Sign
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
 feature: Formulários adaptáveis
 topic: Desenvolvimento
-kt: 7437
+kt: 7431
 thumbnail: 332438.jpg
 translation-type: tm+mt
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 11%
+source-wordcount: '40'
+ht-degree: 7%
 
 ---
 
