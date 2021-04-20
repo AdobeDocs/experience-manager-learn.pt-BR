@@ -1,21 +1,20 @@
 ---
 title: Preencher formulário usando o modelo de dados de formulário
 description: 'Preencha previamente o formulário adaptável usando o atributo de solicitação do modelo de dados de formulário '
-feature: Adaptive Forms
-topics: development
+feature: Formulários adaptáveis
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 kt: 4419
-thumbnail: kt-4419.jpg
-topic: Development
+thumbnail: 36387.jpg
+topic: desenvolvimento
 role: Business Practitioner
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '128'
 ht-degree: 3%
 
 ---
@@ -40,5 +39,5 @@ recurso. O vídeo a seguir fornece uma visão geral do curso
 
 * Instância de trabalho do AEM Forms
 * Familiarizar-se com o banco de dados MySQL e o Workbench MySQL
-* Alguma experiência na criação de formulários adaptáveis
+* Alguma experiência na criação do Adaptive Forms
 
