@@ -3,7 +3,7 @@ title: Uso do gerenciamento de vários sites com o AEM Sites
 seo-title: Uso das interfaces de usuário de toque do Multi Site Manager com o Adobe Experience Manager
 description: A Visão geral da Live Copy e o Gerenciador de configuração do Blueprint são interfaces habilitadas pela interface do usuário para trabalhar com o Multi Site Manager.
 seo-description: A Visão geral da Live Copy e o Gerenciador de configuração do Blueprint são interfaces habilitadas pela interface do usuário para trabalhar com o Multi Site Manager com o Adobe Experience Manager.
-feature: Gerenciamento de vários sites
+feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: Localização
-role: Profissional
-level: Iniciante
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

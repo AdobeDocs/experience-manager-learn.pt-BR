@@ -1,16 +1,16 @@
 ---
 title: Configurar formulário adaptável convertido
 description: Configurar formulário adaptável convertido
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39574.jpg
 kt: 6126
-topic: Desenvolvimento
-role: Profissional
-level: Iniciante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

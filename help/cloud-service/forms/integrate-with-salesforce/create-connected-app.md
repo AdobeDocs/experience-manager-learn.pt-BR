@@ -2,12 +2,12 @@
 title: Criar aplicativo conectado do Salesforce.
 description: O aplicativo conectado permite integrar o Salesforce a aplicativos de terceiros, como o AEM Forms com o Salesforce.
 solution: Experience Manager, Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt

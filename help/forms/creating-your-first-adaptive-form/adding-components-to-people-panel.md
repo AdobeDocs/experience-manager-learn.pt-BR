@@ -4,7 +4,7 @@ seo-title: Adicionar componentes ao painel Pessoas
 description: Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o status civil do candidato for casado.
 seo-description: Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o status civil do candidato for casado.
 uuid: be5d2cff-797b-44ea-90e9-2423f1ec8983
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 kt: 4210
 thumbail: 28385.jpg
 discoiquuid: 520c8633-925f-4d3f-b800-ea34710f68d7
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

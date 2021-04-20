@@ -2,12 +2,12 @@
 title: Criação de um modelo de formulário adaptável
 description: O modelo de formulário adaptável define a estrutura e o conteúdo inicial do formulário adaptável.
 solution: Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
 translation-type: tm+mt

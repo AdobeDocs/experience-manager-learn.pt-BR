@@ -1,12 +1,12 @@
 ---
 title: 'Criar um objeto de lead no banco de dados do Salesforce em um evento de clique de botão '
 description: Criar como lead chamando a operação de publicação do Modelo de dados de formulário
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7193
 thumbnail: 331892.jpg
 translation-type: tm+mt

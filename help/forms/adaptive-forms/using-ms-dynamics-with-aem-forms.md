@@ -4,16 +4,16 @@ seo-title: Uso do Microsoft Dynamics com AEM Forms
 description: Este vídeo aborda um fluxo de trabalho que mostra como o AEM Forms pode trabalhar com o Microsoft Dynamics como uma fonte de dados de back-end para fornecer comunicações interativas e personalizadas.
 seo-description: Este vídeo aborda um fluxo de trabalho que mostra como o AEM Forms pode trabalhar com o Microsoft Dynamics como uma fonte de dados de back-end para fornecer comunicações interativas e personalizadas.
 uuid: 33d63899-1f58-49b3-a05e-6c57b01ef911
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: integrations
 audience: developer
 doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 6cb82275-55bc-4b9e-b958-75b906c6afa9
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

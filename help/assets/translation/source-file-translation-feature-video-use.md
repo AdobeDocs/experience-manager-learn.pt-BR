@@ -2,9 +2,9 @@
 title: Uso da tradução do arquivo de origem com o AEM Assets
 description: O Adobe Experience Manager (AEM) Assets permite identificar ativos que compartilham atributos comuns e marcá-los como relacionados usando o novo recurso Ativos relacionados. Também permite que os usuários definam uma relação de origem/derivada entre ativos, facilitando aos usuários identificar a origem de um ativo. A execução do fluxo de trabalho de tradução em um ativo derivado busca qualquer ativo que o arquivo de origem faça referência e o inclua para tradução, reduzindo os esforços para manter vários sites.
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Intermediário
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Configurar um ambiente de desenvolvimento local para extensibilidade do Asset compute
 description: O desenvolvimento de trabalhadores do Asset compute, que são aplicativos JavaScript Node.js, requer ferramentas de desenvolvimento específicas que diferem do desenvolvimento de AEM tradicional, que vai de Node.js e vários módulos npm a Docker Desktop e Microsoft Visual Studio Code.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: Integrações, desenvolvimento
-role: Desenvolvedor
-level: Intermediário, Experienciado
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
 workflow-type: tm+mt

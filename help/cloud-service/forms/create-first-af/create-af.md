@@ -2,12 +2,12 @@
 title: Criar formulário adaptável
 description: Crie um formulário adaptável e o baseie no modelo criado.
 solution: Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7376
 thumbnail: 332237.jpg
 translation-type: tm+mt

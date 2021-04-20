@@ -6,9 +6,9 @@ feature: Adobe Asset Link
 version: cloud-service
 kt: 4916
 thumbnail: 34259.jpg
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Intermediário
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,10 +2,10 @@
 title: Uso AEM fragmentos de experiência
 description: Fragmentos de experiência permitem que autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
 sub-product: sites, serviços de conteúdo
-feature: Fragmentos de experiência
-topic: Gerenciamento de conteúdo
-role: Arquiteto, desenvolvedor, administrador, profissional de negócios
-level: Iniciante
+feature: Experience Fragments
+topic: Content Management
+role: Architect, Developer, Administrator, Business Practitioner
+level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194

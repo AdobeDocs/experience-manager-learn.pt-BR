@@ -1,7 +1,7 @@
 ---
 title: Logs
 description: Os registros atuam como linha de frente para depurar aplicativos do AEM no AEM as a Cloud Service, mas dependem do logon adequado no aplicativo AEM implantado.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

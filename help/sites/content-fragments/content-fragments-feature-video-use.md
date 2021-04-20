@@ -2,15 +2,15 @@
 title: Criação de fragmentos de conteúdo no AEM
 description: 'Fragmentos de conteúdo são uma abstração de conteúdo no AEM que permite que o conteúdo baseado em texto seja criado e gerenciado independentemente dos canais compatíveis. '
 sub-product: serviços de conteúdo
-feature: Fragmentos de conteúdo
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

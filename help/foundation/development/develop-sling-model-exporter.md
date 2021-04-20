@@ -8,9 +8,9 @@ topics: content-delivery, development, headless
 activity: develop
 audience: developer
 doc-type: technical video
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

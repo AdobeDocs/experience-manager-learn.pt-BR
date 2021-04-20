@@ -2,7 +2,7 @@
 title: Projeto do SPA Editor | Introdução ao AEM SPA Editor e React
 description: Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo React integrado ao AEM SPA Editor.
 sub-product: sites
-feature: Editor SPA, Arquétipo de projeto AEM
+feature: SPA Editor, AEM Project Archetype
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,8 +11,8 @@ audience: developer
 kt: 413
 thumbnail: 413-spa-react.jpg
 topic: SPA
-role: Desenvolvedor
-level: Iniciante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

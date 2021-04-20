@@ -3,15 +3,15 @@ title: Entrega do Documento de comunicação interativa - Formulários AEM de ca
 seo-title: Entrega do Documento de comunicação interativa - Formulários AEM de canal da Web
 description: Entrega do documento do canal da Web via link no email
 seo-description: Entrega do documento do canal da Web via link no email
-feature: Comunicação interativa
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

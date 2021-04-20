@@ -1,7 +1,7 @@
 ---
 title: Criar fluxo de trabalho principal para acionar o processo de assinatura
 description: Criar fluxo de trabalho para armazenar os formulários para assinatura no banco de dados
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

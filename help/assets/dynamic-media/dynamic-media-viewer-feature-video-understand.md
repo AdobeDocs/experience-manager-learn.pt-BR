@@ -2,11 +2,11 @@
 title: Noções básicas do visualizador de ativos com o AEM Dynamic Media
 description: Os aprimoramentos no AEM Dynamic Media Viewer permitem que os autores do AEM definam e personalizem os ativos de experiência que serão apresentados aos usuários do site.
 sub-product: dynamic media classic
-feature: Predefinições do visualizador, perfis de imagem
+feature: Viewer Presets, Image Profiles
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
-role: Desenvolvedor
-level: Intermediário
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

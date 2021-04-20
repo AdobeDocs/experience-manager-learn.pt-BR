@@ -2,15 +2,15 @@
 title: Configurar publicação social com fragmentos de experiência do AEM
 description: Os Fragmentos de experiência permitem que os profissionais de marketing publiquem experiências criadas no AEM em plataformas de mídia social. O vídeo abaixo detalha a configuração e a configuração necessárias para publicar Fragmentos de experiência no Facebook e Pinterest.
 sub-product: sites, serviços de conteúdo
-feature: Fragmentos de experiência
+feature: Experience Fragments
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
-role: Administrador, Desenvolvedor
-level: Intermediário
+topic: Content Management
+role: Administrator, Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

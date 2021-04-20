@@ -4,16 +4,16 @@ seo-title: Envio do formulário adaptável ao servidor externo
 description: Envio do formulário adaptável ao terminal REST em execução no servidor externo
 seo-description: Envio do formulário adaptável ao terminal REST em execução no servidor externo
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

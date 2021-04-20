@@ -1,7 +1,7 @@
 ---
 title: Compreensão dos componentes principais
 description: 'Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Construídos com as práticas e padrões recomendadas da Adobe, os Componentes principais fornecem um conjunto básico de funcionalidades para qualquer implementação do Sites. '
-feature: Componentes principais
+feature: Core Components
 topics: authoring
 audience: all
 activity: use
@@ -9,9 +9,9 @@ doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg
-topic: Desenvolvimento
-role: Profissional
-level: Iniciante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

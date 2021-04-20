@@ -2,10 +2,10 @@
 title: Usar a pesquisa de tradução inteligente com o AEM Assets
 description: A Pesquisa de tradução inteligente permite a pesquisa e descoberta entre idiomas automaticamente no conteúdo do AEM, tanto Ativos quanto Páginas, suportando mais de 50 idiomas e reduzindo a necessidade de tradução manual do conteúdo.
 version: 6.3, 6.4, 6.5
-feature: 'Pesquisar  '
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+feature: Search
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

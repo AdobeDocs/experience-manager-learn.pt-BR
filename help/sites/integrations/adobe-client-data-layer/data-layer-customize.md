@@ -1,7 +1,7 @@
 ---
 title: Personalizar a camada de dados do cliente da Adobe com componentes do AEM
 description: Saiba como personalizar a Camada de dados do cliente da Adobe com conteúdo de componentes personalizados do AEM. Saiba como usar as APIs fornecidas pelos Componentes principais do AEM para estender e personalizar a camada de dados.
-feature: Camada de dados do cliente da Adobe, Componente principal
+feature: Adobe Client Data Layer, Core Component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
-topic: Integrações
-role: Desenvolvedor
-level: Intermediário, Experienciado
+topic: Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

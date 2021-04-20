@@ -3,7 +3,7 @@ title: Criar fragmento do documento
 description: 'Esta é a parte 5 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos fragmento de documento para manter o nome e o endereço do recipient. '
 seo-description: 'Esta é a parte 5 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos fragmento de documento para manter o nome e o endereço do recipient. '
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
-feature: Comunicação interativa
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,9 +12,9 @@ version: 6.4,6.5
 discoiquuid: 47d3aa97-0bff-48e0-8a65-55e5332f811b
 kt: 5958
 thumbnail: 22350.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

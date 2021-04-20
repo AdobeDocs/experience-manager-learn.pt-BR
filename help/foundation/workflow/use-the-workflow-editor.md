@@ -2,10 +2,10 @@
 title: Como criar fluxos de trabalho no AEM
 description: O fluxo de trabalho permite o gerenciamento de processos de negócios no Experience Manager e é usado para o processamento automático de conteúdo, bem como para facilitar a governança e o processo que exigem tomada de decisão humana.
 version: 6.4, 6.5, cloud-service
-feature: Fluxo de trabalho
-topic: Gerenciamento de conteúdo
-level: Intermediário
-role: Administrador, Desenvolvedor
+feature: Workflow
+topic: Content Management
+level: Intermediate
+role: Administrator, Developer
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt

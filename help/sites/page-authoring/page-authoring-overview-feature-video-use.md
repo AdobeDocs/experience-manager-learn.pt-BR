@@ -3,7 +3,7 @@ title: Criação de uma página no AEM Sites
 seo-title: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
 description: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
 seo-description: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
-feature: Editor de páginas, modelos editáveis
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

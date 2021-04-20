@@ -2,12 +2,12 @@
 title: Adicionar e configurar a barra de ferramentas
 description: Adicione a capacidade de navegar entre painéis de formulário.
 solution: Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7389
 thumbnail: 332236.jpg
 translation-type: tm+mt

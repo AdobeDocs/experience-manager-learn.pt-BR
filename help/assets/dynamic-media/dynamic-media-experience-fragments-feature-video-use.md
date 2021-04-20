@@ -2,11 +2,11 @@
 title: Uso de fragmentos de experiência com o AEM Assets Dynamic Media
 description: AEM Assets O Dynamic Media integra pontos de acesso de ativos com fragmentos de experiência por meio de visualizadores de Mídia interativa. Os profissionais de marketing podem criar o fragmento de experiência com texto, imagens e links para preencher a pop-up personalizada e associar esse pop-up a pontos de acesso em banners, carrosséis ou vídeos.
 sub-product: dynamic-media, content-services
-feature: Fragmentos de experiência
+feature: Experience Fragments
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

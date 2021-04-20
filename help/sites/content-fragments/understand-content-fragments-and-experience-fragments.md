@@ -2,15 +2,15 @@
 title: Compreender fragmentos de conteúdo e fragmentos de experiência
 description: Os Fragmentos de conteúdo e os Fragmentos de experiência do Adobe Experience Manager podem parecer semelhantes na superfície, mas cada um desempenha funções principais em diferentes casos de uso. Saiba como Fragmentos de conteúdo e Fragmentos de experiência são semelhantes, diferentes e quando e como usá-los.
 sub-product: ativos, sites, serviços de conteúdo
-feature: Fragmentos de conteúdo, Fragmentos de experiência
+feature: Content Fragments, Experience Fragments
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

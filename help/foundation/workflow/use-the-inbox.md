@@ -2,10 +2,10 @@
 title: Como usar a Caixa de entrada no AEM
 description: A caixa de entrada do AEM facilita maior colaboração e visibilidade em tarefas e fluxo de trabalho.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Colaboração
-feature: Caixa de entrada
-role: Profissional
-level: Intermediário
+topic: Collaboration
+feature: Inbox
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

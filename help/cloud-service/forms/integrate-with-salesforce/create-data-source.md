@@ -2,11 +2,11 @@
 title: 'Criar uma configuração de serviços em nuvem '
 description: Criar fonte de dados para se conectar ao Salesforce usando as credenciais do OAuth
 solution: Experience Manager, Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-topic: Desenvolvimento
+topic: Development
 kt: 7148
 thumbnail: 331755.jpg
 translation-type: tm+mt

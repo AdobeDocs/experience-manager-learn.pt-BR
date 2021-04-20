@@ -2,14 +2,14 @@
 title: Visão geral do vídeo
 description: O Dynamic Media Classic vem com a conversão automática de vídeo no upload, streaming de vídeo para desktop e dispositivos móveis e conjuntos de vídeo adaptáveis otimizados para reprodução com base no dispositivo e na largura de banda. Saiba mais sobre vídeo no Dynamic Media Classic e obtenha uma ideia principal sobre conceitos e terminologia de vídeo. Em seguida, aprofunde-se no aprendizado sobre como fazer upload e codificar vídeos, escolher predefinições de vídeo para fazer upload, adicionar ou editar uma predefinição de vídeo, visualizar vídeos em um visualizador de vídeo, implantar vídeo em sites da Web e móveis, adicionar legendas e marcadores de capítulo ao vídeo e publicar visualizadores de vídeo em usuários de desktop e dispositivos móveis.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, perfis de vídeo, predefinições do visualizador
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ title: Uso do Connected Assets com o AEM Sites
 description: O recurso Ativos conectados permite que um autor do AEM Sites compartilhe com facilidade os ativos digitais hospedados em uma instância diferente do AEM.
 feature: Connected Assets
 version: 6.5
-topic: Gerenciamento de conteúdo
-role: Desenvolvedor
-level: Intermediário
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,15 +4,15 @@ seo-title: Envio de emails no envio do formulário adaptável
 description: Enviar email de confirmação no envio do formulário adaptável usando o componente enviar email
 seo-description: Enviar email de confirmação no envio do formulário adaptável usando o componente enviar email
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

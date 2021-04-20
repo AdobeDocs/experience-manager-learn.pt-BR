@@ -2,7 +2,7 @@
 title: Personalizar a atribuição de notificação de tarefa
 description: Incluir dados de formulário na atribuição de emails de notificação de tarefa
 sub-product: formulários
-feature: Fluxo de trabalho
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,9 +10,9 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,16 +4,16 @@ seo-title: Serviço De Código De Barras Com Formulários Adaptáveis
 description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
 seo-description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: formas em código de barras
+feature: barcoded-forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

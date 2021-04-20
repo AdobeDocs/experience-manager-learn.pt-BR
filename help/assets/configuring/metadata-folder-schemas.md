@@ -2,13 +2,13 @@
 title: Esquemas da pasta de metadados
 description: Os esquemas de pastas de metadados permitem que os usuários gerenciem e revisem metadados associados às próprias pastas de ativos, em vez de diretamente nos ativos.
 sub-product: ativos
-feature: Metadados
+feature: Metadata
 version: cloud-service
 kt: 4983
 thumbnail: 34071.jpg
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

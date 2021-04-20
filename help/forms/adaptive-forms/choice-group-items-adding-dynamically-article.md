@@ -3,15 +3,15 @@ title: Adicionar itens ao componente de grupo de opções
 seo-title: Adicionar itens ao componente de grupo de opções
 description: Adicionar itens ao componente de grupo de opções dinamicamente
 seo-description: Adicionar itens ao componente de grupo de opções dinamicamente
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Desenvolvimento
-role: Profissional
-level: Iniciante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

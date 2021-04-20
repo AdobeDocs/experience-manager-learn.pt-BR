@@ -1,16 +1,16 @@
 ---
 title: Depuração do SDK do AEM
 description: O AEM SDK é o ambiente de desenvolvimento principal usado pelos desenvolvedores e oferece suporte a uma variedade de maneiras de depurar o AEM e os aplicativos implantados.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: null
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante, Intermediário
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

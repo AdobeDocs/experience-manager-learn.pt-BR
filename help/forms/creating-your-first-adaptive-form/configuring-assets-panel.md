@@ -4,7 +4,7 @@ seo-title: Adicionar componentes à seção Ativos
 description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
 seo-description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
 uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
 discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

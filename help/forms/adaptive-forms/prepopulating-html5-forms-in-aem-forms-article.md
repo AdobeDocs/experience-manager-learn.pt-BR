@@ -3,7 +3,7 @@ title: Preencha previamente formulários HTML5 usando o atributo de dados.
 seo-title: Preencha previamente formulários HTML5 usando o atributo de dados.
 description: Preencha formulários HTML5 buscando dados da fonte de backend.
 seo-description: Preencha formulários HTML5 buscando dados da fonte de backend.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

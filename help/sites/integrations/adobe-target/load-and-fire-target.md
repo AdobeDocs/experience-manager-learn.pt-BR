@@ -1,7 +1,7 @@
 ---
 title: Carregar e acionar uma chamada do Target
 description: Saiba como carregar, passar parâmetros para solicitação de página e acionar uma chamada do Target de sua página do site usando uma regra do Launch. As informações da página são recuperadas e passadas como parâmetros usando a Camada de dados do cliente da Adobe, que permite coletar e armazenar dados sobre a experiência dos visitantes em uma página da Web e, em seguida, facilitar o acesso a esses dados.
-feature: Componentes principais, Camada de dados do cliente da Adobe
+feature: Core Components, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
-topic: Integrações
-role: Desenvolvedor
-level: Intermediário
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

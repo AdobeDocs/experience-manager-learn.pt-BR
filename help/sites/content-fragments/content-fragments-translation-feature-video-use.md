@@ -1,10 +1,10 @@
 ---
 title: Suporte de tradução para Fragmentos de conteúdo do AEM
 description: Saiba como os Fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
-feature: Fragmentos de conteúdo, Gerenciador de vários sites
-topic: Localização
-role: Profissional
-level: Intermediário
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

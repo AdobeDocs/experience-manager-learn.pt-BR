@@ -4,16 +4,16 @@ seo-title: Configuração do gráfico de linhas para seu primeiro documento de c
 description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
 seo-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: Comunicação interativa
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

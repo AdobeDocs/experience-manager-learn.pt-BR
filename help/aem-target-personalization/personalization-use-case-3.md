@@ -3,10 +3,10 @@ title: Personalização usando o Adobe Target Visual Experience Composer
 seo-title: Personalização usando o Adobe Target Visual Experience Composer (VEC)
 description: Um tutorial completo mostrando como criar e entregar experiência personalizada usando o Adobe Target Visual Experience Composer (VEC).
 seo-description: Um tutorial completo mostrando como criar e entregar experiência personalizada usando o Adobe Target Visual Experience Composer (VEC).
-feature: Fragmentos de experiência
-topic: Personalização
-role: Desenvolvedor
-level: Intermediário
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

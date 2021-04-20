@@ -2,9 +2,9 @@
 title: '"Capítulo 1 - Conceitos, padrões e padrões do Dispatcher"'
 description: Este capítulo fornece uma breve introdução sobre a história e a mecânica do Dispatcher e discute como isso influencia a forma como um desenvolvedor do AEM projetaria seus componentes.
 feature: Dispatcher
-topic: Arquitetura
-role: Arquiteto
-level: Iniciante
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Preencher formulário usando o modelo de dados de formulário
 description: 'Preencha previamente o formulário adaptável usando o atributo de solicitação do modelo de dados de formulário '
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Desenvolvimento
-role: Profissional
-level: Intermediário
+topic: Development
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Uso da camada de dados do cliente da Adobe com componentes principais do AEM
 description: A Camada de dados do cliente da Adobe apresenta um método padrão para coletar e armazenar dados sobre uma experiência de visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados. A Camada de dados do cliente da Adobe é independente de plataforma, mas é totalmente integrada aos Componentes principais para uso com o AEM.
-feature: componente principal
+feature: core-component
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
-topic: Integrações
-role: Desenvolvedor
-level: Intermediário
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

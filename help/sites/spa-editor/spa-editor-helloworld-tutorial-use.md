@@ -2,15 +2,15 @@
 title: Desenvolvimento com o Editor de SPA do AEM - Tutorial do mundo Hello
 description: O Editor de SPA do AEM fornece suporte para edição no contexto de um Aplicativo de página única ou SPA. Este tutorial é uma introdução ao desenvolvimento de SPA para ser usado com o SDK JS do Editor SPA do AEM. O tutorial estenderá o aplicativo do We.Retail Journal adicionando um componente personalizado Hello World. Os usuários podem concluir o tutorial usando estruturas React ou Angular.
 sub-product: sites, serviços de conteúdo
-feature: Editor Spa
+feature: Spa Editor
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
-role: Desenvolvedor
-level: Iniciante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

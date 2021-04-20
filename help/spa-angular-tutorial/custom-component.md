@@ -2,7 +2,7 @@
 title: Criar um componente personalizado | Introdução ao Editor e Angular de SPA do AEM
 description: Saiba como criar um componente personalizado a ser usado com o Editor de SPA do AEM. Saiba como desenvolver caixas de diálogo do autor e Modelos do Sling para estender o modelo JSON para preencher um componente personalizado.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
-role: Desenvolvedor
-level: Iniciante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

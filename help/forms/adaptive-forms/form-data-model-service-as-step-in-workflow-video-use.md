@@ -4,16 +4,16 @@ seo-title: Uso do Serviço do Modelo de Dados de Formulário como Etapa no Fluxo
 description: A partir do AEM Forms 6.4, agora temos a capacidade de usar o Form Data Model como parte do fluxo de trabalho do AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM.
 seo-description: A partir do AEM Forms 6.4, agora temos a capacidade de usar o Form Data Model como parte do fluxo de trabalho do AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM.
 uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: Fluxo de trabalho
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

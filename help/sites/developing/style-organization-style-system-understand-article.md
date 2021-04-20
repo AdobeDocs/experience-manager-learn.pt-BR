@@ -1,15 +1,15 @@
 ---
 title: Noções básicas sobre as práticas recomendadas do sistema de estilos com o AEM Sites
 description: Um artigo detalhado explicando as práticas recomendadas para a implementação do Sistema de estilos com o Adobe Experience Manager Sites.
-feature: Sistema de estilos
+feature: Style System
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário, Experienciado
+topic: Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

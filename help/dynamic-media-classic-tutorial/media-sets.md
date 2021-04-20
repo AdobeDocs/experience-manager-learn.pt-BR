@@ -2,14 +2,14 @@
 title: Imagem, amostra, rotação e conjuntos de mídia mista
 description: Uma das capacidades mais úteis e eficientes do Dynamic Media Classic é o suporte para a criação de conjuntos de mídia avançada, como Imagem, Amostra, Rotação e Conjuntos de mídia mista. Saiba o que cada conjunto de mídia avançada é e como criar cada tipo no Dynamic Media Classic. Em seguida, saiba mais sobre Predefinições de conjunto de lotes, que automatizam o processo de criação de conjuntos de mídia avançada após o upload.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Conjuntos de imagens, Conjuntos de mídias mistas, Conjuntos de rotação
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

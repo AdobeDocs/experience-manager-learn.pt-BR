@@ -2,11 +2,11 @@
 title: Uso do Recorte inteligente com o AEM Assets Dynamic Media
 description: O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e caras de recortar conteúdo para oferecer design responsivo.
 sub-product: dynamic-media
-feature: Recorte inteligente, perfis de imagem
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

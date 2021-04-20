@@ -2,13 +2,13 @@
 title: Marcação com tags
 description: As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas do Assets. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e organizem ativos no AEM.
 sub-product: ativos
-feature: Gerenciamento de ativos
+feature: Asset Management
 version: cloud-service
 kt: 4871
 thumbnail: 34073.jpg
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

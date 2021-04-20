@@ -1,15 +1,15 @@
 ---
 title: Configurar regras de tradução no AEM
 description: A interface do usuário Configuração de tradução permite que um usuário gerencie regras para a tradução de conteúdo no AEM Sites. Este vídeo detalha a criação de uma nova regra de tradução para um componente personalizado.
-feature: Cópia de idioma
+feature: Language Copy
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
-topic: Localização
-role: Profissional
-level: Iniciante
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

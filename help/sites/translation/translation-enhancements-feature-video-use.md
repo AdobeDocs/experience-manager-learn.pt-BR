@@ -1,15 +1,15 @@
 ---
 title: Aprimoramentos de tradução no AEM
 description: A robusta estrutura de tradução do AEM permite que o conteúdo do AEM seja traduzido perfeitamente por fornecedores de tradução suportados. Saiba mais sobre as melhorias mais recentes.
-feature: gerenciador de vários sites, cópia de idioma
+feature: multi-site-manager, language-copy
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Localização
-role: Profissional
-level: Iniciante
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

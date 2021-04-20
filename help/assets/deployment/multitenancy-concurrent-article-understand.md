@@ -3,9 +3,9 @@ title: Noções básicas sobre multilocação e desenvolvimento simultâneo
 description: Saiba mais sobre os benefícios, desafios e técnicas para gerenciar uma implementação de vários locatários com o Adobe Experience Manager Assets.
 feature: Connected Assets
 version: 6.5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

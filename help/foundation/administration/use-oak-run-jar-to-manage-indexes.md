@@ -2,14 +2,14 @@
 title: Usar o oak-run.jar para gerenciar índices
 description: o comando index do oak-run.jar consolida vários recursos para gerenciar índices do Oak no AEM, desde a coleta de estatísticas de índice, a execução de verificações de consistência de índice e os próprios índices de reindexação.
 version: 6.4, 6.5
-feature: 'Pesquisar  '
+feature: Search
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
-topic: Show
-role: Desenvolvedor
-level: Experienciado
+topic: Performance
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

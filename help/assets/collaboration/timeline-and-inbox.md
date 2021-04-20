@@ -2,13 +2,13 @@
 title: Linha do tempo e caixa de entrada
 description: Familiarize-se com os principais consoles da Web no AEM Assets que são usados para colaboração.
 sub-product: ativos
-feature: Fluxo de trabalho
+feature: Workflow
 version: cloud-service
 kt: 4540
 thumbnail: 32051.jpg
-topic: Colaboração
-role: Profissional
-level: Iniciante
+topic: Collaboration
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

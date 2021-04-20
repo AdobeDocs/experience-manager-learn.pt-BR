@@ -3,10 +3,10 @@ title: Integração do Adobe Experience Manager com o Adobe Target
 seo-title: Um artigo que aborda diferentes maneiras de integrar o Adobe Experience Manager (AEM) ao Adobe Target para fornecer conteúdo personalizado.
 description: Um artigo que aborda como configurar o Adobe Experience Manager com o Adobe Target para diferentes cenários.
 seo-description: Um artigo que aborda como configurar o Adobe Experience Manager com o Adobe Target para diferentes cenários.
-feature: Fragmentos de experiência
-topic: Personalização
-role: Desenvolvedor
-level: Intermediário
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

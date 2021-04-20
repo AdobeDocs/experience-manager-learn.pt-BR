@@ -1,7 +1,7 @@
 ---
 title: Usuários do Adobe IMS e AEM
 description: Os usuários que exigem acesso ao serviço de autor do AEM são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console.
-feature: 'Usuários e grupos '
+feature: Users and Groups
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,9 +9,9 @@ audience: administrator
 doc-type: feature video
 kt: 4997
 thumbnail: 39149.jpg
-topic: Administração, segurança
-role: Administrador
-level: Iniciante
+topic: Administration, Security
+role: Administrator
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

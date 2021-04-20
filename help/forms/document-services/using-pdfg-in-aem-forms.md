@@ -4,16 +4,16 @@ seo-title: Uso do PDFG em AEM Forms
 description: Demonstração do recurso de arrastar e soltar para criar PDF usando o AEM Forms
 seo-description: Demonstração do recurso de arrastar e soltar para criar PDF usando o AEM Forms
 uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: gerador de pdf
+feature: pdf-generator
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Intermediário
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

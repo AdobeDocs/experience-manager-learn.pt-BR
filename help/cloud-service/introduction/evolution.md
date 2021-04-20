@@ -1,10 +1,10 @@
 ---
 title: Evolução do AEM as a Cloud Service
 description: 'Explore o histórico do AEM e as diferenças entre o AEM local, o Adobe Managed Services AEM e o AEM as a Cloud Service. '
-role: Arquiteto, desenvolvedor
-level: Iniciante
+role: Architect, Developer
+level: Beginner
 type: Tutorial
-topic: Arquitetura
+topic: Architecture
 kt: 6920
 thumbnail: 330543.jpg
 translation-type: tm+mt

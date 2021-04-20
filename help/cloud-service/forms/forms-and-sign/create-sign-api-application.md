@@ -2,12 +2,12 @@
 title: Criar aplicativo Adobe Sign
 description: O aplicativo Adobe Sign é a primeira etapa na criação da integração entre o AEM Forms e o Adobe Sign.
 solution: Experience Manager Forms
-type: Documentação
-role: Desenvolvedor
-level: Iniciante, Intermediário
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 kt: 7427
 thumbnail: 332436.jpg
 translation-type: tm+mt

@@ -3,10 +3,10 @@ title: Capítulo 2 - Definição dos modelos de fragmento do conteúdo do evento
 seo-title: Introdução aos serviços de conteúdo do AEM - Capítulo 2 - Definição dos modelos de fragmento do conteúdo do evento
 description: O Capítulo 2 do tutorial AEM Headless abrange a ativação e definição dos Modelos de fragmento de conteúdo usados para definir uma estrutura de dados normalizada e uma interface de criação para criar Eventos.
 seo-description: O Capítulo 2 do tutorial AEM Headless abrange a ativação e definição dos Modelos de fragmento de conteúdo usados para definir uma estrutura de dados normalizada e uma interface de criação para criar Eventos.
-feature: Fragmentos de conteúdo, APIs
-topic: Sem periféricos, gerenciamento de conteúdo
-role: Desenvolvedor
-level: Iniciante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

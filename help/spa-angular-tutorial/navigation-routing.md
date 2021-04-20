@@ -2,7 +2,7 @@
 title: Adicionar navegação e roteamento | Introdução ao Editor e Angular de SPA do AEM
 description: Saiba como várias exibições no SPA são suportadas com as Páginas do AEM e o SDK do Editor do SPA. A navegação dinâmica é implementada usando rotas Angulares e adicionada a um componente Cabeçalho existente.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
-role: Desenvolvedor
-level: Iniciante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

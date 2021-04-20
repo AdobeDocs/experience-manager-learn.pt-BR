@@ -4,16 +4,16 @@ seo-title: Preenchimento prévio do formulário adaptável usando o perfil ACS
 description: Preenchimento prévio de formulários adaptáveis usando o perfil ACS
 seo-description: Preenchimento prévio de formulários adaptáveis usando o perfil ACS
 uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: Formulários adaptáveis, Modelo de dados de formulário
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Experienciado
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

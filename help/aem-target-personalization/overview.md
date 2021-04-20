@@ -3,10 +3,10 @@ title: Introdução ao AEM e ao Adobe Target
 seo-title: Introdução ao AEM e ao Adobe Target
 description: Um tutorial completo mostrando como criar e entregar experiências personalizadas usando o Adobe Experience Manager e o Adobe Target. Neste tutorial, você também aprenderá sobre diferentes personas envolvidas no processo de ponta a ponta e como elas colaboram entre si
 seo-description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando o Adobe Experience Manager e o Adobe Target. Neste tutorial, você também aprenderá sobre diferentes personas envolvidas no processo de ponta a ponta e como elas colaboram entre si
-feature: Fragmentos de experiência
-topic: Personalização
-role: Desenvolvedor
-level: Intermediário
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

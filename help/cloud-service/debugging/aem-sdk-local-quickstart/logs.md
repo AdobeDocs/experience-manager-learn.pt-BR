@@ -1,16 +1,16 @@
 ---
 title: Depuração do SDK do AEM usando logs
 description: Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante, Intermediário
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

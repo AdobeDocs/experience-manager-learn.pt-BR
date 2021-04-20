@@ -1,11 +1,11 @@
 ---
 title: Configurar o Asset Insights com o AEM Assets e o Adobe Launch
 description: Nesta série de vídeos de 5 partes, percorremos a configuração do Asset Insights para o Experience Manager implantado por meio do Launch da Adobe.
-feature: 'Informações de ativos '
+feature: Asset Insights
 version: 6.3, 6.4, 6.5
-topic: Integrações
-role: Desenvolvedor
-level: Intermediário
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

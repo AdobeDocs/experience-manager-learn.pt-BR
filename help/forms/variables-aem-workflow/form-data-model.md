@@ -1,7 +1,7 @@
 ---
 title: Variáveis do tipo de modelo de dados de formulário
 description: Uso de variáveis do tipo de modelo de dados de formulário em um fluxo de trabalho do AEM.
-feature: Fluxo de trabalho
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: Desenvolvimento
-role: Desenvolvedor
-level: Iniciante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

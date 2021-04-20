@@ -2,13 +2,13 @@
 title: Download
 description: Saiba como baixar ativos e suas execuções no computador local para uso e compartilhamento.
 sub-product: ativos
-feature: Gerenciamento de ativos
+feature: Asset Management
 version: cloud-service
 kt: 4300
 thumbnail: 32194.jpg
-topic: Gerenciamento de conteúdo
-role: Profissional
-level: Iniciante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
