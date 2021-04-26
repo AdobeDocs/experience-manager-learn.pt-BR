@@ -14,9 +14,9 @@ topic: Gerenciamento de conteúdo, desenvolvimento
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,9 @@ Os testes de unidade normalmente mapeiam de 1 a 1 com classes Java. Neste capít
    O sufixo `Test` no arquivo de teste da unidade, `BylineImplTest.java` é uma convenção que nos permite
 
    1. Identifique-o facilmente como o arquivo de teste _para_ `BylineImpl.java`
-   2. Além disso, diferencie o arquivo de teste _de_ da classe que está sendo testada, `BylineImpl.java`
+   1. Mas também, diferencie o arquivo de teste _de_ a classe que está sendo testada, `BylineImpl.java`
+
+
 
 ## Revisando BylineImplTest.java {#reviewing-bylineimpltest-java}
 
