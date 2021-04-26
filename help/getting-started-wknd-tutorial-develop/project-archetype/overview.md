@@ -2,19 +2,16 @@
 title: Introdução ao AEM Sites - Arquétipo de projeto
 description: Introdução ao AEM Sites - Arquétipo de projeto. O tutorial WKND é um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager. O tutorial aborda a implementação de um site de AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial aborda tópicos fundamentais como configuração de projeto, arquétipos de maven, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes.
 sub-product: sites
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-index: y
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componentes principais, Editor de páginas, Modelos editáveis, Arquétipo de projeto AEM
 topic: Gerenciamento de conteúdo, desenvolvimento
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 20%
