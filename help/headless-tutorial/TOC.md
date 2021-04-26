@@ -11,10 +11,10 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 28%
+source-wordcount: '135'
+ht-degree: 25%
 
 ---
 
@@ -37,6 +37,15 @@ ht-degree: 28%
       + [5 - Consulta de um aplicativo externo](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Modelagem de dados avançada com referências de fragmento](./graphql/multi-step/fragment-references.md)
       + [7 - Implantação de produção](./graphql/multi-step/production-deployment.md)
++ Editor de SPA{#spa-editor}
+   + SPA Remoto{#remote-spa}
+      + [Visão geral](./spa-editor/remote-spa/overview.md)
+      + [1 - Configuração rápida](./spa-editor/remote-spa/quick-setup.md)
+      + [2 - Configurar AEM](./spa-editor/remote-spa/aem-configure.md)
+      + [3 - Bootstrap do SPA](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [4 - Componentes fixos](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [5 - Componentes do contêiner](./spa-editor/remote-spa/spa-container-component.md)
+      + [6 - Rotas dinâmicas](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + Autenticação baseada em token {#authentication}
    + [Visão geral](./authentication/overview.md)
    + [1 - Token de acesso de desenvolvimento local](./authentication/local-development-access-token.md)
