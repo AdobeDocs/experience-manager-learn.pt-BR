@@ -10,10 +10,10 @@ user-guide-description: Um tutorial em várias partes para desenvolvedores novos
 breadcrumb-title: Tutoriais do WKND AEM Sites
 index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 64%
+source-wordcount: '76'
+ht-degree: 60%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 64%
    + [5 - Sistema de estilos](./project-archetype/style-system.md)
    + [6 - Componente personalizado](./project-archetype/custom-component.md)
    + [7 - Teste de unidade](./project-archetype/unit-testing.md)
++ Modelo de site {#site-template}
+   + [1. Criar um site](./site-template/create-site.md)
+   + [2. Aumentar o conteúdo e publicar alterações](./site-template/author-content-publish.md)
+   + [3. Modelos de páginas](./site-template/page-templates.md)
+   + [4. Theming](./site-template/theming.md)
