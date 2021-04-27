@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '729'
 ht-degree: 5%
 
 ---
@@ -75,8 +75,8 @@ Este tutorial tem uma dependência no projeto __WKND 0.3.0+__ (para conteúdo).
 
 Para executar uma configuração rápida, são fornecidos pacotes de AEM que contêm a configuração final de AEM do tutorial e o conteúdo.
 
-1. Baixar `wknd-app.all.x.x.x.zip` do pod de ativos do DemoHub
-1. Baixar `wknd-app.ui.content.sample.x.x.x.zip` do pod de ativos do DemoHub
+1. [Download `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Baixar  `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. Faça logon AEM Gerenciador de pacotes do SDK em [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) com as credenciais `admin`.
 1. ____ Faça o upload do  `wknd-app.all.x.x.x.zip` download na etapa 1
 1. Toque no botão __Instalar__ para a entrada `wknd-app.all.x.x.x.zip`
