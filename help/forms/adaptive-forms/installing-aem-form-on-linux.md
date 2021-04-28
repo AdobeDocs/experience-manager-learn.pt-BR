@@ -1,6 +1,6 @@
 ---
-title: Instalação do AEM Forms no Linux.
-description: Instalação de bibliotecas de 32 bits para que o AEM Forms funcione na instalação do Linux.
+title: Instalação do AEM Forms no Linux
+description: Saiba como instalar bibliotecas de 32 bits para o AEM Forms para funcionar na instalação do Linux.
 feature: Formulários adaptáveis
 audience: developer
 doc-type: article
@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 kt: 7593
 translation-type: tm+mt
-source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
+source-git-commit: 9583006352ca6a20a763c9d5ec7ba15c3791e897
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
