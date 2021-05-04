@@ -1,7 +1,7 @@
 ---
 title: Desenvolver um trabalhador do Asset compute
 description: Os trabalhadores do Asset compute são o núcleo de um projeto do Asset compute que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova representação.
-feature: Asset Compute Microservices
+feature: Microsserviços Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrations, Development
+topic: Integrações, desenvolvimento
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -340,6 +340,7 @@ Agora que o código do trabalhador foi concluído e foi registrado e configurado
        ]
    }
    ```
+
 1. Toque em __Executar__ e aguarde a representação ser gerada
 1. A seção __Representações__ visualiza a representação gerada. Toque na visualização da representação para baixar a representação completa
 
