@@ -1,7 +1,7 @@
 ---
-title: Testar um trabalhador do Asset Compute
-description: O projeto do Asset Compute define um padrão para criar e executar facilmente testes de trabalhadores do Asset Compute.
-feature: Asset Compute Microservices
+title: Testar um trabalhador do Asset compute
+description: O projeto do Asset compute define um padrão para criar e executar facilmente testes de trabalhadores do Asset compute.
+feature: Microsserviços Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,27 +9,27 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrations, Development
+topic: Integrações, desenvolvimento
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 
-# Testar um trabalhador do Asset Compute
+# Testar um trabalhador do Asset compute
 
-O projeto do Asset Compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset Compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+O projeto do Asset compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomia de um teste de trabalhador
 
-Os testes dos trabalhadores do Asset Compute são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste que afirmam uma condição para testar.
+Os testes dos trabalhadores do Asset compute são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste que afirmam uma condição para testar.
 
-A estrutura de testes em um projeto do Asset Compute é a seguinte:
+A estrutura dos ensaios de um projeto Asset compute é a seguinte:
 
 ```
 /actions/<worker-name>/index.js
@@ -80,7 +80,9 @@ Esse caso de teste afirma a entrada parametrizada (`params.json`) para o arquivo
        "brightness": "-0.50"
    }
    ```
-   Esses são os mesmos valores/chaves transmitidos na definição de perfil do Asset Compute da [Ferramenta de desenvolvimento](../develop/development-tool.md), menos a chave `worker`.
+
+   Esses são os mesmos valores/chaves passados para a definição de perfil de Asset compute da [Ferramenta de desenvolvimento](../develop/development-tool.md), menos a chave `worker`.
+
 1. Adicione o [arquivo de representação esperado](./assets/test/success-parameterized/rendition.png) a esse caso de teste e o nomeie como `rendition.png`. Este arquivo representa a saída esperada do trabalhador para a entrada `file.jpg` fornecida.
 1. Na linha de comando, execute os testes na raiz do projeto executando `aio app test`
    + Certifique-se de que o [Docker Desktop](../set-up/development-environment.md#docker) e as imagens Docker de suporte estão instaladas e iniciadas
