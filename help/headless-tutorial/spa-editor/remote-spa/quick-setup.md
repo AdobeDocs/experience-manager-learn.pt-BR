@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 5%
 
 ---
@@ -32,8 +32,11 @@ Este tutorial requer o seguinte:
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ Pré-requisitos somente do macOS
+   + [](https://developer.apple.com/xcode/) Ferramentas de linha de comando do Xcode  [Xcode](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip ou superior](https://github.com/adobe/aem-guides-wknd/releases)
 + [aem-guides-wknd-graphql source code](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 Este tutorial presume:
 
@@ -90,7 +93,8 @@ Baixe o código-fonte do aplicativo WKND em Github.com e alterne a ramificação
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ Antes de criar o conteúdo, organize as janelas do navegador de modo que o AEM A
 1. Toque no cartão __Bali Surf Camp__ e navegue até a rota dinâmica
 1. Adicionar, alterar ou remover componentes do componente de contêiner que estão acima do cabeçalho __Itinerário__
 1. Atualize o SPA em execução em `http://localhost:3000` e veja se as alterações refletiram
+
+Novas páginas de AEM na __Página inicial do aplicativo WKND > Aventura__ _devem_ ter um nome de página AEM que corresponda ao nome do Fragmento de conteúdo da aventura correspondente. Isso ocorre porque a rota SPA para AEM mapeamento de página é baseada no último segmento da rota, que é o nome do Fragmento de conteúdo.
 
 ## Parabéns!
 
