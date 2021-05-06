@@ -1,5 +1,5 @@
 ---
-title: Uso do Adobe Cloud Manager - pipeline de não produção CI/CD
+title: Uso do Adobe Cloud Manager - pipeline de não produção de CI/CD
 description: CI/CD Os pipelines de não produção são divididos em duas categorias, pipelines de qualidade de código e pipelines de implantação. O código de pipelines de qualidade todos os códigos de uma ramificação Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente AEM provisionado que não seja Estágio ou Produção.
 sub-product: cloud manager
 topics: Administration
@@ -9,19 +9,25 @@ activity: use
 version: cloud-service
 kt: 6873
 thumbnail: 26316.jpg
-topic: Architecture
+topic: Arquitetura
 role: Architect, Developer, Administrator
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 
 # Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_nonprodpipeline"
+>title="Pipeline de não produção de CI/CD"
+>abstract="CI/CD Os pipelines de não produção são divididos em duas categorias, pipelines de qualidade de código e pipelines de implantação. O código de pipelines de qualidade todos os códigos de uma ramificação Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente AEM provisionado que não seja Estágio ou Produção."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines" text="Pipelines somente para não-produção e qualidade de código"
 
 [CI/CD Os ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines) pipelines de não produção são divididos em duas categorias, pipelines de qualidade do código e pipelines de implantação. O código de pipelines de qualidade todos os códigos de uma ramificação Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente AEM provisionado que não seja Estágio ou Produção.
 
