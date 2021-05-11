@@ -3,19 +3,19 @@ title: Etapa de processo personalizada
 seo-title: Etapa de processo personalizada
 description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
 seo-description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
-feature: Workflow
+feature: Fluxo de trabalho
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 # Etapa de processo personalizada
 
-Este tutorial é destinado aos clientes do AEM Forms que precisam implementar a etapa de processo personalizada. Uma etapa do processo pode executar o script ECMA ou chamar o código java personalizado para executar operações. Este tutorial explicará as etapas necessárias para implementar o WorkflowProcess que é executado pela etapa do processo.
+Este tutorial é destinado aos clientes da AEM Forms que precisam implementar a etapa de processo personalizada. Uma etapa do processo pode executar o script ECMA ou chamar o código java personalizado para executar operações. Este tutorial explicará as etapas necessárias para implementar o WorkflowProcess que é executado pela etapa do processo.
 
-O principal motivo para implementar a etapa do processo personalizado é estender o fluxo de trabalho do AEM. Por exemplo, se você estiver usando componentes do AEM Forms no seu modelo de fluxo de trabalho, talvez queira executar as seguintes operações
+O principal motivo para implementar a etapa de processo personalizado é estender o fluxo de trabalho do AEM. Por exemplo, se você estiver usando componentes do AEM Forms no modelo de fluxo de trabalho, talvez queira executar as seguintes operações
 
 * Salve os anexos do formulário adaptável no sistema de arquivos
 * Manipular os dados enviados
@@ -34,7 +34,7 @@ Para realizar o caso de uso acima, você normalmente gravará um serviço OSGi q
 
 ## Criar projeto Maven
 
-A primeira etapa é criar um projeto maven usando o Arquétipo do Adobe Maven apropriado. As etapas detalhadas são listadas neste [artigo](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
+O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas são listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
 
 
 ### Criar classe que implemente o WorkflowProcess
@@ -55,64 +55,90 @@ Para realizar esse caso de uso, a seguinte classe java foi gravada
 
 Vamos dar uma olhada neste código
 
-```
-@Component(property = { Constants.SERVICE_DESCRIPTION + "=Write Adaptive Form Attachments to File System",
-        Constants.SERVICE_VENDOR + "=Adobe Systems",
-        "process.label" + "=Save Adaptive Form Attachments to File System" })
+```java
+package com.learningaemforms.adobe.core;
+
+import java.io.File;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.jcr.Node;
+import javax.jcr.Session;
+
+import org.osgi.framework.Constants;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aemfd.docmanager.Document;
+import com.adobe.granite.workflow.WorkflowException;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.exec.WorkflowProcess;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+import com.day.cq.search.PredicateGroup;
+import com.day.cq.search.Query;
+import com.day.cq.search.QueryBuilder;
+import com.day.cq.search.result.Hit;
+import com.day.cq.search.result.SearchResult;
+
+@Component(property = {
+	Constants.SERVICE_DESCRIPTION + "=Write Adaptive Form Attachments to File System",
+	Constants.SERVICE_VENDOR + "=Adobe Systems",
+	"process.label" + "=Save Adaptive Form Attachments to File System"
+})
 public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
-     private static final Logger log = LoggerFactory.getLogger(WriteFormAttachmentsToFileSystem.class);
-     @Override
-    public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)
-            throws WorkflowException {
-        // TODO Auto-generated method stub
-        log.debug("The string I got was ..." + processArguments.get("PROCESS_ARGS", "string").toString());
-        String[] params = processArguments.get("PROCESS_ARGS", "string").toString().split(",");
-        String attachmentsPath = params[0];
-        String saveToLocation = params[1];
-        log.debug("The seperator is" + File.separator);
-        String payloadPath = workItem.getWorkflowData().getPayload().toString();
- 
-        String attachmentsFilePath = payloadPath + "/" + attachmentsPath + "/attachments";
-        log.debug("The data file path is " + attachmentsFilePath);
- 
-        ResourceResolver resourceResolver = workflowSession.adaptTo(ResourceResolver.class);
- 
-        Resource attachmentsNode = resourceResolver.getResource(attachmentsFilePath);
-        Iterator<Resource> attachments = attachmentsNode.listChildren();
-        while (attachments.hasNext()) {
-            Resource attachment = attachments.next();
-            String attachmentPath = attachment.getPath();
-            String attachmentName = attachment.getName();
- 
-            log.debug("The attachmentPath is " + attachmentPath + " and the attachmentname is " + attachmentName);
-            com.adobe.aemfd.docmanager.Document attachmentDoc = new com.adobe.aemfd.docmanager.Document(attachmentPath,
-                    attachment.getResourceResolver());
-            try {
-                File file = new File(saveToLocation + File.separator + workItem.getId());
-                if (!file.exists()) {
-                    file.mkdirs();
-                }
- 
-                attachmentDoc.copyToFile(new File(file + File.separator + attachmentName));
- 
-                log.debug("Saved attachment" + attachmentName);
-                attachmentDoc.close();
- 
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
- 
-        }
- 
-    }
+
+	private static final Logger log = LoggerFactory.getLogger(WriteFormAttachmentsToFileSystem.class);
+	@Reference
+	QueryBuilder queryBuilder;
+
+	@Override
+	public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)
+	throws WorkflowException {
+		// TODO Auto-generated method stub
+		log.debug("The string I got was ..." + processArguments.get("PROCESS_ARGS", "string").toString());
+		String[] params = processArguments.get("PROCESS_ARGS", "string").toString().split(",");
+		String attachmentsPath = params[0];
+		String saveToLocation = params[1];
+		log.debug("The seperator is" + File.separator);
+		String payloadPath = workItem.getWorkflowData().getPayload().toString();
+		Map<String, String> map = new HashMap<String, String> ();
+		map.put("path", payloadPath + "/" + attachmentsPath);
+		File saveLocationFolder = new File(saveToLocation);
+		if (!saveLocationFolder.exists()) {
+			saveLocationFolder.mkdirs();
+		}
+
+		map.put("type", "nt:file");
+		Query query = queryBuilder.createQuery(PredicateGroup.create(map), workflowSession.adaptTo(Session.class));
+		query.setStart(0);
+		query.setHitsPerPage(20);
+
+		SearchResult result = query.getResult();
+		log.debug("Got  " + result.getHits().size() + " attachments ");
+		Node attachmentNode = null;
+		for (Hit hit: result.getHits()) {
+			try {
+				String path = hit.getPath();
+				log.debug("The attachment title is  " + hit.getTitle() + " and the attachment path is  " + path);
+				attachmentNode = workflowSession.adaptTo(Session.class).getNode(path + "/jcr:content");
+				InputStream documentStream = attachmentNode.getProperty("jcr:data").getBinary().getStream();
+				Document attachmentDoc = new Document(documentStream);
+				attachmentDoc.copyToFile(new File(saveLocationFolder + File.separator + hit.getTitle()));
+				attachmentDoc.close();
+			} catch (Exception e) {
+				log.debug("Error saving file " + e.getMessage());
+			}
 ```
 
 Linha 1 - define as propriedades do seu componente. A propriedade process.label é o que você verá ao associar o componente OSGi à etapa do processo, conforme mostrado em uma das capturas de tela abaixo.
 
 Linhas 13-15 - Os argumentos do processo transmitidos para este componente OSGi são divididos usando o separador &quot;,&quot;. Os valores para attachmentPath e saveToLocation são então extraídos da matriz de sequências de caracteres.
 
-* attachmentPath - Esse é o mesmo local especificado no formulário adaptável quando você configura a ação de envio do formulário adaptável para chamar o fluxo de trabalho do AEM. Este é um nome da pasta que você deseja que os anexos sejam salvos no AEM em relação à carga do fluxo de trabalho.
+* attachmentPath - Esse é o mesmo local especificado no formulário adaptável quando você configura a ação de envio do formulário adaptável para chamar AEM fluxo de trabalho. Este é um nome da pasta na qual você deseja que os anexos sejam salvos em AEM em relação à carga do fluxo de trabalho.
 
 * saveToLocation - esse é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
 
@@ -120,26 +146,16 @@ Esses dois valores são passados como argumentos de processo, conforme mostrado 
 
 ![ProcessStep](assets/implement-process-step.gif)
 
+O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta attachmentPath. O restante do código é repetido por meio dos resultados da pesquisa para criar um objeto de Documento e salvá-lo no sistema de arquivos
 
-Linha 19: em seguida, construímos o attachmentFilePath. O caminho do arquivo anexo é como
-
-    /var/fd/dashboard/payload/server0/2018-11-19/3EF6ENASOQTHCPLNDYVNAM7OKA_7/Attachments/attachments
-
-* Os &quot;Anexos&quot; são o nome da pasta relativo à carga útil do fluxo de trabalho que foi especificada quando você configurou a opção de envio do Formulário Adaptativo.
-
-   ![submitoptions](assets/af-submit-options.gif)
-
-Linhas 24-26 - Obtenha ResourceResolver e, em seguida, o recurso apontando para attachmentFilePath.
-
-O restante do código cria objetos Document ao iterar pelo objeto filho do recurso apontando para attachmentFilePath usando a API. Esse objeto de documento é específico para o AEM Forms. Em seguida, usamos o método copyToFile do objeto do documento para salvar o objeto do documento.
 
 >[!NOTE]
 >
->Como estamos usando o objeto de Documento específico do AEM Forms, é necessário incluir a dependência aemfd-client-sdk em seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
+>Como estamos usando um objeto de Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk em seu projeto maven. A ID do grupo é com.adobe.aemfd e a ID do artefato é aemfd-client-sdk.
 
 #### Criar e implantar
 
-[Crie o pacote conforme descrito ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[Crie o pacote conforme descrito ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
 [aqui. Verifique se ele foi implantado e está no estado ativo](http://localhost:4502/system/console/bundles)
 
 Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos do formulário adaptável no sistema de arquivos&quot;.
