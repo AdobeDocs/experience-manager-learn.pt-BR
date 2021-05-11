@@ -13,7 +13,7 @@ topic: Integrações, desenvolvimento
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -59,6 +59,7 @@ _Click-through da depuração de um trabalhador do Asset compute usando wskdebug
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 
 1. Inicie uma nova instância da Ferramenta de Desenvolvimento de Assets compute usando o comando `npx adobe-asset-compute devtool`
 1. No Código VS, toque no ícone Depurar na navegação à esquerda
