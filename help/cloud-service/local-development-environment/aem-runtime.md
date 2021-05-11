@@ -13,7 +13,7 @@ topic: Desenvolvimento
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 2%
@@ -229,7 +229,7 @@ Para iniciar o serviço AEM Author, `cd` no diretório que contém o Quickstart 
 
 ou, para iniciar o serviço AEM Publish, `cd` no diretório que contém o Quickstart Jar e execute o comando:
 
-`$ java -jar aem-author-p4503.jar`
+`$ java -jar aem-publish-p4503.jar`
 
 ## Iniciar o Jar Quickstart a partir da linha de comando aborta imediatamente{#troubleshooting-java-8}
 
