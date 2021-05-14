@@ -9,10 +9,9 @@ role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -22,5 +21,10 @@ ht-degree: 0%
 
 Saiba como definir e usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) para uso com GraphQL.
 
->[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
+Neste vídeo, você:
 
++ Saiba como criar e definir um Modelo de fragmento de conteúdo
++ Saiba mais sobre os vários tipos de dados e validações usadas para criar o Modelo de fragmento de conteúdo
++ Saiba como o Modelo de fragmento de conteúdo direciona a API GraphQL
+
+>[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
