@@ -4,11 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-translation-type: tm+mt
-source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 22%
+source-wordcount: '440'
+ht-degree: 21%
 
 ---
 
@@ -96,6 +95,14 @@ ht-degree: 22%
       + [Configurar painel de ativos](./forms/create-first-af/configure-assets-panel.md)
       + [Configurar o painel de início](./forms/create-first-af/configure-start-panel.md)
       + [Adicionar e configurar a barra de ferramentas](./forms/create-first-af/add-configure-toolbar.md)
+   + Document Cloud API e AEM Forms CS{#doc-cloud-sdk}
+      + [Introdução](./forms/doc-cloud-sdk/introduction.md)
+      + [Criar projeto de Adobe IO](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [Criar configuração OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Definir interface](./forms/doc-cloud-sdk/create-interface.md)
+      + [Implementar interface](./forms/doc-cloud-sdk/implement-interface.md)
+      + [Criar parte JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [Etapa de processo personalizada](./forms/doc-cloud-sdk/custom-process-step.md)
    + Criar Fluxo de Trabalho de Revisão{#create-aem-workflow}
       + [Criar modelo de fluxo de trabalho](./forms/create-aem-workflow/create-workflow.md)
       + [Acionar fluxo de trabalho](./forms/create-aem-workflow/configure-af.md)
@@ -133,7 +140,7 @@ ht-degree: 22%
       + [Integrar com AEM](./asset-compute/deploy/processing-profiles.md)
    + Avançado {#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
-   + [Resolução de Problemas](./asset-compute/troubleshooting.md)
+   + [Resolução de problemas](./asset-compute/troubleshooting.md)
 + Tutorials de várias etapas{#multi-step-tutorials}
    + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
