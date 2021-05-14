@@ -9,10 +9,9 @@ role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -21,5 +20,12 @@ ht-degree: 0%
 # Criação de consultas GraphQL
 
 Saiba como criar consultas GraphQL para retornar conteúdo do Adobe Experience Manager (AEM) e como usar a ferramenta GraphiQL para testar, refinar e depurar consultas rapidamente.
+
+Neste vídeo, você:
+
++ Entender o poder por trás do idioma GraphQL
++ Saiba como consultar uma lista de Fragmentos de conteúdo e um único Fragmento de conteúdo
++ Saiba como filtrar e solicitar atributos de dados específicos
++ Saiba como instalar e usar a ferramenta GraphiQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
