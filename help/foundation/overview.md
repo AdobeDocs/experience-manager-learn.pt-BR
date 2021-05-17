@@ -5,11 +5,10 @@ description: 'Uma coleção de vídeos e tutoriais com os fundamentos do Adobe E
 seo-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -20,11 +19,12 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 
 ## Novidades
 
-* **[Usar o gerenciamento de fluxo de trabalho no AEM (Vídeo)](./workflow/use-workflow-management.md)**
-   *O AEM fornece visibilidade sobre fluxos de trabalho em execução e facilita o gerenciamento de  [!DNL Workflow] definições.*
+* **[Usar AEM de fluxo de trabalho (vídeo)](./workflow/use-workflow.md)**
+
+   *AEM fluxo de trabalho fornece uma maneira de colaborar, gerenciar e processar conteúdo em AEM.*
 
 * **[Entender o Cloud Manager para AEM (Vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *O Cloud Manager para AEM permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.*
+   *O Cloud Manager for AEM permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.*
 
 * **[Configurar chaves públicas e privadas para uso com o Adobe I/O (Tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
    *Saiba como as chaves e as lojas de chaves são geradas usando  [!DNL openssl] o AEM e o Adobe I/O.*
@@ -46,7 +46,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
     </a>
     </div>
     <p>
-    <em>O Cloud Manager para AEM fornece uma solução simples, mas robusta, que permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.</em>
+    <em>O Cloud Manager para AEM oferece uma solução simples, mas robusta, que permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.</em>
     <p>
   </td>
    <td>
@@ -59,7 +59,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
     </a>
     </div>
     <p>
-    <em>Explore como configurar o Sling Dynamic Include (SDI) e permitir que os componentes dinâmicos do AEM sempre vejam conteúdo novo.</em>
+    <em>Explore como configurar o Sling Dynamic Include (SDI) e permitir que componentes dinâmicos de AEM sempre forneçam conteúdo novo.</em>
     <p>
   </td>
   <td>
@@ -68,7 +68,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>Entenda os motivos para atualizar o AEM</strong>
+    <strong>Entender os motivos para atualizar o AEM</strong>
     </a>
     </div>
     <p>
@@ -80,7 +80,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 
 ## Recursos adicionais
 
-* [Experience League - Explore o AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vídeos e Tutoriais do AEM Sites](/help/sites/overview.md)
 * [Vídeos e Tutoriais do AEM Assets](/help/assets/overview.md)
