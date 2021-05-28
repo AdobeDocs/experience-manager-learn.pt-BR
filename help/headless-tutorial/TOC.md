@@ -10,10 +10,10 @@ topics: content-delivery
 activity: develop, understand
 kt: 2963
 index: y
-source-git-commit: 2b2c45e5ceb6f1121ff5b9befa0c79226e4e2efb
+source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 23%
+source-wordcount: '164'
+ht-degree: 21%
 
 ---
 
@@ -41,6 +41,14 @@ ht-degree: 23%
       + [6 - Modelagem de dados avançada com referências de fragmento](./graphql/multi-step/fragment-references.md)
       + [7 - Implantação de produção](./graphql/multi-step/production-deployment.md)
 + Editor de SPA{#spa-editor}
+   + React{#react}
+      + [Visão geral](./spa-editor/react/overview.md)
+      + [1 - Criar projeto](./spa-editor/react/create-project.md)
+      + [2 - Integrar a SPA](./spa-editor/react/integrate-spa.md)
+      + [3 - Mapear componentes SPA](./spa-editor/react/map-components.md)
+      + [4 - Navegação e encaminhamento](./spa-editor/react/navigation-routing.md)
+      + [5 - Componente personalizado](./spa-editor/react/custom-component.md)
+      + [6 - Estender componente](./spa-editor/react/extend-component.md)
    + SPA Remoto{#remote-spa}
       + [Visão geral](./spa-editor/remote-spa/overview.md)
       + [Configuração rápida](./spa-editor/remote-spa/quick-setup.md)
