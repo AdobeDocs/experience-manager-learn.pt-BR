@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 6%
 + Compactação de anexos de formulário{#zipping-form-attachments}
    + [Introdução](zipping-form-attachments/introduction.md)
    + [Processo personalizado](zipping-form-attachments/custom-process-step.md)
-
+   + [Testar a solução](zipping-form-attachments/test.md)
 + Armazenando e Recuperando Formulário Adaptável{#store-and-retrieve-af-with-2fa}
    + [Introdução](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configurar fonte de dados](store-and-retrieve-af-with-2fa/configure-data-source.md)
