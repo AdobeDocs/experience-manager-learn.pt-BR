@@ -6,9 +6,9 @@ feature: Formulários adaptáveis
 topic: Desenvolvimento
 role: Developer
 level: Beginner
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,12 @@ Expanda o `src/main/java` na pasta `learningaemforms.core`. Esta é a pasta na q
 ## Crie seu projeto
 
 
-Depois de escrever seu serviço OSGi, ou servlet, você precisará criar seu projeto para gerar o pacote OSGi que pode ser implantado usando o console da Web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir o SDK do cliente apropriado em seu projeto Maven. Você terá que incluir o SDK do cliente do FD AEM na seção de dependências de `pom.xml` do projeto principal, conforme mostrado abaixo.
+
+
+Depois de escrever seu serviço OSGi, ou servlet, você precisará criar seu projeto para gerar o pacote OSGi que pode ser implantado usando o console da Web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk-) para incluir o SDK do cliente apropriado em seu projeto Maven. Você terá que incluir o SDK do cliente do FD AEM na seção de dependências de `pom.xml` do projeto principal, conforme mostrado abaixo.
+
+
+
 
 
 ```xml
@@ -131,5 +136,6 @@ Para criar seu projeto, siga as seguintes etapas:
 
 * Abrir **janela de prompt de comando**
 * Vá até `c:\aemformsbundles\learningaemforms\core`
-* Execute o comando `mvn clean install`
-Se tudo correr bem, você deverá ver o pacote no seguinte local `C:\AEMFormsBundles\learningaemforms\core\target`. Esse pacote agora está pronto para ser implantado em AEM usando o console da Web Felix.
+* Execute o comando `mvn clean install -PautoInstallBundle`
+O comando acima cria e instala o pacote no servidor AEM em execução em `http://localhost:4502`. O pacote também estará disponível no sistema de arquivos em
+   `C:\AEMFormsBundles\learningaemforms\core\target` e podem ser implantados usando o console da Web do  [Felix](http://localhost:4502/system/console/bundles)
