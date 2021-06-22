@@ -10,8 +10,7 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 2%
@@ -131,7 +130,8 @@ As bibliotecas do lado do cliente têm algumas limitações quando se trata de s
 
    `main.scss` é o ponto de entrada para todos os arquivos Sass no  `ui.frontend` módulo . Ele incluirá o arquivo `_variables.scss`, que contém uma série de variáveis de marca a serem usadas em diferentes arquivos Sass no projeto. O arquivo `_base.scss` também é incluído e define alguns estilos básicos para elementos HTML. Uma expressão regular inclui todos os estilos de componentes individuais em `src/main/webpack/components`. Outra expressão regular inclui todos os arquivos em `src/main/webpack/site/styles`.
 
-1. Inspect o arquivo `main.ts`. `main.ts` inclui  `main.scss` e inclui uma expressão regular para coletar qualquer  `.js` ou  `.ts` arquivo no projeto. Esse ponto de entrada será usado pelos [arquivos de configuração do webpack](https://webpack.js.org/configuration/) como ponto de entrada para todo o módulo `ui.frontend`.
+1. 
+   1. Inspect o arquivo `main.ts`. Ele inclui `main.scss` e uma expressão regular para coletar quaisquer arquivos `.js` ou `.ts` no projeto. Esse ponto de entrada será usado pelos [arquivos de configuração do webpack](https://webpack.js.org/configuration/) como ponto de entrada para todo o módulo `ui.frontend`.
 
 1. Inspect os arquivos abaixo de `src/main/webpack/site/styles`:
 
@@ -202,7 +202,7 @@ O Arquétipo de projeto AEM configura essa integração automaticamente. Em segu
    >
    >Também há um perfil `npm run prod` que minificará o JS e o CSS. Esta é a compilação padrão sempre que a build do webpack é acionada via Maven. Mais detalhes sobre o módulo [ui.frontend podem ser encontrados aqui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-1. Inspect o arquivo `site.css` abaixo de `ui.frontend/dist/clientlib-site/css/site.css`. Este é o CSS compilado com base nos arquivos de origem do Sass.
+1. Inspect o arquivo `site.css` abaixo de `ui.frontend/dist/clientlib-site/site.css`. Este é o CSS compilado com base nos arquivos de origem do Sass.
 
    ![Css do site distribuído](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
