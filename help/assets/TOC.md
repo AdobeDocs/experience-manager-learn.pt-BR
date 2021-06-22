@@ -4,10 +4,9 @@ user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience
 breadcrumb-title: Tutoriais do AEM Assets
 sub-product: ativos
 team: TM
-translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 32%
 
 ---
@@ -67,7 +66,7 @@ ht-degree: 32%
    + [Brand Portal](./sharing/brand-portal.md)
    + Compartilhamento de ativos{#assets-share}
       + [Compartilhamento de ativos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Configurar o Asset Share Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Configurar o Compartilhamento de Ativos Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Theming Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
    + [Connected Assets](./sharing/connected-assets.md)
 
@@ -88,8 +87,11 @@ ht-degree: 32%
    + [Somente para inserções (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Pesquisa de ativos](./adobe-asset-link/asset-search.md)
 
++ Automação de conteúdo{#content-automation}
+   + [Visão geral](./content-automation/overview.md)
+
 + Dynamic Media{#dynamic-media}
-   + [Visão geral do Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Visão geral da Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Corte inteligente](dynamic-media/smart-crop-feature-video-use.md)
    + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Vídeo interativo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
