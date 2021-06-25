@@ -1,27 +1,22 @@
 ---
 title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+feature: Formulários adaptáveis
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '199'
 ht-degree: 3%
 
 ---
 
 # Configurar fonte de dados
 
-Há muitas maneiras com as quais o AEM habilita a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-O primeiro passo é baixar e implantar os [drivers MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados no AEM.
+Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+O primeiro passo é baixar e implantar os [drivers MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados em AEM.
 Crie a fonte de dados agrupada da conexão Apache Sling e forneça as propriedades conforme especificado na captura de tela abaixo. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
 
 ![fonte de dados](assets/save-continue.PNG)
@@ -36,9 +31,7 @@ O arquivo sql para criar o esquema pode ser [baixado aqui](assets/form-data-db.s
 >Certifique-se de nomear sua fonte de dados **SaveAndContinue**. O código de amostra usa o nome para se conectar ao banco de dados.
 
 | Nome da Propriedade | Valor |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Nome da origem de dados | SaveAndContinue |
 | Classe de Driver JDBC | com.mysql.cj.jdbc.Driver |
 | URI de conexão JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
-
-
