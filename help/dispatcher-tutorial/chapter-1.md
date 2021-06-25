@@ -47,7 +47,7 @@ No entanto, o conselho &quot;Primeiro faça funcionar - depois faça rápido&quo
 
 2. Artefatos, que estão envolvidos em algum cenário assíncrono e dependente do tempo em que a entrada - e, portanto, o comportamento do sistema pode variar muito aleatoriamente. As alterações podem ter efeitos imprevisíveis e podem ser difíceis de testar.
 
-3. Padrões de software que são usados e reutilizados repetidamente, em todas as peças e partes do sistema. Se o padrão de software for sub-ideal, todos os artefatos que usam o padrão precisam ser recodificados.
+3. Padrões de software que são usados e reutilizados repetidamente, em todas as peças e partes do sistema. Se o padrão de software se revelar sub-ideal, todos os artefatos que usam o padrão precisarão ser recodificados.
 
 Lembrar? Por cima desta página, dissemos que o Dispatcher é uma parte essencial de um aplicativo AEM. O acesso a uma aplicação web é muito aleatório - os usuários estão chegando e chegando em momentos imprevisíveis. No final - todo o conteúdo será (ou deverá) armazenado em cache no Dispatcher. Então, se você prestasse muita atenção, poderia ter percebido que o armazenamento em cache poderia ser visto como um artefato &quot;arquitetônico&quot; e, portanto, deveria ser entendido por todos os membros da equipe, desenvolvedores e administradores, da mesma forma.
 
