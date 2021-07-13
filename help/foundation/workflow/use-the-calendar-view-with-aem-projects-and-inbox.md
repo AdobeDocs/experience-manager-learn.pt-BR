@@ -1,31 +1,30 @@
 ---
-title: Usar a Exibição de calendário com projetos e caixa de entrada do AEM
-seo-title: Usar a Exibição de calendário com projetos e caixa de entrada do AEM
-description: 'A Exibição de calendário do AEM acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento. '
-seo-description: A Exibição de calendário do AEM acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento.
+title: Usar a Exibição de calendário com projetos AEM e Caixa de entrada
+seo-title: Usar a Exibição de calendário com AEM projetos e Caixa de entrada
+description: 'AEM Exibição de calendário acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento. '
+seo-description: AEM Exibição de calendário acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento.
 version: 6.3, 6.4, 6.5
-feature: Workflow, Projects
+feature: Fluxo de trabalho, Projetos
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Collaboration
-role: Business Practitioner
+topic: Colaboração
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 
-# Usar a Exibição de calendário com projetos e caixa de entrada do AEM
+# Usar a Exibição de calendário com projetos AEM e Caixa de entrada
 
-A Exibição de calendário do AEM acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento.
+AEM Exibição de calendário acompanha projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento do projeto. Com a exibição Calendário, o usuário teria uma visibilidade geral sobre projetos e tarefas que estão em andamento, planejadas, com vencimento em breve e vencido no momento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804/?quality=12&learn=on)
 
