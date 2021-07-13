@@ -1,19 +1,18 @@
 ---
 title: Uso AEM fragmentos de experiência
-description: Fragmentos de experiência permitem que autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
+description: Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas do Sites e sistemas de terceiros.
 sub-product: sites, serviços de conteúdo
-feature: Experience Fragments
-topic: Content Management
-role: Architect, Developer, Administrator, Business Practitioner
+feature: Fragmentos de experiência
+topic: Gerenciamento de conteúdo
+role: Architect, Developer, Admin, User
 level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194
 thumbnail: 331785.jpg
-translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '124'
 ht-degree: 5%
 
 ---
@@ -21,15 +20,15 @@ ht-degree: 5%
 
 # Uso de Fragmentos de experiência {#using-aem-experience-fragments}
 
-Fragmentos de experiência permitem que autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
+Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas do Sites e sistemas de terceiros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785/?quality=12&learn=on)
 
-Um Fragmento de experiência é um conjunto agrupado de componentes que, quando combinados, cria uma experiência. Por exemplo, um *Título*, *Imagem*, *Descrição* e *Botão de Ação Chamar* podem ser combinados para formar uma experiência de teaser.
+Um Fragmento de experiência é um conjunto agrupado de componentes que, quando combinados, cria uma experiência. Por exemplo, um *Título*, *Imagem*, *Descrição* e *Botão de Ação de Chamada* podem ser combinados para formar uma experiência de teaser.
 
-Com fragmentos de experiência, os comerciantes podem:
+Com fragmentos de experiência, os profissionais de marketing podem:
 
 * Reutilizar uma experiência em canais (canais próprios e pontos de contato de terceiros)
 * Criar variações de uma experiência para casos de uso específicos
-* Manter variações sincronizadas com o uso do Live Copy
-* As experiências da publicação social no Facebook e no Pinterest saem da caixa
+* Manter variações sincronizadas com o uso da Live Copy
+* Experiências de postagem social para Facebook e Pinterest prontas para uso
