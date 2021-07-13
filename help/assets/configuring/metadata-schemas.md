@@ -1,25 +1,24 @@
 ---
 title: Esquemas de metadados
-description: Os esquemas de metadados definem a interface que os usuários interagem com metadados de ativos no AEM, e sua definição e aplicação em ativos são essenciais para o gerenciamento de ativos digitais.
+description: Os esquemas de metadados definem a interface que os usuários interagem com os metadados do ativo no AEM, e sua definição e aplicação em ativos são essenciais para o gerenciamento de ativos digitais.
 sub-product: ativos
-feature: Metadata
+feature: Metadados
 version: cloud-service
 kt: 4981
 thumbnail: 33696.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
 
 # Esquemas de metadados
 
-Os esquemas de metadados definem a interface que os usuários interagem com metadados de ativos no AEM, e sua definição e aplicação em ativos são essenciais para o gerenciamento de ativos digitais.
+Os esquemas de metadados definem a interface que os usuários interagem com os metadados do ativo no AEM, e sua definição e aplicação em ativos são essenciais para o gerenciamento de ativos digitais.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33696/?quality=12&learn=on&hidetitle=true)
