@@ -1,14 +1,13 @@
 ---
 title: Uso da tradução do arquivo de origem com o AEM Assets
-description: O Adobe Experience Manager (AEM) Assets permite identificar ativos que compartilham atributos comuns e marcá-los como relacionados usando o novo recurso Ativos relacionados. Também permite que os usuários definam uma relação de origem/derivada entre ativos, facilitando aos usuários identificar a origem de um ativo. A execução do fluxo de trabalho de tradução em um ativo derivado busca qualquer ativo que o arquivo de origem faça referência e o inclua para tradução, reduzindo os esforços para manter vários sites.
+description: Os ativos Adobe Experience Manager (AEM) permitem identificar ativos que compartilham atributos comuns e os marcam como relacionados usando o novo recurso Ativos relacionados . Também permite que os usuários definam uma relação de origem/derivada entre ativos, facilitando aos usuários identificar a origem de um ativo. A execução do fluxo de trabalho de tradução em um ativo derivado busca qualquer ativo que o arquivo de origem faça referência e o inclua para tradução, reduzindo os esforços para manter vários sites.
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 # Uso da tradução do arquivo de origem com o AEM Assets {#using-source-file-translation-with-aem-assets}
 
-O Adobe Experience Manager (AEM) Assets permite identificar ativos que compartilham atributos comuns e marcá-los como relacionados usando o novo recurso Ativos relacionados. Também permite que os usuários definam uma relação de origem/derivada entre ativos, facilitando aos usuários identificar a origem de um ativo. A execução do fluxo de trabalho de tradução em um ativo derivado busca qualquer ativo que o arquivo de origem faça referência e o inclua para tradução, reduzindo os esforços para manter vários sites.
+Os ativos Adobe Experience Manager (AEM) permitem identificar ativos que compartilham atributos comuns e os marcam como relacionados usando o novo recurso Ativos relacionados . Também permite que os usuários definam uma relação de origem/derivada entre ativos, facilitando aos usuários identificar a origem de um ativo. A execução do fluxo de trabalho de tradução em um ativo derivado busca qualquer ativo que o arquivo de origem faça referência e o inclua para tradução, reduzindo os esforços para manter vários sites.
 
 ## Gerenciamento de arquivos de origem de ativos multisite {#multisite-asset-source-file-management}
 
