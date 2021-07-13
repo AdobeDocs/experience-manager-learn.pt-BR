@@ -2,19 +2,18 @@
 title: Criação de fragmentos de conteúdo no AEM
 description: 'Fragmentos de conteúdo são uma abstração de conteúdo no AEM que permite que o conteúdo baseado em texto seja criado e gerenciado independentemente dos canais compatíveis. '
 sub-product: serviços de conteúdo
-feature: Content Fragments
+feature: Fragmentos de conteúdo
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '378'
 ht-degree: 8%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 8%
 
 Fragmentos de conteúdo são uma abstração de conteúdo no AEM que permite que o conteúdo baseado em texto seja criado e gerenciado independentemente dos canais compatíveis.
 
-Fragmentos de conteúdo do AEM são conteúdos editoriais baseados em texto que podem incluir alguns elementos de dados estruturados associados, mas considerados conteúdo puro sem informações de design ou layout. Os Fragmentos de conteúdo geralmente são criados como conteúdo independente de canal, que deve ser usado e reutilizado em canais, o que, por sua vez, envolve o conteúdo em uma experiência específica de contexto.
+AEM Fragmentos de conteúdo são conteúdos editoriais baseados em texto que podem incluir alguns elementos de dados estruturados associados, mas considerados conteúdo puro sem informações de design ou layout. Os Fragmentos de conteúdo geralmente são criados como conteúdo independente de canal, que deve ser usado e reutilizado em canais, o que, por sua vez, envolve o conteúdo em uma experiência específica de contexto.
 
 Esta série de vídeo cobre o ciclo de vida de criação dos Fragmentos de conteúdo no AEM. Detalhes sobre [como fornecer Fragmentos de Conteúdo podem ser encontrados aqui](content-fragments-delivery-feature-video-use.md).
 
@@ -33,28 +32,28 @@ Esta série de vídeo cobre o ciclo de vida de criação dos Fragmentos de conte
 3. Download de fragmentos de conteúdo
 4. Recursos editoriais
 
-## Definição dos modelos de fragmento de conteúdo {#defining-content-fragment-models}
+## Definição dos modelos de fragmento do conteúdo {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-Os Modelos de fragmentos de conteúdo do AEM, os esquemas de dados dos Fragmentos de conteúdo, devem ser ativados por meio do [[!UICONTROL Navegador de configuração]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) do AEM, que permite que os Modelos de fragmento de conteúdo sejam definidos com base em configuração.
+AEM Modelos de fragmentos de conteúdo, os esquemas de dados dos Fragmentos de conteúdo, devem ser ativados por meio AEM [[!UICONTROL Navegador de configuração]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), que permite que os Modelos de fragmento de conteúdo sejam definidos com base em configuração.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 
-As configurações do AEM são aplicadas a hierarquias de pastas do AEM Assets para permitir que seus Modelos de fragmento de conteúdo sejam criados como Fragmentos de conteúdo. Os Fragmentos de conteúdo são compatíveis com uma experiência de criação baseada em formulário avançada, permitindo que o conteúdo seja modelado como uma coleção de elementos.
+AEM configurações são aplicadas às hierarquias da pasta AEM Assets para permitir que seus Modelos de fragmento de conteúdo sejam criados como Fragmentos de conteúdo. Os Fragmentos de conteúdo são compatíveis com uma experiência de criação baseada em formulário avançada, permitindo que o conteúdo seja modelado como uma coleção de elementos.
 
 Os Fragmentos de conteúdo podem ter várias variantes, cada variante abordando um caso de uso diferente (pensamento, não necessariamente canal) para o conteúdo.
 
 *Exemplo de biografia de atleta para importação:*\
 **[sandra-sprient-bio.txt](assets/sandra-sprient-bio.txt)**
 
-## Download dos fragmentos de conteúdo {#downloading-content-fragments}
+## Download de fragmentos de conteúdo {#downloading-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
 
-Os Fragmentos de conteúdo do AEM podem ser baixados do Autor do AEM como um arquivo Zip contendo Variantes, Elementos e Metadados.
+AEM Fragmentos de conteúdo podem ser baixados do autor do AEM como um arquivo Zip contendo Variantes, Elementos e Metadados.
 
 *Exemplo de arquivo Zip de download do Fragmento de conteúdo:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
@@ -75,7 +74,7 @@ Saiba mais sobre [como fornecer Fragmentos de conteúdo](content-fragments-deliv
 
 * [Entrega de fragmentos de conteúdo](content-fragments-delivery-feature-video-use.md)
 * [Componentes principais do WCM AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
-* [Componente do fragmento de conteúdo principal do WCM AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componente do Fragmento de conteúdo principal do WCM AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Para baixar e instalar o pacote abaixo em uma instância do AEM 6.4+ para o estado final da série de vídeos:
 
