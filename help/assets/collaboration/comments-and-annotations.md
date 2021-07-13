@@ -2,18 +2,17 @@
 title: Comentários e anotações
 description: Saiba como usar comentários e anotações no AEM para se comunicar e colaborar em ativos.
 sub-product: ativos
-feature: Collaboration
+feature: Colaboração
 version: cloud-service
 kt: 4541
 thumbnail: 32049.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Colaboração
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 4%
+source-wordcount: '39'
+ht-degree: 5%
 
 ---
 
