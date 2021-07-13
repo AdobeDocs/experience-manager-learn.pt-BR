@@ -1,8 +1,8 @@
 ---
-title: Uso do ldap com o fluxo de trabalho do Aem Forms
-seo-title: Uso do ldap com o fluxo de trabalho do Aem Forms
-description: Atribuir a tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente
-seo-description: Atribuir a tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente
+title: Uso do ldap com o Aem Forms Workflow
+seo-title: Uso do ldap com o Aem Forms Workflow
+description: Atribuir tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente
+seo-description: Atribuir tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente
 feature: Adaptive Forms,Workflow
 topics: integrations
 audience: developer
@@ -11,13 +11,12 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: Development
-role: Administrator
+topic: Desenvolvimento
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -25,11 +24,11 @@ ht-degree: 0%
 
 # Uso do LDAP com o fluxo de trabalho do AEM Forms
 
-Atribuir tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente.
+Atribuindo tarefa de fluxo de trabalho do AEM Forms ao gerente do remetente.
 
-Ao usar o Formulário adaptável no fluxo de trabalho do AEM, é necessário atribuir dinamicamente uma tarefa ao gerente do remetente do formulário. Para realizar esse caso de uso, teremos que configurar o AEM com Ldap.
+Ao usar o Formulário adaptável em AEM fluxo de trabalho, é necessário atribuir dinamicamente uma tarefa ao gerente do remetente do formulário. Para realizar esse caso de uso, teremos que configurar o AEM com o Ldap.
 
-As etapas necessárias para configurar o AEM com LDAP são explicadas em [detalhe aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+As etapas necessárias para configurar o AEM com o LDAP são explicadas em [detalhe aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Para a finalidade deste artigo, estou anexando arquivos de configuração usados na configuração do AEM com o Adobe Ldap. Esses arquivos estão incluídos no pacote que pode ser importado usando o gerenciador de pacotes.
 
@@ -37,11 +36,11 @@ Na captura de tela abaixo, estamos buscando todos os usuários pertencentes a um
 
 ![Configuração LDAP](assets/costcenterldap.gif)
 
-Na captura de tela abaixo, atribuímos os grupos aos usuários buscados do LDAP no AEM. Observe o grupo de usuários de formulários atribuído aos usuários importados. O usuário precisa ser membro desse grupo para interagir com o AEM Forms. Também armazenamos a propriedade do gerenciador no nó perfil/gerenciador no AEM.
+Na captura de tela abaixo, atribuímos os grupos aos usuários buscados do LDAP no AEM. Observe o grupo de usuários de formulários atribuído aos usuários importados. O usuário precisa ser membro desse grupo para interagir com o AEM Forms. Também armazenamos a propriedade manager no nó profile/manager no AEM.
 
 ![Sincronizador](assets/synchandler.gif)
 
-Depois de configurar o LDAP e importar usuários para o AEM, podemos criar um workflow que atribuirá a tarefa ao gerenciador dos enviantes. Para a finalidade deste artigo, desenvolvemos um fluxo de trabalho de aprovação simples de uma etapa.
+Depois de configurar o LDAP e importar usuários no AEM, podemos criar um workflow que atribuirá a tarefa ao gerenciador dos enviantes. Para a finalidade deste artigo, desenvolvemos um fluxo de trabalho de aprovação simples de uma etapa.
 
 A primeira etapa do fluxo de trabalho define o valor da etapa inicial como Não. A regra de negócios no formulário adaptável desativará o painel &quot;Detalhes do emissor&quot; e mostrará o painel &quot;Aprovado por&quot; com base no valor da etapa inicial.
 
@@ -71,11 +70,11 @@ Dependendo de como a propriedade do gerenciador é armazenada em seu LDAP, talve
 
 Leia este artigo para implementar seu próprio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-Para testar isso em seu sistema (para funcionários da Adobe, você pode usar essa amostra imediatamente)
+Para testar isso em seu sistema (para funcionários do Adobe, você pode usar esta amostra pronta para uso)
 
 * [Baixe e implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue . Este é o pacote OSGI personalizado para definir a propriedade do gerenciador.
 * [Baixe e instale o DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe os Ativos associados a este artigo para o AEM usando o gerenciador de pacotes](assets/aem-forms-ldap.zip). Incluídos como parte deste pacote são arquivos de configuração LDAP, fluxo de trabalho e um formulário adaptável.
+* [Importe os Ativos associados a este artigo no AEM usando o gerenciador de pacotes](assets/aem-forms-ldap.zip).Incluídos como parte deste pacote são arquivos de configuração LDAP, fluxo de trabalho e um formulário adaptável.
 * Configure o AEM com seu LDAP usando as credenciais LDAP apropriadas.
 * Faça logon no AEM usando suas credenciais LDAP.
 * Abra o [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
@@ -84,4 +83,4 @@ Para testar isso em seu sistema (para funcionários da Adobe, você pode usar es
 
 >[!NOTE]
 >
->Este código personalizado para extrair o nome do gerenciador foi testado com o Adobe LDAP. Se você estiver executando esse código em um LDAP diferente, será necessário modificar ou gravar sua própria implementação getParticipant para obter o nome do gerente.
+>Este código personalizado para extrair o nome do gerente foi testado em relação ao Adobe LDAP. Se você estiver executando esse código em um LDAP diferente, será necessário modificar ou gravar sua própria implementação getParticipant para obter o nome do gerente.
