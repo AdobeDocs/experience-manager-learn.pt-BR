@@ -1,9 +1,9 @@
 ---
 title: Uso do Editor de páginas com AEM Sites
-seo-title: Uso do Editor de páginas com o Adobe Experience Manager Sites
+seo-title: Uso do Editor de páginas com Adobe Experience Manager Sites
 description: O vídeo a seguir destaca vários dos principais recursos do editor de Sites da interface de toque no Adobe Experience Manager.
 seo-description: O vídeo a seguir destaca vários dos principais recursos do editor de Sites da interface de toque no Adobe Experience Manager.
-feature: Page Editor
+feature: Editor de página
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '246'
 ht-degree: 7%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 7%
 
 # Uso do Editor de páginas {#using-page-editor-with-aem-sites}
 
-O Editor de página do AEM Site é uma ferramenta poderosa para criar e editar conteúdo da Web. As ferramentas e os recursos do Editor de páginas são acessados na barra de ferramentas da interface do usuário do Editor de páginas.
+AEM Editor de página do site é uma ferramenta poderosa para criar e editar conteúdo da Web. As ferramentas e os recursos do Editor de páginas são acessados na barra de ferramentas da interface do usuário do Editor de páginas.
 
 O vídeo a seguir destaca os principais recursos do Editor de páginas.
 
