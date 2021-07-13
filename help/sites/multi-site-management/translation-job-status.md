@@ -3,7 +3,7 @@ title: Status da tarefa de tradução
 seo-title: Status da tarefa de tradução
 description: Entenda os diferentes status associados a um trabalho de tradução ou a um item no trabalho.
 seo-description: Entenda os diferentes status associados a um trabalho de tradução ou a um item no trabalho.
-feature: Language Copy, Multi Site Manager
+feature: Cópia de idioma, Gerenciador de vários sites
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,14 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5846
 thumbnail: 36685.jpg
-topic: Localization
-role: Business Practitioner
+topic: Localização
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 15%
+source-wordcount: '60'
+ht-degree: 16%
 
 ---
 
