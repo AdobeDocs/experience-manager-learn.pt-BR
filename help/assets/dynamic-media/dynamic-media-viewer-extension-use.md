@@ -1,36 +1,35 @@
 ---
-title: Uso de visualizadores do Dynamic Media com o Adobe Analytics e o Adobe Launch
+title: Uso de visualizadores do Dynamic Media com Adobe Analytics e Adobe Launch
 description: A extensão do Dynamic Media Viewers para Adobe Launch, juntamente com o lançamento do Dynamic Media Viewers 5.13, permite que os clientes do Dynamic Media, do Adobe Analytics e do Adobe Launch usem eventos e dados específicos dos Dynamic Media Viewers na configuração do Adobe Launch.
 sub-product: Dynamic Media
-feature: Asset Insights
+feature: 'Informações de ativos '
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 17%
 
 ---
 
 
-# Uso de visualizadores do Dynamic Media com o Adobe Analytics e o Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Uso de visualizadores do Dynamic Media com Adobe Analytics e Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
-Para clientes com o Dynamic Media e o Adobe Analytics, agora é possível rastrear o uso de Visualizadores do Dynamic Media no seu site usando a Extensão do Visualizador do Dynamic Media.
+Para clientes com Dynamic Media e Adobe Analytics, agora você pode rastrear o uso de Visualizadores do Dynamic Media no seu site usando a Extensão do Visualizador do Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Você também precisa [integrar o Adobe Experience Platform Launch à sua instância do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
+> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Você também precisa [integrar o Adobe Experience Platform Launch à instância do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
-Com a introdução da extensão Dynamic Media Viewer, o Adobe Experience Manager agora oferece suporte avançado a análises para ativos fornecidos com visualizadores do Dynamic Media (5.13), fornecendo controle mais granular sobre o rastreamento de eventos quando um Visualizador do Dynamic Media é usado em uma página do Sites.
+Com a introdução da extensão Visualizador do Dynamic Media, a Adobe Experience Manager agora oferece suporte avançado a análises para ativos fornecidos com visualizadores do Dynamic Media (5.13), fornecendo controle mais granular sobre o rastreamento de eventos quando um Visualizador do Dynamic Media é usado em uma página do Sites.
 
-Se já tiver o AEM Assets e Sites, é possível integrar a propriedade do Launch com a instância do autor do AEM. Depois que a integração do launch estiver associada ao site, você poderá adicionar componentes de mídia dinâmica à página com o rastreamento de eventos para visualizadores habilitados.
+Se já tiver o AEM Assets e o Sites, é possível integrar a propriedade do Launch com a instância do autor de AEM. Depois que a integração do launch estiver associada ao site, você poderá adicionar componentes de mídia dinâmica à página com o rastreamento de eventos para visualizadores habilitados.
 
-Para clientes exclusivos do AEM Assets ou clientes do Dynamic Media Classic, o usuário pode obter o código de inserção de um visualizador e adicioná-lo à página. As bibliotecas de script do Launch podem ser adicionadas manualmente à página para o rastreamento de eventos do visualizador.
+Para clientes somente AEM Assets ou clientes do Dynamic Media Classic, o usuário pode obter o código incorporado de um visualizador e adicioná-lo à página. As bibliotecas de script do Launch podem ser adicionadas manualmente à página para o rastreamento de eventos do visualizador.
 
 A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argumentos compatíveis:
 
