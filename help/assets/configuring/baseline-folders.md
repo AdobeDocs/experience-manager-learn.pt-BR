@@ -1,18 +1,17 @@
 ---
 title: Pastas de linha de base
-description: 'Definir pastas de linha de base nos ativos AEM ajuda a estabelecer uma arquitetura de conteúdo sólida e a base para o gerenciamento de ativos digitais. '
+description: 'A definição de pastas de linha de base no AEM Assets ajuda a estabelecer uma arquitetura de conteúdo sólida e a base para o gerenciamento de ativos digitais. '
 sub-product: ativos
-feature: Asset Management
+feature: Gerenciamento de ativos
 version: cloud-service
 kt: 4870
 thumbnail: 33496.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '47'
 ht-degree: 4%
 
 ---
@@ -20,6 +19,6 @@ ht-degree: 4%
 
 # Pastas de linha de base
 
-Definir pastas de linha de base nos ativos AEM ajuda a estabelecer uma arquitetura de conteúdo sólida e a base para o gerenciamento de ativos digitais.
+A definição de pastas de linha de base no AEM Assets ajuda a estabelecer uma arquitetura de conteúdo sólida e a base para o gerenciamento de ativos digitais.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33496/?quality=12&learn=on&hidetitle=true)
