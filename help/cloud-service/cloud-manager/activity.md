@@ -9,13 +9,12 @@ activity: use
 version: cloud-service
 kt: 6874
 thumbnail: 26319.jpg
-topic: Architecture
-role: Architect, Developer, Administrator
+topic: Arquitetura
+role: Architect, Developer, Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -25,6 +24,6 @@ ht-degree: 0%
 
 O Cloud Manager fornece uma visualização consolidada para a atividade de um Programa, listando todas as execuções de pipeline de CI/CD, tanto de produção quanto de não produção. Isso permite que os usuários visualizem todos os pipelines atualmente em andamento e revisem implantações anteriores.
 
-O Cloud Manager também se integra a um nível por usuário com as [Notificações da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), fornecendo uma visualização uniforme em eventos e ações de interesse.
+O Cloud Manager também se integra a um nível por usuário com as [Notificações do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), fornecendo uma visualização uniforme em eventos e ações de interesse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
