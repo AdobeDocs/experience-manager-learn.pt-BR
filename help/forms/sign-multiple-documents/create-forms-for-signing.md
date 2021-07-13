@@ -1,7 +1,7 @@
 ---
-title: Criar formulários para assinatura
+title: Criar Forms para assinatura
 description: Crie formulários que precisam ser incluídos no pacote de assinatura.
-feature: Adaptive Forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
-topic: Development
-role: Business Practitioner
+topic: Desenvolvimento
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ A próxima etapa é criar os formulários adaptáveis que você deseja incluir n
 * Os formulários também precisam ser associados ao clientLib chamado **getnextform**
 * Os formulários precisam usar o componente Etapa de assinatura.
 * O formulário também deve usar o componente personalizado **Assinar vários formulários**. Esse componente permite navegar até o próximo formulário para fazer logon no pacote.
-* O envio do formulário deve ser configurado para acionar o fluxo de trabalho do AEM **Atualizar Status da Assinatura**
+* O envio do formulário deve ser configurado para acionar AEM workflow **Atualizar Status da Assinatura**
 * Verifique se o Caminho do arquivo de dados está definido como **Data.xml**. Isso é muito importante, pois o código de amostra procura um arquivo chamado Data.xml na carga útil que processa o envio do formulário.
 
 Depois de criar seu formulário, inclua o fragmento de formulário adaptável **common fields** no formulário. O fragmento será marcado como oculto. Esse fragmento contém os seguintes campos.
