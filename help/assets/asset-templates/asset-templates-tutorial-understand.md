@@ -3,9 +3,9 @@ title: 'Como entender arquivos do InDesign e modelos de ativos no AEM Assets '
 description: Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas as considerações que o acompanham, para uso no recurso Modelos de ativos do AEM Assets.
 version: 6.3, 6.4, 6.5
 topic: Gerenciamento de conteúdo
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas as considerações que o acompanham, para uso no recurso Modelos de ativos do AEM Assets.
 
-## Construindo o arquivo de modelo de InDesign {#constructing-the-indesign-template-file}
+## Construir o arquivo de modelo de InDesign {#constructing-the-indesign-template-file}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
