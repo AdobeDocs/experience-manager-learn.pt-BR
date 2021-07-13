@@ -6,20 +6,19 @@ audience: administrator, developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Core Components
-topic: Development
-role: Business Practitioner
+feature: Componentes principais
+topic: Desenvolvimento
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '378'
 ht-degree: 2%
 
 ---
 
 
-# Personalizar ícones de componentes {#developing-component-icons-in-aem-sites}
+# Personalização de ícones de componentes {#developing-component-icons-in-aem-sites}
 
 Os ícones de componentes permitem que os autores identifiquem rapidamente um componente com ícones ou abreviações significativas. Agora os autores podem encontrar os Componentes necessários para criar suas experiências da Web mais rápido do que nunca.
 
@@ -50,7 +49,7 @@ A abreviação pode ser personalizada por meio da propriedade **[cq:Component]@a
   - abbreviation = "AL"
 ```
 
-### Ícones de CoralUI {#coralui-icons}
+### Ícones do CoralUI {#coralui-icons}
 
 Os ícones CoralUI, fornecidos pelo AEM, podem ser usados para ícones de componentes. Para configurar um ícone CoralUI, defina uma propriedade **[cq:Component]@cq:icon** para o valor do atributo de ícone HTML do ícone CoralUI desejado (enumerado na [documentação CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
