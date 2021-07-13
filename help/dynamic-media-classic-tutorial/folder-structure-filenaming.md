@@ -7,25 +7,24 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
 
-# Determine a estrutura da pasta e a convenção de nomenclatura de arquivo {#folder-structure-filenaming}
+# Determine sua estrutura de pastas e convenção de nomenclatura de arquivos {#folder-structure-filenaming}
 
 Antes de começar a fazer upload de todo o seu conteúdo, é recomendável considerar a estrutura de pastas que você usará e, particularmente, sua convenção de nomenclatura de arquivos. Provavelmente economizará tempo e terá de refazer tarefas mais tarde. É melhor coordenar essas decisões em todos os grupos.
 
 ## Hierarquia de pastas e Convenção de nomenclatura de arquivos
 
-A nomenclatura de arquivos é, em geral, a decisão mais importante que você toma em relação à implementação do Dynamic Media Classic. No entanto, para entender por que é importante, vamos primeiro falar sobre sua estrutura de pastas.
+O nome de arquivo é geralmente a decisão mais importante que você toma em relação à implementação do Dynamic Media Classic. No entanto, para entender por que é importante, vamos primeiro falar sobre sua estrutura de pastas.
 
 ### Hierarquia de pastas
 
@@ -35,7 +34,7 @@ Outra consideração importante é o número de ativos ou pastas a serem armazen
 
 A maneira mais fácil de criar suas pastas é fazer upload de toda a estrutura de pastas usando FTP e ativar a opção **Incluir subpastas**. Essa opção faz com que o Dynamic Media Classic recrie a estrutura de pastas no site FTP no Dynamic Media Classic.
 
-Queremos que você considere a estrutura de pastas antes de começar a carregar todos os arquivos, pois é muito mais fácil organizar e gerenciar os arquivos e pastas localmente no computador do que no Dynamic Media Classic. Por exemplo, você só pode arrastar e soltar arquivos, mas não pastas inteiras, dentro do Dynamic Media Classic.
+Queremos que você considere a estrutura de pastas antes de começar a carregar todos os arquivos, pois é muito mais fácil organizar e gerenciar os arquivos e pastas localmente em seu computador do que no Dynamic Media Classic. Por exemplo, você só pode arrastar e soltar arquivos, mas não pastas inteiras, dentro do Dynamic Media Classic.
 
 ### Estratégias de pastas
 
@@ -53,7 +52,7 @@ Todos os URLs e transações no Dynamic Media Classic são orientados por uma ID
 
 Regras relacionadas às IDs de ativos:
 
-- Dois ativos não podem ter o mesmo nome no Dynamic Media Classic, independentemente da pasta em que estão os ativos.
+- Dois ativos não podem ter o mesmo nome no Dynamic Media Classic, independentemente da pasta em que os ativos estão.
 - Os nomes fazem distinção entre maiúsculas e minúsculas. Por exemplo, chair.jpg, chair.jpg e CHAIR.jpg criariam três IDs de ativo diferentes.
 - Como prática recomendada, as IDs de ativo não devem conter espaços em branco ou símbolos. O uso de espaços e símbolos dificulta a implementação, pois será necessário codificar esses caracteres por URL. Por exemplo, um espaço &quot; &quot; torna-se &quot;%20.&quot;
 
