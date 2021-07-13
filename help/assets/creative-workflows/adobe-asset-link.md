@@ -4,10 +4,10 @@ description: 'Os ativos do Adobe Experience Manager podem ser usados por designe
 feature: Adobe Asset Link
 version: 6.4, 6.5, cloud-service
 topic: Gerenciamento de conteúdo
-role: Business Practitioner
+role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 95e43761ae8b0497c6a8ae8e10e550c2520f7820
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
