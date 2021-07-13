@@ -1,7 +1,7 @@
 ---
-title: Criar formulários HTML5
+title: Criar Forms HTML5
 description: Criar e configurar formulários HTML5
-feature: Mobile Forms
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Development
-role: Business Practitioner
+topic: Desenvolvimento
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '488'
 ht-degree: 5%
 
 ---
@@ -32,7 +31,7 @@ Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de 
 ## Crie seu primeiro formulário HTML5
 
 1. [Baixe e extraia o conteúdo do arquivo](assets/assets.zip) zip. O arquivo zip contém xdp e arquivo de dados
-2. [Navegar até Formulários e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+2. [Navegar até Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Clique em Criar -> Upload de arquivo
 4. Selecione o modelo xdp baixado na etapa 2
 
@@ -43,7 +42,7 @@ O xdp pode ser visualizado no formato HTML5 ou PDF. Para visualizar o xdp no for
 * Toque no xdp recém-carregado e clique em _Preview -> Preview como HTML_. Você deve ver o xdp renderizado como HTML5
 
 >[!NOTE]
->Ao selecionar a opção _Visualizar como PDF_, o PDF renderizado não será exibido no navegador porque o AEM Forms renderiza pdf dinâmicos que exigem plug-in do Acrobat.Será necessário baixar o PDF e abri-lo usando o Adobe Acrobat/Reader para exibir
+>Ao selecionar a opção _Visualizar como PDF_, o PDF renderizado não será exibido no navegador porque o AEM Forms renderiza pdf dinâmicos que exigem plug-in do Acrobat.Você terá que baixar o PDF e abri-lo usando o Adobe Acrobat/Reader para visualizar
 
 
 ## Exibir com dados
