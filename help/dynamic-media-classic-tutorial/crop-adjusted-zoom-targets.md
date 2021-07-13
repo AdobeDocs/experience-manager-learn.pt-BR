@@ -1,19 +1,18 @@
 ---
 title: Recortar, imagens ajustadas e metas de zoom
-description: A imagem mestre do Dynamic Media Classic oferece suporte à criação de versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvá-las como um novo arquivo mestre ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos mestre e criar Metas de zoom em suas imagens para exibir detalhes destacados.
+description: A imagem principal do Dynamic Media Classic oferece suporte à criação de versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvá-las como um novo arquivo principal ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos principais e criar Metas de zoom em suas imagens para exibir detalhes destacados.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -21,22 +20,22 @@ ht-degree: 0%
 
 # Recortar, imagens ajustadas e metas de zoom {#crop-adjusted-zoom-targets}
 
-Um dos principais pontos fortes do conceito principal de imagem do Dynamic Media Classic é que você pode redefinir a finalidade do ativo de imagem para muitos usos. Tradicionalmente, você teria que criar versões separadas de cada imagem para mostrar detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode realizar as mesmas tarefas no seu único mestre e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
+Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media Classic é que você pode redefinir a finalidade do ativo de imagem para muitos usos. Tradicionalmente, você teria que criar versões separadas de cada imagem para mostrar detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode realizar as mesmas tarefas em um único principal e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
 
 Ao final desta seção do tutorial, você saberá:
 
-- Recorte imagens no Dynamic Media Classic e salve como novos arquivos mestre ou como imagens virtuais. [Saiba mais](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html).
-- Salve imagens ajustadas virtuais e use-as no lugar de ativos mestre. [Saiba mais](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html).
+- Recorte imagens no Dynamic Media Classic e salve como novos arquivos principais ou como imagens virtuais. [Saiba mais](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html).
+- Salve imagens ajustadas virtuais e use-as no lugar de ativos principais. [Saiba mais](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html).
 - Crie metas de zoom em suas imagens para exibir seus destaques. [Saiba mais](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
 
 ## Cortar
 
-O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenientemente disponíveis na interface do usuário, incluindo a ferramenta Recortar. Talvez você queira recortar a imagem principal no Dynamic Media Classic por vários motivos. Por exemplo:
+O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenientemente disponíveis na interface do usuário, incluindo a ferramenta Corte. Talvez você queira recortar sua imagem principal no Dynamic Media Classic por vários motivos. Por exemplo:
 
 - Você não tem acesso ao arquivo original. Você deseja exibir a imagem com um corte ou proporção diferente, mas não tem o arquivo original no computador ou está trabalhando em casa. Nesse caso, você pode acessar o Dynamic Media Classic, encontrar a imagem, recortá-la e salvá-la, ou salvá-la como uma nova versão.
 - Para remover o excesso de espaço em branco. A imagem foi fotografada com muito espaço em branco, o que faz o produto parecer pequeno. Você deseja que suas imagens em miniatura preencham a tela o máximo possível.
 - Para criar imagens ajustadas, cópias virtuais de imagens que não ocupam espaço em disco. Algumas empresas têm regras de negócios que exigem que elas mantenham cópias separadas da mesma imagem, mas com um nome diferente. Ou talvez você queira uma versão cortada e não cortada da mesma imagem.
-- Para criar novas imagens a partir de uma imagem de origem. Por exemplo, talvez você queira criar amostras de cores ou um detalhe da imagem principal. Você pode fazer isso no Adobe Photoshop e fazer upload separadamente ou usar a ferramenta Corte no Dynamic Media Classic.
+- Para criar novas imagens a partir de uma imagem de origem. Por exemplo, talvez você queira criar amostras de cores ou um detalhe da imagem principal. Você pode fazer isso no Adobe Photoshop e fazer upload separadamente ou usar a ferramenta Recortar no Dynamic Media Classic.
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 
 ### Uso da ferramenta Corte demarcado
 
-Você pode acessar a ferramenta Recortar no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar**. Você pode usar a ferramenta para cortar de duas formas:
+Você pode acessar a ferramenta Cortar no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar**. Você pode usar a ferramenta para cortar de duas formas:
 
 - O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como [Recortar manualmente](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
 - Aparar. Use isso para remover espaços em branco extra ao redor da imagem, calculando o número de pixels que não correspondem à imagem. Saiba como [Recortar ao Aparar](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
@@ -53,7 +52,7 @@ Você pode acessar a ferramenta Recortar no Dynamic Media Classic na página Det
 
 Quando você salva uma versão cortada manualmente, a imagem é exibida como permanentemente cortada; O Dynamic Media Classic na verdade está ocultando os pixels adicionando um modificador de URL interno para cortar a imagem. Ao publicar, todos verão que a imagem está cortada. No entanto, é possível retornar ao Editor de corte e remover o corte posteriormente.
 
-Em seguida, você pode escolher se deseja salvar como uma Nova Imagem Mestre ou como uma Exibição Adicional do Mestre. Um novo mestre é um novo arquivo físico (como um TIFF ou JPEG) que ocupa espaço de armazenamento. Uma exibição adicional é uma imagem virtual que não ocupa espaço no servidor. Não recomendamos que você escolha Substituir original, pois isso substituirá o mestre e tornará o corte permanente. Se você salvar como um novo mestre ou como uma visualização adicional, deverá escolher uma nova ID de ativo. Como outras IDs de ativo, esse deve ser um nome exclusivo no Dynamic Media Classic.
+Você pode escolher se deseja salvar como uma Nova imagem Principal ou como uma Exibição adicional do principal. Um novo principal é um novo arquivo físico (como um TIFF ou JPEG) que ocupa espaço de armazenamento. Uma exibição adicional é uma imagem virtual que não ocupa espaço no servidor. Não recomendamos que você escolha Substituir original, pois isso substituirá sua principal e tornará a colheita permanente. Se você salvar como uma nova principal ou como uma visualização adicional, deverá escolher uma nova ID do ativo. Como outras IDs de ativo, esse deve ser um nome exclusivo no Dynamic Media Classic.
 
 ### _Corte_
 
@@ -105,11 +104,11 @@ O corte agora fará parte dessa Predefinição de imagem e será aplicado automa
 
 ## Imagens ajustadas
 
-Ao usar a ferramenta Cortar, você tem a opção de **Salvar como Exibição Adicional do Mestre**. Quando salvo, isso cria um novo tipo de ativo do Dynamic Media Classic — uma imagem ajustada. Uma Imagem Ajustada, também chamada de derivada, é uma imagem virtual. Na verdade não é uma imagem. é uma referência de banco de dados (como um alias ou atalho) para a imagem principal física.
+Ao usar a ferramenta Corte demarcado, você tem a opção de **Salvar como exibição adicional do Principal**. Quando salvo, isso cria um novo tipo de ativo do Dynamic Media Classic — uma imagem ajustada. Uma Imagem Ajustada, também chamada de derivada, é uma imagem virtual. Na verdade não é uma imagem. é uma referência de banco de dados (como um alias ou atalho) para a imagem física principal.
 
 ### A imagem real ficará ativa`?`?
 
-Você sabe qual é o mestre e qual é a imagem ajustada?
+Você sabe qual é a principal e qual é a imagem ajustada?
 
 ![imagem](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
@@ -121,14 +120,14 @@ Uma Imagem Ajustada não usa espaço em disco, pois só existe como um item de l
 
 Normalmente, você cria Imagens ajustadas com a ferramenta Corte demarcado; no entanto, eles também podem ser criados com os outros editores de imagem — as ferramentas Ajustar e Nitidez.
 
-Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, você pode exibir Imagens ajustadas associadas a uma imagem mestre na guia **Criar e derivados**.
+Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, você pode visualizar Imagens ajustadas associadas a uma imagem principal na guia **Criar e derivados**.
 
 ![](assets/crop-adjusted-zoom-targets/derivatives.jpg)
-_imageAjusted Views para a imagem mestre ASIAN_BR_MAIN_
+_imageAjusted Views para a imagem principal ASIAN_BR_MAIN_
 
 ## Metas de zoom
 
-Metas de zoom também são encontradas no menu **Editar** e na página **Detalhes** de uma imagem. Eles permitem definir &quot;pontos de acesso&quot; para destacar recursos de merchandising específicos de uma imagem de zoom. Em vez de criar imagens separadas ao recortar um mestre grande, o visualizador de zoom pode disponibilizar os detalhes sobre a imagem, juntamente com um pequeno rótulo que você cria.
+Metas de zoom também são encontradas no menu **Editar** e na página **Detalhes** de uma imagem. Eles permitem definir &quot;pontos de acesso&quot; para destacar recursos de merchandising específicos de uma imagem de zoom. Em vez de criar imagens separadas recortando uma principal grande, o visualizador de zoom pode exibir os detalhes na parte superior da imagem, juntamente com um pequeno rótulo que você cria.
 
 ![imagem](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -144,7 +143,7 @@ Saiba como [Criar metas de zoom](https://docs.adobe.com/content/help/en/dynamic-
 
 ### Usar a ferramenta de direcionamento de zoom
 
-Este é o fluxo de trabalho para criar destinos no Dynamic Media Classic.
+Este é o fluxo de trabalho para criar metas no Dynamic Media Classic.
 
 1. Navegue até a imagem, clique no botão **Edit** e escolha **Zoom Targets**.
 2. O Editor de direcionamento de zoom será carregado. Você verá sua imagem no meio, alguns botões na parte superior e um painel de destino vazio à direita. Na parte inferior esquerda, você verá uma Predefinição do visualizador selecionada. O padrão é &quot;Zoom1-Guiado&quot;.
