@@ -7,13 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
-topic: Content Management
-role: Administrator
+topic: Gerenciamento de conteúdo
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 3%
 
 ---
@@ -25,7 +24,7 @@ Neste último capítulo, queremos que você saiba sobre dois relatórios valioso
 
 ## Relatório de largura de banda e armazenamento
 
-O relatório Largura de banda e armazenamento detalha quanta largura de banda do Servidor de imagem foi consumida por mês e o armazenamento que você está utilizando no Dynamic Media Classic. O armazenamento é um valor contratado, portanto, é importante verificar e garantir que você permaneça abaixo do limite para evitar taxas de excedente.
+O relatório Largura de banda e armazenamento detalha quanta largura de banda do Servidor de imagem foi consumida por mês e o armazenamento que você está ocupando no Dynamic Media Classic. O armazenamento é um valor contratado, portanto, é importante verificar e garantir que você permaneça abaixo do limite para evitar taxas de excedente.
 
 ![imagem](assets/valuable-reports/reports-1.jpg)
 
@@ -45,9 +44,9 @@ Esperamos que você tenha considerado o conteúdo deste guia de práticas recome
 
 Para saber mais sobre o Dynamic Media Classic, consulte os seguintes recursos:
 
-- [Dynamic Media Classic na Experience League - Obtenha valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic na Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Os arquivos de informativos do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Dynamic Media Classic no Experience League - Obter valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic no Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Os Arquivos de Informativo do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Página de assinatura do informativo do Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentação do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Publicações de blog de mídia avançada](https://theblog.adobe.com/tag/dynamic-media)
