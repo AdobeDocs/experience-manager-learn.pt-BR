@@ -3,19 +3,18 @@ title: 'Preencher tabela de formulário adaptável '
 seo-title: Preencher tabela de formulário adaptável
 description: Preencha a tabela de formulário adaptável com os resultados das chamadas do serviço de modelo de dados de formulário
 seo-description: Preencha a tabela de formulário adaptável com os resultados das chamadas do serviço de modelo de dados de formulário
-feature: Adaptive Forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
-role: Business Practitioner
+topic: Desenvolvimento
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
@@ -34,7 +33,7 @@ A Linha1 está configurada para crescer, dependendo dos dados retornados pela ch
 
 [Instale o Tomcat conforme especificado ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [aquiImplante o ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[arquivo SampleRest.warInstale os ativos  ](assets/amortizationschedule.zip) usando o gerenciador de pacotes AEM 
+[arquivo SampleRest.warInstale os ativos  ](assets/amortizationschedule.zip) usando AEM gerenciador de pacotes 
 [Abra o ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Formulário de agendamento de personalizaçãoInsira o valor apropriado e clique em calcular Agendamento de Amortização deve ser preenchido em seu formulário
 
