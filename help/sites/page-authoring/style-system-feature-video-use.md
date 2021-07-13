@@ -1,9 +1,9 @@
 ---
 title: Uso do sistema de estilos com o AEM Sites
-seo-title: Uso do Sistema de estilos com o Adobe Experience Manager, AEM Sites
-description: O Sistema de estilos do Adobe Experience Manager permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes do AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com os Componentes principais do AEM, o editor de modelos e o layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
-seo-description: O Sistema de estilos do Adobe Experience Manager permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes do AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com os Componentes principais do AEM, o editor de modelos e o layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
-feature: Style System
+seo-title: Uso do Sistema de estilos com Adobe Experience Manager, AEM Sites
+description: O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
+seo-description: O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
+feature: Sistema de estilos
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
@@ -11,21 +11,20 @@ activity: use
 version: cloud-service
 kt: 974
 thumbnail: 21750.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '260'
 ht-degree: 4%
 
 ---
 
 
-# Uso do Sistema de estilos {#using-the-style-system-with-aem-sites}
+# Uso do sistema de estilos {#using-the-style-system-with-aem-sites}
 
-O Sistema de estilos do Adobe Experience Manager permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes do AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com os Componentes principais do AEM, o editor de modelos e o layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
+O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21750/?quality=12&learn=on)
 
