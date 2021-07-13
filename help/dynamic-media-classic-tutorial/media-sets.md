@@ -1,19 +1,18 @@
 ---
 title: Imagem, amostra, rotação e conjuntos de mídia mista
-description: Uma das capacidades mais úteis e eficientes do Dynamic Media Classic é o suporte para a criação de conjuntos de mídia avançada, como Imagem, Amostra, Rotação e Conjuntos de mídia mista. Saiba o que cada conjunto de mídia avançada é e como criar cada tipo no Dynamic Media Classic. Em seguida, saiba mais sobre Predefinições de conjunto de lotes, que automatizam o processo de criação de conjuntos de mídia avançada após o upload.
+description: Uma das habilidades mais úteis e eficientes do Dynamic Media Classic é o suporte para a criação de conjuntos de mídia avançada, como Imagem, Amostra, Rotação e Conjuntos de mídia mista. Saiba o que cada conjunto de mídia avançada é e como criar cada tipo no Dynamic Media Classic. Em seguida, saiba mais sobre Predefinições de conjunto de lotes, que automatizam o processo de criação de conjuntos de mídia avançada após o upload.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
+feature: Dynamic Media Classic, Conjuntos de imagens, Conjuntos de mídias mistas, Conjuntos de rotação
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1468'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 # Imagem, amostra, rotação e conjuntos de mídia mista {#media-sets}
 
-Além de imagens únicas para dimensionamento dinâmico e zoom, as coleções de conjunto do Dynamic Media Classic permitem uma experiência online mais rica. Esta seção do tutorial explorará como criar os seguintes conjuntos de mídia avançada no Dynamic Media Classic:
+Além de imagens únicas para dimensionamento dinâmico e zoom, as coleções de conjuntos do Dynamic Media Classic permitem uma experiência online mais rica. Esta seção do tutorial explorará como criar os seguintes conjuntos de mídia avançada no Dynamic Media Classic:
 
 - Definição de imagem
 - Conjunto de amostras
@@ -61,7 +60,7 @@ Normalmente, esse tipo de conjunto é usado para exibir exibições coloridas do
 
 A principal diferença entre uma Amostra e um Conjunto de imagens é que os Conjuntos de amostras usam uma imagem diferente como uma amostra clicável, enquanto os Conjuntos de imagens usam uma versão em miniatura clicável da imagem original.
 
-Os conjuntos de amostras não colorem imagens (um equívoco comum). As imagens estão sendo simplesmente trocadas, exatamente como em um Conjunto de imagens. As miniimagens de amostra poderiam ter sido criadas com o Photoshop, cada cor poderia ter sido fotografada separadamente, ou a ferramenta Recortar no Dynamic Media Classic poderia ter sido usada para fazer uma amostra de uma das imagens coloridas.
+Os conjuntos de amostras não colorem imagens (um equívoco comum). As imagens estão sendo simplesmente trocadas, exatamente como em um Conjunto de imagens. As miniimagens de amostra poderiam ter sido criadas com o Photoshop, cada cor poderia ter sido fotografada separadamente ou a ferramenta Corte no Dynamic Media Classic poderia ter sido usada para fazer uma amostra de uma das imagens coloridas.
 
 ![imagem](assets/media-sets/image-set-2.jpg)
 
@@ -122,7 +121,7 @@ Embora seja possível criar a predefinição por conta própria (elas são encon
 - As predefinições do conjunto de lotes podem ser complexas para configuração. Elas são fornecidas por expressões regulares e, a menos que você seja um desenvolvedor, essa sintaxe pode ser desconhecida ou confusa.
 - Depois de criados, eles são ativados por padrão. Não há função &quot;desfazer&quot;. Se você começar a fazer o upload de milhares de imagens e sua predefinição estiver configurada incorretamente, poderá acabar com centenas ou milhares de conjuntos quebrados que devem ser encontrados e excluídos manualmente.
 
-Uma convenção de nomenclatura simples foi sugerida anteriormente, o que seria muito fácil de criar em uma predefinição de conjunto de lotes. No entanto, como as predefinições são muito flexíveis, elas podem lidar com estratégias de nomeação complexas. Resumindo, as imagens que pertencem a um conjunto devem ser vinculadas por um nome comum — geralmente é o número SKU ou a ID do produto. No Dynamic Media Classic, você informa a ela uma convenção de nomenclatura padrão para que todas as suas imagens sejam usadas para uma predefinição, ou você pode criar várias predefinições, cada uma com regras de nomenclatura diferentes.
+Uma convenção de nomenclatura simples foi sugerida anteriormente, o que seria muito fácil de criar em uma predefinição de conjunto de lotes. No entanto, como as predefinições são muito flexíveis, elas podem lidar com estratégias de nomeação complexas. Resumindo, as imagens que pertencem a um conjunto devem ser vinculadas por um nome comum — geralmente é o número SKU ou a ID do produto. No Dynamic Media Classic, você informa uma convenção de nomenclatura padrão para todas as suas imagens serem usadas para uma predefinição, ou você pode criar várias predefinições, cada uma com regras de nomenclatura diferentes.
 
 As predefinições do conjunto de lotes são aplicadas somente no upload; elas não podem ser executadas depois que as imagens são carregadas. Portanto, é importante planejar sua convenção de nomenclatura e obter uma predefinição criada antes de iniciar o carregamento de todas as imagens.
 
