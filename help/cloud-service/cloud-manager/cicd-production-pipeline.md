@@ -10,10 +10,9 @@ version: cloud-service
 kt: 6872, 6875
 thumbnail: 26317.jpg
 topic: Arquitetura
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 2%
