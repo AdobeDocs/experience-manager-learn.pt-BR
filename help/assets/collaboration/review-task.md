@@ -2,18 +2,17 @@
 title: Tarefa de análise
 description: Explore como a tarefa de revisão do AEM Assets facilita os fluxos de trabalho de revisão e aprovação mais comuns.
 sub-product: ativos
-feature: Collaboration
+feature: Colaboração
 version: cloud-service
 kt: 4670
 thumbnail: 32050.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Colaboração
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 15%
+source-wordcount: '35'
+ht-degree: 17%
 
 ---
 
