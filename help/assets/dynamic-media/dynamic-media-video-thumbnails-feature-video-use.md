@@ -1,16 +1,15 @@
 ---
 title: Utilização da miniatura de vídeo personalizada com o AEM Dynamic Media
-description: As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capacidade de selecionar uma miniatura apropriada de um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
+description: As miniaturas de vídeo personalizadas do AEM Assets oferecem aos autores a capacidade de selecionar uma miniatura apropriada em um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Perfis de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '109'
 ht-degree: 11%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 11%
 
 # Utilização da miniatura de vídeo personalizada com o AEM Dynamic Media{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
-As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capacidade de selecionar uma miniatura apropriada de um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
+As miniaturas de vídeo personalizadas do AEM Assets oferecem aos autores a capacidade de selecionar uma miniatura apropriada em um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16467/?quality=9&learn=on)
 
@@ -28,4 +27,4 @@ As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capa
 
 >[!NOTE]
 >
->Você deve executar sua instância do [AEM no modo Dynamic Media](https://docs.adobe.com/docs/pt-BR/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
+>Você deve executar a instância [AEM no modo Dynamic Media](https://docs.adobe.com/docs/pt-BR/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
