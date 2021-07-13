@@ -1,19 +1,18 @@
 ---
 title: Predefinições de imagem
-description: As predefinições de imagens no Dynamic Media Classic contêm todas as configurações necessárias para criar uma imagem em um tamanho, formato, qualidade e nitidez específicos. As predefinições de imagens são um componente essencial do dimensionamento dinâmico. Ao observar um URL no Dynamic Media Classic, é possível ver facilmente se uma predefinição de imagem está em uso. Saiba mais sobre Predefinições de imagem, por que elas são tão úteis e como criar uma.
+description: As predefinições de imagens no Dynamic Media Classic contêm todas as configurações necessárias para criar uma imagem em um tamanho, formato, qualidade e nitidez específicos. As predefinições de imagens são um componente essencial do dimensionamento dinâmico. Ao observar um URL no Dynamic Media Classic, é possível ver se uma predefinição de imagem está em uso. Saiba mais sobre Predefinições de imagem, por que elas são tão úteis e como criar uma.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Presets
+feature: Dynamic Media Classic, predefinições de imagem
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
