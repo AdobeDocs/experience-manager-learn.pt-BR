@@ -3,19 +3,18 @@ title: Adicionar itens ao componente de grupo de opções
 seo-title: Adicionar itens ao componente de grupo de opções
 description: Adicionar itens ao componente de grupo de opções dinamicamente
 seo-description: Adicionar itens ao componente de grupo de opções dinamicamente
-feature: Adaptive Forms
+feature: Formulários adaptáveis
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
-role: Business Practitioner
+topic: Desenvolvimento
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 1%
 
 # Adicionar itens dinamicamente ao componente de grupo de escolha
 
-O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha de Formulários adaptáveis, como CheckBox, botão de opção e lista de imagens.
+O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha do Adaptive Forms, como CheckBox, botão de opção e lista de imagens.
 
 [Esse recurso está disponível no servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0) de amostras. Procure por itens da caixa de seleção dinâmica e clique em &quot;Testar&quot;
 
@@ -86,7 +85,7 @@ Para experimentar isso em seu sistema:
 **Uso do editor de códigos para adicionar itens**
 
 * [Baixar os ativos](assets/usingthecodeeditor.zip)
-* [Formulários E Documentos Abertos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
 * [Visualizar formulários](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Insira o Nome do Candidato e selecione o Status do Marital para Casar
@@ -99,7 +98,7 @@ Para experimentar isso em seu sistema:
 * [Baixar os ativos](assets/usingthevisualeditor.zip)
 * Instale o Tomcat se ainda não o tiver. [Instruções para instalar o tomcat estão disponíveis aqui](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Implantar arquivo SampleRest.war no Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-* [Formulários E Documentos Abertos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
 * [Visualizar formulários](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Insira Loan amount e tab fora do campo. Isso acionará a regra que exibe o campo do período de empréstimo.
@@ -108,4 +107,4 @@ Para experimentar isso em seu sistema:
 * A tabela de amortização deve ser preenchida. O agendamento de amortização é obtido usando uma chamada REST.
 
 >[!NOTE]
-> Pressupõe-se que o tomcat esteja sendo executado na porta 8080 e no AEM na porta 4502
+> Pressupõe-se que o tomcat esteja funcionando na porta 8080 e AEM na porta 4502
