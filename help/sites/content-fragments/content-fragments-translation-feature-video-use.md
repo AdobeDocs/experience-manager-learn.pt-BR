@@ -1,23 +1,22 @@
 ---
-title: Suporte de tradução para Fragmentos de conteúdo do AEM
+title: Suporte de tradução para Fragmentos de conteúdo AEM
 description: Saiba como os Fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
-feature: Content Fragments, Multi Site Manager
-topic: Localization
-role: Business Practitioner
+feature: Fragmentos de conteúdo, Gerenciador de vários sites
+topic: Localização
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
 
 
-# Suporte de tradução para Fragmentos de conteúdo do AEM {#translation-support-content-fragments}
+# Suporte de tradução para Fragmentos de conteúdo AEM {#translation-support-content-fragments}
 
 Saiba como os Fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
 
@@ -25,7 +24,7 @@ Saiba como os Fragmentos de conteúdo podem ser localizados e traduzidos com o A
 
 ## Casos de uso da tradução do fragmento de conteúdo {#content-fragment-translation-use-cases}
 
-Fragmentos de conteúdo são um tipo de conteúdo reconhecido que o AEM extrai para ser enviado a um serviço de tradução externo. Vários casos de uso são suportados imediatamente:
+Fragmentos de conteúdo são um tipo de conteúdo reconhecido que AEM extrações a serem enviadas para um serviço de tradução externo. Vários casos de uso são suportados imediatamente:
 
 1. Um Fragmento de conteúdo pode ser selecionado diretamente no console Assets para cópia de idioma e tradução
 2. Os Fragmentos de conteúdo referenciados em uma página Sites são copiados para a pasta de idioma apropriada e extraídos para tradução quando a página Sites é selecionada para cópia de idioma
