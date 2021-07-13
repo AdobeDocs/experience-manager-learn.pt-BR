@@ -7,13 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gerenciamento de conteúdo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2734'
 ht-degree: 1%
 
 ---
@@ -25,7 +24,7 @@ O Dynamic Media é compatível com um processo de fluxo de trabalho Criar (e faz
 
 ![imagem](assets/main-workflow/create-author-deliver.jpg)
 
-O fluxo de trabalho nas soluções Dynamic Media Classic consiste em três etapas principais:
+O fluxo de trabalho nas soluções do Dynamic Media Classic consiste em três etapas principais:
 
 1. Criar (e fazer upload) SourceContent
 2. Criar (e publicar) ativos
@@ -33,7 +32,7 @@ O fluxo de trabalho nas soluções Dynamic Media Classic consiste em três etapa
 
 ## Etapa 1: Criar (e fazer upload)
 
-Este é o início do workflow. Nesta etapa, você coleta ou cria o conteúdo de origem que se encaixa no fluxo de trabalho que está usando e o carrega no Dynamic Media Classic. O sistema oferece suporte a vários tipos de arquivo para imagens, vídeo e fontes, mas também para PDF, Adobe Illustrator e Adobe InDesign.
+Este é o início do workflow. Nesta etapa, você coleta ou cria o conteúdo de origem que se encaixa no fluxo de trabalho que está usando e o carrega no Dynamic Media Classic. O sistema oferece suporte a vários tipos de arquivos para imagens, vídeo e fontes, mas também para PDF, Adobe Illustrator e Adobe InDesign.
 
 Consulte a lista completa de [Tipos de Arquivo Suportados](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
@@ -48,7 +47,7 @@ O modo padrão é A partir da área de trabalho, onde você procura arquivos na 
 
 >[!TIP]
 >
->Não adicione manualmente as pastas. Em vez disso, execute um upload do FTP e use a opção **Include Subfolders** para recriar a estrutura da pasta no Dynamic Media Classic.
+>Não adicione manualmente as pastas. Em vez disso, execute um upload do FTP e use a opção **Include Subfolders** para recriar a estrutura de pastas dentro do Dynamic Media Classic.
 
 As duas opções de upload mais importantes são ativadas por padrão — **Marcar para publicação**, o que discutimos anteriormente, e **Substituir**. Substituir significa que, se o arquivo que está sendo carregado tiver o mesmo nome de um arquivo já no sistema, o novo arquivo substituirá a versão existente. Se você desmarcar esta opção, talvez o arquivo não seja carregado.
 
@@ -74,19 +73,19 @@ Embora não seja necessário, ao fazer upload usando qualquer um dos dois métod
 
 Saiba mais sobre [Opções de trabalho](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
-O upload é a primeira etapa necessária em qualquer fluxo de trabalho, pois o Dynamic Media Classic não pode funcionar com nenhum conteúdo que ainda não esteja no sistema. Em segundo plano durante o upload, o sistema registra cada ativo carregado no banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem em um formato que permite redimensionamento dinâmico e zoom e converte arquivos de vídeo para o formato compatível com a Web MP4.
+O upload é a primeira etapa necessária em qualquer fluxo de trabalho, pois o Dynamic Media Classic não pode funcionar com nenhum conteúdo que ainda não esteja em seu sistema. Em segundo plano durante o upload, o sistema registra cada ativo carregado no banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem em um formato que permite redimensionamento dinâmico e zoom e converte arquivos de vídeo para o formato compatível com a Web MP4.
 
-### Conceito: Veja o que acontece com as imagens quando você as carrega no Dynamic Media Classic
+### Conceito: Veja o que acontece com as imagens quando você as carrega para o Dynamic Media Classic
 
-Ao fazer upload de uma imagem de qualquer tipo para o Dynamic Media Classic, ela é convertida em um formato de imagem mestre chamado Pyramid TIFF ou P-TIFF. Um P-TIFF é semelhante ao formato de uma imagem de bitmap TIFF em camadas, exceto que, em vez de camadas diferentes, o arquivo contém vários tamanhos (resoluções) da mesma imagem.
+Ao carregar uma imagem de qualquer tipo para o Dynamic Media Classic, ela é convertida em um formato de imagem principal chamado TIFF de Pirâmide ou P-TIFF. Um P-TIFF é semelhante ao formato de uma imagem de bitmap TIFF em camadas, exceto que, em vez de camadas diferentes, o arquivo contém vários tamanhos (resoluções) da mesma imagem.
 
 ![imagem](assets/main-workflow/pyramid-p-tiff.png)
 
-À medida que a imagem é convertida, o Dynamic Media Classic captura um &quot;instantâneo&quot; do tamanho total da imagem, dimensiona-o pela metade e salva-o, dimensiona-o pela metade novamente e o salva, e assim por diante, até ser preenchido com múltiplos do tamanho original. Por exemplo, um P-TIFF de 2000 pixels terá tamanhos de 1000, 500, 250 e 125 pixels (e menores) no mesmo arquivo. O arquivo P-TIFF é o formato do que é chamado de &quot;imagem mestre&quot; no Dynamic Media Classic.
+À medida que a imagem é convertida, o Dynamic Media Classic captura um &quot;instantâneo&quot; do tamanho total da imagem, dimensiona-o pela metade e o salva, dimensiona-o pela metade novamente e o salva, e assim por diante, até que seja preenchido com múltiplos pares do tamanho original. Por exemplo, um P-TIFF de 2000 pixels terá tamanhos de 1000, 500, 250 e 125 pixels (e menores) no mesmo arquivo. O arquivo P-TIFF é o formato do que é chamado de &quot;imagem principal&quot; no Dynamic Media Classic.
 
-Quando você solicita uma imagem de determinado tamanho, a criação do P-TIFF permite que o Servidor de imagem do Dynamic Media Classic encontre rapidamente o próximo tamanho maior e o dimensione. Por exemplo, se você carregar uma imagem de 2000 pixels e solicitar uma imagem de 100 pixels, o Dynamic Media Classic encontrará a versão de 125 pixels e a dimensionará para 100 pixels em vez de dimensionar de 2000 para 100 pixels. Isso torna a operação muito rápida. Além disso, ao ampliar uma imagem, isso permite que o visualizador de zoom solicite apenas um bloco da imagem que está sendo ampliada, em vez de toda a imagem de resolução completa. É assim que o formato da imagem mestre, o arquivo P-TIFF, suporta dimensionamento dinâmico e zoom.
+Quando você solicita uma imagem de determinado tamanho, a criação do P-TIFF permite que o Servidor de imagem para o Dynamic Media Classic encontre rapidamente o próximo tamanho maior e o dimensione. Por exemplo, se você carregar uma imagem de 2000 pixels e solicitar uma imagem de 100 pixels, o Dynamic Media Classic encontrará a versão de 125 pixels e a dimensionará para 100 pixels em vez de dimensionar de 2000 para 100 pixels. Isso torna a operação muito rápida. Além disso, ao ampliar uma imagem, isso permite que o visualizador de zoom solicite apenas um bloco da imagem que está sendo ampliada, em vez de toda a imagem de resolução completa. É assim que o formato de imagem principal, o arquivo P-TIFF, suporta dimensionamento dinâmico e zoom.
 
-Da mesma forma, você pode fazer upload do vídeo de origem mestre no Dynamic Media Classic e, ao fazer upload do Dynamic Media Classic, redimensioná-lo automaticamente e convertê-lo no formato compatível com a Web MP4.
+Da mesma forma, você pode fazer o upload do vídeo de origem principal para o Dynamic Media Classic e, ao fazer o upload do Dynamic Media Classic, redimensioná-lo automaticamente e convertê-lo para o formato MP4 compatível com a Web.
 
 ### Regras de polegar para determinar o tamanho ideal para as imagens que você carrega
 
@@ -95,11 +94,11 @@ Da mesma forma, você pode fazer upload do vídeo de origem mestre no Dynamic Me
 - Se precisar aplicar zoom, carregue uma imagem de alta resolução de um intervalo de 1500-2500 pixels na dimensão mais longa. Considere quantos detalhes deseja fornecer, a qualidade das imagens de origem e o tamanho do produto sendo exibido. Por exemplo, carregue uma imagem de 1000 pixels para um minúsculo anel, mas uma imagem de 3000 pixels para uma cena de salas inteiras.
 - Se não precisar aplicar zoom, faça o upload no tamanho exato em que será visto. Por exemplo, se você tiver logotipos ou imagens de abertura/banner para colocar em suas páginas, carregue-os exatamente no tamanho 1:1 e chame-os exatamente nesse tamanho.
 
-**Nunca faça upload ou exploda suas imagens antes de fazer upload para o Dynamic Media Classic.** Por exemplo, não faça o upsample de uma imagem menor para torná-la uma imagem de 2000 pixels. Não vai ficar bom. Faça suas imagens o mais perto possível da perfeição antes de fazer upload.
+**Nunca faça o upsample ou exploda suas imagens antes de fazer upload para o Dynamic Media Classic.** Por exemplo, não faça o upsample de uma imagem menor para torná-la uma imagem de 2000 pixels. Não vai ficar bom. Faça suas imagens o mais perto possível da perfeição antes de fazer upload.
 
 **Não há tamanho mínimo para zoom, mas, por padrão, os visualizadores não terão mais zoom do que 100%.** Se a imagem for muito pequena, não terá zoom algum ou apenas aumentará o zoom de uma pequena quantidade para evitar que pareça ruim.
 
-**Embora não haja um mínimo para o tamanho da imagem, não recomendamos fazer upload de imagens gigantes.** Uma imagem gigante pode ser considerada mais de 4000 pixels. Fazer upload de imagens desse tamanho pode mostrar possíveis falhas, como grãos de pó ou pêlos na imagem. Essas imagens também ocuparão mais espaço no servidor do Dynamic Media Classic, o que pode fazer com que você ultrapasse os limites de armazenamento contratado.
+**Embora não haja um mínimo para o tamanho da imagem, não recomendamos fazer upload de imagens gigantes.** Uma imagem gigante pode ser considerada mais de 4000 pixels. Fazer upload de imagens desse tamanho pode mostrar possíveis falhas, como grãos de pó ou pêlos na imagem. Essas imagens também ocuparão mais espaço no servidor Dynamic Media Classic, o que pode fazer com que você ultrapasse os limites de armazenamento contratado.
 
 Saiba mais sobre o [Upload de arquivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
@@ -154,7 +153,7 @@ Saiba como [Limpar manualmente o cache para os URLs que precisam ser atualizados
 
 ## Etapa 3: Delivery
 
-Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou qualquer outra coleção ou vídeo do Conjunto de imagens. Você precisa pegar essa URL e fazer algo com ela, como editar seu HTML para que as tags `<IMG>` apontem para a imagem do Dynamic Media Classic em vez de apontar para uma imagem que vem do seu site atual.
+Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou qualquer outra coleção ou vídeo do Conjunto de imagens. Você precisa pegar esse URL e fazer algo com ele, como editar seu HTML para que as tags `<IMG>` apontem para a imagem do Dynamic Media Classic em vez de apontar para uma imagem que vem do seu site atual.
 
 Na etapa Deliver , você deve integrar esses URLs ao seu site, aplicativo móvel, campanha por email ou qualquer outro ponto de contato digital no qual deseja exibir o ativo.
 
@@ -164,7 +163,7 @@ Exemplo de integração do URL do Dynamic Media Classic para uma imagem em um si
 
 O URL em vermelho é o único elemento específico do Dynamic Media Classic.
 
-Sua equipe de TI ou parceiro de integração pode assumir a liderança ao escrever e alterar o código para integrar URLs do Dynamic Media Classic ao site. A Adobe tem uma equipe de consultoria que pode ajudar nesse esforço, fornecendo orientação técnica, criativa ou geral.
+Sua equipe de TI ou parceiro de integração pode liderar a escrita e a alteração de código para integrar URLs do Dynamic Media Classic ao seu site. A Adobe tem uma equipe de consultoria que pode ajudar nesse esforço, fornecendo orientação técnica, criativa ou geral.
 
 Para soluções mais complexas, como visualizadores de zoom, ou visualizadores que combinam zoom com visualizações alternativas, o URL normalmente aponta para um visualizador hospedado pelo Dynamic Media Classic, e também dentro desse URL é uma referência a uma ID de ativo.
 
@@ -174,7 +173,7 @@ Exemplo de um link (em vermelho) que abrirá um Conjunto de imagens em um visual
 
 >[!IMPORTANT]
 >
->Você precisa integrar os URLs do Dynamic Media Classic no seu site, aplicativo móvel, email e outros pontos de contato digitais — o Dynamic Media Classic não pode fazer isso para você!
+>Você precisa integrar os URLs do Dynamic Media Classic ao seu site, aplicativo móvel, email e outros pontos de contato digitais — o Dynamic Media Classic não pode fazer isso para você!
 
 ## Visualizar ativos
 
