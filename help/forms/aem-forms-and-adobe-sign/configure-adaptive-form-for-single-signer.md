@@ -8,13 +8,12 @@ doc-type: article
 activity: implement
 thumbnail: 39475.jpg
 kt: 6103
-topic: Development
-role: Business Practitioner
+topic: Desenvolvimento
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '66'
 ht-degree: 1%
 
 ---
@@ -28,4 +27,4 @@ O vídeo explica as várias etapas necessárias para configurar um formulário a
 
 Os ativos relacionados a este vídeo podem ser baixados no link a seguir
 
-* [Alteração Do Formulário De Beneficiário  ](assets/change-of-beneficiary-form.zip)
+* [Alteração Do Formulário De Beneficiário ](assets/change-of-beneficiary-form.zip)
