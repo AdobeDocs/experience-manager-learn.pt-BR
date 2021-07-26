@@ -11,10 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-translation-type: tm+mt
-source-git-commit: 255d6bd403d240b2c18a0ca46c15b0bb98cf9593
+source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
@@ -304,7 +303,7 @@ Primeiro, carregue uma captura de cabeça de amostra no AEM Assets para usar o p
 
    ![Cabeçalho carregado](assets/custom-component/stacey-roswell-headshot-assets.png)
 
-### Crie o componente {#author-the-component}
+### Criar o componente {#author-the-component}
 
 Em seguida, adicione o componente Byline a uma página em AEM. Como adicionamos o componente Byline ao **Projeto de Sites WKND - Conteúdo** Grupo de Componentes, por meio da definição `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, ele fica automaticamente disponível para qualquer grupo de componentes **Contêiner** cujo **Política** permite o **Projeto de Sites WKND - Conteúdo**, que a Página do Artigo O Contêiner de layout é.
 
@@ -346,13 +345,13 @@ Em seguida, adicione o componente Byline a uma página em AEM. Como adicionamos 
 
    ![propriedades de linha de bytes no CRXDE](assets/custom-component/byline-properties-crxde.png)
 
-## Criar Modelo de Sling de Byline {#create-sling-model}
+## Criar Modelo de Sling por Linha {#create-sling-model}
 
 Em seguida, criaremos um Modelo do Sling para agir como o modelo de dados e manter a lógica de negócios do componente Byline.
 
 Os Modelos do Sling são objetos Java &quot;POJO&quot; (Plain Old Java Objects) orientados por anotações que facilitam o mapeamento de dados do JCR para variáveis Java e fornecem várias outras sutilezas ao serem desenvolvidas no contexto de AEM.
 
-### Revisar Dependências de Maven {#maven-dependency}
+### Revisar Dependências Maven {#maven-dependency}
 
 O Modelo Byline Sling dependerá de várias APIs Java fornecidas pelo AEM. Essas APIs são disponibilizadas por meio do `dependencies` listado no arquivo POM do módulo `core`. O projeto usado para este tutorial foi criado para o AEM como um Cloud Service. No entanto, é único, pois é compatível com o AEM 6.5/6.4. Portanto, ambas as dependências para o Cloud Service e AEM 6.x estão incluídas.
 
@@ -444,7 +443,20 @@ Criar uma interface Java pública para o Byline. `Byline.java` define os método
 
    Observe que não há um método para a Imagem; [vamos verificar por que isso é posterior](#tackling-the-image-problem).
 
-### Implementação de byline {#byline-implementation}
+1. Os pacotes Java que contêm classes Java públicas, neste caso um Modelo do Sling, devem ter controle de versão usando o arquivo `package-info.java` do pacote.
+
+Como o pacote Java `com.adobe.aem.guides.wknd.core.models` da fonte WKND declara que são versões de `2.0.0` e estamos adicionando uma interface pública e métodos ininterruptos, a versão deve ser aumentada para `2.1.0`. Abra o arquivo em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` e atualize `@Version("2.0.0")` para `@Version("2.1.0")`.
+
+    &quot;
+    @Version(&quot;2.1.0&quot;)
+    pacote com.adobe.aem.guides.wknd.core.models;
+    
+    importar org.osgi.annotation.versioning.Version;
+    &quot;
+
+Sempre que são feitas alterações nos arquivos deste pacote, a versão do [pacote deve ser ajustada semanticamente](https://semver.org/). Caso contrário, o [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) do projeto Maven detectará uma versão de pacote inválida e quebrará a build. Por sorte, em caso de falha, o plug-in Maven informa a versão inválida do pacote Java, bem como a versão que deve ser usada. Basta atualizar a declaração `@Version("...")` no `package-info.java` do pacote Java em violação para a versão recomendada pelo plug-in para corrigir.
+
+### Implementação de bytes {#byline-implementation}
 
 `BylineImpl.java` é a implementação do Modelo do Sling que implementa a  `Byline.java` interface definida anteriormente. O código completo para `BylineImpl.java` pode ser encontrado na parte inferior desta seção.
 
@@ -870,7 +882,7 @@ Vamos analisar o que esse script HTL faz até agora:
 
    Observe que as classes CSS seguem a [convenção de nomenclatura BEM](https://getbem.com/naming/). Embora o uso de convenções de BEM não seja obrigatório, o BEM é recomendado, pois é usado em classes CSS de componentes principais e geralmente resulta em regras CSS limpas e legíveis.
 
-### Instalação de objetos do Modelo Sling em HTL {#instantiating-sling-model-objects-in-htl}
+### Instalação de objetos do Modelo Sling no HTL {#instantiating-sling-model-objects-in-htl}
 
 A [Use block statement](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#221-use) é usada para instanciar objetos do Modelo de Sling no script HTL e atribuí-la a uma variável HTL.
 
@@ -902,7 +914,7 @@ Métodos Java que exigem um parâmetro **não podem** ser usados em HTL. Isso é
    <h2 class="cmp-byline__name">${byline.name}</h2>
    ```
 
-### Uso das opções de expressão HTL {#using-htl-expression-options}
+### Uso das opções de expressão do HTL {#using-htl-expression-options}
 
 [As ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#12-available-expression-options) opções de expressões HTL atuam como modificadores no conteúdo em HTL e variam de formatação de data para tradução i18n. As expressões também podem ser usadas para unir listas ou matrizes de valores, que é o que é necessário para exibir as ocupações em um formato delimitado por vírgulas.
 
@@ -914,7 +926,7 @@ As expressões são adicionadas por meio do operador `@` na expressão HTL.
    <p class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
    ```
 
-### Exibição condicional do espaço reservado {#conditionally-displaying-the-placeholder}
+### Exibição condicional de espaço reservado {#conditionally-displaying-the-placeholder}
 
 A maioria dos scripts HTL para Componentes AEM aproveita o **paradigma de espaço reservado** para fornecer uma dica visual para os autores **indicando que um componente foi criado incorretamente e não será exibido na Publicação AEM**. A convenção para conduzir esta decisão é implementar um método no modelo Sling de suporte do componente, no nosso caso: `Byline.isEmpty()`.
 
@@ -941,7 +953,7 @@ A maioria dos scripts HTL para Componentes AEM aproveita o **paradigma de espaç
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-### Exibir a imagem usando os Componentes principais {#using-the-core-components-image}
+### Exibir a imagem usando os componentes principais {#using-the-core-components-image}
 
 O script HTL para `byline.html` agora está quase concluído e só falta a imagem.
 
@@ -990,7 +1002,7 @@ Para isso, precisamos incluir o recurso por linha atual, mas forçar o tipo de r
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-### Revisar o componente Byline sem estilo {#reviewing-the-unstyled-byline-component}
+### Revisar o componente Sublinhado não estilizado {#reviewing-the-unstyled-byline-component}
 
 1. Após implantar a atualização, navegue até a página [Guia do Ultimate para LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) ou onde você adicionou o componente Byline anteriormente no capítulo.
 
@@ -1081,7 +1093,7 @@ Adicione estilos padrão para o componente Linha de Byte. No projeto **ui.fronte
    >
    >Talvez seja necessário limpar o cache do navegador para garantir que o CSS obsoleto não esteja sendo atendido e atualizar a página com o componente Byline para obter o estilo completo.
 
-## Colocá-lo juntos {#putting-it-together}
+## Juntando {#putting-it-together}
 
 Abaixo está a aparência do componente Byline totalmente criado e estilizado na página AEM.
 
