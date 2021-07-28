@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: e2bdc73aff012bde5a1ff8f5c85ac0a183dc441d
+source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '460'
 ht-degree: 21%
 
 ---
@@ -57,7 +57,14 @@ ht-degree: 21%
       + [Publicação de conteúdo](./developing/basics/content-publishing.md)
       + [Configurações do OSGi](./developing/basics/osgi-configurations.md)
       + [Migração de configuração do Dispatcher](./developing/basics/dispatcher-configuration.md)
-   + [JavaDocs da API do SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + Projetos AEM{#aem-projects}
+      + [Projeto AEM Maven](./developing/projects/maven-project-structure.md)
++ Serviços OSGi{#osgi-services}
+   + [Noções básicas do serviço OSGi](./developing/osgi-services/basics.md)
+   + [Ciclo de vida do componente OSGi](./developing/osgi-services/lifecycle.md)
+   + [Noções básicas sobre configurações do OSGi](./developing/osgi-services/configurations.md)
+   + [Configurações OSGi usando OCD](./developing/osgi-services/configurations-ocd.md)
++ [JavaDocs da API do SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Depuração de AEM{#debugging}
    + Depuração do SDK do AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
