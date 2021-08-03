@@ -9,15 +9,14 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-feature: Forms Service
+feature: Serviço do Forms
 discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -25,15 +24,15 @@ ht-degree: 0%
 
 # Renderização do XDP em PDF com direitos de uso{#rendering-xdp-into-pdf-with-usage-rights}
 
-Um caso de uso comum é renderizar o xdp em PDF e aplicar as Extensões de leitura ao PDF renderizado.
+Um caso de uso comum é renderizar o xdp em PDF e aplicar extensões do Reader ao PDF renderizado.
 
-Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em XDP, podemos renderizar o XDP como PDF e o leitor estender o PDF.
+Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em XDP, podemos renderizar XDP como PDF e o leitor estender o PDF.
 
-Para testar esse recurso, você pode tentar este [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0). O nome da amostra é &quot;Renderizar XDP com RE&quot;
+Para testar esse recurso, você pode tentar este [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse2). O nome da amostra é &quot;Render e Reader Extend XDP&quot;
 
 Para realizar esse caso de uso, precisamos fazer o seguinte.
 
-* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais das Extensões de Leitor são listadas [aqui](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões do Reader estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 * Crie um serviço OSGi personalizado que renderizará e aplicará direitos de uso. O código para fazer isso está listado abaixo
 
@@ -203,11 +202,13 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 Para testar isso em seu servidor local, siga as etapas a seguir
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Baixe e instale o pacote AEMFormsDocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Baixe e importe os ativos relacionados a este artigo para o AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
+
+1. [Baixe o html do modelo de portal personalizado](assets/render-and-extend-template.zip)
+1. [Baixe e importe os ativos relacionados a este artigo no AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
    * Este pacote tem um portal de exemplo e um arquivo xdp
-1. Adicionar certificado de extensões do leitor ao usuário &quot;fd-service&quot;
+1. Adicionar certificado de extensões Reader ao usuário &quot;fd-service&quot;
 1. Aponte seu navegador para [página da Web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
-1. Clique no ícone de pdf para renderizar o xdp e obter pdf, que é o Reader Extended
+1. Clique no ícone de pdf para renderizar o xdp e obter pdf, que é Reader Extended
 
 
 
