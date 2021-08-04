@@ -12,9 +12,9 @@ thumbnail: KT-5882.jpg
 topic: Administração, segurança
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 36346a8a45fc20b5e6d71d6d00345d74b6b04c2a
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '603'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,11 @@ ht-degree: 1%
 >title="Introdução ao Adobe IMS"
 >abstract="O AEM as a Cloud Service aproveita o Adobe IMS (Identity Management System) para facilitar o logon de seus usuários, tanto administradores quanto usuários comuns, no serviço de Autor do AEM. Saiba como usuários, grupos e perfis de produto do Adobe IMS são usados em conjunto com grupos e permissões de AEM para fornecer acesso refinado ao serviço de autor do AEM."
 
-O AEM como Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM e, como tal, utiliza o Adobe IMS (Identity Management System) para facilitar o logon de seus usuários, administradores e usuários comuns, no serviço AEM Author. Saiba como usuários, grupos e perfis de produto do Adobe IMS são usados em conjunto com grupos e permissões de AEM para fornecer acesso refinado ao serviço de autor do AEM.
+O AEM como Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM e, como tal, utiliza o Adobe IMS (Identity Management System) para facilitar o logon de seus usuários, administradores e usuários comuns, no serviço AEM Author.
+
+![Adobe Admin Console](./assets/hero.png)
+
+Saiba como usuários, grupos e perfis de produto do Adobe IMS são usados em conjunto com grupos e permissões de AEM para fornecer acesso refinado ao serviço de autor do AEM.
 
 ## Usuários de Adobe IMS
 
