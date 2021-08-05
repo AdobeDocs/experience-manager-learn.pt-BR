@@ -7,9 +7,9 @@ topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1029'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 2%
 Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud.
 
 A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM em aplicativos Creative Cloud.
+
+
+## Adobe Asset Link e AEM fluxos de trabalho criativos
+
+O vídeo a seguir ilustra um fluxo de trabalho comum usado por criadores que trabalham em aplicativos Adobe Creative Cloud e fazem a integração diretamente com AEM usando o Adobe Asset Link.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
 
 ## Recursos do Adobe Asset Link
 
