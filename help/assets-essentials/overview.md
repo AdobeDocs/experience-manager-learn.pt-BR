@@ -2,9 +2,9 @@
 title: Vídeos do AEM Assets Essentials
 description: Uma coleção de vídeos do Adobe Experience Manager Assets Essentials
 sub-product: ativos
-source-git-commit: c385183bee58bc062f4d46253096828c03e058c3
+source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Confira nossos vídeos sobre como usar o Assets Essentials para gerenciar seus a
       </a>
    </div>
    <p>
-      <em>Saiba mais sobre as noções básicas de como o Assets Essentials!</em>
+      <em>Saiba mais sobre as noções básicas do Assets Essentials!</em>
    </p>
 </td>
 <td>
