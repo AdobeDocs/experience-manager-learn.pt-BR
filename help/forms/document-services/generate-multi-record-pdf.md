@@ -1,19 +1,18 @@
 ---
 title: Geração de vários pdfs a partir de um arquivo de dados
-seo-title: Geração de vários pdfs a partir de um arquivo de dados
-feature: Output Service
+description: O OutputService fornece vários métodos para criar documentos usando um design de formulário e dados para mesclar com o design de formulário. Saiba como gerar vários pdfs de um xml grande contendo vários registros individuais.
+feature: Serviço de saída
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '526'
 ht-degree: 1%
 
 ---
@@ -40,7 +39,7 @@ A assinatura do método generatePDFOutputBatch utiliza os seguintes parâmetros
 
 ## Detalhes do caso de uso{#use-case-details}
 
-Nesse caso de uso, vamos fornecer uma interface da Web simples para fazer upload do template e do arquivo data(xml). Quando o upload dos arquivos for concluído e a solicitação POST for enviada para o servlet AEM. Este servlet extrai os documentos e chama o método generatePDFOutputBatch do OutputService. Os pdfs gerados são compactados em um arquivo zip e disponibilizados ao usuário final para download no navegador da Web.
+Nesse caso de uso, vamos fornecer uma interface da Web simples para fazer upload do template e do arquivo data(xml). Quando o upload dos arquivos for concluído e a solicitação POST for enviada para AEM servlet. Este servlet extrai os documentos e chama o método generatePDFOutputBatch do OutputService. Os pdfs gerados são compactados em um arquivo zip e disponibilizados ao usuário final para download no navegador da Web.
 
 ## Código Servlet{#servlet-code}
 
