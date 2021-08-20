@@ -1,31 +1,23 @@
 ---
-title: Variáveis no fluxo de trabalho do AEM[Parte4]
-seo-title: Variáveis no fluxo de trabalho do AEM[Parte4]
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variáveis no fluxo de trabalho AEM[Parte4]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 
-# Variável ArrayList no fluxo de trabalho do AEM
+# Variável ArrayList em AEM fluxo de trabalho
 
 Variáveis do tipo ArrayList foram introduzidas no AEM Forms 6.5. Um caso de uso comum para usar a variável ArrayList é definir rotas personalizadas para serem usadas no AssignTask.
 
-Para usar a variável ArrayList em um fluxo de trabalho do AEM, é necessário criar um formulário adaptável que gere elementos repetitivos nos dados enviados. Uma prática comum é definir um schema que contenha um elemento de matriz. Para a finalidade deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário que preenche um relatório de despesas. No relatório de despesas, capturamos o nome de gerente do remetente e o nome de gerente do gerente. Os nomes do gerente são armazenados em um storage chamado gerenciamento de cadeia. A captura de tela abaixo mostra o formulário de relatório de despesas e os dados do envio do Adaptive Forms.
+Para usar a variável ArrayList em um fluxo de trabalho AEM, é necessário criar um formulário adaptável que gera elementos repetitivos nos dados enviados. Uma prática comum é definir um schema que contenha um elemento de matriz. Para a finalidade deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário que preenche um relatório de despesas. No relatório de despesas, capturamos o nome de gerente do remetente e o nome de gerente do gerente. Os nomes do gerente são armazenados em um storage chamado gerenciamento de cadeia. A captura de tela abaixo mostra o formulário de relatório de despesas e os dados do envio do Adaptive Forms.
 
 ![custsereport](assets/expensereport.jpg)
 
@@ -79,7 +71,7 @@ Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos
 Para testar esse fluxo de trabalho em seu sistema, siga as etapas a seguir
 
 * Baixe e salve o arquivo ArrayListVariable.zip em seu sistema de arquivos
-* [Importe o arquivo zip ](assets/arraylistvariable.zip) usando o Gerenciador de pacotes do AEM
+* [Importe o arquivo zip ](assets/arraylistvariable.zip) usando o Gerenciador de pacotes de AEM
 * [Abra o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Insira algumas despesas e os 2 nomes do gerente
 * Clique no botão Enviar
