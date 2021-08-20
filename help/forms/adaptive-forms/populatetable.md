@@ -1,20 +1,14 @@
 ---
 title: 'Preencher tabela de formulário adaptável '
-seo-title: Preencher tabela de formulário adaptável
 description: Preencha a tabela de formulário adaptável com os resultados das chamadas do serviço de modelo de dados de formulário
-seo-description: Preencha a tabela de formulário adaptável com os resultados das chamadas do serviço de modelo de dados de formulário
 feature: Formulários adaptáveis
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Desenvolvimento
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
