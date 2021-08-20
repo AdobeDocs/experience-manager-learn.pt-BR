@@ -1,22 +1,16 @@
 ---
 title: 'Uso de testes automatizados com AEM Adaptive Forms '
-seo-title: 'Uso de testes automatizados com AEM Adaptive Forms '
-description: Teste automatizado de formulários adaptáveis usando o SDK do Calvin
-seo-description: Teste automatizado de formulários adaptáveis usando o SDK do Calvin
-feature: Adaptive Forms
-topics: development
-audience: developer
+description: Teste automatizado do Adaptive Forms usando o Calvin SDK
+feature: Formulários adaptáveis
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
@@ -24,9 +18,9 @@ ht-degree: 1%
 
 # Uso de testes automatizados com AEM Adaptive Forms {#using-automated-tests-with-aem-adaptive-forms}
 
-Teste automatizado de formulários adaptáveis usando o SDK do Calvin
+Teste automatizado do Adaptive Forms usando o Calvin SDK
 
-O SDK do Calvin é uma API de utilitário para os desenvolvedores de formulários adaptáveis testarem formulários adaptáveis. O SDK do Calvin é criado sobre a [estrutura de teste Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). O Calvin SDK está disponível com o AEM Forms 6.3 em diante.
+O SDK do Calvin é uma API de utilitário para os desenvolvedores do Adaptive Forms testarem o Adaptive Forms. O SDK do Calvin é criado sobre a [estrutura de teste Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). O Calvin SDK está disponível a partir do AEM Forms 6.3.
 
 Neste tutorial, você criará o seguinte:
 
@@ -36,7 +30,7 @@ Neste tutorial, você criará o seguinte:
 
 ## Introdução {#getting-started}
 
-[Baixe e instale os ativos usando o ](assets/testingadaptiveformsusingcalvinsdk1.zip)Gerenciador de pacotesO pacote contém scripts de amostra e vários formulários adaptáveis.Esses formulários adaptáveis são criados usando a versão AEM Forms 6.3. É recomendável criar novos formulários específicos para sua versão do AEM Forms se você estiver testando isso no AEM Forms 6.4 ou superior. Os scripts de amostra demonstram várias APIs do SDK do Calvin disponíveis para testar Formulários adaptáveis. As etapas gerais para testar os AEM Adaptive Forms são:
+[Baixe e instale os ativos usando o ](assets/testingadaptiveformsusingcalvinsdk1.zip)Gerenciador de pacotesO pacote contém scripts de amostra e vários Forms adaptáveis.Esses Forms adaptáveis são criados usando a versão AEM Forms 6.3. É recomendável criar novos formulários específicos para a sua versão do AEM Forms, se você estiver testando isso no AEM Forms 6.4 ou posterior. Os scripts de amostra demonstram várias APIs do SDK do Calvin disponíveis para testar o Adaptive Forms. As etapas gerais para testar AEM Adaptive Forms são:
 
 * Navegue até o formulário que precisa ser testado
 * Definir o valor do campo
@@ -56,7 +50,7 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 O código acima cria um novo Test Suite.
 
 * O nome do TestSuite, neste caso, é &#39; `Mortgage Form Test` &#39;.
-* Fornecido é o caminho absoluto no AEM para o arquivo js que contém o conjunto de testes.
+* Fornecido é o caminho absoluto em AEM para o arquivo js que contém o conjunto de teste.
 * O parâmetro de registro quando definido como &#39; `true` &#39;, torna o Test Suite disponível na interface de teste.
 
 ```javascript
@@ -70,7 +64,7 @@ O código acima cria um novo Test Suite.
 
 >[!NOTE]
 >
->Se você estiver testando esse recurso no AEM Forms 6.4 ou superior, crie um novo Formulário adaptável e use-o para fazer seu teste.Não é recomendado usar o formulário adaptável fornecido com o pacote.
+>Se você estiver testando esse recurso no AEM Forms 6.4 ou superior, crie um novo formulário adaptável e use-o para fazer o teste.Não é recomendado usar o formulário adaptável fornecido com o pacote.
 
 Casos de teste podem ser adicionados ao conjunto de teste para serem executados em relação a um formulário adaptável.
 
