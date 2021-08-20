@@ -1,21 +1,17 @@
 ---
 title: Configurar fonte de dados
 description: Criar DataSource apontando para o banco de dados MySQL
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -23,8 +19,8 @@ ht-degree: 2%
 
 # Configurar fonte de dados
 
-Há muitas maneiras com as quais o AEM habilita a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar os drivers [MySQL adequados](https://mvnrepository.com/artifact/mysql/mysql-connector-java) no AEM.
+Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar os drivers [MySQL adequados](https://mvnrepository.com/artifact/mysql/mysql-connector-java) para AEM.
 Em seguida, defina as propriedades da fonte de dados agrupadas da conexão do Sling específicas ao seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
 
 ![fonte de dados](assets/data-source.JPG)
