@@ -1,23 +1,14 @@
 ---
 title: Configuração do valor do elemento de dados Json no fluxo de trabalho do AEM Forms
-seo-title: Configuração do valor do elemento de dados Json no fluxo de trabalho do AEM Forms
-description: Como um formulário adaptável é roteado para usuários diferentes no fluxo de trabalho do AEM, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
-seo-description: Como um formulário adaptável é roteado para usuários diferentes no fluxo de trabalho do AEM, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
-uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Adaptive Forms
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
+description: Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
+feature: Formulários adaptáveis
 version: 6.4
-discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -25,13 +16,13 @@ ht-degree: 1%
 
 # Configuração do valor do elemento de dados JSON no fluxo de trabalho do AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Como um formulário adaptável é roteado para usuários diferentes no fluxo de trabalho do AEM, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
+Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
 
 ![Configuração do valor de um elemento em dados json](assets/capture-3.gif)
 
 No AEM Forms OSGI - teremos que gravar um pacote OSGi personalizado para definir o valor do elemento de dados JSON. O pacote é fornecido como parte deste tutorial.
 
-Usamos a Etapa do processo no fluxo de trabalho do AEM. Associamos o pacote OSGi &quot;Definir valor do elemento no Json&quot; a esta etapa do processo.
+Usamos a Etapa do processo AEM fluxo de trabalho. Associamos o pacote OSGi &quot;Definir valor do elemento no Json&quot; a esta etapa do processo.
 
 Precisamos passar dois argumentos para o pacote de valores definido. O primeiro argumento é o caminho para o elemento cujo valor precisa ser definido. O segundo argumento é o valor que precisa ser definido.
 
@@ -55,7 +46,7 @@ Para implantar os ativos em seu sistema local:
    * Aponte seu navegador para [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
       * Importe e instale o SetValueOfElementInJSONDataWorkflow.zip. Este pacote tem o modelo de fluxo de trabalho de amostra e o Modelo de dados de formulário associados ao formulário.
 
-* Aponte seu navegador para [Formulários e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Aponte seu navegador para [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Carregar arquivo TimeOffRequestForm.zip
    **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está no AEM Forms 6.4 ou superior**
