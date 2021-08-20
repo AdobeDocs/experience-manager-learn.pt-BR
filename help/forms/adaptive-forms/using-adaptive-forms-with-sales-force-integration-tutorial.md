@@ -1,23 +1,15 @@
 ---
 title: Configuração do DataSource com Salesforce no AEM Forms 6.3 e 6.4
-seo-title: Configuração do DataSource com Salesforce no AEM Forms 6.3 e 6.4
 description: Integração do AEM Forms com o Salesforce usando o Modelo de dados de formulário
-seo-description: Integração do AEM Forms com o Salesforce usando o Modelo de dados de formulário
-uuid: 0124526d-f1a3-4f57-b090-a418a595632e
-feature: Adaptive Forms, Form Data Model
+feature: Forms adaptável, Modelo de dados de formulário
 topics: integrations
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -42,17 +34,17 @@ Pré-requisitos para este tutorial:
 * Forneça os escopos OAuth apropriados para o aplicativo (selecionei todos os escopos OAuth disponíveis para fins de teste)
 * Forneça a URL de retorno de chamada. O URL de retorno de chamada no meu caso era
 
-   * Se você estiver usando **AEM Forms 6.3**, o URL de retorno de chamada será https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Neste URL, createlead é o nome do meu modelo de dados de formulário.
+   * Se você estiver usando **AEM Forms 6.3**, a URL de retorno de chamada será https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Neste URL, createlead é o nome do meu modelo de dados de formulário.
 
-   * Se estiver usando** AEM Forms 6.4**, o URL de retorno de chamada será [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
+   * Se estiver usando** AEM Forms 6.4**, a URL de retorno de chamada será [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
 
-Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta na qual o AEM está sendo executado.
+Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta em que o AEM está em execução.
 
 Depois de criar o Aplicativo Conectado, anote a **Chave do Consumidor e Chave Secreta**. Você precisará deles ao criar a fonte de dados no AEM Forms.
 
 Agora que você criou seu aplicativo conectado, será necessário criar um arquivo de troca para as operações que você precisa executar no salesforce. Um arquivo de amostra swagger é incluído como parte dos ativos baixáveis. Esse arquivo swagger permite criar um objeto &quot;Lead&quot; no envio do formulário adaptável. Explore este arquivo swagger.
 
-A próxima etapa é criar a Fonte de dados no AEM Forms. Siga as etapas a seguir de acordo com sua versão do AEM Forms
+A próxima etapa é criar a Fonte de Dados no AEM Forms. Siga as etapas a seguir de acordo com sua versão do AEM Forms
 
 ## AEM Forms 6.3 {#aem-forms}
 
@@ -86,7 +78,7 @@ Certifique-se de configurar o Modelo de dados de formulário para incluir o serv
 
 Você também precisará configurar o Serviço de Leitura e Gravação para o objeto de Cliente Potencial. Consulte as capturas de tela na parte inferior desta página.
 
-Depois de criar o Modelo de dados de formulário, você pode criar Formulários adaptáveis com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar Lead no SFDC.
+Depois de criar o Modelo de dados de formulário, você pode criar o Adaptive Forms com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar lead no SFDC.
 
 ## AEM Forms 6.4 {#aem-forms-1}
 
@@ -119,7 +111,7 @@ Certifique-se de configurar o Modelo de dados de formulário para incluir o serv
 
 Você também precisará configurar o Serviço de Leitura e Gravação para o objeto de Cliente Potencial. Consulte as capturas de tela na parte inferior desta página.
 
-Depois de criar o Modelo de dados de formulário, você pode criar Formulários adaptáveis com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar Lead no SFDC.
+Depois de criar o Modelo de dados de formulário, você pode criar o Adaptive Forms com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar lead no SFDC.
 
 >[!NOTE]
 >
