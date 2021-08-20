@@ -1,29 +1,20 @@
 ---
-title: Uso do Serviço Assembler no AEM Forms
-seo-title: Uso do Serviço Assembler no AEM Forms
+title: Uso do serviço Assembler no AEM Forms
 description: Uso do Assembler Service no AEM Forms para reunir vários arquivos pdf
-seo-description: Uso do Assembler Service no AEM Forms para reunir vários arquivos pdf
-uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
 feature: Assembler
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
 
 
-# Uso do Serviço Assembler no AEM Forms{#using-assembler-service-in-aem-forms}
+# Uso do serviço Assembler no AEM Forms{#using-assembler-service-in-aem-forms}
 
 Este artigo fornece os ativos para demonstrar a capacidade de arrastar e soltar vários arquivos PDF no navegador e salvar o arquivo pdf montado em seu sistema de arquivos. Este é o código do servlet que monta os arquivos pdf carregados por meio do navegador.
 
@@ -120,9 +111,9 @@ Para que esse recurso funcione no servidor AEM
 
 >[!NOTE]
 >
->Certifique-se de que a instalação do AEM Forms está concluída. Todos os seus pacotes precisam estar no estado ativo.
+>Certifique-se de que a instalação do AEM Forms foi concluída. Todos os seus pacotes precisam estar no estado ativo.
 >
->Certifique-se de ter adicionado - As bibliotecas RSA e BouncyCastle do delegado de inicialização são mencionadas neste [Instalando AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Certifique-se de ter adicionado - As bibliotecas RSA e BouncyCastle do delegado de inicialização são mencionadas neste [Instalando o AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avisos para esta demonstração**
 >
