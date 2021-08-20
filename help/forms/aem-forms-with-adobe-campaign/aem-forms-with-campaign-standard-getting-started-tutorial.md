@@ -1,23 +1,14 @@
 ---
 title: Introdução ao AEM Forms e Adobe Campaign Standard
-seo-title: Introdução ao AEM Forms e Adobe Campaign Standard
 description: Integre o AEM Forms ao Adobe Campaign Standard usando o AEM Forms Form Data Model para buscar informações de perfil de campanha ACS etc.
-seo-description: Integre o AEM Forms ao Adobe Campaign Standard usando o AEM Forms Form Data Model para buscar informações de perfil de campanha ACS etc.
-uuid: 56450c9b-3752-4a64-b1b3-8c78e81f5921
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adaptável, Modelo de dados de formulário
 version: 6.3,6.4,6.5
-discoiquuid: 89245554-7b99-4e7e-9810-52191f9ea365
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -27,22 +18,22 @@ ht-degree: 0%
 
 ![formsandcampaign](assets/helpx-cards-forms.png)
 
-Este tutorial listará os vários casos de uso para integrar o AEM Forms ao Adobe Campaign Standard (ACS).
+Este tutorial listará os vários casos de uso para integração do AEM Forms com o Adobe Campaign Standard (ACS).
 
-O ACS tem um conjunto avançado de APIs expostas, que permite que o ACS seja interface com a tecnologia de nossa escolha. Neste tutorial, nos concentraremos em interligar o AEM Forms com ACS.
+O ACS tem um conjunto avançado de APIs expostas, que permite que o ACS seja interface com a tecnologia de nossa escolha. Neste tutorial, nos concentraremos em interligar o AEM Forms com o ACS.
 
-Para integrar o AEM Forms ao ACS, você precisará seguir as seguintes etapas:
+Para integrar o AEM Forms com o ACS, é necessário seguir as seguintes etapas:
 
 * [Configure o acesso à API na instância do ACS.](https://docs.campaign.adobe.com/doc/standard/en/api/ACS_API.html#setting-up-api-access)
 * Criar JSON Web Token.
-* Troque o token da Web JSON pelo Adobe Identity Management Service por um token de acesso.
+* Troque o JSON Web Token pelo Adobe Identity Management Service por um Token de acesso.
 * Inclua esse Token de acesso no Cabeçalho HTTP de autorização, juntamente com X-API-Key em cada solicitação para a instância ACS.
 
 Para começar, siga as instruções a seguir
 
 * [Baixe e descompacte os ativos relacionados a este tutorial.](assets/aem-forms-and-acs-bundles.zip)
 * Implante os pacotes usando [Felix web console](http://localhost:4502/system/console/bundles)
-* Forneça as configurações apropriadas para o Adobe Campaign na Configuração Felix OSGI.
+* Forneça as configurações apropriadas para o Adobe Campaign na Configuração OSGI do Felix.
 * [Crie um usuário de serviço, conforme mencionado neste artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Certifique-se de implantar o pacote OSGi associado ao artigo.
 * Armazene a chave privada ACS em etc/key/campaign/private.key. Será necessário criar uma pasta chamada campanha em etc/key.
 * [Forneça acesso de leitura à pasta da campanha para os &quot;dados&quot; do usuário do serviço.](http://localhost:4502/useradmin)
