@@ -1,23 +1,14 @@
 ---
 title: Uso Do Modelo De Dados De Formulário Para Postar Dados Binários
-seo-title: Uso Do Modelo De Dados De Formulário Para Postar Dados Binários
 description: Postando dados binários no AEM DAM usando o Modelo de dados de formulário
-seo-description: Postando dados binários no AEM DAM usando o Modelo de dados de formulário
-uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+feature: Fluxo de trabalho
 version: 6.4,6.5
-discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -25,13 +16,13 @@ ht-degree: 1%
 
 # Uso Do Modelo De Dados De Formulário Para Postar Dados Binários{#using-form-data-model-to-post-binary-data}
 
-A partir do AEM Forms 6.4, agora temos a capacidade de chamar o Serviço do Modelo de dados de formulário como uma etapa no Fluxo de trabalho do AEM. Este artigo o guiará por um exemplo de caso de uso para publicar Documento de registro usando o Serviço do Modelo de dados de formulário.
+A partir do AEM Forms 6.4, agora temos a capacidade de invocar o Serviço do Modelo de Dados de Formulário como uma etapa AEM fluxo de trabalho. Este artigo o guiará por um exemplo de caso de uso para publicar Documento de registro usando o Serviço do Modelo de dados de formulário.
 
 O caso de uso é o seguinte:
 
 1. Um usuário preenche e envia o Formulário adaptável.
 1. O formulário adaptável é configurado para gerar o Documento de registro.
-1. Ao enviar esses formulários adaptáveis, o fluxo de trabalho do AEM é acionado e usará o serviço invocar modelo de dados de formulário para publicar o documento de registro no AEM DAM.
+1. Ao enviar esses formulários adaptáveis, AEM fluxo de trabalho é acionado e usará o serviço invocar Modelo de dados de formulário para POST o documento de registro para AEM DAM.
 
 ![posttodam](assets/posttodamshot1.png)
 
@@ -49,7 +40,7 @@ Entrada do serviço
 
 >[!NOTE]
 >
->Dicas de solução de problemas - Se por algum motivo o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando [aqui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação do AEM, que por padrão é admin/admin.
+>Dicas de solução de problemas - Se por algum motivo o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando [aqui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação de AEM, que por padrão é admin/admin.
 
 Para testar esse recurso em seu servidor, siga as etapas mencionadas abaixo:
 
@@ -57,10 +48,10 @@ Para testar esse recurso em seu servidor, siga as etapas mencionadas abaixo:
 
 1. [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Esse pacote OSGI personalizado é usado para criar propriedades de metadados e definir seu valor a partir dos dados de formulário enviados.
 
-1. [Importe os ](assets/postdortodam.zip) ativos associados a este artigo para o AEM usando o gerenciador de pacotes. Você obterá o seguinte
+1. [Importe os ](assets/postdortodam.zip) ativos associados a este artigo no AEM usando o gerenciador de pacotes. Você obterá o seguinte
 
    1. Modelo de fluxo de trabalho
-   1. Formulário adaptável configurado para enviar para o fluxo de trabalho do AEM
+   1. Formulário adaptável configurado para enviar para o fluxo de trabalho AEM
    1. Fonte de dados configurada para usar o arquivo PostToDam.JSON
    1. Modelo de dados de formulário que usa a fonte de dados
 
