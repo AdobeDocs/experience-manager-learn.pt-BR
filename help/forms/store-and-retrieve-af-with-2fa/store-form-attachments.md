@@ -1,22 +1,18 @@
 ---
 title: Armazenar anexos de formulário
 description: Extraia os anexos do formulário e armazene em um novo local no repositório CRX.
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +21,7 @@ ht-degree: 2%
 Ao adicionar anexos a um formulário adaptável, os anexos são armazenados em um local temporário no repositório CRX. Para que nosso caso de uso funcione, precisamos armazenar os anexos do formulário em um novo local no repositório CRX.
 
 O serviço OSGi é criado para armazenar os anexos do formulário em um novo local no repositório CRX. Um novo mapa de arquivos é criado com o novo local dos anexos no CRX e retornado ao aplicativo chamador.
-Veja a seguir o FileMap que é enviado para o servlet. A chave é o campo de formulário adaptável e o valor é o local temporário do anexo. Em nosso servlet, extrairemos o anexo e o armazenaremos em um novo local no repositório do AEM e atualizaremos o FileMap com o novo local
+Veja a seguir o FileMap que é enviado para o servlet. A chave é o campo de formulário adaptável e o valor é o local temporário do anexo. Em nosso servlet, extrairemos o anexo e o armazenaremos em um novo local no repositório AEM e atualizaremos o FileMap com o novo local
 
 ```java
 {
