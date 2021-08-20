@@ -1,23 +1,15 @@
 ---
 title: Uso do Serviço do Modelo de Dados de Formulário como Etapa no Fluxo de Trabalho
-seo-title: Uso do Serviço do Modelo de Dados de Formulário como Etapa no Fluxo de Trabalho
-description: A partir do AEM Forms 6.4, agora temos a capacidade de usar o Form Data Model como parte do fluxo de trabalho do AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM.
-seo-description: A partir do AEM Forms 6.4, agora temos a capacidade de usar o Form Data Model como parte do fluxo de trabalho do AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM.
-uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+description: A partir do AEM Forms 6.4, agora temos a capacidade de usar o Modelo de dados de formulário como parte AEM fluxo de trabalho. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário AEM fluxo de trabalho.
+feature: Fluxo de trabalho
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
@@ -25,16 +17,16 @@ ht-degree: 1%
 
 # Uso do Serviço do Modelo de Dados de Formulário como Etapa no Fluxo de Trabalho {#using-form-data-model-service-as-step-in-workflow}
 
-A partir do AEM Forms 6.4, agora temos a capacidade de usar o Form Data Model como parte do fluxo de trabalho do AEM. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM
+A partir do AEM Forms 6.4, agora temos a capacidade de usar o Modelo de dados de formulário como parte AEM fluxo de trabalho. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário AEM fluxo de trabalho
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
 
 Para testar esse recurso em seu servidor, siga as instruções abaixo
 * [Baixe e implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue . Este é o pacote OSGI personalizado que define propriedades de metadados.
->!![NOTE]No AEM Forms 6.5 e superior, esse recurso está disponível para uso imediato, como  [descrito aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>!![NOTE]No AEM Forms 6.5 e superior, esse recurso está disponível para uso imediato, conforme  [descrito aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Configure tomcat com o arquivo SampleRest.war, conforme descrito [here](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure tomcat com o arquivo SampleRest.war, conforme descrito [here](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
 * [Importe os ativos no AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip). O pacote contém o seguinte:
 
