@@ -1,22 +1,17 @@
 ---
 title: Solução de problemas de assinatura de vários documentos
 description: Testar e solucionar problemas da solução
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 2%
 
 O caso de uso é acionado quando o agente de serviço do cliente preenche e envia [formulário de refinanciamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
-O fluxo de trabalho Assinar vários formulários obtém acionadores no envio desse formulário e o cliente recebe uma notificação por email com um link para iniciar o processo de preenchimento e assinatura do formulário.
+O fluxo de trabalho Assinar várias Forms recebe acionadores no envio desse formulário e o cliente recebe uma notificação por email com um link para iniciar o processo de preenchimento e assinatura do formulário.
 
 ## Preencha os formulários no pacote
 
@@ -42,7 +37,7 @@ A notificação por email é enviada pelo componente Enviar email no fluxo de tr
 
 ### O link na notificação por email não está funcionando
 
-Os links nas notificações por email são gerados dinamicamente. Se o servidor AEM não estiver sendo executado no localhost:4502, forneça o nome e a porta corretos do servidor nos argumentos da etapa Armazenar formulários para assinar do fluxo de trabalho Assinar vários formulários
+Os links nas notificações por email são gerados dinamicamente. Se o servidor de AEM não estiver sendo executado no localhost:4502, forneça o nome e a porta corretos do servidor nos argumentos da etapa Armazenar Forms para assinar do fluxo de trabalho Assinar vários Forms
 
 ### Não é possível assinar o formulário
 
