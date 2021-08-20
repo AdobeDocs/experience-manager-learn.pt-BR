@@ -1,23 +1,15 @@
 ---
 title: Etapas simplificadas para instalar o AEM Forms no Windows
-seo-title: Etapas simplificadas para instalar o AEM Forms no Windows
-description: Etapas rápidas e fáceis de instalar o AEM Forms no Windows
-seo-description: Etapas rápidas e fáceis de instalar o AEM Forms no Windows
-uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: Adaptive Forms
-topics: administration
-audience: developer
-doc-type: article
-activity: setup
+description: Etapas rápidas e fáceis para instalar o AEM Forms no Windows
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: Development
-role: Developer
+topic: Desenvolvimento
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '598'
 ht-degree: 4%
 
 ---
@@ -27,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Nunca clique duas vezes no jar AEM Quick Start , se você pretende usar o AEM Forms.
+>Nunca clique duas vezes no jar AEM Início rápido, se você pretende usar o AEM Forms.
 >
 >Além disso, verifique se não há espaços no caminho da pasta Instalação do AEM Forms.
 >
@@ -35,7 +27,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Se você estiver instalando o AEM Forms 6.5, certifique-se de ter instalado os seguintes redistribuíveis de 32 bits do Microsoft Visual C++.
+>Se estiver instalando o AEM Forms 6.5, certifique-se de ter instalado os seguintes redistribuíveis de 32 bits do Microsoft Visual C++.
 >
 >* Microsoft Visual C++ 2008 redistribuível
 >* Microsoft Visual C++ 2010 redistribuível
@@ -61,7 +53,7 @@ Embora seja recomendável seguir a [documentação oficial](https://helpx.adobe.
 * Localize o AEMQuickStart.Jar e mova-o para a pasta AEMForms
 * Copie o arquivo license.properties para esta pasta AEMForms
 * Crie um arquivo em lote chamado &quot;StartAemForms.bat&quot; com o seguinte conteúdo:
-   * java -d64 -Xmx2048M -jar AEM_6.3_Quickstart.jar -gui.Aqui AEM_6.3_Quickstart.jar é o nome do meu jar de início rápido do AEM.
+   * java -d64 -Xmx2048M -jar AEM_6.3_Quickstart.jar -gui.Aqui AEM_6.3_Quickstart.jar é o nome do meu jar AEM quickstart.
    * Você pode renomear seu jar para qualquer nome, mas certifique-se de que o nome seja refletido no arquivo em lote.Salve o arquivo em lote na Pasta AEMForms.
 
 * Abra um novo prompt de comando e navegue até c:\aemforms.
@@ -80,7 +72,7 @@ Embora seja recomendável seguir a [documentação oficial](https://helpx.adobe.
 * [Fazer login no Package Share](http://localhost:4502/crx/packageshare/login.html)
 
    * Você precisará do Adobe Id para fazer logon no compartilhamento de pacotes
-   * Procure o pacote AEM Forms Add on apropriado para sua versão do AEM Forms e sistema operacional
+   * Procure o pacote AEM Forms Add on apropriado para sua versão do AEM Forms e do sistema operacional
    * Ou [você pode baixar o pacote de adjuntos de formulários apropriado](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
    * Após instalar o pacote de complementos, siga as etapas a seguir
 
@@ -89,7 +81,7 @@ Embora seja recomendável seguir a [documentação oficial](https://helpx.adobe.
    * **Quando todos os pacotes estiverem ativos (exceto o pacote de assinaturas do AEMFD), reinicie o sistema para concluir a instalação do AEM Forms**
 
 
-* Adicione o pacote `sun.util.calendar` à lista permitida:
+* Adicione o pacote `sun.util.calendar` à lista de permissões:
 
    1. Abra o console da Web Felix em sua [janela do navegador](http://localhost:4502/system/console/configMgr)
    2. Pesquise e abra a Configuração do firewall de desserialização: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
