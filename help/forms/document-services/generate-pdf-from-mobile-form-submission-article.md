@@ -1,23 +1,14 @@
 ---
 title: Gerar PDF a partir do envio de formulário HTM5
-seo-title: Gerar PDF a partir do envio de formulário HTML5
 description: Gerar PDF a partir do envio do formulário móvel
-seo-description: Gerar PDF a partir do envio do formulário móvel
-uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: Mobile Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 version: 6.4,6.5
-discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -111,7 +102,7 @@ function readURL(input) {
 
 O código acima é executado quando acionamos o evento click do elemento de arquivo. Na linha 5, extraímos o conteúdo do arquivo carregado como base64 string e armazenamos no campo de texto. Esse valor é então extraído quando o formulário é enviado para nosso servlet.
 
-Em seguida, configuramos as seguintes propriedades (avançadas) do nosso formulário móvel no AEM
+Em seguida, configuramos as seguintes propriedades (avançadas) do formulário móvel no AEM
 
 * Enviar URL - http://localhost:4502/bin/handlemobileformsubmission. Este é nosso servlet que mesclará os dados enviados com o template xdp
 * Perfil de renderização HTML - Selecione &quot;AddImageToMobileForm&quot;. Isso acionará o código para adicionar uma imagem ao formulário.
