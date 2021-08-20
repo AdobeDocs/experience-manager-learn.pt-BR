@@ -1,33 +1,24 @@
 ---
-title: Preencha previamente formulários HTML5 usando o atributo de dados.
-seo-title: Preencha previamente formulários HTML5 usando o atributo de dados.
+title: Preencha previamente o HTML5 Forms usando o atributo de dados.
 description: Preencha formulários HTML5 buscando dados da fonte de backend.
-seo-description: Preencha formulários HTML5 buscando dados da fonte de backend.
-feature: Adaptive Forms
-topics: mobile-forms
-audience: developer
-doc-type: article
-activity: implement
+feature: Formulários adaptáveis
 version: 6.3,6.4,6.5.
-uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
-discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Pré-preencher formulários HTML5 usando o atributo de dados {#prepopulate-html-forms-using-data-attribute}
+# Preencha previamente o Forms HTML5 usando o atributo de dados {#prepopulate-html-forms-using-data-attribute}
 
 Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
 
-Os modelos XDP renderizados no formato HTML usando AEM Forms são chamados de HTML5 ou Formulários móveis. Um caso de uso comum é preencher previamente esses formulários ao serem renderizados.
+Os modelos XDP renderizados no formato HTML usando o AEM Forms são chamados de HTML5 ou Forms móvel. Um caso de uso comum é preencher previamente esses formulários ao serem renderizados.
 
 Há 2 maneiras de mesclar dados com o modelo xdp quando ele é renderizado como HTML.
 
@@ -52,7 +43,7 @@ Quando o XDP está sendo renderizado, você também pode transmitir alguns parâ
 O JSP gravado terá acesso ao parâmetro name por meio do request.getParameter(&quot;name&quot;) . Em seguida, você pode passar o valor desse parâmetro para o processo de back-end para buscar os dados necessários.
 Para que esse recurso funcione em seu sistema, siga as etapas mencionadas abaixo:
 
-* [Baixe e importe os ativos para o AEM usando o ](assets/prepopulatemobileform.zip)
+* [Baixe e importe os ativos no AEM usando o ](assets/prepopulatemobileform.zip)
 gerenciador de pacotes. O pacote instalará o seguinte
 
    * CustomProfile
