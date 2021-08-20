@@ -1,29 +1,20 @@
 ---
-title: Capturando comentários do fluxo de trabalho no fluxo de trabalho de formulários adaptáveis
-seo-title: Capturando comentários do fluxo de trabalho no fluxo de trabalho de formulários adaptáveis
-description: Capturando comentários do fluxo de trabalho no fluxo de trabalho do AEM
-seo-description: Capturando comentários do fluxo de trabalho no fluxo de trabalho do AEM
-uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
-feature: Workflow
-topics: development
-audience: developer
-doc-type: article
-activity: setup
+title: Captura de comentários do fluxo de trabalho no Adaptive Forms Workflow
+description: Capturando comentários do fluxo de trabalho AEM fluxo de trabalho
+feature: Fluxo de trabalho
 version: 6.3,6.4
-discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 1%
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
 
-# Capturando comentários do fluxo de trabalho no fluxo de trabalho de formulários adaptáveis{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# Captura de comentários do fluxo de trabalho no Adaptive Forms Workflow{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
 >[Aplica-se somente ao AEM Forms 6.4. No AEM Forms 6.5, use o recurso de variáveis para obter esse caso de uso]
 
@@ -44,13 +35,13 @@ Para testar esse recurso em seu sistema, siga as seguintes etapas:
 
 * [Baixe e descompacte os ativos relacionados a este artigo no seu ](assets/capturecomments.zip) sistema de arquivos. Os ativos contêm o modelo de fluxo de trabalho e o formulário adaptável de amostra.
 
-* Importe os 2 arquivos zip para o AEM usando o gerenciador de pacotes
+* Importe os 2 arquivos zip no AEM usando o gerenciador de pacotes
 
 * [Visualize o formulário navegando até este URL](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 
 * Preencha os campos de formulário e envie o formulário
 
-* [Marque a caixa de entrada do AEM](http://localhost:4502/aem/inbox)
+* [Marque a caixa de entrada AEM](http://localhost:4502/aem/inbox)
 
 * Abra a tarefa na caixa de entrada e envie o formulário. Insira alguns comentários quando solicitado.
 
