@@ -1,26 +1,22 @@
 ---
 title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 2%
 
 ---
 
 # Criar biblioteca do cliente
 
-A Biblioteca de clientes do AEM gerencia todo o código JavaScript do lado do cliente. Para este artigo, criei um JavaScript simples para buscar os dados do Formulário adaptável usando a API do guia bridge. Depois que os dados do Formulário adaptável são obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, então precisamos executar a operação de atualização, se não for uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento click da classe .savebutton.
+AEM Biblioteca de clientes gerencia todo o código JavaScript do lado do cliente. Para este artigo, criei um JavaScript simples para buscar os dados do Formulário adaptável usando a API do guia bridge. Depois que os dados do Adaptive Form são obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, então precisamos executar a operação de atualização, se não for uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento click da classe .savebutton.
 
 >[!NOTE]
 >
