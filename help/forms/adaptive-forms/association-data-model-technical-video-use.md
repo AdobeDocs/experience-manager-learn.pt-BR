@@ -1,29 +1,20 @@
 ---
-title: Uso de modelos de dados de associação com AEM Forms
-seo-title: Uso de modelos de dados de associação com AEM Forms
+title: Uso de modelos de dados de associação com o AEM Forms
 description: Adicionar associações entre entidades no Modelo de dados de formulário
-seo-description: Adicionar associações entre entidades no Modelo de dados de formulário
-uuid: 82626632-3251-4f7b-9af1-43a9161107c2
-discoiquuid: e01e9bd4-5b47-4356-9884-6968f385bb20
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Forms adaptável, Modelo de dados de formulário
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 3%
+source-wordcount: '36'
+ht-degree: 2%
 
 ---
 
 
-# Uso de Modelos de Dados de Associação com AEM Forms{#using-association-data-models-with-aem-forms}
+# Uso de modelos de dados de associação com o AEM Forms{#using-association-data-models-with-aem-forms}
 
 Criar associações entre duas entidades no Modelo de dados de formulário
 
