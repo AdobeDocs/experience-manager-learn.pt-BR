@@ -1,23 +1,14 @@
 ---
 title: Uso de CAPTCHAs com AEM Adaptive Forms
-seo-title: Uso de CAPTCHAs com AEM Adaptive Forms
 description: Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
-seo-description: Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -27,7 +18,7 @@ ht-degree: 0%
 
 Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 
-Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) para obter um link para uma demonstração ao vivo desse recurso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -35,7 +26,7 @@ Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/s
 
 >[!NOTE]
 >
->Esse recurso está disponível somente com o AEM 6.3 em diante.
+>Este recurso está disponível somente a partir do AEM 6.3.
 
 >[!NOTE]
 >
@@ -43,7 +34,7 @@ Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/s
 >
 >Configurar o reCaptach na instância do autor
 >
->abra o felix [web console](http://localhost:4502/system/console/bundles) na instância do autor
+>abra o Felix [web console](http://localhost:4502/system/console/bundles) na instância do autor
 >
 >pesquise o pacote com.adobe.granite.crypto.file
 >
@@ -52,17 +43,17 @@ Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/s
 >Navegue até a id do pacote no sistema de arquivos na instância do autor
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copie o HMAC e os arquivos mestre
+* Copie o HMAC e os arquivos principais
 
 Abra o [console da Web felix](http://localhost:4502/system/console/bundles) em sua instância de publicação. Procure por um pacote com.adobe.granite.crypto.file. Observe a id do pacote
 Navegue até a id do pacote no sistema de arquivos da sua instância de publicação
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* exclua os arquivos HMAC e mestre existentes.
-* cole o HMAC e os arquivos mestre copiados da instância do autor
+* exclua os arquivos HMAC e principais existentes.
+* cole o HMAC e os arquivos principais copiados da instância do autor
 
-Reinicie o servidor de publicação do AEM
+Reinicie o servidor de publicação de AEM
 
-## Materiais de suporte {#supporting-materials}
+## Materiais de apoio {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)
 
