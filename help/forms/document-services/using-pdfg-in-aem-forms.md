@@ -1,24 +1,15 @@
 ---
-title: Uso do PDFG em AEM Forms
-seo-title: Uso do PDFG em AEM Forms
+title: Uso do PDFG no AEM Forms
 description: Demonstração do recurso de arrastar e soltar para criar PDF usando o AEM Forms
-seo-description: Demonstração do recurso de arrastar e soltar para criar PDF usando o AEM Forms
-uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: pdf-generator
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Gerador de PDF
 version: 6.4,6.5
-discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 2%
+source-wordcount: '268'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +21,7 @@ Demonstração do recurso de arrastar e soltar para criar PDF usando o AEM Forms
 PDFG significa geração de PDF. Isso significa que é possível converter uma variedade de formatos de arquivo em PDF. Os mais comuns são documentos do Microsoft Office. O PDFG faz parte do AEM Forms desde a versão 6.1.
 [O javadoc para a API PDFG está listado aqui](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
 
-Os ativos associados a este artigo permitirão arrastar e soltar documentos do MS office ou arquivo JPG para a área designada da página HTML. Depois que o documento for descartado, ele chamará o serviço PDFG e converterá o documento em PDF e salvá-lo no sistema de arquivos do AEM Server.
+Os ativos associados a este artigo permitirão arrastar e soltar documentos do MS office ou arquivo JPG para a área designada da página HTML. Depois que o documento for descartado, ele chamará o serviço PDFG e converterá o documento em PDF e salvá-lo no sistema de arquivos AEM Server.
 
 Para instalar os ativos de demonstração, execute as seguintes etapas
 
