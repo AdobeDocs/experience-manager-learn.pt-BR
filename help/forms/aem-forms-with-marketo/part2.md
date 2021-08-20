@@ -1,33 +1,26 @@
 ---
 title: AEM Forms com Marketo (Parte 2)
-seo-title: AEM Forms com Marketo (Parte 2)
-description: Tutorial para integrar o AEM Forms com o Marketo usando o AEM Forms Form Data Model.
-seo-description: Tutorial para integrar o AEM Forms com o Marketo usando o AEM Forms Form Data Model.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Tutorial para integrar o AEM Forms com o Marketo usando o Modelo de dados de formulário AEM Forms.
+feature: Forms adaptável, Modelo de dados de formulário
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 
-# Serviço de autenticação do Marketo
+# Serviço de Autenticação Marketo
 
-As REST APIs do Marketo são autenticadas com OAuth 2.0 de duas pernas. Precisamos criar autenticação personalizada para autenticação no Marketo. Normalmente, essa autenticação personalizada é escrita dentro de um pacote OSGI. O código a seguir mostra o autenticador personalizado que foi usado como parte deste tutorial.
+As REST APIs da Marketo são autenticadas com OAuth 2.0 de duas pernas. Precisamos criar autenticação personalizada para autenticação no Marketo. Normalmente, essa autenticação personalizada é escrita dentro de um pacote OSGI. O código a seguir mostra o autenticador personalizado que foi usado como parte deste tutorial.
 
 ## Serviço de Autenticação Personalizada
 
-O código a seguir cria o objeto AuthenticationDetails que tem o access_token necessário para autenticação com o Marketo
+O código a seguir cria o objeto AuthenticationDetails que tem o access_token necessário para autenticação no Marketo
 
 ```java
 package com.marketoandforms.core;
@@ -59,7 +52,7 @@ MarketoService marketoService;
 }
 ```
 
-O MarketoAuthenticationService implementa a interface IAuthentication. Essa interface faz parte do SDK do cliente do AEM Forms. O serviço obtém o token de acesso e insere o token no HttpHeader do AuthenticationDetails. Depois que os HttpHeaders do objeto AuthenticationDetails são preenchidos, o objeto AuthenticationDetails é retornado para a camada Dermis do Modelo de Dados de Formulário.
+O MarketoAuthenticationService implementa a interface IAuthentication. Essa interface faz parte do SDK do cliente da AEM Forms. O serviço obtém o token de acesso e insere o token no HttpHeader do AuthenticationDetails. Depois que os HttpHeaders do objeto AuthenticationDetails são preenchidos, o objeto AuthenticationDetails é retornado para a camada Dermis do Modelo de Dados de Formulário.
 
 Preste atenção à string retornada pelo método getAuthenticationType. Essa string será usada ao configurar sua fonte de dados.
 
@@ -74,7 +67,7 @@ public interface MarketoService {
 }
 ```
 
-O código a seguir é do serviço que retorna o access_token que deve ser usado para fazer as chamadas de API REST. O código neste serviço acessa os parâmetros de configuração necessários para fazer a chamada GET. Como você pode ver, passamos o client_id,client_secret no URL GET para gerar o access_token. Este access_token é então retornado ao aplicativo que faz a chamada.
+O código a seguir é do serviço que retorna o access_token que deve ser usado para fazer as chamadas de API REST. O código neste serviço acessa os parâmetros de configuração necessários para fazer a chamada do GET. Como você pode ver, passamos client_id,client_secret no URL do GET para gerar o access_token. Este access_token é então retornado ao aplicativo que faz a chamada.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -139,7 +132,7 @@ A captura de tela abaixo mostra as propriedades de configuração que precisam s
 
 ### Configuração
 
-O código a seguir foi usado para criar as propriedades de configuração. Essas propriedades são específicas da sua instância do Marketo
+O código a seguir foi usado para criar as propriedades de configuração. Essas propriedades são específicas da instância do Marketo
 
 ```java
 package com.marketoandforms.core;
@@ -205,6 +198,6 @@ public class MarketoConfigurationService {
 }
 ```
 
-1. Crie e implante o pacote no seu servidor AEM.
-1. [Aponte seu navegador para a pesquisa ](http://localhost:4502/system/console/configMgr) configMGrand para &quot;Configuração do Serviço de Credenciais do Marketo&quot;
-1. Especifique as propriedades apropriadas específicas da sua instância do Marketo
+1. Crie e implante o pacote no servidor AEM.
+1. [Aponte seu navegador para a pesquisa ](http://localhost:4502/system/console/configMgr) configMGrand para &quot;Configuração do Marketo Credentials Service&quot;
+1. Especifique as propriedades apropriadas específicas à sua instância do Marketo
