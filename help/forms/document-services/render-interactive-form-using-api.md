@@ -1,35 +1,28 @@
 ---
-title: Desenvolvimento com serviços de saída e formulários no AEM Forms
-seo-title: Desenvolvimento com serviços de saída e formulários no AEM Forms
-description: Uso da API do Serviço de saída e formulários no AEM Forms
-seo-description: Uso da API do Serviço de saída e formulários no AEM Forms
-feature: Forms Service
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+title: Desenvolvimento com serviços de saída e Forms no AEM Forms
+description: Uso da API de serviço do Output e Forms no AEM Forms
+feature: Serviço do Forms
 version: 6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
 
 
-# Como renderizar PDF interativo usando os serviços do Forms no AEM Forms
+# Como renderizar PDF interativo usando os serviços da Forms no AEM Forms
 
-Uso da API do Serviço de formulários no AEM Forms para renderizar PDF interativo
+Usar a API do serviço do Forms no AEM Forms para renderizar PDF interativo
 
 Neste artigo, analisaremos o seguinte serviço
 
 * FormsService - Esse é um serviço muito versátil que permite exportar/importar dados de e para o arquivo PDF e também gerar pdf interativo ao mesclar dados xml no modelo xdp
 
-O javadoc oficial da API do AEM Forms é listado [aqui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+O javadoc oficial da API do AEM Forms está listado [aqui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 O trecho de código a seguir renderiza o pdf interativo usando a operação renderPDFForm do FormsService. O schengen.xdp é um modelo que está sendo usado para unir os dados xml.
 
@@ -57,12 +50,12 @@ Linha 11: Retorna o pdf interativo gerado para o aplicativo chamador
 
 **Para testar o pacote de amostra em seu sistema**
 1. [Baixe e instale o Pacote de amostra do DocumentServices usando o Felix Web Console](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Baixe e instale o pacote usando o gerenciador de pacotes do AEM](assets/downloadinteractivepdffrommobileform.zip)
+1. [Baixe e instale o pacote usando o gerenciador de pacotes de AEM](assets/downloadinteractivepdffrommobileform.zip)
 
 
 
 1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
-1. Pesquisar o filtro CSRF do Adobe Granite
+1. Procure por Filtro CSRF do Adobe Granite
 1. Adicione o seguinte caminho nas seções excluídas e salve
 1. /bin/generateinteractivepdf
 1. [Abrir o formulário móvel](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
