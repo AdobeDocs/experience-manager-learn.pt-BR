@@ -1,20 +1,15 @@
 ---
 title: Criação de fragmentos de formulário
-description: O AEM Forms fornece um mecanismo conveniente para criar segmentos de formulário, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis.
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+description: AEM formulários fornece um mecanismo conveniente para criar segmentos de formulários, como um painel ou um grupo de campos, somente uma vez e reutilizá-los em formulários adaptáveis.
+feature: Formulários adaptáveis
 kt: 5862
 thumbnail: 37325.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '108'
 ht-degree: 21%
 
 ---
@@ -29,9 +24,9 @@ Um fragmento é uma parte reutilizável de um formulário. Por exemplo, um fragm
 
 
 
-Consulte a [documentação do modelo de formulário adaptável](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obter mais detalhes
+Consulte a [documentação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obter mais detalhes
 
-Se necessário, você pode baixar o [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessário, você pode baixar o [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
