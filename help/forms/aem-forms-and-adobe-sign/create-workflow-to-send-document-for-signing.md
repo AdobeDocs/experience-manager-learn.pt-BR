@@ -1,27 +1,22 @@
 ---
 title: Enviar documentos para assinatura usando fluxo de trabalho
-description: Envie documentos para assinatura usando o fluxo de trabalho . Crie um fluxo de trabalho do AEM usando o componente assinar documento. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de sinal. O vídeo explica as várias etapas necessárias para criar um fluxo de trabalho eficaz para enviar documentos para assinatura.
+description: Envie documentos para assinatura usando o fluxo de trabalho . Crie um fluxo de trabalho AEM usando o componente assinar documento. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de sinal. O vídeo explica as várias etapas necessárias para criar um fluxo de trabalho eficaz para enviar documentos para assinatura.
 feature: Adaptive Forms,Adobe Sign
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 thumbnail: 38182.jpg
 kt: 6035
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 2%
+source-wordcount: '95'
+ht-degree: 1%
 
 ---
 
 # Enviar documentos para assinatura usando fluxo de trabalho
 
-Crie um fluxo de trabalho do AEM usando o componente assinar documento. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de sinal.
+Crie um fluxo de trabalho AEM usando o componente assinar documento. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de sinal.
 O vídeo explica as várias etapas necessárias para criar um fluxo de trabalho eficaz para enviar documentos para assinatura.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38182/?quality=9&learn=on)
