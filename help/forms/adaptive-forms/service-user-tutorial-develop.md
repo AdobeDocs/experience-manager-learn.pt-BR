@@ -1,22 +1,13 @@
 ---
 title: Desenvolvimento com usuários de serviço no AEM Forms
-seo-title: Desenvolvimento com usuários de serviço no AEM Forms
-description: Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
-seo-description: Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
-uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Adaptive Forms
-topics: development,administration
-audience: implementer,developer
-doc-type: article
-activity: setup
-discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Development
+description: Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
+feature: Formulários adaptáveis
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -24,7 +15,7 @@ ht-degree: 0%
 
 # Desenvolvimento com usuários de serviço no AEM Forms
 
-Este artigo aborda o processo de criação de um usuário de serviço no AEM Forms
+Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
 
 Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos está obsoleto no AEM 6.3. Em vez disso, um usuário do sistema com permissões específicas no repositório é usado.
 
