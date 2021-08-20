@@ -1,33 +1,24 @@
 ---
 title: 'Geração de token da Web JSON e token de acesso '
-seo-title: 'Geração de token da Web JSON e token de acesso '
 description: Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
-seo-description: Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
-uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adaptável, Modelo de dados de formulário
 version: 6.3,6.4,6.5
-discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 
-# Geração de token Web JSON e token de acesso {#generating-json-web-token-and-access-token}
+# Geração de token da Web JSON e token de acesso {#generating-json-web-token-and-access-token}
 
 Este artigo explica o código necessário para gerar JWT e Token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
 
-## Gerar o token Web JSON {#generate-json-web-token}
+## Gerar token Web JSON {#generate-json-web-token}
 
 A primeira etapa no uso da API do Adobe Campaign é gerar JWT. Há vários exemplos de código sobre como gerar JWT para ACS. Você pode seguir esta [amostra de código java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) para gerar JWT.
 
@@ -37,7 +28,7 @@ Para usar a API ACS com o AEM Forms, precisamos criar JWT dentro de um pacote OS
 
 **A.** Os valores mostrados aqui são valores fictícios
 
-O código a seguir busca os detalhes sobre o Servidor do Adobe Campaign a partir da configuração OSGI. Criamos uma chave privada das linhas 80 a 104.
+O código a seguir busca os detalhes sobre o Adobe Campaign Server na configuração OSGI. Criamos uma chave privada das linhas 80 a 104.
 
 Depois de ter a chave privada, criamos o JSON Web Token.
 
@@ -248,6 +239,6 @@ public class CampaignServiceImpl implements CampaignService {
  }
 ```
 
-## Gerar Token de Acesso {#generate-access-token}
+## Gerar token de acesso {#generate-access-token}
 
-Em seguida, trocamos o JWT gerado por um Token de acesso fazendo uma chamada POST. Esse Token de acesso será enviado como uma chave de autorização no Cabeçalho HTTP para chamadas REST subsequentes
+Em seguida, trocamos o JWT gerado por um Token de acesso fazendo uma chamada de POST. Esse Token de acesso será enviado como uma chave de autorização no Cabeçalho HTTP para chamadas REST subsequentes
