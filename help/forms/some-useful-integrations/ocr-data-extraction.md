@@ -1,20 +1,15 @@
 ---
 title: Extração de Dados OCR
 description: Extraia dados de documentos emitidos pelo governo para preencher formulários.
-feature: Barcoded Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
+feature: Forms com códigos de barras
 version: 6.4,6.5
 kt: 6679
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -27,7 +22,7 @@ Extraia automaticamente dados de uma grande variedade de documentos emitidos pel
 
 Há várias organizações que fornecem esse serviço e, desde que tenham APIs REST bem documentadas, você pode se integrar facilmente ao AEM Forms usando o recurso de integração de dados. Para o objetivo deste tutorial, usei o [ID Analyzer](https://www.idanalyzer.com/) para demonstrar a extração de dados OCR de documentos carregados.
 
-As etapas a seguir foram seguidas para implementar a extração de dados OCR com AEM Forms usando o serviço ID Analyzer.
+As etapas a seguir foram seguidas para implementar a extração de dados de OCR com o AEM Forms usando o serviço de Analisador de ID.
 
 ## Criar conta do desenvolvedor
 
@@ -52,11 +47,11 @@ Use o [editor de swagger](https://editor.swagger.io/) para criar seu arquivo de 
 
 ## Criar fonte de dados
 
-Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar fonte de dados](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use o [arquivo swagger](assets/drivers-license-swagger.zip) para criar sua fonte de dados.
+Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use o [arquivo swagger](assets/drivers-license-swagger.zip) para criar sua fonte de dados.
 
 ## Criar modelo de dados do formulário
 
-A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados de formulário na fonte de dados criada na etapa anterior.
+A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados de formulário na fonte de dados criada na etapa anterior.
 
 ![fdm](assets/test-dl-fdm.PNG)
 
@@ -77,7 +72,7 @@ Se quiser usar os ativos de exemplo com sua chave de API, siga as seguintes etap
 * [Baixe o ](assets/drivers-license-fdm.zip) modelo de dados de formulário e importe para o AEM usando o gerenciador de  [pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Baixe a biblioteca do cliente](assets/drivers-license-client-lib.zip)
 * Baixe o formulário adaptável de amostra pode ser [baixado aqui](assets/adaptive-form-dl.zip). Esse formulário de amostra usa as invocações de serviço do modelo de dados de formulário fornecido como parte deste artigo.
-* Importe o formulário para o AEM a partir de [Forms e Document UI](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importe o formulário no AEM a partir do [Forms e da interface do usuário do documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abra o formulário no [modo de edição.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Especifique sua Chave de API como o valor padrão no campo apikey e salve as alterações
 * Abra o editor de regras para o campo String Base 64. Observe a chamada de serviço quando o valor desse campo é alterado.
