@@ -1,42 +1,33 @@
 ---
-title: Crie modelos de fluxo de trabalho de AEM Forms reutilizáveis.
-seo-title: Crie modelos de fluxo de trabalho de AEM Forms reutilizáveis.
-description: modelos de fluxo de trabalho independentes dos formulários adaptativos.
-seo-description: Modelos de fluxo de trabalho independentes dos Formulários adaptativos.
-feature: Workflow
-topics: development
-audience: developer
-doc-type: article
-activity: setup
+title: Crie Modelos De Fluxo De Trabalho Do AEM Forms Reutilizáveis.
+description: modelos de fluxo de trabalho independentes do Adaptive Forms.
+feature: Fluxo de trabalho
 version: 6.5
-uuid: 3a082743-3e56-42f4-a44b-24fa34165926
-discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
-# Criar modelos de fluxo de trabalho de AEM Forms reutilizáveis{#create-re-usable-aem-forms-workflow-models}
+# Criar modelos de fluxo de trabalho do AEM Forms reutilizáveis{#create-re-usable-aem-forms-workflow-models}
 
-A partir da versão AEM Forms 6.5, agora podemos criar modelos de fluxo de trabalho que não estão vinculados a um formulário adaptável específico. Com esse recurso, agora é possível criar um modelo de fluxo de trabalho que pode ser chamado em diferentes envios de formulários adaptáveis. Com esse recurso, você pode ter um fluxo de trabalho genérico para lidar com todos os envios de formulários adaptáveis para revisão e aprovação.
+A partir da versão 6.5 do AEM Forms, agora podemos criar modelos de fluxo de trabalho que não estão vinculados a um formulário adaptável específico. Com esse recurso, agora é possível criar um modelo de fluxo de trabalho que pode ser chamado em diferentes envios de formulários adaptáveis. Com esse recurso, você pode ter um fluxo de trabalho genérico para lidar com todos os envios de formulários adaptáveis para revisão e aprovação.
 
 Para projetar esse workflow, execute as seguintes etapas
 
-1. Faça logon no AEM
+1. Logon no AEM
 1. Aponte seu navegador para [modelo de fluxo de trabalho](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Clique em Criar | Criar modelo para adicionar modelo de fluxo de trabalho
 1. Forneça o Nome e o Título apropriados ao modelo de fluxo de trabalho e clique em Concluído
 1. Abra o modelo recém-criado no modo de edição
 1. Arraste e solte o componente Atribuir tarefa no modelo de fluxo de trabalho
 1. Abra as propriedades de configuração do componente Atribuir tarefa
-1. Guia para a guia Formulários e Documentos
+1. Guia para a guia Forms e Documentos
 1. Selecione Tipo - Formulário adaptável ou Formulário adaptável somente leitura.
 
 Existem 3 maneiras pelas quais o caminho do formulário pode ser especificado
