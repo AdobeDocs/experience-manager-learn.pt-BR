@@ -1,29 +1,20 @@
 ---
-title: Uso de modelos de dados de formulário baseados em JDBC com AEM Forms
-seo-title: Uso de modelos de dados de formulário baseados em JDBC com AEM Forms
+title: Uso de modelos de dados de formulário baseados em JDBC com o AEM Forms
 description: Este vídeo ilustra como criar um Modelo de dados de formulário com base em uma fonte de dados JDBC, um Formulário adaptável com base no Modelo de dados de formulário e como usar a operação "INSERIR" usando o Modelo de dados de formulário.
-seo-description: Este vídeo ilustra como criar um Modelo de dados de formulário com base em uma fonte de dados JDBC, um Formulário adaptável com base no Modelo de dados de formulário e como usar a operação "INSERIR" usando o Modelo de dados de formulário.
-uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
-feature: Adaptive Forms
-topics: form-data-model
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Formulários adaptáveis
 version: 6.4,6.5
-discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '129'
 ht-degree: 2%
 
 ---
 
 
-# Uso de modelos de dados de formulário baseados em JDBC com AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
+# Uso de modelos de dados de formulário baseados em JDBC com o AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
 
 Este vídeo ilustra como criar um Modelo de dados de formulário com base em uma fonte de dados JDBC, um Formulário adaptável com base no Modelo de dados de formulário e como usar a operação &quot;INSERIR&quot; usando o Modelo de dados de formulário.
 
@@ -31,5 +22,5 @@ Este vídeo ilustra como criar um Modelo de dados de formulário com base em uma
 
 >[!NOTE]
 >
->Qualquer fonte de dados RDBMS pode ser usada, desde que os drivers de banco de dados necessários sejam implantados no AEM como um pacote OSGi. A configuração de uma fonte de dados RDBMS no AEM é abordada em [Configurar a integração de dados com o AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Qualquer fonte de dados RDBMS pode ser usada, desde que os drivers de banco de dados necessários sejam implantados no AEM como um pacote OSGi. A configuração de uma fonte de dados RDBMS no AEM é abordada em [Configurar integração de dados com o AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
 
