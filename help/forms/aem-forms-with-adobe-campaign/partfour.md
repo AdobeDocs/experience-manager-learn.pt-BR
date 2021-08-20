@@ -1,29 +1,20 @@
 ---
 title: Criar perfil de campanha usando modelo de dados de formulário
-seo-title: Criar perfil de campanha usando modelo de dados de formulário
 description: Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
-seo-description: Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Output Service
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Formulários adaptáveis
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '429'
 ht-degree: 4%
 
 ---
 
 
-# Criar perfil de campanha usando o modelo de dados de formulário {#create-campaign-profile-using-form-data-model}
+# Criar perfil de campanha usando modelo de dados de formulário {#create-campaign-profile-using-form-data-model}
 
 Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
 
@@ -112,7 +103,7 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 O primeiro passo é criar o arquivo swagger. O arquivo swagger define a REST API, que será usada para criar um perfil no Adobe Campaign Standard. O arquivo do swagger define os parâmetros de entrada e os parâmetros de saída da API REST.
 
-Uma fonte de dados é criada usando o arquivo swagger. Ao criar a Fonte de Dados, é possível especificar o tipo de autenticação. Nesse caso, usaremos autenticação personalizada para autenticar no Adobe Campaign. O código listado acima foi usado para autenticar no Adobe Campaign.
+Uma fonte de dados é criada usando o arquivo swagger. Ao criar a Fonte de Dados, é possível especificar o tipo de autenticação. Nesse caso, usaremos autenticação personalizada para autenticar em relação ao Adobe Campaign. O código listado acima foi usado para autenticação em relação ao Adobe Campaign.
 
 O arquivo de troca de amostras é fornecido a você como parte do ativo relacionado a este artigo.**Certifique-se de alterar o host e o basePath no arquivo swagger para corresponder à instância do ACS**
 
