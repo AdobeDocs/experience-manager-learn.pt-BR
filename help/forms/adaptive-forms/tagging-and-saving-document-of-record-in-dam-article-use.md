@@ -1,23 +1,14 @@
 ---
 title: Marcação e armazenamento do AEM Forms DoR no DAM
-seo-title: Marcação e armazenamento do AEM Forms DoR no DAM
-description: Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pelos AEM Forms no AEM DAM. A marcação do documento é feita com base nos dados de formulário enviados.
-seo-description: Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pelos AEM Forms no AEM DAM. A marcação do documento é feita com base nos dados de formulário enviados.
-uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: Adaptive Forms,Workflow
-topics: developing
-audience: implementer
-doc-type: article
-activity: develop
+description: Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pela AEM Forms AEM DAM. A marcação do documento é feita com base nos dados de formulário enviados.
+feature: Formulários adaptáveis
 version: 6.4,6.5
-discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -25,14 +16,14 @@ ht-degree: 0%
 
 # Marcação e armazenamento do AEM Forms DoR no DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pelos AEM Forms no AEM DAM. A marcação do documento é feita com base nos dados de formulário enviados.
+Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pela AEM Forms AEM DAM. A marcação do documento é feita com base nos dados de formulário enviados.
 
-Uma tarefa comum dos clientes é armazenar e marcar o Documento de registro (DoR) gerado pelos AEM Forms no AEM DAM. A marcação do documento precisa se basear nos dados enviados dos formulários adaptativos. Por exemplo, se o status de emprego nos dados enviados for &quot;Descontinuado&quot;, queremos adicionar uma tag ao documento com a tag &quot;Descontinuado&quot; e armazená-lo no DAM.
+Uma tarefa comum dos clientes é armazenar e marcar o Documento de registro (DoR) gerado pela AEM Forms no DAM AEM. A marcação do documento precisa ser baseada nos dados enviados pela Adaptive Forms. Por exemplo, se o status de emprego nos dados enviados for &quot;Descontinuado&quot;, queremos adicionar uma tag ao documento com a tag &quot;Descontinuado&quot; e armazená-lo no DAM.
 
 O caso de uso é o seguinte:
 
 * Um usuário preenche o Formulário adaptável. Na forma adaptativa, o estado civil do usuário (ex-solteiro) e o status de emprego (ex-descontinuado) são capturados.
-* No envio do formulário, um fluxo de trabalho do AEM é acionado. Esse workflow marca o documento com o status civil (Único) e o status de emprego (Descontinuado) e armazena o documento no DAM.
+* No envio do formulário, um Fluxo de trabalho AEM é acionado. Esse workflow marca o documento com o status civil (Único) e o status de emprego (Descontinuado) e armazena o documento no DAM.
 * Depois que o documento é armazenado no DAM, o administrador deve ser capaz de pesquisar o documento por essas tags. Por exemplo, a pesquisa em Único ou Aposentado buscaria as DoRs apropriadas.
 
 Para atender a esse caso de uso, uma etapa do processo personalizado foi gravada. Nesta etapa, buscamos os valores dos elementos de dados apropriados a partir dos dados enviados. Em seguida, construímos o bloco da tag usando esse valor. Por exemplo, se o valor do elemento de status civil for &quot;Único&quot;, o título da tag se tornará **Pico:EmpregoStatus/Único. **Usando a API do TagManager , encontramos a tag e aplicamos a tag ao DoR.
@@ -53,11 +44,11 @@ Para que esse exemplo funcione em seu sistema, siga as etapas listadas abaixo:
 
 * [Download do formulário adaptável de amostra](assets/tag-and-store-in-dam-assets.zip)
 
-* [Ir para Formulários e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Ir para Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 * Clique em Criar | Upload de arquivo e upload do sampleadaptiveform.zip
 
-* [Importe os ativos do artigo ](assets/tag-and-store-in-dam-assets.zip) usando o gerenciador de pacotes do AEM
+* [Importe os ativos do artigo ](assets/tag-and-store-in-dam-assets.zip) usando AEM gerenciador de pacotes
 * Abra o [formulário de amostra no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Preencha a seção Pessoas e envie o formulário.
 * [Navegue até Pasta de pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
 Parabéns!! A amostra foi instalada com êxito no sistema
