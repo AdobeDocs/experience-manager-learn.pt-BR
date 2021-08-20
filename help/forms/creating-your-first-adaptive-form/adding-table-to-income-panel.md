@@ -1,25 +1,16 @@
 ---
 title: Adicionar componentes ao painel Renda
-seo-title: Adicionar componentes ao painel Renda
 description: Adicionaremos uma tabela ao painel Renda. Configure as linhas da tabela e use o editor de regras para calcular o total geral.
-seo-description: Adicionaremos uma tabela ao painel Renda. Configure as linhas da tabela e use o editor de regras para calcular o total geral.
-uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formulários adaptáveis
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
