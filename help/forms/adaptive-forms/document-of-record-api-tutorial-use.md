@@ -1,33 +1,24 @@
 ---
-title: Usar a API para gerar o documento de registro com o AEM Forms
-seo-title: Usar a API para gerar o documento de registro com o AEM Forms
+title: Usando a API para gerar o Documento de registro com o AEM Forms
 description: Gerar Documento de Registro (DOR) programaticamente
-seo-description: Usar a API para gerar o documento de registro com o AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Formulários adaptáveis
 version: 6.4,6.5
-uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
-discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
 
 
-# Usando a API para gerar o Documento de registro nos AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
+# Usar API para gerar documento de registro no AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
 
 Gerar Documento de Registro (DOR) programaticamente
 
-Este artigo ilustra o uso do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar **Documento de registro** programaticamente. [Documento de ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) registro é uma versão PDF dos dados capturados no formulário adaptável.
+Este artigo ilustra o uso do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar **Documento de registro** programaticamente. [Documento de ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) registro é uma versão PDF dos dados capturados no formulário adaptável.
 
 1. Veja a seguir o trecho de código. A primeira linha recebe o serviço DOR.
 1. Defina as opções do.
