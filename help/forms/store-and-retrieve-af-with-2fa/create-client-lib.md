@@ -1,28 +1,24 @@
 ---
 title: Criar bibliotecas de clientes
 description: Criar biblioteca de clientes para manipular o evento click do botão "Salvar e sair"
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 8%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
 # Criar biblioteca do cliente
 
-Crie [client lib](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` da API `guideBridge` no evento click do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável, `fileMap`, e `mobileNumber` para o ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
+Crie [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` da API `guideBridge` no evento click do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável, `fileMap`, e `mobileNumber` para o ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
 
 Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é levado ao formulário, o que permite recuperar o formulário adaptável salvo usando a ID de aplicativo exclusiva.
 
