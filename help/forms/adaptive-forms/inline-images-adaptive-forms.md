@@ -1,29 +1,25 @@
 ---
 title: Exibição de imagens em linha no Adaptive Forms
-seo-title: Exibição de imagens em linha no Adaptive Forms
-description: Exibir imagens carregadas em linha nos Formulários adaptáveis
-seo-description: Exibir imagens carregadas em linha nos Formulários adaptáveis
-feature: Adaptive Forms
+description: Exibir imagens carregadas em linha no Adaptive Forms
+feature: Formulários adaptáveis
 topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
 
 
-# Imagens em linha em formulários adaptáveis
+# Imagens em linha no Adaptive Forms
 
 Um caso de uso comum é exibir a imagem carregada como uma imagem embutida no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada ao exibir a imagem no formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
+
+[Exemplo ao vivo desse recurso](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Adicionar imagem de espaço reservado
 
@@ -70,7 +66,7 @@ function consumeImage (file) {
 
 ### Implantar no servidor
 
-* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) em sua instância do AEM usando o gerenciador de pacotes do AEM.
-* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando o gerenciador de pacotes do AEM.
+* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
+* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
 * Aponte seu navegador para [Adicionar imagem embutida](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Clique no botão &quot;Anexar sua foto&quot; para adicionar a imagem
