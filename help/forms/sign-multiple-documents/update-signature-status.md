@@ -1,22 +1,17 @@
 ---
 title: Atualizar o Status da Assinatura do Formulário no Banco de Dados
-description: Atualize o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho do AEM
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+description: Atualize o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho AEM
+feature: Formulários adaptáveis
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '107'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +23,7 @@ O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui 
 ![fluxo de trabalho principal](assets/update-signature.PNG)
 
 Atualizar Status da Assinatura é uma etapa de processo personalizada.
-O principal motivo para implementar a etapa do processo personalizado é estender um fluxo de trabalho do AEM. Este é o código personalizado usado para atualizar o status da assinatura.
+O principal motivo para implementar a etapa de processo personalizado é estender um fluxo de trabalho AEM. Este é o código personalizado usado para atualizar o status da assinatura.
 O código nesta etapa do processo personalizado faz referência ao serviço SignMultipleForms .
 
 
