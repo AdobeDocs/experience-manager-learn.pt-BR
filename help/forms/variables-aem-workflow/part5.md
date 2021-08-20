@@ -1,29 +1,21 @@
 ---
-title: Variáveis no fluxo de trabalho do AEM[Parte5]
-seo-title: Variáveis no fluxo de trabalho do AEM[Parte5]
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: technical video
-activity: understand
+title: Variáveis no fluxo de trabalho AEM[Parte5]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 2%
+source-wordcount: '92'
+ht-degree: 1%
 
 ---
 
 
-# Editor de regras no fluxo de trabalho do AEM
+# Editor de regras em AEM fluxo de trabalho
 
-O componente Or-Split é usado para fazer o roteamento no fluxo de trabalho do AEM. Antes do lançamento do AEM 6.5, era necessário gravar ECMA ou código personalizado para ativar o roteamento condicional. No AEM 6.5, agora temos a capacidade de usar o editor de regras para criar regras de negócios que determinarão a rota a ser executada.
+O componente Or-Split é usado para fazer o roteamento AEM fluxo de trabalho. Antes da versão AEM 6.5, você tinha que gravar ECMA ou código personalizado para ativar o roteamento condicional. No AEM 6.5, agora temos a capacidade de usar o editor de regras para criar regras de negócios que determinarão a rota a ser executada.
 
 O vídeo a seguir demonstrará a capacidade de usar o editor de regras para fazer processamento condicional no fluxo de trabalho do AEM
 
