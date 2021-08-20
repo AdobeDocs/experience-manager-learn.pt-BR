@@ -1,35 +1,26 @@
 ---
-title: Uso de APIs de localização geográfica em formulários adaptáveis
-seo-title: Uso de APIs de localização geográfica em formulários adaptáveis
+title: Uso de APIs de localização geográfica no Adaptive Forms
 description: Preencha campos de endereço em seu formulário usando o
-seo-description: Preencha campos de endereço em seu formulário usando o
-uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: develop
+feature: Formulários adaptáveis
 version: 6.3,6.4,6.5
-discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '417'
 ht-degree: 1%
 
 ---
 
 
-# Uso de APIs de localização geográfica em formulários adaptáveis{#using-geolocation-api-s-in-adaptive-forms}
+# Uso de APIs de localização geográfica no Adaptive Forms{#using-geolocation-api-s-in-adaptive-forms}
 
-Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) para obter um link para uma demonstração ao vivo desse recurso.
 
 Neste artigo, vamos analisar o uso da API de localização geográfica do Google para preencher campos de um formulário adaptável. Esse caso de uso geralmente é usado quando você deseja preencher os campos de endereço atuais em um formulário.
 
-As etapas a seguir foram seguidas para usar a API de localização geográfica em formulários adaptáveis.
+As etapas a seguir foram seguidas para usar a API de localização geográfica no Adaptive Forms.
 
 1. [Obtenha o ](https://developers.google.com/maps/documentation/javascript/get-api-key) Chave da API do Google para usar a plataforma Google Maps. Você pode obter uma chave de avaliação válida por 1 ano.
 
@@ -96,13 +87,13 @@ O JSON retornado pela API é analisado para definir os campos do Formulário ada
 >
 >Para fins de teste, você pode usar o protocolo HTTP com localhost no URL.
 >
->Para o servidor de produção, será necessário habilitar o SSL para o Servidor AEM para obter esse recurso.
+>Para o servidor de produção, será necessário habilitar o SSL para o Servidor de AEM para obter esse recurso.
 >
 >A amostra associada a este artigo foi testada com o endereço dos EUA. Se quiser usar esse recurso em outros locais geográficos, talvez seja necessário ajustar a análise JSON.
 
 Para colocar esse recurso no servidor, siga as etapas a seguir
 
-* Instale e inicie o servidor do AEM Forms.
+* Instale e inicie o servidor AEM Forms.
 
 >!![NOTE] Esse recurso foi testado no AEM Forms 6.3 e superior
 * [Obter a chave da API do Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
