@@ -2,14 +2,13 @@
 title: Como incorporar fontes para Forms e conversões de serviço de saída
 description: Etapas para incorporar fontes ao Forms e conversões de serviço de saída
 type: Troubleshooting
-product: forms
 role: Admin
-level: Developer
+level: Experienced
 version: 6.5
-feature: Forms Portal , Serviço de Saída
+feature: Serviço Forms, Serviço de Saída
 topic: 'Desenvolvimento  '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 2%
