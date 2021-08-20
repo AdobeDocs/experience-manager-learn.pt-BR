@@ -2,13 +2,12 @@
 title: Como limpar registros de processo do banco de dados do Gerenciador de Jobs
 description: Configurar limpeza de processos de registros a partir do banco de dados do Gerenciador de Tarefas
 type: Troubleshooting
-product: forms
 role: Developer
 level: Experienced
 version: 6.5
 topic: 'Desenvolvimento  '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 2%
