@@ -1,29 +1,20 @@
 ---
-title: Serviço De Código De Barras Com Formulários Adaptáveis
-seo-title: Serviço De Código De Barras Com Formulários Adaptáveis
-description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
-seo-description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos
-uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+title: Serviço De Código De Barras Com Forms Adaptável
+description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos.
+feature: Forms com códigos de barras
 version: 6.4,6.5
-discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 
-# Serviço de códigos de barras com formulários adaptáveis{#barcode-service-with-adaptive-forms}
+# Serviço De Código De Barras Com Forms Adaptável{#barcode-service-with-adaptive-forms}
 
 Este artigo demonstrará o uso do serviço de código de barras para preencher o formulário adaptável. O caso de uso é o seguinte:
 
@@ -141,7 +132,7 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->O formulário adaptável incluído neste pacote foi criado usando o AEM Forms 6.4. Se você pretende usar este pacote no ambiente AEM Forms 6.3, crie o Formulário adaptável no AEM Form 6.3
+>O formulário adaptável incluído neste pacote foi criado usando o AEM Forms 6.4. Se você pretende usar este pacote no ambiente AEM Forms 6.3, crie o Formulário adaptável AEM formulário 6.3
 
 Linha 12 - Código personalizado para obter o resolvedor de serviço. Esse pacote é incluído como parte dos ativos dos artigos.
 
