@@ -1,22 +1,18 @@
 ---
 title: Implantar a amostra
-description: Obter caso de uso em execução na instância local do AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+description: Obter caso de uso em execução na sua instância local do AEM Forms
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '371'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +45,7 @@ Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para e
 ## Implante os seguintes pacotes OSGi
 
 Implante o pacote que tem o código [para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Implante o pacote [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Implante o pacote [DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Implantar a biblioteca do cliente
 
@@ -57,7 +53,7 @@ A amostra usa duas bibliotecas de clientes. Importe essas [bibliotecas do client
 
 ## Importar o modelo de formulário adaptável personalizado
 
-Os formulários de amostra usados nessa demonstração são baseados em um modelo personalizado. Importe o modelo personalizado [para o AEM](assets/custom-template-with-page-component.zip)
+Os formulários de amostra usados nessa demonstração são baseados em um modelo personalizado. Importe o modelo personalizado [para AEM](assets/custom-template-with-page-component.zip)
 
 ## Importar formulários adaptáveis de amostra
 
