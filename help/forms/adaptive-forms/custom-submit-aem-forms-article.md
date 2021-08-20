@@ -1,24 +1,15 @@
 ---
 title: Escrever um envio personalizado no AEM Forms
-seo-title: Escrever um envio personalizado no AEM Forms
 description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
-seo-description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: implement
+feature: Formulários adaptáveis
 version: 6.3,6.4,6.5
-uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
-discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 3%
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +18,7 @@ ht-degree: 3%
 
 Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
 
-Este artigo o guiará pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio de formulários adaptativos.
+Este artigo o guiará pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio do Adaptive Forms.
 
 * Logon no crx
 * Crie um nó do tipo &quot;sling :folder &quot; em aplicativos. Vamos chamar este nó CustomSubmitHelpx.
@@ -38,7 +29,7 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 * guideDataModel     | xfa,xsd,básico
 * jcr:description   | CustomSubmitHelpx
 * Salve as alterações
-* Crie um novo arquivo chamado post.POST.jsp sob o nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito neste arquivo. O código a seguir encaminha a solicitação para o servlet.
+* Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito neste arquivo. O código a seguir encaminha a solicitação para o servlet.
 
 ```java
 <%
