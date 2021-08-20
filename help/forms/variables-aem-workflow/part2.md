@@ -1,28 +1,20 @@
 ---
-title: Variáveis no fluxo de trabalho do AEM[Parte2]
-seo-title: Variáveis no fluxo de trabalho do AEM[Parte2]
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variáveis no fluxo de trabalho AEM[Parte2]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
-# Variáveis do tipo JSON no fluxo de trabalho do AEM
+# Variáveis do tipo JSON AEM fluxo de trabalho
 
-A partir do AEM Forms 6.5, agora podemos criar variáveis do tipo JSON no fluxo de trabalho do AEM. Normalmente, você criará variáveis do tipo JSON se estiver enviando Formulários adaptáveis com base no esquema JSON para um fluxo de trabalho do AEM ou quiser armazenar os resultados de uma operação Invocar modelo de dados de formulário. O vídeo a seguir mostra as etapas necessárias para criar e usar uma variável do tipo JSON no fluxo de trabalho do AEM
+A partir do AEM Forms 6.5, agora podemos criar variáveis do tipo JSON AEM fluxo de trabalho. Normalmente, você criará variáveis do tipo JSON se estiver enviando um Adaptive Forms com base no esquema JSON para um Fluxo de trabalho AEM ou quiser armazenar os resultados de uma operação Invocar Modelo de dados de formulário. O vídeo a seguir mostra as etapas necessárias para criar e usar uma variável do tipo JSON em AEM fluxo de trabalho
 
 **Se estiver usando o AEM Forms 6.5.0**
 
@@ -39,7 +31,7 @@ Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de t
 
 Para que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
-* [Baixe e importe os ativos para o AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
+* [Baixe e importe os ativos no AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
 * [Explore o ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modelo de fluxo de trabalho para entender as variáveis usadas no fluxo de trabalho
 * [Configurar o serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abra o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
