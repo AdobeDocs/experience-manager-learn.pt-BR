@@ -1,21 +1,17 @@
 ---
 title: Armazenando e Recuperando Dados de Formulário com anexos do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados de formulário com anexos
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -27,7 +23,7 @@ Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de
 
 * Use a API GuideBridge para obter acesso aos dados do formulário adaptável
 
-* Faça uma chamada POST para um servlet. Esse servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
+* Faça uma chamada de POST para um servlet. Esse servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
 
 * Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute**.
 
@@ -42,4 +38,4 @@ Espera-se que o público-alvo desse conteúdo tenha alguma experiência nas segu
 * Formulário adaptativo
 * Modelo de dados do formulário
 * Serviços/componentes do OSGi
-* Bibliotecas de clientes do AEM
+* Bibliotecas de clientes AEM
