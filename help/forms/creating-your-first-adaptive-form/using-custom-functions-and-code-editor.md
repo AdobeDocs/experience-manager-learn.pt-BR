@@ -1,31 +1,22 @@
 ---
 title: Uso de funções e editor de código
-seo-title: Uso de funções e editor de código
 description: Uso do editor de funções e códigos para criar regras de negócios
-seo-description: Uso do editor de funções e códigos para criar regras de negócios
-uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formulários adaptáveis
 version: 6.4,6.5
-discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
 
 
-# Uso de funções personalizadas e do editor de código {#using-functions-and-code-editor}
+# Uso de funções personalizadas e do editor de códigos {#using-functions-and-code-editor}
 
 Nessa parte, usaremos funções personalizadas e o editor de códigos para criar regras de negócios.
 
