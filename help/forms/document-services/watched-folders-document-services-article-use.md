@@ -1,29 +1,20 @@
 ---
-title: Uso de pastas vigiadas no AEM Forms
-seo-title: Uso de pastas vigiadas no AEM Forms
+title: Usar pastas assistidas no AEM Forms
 description: Configurar e usar pastas vigiadas no AEM Forms
-seo-description: Configurar e usar pastas vigiadas no AEM Forms
-uuid: 32c4bda2-363d-4294-925e-405a176f7f8d
-feature: Output Service
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Serviço de saída
 version: 6.4,6.5
-discoiquuid: a40e2381-0dc8-4784-9b80-15e27b244035
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 
-# Uso de pastas vigiadas no AEM Forms{#using-watched-folders-in-aem-forms}
+# Usar pastas assistidas no AEM Forms{#using-watched-folders-in-aem-forms}
 
 Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, de modo que, quando um usuário colocar um arquivo (como um arquivo PDF) na Pasta assistida, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre workflow, serviço e script.
 
@@ -33,7 +24,7 @@ Pastas vigiadas são usadas para gerar documentos no modo de lote. Usando o meca
 
 Este artigo abordará o caso de uso da mesclagem de dados com um modelo usando o serviço de saída via mecanismo de pasta monitorada.
 
-O serviço de saída é um serviço OSGi que faz parte do AEM Document Services. O serviço de saída oferece suporte a vários formatos de saída e recursos de design de saída do AEM Forms Designer. O serviço de saída pode converter modelos XFA e dados XML para gerar documentos de impressão em vários formatos.
+O serviço de saída é um serviço OSGi que faz parte AEM Document Services. O serviço de saída oferece suporte a vários formatos de saída e recursos de design de saída do AEM Forms Designer. O serviço de saída pode converter modelos XFA e dados XML para gerar documentos de impressão em vários formatos.
 
 Para saber mais sobre o serviço de saída, [clique aqui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar uma pasta monitorada em seu sistema, siga as etapas abaixo:
