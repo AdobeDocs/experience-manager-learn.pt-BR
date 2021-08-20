@@ -1,19 +1,15 @@
 ---
 title: Etapa personalizada do processo para compactar anexos de arquivo
 description: Etapa de processo personalizada para adicionar os anexos de formulário adaptável a um arquivo zip e armazenar o arquivo zip em uma variável de fluxo de trabalho
-feature: Fluxo de trabalho
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: setup
+feature: Formulários adaptáveis
 version: 6.5
 topic: Desenvolvimento
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
