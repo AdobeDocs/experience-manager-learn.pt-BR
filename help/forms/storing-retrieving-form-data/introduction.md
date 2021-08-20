@@ -1,20 +1,16 @@
 ---
 title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Formulários adaptáveis
+type: Tutorial
 version: 6.3,6.4,6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '167'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +21,7 @@ Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de
 
 * Use a API GuideBridge para obter acesso aos dados do formulário adaptável
 
-* Faça uma chamada POST para um servlet. Este servlet armazena os dados no banco de dados. Os dados armazenados estão associados a um GUID
+* Faça uma chamada de POST para um servlet. Este servlet armazena os dados no banco de dados. Os dados armazenados estão associados a um GUID
 
 * Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute**.
 
