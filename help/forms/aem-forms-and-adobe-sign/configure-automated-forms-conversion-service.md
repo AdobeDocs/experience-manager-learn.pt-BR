@@ -2,16 +2,12 @@
 title: Serviço Automated forms conversion
 description: Serviço Automated forms conversion. Este artigo descreve como um administrador de AEM pode configurar o serviço Automated forms conversion para automatizar a conversão de seus PDF forms em formulários adaptáveis. Essa ajuda destina-se aos administradores de TI e de AEM da sua organização.
 feature: Formulários adaptáveis
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 thumbnail: 39493.jpg
 kt: 6114
 topic: Desenvolvimento
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
