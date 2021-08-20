@@ -1,33 +1,24 @@
 ---
-title: Introdução Aos Formulários Adaptativos
-seo-title: Introdução Aos Formulários Adaptativos
+title: Introdução Ao Adaptive Forms
 description: 'Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais. '
-seo-description: 'Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais. '
-uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formulários adaptáveis
 version: 6.3,6.4,6.5
-discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
 
-# Introdução aos formulários adaptativos {#getting-started-with-adaptive-forms}
+# Introdução Ao Adaptive Forms {#getting-started-with-adaptive-forms}
 
 Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais.
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura.
+Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura.
 
 Este tutorial não usa nenhum modelo de formulário na criação do Formulário adaptável.
 
@@ -41,6 +32,6 @@ Você precisará do seguinte:
 
 * [Baixe o fragmento client-libs-and-](assets/client-libs-and-logo.zip) logoand  [getting-started-](assets/getting-started-fragment.zip) no disco rígido.
 
-* Importe os arquivos zip para o AEM usando [gerenciador de pacotes ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importe os arquivos zip no AEM usando [gerenciador de pacotes ](http://localhost:4502/crx/packmgr/index.jsp)
 
 
