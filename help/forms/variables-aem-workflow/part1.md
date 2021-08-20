@@ -1,27 +1,20 @@
 ---
-title: Variáveis no fluxo de trabalho do AEM[Parte1]
-seo-title: Variáveis no fluxo de trabalho do AEM[Parte1]
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-seo-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+title: Variáveis no fluxo de trabalho AEM[Parte1]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
+feature: Formulários adaptáveis
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 
-# Variáveis XML no fluxo de trabalho do AEM
+# Variáveis XML no fluxo de trabalho AEM
 
 As variáveis do tipo XML geralmente são usadas quando você tem um formulário adaptável baseado em XSD e deseja extrair valores do envio do formulário adaptável no fluxo de trabalho.
 
@@ -61,7 +54,7 @@ Os dados do formulário adaptável são armazenados no elemento de dados, como m
 
 Para que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
-* [Baixe e importe os ativos para o AEM usando o gerenciador de pacotes](assets/xmlandstringvariable.zip)
+* [Baixe e importe os ativos no AEM usando o gerenciador de pacotes](assets/xmlandstringvariable.zip)
 * [Explore o ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) modelo de fluxo de trabalho para entender as variáveis usadas no fluxo de trabalho
 * [Configurar o serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abra o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
