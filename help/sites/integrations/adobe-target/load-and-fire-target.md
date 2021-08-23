@@ -1,7 +1,7 @@
 ---
 title: Carregar e acionar uma chamada do Target
-description: Saiba como carregar, passar parâmetros para solicitação de página e acionar uma chamada do Target de sua página do site usando uma regra do Launch. As informações da página são recuperadas e passadas como parâmetros usando a Camada de dados do cliente da Adobe, que permite coletar e armazenar dados sobre a experiência dos visitantes em uma página da Web e, em seguida, facilitar o acesso a esses dados.
-feature: Core Components, Adobe Client Data Layer
+description: Saiba como carregar, passar parâmetros para solicitação de página e acionar uma chamada do Target de sua página do site usando uma regra do Launch. As informações da página são recuperadas e passadas como parâmetros usando a Camada de dados do cliente do Adobe , que permite coletar e armazenar dados sobre a experiência dos visitantes em uma página da Web e, em seguida, facilitar o acesso a esses dados.
+feature: Componentes principais, Camada de dados do cliente Adobe
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,29 +9,28 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
-topic: Integrations
+topic: Integrações
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 3%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
 
 # Carregar e acionar uma chamada do Target {#load-fire-target}
 
-Saiba como carregar, passar parâmetros para solicitação de página e acionar uma chamada do Target de sua página do site usando uma regra do Launch. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente da Adobe, que permite coletar e armazenar dados sobre a experiência dos visitantes em uma página da Web e, em seguida, facilitar o acesso a esses dados.
+Saiba como carregar, passar parâmetros para solicitação de página e acionar uma chamada do Target de sua página do site usando uma regra do Launch. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente do Adobe, que permite coletar e armazenar dados sobre a experiência dos visitantes em uma página da Web e, em seguida, facilitar o acesso a esses dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regra de carregamento de página
 
-A Camada de dados do cliente da Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da Página do AEM é carregada, ela acionará um evento `cmp:show` . No vídeo, a regra `Launch Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado, bem como para os elementos de dados.
+A Camada de dados do cliente do Adobe é uma camada de dados orientada por eventos. Quando a camada de dados Página de AEM é carregada, ela acionará um evento `cmp:show` . No vídeo, a regra `Launch Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado, bem como para os elementos de dados.
 
-### Evento Personalizado Exibido{#page-event}
+### Evento de página exibida personalizada{#page-event}
 
 ![Configuração de evento mostrada na página e código personalizado](assets/load-and-fire-target-call.png)
 
@@ -81,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Uma função personalizada define o `pageShownEventHandler` e escuta eventos emitidos pelos Componentes principais do AEM, deriva as informações relevantes do Componente principal, compacta-o em um objeto de evento e aciona o Evento de inicialização com as informações do evento derivadas na carga útil.
+Uma função personalizada define o `pageShownEventHandler` e escuta eventos emitidos pelos Componentes principais AEM, deriva as informações relevantes do Componente principal, agrupa-o em um objeto de evento e aciona o Evento de inicialização com as informações do evento derivadas na carga.
 
 A Regra do Launch é acionada usando a função `trigger(...)` do Launch, que é __somente__ disponível na definição do trecho de código personalizado do evento de uma regra.
 
@@ -94,7 +93,7 @@ Se `trigger(...)` for usado fora do contexto do tipo de evento Código personali
 
 ![Elementos de dados](assets/data-elements.png)
 
-Os elementos de dados do Adobe Launch mapeiam os dados do objeto de evento [acionado no evento personalizado Página exibida](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
+Os Elementos de dados do Adobe Launch mapeiam os dados do objeto de evento [acionado no evento personalizado Página exibida](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
 
 #### Elemento de dados da ID da página
 
@@ -116,7 +115,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 }
 ```
 
-Esse código retorna o caminho da página do AEM.
+Esse código retorna o caminho da página AEM.
 
 ![Caminho da página](assets/pagepath.png)
 
@@ -128,7 +127,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 }
 ```
 
-Esse código retorna o título da página do AEM.
+Esse código retorna o título AEM página.
 
 ![Título da página](assets/pagetitle.png)
 
@@ -161,8 +160,8 @@ window.targetGlobalSettings = {
 
 ## Links de suporte
 
-+ [Documentação da camada de dados do cliente da Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Documentação da camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Uso da camada de dados do cliente da Adobe e da documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Introdução ao Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Uso da camada de dados do cliente do Adobe e da documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
