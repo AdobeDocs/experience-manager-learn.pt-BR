@@ -14,9 +14,9 @@ thumbnail: 32011.jpg
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '242'
 ht-degree: 7%
 
 ---
@@ -56,5 +56,5 @@ Os recursos do Editor de páginas incluem:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia do usuário de criação de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)
+* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
