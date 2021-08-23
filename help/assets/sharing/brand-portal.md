@@ -6,9 +6,9 @@ version: 6.3, 6.4, 6.5
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1767'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ A origem dos ativos da Brand Portal é usada para coletar ativos de agências e 
 
 *O Autor do Experience Manager 6.5 SP2 (6.5.2) ou superior é necessário para usar a origem dos ativos*
 
-Revise [Ativar autor do Experience Manager para origem de ativos](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) para obter instruções sobre como configurar e configurar a origem de ativos no autor do Experience Manager.
+Revise [Ativar autor do Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) para obter instruções sobre como configurar e configurar a origem de ativos no autor do Experience Manager.
 
 ## Recursos e aprimoramentos de fevereiro de 2019 do Brand Portal{#brand-portal-features-and-enhancements-644}
 
@@ -206,6 +206,6 @@ Novos recursos aprimorados voltados para o alinhamento do Brand Portal com o AEM
 * [Agentes de replicação do autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guia para download acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Adobe Docs AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [Documentação do Adobe AEM Assets Dynamic Media](https://docs.adobe.com/docs/br/aem/6-3/author/assets/dynamic-media.html)
+* [Documentação do Adobe AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/)
 * [Baixar o Assimilar Connect](https://downloads.asperasoft.com/connect2/)
 * [Assimilar servidor de teste do Connect](https://test-connect.asperasoft.com/)
