@@ -11,10 +11,9 @@ level: Beginner
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -77,9 +76,9 @@ Usaremos AEM práticas recomendadas e:
 * [Estrutura de teste do Mockito](https://site.mockito.org/)
 * [estrutura de teste wcm.io](https://wcm.io/testing/)  (que se baseia em mocks do  [Apache Sling](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Teste de unidade e Gerenciador de nuvem do Adobe {#unit-testing-and-adobe-cloud-manager}
+## Teste de unidade e gerenciador de nuvem do Adobe {#unit-testing-and-adobe-cloud-manager}
 
-[O Adobe Cloud ](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager integra a execução de teste de unidade e o relatório de cobertura de  [código ao ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) pipeline de CI/CD para ajudar a incentivar e promover as práticas recomendadas de teste de unidade AEM código.
+[O Adobe Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) Manager integra a execução de teste de unidade e o relatório de cobertura de  [código ao ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) pipeline de CI/CD para ajudar a incentivar e promover as práticas recomendadas de teste de unidade AEM código.
 
 Embora o código de teste de unidade seja uma boa prática para qualquer base de código, ao usar o Cloud Manager, é importante aproveitar seus recursos de teste e relatório de qualidade de código fornecendo testes de unidade para que o Cloud Manager seja executado.
 
@@ -188,7 +187,7 @@ As dependências de teste **JUnit5**, **Mockito** e **AEM Mocks** são automatic
 
    Uma pasta de origem paralela no projeto **core** conterá os testes de unidade e quaisquer arquivos de teste de suporte. Esta pasta **test** fornece a separação das classes de teste do código-fonte, mas permite que os testes atuem como se estivessem nos mesmos pacotes que o código-fonte.
 
-## Criando o teste JUnit {#creating-the-junit-test}
+## Criação do teste JUnit {#creating-the-junit-test}
 
 Os testes de unidade normalmente mapeiam de 1 a 1 com classes Java. Neste capítulo, gravaremos um teste JUnit para o **BylineImpl.java**, que é o Modelo do Sling que suporta o componente Byline.
 
@@ -215,7 +214,7 @@ Os testes de unidade normalmente mapeiam de 1 a 1 com classes Java. Neste capít
 
 
 
-## Revisando BylineImplTest.java {#reviewing-bylineimpltest-java}
+## Revisão de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
 Neste ponto, o arquivo de teste JUnit é uma classe Java vazia. Atualize o arquivo com o seguinte código:
 
@@ -278,7 +277,7 @@ Como esperado, todos os testes falharam, pois ainda não foram implementados.
 
    *Clique com o botão direito do mouse em BylineImplTests.java > Executar*
 
-## Revisando BylineImpl.java {#reviewing-bylineimpl-java}
+## Revisão de BylineImpl.java {#reviewing-bylineimpl-java}
 
 Ao gravar testes de unidade, há duas abordagens principais:
 
@@ -289,7 +288,7 @@ Neste tutorial, a última abordagem é usada (como já criamos um **BylineImpl.j
 
 O TDD no contexto de AEM requer um nível de especialização e é melhor adotado por AEM desenvolvedores com capacidade AEM desenvolvimento e teste de unidade de código AEM.
 
-## Configuração AEM contexto de teste {#setting-up-aem-test-context}
+## Configuração AEM contexto de teste  {#setting-up-aem-test-context}
 
 A maioria dos códigos escritos para AEM depende de APIs JCR, Sling ou AEM, que, por sua vez, exigem que o contexto de um AEM em execução seja executado corretamente.
 
@@ -483,7 +482,7 @@ Agora que temos uma configuração básica de contexto de modelo, gravaremos nos
    ![passagem do nome de teste](assets/unit-testing/testgetname-pass.png)
 
 
-## Testando getOccupations() {#testing-get-occupations}
+## Teste de getOccupations() {#testing-get-occupations}
 
 Muito bem! Nosso primeiro teste foi bem-sucedido! Vamos continuar e testar `getOccupations()`. Como a inicialização do contexto do modelo foi feita no método `@Before setUp()`, isso estará disponível para todos os métodos `@Test` neste caso de teste, incluindo `getOccupations()`.
 
@@ -703,7 +702,7 @@ Observe que essa verificação nos permitiu ignorar o teste para quando `getName
 
 ![Todos os testes foram bem-sucedidos](./assets/unit-testing/all-tests-pass.png)
 
-## Executando testes de unidade como parte da build {#running-unit-tests-as-part-of-the-build}
+## Execução de testes de unidade como parte da compilação {#running-unit-tests-as-part-of-the-build}
 
 Os testes de unidade são executados e precisam ser aprovados como parte da compilação maven. Isso garante que todos os testes sejam bem-sucedidos antes da implantação de um aplicativo. A execução de metas Maven, como pacote ou instalação, chama automaticamente e requer a aprovação de todos os testes de unidade no projeto.
 
