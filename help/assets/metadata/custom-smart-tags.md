@@ -1,18 +1,17 @@
 ---
 title: Tags inteligentes personalizadas para imagens no AEM Assets
 description: Saiba como treinar as Tags inteligentes do AEM Assets para aplicar termos personalizados a ativos.
-feature: Smart Tags
+feature: Tags inteligentes
 version: 6.4, 6.5, cloud-services
 kt: 795
 thumbnail: 22254.jpg
-topic: Content Management
+topic: Gerenciamento de conteúdo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 4%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +26,7 @@ Tags inteligentes personalizadas ou Tags inteligentes aprimoradas podem ser apro
 ## Configurar Tags inteligentes personalizadas para imagens do AEM 6.x{#set-up}
 
 >[!NOTE]
-> As Tags inteligentes personalizadas para imagens são automaticamente provisionadas para o AEM as a Cloud Service.
+> As Tags inteligentes personalizadas para imagens são automaticamente provisionadas para AEM como um Cloud Service.
 
 As Tags inteligentes personalizadas para imagens exigem [Tags inteligentes para que as imagens sejam configuradas](./image-smart-tags.md#set-up).
 
@@ -37,6 +36,6 @@ Saiba como configurar o treinamento de Tags inteligentes no AEM Assets, usando o
 
 ## Recursos adicionais
 
-* O AEM 6.4 requer o [Service Pack mais recente](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 exige o [Service Pack mais recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
