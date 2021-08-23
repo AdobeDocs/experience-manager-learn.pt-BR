@@ -1,17 +1,17 @@
 ---
 title: Aplicativo de desktop do AEM
 description: Use AEM aplicativo para desktop para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
-kt: 2551
-sub-product: ativos
-feature: Aplicativo de desktop Experience Manager
 version: 6.5, 6.4, 6.3
 topic: Gerenciamento de conteúdo
+feature: Aplicativo de desktop
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 2551
+thumbnail: 28868.jpeg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 11%
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
@@ -33,4 +33,4 @@ Use AEM aplicativo para desktop para simplificar o acesso a qualquer ativo geren
 
 ## Recursos adicionais
 
-+ [Baixe o aplicativo para desktop do AEM mais recente](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html)
++ [Baixe o aplicativo para desktop do AEM mais recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
