@@ -7,10 +7,10 @@ version: 6.3, 6.4, 6.5
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 11%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -27,4 +27,4 @@ As miniaturas de vídeo personalizadas do AEM Assets oferecem aos autores a capa
 
 >[!NOTE]
 >
->Você deve executar a instância [AEM no modo Dynamic Media](https://docs.adobe.com/docs/pt-BR/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
+>Você deve executar a instância [AEM no modo Dynamic Media](https://experienceleague.adobe.com/docs/)
