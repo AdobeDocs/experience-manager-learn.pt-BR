@@ -2,12 +2,12 @@
 user-guide-title: Vídeos e Tutoriais do AEM Assets
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets.
 breadcrumb-title: Tutoriais do AEM Assets
-sub-product: ativos
+feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 team: TM
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 31%
+source-wordcount: '343'
+ht-degree: 26%
 
 ---
 
@@ -63,12 +63,18 @@ ht-degree: 31%
 + Compartilhamento e distribuição{#sharing}
    + [Baixar ativos](./sharing/download.md)
    + [Publicar ativos](./sharing/publish.md)
-   + [Brand Portal](./sharing/brand-portal.md)
+
+   + Brand Portal{#brand-portal}
+      + [Brand Portal](./sharing/brand-portal.md)
+      + [Configurar o AEM Brand Portal](brand-portal/configure.md)
+      + [Configurar origem dos ativos](brand-portal/configure-asset-sourcing.md)
+      + [Ativar downloads de representação](brand-portal/enable-renditions-download.md)
    + Compartilhamento de ativos{#assets-share}
       + [Compartilhamento de ativos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurar o Compartilhamento de Ativos Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Theming Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
    + [Connected Assets](./sharing/connected-assets.md)
+
 
 + Integração com fluxos de trabalho criativos{#creative-workflows}
    + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
@@ -107,6 +113,22 @@ ht-degree: 31%
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + [Vídeo de recorte inteligente do Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
    + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+
+   + Tutoriais {#tutorials}
+      + [Criação de conjuntos de carrossel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+      + [Criação de conjuntos de imagens](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+      + [Criação de predefinições de imagens](dynamic-media/tutorials/creating-image-presets.md)
+      + [Criação de perfis de imagem de recorte inteligente](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
+      + [Criação de perfis de vídeo](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
+      + [Processamento de ativos](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Configurar um servidor de visualização seguro](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+      + [Gerando URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+      + [Acionando um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+      + [Invalidar o Cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+      + [Uso dos componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Excluindo a configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Download de ativos no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Tradução {#translation}
    + [Tradução do arquivo de origem](translation/source-file-translation-feature-video-use.md)
