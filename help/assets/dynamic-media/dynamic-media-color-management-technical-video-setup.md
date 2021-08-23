@@ -1,16 +1,15 @@
 ---
 title: Como entender o gerenciamento de cores com o AEM Dynamic Media
-description: Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
+description: Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
 sub-product: dynamic-media
-feature: Image Profiles, Video Profiles
+feature: Perfis de imagem, Perfis de vídeo
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gerenciamento de conteúdo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 15%
 
 ---
@@ -18,19 +17,19 @@ ht-degree: 15%
 
 # Como entender o gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
+Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
 >[!NOTE]
 >
->[Ative o AEM do Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media para usar esse recurso.
+>[Ative o Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM para usar esse recurso.
 
-Esse recurso está disponível para as versões do AEM 6.1 e 6.2 como um Feature Pack.
+Esse recurso está disponível para as versões AEM 6.1 e 6.2 como um Feature Pack.
 
 ## Modelo XML para o nó de configuração do Gerenciamento de cores {#xml-template-for-the-color-management-configuration-node}
 
-Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Esse modelo XML pode ser copiado para o projeto de desenvolvimento do AEM e configurado com as configurações apropriadas ao projeto.
+Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Esse modelo XML pode ser copiado no projeto de desenvolvimento de AEM e configurado com as configurações apropriadas ao projeto.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,7 +85,7 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 />
 ```
 
-### A lista de perfis de cores padrão da Adobe está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
+### A lista de perfis de cores do Adobe padrão está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Espaço de cor | Descrição |
 | ------------------- | ---------- | ------------------------------------- |
@@ -109,8 +108,8 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | CMYK Padrão do Photoshop 4 |
-| PS5Default | CMYK | CMYK Padrão do Photoshop 5 |
+| PS4Default | CMYK | CMYK padrão do Photoshop 4 |
+| PS5Default | CMYK | CMYK padrão do Photoshop 5 |
 | CheifadoRevestido | CMYK | U.S. Sheetfeed Coated v2 |
 | PlacaSemRevestimento | CMYK | U.S.A., Placa Não Revestida v2 |
 | SMPTE | RGB | SMPTE-C |
@@ -125,4 +124,4 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 
 ## Recursos adicionais{#additional-resources}
 
-* [Configuração do gerenciamento de cores do Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuração do gerenciamento de cores Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
