@@ -12,10 +12,9 @@ thumbnail: KT-6282.jpg
 topic: Integrações, desenvolvimento
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -46,7 +45,7 @@ Os trabalhadores do Asset compute implementam o contrato da API do trabalhador d
 1. O trabalhador do Asset compute salva os dados binários da nova representação em `rendition.path`.
 1. Os dados binários gravados em `rendition.path` são transportados por meio do SDK do Asset compute para o AEM Author Service e expostos como __(4a)__ uma representação de texto e __(4b)__ persistiram no nó de metadados do ativo.
 
-O diagrama acima articula as preocupações do desenvolvedor do Asset compute e o fluxo lógico para a invocação do trabalhador do Asset compute. Para o curioso, os [detalhes internos da execução do Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) estão disponíveis, no entanto, somente os contratos de API do SDK do Asset compute público podem ser dependentes.
+O diagrama acima articula as preocupações do desenvolvedor do Asset compute e o fluxo lógico para a invocação do trabalhador do Asset compute. Para o curioso, os [detalhes internos da execução do Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) estão disponíveis, no entanto, somente os contratos de API do SDK do Asset compute público podem ser dependentes.
 
 ## Anatomia de um trabalhador
 
