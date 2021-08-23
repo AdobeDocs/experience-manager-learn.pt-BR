@@ -12,9 +12,9 @@ thumbnail: kt-5432.jpg
 topic: Desenvolvimento
 role: Developer
 level: Beginner
-source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1002'
 ht-degree: 3%
 
 ---
@@ -185,9 +185,9 @@ Definir o nível de log mais apropriado para cada tipo de ambiente é com AEM co
 
 ### Variáveis específicas do ambiente para definir níveis de log do Java
 
-Uma alternativa à configuração de níveis de log Java estáticos bem conhecidos para cada ambiente é usar AEM como [variáveis específicas do ambiente](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) para parametrizar os níveis de log, permitindo que os valores sejam alterados dinamicamente por meio da [CLI do Adobe I/O com o plug-in do Cloud Manager](#aio-cli).
+Uma alternativa à configuração de níveis de log Java estáticos bem conhecidos para cada ambiente é usar AEM como [variáveis específicas do ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) para parametrizar os níveis de log, permitindo que os valores sejam alterados dinamicamente por meio da [CLI do Adobe I/O com o plug-in do Cloud Manager](#aio-cli).
 
-Isso requer a atualização das configurações de log do OSGi para usar os espaços reservados da variável específica do ambiente. [Os ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valores padrão para níveis de log devem ser definidos de acordo com recomendações [ de ](#log-levels)Adobe. Por exemplo:
+Isso requer a atualização das configurações de log do OSGi para usar os espaços reservados da variável específica do ambiente. [Os ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valores padrão para níveis de log devem ser definidos de acordo com recomendações [ de ](#log-levels)Adobe. Por exemplo:
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
@@ -200,8 +200,8 @@ Isso requer a atualização das configurações de log do OSGi para usar os espa
 
 Esta abordagem tem desvantagens que devem ser tidas em conta:
 
-+ [Um número limitado de variáveis de ambiente é permitido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables), e a criação de uma variável para gerenciar o nível de log usará uma.
-+ As variáveis de ambiente só podem ser gerenciadas programaticamente via [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [APIs HTTP do Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ [Um número limitado de variáveis de ambiente é permitido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables), e a criação de uma variável para gerenciar o nível de log usará uma.
++ As variáveis de ambiente só podem ser gerenciadas programaticamente via [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [APIs HTTP do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + As alterações nas variáveis de ambiente devem ser redefinidas manualmente por uma ferramenta compatível. Esquecer de redefinir um ambiente de alto tráfego, como Produção, para um nível de log menos detalhado pode inundar os logs e afetar o desempenho AEM.
 
 _As variáveis específicas do ambiente não funcionam para as configurações de log do Apache Web Server ou Dispatcher, pois não são configuradas por meio da configuração OSGi._
