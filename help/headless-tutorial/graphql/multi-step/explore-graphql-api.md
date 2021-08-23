@@ -1,29 +1,23 @@
 ---
 title: Explore APIs GraphQL - Introdução ao AEM Headless - GraphQL
 description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Explore AEM APIs GraphQL usando o GrapiQL IDE integrado. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo. Experimente construir consultas básicas usando a sintaxe GraphQL.
-sub-product: ativos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: Fragmentos de conteúdo, APIs GraphQL
+feature: Fragmentos de conteúdo, API GraphQL
 topic: Sem periféricos, gerenciamento de conteúdo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
 
 
-# Explore APIs GraphQL {#explore-graphql-apis}
+# Explorar APIs GraphQL {#explore-graphql-apis}
 
 A API GraphQL do AEM fornece uma linguagem de consulta avançada para expor os dados dos Fragmentos de conteúdo aos aplicativos de downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o esquema é traduzido e adicionado ao &quot;gráfico&quot; que compõe a API GraphQL.
 
@@ -41,7 +35,7 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas em [C
 * Saiba como consultar uma variação de um Fragmento de conteúdo.
 * Saiba como associar-se a uma consulta de vários modelos de Fragmento de conteúdo
 
-## Instalar a ferramenta GraphiQL {#install-graphiql}
+## Instalação da ferramenta GraphiQL {#install-graphiql}
 
 O GraphiQL IDE é uma ferramenta de desenvolvimento e é necessário apenas em ambientes de nível inferior, como uma instância de desenvolvimento ou local. Por conseguinte, não está incluído no projeto de AEM, mas constitui um pacote separado que pode ser instalado numa base ad hoc.
 
@@ -58,7 +52,7 @@ O GraphiQL IDE é uma ferramenta de desenvolvimento e é necessário apenas em a
 
    ![Instalar o pacote GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
 
-## Consulte uma lista de Fragmentos de conteúdo {#query-list-cf}
+## Consultar uma lista de fragmentos de conteúdo {#query-list-cf}
 
 Um requisito comum será consultar vários Fragmentos de conteúdo.
 
@@ -190,7 +184,7 @@ Em seguida, vamos examinar como é possível filtrar os resultados para um subco
 
 Há muitas outras opções para filtrar e criar consultas complexas, acima estão apenas alguns exemplos.
 
-## Consultar um único Fragmento de conteúdo {#query-single-cf}
+## Consultar um único fragmento de conteúdo {#query-single-cf}
 
 Também é possível consultar diretamente um único Fragmento de conteúdo. O conteúdo no AEM é armazenado de maneira hierárquica e o identificador exclusivo de um fragmento é baseado no caminho do fragmento. Se o objetivo for retornar dados sobre um único fragmento, é preferível usar o caminho e consultar o modelo diretamente. Usar essa sintaxe significa que a complexidade da consulta será muito baixa e gerará um resultado mais rápido.
 
