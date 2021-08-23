@@ -1,13 +1,13 @@
 ---
 title: Introdução ao AEM Headless - GraphQL
 description: Uma visão geral dos recursos e APIs GraphQL AEM.
-feature: Fragmentos de conteúdo, APIs
+feature: Fragmentos de conteúdo, API GraphQL, APIs
 topic: Sem periféricos, gerenciamento de conteúdo
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 1%
 
 ---
