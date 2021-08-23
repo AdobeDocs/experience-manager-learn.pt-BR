@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Neste guia discutiremos os seguintes recursos principais do Dynamic Media Classi
 - **Vídeo.** Faça upload dos vídeos finais, publique-os e baixe-os progressivamente em visualizadores de vídeo configuráveis.
 - **Imagem inteligente.** Tecnologia que utiliza os recursos do Adobe Sensei AI e funciona com as &quot;Predefinições de imagem&quot; existentes para melhorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem, com base nos recursos do navegador do cliente.
 
-Para descobrir recursos adicionais da solução, visite a [Documentation for Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Para descobrir recursos adicionais da solução, visite a [Documentation for Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## A interface do usuário do Dynamic Media Classic (UI)
 
@@ -75,4 +75,4 @@ _Interface do usuário clássica do Dynamic Media_
 >
 >Marque a caixa de seleção **Publicar após fazer upload** na caixa de diálogo Fazer upload para publicar ativos automaticamente ao fazer upload.
 
-Saiba mais sobre [Navegar na interface do usuário do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Saiba mais sobre [Navegar na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
