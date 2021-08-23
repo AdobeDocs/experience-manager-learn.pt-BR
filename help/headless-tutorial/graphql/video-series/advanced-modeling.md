@@ -1,17 +1,16 @@
 ---
 title: Modelagem avançada para GraphQL
 description: Saiba como criar relacionamentos entre Modelos de fragmento de conteúdo no Adobe Experience Manager (AEM) e como aproveitar esses relacionamentos em consultas GraphQL.
-sub-product: ativos
 version: cloud-service
 topic: Sem periféricos, gerenciamento de conteúdo
-feature: Fragmentos de conteúdo, APIs GraphQL
+feature: Fragmentos de conteúdo, API GraphQL
 role: Developer
 level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
