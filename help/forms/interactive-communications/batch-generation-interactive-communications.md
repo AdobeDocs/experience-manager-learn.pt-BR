@@ -1,19 +1,18 @@
 ---
 title: Usando a API em lote para gerar documentos de comunicação interativa
 description: Amostra de ativos para gerar documentos do canal de impressão usando API em lote
-feature: Interactive Communication
+feature: Comunicação interativa
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '417'
 ht-degree: 3%
 
 ---
@@ -23,13 +22,13 @@ ht-degree: 3%
 
 Você pode usar a API em lote para produzir várias comunicações interativas de um modelo. O modelo é uma comunicação interativa sem dados. A API em lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito para vários clientes.
 
-[Saiba mais sobre a API de geração de lote](https://docs.adobe.com/content/help/en/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[Saiba mais sobre a API de geração de lote](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
 Este artigo fornece ativos de amostra para gerar documentos de Comunicações interativas usando a API em lote.
 
 ## Geração de lote usando a pasta assistida
 
-* Importe o [Modelo de comunicação interativa](assets/Beneficiaries-confirmation.zip) para o servidor do AEM Forms.
+* Importe o [Modelo de comunicação interativa](assets/Beneficiaries-confirmation.zip) no servidor do AEM Forms.
 * Importe o [configuração de pasta observada](assets/batch-generation-api.zip). Isso criará uma pasta chamada `batchAPI` na unidade C.
 
 **Se você estiver executando o AEM Forms em sistemas operacionais não-Windows, siga as 3 etapas mencionadas abaixo:**
@@ -63,6 +62,6 @@ A captura de tela a seguir mostra os parâmetros e seus valores
 
 * Importe [ICTemplate](assets/ICTemplate.zip) usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importar [Manipulador de Envio Personalizado](assets/BatchAPICustomSubmit.zip) usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe [Formulário adaptativo](assets/BatchGenerationAPIAF.zip) usando o [Forms e a interface de documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importe [Formulário adaptativo](assets/BatchGenerationAPIAF.zip) usando a [Forms e a interface de documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Implante e inicie [Pacote OSGI Personalizado](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) usando [Console Web Felix](http://localhost:4502/system/console/bundles)
 * [Acionar geração de lote enviando o formulário](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
