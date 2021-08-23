@@ -2,7 +2,7 @@
 title: Personalizar a atribuição de notificação de tarefa
 description: Incluir dados de formulário na atribuição de emails de notificação de tarefa
 sub-product: formulários
-feature: Workflow
+feature: Fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,14 +10,13 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 2%
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +24,7 @@ ht-degree: 2%
 # Personalizar a atribuição de notificação de tarefa
 
 O componente Atribuir tarefa é usado para atribuir tarefas a participantes do fluxo de trabalho. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário ou aos membros do grupo definidos.
-Normalmente, essa notificação por email conterá dados dinâmicos relacionados à tarefa. Esses dados dinâmicos são obtidos usando as [propriedades de metadados](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) geradas pelo sistema.
+Normalmente, essa notificação por email conterá dados dinâmicos relacionados à tarefa. Esses dados dinâmicos são obtidos usando as [propriedades de metadados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) geradas pelo sistema.
 Para incluir valores dos dados de formulário enviados na notificação por email, precisamos criar propriedade de metadados personalizada e usar essas propriedades de metadados personalizadas no modelo de email
 
 
@@ -34,7 +33,7 @@ Para incluir valores dos dados de formulário enviados na notificação por emai
 
 A abordagem recomendada é criar um componente OSGI que implementa o método getUserMetadata do [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-O código a seguir cria quatro propriedades de metadados(_firstName_,_lastName_,_reason_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, o valor da propriedade de metadados _firstName_ é definido como o valor do elemento chamado firstName a partir dos dados enviados. O código a seguir parte do princípio de que os dados enviados do formulário adaptável estão no formato xml. Os formulários adaptáveis com base no esquema JSON ou no Modelo de dados de formulário geram dados no formato JSON.
+O código a seguir cria quatro propriedades de metadados(_firstName_,_lastName_,_reason_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, o valor da propriedade de metadados _firstName_ é definido como o valor do elemento chamado firstName a partir dos dados enviados. O código a seguir parte do princípio de que os dados enviados do formulário adaptável estão no formato xml. O Forms adaptável com base no esquema JSON ou no Modelo de dados de formulário gera dados no formato JSON.
 
 
 ```java
@@ -120,7 +119,7 @@ No modelo de email, você pode incluir a propriedade de metadados usando a segui
 
 ## Configurar Atribuir tarefa para usar a propriedade de metadados personalizada
 
-Depois que o componente OSGi for criado e implantado no servidor AEM, configure o componente Atribuir tarefa como mostrado abaixo para usar propriedades de metadados personalizadas.
+Depois que o componente OSGi for criado e implantado em AEM servidor, configure o componente Atribuir tarefa como mostrado abaixo para usar propriedades de metadados personalizadas.
 
 
 ![Notificação de tarefa](assets/task-notification.PNG)
@@ -131,7 +130,7 @@ Depois que o componente OSGi for criado e implantado no servidor AEM, configure 
 
 ## Para experimentar isso no servidor
 
-* [Configurar o Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [Configurar o Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Associar uma id de email válida a [usuário administrador](http://localhost:4502/security/users.html)
 * Baixe e instale o [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Baixe o [Adaptive Form](assets/request-travel-authorization.zip) e importe para o AEM a partir do [interface do usuário de formulários e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
