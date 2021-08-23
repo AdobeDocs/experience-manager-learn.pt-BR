@@ -10,10 +10,10 @@ activity: use
 topic: Gerenciamento de conteúdo
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 3%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Para saber mais sobre o Dynamic Media Classic, consulte os seguintes recursos:
 
 - [Dynamic Media Classic no Experience League - Obter valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic no Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Os Arquivos de Informativo do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Os Arquivos de Informativo do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Página de assinatura do informativo do Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Documentação do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
+- [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
 - [Publicações de blog de mídia avançada](https://theblog.adobe.com/tag/dynamic-media)
