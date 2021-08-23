@@ -1,19 +1,17 @@
 ---
 title: Implantação de produção usando um serviço de publicação do AEM - Introdução AEM headless - GraphQL
 description: Saiba mais sobre os serviços de Autor e Publicação do AEM e o padrão de implantação recomendado para aplicativos sem cabeçalho. Neste tutorial, aprenda a usar variáveis de ambiente para alterar dinamicamente um ponto de extremidade GraphQL com base no ambiente de destino. Saiba como configurar corretamente o AEM para o CORS (Cross-Origin resource sharing).
-sub-product: ativos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Fragmentos de conteúdo, API GraphQL
+topic: Sem periféricos, gerenciamento de conteúdo
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2367'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ Saiba como:
 * Conheça as práticas recomendadas para gerenciar variáveis de ambiente.
 * Saiba como configurar corretamente o AEM para o CORS (Cross-Origin resource sharing).
 
-## Padrão de implantação de Publicação de Autor {#deployment-pattern}
+## Padrão de implantação de publicação do autor {#deployment-pattern}
 
 Um ambiente AEM completo é composto de um Autor, Publicação e Dispatcher. O serviço Autor é onde os usuários internos criam, gerenciam e visualizam o conteúdo. O serviço de Publicação é considerado o ambiente &quot;Ao vivo&quot; e normalmente é com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço Autor, é distribuído ao serviço de Publicação.
 
@@ -187,7 +185,7 @@ O aplicativo React pode ser iniciado usando o servidor webpack, mas isso é some
 
    Observe que um erro GraphQL é lançado para `adventureContributor`. Nos próximos exercícios, as imagens quebradas e os problemas `adventureContributor` são corrigidos.
 
-## Referência de imagem absoluta {#absolute-image-references}
+## Referências de imagem absoluta {#absolute-image-references}
 
 As imagens parecem quebradas porque o atributo `<img src` está definido em um caminho relativo e acaba apontando para o servidor estático do Nó em `http://localhost:5000/`. Em vez disso, essas imagens devem apontar para a instância de publicação do AEM. Existem várias soluções possíveis para isso. Ao usar o servidor dev do webpack, o arquivo `react-app/src/setupProxy.js` configura um proxy entre o servidor do webpack e a instância do autor AEM para qualquer solicitação de `/content`. Uma configuração de proxy pode ser usada em um ambiente de produção, mas deve ser configurada no nível do servidor da Web. Por exemplo, [Módulo proxy do Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
