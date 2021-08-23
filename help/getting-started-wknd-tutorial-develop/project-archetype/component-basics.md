@@ -11,9 +11,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
 ## HTL (Linguagem de modelo HTML) e caixas de diálogo {#htl-dialogs}
 
-Linguagem de modelo HTML ou **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** é uma linguagem de modelo leve do lado do servidor usada pelos componentes AEM para renderizar o conteúdo.
+Linguagem de modelo HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** é uma linguagem de modelo leve do lado do servidor usada pelos componentes AEM para renderizar o conteúdo.
 
 **** As caixas de diálogo definem as configurações disponíveis que podem ser feitas para um componente.
 
