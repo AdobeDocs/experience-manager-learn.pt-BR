@@ -13,10 +13,10 @@ thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 1%
+source-wordcount: '2384'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +77,7 @@ O conceito básico é mapear um Componente de SPA para um Componente de AEM. AEM
 
 ## Inspect o componente de texto
 
-O [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o AEM [Componente de Texto](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/text.html). Este é um exemplo de um componente **content**, na medida em que renderiza *content* de AEM.
+O [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o AEM [Componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Este é um exemplo de um componente **content**, na medida em que renderiza *content* de AEM.
 
 Vamos ver como o componente funciona.
 
@@ -201,7 +201,7 @@ Vamos ver como o componente funciona.
 
 ## Criar o componente de imagem
 
-Em seguida, crie um componente de Angular `Image` que esteja mapeado para o componente de imagem [AEM ](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html). O componente `Image` é outro exemplo de um componente **content**.
+Em seguida, crie um componente de Angular `Image` que esteja mapeado para o componente de imagem [AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). O componente `Image` é outro exemplo de um componente **content**.
 
 ### Inspect no JSON
 
@@ -437,7 +437,7 @@ Vamos inspecionar o Contêiner de layout ainda mais.
 
    O componente **Contêiner de layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor de SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionar um componente usando o [Modo de layout](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis no Editor de SPA.
+   Os mesmos recursos de redimensionar um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis no Editor de SPA.
 
 3. Retorne para [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Adicione outros componentes **Image** e tente redimensioná-los usando a opção **Layout**:
 
