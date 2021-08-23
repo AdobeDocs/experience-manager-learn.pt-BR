@@ -1,30 +1,29 @@
 ---
 title: Compreender o suporte de autenticação no AEM
-description: 'Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente autorização) compatíveis com o AEM. '
+description: 'Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente de autorização) com suporte do AEM. '
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: Usuários e grupos
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architecture
+topic: Arquitetura
 role: Architect
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
 
-# Entenda o suporte de autenticação no AEM 6.x
+# Compreender o suporte de autenticação no AEM 6.x
 
-Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente autorização) compatíveis com o AEM.
+Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente de autorização) com suporte do AEM.
 
-*A tabela a seguir descreve como os usuários podem se autenticar no AEM.*
+*A tabela a seguir descreve como os usuários podem se autenticar em AEM.*
 
 <table>
     <tbody>
@@ -35,7 +34,7 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM como provedor de identidade canônica</strong></td>
+            <td><strong>AEM como fornecedor de identidade canônica</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -47,36 +46,36 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
             <td>✔</td>
         </tr>
         <tr>
-            <td>Baseado em formulários</td>
+            <td>Baseado em Forms</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td>Baseado em token (com <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Baseado em token (com <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Sistema não AEM como provedor de identidade canônica</strong></td>
+            <td><strong>Sistema não AEM como fornecedor de identidade canônica</strong></td>
             <td></td>
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -96,4 +95,4 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
     </tbody>
 </table>
 
-⁕ *Fornecido por meio de projetos da comunidade, mas não suportado diretamente pela Adobe.*
+⁕ *Fornecido por meio de projetos da comunidade, mas não suportado diretamente pelo Adobe.*
