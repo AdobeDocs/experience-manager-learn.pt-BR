@@ -8,14 +8,13 @@ activity: setup
 version: cloud-service
 kt: 5980
 thumbnail: 38553.jpg
-topic: Integrations
+topic: Integrações
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 3%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
 
@@ -28,8 +27,8 @@ Saiba como criar uma propriedade do Launch com a configuração mínima necessá
 
 ## Próximas etapas
 
-[Conectar o AEM com o Launch usando o Adobe I/O](connect-aem-launch-adobe-io.md)
+[Conectar AEM com o Launch usando o Adobe I/O](connect-aem-launch-adobe-io.md)
 
 ## Recursos adicionais {#additional-resources}
 
-* [Criar uma propriedade do Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/configure-launch/launch.html)
+* [Criar uma propriedade do Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html)
