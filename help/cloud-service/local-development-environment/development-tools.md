@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: Desenvolvimento
 role: Developer
 level: Beginner
-source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1428'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Se estiver usando o Homebrew, siga as instruções __Instalar usando o Homebrew_
 
 ## Instalar Git
 
-[](https://git-scm.com/) Obtém o sistema de gerenciamento do controle de origem usado pelo  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html) e, portanto, é necessário para o desenvolvimento.
+[](https://git-scm.com/) Obtém o sistema de gerenciamento do controle de origem usado pelo  [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) e, portanto, é necessário para o desenvolvimento.
 
 + Instalar o Git usando o Homebrew
    1. Abra o terminal/prompt de comando
@@ -118,7 +118,7 @@ O Apache Maven é a ferramenta de linha de comando Java de código aberto usada 
 
 ![Maven](./assets/development-tools/maven.png)
 
-## Configurar Adobe I/O CLI{#aio-cli}
+## Configurar a CLI do Adobe I/O{#aio-cli}
 
 O [Adobe I/O CLI](https://github.com/adobe/aio-cli), ou `aio`, fornece acesso de linha de comando a uma variedade de serviços do Adobe, incluindo [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). A CLI do Adobe I/O desempenha um papel integral no desenvolvimento no AEM como Cloud Service, pois oferece aos desenvolvedores a capacidade de:
 
@@ -131,7 +131,7 @@ O [Adobe I/O CLI](https://github.com/adobe/aio-cli), ou `aio`, fornece acesso de
    + Execute `node --version` para confirmar
 1. Execute `npm install -g @adobe/aio-cli` para instalar o módulo `aio` npm globalmente
 
-### Configurar o plugin do Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
+### Configurar o plugin Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
 O plug-in do Adobe I/O Cloud Manager permite que a CLI do aio interaja com o Adobe Cloud Manager por meio do comando `aio cloudmanager`.
 
