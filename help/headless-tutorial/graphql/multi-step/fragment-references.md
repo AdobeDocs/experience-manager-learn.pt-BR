@@ -1,23 +1,17 @@
 ---
 title: Modelagem de dados avançada com referências de fragmento - Introdução AEM sem cabeçalho - GraphQL
 description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Saiba como usar o recurso Referência de fragmento para modelagem de dados avançada e criar uma relação entre dois Fragmentos de conteúdo diferentes. Saiba como modificar uma consulta GraphQL para incluir um campo de um modelo referenciado.
-sub-product: ativos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
-feature: Fragmentos de conteúdo, APIs GraphQL
+feature: Fragmentos de conteúdo, API GraphQL
 topic: Sem periféricos, gerenciamento de conteúdo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
