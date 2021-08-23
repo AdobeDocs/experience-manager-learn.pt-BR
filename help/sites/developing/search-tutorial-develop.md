@@ -1,19 +1,18 @@
 ---
 title: Guia de implementação de pesquisa simples
-description: A implementação Simple search são os materiais do laboratório AEM Search Demystified de 2017 Summit. Esta página contém os materiais deste laboratório. Para obter um tour guiado do laboratório, visualize a pasta de trabalho do Lab na seção Apresentação desta página.
+description: A implementação Simple search são os materiais do laboratório 2017 Summit AEM Search Demystified. Esta página contém os materiais deste laboratório. Para obter um tour guiado do laboratório, visualize a pasta de trabalho do Lab na seção Apresentação desta página.
 topics: development, search
 audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Search
-topic: Development
+feature: 'Pesquisar  '
+topic: Desenvolvimento
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 2%
 
 # Guia de implementação de pesquisa simples{#simple-search-implementation-guide}
 
-A Implementação de pesquisa Simples são os materiais do **laboratório do Adobe Summit AEM Search Demystified**. Esta página contém os materiais deste laboratório. Para obter um tour guiado do laboratório, visualize a pasta de trabalho do Lab na seção Apresentação desta página.
+A Implementação de pesquisa Simples são os materiais do **Adobe Summit lab AEM Search Demystified**. Esta página contém os materiais deste laboratório. Para obter um tour guiado do laboratório, visualize a pasta de trabalho do Lab na seção Apresentação desta página.
 
 ![Visão geral da arquitetura de pesquisa](assets/l4080/simple-search-application.png)
 
@@ -36,7 +35,7 @@ A Implementação de pesquisa Simples são os materiais do **laboratório do Ado
 
 * [Gerenciador de índice](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Explicar consulta](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
-* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
+* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene)  > /oak:index/cqPageLucene
 * [Gerenciador de pacotes CRX](http://localhost:4502/crx/packmgr/index.jsp)
 * [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Gerador de definição de índice Oak](https://oakutils.appspot.com/generate/index)
@@ -57,7 +56,7 @@ A Implementação de pesquisa Simples são os materiais do **laboratório do Ado
 
 ## Pacotes {#packages}
 
-### Pacotes iniciais {#initial-packages}
+### Embalagens iniciais {#initial-packages}
 
 * [Tags](assets/l4080/summit-tags.zip)
 * [Pacote do aplicativo de pesquisa simples](assets/l4080/simple.ui.apps-0.0.1-snapshot.zip)
@@ -78,8 +77,8 @@ A Implementação de pesquisa Simples são os materiais do **laboratório do Ado
 * [Repositório Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de Modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API do QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
-* [Plug-in do AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([página de documentação](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [API do QueryBuilder](https://experienceleague.adobe.com/docs/)
+* [AEM Plug-in do Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([página de documentação](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correções e acompanhamento {#corrections-and-follow-up}
 
@@ -87,7 +86,7 @@ Correções e esclarecimentos das discussões do laboratório e respostas para p
 
 1. **Como parar a reindexação?**
 
-   A reindexação pode ser interrompida por meio do MBean IndexStats disponível por meio de [Console da Web AEM > JMX](http://localhost:4502/system/console/jmx)
+   A reindexação pode ser interrompida por meio do MBean IndexStats disponível por meio de [AEM Console da Web > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * Execute `abortAndPause()` para suspender a reindexação. Isso bloqueará o índice para reindexação adicional até que `resume()` seja chamado.
@@ -140,11 +139,11 @@ Correções e esclarecimentos das discussões do laboratório e respostas para p
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explore a consulta e os resultados via [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore a consulta e os resultados via [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Plug-in do Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Como pesquisar por vários caminhos na mesma query?**
 
-   Novo no AEM 6.3 é a capacidade de consultar vários caminhos na mesma consulta fornecida. A consulta do QueryBuilder a seguir. Observe que cada &quot;subconsulta&quot; pode resolver para seu próprio índice.
+   Uma novidade no AEM 6.3 é a capacidade de consultar vários caminhos na mesma consulta fornecida. A consulta do QueryBuilder a seguir. Observe que cada &quot;subconsulta&quot; pode resolver para seu próprio índice.
 
    ```plain
    group.p.or=true
@@ -164,4 +163,4 @@ Correções e esclarecimentos das discussões do laboratório e respostas para p
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explore a consulta e os resultados via [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Explore a consulta e os resultados via [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Plug-in do Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
