@@ -1,33 +1,28 @@
 ---
 title: Rastrear componente clicado com o Adobe Analytics
-description: Use a camada Dados do cliente da Adobe orientada por eventos para rastrear cliques de componentes específicos em um site do Adobe Experience Manager. Saiba como usar regras no Experience Platform Launch para acompanhar esses eventos e enviar dados para um Adobe Analytics com um beacon de rastreamento de link.
-feature: analytics
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
+description: Use a camada Dados do cliente do Adobe orientada por eventos para rastrear cliques de componentes específicos em um site do Adobe Experience Manager. Saiba como usar as regras no Experience Platform Launch para acompanhar esses eventos e enviar dados para uma Adobe Analytics com um beacon de rastreamento de link.
 version: cloud-service
-kt: 6296
-thumbnail: KT-6296.jpg
-topic: Integrations
+topic: Integrações
+feature: Camada de dados do cliente Adobe
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6296
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 2%
+source-wordcount: '1814'
+ht-degree: 1%
 
 ---
 
 
 # Rastrear componente clicado com o Adobe Analytics
 
-Use a [Camada de dados do cliente da Adobe orientada por eventos com os Componentes principais do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/data-layer/overview.html) para rastrear cliques de componentes específicos em um site do Adobe Experience Manager. Saiba como usar regras no Experience Platform Launch para acompanhar eventos de clique, filtrar por componente e enviar os dados para um Adobe Analytics com um beacon de rastreamento de link.
+Use a Camada de dados do cliente do Adobe orientada por eventos com AEM Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) para rastrear cliques de componentes específicos em um site do Adobe Experience Manager. [ Saiba como usar as regras no Experience Platform Launch para acompanhar eventos de clique, filtrar por componente e enviar os dados para uma Adobe Analytics com um beacon de rastreamento de link.
 
 ## O que você vai criar
 
-A equipe de marketing da WKND quer entender quais botões de Chamada para Ação (CTA) estão tendo o melhor desempenho na página inicial. Neste tutorial, adicionaremos uma nova regra no Experience Platform Launch que escuta eventos `cmp:click` dos componentes **Teaser** e **Botão** e envia a ID do componente e um novo evento para o Adobe Analytics ao lado do beacon de rastreamento de link.
+A equipe de marketing da WKND quer entender quais botões de Chamada para Ação (CTA) estão tendo o melhor desempenho na página inicial. Neste tutorial, adicionaremos uma nova regra no Experience Platform Launch que escuta os eventos `cmp:click` dos componentes **Teaser** e **Botão** e enviaremos a ID do componente e um novo evento para o Adobe Analytics ao lado do beacon de rastreamento de link.
 
 ![O que você criará para rastrear cliques](assets/track-clicked-component/final-click-tracking-cta-analytics.png)
 
@@ -35,19 +30,19 @@ A equipe de marketing da WKND quer entender quais botões de Chamada para Ação
 
 1. Crie uma regra orientada por eventos no Launch com base no evento `cmp:click`.
 1. Filtre os diferentes eventos por tipo de recurso de componente.
-1. Defina a ID do componente clicada e envie o evento do Adobe Analytics com o sinal de rastreamento de link.
+1. Defina a ID do componente clicada e envie o Adobe Analytics do evento com o beacon de rastreamento de link.
 
 ## Pré-requisitos
 
 Este tutorial é uma continuação de [Coletar dados de página com o Adobe Analytics](./collect-data-analytics.md) e presume que você tenha:
 
-* Uma **Propriedade do Launch** com a [extensão do Adobe Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) ativada
-* **ID do conjunto de relatórios do Adobe** Analytics/dev e do servidor de rastreamento. Consulte a documentação a seguir para [criar um novo conjunto de relatórios](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Extensão de navegador do Experience Platform ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Debugger configurada com sua propriedade do Launch carregada em  [https://wknd.site/us/en.](https://wknd.site/us/en.html) html ou em um site do AEM com a Camada de dados da Adobe ativada.
+* Uma **Propriedade do Launch** com a extensão [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) ativada
+* **ID do conjunto de relatórios** do Adobe Analytics/dev e do servidor de rastreamento. Consulte a documentação a seguir para [criar um novo conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Extensão de navegador ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) do Depurador do Experience Platform configurada com a propriedade do Launch carregada em  [https://wknd.site/us/en.](https://wknd.site/us/en.html) html em um site AEM com a Camada de dados do Adobe.
 
-## Inspecione o botão e o esquema do teaser
+## Inspect o esquema do botão e do teaser
 
-Antes de criar regras no Launch, é útil revisar o esquema [do Botão e Teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item) e inspecioná-los na implementação da camada de dados.
+Antes de criar regras no Launch, é útil revisar o esquema [do Botão e Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e inspecioná-los na implementação da camada de dados.
 
 1. Navegue até [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Abra as ferramentas do desenvolvedor do navegador e navegue até **Console**. Execute o seguinte comando:
@@ -56,7 +51,7 @@ Antes de criar regras no Launch, é útil revisar o esquema [do Botão e Teaser]
    adobeDataLayer.getState();
    ```
 
-   Isso retorna o estado atual da Camada de dados do cliente da Adobe.
+   Isso retorna o estado atual da Camada de dados do cliente do Adobe.
 
    ![Estado da camada de dados por meio do console do navegador](assets/track-clicked-component/adobe-data-layer-state-browser.png)
 
@@ -83,13 +78,13 @@ Antes de criar regras no Launch, é útil revisar o esquema [do Botão e Teaser]
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Elas são baseadas no [Component/Container Item Schema](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item). A regra que criaremos no Launch usará esse schema.
+   Elas são baseadas no [Component/Container Item Schema](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). A regra que criaremos no Launch usará esse schema.
 
 ## Criar uma regra CTA clicada
 
-A Camada de dados do cliente da Adobe é uma camada de dados orientada por **evento**. Quando qualquer Componente principal é clicado, um evento `cmp:click` será despachado por meio da camada de dados. Em seguida, crie uma regra para acompanhar o evento `cmp:click` .
+A Camada de dados do cliente do Adobe é uma camada de dados orientada por **evento**. Quando qualquer Componente principal é clicado, um evento `cmp:click` será despachado por meio da camada de dados. Em seguida, crie uma regra para acompanhar o evento `cmp:click` .
 
-1. Navegue até o Experience Platform Launch e acesse a propriedade da Web integrada ao site do AEM.
+1. Navegue até o Experience Platform Launch e até a propriedade da Web integrada ao Site de AEM.
 1. Navegue até a seção **Rules** na interface do usuário do Launch e clique em **Adicionar regra**.
 1. Nomeie a regra **CTA Clicado**.
 1. Clique em **Eventos** > **Adicionar** para abrir o assistente de **Configuração de Evento**.
@@ -149,11 +144,11 @@ A Camada de dados do cliente da Adobe é uma camada de dados orientada por **eve
 
    O objeto `event` é transmitido do método `trigger()` chamado no evento personalizado. `component` é o estado atual do componente derivado da camada de dados  `getState` que acionou o clique.
 
-1. Salve as alterações e execute uma [build](https://docs.adobe.com/content/help/en/launch/using/reference/publish/builds.html) no Launch para promover o código para o [ambiente](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) usado em seu site do AEM.
+1. Salve as alterações e execute uma [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) no Launch para promover o código para o [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) usado em seu Site de AEM.
 
    >[!NOTE]
    >
-   > Pode ser muito útil usar o [Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) para alternar o código incorporado para um ambiente **de desenvolvimento**.
+   > Pode ser muito útil usar o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) para alternar o código incorporado para um ambiente **de desenvolvimento**.
 
 1. Navegue até [Site WKND](https://wknd.site/us/en.html) e abra as ferramentas do desenvolvedor para visualizar o console. Selecione **Preservar log**.
 
@@ -171,7 +166,7 @@ Em seguida, crie um Elemento de dados para capturar a ID do componente e o títu
 
 ### ID do componente
 
-1. Navegue até o Experience Platform Launch e acesse a propriedade da Web integrada ao site do AEM.
+1. Navegue até o Experience Platform Launch e até a propriedade da Web integrada ao Site de AEM.
 1. Navegue até a seção **Elementos de Dados** e clique em **Adicionar Novo Elemento de Dados**.
 1. Para **Nome**, digite **ID do componente**.
 1. Para **Tipo de elemento de dados** selecione **Código personalizado**.
@@ -255,7 +250,7 @@ Atualmente, a regra **CTA Clicada** simplesmente gera uma instrução de console
    * `prop8` -  `%Component ID%`
    * `event8`
 
-   ![Definir Prop e eventos de eVar](assets/track-clicked-component/set-evar-prop-event.png)
+   ![Definir Prop de eVar e eventos](assets/track-clicked-component/set-evar-prop-event.png)
 
    >[!NOTE]
    >
@@ -279,7 +274,7 @@ Atualmente, a regra **CTA Clicada** simplesmente gera uma instrução de console
 
    * **1.** Escute o  `cmp:click` evento.
    * **2.** Verifique se o evento foi acionado por um  **** Botão ou  **Teaser**.
-   * **3.** Defina variáveis do Analytics para rastrear a  **ID de componente** como uma  **eVar**,  **prop** e um  **evento**.
+   * **3.** Defina variáveis do Analytics para rastrear a  **ID de componente** como um  **eVar**,  **prop** e um  **evento**.
    * **4.** Envie o sinal de rastreamento de link do Analytics (e  **** não o trate como uma exibição de página).
 
 1. Salve todas as alterações e crie a biblioteca do Launch, promovendo para o ambiente apropriado.
@@ -313,8 +308,8 @@ Agora que a regra **CTA Clicada** envia o sinal do Analytics, você deve consegu
 
    >[!NOTE]
    >
-   > Se você não vir nenhum log de console, verifique se **Logon do console** está marcado em **Launch** no Experience Platform Debugger.
+   > Se você não vir nenhum log de console, verifique se **Console Logging** está marcado em **Launch** no Experience Platform Debugger.
 
 ## Parabéns!
 
-Você acabou de usar a Camada de dados do cliente da Adobe orientada por eventos e o Experience Platform Launch para rastrear cliques de componentes específicos em um site do Adobe Experience Manager.
+Você acabou de usar a Adobe Client Data Layer e o Experience Platform Launch para rastrear cliques de componentes específicos em um site do Adobe Experience Manager.
