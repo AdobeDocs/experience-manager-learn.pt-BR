@@ -14,10 +14,10 @@ thumbnail: 32192.jpg
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 31%
+source-wordcount: '168'
+ht-degree: 32%
 
 ---
 
@@ -62,6 +62,6 @@ Neste vídeo, os seguintes elementos de propriedade da página são abordados:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação das propriedades da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Editar a documentação do conteúdo da página](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia do usuário de criação de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Editar a documentação das propriedades da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
