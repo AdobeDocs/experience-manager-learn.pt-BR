@@ -1,6 +1,6 @@
 ---
 title: Introdução ao Dispatcher
-description: Uma introdução aos recursos do Dispatcher como parte da arquitetura do AEM.
+description: Uma introdução aos recursos do Dispatcher como parte da arquitetura de AEM.
 feature: Dispatcher
 topics: architecture
 audience: administrator, developer
@@ -9,14 +9,13 @@ activity: understand
 version: cloud-service
 kt: 4644
 thumbnail: 32029.jpg
-topic: Architecture, Performance
+topic: Arquitetura, desempenho
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 32%
+source-wordcount: '48'
+ht-degree: 31%
 
 ---
 
@@ -29,4 +28,4 @@ Uma introdução aos recursos do [!DNL dispatcher] como parte da arquitetura do 
 
 ## Recursos adicionais {#additional-resources}
 
-* [[!DNL Dispatcher] documentação](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
+* [[!DNL Dispatcher] documentação](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
