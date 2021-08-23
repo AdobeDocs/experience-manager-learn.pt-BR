@@ -2,13 +2,12 @@
 title: Como definir a expiração da sessão do token de login do Oak
 description: Etapas para definir o tempo limite de expiração da sessão do token de origem do oak
 type: Troubleshooting
-product: Sites
 role: Admin
 level: Intermediate
 version: 6.5, cloud-service
 feature: Ferramentas do desenvolvedor
 topic: Administração
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 6%
