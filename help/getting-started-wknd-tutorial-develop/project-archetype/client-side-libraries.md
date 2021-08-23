@@ -10,17 +10,17 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 2%
+source-wordcount: '3285'
+ht-degree: 1%
 
 ---
 
 
 # Bibliotecas do lado do cliente e fluxo de trabalho de front-end {#client-side-libraries}
 
-Saiba como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar CSS e Javascript para uma implementação de Sites da Adobe Experience Manager (AEM). Este tutorial também abordará a forma como o módulo [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html), um projeto desacoplado [webpack](https://webpack.js.org/), pode ser integrado ao processo de compilação completo.
+Saiba como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar CSS e Javascript para uma implementação de Sites da Adobe Experience Manager (AEM). Este tutorial também abordará a forma como o módulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), um projeto desacoplado [webpack](https://webpack.js.org/), pode ser integrado ao processo de compilação completo.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -81,7 +81,7 @@ As bibliotecas do lado do cliente fornecem um mecanismo para organizar e gerenci
 1. Gerencie dependências em estruturas de terceiros de forma organizada
 1. Minimize o número de solicitações do lado do cliente, concatenando CSS/JS em uma ou duas solicitações.
 
-Mais informações sobre o uso de [Bibliotecas do lado do cliente podem ser encontradas aqui.](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html)
+Mais informações sobre o uso de [Bibliotecas do lado do cliente podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 As bibliotecas do lado do cliente têm algumas limitações. O mais notável é um suporte limitado para idiomas de front-end populares como Sass, LESS e TypeScript. No tutorial, veremos como o módulo **ui.frontend** pode ajudar a resolver isso.
 
@@ -89,7 +89,7 @@ Implante a base de código inicial em uma instância de AEM local e navegue até
 
 ## Organização de bibliotecas do lado do cliente {#organization}
 
-Em seguida, exploraremos a organização de clientlibs geradas pelo [Arquétipo de projeto AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html).
+Em seguida, exploraremos a organização de clientlibs geradas pelo [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ![Organização de bibliotecas de clientes de alto nível](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -119,7 +119,7 @@ Em seguida, exploraremos a organização de clientlibs geradas pelo [Arquétipo 
 
 ## Atualizar estilos base {#base-styles}
 
-Em seguida, atualize os estilos base definidos no módulo **[ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Os arquivos no módulo `ui.frontend` gerarão as bibliotecas `clientlib-site` e `clientlib-dependecies` que contêm o tema Site e quaisquer dependências de terceiros.
+Em seguida, atualize os estilos base definidos no módulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Os arquivos no módulo `ui.frontend` gerarão as bibliotecas `clientlib-site` e `clientlib-dependecies` que contêm o tema Site e quaisquer dependências de terceiros.
 
 As bibliotecas do lado do cliente têm algumas limitações quando se trata de suporte a idiomas como [Sass](https://sass-lang.com/) ou [TypeScript](https://www.typescriptlang.org/). Há várias ferramentas de código aberto, como [NPM](https://www.npmjs.com/) e [webpack](https://webpack.js.org/), que aceleram e otimizam o desenvolvimento de front-end. O objetivo do módulo **ui.frontend** é poder usar essas ferramentas para gerenciar a maioria dos arquivos de origem front-end.
 
@@ -164,7 +164,7 @@ As bibliotecas do lado do cliente têm algumas limitações quando se trata de s
 
    Inspect os arquivos alterados para ver detalhes da implementação do estilo WKND.
 
-## Inspect a integração ui.frontend {#ui-frontend-integration}
+## Integração do Inspect com o ui.frontend {#ui-frontend-integration}
 
 Uma peça chave de integração incorporada ao módulo **ui.frontend**, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) usa os artefatos CSS e JS compilados de um projeto webpack/npm e os transforma em AEM bibliotecas do lado do cliente.
 
@@ -200,7 +200,7 @@ O Arquétipo de projeto AEM configura essa integração automaticamente. Em segu
 
    >[!NOTE]
    >
-   >Também há um perfil `npm run prod` que minificará o JS e o CSS. Esta é a compilação padrão sempre que a build do webpack é acionada via Maven. Mais detalhes sobre o módulo [ui.frontend podem ser encontrados aqui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   >Também há um perfil `npm run prod` que minificará o JS e o CSS. Esta é a compilação padrão sempre que a build do webpack é acionada via Maven. Mais detalhes sobre o módulo [ui.frontend podem ser encontrados aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 1. Inspect o arquivo `site.css` abaixo de `ui.frontend/dist/clientlib-site/site.css`. Este é o CSS compilado com base nos arquivos de origem do Sass.
 
@@ -315,7 +315,7 @@ Em seguida, vamos analisar como as clientlibs são referenciadas na Página AEM.
 
    >[!WARNING]
    >
-   >É importante no lado da publicação que as bibliotecas de clientes sejam **not** servidas de **/apps**, pois esse caminho deve ser restrito por motivos de segurança usando a [seção de filtro do Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). A [propriedade allowProxy](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/introduction/clientlibs.translate.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) da biblioteca do cliente garante que o CSS e o JS sejam operados a partir de **/etc.clientlibs**.
+   >É importante no lado da publicação que as bibliotecas de clientes sejam **not** servidas de **/apps**, pois esse caminho deve ser restrito por motivos de segurança usando a [seção de filtro do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). A [propriedade allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) da biblioteca do cliente garante que o CSS e o JS sejam operados a partir de **/etc.clientlibs**.
 
 ## WebPack DevServer - Marcação estática {#webpack-dev-static}
 
@@ -371,7 +371,7 @@ Essa técnica é útil se a maioria dos estilos e do código front-end for execu
 
 1. Você pode **parar** o servidor do webpack a partir da linha de comando digitando `CTRL+C`.
 
-## Webpack DevServer - Assistir e assíncrono {#webpack-dev-watch}
+## Webpack DevServer - Watch e aemsync {#webpack-dev-watch}
 
 Outra técnica é ter o Node.js monitorado para qualquer alteração de arquivo nos arquivos src no módulo `ui.frontend`. Sempre que um arquivo é alterado, ele compilará rapidamente a biblioteca do cliente e usará o módulo [aemsync](https://www.npmjs.com/package/aemsync) npm para sincronizar as alterações em um servidor AEM em execução.
 
@@ -429,7 +429,7 @@ Visualize o código concluído em [GitHub](https://github.com/adobe/aem-guides-w
 
 ## Ferramentas e recursos adicionais {#additional-resources}
 
-### adicionado {#develop-aemfed}
+### amamentado {#develop-aemfed}
 
 [****](https://aemfed.io/) aemfedis é uma ferramenta de linha de comando de código aberto que pode ser usada para acelerar o desenvolvimento front-end. Ela é fornecida por [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) e [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
