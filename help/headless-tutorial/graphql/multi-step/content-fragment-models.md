@@ -1,29 +1,23 @@
 ---
 title: Definição dos modelos de fragmento de conteúdo - Introdução ao AEM sem interface - GraphQL
 description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Saiba como modelar o conteúdo e criar um esquema com Modelos de fragmento de conteúdo em AEM. Revise os modelos existentes e crie um novo modelo. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um schema.
-sub-product: ativos
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
-feature: Fragmentos de conteúdo, APIs GraphQL
+feature: Fragmentos de conteúdo, API GraphQL
 topic: Sem periféricos, gerenciamento de conteúdo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 
-# Definição dos modelos de fragmento de conteúdo {#content-fragment-models}
+# Definição dos modelos de fragmento do conteúdo {#content-fragment-models}
 
 Neste capítulo, saiba como modelar o conteúdo e criar um schema com **Modelos de fragmento de conteúdo**. Você verificará os modelos existentes e criará um novo modelo. Você também aprenderá sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
 
