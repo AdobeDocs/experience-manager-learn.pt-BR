@@ -1,21 +1,20 @@
 ---
 title: Personalização da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais de fluxo de trabalho usando modelo sightly
-feature: Adaptive Forms
+feature: Formulários adaptáveis
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '292'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +81,11 @@ return val;
 
 >[!NOTE]
 >
->Este artigo supõe que você tenha instalado o [workflow de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) nesta série.
+>Este artigo supõe que você tenha instalado o [workflow de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) nesta série.
 
 * [Faça logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo sightly](assets/sightly-template.zip)
-* [Faça logon no console da Web do AEM](http://localhost:4502/system/console/bundles)
+* [Faça logon AEM console da Web](http://localhost:4502/system/console/bundles)
 * [Implantar e iniciar o pacote de personalização da caixa de entrada](assets/income-column-customization.jar)
 * [Abrir sua caixa de entrada](http://localhost:4502/aem/inbox)
 * Abra o Controle de administrador clicando em Exibição de lista ao lado do botão Criar
