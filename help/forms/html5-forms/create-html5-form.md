@@ -12,9 +12,9 @@ thumbnail: kt-4419.jpg
 topic: Desenvolvimento
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Os formulários HTML5 são um novo recurso no Adobe Experience Manager que ofere
 
 ## Pré-requisitos
 
-Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de instalação](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
+Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de instalação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
 
 ## Crie seu primeiro formulário HTML5
 
@@ -58,7 +58,7 @@ As propriedades avançadas do modelo xdp permitem especificar a data de publica�
 
 **Enviar URL**  - esse é o URL que processará o envio do formulário HTML5. Abordaremos esta questão na próxima lição. Se um URL de envio não for especificado, o manipulador de envio padrão será chamado, retornando os dados do formulário ao navegador.
 
-**Perfil de renderização HTML**  - Os formulários HTML5 têm a noção de Perfis expostos como Pontos de extremidade REST para permitir a renderização móvel de modelos de formulário. A maioria das vezes o perfil de renderização padrão deve ser suficiente para renderizar o formulário. Se o perfil de renderização padrão não atender às suas necessidades, um [perfil personalizado](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) poderá ser criado e associado ao formulário.
+**Perfil de renderização HTML**  - Os formulários HTML5 têm a noção de Perfis expostos como Pontos de extremidade REST para permitir a renderização móvel de modelos de formulário. A maioria das vezes o perfil de renderização padrão deve ser suficiente para renderizar o formulário. Se o perfil de renderização padrão não atender às suas necessidades, um [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) poderá ser criado e associado ao formulário.
 
 **Serviço de preenchimento prévio**  - O serviço de preenchimento prévio geralmente é usado para preencher seu formulário com dados obtidos de uma fonte de dados de back-end.
 
