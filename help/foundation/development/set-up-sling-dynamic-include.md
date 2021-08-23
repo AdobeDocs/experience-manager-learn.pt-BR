@@ -1,6 +1,6 @@
 ---
-title: Configurar o Sling Dynamic Include para AEM
-description: Um vídeo de apresentação da instalação e uso do Apache Sling Dynamic Include com o AEM Dispatcher em execução no Apache HTTP Web Server.
+title: Configurar Sling Dynamic Include para AEM
+description: Um vídeo de apresentação da instalação e uso do Apache Sling Dynamic Include com AEM Dispatcher em execução no Apache HTTP Web Server.
 version: 6.3, 6.4, 6.5
 sub-product: fundação, sites
 feature: APIs
@@ -8,21 +8,20 @@ topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 6%
+source-wordcount: '261'
+ht-degree: 5%
 
 ---
 
 
 # Configurar [!DNL Sling Dynamic Include]
 
-Uma apresentação de vídeo sobre como instalar e usar [!DNL Apache Sling Dynamic Include] com [AEM Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html) em execução em [!DNL Apache HTTP Web Server].
+Uma apresentação de vídeo sobre como instalar e usar [!DNL Apache Sling Dynamic Include] com [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) em execução em [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
@@ -33,7 +32,7 @@ Uma apresentação de vídeo sobre como instalar e usar [!DNL Apache Sling Dynam
 1. Baixe e instale o [[!DNL Sling Dynamic Include] pacote](https://sling.apache.org/downloads.cgi).
 1. Configure [!DNL Sling Dynamic Include] através do [!DNL OSGi Configuration Factory] em **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   Ou, para adicionar a uma base de código do AEM, crie o nó apropriado **sling:OsgiConfig** em:
+   Ou, para adicionar a uma base de código AEM, crie o nó apropriado **sling:OsgiConfig** em:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -151,7 +150,7 @@ Uma apresentação de vídeo sobre como instalar e usar [!DNL Apache Sling Dynam
 
 >[!NOTE]
 >
->Se você estiver usando [!DNL Sling Dynamic Includes] para fornecer inclusões do lado da borda (ESI), certifique-se de armazenar em cache os cabeçalhos [de resposta relevantes no cache do dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Os cabeçalhos possíveis incluem:
+>Se você estiver usando [!DNL Sling Dynamic Includes] para fornecer inclusões do lado da borda (ESI), certifique-se de armazenar em cache os cabeçalhos [de resposta relevantes no cache do dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Os cabeçalhos possíveis incluem:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Disposição de conteúdo&quot;
