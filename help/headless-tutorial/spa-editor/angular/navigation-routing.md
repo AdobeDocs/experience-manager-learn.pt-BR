@@ -13,10 +13,10 @@ thumbnail: 5312-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2723'
-ht-degree: 1%
+source-wordcount: '2717'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Saiba como várias exibições no SPA são compatíveis com o uso de Páginas AE
 
 ## O que você vai criar
 
-Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de página de AEM e usa o modelo JSON fornecido pelo [Componente principal de navegação](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html).
+Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de página de AEM e usa o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegação implementada](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -69,9 +69,9 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
 
 Você sempre pode visualizar o código concluído em [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution) ou verificar o código localmente ao alternar para a ramificação `Angular/navigation-routing-solution`.
 
-## Atualizações do HeaderComponent do Inspect {#inspect-header}
+## Atualizações do Inspect HeaderComponent {#inspect-header}
 
-Em capítulos anteriores, o componente `HeaderComponent` era adicionado como um componente de Angular puro incluído por meio de `app.component.html`. Neste capítulo, o componente `HeaderComponent` é removido do aplicativo e será adicionado por meio do [Editor de modelo](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Isso permite que os usuários configurem o menu de navegação do `HeaderComponent` de dentro do AEM.
+Em capítulos anteriores, o componente `HeaderComponent` era adicionado como um componente de Angular puro incluído por meio de `app.component.html`. Neste capítulo, o componente `HeaderComponent` é removido do aplicativo e será adicionado por meio do [Editor de modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Isso permite que os usuários configurem o menu de navegação do `HeaderComponent` de dentro do AEM.
 
 >[!NOTE]
 >
@@ -116,9 +116,9 @@ Em capítulos anteriores, o componente `HeaderComponent` era adicionado como um 
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   O componente `Header` AEM herdará toda a funcionalidade do [Componente principal de navegação](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) por meio da propriedade `sling:resourceSuperType`.
+   O componente `Header` AEM herdará toda a funcionalidade do [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) por meio da propriedade `sling:resourceSuperType`.
 
-## Adicione o HeaderComponent ao modelo de SPA {#add-header-template}
+## Adicionar o HeaderComponent ao modelo de SPA {#add-header-template}
 
 1. Abra um navegador e faça logon no AEM, [http://localhost:4502/](http://localhost:4502/). A base de código inicial já deve ser implantada.
 2. Navegue até **[!UICONTROL SPA Modelo de Página]**: [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
