@@ -12,10 +12,10 @@ thumbnail: 18926.jpg
 topic: Desenvolvimento
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 11%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
@@ -36,4 +36,4 @@ AEM Componentes principais são um conjunto de componentes padrão a ser usado c
 
 * [Projeto do GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Exemplos de componentes principais](https://www.aemcomponents.dev/)
-* [Documentação dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
