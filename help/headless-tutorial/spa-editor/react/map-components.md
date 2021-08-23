@@ -12,10 +12,10 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2273'
-ht-degree: 1%
+source-wordcount: '2267'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ O conceito básico é mapear um Componente de SPA para um Componente de AEM. AEM
 
 ## Inspect o componente de texto
 
-O [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o AEM [Componente de Texto](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/text.html). Este é um exemplo de um componente **content**, na medida em que renderiza *content* de AEM.
+O [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o AEM [Componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Este é um exemplo de um componente **content**, na medida em que renderiza *content* de AEM.
 
 Vamos ver como o componente funciona.
 
@@ -223,7 +223,7 @@ Vamos inspecionar o Contêiner de layout ainda mais.
 
    O componente **Contêiner de layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor de SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionar um componente usando o [Modo de layout](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis no Editor de SPA.
+   Os mesmos recursos de redimensionar um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis no Editor de SPA.
 
 2. Retorne para [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Adicione outros componentes **Image** e tente redimensioná-los usando a opção **Layout**:
 
@@ -288,7 +288,7 @@ As próximas etapas serão executadas usando o Visual Studio Code IDE e [VSCode 
 
 ## (Bônus) Criar componente de imagem personalizado {#bonus-image}
 
-Um componente Imagem SPA já foi fornecido pelos componentes React Core. No entanto, se quiser práticas extras, crie sua própria implementação do React que mapeie para o [Componente de imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) AEM. O componente `Image` é outro exemplo de um componente **content**.
+Um componente Imagem SPA já foi fornecido pelos componentes React Core. No entanto, se quiser práticas extras, crie sua própria implementação do React que mapeie para o [Componente de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) AEM. O componente `Image` é outro exemplo de um componente **content**.
 
 ### Inspect no JSON
 
