@@ -13,9 +13,9 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Há várias opções para criar um projeto Maven Multi-module para AEM. Este tut
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular` . Isso instrui o Arquétipo de projeto do AEM a inicializar o projeto com uma [base de código do Angular](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor de SPA do AEM.
+   > Observe a propriedade `frontendModule=angular` . Isso instrui o Arquétipo de projeto do AEM a inicializar o projeto com uma [base de código do Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor de SPA do AEM.
 
 ## Criar o projeto
 
@@ -149,7 +149,7 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
 
    Todos os códigos personalizados necessários para o projeto serão agrupados nesses pacotes e instalados no tempo de execução AEM.
 
-6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre [AEM Componentes principais podem ser encontradas aqui](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html).
+6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre [AEM Componentes principais podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
 
 ## Conteúdo do autor
 
