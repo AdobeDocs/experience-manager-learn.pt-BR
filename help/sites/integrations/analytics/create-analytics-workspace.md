@@ -1,20 +1,16 @@
 ---
 title: Analisar dados com o Analysis Workspace
 description: Saiba como mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics. Saiba como criar um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
-feature: analytics
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6409
-thumbnail: KT-6296.jpg
 topic: Integrações
+feature: Camada de dados do cliente Adobe
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6409
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -45,17 +41,17 @@ Abaixo estão as variáveis do Analytics que estão sendo rastreadas no momento:
 ### Objetivos {#objective}
 
 1. Crie um novo Conjunto de relatórios ou use um existente.
-1. Configure [Variáveis de conversão (eVars)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) e [Eventos bem-sucedidos (Eventos)](https://docs.adobe.com/help/en/analytics/admin/admin-tools/success-events/success-event.html) no Conjunto de relatórios.
-1. Crie um [projeto do Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) para analisar dados com a ajuda de ferramentas que permitem criar, analisar e compartilhar insights rapidamente.
+1. Configure [Variáveis de conversão (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) e [Eventos bem-sucedidos (Eventos)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) no Conjunto de relatórios.
+1. Crie um [projeto do Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) para analisar dados com a ajuda de ferramentas que permitem criar, analisar e compartilhar insights rapidamente.
 1. Compartilhe o projeto do Analysis Workspace com outros membros da equipe.
 
 ## Pré-requisitos
 
 Este tutorial é uma continuação do [Rastrear componente clicado com Adobe Analytics](./track-clicked-component.md) e presume que você tenha:
 
-* Uma **Propriedade do Launch** com a extensão [Adobe Analytics](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) ativada
-* **ID do conjunto de relatórios** do Adobe Analytics/dev e do servidor de rastreamento. Consulte a documentação a seguir para [criar um novo conjunto de relatórios](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Extensão de navegador ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) do Depurador do Experience Platform configurada com a propriedade do Launch carregada em  [https://wknd.site/us/en.](https://wknd.site/us/en.html) html em um site AEM com a Camada de dados do Adobe.
+* Uma **Propriedade do Launch** com a extensão [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) ativada
+* **ID do conjunto de relatórios** do Adobe Analytics/dev e do servidor de rastreamento. Consulte a documentação a seguir para [criar um novo conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Extensão de navegador ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) do Depurador do Experience Platform configurada com a propriedade do Launch carregada em  [https://wknd.site/us/en.](https://wknd.site/us/en.html) html em um site AEM com a Camada de dados do Adobe.
 
 ## Variáveis de conversão (eVars) e Eventos bem-sucedidos (Evento)
 
@@ -116,19 +112,19 @@ Em seguida, vamos criar um evento para rastrear o clique do botão CTA.
 
 O Analysis Workspace é uma ferramenta de navegador flexível que permite criar análises e compartilhar insights rapidamente. Usando a interface de arrastar e soltar, você pode criar sua análise, adicionar visualizações para dar vida aos dados, preparar um conjunto de dados, compartilhar e agendar projetos com qualquer pessoa em sua organização.
 
-Em seguida, crie um novo [project](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) para criar um painel para analisar o desempenho dos botões CTA em todo o site.
+Em seguida, crie um novo [project](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) para criar um painel para analisar o desempenho dos botões CTA em todo o site.
 
 1. Na barra de ferramentas do Analytics, selecione **Workspace** e clique em **Criar um novo projeto**.
 
    ![Espaço de trabalho](assets/create-analytics-workspace/create-workspace.png)
 
-1. Escolha iniciar a partir de um **projeto em branco** ou selecione um dos modelos pré-criados, fornecido pelo Adobe ou modelos personalizados criados pela sua organização. Vários modelos estão disponíveis, dependendo da análise ou caso de uso que você tem em mente. [Saiba ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) mais sobre as diferentes opções de modelo disponíveis.
+1. Escolha iniciar a partir de um **projeto em branco** ou selecione um dos modelos pré-criados, fornecido pelo Adobe ou modelos personalizados criados pela sua organização. Vários modelos estão disponíveis, dependendo da análise ou caso de uso que você tem em mente. [Saiba ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) mais sobre as diferentes opções de modelo disponíveis.
 
    No projeto do Workspace, painéis, tabelas, visualizações e componentes são acessados no painel esquerdo. Estes são os componentes do projeto.
 
-   * **[Componentes](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - Os componentes são dimensões, métricas, segmentos ou intervalos de datas que podem ser combinados em uma tabela de forma livre para começar a responde às suas perguntas comerciais. Familiarize-se com cada tipo de componente antes de mergulhar na análise. Depois de dominar a terminologia do componente, você pode começar a arrastar e soltar para criar a análise em uma tabela de Forma livre.
-   * **[Visualizações](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - Visualizações, como um gráfico de barras ou de linhas, são adicionadas sobre os dados para dar vida visualmente a eles. No painel à esquerda, selecione o ícone do meio de Visualizações para ver a lista completa de visualizações disponíveis.
-   * **[Painéis](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html)**  - Um painel é uma coleção de tabelas e visualizações. Você pode acessar painéis usando o ícone superior esquerdo no Workspace. Painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, conjuntos de relatórios ou casos de uso de análise. Os seguintes tipos de painéis estão disponíveis no Analysis Workspace:
+   * **[Componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)**  - Os componentes são dimensões, métricas, segmentos ou intervalos de datas que podem ser combinados em uma tabela de forma livre para começar a responde às suas perguntas comerciais. Familiarize-se com cada tipo de componente antes de mergulhar na análise. Depois de dominar a terminologia do componente, você pode começar a arrastar e soltar para criar a análise em uma tabela de Forma livre.
+   * **[Visualizações](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)**  - Visualizações, como um gráfico de barras ou de linhas, são adicionadas sobre os dados para dar vida visualmente a eles. No painel à esquerda, selecione o ícone do meio de Visualizações para ver a lista completa de visualizações disponíveis.
+   * **[Painéis](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)**  - Um painel é uma coleção de tabelas e visualizações. Você pode acessar painéis usando o ícone superior esquerdo no Workspace. Painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, conjuntos de relatórios ou casos de uso de análise. Os seguintes tipos de painéis estão disponíveis no Analysis Workspace:
 
    ![Seleção de modelo](assets/create-analytics-workspace/workspace-tools.png)
 
@@ -170,7 +166,7 @@ Em seguida, crie uma tabela para criar uma representação visual de como os usu
 
    ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
-1. É possível substituir o valor da ID do botão por um nome mais simples, usando as Classificações do Adobe Analytics. Você pode ler mais sobre como criar uma classificação para uma métrica específica [aqui](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html). Nesse caso, temos uma métrica de classificação `Button Section (Button ID)` configurada para `eVar8` que mapeia a id do botão para um nome amigável.
+1. É possível substituir o valor da ID do botão por um nome mais simples, usando as Classificações do Adobe Analytics. Você pode ler mais sobre como criar uma classificação para uma métrica específica [aqui](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). Nesse caso, temos uma métrica de classificação `Button Section (Button ID)` configurada para `eVar8` que mapeia a id do botão para um nome amigável.
 
    ![Seção do botão](assets/create-analytics-workspace/button-section.png)
 
