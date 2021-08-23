@@ -1,21 +1,17 @@
 ---
 title: Configuração do acesso ao AEM
 description: Uma apresentação resumida configurando usuários do Adobe IMS, grupos de usuários e perfis de produtos no Adobe Admin Console, e como aproveitar essas abstrações do Adobe IMS no AEM Author para definir e gerenciar permissões específicas baseadas em grupos.
-feature: 'Usuários e grupos '
-topics: authentication, permissions
 version: cloud-service
-activity: setup
-audience: administrator
-doc-type: technical video
-kt: 6061
-thumbnail: 39155.jpg
 topic: Administração, segurança
+feature: Usuários e grupos
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 6061
+thumbnail: 39155.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
