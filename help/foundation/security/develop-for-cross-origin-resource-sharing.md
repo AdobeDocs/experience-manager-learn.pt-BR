@@ -1,20 +1,14 @@
 ---
-title: Desenvolver para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos de várias origens) com o AEM
-description: Um exemplo curto de como aproveitar o CORS para acessar conteúdo AEM de um aplicativo Web externo por meio do JavaScript do lado do cliente.
+title: Desenvolver para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens) com AEM
+description: Um exemplo curto de como aproveitar o CORS para acessar AEM conteúdo de um aplicativo Web externo por meio do JavaScript do lado do cliente.
 version: 6.3, 6,4, 6.5
-sub-product: fundação, serviços de conteúdo, sites
-topics: security, development, content-delivery
-activity: develop
-audience: developer
-doc-type: tutorial
-topic: Security
+topic: Segurança, desenvolvimento
 role: Developer
 level: Beginner
-feature:  
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+feature: Segurança
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,7 +16,7 @@ ht-degree: 0%
 
 # Desenvolver para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos de várias origens)
 
-Um exemplo curto de aproveitar [!DNL CORS] para acessar o conteúdo do AEM de um aplicativo Web externo por meio do JavaScript do lado do cliente.
+Um exemplo curto de como aproveitar [!DNL CORS] para acessar AEM conteúdo de um aplicativo Web externo por meio do JavaScript do lado do cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
@@ -33,7 +27,7 @@ Neste vídeo:
 * [O SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (um wrapper para o  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) do) está disponibilizando a página HTML pela porta 8000.
 * [!DNL AEM Dispatcher] O está em execução na  [!DNL Apache HTTP Web Server] 2.4 e a solicitação de proxy reverso  `aem-publish.local` para  `localhost:4503`.
 
-Para obter mais detalhes, revise [Entendendo o CORS (Cross-Origin Resource Sharing) no AEM](./understand-cross-origin-resource-sharing.md).
+Para obter mais detalhes, consulte [Compreender o CORS (Cross-Origin Resource Sharing) em AEM](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML e JavaScript
 
@@ -120,13 +114,13 @@ Para permitir o armazenamento em cache e a veiculação de cabeçalhos CORS em c
 
 Provavelmente, a limpeza total do cache é necessária para garantir que os cabeçalhos sejam armazenados em cache adequadamente na próxima solicitação após uma atualização de configuração `/clientheaders`.
 
-## Materiais de suporte {#supporting-materials}
+## Materiais de apoio {#supporting-materials}
 
-* [Fábrica de configuração do AEM OSGi para políticas de compartilhamento de recursos entre origens](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM Fábrica de configuração OSGi para Políticas de Compartilhamento de Recursos entre Origens](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer para macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatível com Windows/macOS/Linux)
 
-* [Noções básicas sobre o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens) no AEM](./understand-cross-origin-resource-sharing.md)
+* [Como entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens) no AEM](./understand-cross-origin-resource-sharing.md)
 * [Compartilhamento de recursos entre origens (W3C)](https://www.w3.org/TR/cors/)
 * [Controle de acesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
