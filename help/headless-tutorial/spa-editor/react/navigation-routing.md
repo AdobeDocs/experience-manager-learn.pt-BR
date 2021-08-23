@@ -12,10 +12,10 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1623'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento pa
 
 ## O que você vai criar
 
-Este capítulo adicionará navegação a um SPA em AEM. O menu de navegação será orientado pela hierarquia de página de AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html).
+Este capítulo adicionará navegação a um SPA em AEM. O menu de navegação será orientado pela hierarquia de página de AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
@@ -208,7 +208,7 @@ Em seguida, inspecione o Modelo JSON que orienta a experiência de várias visua
 
 1. Experimente com deep links navegando diretamente para: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Observe também que o botão Voltar do navegador continua funcionando.
 
-## Inspect React Routing {#react-routing}
+## Roteamento do Inspect React  {#react-routing}
 
 A navegação e o roteamento são implementados com [React Router](https://reactrouter.com/). O React Router é uma coleção de componentes de navegação para aplicativos React. [AEM Componentes principais do React ](https://github.com/adobe/aem-react-core-wcm-components-base) usam os recursos do React Router para implementar o componente  **** de Navegação usado nas etapas anteriores.
 
