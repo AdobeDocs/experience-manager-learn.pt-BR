@@ -1,7 +1,7 @@
 ---
 title: Gerenciar envio de formulário HTML5
 description: Criar manipulador de envio de formulário HTML5
-feature: Mobile Forms
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 topics: development
 audience: developer
 doc-type: article
@@ -9,21 +9,20 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 3%
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
 
 
 # Gerenciar envio de formulário HTML5
 
-Formulários HTML5 podem ser enviados para servlet hospedados no AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar o formulário HTML5, é necessário adicionar &quot;Botão Enviar por HTTP&quot; no modelo de formulário usando o AEM Forms Designer
+Formulários HTML5 podem ser enviados para servlet hospedado em AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar o formulário HTML5, é necessário adicionar &quot;Botão Enviar por HTTP&quot; no modelo de formulário usando o AEM Forms Designer
 
 ## Criar seu manipulador de envio
 
@@ -84,7 +83,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Leitura adicional
 
-Esse [artigo](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre a geração de PDF a partir do envio de formulário HTML5 também é recomendado.
+Esse [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre a geração de PDF a partir do envio de formulário HTML5 também é recomendado.
 
 
 
