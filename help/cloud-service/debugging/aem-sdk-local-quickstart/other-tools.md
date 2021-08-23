@@ -11,10 +11,9 @@ kt: 5251
 topic: Desenvolvimento
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
-source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '220'
 ht-degree: 7%
 
 ---
@@ -50,7 +49,7 @@ Explicar Consulta está localizado em:
 
 ![QueryBuilder Debugger](./assets/other-tools/query-debugger.png)
 
-O QueryBuilder Debugger é uma ferramenta baseada na Web que ajuda a depurar e entender consultas de pesquisa usando AEM sintaxe [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+O QueryBuilder Debugger é uma ferramenta baseada na Web que ajuda a depurar e entender consultas de pesquisa usando AEM sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 O QueryBuilder Debugger está localizado em:
 
