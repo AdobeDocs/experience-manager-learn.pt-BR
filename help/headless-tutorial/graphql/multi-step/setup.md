@@ -1,23 +1,17 @@
 ---
 title: Configuração rápida - Introdução ao AEM sem interface - GraphQL
 description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Instale o SDK do AEM, adicione conteúdo de amostra e implante um aplicativo que consuma conteúdo de AEM usando suas APIs GraphQL. Veja como o AEM alimenta as experiências omnichannel.
-sub-product: sites
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Fragmentos de conteúdo, APIs GraphQL
+feature: Fragmentos de conteúdo, API GraphQL
 topic: Sem periféricos, gerenciamento de conteúdo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -117,7 +111,7 @@ O site de referência WKND inclui configurações necessárias para expor um pon
 >
 > Se estiver usando um ambiente Cloud Service, consulte a documentação de como [implantar uma base de código como o site de Referência WKND em um ambiente Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## Instale o aplicativo de amostra{#sample-app}
+## Instalar o aplicativo de amostra{#sample-app}
 
 Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um aplicativo externo usando APIs GraphQL. Este tutorial usa um exemplo de aplicativo React que foi parcialmente concluído para acelerar o tutorial. As mesmas lições e conceitos se aplicam a aplicativos criados com iOS, Android ou qualquer outra plataforma. O aplicativo React é intencionalmente simples, para evitar complexidade desnecessária; não se trata de uma implementação de referência.
 
@@ -189,7 +183,7 @@ Agora que o aplicativo React está em execução, faça uma atualização do con
 
    ![Aventura Bali Surf Camp Atualizado](assets/setup/overnight-bali-surf-camp-changes.png)
 
-## Instalar a ferramenta GraphiQL {#install-graphiql}
+## Instalação da ferramenta GraphiQL {#install-graphiql}
 
 [](https://github.com/graphql/graphiql) O GraphiQL é uma ferramenta de desenvolvimento e é necessária somente em ambientes de nível inferior, como uma instância de desenvolvimento ou local. O GraphiQL IDE permite testar e refinar rapidamente as consultas e os dados retornados. O GraphiQL também oferece acesso fácil à documentação, facilitando o aprendizado e a compreensão de quais métodos estão disponíveis.
 
