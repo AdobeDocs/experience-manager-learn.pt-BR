@@ -1,16 +1,16 @@
 ---
 title: Perfis e AEM de produto Adobe IMS
 description: Os perfis de produtos Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual são membros.
-feature: 'Usuários e grupos '
-kt: 5000
-thumbnail: 39156.jpg
 topic: Administração, segurança
+feature: Usuários e grupos
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 5000
+thumbnail: 39156.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 8%
+source-wordcount: '151'
+ht-degree: 6%
 
 ---
 
@@ -29,5 +29,5 @@ Os perfis de produtos Adobe IMS permitem que os usuários façam logon em um ser
 
 ## Recursos adicionais
 
-+ [Gerenciamento de produtos e acesso do usuário na documentação do Admin Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Gerenciamento de produtos e acesso do usuário na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
 
