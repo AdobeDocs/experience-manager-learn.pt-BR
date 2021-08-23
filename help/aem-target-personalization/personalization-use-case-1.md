@@ -1,26 +1,25 @@
 ---
-title: Personalização usando Fragmentos de experiência do AEM e Adobe Target
-seo-title: Personalização usando os Fragmentos de experiência do Adobe Experience Manager (AEM) e o Adobe Target
+title: Personalização usando AEM fragmentos de experiência e Adobe Target
+seo-title: Personalização usando Fragmentos de experiência do Adobe Experience Manager (AEM) e Adobe Target
 description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando Fragmentos de experiência do Adobe Experience Manager e Adobe Target.
 seo-description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando Fragmentos de experiência do Adobe Experience Manager e Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Fragmentos de experiência
+topic: Personalização
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
 
 
-# Personalização usando Fragmentos de experiência do AEM e Adobe Target
+# Personalização usando AEM fragmentos de experiência e Adobe Target
 
-Com a capacidade de exportar Fragmentos de experiência do AEM para o Adobe Target como ofertas HTML, você pode combinar a facilidade de uso e o poder do AEM com os poderosos recursos de Inteligência automatizada (AI) e Aprendizagem de máquina (ML) no Target para testar e personalizar experiências em escala.
+Com a capacidade de exportar AEM Fragmentos de experiência para o Adobe Target como ofertas HTML, você pode combinar a facilidade de uso e o poder do AEM com os poderosos recursos de Inteligência automatizada (AI) e Aprendizagem de máquina (ML) no Target para testar e personalizar experiências em escala.
 
-O AEM reúne todo o seu conteúdo e ativos em um local central para alimentar sua estratégia de personalização. O AEM permite que você crie conteúdo facilmente para desktops, tablets e dispositivos móveis em um único local, sem gravar código. Não há necessidade de criar páginas para cada dispositivo. O AEM ajusta automaticamente cada experiência usando seu conteúdo.
+AEM reúne todo o conteúdo e ativos em um local central para alimentar sua estratégia de personalização. AEM permite criar conteúdo facilmente para desktops, tablets e dispositivos móveis em um único local, sem gravar código. Não há necessidade de criar páginas para cada dispositivo. AEM ajusta automaticamente cada experiência usando seu conteúdo.
 
 O Target permite fornecer experiências personalizadas em escala com base em uma combinação de abordagens de aprendizado de máquina baseadas em regras e AI que incorporam variáveis comportamentais, contextuais e offline.  Com o Target, você pode configurar e executar facilmente atividades A/B e multivariadas (MVT) para determinar as melhores ofertas, conteúdo e experiências.
 
@@ -34,33 +33,33 @@ O site WKND pretende anunciar um **Desafio SkateFest** em toda a América atrav�
 
 Para este exercício, os seguintes usuários precisam estar envolvidos e para executar algumas tarefas que você pode precisar de acesso administrativo.
 
-* **Produtor de conteúdo/Editor de conteúdo**  (Adobe Experience Manager)
+* **Produtor de conteúdo/Editor**  de conteúdo (Adobe Experience Manager)
 * **Profissional de marketing**  (Adobe Target / Equipe de otimização)
 
 ### Pré-requisitos
 
 * **AEM**
-   * [A criação e a publicação de ](./implementation.md#getting-aem) instâncias do AEM no localhost 4502 e 4503, respectivamente.
+   * [AEM criar e publicar ](./implementation.md#getting-aem) instruções no localhost 4502 e 4503, respectivamente.
 * **Experience Cloud**
-   * Acesso às suas organizações na Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Experience Cloud provisionada com as seguintes soluções
+   * Acesso à Adobe Experience Cloud de suas organizações - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Experience Cloud provisionado com as seguintes soluções
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ### Página inicial do site WKND
 
-![Cenário de destino do AEM 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
+![AEM Cenário de Destino 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
-1. O profissional de marketing inicia a discussão da campanha WKND SkateFest com o Editor de conteúdo do AEM e detalha os requisitos.
+1. O profissional de marketing inicia a discussão da campanha WKND SkateFest com AEM Editor de conteúdo e detalha os requisitos.
    * ***Requisito***: Promova a campanha WKND SkateFest na página inicial do site WKND com conteúdo personalizado para visitantes de cada estado nos Estados Unidos. Adicione um novo bloco de conteúdo sob o carrossel da página inicial, contendo uma imagem do fundo, texto e um botão.
       * **Imagem** de plano de fundo: A imagem deve ser relevante para o estado a partir do qual o usuário está visitando a página do Site WKND.
-      * **Texto**: &quot;Inscreva-se para os públicos-alvo&quot;
+      * **Texto**: &quot;Inscreva-se para receber os Audition&quot;
       * **Botão**: &quot;Detalhes do evento&quot; apontando para a página SkateFest da WKND
       * **Página** WKND SkateFest: uma nova página com detalhes do evento, incluindo o local do público-alvo, data e hora.
-1. Com base nos requisitos, o Editor de conteúdo do AEM cria um Fragmento de experiência para o bloco de conteúdo e o exporta para o Adobe Target como uma oferta. Para fornecer conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação mestre do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um Fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos . Quando um Fragmento de experiência é exportado para o Adobe Target, todas as suas variações também são enviadas para o Adobe Target como Ofertas.
+1. Com base nos requisitos, AEM Editor de conteúdo cria um Fragmento de experiência para o bloco de conteúdo e o exporta para o Adobe Target como uma oferta. Para fornecer conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação principal do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um Fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos . Quando um Fragmento de experiência é exportado para o Adobe Target, todas as suas variações também são enviadas para o Adobe Target como Ofertas.
 
 1. Após exportar o Fragmento de experiência do AEM para o Adobe Target como Ofertas, os profissionais de marketing podem criar atividades no Target usando essas Ofertas. Com base na campanha SkateFest do site WKND, o profissional de marketing precisa criar e entregar uma experiência personalizada para visitantes do site WKND de cada estado. Para criar uma atividade de Direcionamento de experiência, o profissional de marketing precisa identificar os públicos. Para nossa campanha WKND SkateFest, precisamos criar 50 públicos separados, com base em sua localização a partir da qual eles estão visitando o site da WKND.
-   * [](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Os públicos-alvo definem a meta para sua atividade e são usados em qualquer lugar onde o direcionamento estiver disponível. Os públicos-alvo do Target são um conjunto definido de critérios de visitante. As ofertas podem ser direcionadas a públicos-alvo específicos (ou segmentos). Somente os visitantes que pertencem a esse público-alvo visualizam a experiência direcionada a eles.  Por exemplo, é possível fornecer uma oferta a um público-alvo composto de visitantes que usam um determinado navegador ou de uma localização geográfica específica.
-   * Uma [Oferta](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) é o conteúdo que é exibido em suas páginas da Web durante campanhas ou atividades. Ao testar suas páginas da Web, você mede o sucesso de cada experiência com diferentes ofertas em seus locais. Uma oferta pode conter diferentes tipos de conteúdo, incluindo:
+   * [](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Os públicos-alvo definem a meta para sua atividade e são usados em qualquer lugar onde o direcionamento estiver disponível. Os públicos-alvo do Target são um conjunto definido de critérios de visitante. As ofertas podem ser direcionadas a públicos-alvo específicos (ou segmentos). Somente os visitantes que pertencem a esse público-alvo visualizam a experiência direcionada a eles.  Por exemplo, é possível fornecer uma oferta a um público-alvo composto de visitantes que usam um determinado navegador ou de uma localização geográfica específica.
+   * Uma [Oferta](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) é o conteúdo que é exibido em suas páginas da Web durante campanhas ou atividades. Ao testar suas páginas da Web, você mede o sucesso de cada experiência com diferentes ofertas em seus locais. Uma oferta pode conter diferentes tipos de conteúdo, incluindo:
       * Imagem
       * Texto
       * **HTML**
@@ -86,7 +85,7 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e para ex
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/exp-cloud-adobe-target.png)
 
-1. Navegue até a guia **Offers** e pesquise por ofertas &quot;WKND&quot;. Você deve conseguir ver a lista de variações dos Fragmentos de experiência, exportadas do AEM como ofertas HTML. Cada Oferta corresponde a um estado. Por exemplo, *WKND SkateFest California* é a oferta que é apresentada a um visitante do Site WKND da Califórnia.
+1. Navegue até a guia **Offers** e pesquise por ofertas &quot;WKND&quot;. Você deve conseguir ver a lista de variações dos Fragmentos de experiência, exportadas do AEM como Ofertas HTML. Cada Oferta corresponde a um estado. Por exemplo, *WKND SkateFest California* é a oferta que é apresentada a um visitante do Site WKND da Califórnia.
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/html-offers.png)
 
@@ -131,7 +130,7 @@ Neste ponto, criamos públicos-alvo com sucesso para todos os visitantes do Site
 
 ### Criar uma atividade com geolocalização
 
-1. Na janela do Adobe Target, navegue até a guia **Activities**.
+1. Na janela Adobe Target, navegue até a guia **Activities**.
 1. Clique em **Criar atividade** e selecione o tipo de atividade **Direcionamento de experiência**.
 1. Selecione o canal **Web** e escolha o **Visual Experience Composer**.
 1. Insira o **URL da atividade** e clique em **Avançar** para abrir o Visual Experience Composer.
@@ -166,7 +165,7 @@ Neste ponto, criamos públicos-alvo com sucesso para todos os visitantes do Site
    ![Meta e direcionamento - Target](assets/personalization-use-case-1/goal-metric-target.png)
 
    >[!NOTE]
-   >Você também pode escolher o Adobe Analytics como fonte de relatórios.
+   >Você também pode escolher o Adobe Analytics como sua fonte de relatórios.
 
 1. Passe o mouse sobre o nome da atividade atual e você pode renomeá-la para **WKND SkateFest - USA**, e depois **Salvar e fechar** suas alterações.
 1. Na tela Detalhes da atividade , certifique-se de **Ativar** sua atividade.
