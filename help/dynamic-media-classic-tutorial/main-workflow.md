@@ -10,10 +10,10 @@ activity: use
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2734'
-ht-degree: 1%
+source-wordcount: '2714'
+ht-degree: 0%
 
 ---
 
@@ -34,12 +34,12 @@ O fluxo de trabalho nas soluções do Dynamic Media Classic consiste em três et
 
 Este é o início do workflow. Nesta etapa, você coleta ou cria o conteúdo de origem que se encaixa no fluxo de trabalho que está usando e o carrega no Dynamic Media Classic. O sistema oferece suporte a vários tipos de arquivos para imagens, vídeo e fontes, mas também para PDF, Adobe Illustrator e Adobe InDesign.
 
-Consulte a lista completa de [Tipos de Arquivo Suportados](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Consulte a lista completa de [Tipos de Arquivo Suportados](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Você pode fazer upload do conteúdo de origem de várias maneiras diferentes:
 
-- Diretamente da área de trabalho ou rede local. [Saiba como](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- De um servidor FTP do Dynamic Media Classic. [Saiba como](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Diretamente da área de trabalho ou rede local. [Saiba como](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
+- De um servidor FTP do Dynamic Media Classic. [Saiba como](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
 O modo padrão é A partir da área de trabalho, onde você procura arquivos na rede local e inicia o upload.
 
@@ -67,11 +67,11 @@ Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo
 - **Substitua em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão**.
 Essa é a regra de substituição mais inclusiva. Você pode fazer upload de uma imagem de substituição para uma pasta diferente do original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
 
-Saiba mais sobre a [Opção de Substituição de Imagens](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Saiba mais sobre a [Opção de Substituição de Imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Embora não seja necessário, ao fazer upload usando qualquer um dos dois métodos acima, você pode especificar as Opções de trabalho para esse upload em particular — por exemplo, para agendar um upload recorrente, definir as opções de corte no upload e muitos outros. Eles podem ser valiosos para alguns fluxos de trabalho, portanto, vale a pena considerar se podem ser para os seus.
 
-Saiba mais sobre [Opções de trabalho](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Saiba mais sobre [Opções de trabalho](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 O upload é a primeira etapa necessária em qualquer fluxo de trabalho, pois o Dynamic Media Classic não pode funcionar com nenhum conteúdo que ainda não esteja em seu sistema. Em segundo plano durante o upload, o sistema registra cada ativo carregado no banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem em um formato que permite redimensionamento dinâmico e zoom e converte arquivos de vídeo para o formato compatível com a Web MP4.
 
@@ -100,7 +100,7 @@ Da mesma forma, você pode fazer o upload do vídeo de origem principal para o D
 
 **Embora não haja um mínimo para o tamanho da imagem, não recomendamos fazer upload de imagens gigantes.** Uma imagem gigante pode ser considerada mais de 4000 pixels. Fazer upload de imagens desse tamanho pode mostrar possíveis falhas, como grãos de pó ou pêlos na imagem. Essas imagens também ocuparão mais espaço no servidor Dynamic Media Classic, o que pode fazer com que você ultrapasse os limites de armazenamento contratado.
 
-Saiba mais sobre o [Upload de arquivos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Saiba mais sobre o [Upload de arquivos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Etapa 2: Autor (e publicação)
 
@@ -142,14 +142,14 @@ Os ativos recém-carregados e publicados serão visualizados imediatamente, enqu
 
 Normalmente, isso não é um problema a menos que um erro tenha ocorrido e a imagem/ativo tenha o mesmo nome da versão publicada anteriormente, mas há um problema com a imagem. Por exemplo, você carregou acidentalmente uma versão de baixa resolução ou o diretor de arte não aprovou a imagem. Nesse caso, você deseja lembrar a imagem original e substituí-la por uma nova versão usando a mesma ID de ativo.
 
-Saiba como [Limpar manualmente o cache para os URLs que precisam ser atualizados](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Saiba como [Limpar manualmente o cache para os URLs que precisam ser atualizados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Para evitar problemas de atraso de armazenamento em cache, sempre trabalhe com antecedência — uma noite, um dia, duas semanas etc. Crie tempo para controle de qualidade/aceitação para que as partes internas comprovem seu trabalho antes de divulgá-lo ao público. Mesmo trabalhando uma noite antes, você pode fazer alterações e republicar essa noite. Pela manhã, as 10 horas expiraram e o cache é atualizado com a imagem correta.
 
-- Saiba mais sobre como [Criar um trabalho de publicação](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Saiba mais sobre [Publicação](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Saiba mais sobre como [Criar um trabalho de publicação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Saiba mais sobre [Publicação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Etapa 3: Delivery
 
@@ -187,4 +187,4 @@ Você pode visualizar suas imagens em vários tamanhos usando a visualização *
 
 Você também pode usar a opção **Zoom** para visualizar sua imagem em uma de várias predefinições de zoom pré-criadas, que são baseadas em diferentes visualizadores de zoom incluídos.
 
-Saiba mais sobre [Visualização de ativos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Saiba mais sobre [Visualização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
