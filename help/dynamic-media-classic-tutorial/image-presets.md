@@ -10,9 +10,9 @@ activity: use
 topic: Gerenciamento de conteúdo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Uma predefinição de imagem tem um cifrão ($) em ambos os lados do nome e segu
 >
 >Crie uma predefinição de imagem por tamanho de imagem exclusivo no site. Por exemplo, se você precisar de uma imagem 350 X 350 para a página de detalhes do produto, uma imagem 120 X 120 para as páginas de navegação/pesquisa e uma imagem 90 X 90 para um item de venda cruzada/em destaque, você precisará de três Predefinições de imagem, quer você tenha 500 imagens ou 500.000.
 
-- Saiba mais sobre [Predefinições de imagem](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Saiba como [Criar uma predefinição de imagem](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Saiba mais sobre [Predefinições de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Saiba como [Criar uma predefinição de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Predefinições e nitidez da imagem
 
@@ -63,7 +63,7 @@ O gráfico a seguir mostra três níveis de nitidez. Da direita para a esquerda 
 
 O Dynamic Media Classic permite três tipos de nitidez: Nitidez simples, modo de reamostra e Tirar nitidez da máscara.
 
-Saiba mais sobre as [Opções de nitidez do Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Saiba mais sobre as [Opções de nitidez do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Recursos adicionais
 
