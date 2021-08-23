@@ -12,10 +12,9 @@ level: Beginner
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '1999'
 ht-degree: 1%
 
 ---
@@ -70,7 +69,7 @@ Você sempre pode visualizar o código concluído em [GitHub](https://github.com
 
 ## O que você vai criar {#what-you-will-build}
 
-Neste capítulo, usaremos o recurso [Sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para criar variações dos componentes **Title** e **Text** usados na página Artigo.
+Neste capítulo, usaremos o recurso [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para criar variações dos componentes **Title** e **Text** usados na página Artigo.
 
 ![Estilos disponíveis para o Título](assets/style-system/styles-added-title.png)
 
@@ -78,7 +77,7 @@ Neste capítulo, usaremos o recurso [Sistema de estilos](https://docs.adobe.com/
 
 ## Segundo plano {#background}
 
-O [Style System](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/developing/components/style-system.translate.html) permite que desenvolvedores e editores de modelo criem várias variações visuais de um componente. Os autores, por sua vez, podem decidir qual estilo usar ao compor uma página. Aproveitaremos o Sistema de estilos no restante do tutorial para atingir vários estilos únicos, além de aproveitar os Componentes principais em uma abordagem de código baixo.
+O [Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite que desenvolvedores e editores de modelo criem várias variações visuais de um componente. Os autores, por sua vez, podem decidir qual estilo usar ao compor uma página. Aproveitaremos o Sistema de estilos no restante do tutorial para atingir vários estilos únicos, além de aproveitar os Componentes principais em uma abordagem de código baixo.
 
 A ideia geral com o Sistema de estilos é que os autores possam escolher vários estilos de como um componente deve ser exibido. Os &quot;estilos&quot; são respaldados por classes CSS adicionais que são injetadas na div externa de um componente. Nas bibliotecas de clientes, as regras de CSS são adicionadas com base nessas classes de estilo para que o componente mude de aparência.
 
