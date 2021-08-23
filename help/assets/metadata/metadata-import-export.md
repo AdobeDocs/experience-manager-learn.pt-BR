@@ -1,23 +1,22 @@
 ---
-title: Uso de importação e exportação de metadados no AEM Assets
+title: Uso da importação e exportação de metadados no AEM Assets
 description: Saiba como usar os recursos de metadados de importação e exportação do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Content Management
-feature: Metadata
+topic: Gerenciamento de conteúdo
+feature: Metadados
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 
-# Uso de importação e exportação de metadados no AEM Assets {#metadata-import-and-export}
+# Uso da importação e exportação de metadados no AEM Assets {#metadata-import-and-export}
 
 Saiba como usar os recursos de metadados de importação e exportação do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
 
@@ -54,7 +53,7 @@ Saiba como usar os recursos de metadados de importação e exportação do Adobe
    * Incorreto: `Dc:Title {{String}}`
 
 * O tipo de propriedade não diferencia maiúsculas de minúsculas
-* Todos os tipos válidos de [Propriedade JCR](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são suportados
+* Todos os tipos válidos de [Propriedade JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são suportados
 
 * Formato de propriedade de vários valores - `<metadata property name> {{<property type : MULTI }}`
 
