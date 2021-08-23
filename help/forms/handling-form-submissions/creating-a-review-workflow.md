@@ -1,8 +1,8 @@
 ---
 title: Criação de um fluxo de trabalho para analisar os dados enviados
-description: Criação do modelo de fluxo de trabalho do AEM usando componentes de fluxo de trabalho do AEM Forms para analisar os dados enviados.
+description: Criação de AEM modelo de fluxo de trabalho usando componentes de fluxo de trabalho do AEM Forms para analisar os dados enviados.
 sub-product: formulários
-feature: Workflow
+feature: Fluxo de trabalho
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,14 +10,13 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Development
+topic: Desenvolvimento
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 6%
+source-wordcount: '141'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +27,7 @@ Geralmente, os workflows são usados para rotear dados enviados para revisão e 
 
 ## Pré-requisitos
 
-Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de instalação](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
+Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de instalação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
 
 O vídeo a seguir explica a criação de um fluxo de trabalho de revisão e aprovação usando os componentes do AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
