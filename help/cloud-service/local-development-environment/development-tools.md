@@ -1,7 +1,7 @@
 ---
 title: Configurar as ferramentas de desenvolvimento para o AEM como um Cloud Service development
 description: Crie uma máquina de desenvolvimento local com todas as ferramentas básicas necessárias para desenvolver em relação a AEM local.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,12 +9,12 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1435'
 ht-degree: 2%
 
 ---
@@ -190,9 +190,9 @@ O Visual Studio Code é a escolha ideal para desenvolvedores front-end que criam
 
 ### Eclipse
 
-__[O Eclipse ](https://www.eclipse.org/ide/)__ IDEs é um IDEs popular para desenvolvimento de Java e oferece suporte ao   __[AEM Developer ](https://eclipse.adobe.com/aem/dev-tools/)__ Toolsplug-in fornecido pelo Adobe, fornecendo uma GUI no IDE para criação e para sincronizar o conteúdo JCR com uma instância de AEM local.
+__[O Eclipse ](https://www.eclipse.org/ide/)__ IDEs é um IDEs popular para desenvolvimento de Java e oferece suporte ao   __[AEM Developer ](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ Toolsplug-in fornecido pelo Adobe, fornecendo uma GUI no IDE para criação e para sincronizar o conteúdo JCR com uma instância de AEM local.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Baixar o Eclipse](https://www.eclipse.org/ide/)
-+ [Download de ferramentas de desenvolvimento do Eclipse](https://eclipse.adobe.com/aem/dev-tools/)
++ [Download de ferramentas de desenvolvimento do Eclipse](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
