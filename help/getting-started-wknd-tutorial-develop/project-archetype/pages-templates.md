@@ -1,20 +1,16 @@
 ---
 title: Introdução ao AEM Sites - Páginas e modelos
-seo-title: Introdução ao AEM Sites - Páginas e modelos
 description: Saiba mais sobre a relação entre um componente de página base e modelos editáveis. Entenda como os Componentes principais são transferidos por proxy para o projeto e aprenda configurações de política avançadas de modelos editáveis para criar um modelo de página de artigo bem estruturado com base em um modelo do Adobe XD.
-sub-product: sites
-version: 6.4, 6.5, Cloud Service
-type: Tutorial
-feature: Componentes principais, Modelos editáveis, Editor de páginas
-topic: Gerenciamento de conteúdo, desenvolvimento
+feature: Core Components, Editable Templates, Page Editor
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3082'
 ht-degree: 1%
 
 ---
@@ -57,7 +53,7 @@ Confira o código base que o tutorial constrói em:
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Você sempre pode visualizar o código concluído em [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) ou verificar o código localmente ao alternar para a ramificação `tutorial/pages-templates-solution`.
+Você sempre pode visualizar o código concluído em [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) ou verificar o código localmente ao alternar para a ramificação `tutorial/pages-templates-solution`.
 
 ## Objetivo
 
