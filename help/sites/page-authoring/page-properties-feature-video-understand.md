@@ -1,23 +1,17 @@
 ---
 title: Como entender as propriedades da página no AEM Sites
-seo-title: Como entender as propriedades da página no Adobe Experience Manager Sites
 description: O vídeo a seguir apresenta os metadados das propriedades da página associados a uma página no Adobe Experience Manager.
-seo-description: 'O vídeo a seguir apresenta os metadados das propriedades da página associados a uma página no Adobe Experience Manager. '
-feature: Editor de página
-topics: authoring, metadata
-audience: author, marketer
-doc-type: feature video
-activity: understand
 version: 6.3, 6.4, 6.5
-kt: 4321
-thumbnail: 32192.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
+feature: Page Editor
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4321
+thumbnail: 32192.jpg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 32%
+source-wordcount: '138'
+ht-degree: 40%
 
 ---
 
@@ -64,4 +58,5 @@ Neste vídeo, os seguintes elementos de propriedade da página são abordados:
 
 * [Editar a documentação das propriedades da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
 * [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+
