@@ -3,12 +3,12 @@ title: Uso do Brand Portal
 description: Apresentação de vídeo da integração do AEM Author e do AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1764'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ A origem dos ativos da Brand Portal é usada para coletar ativos de agências e 
 
 *O Autor do Experience Manager 6.5 SP2 (6.5.2) ou superior é necessário para usar a origem dos ativos*
 
-Revise [Ativar autor do Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) para obter instruções sobre como configurar e configurar a origem de ativos no autor do Experience Manager.
+Revise [Ativar autor do Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) para obter instruções sobre como configurar e configurar a origem de ativos no autor do Experience Manager.
 
 ## Recursos e aprimoramentos de fevereiro de 2019 do Brand Portal{#brand-portal-features-and-enhancements-644}
 
