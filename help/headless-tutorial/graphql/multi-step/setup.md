@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Fragmentos de conteúdo, API GraphQL
-topic: Sem periféricos, gerenciamento de conteúdo
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 2%
 
 ---
@@ -158,11 +158,7 @@ Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um apl
 
    ![Solicitação GraphQL Endpoint XHR](assets/setup/endpoint-gql.png)
 
-1. Você também pode visualizar os parâmetros e a resposta JSON inspecionando a solicitação de rede. Pode ser útil instalar uma extensão de navegador como [GraphQL Network](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) para que o Chrome entenda melhor a consulta e a resposta.
-
-   ![Extensão de rede GraphQL](assets/setup/GraphQL-extension.png)
-
-   *Uso da rede GraphQL da extensão do Chrome*
+1. Você também pode visualizar os parâmetros e a resposta JSON inspecionando a solicitação de rede. Pode ser útil instalar uma extensão de navegador como [GraphQL Network Inspetor](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) para Chrome para obter uma melhor compreensão da consulta e da resposta.
 
 ## Modificar um fragmento do conteúdo
 
