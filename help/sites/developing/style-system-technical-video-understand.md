@@ -1,39 +1,29 @@
 ---
-title: Como entender como codificar para o Sistema de estilos do AEM
+title: Como entender o código do Sistema de estilos de AEM
 description: Neste vídeo, vamos dar uma olhada na anatomia do CSS (ou LESS) e do JavaScript usados para criar um estilo no Componente de título principal do Adobe Experience Manager usando o Sistema de estilos, bem como em como esses estilos são aplicados ao HTML e DOM.
 feature: Style System
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
 
-# Como entender o código do Sistema de estilos{#understanding-how-to-code-for-the-aem-style-system}
+# Como entender o código do sistema de estilos{#understanding-how-to-code-for-the-aem-style-system}
 
 Neste vídeo, vamos dar uma olhada na anatomia do CSS (ou [!DNL LESS]) e do JavaScript usados para criar um estilo no Componente de título principal do Experience Manager usando o Sistema de estilos, bem como em como esses estilos são aplicados ao HTML e DOM.
 
->[!NOTE]
->
->O Sistema de estilo do AEM foi introduzido com [AEM 6.3 SP1](https://helpx.adobe.com/br/experience-manager/6-1/release-notes/sp3-release-notes.html) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
->
->O vídeo supõe que o componente Título do We.Retail tenha sido atualizado para herdar de [Componentes principais v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 
-## Como entender o código do Sistema de estilos {#understanding-how-to-code-for-the-style-system}
+## Como entender o código do sistema de estilos {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
-O Pacote AEM fornecido (**technical-review.sites.style-system-1.0.0.zip**) instala o estilo de título de exemplo, as políticas de amostra para os componentes Contêiner e Título de layout We.Retail e uma página de exemplo.
+O Pacote de AEM fornecido (**technical-review.sites.style-system-1.0.0.zip**) instala o estilo de título de exemplo, as políticas de amostra para os componentes Contêiner de layout e Título do We.Retail e uma página de exemplo.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
@@ -71,7 +61,7 @@ Para aqueles que preferem CSS, abaixo desse trecho de código está o CSS no qua
 }
 ```
 
-O [!DNL LESS] acima é compilado nativamente pelo Experience Manager para o seguinte CSS.
+O [!DNL LESS] acima é compilado nativamente por Experience Manager para o seguinte CSS.
 
 ```css
 /* CSS */
@@ -198,7 +188,7 @@ jQuery(function ($) {
 >
 >Todos os outros locatários de [BEM](https://en.bem.info/) devem ser alinhados com.
 
-* Use pré-processadores como [LESS](https://lesscss.org/) (suportado pelo AEM nativamente) ou [SCSS](https://sass-lang.com/) (requer sistema de compilação personalizado) para permitir uma definição clara de CSS e reutilizabilidade.
+* Use pré-processadores como [LESS](https://lesscss.org/) (suportado por AEM nativamente) ou [SCSS](https://sass-lang.com/) (requer sistema de compilação personalizado) para permitir uma definição clara de CSS e reutilizabilidade.
 
 * Manter uniforme o peso/a especificidade do seletor; Isso ajuda a evitar e resolver conflitos em cascata de CSS difíceis de identificar.
 * Organize cada estilo em um arquivo discreto.
@@ -265,7 +255,7 @@ As práticas recomendadas definidas nesta seção pertencem ao &quot;style-JavaS
 ## Recursos adicionais {#additional-resources}
 
 * [Documentação do sistema de estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [Criação de bibliotecas de clientes do AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Criação AEM bibliotecas de clientes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Site da documentação BEM (Block Element Modifier)](https://getbem.com/)
 * [MENOS site de documentação](https://lesscss.org/)
 * [Site do jQuery](https://jquery.com/)
