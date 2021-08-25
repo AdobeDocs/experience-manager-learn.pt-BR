@@ -1,17 +1,16 @@
 ---
 title: Personalização usando o Adobe Target Visual Experience Composer
-seo-title: Personalização usando o Adobe Target Visual Experience Composer (VEC)
-description: Um tutorial completo mostrando como criar e entregar experiência personalizada usando o Adobe Target Visual Experience Composer (VEC).
-seo-description: Um tutorial completo mostrando como criar e entregar experiência personalizada usando o Adobe Target Visual Experience Composer (VEC).
+seo-title: Personalization using Adobe Target Visual Experience Composer (VEC)
+description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando o Adobe Target Visual Experience Composer (VEC).
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target Visual Experience Composer (VEC).
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '583'
+ht-degree: 2%
 
 ---
 
@@ -33,21 +32,21 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e para ex
 
 ### Página inicial do site WKND
 
-![Cenário de destino do AEM 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
+![AEM Cenário de Destino 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
 ### Pré-requisitos
 
 * **AEM**
-   * [Instalação de publicação do AEM ](./implementation.md#getting-aem) no 4503
+   * [AEM publicar ](./implementation.md#getting-aem) instruções no 4503
    * [AEM integrado ao Adobe Target usando o Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Acesso às suas organizações na Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Experience Cloud provisionada com [Adobe Target](https://experiencecloud.adobe.com)
+   * Acesso à Adobe Experience Cloud de suas organizações - `https://<yourcompany>.experiencecloud.adobe.com`
+   * Experience Cloud provisionado com [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Atividades do profissional de marketing
 
-1. O profissional de marketing cria uma atividade de direcionamento A/B dentro do Adobe Target.
-   1. Na janela do Adobe Target, navegue até a guia **Activities**.
+1. O profissional de marketing cria uma atividade de direcionamento A/B no Adobe Target.
+   1. Na janela Adobe Target, navegue até a guia **Activities**.
    2. Clique no botão **Criar atividade** e selecione o tipo de atividade como **Teste A/B**
 
       ![Adobe Target - Criar atividade](assets/personalization-use-case-2/create-ab-activity.png)
