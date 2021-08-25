@@ -1,15 +1,15 @@
 ---
 title: Integração do Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
-seo-title: Integração do Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
+seo-title: Integrating Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
 description: Passo a passo sobre como integrar o Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
-seo-description: Passo a passo sobre como integrar o Adobe Experience Manager com o Adobe Target usando o Experience Platform Launch e o Adobe I/O
-feature: Fragmentos de experiência
-topic: Personalização
+seo-description: Step by step walk-through on how to integrate Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1064'
 ht-degree: 2%
 
 ---
@@ -21,14 +21,14 @@ ht-degree: 2%
 
 * [AEM criar e publicar ](./implementation.md#set-up-aem) instruções na porta 4502 e 4503 localhost, respectivamente
 * **Experience Cloud**
-   * Acesso à Adobe Experience Cloud de suas organizações - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Acesso à Adobe Experience Cloud de suas organizações - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud provisionado com as seguintes soluções
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Console Adobe I/O](https://console.adobe.io)
 
       >[!NOTE]
-      >Você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes no Launch. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis para você, entre em contato com o administrador do Experience Cloud para solicitar acesso. Para obter mais informações sobre permissões do Launch, [consulte a documentação](https://docs.adobelaunch.com/administration/user-permissions).
+      >Você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes no Launch. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis para você, entre em contato com o administrador do Experience Cloud para solicitar acesso. Para obter mais informações sobre permissões do Launch, [consulte a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 
 * **Plug-ins do navegador**
@@ -66,7 +66,7 @@ Nesta seção, cobriremos as seguintes etapas de integração:
 
 Uma propriedade é um contêiner que você preenche com extensões, regras, elementos de dados e bibliotecas à medida que implanta tags no site.
 
-1. Navegue até sua organização [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experiencecloud.adobe.com)
+1. Navegue até sua organização [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`https://<yourcompany>.experiencecloud.adobe.com`)
 2. Faça logon usando sua Adobe ID e verifique se você está na organização correta.
 3. No alternador de soluções, clique em **Launch** e selecione o botão **Ir para o Launch**.
 
@@ -75,7 +75,7 @@ Uma propriedade é um contêiner que você preenche com extensões, regras, elem
 4. Certifique-se de estar na organização correta e continue com a criação de uma propriedade do Launch.
    ![Experience Cloud - Launch](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *Para obter mais informações sobre como criar propriedades, consulte  [Criar uma ](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) propriedade na documentação do produto.*
+   *Para obter mais informações sobre como criar propriedades, consulte  [Criar uma ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) propriedade na documentação do produto.*
 5. Clique no botão **Nova propriedade**
 6. Forneça um nome para a propriedade (por exemplo, *AEM Tutorial do Target*)
 7. Como o domínio, insira *localhost.com*, pois este é o domínio em que o site de demonstração WKND está sendo executado. Embora o campo &#39;*Domain*&#39; seja obrigatório, a propriedade do Launch funcionará em qualquer domínio em que for implementada. A finalidade principal desse campo é preencher previamente as opções de menu no Construtor de regras.
