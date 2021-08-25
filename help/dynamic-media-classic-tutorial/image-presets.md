@@ -2,17 +2,17 @@
 title: Predefinições de imagem
 description: As predefinições de imagens no Dynamic Media Classic contêm todas as configurações necessárias para criar uma imagem em um tamanho, formato, qualidade e nitidez específicos. As predefinições de imagens são um componente essencial do dimensionamento dinâmico. Ao observar um URL no Dynamic Media Classic, é possível ver se uma predefinição de imagem está em uso. Saiba mais sobre Predefinições de imagem, por que elas são tão úteis e como criar uma.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, predefinições de imagem
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,3 @@ Saiba mais sobre as [Opções de nitidez do Dynamic Media Classic](https://exper
 [Guia de predefinição de imagem](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Configurações a serem usadas para otimizar a qualidade da imagem e a velocidade de carregamento.
 
 [A Imagem É Tudo Parte 2: Nunca é apenas um desfoque — Qualidade versus Velocidade](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Uma publicação do blog discute o uso de Predefinições de imagem para fornecer imagens de alta qualidade e de carregamento rápido.
-
-[A Imagem É Todos Os Webinars](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Links para gravações de todos os três webinars na série _Imagem é tudo_. [O Webinar 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) discute as Predefinições de imagem.
