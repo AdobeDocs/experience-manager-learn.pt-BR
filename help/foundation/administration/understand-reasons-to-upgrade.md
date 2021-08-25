@@ -2,17 +2,12 @@
 title: Entender os motivos para atualizar
 description: Um detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager.
 version: 6.5
-sub-product: ativos, gerenciador de nuvem, comércio, serviços de conteúdo, Dynamic-media, formulários, fundação, telas, sites
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
-topic: Atualização
+topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 3%
 
 ---
@@ -504,7 +499,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pela AEM. Al
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Sistema de estilos</a>: </strong>
+            <td><strong>Sistema de estilos: </strong>
             aumente a reutilização AEM componente definindo sua aparência visual usando o sistema de estilo no contexto.</td>
             <td> </td>
             <td> </td>
@@ -559,7 +554,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pela AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Fragmentos de conteúdo</a>: </strong>
+            <td><strong>Fragmentos de conteúdo: </strong>
             crie e prepare o conteúdo editorial dissociado da apresentação para fácil reutilização.</td>
             <td> </td>
             <td> </td>
@@ -581,7 +576,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pela AEM. Al
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Serviços de conteúdo</a>: </strong>
+            <td><strong>Serviços de conteúdo: </strong>
             exporte conteúdo de AEM como JSON para consumo em dispositivos e aplicativos.</td>
             <td> </td>
             <td> </td>
@@ -636,7 +631,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pela AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Telas</a>: </strong>
+            <td><strong>Telas: </strong>
             gerencie experiências para sinalização digital e quiosques.</td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pela AEM. A
 
 Abaixo está uma matriz dos principais recursos do complemento AEM Forms oferecidos pela AEM. Alguns desses recursos foram introduzidos em melhorias adicionais de versões anteriores, adicionadas em cada versão.
 
-+ [Notas de versão do AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***✔ <sup>+melhorias </sup> significativas no recurso nesta versão.***
 
 ***✔ <sup></sup> SPdenota que o recurso está disponível por meio de um Service Pack ou Feature Pack.***
@@ -1149,7 +1142,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Forms ofereci
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Fluxo de trabalho (J2EE) para processamento do Forms</a>: </strong>
+            <td><strong>Fluxo de trabalho (J2EE) para processamento Forms: </strong>
             crie formulários complexos/fluxos de trabalho centrados em documentos utilizando um IDE intuitivo.</td>
             <td></td>
             <td>✔</td>
@@ -1188,8 +1181,6 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Forms ofereci
 ## Recursos das comunidades
 
 Abaixo está uma matriz dos principais recursos do complemento AEM Communities oferecidos pela AEM. Alguns desses recursos foram introduzidos em melhorias adicionais de versões anteriores, adicionadas em cada versão.
-
-+ [Resumo do novo recurso do AEM Communities](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***✔ <sup>+melhorias </sup> significativas no recurso nesta versão.***
 
@@ -1629,7 +1620,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Communities o
     </tbody>
 </table>
 
-A AEM Communities adiciona [aprimoramentos](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) por meio de versões para permitir que as organizações se envolvam e habilitem seus usuários, ao:
+A AEM Communities adiciona aprimoramentos por meio de lançamentos para permitir que as organizações envolvam e habilitem seus usuários, ao:
 
 + **@** mentionsupport em conteúdo gerado pelo usuário.
 + Melhorias de acessibilidade por meio da **Navegação do teclado** nos componentes **Ativação**.
