@@ -1,15 +1,15 @@
 ---
 title: Personalização usando AEM fragmentos de experiência e Adobe Target
-seo-title: Personalização usando Fragmentos de experiência do Adobe Experience Manager (AEM) e Adobe Target
+seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando Fragmentos de experiência do Adobe Experience Manager e Adobe Target.
-seo-description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando Fragmentos de experiência do Adobe Experience Manager e Adobe Target.
-feature: Fragmentos de experiência
-topic: Personalização
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e para ex
 * **AEM**
    * [AEM criar e publicar ](./implementation.md#getting-aem) instruções no localhost 4502 e 4503, respectivamente.
 * **Experience Cloud**
-   * Acesso à Adobe Experience Cloud de suas organizações - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Acesso à Adobe Experience Cloud de suas organizações - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud provisionado com as seguintes soluções
       * [Adobe Target](https://experiencecloud.adobe.com)
 
@@ -79,7 +79,7 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e para ex
 
 ### Criar um público-alvo com geolocalização {#marketer-audience}
 
-1. Navegue até sua organização [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experiencecloud.adobe.com)
+1. Navegue até sua organização [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`<https://<yourcompany>.experiencecloud.adobe.com`)
 1. Faça logon usando sua Adobe ID e verifique se você está na organização correta.
 1. No alternador de soluções, clique em **Target** e em **launch** Adobe Target.
 
