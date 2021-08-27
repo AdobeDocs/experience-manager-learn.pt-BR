@@ -2,13 +2,13 @@
 title: Criação do seu primeiro pacote OSGi com o AEM Forms
 description: Crie seu primeiro pacote OSGi usando Maven e Eclipse
 version: 6.4,6.5
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Abra uma nova janela de prompt de comando e digite: `java -version`. Você deve 
 O Maven é uma ferramenta de automação de compilação usada principalmente para projetos Java. Siga as etapas a seguir para instalar o maven em seu sistema local.
 
 * Crie uma pasta chamada `maven` na unidade C
-* Baixe o [arquivo zip binário](http://maven.apache.org/download.cgi)
+* Baixe o [arquivo zip binário](https://maven.apache.org/download.cgi)
 * Extraia o conteúdo do arquivo zip em `c:\maven`
 * Crie uma variável de ambiente chamada `M2_HOME` com um valor de `C:\maven\apache-maven-3.6.0`. No meu caso, a versão **mvn** é 3.6.0. No momento da escrita deste artigo, a versão mais recente do maven é 3.6.3
 * Adicione o `%M2_HOME%\bin` ao seu caminho

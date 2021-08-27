@@ -1,15 +1,15 @@
 ---
 title: Adicionar itens ao componente de grupo de opções
 description: Adicionar itens ao componente de grupo de opções dinamicamente
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha do Adaptive Forms, como CheckBox, botão de opção e lista de imagens.
 
-[Esse recurso está disponível no servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0) de amostras. Procure por itens da caixa de seleção dinâmica e clique em &quot;Testar&quot;
+[Esse recurso está disponível no servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) de amostras. Procure por itens da caixa de seleção dinâmica e clique em &quot;Testar&quot;
 
 
 Você pode adicionar itens usando o editor visual, bem como o editor de códigos, dependendo do seu caso de uso.
@@ -91,7 +91,7 @@ Para experimentar isso em seu sistema:
 
 * [Baixar os ativos](assets/usingthevisualeditor.zip)
 * Instale o Tomcat se ainda não o tiver. [Instruções para instalar o tomcat estão disponíveis aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Implantar arquivo SampleRest.war no Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Implante o arquivo SampleRest.war contido neste arquivo zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
 * [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
 * [Visualizar formulários](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)

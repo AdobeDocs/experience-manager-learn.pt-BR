@@ -1,20 +1,20 @@
 ---
 title: Personalização da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais de fluxo de trabalho usando modelo sightly
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 3%
+source-wordcount: '289'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->Este artigo supõe que você tenha instalado o [workflow de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) nesta série.
+>Este artigo supõe que você tenha instalado o [workflow de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) nesta série.
 
 * [Faça logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo sightly](assets/sightly-template.zip)

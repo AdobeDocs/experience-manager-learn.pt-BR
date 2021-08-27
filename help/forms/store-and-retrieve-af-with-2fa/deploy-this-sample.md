@@ -1,17 +1,17 @@
 ---
 title: Implantar a amostra
 description: Obter caso de uso em execução na sua instância local do AEM Forms
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,8 @@ Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para e
 ## Implante os seguintes pacotes OSGi
 
 Implante o pacote que tem o código [para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Implante o pacote [DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Baixe e descompacte o [developing-with-service-user.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/developing-with-service-user.zip).
+Implante o arquivo DevelopingWithServiceUser.jar usando o console da Web Felix.
 
 ## Implantar a biblioteca do cliente
 
