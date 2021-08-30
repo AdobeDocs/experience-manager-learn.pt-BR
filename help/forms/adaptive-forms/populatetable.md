@@ -6,9 +6,9 @@ version: 6.4,6.5
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ A Linha1 está configurada para crescer, dependendo dos dados retornados pela ch
 ## Implante no servidor
 
 [Instale o Tomcat conforme especificado ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[aquiImplante o arquivo SampleRest.war contido neste ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
-[arquivo zipInstale os ativos  ](assets/amortizationschedule.zip) usando AEM gerenciador de pacotes 
+[aquiImplante o arquivo SampleRest.war contido neste arquivo zip no seu ](assets/sample-rest.zip)
+[TomcatInstale os ativos  ](assets/amortizationschedule.zip) usando AEM gerenciador de pacotes 
 [Abra o ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-Formulário de agendamento de personalizaçãoInsira o valor apropriado e clique em calcular Agendamento de Amortização deve ser preenchido em seu formulário
+Formulário de agendamento de amortizaçãoInsira o valor apropriado e clique em calcular Agendamento de Amortização deve ser preenchido em seu formulário
 

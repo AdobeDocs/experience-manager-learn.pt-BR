@@ -1,14 +1,14 @@
 ---
 title: Etapa de processo personalizada
 description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
-feature: Fluxo de trabalho
+feature: Workflow
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Para realizar o caso de uso acima, você normalmente gravará um serviço OSGi q
 
 ## Criar projeto Maven
 
-O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas são listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
+O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas são listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
 
 
 ### Criar classe que implemente o WorkflowProcess
