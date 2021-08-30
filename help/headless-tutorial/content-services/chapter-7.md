@@ -1,13 +1,13 @@
 ---
 title: Capítulo 7 - Consumo AEM Content Services a partir de um aplicativo móvel - Content Services
 description: O Capítulo 7 do tutorial executa o aplicativo móvel do Android para consumir conteúdo criado AEM Content Services.
-feature: Fragmentos de conteúdo, APIs
-topic: Sem periféricos, gerenciamento de conteúdo
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -205,4 +205,4 @@ Para saber mais sobre os Serviços de conteúdo e o AEM como um CMS sem cabeçal
 * [Biblioteca de componentes principais do WCM AEM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM Projeto GitHub dos Componentes principais do WCM](https://github.com/adobe/aem-core-wcm-components)
 * [Componentes principais do WCM AEM - Pergunte ao especialista](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
-* [Amostra de código do exportador de componentes](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
+* [Amostra de código do exportador de componentes](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
