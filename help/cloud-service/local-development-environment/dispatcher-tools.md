@@ -1,21 +1,16 @@
 ---
 title: Configurar ferramentas do Dispatcher para o AEM como um desenvolvimento de Cloud Service
 description: AEM ferramentas do Dispatcher do SDK facilita o desenvolvimento local de projetos do Adobe Experience Manager (AEM), facilitando a instalação, a execução e a solução de problemas do Dispatcher localmente.
-sub-product: fundação
-feature: Dispatcher, Ferramentas do Desenvolvedor
-topics: development, caching, security
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4679
-thumbnail: 30603.jpg
-topic: Desenvolvimento
+version: Cloud Service
+topic: Development
+feature: Dispatcher, Developer Tools
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4679
+thumbnail: 30603.jpg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1380'
 ht-degree: 2%
 
 ---
@@ -35,7 +30,7 @@ O Dispatcher do Adobe Experience Manager (AEM) é um módulo de servidor Web Apa
 O AEM como Cloud Service SDK inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são compostas por:
 
 + um conjunto de linhas de base do servidor Web Apache HTTP e arquivos de configuração do Dispatcher, localizados em `.../dispatcher-sdk-x.x.x/src`
-+ uma ferramenta CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
++ uma ferramenta CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validate`
 + uma ferramenta CLI de geração de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validator`
 + uma ferramenta CLI de implantação de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + uma imagem Docker que executa o servidor Web Apache HTTP com o módulo Dispatcher
@@ -48,7 +43,7 @@ Observe que `~` é usado como abreviado para o Diretório do usuário. No Window
 
 ## Pré-requisitos
 
-1. Os usuários do Windows devem usar o Windows 10 Professional
+1. Os usuários do Windows devem usar o Windows 10 Professional (ou uma versão compatível com Docker)
 1. Instale o [Experience Manager Publish Quickstart Jar](./aem-runtime.md) na máquina de desenvolvimento local.
    + Opcionalmente, instale o [AEM site da Web de referência](https://github.com/adobe/aem-guides-wknd/releases) no serviço de publicação do AEM local. Este site é usado neste tutorial para visualizar um Dispatcher em funcionamento.
 1. Instale e inicie a versão mais recente de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) na máquina de desenvolvimento local.
@@ -62,7 +57,6 @@ Se o AEM como Cloud Service SDK já tiver sido baixado para [configurar o AEM de
 1. Faça logon em [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=&amp;p.offset=0&amp;p.limit=1) com sua Adobe ID
    + Sua organização do Adobe __deve__ ser provisionada para AEM como Cloud Service para baixar o AEM como um SDK do Cloud Service
 1. Clique na linha de resultado mais recente __AEM SDK__ para baixar
-   + Verifique se AEM as Ferramentas do Dispatcher v2.0.29+ do SDK estão anotadas na descrição de download
 
 ## Extraia as Ferramentas do Dispatcher do zip AEM SDK
 
@@ -93,15 +87,11 @@ As Ferramentas do Dispatcher fornecem um conjunto de arquivos de configuração 
 
 Esses arquivos devem ser copiados em um projeto Experience Manager Maven para a pasta `dispatcher/src`, se ainda não existirem no projeto Experience Manager Maven.
 
->[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
-
-*Este vídeo usa o macOS para fins ilustrativos. Os comandos equivalentes do Windows/Linux podem ser usados para obter resultados semelhantes*
-
 Uma descrição completa dos arquivos de configuração está disponível nas Ferramentas do Dispatcher descompactadas como `dispatcher-sdk-x.x.x/docs/Config.html`.
 
 ## Validar configurações
 
-Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) podem ser validadas usando o script `validate` (não confundir com o `validator` executável).
+Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) podem ser validadas usando o script `validate` (não confundir com o `validator` executável). O script `validate` fornece uma maneira conveniente de executar as [3 fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/validation-debug.html?lang=en#local-validation-flexible-mode) do `validator`.
 
 + Uso:
    + Windows: `bin\validate src`
@@ -109,55 +99,36 @@ Opcionalmente, as configurações do Dispatcher e do Apache Web Server (via `htt
 
 ## Executar o Dispatcher localmente
 
-Para executar o Dispatcher localmente, os arquivos de configuração do Dispatcher devem ser gerados usando a ferramenta CLI `validator` das Ferramentas do Dispatcher.
+AEM o Dispatcher é executado localmente usando o Docker em relação aos arquivos de configuração do Dispatcher e do Apache Web Server.`src`
 
 + Uso:
-   + Windows: `bin\validator full -d out src`
-   + macOS / Linux: `./bin/validator full -d ./out ./src`
+   + Windows: `bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+   + macOS / Linux: `./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
 
-Este comando transpila as configurações em um conjunto de arquivos compatível com o Apache HTTP Web Server do contêiner Docker.
-
-Depois de geradas, as configurações transpiladas são usadas para executar o Dispatcher localmente no container Docker. É importante garantir que as configurações mais recentes tenham sido validadas usando a saída `validate` __e__ usando a opção `-d` do validador.
-
-+ Uso:
-   + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-   + macOS / Linux: `./bin/docker_run.sh <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-
-O `aem-publish-host` pode ser definido como `host.docker.internal`, um nome DNS especial fornecido pelo Docker no container que resolve o IP da máquina host. Se `host.docker.internal` não for resolvido, consulte a seção [solução de problemas](#troubleshooting-host-docker-internal) abaixo.
+O `<aem-publish-host>` pode ser definido como `host.docker.internal`, um nome DNS especial fornecido pelo Docker no container que resolve o IP da máquina host. Se `host.docker.internal` não for resolvido, consulte a seção [solução de problemas](#troubleshooting-host-docker-internal) abaixo.
 
 Por exemplo, para iniciar o contêiner do Dispatcher Docker usando os arquivos de configuração padrão fornecidos pelas Ferramentas do Dispatcher:
 
-1. Gere o `deployment-folder`, chamado `out` por convenção, do zero sempre que uma configuração for alterada:
+Inicie o contêiner do Dispatcher Docker fornecendo o caminho para a pasta src de configuração do Dispatcher:
 
-   + Windows: `del /Q out && bin\validator full -d out src`
-   + macOS / Linux: `rm -rf ./out && ./bin/validator full -d ./out ./src`
-
-2. (Re-)Inicie o contêiner do Dispatcher Docker fornecendo o caminho para a pasta de implantação:
-
-   + Windows: `bin\docker_run out host.docker.internal:4503 8080`
-   + macOS / Linux: `./bin/docker_run.sh ./out host.docker.internal:4503 8080`
++ Windows: `bin\docker_run src host.docker.internal:4503 8080`
++ macOS / Linux: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
 
 O AEM como um serviço de publicação do SDK do Cloud Service, executado localmente na porta 4503, estará disponível por meio do Dispatcher em `http://localhost:8080`.
 
-Para executar as Ferramentas do Dispatcher em uma configuração do Dispatcher de um projeto do Experience Manager, basta gerar o `deployment-folder` usando a pasta `dispatcher/src` do projeto.
+Para executar as Ferramentas do Dispatcher em relação à configuração do Dispatcher de um projeto do Experience Manager, aponte para a pasta `dispatcher/src` do seu projeto.
 
 + Windows:
 
    ```shell
-   $ del -/Q out && bin\validator full -d out <User Directory>/code/my-project/dispatcher/src
-   $ bin\docker_run out host.docker.internal:4503 8080
+   $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
    ```
 
 + macOS / Linux:
 
    ```shell
-   $ rm -rf ./out && ./bin/validator full -d ./out ~/code/my-project/dispatcher/src
-   $ ./bin/docker_run.sh ./out host.docker.internal:4503 8080
+   $ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
    ```
-
->[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
-
-*Este vídeo usa o macOS para fins ilustrativos. Os comandos equivalentes do Windows/Linux podem ser usados para obter resultados semelhantes*
 
 ## Logs de ferramentas do Dispatcher
 
@@ -180,20 +151,14 @@ Um ou vários parâmetros podem ser passados para `docker_run`
 + Windows:
 
    ```shell
-   $ bin\validator full -d out <User Directory>/code/my-project/dispatcher/src
-   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run out host.docker.internal:4503 8080
+   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
    ```
 
 + macOS / Linux:
 
    ```shell
-   $ ./bin/validator full -d out ~/code/my-project/dispatcher/src
-   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh out host.docker.internal:4503 8080
+   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
    ```
-
->[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
-
-*Este vídeo usa o macOS para fins ilustrativos. Os comandos equivalentes do Windows/Linux podem ser usados para obter resultados semelhantes*
 
 ### Acesso ao arquivo de log
 
@@ -222,44 +187,28 @@ _Observe que a própria versão das Ferramentas do Dispatcher não corresponder�
 
 > A partir do Docker 18.03, nossa recomendação é se conectar ao nome DNS especial host.docker.internal, que resolve para o endereço IP interno usado pelo host
 
-Se, quando `bin/docker_run out host.docker.internal:4503 8080` resultar na mensagem __Aguardando até que host.docker.internal esteja disponível__, então:
+Se, quando `bin/docker_run src host.docker.internal:4503 8080` resultar na mensagem __Aguardando até que host.docker.internal esteja disponível__, então:
 
 1. Verifique se a versão instalada do Docker é 18.03 ou superior
 2. Você pode ter uma máquina local configurada que está impedindo o registro/a resolução do nome `host.docker.internal`. Em vez disso, use seu IP local.
    + Windows:
       + No Prompt de Comando, execute `ipconfig` e registre o __Endereço IPv4__ do host.
       + Em seguida, execute `docker_run` usando este endereço IP:
-         `bin\docker_run out <HOST IP>:4503 8080`
+         `bin\docker_run src <HOST IP>:4503 8080`
    + macOS / Linux:
       + No Terminal, execute `ifconfig` e registre o endereço IP do Host __inet__, geralmente o dispositivo __en0__.
       + Em seguida, execute `docker_run` usando o endereço IP do host:
-         `bin/docker_run.sh out <HOST IP>:4503 8080`
+         `bin/docker_run.sh src <HOST IP>:4503 8080`
 
 #### Exemplo de erro
 
 ```shell
-$ docker_run out host.docker.internal:4503 8080
+$ docker_run src host.docker.internal:4503 8080
 
 Running script /docker_entrypoint.d/10-check-environment.sh
 Running script /docker_entrypoint.d/20-create-docroots.sh
 Running script /docker_entrypoint.d/30-wait-for-backend.sh
 Waiting until host.docker.internal is available
-```
-
-### docker_run resulta no erro &#39;**: Pasta de implantação não encontrada&#39;
-
-Ao executar `docker_run.cmd`, é exibido um erro que lê __** erro: Pasta de implantação não encontrada:__. Isso normalmente ocorre porque há espaços no caminho. Se possível, remova os espaços na pasta ou mova a pasta `aem-sdk` para um caminho que não contenha espaços.
-
-Por exemplo, as pastas de usuário do Windows geralmente são `<First name> <Last name>`, com um espaço entre elas. No exemplo abaixo, a pasta `...\My User\...` contém um espaço que quebra a execução local das Ferramentas do Dispatcher `docker_run`. Se os espaços estiverem em uma pasta de usuário do Windows, não tente renomear essa pasta, pois ela quebrará o Windows, em vez disso, mova a pasta `aem-sdk` para um novo local que o usuário tenha permissões para modificar totalmente. Observe que as instruções que consideram que a pasta `aem-sdk` está no diretório base do usuário precisarão ser ajustadas para o novo local.
-
-#### Exemplo de erro
-
-```shell
-$ \Users\My User\aem-sdk\dispatcher>bin\docker_run.cmd out host.internal.docker:4503 8080
-
-'User\aem-sdk\dispatcher\out\*' is not recognized as an internal or external command,
-operable program or batch file.
-** error: Deployment folder not found: c:\Users\My User\aem-sdk\dispatcher\out
 ```
 
 ### docker_run falha ao iniciar no Windows{#troubleshooting-windows-compatible}
@@ -269,7 +218,7 @@ A execução de `docker_run` no Windows pode resultar no seguinte erro, impedind
 #### Exemplo de erro
 
 ```shell
-$ \Users\MyUser\aem-sdk\dispatcher>bin\docker_run out host.docker.internal:4503 8080
+$ \Users\MyUser\aem-sdk\dispatcher>bin\docker_run src host.docker.internal:4503 8080
 
 Running script /docker_entrypoint.d/10-check-environment.sh
 Running script /docker_entrypoint.d/20-create-docroots.sh

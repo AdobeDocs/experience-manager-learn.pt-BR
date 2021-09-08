@@ -1,20 +1,16 @@
 ---
 title: Configurar Tempo de Execução de AEM Local para AEM como um Desenvolvimento de Cloud Service
 description: Configure o Local AEM Runtime usando o AEM como o Quickstart Jar do Cloud Service SDK.
-feature: Ferramentas do desenvolvedor
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Developer Tools
+version: Cloud Service
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1729'
 ht-degree: 2%
 
 ---

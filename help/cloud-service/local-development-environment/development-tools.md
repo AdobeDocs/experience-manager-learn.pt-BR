@@ -2,17 +2,13 @@
 title: Configurar as ferramentas de desenvolvimento para o AEM como um Cloud Service development
 description: Crie uma máquina de desenvolvimento local com todas as ferramentas básicas necessárias para desenvolver em relação a AEM local.
 feature: Developer Tools
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+version: Cloud Service
 kt: 4267
 thumbnail: 25907.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 2%
@@ -120,7 +116,7 @@ O Apache Maven é a ferramenta de linha de comando Java de código aberto usada 
 
 ## Configurar a CLI do Adobe I/O{#aio-cli}
 
-O [Adobe I/O CLI](https://github.com/adobe/aio-cli), ou `aio`, fornece acesso de linha de comando a uma variedade de serviços do Adobe, incluindo [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). A CLI do Adobe I/O desempenha um papel integral no desenvolvimento no AEM como Cloud Service, pois oferece aos desenvolvedores a capacidade de:
+O [Adobe I/O CLI](https://github.com/adobe/aio-cli), ou `aio`, fornece acesso de linha de comando a uma variedade de serviços da Adobe, incluindo [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). A CLI do Adobe I/O desempenha um papel integral no desenvolvimento no AEM como Cloud Service, pois oferece aos desenvolvedores a capacidade de:
 
 + Logs de email do AEM as a Cloud Services services
 + Gerenciar pipelines do Cloud Manager da CLI
