@@ -3,18 +3,17 @@ title: Criação de conteúdo usando o Assets Essentials
 description: Saiba como fazer upload de ativos, criar versões e até editar ativos usando o Adobe Photoshop Express.
 version: cloud-service
 feature: Assets Essentials
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
 kt: 7914
 thumbnail: 335746.jpeg
-source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
+source-git-commit: 7fde77ac287d01ce2ad4924b2b10939d8df4c3e5
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 4%
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
-
 
 # Criação de conteúdo usando o Assets Essentials
 
