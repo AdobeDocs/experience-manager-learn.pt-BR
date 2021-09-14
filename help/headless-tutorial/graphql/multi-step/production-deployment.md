@@ -1,21 +1,21 @@
 ---
 title: Implantação de produção usando um serviço de publicação do AEM - Introdução AEM headless - GraphQL
 description: Saiba mais sobre os serviços de Autor e Publicação do AEM e o padrão de implantação recomendado para aplicativos sem cabeçalho. Neste tutorial, aprenda a usar variáveis de ambiente para alterar dinamicamente um ponto de extremidade GraphQL com base no ambiente de destino. Saiba como configurar corretamente o AEM para o CORS (Cross-Origin resource sharing).
-version: cloud-service
-feature: Fragmentos de conteúdo, API GraphQL
-topic: Sem periféricos, gerenciamento de conteúdo
+version: Cloud Service
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 1%
 
 ---
-
 
 # Implantação de produção com um serviço de publicação do AEM
 

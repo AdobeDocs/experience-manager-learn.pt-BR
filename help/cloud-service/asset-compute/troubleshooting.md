@@ -1,9 +1,9 @@
 ---
-title: Solucionar problemas de extensibilidade do Asset Compute para o AEM Assets
-description: Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores do Asset Compute personalizados para o AEM Assets.
+title: Solução de problemas de extensibilidade do Asset compute para AEM Assets
+description: Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores personalizados do Asset compute para o AEM Assets.
 feature: Asset Compute Microservices
 topics: renditions, metadata, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,18 +12,17 @@ thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
 
+# Solução de problemas de extensibilidade do Asset compute
 
-# Solucionar problemas de extensibilidade do Asset Compute
-
-Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores do Asset Compute personalizados para o AEM Assets.
+Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores personalizados do Asset compute para o AEM Assets.
 
 ## Desenvolver{#develop}
 
@@ -38,14 +37,14 @@ Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluç
 
 ## Ferramenta de desenvolvimento{#development-tool}
 
-### Arquivo Console.json ausente do projeto do Asset Compute{#missing-console-json}
+### Arquivo Console.json ausente do projeto do Asset compute{#missing-console-json}
 
-+ __Erro:__ Erro: Arquivos necessários ausentes na validação (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) em async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
-+ __Causa:__ O  `console.json` arquivo está ausente da raiz do projeto do Asset Compute
-+ __Solução:__ Baixe um novo  `console.json` de seu projeto do Adobe I/O
-   1. No console.adobe.io, abra o projeto do Adobe I/O em que o projeto do Asset Compute está configurado para usar
++ __Erro:__ Erro: Arquivos necessários ausentes na validação (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.:XX:jsYY) em async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.:XX:jsYY)
++ __Causa:__ O  `console.json` arquivo está ausente na raiz do projeto do Asset compute
++ __Solução:__ Baixe um novo  `console.json` formulário do projeto Adobe I/O
+   1. No console.adobe.io, abra o projeto do Adobe I/O que o projeto do Asset compute está configurado para usar
    1. Toque no botão __Download__ no canto superior direito
-   1. Salve o arquivo baixado na raiz do projeto do Asset Compute usando o nome de arquivo `console.json`
+   1. Salve o arquivo baixado na raiz do projeto do Asset compute usando o nome do arquivo `console.json`
 
 ### Recuo YAML incorreto em manifest.yml{#incorrect-yaml-indentation}
 
@@ -55,7 +54,7 @@ Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluç
 
 ### o limite memorySize está definido como muito baixo{#memorysize-limit-is-set-too-low}
 
-+ __Erro:__  OpenWhiskError do Servidor de Desenvolvimento Local: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true HTTP 400 retornado (Solicitação incorreta) —> &quot;O conteúdo da solicitação foi malformado:requisito falhou: memória 64 MB abaixo do limite permitido de 134217728 B&quot;
++ __Erro:__  OpenWhiskError do Servidor de Desenvolvimento Local: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true HTTP 400 retornado (Solicitação inválida) —> &quot;O conteúdo da solicitação foi malformado:requisito falhou: memória 64 MB abaixo do limite permitido de 134217728 B&quot;
 + __Causa:__ Um  `memorySize` limite para o trabalhador no  `manifest.yml` foi definido abaixo do limite mínimo permitido, conforme relatado pela mensagem de erro em bytes.
 + __Solução:__  analise os  `memorySize` limites na  `manifest.yml` e verifique se eles são todos maiores que o limite mínimo permitido.
 
@@ -67,7 +66,7 @@ Veja a seguir um índice de problemas e erros comuns, juntamente com as resoluç
 
 ### Lista suspensa de arquivos de origem incorreta{#source-files-dropdown-incorrect}
 
-A Ferramenta de Desenvolvimento do Asset Compute pode inserir um estado em que extrai dados obsoletos, e é mais notável na lista suspensa __Source file__ exibindo itens incorretos.
+A Ferramenta de desenvolvimento de asset compute pode inserir um estado onde extrai dados obsoletos e é mais notável na lista suspensa __Source file__ exibindo itens incorretos.
 
 + __Erro:__ a lista suspensa do arquivo de origem exibe itens incorretos.
 + __Causa:__ o estado obsoleto do navegador em cache causa o
@@ -75,9 +74,9 @@ A Ferramenta de Desenvolvimento do Asset Compute pode inserir um estado em que e
 
 ### Parâmetro de consulta devToolToken ausente ou inválido{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Erro:__  notificação &quot;Não autorizado&quot; na Ferramenta de desenvolvimento Asset Compute
++ __Erro:__  notificação &quot;Não autorizado&quot; na Ferramenta de Desenvolvimento de Assets compute
 + __Causa:__ `devToolToken` está ausente ou é inválido
-+ __Solução:__ feche a janela do navegador da Ferramenta de desenvolvimento do Asset Compute, encerre todos os processos da Ferramenta de desenvolvimento em execução iniciados pelo  `aio app run` comando e reinicie a Ferramenta de desenvolvimento (usando  `aio app run`).
++ __Solução:__ feche a janela do navegador da Ferramenta de desenvolvimento de Assets compute, encerre todos os processos da Ferramenta de desenvolvimento em execução iniciados por meio do  `aio app run` comando e reinicie a Ferramenta de desenvolvimento (usando  `aio app run`).
 
 ### Não é possível remover arquivos de origem{#unable-to-remove-source-files}
 
@@ -101,36 +100,36 @@ A Ferramenta de Desenvolvimento do Asset Compute pode inserir um estado em que e
 
 + __Erro:__ Falha: A representação &#39;rendition.xxx&#39; não é como esperado.
 + __Causa:__ o trabalhador gera uma representação que não é a mesma  `rendition.<extension>` fornecida no caso de teste.
-   + Se o arquivo esperado `rendition.<extension>` não for criado exatamente da mesma maneira que a representação gerada localmente no caso de teste, o teste poderá falhar, pois poderá haver alguma diferença nos bits. Por exemplo, se o trabalhador do Asset Compute alterar o contraste usando APIs e o resultado esperado for criado ajustando o contraste no Adobe Photoshop CC, os arquivos poderão parecer os mesmos, mas pequenas variações nos bits poderão ser diferentes.
+   + Se o arquivo esperado `rendition.<extension>` não for criado exatamente da mesma maneira que a representação gerada localmente no caso de teste, o teste poderá falhar, pois poderá haver alguma diferença nos bits. Por exemplo, se o trabalhador do Asset compute alterar o contraste usando APIs e o resultado esperado for criado ajustando o contraste no Adobe Photoshop CC, os arquivos poderão parecer os mesmos, mas pequenas variações nos bits poderão ser diferentes.
 + __Solução:__ analise a saída da representação do teste navegando até  `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`e compare-a com o arquivo de representação esperado no caso de teste. Para criar um ativo esperado exato, faça o seguinte:
    + Use a ferramenta de desenvolvimento para gerar uma representação, validá-la e usá-la como o arquivo de representação esperado
    + Ou valide o arquivo gerado pelo teste em `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, valide-o e use-o como o arquivo de representação esperado
 
 ## Depurar
 
-### O depurador não anexa{#debugger-does-not-attach}
+### O Debugger não é anexado{#debugger-does-not-attach}
 
 + __Erro__: Erro ao processar inicialização: Erro: Não foi possível conectar-se ao destino de depuração em...
 + __Causa__: O Docker Desktop não está sendo executado no sistema local. Verifique isso revisando o Console de Depuração do Código VS (Exibir > Console de Depuração), confirmando que esse erro é relatado.
 + __Resolução__: Inicie o  [Docker Desktop e confirme se as imagens Docker necessárias estão instaladas](./set-up/development-environment.md#docker).
 
-### Pontos de interrupção que não estão pausando{#breakpoints-no-pausing}
+### Pontos de interrupção não pausados{#breakpoints-no-pausing}
 
-+ __Erro__: Ao executar o trabalhador do Asset Compute na Ferramenta de desenvolvimento que pode ser depurada, o Código VS não é pausado nos pontos de interrupção.
++ __Erro__: Ao executar o trabalho do Asset compute a partir da Ferramenta de desenvolvimento que pode ser depurada, o Código VS não é pausado nos pontos de interrupção.
 
 #### Depurador de código VS não anexado{#vs-code-debugger-not-attached}
 
 + __Causa:__ o depurador do Código VS foi interrompido/desconectado.
 + __Solução:__ Reinicie o depurador de Código VS e verifique se ele é anexado assistindo ao console Saída de Depuração de Código VS (Exibir > Console de Depuração)
 
-#### Depurador de código VS anexado após a execução do trabalhador iniciada{#vs-code-debugger-attached-after-worker-execution-began}
+#### Depurador de código VS anexado após o início da execução do trabalhador{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Causa:__ o depurador de Código VS não foi anexado antes de tocar em  ____ Executar Ferramenta de Desenvolvimento.
-+ __Solução:__ certifique-se de que o depurador foi anexado revisando o Console de Depuração do Código VS (Exibir > Console de Depuração) e, em seguida, execute novamente o trabalhador do Asset Compute na Ferramenta de Desenvolvimento.
++ __Solução:__ verifique se o depurador foi anexado revisando o Console de Depuração do Código VS (Exibir > Console de Depuração) e, em seguida, execute novamente o trabalhador do Asset compute na Ferramenta de Desenvolvimento.
 
-### O tempo limite do trabalhador expira ao depurar{#worker-times-out-while-debugging}
+### O tempo limite do trabalho é excedido durante a depuração{#worker-times-out-while-debugging}
 
-+ __Erro__: O Console de Depuração relata &quot;A ação expirará em -XXX milissegundos&quot; ou a visualização da  [representação da Ferramenta de Desenvolvimento do ](./develop/development-tool.md) Asset Compute girará indefinidamente ou
++ __Erro__: O Console de Depuração relata &quot;A ação expirará em -XXX milissegundos&quot; ou a visualização da  [representação da Ferramenta de Desenvolvimento de ](./develop/development-tool.md) Assets compute gira indefinidamente ou
 + __Causa__: O tempo limite do trabalhador, conforme definido no  [manifest.](./develop/manifest.md) ymlis, foi excedido durante a depuração.
 + __Resolução__: Aumente temporariamente o tempo limite do trabalhador no  [manifest.](./develop/manifest.md) ymlor para acelerar as atividades de depuração.
 
@@ -166,6 +165,4 @@ A Ferramenta de Desenvolvimento do Asset Compute pode inserir um estado em que e
 
 + __Erro:__ Selo de falha de processamento de ativos exibido no ativo
 + __Causa:__ Ocorreu um erro na execução do trabalhador personalizado
-+ __Solução:__ Siga as instruções em  [depurar a ](./test-debug/debug.md#aio-app-logs) ativação do Adobe I/O Runtime usando o  `aio app logs`.
-
-
++ __Solução:__ siga as instruções em  [depurar a ](./test-debug/debug.md#aio-app-logs) ativação do Adobe I/O Runtime usando o  `aio app logs`.

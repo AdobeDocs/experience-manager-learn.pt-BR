@@ -1,20 +1,20 @@
 ---
 title: Uso do Editor de SPA com AEM Sites
 description: AEM estrutura do editor de Aplicativo de página única fornece aos autores a capacidade de editar conteúdo para um Aplicativo de página única ou SPA. Desenvolvedores que usam estruturas React ou Angular criam um SPA e mapeiam áreas do SPA para componentes AEM, permitindo que os autores usem ferramentas de edição conhecidas do AEM Sites.
-version: 6.4, 6.5, cloud-service
+version: 6.4, 6.5, Cloud Service
 topic: SPA
-feature: Editor de SPA
+feature: SPA Editor
 role: Developer
 level: Beginner
 kt: 1047
 thumbnail: 22229.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # Uso do Editor de SPA com AEM Sites {#using-the-spa-editor-with-aem-sites}
 

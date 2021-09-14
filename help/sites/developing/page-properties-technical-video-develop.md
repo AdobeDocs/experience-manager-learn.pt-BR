@@ -1,24 +1,23 @@
 ---
 title: Extensão das propriedades da página no AEM Sites
-description: Saiba como estender os campos de metadados de Propriedades da página no Adobe Experience Manager Sites. Este vídeo detalha a maneira mais eficaz de fazer isso usando os recursos da Fusão de Recursos Sling.
+description: Saiba como estender os campos de metadados das Propriedades da página no Adobe Experience Manager Sites. Este vídeo detalha a maneira mais eficaz de fazer isso usando os recursos do Sling Resource Merger .
 topic: Development
 feature: Core Components
 role: Developer
-version: cloud-service
+version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
-translation-type: tm+mt
-source-git-commit: ee63be85f124bd547fcf566efe38f4af74681b21
+exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 4%
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
-
 # Extensão das propriedades da página {#extending-page-properties-in-aem-sites}
 
-Personalizar os campos de metadados para Propriedades da página é um requisito comum em qualquer implementação do Sites. Este vídeo detalha a maneira mais eficaz de fazer isso usando os recursos da Fusão de Recursos Sling.
+Personalizar os campos de metadados para as Propriedades da página é um requisito comum em qualquer implementação do Sites. Este vídeo detalha a maneira mais eficaz de fazer isso usando os recursos do Sling Resource Merger .
 
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
 

@@ -3,17 +3,17 @@ title: Etapas para configurar o AEM Assets Brand Portal
 description: Configurar o AEM Assets Brand Portal
 role: Developer
 level: Beginner
-version: cloud-service
+version: Cloud Service
 feature: Brand Portal
-topic: Desenvolvimento
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: cb68afd1-cc5f-430a-8920-9987a3466abb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 9%
+source-wordcount: '29'
+ht-degree: 0%
 
 ---
-
 
 # Configurar o AEM Assets Brand Portal
 

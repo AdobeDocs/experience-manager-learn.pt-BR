@@ -5,23 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 7383
 thumbnail: 332231.jpg
-translation-type: tm+mt
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+exl-id: 845383f2-71e4-44fb-8637-323e956b2808
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 54%
+source-wordcount: '65'
+ht-degree: 52%
 
 ---
-
 
 # Criar fragmentos de formulário adaptável
 
 O uso dos fragmentos simplifica e acelera a criação e manutenção de uma grande quantidade de formulários. Ao criar um formulário, você insere uma referência ao fragmento necessário e o fragmento aparece no formulário.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332231?quality=12&learn=on)
-

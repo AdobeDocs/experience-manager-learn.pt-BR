@@ -1,24 +1,24 @@
 ---
 title: Extensibilidade de microsserviços do Asset compute para o AEM as a Cloud Service
 description: Este tutorial aborda a criação de um trabalhador do Asset compute simples que cria uma representação de ativos ao recortar o ativo original para um círculo e aplica contraste e brilho configuráveis. Embora o trabalhador em si seja básico, este tutorial o usa para explorar a criação, o desenvolvimento e a implantação de um Asset compute personalizado para uso com o AEM como Cloud Service.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrações, desenvolvimento
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
-
 
 # Extensibilidade de microsserviços do Asset compute
 

@@ -1,7 +1,7 @@
 ---
 title: Autenticação para AEM como Cloud Service de um aplicativo externo
 description: Explore como um aplicativo externo pode autenticar e interagir programaticamente com o AEM as a Cloud Service sobre HTTP usando tokens de acesso de desenvolvimento local e credenciais de serviço.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
 feature: APIs
@@ -9,16 +9,16 @@ activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Integrações headless
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Autenticação por token para AEM como Cloud Service
 
@@ -34,7 +34,7 @@ Certifique-se de que o seguinte esteja em vigor antes de seguir junto com este t
 
 1. Acesso ao am AEM como um ambiente Cloud Service (preferencialmente um ambiente de desenvolvimento ou um programa de sandbox)
 1. Associação no AEM as a Cloud Service environment&#39;s Author services AEM Administrator Product Profile
-1. Associação ou acesso ao Administrador Org do Adobe IMS (será necessário executar uma inicialização única das [Credenciais de Serviço](./service-credentials.md))
+1. Associação ou acesso ao Administrador da Org do Adobe IMS (será necessário executar uma inicialização única das [Credenciais de serviço](./service-credentials.md))
 1. O [Site WKND](https://github.com/adobe/aem-guides-wknd) mais recente implantado no seu ambiente Cloud Service
 
 ## Visão geral do aplicativo externo
@@ -67,7 +67,7 @@ Tokens de acesso ao desenvolvimento local são gerados para um AEM específico c
 
 ## Credenciais de Serviço
 
-As Credenciais de Serviço são as credenciais vinculadas usadas em qualquer cenário que não seja de desenvolvimento - mais obviamente de produção - que facilitam a capacidade de um aplicativo ou sistema externo de se autenticar e interagir com o AEM como um Cloud Service sobre HTTP. As próprias Credenciais de Serviço não são enviadas para AEM para autenticação, em vez disso, o aplicativo externo as usa para gerar um JWT, que é trocado por APIs do Adobe IMS _for_ um token de acesso, que pode ser usado para autenticar solicitações HTTP para AEM como Cloud Service.
+As Credenciais de Serviço são as credenciais vinculadas usadas em qualquer cenário que não seja de desenvolvimento - mais obviamente de produção - que facilitam a capacidade de um aplicativo ou sistema externo de se autenticar e interagir com o AEM como um Cloud Service sobre HTTP. As próprias Credenciais de serviço não são enviadas ao AEM para autenticação, em vez disso, o aplicativo externo as usa para gerar um JWT, que é trocado por APIs do Adobe IMS _for_ um token de acesso, que pode ser usado para autenticar solicitações HTTP para AEM como Cloud Service.
 
 + [Como usar credenciais de serviço](./service-credentials.md)
 

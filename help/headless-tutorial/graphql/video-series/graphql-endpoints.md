@@ -1,20 +1,20 @@
 ---
 title: Endpoints GraphQL
-description: 'Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade GraphQL. '
-version: cloud-service
-topic: Sem periféricos, gerenciamento de conteúdo
-feature: Fragmentos de conteúdo, API GraphQL
+description: Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade GraphQL.
+version: Cloud Service
+topic: Headless, Content Management
+feature: Content Fragments, GraphQL API
 role: Developer
 level: Beginner
 kt: 7875
 thumbnail: 333339.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 190623cc-8959-46b3-95de-e7d01bf5acdb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
-
 
 # Endpoints GraphQL
 

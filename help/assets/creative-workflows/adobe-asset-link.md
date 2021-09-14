@@ -1,19 +1,19 @@
 ---
 title: Adobe Asset Link e AEM
-description: 'Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM nas ferramentas do Creative Cloud, como Adobe XD, Photoshop, InDesign e Illustrator. '
+description: Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM nas ferramentas do Creative Cloud, como Adobe XD, Photoshop, InDesign e Illustrator.
 feature: Adobe Asset Link
-version: 6.4, 6.5, cloud-service
-topic: Gerenciamento de conteúdo
+version: 6.4, 6.5, Cloud Service
+topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 1%
 
 ---
-
 
 # Adobe Asset Link 3.0
 
@@ -21,6 +21,9 @@ Os ativos do Adobe Experience Manager podem ser usados por designers e usuários
 
 A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM em aplicativos Creative Cloud.
 
+>[!TIP]
+>
+> Saiba mais sobre como o [Programa de treinamento do Adobe XD Premium](https://spark.adobe.com/page/wU7OXv8qKGugO/) pode ajudar a integrar o Asset Link ao seu fluxo de trabalho do Adobe Experience Manager.
 
 ## Adobe Asset Link e AEM fluxos de trabalho criativos
 

@@ -1,26 +1,26 @@
 ---
 title: Uso do sistema de estilos com o AEM Sites
-seo-title: Uso do Sistema de estilos com Adobe Experience Manager, AEM Sites
+seo-title: Using the Style System with Adobe Experience Manager, AEM Sites
 description: O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
-seo-description: O Adobe Experience Manager Style System permite variações visuais de componentes sem desenvolvimento de back-end, permitindo melhor reutilização de componentes AEM e criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com AEM Componentes principais, editor de modelos e layout responsivo, oferece recursos avançados para compor experiências avançadas rapidamente.
-feature: Sistema de estilos
+seo-description: Adobe Experience Manager's Style System allows visual variations of components without back-end development, allowing better re-use of AEM components, and more versatile and efficient content authoring. The Style System, when used in conjunction with AEM's Core Components, template editor, and responsive layout, offers powerful capabilities to quickly compose rich experiences.
+feature: Style System
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 974
 thumbnail: 21750.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 4%
+source-wordcount: '196'
+ht-degree: 3%
 
 ---
-
 
 # Uso do sistema de estilos {#using-the-style-system-with-aem-sites}
 

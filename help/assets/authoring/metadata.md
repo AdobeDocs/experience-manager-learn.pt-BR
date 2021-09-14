@@ -1,20 +1,20 @@
 ---
 title: Metadados
 description: Saiba como acessar e interagir com metadados no AEM Assets.
-feature: Metadados
+feature: Metadata
 role: User
 level: Beginner
-version: cloud-service
+version: Cloud Service
 kt: 4303
 thumbnail: 32045.jpg
-topic: Gerenciamento de conteúdo
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+topic: Content Management
+exl-id: 67898b75-6307-4933-ad93-e6db2e220fd6
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 18%
+source-wordcount: '24'
+ht-degree: 8%
 
 ---
-
 
 # Metadados
 

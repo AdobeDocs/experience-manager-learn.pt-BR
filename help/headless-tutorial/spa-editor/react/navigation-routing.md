@@ -2,9 +2,9 @@
 title: Adicionar navegação e roteamento | Introdução ao Editor de SPA de AEM e React
 description: Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento para AEM páginas com o SDK do Editor SPA. A navegação dinâmica é implementada usando o React Router e React Core Components.
 sub-product: sites
-feature: Editor de SPA
+feature: SPA Editor
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 4988
@@ -12,13 +12,13 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar navegação e roteamento {#navigation-routing}
 
@@ -329,4 +329,3 @@ Em seguida, verifique como o React Router é integrado ao SPA e experimente usan
 ## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu como várias exibições no SPA podem ser suportadas com o mapeamento para AEM páginas com o SDK do Editor SPA. A navegação dinâmica foi implementada usando o Roteador React e adicionada ao componente `Header`.
-

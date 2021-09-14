@@ -1,9 +1,9 @@
 ---
-title: Depuração do SDK do AEM usando o console da Web do OSGi
-description: A inicialização rápida local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introduções no tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido pelo e funciona no AEM.
+title: Depuração AEM SDK usando o console da Web OSGi
+description: O início rápido local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introduções no tempo de execução AEM local, úteis para entender como o aplicativo é reconhecido pelo e funciona dentro do AEM.
 feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,26 +11,25 @@ kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 3%
+source-wordcount: '393'
+ht-degree: 2%
 
 ---
 
+# Depuração AEM SDK usando o console da Web OSGi
 
-# Depuração do SDK do AEM usando o console da Web do OSGi
+O início rápido local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introduções no tempo de execução AEM local, úteis para entender como o aplicativo é reconhecido pelo e funciona dentro do AEM.
 
-A inicialização rápida local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introduções no tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido pelo e funciona no AEM.
-
-O AEM fornece vários consoles OSGi, cada um fornecendo insights importantes sobre diferentes aspectos do AEM, no entanto, os itens a seguir normalmente são os mais úteis na depuração do seu aplicativo.
+O AEM fornece vários consoles OSGi, cada um fornecendo insights importantes sobre diferentes aspectos do AEM, no entanto, os seguintes são normalmente os mais úteis na depuração do seu aplicativo.
 
 ## Pacotes
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
 
-O console Pacotes é um catálogo dos pacotes OSGi e seus detalhes, implantados no AEM, juntamente com a capacidade ad hoc de iniciá-los e pará-los.
+O console Pacotes é um catálogo dos pacotes OSGi e seus detalhes, implantados em AEM, juntamente com a capacidade ad hoc de iniciá-los e pará-los.
 
 O console Pacotes está localizado em:
 
@@ -47,7 +46,7 @@ Clicar em cada pacote fornece detalhes que ajudam na depuração do aplicativo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
 
-O console Componentes é um catálogo de todos os componentes OSGi implantados no AEM e fornece todas as informações sobre eles, desde o ciclo de vida do componente OSGi definido até aos serviços OSGi aos quais eles podem fazer referência
+O console Componentes é um catálogo de todos os componentes OSGi implantados em AEM e fornece todas as informações sobre eles, desde o ciclo de vida do componente OSGi definido até aos serviços OSGi aos quais eles podem fazer referência
 
 O console Componentes está localizado em:
 

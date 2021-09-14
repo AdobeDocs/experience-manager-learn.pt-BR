@@ -1,20 +1,20 @@
 ---
 title: Uso de metadados em cascata no AEM Assets
 description: O gerenciamento avançado de metadados permite que os usuários criem regras de campo em cascata para formar relações contextuais entre os metadados no AEM Assets. O vídeo abaixo demonstra novas regras dinâmicas para requisitos de campo, visibilidade e opções contextuais. O vídeo também detalha as etapas necessárias para um administrador aplicar essas regras a um esquema de metadados personalizado.
-version: 6.3, 6.4, 6.5, cloud-service
-topic: Gerenciamento de conteúdo
-feature: Metadados
+version: 6.3, 6.4, 6.5, Cloud Service
+topic: Content Management
+feature: Metadata
 role: User
 level: Intermediate
 kt: 616
 thumbnail: 20702.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 73e793e0-a20e-4954-ba1a-471b2cd85120
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 0%
 
 ---
-
 
 # Uso de metadados em cascata no AEM Assets{#using-cascading-metadata-in-aem-assets}
 

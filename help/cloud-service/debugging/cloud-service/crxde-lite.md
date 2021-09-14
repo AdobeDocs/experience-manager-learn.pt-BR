@@ -1,9 +1,9 @@
 ---
 title: CRXDE Lite
-description: 'O CRXDE Lite é uma ferramenta clássica, mas poderosa, para depurar ambientes de desenvolvedor do AEM as a Cloud Service. O CRXDE Lite fornece um conjunto de funcionalidades que auxilia a depuração a inspecionar todos os recursos e propriedades, manipular as partes mutáveis do JCR e investigar permissões. '
+description: O CRXDE Lite é uma ferramenta clássica, mas poderosa, para depurar AEM as a Cloud Service Developer environment. O CRXDE Lite fornece um conjunto de funcionalidades que auxilia a depuração a inspecionar todos os recursos e propriedades, manipular as partes mutáveis do JCR e investigar permissões.
 feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -12,33 +12,32 @@ thumbnail: kt-5481.jpg
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
+# Depuração de AEM como um Cloud Service com CRXDE Lite
 
-# Depuração do AEM as a Cloud Service com o CRXDE Lite
+O CRXDE Lite é __SOMENTE__ disponível no AEM como um ambiente de desenvolvimento de Cloud Service (bem como o SDK AEM local).
 
-O CRXDE Lite é __SOMENTE__ disponível em ambientes de desenvolvimento do AEM as a Cloud Service (bem como no SDK local do AEM).
+## Acessar o CRXDE Lite no autor do AEM
 
-## Acesso ao CRXDE Lite no autor do AEM
+O CRXDE Lite é __acessível apenas__ em AEM como ambientes de desenvolvimento de Cloud Service e __não__ está disponível em ambientes de Preparo ou Produção.
 
-O CRXDE Lite é __acessível somente__ em ambientes de desenvolvimento do AEM as a Cloud Service e __não__ está disponível em ambientes de Preparo ou Produção.
+Para acessar o CRXDE Lite no AEM Author:
 
-Para acessar o CRXDE Lite no autor do AEM:
-
-1. Faça logon no serviço de autor do AEM do AEM as a Cloud Service.
+1. Faça logon no AEM como um serviço de Autor do AEM Cloud Service.
 1. Navegue até Ferramentas > Geral > CRXDE Lite
 
 Isso abrirá o CRXDE Lite usando as credenciais e as permissões usadas para fazer logon no AEM Author.
 
 ## Depuração de conteúdo
 
-O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível por meio do CRXDE Lite é limitado pelas permissões concedidas ao usuário, o que significa que talvez você não consiga ver ou modificar tudo no JCR dependendo do seu acesso.
+O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível por meio do CRXDE Lite é limitado pelas permissões concedidas ao usuário, o que significa que você não pode ver ou modificar tudo no JCR dependendo do seu acesso.
 
 Observe que `/apps`, `/libs` e `/oak:index` são imutáveis, o que significa que não podem ser alteradas no tempo de execução por qualquer usuário. Essas localizações no JCR só podem ser modificadas por meio de implantações de código.
 
@@ -50,18 +49,18 @@ Observe que `/apps`, `/libs` e `/oak:index` são imutáveis, o que significa que
 
 ![CRXDE Lite - Depuração de conteúdo](./assets/crxde-lite/debugging-content.png)
 
-Fazer alterações no conteúdo mutável no tempo de execução em ambientes de desenvolvimento do AEM as a Cloud Service por meio do CRXDE Lite deve ser feito com cuidado.
-Qualquer alteração feita diretamente no AEM por meio do CRXDE Lite pode ser difícil de rastrear e administrar. Conforme apropriado, assegure-se de que as alterações feitas por meio do CRXDE Lite retornem aos pacotes de conteúdo mutável do projeto AEM (`ui.content`) e se comprometam ao Git, para garantir que o problema seja resolvido. Idealmente, todas as alterações de conteúdo do aplicativo se originam da base de código e fluem para o AEM por meio de implantações, em vez de fazer alterações diretamente no AEM por meio do CRXDE Lite.
+Fazer alterações no conteúdo mutável em tempo de execução no AEM como ambientes de desenvolvimento de Cloud Service por meio do CRXDE Lite deve ser feito com cuidado.
+Qualquer alteração feita diretamente no AEM via CRXDE Lite pode ser difícil de rastrear e governar. Conforme apropriado, assegure-se de que as alterações feitas via CRXDE Lite retornem aos pacotes de conteúdo mutável do projeto AEM (`ui.content`) e sejam comprometidas com o Git, para garantir que o problema seja resolvido. Idealmente, todas as alterações de conteúdo do aplicativo são originadas da base de código e fluem para o AEM por meio de implantações, em vez de fazer alterações diretamente no AEM via CRXDE Lite.
 
 ### Depuração de controles de acesso
 
-O CRXDE Lite fornece uma maneira de testar e avaliar o controle de acesso em um nó específico para um usuário ou grupo específico (também conhecido como principal).
+O CRXDE Lite fornece uma maneira de testar e avaliar o controle de acesso em um nó específico de um usuário ou grupo específico (também conhecido como principal).
 
 Para acessar o console Controle de acesso de teste no CRXDE Lite, navegue até:
 
 + CRXDE Lite > Ferramentas > Testar controle de acesso ...
 
-![CRXDE Lite - Controle de acesso de teste](./assets/crxde-lite/permissions__test-access-control.png)
+![CRXDE Lite - Testar controle de acesso](./assets/crxde-lite/permissions__test-access-control.png)
 
 1. Usando o campo Caminho , selecione um Caminho JCR para avaliar
 1. Usando o campo Principal, selecione o usuário ou grupo para avaliar o caminho
@@ -81,6 +80,6 @@ A seguir estão as atividades de depuração que podem __not__ ser executadas no
 
 ### Depuração das configurações do OSGi
 
-As configurações de OSGi implantadas não podem ser revisadas via CRXDE Lite. As configurações do OSGi são mantidas no pacote de código `ui.apps` do Projeto AEM em `/apps/example/config.xxx`. No entanto, após a implantação em ambientes do AEM as a Cloud Service, os recursos de configurações do OSGi não são persistentes para o JCR, portanto não são visíveis por meio do CRXDE Lite.
+As configurações de OSGi implantadas não podem ser revisadas via CRXDE Lite. As configurações OSGi são mantidas no pacote de código `ui.apps` do AEM Project em `/apps/example/config.xxx`. No entanto, após a implantação no AEM como um ambiente Cloud Service, os recursos de configurações OSGi não são persistentes para o JCR, portanto, não são visíveis via CRXDE Lite.
 
 Em vez disso, use o [Console do Desenvolvedor > Configurações](./developer-console.md#configurations) para revisar as configurações do OSGi implantadas.

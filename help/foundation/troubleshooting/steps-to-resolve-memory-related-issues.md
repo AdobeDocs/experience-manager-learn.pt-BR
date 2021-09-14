@@ -4,14 +4,15 @@ description: Etapas para investigar e resolver problemas relacionados à memóri
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5, cloud-service
-feature: Ferramentas do desenvolvedor
-topic: Administração
+version: 6.5, Cloud Service
+feature: Developer Tools
+topic: Administration
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6477e9df-f33f-46b1-aa9b-535063da65dd
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '41'
-ht-degree: 7%
+source-wordcount: '38'
+ht-degree: 0%
 
 ---
 

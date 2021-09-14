@@ -1,25 +1,25 @@
 ---
 title: Criar um token de acesso
-description: Troque o JSON Web Token (JWT) por Adobe IMS APIs para obter um token de acesso AEM.
+description: Troque o JSON Web Token (JWT) por APIs do Adobe IMS para obter um token de acesso AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Serviços de documento
-topic: Desenvolvimento
+version: Cloud Service
+feature: Document Services
+topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
 # Exchange JWT para Token de Acesso
 
 
-O JWT criado na etapa anterior é trocado por APIs Adobe IMS para um Token de acesso, que pode ser usado para acessar AEM como Cloud Service. Para solicitar um Token de acesso, envie uma solicitação de POST contendo o JWT, client_id, client_secret para o serviço de autenticação IMS.
+O JWT criado na etapa anterior é trocado pelas APIs do Adobe IMS por um Token de acesso, que pode ser usado para acessar o AEM como um Cloud Service. Para solicitar um Token de acesso, envie uma solicitação de POST contendo o JWT, client_id, client_secret para o serviço de autenticação IMS.
 
 O código a seguir foi usado para gerar o Exchange JWT para Token de Acesso
 

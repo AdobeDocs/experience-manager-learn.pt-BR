@@ -1,20 +1,20 @@
 ---
 title: Introdução ao Assets Essentials
 description: Saiba como acessar o Assets Essentials e explorar as principais facetas de sua interface do usuário.
-version: cloud-service
+version: Cloud Service
 feature: Assets Essentials
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
 kt: 8021
 thumbnail: 336005.jpeg
-source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
+exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 4%
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
-
 
 # Introdução ao Assets Essentials
 

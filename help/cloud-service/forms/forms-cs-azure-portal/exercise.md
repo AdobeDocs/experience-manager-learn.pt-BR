@@ -1,18 +1,18 @@
 ---
 title: Exercício simples para testar sua compreensão do curso
 description: Adicionar colunas extras à tabela e ao atributo extra aos critérios de pesquisa
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: cloud-service
-topic: Integração
+version: Cloud Service
+topic: Integrationa
 thumbnail: 335800.jpg
 kt: 8481
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 5%
+source-wordcount: '34'
+ht-degree: 0%
 
 ---
 

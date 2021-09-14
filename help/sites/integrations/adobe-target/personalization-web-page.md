@@ -5,30 +5,29 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '461'
 ht-degree: 1%
 
 ---
 
-
 # Personalização da página da Web completa Experiência {#personalization-fpe}
 
-Saiba como criar uma atividade para redirecionar as páginas do site hospedadas no AEM para uma nova página usando o Adobe Target.
+Saiba como criar uma atividade para redirecionar as páginas do site hospedadas em AEM para uma nova página usando o Adobe Target.
 
 ## Pré-requisitos
 
-Para personalizar páginas completas de um site do AEM, a seguinte configuração deve ser concluída:
+Para personalizar páginas completas de um site AEM, é necessário concluir a seguinte configuração:
 
-1. [Adicionar o Adobe Target ao site do AEM](./add-target-launch-extension.md)
+1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
 1. [Acionar uma chamada do Adobe Target a partir do Launch](./load-and-fire-target.md)
 
 ## Visão geral do cenário
@@ -62,7 +61,7 @@ O site WKND reprojetou sua página inicial e gostaria de redirecionar seus visit
 
    ![Direcionar](assets/targeting.png)
 
-1. Para Metas e configurações, escolha a Fonte de relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de exibição de página.
+1. Para Metas e configurações, escolha a Fonte de relatórios como Adobe Target e selecione a métrica de meta como Conversão com uma ação de exibição de página.
 
    ![Metas](assets/goals.png)
 
@@ -77,10 +76,9 @@ O site WKND reprojetou sua página inicial e gostaria de redirecionar seus visit
 
 ## Resumo
 
-Como profissional de marketing, você foi capaz de criar uma atividade para redirecionar as páginas do site hospedadas no AEM para uma nova página usando o Adobe Target.
+Como profissional de marketing, você foi capaz de criar uma atividade para redirecionar as páginas do site hospedadas em AEM para uma nova página usando o Adobe Target.
 
 ## Links de suporte
 
 * [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 * [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-

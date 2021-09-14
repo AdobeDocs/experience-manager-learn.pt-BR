@@ -1,24 +1,24 @@
 ---
 title: Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
-description: 'O pipeline de produção de CI/CD é usado para criar e implantar o código por meio do Stage para o ambiente de produção, diminuindo o tempo para o valor. A configuração do pipeline de produção de CI/CD define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho. '
-sub-product: cloud manager
+description: O pipeline de produção de CI/CD é usado para criar e implantar o código por meio do Stage para o ambiente de produção, diminuindo o tempo para o valor. A configuração do pipeline de produção de CI/CD define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho.
+sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
-topic: Arquitetura
+topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '177'
 ht-degree: 2%
 
 ---
-
 
 # Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
 

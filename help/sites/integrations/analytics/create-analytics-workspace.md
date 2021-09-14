@@ -1,20 +1,20 @@
 ---
 title: Analisar dados com o Analysis Workspace
 description: Saiba como mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics. Saiba como criar um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
-version: cloud-service
-topic: Integrações
-feature: Camada de dados do cliente Adobe
+version: Cloud Service
+topic: Integrations
+feature: Adobe Client Data Layer
 role: User
 level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
-
 
 # Analisar dados com o Analysis Workspace
 
@@ -265,4 +265,3 @@ Em seguida, vamos baixar o Modelo de classificação para a variável ID do bot�
 ## Parabéns!
 
 Você acabou de aprender a mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics, executar uma Classificação para as métricas e criar um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
-

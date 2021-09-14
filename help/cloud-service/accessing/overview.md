@@ -1,20 +1,20 @@
 ---
 title: Configuração do acesso ao AEM como um Cloud Service
-description: 'O AEM como Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM e, como tal, utiliza o Adobe IMS (Identity Management System) para facilitar o logon de usuários, administradores e usuários comuns, no serviço AEM Author. Saiba como usuários, grupos de usuários e perfis de produtos do Adobe IMS são usados junto a grupos e permissões de AEM para fornecer acesso específico ao AEM Author.  '
-version: cloud-service
-topic: Administração, segurança
-feature: Usuários e grupos
+description: O AEM como Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM e, como tal, utiliza o Adobe IMS (Identity Management System) para facilitar o logon de usuários, administradores e usuários comuns, no serviço de autor do AEM. Saiba como usuários, grupos de usuários e perfis de produtos do Adobe IMS são usados junto a grupos e permissões de AEM para fornecer acesso específico ao AEM Author.
+version: Cloud Service
+topic: Administration, Security
+feature: User and Groups
 role: Admin
 level: Beginner
 kt: 5882
 thumbnail: KT-5882.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
-
 
 # Configuração do acesso ao AEM como um Cloud Service
 
@@ -43,7 +43,7 @@ Os usuários que acessam o serviço Autor do AEM devem ser organizados em grupos
 
 ## Perfis de produto Adobe IMS
 
-[Os perfis](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html) de produtos Adobe IMS, gerenciados no  [Adobe AdminConsole](https://adminconsole.adobe.com), são o mecanismo que fornece aos  [usuários do ](#adobe-ims-users) Adobe IMS acesso para fazer logon no serviço AEM Author com um nível básico de acesso.
+[Os perfis de produtos do Adobe IMS ](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), gerenciados no  [Admin Console](https://adminconsole.adobe.com), são o mecanismo que fornece aos  [usuários do ](#adobe-ims-users) Adobe IMS acesso para fazer logon no serviço de autor do AEM com um nível básico de acesso.
 
 + O perfil de produto __AEM Usuários__ oferece aos usuários acesso somente leitura à AEM por meio da associação no grupo AEM Contribuidores .
 + O perfil de produto __AEM Administradores__ oferece aos usuários acesso completo e administrativo ao AEM.

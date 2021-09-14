@@ -1,7 +1,7 @@
 ---
 title: Consultar AEM usando GraphQL de um aplicativo externo - Introdução ao AEM Headless - GraphQL
 description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Explore AEM APIs GraphQL como um exemplo do aplicativo WKND GraphQL React. Saiba como esse aplicativo externo faz chamadas GraphQL para AEM potencializar sua experiência. Saiba como executar o tratamento básico de erros.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
@@ -9,13 +9,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Consultar AEM usando GraphQL de um aplicativo externo
 

@@ -1,24 +1,24 @@
 ---
 title: Testar um trabalhador do Asset compute
 description: O projeto do Asset compute define um padrão para criar e executar facilmente testes de trabalhadores do Asset compute.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrações, desenvolvimento
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
-
 
 # Testar um trabalhador do Asset compute
 

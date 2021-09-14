@@ -1,20 +1,20 @@
 ---
 title: Tags inteligentes para imagens com o AEM Assets
 description: As tags inteligentes de imagens aumentam AEM recursos de pesquisa ao adicionar tags de metadados de forma automática e inteligente a ativos de imagem com base no conteúdo da imagem.
-topic: Gerenciamento de conteúdo
-feature: Tags inteligentes
+topic: Content Management
+feature: Smart Tags
 role: User
 level: Intermediate
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 645
 thumbnail: 17019.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 13%
+source-wordcount: '218'
+ht-degree: 11%
 
 ---
-
 
 # Tags inteligentes para imagens
 

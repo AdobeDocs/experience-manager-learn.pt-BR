@@ -1,7 +1,7 @@
 ---
-sub-product: ativos
+sub-product: assets
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -9,10 +9,9 @@ user-guide-title: Introdução ao Dynamic Media Classic
 user-guide-description: Este tutorial mostra como usar o Dynamic Media Classic para criar, escrever e entregar conteúdo de mídia avançada.
 breadcrumb-title: Tutoriais do Dynamic Media Classic
 index: y
-translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '75'
 ht-degree: 46%
 
 ---

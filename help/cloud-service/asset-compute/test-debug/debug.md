@@ -1,25 +1,24 @@
 ---
 title: Depurar um trabalhador do Asset compute
 description: Os trabalhadores do Asset compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até registros de ativação no Adobe I/O Runtime iniciados do AEM como um Cloud Service.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrações, desenvolvimento
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
-
 
 # Depurar um trabalhador do Asset compute
 
@@ -94,7 +93,7 @@ _Click-through da depuração de um trabalhador do Asset compute usando wskdebug
 1. Navegue de volta ao Código VS, até `/actions/worker/index.js` e percorra o código
 1. Para sair da Ferramenta de Desenvolvimento Depurável, toque em `Ctrl-C` no terminal que executou o comando `npx adobe-asset-compute devtool` na etapa 6
 
-## Acessar logs do Adobe I/O Runtime{#aio-app-logs}
+## Acesso aos logs do Adobe I/O Runtime{#aio-app-logs}
 
 [O AEM as a Cloud Service potencializa os trabalhadores do Asset compute por meio de ](../deploy/processing-profiles.md) Perfis de processamento, chamando-os diretamente no Adobe I/O Runtime. Como essas invocações não envolvem o desenvolvimento local, suas execuções não podem ser depuradas usando ferramentas locais, como a Ferramenta de desenvolvimento de Assets compute ou a wskdebug. Em vez disso, a CLI do Adobe I/O pode ser usada para buscar logs do trabalhador executado em um espaço de trabalho específico no Adobe I/O Runtime.
 

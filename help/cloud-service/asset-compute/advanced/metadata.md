@@ -1,25 +1,24 @@
 ---
 title: Desenvolver um trabalhador de metadados do Asset compute
 description: Saiba como criar um trabalhador de metadados de Asset compute que deriva as cores mais usadas em um ativo de imagem e grava os nomes das cores de volta aos metadados do ativo em AEM.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integrações, desenvolvimento
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
-
 
 # Desenvolver um trabalhador de metadados do Asset compute
 
@@ -28,7 +27,7 @@ Os trabalhadores personalizados do Asset compute podem produzir dados de XMP (XM
 Os casos de uso comuns incluem:
 
 + Integrações com sistemas de terceiros, como um PIM (Product Information Management system), em que metadados adicionais devem ser recuperados e armazenados no ativo
-+ Integrações com serviços de Adobe, como Content e Commerce AI, para aumentar os metadados de ativos com atributos adicionais de aprendizado de máquina
++ Integrações com serviços da Adobe, como Content e Commerce AI, para aumentar os metadados do ativo com atributos adicionais de aprendizado de máquina
 + Derivar metadados sobre o ativo de seu binário e armazená-lo como metadados de ativos no AEM como um Cloud Service
 
 ## O que você vai fazer
@@ -257,7 +256,7 @@ $ aio app deploy
 
 Observe que isso implantará todos os trabalhadores no projeto. Revise as [instruções de implantação não resumidas](../deploy/runtime.md) para saber como implantar em espaços de trabalho de Preparo e Produção.
 
-### Integrar a Perfis de Processamento de AEM{#processing-profile}
+### Integrar a Perfis de processamento de AEM{#processing-profile}
 
 Chame o trabalhador de AEM criando um novo ou modificando um serviço de Perfil de processamento personalizado existente que chama esse trabalhador implantado.
 
@@ -283,7 +282,7 @@ Chame o trabalhador de AEM criando um novo ou modificando um serviço de Perfil 
 1. Toque em __Salvar__ no canto superior direito
 1. Aplique o perfil de processamento a uma pasta do AEM Assets, se ainda não tiver feito isso
 
-### Atualizar o Esquema de Metadados{#metadata-schema}
+### Atualizar o esquema de metadados{#metadata-schema}
 
 Para analisar os metadados de cores, mapeie dois novos campos no esquema de metadados da imagem para as novas propriedades de dados de metadados que o trabalhador preenche.
 

@@ -1,21 +1,21 @@
 ---
 title: Permissões de linha de base
 description: O gerenciamento do acesso do usuário às pastas de ativos da linha de base é um aspecto essencial no controle e garante que os processos possam ser suportados adequadamente.
-sub-product: ativos
-feature: Gerenciamento de ativos
-version: cloud-service
+sub-product: assets
+feature: Asset Management
+version: Cloud Service
 kt: 4870
 thumbnail: 37696.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: b2ac2332-4d98-4866-8688-831f0282a736
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 3%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # Permissões de linha de base
 

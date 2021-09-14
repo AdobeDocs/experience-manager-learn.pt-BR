@@ -1,24 +1,24 @@
 ---
 title: Desenvolver um trabalhador do Asset compute
 description: Os trabalhadores do Asset compute são o núcleo de um projeto do Asset compute que fornece funcionalidade personalizada que executa, ou coordena, o trabalho executado em um ativo para criar uma nova representação.
-feature: Microsserviços Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrações, desenvolvimento
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolver um trabalhador do Asset compute
 

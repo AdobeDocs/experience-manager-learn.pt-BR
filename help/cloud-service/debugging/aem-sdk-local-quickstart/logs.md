@@ -1,9 +1,9 @@
 ---
-title: Depuração do SDK do AEM usando logs
-description: Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado.
+title: Depuração AEM SDK usando logs
+description: Os registros atuam como linha de frente para depurar aplicativos de AEM, mas dependem do logon adequado no aplicativo de AEM implantado.
 feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,32 +11,31 @@ kt: 5252
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
+# Depuração AEM SDK usando logs
 
-# Depuração do SDK do AEM usando logs
+Ao acessar os registros AEM do SDK, as ferramentas locais do AEM SDK quickstart Jar ou do Dispatcher podem fornecer insights importantes sobre a depuração AEM aplicativos.
 
-Ao acessar os logs do SDK do AEM, as ferramentas locais de inicialização rápida do Jar ou do Dispatcher do SDK do AEM podem fornecer informações importantes sobre a depuração de aplicativos do AEM.
-
-## Logs do AEM
+## Logs AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334/?quality=12&learn=on)
 
-Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado. A Adobe recomenda manter as configurações de log de desenvolvimento local e de desenvolvimento do AEM as a Cloud Service da mesma maneira possível, pois normaliza a visibilidade do log nos ambientes de desenvolvimento do AEM SDK de inicialização rápida local e do AEM as a Cloud Service, reduzindo a duplicação da configuração e a reimplantação.
+Os registros atuam como linha de frente para depurar aplicativos de AEM, mas dependem do logon adequado no aplicativo de AEM implantado. O Adobe recomenda manter o desenvolvimento local e o AEM como configurações de registro de desenvolvimento como o possível, pois normaliza a visibilidade do log no início rápido local AEM SDK e AEM como um ambiente Cloud Service Dev Cloud Service, reduzindo o twidling de configuração e a reimplantação.
 
-O [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG dos pacotes Java do aplicativo AEM para desenvolvimento local por meio da configuração OSGi do Sling Logger localizada em
+O [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) configura o registro em log no nível DEBUG dos pacotes Java do seu aplicativo AEM para desenvolvimento local através da configuração OSGi do Sling Logger localizada em
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
 que registra no `error.log`.
 
-Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc pode ser configurado por meio do console da Web Suporte a log do quickstart local do AEM SDK, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas no Git, a menos que essas mesmas configurações de log sejam necessárias também em ambientes de desenvolvimento do AEM as a Cloud Service. Lembre-se, as alterações por meio do console Suporte de log são persistentes diretamente no repositório local do início rápido do AEM SDK.
+Se o registro padrão for insuficiente para o desenvolvimento local, o registro ad hoc pode ser configurado por meio do console da Web Suporte a log do início rápido local AEM SDK, em ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), no entanto, não é recomendado que as alterações ad hoc sejam mantidas no Git, a menos que essas mesmas configurações de log sejam necessárias em AEM como ambientes de desenvolvimento Cloud Service. Lembre-se, as alterações por meio do console Suporte de log são persistentes diretamente no repositório local do início rápido do SDK AEM.
 
 As instruções de log do Java podem ser exibidas no arquivo `error.log`:
 

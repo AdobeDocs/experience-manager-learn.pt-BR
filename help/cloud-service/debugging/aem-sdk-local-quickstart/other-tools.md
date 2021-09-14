@@ -1,23 +1,23 @@
 ---
 title: Outras ferramentas para depurar AEM SDK
 description: Várias outras ferramentas podem ajudar na depuração da inicialização rápida local do SDK do AEM.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 7%
+source-wordcount: '217'
+ht-degree: 5%
 
 ---
-
 
 # Outras ferramentas para depurar AEM SDK
 
@@ -54,4 +54,3 @@ O QueryBuilder Debugger é uma ferramenta baseada na Web que ajuda a depurar e e
 O QueryBuilder Debugger está localizado em:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-

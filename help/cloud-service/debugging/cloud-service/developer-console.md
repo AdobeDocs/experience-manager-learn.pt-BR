@@ -1,25 +1,24 @@
 ---
 title: Console do desenvolvedor
 description: O AEM as a Cloud Service fornece um Console do desenvolvedor para cada ambiente que expõe vários detalhes do serviço de AEM em execução que são úteis na depuração.
-feature: Ferramentas do desenvolvedor
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
+exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Depuração do AEM como um Cloud Service com o Console do desenvolvedor
 
@@ -48,7 +47,7 @@ Se for reportado um erro 401 Unauthorized com qualquer status de dumping , signi
 Para resolver o problema 401 Não autorizado:
 
 1. Certifique-se de que o usuário é membro do Perfil de produto do Adobe IMS apropriado (Administradores AEM ou Usuários AEM) para o AEM associado do Console do desenvolvedor como uma instância do Cloud Service Product.
-   + Lembre-se de que o Console do desenvolvedor acessa 2 Instâncias do produto Adobe IMS; As instâncias de produto AEM as a Cloud Service Author and Publish , portanto, certifique-se de que os Perfis de produto corretos sejam usados, dependendo de qual camada de serviço requer acesso por meio do Console do desenvolvedor.
+   + Lembre-se de que o Console do desenvolvedor acessa duas Instâncias de produto do Adobe IMS; As instâncias de produto AEM as a Cloud Service Author and Publish , portanto, certifique-se de que os Perfis de produto corretos sejam usados, dependendo de qual camada de serviço requer acesso por meio do Console do desenvolvedor.
 1. Faça logon no AEM como um Cloud Service (Autor ou Publicação) e verifique se o usuário e os grupos foram sincronizados corretamente no AEM.
    + O Console do desenvolvedor requer que o registro do usuário seja criado na camada de serviço de AEM correspondente para ser autenticado nessa camada de serviço.
 1. Limpe os cookies dos navegadores, bem como o estado do aplicativo (armazenamento local) e faça logon novamente no Console do desenvolvedor, garantindo que o token de acesso que o Console do desenvolvedor está usando esteja correto e expirado.

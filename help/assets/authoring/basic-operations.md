@@ -1,20 +1,20 @@
 ---
 title: Operações básicas
 description: Saiba mais sobre as operações básicas do AEM Assets, incluindo como criar pastas, bem como fazer upload, copiar, mover e excluir ativos.
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User
 level: Beginner
-version: cloud-service
+version: Cloud Service
 kt: 4299
 thumbnail: 32044.jpg
-topic: Gerenciamento de conteúdo
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+topic: Content Management
+exl-id: d5b25fcc-4c8d-4720-a14e-eaf768873415
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 3%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # Operações básicas
 

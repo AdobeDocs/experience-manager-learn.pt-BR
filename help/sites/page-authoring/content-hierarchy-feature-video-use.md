@@ -1,26 +1,26 @@
 ---
 title: Introdução à hierarquia de conteúdo do AEM Sites
-seo-title: Introdução à hierarquia de conteúdo do AEM Sites
+seo-title: Introduction to AEM Sites Content Hierarchy
 description: O vídeo a seguir destaca como as páginas do site são armazenadas no AEM para sua organização.
-seo-description: O vídeo a seguir destaca como as páginas do site são armazenadas no AEM para sua organização.
-feature: Editor de página
+seo-description: The following video highlights how site pages are stored within AEM for your organization.
+feature: Page Editor
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 4243
 thumbnail: 31785.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 51347f65-bed1-44da-ade3-69209fa443c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 6%
+source-wordcount: '37'
+ht-degree: 0%
 
 ---
-
 
 # Estrutura de conteúdo e hierarquia {#content-hierarchy}
 

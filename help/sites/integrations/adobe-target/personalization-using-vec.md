@@ -5,20 +5,19 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 1%
+source-wordcount: '518'
+ht-degree: 0%
 
 ---
-
 
 # Personalização usando o Visual Experience Composer {#personalization-vec}
 
@@ -26,9 +25,9 @@ Saiba como criar uma atividade de teste A/B usando o Visual Experience Composer 
 
 ## Pré-requisitos
 
-Para usar o VEC em um site do AEM, a seguinte configuração deve ser concluída:
+Para usar o VEC em um site AEM, é necessário concluir a seguinte configuração:
 
-1. [Adicionar o Adobe Target ao site do AEM](./add-target-launch-extension.md)
+1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
 1. [Acionar uma chamada do Adobe Target a partir do Launch](./load-and-fire-target.md)
 
 ## Visão geral do cenário
@@ -39,7 +38,7 @@ A página inicial do site WKND exibe atividades locais ou a melhor coisa a se fa
 
 1. Faça logon em [Adobe Experience Cloud](https://experience.adobe.com/), toque em __Target__, navegue até a guia __Atividades__
 
-   + Se você não vir __Target__ no painel da Experience Cloud, verifique se a organização correta da Adobe está selecionada no alternador de organização na parte superior direita e se o usuário recebeu acesso ao Target em [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se você não vir __Target__ no painel do Experience Cloud, verifique se a organização correta do Adobe está selecionada no alternador de organização na parte superior direita e se o usuário recebeu acesso ao Target em [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Clique no botão **Criar atividade** e escolha **Teste A/B** atividade
 
@@ -70,7 +69,7 @@ A página inicial do site WKND exibe atividades locais ou a melhor coisa a se fa
 
    ![Direcionar](assets/targeting.png)
 
-1. Para Metas e configurações, escolha a Fonte de relatórios como Adobe Target e selecione a métrica Meta como Conversão com uma ação de exibição de página.
+1. Para Metas e configurações, escolha a Fonte de relatórios como Adobe Target e selecione a métrica de meta como Conversão com uma ação de exibição de página.
 
    ![Metas](assets/goals.png)
 

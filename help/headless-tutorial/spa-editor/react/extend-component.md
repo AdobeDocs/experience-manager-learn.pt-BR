@@ -2,21 +2,21 @@
 title: Estender um componente principal | Introdução ao Editor de SPA de AEM e React
 description: Saiba como estender o Modelo JSON para um Componente principal existente a ser usado com o Editor de SPA AEM. Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica avançada para expandir os recursos de uma implementação do Editor de SPA AEM. Saiba como usar o padrão de delegação para estender Modelos do Sling e recursos do Sling Resource Merger.
 sub-product: sites
-feature: Editor de SPA, Componentes principais
+feature: SPA Editor, Core Components
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 kt: 5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1091'
 ht-degree: 1%
 
 ---
-
 
 # Estender um componente principal {#extend-component}
 
@@ -349,7 +349,7 @@ Primeiro, criaremos uma nova interface Java para `Banner` que estende a interfac
 
    Isso herdará todos os métodos da interface do Componente principal `Image` e adicionará um novo método `getBannerText()`.
 
-## Implementar o Modelo Sling {#sling-model}
+## Implementar o modelo Sling {#sling-model}
 
 Em seguida, implemente o Modelo do Sling para a interface `BannerModel`.
 
@@ -495,4 +495,3 @@ Em seguida, implemente o Modelo do Sling para a interface `BannerModel`.
 ## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu a estender um componente de AEM usando o e como os Modelos e diálogos do Sling funcionam com o modelo JSON.
-

@@ -1,18 +1,18 @@
 ---
 title: Configurar um servidor de visualização seguro para AEM Dynamic Media
 description: Configure o servidor de imagem de teste para visualização segura usando AEM aplicativo Dynamic Media Classic.
-version: cloud-service
+version: Cloud Service
 role: Developer
 level: Intermediate
-topic: Desenvolvimento
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7c12fc14-cdaf-45eb-807a-64de86a2a36a
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 1%
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
-
 
 # Configurar um servidor de visualização seguro para AEM Dynamic Media
 
