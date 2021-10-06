@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '564'
 ht-degree: 23%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 + [Visão geral](./overview.md)
 + Introdução ao AEM as a Cloud Service{#introduction}
-   + [O que é AEM como Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [O que é AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolução](./introduction/evolution.md)
    + [Arquitetura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -64,6 +64,8 @@ ht-degree: 23%
       + [Ciclo de vida do componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Noções básicas sobre configurações do OSGi](./developing/osgi-services/configurations.md)
       + [Configurações OSGi usando OCD](./developing/osgi-services/configurations-ocd.md)
+   + Avançado {#advanced}
+      + [Usuários do Serviço](./developing/advanced/service-users.md)
    + [JavaDocs da API do SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Depuração de AEM{#debugging}
    + Depuração do SDK do AEM{#debugging-aem-sdk}
@@ -73,7 +75,7 @@ ht-degree: 23%
       + [Console da Web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Ferramentas do Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Outras ferramentas](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Depuração de AEM como um Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Depuração AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Visão geral](./debugging/cloud-service/overview.md)
       + [Logs](./debugging/cloud-service/logs.md)
       + [Criar e implantar](./debugging/cloud-service/build-and-deployment.md)
@@ -81,9 +83,9 @@ ht-degree: 23%
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + Acessar AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
-   + [Usuários de Adobe IMS](./accessing/adobe-ims-users.md)
+   + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
    + [Grupos de usuários do Adobe IMS](./accessing/adobe-ims-user-groups.md)
-   + [Perfis de produto Adobe IMS](./accessing/adobe-ims-product-profiles.md)
+   + [Perfis de produto do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM usuários, grupos e permissões](./accessing/aem-users-groups-and-permissions.md)
    + [Configuração do acesso ao AEM](./accessing/walk-through.md)
 + Migração {#migration}
@@ -104,7 +106,7 @@ ht-degree: 23%
          + [Serviço de importação em massa](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Ferramenta Transferência de conteúdo](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [Resolução de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
-      + AEM Forms como um Cloud Service {#aem-forms}
+      + AEM Forms as a Cloud Service {#aem-forms}
          + [Introdução](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscrição digital](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Comunicações](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
