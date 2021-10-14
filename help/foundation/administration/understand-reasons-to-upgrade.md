@@ -1,21 +1,21 @@
 ---
 title: Entender os motivos para atualizar
-description: Um detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager.
+description: Um detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 3%
 
 ---
 
-
 # Entendendo os motivos para atualizar
 
-Um detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager.
+Um detalhamento de alto nível dos principais recursos para clientes que consideram atualizar para a versão mais recente do Adobe Experience Manager 6.
 
 ## Principais recursos para a atualização para o AEM 6.5
 
@@ -62,7 +62,7 @@ AEM continua a construir sua integração com tecnologias inteligentes, aproveit
 
 ### Integrações
 
-AEM aumenta sua capacidade de integração com outros serviços de Adobe:
+AEM aumenta sua capacidade de integrar com outros serviços da Adobe:
 
 + **Os** Fragmentos de experiência aprofundam a integração com o  **Adobe** Target, oferecendo suporte à  **exportação como** JSON para Adobe Target e à capacidade de  **excluir** ofertas baseadas em Fragmentos de experiência do  **Adobe Target**.
 
@@ -406,8 +406,8 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pela AE
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Suporte </a><br>
- </strong>à autenticação do Adobe IMSExclusivo do Adobe Managed Services (AMS), gerencie centralmente o acesso às instâncias de autor do AEM por meio do Adobe IMS (Identity Management System).</td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank"></a><br>
+ </strong>Suporte à autenticação do Adobe IMSExclusivo do Adobe Managed Services (AMS), gerencie centralmente o acesso às instâncias de autor do AEM por meio do Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -847,8 +847,8 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pela AEM. A
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de imagens Adobe</a>:</strong>
-                <br> bibliotecas PDF Photoshop e Acrobat usadas para manipulação de arquivos de alta qualidade.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de imagens do Adobe</a>:</strong>
+                <br> bibliotecas PDF do Photoshop e Acrobat usadas para manipulação de arquivos de alta qualidade.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pela AEM. A
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imagem</a>:</strong>
             forneça imagens de forma dinâmica em diferentes tamanhos e formatos, incluindo o Recorte inteligente.</td>
             <td> </td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td><sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td><sup>+</sup></td>
             <td>✔</td>
         </tr>
@@ -1154,7 +1154,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Forms ofereci
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms Document Security</a>: </strong>
-            acesso e autorização seguros de documentos PDF e do Office.
+            acesso seguro e autorização de documentos do PDF e do Office.
             </td>
             <td> </td>
             <td>✔</td>
@@ -1292,7 +1292,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Communities o
         </tr>
         <tr>
             <td rowspan="5">Ativação</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catálogo e gerenciamento de  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">recursos</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catálogo e gerenciamento  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">de recursos</a>:</strong>
             acesse os recursos de ativação do catálogo.</td>
             <td> </td>
             <td><sup>+</sup></td>
@@ -1344,7 +1344,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Communities o
         <tr>
             <td rowspan="8">Commons</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank"></a> Comentários e anexos:</strong>
-             (Estrutura do componente social) como membro da comunidade compartilham opinião e conhecimento sobre conteúdo no site Comunidades.</td>
+             (Estrutura do componente social) Como membro da comunidade, compartilha opiniões e conhecimentos sobre conteúdo no site Comunidades.</td>
             <td><sup>+</sup></td>
             <td>✔</td>
             <td><sup>+</sup></td>
@@ -1537,7 +1537,7 @@ Abaixo está uma matriz dos principais recursos do complemento AEM Communities o
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Atividades e  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notificações</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Atividades e  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notificações</a>: </strong>
             visualize o fluxo de atividades recentes e receba notificações sobre eventos de interesse.</td>
             <td> </td>
             <td> </td>
