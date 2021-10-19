@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 23%
+source-wordcount: '567'
+ht-degree: 24%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 23%
    + [Pipeline de produção de CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Pipeline de não produção de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Atividade](./cloud-manager/activity.md)
-   + Dev Ops{#devops}
+   + Ops de desenvolvimento{#devops}
       + [Implantação do código](./cloud-manager/devops/deploy-code.md)
       + [Mesclar projetos](./cloud-manager/devops/merge-projects.md)
       + [Configurar pipeline](./cloud-manager/devops/configure-pipelines.md)
@@ -47,7 +47,7 @@ ht-degree: 23%
    + [Tempo de Execução do AEM Local](./local-development-environment/aem-runtime.md)
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desenvolvimento{#developing}
-   + Noções básicas sobre desenvolvimento{#basics}
+   + Noções básicas de desenvolvimento{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
@@ -151,7 +151,7 @@ ht-degree: 23%
       + [Envio de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
 
 
-      + Criar Fluxo de Trabalho de Revisão{#create-aem-workflow}
+      + Criar fluxo de trabalho de revisão{#create-aem-workflow}
          + [Criar modelo de fluxo de trabalho](./forms/create-aem-workflow/create-workflow.md)
          + [Acionar fluxo de trabalho](./forms/create-aem-workflow/configure-af.md)
       + Adobe Sign com AEM Forms{#forms-and-sign}
@@ -189,8 +189,9 @@ ht-degree: 23%
    + Avançado {#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
    + [Resolução de problemas](./asset-compute/troubleshooting.md)
++ [Série AEM especialistas](./aem-experts-series.md)
 + Tutorials de várias etapas{#multi-step-tutorials}
-   + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Editor de SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
