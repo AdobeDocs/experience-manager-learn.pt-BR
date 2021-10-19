@@ -3,10 +3,10 @@ user-guide-title: Vídeos e Tutoriais do AEM Sites
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriais do AEM Sites
 feature-set: Experience Manager, Experience Manager Sites
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 23%
+source-wordcount: '441'
+ht-degree: 26%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 23%
    + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Desenvolvimento {#developing}
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
-   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Introdução ao AEM Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Introdução ao AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
@@ -57,13 +57,15 @@ ht-degree: 23%
    + [Práticas recomendadas do sistema de estilos](developing/style-organization-style-system-understand-article.md)
    + [Desenvolvimento da diferença de página](developing/page-diff-technical-video-develop.md)
    + [Implementando pesquisa simples](developing/search-tutorial-develop.md)
-   + [Compartilhamento em mídia social](developing/social-media-sharing-technical-video-use.md)
+   + [Compartilhamento em redes sociais](developing/social-media-sharing-technical-video-use.md)
    + [Personalização de ícones de componentes](developing/component-icons-technical-video-develop.md)
 + Personalização {#personalization}
    + [Integração com o Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configurar fragmentos de experiência e Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiência com o Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar o ContextHub](personalization/context-hub-technical-video-setup.md)
++ SEO {#seo}
+   + [Mapas do site](./seo/sitemaps.md)
 + Aplicativos de página única {#spa-editor}
    + [Uso do Editor de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Tutorial do mundo Hello](spa-editor/spa-editor-helloworld-tutorial-use.md)
@@ -96,7 +98,7 @@ ht-degree: 23%
       + [Conectar AEM com o Launch usando o Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Criar um Cloud Service do Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Depuração de uma implementação do Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Camada de dados do cliente Adobe {#adobe-client-data-layer}
+   + Camada de dados de clientes Adobe {#adobe-client-data-layer}
       + [Uso da camada de dados do cliente do Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizar a camada de dados do cliente do Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analytics {#analytics}
