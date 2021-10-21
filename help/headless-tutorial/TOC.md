@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 19%
+source-wordcount: '185'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 + [Visão geral AEM sem cabeçalho](./overview.md)
 + GraphQL {#graphql}
    + [Visão geral](./graphql/overview.md)
-   + Séries de vídeo{#video-series}
+   + Série Video{#video-series}
       + [1 - Noções básicas da modelagem](./graphql/video-series/modeling-basics.md)
       + [2 - Modelagem avançada](./graphql/video-series/advanced-modeling.md)
       + [3 - Criação de consultas GraphQL](./graphql/video-series/creating-graphql-queries.md)
@@ -27,7 +27,7 @@ ht-degree: 19%
       + [5 - Endpoints GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Arquitetura de criação e publicação](./graphql/video-series/author-publish-architecture.md)
       + [7 - Consultas Persistentes GraphQL](./graphql/video-series/graphql-persisted-queries.md)
-   + Tutorial de várias etapas{#multi-step}
+   + Tutorial em várias etapas{#multi-step}
       + [Visão geral](./graphql/multi-step/overview.md)
       + [1 - Configuração rápida](./graphql/multi-step/setup.md)
       + [2 - Definição dos modelos de fragmento de conteúdo](./graphql/multi-step/content-fragment-models.md)
@@ -36,8 +36,11 @@ ht-degree: 19%
       + [5 - Consulta de um aplicativo externo](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Modelagem de dados avançada com referências de fragmento](./graphql/multi-step/fragment-references.md)
       + [7 - Implantação de produção](./graphql/multi-step/production-deployment.md)
+   + Exemplos {#example-apps}
+      + [Reagir](./graphql/example-apps/react-app.md)
+      + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
 + Editor de SPA{#spa-editor}
-   + React{#react}
+   + Reagir{#react}
       + [Visão geral](./spa-editor/react/overview.md)
       + [1 - Criar projeto](./spa-editor/react/create-project.md)
       + [2 - Integrar a SPA](./spa-editor/react/integrate-spa.md)
@@ -61,7 +64,7 @@ ht-degree: 19%
       + [3 - Componentes fixos](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Componentes do contêiner](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Rotas dinâmicas](./spa-editor/remote-spa/spa-dynamic-routes.md)
-+ Autenticação baseada em token {#authentication}
++ Autenticação por token {#authentication}
    + [Visão geral](./authentication/overview.md)
    + [1 - Token de acesso de desenvolvimento local](./authentication/local-development-access-token.md)
    + [2 - Credenciais de Serviço](./authentication/service-credentials.md)
