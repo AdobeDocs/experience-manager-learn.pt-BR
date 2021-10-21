@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,11 @@ Inclua a entrada apropriada no filter.xml do projeto ui.content
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
 ```
 
-Agora, ao criar e implantar seu projeto, o projeto terá o modelo de dados de formulário com base na configuração de serviços em nuvem disponível na instância da nuvem
 
->!![NOTE]
-Quando você envia essa configuração de serviços de nuvem para sua instância da nuvem, é necessário atualizar manualmente a chave do Azure usando a interface do usuário AEM.Qualquer valor que estiver criptografado precisaria ser atualizado nas instâncias de nuvem usando a interface do usuário.
+>[!NOTE]
+
+>Agora, ao criar e implantar seu projeto, o projeto terá o modelo de dados de formulário com base na configuração de serviços em nuvem disponível na instância da nuvem
+
 
 
 

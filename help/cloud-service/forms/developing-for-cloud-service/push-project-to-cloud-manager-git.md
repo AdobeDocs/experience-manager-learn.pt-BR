@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -16,12 +16,11 @@ ht-degree: 0%
 ---
 
 
-# Encaminhar AEM projeto para o git rep do cloud manager
+# Encaminhar AEM projeto para o git repo do cloud manager
 
 Na etapa anterior, sincronizamos o AEM Project com a Adaptive Forms e os Themes criados na instância AEM.
-Agora precisamos adicionar essas alterações ao nosso repositório Git local e, em seguida, enviar o repositório Git local para o repositório Git do cloud manager
-
-abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app Execute the following commands
+Agora precisamos adicionar essas alterações ao nosso repositório Git local e, em seguida, enviar o repositório Git local para o repositório Git do cloud manager.
+Abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app Execute the following commands
 
 ```
 git add .**

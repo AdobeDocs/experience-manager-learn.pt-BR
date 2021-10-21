@@ -1,23 +1,22 @@
 ---
-title: Tutoriais e vídeos do AEM Forms
-seo-title: Tutoriais e vídeos do AEM Forms
+title: AEM Forms Tutorials e vídeos
+seo-title: AEM Forms Tutorials and Videos
 description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms
-seo-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms
-sub-product: formulários
+seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
+sub-product: forms
 topic: Development
 role: Developer
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 7%
 
 ---
 
-
 # Visão geral {#overview}
 
-O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar com processos back-end, regras de negócios e dados. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Forms
+O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar-se a processos back-end, regras de negócios e dados. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Forms
 
 ## Novidades
 
@@ -60,7 +59,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     </div>
     <p>
-    <em>As Comunicações interativas centralizam e gerenciam a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.  </em>
+    <em>As Comunicações interativas centralizam e gerenciam a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. </em>
     <p>
   </td>
   <td>
@@ -69,24 +68,124 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Uso do Modelo de dados de formulário no fluxo de trabalho do AEM</strong>
+    <strong>Uso do Modelo de dados de formulário em AEM fluxo de trabalho</strong>
     </a>
     </div>
     <p>
-    <em>Chame o serviço do Modelo de dados de formulário como uma etapa no fluxo de trabalho do AEM</em>
+    <em>Chame o serviço do Modelo de dados de formulário como uma etapa AEM fluxo de trabalho</em>
     <p>
   </td>
 </tr>
 </table>
 
+>[!TIP]
+>
+>Essa coleção de amostras demonstra vários recursos do AEM Forms. .
+
+
+## Amostras de formulário adaptável
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Capturar no AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha em forma adaptável</strong>
+    </a>
+    </div>
+    <p>
+    <em> Distinguir entre o acesso humano e automatizado a formulários</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Visualizar dados do formulário" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Revisar dados do formulário</strong>
+    </a>
+    </div>
+    <p>
+    <em>Visualize os dados do formulário antes de enviá-lo.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Imagem em linha" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Exibir imagem em linha</strong>
+      </a>
+    </div>
+    <p>
+    <em>Exiba a imagem adicionada ao formulário.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Amostras de formulário e sinal adaptáveis
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Contrato de aluguel" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Formulário de contrato de aluguel de exemplo</strong>
+    </a>
+    </div>
+    <p>
+    <em>Contrato de aluguel entre locatário e proprietário preenchido e assinado usando AEM Forms e Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="Acordo NDA" src="./assets/nda.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>Gerar Contrato de Não Divulgação</strong>
+    </a>
+    </div>
+    <p>
+    <em>Criar um NDA dinamicamente e enviar para assinatura usando o Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Assinar pacote de documentos" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Assinar pacote de documentos</strong>
+      </a>
+    </div>
+    <p>
+    <em>Assine vários documentos de maneira contínua usando o Forms e o Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+
+
+
 ## Recursos adicionais
 
-* [Experience League - Explore o AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentação de criação do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentação de desenvolvimento do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentação de administração do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentação de implantação do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentação de implantação do AEM Sites](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
-* [Tutoriais do AEM Foundation](/help/foundation/overview.md)
+* [Tutoriais da AEM Foundation](/help/foundation/overview.md)

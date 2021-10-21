@@ -8,18 +8,22 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8844
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 3%
+source-wordcount: '504'
+ht-degree: 2%
 
 ---
 
 # Instalação do Cygwin
 
+
+O Cygwin é um ambiente de programação e tempo de execução compatível com POSIX, executado nativamente no Microsoft Windows.
 Instalar [Cygwin](https://www.cygwin.com/). Eu instalei em C:\cygwin64 folder
->[Nota]
+>[!NOTE]
 > Certifique-se de instalar pacotes zip, unzip, curl e rsync com sua instalação do cygwin
+
+Crie uma pasta chamada adoberepo no diretório c:\cloudmanager.
 
 [Instale a ferramenta repo].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing a ferramenta repo não é nada além de copiar o arquivo repo e colocá-lo em seu c:\cloudmanger\adoberepo folder.
 
@@ -27,7 +31,12 @@ Adicione o seguinte à variável de ambiente Caminho C:\cygwin64\bin;C:\CloudMan
 
 ## Configurar ferramentas externas
 
-Iniciar as teclas do IntelliJ Ocorrência Ctrl+Alt+S para iniciar a janela de configurações Selecione Ferramentas->Ferramentas Externas e clique no sinal + e insira o seguinte como mostrado na captura de tela Certifique-se de criar um grupo chamado acordo de recompra digitando &quot;acordo de recompra&quot; no campo suspenso Grupo e todos os comandos criados pertencem ao grupo **repo** grupo
+* Iniciar o IntelliJ
+* Pressione as teclas Ctrl+Alt+S para iniciar a janela de configurações.
+* Selecione Ferramentas->Ferramentas externas e clique no sinal + e insira o seguinte, como mostrado na captura de tela.
+   ![rep](assets/repo.png)
+* Crie um grupo chamado repo digitando &quot;repo&quot; no campo suspenso Grupo e todos os comandos criados pertencem ao grupo **repo** grupo
+
 
 **Comando Put**
 **Programa**: C:\cygwin64\bin\bash
