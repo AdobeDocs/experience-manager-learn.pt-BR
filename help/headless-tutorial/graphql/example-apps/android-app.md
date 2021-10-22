@@ -9,17 +9,19 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 3%
+source-wordcount: '734'
+ht-degree: 2%
 
 ---
 
 
-# Aplicativo SwiftUI do Android
+# Aplicativo Android
 
 Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Um aplicativo Android é fornecido e demonstra como consultar o conteúdo usando as APIs GraphQL da AEM. O [Cliente autônomo do AEM para Java](https://github.com/adobe/aem-headless-client-java) O é usado para executar consultas GraphQL e mapear dados para objetos Java para potencializar o aplicativo.
+
+Visualize o [código-fonte no GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
 
 >[!VIDEO](https://video.tv.adobe.com/v/338093/?quality=12&learn=on)
 
