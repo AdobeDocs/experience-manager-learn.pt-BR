@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 Isso confirma os arquivos na ramificação principal do repositório Git local
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-No comando acima, estamos enviando nossa ramificação principal do repositório Git local para a ramificação My First AF do repositório do cloud manager identificada pelo nome amigável bankingapp
+No comando acima, estamos enviando nossa ramificação principal do repositório Git local para a ramificação MyFirstAF do repositório do cloud manager identificado pelo nome amigável do aplicativo bancário.
 
 
 

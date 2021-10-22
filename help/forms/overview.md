@@ -7,7 +7,7 @@ sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 7%
@@ -72,7 +72,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     </div>
     <p>
-    <em>Chame o serviço do Modelo de dados de formulário como uma etapa AEM fluxo de trabalho</em>
+    <em>Invoke Form Data Model's service as a step in AEM Workflow</em>
     <p>
   </td>
 </tr>
@@ -106,7 +106,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
-    <strong>Revisar dados do formulário</strong>
+    <strong>Review form data</strong>
     </a>
     </div>
     <p>
@@ -148,11 +148,11 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
   </td>
   <td>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <img alt="Acordo NDA" src="./assets/nda.png" />
+    <img alt="Acordo NDA" src="./assets/nda1.png" />
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
-    <strong>Gerar Contrato de Não Divulgação</strong>
+    <strong>Generate Non Disclosure Agreement</strong>
     </a>
     </div>
     <p>
@@ -180,8 +180,8 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 
 ## Recursos adicionais
 
-* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentação de criação do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
+* [Experience League - Explore AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [AEM Sites Authoring Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentação de desenvolvimento do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentação de administração do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentação de implantação do AEM Sites](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/user-guide.html)
