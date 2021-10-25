@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1611'
 ht-degree: 3%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 3%
    + [Serviço de preenchimento prévio no Adaptive Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envio personalizado no Adaptive Forms](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha no Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Algumas dicas úteis da interface do usuário](adaptive-forms/forms-ui-tips.md)
    + [Como incorporar o formulário adaptável na página da Web](adaptive-forms/embed-af-web-page.md)
    + [Criação de matriz de cadeias de caracteres](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Uso de Definir valor em XML no fluxo de trabalho OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
@@ -312,7 +313,6 @@ ht-degree: 3%
    + [Geral: Etapas para redefinir-padrão-senha-para-usuários-em-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
    + [Geral: Etapas para redefinir-padrão-senha-para-usuários-em-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [Geral: Etapas para configurar os localizadores do gemfire em um cluster e executar a configuração relacionada](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
-
 
 
 
