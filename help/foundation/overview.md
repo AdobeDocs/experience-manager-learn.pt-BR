@@ -1,21 +1,19 @@
 ---
 title: Vídeos e Tutoriais do AEM Foundation
-seo-title: Vídeos e Tutoriais do AEM Foundation
-description: 'Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager. '
-seo-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager
+description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '251'
+ht-degree: 18%
 
 ---
 
+# Vídeos e Tutoriais do AEM Foundation {#overview}
 
-# Visão geral {#overview}
-
-O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para usuários do AEM Sites, [!DNL Assets] e [!DNL Forms].
+O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para usuários do AEM Sites, Ativos e Forms.
 
 ## Novidades
 
@@ -24,10 +22,10 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
    *AEM fluxo de trabalho fornece uma maneira de colaborar, gerenciar e processar conteúdo em AEM.*
 
 * **[Entender o Cloud Manager para AEM (Vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *O Cloud Manager for AEM permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.*
+   *O Cloud Manager para AEM permite fácil gerenciamento, inspeção e autoatendimento de ambientes AEM.*
 
 * **[Configurar chaves públicas e privadas para uso com o Adobe I/O (Tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Saiba como as chaves e as lojas de chaves são geradas usando  [!DNL openssl] o AEM e o Adobe I/O.*
+   *Saiba como chaves e armazenamentos de chaves são gerados usando [!DNL openssl] que trabalham com AEM e Adobe I/O.*
 
 * **[Usar o pipeline CI/CD do Cloud Manager (Vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Saiba como usar o pipeline de CI/CD do Cloud Manager para garantir implantações seguras e consistentes.*

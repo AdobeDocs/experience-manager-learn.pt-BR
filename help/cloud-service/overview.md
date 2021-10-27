@@ -1,19 +1,19 @@
 ---
-title: Tutoriais do Adobe Experience Manager as Cloud Service
+title: Adobe Experience Manager como vídeos e Tutorials do Cloud Service
 description: Uma coleção de tutoriais do Adobe Experience Manager (AEM) as a Cloud Service
-sub-product: sites, cloud manager, foundation, assets
+sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
+# AEM como vídeos e Tutorials Cloud Service {#overview}
 
-# Visão geral {#overview}
-
-Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM como Cloud Service introduz a próxima geração da linha de Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
+Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM as a Cloud Service apresenta a próxima geração da linha de produtos Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
@@ -21,7 +21,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 
 * **[Autenticação por token (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
-   *Saiba como usar a autenticação baseada em token para interagir com o AEM como um Cloud Service sobre HTTP*
+   *Saiba como usar a autenticação baseada em token para interagir com AEM as a Cloud Service por HTTP*
 
 * **[GraphQL sem cabeçalho (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
@@ -33,7 +33,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 
 * **[trabalhador de metadados de asset compute (Tutorial)](./asset-compute/advanced/metadata.md)**
 
-   *Saiba como gravar metadados de ativos de volta no AEM de um funcionário do Asset compute*
+   *Saiba como gravar metadados de ativos de volta em AEM de um trabalhador do Asset compute*
 
 * **[Extensibilidade de microsserviços do Asset compute (Tutorial)](./asset-compute/overview.md)**
 
@@ -44,7 +44,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 <table>
    <td>
       <a href="./accessing/overview.md">
-      <img alt="Configuração do acesso ao AEM como um Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
+      <img alt="Configuração do acesso a AEM as a Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
       </a>
       <div>
          <a href="./accessing/overview.md">
@@ -65,7 +65,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
          </a>
       </div>
       <p>
-         <em>Prepare sua máquina de desenvolvimento local para o AEM como um desenvolvimento de Cloud Service!</em>
+         <em>Prepare sua máquina de desenvolvimento local para AEM desenvolvimento as a Cloud Service!</em>
       <p>
    </td>   
    <td>
@@ -78,7 +78,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
          </a>
       </div>
       <p>
-         <em>Explore as ferramentas usadas para depurar seu aplicativo no AEM como uma inicialização rápida local do SDK do Cloud Service.</em>
+         <em>Explore as ferramentas usadas para depurar seu aplicativo na inicialização rápida local do SDK as a Cloud Service AEM.</em>
       <p>
    </td>
 </table>

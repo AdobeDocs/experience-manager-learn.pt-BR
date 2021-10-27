@@ -1,22 +1,22 @@
 ---
 title: Vídeos do AEM Assets Essentials
 description: Uma coleção de vídeos do Adobe Experience Manager Assets Essentials
-sub-product: ativos
-source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
+sub-product: assets
+exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
-
-# Visão geral
+# Vídeos do Assets Essentials
 
 ![Assets Essentials](./assets/overview/hero.png)
 
 O Experience Manager Assets Essentials fornece uma interface de usuário simplificada para gerenciamento e colaboração de ativos leves.
 
-Confira nossos vídeos sobre como usar o Assets Essentials para gerenciar seus ativos, bem como como como ele pode ser integrado ao Adobe Jornada Orchestrator!
+Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus ativos e como ele pode ser integrado ao Adobe Jornada Orchestrator!
 
 ## Saiba mais sobre o Assets Essentials
 

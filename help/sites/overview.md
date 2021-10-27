@@ -1,21 +1,19 @@
 ---
-title: Tutoriais do AEM Sites
-seo-title: Tutoriais do AEM Sites
-description: 'Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites. '
-seo-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites
-sub-product: sites, serviços de conteúdo
-topic: Gerenciamento de conteúdo
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+title: Vídeos e Tutoriais do AEM Sites
+description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites.
+sub-product: sites, content-services
+topic: Content Management
+exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '345'
 ht-degree: 21%
 
 ---
 
+# Vídeos e Tutoriais do AEM Sites {#overview}
 
-# Visão geral {#overview}
-
-Adobe Experience Manager (AEM) Sites é uma plataforma líder de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Sites.
+Adobe Experience Manager (AEM) Sites são uma plataforma líder de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Sites.
 
 ## Novidades
 
@@ -44,7 +42,7 @@ Adobe Experience Manager (AEM) Sites é uma plataforma líder de gerenciamento d
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR">
       <img alt="Introdução ao AEM Sites - Tutorial do WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
@@ -88,11 +86,11 @@ Adobe Experience Manager (AEM) Sites é uma plataforma líder de gerenciamento d
 ## Recursos adicionais
 
 * [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentação de criação do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [Documentação de desenvolvimento do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentação de administração do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentação de implantação do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
-* [Tutoriais do AEM Foundation](/help/foundation/overview.md)
+* [Tutoriais da AEM Foundation](/help/foundation/overview.md)
