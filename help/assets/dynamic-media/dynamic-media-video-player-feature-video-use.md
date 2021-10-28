@@ -1,23 +1,23 @@
 ---
 title: Uso do reprodutor de vídeo no AEM Dynamic Media
-description: AEM Dynamic Media video player costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes de desktop e os navegadores tornaram-se mais agressivos no streaming de conteúdo baseado em flash. Com a introdução do HLS (protocolo de entrega de vídeo HTTP Live Streaming da Apple), o conteúdo agora pode ser transmitido sem depender do flash.
+description: AEM Dynamic Media video player costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes de desktop e os navegadores tornaram-se mais agressivos no streaming de conteúdo baseado em flash. Com a introdução do HLS (Apple HTTP Live Streaming video delivery protocol), o conteúdo agora pode ser transmitido em fluxo sem depender do flash.
 sub-product: dynamic-media
-feature: Perfis de vídeo
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
+source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 8%
+source-wordcount: '223'
+ht-degree: 6%
 
 ---
 
-
 # Uso do reprodutor de vídeo no AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM Dynamic Media video player costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes de desktop e os navegadores tornaram-se mais agressivos no streaming de conteúdo baseado em flash. Com a introdução do HLS (protocolo de entrega de vídeo HTTP Live Streaming da Apple), o conteúdo agora pode ser transmitido sem depender do flash.
+AEM Dynamic Media video player costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes de desktop e os navegadores tornaram-se mais agressivos no streaming de conteúdo baseado em flash. Com a introdução do HLS (Apple HTTP Live Streaming video delivery protocol), o conteúdo agora pode ser transmitido em fluxo sem depender do flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
@@ -26,6 +26,9 @@ AEM Dynamic Media video player costumava confiar no tempo de execução do Flash
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
 O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fallback para entrega progressiva de vídeo
+
+>!![NOTE]
+O Dynamic Media Hybrid NÃO oferecerá suporte ao Internet Explorer 11 após maio de 2022.
 
 <table> 
  <thead> 
