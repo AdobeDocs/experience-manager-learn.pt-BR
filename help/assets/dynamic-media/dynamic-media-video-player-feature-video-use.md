@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
+source-git-commit: d8738ef33940efc856e6fc00f6a57abb641598e5
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 6%
@@ -27,8 +27,9 @@ AEM Dynamic Media video player costumava confiar no tempo de execução do Flash
 
 O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fallback para entrega progressiva de vídeo
 
->!![NOTE]
-O Dynamic Media Hybrid NÃO oferecerá suporte ao Internet Explorer 11 após maio de 2022.
+>[!NOTE]
+>
+> O Dynamic Media Hybrid NÃO oferecerá suporte ao Internet Explorer 11 após maio de 2022.
 
 <table> 
  <thead> 
