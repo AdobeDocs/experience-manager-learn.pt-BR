@@ -2,9 +2,9 @@
 user-guide-title: Vídeos e Tutoriais do AEM Assets
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets.
 breadcrumb-title: Tutoriais do AEM Assets
-feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 519047931bd4cbfb5dd2dd6f2b7b2871512992c5
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 26%
@@ -76,7 +76,7 @@ ht-degree: 26%
    + [Connected Assets](./sharing/connected-assets.md)
 
 
-+ Integração com fluxos de trabalho criativos{#creative-workflows}
++ Integração com workflows criativos{#creative-workflows}
    + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)

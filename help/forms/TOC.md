@@ -1,11 +1,11 @@
 ---
-feature-set: Experience Manager, Experience Manager Forms
+feature-set: Experience Manager Forms, Experience Manager
 role: Developer
 user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 3%
