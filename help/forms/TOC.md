@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 3%
 + Dicas e truques da interface do usuário{#ui-tips-and-tricks}
    + [Alternar texto do campo de senha](ui-tips-tricks/toggle-password.md)
    + [Botões da barra de ferramentas Espaço](ui-tips-tricks/toolbar-buttons.md)
+   + [Navegar pelas guias com painéis aninhados](ui-tips-tricks/nested-panels.md)
 + Personalização da caixa de entrada{#inbox-customization}
    + [Introdução](inbox-customization/introduction.md)
    + [Adicionar coluna personalizada](inbox-customization/add-married-column.md)
