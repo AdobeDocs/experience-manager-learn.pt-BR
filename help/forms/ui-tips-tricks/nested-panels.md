@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: 20cae7a327131927f831ae9c49fb5eebfb00f5c4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,6 +27,7 @@ Quando o formulário tiver guias de navegação esquerdas e uma das guias tiver 
 ## Criar formulário adaptável
 
 Crie um formulário adaptável com a seguinte estrutura. O painel raiz tem painéis filhos que são exibidos como guias à esquerda. Alguns deles &quot;**guias**&quot; tem painéis filhos adicionais. Por exemplo, a guia Família tem dois painéis filhos chamados Cônjuge e Filhos.
+
 Uma barra de ferramentas também é adicionada em FormContainer com os botões Anterior e Próximo
 
 ![espaçamento entre barras de ferramentas](assets/multiple-panels.png)
@@ -61,4 +62,5 @@ Use o editor de estilos para ocultar o título dos painéis filho de guias.
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
 >[!NOTE]
-> O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis filhos, essa funcionalidade não funcionaria.
+>
+>O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis filhos, essa funcionalidade não funcionaria.
