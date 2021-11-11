@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 3bbd3e51ced1d990532a2cb3e309bf944bab8434
+source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -61,10 +61,6 @@ Use o editor de estilos para ocultar o título dos painéis filho de guias.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
-O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis filhos, essa funcionalidade não funcionaria.
-
-<!--
 >[!NOTE]
 >
->The capability described in this article does not work in the last tab. For example if the Address tab had child panels this functionality would not work.
--->
+>O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis filhos, essa funcionalidade não funcionaria.
