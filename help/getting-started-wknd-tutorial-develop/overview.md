@@ -16,9 +16,9 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Há duas abordagens básicas para iniciar um projeto do AEM Sites.
 
 [Inicie o tutorial com o Arquétipo de projeto AEM](./project-archetype/overview.md)
 
-**Modelos de site AEM** - Uma abordagem de código baixo para gerar um Site de AEM usando um Modelo de Site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho temático para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Atualmente disponível apenas para AEM as a Cloud Service.
+**Modelos de site AEM** - Também conhecida como Criação rápida de site, uma abordagem de código baixo para gerar um site AEM usando um modelo de site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho temático para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Disponível apenas para AEM as a Cloud Service.
 
 [Iniciar o tutorial usando um modelo de site](./site-template/create-site.md)
 
@@ -64,7 +64,7 @@ Para testar o código mais recente antes de entrar no tutorial, baixe e instale 
 
 ### Alimentado pela Adobe Stock
 
-Muitas das imagens no site de referência WKND são de [Adobe Stock](https://stock.adobe.com/) e são Materiais de terceiros, conforme definido nos Termos Adicionais do Ativo de demonstração em [https://www.adobe.com/legal/terms.html](https://www.adobe.com/br/legal/terms.html). Se você quiser usar uma imagem do Adobe Stock para outros propósitos além da exibição deste site de demonstração, como exibi-la em um site ou em materiais de marketing, poderá comprar uma licença no Adobe Stock.
+Muitas das imagens no site de referência WKND são de [Adobe Stock](https://stock.adobe.com/) e são Materiais de terceiros conforme definido nos Termos Adicionais do Ativo de demonstração em [https://www.adobe.com/legal/terms.html](https://www.adobe.com/br/legal/terms.html). Se você quiser usar uma imagem do Adobe Stock para outros propósitos além da exibição deste site de demonstração, como exibi-la em um site ou em materiais de marketing, poderá comprar uma licença no Adobe Stock.
 
 Com o Adobe Stock, você tem acesso a mais de 140 milhões de imagens de alta qualidade e isentas de royalties, incluindo fotos, gráficos, vídeos e modelos para começar seus projetos criativos.
 
