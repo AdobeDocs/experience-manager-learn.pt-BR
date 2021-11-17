@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1628'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 3%
    + [Exibindo a Página de Agradecimentos](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Envio para Ponto Final Externo](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envio de email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
-   + [Fluxo de trabalho de solicitação de tempo limite pago](handling-form-submissions/paid-time-off-request-workflow.md)
+   + [Paid Time Off Request Workflow](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Configuração do formulário adaptável para acionar AEM fluxo de trabalho - vídeo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizar a atribuição de notificação de tarefa](handling-form-submissions/customize-assign-task-notification.md)
 + Integrações úteis{#some-useful-integrations}
@@ -57,7 +57,7 @@ ht-degree: 3%
    + [Enviar componente de email no fluxo de trabalho do AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
    + [Gerando DocumentOfRecord usando API](adaptive-forms/document-of-record-api-tutorial-use.md)
    + [Exibição de imagens em linha](adaptive-forms/inline-images-adaptive-forms.md)
-   + [Uso da API do GeoLocation](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
+   + [Uso da API da GeoLocation](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [Usando o Relatório de Transações](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [Integração de dados do perfil do usuário no AEM Forms](adaptive-forms/user-profile-data-integration-feature-video-use.md)
    + [Microsoft Dynamics com AEM Forms](adaptive-forms/using-ms-dynamics-with-aem-forms.md)
@@ -96,10 +96,11 @@ ht-degree: 3%
    + [Obter parâmetro de solicitação](prefill-fdm-db/get-request-parameter.md)
    + [Criar formulário adaptável](prefill-fdm-db/create-adaptive-form.md)
 + Dicas e truques da interface do usuário{#ui-tips-and-tricks}
-   + [Alternar texto do campo de senha](ui-tips-tricks/toggle-password.md)
+   + [Toggle password field text](ui-tips-tricks/toggle-password.md)
    + [Botões da barra de ferramentas Espaço](ui-tips-tricks/toolbar-buttons.md)
    + [Navegar pelas guias com painéis aninhados](ui-tips-tricks/nested-panels.md)
-+ Personalização da caixa de entrada{#inbox-customization}
+   + [Adicionar ícones às guias de navegação](ui-tips-tricks/active-complete.md)
++ Customizing inbox{#inbox-customization}
    + [Introdução](inbox-customization/introduction.md)
    + [Adicionar coluna personalizada](inbox-customization/add-married-column.md)
    + [Utilização de modelo sightly](inbox-customization/use-sightly-template.md)
@@ -152,13 +153,13 @@ ht-degree: 3%
    + [Testando a solução](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Variáveis no fluxo de trabalho AEM{#variables-aem-workflow}
    + [Introdução - Variáveis no fluxo de trabalho](variables-aem-workflow/introduction.md)
-   + [Variáveis XML](variables-aem-workflow/part1.md)
+   + [XML Variables](variables-aem-workflow/part1.md)
    + [Variáveis JSON](variables-aem-workflow/part2.md)
    + [Variáveis de documento](variables-aem-workflow/part3.md)
    + [Variável ArrayList](variables-aem-workflow/part4.md)
-   + [Variável do modelo de dados de formulário](variables-aem-workflow/form-data-model.md)
-   + [Editor de regras em AEM fluxo de trabalho](variables-aem-workflow/part5.md)
-+ Armazenando e Recuperando Dados de Formulário no Banco de Dados do MySQL{#storing-and-retrieving-form-data}
+   + [Form Data Model Variable](variables-aem-workflow/form-data-model.md)
+   + [Rule Editor in AEM Workflow](variables-aem-workflow/part5.md)
++ Storing and Retrieving Form Data in MySQL DB{#storing-and-retrieving-form-data}
    + [Introdução](storing-retrieving-form-data/introduction.md)
    + [Configurar fonte de dados](storing-retrieving-form-data/part1.md)
    + [Serviço para armazenar dados](storing-retrieving-form-data/part3.md)
@@ -264,13 +265,13 @@ ht-degree: 3%
    + [Serviços de documento: Etapas para ajustar o tamanho do pool bmc para XMLFormService part2](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
    + [Serviços de documento: Etapas para ajustar parâmetros no console JMX](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
    + [PDFG: Como alterar os tempos limite da transação no PDFG](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
-   + [PDFG: Como atualizar o tempo limite do CORBA no PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
-   + [PDFG: Como atualizar os tempos limite no PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
+   + [PDFG: How to update CORBA timeout in PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
+   + [PDFG: How to update the timeouts in PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
    + [PDFG: Etapas para adicionar o usuário PDFG no windows server 2016](troubleshooting/steps-to-add-pdfg-user-in-windows-server.md)
    + [PDFG: Etapas para verificar e instalar bibliotecas de 32 bits e suas dependências](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
    + [PDFG: Etapas para verificar a permissão da pasta no windows server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG: Etapas para ativar a restrição no unix](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
-   + [PDFG: Etapas para instalar redistribuíveis Microsoft Visual C++ de 32 bits necessários](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: Steps to install required 32bit Microsoft Visual C++ redistributables](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG: Etapas para executar e interpretar a saída da Ferramenta de disponibilidade do sistema](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
    + [PDFG: Etapas para solucionar problemas específicos do acrobat](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
    + [PDFG: Etapas para solucionar problemas de HtmltoPDF no Windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
@@ -314,7 +315,7 @@ ht-degree: 3%
    + [Geral: Etapas para habilitar o SSL para OSGi da AEM Forms](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
    + [Geral: Etapas para criptografar a senha do armazenamento de chaves a ser usada em lc_turnkey.xml](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
    + [Geral: Etapas para redefinir-padrão-senha-para-usuários-em-AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
-   + [Geral: Etapas para redefinir-padrão-senha-para-usuários-em-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [General: Steps-to-reset-default-password-for-users-in-AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [Geral: Etapas para configurar os localizadores do gemfire em um cluster e executar a configuração relacionada](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
 
 
