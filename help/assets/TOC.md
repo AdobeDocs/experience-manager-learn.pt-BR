@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience
 breadcrumb-title: Tutoriais do AEM Assets
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: cd54cfbbded4e44f4850f9dac8ab17d179e7d498
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 26%
+source-wordcount: '356'
+ht-degree: 25%
 
 ---
 
@@ -131,6 +131,11 @@ ht-degree: 26%
       + [Excluindo a configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download de ativos no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
+
++ Integração do Workfront{#workfront}
+   + Conector avançado{#enhanced-connector}
+      + [Noções básicas do conector aprimorado](./workfront/enhanced-connector/basics.md)
+      + [Pastas de projetos](./workfront/enhanced-connector/project-folders.md)
 
 + Tradução {#translation}
    + [Tradução do arquivo de origem](translation/source-file-translation-feature-video-use.md)
