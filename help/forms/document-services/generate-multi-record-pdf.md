@@ -1,18 +1,18 @@
 ---
 title: Geração de vários pdfs a partir de um arquivo de dados
 description: O OutputService fornece vários métodos para criar documentos usando um design de formulário e dados para mesclar com o design de formulário. Saiba como gerar vários pdfs de um xml grande contendo vários registros individuais.
-feature: Serviço de saída
+feature: Output Service
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Gerar um conjunto de documentos PDF a partir de um arquivo de dados xml
 
@@ -21,17 +21,14 @@ A seguir, a captura de tela do arquivo xml contendo vários registros.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-O xml de dados tem 2 registros. Cada registro é representado pelo elemento form1. Esse xml é passado para o método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) recebemos a lista de documentos pdf (um por registro)
-A assinatura do método generatePDFOutputBatch utiliza os seguintes parâmetros
+O xml de dados tem 2 registros. Cada registro é representado pelo elemento form1. Esse xml é passado para o OutputService [método generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) recebemos a lista de documentos pdf (um por registro) A assinatura do método generatePDFOutputBatch utiliza os seguintes parâmetros
 
 * modelos - Mapa contendo o modelo, identificado por uma chave
 * data - Mapa contendo documentos de dados xml, identificados por chave
 * pdfOutputOptions - opções para configurar a geração de pdf
 * batchOptions - opções para configurar o batch
 
->[!NOTE]
->
->Este caso de uso está disponível como exemplo em tempo real neste [site](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+
 
 ## Detalhes do caso de uso{#use-case-details}
 
@@ -127,10 +124,10 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Para testar esse recurso em seu servidor, siga as instruções abaixo:
 
-* [Baixe e extraia o conteúdo do arquivo zip para o seu sistema de arquivos](assets/mult-records-template-and-xml-file.zip). Esse arquivo zip contém o modelo e o arquivo de dados xml.
+* [Baixe e extraia conteúdo do arquivo zip para seu sistema de arquivos](assets/mult-records-template-and-xml-file.zip).Este arquivo zip contém o modelo e o arquivo de dados xml.
 * [Aponte seu navegador para o console da Web Felix](http://localhost:4502/system/console/bundles)
-* [Implante o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Implantar pacote](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom AEMFormsDocumentServices Personalizado que gera os pdf usando a API OutputService
+* [Implantar o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Implantar o pacote AEMFormsDocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)Pacote .Custom que gera os pdfs usando a API OutputService
 * [Aponte seu navegador para o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importe e instale o pacote](assets/generate-multiple-pdf-from-xml.zip). Este pacote contém a página html , que permite soltar o modelo e os arquivos de dados.
 * [Aponte seu navegador para MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
@@ -139,4 +136,3 @@ Para testar esse recurso em seu servidor, siga as instruções abaixo:
 
 >[!NOTE]
 >Há várias maneiras de acionar esse recurso. Neste exemplo, usamos uma interface da Web para soltar o modelo e o arquivo de dados para demonstrar o recurso.
-

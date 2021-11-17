@@ -1,20 +1,20 @@
 ---
 title: Preencher formulário usando o modelo de dados de formulário
-description: 'Preencha previamente o formulário adaptável usando o atributo de solicitação do modelo de dados de formulário '
-feature: Formulários adaptáveis
+description: Preencha previamente o formulário adaptável usando o atributo de solicitação do modelo de dados de formulário
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4419
 thumbnail: 36387.jpg
-topic: Desenvolvimento
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Preencher formulário usando o modelo de dados de formulário
 
@@ -23,12 +23,10 @@ Ao concluir este curso, terá aprendido o seguinte.
 
 * Criar Modelo de Dados de Formulário RDBMS
 * Criar Associação entre 2 entidades
-* Preencha a tabela com dados retornados pelo serviço _get_ do Modelo de Dados de Formulário
+* Preencher tabela com dados retornados por _get_ Serviço do Modelo de Dados de Formulário
 * Usar o atributo de solicitação do Modelo de dados de formulário
 
-
-[Clique para ver uma demonstração ao vivo do ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
-recurso. O vídeo a seguir fornece uma visão geral do curso
+O vídeo a seguir oferece uma visão geral do curso
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Pré-requisitos
@@ -36,4 +34,3 @@ recurso. O vídeo a seguir fornece uma visão geral do curso
 * Instância de trabalho do AEM Forms
 * Familiarizar-se com o banco de dados MySQL e o Workbench MySQL
 * Alguma experiência na criação do Adaptive Forms
-

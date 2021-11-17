@@ -1,31 +1,31 @@
 ---
 title: Serviço De Código De Barras Com Forms Adaptável
 description: Uso do serviço de código de barras para decodificar o código de barras e preencher campos de formulário a partir dos dados extraídos.
-feature: Forms com códigos de barras
+feature: Barcoded Forms
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Serviço De Código De Barras Com Forms Adaptável{#barcode-service-with-adaptive-forms}
 
 Este artigo demonstrará o uso do serviço de código de barras para preencher o formulário adaptável. O caso de uso é o seguinte:
 
-1. O usuário adiciona PDF com código de barras como anexo de formulário adaptável
+1. O usuário adiciona PDF com código de barras como anexo do formulário adaptável
 1. O caminho do anexo é enviado para o servlet
 1. O servlet decodificou o código de barras e retorna os dados no formato JSON
 1. O formulário adaptável é então preenchido usando os dados decodificados
 
 O código a seguir decodifica o código de barras e preenche um objeto JSON com os valores decodificados. Em seguida, o servlet retorna o objeto JSON em sua resposta ao aplicativo chamador.
 
-Você pode ver esse recurso ao vivo, visite o [portal de amostras](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e pesquise a demonstração do serviço de código de barras
+
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -140,11 +140,10 @@ Linha 23 - Chame o método extractBarCode de DocumentServices para obter o objet
 
 Para executá-lo em seu sistema, siga as seguintes etapas
 
-1. [Baixe a importação do BarcodeService.](assets/barcodeservice.zip) zipe para o AEM usando o gerenciador de pacotes
+1. [Baixar BarcodeService.zip](assets/barcodeservice.zip) e importar para AEM usando o gerenciador de pacotes
 1. [Baixe e instale o Pacote de serviços de documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Baixe o formulário PDF de amostra](assets/barcode.pdf)
 1. Aponte seu navegador para o [formulário adaptável de amostra](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Faça upload do PDF de amostra fornecido
 1. Você deve ver os formulários preenchidos com os dados
-

@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 # Guias Navegação com vários painéis
 
 Quando o formulário tiver guias de navegação esquerdas e uma das guias tiver vários painéis, talvez você queira ocultar o título dos painéis filhos e ainda conseguir navegar entre as guias e os painéis filhos dessa guia
-
-[Esse recurso está ativo neste formulário](https://forms.enablementadobe.com/content/forms/af/testnav1.html)
-
-
-
 
 ## Criar formulário adaptável
 

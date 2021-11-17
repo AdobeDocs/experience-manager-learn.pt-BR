@@ -1,8 +1,8 @@
 ---
 title: Criação da sua primeira comunicação interativa para o canal da Web
-seo-title: Criação da sua primeira comunicação interativa para o canal da Web
+seo-title: Creating your first interactive communication for the web channel
 description: As Comunicações interativas são novas no AEM Forms 6.4. Este documento guiará você pelas etapas necessárias para criar uma comunicação interativa para o canal da Web.
-seo-description: As Comunicações interativas são novas no AEM Forms 6.4. Este documento guiará você pelas etapas necessárias para criar uma comunicação interativa para o canal da Web.
+seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the web channel.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,24 +12,21 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Criação da sua primeira comunicação interativa para o canal da Web
 
 As Comunicações interativas são novas no AEM Forms 6.4. Este documento guiará você pelas etapas necessárias para criar uma comunicação interativa para o canal de impressão.
 
-Visite a página [AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) para obter um link para uma demonstração ao vivo desse recurso.
-
 ## Pré-requisitos {#prerequistes}
 
-[Baixe e importe o ativo relacionado a este tutorial para o AEM usando o gerenciador de pacotes.](assets/gettingstartedassets.zip). Este arquivo zip contém imagens e fragmentos de documento que serão usados neste tutorial
+[Baixe e importe o ativo relacionado a este tutorial no AEM usando o gerenciador de pacotes.](assets/gettingstartedassets.zip). Este arquivo zip contém imagens e fragmentos de documento que serão usados neste tutorial
 
 [Baixe e descompacte este arquivo.](assets/warfileandswaggerfile.zip) Este arquivo contém o arquivo SampleRest.war que precisa ser implantado no arquivo Tomcat e swagger, que precisa ser usado para configurar sua fonte de dados.
 
@@ -40,7 +37,3 @@ Ao concluir este tutorial, você aprenderá o seguinte:
 * Criar fragmentos de documento
 * Configurar tabelas e gráficos
 * Entregar Documentos de Canal da Web
-
-
-
-

@@ -1,33 +1,32 @@
 ---
-title: Renderização do XDP em PDF com direitos de uso
+title: Renderização do XDP no PDF com direitos de uso
 description: Aplicar direitos de uso ao pdf
 version: 6.4,6.5
-feature: Serviço do Forms
-topic: Desenvolvimento
+feature: Forms Service
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
+# Renderização do XDP no PDF com direitos de uso{#rendering-xdp-into-pdf-with-usage-rights}
 
-# Renderização do XDP em PDF com direitos de uso{#rendering-xdp-into-pdf-with-usage-rights}
-
-Um caso de uso comum é renderizar o xdp em PDF e aplicar extensões do Reader ao PDF renderizado.
+Um caso de uso comum é renderizar o xdp no PDF e aplicar as extensões do Reader ao PDF renderizado.
 
 Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em XDP, podemos renderizar XDP como PDF e o leitor estender o PDF.
 
-Para testar esse recurso, você pode tentar este [link](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse2). O nome da amostra é &quot;Render e Reader Extend XDP&quot;
 
 Para realizar esse caso de uso, precisamos fazer o seguinte.
 
-* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões do Reader estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões do Reader estão listadas [here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
-* Também é possível consultar o vídeo sobre como configurar [credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* Você também pode se referir ao vídeo em [configuração de credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
 * Crie um serviço OSGi personalizado que renderizará e aplicará direitos de uso. O código para fazer isso está listado abaixo
@@ -123,13 +122,13 @@ public @interface DocSvcConfiguration {
 
 ## Criar servlet para transmitir o PDF {#create-servlet-to-stream-the-pdf}
 
-A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
+A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF no sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
 
 A seguir, o código do servlet. Passamos o caminho do XDP no repositório CRX para este servlet.
 
 Em seguida, chamamos o método renderAndExtendXdp de com.aemformssamples.documentservices.core.DocumentServices.
 
-O PDF estendido pelo leitor é então transmitido ao aplicativo chamador
+O PDF estendido do leitor é transmitido ao aplicativo chamador
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -203,8 +202,5 @@ Para testar isso em seu servidor local, siga as etapas a seguir
 1. [Baixe e importe os ativos relacionados a este artigo no AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
    * Este pacote tem um portal de exemplo e um arquivo xdp
 1. Adicionar certificado de extensões Reader ao usuário &quot;fd-service&quot;
-1. Aponte seu navegador para [página da Web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Aponte seu navegador para [página da web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Clique no ícone de pdf para renderizar o xdp como um arquivo pdf com direitos de uso aplicados.
-
-
-

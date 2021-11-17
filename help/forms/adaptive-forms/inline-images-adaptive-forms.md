@@ -1,25 +1,23 @@
 ---
 title: Exibição de imagens em linha no Adaptive Forms
 description: Exibir imagens carregadas em linha no Adaptive Forms
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 version: 6.3,6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 4a69513d-992c-435a-a520-feb9085820e7
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Imagens em linha no Adaptive Forms
 
 Um caso de uso comum é exibir a imagem carregada como uma imagem embutida no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada ao exibir a imagem no formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
-
-[Exemplo ao vivo desse recurso](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Adicionar imagem de espaço reservado
 
@@ -66,7 +64,7 @@ function consumeImage (file) {
 
 ### Implantar no servidor
 
-* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
+* Baixe e instale o [biblioteca do cliente](assets/inline-image-client-library.zip) na sua instância AEM usando AEM gerenciador de pacotes.
 * Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
-* Aponte seu navegador para [Adicionar imagem embutida](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Aponte seu navegador para [Adicionar imagem em linha](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Clique no botão &quot;Anexar sua foto&quot; para adicionar a imagem

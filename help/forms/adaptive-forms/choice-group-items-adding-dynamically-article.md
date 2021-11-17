@@ -6,31 +6,28 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
-
 
 # Adicionar itens dinamicamente ao componente de grupo de escolha
 
 O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha do Adaptive Forms, como CheckBox, botão de opção e lista de imagens.
 
-[Esse recurso está disponível no servidor](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) de amostras. Procure por itens da caixa de seleção dinâmica e clique em &quot;Testar&quot;
-
 
 Você pode adicionar itens usando o editor visual, bem como o editor de códigos, dependendo do seu caso de uso.
 
-**Usando o editor visual:** você pode preencher os itens do grupo de opções a partir dos resultados de uma chamada de função ou de serviço. Por exemplo, é possível definir os itens do grupo de opções consumindo a resposta de uma chamada de API REST.
+**Usando o editor visual:** Você pode preencher os itens do grupo de escolha a partir dos resultados de uma chamada de função ou chamada de serviço. Por exemplo, é possível definir os itens do grupo de opções consumindo a resposta de uma chamada de API REST.
 
 Na captura de tela abaixo, estamos definindo as opções de Período de empréstimo (anos) para os resultados de uma chamada de serviço chamada getLoanPeriods.
 
 ![Editor de regras](assets/ruleeditor.png)
 
-**Usando o editor** de código: Quando quiser definir os itens no grupo de opções dinamicamente com base nos valores inseridos no formulário. Por exemplo, o trecho de código a seguir define os itens da caixa de seleção de acordo com os valores inseridos nos campos Nome do requerente e cônjuge do Formulário adaptativo.
+**Uso do editor de código**: Quando quiser definir os itens no grupo de opções dinamicamente com base nos valores inseridos no formulário. Por exemplo, o trecho de código a seguir define os itens da caixa de seleção de acordo com os valores inseridos nos campos Nome do requerente e cônjuge do Formulário adaptativo.
 
 No snippet do código, estamos configurando os itens de membros de trabalho, que é um componente de caixa de seleção. A matriz para os itens está sendo construída dinamicamente buscando os valores dos campos de texto RequerName e do cônjuge dos formulários adaptáveis
 
