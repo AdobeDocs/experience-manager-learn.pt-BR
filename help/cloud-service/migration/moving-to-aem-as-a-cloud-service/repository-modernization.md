@@ -1,5 +1,5 @@
 ---
-title: Modernização do Repositório
+title: Modernização do repositório
 description: Saiba mais sobre a modernização do repositório, conteúdo mutável e imutável, estrutura de pacotes e a ferramenta CLI do modernizador de repositório.
 version: Cloud Service
 feature: Developer Tools
@@ -9,14 +9,14 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Modernização do Repositório
+# Modernização do repositório
 
 Saiba mais sobre a modernização do repositório, conteúdo mutável e imutável, estrutura de pacotes e a ferramenta CLI do modernizador de repositório.
 
@@ -28,9 +28,9 @@ Saiba mais sobre a modernização do repositório, conteúdo mutável e imutáve
 
 Como parte da refatoração da base de código, use o [Ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) para reestruturar uma base de código 6.x para uma estrutura mais moderna.
 
-### Atividades principais
+## Atividades principais
 
 * Use o [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) ferramenta para reestruturar um projeto para corresponder à estrutura esperada de um projeto as a Cloud Service AEM.
 * Ajuste e corrija manualmente quaisquer erros de criação na base de código atualizada.
-* Configure um [ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) e implante a base de código atualizada. Iterar até que o projeto esteja em estado estável.
+* Configure um [ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR) e implante a base de código atualizada. Iterar até que o projeto esteja em estado estável.
 * Implante a base de código atualizada em um ambiente de desenvolvimento as a Cloud Service AEM e continue a validar.
