@@ -5,17 +5,17 @@ doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
-feature: Fragmentos de conteúdo, API GraphQL
-topic: Sem periféricos, gerenciamento de conteúdo
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao AEM Headless - GraphQL
 
@@ -33,10 +33,11 @@ Este tutorial abordará os seguintes tópicos:
 
 ## Vamos começar!
 
-Inicie o tutorial GraphQL da AEM, pulando no capítulo [Configuração rápida](./setup.md)!
+1. Configurar um ambiente de desenvolvimento usando [AEM as a Cloud Service](../quick-setup/cloud-service.md) ou usando [o SDK local](../quick-setup/local-sdk.md).
+2. Inicie o tutorial com [Definição dos modelos de fragmento do conteúdo](content-fragment-models.md).
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis nos [Guias AEM - Projeto GitHub GraphQL da WKND](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis na variável [Guias de AEM - Projeto GitHub GraphQL da WKND](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 20%
 + [Visão geral AEM sem cabeçalho](./overview.md)
 + GraphQL {#graphql}
    + [Visão geral](./graphql/overview.md)
+   + [Configuração rápida](./graphql/quick-setup/cloud-service.md)
+   + [Configuração rápida do SDK local](./graphql/quick-setup/local-sdk.md)
    + Série Video{#video-series}
       + [1 - Noções básicas da modelagem](./graphql/video-series/modeling-basics.md)
       + [2 - Modelagem avançada](./graphql/video-series/advanced-modeling.md)
@@ -29,13 +31,12 @@ ht-degree: 20%
       + [7 - Consultas Persistentes GraphQL](./graphql/video-series/graphql-persisted-queries.md)
    + Tutorial em várias etapas{#multi-step}
       + [Visão geral](./graphql/multi-step/overview.md)
-      + [1 - Configuração rápida](./graphql/multi-step/setup.md)
-      + [2 - Definição dos modelos de fragmento de conteúdo](./graphql/multi-step/content-fragment-models.md)
-      + [3 - Criação dos fragmentos de conteúdo](./graphql/multi-step/author-content-fragments.md)
-      + [4 - Explorar APIs GraphQL](./graphql/multi-step/explore-graphql-api.md)
-      + [5 - Consulta de um aplicativo externo](./graphql/multi-step/graphql-and-external-app.md)
-      + [6 - Modelagem de dados avançada com referências de fragmento](./graphql/multi-step/fragment-references.md)
-      + [7 - Implantação de produção](./graphql/multi-step/production-deployment.md)
+      + [1 - Definição dos modelos de fragmento de conteúdo](./graphql/multi-step/content-fragment-models.md)
+      + [2 - Criação dos fragmentos de conteúdo](./graphql/multi-step/author-content-fragments.md)
+      + [3 - Explorar APIs GraphQL](./graphql/multi-step/explore-graphql-api.md)
+      + [4 - Consulta de um aplicativo externo](./graphql/multi-step/graphql-and-external-app.md)
+      + [5 - Modelagem de dados avançada com referências de fragmento](./graphql/multi-step/fragment-references.md)
+      + [6 - Implantação de produção](./graphql/multi-step/production-deployment.md)
    + Exemplos {#example-apps}
       + [Reagir](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)

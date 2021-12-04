@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: f13f32de11bda924a2d255678e58e7c982d0d004
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -193,5 +193,7 @@ _Screencast de etapas_
 Parabéns! Você usou com sucesso o AEM Headless para alimentar um aplicativo React!
 
 Para entender em detalhes como o aplicativo React consome conteúdo de AEM as a Cloud Service, confira [o tutorial AEM Headless](../multi-step/overview.md). O tutorial explica como os Fragmentos de conteúdo no AEM foram criados e como esse aplicativo React consome seu conteúdo como JSON.
+
+### Próximas etapas
 
 + [Inicie o tutorial AEM Headless](../multi-step/overview.md)
