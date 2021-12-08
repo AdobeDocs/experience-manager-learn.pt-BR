@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
+source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 23%
+source-wordcount: '636'
+ht-degree: 22%
 
 ---
 
@@ -89,6 +89,16 @@ ht-degree: 23%
    + [Perfis de produto do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM usuários, grupos e permissões](./accessing/aem-users-groups-and-permissions.md)
    + [Configuração do acesso ao AEM](./accessing/walk-through.md)
++ Rede avançada{#networking}
+   + [Visão geral](./networking/advanced-networking.md)
+   + [Saída flexível da porta](./networking/flexible-port-egress.md)
+   + [Endereço IP de saída dedicado](./networking/dedicated-egress-ip-address.md)
+   + [Rede privada virtual](./networking/vpn.md)
+   + Exemplos de código{#examples}
+      + [HTTP/HTTPS em portas não padrão](./networking/examples/http-on-non-standard-ports.md)
+      + [Conexões SQL usando DataSourcePool](./networking/examples/sql-datasourcepool.md)
+      + [Conexões SQL usando APIs Java SQL](./networking/examples/sql-java-apis.md)
+      + [Serviço de email](./networking/examples/email-service.md)
 + Migração {#migration}
    + [Ferramenta Transferência de conteúdo](./migration/content-transfer-tool.md)
    + [Importação em massa de ativos](./migration/bulk-import.md)
