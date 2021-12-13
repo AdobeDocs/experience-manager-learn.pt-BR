@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9355
 thumbnail: KT-9355.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
+source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Conexões SQL usando JDBC DataSourcePool
 
@@ -32,7 +32,7 @@ O código de exemplo a seguir é suportado pelas seguintes opções avançadas d
 
 A cadeia de conexão da configuração OSGi usa:
 
-+ `AEM_PROXY_HOST` por meio da [Variável do ambiente de configuração OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST]` como o host da conexão
++ `AEM_PROXY_HOST` por meio da [Variável do ambiente de configuração OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como o host da conexão
 + `30001` que é o `portOrig` valor do mapeamento de encaminhamento da porta do Cloud Manager `30001` → `mysql.example.com:3306`
 
 Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL são melhor fornecidos por meio das variáveis de configuração OSGi, definidas usando AIO CLI ou APIs do Cloud Manager.
@@ -43,7 +43,7 @@ Como os segredos não devem ser armazenados no código, o nome de usuário e a s
 {
   "datasource.name": "wknd-examples-mysql",
   "jdbc.driver.class": "com.mysql.jdbc.Driver",
-  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST]:30001/wknd-examples",
+  "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/wknd-examples",
   "jdbc.username": "$[env:MYSQL_USERNAME;default=mysql-user]",
   "jdbc.password": "$[secret:MYSQL_PASSWORD]"
 }
