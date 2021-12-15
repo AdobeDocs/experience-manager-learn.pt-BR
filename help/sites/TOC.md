@@ -3,9 +3,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Sites
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriais do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '435'
 ht-degree: 26%
 
 ---
@@ -44,7 +44,6 @@ ht-degree: 26%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Configurar a publicação do Social com fragmentos de experiência](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Desenvolvimento {#developing}
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
