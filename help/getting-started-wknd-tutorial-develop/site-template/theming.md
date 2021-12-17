@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Fluxo de trabalho de temas {#theming}
-
->[!CAUTION]
->
-> No momento, a ferramenta Criação rápida de site é uma visualização técnica. É disponibilizado para fins de ensaio e avaliação e não se destina à utilização da produção, a menos que acordado com o apoio ao Adobe.
 
 Neste capítulo, atualizaremos as fontes de tema de um site do Adobe Experience Manager para aplicar estilos específicos da marca. Nós aprenderemos a usar um servidor proxy para exibir uma pré-visualização das atualizações de CSS e Javascript enquanto codificamos no site ativo. Este tutorial também abordará como implantar atualizações de temas em um site AEM usando o pipeline front-end do Adobe Cloud Manager.
 
