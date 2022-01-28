@@ -13,7 +13,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 3%
@@ -189,7 +189,7 @@ Uma alternativa para definir níveis de log Java estáticos bem conhecidos para 
 
 Isso requer a atualização das configurações de log do OSGi para usar os espaços reservados da variável específica do ambiente. [Valores padrão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) para níveis de log deve ser definido como de acordo [Recomendações do Adobe](#log-levels). Por exemplo:
 
-`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
+`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
 ```
 {
