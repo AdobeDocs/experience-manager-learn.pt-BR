@@ -131,18 +131,18 @@ Em seguida, crie um modelo que contenha informações sobre uma pessoa.
 
 10. Em **Aceitar somente a largura da imagem especificada**, selecione &quot;Largura máxima&quot;. No **Máx (pixels)** digite &quot;500&quot;. Selecione as mesmas opções para **Aceitar apenas uma altura de imagem especificada**.
 
-   Essas validações garantem que as imagens adicionadas não excedam os valores especificados. As regras de validação agora devem ter esta aparência:
-   ![Regras de validação de referência de conteúdo](assets/define-content-fragment-models/content-reference-validation.png)
+    Essas validações garantem que as imagens adicionadas não excedam os valores especificados. As regras de validação agora devem ter esta aparência:
+    ![Regras de validação de referência de conteúdo](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. Adicione um **Texto de várias linhas** e dê a ele um **Rótulo do campo** de &quot;Biografia&quot;. Deixe o **Tipo padrão** lista suspensa como a opção padrão &quot;Rich Text&quot;.
 
-   ![Opções de biografia](assets/define-content-fragment-models/biography.png)
+    ![Opções de biografia](assets/define-content-fragment-models/biography.png)
 
 12. Navegue até o **Tipos de dados** e arraste uma **Enumeração** embaixo de &quot;Imagem do perfil&quot;. Em vez do padrão **Renderizar como** , selecione **Lista suspensa**. Insira uma seleção de opções de nível de experiência de instrutor, como Expert, Advanced, Intermediate.
 
 13. Em seguida, arraste outro **Enumeração** em &quot;Nível de experiência do instrutor&quot; e escolha &quot;caixas de seleção&quot; no campo **Renderizar como** opção. Insira habilidades diferentes, como Escala de Rock, Surfe, Ciclismo, Esqui e Background. O rótulo da opção e o valor da opção devem corresponder como abaixo:
 
-   ![Enumeração de Habilidades](assets/define-content-fragment-models/skills-enum.png)
+    ![Enumeração de Habilidades](assets/define-content-fragment-models/skills-enum.png)
 
 14. Por fim, crie um rótulo de campo &quot;Detalhes do administrador&quot; usando um **Texto de várias linhas** campo.
 
