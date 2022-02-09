@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '674'
 ht-degree: 21%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 21%
       + [Modernizador do Repositório de Código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Conversor do Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Conversor de índice](./migration/cloud-acceleration-manager/index-converter.md)
-      + [Ferramenta Migração de fluxo de trabalho de ativos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Migração de fluxo de trabalho de ativos Ferramenta](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegação pelo Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Uso do Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
@@ -166,6 +166,12 @@ ht-degree: 21%
       + [Mesclar dados com modelo](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Testar a solução](./forms/doc-gen-forms-cs/test.md)
       + [Desafio](./forms/doc-gen-forms-cs/challenge.md)
+   + Geração de documento usando API em lote{#formscs-batch-api}
+      + [Introdução](./forms/formscs-batch-api/introduction.md)
+      + [Configurar o Armazenamento do Azure](./forms/formscs-batch-api/configure-azure-storage.md)
+      + [Criar configuração em lote do USC](./forms/formscs-batch-api/configure-usc-batch.md)
+      + [Criar configuração em lote](./forms/formscs-batch-api/create-batch-config.md)
+      + [Executar lote](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Armazenamento do Portal do Azure{#forms-cs-azure-portal}
       + [Introdução](./forms/forms-cs-azure-portal/introduction.md)
       + [Criar modelo de dados do formulário](./forms/forms-cs-azure-portal/create-fdm.md)

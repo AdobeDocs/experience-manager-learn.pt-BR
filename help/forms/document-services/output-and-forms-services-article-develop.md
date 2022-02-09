@@ -1,18 +1,18 @@
 ---
 title: Desenvolvimento com serviços de saída e Forms no AEM Forms
 description: Uso da API de serviço do Output e Forms no AEM Forms
-feature: Serviço de saída
+feature: Output Service
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolvimento com serviços de saída e Forms no AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
@@ -21,7 +21,7 @@ Uso da API de serviço do Output e Forms no AEM Forms
 Neste artigo, analisaremos o seguinte
 
 * Serviço de saída - Normalmente, esse serviço é usado para unir dados xml ao modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o[javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o serviço de saída.
-* FormsService - é um serviço muito versátil que permite exportar/importar dados de e para arquivo PDF. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) para o serviço Forms.
+* FormsService - Esse é um serviço muito versátil que permite exportar/importar dados de e para o PDF file. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) para o serviço Forms.
 
 
 O trecho de código a seguir exporta dados do arquivo PDF
@@ -41,7 +41,7 @@ A Linha2 extrai o saveLocation da solicitação
 
 A Linha 5 obtém o FormsService
 
-A Linha 6 exporta o xmlData do arquivo PDF
+A Linha 6 exporta o xmlData do Arquivo PDF
 
 **Para testar o pacote de amostra em seu sistema**
 
@@ -60,45 +60,41 @@ A Linha 6 exporta o xmlData do arquivo PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Pesquise por &quot;Filtro do referenciador do Sling&quot;
-1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste)
-Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações de POST para seu servidor. Instale o aplicativo Postman no seu sistema.
+1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código da amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações de POST para seu servidor. Instale o aplicativo Postman no seu sistema.
 Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
 
-Certifique-se de ter selecionado &quot;POST&quot; na lista suspensa
-http://localhost:4502/content/AemFormsSamples/exportdata.html
-Especifique &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especificar o nome de usuário e a senha do servidor AEM
-Navegue até a guia &quot;Corpo&quot; e especifique os parâmetros da solicitação, conforme mostrado na imagem abaixo
+Selecione &quot;POST&quot; na lista suspensa http://localhost:4502/content/AemFormsSamples/exportdata.html Certifique-se de especificar &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especifique o nome de usuário e a senha do AEM Server Navegue até a guia &quot;Corpo&quot; e especifique os parâmetros da solicitação, conforme mostrado na imagem abaixo
 ![exportar](assets/postexport.png)
 Em seguida, clique no botão Send
 
 A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Forms Service, o url do serviço, os parâmetros de entrada que cada serviço espera
 
-**Mesclar dados e Nivelar saída:**
+## Mesclar dados e Nivelar saída
 
 * Use o Serviço de Saída para unir dados ao documento xdp ou pdf para gerar pdf nivelado
 * **POST URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Parâmetros da solicitação -**
 
-   * xdp_or_pdf_file : O arquivo xdp ou pdf com o qual você deseja mesclar dados
-   * xmlfile: O arquivo de dados xml que será mesclado com xdp_or_pdf_file
-   * saveLocation: O local para salvar o documento renderizado em seu sistema de arquivos
+   * **xdp_or_pdf_file** : O arquivo xdp ou pdf com o qual você deseja mesclar dados
+   * **xmlfile**: O arquivo de dados xml que será mesclado com xdp_or_pdf_file
+   * **saveLocation**: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo c:\\documents\\sample.pdf
 
-**Importar dados para o arquivo PDF:**
-* Usar o FormsService para importar dados para um arquivo PDF
-* **URL do POST**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
+### Importar dados para o arquivo PDF
+
+* Use o FormsService para importar dados para o arquivo PDF
+* **POST URL** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parâmetros da solicitação:**
 
-   * pdffile : O arquivo pdf com o qual você deseja mesclar dados
-   * xmlfile: O arquivo de dados xml que será unido ao arquivo pdf
-   * saveLocation: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo c:\\\outputsample.pdf.
+   * **pdffile** : O arquivo pdf com o qual você deseja mesclar dados
+   * **xmlfile**: O arquivo de dados xml que será unido ao arquivo pdf
+   * **saveLocation**: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo c:\\outputsample.pdf.
 
 **Exportar dados do arquivo PDF**
-* Usar o FormsService para exportar dados do arquivo PDF
-* **POST** URL - http://localhost:4502/content/AemFormsSamples/exportdata.html
+* Use o FormsService para exportar dados do arquivo PDF
+* **POST UR** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parâmetros da solicitação:**
 
-   * pdffile : O arquivo pdf do qual você deseja exportar dados.
-   * saveLocation: O local para salvar os dados exportados em seu sistema de arquivos
+   * **pdffile** : O arquivo pdf do qual você deseja exportar dados.
+   * **saveLocation**: O local para salvar os dados exportados em seu sistema de arquivos. Por exemplo c:\\documents\\exported_data.xml
 
 [É possível importar essa coleção de cartazes para testar a API](assets/document-services-postman-collection.json)
-
