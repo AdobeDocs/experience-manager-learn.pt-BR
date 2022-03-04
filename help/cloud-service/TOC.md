@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
+source-git-commit: cfbc9078abf790034ec485dd3a5efbfcb9723eaa
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -188,6 +188,11 @@ ht-degree: 23%
       + [Configuração de nuvem do Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Criar formulário adaptável](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurar para preenchimento e sinal](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integração com o Microsoft Dynamics{#formscs-dynamics-crm}
+      + [Criar aplicativo dinâmico](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [Configurar fonte de dados](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Criar modelo de dados do formulário](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Criar formulário adaptável](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrar com o Salesforce{#integrate-with-salesforce}
       + [Introdução](./forms/integrate-with-salesforce/introduction.md)
       + [Criar aplicativo conectado](./forms/integrate-with-salesforce/create-connected-app.md)
