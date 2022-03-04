@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 21%
+source-wordcount: '679'
+ht-degree: 23%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 21%
       + [Modernizador do Repositório de Código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Conversor do Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Conversor de índice](./migration/cloud-acceleration-manager/index-converter.md)
-      + [Migração de fluxo de trabalho de ativos Ferramenta](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Ferramenta Migração de fluxo de trabalho de ativos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegação pelo Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Uso do Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
@@ -217,6 +217,9 @@ ht-degree: 21%
    + Avançado {#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
    + [Resolução de problemas](./asset-compute/troubleshooting.md)
++ Cloud 5{#cloud-5}
+   + [Introdução](./cloud-5/cloud5-introduction.md)
+   + [CDN Deep Dive](./cloud-5/cloud5-aem-cdn-part1.md)
 + [Série AEM especialistas](./aem-experts-series.md)
 + Tutorials de várias etapas{#multi-step-tutorials}
    + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
