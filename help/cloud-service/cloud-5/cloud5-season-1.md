@@ -1,22 +1,28 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud 5 - Temporada 1
-description: Saiba mais sobre o AEM (Adobe) as a Cloud Service de engenheiros especialistas que o criam e de serviços especializados especializados que o fornecem.
+title: Cloud 5 - Temporada 1
+description: Saiba mais sobre a Adobe (AEM), as a Cloud Service dos engenheiros especialistas da Adobe Experience Manager, que a criam e dos serviços especializados que a oferecem.
 sub-product: sites, cloud-manager, assets
-recommendations: noDisplay
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+solution: Experience Manager as a Cloud Service, Experience Manager
+recommendations: noDisplay, noCatalog
+exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
+source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# Introdução ao Cloud 5
+# Cloud 5
+
+![Série AEM especialistas](./imgs/masthead.png)
+
+## Introdução
 
 Bem-vindo ao Cloud 5 Series da AEM Engineering. Um dos principais problemas na fase de implementação de qualquer produto é ter amostras de código suficientes e/ou demonstrações ao vivo dessas amostras, ferramenta ou APIs. O objetivo desta série é fornecer informações úteis sobre AEM as a Cloud Service em 5 minutos ou menos.
 
 ## Temporada 1
 
-Cada estação varia em comprimento e é lançada de acordo com uma programação fixa. Os tópicos da temporada 1 são impulsionados principalmente por solicitações anteriores que encontramos em nossos envolvimentos diários com clientes e parceiros. Visite esta página para obter atualizações semanais ou siga-nos na rede social de sua escolha.
+Cada estação varia muito e será lançada de acordo com uma programação fixa. Os tópicos da temporada 1 são impulsionados principalmente por solicitações anteriores que encontramos em nossos envolvimentos diários com clientes e parceiros. Visite esta página para obter atualizações semanais ou siga-nos na rede social de sua escolha.
 
 <table>
   <tr>
