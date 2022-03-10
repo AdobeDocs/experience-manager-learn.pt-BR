@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 AEM CDN Parte1
+title: Cloud 5 AEM CDN Parte 1
 description: Esta é a parte 1 de um mergulho profundo na CDN AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
@@ -9,13 +9,13 @@ recommendations: noDisplay
 hidefromtoc: true
 kt: 9797
 thumbnail: 340760.jpeg
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+exl-id: 8b608b05-48ee-434f-8d5a-6c5ff1969dcf
+source-git-commit: ebbd31f7ffe677668bf8d351212b7b2957106595
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
-
 
 # Cloud 5 AEM CDN Parte 1
 

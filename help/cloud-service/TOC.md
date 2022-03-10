@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+source-git-commit: ebbd31f7ffe677668bf8d351212b7b2957106595
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 23%
+source-wordcount: '700'
+ht-degree: 24%
 
 ---
 
@@ -226,10 +226,11 @@ ht-degree: 23%
    + [Introdução](./cloud-5/cloud5-introduction.md)
    + [Temporada 1](./cloud-5/cloud5-season-1.md)
    + [AEM CDN Parte 1](./cloud-5/cloud5-aem-cdn-part1.md)
+   + [CDN AEM Parte 2](./cloud-5/cloud5-aem-cdn-part2.md)
 + [Série AEM especialistas](./aem-experts-series.md)
 + Tutorials de várias etapas{#multi-step-tutorials}
    + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR)
    + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Editor de SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
