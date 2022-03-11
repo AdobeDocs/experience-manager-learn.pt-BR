@@ -1,8 +1,8 @@
 ---
 title: AEM Forms com esquema JSON e dados[Parte 1]
-seo-title: AEM Forms com esquema JSON e dados[Parte1]
+seo-title: AEM Forms with JSON Schema and Data[Part1]
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
-seo-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -12,19 +12,18 @@ version: 6.3,6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Criar formulário adaptável com base no esquema JSON
 
 
-A capacidade de criar Formulários adaptáveis com base no esquema JSON foi introduzida com o AEM Forms 6.3. Os detalhes sobre a criação de formulários adaptáveis com esquema JSON são explicados detalhadamente neste [artigo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+A capacidade de criar o Adaptive Forms com base no esquema JSON foi introduzida com a versão AEM Forms 6.3. Os detalhes sobre a criação do Adaptive Forms com esquema JSON são explicados detalhadamente nesta [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
 
 Depois de criar o Formulário adaptável com base no esquema JSON, a próxima etapa é armazenar os dados enviados no banco de dados. Para essa finalidade, usaremos o novo tipo de dados JSON introduzido por vários fornecedores de banco de dados. Para a finalidade deste artigo, usaremos o banco de dados MySql 8 para armazenar os dados enviados.
 
@@ -34,11 +33,10 @@ A captura de tela a seguir mostra os dados de formulário enviados armazenados n
 
 >[!NOTE]
 >
->Certifique-se de que o nome do arquivo de esquema json seja adequado. Por exemplo, ele precisa ser nomeado no seguinte formato &lt;name>schema.json. Assim, seu arquivo de esquema pode ser hipoteca.schema.json ou credit.schema.json.
+>Certifique-se de que o nome do arquivo de esquema json seja adequado. Por exemplo, ele precisa ser nomeado no seguinte formato &lt;name>schema.json. Portanto, seu arquivo de esquema pode ser hipoteca.schema.json ou credit.schema.json.
 
 
 ![armazenamento de dados](assets/datastored.gif)
 
 
-[Exemplos de esquemas JSON que podem ser usados para criar formulários adaptáveis.](assets/samplejsonschemas.zip). Baixe e descompacte o arquivo zip para obter os esquemas JSON
-
+[Exemplos de esquemas JSON que podem ser usados para criar o Adaptive Forms.](assets/samplejsonschemas.zip). Baixe e descompacte o arquivo zip para obter os esquemas JSON

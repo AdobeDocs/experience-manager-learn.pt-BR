@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 0%
+source-wordcount: '1321'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +22,13 @@ Saiba como se conectar AEM as a Cloud Service com sua VPN para criar canais de c
 
 ## O que é a rede privada virtual?
 
-A VPN (Virtual Private Network) permite que um cliente AEM as a Cloud Service conecte um programa do Cloud Manager a um já existente, [compatível](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Isso permite conexões seguras e controladas entre AEM serviços as a Cloud Service e na rede do cliente.
+A VPN (Virtual Private Network) permite que um cliente AEM as a Cloud Service se conecte **os ambientes AEM** dentro de um programa do Cloud Manager para um [compatível](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Isso permite conexões seguras e controladas entre AEM serviços as a Cloud Service e na rede do cliente.
 
 Um programa do Cloud Manager só pode ter um __individual__ tipo de infraestrutura de rede. Certifique-se de que a rede privada virtual seja a mais [tipo adequado de infraestrutura de rede](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) para seu AEM as a Cloud Service antes de executar os seguintes comandos.
+
+>[!NOTE]
+>
+>Observe que não há suporte para a conexão do ambiente de criação do Cloud Manager com uma VPN. Se você precisar acessar artefatos binários de um repositório privado, é necessário configurar um repositório seguro e protegido por senha com um URL que esteja disponível na Internet pública [conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories).
 
 >[!MORELIKETHIS]
 >
