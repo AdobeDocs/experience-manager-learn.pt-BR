@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
+source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,7 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
         <br/>
          A Parte 2 é uma continuação do nosso olhar para a CDN AEM as a Cloud Service. Respondemos a algumas das perguntas e mitos mais comuns sobre quais recursos você obtém com a nova CDN.
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Arquivos de registro e registro" src="./imgs/coming-soon.png"/>
       <div>
@@ -87,8 +86,7 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
         <br/>
          Em 1 de abril de 2022
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Migração (parte 1)" src="./imgs/coming-soon.png"/>
       <div>
@@ -98,6 +96,41 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       <p>
         <br/>
          Em 8 de abril de 2022
+      </p>
+   </td> 
+  </tr>
+<tr>
+   <td>
+      <img alt="Migração (parte 2)" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Migração (parte 2)</strong>        
+         <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
+      </div>
+      <p>
+        <br/>
+         Em 14 de abril de 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Validador do Dispatcher" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Validador do Dispatcher</strong>
+         <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
+      </div>
+      <p>
+        <br/>
+         A 22 de abril de 2022
+      </p>
+   </td>
+     <td>
+      <img alt="Dicas de indexação e pesquisa" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Dicas de indexação e pesquisa</strong>
+         <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
+      </div>
+      <p>
+        <br/>
+         Em breve 29 de abril de 2022
       </p>
    </td> 
   </tr>
