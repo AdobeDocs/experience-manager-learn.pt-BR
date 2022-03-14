@@ -8,10 +8,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: c921594d5c352f98e0d830d7a85e026844fd5da6
+source-git-commit: 947c280f32b013a6ade76b2f3df1152b29108c6e
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 6%
+source-wordcount: '227'
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fal
 
 >[!NOTE]
 >
-> O Dynamic Media Hybrid NÃO oferecerá suporte ao streaming de vídeo no Internet Explorer 11 após maio de 2022.
+> O Dynamic Media Hybrid NÃO oferecerá suporte ao streaming de vídeo no Internet Explorer 11 após 15 de março de 2022.
 
 <table> 
  <thead> 
@@ -63,7 +63,7 @@ O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fal
   </tr>
   <tr> 
    <td> <p>Área de trabalho</p> </td>
-   <td> <p>Cromo</p> </td>
+   <td> <p>Chrome</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
