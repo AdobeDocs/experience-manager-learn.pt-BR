@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -53,14 +53,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
    </td>
      <td>
-      <img alt="Arquivos de registro e registro" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-log-files.md">
+            <img alt="Arquivos de registro e registro" src="./imgs/003-thumb.png"/>
+        </a>
       <div>
-         <strong>Arquivos de registro e registro</strong>
+         <a href="./cloud5-aem-log-files.md"><strong>Arquivos de registro e registro</strong></a>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         A 18 de março de 2022
+         Esta é uma rápida análise de como acessar logs em AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário e das APIs.
       </p>
    </td> 
   </tr>
