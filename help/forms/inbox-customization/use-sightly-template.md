@@ -1,5 +1,5 @@
 ---
-title: Personalização da caixa de entrada
+title: Uso de modelo inteligente para exibir dados da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais de fluxo de trabalho usando modelo sightly
 feature: Adaptive Forms
 topics: development
@@ -11,9 +11,10 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -23,11 +24,11 @@ ht-degree: 2%
 Você pode usar um modelo sightly para formatar os dados que devem ser exibidos nas colunas da caixa de entrada. Neste exemplo, exibiremos ícones de coral-ui dependendo do valor da coluna de renda. A captura de tela a seguir mostra o uso de ícones na coluna renda
 ![ícones de rendimento](assets/income-column.PNG)
 
-[O ](assets/sightly-template.zip) modelo sightly usado para exibir os ícones personalizados da interface do usuário do coral é fornecido como parte deste artigo.
+[O modelo sightly](assets/sightly-template.zip) usado para exibir os ícones personalizados da interface do coral é fornecido como parte deste artigo.
 
 ## Modelo Sightly
 
-A seguir, o modelo sightly. O código no modelo exibe um ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface do coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com o AEM.
+A seguir, o modelo sightly. O código no modelo exibe um ícone dependendo da renda. Os ícones estão disponíveis como parte do [biblioteca de ícones da interface do coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -81,7 +82,7 @@ return val;
 
 >[!NOTE]
 >
->Este artigo supõe que você tenha instalado o [workflow de amostra](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) de [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) nesta série.
+>Este artigo supõe que você tenha instalado o [exemplo de fluxo de trabalho](assets/review-workflow.zip) e [formulário de amostra](assets/snap-form.zip) from [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) nesta série.
 
 * [Faça logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo sightly](assets/sightly-template.zip)
@@ -91,7 +92,7 @@ return val;
 * Abra o Controle de administrador clicando em Exibição de lista ao lado do botão Criar
 * Adicionar coluna de renda à Caixa de entrada e salvar suas alterações
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecione o _estado civil_ e envie o formulário
+* Selecione o _estado civil_ e enviar o formulário
 * [Exibir caixa de entrada](http://localhost:4502/aem/inbox)
 
 O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;administrador&quot;. Você deve ver o ícone apropriado abaixo da coluna de renda

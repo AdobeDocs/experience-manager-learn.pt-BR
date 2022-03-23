@@ -1,28 +1,28 @@
 ---
-title: Desenvolvimento com serviços de saída e Forms no AEM Forms
-description: Uso da API de serviço do Output e Forms no AEM Forms
-feature: Serviço do Forms
+title: Renderização do PDF interativo usando os serviços da Forms no AEM Forms
+description: Usar a API do Forms Service no AEM Forms para renderizar o PDF interativo
+feature: Forms Service
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9b2ef4c9-8360-480d-9165-f56a959635fb
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 1%
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
+# Renderização do PDF interativo usando os serviços da Forms no AEM Forms
 
-# Como renderizar PDF interativo usando os serviços da Forms no AEM Forms
-
-Usar a API do serviço do Forms no AEM Forms para renderizar PDF interativo
+Usar a API do Forms Service no AEM Forms para renderizar o PDF interativo
 
 Neste artigo, analisaremos o seguinte serviço
 
 * FormsService - Esse é um serviço muito versátil que permite exportar/importar dados de e para o arquivo PDF e também gerar pdf interativo ao mesclar dados xml no modelo xdp
 
-O javadoc oficial da API do AEM Forms está listado [aqui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+O javadoc oficial da API do AEM Forms está listado [here](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 O trecho de código a seguir renderiza o pdf interativo usando a operação renderPDFForm do FormsService. O schengen.xdp é um modelo que está sendo usado para unir os dados xml.
 
@@ -59,10 +59,8 @@ Linha 11: Retorna o pdf interativo gerado para o aplicativo chamador
 1. Adicione o seguinte caminho nas seções excluídas e salve
 1. /bin/generateinteractivepdf
 1. [Abrir o formulário móvel](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Preencha alguns campos e clique em ***Download e preencha ....*** botão
+1. Preencha alguns campos e clique no botão ***Baixar e preencher ....*** botão
 1. O pdf interativo deve ser baixado no sistema local
 
 
-O pacote de amostra contém o perfil personalizado associado ao Formulário móvel. Explore o arquivo [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Esse jsp extrai os dados do formulário móvel e faz uma solicitação POST para o servlet montado no caminho ***/bin/generateinteractivepdf***. O servlet retorna o pdf interativo para o aplicativo que faz a chamada. O código no customtoolbar.jsp então baixa o arquivo no sistema local
-
-
+O pacote de amostra contém o perfil personalizado associado ao Formulário Mobile. Explore [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) arquivo. Esse jsp extrai os dados do formulário móvel e faz uma solicitação de POST para o servlet montado em ***/bin/generateinteractivepdf*** caminho. O servlet retorna o pdf interativo para o aplicativo que faz a chamada. O código no customtoolbar.jsp então baixa o arquivo no sistema local

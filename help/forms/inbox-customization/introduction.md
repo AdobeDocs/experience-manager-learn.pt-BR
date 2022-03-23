@@ -1,6 +1,6 @@
 ---
-title: Personalização da caixa de entrada
-description: 'Personalize a caixa de entrada adicionando novas colunas com base nos dados do fluxo de trabalho '
+title: Caixa de entrada AEM
+description: Personalize a caixa de entrada adicionando novas colunas com base nos dados do fluxo de trabalho
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -11,20 +11,21 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '201'
+ht-degree: 4%
 
 ---
 
 # Caixa de entrada AEM
 
-A Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows de formulários. Quando um fluxo de trabalho de formulários contendo uma etapa de tarefa Atribuir é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário.
-A interface do usuário da Caixa de entrada fornece exibições de lista e calendário para visualizar tarefas. Você também pode definir as configurações de exibição. Você pode filtrar tarefas com base em vários parâmetros
-Você pode personalizar uma Caixa de entrada do Experience Manager para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho
+AEM Caixa de entrada consolida notificações e tarefas de vários componentes de AEM, incluindo workflows do Forms. Quando um fluxo de trabalho de formulários contendo uma etapa de tarefa Atribuir é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário.
 
+A interface do usuário da Caixa de entrada fornece exibições de lista e calendário para visualizar tarefas. Você também pode definir as configurações de exibição. Você pode filtrar tarefas com base em vários parâmetros.
+
+Você pode personalizar uma Caixa de entrada Experience Manager para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
 
 >[!NOTE]
 >
@@ -32,8 +33,8 @@ Você pode personalizar uma Caixa de entrada do Experience Manager para alterar 
 
 ## Personalização de coluna
 
-[Iniciar a ](http://localhost:4502/aem/inbox)
-caixa de entrada do AEMAbra o Admin Control clicando no ícone  _List_ Viewicon e selecionando  _Admin_ Controles mostrados na captura de tela abaixo
+[Iniciar AEM caixa de entrada](http://localhost:4502/aem/inbox)
+Abra o Admin Control clicando no botão _Exibição de lista_ e depois selecionando _Controle de administração_ como mostrado na captura de tela abaixo
 
 ![admin-control](assets/open-customization.png)
 

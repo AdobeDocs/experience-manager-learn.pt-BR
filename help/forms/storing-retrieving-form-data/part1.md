@@ -1,22 +1,23 @@
 ---
-title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL
+title: Armazenamento e Recuperação de Dados de Formulário do Banco de Dados MySQL - Configurar Fonte de Dados
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
 version: 6.3,6.4,6.5
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
 # Configurar fonte de dados
 
-Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-O primeiro passo é baixar e implantar os [drivers MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados em AEM.
+Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração de banco de dados é usar as propriedades de configuração do DataSource Pool do Apache Sling Connection por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar o [Drivers MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) em AEM.
 Crie a fonte de dados agrupada da conexão Apache Sling e forneça as propriedades conforme especificado na captura de tela abaixo. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
 
 ![fonte de dados](assets/save-continue.PNG)

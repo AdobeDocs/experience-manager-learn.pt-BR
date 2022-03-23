@@ -1,5 +1,5 @@
 ---
-title: Personalização da caixa de entrada
+title: Adicionar colunas personalizadas
 description: Adicionar colunas personalizadas para exibir dados adicionais do fluxo de trabalho
 feature: Adaptive Forms
 topics: development
@@ -11,24 +11,23 @@ kt: 5830
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 3%
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
 
-
 # Adicionar colunas personalizadas
 
-Para exibir dados de fluxo de trabalho na caixa de entrada, precisamos definir e preencher variáveis no fluxo de trabalho. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para dar a você um início importante, fornecemos um fluxo de trabalho de amostra que está pronto para ser implantado em seu servidor AEM.
+Para exibir dados de fluxo de trabalho na caixa de entrada, precisamos definir e preencher variáveis no fluxo de trabalho. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para dar a você um início importante, fornecemos um workflow de amostra que está pronto para ser implantado em seu servidor de AEM.
 
-* [Faça logon no AEM](http://localhost:4502/crx/de/index.jsp)
+* [Logon no AEM](http://localhost:4502/crx/de/index.jsp)
 * [Importe o fluxo de trabalho de revisão](assets/review-workflow.zip)
 * [Revisar o fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Esse workflow tem duas variáveis definidas (isCasado e renda) e seus valores são definidos usando o componente de variável definido. Essas variáveis serão disponibilizadas como colunas a serem adicionadas à caixa de entrada do AEM
+Esse workflow tem duas variáveis definidas (isCasado e renda) e seus valores são definidos usando o componente de variável set. Essas variáveis serão disponibilizadas como colunas a serem adicionadas a AEM caixa de entrada
 
 ## Criar serviço
 
@@ -76,21 +75,21 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Você precisa incluir o AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
+>Você precisa incluir AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
 
 ![uber-jar](assets/uber-jar.PNG)
 
 ## Testar em seu servidor
 
-* [Faça logon no console da Web do AEM](http://localhost:4502/system/console/bundles)
+* [Faça logon AEM console da Web](http://localhost:4502/system/console/bundles)
 * [Implantar e iniciar o pacote de personalização da caixa de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abrir sua caixa de entrada](http://localhost:4502/aem/inbox)
-* Abra o Controle de Admin clicando no ícone _Exibição de Lista_ ao lado do botão _Criar_
+* Abra o Controle de Admin clicando em _Exibição de lista_ ícone ao lado de _Criar_ botão
 * Adicionar coluna Casado à Caixa de entrada e salvar suas alterações
 * [Ir para a interface do usuário do FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importe o ](assets/snap-form.zip) formulário de amostra selecionando  _File_ Upload no  __ menu Create
+* [Importe o formulário de amostra](assets/snap-form.zip) selecionando _Upload de arquivo_ from _Criar_ menu
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selecione o _estado civil_ e envie o formulário
+* Selecione o _estado civil_ e enviar o formulário
    [exibir caixa de entrada](http://localhost:4502/aem/inbox)
 
 O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;administrador&quot;. Você deve ver um valor na coluna Casado , como mostrado nesta captura de tela

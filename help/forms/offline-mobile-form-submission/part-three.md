@@ -1,8 +1,8 @@
 ---
-title: Acionar fluxo de trabalho do AEM no envio de formulário HTM5
-seo-title: Acione o fluxo de trabalho do AEM no envio do formulário HTML5
-description: Continue preenchendo o formulário móvel no modo offline e envie o formulário móvel para acionar o fluxo de trabalho do AEM
-seo-description: Continue preenchendo o formulário móvel no modo offline e envie o formulário móvel para acionar o fluxo de trabalho do AEM
+title: Acionar AEM fluxo de trabalho no envio de formulário HTM5 - Revisar e aprovar PDF
+seo-title: Trigger AEM Workflow on HTML5 Form Submission
+description: Continue preenchendo o formulário móvel no modo offline e envie o formulário móvel para acionar AEM fluxo de trabalho
+seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -12,18 +12,17 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a767d8f8-d75e-4472-9139-c08d804ee076
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '171'
+ht-degree: 2%
 
 ---
 
-
 # Fluxo de trabalho para revisar e aprovar o PDF enviado
 
-A última e última etapa é criar um fluxo de trabalho do AEM que gerará um PDF estático ou não interativo para revisão e aprovação. O fluxo de trabalho será acionado por meio de um AEM Launcher configurado no nó `/content/pdfsubmissions`.
+A última e última etapa é criar AEM fluxo de trabalho que gerará uma PDF para análise e aprovação estática ou não interativa. O fluxo de trabalho será acionado por meio de um AEM Launcher configurado no nó `/content/pdfsubmissions`.
 
 A captura de tela a seguir mostra as etapas envolvidas no fluxo de trabalho.
 
@@ -41,6 +40,6 @@ O PDF gerado é atribuído à variável de fluxo de trabalho chamada `submittedP
 
 ### Atribua o pdf gerado para revisão e aprovação
 
-Atribuir componente de fluxo de trabalho da tarefa é usado aqui para atribuir o PDF gerado para revisão e aprovação. A variável `submittedPDF` é usada na guia Formulários e Documentos do componente do fluxo de trabalho Atribuir tarefa .
+Atribuir componente de fluxo de trabalho da tarefa é usado aqui para atribuir a PDF gerada para revisão e aprovação. A variável `submittedPDF` é usada na guia Forms e Documents do componente do fluxo de trabalho Atribuir tarefa .
 
 ![fluxo de trabalho](assets/assign-task.PNG)

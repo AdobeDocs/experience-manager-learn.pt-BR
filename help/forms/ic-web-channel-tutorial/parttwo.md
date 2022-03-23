@@ -1,8 +1,8 @@
 ---
-title: Criação da configuração de fonte de dados no AEM Forms
-seo-title: Criação da configuração de fonte de dados no AEM Forms
+title: Criação da configuração do DataSource no AEM Forms, parte 2
+seo-title: Creating DataSource Configuration in AEM Forms
 description: Esta é a parte 2 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos uma fonte de dados com resT.  O vídeo a seguir apresenta as etapas para criar a fonte de dados.
-seo-description: Esta é a parte 2 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos uma fonte de dados com resT.  O vídeo a seguir apresenta as etapas para criar a fonte de dados.
+seo-description: This is part 2 of multistep tutorial for creating your first interactive communications document. In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
 uuid: f20abc8d-3512-4a48-9688-524a0dfe732c
 feature: Interactive Communication
 topics: development
@@ -14,16 +14,15 @@ discoiquuid: 0e1760ad-c412-4a55-a51a-d0875c55768e
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 11145e87-7eef-4183-ac6f-efc8d35d0670
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 2%
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
 
-
-# Criação da configuração do DataSource no AEM Forms{#creating-datasource-configuration-in-aem-forms}
+# Criação da configuração de fonte de dados no AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
 Nesta parte, criaremos uma fonte de dados com resT.  O vídeo a seguir apresenta as etapas para criar a fonte de dados.
 
