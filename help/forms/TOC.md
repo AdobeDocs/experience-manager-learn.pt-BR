@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 3%
    + [Autenticação de dois fatores](some-useful-integrations/two-factor-authentication.md)
    + [Extração de Dados OCR](some-useful-integrations/ocr-data-extraction.md)
    + [Listas suspensas em cascata](some-useful-integrations/geonames-org.md)
+   + [Integrar com ServiceNow](some-useful-integrations/service-now.md)
 + Criação do pacote OSGi {#creating-your-first-osgi-bundle}
    + [Configurar o ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Criar serviço OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -172,7 +173,7 @@ ht-degree: 3%
    + [Biblioteca do cliente](storing-retrieving-form-data/part4.md)
    + [Modelo de formulário adaptável](storing-retrieving-form-data/part5.md)
    + [Implantar ativos de amostra](storing-retrieving-form-data/part6.md)
-+ Acionando AEM fluxo de trabalho a partir do envio do formulário móvel{#offline-mobile-form-submission}
++ Acionando AEM fluxo de trabalho a partir do envio do Mobile Form{#offline-mobile-form-submission}
    + [Introdução](offline-mobile-form-submission/introduction.md)
    + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
    + [Manipular envio de PDF](offline-mobile-form-submission/part-two.md)
