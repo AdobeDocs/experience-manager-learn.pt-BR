@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
+source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -68,14 +68,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
   </tr>
   <tr>
    <td>
-      <img alt="Tokens de acesso" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-getting-login-token-integrations.md">
+            <img alt="Tokens de acesso" src="./imgs/004-thumb.png"/>
+        </a>
       <div>
-        <strong>Integração com tokens de acesso</strong>        
+        <a href="./cloud5-getting-login-token-integrations.md"><strong>Integração com tokens de acesso</strong></a>        
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         A 25 de março de 2022
+         Uma rápida visão geral e demonstração da interação com tokens de logon para fazer a integração funcionar nos ambientes do serviço de nuvem.
       </p>
      </td>   
      <td>
