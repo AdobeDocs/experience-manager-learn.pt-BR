@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 22%
+source-wordcount: '726'
+ht-degree: 23%
 
 ---
 
@@ -214,7 +214,7 @@ ht-degree: 22%
    + Configurar{#set-up}
       + [Provisionamento de conta e serviços](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente de desenvolvimento local](./asset-compute/set-up/development-environment.md)
-      + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
+      + [App Builder](./asset-compute/set-up/app-builder.md)
    + Desenvolver{#develop}
       + [Criar um projeto do Asset compute](./asset-compute/develop/project.md)
       + [Configurar variáveis de ambiente](./asset-compute/develop/environment-variables.md)
