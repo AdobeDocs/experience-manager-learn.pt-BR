@@ -9,14 +9,13 @@ thumbnail: 6602.jpg
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: cdfae631-86d7-438f-9baf-afd621802723
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
-
-
 
 # Implantar a amostra
 
@@ -28,7 +27,7 @@ Para que este caso de uso funcione em seu sistema, siga as seguintes instruçõe
 
 ## Criar banco de dados
 
-Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Você precisará criar o schema de banco de dados [importando o arquivo de esquema](assets/data-base-schema.sql) para o Workbench MySQL.
+Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Será necessário criar a variável [esquema de banco de dados importando o arquivo de esquema](assets/data-base-schema.sql) no Workbench MySQL.
 
 ## Criar fonte de dados
 
@@ -40,25 +39,25 @@ O Modelo de Dados de Formulário precisa ser criado com base nessa fonte de dado
 
 ## Criar conta do desenvolvedor com o nó
 
-Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para enviar e verificar códigos OTP. Anote a Chave da API e a Chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e estão incluídos com os ativos mencionados na etapa anterior.
+Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para envio e verificação de códigos OTP. Anote a Chave da API e a Chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e estão incluídos com os ativos mencionados na etapa anterior.
 
 ## Implante os seguintes pacotes OSGi
 
-Implante o pacote que tem o código [para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Baixe e descompacte o [developing-with-service-user.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/developing-with-service-user.zip).
+Implante o pacote que tem a variável [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Baixe e descompacte o [developingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Implante o arquivo DevelopingWithServiceUser.jar usando o console da Web Felix.
 
 ## Implantar a biblioteca do cliente
 
-A amostra usa duas bibliotecas de clientes. Importe essas [bibliotecas do cliente](assets/client-libraries.zip) no AEM.
+A amostra usa duas bibliotecas de clientes. Importar [bibliotecas de clientes](assets/client-libraries.zip) em AEM.
 
 ## Importar o modelo de formulário adaptável personalizado
 
-Os formulários de amostra usados nessa demonstração são baseados em um modelo personalizado. Importe o modelo personalizado [para AEM](assets/custom-template-with-page-component.zip)
+Os formulários de amostra usados nessa demonstração são baseados em um modelo personalizado. Importe o [modelo personalizado em AEM](assets/custom-template-with-page-component.zip)
 
 ## Importar formulários adaptáveis de amostra
 
-Os 2 formulários que compõem essa amostra precisam ser importados para o AEM. Os formulários de amostra podem ser [baixados aqui](assets/sample-forms.zip)
+Os 2 formulários que compõem essa amostra precisam ser importados para o AEM. Os formulários de amostra podem ser [baixado aqui](assets/sample-forms.zip)
 
 Abra o [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique os valores Chave da API e Segredo da API nos campos apropriados no formulário adaptável.
 

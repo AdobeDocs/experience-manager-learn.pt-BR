@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -33,22 +33,18 @@ AEM Ferramentas de Modernização convertem automaticamente páginas AEM existen
 + Clonar AEM produção 6.x para executar as ferramentas de Modernização AEM
 + Baixe e instale o [ferramentas de Modernização do AEM mais recentes](https://github.com/adobe/aem-modernize-tools/releases/latest) sobre o clone de produção do AEM 6.x por meio do Gerenciador de pacotes
 
-+ [Conversor de estrutura de página](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html) atualiza o conteúdo de página existente do modelo estático para um modelo editável mapeado usando contêineres de layout
++ [Conversor de estrutura de página](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) atualiza o conteúdo de página existente do modelo estático para um modelo editável mapeado usando contêineres de layout
    + Definir regras de conversão usando a configuração OSGi
    + Executar o Conversor de Estrutura de Página em relação às páginas existentes
 
-+ [Conversor de componentes](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) atualiza o conteúdo de página existente do modelo estático para um modelo editável mapeado usando contêineres de layout
++ [Conversor de componentes](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) atualiza o conteúdo de página existente do modelo estático para um modelo editável mapeado usando contêineres de layout
    + Definir regras de conversão por meio de definições de nó JCR/XML
    + Execute a ferramenta Conversor de componentes em páginas existentes
 
-+ [Importador de políticas](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) cria políticas a partir da configuração Design
++ [Importador de políticas](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) cria políticas a partir da configuração Design
    + Definir regras de conversão usando definições de nó JCR/XML
    + Executar Importador de Política em relação às Definições de Design existentes
    + Aplicar políticas importadas a componentes e contêineres de AEM
-
-+ [Conversor de Diálogo](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html) converte caixas de diálogo do componente baseado em CoralUI 3 Classic(ExtJS) e CoralUI 2 para caixas de diálogo baseadas em CoralUI 3 TouchUI.
-   + Execute a ferramenta Conversor de caixa de diálogo em caixas de diálogo existentes com base em ExtJS ou Coral2 UI
-   + Sincronizar caixas de diálogo convertidas de volta no repositório Git
 
 ## Exercício prático
 
@@ -94,6 +90,5 @@ Além disso, certifique-se de que concluiu o exercício prático anterior:
 + [AEM Gems - Introdução ao AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 
-
-1. Implante o site do wknd legacy recém-modernizado no SDK do Cloud Service local. Disponível para download aqui:
-+ [Portal de distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
+1. Implante o site herdado do wknd recém-modernizado no SDK do AEM local. AEM ASK disponível para download aqui:
++ [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

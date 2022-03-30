@@ -13,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
 source-wordcount: '2263'
 ht-degree: 1%
@@ -30,17 +30,17 @@ Este capítulo aprofunda a API do modelo JSON do AEM e como o conteúdo JSON exp
 
 1. Saiba como mapear componentes AEM para SPA componentes.
 1. Inspect como um componente React usa propriedades dinâmicas transmitidas pela AEM.
-1. Saiba como usar imediatamente [Reagir AEM componentes principais](https://github.com/adobe/aem-react-core-wcm-components-examples).
+1. Saiba como usar o pronto para uso [Reagir AEM componentes principais](https://github.com/adobe/aem-react-core-wcm-components-examples).
 
 ## O que você vai criar
 
-Este capítulo verificará como o componente de SPA `Text` fornecido é mapeado para o componente de AEM `Text`. React Core Components como o componente `Image` SPA será usado no SPA e criado no AEM. Os recursos prontos para uso das políticas **Contêiner de layout** e **Editor de modelo** também serão usados para criar uma exibição que é um pouco mais variada na aparência.
+Este capítulo verificará como o `Text` SPA componente é mapeado para a AEM `Text`componente. Reaja os componentes principais como o `Image` SPA componente será usado no SPA e criado no AEM. Recursos prontos para uso do **Contêiner de layout** e **Editor de modelos** as políticas serão também utilizadas para criar uma visão um pouco mais variada em termos de aparência.
 
 ![Criação final da amostra de capítulo](./assets/map-components/final-page.png)
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Integrar o SPA](integrate-spa.md), no entanto, para seguir em frente, tudo o que você precisa é de um projeto AEM habilitado para SPA.
+Revise as ferramentas necessárias e as instruções para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo constitui uma continuação do [Integrar a SPA](integrate-spa.md) capítulo, no entanto, para acompanhar tudo o que você precisa é de um projeto AEM habilitado para SPA.
 
 ## Abordagem de mapeamento
 
@@ -52,24 +52,24 @@ O conceito básico é mapear um Componente de SPA para um Componente de AEM. AEM
 
 ## Inspect o componente de texto
 
-O [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o AEM [Componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Este é um exemplo de um componente **content**, na medida em que renderiza *content* de AEM.
+O [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) fornece uma `Text` componente mapeado para o AEM [Componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Este é um exemplo de um **conteúdo** componente, na medida em que renderiza *conteúdo* de AEM.
 
 Vamos ver como o componente funciona.
 
 ### Inspect o modelo JSON
 
-1. Antes de entrar no código SPA, é importante entender o modelo JSON que AEM fornece. Navegue até a [Biblioteca de Componentes Principais](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html) e exiba a página do componente de Texto. A Biblioteca de componentes principais fornece exemplos de todos os componentes principais do AEM.
-1. Selecione a guia **JSON** para um dos exemplos:
+1. Antes de entrar no código SPA, é importante entender o modelo JSON que AEM fornece. Navegue até o [Biblioteca de componentes principais](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualize a página do componente de Texto . A Biblioteca de componentes principais fornece exemplos de todos os componentes principais do AEM.
+1. Selecione o **JSON** para um dos exemplos:
 
    ![Modelo JSON de texto](./assets/map-components/text-json.png)
 
-   Você deve ver três propriedades: `text`, `richText` e `:type`.
+   Você deve ver três propriedades: `text`, `richText`e `:type`.
 
-   `:type` é uma propriedade reservada que lista o  `sling:resourceType` (ou caminho) do Componente de AEM. O valor de `:type` é o que é usado para mapear o componente de AEM para o componente de SPA.
+   `:type` é uma propriedade reservada que lista a variável `sling:resourceType` (ou caminho) do Componente de AEM. O valor de `:type` é o que é usado para mapear o componente AEM para o componente SPA.
 
-   `text` e  `richText` são propriedades adicionais que serão expostas ao componente SPA.
+   `text` e `richText` são propriedades adicionais que serão expostas ao componente SPA.
 
-1. Visualize a saída JSON em [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Você deve encontrar uma entrada semelhante a:
+1. Exibir a saída JSON em [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Você deve encontrar uma entrada semelhante a:
 
    ```json
    "text": {
@@ -83,9 +83,9 @@ Vamos ver como o componente funciona.
 
 ### Inspect o componente de SPA de texto
 
-1. No IDE de sua escolha, abra o AEM Project para o SPA. Expanda o módulo `ui.frontend` e abra o arquivo `Text.js` em `ui.frontend/src/components/Text/Text.js`.
+1. No IDE de sua escolha, abra o AEM Project para o SPA. Expanda o `ui.frontend` e abra o arquivo `Text.js` under `ui.frontend/src/components/Text/Text.js`.
 
-1. A primeira área que vamos inspecionar é o `class Text` em ~line 40:
+1. A primeira área que iremos inspecionar é a do `class Text` na ~linha 40:
 
    ```js
    class Text extends Component {
@@ -110,9 +110,9 @@ Vamos ver como o componente funciona.
 
    `Text` é um componente React padrão. O componente usa `this.props.richText` para determinar se o conteúdo a ser renderizado será rich text ou texto sem formatação. O &quot;conteúdo&quot; real usado vem de `this.props.text`.
 
-   Para evitar um possível ataque XSS, o rich text é escapado via `DOMPurify` antes de usar [perigosamenteSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) para renderizar o conteúdo. Lembre-se das propriedades `richText` e `text` do modelo JSON anteriormente no exercício.
+   Para evitar um possível ataque XSS, o rich text é escapado via `DOMPurify` antes de usar [perigosoSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) para renderizar o conteúdo. Lembre-se `richText` e `text` propriedades do modelo JSON anteriormente no exercício.
 
-1. Em seguida, dê uma olhada no `TextEditConfig` em ~line 29:
+1. Em seguida, dê uma olhada no `TextEditConfig` na ~linha 29:
 
    ```js
    const TextEditConfig = {
@@ -124,23 +124,23 @@ Vamos ver como o componente funciona.
    };
    ```
 
-   O código acima é responsável por determinar quando renderizar o espaço reservado no ambiente de criação do AEM. Se o método `isEmpty` retornar **true**, o espaço reservado será renderizado.
+   O código acima é responsável por determinar quando renderizar o espaço reservado no ambiente de criação do AEM. Se a variável `isEmpty` retornos de método **true** em seguida, o espaço reservado será renderizado.
 
-1. Por fim, dê uma olhada na chamada `MapTo` em ~line 62:
+1. Por fim, dê uma olhada no `MapTo` chame em ~line 62:
 
    ```js
    export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
    ```
 
-   `MapTo` é fornecido pelo AEM Editor JS SDK (`@adobe/aem-react-editable-components`). O caminho `wknd-spa-react/components/text` representa `sling:resourceType` do componente de AEM. Esse caminho é correspondido pelo `:type` exposto pelo modelo JSON observado anteriormente. `MapTo` O cuida da análise da resposta do modelo JSON e da transmissão dos valores corretos como  `props` para o componente SPA.
+   `MapTo` é fornecido pelo AEM Editor JS SDK (`@adobe/aem-react-editable-components`). O caminho `wknd-spa-react/components/text` representa a variável `sling:resourceType` do componente AEM. Esse caminho é correspondido com a variável `:type` exposto pelo modelo JSON observado anteriormente. `MapTo` cuida da análise da resposta do modelo JSON e da transmissão dos valores corretos como `props` ao componente de SPA.
 
-   Você pode encontrar a definição AEM `Text` do componente em `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
+   Você pode encontrar o AEM `Text` definição de componente em `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
 ## Usar os componentes principais do React
 
-[Componentes AEM WCM - ](https://github.com/adobe/aem-react-core-wcm-components-base) Implementação principal do React e Componentes  [AEM WCM - Editor Spa - Implementação](https://github.com/adobe/aem-react-core-wcm-components-spa) principal do React. Esses são um conjunto de componentes reutilizáveis da interface do usuário que são mapeados para componentes prontos para uso AEM. A maioria dos projetos pode reutilizar esses componentes como ponto de partida para sua própria implementação.
+[Componentes AEM do WCM - Implementação principal do React](https://github.com/adobe/aem-react-core-wcm-components-base) e [Componentes AEM WCM - Editor Spa - Implementação principal do React](https://github.com/adobe/aem-react-core-wcm-components-spa). Esses são um conjunto de componentes reutilizáveis da interface do usuário que são mapeados para componentes prontos para uso AEM. A maioria dos projetos pode reutilizar esses componentes como ponto de partida para sua própria implementação.
 
-1. No código do projeto, abra o arquivo `import-components.js` em `ui.frontend/src/components`.
+1. No código do projeto, abra o arquivo `import-components.js` at `ui.frontend/src/components`.
 Esse arquivo importa todos os componentes de SPA que são mapeados para AEM componentes. Dada a natureza dinâmica da implementação do Editor de SPA, devemos referenciar explicitamente todos os componentes SPA que estão vinculados a AEM componentes que podem ser criados para autor. Isso permite que um autor de AEM escolha usar um componente onde quiser no aplicativo.
 1. As seguintes declarações de importação incluem componentes SPA gravados no projeto:
 
@@ -151,39 +151,39 @@ Esse arquivo importa todos os componentes de SPA que são mapeados para AEM comp
    import './ExperienceFragment/ExperienceFragment';
    ```
 
-1. Há vários outros `imports` de `@adobe/aem-core-components-react-spa` e `@adobe/aem-core-components-react-base`. Eles estão importando os componentes React Core e os disponibilizando no projeto atual. Eles são mapeados para componentes de AEM específicos do projeto usando o `MapTo`, exatamente como com o exemplo do componente `Text` anteriormente.
+1. Há vários outros `imports` from `@adobe/aem-core-components-react-spa` e `@adobe/aem-core-components-react-base`. Eles estão importando os componentes React Core e os disponibilizando no projeto atual. Eles são mapeados para componentes de AEM específicos do projeto usando o `MapTo`, assim como com o `Text` exemplo de componente anterior.
 
 ### Atualizar políticas de AEM
 
 As políticas são um recurso de modelos de AEM que oferece aos desenvolvedores e usuários avançados controle granular sobre quais componentes estão disponíveis para serem usados. Os Componentes principais de reação estão incluídos no Código de SPA, mas precisam ser ativados por meio de uma política antes de poderem ser usados no aplicativo.
 
-1. Na tela inicial AEM, navegue até **Ferramentas** > **Modelos** > **[WKND SPA React](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
+1. Na tela inicial AEM, acesse **Ferramentas** > **Modelos** > **[Reação de SPA WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
 
-1. Selecione e abra o modelo **Página SPA** para edição.
+1. Selecione e abra o **Página SPA** modelo para edição.
 
-1. Selecione o **Contêiner de layout** e clique nele **policy** para editar a política:
+1. Selecione o **Contêiner de layout** e clique nele **política** ícone para editar a política:
 
    ![política do contêiner de layout](assets/map-components/edit-spa-page-template.png)
 
-1. Em **Componentes permitidos** > **WKND SPA React - Content** > marque **Image**, **Teaser** e **Title**.
+1. Em **Componentes permitidos** > **Reação de SPA WKND - Conteúdo** > verificação **Imagem**, **Teaser** e **Título**.
 
    ![Componentes atualizados disponíveis](assets/map-components/update-components-available.png)
 
-   Em **Componentes padrão** > **Adicionar mapeamento** e escolha o componente **Imagem - WKND SPA Reagir - Conteúdo**:
+   Em **Componentes padrão** > **Adicionar mapeamento** e escolha a **Imagem - WKND SPA React - Conteúdo** componente:
 
    ![Definir componentes padrão](./assets/map-components/default-components.png)
 
-   Insira um **mime type** de `image/*`.
+   Insira um **tipo mime** de `image/*`.
 
    Clique em **Concluído** para salvar as atualizações de política.
 
-1. No **Contêiner de layout** clique no ícone **política** para o componente **Texto**.
+1. No **Contêiner de layout** clique no botão **política** ícone para o **Texto** componente.
 
-   Crie uma nova política chamada **Texto SPA WKND**. Em **Plugins** > **Formatação** > marque todas as caixas para ativar opções adicionais de formatação:
+   Crie uma nova política chamada **Texto SPA WKND**. Em **Plug-ins** > **Formatação** > marque todas as caixas para ativar opções adicionais de formatação:
 
    ![Ativar a formatação do RTE](assets/map-components/enable-formatting-rte.png)
 
-   Em **Plugins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
+   Em **Plug-ins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
 
    ![Ativar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
@@ -191,85 +191,85 @@ As políticas são um recurso de modelos de AEM que oferece aos desenvolvedores 
 
 ### Conteúdo do autor
 
-1. Navegue até a **Página inicial** [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
+1. Navegue até o **Página inicial** [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
 
-1. Agora é possível usar os componentes adicionais **Image**, **Teaser** e **Title** na página.
+1. Agora é possível usar os componentes adicionais **Imagem**, **Teaser** e **Título** na página.
 
    ![Componentes adicionais](assets/map-components/additional-components.png)
 
-1. Você também deve poder editar o componente `Text` e adicionar estilos de parágrafo adicionais no modo **tela cheia**.
+1. Também é possível editar a variável `Text` e adicionar estilos de parágrafo adicionais em **tela cheia** modo.
 
    ![Edição de rich text em tela cheia](assets/map-components/full-screen-rte.png)
 
-1. Você também deve ser capaz de arrastar e soltar uma imagem do **Localizador de ativos**:
+1. Você também deve ser capaz de arrastar e soltar uma imagem da **Localizador de ativos**:
 
    ![Arrastar e soltar imagem](assets/map-components/drag-drop-image.png)
 
-1. Experimente os componentes **Title** e **Teaser**.
+1. Experimente com o **Título** e **Teaser** componentes.
 
-1. Adicione suas próprias imagens via [AEM Assets](http://localhost:4502/assets.html/content/dam) ou instale a base de código finalizada para o [site de referência WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) padrão. O [site de referência WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) inclui muitas imagens que podem ser reutilizadas no SPA WKND. O pacote pode ser instalado usando [AEM Gerenciador de Pacotes](http://localhost:4502/crx/packmgr/index.jsp).
+1. Adicionar suas próprias imagens via [AEM Assets](http://localhost:4502/assets.html/content/dam) ou instale a base de código finalizada para o padrão [Site de referência WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). O [Site de referência WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) O inclui muitas imagens que podem ser reutilizadas no SPA WKND. O pacote pode ser instalado usando [Gerenciador de pacotes de AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![O Gerenciador de Pacotes instala o wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
 ## Inspect no Contêiner de layout
 
-O suporte para **Contêiner de layout** é fornecido automaticamente pelo SDK do Editor de SPA AEM. O **Contêiner de layout**, conforme indicado pelo nome, é um componente **contêiner**. Os componentes do contêiner são componentes que aceitam estruturas JSON que representam *outros* componentes e os instanciam dinamicamente.
+Suporte para **Contêiner de layout** O é fornecido automaticamente pelo SDK do Editor SPA AEM. O **Contêiner de layout**, conforme indicado pelo nome, é uma **container** componente. Componentes do contêiner são componentes que aceitam estruturas JSON que representam *other* e os instancie dinamicamente.
 
 Vamos inspecionar o Contêiner de layout ainda mais.
 
-1. Em um navegador, navegue até [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
+1. Em um navegador, acesse [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
    ![API do modelo JSON - Grade responsiva](./assets/map-components/responsive-grid-modeljson.png)
 
-   O componente **Contêiner de layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor de SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
+   O **Contêiner de layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecida pelo Editor de SPA usando o `:type` propriedade, exatamente como a variável `Text` e `Image` componentes.
 
-   Os mesmos recursos de redimensionar um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis no Editor de SPA.
+   Os mesmos recursos de redimensionar um componente usando [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
 
-2. Retorne para [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Adicione outros componentes **Image** e tente redimensioná-los usando a opção **Layout**:
+2. Retornar para [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Adicionar mais **Imagem** e tente redimensioná-los usando o **Layout** opção:
 
    ![Redimensionar imagem usando o modo Layout](./assets/map-components/responsive-grid-layout-change.gif)
 
-3. Abra novamente o modelo JSON [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e observe o `columnClassNames` como parte do JSON:
+3. Reabra o modelo JSON [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) e observe os `columnClassNames` como parte do JSON:
 
    ![Nomes de classe da coluna](./assets/map-components/responsive-grid-classnames.png)
 
-   O nome de classe `aem-GridColumn--default--4` indica que o componente deve ter 4 colunas de largura com base em uma grade de 12 colunas. Mais detalhes sobre a grade responsiva [podem ser encontrados aqui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
+   O nome da classe `aem-GridColumn--default--4` indica que o componente deve ter 4 colunas de largura com base em uma grade de 12 colunas. Mais detalhes sobre o [grade responsiva pode ser encontrada aqui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-4. Retorne ao IDE e no módulo `ui.apps` há uma biblioteca do lado do cliente definida em `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Abra o arquivo `less/grid.less`.
+4. Retorne ao IDE e no `ui.apps` existe uma biblioteca do lado do cliente definida em `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Abra o arquivo `less/grid.less`.
 
-   Esse arquivo determina os pontos de interrupção (`default`, `tablet` e `phone`) usados pelo **Contêiner de layout**. Este arquivo deve ser personalizado de acordo com as especificações do projeto. Atualmente, os pontos de interrupção estão definidos como `1200px` e `768px`.
+   Esse arquivo determina os pontos de interrupção (`default`, `tablet`e `phone`) usado pela **Contêiner de layout**. Este arquivo deve ser personalizado de acordo com as especificações do projeto. Atualmente, os pontos de interrupção estão definidos como `1200px` e `768px`.
 
-5. Você deve ser capaz de usar os recursos responsivos e as políticas de rich text atualizadas do componente `Text` para criar uma visualização como a seguinte:
+5. Você deve ser capaz de usar os recursos responsivos e as políticas de rich text atualizadas do `Text` componente para criar uma exibição como a seguinte:
 
    ![Criação final da amostra de capítulo](assets/map-components/final-page.png)
 
 ## Parabéns! {#congratulations}
 
-Parabéns, você aprendeu a mapear componentes SPA para AEM componentes e usou os Componentes principais de reação. Você também tem a chance de explorar os recursos responsivos do **Contêiner de layout**.
+Parabéns, você aprendeu a mapear componentes SPA para AEM componentes e usou os Componentes principais de reação. Você também tem a oportunidade de explorar os recursos responsivos da **Contêiner de layout**.
 
 ### Próximas etapas {#next-steps}
 
-[Navegação e roteamento](navigation-routing.md)  - saiba como várias exibições no SPA podem ser compatíveis com o mapeamento para AEM páginas com o SDK do Editor SPA. A navegação dinâmica é implementada usando o React Router e React Core Components.
+[Navegação e Roteamento](navigation-routing.md) - Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento para AEM páginas com o SDK do Editor SPA. A navegação dinâmica é implementada usando o React Router e React Core Components.
 
 ## (Bônus) Persistir configurações no controle de origem {#bonus-configs}
 
 Em muitos casos, especialmente no início de um projeto AEM, é valioso manter configurações, como modelos e políticas de conteúdo relacionadas, para o controle de origem. Isso garante que todos os desenvolvedores estejam trabalhando com o mesmo conjunto de conteúdo e configurações e pode garantir uma consistência adicional entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
 
-As próximas etapas serão executadas usando o Visual Studio Code IDE e [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), mas podem estar fazendo uso de qualquer ferramenta e de qualquer IDE que você tenha configurado para **pull** ou **import** conteúdo de uma instância local de AEM.
+As próximas etapas serão executadas usando o Visual Studio Code IDE e [Sincronização AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) mas pode estar fazendo uso de qualquer ferramenta e de qualquer IDE que você tenha configurado para **pull** ou **importar** conteúdo de uma instância local do AEM.
 
-1. No Visual Studio Code IDE, verifique se você tem **VSCode AEM Sync** instalado por meio da extensão Marketplace:
+1. No Visual Studio Code IDE, certifique-se de ter **Sincronização AEM VSCode** instalado por meio da extensão do Marketplace:
 
    ![Sincronização AEM VSCode](./assets/map-components/vscode-aem-sync.png)
 
-2. Expanda o módulo **ui.content** no Gerenciador de projetos e navegue até `/conf/wknd-spa-react/settings/wcm/templates`.
+2. Expanda o **ui.content** no explorador de projetos e navegue até `/conf/wknd-spa-react/settings/wcm/templates`.
 
-3. **Clique com o botão direito do mouse** na  `templates` pasta e selecione  **Importar de AEM Servidor**:
+3. **Clique com o botão direito** o `templates` e selecione **Importar de AEM Server**:
 
    ![Modelo de importação do VSCode](./assets/map-components/import-aem-servervscode.png)
 
-4. Repita as etapas para importar conteúdo, mas selecione a pasta **policies** localizada em `/conf/wknd-spa-react/settings/wcm/templates/policies`.
+4. Repita as etapas para importar conteúdo, mas selecione o **políticas** pasta localizada em `/conf/wknd-spa-react/settings/wcm/templates/policies`.
 
-5. Inspect o arquivo `filter.xml` localizado em `ui.content/src/main/content/META-INF/vault/filter.xml`.
+5. A Inspect `filter.xml` arquivo localizado em `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -282,43 +282,43 @@ As próximas etapas serão executadas usando o Visual Studio Code IDE e [VSCode 
     </workspaceFilter>
    ```
 
-   O arquivo `filter.xml` é responsável por identificar os caminhos dos nós que serão instalados com o pacote. Observe o `mode="merge"` em cada um dos filtros, que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código **not** substitua o conteúdo. Consulte a [documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
+   O `filter.xml` O arquivo é responsável por identificar os caminhos dos nós que serão instalados com o pacote. Observe que `mode="merge"` em cada um dos filtros que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código faça isso **not** substituir conteúdo. Consulte a [Documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
 
-   Compare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.
+   Comparar `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.
 
 ## (Bônus) Criar componente de imagem personalizado {#bonus-image}
 
-Um componente Imagem SPA já foi fornecido pelos componentes React Core. No entanto, se quiser práticas extras, crie sua própria implementação do React que mapeie para o [Componente de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) AEM. O componente `Image` é outro exemplo de um componente **content**.
+Um componente Imagem SPA já foi fornecido pelos componentes React Core. No entanto, se quiser práticas extras, crie sua própria implementação do React que mapeie para o AEM [Componente de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). O `Image` é outro exemplo de um **conteúdo** componente.
 
 ### Inspect no JSON
 
 Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
 
-1. Navegue até [Exemplos de imagem na biblioteca do Componente principal](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html).
+1. Navegue até o [Exemplos de imagem na biblioteca do Componente principal](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
    ![JSON do Componente principal de imagem](./assets/map-components/image-json.png)
 
-   As propriedades de `src`, `alt` e `title` serão usadas para preencher o componente de SPA `Image`.
+   Propriedades de `src`, `alt`e `title` será usada para preencher a SPA `Image` componente.
 
    >[!NOTE]
    >
-   > Há outras propriedades de Imagem expostas (`lazyEnabled`, `widths`) que permitem que um desenvolvedor crie um componente adaptável e de carregamento lento. O componente criado neste tutorial será simples e **not** usará essas propriedades avançadas.
+   > Há outras propriedades de imagem expostas (`lazyEnabled`, `widths`) que permitem que um desenvolvedor crie um componente adaptável e de carregamento lento. O componente criado neste tutorial será simples e **not** use essas propriedades avançadas.
 
 ### Implementar o componente Imagem
 
-1. Em seguida, crie uma nova pasta chamada `Image` em `ui.frontend/src/components`.
-1. Abaixo da pasta `Image` crie um novo arquivo chamado `Image.js`.
+1. Em seguida, crie uma nova pasta chamada `Image` under `ui.frontend/src/components`.
+1. Abaixo da `Image` pasta criar um novo arquivo chamado `Image.js`.
 
    ![Arquivo Image.js](./assets/map-components/image-js-file.png)
 
-1. Adicione as seguintes instruções `import` a `Image.js`:
+1. Adicione o seguinte `import` instruções para `Image.js`:
 
    ```js
    import React, {Component} from 'react';
    import {MapTo} from '@adobe/aem-react-editable-components';
    ```
 
-1. Em seguida, adicione o `ImageEditConfig` para determinar quando mostrar o espaço reservado no AEM:
+1. Em seguida, adicione o `ImageEditConfig` para determinar quando mostrar o espaço reservado em AEM:
 
    ```js
    export const ImageEditConfig = {
@@ -331,9 +331,9 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    };
    ```
 
-   O espaço reservado mostrará se a propriedade `src` não estiver definida.
+   O espaço reservado mostrará se a variável `src` propriedade não está definida.
 
-1. Em seguida, implemente a classe `Image`:
+1. Em seguida, implemente o `Image` classe:
 
    ```js
     export default class Image extends Component {
@@ -359,17 +359,17 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    }
    ```
 
-   O código acima renderizará um `<img>` com base nas props `src`, `alt` e `title` passadas pelo modelo JSON.
+   O código acima renderizará um `<img>` com base nas props `src`, `alt`e `title` passado pelo modelo JSON.
 
-1. Adicione o código `MapTo` para mapear o componente React para o componente AEM:
+1. Adicione o `MapTo` código para mapear o componente React para o componente AEM:
 
    ```js
    MapTo('wknd-spa-react/components/image')(Image, ImageEditConfig);
    ```
 
-   Observe que a string `wknd-spa-react/components/image` corresponde ao local do componente AEM em `ui.apps` em: `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image`.
+   Observe a string `wknd-spa-react/components/image` corresponde ao local do componente AEM em `ui.apps` em: `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image`.
 
-1. Crie um novo arquivo chamado `Image.css` no mesmo diretório e adicione o seguinte:
+1. Crie um novo arquivo com o nome `Image.css` no mesmo diretório e adicione o seguinte:
 
    ```scss
    .Image-src {
@@ -379,7 +379,7 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    }
    ```
 
-1. Em `Image.js` adicione uma referência ao arquivo na parte superior abaixo das instruções `import`:
+1. Em `Image.js` adicione uma referência ao arquivo na parte superior do `import` instruções:
 
    ```js
    import React, {Component} from 'react';
@@ -388,7 +388,7 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    require('./Image.css');
    ```
 
-1. Abra o arquivo `ui.frontend/src/components/import-components.js` e adicione uma referência ao novo componente `Image`:
+1. Abra o arquivo `ui.frontend/src/components/import-components.js` e adicione uma referência ao novo `Image` componente:
 
    ```js
    import './Page/Page';
@@ -398,7 +398,7 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    import './Image/Image'; //add reference to Image component
    ```
 
-1. Em `import-components.js` comente a Imagem do componente principal de reação:
+1. Em `import-components.js` comente a imagem do Componente principal de reação:
 
    ```js
    //MapTo('wknd-spa-react/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});

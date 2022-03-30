@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,9 @@ ht-degree: 0%
 # Aplicação de extensões Reader
 
 As extensões Reader permitem manipular direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos do PDF com direitos de uso adicionados são chamados de documentos ativados por direitos. Um usuário que abre um documento do PDF habilitado para direitos no Adobe Reader pode executar as operações ativadas para esse documento.
-Para testar esse recurso, você pode tentar este [link](https://forms.enablementadobe.com/content/forms/af/applyreaderextensions.html).
 
 Para realizar esse caso de uso, precisamos fazer o seguinte:
-* [Adicione o ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) certificado Reader Extensions ao  `fd-service` usuário.
+* [Adicionar o certificado de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) para `fd-service` usuário.
 
 ## Criar serviço OSGi personalizado
 

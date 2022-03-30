@@ -6,13 +6,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 879518db-3f05-4447-86e8-5802537584e5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
-
 
 # Etapa de processo personalizada
 
@@ -27,18 +27,16 @@ Para realizar o caso de uso acima, você normalmente gravará um serviço OSGi q
 
 ## Criar projeto Maven
 
-O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas são listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
+O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas estão listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
 
 
 ### Criar classe que implemente o WorkflowProcess
 
-Abra o projeto maven no eclipse IDE. Expanda a pasta **projectname** > **core**. Expanda a pasta src/main/java. Você deve ver um pacote que termine com &quot;núcleo&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Você precisará substituir o método de execução. A assinatura do método execute é a seguinte
-public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)aciona WorkflowException
-O método execute dá acesso às 3 variáveis a seguir
+Abra o projeto maven no eclipse IDE. Expandir **nome do projeto** > **núcleo** pasta. Expanda a pasta src/main/java. Você deve ver um pacote que termine com &quot;núcleo&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Você precisará substituir o método de execução. A assinatura do método execute é a seguinte execução pública void (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)aciona WorkflowException O método execute dá acesso às 3 variáveis a seguir
 
 **WorkItem**: A variável workItem dará acesso aos dados relacionados ao workflow. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Essa variável workflowSession fornecerá a capacidade de controlar o workflow. A documentação da API pública está disponível [aqui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Essa variável workflowSession fornecerá a capacidade de controlar o workflow. A documentação da API pública está disponível [here](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **MetaDataMap**: Todos os metadados associados ao workflow. Quaisquer argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap .[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -148,16 +146,15 @@ O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta at
 
 #### Criar e implantar
 
-[Crie o pacote conforme descrito ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
-[aqui. Verifique se ele foi implantado e está no estado ativo](http://localhost:4502/system/console/bundles)
+[Crie o pacote conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Certifique-se de que o pacote esteja implantado e no estado ativo](http://localhost:4502/system/console/bundles)
 
 Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no modelo de fluxo de trabalho. Associe a etapa do processo a &quot;Salvar anexos do formulário adaptável no sistema de arquivos&quot;.
 
 Forneça os argumentos do processo necessários separados por vírgula. Por exemplo, Anexos, c:\\scrappp\\. O primeiro argumento é a pasta em que os anexos do Formulário adaptativo serão armazenados em relação à carga do fluxo de trabalho. Esse deve ser o mesmo valor especificado ao configurar a ação de envio do Formulário adaptável. O segundo argumento é o local em que você deseja que os anexos sejam armazenados.
 
-Crie um formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação Enviar do formulário para invocar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
+Criar um formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação Enviar do formulário para invocar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
 
 Salve as configurações.
 
 Visualizar o formulário. Adicione alguns anexos e envie o formulário. Os anexos devem ser salvos no sistema de arquivos no local especificado por você no fluxo de trabalho.
-
