@@ -8,10 +8,10 @@ kt: 10054
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342067.jpeg
-source-git-commit: 8212bdddb35fe015efbea897b72b00df3787b120
+source-git-commit: cc4b565aeeaa1419138d459c2d144e944ffb0e67
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 7%
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,7 @@ Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas re
 
 ## Conteúdo abordado neste vídeo
 
-+ Arquivos de registro [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
-+ Acesso a arquivos de log por meio da interface do usuário
-+ Uso da CLI do Adobe
-   + [CLI extensível Adobe I/O](https://github.com/adobe/aio-cli)
-   + [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
-+ Arquivos de registro à direita
++ implantação de arquivos do dispatcher em um ambiente do cloud service
+   + [Documentos de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+   + [Blog](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
++ [Ferramentas de migração](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
