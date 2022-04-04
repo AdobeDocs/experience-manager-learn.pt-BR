@@ -3,10 +3,10 @@ title: Vídeos e Tutoriais do AEM Assets
 description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: b7ff3e9abd22bb0c3d791ec3ac7da3562e849912
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 18%
+source-wordcount: '186'
+ht-degree: 24%
 
 ---
 
@@ -14,27 +14,11 @@ ht-degree: 18%
 
 O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de ativos digitais AEM plataforma que permite que os usuários criem, gerenciem e compartilhem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Assets.
 
-## Novidades
+## Apresentação do AEM Assets
 
-* **[Relacionar e não relacionar (Vídeo)](./authoring/relate-unrelate.md)**
+Assista a essa apresentação completa do AEM Assets que explica o que é o AEM Assets e como ele pode ser usado para atingir as metas comerciais de sua organização.
 
-   *Saiba como estabelecer e gerenciar relacionamentos entre ativos no AEM*
-
-* **[Publicar ativos (vídeo)](./sharing/publish.md)**
-
-   *Saiba mais sobre os recursos de publicação de ativos do AEM Author para AEM Publish*
-
-* **[Marcas d&#39;água (Vídeo)](./advanced/watermarks.md)**
-
-   *Saiba como marcar representações de ativos com marca d&#39;água em AEM as a Cloud Service*
-
-* **[Permissões de linha de base (Vídeo)](./configuring/baseline-permissions.md)**
-
-   *Saiba como e por que é importante configurar o AEM Assets com permissões de linha de base*
-
-* **[Fluxos de trabalho de início automático (Vídeo)](./configuring/auto-start-workflows.md)**
-
-   *Explore como chamar automaticamente AEM fluxo de trabalho em ativos carregados ou reprocessados*
+>[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
 ## Pessoal
 
@@ -82,7 +66,7 @@ O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de at
 
 ## Recursos adicionais
 
-* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager)
 * [Documentação do AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Sites](/help/sites/overview.md)
