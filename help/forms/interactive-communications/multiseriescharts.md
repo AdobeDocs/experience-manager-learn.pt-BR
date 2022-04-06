@@ -12,13 +12,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Gráficos de várias séries
 
@@ -47,6 +47,6 @@ Para testar isso em seu sistema, siga as seguintes etapas
 * [Baixe o SeriesChartSampleData.json no seu disco rígido.](assets/serieschartsampledata.json) Esses são os dados de amostra que serão usados para preencher o gráfico.
 * [Navegue até Forms e Documentos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Com cuidado, selecione o modelo de comunicações interativas &quot;MútuoFundoCrescimentoFactSheet&quot;.
-* Clique em Visualizar | Fazer upload de dados de amostra.
+* Clique em Visualizar | Canal de impressão | Fazer upload de dados de amostra.
 * Navegue até o arquivo de dados de amostra fornecido como parte deste artigo.
 * Visualize o canal de impressão da comunicação interativa &quot;MútuoFundoCrescimentoFactSheet&quot; com os dados de amostra baixados na etapa anterior.
