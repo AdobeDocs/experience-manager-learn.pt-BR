@@ -1,6 +1,6 @@
 ---
 title: Migração para a nuvem - Parte 1
-description: Darin e James discutem a migração para a AEM Cloud e demonstram algumas das técnicas.
+description: Darin e James discutem a migração para a AEM Cloud e demonstram algumas técnicas e práticas recomendadas.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -8,16 +8,17 @@ kt: 10207
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
-source-git-commit: bc14a89433ef603ef981a05efb1eb931dabcb777
+exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
+source-git-commit: 62a1deda2a4fda56edb0c3d0f34a5e804f78887b
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 5%
 
 ---
 
 # Migração para a nuvem - Parte 1
 
-Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/On-Prem.They também abordam a migração para a nuvem. convidado especial e especialista em nuvem, [Dr. Applesmith](https://twitter.com/DrApplesmith) faz uma aparência.
+Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/No local. Eles também tocam na migração para a nuvem. convidado especial e especialista em nuvem, [Dr. Applesmith](https://twitter.com/DrApplesmith) faz uma aparência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133/?quality=12&learn=on)
 
