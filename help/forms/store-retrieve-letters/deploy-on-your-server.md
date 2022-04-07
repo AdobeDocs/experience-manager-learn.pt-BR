@@ -11,10 +11,11 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 Siga as instruções abaixo para obter essa funcionalidade funcionando no servidor AEM
 
-* Crie uma pasta chamada icrascunhos na unidade c
 * [Criar o esquema do banco de dados](assets/icdrafts.sql)
 * [Importe a biblioteca do cliente](assets/icdrafts.zip)
 * [Importar o formulário adaptável](assets/SavedDraftsAdaptiveForm.zip)
 * Criar fonte de dados chamada _SaveAndContinue_
 
 ![Criar fonte de dados](assets/data-source.png)
+
+| Nome da Propriedade | Valor da propriedade |
+|---|---|
+| Nome da origem de dados | SaveAndContinue |
+| Classe de driver JDBC | com.mysql.cj.jdbc.Driver |
+| URL de conexão JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [Implantar o pacote de ícones](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * Certifique-se de que _Habilitar Salvar Usando CCRDocumentInstanceService_ na configuração OSGI, como mostrado abaixo

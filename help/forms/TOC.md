@@ -5,7 +5,7 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 3%
@@ -235,7 +235,7 @@ ht-degree: 3%
    + [Abrir a interface do usuário do agente no envio de formulário](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Salvar e Recuperar Cartas de Rascunho {#store-retrieve-letters}
    + [Introdução](store-retrieve-letters/introduction.md)
-   + [implementação](store-retrieve-letters/save-draft-letters.md)
+   + [Implementação](store-retrieve-letters/save-draft-letters.md)
    + [Implantar a amostra](store-retrieve-letters/deploy-on-your-server.md)
 + Comunicações interativas {#interactive-communications}
    + [Uso da API em lote](interactive-communications/batch-generation-interactive-communications.md)
