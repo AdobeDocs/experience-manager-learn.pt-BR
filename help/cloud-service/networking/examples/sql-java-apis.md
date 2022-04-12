@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ A exceção a essa regra é quando [endereço ip de saída dedicado](../dedicate
 ## Suporte avançado para rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
+
+Verifique se a variável [adequada](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi configurada antes de seguir este tutorial.
 
 | Sem rede avançada | [Saída flexível da porta](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

@@ -8,9 +8,10 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: c53277241e54c757492dbc72e53f89127af389ac
+exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,8 @@ As conexões HTTP/HTTPS em portas não padrão (não 80/443) devem ser enviadas 
 ## Suporte avançado para rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
+
+Verifique se a variável [adequada](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi configurada antes de seguir este tutorial.
 
 | Sem rede avançada | [Saída flexível da porta](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

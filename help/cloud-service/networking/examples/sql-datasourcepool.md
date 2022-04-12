@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ As conexões com bancos de dados SQL (e outros serviços não HTTP/HTTPS) devem 
 ## Suporte avançado para rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
+
+Verifique se a variável [adequada](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi configurada antes de seguir este tutorial.
 
 | Sem rede avançada | [Saída flexível da porta](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
