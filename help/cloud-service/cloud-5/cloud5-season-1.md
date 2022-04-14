@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 09dbe82eeebd598d4a5949d61a7ae14937c18b72
+source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -105,20 +105,22 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </div>
       <p>
         <br/>
-         Parte um (de dois) das dicas e truques para migrar para a nuvem. Nosso foco principal na primeira parte é a prática recomendada e o pré-trabalho que o preparam para migrar.
+         Parte um (de dois) de nossas dicas e truques para migrar para a nuvem. Nosso foco principal na primeira parte é a prática recomendada e o pré-trabalho que o preparam para migrar.
       </p>
    </td> 
   </tr>
 <tr>
    <td>
-      <img alt="Migração (parte 2)" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-content-migration-part-2.md">
+            <img alt="Migração (parte 2)" src="./imgs/007-thumb.png"/>
+        </a>
       <div>
-        <strong>Migração (parte 2)</strong>        
+        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migração (parte 2)</strong></a>     
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Em 14 de abril de 2022
+         Parte dois (de dois) de nossas dicas e truques para migrar para a nuvem. A segunda parte é principalmente sobre o uso das ferramentas disponíveis para migração.
       </p>
      </td>   
      <td>
