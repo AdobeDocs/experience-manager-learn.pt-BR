@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 19%
+source-wordcount: '231'
+ht-degree: 20%
 
 ---
 
@@ -47,7 +47,10 @@ ht-degree: 19%
       + [4 - Consultas GraphQL persistentes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integração de aplicativos do cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Como {#how-to}
-      + [Trabalhar com rich text](./graphql/how-to/rich-text.md)
+      + [Rich text](./graphql/how-to/rich-text.md)
+      + [Imagens](./graphql/how-to/images.md)
+      + [Conteúdo localizado](./graphql/how-to/localized-content.md)
+      + [SDK sem cabeçalho AEM](./graphql/how-to/aem-headless-sdk.md)
    + Exemplos {#example-apps}
       + [Reagir](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
@@ -89,4 +92,4 @@ ht-degree: 19%
    + [4 - Definição de modelos de serviços de conteúdo](./content-services/chapter-4.md)
    + [5 - Criação das páginas dos serviços de conteúdo](./content-services/chapter-5.md)
    + [6 - Exposição do conteúdo na publicação do AEM para entrega](./content-services/chapter-6.md)
-   + [7 - Consumo de serviços de conteúdo AEM de um aplicativo Mobile](./content-services/chapter-7.md)
+   + [7 - Consumo AEM Content Services a partir de um aplicativo móvel](./content-services/chapter-7.md)

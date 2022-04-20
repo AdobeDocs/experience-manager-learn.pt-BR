@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com rich text | Sem Cabeça AEM
+title: Uso de rich text com AEM headless
 description: Saiba como criar conteúdo e incorporar conteúdo referenciado usando um editor de rich text de várias linhas com Fragmentos de conteúdo do Adobe Experience Manager e como o rich text é entregue pelas APIs GraphQL como JSON para ser consumido por aplicativos sem periféricos.
 version: Cloud Service
 doc-type: article
@@ -7,22 +7,21 @@ kt: 9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
 
-
-# Trabalhar com rich text no Adobe Experience Manager Headless
+# Rich Text com AEM headless
 
 O campo Multi line text é um tipo de dados de Fragmentos de conteúdo que permite que os autores criem conteúdo rich text. As referências a outro conteúdo, como imagens ou outros Fragmentos de conteúdo, podem ser inseridas dinamicamente em linha dentro do fluxo do texto. AEM API GraphQL oferece um recurso robusto para retornar rich text como HTML, texto sem formatação ou como JSON puro. A representação JSON é poderosa, pois oferece ao aplicativo cliente controle total sobre como renderizar o conteúdo.
 
 ## Editor de várias linhas
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
-
 
 No Editor de fragmento de conteúdo, a barra de menu do campo Texto de várias linhas fornece aos autores recursos padrão de formatação de rich text, como **bold**, *itálico* e sublinhado. Abrir o campo Multi-line no modo de tela cheia ativa [ferramentas adicionais de formatação, como Tipo de parágrafo, localizar e substituir, verificação ortográfica e muito mais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
