@@ -1,27 +1,31 @@
 ---
-title: Pesquisa e indexação do Cloud 5 AEM
-description: Nós mergulhamos nossos dedos no oceano que é pesquisa e indexação
+title: Adobe App Builder Cloud 5
+description: Este episódio cai no padrão de integração externa que usa o Adobe App Builder
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
-kt: 10275
-thumbnail: 342374.jpeg
+kt: 10279
+thumbnail: 342375.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
+source-git-commit: 3854deb12c2d5a5c91c3416939f3e4534cb0094f
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Pesquisa e indexação do Cloud 5 AEM
+# Adobe App Builder Cloud 5
 
 O Amol Anand entra para nos fornecer o detalhamento das integrações com o Adobe App Builder e onde e quando usá-lo.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374)
+>[!VIDEO](https://video.tv.adobe.com/v/342375)
 
 ## Conteúdo abordado neste vídeo
 
-+ Pesquisar e indexar [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
-+ AEM [Conversor de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ Visão geral da [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
++ [Tutorials e Laboratórios de código](https://developer.adobe.com/app-builder/docs/resources/)
++ [Registro e monitoramento](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ Configuração [Limites do sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ [Desenvolvimento local](https://developer.adobe.com/app-builder/docs/resources/debugging/) Dicas
