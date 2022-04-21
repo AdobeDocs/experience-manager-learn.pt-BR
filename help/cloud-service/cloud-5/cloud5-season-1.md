@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
+source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -124,14 +124,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
      </td>   
      <td>
-      <img alt="Validador do Dispatcher" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-dispatcher-validator.md">
+            <img alt="Validador do Dispatcher" src="./imgs/008-thumb.png"/>
+        </a>
       <div>
-         <strong>Validador do Dispatcher</strong>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validador do Dispatcher</strong></a>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         A 22 de abril de 2022
+         Além das discussões de migração anteriores, observamos o validador do dispatcher e algumas das tarefas que ele pode realizar.
       </p>
    </td>
      <td>
