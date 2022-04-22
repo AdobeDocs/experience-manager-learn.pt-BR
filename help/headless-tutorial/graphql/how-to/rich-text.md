@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # Rich Text com AEM headless
 
-O campo Multi line text é um tipo de dados de Fragmentos de conteúdo que permite que os autores criem conteúdo rich text. As referências a outro conteúdo, como imagens ou outros Fragmentos de conteúdo, podem ser inseridas dinamicamente em linha dentro do fluxo do texto. AEM API GraphQL oferece um recurso robusto para retornar rich text como HTML, texto sem formatação ou como JSON puro. A representação JSON é poderosa, pois oferece ao aplicativo cliente controle total sobre como renderizar o conteúdo.
+O campo Multi line text é um tipo de dados de Fragmentos de conteúdo que permite que os autores criem conteúdo rich text. As referências a outro conteúdo, como imagens ou outros Fragmentos de conteúdo, podem ser inseridas dinamicamente em linha dentro do fluxo do texto. O campo de texto de Linha única é outro tipo de dados de Fragmentos de conteúdo que deve ser usado para elementos de texto simples.
+
+AEM API GraphQL oferece um recurso robusto para retornar rich text como HTML, texto sem formatação ou como JSON puro. A representação JSON é poderosa, pois oferece ao aplicativo cliente controle total sobre como renderizar o conteúdo.
 
 ## Editor de várias linhas
 
@@ -25,13 +27,25 @@ O campo Multi line text é um tipo de dados de Fragmentos de conteúdo que permi
 
 No Editor de fragmento de conteúdo, a barra de menu do campo Texto de várias linhas fornece aos autores recursos padrão de formatação de rich text, como **bold**, *itálico* e sublinhado. Abrir o campo Multi-line no modo de tela cheia ativa [ferramentas adicionais de formatação, como Tipo de parágrafo, localizar e substituir, verificação ortográfica e muito mais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> Os plug-ins de rich text no Editor de várias linhas não podem ser personalizados.
+
 ## Tipo de dados de texto de várias linhas {#multi-line-data-type}
 
 Use o **Texto de várias linhas** tipo de dados ao definir o Modelo do fragmento de conteúdo para ativar a criação de rich text.
 
 ![Tipo de dados de rich text de várias linhas](assets/rich-text/multi-line-rich-text.png)
 
-Ao usar o tipo de dados Multi-line text , é possível definir a variável **Tipo padrão** para:
+Várias propriedades do campo Multi-line podem ser configuradas.
+
+O **Renderizar como** pode ser definida como:
+
+* Área de texto - renderiza um único campo de várias linhas
+* Multiple Field - renderiza vários campos de várias linhas
+
+
+O **Tipo padrão** pode ser definido como:
 
 * Texto formatado
 * Markdown
@@ -40,6 +54,8 @@ Ao usar o tipo de dados Multi-line text , é possível definir a variável **Tip
 O **Tipo padrão** influencia diretamente a experiência de edição e determina se as ferramentas de rich text estão presentes.
 
 Você também pode [habilitar referências em linha](#insert-fragment-references) para outros Fragmentos de conteúdo, verificando o **Permitir referência de fragmento** e configurar o **Modelos permitidos de fragmento do conteúdo**.
+
+Se o conteúdo for localizado, verifique a variável **Traduzível** caixa. Somente Rich Text e Texto sem formatação podem ser localizados. Consulte [trabalhar com conteúdo localizado para obter mais detalhes](./localized-content.md).
 
 ## Resposta em rich text com API GraphQL
 
@@ -364,10 +380,12 @@ Use o `json` tipo de retorno e inclua o `_references` objeto ao criar uma consul
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ Na query acima, a variável `main` é retornado como JSON. O `_references` objet
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
