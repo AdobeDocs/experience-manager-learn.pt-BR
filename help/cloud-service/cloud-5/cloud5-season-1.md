@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
+source-git-commit: 571f79cbcadff2161c3daa993ac833d9d4068f98
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -137,14 +137,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
    </td>
      <td>
-      <img alt="Dicas de indexação e pesquisa" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-search-and-indexing.md">
+            <img alt="Dicas de indexação e pesquisa" src="./imgs/009-thumb.png"/>
+        </a>
       <div>
-         <strong>Dicas de indexação e pesquisa</strong>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>Dicas de indexação e pesquisa</strong></a>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Em breve 29 de abril de 2022
+         Para algo tão complexo como indexação e pesquisa, a equipe mostra algumas vitórias fáceis para otimizar seu tempo de desenvolvimento e resolver coisas antes que elas se tornem problemas.
       </p>
    </td> 
   </tr>
