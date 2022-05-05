@@ -1,8 +1,8 @@
 ---
 title: Personalizar a atribuição de notificação de tarefa
 description: Incluir dados de formulário na atribuição de emails de notificação de tarefa
-sub-product: formulários
-feature: Fluxo de trabalho
+sub-product: forms
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,30 +10,30 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
+source-git-commit: eb2a807587ab918be82d00d50bf1b338df58e84c
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
-
 # Personalizar a atribuição de notificação de tarefa
 
 O componente Atribuir tarefa é usado para atribuir tarefas a participantes do fluxo de trabalho. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário ou aos membros do grupo definidos.
-Normalmente, essa notificação por email conterá dados dinâmicos relacionados à tarefa. Esses dados dinâmicos são obtidos usando as [propriedades de metadados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) geradas pelo sistema.
+Normalmente, essa notificação por email conterá dados dinâmicos relacionados à tarefa. Esses dados dinâmicos são obtidos usando o sistema gerado [propriedades de metadados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 Para incluir valores dos dados de formulário enviados na notificação por email, precisamos criar propriedade de metadados personalizada e usar essas propriedades de metadados personalizadas no modelo de email
 
 
 
 ## Criação da propriedade de metadados personalizada
 
-A abordagem recomendada é criar um componente OSGI que implementa o método getUserMetadata do [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+A abordagem recomendada é criar um componente OSGI que implementa o método getUserMetadata da [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-O código a seguir cria quatro propriedades de metadados(_firstName_,_lastName_,_reason_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, o valor da propriedade de metadados _firstName_ é definido como o valor do elemento chamado firstName a partir dos dados enviados. O código a seguir parte do princípio de que os dados enviados do formulário adaptável estão no formato xml. O Forms adaptável com base no esquema JSON ou no Modelo de dados de formulário gera dados no formato JSON.
+O código a seguir cria quatro propriedades de metadados (_firstName_,_lastName_,_reason_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, a propriedade de metadados _firstName_ O valor de é definido como o valor do elemento chamado firstName a partir dos dados enviados. O código a seguir parte do princípio de que os dados enviados do formulário adaptável estão no formato xml. O Forms adaptável com base no esquema JSON ou no Modelo de dados de formulário gera dados no formato JSON.
 
 
 ```java
@@ -131,10 +131,10 @@ Depois que o componente OSGi for criado e implantado em AEM servidor, configure 
 ## Para experimentar isso no servidor
 
 * [Configurar o Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Associar uma id de email válida a [usuário administrador](http://localhost:4502/security/users.html)
-* Baixe e instale o [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Baixe o [Adaptive Form](assets/request-travel-authorization.zip) e importe para o AEM a partir do [interface do usuário de formulários e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implante e inicie o [Pacote Personalizado](assets/work-items-user-service-bundle.jar) usando o [console da Web](http://localhost:4502/system/console/bundles)
+* Associar uma ID de email válida ao [usuário administrador](http://localhost:4502/security/users.html)
+* Baixe e instale o [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) usar [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Baixar [Formulário adaptável](assets/request-travel-authorization.zip) e importar para o AEM a partir do [interface do usuário de formulários e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Implante e inicie o [Pacote personalizado](assets/work-items-user-service-bundle.jar) usando o [console da web](http://localhost:4502/system/console/bundles)
 * [Visualizar e enviar o formulário](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 A notificação de atribuição de tarefa de envio de formulário é enviada para a ID de email associada ao usuário administrador. A captura de tela a seguir mostra um exemplo de notificação de atribuição de tarefa
@@ -144,6 +144,62 @@ A notificação de atribuição de tarefa de envio de formulário é enviada par
 >[!NOTE]
 >O modelo de email para a notificação de tarefa de atribuição precisa estar no seguinte formato.
 >
-> assunto=Tarefa Atribuída - `${workitem_title}`
+> assunto=tarefa atribuída - `${workitem_title}`
 >
 > message=String que representa seu modelo de email sem caracteres de nova linha.
+
+## Comentários da Tarefa em Atribuir Notificação de Correio Eletrônico da Tarefa
+
+Em alguns casos, você pode querer incluir os comentários do proprietário da tarefa anterior nas notificações de tarefa subsequentes. O código para capturar o último comentário da tarefa está listado abaixo:
+
+```java
+package samples.aemforms.taskcomments.core;
+
+import org.osgi.service.component.annotations.Component;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.jcr.Session;
+
+import org.osgi.framework.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.HistoryItem;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+
+import com.adobe.fd.workspace.service.external.WorkitemUserMetadataService;
+@Component(property = {
+  Constants.SERVICE_DESCRIPTION + "=A sample implementation of a user metadata service.",
+  Constants.SERVICE_VENDOR + "=Adobe Systems",
+  "process.label" + "=Capture Workflow Comments"
+})
+
+public class CaptureTaskComments implements WorkitemUserMetadataService {
+  private static final Logger log = LoggerFactory.getLogger(CaptureTaskComments.class);
+  @Override
+  public Map <String, String> getUserMetadata(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metadataMap) {
+    HashMap < String, String > customMetadataMap = new HashMap < String, String > ();
+    workflowSession.adaptTo(Session.class);
+    try {
+      List <HistoryItem> workItemsHistory = workflowSession.getHistory(workItem.getWorkflow());
+      int listSize = workItemsHistory.size();
+      HistoryItem lastItem = workItemsHistory.get(listSize - 1);
+      String reviewerComments = (String) lastItem.getWorkItem().getMetaDataMap().get("workitemComment");
+      log.debug("####The comment I got was ...." + reviewerComments);
+      customMetadataMap.put("comments", reviewerComments);
+      log.debug("Created  " + customMetadataMap.size() + " metadata  properties");
+
+    } catch (Exception e) {
+      log.debug(e.getMessage());
+    }
+    return customMetadataMap;
+  }
+
+}
+```
+
+O pacote com o código acima pode ser [baixado aqui](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
