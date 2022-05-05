@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
+source-git-commit: cca9ea744f938470b82b61d11269c1f9e8250bbe
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
 
 ---
-
 
 # Imagens com AEM headless
 
@@ -90,7 +90,7 @@ A resposta JSON resultante contém os campos solicitados contendo os URLs para o
 
 Para carregar a imagem referenciada em seu aplicativo, use o campo apropriado, `_path`, `_authorUrl`ou `_publishUrl` do `adventurePrimaryImage` como o URL de origem da imagem.
 
-Os domínios da `_authorUrl` e `_publishUrl` são automaticamente definidas por AEM as a Cloud Service usando a variável [Externalizar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.htmli).
+Os domínios da `_authorUrl` e `_publishUrl` são automaticamente definidas por AEM as a Cloud Service usando a variável [Externalizador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.html).
 
 No React, a exibição da imagem da publicação do AEM é semelhante a:
 
