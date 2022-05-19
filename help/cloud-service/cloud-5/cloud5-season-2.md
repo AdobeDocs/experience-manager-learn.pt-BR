@@ -4,7 +4,8 @@ description: A segunda temporada permite que você saiba mais sobre a Adobe Expe
 sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
+source-git-commit: c42e37c6bebb59189000d5382ccab2c8656455ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 2%
@@ -30,9 +31,9 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
 <table>
   <tr>
    <td>
-      <img alt="Admin Console" src="./imgs/coming-soon.png"/>
+      <img alt="Fragmentos" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Admin Console</strong>        
+         <strong>Fragmentos</strong>        
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
@@ -41,9 +42,9 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
      </td>   
      <td>
-         <img alt="Fragmentos" src="./imgs/coming-soon.png"/>
+         <img alt="Modernizador de repositório" src="./imgs/coming-soon.png"/>
       <div>
-         <strong>Fragmentos</strong>
+         <strong>Repository Modernizer</strong>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
@@ -52,9 +53,9 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
    </td>
      <td>
-            <img alt="Modernizador de repositório" src="./imgs/coming-soon.png"/>
+            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
-            <strong>Repository Modernizer</strong>
+            <strong>Admin Console</strong>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
