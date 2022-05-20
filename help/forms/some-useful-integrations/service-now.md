@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: 81a15fb0182760aaac8cb58cccbfe28de7323492
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '289'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,7 @@ Criar e exibir incidente em [!DNL ServiceNow] usando o Modelo de dados de formul
 ## Amostra de ativos
 
 Os ativos de exemplo fornecidos com este artigo incluem o seguinte
+
 * Configuração do serviço na nuvem
 * Troque arquivos para criar um incidente e buscar todos os incidentes
 * Modelo de dados de formulário com base nos arquivos do gerenciador
@@ -37,8 +38,18 @@ Os ativos de exemplo fornecidos com este artigo incluem o seguinte
 
 * Baixe o [ativos de exemplo](assets/service-now.zip)
 * Importe os ativos no AEM usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* O arquivo do swagger usado para essa integração está localizado na variável ```/conf/9957/settings/cloudconfigs/fdm``` pasta no repositório crx
 * Edite o [Configuração do serviço em nuvem CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)para corresponder à sua instância ServiceNow.
-* Edite o [Configuração do serviço em nuvem GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para corresponder à sua instância ServiceNow
+* Edite o [Configuração do serviço em nuvem GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) para corresponder à sua instância ServiceNow. Você precisará alterar o host, o nome de usuário e a senha para corresponder às credenciais da instância do ServiceNow.
+
+## Acessar credenciais de instância do ServiceNow
+
+* Clique no seu perfil de usuário
+   ![clicar no perfil do usuário](assets/snow-1.png)
+
+* Clique em Gerenciar senha da instância
+* Os detalhes da instância serão mostrados conforme abaixo
+   ![detalhes da instância](assets/snow-3.png)
 
 ## Testar a integração
 
