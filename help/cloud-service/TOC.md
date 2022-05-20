@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 22%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 22%
       + [Logs](./debugging/cloud-service/logs.md)
       + [Criar e implantar](./debugging/cloud-service/build-and-deployment.md)
       + [Console do desenvolvedor](./debugging/cloud-service/developer-console.md)
-      + [Navegador de Repositório](./debugging/cloud-service/repository-browser.md)
+      + [Navegador de repositório](./debugging/cloud-service/repository-browser.md)
 + Acessar AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
@@ -89,6 +89,9 @@ ht-degree: 22%
    + [Perfis de produto do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM usuários, grupos e permissões](./accessing/aem-users-groups-and-permissions.md)
    + [Configuração do acesso ao AEM](./accessing/walk-through.md)
++ Autenticação{#authentication}
+   + [Visão geral](./authentication/authentication.md)
+   + [SAML 2.0](./authentication/saml-2-0.md)
 + Rede avançada{#networking}
    + [Visão geral](./networking/advanced-networking.md)
    + [Saída flexível da porta](./networking/flexible-port-egress.md)
