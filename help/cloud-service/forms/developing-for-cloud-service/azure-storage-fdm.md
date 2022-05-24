@@ -8,17 +8,17 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
+exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-
 # Incluir a configuração dos serviços em nuvem no seu projeto
 
-Crie um contêiner de configuração chamado &quot;Tutorial do Forms&quot; para manter a configuração dos serviços de nuvem Crie uma configuração de serviços de nuvem para o Armazenamento do Azure chamada &quot;Armazenar envios de formulário no Azure&quot; no contêiner &quot;Tutorial do Forms&quot;. Forneça os detalhes da conta de armazenamento do Azure e a chave da conta
+Crie um contêiner de configuração chamado &quot;FormTutorial&quot; para manter a configuração dos serviços de nuvem Crie uma configuração de serviços de nuvem para o Armazenamento do Azure chamada &quot;FormsCSAndAzureBlob&quot; no contêiner &quot;FormTutorial&quot; fornecendo os detalhes da conta de armazenamento do Azure e a chave de acesso do Azure.
 
 Abra seu projeto de AEM no IntelliJ. Certifique-se de adicionar a pasta FormTutorial conforme mostrado abaixo no projeto ui.content
 ![configuração de serviços em nuvem](assets/cloud-services-configuration.png)
@@ -45,4 +45,4 @@ Inclua a entrada apropriada no filter.xml do projeto ui.content
 
 >[!NOTE]
 >
->Agora, ao criar e implantar seu projeto, o projeto terá o modelo de dados de formulário com base na configuração de serviços em nuvem disponível na instância da nuvem
+>Agora, ao criar e implantar seu projeto usando o cloud manager, você terá que inserir novamente sua chave de acesso do Azure na configuração dos serviços em nuvem. Para evitar inserir novamente a chave de acesso, é recomendável criar uma configuração sensível ao contexto usando as variáveis de ambiente, conforme explicado na seção [próximo artigo](./context-aware-fdm.md)

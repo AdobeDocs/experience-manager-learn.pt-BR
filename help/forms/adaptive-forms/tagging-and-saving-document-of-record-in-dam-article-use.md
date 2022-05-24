@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -160,14 +160,14 @@ Para que esse exemplo funcione em seu sistema, siga as etapas listadas abaixo:
 
 * [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Esse é o pacote OSGI personalizado que define as tags a partir dos dados de formulário enviados.
 
-* [Download do formulário adaptável de amostra](assets/tag-and-store-in-dam-assets.zip)
+* [Download do formulário adaptável de amostra](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Ir para Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Clique em Criar | Upload de arquivo e upload do sampleadaptiveform.zip
+* Clique em Criar | Upload de arquivo e upload do tag-and-store-in-dam-adaptive-form.zip
 
 * [Importe os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) usando o gerenciador de pacotes AEM
-* Abra o [formulário de amostra no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Preencha a seção Pessoas e envie o formulário.
+* Abra o [formulário de amostra no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e enviar o formulário.
 * [Navegar para a pasta Pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
 Parabéns!! A amostra foi instalada com êxito no sistema
 
