@@ -11,8 +11,8 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
