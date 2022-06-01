@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 52a2303f75c23c72e201b1f674f7f882db00710b
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1370'
 ht-degree: 1%
 
 ---
@@ -220,16 +220,16 @@ Comece ativando a Rede privada virtual AEM as a Cloud Service.
 
 Com a Rede privada virtual ativada, AEM código e configuração podem usá-las para fazer chamadas para serviços externos por meio da VPN. Há dois sabores de chamadas externas que AEM tratam de forma diferente:
 
-1. Chamadas HTTP/HTTPS para serviços externos em portas não padrão
+1. Chamadas HTTP/HTTPS para serviços externos
    + Inclui chamadas HTTP/HTTPS feitas para serviços em execução em portas diferentes das portas 80 ou 443 padrão.
 1. chamadas não HTTP/HTTPS para serviços externos
    + Inclui chamadas não HTTP, como conexões com servidores de email, bancos de dados SQL ou serviços que são executados em outros protocolos não HTTP/HTTPS.
 
-Por padrão, as solicitações HTTP/HTTPS de AEM em portas padrão (80/443) são permitidas e não precisam de configuração ou considerações adicionais.
+Por padrão, as solicitações HTTP/HTTPS de AEM em portas padrão (80/443) são permitidas, mas não usarão a conexão VPN se não estiver configurada adequadamente, conforme descrito abaixo.
 
-### HTTP/HTTPS em portas não padrão
+### HTTP/HTTPS
 
-Ao criar conexões HTTP/HTTPS com portas não padrão (não-80/443) a partir de AEM, a conexão deve ser feita por meio de host e portas especiais, fornecidas por meio de espaços reservados.
+Ao criar conexões HTTP/HTTPS a partir de AEM, para obter um endereço IP de saída dedicado ou ser roteado por meio da VPN, a conexão deve ser feita por meio de host e portas especiais, fornecidas por meio de espaços reservados.
 
 AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que mapeiam para AEM proxies HTTP/HTTPS.
 
@@ -237,7 +237,7 @@ AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que mapeia
 
 As solicitações para serviços externos HTTP/HTTPS devem ser feitas configurando a configuração de proxy do cliente HTTP do Java™ por meio de valores de hosts/portas de proxy AEM.
 
-Ao fazer chamadas HTTP/HTTPS para serviços externos em portas não padrão, nenhum `portForwards` deve ser definido usando as APIs do Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` , já que as &quot;regras&quot; de encaminhamento de porta são definidas como &quot;em código&quot;.
+Ao fazer chamadas HTTP/HTTPS para serviços externos em qualquer porta, nenhum `portForwards` deve ser definido usando as APIs do Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` , já que as &quot;regras&quot; de encaminhamento de porta são definidas como &quot;em código&quot;.
 
 >[!TIP]
 >
@@ -248,10 +248,10 @@ Ao fazer chamadas HTTP/HTTPS para serviços externos em portas não padrão, nen
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="HTTP/HTTPS em portas não padrão" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports.md">HTTP/HTTPS em portas não padrão</a></strong></div>
+    <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Exemplo de código Java™ tornando a conexão HTTP/HTTPS de AEM as a Cloud Service para um serviço externo em portas HTTP/HTTPS não padrão.
+        Exemplo de código Java™ tornando a conexão HTTP/HTTPS do AEM as a Cloud Service para um serviço externo usando o protocolo HTTP/HTTPS.
     </p>
 </td>
 <td></td>

@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 63278aace1981aa9bfe69825e95dac5cc387b30a
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '754'
 ht-degree: 22%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 22%
    + [Rede privada virtual](./networking/vpn.md)
    + Exemplos de código{#examples}
       + [HTTP/HTTPS em portas não padrão para saída de porta flexível](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
-      + [HTTP/HTTPS em portas não padrão para endereço IP de saída dedicado/VPN](./networking/examples/http-on-non-standard-ports.md)
+      + [HTTP/HTTPS para endereço IP de saída dedicado/VPN](./networking/examples/http-dedicated-egress-ip-vpn.md)
       + [Conexões SQL usando DataSourcePool](./networking/examples/sql-datasourcepool.md)
       + [Conexões SQL usando APIs Java SQL](./networking/examples/sql-java-apis.md)
       + [Serviço de email](./networking/examples/email-service.md)
