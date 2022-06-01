@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 1aba21ea777a58fe8efc8a6af455b0a8ba965b66
+source-git-commit: 3a9615177acb5475d9b2b4ef22907c11e7da2bf7
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1801'
 ht-degree: 2%
 
 ---
@@ -115,6 +115,18 @@ $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
+```
+
+## Configurar serviços AEM locais no modo de pré-lançamento
+
+O tempo de execução do AEM local pode ser iniciado em [modo de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR) permitindo que um desenvolvedor se compare aos recursos da próxima versão do AEM as a Cloud Service. O pré-lançamento é ativado ao passar o `-r prerelease` argumento no início do tempo de execução local AEM. Isso pode ser usado com os serviços locais de Autor do AEM e Publicação do AEM.
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
 ## Simular distribuição de conteúdo {#content-distribution}
