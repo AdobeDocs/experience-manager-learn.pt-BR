@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: abb26a995ec81332bb6ae3617b1a41b60c9dab96
+source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,20 @@ Visite o [Caixa de Sugestão](https://forms.office.com/r/74P5Xz4UH0) para enviar
 Cada estação varia muito e será lançada de acordo com uma programação fixa. Os tópicos da segunda temporada são impulsionados principalmente por solicitações anteriores que encontramos em nossos envolvimentos diários com clientes e parceiros. Visite esta página para obter atualizações semanais ou siga-nos na rede social de sua escolha.
 
 <table>
-  <tr>
-   <td>
-      <img alt="Fragmentos" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>Fragmentos</strong>        
-         <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
-      </div>
-      <p>
-        <br/>
-         Em breve, 3 de junho de 2022
-      </p>
-     </td>   
+    <tr>
+        <td>
+            <a href="season-2/cloud5-experience-v-content-fragments.md">
+                <img alt="Fragmentos" src="./imgs/s2/000-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-experience-v-content-fragments.md"><strong>Fragmentos</strong></a>        
+                <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
+            </div>
+            <p>
+                <br/>
+                Uma análise detalhada das diferenças entre fragmentos de experiência e conteúdo. Spoiler: todo mundo ganha.
+            </p>
+        </td>   
      <td>
          <img alt="Modernizador de repositório" src="./imgs/coming-soon.png"/>
       <div>
