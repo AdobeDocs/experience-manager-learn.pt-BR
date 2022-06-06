@@ -8,9 +8,10 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 10423
-source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
+exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,14 +25,14 @@ As etapas a seguir são necessárias para criar a configuração de nuvem com re
 
 ## Criar variáveis de ambiente
 
-As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Eles são fornecidos para o ambiente de tempo de execução e podem ser usados em configurações do OSGi. As variáveis de ambiente podem ser valores específicos do ambiente ou segredos de ambiente, com base no que está sendo alterado.
+As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Eles são fornecidos para o ambiente de tempo de execução e podem ser usados em configurações do OSGi. [As variáveis de ambiente podem ser valores específicos do ambiente ou segredos de ambiente, com base no que está sendo alterado.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
-[Variáveis de ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+
 
 A seguinte captura de tela mostra as variáveis de ambiente azure_key e azure_connection_string definidas
 ![environment_variables](assets/environment-variables.png)
 
-Essas variáveis de ambiente podem ser especificadas nos arquivos de configuração a serem usados nos ambientes apropriados. Por exemplo, se você quiser que todas as instâncias do autor usem essas variáveis de ambientes, defina o arquivo de configuração na pasta config.author , conforme especificado abaixo
+Essas variáveis de ambiente podem ser especificadas nos arquivos de configuração a serem usados no ambiente apropriado. Por exemplo, se você quiser que todas as instâncias do autor usem essas variáveis de ambiente, defina o arquivo de configuração na pasta config.author , conforme especificado abaixo
 
 ## Criar arquivo de configuração
 

@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 3%
    + [Preencher tabela com os resultados da Chamada de Serviço do Modelo de Dados de Formulário](adaptive-forms/populatetable.md)
    + [Captura de comentários do workflow](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Armazenamento de dados de formulário enviados no DB](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Inserção de anexo de formulário no DB](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Serviço do Modelo de dados de formulário no fluxo de trabalho AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Tratamento de mensagens de erro na etapa do serviço do Modelo de dados de formulário](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Serviço do Modelo de dados de formulário no fluxo de trabalho AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
