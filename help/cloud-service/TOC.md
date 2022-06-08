@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '763'
 ht-degree: 22%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 22%
       + [Criar e implantar](./debugging/cloud-service/build-and-deployment.md)
       + [Console do desenvolvedor](./debugging/cloud-service/developer-console.md)
       + [Navegador de repositório](./debugging/cloud-service/repository-browser.md)
+      + Riscos{#risks}
+         + [Avisos transversais](./debugging/cloud-service/risks/traversals.md)
 + Acessar AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
