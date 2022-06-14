@@ -8,7 +8,7 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
@@ -55,7 +55,7 @@ A ferramenta de desenvolvedor requer um arquivo chamado `console.json` que cont�
 1. Vá para a raiz do projeto Adobe I/O e toque em __Baixar tudo__ no canto superior direito.
 1. Um arquivo é baixado como um `.json` arquivo com o prefixo projeto e espaço de trabalho, por exemplo: `wkndAemAssetCompute-81368-Development.json`
 1. Você pode
-   + Renomeie o arquivo como `config.json` e mova-o para a raiz do seu projeto de trabalho do Asset compute. Esta é a abordagem neste tutorial.
+   + Renomeie o arquivo como `console.json` e mova-o para a raiz do seu projeto de trabalho do Asset compute. Esta é a abordagem neste tutorial.
    + Mova-a para uma pasta arbitrária E faça referência a essa pasta da sua `.env` arquivo com uma entrada de configuração `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. O caminho do arquivo pode ser absoluto ou relativo à raiz do seu projeto. Por exemplo:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
