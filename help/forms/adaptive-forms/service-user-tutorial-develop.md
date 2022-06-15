@@ -6,7 +6,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -19,18 +19,18 @@ Este artigo o orienta pelo processo de criação de um usuário de serviço no A
 
 Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos está obsoleto no AEM 6.3. Em vez disso, um usuário do sistema com permissões específicas no repositório é usado.
 
-Saiba mais sobre os detalhes de [criar e usar usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Saiba mais sobre os detalhes do [criar e usar usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador de usuários.
 
-1. Navegue até [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Navegar para [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
 1. Efetuar logon como &#39; admin &#39;
 1. Clique em &quot;Administração de usuário&quot;
 1. Clique em &quot;Criar usuário do sistema&quot;
 1. Defina o tipo de usuário como &#39; data &#39; e clique no ícone verde para concluir o processo de criação do usuário do sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Procure por &#39; Serviço Mapeador de Usuário do Apache Sling Service &#39; e clique para abrir as propriedades
-1. Clique no ícone *+* (mais) para adicionar o seguinte Mapeamento de serviços
+1. Procurar por _Serviço Mapeador de Usuário do Apache Sling Service_ e clique em para abrir as propriedades
+1. Clique no botão *+* ícone (mais) para adicionar o seguinte Mapeamento de serviço
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -42,10 +42,10 @@ Na configuração acima, DevelopingWithServiceUser.core é o nome simbólico do 
 Também podemos obter o resolvedor de recursos em nome do usuário do fd-service. Esse usuário de serviço é usado para serviços de documento. Por exemplo, se você deseja Certificar/Aplicar direitos de uso etc, usaremos o resolvedor de recursos do usuário do fd-service para executar as operações
 
 1. [Baixe e descompacte o arquivo zip associado a este artigo.](assets/developingwithserviceuser.zip)
-1. Navegue até [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Navegar para [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Faça o upload e inicie o pacote OSGi
 1. Verifique se o pacote está no estado ativo
-1. Agora você criou com êxito um *Usuário do Sistema* e também implantou o *Pacote de Usuário do Serviço*.
+1. Agora você criou com êxito um *Usuário do sistema* e também implantou o *Pacote de Usuário do Serviço*.
 
    Para fornecer acesso a /content, forneça ao usuário do sistema (&#39; data &#39;) permissões de leitura no nó de conteúdo.
 

@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,6 @@ ht-degree: 4%
 Um caso de uso comum é permitir que os usuários alternem para a visibilidade do texto inserido no campo de senha.
 Para realizar esse caso de uso, usei o ícone de olho do [Biblioteca do Font Awesome](https://fontawesome.com/). O CSS necessário e o eye.svg são incluídos na biblioteca do cliente criada para esta demonstração.
 
-## Amostra ao vivo
-
-[Esse recurso está disponível para teste aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## Código de exemplo
 
