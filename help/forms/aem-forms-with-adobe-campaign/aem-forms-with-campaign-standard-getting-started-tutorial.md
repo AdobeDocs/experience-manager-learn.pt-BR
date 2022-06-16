@@ -1,18 +1,18 @@
 ---
 title: Introdução ao AEM Forms e Adobe Campaign Standard
 description: Integre o AEM Forms ao Adobe Campaign Standard usando o AEM Forms Form Data Model para buscar informações de perfil de campanha ACS etc.
-feature: Forms adaptável, Modelo de dados de formulário
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e028837b-13d8-4058-ac25-ed095f49524c
+source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao AEM Forms e Adobe Campaign Standard {#getting-started-with-aem-forms-and-adobe-campaign-standard}
 
@@ -24,7 +24,7 @@ O ACS tem um conjunto avançado de APIs expostas, que permite que o ACS seja int
 
 Para integrar o AEM Forms com o ACS, é necessário seguir as seguintes etapas:
 
-* [Configure o acesso à API na instância do ACS.](https://docs.campaign.adobe.com/doc/standard/en/api/ACS_API.html#setting-up-api-access)
+* [Configure o acesso à API na instância do ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * Criar JSON Web Token.
 * Troque o JSON Web Token pelo Adobe Identity Management Service por um Token de acesso.
 * Inclua esse Token de acesso no Cabeçalho HTTP de autorização, juntamente com X-API-Key em cada solicitação para a instância ACS.
@@ -32,8 +32,8 @@ Para integrar o AEM Forms com o ACS, é necessário seguir as seguintes etapas:
 Para começar, siga as instruções a seguir
 
 * [Baixe e descompacte os ativos relacionados a este tutorial.](assets/aem-forms-and-acs-bundles.zip)
-* Implante os pacotes usando [Felix web console](http://localhost:4502/system/console/bundles)
+* Implante os pacotes usando [Console da Web Felix](http://localhost:4502/system/console/bundles)
 * Forneça as configurações apropriadas para o Adobe Campaign na Configuração OSGI do Felix.
-* [Crie um usuário de serviço, conforme mencionado neste artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Certifique-se de implantar o pacote OSGi associado ao artigo.
+* [Criar um usuário de serviço, conforme mencionado neste artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Certifique-se de implantar o pacote OSGi associado ao artigo.
 * Armazene a chave privada ACS em etc/key/campaign/private.key. Será necessário criar uma pasta chamada campanha em etc/key.
 * [Forneça acesso de leitura à pasta da campanha para os &quot;dados&quot; do usuário do serviço.](http://localhost:4502/useradmin)

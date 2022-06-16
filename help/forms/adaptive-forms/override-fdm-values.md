@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10537
-source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
+exl-id: 570de1e6-7221-4b8d-b226-a43317bfc166
+source-git-commit: d38f970b1c32884189b0864f8f8bb3b7006a0a7f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -30,4 +31,3 @@ O vídeo a seguir demonstra o recurso e o caso de uso
 >[!NOTE]
 >O recurso demonstrado neste vídeo requer o AEM Forms 6.5.13
 >[!VIDEO](https://video.tv.adobe.com/v/343762?quality=9&learn=on)
-
