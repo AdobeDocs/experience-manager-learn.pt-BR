@@ -3,9 +3,9 @@ title: Como aumentar a velocidade do conteúdo com o Adobe Experience Manager
 description: Saiba mais sobre a velocidade do conteúdo e seu valor em organizações empresariais. Mergulhe em quatro princípios de implementação efetiva e as armadilhas a serem observadas ao longo do caminho.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -176,3 +176,5 @@ Estas são algumas armadilhas possíveis para evitar:
 * Visualização de soluções em silos. Por exemplo, concentrar-se apenas no aspecto técnico da implementação AEM não obterá todos os benefícios para os negócios. Em vez disso, recomendamos analisar casos e cenários de uso de negócios, em seguida, analisar a arquitetura e o design, pois isso fornecerá uma visão maior dos recursos de AEM. Anurandha Pentareddy, do Adobe, compartilha: _&quot;Uma coisa que eu aconselho é olhar seus objetivos de valor antecipadamente para a plataforma que você está implementando.&quot;_
 
 Para uma discussão mais aprofundada sobre a velocidade do conteúdo, assista a esta [discussão no painel](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) com Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e Anuradha Pentareddy.
+
+Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) cubo.
