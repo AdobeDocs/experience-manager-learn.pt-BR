@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
+source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 6%
 
 ---
 
@@ -45,6 +45,23 @@ Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/
   "searchPath": "/content/wknd"
 }
 ```
+
+### URLs absolutos de mapa do site
+
+AEM mapa de site suporta URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços de AEM que geram mapas do site.
+
+Um exemplo de definição de nó de mapeamento Sling para `https://wknd.com` pode ser definido em `/etc/map/https` como se segue:
+
+| Caminho | Nome da propriedade | Tipo de propriedade | Valor da propriedade |
+|------|----------|---------------|-------|
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | Sequência de caracteres | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | Sequência de caracteres | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | Sequência de caracteres | `wknd.com/$1` |
+
+A captura de tela abaixo ilustra uma configuração semelhante, mas para `http://wknd.local` (um mapeamento de nome de host local em execução em `http`).
+
+![Configuração de URLs absolutos do mapa do site](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+
 
 ### Regra de filtro de permissão do Dispatcher
 
