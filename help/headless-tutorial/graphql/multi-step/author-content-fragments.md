@@ -10,117 +10,162 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 0%
+source-wordcount: '897'
+ht-degree: 2%
 
 ---
 
 # Criação do fragmento de conteúdo {#authoring-content-fragments}
 
-Neste capítulo, você criará e editará um novo Fragmento de conteúdo com base no [recém-definido Modelo de fragmento de conteúdo do colaborador](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
+Neste capítulo, você criará e editará um novo Fragmento do conteúdo com base no [modelo de fragmento de conteúdo recém-definido](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial de várias partes e presume-se que as etapas descritas em [Definição de modelos de fragmento de conteúdo](./content-fragment-models.md) foram concluídas.
+Este é um tutorial de várias partes e presume-se que as etapas descritas na seção [Definição dos modelos de fragmento do conteúdo](./content-fragment-models.md) foram concluídas.
 
 ## Objetivos {#objectives}
 
 * Criar um fragmento de conteúdo com base em um modelo de fragmento de conteúdo
 * Criar uma variação de Fragmento de conteúdo
 
-## Visão geral de criação de fragmentos de conteúdo {#overview}
+## Criar um da pasta do ativo
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar Fragmentos de conteúdo dos modelos criados no capítulo anterior, uma pasta deve ser criada para armazená-los. Uma configuração é necessária na pasta para permitir a criação de fragmentos de modelos específicos.
 
-O vídeo acima fornece uma visão geral de alto nível da criação de Fragmentos de conteúdo.
+1. Na tela inicial AEM, acesse **Ativos** > **Arquivos**.
+
+   ![Navegar para arquivos de ativos](assets/author-content-fragments/navigate-assets-files.png)
+
+1. Toque **Criar** no canto e toque em **Pasta**. Na caixa de diálogo resultante, digite:
+
+   * Título*: **Meu projeto**
+   * Nome: **meu projeto**
+
+   ![Caixa de diálogo Criar pasta](assets/author-content-fragments/create-folder-dialog.png)
+
+1. Selecione o **Minha pasta** pasta e toque **Propriedades**.
+
+   ![Abrir propriedades da pasta](assets/author-content-fragments/open-folder-properties.png)
+
+1. Toque no **Cloud Services** guia . Em **Configuração na nuvem** use o localizador de caminho para selecionar o **Meu projeto** configuração. O valor deve ser `/conf/my-project`.
+
+   ![Definir configuração da nuvem](assets/author-content-fragments/set-cloud-config-my-project.png)
+
+   Configurar essa propriedade permitirá que os Fragmentos de conteúdo sejam criados usando os modelos criados no capítulo anterior.
+
+1. Toque no **Políticas** guia . Em **Modelos permitidos de fragmento do conteúdo** use o localizador de caminho para selecionar o **Pessoa** e **Equipe** modelo criado anteriormente.
+
+   ![Modelos de fragmento de conteúdo permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
+
+   Essas políticas serão herdadas por qualquer subpasta automaticamente e poderão ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações do projeto (como WKND Compartilhado). Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
+
+1. Toque **Salvar e fechar** para salvar as alterações nas propriedades da pasta.
+
+1. Navegue dentro do **Meu projeto** pasta.
+
+1. Crie outra pasta com os seguintes valores:
+
+   * Título*: **Inglês**
+   * Nome: **en**
+
+   Uma prática recomendada é a criação de projetos de apoio multilingue. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+
 
 ## Criar um fragmento de conteúdo {#create-content-fragment}
 
-No capítulo anterior, [Definindo Modelos de Fragmento de Conteúdo](./content-fragment-models.md), um modelo de **Colaborador** foi criado. Crie um novo Fragmento de conteúdo usando esse modelo.
+Os próximos vários Fragmentos de conteúdo serão criados com base na variável **Equipe** e **Pessoa** modelos.
 
-1. No menu **AEM Iniciar**, navegue até **Ativos** > **Arquivos**.
-1. Clique nas pastas para navegar até **Site WKND** > **Inglês** > **Contribuidores**. Esta pasta contém uma lista de capturas de cabeçalho para os Contribuidores da marca WKND.
+1. Na tela inicial AEM, toque em **Fragmentos de conteúdo** para abrir a interface do usuário de Fragmentos de conteúdo .
 
-1. Clique em **Criar** no canto superior direito e selecione **Fragmento de conteúdo**:
+   ![Interface do usuário do fragmento de conteúdo](assets/author-content-fragments/cf-fragment-ui.png)
 
-   ![Clique em Criar um novo fragmento](assets/author-content-fragments/create-content-fragment-menu.png)
+1. No painel esquerdo, expanda **Meu projeto** e tocar **Inglês**.
+1. Toque **Criar** para apresentar **Novo fragmento de conteúdo** e insira os seguintes valores:
 
-1. Selecione o modelo **Contributor** e clique em **Próximo**.
+   * Local: `/content/dam/my-project/en`
+   * Modelo do fragmento de conteúdo: **Pessoa**
+   * Título: **John Doe**
+   * Nome: `john-doe`
 
-   ![Selecionar modelo de colaborador](assets/author-content-fragments/select-contributor-model.png)
+   ![Novo fragmento de conteúdo](assets/author-content-fragments/new-content-fragment-john-doe.png)
+1. Toque **Criar**.
+1. Repita as etapas acima para criar um novo fragmento que represente **Alison Smith**:
 
-   Este é o mesmo modelo **Contributor** que foi criado no capítulo anterior.
+   * Local: `/content/dam/my-project/en`
+   * Modelo do fragmento de conteúdo: **Pessoa**
+   * Título: **Alison Smith**
+   * Nome: `alison-smith`
 
-1. Insira **Stacey Roswells** para o título e clique em **Create**.
-1. Clique em **Abrir** na caixa de diálogo **Êxito** para abrir o fragmento recém-criado.
+   Toque **Criar** para criar o novo fragmento Pessoa .
 
-   ![Novo fragmento de conteúdo criado](assets/author-content-fragments/new-content-fragment.png)
+1. Em seguida, repita as etapas para criar um novo **Equipe** fragmento representando **Alfa da equipe**:
 
-   Observe que os campos definidos pelo modelo agora estão disponíveis para criar essa instância do Fragmento de conteúdo.
+   * Local: `/content/dam/my-project/en`
+   * Modelo do fragmento de conteúdo: **Equipe**
+   * Título: **Alfa da equipe**
+   * Nome: `team-alpha`
 
-1. Para **Nome Completo** digite: **Stacey Roswells**.
-1. Para **Biografia**, insira uma breve biografia. Precisa de alguma inspiração? Você pode reutilizar esse [arquivo de texto](assets/author-content-fragments/stacey-roswells-bio.txt).
-1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **Sites de chave estática.jpg&lt;a11/ >.** Isso será avaliado no caminho: `/content/dam/wknd/en/contributors/stacey-roswells.jpg`.
-1. Para **Ocupação** escolha **Fotógrafo**.
+   Toque **Criar** para criar o novo fragmento Equipe .
 
-   ![Fragmento criado](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
+1. Agora deve haver três Fragmentos de conteúdo abaixo de **Meu projeto** > **Inglês**:
 
-1. Clique em **Save** para salvar as alterações.
+   ![Novos fragmentos de conteúdo](assets/author-content-fragments/new-content-fragments.png)
 
-## Criar uma variação de fragmento de conteúdo
+## Editar fragmentos de conteúdo de pessoa {#edit-person-content-fragments}
 
-Todos os Fragmentos de conteúdo começam com uma variação **Principal**. A variação **Principal** pode ser considerada o conteúdo *padrão* do fragmento e é automaticamente usada quando o conteúdo é exposto por meio das APIs GraphQL. Também é possível criar variações de um Fragmento de conteúdo. Esse recurso oferece flexibilidade adicional para projetar uma implementação.
+Em seguida, preencha os fragmentos recém-criados com dados.
 
-Variações podem ser usadas para direcionar canais específicos. Por exemplo, uma variação **mobile** pode ser criada e contém uma quantidade menor de texto ou faz referência a uma imagem específica de canal. A forma como as variações são usadas está realmente à altura da implementação. Como qualquer recurso, um planejamento cuidadoso deve ser feito antes da utilização.
+1. Toque na caixa de seleção ao lado de **John Doe** e tocar **Abrir**.
 
-Em seguida, crie uma nova variação para ter uma ideia dos recursos disponíveis.
+   ![Abrir fragmento de conteúdo](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. Abra novamente o Fragmento de conteúdo **Stacey Roswells**.
-1. No painel lateral esquerdo, clique em **Criar variação**.
-1. No modal **Nova variação**, insira um Título de **Resumo**.
+1. O Editor de fragmento de conteúdo contém um formulário com base no modelo de Fragmento de conteúdo . Preencha os vários campos para adicionar conteúdo ao **John Doe** fragmento. Para Imagem de perfil, sinta-se à vontade para escolher uma das imagens na WKND Compartilhada ou fazer o upload de sua própria imagem para a AEM Assets.
 
-   ![Nova variação - Resumo](assets/author-content-fragments/new-variation-summary.png)
+   ![Editor de fragmento de conteúdo](assets/author-content-fragments/content-fragment-editor-jd.png)
 
-1. Clique no campo **Biografias** de várias linhas e clique no botão **Expandir** para entrar na visualização em tela cheia do campo de várias linhas.
+1. Em seguida, toque em **Criar variação** no painel esquerdo. Na caixa de diálogo, adicione o tipo em **Alternativa** para o nome da variação.
 
-   ![Inserir exibição de tela cheia](assets/author-content-fragments/enter-full-screen-view.png)
+1. Altere alguns dos elementos na **Alternativa** Variação.
 
-1. Clique em **Resumir texto** no menu superior direito.
+   ![Versão alternativa](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
 
-1. Insira um **Target** de **50** palavras e clique em **Start**.
+   O recurso de variação permite que os autores criem versões diferentes do mesmo Fragmento de conteúdo. Isso pode ser usado para fornecer uma versão de resumo de um artigo de forma longa. Por padrão, um único **Principal** é criada. Os elementos de campo de texto de várias linhas de uma variação podem ser sincronizados com a variação principal.
 
-   ![Visualização de resumo](assets/author-content-fragments/summarize-text-preview.png)
+1. Toque **Salvar e fechar** para salvar as alterações no fragmento John Doe.
+1. Retorne à interface do usuário do Fragmento de conteúdo e abra o **Alison Smith** para edição.
+1. Repita as etapas acima para preencher a variável **Alison Smith** fragmento com conteúdo.
 
-   Isso abrirá uma pré-visualização de resumo. AEM processador de idioma da máquina tentará resumir o texto com base na contagem de palavras de destino. Você também pode selecionar frases diferentes para remover.
+## Editar fragmento de conteúdo da equipe {#edit-team-content-fragment}
 
-1. Clique em **Resumir** quando estiver satisfeito com o resumo. Clique no campo de texto de várias linhas e alterne o botão **Expandir** para retornar à exibição principal.
+1. Abra o **Alfa da equipe** Fragmento do conteúdo usando a interface do usuário do Fragmento do conteúdo.
+1. Preencha os campos para **Título**, **Nome abreviado** e **Descrição**.
+1. Selecione o **John Doe** e **Alison Smith** Fragmentos de conteúdo para preencher a variável **Membros da equipe** campo :
 
-1. Clique em **Save** para salvar as alterações.
+   ![Definir membros da equipe](assets/author-content-fragments/select-team-members.png)
 
-## Criar um fragmento de conteúdo adicional
+   >[!NOTE]
+   >
+   >Você também pode criar novos Fragmentos de conteúdo em linha usando o **Novo fragmento de conteúdo** botão.
 
-Repita as etapas descritas em [Criar um fragmento de conteúdo](#create-content-fragment) para criar um **Contribuidor** adicional. Ele será usado no próximo capítulo como um exemplo de como consultar vários fragmentos.
+1. Toque **Salvar e fechar** para salvar as alterações no fragmento Alfa do grupo.
 
-1. Na pasta **Contributors** clique em **Criar** no canto superior direito e selecione **Fragmento de conteúdo**:
-1. Selecione o modelo **Contributor** e clique em **Próximo**.
-1. Insira **Jacob Wester** para o título e clique em **Create**.
-1. Clique em **Abrir** na caixa de diálogo **Êxito** para abrir o fragmento recém-criado.
-1. Para **Nome Completo** digite: **Jacob Wester**.
-1. Para **Biografia**, insira uma breve biografia. Precisa de alguma inspiração? Você pode reutilizar esse [arquivo de texto](assets/author-content-fragments/jacob-wester.txt).
-1. Para **Referência de imagem** clique no ícone **pasta** e navegue até **Site WKND** > **Inglês** > **Contribuidores** > **jacob_wester.jpg**. Isso será avaliado no caminho: `/content/dam/wknd/en/contributors/jacob_wester.jpg`.
-1. Para **Occupation** escolha **Writer**.
-1. Clique em **Save** para salvar as alterações. Não há necessidade de criar uma variação, a menos que você deseje!
+## Explore fragmentos de conteúdo WKND (opcional) {#explore-wknd-content-fragments}
 
-   ![Fragmento de conteúdo adicional](assets/author-content-fragments/additional-content-fragment.png)
+Se você [instalado o conteúdo da amostra compartilhada WKND](./overview.md#install-sample-content) você pode inspecionar os fragmentos de conteúdo para Aventuras, Artigos e Modelos de autores para obter mais ideias sobre como criar conteúdo.
 
-   Agora você deve ter dois fragmentos **Contributors**.
+![Fragmentos de conteúdo WKND](assets/author-content-fragments/wknd-content-fragments.png)
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar vários Fragmentos de conteúdo e criou uma variação.
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Explore GraphQL APIs](explore-graphql-api.md), você explorará AEM APIs GraphQL usando a ferramenta GraphQL integrada. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo. Você tentará construir consultas básicas usando a sintaxe GraphQL.
+No próximo capítulo, [Explorar APIs GraphQL](explore-graphql-api.md), você explorará AEM APIs GraphQL usando a ferramenta GrapiQL integrada. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo. Você tentará construir consultas básicas usando a sintaxe GraphQL.
+
+## Documentação relacionada
+
+* [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
+* [Variações - Criação dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)
