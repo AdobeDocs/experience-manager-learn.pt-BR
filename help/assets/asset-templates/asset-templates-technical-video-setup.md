@@ -5,13 +5,13 @@ version: 6.3, 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
+source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Configurar modelos de ativos com AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -21,11 +21,11 @@ Os Modelos de ativos permitem que os profissionais de marketing criem, gerenciem
 
 >[!NOTE]
 >
->AEM **deve** ser conectado a um servidor do InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor InDesign.
+>AEM **must** ser conectado a um servidor do InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor InDesign.
 
 ## Baixar avaliação do InDesign Server {#download-indesign-server-trial}
 
-Baixar [Download da avaliação do InDesign Server Site](https://www.adobe.com/devnet/premiere/sdk/cs5/indesign-server-trial-downloads.html)
+Baixar [Site de download de avaliação do InDesign Server](https://www.adobeprerelease.com/)
 
 ## Iniciando o InDesign Server {#starting-indesign-server}
 
