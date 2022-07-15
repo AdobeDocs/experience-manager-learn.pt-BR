@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 26%
+ht-degree: 29%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 26%
    + [Lançamentos](page-authoring/launches.md)
 + Componentes {#components}
    + [Desenvolvimento de componentes](components/component-development.md)
-   + [Componentes principais](components/core-components-feature-video-understand.md)
+   + [Componentes principais ](components/core-components-feature-video-understand.md)
    + [Console de componentes](components/components-console-feature-video-use.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
@@ -48,7 +48,7 @@ ht-degree: 26%
 + Desenvolvimento {#developing}
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-   + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
    + [Introdução ao AEM Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Introdução ao AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
@@ -73,7 +73,7 @@ ht-degree: 26%
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à Cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
-   + [Criar uma Live Copy](./multi-site-management/create-live-copy.md)
+   + [Crie uma Live Copy](./multi-site-management/create-live-copy.md)
    + [Gerenciar a herança da Live Copy em um componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gerenciar a herança da Live Copy em uma página](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console de visão geral da Live Copy](./multi-site-management/live-copy-overview-console.md)
