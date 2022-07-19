@@ -1,6 +1,6 @@
 ---
 title: Criar um site | Criação rápida de AEM
-description: Como parte da Criação rápida de sites, use o Assistente de criação de sites no Adobe Experience Manager, AEM, para gerar um novo site. O modelo de site padrão fornecido pelo Adobe é usado como ponto de partida para o novo site.
+description: Saiba como usar o assistente de Criação de sites para gerar um novo site. O modelo de site padrão fornecido pelo Adobe é um ponto de partida para o novo site.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '914'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ A maioria do tutorial ocorrerá usando o **Serviço de Autores**.
 Um Modelo de site fornece um ponto de partida para um novo site. Um Modelo de site inclui alguns temas básicos, modelos de página, configurações e conteúdo de exemplo. Exatamente o que está incluído no Modelo de site depende do desenvolvedor. O Adobe fornece um **Modelo básico do site** para acelerar novas implementações.
 
 1. Abra uma nova guia do navegador e navegue até o projeto de modelo de site básico no GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). O projeto é de código aberto e licenciado para ser usado por qualquer pessoa.
-1. Clique em **Versões** e navegue até o [versão mais recente](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Clique em **Versões** e navegue até o [versão mais recente](https://github.com/adobe/aem-site-template-standard/releases/mais recente).
 1. Expanda o **Ativos** e baixe o arquivo zip do modelo:
 
    ![Zip de Modelo de Site Básico](assets/create-site/template-basic-zip-file.png)
@@ -131,7 +131,7 @@ Em seguida, gere um novo site usando o Modelo de Site do exercício anterior.
 
    *Amostra de conteúdo fornecida pelo modelo do site*
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro site AEM!
 

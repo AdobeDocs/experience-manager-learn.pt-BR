@@ -1,22 +1,21 @@
 ---
 title: Introdução ao AEM Headless - GraphQL
-description: Uma visão geral dos recursos e APIs GraphQL AEM.
-feature: Fragmentos de conteúdo, API GraphQL, APIs
-topic: Sem periféricos, gerenciamento de conteúdo
+description: Saiba mais sobre as APIs GraphQL do Experience Manager e seus recursos.
+feature: Content Fragments, GraphQL API, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 1%
 
 ---
 
-
 # Introdução ao AEM Headless - GraphQL
 
-AEM APIs GraphQL para Fragmentos de conteúdo
-O suporta cenários CMS sem periféricos, onde aplicativos cliente externos renderizam experiências usando conteúdo gerenciado em AEM.
+AEM APIs GraphQL para Fragmentos de conteúdo oferece suporte a cenários CMS sem periféricos, onde aplicativos cliente externos renderizam experiências usando conteúdo gerenciado em AEM.
 
 Uma API moderna de entrega de conteúdo é fundamental para a eficiência e o desempenho de aplicativos de front-end baseados em Javascript. Usar uma REST API apresenta desafios:
 

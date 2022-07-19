@@ -1,7 +1,6 @@
 ---
 title: Introdução ao AEM Sites - Configuração do projeto
-seo-title: Getting Started with AEM Sites - Project Setup
-description: Abrange a criação de um Projeto Maven Multi Module para gerenciar o código e as configurações de um Site AEM.
+description: Crie um Projeto Maven Multi Module para gerenciar o código e as configurações de um site Experience Manager.
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -13,10 +12,10 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 4%
+source-wordcount: '1816'
+ht-degree: 5%
 
 ---
 
@@ -205,7 +204,7 @@ Beneath `ui.apps` observe que muitos `.content.xml` os arquivos são criados. Es
 
 O arquétipo do projeto AEM gerará uma amostra `.gitignore` arquivo que pode ser usado como ponto de partida para o qual os arquivos podem ser ignorados com segurança. O arquivo é gerado em `<src>/aem-guides-wknd/.gitignore`.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro Projeto AEM!
 

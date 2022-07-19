@@ -1,6 +1,6 @@
 ---
-title: Teste de unidade
-description: Este tutorial aborda a implementação de um Teste de unidade que valida o comportamento do Modelo do Sling do componente Byline, criado no tutorial Componente personalizado .
+title: Teste da unidade
+description: Implemente um teste de unidade que valide o comportamento do Modelo do Sling do componente Byline, criado no tutorial Componente personalizado .
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -12,16 +12,16 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Teste de unidade {#unit-testing}
 
-Este tutorial aborda a implementação de um Teste de Unidade que valida o comportamento do Modelo Sling do componente Byline, criado no [Componente personalizado](./custom-component.md) tutorial.
+Este tutorial aborda a implementação de um teste de unidade que valida o comportamento do Modelo do Sling do componente Byline, criado no [Componente personalizado](./custom-component.md) tutorial.
 
 ## Pré-requisitos {#prerequisites}
 

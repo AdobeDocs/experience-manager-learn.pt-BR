@@ -1,6 +1,6 @@
 ---
-title: Bibliotecas do lado do cliente e fluxo de trabalho de front-end
-description: Saiba como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar CSS e Javascript para uma implementação de Sites da Adobe Experience Manager (AEM). Este tutorial também abordará como o módulo ui.frontend, um projeto de webpack, pode ser integrado ao processo de criação completo.
+title: Bibliotecas do lado do cliente e fluxo de trabalho front-end
+description: Saiba como usar bibliotecas do lado do cliente ou clientlibs para implantar e gerenciar CSS e Javascript em uma implementação de Sites da Adobe Experience Manager (AEM). Saiba como o módulo ui.frontend, um projeto de webpack, pode ser integrado ao processo de build completo.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,14 +11,14 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: 1a73d7ee1f71a5bd78114398f04e98a894847957
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2882'
-ht-degree: 1%
+source-wordcount: '2878'
+ht-degree: 2%
 
 ---
 
-# Bibliotecas do lado do cliente e fluxo de trabalho de front-end {#client-side-libraries}
+# Bibliotecas do lado do cliente e fluxo de trabalho front-end {#client-side-libraries}
 
 Saiba como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar CSS e Javascript para uma implementação de Sites da Adobe Experience Manager (AEM). Este tutorial também abordará como a [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) módulo, um desacoplamento [webpack](https://webpack.js.org/) projeto pode ser integrado ao processo de criação completo.
 
@@ -143,7 +143,7 @@ bibliotecas do lado do cliente/main-scss
 
    ![Arquivos Sass de Componentes](assets/client-side-libraries/component-sass-files.png)
 
-   Cada arquivo mapeia para um Componente principal como o [Componente acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Cada Componente principal é criado com [Modificador de elemento de bloco](https://getbem.com/) ou notação BEM para facilitar o direcionamento de classes CSS específicas com regras de estilo. Os arquivos abaixo `/components` Foram criadas pelo Arquétipo de projeto AEM com as diferentes regras BEM para cada componente.
+   Cada arquivo mapeia para um Componente principal como o [Componente acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Cada componente principal é criado com [Modificador de elemento de bloco](https://getbem.com/) ou notação BEM para facilitar o direcionamento de classes CSS específicas com regras de estilo. Os arquivos abaixo `/components` Foram criadas pelo Arquétipo de projeto AEM com as diferentes regras BEM para cada componente.
 
 1. Baixe os estilos base WKND **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** e **descompactar** o arquivo .
 
