@@ -3,14 +3,14 @@ title: Aplicativo Android - Exemplo sem cabeçalho AEM
 description: Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Android demonstra como consultar o conteúdo usando as APIs GraphQL da AEM.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 9166
-thumbnail: KT-9166.jpg
+kt: 10588
+thumbnail: KT-10588.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 985d52f02025dc9cb2b9c70ead4a88af07c63f29
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 4%
