@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
+source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -114,14 +114,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
   </tr>
 <tr>
    <td>
-            <img alt="Corrigir seu... Regravações" src="./imgs/coming-soon.png"/>
+           <a href="season-2/cloud5-fix-your-rewrites.md">
+               <img alt="Corrigir suas...regravações" src="./imgs/s2/006-thumb.png"/>
+            </a>
       <div>
-            <strong>Corrigir seu... Regravações</strong>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Corrigir seu... Regravações</strong></a>
          <br/><em>com Darin Kuntze &amp; James Talbot, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Em breve 22 de julho de 2022
+         Insight rápido sobre coisas que ajudarão a acelerar o desenvolvimento de reescrita e a otimização AEM as a Cloud Service.
       </p>
      </td>   
      <td>
