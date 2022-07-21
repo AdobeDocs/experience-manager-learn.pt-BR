@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1134'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Você também é bem-vindo a criar seu próprio modelo seguindo as etapas básic
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial de várias partes e presume-se que um [AEM ambiente do autor está disponível](./overview.md#prerequisites) e, opcionalmente, [O conteúdo de amostra compartilhado WKND foi instalado](./overview.md#install-sample-content).
+Este é um tutorial de várias partes e presume-se que um [AEM ambiente do autor está disponível](./overview.md#prerequisites)
 
 ## Objetivos {#objectives}
 
@@ -39,7 +39,7 @@ Este é um tutorial de várias partes e presume-se que um [AEM ambiente do autor
 
 Uma configuração de projeto contém todos os modelos de Fragmento de conteúdo associados a um projeto específico e fornece um meio de organizar modelos. Pelo menos um projeto deve ser criado **before** criação do novo Modelo de fragmento de conteúdo.
 
-1. Faça logon no AEM **Autor** ambiente.
+1. Faça logon no AEM **Autor** ambiente (ex. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Navegador de configuração**.
 
    ![Navegar até o Navegador de configuração](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa
 
    ![Navegar até Modelos de fragmentos do conteúdo](assets/content-fragment-models/navigate-cf-models.png)
 
-   Se você instalou o [conteúdo de exemplo](overview.md#install-sample-content) em seguida, você verá duas pastas: **Meu projeto** e **WKND Compartilhado**.
 1. Navegue até o **Meu projeto** pasta.
 1. Toque **Criar** no canto superior direito para trazer o **Criar modelo** assistente.
 1. Para **Título do modelo** digite: **Pessoa** e tocar **Criar**.
@@ -165,23 +164,23 @@ Criar um novo modelo para um **Equipe**, que é o modelo de dados para uma equip
 
    ![Dois modelos](assets/content-fragment-models/two-new-models.png)
 
-## Inspect os modelos de fragmento de conteúdo WKND (opcional)
+## Publicar a configuração do projeto e os modelos de fragmento do conteúdo
 
-Se você [instalado o conteúdo da amostra compartilhada WKND](./overview.md#install-sample-content) você pode inspecionar os modelos Aventura, Artigo e Autor para obter mais ideias sobre técnicas de modelagem de dados.
+Após análise e verificação, publique o `Project Configuration` &amp; `Content Fragment Model`
 
-1. No **Início do AEM** navegue até **Ferramentas** > **Geral** > **Modelos de fragmentos do conteúdo**.
+1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Navegador de configuração**.
 
-1. Navegue até o **WKND Compartilhado** e você deve ver três modelos: Artigo, Aventura e Autor.
+1. Toque na caixa de seleção ao lado de **Meu projeto** e tocar **Publicar**
 
-1. Inspect os modelos ao passar o mouse sobre o cartão e tocar no ícone de edição (lápis)
+   ![Publicar configuração do projeto](assets/content-fragment-models/publish-project-config.png)
 
-   ![Modelos WKND](assets/content-fragment-models/wknd-shared-models.png)
+1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Modelos de fragmentos do conteúdo**.
 
-1. Isso abre o **Editor do modelo de fragmento de conteúdo** para o modelo e você pode inspecionar os vários tipos de dados usados.
+1. Navegue até o **Meu projeto** pasta.
 
-   >[!CAUTION]
-   >
-   > Modificação do modelo **after** Fragmentos de conteúdo foram criados, têm efeitos de downstream. Os valores de campo em fragmentos existentes não serão mais referenciados e o esquema de dados exposto pelo GraphQL será alterado, afetando os aplicativos existentes.
+1. Toque **Pessoa** e **Equipe** modelos e toque **Publicar**
+
+   ![Publicar modelos de fragmento do conteúdo](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Parabéns.  {#congratulations}
 

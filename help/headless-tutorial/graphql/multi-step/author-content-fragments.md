@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '819'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
    ![Modelos de fragmento de conteúdo permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Essas políticas serão herdadas por qualquer subpasta automaticamente e poderão ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações do projeto (como WKND Compartilhado). Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
+   Essas políticas serão herdadas por qualquer subpasta automaticamente e poderão ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações de projeto. Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
 
 1. Toque **Salvar e fechar** para salvar as alterações nas propriedades da pasta.
 
@@ -121,17 +121,9 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
    ![Abrir fragmento de conteúdo](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. O Editor de fragmento de conteúdo contém um formulário com base no modelo de Fragmento de conteúdo . Preencha os vários campos para adicionar conteúdo ao **John Doe** fragmento. Para Imagem de perfil, sinta-se à vontade para escolher uma das imagens na WKND Compartilhada ou fazer o upload de sua própria imagem para a AEM Assets.
+1. O Editor de fragmento de conteúdo contém um formulário com base no modelo de Fragmento de conteúdo . Preencha os vários campos para adicionar conteúdo ao **John Doe** fragmento. Para Imagem de perfil, carregue sua própria imagem no AEM Assets.
 
    ![Editor de fragmento de conteúdo](assets/author-content-fragments/content-fragment-editor-jd.png)
-
-1. Em seguida, toque em **Criar variação** no painel esquerdo. Na caixa de diálogo, adicione o tipo em **Alternativa** para o nome da variação.
-
-1. Altere alguns dos elementos na **Alternativa** Variação.
-
-   ![Versão alternativa](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
-
-   O recurso de variação permite que os autores criem versões diferentes do mesmo Fragmento de conteúdo. Isso pode ser usado para fornecer uma versão de resumo de um artigo de forma longa. Por padrão, um único **Principal** é criada. Os elementos de campo de texto de várias linhas de uma variação podem ser sincronizados com a variação principal.
 
 1. Toque **Salvar e fechar** para salvar as alterações no fragmento John Doe.
 1. Retorne à interface do usuário do Fragmento de conteúdo e abra o **Alison Smith** para edição.
@@ -151,11 +143,17 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
 1. Toque **Salvar e fechar** para salvar as alterações no fragmento Alfa do grupo.
 
-## Explore fragmentos de conteúdo WKND (opcional) {#explore-wknd-content-fragments}
+## Publicar fragmentos de conteúdo
 
-Se você [instalado o conteúdo da amostra compartilhada WKND](./overview.md#install-sample-content) você pode inspecionar os fragmentos de conteúdo para Aventuras, Artigos e Modelos de autores para obter mais ideias sobre como criar conteúdo.
+Após análise e verificação, publique o `Content Fragments`
 
-![Fragmentos de conteúdo WKND](assets/author-content-fragments/wknd-content-fragments.png)
+1. Na tela inicial AEM, toque em **Fragmentos de conteúdo** para abrir a interface do usuário de Fragmentos de conteúdo .
+
+1. No painel esquerdo, expanda **Meu projeto** e tocar **Inglês**.
+
+1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publicar**
+
+   ![Publicar fragmento de conteúdo](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Parabéns.  {#congratulations}
 

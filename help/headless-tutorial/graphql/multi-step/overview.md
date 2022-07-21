@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 879018d44cc63421d1c7185cce1c30fedbf526c9
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 3%
+source-wordcount: '291'
+ht-degree: 4%
 
 ---
 
@@ -51,25 +51,6 @@ Um ambiente Adobe Experience Manager é necessário para concluir este tutorial.
 * AEM ambiente as a Cloud Service com:
    * [Acesso ao AEM as a Cloud Service e ao Cloud Manager](/help/cloud-service/accessing/overview.md)
       * **Administrador AEM** acesso a AEM as a Cloud Service
-      * **Cloud Manager - Desenvolvedor** acesso ao Cloud Manager
-
-### Instalar conteúdo de amostra {#install-sample-content}
-
-Pode ser útil ter conteúdo de amostra já disponível no ambiente de AEM para ser usado como referência.
-
-1. Navegue até o [AEM Projeto compartilhado WKND](https://github.com/adobe/aem-guides-wknd-shared/releases).
-1. Baixe o ativo lançado mais recente: `aem-guides-wknd-shared.ui.content-x.x.x.zip`.
-1. Faça logon no ambiente de criação do AEM a ser usado para o tutorial.
-1. Na tela inicial AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes**:
-
-   ![Navegar pelo gerenciador de pacotes](assets/overview/navigate-package-manager.png)
-
-1. Toque **Fazer upload do pacote** e escolha a `aem-guides-wknd-shared.ui.content-x.x.x.zip` baixado anteriormente. Toque **Ok** para fazer upload.
-1. Depois que o upload do pacote terminar, toque em **Instalar** para instalar o conteúdo.
-
-   ![Instalar o pacote de conteúdo de amostra](assets/overview/install-sample-content-package.png)
-
-1. Fragmentos de conteúdo de amostra, Modelos de fragmento de conteúdo, imagens e muito mais serão instalados para o fictício [Marca WKND](https://wknd.site/). O conteúdo de amostra será referenciado posteriormente no tutorial.
 
 ## Vamos começar!
 
@@ -80,5 +61,3 @@ Pode ser útil ter conteúdo de amostra já disponível no ambiente de AEM para 
 O código-fonte e os pacotes de conteúdo estão disponíveis na variável [Guias de AEM - Projeto GitHub GraphQL da WKND](https://github.com/adobe/aem-guides-wknd-graphql).
 
 Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
-
-Fragmentos de conteúdo de amostra, modelos e consultas podem ser encontrados na seção [AEM Projeto compartilhado WKND](https://github.com/adobe/aem-guides-wknd-shared)
