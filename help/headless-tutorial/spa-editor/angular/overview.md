@@ -1,6 +1,6 @@
 ---
 title: Introdução ao Editor e Angular de SPA do AEM
-description: Criar o seu primeiro aplicativo de página única (SPA) Angular que seja editável no Adobe Experience Manager (AEM), com o WKND SPA. Saiba como criar um SPA usando a estrutura Angular JS com o editor de SPA do AEM. Este tutorial de várias partes aborda a implementação de um aplicativo Angular para uma marca fictícia de estilo de vida, a WKND. O tutorial aborda a criação completa do SPA e a integração com o AEM.
+description: Criar o seu primeiro aplicativo de página única (SPA) Angular que seja editável no Adobe Experience Manager (AEM), com o WKND SPA.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -14,10 +14,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 825124bc6c3be10e6822fb5fb8bd9645d242da76
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 23%
+source-wordcount: '649'
+ht-degree: 18%
 
 ---
 
