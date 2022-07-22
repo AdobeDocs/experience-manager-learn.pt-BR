@@ -9,14 +9,14 @@ level: Beginner
 kt: 6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
-# AEM usuários, grupos e permissões
+# AEM usuários, grupos e permissões {#aem-users-groups-and-permissions}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_aem_users_groups"
@@ -31,5 +31,5 @@ O Adobe Experience Manager tem usuários do Adobe IMS, grupos de usuários e per
 
 ## Recursos adicionais
 
-+ [Suporte IMS do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html)
++ [Suporte IMS do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR)
 + [Grupos de usuários fornecidos pela AEM e suas permissões](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

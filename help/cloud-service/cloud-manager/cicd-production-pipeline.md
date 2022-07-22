@@ -13,14 +13,14 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 2%
 
 ---
 
-# Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
+# Uso do Adobe Cloud Manager - pipeline de produção de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -31,12 +31,12 @@ ht-degree: 2%
 
 ## Configuração
 
-A configuração [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho.
+O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) A configuração define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### Execução de pipeline
 
-O [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) é usado para criar e implantar código por meio do Stage no ambiente de Produção, diminuindo o tempo para o valor.
+O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) O é usado para criar e implantar código por meio do Stage para o ambiente de produção, diminuindo o tempo para valor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)

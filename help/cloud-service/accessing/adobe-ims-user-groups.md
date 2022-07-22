@@ -9,14 +9,14 @@ level: Beginner
 kt: 4999
 thumbnail: 39150.jpg
 exl-id: 40ba2368-edb7-4348-9aff-91194200092e
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-# Grupos de usuários do Adobe IMS
+# Grupos de usuários do Adobe IMS {#adobe-ims-user-groups}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_usergroups"
