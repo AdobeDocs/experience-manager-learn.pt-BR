@@ -8,13 +8,14 @@ role: Leader, Architect, Admin, Developer
 level: Beginner
 kt: 10718
 thumbnail: KT-10718.jpeg
-source-git-commit: 1c4ebdf78dd7107c7587b50e7476ea4b7ca3e812
+mini-toc-levels: 1
+exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
+source-git-commit: 4a902d838c99b3452581066ee568876ad16ec1a3
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 11%
 
 ---
-
 
 # AEM integrações as a Cloud Service com o Adobe Experience Cloud
 
@@ -105,7 +106,7 @@ As tags da Adobe Experience Platform (antigo Adobe Launch, DTM) se integram perf
 + [Guia do usuário de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Tutorial de tags do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
-## AEM Forms
+### AEM Forms
 
 + [Guia do usuário de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Tutorial de tags do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
@@ -115,7 +116,7 @@ As tags da Adobe Experience Platform (antigo Adobe Launch, DTM) se integram perf
 
 A integração do Adobe Workfront com o AEM s a Cloud Service simplifica o processo de criação de ativos digitais, colaboração e gerenciamento do ciclo de vida.
 
-## AEM Assets
+### AEM Assets
 
 + [Configurar o conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=pt-BR)
 + [Vídeos de conectores aprimorados do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
