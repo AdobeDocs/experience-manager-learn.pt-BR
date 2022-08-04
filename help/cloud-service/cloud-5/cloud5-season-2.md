@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
+source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
@@ -140,14 +140,16 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
    </td>
      <td>
-            <img alt="Mistérios do Cloud Manager.. Testes de unidade" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-unit-tests.md">
+               <img alt="Mistérios do Cloud Manager.. Testes de unidade" src="./imgs/s2/009-thumb.png"/>
+            </a>
       <div>
-            <strong>Mistérios do Cloud Manager.. Testes de unidade</strong>
+            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mistérios do Cloud Manager.. Testes de unidade</strong></a>
          <br/><em>com Darin Kuntze &amp; Bryan Stopp, Arquitetos da nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Em breve, 5 de agosto de 2022
+        Darin e Bryan discutem como o Cloud Manager integra a execução de teste de unidade e o relatório de cobertura de código ao seu pipeline de CI/CD para ajudar a incentivar e promover as práticas recomendadas de teste de unidade AEM código.
       </p>
    </td> 
   </tr>
