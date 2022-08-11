@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1848'
 ht-degree: 5%
 
 ---
@@ -332,3 +332,11 @@ Os mesmos comandos Maven usados para criar o **ui.apps** pode ser usado para cri
 ## Resolução de problemas
 
 Se tiver problemas para gerar o projeto usando o Arquétipo de projeto AEM, consulte a lista de [problemas conhecidos](https://github.com/adobe/aem-project-archetype#known-issues) e lista de aberturas [problemas](https://github.com/adobe/aem-project-archetype/issues).
+
+## Parabéns novamente! {#congratulations-bonus}
+
+Parabéns, por ter passado pelo material bônus.
+
+### Próximas etapas {#next-steps-bonus}
+
+Entenda a tecnologia subjacente de um Componente de sites do Adobe Experience Manager (AEM) por meio de um `HelloWorld` exemplo com [Noções básicas sobre componentes](component-basics.md) tutorial.
