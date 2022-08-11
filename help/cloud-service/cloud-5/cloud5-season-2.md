@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
    </td>
      <td>
             <a href="season-2/cloud5-MoCM-unit-tests.md">
-               <img alt="Mistérios do Cloud Manager.. Testes de unidade" src="./imgs/s2/009-thumb.png"/>
+               <img alt="Mistérios do Cloud Manager.. Testes de unidade" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
             <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mistérios do Cloud Manager.. Testes de unidade</strong></a>
@@ -155,13 +155,15 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
   </tr>
     <tr>
         <td>
-                <img alt="Mistérios do Cloud Manager.. Testes funcionais" src="./imgs/coming-soon.png"/>
+               <a href="season-2/cloud5-MoCM-functional-tests.md">
+                   <img alt="Mistérios do Cloud Manager.. Testes funcionais" src="./imgs/s2/009-thumb.png"/>
+               </a>
             <div>
-                <strong>Mistérios do Cloud Manager.. Testes funcionais</strong><br/>        
+                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Mistérios do Cloud Manager.. Testes funcionais</strong><br/></a>        
                 <em>com Darin Kuntze &amp; Bryan Stopp, Arquitetos da nuvem sênior</em>
             </div>
             <p><br/>
-                A 12 de agosto de 2022
+                Darin e Bryan discutem diferentes tipos de testes funcionais integrados ao processo de implantação as a Cloud Service do AEM para garantir a qualidade e confiabilidade de seu código.
             </p>
         </td>
         <td></td>
