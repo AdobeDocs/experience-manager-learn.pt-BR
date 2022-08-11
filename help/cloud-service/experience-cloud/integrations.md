@@ -10,9 +10,9 @@ kt: 10718
 thumbnail: KT-10718.jpeg
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: fda7b74e7659daf61a9f5478d6bfabe439b923ae
+source-git-commit: 663075723da207242309c08feed42657b9e5188b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '958'
 ht-degree: 12%
 
 ---
@@ -25,6 +25,7 @@ Clique no produto Experience Cloud para obter a documentação sobre como config
 |  | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
 | [Acrobat Sign](#adobe-acrobat-sign) |  |  | ✔ |
+| Publicidade |  |  |  |
 | [Analytics](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Gerenciador de público |  |  |  |
 | [Campaign Classic](#adobe-campaign-classic) | ✔ |  |  |
@@ -33,7 +34,7 @@ Clique no produto Experience Cloud para obter a documentação sobre como config
 | Customer Journey Analytics |  |  |  |
 | [Tags de Experience Platform](#adobe-experience-platform-tags) | ✔ |  | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |  | ✔ |  |
-| Gerente de aprendizado |  |  |  |
+| [Gerente de aprendizado](#adobe-learning-manager) | ✔ |  |  |
 | Marketo Engage |  |  |  |
 | CDP em tempo real |  |  |  |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
@@ -108,19 +109,21 @@ As tags da Adobe Experience Platform (antigo Adobe Launch, DTM) se integram perf
 + [Guia do usuário de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Tutorial de tags do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
+## Adobe Journey Optimizer
 
-## Adobe Workfront
-
-A integração do Adobe Workfront com o AEM s a Cloud Service simplifica o processo de criação de ativos digitais, colaboração e gerenciamento do ciclo de vida.
+O Adobe Journey Optimizer ajuda você a agendar campanhas omnicanais e momentos de um para um com milhões de clientes de um único aplicativo — e toda a jornada é otimizada com decisões e insights inteligentes.
 
 ### AEM Assets
 
-+ [Configurar o conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=pt-BR)
-+ [Vídeos de conectores aprimorados do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
-+ AEM Assets Essentials
++ [Integrar o AEM Assets Essentials ao Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=pt-BR)
 
-   + [Guia do usuário do Adobe Workfront for Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
-   + [Vídeos do Adobe Workfront e Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
+## Gerente de aprendizagem de Adobe
+
+O Adobe Learning Manager (antigo Adobe Captivate Prime) fornece aprendizado personalizado para clientes e funcionários.
+
+### AEM Sites
+
++ [Integrar o AEM Sites ao Gerente de aprendizado do Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
 
 ## Adobe Sensei
 
@@ -157,3 +160,16 @@ O Adobe Target integra-se com o AEM as a Cloud Service para fornecer experiênci
 
 + [Usar o Context Hub AEM com o Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [Tutorial do AEM Sites e do Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
+
+## Adobe Workfront
+
+A integração do Adobe Workfront com o AEM s a Cloud Service simplifica o processo de criação de ativos digitais, colaboração e gerenciamento do ciclo de vida.
+
+### AEM Assets
+
++ [Configurar o conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=pt-BR)
++ [Vídeos de conectores aprimorados do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
++ AEM Assets Essentials
+
+   + [Guia do usuário do Adobe Workfront for Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [Vídeos do Adobe Workfront e Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html)
