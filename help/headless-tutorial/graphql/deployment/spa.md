@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 # AEM implantações de SPA headless
 
 
-AEM implantações de aplicativos de página única (SPA) sem cabeçalho envolvem aplicativos baseados em JavaScript criados com estruturas como React, Vue ou Angular, que consomem e interagem com conteúdo em AEM sem interface.
+AEM implantações de aplicativos de página única (SPA) headless envolvem aplicativos baseados em JavaScript criados com estruturas como o React ou o Vue, que consomem e interagem com conteúdo em AEM sem interface.
 
 Implantar um SPA que interage AEM de maneira headless envolve hospedar o SPA e torná-lo acessível por meio de um navegador da Web.
 
