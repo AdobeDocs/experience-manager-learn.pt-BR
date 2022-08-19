@@ -12,10 +12,10 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
 workflow-type: tm+mt
 source-wordcount: '4138'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -66,7 +66,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## O que você vai criar {#byline-component}
 
-Nesta parte do tutorial WKND, é criado um Componente de linha de bytes que será usado para exibir informações criadas sobre o colaborador de um artigo.
+Nesta parte do tutorial WKND, é criado um Componente de linha de bytes que será usado para exibir informações de autoria sobre o colaborador de um artigo.
 
 ![exemplo de componente de byline](assets/custom-component/byline-design.png)
 
@@ -103,7 +103,7 @@ A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem 
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   O arquivo XML acima fornece a definição do componente, incluindo o título, a descrição e o grupo. O `sling:resourceSuperType` pontos a `core/wcm/components/image/v2/image`, que é o [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
+   O arquivo XML acima fornece a definição do componente, incluindo o título, a descrição e o grupo. O `sling:resourceSuperType` pontos a `core/wcm/components/image/v2/image`, que é o [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR).
 
 ### Criar o script HTL {#create-the-htl-script}
 
@@ -447,7 +447,7 @@ Criar uma interface Java pública para o Byline. `Byline.java` define os método
        importar org.osgi.annotation.versioning.Version;
        &quot;
    
-   Sempre que uma alteração for feita nos arquivos deste pacote, a variável [a versão do pacote deve ser ajustada semanticamente](https://semver.org/). Caso contrário, o projeto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detectará uma versão de pacote inválida e quebrará a build. Por sorte, em caso de falha, o plug-in Maven informa a versão inválida do pacote Java, bem como a versão que deve ser usada. Acabei de atualizar o `@Version("...")` na violação do pacote Java `package-info.java` para a versão recomendada pelo plug-in para corrigir.
+Sempre que uma alteração for feita nos arquivos deste pacote, a variável [a versão do pacote deve ser ajustada semanticamente](https://semver.org/). Caso contrário, o projeto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) detectará uma versão de pacote inválida e quebrará a build. Por sorte, em caso de falha, o plug-in Maven informa a versão inválida do pacote Java, bem como a versão que deve ser usada. Basta atualizar o `@Version("...")` na violação do pacote Java `package-info.java` para a versão recomendada pelo plug-in para corrigir.
 
 ### Implementação de bytes {#byline-implementation}
 
@@ -1089,7 +1089,7 @@ Adicione estilos padrão para o componente Linha de Byte.
    >
    > Talvez seja necessário limpar o cache do navegador para garantir que o CSS obsoleto não esteja sendo atendido e atualizar a página com o componente Byline para obter o estilo completo.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar um componente personalizado do zero usando o Adobe Experience Manager!
 

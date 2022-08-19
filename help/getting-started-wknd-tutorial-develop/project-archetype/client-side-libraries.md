@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 2%
@@ -206,7 +206,7 @@ O Arquétipo de projeto AEM configura essa integração automaticamente. Em segu
    http://admin:admin@localhost:4502 > OK
    ```
 
-1. O comando `npm run watch` preenche a variável **clientlib-site** e **clientlib-dependencies** no **ui.apps** em seguida, é sincronizado automaticamente com o AEM.
+1. O comando `npm run watch` preenche a variável **clientlib-site** e **clientlib-dependencies** no **ui.apps** que é sincronizado automaticamente com o AEM.
 
    >[!NOTE]
    >
@@ -389,9 +389,9 @@ Essa técnica é útil se a maioria dos estilos e do código front-end for execu
 
 [**amamentado**](https://aemfed.io/) é uma ferramenta de linha de comando e código aberto que pode ser usada para acelerar o desenvolvimento front-end. É alimentado por  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) e [Rastreador de log do Sling](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-Em um alto nível **amamentado** O foi projetado para acompanhar alterações de arquivo no **ui.apps** e sincroniza-as automaticamente diretamente em uma instância AEM em execução. Com base nas alterações, um navegador local será atualizado automaticamente, acelerando assim o desenvolvimento front-end. Ele também foi criado para funcionar com o rastreador do Sling Log para exibir automaticamente quaisquer erros do lado do servidor diretamente no terminal.
+Em um alto nível **amamentado** O foi projetado para acompanhar alterações de arquivo no **ui.apps** e sincronize-os automaticamente diretamente em uma instância AEM em execução. Com base nas alterações, um navegador local será atualizado automaticamente, acelerando assim o desenvolvimento front-end. Ele também foi criado para funcionar com o rastreador do Sling Log para exibir automaticamente quaisquer erros do lado do servidor diretamente no terminal.
 
-Se você estiver fazendo muito trabalho dentro do **ui.apps** módulo, modificação de scripts HTL e criação de componentes personalizados, **amamentado** pode ser uma ferramenta muito poderosa para usar. [A documentação completa pode ser encontrada aqui.](https://github.com/abmaonline/aemfed).
+Se você estiver fazendo muito trabalho dentro do **ui.apps** módulo, modificação de scripts HTL e criação de componentes personalizados, **amamentado** pode ser uma ferramenta muito poderosa para usar. [A documentação completa pode ser encontrada aqui](https://github.com/abmaonline/aemfed).
 
 ### Depuração de bibliotecas do lado do cliente {#debugging-clientlibs}
 
