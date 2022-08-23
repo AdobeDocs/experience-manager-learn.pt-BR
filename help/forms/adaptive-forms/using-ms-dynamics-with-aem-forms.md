@@ -1,20 +1,20 @@
 ---
-title: Uso do Microsoft Dynamics com AEM Forms
+title: Uso do Microsoft Dynamics com o AEM Forms
 description: Este vídeo aborda um fluxo de trabalho que mostra como o AEM Forms pode trabalhar com o Microsoft Dynamics como uma fonte de dados de back-end para fornecer comunicações interativas e personalizadas.
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
 
-
-# Uso do Microsoft Dynamics com AEM Forms{#using-microsoft-dynamics-with-aem-forms}
+# Uso do Microsoft Dynamics com o AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
 A Integração de dados do AEM Forms permite configurar e se conectar a fontes de dados diferentes. Os itens a seguir são compatíveis prontos para uso. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
@@ -31,4 +31,3 @@ Este vídeo aborda um fluxo de trabalho que mostra como o AEM Forms pode trabalh
 >[!NOTE]
 >
 >Este recurso está disponível somente com AEM 6.3 FP1 e posteriores. Certifique-se de instalar o complemento AEM Forms antes de configurar.
-

@@ -1,18 +1,18 @@
 ---
 title: AEM Forms com Marketo (Parte 3)
 description: Tutorial para integrar o AEM Forms com o Marketo usando o Modelo de dados de formulário AEM Forms.
-feature: Forms adaptável, Modelo de dados de formulário
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
-
 
 # Configurar fonte de dados
 
@@ -24,7 +24,7 @@ A Integração de dados do AEM Forms permite configurar e se conectar a fontes d
 1. Serviços Web baseados em SOAP
 1. Serviços OData
 
-Para a integração do AEM Forms com o Marketo, usaremos os serviços Web RESTful. A primeira etapa na integração é configurar uma fonte de dados [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas ao configurar a fonte de dados.
+Para a integração do AEM Forms com o Marketo, usaremos os serviços Web RESTful. O primeiro passo da integração é configurar um [fonte de dados.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas ao configurar a fonte de dados.
 ![datasource](assets/datasource.jfif)
 
 O &quot;marketo.json&quot; é o arquivo de troca e é fornecido a você como parte dos ativos deste tutorial.
@@ -35,7 +35,7 @@ O Tipo de autenticação é personalizado e a Implementação de autenticação 
 
 Depois de configurar a fonte de dados, a próxima etapa é criar um Modelo de dados de formulário baseado na fonte de dados configurada na etapa anterior. Para criar um Modelo de dados de formulário, siga as seguintes etapas:
 
-Aponte seu navegador para a página de [integrações de dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas na sua instância de AEM.
+Aponte seu navegador para o [página de integrações de dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas na sua instância de AEM.
 
 1. Clique em Criar | Modelo de dados de formulário
 1. Forneça um título significativo, como FormsAndMarketo, e clique em Avançar

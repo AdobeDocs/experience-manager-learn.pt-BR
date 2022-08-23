@@ -1,29 +1,28 @@
 ---
 title: Página Enviar Para Agradecimentos
-seo-title: Página Enviar Para Agradecimentos
+seo-title: Submitting To Thank You Page
 description: Exibir uma página de agradecimento ao enviar o formulário adaptável
-seo-description: Exibir uma página de agradecimento ao enviar o formulário adaptável
+seo-description: Display a thank you page on submitting Adaptive Form
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
 feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 1%
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
-
-# Envio para a página de agradecimento {#submitting-to-thank-you-page}
+# Página Enviar Para Agradecimentos {#submitting-to-thank-you-page}
 
 A opção Enviar para ponto de extremidade REST passa os dados preenchidos no formulário para uma página de confirmação configurada como parte da solicitação HTTP GET. É possível adicionar o nome dos campos a serem solicitados. O formato da solicitação é:
 
@@ -35,15 +34,14 @@ Na captura de tela abaixo, enviamos o formulário adaptável para agradecer a p�
 
 ![thank](assets/thankyoupage.gif)
 
-Também é possível enviar para o endpoint externo por meio do POST. Para isso, basta marcar a caixa de seleção &quot;ativar solicitação de postagem&quot; e fornecer o URL do endpoint externo. Ao enviar seu formulário, você receberá a página de agradecimento e o ponto de extremidade POST será chamado simultaneamente.
+Também é possível enviar para o endpoint externo por meio do POST. Para isso, basta marcar a caixa de seleção &quot;ativar solicitação de postagem&quot; e fornecer o URL do endpoint externo. Ao enviar seu formulário, você receberá a página de agradecimento e o ponto de extremidade do POST será chamado simultaneamente.
 
 ![captura](assets/capture.gif)
 
 
 Para testar esse recurso em seu servidor, siga as instruções mencionadas abaixo:
 
-* Importe o arquivo [assets associado a este artigo no AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
+* Importe o [arquivo de ativos associado a este artigo no AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
 * Aponte seu navegador para o [Formulário de solicitação de tempo desligado](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha o campo obrigatório e envie o formulário
 * Você deve obter a página de agradecimento com suas informações preenchidas na página
-

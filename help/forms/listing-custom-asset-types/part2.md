@@ -1,31 +1,30 @@
 ---
-title: Listar tipos de ativos personalizados em AEM Forms
-seo-title: Listar tipos de ativos personalizados em AEM Forms
+title: Listando tipos de ativos personalizados no AEM Forms
+seo-title: Listing Custom Asset Types in AEM Forms
 description: Parte 2 da listagem de tipos de ativos personalizados no AEM Forms
-seo-description: Parte 2 da listagem de tipos de ativos personalizados no AEM Forms
+seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
+# Listando tipos de ativos personalizados no AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
-# Listar tipos de ativos personalizados em AEM Forms {#listing-custom-asset-types-in-aem-forms}
-
-## Criando modelo personalizado {#creating-custom-template}
+## Criação de modelo personalizado {#creating-custom-template}
 
 
 Para a finalidade deste artigo, criaremos um modelo personalizado para exibir os tipos de ativos personalizados e os tipos de ativos OOTB na mesma página. Para criar um modelo personalizado, siga as instruções a seguir
@@ -37,7 +36,7 @@ Para a finalidade deste artigo, criaremos um modelo personalizado para exibir os
 
 ![appsfolder](assets/appsfolder_.png)
 
-O código a seguir lista os vários tipos de ativos usando o componente de pesquisa e lister. Criamos elementos html separados para cada tipo de ativo, conforme mostrado pela tag data-type = &quot;videos&quot;. Para o tipo de ativo &quot;vídeos&quot;, usamos o elemento &lt;vídeo> para reproduzir o vídeo em linha. Para o tipo de ativo &quot;documentos do Word&quot;, usamos uma marcação html diferente.
+O código a seguir lista os vários tipos de ativos usando o componente de pesquisa e lister. Criamos elementos html separados para cada tipo de ativo, conforme mostrado pela tag data-type = &quot;videos&quot;. Para o tipo de ativo &quot;vídeos&quot;, usamos a variável &lt;video> elemento para reproduzir o vídeo em linha. Para o tipo de ativo &quot;documentos do Word&quot;, usamos uma marcação html diferente.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -77,11 +76,11 @@ O código a seguir lista os vários tipos de ativos usando o componente de pesqu
 >
 >Linha 11 - Altere a imagem src para apontar para uma imagem de sua escolha no DAM.
 >
->Para listar Formulários Adaptativos nesse modelo, crie um novo div e defina seu atributo de tipo de dados como &quot;guia&quot;. Você pode copiar e colar o div cujos dados-type=&quot;printForm e definir o tipo de dados de div recém-copiado como &quot;guia&quot;
+>Para listar o Adaptive Forms neste modelo, crie um novo div e defina seu atributo de tipo de dados como &quot;guia&quot;. Você pode copiar e colar o div cujos dados-type=&quot;printForm e definir o tipo de dados de div recém-copiado como &quot;guia&quot;
 
-## Configurar Componente De Pesquisa E Lister {#configure-search-and-lister-component}
+## Configurar Componente De Pesquisa E Listagem {#configure-search-and-lister-component}
 
-Depois de definir o modelo personalizado, agora precisamos associar esse modelo personalizado ao componente &quot;Pesquisar e lister&quot;. Aponte seu navegador [para este URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Depois de definir o modelo personalizado, agora precisamos associar esse modelo personalizado ao componente &quot;Pesquisar e lister&quot;. Aponte seu navegador [para este url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Alterne para o modo Design e configure o sistema de parágrafo para incluir o componente Pesquisa e Lister no grupo de componentes permitidos. O componente Pesquisa e Lister faz parte do grupo Serviços de Documento.
 
@@ -111,11 +110,11 @@ A captura de tela a seguir mostra os tipos de ativos configurados para listagem
 
 ![tipos de ativos](assets/assettypes.png)
 
-Agora que você configurou seu Componente do Portal de Pesquisa e Lister, é hora de ver o lister em ação. Aponte seu navegador [para este URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Os resultados devem ser algo como a imagem mostrada abaixo.
+Agora que você configurou seu Componente do Portal de Pesquisa e Lister, é hora de ver o lister em ação. Aponte seu navegador [para este url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Os resultados devem ser algo como a imagem mostrada abaixo.
 
 >[!NOTE]
 >
->Se o seu portal estiver listando tipos de ativos personalizados em um servidor de publicação, certifique-se de fornecer permissão de &quot;leitura&quot; para o usuário &quot;fd-service&quot; no nó **/apps/fd/fp/extensions/querybuilder**
+>Se o seu portal está listando tipos de ativos personalizados em um servidor de publicação, certifique-se de fornecer permissão de &quot;leitura&quot; para o usuário &quot;fd-service&quot; para o nó **/apps/fd/fp/extensions/querybuilder**
 
-![](assets/assettypeslistings.png)
-[tipos de ativosBaixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém amostras de documentos mp4 e word e arquivos xdp que serão usados como tipos de ativos para listar usando o componente de pesquisa e lister
+![tipos de ativos](assets/assettypeslistings.png)
+[Baixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém amostras de documentos mp4 e word e arquivos xdp que serão usados como tipos de ativos para listar usando o componente de pesquisa e lister

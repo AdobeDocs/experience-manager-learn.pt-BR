@@ -1,18 +1,18 @@
 ---
 title: Melhorias no Editor de formulários no AEM Forms
 description: O AEM 6.3 apresenta vários novos recursos e aprimoramentos nesta versão para simplificar a experiência de criação de formulários e documentos adaptáveis. As melhorias ajudam a reduzir o tempo de comercialização e permitem que os usuários trabalhem com formulários e documentos
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 1%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
-
 
 # Melhorias no Editor de formulários no AEM Forms {#form-editor-improvements-in-aem-forms}
 

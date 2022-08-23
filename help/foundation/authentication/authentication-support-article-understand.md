@@ -1,7 +1,7 @@
 ---
 title: Compreender o suporte de autenticação no AEM
 description: Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente de autorização) com suporte do AEM.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 feature: User and Groups
 topics: authentication, security
 activity: understand
@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
-source-git-commit: 84d7230071544e7cdc63ecc0faa32c03ab337cd6
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 8%

@@ -1,24 +1,23 @@
 ---
-title: Noções básicas do visualizador de ativos com o AEM Dynamic Media
-description: Os aprimoramentos no AEM Dynamic Media Viewer permitem que os autores do AEM definam e personalizem os ativos de experiência que serão apresentados aos usuários do site.
+title: Noções básicas sobre o Visualizador de ativos com o AEM Dynamic Media
+description: AEM as melhorias no Dynamic Media Viewer permitem que AEM autores definam e personalizem os ativos de experiência que serão apresentados aos usuários do site.
 sub-product: dynamic media classic
 feature: Viewer Presets, Image Profiles
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 2%
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
-
 # Noções básicas sobre o Visualizador de ativos com o AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-Os aprimoramentos no AEM Dynamic Media Viewer permitem que os autores do AEM definam e personalizem os ativos de experiência que serão apresentados aos usuários do site.
+AEM as melhorias no Dynamic Media Viewer permitem que AEM autores definam e personalizem os ativos de experiência que serão apresentados aos usuários do site.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
 

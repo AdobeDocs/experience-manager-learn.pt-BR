@@ -1,14 +1,15 @@
 ---
 title: Preenchimento prévio do formulário adaptável usando o perfil ACS
 description: Preenchimento prévio do Adaptive Forms usando o perfil ACS
-feature: Forms adaptável, Modelo de dados de formulário
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 Nessa parte, preencheremos previamente o Formulário adaptável com informações de perfil obtidas do ACS. A AEM Forms tem esse poderoso recurso de preencher previamente formulários adaptáveis.
 
-Para saber mais sobre como preencher previamente formulários adaptáveis, leia este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Para saber mais sobre como preencher previamente formulários adaptáveis, leia este link [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Para pré-preencher o Adaptive Form buscando dados do ACS, assumiremos que há perfil no ACS que tem o mesmo email que o usuário conectado AEM. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email é csimms@adobe.com.
 
@@ -233,4 +234,3 @@ Para que isso funcione em seu sistema, siga as seguintes instruções:
 * [Importar formulário adaptável de amostra para o AEM usando o gerenciador de pacotes](assets/pre-fill-af-from-campaign.zip)
 * Certifique-se de fazer logon no AEM com um usuário cuja ID de email é compartilhada por um perfil no Adobe Campaign. Por exemplo, se a ID de email do usuário AEM for johndoe@adobe.com, você precisará ter um perfil no ACS cujo email é johndoe@adobe.com.
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
-

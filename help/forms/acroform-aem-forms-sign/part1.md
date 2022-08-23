@@ -1,17 +1,16 @@
 ---
-title: Acrobat com AEM Forms
-seo-title: Mesclar dados do formulário adaptável com o Acroform
-description: Parte 1 da integração de Acroforms com a AEM Forms. Como criar um formulário adaptável usando o Acroform e unir os dados para obter um PDF.
+title: Acrobora com AEM Forms
+seo-title: Merge Adaptive Form data with Acroform
+description: Parte 1 da integração do Acroforms com o AEM Forms. Criar um formulário adaptável usando o Acroform e unir os dados para obter um PDF.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4
-translation-type: tm+mt
-source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
+version: 6.4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -19,10 +18,10 @@ ht-degree: 0%
 
 # Criação de Acroform
 
-Os formulários são formulários criados usando o Acrobat. Você pode criar um novo formulário do zero usando o Acrobat ou pegar um formulário existente criado no Microsoft Word e convertê-lo no Acroform usando o Acrobat. As etapas a seguir precisam ser seguidas para converter um formulário criado no Microsoft Word em Acroform.
+Os formulários são criados usando o Acrobat. Você pode criar um novo formulário do zero usando o Acrobat ou pegar um formulário existente criado no Microsoft Word e convertê-lo no Acroform usando o Acrobat. As etapas a seguir precisam ser seguidas para converter um formulário criado no Microsoft Word em Acroform.
 
-* Abrir documento de palavras usando o Acrobat
-* Use a ferramenta de formulário Preparar da Acrobat para identificar os campos do formulário no formulário.
+* Abrir documento do Word usando o Acrobat
+* Use a ferramenta Acrobat Prepare form para identificar os campos do formulário.
 * Salve o pdf. Verifique se o nome do arquivo não tem espaços nele.
 
 
@@ -30,19 +29,19 @@ Os formulários são formulários criados usando o Acrobat. Você pode criar um 
 
 >[!NOTE]
 >
->Se desejar enviar o formulário preenchível para assinatura usando o Adobe Sign, nomeie os campos de acordo. Por exemplo, você pode nomear um campo **Sig_es_:signer1:signature**. Esta é a sintaxe que a Adobe Sign entende.
+>Se desejar enviar o formulário de preenchimento para assinatura usando o Adobe Sign, nomeie os campos de acordo. Por exemplo, é possível nomear um campo **Sig_es_:signer1:assinatura**. Essa é a sintaxe que o Adobe Sign entende.
 
 >[!NOTE]
 >
->Se você estiver enviando um documento baseado em XFA, precisará nivelar o documento e as tags de assinatura Adobe Sign precisarão estar presentes como texto estático no documento.
+>Se você estiver enviando um documento baseado em XFA, precisará nivelar o documento e as tags de assinatura Adobe Sign precisam estar presentes como texto estático no documento.
 
-[documento de Tags de Texto Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento de Tags de texto do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >
->Verifique se o nome do arquivo acroform não tem espaços nele. O código de amostra atual não lida com espaços.
+>Certifique-se de que o nome do arquivo acroform não tenha espaços nele. O código de amostra atual não lida com espaços.
 >
->Os nomes de campos de formulário só podem conter o seguinte:
+>Os nomes dos campos de formulário só podem conter o seguinte:
 >
 >* espaço único
 >* sublinhado único

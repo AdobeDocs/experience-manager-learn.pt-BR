@@ -1,25 +1,24 @@
 ---
-title: AEM Forms com esquema JSON e dados[Part2]
-seo-title: AEM Forms com esquema JSON e dados[Part2]
+title: AEM Forms com esquema JSON e dados[Parte2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
-seo-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
+source-wordcount: '342'
+ht-degree: 0%
 
 ---
-
 
 # Armazenamento de dados enviados no banco de dados
 
@@ -30,9 +29,9 @@ ht-degree: 1%
 
 Para armazenar os dados enviados no banco de dados, gravaremos um servlet para extrair os dados vinculados, o nome e o armazenamento do formulário. O código completo para lidar com o envio do formulário e armazenar afBoundData no banco de dados é fornecido abaixo.
 
-Criamos um envio personalizado para lidar com o envio do formulário. Neste post.POST.jsp de envio personalizado, enviamos a solicitação para nosso servlet.
+Criamos um envio personalizado para lidar com o envio do formulário. Neste post.POST.jsp de envio personalizado, encaminhamos a solicitação para nosso servlet.
 
-Para saber mais sobre submissão personalizada, leia este [artigo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Para saber mais sobre submissão personalizada, leia esta [artigo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 

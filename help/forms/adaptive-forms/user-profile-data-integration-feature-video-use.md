@@ -1,18 +1,18 @@
 ---
 title: Uso da integração de dados de perfil de usuário com o AEM Forms
 description: Integração AEM informações de perfil do usuário com o Adaptive Forms
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 4f2b6669-d61e-400d-8657-dddb28ae35f4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 3%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
-
 
 # Uso da integração de dados de perfil de usuário com o AEM Forms{#using-user-profile-data-integration-with-aem-forms}
 
@@ -23,12 +23,10 @@ Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBM
 1. Perfil de usuário AEM
 1. Serviços Web RESTful
 1. Serviços Web baseados em SOAP
-1. Serviços OData
-Este artigo destacará a integração AEM informações de perfil do usuário com o Adaptive Forms.
+1. Serviços OData Este artigo destacará a integração AEM informações de perfil do usuário com o Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
 
 >[!NOTE]
 >
 >Este recurso está disponível somente a partir do AEM 6.3.
-

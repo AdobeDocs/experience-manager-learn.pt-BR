@@ -8,17 +8,17 @@ topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 4242
 thumbnail: 33594.jpg
 topic: Content Management
 role: User
 level: Beginner
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 20%
+ht-degree: 30%
 
 ---
 
@@ -30,5 +30,5 @@ O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação e
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
 * [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

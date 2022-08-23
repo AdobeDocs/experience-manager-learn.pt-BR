@@ -1,12 +1,12 @@
 ---
 title: Configurar modelos de ativos com AEM Assets e InDesign Server
 description: Os Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marketing, cartões comerciais, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos quando integrado ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

@@ -2,18 +2,18 @@
 title: Como entender o gerenciamento de cores com o AEM Dynamic Media
 description: Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
 sub-product: dynamic-media
-feature: Perfis de imagem, Perfis de vídeo
-version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
+feature: Image Profiles, Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 15%
+source-wordcount: '319'
+ht-degree: 17%
 
 ---
-
 
 # Como entender o gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
@@ -23,7 +23,7 @@ Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele po
 
 >[!NOTE]
 >
->[Ative o Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM para usar esse recurso.
+>[Ativar o Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) no AEM para usar esse recurso.
 
 Esse recurso está disponível para as versões AEM 6.1 e 6.2 como um Feature Pack.
 
@@ -90,12 +90,12 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 | Nome | Espaço de cor | Descrição |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
-| AppleRGB | RGB | Apple RGB |
-| CIERGB | RGB | CIE RGB |
+| AppleRGB | RGB | RGB Apple |
+| CIERGB | RGB | RGB CIE |
 | CoatedFogra27 | CMYK | Revestido FOGRA27 (ISO 12647-2:2004) |
 | CoatedFogra39 | CMYK | Revestido FOGRA39 (ISO 12647-2:2004) |
 | ColunaRevestida | CMYK | GRACoL 2006 revestido (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB | ColorMatch RGB |
+| ColorMatchRGB | RGB | RGB ColorMatch |
 | EuropeISOCoated | CMYK | Europa ISO Revestido FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
 | EuroescalaNãoRevestido | CMYK | Euroscale Não Revestido v2 |
@@ -103,11 +103,11 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 | JapãoCorJornal | CMYK | Jornal japonês Color 2002 |
 | JapãoCorNãoRevestida | CMYK | Japão - Cor 2001 não revestida |
 | JapãoColorWebCoated | CMYK | Japão Color 2003 Web Coated |
-| JapãoWebCoated | CMYK | Web Coated (Anúncio) para o Japão |
+| JapãoWebCoated | CMYK | Japão - Revestido da Web (Anúncio) |
 | NewsprintSNAP2007 | CMYK | Jornal dos EUA (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
-| ProPhoto | RGB | ProPhoto RGB |
+| ProPhoto | RGB | RGB ProPhoto |
 | PS4Default | CMYK | CMYK padrão do Photoshop 4 |
 | PS5Default | CMYK | CMYK padrão do Photoshop 5 |
 | CheifadoRevestido | CMYK | U.S. Sheetfeed Coated v2 |
@@ -120,7 +120,7 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 | WebCoatedGrade3 | CMYK | Papel SWOP Revestido da Web 2006 Grau 3 |
 | WebCoatedGrade5 | CMYK | Papel SWOP Revestido da Web 2006 Grau 5 |
 | WebUn-Revelado | CMYK | U.S. Web Untrated v2 |
-| WideGamutRGB | RGB | Largura de gama RGB |
+| WideGamutRGB | RGB | RGB de gama larga |
 
 ## Recursos adicionais{#additional-resources}
 

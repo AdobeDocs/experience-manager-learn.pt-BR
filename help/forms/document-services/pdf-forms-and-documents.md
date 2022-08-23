@@ -4,12 +4,12 @@ description: O PDF é, na verdade, uma família de formatos de arquivo, e este a
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: 6.3,6.4, 6.5
+version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
 exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Arquivos de exemplo podem ser [baixado aqui](assets/pdf-file-types.zip)
 
 ## PDF da arquitetura Forms XML (PDF XFA)
 
-O Adobe usa o termo formulário PDF XFA para fazer referência ao Forms interativo e dinâmico criado com o AEM Forms Designer. A Forms e os arquivos criados com o Designer são baseados na XFA (XML Forms Architecture) do Adobe. De muitas formas, o formato de arquivo PDF XFA está mais próximo de um arquivo HTML do que de um arquivo PDF tradicional. Por exemplo, o código a seguir mostra a aparência de um objeto de texto simples em um arquivo PDF XFA.
+O Adobe usa o termo formulário PDF XFA para fazer referência ao Forms interativo e dinâmico criado com o AEM Forms Designer. A Forms e os arquivos criados com o Designer são baseados em sua Arquitetura Forms XML (XFA) do Adobe. De muitas formas, o formato de arquivo PDF XFA está mais próximo de um arquivo HTML do que de um arquivo PDF tradicional. Por exemplo, o código a seguir mostra a aparência de um objeto de texto simples em um arquivo PDF XFA.
 
 ![Campo de texto](assets/text-field.JPG)
 
@@ -54,7 +54,7 @@ O layout estático de PDF forms XFA nunca é alterado no tempo de execução, ma
 
 ### Forms dinâmico
 
-Os PDF XFA dinâmicos podem alterar seu layout no tempo de execução, de modo que os recursos de comentário e marcação não sejam compatíveis. No entanto, os PDF dinâmicos de XFA oferecem as seguintes vantagens:
+Os PDF XFA dinâmicos podem alterar o layout no tempo de execução, de modo que os recursos de comentário e marcação não sejam compatíveis. No entanto, os PDF dinâmicos de XFA oferecem as seguintes vantagens:
 
 * Os formulários dinâmicos são compatíveis com scripts de cliente que alteram o layout e a paginação do formulário. Por exemplo, o Purchase Order.xdp será expandido e paginado para acomodar uma quantidade infinita de dados se você salvá-lo como um formulário dinâmico
 * Os formulários dinâmicos oferecem suporte a todas as propriedades do formulário no tempo de execução, enquanto os formulários estáticos oferecem suporte somente a um subconjunto
@@ -76,13 +76,13 @@ O formato de PDF mais popular e penetrante é o arquivo PDF tradicional. Há mui
 * Capturando o fluxo de impressão de um aplicativo de desktop: Escolha o comando Imprimir de um aplicativo de criação e selecione o ícone da impressora Adobe PDF. Em vez de uma cópia impressa do seu documento, você criará um arquivo PDF do seu documento
 * Usando o plug-in Acrobat PDFMaker com aplicativos do Microsoft Office: Ao instalar o Acrobat, ele adiciona um menu do Adobe PDF aos aplicativos do Microsoft Office e um ícone à faixa do Office. Você pode usar esses recursos adicionados para criar arquivos PDF diretamente no Microsoft Office
 * Ao usar o Acrobat Distiller para converter arquivos Postscript e Encapsulated Postscript (EPS) em PDF: O Distiller geralmente é usado na publicação de impressão e em outros fluxos de trabalho que exigem uma conversão do formato Postscript para o formato PDF.
-* Sob o capuz, um PDF tradicional é muito diferente de um PDF XFA. Ela não tem a mesma estrutura XML e, como é criada ao capturar o fluxo de impressão de um arquivo, um PDF tradicional é um arquivo estático e somente leitura.
+* Sob o capuz, um PDF tradicional é muito diferente de um PDF XFA. Ele não tem a mesma estrutura XML e, como é criado ao capturar o fluxo de impressão de um arquivo, um PDF tradicional é um arquivo estático e somente leitura.
 
 Um Documento certificado fornece documento PDF e forma destinatários com mais garantias de autenticidade e integridade.
 
 ### Acroformes
 
-As formas são a tecnologia de forma interativa mais antiga da Adobe; elas datam de Acrobat versão 3. O Adobe fornece [Referência da API do Acrobat Forms](assets/FormsAPIReference.pdf), datada de maio de 2003, para fornecer os detalhes técnicos desta tecnologia. Acroformes são uma combinação dos seguintes itens:
+As formas são tecnologias de formulários interativos mais antigas; elas datam de Acrobat versão 3. O Adobe fornece [Referência da API do Acrobat Forms](assets/FormsAPIReference.pdf), datada de maio de 2003, para fornecer os detalhes técnicos desta tecnologia. Acroformes são uma combinação dos seguintes itens:
 
 * Um PDF tradicional que define o layout estático e os gráficos do formulário.
 * Campos de formulário interativo que são vinculados às ferramentas de formulário do programa Adobe Acrobat. Essas ferramentas de formulário são um pequeno subconjunto do que está disponível no AEM Forms Designer.

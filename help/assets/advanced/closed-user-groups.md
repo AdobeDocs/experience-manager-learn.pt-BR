@@ -1,7 +1,7 @@
 ---
 title: Grupos de usuários fechados no AEM Assets
 description: Grupos de usuários fechados (CUGs) é um recurso usado para restringir o acesso ao conteúdo a um grupo selecionado de usuários em um site publicado. Este vídeo mostra como Grupos de usuários fechados podem ser usados com os Ativos da Adobe Experience Manager para restringir o acesso a uma pasta específica de ativos.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,7 +9,7 @@ level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -36,9 +36,9 @@ Os Grupos de Usuários Fechados (CUG) e Listas de Controle de Acesso (ACL) são 
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Utilização prevista | Configure e aplique permissões para conteúdo na instância de AEM **atual**. | Configure as políticas de CUG para conteúdo em AEM instância **author**. Aplique políticas CUG para conteúdo em AEM instância **publish**. |
+| Utilização prevista | Configure e aplique permissões para conteúdo no **atual** AEM instância. | Configurar políticas de CUG para conteúdo em AEM **autor** instância. Aplicar políticas CUG para conteúdo em AEM **publicar** instância(s). |
 | Níveis de permissão | Define permissões concedidas/negadas para usuários/grupos para todos os níveis: Ler, Modificar, Criar, Excluir, Ler ACL, Editar ACL, Replicar. | Concede acesso de leitura a um conjunto de usuários/grupos. Nega acesso de leitura a *todos os outros* usuários/grupos. |
-| Publicação | As ACLs são *não* publicadas com conteúdo. | As políticas de CUG *são* publicadas com conteúdo. |
+| Publicação | As ACLs são *not* publicado com conteúdo. | Políticas de CUG *são* publicado com conteúdo. |
 
 ## Links de suporte {#supporting-links}
 

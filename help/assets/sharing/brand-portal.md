@@ -2,17 +2,17 @@
 title: Uso do Brand Portal
 description: Apresentação de vídeo da integração do AEM Author e do AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
 
 ---
-
 
 # Uso do Brand Portal com AEM Assets{#using-brand-portal-with-aem-assets}
 
@@ -30,7 +30,7 @@ A origem dos ativos da Brand Portal é usada para coletar ativos de agências e 
 
 *O Autor do Experience Manager 6.5 SP2 (6.5.2) ou superior é necessário para usar a origem dos ativos*
 
-Revise [Ativar autor do Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) para obter instruções sobre como configurar e configurar a origem de ativos no autor do Experience Manager.
+Revisão [Ativar autor do Experience Manager para origem dos ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) para obter instruções sobre como configurar e configurar a origem dos ativos no Experience Manager Author.
 
 ## Recursos e aprimoramentos de fevereiro de 2019 do Brand Portal{#brand-portal-features-and-enhancements-644}
 
@@ -48,7 +48,7 @@ Leia para saber mais sobre pesquisa de texto parcial e pesquisa curinga.
 
 Agora é possível pesquisar ativos especificando apenas uma parte, ou seja, uma palavra ou duas, da frase pesquisada no painel de filtragem.
 
-**Caso**  de uso: A pesquisa de frase parcial é útil quando você não tem certeza da combinação exata de palavras que ocorrem na frase pesquisada.
+**Caso de uso** : A pesquisa de frase parcial é útil quando você não tem certeza da combinação exata de palavras que ocorrem na frase pesquisada.
 
 Por exemplo, se o formulário de pesquisa no Brand Portal usar o Predicado de propriedade para pesquisa parcial no título do ativo, a especificação do termo acampamento retornará todos os ativos com o campo de palavras na frase de título.
 
@@ -68,12 +68,12 @@ Da mesma forma, especificando:
 #### Ativar hierarquia de pastas
 
 Agora, os administradores podem configurar como as pastas são exibidas para usuários não administradores (editores, visualizadores e usuários convidados) no logon.
-[A configuração Ativar ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) hierarquia de pastas é adicionada em Configurações gerais, no painel Ferramentas administrativas. Se a configuração for:
+[Habilitar Hierarquia de Pastas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) é adicionada em Configurações gerais, no painel Ferramentas administrativas. Se a configuração for:
 
 * Ativada, a árvore de pastas que começa na pasta raiz está visível para usuários não administradores. Dessa forma, a concessão de uma experiência de navegação semelhante aos administradores.
 * Desabilitado, somente as pastas compartilhadas são exibidas na landing page.
 
-[A funcionalidade Ativar ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) hierarquia de pastas (quando ativada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de diferentes hierarquias. Ao fazer logon, usuários não administradores agora visualizam as pastas pai virtual (e ancestral) das pastas compartilhadas.
+[Habilitar Hierarquia de Pastas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) A funcionalidade (quando ativada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de hierarquias diferentes. Ao fazer logon, usuários não administradores agora visualizam as pastas pai virtual (e ancestral) das pastas compartilhadas.
 
 As pastas compartilhadas são organizadas nos respectivos diretórios em pastas virtuais. Você pode reconhecer essas pastas virtuais com um ícone de cadeado.
 
@@ -98,7 +98,7 @@ Os vídeos do Dynamic Media podem ser visualizados em:
 
 ### Publicação agendada para o Brand Portal
 
-Fluxo de trabalho de publicação de ativos (e pastas) de [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) A instância do autor para o Brand Portal pode ser agendada para uma data e hora posteriores.
+Fluxo de trabalho de publicação de ativos (e pastas) de [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) A instância de criação no Brand Portal pode ser agendada para uma data e hora posteriores.
 
 Da mesma forma, os ativos publicados podem ser removidos do portal em uma data posterior (hora), agendando o fluxo de trabalho Cancelar publicação do Brand Portal .
 
@@ -107,11 +107,11 @@ Da mesma forma, os ativos publicados podem ser removidos do portal em uma data p
 As organizações podem personalizar o URL do portal, com um prefixo alternativo no URL. Para obter um alias para o nome do locatário em seu URL de portal existente, as organizações precisam entrar em contato com o suporte ao Adobe.
 
 Observe que somente o prefixo do URL do Brand Portal pode ser personalizado e não o URL inteiro.
-Por exemplo, uma organização com o domínio existente `wknd.brand-portal.adobe.com` pode ser criada `wkndinc.brand-portal.adobe.com` mediante solicitação.
+Por exemplo, uma organização com domínio existente `wknd.brand-portal.adobe.com` pode obter `wkndinc.brand-portal.adobe.com` criado mediante solicitação.
 
-No entanto, a instância do autor do AEM pode ser [configurada](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com o URL da ID do locatário e não com o URL do alias do locatário (alternativo).
+No entanto, a instância do autor do AEM pode ser [configurado](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com o URL da id do locatário e não com o URL do alias do locatário (alternativo).
 
-**Caso**  de uso: As organizações podem atender às suas necessidades de marca, personalizando o URL do portal, em vez de aderir ao URL fornecido pelo Adobe.
+**Caso de uso** : As organizações podem atender às suas necessidades de marca, personalizando o URL do portal, em vez de aderir ao URL fornecido pelo Adobe.
 
 ## Recursos e aprimoramentos de dezembro de 2018 do Brand Portal{#brand-portal-features-and-enhancements-642}
 
@@ -151,12 +151,12 @@ Seis novas configurações são adicionadas aos administradores para ativar/desa
 
 ### Outras melhorias
 
-* *Caminho da hierarquia de pastas nas visualizações*  de cartão e lista — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
-* *Opção de visão geral*  — fornece metadados de usuários não administradores sobre o ativo/pasta, selecionando o ativo/pasta e depois a opção de visão geral na barra de ferramentas. Atualmente, exibe o título, a data de criação e o caminho
+* *Caminho da hierarquia de pastas nas visualizações de cartão e lista* — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
+* *Opção Visão geral* — fornece metadados de usuários não administradores sobre o ativo/pasta, selecionando o ativo/pasta e depois a opção de visão geral na barra de ferramentas. Atualmente, exibe o título, a data de criação e o caminho
 
 ### Adobe I/O Hosts UI para configurar as Integrações de oAuth
 
-O Brand Portal usa a interface Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar o aplicativo JWT, que permite a configuração de integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface do usuário para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/br/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+O Brand Portal usa o Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar o aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface do usuário para configurar integrações do OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/br/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e aprimoramentos de fevereiro de 2018 do Brand Portal{#brand-portal-features-and-enhancements-632}
 

@@ -1,22 +1,22 @@
 ---
 title: Uso do compartilhamento de mídia social no AEM Sites
 description: Explore a configuração e o uso do componente Compartilhamento de mídia social .
-feature: Componentes principais
+feature: Core Components
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
-version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 569069e8-7964-49f1-96ed-7dfa4f8ed96c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '203'
 ht-degree: 8%
 
 ---
-
 
 # Uso do compartilhamento em mídia social {#using-social-media-sharing-in-aem-sites}
 
@@ -24,7 +24,7 @@ Explore a configuração e o uso do componente Compartilhamento de mídia social
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-Este vídeo explora os seguintes recursos do componente Compartilhamento de mídia social (parte de [AEM Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)) usando o [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) site de amostra.
+Este vídeo explora os seguintes recursos do componente Compartilhamento de mídia social (parte de [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)) usando o [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) site de exemplo.
 
 * 0:00 - Adicionar e configurar o componente de Compartilhamento de mídia social
 * 1:00 - Compartilhamento para o Facebook
@@ -37,9 +37,9 @@ Este vídeo explora os seguintes recursos do componente Compartilhamento de míd
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalizador deve ser configurado no Autor do AEM e na Publicação do AEM, para mapear o modo de execução de publicação para o domínio acessível publicamente usado para acessar a Publicação do AEM.
+[AEM externalizador](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve ser configurado no Autor do AEM e na Publicação do AEM, para mapear o modo de execução de publicação para o domínio acessível publicamente usado para acessar a Publicação do AEM.
 
-Neste vídeo, usamos `/etc/hosts` para falsificar *www.example.com* para resolver para localhost, e usamos uma [configuração básica AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que www.example.com coloque o AEM Publish à frente.
+Neste vídeo, usamos `/etc/hosts` ao parvo *www.example.com* para resolver para localhost e usar um [configuração básica do AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que www.example.com coloque o AEM Publish na frente.
 
 ## Materiais de apoio {#supporting-materials}
 

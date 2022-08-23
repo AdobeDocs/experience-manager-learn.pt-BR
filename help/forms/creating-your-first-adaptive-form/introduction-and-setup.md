@@ -1,18 +1,18 @@
 ---
 title: Introdução Ao Adaptive Forms
-description: 'Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais. '
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+description: Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # Introdução Ao Adaptive Forms {#getting-started-with-adaptive-forms}
 
@@ -30,8 +30,6 @@ Você precisará do seguinte:
 
 * **Pressupõe-se que você esteja executando o AEM Forms versão 6.4 ou superior no localhost:4502.**
 
-* [Baixe o fragmento client-libs-and-](assets/client-libs-and-logo.zip) logoand  [getting-started-](assets/getting-started-fragment.zip) no disco rígido.
+* [Baixe o cliente-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) ao seu disco rígido.
 
 * Importe os arquivos zip no AEM usando [gerenciador de pacotes ](http://localhost:4502/crx/packmgr/index.jsp)
-
-

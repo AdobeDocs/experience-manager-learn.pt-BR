@@ -1,20 +1,20 @@
 ---
 title: Uso da importação e exportação de metadados no AEM Assets
 description: Saiba como usar os recursos de metadados de importação e exportação do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
+exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
 
 ---
-
 
 # Uso da importação e exportação de metadados no AEM Assets {#metadata-import-and-export}
 
@@ -37,7 +37,7 @@ Saiba como usar os recursos de metadados de importação e exportação do Adobe
 ### Primeira linha
 
 * A primeira linha do arquivo CSV define o esquema de metadados.
-* O padrão da primeira coluna é `assetPath`, que retém o Caminho JCR absoluto para um ativo.
+* O padrão da Primeira coluna é `assetPath`, que retém o Caminho JCR absoluto de um ativo.
 
 * Colunas subsequentes na primeira linha apontam para outras propriedades de metadados de um ativo.
    * Por exemplo : `dc:title, dc:description, jcr:title`
@@ -53,7 +53,7 @@ Saiba como usar os recursos de metadados de importação e exportação do Adobe
    * Incorreto: `Dc:Title {{String}}`
 
 * O tipo de propriedade não diferencia maiúsculas de minúsculas
-* Todos os tipos válidos de [Propriedade JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são suportados
+* Todos válidos [Tipos de propriedades JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são compatíveis
 
 * Formato de propriedade de vários valores - `<metadata property name> {{<property type : MULTI }}`
 

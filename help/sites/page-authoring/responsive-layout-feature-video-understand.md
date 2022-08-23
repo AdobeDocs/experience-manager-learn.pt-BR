@@ -1,26 +1,26 @@
 ---
 title: Como entender o layout responsivo com o AEM Sites
-seo-title: Como entender o layout responsivo com o AEM Sites
+seo-title: Understanding Responsive Layout with AEM Sites
 description: O AEM permite ter um layout responsivo em suas páginas usando o componente Contêiner de layout. Com o Layout responsivo, os autores de conteúdo podem criar conteúdo responsivo para diferentes dispositivos e visualizar a experiência do usuário final no AEM.
-seo-description: Aborda as etapas para criar um layout responsivo para diferentes dispositivos
-feature: Editor de páginas, modelos editáveis
+seo-description: Covers the steps to author responsive layout for different devices
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 15%
+source-wordcount: '110'
+ht-degree: 17%
 
 ---
-
 
 # Como entender o layout responsivo {#understanding-responsive-layout-with-aem-sites}
 

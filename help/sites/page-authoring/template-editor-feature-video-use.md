@@ -1,25 +1,25 @@
 ---
 title: Usar modelos de página editáveis com o AEM Sites
-seo-title: Usar modelos de página editáveis com o Adobe Experience Manager Sites
+seo-title: Using Editable Page Templates with Adobe Experience Manager Sites
 description: Os modelos editáveis permitem que autores especializados criem e atualizem modelos de página e gerenciem configurações de política avançadas com o AEM Sites.
-seo-description: Os modelos editáveis permitem que autores especializados criem e atualizem modelos de página e gerenciem configurações de política avançadas com o Adobe Experience Manager Sites.
-feature: Modelos editáveis
+seo-description: Editable templates allow specialized authors to create and update page templates and manage advanced policy configurations with Adobe Experience Manager Sites.
+feature: Editable Templates
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 193
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '218'
 ht-degree: 5%
 
 ---
-
 
 # Uso de modelos de página editáveis{#using-template-editor-with-aem-sites}
 
@@ -29,13 +29,13 @@ Os modelos editáveis permitem que autores especializados criem e atualizem mode
 
 Modelos editáveis são a recomendação para criar o novo AEM Sites.
 
-**Experiência de autor consistente**  - As melhorias na criação do AEM Sites são transferidas para a edição de Modelo, incluindo o modo Layout em linha e o Painel de árvore de conteúdo.
+**Experiência de autor consistente** - Os aprimoramentos na criação do AEM Sites são transferidos para a edição de Modelo, incluindo o modo Layout em linha e o Painel de árvore de conteúdo.
 
-**Configurações avançadas de política**  - O exemplo a seguir destaca algumas configurações avançadas de política disponibilizadas com Modelos editáveis:
+**Configurações avançadas de política** - O seguinte destaca algumas configurações de política avançadas disponibilizadas com Modelos editáveis:
 
-* **Contêiner de layout**  - capacidade de configurar os Componentes permitidos, Gerenciar o mapeamento Arrastar e soltar de ativos e as colunas Grade responsiva.
-* **Componente de texto**  - capacidade de configurar plug-ins do Editor de rich text com uma nova interface do usuário e reutilizar as políticas do RTE nos modelos.
-* **Componente de imagem**  - capacidade de ativar/desativar recursos como recorte, upload de arquivo para desktop com uma nova interface e reutilizar políticas de imagem em modelos.
+* **Contêiner de layout** - capacidade de configurar os Componentes permitidos, Gerenciar o mapeamento Arrastar e soltar de ativos e as colunas Grade responsiva .
+* **Componente de texto** - capacidade de configurar plug-ins do Editor de Rich Text com uma nova interface do usuário e reutilizar as políticas do RTE nos modelos.
+* **Componente de imagem** - capacidade de ativar/desativar recursos como recorte, upload de arquivo para desktop com uma nova interface e reutilizar políticas de imagem em modelos.
 
 Modelos editáveis podem ser encontrados em **Ferramentas** `>` **Geral** `>` **Modelos**.\
 URL de Modelos Editáveis (instância de AEM local): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)

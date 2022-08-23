@@ -1,18 +1,18 @@
 ---
 title: Capturando mensagens de erro no serviço do Modelo de dados de formulário como etapa no fluxo de trabalho
 description: A partir do AEM Forms 6.5.1, agora temos a capacidade de capturar mensagens de erro geradas ao usar invocar o serviço de modelo de dados de formulário como uma etapa AEM fluxo de trabalho. Fluxo de trabalho.
-feature: Fluxo de trabalho
-version: 6.5.1,6.5.2
-topic: Desenvolvimento
+feature: Workflow
+version: 6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # Capturando mensagens de erro na etapa Chamar serviço do modelo de dados de formulário
 
@@ -45,5 +45,3 @@ Com essas alterações, a etapa Chamar serviço do modelo de dados de formulári
 
 }
 ```
-
-

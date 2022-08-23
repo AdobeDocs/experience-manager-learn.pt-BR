@@ -1,18 +1,18 @@
 ---
 title: Desenvolvimento de escopos OAuth no AEM
 description: Os Escopos OAuth extensíveis da Adobe Experience Manager permitem o controle de acesso para recursos de um aplicativo cliente autorizado por um usuário final. O diagrama abaixo ilustra o fluxo de solicitação no contexto de AEM.
-version: 6.3, 6.4, 6.5
-feature: Usuários e grupos
-topic: Desenvolvimento
+version: 6.4, 6.5
+feature: User and Groups
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: dd37355e-cfc7-4581-ac22-d89c951c22cf
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
-
 
 # Desenvolvimento de escopos OAuth
 

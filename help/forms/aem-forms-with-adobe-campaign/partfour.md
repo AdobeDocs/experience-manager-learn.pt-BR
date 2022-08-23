@@ -1,18 +1,18 @@
 ---
 title: Criar perfil de campanha usando modelo de dados de formulário
 description: Etapas envolvidas na criação do perfil do Adobe Campaign Standard usando o Modelo de dados de formulário do AEM Forms
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '426'
+ht-degree: 3%
 
 ---
-
 
 # Criar perfil de campanha usando modelo de dados de formulário {#create-campaign-profile-using-form-data-model}
 
@@ -112,12 +112,11 @@ O arquivo de troca de amostras é fornecido a você como parte do ativo relacion
 Para testar a solução, siga as seguintes etapas:
 * [Siga as etapas conforme descrito aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Baixe e descompacte este arquivo para obter o arquivo do swagger](assets/create-acs-profile-swagger-file.zip)
-* Criar fonte de dados usando o arquivo swagger
-Criar Modelo de Dados de Formulário e baseá-lo na Fonte de Dados criada na etapa anterior
+* Criar fonte de dados usando o arquivo do gerenciador Criar modelo de dados de formulário e baseá-lo na fonte de dados criada na etapa anterior
 * Crie um formulário adaptável com base no modelo de dados de formulário criado na etapa anterior.
 * Arraste e solte os seguintes elementos da guia fontes de dados no Formulário adaptável
 
-   * E-mail
+   * Email
    * Nome
    * Sobrenome
    * Telefone móvel

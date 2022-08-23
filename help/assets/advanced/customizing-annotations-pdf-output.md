@@ -1,27 +1,26 @@
 ---
 title: Personalização de anotações no AEM Assets
-description: O formato e estilo do AEM Assets quando a saída para PDF pode ser configurado por desenvolvedores do AEM.
+description: O formato e estilo do AEM Assets quando a saída para o PDF pode ser configurado por AEM desenvolvedores.
 feature: Collaboration
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Collaboration
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 972737dd-8ca6-47b4-a4ec-b73355c09cec
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 4%
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
-
 # Personalização de anotações no AEM Assets{#using-annotations-in-aem-assets}
 
-O AEM é compatível com a personalização da saída da anotação em PDF.
+AEM suporta a personalização da saída da anotação para o PDF.
 
-## Anotação em PDF sling:Definição de OsgiConfig
+## Anotação de PDF sling:Definição OsgiConfig
 
-Para personalizar anotações em PDF, crie um nó **sling:OsgiConfig** no projeto AEM em
+Para personalizar anotações do PDF, crie um **sling:OsgiConfig** nó no projeto AEM em
 
 `/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` e ajuste os valores conforme necessário:
 

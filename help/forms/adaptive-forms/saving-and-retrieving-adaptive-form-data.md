@@ -1,14 +1,14 @@
 ---
 title: Como salvar e recuperar dados de formulário adaptável
 description: Como salvar e recuperar dados de formulário adaptáveis do banco de dados. Esse recurso permite que os usuários salvem o formulário e continuem preenchendo o formulário em uma data posterior.
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 role: Developer
 type: Tutorial
-version: 6.3,6.4,6.5
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+version: 6.4,6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ A fonte de dados agrupada da conexão Apache Sling é configurada para apontar p
 
 * Classe de Driver JDBC:com.mysql.jdbc.Driver
 
-* URL de Conexão JDBC:jdbc:mysql://localhost:3306/aemformstutorial
+* URL de conexão JDBC:jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connectionpool](assets/storingdata.PNG)
 

@@ -1,25 +1,24 @@
 ---
 title: AEM Forms com esquema JSON e dados[Parte3]
-seo-title: AEM Forms com esquema JSON e dados[Parte3]
+seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
-seo-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
-
 
 # Armazenamento do esquema JSON no banco de dados {#storing-json-schema-in-database}
 
@@ -153,5 +152,3 @@ Resumindo, fizemos o seguinte até agora
 * Armazenamos os dados vinculados do Formulário adaptável no banco de dados.
 
 As próximas etapas seriam usar o QueryBuilder para exibir os campos a serem pesquisados com base no esquema JSON
-
-

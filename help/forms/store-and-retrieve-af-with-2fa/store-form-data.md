@@ -1,18 +1,19 @@
 ---
 title: Armazenar dados de formulário
 description: Armazenar dados do formulário junto com o novo mapa de anexos no banco de dados
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6538
 thumbnail: 6538.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2bd9fe63-8f42-4b89-95a0-13ade49bc31b
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 4%
+source-wordcount: '69'
+ht-degree: 0%
 
 ---
 

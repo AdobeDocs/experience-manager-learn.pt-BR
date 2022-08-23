@@ -1,18 +1,18 @@
 ---
 title: Criação do perfil da campanha no envio do formulário adaptável
 description: Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo utiliza o mecanismo de envio personalizado para lidar com o envio do formulário adaptativo.
-feature: Forms adaptável, Modelo de dados de formulário
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Criação do perfil da campanha no envio do formulário adaptável {#creating-campaign-profile-on-adaptive-form-submission}
 
@@ -243,7 +243,7 @@ return null;
 
 Crie um manipulador de envio personalizado para lidar com o envio do Formulário adaptativo. Neste manipulador de envio personalizado, faremos uma chamada para o método createProfile do CampaignService. O método createProfile aceita um JSONObject que representa o perfil que precisa ser criado.
 
-Para saber mais sobre o manipulador de envio personalizado no AEM Forms, siga este [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Para saber mais sobre o manipulador de envio personalizado no AEM Forms, siga este exemplo [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Este é o código no envio personalizado
 
@@ -264,7 +264,7 @@ Depois de definir o serviço e a ação de envio personalizado, estamos prontos 
 
 
 * [Siga as etapas conforme descrito aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importe o Adaptive Form e o Custom Submit Handler usando o gerenciador](assets/create-acs-profile-on-af-submission.zip) de pacotes. Este pacote contém o Formulário Adaptável configurado para enviar para a ação de envio personalizada.
+* [Importar formulário adaptável e manipulador de envio personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip).Este pacote contém o formulário adaptável configurado para enviar para a ação de envio personalizada.
 * Visualize o [formulário](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Preencha todos os campos e envie
 * Um novo perfil será criado na instância do ACS

@@ -1,23 +1,23 @@
 ---
 title: Visão geral do Dynamic Media com AEM Assets
-description: Esta série de vídeo oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de fornecimento de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo dos Ativos Experience Manager. Nossa estrutura e conjunto de componentes permitem que os profissionais de marketing personalizem e forneçam experiências interativas de multimídia em todos os dispositivos.
+description: Esta série de vídeo oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de fornecimento de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo do Experience Manager Assets. Nossa estrutura e conjunto de componentes permitem que os profissionais de marketing personalizem e forneçam experiências interativas de multimídia em todos os dispositivos.
 sub-product: dynamic-media
-feature: Recorte inteligente, perfis de vídeo, perfis de imagem, predefinições do visualizador, vídeo 360 VR, conjuntos de imagens, conjuntos de rotação
-version: 6.3, 6.4, 6.5
-topic: Gerenciamento de conteúdo
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
-
 # Uso do Dynamic Media com AEM Assets {#understanding-aem-dynamic-media}
 
-Esta série de vídeos de várias partes oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de fornecimento de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo dos Ativos Experience Manager. Nossa estrutura e conjunto de componentes permitem que os profissionais de marketing personalizem e forneçam experiências interativas de multimídia em todos os dispositivos.
+Esta série de vídeos de várias partes oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de fornecimento de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo do Experience Manager Assets. Nossa estrutura e conjunto de componentes permitem que os profissionais de marketing personalizem e forneçam experiências interativas de multimídia em todos os dispositivos.
 
 ## Visão geral da Dynamic Media
 
@@ -79,7 +79,7 @@ Este vídeo descreve como as Predefinições de imagem são criadas e o que é u
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
 
-Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os recursos do próprio arquivo de origem - transparência de plano de fundo, traçados de recorte e recortes e texto como variáveis - com os modificadores de URL da Dynamic Media.
+Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os recursos do próprio arquivo de origem - transparência de fundo, traçados de recorte e recortes e texto como variáveis - com os modificadores de URL do Dynamic Media.
 
 * Uso de modificadores de URL no campo Dynamic Media Modifier
 * Alteração da cor do fundo em imagens com transparência
@@ -94,9 +94,9 @@ Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os
 
 >[!NOTE]
 >
->A QUALIDADE da imagem é medida em porcentagens da compressão inversa, onde a qualidade de 100% é menos compactada, resultando em imagens de alta qualidade, mas em tamanhos de arquivo relativamente grandes. A compactação Jpeg é um esquema de compactação com perdas no qual as configurações de compactação determinam a qualidade da imagem e o tamanho do arquivo.
+>A QUALIDADE da imagem é medida em porcentagens da compactação inversa, onde a Qualidade de 100% é menos compactada, resultando em imagens de alta qualidade, mas em tamanhos de arquivo relativamente grandes. A compactação Jpeg é um esquema de compactação com perdas no qual as configurações de compactação determinam a qualidade da imagem e o tamanho do arquivo.
 
-Equilibre a qualidade da imagem jpeg em relação ao tamanho de arquivo resultante (em kilobytes) para melhorar a velocidade de carregamento da página, usando 2 comandos para ajustar as configurações de compactação jpeg. O QLT define a qualidade da imagem ajustando as configurações de qualidade da compactação jpeg. O comando Tamanho JPEG permite designar qual tamanho de arquivo precisa ser obtido usando compactação.
+Equilibre a qualidade da imagem jpeg em relação ao tamanho de arquivo resultante (em kilobytes) para melhorar a velocidade de carregamento da página, usando 2 comandos para ajustar as configurações de compactação jpeg. O QLT define a qualidade da imagem ajustando as configurações de qualidade da compactação jpeg. JPEG Size permite designar qual tamanho de arquivo precisa ser obtido usando compactação.
 
 ## Adicionar legendas ocultas CC ao vídeo do Dynamic Media
 

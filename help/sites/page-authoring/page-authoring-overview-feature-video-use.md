@@ -1,26 +1,26 @@
 ---
 title: Criação de uma página no AEM Sites
-seo-title: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
+seo-title: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
 description: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
-seo-description: O vídeo a seguir destaca como criar uma nova página no Adobe Experience Manager Sites usando a interface do usuário do Editor de sites
-feature: Editor de páginas, modelos editáveis
+seo-description: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a14c511f-504a-48ce-864b-b1a30cbaea9a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 12%
+source-wordcount: '132'
+ht-degree: 21%
 
 ---
-
 
 # Criação de uma página {#authoring-page-aem-sites}
 
@@ -49,5 +49,5 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
 * [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

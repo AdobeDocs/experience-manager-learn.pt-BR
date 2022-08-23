@@ -1,18 +1,18 @@
 ---
 title: Escrever um envio personalizado no AEM Forms
 description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
-feature: Formulários adaptáveis
-version: 6.3,6.4,6.5
-topic: Desenvolvimento
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 2%
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
-
 
 # Escrever um envio personalizado no AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
@@ -24,10 +24,10 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 * Crie um nó do tipo &quot;sling :folder &quot; em aplicativos. Vamos chamar este nó CustomSubmitHelpx.
 * Salve o nó recém-criado.
 * Adicione as duas propriedades a seguir ao nó recém-criado
-* PropertyName       | Valor de propriedade
+* PropertyName | Valor de propriedade
 * guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel     | xfa,xsd,básico
-* jcr:description   | CustomSubmitHelpx
+* guideDataModel | xfa,xsd,básico
+* jcr:description | CustomSubmitHelpx
 * Salve as alterações
 * Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito neste arquivo. O código a seguir encaminha a solicitação para o servlet.
 
@@ -64,4 +64,3 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 Agora você verá &quot;CustomSubmitHelpx&quot; nas ações de envio do formulário adaptável, conforme mostrado nesta imagem.
 
 ![Formulário adaptável com envio personalizado](assets/capture-2.gif)
-
