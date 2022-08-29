@@ -4,9 +4,9 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b04e247c091634030e5377fdb8a159f8c7cce904
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '823'
 ht-degree: 21%
 
 ---
@@ -213,6 +213,7 @@ ht-degree: 21%
    + Integração com o Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurar a integração](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analisar dados de formulário enviados](./forms/forms-cs-and-power-automate/send-email-notification.md)
+      + [Enviar DoR como anexo de email](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
    + Integração com o Microsoft Dynamics{#formscs-dynamics-crm}
       + [Criar aplicativo dinâmico](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurar fonte de dados](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
