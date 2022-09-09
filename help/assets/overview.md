@@ -3,16 +3,22 @@ title: Vídeos e Tutoriais do AEM Assets
 description: Assista aos nossos vídeos para obter suporte e assistência AEM ativos.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 18%
+source-wordcount: '205'
+ht-degree: 19%
 
 ---
 
 # Vídeos e Tutoriais do AEM Assets {#overview}
 
 O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de ativos digitais AEM plataforma que permite que os usuários criem, gerenciem e compartilhem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Assets.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assets_overview"
+>title="AEM Assets"
+>abstract="Saiba como encontrar e editar rapidamente os ativos necessários."
+>additional-url="https://video.tv.adobe.com/v/336196" text="Apresentação do AEM Assets"
 
 ## Apresentação do AEM Assets
 
