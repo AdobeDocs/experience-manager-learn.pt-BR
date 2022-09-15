@@ -5,16 +5,16 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Serviço de Saída, Serviço Forms
-topic: 'Administração '
+feature: Output Service, Forms Service
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: acb3a3b4-e596-48d8-9737-63fc5b765beb
+source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 1%
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
-
 
 # Como aumentar &quot;aries.transaction.timeout&quot; para solucionar problemas relacionados à conversão de arquivos grandes
 
