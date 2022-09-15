@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '941'
 ht-degree: 5%
 
 ---
 
-# React App
+# React App{#react-app}
 
 Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando APIs GraphQL AEM usando consultas persistentes. O Cliente Sem Cabeçalho do AEM para JavaScript é usado para executar as consultas persistentes de GraphQL que alimentam o aplicativo.
 
@@ -26,6 +26,11 @@ Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless
 Visualize o [código-fonte no GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [tutorial passo a passo completo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) descrevendo como esse aplicativo React foi criado está disponível.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Personalizar conteúdo em um aplicativo React de amostra"
+>abstract="Criamos um aplicativo React moderno, que pode ser usado para aprender como personalizar o conteúdo usando o conjunto de recursos sem cabeçalho."
 
 ## Pré-requisitos {#prerequisites}
 
