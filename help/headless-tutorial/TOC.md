@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+source-git-commit: efb15b8eda84c68614e2fba9e4adc7680cb080f1
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 22%
+source-wordcount: '246'
+ht-degree: 21%
 
 ---
 
@@ -75,6 +75,14 @@ ht-degree: 22%
       + [4 - Navegação e encaminhamento](./spa-editor/react/navigation-routing.md)
       + [5 - Componente personalizado](./spa-editor/react/custom-component.md)
       + [6 - Estender componente](./spa-editor/react/extend-component.md)
+   + Angular{#angular}
+      + [Visão geral](./spa-editor/angular/overview.md)
+      + [1 - Projeto do Editor de SPA](./spa-editor/angular/create-project.md)
+      + [2 - Integrar a SPA](./spa-editor/angular/integrate-spa.md)
+      + [3 - Mapear componentes SPA](./spa-editor/angular/map-components.md)
+      + [4 - Navegação e encaminhamento](./spa-editor/angular/navigation-routing.md)
+      + [5 - Componente personalizado](./spa-editor/angular/custom-component.md)
+      + [6 - Estender componente](./spa-editor/angular/extend-component.md)
    + SPA Remoto{#remote-spa}
       + [Visão geral](./spa-editor/remote-spa/overview.md)
       + [Configuração rápida](./spa-editor/remote-spa/quick-setup.md)
