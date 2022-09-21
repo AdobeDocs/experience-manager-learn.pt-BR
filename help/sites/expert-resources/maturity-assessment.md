@@ -3,7 +3,7 @@ title: Hierarquia do site, taxonomia e dicas de marcação
 description: Hierarquia do site, taxonomia e práticas recomendadas de dicas de marcação
 hide: true
 hidefromtoc: true
-source-git-commit: 6f4d811e796b34985fa9d5af335239948e59c1ef
+source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -34,3 +34,4 @@ Na maioria dos casos, a avaliação da maturidade AEM ajudará a realizar uma an
 Domínios de avaliação AEM maturidade recomendados: Design e arquitetura, gerenciamento e estratégia de produtos, gerenciamento e entrega de ativos digitais, análise, teste e segurança.
 
 Enorme grito para AEM Campeão Greg Dimeris por reunir essas informações em vários artigos de Experience League, bem como suas próprias práticas recomendadas!
+

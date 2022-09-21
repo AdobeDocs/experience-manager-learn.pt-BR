@@ -26,7 +26,7 @@ Neste capítulo, fazemos alterações de configuração no __Projeto WKND Sites_
 
 ## Objetivos {#objectives}
 
-* Atualizar projeto de pilha completa para usar o pipeline front-end
+* Atualizar projeto de pilha completa para usar o pipeline de front-end
 
 ## Visão geral das alterações de configuração no projeto de AEM de pilha completa
 
