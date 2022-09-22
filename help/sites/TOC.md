@@ -3,10 +3,10 @@ user-guide-title: Vídeos e Tutoriais do AEM Sites
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriais do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 8343ce6e3c9f144dddfc9f5bc80b436542f5be02
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 30%
+source-wordcount: '432'
+ht-degree: 29%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 30%
    + [Entrega de imagem otimizada para a Web](components/web-optimized-image-delivery.md)
    + [Console de componentes](components/components-console-feature-video-use.md)
 + Fragmentos de conteúdo {#content-fragments}
+   + [Console Fragmentos de conteúdo](content-fragments/content-fragments-console.md)
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Tradução de fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
