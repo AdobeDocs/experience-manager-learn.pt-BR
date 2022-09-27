@@ -1,11 +1,24 @@
 ---
 title: Hierarquia do site, taxonomia e dicas de marcação
-description: Hierarquia do site, taxonomia e práticas recomendadas de dicas de marcação
+seo-title: Overview of Authoring in AEM Sites
+description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação de AEM. Usa o console Sites como base.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 Metadados e tags são fundamentais para aumentar a eficiência do AEM. Usuários, líderes e gerentes percebem a necessidade de uma estratégia holística, mas acham difícil avançar. Muitas vezes o conhecimento é dividido entre os usuários, dificultando a estratégia holística — e torna os ajustes ainda mais problemáticos.
 
 Qual é a diferença entre metadados e tags? Quais são os aspectos comerciais que devem ser considerados ao orientar sua estratégia?
-
-Um resumo mais intensivo pode ser encontrado [here](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## Qual é a finalidade dos metadados?
 
