@@ -4,10 +4,10 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: aea43a705b3959f8be26238d32b816b3953e153e
+source-git-commit: bc222867c937b7d498e7b56bebc0aac18289ad03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '830'
+ht-degree: 21%
 
 ---
 
@@ -128,6 +128,7 @@ ht-degree: 0%
       + Migração de conteúdo {#content-migration}
          + [Serviço de importação em massa](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
          + [Ferramenta Transferência de conteúdo](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+         + [Perguntas frequentes](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Resolução de problemas](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introdução](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
