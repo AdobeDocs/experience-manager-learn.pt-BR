@@ -5,9 +5,9 @@ user-guide-title: Vídeos e Tutoriais do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
 breadcrumb-title: Tutoriais do AEM Forms
 index: y
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1701'
 ht-degree: 3%
 
 ---
@@ -150,16 +150,17 @@ ht-degree: 3%
    + [Configurar fonte de dados](sign-multiple-documents/configure-data-source.md)
    + [Criar serviço OSGi](sign-multiple-documents/create-osgi-service.md)
    + [Criar fluxo de trabalho principal](sign-multiple-documents/create-main-workflow.md)
-   + [Fluxo de trabalho de atualização do status da assinatura](sign-multiple-documents/update-signature-status.md)
+   + [Atualizar fluxo de trabalho do status da assinatura](sign-multiple-documents/update-signature-status.md)
    + [Personalizar componente de resumo](sign-multiple-documents/customize-summary-component.md)
    + [Criar biblioteca do cliente](sign-multiple-documents/create-client-lib.md)
    + [Criar modelo de formulário](sign-multiple-documents/create-af-template.md)
    + [Criar formulário inicial](sign-multiple-documents/create-initial-form.md)
-   + [Criar Forms para assinatura](sign-multiple-documents/create-forms-for-signing.md)
+   + [Criar formulários para assinatura](sign-multiple-documents/create-forms-for-signing.md)
    + [Testando a solução](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Etapas do fluxo de trabalho personalizado{#custom-workflow-steps}
    + [Extrair nó do documento xml](custom-workflow-steps/extract-xml-node.md)
    + [Salvar documento no sistema de arquivos](custom-workflow-steps/write-payload-document.md)
+   + [Salvar dados enviados na variável de string](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Variáveis no fluxo de trabalho AEM{#variables-aem-workflow}
    + [Introdução - Variáveis no fluxo de trabalho](variables-aem-workflow/introduction.md)
    + [Variáveis XML](variables-aem-workflow/part1.md)
