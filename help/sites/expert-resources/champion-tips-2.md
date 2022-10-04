@@ -1,11 +1,11 @@
 ---
-title: Dicas e truques de campeão AEM Sessão 2
-description: Hierarquia do site, taxonomia e práticas recomendadas de dicas de marcação
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: Dicas e truques de campeão AEM - Modelos editáveis 2
+seo-title: AEM Champion Tips and Tricks - Editable Templates 2
+description: Saiba como AEM Campeion Greg Dimeris utilizou modelos editáveis no AEM Sites. Revise essas dicas rápidas e tente na sua instância de hoje.
+seo-description: Learn how AEM Champion Greg Dimeris leveraged editable templates in AEM Sites. Review these quick tips and then give them a try in your instance today.
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '20'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
