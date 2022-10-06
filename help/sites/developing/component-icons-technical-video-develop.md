@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Imagens PNG podem ser usadas para ícones de componentes. Para configurar uma im
 
 O PNG deve ter um plano de fundo transparente ou uma cor de plano de fundo definida como **# 707070**.
 
-As imagens PNG serão dimensionadas para **20px por 20px**. No entanto, para acomodar monitores de retina **40px** por **40px** pode ser preferível.
+As imagens PNG são dimensionadas para **20px por 20px**. No entanto, para acomodar monitores de retina **40px** por **40px** pode ser preferível.
 
 ```plain
 /apps/.../components/content/my-component

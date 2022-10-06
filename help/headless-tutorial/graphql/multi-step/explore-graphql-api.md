@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1529'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ Isso abrangerá todas as consultas a modelos criados no **Meu projeto** projeto.
 
 ### Consultar uma lista de fragmentos de conteúdo {#query-list-cf}
 
-Um requisito comum será consultar vários Fragmentos de conteúdo.
+Um requisito comum é consultar vários Fragmentos de conteúdo.
 
 1. Cole o seguinte query no painel principal (substituindo a lista de comentários):
 
@@ -211,7 +211,7 @@ Em seguida, vamos examinar como é possível filtrar os resultados para um subco
    {"name": "John Doe"}
    ```
 
-1. Execute o query, é esperado que somente **Pessoas** será retornado com o valor &quot;John Doe&quot;.
+1. Execute o query, é esperado que somente **Pessoas** é retornado com o valor &quot;John Doe&quot;.
 
    ![Usar variáveis de consulta para filtrar](assets/explore-graphql-api/using-query-variables-filter.png)
 
@@ -281,7 +281,7 @@ Também é possível consultar diretamente um único Fragmento de conteúdo. O c
 
 Quando um desenvolvedor estiver satisfeito com a consulta e os dados retornados, a próxima etapa será armazenar ou manter a consulta em AEM. [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) é o mecanismo preferido para expor a API GraphQL aos aplicativos cliente. Depois que um query é persistente, ele pode ser solicitado usando uma solicitação GET e armazenado em cache nas camadas do Dispatcher e CDN. O desempenho de consultas persistentes é muito melhor. Além dos benefícios de desempenho, as consultas persistentes garantem que dados extras não sejam expostos acidentalmente aos aplicativos clientes. Mais detalhes sobre [Consultas persistentes podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
-Em seguida, persiste dois queries simples, eles serão usados no próximo capítulo.
+Em seguida, persiste dois queries simples, eles são usados no próximo capítulo.
 
 1. No GraphiQL IDE, insira a seguinte consulta:
 
@@ -327,7 +327,7 @@ Em seguida, persiste dois queries simples, eles serão usados no próximo capít
 
    | Nome | Descrição |
    | ---------|---------- |
-   | `/graphql/execute.json` | Ponto de extremidade de consulta persistente |
+   | `/graphql/execute.json` | Ponto de acesso da consulta persistente |
    | `/my-project` | Configuração do projeto para `/conf/my-project` |
    | `/all-teams` | Nome da consulta persistente |
 

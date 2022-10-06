@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -89,15 +89,13 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
    // TODO Auto-generated catch block
    e1.printStackTrace();
   }
-
  }
-
 }
 ```
 
-O código a seguir faz parte da biblioteca do cliente referenciada pelo Formulário adaptável. Quando um usuário adiciona o anexo ao formulário adaptável, esse código será acionado. O código faz uma chamada GET para o servlet com o caminho do anexo passado no parâmetro de solicitação. Os dados recebidos da chamada de servlet são então usados para preencher o formulário adaptável.
+O código a seguir faz parte da biblioteca do cliente referenciada pelo Formulário adaptável. Quando um usuário adiciona o anexo ao formulário adaptável, esse código é acionado. O código faz uma chamada GET para o servlet com o caminho do anexo passado no parâmetro de solicitação. Os dados recebidos da chamada de servlet são então usados para preencher o formulário adaptável.
 
-```
+```javascript
 $(document).ready(function()
    {
        guideBridge.on("elementValueChanged",function(event,data){
@@ -138,7 +136,7 @@ Linha 12 - Código personalizado para obter o resolvedor de serviço. Esse pacot
 
 Linha 23 - Chame o método extractBarCode de DocumentServices para obter o objeto JSON preenchido com dados decodificados
 
-Para executá-lo em seu sistema, siga as seguintes etapas
+Para executá-lo em seu sistema, siga as seguintes etapas:
 
 1. [Baixar BarcodeService.zip](assets/barcodeservice.zip) e importar para AEM usando o gerenciador de pacotes
 1. [Baixe e instale o Pacote de serviços de documento personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)

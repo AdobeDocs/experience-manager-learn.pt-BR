@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Adicionamos uma nova guia (Listagem de ativos) no componente de pesquisa e liste
 1. Criar nó de sobreposição de **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Defina o local da sobreposição como &quot;/apps&quot;
-1. Navegue até a nova estrutura criada em **/apps/fd/fp/extensions/querybuilder/assets **
+1. Navegue até a nova estrutura criada em `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. Nesse local, crie um nó &#39;nt:unstructured&#39; para o tipo a ser registrado, nomeie o nó **arquivos mp4. Adicione as duas propriedades a seguir a este nó mp4files**
 
@@ -81,7 +81,7 @@ Adicionamos uma nova guia (Listagem de ativos) no componente de pesquisa e liste
    1. name: ./jcr:content/metadata/dc:format
    1. valor: video/mp4
 
-1. Isso significa que os ativos com a propriedade dc:format igual a video/mp4 serão considerados um tipo de ativo &quot;Vídeos Mp4&quot;. Você pode usar qualquer propriedade listada no nó &quot;jcr:content/metadata&quot; para os critérios de pesquisa
+1. Isso significa que os ativos com a propriedade dc:format igual a video/mp4 são considerados um tipo de ativo &quot;Vídeos Mp4&quot;. Você pode usar qualquer propriedade listada no nó &quot;jcr:content/metadata&quot; para os critérios de pesquisa
 
 1. **Salve seu trabalho**
 
@@ -91,4 +91,4 @@ Após executar as etapas acima, o novo tipo de ativo (Arquivos Mp4) começará a
 
 [Se tiver problemas para fazer com que isso funcione, você pode importar o seguinte pacote.](assets/assettypeskt1.zip) O pacote tem dois tipos de ativos personalizados definidos. Arquivos Mp4 e documentos do Word. Sugira que você dê uma olhada no **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Instale o pacote customeportal](assets/customportalpage.zip). Este pacote contém página de portal de exemplo. Esta página será usada na parte 2 deste tutorial
+[Instale o pacote customeportal](assets/customportalpage.zip). Este pacote contém página de portal de exemplo. Esta página é usada na parte 2 deste tutorial

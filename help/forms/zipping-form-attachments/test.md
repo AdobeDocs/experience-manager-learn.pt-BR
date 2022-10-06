@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: kt-8049
 exl-id: ce9b9203-b44c-4a52-821c-ae76e93312d2
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 0%
 * Implante o [Fluxo de trabalho SendForm .](assets/send-form-attachments-model.zip) Esse workflow usa o componente Enviar email para enviar os anexos do formulário como arquivos individuais. Configure os remetentes e os endereços de email dos recipients de acordo com suas necessidades.
 * Importe o [formulário de amostra](assets/send-list-attachments-form.zip) from [Forms E Interface Do Usuário Do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/sendlistofattachments/jcr:content?wcmmode=disabled) e adicione alguns anexos e envie o formulário.
-* O fluxo de trabalho deve ser acionado e uma notificação por email com os anexos do formulário será enviada.
+* O fluxo de trabalho deve ser acionado e uma notificação por email com os anexos do formulário é enviada.

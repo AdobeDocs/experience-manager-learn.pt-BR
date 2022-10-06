@@ -7,31 +7,31 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
 # Conversão de sequência separada por vírgulas em matriz de sequência {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Quando o formulário for baseado em um modelo de dados de formulário que tenha uma matriz de strings como parâmetro de entrada, será necessário manipular os dados de formulário adaptáveis enviados para inserir uma matriz de strings. Como exemplo, se você tiver vinculado um campo de caixa de seleção a um elemento de modelo de dados de formulário do tipo matriz de sequência de caracteres, os dados do campo de caixa de seleção estarão em um formato de sequência de caracteres separado por vírgulas. O código de amostra listado abaixo mostra como substituir a string separada por vírgulas por uma matriz de strings.
+Quando seu formulário é baseado em um modelo de dados de formulário que tem uma matriz de strings como parâmetro de entrada, é necessário manipular os dados de formulário adaptável enviados para inserir uma matriz de strings. Como exemplo, se você tiver vinculado um campo de caixa de seleção a um elemento de modelo de dados de formulário do tipo matriz de sequência de caracteres, os dados do campo de caixa de seleção estarão em um formato de sequência de caracteres separado por vírgulas. O código de amostra listado abaixo mostra como substituir a string separada por vírgulas por uma matriz de strings.
 
 ## Criar uma etapa do processo
 
-Uma etapa do processo é usada em um fluxo de trabalho AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa do processo personalizado executará o serviço OSGi
+Uma etapa do processo é usada em um fluxo de trabalho AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizado executa o serviço OSGi.
 
 Os dados enviados estão no seguinte formato. O valor do elemento businessUnits é uma string separada por vírgulas, que precisa ser convertida em uma matriz de string.
 
 ![enviar dados](assets/submitted-data-string.png)
 
-Os dados de entrada do terminal restante associado ao modelo de dados de formulário esperam uma matriz de sequências de caracteres como mostrado nesta captura de tela. O código personalizado na etapa do processo converterá os dados enviados no formato correto.
+Os dados de entrada do terminal restante associado ao modelo de dados de formulário esperam uma matriz de sequências de caracteres como mostrado nesta captura de tela. O código personalizado na etapa do processo converte os dados enviados no formato correto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Passamos o caminho do objeto JSON e o nome do elemento para a etapa do processo. O código na etapa do processo substituirá os valores separados por vírgulas do elemento em uma matriz de sequências de caracteres.
+Passamos o caminho do objeto JSON e o nome do elemento para a etapa do processo. O código na etapa do processo substitui os valores separados por vírgulas do elemento em uma matriz de sequências de caracteres.
 ![etapa do processo](assets/create-string-array.png)
 
 >[!NOTE]

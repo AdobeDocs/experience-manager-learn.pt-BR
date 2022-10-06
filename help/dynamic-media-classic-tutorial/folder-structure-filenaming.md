@@ -7,16 +7,16 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 15121896-9196-4ce0-aff2-9178563326b4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Determine sua estrutura de pastas e convenção de nomenclatura de arquivos {#folder-structure-filenaming}
 
@@ -28,11 +28,11 @@ O nome de arquivo é geralmente a decisão mais importante que você toma em rel
 
 ### Hierarquia de pastas
 
-A hierarquia de pastas é importante somente para você e sua empresa, para fins organizacionais. Seus URLs do Dynamic Media Classic só fazem referência ao nome do ativo, não à pasta ou ao caminho. Independentemente de onde você tenha carregado um arquivo, o URL será o mesmo. Isso é bem diferente de como a maioria das pessoas organiza suas imagens e conteúdo para a Web, mas com o Dynamic Media Classic não faz diferença.
+A hierarquia de pastas é importante somente para você e sua empresa, para fins organizacionais. Seus URLs do Dynamic Media Classic fazem referência apenas ao nome do ativo, não à pasta ou ao caminho. Independentemente de onde você tenha carregado um arquivo, o URL é o mesmo. Isso é bem diferente de como a maioria das pessoas organiza suas imagens e conteúdo para a Web, mas com o Dynamic Media Classic não faz diferença.
 
-Outra consideração importante é o número de ativos ou pastas a serem armazenados em cada pasta. Se muitos ativos forem armazenados em uma pasta, o desempenho diminuirá ao visualizar ativos no Dynamic Media Classic. Não armazene milhares de ativos em uma pasta. Em vez disso, desenvolva uma hierarquia organizacional com menos de 500 ativos ou pastas em uma determinada ramificação de sua hierarquia. Isso não é um requisito restrito, mas ajudará a manter tempos de resposta aceitáveis ao visualizar ou pesquisar ativos. Na verdade, a recomendação é criar hierarquias largas e superficiais em vez de estreitas e profundas.
+Outra consideração importante é o número de ativos ou pastas a serem armazenados em cada pasta. Se muitos ativos forem armazenados em uma pasta, o desempenho diminui ao visualizar ativos no Dynamic Media Classic. Não armazene milhares de ativos em uma pasta. Em vez disso, desenvolva uma hierarquia organizacional com menos de 500 ativos ou pastas em uma determinada ramificação de sua hierarquia. Isso não é um requisito restrito, mas ajuda a manter tempos de resposta aceitáveis ao visualizar ou pesquisar ativos. Na verdade, a recomendação é criar hierarquias largas e superficiais em vez de estreitas e profundas.
 
-A maneira mais fácil de criar suas pastas é fazer upload de toda a estrutura de pastas usando FTP e ativar a opção **Incluir subpastas**. Essa opção faz com que o Dynamic Media Classic recrie a estrutura de pastas no site FTP no Dynamic Media Classic.
+A maneira mais fácil de criar suas pastas é fazer upload de toda a estrutura de pastas usando o FTP e ativar a opção **Incluir subpastas**. Essa opção faz com que o Dynamic Media Classic recrie a estrutura de pastas no site FTP no Dynamic Media Classic.
 
 Queremos que você considere a estrutura de pastas antes de começar a carregar todos os arquivos, pois é muito mais fácil organizar e gerenciar os arquivos e pastas localmente em seu computador do que no Dynamic Media Classic. Por exemplo, você só pode arrastar e soltar arquivos, mas não pastas inteiras, dentro do Dynamic Media Classic.
 
@@ -46,9 +46,9 @@ Para sua estratégia de pastas, considere o que faz sentido para sua organizaç�
 
 ## Convenção de nomenclatura de arquivo
 
-A maneira como você escolhe nomear seus arquivos talvez seja a decisão inicial mais importante que você tomará em relação ao Dynamic Media Classic. Isso ocorre porque todos os ativos no Dynamic Media Classic devem ter nomes exclusivos, independentemente de onde estejam armazenados na conta.
+A maneira como você escolhe nomear seus arquivos é talvez a decisão inicial mais importante que você tomará em relação ao Dynamic Media Classic. Isso ocorre porque todos os ativos no Dynamic Media Classic devem ter nomes exclusivos, independentemente de onde estejam armazenados na conta.
 
-Todos os URLs e transações no Dynamic Media Classic são orientados por uma ID de ativo, que é o identificador exclusivo de um ativo no banco de dados. Ao fazer upload de um arquivo, a ID do ativo é criada pegando no nome do arquivo e removendo a extensão. Por exemplo, _896649.jpg_ obtém o Ativo _ID 896649_.
+Todos os URLs e transações no Dynamic Media Classic são orientados por uma ID de ativo, que é o identificador exclusivo de um ativo no banco de dados. Ao fazer upload de um arquivo, a ID do ativo é criada pegando no nome do arquivo e removendo a extensão. Por exemplo, _896649.jpg_ obter ativo _ID 896649_.
 
 Regras relacionadas às IDs de ativos:
 
@@ -56,7 +56,7 @@ Regras relacionadas às IDs de ativos:
 - Os nomes fazem distinção entre maiúsculas e minúsculas. Por exemplo, chair.jpg, chair.jpg e CHAIR.jpg criariam três IDs de ativo diferentes.
 - Como prática recomendada, as IDs de ativo não devem conter espaços em branco ou símbolos. O uso de espaços e símbolos dificulta a implementação, pois será necessário codificar esses caracteres por URL. Por exemplo, um espaço &quot; &quot; torna-se &quot;%20.&quot;
 
-Sua convenção de nomenclatura é essencialmente a forma como você se integra ao Dynamic Media Classic. Geralmente, você não integra os sistemas de back-office ao Dynamic Media Classic, pois ele é um sistema fechado. É um parceiro passivo, aguardando instruções na forma de URLs.
+Sua convenção de nomenclatura é essencialmente a forma como você se integra ao Dynamic Media Classic. Normalmente, você não integra os sistemas de back-office no Dynamic Media Classic porque é um sistema fechado. É um parceiro passivo, aguardando instruções na forma de URLs.
 
 A maioria dos usuários baseia sua convenção de nomenclatura em seus SKUs internos ou IDs de produtos, de modo que, quando uma página da Web é chamada com informações sobre esse SKU, a página pode procurar automaticamente uma imagem que tenha um nome semelhante. Se não houver conexão entre o nome do arquivo e o SKU ou ID, o sistema de back-office precisará rastrear manualmente cada nome de arquivo e uma pessoa terá que manter essas associações — em resumo, muito trabalho para as equipes de TI e de conteúdo.
 

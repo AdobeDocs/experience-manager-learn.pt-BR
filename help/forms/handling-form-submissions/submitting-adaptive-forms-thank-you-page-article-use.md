@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,15 @@ A opção Enviar para ponto de extremidade REST passa os dados preenchidos no fo
 
 \{fieldName\} = \{parameterName\}. Por exemplo, submitterName é o nome de um campo de formulário adaptável e submitter é o nome do parâmetro. Na página de agradecimento, você pode acessar o parâmetro do remetente usando request.getParameter(&quot;submitter&quot;) para obter o valor do campo de nome do remetente.
 
-submitterName=submitter
+`submitterName=submitter`
 
-Na captura de tela abaixo, enviamos o formulário adaptável para agradecer a página localizada em /content/ankyou. Para essa página de agradecimento, estamos transmitindo 3 atributos de solicitação que terão os valores do campo de formulário.
+Na captura de tela abaixo, enviamos o formulário adaptável para agradecer a página localizada em /content/ankyou. Para essa página de agradecimento, estamos transmitindo 3 atributos de solicitação que contêm os valores de campo do formulário.
 
-![thank](assets/thankyoupage.gif)
+![Página de agradecimento](assets/thankyoupage.gif)
 
-Também é possível enviar para o endpoint externo por meio do POST. Para isso, basta marcar a caixa de seleção &quot;ativar solicitação de postagem&quot; e fornecer o URL do endpoint externo. Ao enviar seu formulário, você receberá a página de agradecimento e o ponto de extremidade do POST será chamado simultaneamente.
+Também é possível enviar para o endpoint externo por meio do POST. Para isso, basta marcar a caixa de seleção &quot;ativar solicitação de postagem&quot; e fornecer o URL do endpoint externo. Ao enviar seu formulário, você recebe uma página de agradecimento e o ponto de extremidade POST é chamado simultaneamente.
 
-![captura](assets/capture.gif)
-
+![Configuração de captura](assets/capture.gif)
 
 Para testar esse recurso em seu servidor, siga as instruções mencionadas abaixo:
 

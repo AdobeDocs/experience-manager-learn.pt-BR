@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ A Linha 6 exporta o xmlData do Arquivo PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Pesquise por &quot;Filtro do referenciador do Sling&quot;
-1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código da amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações de POST para seu servidor. Instale o aplicativo Postman no seu sistema.
+1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código da amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações do POST para o seu servidor. Instale o aplicativo Postman em seu sistema.
 Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
 
 Selecione &quot;POST&quot; na lista suspensa http://localhost:4502/content/AemFormsSamples/exportdata.html Certifique-se de especificar &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especifique o nome de usuário e a senha do AEM Server Navegue até a guia &quot;Corpo&quot; e especifique os parâmetros da solicitação, conforme mostrado na imagem abaixo
@@ -76,7 +76,7 @@ A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o s
 * **Parâmetros da solicitação -**
 
    * **xdp_or_pdf_file** : O arquivo xdp ou pdf com o qual você deseja mesclar dados
-   * **xmlfile**: O arquivo de dados xml que será mesclado com xdp_or_pdf_file
+   * **xmlfile**: O arquivo de dados xml que é mesclado com xdp_or_pdf_file
    * **saveLocation**: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo c:\\documents\\sample.pdf
 
 ### Importar dados para o arquivo PDF
@@ -86,8 +86,8 @@ A embalagem contém 3 amostras. Os parágrafos a seguir explicam quando usar o s
 * **Parâmetros da solicitação:**
 
    * **pdffile** : O arquivo pdf com o qual você deseja mesclar dados
-   * **xmlfile**: O arquivo de dados xml que será unido ao arquivo pdf
-   * **saveLocation**: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo c:\\outputsample.pdf.
+   * **xmlfile**: O arquivo de dados xml que é unido ao arquivo pdf
+   * **saveLocation**: O local para salvar o documento renderizado em seu sistema de arquivos. Por exemplo `c:\\outputsample.pdf`.
 
 **Exportar dados do arquivo PDF**
 * Use o FormsService para exportar dados do arquivo PDF

@@ -11,18 +11,18 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
 # Fluxo de trabalho de temas {#theming}
 
-Neste capítulo, atualizaremos as fontes de tema de um site do Adobe Experience Manager para aplicar estilos específicos da marca. Nós aprenderemos a usar um servidor proxy para exibir uma pré-visualização das atualizações de CSS e Javascript enquanto codificamos no site ativo. Este tutorial também abordará como implantar atualizações de temas em um site AEM usando o pipeline front-end do Adobe Cloud Manager.
+Neste capítulo, atualizamos as fontes de tema de um site do Adobe Experience Manager para aplicar estilos específicos da marca. Aprendemos a usar um servidor proxy para visualizar as atualizações de CSS e Javascript conforme codificamos no site ativo. Este tutorial também abordará como implantar atualizações de temas em um site AEM usando o pipeline front-end do Adobe Cloud Manager.
 
-No final, nosso site será atualizado para incluir estilos para corresponder à marca WKND.
+No final, nosso site é atualizado para incluir estilos para corresponder à marca WKND.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -80,7 +80,7 @@ Há alguns exemplos de acordos de recompra do GitHub que podem ser usados como r
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
 * [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Utilizado como exemplo para projetos do &quot;mundo real&quot;.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de atualizar e implantar um tema para AEM!
 

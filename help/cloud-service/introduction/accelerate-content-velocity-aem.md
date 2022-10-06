@@ -3,7 +3,7 @@ title: Acelere a velocidade do conteúdo com sistemas de estilo AEM
 description: Saiba como usar AEM Style Systems para capacitar designers, autores de conteúdo e desenvolvedores em sua organização a criar e fornecer experiências na velocidade e escala que seus clientes esperam.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM Style Systems tem quatro benefícios principais:
 
 A configuração de 5 etapas é muito semelhante a um fluxo de trabalho de desenvolvimento de componente padrão.
 
-| **Liderança** | **Designer** | **Desenvolvedor/Arquiteto** | **Autor do modelo** | **Autor do conteúdo** |
+| **Liderança** | **Designer** | **Desenvolvedor/Arquiteto** | **Autor do modelo** | **Autor de conteúdo** |
 | --- | --- | --- | --- | --- |
 | Determina o conteúdo e os objetivos desse componente | Determina a apresentação visual e experimental do conteúdo | Desenvolve CSS e JS para oferecer suporte à experiência; define e fornece nomes de classe a serem usados | Configura políticas de modelo para componentes estilizados adicionando nomes de classe CSS definidos por desenvolvedores. Nomes amigáveis devem ser usados para cada estilo. | Ao criar páginas, aplica estilos conforme necessário para atingir a aparência desejada |
 
@@ -92,4 +92,4 @@ Por fim, o uso de Sistemas de Estilo é mais arte do que ciência. Conforme disc
 
 Para obter mais informações, consulte nossa [Webinar de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
 
-Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) cubo.
+Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) cubo.

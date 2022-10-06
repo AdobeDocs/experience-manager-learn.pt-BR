@@ -1,20 +1,20 @@
 ---
 title: Solução de problemas de assinatura de vários documentos
 description: Testar e solucionar problemas da solução
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
-
 
 # Teste e solução de problemas
 
@@ -27,7 +27,7 @@ O fluxo de trabalho Assinar várias Forms recebe acionadores no envio desse form
 
 ## Preencha os formulários no pacote
 
-O cliente é apresentado para preencher e assinar o primeiro formulário no pacote. Ao assinar com êxito o formulário, o cliente pode navegar até o próximo formulário do pacote. Depois que todos os formulários forem preenchidos e assinados, o cliente será apresentado com o formulário &quot;**AllComplete**&quot;.
+O cliente é apresentado para preencher e assinar o primeiro formulário no pacote. Ao assinar com êxito o formulário, o cliente pode navegar até o próximo formulário do pacote. Depois que todos os formulários forem preenchidos e assinados, o cliente será apresentado com o &quot;**Concluído**&quot;.
 
 ## Solução de problemas
 
@@ -49,15 +49,4 @@ Ao assinar com êxito um formulário no pacote, o fluxo de trabalho Atualizar st
 
 ### Não ver o formulário AllComplete
 
-Quando não há mais formulários para fazer logon no pacote, o formulário AllComplete é apresentado ao usuário.Se você não estiver vendo o formulário AllComplete , verifique o URL usado na linha 33 do arquivo GetNextFormToSign.js que faz parte da biblioteca do cliente **getnextform**.
-
-
-
-
-
-
-
-
-
-
-
+Quando não houver mais formulários para fazer logon no pacote, o formulário AllComplete será apresentado ao usuário.Se você não estiver visualizando o formulário AllComplete , verifique o URL usado na linha 33 do arquivo GetNextFormToSign.js que faz parte do **getnextform** biblioteca do cliente.

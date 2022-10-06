@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Uma política é selecionada comparando a
 * `Allowed Origin` com o `Origin` cabeçalho da solicitação
 * e `Allowed Paths` com o caminho da solicitação.
 
-A primeira política correspondente a esses valores será usada. Se nenhum for encontrado, qualquer [!DNL CORS] será negada.
+São usadas a primeira política correspondente a esses valores. Se nenhum for encontrado, qualquer [!DNL CORS] solicitação negada.
 
-Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também não serão respondidas, pois o manipulador será desativado e, portanto, efetivamente negado - desde que nenhum outro módulo do servidor responda a [!DNL CORS].
+Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também não serão respondidas, pois o manipulador está desativado e, portanto, é efetivamente negado - desde que nenhum outro módulo do servidor responda a [!DNL CORS].
 
 ### Propriedades da política
 
@@ -155,7 +155,7 @@ Para permitir o armazenamento em cache de cabeçalhos CORS, adicione a seguinte 
 
 Lembrar de **reinicie o aplicativo do servidor web** depois de fazer alterações no `dispatcher.any` arquivo.
 
-É provável que a limpeza total do cache seja necessária para garantir que os cabeçalhos sejam armazenados em cache adequadamente na próxima solicitação após uma `/cache/headers` atualização de configuração.
+É provável que a limpeza do cache seja totalmente necessária para garantir que os cabeçalhos sejam adequadamente armazenados em cache na próxima solicitação após uma `/cache/headers` atualização de configuração.
 
 ## Solução de problemas do CORS
 

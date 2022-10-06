@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ A estrutura completa do nó:
 
 ### Raiz do modelo de projeto
 
-O nó raiz do modelo de projeto será do tipo **cq:Template**. Nesse nó, você pode configurar as propriedades **jcr:title** e **jcr:description** que será exibido no Assistente para Criar Projeto. Há também uma propriedade chamada **assistente** que aponta para um formulário que preencherá as Propriedades do projeto. O valor padrão de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** O deve funcionar bem para a maioria dos casos, pois permite que o usuário preencha as propriedades básicas do Projeto e adicione membros do grupo.
+O nó raiz do modelo de projeto é do tipo **cq:Template**. Nesse nó, você pode configurar as propriedades **jcr:title** e **jcr:description** exibido no Assistente de criação de projeto. Há também uma propriedade chamada **assistente** que aponta para um formulário que preencherá as Propriedades do projeto. O valor padrão de: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** O deve funcionar bem para a maioria dos casos, pois permite que o usuário preencha as propriedades básicas do Projeto e adicione membros do grupo.
 
 *&#42;Observe que o Assistente para Criar Projeto não usa o servlet Sling POST. Em vez disso, os valores são publicados em um servlet personalizado:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Isso deve ser levado em conta ao adicionar campos personalizados.*
 
@@ -92,7 +92,7 @@ Um dos motivos mais animadores para criar um modelo de projeto personalizado é 
 
 ## Criação de um template de projeto {#creating-project-template}
 
-Como vamos copiar/configurar nós, usaremos o CRXDE Lite. Na instância de AEM local, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Como estamos copiando/configurando nós principalmente, usaremos o CRXDE Lite. Na instância de AEM local, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Comece criando uma nova pasta abaixo de `/apps/&lt;your-app-folder&gt;` nomeado `projects`. Crie outra pasta abaixo do nome `templates`.
 
@@ -288,7 +288,7 @@ Embora as Tarefas tenham algumas vantagens sobre as Etapas do participante, elas
 
 O diagrama acima descreve os requisitos de alto nível para nosso fluxo de trabalho de aprovação de amostra.
 
-O primeiro passo será criar uma Tarefa para concluir a edição de um conteúdo. Vamos permitir que o iniciador do workflow escolha o destinatário desta primeira tarefa.
+O primeiro passo é criar uma Tarefa para concluir a edição de um conteúdo. Vamos permitir que o iniciador do workflow escolha o destinatário desta primeira tarefa.
 
 Quando a primeira tarefa for concluída, o destinatário terá três opções para rotear o workflow:
 
@@ -345,7 +345,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
    A barra de progresso do fluxo de trabalho, conforme visto na Caixa de entrada de AEM.
 
-   Opcionalmente, é possível fazer upload de um **Imagem** às Propriedades da página que serão usadas como a miniatura do fluxo de trabalho quando os usuários selecionarem. As dimensões da imagem devem ter 319x319 pixels. Adicionar um **Descrição** para Propriedades da página, também será exibido quando um usuário for selecionar o fluxo de trabalho.
+   Opcionalmente, é possível fazer upload de um **Imagem** às Propriedades da página, que são usadas como a miniatura do fluxo de trabalho quando os usuários a selecionam. As dimensões da imagem devem ter 319x319 pixels. Adicionar um **Descrição** para Propriedades da página, também será exibido quando um usuário for selecionar o fluxo de trabalho.
 
 1. O processo de fluxo de trabalho Criar tarefa do projeto foi criado para criar uma tarefa como etapa no fluxo de trabalho. Somente após a conclusão da tarefa o workflow avançará. Um aspecto poderoso da etapa Criar tarefa do projeto é que ela pode ler valores de metadados de fluxo de trabalho e usá-los para criar dinamicamente a tarefa.
 
@@ -374,7 +374,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
        Due In - Days = "2"
    ```
 
-   A guia Roteamento é uma caixa de diálogo opcional que pode especificar ações disponíveis para o usuário que conclui a tarefa. Essas ações são apenas valores de string e serão salvas nos metadados do workflow. Esses valores podem ser lidos por scripts e/ou etapas de processo posteriormente no workflow para &quot;rotear&quot; dinamicamente o workflow. Com base na [metas de fluxo de trabalho](#goals-tutorial) adicionaremos três ações a esta guia:
+   A guia Roteamento é uma caixa de diálogo opcional que pode especificar ações disponíveis para o usuário que conclui a tarefa. Essas ações são apenas valores de string e são salvas nos metadados do workflow. Esses valores podem ser lidos por scripts e/ou etapas de processo posteriormente no workflow para &quot;rotear&quot; dinamicamente o workflow. Com base na [metas de fluxo de trabalho](#goals-tutorial) adicionaremos três ações a esta guia:
 
    ```shell
    Routing Tab
@@ -393,7 +393,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. Na etapa anterior, referenciamos um script de tarefa de pré-criação. Agora criaremos esse script no qual definiremos o Destinatário da Tarefa com base no valor de um valor de metadados de workflow &quot;**destinatário**&quot;. O **&quot;destinatário&quot;** será definido quando o workflow for iniciado. Também lemos os metadados do workflow para escolher dinamicamente a prioridade da tarefa lendo o &quot;**taskPriority&quot;** valor dos metadados do workflow, bem como **&quot;taskdueDate&quot; **a ser definido dinamicamente quando a primeira tarefa for devida.
+1. Na etapa anterior, referenciamos um script de tarefa de pré-criação. Agora criaremos esse script no qual definiremos o Destinatário da Tarefa com base no valor de um valor de metadados de workflow &quot;**destinatário**&quot;. O **&quot;destinatário&quot;** é definido quando o workflow é iniciado. Também lemos os metadados do workflow para escolher dinamicamente a prioridade da tarefa lendo o &quot;**taskPriority&quot;** valor dos metadados do workflow, bem como **&quot;taskdueDate&quot; **a ser definido dinamicamente quando a primeira tarefa for devida.
 
    Para fins organizacionais, criamos uma pasta abaixo da pasta do aplicativo para armazenar todos os scripts relacionados ao projeto: **/apps/aem-guides/projects-tasks/projects/scripts**. Crie um novo arquivo abaixo desta pasta chamado **&quot;start-task-config.ecma&quot;**. &#42;Observe que verifique se o caminho para seu arquivo start-task-config.ecma corresponde ao caminho definido na guia Configurações avançadas na Etapa 4.
 
@@ -418,7 +418,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Navegue de volta ao Fluxo de trabalho de aprovação de conteúdo. Arraste e solte a **OU Dividir** componente (encontrado no Sidekick , abaixo da categoria &#39;Fluxo de trabalho&#39;) sob **Iniciar tarefa** Passo. Na caixa de diálogo Comum, selecione o botão de opção para 3 ramificações. O Split OR lerá o valor dos metadados do workflow **&quot;lastTaskAction&quot;** para determinar a rota do workflow. O **&quot;lastTaskAction&quot;** será definida como um dos valores da guia Roteamento configurada na Etapa 4. Para cada uma das guias Ramificação , preencha o **Script** área de texto com os seguintes valores:
+1. Navegue de volta ao Fluxo de trabalho de aprovação de conteúdo. Arraste e solte a **OU Dividir** componente (encontrado no Sidekick , abaixo da categoria &#39;Fluxo de trabalho&#39;) sob **Iniciar tarefa** Passo. Na caixa de diálogo Comum, selecione o botão de opção para 3 ramificações. O Split OR lerá o valor dos metadados do workflow **&quot;lastTaskAction&quot;** para determinar a rota do workflow. O **&quot;lastTaskAction&quot;** é definida como um dos valores da Guia Roteamento configurada na Etapa 4. Para cada uma das guias Ramificação , preencha o **Script** área de texto com os seguintes valores:
 
    ```
    function check() {
@@ -482,7 +482,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
    Como essa é a rota de Aprovação Normal, a prioridade da tarefa é definida como Média. Além disso, damos ao grupo Aprovadores 5 dias para concluir a tarefa. O destinatário é deixado em branco na guia Tarefa, pois atribuiremos isso dinamicamente na guia Configurações avançadas . Damos ao grupo de Aprovadores duas rotas possíveis ao concluir esta tarefa: **&quot;Aprovar e publicar&quot;** se eles aprovarem o conteúdo e ele puder ser publicado e **&quot;Enviar de volta para revisão&quot;** se houver problemas que o editor original precise corrigir. O aprovador pode deixar comentários que o editor original verá se o fluxo de trabalho for retornado a ele.
 
-Anteriormente neste tutorial, criamos um Modelo de projeto que incluía uma Função de Aprovadores. Cada vez que um novo Projeto é criado a partir deste Modelo, um Grupo específico do projeto será criado para a função Aprovadores . Assim como uma Etapa do participante, uma Tarefa só pode ser atribuída a um usuário ou grupo. Queremos atribuir esta tarefa ao grupo de projetos que corresponde ao Grupo de Aprovadores. Todos os workflows iniciados de um Projeto terão metadados que mapeiam as Funções do Projeto para o grupo específico do Projeto.
+Anteriormente neste tutorial, criamos um Modelo de projeto que incluía uma Função de Aprovadores. Cada vez que um novo Projeto é criado a partir deste Modelo, um Grupo específico do projeto é criado para a função Aprovadores . Assim como uma Etapa do participante, uma Tarefa só pode ser atribuída a um usuário ou grupo. Queremos atribuir esta tarefa ao grupo de projetos que corresponde ao Grupo de Aprovadores. Todos os workflows iniciados de um Projeto terão metadados que mapeiam as Funções do Projeto para o grupo específico do Projeto.
 
 Copie e cole o seguinte código no **Script** área de texto da guia **Configurações avançadas **. Esse código lerá os metadados do workflow e atribuirá a tarefa ao grupo Aprovadores do projeto. Se não conseguir localizar o valor do grupo de aprovadores, ele recorrerá à atribuição da tarefa ao grupo Administradores.
 
@@ -635,7 +635,7 @@ A criação de um assistente personalizado pode ser muito eficiente, pois é pos
 
    ![assistente de fluxo de trabalho de aprovação de conteúdo](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. Adicionaremos um campo adicional ao assistente que será usado para definir o destinatário da primeira tarefa no fluxo de trabalho (consulte [Criar o modelo de fluxo de trabalho](#create-workflow-model): Etapa 5).
+1. Adicionaremos um campo adicional ao assistente que é usado para definir o destinatário da primeira tarefa no workflow (consulte [Criar o modelo de fluxo de trabalho](#create-workflow-model): Etapa 5).
 
    Beneath `../content-approval-start/jcr:content/items/column2/items` criar um novo nó do tipo `nt:unstructured` nomeado **&quot;atribuir&quot;**. Usaremos o componente Seletor de usuários de Projetos (que é baseado no [Componente Seletor de usuário do Granite](https://experienceleague.adobe.com/docs/)). Este campo de formulário facilita restringir a seleção de usuários e grupos somente àqueles que pertencem ao projeto atual.
 

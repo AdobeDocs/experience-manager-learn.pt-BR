@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ O caso de uso é acionar um fluxo de trabalho AEM em um envio de formulário ada
 
    * Procure por &quot;Pool de Conexões JDBC&quot;. Crie um novo Pool de Conexões JDBC do Day Commons. Especifique as configurações específicas do seu banco de dados.
 
-   * ![pool de conexão jdbc](assets/aemformstutorial-jdbc.png)
+   * ![Configuração OSGi do pool de conexões JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Especificar Detalhes do Banco de Dados
 
@@ -38,7 +38,7 @@ O caso de uso é acionar um fluxo de trabalho AEM em um envio de formulário ada
    * FormName - Nome da coluna para conter o nome do Formulário
    * ColumnName - Nome da coluna para conter os dados AF
 
-![insertdata](assets/specify-database-details.png)
+   ![Especificar a configuração OSGi dos detalhes do banco de dados](assets/specify-database-details.png)
 
 
 

@@ -12,10 +12,10 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
@@ -36,36 +36,36 @@ A página inicial do site WKND exibe atividades locais ou a melhor coisa a se fa
 
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
-1. Faça logon em [Adobe Experience Cloud](https://experience.adobe.com/), toque em __Target__, navegue até a guia __Atividades__
+1. Faça logon em [Adobe Experience Cloud](https://experience.adobe.com/), toque em __Target__, navegue até o __Atividades__ guia
 
-   + Se você não vir __Target__ no painel do Experience Cloud, verifique se a organização correta do Adobe está selecionada no alternador de organização na parte superior direita e se o usuário recebeu acesso ao Target em [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se você não vir __Target__ no painel do Experience Cloud, verifique se a organização correta do Adobe está selecionada no alternador de organizações na parte superior direita e se o usuário recebeu acesso ao Target em [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Clique no botão **Criar atividade** e escolha **Teste A/B** atividade
+1. Clique em **Criar atividade** e escolha **Teste A/B** atividade
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-1. Selecione a opção **Visual Experience Composer**, forneça o URL da atividade e clique em **Avançar**
+1. Selecione o **Visual Experience Composer** , forneça o URL da atividade e clique em **Próximo**
 
    ![URL da atividade](assets/ab-test-url.png)
 
-1. O Visual Experience Composer exibe duas guias do lado esquerdo depois que você cria uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista, usando o botão **Adicionar Experiência**.
+1. O Visual Experience Composer exibe duas guias do lado esquerdo depois que você cria uma nova atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista, usando o **Adicionar experiência** botão.
 
    ![Experiência A](assets/experience.png)
 
-1. Selecione uma imagem ou texto na página para começar a fazer modificações ou use o editor de códigos para escolher um elemento HTML.
+1. Selecione uma imagem ou texto na página para começar a fazer modificações ou use o editor de códigos para escolher e HTML element.
 
    ![Elemento](assets/select-element.png)
 
-1. Altere o texto de *Camping in Western Australia* para *Adventures of Australia*. Uma lista de alterações adicionadas a uma Experiência será exibida em Modificações. Você pode clicar em e editar o item modificado para exibir seu seletor de CSS e o novo conteúdo adicionado a ele.
+1. Alterar o texto de *Acampamento na Austrália Ocidental* para *Aventuras da Austrália*. Uma lista de alterações adicionadas a uma Experiência é exibida em Modificações. Você pode clicar em e editar o item modificado para exibir seu seletor de CSS e o novo conteúdo adicionado a ele.
 
    ![Aventuras](assets/adventures.png)
 
-1. Renomeie *Experiência A* para *Aventura*
-1. Da mesma forma, atualize o texto em *Experiência B* de *Camping in Western Australia* para *Explore the Australian Wilderness*.
+1. Renomear *Experiência A* para *Aventura*
+1. Da mesma forma, atualize o texto em *Experiência B* from *Acampamento na Austrália Ocidental* para *Explore a natureza australiana*.
 
    ![Explorar](assets/explore.png)
 
-1. Clique em **Next** para ir para o Targeting e vamos manter uma alocação de tráfego manual de 50-50 entre as duas experiências.
+1. Clique em **Próximo** para migrar para o Direcionamento e vamos manter uma alocação de tráfego Manual de 50 a 50 entre as duas experiências.
 
    ![Direcionar](assets/targeting.png)
 

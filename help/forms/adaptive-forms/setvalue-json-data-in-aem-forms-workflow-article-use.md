@@ -1,26 +1,26 @@
 ---
 title: Configuração do valor do elemento de dados Json no fluxo de trabalho do AEM Forms
-description: Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
-feature: Formulários adaptáveis
+description: Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
+feature: Adaptive Forms
 version: 6.4
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
 
-
 # Configuração do valor do elemento de dados JSON no fluxo de trabalho do AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, haverá requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
+Como um Formulário adaptável é roteado para usuários diferentes AEM fluxo de trabalho, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base nas regras comerciais de valor desse campo oculto, é possível criar para ocultar/desativar painéis ou campos apropriados.
 
 ![Configuração do valor de um elemento em dados json](assets/capture-3.gif)
 
-No AEM Forms OSGI - teremos que gravar um pacote OSGi personalizado para definir o valor do elemento de dados JSON. O pacote é fornecido como parte deste tutorial.
+No AEM Forms OSGi - devemos criar um pacote OSGi personalizado para definir o valor do elemento de dados JSON. O pacote é fornecido como parte deste tutorial.
 
 Usamos a Etapa do processo AEM fluxo de trabalho. Associamos o pacote OSGi &quot;Definir valor do elemento no Json&quot; a esta etapa do processo.
 
@@ -40,27 +40,27 @@ Para implantar os ativos em seu sistema local:
 
 * [Baixe e implante o DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Baixe e implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue . Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
+* [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
 
 * [Baixe e extraia o conteúdo do arquivo zip](assets/set-value-jsondata.zip)
    * Aponte seu navegador para [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
       * Importe e instale o SetValueOfElementInJSONDataWorkflow.zip. Este pacote tem o modelo de fluxo de trabalho de amostra e o Modelo de dados de formulário associados ao formulário.
 
-* Aponte seu navegador para [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Aponte seu navegador para [Forms e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Carregar arquivo TimeOffRequestForm.zip
    **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está no AEM Forms 6.4 ou superior**
 * Abra o [formulário](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Preencha as Datas inicial e final e envie o formulário.
-* Vá para [&quot;Caixa de entrada&quot;](http://localhost:4502/aem/inbox)
+* Ir para [&quot;Caixa de entrada&quot;](http://localhost:4502/aem/inbox)
 * Abra o formulário associado à tarefa.
 * Observe que os campos no primeiro painel estão desativados.
 * Observe que o painel para aprovar ou recusar a solicitação agora está visível.
 
 >[!NOTE]
 >
->Como estamos preenchendo previamente o Formulário adaptável usando o perfil do usuário, verifique se as [informações do perfil de usuário do administrador ](http://localhost:4502/security/users.html) estão preenchidas previamente. No mínimo, certifique-se de ter definido os valores dos campos FirstName, LastName e Email.
->Você pode ativar o log de depuração ativando o logger para com.aemforms.setvalue.core.SetValueInJson [a partir daqui](http://localhost:4502/system/console/slinglog)
+>Como estamos preenchendo previamente o Formulário adaptável usando o perfil do usuário, verifique se o administrador [informações do perfil do usuário ](http://localhost:4502/security/users.html). No mínimo, certifique-se de ter definido os valores dos campos FirstName, LastName e Email.
+>Você pode ativar o log de depuração ativando o logger para com.aemforms.setvalue.core.SetValueInJson [daqui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >

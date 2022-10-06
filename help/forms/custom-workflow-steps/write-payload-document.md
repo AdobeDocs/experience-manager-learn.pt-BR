@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-9859
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+exl-id: bab7c403-ba42-4a91-8c86-90b43ca6026c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ O processo personalizado aceita os seguintes argumentos separados por vírgula
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-O primeiro argumento é o nome do documento que você deseja salvar no sistema de arquivos. O segundo argumento é o local da pasta em que você deseja salvar o documento. Por exemplo, no caso de uso acima, o documento será gravado em c:\confirmation\ChangeBeneficiary.pdf
+O primeiro argumento é o nome do documento que você deseja salvar no sistema de arquivos. O segundo argumento é o local da pasta em que você deseja salvar o documento. Por exemplo, no caso de uso acima, o documento é gravado em `c:\confirmation\ChangeBeneficiary.pdf`
 
 A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa do processo personalizado
 ![write-payload-file-system](assets/write-payload-file-system.png)

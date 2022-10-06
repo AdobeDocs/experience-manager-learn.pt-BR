@@ -7,9 +7,10 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ As etapas a seguir foram seguidas para implementar listas suspensas em cascata n
 
 ## Criar conta do desenvolvedor
 
-Crie uma conta de desenvolvedor com [Geonames](https://www.geonames.org/login). Anote o nome de usuário. Esse nome de usuário será necessário para invocar APIs REST do geonames.org.
+Crie uma conta de desenvolvedor com [Geonames](https://www.geonames.org/login). Anote o nome de usuário. Esse nome de usuário é necessário para invocar APIs REST do geonames.org.
 
 ## Criar arquivo Swagger/OpenAPI
 
@@ -82,8 +83,3 @@ Precisamos preencher a lista suspensa Estado/província com base no país seleci
 
 Adicione 2 listas suspensas, chamadas de condados e cidades no formulário, para listar os condados e a cidade, com base no país e no estado/província selecionados.
 ![exercício](assets/cascading-drop-down-exercise.png)
-
-
-
-
-

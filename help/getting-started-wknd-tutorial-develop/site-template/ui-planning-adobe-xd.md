@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 kt: 9371
 thumbnail: 338680.jpg
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +36,7 @@ Para acompanhar os vídeos, você precisará [Adobe XD](https://www.adobe.com/pr
 
 ## O que você vai criar {#what-you-will-build}
 
-Neste capítulo, dois arquivos Adobe XD serão inspecionados, um para a variável [Modelo de site padrão](https://github.com/adobe/aem-site-template-standard) e outra para o site WKND proposto. As ações
+Neste capítulo, dois arquivos Adobe XD são inspecionados, um para a variável [Modelo de site padrão](https://github.com/adobe/aem-site-template-standard) e outra para o site WKND proposto. As ações
 
 ## Kit da interface do usuário do modelo de site padrão {#standard-site-template-uikit}
 
@@ -56,7 +57,7 @@ Etapas de alto nível:
 1. Baixe o [Arquivo de XD do artigo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 1. Inspect os designs para o modelo de Artigo da WKND.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você aprendeu como os Kits da interface do usuário do Adobe XD podem ser usados para mapear e planejar uma implementação do AEM Sites.
 
@@ -64,6 +65,6 @@ Adicional [Kits da interface do usuário disponíveis](https://www.adobe.com/pro
 
 ### Próximas etapas {#next-steps}
 
-No próximo capítulo, um novo modelo de página será criado com base no design do artigo WKND.
+No próximo capítulo, um novo modelo de página é criado com base no design do artigo WKND.
 
-Saiba como criar e modificar [Modelos de página](./page-templates.md). Entenda a relação entre um modelo de página e uma página. Saiba como configurar as políticas de um modelo de página para fornecer governança granular e consistência da marca para o conteúdo.  Um modelo bem estruturado de artigo de revista será criado com base em um modelo do Adobe XD.
+Saiba como criar e modificar [Modelos de página](./page-templates.md). Entenda a relação entre um modelo de página e uma página. Saiba como configurar as políticas de um modelo de página para fornecer governança granular e consistência da marca para o conteúdo.  Um modelo bem estruturado de artigo de revista é criado com base em um modelo do Adobe XD.

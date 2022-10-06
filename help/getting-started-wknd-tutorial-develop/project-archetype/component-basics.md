@@ -12,16 +12,16 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 # Noções básicas sobre componentes {#component-basics}
 
-Neste capítulo, exploraremos a tecnologia subjacente de um Componente de sites da Adobe Experience Manager (AEM) por meio de um `HelloWorld` exemplo. Pequenas modificações serão feitas em um componente existente, abrangendo tópicos de criação, HTL, Modelos do Sling, bibliotecas do lado do cliente.
+Neste capítulo, exploraremos a tecnologia subjacente de um Componente de sites da Adobe Experience Manager (AEM) por meio de um `HelloWorld` exemplo. Pequenas modificações são feitas em um componente existente, abrangendo tópicos de criação, HTL, Modelos do Sling, bibliotecas do lado do cliente.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -276,13 +276,13 @@ Em seguida, faremos algumas atualizações no relatório `HelloWorldModel` Model
    </div>
    ```
 
-1. Implante as alterações em uma instância local do AEM usando o plug-in do desenvolvedor do Eclipse ou usando suas habilidades Maven.
+1. Implante as alterações em uma instância local do AEM usando o plug-in do Eclipse Developer ou usando suas habilidades para Maven.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
 Bibliotecas do lado do cliente, clientlibs, abreviando, fornecem um mecanismo para organizar e gerenciar arquivos CSS e JavaScript necessários para uma implementação do AEM Sites. As bibliotecas do lado do cliente são a maneira padrão de incluir CSS e JavaScript em uma página no AEM.
 
-O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um módulo desacoplado [webpack](https://webpack.js.org/) projeto integrado ao processo de criação. Isso permite o uso de bibliotecas front-end populares, como Sass, LESS e TypeScript. O `ui.frontend` será explorado com mais profundidade na [Capítulo Bibliotecas do lado do cliente](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um módulo desacoplado [webpack](https://webpack.js.org/) projeto integrado ao processo de criação. Isso permite o uso de bibliotecas front-end populares, como Sass, LESS e TypeScript. O `ui.frontend` será explorado com mais profundidade na variável [Capítulo Bibliotecas do lado do cliente](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Em seguida, atualize os estilos de CSS para a `HelloWorld` componente.
 
@@ -328,7 +328,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
    ![Atualização de Noções básicas sobre componentes](assets/component-basics/color-update.png)
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de aprender as noções básicas do desenvolvimento de componentes no Adobe Experience Manager!
 

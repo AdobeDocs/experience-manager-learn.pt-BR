@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -23,13 +23,13 @@ Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em
 
 Para realizar esse caso de uso, precisamos fazer o seguinte.
 
-* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões do Reader estão listadas [here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar credenciais de extensões do Reader estão listadas [here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=pt-BR)
 
 
 * Você também pode se referir ao vídeo em [configuração de credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
-* Crie um serviço OSGi personalizado que renderizará e aplicará direitos de uso. O código para fazer isso está listado abaixo
+* Crie um serviço OSGi personalizado que renderiza e aplica direitos de uso. O código para fazer isso está listado abaixo
 
 ## Renderizar XDP e Aplicar direitos de uso {#render-xdp-and-apply-usage-rights}
 
@@ -83,7 +83,7 @@ Para realizar esse caso de uso, precisamos fazer o seguinte.
 
 A captura de tela a seguir mostra as propriedades de configuração expostas. A maioria dos direitos de uso comuns é exposta por meio dessa configuração.
 
-![](assets/configurationproperties.gif)
+![Propriedades de configuração](assets/configurationproperties.gif)
 
 O código a seguir mostra o código usado para criar as configurações do OSGi
 
@@ -122,7 +122,7 @@ public @interface DocSvcConfiguration {
 
 ## Criar servlet para transmitir o PDF {#create-servlet-to-stream-the-pdf}
 
-A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário será solicitado a salvar o PDF no sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
+A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário é solicitado a salvar o PDF no sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
 
 A seguir, o código do servlet. Passamos o caminho do XDP no repositório CRX para este servlet.
 

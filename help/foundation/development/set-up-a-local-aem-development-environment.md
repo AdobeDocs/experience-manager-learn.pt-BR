@@ -1,6 +1,6 @@
 ---
 title: Configurar um ambiente de desenvolvimento de AEM local
-description: 'Saiba como configurar um ambiente de desenvolvimento local para o Experience Manager. Familiarize-se com a instalação local, o Apache Maven, ambientes de desenvolvimento integrados e depuração e solução de problemas. Use Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ. '
+description: Saiba como configurar um ambiente de desenvolvimento local para o Experience Manager. Familiarize-se com a instalação local, o Apache Maven, ambientes de desenvolvimento integrados e depuração e solução de problemas. Use Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2576'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ A configuração de um ambiente de desenvolvimento local é a primeira etapa do 
 
 Quando nos referimos a uma instância de AEM local, estamos falando de uma cópia do Adobe Experience Manager que está sendo executada em uma máquina pessoal de desenvolvedor. ***Todos*** AEM desenvolvimento deve começar por escrever e executar código em uma instância de AEM local.
 
-Se você não AEM, há dois modos de execução básicos que podem ser instalados: ***Autor*** e ***Publicar***. O ***Autor*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  é o ambiente que os profissionais de marketing digital usarão para criar e gerenciar conteúdo. Ao desenvolver **more** do tempo em que você implantará o código em uma instância do autor. Isso permite criar novas páginas, bem como adicionar e configurar componentes. O AEM Sites é um CMS de criação WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
+Se você não AEM, há dois modos de execução básicos que podem ser instalados: ***Autor*** e ***Publicar***. O ***Autor*** [runmode](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  é o ambiente que os profissionais de marketing digital usarão para criar e gerenciar conteúdo. Ao desenvolver **more** do tempo em que você está implantando o código em uma instância de Autor. Isso permite criar novas páginas, bem como adicionar e configurar componentes. O AEM Sites é um CMS de criação WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
 
 É também *crítico* código de teste em relação a um local ***Publicar*** instância. O ***Publicar*** é o ambiente de AEM com o qual os visitantes do site interagirão. Enquanto a variável ***Publicar*** A instância é a mesma pilha de tecnologia que a ***Autor*** Por exemplo, há algumas distinções importantes com configurações e permissões. O código deve *always* ser testado contra um ***Publicar*** antes de ser promovida para ambientes de nível superior.
 
@@ -107,7 +107,7 @@ Todos os projetos AEM devem ser construídos a partir da versão mais recente do
 
 ## Configurar um ambiente de desenvolvimento integrado
 
-Um ambiente de desenvolvimento integrado ou IDE é um aplicativo que combina um editor de texto, suporte a sintaxe e ferramentas de compilação. Dependendo do tipo de desenvolvimento que você está fazendo, um IDE pode ser preferível ao outro. Independentemente do IDE, será importante poder fazer periodicamente ***push*** código para uma instância de AEM local para testá-la. Também será importante ocasionalmente ***pull*** configurações de uma instância de AEM local no seu projeto AEM para persistir em um sistema de gerenciamento de controle de origem como o Git.
+Um ambiente de desenvolvimento integrado ou IDE é um aplicativo que combina um editor de texto, suporte a sintaxe e ferramentas de compilação. Dependendo do tipo de desenvolvimento que você está fazendo, um IDE pode ser preferível ao outro. Independentemente do IDE, é importante poder periodicamente ***push*** código para uma instância de AEM local para testá-la. Também será importante ocasionalmente ***pull*** configurações de uma instância de AEM local no seu projeto AEM para persistir em um sistema de gerenciamento de controle de origem como o Git.
 
 Abaixo estão alguns dos IDEs mais populares que são usados com AEM desenvolvimento com vídeos correspondentes que mostram a integração com uma instância de AEM local.
 
@@ -191,7 +191,7 @@ O **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** O é um IDE poderoso para
 
 ## Resolução de problemas
 
-***Ajuda!*** Meu código não está funcionando! Como em todo o desenvolvimento, haverá momentos (provavelmente muitos), em que o código não está funcionando como esperado. AEM é uma plataforma poderosa, mas com grande poder.. vem grande complexidade. Abaixo estão alguns pontos de partida de alto nível quando se trata de solucionar problemas e rastrear problemas (mas longe de uma lista exaustiva de coisas que podem dar errado):
+***Ajuda!*** Meu código não está funcionando! Como em todo o desenvolvimento, há momentos (provavelmente muitos) em que seu código não está funcionando como esperado. AEM é uma plataforma poderosa, mas com grande poder.. vem grande complexidade. Abaixo estão alguns pontos de partida de alto nível quando se trata de solucionar problemas e rastrear problemas (mas longe de uma lista exaustiva de coisas que podem dar errado):
 
 ### Verificar implantação do código
 

@@ -9,9 +9,9 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3081'
+source-wordcount: '3066'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## O que você vai criar {#what-you-will-build}
 
-Nesta parte do tutorial, você criará um novo Modelo de página de artigo que pode ser usado para criar páginas de novos artigos e se alinha a uma estrutura comum. O modelo da página de artigo será baseado em designs e um kit de interface do usuário produzido no AdobeXD. Este capítulo só é focado na construção da estrutura ou esqueleto do modelo. Nenhum estilo será implementado, mas o modelo e as páginas serão funcionais.
+Nesta parte do tutorial, você criará um novo Modelo de página de artigo que pode ser usado para criar páginas de novos artigos e se alinha a uma estrutura comum. O modelo da página de artigo é baseado em designs e um kit de interface do usuário produzido no AdobeXD. Este capítulo só é focado na construção da estrutura ou esqueleto do modelo. Nenhum estilo é implementado, mas o modelo e as páginas são funcionais.
 
 ![Design da página do artigo e versão sem estilo](assets/pages-templates/what-you-will-build.png)
 
@@ -81,13 +81,13 @@ Na maioria dos casos, o planejamento de um novo site começa com modelos e desig
 
 ## Criar o modelo da página de artigo
 
-Ao criar uma página, você deve selecionar um modelo, que será usado como a base de criação da nova página. O modelo define a estrutura da página resultante, o conteúdo inicial e os componentes permitidos.
+Ao criar uma página, você deve selecionar um modelo, que é usado como a base para criar a nova página. O modelo define a estrutura da página resultante, o conteúdo inicial e os componentes permitidos.
 
 Há três áreas principais de [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
-1. **Estrutura** - define os componentes que fazem parte do modelo. Eles não serão editáveis pelos autores de conteúdo.
-1. **Conteúdo inicial** - define os componentes com os quais o modelo começará, eles podem ser editados e/ou excluídos pelos autores de conteúdo
-1. **Políticas** - define configurações sobre como os componentes se comportarão e quais opções os autores terão disponíveis.
+1. **Estrutura** - define os componentes que fazem parte do modelo. Eles não são editáveis por autores de conteúdo.
+1. **Conteúdo inicial** - define os componentes com os quais o modelo começa, eles podem ser editados e/ou excluídos pelos autores de conteúdo
+1. **Políticas** - define configurações sobre como os componentes se comportam e quais opções os autores terão disponíveis.
 
 Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local de AEM. Siga as etapas do vídeo abaixo:
 
@@ -101,12 +101,12 @@ Etapas de alto nível para o vídeo acima:
 1. Mudar para **Estrutura** modo.
 1. Adicione um **Fragmento de experiência** componente para agir como o **Cabeçalho** na parte superior do modelo.
    * Configurar o componente para apontar para `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Defina a política como **Cabeçalho da página** e assegurar que **Elemento padrão** está definida como `header`. O `header`será direcionado com CSS no próximo capítulo.
+   * Defina a política como **Cabeçalho da página** e assegurar que **Elemento padrão** está definida como `header`. O `header`O elemento é direcionado com CSS no próximo capítulo.
 1. Adicione um **Fragmento de experiência** componente para agir como o **Rodapé** na parte inferior do modelo.
    * Configurar o componente para apontar para `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Defina a política como **Rodapé da página** e assegurar que **Elemento padrão** está definida como `footer`. O `footer` será direcionado com CSS no próximo capítulo.
+   * Defina a política como **Rodapé da página** e assegurar que **Elemento padrão** está definida como `footer`. O `footer` O elemento é direcionado com CSS no próximo capítulo.
 1. Bloqueie o **main** contêiner que foi incluído quando o modelo foi criado inicialmente.
-   * Defina a política como **Página principal** e assegurar que **Elemento padrão** está definida como `main`. O `main` será direcionado com CSS no próximo capítulo.
+   * Defina a política como **Página principal** e assegurar que **Elemento padrão** está definida como `main`. O `main` O elemento é direcionado com CSS no próximo capítulo.
 1. Adicione um **Imagem** para o **main** contêiner.
    * Desbloqueie o **Imagem** componente.
 1. Adicione um **Caminho** sob o **Imagem** no contêiner principal.
@@ -130,9 +130,9 @@ Etapas de alto nível para o vídeo acima:
 ### Configurações de conteúdo inicial
 
 1. Mudar para **Conteúdo inicial** modo.
-1. Adicione um **Título** para o **Contêiner de conteúdo**. Isso atuará como o título do artigo. Quando deixado em branco, ele exibirá automaticamente o Título da página atual.
+1. Adicione um **Título** para o **Contêiner de conteúdo**. Atua como o título do Artigo. Quando deixado em branco, ele exibirá automaticamente o Título da página atual.
 1. Adicionar um segundo **Título** sob o primeiro componente de Título .
-   * Configure o componente com o texto: &quot;Por autor&quot;. Será um espaço reservado para texto.
+   * Configure o componente com o texto: &quot;Por autor&quot;. Este é um espaço reservado para texto.
    * Defina o tipo a ser `H4`.
 1. Adicione um **Texto** sob o **Por autor** Componente de título.
 1. Adicione um **Título** para o **Contêiner do painel lateral**.
@@ -348,13 +348,13 @@ As próximas etapas serão executadas usando o VSCode IDE usando o [Sincronizaç
    </workspaceFilter>
    ```
 
-   O `filter.xml` O arquivo é responsável por identificar os caminhos dos nós que serão instalados com o pacote. Observe que `mode="merge"` em cada um dos filtros que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código faça isso **not** substituir conteúdo. Consulte a [Documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
+   O `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe que `mode="merge"` em cada um dos filtros que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código faça isso **not** substituir conteúdo. Consulte a [Documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
 
    Comparar `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.
 
    >[!WARNING]
    >
-   > Para garantir implantações consistentes para o site de referência WKND, algumas ramificações do projeto são configuradas de modo que `ui.content` substituirá quaisquer alterações no JCR. Isso é por design, ou seja, para Ramificações de solução, já que o código/estilos serão gravados para políticas específicas.
+   > Para garantir implantações consistentes para o site de referência WKND, algumas ramificações do projeto são configuradas de modo que `ui.content` substitui todas as alterações no JCR. Isso é por design, ou seja, para Ramificações de solução, já que os códigos/estilos são escritos para políticas específicas.
 
 ## Parabéns.  {#congratulations}
 

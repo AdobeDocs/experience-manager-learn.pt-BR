@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Armazenamento do esquema JSON no banco de dados {#storing-json-schema-in-database}
 
 
-Para consultar os dados enviados, é necessário armazenar o esquema JSON associado ao formulário enviado. O esquema JSON será usado no construtor de consultas para criar a consulta.
+Para consultar os dados enviados, é necessário armazenar o esquema JSON associado ao formulário enviado. O esquema JSON é usado no construtor de consultas para criar a consulta.
 
 Quando um Formulário adaptável é enviado, verificamos se o esquema JSON associado está no banco de dados. Se o schema JSON não existir, buscamos o schema JSON e armazenamos o schema na tabela apropriada. Também associamos o nome do formulário ao esquema JSON. A captura de tela a seguir mostra a tabela onde os esquemas JSON são armazenados.
 

@@ -7,20 +7,20 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
 
 # Preenchimento prévio do formulário adaptável usando o perfil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Nessa parte, preencheremos previamente o Formulário adaptável com informações de perfil obtidas do ACS. A AEM Forms tem esse poderoso recurso de preencher previamente formulários adaptáveis.
+Nessa parte, preenchemos previamente o Formulário adaptável com informações de perfil obtidas do ACS. A AEM Forms tem esse poderoso recurso de preencher previamente formulários adaptáveis.
 
 Para saber mais sobre como preencher previamente formulários adaptáveis, leia este link [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Para pré-preencher o Adaptive Form buscando dados do ACS, assumiremos que há perfil no ACS que tem o mesmo email que o usuário conectado AEM. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email é csimms@adobe.com.
+Para pré-preencher o Adaptive Form buscando dados do ACS, supomos que exista um perfil no ACS que tenha o mesmo email do usuário conectado AEM. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email é csimms@adobe.com.
 
 As etapas a seguir são necessárias para buscar informações de perfil do ACS usando a REST API
 
@@ -28,7 +28,7 @@ As etapas a seguir são necessárias para buscar informações de perfil do ACS 
 * Exchange JWT para Token de Acesso
 * Faça uma chamada REST para ACS e busque o perfil por email
 * Criar documento XML com as informações de perfil
-* Retornar InputStream do documento XML que será consumido pelo AEM Forms
+* Retornar InputStream do documento XML consumido pelo AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 

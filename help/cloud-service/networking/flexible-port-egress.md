@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 1%
+source-wordcount: '1076'
+ht-degree: 4%
 
 ---
 
@@ -52,7 +52,7 @@ Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. 
 
 Comece ativando o acesso flexível da porta AEM as a Cloud Service.
 
-1. Primeiro, determine a região em que a Rede avançada será configurada usando a API do Cloud Manager. [listRegiões](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. O `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
+1. Primeiro, determine a região em que a Rede avançada está configurada usando a API do Cloud Manager [listRegiões](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. O `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
 
    __solicitação HTTP listRegiões__
 

@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: d0576962-a86a-4742-8635-02be1ec3243f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1227'
 ht-degree: 1%
 
 ---
-
 
 # Integração de aplicativos do cliente
 
@@ -76,7 +76,7 @@ Para acelerar o tutorial, é fornecido um aplicativo React JS inicial.
 
    ![POST GraphQL](assets/client-application-integration/post-query-graphql.png)
 
-   Você deve ver um `POST` ao ponto de extremidade GraphQL. Exibir o `Payload`, você pode ver a consulta GraphQL completa que foi enviada. Nas próximas seções, o aplicativo será atualizado para uso **persistente** consultas.
+   Você deve ver um `POST` ao ponto de extremidade GraphQL. Exibir o `Payload`, você pode ver a consulta GraphQL completa que foi enviada. Nas próximas seções, o aplicativo é atualizado para uso **persistente** consultas.
 
 
 ## Introdução
@@ -287,4 +287,4 @@ A versão final do aplicativo pode ser baixada e usada:
 
 ## Parabéns
 
-Parabéns! Agora você concluiu a integração e a implementação das consultas persistentes no aplicativo WKND de amostra.
+Parabéns. Agora você concluiu a integração e a implementação das consultas persistentes no aplicativo WKND de amostra.

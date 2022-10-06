@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Para obter acesso ao App Builder, cadastre-se na visualização.
 
 1. [Inscreva-se para a avaliação do App Builder](https://developer.adobe.com/app-builder/trial/).
 1. Aguarde aproximadamente 2 a 10 dias até ser notificado por email de que você está provisionado antes de continuar com o tutorial.
-   + Se não tiver certeza se foi provisionado, continue com as próximas etapas e se não conseguir criar um __App Builder__ projeto em [Console do desenvolvedor do Adobe](https://developer.adobe.com/console/) você ainda não foi provisionado.
+   + Se não tiver certeza se foi provisionado, continue com as próximas etapas e se não conseguir criar um __App Builder__ projeto em [Console do Adobe Developer](https://developer.adobe.com/console/) você ainda não foi provisionado.
 
 ## armazenamento na nuvem
 
@@ -78,7 +78,7 @@ _Click-through do provisionamento do Armazenamento Azure Blob (Sem áudio)_
 1. Toque __+ Adicionar__ para criar uma nova conta de armazenamento de blob
 1. Crie um novo __Grupo de recursos__ conforme necessário, por exemplo: `aem-as-a-cloud-service`
 1. Forneça uma __Nome da conta de armazenamento__, por exemplo: `aemguideswkndassetcomput`
-   + O __Nome da conta de armazenamento__ será usado para [configuração do armazenamento em nuvem](../develop/environment-variables.md) para a ferramenta de desenvolvimento de Assets compute local
+   + O __Nome da conta de armazenamento__  usado para [configuração do armazenamento em nuvem](../develop/environment-variables.md) na Ferramenta de desenvolvimento de Assets compute local
    + O __Chaves de acesso__ associados à conta de armazenamento também são necessários quando [configuração do armazenamento em nuvem](../develop/environment-variables.md).
 1. Deixe tudo o resto como padrão e toque no __Revisar + criar__ botão
    + Como opção, selecione a __localização__ perto de você.

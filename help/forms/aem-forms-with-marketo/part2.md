@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ MarketoService marketoService;
 
 O MarketoAuthenticationService implementa a interface IAuthentication. Essa interface faz parte do SDK do cliente da AEM Forms. O serviço obtém o token de acesso e insere o token no HttpHeader do AuthenticationDetails. Depois que os HttpHeaders do objeto AuthenticationDetails são preenchidos, o objeto AuthenticationDetails é retornado para a camada Dermis do Modelo de Dados de Formulário.
 
-Preste atenção à string retornada pelo método getAuthenticationType. Essa string será usada ao configurar sua fonte de dados.
+Preste atenção à string retornada pelo método getAuthenticationType. Essa string é usada ao configurar sua fonte de dados.
 
 ### Obter Token de Acesso
 

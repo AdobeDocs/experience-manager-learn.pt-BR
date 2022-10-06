@@ -1,6 +1,6 @@
 ---
 title: Depurar um trabalhador do Asset compute
-description: Os trabalhadores do Asset compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até registros de ativação no Adobe I/O Runtime iniciados do AEM como um Cloud Service.
+description: Os trabalhadores do Asset compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até registros de ativação no Adobe I/O Runtime iniciados AEM as a Cloud Service.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,30 +13,30 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # Depurar um trabalhador do Asset compute
 
-Os trabalhadores do Asset compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até registros de ativação no Adobe I/O Runtime iniciados do AEM como um Cloud Service.
+Os trabalhadores do Asset compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até registros de ativação no Adobe I/O Runtime iniciados AEM as a Cloud Service.
 
 ## Logs
 
-A forma mais básica de depurar os trabalhadores do Asset compute usa instruções `console.log(..)` tradicionais no código do trabalhador. O `console` objeto JavaScript é um objeto implícito e global, de modo que não há necessidade de importá-lo ou exigi-lo, pois está sempre presente em todos os contextos.
+A forma mais básica de depurar os trabalhadores do Asset compute usa o modo tradicional `console.log(..)` no código do trabalhador. O `console` O objeto JavaScript é um objeto implícito e global, de modo que não é necessário importá-lo ou exigi-lo, pois está sempre presente em todos os contextos.
 
 Essas instruções de log estão disponíveis para revisão de forma diferente com base em como o trabalhador do Asset compute é executado:
 
-+ A partir de `aio app run`, os registros imprimem para o padrão e os [Logs de Ativação da Ferramenta de Desenvolvimento](../develop/development-tool.md)
++ De `aio app run`, os logs são impressos para o padrão e a variável [Ferramentas de desenvolvimento](../develop/development-tool.md) Logs de ativação
    ![aplicativo aio executar console.log(..)](./assets/debug/console-log__aio-app-run.png)
-+ De `aio app test`, registra a impressão em `/build/test-results/test-worker/test.log`
++ De `aio app test`, logs imprimem para `/build/test-results/test-worker/test.log`
    ![aio app test console.log(..)](./assets/debug/console-log__aio-app-test.png)
-+ Usando `wskdebug`, as instruções de log são impressas no Console de Depuração do Código VS (Exibir > Console de Depuração), padrão
++ Usando `wskdebug`, registra instruções impressas no Console de Depuração do Código VS (Exibir > Console de Depuração), padrão
    ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
-+ Usando `aio app logs`, as instruções de log são impressas na saída do log de ativação
++ Usando `aio app logs`, instruções de log são impressas na saída do log de ativação
 
 ## Depuração remota via depurador anexado
 
@@ -44,27 +44,27 @@ Essas instruções de log estão disponíveis para revisão de forma diferente c
 >
 >Use o Microsoft Visual Studio Code 1.48.0 ou superior para compatibilidade com wskdebug
 
-O módulo [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm suporta a anexação de um depurador aos trabalhadores do Asset compute, incluindo a capacidade de definir pontos de interrupção no Código VS e percorrer o código.
+O [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) O módulo npm suporta a anexação de um depurador aos trabalhadores do Asset compute, incluindo a capacidade de definir pontos de interrupção no Código VS e percorrer o código.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
 
 _Click-through da depuração de um trabalhador do Asset compute usando wskdebug (Sem áudio)_
 
-1. Verifique se os módulos [wskdebug](../set-up/development-environment.md#wskdebug) e [ngrok](../set-up/development-environment.md#ngork) npm estão instalados
-1. Verifique se [Docker Desktop e as imagens Docker de suporte](../set-up/development-environment.md#docker) estão instaladas e em execução
+1. Garantir [wskdebug](../set-up/development-environment.md#wskdebug) e [ngrok](../set-up/development-environment.md#ngork) módulos npm estão instalados
+1. Garantir [Docker Desktop e as imagens Docker de suporte](../set-up/development-environment.md#docker) estão instalados e em execução
 1. Feche todas as instâncias em execução ativas da Ferramenta de desenvolvimento.
-1. Implante o código mais recente usando `aio app deploy` e registre o nome da ação implantada (nome entre `[...]`). Isso será usado para atualizar o `launch.json` na etapa 8.
+1. Implante o código mais recente usando `aio app deploy`  e registre o nome da ação implantada (nome entre `[...]`). Isso é usado para atualizar a variável `launch.json` na etapa 8.
 
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
 
 
-1. Inicie uma nova instância da Ferramenta de Desenvolvimento de Assets compute usando o comando `npx adobe-asset-compute devtool`
+1. Inicie uma nova instância da Ferramenta de desenvolvimento de Assets compute usando o comando `npx adobe-asset-compute devtool`
 1. No Código VS, toque no ícone Depurar na navegação à esquerda
-   + Se solicitado, toque em __criar um arquivo launch.json > Node.js__ para criar um novo arquivo `launch.json`.
-   + Caso contrário, toque no ícone __Gear__ à direita da lista suspensa __Iniciar programa__ para abrir o `launch.json` existente no editor.
-1. Adicione a seguinte configuração de objeto JSON à matriz `configurations`:
+   + Se solicitado, toque em __criar um arquivo launch.json > Node.js__ para criar um novo `launch.json` arquivo.
+   + Caso contrário, toque no botão __Engrenagem__ à direita do __Programa Launch__ lista suspensa para abrir o `launch.json` no editor.
+1. Adicione a seguinte configuração de objeto JSON ao `configurations` array:
 
    ```json
    {
@@ -86,22 +86,22 @@ _Click-through da depuração de um trabalhador do Asset compute usando wskdebug
    }
    ```
 
-1. Selecione o novo __wskdebug__ no menu suspenso
-1. Toque no botão verde __Executar__ à esquerda da lista suspensa __wskdebug__
-1. Abra `/actions/worker/index.js` e toque à esquerda dos números de linha para adicionar pontos de quebra 1. Navegue até a janela do navegador Web da Ferramenta de Desenvolvimento de Asset compute aberta na etapa 6
-1. Toque no botão __Executar__ para executar o trabalhador
-1. Navegue de volta ao Código VS, até `/actions/worker/index.js` e percorra o código
-1. Para sair da Ferramenta de Desenvolvimento Depurável, toque em `Ctrl-C` no terminal que executou o comando `npx adobe-asset-compute devtool` na etapa 6
+1. Selecione o novo __wskdebug__ na lista suspensa
+1. Toque em verde __Executar__ à esquerda de __wskdebug__ lista suspensa
+1. Abrir `/actions/worker/index.js` e toque à esquerda dos números de linha para adicionar pontos de quebra 1. Navegue até a janela do navegador Web da Ferramenta de Desenvolvimento de Asset compute aberta na etapa 6
+1. Toque no __Executar__ botão para executar o trabalhador
+1. Navegue de volta para o Código VS, para `/actions/worker/index.js` e percorra o código
+1. Para sair da Ferramenta de desenvolvimento que pode ser depurada, toque em `Ctrl-C` no terminal executado `npx adobe-asset-compute devtool` comando na etapa 6
 
 ## Acesso aos logs do Adobe I/O Runtime{#aio-app-logs}
 
-[O AEM as a Cloud Service potencializa os trabalhadores do Asset compute por meio de ](../deploy/processing-profiles.md) Perfis de processamento, chamando-os diretamente no Adobe I/O Runtime. Como essas invocações não envolvem o desenvolvimento local, suas execuções não podem ser depuradas usando ferramentas locais, como a Ferramenta de desenvolvimento de Assets compute ou a wskdebug. Em vez disso, a CLI do Adobe I/O pode ser usada para buscar logs do trabalhador executado em um espaço de trabalho específico no Adobe I/O Runtime.
+[AEM as a Cloud Service aproveita os trabalhadores do Asset compute por meio de Perfis de processamento](../deploy/processing-profiles.md) chamando-os diretamente no Adobe I/O Runtime. Como essas invocações não envolvem o desenvolvimento local, suas execuções não podem ser depuradas usando ferramentas locais, como a Ferramenta de desenvolvimento de Assets compute ou a wskdebug. Em vez disso, a CLI do Adobe I/O pode ser usada para buscar logs do trabalhador executado em um espaço de trabalho específico no Adobe I/O Runtime.
 
-1. Verifique se as [variáveis de ambiente específicas do espaço de trabalho](../deploy/runtime.md) estão definidas por `AIO_runtime_namespace` e `AIO_runtime_auth`, com base no espaço de trabalho que requer depuração.
+1. Verifique se a [variáveis de ambiente específicas do workspace](../deploy/runtime.md) são definidos via `AIO_runtime_namespace` e `AIO_runtime_auth`, com base no espaço de trabalho que requer depuração.
 1. Na linha de comando, execute `aio app logs`
-   + Se o espaço de trabalho estiver com tráfego intenso, expanda o número de logs de ativação por meio do sinalizador `--limit` :
+   + Se o espaço de trabalho estiver com tráfego intenso, expanda o número de logs de ativação por meio do `--limit` sinalizador:
       `$ aio app logs --limit=25`
-1. Os registros de ativações mais recentes (até o `--limit` fornecido) serão retornados como a saída do comando para revisão.
+1. O mais recente (até o `--limit`) os logs de ativações são retornados como a saída do comando para revisão.
 
    ![logs do aplicativo aio](./assets/debug/aio-app-logs.png)
 

@@ -1,20 +1,20 @@
 ---
 title: Criar serviço OSGi
 description: Crie o serviço OSGi para armazenar os formulários a serem assinados
-feature: Fluxo de trabalho
+feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
-
 
 # Criar serviço OSGi
 
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Atualizar Status da Assinatura
 
-A conclusão bem-sucedida da cerimônia de assinatura aciona um fluxo de trabalho AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados da linha identificada pelo guid e pela ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável será preenchido com esses dados e o valor do elemento de dados assinado nos dados xml será usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa do processo personalizado.
+A conclusão bem-sucedida da cerimônia de assinatura aciona um fluxo de trabalho AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados da linha identificada pelo guid e pela ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável é preenchido com esses dados e o valor do elemento de dados assinado nos dados xml é usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa do processo personalizado.
 
 
 ```java
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obter o próximo formulário para assinar
 
-O código a seguir foi usado para obter o próximo formulário para assinatura de uma determinada customerID com status 0. Se a consulta sql não retornar nenhuma linha, retornamos a string **&quot;AllComplete&quot;**, que indica que não há mais formulários para assinatura para a id do cliente em questão.
+O código a seguir foi usado para obter o próximo formulário para assinatura de uma determinada customerID com status 0. Se a consulta sql não retornar nenhuma linha, retornamos a string **&quot;AllComplete&quot;** que indica que não há mais formulários para assinar a determinada ID do cliente.
 
 ```java
 @Override
@@ -202,6 +202,6 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## Ativos
+## Assets
 
-O pacote OSGi com os serviços mencionados acima pode ser [baixado aqui](assets/sign-multiple-forms.jar)
+O pacote OSGi com os serviços acima mencionados pode ser [baixado aqui](assets/sign-multiple-forms.jar)

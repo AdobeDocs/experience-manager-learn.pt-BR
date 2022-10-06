@@ -9,11 +9,11 @@ activity: implement
 topic: Development
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 1%
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -23,20 +23,22 @@ Normalmente, os clientes desejam exportar os dados de formulário enviados no fo
 
 >[!NOTE]
 >
->Essa amostra funciona somente com formulários adaptáveis não baseados no esquema ou no modelo de dados de formulário
+>Este exemplo funciona somente com o Adaptive Forms não baseado no Esquema ou no Modelo de dados de formulário
 
-![Tabela ](assets/tablestructure.PNG)
-EstruturaComo você pode ver, o nome do esquema é aemformstutorial.Dentro desse esquema estão as tabelas enviadas com as seguintes colunas definidas
+![Estrutura da tabela](assets/tablestructure.PNG)
+Como você pode ver, o nome do esquema é aemformstutorial.Dentro desse esquema estão os envios de formulários de tabela com as seguintes colunas definidas
 
-* formdata: Essa coluna manterá os dados do formulário enviados
-* formname: Essa coluna terá o nome do formulário enviado
+* formdata: Esta coluna contém os dados de formulário enviados
+* formname: Esta coluna contém o nome do formulário submetido
 * id: Esta é a chave primária e está definida para incremento automático
 
 O nome da tabela e os nomes de duas colunas são expostos como propriedades de configuração OSGi, conforme mostrado na captura de tela abaixo:
 ![osgi-configuration](assets/configuration.PNG)
-O código lê esses valores e constrói a consulta SQL apropriada para executar. Por exemplo, a consulta a seguir será executada com base nos valores acima
-**SELECIONE formdata FROM aemformstutorial.formsubmit onde formname=timeoffrequestform**
-Na consulta acima, o nome do formulário (timeoffrequestform) será passado como parâmetro de solicitação para o servlet.
+O código lê esses valores e constrói a consulta SQL apropriada para executar. Por exemplo, a consulta a seguir é executada com base nos valores acima
+
+`SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
+
+Na consulta acima, o nome do formulário (timeoffrequestform) é passado como parâmetro de solicitação para o servlet.
 
 ## **Criar serviço OSGi**
 
@@ -44,7 +46,7 @@ O serviço OSGI a seguir foi criado para exportar os dados enviados no formato C
 
 * Linha 37: Estamos acessando a fonte de dados agrupada da conexão Apache Sling.
 
-* Linha 89: Este é o ponto de entrada para o serviço. O método `getCSVFile(..)` assume formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome de formulário fornecido.
+* Linha 89: Este é o ponto de entrada para o serviço.O método `getCSVFile(..)` O assume o formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome do formulário especificado.
 
 >[!NOTE]
 >
@@ -264,7 +266,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-A seguir, o código do servlet que chama o método `getCSVFile(..)` do serviço. O serviço retorna o objeto StringBuffer, que é transmitido de volta ao aplicativo chamador
+A seguir, o código do servlet que chama a variável `getCSVFile(..)` do serviço. O serviço retorna o objeto StringBuffer, que é transmitido de volta ao aplicativo chamador
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -306,6 +308,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implantar no servidor
 
-* Importe o [arquivo SQL](assets/formsubmissions.sql) no servidor MySQL usando o MySQL Workbench. Isso cria um schema chamado **aemformstutorial** e uma tabela chamada **formenvios** com alguns dados de amostra.
-* Implante [Pacote OSGi](assets/store-export.jar) usando o console da Web Felix
+* Importe o [Arquivo SQL](assets/formsubmissions.sql) no servidor MySQL usando o MySQL Workbench. Isso cria um schema chamado **aemformstutorial** e tabela chamada **pedidos** com alguns dados de amostra.
+* Implantar [Pacote OSGi](assets/store-export.jar) usando o console da Web Felix
 * [Para obter Envio de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Você deve enviar o arquivo CSV para você.

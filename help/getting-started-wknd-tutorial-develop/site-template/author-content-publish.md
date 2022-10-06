@@ -11,10 +11,10 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
+source-wordcount: '1330'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ Normalmente, um site é dividido em páginas para formar uma experiência com v�
 
 1. Escolha a **Página do artigo** modelo e clique em **Próximo**.
 
-   As páginas em AEM são criadas com base em um modelo de página. Os Modelos de página serão explorados com mais detalhes na variável [Modelos de página](page-templates.md) capítulo.
+   As páginas em AEM são criadas com base em um modelo de página. Os Modelos de página são explorados detalhadamente na variável [Modelos de página](page-templates.md) capítulo.
 
 1. Em **Propriedades** insira um **Título** do &quot;Hello World&quot;.
 1. Defina as **Nome** a `hello-world` e clique em **Criar**.
@@ -87,7 +87,7 @@ Em seguida, crie alguns componentes usando o Editor de páginas de AEM.
 
    ![Adicionar ativo à caixa de diálogo](assets/author-content-publish/add-asset-dialog.png)
 
-1. Observe que há componentes na página, como o **Título**, **Navegação**, **Pesquisar** que são fixas. Essas áreas são configuradas como parte do Modelo de página e não podem ser modificadas em uma página individual. Isso será mais explorado no próximo capítulo.
+1. Observe que há componentes na página, como o **Título**, **Navegação**, **Pesquisar** que são fixas. Essas áreas são configuradas como parte do Modelo de página e não podem ser modificadas em uma página individual. Isso é mais explorado no próximo capítulo.
 
 Sinta-se à vontade para experimentar alguns dos outros componentes. Documentação sobre cada [O Componente principal pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Uma série detalhada de vídeos sobre [A criação de página pode ser encontrada aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
@@ -165,7 +165,7 @@ Em seguida, navegue até o serviço Publicar para exibir as alterações.
 
    Em **Segmentos do ambiente** você pode encontrar links para o **Autor** e **Publicar** serviços.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar e publicar as mudanças no seu site AEM!
 

@@ -10,10 +10,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 2%
+source-wordcount: '1082'
+ht-degree: 3%
 
 ---
 
@@ -28,21 +28,21 @@ Saiba como gerar um projeto Adobe Experience Manager (AEM) Maven como ponto de p
 
 ## O que você vai criar {#what-build}
 
-Neste capítulo, um novo projeto de AEM será gerado, com base no [AEM Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype). O projeto de AEM será inicializado com um ponto de partida muito simples para o SPA React.
+Neste capítulo, um novo projeto de AEM é gerado, com base na variável [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype). O projeto de AEM é inicializado com um ponto de partida muito simples para o React SPA.
 
-**O que é um projeto do Maven?** -  [Apache ](https://maven.apache.org/) Mavenis é uma ferramenta de gerenciamento de software para construir projetos. *Todas as implementações do Adobe Experience* Manager usam projetos Maven para criar, gerenciar e implantar código personalizado no AEM.
+**O que é um projeto do Maven?** - [Apache Maven](https://maven.apache.org/) O é uma ferramenta de gerenciamento de software para criar projetos. *Todos os Adobe Experience Manager* As implementações do usam os projetos do Maven para criar, gerenciar e implantar código personalizado no AEM.
 
-**O que é um arquétipo Maven?** - Um  [arquétipo ](https://maven.apache.org/archetype/index.html) Maven é um modelo ou padrão para gerar novos projetos. O arquétipo AEM Projeto nos permite gerar um novo projeto com um namespace personalizado e incluir uma estrutura de projeto que segue as práticas recomendadas, acelerando muito nosso projeto.
+**O que é um arquétipo Maven?** - A [Arquétipo de Maven](https://maven.apache.org/archetype/index.html) é um modelo ou padrão para gerar novos projetos. O arquétipo AEM Projeto nos permite gerar um novo projeto com um namespace personalizado e incluir uma estrutura de projeto que segue as práticas recomendadas, acelerando muito nosso projeto.
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Certifique-se de que uma nova instância do Adobe Experience Manager, iniciada no modo **author**, esteja em execução localmente.
+Revise as ferramentas necessárias e as instruções para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Certifique-se de que uma nova instância do Adobe Experience Manager tenha sido iniciada em **autor** , está sendo executado localmente.
 
 ## Criar o projeto {#create}
 
 >[!NOTE]
 >
->Este tutorial usa a versão **27** do arquétipo. É sempre uma prática recomendada usar a versão **mais recente** do arquétipo para gerar um novo projeto.
+>Este tutorial usa a versão **27º** do arquétipo. É sempre uma prática recomendada usar a variável **mais recente** versão do arquétipo para gerar um novo projeto.
 
 1. Abra um terminal de linha de comando e insira o seguinte comando Maven:
 
@@ -61,18 +61,17 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
 
    >[!NOTE]
    >
-   > Se o direcionamento AEM 6.5.5+, substitua `aemVersion="cloud"` por `aemVersion="6.5.5"`. Se o target for 6.4.8+, use `aemVersion="6.4.8"`.
+   > Se o direcionamento AEM 6.5.5+, substitua `aemVersion="cloud"` com `aemVersion="6.5.5"`. Se o target for 6.4.8+, use `aemVersion="6.4.8"`.
 
-   Observe a propriedade `frontendModule=react` . Isso instrui o Arquétipo de projeto do AEM a inicializar o projeto com um [React code base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial a ser usado com o Editor de SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e o propósito.
+   Observe que `frontendModule=react` propriedade. Isso instrui o Arquétipo de projeto AEM a inicializar o projeto com um início [Reagir base do código](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) para ser usado com o Editor de SPA AEM. Propriedades como `appTitle`, `appId`, `artifactId`e `groupId` são usados para identificar o projeto e a finalidade.
 
    Uma lista completa das propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 
-1. A seguinte estrutura de pastas e arquivos será gerada pelo arquétipo Maven em seu sistema de arquivos local:
+1. A seguinte estrutura de pastas e arquivos é gerada pelo arquétipo Maven em seu sistema de arquivos local:
 
    ```plain
    |--- aem-guides-wknd-spa.react/
        |--- all/
-       |--- analyse/
        |--- core/
        |--- ui.apps/
        |--- ui.apps.structure/
@@ -82,20 +81,19 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
        |--- ui.tests /
        |--- it.tests/
        |--- dispatcher/
-       |--- analyse/
        |--- pom.xml
        |--- README.md
        |--- .gitignore
    ```
 
-   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o módulo `ui.frontend`, que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na [AEM documentação do Arquétipo de projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o `ui.frontend` , que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na seção [Documentação do AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ## Implantar e criar o projeto
 
 Em seguida, compile, crie e implante o código do projeto em uma instância local do AEM usando o Maven.
 
-1. Verifique se uma instância de AEM está sendo executada localmente na porta **4502**.
-1. Na linha de comando, navegue até o diretório do projeto `aem-guides-wknd-spa.react`.
+1. Verifique se uma instância do AEM está sendo executada localmente na porta **4502**.
+1. Na linha de comando, navegue até o `aem-guides-wknd-spa.react` diretório do projeto.
 
    ```shell
    $ cd aem-guides-wknd-spa.react
@@ -131,9 +129,9 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
    [INFO] ------------------------------------------------------------------------
    ```
 
-   O perfil Maven `autoInstallSinglePackage` compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, esse pacote será implantado em uma instância AEM executada localmente na porta **4502** e com as credenciais de `admin:admin`.
+   O perfil Maven `autoInstallSinglePackage` compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, esse pacote é implantado em uma instância AEM executada localmente na porta **4502** e com as credenciais de `admin:admin`.
 
-1. Navegue até **Gerenciador de Pacotes** em sua instância de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
+1. Navegar para **Gerenciador de pacotes** na instância de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
 1. Você deve ver vários pacotes com o prefixo `aem-guides-wknd-spa.react`.
 
@@ -141,39 +139,39 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
 
    *Gerenciador de pacotes de AEM*
 
-   Todo o código personalizado necessário para o projeto será agrupado nesses pacotes e instalado no ambiente de AEM.
+   Todo o código personalizado necessário para o projeto é empacotado nesses pacotes e instalado no ambiente de AEM.
 
 ## Conteúdo do autor
 
 Em seguida, abra o SPA inicial gerado pelo arquétipo e atualize algum conteúdo.
 
-1. Navegue até o console **Sites**: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
+1. Navegue até o **Sites** console: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
 
-   O SPA WKND inclui uma estrutura básica de site com um país, idioma e página inicial. Essa hierarquia é baseada nos valores padrão do arquétipo para `language_country` e `isSingleCountryWebsite`. Esses valores podem ser substituídos atualizando as [propriedades disponíveis](https://github.com/adobe/aem-project-archetype#available-properties) ao gerar um projeto.
+   O SPA WKND inclui uma estrutura básica de site com um país, idioma e página inicial. Essa hierarquia é baseada nos valores padrão do arquétipo para `language_country` e `isSingleCountryWebsite`. Esses valores podem ser substituídos pela atualização do [propriedades disponíveis](https://github.com/adobe/aem-project-archetype#available-properties) ao gerar um projeto.
 
-2. Abra a página **us** > **en** > **WKND SPA React Home Page** selecionando a página e clicando no botão **Edit** na barra de menu:
+2. Abra o **us** > **en** > **Página inicial do React SPA WKND** selecionando a página e clicando no link **Editar** na barra de menus:
 
    ![console do site](./assets/create-project/open-home-page.png)
 
-3. Um componente **Text** já foi adicionado à página. Você pode editar esse componente como qualquer outro componente no AEM.
+3. A **Texto** já foi adicionado à página. Você pode editar esse componente como qualquer outro componente no AEM.
 
    ![Atualizar componente de texto](./assets/create-project/update-text-component.gif)
 
-4. Adicione um componente **Text** adicional à página.
+4. Adicione um **Texto** para a página.
 
-   Observe que a experiência de criação é semelhante àquela de uma página tradicional do AEM Sites. Atualmente, há um número limitado de componentes disponíveis para serem usados. Mais serão adicionados ao longo do tutorial.
+   Observe que a experiência de criação é semelhante àquela de uma página tradicional do AEM Sites. Atualmente, há um número limitado de componentes disponíveis para serem usados. Mais informações são adicionadas ao longo do tutorial.
 
 ## Inspect o aplicativo de página única
 
 Em seguida, verifique se este é um Aplicativo de página única com o uso das ferramentas de desenvolvedor do seu navegador.
 
-1. No **Editor de página**, clique no botão **Informações da página** > **Exibir como publicado**:
+1. No **Editor de páginas**, clique no botão **Informações da página** botão > **Exibir como publicado**:
 
    ![Botão Exibir como publicado](./assets/create-project/view-as-published.png)
 
    Isso abrirá uma nova guia com o parâmetro de consulta `?wcmmode=disabled` que efetivamente desliga o editor de AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
 
-2. Visualize a fonte da página e observe que o conteúdo de texto **[!DNL Hello World]** ou qualquer outro conteúdo não foi encontrado. Em vez disso, você deve ver o HTML como segue:
+2. Visualize a origem da página e observe que o conteúdo do texto **[!DNL Hello World]** ou qualquer outro conteúdo não foi encontrado. Em vez disso, você deve ver o HTML como o seguinte:
 
    ```html
    ...
@@ -187,18 +185,18 @@ Em seguida, verifique se este é um Aplicativo de página única com o uso das f
 
    `clientlib-react.min.js` é o SPA React que é carregado na página e responsável pela renderização do conteúdo.
 
-   No entanto, *de onde o conteúdo vem?*
+   No entanto, *de onde vem o conteúdo?*
 
 3. Retorne à guia : [http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-react/us/en/home.html?wcmmode=disabled)
-4. Abra as ferramentas de desenvolvedor do navegador e inspecione o tráfego de rede da página durante uma atualização. Visualize as solicitações **XHR**:
+4. Abra as ferramentas de desenvolvedor do navegador e inspecione o tráfego de rede da página durante uma atualização. Visualize o **XHR** solicitações:
 
    ![Solicitações XHR](./assets/create-project/xhr-requests.png)
 
-   Deve haver uma solicitação para [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Ele contém todo o conteúdo, formatado em JSON, que guiará o SPA.
+   Deve ser apresentado um pedido para [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Ele contém todo o conteúdo, formatado em JSON, que guiará o SPA.
 
 5. Em uma nova guia, abra [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
-   A solicitação `en.model.json` representa o modelo de conteúdo que guiará o aplicativo. Inspect a saída JSON e você deve conseguir encontrar o trecho que representa o(s) componente(s) **[!UICONTROL Text]** .
+   A solicitação `en.model.json` representa o modelo de conteúdo que direcionará o aplicativo. Inspect a saída JSON e você deve conseguir encontrar o trecho que representa a variável **[!UICONTROL Texto]** componente(s).
 
    ```json
    ...
@@ -223,12 +221,12 @@ Em seguida, verifique se este é um Aplicativo de página única com o uso das f
    >
    > Pode ser útil instalar uma extensão do navegador para formatar automaticamente a saída JSON.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro projeto SPA Editor de AEM!
 
-O SPA é muito simples. Nos próximos capítulos, será adicionada mais funcionalidade.
+O SPA é muito simples. Nos próximos capítulos, mais funcionalidade é adicionada.
 
 ### Próximas etapas {#next-steps}
 
-[Integrar um SPA](integrate-spa.md)  - saiba como o código-fonte SPA é integrado ao Projeto AEM e entenda as ferramentas disponíveis para desenvolver rapidamente o SPA.
+[Integrar um SPA](integrate-spa.md) - Saiba como o código-fonte SPA é integrado ao Projeto AEM e entenda as ferramentas disponíveis para desenvolver rapidamente o SPA.

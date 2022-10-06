@@ -1,22 +1,23 @@
 ---
 title: Introdução
 description: Demonstração em vídeo do caso de uso de assinar vários formulários
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 330165.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 4%
+source-wordcount: '118'
+ht-degree: 2%
 
 ---
 
 # Introdução
 
-Se você estiver solicitando uma hipoteca ou abrindo uma nova conta bancária, será necessário preencher e assinar vários formulários. A integração entre o AEM Forms e o Adobe Sign facilita o preenchimento e a assinatura de vários formulários.
+Se você estiver solicitando uma hipoteca ou abrindo uma nova conta bancária, é necessário preencher e assinar vários formulários. A integração entre o AEM Forms e o Adobe Sign facilita o preenchimento e a assinatura de vários formulários.
 O vídeo a seguir o orienta pelo caso de uso da assinatura de vários formulários.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)

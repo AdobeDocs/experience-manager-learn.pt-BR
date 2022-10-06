@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Para exibir dados de fluxo de trabalho na caixa de entrada, precisamos definir e
 * [Importe o fluxo de trabalho de revisão](assets/review-workflow.zip)
 * [Revisar o fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Esse workflow tem duas variáveis definidas (isCasado e renda) e seus valores são definidos usando o componente de variável set. Essas variáveis serão disponibilizadas como colunas a serem adicionadas a AEM caixa de entrada
+Esse workflow tem duas variáveis definidas (isCasado e renda) e seus valores são definidos usando o componente de variável set. Essas variáveis são disponibilizadas como colunas a serem adicionadas a AEM caixa de entrada
 
 ## Criar serviço
 

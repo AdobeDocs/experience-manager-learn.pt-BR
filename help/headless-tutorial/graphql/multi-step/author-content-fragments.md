@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
    ![Modelos de fragmento de conteúdo permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Essas políticas serão herdadas por qualquer subpasta automaticamente e poderão ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações de projeto. Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
+   Essas políticas são herdadas por qualquer subpasta automaticamente e podem ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações de projeto. Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
 
 1. Toque **Salvar e fechar** para salvar as alterações nas propriedades da pasta.
 
@@ -75,7 +75,7 @@ Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
 ## Criar um fragmento de conteúdo {#create-content-fragment}
 
-Os próximos vários Fragmentos de conteúdo serão criados com base na variável **Equipe** e **Pessoa** modelos.
+Os próximos vários Fragmentos de conteúdo são criados com base na variável **Equipe** e **Pessoa** modelos.
 
 1. Na tela inicial AEM, toque em **Fragmentos de conteúdo** para abrir a interface do usuário de Fragmentos de conteúdo .
 

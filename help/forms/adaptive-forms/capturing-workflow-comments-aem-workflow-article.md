@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ Para testar esse recurso em seu sistema, siga as seguintes etapas:
 
 * Abra a tarefa na caixa de entrada e envie o formulário. Insira alguns comentários quando solicitado.
 
-Os comentários serão armazenados na propriedade de metadados chamada managerComments no crx. Para verificar os comentários, faça logon no crx como administrador. As instâncias de fluxo de trabalho são armazenadas no seguinte caminho
+Os comentários são armazenados na propriedade de metadados chamada `managerComments` em AEM repositório. Para verificar os comentários, faça logon no crx como administrador. As instâncias de fluxo de trabalho são armazenadas no seguinte caminho:
 
-/var/workflow/instances/server0
+`/var/workflow/instances/server0`
 
 Selecione a instância de fluxo de trabalho apropriada e verifique a propriedade managerComments no nó de metadados.

@@ -2,18 +2,18 @@
 title: Usando Panorama e Visualizador de Imagem Vertical com o AEM Assets Dynamic Media
 description: Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de Imagem Panorâmica, Visualizador de Imagem de Realidade Virtual Panorâmica e Visualizador de Imagem Vertical. O Visualizador de panorâmica é uma maneira fácil de fornecer uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem, sem qualquer desenvolvimento personalizado.
 sub-product: dynamic-media
-feature: Perfis de vídeo, Perfis de vídeo, Vídeo 360 VR
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
-
 
 # Usando Panorama e Visualizador de Imagem Vertical com o AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
@@ -27,13 +27,13 @@ Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição
 
 ## Visualizador VR panorâmico e panorâmico
 
-Uma imagem é considerada panorâmica com base em sua proporção ou palavras-chave. Por padrão, uma imagem com proporção de aspecto de 2 será considerada uma imagem panorâmica. As predefinições do visualizador de Imagem panorâmica ficarão disponíveis para uma visualização de imagem se ela atender aos critérios acima. O critério de proporção da imagem panorâmica pode ser modificado na configuração do DMS7 da empresa, especificando a propriedade dupla s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmscene7/jcr:content. As palavras-chave são armazenadas na propriedade dc:keyword do nó de metadados do ativo. Se as palavras-chave contiverem qualquer uma das seguintes combinações :
+Uma imagem é considerada panorâmica com base em sua proporção ou palavras-chave. Por padrão, uma imagem com proporção de aspecto de 2 é considerada uma imagem panorâmica. As predefinições do visualizador de Imagem panorâmica ficam disponíveis para uma visualização de imagem se ela atender aos critérios acima. O critério de proporção da imagem panorâmica pode ser modificado na configuração do DMS7 da empresa, especificando a propriedade dupla s7PanorâmicaAR em /conf/global/settings/cloudconfigs/dmscene7/jcr:content. As palavras-chave são armazenadas na propriedade dc:keyword do nó de metadados do ativo. Se as palavras-chave contiverem qualquer uma das seguintes combinações :
 
 * Retangular
 * esférico + panorâmica,
 * esférico + panorama,
 
-será considerado um ativo de Imagem panorâmica, independentemente de sua proporção.
+é considerado um ativo de Imagem panorâmica, independentemente de sua proporção.
 
 ## Visualizador de imagem vertical
 

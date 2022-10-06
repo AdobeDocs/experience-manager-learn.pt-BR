@@ -3,9 +3,9 @@ title: Como aumentar a velocidade do conteúdo com o Adobe Experience Manager
 description: Saiba mais sobre a velocidade do conteúdo e seu valor em organizações empresariais. Mergulhe em quatro princípios de implementação efetiva e as armadilhas a serem observadas ao longo do caminho.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
@@ -75,11 +75,11 @@ Para ilustrar este ponto, vamos ver um exemplo de uma organização empresarial 
 
 A questão é, você vai continuar reimaginando o conteúdo até que todas as marcas estejam operando de maneira unificada? Será sensato resolver a mudança para todos eles?
 
-A resposta é não. Isso aumentaria a complexidade. Além disso, muitas das partes interessadas ficarão frustradas com conversas intermináveis em torno do antigo, o que provocará frustrações nas tentativas de construção do novo. Um vai ficar preso a uma conversa _about_ mudar, em vez de fazê-lo.
+A resposta é não. Isso aumentaria a complexidade. Além disso, muitas das partes interessadas ficarão frustradas com conversas intermináveis em torno do antigo, o que provocará frustrações nas tentativas de construção do novo. Um fica preso a uma conversa _about_ mudar, em vez de fazê-lo.
 
 O que é necessário é um quadro tangível. Um novo paradigma para o qual trabalhar. Algo que as pessoas podem ver e sentir. No passado, o conteúdo pode ter sido considerado uma página, uma campanha ou qualquer coisa imaginada no singular. A mudança fundamental é ver o conteúdo como o próprio conteúdo: para ser reaproveitado, reestilizado e reciclado para a equipe de criação. O novo desenvolvimento principal deve ser utilizado para experiências ricas em target.
 
-Para muitos clientes, a melhor maneira de inserir a alteração é criar um mini site, uma marca ou uma seção separada do site que possa ser usada como um caso de teste para a nova estrutura. A escolha de uma parte da organização para atuar como Prova de conceito permitirá:
+Para muitos clientes, a melhor maneira de inserir a alteração é criar um mini site, uma marca ou uma seção separada do site que possa ser usada como um caso de teste para a nova estrutura. Escolher uma parte da organização para atuar como Prova de conceito permite:
 
 * Criar um grupo integrado de participantes dedicado à compreensão do novo quadro
 * Reduza as sessões de descoberta cíclica e crie mais rapidamente
@@ -94,19 +94,19 @@ _&quot;Sabíamos que havia muito conteúdo saindo. Então fizemos uma pesquisa c
 
 AEM, é uma solução de nível empresarial que afeta muitas partes da empresa ou marca e sua eficácia, como ferramenta CMS, tem dependências upstream.
 
-Ao criar a estrutura, existem alguns paradigmas comuns para os quais você precisará encontrar a solução correta. Alguns desses elementos podem ser desafiadores, mas é preciso tomar decisões. É por isso que o paradigma fundamental acima é tão importante. Essa estrutura que está sendo construída será a que será aproveitada para dimensionar na organização.
+Ao criar a estrutura, existem alguns paradigmas comuns para os quais você precisará encontrar a solução correta. Alguns desses elementos podem ser desafiadores, mas é preciso tomar decisões. É por isso que o paradigma fundamental acima é tão importante. Essa estrutura que está sendo construída é a que é aproveitada para dimensionar na organização.
 
 Estes são quatro marcos para construção durante a fase de execução:
 
 1. **Defina os fundamentos de sua taxonomia global organizacional.**
 
-   Quando falamos de taxonomia, não estamos apenas referenciando a estrutura de pastas, mas sim um entendimento de quem estará criando o quê e quando. Além disso, teremos de considerar a [permissão diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estruturas que precisarão ser arquitetadas para cada tipo de autor.
+   Quando falamos de taxonomia, não estamos apenas referenciando a estrutura de pastas, mas sim um entendimento de quem está criando o quê e quando. Além disso, teremos de considerar a [permissão diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estruturas que precisarão ser arquitetadas para cada tipo de autor.
 
    Neste ponto, considere se deseja um modelo de governança centralizado ou descentralizado.Por um lado, um modelo de governança centralizado cria uma estratégia taxonômica consolidada que oferece controle de qualidade mais apertado e insights do processo que seriam impossíveis, ou pelo menos difíceis em um quadro descentralizado.
 
-   Por outro lado, um modelo centralizado, especialmente se for proveniente de uma experiência de criação que é atualmente muito flexível, pode ser um grande obstáculo para a equipe. A estrutura deve permitir diferenciais linguísticos e regionais comuns, bem como práticas em matéria de controlo de qualidade. Além disso, pode haver menos autonomia para cada faceta da experiência de criação, ou seja, somente alguns autores poderão trabalhar em grupos específicos de páginas e somente autores limitados têm permissões editáveis.
+   Por outro lado, um modelo centralizado, especialmente se for proveniente de uma experiência de criação que é atualmente muito flexível, pode ser um grande obstáculo para a equipe. A estrutura deve permitir diferenciais linguísticos e regionais comuns, bem como práticas em matéria de controlo de qualidade. Além disso, pode haver menos autonomia para cada faceta da experiência de criação, ou seja, apenas alguns autores têm permissão para trabalhar em grupos específicos de páginas e apenas autores limitados têm permissões editáveis.
 
-   Embora inicialmente um modo centralizado de governança possa parecer mais lento, no final, com os insights do processo coletados e a responsabilidade transparente entre os usuários corporativos que é iniciada, a trajetória geral será mais rápida.
+   Embora inicialmente um modo centralizado de governança possa parecer mais lento, no final, com os insights do processo coletados e a responsabilidade transparente entre os usuários corporativos que é instigada, a trajetória geral é mais rápida.
 
    A decisão sobre que direção tomar dependerá, em última análise, do objetivo estratégico global da organização. Pode se resumir à escolha entre a flexibilidade aprimorada para usuários empresariais ou uma experiência unificada entre marcas. Alinhar no modelo adequado é essencial para uma execução sólida.
 
@@ -116,7 +116,7 @@ Estes são quatro marcos para construção durante a fase de execução:
 
    O conteúdo interativo (geralmente localizado na página inicial) pode exigir experiências altamente interativas e, portanto, exigirá que designers de CSS front-end trabalhem com autores empresariais para serem atualizados. A manutenção da página inicial exigiria uma estrutura de permissão e um processo de aprovação diferente de algo como uma página de referência, que seria mais fácil de atualizar. A boa governança, a eficiência e a qualidade começam com a clara propriedade do conteúdo. Considere executar uma auditoria de conteúdo que responda a estas perguntas:
 
-   * Quem vai criar o quê? E quando?
+   * Quem está criando o quê? E quando?
    * Quais são as diferentes estruturas de permissão que precisam ser aplicadas a cada tipo de conteúdo?
    * Quais são as experiências no site que mudarão e quais permanecerão relativamente estáticas?
    * Quem é que vai possuir qual conteúdo?
@@ -145,7 +145,7 @@ Estes são quatro marcos para construção durante a fase de execução:
 Em geral, falando, é melhor seguir estas regras básicas:
 
 * Pretende ter pelo menos 80% das experiências viabilizadas [Componentes prontos para uso](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Sistemas de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Por meio do depoimento do cliente, isso não somente criará uma base mais escalável que permitirá que você aproveite o roteiro do produto, como também aumentará a velocidade em até 50%.
-* [Configuração](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afastar-se dos modelos estáticos. Ao configurar modelos editáveis (que são necessários para usar os Sistemas de estilos), será necessário atribuir um autor de modelo que controlará o diferente estilo disponível para uma página ou seção do site. Essas atualizações no modelo em si são bastante mínimas em termos de trabalho diário.
+* [Configuração](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afastar-se dos modelos estáticos. Ao configurar modelos editáveis (que são necessários para usar os Sistemas de estilos), é necessário atribuir um autor de modelo que controlará o diferente estilo disponível para uma página ou seção do site. Essas atualizações no modelo em si são bastante mínimas em termos de trabalho diário.
 * Use [Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) sempre que possível. Embora o caso de uso geral para fragmentos de experiência seja a distribuição de vários canais, eles também podem ser usados com eficácia no site para preencher o conteúdo em uma área de uma vez, em vez de atualizar o conteúdo manualmente em várias áreas. Isso pode economizar tempo e esforço excessivos e liberará a equipe de criação para trabalhar em experiências mais específicas e ricas.
 * Crie experiências mais ricas. Ao utilizar a regra 80/20 (por acima), uma organização pode utilizar CSS específico e desenvolvimento de back-end para experiências selecionadas em vez de atualizações de manutenção comuns.
 * Opte por uma base escalável e uma remarca rápida. Os sistemas de estilos executados com base em uma implementação moderna podem permitir uma reformulação eficiente da marca em todas as plataformas. A atualização de amplos setores de conteúdo por meio da alteração das capas de CSS permite testes e validação rápidos e aumenta a qualidade experiencial de um site com impacto direto no ROI.
@@ -160,7 +160,7 @@ AEM Sites: executar e operar
 | --- | --- | --- | --- |
 | Desenvolvedor de CSS | <ul><li>Desenvolvimento da Web (CSS ou front-end)</li>Reutilizar componentes<li>Criar artefatos de experiência por meio de novo propósito ou novo</li></ul> | <ul><li>Proprietário da empresa da solução</li><li>Cria tarefas e aprimoramentos de manutenção</li><li>Trabalha com a BU para se casar com visões técnicas e estratégicas</li></ul> | Dono do produto |
 | Desenvolvedor de back-end | <ul><li>Experiências profundas não realizadas por meio de CSS front-end simples</li>Supervisão arquitetônica<li>Integrações dinâmicas/alinhamento com o proprietário do produto em objetivos estratégicos</li></ul> | <ul><li>Ajudar autores de conteúdo</li><li>Função de governança</li><li>Coordena inicializações, gerencia edições de macro</li></ul> | Autor do administrador |
-| Gerenciador de versões | <ul><li>Gerenciamento de versões</li><li>Implantações de código</li></li>Engenheiro de Sucesso do Cliente Atual</ul> | <ul><li>Aplica conteúdo (incluindo estilos pré-criados)</li>Propriedade em camadas<li>Fornece e comunica problemas e preocupações à medida que surgem com o CSM</li></ul> | Autor do conteúdo |
+| Gerenciador de versões | <ul><li>Gerenciamento de versões</li><li>Implantações de código</li></li>Engenheiro de Sucesso do Cliente Atual</ul> | <ul><li>Aplica conteúdo (incluindo estilos pré-criados)</li>Propriedade em camadas<li>Fornece e comunica problemas e preocupações à medida que surgem com o CSM</li></ul> | Autor de conteúdo |
 
 ## Possíveis armadilhas
 
@@ -177,4 +177,4 @@ Estas são algumas armadilhas possíveis para evitar:
 
 Para uma discussão mais aprofundada sobre a velocidade do conteúdo, assista a esta [discussão no painel](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) com Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e Anuradha Pentareddy.
 
-Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) cubo.
+Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) cubo.

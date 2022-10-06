@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Entenda como o código-fonte de um Aplicativo de página única (SPA) gravado no
 
 ## O que você vai criar
 
-Este capítulo adicionará uma `Header` para o SPA. No processo de criação dessa estática `Header` diversas abordagens AEM desenvolvimento SPA serão usadas.
+Este capítulo adicionará uma `Header` para o SPA. No processo de criação dessa estática `Header` são usadas várias abordagens para AEM desenvolvimento SPA.
 
 ![Novo Cabeçalho no AEM](./assets/integrate-spa/final-header-component.png)
 
@@ -71,7 +71,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 Dois módulos foram criados como parte do projeto AEM: `ui.apps` e `ui.frontend`.
 
-O `ui.frontend` é um [webpack](https://webpack.js.org/) projeto que contém todo o código-fonte SPA. A maior parte do desenvolvimento e teste de SPA será feito no projeto do webpack. Quando uma build de produção é acionada, a SPA é criada e compilada usando o webpack. Os artefatos compilados (CSS e Javascript) são copiados para o `ui.apps` que é implantado no tempo de execução AEM.
+O `ui.frontend` é um [webpack](https://webpack.js.org/) projeto que contém todo o código-fonte SPA. A maioria do desenvolvimento e teste de SPA é feito no projeto do webpack. Quando uma build de produção é acionada, a SPA é criada e compilada usando o webpack. Os artefatos compilados (CSS e Javascript) são copiados para o `ui.apps` que é implantado no tempo de execução AEM.
 
 ![arquitetura de alto nível ui.frontend](assets/integrate-spa/ui-frontend-architecture.png)
 
@@ -269,7 +269,7 @@ Em seguida, adicione um novo componente ao SPA e implante as alterações em uma
 
 Como visto nos exercícios anteriores, a execução de uma build e sincronização da biblioteca do cliente com uma instância local de AEM demora alguns minutos. Isso é aceitável para testes finais, mas não é ideal para a maioria do desenvolvimento SPA.
 
-A [servidor de desenvolvimento de webpack](https://webpack.js.org/configuration/dev-server/) pode ser utilizado para desenvolver rapidamente a SPA. O SPA é conduzido por um modelo JSON gerado pelo AEM. Neste exercício, o conteúdo JSON de uma instância em execução de AEM será **proxied** no servidor de desenvolvimento configurado pelo [Projeto Angular](https://angular.io/guide/build).
+A [servidor de desenvolvimento de webpack](https://webpack.js.org/configuration/dev-server/) pode ser utilizado para desenvolver rapidamente a SPA. O SPA é conduzido por um modelo JSON gerado pelo AEM. Neste exercício, o conteúdo JSON de uma instância em execução do AEM é **proxied** no servidor de desenvolvimento configurado pelo [Projeto Angular](https://angular.io/guide/build).
 
 1. Retorne ao IDE e abra o arquivo **proxy.conf.json** at `ui.frontend/proxy.conf.json`.
 
@@ -458,7 +458,7 @@ A configuração inicial do mock JSON faz **requer uma instância de AEM local**
 
 ## Adicionar estilos com o Sass
 
-Em seguida, algum estilo atualizado será adicionado ao projeto. Este projeto adicionará [Sass](https://sass-lang.com/) suporte para alguns recursos úteis como variáveis.
+Em seguida, alguns estilos atualizados são adicionados ao projeto. Este projeto adicionará [Sass](https://sass-lang.com/) suporte para alguns recursos úteis como variáveis.
 
 1. Abra uma janela de terminal e pare o **servidor de desenvolvimento de webpack** se iniciado. De dentro da `ui.frontend` digite o seguinte comando para atualizar o aplicativo Angular para processar **.scss** arquivos.
 
@@ -649,7 +649,7 @@ As mudanças feitas no **Cabeçalho** atualmente, só são visíveis por meio da
 
    Agora que o SPA atualizado está em AEM, a criação pode continuar.
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você atualizou o SPA e explorou a integração com o AEM! Agora você sabe de duas abordagens diferentes para desenvolver o SPA em relação à API do modelo JSON AEM usando um **servidor de desenvolvimento de webpack**.
 

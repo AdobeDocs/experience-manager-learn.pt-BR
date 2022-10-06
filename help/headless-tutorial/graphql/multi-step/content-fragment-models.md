@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1132'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Neste capítulo, saiba como modelar conteúdo e criar um schema com **Modelos de fragmentos do conteúdo**. Você aprenderá sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
 
-Neste capítulo serão criados dois modelos simples, **Equipe** e **Pessoa**. O **Equipe** o modelo de dados tem nome, nome abreviado e descrição e faz referência ao **Pessoa** modelo de dados, que tem nome completo, detalhes da bio, imagem do perfil e lista de ocupações.
+Neste capítulo, são criados dois modelos simples: **Equipe** e **Pessoa**. O **Equipe** o modelo de dados tem nome, nome abreviado e descrição e faz referência ao **Pessoa** modelo de dados, que tem nome completo, detalhes da bio, imagem do perfil e lista de ocupações.
 
 Você também é bem-vindo a criar seu próprio modelo seguindo as etapas básicas e ajustar as respectivas etapas, como consultas GraphQL, e o código do aplicativo React ou simplesmente seguir as etapas descritas nesses capítulos.
 
@@ -79,7 +79,7 @@ Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa
 
    ![Campo de propriedade Nome completo](assets/content-fragment-models/full-name-property-field.png)
 
-   O **Nome da propriedade** define o nome da propriedade que é mantida para AEM. O **Nome da propriedade** também define a variável **key** nome dessa propriedade como parte do schema de dados. Essa **key** será usada quando os dados do Fragmento de conteúdo forem expostos por meio de APIs GraphQL.
+   O **Nome da propriedade** define o nome da propriedade que é mantida para AEM. O **Nome da propriedade** também define a variável **key** nome dessa propriedade como parte do schema de dados. Essa **key** é usada quando os dados do Fragmento de conteúdo são expostos por meio de APIs GraphQL.
 
 1. Toque no **Tipos de dados** e arraste e solte uma **Texto de várias linhas** abaixo do campo **Nome completo** campo. Insira as seguintes propriedades:
 

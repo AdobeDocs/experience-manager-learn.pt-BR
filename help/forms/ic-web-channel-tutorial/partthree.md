@@ -7,9 +7,9 @@ version: 6.4,6.5
 role: Developer
 level: Beginner
 exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Nessa parte, criaremos o Modelo de dados de formulário. O Modelo de dados de fo
 
 O Modelo de dados de formulário depende de uma Fonte de dados configurada corretamente. Usaremos a Fonte de Dados configurada na etapa anterior como base para esse Modelo de Dados de Formulário.
 
-O Modelo de Dados de Formulário é a base de todas as Comunicações interativas. A operação Get/Read do Modelo de dados de formulário buscará os dados da fonte de dados de backend e será usada para preencher o documento de Comunicações interativas.
+O Modelo de Dados de Formulário é a base de todas as Comunicações interativas. A operação Get/Read do Modelo de Dados de Formulário buscará os dados da fonte de dados de backend e será usada para preencher o documento de Comunicações interativas.
 
 Para obter mais informações, consulte [Configuração das Fontes de Dados](parttwo.md).
 

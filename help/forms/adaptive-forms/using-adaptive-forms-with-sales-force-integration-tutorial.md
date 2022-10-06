@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-Neste artigo, abordaremos o processo de criação da Fonte de Dados com o Salesforce
+Neste artigo, abordamos o processo de criação da Fonte de Dados com o Salesforce
 
 Pré-requisitos para este tutorial:
 
@@ -29,20 +29,20 @@ Pré-requisitos para este tutorial:
    * [Documentação oficial para habilitar o SSL no AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Documentação oficial para habilitar o SSL no AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* Você precisará ter a conta do Salesforce
-* Será necessário criar um aplicativo conectado. A documentação oficial do Salesforce para criar o aplicativo está listada [here](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Você precisa ter uma conta do Salesforce
+* Você precisa criar um aplicativo conectado. A documentação oficial do Salesforce para criar o aplicativo está listada [here](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Forneça os escopos OAuth apropriados para o aplicativo (selecionei todos os escopos OAuth disponíveis para fins de teste)
 * Forneça a URL de retorno de chamada. O URL de retorno de chamada no meu caso era
 
-   * Se estiver usando **AEM Forms 6.3**, a URL de retorno de chamada será https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Neste URL, createlead é o nome do meu modelo de dados de formulário.
+   * Se estiver usando **AEM Forms 6.3**, a URL de retorno de chamada é https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Neste URL, createlead é o nome do meu modelo de dados de formulário.
 
-   * Se estiver usando** AEM Forms 6.4**, o URL de retorno de chamada será https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Se você estiver usando** AEM Forms 6.4**, o URL de retorno de chamada será https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta em que o AEM está em execução.
 
-Depois de criar o Aplicativo conectado, observe o **Chave do consumidor e chave secreta**. Você precisará deles ao criar a fonte de dados no AEM Forms.
+Depois de criar o Aplicativo conectado, observe o **Chave do consumidor e chave secreta**. Você precisa delas ao criar a fonte de dados no AEM Forms.
 
-Agora que você criou seu aplicativo conectado, será necessário criar um arquivo de troca para as operações que você precisa executar no salesforce. Um arquivo de amostra swagger é incluído como parte dos ativos baixáveis. Esse arquivo swagger permite criar um objeto &quot;Lead&quot; no envio do formulário adaptável. Explore este arquivo swagger.
+Agora que você criou seu aplicativo conectado, é necessário criar um arquivo de troca para as operações que você precisa executar no salesforce. Um arquivo de amostra swagger é incluído como parte dos ativos baixáveis. Esse arquivo swagger permite criar um objeto &quot;Lead&quot; no envio do formulário adaptável. Explore este arquivo swagger.
 
 A próxima etapa é criar a Fonte de Dados no AEM Forms. Siga as etapas a seguir de acordo com sua versão do AEM Forms
 

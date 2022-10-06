@@ -1,18 +1,18 @@
 ---
 title: Usar pastas assistidas no AEM Forms
 description: Configurar e usar pastas vigiadas no AEM Forms
-feature: Serviço de saída
+feature: Output Service
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
-
 
 # Usar pastas assistidas no AEM Forms{#using-watched-folders-in-aem-forms}
 
@@ -28,16 +28,16 @@ O serviço de saída é um serviço OSGi que faz parte AEM Document Services. O 
 
 Para saber mais sobre o serviço de saída, [clique aqui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar uma pasta monitorada em seu sistema, siga as etapas abaixo:
-* [Baixe e extraia o conteúdo do arquivo zip](assets/outputservicewatchedfolderkt.zip). Esse arquivo zip contém o pacote para criar pastas monitoradas e arquivos de amostra para testar o serviço de saída usando o mecanismo de pasta monitorada
+* [Baixe e extraia o conteúdo do arquivo zip](assets/outputservicewatchedfolderkt.zip).Este arquivo zip contém pacote para criar arquivos de pasta monitorada e de amostra para testar o serviço de saída usando o mecanismo de pasta monitorada
    * Sistema Windows
 
       * Importe o outputservicewatchedfolder.zip no AEM usando o gerenciador de pacotes
-      * Isso criará uma pasta assistida chamada outputservicewatchedfolder na unidade C.
+      * Isso cria uma pasta monitorada chamada outputservicewatchedfolder na unidade C.
    * Sistema não Windows
       * [Abra a configuração da pasta monitorada](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
       * Defina a propriedade de caminho da pasta do nó outservice para apontar para um local adequado
       * Salve as alterações
-      * O local mencionado acima será a sua pasta monitorada.
+      * O local mencionado acima é a sua pasta monitorada.
 
 Solte as pastas SamplePdfFile e SampleXdpFile na pasta de entrada da pasta assistida. Ao processar os arquivos com êxito, os resultados são colocados na pasta de resultados da pasta monitorada.
 
@@ -47,4 +47,3 @@ Solte as pastas SamplePdfFile e SampleXdpFile na pasta de entrada da pasta assis
 >Se o script associado à pasta assistida precisar de mais de um arquivo, será necessário criar uma pasta, colocar todos os arquivos necessários na pasta e soltar a pasta na pasta de entrada da pasta assistida.
 >
 >Se o script associado à pasta monitorada precisar de apenas um arquivo de entrada, você poderá soltar o arquivo diretamente na pasta de entrada da pasta assistida
-

@@ -1,5 +1,5 @@
 ---
-title: Credenciais de Serviço
+title: Credenciais do serviço do Console do desenvolvedor do AEM
 description: AEM Credenciais de serviço são usadas para facilitar aplicativos, sistemas e serviços externos para interagir programaticamente com os serviços de Autor ou Publicação do AEM por HTTP.
 version: Cloud Service
 doc-type: tutorial
@@ -13,14 +13,14 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef4579a44c1c940a3b7441e336db3790a0c7afd7
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
-# Credenciais de Serviço
+# Credenciais de serviço
 
 As integrações com AEM as a Cloud Service devem ser autenticadas com segurança para AEM. O Console do desenvolvedor AEM concede acesso às Credenciais de serviço, que são usadas para facilitar aplicativos, sistemas e serviços externos para interagir programaticamente com os serviços de Autor ou Publicação do AEM por HTTP.
 
@@ -59,7 +59,7 @@ __Esta é uma inicialização única por ambiente as a Cloud Service AEM__
 1. Toque nas reticências ao lado do ambiente no __Ambientes__ e selecione __Console do desenvolvedor__
 1. Toque em __Integrações__ guia
 1. Toque __Obter Credenciais de Serviço__ botão
-1. As Credenciais de Serviço serão inicializadas e exibidas como JSON
+1. As Credenciais de Serviço são inicializadas e exibidas como JSON
 
 ![Console do desenvolvedor do AEM - Integrações - Obter credenciais de serviço](./assets/service-credentials/developer-console.png)
 
@@ -85,7 +85,7 @@ Baixar as credenciais de serviço segue as mesmas etapas da inicialização. Se 
 
 ## Instalar as credenciais de serviço
 
-As Credenciais de Serviço fornecem os detalhes necessários para gerar um JWT, que é trocado por um token de acesso usado para autenticação com AEM as a Cloud Service. As Credenciais de Serviço devem ser armazenadas em um local seguro acessível pelos aplicativos, sistemas ou serviços externos que as usam para acessar o AEM. Como e onde as credenciais de serviço são gerenciadas serão exclusivas por cliente.
+As Credenciais de Serviço fornecem os detalhes necessários para gerar um JWT, que é trocado por um token de acesso usado para autenticação com AEM as a Cloud Service. As Credenciais de Serviço devem ser armazenadas em um local seguro acessível pelos aplicativos, sistemas ou serviços externos que as usam para acessar o AEM. Como e onde as credenciais de serviço são gerenciadas são exclusivas por cliente.
 
 Para simplificar, este tutorial transmite as Credenciais de serviço no por meio da linha de comando. No entanto, trabalhe com a equipe de Segurança de TI para entender como armazenar e acessar essas credenciais de acordo com as diretrizes de segurança de sua organização.
 
@@ -252,6 +252,6 @@ A saída para o terminal terá a seguinte aparência:
 
 ![Atualização de metadados de uso restrito de WKND](./assets/service-credentials/asset-metadata.png)
 
-## Parabéns!
+## Parabéns. 
 
 Agora que acessamos de forma programática AEM as a Cloud Service usando um token de acesso de desenvolvimento local, bem como um token de acesso de serviço para serviço pronto para produção!

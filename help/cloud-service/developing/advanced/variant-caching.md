@@ -4,9 +4,10 @@ description: Saiba como configurar e usar o AEM as a cloud service para suportar
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
-source-git-commit: fa85f0270e21cc9857f95c541a06e87cf26d5798
+exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
 
 ## Exemplo de casos de uso
 
-+ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e as opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
++ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
 
 + Um cliente de varejo tem lojas em todo o país e cada loja tem ofertas diferentes com base em onde está localizada e o cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
 
@@ -27,7 +28,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
 
 + O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ para o estado preferencial do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
 
-+ Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `“Cookie: x-aem-variant=NY”`) e o cookie será transformado no nível da CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`) que é transmitido ao dispatcher.
++ Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível da CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`) que é transmitido ao dispatcher.
 
 + Uma regra de reescrita do Apache modifica o caminho da solicitação para incluir o valor de cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish forneça conteúdo diferente com base no seletor e no dispatcher armazene uma página em cache por variante.
 

@@ -7,7 +7,8 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Output Service
 topic: Development
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+exl-id: 165e2884-4399-4970-81ff-1f2f8b041a10
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -26,8 +27,4 @@ Para usar a API de operação em lote do AEM Forms CS, as seguintes configuraç�
 1. Criar configuração de armazenamento de dados em lote
 1. Executar a API em lote
 
-Recomendamos que você se familiarize com o [Documentação da API](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) antes de continuar a usar este tutorial.
-
-
-
-
+Recomendamos que você se familiarize com o [Documentação da API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) antes de continuar a usar este tutorial.

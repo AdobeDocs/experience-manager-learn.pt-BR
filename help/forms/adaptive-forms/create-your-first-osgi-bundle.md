@@ -1,18 +1,18 @@
 ---
 title: Criar seu primeiro pacote OSGi com formulários AEM
 description: Crie seu primeiro pacote OSGi usando maven e eclipse
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Um pacote OSGi é um arquivo de arquivo Java™ que contém código Java, recurs
 
 ## Instalar o JDK
 
-Instale a versão compatível do JDK. Eu usei o JDK1.8. Verifique se você adicionou **JAVA_HOME** em suas variáveis de ambiente e está apontando para a pasta raiz da instalação do JDK.
+Instale a versão compatível do JDK. Eu usei o JDK1.8. Verifique se você adicionou **JAVA_HOME** nas variáveis de ambiente e aponte para a pasta raiz da instalação do JDK.
 Adicionar o %JAVA_HOME%/bin ao caminho
 
 ![fonte de dados](assets/java-home.JPG)
@@ -35,7 +35,7 @@ Adicionar o %JAVA_HOME%/bin ao caminho
 
 ### Testar a versão do JDK
 
-Abra uma nova janela de prompt de comando e digite: `java -version`. Você deve recuperar a versão do JDK identificada pela variável `JAVA_HOME`
+Abra uma nova janela de prompt de comando e digite: `java -version`. Você deve recuperar a versão do JDK identificada pela variável `JAVA_HOME` variável
 
 ![fonte de dados](assets/java-version.JPG)
 
@@ -45,20 +45,20 @@ O Maven é uma ferramenta de automação de compilação usada principalmente pa
 
 * Crie uma pasta chamada `maven` na unidade C
 * Baixe o [arquivo zip binário](http://maven.apache.org/download.cgi)
-* Extraia o conteúdo do arquivo zip em `c:\maven`
-* Crie uma variável de ambiente chamada `M2_HOME` com um valor de `C:\maven\apache-maven-3.6.0`. No meu caso, a versão **mvn** é 3.6.0. No momento da escrita deste artigo, a versão mais recente do maven é 3.6.3
-* Adicione o `%M2_HOME%\bin` ao seu caminho
+* Extraia o conteúdo do arquivo zip para `c:\maven`
+* Crie uma variável de ambiente chamada `M2_HOME` com um valor de `C:\maven\apache-maven-3.6.0`. No meu caso, o **mvn** A versão é 3.6.0. No momento da escrita deste artigo, a versão mais recente do maven é 3.6.3
+* Adicione o `%M2_HOME%\bin` para o seu caminho
 * Salve as alterações
-* Abra um novo prompt de comando e digite `mvn -version`. Você deve ver a versão **mvn** listada como mostrado na captura de tela abaixo
+* Abra um novo prompt de comando e digite `mvn -version`. Você deve ver o **mvn** versão listada como mostrado na captura de tela abaixo
 
 ![fonte de dados](assets/mvn-version.JPG)
 
 ## Settings.xml
 
-Um arquivo Maven `settings.xml` define valores que configuram a execução Maven de várias maneiras. Geralmente, é usado para definir um local de repositório local, servidores de repositório remoto alternativos e informações de autenticação para repositórios privados.
+A Maven `settings.xml` O arquivo define valores que configuram a execução do Maven de várias maneiras. Geralmente, é usado para definir um local de repositório local, servidores de repositório remoto alternativos e informações de autenticação para repositórios privados.
 
-Navegue até `C:\Users\<username>\.m2 folder`
-Extraia o conteúdo do arquivo [settings.zip](assets/settings.zip) e coloque-o na pasta `.m2`.
+Navegar para `C:\Users\<username>\.m2 folder`
+Extrair o conteúdo de [settings.zip](assets/settings.zip) e coloque-o no `.m2` pasta.
 
 ## Instalar o Eclipse
 
@@ -66,7 +66,7 @@ Instale a versão mais recente de [eclipse](https://www.eclipse.org/downloads/)
 
 ## Criar o primeiro projeto
 
-O Archetype é um kit de ferramentas de modelos de projeto Maven. Um arquétipo é definido como um padrão ou modelo original a partir do qual são feitas todas as outras coisas do mesmo tipo. O nome se encaixa à medida que tentamos fornecer um sistema que fornece um meio consistente de gerar projetos Maven. O arquétipo ajudará os autores a criar modelos de projeto Maven para usuários e fornece aos usuários os meios de gerar versões parametrizadas desses modelos de projeto.
+O Archetype é um kit de ferramentas de modelos de projeto Maven. Um arquétipo é definido como um padrão ou modelo original a partir do qual são feitas todas as outras coisas do mesmo tipo. O nome se encaixa à medida que tentamos fornecer um sistema que fornece um meio consistente de gerar projetos Maven. O Arquétipo ajuda os autores a criar modelos de projeto Maven para usuários e fornece aos usuários os meios de gerar versões parametrizadas desses modelos de projeto.
 Para criar seu primeiro projeto maven, siga as seguintes etapas:
 
 * Crie uma nova pasta chamada `aemformsbundles` na unidade C
@@ -74,12 +74,12 @@ Para criar seu primeiro projeto maven, siga as seguintes etapas:
 * Execute o seguinte comando no prompt de comando
 * `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
-O projeto maven será gerado interativamente e você será solicitado a fornecer valores para várias propriedades, como
+O projeto Maven é gerado interativamente e você deve fornecer valores para várias propriedades, como
 
 | Nome da Propriedade | Significância | Valor |
 |------------------------|---------------------------------------|---------------------|
 | groupId | groupId identifica exclusivamente seu projeto em todos os projetos | com.learningaemforms.adobe |
-| appsFolderName | Nome da pasta que manterá a estrutura do projeto | learn-aemforms |
+| appsFolderName | Nome da pasta que mantém a estrutura do projeto | learn-aemforms |
 | artifactId | artifactId é o nome do jar sem versão. Se você a criou, então você pode escolher qualquer nome que quiser com letras minúsculas e sem símbolos estranhos. | learn-aemforms |
 | version | Se você distribuí-lo, poderá escolher qualquer versão típica com números e pontos (1.0, 1.1, 1.0.1, ...). | 1.0 |
 
@@ -89,37 +89,36 @@ Se tudo correr bem, você deverá ver uma mensagem de sucesso de criação em su
 ## Criar projeto do eclipse a partir do seu projeto Maven
 
 Altere seu diretório de trabalho para `learningaemforms`.
-Executando `mvn eclipse:eclipse` a partir da linha de comando
-O comando acima lê o arquivo pom e cria projetos Eclipse com metadados corretos para que o Eclipse entenda os tipos de projeto, os relacionamentos, o classpath, etc.
+Em execução `mvn eclipse:eclipse` na linha de comando O comando acima lê o arquivo pom e cria projetos Eclipse com metadados corretos para que o Eclipse entenda os tipos de projeto, os relacionamentos, o classpath, etc.
 
 ## Importar o projeto para o eclipse
 
-Iniciar **Eclipse**
+Launch **Eclipse**
 
-Vá para **File -> Import** e selecione **Existing Maven Projects** conforme mostrado aqui
+Ir para **Arquivo -> Importar** e selecione **Projetos Maven existentes** como mostrado aqui
 
 ![fonte de dados](assets/import-mvn-project.JPG)
 
 Clique em Avançar
 
-Selecione `c:\aemformsbundles\learningaemform`s clicando no botão **Procurar**
+Selecione o `c:\aemformsbundles\learningaemform`clicando no botão **Procurar** botão
 
 ![fonte de dados](assets/select-mvn-project.JPG)
 
 >[!NOTE]
 >Você pode optar por importar os módulos apropriados, dependendo de suas necessidades. Selecione e importe somente o módulo principal, caso você só crie o código Java no seu projeto.
 
-Clique em **Finish** para iniciar o processo de importação
+Clique em **Concluir** para iniciar o processo de importação
 
-O projeto é importado para o Eclipse e você verá várias pastas `learningaemforms.xxxx`
+O projeto é importado para o Eclipse e você vê vários `learningaemforms.xxxx` pastas
 
-Expanda o `src/main/java` na pasta `learningaemforms.core`. Esta é a pasta na qual você gravará a maior parte do seu código.
+Expanda o `src/main/java` nos termos do `learningaemforms.core` pasta. Esta é a pasta na qual você está gravando a maior parte do seu código.
 
 ![fonte de dados](assets/learning-core.JPG)
 
 ## Crie seu projeto
 
-Depois de escrever seu serviço OSGi, ou servlet, você precisará criar seu projeto para gerar o pacote OSGi que pode ser implantado usando o console da Web Felix. Consulte [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir o SDK do cliente apropriado em seu projeto Maven. Você terá que incluir o SDK do cliente do FD AEM na seção de dependências de `pom.xml` do projeto principal, conforme mostrado abaixo.
+Depois de gravar seu serviço OSGi, ou servlet, é necessário criar seu projeto para gerar o pacote OSGi que pode ser implantado usando o console da Web Felix. Consulte [SDK do cliente AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) para incluir o SDK do cliente apropriado em seu projeto Maven. Você deve incluir o SDK do cliente do FD do AEM na seção de dependências de `pom.xml` do projeto principal, como mostrado abaixo.
 
 ```xml
 <dependency>
@@ -131,7 +130,7 @@ Depois de escrever seu serviço OSGi, ou servlet, você precisará criar seu pro
 
 Para criar seu projeto, siga as seguintes etapas:
 
-* Abrir **janela de prompt de comando**
+* Abrir **janela da tela de comandos**
 * Vá até `c:\aemformsbundles\learningaemforms\core`
 * Execute o comando `mvn clean install`
 Se tudo correr bem, você deverá ver o pacote no seguinte local `C:\AEMFormsBundles\learningaemforms\core\target`. Esse pacote agora está pronto para ser implantado em AEM usando o console da Web Felix.

@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 197f7e18f0d229698048cb06c2a49c019d420217
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Visite o [Caixa de Sugestão](https://forms.office.com/r/74P5Xz4UH0) para enviar
 
 ## Temporada 2
 
-Cada estação varia muito e será lançada de acordo com uma programação fixa. Os tópicos da segunda temporada são impulsionados principalmente por solicitações anteriores que encontramos em nossos envolvimentos diários com clientes e parceiros. Visite esta página para obter atualizações semanais ou siga-nos na rede social de sua escolha.
+Cada estação varia em comprimento e é lançada de acordo com uma programação fixa. Os tópicos da segunda temporada são impulsionados principalmente por solicitações anteriores que encontramos em nossos envolvimentos diários com clientes e parceiros. Visite esta página para obter atualizações semanais ou siga-nos na rede social de sua escolha.
 
 <table>
     <tr>
@@ -127,11 +127,11 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
      </td>   
      <td>
-            <a href="season-2/cloud5-MoCM-experience-audit.md">
+            <a href="season-2/cloud5-mocm-experience-audit.md">
                <img alt="Mistérios do Cloud Manager.. Auditoria de experiência" src="./imgs/s2/007-thumb.png"/>
                </a>
       <div>
-            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Mistérios do Cloud Manager.. Auditoria de experiência</strong></a>
+            <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Mistérios do Cloud Manager.. Auditoria de experiência</strong></a>
          <br/><em>com Darin Kuntze, Arquiteto da Nuvem Sênior</em>
       </div>
       <p>
@@ -140,11 +140,11 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
       </p>
    </td>
      <td>
-            <a href="season-2/cloud5-MoCM-unit-tests.md">
+            <a href="season-2/cloud5-mocm-unit-tests.md">
                <img alt="Mistérios do Cloud Manager.. Testes de unidade" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
-            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mistérios do Cloud Manager.. Testes de unidade</strong></a>
+            <a href="season-2/cloud5-mocm-unit-tests.md"><strong>Mistérios do Cloud Manager.. Testes de unidade</strong></a>
          <br/><em>com Darin Kuntze &amp; Bryan Stopp, Arquitetos da nuvem sênior</em>
       </div>
       <p>
@@ -155,11 +155,11 @@ Cada estação varia muito e será lançada de acordo com uma programação fixa
   </tr>
     <tr>
         <td>
-               <a href="season-2/cloud5-MoCM-functional-tests.md">
+               <a href="season-2/cloud5-mocm-functional-tests.md">
                    <img alt="Mistérios do Cloud Manager.. Testes funcionais" src="./imgs/s2/009-thumb.png"/>
                </a>
             <div>
-                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Mistérios do Cloud Manager.. Testes funcionais</strong><br/></a>        
+                <a href="season-2/cloud5-mocm-functional-tests.md"><strong>Mistérios do Cloud Manager.. Testes funcionais</strong><br/></a>        
                 <em>com Darin Kuntze &amp; Bryan Stopp, Arquitetos da nuvem sênior</em>
             </div>
             <p><br/>

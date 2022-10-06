@@ -1,8 +1,6 @@
 ---
 title: Listando tipos de ativos personalizados no AEM Forms
-seo-title: Listing Custom Asset Types in AEM Forms
 description: Parte 2 da listagem de tipos de ativos personalizados no AEM Forms
-seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -26,8 +24,7 @@ ht-degree: 0%
 
 ## Criação de modelo personalizado {#creating-custom-template}
 
-
-Para a finalidade deste artigo, criaremos um modelo personalizado para exibir os tipos de ativos personalizados e os tipos de ativos OOTB na mesma página. Para criar um modelo personalizado, siga as instruções a seguir
+Para a finalidade deste artigo, estamos criando um modelo personalizado para exibir os tipos de ativos personalizados e os tipos de ativos OOTB na mesma página. Para criar um modelo personalizado, siga as instruções a seguir
 
 1. Criar um sling: em /apps. Nomeie-o como &quot; myportalcomponent &quot;
 1. Adicione uma propriedade &quot;fpContentType&quot;. Defina seu valor como &quot;**/libs/fd/ fp/formTemplate&quot;.**
@@ -117,4 +114,4 @@ Agora que você configurou seu Componente do Portal de Pesquisa e Lister, é hor
 >Se o seu portal está listando tipos de ativos personalizados em um servidor de publicação, certifique-se de fornecer permissão de &quot;leitura&quot; para o usuário &quot;fd-service&quot; para o nó **/apps/fd/fp/extensions/querybuilder**
 
 ![tipos de ativos](assets/assettypeslistings.png)
-[Baixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém amostras de documentos mp4 e word e arquivos xdp que serão usados como tipos de ativos para listar usando o componente de pesquisa e lister
+[Baixe e instale este pacote usando o gerenciador de pacotes.](assets/customassettypekt1.zip) Ele contém amostras de documentos mp4 e word e arquivos xdp usados como tipos de ativos para listar usando o componente de pesquisa e lister

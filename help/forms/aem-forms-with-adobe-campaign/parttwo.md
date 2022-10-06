@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -267,4 +267,4 @@ Depois de definir o serviço e a ação de envio personalizado, estamos prontos 
 * [Importar formulário adaptável e manipulador de envio personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip).Este pacote contém o formulário adaptável configurado para enviar para a ação de envio personalizada.
 * Visualize o [formulário](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Preencha todos os campos e envie
-* Um novo perfil será criado na instância do ACS
+* Um novo perfil é criado na instância do ACS

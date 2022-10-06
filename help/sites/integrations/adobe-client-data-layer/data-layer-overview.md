@@ -1,23 +1,23 @@
 ---
 title: Uso da camada de dados do cliente do Adobe com componentes principais AEM
-description: A Camada de dados do cliente do Adobe apresenta um método padrão para coletar e armazenar dados sobre uma experiência de visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados. A Camada de dados do cliente do Adobe é independente de plataforma, mas é totalmente integrada aos Componentes principais para uso com o AEM.
-topic: Integrações
-feature: Camada de dados do cliente Adobe, Componentes principais
+description: A Camada de dados do cliente do Adobe apresenta um método padrão para coletar e armazenar dados sobre uma experiência de visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados. A Camada de dados de clientes Adobe é independente de plataforma, mas é totalmente integrada aos Componentes principais para uso com o AEM.
+topic: Integrations
+feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate
 kt: 6261
 thumbnail: 41195.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 0%
+source-wordcount: '780'
+ht-degree: 8%
 
 ---
 
-
 # Uso da camada de dados do cliente do Adobe com componentes principais AEM {#overview}
 
-A Camada de dados do cliente do Adobe apresenta um método padrão para coletar e armazenar dados sobre uma experiência de visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados. A Camada de dados do cliente do Adobe é independente de plataforma, mas é totalmente integrada aos Componentes principais para uso com o AEM.
+A Camada de dados do cliente do Adobe apresenta um método padrão para coletar e armazenar dados sobre uma experiência de visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados. A Camada de dados de clientes Adobe é independente de plataforma, mas é totalmente integrada aos Componentes principais para uso com o AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
@@ -27,13 +27,13 @@ A Camada de dados do cliente do Adobe apresenta um método padrão para coletar 
 
 ## Explorar a camada de dados
 
-Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cliente do Adobe usando as ferramentas do desenvolvedor do seu navegador e o [site de referência WKND](https://wknd.site/) ao vivo.
+Você pode ter uma ideia da funcionalidade integrada da Camada de dados do cliente do Adobe usando as ferramentas do desenvolvedor do seu navegador e do [Site de referência WKND](https://wknd.site/).
 
 >[!NOTE]
 >
 > Capturas de tela abaixo tiradas do navegador Chrome.
 
-1. Navegue até [https://wknd.site](https://wknd.site)
+1. Navegar para [https://wknd.site](https://wknd.site)
 1. Abra as ferramentas do desenvolvedor e insira o seguinte comando no **Console**:
 
    ```js
@@ -57,7 +57,7 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
    });
    ```
 
-1. Execute o comando `adobeDataLayer.getState()` novamente e localize a entrada para `training-data`.
+1. Execute o comando `adobeDataLayer.getState()` novamente e encontre a entrada para `training-data`.
 1. Em seguida, adicione um parâmetro de caminho para retornar apenas o estado específico de um componente:
 
    ```js
@@ -89,13 +89,13 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
    }
    ```
 
-   O código acima inspecionará o objeto `event` e usará o método `adobeDataLayer.getState` para obter o estado atual do objeto que acionou o evento. O método auxiliar inspecionará os critérios `filter` e somente se o `dataObject` atual atender ao filtro, ele será retornado.
+   O código acima inspecionará o `event` e use o `adobeDataLayer.getState` para obter o estado atual do objeto que acionou o evento. O método auxiliar inspecionará o `filter` critérios e somente se o `dataObject` atende ao filtro que será retornado.
 
    >[!CAUTION]
    >
-   > Será importante **e não** atualizar o navegador durante todo esse exercício; caso contrário, o JavaScript do console será perdido.
+   > É importante **not** para atualizar o navegador durante todo este exercício, caso contrário, o JavaScript do console será perdido.
 
-1. Em seguida, insira um manipulador de eventos que será chamado quando um componente **Teaser** for exibido em um **Carrossel**.
+1. Em seguida, insira um manipulador de eventos chamado quando um **Teaser** é exibido em um **Carrossel**.
 
    ```js
    function teaserShownHandler(event) {
@@ -107,9 +107,9 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
    }
    ```
 
-   O `teaserShownHandler` chamará o método `getDataObjectHelper` e passará em um filtro de `wknd/components/teaser` como o `@type` para filtrar eventos acionados por outros componentes.
+   O `teaserShownHandler` chamará a função `getDataObjectHelper` e passar em um filtro de `wknd/components/teaser` como `@type` para filtrar eventos acionados por outros componentes.
 
-1. Em seguida, coloque um ouvinte de evento na camada de dados para ouvir o evento `cmp:show`.
+1. Em seguida, coloque um ouvinte de evento na camada de dados para ouvir o `cmp:show` evento.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -117,13 +117,13 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
    });
    ```
 
-   O evento `cmp:show` é acionado por vários componentes diferentes, como quando um novo slide é mostrado no **Carrossel** ou quando uma nova guia é selecionada no componente **Guia**.
+   O `cmp:show` é acionado por vários componentes diferentes, como quando um novo slide é exibido na **Carrossel** ou quando uma nova guia for selecionada na variável **Tabulação** componente.
 
 1. Na página, alterne os slides do carrossel e observe as instruções do console:
 
    ![Ative o carrossel e veja o ouvinte do evento](assets/teaser-console-slides.png)
 
-1. Remova o ouvinte de evento da camada de dados para parar de ouvir o evento `cmp:show`:
+1. Remova o ouvinte de eventos da camada de dados para parar de ouvir o `cmp:show` evento:
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -134,7 +134,7 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
 
 1. Retorne à página e alterne os slides do carrossel. Observe que não há mais declarações registradas e que o evento não está sendo escutado.
 
-1. Em seguida, insira um manipulador de eventos que será chamado quando o evento de exibição de página for acionado:
+1. Em seguida, crie um manipulador de eventos chamado quando o evento de exibição de página for acionado:
 
    ```js
    function pageShownHandler(event) {
@@ -146,9 +146,9 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
    }
    ```
 
-   Observe que o tipo de recurso `wknd/components/page` é usado para filtrar o evento.
+   Observe que o tipo de recurso `wknd/components/page` é usada para filtrar o evento.
 
-1. Em seguida, coloque um ouvinte de evento na camada de dados para ouvir o evento `cmp:show`, chamando o `pageShownHandler`.
+1. Em seguida, coloque um ouvinte de evento na camada de dados para ouvir o `cmp:show` , chamando o `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -161,18 +161,18 @@ Você pode obter uma ideia da funcionalidade integrada da Camada de dados do cli
 
    ![Mostrar dados da página](assets/page-show-console-data.png)
 
-   O evento `cmp:show` da página é acionado em cada carregamento de página no topo da página. Você pode perguntar, por que o manipulador de eventos foi acionado, quando a página claramente já foi carregada?
+   O `cmp:show` para a página é acionado em cada carregamento de página, na parte superior da página. Você pode perguntar, por que o manipulador de eventos foi acionado, quando a página claramente já foi carregada?
 
-   Esse é um dos recursos exclusivos da Camada de dados do cliente do Adobe, na medida em que é possível registrar ouvintes de eventos **antes de** ou **depois de** a Camada de dados ter sido inicializada. Esse é um recurso essencial para evitar condições de corrida.
+   Este é um dos recursos exclusivos da Camada de dados do cliente do Adobe, no qual você pode registrar ouvintes de eventos **before** ou **after** a Camada de dados foi inicializada. Esse é um recurso essencial para evitar condições de corrida.
 
-   A Camada de dados mantém uma matriz de filas de todos os eventos que ocorreram em sequência. A Camada de dados por padrão acionará retornos de chamada de evento para eventos que ocorreram no **passado**, bem como eventos no **futuro**. É possível filtrar os eventos para apenas passado ou futuro. [Mais informações podem ser encontradas na documentação](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   A Camada de dados mantém uma matriz de filas de todos os eventos que ocorreram em sequência. A Camada de dados, por padrão, acionará retornos de chamada de evento para eventos que ocorreram no **previous** bem como os eventos na **futura**. É possível filtrar os eventos para apenas passado ou futuro. [Mais informações podem ser encontradas na documentação](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Próximas etapas
 
-Consulte o tutorial a seguir para saber como usar a camada de Dados do cliente do Adobe orientada por eventos para [coletar dados de página e enviar para o Adobe Analytics](../analytics/collect-data-analytics.md).
+Consulte o tutorial a seguir para saber como usar a camada de dados do cliente do Adobe orientada por eventos para [coletar dados de página e enviar para o Adobe Analytics](../analytics/collect-data-analytics.md).
 
-Ou saiba como [Personalizar a camada de dados do cliente do Adobe com componentes AEM](./data-layer-customize.md)
+Ou aprenda como [Personalizar a camada de dados do cliente do Adobe com componentes de AEM](./data-layer-customize.md)
 
 
 ## Recursos adicionais {#additional-resources}

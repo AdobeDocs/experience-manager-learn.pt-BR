@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -153,4 +153,4 @@ Para que isso funcione seu sistema, siga as etapas a seguir
 * Consulte a imagem acima para obter as propriedades. Isso pressupõe que você usará o MySQL como seu Banco de Dados.
 * Implante os pacotes OSGi fornecidos como parte dos ativos deste artigo.
 * Visualize o formulário e envie-o.
-* Os dados JSON serão armazenados no banco de dados criado ao importar o arquivo &quot;schema.sql&quot;.
+* Os dados JSON são armazenados no banco de dados criado ao importar o arquivo &quot;schema.sql&quot;.

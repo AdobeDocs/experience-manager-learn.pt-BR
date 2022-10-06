@@ -1,14 +1,14 @@
 ---
-title: '"Capítulo 1 - Conceitos, padrões e padrões do Dispatcher"'
+title: "Capítulo 1 - Conceitos, padrões e padrões do Dispatcher"
 description: Este capítulo fornece uma breve introdução sobre a história e a mecânica do Dispatcher e discute como isso influencia a forma como um desenvolvedor de AEM projetaria seus componentes.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
@@ -198,13 +198,13 @@ e
 
 `http://domain.com/home.html/suffix.html`
 
-Eles são absolutamente válidos em AEM. Você não veria nenhum problema em sua máquina de desenvolvimento local (sem um Dispatcher). O mais provável é que você também não encontre nenhum problema no teste de UAT ou de carga. O problema que enfrentamos é tão sutil que escorre pela maioria dos testes.  Isso o afetará bastante quando você estiver no horário de pico e você estará limitado no tempo para resolvê-lo, provavelmente não terá acesso ao servidor nem recursos para corrigi-lo. Nós estivemos lá...
+Eles são absolutamente válidos em AEM. Você não veria nenhum problema em sua máquina de desenvolvimento local (sem um Dispatcher). O mais provável é que você também não encontre nenhum problema no teste de UAT ou de carga. O problema que enfrentamos é tão sutil que escorre pela maioria dos testes.  Isso o afetará bastante quando você estiver no horário de pico e estiver limitado no tempo para resolvê-lo, provavelmente não terá acesso ao servidor nem recursos para corrigi-lo. Nós estivemos lá...
 
 Então... qual é o problema?
 
 `home.html` em um sistema de arquivos pode ser um arquivo ou uma pasta. Não tanto ao mesmo tempo como em AEM.
 
-Se você solicitar `home.html` primeiro, ele será criado como um arquivo.
+Se você solicitar `home.html` primeiro, ele é criado como um arquivo.
 
 Pedidos subsequentes para `home.html/suffix.html` retornar resultados válidos, mas como o arquivo `home.html` &quot;bloqueia&quot; a posição no sistema de arquivos,  `home.html` não pode ser criada uma segunda vez como uma pasta e, portanto, `home.html/suffix.html` não está em cache.
 
@@ -304,7 +304,7 @@ invalidate-path:  /content/dam/path/to/image
 
 A invalidação é fácil assim: Uma simples solicitação de GET para um URL especial &quot;/invalidate&quot; no Dispatcher. Não é necessário um corpo HTTP, a &quot;carga&quot; é apenas o cabeçalho &quot;invalidate-path&quot;. Observe também que o invalidate-path no cabeçalho é o recurso que AEM conhece - e não o arquivo ou arquivos que o Dispatcher armazenou em cache. AEM só sabe sobre recursos. Extensões, seletores e sufixos são usados em tempo de execução quando um recurso é solicitado. AEM não executa nenhuma contabilidade sobre quais seletores foram usados em um recurso, portanto, o caminho do recurso é tudo o que ele sabe ao ativar um recurso.
 
-No nosso caso, isso é suficiente. Se um recurso tiver sido alterado, podemos assumir com segurança que todas as representações desse recurso também foram alteradas. No nosso exemplo, se a imagem mudou, uma nova miniatura também será renderizada.
+No nosso caso, isso é suficiente. Se um recurso tiver sido alterado, podemos assumir com segurança que todas as representações desse recurso também foram alteradas. No nosso exemplo, se a imagem mudou, uma nova miniatura também é renderizada.
 
 O Dispatcher pode excluir com segurança o recurso com todas as renderizações que ele armazenou em cache. Vai fazer algo como:
 
@@ -361,7 +361,7 @@ O que aconteceu? O Dispatcher armazena uma versão estática de uma página cont
 
 O Dispatcher, sendo um mero servidor Web baseado em sistemas de arquivos, é rápido, mas também relativamente simples. Se um recurso incluído for alterado, isso não ocorrerá. Ele ainda se prende ao conteúdo que estava lá quando a página de inclusão foi renderizada.
 
-A página &quot;Especial de inverno&quot; ainda não foi renderizada, portanto, não há versão estática no Dispatcher e, portanto, será exibida com o novo teaser, pois ela será renderizada recentemente mediante solicitação.
+A página &quot;Especial de inverno&quot; ainda não foi renderizada, portanto, não há versão estática no Dispatcher e, portanto, é exibida com o novo teaser, pois ele é renderizado recentemente mediante solicitação.
 
 Você pode pensar que o Dispatcher manteria o controle de todos os recursos que ele toca ao renderizar e liberar todas as páginas que usaram esse recurso, quando esse recurso for alterado. Mas o Dispatcher não renderiza as páginas. A renderização é executada pelo sistema Publish . O Dispatcher não sabe quais recursos são adicionados a um arquivo .html renderizado.
 
@@ -453,7 +453,7 @@ Seria um pouco além deste guia para entrar nos detalhes, mas queremos dar a voc
 
 2. Se o agente enviar um cabeçalho HTTP `CQ-Action-Scope: ResourceOnly`, o que significa que essa única solicitação de invalidação não aciona uma invalidação automática. Este ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) parte do código pode ser um bom ponto de partida para seu próprio agente de replicação.
 
-3. `ResourceOnly`, só impede a invalidação automática. Para realmente fazer a resolução e as invalidações de dependência necessárias, você deve acionar as solicitações de invalidação sozinho. Você pode verificar as regras de liberação do Dispatcher do pacote ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para inspiração sobre como isso poderia realmente acontecer.
+3. `ResourceOnly`, só impede a invalidação automática. Para realmente fazer a resolução e as invalidações de dependência necessárias, você deve acionar as solicitações de invalidação sozinho. Você pode querer verificar as regras de liberação do Dispatcher do pacote ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) para inspiração sobre como isso poderia realmente acontecer.
 
 Não recomendamos que você crie um esquema de resolução de dependência. Há demasiados esforços e poucos ganhos - e, como já foi dito, há demasiado que nos enganaremos.
 
@@ -582,7 +582,7 @@ Está vendo? O &quot;M&quot; no DAM significa &quot;Gerenciamento&quot; - como n
 
 Da perspectiva de um desenvolvedor AEM o padrão parecia super elegante. Mas com o Dispatcher levado em conta a equação, você pode concordar, que a abordagem ingênua pode não ser suficiente.
 
-Deixamos a você decidir se isso é um padrão ou um anti-padrão por enquanto. E talvez você já tenha algumas boas ideias em mente sobre como mitigar os problemas explicados acima? Bom. Então, estará ansioso para ver como outros projetos resolveram esses problemas.
+Deixamos a você decidir se isso é um padrão ou um anti-padrão por enquanto. E talvez você já tenha algumas boas ideias em mente sobre como mitigar os problemas explicados acima? Bom. Então você deve estar ansioso para ver como outros projetos resolveram esses problemas.
 
 ### Resolvendo problemas comuns do Dispatcher
 
@@ -1526,7 +1526,7 @@ Para mitigar o problema dessa &quot;tempestade de invalidação de cache&quot;, 
 
 Você pode definir o Dispatcher para usar um `grace period` para invalidação automática. Isso adicionaria internamente algum tempo extra à variável `statfiles` data de modificação.
 
-Vamos dizer, seu `statfile` O tem um tempo de modificação de hoje, 12:00 e o seu `gracePeriod` é definido como 2 minutos. Em seguida, todos os arquivos invalidados automaticamente serão considerados válidos às 12:01 e às 12:02. Eles serão renderizados novamente depois das 12:02.
+Vamos dizer, seu `statfile` O tem um tempo de modificação de hoje, 12:00 e o seu `gracePeriod` é definido como 2 minutos. Em seguida, todos os arquivos invalidados automaticamente são considerados válidos às 12:01 e às 12:02. Eles são renderizados novamente depois das 12:02.
 
 A configuração de referência propõe um `gracePeriod` dois minutos por uma boa razão. Você pode pensar &quot;Dois minutos? Isso não é quase nada. Posso esperar facilmente 10 minutos para que o conteúdo apareça...&quot;.  Portanto, você pode ser tentado a definir um período mais longo, digamos 10 minutos, supondo que seu conteúdo apareça pelo menos após esses 10 minutos.
 

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Quando várias configurações de OSGi são resolvidas via runmode para o ambien
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### Causa 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 Os scripts de redirecionamento definem o conteúdo da linha de base, os usuários, as ACLs, etc. Em AEM as a Cloud Service, os scripts de realocação são aplicados durante a Criação de imagem, no entanto, na inicialização rápida local AEM SDK, eles são aplicados quando a configuração de fábrica de reponteiro OSGi é ativada. Por causa disso, os scripts Repoinit podem falhar silenciosamente (com registro) AEM inicialização rápida local do SDK, mas fazem com que a etapa Criar imagem falhe, interrompendo a implantação.
 
-+ __Causa:__ Um script de reindicação está malformado. Observe que isso pode deixar o repositório em um estado incompleto, pois qualquer script de repontaria após a falha será executado no repositório.
++ __Causa:__ Um script de reindicação está malformado. Isso pode deixar o repositório em um estado incompleto, pois qualquer script de repontaria após a falha do script não será executado no repositório.
 + __Resolução:__ Revise a inicialização rápida local AEM do SDK quando a configuração OSGi do script de redirecionamento é implantada para determinar se e quais são os erros.
 
 ### Dependência de conteúdo de reindicação insatisfeita

@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2372'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Este capítulo aprofunda a API do modelo JSON do AEM e como o conteúdo JSON exp
 
 ## O que você vai criar
 
-Este capítulo verificará como o `Text` SPA componente é mapeado para a AEM `Text`componente. Um novo `Image` SPA componente será criado e poderá ser usado no SPA e criado no AEM. Recursos prontos para uso do **Contêiner de layout** e **Editor de modelos** as políticas serão também utilizadas para criar uma visão um pouco mais variada em termos de aparência.
+Este capítulo verificará como o `Text` SPA componente é mapeado para a AEM `Text`componente. Um novo `Image` SPA componente é criado e pode ser usado no SPA e criado no AEM. Recursos prontos para uso do **Contêiner de layout** e **Editor de modelos** as políticas serão também utilizadas para criar uma visão um pouco mais variada em termos de aparência.
 
 ![Criação final da amostra de capítulo](./assets/map-components/final-page.png)
 
@@ -92,7 +92,7 @@ Vamos ver como o componente funciona.
 
    `:type` é uma propriedade reservada que lista a variável `sling:resourceType` (ou caminho) do Componente de AEM. O valor de `:type` é o que é usado para mapear o componente AEM para o componente SPA.
 
-   `text` e `richText` são propriedades adicionais que serão expostas ao componente SPA.
+   `text` e `richText` são propriedades adicionais expostas ao componente SPA.
 
 ### Inspect o componente de texto
 
@@ -146,7 +146,7 @@ Vamos ver como o componente funciona.
    };
    ```
 
-   O código acima é responsável por determinar quando renderizar o espaço reservado no ambiente de criação do AEM. Se a variável `isEmpty` retornos de método **true** em seguida, o espaço reservado será renderizado.
+   O código acima é responsável por determinar quando renderizar o espaço reservado no ambiente de criação do AEM. Se a variável `isEmpty` retornos de método **true** em seguida, o espaço reservado é renderizado.
 
 6. Por fim, dê uma olhada no `MapTo` chame em ~line 53:
 
@@ -178,7 +178,7 @@ Vamos ver como o componente funciona.
 
 8. Inspect **text.component.html** at `ui.frontend/src/app/components/text/text.component.html`.
 
-   Este arquivo está vazio, pois todo o conteúdo do componente será definido pela variável `innerHTML` propriedade.
+   Este arquivo está vazio, pois todo o conteúdo do componente é definido pela variável `innerHTML` propriedade.
 
 9. A Inspect **app.module.ts** at `ui.frontend/src/app/app.module.ts`.
 
@@ -211,11 +211,11 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
 
    ![JSON do Componente principal de imagem](./assets/map-components/image-json.png)
 
-   Propriedades de `src`, `alt`e `title` será usada para preencher a SPA `Image` componente.
+   Propriedades de `src`, `alt`e `title` são usados para preencher a SPA `Image` componente.
 
    >[!NOTE]
    >
-   > Há outras propriedades de imagem expostas (`lazyEnabled`, `widths`) que permitem que um desenvolvedor crie um componente adaptável e de carregamento lento. O componente criado neste tutorial será simples e **not** use essas propriedades avançadas.
+   > Há outras propriedades de imagem expostas (`lazyEnabled`, `widths`) que permitem que um desenvolvedor crie um componente adaptável e de carregamento lento. O componente criado neste tutorial é simples e faz **not** use essas propriedades avançadas.
 
 2. Retorne ao IDE e abra o `en.model.json` at `ui.frontend/src/mocks/json/en.model.json`. Como esse é um novo componente para nosso projeto, precisamos &quot;zombar&quot; o JSON da imagem.
 
@@ -244,7 +244,7 @@ Antes de saltar para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
            ],
    ```
 
-   O projeto inclui uma imagem de amostra em `/mock-content/adobestock-140634652.jpeg` que será usada com a variável **servidor de desenvolvimento de webpack**.
+   O projeto inclui uma imagem de amostra em `/mock-content/adobestock-140634652.jpeg` que é usado com o **servidor de desenvolvimento de webpack**.
 
    Você pode visualizar o [en.model.json aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
@@ -457,7 +457,7 @@ Vamos inspecionar o Contêiner de layout ainda mais.
 
    ![Criação final da amostra de capítulo](assets/map-components/final-page.png)
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, você aprendeu a mapear componentes SPA para AEM componentes e implementou um novo `Image` componente. Você também tem a oportunidade de explorar os recursos responsivos da **Contêiner de layout**.
 
@@ -498,6 +498,6 @@ As próximas etapas serão executadas usando o Visual Studio Code IDE e [Sincron
     </workspaceFilter>
    ```
 
-   O `filter.xml` O arquivo é responsável por identificar os caminhos dos nós que serão instalados com o pacote. Observe que `mode="merge"` em cada um dos filtros que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código faça isso **not** substituir conteúdo. Consulte a [Documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
+   O `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe que `mode="merge"` em cada um dos filtros que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código faça isso **not** substituir conteúdo. Consulte a [Documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
 
    Comparar `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.

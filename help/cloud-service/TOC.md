@@ -4,7 +4,7 @@ user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager a
 breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: bc222867c937b7d498e7b56bebc0aac18289ad03
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 21%
@@ -214,7 +214,7 @@ ht-degree: 21%
    + Integração com o Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurar a integração](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analisar dados de formulário enviados](./forms/forms-cs-and-power-automate/send-email-notification.md)
-      + [Enviar DoR como anexo de email](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
+      + [Enviar DoR como anexo de email](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
       + [Extrair anexos de formulário de dados enviados](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integração com o Microsoft Dynamics{#formscs-dynamics-crm}
       + [Criar aplicativo dinâmico](./forms/formscs-dynamics-crm/create-dynamics-account.md)
@@ -272,9 +272,9 @@ ht-degree: 21%
       + [Agendador de Tarefas do Sling](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
       + [Corrija seu cache](./cloud-5/season-2/cloud5-fix-your-cache.md)
       + [Corrigir suas regravações](./cloud-5/season-2/cloud5-fix-your-rewrites.md)
-      + [Cloud Manager - Auditoria de experiência](./cloud-5/season-2/cloud5-MoCM-experience-audit.md)
-      + [Cloud Manager - Testes de unidade](./cloud-5/season-2/cloud5-MoCM-unit-tests.md)
-      + [Cloud Manager - Testes funcionais](./cloud-5/season-2/cloud5-MoCM-functional-tests.md)
+      + [Cloud Manager - Auditoria de experiência](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
+      + [Cloud Manager - Testes de unidade](./cloud-5/season-2/cloud5-mocm-unit-tests.md)
+      + [Cloud Manager - Testes funcionais](./cloud-5/season-2/cloud5-mocm-functional-tests.md)
 + [Série AEM especialistas](./aem-experts-series.md)
 + Tutorials de várias etapas{#multi-step-tutorials}
    + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)

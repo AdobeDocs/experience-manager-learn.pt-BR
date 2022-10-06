@@ -1,8 +1,6 @@
 ---
 title: Gerando Documento de Canal de Impressão Mesclando Dados
-seo-title: Gerando Documento de Canal de Impressão Mesclando Dados
 description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
-seo-description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,10 +10,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -26,7 +24,7 @@ Os documentos de canal de impressão geralmente são gerados pela busca de dados
 
 ## Criar serviço de preenchimento prévio
 
-O nome do serviço &quot;ccm-print-test&quot; será usado para acessar este serviço . Depois que esse serviço de pré-preenchimento for definido, você poderá acessar esse serviço na implementação da etapa do processo do servlet ou do fluxo de trabalho para gerar o documento do canal de impressão.
+O nome de serviço &quot;ccm-print-test&quot; é usado para acessar este serviço . Depois que esse serviço de pré-preenchimento for definido, você poderá acessar esse serviço na implementação da etapa do processo do servlet ou do fluxo de trabalho para gerar o documento do canal de impressão.
 
 ```java
 import java.io.InputStream;
@@ -68,7 +66,7 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### Criar implementação do WorkflowProcess
 
-O snippet do código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no fluxo de trabalho do AEM é associada a essa implementação. Essa implementação espera três argumentos de processo, descritos abaixo:
+O snippet do código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no Fluxo de Trabalho AEM está associada a essa implementação. Essa implementação espera três argumentos de processo, descritos abaixo:
 
 * Nome do caminho DataFile especificado ao configurar o Formulário adaptável
 * Nome do modelo de canal de impressão
@@ -170,16 +168,16 @@ Para testar isso em seu servidor, siga as seguintes etapas:
 * Certifique-se de ter adicionado a seguinte entrada na Configuração do serviço Mapeador de Usuário do Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Baixe e descompacte os ativos relacionados a este artigo no seu sistema de arquivos](assets/prefillservice.zip)
-* [Importe os seguintes pacotes usando o Gerenciador de pacotes do AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe os seguintes pacotes usando o Gerenciador de pacotes de AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Implante o seguinte usando o Console da Web do AEM Felix](http://localhost:4502/system/console/bundles)
+* [Implante o seguinte usando AEM Felix Web Console](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Este pacote contém o código mencionado neste artigo.
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Verifique se o formulário adaptável está configurado para enviar para o fluxo de trabalho do AEM, como mostrado abaixo
+* Verifique se o formulário adaptável está configurado para enviar para AEM fluxo de trabalho, como mostrado abaixo
    ![imagem](assets/generateic.PNG)
 * [Configure o modelo de workflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Certifique-se de que a etapa do processo e o envio de componentes de email estejam configurados de acordo com seu ambiente
 * [Visualize ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie

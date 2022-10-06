@@ -8,16 +8,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
 # Servlet para armazenar dados de formulário
 
-A próxima etapa é criar um servlet que inserirá ou atualizará os dados do formulário. O servlet chama os métodos apropriados do serviço OSGi para inserir ou atualizar o banco de dados. Os dados do Formulário adaptativo armazenados estão associados a um GUID. O mesmo GUID é usado para atualizar os dados do formulário. Este servlet será chamado quando o botão &quot;SaveAndContinueLater&quot; for clicado.
+A próxima etapa é criar um servlet que inserirá ou atualizará os dados do formulário. O servlet chama os métodos apropriados do serviço OSGi para inserir ou atualizar o banco de dados. Os dados do Formulário adaptativo armazenados estão associados a um GUID. O mesmo GUID é usado para atualizar os dados do formulário. Este servlet é chamado quando o botão &quot;SaveAndContinueLater&quot; é clicado.
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;
