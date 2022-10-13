@@ -1,0 +1,64 @@
+---
+title: Criação do seu primeiro pacote OSGi com o AEM Forms
+description: Crie seu primeiro pacote OSGi usando Maven e Eclipse
+version: 6.4,6.5
+feature: Adaptive Forms
+topic: Development
+role: Developer
+level: Beginner
+kt: kt-11245
+source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+workflow-type: tm+mt
+source-wordcount: '269'
+ht-degree: 0%
+
+---
+
+# Inclusão de pacotes de terceiros em seu projeto do AEM
+
+Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no seu projeto do AEM.Para a finalidade deste artigo, vamos incluir o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
+
+>[!NOTE]
+> Pressupõe-se que o jar de terceiros seja um pacote OSGi
+
+```java
+<!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+<dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.55</version>
+</dependency>
+```
+
+Se o seu pacote OSGi estiver no sistema de arquivos, a dependência será semelhante a esta
+
+```java
+<dependency>
+    <groupId>jsch</groupId>
+    <artifactId>jsch</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/localjar/jsch-0.1.55-bundle.jar</systemPath>
+</dependency>
+```
+
+## Criar a estrutura de pastas
+
+Estamos adicionando este pacote ao nosso projeto AEM **AEMormsProcessStep** que residam no **c:\aemformsbundles** pasta
+
+* Abra o **filter.xml** no diretório C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault folder of your project Make a note of the root attribute of the filter element.
+
+* Crie a seguinte estrutura de pastas C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install
+* O **apps/AEMFormsProcessStep-vendor-packages** é o valor do atributo raiz em filter.xml
+* Atualize a seção de dependências do POM.xml do projeto
+* Abra o prompt de comando. No meu caso, acesse a pasta do seu projeto (c:\aemformsbundles\AEMFormsProcessStep). Execute o seguinte comando
+
+```java
+mvn clean install -pAutoInstallSinglePackage
+```
+
+Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando [console da web felix](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do `crx` repositório como mostrado abaixo
+![terceiros](assets/custom-bundle1.png)
+![terceiros](assets/custom-bundle1.png)
+
+
