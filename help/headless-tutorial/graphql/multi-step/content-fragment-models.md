@@ -1,6 +1,6 @@
 ---
 title: Definição dos modelos de fragmento de conteúdo - Introdução ao AEM sem interface - GraphQL
-description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Saiba como modelar o conteúdo e criar um esquema com Modelos de fragmento de conteúdo em AEM. Revise os modelos existentes e crie um novo modelo. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um schema.
+description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Saiba como modelar o conteúdo e criar um esquema com Modelos de fragmento de conteúdo em AEM. Revise modelos existentes e crie um modelo. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um schema.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6712
@@ -10,44 +10,44 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
 
 # Definição dos modelos de fragmento do conteúdo {#content-fragment-models}
 
-Neste capítulo, saiba como modelar conteúdo e criar um schema com **Modelos de fragmentos do conteúdo**. Você aprenderá sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
+Neste capítulo, saiba como modelar o conteúdo e criar um schema com **Modelos de fragmentos do conteúdo**. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um schema como parte do modelo.
 
-Neste capítulo, são criados dois modelos simples: **Equipe** e **Pessoa**. O **Equipe** o modelo de dados tem nome, nome abreviado e descrição e faz referência ao **Pessoa** modelo de dados, que tem nome completo, detalhes da bio, imagem do perfil e lista de ocupações.
+Nós criamos dois modelos simples. **Equipe** e **Pessoa**. O **Equipe** o modelo de dados tem nome, nome abreviado e descrição e faz referência ao **Pessoa** modelo de dados, que tem nome completo, detalhes da bio, imagem do perfil e lista de ocupações.
 
 Você também é bem-vindo a criar seu próprio modelo seguindo as etapas básicas e ajustar as respectivas etapas, como consultas GraphQL, e o código do aplicativo React ou simplesmente seguir as etapas descritas nesses capítulos.
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial de várias partes e presume-se que um [AEM ambiente do autor está disponível](./overview.md#prerequisites)
+Este é um tutorial de várias partes e presume-se que um [AEM ambiente do autor está disponível](./overview.md#prerequisites).
 
 ## Objetivos {#objectives}
 
-* Crie um novo Modelo de fragmento de conteúdo.
+* Criar um modelo de fragmento de conteúdo.
 * Identifique os tipos de dados disponíveis e as opções de validação para criar modelos.
 * Entenda como o modelo de fragmento de conteúdo define **both** o schema de dados e o modelo de criação para um Fragmento de conteúdo.
 
-## Criar uma nova configuração de projeto
+## Criar uma configuração de projeto
 
-Uma configuração de projeto contém todos os modelos de Fragmento de conteúdo associados a um projeto específico e fornece um meio de organizar modelos. Pelo menos um projeto deve ser criado **before** criação do novo Modelo de fragmento de conteúdo.
+Uma configuração de projeto contém todos os modelos de Fragmento de conteúdo associados a um projeto específico e fornece um meio de organizar modelos. Pelo menos um projeto deve ser criado **before** criação do Modelo de fragmento de conteúdo.
 
 1. Faça logon no AEM **Autor** ambiente (ex. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Navegador de configuração**.
 
    ![Navegar até o Navegador de configuração](assets/content-fragment-models/navigate-config-browser.png)
-1. Clique em **Criar**.
+1. Clique em **Criar**, no canto superior direito
 1. Na caixa de diálogo resultante, digite:
 
    * Título*: **Meu projeto**
-   * Nome*: **meu projeto** (prefere usar todas as letras minúsculas usando hífens para separar palavras. Essa sequência de caracteres influenciará o ponto de extremidade GraphQL exclusivo para o qual os aplicativos clientes executarão solicitações.)
+   * Nome*: **meu projeto** (prefere usar todas as letras minúsculas usando hífens para separar palavras. Essa sequência de caracteres influencia o ponto de extremidade GraphQL exclusivo para o qual os aplicativos clientes executam solicitações.)
    * Verificar **Modelos de fragmentos do conteúdo**
    * Verificar **Consultas Persistentes GraphQL**
 
@@ -59,7 +59,7 @@ Em seguida, crie dois modelos para um **Equipe** e **Pessoa**.
 
 ### Criar o modelo de pessoa
 
-Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa uma pessoa que faz parte de uma equipe.
+Criar um modelo para um **Pessoa**, que é o modelo de dados que representa uma pessoa que faz parte de uma equipe.
 
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Modelos de fragmentos do conteúdo**.
 
@@ -67,9 +67,7 @@ Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa
 
 1. Navegue até o **Meu projeto** pasta.
 1. Toque **Criar** no canto superior direito para trazer o **Criar modelo** assistente.
-1. Para **Título do modelo** digite: **Pessoa** e tocar **Criar**.
-
-   Toque **Abrir** na caixa de diálogo resultante, para abrir o modelo recém-criado.
+1. Em **Título do modelo** , insira **Pessoa** e tocar **Criar**. Na caixa de diálogo resultante, toque em **Abrir**, para criar o modelo.
 
 1. Arrastar e soltar uma **Texto de linha única** no painel principal. Insira as seguintes propriedades no **Propriedades** guia :
 
@@ -93,7 +91,7 @@ Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa
    * **Nome da Propriedade**: `profilePicture`
    * **Caminho raiz**: `/content/dam`
 
-   Ao configurar o **Caminho raiz** você pode clicar no botão **pasta** ícone para exibir uma modal e selecionar o caminho. Isso restringirá quais pastas os autores podem usar para preencher o caminho. `/content/dam` é a raiz na qual todos os ativos AEM (imagens, vídeos, outros Fragmentos de conteúdo) são armazenados.
+   Ao configurar o **Caminho raiz**, você pode clicar no botão **pasta** ícone para exibir uma modal e selecionar o caminho. Isso restringe quais pastas os autores podem usar para preencher o caminho. `/content/dam` é a raiz na qual todos os AEM Assets (imagens, vídeos, outros Fragmentos de conteúdo) são armazenados.
 
 1. Adicionar uma validação ao **Referência de imagem** para que somente os tipos de conteúdo **Imagens** pode ser usada para preencher o campo.
 
@@ -117,10 +115,10 @@ Criar um novo modelo para um **Pessoa**, que é o modelo de dados que representa
 
 ### Criar o modelo de equipe
 
-Criar um novo modelo para um **Equipe**, que é o modelo de dados para uma equipe de pessoas. O modelo Equipe referenciará o modelo Pessoa para representar os membros da equipe.
+Criar um modelo para um **Equipe**, que é o modelo de dados para uma equipe de pessoas. O modelo Equipe faz referência ao modelo Pessoa para representar os membros da equipe.
 
 1. No **Meu projeto** pasta, toque em **Criar** no canto superior direito para trazer o **Criar modelo** assistente.
-1. Para **Título do modelo** digite: **Equipe** e tocar **Criar**.
+1. Em **Título do modelo** , insira **Equipe** e tocar **Criar**.
 
    Toque **Abrir** na caixa de diálogo resultante, para abrir o modelo recém-criado.
 
@@ -136,10 +134,10 @@ Criar um novo modelo para um **Equipe**, que é o modelo de dados para uma equip
    * **Nome da Propriedade**: `shortName`
    * Verificar **Obrigatório**
    * Verificar **Exclusivo**
-   * Em **Tipo de validação** > escolha **Personalizado**
-   * Em **Regex de validação personalizada** > enter `^[a-z0-9\-_]{5,40}$` - isso garantirá que apenas valores alfanuméricos em minúsculas e traços entre 5 e 40 caracteres possam ser inseridos.
+   * Em, **Tipo de validação** > escolha **Personalizado**
+   * Em, **Regex de validação personalizada** > enter `^[a-z0-9\-_]{5,40}$` - isso garante que apenas valores alfanuméricos minúsculos e traços de 5 a 40 caracteres possam ser inseridos.
 
-   O `shortName` A propriedade nos fornecerá uma maneira de consultar uma equipe individual com base em um caminho encurtado. O **Exclusivo** essa configuração garante que o valor seja sempre único por Fragmento de conteúdo desse modelo.
+   O `shortName` fornece uma maneira de consultar uma equipe individual com base em um caminho encurtado. O **Exclusivo** essa configuração garante que o valor seja sempre único por Fragmento de conteúdo desse modelo.
 
 1. Toque no **Tipos de dados** e arraste e solte uma **Texto de várias linhas** abaixo do campo **Nome abreviado** campo. Insira as seguintes propriedades:
 
@@ -188,7 +186,7 @@ Parabéns, você acabou de criar seus primeiros Modelos de fragmento de conteúd
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Criação de modelos de fragmentos de conteúdo](author-content-fragments.md), você criará e editará um novo Fragmento de conteúdo com base em um Modelo de fragmento de conteúdo. Você também aprenderá a criar variações de Fragmentos de conteúdo.
+No próximo capítulo, [Criação de modelos de fragmentos de conteúdo](author-content-fragments.md), crie e edite um novo Fragmento de conteúdo com base em um Modelo de fragmento de conteúdo. Você também aprenderá a criar variações de Fragmentos de conteúdo.
 
 ## Documentação relacionada
 

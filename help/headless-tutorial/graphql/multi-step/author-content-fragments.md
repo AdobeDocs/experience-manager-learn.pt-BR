@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
 
 # Criação do fragmento de conteúdo {#authoring-content-fragments}
 
-Neste capítulo, você criará e editará um novo Fragmento do conteúdo com base no [modelo de fragmento de conteúdo recém-definido](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
+Neste capítulo, você cria e edita um novo Fragmento do conteúdo com base na variável [modelo de fragmento de conteúdo recém-definido](./content-fragment-models.md). Você também aprenderá a criar variações de Fragmentos de conteúdo.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -34,11 +34,11 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas na se
 
 Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar Fragmentos de conteúdo dos modelos criados no capítulo anterior, uma pasta deve ser criada para armazená-los. Uma configuração é necessária na pasta para permitir a criação de fragmentos de modelos específicos.
 
-1. Na tela inicial AEM, acesse **Ativos** > **Arquivos**.
+1. Na tela inicial AEM, navegue até **Ativos** > **Arquivos**.
 
    ![Navegar para arquivos de ativos](assets/author-content-fragments/navigate-assets-files.png)
 
-1. Toque **Criar** no canto e toque em **Pasta**. Na caixa de diálogo resultante, digite:
+1. Toque **Criar** no canto superior direito e toque **Pasta**. Na caixa de diálogo resultante, digite:
 
    * Título*: **Meu projeto**
    * Nome: **meu projeto**
@@ -49,17 +49,17 @@ Os Fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
    ![Abrir propriedades da pasta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Toque no **Cloud Services** guia . Em **Configuração na nuvem** use o localizador de caminho para selecionar o **Meu projeto** configuração. O valor deve ser `/conf/my-project`.
+1. Toque no **Cloud Services** guia . Na guia Configuração da nuvem , use o localizador de caminho para selecionar a variável **Meu projeto** configuração. O valor deve ser `/conf/my-project`.
 
    ![Definir configuração da nuvem](assets/author-content-fragments/set-cloud-config-my-project.png)
 
-   Configurar essa propriedade permitirá que os Fragmentos de conteúdo sejam criados usando os modelos criados no capítulo anterior.
+   Configurar essa propriedade permite que Fragmentos de conteúdo sejam criados usando os modelos criados no capítulo anterior.
 
-1. Toque no **Políticas** guia . Em **Modelos permitidos de fragmento do conteúdo** use o localizador de caminho para selecionar o **Pessoa** e **Equipe** modelo criado anteriormente.
+1. Toque no **Políticas** na guia , em **Modelos permitidos de fragmento do conteúdo** use o localizador de caminho para selecionar o **Pessoa** e **Equipe** modelo criado anteriormente.
 
    ![Modelos de fragmento de conteúdo permitidos](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Essas políticas são herdadas por qualquer subpasta automaticamente e podem ser substituídas. Observe que você também pode permitir modelos por tags ou habilitar modelos de outras configurações de projeto. Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
+   Essas políticas são herdadas por qualquer subpasta automaticamente e podem ser substituídas. Você também pode permitir modelos por tags ou habilitar modelos de outras configurações de projeto. Esse mecanismo fornece uma maneira poderosa de gerenciar a hierarquia de conteúdo.
 
 1. Toque **Salvar e fechar** para salvar as alterações nas propriedades da pasta.
 
@@ -91,25 +91,25 @@ Os próximos vários Fragmentos de conteúdo são criados com base na variável 
 
    ![Novo fragmento de conteúdo](assets/author-content-fragments/new-content-fragment-john-doe.png)
 1. Toque **Criar**.
-1. Repita as etapas acima para criar um novo fragmento que represente **Alison Smith**:
+1. Repita as etapas acima para criar um fragmento que represente **Alison Smith**:
 
    * Local: `/content/dam/my-project/en`
    * Modelo do fragmento de conteúdo: **Pessoa**
    * Título: **Alison Smith**
    * Nome: `alison-smith`
 
-   Toque **Criar** para criar o novo fragmento Pessoa .
+   Toque **Criar** para criar o fragmento Pessoa .
 
-1. Em seguida, repita as etapas para criar um novo **Equipe** fragmento representando **Alfa da equipe**:
+1. Em seguida, repita as etapas para criar um **Equipe** fragmento representando **Alfa da equipe**:
 
    * Local: `/content/dam/my-project/en`
    * Modelo do fragmento de conteúdo: **Equipe**
    * Título: **Alfa da equipe**
    * Nome: `team-alpha`
 
-   Toque **Criar** para criar o novo fragmento Equipe .
+   Toque **Criar** para criar o fragmento Equipe .
 
-1. Agora deve haver três Fragmentos de conteúdo abaixo de **Meu projeto** > **Inglês**:
+1. Deve haver três Fragmentos de conteúdo abaixo de **Meu projeto** > **Inglês**:
 
    ![Novos fragmentos de conteúdo](assets/author-content-fragments/new-content-fragments.png)
 
@@ -139,7 +139,7 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
    >[!NOTE]
    >
-   >Você também pode criar novos Fragmentos de conteúdo em linha usando o **Novo fragmento de conteúdo** botão.
+   >Também é possível criar Fragmentos de conteúdo em linha usando o **Novo fragmento de conteúdo** botão.
 
 1. Toque **Salvar e fechar** para salvar as alterações no fragmento Alfa do grupo.
 
@@ -151,13 +151,12 @@ Após análise e verificação, publique o `Content Fragments`
 
 1. No painel esquerdo, expanda **Meu projeto** e tocar **Inglês**.
 
-1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publicar**
-
+1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publicar**.
    ![Publicar fragmento de conteúdo](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Parabéns.  {#congratulations}
 
-Parabéns, você acabou de criar vários Fragmentos de conteúdo e criou uma variação.
+Parabéns, você criou vários Fragmentos de conteúdo e criou uma variação.
 
 ## Próximas etapas {#next-steps}
 
