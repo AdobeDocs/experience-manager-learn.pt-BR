@@ -8,9 +8,9 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '446'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,21 @@ ht-degree: 5%
 
 Saiba como AEM Ferramentas de Modernização são usadas para atualizar um conteúdo AEM Sites existente para ser AEM compatível e estar alinhado às práticas recomendadas.
 
->[!VIDEO](https://video.tv.adobe.com/v/336965/?quality=12&learn=on)
+## Conversor multifunções
+
+>[!VIDEO](https://video.tv.adobe.com/v/338802/?quality=12&learn=on)
+
+## Conversão de página
+
+>[!VIDEO](https://video.tv.adobe.com/v/338799/?quality=12&learn=on)
+
+## Conversão de componentes
+
+>[!VIDEO](https://video.tv.adobe.com/v/338788/?quality=12&learn=on)
+
+## Importação de política
+
+>[!VIDEO](https://video.tv.adobe.com/v/338797/?quality=12&learn=on)
 
 ## Usar ferramentas de Modernização AEM
 
@@ -88,7 +102,6 @@ Além disso, certifique-se de que concluiu o exercício prático anterior:
 + [Baixar ferramentas de Modernização AEM](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [Documentação das Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [AEM Gems - Introdução ao AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
-
 
 1. Implante o site herdado do wknd recém-modernizado no SDK do AEM local. AEM ASK disponível para download aqui:
    + [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

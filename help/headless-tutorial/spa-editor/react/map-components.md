@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2257'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Vamos ver como o componente funciona.
 
    Para evitar um possível ataque XSS, o rich text é escapado via `DOMPurify` antes de usar [perigosoSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) para renderizar o conteúdo. Lembre-se `richText` e `text` propriedades do modelo JSON anteriormente no exercício.
 
-1. Em seguida, dê uma olhada no `TextEditConfig` na ~linha 29:
+1. Em seguida, abra `ui.frontend/src/components/import-components.js` consulte o `TextEditConfig` na ~linha 86:
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ Vamos ver como o componente funciona.
 
    O código acima é responsável por determinar quando renderizar o espaço reservado no ambiente de criação do AEM. Se a variável `isEmpty` retornos de método **true** em seguida, o espaço reservado é renderizado.
 
-1. Por fim, dê uma olhada no `MapTo` chame em ~line 62:
+1. Por fim, dê uma olhada no `MapTo` chame em ~line 94:
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` é fornecido pelo AEM Editor JS SDK (`@adobe/aem-react-editable-components`). O caminho `wknd-spa-react/components/text` representa a variável `sling:resourceType` do componente AEM. Esse caminho é correspondido com a variável `:type` exposto pelo modelo JSON observado anteriormente. `MapTo` cuida da análise da resposta do modelo JSON e da transmissão dos valores corretos como `props` ao componente de SPA.

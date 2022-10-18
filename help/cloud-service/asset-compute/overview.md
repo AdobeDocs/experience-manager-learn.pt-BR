@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Este tutorial aborda a criação de um trabalhador do Asset compute simples que 
 
 1. Provisionamento e configuração das contas e serviços necessários para criar e implantar um trabalhador Asset compute
 1. Criar e configurar um projeto do Asset compute
-1. Desenvolver um trabalhador do Asset compute am que gera uma representação personalizada
+1. Desenvolver um trabalhador do Asset compute que gera uma representação personalizada
 1. Escreva testes para e saiba como depurar o trabalhador do Asset compute personalizado
 1. Implante o trabalhador do Asset compute e integre-o AEM serviço Autor as a Cloud Service por meio de Perfis de processamento
 

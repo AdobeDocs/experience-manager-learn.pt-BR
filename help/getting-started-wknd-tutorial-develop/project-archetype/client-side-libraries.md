@@ -1,6 +1,6 @@
 ---
-title: Bibliotecas do lado do cliente e fluxo de trabalho front-end
-description: Saiba como usar bibliotecas do lado do cliente ou clientlibs para implantar e gerenciar CSS e JavaScript para uma implementação do Adobe Experience Manager (AEM) Sites. Saiba como o módulo ui.frontend, um projeto de webpack, pode ser integrado ao processo de build completo.
+title: Bibliotecas de clientes e fluxo de trabalho de front-end
+description: Saiba como usar bibliotecas de clientes ou clientlibs para implantar e gerenciar CSS e Javascript em uma implementação de Sites Adobe Experience Manager (AEM). Saiba como o módulo ui.frontend, um projeto de webpack, pode ser integrado ao processo de build completo.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,14 +11,14 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '2825'
 ht-degree: 2%
 
 ---
 
-# Bibliotecas do lado do cliente e fluxo de trabalho front-end {#client-side-libraries}
+# Bibliotecas de clientes e fluxo de trabalho de front-end {#client-side-libraries}
 
 Saiba como as bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar o CSS e o JavaScript para uma implementação do Adobe Experience Manager (AEM) Sites. Este tutorial também abordará como a [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) módulo, um desacoplamento [webpack](https://webpack.js.org/) projeto pode ser integrado ao processo de criação completo.
 
@@ -81,7 +81,7 @@ As bibliotecas do lado do cliente fornecem um mecanismo para organizar e gerenci
 1. Gerencie dependências em estruturas de terceiros de forma organizada
 1. Minimize o número de solicitações do lado do cliente, concatenando CSS/JS em uma ou duas solicitações.
 
-Mais informações sobre o uso [Bibliotecas do lado do cliente podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
+Mais informações sobre o uso [Bibliotecas do lado do cliente podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR)
 
 As bibliotecas do lado do cliente têm algumas limitações. O mais notável é um suporte limitado para idiomas de front-end populares como Sass, LESS e TypeScript. No tutorial, observamos como a variável **ui.frontend** pode ajudar a resolver isso.
 
