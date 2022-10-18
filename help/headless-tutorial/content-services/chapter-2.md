@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 10%
@@ -78,7 +78,7 @@ Se os modelos de fragmento de conteúdo forem **not** habilitado para uma config
 
 ## Noções básicas do modelo de fragmento de conteúdo para criar
 
-Antes de definir o modelo de Fragmento de conteúdo, vamos rever a experiência que estaremos conduzindo para garantir que estamos capturando todos os pontos de dados necessários. Para isso, analisaremos o design dos aplicativos móveis e mapearemos os elementos do design para o conteúdo coletado.
+Antes de definir nosso modelo de Fragmento de conteúdo, vamos revisar a experiência que estaremos conduzindo para garantir que estamos capturando todos os pontos de dados necessários. Para isso, analisaremos o design dos aplicativos móveis e mapearemos os elementos do design para o conteúdo coletado.
 
 Podemos dividir os pontos de dados que definem um Evento da seguinte maneira:
 

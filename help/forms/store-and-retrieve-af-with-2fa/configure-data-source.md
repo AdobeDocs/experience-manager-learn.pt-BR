@@ -1,26 +1,26 @@
 ---
 title: Configurar fonte de dados
 description: Criar DataSource apontando para o banco de dados MySQL
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 2%
+source-wordcount: '295'
+ht-degree: 3%
 
 ---
 
-
 # Configurar fonte de dados
 
-Há muitas maneiras de AEM a integração com o banco de dados externo. Uma das práticas mais comuns e padrão da integração do banco de dados é usar as propriedades de configuração do Apache Sling Pool DataSource por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar os drivers [MySQL adequados](https://mvnrepository.com/artifact/mysql/mysql-connector-java) para AEM.
+Há muitas maneiras de AEM a integração com um banco de dados externo. Uma das práticas mais comuns e padrão da integração de banco de dados é usar as propriedades de configuração do DataSource Pool do Apache Sling Connection por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar o [Drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) para AEM.
 Em seguida, defina as propriedades da fonte de dados agrupadas da conexão do Sling específicas ao seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
 
 ![fonte de dados](assets/data-source.JPG)
@@ -30,7 +30,7 @@ Em seguida, defina as propriedades da fonte de dados agrupadas da conexão do Sl
 * URI da conexão JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
 
 >[!NOTE]
->Certifique-se de nomear sua fonte de dados `StoreAndRetrieveAfData`, pois esse é o nome usado no serviço OSGi.
+>Certifique-se de nomear sua fonte de dados `StoreAndRetrieveAfData` como este é o nome usado no serviço OSGi.
 
 
 ## Criar banco de dados
@@ -41,19 +41,19 @@ O banco de dados a seguir foi usado para o propósito deste caso de uso. O banco
 
 * A coluna **afdata** manterá os dados do formulário adaptável.
 * A coluna **attachmentInfo** manterá as informações sobre os anexos do formulário.
-* As colunas **phoneNumber** terão o número de celular da pessoa que preenche o formulário.
+* As colunas **phoneNumber** manterá o número do celular da pessoa que preenche o formulário.
 
-Crie o banco de dados importando o [schema do banco de dados](assets/data-base-schema.sql)
+Crie o banco de dados importando o [esquema de banco de dados](assets/data-base-schema.sql)
 usando o Workbench MySQL.
 
 ## Criar modelo de dados do formulário
 
 Crie o modelo de dados de formulário e o baseie na fonte de dados criada na etapa anterior.
-Configure o serviço **get** desse modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
-Certifique-se de que você não está retornando a matriz no serviço **get**.
+Configure o **get** serviço desse modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
+Certifique-se de que você não esteja retornando uma matriz no **get** serviço.
 
-Este serviço **get** é usado para buscar o número de telefone associado à ID do aplicativo.
+O objetivo deste **get** O serviço é buscar o número de telefone associado à id do aplicativo.
 
 ![get-service](assets/get-service.JPG)
 
-Esse modelo de dados de formulário será usado no **MyAccountForm** para buscar o número de telefone associado à ID do aplicativo.
+Esse modelo de dados de formulário será usado no **MyAccountForm** para buscar o número de telefone associado à id do aplicativo.
