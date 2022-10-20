@@ -10,9 +10,9 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-11-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 835657082c0c6bf7b2822b53ef2b99039d77f249
+source-git-commit: f4d4bcc836123ba4320710c3024e03a82a36cfb9
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/
 
 ### URLs absolutos de mapa do site
 
-AEM mapa de site suporta URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços de AEM que geram mapas do site.
+AEM mapa de site suporta URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços de AEM que geram mapas de site (normalmente o serviço AEM Publish).
 
 Um exemplo de definição de nó de mapeamento Sling para `https://wknd.com` pode ser definido em `/etc/map/https` como se segue:
 
