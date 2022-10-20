@@ -1,19 +1,21 @@
 ---
-title: Vídeos e Tutoriais do AEM Foundation
+title: Vídeos e tutoriais da AEM Foundation
 description: Assista aos nossos vídeos e tutoriais para obter ajuda com a Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 15%
+ht-degree: 3%
 
 ---
 
-# Vídeos e Tutoriais do AEM Foundation {#overview}
+# Vídeos e tutoriais da AEM Foundation {#overview}
 
 O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para usuários do AEM Sites, Ativos e Forms.
+
+<div id="whats-new-section">
 
 ## Novidades
 
@@ -30,7 +32,18 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 * **[Usar o pipeline CI/CD do Cloud Manager (Vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Saiba como usar o pipeline de CI/CD do Cloud Manager para garantir implantações seguras e consistentes.*
 
-## Pessoal
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Escolhas do pessoal
 
 <table>
 <tr>
@@ -76,10 +89,12 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 </tr>
 </table>
 
+</div>
+
 ## Recursos adicionais
 
 * [Experience League - Explorar AEM](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager)
-* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Vídeos e Tutoriais do AEM Sites](/help/sites/overview.md)
-* [Vídeos e Tutoriais do AEM Assets](/help/assets/overview.md)
-* [Vídeos e Tutoriais do AEM Forms](/help/forms/overview.md)
+* [AEM tutoriais as a Cloud Service](/help/cloud-service/overview.md)
+* [Vídeos e tutoriais do AEM Sites](/help/sites/overview.md)
+* [Vídeos e tutoriais do AEM Assets](/help/assets/overview.md)
+* [Vídeos e tutoriais do AEM Forms](/help/forms/overview.md)

@@ -1,20 +1,22 @@
 ---
-title: AEM Forms Tutorials e vídeos
+title: Tutoriais e vídeos do AEM Forms
 description: Navegue pelos nossos vídeos e tutoriais para obter o AEM Forms, com recursos e documentação para responder suas consultas.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 7%
+ht-degree: 2%
 
 ---
 
-# AEM Forms Tutorials e vídeos {#overview}
+# Tutoriais e vídeos do AEM Forms {#overview}
 
 O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar-se a processos back-end, regras de negócios e dados. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Forms
+
+<div id="whats-new-section">
 
 ## Novidades
 
@@ -30,7 +32,18 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 
    *Criar modelos de fluxo de trabalho não vinculados a um formulário específico*
 
-## Pessoal
+</div>
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Escolhas do pessoal
 
 <table>
 <tr>
@@ -76,6 +89,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 </tr>
 </table>
 
+</div>
 
 
 
@@ -87,7 +101,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 * [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [AEM tutoriais as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
 * [Tutoriais da AEM Foundation](/help/foundation/overview.md)
