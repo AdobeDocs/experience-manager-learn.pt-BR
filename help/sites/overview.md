@@ -4,16 +4,16 @@ description: Saiba mais sobre o Experience Manager Sites em nossos vídeos e tut
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 5dbad9101ce73c2e0370592336d37338e45825ef
+source-git-commit: d6366d1e3f4d575eb78b8af38a59a7fb9413f43d
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 23%
+ht-degree: 21%
 
 ---
 
-# Vídeos e Tutoriais do AEM Sites {#overview}
+# Vídeos e tutoriais do AEM Sites {#overview}
 
-Adobe Experience Manager (AEM) Sites são uma plataforma líder de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Sites.
+Adobe Experience Manager (AEM) Sites é uma plataforma líder de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e características do AEM Sites.
 
 
 <div id="whats-new-section">
@@ -51,7 +51,7 @@ Adobe Experience Manager (AEM) Sites são uma plataforma líder de gerenciamento
 
 <div id="staff-picks-section">
 
-## Pessoal
+## Escolhas do pessoal
 
 <table>
 <tr>
