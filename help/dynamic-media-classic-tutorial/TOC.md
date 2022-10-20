@@ -11,8 +11,8 @@ breadcrumb-title: Tutoriais do Dynamic Media Classic
 index: y
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '75'
+ht-degree: 49%
 
 ---
 
