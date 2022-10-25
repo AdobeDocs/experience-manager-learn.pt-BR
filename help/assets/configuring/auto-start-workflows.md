@@ -9,8 +9,9 @@ thumbnail: 37323.jpg
 topic: Development
 role: Developer
 level: Intermediate
+last-substantial-update: 2021-09-22T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
@@ -19,6 +20,6 @@ ht-degree: 0%
 
 # Workflows de início automático
 
-Os fluxos de trabalho de início automático estendem o processamento de ativos no AEM como um Cloud Service, chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
+Os fluxos de trabalho de início automático estendem o processamento de ativos em AEM as a Cloud Service, chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323/?quality=12&learn=on&hidetitle=true)

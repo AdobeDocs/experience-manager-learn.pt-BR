@@ -9,8 +9,9 @@ thumbnail: 37696.jpg
 topic: Content Management
 role: User
 level: Beginner
+last-substantial-update: 2021-09-15T00:00:00Z
 exl-id: b2ac2332-4d98-4866-8688-831f0282a736
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -19,6 +20,6 @@ ht-degree: 0%
 
 # Permissões de linha de base
 
-O gerenciamento do acesso do usuário nas [pastas de ativos da linha de base](./baseline-folders.md) é um aspecto essencial no controle e garante que os processos possam ser suportados adequadamente.
+Gerenciamento do acesso do usuário na [pastas de ativos de linha de base](./baseline-folders.md) O é um aspecto essencial no controle e garante que os processos possam ser suportados adequadamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
