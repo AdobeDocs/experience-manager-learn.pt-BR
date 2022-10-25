@@ -8,8 +8,9 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
+last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '2815'
 ht-degree: 2%
@@ -115,7 +116,7 @@ O Armazenamento de confiança global é configurado com o certificado público d
 
 ![Replicar a loja de confiança global para publicação do AEM](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. Navegar para __Ferramentas > Implantação > Pacotes__.
+1. Navegue até __Ferramentas > Implantação > Pacotes__.
 1. Criar um pacote
    + Nome do pacote: `Global Trust Store`
    + Versão: `1.0.0`

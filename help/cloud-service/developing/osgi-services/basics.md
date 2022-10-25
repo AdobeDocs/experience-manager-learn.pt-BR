@@ -1,19 +1,20 @@
 ---
 title: Noções básicas de desenvolvimento de serviços OSGi
-description: 'Saiba mais sobre as noções básicas para desenvolver um serviço OSGi '
+description: Saiba mais sobre as noções básicas para desenvolver um serviço OSGi
 role: Developer
 level: Beginner
-topic: Desenvolvimento
+topic: Development
 feature: OSGI
 kt: 8227
 thumbnail: 335476.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+last-substantial-update: 2022-09-16T00:00:00Z
+exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '88'
+ht-degree: 2%
 
 ---
-
 
 # Serviços OSGi
 
