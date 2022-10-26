@@ -1,7 +1,6 @@
 ---
 title: Teste da unidade
 description: Implemente um teste de unidade que valide o comportamento do Modelo do Sling do componente Byline, criado no tutorial Componente personalizado .
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: APIs, AEM Project Archetype
@@ -12,7 +11,7 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '3014'
 ht-degree: 0%

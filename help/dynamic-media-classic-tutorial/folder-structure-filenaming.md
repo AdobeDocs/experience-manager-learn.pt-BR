@@ -1,7 +1,6 @@
 ---
 title: Determine sua estrutura de pastas e convenção de nomenclatura de arquivos
 description: A nomeação de arquivos talvez seja a decisão mais importante que você tomará ao implementar o Dynamic Media Classic. A estrutura de pastas também é importante. Saiba por que é tão importante e possível adotar abordagens para a estrutura de pastas e nomes de arquivos.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%

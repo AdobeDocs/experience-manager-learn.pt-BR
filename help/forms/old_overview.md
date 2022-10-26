@@ -1,14 +1,13 @@
 ---
 title: AEM Forms Tutorials e vídeos
 description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms
-sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '516'
+ht-degree: 8%
 
 ---
 
@@ -86,7 +85,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR">
       <img alt= "Capturar no AEM Forms" src="./assets/captcha1.png" />
     </a>
     <div>
@@ -178,7 +177,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 
 ## Recursos adicionais
 
-* [Experience League - Explorar AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager)
 * [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)

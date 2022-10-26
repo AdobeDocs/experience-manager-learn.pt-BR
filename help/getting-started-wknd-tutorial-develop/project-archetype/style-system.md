@@ -2,7 +2,6 @@
 title: Desenvolvimento com o sistema de estilo
 seo-title: Developing with the Style System
 description: Saiba como implementar estilos individuais e usar os Componentes principais usando o Sistema de estilo Experience Manager. Este tutorial aborda o desenvolvimento do Sistema de estilos para estender os Componentes principais com CSS específico da marca e configurações avançadas de política do Editor de modelos.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,10 +12,10 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -103,7 +102,7 @@ Adicione uma nova política para os componentes de Título para permitir que os 
 
 1. Crie uma nova política para o componente de Título com os seguintes valores:
 
-   *Título da política **: **Título da WKND**
+   *Título da política&#42;*: **Título da WKND**
 
    *Propriedades* > *Guia Estilos* > *Adicionar um novo estilo*
 
@@ -213,7 +212,7 @@ Em seguida, adicione uma nova política para os componentes de Texto.
 
 1. Atualize a política do componente de Texto com os seguintes valores:
 
-   *Título da política **: **Texto do conteúdo**
+   *Título da política&#42;*: **Texto do conteúdo**
 
    *Plug-ins* > *Estilos de parágrafo* > *Ativar estilos de parágrafo*
 
@@ -338,7 +337,7 @@ Em vez de direcionar o `main` HTML, o Sistema de estilos pode ser usado para cri
 
 1. **Desafio extra** - utilizar os ensinamentos retirados dos exercícios anteriores e utilizar o Sistema de Estilos para implementar uma **Largura fixa** e **Largura do fluido** estilos para o componente Contêiner .
 
-## Parabéns! {#congratulations}
+## Parabéns.  {#congratulations}
 
 Parabéns, a Página do artigo é quase completamente estilizada e você ganhou uma experiência prática usando o Sistema de estilos de AEM.
 

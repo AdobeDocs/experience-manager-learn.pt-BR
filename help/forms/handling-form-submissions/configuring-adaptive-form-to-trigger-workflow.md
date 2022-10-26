@@ -1,7 +1,6 @@
 ---
 title: Configuração do formulário adaptável para acionar AEM visão geral do fluxo de trabalho
 description: Configure as opções de carga útil ao acionar AEM fluxo de trabalho no envio do formulário
-sub-product: forms
 feature: Workflow
 topics: integrations
 audience: developer
@@ -14,7 +13,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 3%

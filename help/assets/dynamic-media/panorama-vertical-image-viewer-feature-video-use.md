@@ -1,14 +1,13 @@
 ---
 title: Usando Panorama e Visualizador de Imagem Vertical com o AEM Assets Dynamic Media
 description: Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de Imagem Panorâmica, Visualizador de Imagem de Realidade Virtual Panorâmica e Visualizador de Imagem Vertical. O Visualizador de panorâmica é uma maneira fácil de fornecer uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem, sem qualquer desenvolvimento personalizado.
-sub-product: dynamic-media
 feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%

@@ -1,7 +1,6 @@
 ---
 title: Atualizar projeto de AEM de pilha completa para usar o pipeline de front-end
 description: Saiba como atualizar AEM projeto de pilha completa para habilitá-lo para o pipeline front-end, de modo que ele apenas crie e implante os artefatos front-end.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -12,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
-source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -26,7 +25,7 @@ Neste capítulo, fazemos alterações de configuração no __Projeto WKND Sites_
 
 ## Objetivos {#objectives}
 
-* Atualizar projeto de pilha completa para usar o pipeline de front-end
+* Atualizar projeto de pilha completa para usar o pipeline front-end
 
 ## Visão geral das alterações de configuração no projeto de AEM de pilha completa
 

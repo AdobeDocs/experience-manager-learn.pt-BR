@@ -1,7 +1,6 @@
 ---
 title: Integrar um SPA | Introdução ao Editor de SPA de AEM e React
 description: Entenda como o código-fonte de um Aplicativo de página única (SPA) gravado no React pode ser integrado a um Projeto do Adobe Experience Manager (AEM). Saiba como usar ferramentas de front-end modernas, como um servidor de desenvolvimento de webpack, para desenvolver rapidamente a SPA em relação à API de modelo JSON AEM.
-sub-product: sites
 feature: SPA Editor
 version: Cloud Service
 kt: 4853
@@ -10,7 +9,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 1%

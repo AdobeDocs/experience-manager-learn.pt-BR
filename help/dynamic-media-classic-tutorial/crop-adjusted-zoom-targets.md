@@ -1,26 +1,25 @@
 ---
 title: Recortar, imagens ajustadas e metas de zoom
-description: A imagem principal do Dynamic Media Classic oferece suporte à criação de versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvá-las como um novo arquivo principal ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos principais e criar Metas de zoom em suas imagens para exibir detalhes destacados.
-sub-product: dynamic-media
+description: A imagem principal do Dynamic Media Classic suporta a criação de versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvá-las como um novo arquivo principal ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos principais e criar Metas de zoom em suas imagens para exibir detalhes destacados.
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
 
-
 # Recortar, imagens ajustadas e metas de zoom {#crop-adjusted-zoom-targets}
 
-Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media Classic é que você pode redefinir a finalidade do ativo de imagem para muitos usos. Tradicionalmente, você teria que criar versões separadas de cada imagem para mostrar detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode realizar as mesmas tarefas em um único principal e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
+Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media Classic é que você pode redefinir o objetivo do ativo de imagem para muitos usos. Tradicionalmente, você teria que criar versões separadas de cada imagem para mostrar detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode realizar as mesmas tarefas em seu único principal e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
 
 Ao final desta seção do tutorial, você saberá:
 
@@ -35,7 +34,7 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 - Você não tem acesso ao arquivo original. Você deseja exibir a imagem com um corte ou proporção diferente, mas não tem o arquivo original no computador ou está trabalhando em casa. Nesse caso, você pode acessar o Dynamic Media Classic, encontrar a imagem, recortá-la e salvá-la, ou salvá-la como uma nova versão.
 - Para remover o excesso de espaço em branco. A imagem foi fotografada com muito espaço em branco, o que faz o produto parecer pequeno. Você deseja que suas imagens em miniatura preencham a tela o máximo possível.
 - Para criar imagens ajustadas, cópias virtuais de imagens que não ocupam espaço em disco. Algumas empresas têm regras de negócios que exigem que elas mantenham cópias separadas da mesma imagem, mas com um nome diferente. Ou talvez você queira uma versão cortada e não cortada da mesma imagem.
-- Para criar novas imagens a partir de uma imagem de origem. Por exemplo, talvez você queira criar amostras de cores ou um detalhe da imagem principal. Você pode fazer isso no Adobe Photoshop e fazer upload separadamente ou usar a ferramenta Recortar no Dynamic Media Classic.
+- Para criar novas imagens a partir de uma imagem de origem. Por exemplo, talvez você queira criar amostras de cores ou um detalhe da imagem principal. Você pode fazer isso no Adobe Photoshop e fazer upload separadamente ou usar a ferramenta Corte demarcado no Dynamic Media Classic.
 
 >[!NOTE]
 >
@@ -43,14 +42,14 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 
 ### Uso da ferramenta Corte demarcado
 
-Você pode acessar a ferramenta Cortar no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar**. Você pode usar a ferramenta para cortar de duas formas:
+Você pode acessar a ferramenta Corte demarcado no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar** botão. Você pode usar a ferramenta para cortar de duas formas:
 
 - O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como [Recortar manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Aparar. Use isso para remover espaços em branco extra ao redor da imagem, calculando o número de pixels que não correspondem à imagem. Saiba como [Recortar ao Aparar](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Aparar. Use isso para remover espaços em branco extra ao redor da imagem, calculando o número de pixels que não correspondem à imagem. Saiba como [Cortar por Aparar](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Corte manual_
 
-Quando você salva uma versão cortada manualmente, a imagem é exibida como permanentemente cortada; O Dynamic Media Classic na verdade está ocultando os pixels adicionando um modificador de URL interno para cortar a imagem. Ao publicar, todos verão que a imagem está cortada. No entanto, é possível retornar ao Editor de corte e remover o corte posteriormente.
+Quando você salva uma versão cortada manualmente, a imagem é exibida como permanentemente cortada; Na verdade, o Dynamic Media Classic está ocultando os pixels adicionando um modificador interno de URL para cortar a imagem. Ao publicar, todos verão que a imagem está cortada. No entanto, é possível retornar ao Editor de corte e remover o corte posteriormente.
 
 Você pode escolher se deseja salvar como uma Nova imagem Principal ou como uma Exibição adicional do principal. Um novo principal é um novo arquivo físico (como um TIFF ou JPEG) que ocupa espaço de armazenamento. Uma exibição adicional é uma imagem virtual que não ocupa espaço no servidor. Não recomendamos que você escolha Substituir original, pois isso substituirá sua principal e tornará a colheita permanente. Se você salvar como uma nova principal ou como uma visualização adicional, deverá escolher uma nova ID do ativo. Como outras IDs de ativo, esse deve ser um nome exclusivo no Dynamic Media Classic.
 
@@ -66,19 +65,19 @@ A imagem à direita é muito mais destacada pela remoção do espaço extra ao r
 
 >[!NOTE]
 >
->Cortar não cria transparência ao redor da imagem. Para isso, você precisaria incorporar um traçado de recorte na imagem e usar a opção de upload **Criar máscara a partir do caminho do clipe** .
+>Cortar não cria transparência ao redor da imagem. Para isso, seria necessário incorporar um traçado de recorte na imagem e usar o **Criar máscara a partir do caminho do clipe** opção de upload.
 >
->Além disso, para restaurar uma imagem ao seu estado original depois de cortá-la quando tiver usado a opção **Salvar**, exiba a imagem na tela Editor de corte e selecione o botão **Redefinir**.
+>Além disso, para restaurar uma imagem ao seu estado original depois de cortá-la quando você tiver usado a variável **Salvar** , exiba a imagem na tela Editor de corte e selecione a **Redefinir** botão.
 
 ### _Recortar no Upload_
 
-Como mencionado anteriormente, também é possível optar por recortar as imagens conforme você as carrega. Para usar o corte de aparas no upload, clique no botão **Opções de trabalho** e, em Opções de recorte, escolha **Cortar**.
+Como mencionado anteriormente, também é possível optar por recortar as imagens conforme você as carrega. Para usar o corte de aparas no upload, clique no botão **Opções de trabalho** e, em Opções de corte, escolha **Aparar**.
 
-O Dynamic Media Classic se lembrará dessa opção para o próximo upload. Embora você queira que ele corte imagens para este upload, talvez não queira que elas sejam cortadas para cada upload. Outra opção seria definir um trabalho de upload FTP agendado especial e colocar as opções de corte lá. Dessa forma, você só executaria o trabalho quando precisava recortar suas imagens.
+A Dynamic Media Classic lembrará dessa opção para o próximo upload. Embora você queira que ele corte imagens para este upload, talvez não queira que elas sejam cortadas para cada upload. Outra opção seria definir um trabalho de upload FTP agendado especial e colocar as opções de corte lá. Dessa forma, você só executaria o trabalho quando precisava recortar suas imagens.
 
 >[!IMPORTANT]
 >
->Se você definir um recorte para seu upload, o Dynamic Media Classic colocará um cookie para lembrar dessa configuração na próxima vez. Como prática recomendada, clique no botão **Reset to Company Defaults** antes do próximo upload para limpar as opções de corte restantes do último upload; caso contrário, você poderá cortar acidentalmente o próximo lote de imagens.
+>Se você definir um recorte para seu upload, o Dynamic Media Classic colocará um cookie para lembrar essa configuração na próxima vez. Como prática recomendada, clique no link **Redefinir para padrões da empresa** antes do próximo upload para limpar as opções de corte restantes do último upload; caso contrário, você poderá cortar acidentalmente o próximo lote de imagens.
 
 ### Recortar por URL
 
@@ -86,8 +85,8 @@ Embora não seja óbvio no Dynamic Media Classic, você também pode recortar ap
 
 Sempre que usar a ferramenta Corte demarcado, você verá valores de URL no campo na parte inferior. Você pode pegar esses valores e aplicá-los diretamente a uma imagem como modificadores de URL.
 
-![](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
-_modificadores de comando imageCrop na parte inferior do Editor de corte_
+![imagem](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+_Modificadores de comando de corte na parte inferior do Editor de corte_
 
 ![imagem](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
@@ -97,18 +96,18 @@ Como o tamanho deve ser calculado com base na imagem ao usar o corte por corte, 
 
 As predefinições de imagem têm um campo onde você pode adicionar comandos adicionais de Exibição de imagem. Para adicionar o mesmo corte acima à sua Predefinição de imagem, edite sua predefinição e cole ou digite os valores no campo Modificadores de URL e, em seguida, salve e publique.
 
-![](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
-_imageAdicione comandos de corte (ou qualquer comando) aos modificadores de URL da predefinição de imagem._
+![imagem](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+_Adicione comandos de corte (ou qualquer comando) aos modificadores de URL da predefinição de imagem._
 
 O corte agora fará parte dessa Predefinição de imagem e será aplicado automaticamente toda vez que for usado. É claro que esse método depende de todas as imagens que precisam da mesma quantidade de corte. Se suas imagens não fossem todas filmadas da mesma maneira, esse método não funcionaria para você.
 
 ## Imagens ajustadas
 
-Ao usar a ferramenta Corte demarcado, você tem a opção de **Salvar como exibição adicional do Principal**. Quando salvo, isso cria um novo tipo de ativo do Dynamic Media Classic — uma imagem ajustada. Uma Imagem Ajustada, também chamada de derivada, é uma imagem virtual. Na verdade não é uma imagem. é uma referência de banco de dados (como um alias ou atalho) para a imagem física principal.
+Ao usar a ferramenta Corte demarcado, você tem a opção de **Salvar como exibição adicional do Principal**. Quando salvo, isso cria um novo tipo de ativo do Dynamic Media Classic — uma Imagem ajustada. Uma Imagem Ajustada, também chamada de derivada, é uma imagem virtual. Na verdade não é uma imagem. é uma referência de banco de dados (como um alias ou atalho) para a imagem física principal.
 
-### A imagem real ficará ativa`?`?
+### Por favor, a imagem real ficará em pé?`?`
 
-Você sabe qual é a principal e qual é a imagem ajustada?
+Você sabe qual é a principal e qual é a Imagem ajustada?
 
 ![imagem](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
@@ -120,14 +119,14 @@ Uma Imagem Ajustada não usa espaço em disco, pois só existe como um item de l
 
 Normalmente, você cria Imagens ajustadas com a ferramenta Corte demarcado; no entanto, eles também podem ser criados com os outros editores de imagem — as ferramentas Ajustar e Nitidez.
 
-Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, você pode visualizar Imagens ajustadas associadas a uma imagem principal na guia **Criar e derivados**.
+Imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, você pode exibir as Imagens ajustadas associadas a uma imagem principal no campo **Construído e derivados** guia .
 
-![](assets/crop-adjusted-zoom-targets/derivatives.jpg)
-_imageAjusted Views para a imagem principal ASIAN_BR_MAIN_
+![imagem](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+_Exibições ajustadas para imagem principal ASIAN_BR_MAIN_
 
 ## Metas de zoom
 
-Metas de zoom também são encontradas no menu **Editar** e na página **Detalhes** de uma imagem. Eles permitem definir &quot;pontos de acesso&quot; para destacar recursos de merchandising específicos de uma imagem de zoom. Em vez de criar imagens separadas recortando uma principal grande, o visualizador de zoom pode exibir os detalhes na parte superior da imagem, juntamente com um pequeno rótulo que você cria.
+Metas de zoom também são encontradas no **Editar** e **Detalhes** de uma imagem. Eles permitem definir &quot;pontos de acesso&quot; para destacar recursos de merchandising específicos de uma imagem de zoom. Em vez de criar imagens separadas recortando uma principal grande, o visualizador de zoom pode exibir os detalhes na parte superior da imagem, juntamente com um pequeno rótulo que você cria.
 
 ![imagem](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -145,15 +144,15 @@ Saiba como [Criar metas de zoom](https://experienceleague.adobe.com/docs/dynamic
 
 Este é o fluxo de trabalho para criar metas no Dynamic Media Classic.
 
-1. Navegue até a imagem, clique no botão **Edit** e escolha **Zoom Targets**.
+1. Navegue até a imagem e clique no botão **Editar** e escolha **Metas de zoom**.
 2. O Editor de direcionamento de zoom será carregado. Você verá sua imagem no meio, alguns botões na parte superior e um painel de destino vazio à direita. Na parte inferior esquerda, você verá uma Predefinição do visualizador selecionada. O padrão é &quot;Zoom1-Guiado&quot;.
 3. Mova a caixa vermelha com o mouse e clique em para criar um novo destino.
 
    - A caixa vermelha é a área de destino. Quando um usuário clica nesse destino, o zoom é ampliado para a área dentro da caixa.
-   - O tamanho da meta é determinado pelo tamanho da exibição dentro da Predefinição do visualizador. Isso determina o tamanho da imagem de zoom principal. Consulte _Definindo o Tamanho de Exibição_, abaixo.
+   - O tamanho da meta é determinado pelo tamanho da exibição dentro da Predefinição do visualizador. Isso determina o tamanho da imagem de zoom principal. Consulte _Definir o tamanho da exibição_, abaixo.
 
 4. Você verá a meta que acabou de criar ficar azul, e à direita você verá uma versão em miniatura dessa meta, bem como o nome padrão &quot;target-0&quot;.
-5. Para renomear seu destino, clique em sua miniatura, digite um novo **Nome** e clique em **Enter** ou **Tab** — se você clicar novamente, seu nome não será salvo.
+5. Para renomear o público-alvo, clique em sua miniatura e digite um novo **Nome** e clique em **Enter** ou **Tabulação** — se você clicar fora, seu nome não será salvo.
 6. Enquanto o público-alvo é selecionado, a caixa tem linhas tracejadas verdes ao seu redor e você pode redimensioná-lo e movê-lo. Arraste os cantos para redimensionar ou arraste a caixa de destino para movê-la.
 
    - Isso carregará a imagem dentro do visualizador de zoom personalizado padrão. Certifique-se de que a predefinição do visualizador seja compatível com as metas de zoom — em geral, todas as predefinições padrão que têm a palavra &quot;guiado&quot; foram projetadas para uso com as metas de zoom. Para usar os destinos, passe o mouse sobre a miniatura do target (ou ícone de ponto de acesso) para ver o rótulo e clique nele para ver o zoom do visualizador no recurso.
@@ -161,9 +160,9 @@ Este é o fluxo de trabalho para criar metas no Dynamic Media Classic.
 
       ![imagem](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Além disso, se precisar remover um destino, selecione-o clicando em sua miniatura e pressione o botão **Delete Target** ou pressione a tecla DELETE no teclado.
+7. Além disso, se precisar remover um destino, selecione-o clicando em sua miniatura e pressione a tecla **Excluir destino** ou pressione a tecla DELETE no teclado.
 8. Continue clicando em para adicionar novos destinos, renomeando e/ou redimensionando após a adição.
-9. Quando terminar, clique no botão **Save** e, em seguida, em **Preview**.
+9. Quando terminar, clique no botão **Salvar** e **Visualizar**.
 
 ### Configuração do tamanho de exibição na predefinição do visualizador de zoom
 
@@ -183,7 +182,7 @@ Você pode ver que a predefinição incorporada tem um tamanho de 900 x 550, o q
 
 Para definir o tamanho da exibição, crie ou edite uma Predefinição do visualizador compatível com Metas de zoom.
 
-1. Na Predefinição do visualizador, vá para a opção **Configurações de zoom**.
+1. Na Predefinição do visualizador, acesse **Configurações de zoom** opção.
 2. Defina Largura e Altura.
 3. Salve a predefinição e feche. Se você quiser usar essa predefinição em seu site ativo, será necessário publicar também posteriormente.
 4. Acesse a ferramenta Zoom Target e escolha a predefinição editada na parte inferior esquerda. Você verá imediatamente o novo tamanho de exibição refletido em seus destinos.

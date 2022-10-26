@@ -1,22 +1,21 @@
 ---
 title: Imagem inteligente
 description: O Smart Imaging no Dynamic Media Classic melhora o desempenho do delivery de imagem, otimizando automaticamente o formato e a qualidade de imagem com base nos recursos do navegador do cliente. Ele faz isso aproveitando os recursos da Adobe Sensei AI e trabalhando com as Predefinições de imagem existentes. Saiba mais sobre a Smart Imaging e como você pode usá-la para oferecer melhores experiências ao cliente por meio de carregamentos de página mais rápidos.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
-topic: Gerenciamento de conteúdo
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '687'
 ht-degree: 1%
 
 ---
-
 
 # Imagem inteligente {#smart-imaging}
 
@@ -36,11 +35,11 @@ Como as imagens constituem a maioria do tempo de carregamento de uma página, a 
 
 Como mencionado anteriormente, o Smart Imaging utiliza os recursos do Adobe Sensei AI e funciona com as Predefinições de imagem existentes para converter automaticamente as imagens em formatos de imagem ideais de próxima geração, como o WebP, mantendo a fidelidade visual.
 
-Saiba mais sobre [Como a Imagem inteligente funciona](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem compatíveis (e o que acontece se você não usa esses formatos) e seu impacto nas Predefinições de imagem existentes que estão em uso.
+Saiba mais sobre [Como a criação de imagens inteligentes funciona](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem compatíveis (e o que acontece se você não usar esses formatos) e seu impacto nas Predefinições de imagem existentes que estão em uso.
 
 ## Impactos da Smart Imaging
 
-Você provavelmente está preocupado que precisará fazer alterações nos URLs, nas predefinições de imagens e no código do site para aproveitar as vantagens do Smart Imaging. Se você atender aos pré-requisitos para usar a Imagem inteligente e estiver trabalhando somente com imagens nos formatos de imagem JPEG e PNG compatíveis, não será necessário fazer alterações.
+Você provavelmente está preocupado que precisará fazer alterações nos URLs, nas predefinições de imagens e no código do site para aproveitar as vantagens do Smart Imaging. Se você atender aos pré-requisitos para usar a Imagem inteligente e estiver trabalhando somente com imagens nos formatos de imagem PNG e JPEG suportados, não será necessário fazer alterações.
 
 A geração de imagens inteligentes funciona com imagens entregues por HTTP, HTTPS e HTTP/2.
 
@@ -54,8 +53,8 @@ A ativação da Smart Imaging começa com você enviando uma solicitação de su
 
 Depois de ativar o Smart Imaging, você deverá verificar se ele está funcionando como esperado.
 
-Você provavelmente tem perguntas adicionais sobre Smart Imaging. Nós compilamos uma lista de perguntas frequentes com respostas. Leia as [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Você provavelmente tem perguntas adicionais sobre Smart Imaging. Nós compilamos uma lista de perguntas frequentes com respostas. Leia o [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Recursos adicionais
 
-Assista ao webinário sob demanda [Dynamic Media Classic Otimizing Page Performance Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) para saber mais sobre Smart Imaging.
+Observe a [Construtor de habilidades de desempenho da página de otimização do Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) webinar sob demanda para saber mais sobre Smart Imaging.

@@ -2,12 +2,14 @@
 user-guide-title: Vídeos do AEM Assets Essentials
 user-guide-description: Uma coleção de vídeos do Adobe Experience Manager Assets Essentials.
 breadcrumb-title: Vídeos do AEM Assets Essentials
+sub-product: Experience Manager Assets
+version: Cloud Service
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: a5d3a5b06bb3228c4409c6f39a4376561a84ead3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '73'
+ht-degree: 31%
 
 ---
 
@@ -40,4 +42,4 @@ ht-degree: 0%
 
 + [Integração do Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=pt-BR)
 
-+ [Documentação](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
++ [Documentação](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).

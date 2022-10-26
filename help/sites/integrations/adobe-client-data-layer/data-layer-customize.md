@@ -31,7 +31,7 @@ Neste tutorial, você explorará várias opções para estender a camada de dado
 
 1. Insira dados de componentes na camada de dados estendendo um Modelo do Sling e um HTL do componente
 1. Use os utilitários de camada de dados dos Componentes principais para reduzir o esforço
-1. Usar os atributos de dados do Componente principal para entrar em eventos de camada de dados existentes
+1. Usar os atributos de dados do Componente principal para se conectar aos eventos da camada de dados existente
 
 ## Pré-requisitos {#prerequisites}
 

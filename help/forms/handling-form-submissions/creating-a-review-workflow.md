@@ -1,8 +1,7 @@
 ---
 title: Criação de um fluxo de trabalho para analisar os dados enviados
 description: Criação de AEM modelo de fluxo de trabalho usando componentes de fluxo de trabalho do AEM Forms para analisar os dados enviados.
-sub-product: formulários
-feature: Fluxo de trabalho
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,16 +9,16 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 5%
+source-wordcount: '138'
+ht-degree: 4%
 
 ---
-
 
 # Criação de um fluxo de trabalho para analisar os dados enviados
 
@@ -27,13 +26,10 @@ Geralmente, os workflows são usados para rotear dados enviados para revisão e 
 
 ## Pré-requisitos
 
-Verifique se você tem uma instância de trabalho do AEM Forms. Siga o [guia de instalação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
+Verifique se você tem uma instância de trabalho do AEM Forms. Siga as [guia de instalação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) para instalar e configurar o AEM Forms
 
 O vídeo a seguir explica a criação de um fluxo de trabalho de revisão e aprovação usando os componentes do AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-Se, por algum motivo, você não conseguir criar o workflow, poderá baixar o workflow concluído de [here](assets/review-submitted-data-workflow.zip) e importar o mesmo usando [package manager](http://localhost:4502/crx/packmgr/index.jsp) em sua instância do AEM.
-
-
-
+Se, por algum motivo, você não conseguir criar o fluxo de trabalho, poderá baixar o fluxo de trabalho concluído em [here](assets/review-submitted-data-workflow.zip) e importar o mesmo usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp) em sua instância do AEM.

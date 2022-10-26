@@ -1,7 +1,6 @@
 ---
 title: Predefinições de imagem
-description: As predefinições de imagens no Dynamic Media Classic contêm todas as configurações necessárias para criar uma imagem em um tamanho, formato, qualidade e nitidez específicos. As predefinições de imagens são um componente essencial do dimensionamento dinâmico. Ao observar um URL no Dynamic Media Classic, é possível ver se uma predefinição de imagem está em uso. Saiba mais sobre Predefinições de imagem, por que elas são tão úteis e como criar uma.
-sub-product: dynamic-media
+description: As predefinições de imagens no Dynamic Media Classic contêm todas as configurações necessárias para criar uma imagem em um tamanho, formato, qualidade e nitidez específicos. As predefinições de imagens são um componente essencial do dimensionamento dinâmico. Ao observar um URL no Dynamic Media Classic, é possível ver facilmente se uma predefinição de imagem está em uso. Saiba mais sobre Predefinições de imagem, por que elas são tão úteis e como criar uma.
 feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -10,13 +9,13 @@ activity: use
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 1%
 
 ---
-
 
 # Predefinições de imagem {#image-presets}
 
@@ -24,7 +23,7 @@ Uma predefinição de imagem é essencialmente uma receita que contém todas as 
 
 Se você observar os URLs de qualquer cliente do Dynamic Media Classic, provavelmente verá uma predefinição de imagem em uso. Basta procurar $name$ no final do URL (com qualquer palavra ou palavra substituída por nome).
 
-As predefinições de imagem reduzem o URL, de modo que, em vez de escrever várias instruções de Exibição de imagem por solicitação, você pode gravar uma única predefinição de imagem. Por exemplo, esses dois URLs produzem a mesma imagem JPEG 300 x 300 com nitidez, mas o segundo usa uma predefinição de imagem:
+As predefinições de imagem reduzem o URL, de modo que, em vez de escrever várias instruções de Exibição de imagem por solicitação, você pode gravar uma única predefinição de imagem. Por exemplo, esses dois URLs produzem a mesma imagem de JPEG 300 x 300 com nitidez, mas o segundo usa uma predefinição de imagem:
 
 ![imagem](assets/image-presets/image-preset-2.png)
 
@@ -63,10 +62,10 @@ O gráfico a seguir mostra três níveis de nitidez. Da direita para a esquerda 
 
 O Dynamic Media Classic permite três tipos de nitidez: Nitidez simples, modo de reamostra e Tirar nitidez da máscara.
 
-Saiba mais sobre as [Opções de nitidez do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Saiba mais sobre [Opções de nitidez do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Recursos adicionais
 
 [Guia de predefinição de imagem](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Configurações a serem usadas para otimizar a qualidade da imagem e a velocidade de carregamento.
 
-[A Imagem É Tudo Parte 2: Nunca é apenas um desfoque — Qualidade versus Velocidade](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Uma publicação do blog discute o uso de Predefinições de imagem para fornecer imagens de alta qualidade e de carregamento rápido.
+[A Imagem É Tudo Parte 2: Nunca é apenas um desfoque — qualidade versus velocidade](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Uma publicação do blog discute o uso de Predefinições de imagem para fornecer imagens de alta qualidade e de carregamento rápido.
