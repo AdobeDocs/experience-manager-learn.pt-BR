@@ -9,7 +9,8 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+recommendations: noDisplay, noCatalog
+source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
 workflow-type: tm+mt
 source-wordcount: '3066'
 ht-degree: 1%
@@ -83,7 +84,7 @@ Na maioria dos casos, o planejamento de um novo site começa com modelos e desig
 
 Ao criar uma página, você deve selecionar um modelo, que é usado como a base para criar a nova página. O modelo define a estrutura da página resultante, o conteúdo inicial e os componentes permitidos.
 
-Há três áreas principais de [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Há três áreas principais de [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=pt-BR):
 
 1. **Estrutura** - define os componentes que fazem parte do modelo. Eles não são editáveis por autores de conteúdo.
 1. **Conteúdo inicial** - define os componentes com os quais o modelo começa, eles podem ser editados e/ou excluídos pelos autores de conteúdo
