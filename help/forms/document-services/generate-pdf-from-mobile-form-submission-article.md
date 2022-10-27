@@ -7,16 +7,17 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+last-substantial-update: 2020-01-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Gerar PDF a partir do envio de formulário HTM5 {#generate-pdf-from-htm-form-submission}
 
-Este artigo o guiará pelas etapas envolvidas na geração de pdf a partir do envio de um formulário do HTML5 (também conhecido como Mobile Forms). Essa demonstração também explicará as etapas necessárias para adicionar uma imagem ao formulário HTML5 e mesclar a imagem no pdf final.
+Este artigo o guiará pelas etapas envolvidas na geração de pdf a partir de um envio de formulário do HTML5 (também conhecido como Mobile Forms). Essa demonstração também explicará as etapas necessárias para adicionar uma imagem ao formulário HTML5 e mesclar a imagem no pdf final.
 
 
 Para mesclar os dados enviados no template xdp, fazemos o seguinte

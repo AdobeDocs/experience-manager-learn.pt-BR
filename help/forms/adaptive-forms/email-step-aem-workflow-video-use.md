@@ -1,18 +1,19 @@
 ---
 title: Utilização da etapa Enviar email do Forms Workflow
 description: A etapa Enviar email foi introduzida no AEM Forms 6.4. Com essa etapa, podemos criar processos ou fluxo de trabalho comerciais que permitirão enviar emails com ou sem anexos. O vídeo a seguir apresenta as etapas para configurar o componente Enviar email
-feature: Fluxo de trabalho
+feature: Workflow
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
+last-substantial-update: 2020-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 1%
 
 ---
-
 
 # Utilização da etapa Enviar email do Forms Workflow {#using-send-email-step-of-forms-workflow}
 
@@ -26,7 +27,7 @@ Como parte deste artigo, abordaremos o seguinte caso de uso:
 1. No envio do formulário, AEM fluxo de trabalho é acionado
 1. O Fluxo de trabalho AEM usa o componente Enviar email para enviar um email com o DoR como anexo
 
-Antes de usar a etapa Enviar email , certifique-se de configurar o Day CQ Mail Service a partir do [configMgr](http://localhost:4502/system/console/configMgr). Fornecer os valores específicos do seu ambiente
+Antes de usar a etapa Enviar email certifique-se de configurar o Day CQ Mail Service a partir do [configMgr](http://localhost:4502/system/console/configMgr). Fornecer os valores específicos do seu ambiente
 
 ![Configurar o Day CQ Mail Service](assets/mailservice.png)
 
@@ -40,7 +41,7 @@ Para executar a amostra em seu sistema, faça o seguinte:
 
 1. [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Baixar e instalar ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)pacote setvalueEste pacote contém o código para criar as propriedades de metadados como parte da etapa do processo do fluxo de trabalho.
+1. [Baixe e instale o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Este pacote contém o código para criar as propriedades de metadados como parte da etapa do processo do fluxo de trabalho.
 1. [Configurar o Day CQ Mail Service](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importe e instale os ativos associados a este artigo usando o gerenciador de pacotes no CRX](assets/emaildoraemformskt.zip)
 1. Inicie o [formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Preencha os campos obrigatórios e envie.
@@ -55,5 +56,4 @@ Dê uma olhada na etapa do processo do fluxo de trabalho. O código personalizad
 >No AEM Forms 6.5 e superior, não é necessário esse código personalizado para criar propriedades de metadados. Use o recurso de variáveis AEM fluxo de trabalho
 
 Verifique se a guia Anexos do componente Enviar email está configurada de acordo com a captura de tela abaixo
-![Send Email Attachment Tab](assets/sendemailcomponentconfigure.jpg)O valor &quot;DOR.pdf&quot; tem de corresponder ao valor especificado no Document of Record Path especificado nas opções de submissão do formulário adaptável.
-
+![Guia Enviar Anexo de Email](assets/sendemailcomponentconfigure.jpg)O valor &quot;DOR.pdf&quot; deve corresponder ao valor especificado no Caminho do Documento de Registro especificado nas opções de envio do formulário adaptável.

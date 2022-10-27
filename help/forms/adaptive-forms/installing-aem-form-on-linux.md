@@ -1,20 +1,21 @@
 ---
 title: Instalação do AEM Forms no Linux
 description: Saiba como instalar bibliotecas de 32 bits para o AEM Forms para funcionar na instalação do Linux.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4, 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
 kt: 7593
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: b9809561-e9bd-4c67-bc18-5cab3e4aa138
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
-
 
 # Instalação da versão de 32 bits das bibliotecas compartilhadas
 
@@ -35,8 +36,7 @@ Quando o AEM FORMS OSGi ou o AEM Forms j2EE são implantados no Linux, é necess
 * libXext (Biblioteca para extensões comuns do protocolo X11)
 * libXinerama (extensão X11), que fornece suporte para a extensão de um desktop em várias exibições. O nome é um trocadilho no Cinerama, um formato de filme widescreen que usou vários projetores. libXinerama é a biblioteca que faz interface com a extensão RandR)
 * libXrandr (a extensão Xinerama é amplamente obsoleta hoje em dia - foi substituída pela extensão RandR)
-* libXrender (biblioteca do cliente Extensão de Renderização X)
-nss-softokn-freebl (Biblioteca livre para serviços de segurança de rede)
+* libXrender (biblioteca do cliente da Extensão de Renderização X) nss-softokn-freebl (Biblioteca Freebl para Serviços de Segurança de Rede)
 * zlib (Biblioteca de compactação de dados sem patente, de uso geral)
 
 A partir do Red Hat Enterprise Linux 6, a edição de 32 bits de uma biblioteca terá a extensão de arquivo .686, enquanto a edição de 64 bits terá .x86_64. Exemplo, expat.i686. Antes do RHEL 6, as edições de 32 bits tinham a extensão .i386. Antes de instalar as edições de 32 bits, verifique se as edições de 64 bits mais recentes estão instaladas. Se a edição de 64 bits de uma biblioteca for anterior à versão de 32 bits que está sendo instalada, você receberá um erro como abaixo:
@@ -69,60 +69,29 @@ No Red Hat Enterprise Linux, use o YellowDog Update Modifier (YUM) para instalar
 
 ## Symlinks
 
-Além disso, é necessário criar links simbólicos libcurl.so, libcrypto.so e libssl.so apontando para as versões mais recentes de 32 bits das bibliotecas libcurl, libcrypto e libssl, respectivamente. Você pode encontrar os arquivos em /usr/lib/
-ln-s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so
-ln-s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so
-ln-s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
+Além disso, é necessário criar links simbólicos libcurl.so, libcrypto.so e libssl.so apontando para as versões mais recentes de 32 bits das bibliotecas libcurl, libcrypto e libssl, respectivamente. Você pode encontrar os arquivos em /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## Atualizações do sistema existente
 
-pode haver conflitos entre as arquiteturas x86_64 e i686 durante as atualizações, como este:
-Erro: Erro de verificação de transação:
-arquivo /lib/ld-2.28.so da instalação do glibc-2.28-72.el8.i686 entra em conflito com o arquivo do pacote glibc32-2.28-42.1.el8.x86_64
+pode haver conflitos entre as arquiteturas x86_64 e i686 durante as atualizações, como este: Erro: Erro de verificação de transação: arquivo /lib/ld-2.28.so da instalação do glibc-2.28-72.el8.i686 entra em conflito com o arquivo do pacote glibc32-2.28-42.1.el8.x86_64
 
-Se você tiver feito isso, desinstale o pacote incorreto primeiro, como neste caso:
-yum remove glibc32-2.28-42.1.el8.x86_64
+Se você tiver feito isso, desinstale o pacote incorreto primeiro, como neste caso: yum remove glibc32-2.28-42.1.el8.x86_64
 
-Dito isto e feito, você quer que as versões x86_64 e i686 sejam exatamente as mesmas, como por exemplo desta saída para o comando:
-yum info glibc
+Dito isto e feito, você quer que as versões x86_64 e i686 sejam exatamente as mesmas, como por exemplo desta saída para o comando: yum info glibc
 
-Última verificação de expiração de metadados: Há 0:41:33 em 18 de janeiro de 2020 11:37:08 AM EST.
-Pacotes instalados
-Nome : glibc
-Versão : 2,28
-Versão : 72.el8
-Arquitetura : i686
-Tamanho : 13 M
-Fonte : glibc-2.28-72.el8.src.rpm
-Repositório : @System
-Do acordo de recompra: BaseOS
-Resumo : As bibliotecas da biblioteca GNU
-URL : http://www.gnu.org/software/glibc/
-Licença : LGPLv2+ e LGPLv2+ com exceções e GPLv2+ e GPLv2+ com exceções e BSD e Inner-Net e ISC e Domínio Público e GFDL
-Descrição : O pacote glibc contém bibliotecas padrão que são usadas pelo : vários programas no sistema. Para economizar espaço em disco e : além de facilitar a atualização, o código comum do sistema é: mantido num único local e partilhado entre programas. Este pacote específico : O contém os conjuntos mais importantes de bibliotecas compartilhadas: a norma C : e a biblioteca matemática padrão. Sem essas duas bibliotecas, um : O sistema Linux não funcionará.
+Última verificação de expiração de metadados: 0:41:Há 33 anos em 18 de janeiro de 2020 11:37:08 AM EST.
+Nome dos pacotes instalados : versão do glibc : Versão 2.28 : Arquitetura 72.el8 : i686 Tamanho: 13 M Fonte : glibc-2.28-72.el8.src.rpm Repositório : @System From repo : Resumo do BaseOS : O URL das bibliotecas da biblioteca GNU : http://www.gnu.org/software/glibc/ Licença : LGPLv2+ e LGPLv2+ com exceções e GPLv2+ e GPLv2+ com exceções e BSD e Inner-Net e ISC e Domínio Público e GFDL Descrição : O pacote glibc contém bibliotecas padrão que são usadas pelo : vários programas no sistema. Para economizar espaço em disco e : além de facilitar a atualização, o código comum do sistema é: mantido num único local e partilhado entre programas. Este pacote específico : O contém os conjuntos mais importantes de bibliotecas compartilhadas: a norma C : e a biblioteca matemática padrão. Sem essas duas bibliotecas, um : O sistema Linux não funcionará.
 
-Nome : glibc
-Versão : 2,28
-Versão : 72.el8
-Arquitetura : x86_64
-Tamanho : 15 M
-Fonte : glibc-2.28-72.el8.src.rpm
-Repositório : @System
-Do acordo de recompra: BaseOS
-Resumo : As bibliotecas da biblioteca GNU
-URL : http://www.gnu.org/software/glibc/
-Licença : LGPLv2+ e LGPLv2+ com exceções e GPLv2+ e GPLv2+ com exceções e BSD e Inner-Net e ISC e Domínio Público e GFDL
-Descrição : O pacote glibc contém bibliotecas padrão que são usadas pelo : vários programas no sistema. Para economizar espaço em disco e : além de facilitar a atualização, o código comum do sistema é: mantido num único local e partilhado entre programas. Este pacote específico : O contém os conjuntos mais importantes de bibliotecas compartilhadas: a norma C : e a biblioteca matemática padrão. Sem essas duas bibliotecas, um : O sistema Linux não funcionará.
+Nome : versão do glibc : Versão 2.28 : Arquitetura 72.el8 : x86_64 Tamanho : 15 M Fonte : glibc-2.28-72.el8.src.rpm Repositório : @System From repo : Resumo do BaseOS : O URL das bibliotecas da biblioteca GNU : http://www.gnu.org/software/glibc/ Licença : LGPLv2+ e LGPLv2+ com exceções e GPLv2+ e GPLv2+ com exceções e BSD e Inner-Net e ISC e Domínio Público e GFDL Descrição : O pacote glibc contém bibliotecas padrão que são usadas pelo : vários programas no sistema. Para economizar espaço em disco e : além de facilitar a atualização, o código comum do sistema é: mantido num único local e partilhado entre programas. Este pacote específico : O contém os conjuntos mais importantes de bibliotecas compartilhadas: a norma C : e a biblioteca matemática padrão. Sem essas duas bibliotecas, um : O sistema Linux não funcionará.
 
 ## Alguns comandos úteis de yum
 
-lista yum instalada
-pesquisa de yum [part_of_package_name]
-yum, o que fornece [nome_do_pacote]
-yum install [nome_do_pacote]
-reinstale o yum [nome_do_pacote]
+lista yum instalada pesquisa yum [part_of_package_name]
+yum what [nome_do_pacote]
+instalação yum [nome_do_pacote]
+reinstalação do yum [nome_do_pacote]
 informações do yum [nome_do_pacote]
-depleção de yum [nome_do_pacote]
-remover [nome_do_pacote]
-yum check-update [nome_do_pacote]
-atualização yum [nome_do_pacote]
+depleto de íum [nome_do_pacote]
+remover yum [nome_do_pacote]
+atualização de verificação de yum [nome_do_pacote]
+atualização de yum [nome_do_pacote]

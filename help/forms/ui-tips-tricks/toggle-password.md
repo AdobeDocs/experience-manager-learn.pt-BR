@@ -8,10 +8,12 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+exl-id: 13b9cd28-2797-4da9-a300-218e208cd21b
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '167'
+ht-degree: 4%
 
 ---
 
@@ -70,5 +72,3 @@ O CSS a seguir foi usado para posicionar a variável **olho** ícone dentro do c
 * Importe a biblioteca do cliente usando o [interface do usuário do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe o formulário de amostra usando o [Forms e Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
-
-

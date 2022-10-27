@@ -1,18 +1,19 @@
 ---
 title: Serviços de utilidade pública
 description: Alguns serviços úteis de utilitários para desenvolvedores do AEM Forms
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: add06b73-18bb-4963-b91f-d8e1eb144842
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 2%
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
-
 
 # Serviços de utilidade pública
 
@@ -48,8 +49,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Pré-requisitos
 
 
-Você precisará implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e iniciar o pacote.
+Você precisará implantar [DesenvolvendoComServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e inicie o pacote.
 
 
-Se você for salvar documentos no repositório CRX usando esse serviço de utilitário, siga o [desenvolvimento com artigo do usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer as [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas para o usuário fd-service.
-
+Se você for salvar documentos no repositório CRX usando esse serviço de utilitário, siga o [desenvolvimento com artigo do usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer a variável [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas para o usuário fd-service.

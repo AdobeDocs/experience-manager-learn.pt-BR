@@ -1,21 +1,22 @@
 ---
 title: Armazenando e Recuperando Dados de Formulário com anexos do Banco de Dados MySQL
 description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados de formulário com anexos
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6593
 thumbnail: 327122.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
+last-substantial-update: 2020-11-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # Armazenamento e recuperação de dados de formulários adaptáveis com o 2FA
 
@@ -25,7 +26,7 @@ Este tutorial o guiará pelas etapas envolvidas na gravação e recuperação de
 
 * Faça uma chamada de POST para um servlet. Esse servlet armazena os dados no banco de dados e os anexos de formulário no repositório CRX. Os dados armazenados no banco de dados estão associados a um GUID.
 
-* Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o método **request.setAttribute**.
+* Quando quiser preencher o Formulário adaptativo com os dados armazenados, recupere os dados associados ao GUID e preencha o Formulário adaptável usando o **request.setAttribute** método .
 
 ## Demonstração do caso de uso
 

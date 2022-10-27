@@ -1,8 +1,8 @@
 ---
 title: Criação de dois layouts de coluna para documentos de canal de impressão
-seo-title: Criação de dois layouts de coluna para documentos de canal de impressão
+seo-title: Creating two column layouts for print channel documents
 description: Criar 2 layouts de coluna para documento de canal de impressão
-seo-description: Criar 2 layouts de coluna para documento de canal de impressão
+seo-description: Create 2 column layouts for print channel document
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,24 +12,24 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 416e3401-ba9f-4da3-8b07-2d39f9128571
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 2%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
-
 
 # Dois layouts de coluna no documento de canal de impressão
 
 Este breve artigo destacará as etapas necessárias para criar o layout de 2 colunas no canal de impressão. O caso de uso é gerar 2 documentos de página com página 1 com layout de 2 colunas e página 2 com layout de 1 coluna padrão.
 
-Veja a seguir as etapas de alto nível envolvidas na criação de dois layouts de coluna usando o AEM Forms Designer.
+Veja a seguir as etapas de alto nível envolvidas na criação de layouts de duas colunas usando o AEM Forms Designer.
 
-* Criar 2 áreas de conteúdo na página 1 mestre
-* Nomeie as 2 áreas de conteúdo como &quot;esquerda&quot; e &quot;coluna direita&quot;
-* Criar segunda página mestre com uma área de conteúdo (esse é o padrão)
+* Criar 2 áreas de conteúdo na página 1 principal
+* Nomeie as 2 áreas de conteúdo como &quot;coluna da esquerda&quot; e &quot;coluna da direita&quot;
+* Crie a segunda página principal com uma área de conteúdo (esse é o padrão)
 * Selecione a guia paginação (Subformulário sem título) (página 1) e (Subformulário sem título) (página 2) e defina as propriedades conforme mostrado nas capturas de tela abaixo.
 
 ![page1](assets/untitledsubform_paginationproperties.gif)

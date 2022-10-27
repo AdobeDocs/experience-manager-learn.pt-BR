@@ -1,17 +1,18 @@
 ---
 title: Uso de setvalue no fluxo de trabalho do AEM Forms
 description: Definir valor do elemento em dados enviados pelo Adaptive Forms no AEM Forms OSGI
-feature: Formulários adaptáveis
-topic: Desenvolvimento
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
-
 
 # Uso de setvalue no fluxo de trabalho do AEM Forms
 
@@ -38,18 +39,18 @@ Para implantar os ativos em seu sistema local, siga as etapas abaixo:
 
 * [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implante o pacote](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) de amostra. Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados xml enviados
+* [Implantar o pacote de amostra](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados xml enviados
 
 * [Baixe e extraia o conteúdo do arquivo zip](assets/setvalueassets.zip)
 * Aponte seu navegador para [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Importe e instale o setValueWorkflow.zip. Este tem o modelo de fluxo de trabalho de amostra.
-* Aponte seu navegador para [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Aponte seu navegador para [Forms e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Fazer upload do TimeOfRequestForm.zip
 * Abra o [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Preencha os 3 campos obrigatórios e envie
 * Faça logon como &quot;administrador&quot; no AEM (caso ainda não o tenha feito)
-* Vá para [&quot;Caixa de entrada AEM&quot;](http://localhost:4502/aem/inbox)
+* Ir para [&quot;Caixa de entrada AEM&quot;](http://localhost:4502/aem/inbox)
 * Abra o formulário &quot;Tempo de revisão da solicitação&quot;
 * Observe que os campos no primeiro painel estão desativados. Isso ocorre porque o formulário está sendo aberto pelo revisor. Além disso, observe que o painel para aprovar ou recusar a solicitação agora está visível
 

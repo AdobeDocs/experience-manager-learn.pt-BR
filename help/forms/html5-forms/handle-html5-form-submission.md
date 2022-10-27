@@ -1,7 +1,7 @@
 ---
-title: Gerenciar envio de formulário HTML5
+title: Manipular envio de formulário do HTML5
 description: Criar manipulador de envio de formulário HTML5
-feature: Formulários para publicação de conteúdo para dispositivos móveis
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,26 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 2%
+source-wordcount: '275'
+ht-degree: 3%
 
 ---
 
-
-# Gerenciar envio de formulário HTML5
+# Manipular envio de formulário do HTML5
 
 Formulários HTML5 podem ser enviados para servlet hospedado em AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar o formulário HTML5, é necessário adicionar &quot;Botão Enviar por HTTP&quot; no modelo de formulário usando o AEM Forms Designer
 
 ## Criar seu manipulador de envio
 
-Um servlet simples pode ser criado para lidar com o envio do formulário HTML5. Os dados enviados podem então ser extraídos usando o seguinte código. Este [servlet](assets/html5-submit-handler.zip) é disponibilizado para você como parte deste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+Um servlet simples pode ser criado para lidar com o envio do formulário HTML5. Os dados enviados podem então ser extraídos usando o seguinte código. Essa [servlet](assets/html5-submit-handler.zip) O é disponibilizado para você como parte deste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usar [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
-O código da linha 9 pode ser usado para invocar o processo J2EE. Certifique-se de ter configurado [Adobe LiveCycle Client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se pretende usar o código para invocar o processo J2EE.
+O código da linha 9 pode ser usado para invocar o processo J2EE. Certifique-se de que você configurou [Configuração do SDK do cliente do Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se você pretende usar o código para invocar o processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -62,14 +63,14 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ![submit-url](assets/submit-url.PNG)
 
-* Toque no xdp e clique em _Propriedades_->_Avançado_
+* Toque em xdp e clique em _Propriedades_->_Avançado_
 * copie http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e cole isso no campo de texto Enviar URL
-* Clique no botão _SaveAndClose_.
+* Clique em _SaveAndClose_ botão.
 
 ### Adicionar entrada em Excluir caminhos
 
-* Navegue até [configMgr](http://localhost:4502/system/console/configMgr).
-* Procure por _Filtro CSRF do Adobe Granite_
+* Navegar para [configMgr](http://localhost:4502/system/console/configMgr).
+* Procurar por _Filtro CSRF do Adobe Granite_
 * Adicione a seguinte entrada na seção Caminhos excluídos
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Salve as alterações
@@ -83,8 +84,4 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Leitura adicional
 
-Esse [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre a geração de PDF a partir do envio de formulário HTML5 também é recomendado.
-
-
-
-
+Essa [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) também é recomendável gerar PDF a partir do envio do formulário HTML5.

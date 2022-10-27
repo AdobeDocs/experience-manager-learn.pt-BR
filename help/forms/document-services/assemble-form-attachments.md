@@ -5,16 +5,17 @@ feature: Assembler
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
+last-substantial-update: 2021-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
-
 
 # Montagem de anexos de formulário
 
@@ -24,10 +25,10 @@ No envio do formulário, monte os anexos do formulário para gerar um pdf. Você
 
 ## Criar componente OSGi que implementa a interface WorkflowProcess
 
-Crie um componente OSGi que implementa a interface [com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). O código neste componente pode ser associado ao componente de etapa do processo no fluxo de trabalho de AEM. O método execute da interface com.adobe.granite.workflow.exec.WorkflowProcess é implementado neste componente.
+Crie um componente OSGi que implementa a variável [com.adobe.granite.workflow.exec.WorkflowProcess interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). O código neste componente pode ser associado ao componente de etapa do processo no fluxo de trabalho de AEM. O método execute da interface com.adobe.granite.workflow.exec.WorkflowProcess é implementado neste componente.
 
 Quando um formulário adaptável é enviado para acionar um fluxo de trabalho de AEM, os dados enviados são armazenados no arquivo especificado na pasta payload. Por exemplo, esse é o arquivo de dados enviado. Precisamos de montar os anexos especificados na marca de identificação e de informação bancária.
-![dados enviados](assets/submitted-data.JPG).
+![enviar dados](assets/submitted-data.JPG).
 
 ### Obter os nomes das tags
 
@@ -43,7 +44,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Criar DDX a partir dos nomes de anexo
 
-Em seguida, precisamos criar o documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço Assembler para montar documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos baseados em XFA antes que sejam montados. Observe que os elementos de origem do PDF estão na ordem correta, conforme especificado nos argumentos do processo.
+Precisamos então criar [XML de descrição do documento (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) documento utilizado pelo serviço Assembler para reunir documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos baseados em XFA antes que sejam montados. Observe que os elementos de origem do PDF estão na ordem correta, conforme especificado nos argumentos do processo.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -132,16 +133,15 @@ Veja a seguir a estrutura da pasta payload após os anexos do formulário serem 
 
 ### Para que esse recurso funcione no servidor AEM
 
-* Baixe o [Formulário de montagem de anexos de formulário](assets/assemble-form-attachments-af.zip) em seu sistema local.
-* Importe o formulário da página [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Baixe [workflow](assets/assemble-form-attachments.zip) e importe para AEM usando o gerenciador de pacotes.
+* Baixe o [Formulário de montagem de anexos de formulário](assets/assemble-form-attachments-af.zip) ao seu sistema local.
+* Importe o formulário do[Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) página.
+* Baixar [workflow](assets/assemble-form-attachments.zip) e importar para AEM usando o gerenciador de pacotes.
 * Baixe o [pacote personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Implante e inicie o pacote usando o [console da Web](http://localhost:4502/system/console/bundles)
+* Implante e inicie o pacote usando o [console da web](http://localhost:4502/system/console/bundles)
 * Aponte seu navegador para [Formulário AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Adicione um anexo no Documento de ID e alguns documentos pdf à seção demonstrativos bancários
 * Envie o formulário para acionar o fluxo de trabalho
-* Verifique a pasta [payload do fluxo de trabalho no crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para o pdf montado
+* Verifique o [pasta payload no crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para o pdf montado
 
 >[!NOTE]
 > Se você ativou o agente de log para o pacote personalizado, o DDX e o arquivo montado são gravados na pasta da instalação do AEM.
-

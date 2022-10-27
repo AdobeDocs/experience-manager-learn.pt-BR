@@ -1,8 +1,8 @@
 ---
 title: Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
-seo-title: Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Usar pasta assistida para gerar documentos do canal de impressão
-seo-description: Usar pasta assistida para gerar documentos do canal de impressão
+seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -12,14 +12,14 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 1%
+source-wordcount: '463'
+ht-degree: 0%
 
 ---
-
 
 # Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
 
@@ -113,9 +113,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para testar isso em seu sistema local, siga as seguintes instruções:**
 
-* Configure o Tomcat conforme descrito neste artigo [.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) O Tomcat tem o arquivo war que gera os dados de amostra.
-* Configure o serviço também conhecido como usuário do sistema, conforme descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões login para [user admin](https://localhost:4502/useradmin) e pesquisar os &quot;dados&quot; do usuário do sistema e fornecer as permissões de leitura no nó a seguir, tabulação para a guia de permissões
+* Configure o Tomcat conforme descrito neste [artigo 10. o](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) O Tomcat tem o arquivo war que gera os dados de amostra.
+* Configure o usuário do sistema também conhecido como descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon no [administrador de usuário](https://localhost:4502/useradmin) e procure por &quot;dados&quot; do usuário do sistema e forneça as permissões de leitura no nó a seguir ao tabular para a guia de permissões
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -153,4 +153,3 @@ Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. P
 >Se você planeja usar isso em um sistema operacional que não seja Windows, navegue até
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument e altere folderPath de acordo com sua preferência
-

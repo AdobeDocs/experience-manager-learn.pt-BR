@@ -1,22 +1,23 @@
 ---
-title: Como incorporar formulários adaptáveis Forms/HTML5 na página da Web
+title: Incorporação de formulários adaptáveis Forms/HTML5 na página da Web
 description: Etapas de configuração necessárias para incorporar formulários adaptáveis Forms ou HTML5 em uma página da Web que não seja AEM.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
 kt: 8390
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
+last-substantial-update: 2020-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
-
-# Como incorporar o formulário adaptável ou HTML5 na página da Web
+# Incorporação do formulário adaptável ou HTML5 na página da Web
 
 O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
 
@@ -26,31 +27,17 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
 
 Você pode baixar os arquivos de amostra usados no vídeo [daqui](assets/embedding-af-web-page.zip)
 
-Este é o código usado para buscar o formulário adaptável e incorporar o formulário no container identificado pelo nome de classe **right**
+Este é o código usado para buscar o formulário adaptável e incorporar o formulário no container identificado pelo nome da classe **right**
 
 ```javascript
 $(document).ready(function(){
   
-	var formName = $( "#xfaform" ).val();
+    var formName = $( "#xfaform" ).val();
     $.get("http://localhost/content/dam/formsanddocuments/newslettersubscription/jcr:content?wcmmode=disabled", function(data, status){
-	console.log(formName);
-	$(".right").append(data);
+    console.log(formName);
+    $(".right").append(data);
       
     });
   
 });
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

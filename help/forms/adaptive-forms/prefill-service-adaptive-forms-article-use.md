@@ -1,18 +1,19 @@
 ---
 title: Serviço de preenchimento prévio no Adaptive Forms
 description: Preencha previamente formulários adaptáveis buscando dados de fontes de dados de backend.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
-
 
 # Uso do serviço de preenchimento prévio no Adaptive Forms
 
@@ -81,8 +82,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 Para testar esse recurso em seu servidor, execute o seguinte procedimento
 
 * [Baixe e extraia o conteúdo do arquivo zip no seu computador](assets/prefillservice.zip)
-* Certifique-se de que as informações de perfil do usuário [logadas estão preenchidas completamente. ](http://localhost:4502/libs/granite/security/content/useradmin) Isso é necessário para que a amostra funcione. A amostra não tem nenhum erro ao verificar propriedades ausentes do perfil de usuário.
-* Implante o pacote usando o [AEM console da Web](http://localhost:4502/system/console/bundles)
+* Verifique se o [perfil do usuário](http://localhost:4502/libs/granite/security/content/useradmin) A informação é preenchida completamente. Isso é necessário para que a amostra funcione. A amostra não tem nenhum erro ao verificar propriedades ausentes do perfil de usuário.
+* Implante o pacote usando o [console da Web AEM](http://localhost:4502/system/console/bundles)
 * Criar formulário adaptável usando o XSD
 * Associe &quot;Serviço de pré-preenchimento de formulário do Aem personalizado&quot; como o serviço de pré-preenchimento do formulário adaptável
 * Arraste e solte elementos do esquema no formulário
@@ -92,5 +93,4 @@ Para testar esse recurso em seu servidor, execute o seguinte procedimento
 >
 >Se o formulário adaptável for baseado em XSD, verifique se o documento XML retornado pelo serviço de preenchimento corresponde ao XSD no qual o formulário adaptável se baseia.
 >
->Se o formulário adaptável não for baseado em XSD, será necessário vincular os campos manualmente. Por exemplo, para vincular um campo de formulário adaptável ao elemento fname nos dados XML, você usará `/data/fname` na Referência de vínculo do campo de formulário adaptável.
-
+>Se o formulário adaptável não for baseado em XSD, será necessário vincular os campos manualmente. Por exemplo, para vincular um campo de formulário adaptável ao elemento de nome nos dados XML, você usará `/data/fname`  no campo Bind reference of the adaptive form .

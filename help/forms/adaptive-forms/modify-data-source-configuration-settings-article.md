@@ -1,18 +1,19 @@
 ---
 title: Modifique as configurações da fonte de dados.
 description: Modifique o nome do host e outras configurações em Configurações da fonte de dados.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
-
 
 # Capacidade de modificar as configurações da fonte de dados{#ability-to-modify-data-source-configuration-settings}
 
@@ -24,7 +25,6 @@ As capturas de tela abaixo mostram as configurações da fonte de dados no AEM F
 
 **Configuração da fonte de dados no AEM 6.4**
 
-![64](assets/64release.gif)
-**Configuração de fonte de dadosConfiguração de fonte de dados editável no AEM 6.5 e superior**
-![65Configuração de fonte de dados](assets/modifiabledatasource.jfif)
-
+![64Configuração da fonte de dados](assets/64release.gif)
+**Configuração editável da fonte de dados no AEM 6.5 e superior**
+![65Configuração da fonte de dados](assets/modifiabledatasource.jfif)
