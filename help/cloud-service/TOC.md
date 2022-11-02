@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: Experience Manager
 version: Cloud Service
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 21%
@@ -206,10 +206,10 @@ ht-degree: 21%
       + [Exteriorização do armazenamento de workflow](./forms/create-aem-workflow/externalize-workflow.md)
       + [Criar modelo de fluxo de trabalho](./forms/create-aem-workflow/create-workflow.md)
       + [Acionar fluxo de trabalho](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign com AEM Forms{#forms-and-sign}
+   + Acrobat Sign com AEM Forms{#forms-and-sign}
       + [Introdução](./forms/forms-and-sign/introduction.md)
-      + [Aplicativo de API do Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Configuração de nuvem do Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Aplicativo de API do Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Configuração da Acrobat Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Criar formulário adaptável](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurar para preenchimento e sinal](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Integração com o Microsoft Power Automate{#forms-cs-and-power-automate}

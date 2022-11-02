@@ -8,7 +8,7 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Os formulários são criados usando o Acrobat. Você pode criar um novo formulá
 
 >[!NOTE]
 >
->Se desejar enviar o formulário de preenchimento para assinatura usando o Adobe Sign, nomeie os campos de acordo. Por exemplo, é possível nomear um campo **Sig_es_:signer1:assinatura**. Essa é a sintaxe que o Adobe Sign entende.
+>Se desejar enviar o formulário de preenchimento para assinatura usando o Acrobat Sign, nomeie os campos de acordo. Por exemplo, é possível nomear um campo **Sig_es_:signer1:assinatura**. Essa é a sintaxe que o Acrobat Sign entende.
 
 >[!NOTE]
 >
->Se você estiver enviando um documento baseado em XFA, precisará nivelar o documento e as tags de assinatura Adobe Sign precisam estar presentes como texto estático no documento.
+>Se você estiver enviando um documento baseado em XFA, precisará nivelar o documento e as tags de assinatura Acrobat Sign precisam estar presentes como texto estático no documento.
 
-[Documento de Tags de texto do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento de Tags de texto do Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

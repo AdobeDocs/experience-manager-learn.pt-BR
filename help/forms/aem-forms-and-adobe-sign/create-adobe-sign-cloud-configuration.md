@@ -1,23 +1,24 @@
 ---
-title: Criar configuração da Adobe Sign Cloud
-description: A configuração dos serviços em nuvem no AEM permite criar a integração entre o AEM e outros aplicativos em nuvem. O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços de nuvem para integrar o AEM com o Adobe Sign.
-feature: Formulários adaptáveis
+title: Criar configuração da Acrobat Sign Cloud
+description: A configuração dos serviços em nuvem no AEM permite criar a integração entre o AEM e outros aplicativos em nuvem. O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços de nuvem para integrar o AEM com o Acrobat Sign.
+feature: Adaptive Forms
 thumbnail: 38179.jpg
 kt: 6033
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7a62ae37-d391-4136-99f3-b32181afd475
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
-# Criar configuração da Adobe Sign Cloud
+# Criar configuração da Acrobat Sign Cloud
 
 A configuração dos serviços em nuvem no AEM permite criar a integração entre o AEM e outros aplicativos em nuvem.
 
-O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços em nuvem para integrar o AEM com o Adobe Sign
+O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços em nuvem para integrar o AEM com o Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/38179/?quality=9&learn=on)

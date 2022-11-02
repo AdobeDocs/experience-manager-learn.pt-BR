@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A próxima etapa é criar os formulários adaptáveis que você deseja incluir n
 
 * Certifique-se de que os formulários sejam baseados no **SignMultipleForms** modelo . Isso garante que os formulários sejam preenchidos previamente com os dados obtidos do banco de dados.
 
-* Os formulários precisam ser configurados para usar o Adobe Sign e o campo signer1 precisa ser associado ao campo Email do cliente
+* Os formulários precisam ser configurados para usar o Acrobat Sign e o campo signer1 precisa ser associado ao campo Email do cliente
 * Os formulários também precisam ser associados ao clientLib chamado **getnextform**
 * Os formulários precisam usar o componente Etapa de assinatura.
 * O formulário também deve usar o **Assinar vários formulários** componente. Esse componente permite navegar até o próximo formulário para fazer logon no pacote.

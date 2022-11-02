@@ -1,16 +1,17 @@
 ---
 title: Contrato de aluguer com 2 signatários
 description: Contrato de aluguel com 2 signatários. O vídeo explica as várias etapas necessárias para configurar um formulário adaptável com 2 signatários.
-feature: Adaptive Forms,Adobe Sign
+feature: Adaptive Forms,Acrobat Sign
 thumbnail: 39294.jpg
 kt: 6071
-topic: Desenvolvimento
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 5d450605-31bb-4c2e-a500-e9219f55b7c7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '58'
+ht-degree: 5%
 
 ---
 

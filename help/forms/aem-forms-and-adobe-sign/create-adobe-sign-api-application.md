@@ -1,23 +1,24 @@
 ---
-title: Criar aplicativo de API do Adobe Sign
-description: O aplicativo Adobe Sign API permite integrar o AEM Forms com o Adobe Sign
-feature: Adaptive Forms,Adobe Sign
+title: Criar aplicativo de API do Acrobat Sign
+description: O aplicativo Acrobat Sign API permite integrar o AEM Forms com o Acrobat Sign
+feature: Adaptive Forms,Acrobat Sign
 kt: 6032
 thumbnail: 38178.jpg
-topic: Desenvolvimento
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0fea826c-b481-4c8f-872f-e429430ed3a6
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
 
-# Criar aplicativo de API do Adobe Sign
+# Criar aplicativo de API do Acrobat Sign
 
-Você deve criar um aplicativo de API em seu Adobe Sign para integrar com sua plataforma Adobe Sign. O aplicativo de API atua como representante de um aplicativo cliente, interagindo com a plataforma Adobe Sign. Você pode criar o aplicativo de API no domínio cliente ou parceiro.
+Você deve criar um aplicativo de API em seu Acrobat Sign para integrar com sua plataforma Acrobat Sign. O aplicativo de API atua como representante de um aplicativo cliente, interagindo com a plataforma Acrobat Sign. Você pode criar o aplicativo de API no domínio cliente ou parceiro.
 
-O vídeo a seguir explica as etapas necessárias para criar um aplicativo de API do Adobe Sign
+O vídeo a seguir explica as etapas necessárias para criar um aplicativo de API do Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/38178/?quality=9&learn=on)

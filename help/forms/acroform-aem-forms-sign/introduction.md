@@ -1,13 +1,13 @@
 ---
 title: Acrobora com AEM Forms
-description: Um tutorial que aborda a criação de um formulário adaptável usando o Acroform e mesclando os dados para obter um PDF. O PDF com os dados unidos pode ser enviado para assinatura usando o Adobe Sign.
+description: Um tutorial que aborda a criação de um formulário adaptável usando o Acroform e mesclando os dados para obter um PDF. O PDF com os dados unidos pode ser enviado para assinatura usando o Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Criar Forms adaptável a partir de plataformas
 
-As organizações têm uma grande variedade de formas. Alguns desses formulários são criados no Microsoft Word e convertidos em PDF. Por padrão, esses formulários não podem ser preenchidos usando o Adobe Reader ou Acrobat. Para tornar esses formulários preenchíveis usando o Acrobat ou o Reader, precisamos converter esses formulários em Acroform. Os formulários são criados usando o Acrobat. Este artigo aborda a criação de um formulário adaptável a partir da Acroform e a união dos dados de volta ao Acroform para obter o PDF. O PDF com os dados unidos também pode ser enviado para assinatura usando o Adobe Sign.
+As organizações têm uma grande variedade de formas. Alguns desses formulários são criados no Microsoft Word e convertidos em PDF. Por padrão, esses formulários não podem ser preenchidos usando o Adobe Reader ou Acrobat. Para tornar esses formulários preenchíveis usando o Acrobat ou o Reader, precisamos converter esses formulários em Acroform. Os formulários são criados usando o Acrobat. Este artigo aborda a criação de um formulário adaptável a partir da Acroform e a união dos dados de volta ao Acroform para obter o PDF. O PDF com os dados unidos também pode ser enviado para assinatura usando o Acrobat Sign.
 
 >[!NOTE]
 >

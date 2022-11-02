@@ -4,7 +4,7 @@ description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes 
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 8%
@@ -140,7 +140,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     </div>
     <p>
-    <em>Contrato de aluguel entre locatário e proprietário preenchido e assinado usando AEM Forms e Adobe Sign</em>
+    <em>Contrato de aluguel entre locatário e proprietário preenchido e assinado usando AEM Forms e Acrobat Sign</em>
     <p>
   </td>
   <td>
@@ -153,7 +153,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     </div>
     <p>
-    <em>Criar um NDA dinamicamente e enviar para assinatura usando o Adobe Sign</em>
+    <em>Criar um NDA dinamicamente e enviar para assinatura usando o Acrobat Sign</em>
     </p>
   </td>
   <td>
@@ -166,7 +166,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
       </a>
     </div>
     <p>
-    <em>Assine vários documentos de maneira contínua usando o Forms e o Adobe Sign</em>
+    <em>Assine vários documentos de maneira contínua usando o Forms e o Acrobat Sign</em>
     <p>
   </td>
 </tr>
