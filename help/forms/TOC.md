@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriais do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1725'
 ht-degree: 3%
 
 ---
@@ -110,6 +110,7 @@ ht-degree: 3%
    + [Botões da barra de ferramentas Espaço](ui-tips-tricks/toolbar-buttons.md)
    + [Navegar pelas guias com painéis aninhados](ui-tips-tricks/nested-panels.md)
    + [Adicionar ícones às guias de navegação](ui-tips-tricks/active-complete.md)
+   + [Campos de preenchimento automático](ui-tips-tricks/auto-complete.md)
 + Personalização da caixa de entrada{#inbox-customization}
    + [Introdução](inbox-customization/introduction.md)
    + [Adicionar coluna personalizada](inbox-customization/add-married-column.md)

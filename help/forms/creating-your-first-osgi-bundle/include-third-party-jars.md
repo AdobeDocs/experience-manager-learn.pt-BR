@@ -1,6 +1,6 @@
 ---
-title: Criação do seu primeiro pacote OSGi com o AEM Forms
-description: Crie seu primeiro pacote OSGi usando Maven e Eclipse
+title: Inclusão de jars de terceiros
+description: Saiba como usar o arquivo jar de terceiros no projeto do AEM
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
@@ -9,9 +9,9 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
