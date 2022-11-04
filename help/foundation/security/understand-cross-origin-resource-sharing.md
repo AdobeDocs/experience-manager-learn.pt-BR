@@ -2,7 +2,7 @@
 title: Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens) com a AEM
 description: O CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos de várias origens) da Adobe Experience Manager facilita as propriedades da Web que não são AEM para fazer chamadas do lado do cliente para AEM, autenticadas e não autenticadas, buscar conteúdo ou interagir diretamente com AEM.
 version: 6.4, 6.5
-sub-product: foundation, content-services, sites
+sub-product: Experience Manager, Experience Manager Sites
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
@@ -11,7 +11,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
@@ -129,7 +129,7 @@ A partir do Dispatcher 4.1.1+, os cabeçalhos de resposta podem ser armazenados 
 
 Geralmente, as mesmas considerações para o armazenamento em cache de conteúdo no Dispatcher podem ser aplicadas ao armazenamento em cache de cabeçalhos de resposta do CORS no dispatcher. A tabela a seguir define quando [!DNL CORS] cabeçalhos (e, portanto, [!DNL CORS] solicitações) podem ser armazenadas em cache.
 
-| Acessível | Autor | Status de autenticação | Explicação |
+| Acessível | Ambiente | Status de autenticação | Explicação |
 |-----------|-------------|-----------------------|-------------|
 | Não | AEM Publish | Autenticado | O armazenamento em cache do Dispatcher no AEM Author é limitado a ativos estáticos não criados. Isso torna difícil e impraticável armazenar em cache a maioria dos recursos no AEM Author, incluindo cabeçalhos de resposta HTTP. |
 | Não | Publicação do AEM | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar em cache solicitações autenticadas, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso fornecido. |

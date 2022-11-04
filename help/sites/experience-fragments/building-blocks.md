@@ -1,7 +1,7 @@
 ---
 title: Como usar os blocos de construção de fragmentos de experiência
 description: Os blocos de construção são um subrecurso dos Fragmentos de experiência que permitem a reutilização de componentes criados em variações de Fragmentos de experiência.
-sub-product: sites, content-services
+sub-product: Experience Manager Sites
 version: Cloud Service
 feature: Experience Fragments
 topic: Content Management
@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -19,6 +19,7 @@ ht-degree: 0%
 ---
 
 # Blocos de construção com fragmentos de experiência {#building-blocks}
+
 
 Os blocos de construção são um subrecurso dos Fragmentos de experiência. Os blocos de construção permitem que os autores de conteúdo reutilizem componentes em diferentes variações de Fragmentos de experiência.
 
