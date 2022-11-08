@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ A amostra incluída neste artigo usa uma variedade de fontes de dados (matriz es
 
 O código usado para realizar o recurso de preenchimento automático está associado ao evento initialize do campo.
 
-
-## Fornecer sugestões para o nome do país
-
-![sugestões de país](assets/auto-complete1.png)
-
 ## Fornecer sugestão para endereço
 
 ![sugestões de país](assets/auto-complete2.png)
+
+
 
 Este é o código usado para fornecer sugestões de endereço de rua
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## Sugestões para emoji
 

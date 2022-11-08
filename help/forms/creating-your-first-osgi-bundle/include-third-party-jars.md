@@ -9,7 +9,7 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Estamos adicionando este pacote ao nosso projeto AEM **AEMormsProcessStep** que 
 * Abra o prompt de comando. No meu caso, acesse a pasta do seu projeto (c:\aemformsbundles\AEMFormsProcessStep). Execute o seguinte comando
 
 ```java
-mvn clean install -pAutoInstallSinglePackage
+mvn clean install -PautoInstallSinglePackage
 ```
 
 Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando [console da web felix](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do `crx` repositório como mostrado abaixo

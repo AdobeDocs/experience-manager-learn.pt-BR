@@ -12,9 +12,9 @@ thumbnail: KT-11368.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
+source-git-commit: e3fb145e7a9f33dd010f6c40e42573d41e54b302
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,7 @@ Este código:
 + Usa as consultas persistentes de WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
 Para obter uma análise mais aprofundada de como este aplicativo Next.js é criado, consulte o [exemplo de documentação do aplicativo Next.js](../example-apps/next-js.md).
+
+>[!IMPORTANT]
+>
+> O Codesandbox.io não suporta edição do aplicativo Next.js no IDE incorporado. Para editar essa amostra de código, [abra o aplicativo Next.js diretamente em codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-3n6zdv).
