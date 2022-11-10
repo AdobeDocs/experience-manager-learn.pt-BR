@@ -6,9 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '2911'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ No [capítulo anterior](/help/headless-tutorial/graphql/advanced-graphql/create-
 
 ## Pré-requisitos {#prerequisites}
 
-Este documento faz parte de um tutorial de várias partes. Certifique-se de que os capítulos anteriores foram concluídos antes de prosseguir com este capítulo.
+Este documento faz parte de um tutorial de várias partes. Certifique-se de que [capítulo anterior](create-content-fragment-models.md) foi concluída antes de prosseguir com este capítulo.
 
 ## Objetivos {#objectives}
 
@@ -36,7 +37,7 @@ Neste capítulo, saiba como:
 
 Instale um pacote de AEM que contenha várias pastas e imagens de amostra usadas para acelerar o tutorial.
 
-1. Baixar [Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip)
+1. Baixar [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. Em AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes** para acessar **Gerenciador de pacotes**.
 1. Faça upload e instale o pacote (arquivo zip) baixado na etapa anterior.
 
@@ -44,7 +45,7 @@ Instale um pacote de AEM que contenha várias pastas e imagens de amostra usadas
 
 ## Criar pastas e definir limites usando políticas de pastas
 
-Na página inicial do AEM, selecione **Ativos** > **Arquivos** > **Site WKND** > **Inglês**. Aqui você pode ver as várias categorias de Fragmento de conteúdo, incluindo Aventuras e Contribuidores exploradas nas [tutorial GraphQL de várias etapas](../multi-step/overview.md).
+Na página inicial do AEM, selecione **Ativos** > **Arquivos** > **WKND Compartilhado** > **Inglês**. Aqui você pode ver as várias categorias de Fragmento de conteúdo, incluindo Aventuras e Contribuidores.
 
 ### Criar pastas {#create-folders}
 
@@ -70,11 +71,11 @@ AEM permite definir permissões e políticas para pastas de Fragmento de conteú
 
    ![Propriedades](assets/author-content-fragments/properties.png)
 
-1. Selecione o **Políticas** e, em seguida, desmarcar **Herdado de /content/dam/wknd**. No **Modelos de fragmentos de conteúdo permitidos por caminho** selecione o ícone de pasta.
+1. Selecione o **Políticas** e, em seguida, desmarcar **Herdado de /content/dam/wknd-shared**. No **Modelos de fragmentos de conteúdo permitidos por caminho** selecione o ícone de pasta.
 
-   ![Ícone Folder](assets/author-content-fragments/folder-icon.png)
+   ![Ícone de pasta](assets/author-content-fragments/folder-icon.png)
 
-1. Na caixa de diálogo Selecionar caminho que é aberta, siga o caminho **conf** > **Site WKND**. O Modelo de fragmento de conteúdo da pessoa, criado no capítulo anterior, contém uma referência ao Modelo de fragmento de conteúdo das informações de contato. Os modelos Pessoa e Informações de contato devem ser permitidos na pasta Instrutores para criar um Fragmento de conteúdo de instrutor. Selecionar **Pessoa** e **Informações de contato** e pressione **Selecionar** para fechar a caixa de diálogo.
+1. Na caixa de diálogo Selecionar caminho que é aberta, siga o caminho **conf** > **WKND Compartilhado**. O Modelo de fragmento de conteúdo da pessoa, criado no capítulo anterior, contém uma referência ao Modelo de fragmento de conteúdo das informações de contato. Os modelos Pessoa e Informações de contato devem ser permitidos na pasta Instrutores para criar um Fragmento de conteúdo de instrutor. Selecionar **Pessoa** e **Informações de contato** e pressione **Selecionar** para fechar a caixa de diálogo.
 
    ![Selecionar caminho](assets/author-content-fragments/select-path.png)
 
@@ -88,13 +89,13 @@ AEM permite definir permissões e políticas para pastas de Fragmento de conteú
 
 Navegue até o **Instrutores** pasta. A partir daqui, vamos criar uma pasta aninhada para armazenar as informações de contato dos instrutores.
 
-Siga as etapas descritas na seção sobre [criação de pastas](#create-folders) para criar uma pasta denominada &quot;Informações de contato&quot;. Observe que a pasta aninhada herda as políticas de pastas da pasta pai. Você pode configurar políticas mais específicas para que a pasta recém-criada permita que o modelo Informações de contato seja usado apenas.
+Siga as etapas descritas na seção sobre [criação de pastas](#create-folders) para criar uma pasta denominada &quot;Informações de contato&quot;. A pasta aninhada herda as políticas de pastas da pasta principal. Você pode configurar políticas mais específicas para que a pasta recém-criada permita que o modelo Informações de contato seja usado apenas.
 
 ### Criar um fragmento de conteúdo de instrutor
 
-Vamos criar quatro pessoas que podem ser adicionadas a uma equipe de instrutores de risco. Reutilize as imagens e os nomes dos Fragmentos de conteúdo dos contribuidores que foram criados no [tutorial GraphQL de várias etapas](../multi-step/author-content-fragments.md). Embora o tutorial anterior tenha detalhado como criar Fragmentos de conteúdo básicos, este tutorial tem como foco recursos mais avançados.
+Vamos criar quatro pessoas que podem ser adicionadas a uma equipe de instrutores de risco.
 
-1. Na pasta Instrutores , crie um novo Fragmento de conteúdo com base no Modelo de Fragmento de conteúdo da pessoa e atribua a ele um título de &quot;Jacob Wester&quot;.
+1. Na pasta Instrutores, crie um Fragmento de conteúdo com base no Modelo de Fragmento de conteúdo da pessoa e atribua a ele um título de &quot;Jacob Wester&quot;.
 
    O Fragmento de conteúdo recém-criado é semelhante ao seguinte:
 
@@ -103,14 +104,14 @@ Vamos criar quatro pessoas que podem ser adicionadas a uma equipe de instrutores
 1. Insira o seguinte conteúdo nos campos:
 
    * **Nome completo**: Jacob Wester
-   * **Biografia**: Jacob Wester tem sido instrutor de caminhada por dez anos e tem adorado cada minuto dele! Ele é um candidato de aventura com talento para escalar e fazer mochila. Jacob é o vencedor das competições de escalada, incluindo a Batalha da Competição Bouldering . Atualmente ele mora na Califórnia.
+   * **Biografia**: Jacob Wester tem sido instrutor de caminhada por dez anos e tem adorado cada minuto dele! Jacob é um candidato a aventura com talento para escalar e fazer mochila. Jacob é o vencedor das competições de escalada, incluindo a Batalha da Competição Bouldering . Jacob mora atualmente na Califórnia.
    * **Nível de experiência do instrutor**: Especialista
    * **Habilidades**: Escala de Rocha, Surfe, Embalagem
-   * **Detalhes do administrador**: Jacob Wester coordena aventuras de bastidores há 3 anos.
+   * **Detalhes do administrador**: Jacob Wester coordena aventuras de bastidores há três anos.
 
-1. No **Imagem do perfil** , adicione uma referência de conteúdo a uma imagem. Navegue até **Site WKND** > **Inglês** > **Contribuidores** > **jacob_wester.jpg** para criar um caminho para a imagem.
+1. No **Imagem do perfil** , adicione uma referência de conteúdo a uma imagem. Navegue até **WKND Compartilhado** > **Inglês** > **Contribuidores** > **jacob_wester.jpg** para criar um caminho para a imagem.
 
-### Criar uma nova referência de fragmento no editor Fragmento de conteúdo {#fragment-reference-from-editor}
+### Criar uma referência de fragmento no editor Fragmento de conteúdo {#fragment-reference-from-editor}
 
 AEM permite criar uma referência de fragmento diretamente do editor de Fragmento de conteúdo. Vamos criar uma referência às informações de contato do Jacob.
 
@@ -135,7 +136,7 @@ AEM permite criar uma referência de fragmento diretamente do editor de Fragment
    * **Telefone**: 209-888-0000
    * **Email**: jwester@wknd.com
 
-   Quando terminar, selecione **Salvar**. Agora você criou um novo Fragmento de conteúdo de informações de contato.
+   Quando terminar, selecione **Salvar**. Agora você criou um Fragmento de conteúdo de informações de contato.
 
 1. Para voltar para o Fragmento de conteúdo do instrutor, selecione **Jacob Wester** no canto superior esquerdo do editor.
 
@@ -153,13 +154,13 @@ Siga o mesmo processo descrito no [seção anterior](#fragment-reference-from-ed
 
 **Stacey Roswells**
 
-| Fields | Valores |
+| Campos | Valores |
 | --- | --- |
 | Título do fragmento do conteúdo | Stacey Roswells |
 | Nome completo | Stacey Roswells |
-| Informação de contato | /content/dam/wknd/en/adventures/instrutors/contact-info/stacey-roswells-contact-info |
-| Imagem do perfil | /content/dam/wknd/en/contributors/stacey-roswells.jpg |
-| Biografia | Stacey Roswells é uma alpinista de rock e aventureira alpina. Nascido em Baltimore, Maryland, Stacey é a mais nova de seis crianças. Seu pai era tenente-coronel na Marinha dos Estados Unidos e sua mãe era uma instrutora de dança moderna. A família dela se mudou frequentemente com as tarefas do pai, e ela tirou as primeiras fotos quando ele estava estacionado na Tailândia. Foi também aqui que Stacey aprendeu a escalar. |
+| Informação de contato | /content/dam/wknd-shared/en/adventures/instrutors/contact-info/stacey-roswells-contact-info |
+| Imagem do perfil | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
+| Biografia | Stacey Roswells é uma alpinista de rock e aventureira alpina. Nascido em Baltimore, Maryland, Stacey é a mais nova de seis crianças. O pai de Stacey era tenente-coronel na Marinha dos Estados Unidos e a mãe era uma instrutora de dança moderna. A família de Stacey mudou-se frequentemente com as tarefas do pai, e tirou as primeiras fotos quando o pai estava estacionado na Tailândia. Foi também aqui que Stacey aprendeu a escalar. |
 | Nível de experiência do instrutor | Avançado  |
 | Habilidades | Escala de Rocha | Esqui | Embalagem retroativa |
 
@@ -169,8 +170,8 @@ Siga o mesmo processo descrito no [seção anterior](#fragment-reference-from-ed
 | --- | --- |
 | Título do fragmento do conteúdo | Kumar Selvaraj |
 | Nome completo | Kumar Selvaraj |
-| Informação de contato | /content/dam/wknd/en/adventures/instrutors/contact-info/kumar-self-contact-info |
-| Imagem do perfil | /content/dam/wknd/en/contributors/Kumar_Selvaraj.JPG |
+| Informação de contato | /content/dam/wknd-shared/en/adventures/instrutors/contact-info/kumar-self-contact-info |
+| Imagem do perfil | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografia | Kumar Selvaraj é um instrutor profissional certificado pela AMGA experiente, cujo objetivo principal é ajudar os estudantes a aprimorar suas habilidades de escalada e caminhada. |
 | Nível de experiência do instrutor | Avançado  |
 | Habilidades | Escala de Rocha | Embalagem retroativa |
@@ -181,9 +182,9 @@ Siga o mesmo processo descrito no [seção anterior](#fragment-reference-from-ed
 | --- | --- |
 | Título do fragmento do conteúdo | Ayo Ogunseinde |
 | Nome completo | Ayo Ogunseinde |
-| Informação de contato | /content/dam/wknd/en/adventures/instrutors/contact-info/ayo-ogunseinde-contact-info |
-| Imagem do perfil | /content/dam/wknd/en/contributors/ayo-ogunseinde-237739.jpg |
-| Biografia | Ayo Ogunseinde é um alpinista profissional e instrutor de mochilas que vive em Fresno, na Califórnia Central. O objetivo dela é guiar os caminhoneiros em suas aventuras mais épicas do parque nacional. |
+| Informação de contato | /content/dam/wknd-shared/en/adventures/instrutors/contact-info/ayo-ogunseinde-contact-info |
+| Imagem do perfil | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
+| Biografia | Ayo Ogunseinde é um alpinista profissional e instrutor de mochilas que vive em Fresno, na Califórnia Central. O objetivo de Ayo é guiar os caminhoneiros em suas aventuras de parque mais épicas e nacionais. |
 | Nível de experiência do instrutor | Avançado  |
 | Habilidades | Escala de Rocha | Ciclo | Embalagem retroativa |
 
@@ -205,9 +206,9 @@ Navegue até o **Localizações** pasta. Aqui você vê duas pastas aninhadas qu
 
 ![Pasta Localizações](assets/author-content-fragments/locations-folder.png)
 
-Ignore a pasta Lodge do Vale do Yosemite por enquanto. Retornaremos a ele mais tarde nesta seção quando criarmos uma nova localização que atuará como uma Base para a nossa equipe de instrutores.
+Ignore a pasta Lodge do Vale do Yosemite por enquanto. Retornamos a ele mais tarde nesta seção, quando criamos um local que atue como uma Base para a equipe de instrutores.
 
-Navegue até o **Parque Nacional Yosemite** pasta. Atualmente, contém apenas uma foto do Parque Nacional Yosemite. Vamos criar um novo Fragmento de conteúdo usando o Modelo de Fragmento de conteúdo de localização e nomeá-lo como &quot;Parque nacional Yosemite&quot;.
+Navegue até o **Parque Nacional Yosemite** pasta. Atualmente, contém apenas uma foto do Parque Nacional Yosemite. Vamos criar um Fragmento de conteúdo usando o Modelo de Fragmento de conteúdo de localização e nomeá-lo como &quot;Parque nacional Yosemite&quot;.
 
 ### Marcadores de posição de guia
 
@@ -247,22 +248,22 @@ Vamos adicionar o restante do conteúdo ao Fragmento de conteúdo do local para 
 1. No **Detalhes da localização** , insira as seguintes informações nos campos:
 
    * **Nome**: Parque Nacional Yosemite
-   * **Descrição**: O Parque Nacional Yosemite fica nas montanhas da Califórnia, em Sierra Nevada. É famoso por suas lindas cachoeiras, sequoeiras gigantes, e pontos de vista icônicos dos penhascos de El Capitan e Half Dome. Caminhar e acampar são as melhores maneiras de experimentar Yosemite. Várias trilhas oferecem infinitas oportunidades para aventura e exploração.
+   * **Descrição**: O Parque Nacional Yosemite fica nas montanhas da Califórnia em Sierra Nevada. É famosa por suas lindas cachoeiras, sequoias gigantes, e pontos de vista icônicos dos penhascos de El Capitan e Half Dome. Caminhar e acampar são as melhores maneiras de experimentar Yosemite. Várias trilhas oferecem infinitas oportunidades para aventura e exploração.
 
-1. No **Informações de contato** , crie um novo Fragmento de conteúdo com base no modelo Informações de contato e o rotule como &quot;Informações de contato do Parque Nacional do Yosemite&quot;. Siga o mesmo processo descrito na seção anterior em [criação de uma nova referência de fragmento no editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
+1. No **Informações de contato** , crie um Fragmento de conteúdo com base no modelo Informações de contato e o rotule como &quot;Informações de contato do Parque Nacional do Yosemite&quot;. Siga o mesmo processo descrito na seção anterior em [criação de uma referência de fragmento pelo editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
 
    * **Telefone**: 209-999-0000
    * **Email**: yosemite@wknd.com
 
 1. No **Imagem de localização** , navegue até **Aventuras** > **Localizações** > **Parque Nacional Yosemite** > **yosemite-national-park.jpeg** para criar um caminho para a imagem.
 
-   Lembre-se de que no capítulo anterior você configurou a validação da imagem, de modo que as dimensões da imagem de Localização devem ser menores que 2560 x 1800, e seu tamanho de arquivo deve ser menor que 3 MB.
+   Lembre-se, no capítulo anterior, de que você configurou a validação da imagem, de modo que as dimensões da imagem de Localização devem ser menores que 2560 x 1800, e seu tamanho de arquivo deve ser menor que 3 MB.
 
 1. Com todas as informações adicionadas, a variável **Detalhes da localização** agora tem esta aparência:
 
    ![Guia Detalhes do local concluída](assets/author-content-fragments/location-details-tab-completed.png)
 
-1. Navegue até o **Endereço de localização** guia . No **Endereço** , crie um novo Fragmento de conteúdo chamado &quot;Endereço do Parque Nacional do Yosemite&quot; usando o Modelo de Fragmento de conteúdo do endereço criado no capítulo anterior. Siga o mesmo processo descrito na seção sobre [criação de uma nova referência de fragmento no editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
+1. Navegue até o **Endereço de localização** guia . No **Endereço** , crie um Fragmento de conteúdo chamado &quot;Endereço do Parque Nacional do Yosemite&quot; usando o Modelo de Fragmento de Conteúdo do Endereço criado no capítulo anterior. Siga o mesmo processo descrito na seção sobre [criação de uma referência de fragmento pelo editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
 
    * **Endereço**: Unidade de Aldeia 9010
    * **Cidade**: Vale do Yosemite
@@ -276,23 +277,23 @@ Vamos adicionar o restante do conteúdo ao Fragmento de conteúdo do local para 
 
 1. Selecione **Salvar e fechar**.
 
-### Criar um fragmento adicional
+### Criar mais um fragmento
 
-1. Navegue até o **Vale do Yosemite Lodge** pasta. Crie um novo Fragmento de conteúdo usando o Modelo de fragmento de conteúdo de localização e o rotule como &quot;Lodge do Vale Yosemite&quot;.
+1. Navegue até o **Vale do Yosemite Lodge** pasta. Crie um Fragmento de conteúdo usando o Modelo de fragmento de conteúdo de localização e o rotule como &quot;Lodge do Vale do Yosemite&quot;.
 
 1. No **Detalhes da localização** , insira as seguintes informações nos campos:
 
    * **Nome**: Vale do Yosemite Lodge
    * **Descrição**: Yosemite Valley Lodge é um centro de encontros em grupo e todo o tipo de atividades, tais como compras, jantar, pesca, caminhada, e muito mais.
 
-1. No **Informações de contato** , crie um novo Fragmento de conteúdo com base no modelo Informações de contato e o rotule como &quot;Informações de contato do Lodge do Vale do Yosemite&quot;. Siga o mesmo processo descrito na seção sobre [criação de uma nova referência de fragmento no editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos do novo Fragmento de conteúdo:
+1. No **Informações de contato** , crie um Fragmento de conteúdo com base no modelo Informações de contato e o rotule como &quot;Informações de contato do Lodge do Vale do Yosemite&quot;. Siga o mesmo processo descrito na seção sobre [criação de uma referência de fragmento pelo editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos do novo Fragmento de conteúdo:
 
    * **Telefone**: 209-992-0000
    * **Email**: yosemitelodge@wknd.com
 
    Salve o Fragmento do conteúdo recém-criado.
 
-1. Navegue de volta para **Vale do Yosemite Lodge** e vá para o **Endereço de localização** guia . No **Endereço** , crie um novo Fragmento de conteúdo chamado &quot;Endereço de lodge do Vale do Yosemite&quot; usando o Modelo de fragmento de conteúdo de endereço criado no capítulo anterior. Siga o mesmo processo descrito na seção sobre [criação de uma nova referência de fragmento no editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
+1. Navegue de volta para **Vale do Yosemite Lodge** e vá para o **Endereço de localização** guia . No **Endereço** , crie um Fragmento de conteúdo chamado &quot;Endereço de lodge do Vale do Yosemite&quot; usando o Modelo de fragmento de conteúdo de endereço criado no capítulo anterior. Siga o mesmo processo descrito na seção sobre [criação de uma referência de fragmento pelo editor](#fragment-reference-from-editor) e insira os seguintes dados nos campos:
 
    * **Endereço**: Unidade Yosemite Lodge 9006
    * **Cidade**: Parque Nacional Yosemite
@@ -312,7 +313,7 @@ Navegue pelas pastas para **Equipes** > **Equipe Yosemite**. Você pode ver que 
 
 ![Pasta Equipe Yosemite](assets/author-content-fragments/yosemite-team-folder.png)
 
-Vamos criar um novo Fragmento de conteúdo usando o Modelo de fragmento de conteúdo da equipe e nomeá-lo como &quot;Equipe Yosemite&quot;.
+Vamos criar um Fragmento de conteúdo usando o Modelo de fragmento de conteúdo da equipe e nomeá-lo como &quot;Equipe Yosemite&quot;.
 
 ### Referências de conteúdo e fragmento no editor de texto de várias linhas
 
@@ -330,13 +331,13 @@ AEM permite adicionar referências de conteúdo e fragmento diretamente no edito
 
    A referência de conteúdo agora é adicionada ao **Descrição** campo.
 
-Lembre-se de que, no capítulo anterior, você permitiu que referências de fragmento fossem adicionadas ao **Descrição** campo. Vamos adicionar um aqui.
+Lembre-se, no capítulo anterior, você permitia que referências de fragmento fossem adicionadas ao **Descrição** campo. Vamos adicionar um aqui.
 
 1. Selecione o **Inserir fragmento de conteúdo** na barra de ferramentas do editor de texto de várias linhas.
 
    ![Ícone Inserir fragmento de conteúdo](assets/author-content-fragments/insert-content-fragment-icon.png)
 
-1. Navegue até **Site WKND** > **Inglês** > **Aventuras** > **Localizações** > **Vale do Yosemite Lodge** > **Vale do Yosemite Lodge**. Press **Selecionar** para inserir o Fragmento de conteúdo.
+1. Navegue até **WKND Compartilhado** > **Inglês** > **Aventuras** > **Localizações** > **Vale do Yosemite Lodge** > **Vale do Yosemite Lodge**. Press **Selecionar** para inserir o Fragmento de conteúdo.
 
    ![Inserir modal do Fragmento de conteúdo](assets/author-content-fragments/insert-content-fragment-modal.png)
 
@@ -362,7 +363,7 @@ Vamos adicionar Instrutores à referência de fragmento Membros da equipe.
 
    ![Botão Adicionar](assets/author-content-fragments/add-button.png)
 
-1. No novo campo exibido, selecione o ícone de pasta para abrir a modal Selecionar caminho . Navegue pelas pastas para **Site WKND** > **Inglês** > **Aventuras** > **Instrutores** e, em seguida, marque a caixa de seleção ao lado de **jacob-wester**. Press **Selecionar** para salvar o caminho.
+1. No novo campo exibido, selecione o ícone de pasta para abrir a modal Selecionar caminho . Navegue pelas pastas para **WKND Compartilhado** > **Inglês** > **Aventuras** > **Instrutores** e, em seguida, marque a caixa de seleção ao lado de **jacob-wester**. Press **Selecionar** para salvar o caminho.
 
    ![Caminho de referência do fragmento](assets/author-content-fragments/fragment-reference-path.png)
 
@@ -378,11 +379,11 @@ Por fim, vamos adicionar os Fragmentos de conteúdo recém-criados a uma Aventur
 
 1. Navegar para **Aventuras** > **Embalagem de origem Yosemite** e abra o Fragmento de conteúdo de backpack do Yosemite. Na parte inferior do formulário, é possível ver os três campos criados no capítulo anterior: **Localização**, **Equipe de instrutores** e **Administrador**.
 
-1. Adicione a referência do fragmento no **Localização** campo. O caminho de Localização deve fazer referência ao Fragmento de Conteúdo do Parque Nacional Yosemite que você criou: `/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
+1. Adicione a referência do fragmento no **Localização** campo. O caminho de Localização deve fazer referência ao Fragmento de Conteúdo do Parque Nacional Yosemite que você criou: `/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
 
-1. Adicione a referência do fragmento no **Equipe de instrutores** campo. O caminho da Equipe deve fazer referência ao Fragmento de Conteúdo da Equipe Yosemite que você criou: `/content/dam/wknd/en/adventures/teams/yosemite-team/yosemite-team`. Esta é uma referência de fragmento aninhado. O Fragmento do conteúdo da equipe contém uma referência ao modelo Pessoa que faz referência às Informações de contato e aos modelos de Endereço. Portanto, você tem fragmentos de conteúdo aninhados em três níveis abaixo.
+1. Adicione a referência do fragmento no **Equipe de instrutores** campo. O caminho da Equipe deve fazer referência ao Fragmento de Conteúdo da Equipe Yosemite que você criou: `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team`. Esta é uma referência de fragmento aninhado. O Fragmento do conteúdo da equipe contém uma referência ao modelo Pessoa que faz referência às Informações de contato e aos modelos de Endereço. Portanto, você tem fragmentos de conteúdo aninhados em três níveis abaixo.
 
-1. Adicione a referência do fragmento no **Administrador** campo. Vamos dizer que Jacob Wester é um Administrador da Yosemite Backpackaging Adventure. O caminho deve levar ao Fragmento de conteúdo do Jacob Wester e ser exibido da seguinte maneira: `/content/dam/wknd/en/adventures/instructors/jacob-wester`.
+1. Adicione a referência do fragmento no **Administrador** campo. Vamos dizer que Jacob Wester é um Administrador da Yosemite Backpackaging Adventure. O caminho deve levar ao Fragmento de conteúdo do Jacob Wester e ser exibido da seguinte maneira: `/content/dam/wknd-shared/en/adventures/instructors/jacob-wester`.
 
 1. Agora você adicionou três referências de fragmento a um Fragmento de conteúdo de empreendimento. Os campos têm esta aparência:
 
@@ -390,12 +391,10 @@ Por fim, vamos adicionar os Fragmentos de conteúdo recém-criados a uma Aventur
 
 1. Selecionar **Salvar e fechar** para salvar seu conteúdo.
 
-## Parabéns!
+## Parabéns. 
 
-Parabéns! Agora você criou Fragmentos de conteúdo com base nos Modelos avançados de fragmento de conteúdo criados no capítulo anterior. Você também criou uma política de pastas para limitar quais Modelos de fragmentos de conteúdo podem ser selecionados em uma pasta.
+Parabéns. Agora você criou Fragmentos de conteúdo com base nos Modelos avançados de fragmento de conteúdo criados no capítulo anterior. Você também criou uma política de pastas para limitar quais Modelos de fragmentos de conteúdo podem ser selecionados em uma pasta.
 
 ## Próximas etapas
 
-No [próximo capítulo](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)Além disso, você aprenderá sobre o envio de consultas GraphQL avançadas usando o Ambiente de desenvolvimento integrado GraphiQL (IDE). Essas consultas nos permitirão visualizar os dados criados neste capítulo e, eventualmente, adicionar essas consultas ao aplicativo WKND.
-
-Embora seja opcional para este tutorial, certifique-se de publicar todo o conteúdo em situações de produção real. Mais detalhes sobre os ambientes Autor e Publicação podem ser encontrados no [série de vídeos sem periféricos](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md)
+No [próximo capítulo](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), você aprenderá sobre o envio de consultas GraphQL avançadas usando o GraphiQL Integrated Development Environment (IDE). Essas consultas permitem visualizar os dados criados neste capítulo e, eventualmente, adicionar essas consultas ao aplicativo WKND.

@@ -6,22 +6,23 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: bd7916be-8caa-4321-add0-4c9031306d60
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
 
 # Explore a API GraphQL da AEM
 
-A API GraphQL no AEM permite expor os dados do Fragmento de conteúdo aos aplicativos de downstream. No anterior [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você explorou o GraphiQL Integrated Development Environment (IDE), onde testou e refinou algumas consultas GraphQL comuns. Neste capítulo, você usará o GraphiQL IDE para explorar consultas mais avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
+A API GraphQL no AEM permite expor os dados do Fragmento de conteúdo aos aplicativos de downstream. No tutorial básico [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você usou o GraphiQL Explorer para testar e refinar as consultas GraphQL.
+
+Neste capítulo, você usa o explorador GraphiQL para definir consultas mais avançadas para coletar dados dos Fragmentos de conteúdo criados no [capítulo anterior](../advanced-graphql/author-content-fragments.md).
 
 ## Pré-requisitos {#prerequisites}
 
 Este documento faz parte de um tutorial de várias partes. Certifique-se de que os capítulos anteriores foram concluídos antes de prosseguir com este capítulo.
-
-O GraphiQL IDE deve ser instalado antes de concluir este capítulo. Siga as instruções de instalação do [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md) para obter mais informações.
 
 ## Objetivos {#objectives}
 
@@ -33,11 +34,33 @@ Neste capítulo, você aprenderá a:
 * Consulta usando diretivas
 * Consulta para o tipo de conteúdo do Objeto JSON
 
+## Uso do explorador GraphiQL
+
+
+O [Explorador GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) A ferramenta permite que os desenvolvedores criem e testem consultas contra conteúdo no ambiente de AEM atual. A ferramenta GraphiQL também permite que os usuários **persistir ou salvar** consultas a serem usadas pelos aplicativos clientes em uma configuração de produção.
+
+Em seguida, explore o potencial da API GraphQL AEM usando o explorador GraphiQL integrado.
+
+1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Editor de consultas GraphQL**.
+
+   ![Navegue até o GraphiQL IDE](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+>[!IMPORTANT]
+>
+>No, algumas versões do AEM (6.X.X) a ferramenta GraphiQL Explorer (também conhecida como GraphiQL IDE) precisam ser instaladas manualmente, siga [instruções daqui](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+
+1. No canto superior direito, verifique se Endpoint está definido como **Ponto de Extremidade Compartilhado WKND**. Alteração do _Endpoint_ o valor suspenso aqui exibe a variável existente _Consultas Persistentes_ no canto superior esquerdo.
+
+   ![Definir ponto de extremidade GraphQL](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+
+Isso abrangerá todas as consultas a modelos criados no **WKND Compartilhado** projeto.
+
+
 ## Filtrar uma lista de Fragmentos de conteúdo usando variáveis de consulta
 
-No anterior [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você aprendeu a filtrar uma lista de Fragmentos de conteúdo. Aqui, você expandirá esse conhecimento e filtrará usando variáveis.
+No anterior [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você definiu e usou consultas básicas persistentes para obter dados dos Fragmentos de conteúdo. Aqui, você amplia esse conhecimento e filtra os dados dos Fragmentos de conteúdo ao passar variáveis para as consultas persistentes.
 
-Ao desenvolver aplicativos clientes, na maioria dos casos, será necessário filtrar Fragmentos de conteúdo com base em argumentos dinâmicos. A API GraphQL da AEM permite que você passe esses argumentos como variáveis em uma query para evitar a construção de sequência de caracteres no lado do cliente no tempo de execução. Para obter mais informações sobre variáveis GraphQL, consulte o [Documentação GraphQL](https://graphql.org/learn/queries/#variables).
+Ao desenvolver aplicativos clientes, geralmente é necessário filtrar Fragmentos de conteúdo com base em argumentos dinâmicos. A API GraphQL da AEM permite que você passe esses argumentos como variáveis em uma query para evitar a construção de sequência de caracteres no lado do cliente no tempo de execução. Para obter mais informações sobre variáveis GraphQL, consulte o [Documentação GraphQL](https://graphql.org/learn/queries/#variables).
 
 Para este exemplo, consulte todos os Instrutores que têm uma habilidade específica.
 
@@ -72,7 +95,7 @@ Para este exemplo, consulte todos os Instrutores que têm uma habilidade especí
 
    O `listPersonBySkill` a query acima aceita uma variável (`skillFilter`) que é obrigatório `String`. Essa consulta realiza uma pesquisa em todos os Fragmentos de conteúdo de pessoa e os filtra com base na variável `skills` e a sequência de caracteres transmitida `skillFilter`.
 
-   Observe que `listPersonBySkill` inclui a `contactInfo` , que é uma referência de fragmento para o modelo Informações do contato definido nos capítulos anteriores. O modelo Informações de Contato contém `phone` e `email` campos. É necessário incluir pelo menos um desses campos na query para que ele seja executado corretamente.
+   O `listPersonBySkill` inclui a `contactInfo` , que é uma referência de fragmento para o modelo Informações do contato definido nos capítulos anteriores. O modelo Informações de Contato contém `phone` e `email` campos. Pelo menos um desses campos no query deve estar presente para que ele seja executado corretamente.
 
    ```graphql
    contactInfo {
@@ -85,7 +108,7 @@ Para este exemplo, consulte todos os Instrutores que têm uma habilidade especí
 
    ```json
    {
-   	    "skillFilter": "Skiing"
+       "skillFilter": "Skiing"
    }
    ```
 
@@ -103,10 +126,10 @@ Para este exemplo, consulte todos os Instrutores que têm uma habilidade especí
                "email": "sroswells@wknd.com"
              },
              "profilePicture": {
-               "_path": "/content/dam/wknd/en/contributors/stacey-roswells.jpg"
+               "_path": "/content/dam/wknd-shared/en/contributors/stacey-roswells.jpg"
              },
              "biography": {
-               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer.\nBorn in Baltimore, Maryland, Stacey is the youngest of six children. Her father was a lieutenant colonel in the US Navy and her mother was a modern dance instructor. Her family moved frequently with her father’s duty assignments, and she took her first pictures when he was stationed in Thailand. This is also where Stacey learned to rock climb."
+               "plaintext": "Stacey Roswells is an accomplished rock climber and alpine adventurer. Born in Baltimore, Maryland, Stacey is the youngest of six children. Stacey's father was a lieutenant colonel in the US Navy and mother was a modern dance instructor. Stacey's family moved frequently with father's duty assignments and took the first pictures when father was stationed in Thailand. This is also where Stacey learned to rock climb."
              },
              "instructorExperienceLevel": "Advanced",
              "skills": [
@@ -120,6 +143,10 @@ Para este exemplo, consulte todos os Instrutores que têm uma habilidade especí
      }
    }
    ```
+
+Pressione a tecla **Reproduzir** no menu superior para executar a query. Você deve ver os resultados dos fragmentos de conteúdo do capítulo anterior:
+
+![Pessoa por Resultados de Habilidade](assets/explore-graphql-api/person-by-skill.png)
 
 ## Filtrar conteúdo dentro de uma referência de fragmento
 
@@ -138,7 +165,7 @@ A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capít
        filter: {administrator: {fullName: {_expressions: [{value: $name}]}}}
      ) {
        items {
-         adventureTitle
+         title
          administrator {
            fullName
            contactInfo {
@@ -158,7 +185,7 @@ A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capít
 
    ```json
    {
-   	    "name": "Jacob Wester"
+       "name": "Jacob Wester"
    }
    ```
 
@@ -172,7 +199,7 @@ A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capít
        "adventureList": {
          "items": [
            {
-             "adventureTitle": "Yosemite Backpacking",
+             "title": "Yosemite Backpacking",
              "administrator": {
                "fullName": "Jacob Wester",
                "contactInfo": {
@@ -186,7 +213,7 @@ A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capít
                      "content": [
                        {
                          "nodeType": "text",
-                         "value": "Jacob Wester has been coordinating backpacking adventures for 3 years."
+                         "value": "Jacob Wester has been coordinating backpacking adventures for three years."
                        }
                      ]
                    }
@@ -254,13 +281,13 @@ A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em 
 
    O `getTeamByAdventurePath` O query recupera várias referências. Primeiro, ele usa o `ImageRef` objeto para recuperar o `_path` e `__typename` de imagens inseridas como referências de conteúdo no campo de texto de várias linhas. Em seguida, ele usa `LocationModel` para recuperar os dados do Fragmento de conteúdo do local inserido no mesmo campo.
 
-   Observe que a consulta também inclui a variável `_metadata` campo. Isso permite recuperar o nome do Fragmento do conteúdo da equipe e exibi-lo posteriormente no aplicativo WKND.
+   O query também inclui a variável `_metadata` campo. Isso permite recuperar o nome do Fragmento do conteúdo da equipe e exibi-lo posteriormente no aplicativo WKND.
 
 1. Em seguida, cole a seguinte string JSON no painel Variáveis de Consulta para obter a Aventura de Backpack do Yosemite:
 
    ```json
    {
-   	    "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+       "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking"
    }
    ```
 
@@ -293,7 +320,7 @@ A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em 
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -308,7 +335,7 @@ A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em 
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -316,14 +343,14 @@ A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em 
    }
    ```
 
-   Observe que a variável `_references` revela a imagem do logotipo e o Fragmento de conteúdo do Lodge do Vale do Yosemite que foi inserido no **Descrição** campo.
+   O `_references` revela a imagem do logotipo e o Fragmento de conteúdo do Lodge do Vale do Yosemite que foi inserido no **Descrição** campo.
 
 
 ## Consulta usando diretivas
 
 Às vezes, ao desenvolver aplicativos cliente, você precisa alterar condicionalmente a estrutura de suas consultas. Nesse caso, a API GraphQL da AEM permite usar as diretivas GraphQL para alterar o comportamento das consultas com base nos critérios fornecidos. Para obter mais informações sobre diretivas GraphQL, consulte o [Documentação GraphQL](https://graphql.org/learn/queries/#directives).
 
-No [seção anterior](#query-rte-reference), você aprendeu a consultar referências em linha em campos de texto de várias linhas. Observe que o conteúdo foi recuperado do `description` no `plaintext` formato. Em seguida, vamos expandir essa consulta e usar uma diretiva para recuperar condicionalmente `description` no `json` também.
+No [seção anterior](#query-rte-reference), você aprendeu a consultar referências em linha em campos de texto de várias linhas. O conteúdo foi recuperado do `description` no `plaintext` formato. Em seguida, vamos expandir essa consulta e usar uma diretiva para recuperar condicionalmente `description` no `json` também.
 
 1. No GraphiQL IDE, cole a seguinte consulta no painel esquerdo:
 
@@ -376,7 +403,7 @@ No [seção anterior](#query-rte-reference), você aprendeu a consultar referên
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking",
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/yosemite-backpacking/yosemite-backpacking",
      "includeJson": false
    }
    ```
@@ -413,7 +440,7 @@ No [seção anterior](#query-rte-reference), você aprendeu a consultar referên
                      {
                        "nodeType": "reference",
                        "data": {
-                         "path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
+                         "path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png",
                          "mimetype": "image/png"
                        }
                      }
@@ -434,7 +461,7 @@ No [seção anterior](#query-rte-reference), você aprendeu a consultar referên
                      {
                        "nodeType": "reference",
                        "data": {
-                         "href": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+                         "href": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
                          "type": "fragment"
                        },
                        "value": "Yosemite Valley Lodge"
@@ -448,7 +475,7 @@ No [seção anterior](#query-rte-reference), você aprendeu a consultar referên
          "_references": [
            {
              "__typename": "LocationModel",
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge",
              "name": "Yosemite Valley Lodge",
              "address": {
                "streetAddress": "9006 Yosemite Lodge Drive",
@@ -463,7 +490,7 @@ No [seção anterior](#query-rte-reference), você aprendeu a consultar referên
            },
            {
              "__typename": "ImageRef",
-             "_path": "/content/dam/wknd/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
+             "_path": "/content/dam/wknd-shared/en/adventures/teams/yosemite-team/team-yosemite-logo.png"
            }
          ]
        }
@@ -511,7 +538,7 @@ Lembre-se de que, no capítulo anterior sobre a criação de Fragmentos de conte
 
    ```json
    {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park"
+     "fragmentPath": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park"
    }
    ```
 
@@ -530,7 +557,7 @@ Lembre-se de que, no capítulo anterior sobre a criação de Fragmentos de conte
                  "content": [
                    {
                      "nodeType": "text",
-                     "value": "Yosemite National Park is in California’s Sierra Nevada mountains. It’s famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
+                     "value": "Yosemite National Park is in California's Sierra Nevada mountains. It's famous for its gorgeous waterfalls, giant sequoia trees, and iconic views of El Capitan and Half Dome cliffs."
                    }
                  ]
                },
@@ -550,7 +577,7 @@ Lembre-se de que, no capítulo anterior sobre a criação de Fragmentos de conte
              "email": "yosemite@wknd.com"
            },
            "locationImage": {
-             "_path": "/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
+             "_path": "/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park.jpeg"
            },
            "weatherBySeason": {
              "summer": "81 / 89°F",
@@ -571,38 +598,39 @@ Lembre-se de que, no capítulo anterior sobre a criação de Fragmentos de conte
    }
    ```
 
-   Observe que a variável `weatherBySeason` contém o objeto JSON adicionado ao capítulo anterior.
+   O `weatherBySeason` contém o objeto JSON adicionado ao capítulo anterior.
 
 ## Consultar todo o conteúdo de uma só vez
 
-Até o momento, várias consultas foram executadas para ilustrar os recursos da API GraphQL AEM. Os mesmos dados podem ser recuperados somente com uma única consulta:
+Até o momento, várias consultas foram executadas para ilustrar os recursos da API GraphQL AEM.
+
+Os mesmos dados podem ser recuperados com apenas um único query e esse query é posteriormente usado no aplicativo cliente para recuperar informações adicionais, como local, nome da equipe, membros da equipe de uma aventura:
 
 ```graphql
-query getAllAdventureDetails($fragmentPath: String!) {
-  adventureByPath(_path: $fragmentPath){
-    item {
+query getAdventureDetailsBySlug($slug: String!) {
+  adventureList(filter: {slug: {_expressions: [{value: $slug}]}}) {
+    items {
       _path
-      adventureTitle
-      adventureActivity
+      title
+      activity
       adventureType
-      adventurePrice
-      adventureTripLength
-      adventureGroupSize
-      adventureDifficulty
-      adventurePrice
-      adventurePrimaryImage{
-        ...on ImageRef{
+      price
+      tripLength
+      groupSize
+      difficulty
+      primaryImage {
+        ... on ImageRef {
           _path
           mimeType
           width
           height
         }
       }
-      adventureDescription {
+      description {
         html
         json
       }
-      adventureItinerary {
+      itinerary {
         html
         json
       }
@@ -613,175 +641,87 @@ query getAllAdventureDetails($fragmentPath: String!) {
           html
           json
         }
-        contactInfo{
+        contactInfo {
           phone
           email
         }
-        locationImage{
-          ...on ImageRef{
+        locationImage {
+          ... on ImageRef {
             _path
           }
         }
         weatherBySeason
-        address{
-            streetAddress
-            city
-            state
-            zipCode
-            country
+        address {
+          streetAddress
+          city
+          state
+          zipCode
+          country
         }
       }
       instructorTeam {
-        _metadata{
-            stringMetadata{
-                name
-                value
-            }
-        }        
+        _metadata {
+          stringMetadata {
+            name
+            value
+          }
+        }
         teamFoundingDate
         description {
-            json
+          json
         }
         teamMembers {
-            fullName
-            contactInfo {
-                phone
-                email
+          fullName
+          contactInfo {
+            phone
+            email
+          }
+          profilePicture {
+            ... on ImageRef {
+              _path
             }
-            profilePicture{
-                ...on ImageRef {
-                    _path
-                }
-            }
-            instructorExperienceLevel
-            skills
-            biography {
-                html
-            }
-        }       
-     }
-      administrator {
-            fullName
-            contactInfo {
-                phone
-                email
-            }
-            biography {
-                html
-            }
+          }
+          instructorExperienceLevel
+          skills
+          biography {
+            html
+          }
         }
+      }
+      administrator {
+        fullName
+        contactInfo {
+          phone
+          email
+        }
+        biography {
+          html
+        }
+      }
     }
     _references {
-        ...on ImageRef {
-            _path
+      ... on ImageRef {
+        _path
         mimeType
-        }
-        ...on LocationModel {
-            _path
-                __typename
-        }
+      }
+      ... on LocationModel {
+        _path
+        __typename
+      }
     }
   }
 }
 
+
 # in Query Variables
 {
-  "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
+  "slug": "yosemite-backpacking"
 }
 ```
 
-## Consultas adicionais para o aplicativo WKND
+## Parabéns. 
 
-As consultas a seguir são listadas para recuperar todos os dados necessários no aplicativo WKND. Essas consultas não demonstram novos conceitos e são fornecidas apenas como referência para ajudar a criar a implementação.
-
-1. **Obter membros da equipe para uma Aventura específica**:
-
-   ```graphql
-   query getTeamMembersByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath ) {
-       item {
-         instructorTeam {
-           teamMembers{
-             fullName
-             contactInfo{
-               phone
-               email
-             }
-           profilePicture {
-               ... on ImageRef {
-                 _path
-               }
-           }
-             instructorExperienceLevel
-             skills
-             biography{
-               plaintext
-             }
-           }
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **Obter caminho de localização para uma Aventura específica**
-
-   ```graphql
-   query getLocationPathByAdventurePath ($fragmentPath: String!){
-     adventureByPath (_path: $fragmentPath){
-       item {
-         location{
-           _path  
-         } 
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking"
-   }
-   ```
-
-1. **Obter a localização da equipe pelo seu caminho**
-
-   ```graphql
-   query getTeamLocationByLocationPath ($fragmentPath: String!){
-     locationByPath (_path: $fragmentPath) {
-       item {
-         name
-         description{
-           json
-         }
-         contactInfo{
-           phone
-           email
-         }
-           address{
-           streetAddress
-           city
-           state
-           zipCode
-           country
-         }
-       }
-     }
-   }
-   
-   # in Query Variables
-   {
-     "fragmentPath": "/content/dam/wknd/en/adventures/locations/yosemite-valley-lodge/yosemite-valley-lodge"
-   }
-   ```
-
-## Parabéns!
-
-Parabéns! Agora você testou consultas avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
+Parabéns. Agora você testou consultas avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
 
 ## Próximas etapas
 
