@@ -1,5 +1,5 @@
 ---
-title: Adicionar componentes do contêiner editáveis a um SPA remoto
+title: Adicionar componentes do contêiner React editáveis a um SPA remoto
 description: Saiba como adicionar componentes de contêiner editáveis a um SPA remoto que permite que AEM autores arraste e solte componentes neles.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
@@ -7,10 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7635
 thumbnail: kt-7635.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1109'
 ht-degree: 1%
 
 ---
@@ -21,97 +23,49 @@ ht-degree: 1%
 
 ![Componentes de contêiner editáveis](./assets/spa-container-component/intro.png)
 
-Neste capítulo, adicionamos um contêiner editável à visualização inicial, permitindo que os autores componham e façam o layout de experiências de conteúdo rico usando AEM Componentes principais de reação diretamente no SPA.
+Neste capítulo, adicionamos um contêiner editável à visualização inicial, permitindo que os autores componham e façam o layout de experiências de conteúdo avançadas usando componentes React editáveis diretamente na SPA.
 
 ## Atualizar o aplicativo WKND
 
 Para adicionar um componente de contêiner à exibição Início:
 
-+ Importe o componente ResponsiveGrid do Componente Editável de Reação de AEM
-+ Importe e registre AEM Componentes principais do React (Texto e Imagem) para uso no componente de contêiner
++ Importe o componente editável do React AEM `ResponsiveGrid` componente
++ Importar e registrar os Componentes Reativos Editáveis (Texto e Imagem) personalizados para uso no componente Grade Responsiva
 
-### Importar no componente do contêiner ResponsiveGrid
+### Usar o componente ResponsiveGrid
 
-Para colocar uma área editável na exibição Início, devemos:
+Para adicionar uma área editável à exibição Início:
 
-1. Importe o componente ResponsiveGrid de `@adobe/aem-react-editable-components`
-1. Registre-o usando `withMappable` para que os desenvolvedores possam colocá-lo no SPA
-1. Além disso, registre-se com `MapTo` para que possa ser reutilizado em outros componentes do Contêiner, aninhando contêineres de maneira eficaz.
-
-Para fazer isso:
-
-1. Abra o SPA projeto no IDE
-1. Crie um componente de reação em `src/components/aem/AEMResponsiveGrid.js`
-1. Adicione o seguinte código a `AEMResponsiveGrid.js`
-
-   ```
-   // Import the withMappable API provided bu the AEM SPA Editor JS SDK
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   
-   // Import the base ResponsiveGrid component
-   import { ResponsiveGrid } from "@adobe/aem-react-editable-components";
-   
-   // The sling:resourceType for which this Core Component is registered with in AEM
-   const RESOURCE_TYPE = "wcm/foundation/components/responsivegrid";
-   
-   // Create an EditConfig to allow the AEM SPA Editor to properly render the component in the Editor's context
-   const EditConfig = {
-       emptyLabel: "Layout Container",  // The component placeholder in AEM SPA Editor
-       isEmpty: function(props) { 
-           return props.cqItemsOrder == null || props.cqItemsOrder.length === 0;
-       },                              // The function to determine if this component has been authored
-       resourceType: RESOURCE_TYPE     // The sling:resourceType this SPA component is mapped to
-   };
-   
-   // MapTo allows the AEM SPA Editor JS SDK to dynamically render components added to SPA Editor Containers
-   MapTo(RESOURCE_TYPE)(ResponsiveGrid, EditConfig);
-   
-   // withMappable allows the component to be hardcoded into the SPA; <AEMResponsiveGrid .../>
-   const AEMResponsiveGrid = withMappable(ResponsiveGrid, EditConfig);
-   
-   export default AEMResponsiveGrid;
-   ```
-
-O código é semelhante `AEMTitle.js` that [importado o componente Título dos componentes principais de alcance de AEM](./spa-fixed-component.md).
-
-
-O `AEMResponsiveGrid.js` O arquivo deve ter a seguinte aparência:
-
-![AEMResponsiveGrid.js](./assets/spa-container-component/aem-responsive-grid-js.png)
-
-### Use o componente AEMResponsiveGrid SPA
-
-Agora que AEM componente ResponsiveGrid está registrado e disponível para uso no SPA, podemos colocá-lo na exibição Início.
-
-1. Abrir e editar `react-app/src/Home.js`
-1. Importe o `AEMResponsiveGrid` e coloque-o acima do `<AEMTitle ...>` componente.
-1. Defina os seguintes atributos no `<AEMResponsiveGrid...>` componente
+1. Abrir e editar `react-app/src/components/Home.js`
+1. Importe o `ResponsiveGrid` componente de `@adobe/aem-react-editable-components` e adicione-o à `Home` componente.
+1. Defina os seguintes atributos no `<ResponsiveGrid...>` componente
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   Isso instrui o `AEMResponsiveGrid` componente para recuperar o conteúdo do recurso AEM:
+   Isso instrui o `ResponsiveGrid` componente para recuperar o conteúdo do recurso AEM:
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
    O `itemPath` mapeia para a `responsivegrid` nó definido no `Remote SPA Page` Modelo de AEM e é criado automaticamente em novas Páginas de AEM criadas a partir do `Remote SPA Page` Modelo AEM.
 
-   Atualizar `Home.js` para adicionar o `<AEMResponsiveGrid...>` componente.
+   Atualizar `Home.js` para adicionar o `<ResponsiveGrid...>` componente.
 
-   ```
+   ```javascript
    ...
-   import AEMResponsiveGrid from './aem/AEMResponsiveGrid';
+   import { ResponsiveGrid } from '@adobe/aem-react-editable-components';
    ...
    
    function Home() {
        return (
            <div className="Home">
-               <AEMResponsiveGrid
+               <ResponsiveGrid
                    pagePath='/content/wknd-app/us/en/home' 
                    itemPath='root/responsivegrid'/>
    
-               <AEMTitle
+               <EditableTitle
                    pagePath='/content/wknd-app/us/en/home' 
                    itemPath='title'/>
+   
                <Adventures />
            </div>
        );
@@ -124,66 +78,164 @@ O `Home.js` O arquivo deve ter a seguinte aparência:
 
 ## Criar componentes editáveis
 
-Para obter o efeito total da experiência de criação flexível que os contêineres fornecem no Editor de SPA. Já criamos um componente de Título editável, mas vamos fazer mais algumas coisas que permitem que os autores usem os Componentes principais de Texto e Imagem AEM WCM no componente de contêiner recém-adicionado.
+Para obter o efeito total da experiência de criação flexível que os contêineres fornecem no Editor de SPA. Já criamos um componente de Título editável, mas vamos fazer mais algumas que permitem que os autores usem componentes de Texto e Imagem editáveis no componente ResponsiveGrid recém-adicionado.
 
-### Componente de texto
+Os novos componentes editáveis Texto e Reação de imagem são criados usando o padrão de definição de componente editável exportado em [componentes fixos editáveis](./spa-fixed-component.md).
+
+### Componente de texto editável
 
 1. Abra o SPA projeto no IDE
-1. Crie um componente de reação em `src/components/aem/AEMText.js`
-1. Adicione o seguinte código a `AEMText.js`
+1. Crie um componente de reação em `src/components/editable/core/Text.js`
+1. Adicione o seguinte código a `Text.js`
 
+   ```javascript
+   import React from 'react'
+   
+   const TextPlain = (props) => <div className={props.baseCssClass}><p className="cmp-text__paragraph">{props.text}</p></div>;
+   const TextRich = (props) => {
+   const text = props.text;
+   const id = (props.id) ? props.id : (props.cqPath ? props.cqPath.substr(props.cqPath.lastIndexOf('/') + 1) : "");
+       return <div className={props.baseCssClass} id={id} data-rte-editelement dangerouslySetInnerHTML={{ __html: text }} />
+   };
+   
+   export const Text = (props) => {
+       if (!props.baseCssClass) {
+           props.baseCssClass = 'cmp-text'
+       }
+   
+       const { richText = false } = props
+   
+       return richText ? <TextRich {...props} /> : <TextPlain {...props} />
+       }
+   
+       export function textIsEmpty(props) {
+       return props.text == null || props.text.length === 0;
+   }
    ```
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   import { TextV2, TextV2IsEmptyFn } from "@adobe/aem-core-components-react-base";
+
+1. Crie um componente React editável em `src/components/editable/EditableText.js`
+1. Adicione o seguinte código a `EditableText.js`
+
+   ```javascript
+   import React from 'react'
+   import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
+   import { Text, textIsEmpty } from "./core/Text";
+   import { withConditionalPlaceHolder } from "./core/util/withConditionalPlaceholder";
+   import { withStandardBaseCssClass } from "./core/util/withStandardBaseCssClass";
    
    const RESOURCE_TYPE = "wknd-app/components/text";
    
-   const EditConfig = {    
+   const EditConfig = {
        emptyLabel: "Text",
-       isEmpty: TextV2IsEmptyFn,
+       isEmpty: textIsEmpty,
        resourceType: RESOURCE_TYPE
    };
    
-   MapTo(RESOURCE_TYPE)(TextV2, EditConfig);
+   export const WrappedText = (props) => {
+       const Wrapped = withConditionalPlaceHolder(withStandardBaseCssClass(Text, "cmp-text"), textIsEmpty, "Text V2")
+       return <Wrapped {...props} />
+   };
    
-   const AEMText = withMappable(TextV2, EditConfig);
+   const EditableText = (props) => <EditableComponent config={EditConfig} {...props}><WrappedText /></EditableComponent>
    
-   export default AEMText;
+   MapTo(RESOURCE_TYPE)(EditableText);
+   
+   export default EditableText;
    ```
 
-O `AEMText.js` O arquivo deve ter a seguinte aparência:
+A implementação do componente de Texto editável deve ser semelhante a:
 
-![AEMext.js](./assets/spa-container-component/aem-text-js.png)
+![Componente de texto editável](./assets/spa-container-component/text-js.png)
 
 ### Componente de imagem
 
 1. Abra o SPA projeto no IDE
-1. Crie um componente de reação em `src/components/aem/AEMImage.js`
-1. Adicione o seguinte código a `AEMImage.js`
+1. Crie um componente de reação em `src/components/editable/core/Image.js`
+1. Adicione o seguinte código a `Image.js`
 
-   ```
-   import { withMappable, MapTo } from '@adobe/aem-react-editable-components';
-   import { ImageV2, ImageV2IsEmptyFn } from "@adobe/aem-core-components-react-base";
+   ```javascript
+   import React from 'react'
+   import { RoutedLink } from "./RoutedLink";
    
-   const RESOURCE_TYPE = "wknd-app/components/image";
+   export const imageIsEmpty = (props) => (!props.src) || props.src.trim().length === 0
    
-   const EditConfig = {    
-       emptyLabel: "Image",
-       isEmpty: ImageV2IsEmptyFn,
-       resourceType: RESOURCE_TYPE
+   const ImageInnerContents = (props) => {
+   return (<>
+       <img src={props.src}
+           className={props.baseCssClass + '__image'}
+           alt={props.alt} />
+       {
+           !!(props.title) && <span className={props.baseCssClass + '__title'} itemProp="caption">{props.title}</span>
+       }
+       {
+           props.displayPopupTitle && (!!props.title) && <meta itemProp="caption" content={props.title} />
+       }
+       </>);
    };
    
-   MapTo(RESOURCE_TYPE)(ImageV2, EditConfig);
+   const ImageContents = (props) => {
+       if (props.link && props.link.trim().length > 0) {
+           return (
+           <RoutedLink className={props.baseCssClass + '__link'} isRouted={props.routed} to={props.link}>
+               <ImageInnerContents {...props} />
+           </RoutedLink>
+           )
+       }
+       return <ImageInnerContents {...props} />
+   };
    
-   const AEMImage = withMappable(ImageV2, EditConfig);
+   export const Image = (props) => {
+       if (!props.baseCssClass) {
+           props.baseCssClass = 'cmp-image'
+       }
    
-   export default AEMImage;
+       const { isInEditor = false } = props;
+       const cssClassName = (isInEditor) ? props.baseCssClass + ' cq-dd-image' : props.baseCssClass;
+   
+       return (
+           <div className={cssClassName}>
+               <ImageContents {...props} />
+           </div>
+       )
+   };
    ```
 
-1. Criar um arquivo SCSS `src/components/aem/AEMImage.scss` que fornece estilos personalizados para a `AEMImage.scss`. Esses estilos direcionam as classes CSS de notação BEM do AEM React Core Component.
-1. Adicione o seguinte SCSS ao `AEMImage.scss`
+1. Crie um componente React editável em `src/components/editable/EditableImage.js`
+1. Adicione o seguinte código a `EditableImage.js`
 
-   ```
+```javascript
+import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
+import { Image, imageIsEmpty } from "./core/Image";
+import React from 'react'
+
+import { withConditionalPlaceHolder } from "./core/util/withConditionalPlaceholder";
+import { withStandardBaseCssClass } from "./core/util/withStandardBaseCssClass";
+
+const RESOURCE_TYPE = "wknd-app/components/image";
+
+const EditConfig = {
+    emptyLabel: "Image",
+    isEmpty: imageIsEmpty,
+    resourceType: RESOURCE_TYPE
+};
+
+const WrappedImage = (props) => {
+    const Wrapped = withConditionalPlaceHolder(withStandardBaseCssClass(Image, "cmp-image"), imageIsEmpty, "Image V2");
+    return <Wrapped {...props}/>
+}
+
+const EditableImage = (props) => <EditableComponent config={EditConfig} {...props}><WrappedImage /></EditableComponent>
+
+MapTo(RESOURCE_TYPE)(EditableImage);
+
+export default EditableImage;
+```
+
+
+1. Criar um arquivo SCSS `src/components/editable/EditableImage.scss` que fornece estilos personalizados para a `EditableImage.scss`. Esses estilos direcionam as classes CSS do componente React editável.
+1. Adicione o seguinte SCSS ao `EditableImage.scss`
+
+   ```css
    .cmp-image__image {
        margin: 1rem 0;
        width: 100%;
@@ -191,47 +243,48 @@ O `AEMText.js` O arquivo deve ter a seguinte aparência:
     }
    ```
 
-1. Importar `AEMImage.scss` em `AEMImage.js`
+1. Importar `EditableImage.scss` em `EditableImage.js`
 
-   ```
+   ```javascript
    ...
-   import './AEMImage.scss';
+   import './EditableImage.scss';
    ...
    ```
 
-O `AEMImage.js` e `AEMImage.scss` deve ter a seguinte aparência:
+A implementação do componente Imagem editável deve ser semelhante a:
 
-![AEMImage.js e AEMImage.scss](./assets/spa-container-component/aem-image-js-scss.png)
+![Componente de imagem editável](./assets/spa-container-component/image-js.png)
+
 
 ### Importar os componentes editáveis
 
-O recém-criado `AEMText` e `AEMImage` SPA componentes são referenciados no SPA e são instanciados dinamicamente com base no JSON retornado pelo AEM. Para garantir que esses componentes estejam disponíveis para o SPA, crie instruções de importação para eles em `Home.js`
+O recém-criado `EditableText` e `EditableImage` Os componentes do React são referenciados no SPA e são instanciados dinamicamente com base no JSON retornado pelo AEM. Para garantir que esses componentes estejam disponíveis para o SPA, crie instruções de importação para eles em `Home.js`
 
 1. Abra o SPA projeto no IDE
 1. Abra o arquivo `src/Home.js`
 1. Adicionar declarações de importação para `AEMText` e `AEMImage`
 
-   ```
+   ```javascript
    ...
-   import AEMText from './components/aem/AEMText';
-   import AEMImage from './components/aem/AEMImage';
+   // The following need to be imported, so that MapTo is run for the components
+   import EditableText from './editable/EditableText';
+   import EditableImage from './editable/EditableImage';
    ...
    ```
-
 
 O resultado deve ser semelhante a:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-Se essas importações _not_ adicionado, a variável `AEMText` e `AEMImage` o código não é chamado pelo SPA e, portanto, os componentes não são registrados em relação aos tipos de recursos fornecidos.
+Se essas importações _not_ adicionado, a variável `EditableText` e `EditableImage` o código não é chamado por SPA e, portanto, os componentes não são mapeados para os tipos de recursos fornecidos.
 
 ## Configuração do contêiner no AEM
 
-AEM componentes de contêiner usam políticas para ditar seus componentes permitidos. Essa é uma configuração crítica ao usar o Editor de SPA, já que somente AEM os Componentes principais do WCM que mapearam SPA componentes são renderizáveis pelo SPA. Verifique se apenas os componentes para os quais fornecemos implementações SPA são permitidos:
+AEM componentes de contêiner usam políticas para ditar seus componentes permitidos. Essa é uma configuração crítica ao usar o Editor de SPA, já que somente AEM os componentes que mapearam SPA componentes são renderizáveis pelo SPA. Verifique se apenas os componentes para os quais fornecemos implementações SPA são permitidos:
 
-+ `AEMTitle` mapeado para `wknd-app/components/title`
-+ `AEMText` mapeado para `wknd-app/components/text`
-+ `AEMImage` mapeado para `wknd-app/components/image`
++ `EditableTitle` mapeado para `wknd-app/components/title`
++ `EditableText` mapeado para `wknd-app/components/text`
++ `EditableImage` mapeado para `wknd-app/components/image`
 
 Para configurar o contêiner reponsivegrid do modelo da Página de SPA Remota:
 
@@ -259,7 +312,7 @@ Para configurar o contêiner reponsivegrid do modelo da Página de SPA Remota:
 
 ## Criação do contêiner no AEM
 
-Depois que o SPA foi atualizado para incorporar o `<AEMResponsiveGrid...>`, invólucros para três componentes React Core AEM (`AEMTitle`, `AEMText`e `AEMImage`) e AEM é atualizado com uma política de modelo correspondente, podemos começar a criar conteúdo no componente de contêiner.
+Depois que o SPA foi atualizado para incorporar o `<ResponsiveGrid...>`, invólucros para três componentes React editáveis (`EditableTitle`, `EditableText`e `EditableImage`) e AEM é atualizado com uma política de modelo correspondente, podemos começar a criar conteúdo no componente de contêiner.
 
 1. Faça logon no AEM Author
 1. Navegar para __Sites > Aplicativo WKND__
@@ -296,7 +349,7 @@ Depois que o SPA foi atualizado para incorporar o `<AEMResponsiveGrid...>`, inv�
 
    ![Componentes criados](./assets/spa-container-component/authored-components.png)
 
-   Use AEM modo Layout para permitir que ajustemos o tamanho e o layout dos componentes.
+Use AEM modo Layout para permitir que ajustemos o tamanho e o layout dos componentes.
 
 1. Mudar para __Modo de layout__ usando o seletor de modo no canto superior direito
 1. __Redimensionar__ os componentes Imagem e Texto , de modo que fiquem lado a lado
@@ -315,9 +368,9 @@ Depois que o SPA foi atualizado para incorporar o `<AEMResponsiveGrid...>`, inv�
 
 Você adicionou um componente de contêiner que permite que componentes editáveis sejam adicionados por autores ao aplicativo WKND! Agora você sabe como:
 
-+ Use o componente ResponsiveGrid do Componente Editável de Reação de AEM no SPA
-+ Registre AEM React Core Components (Texto e Imagem) para uso no SPA por meio do componente de contêiner
-+ Configure o modelo de Página de SPA Remota para permitir os Componentes principais habilitados para SPA
++ Usar o componente editável de reação de AEM `ResponsiveGrid` no SPA
++ Crie e registre os componentes editáveis do React (Texto e Imagem) para uso no SPA por meio do componente de contêiner
++ Configure o modelo Página de SPA Remota para permitir os componentes habilitados para SPA
 + Adicionar componentes editáveis ao componente de contêiner
 + Componentes de criação e layout no Editor SPA
 
