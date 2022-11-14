@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
+source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Cada ambiente AEM as a Cloud Service tem seu próprio Console do desenvolvedor.
 Para acessar e usar o Console do desenvolvedor, as seguintes permissões devem ser fornecidas ao Adobe ID do desenvolvedor por meio do [Admin Console](https://adminconsole.adobe.com).
 
 1. Certifique-se de que a organização do Adobe que afetou o Cloud Manager e AEM produtos as a Cloud Service esteja ativa no seletor de organização do Adobe.
-1. O desenvolvedor deve ser membro do produto do Cloud Manager __Desenvolvedor - Cloud Service__ Perfil do produto
+1. O desenvolvedor deve ser membro do [do Cloud Manager Product&#39;s __Desenvolvedor - Cloud Service__ Perfil de produto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Se essa associação não existir, o desenvolvedor não poderá fazer logon no Console do desenvolvedor.
-1. O desenvolvedor deve ser membro do __Usuários AEM__ ou __Administradores de AEM__ Perfil do produto no autor e/ou publicação do AEM.
+1. O desenvolvedor deve ser membro do [__Usuários AEM__ ou __Administradores de AEM__ Perfil do produto no autor e/ou publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Se essa associação não existir, a variável [status](#status) os despejos atingirão o tempo limite com um erro 401 Unauthorized .
 
 ### Solução de problemas do acesso ao Console do desenvolvedor
