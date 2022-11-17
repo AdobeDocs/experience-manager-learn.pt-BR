@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriais do AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 0c381c166f55178e219ebd27c6641298491aa8f6
+source-git-commit: d5645e975aa290392348cc69d078b24921a7d13a
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '841'
 ht-degree: 21%
 
 ---
@@ -91,6 +91,8 @@ ht-degree: 21%
       + [Navegador de repositório](./debugging/cloud-service/repository-browser.md)
       + Riscos{#risks}
          + [Avisos transversais](./debugging/cloud-service/risks/traversals.md)
++ Entrega de conteúdo{#content-delivery}
+   + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
 + Acessar AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
