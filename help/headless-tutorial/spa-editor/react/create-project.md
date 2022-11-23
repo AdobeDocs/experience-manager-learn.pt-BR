@@ -9,9 +9,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c489a033f34aecaa0af10e3868c258feba6aaae6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1063'
 ht-degree: 3%
 
 ---
@@ -41,15 +41,15 @@ Revise as ferramentas necessárias e as instruções para configurar um [ambient
 
 >[!NOTE]
 >
->Este tutorial usa a versão **39º** do arquétipo. É sempre uma prática recomendada usar a variável **mais recente** versão do arquétipo para gerar um novo projeto.
+>Este tutorial usa a versão **35º** do arquétipo.
 
 1. Abra um terminal de linha de comando e insira o seguinte comando Maven:
 
    ```shell
-   mvn -B archetype:generate \
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
     -D archetypeGroupId=com.adobe.aem \
     -D archetypeArtifactId=aem-project-archetype \
-    -D archetypeVersion=39 \
+    -D archetypeVersion=35 \
     -D appTitle="WKND SPA React" \
     -D appId="wknd-spa-react" \
     -D artifactId="aem-guides-wknd-spa.react" \
@@ -87,7 +87,7 @@ Revise as ferramentas necessárias e as instruções para configurar um [ambient
        |--- .gitignore
    ```
 
-   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o `ui.frontend` , que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na seção [Documentação do AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o `ui.frontend` , que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na seção [Documentação do AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
 ## Implantar e criar o projeto
 
@@ -222,7 +222,7 @@ Em seguida, verifique se este é um Aplicativo de página única com o uso das f
    >
    > Pode ser útil instalar uma extensão do navegador para formatar automaticamente a saída JSON.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro projeto SPA Editor de AEM!
 
