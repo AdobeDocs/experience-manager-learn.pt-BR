@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -311,3 +311,5 @@ Agora, basta recarregar o serviço do servidor da Web e usar nosso novo domínio
 
 Observe que alteramos apenas as partes necessárias para alterar e aproveitar as inclusões e o código existentes que vieram com os arquivos de configuração da linha de base.  Temos apenas de definir o elemento que precisamos de mudar.  Torna as coisas muito mais fáceis e nos permite manter menos código
 </div>
+
+[Próximo -> Verificação de integridade do Dispatcher](./health-check.md)
