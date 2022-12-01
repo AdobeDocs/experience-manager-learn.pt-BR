@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ Esse script, quando usado, verificará e registrará todas as instâncias nas qu
 Este script, quando usado, verificará e registrará todas as instâncias nas quais ele estiver enviando, mas retornará em bom estado, independentemente de AEM estar retornando ou não um erro.
 
 > `Note:` Esse script é usado quando a verificação de integridade não está funcionando como desejado e permite que uma substituição mantenha AEM instâncias no balanceador de carga.
+
+[Próximo -> Simlinks GIT](./git-symlinks.md)
