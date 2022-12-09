@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,16 @@ A configuração de filtro Publicar Dispatcher do AEM define os padrões de URL 
 Adicione um `allow` com o padrão de URL `/graphql/execute.json/*`e garantir a ID do arquivo (por exemplo, `/0600`, é exclusiva no arquivo farm de exemplo).
 Isso permite a solicitação HTTP GET para o endpoint de consulta persistente, como `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` para AEM Publish.
 
+Se estiver usando Fragmentos de experiência na experiência sem cabeçalho do AEM, faça o mesmo para esses caminhos.
+
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
 ```
 ...
-/0600 { /type "allow" /url "/graphql/execute.json/*" }
+# Allow headless requests for Persisted Query endpoints
+/0600 { /type "allow" /method '(POST|OPTIONS)' /url "/graphql/execute.json/*" }
+# Allow headless requests for Experience Fragments
+/0601 { /type "allow" /method '(GET|OPTIONS)' /url "/content/experience-fragments/*" }
 ...
 ```
 
