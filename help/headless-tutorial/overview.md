@@ -1,20 +1,20 @@
 ---
-title: AEM Tutorials sem cabeça
-description: Uma coleção de tutoriais sobre como usar o Adobe Experience Manager como um CMS sem cabeçalho.
+title: Tutorials para headless em AEM
+description: Uma coleção de tutoriais CMS headless para Adobe Experience Manager. Explore tutoriais por API, estrutura e aplicativos de exemplo.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 7%
 
 ---
 
-# AEM Tutorials sem cabeça{#aem-headless-tutorials}
+# Tutorials para headless em AEM{#aem-headless-tutorials}
 
 O Adobe Experience Manager (AEM) tem várias opções para definir endpoints sem periféricos e fornecer seu conteúdo como JSON. Use tutoriais práticos para explorar como usar as várias opções e escolher o que é certo para você.
 
@@ -41,7 +41,7 @@ O Adobe Experience Manager (AEM) tem várias opções para definir endpoints sem
     </a>
     </div>
     <p>
-    <em>Saiba como um aplicativo pode usar AEM API GraphQL para consultar conteúdo.</em>
+    <em>Saiba como um aplicativo pode usar AEM API do GraphQL para consultar conteúdo.</em>
     <p>
   </td>
   <td>
@@ -89,7 +89,7 @@ Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless
     </a>
     </div>
     <p>
-    <em>Um aplicativo iOS com APIs GraphQL AEM.</em>
+    <em>Um aplicativo do iOS com AEM APIs do GraphQL.</em>
     <p>
   </td>
   <td>
@@ -102,7 +102,7 @@ Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless
     </a>
     </div>
     <p>
-    <em>Um aplicativo Android™ fornecido por APIs GraphQL AEM.</em>
+    <em>Um aplicativo Android™ fornecido por APIs AEM GraphQL.</em>
     </p>
   </td>
   <td>
@@ -115,7 +115,7 @@ Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless
       </a>
     </div>
     <p>
-    <em>Um aplicativo React desenvolvido por APIs GraphQL AEM.</em>
+    <em>Um aplicativo React fornecido pelas APIs AEM GraphQL.</em>
     <p>
   </td>
 </tr>
@@ -137,7 +137,7 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     </a>
     </div>
     <p>
-    <em>Crie um aplicativo React JS usando GraphQL em um cenário sem interface.</em>
+    <em>Crie um aplicativo React JS usando o GraphQL em um cenário sem cabeçalho.</em>
     <p>
   </td>
   <td>
