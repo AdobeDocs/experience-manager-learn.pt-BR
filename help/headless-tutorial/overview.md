@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
@@ -21,11 +21,6 @@ O Adobe Experience Manager (AEM) tem várias opções para definir endpoints sem
 >[!TIP]
 >
 >Essa coleção de tutoriais foi projetada para aqueles que preferem **aprenda fazendo**. Se preferir conceitos de aprendizagem desde o início, verifique o [jornada do desenvolvedor sem periféricos do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Esse conjunto de tutoriais e a jornada se complementam.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="Editar conteúdo em linha"
->abstract="Saiba como editar o conteúdo diretamente na página da qual é referenciado usando o conjunto de recursos sem cabeçalho."
 
 ## Tutorials por API
 

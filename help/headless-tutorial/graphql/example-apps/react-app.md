@@ -1,6 +1,6 @@
 ---
 title: Aplicativo React - Exemplo sem cabeçalho AEM
-description: Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando APIs GraphQL AEM usando consultas persistentes.
+description: Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Esse aplicativo React demonstra como consultar conteúdo usando APIs AEM GraphQL usando consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 10715
@@ -11,27 +11,22 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '919'
 ht-degree: 6%
 
 ---
 
 # React App{#react-app}
 
-Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando APIs GraphQL AEM usando consultas persistentes. O Cliente Sem Cabeçalho do AEM para JavaScript é usado para executar as consultas persistentes de GraphQL que alimentam o aplicativo.
+Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Esse aplicativo React demonstra como consultar conteúdo usando APIs AEM GraphQL usando consultas persistentes. O AEM Headless Client for JavaScript é usado para executar as consultas persistentes do GraphQL que alimentam o aplicativo.
 
 ![Reagir ao aplicativo com AEM headless](./assets/react-app/react-app.png)
 
 Visualize o [código-fonte no GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 A [tutorial passo a passo completo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) descrevendo como esse aplicativo React foi criado está disponível.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="Personalizar conteúdo em um aplicativo React de amostra"
->abstract="Criamos um aplicativo React moderno, que pode ser usado para aprender como personalizar o conteúdo usando o conjunto de recursos sem cabeçalho."
 
 ## Pré-requisitos {#prerequisites}
 
@@ -96,12 +91,12 @@ O aplicativo React foi projetado para se conectar a um __Publicação do AEM__ ,
 
 ## O código
 
-Abaixo está um resumo de como o aplicativo React é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes GraphQL e como esses dados são apresentados. O código completo pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Abaixo está um resumo de como o aplicativo React é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes do GraphQL e como esses dados são apresentados. O código completo pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 
 ### Consultas persistentes
 
-Seguindo AEM práticas recomendadas headless, o aplicativo React usa consultas persistentes AEM GraphQL para consultar dados de aventura. O aplicativo usa duas consultas persistentes:
+Seguindo AEM práticas recomendadas headless, o aplicativo React usa consultas persistentes AEM GraphQL para consultar dados de aventuras. O aplicativo usa duas consultas persistentes:
 
 + `wknd/adventures-all` consulta persistente, que retorna todas as aventuras no AEM com um conjunto abreviado de propriedades. Essa consulta persistente direciona a lista de aventuras da exibição inicial.
 
@@ -184,13 +179,13 @@ query($slug: String!) {
 }
 ```
 
-### Executar consulta persistente de GraphQL
+### Executar consulta persistente do GraphQL
 
-AEM consultas persistentes são executadas pelo HTTP GET e, portanto, o [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas GraphQL persistentes](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contra AEM e carregue o conteúdo de aventura no aplicativo.
+AEM consultas persistentes são executadas pelo HTTP GET e, portanto, o [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas persistentes do GraphQL](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contra AEM e carregue o conteúdo de aventura no aplicativo.
 
 Cada consulta persistente tem um React correspondente [useEffect](https://reactjs.org/docs/hooks-effect.html) gancho `src/api/usePersistedQueries.js`, que chama de forma assíncrona o ponto final de consulta persistente do AEM HTTP GET e retorna os dados de aventura.
 
-Cada função, por sua vez, chama a função `aemHeadlessClient.runPersistedQuery(...)`, executando a consulta GraphQL mantida.
+Cada função, por sua vez, chama a função `aemHeadlessClient.runPersistedQuery(...)`, executando a consulta persistente do GraphQL.
 
 ```js
 // src/api/usePersistedQueries.js
@@ -269,7 +264,7 @@ O aplicativo React usa duas visualizações para apresentar os dados de aventura
 Vários [variáveis de ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) são usadas para se conectar a um ambiente de AEM. O padrão se conecta à publicação do AEM em execução em `http://localhost:4503`. Atualize o `.env.development` para alterar a conexão AEM :
 
 + `REACT_APP_HOST_URI=http://localhost:4502`: Definir como AEM host de destino
-+ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Defina o caminho do ponto de extremidade GraphQL. Isso não é usado por este aplicativo React, pois esse aplicativo usa somente consultas persistentes.
++ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Defina o caminho do ponto de extremidade do GraphQL. Isso não é usado por este aplicativo React, pois esse aplicativo usa somente consultas persistentes.
 + `REACT_APP_AUTH_METHOD=`: O método de autenticação preferencial. Opcional, como por padrão, nenhuma autenticação é usada.
    + `service-token`: Usar credenciais de serviço para obter um token de acesso em AEM as a Cloud Service
    + `dev-token`: Usar token dev para desenvolvimento local em AEM as a Cloud Service
