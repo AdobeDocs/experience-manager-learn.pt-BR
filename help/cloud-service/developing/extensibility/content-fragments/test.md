@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -78,7 +78,10 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 
 1. O console Fragmento do conteúdo do AEM é carregado com a versão local da extensão injetada para teste e as alterações de recarregamento automático enquanto o aplicativo local do App Builder estiver em execução.
 
-Lembre-se de que, ao usar essa abordagem, a extensão em desenvolvimento afeta apenas sua experiência e todos os outros usuários do console Fragmento de conteúdo AEM a acessam sem a extensão injetada.
+>[!IMPORTANT]
+>
+>Lembre-se de que, ao usar essa abordagem, a extensão em desenvolvimento afeta apenas sua experiência e todos os outros usuários do console Fragmento de conteúdo AEM a acessam sem a extensão injetada.
+
 
 ## Criar estágios de teste
 

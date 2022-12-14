@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` deve ser carregado imediatamente por meio da rota de índice da extensão e atua no ponto de registro da extensão, definindo:
 
 1. O tipo de extensão; a [menu de cabeçalho](./header-menu.md) ou [barra de ações](./action-bar.md) botão.
-   + [Menu Cabeçalho](./header-menu.md) as extensões são indicadas pela variável `headerMenu` propriedade sob `methods`.
-   + [Barra de ação](./action-bar.md) as extensões são indicadas pela variável `actionBar` propriedade sob `methods`.
+   + [Menu Cabeçalho](./header-menu.md#extension-registration) as extensões são indicadas pela variável `headerMenu` propriedade sob `methods`.
+   + [Barra de ação](./action-bar.md#extension-registration) as extensões são indicadas pela variável `actionBar` propriedade sob `methods`.
 1. A definição do botão de extensão, em `getButton()` . Essa função retorna um objeto com campos:
    + `id` é uma ID exclusiva para o botão
    + `label` é o rótulo do botão de extensão no console Fragmento de conteúdo do AEM
    + `icon` é o ícone do botão de extensão no console AEM Fragmento do conteúdo . O ícone é um [Espectro React](https://spectrum.adobe.com/page/icons/) nome do ícone, com espaços removidos.
 1. O manipulador de cliques do botão, em um `onClick()` .
-   + [Menu Cabeçalho](./header-menu.md) extensões não passam parâmetros para o manipulador de cliques.
-   + [Barra de ação](./action-bar.md) as extensões fornecem uma lista de caminhos de fragmento de conteúdo selecionados na `selections` parâmetro.
+   + [Menu Cabeçalho](./header-menu.md#extension-registration) extensões não passam parâmetros para o manipulador de cliques.
+   + [Barra de ação](./action-bar.md#extension-registration) as extensões fornecem uma lista de caminhos de fragmento de conteúdo selecionados na `selections` parâmetro.
 
 ### Extensão do Menu Cabeçalho
 
