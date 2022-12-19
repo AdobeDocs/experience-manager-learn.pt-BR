@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,12 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, normalmente `&ext=https://localhost:9080`.
 
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __first__ consulte parâmetros no URL, pois o console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), portanto, a correção incorreta dos parâmetros após a `#` não funcionará.
+
    O URL de teste deve ser semelhante a:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://localhost:9080
+   https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copie e cole o URL de teste no navegador.
@@ -112,10 +114,12 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __first__ consulte parâmetros no URL, pois o console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), portanto, a correção incorreta dos parâmetros após a `#` não funcionará.
+
    O URL de teste deve ser semelhante a:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html
+   https://experience.adobe.com/?devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copie e cole o URL de teste no navegador.
