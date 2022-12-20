@@ -7,9 +7,9 @@ breadcrumb-title: Tutoriais do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1759'
 ht-degree: 3%
 
 ---
@@ -227,6 +227,7 @@ ht-degree: 3%
    + [Incorporar pdf no formulário adaptável](document-services/embed-pdf-inline.md)
    + [PDF carrossel](document-services/display-pdf-in-carousel.md)
    + [Uso do serviço Assembler no AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
+   + [Compilação XDP com o Serviço Assembler](document-services/xdp-stitching-using-assembler-service.md)
    + [Usar pasta assistida no AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Uso do serviço de código de barras no AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Uso do serviço PDFG no AEM Forms](document-services/using-pdfg-in-aem-forms.md)
