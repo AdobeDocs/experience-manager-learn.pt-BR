@@ -9,7 +9,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 1%
@@ -342,9 +342,9 @@ As mudanças feitas no `Header` atualmente, só são visíveis por meio da vari�
 
    Agora que o SPA atualizado está em AEM, a criação pode continuar.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
-Parabéns, você atualizou o SPA e explorou a integração com o AEM! Você sabe como desenvolver o SPA em relação à API do modelo JSON AEM usando um **webpack-dev-server**.
+Parabéns, você atualizou o SPA e explorou a integração com o AEM! Agora você sabe como desenvolver o SPA em relação à API do modelo JSON AEM usando um **webpack-dev-server**.
 
 ### Próximas etapas {#next-steps}
 
