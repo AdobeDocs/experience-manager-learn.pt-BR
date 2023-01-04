@@ -9,7 +9,7 @@ level: Beginner
 kt: 11604
 thumbnail: KT-11604.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
@@ -32,7 +32,7 @@ O fluxo funcional da extensão de exemplo é o seguinte:
 1. O envio do formulário envia a lista de Fragmentos de conteúdo selecionados e o host de AEM para a [ação personalizada do Adobe I/O Runtime](#adobe-io-runtime-action).
 1. O [Ação do Adobe I/O Runtime](#adobe-io-runtime-action) valida as entradas e faz solicitações HTTP PUT para AEM para atualizar os Fragmentos de conteúdo selecionados.
 1. Uma série de PUT HTTP para cada Fragmento de conteúdo para atualizar a propriedade especificada.
-1. AEM as a Cloud Service persiste as atualizações de propriedade no Fragmento de conteúdo e retorna as respostas de falha à ação do Adobe I/O Runtime.
+1. AEM as a Cloud Service persiste as atualizações de propriedade no Fragmento do conteúdo e retorna respostas bem-sucedidas ou com falha à ação do Adobe I/O Runtime.
 1. O modal recebeu a resposta da ação do Adobe I/O Runtime e exibe uma lista de atualizações em massa bem-sucedidas.
 
 Este vídeo analisa a extensão de atualização de propriedade em massa de exemplo, como ela funciona e como é desenvolvida.
@@ -69,7 +69,7 @@ Há dois conjuntos lógicos de rotas:
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. O segundo conjunto de rotas mapeia URLs para componentes do React que renderizam o conteúdo do modal da extensão. O `:selection` param representa caminhos de fragmento de conteúdo da lista delimitada.
+1. O segundo conjunto de rotas mapeia URLs para componentes do React que renderizam o conteúdo do modal da extensão. O `:selection` param representa um caminho de fragmento de conteúdo da lista delimitada.
 
    Se a extensão tiver vários botões para invocar ações distintas, cada [registro de extensão](#extension-registration) mapeia para uma rota definida aqui.
 
@@ -147,7 +147,7 @@ Neste aplicativo de exemplo, há um componente modal React (`BulkPropertyUpdateM
 Importante: qualquer interação com AEM da extensão deve ser delegada a um [Ação Adobe I/O Runtime do AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que é um processo separado sem servidor em execução no [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 O uso das ações do Adobe I/O Runtime para se comunicar com o AEM é evitar problemas de conectividade do CORS (Cross-Origin Resource Sharing).
 
-Quando o formulário de Atualização de propriedade em massa é enviado, um `onSubmitHandler()` chama a ação do Adobe I/O Runtime, transmitindo o host AEM atual (domínio) e o token de acesso AEM do usuário, que, por sua vez, chama a função [API do fragmento de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/content-fragments-api.html) para atualizar os fragmentos de conteúdo.
+Quando o formulário de Atualização de propriedade em massa é enviado, um `onSubmitHandler()` chama a ação do Adobe I/O Runtime, transmitindo o host AEM atual (domínio) e o token de acesso AEM do usuário, que, por sua vez, chama a função [API do fragmento de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para atualizar os fragmentos de conteúdo.
 
 Quando a resposta da ação Adobe I/O Runtime é recebida, o modal é atualizado para exibir os resultados da operação de atualização da propriedade em massa.
 
@@ -408,7 +408,7 @@ export default function BulkPropertyUpdateModal() {
 
 ## Ação do Adobe I/O Runtime
 
-Um aplicativo App Builder de extensão AEM pode definir para o usuário 0 ou muitas ações do Adobe I/O Runtime.
+Um aplicativo App Builder de extensão AEM pode definir ou usar 0 ou muitas ações do Adobe I/O Runtime.
 As ações de Adobe Runtime devem ser responsáveis pelo trabalho que requer interação com AEM ou outros serviços da Web do Adobe.
 
 Neste aplicativo de exemplo, a ação Adobe I/O Runtime , que usa o nome padrão `generic` - é responsável por:

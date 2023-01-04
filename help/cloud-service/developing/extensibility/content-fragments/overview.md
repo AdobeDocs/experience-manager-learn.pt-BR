@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '774'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Extensão do console Fragmentos de conteúdo do AEM
 
-[Console Fragmentos de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) as extensões podem ser adicionadas por meio de dois pontos de extensão: um botão no [Console do fragmento do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) menu de cabeçalho ou barra de ação. As extensões são escritas em JavaScript, executadas como aplicativos do App Builder, e podem implementar uma interface de usuário da Web personalizada e ações sem servidor do Adobe I/O Runtime para executar um trabalho mais intenso e de longa duração.
+[Console Fragmentos de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) as extensões podem ser adicionadas por meio de dois pontos de extensão: um botão no [Console do fragmento do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) menu de cabeçalho ou barra de ação. As extensões são escritas em JavaScript, executadas como aplicativos do App Builder, e podem implementar uma interface de usuário da Web personalizada e ações sem servidor do Adobe I/O Runtime para executar um trabalho mais intenso e de longa duração.
 
 ![Extensão do console Fragmentos de conteúdo do AEM](./assets/overview/example.png){align="center"}
 
@@ -33,7 +33,7 @@ Uma única extensão do console Fragmentos de conteúdo AEM pode incluir zero ou
 
 AEM as extensões do console Fragmentos de conteúdo exigem um [Projeto do Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console) e um [Aplicativo do App Builder](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) usando o `@adobe/aem-cf-admin-ui-ext-tpl` modelo, associado ao projeto do Console do Adobe Developer.
 
-Selecione entre os seguintes recursos ao gerar o aplicativo App Builder, com base no que a extensão fará. Qualquer combinação de opções pode ser usada em uma extensão.
+Selecione entre os seguintes recursos ao gerar o aplicativo App Builder, com base no que a extensão faz. Qualquer combinação de opções pode ser usada em uma extensão.
 
 |  | Adicionar botão a [Menu Cabeçalho](./header-menu.md) | Adicionar botão a [Barra de ação](./action-bar.md) | Mostrar [Modal](./modal.md) | Adicionar [manipulador do lado do servidor](./runtime-action.md) |
 | ------------------------------------------ | :-----------------------: | :----------------------: | :--------: | :--------------------:  |
@@ -67,7 +67,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. Criar um projeto</p>
-                    <p class="is-size-6">Crie um projeto do Console do Adobe Developer que defina seu acesso a outros serviços da Adobe e gerencie suas implantações.</p>
+                    <p class="is-size-6">Crie um projeto do Adobe Developer Console que defina seu acesso a outros serviços da Adobe e gerencie suas implantações.</p>
                     <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Criar um projeto do Adobe Developer</span>
                     </a>
@@ -130,7 +130,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4a. Menu Cabeçalho</p>
-                    <p class="is-size-6">Saiba como criar extensões de menu de cabeçalho do Console do fragmento de conteúdo AEM.</p>
+                    <p class="is-size-6">Saiba como criar uma extensão de menu de cabeçalho do Console do fragmento de conteúdo AEM.</p>
                     <a href="./header-menu.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Estender o menu de cabeçalho</span>
                     </a>
@@ -151,7 +151,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4b. Barra de ações</p>
-                    <p class="is-size-6">Saiba como criar extensões AEM da barra de ação do Console do fragmento de conteúdo.</p>
+                    <p class="is-size-6">Saiba como criar uma extensão de barra de ação do Console do fragmento de conteúdo AEM.</p>
                     <a href="./action-bar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Estender a barra de ações</span>
                     </a>
@@ -193,7 +193,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">6. Ação Adobe I/O Runtime</p>
-                    <p class="is-size-6">Adicionar uma ação sem servidor Adobe I/O Runtime, a extensão pode invocar para interagir com Fragmentos de conteúdo e AEM para executar operações comerciais personalizadas.</p>
+                    <p class="is-size-6">Adicione uma ação de Adobe I/O Runtime sem servidor que a extensão pode invocar para interagir com Fragmentos de conteúdo e AEM para executar operações comerciais personalizadas.</p>
                     <a href="./runtime-action.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Adicionar uma ação do Adobe I/O Runtime</span>
                     </a>
@@ -214,7 +214,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">7. Teste</p>
-                    <p class="is-size-6">Teste as extensões durante o desenvolvimento, bem como compartilhando extensões concluídas com testadores de controle de qualidade ou UAT usando um URL especial.</p>
+                    <p class="is-size-6">Teste as extensões durante o desenvolvimento e compartilhe extensões concluídas em testadores de controle de qualidade ou UAT usando um URL especial.</p>
                     <a href="./test.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Testar a extensão</span>
                     </a>
@@ -271,4 +271,28 @@ Exemplo AEM extensões do console do fragmento de conteúdo.
             </div>
         </div>
     </div>
+    <!-- Bulk property update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Geração de imagem e upload para AEM extensão" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Geração de imagem e upload para AEM extensão">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small">
+                <div class="content">
+                    <p class="headline is-size-5 has-text-weight-bold">Geração de imagem e upload para AEM extensão</p>
+                    <p class="is-size-6">Explore um exemplo de extensão da barra de ação que gera uma imagem usando OpenAI, a carrega no AEM e atualiza a propriedade da imagem no Fragmento do conteúdo selecionado.</p>
+                    <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Explore a extensão de exemplo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
