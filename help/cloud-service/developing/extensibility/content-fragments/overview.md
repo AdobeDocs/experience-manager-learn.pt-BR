@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '742'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" title="Criar projeto do Adobe Developer" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./adobe-developer-console-project.md" title="Criar projeto do Adobe Developer" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/project/card.png" alt="Criar projeto do Adobe Developer">
                     </a>
                 </figure>
@@ -67,8 +67,8 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. Criar um projeto</p>
-                    <p class="is-size-6">Crie um projeto do Adobe Developer Console que defina seu acesso a outros serviços da Adobe e gerencie suas implantações.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <p class="is-size-6">Crie um projeto do Console do Adobe Developer que defina seu acesso a outros serviços da Adobe e gerencie suas implantações.</p>
+                    <a href="./adobe-developer-console-project.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Criar um projeto do Adobe Developer</span>
                     </a>
                 </div>
@@ -80,7 +80,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" title="Gerar um aplicativo de extensão" tabindex="-1" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" title="Gerar um aplicativo de extensão" tabindex="-1">
                         <img class="is-bordered-r-small" src="./assets/initialize-app/card.png" alt="Inicializar um aplicativo de extensão">
                     </a>
                 </figure>
@@ -89,7 +89,7 @@ Siga as etapas descritas abaixo para saber como gerar, desenvolver e implantar u
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">2. Inicializar um aplicativo de extensão</p>
                     <p class="is-size-6">Inicialize um aplicativo App Builder de extensão do console Fragmento de conteúdo AEM que define onde a extensão aparece e o trabalho que ele executa.</p>
-                    <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
+                    <a href="./app-initialization.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Inicializar um aplicativo de extensão</span>
                     </a>
                 </div>
