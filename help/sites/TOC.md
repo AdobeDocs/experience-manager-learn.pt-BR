@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriais do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 30%
+source-wordcount: '438'
+ht-degree: 29%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 30%
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
    + [Introdução ao AEM Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
+   + [Pontos de interrupção responsivos](developing/responsive-breakpoints.md)
    + [Desenvolvimento com o sistema de estilo](developing/style-system-technical-video-understand.md)
    + [Práticas recomendadas do sistema de estilos](developing/style-organization-style-system-understand-article.md)
    + [Desenvolvimento da diferença de página](developing/page-diff-technical-video-develop.md)
