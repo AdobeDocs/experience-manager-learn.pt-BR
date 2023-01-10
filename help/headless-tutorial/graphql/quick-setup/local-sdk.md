@@ -1,6 +1,6 @@
 ---
 title: AEM Configuração rápida sem cabeçalho usando o SDK local
-description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Instale o SDK do AEM, adicione conteúdo de amostra e implante um aplicativo que consuma conteúdo de AEM usando suas APIs GraphQL. Veja como o AEM alimenta as experiências omnichannel.
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Instale o SDK do AEM, adicione conteúdo de amostra e implante um aplicativo que consuma conteúdo de AEM usando suas APIs do GraphQL. Veja como o AEM alimenta as experiências omnichannel.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6386
@@ -10,29 +10,28 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 64086f3f7b340b143bd281e2f6f802af07554ecf
+source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 2%
+source-wordcount: '1256'
+ht-degree: 1%
 
 ---
 
 # AEM Configuração rápida sem cabeçalho usando o SDK local {#setup}
 
-A configuração rápida do AEM Headless leva você com AEM Headless usando o conteúdo do projeto de amostra do WKND Site e uma amostra do React App (a SPA) que consome o conteúdo por meio AEM APIs GraphQL headless. Este guia usa o [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+A configuração rápida do AEM Headless leva você com AEM Headless usando o conteúdo do projeto de amostra do WKND Site e uma amostra do React App (a SPA) que consome o conteúdo por meio AEM APIs Headless GraphQL. Este guia usa o [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
 ## Pré-requisitos {#prerequisites}
 
 As seguintes ferramentas devem ser instaladas localmente:
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
+* [Node.js v14.x](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. Instalar o SDK do AEM {#aem-sdk}
 
-Essa configuração usa o [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) para explorar AEM APIs GraphQL. Esta seção fornece um guia rápido para instalar o SDK do AEM e executá-lo no modo Autor. Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pode ser encontrada aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+Essa configuração usa o [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) para explorar AEM APIs do GraphQL. Esta seção fornece um guia rápido para instalar o SDK do AEM e executá-lo no modo Autor. Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pode ser encontrada aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -62,7 +61,7 @@ Essa configuração usa o [AEM SDK as a Cloud Service](https://experienceleague.
 
 Conteúdo de amostra do **Site de referência WKND** é usada para acelerar o tutorial. A WKND é uma marca fictícia de estilo de vida, frequentemente usada com treinamento AEM.
 
-O site WKND inclui configurações necessárias para expor um [Ponto de extremidade GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Em uma implementação real, siga as etapas documentadas para [incluir os pontos de extremidade GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) no projeto do cliente. A [CORS](#cors-config) também foi embalada como parte do site WKND. Uma configuração do CORS é necessária para conceder acesso a um aplicativo externo, para obter mais informações sobre [CORS](#cors-config) pode ser encontrada abaixo.
+O site WKND inclui configurações necessárias para expor um [Ponto de extremidade GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Em uma implementação real, siga as etapas documentadas para [incluir os endpoints do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) no projeto do cliente. A [CORS](#cors-config) também foi embalada como parte do site WKND. Uma configuração do CORS é necessária para conceder acesso a um aplicativo externo, para obter mais informações sobre [CORS](#cors-config) pode ser encontrada abaixo.
 
 1. Baixe o pacote de AEM compilado mais recente para o site WKND: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -102,7 +101,7 @@ O site WKND inclui configurações necessárias para expor um [Ponto de extremid
 
 ## 3. Baixe e execute o aplicativo WKND React {#sample-app}
 
-Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um aplicativo externo usando APIs GraphQL. Este tutorial usa um exemplo de Aplicativo React. O aplicativo React é intencionalmente simples, para se concentrar na integração com AEM APIs GraphQL.
+Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um aplicativo externo usando as APIs do GraphQL. Este tutorial usa um exemplo de Aplicativo React. O aplicativo React é intencionalmente simples, para se concentrar na integração com AEM APIs GraphQL.
 
 1. Abra um novo prompt de comando e clone o aplicativo React de amostra do GitHub:
 
@@ -148,7 +147,7 @@ Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um apl
 
 1. Use as ferramentas do desenvolvedor do navegador para inspecionar a **Rede** solicitações. Visualize o **XHR** e observar várias solicitações do GET para `/graphql/execute.json/...`. Esse prefixo de caminho chama AEM ponto de extremidade de consulta persistente, selecionando a consulta persistente a ser executada usando o nome e os parâmetros codificados após o prefixo .
 
-   ![Solicitação GraphQL Endpoint XHR](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
+   ![Solicitação XHR do GraphQL Endpoint](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
 
 ## 4. Editar conteúdo no AEM
 
@@ -171,16 +170,16 @@ Com o aplicativo React em execução, faça uma atualização do conteúdo no AE
 
 ## 5. Explore o GraphiQL {#graphiql}
 
-1. Abrir [GraphiQL](http://localhost:4502/aem/graphiql.html) navegando até **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+1. Abrir [GraphiQL](http://localhost:4502/aem/graphiql.html) navegando até **Ferramentas** > **Geral** > **Editor de consultas do GraphQL**
 1. Selecione consultas persistentes existentes à esquerda e execute-as para ver os resultados.
 
    >[!NOTE]
    >
-   > A ferramenta GraphiQL e a API GraphQL são [explorado com mais detalhes posteriormente no tutorial](../multi-step/explore-graphql-api.md).
+   > A ferramenta GraphiQL e a API do GraphQL são [explorado com mais detalhes posteriormente no tutorial](../multi-step/explore-graphql-api.md).
 
-## Parabéns. {#congratulations}
+## Parabéns!{#congratulations}
 
-Parabéns, agora você tem um aplicativo externo consumindo conteúdo AEM com GraphQL. Inspecione o código no aplicativo React e continue a testar a modificação dos Fragmentos de conteúdo existentes.
+Parabéns, agora você tem um aplicativo externo consumindo conteúdo AEM com o GraphQL. Inspecione o código no aplicativo React e continue a testar a modificação dos Fragmentos de conteúdo existentes.
 
 ### Próximas etapas
 
