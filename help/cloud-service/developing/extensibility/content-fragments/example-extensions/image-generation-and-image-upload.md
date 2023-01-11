@@ -1,5 +1,5 @@
 ---
-title: Geração de imagens baseada em OpenAI por meio da extensão do console Fragmento de conteúdo
+title: Geração de imagens OpenAI por meio de uma extensão personalizada do console Fragmento de conteúdo
 description: Um exemplo AEM extensão do console Fragmentos de conteúdo que gera imagem digital a partir de descrições de linguagem natural usando OpenAI ou DALL-E 2 e faz upload da imagem gerada para AEM e a associa ao Fragmento de conteúdo.
 feature: Developer Tools
 version: Cloud Service
@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
+source-git-commit: 06c09affd427a4818f5a916a84490f9ed09d372c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
 
 
-# Geração de imagem digital com base em OpenAI, fazendo upload para AEM extensão de exemplo
+# AEM geração de ativos de imagem usando o OpenAI
 
 ![Geração de imagens digitais](./assets/digital-image-generation/screenshot.png){align="center"}
 
