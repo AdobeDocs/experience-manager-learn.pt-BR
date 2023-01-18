@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Como você pode ver neste exemplo, o arquivo é mais antigo do que a variável `
 
 ## Configurações do arquivo farm
 
-A documentação está aqui para o conjunto completo de opções de configuração: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache)
+A documentação está aqui para o conjunto completo de opções de configuração: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
 
 Destacaremos alguns deles relacionados à liberação de cache
 
@@ -187,29 +187,29 @@ Esses arquivos farm não fazem nada além de liberar os diretórios raiz do docu
 
 ```
 /publishflushfarm {  
-	/virtualhosts {
-		"flush"
-	}
-	/cache {
-		/docroot "${PUBLISH_DOCROOT}"
-		/statfileslevel "${DEFAULT_STAT_LEVEL}"
-		/rules {
-			$include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_cache.any"
-		}
-		/invalidate {
-			/0000 {
-				/glob "*"
-				/type "allow"
-			}
-		}
-		/allowedClients {
-			/0000 {
-				/glob "*.*.*.*"
-				/type "deny"
-			}
-			$include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_invalidate_allowed.any"
-		}
-	}
+    /virtualhosts {
+        "flush"
+    }
+    /cache {
+        /docroot "${PUBLISH_DOCROOT}"
+        /statfileslevel "${DEFAULT_STAT_LEVEL}"
+        /rules {
+            $include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_cache.any"
+        }
+        /invalidate {
+            /0000 {
+                /glob "*"
+                /type "allow"
+            }
+        }
+        /allowedClients {
+            /0000 {
+                /glob "*.*.*.*"
+                /type "deny"
+            }
+            $include "/etc/httpd/conf.dispatcher.d/cache/ams_publish_invalidate_allowed.any"
+        }
+    }
 }
 ```
 

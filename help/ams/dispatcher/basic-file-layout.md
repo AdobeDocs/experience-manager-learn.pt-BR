@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Este diretório contém todos os `_cache.any`, `_invalidate.any` arquivos criado
 
 #### Diretório de Cabeçalhos do Cliente
 
-Esse diretório pode conter todas as `_clientheaders.any` arquivos criados por você que contêm listas de cabeçalhos de clientes que você deseja transmitir ao AEM quando uma solicitação entrar.  Mais detalhes nesta seção estão aqui [here](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+Esse diretório pode conter todas as `_clientheaders.any` arquivos criados por você que contêm listas de cabeçalhos de clientes que você deseja transmitir ao AEM quando uma solicitação entrar.  Mais detalhes nesta seção são [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
