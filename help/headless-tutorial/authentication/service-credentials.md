@@ -12,10 +12,11 @@ thumbnail: 330519.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,11 @@ As integrações com o Adobe Experience Manager (AEM) as a Cloud Service devem s
 
 As credenciais de serviço podem ser semelhantes [Tokens de Acesso ao Desenvolvimento Local](./local-development-access-token.md) mas são diferentes de algumas maneiras principais:
 
++ As Credenciais de Serviço estão associadas às Contas Técnicas. Várias credenciais de serviço podem estar ativas para uma Conta Técnica.
 + As credenciais de serviço são _not_ tokens de acesso, em vez de serem credenciais usadas para _obter_ acessar tokens.
-+ As credenciais de serviço são mais permanentes (expiram a cada 365 dias) e não são alteradas a menos que sejam revogadas, enquanto os tokens de acesso de desenvolvimento local expiram diariamente.
++ As Credenciais de Serviço são mais permanentes (seus certificados expiram a cada 365 dias) e não são alteradas a menos que sejam revogadas, enquanto os Tokens de Acesso ao Desenvolvimento Local expiram diariamente.
 + As Credenciais de Serviço para um ambiente AEM as a Cloud Service mapeiam para um único usuário de conta técnica AEM, enquanto os Tokens de Acesso ao Desenvolvimento Local são autenticados como o usuário AEM que gerou o token de acesso.
-+ Um ambiente AEM as a Cloud Service tem uma Credenciais de Serviço que mapeia para uma conta técnica AEM usuário. As Credenciais de Serviço não podem ser usadas para autenticar no mesmo ambiente AEM as a Cloud Service de diferentes usuários AEM conta técnica.
++ Um ambiente AEM as a Cloud Service pode ter até dez contas técnicas, cada uma com suas próprias Credenciais de Serviço, cada mapeamento para conta técnica discreta AEM usuário.
 
 As Credenciais de Serviço e os tokens de acesso gerados por elas, bem como os Tokens de Acesso ao Desenvolvimento Local, devem ser mantidas secretas. Como todos os três podem ser usados para obter acesso ao respectivo ambiente AEM as a Cloud Service.
 
@@ -39,27 +41,27 @@ As Credenciais de Serviço e os tokens de acesso gerados por elas, bem como os T
 
 A geração de Credenciais de Serviço é dividida em duas etapas:
 
-1. Uma inicialização única das Credenciais de serviço por um administrador da Org do Adobe IMS
-1. O download e o uso do JSON de credenciais de serviço
+1. Uma criação única de conta técnica por um administrador de organização do Adobe IMS
+1. O download e o uso do JSON de credenciais de serviço da conta técnica
 
-### Inicialização de Credenciais de Serviço
+### Criar uma conta técnica
 
-As credenciais de serviço, ao contrário dos tokens de acesso de desenvolvimento local, exigem uma _inicialização única_ pelo Administrador do Adobe Org IMS antes de baixá-los.
+As credenciais de serviço, ao contrário dos tokens de acesso de desenvolvimento local, exigem que uma conta técnica seja criada por um administrador IMS da organização do Adobe para que possa ser baixada. Devem ser criadas contas técnicas distintas para cada cliente que exija acesso programático a AEM.
 
-![Inicializar Credenciais de Serviço](assets/service-credentials/initialize-service-credentials.png)
+![Criar uma conta técnica](assets/service-credentials/initialize-service-credentials.png)
 
-__Esta é uma inicialização única por ambiente as a Cloud Service AEM__
+As contas técnicas são criadas uma vez, no entanto, as chaves privadas usam para gerenciar as credenciais de serviço associadas à conta técnica que podem ser gerenciadas ao longo do tempo. Por exemplo, novas Credenciais de Chave Privada/Serviço devem ser geradas antes da expiração da Chave Privada atual, para permitir o acesso ininterrupto por um usuário das Credenciais de Serviço.
 
-1. Verifique se você está conectado como:
-   + Administrador da sua organização do Adobe IMS
-   + Membro da __Cloud Manager - Desenvolvedor__ Perfil de produto IMS
-   + Membro da __Usuário AEM__ ou __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
+1. Verifique se você está conectado como um:
+   + __Administrador da Org do Adobe IMS__
+   + Membro da __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
 1. Faça logon em [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Abra o Programa que contém o ambiente as a Cloud Service AEM para integrar a configuração das Credenciais de Serviço para
 1. Toque nas reticências ao lado do ambiente no __Ambientes__ e selecione __Console do desenvolvedor__
 1. Toque em __Integrações__ guia
-1. Toque __Obter Credenciais de Serviço__ botão
-1. As Credenciais de Serviço são inicializadas e exibidas como JSON
+1. Toque no __Contas técnicas__ guia
+1. Toque __Criar nova conta técnica__ botão
+1. As Credenciais de Serviço da Conta Técnica são inicializadas e exibidas como JSON
 
 ![Console do desenvolvedor do AEM - Integrações - Obter credenciais de serviço](./assets/service-credentials/developer-console.png)
 
@@ -69,20 +71,20 @@ Depois que as AEM como credenciais de serviço do ambiente do Cloud Service fore
 
 ![Baixar credenciais do serviço](assets/service-credentials/download-service-credentials.png)
 
-Baixar as credenciais de serviço segue as mesmas etapas da inicialização. Se a inicialização ainda não tiver ocorrido, o usuário receberá um erro ao tocar no botão __Obter Credenciais de Serviço__ botão.
+Baixar as credenciais de serviço segue as etapas semelhantes da inicialização.
 
 1. Verifique se você está conectado como um:
-   + Membro da __Cloud Manager - Desenvolvedor__ Perfil de produto IMS (que concede acesso ao Console do desenvolvedor AEM)
-      + O ambiente de sandbox AEM as a Cloud Service não exige isso  __Cloud Manager - Desenvolvedor__ associação
-   + Membro da __Usuário AEM__ ou __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
+   + __Administrador da Org do Adobe IMS__
+   + Membro da __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
 1. Faça logon em [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Abra o Programa que contém o ambiente as a Cloud Service AEM para integrar o
 1. Toque nas reticências ao lado do ambiente no __Ambientes__ e selecione __Console do desenvolvedor__
 1. Toque em __Integrações__ guia
-1. Toque __Obter Credenciais de Serviço__ botão
-1. Toque no botão de download no canto superior esquerdo para baixar o arquivo JSON que contém o valor de Credenciais de serviço e salvar o arquivo em um local seguro.
-
-+ _Se as credenciais de serviço estiverem comprometidas, entre em contato imediatamente com o Suporte do Adobe para revogá-las_
+1. Toque no __Contas técnicas__ guia
+1. Expanda o __Conta técnica__ a utilizar
+1. Expanda o __Chave de privacidade__ cujas Credenciais de Serviço serão baixadas e verifique se o status é __Ativo__
+1. Toque em __...__ > __Exibir__ associada à __Chave de privacidade__, que exibe o JSON de credenciais de serviço
+1. Toque no botão de download no canto superior esquerdo para baixar o arquivo JSON que contém o valor de Credenciais de serviço e salvar o arquivo em um local seguro
 
 ## Instalar as credenciais de serviço
 
@@ -91,7 +93,7 @@ As Credenciais de Serviço fornecem os detalhes necessários para gerar um JWT, 
 Para simplificar, este tutorial transmite as Credenciais de serviço no por meio da linha de comando. No entanto, trabalhe com a equipe de segurança de TI para entender como armazenar e acessar essas credenciais de acordo com as diretrizes de segurança de sua organização.
 
 1. Copie o [baixado o JSON de credenciais de serviço](#download-service-credentials) para um arquivo nomeado `service_token.json` na raiz do projeto
-   + Mas lembre-se, nunca confira nenhuma credencial ao Git!
+   + Lembre-se, nunca cometer _quaisquer credenciais_ para Git!
 
 ## Usar Credenciais de Serviço
 
@@ -100,7 +102,7 @@ As Credenciais de serviço, um objeto JSON totalmente formado, não são as mesm
 ![Credenciais de Serviço - Aplicativo Externo](assets/service-credentials/service-credentials-external-application.png)
 
 1. Baixe as credenciais de serviço AEM Console do desenvolvedor para um local seguro
-1. Um aplicativo externo precisa interagir programaticamente com AEM ambiente as a Cloud Service
+1. O aplicativo externo precisa interagir programaticamente com AEM ambiente as a Cloud Service
 1. O Aplicativo Externo lê nas Credenciais de Serviço a partir de um local seguro
 1. O Aplicativo Externo usa informações das Credenciais de Serviço para construir um Token JWT
 1. O token JWT é enviado ao Adobe IMS para troca por um token de acesso
@@ -111,22 +113,22 @@ As Credenciais de serviço, um objeto JSON totalmente formado, não são as mesm
 
 ### Atualizações para o aplicativo externo
 
-Para acessar AEM as a Cloud Service usando as credenciais de serviço, o aplicativo externo deve ser atualizado de três maneiras:
+Para acessar AEM as a Cloud Service usando as Credenciais de Serviço, o aplicativo externo deve ser atualizado de três maneiras:
 
 1. Lido nas Credenciais de Serviço
 
-+ Para simplificar, nós os lemos a partir do arquivo JSON baixado. No entanto, em cenários de uso real, as Credenciais de serviço devem ser armazenadas com segurança de acordo com as diretrizes de segurança de sua organização
++ Para simplificar, as Credenciais de Serviço são lidas a partir do arquivo JSON baixado. No entanto, em cenários de uso real, as Credenciais de Serviço devem ser armazenadas com segurança de acordo com as diretrizes de segurança de sua organização
 
 1. Gerar um JWT a partir das credenciais de serviço
 1. Troque o JWT por um token de acesso
 
-+ Quando as Credenciais de Serviço estão presentes, nosso aplicativo externo usa esse token de acesso em vez do Token de Acesso de Desenvolvimento Local, ao acessar AEM as a Cloud Service
++ Quando as Credenciais de Serviço estão presentes, o aplicativo externo usa esse token de acesso em vez do Token de Acesso de Desenvolvimento Local, ao acessar AEM as a Cloud Service
 
 Neste tutorial, Adobe `@adobe/jwt-auth` o módulo npm é usado para ambos, (1) gerar o JWT a partir das Credenciais de Serviço e (2) trocá-lo por um token de acesso, em uma única chamada de função. Se o aplicativo não for baseado em JavaScript, revise a [código de amostra em outros idiomas](https://developer.adobe.com/developer-console/docs/guides/) para criar um JWT a partir das credenciais de serviço e trocá-lo por um token de acesso com o Adobe IMS.
 
 ## Leia as credenciais de serviço
 
-Revise o `getCommandLineParams()` e veja que podemos ler nos arquivos JSON de Credenciais de Serviço usando o mesmo código usado para ler no JSON do Token de Acesso de Desenvolvimento Local.
+Revise o `getCommandLineParams()` veja como o arquivo JSON de credenciais de serviço é lido usando o mesmo código usado para ler no JSON do token de acesso de desenvolvimento local.
 
 ```javascript
 function getCommandLineParams() {
@@ -151,7 +153,7 @@ Este aplicativo de exemplo é baseado em Node.js, portanto, é melhor usar [@ado
 
 1. Atualize o `getAccessToken(..)` para inspecionar o conteúdo do arquivo JSON e determinar se ele representa um token de acesso de desenvolvimento local ou credenciais de serviço. Isso pode ser facilmente feito verificando a existência da variável `.accessToken` , que só existe para o Token de Acesso ao Desenvolvimento Local JSON.
 
-   Se as Credenciais de Serviço forem fornecidas, o aplicativo gerará um JWT e o intercambiará com o Adobe IMS para um token de acesso. Usamos o [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)&#39;s `auth(...)` que gera um JWT e o troca por um token de acesso em uma única chamada de função. Os parâmetros para `auth(..)` são um método [Objeto JSON composto de informações específicas](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponível no JSON de credenciais de serviço, conforme descrito abaixo no código.
+   Se as Credenciais de Serviço forem fornecidas, o aplicativo gerará um JWT e o intercambiará com o Adobe IMS para um token de acesso. Use o [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)&#39;s `auth(...)` que gera um JWT e o troca por um token de acesso em uma única chamada de função. Os parâmetros para `auth(..)` são um método [Objeto JSON composto de informações específicas](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponível no JSON de credenciais de serviço, conforme descrito abaixo no código.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
@@ -211,7 +213,7 @@ Este aplicativo de exemplo é baseado em Node.js, portanto, é melhor usar [@ado
 
 ## Configurar o acesso no AEM
 
-O token de acesso derivado das Credenciais de Serviço usa uma conta técnica AEM Usuário que tem associação no Grupo de usuários Contribuidores AEM .
+O token de acesso derivado das Credenciais de Serviço usa uma conta técnica AEM Usuário que tem associação no __Contribuidores__ AEM grupo de usuários.
 
 ![Credenciais de Serviço - Conta Técnica AEM Usuário](./assets/service-credentials/technical-account-user.png)
 
