@@ -1,22 +1,22 @@
 ---
-title: Explore a API GraphQL AEM - Conceitos avançados de AEM sem interface - GraphQL
-description: Envie consultas GraphQL usando o GraphiQL IDE. Saiba mais sobre consultas avançadas usando filtros, variáveis e diretivas. Consulte referências de fragmento e conteúdo, incluindo referências de campos de texto de várias linhas.
+title: Explore a AEM API do GraphQL - Conceitos avançados de AEM headless - GraphQL
+description: Envie consultas da GraphQL usando o GraphiQL IDE. Saiba mais sobre consultas avançadas usando filtros, variáveis e diretivas. Consulte referências de fragmento e conteúdo, incluindo referências de campos de texto de várias linhas.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 0%
 
 ---
 
-# Explore a API GraphQL da AEM
+# Explore a API do GraphQL AEM
 
-A API GraphQL no AEM permite expor os dados do Fragmento de conteúdo aos aplicativos de downstream. No tutorial básico [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você usou o GraphiQL Explorer para testar e refinar as consultas GraphQL.
+A API do GraphQL no AEM permite expor os dados do fragmento de conteúdo a aplicativos de downstream. No tutorial básico [tutorial em várias etapas do GraphQL](../multi-step/explore-graphql-api.md), você usou o GraphiQL Explorer para testar e refinar as consultas do GraphQL.
 
 Neste capítulo, você usa o explorador GraphiQL para definir consultas mais avançadas para coletar dados dos Fragmentos de conteúdo criados no [capítulo anterior](../advanced-graphql/author-content-fragments.md).
 
@@ -39,7 +39,7 @@ Neste capítulo, você aprenderá a:
 
 O [Explorador GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) A ferramenta permite que os desenvolvedores criem e testem consultas contra conteúdo no ambiente de AEM atual. A ferramenta GraphiQL também permite que os usuários **persistir ou salvar** consultas a serem usadas pelos aplicativos clientes em uma configuração de produção.
 
-Em seguida, explore o potencial da API GraphQL AEM usando o explorador GraphiQL integrado.
+Em seguida, explore o potencial AEM API do GraphQL usando o explorador GraphiQL integrado.
 
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Editor de consultas GraphQL**.
 
@@ -47,20 +47,20 @@ Em seguida, explore o potencial da API GraphQL AEM usando o explorador GraphiQL 
 
 >[!IMPORTANT]
 >
->No, algumas versões do AEM (6.X.X) a ferramenta GraphiQL Explorer (também conhecida como GraphiQL IDE) precisam ser instaladas manualmente, siga [instruções daqui](../multi-step/explore-graphql-api.md#install-the-graphiql-tool-optional).
+>No, algumas versões do AEM (6.X.X) a ferramenta GraphiQL Explorer (também conhecida como GraphiQL IDE) precisam ser instaladas manualmente, siga [instruções daqui](../how-to/install-graphiql-aem-6-5.md).
 
 1. No canto superior direito, verifique se Endpoint está definido como **Ponto de Extremidade Compartilhado WKND**. Alteração do _Endpoint_ o valor suspenso aqui exibe a variável existente _Consultas Persistentes_ no canto superior esquerdo.
 
-   ![Definir ponto de extremidade GraphQL](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+   ![Definir Endpoint GraphQL](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
 Isso abrangerá todas as consultas a modelos criados no **WKND Compartilhado** projeto.
 
 
 ## Filtrar uma lista de Fragmentos de conteúdo usando variáveis de consulta
 
-No anterior [tutorial GraphQL de várias etapas](../multi-step/explore-graphql-api.md), você definiu e usou consultas básicas persistentes para obter dados dos Fragmentos de conteúdo. Aqui, você amplia esse conhecimento e filtra os dados dos Fragmentos de conteúdo ao passar variáveis para as consultas persistentes.
+No anterior [tutorial em várias etapas do GraphQL](../multi-step/explore-graphql-api.md), você definiu e usou consultas básicas persistentes para obter dados dos Fragmentos de conteúdo. Aqui, você amplia esse conhecimento e filtra os dados dos Fragmentos de conteúdo ao passar variáveis para as consultas persistentes.
 
-Ao desenvolver aplicativos clientes, geralmente é necessário filtrar Fragmentos de conteúdo com base em argumentos dinâmicos. A API GraphQL da AEM permite que você passe esses argumentos como variáveis em uma query para evitar a construção de sequência de caracteres no lado do cliente no tempo de execução. Para obter mais informações sobre variáveis GraphQL, consulte o [Documentação GraphQL](https://graphql.org/learn/queries/#variables).
+Ao desenvolver aplicativos clientes, geralmente é necessário filtrar Fragmentos de conteúdo com base em argumentos dinâmicos. A API AEM GraphQL permite que você passe esses argumentos como variáveis em uma query para evitar a construção de string no lado do cliente no tempo de execução. Para obter mais informações sobre variáveis do GraphQL, consulte a [Documentação do GraphQL](https://graphql.org/learn/queries/#variables).
 
 Para este exemplo, consulte todos os Instrutores que têm uma habilidade específica.
 
@@ -150,7 +150,7 @@ Pressione a tecla **Reproduzir** no menu superior para executar a query. Você d
 
 ## Filtrar conteúdo dentro de uma referência de fragmento
 
-A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capítulo anterior, você adicionou três novas referências de fragmento a um Fragmento de conteúdo de empreendimento: `location`, `instructorTeam`e `administrator`. Agora, vamos filtrar todas as Aventuras de qualquer Administrador que tenha um nome específico.
+A API AEM GraphQL permite consultar Fragmentos de conteúdo aninhados. No capítulo anterior, você adicionou três novas referências de fragmento a um Fragmento de conteúdo de empreendimento: `location`, `instructorTeam`e `administrator`. Agora, vamos filtrar todas as Aventuras de qualquer Administrador que tenha um nome específico.
 
 >[!CAUTION]
 >
@@ -229,7 +229,7 @@ A API GraphQL AEM permite consultar Fragmentos de conteúdo aninhados. No capít
 
 ## Consulta de referências em linha de um campo de texto de várias linhas {#query-rte-reference}
 
-A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em campos de texto de várias linhas. No capítulo anterior, você adicionou ambos os tipos de referência ao **Descrição** do Fragmento de conteúdo da equipe do Yosemite. Agora, vamos recuperar essas referências.
+A API do GraphQL AEM permite consultar referências de conteúdo e fragmento em campos de texto de várias linhas. No capítulo anterior, você adicionou ambos os tipos de referência ao **Descrição** do Fragmento de conteúdo da equipe do Yosemite. Agora, vamos recuperar essas referências.
 
 1. No GraphiQL IDE, cole a seguinte consulta no painel esquerdo:
 
@@ -348,7 +348,7 @@ A API GraphQL da AEM permite consultar referências de conteúdo e fragmento em 
 
 ## Consulta usando diretivas
 
-Às vezes, ao desenvolver aplicativos cliente, você precisa alterar condicionalmente a estrutura de suas consultas. Nesse caso, a API GraphQL da AEM permite usar as diretivas GraphQL para alterar o comportamento das consultas com base nos critérios fornecidos. Para obter mais informações sobre diretivas GraphQL, consulte o [Documentação GraphQL](https://graphql.org/learn/queries/#directives).
+Às vezes, ao desenvolver aplicativos cliente, você precisa alterar condicionalmente a estrutura de suas consultas. Nesse caso, a API AEM GraphQL permite usar diretivas GraphQL para alterar o comportamento das consultas com base nos critérios fornecidos. Para obter mais informações sobre diretivas GraphQL, consulte o [Documentação do GraphQL](https://graphql.org/learn/queries/#directives).
 
 No [seção anterior](#query-rte-reference), você aprendeu a consultar referências em linha em campos de texto de várias linhas. O conteúdo foi recuperado do `description` no `plaintext` formato. Em seguida, vamos expandir essa consulta e usar uma diretiva para recuperar condicionalmente `description` no `json` também.
 
@@ -602,7 +602,7 @@ Lembre-se de que, no capítulo anterior sobre a criação de Fragmentos de conte
 
 ## Consultar todo o conteúdo de uma só vez
 
-Até o momento, várias consultas foram executadas para ilustrar os recursos da API GraphQL AEM.
+Até o momento, várias consultas foram executadas para ilustrar os recursos da API do GraphQL AEM.
 
 Os mesmos dados podem ser recuperados com apenas um único query e esse query é posteriormente usado no aplicativo cliente para recuperar informações adicionais, como local, nome da equipe, membros da equipe de uma aventura:
 
@@ -719,10 +719,10 @@ query getAdventureDetailsBySlug($slug: String!) {
 }
 ```
 
-## Parabéns. 
+## Parabéns!
 
-Parabéns. Agora você testou consultas avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
+Parabéns! Agora você testou consultas avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
 
 ## Próximas etapas
 
-No [próximo capítulo](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), você aprenderá a persistir as consultas GraphQL e por que é uma prática recomendada usar as consultas persistentes em seus aplicativos.
+No [próximo capítulo](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), você aprenderá a persistir nas consultas da GraphQL e por que é uma prática recomendada usar consultas persistentes em seus aplicativos.

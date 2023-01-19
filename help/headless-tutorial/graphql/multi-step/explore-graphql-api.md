@@ -1,6 +1,6 @@
 ---
-title: Explore APIs GraphQL - Introdução ao AEM Headless - GraphQL
-description: Introdução à Adobe Experience Manager (AEM) e GraphQL. Explore AEM APIs GraphQL usando o GrapiQL IDE integrado. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo. Experimente construir consultas básicas usando a sintaxe GraphQL.
+title: Explore as APIs do GraphQL - Introdução ao AEM Headless - GraphQL
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Explore AEM APIs do GraphQL usando o GrapiQL IDE integrado. Saiba como o AEM gera automaticamente um esquema GraphQL com base em um modelo de Fragmento de conteúdo . Experimente construir consultas básicas usando a sintaxe do GraphQL.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
@@ -10,18 +10,18 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1454'
+ht-degree: 1%
 
 ---
 
-# Explorar APIs GraphQL {#explore-graphql-apis}
+# Explorar as APIs do GraphQL {#explore-graphql-apis}
 
-A API GraphQL de AEM fornece uma linguagem de consulta avançada para expor os dados dos Fragmentos de conteúdo aos aplicativos de downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o esquema é traduzido e adicionado ao &quot;gráfico&quot; que compõe a API GraphQL.
+A API do GraphQL de AEM fornece uma linguagem de consulta avançada para expor os dados dos Fragmentos de conteúdo aos aplicativos de downstream. Os modelos de Fragmento de conteúdo definem o schema de dados usado pelos Fragmentos de conteúdo. Sempre que um Modelo de fragmento de conteúdo é criado ou atualizado, o esquema é traduzido e adicionado ao &quot;gráfico&quot; que compõe a API do GraphQL.
 
-Neste capítulo, exploramos algumas consultas GraphQL comuns para coletar conteúdo usando um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente as consultas e os dados retornados. Ele também fornece acesso fácil à documentação, facilitando o aprendizado e o entendimento de quais métodos estão disponíveis.
+Neste capítulo, vamos explorar algumas consultas comuns do GraphQL para coletar conteúdo usando um IDE chamado [GraphiQL](https://github.com/graphql/graphiql). O GraphiQL IDE permite testar e refinar rapidamente as consultas e os dados retornados. Ele também fornece acesso fácil à documentação, facilitando o aprendizado e o entendimento de quais métodos estão disponíveis.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -29,7 +29,7 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas na se
 
 ## Objetivos {#objectives}
 
-* Saiba como usar a ferramenta GraphiQL para criar uma consulta usando a sintaxe GraphQL.
+* Saiba como usar a ferramenta GraphiQL para criar uma consulta usando a sintaxe do GraphQL.
 * Saiba como consultar uma lista de Fragmentos de conteúdo e um único Fragmento de conteúdo.
 * Saiba como filtrar e solicitar atributos de dados específicos.
 * Saiba como associar-se a uma consulta de vários modelos de Fragmento de conteúdo
@@ -37,28 +37,28 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas na se
 
 ## Habilitar endpoint GraphQL {#enable-graphql-endpoint}
 
-Um endpoint GraphQL deve ser configurado para ativar consultas de API GraphQL para Fragmentos de conteúdo.
+Um endpoint do GraphQL deve ser configurado para ativar consultas da API do GraphQL para Fragmentos de conteúdo.
 
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **GraphQL**.
 
-   ![Navegue até o ponto de extremidade GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![Navegue até o terminal GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
 1. Toque **Criar** no canto superior direito, na caixa de diálogo resultante, digite os seguintes valores:
 
    * Nome*: **Ponto de Extremidade do Meu Projeto**.
-   * Use o esquema GraphQL fornecido por ... *: **Meu projeto**
+   * Use o schema GraphQL fornecido por ... *: **Meu projeto**
 
    ![Criar ponto de extremidade GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
 
    Toque **Criar** para salvar o terminal.
 
-   Os endpoints GraphQL criados com base em uma configuração de projeto permitem somente consultas em relação a modelos pertencentes a esse projeto. Nesse caso, o único query em relação à variável **Pessoa** e **Equipe** podem ser usados.
+   Os endpoints do GraphQL criados com base em uma configuração de projeto só permitem consultas em relação a modelos pertencentes a esse projeto. Nesse caso, o único query em relação à variável **Pessoa** e **Equipe** podem ser usados.
 
    >[!NOTE]
    >
    > Um endpoint Global também pode ser criado para permitir consultas contra modelos em várias configurações. Isso deve ser usado com cautela, pois pode abrir o ambiente para vulnerabilidades de segurança adicionais e aumentar a complexidade geral no gerenciamento de AEM.
 
-1. Agora, você deve ver um ponto de extremidade GraphQL habilitado no seu ambiente.
+1. Agora, você deve ver um terminal GraphQL habilitado no seu ambiente.
 
    ![Endpoints gráficos ql ativados](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -66,7 +66,7 @@ Um endpoint GraphQL deve ser configurado para ativar consultas de API GraphQL pa
 
 O [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) A ferramenta permite que os desenvolvedores criem e testem consultas contra conteúdo no ambiente de AEM atual. A ferramenta GraphiQL também permite que os usuários **persistir ou salvar** consultas a serem usadas pelos aplicativos clientes em uma configuração de produção.
 
-Em seguida, explore o potencial da API GraphQL AEM usando o GraphiQL IDE integrado.
+Em seguida, explore o poder da API do GraphQL AEM usando o GraphiQL IDE integrado.
 
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Editor de consultas GraphQL**.
 
@@ -78,7 +78,7 @@ Em seguida, explore o potencial da API GraphQL AEM usando o GraphiQL IDE integra
 
 1. No canto superior direito, verifique se Endpoint está definido como **Ponto de Extremidade do Meu Projeto**.
 
-   ![Definir ponto de extremidade GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
+   ![Definir Endpoint GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
 Isso abrangerá todas as consultas a modelos criados no **Meu projeto** projeto.
 
@@ -111,7 +111,7 @@ Um requisito comum é consultar vários Fragmentos de conteúdo.
 
    ![nome curto e resultados da descrição](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   O `shortname` é uma propriedade simples e `description` é um campo de texto de várias linhas e a API GraphQL permite escolher vários formatos para os resultados, como `html`, `markdown`, `json`ou `plaintext`.
+   O `shortname` é uma propriedade simples e `description` é um campo de texto de várias linhas e a API do GraphQL permite escolher vários formatos para os resultados, como `html`, `markdown`, `json`ou `plaintext`.
 
 ### Consulta de fragmentos aninhados
 
@@ -174,7 +174,7 @@ Em seguida, experimentar com querying é recuperar fragmentos aninhados, lembrar
    }
    ```
 
-   A capacidade de consultar fragmentos aninhados é um recurso poderoso da API GraphQL AEM. Neste exemplo simples, o aninhamento tem apenas dois níveis de profundidade. No entanto, é possível aninhar fragmentos ainda mais. Por exemplo, se houver um **Endereço** modelo associado a **Pessoa** seria possível retornar dados de todos os três modelos em uma única query.
+   A capacidade de consultar fragmentos aninhados é um recurso poderoso da API do GraphQL AEM. Neste exemplo simples, o aninhamento tem apenas dois níveis de profundidade. No entanto, é possível aninhar fragmentos ainda mais. Por exemplo, se houver um **Endereço** modelo associado a **Pessoa** seria possível retornar dados de todos os três modelos em uma única query.
 
 ### Filtrar uma lista de fragmentos de conteúdo {#filter-list-cf}
 
@@ -215,7 +215,7 @@ Em seguida, vamos examinar como é possível filtrar os resultados para um subco
 
    ![Usar variáveis de consulta para filtrar](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Há muitas outras opções para filtrar e criar consultas complexas. consulte [Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Há muitas outras opções para filtrar e criar consultas complexas. consulte [Saiba como usar o GraphQL com AEM - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Aprimorar a consulta acima para obter a imagem do perfil
 
@@ -279,7 +279,7 @@ Também é possível consultar diretamente um único Fragmento de conteúdo. O c
 
 ## Consultas Persistentes {#persist-queries}
 
-Quando um desenvolvedor estiver satisfeito com os dados de consulta e resultado retornados do query, a próxima etapa será armazenar ou manter a consulta em AEM. O [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) são o mecanismo preferido para expor a API GraphQL aos aplicativos clientes. Depois que um query é persistente, ele pode ser solicitado usando uma solicitação GET e armazenado em cache nas camadas do Dispatcher e CDN. O desempenho das consultas persistentes é muito melhor. Além dos benefícios de desempenho, as consultas persistentes garantem que dados extras não sejam expostos acidentalmente aos aplicativos clientes. Mais detalhes sobre [Consultas persistentes podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Quando um desenvolvedor estiver satisfeito com os dados de consulta e resultado retornados do query, a próxima etapa será armazenar ou manter a consulta em AEM. O [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) são o mecanismo preferido para expor a API do GraphQL a aplicativos clientes. Depois que um query é persistente, ele pode ser solicitado usando uma solicitação GET e armazenado em cache nas camadas do Dispatcher e CDN. O desempenho das consultas persistentes é muito melhor. Além dos benefícios de desempenho, as consultas persistentes garantem que dados extras não sejam expostos acidentalmente aos aplicativos clientes. Mais detalhes sobre [Consultas persistentes podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
 Em seguida, persiste dois queries simples, eles são usados no próximo capítulo.
 
@@ -371,7 +371,7 @@ Em seguida, persiste dois queries simples, eles são usados no próximo capítul
    ![Consultas finais persistentes](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## Publicar ponto de extremidade GraphQL e consultas persistentes
+## Publicar Endpoint GraphQL e consultas persistentes
 
 Após análise e verificação, publique o `GraphQL Endpoint` &amp; `Persisted Queries`
 
@@ -379,7 +379,7 @@ Após análise e verificação, publique o `GraphQL Endpoint` &amp; `Persisted Q
 
 1. Toque na caixa de seleção ao lado de **Ponto de Extremidade do Meu Projeto** e tocar **Publicar**
 
-   ![Ponto de extremidade GraphQL da publicação](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![Publicar ponto de extremidade do GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
 1. Na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
 
@@ -395,29 +395,17 @@ Baixe o conteúdo, os modelos e as consultas persistentes criadas nos últimos t
 
 ## Recursos adicionais
 
-Saiba mais sobre as consultas GraphQL em [Saiba como usar GraphQL com AEM - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Saiba mais sobre as consultas do GraphQL em [Saiba como usar o GraphQL com AEM - Conteúdo de amostra e consultas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
-Parabéns, você criou e executou várias consultas GraphQL!
+Parabéns, você criou e executou várias consultas do GraphQL!
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Criar aplicativo React](./graphql-and-react-app.md), você explora como um aplicativo externo pode consultar AEM pontos de extremidade GraphQL e usar essas duas consultas persistentes. Você também é apresentado a algum tratamento básico de erros durante a execução da consulta GraphQL.
+No próximo capítulo, [Criar aplicativo React](./graphql-and-react-app.md), você explora como um aplicativo externo pode consultar AEM pontos de extremidade da GraphQL e usar essas duas consultas persistentes. Você também é apresentado a algum tratamento básico de erros durante a execução da consulta do GraphQL.
 
 ## Instalação da ferramenta GraphiQL (opcional) {#install-graphiql}
 
-Em algumas versões do AEM (6.X.X), a ferramenta GraphiQL IDE precisa ser instalada manualmente, use as seguintes instruções:
+No, algumas versões do AEM (6.X.X), a ferramenta GraphiQL IDE precisa ser instalada manualmente, use o [instruções daqui](../how-to/install-graphiql-aem-6-5.md).
 
-1. Navegue até o **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Pesquise por &quot;GraphiQL&quot; (não deixe de incluir o **i** em **GraphiQL**.
-1. Baixe a versão mais recente do **pacote de conteúdo GraphiQL v.x.x.x**
-
-   ![Download do pacote GraphiQL](assets/explore-graphql-api/software-distribution.png)
-
-   O arquivo zip é um pacote AEM que pode ser instalado diretamente.
-
-1. No menu Iniciar do AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes**.
-1. Clique em **Fazer upload do pacote** e escolha o pacote baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
-
-   ![Instalar o pacote GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
