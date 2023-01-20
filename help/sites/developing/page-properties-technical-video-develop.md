@@ -8,10 +8,10 @@ version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 94a29a78edff17ec8089f7056dc118fd335ae484
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 0%
+source-wordcount: '250'
+ht-degree: 1%
 
 ---
 
@@ -22,3 +22,11 @@ Personalizar os campos de metadados para as Propriedades da página é um requis
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
 
 O vídeo acima mostra como personalizar as propriedades da página para o [Site de referência WKND](https://github.com/adobe/aem-guides-wknd).
+
+## Exemplo de pacote de propriedades da página WKND
+
+Você pode usar o [exemplo de pacote de propriedades da página WKND](./assets/WKND-PageProperties-Example-Dialog-1.0.zip) contendo **WKND** e **Básico** personalizações de guias mostradas no vídeo acima. O **SocialMedia** a personalização da guia não é fornecida como [Componente de página WKND](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5) agora usa a versão V3 dos Componentes principais do WCM e, na versão V3, a variável [o compartilhamento em redes sociais está obsoleto](https://github.com/adobe/aem-core-wcm-components/pull/1930).
+
+No entanto, para fins de aprendizado, você pode apontar o componente Página WKND para a versão V2 dos Componentes principais do WCM usando o `sling:resourceSuperType` e sobreponha o [Redes sociais](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) guia . Para obter mais informações, consulte [Configurar as propriedades da página](https://experienceleague.adobe.com/docs/experience-manager-64/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
+
+Este pacote de amostra deve ser instalado no SDK de AEM local ou AEM instância 6.X.X para fins de aprendizado.
