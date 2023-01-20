@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 7c2115945e2d62f52c777bba4d736ecd3262eecc
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -89,38 +89,84 @@ Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também 
 
 O Site 1 é um cenário básico, acessível anonimamente, somente leitura em que o conteúdo é consumido por meio de [!DNL GET] solicitações:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site1.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site1/.*]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers]"
-    supportedmethods="[GET]"
-    supportscredentials="{Boolean}false"
-/>
+```json
+{
+  "supportscredentials":false,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "OPTIONS"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site1.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site1\.com"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/site1/endpoint.json",
+    "/graphql/execute.json.*",
+    "/content/site1/.*"
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+  ]
+}
 ```
 
-O Site 2 é mais complexo e requer solicitações autorizadas e não seguras:
+O Site 2 é mais complexo e requer solicitações autorizadas e mutantes (POST, PUT, DELETE):
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site2.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site2/.*,/libs/granite/csrf/token.json]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,CSRF-Token]"
-    supportedmethods="[GET,HEAD,POST,DELETE,OPTIONS,PUT]"
-    supportscredentials="{Boolean}true"
-/>
+```json
+{
+  "supportscredentials":true,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD"
+    "POST",
+    "DELETE",
+    "OPTIONS",
+    "PUT"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site2.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site2\.com"
+  ],
+  "allowedpaths":[
+    "/content/site2/.*",
+    "/libs/granite/csrf/token.json",
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+    "Authorization",
+    "CSRF-Token"
+  ]
+}
 ```
 
 ## Problemas e configuração de armazenamento em cache do Dispatcher {#dispatcher-caching-concerns-and-configuration}
@@ -132,8 +178,8 @@ Geralmente, as mesmas considerações para o armazenamento em cache de conteúdo
 | Acessível | Ambiente | Status de autenticação | Explicação |
 |-----------|-------------|-----------------------|-------------|
 | Não | AEM Publish | Autenticado | O armazenamento em cache do Dispatcher no AEM Author é limitado a ativos estáticos não criados. Isso torna difícil e impraticável armazenar em cache a maioria dos recursos no AEM Author, incluindo cabeçalhos de resposta HTTP. |
-| Não | Publicação do AEM | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar em cache solicitações autenticadas, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso fornecido. |
-| Sim | Publicação do AEM | Anônimo | As solicitações anônimas capazes de armazenar em cache no dispatcher também podem ter seus cabeçalhos de resposta em cache, garantindo que futuras solicitações do CORS possam acessar o conteúdo em cache. Qualquer alteração na configuração do CORS na publicação do AEM **must** ser seguida por uma invalidação dos recursos em cache afetados. As práticas recomendadas ditam as implantações de código ou configuração em que o cache do dispatcher é limpo, pois é difícil determinar qual conteúdo em cache pode ser afetado. |
+| Não | AEM Publish | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar em cache solicitações autenticadas, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso fornecido. |
+| Sim | AEM Publish | Anônimo | As solicitações anônimas capazes de armazenar em cache no dispatcher também podem ter seus cabeçalhos de resposta em cache, garantindo que futuras solicitações do CORS possam acessar o conteúdo em cache. Qualquer alteração na configuração do CORS na publicação do AEM **must** ser seguida por uma invalidação dos recursos em cache afetados. As práticas recomendadas ditam as implantações de código ou configuração em que o cache do dispatcher é limpo, pois é difícil determinar qual conteúdo em cache pode ser afetado. |
 
 Para permitir o armazenamento em cache de cabeçalhos CORS, adicione a seguinte configuração a todos os arquivos AEM Publish dispatcher.any de suporte.
 
