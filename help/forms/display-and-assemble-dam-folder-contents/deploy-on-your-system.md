@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 2%
 
 Siga as etapas listadas abaixo para que esse caso de uso funcione na instância de AEM local.
 
-* [Configure para usar o usuário do fd-service seguindo as etapas mencionadas neste artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en). Certifique-se de ter implantado o pacote DevelopingWithServiceUser.
+* [Implante o pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contido no arquivo zip.
+
+* Adicione a seguinte entrada no serviço Mapeador de Usuário do Apache Sling Service **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** usando o [configMgr](http://localhost:4502/system/console/configMgr).
 
 * [Implantar o pacote de informativos](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Este pacote contém o código para listar o conteúdo da pasta e reunir os informativos selecionados.
 
