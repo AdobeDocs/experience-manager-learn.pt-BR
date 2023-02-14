@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
+source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,9 @@ Usando [AEM Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-
 >[!VIDEO](https://video.tv.adobe.com/v/3415491/?quality=12&learn=on)
 
 ## Recursos adicionais
+
+
+[Documentação de comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
 
 [Plug-in Adobe I/O Runtime CLI para interações com AEM ambientes de desenvolvimento rápido](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 

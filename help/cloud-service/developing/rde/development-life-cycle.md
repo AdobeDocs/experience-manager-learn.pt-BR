@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
+source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 7%
+source-wordcount: '136'
+ht-degree: 6%
 
 ---
 
@@ -40,6 +40,9 @@ Os principais benefícios do RDE para manter o dinamismo do desenvolvimento.
 
 
 ## Recursos adicionais
+
+
+[Cenário de colaboração de vários desenvolvedores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 
 [Configuração do Ambiente de Desenvolvimento Local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
 
