@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 2%
@@ -31,6 +31,11 @@ Usando [AEM Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491/?quality=12&learn=on)
 
+## Próxima etapa
+
+Saiba mais sobre o [ciclo de vida de desenvolvimento/implantação usando RDE](./development-life-cycle.md) para fornecer recursos com velocidade.
+
+
 ## Recursos adicionais
 
 [Documentação de comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
@@ -38,7 +43,3 @@ Usando [AEM Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-
 [Plug-in Adobe I/O Runtime CLI para interações com AEM ambientes de desenvolvimento rápido](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Configuração do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
-
-## Próxima etapa
-
-Saiba mais sobre o [ciclo de vida de desenvolvimento/implantação usando RDE](./development-life-cycle.md) para fornecer recursos com velocidade.
