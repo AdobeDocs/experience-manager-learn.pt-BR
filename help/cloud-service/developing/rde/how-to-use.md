@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -35,16 +35,16 @@ Usando [AEM Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-
 
 Clonar o [Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) e abra-o no IDE favorito para implantar os artefatos de AEM no RDE.
 
-    &quot;shell
-    $ clone git git@github.com:adobe/aem-guides-wknd.git
-    &quot;
+```shell
+$ git clone git@github.com:adobe/aem-guides-wknd.git
+```
 
 Em seguida, crie e implante-o no AEM-SDK local executando o seguinte comando maven.
 
-    &quot;
-    $ cd aem-guides-wknd/
-    $ mvn clean install -PautoInstallSinglePackage
-    &quot;
+```
+$ cd aem-guides-wknd/
+$ mvn clean install -PautoInstallSinglePackage
+```
 
 ## Implantar artefatos AEM usando o plug-in AEM-RDE
 
@@ -54,13 +54,13 @@ Usar o `aem:rde:install` , vamos implantar vários artefatos AEM.
 
 Um ponto de partida comum é implantar primeiro a variável `all` e `dispatcher` pacotes executando os seguintes comandos.
 
-    &quot;shell
-    # Instale o pacote &#39;all&#39;
-    $ aio aem:rde:instalar all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
-    
-    # Instalar o zip &#39;dispatcher&#39;
-    $ aio aem:rde:instale o dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Install the 'all' package
+$ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
+
+# Install the 'dispatcher' zip
+$ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
+```
 
 Após implantações bem-sucedidas, verifique o site WKND nos serviços de autor e publicação. Você deve ser capaz de adicionar e editar o conteúdo nas páginas do site da WKND e publicá-lo.
 
@@ -118,9 +118,9 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
 
 No exemplo de comando de implantação de arquivo individual acima, a variável `-t` e `-p` os sinalizadores são usados para indicar o tipo e o destino do caminho JCR, respectivamente. Vamos revisar a `install` executando o seguinte comando.
 
-    &quot;shell
-    $ aio aem:rde:instalar —help
-    &quot;
+```shell
+$ aio aem:rde:install --help
+```
 
 As bandeiras são autoexplicativas, as `-s` O sinalizador é útil para direcionar a implantação apenas para os serviços de criação ou publicação. Use o `-t` sinalizador ao implantar o **content-file ou content-xml** arquivos junto com a `-p` sinalizador para especificar o caminho JCR de destino no ambiente RDE AEM.
 
@@ -155,15 +155,15 @@ Para saber como implantar o pacote OSGi, vamos aprimorar o `HelloWorldModel` Cla
 
 Você pode implantar os arquivos de configuração individuais ou concluir o pacote de configuração, por exemplo:
 
-    &quot;shell
-    # Implantar arquivo de configuração individual
-    $ aio aem:rde:instalar ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.fatory.config~wknd.cfg.json
-    
-    # Ou implante o pacote de configuração completo
-    $ cd ui.config
-    $ mvn clean package
-    $ aio aem:rde:instale o target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
-    &quot;
+```shell
+# Deploy individual config file
+$ aio aem:rde:install ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config/org.apache.sling.commons.log.LogManager.factory.config~wknd.cfg.json
+
+# Or deploy the complete config package
+$ cd ui.config
+$ mvn clean package
+$ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
+```
 
 >[!TIP]
 >
@@ -202,21 +202,21 @@ Os arquivos de configuração do Apache ou Dispatcher **não pode ser implantado
 
 Vamos analisar os comandos adicionais do plug-in AEM RDE para gerenciar e interagir com o RDE do computador local.
 
-    &quot;shell
-    $ aio aem:rde —help
-    Interaja com ambientes de desenvolvimento Rapid.
-    
-    USO
-    $ aio aem rde COMMAND
-    
-    COMANDOS
-    aem rde delete Excluir pacotes e configurações do código atual.
-    histórico do aem rde Obtenha uma lista das atualizações feitas no rde atual.
-    pacotes de instalação/atualização do aem rde, configurações e pacotes de conteúdo.
-    aem rde redefinir Redefinir o RDE
-    reinicialização do aem rde Reinicie o autor e publique um RDE
-    status do aem rde Obtenha uma lista dos pacotes e configurações implantados no rde atual.
-    &quot;
+```shell
+$ aio aem:rde --help
+Interact with RapidDev Environments.
+
+USAGE
+$ aio aem rde COMMAND
+
+COMMANDS
+aem rde delete   Delete bundles and configs from the current rde.
+aem rde history  Get a list of the updates done to the current rde.
+aem rde install  Install/update bundles, configs, and content-packages.
+aem rde reset    Reset the RDE
+aem rde restart  Restart the author and publish of an RDE
+aem rde status   Get a list of the bundles and configs deployed to the current rde.
+```
 
 Usando os comandos acima, seu RDE pode ser gerenciado no IDE favorito para um ciclo de vida de desenvolvimento/implantação mais rápido.
 

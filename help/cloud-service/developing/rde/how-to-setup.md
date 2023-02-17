@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 4%
 
 ---
@@ -45,19 +45,19 @@ Para implantar o [Projeto de Sites WKND](https://github.com/adobe/aem-guides-wkn
 
 Instale a CLI extensível do Adobe I/O Runtime, também conhecida como `aio CLI` executando o seguinte comando a partir da linha de comando.
 
-    &quot;shell
-    $ npm install -g @adobe/aio-cli
-    &quot;
+```shell
+$ npm install -g @adobe/aio-cli
+```
 
 ### Plug-ins AEM
 
 Instale o Cloud Manager e AEM plug-ins RDE usando o `aio cli`&#39;s `plugins:install` comando.
 
-    &quot;shell
-    $ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-    
-    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde
-    &quot;
+```shell
+$ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+
+$ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+```
 
 O plug-in do Cloud Manager permite que os desenvolvedores interajam com o Cloud Manager a partir da linha de comando.
 
@@ -91,23 +91,23 @@ Os plug-ins AEM devem ser configurados para interagir com seu RDE. Primeiro, usa
 
 Você pode verificar os valores de configuração atuais executando o seguinte comando.
 
-    &quot;shell
-    $ aio config:list
-    &quot;
+```shell
+$ aio config:list
+```
 
 Além disso, para alternar ou saber em qual organização você está conectado no momento, use o comando abaixo.
 
-    &quot;shell
-    $ aio onde
-    &quot;
+```shell
+$ aio where
+```
 
 ## Verificar acesso ao RDE
 
 Verifique a instalação e a configuração AEM do plug-in RDE executando o seguinte comando.
 
-    &quot;shell
-    $ aio aem:rde:status
-    &quot;
+```shell
+$ aio aem:rde:status
+```
 
 As informações de status do RDE são exibidas como status do ambiente, a lista de _seu projeto AEM_ pacotes e configurações no serviço de criação e publicação.
 
