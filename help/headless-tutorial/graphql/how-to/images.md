@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 As imagens são um aspecto crítico do [desenvolvimento de experiências ricas e convincentes AEM sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
 
-Fragmentos de conteúdo usados AEM modelagem de conteúdo sem cabeçalho, geralmente fazem referência a ativos de imagem destinados à exibição na experiência sem cabeçalho. AEM consultas GraphQL podem ser gravadas para fornecer URLs para imagens com base no local de onde a imagem é referenciada.
+Fragmentos de conteúdo usados AEM modelagem de conteúdo sem cabeçalho, geralmente fazem referência a ativos de imagem destinados à exibição na experiência sem cabeçalho. AEM consultas do GraphQL podem ser escritas para fornecer URLs para imagens com base em onde a imagem é referenciada.
 
 O `ImageRef` tem três opções de URL para referências de conteúdo:
 
@@ -38,7 +38,7 @@ Os campos são melhor usados com base nos seguintes critérios:
 | `_authorUrl` | ✘ | ✔ | ✘ |
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
-Utilização de `_authorUrl` e `_publishUrl` deve estar alinhado com o ponto de extremidade GraphQL da AEM que está sendo usado para gerar a resposta GraphQL.
+Utilização de `_authorUrl` e `_publishUrl` O deve estar alinhado ao ponto de extremidade AEM GraphQL que está sendo usado para gerar a resposta do GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -53,9 +53,9 @@ Os tipos de campo são revisados na seção [Modelo de fragmento de conteúdo](h
 
 ![Modelo de fragmento de conteúdo com referência de conteúdo para uma imagem](./assets/images/content-fragment-model.jpeg)
 
-## Consulta GraphQL mantida
+## Consulta persistente do GraphQL
 
-Na query GraphQL, retorne o campo como o `ImageRef` e solicitar os campos apropriados `_path`, `_authorUrl`ou `_publishUrl` exigido pelo seu aplicativo. Por exemplo, querendo uma aventura no [Projeto de demonstração de referência WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
+Na query de GraphQL, retorne o campo como o `ImageRef` e solicitar os campos apropriados `_path`, `_authorUrl`ou `_publishUrl` exigido pelo seu aplicativo. Por exemplo, querendo uma aventura no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
 ```graphql
 query ($path: String!) {
@@ -76,7 +76,7 @@ query ($path: String!) {
 
 O `$path` usada na variável `_path` o filtro requer o caminho completo para o fragmento de conteúdo (por exemplo, `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
 
-## Resposta GraphQL
+## Resposta do GraphQL
 
 A resposta JSON resultante contém os campos solicitados contendo os URLs para os ativos de imagem.
 
@@ -172,7 +172,7 @@ As representações são acessadas diretamente ao anexar a variável __nomes de 
 
 ### Consulta GraphQL{#renditions-graphl-query}
 
-AEM GraphQL não requer sintaxe extra para solicitar representações de imagem. Em vez disso [imagens são consultadas](#images-graphql-query) da maneira habitual, e a representação desejada é especificada no código. É importante [garantir que os ativos de imagem usados pelo aplicativo sem cabeçalho tenham as mesmas representações nomeadas](#reprocess-assets).
+AEM GraphQL requer sintaxe extra para solicitar representações de imagem. Em vez disso [imagens são consultadas](#images-graphql-query) da maneira habitual, e a representação desejada é especificada no código. É importante [garantir que os ativos de imagem usados pelo aplicativo sem cabeçalho tenham as mesmas representações nomeadas](#reprocess-assets).
 
 ### Exemplo de reação
 
@@ -184,7 +184,7 @@ Vamos criar um aplicativo React simples que exibe três representações, web-ot
 
 Crie um componente React que renderize as imagens. Esse componente aceita quatro propriedades:
 
-+ `assetUrl`: O URL do ativo de imagem, conforme fornecido pela resposta da consulta GraphQL.
++ `assetUrl`: O URL do ativo de imagem, conforme fornecido pela resposta do query do GraphQL.
 + `renditionName`: O nome da representação a ser carregada.
 + `renditionExtension`: A extensão da representação a ser carregada.
 + `alt`: O texto alternativo da imagem; acessibilidade é importante!

@@ -1,6 +1,6 @@
 ---
 title: Uso de conteúdo localizado com AEM headless
-description: Saiba como usar GraphQL para consultar AEM de conteúdo localizado.
+description: Saiba como usar o GraphQL para consultar AEM de conteúdo localizado.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless
@@ -8,10 +8,10 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -36,9 +36,9 @@ O código de local também é o valor usado para filtrar os Fragmentos de conte�
 | en | /content/dam/../**en**/... | Conteúdo em inglês |
 | es | /content/dam/../**es**/... | Conteúdo espanhol |
 
-## Consulta GraphQL mantida
+## Consulta persistente do GraphQL
 
-AEM fornece uma `_locale` Filtro GraphQL que filtra automaticamente o conteúdo por código de localidade. Por exemplo, querendo todas as aventuras em inglês no [Projeto de demonstração de referência WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definido como:
+AEM fornece uma `_locale` Filtro GraphQL que filtra automaticamente o conteúdo por código de localidade . Por exemplo, querendo todas as aventuras em inglês no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definido como:
 
 ```graphql
 query($locale: String!) {
@@ -84,7 +84,7 @@ export default LocaleContext;
 
 Em seguida, crie um componente de Reação do alternador de localidade que defina o [LocaleContext](#locale-context) para a seleção do usuário.
 
-Esse valor de localidade é usado para direcionar consultas GraphQL, garantindo que elas retornem somente o conteúdo correspondente ao local selecionado.
+Esse valor de localidade é usado para direcionar as consultas do GraphQL, garantindo que elas retornem somente o conteúdo correspondente ao local selecionado.
 
 ```javascript
 // src/LocaleSwitcher.js
