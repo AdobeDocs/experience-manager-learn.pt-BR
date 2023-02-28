@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
+source-git-commit: 40679e80fd9270dd9fad8174a986fd1fdd5e3d29
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -99,7 +99,7 @@ JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 
 ## Mapeamento de entradas
 
-Com o valor da credencial JWT definido na variável `.env` , elas devem ser mapeadas para entradas de ação do AppBuilder para que possam ser lidas na própria ação. Para fazer isso, adicione entradas para cada variável na variável `ext.config.yaml` ação `inputs` no formato: `INPUT_NAME=$ENV_KEY`.
+Com o valor da credencial JWT definido na variável `.env` , elas devem ser mapeadas para entradas de ação do AppBuilder para que possam ser lidas na própria ação. Para fazer isso, adicione entradas para cada variável na variável `ext.config.yaml` ação `inputs` no formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 Por exemplo:
 
