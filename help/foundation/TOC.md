@@ -7,7 +7,7 @@ index: y
 source-git-commit: de9377236016066cc62819f1c307aac82331a0b6
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 14%
 + Segurança {#security}
    + [Notificação de segurança do AEM (novembro de 2018)](./security/aem-security-notification-2018-11.md)
    + [Desenvolver para o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/develop-for-cross-origin-resource-sharing.md)
-   + [Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/understand-cross-origin-resource-sharing.md)
+   + [Entender sobre o CORS (Cross-Origin Resource Sharing)](./security/understand-cross-origin-resource-sharing.md)
    + [Usar o Assistente de SSL](./security/use-the-ssl-wizard.md)
 + Fluxo de trabalho {#workflow}
    + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
