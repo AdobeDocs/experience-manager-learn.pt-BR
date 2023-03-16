@@ -1,5 +1,5 @@
 ---
-title: Configuração do acesso a AEM as a Cloud Service
+title: Configuração do acesso ao AEM as a Cloud Service
 description: AEM as a Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM e, como tal, usa o Adobe IMS (Identity Management System) para facilitar o logon de usuários, administradores e usuários comuns, no serviço de autor do AEM. Saiba como usuários, grupos de usuários e perfis de produtos do Adobe IMS são usados junto a grupos e permissões de AEM para fornecer acesso específico ao AEM Author.
 version: Cloud Service
 topic: Administration, Security
@@ -13,11 +13,11 @@ exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
-# Configuração do acesso a AEM as a Cloud Service {#configuring-access-to-aem-as-a-cloud-service}
+# Configuração do acesso ao AEM as a Cloud Service {#configuring-access-to-aem-as-a-cloud-service}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
@@ -67,6 +67,6 @@ Uma apresentação resumida configurando usuários do Adobe IMS, grupos de usuá
 
 A documentação a seguir [Adobe Admin Console](https://adminconsole.adobe.com)Detalhes e preocupações específicos que podem ajudar a entender melhor a Adobe Admin Console e usá-la para gerenciar usuários e acessar produtos de Experience Cloud.
 
-+ [Visão geral da Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Visão geral da Adobe Admin Console Identity](https://helpx.adobe.com/br/enterprise/using/identity.html)
 + [Funções administrativas do Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Funções do desenvolvedor do Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)

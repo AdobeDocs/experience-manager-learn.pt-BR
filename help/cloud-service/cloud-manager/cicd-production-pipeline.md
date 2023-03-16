@@ -15,7 +15,7 @@ exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -36,6 +36,6 @@ O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/expe
 
 ### Execução de pipeline
 
-O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) O é usado para criar e implantar código por meio do Stage para o ambiente de produção, diminuindo o tempo para valor.
+O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) O é usado para criar e implantar código por meio do Stage para o ambiente de produção, diminuindo o tempo para valor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)

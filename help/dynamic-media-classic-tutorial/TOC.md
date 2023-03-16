@@ -1,7 +1,7 @@
 ---
 user-guide-title: Introdução ao Dynamic Media Classic
 user-guide-description: Este tutorial mostra como usar o Dynamic Media Classic para criar, escrever e entregar conteúdo de mídia avançada.
-breadcrumb-title: Tutoriais do Dynamic Media Classic
+breadcrumb-title: Tutorials do Dynamic Media Classic
 sub-product: Experience Manager Assets
 version: 6.4, 6.5
 index: y

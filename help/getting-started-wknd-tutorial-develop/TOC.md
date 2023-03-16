@@ -1,7 +1,7 @@
 ---
 user-guide-title: Introdução ao AEM Sites - Tutorial do WKND
 user-guide-description: Um tutorial em várias partes para desenvolvedores novos no AEM. Implemente um site do AEM para uma marca fictícia de estilo de vida, a WKND. Habilite o pipeline de front-end para acelerar seu ciclo de desenvolvimento para implantação.
-breadcrumb-title: Tutoriais do WKND AEM Sites
+breadcrumb-title: Tutorials do WKND AEM Sites
 sub-product: Experience Manager Sites
 version: Cloud Service
 activity: develop

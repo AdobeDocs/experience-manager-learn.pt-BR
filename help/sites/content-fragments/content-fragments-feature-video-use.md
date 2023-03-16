@@ -14,7 +14,7 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
@@ -36,7 +36,7 @@ Esta série de vídeo cobre o ciclo de vida de criação dos Fragmentos de conte
 >title="Gerenciar fragmentos"
 >abstract="Saiba como os Fragmentos de conteúdo permitem projetar, criar, preparar e usar conteúdo independente da página."
 
-## Definição dos modelos de fragmento do conteúdo {#defining-content-fragment-models}
+## Definição de Modelos de fragmentos de conteúdo {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 

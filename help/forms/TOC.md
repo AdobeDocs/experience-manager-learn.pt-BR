@@ -1,9 +1,9 @@
 ---
 feature-set: Experience Manager Forms, Experience Manager
 role: Developer
-user-guide-title: Vídeos e Tutoriais do AEM Forms
+user-guide-title: Vídeos e Tutorials do AEM Forms
 user-guide-description: Coleção de recursos do AEM Forms para desenvolvedores iniciantes e experientes do AEM Forms.
-breadcrumb-title: Tutoriais do AEM Forms
+breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Vídeos e Tutoriais do AEM Forms {#forms}
+# Vídeos e Tutorials do AEM Forms {#forms}
 
 + [Visão geral](overview.md)
 + [Práticas recomendadas para seguir](adaptive-forms/best-practices-adaptive-forms.md)

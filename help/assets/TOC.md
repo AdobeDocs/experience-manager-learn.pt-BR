@@ -1,7 +1,7 @@
 ---
-user-guide-title: Vídeos e Tutoriais do AEM Assets
+user-guide-title: Vídeos e Tutorials do AEM Assets
 user-guide-description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager Assets.
-breadcrumb-title: Tutoriais do AEM Assets
+breadcrumb-title: Tutorials do AEM Assets
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
@@ -14,7 +14,7 @@ ht-degree: 26%
 ---
 
 
-# Vídeos e Tutoriais do AEM Assets {#assets}
+# Vídeos e Tutorials do AEM Assets {#assets}
 
 + [Visão geral](overview.md)
 

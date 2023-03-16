@@ -1,7 +1,7 @@
 ---
 user-guide-title: Tutoriais do Adobe Experience Manager as a Cloud Service
 user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: Tutoriais do AEM as a Cloud Service
+breadcrumb-title: Tutorials do AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
@@ -70,7 +70,7 @@ ht-degree: 21%
          + Exemplo de extensões{#example-extensions}
             + [Atualização de propriedade em massa](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
             + [AEM geração de ativos de imagem usando o OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
-   + Noções básicas de desenvolvimento{#basics}
+   + Conceitos básicos de desenvolvimento{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
