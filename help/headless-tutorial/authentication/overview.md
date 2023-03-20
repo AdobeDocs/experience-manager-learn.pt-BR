@@ -13,16 +13,16 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '641'
+ht-degree: 0%
 
 ---
 
 # Autenticação por token para AEM as a Cloud Service
 
-O AEM expõe uma variedade de pontos de extremidade HTTP que podem ter interação headless, de GraphQL AEM Content Services para API HTTP do Assets. Geralmente, esses consumidores sem interface podem precisar se autenticar para AEM a fim de acessar o conteúdo ou as ações protegidas. Para facilitar isso, o AEM oferece suporte à autenticação por token de solicitações HTTP de aplicativos, serviços ou sistemas externos.
+O AEM expõe uma variedade de pontos de extremidade HTTP que podem ser interagidos de maneira headless, da GraphQL, AEM Content Services para a API HTTP do Assets. Geralmente, esses consumidores sem interface podem precisar se autenticar para AEM a fim de acessar o conteúdo ou as ações protegidas. Para facilitar isso, o AEM oferece suporte à autenticação por token de solicitações HTTP de aplicativos, serviços ou sistemas externos.
 
 Neste tutorial, explore bem como um aplicativo externo pode autenticar e interagir programaticamente com o para AEM as a Cloud Service por HTTP usando tokens de acesso.
 
@@ -75,5 +75,5 @@ As Credenciais de Serviço são as credenciais vinculadas usadas em qualquer cen
 
 + [Baixe o aplicativo de exemplo](./assets/aem-guides_token-authentication-external-application.zip)
 + Outras amostras de código da criação e troca de JWT
-   + [Node.js, Java, Python, C#.NET e amostras de código PHP](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md)
+   + [Node.js, Java, Python, C#.NET e amostras de código PHP](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [Amostra de código baseada em JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)
