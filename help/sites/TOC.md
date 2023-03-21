@@ -5,10 +5,10 @@ breadcrumb-title: Tutorials do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 31%
+source-wordcount: '441'
+ht-degree: 28%
 
 ---
 
@@ -98,12 +98,12 @@ ht-degree: 31%
 + Integrações {#integrations}
    + Experience Platform {#experience-platform}
       + [Gerar FPIDs](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [Visão geral](integrations/experience-platform-launch/overview.md)
-      + [Criar uma propriedade do Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [Conectar AEM com o Launch usando o Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Criar um Cloud Service do Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Depuração de uma implementação do Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Tags de coleta de dados do Experience Platform (Launch) {#experience-platform-data-collection-tags}
+      + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [Conectar AEM com tags usando o Console do desenvolvedor](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Criar AEM Launch Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Depuração de uma implementação de Tags (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Camada de dados de clientes Adobe {#adobe-client-data-layer}
       + [Uso da camada de dados do cliente do Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizar a camada de dados do cliente do Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -116,7 +116,7 @@ ht-degree: 31%
       + [Adicionar extensão do Target à propriedade do Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Carregar e acionar uma chamada do Target](integrations/adobe-target/load-and-fire-target.md)
       + [Criar conta do Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exporte fragmentos de experiência do para o Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Exportar fragmentos de experiência para o Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Criar atividade do Target usando ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
       + [Personalização usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Personalização da experiência completa da página da Web](integrations/adobe-target/personalization-web-page.md)

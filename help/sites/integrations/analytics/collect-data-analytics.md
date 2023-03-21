@@ -9,10 +9,10 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Os seguintes itens são obrigatórios:
 
 >[!NOTE]
 >
-> Precisa de ajuda para integrar o Launch e seu site de AEM? [Ver esta série de vídeos](../experience-platform-launch/overview.md).
+> Precisa de ajuda para integrar o Launch e seu site de AEM? [Ver esta série de vídeos](../experience-platform/data-collection/tags/overview.md).
 
 ## Alternar ambientes do Launch para o site WKND
 
@@ -369,7 +369,7 @@ Agora que a variável **Página carregada** envia o beacon do Analytics, você d
 
 1. Navegue até uma página de artigo como [Austrália Ocidental](https://wknd.site/us/en/magazine/western-australia.html). Observe que Nome da página e Tipo de modelo são alterados.
 
-## Parabéns. 
+## Parabéns!
 
 Você acabou de usar a Adobe Client Data Layer e a Experience Platform Launch para coletar dados de página de dados de um Site de AEM e enviá-los para a Adobe Analytics.
 
