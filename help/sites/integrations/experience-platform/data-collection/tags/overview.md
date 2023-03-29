@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -31,21 +31,28 @@ Saiba como integrar o Experience Platform _Tags de coleta de dados_ (anteriormen
 
 Tags são a próxima geração da tecnologia de gerenciamento de tags da Adobe Experience Platform. As tags fornecem a maneira mais simples de implantar o Adobe Analytics, o Target, o Audience Manager e muitas outras soluções. Obtenha uma visão geral das Tags e a integração recomendada com o Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Pré-requisitos
 
-Os itens a seguir são necessários ao integrar Tags de coleta de dados do Experience Platform
+Os itens a seguir são necessários ao integrar Tags de coleta de dados do Experience Platform.
 
-+ AEM Acesso do administrador a AEM ambiente as a Cloud Service
-+ Um site de referência como [WKND](https://github.com/adobe/aem-guides-wknd) implantado em ele
++ AEM acesso do administrador a AEM ambiente as a Cloud Service
++ Um site de referência como [WKND](https://github.com/adobe/aem-guides-wknd) implantado nele.
++ Acesso à solução Adobe Experience Platform Data Collection
 + Acesso do administrador do sistema para [Console do Adobe Developer](https://developer.adobe.com/developer-console/)
 
 
+## Etapas de alto nível
+
++ Na Coleta de dados do Adobe Experience Platform, crie uma propriedade de tag e edite-a em _Adicionar regra_. Então _Adicionar biblioteca_, selecione a regra adicionada recentemente, aprove e publique-a.
++ Conecte AEM e tags usando a configuração IMS existente (ou nova)
++ Em AEM, crie uma configuração de serviços em nuvem do Launch e, em seguida, aplique-a a um site existente e, por fim, verifique se a propriedade Tags e suas bibliotecas estão carregadas no site Publicado ou Autor .
+
 ## Próximas etapas
 
-[Criar uma propriedade de tag (Launch)](create-tag-property.md)
+[Criar uma propriedade de tag](create-tag-property.md)
 
 ## Recursos adicionais {#additional-resources}
 
