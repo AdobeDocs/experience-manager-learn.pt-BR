@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2961'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,21 @@ O Armazenamento de confiança global é configurado com o certificado público d
 1. Selecione o __Criar__ para o __Armazenamento de Confiança Global__ pacote.
 1. Depois de criado, selecione __Mais__ > __Replicar__ para ativar o nó da Loja de Confiança Global (`/etc/truststore`) para Publicação no AEM.
 
+## Criar repositório de chaves de serviço de autenticação{#authentication-service-keystore}
+
+_A criação de um repositório de chaves para o serviço de autenticação é necessária quando a função [Propriedade de configuração OSGi do manipulador de autenticação SAML 2.0 `handleLogout` está definida como `true`](#saml-20-authenticationsaml-2-0-authentication) ou quando [Autenticação de asserção AuthnRequest/SAML](#install-aem-public-private-key-pair) é obrigatório_
+
+1. Faça logon no AEM Author como Administrador do AEM para fazer upload da chave privada.
+1. Navegar para __Ferramentas > Segurança > Armazenamento de confiança__ e selecione __serviço de autenticação__ e selecione __Propriedades__ na barra de ação superior.
+1. Navegar para __Ferramentas > Segurança > Usuários__ e selecione __serviço de autenticação__ e selecione __Propriedades__ na barra de ação superior.
+1. Selecione o __Armazenamento de chaves__ guia .
+1. Crie ou abra o repositório de chaves. Se estiver criando um armazenamento de chaves, mantenha a senha segura.
+   + A [keystore público/privado está instalado neste keystore](#install-aem-public-private-key-pair) somente se a criptografia de asserção AuthnRequest signing/SAML for necessária.
+   + Se essa integração SAML suportar logout, mas não a asserção de assinatura/SAML de AuthnRequest , um armazenamento de chaves vazio será suficiente.
+1. Selecionar __Salvar e fechar__.
+1. Selecionar __serviço de autenticação__ e selecione __Ativar__ na barra de ação superior.
+
+
 ## Instalar AEM par de chaves públicas/privadas{#install-aem-public-private-key-pair}
 
 _A instalação do par de chaves públicas/privadas AEM é opcional_
@@ -212,32 +227,32 @@ A configuração é uma configuração de fábrica OSGi, o que significa que um 
 |  | Propriedade OSGi | Obrigatório | Formato do valor | Valor padrão | Descrição |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | Caminhos | `path` | ✔ | Matriz de sequência | `/` | AEM caminhos para os quais esse manipulador de autenticação é usado. |
-| URL do IDP | `idpUrl` | ✔ | Sequência de caracteres |  | URL IDP para a qual a solicitação de autenticação SAML é enviada. |
-| alias do certificado IDP | `idpCertAlias` | ✔ | Sequência de caracteres |  | O alias do certificado IDP encontrado no AEM Global Trust Store |
+| URL do IDP | `idpUrl` | ✔ | String |  | URL IDP para a qual a solicitação de autenticação SAML é enviada. |
+| alias do certificado IDP | `idpCertAlias` | ✔ | String |  | O alias do certificado IDP encontrado no AEM Global Trust Store |
 | Redirecionamento HTTP IDP | `idpHttpRedirect` | ✘ | Booleano | `false` | Indica se um redirecionamento HTTP para o URL do IDP em vez de enviar um AuthnRequest. Defina como `true` para autenticação iniciada pelo IDP. |
-| Identificador do IDP | `idpIdentifier` | ✘ | Sequência de caracteres |  | Id de IDP exclusiva para garantir AEM exclusividade de usuários e grupos. Se estiver vazio, a variável `serviceProviderEntityId` é usada em vez disso. |
-| URL do serviço de consumidor de asserção | `assertionConsumerServiceURL` | ✘ | Sequência de caracteres |  | O `AssertionConsumerServiceURL` Atributo de URL no AuthnRequest especificando onde a variável `<Response>` deve ser enviada para AEM. |
-| ID da entidade SP | `serviceProviderEntityId` | ✔ | Sequência de caracteres |  | Identifica exclusivamente AEM ao IDP; geralmente o nome do host AEM. |
+| Identificador do IDP | `idpIdentifier` | ✘ | String |  | Id de IDP exclusiva para garantir AEM exclusividade de usuários e grupos. Se estiver vazio, a variável `serviceProviderEntityId` é usada em vez disso. |
+| URL do serviço de consumidor de asserção | `assertionConsumerServiceURL` | ✘ | String |  | O `AssertionConsumerServiceURL` Atributo de URL no AuthnRequest especificando onde a variável `<Response>` deve ser enviada para AEM. |
+| ID da entidade SP | `serviceProviderEntityId` | ✔ | String |  | Identifica exclusivamente AEM ao IDP; geralmente o nome do host AEM. |
 | Criptografia de SP | `useEncryption` | ✘ | Booleano | `true` | Indica se o IDP criptografa asserções SAML. Exige `spPrivateKeyAlias` e `keyStorePassword` a ser definido. |
-| alias da chave privada do SP | `spPrivateKeyAlias` | ✘ | Sequência de caracteres |  | O alias da chave privada no `authentication-service` repositório de chaves do usuário. Obrigatório se `useEncryption` está definida como `true`. |
-| Senha do armazenamento de chaves do SP | `keyStorePassword` | ✘ | Sequência de caracteres |  | A senha do armazenamento de chaves do usuário &#39;authentication-service&#39;. Obrigatório se `useEncryption` está definida como `true`. |
-| Redirecionamento padrão | `defaultRedirectUrl` | ✘ | Sequência de caracteres | `/` | O URL de redirecionamento padrão após a autenticação bem-sucedida. Pode ser relativo ao host do AEM (por exemplo, `/content/wknd/us/en/html`). |
-| Atributo de ID de usuário | `userIDAttribute` | ✘ | Sequência de caracteres | `uid` | O nome do atributo de asserção SAML contendo o ID de usuário do usuário AEM. Deixe em branco para usar a variável `Subject:NameId`. |
+| alias da chave privada do SP | `spPrivateKeyAlias` | ✘ | String |  | O alias da chave privada no `authentication-service` repositório de chaves do usuário. Obrigatório se `useEncryption` está definida como `true`. |
+| Senha do armazenamento de chaves do SP | `keyStorePassword` | ✘ | String |  | A senha do armazenamento de chaves do usuário &#39;authentication-service&#39;. Obrigatório se `useEncryption` está definida como `true`. |
+| Redirecionamento padrão | `defaultRedirectUrl` | ✘ | String | `/` | O URL de redirecionamento padrão após a autenticação bem-sucedida. Pode ser relativo ao host do AEM (por exemplo, `/content/wknd/us/en/html`). |
+| Atributo de ID de usuário | `userIDAttribute` | ✘ | String | `uid` | O nome do atributo de asserção SAML contendo o ID de usuário do usuário AEM. Deixe em branco para usar a variável `Subject:NameId`. |
 | Criar usuários de AEM automaticamente | `createUser` | ✘ | Booleano | `true` | Indica se AEM usuários foram criados na autenticação bem-sucedida. |
-| Caminho intermediário do usuário AEM | `userIntermediatePath` | ✘ | Sequência de caracteres |  | Ao criar AEM usuários, esse valor é usado como o caminho intermediário (por exemplo, `/home/users/<userIntermediatePath>/jane@wknd.com`). Exige `createUser` a ser definido como `true`. |
+| Caminho intermediário do usuário AEM | `userIntermediatePath` | ✘ | String |  | Ao criar AEM usuários, esse valor é usado como o caminho intermediário (por exemplo, `/home/users/<userIntermediatePath>/jane@wknd.com`). Exige `createUser` a ser definido como `true`. |
 | AEM atributos do usuário | `synchronizeAttributes` | ✘ | Matriz de sequência |  | Lista de mapeamentos de atributos SAML a serem armazenados no usuário AEM, no formato `[ "saml-attribute-name=path/relative/to/user/node" ]` (por exemplo, `[ "firstName=profile/givenName" ]`). Consulte a [lista completa de atributos de AEM nativos](#aem-user-attributes). |
 | Adicionar usuário a grupos AEM | `addGroupMemberships` | ✘ | Booleano | `true` | Indica se um usuário AEM é adicionado automaticamente a AEM grupos de usuários após uma autenticação bem-sucedida. |
-| Atributo de associação de grupo AEM | `groupMembershipAttribute` | ✘ | Sequência de caracteres | `groupMembership` | O nome do atributo de asserção SAML contendo uma lista de AEM grupos de usuários aos quais o usuário deve ser adicionado. Exige `addGroupMemberships` a ser definido como `true`. |
+| Atributo de associação de grupo AEM | `groupMembershipAttribute` | ✘ | String | `groupMembership` | O nome do atributo de asserção SAML contendo uma lista de AEM grupos de usuários aos quais o usuário deve ser adicionado. Exige `addGroupMemberships` a ser definido como `true`. |
 | Grupos de AEM padrão | `defaultGroups` | ✘ | Matriz de sequência |  | Uma lista de AEM grupos de usuários aos quais os usuários autenticados são sempre adicionados (por exemplo, `[ "wknd-user" ]`). Exige `addGroupMemberships` a ser definido como `true`. |
-| Formato NameIDPolicy | `nameIdFormat` | ✘ | Sequência de caracteres | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | O valor do parâmetro NameIDPolicy format para enviar na mensagem AuthnRequest . |
+| Formato NameIDPolicy | `nameIdFormat` | ✘ | String | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` | O valor do parâmetro NameIDPolicy format para enviar na mensagem AuthnRequest . |
 | Armazenar resposta SAML | `storeSAMLResponse` | ✘ | Booleano | `false` | Indica se a variável `samlResponse` é armazenado no AEM `cq:User` nó . |
 | Gerenciar logout | `handleLogout` | ✘ | Booleano | `false` | Indica se a solicitação de logout é tratada por este manipulador de autenticação SAML. Exige `logoutUrl` a ser definido. |
-| URL de logout | `logoutUrl` | ✘ | Sequência de caracteres |  | URL do IDP para o qual a solicitação de logout do SAML é enviada. Obrigatório se `handleLogout` está definida como `true`. |
-| Tolerância de relógio | `clockTolerance` | ✘ | Inteiro | `60` | A tolerância de desvio de clock do IDP e do AEM (SP) ao validar asserções de SAML. |
-| Método Digest | `digestMethod` | ✘ | Sequência de caracteres | `http://www.w3.org/2001/04/xmlenc#sha256` | O algoritmo de resumo que o IDP usa ao assinar uma mensagem SAML. |
-| Método de assinatura | `signatureMethod` | ✘ | Sequência de caracteres | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | O algoritmo de assinatura que o IDP usa ao assinar uma mensagem SAML. |
+| URL de logout | `logoutUrl` | ✘ | String |  | URL do IDP para o qual a solicitação de logout do SAML é enviada. Obrigatório se `handleLogout` está definida como `true`. |
+| Tolerância de relógio | `clockTolerance` | ✘ | Número inteiro | `60` | A tolerância de desvio de clock do IDP e do AEM (SP) ao validar asserções de SAML. |
+| Método Digest | `digestMethod` | ✘ | String | `http://www.w3.org/2001/04/xmlenc#sha256` | O algoritmo de resumo que o IDP usa ao assinar uma mensagem SAML. |
+| Método de assinatura | `signatureMethod` | ✘ | String | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | O algoritmo de assinatura que o IDP usa ao assinar uma mensagem SAML. |
 | Tipo de sincronização de identidade | `identitySyncType` | ✘ | `default` ou `idp` | `default` | Não alterar `from` padrão para AEM as a Cloud Service. |
-| Classificação do serviço | `service.ranking` | ✘ | Inteiro | `5002` | As configurações de classificação mais altas são preferidas para o mesmo `path`. |
+| Classificação do serviço | `service.ranking` | ✘ | Número inteiro | `5002` | As configurações de classificação mais altas são preferidas para o mesmo `path`. |
 
 ### AEM atributos do usuário{#aem-user-attributes}
 
