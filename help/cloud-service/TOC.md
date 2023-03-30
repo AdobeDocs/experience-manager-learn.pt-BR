@@ -5,10 +5,10 @@ breadcrumb-title: Tutorials do AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 21%
+source-wordcount: '913'
+ht-degree: 20%
 
 ---
 
@@ -89,6 +89,7 @@ ht-degree: 21%
       + [Noções básicas sobre configurações do OSGi](./developing/osgi-services/configurations.md)
       + [Configurações OSGi usando OCD](./developing/osgi-services/configurations-ocd.md)
    + Avançado {#advanced}
+      + [APIs de imagem otimizadas para a Web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Usuários do Serviço](./developing/advanced/service-users.md)
       + [Namespaces personalizados](./developing/advanced/custom-namespaces.md)
       + [Armazenamento em cache de variáveis de página](./developing/advanced/variant-caching.md)
