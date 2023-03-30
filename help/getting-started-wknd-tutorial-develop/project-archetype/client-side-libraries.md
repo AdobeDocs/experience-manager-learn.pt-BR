@@ -11,9 +11,9 @@ kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2799'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ As bibliotecas do lado do cliente não são compatíveis com idiomas mais avanç
 
    ![Arquivos Sass de Componentes](assets/client-side-libraries/component-sass-files.png)
 
-   Cada arquivo mapeia para um Componente principal como o [Componente acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Cada componente principal é criado com [Modificador de elemento de bloco](https://getbem.com/) ou notação BEM para facilitar o direcionamento de classes CSS específicas com regras de estilo. Os arquivos abaixo `/components` Foram criadas pelo Arquétipo de projeto AEM com as diferentes regras BEM para cada componente.
+   Cada arquivo mapeia para um Componente principal como o [Componente acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Cada Componente principal é criado com [Modificador de elemento de bloco](https://getbem.com/) ou notação BEM para facilitar o direcionamento de classes CSS específicas com regras de estilo. Os arquivos abaixo `/components` Foram criadas pelo Arquétipo de projeto AEM com as diferentes regras BEM para cada componente.
 
 1. Baixe os estilos base WKND **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** e **descompactar** o arquivo .
 

@@ -13,9 +13,9 @@ mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## O que você vai criar {#what-build}
 
-Este capítulo usa o [Recurso Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para criar variações do **Título** e **Texto** componentes usados na página Artigo .
+Este capítulo usa o [Recurso Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=pt-BR) para criar variações do **Título** e **Texto** componentes usados na página Artigo .
 
 ![Estilos disponíveis para o Título](assets/style-system/styles-added-title.png)
 

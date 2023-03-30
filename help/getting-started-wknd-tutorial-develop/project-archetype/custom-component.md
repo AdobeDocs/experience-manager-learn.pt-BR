@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4066'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem 
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   O arquivo XML acima fornece a definição do componente, incluindo o título, a descrição e o grupo. O `sling:resourceSuperType` pontos a `core/wcm/components/image/v2/image`, que é o [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
+   O arquivo XML acima fornece a definição do componente, incluindo o título, a descrição e o grupo. O `sling:resourceSuperType` pontos a `core/wcm/components/image/v2/image`, que é o [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR).
 
 ### Criar o script HTL {#create-the-htl-script}
 

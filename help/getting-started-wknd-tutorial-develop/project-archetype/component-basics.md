@@ -12,9 +12,9 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 1%
 
 ---
@@ -276,7 +276,7 @@ Em seguida, vamos fazer algumas atualizações na `HelloWorldModel` Modelo do Sl
    </div>
    ```
 
-1. Implante as alterações em uma instância local do AEM usando o plug-in do desenvolvedor do Eclipse ou usando suas habilidades Maven.
+1. Implante as alterações em uma instância local do AEM usando o plug-in do Eclipse Developer ou usando suas habilidades para Maven.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
