@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 exl-id: 4f2b6669-d61e-400d-8657-dddb28ae35f4
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBM
 1. Serviços Web baseados em SOAP
 1. Serviços OData Este artigo destacará a integração AEM informações de perfil do usuário com o Adaptive Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 
 >[!NOTE]
 >

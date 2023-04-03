@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 6%
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 AEM Dynamic Media video player costumava confiar no tempo de execução do Flash para suportar streaming de vídeo adaptável em clientes de desktop e os navegadores tornaram-se mais agressivos no streaming de conteúdo baseado em flash. Com a introdução do HLS (Apple HTTP Live Streaming video delivery protocol), o conteúdo agora pode ser transmitido em fluxo sem depender do flash.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
 ## Análise rápida do reprodutor de vídeo que não é o Flash {#quick-look-into-non-flash-video-player}
 
->[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
 O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fallback para entrega progressiva de vídeo
 
@@ -41,34 +41,34 @@ O suporte a navegador HLS é o seguinte, para navegadores não compatíveis, fal
  </thead>
  <tbody>
   <tr> 
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 9 e 10</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr>
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
    <td> <p>Dynamic Media - Modo Scene7: Transmissão de vídeo HLS</p> 
         <p>Dynamic Media - Modo híbrido: Download progressivo</p>
    </td>
   </tr>
   <tr>
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Firefox 23-44</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Firefox 45 ou superior</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Chrome</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Área de trabalho</p> </td>
+   <td> <p>Desktop</p> </td>
    <td> <p>Safari (Mac)</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>

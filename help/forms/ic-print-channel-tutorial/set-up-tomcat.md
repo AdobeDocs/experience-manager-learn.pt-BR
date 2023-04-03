@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Nessa parte, instalamos o TOMCAT e implantamos o arquivo sampleRest.war no TOMCAT. O terminal REST exposto por esse arquivo WAR é a base para nossa Fonte de dados e Modelo de dados de formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
 Para configurar o tomcat, siga as seguintes instruções:
 
@@ -46,4 +46,4 @@ Para configurar o tomcat, siga as seguintes instruções:
 Parabéns !!!. Você configurou o tomcat e implantou o arquivo SampleRest.war.
 
 O vídeo a seguir explica a implantação do aplicativo de amostra no Tomcat
->[!VIDEO](https://video.tv.adobe.com/v/37815)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

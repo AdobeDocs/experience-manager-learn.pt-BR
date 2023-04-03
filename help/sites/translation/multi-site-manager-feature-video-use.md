@@ -15,7 +15,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 14%
@@ -28,13 +28,13 @@ ht-degree: 14%
 
 ## Visão geral da Live Copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
 *A Visão geral da Live Copy é uma interface de usuário de toque usada para gerenciar live copies e seus respectivos blueprints. Esse recurso, introduzido no AEM 6.3, substitui o Classic UI Blueprint Control Center.*
 
 ## Gerenciador de configuração do Blueprint - Interface do usuário de toque {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
 *O AEM 6.3 apresenta uma interface de interface de toque para gerenciar configurações do Blueprint para uso no Multi Site Manager.*
 

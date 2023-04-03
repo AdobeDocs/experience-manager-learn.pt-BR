@@ -8,7 +8,7 @@ role: User
 level: Beginner
 kt: 6630
 exl-id: 12fa3622-428a-40c1-b47f-fa55c2858896
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O componente Imagem, parte do Experience Manager Core Components, tem suporte integrado ao Dynamic Media. O componente de Imagem permite que um autor de conteúdo use recursos do Dynamic Media, como Predefinições de imagem, Recorte inteligente e Modificadores de imagem em uma página do AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/329331/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329331?quality=12&learn=on)
 
 ## Recursos adicionais
 

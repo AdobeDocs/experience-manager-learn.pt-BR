@@ -4,10 +4,10 @@ description: Uma coleção de tutoriais do Adobe Experience Manager (AEM) as a C
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 757749305a017d682322b2c2e024c2fbb3604fc2
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM as a Cloud Service apresenta a próxima geração da linha de produtos Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
 <div id="whats-new-section">
 
@@ -25,9 +25,9 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 
    *Saiba como usar a autenticação baseada em token para interagir com AEM as a Cloud Service por HTTP*
 
-* **[GraphQL sem cabeçalho (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[GraphQL sem cabeçalho (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR)**
 
-   *Saiba como usar AEM APIs GraphQL para potencializar experiências em um aplicativo externo.*
+   *Saiba como usar AEM APIs do GraphQL para potencializar experiências em um aplicativo externo.*
 
 * **[Importação em massa (Vídeo)](./migration/bulk-import.md)**
 
@@ -57,7 +57,7 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. AEM
 <table>
    <td>
       <a href="./accessing/overview.md">
-      <img alt="Configuração do acesso a AEM as a Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
+      <img alt="Configuração do acesso ao AEM as a Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
       </a>
       <div>
          <a href="./accessing/overview.md">

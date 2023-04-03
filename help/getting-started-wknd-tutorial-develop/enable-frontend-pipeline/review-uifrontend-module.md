@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
@@ -36,7 +36,7 @@ No, este capítulo analisa o desenvolvimento, a implantação e a entrega de art
 >
 >Este vídeo explica e demonstra o fluxo de front-end para ambos **Instalação completa e criação rápida de site** projetos para destacar a sutil diferença no modelo de disponibilização, implantação e criação de recursos de front-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409344/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -150,7 +150,7 @@ Os recursos de front-end implantados por meio do pipeline de pilha completa são
     ....
 ```
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você revisou o módulo ui.frontend do projeto de pilha completa
 

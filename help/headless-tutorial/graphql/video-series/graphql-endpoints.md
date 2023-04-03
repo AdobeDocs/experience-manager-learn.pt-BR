@@ -1,6 +1,6 @@
 ---
-title: Endpoints GraphQL
-description: Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade GraphQL.
+title: Endpoints do GraphQL
+description: Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade do GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -9,23 +9,23 @@ level: Beginner
 kt: 7875
 thumbnail: 333339.jpg
 exl-id: 190623cc-8959-46b3-95de-e7d01bf5acdb
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
-# Endpoints GraphQL
+# Endpoints do GraphQL
 
-Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade GraphQL.
+Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade do GraphQL.
 
 Neste vídeo, você:
 
-+ Saiba como habilitar Endpoints GraphQL
-+ Saiba como executar consultas GraphQL em relação a endpoints
-+ Saiba como publicar e proteger pontos de extremidade GraphQL
++ Saiba como habilitar endpoints do GraphQL
++ Saiba como executar consultas do GraphQL em relação a endpoints
++ Saiba como publicar e proteger pontos de extremidade do GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/333339/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
 
-_Baixe a  [Coleção ](./assets/aem-headless-video-series.postman_collection.json) Postman usada em toda a Série de vídeos sem cabeçalho AEM._
+_Baixe o [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) usado em toda a série de vídeos sem cabeçalho AEM._

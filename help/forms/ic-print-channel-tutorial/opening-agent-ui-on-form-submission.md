@@ -1,7 +1,7 @@
 ---
-title: Erro ao abrir a interface do usuário do agente no envio do POST
+title: Abrindo a interface do usuário do agente no envio do POST
 seo-title: Opening Agent UI On POST Submission
-description: Esta é a parte 11 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio de formulários.
+description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nessa parte, iniciaremos a interface da interface do agente para criar uma correspondência ad-hoc no envio do formulário.
 seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
 feature: Interactive Communication
@@ -16,22 +16,22 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
 
 ---
 
-# Erro ao abrir a interface do usuário do agente no envio do POST
+# Abrindo a interface do usuário do agente no envio do POST
 
-Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio de formulários.
+Nessa parte, iniciaremos a interface da interface do agente para criar uma correspondência ad-hoc no envio do formulário.
 
-Este artigo o guiará pelas etapas relativas à abertura da interface do usuário do agente no envio de um formulário. Um caso de uso típico é o agente de atendimento ao cliente preencher um formulário com alguns parâmetros de entrada, e uma interface do agente de envio de formulário é aberta com dados pré-preenchidos no serviço de preenchimento do modelo de dados de formulário. Os parâmetros de entrada para o serviço de preenchimento do modelo de dados de formulário são extraídos do envio do formulário.
+Este artigo o guiará pelas etapas envolvidas na abertura da interface da interface do agente ao enviar um formulário. Um caso de uso típico é o de o agente de serviço ao cliente preencher um formulário com alguns parâmetros de entrada e, na interface do usuário do agente de envio de formulário, ele é aberto com dados pré-preenchidos do serviço de preenchimento prévio do modelo de dados de formulário. Os parâmetros de entrada para o serviço de preenchimento prévio do modelo de dados de formulário são extraídos do envio do formulário.
 
-O vídeo a seguir mostra casos de uso
+O vídeo a seguir mostra o caso de uso
 
->[!VIDEO](https://video.tv.adobe.com/v/40122/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))
@@ -49,27 +49,27 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/aem/forms/createcorrespondence.html").include(wrapperRequest, response);
 ```
 
-Linha 1: obter o número da conta do parâmetro de solicitação
+Linha 1 : Obter o número de conta do parâmetro de solicitação
 
-Linhas 2-8: crie o mapa de parâmetros e defina chaves e valores apropriados para refletir documentId, Random.
+Linha 2-8: Crie o mapa de parâmetros e defina as chaves e os valores apropriados para refletir documentId, Random.
 
-Linha 9-10: crie outro objeto Map para manter o parâmetro de entrada definido no Modelo de dados de formulário.
+Linha 9-10: Crie outro objeto de Mapa para manter o parâmetro de entrada definido no Modelo de dados de formulário.
 
-Linha 11: definir o atributo slingRequest &quot;paramMap&quot;
+Linha 11: Defina o atributo slingRequest &quot;paramMap&quot;
 
 Linha 12-13: Encaminhar a solicitação para o servlet
 
 Para testar esse recurso no servidor
 
 * [Importe e instale os ativos relacionados a este artigo usando o gerenciador de pacotes.](assets/launch-agent-ui.zip)
-* [Fazer logon no configMgr](http://localhost:4502/system/console/configMgr)
-* Pesquisar por _Filtro CSRF do Adobe Granite_
+* [Logon no configMgr](http://localhost:4502/system/console/configMgr)
+* Procurar por _Filtro CSRF do Adobe Granite_
 * Adicionar _/content/getprintchannel_ nos Caminhos excluídos
 * Salve as alterações.
-* [Abra POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Verifique se a cadeia de caracteres transmitida para FormFieldRequestParameter é um documentId válido.(Linha 19).
-* [Abrir a página da Web](http://localhost:4502/content/OpenPrintChannel.html) e insira account number e envie o formulário.
-* A interface do usuário do agente deve abrir com os dados pré-preenchidos específicos para o número da conta inserido no formulário.
+* [Abra POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Certifique-se de que a cadeia de caracteres passada para FormFieldRequestParameter seja documentId válida.(Linha 19).
+* [Abrir a página da Web](http://localhost:4502/content/OpenPrintChannel.html) e informe o número da conta e envie o formulário.
+* A interface da interface do usuário do agente deve abrir com os dados pré-preenchidos específicos para o número da conta inserido no formulário.
 
 >[!NOTE]
 >
->Certifique-se de que o parâmetro de entrada da operação Obter do modelo de dados de formulário esteja vinculado ao Atributo de solicitação chamado &quot;accountnumber&quot; para que isso funcione. Se você alterar o nome do valor de vinculação para qualquer outro nome, verifique se a alteração é refletida na linha 25 do POST.jsp
+>Verifique se o parâmetro de entrada da operação Get do Modelo de dados de formulário está vinculado ao Atributo de solicitação chamado &quot;accountnumber&quot; para que isso funcione. Se você alterar o nome do valor de vínculo para qualquer outro nome, verifique se a alteração é refletida na linha 25 do POST.jsp

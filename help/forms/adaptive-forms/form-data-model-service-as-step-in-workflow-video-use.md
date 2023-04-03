@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 A partir do AEM Forms 6.4, agora temos a capacidade de usar o Modelo de dados de formulário como parte AEM fluxo de trabalho. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário AEM fluxo de trabalho
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Para testar esse recurso em seu servidor, siga as instruções abaixo
 * [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define propriedades de metadados.

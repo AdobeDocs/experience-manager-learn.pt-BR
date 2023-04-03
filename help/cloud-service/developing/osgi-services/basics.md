@@ -9,10 +9,10 @@ kt: 8227
 thumbnail: 335476.jpeg
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Saiba mais sobre as noções básicas do desenvolvimento de serviços OSGi, incl
 + Como converter um POJO Java em um serviço OSGi
 + Como vincular um serviço OSGi a uma interface Java
 
->[!VIDEO](https://video.tv.adobe.com/v/335476/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
 
 ## Recursos
 

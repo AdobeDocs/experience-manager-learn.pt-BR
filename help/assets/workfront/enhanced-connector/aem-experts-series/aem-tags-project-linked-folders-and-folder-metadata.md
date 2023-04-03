@@ -10,7 +10,7 @@ thumbnail: 340333.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Saiba como direcionar AEM Tags usadas em ativos por meio de dados do Workfront, configurar e usar pastas vinculadas a projetos e dados do Workfront para AEM esquemas de metadados de pastas de ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/340333/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
 _Parte 3 de a [série de especialistas de quatro partes sobre o conector Workfront for Experience Manager enhanced](./overview.md)_
 

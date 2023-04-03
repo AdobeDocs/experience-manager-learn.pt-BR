@@ -1,5 +1,5 @@
 ---
-title: Criar modelos de fragmento de conteúdo - Conceitos avançados de AEM sem cabeçalho - GraphQL
+title: Criar modelos de fragmentos de conteúdo - Conceitos avançados de AEM headless - GraphQL
 description: Neste capítulo dos Conceitos avançados do Adobe Experience Manager (AEM) Headless, saiba como editar um Modelo de fragmento de conteúdo adicionando espaços reservados na guia, data e hora, objetos JSON, referências de fragmento e referências de conteúdo.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -7,20 +7,20 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
 
 ---
 
-# Criar modelos de fragmento de conteúdo {#create-content-fragment-models}
+# Criar modelos de fragmentos de conteúdo {#create-content-fragment-models}
 
 Este capítulo aborda as etapas para criar cinco Modelos de fragmento de conteúdo:
 
 * **Informação de contato**
 * **Endereço**
-* **Person**
+* **Pessoa**
 * **Local**
 * **Equipe**
 
@@ -34,7 +34,7 @@ Este é um tutorial avançado. Antes de continuar com este capítulo, certifique
 
 ## Objetivos {#objectives}
 
-* Criar modelos de fragmentos do conteúdo.
+* Criar modelos de fragmentos de conteúdo.
 * Adicione marcadores de posição de guia, data e hora, objetos JSON, referências de fragmento e referências de conteúdo aos modelos.
 * Adicionar validação às referências de conteúdo.
 
@@ -42,9 +42,9 @@ Este é um tutorial avançado. Antes de continuar com este capítulo, certifique
 
 O vídeo a seguir fornece uma breve introdução aos Modelos de fragmentos de conteúdo e como eles são usados neste tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
-## Criar modelos de fragmento de conteúdo {#create-models}
+## Criar modelos de fragmentos de conteúdo {#create-models}
 
 Vamos criar alguns Modelos de fragmento de conteúdo para o aplicativo WKND. Se você precisar de uma introdução básica para criar Modelos de fragmentos de conteúdo, consulte o capítulo apropriado na [tutorial básico](../multi-step/content-fragment-models.md).
 
@@ -227,13 +227,13 @@ Há algumas práticas recomendadas relacionadas à criação de Modelos de fragm
 
 * Aninhe os Modelos de fragmento do conteúdo conforme necessário, mas somente conforme necessário. Lembre-se de que o aninhamento é realizado com referências de fragmento ou referências de conteúdo. Considere um máximo de cinco níveis de aninhamento.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
-Parabéns. Agora você adicionou guias, usou os tipos de dados de data e hora e objeto JSON e aprendeu mais sobre referências de fragmento e conteúdo. Você também adicionou regras de validação de referência de conteúdo.
+Parabéns! Agora você adicionou guias, usou os tipos de dados de data e hora e objeto JSON e aprendeu mais sobre referências de fragmento e conteúdo. Você também adicionou regras de validação de referência de conteúdo.
 
 ## Próximas etapas {#next-steps}
 
 O próximo capítulo desta série cobrirá [criação de fragmentos de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) dos modelos criados neste capítulo. Saiba como usar os tipos de dados introduzidos neste capítulo e criar políticas de pastas para limitar quais Modelos de fragmentos de conteúdo podem ser criados em uma pasta de ativos.
 
 Embora seja opcional para este tutorial, certifique-se de publicar todo o conteúdo em situações de produção real. Para obter uma análise dos ambientes Autor e Publicação no AEM, consulte o
-[Série de vídeos GraphQL sem cabeçalho AEM](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+[Série de vídeos AEM Headless e GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

@@ -8,7 +8,7 @@ level: Intermediate
 last-substantial-update: 2022-09-02T00:00:00Z
 thumbnail: 18331.jpg
 exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Os ativos Adobe Experience Manager (AEM) permitem identificar ativos que compart
 
 ## Gerenciamento de arquivos de origem de ativos multisite {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
 
 Os ativos relacionados ajudam os usuários a gerenciar ativos melhores e em links cruzados com características compartilhadas, propriedades e fluxos de trabalho simplificados:
 

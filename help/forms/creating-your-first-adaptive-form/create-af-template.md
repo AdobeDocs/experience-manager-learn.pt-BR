@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Cada formulário adaptável é baseado em um modelo de formulário adaptável. O
 O modelo criado aqui é a base para nosso formulário adaptável avançar.
 O vídeo a seguir mostra o processo básico de criação do modelo de formulário adaptável
 
->[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
 Consulte [documentação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) para obter mais detalhes
 

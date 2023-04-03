@@ -9,10 +9,10 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 9%
 
 Bem-vindo ao tutorial de várias partes para desenvolvedores que procuram aumentar um SPA Remoto baseado em Reação (ou Next.js) existente com conteúdo AEM editável usando AEM Editor SPA.
 
-Este tutorial se baseia no [Aplicativo GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo React que consome AEM conteúdo do Fragmento de conteúdo sobre AEM APIs GraphQL, no entanto, não fornece criação de conteúdo SPA contexto.
+Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo React que consome AEM conteúdo do Fragmento de conteúdo em vez AEM APIs do GraphQL, no entanto não fornece criação de conteúdo SPA contexto.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Sobre o tutorial
 

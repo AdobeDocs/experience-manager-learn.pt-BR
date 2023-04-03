@@ -1,8 +1,8 @@
 ---
-title: Criação de um modelo de documento de canal da Web AEM Forms
-seo-title: Criação de um modelo de documento de canal da Web AEM Forms
+title: Criando AEM Forms de Modelo de Documento de Canal da Web
+seo-title: Creating Web Channel Document Template AEM Forms
 description: Esta é a parte 4 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos um modelo para o documento de canal da Web.
-seo-description: Esta é a parte 4 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos um modelo para o documento de canal da Web.
+seo-description: This is part 4 of the multistep tutorial for creating your first interactive communications document. In this part, we will create a template for web channel document.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
 feature: Interactive Communication
 topics: development
@@ -14,23 +14,22 @@ discoiquuid: 95ca401b-69ea-49e2-a9ae-e144444e481e
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 2%
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
 
-
-# Criação de um modelo de documento de canal da Web AEM Forms {#creating-web-channel-document-template-aem-forms}
+# Criando AEM Forms de Modelo de Documento de Canal da Web {#creating-web-channel-document-template-aem-forms}
 
 Nesta parte, criaremos um modelo para o documento de canal da Web.
-Criação de um modelo de documento de canal da Web no AEM Forms 6.4
->[!VIDEO](https://video.tv.adobe.com/v/22342?quality=9&learn=on)
+Criando modelo de documento de canal Web no AEM Forms 6.4
+>[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
-Criação de um modelo de documento de canal da Web no AEM Forms 6.5
->[!VIDEO](https://video.tv.adobe.com/v/27807?quality=9&learn=on)
+Criando modelo de documento de canal Web no AEM Forms 6.5
+>[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
 
 O modelo terá áreas/espaços reservados de destino que terão vários tipos de fragmentos de documentos. Por exemplo, um modelo pode ter áreas de destino para logotipos e outra área de destino para conteúdo de texto.
 

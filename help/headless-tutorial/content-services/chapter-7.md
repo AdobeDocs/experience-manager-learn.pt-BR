@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -37,13 +37,13 @@ O Android é usado para tutorial devido à capacidade de executar um Emulador An
 
 ## Demonstração do aplicativo móvel
 
->[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28345?quality=12&learn=on)
 
 ### Configuração do aplicativo móvel para uso não local
 
 Se a publicação do AEM não estiver sendo executada em **http://localhost:4503** o host e a porta podem ser atualizados no aplicativo móvel [!DNL Settings] aponte para a propriedade AEM Publish host/port.
 
->[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
 ## Execução do aplicativo móvel localmente
 
@@ -75,7 +75,7 @@ Se a publicação do AEM não estiver sendo executada em **http://localhost:4503
    * Para rolar dentro do dispositivo virtual, clique e segure e arraste.
    * Para atualizar o conteúdo do AEM, puxe para baixo a partir da parte superior até que o ícone Atualizar seja exibido e solte.
 
->[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28341?quality=12&learn=on)
 
 ## O código do aplicativo móvel
 

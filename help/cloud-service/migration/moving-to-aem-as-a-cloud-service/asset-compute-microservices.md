@@ -9,10 +9,10 @@ level: Experienced
 kt: 8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 3%
 
 Saiba como os microsserviços de asset compute do AEM Assets as a Cloud Service permitem que você gere de forma automática e eficiente qualquer representação dos seus ativos, substituindo essa função do fluxo de trabalho AEM tradicional.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
 ## Ferramenta Migração de fluxo de trabalho
 
 ![Ferramenta Migração de fluxo de trabalho de ativos](./assets/asset-workflow-migration.png)
 
-Como parte da refatoração da base de código, use o [Ferramenta Migração de fluxo de trabalho de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html) para migrar workflows existentes para usar os microsserviços do Asset compute em AEM as a Cloud Service.
+Como parte da refatoração da base de código, use o [Ferramenta Migração de fluxo de trabalho de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=pt-BR) para migrar workflows existentes para usar os microsserviços do Asset compute em AEM as a Cloud Service.
 
 ## Atividades principais
 

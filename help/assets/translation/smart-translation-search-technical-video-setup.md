@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Beginner
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 A Pesquisa de tradução inteligente permite o uso de termos de pesquisa que não sejam em inglês para resolver para conteúdo em inglês. Para configurar AEM para a Pesquisa de tradução inteligente, o pacote OSGi da Tradução do Apache Oak Search Machine deve ser instalado e configurado, bem como os pacotes de idioma Apache Joshua de código livre e aberto pertinentes que contêm as regras de tradução.
 
->[!VIDEO](https://video.tv.adobe.com/v/21291/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21291?quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: 7c246c4f1af9dfe599485f68508c66fe29d2f0b6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Neste capítulo, fazemos alterações de configuração no __Projeto WKND Sites_
 
 ## Objetivos {#objectives}
 
-* Atualizar projeto de pilha completa para usar o pipeline de front-end
+* Atualizar projeto de pilha completa para usar o pipeline front-end
 
 ## Visão geral das alterações de configuração no projeto de AEM de pilha completa
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -200,7 +200,7 @@ O [Seletor de painéis](https://experienceleague.adobe.com/docs/experience-manag
 
 Se for clicado por engano, é necessário executar novamente os pipelines para garantir que o contrato do pipeline front-end e as alterações sejam restaurados.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você atualizou o projeto WKND Sites para habilitá-lo para o contrato de pipeline front-end.
 

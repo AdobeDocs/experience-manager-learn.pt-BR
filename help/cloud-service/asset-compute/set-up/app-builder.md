@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 Os projetos do Asset compute são projetos do App Builder especialmente definidos e, como tal, exigem acesso ao App Builder no Adobe Developer Console para configurá-los e implantá-los.
 
-## Criar e configurar o App Builder no Console do desenvolvedor do Adobe{#set-up}
+## Criar e configurar o App Builder no Console do Adobe Developer{#set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _Click-through da configuração do App Builder (sem áudio)_
 
-1. Faça logon em [Console do desenvolvedor do Adobe](https://console.adobe.io) usando a Adobe ID associada ao [contas e serviços](./accounts-and-services.md). Certifique-se de que você é uma __Administrador do sistema__ ou na __Função do desenvolvedor__ para a Org Adobe correta.
+1. Faça logon em [Console do Adobe Developer](https://console.adobe.io) usando a Adobe ID associada ao [contas e serviços](./accounts-and-services.md). Certifique-se de que você é uma __Administrador do sistema__ ou na __Função do desenvolvedor__ para a Org Adobe correta.
 1. Crie um projeto do App Builder ao tocar em __Criar novo projeto > Projeto a partir de modelo > App Builder__
 
    _Se__ Criar novo projeto __ou o botão__ App Builder __O tipo não está disponível, isso significa que a sua Org de Adobe não está disponível [provisionado com o App Builder](#request-adobe-project-app-builder)._
@@ -63,7 +63,7 @@ Ao configurar o [Integração da API do Asset compute](#set-up) um novo par de c
 
 As credenciais deste projeto do Adobe I/O são usadas pelo [Ferramenta de desenvolvimento de assets compute](../develop/development-tool.md) para interagir com o Adobe I/O Runtime e precisará ser incorporado ao projeto do Asset compute. Familiarize-se com as credenciais da conta de serviço (JWT).
 
-![Credenciais da conta do serviço de desenvolvedor do Adobe](./assets/app-builder/service-account.png)
+![Credenciais da conta de serviço do Adobe Developer](./assets/app-builder/service-account.png)
 
 1. No projeto do Adobe I/O Project App Builder, verifique se `Development` espaço de trabalho selecionado
 1. Toque em __Conta de serviço (JWT)__ under __Credenciais__

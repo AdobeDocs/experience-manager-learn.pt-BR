@@ -9,10 +9,10 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 Saiba mais sobre a modernização do repositório, conteúdo mutável e imutável, estrutura de pacotes e a ferramenta CLI do modernizador de repositório.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
 
 ## Ferramenta Repository Modernizer
 
-![Repository Modernizer](./assets/repository-modernizer.png)
+![Modernizador de repositório](./assets/repository-modernizer.png)
 
 Como parte da refatoração da base de código, use o [Ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) para reestruturar uma base de código 6.x para uma estrutura mais moderna.
 

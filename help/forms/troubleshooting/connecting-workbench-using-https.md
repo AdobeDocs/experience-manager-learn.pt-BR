@@ -6,18 +6,18 @@ role: Admin
 level: Intermediate
 version: 6.5
 feature: Workbench
-topic: Administração
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 89f485c3-cd6f-4814-8538-de9c07b33ba4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 3%
+source-wordcount: '52'
+ht-degree: 0%
 
 ---
-
 
 # Etapas para conectar o Workbench ao servidor do AEM Forms usando HTTPS
 
 *Este vídeo aborda as etapas para conectar o Workbench ao servidor da AEM Forms usando HTTPS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335482?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335482?quality=12&learn=on)

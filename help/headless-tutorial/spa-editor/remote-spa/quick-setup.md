@@ -10,7 +10,7 @@ thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 5%
@@ -23,7 +23,7 @@ A configuração rápida é uma apresentação rápida que ilustra como instalar
 
 A configuração rápida leva você diretamente ao estado final deste tutorial.
 
->[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
 _Uma apresentação em vídeo da configuração rápida_
 
@@ -84,7 +84,7 @@ Este tutorial tem uma dependência de __WKND 2.1.0+&#39;s__ projeto (para conte�
 Para executar uma configuração rápida, AEM pacotes são fornecidos aqui que contêm a configuração final de AEM e o conteúdo do tutorial.
 
 1. [Download ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Baixar ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [Download ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. Faça logon AEM Gerenciador de pacotes do SDK em [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) com o `admin` credenciais.
 1. __Upload__ o `wknd-app.all.x.x.x.zip` baixado na etapa 1
 1. Toque no __Instalar__ botão para a entrada `wknd-app.all.x.x.x.zip`
@@ -156,6 +156,6 @@ Antes de criar conteúdo, organize as janelas do navegador de modo que o AEM Aut
 
 Novas páginas de AEM na __Página inicial do aplicativo WKND > Aventura__ _must_ tem um nome de página AEM que corresponda ao nome do Fragmento de conteúdo da aventura correspondente. Isso ocorre porque a rota SPA para AEM mapeamento de página é baseada no último segmento da rota, que é o nome do Fragmento de conteúdo.
 
-## Parabéns. 
+## Parabéns!
 
 Você acabou de experimentar rapidamente como AEM Editor SPA pode aprimorar seu SPA com áreas controladas e editáveis! Se você estiver interessado - confira o resto do tutorial, mas certifique-se de começar de novo, já que nesta configuração rápida, seu ambiente de desenvolvimento local agora está no estado final do tutorial!

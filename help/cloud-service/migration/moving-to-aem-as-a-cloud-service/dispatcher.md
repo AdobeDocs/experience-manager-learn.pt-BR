@@ -9,10 +9,10 @@ level: Experienced
 kt: 8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Saiba mais sobre AEM Dispatcher para AEM as a Cloud Service, com foco nas alterações importantes do Dispatcher para AEM 6, na ferramenta de conversão do Dispatcher e em como usar o SDK de Ferramentas do Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Conversor do Dispatcher Converter
 
@@ -33,7 +33,7 @@ Como parte da refatoração da base de código, use o [Conversor do Dispatcher d
 
 + Use o [Ferramenta Conversor do Dispatcher do Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) para migrar uma configuração existente do Dispatcher.
 + Faça referência ao módulo Dispatcher no [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) como prática recomendada.
-+ [Configurar ferramentas locais do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) para validar o dispatcher, antes de testar em um ambiente Cloud Service.
++ [Configurar ferramentas locais do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=pt-BR) para validar o dispatcher, antes de testar em um ambiente Cloud Service.
 
 ## Exercício prático
 

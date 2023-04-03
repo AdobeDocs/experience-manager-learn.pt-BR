@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Os aprimoramentos do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de Imagem Panorâmica, Visualizador de Imagem de Realidade Virtual Panorâmica e Visualizador de Imagem Vertical. O Visualizador de panorâmica é uma maneira fácil de fornecer uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem, sem qualquer desenvolvimento personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >

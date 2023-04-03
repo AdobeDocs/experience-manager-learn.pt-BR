@@ -12,15 +12,15 @@ topic: Architecture
 role: Architect, Developer
 level: Beginner
 exl-id: 92afc9c4-3d58-4787-86f6-46495d89c4d4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 4%
 
 ---
 
-# Introdução à [!DNL Sling] {#introduction-sling}
+# Introdução ao [!DNL Sling] {#introduction-sling}
 
-Uma introdução a [!DNL Sling], uma estrutura da Web [!DNL RESTful] de código aberto que faz parte da pilha de tecnologia subjacente do Adobe Experience Manager.
+Uma introdução ao [!DNL Sling], um código aberto [!DNL RESTful] estrutura da Web que faz parte da pilha de tecnologia subjacente da Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

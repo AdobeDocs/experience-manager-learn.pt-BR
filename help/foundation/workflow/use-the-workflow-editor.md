@@ -10,9 +10,9 @@ kt: 657
 exl-id: 8ec12629-3acd-4958-b25c-0ae0b97ce244
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: KT-657.jpg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 O fluxo de trabalho permite o gerenciamento de processos de negócios no Experience Manager e é usado para o processamento automático de conteúdo, além de facilitar a governança e os processos que exigem tomada de decisão humana. O fluxo de trabalho é definido por meio de Modelos de fluxo de trabalho que são compostos por uma série de etapas e criados e gerenciados no [!UICONTROL Editor de modelo de fluxo de trabalho].
 
->[!VIDEO](https://video.tv.adobe.com/v/22201/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 2%
@@ -27,7 +27,7 @@ O AEM fornece vários consoles OSGi, cada um fornecendo insights importantes sob
 
 ## Pacotes
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 O console Pacotes é um catálogo dos pacotes OSGi e seus detalhes, implantados em AEM, juntamente com a capacidade ad hoc de iniciá-los e pará-los.
 
@@ -44,7 +44,7 @@ Clicar em cada pacote fornece detalhes que ajudam na depuração do aplicativo.
 
 ## Componentes
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 O console Componentes é um catálogo de todos os componentes OSGi implantados em AEM e fornece todas as informações sobre eles, desde o ciclo de vida do componente OSGi definido até aos serviços OSGi aos quais eles podem fazer referência
 
@@ -63,7 +63,7 @@ Principais aspectos que ajudam nas atividades de depuração:
 
 ## Modelos sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 O console Modelos do Sling está localizado em:
 

@@ -5,19 +5,19 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Serviço de Saída, Serviço Forms
-topic: Administração
+feature: Output Service,Forms Service
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6ccb3053-c28e-4c23-8fc0-e188b3873c36
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 1%
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
-
 
 # Como habilitar o Registro de desempenho no AEM Forms para depurar os problemas relacionados ao Forms e ao serviço de saída
 
 *Este vídeo aborda o processo para habilitar o logon de desempenho no AEM Forms para depurar os problemas relacionados ao Forms e ao serviço de saída .*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

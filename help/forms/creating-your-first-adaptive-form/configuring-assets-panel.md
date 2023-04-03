@@ -1,20 +1,20 @@
 ---
 title: Adicionar componentes à seção Ativos
 description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 5%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
-
 
 # Adicionar componentes à seção Ativos {#adding-components-to-assets-section}
 
@@ -22,10 +22,7 @@ Configure o layout de opção para o painel Ativos. O layout de opção oferece 
 
 **Configurar painel Ativos**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 
 **Definir título de resumo**
->[!VIDEO](https://video.tv.adobe.com/v/28387)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)

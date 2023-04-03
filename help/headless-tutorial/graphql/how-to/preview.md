@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: 024b2faac2e5a1a8d4bac64d1f70f292aac75dd0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM aplicativos headless oferecem suporte à visualização de criação integrada. A experiência de visualização vincula o editor de Fragmento de conteúdo do autor do AEM ao seu aplicativo personalizado (endereçável via HTTP), permitindo um deep link no aplicativo que renderiza o Fragmento de conteúdo que está sendo visualizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Para usar a visualização do Fragmento de conteúdo, várias condições devem ser atendidas:
 

@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 1%
@@ -30,7 +30,7 @@ A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a
 
 O vídeo a seguir ilustra um fluxo de trabalho comum usado por criadores que trabalham em aplicativos Adobe Creative Cloud e fazem a integração diretamente com AEM usando o Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## Recursos do Adobe Asset Link
 
@@ -61,7 +61,7 @@ O vídeo a seguir ilustra um fluxo de trabalho comum usado por criadores que tra
 
 O Adobe Asset Link fornece suporte a vinculação direta do InDesign entre o Adobe Asset Link e o AEM. Com o suporte a links diretos InDesign, é possível inserir (__Local vinculado__ ou __Inserir cópia__) ou arraste e solte ativos digitais no InDesign por AEM através do painel Adobe Asset Link. Além disso, introduz a renderização *Para posicionamento somente+ (FPO) .
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >

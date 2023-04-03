@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 20093733-2d19-4405-b453-1a8c2722adeb
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Crie um fluxo de trabalho AEM usando o componente assinar documento. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de sinal.
 O vídeo explica as várias etapas necessárias para criar um fluxo de trabalho eficaz para enviar documentos para assinatura.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)

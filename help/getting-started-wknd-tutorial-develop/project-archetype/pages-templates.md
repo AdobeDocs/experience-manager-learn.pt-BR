@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -72,7 +72,7 @@ Nesta parte do tutorial, você cria um novo Modelo de página de artigo que pode
 
 Geralmente, o planejamento de um novo site começa com modelos e designs estáticos. [Adobe XD](https://helpx.adobe.com/support/xd.html) O é uma ferramenta de design que cria a experiência do usuário. Em seguida, vamos inspecionar um Kit de interface do usuário e fazer mockups para ajudar a planejar a estrutura do Modelo de página de artigo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 **Baixe o [Arquivo de design de artigo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -92,7 +92,7 @@ Há três áreas principais de [Modelos editáveis](https://experienceleague.ado
 
 Em seguida, crie um modelo no AEM que corresponda à estrutura dos modelos. Isso ocorre em uma instância local do AEM. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo acima:
 
@@ -160,7 +160,7 @@ Uma prática comum ao criar conteúdo global, como um cabeçalho ou rodapé, é 
 
 O Arquétipo de projeto AEM gerou um Cabeçalho e um Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo acima:
 
@@ -206,7 +206,7 @@ Etapas de alto nível para o vídeo acima:
 
 Em seguida, crie uma página usando o modelo Página de artigo . Crie o conteúdo da página para corresponder aos modelos do site. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo acima:
 

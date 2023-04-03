@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Esta série de vídeos de várias partes oferece uma visão geral de como o cont
 
 ## Visão geral da Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando 
 
 ## Dynamic Media com AEM Sites e qualquer outro CMS
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experienc
 
 ## Dynamic Media para criar a coleção de mídia mista e o visualizador personalizado
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Este vídeo descreve o processo de criação simples de uma coleção de ativos 
 
 ## Predefinições de imagem do Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Este vídeo descreve como as Predefinições de imagem são criadas e o que é uma predefinição de imagem, um redutor de URL para uma série de argumentos do Servidor de imagem que operam em uma imagem sempre que um URL a solicita. Saiba mais sobre técnicas valiosas para estender e editar Predefinições de imagem.
 
@@ -76,7 +76,7 @@ Este vídeo descreve como as Predefinições de imagem são criadas e o que é u
 
 ## Modificadores de URL avançados do Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os recursos do próprio arquivo de origem - transparência de fundo, traçados de recorte e recortes e texto como variáveis - com os modificadores de URL do Dynamic Media.
 
@@ -88,7 +88,7 @@ Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os
 
 ## Dynamic Media Controlando o tamanho do arquivo JPEG em Kilobytes
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ Equilibre a qualidade da imagem jpeg em relação ao tamanho de arquivo resultan
 
 ## Adicionar legendas ocultas CC ao vídeo do Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Adicione facilmente as Legendas ocultas ao vídeo do Dynamic Media ao anexar o URL da cópia para apontar para um documento de arquivo adicional de Legendas ocultas, um arquivo de vídeo Web.VTT, contendo as informações CC de qualquer vídeo.
 

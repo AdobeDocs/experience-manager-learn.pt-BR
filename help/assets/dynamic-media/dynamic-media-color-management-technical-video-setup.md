@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 | PlacaSemRevestimento | CMYK | U.S.A., Placa Não Revestida v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| Fogra29 Não Revestido | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
+| UncoatedFogra29 | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
 | WebCoated | CMYK | US Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel SWOP Revestido da Web 2006 Grau 3 |

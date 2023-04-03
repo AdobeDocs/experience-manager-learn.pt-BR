@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: da3190bb-f350-420f-bf24-a6dede296efa
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 As miniaturas de vídeo personalizadas do AEM Assets oferecem aos autores a capacidade de selecionar uma miniatura apropriada em um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/16467/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16467?quality=12&learn=on)
 
 ## Personalização da miniatura do vídeo
 
->[!VIDEO](https://video.tv.adobe.com/v/18867/)
+>[!VIDEO](https://video.tv.adobe.com/v/18867?quality=12&learn=on)
 
 >[!NOTE]
 >

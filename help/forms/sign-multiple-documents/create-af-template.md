@@ -12,30 +12,24 @@ thumbnail: 6891.jpg
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c6e0fb92-28c1-4025-85ef-b99bad46f07a
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 4%
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
-
 
 # Criar modelo AF
 
 Criaremos um novo modelo de Formulário adaptável para a finalidade deste tutorial. Um novo componente de página também foi criado e associado a esse modelo. O JSP no componente de página busca dados do banco de dados MySql que é usado para preencher previamente o formulário adaptável.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
 [Você pode seguir este artigo para entender o processo de criação de um modelo de formulário adaptável e um componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
-## Ativos
+## Assets
 
-O modelo e o componente de página usado neste tutorial podem ser [baixados aqui](assets/sign-multiple-forms-template.zip)
-
-
-
-
-
+O modelo e o componente de página usado neste tutorial podem ser [baixado aqui](assets/sign-multiple-forms-template.zip)

@@ -1,6 +1,6 @@
 ---
 title: Arquitetura de criação e publicação com AEM GraphQL
-description: Saiba como e quando aproveitar os ambientes de Autor e Publicação do AEM ao usar APIs GraphQL AEM.
+description: Saiba como e quando aproveitar os ambientes de Autor e Publicação do AEM ao usar AEM APIs do GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -9,7 +9,7 @@ level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
 exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Arquitetura de criação e publicação
 
-Saiba como e quando aproveitar os ambientes de Autor e Publicação do AEM ao usar APIs GraphQL AEM.
+Saiba como e quando aproveitar os ambientes de Autor e Publicação do AEM ao usar AEM APIs do GraphQL.
 
 Neste vídeo, você:
 
@@ -26,6 +26,6 @@ Neste vídeo, você:
 + Conheça as práticas recomendadas para delivery sem interface com um ambiente de publicação do AEM
 + Explore como o ambiente de criação pode ser usado como uma visualização para um aplicativo
 
->[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
 
-_Baixe a  [Coleção ](./assets/aem-headless-video-series.postman_collection.json) Postman usada em toda a Série de vídeos sem cabeçalho AEM._
+_Baixe o [Postman Collection](./assets/aem-headless-video-series.postman_collection.json) usado em toda a série de vídeos sem cabeçalho AEM._

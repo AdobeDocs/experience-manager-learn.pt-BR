@@ -7,7 +7,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-22T00:00:00Z
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Uma breve introdução a eles no Asset Share Commons. O vídeo aborda o processo de criação de um novo tema com um esquema de cores personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
 Neste vídeo, um novo tema é criado com base no tema Escuro do Compartilhamento de Ativos Commons. O esquema de cores corresponderá a um logotipo personalizado para dar ao site uma aparência consistente.
 

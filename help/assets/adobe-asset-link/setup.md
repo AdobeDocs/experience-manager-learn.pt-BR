@@ -9,7 +9,7 @@ level: Beginner
 kt: 9401
 thumbnail: 338824.jpg
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -24,17 +24,17 @@ Dê um impacto rápido à sua organização, facilitando a colaboração de equi
 
 Saiba como configurar o Adobe Asset Link para AEM as a Cloud Service, configurar direitos de usuário e AEM as a Cloud Service e como instalar e usar o Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/338824/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
 ## Configuração do Asset Link para o Managed Services e no local
 
 Saiba como configurar o Adobe Asset Link para o AEM 6 em execução no Adobe Managed Services ou no local, configurar direitos de usuário e AEM as a Cloud Service e como instalar e usar o Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/338823/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 
 
 ## Configuração do Asset Link para a Confiança de Domínio
 
 Saiba mais sobre a Confiança no domínio, o que significa usar o Adobe Asset Link com o Experience Manager Assets e como configurar a Confiança no domínio.
 
->[!VIDEO](https://video.tv.adobe.com/v/338825/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338825?quality=12&learn=on)

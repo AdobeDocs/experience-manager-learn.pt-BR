@@ -11,10 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Este vídeo mostra como fornecer estilos personalizados para a funcionalidade de
 
 ## Personalização de estilos de diferença de página {#customizing-page-difference-styles}
 
->[!VIDEO](https://video.tv.adobe.com/v/18871/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18871?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -124,5 +124,5 @@ O resultado final de uma página diff&#39;d com os estilos acima aplicados seria
 ## Recursos adicionais {#additional-resources}
 
 * [Baixe o site de amostra We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Usar AEM bibliotecas de clientes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR)
+* [Usar AEM bibliotecas de clientes](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentação de CSS](https://lesscss.org/)

@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Este é um tutorial de várias partes e presume-se que as etapas descritas na se
 
 Em seguida, faça alterações nas fontes de tema para que o site corresponda à aparência da Marca WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo:
 
@@ -55,7 +55,7 @@ Baixe os estilos concluídos para a [Tema de amostra WKND](assets/theming/WKND-T
 
 Implante atualizações em um tema em um ambiente de AEM usando o pipeline front-end do Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo:
 
@@ -80,7 +80,7 @@ Há alguns exemplos de acordos de recompra do GitHub que podem ser usados como r
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
 * [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Utilizado como exemplo para projetos do &quot;mundo real&quot;.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você acabou de atualizar e implantar um tema para AEM!
 

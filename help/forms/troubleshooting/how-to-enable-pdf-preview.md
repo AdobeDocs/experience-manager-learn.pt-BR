@@ -1,23 +1,23 @@
 ---
-title: Visualização do PDF do Designer desativada - como ativar Visualizar PDF
-description: Etapas para configurar a Visualização de PDF no Designer
+title: PDF de visualização do Designer desativado - como ativar o PDF de visualização
+description: Etapas para configurar a Visualização do PDF no Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
 feature: Designer
-topic: Desenvolvimento
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0d5fb8d1-5aa2-40c7-b1c9-e4b5319e8d36
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '35'
-ht-degree: 5%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
 
+# Como ativar o Visualizar PDF
 
-# Como ativar a Visualização de PDF
+*Este vídeo aborda as etapas para ativar o PDF de visualização no Designer.*
 
-*Este vídeo aborda as etapas para ativar a visualização de PDF no Designer.*
-
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)

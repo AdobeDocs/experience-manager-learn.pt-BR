@@ -1,8 +1,8 @@
 ---
 title: Adicionar tabela à seção de contribuições
-seo-title: Adicionar tabela à seção de contribuições
+seo-title: Adding table to contributions section
 description: Esta é a parte 9 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
-seo-description: Esta é a parte 9 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
+seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
 topics: development
@@ -16,21 +16,20 @@ discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: b5a6c1c9-2be1-4622-b85b-a1996fb86a2f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 2%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
-
 
 # Adicionar tabela à seção de contribuições
 
 Nesta parte, adicionaremos uma tabela à seção contribuições.
-Consulte [Using Tables in Print Channel](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obter mais detalhes sobre o uso de tabelas no documento de canal de impressão.
+Consulte [Uso de tabelas no canal de impressão](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obter mais detalhes sobre o uso de tabelas no documento de canal de impressão.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Formulários > Formulários e documentos.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
 
 Abra a pasta 401KStatementPrint.
 
@@ -38,5 +37,4 @@ Abra o 401KStatementPrint no modo de edição.
 
 O vídeo a seguir apresenta as etapas envolvidas na configuração de uma tabela no documento do canal de impressão.
 
->[!VIDEO](https://video.tv.adobe.com/v/22387t1?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22387?quality=12&learn=on)

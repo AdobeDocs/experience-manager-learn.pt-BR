@@ -1,25 +1,26 @@
 ---
-title: Serviço Automated forms conversion
-description: Serviço Automated forms conversion. Este artigo descreve como um administrador de AEM pode configurar o serviço Automated forms conversion para automatizar a conversão de seus PDF forms em formulários adaptáveis. Essa ajuda destina-se aos administradores de TI e de AEM da sua organização.
-feature: Formulários adaptáveis
+title: Serviço de conversão automática de formulários
+description: Serviço de conversão automática de formulários. Este artigo descreve como um administrador de AEM pode configurar o serviço Automated forms conversion para automatizar a conversão de seus PDF forms em formulários adaptáveis. Essa ajuda destina-se aos administradores de TI e de AEM da sua organização.
+feature: Adaptive Forms
 thumbnail: 39493.jpg
 kt: 6114
-topic: Desenvolvimento
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
-# Serviço Automated forms conversion
+# Serviço de conversão automática de formulários
 
 Este artigo descreve como um administrador de AEM pode configurar o serviço Automated forms conversion para automatizar a conversão de seus PDF forms em formulários adaptáveis. Essa ajuda destina-se aos administradores de TI e de AEM da sua organização. As informações fornecidas baseiam-se no pressuposto de que qualquer pessoa que leia esta Ajuda está familiarizada com as seguintes tecnologias:
 
 * Instalação, configuração e administração de pacotes Adobe Experience Manager e AEM,
-* Uso de sistemas operacionais Linux e Microsoft Windows,
+* Usando sistemas operacionais Linux e Microsoft Windows,
 * Configuração de servidores de email SMTP
 
 ## Pré-requisitos:
@@ -36,5 +37,4 @@ Você precisa do seguinte para usar o Automated forms conversion Service:
 
 * O vídeo explica as etapas necessárias para conectar sua instância local do AEM Forms ao serviço do Automated forms conversion na Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)

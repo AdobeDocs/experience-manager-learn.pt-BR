@@ -2,13 +2,14 @@
 title: Variáveis no fluxo de trabalho AEM[Parte3]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 849bfe6c-6b7f-44d0-85bc-5df0287a9bca
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
 
@@ -19,4 +20,4 @@ As variáveis do tipo document são usadas para armazenar Documento de registro,
 
 Este vídeo destacará o uso da variável do tipo de documento para armazenar o DoR gerado e, em seguida, usar a variável do documento na etapa Enviar e-mail de um Fluxo de trabalho AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26452)
+>[!VIDEO](https://video.tv.adobe.com/v/26452?quality=12&learn=on)

@@ -8,19 +8,19 @@ role: Developer
 level: Beginner
 kt: 9092
 thumbnail: 337263.jpeg
-source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
+exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 6%
 
 ---
 
-
 # Remoção de amostras de um projeto AEM Maven
 
 Saiba como limpar e remover o código de amostra gerado de um AEM Project gerado pelo Arquétipo de Projeto AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/337263/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Recursos

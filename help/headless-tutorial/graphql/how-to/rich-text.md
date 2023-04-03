@@ -1,6 +1,6 @@
 ---
 title: Uso de rich text com AEM headless
-description: Saiba como criar conteúdo e incorporar conteúdo referenciado usando um editor de rich text de várias linhas com Fragmentos de conteúdo do Adobe Experience Manager e como o rich text é entregue pelas APIs GraphQL como JSON para ser consumido por aplicativos sem periféricos.
+description: Saiba como criar conteúdo e incorporar conteúdo referenciado usando um editor de rich text de várias linhas com Fragmentos de conteúdo do Adobe Experience Manager e como o rich text é fornecido pelas APIs do GraphQL como JSON para ser consumido por aplicativos sem cabeçalho.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -8,7 +8,7 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 O campo de texto de várias linhas é um tipo de dados de Fragmentos de conteúdo que permite aos autores criar conteúdo de rich text. As referências a outro conteúdo, como imagens ou outros Fragmentos de conteúdo, podem ser inseridas dinamicamente em linha dentro do fluxo do texto. O campo Single-line text é outro tipo de dados de Fragmentos de conteúdo que deve ser usado para elementos de texto simples.
 
-AEM API GraphQL oferece um recurso robusto para retornar rich text como HTML, texto sem formatação ou como JSON puro. A representação JSON é poderosa, pois oferece ao aplicativo cliente controle total sobre como renderizar o conteúdo.
+AEM API do GraphQL oferece um recurso robusto para retornar rich text como HTML, texto sem formatação ou como JSON puro. A representação JSON é poderosa, pois oferece ao aplicativo cliente controle total sobre como renderizar o conteúdo.
 
 ## Editor de várias linhas
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-No Editor de fragmento de conteúdo, a barra de menu do campo de texto de várias linhas fornece aos autores recursos padrão de formatação de rich text, como **bold**, *itálico* e sublinhado. Abrir o campo de várias linhas no modo de tela cheia ativa [ferramentas adicionais de formatação, como Tipo de parágrafo, localizar e substituir, verificação ortográfica e muito mais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+No Editor de fragmento de conteúdo, a barra de menu do campo de texto de várias linhas fornece aos autores recursos padrão de formatação de rich text, como **bold**, *itálico* e sublinhado. Abrir o campo de várias linhas no modo de tela cheia ativa [ferramentas adicionais de formatação, como Tipo de parágrafo, localizar e substituir, verificação ortográfica e muito mais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=pt-BR).
 
 >[!NOTE]
 >
@@ -57,13 +57,13 @@ Você também pode [habilitar referências em linha](#insert-fragment-references
 
 Verifique a **Traduzível** , se o conteúdo for localizado. Somente Rich Text e Texto sem formatação podem ser localizados. Consulte [trabalhar com conteúdo localizado para obter mais detalhes](./localized-content.md).
 
-## Resposta em rich text com API GraphQL
+## Resposta em rich text com a API do GraphQL
 
-Ao criar uma consulta GraphQL, os desenvolvedores podem escolher tipos de resposta diferentes de `html`, `plaintext`, `markdown`e `json` de um campo de várias linhas.
+Ao criar um query do GraphQL, os desenvolvedores podem escolher tipos de resposta diferentes de `html`, `plaintext`, `markdown`e `json` de um campo de várias linhas.
 
-Os desenvolvedores podem usar o [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) no editor Fragmento de conteúdo para mostrar todos os valores do Fragmento de conteúdo atual que podem ser retornados usando a API GraphQL.
+Os desenvolvedores podem usar o [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) no editor Fragmento de conteúdo para mostrar todos os valores do Fragmento de conteúdo atual que podem ser retornados usando a API do GraphQL.
 
-## Consulta GraphQL mantida
+## Consulta persistente do GraphQL
 
 Selecionar o `json` o formato de resposta para o campo de várias linhas oferece mais flexibilidade ao trabalhar com conteúdo rich text. O conteúdo Rich Text é fornecido como uma matriz de tipos de nó JSON que podem ser processados exclusivamente com base na plataforma do cliente.
 
@@ -85,7 +85,7 @@ query ($path: String!) {
 
 O `$path` usada na variável `_path` o filtro requer o caminho completo para o fragmento de conteúdo (por exemplo, `/content/dam/wknd/en/magazine/sample-article`).
 
-**Resposta GraphQL:**
+**Resposta da GraphQL:**
 
 ```json
 {
@@ -131,7 +131,7 @@ Abaixo estão vários exemplos de tipos de resposta de um campo de várias linha
 
 +++exemplo HTML
 
-**Consulta persistente de GraphQL:**
+**Consulta persistente do GraphQL:**
 
 ```graphql
 query ($path: String!) {
@@ -147,7 +147,7 @@ query ($path: String!) {
 }
 ```
 
-**Resposta GraphQL:**
+**Resposta da GraphQL:**
 
 ```json
 {
@@ -168,7 +168,7 @@ query ($path: String!) {
 
 +++Exemplo de marcação
 
-**Consulta persistente de GraphQL:**
+**Consulta persistente do GraphQL:**
 
 ```graphql
 query ($path: String!) {
@@ -184,7 +184,7 @@ query ($path: String!) {
 }
 ```
 
-**Resposta GraphQL:**
+**Resposta da GraphQL:**
 
 ```json
 {
@@ -205,7 +205,7 @@ query ($path: String!) {
 
 +++Exemplo de texto simples
 
-**Consulta persistente de GraphQL:**
+**Consulta persistente do GraphQL:**
 
 ```graphql
 query ($path: String!) {
@@ -221,7 +221,7 @@ query ($path: String!) {
 }
 ```
 
-**Resposta GraphQL:**
+**Resposta da GraphQL:**
 
 ```json
 {
@@ -331,10 +331,10 @@ O `nodeMap` é um literal de Objeto JavaScript usado como um mapa. Cada uma das 
 
 ### Exemplo de código completo
 
-Um utilitário de renderização de rich text reutilizável pode ser encontrado no [Exemplo de reação GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Um utilitário de renderização de rich text reutilizável pode ser encontrado no [Exemplo de reação de WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 * [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - utilitário reutilizável que expõe uma função `mapJsonRichText`. Esse utilitário pode ser usado por componentes que desejam renderizar uma resposta JSON de rich text como React JSX.
-* [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Exemplo de componente que faz uma solicitação GraphQL que inclui rich text. O componente usa o `mapJsonRichText` para renderizar o rich text e quaisquer referências.
+* [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Componente de exemplo que faz uma solicitação do GraphQL que inclui rich text. O componente usa o `mapJsonRichText` para renderizar o rich text e quaisquer referências.
 
 
 ## Adicionar referências em linha ao rich text {#insert-fragment-references}
@@ -351,9 +351,9 @@ As referências a outros Fragmentos de conteúdo também podem ser vinculadas ou
 
 A captura de tela acima descreve outro Fragmento de conteúdo, Guia Ultimate para os Parks de LA Skate, sendo inserido no campo de várias linhas. Os tipos de Fragmentos de conteúdo que podem ser inseridos em campos são controlados pela variável **Modelos permitidos de fragmento do conteúdo** na configuração do [tipo de dados de várias linhas](#multi-line-data-type) no Modelo de fragmento de conteúdo.
 
-## Consultar referências em linha com GraphQL
+## Consultar referências em linha com o GraphQL
 
-A API GraphQL permite que os desenvolvedores criem uma consulta que inclui propriedades adicionais sobre qualquer referência inserida em um campo de várias linhas. A resposta JSON inclui um `_references` que lista essas propriedades extras. A resposta JSON fornece aos desenvolvedores controle total sobre como renderizar as referências ou links em vez de precisar lidar com o HTML opinativo.
+A API do GraphQL permite que os desenvolvedores criem uma consulta que inclui propriedades adicionais sobre qualquer referência inserida em um campo de várias linhas. A resposta JSON inclui um `_references` que lista essas propriedades extras. A resposta JSON fornece aos desenvolvedores controle total sobre como renderizar as referências ou links em vez de precisar lidar com o HTML opinativo.
 
 Por exemplo, talvez você queira:
 
@@ -361,9 +361,9 @@ Por exemplo, talvez você queira:
 * Renderize uma imagem em linha usando o caminho absoluto para um ambiente de publicação do AEM como `src` valor.
 * Determine como renderizar uma referência incorporada para outro Fragmento de conteúdo com propriedades personalizadas adicionais.
 
-Use o `json` tipo de retorno e inclua o `_references` objeto ao criar uma consulta GraphQL:
+Use o `json` tipo de retorno e inclua o `_references` ao criar uma consulta GraphQL:
 
-**Consulta persistente de GraphQL:**
+**Consulta persistente do GraphQL:**
 
 ```graphql
 query ($path: String!) {
@@ -509,7 +509,7 @@ const nodeMap = {
     }
 ```
 
-A abordagem de alto nível é inspecionar sempre que uma `nodeType` igual `reference` na resposta JSON da linha múltipla. Uma função de renderização personalizada pode ser chamada, incluindo a variável `_references` objeto retornado na resposta GraphQL.
+A abordagem de alto nível é inspecionar sempre que uma `nodeType` igual `reference` na resposta JSON da linha múltipla. Uma função de renderização personalizada pode ser chamada, incluindo a variável `_references` objeto retornado na resposta do GraphQL.
 
 O caminho de referência em linha pode ser comparado à entrada correspondente no `_references` objeto e outro mapa personalizado `renderReference` pode ser chamado.
 
@@ -532,11 +532,11 @@ O `__typename` do `_references` pode ser usado para mapear diferentes tipos de r
 
 ### Exemplo de código completo
 
-Um exemplo completo de escrita de um renderizador de referências personalizado pode ser encontrado em [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) como parte da [Exemplo de reação GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Um exemplo completo de escrita de um renderizador de referências personalizado pode ser encontrado em [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) como parte da [Exemplo de reação de WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 ## Exemplo de ponta a ponta
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 O vídeo anterior mostra um exemplo completo:
 

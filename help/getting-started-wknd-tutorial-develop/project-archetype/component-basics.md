@@ -12,7 +12,7 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Este capítulo baseia-se em um projeto genérico gerado pelo [Arquétipo de proj
 >
 > Se você concluiu o capítulo anterior com êxito, é possível reutilizar o projeto e ignorar as etapas para verificar o projeto inicial.
 
->[!VIDEO](https://video.tv.adobe.com/v/330985/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330985?quality=12&learn=on)
 
 Abra um novo terminal de linha de comando e execute as seguintes ações.
 
@@ -87,7 +87,7 @@ Abra um novo terminal de linha de comando e execute as seguintes ações.
 
 Os componentes podem ser considerados como pequenos blocos componentes modulares de uma página da Web. Para reutilizar componentes, os componentes devem ser configuráveis. Isso é feito por meio da caixa de diálogo do autor. Em seguida, criaremos um componente simples e verificaremos como os valores da caixa de diálogo são mantidos em AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
 
 Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
@@ -105,7 +105,7 @@ Idioma do modelo do HTML ou **[HTL](https://experienceleague.adobe.com/docs/expe
 
 Em seguida, atualizaremos o `HelloWorld` Script HTL para exibir uma saudação extra antes da mensagem de texto.
 
->[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
 
 Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
@@ -175,7 +175,7 @@ Os Modelos do Sling são objetos Java™ POJOs (Plain Old Java™ Objects) orien
 
 Em seguida, vamos fazer algumas atualizações na `HelloWorldModel` Modelo do Sling para aplicar alguma lógica de negócios aos valores armazenados no JCR antes de exibi-los na página.
 
->[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
 
 1. Abra o arquivo `HelloWorldModel.java`, que é o Modelo do Sling usado com o `HelloWorld` componente.
 
@@ -286,7 +286,7 @@ O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-
 
 Em seguida, atualize os estilos de CSS para a `HelloWorld` componente.
 
->[!VIDEO](https://video.tv.adobe.com/v/340750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
 
 Abaixo estão as etapas de alto nível executadas no vídeo acima.
 

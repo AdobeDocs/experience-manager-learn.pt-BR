@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Saiba como o AEM as a Cloud Services Bulk Import Service pode ser usado para importar ativos de fontes não AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/336969/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
 ## Uso do serviço de importação em massa
 
@@ -35,5 +35,5 @@ O Serviço de Importação em Massa é usado para transferir arquivos armazenado
 
 ## Outros recursos
 
-+ [Sessão Live de Desenvolvedores do Adobe na Assimilação de Ativos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
++ [Sessão do Adobe Developers Live sobre assimilação de ativos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 

@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Neste capítulo, criamos e executamos um pipeline front-end no Adobe Cloud Manag
 
 ## Uso do pipeline de front-end
 
->[!VIDEO](https://video.tv.adobe.com/v/3409420/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409420?quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -102,7 +102,7 @@ E __mais importante__ para __Localização do código__ campo o valor é `/ui.fr
 
 
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você criou, executou e verificou o pipeline do Front-End que apenas constrói e implanta o módulo &#39;ui.frontend&#39; do projeto WKND Sites. Agora, sua equipe de front-end pode iterar rapidamente no design do site e no comportamento de front-end, fora do ciclo de vida do projeto de AEM completo.
 

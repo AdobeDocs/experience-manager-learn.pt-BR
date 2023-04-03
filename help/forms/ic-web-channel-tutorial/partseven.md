@@ -1,8 +1,8 @@
 ---
 title: Adicionar conteúdo de texto e imagem ao documento do canal da Web
-seo-title: Adicionar conteúdo de texto e imagem ao documento do canal da Web
-description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto ao painel de cabeçalho. '
-seo-description: 'Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto ao painel de cabeçalho. '
+seo-title: Adding text and image content to web channel document
+description: Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto ao painel de cabeçalho.
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the header panel.
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
 feature: Interactive Communication
 topics: development
@@ -14,14 +14,13 @@ discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3babebd8-3c17-4583-9201-d93bae82f134
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
-
 
 # Adicionar conteúdo de texto e imagem ao documento do canal da Web
 
@@ -35,5 +34,4 @@ Para adicionar conteúdo ao documento do canal da Web, siga o vídeo abaixo.
 
 O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de destino apropriadas no documento de canal da Web.
 
->[!VIDEO](https://video.tv.adobe.com/v/22359/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22359?quality=12&learn=on)

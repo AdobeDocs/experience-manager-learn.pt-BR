@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342067.jpeg
 exl-id: 90c61bfb-46ff-4941-b89e-ce38d1025de8
-source-git-commit: 3854deb12c2d5a5c91c3416939f3e4534cb0094f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/No local. Eles também tocam na migração para a nuvem.
 
->[!VIDEO](https://video.tv.adobe.com/v/342067/)
+>[!VIDEO](https://video.tv.adobe.com/v/342067?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 

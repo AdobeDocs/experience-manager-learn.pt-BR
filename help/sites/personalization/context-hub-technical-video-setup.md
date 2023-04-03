@@ -11,10 +11,10 @@ topic: Personalization
 role: Developer
 level: Intermediate
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: 9e4b01173f5d89075ad64adfb8b982b2297e2c39
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados, conforme necessário. Dessa forma, o ContextHub representa uma camada de dados nas páginas. Esta página descreve como adicionar um hub de contexto às páginas do site AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/23765/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 O AEM 6.3 apresenta vários novos recursos e aprimoramentos nesta versão para simplificar a experiência de criação de formulários e documentos adaptáveis. As melhorias ajudam a reduzir o tempo de comercialização e permitem que os usuários trabalhem com formulários e documentos
 
->[!VIDEO](https://video.tv.adobe.com/v/19500/)
+>[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
 **Alguns dos principais aprimoramentos do Adaptive Form Editor incluem:**
 

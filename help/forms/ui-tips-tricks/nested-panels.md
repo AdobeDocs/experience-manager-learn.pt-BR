@@ -10,7 +10,7 @@ level: Beginner
 kt: 9335
 exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O comportamento padrão desse formulário seria exibir todos os painéis à esqu
 
 Para alterar esse comportamento padrão, precisamos fazer o seguinte
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
 Adicione o seguinte código ao evento click da variável **Próximo** botão usando o editor de código
@@ -56,7 +56,7 @@ O código acima ajudará você a navegar entre as guias e os painéis filhos de 
 
 Use o editor de estilos para ocultar o título dos painéis filho de guias.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >

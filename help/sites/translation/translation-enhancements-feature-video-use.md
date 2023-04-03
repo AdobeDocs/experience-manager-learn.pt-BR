@@ -7,7 +7,7 @@ feature: Multi Site Manager, Language Copy
 role: User
 level: Beginner
 exl-id: 21633308-ffe4-4023-affe-59269504da69
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 5%
@@ -20,7 +20,7 @@ AEM estrutura de tradução robusta permite que o conteúdo AEM seja traduzido d
 
 ## Aprimoramentos de tradução no AEM 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
 
 AEM 6.5 as melhorias na tradução incluem:
 
@@ -34,7 +34,7 @@ AEM 6.5 as melhorias na tradução incluem:
 
 ## Aprimoramentos de tradução no AEM 6.4
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
 
 Agora, os autores podem criar de forma rápida e fácil projetos de tradução em vários idiomas diretamente do administrador do Sites ou do administrador de Projetos, configurar esses projetos para promover inicializações automaticamente e até mesmo definir agendamentos para automação.
 

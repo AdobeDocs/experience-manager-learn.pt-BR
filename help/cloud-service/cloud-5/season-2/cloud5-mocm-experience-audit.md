@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343620.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Na primeira parte de uma série de três etapas, exploramos os conceitos básicos do Cloud Manager e mergulhamos os dedos nos recursos de Auditoria de experiência.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620)
+>[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 

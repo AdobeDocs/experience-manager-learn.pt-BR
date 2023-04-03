@@ -10,7 +10,7 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '2961'
 ht-degree: 2%
@@ -55,7 +55,7 @@ O fluxo típico de uma integração SAML de publicação do AEM é o seguinte:
 
 ## Apresentação da configuração
 
->[!VIDEO](https://video.tv.adobe.com/v/343040/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Este vídeo aborda a configuração da integração do SAML 2.0 com AEM serviço de publicação as a Cloud Service e o uso do Okta como IDP.
 

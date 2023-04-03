@@ -11,7 +11,7 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Os ícones de componentes permitem que os autores identifiquem rapidamente um componente com ícones ou abreviações significativas. Agora os autores podem encontrar os Componentes necessários para criar suas experiências da Web mais rápido do que nunca.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
 O navegador de componentes agora é exibido em um tema cinza consistente, exibindo:
 
-* **[!UICONTROL Grupo de componentes]**
+* **[!UICONTROL Grupo de componente]**
 * **[!UICONTROL Título do componente]**
 * **[!UICONTROL Descrição do componente]**
 * **[!UICONTROL Ícone do componente]**

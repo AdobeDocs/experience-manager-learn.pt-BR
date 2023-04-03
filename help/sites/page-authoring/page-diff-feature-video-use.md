@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Os recursos de diferença de página do AEM Sites mostram uma exibição rápida
 
 ## Comparação de versões da página {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
 **Alterações de HTML**
 
@@ -43,7 +43,7 @@ Os recursos de diferença de página do AEM Sites mostram uma exibição rápida
 
 ## Comparação de páginas de lançamento {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
 
 O recurso de Diferença de página também pode ser usado para identificar a diferença entre blueprints e livecopies, e blueprints e cópias de idioma.
 

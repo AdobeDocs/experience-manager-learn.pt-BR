@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -29,4 +29,4 @@ ht-degree: 0%
 
 [Gasodutos de não produção CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines) são divididas em duas categorias: pipelines de qualidade de código e pipelines de implantação. O código de pipelines de qualidade todos os códigos de uma ramificação Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente AEM provisionado que não seja Estágio ou Produção.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)

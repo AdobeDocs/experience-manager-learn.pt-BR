@@ -12,7 +12,7 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1821'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Revise as ferramentas necessárias e as instruções para configurar um [ambient
 
 ## O que você vai criar {#what-build}
 
->[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30152?quality=12&learn=on)
 
 Neste capítulo, você gera um novo projeto do Adobe Experience Manager usando o [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype). Seu projeto de AEM contém código, conteúdo e configurações completos usados para uma implementação do Sites. O projeto gerado neste capítulo serve de base para uma implementação do Site da WKND e baseia-se em capítulos futuros.
 
@@ -252,7 +252,7 @@ O **[núcleo](https://experienceleague.adobe.com/docs/experience-manager-core-co
 
 ### Módulos de Ui.apps e Ui.content {#apps-content-module}
 
-O **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** O módulo maven contém todo o código de renderização necessário para o site abaixo `/apps`. Isso inclui CSS/JS armazenado em um formato de AEM chamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR). Isso também inclui [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) scripts para renderização de HTML dinâmico. Você pode pensar no **ui.apps** como um mapa para a estrutura no JCR, mas em um formato que pode ser armazenado em um sistema de arquivos e comprometido com o controle de origem. O **ui.apps** O módulo contém somente código.
+O **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** O módulo maven contém todo o código de renderização necessário para o site abaixo `/apps`. Isso inclui CSS/JS armazenado em um formato de AEM chamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR). Isso também inclui [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) scripts para renderização de HTML dinâmico. Você pode pensar no **ui.apps** como um mapa para a estrutura no JCR, mas em um formato que pode ser armazenado em um sistema de arquivos e comprometido com o controle de origem. O **ui.apps** O módulo contém somente código.
 
 Para criar apenas este módulo:
 

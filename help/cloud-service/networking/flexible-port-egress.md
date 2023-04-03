@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 5%
@@ -44,7 +44,7 @@ Os itens a seguir são necessários ao configurar saídas flexíveis da porta:
 
 Para obter mais detalhes, consulte a seguinte apresentação sobre como configurar, configurar e obter credenciais da API do Cloud Manager e como usá-las para fazer uma chamada da API do Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/342235/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
 
 Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. O `curl` Os comandos assumem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o `\` caractere de quebra de linha com `^`.
 

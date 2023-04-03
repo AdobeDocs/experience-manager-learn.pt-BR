@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Os Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marketing, cartões comerciais, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos quando integrado ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
 
->[!VIDEO](https://video.tv.adobe.com/v/17069/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >

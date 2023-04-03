@@ -1,6 +1,6 @@
 ---
-title: Teste de uma extensão do console de Fragmentos de conteúdo do AEM
-description: Saiba como testar uma extensão do console de Fragmento de conteúdo do AEM antes de implantar na produção.
+title: Teste de uma extensão do console Fragmento de conteúdo AEM
+description: Saiba como testar uma extensão do console Fragmento de conteúdo AEM antes de implantar na produção.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: 1a4ee470a650aacc5412fbd27062ca14ccdb1967
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -19,36 +19,36 @@ ht-degree: 0%
 
 # Testar uma extensão
 
-As extensões do Console de fragmentos de conteúdo do AEM podem ser testadas em relação a qualquer ambiente as a Cloud Service do AEM na organização Adobe à qual a extensão pertence.
+AEM extensões do console do fragmento de conteúdo podem ser testadas em relação a qualquer ambiente AEM as a Cloud Service na organização do Adobe à qual a extensão pertence.
 
-O teste de uma extensão é feito por meio de um URL especialmente criado que instrui o console de Fragmento de conteúdo do AEM a carregar a extensão.
+O teste de uma extensão é feito por meio de um URL especialmente criado que instrui o console Fragmento de conteúdo AEM a carregar a extensão.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412877/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
 
-## URL do console de fragmentos de conteúdo do AEM
+## URL do console Fragmento do conteúdo do AEM
 
-![URL do console de fragmentos de conteúdo do AEM](./assets/test/content-fragment-console-url.png){align="center"}
+![URL do console Fragmento do conteúdo do AEM](./assets/test/content-fragment-console-url.png){align="center"}
 
-Para criar um URL que monte a extensão de não produção em um Console de fragmentos de conteúdo do AEM, o URL do Console de fragmentos de conteúdo do AEM desejado deve ser coletado. Navegue até o ambiente as a Cloud Service do AEM para testar a extensão e copie o URL do respectivo Console do Fragmento de conteúdo do AEM.
+Para criar um URL que monte a extensão de não-produção em um console de Fragmento de conteúdo AEM, o URL do console de Fragmento de conteúdo AEM desejado deve ser coletado. Navegue até o ambiente as a Cloud Service AEM para testar a extensão e copie o URL do console do Fragmento de conteúdo AEM.
 
-1. Faça login no ambiente as a Cloud Service AEM desejado.
+1. Faça logon no env as a Cloud Service desejado.
 
-   + Usar um ambiente de desenvolvimento de AEM para [teste de builds de desenvolvimento](#testing-development-builds)
-   + Usar o ambiente de preparo do AEM ou desenvolvimento de controle de qualidade para [teste de builds de estágio](#testing-stage-builds)
+   + Usar um ambiente de desenvolvimento de AEM para [testando criações de desenvolvimento](#testing-development-builds)
+   + Use o ambiente de preparo AEM ou desenvolvimento de controle de qualidade para [teste de construções de estágio](#testing-stage-builds)
 
-1. Selecione o __Fragmentos de conteúdo__ ícone.
-1. Aguarde o Console do Fragmento de conteúdo do AEM ser carregado no navegador.
-1. Copie o URL do Console do Fragmento de conteúdo do AEM da barra de endereços do navegador. Ele deve se parecer com:
+1. Selecione o __Fragmentos de conteúdo__ ícone .
+1. Aguarde até que o console Fragmento do conteúdo do AEM seja carregado no navegador.
+1. Copie o URL do console do fragmento de conteúdo do AEM na barra de endereços do navegador, ele deve parecer:
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-Esse URL é usado abaixo ao criar os URLs para desenvolvimento e teste de preparo.
+Esse URL é usado abaixo ao criar os URLs para desenvolvimento e teste de estágio.
 
-## Testar builds de desenvolvimento local
+## Testar criações de desenvolvimento local
 
-1. Abra uma linha de comando na raiz do projeto de extensão.
+1. Abra uma linha de comando para a raiz do projeto de extensão.
 1. Execute a extensão Console do fragmento de conteúdo do AEM como um aplicativo local do App Builder
 
    ```shell
@@ -64,11 +64,11 @@ Esse URL é usado abaixo ao criar os URLs para desenvolvimento e teste de prepar
 
 Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 
-1. Adicione os dois parâmetros de consulta a seguir à [URL do console de fragmento de conteúdo do AEM](#aem-content-fragment-console-url)
+1. Adicione os dois parâmetros de consulta a seguir ao [URL do console do fragmento de conteúdo do AEM](#aem-content-fragment-console-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, normalmente `&ext=https://localhost:9080`.
 
-   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __primeiro__ parâmetros de consulta no URL, pois o Console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), então a pós-fixação incorreta dos parâmetros após a variável `#` não funcionará.
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __first__ consulte parâmetros no URL, pois o console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), portanto, a correção incorreta dos parâmetros após a `#` não funcionará.
 
    O URL de teste deve ser semelhante a:
 
@@ -78,25 +78,25 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 
 1. Copie e cole o URL de teste no navegador.
 
-   + Você pode ter que inicialmente, e depois periodicamente, você deve [aceitar o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) para o host do aplicativo local (`https://localhost:9080`).
+   + Você pode ter que começar, e depois periodicamente, você deve [aceitar o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) para o host do aplicativo local (`https://localhost:9080`).
 
-1. O Console do Fragmento de conteúdo do AEM é carregado com a versão local da extensão inserida nele para teste e alterações de recarregamento dinâmico enquanto o aplicativo local do App Builder está em execução.
+1. O console Fragmento do conteúdo do AEM é carregado com a versão local da extensão injetada para teste e as alterações de recarregamento automático enquanto o aplicativo local do App Builder estiver em execução.
 
 >[!IMPORTANT]
 >
->Lembre-se de que, ao usar essa abordagem, a extensão em desenvolvimento afeta apenas sua experiência, e todos os outros usuários do console de Fragmento de conteúdo AEM a acessam sem a extensão inserida.
+>Lembre-se de que, ao usar essa abordagem, a extensão em desenvolvimento afeta apenas sua experiência e todos os outros usuários do console Fragmento de conteúdo AEM a acessam sem a extensão injetada.
 
 
-## Testar builds de estágio
+## Criar estágios de teste
 
-1. Abra uma linha de comando na raiz do projeto de extensão.
-1. Certifique-se de que o espaço de trabalho do Palco esteja ativo (ou qualquer espaço de trabalho usado para teste).
+1. Abra uma linha de comando para a raiz do projeto de extensão.
+1. Certifique-se de que o espaço de trabalho de Preparo esteja ativo (ou qualquer espaço de trabalho usado para testes).
 
    ```shell
    $ aio app use -w Stage
    ```
 
-   Mesclar alterações em `.env` e `.aio`.
+   Mesclar quaisquer alterações no `.env` e `.aio`.
 
 1. Implante o aplicativo App Builder de extensão atualizado. Se não estiver conectado, execute `aio login` primeiro.
 
@@ -114,11 +114,11 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    Successful deployment 🏄
    ```
 
-1. Adicione os dois parâmetros de consulta a seguir à [URL do console de fragmento de conteúdo do AEM](#aem-content-fragment-console-url)
+1. Adicione os dois parâmetros de consulta a seguir ao [URL do console do fragmento de conteúdo do AEM](#aem-content-fragment-console-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __primeiro__ parâmetros de consulta no URL, pois o Console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), então a pós-fixação incorreta dos parâmetros após a variável `#` não funcionará.
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __first__ consulte parâmetros no URL, pois o console do fragmento de conteúdo usa uma rota de hash (`#/@wknd/aem/...`), portanto, a correção incorreta dos parâmetros após a `#` não funcionará.
 
    O URL de teste deve ser semelhante a:
 
@@ -127,11 +127,11 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    ```
 
 1. Copie e cole o URL de teste no navegador.
-1. O Console do Fragmento de conteúdo do AEM injeta a versão da extensão implantada no espaço de trabalho do Preparo no. Esse URL do Palco pode ser compartilhado com o controle de qualidade ou usuários empresariais para teste.
+1. O console Fragmento do conteúdo do AEM injeta a versão da extensão implantada no Espaço de trabalho do Stage. Esse URL de preparo pode ser compartilhado com o controle de qualidade ou usuários comerciais para testes.
 
-Lembre-se de que, ao usar essa abordagem, a extensão Preparada é inserida somente no Console do Fragmento de conteúdo do AEM quando o acesso for feito com o URL do estágio de artesanato.
+Lembre-se, ao usar essa abordagem, a extensão Preparado só é injetada no do Console do Fragmento de Conteúdo AEM quando o acesso com o URL do Estágio da arte é realizado.
 
-1. As extensões implantadas podem ser atualizadas executando `aio app deploy` novamente e essas alterações serão refletidas automaticamente ao usar o URL de teste.
+1. As extensões implantadas podem ser atualizadas ao executar `aio app deploy` novamente, e essas alterações refletem automaticamente ao usar o URL de teste.
 1. Para remover uma extensão para teste, execute `aio app undeploy`.
 
 

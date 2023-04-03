@@ -8,10 +8,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ Se os modelos de fragmento de conteúdo forem **not** habilitado para uma config
 >
 >Quando a variável `global` for usada, a configuração se aplica a todo o conteúdo e `cq:conf` não precisa ser definida.
 >
->Consulte a [[!UICONTROL Navegador de configuração] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) para obter mais informações.
+>Consulte a [[!UICONTROL Navegador de configuração] documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=pt-BR) para obter mais informações.
 
 1. Faça logon no AEM Author como um usuário com as permissões apropriadas para modificar a configuração relevante.
    * Para este tutorial, a variável **administrador** usuário pode ser usado.
@@ -70,7 +70,7 @@ Se os modelos de fragmento de conteúdo forem **not** habilitado para uma config
    1. Verifique o **[!UICONTROL Configuração na nuvem]** estiver definido como **/conf/wknd-mobile**
    1. Toque **[!UICONTROL Salvar e fechar]** no canto superior direito para persistir as alterações
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Munidos do mapeamento, podemos definir o Fragmento do conteúdo que é usado par
 1. Toque **[!UICONTROL Criar]** para abrir o assistente de criação do Modelo de fragmento de conteúdo.
 1. Enter **[!DNL Event]** como **[!UICONTROL Título do modelo]** *(a descrição é opcional)* e tocar **[!UICONTROL Criar]** para salvar.
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## Definição da estrutura do modelo de fragmento de conteúdo
 
@@ -169,7 +169,7 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 * [!UICONTROL Nome da Propriedade] : `venueCity`
 * [!UICONTROL Opções] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

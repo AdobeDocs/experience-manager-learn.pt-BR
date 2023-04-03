@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 kt: 201
 thumbnail: 18131.jpg
 exl-id: cc4ffbd0-207a-42e4-bfcb-d6c83fb97237
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Saiba como os Fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18131?quality=12&learn=on)
 
 ## Casos de uso da tradução do fragmento de conteúdo {#content-fragment-translation-use-cases}
 

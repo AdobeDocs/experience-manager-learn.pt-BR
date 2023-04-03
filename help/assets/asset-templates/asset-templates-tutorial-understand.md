@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas a
 
 ## Construir o arquivo de modelo de InDesign {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Baixe e abra o [**Modelo de arquivo de InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Abra o painel Tags ,** revise a convenção de nomenclatura de tag e observe que os elementos que podem ser criados para autor no arquivo de InDesign já estão marcados. Lembre-se, somente os elementos marcados podem ser editados em AEM.
@@ -51,7 +51,7 @@ Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas a
 
 ## Criação e criação de um modelo de ativo no AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Iniciar InDesign Server** no porto 8080.
 2. Verifique se a **A instância do autor do AEM está configurada para interagir com seu InDesign Server**(e vice-versa).

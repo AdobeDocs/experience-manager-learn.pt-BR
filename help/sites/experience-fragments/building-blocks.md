@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Os blocos de construção são um subrecurso dos Fragmentos de experiência. Os blocos de construção permitem que os autores de conteúdo reutilizem componentes em diferentes variações de Fragmentos de experiência.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
 
 >[!NOTE]
 >

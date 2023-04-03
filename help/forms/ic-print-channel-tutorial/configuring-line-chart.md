@@ -1,8 +1,8 @@
 ---
 title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
-seo-title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
+seo-title: Configuring line chart for your first interactive communication document
 description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
-seo-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
+seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will add a Line chart to display the account balance.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
 feature: Interactive Communication
 topics: development
@@ -16,20 +16,19 @@ thumbnail: 22386.jpg
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 86a955e2-2463-4973-8d3c-4c694db8c787
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 2%
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
-
-# Configurar o gráfico de linhas para o primeiro documento de comunicação interativo {#configuring-line-chart-for-your-first-interactive-communication-document}
+# Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa {#configuring-line-chart-for-your-first-interactive-communication-document}
 
 Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Formulários > Formulários e documentos.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
 
 Abra a pasta 401KStatementPrint.
 
@@ -39,5 +38,4 @@ A partir do AEM Forms 6.4, é muito fácil exibir dados usando vários tipos de 
 
 O vídeo a seguir o orienta pelas etapas para adicionar e configurar o componente de gráfico
 
->[!VIDEO](https://video.tv.adobe.com/v/22386/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22386?quality=12&learn=on)

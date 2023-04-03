@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 5%
@@ -23,11 +23,11 @@ ht-degree: 5%
 
 Uma apresentação em vídeo sobre como instalar e usar [!DNL Apache Sling Dynamic Include] com [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) em execução [!DNL Apache HTTP Web Server].
 
->[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Verifique se a versão mais recente AEM Dispatcher está instalada localmente.
+> Verifique se a versão mais recente do AEM Dispatcher está instalada localmente.
 
 1. Baixe e instale o [[!DNL Sling Dynamic Include] pacote](https://sling.apache.org/downloads.cgi).
 1. Configurar [!DNL Sling Dynamic Include] através da [!DNL OSGi Configuration Factory] at **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.

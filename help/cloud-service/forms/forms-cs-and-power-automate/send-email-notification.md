@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 10828
-source-git-commit: 043842912132336a4ec52b54776fab1525b09d16
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Envie uma notificação por email para um remetente de formulário adaptável com o Microsoft Power Automate ao extrair valores de campo do envio do formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)

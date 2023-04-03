@@ -9,9 +9,9 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11077
-source-git-commit: aea43a705b3959f8be26238d32b816b3953e153e
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Extraia anexos de formulário e envie os anexos em um e-mail em um fluxo de trabalho de automatização de energia.
 O vídeo a seguir explica as etapas necessárias para formar anexos a partir dos dados enviados.
->[!VIDEO](https://video.tv.adobe.com/v/3409017/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
 
 A seguir está o schema de objetos de anexo que você precisa usar na etapa Analisar esquema JSON
 

@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 O console Componentes fornece aos desenvolvedores e administradores um local central para gerenciar todos os vários componentes em uma implementação do Sites. O vídeo a seguir detalha os recursos do console Componentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
 
 O Console de componentes fornece a seguinte funcionalidade:
 

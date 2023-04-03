@@ -2,16 +2,16 @@
 title: Variáveis no fluxo de trabalho AEM[Parte5]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ecd43765-455c-4f8b-acf2-6ea34495c311
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
-
 
 # Editor de regras em AEM fluxo de trabalho
 
@@ -19,4 +19,4 @@ O componente Or-Split é usado para fazer o roteamento AEM fluxo de trabalho. An
 
 O vídeo a seguir demonstrará a capacidade de usar o editor de regras para fazer processamento condicional no fluxo de trabalho do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/26362/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/26362?quality=12&learn=on)

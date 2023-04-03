@@ -5,21 +5,19 @@ type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-feature: 'Gerador de PDF '
-topic: 'Desenvolvimento   '
+feature: PDF Generator
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a739462e-3d7a-49a2-a740-5c5c9400ea08
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 6%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
-
 
 # Etapas para solucionar problemas específicos de HtmltoPDF em uma configuração Unix (PhantomJS)
 
 *Este vídeo aborda as etapas para solucionar problemas específicos do HtmltoPDF em uma configuração Unix (PhantomJS).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335546?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)

@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Neste vídeo vamos dar uma olhada na anatomia do CSS (ou [!DNL LESS]) e JavaScri
 
 ## Como entender o código do sistema de estilos {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
 
 O pacote de AEM fornecido (**technical-review.sites.style-system-1.0.0.zip**) instala o estilo de título do exemplo, as políticas de amostra dos componentes do Contêiner e Título do layout We.Retail e uma página de exemplo.
 

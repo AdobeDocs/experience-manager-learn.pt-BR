@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: Administração
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: cfd42f2c-71d0-4e1d-adc9-2c45ea6954d4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 1%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
-
 
 # Como capturar despejos de encadeamento de uma JVM em um servidor unix
 
 *Este vídeo aborda as etapas para capturar despejos de heap de uma JVM em um servidor unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335492?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)

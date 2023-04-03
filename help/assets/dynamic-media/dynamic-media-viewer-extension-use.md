@@ -1,35 +1,35 @@
 ---
 title: Uso de visualizadores do Dynamic Media com Adobe Analytics e Adobe Launch
-description: A extensão do Dynamic Media Viewers para Adobe Launch, juntamente com o lançamento do Dynamic Media Viewers 5.13, permite que os clientes do Dynamic Media, do Adobe Analytics e do Adobe Launch usem eventos e dados específicos dos Dynamic Media Viewers na configuração do Adobe Launch.
+description: A extensão Visualizadores do Dynamic Media para o Adobe Launch, juntamente com o lançamento do Dynamic Media Viewers 5.13, permite que os clientes do Dynamic Media, do Adobe Analytics e do Adobe Launch usem eventos e dados específicos para os Visualizadores do Dynamic Media em suas configurações do Adobe Launch.
 sub-product: Dynamic Media
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 15%
+ht-degree: 11%
 
 ---
-
 
 # Uso de visualizadores do Dynamic Media com Adobe Analytics e Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 Para clientes com Dynamic Media e Adobe Analytics, agora você pode rastrear o uso de Visualizadores do Dynamic Media no seu site usando a Extensão do Visualizador do Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Você também precisa [integrar o Adobe Experience Platform Launch à instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
+> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Você também precisa [integrar o Adobe Experience Platform Launch à sua instância de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR).
 
 Com a introdução da extensão Visualizador do Dynamic Media, a Adobe Experience Manager agora oferece suporte avançado a análises para ativos fornecidos com visualizadores do Dynamic Media (5.13), fornecendo controle mais granular sobre o rastreamento de eventos quando um Visualizador do Dynamic Media é usado em uma página do Sites.
 
 Se já tiver o AEM Assets e o Sites, é possível integrar a propriedade do Launch com a instância do autor de AEM. Depois que a integração do launch estiver associada ao site, você poderá adicionar componentes de mídia dinâmica à página com o rastreamento de eventos para visualizadores habilitados.
 
-Para clientes somente AEM Assets ou clientes do Dynamic Media Classic, o usuário pode obter o código incorporado de um visualizador e adicioná-lo à página. As bibliotecas de script do Launch podem ser adicionadas manualmente à página para o rastreamento de eventos do visualizador.
+Para clientes somente AEM Assets ou clientes Dynamic Media Classic, o usuário pode obter o código incorporado de um visualizador e adicioná-lo à página. As bibliotecas de script do Launch podem ser adicionadas manualmente à página para o rastreamento de eventos do visualizador.
 
 A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argumentos compatíveis:
 
@@ -164,6 +164,6 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
 
 ## Recursos adicionais{#additional-resources}
 
-* [Integração do Adobe Experience Manager com o Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Execução do Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Integração do Adobe Experience Manager com o Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
+* [Execução do Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=pt-BR)
 * [Integração dos visualizadores do Dynamic Media ao Adobe Analytics e ao Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

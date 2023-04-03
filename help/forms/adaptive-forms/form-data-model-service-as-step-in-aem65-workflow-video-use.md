@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -23,7 +23,7 @@ A partir do AEM Forms 6.4, agora temos a capacidade de usar o Serviço do Modelo
 >!![NOTE]O recurso demonstrado neste vídeo requer o AEM Forms 6.5.1
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28145?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
 
 Para testar esse recurso em seu servidor, siga as instruções abaixo
 

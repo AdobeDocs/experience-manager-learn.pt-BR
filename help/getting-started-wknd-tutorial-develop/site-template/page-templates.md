@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Há três áreas principais de [Modelos de página](https://experienceleague.ado
 
 Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local de AEM. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332915/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
 Você pode usar a seguinte miniatura para identificar o modelo (ou fazer upload do seu próprio!)
 
@@ -65,7 +65,7 @@ Uma prática comum ao criar conteúdo global, como um cabeçalho ou rodapé, é 
 
 O modelo de Site gerou um Cabeçalho e um Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo abaixo:
 
@@ -77,11 +77,11 @@ Etapas de alto nível para o vídeo abaixo:
 
 Em seguida, crie uma nova página usando o modelo Página de artigo da Revista . Crie o conteúdo da página para corresponder aos modelos do site. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
 Use o [texto fornecido](./assets/page-templates/la-skateparks-copy.txt) para preencher o corpo do artigo.
 
-## Parabéns.  {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você acabou de criar um novo modelo e página com o Adobe Experience Manager Sites.
 

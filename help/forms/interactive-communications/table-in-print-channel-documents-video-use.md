@@ -13,7 +13,7 @@ role: Developer
 level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
 
->[!VIDEO](https://video.tv.adobe.com/v/27769?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
 Tabelas são usadas para exibir dados de maneira tabular. As linhas da tabela precisam crescer ou diminuir dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento de canal de impressão, precisamos criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Nesse arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto de campo de coluna é TextField ou Numeric Field, dependendo de suas necessidades. Para cada coluna, os campos garantem que o vínculo de dados esteja definido como Usar nome.
 
