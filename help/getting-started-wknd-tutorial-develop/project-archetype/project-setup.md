@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1839'
 ht-degree: 4%
 
 ---
@@ -87,6 +87,8 @@ A próxima série de etapas ocorrerá usando um terminal de linha de comando bas
    >[!NOTE]
    >
    > Para direcionar AEM 6.5.14+, substitua `aemVersion="cloud"` com `aemVersion="6.5.14"`.
+   >
+   > Além disso, sempre use o `archetypeVersion` fazendo referência ao [Arquétipo de projeto do AEM > Uso](https://github.com/adobe/aem-project-archetype#usage)
 
    Uma lista completa das propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 

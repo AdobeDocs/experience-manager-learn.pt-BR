@@ -10,9 +10,9 @@ kt: 5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '626'
 ht-degree: 6%
 
 ---
@@ -33,6 +33,11 @@ Saiba como usuários, grupos e perfis de produto do Adobe IMS são usados em con
 ## Usuários do Adobe IMS
 
 Os usuários que exigem acesso ao serviço de autor do AEM são gerenciados como [Usuários do Adobe IMS](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html) em [Admin Console](https://adminconsole.adobe.com). Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console.
+
+>[!NOTE]
+>
+>Quando um usuário IMS é excluído do Admin Console, ele não é automaticamente excluído do AEM, mas uma vez que AEM sessão (token) expirar, NÃO poderá fazer logon no AEM.
+
 
 [Saiba mais sobre usuários do Adobe IMS](./adobe-ims-users.md)
 

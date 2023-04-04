@@ -15,16 +15,16 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 14%
+source-wordcount: '148'
+ht-degree: 17%
 
 ---
 
-# Usar o gerenciamento de vários sites {#using-multi-site-manager-with-aem-sites}
+# Usar o Multi Site Manager {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Visão geral da Live Copy] e [!UICONTROL Gerenciador de configuração do Blueprint] são interfaces do AEM Author para trabalhar com o recurso Multi Site Manager do Adobe Experience Manager Sites.
+A Visão geral da Live Copy e o Gerenciador de configuração do Blueprint são interfaces do AEM Author para trabalhar com [Gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=pt-BR) no Adobe Experience Manager Sites.
 
 ## Visão geral da Live Copy {#live-copy-overview}
 

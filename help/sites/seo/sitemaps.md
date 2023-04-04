@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 6%
+source-wordcount: '263'
+ht-degree: 5%
 
 ---
 
@@ -21,33 +21,15 @@ ht-degree: 6%
 
 Saiba como ajudar a aumentar sua SEO criando mapas de site para o AEM Sites.
 
+>[!WARNING]
+>
+>Este vídeo demonstra o uso de URLs relativos no mapa do site. Mapas do site [deve usar URLs absolutos](https://sitemaps.org/protocol.html). Consulte [Configurações](#absolute-sitemap-urls) para saber como ativar URLs absolutos, pois isso não é abordado no vídeo abaixo.
+
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
-
-## Recursos
-
-+ [Documentação do AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Documentação do Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentação do Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
-+ [Documentação do arquivo de índice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronmaker](http://www.cronmaker.com/)
 
 ## Configurações
 
-### Configuração OSGi do agendador de mapa do site
-
-Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para a frequência (usando [expressões cron](http://www.cronmaker.com)) os mapas de site são regerados e armazenados em cache no AEM.
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
-
-```json
-{
-  "scheduler.name": "WKND Sitemaps",
-  "scheduler.expression": "0 0 2 1/1 * ? *",
-  "searchPath": "/content/wknd"
-}
-```
-
-### URLs absolutos de mapa do site
+### URLs absolutos de mapa do site{#absolute-sitemap-urls}
 
 AEM mapa de site suporta URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços de AEM que geram mapas de site (normalmente o serviço AEM Publish).
 
@@ -63,6 +45,20 @@ A captura de tela abaixo ilustra uma configuração semelhante, mas para `http:/
 
 ![Configuração de URLs absolutos do mapa do site](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
+
+### Configuração OSGi do agendador de mapa do site
+
+Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para a frequência (usando [expressões cron](http://www.cronmaker.com)) os mapas de site são regerados e armazenados em cache no AEM.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+
+```json
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/wknd"
+}
+```
 
 ### Regra de filtro de permissão do Dispatcher
 
@@ -88,3 +84,11 @@ Garantir `.xml` as solicitações HTTP do mapa do site são roteadas para a pág
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
 RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 ```
+
+## Recursos
+
++ [Documentação do AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentação do Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Documentação do Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
++ [Documentação do arquivo de índice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Cronmaker](http://www.cronmaker.com/)
