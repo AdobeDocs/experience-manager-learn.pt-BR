@@ -8,9 +8,9 @@ role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,13 @@ A inicialização rápida local do SDK do AEM permite a depuração remota do Ja
 Para conectar um depurador remoto ao AEM, a inicialização rápida local do SDK AEM deve ser iniciada com parâmetros específicos (`-agentlib:...`) permitindo que o IDE se conecte a ele.
 
 ```
-$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
+$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
++ AEM SDK só oferece suporte ao Java 11
 + `address` especifica a porta AEM escuta para conexões de depuração remota e pode ser alterada para qualquer porta disponível na máquina de desenvolvimento local.
 + O último parâmetro (por exemplo, `aem-author-p4502.jar`) é o AEM SKD Quickstart Jar. Pode ser o serviço de Autor do AEM (`aem-author-p4502.jar`) ou o serviço de publicação do AEM (`aem-publish-p4503.jar`).
+
 
 ## Instruções de configuração do IDE
 
