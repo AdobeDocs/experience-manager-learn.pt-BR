@@ -1,5 +1,5 @@
 ---
-title: AEM Configuração rápida sem cabeçalho usando o SDK local
+title: AEM Configuração rápida sem cabeçalho usando o SDK AEM local
 description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Instale o SDK do AEM, adicione conteúdo de amostra e implante um aplicativo que consuma conteúdo de AEM usando suas APIs do GraphQL. Veja como o AEM alimenta as experiências omnichannel.
 version: Cloud Service
 mini-toc-levels: 1
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 1%
+source-wordcount: '1257'
+ht-degree: 2%
 
 ---
 
-# AEM Configuração rápida sem cabeçalho usando o SDK local {#setup}
+# AEM Configuração rápida sem cabeçalho usando o SDK AEM local {#setup}
 
 A configuração rápida do AEM Headless leva você com AEM Headless usando o conteúdo do projeto de amostra do WKND Site e uma amostra do React App (a SPA) que consome o conteúdo por meio AEM APIs Headless GraphQL. Este guia usa o [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
@@ -26,7 +26,7 @@ A configuração rápida do AEM Headless leva você com AEM Headless usando o co
 As seguintes ferramentas devem ser instaladas localmente:
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v14.x](https://nodejs.org/en/)
+* [Node.js v18](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. Instalar o SDK do AEM {#aem-sdk}

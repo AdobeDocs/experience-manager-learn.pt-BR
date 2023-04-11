@@ -1,6 +1,6 @@
 ---
 title: Componente da Web/JS - Exemplo sem cabeçalho AEM
-description: Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Web Component/JS demonstra como consultar conteúdo usando APIs GraphQL AEM usando consultas persistentes.
+description: Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Web Component/JS demonstra como consultar conteúdo usando APIs AEM GraphQL usando consultas persistentes.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -8,17 +8,17 @@ role: Developer
 level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 6%
+source-wordcount: '566'
+ht-degree: 7%
 
 ---
 
 
 # Componente Web
 
-Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo de Componente Web demonstra como consultar o conteúdo usando AEM APIs GraphQL usando consultas persistentes e renderizar uma parte da interface do usuário, realizadas usando código JavaScript puro.
+Exemplos de aplicativos são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Esse aplicativo de componente da Web demonstra como consultar o conteúdo usando AEM APIs do GraphQL usando consultas persistentes e renderizar uma parte da interface do usuário, realizada usando código JavaScript puro.
 
 ![Componente da Web com AEM headless](./assets/web-component/web-component.png)
 
@@ -29,15 +29,14 @@ Visualize o [código-fonte no GitHub](https://github.com/adobe/aem-guides-wknd-g
 As seguintes ferramentas devem ser instaladas localmente:
 
 + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (se estiver se conectando ao AEM local 6.5 ou AEM SDK)
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## Requisitos AEM
 
 O Web Component funciona com as seguintes opções de implantação de AEM.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
 + Configuração local usando [o SDK do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
 + [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR?lang=en#install-local-aem-instances)
 
@@ -97,7 +96,7 @@ Todas as implantações exigem o `tutorial-solution-content.zip` do [Arquivos de
 
 ## O código
 
-Abaixo está um resumo de como o Componente Web é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes GraphQL e como esses dados são apresentados. O código completo pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
+Abaixo está um resumo de como o Componente Web é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes do GraphQL e como esses dados são apresentados. O código completo pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
 
 ### Tag HTML do componente Web
 
@@ -116,7 +115,7 @@ O `person.js` define a funcionalidade do Componente da Web e abaixo estão os pr
 
 #### Implementação do elemento PersonInfo
 
-O `<person-info>` o objeto de classe do elemento personalizado define a funcionalidade usando o `connectedCallback()` métodos do ciclo de vida, anexando uma raiz de sombra, buscando consulta persistente de GraphQL e manipulação de DOM para criar a estrutura interna de DOM de sombra do elemento personalizado.
+O `<person-info>` o objeto de classe do elemento personalizado define a funcionalidade usando o `connectedCallback()` métodos do ciclo de vida, anexando uma raiz de sombra, buscando a consulta persistente do GraphQL e a manipulação de DOM para criar a estrutura interna de DOM de sombra do elemento personalizado.
 
 ```javascript
 // Create a Class for our Custom Element (person-info)

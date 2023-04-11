@@ -1,6 +1,6 @@
 ---
 title: Introdução ao AEM tutorial autônomo - GraphQL
-description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs GraphQL AEM.
+description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs AEM GraphQL.
 doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
@@ -11,18 +11,18 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 4%
+source-wordcount: '287'
+ht-degree: 3%
 
 ---
 
 # Introdução ao AEM Headless - GraphQL
 
-Um tutorial completo que ilustra como criar e expor conteúdo usando APIs GraphQL AEM consumidas por um aplicativo externo, em um cenário de CMS sem periféricos.
+Um tutorial completo que ilustra como criar e expor conteúdo usando AEM APIs do GraphQL e consumido por um aplicativo externo, em um cenário de CMS sem cabeçalho.
 
-Este tutorial explica como AEM APIs GraphQL e recursos sem periféricos podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
+Este tutorial explica como AEM APIs do GraphQL e recursos sem periféricos podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
 
 Este tutorial aborda os seguintes tópicos:
 
@@ -30,9 +30,8 @@ Este tutorial aborda os seguintes tópicos:
 * Criar modelos de fragmento de conteúdo para modelar dados
 * Crie Fragmentos de conteúdo com base nos modelos feitos anteriormente.
 * Explore como os Fragmentos de conteúdo no AEM podem ser consultados usando a ferramenta de desenvolvimento GraphiQL integrada.
-* Para armazenar ou manter as consultas GraphQL no AEM
-* Consumir consultas GraphQL persistentes de um aplicativo React de amostra
-
+* Para armazenar ou manter as consultas do GraphQL no AEM
+* Consumir consultas persistentes do GraphQL a partir de um aplicativo React de amostra
 
 ## Pré-requisitos {#prerequisites}
 
@@ -40,8 +39,7 @@ Os seguintes itens são necessários para seguir este tutorial:
 
 * Habilidades básicas de HTML e JavaScript
 * As seguintes ferramentas devem ser instaladas localmente:
-   * [Node.js v14+](https://nodejs.org/en/)
-   * [npm 6+](https://www.npmjs.com/)
+   * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * Um IDE (por exemplo, [Código Microsoft® Visual Studio](https://code.visualstudio.com/))
 
@@ -55,6 +53,6 @@ Inicie o tutorial com [Definição dos modelos de fragmento do conteúdo](conten
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis na variável [Guias de AEM - Projeto GitHub GraphQL da WKND](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis na variável [Guias de AEM - Projeto WKND GraphQL GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe uma [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
