@@ -5,9 +5,9 @@ breadcrumb-title: Tutorials do AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '932'
 ht-degree: 20%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 20%
       + [Console do desenvolvedor](./debugging/cloud-service/developer-console.md)
       + [Navegador de repositório](./debugging/cloud-service/repository-browser.md)
       + Riscos{#risks}
-         + [Avisos transversais](./debugging/cloud-service/risks/traversals.md)
+         + [Avisos de travessia](./debugging/cloud-service/risks/traversals.md)
 + Entrega de conteúdo{#content-delivery}
    + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
 + Acessar AEM{#accessing}
@@ -259,6 +259,9 @@ ht-degree: 20%
       + [Criar modelo de dados de formulário](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Apresentação do formulário de teste](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Testar evento de clique](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Armazene envios de formulário em uma unidade e no sharepoint{#one-drive}
+      + [Armazenar dados de formulário em uma unidade](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Armazenar dados de formulário no sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Extensibilidade do Asset compute{#asset-compute}
    + [Visão geral](./asset-compute/overview.md)
    + Configurar{#set-up}
