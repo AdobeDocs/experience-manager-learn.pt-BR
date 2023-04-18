@@ -7,10 +7,10 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 3%
+source-wordcount: '1806'
+ht-degree: 4%
 
 ---
 
@@ -152,7 +152,7 @@ ht-degree: 3%
    + [Criar e configurar o formulário adaptável](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurar formulário adaptável para assinante único](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurar formulário adaptável para dois signatários](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurar o serviço do Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configurar o serviço de conversão automática de formulários](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Converter formulário PDF em formulário adaptável](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulário adaptável convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de modelos XDP com Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
@@ -230,7 +230,12 @@ ht-degree: 3%
    + [Criar componente de fluxo de trabalho](welcome-kit/create-workflow-component.md)
    + [Testar a solução](welcome-kit/testing-the-solution.md)
 
-
++ Aplicativo React com Forms e Acrobat Sign {#react-ic-sign}
+   + [Introdução](react-ic-sign/introduction.md)
+   + [Gerar documento IC](react-ic-sign/create-ic-document.md)
+   + [Wrapper da API do Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [Gerar widget de assinatura](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [Implante os ativos de amostra](react-ic-sign/deploy-assets-on-your-server.md)
 + Serviços de documento {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incorporar pdf no formulário adaptável](document-services/embed-pdf-inline.md)
