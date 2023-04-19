@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
+source-git-commit: cc78e59fe70686e909928e407899fcf629a651b9
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 1%
 # Compartilhamento de recursos entre origens (CORS)
 
 O CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos de várias origens) da Adobe Experience Manager as a Cloud Service facilita propriedades da Web que não são AEM para fazer chamadas do lado do cliente baseadas em navegador para AEM APIs do GraphQL.
+
+O artigo a seguir descreve como configurar _origem única_ acesso a um conjunto específico de endpoints AEM Headless via CORS. Origem única significa apenas acessos de domínio não AEM únicos AEM, por exemplo, https://app.example.com se conectar a https://www.example.com. O acesso de várias origens pode não funcionar usando essa abordagem devido a problemas de armazenamento em cache.
 
 >[!TIP]
 >
@@ -63,7 +65,6 @@ Essa configuração de exemplo suporta o uso de consultas persistentes AEM Graph
     "https://spa.external.com/"
   ],
   "alloworiginregexp":[
-    "http://localhost:.*"
   ],
   "allowedpaths": [
     "/graphql/execute.json.*",
@@ -127,7 +128,7 @@ Por exemplo, essas duas configurações são definidas da seguinte maneira em um
 
 O Dispatcher do serviço de publicação (e visualização) do AEM deve ser configurado para oferecer suporte ao CORS.
 
-| O cliente se conecta a | Autor do AEM | Publicação do AEM | Visualização de AEM |
+| O cliente se conecta a | Autor do AEM | AEM Publish | Visualização de AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requer a configuração do CORS do Dispatcher | ✘ | ✔ | ✔ |
 
