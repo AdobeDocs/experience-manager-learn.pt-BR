@@ -10,9 +10,9 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,11 @@ A paginação e a classificação podem ser usadas em relação a qualquer Model
 
 Ao trabalhar com grandes conjuntos de dados, é possível usar a paginação de deslocamento e limite e com base no cursor para recuperar um subconjunto específico dos dados. No entanto, há algumas diferenças entre as duas técnicas que podem tornar uma mais apropriada do que a outra em determinadas situações.
 
-### Consulta de lista
+### Deslocamento/limite
 
 Listar consultas, usando `limit` e `offset` fornecer uma abordagem simples que especifique o ponto de partida (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado de qualquer lugar dentro do conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, ele pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer varredura por todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento for alto, pois pode exigir a recuperação e o descarte de muitos resultados.
+
+#### Consulta GraphQL
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -51,7 +53,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
   }
 ```
 
-#### Variáveis de consulta
+##### Variáveis de consulta
 
 ```json
 {
@@ -60,7 +62,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 }
 ```
 
-### Resposta da lista
+#### Resposta do GraphQL
 
 A resposta JSON resultante contém as 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500` assim, o [consulta de lista](#list-queries) especifica aventuras com o mesmo preço que são classificadas por título em ordem crescente.)
 
@@ -99,10 +101,11 @@ A resposta JSON resultante contém as 2ª, 3ª, 4ª e 5ª Aventuras mais caras. 
 
 A paginação baseada em cursor, disponível em queries Paginados, envolve o uso de um cursor (uma referência a um registro específico) para recuperar o próximo conjunto de resultados. Essa abordagem é mais eficiente, pois evita a necessidade de digitalizar todos os registros anteriores para recuperar o subconjunto de dados necessário. As consultas paginadas são ótimas para iterar por grandes conjuntos de resultados do início, até algum ponto no meio ou até o fim. Listar consultas, usando `limit` e `offset` fornecer uma abordagem simples que especifique o ponto de partida (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado de qualquer lugar dentro do conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, ele pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer varredura por todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento for alto, pois pode exigir a recuperação e o descarte de muitos resultados.
 
+#### Consulta GraphQL
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
-query adventuresByPaginated($first:Int!, $after:String) {
+query adventuresByPaginated($first:Int, $after:String) {
  adventurePaginated(first: $first, after: $after, sort: "price DESC, title ASC") {
        edges {
           cursor
@@ -120,7 +123,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
   }
 ```
 
-#### Variáveis de consulta
+##### Variáveis de consulta
 
 ```json
 {
@@ -128,7 +131,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### Resposta paginada
+#### Resposta do GraphQL
 
 A resposta JSON resultante contém as 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500` assim, o [consulta de lista](#list-queries) especifica aventuras com o mesmo preço que são classificadas por título em ordem crescente.)
 
@@ -171,11 +174,11 @@ A resposta JSON resultante contém as 2ª, 3ª, 4ª e 5ª Aventuras mais caras. 
 }
 ```
 
-### Próximo conjunto de resultados paginados
+#### Próximo conjunto de resultados paginados
 
 O próximo conjunto de resultados pode ser buscado usando o `after` e o `endCursor` da consulta anterior. Se não houver mais resultados a serem obtidos, `hasNextPage` é `false`.
 
-#### Variáveis de consulta
+##### Variáveis de consulta
 
 ```json
 {
