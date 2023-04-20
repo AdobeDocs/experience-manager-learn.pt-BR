@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Na verdade, o Apache Web Server não se importa com a extensão de arquivo de um
 | NOME DO ARQUIVO`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` armazenamento de arquivos `mod_rewrite` regras a serem incluídas e consumidas explicitamente por uma `vhost` arquivo |
 | NOME DO ARQUIVO`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` os arquivos são incluídos de dentro da variável `*.vhost` arquivos. Ele contém regex de IP ou permite regras de negação para permitir a lista de permissões de IP. Se estiver tentando restringir a visualização de um host virtual com base em endereços IP, você gerará um desses arquivos e o incluirá em seu `*.vhost` arquivo |
 
-## Arquivos contidos em conf.modules.d/
+## Arquivos contidos em conf.dispatcher.d/
 
 | Arquivo | Destino do arquivo | Descrição |
 | --- | --- | --- |
