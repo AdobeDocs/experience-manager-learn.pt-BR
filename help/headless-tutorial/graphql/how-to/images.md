@@ -1,6 +1,6 @@
 ---
-title: Uso de imagens com AEM headless
-description: Saiba como solicitar URLs de referência de conteúdo de imagem e usar representações personalizadas com AEM Headless.
+title: Uso de imagens otimizadas com AEM headless
+description: Saiba como solicitar URLs de imagem otimizadas com AEM Headless.
 version: Cloud Service
 topic: Headless
 feature: GraphQL API
@@ -8,37 +8,32 @@ role: Developer
 level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
+last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
+source-git-commit: 2096c207ce14985b550b055ea0f51451544c085c
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 1%
+source-wordcount: '918'
+ht-degree: 3%
 
 ---
 
-# Imagens com AEM headless {#images-with-aem-headless}
+# Imagens otimizadas com AEM headless {#images-with-aem-headless}
 
 As imagens são um aspecto crítico do [desenvolvimento de experiências ricas e convincentes AEM sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
 
 Fragmentos de conteúdo usados AEM modelagem de conteúdo sem cabeçalho, geralmente fazem referência a ativos de imagem destinados à exibição na experiência sem cabeçalho. AEM consultas do GraphQL podem ser escritas para fornecer URLs para imagens com base em onde a imagem é referenciada.
 
-O `ImageRef` tem três opções de URL para referências de conteúdo:
+O `ImageRef` tem quatro opções de URL para referências de conteúdo:
 
 + `_path` é o caminho referenciado no AEM e não inclui uma origem AEM (nome do host)
++ `_dynamicUrl` é o URL completo do ativo de imagem preferido, otimizado para a Web.
+   + O `_dynamicUrl` não inclui uma origem AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
 + `_authorUrl` é o URL completo para o ativo de imagem no Autor do AEM
    + [Autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usada para fornecer uma experiência de visualização do aplicativo sem periféricos.
 + `_publishUrl` é o URL completo para o ativo de imagem no AEM Publish
    + [Publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) geralmente é onde a implantação de produção do aplicativo sem cabeçalho exibe imagens.
 
-Os campos são melhor usados com base nos seguintes critérios:
-
-| Campos ImageRef | Aplicativo Web do cliente fornecido pelo AEM | O aplicativo cliente consulta o autor do AEM | Consultas de aplicativo do cliente AEM Publish |
-|--------------------|:------------------------------:|:-----------------------------:|:------------------------------:|
-| `_path` | ✔ | (O aplicativo deve especificar o host no URL) | (O aplicativo deve especificar o host no URL) |
-| `_authorUrl` | ✘ | ✔ | ✘ |
-| `_publishUrl` | ✘ | ✘ | ✔ |
-
-Utilização de `_authorUrl` e `_publishUrl` O deve estar alinhado ao ponto de extremidade AEM GraphQL que está sendo usado para gerar a resposta do GraphQL.
+O `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`e `_publishUrl` sempre que possível.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -55,18 +50,20 @@ Os tipos de campo são revisados na seção [Modelo de fragmento de conteúdo](h
 
 ## Consulta persistente do GraphQL
 
-Na query de GraphQL, retorne o campo como o `ImageRef` e solicitar os campos apropriados `_path`, `_authorUrl`ou `_publishUrl` exigido pelo seu aplicativo. Por exemplo, querendo uma aventura no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
+Na query de GraphQL, retorne o campo como o `ImageRef` e solicite o `_dynamicUrl` campo. Por exemplo, querendo uma aventura no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
 ```graphql
-query ($path: String!) {
-  adventureByPath(_path: $path) {
+query($path: String!, $assetTransform: AssetTransform!) {
+  adventureByPath(
+    _path: $path
+    _assetTransform: $assetTransform
+  ) {
     item {
-      title,
+      _path
+      title
       primaryImage {
         ... on ImageRef {
-          _path
-          _authorUrl
-          _publishUrl
+          _dynamicUrl
         }
       }
     }
@@ -74,21 +71,44 @@ query ($path: String!) {
 }
 ```
 
+### Variáveis de consulta
+
+```json
+{ 
+  "path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
+  "assetTransform": { "format": "JPG", "quality": 80, "preferWebp": true}
+}
+```
+
 O `$path` usada na variável `_path` o filtro requer o caminho completo para o fragmento de conteúdo (por exemplo, `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
+
+O `_assetTransform` define como o `_dynamicUrl` é construída para otimizar a representação da imagem servida. As URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
+
+| Parâmetro GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variável GraphQL | Valores de parâmetro de URL | Exemplo de variável GraphQL | Exemplo de parâmetro de URL |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
+| `format` | `format` | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | `{ format: JPG }` | N/A |
+| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | `{ seoName: "bali-surf-camp" }` | N/A |
+| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Números inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
+| `size` | `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos | Inteiros positivos delimitados por vírgulas na ordem `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
+| `rotation` | `rotate` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `{ rotation: R90 }` | `?rotate=90` |
+| `flip` | `flip` | Inverta a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `{ flip: horizontal }` | `?flip=h` |
+| `quality` | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 | 1-100 | `{ quality: 80 }` | `?quality=80` |
+| `width` | `width` | Largura da imagem de saída em pixels. When `size` é fornecido `width` é ignorada. | ✘ | Número inteiro positivo | Número inteiro positivo | `{ width: 1600 }` | `?width=1600` |
+| `preferWebP` | `preferwebp` | If `true` e AEM um WebP, se o navegador oferece suporte a ele, independentemente do `format`. | ✘ | `true`, `false` | `true`, `false` | `{ preferWebp: true }` | `?preferwebp=true` |
 
 ## Resposta do GraphQL
 
-A resposta JSON resultante contém os campos solicitados contendo os URLs para os ativos de imagem.
+A resposta JSON resultante contém os campos solicitados contendo o URL otimizado para a Web para os ativos de imagem.
 
 ```json
 {
   "data": {
     "adventureByPath": {
       "item": {
-        "adventurePrimaryImage": {
-          "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
-          "_authorUrl": "https://author-p123-e456.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
-          "_publishUrl": "https://publish-p123-e789.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg"
+        "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
+        "title": "Bali Surf Camp",
+        "primaryImage": {
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&quality=80"
         }
       }
     }
@@ -96,181 +116,139 @@ A resposta JSON resultante contém os campos solicitados contendo os URLs para o
 }
 ```
 
-Para carregar a imagem referenciada em seu aplicativo, use o campo apropriado, `_path`, `_authorUrl`ou `_publishUrl` do `adventurePrimaryImage` como o URL de origem da imagem.
+Para carregar a imagem otimizada para a Web da imagem referenciada em seu aplicativo, use o `_dynamicUrl` do `primaryImage` como o URL de origem da imagem.
 
-Os domínios da `_authorUrl` e `_publishUrl` são automaticamente definidas por AEM as a Cloud Service usando a variável [Externalizador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/externalizer.html).
+No React, a exibição de uma imagem otimizada para a Web na AEM Publish é semelhante a:
 
-No React, a exibição da imagem da publicação do AEM é semelhante a:
-
-```html
-<img src={ data.adventureByPath.item.primaryImage._publishUrl } />
+```jsx
+const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
+...
+let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
+...
+<img src={dynamicUrl} alt={data.adventureByPath.item.title}/>
 ```
 
-## Representações de imagem
+Lembre-se, `_dynamicUrl` não inclui o domínio AEM, portanto, você deve fornecer a origem desejada para que o URL da imagem seja resolvido.
 
-Suporte a ativos de imagem personalizáveis [representações](../../../assets/authoring/renditions.md), que são representações alternativas do ativo original. As representações personalizadas podem ajudar na otimização de uma experiência sem cabeçalho. Em vez de solicitar o ativo de imagem original, que geralmente é um arquivo grande de alta resolução, as representações otimizadas podem ser solicitadas pelo aplicativo sem cabeçalho.
+### URLs responsivos
 
-### Criar representações
+O exemplo acima é exibido usando uma imagem de tamanho único, no entanto, em experiências da Web, conjuntos de imagens responsivos geralmente são necessários. Imagens responsivas podem ser implementadas usando [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). O trecho de código a seguir mostra como usar o `_dynamicUrl` como base e anexe diferentes parâmetros de largura para alimentar diferentes visualizações responsivas. Não apenas a função `width` parâmetro de consulta pode ser usado, mas outros parâmetros de consulta podem ser adicionados pelo cliente para otimizar ainda mais o ativo da imagem com base em suas necessidades.
 
-Os administradores do AEM Assets definem as representações personalizadas usando Perfis de processamento. Os Perfis de processamento podem ser aplicados a árvores ou ativos de pasta específicos diretamente para gerar as representações desses ativos.
-
-#### Processando perfis
-
-As especificações de representações de ativos são definidas em [Processando perfis](../../../assets/configuring/processing-profiles.md) pelos administradores do AEM Assets.
-
-Crie ou atualize um Perfil de processamento e adicione definições de representação para os tamanhos de imagem necessários para o aplicativo sem cabeçalho. As representações podem ter qualquer nome, mas devem ser nomeadas semanticamente.
-
-![AEM representações otimizadas para cabeçalho](./assets/images/processing-profiles.png)
-
-Neste exemplo, três renderizações são criadas:
-
-| Nome da representação | Extensão | Largura máxima |
-|-----------------------|:---------:|----------:|
-| web-otimized-large | webp | 1200 px |
-| mídia otimizada para a Web | webp | 900 px |
-| web-otimized-small | webp | 600 px |
-
-Os atributos chamados na tabela acima são importantes:
-
-+ __Nome da representação__ é usada para solicitar a representação.
-+ __Extensão__ é a extensão usada para solicitar a variável __nome da representação__. Preferência `webp` representações, pois são otimizadas para entrega na Web.
-+ __Largura máxima__ é usada para informar ao desenvolvedor qual renderização deve ser usada com base em seu uso no aplicativo sem periféricos.
-
-As definições de representação dependem das necessidades do aplicativo sem periféricos, portanto, defina a representação ideal definida para o caso de uso e seja nomeada semanticamente em relação a como estão sendo usadas.
-
-#### Reprocessar ativos{#reprocess-assets}
-
-Com o Perfil de processamento criado (ou atualizado), reprocesse os ativos para gerar as novas representações definidas no Perfil de processamento. Novas representações não existem, até que os ativos sejam processados com o perfil de processamento.
-
-+ De preferência, [atribuído o Perfil de processamento a uma pasta](../../../assets/configuring//processing-profiles.md) para que qualquer novo ativo carregado nessa pasta gere automaticamente as representações. Os ativos existentes devem ser reprocessados usando a abordagem ad hoc abaixo.
-
-+ Ou, ad-hoc, selecionando uma pasta ou ativo, selecionando __Reprocessar ativos__ e selecionando o novo nome do Perfil de processamento.
-
-   ![Ad-hoc reprocessar ativos](./assets/images/ad-hoc-reprocess-assets.jpg)
-
-#### Revisar representações
-
-As representações podem ser validadas por [abrir a exibição de representações de um ativo](../../../assets/authoring/renditions.md)e selecionar as novas representações para visualização no painel de representações. Se as renderizações estiverem ausentes, [verifique se os ativos são processados usando o Perfil de processamento](#reprocess-assets).
-
-![Revisar representações](./assets/images/review-renditions.png)
-
-#### Publicar ativos
-
-Certifique-se de que os ativos com as novas representações sejam [(re)publicado](../../../assets/sharing/publish.md) assim, as novas representações são acessíveis no AEM Publish.
-
-### Acessar representações
-
-As representações são acessadas diretamente ao anexar a variável __nomes de representação__ e __extensões de representação__ definido no Perfil de processamento no URL do ativo.
-
-| URL do ativo | Subcaminho de representações | Nome da representação | Extensão de representação |  | URL de representação |
-|-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-otimized-large | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | mídia otimizada para a Web | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-otimized-small | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
-
-{style="table-layout:auto"}
-
-### Consulta GraphQL{#renditions-graphl-query}
-
-AEM GraphQL requer sintaxe extra para solicitar representações de imagem. Em vez disso [imagens são consultadas](#images-graphql-query) da maneira habitual, e a representação desejada é especificada no código. É importante [garantir que os ativos de imagem usados pelo aplicativo sem cabeçalho tenham as mesmas representações nomeadas](#reprocess-assets).
+```javascript
+const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
+...
+// Read the data from GraphQL response
+let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
+let alt = data.adventureByPath.item.title;
+...
+{/*-- Example img srcset --*/}
+document.body.innerHTML=`<img>
+    alt="${alt}"
+    src="${${dynamicUrl}&width=1000}"
+    srcset="`
+      ${dynamicUrl}&width=1000 1000w,
+      ${dynamicUrl}&width=1600 1600w,
+      ${dynamicUrl}&width=2000 2000w,
+      `"
+    sizes="calc(100vw - 10rem)"/>`;
+...
+{/*-- Example picture --*/}
+document.body.innerHTML=`<picture>
+      <source srcset="${dynamicUrl}&width=2600" media="(min-width: 2001px)"/>
+      <source srcset="${dynamicUrl}&width=2000" media="(min-width: 1000px)"/>
+      <img src="${dynamicUrl}&width=400" alt="${alt}"/>
+    </picture>`;
+```
 
 ### Exemplo de reação
 
-Vamos criar um aplicativo React simples que exibe três representações, web-otimized-small, web-otimized-medium e web-otimized-large, de um único ativo de imagem.
+Vamos criar um aplicativo React simples que exibe imagens otimizadas para a Web seguindo [padrões de imagem responsivos](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Existem dois padrões principais para imagens responsivas:
 
-![Representações de ativos de imagem Exemplo de reação](./assets/images/react-example-renditions.jpg)
++ [Elemento Img com srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) para maior desempenho
++ [Elemento de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) para controle de design
 
-#### Criar componente de imagem{#react-example-image-component}
+#### Elemento Img com srcset
 
-Crie um componente React que renderize as imagens. Esse componente aceita quatro propriedades:
+>[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
-+ `assetUrl`: O URL do ativo de imagem, conforme fornecido pela resposta do query do GraphQL.
-+ `renditionName`: O nome da representação a ser carregada.
-+ `renditionExtension`: A extensão da representação a ser carregada.
-+ `alt`: O texto alternativo da imagem; acessibilidade é importante!
+[Img elements com o srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) são usados com o `sizes` para fornecer ativos de imagem diferentes para tamanhos de tela diferentes. Os conjuntos de imagens são úteis ao fornecer ativos de imagem diferentes para tamanhos de tela diferentes.
 
-Esse componente constrói o [URL de representação usando o formato descrito em __Acessar representações__](#access-renditions). Um `onError` O manipulador é definido para exibir o ativo original no caso de a representação estar ausente.
+#### Elemento de imagem
 
-Este exemplo usa o url do ativo original como fallback na `onError` manipulador, no evento, uma representação está ausente.
+[Elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) são usados com vários `source` elementos para fornecer ativos de imagem diferentes para tamanhos de tela diferentes. Os elementos de imagem são úteis ao fornecer representações de imagem diferentes para tamanhos de tela diferentes.
 
-```javascript
-// src/Image.js
+>[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-export default function Image({ assetUrl, renditionName, renditionExtension, alt }) {
-  // Construct the rendition Url in the format:
-  //   <ASSET URL>/_jcr_content/renditions<RENDITION NAME>.<RENDITION EXTENSION>
-  const renditionUrl = `${assetUrl}/_jcr_content/renditions/${renditionName}.${renditionExtension}`;
+#### Exemplo de código
 
-  // Load the original image asset in the event the named rendition is missing
-  const handleOnError = (e) => { e.target.src = assetUrl; }
-
-  return (
-    <>
-      <img src={renditionUrl} 
-            alt={alt} 
-            onError={handleOnError}/>
-    </>
-  );
-}
-```
-
-#### Defina as `App.js`{#app-js}
-
-Este simples `App.js` consultas AEM uma imagem da Aventura e exibem as três representações dessa imagem: web-otimized-small, web-otimized-medium e web-otimized-large.
+Este aplicativo React simples usa a variável [SDK sem cabeçalho AEM](./aem-headless-sdk.md) para consultar AEM APIs headless para um conteúdo do Adventure e exibir a imagem otimizada para a Web usando [elemento img com srcset](#img-element-with-srcset) e [elemento de imagem](#picture-element). O `srcset` e `sources` usar um `setParams` para anexar o parâmetro de consulta de delivery otimizado para a Web à função `_dynamicUrl` da imagem, altere a representação da imagem entregue com base nas necessidades do cliente Web.
 
 A consulta contra AEM é realizada no gancho React personalizado [useAdventureByPath que usa o SDK sem cabeçalho AEM](./aem-headless-sdk.md#graphql-persisted-queries).
-
-Os resultados da query e os parâmetros de representação específicos são passados para a função [Componente de reação de imagem](#react-example-image-component).
 
 ```javascript
 // src/App.js
 
 import "./App.css";
 import { useAdventureByPath } from './api/persistedQueries'
-import Image from "./Image";
+
+const AEM_HOST = process.env.AEM_HOST;
 
 function App() {
 
+  /**
+   * Update the dynamic URL with client-specific query parameters
+   * @param {*} dynamicUrl the base dynamic URL for the web-optimized image
+   * @param {*} params the AEM web-optimized image query parameters
+   * @returns the dynamic URL with the query parameters
+   */
+  function setParams(dynamicUrl, params) {
+    let url = new URL(dynamicUrl);
+    Object.keys(params).forEach(key => {
+      url.searchParams.set(key, params[key]);
+    });
+    return url.toString();
+  }
+
   // Get data from AEM using GraphQL persisted query as defined above 
   // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
-  let { data, error } = useAdventureByPath("/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp");
+  // The 2nd parameter define the base GraphQL query parameters used to request the web-optimized image
+  let { data, error } = useAdventureByPath(
+        "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp", 
+        { assetTransform: { format: "JPG", preferWebp: true } }
+      );
 
-  // Wait for GraphQL to provide data
+  // Wait for AEM Headless APIs to provide data
   if (!data) { return <></> }
 
   return (
     <div className="app">
       
-      <h2>Small rendition</h2>
-      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
-      <Image
-        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="web-optimized-small"
-        renditionExtension="webp"
-        alt={data.adventureByPath.item.title}
-      />
+      <h1>Web-optimized images</h1>
 
-      <hr />
+      {/* Render the web-optimized image img with srcset for the Adventure Primary Image */}
+      <h2>Img srcset</h2>
 
-      <h2>Medium rendition</h2>
-      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
-      <Image
-        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="web-optimized-medium"
-        renditionExtension="webp"
-        alt={data.adventureByPath.item.title}
-      />
+      <img
+        alt={alt}
+        src={setParams(dynamicUrl, { width: 1000 })}
+        srcSet={
+            `${setParams(dynamicUrl, { width: 1000 })} 1000w,
+             ${setParams(dynamicUrl, { width: 1600 })} 1600w,
+             ${setParams(dynamicUrl, { width: 2000 })} 2000w`
+        }
+        sizes="calc(100vw - 10rem)"/>
 
-      <hr />
+       {/* Render the web-optimized picture for the Adventure Primary Image */}
+        <h2>Picture element</h2>
 
-      <h2>Large rendition</h2>
-      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
-      <Image
-        assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="web-optimized-large"
-        renditionExtension="webp"
-        alt={data.adventureByPath.item.title}
-      />
+        <picture>
+          {/* When viewport width is greater than 2001px */}
+          <source srcSet={setParams(dynamicUrl, { width : 2600 })} media="(min-width: 2001px)"/>        
+          {/* When viewport width is between 1000px and 2000px */}
+          <source srcSet={setParams(dynamicUrl, { width : 2000})} media="(min-width: 1000px)"/>
+          {/* When viewport width is less than 799px */}
+          <img src={setParams(dynamicUrl, { width : 400, crop: "550,300,400,400" })} alt={alt}/>
+        </picture>
     </div>
   );
 }
