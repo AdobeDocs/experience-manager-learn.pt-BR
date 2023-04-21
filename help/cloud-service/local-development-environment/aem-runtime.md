@@ -13,7 +13,7 @@ exl-id: 19f72254-2087-450b-909d-2d90c9821486
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '1800'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
->title="Tempo de Execução do AEM Local"
->abstract="O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar AEM do SDK as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código, configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente AEM as a Cloud Service."
+>title="AEM Runtime local"
+>abstract="O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente do AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR" text="SDK do AEM as a Cloud Service"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Baixar AEM SDK as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Baixar SDK do AEM as a Cloud Service"
 
-O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar AEM do SDK as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código, configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente AEM as a Cloud Service.
+O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente do AEM as a Cloud Service.
 
 Observe que `~` é usado como abreviado para o Diretório do usuário. No Windows, isso é equivalente a `%HOMEPATH%`.
 

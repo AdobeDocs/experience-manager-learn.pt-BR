@@ -1,6 +1,6 @@
 ---
 title: Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
-description: O pipeline de produção de CI/CD é usado para criar e implantar o código por meio do Stage para o ambiente de produção, diminuindo o tempo para o valor. A configuração do pipeline de produção de CI/CD define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho.
+description: O pipeline de produção de CI/CD é usado para criar e implantar o código por meio do Stage para o ambiente de produção, diminuindo o tempo para o valor. A configuração do pipeline de produção CI/CD define o acionador que inicia o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -15,7 +15,7 @@ exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 9%
+ht-degree: 49%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
->title="Pipeline de produção de CI/CD"
->abstract="A configuração do pipeline de produção de CI/CD define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho."
+>title="Pipeline de produção CI/CD"
+>abstract="A configuração do pipeline de produção CI/CD define o acionador que inicia o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Implantar o código"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Implantação para a fase de produção"
 

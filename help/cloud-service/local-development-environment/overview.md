@@ -14,7 +14,7 @@ exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_overview"
 >title="Visão geral"
->abstract="A configuração do ambiente de desenvolvimento local para AEM as a Cloud Service inclui ferramentas de desenvolvimento necessárias para desenvolver, criar e compilar AEM Projetos, bem como tempos de execução locais que permitem aos desenvolvedores validar rapidamente os novos recursos localmente antes de implantá-los em AEM as a Cloud Service por meio do Adobe Cloud Manager."
+>abstract="A configuração do ambiente de desenvolvimento local do AEM as a Cloud Service inclui ferramentas de desenvolvimento necessárias para desenvolver, criar e compilar projetos do AEM, bem como runtimes locais que permitem aos desenvolvedores validar rapidamente os novos recursos localmente antes de implantá-los no AEM as a Cloud Service por meio do Adobe Cloud Manager."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR" text="Diretrizes de desenvolvimento"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=pt-BR" text="Conceitos básicos de desenvolvimento"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=pt-BR" text="Noções básicas de desenvolvimento"
 
 Este tutorial aborda a configuração de um ambiente de desenvolvimento local para o Adobe Experience Manager (AEM) usando o SDK as a Cloud Service AEM. Inclui as ferramentas de desenvolvimento necessárias para desenvolver, criar e compilar AEM projetos, bem como tempos de execução locais que permitem aos desenvolvedores validar rapidamente novos recursos localmente antes de implantá-los em AEM as a Cloud Service por meio do Adobe Cloud Manager.
 
@@ -66,7 +66,7 @@ Esta seção do tutorial mostra como:
 
 [Configurar ferramentas de desenvolvimento para projetos do AEM](./development-tools.md)
 
-## Tempo de Execução do AEM Local
+## AEM Runtime local
 
 O AEM SDK as a Cloud Service fornece um [!DNL QuickStart Jar] que executa uma versão local do AEM. O [!DNL QuickStart Jar] pode ser usado para executar o AEM Author Service ou o AEM Publish Service localmente. Observe que, embora a variável [!DNL QuickStart Jar] O fornece uma experiência de desenvolvimento local, nem todos os recursos disponíveis AEM as a Cloud Service estão incluídos no [!DNL QuickStart Jar].
 

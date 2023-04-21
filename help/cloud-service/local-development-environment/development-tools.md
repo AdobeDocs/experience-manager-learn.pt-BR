@@ -21,12 +21,12 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_devtools"
->title="Ferramentas de desenvolvimento de configuração"
->abstract="O desenvolvimento do Adobe Experience Manager (AEM) requer que um conjunto mínimo de ferramentas de desenvolvimento seja instalado e configurado no computador do desenvolvedor. Essas ferramentas incluem o Java, o Maven, o Adobe I/O CLI, a IDE de desenvolvimento e muito mais."
+>title="Configurar ferramentas de desenvolvimento"
+>abstract="O desenvolvimento do Adobe Experience Manager (AEM) exige que um conjunto mínimo de ferramentas de desenvolvimento seja instalado e configurado na máquina do desenvolvedor. Essas ferramentas incluem Java, Maven, Adobe I/O CLI, Development IDE e muito mais."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR" text="Diretrizes de desenvolvimento"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=pt-BR" text="Conceitos básicos de desenvolvimento"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=pt-BR" text="Noções básicas de desenvolvimento"
 
-O desenvolvimento do Adobe Experience Manager (AEM) requer que um conjunto mínimo de ferramentas de desenvolvimento seja instalado e configurado no computador do desenvolvedor. Estas ferramentas apoiam o desenvolvimento e a criação de projetos AEM.
+O desenvolvimento do Adobe Experience Manager (AEM) exige que um conjunto mínimo de ferramentas de desenvolvimento seja instalado e configurado na máquina do desenvolvedor. Estas ferramentas apoiam o desenvolvimento e a criação de projetos AEM.
 
 Observe que `~` é usado como abreviado para o Diretório do usuário. No Windows, isso é equivalente a `%HOMEPATH%`.
 

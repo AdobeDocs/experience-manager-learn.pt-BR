@@ -1,6 +1,6 @@
 ---
 title: Usuários e AEM do Adobe IMS
-description: Os usuários que exigem acesso ao AEM Author service ou service são gerenciados como usuários do Adobe IMS no Adobe Admin Console. Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console.
+description: Os usuários que precisam de acesso ao serviço AEM Author são gerenciados como usuários do Adobe IMS no Adobe Admin Console Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -12,7 +12,7 @@ exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 13%
+ht-degree: 73%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_users"
 >title="Usuários do Adobe IMS"
->abstract="Os usuários que exigem acesso ao AEM Author service ou service são gerenciados como usuários do Adobe IMS no Adobe Admin Console. Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console."
+>abstract="Os usuários que precisam de acesso ao serviço AEM Author são gerenciados como usuários do Adobe IMS no Adobe Admin Console Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#how-to-set-up" text="Integração de usuários ao Admin Console"
->additional-url="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Visão geral da Adobe Admin Console Identity"
+>additional-url="https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/identity.ug.html" text="Visão geral da identidade do Adobe Admin Console"
 
 Os usuários que exigem acesso ao serviço de autor do AEM são gerenciados como [Usuários do Adobe IMS](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html) em [Admin Console](https://adminconsole.adobe.com). Saiba mais sobre o que são usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console.
 

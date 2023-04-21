@@ -13,7 +13,7 @@ exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 source-git-commit: 2096c207ce14985b550b055ea0f51451544c085c
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -37,8 +37,8 @@ O `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve subst
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
->title="Imagens com AEM headless"
->abstract="Saiba como o AEM Headless suporta o gerenciamento de ativos de imagem e seu delivery otimizado."
+>title="Imagens com o AEM headless"
+>abstract="Saiba como o AEM Headless oferece suporte ao gerenciamento de ativos de imagem e sua entrega otimizada."
 
 ## Modelo de fragmentos do conteúdo
 
