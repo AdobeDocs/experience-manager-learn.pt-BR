@@ -8,22 +8,22 @@ role: Developer, Architect
 level: Intermediate
 kt: 10831
 thumbnail: KT-10831.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 0%
+source-wordcount: '1669'
+ht-degree: 1%
 
 ---
-
 
 # Gerenciamento de hosts AEM
 
 A implantação de um aplicativo AEM Headless requer atenção em como AEM URLs são construídos para garantir que o host/domínio AEM correto seja usado. Os principais tipos de URL/solicitação que devem estar cientes são:
 
-+ Solicitações HTTP para __[AEM APIs GraphQL](#aem-graphql-api-requests)__
++ Solicitações HTTP para __[AEM APIs do GraphQL](#aem-graphql-api-requests)__
 + __[URLs de imagem](#aem-image-urls)__ para criar imagens de ativos referenciados nos Fragmentos de conteúdo e entregues por AEM
 
-Normalmente, um aplicativo sem cabeçalho AEM interage com um único serviço de AEM para a API GraphQL e solicitações de imagem. O serviço de AEM é alterado com base na implantação AEM do aplicativo headless:
+Normalmente, um aplicativo sem cabeçalho AEM interage com um único serviço de AEM para a API do GraphQL e solicitações de imagem. O serviço de AEM é alterado com base na implantação AEM do aplicativo headless:
 
 | Tipo de implantação AEM sem cabeçalho | Ambiente AEM | serviço AEM |
 |-------------------------------|:---------------------:|:----------------:|
@@ -31,17 +31,17 @@ Normalmente, um aplicativo sem cabeçalho AEM interage com um único serviço de
 | Visualização de criação | Produção | Visualizar |
 | Desenvolvimento | Desenvolvimento | Publicação |
 
-Para lidar com permutas de tipo de implantação, cada implantação de aplicativo é criada usando uma configuração que especifica o serviço de AEM ao qual se conectar. O host/domínio do serviço de AEM configurado é usado para criar os URLs de API GraphQL AEM e os URLs de imagem. Para determinar a abordagem correta para gerenciar configurações dependentes de criação, consulte a documentação da estrutura do aplicativo sem cabeçalho AEM (por exemplo, React, iOS, Android™ e assim por diante), já que a abordagem varia de acordo com a estrutura.
+Para lidar com permutas de tipo de implantação, cada implantação de aplicativo é criada usando uma configuração que especifica o serviço de AEM ao qual se conectar. O host/domínio do serviço de AEM configurado é então usado para construir os URLs de APIs do GraphQL AEM e os URLs de imagem. Para determinar a abordagem correta para gerenciar configurações dependentes de criação, consulte a documentação da estrutura do aplicativo sem cabeçalho AEM (por exemplo, React, iOS, Android™ e assim por diante), já que a abordagem varia de acordo com a estrutura.
 
 | Tipo de cliente | [Aplicativo de página única (SPA)](../spa.md) | [Componente da Web/JS](../web-component.md) | [Móvel](../mobile.md) | [Servidor para servidor](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Configuração de hosts AEM | ✔ | ✔ | ✔ | ✔ |
 
-Veja a seguir exemplos de possíveis abordagens para a construção de URLs para [AEM API GraphQL](#aem-graphql-api-requests) e [solicitações de imagem](#aem-image-requests), para várias estruturas e plataformas headless populares.
+Veja a seguir exemplos de possíveis abordagens para a construção de URLs para [API AEM GraphQL](#aem-graphql-api-requests) e [solicitações de imagem](#aem-image-requests), para várias estruturas e plataformas headless populares.
 
-## Solicitações de API GraphQL da AEM
+## AEM solicitações da API do GraphQL
 
-As solicitações HTTP GET do aplicativo sem cabeçalho para AEM APIs GraphQL devem ser configuradas para interagir com o serviço de AEM correto, conforme descrito no [tabela acima](#managing-aem-hosts).
+As solicitações HTTP GET do aplicativo sem cabeçalho para AEM APIs do GraphQL devem ser configuradas para interagir com o serviço de AEM correto, conforme descrito na [tabela acima](#managing-aem-hosts).
 
 Ao usar [SDKs sem cabeçalho do AEM](../../how-to/aem-headless-sdk.md) (disponível para JavaScript baseado em navegador, JavaScript baseado em servidor e Java™), um host de AEM pode inicializar o objeto cliente sem cabeçalho AEM com o Serviço de AEM para se conectar.
 
@@ -49,13 +49,13 @@ Ao desenvolver um cliente sem cabeçalho de AEM personalizado, certifique-se de 
 
 ### Exemplos
 
-A seguir estão exemplos de como AEM solicitações de API GraphQL podem ter o valor de host AEM tornado configurável para várias estruturas de aplicativo sem cabeçalho.
+A seguir estão exemplos de como AEM solicitações da API do GraphQL podem ter o valor de host AEM tornado configurável para várias estruturas de aplicativo sem cabeçalho.
 
 +++ Exemplo de reação
 
-Este exemplo é baseado na variável [Aplicativo de reação sem cabeçalho do AEM](../../example-apps/react-app.md)O ilustra como AEM solicitações de API GraphQL podem ser configuradas para se conectar a diferentes Serviços AEM com base em variáveis de ambiente.
+Este exemplo é baseado na variável [Aplicativo de reação sem cabeçalho do AEM](../../example-apps/react-app.md)O ilustra como AEM solicitações da API do GraphQL podem ser configuradas para se conectar a diferentes Serviços AEM com base em variáveis de ambiente.
 
-Os aplicativos React devem usar o [Cliente autônomo do AEM para JavaScript](../../how-to/aem-headless-sdk.md) para interagir com AEM APIs GraphQL. O cliente Sem Cabeçalho do AEM, fornecido pelo AEM Cliente Sem Cabeçalho para JavaScript, deve ser inicializado com o host do Serviço de AEM ao qual ele se conecta.
+Os aplicativos React devem usar o [Cliente autônomo do AEM para JavaScript](../../how-to/aem-headless-sdk.md) para interagir com AEM APIs do GraphQL. O cliente Sem Cabeçalho do AEM, fornecido pelo AEM Cliente Sem Cabeçalho para JavaScript, deve ser inicializado com o host do Serviço de AEM ao qual ele se conecta.
 
 #### Reagir arquivo de ambiente
 
@@ -87,7 +87,7 @@ Por exemplo, um aplicativo React `package.json` pode conter: `scripts` configura
 
 #### AEM cliente sem periféricos
 
-O [Cliente autônomo do AEM para JavaScript](../../how-to/aem-headless-sdk.md) contém um cliente sem cabeçalho AEM que faz solicitações HTTP para AEM APIs GraphQL. O cliente sem cabeçalho do AEM deve ser inicializado com o host AEM com o qual ele interage, usando o valor do `.env` arquivo.
+O [Cliente autônomo do AEM para JavaScript](../../how-to/aem-headless-sdk.md) contém um cliente sem cabeçalho AEM que faz solicitações HTTP para AEM APIs do GraphQL. O cliente sem cabeçalho do AEM deve ser inicializado com o host AEM com o qual ele interage, usando o valor do `.env` arquivo.
 
 + `src/api/headlessClient.js`
 
@@ -163,9 +163,9 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++ Exemplo iOS™
 
-Esse exemplo, com base na variável [exemplo AEM aplicativo iOS™ headless](../../example-apps/ios-swiftui-app.md), ilustra como AEM solicitações de API GraphQL podem ser configuradas para se conectar a diferentes hosts AEM com base em [variáveis de configuração específicas da build](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
+Esse exemplo, com base na variável [exemplo AEM aplicativo iOS™ headless](../../example-apps/ios-swiftui-app.md), ilustra como AEM solicitações da API do GraphQL podem ser configuradas para se conectar a diferentes hosts AEM com base em [variáveis de configuração específicas da build](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 
-Os aplicativos iOS™ exigem que um cliente sem cabeçalho de AEM personalizado interaja com AEM APIs GraphQL. O cliente sem cabeçalho do AEM deve ser gravado de modo que o host do serviço de AEM possa ser configurado.
+Os aplicativos iOS™ exigem um cliente AEM headless personalizado para interagir com APIs AEM GraphQL. O cliente sem cabeçalho do AEM deve ser gravado de modo que o host do serviço de AEM possa ser configurado.
 
 #### Configuração da build
 
@@ -194,7 +194,7 @@ let aemHost: String = try Configuration.value(for: "AEM_HOST")      // publish-p
 let aemHeadlessClient = Aem(scheme: aemScheme, host: aemHost);
 ```
 
-O cliente AEM personalizado sem periféricos (`api/Aem.swift`) contém um método `makeRequest(..)` que prefixa AEM solicitações de APIs GraphQL com o AEM configurado `scheme` e `host`.
+O cliente AEM personalizado sem periféricos (`api/Aem.swift`) contém um método `makeRequest(..)` que prefixos AEM solicitações de APIs do GraphQL com o AEM configurado `scheme` e `host`.
 
 + `api/Aem.swift`
 
@@ -222,9 +222,9 @@ private func makeRequest(persistedQueryName: String, params: [String: String] = 
 
 +++ Exemplo do Android™
 
-Esse exemplo, com base na variável [exemplo AEM aplicativo Android™ headless](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)O ilustra como AEM solicitações de API GraphQL podem ser configuradas para se conectar a diferentes AEM Services com base em variáveis de configuração específicas de compilação (ou de sabor).
+Esse exemplo, com base na variável [exemplo AEM aplicativo Android™ headless](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)O ilustra como AEM solicitações da API do GraphQL podem ser configuradas para se conectar a diferentes Serviços AEM com base em variáveis de configuração específicas de criação (ou de sabor).
 
-Os aplicativos Android™ (quando escritos em Java™) devem usar o [Cliente autônomo AEM para Java™](https://github.com/adobe/aem-headless-client-java) para interagir com AEM APIs GraphQL. O cliente Sem Cabeça de AEM, fornecido pelo Cliente Sem Cabeça de AEM para Java™, deve ser inicializado com o host de Serviço de AEM ao qual ele se conecta.
+Os aplicativos Android™ (quando escritos em Java™) devem usar o [Cliente autônomo AEM para Java™](https://github.com/adobe/aem-headless-client-java) para interagir com AEM APIs do GraphQL. O cliente Sem Cabeça de AEM, fornecido pelo Cliente Sem Cabeça de AEM para Java™, deve ser inicializado com o host de Serviço de AEM ao qual ele se conecta.
 
 #### Criar arquivo de configuração
 
@@ -289,21 +289,25 @@ Ao criar o aplicativo Android™ para diferentes usos, especifique o `env` sabor
 
 As solicitações de imagem do aplicativo sem cabeçalho para AEM devem ser configuradas para interagir com o serviço de AEM correto, conforme descrito na [tabela acima](#managing-aem-hosts).
 
-Enquanto AEM GraphQL `... on ImageRef` fornece campos `_authorUrl` e `_publishUrl` contendo URLs absolutos para os respectivos serviços de AEM, geralmente é mais direto usar o `_path` e prefixar o host do serviço de AEM usado para consultar AEM APIs GraphQL.
+O Adobe recomenda usar [imagens otimizadas](../../how-to/images.md) disponibilizado através do `_dynamicUrl` em AEM APIs do GraphQL. O `_dynamicUrl` retorna um URL sem host que pode receber o prefixo do host do serviço de AEM usado para consultar AEM APIs do GraphQL. Para o `_dynamicUrl` na resposta do GraphQL é semelhante a:
 
-Usando `_path` pode ser especialmente benéfico se o aplicativo sem cabeçalho puder se conectar ao AEM Author ou AEM Publish com base no contexto de implantação.
-
-Se o aplicativo sem cabeçalho interagir exclusivamente com o AEM Author ou Publish, `_authorUrl` ou `_publishUrl` para simplificar a implementação, e as orientações nos exemplos abaixo podem ser ignoradas.
+```json
+{
+    ...
+    "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/example.jpg?preferwebp=true",
+    ...
+}
+```
 
 ### Exemplos
 
-A seguir estão exemplos de como os URLs de imagem podem prefixar o valor do host AEM, tornando-o configurável para várias estruturas de aplicativo sem cabeçalho. Os exemplos pressupõem o uso de consultas GraphQL que retornam referências de imagem usando o `_path` campo.
+A seguir estão exemplos de como os URLs de imagem podem prefixar o valor do host AEM, tornando-o configurável para várias estruturas de aplicativo sem cabeçalho. Os exemplos pressupõem o uso de consultas do GraphQL que retornam referências de imagem usando o `_dynamicUrl` campo.
 
 Por exemplo:
 
-#### Consulta GraphQL mantida
+#### Consulta persistente do GraphQL
 
-Esta consulta GraphQL retorna uma referência de imagem `_path`. Como visto no [Resposta GraphQL](#examples-react-graphql-response) que exclui um host.
+Essa consulta GraphQL retorna uma referência de imagem `_dynamicUrl`. Como visto no [Resposta do GraphQL](#examples-react-graphql-response) que exclui um host.
 
 ```graphql
 query ($path: String!) {
@@ -312,7 +316,7 @@ query ($path: String!) {
       title,
       primaryImage {
         ... on ImageRef {
-          _path
+          _dynamicUrl
         }
       }
     }
@@ -320,9 +324,9 @@ query ($path: String!) {
 }
 ```
 
-#### Resposta GraphQL
+#### Resposta do GraphQL
 
-Essa resposta GraphQL retorna a `_path` que exclui um host.
+Essa resposta do GraphQL retorna a `_dynamicUrl` que exclui um host.
 
 ```json
 {
@@ -330,7 +334,7 @@ Essa resposta GraphQL retorna a `_path` que exclui um host.
     "adventureByPath": {
       "item": {
         "adventurePrimaryImage": {
-          "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg",
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--de43411-88ec-4c4d-b5ef-e3dc4bc0cb42/adobestock-175749320.jpg",
         }
       }
     }
@@ -342,7 +346,7 @@ Essa resposta GraphQL retorna a `_path` que exclui um host.
 
 Esse exemplo, com base na variável [exemplo AEM aplicativo Headless React](../../example-apps/react-app.md)O ilustra como os URLs de imagem podem ser configurados para se conectar aos Serviços de AEM corretos com base nas variáveis de ambiente.
 
-Este exemplo mostra como o prefixo faz referência à imagem `_path` , com um `REACT_APP_AEM_HOST` Variável de ambiente de reação.
+Este exemplo mostra como o prefixo faz referência à imagem `_dynamicUrl` , com um `REACT_APP_AEM_HOST` Variável de ambiente de reação.
 
 #### Reagir arquivo de ambiente
 
@@ -374,9 +378,9 @@ Por exemplo, um aplicativo React `package.json` pode conter: `scripts` configura
 
 #### Reagir componente
 
-O componente React importa o `REACT_APP_AEM_HOST` variável de ambiente e prefixos a imagem `_path` , para fornecer um URL de imagem totalmente resolvível.
+O componente React importa o `REACT_APP_AEM_HOST` variável de ambiente e prefixos a imagem `_dynamicUrl` , para fornecer um URL de imagem totalmente resolvível.
 
-Este mesmo `REACT_APP_AEM_HOST` A variável de ambiente é usada para inicializar o cliente sem cabeçalho AEM usado por `useAdventureByPath(..)` useEffect hook personalizado usado para buscar os dados GraphQL da AEM. Usando a mesma variável para criar a solicitação de API GraphQL como o URL da imagem, verifique se o aplicativo React interage com o mesmo serviço de AEM para ambos os casos de uso.
+Este mesmo `REACT_APP_AEM_HOST` A variável de ambiente é usada para inicializar o cliente sem cabeçalho AEM usado por `useAdventureByPath(..)` useEffect hook personalizado usado para buscar os dados do GraphQL do AEM. Usando a mesma variável para criar a solicitação da API do GraphQL como URL de imagem, verifique se o aplicativo React interage com o mesmo serviço de AEM para ambos os casos de uso.
 
 + &#39;src/components/AdventureDetail.js&#39;
 
@@ -385,12 +389,12 @@ Este mesmo `REACT_APP_AEM_HOST` A variável de ambiente é usada para inicializa
 // Import the AEM origin from the app's environment configuration
 const AEM_HOST = env.process.REACT_APP_AEM_HOST; // https://publish-p123-e456.adobeaemcloud.com
 
-let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg')
+let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp')
 
 return (
     // Prefix the image src URL with the AEM host
-    <img src={AEM_HOST + data.adventureByPath.item.primaryImage._path }>
-    {/* Resulting in: <img src="https://publish-p123-e456.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/bali-surf-camp/adobestock-175749320.jpg"/>  */}
+    <img src={AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl }>
+    {/* Resulting in: <img src="https://publish-p123-e456.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--de43411-88ec-4c4d-b5ef-e3dc4bc0cb42/adobestock-175749320.jpg"/>  */}
 )
 ```
 
@@ -417,7 +421,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### Gerador de URL da imagem
 
-Em `Aem.swift`, a implementação personalizada AEM sem cabeçalho do cliente, uma função personalizada `imageUrl(..)` pega o caminho da imagem, como fornecido na variável `_path` na resposta GraphLQ e a prepara com AEM host. Essa função é então invocada nas exibições do iOS sempre que uma imagem é renderizada.
+Em `Aem.swift`, a implementação personalizada AEM sem cabeçalho do cliente, uma função personalizada `imageUrl(..)` pega o caminho da imagem, como fornecido na variável `_dynamicUrl` na resposta do GraphQL e a prepara com AEM host. Essa função é então invocada nas exibições do iOS sempre que uma imagem é renderizada.
 
 + `WKNDAdventures/AEM/Aem.swift`
 
@@ -431,9 +435,9 @@ class Aem: ObservableObject {
         self.host = host
     }
     ...
-    /// Prefixes AEM image paths wit the AEM scheme/host
-    func imageUrl(path: String) -> URL {
-        return URL(string: "\(self.scheme)://\(self.host)\(path)")!
+    /// Prefixes AEM image dynamicUrl with the AEM scheme/host
+    func imageUrl(dynamicUrl: String) -> URL {
+        return URL(string: "\(self.scheme)://\(self.host)\(dynamicUrl)")!
     }
     ...
 }
@@ -441,7 +445,7 @@ class Aem: ObservableObject {
 
 #### Exibição do iOS
 
-A exibição do iOS e os prefixos da imagem `_path` , para fornecer um URL de imagem totalmente resolvível.
+A exibição do iOS e os prefixos da imagem `_dynamicUrl` , para fornecer um URL de imagem totalmente resolvível.
 
 + `WKNDAdventures/Views/AdventureListItemView.swift`
 
@@ -455,8 +459,8 @@ struct AdventureListItemView: View {
     
     var body: some View {
         HStack {
-            // Path the image path to `aem.imageUrl(..)` to prepend the AEM service host     
-            AdventureRowImage(imageUrl: aem.imageUrl(path: adventure.image()))
+            // Path the image dynamicUrl to `aem.imageUrl(..)` to prepend the AEM service host     
+            AdventureRowImage(imageUrl: aem.imageUrl(dynamicUrl: adventure.image()))
             Text(adventure.title)
             Spacer()
         }
@@ -534,17 +538,16 @@ public class RemoteImagesCache implements Html.ImageGetter {
     }
 
     @Override
-    public Drawable getDrawable(String path) {
-        // Get the image data from the cache using the path as the key
-        Drawable drawable = drawablesByPath.get(path);
-        return drawable;
+    public Drawable getDrawable(String dynamicUrl) {
+        // Get the image data from the cache using the dynamicUrl as the key
+        return drawablesByPath.get(dynamicUrl);
     }
 }
 ```
 
 #### Exibição do Android™
 
-A exibição do Android™ obtém os dados da imagem por meio da `RemoteImagesCache` usando o `_path` valor da resposta GraphQL.
+A exibição do Android™ obtém os dados da imagem por meio da `RemoteImagesCache` usando o `_dynamicUrl` da resposta do GraphQL.
 
 + `app/src/main/java/com/adobe/wknd/androidapp/AdventureDetailFragment.java`
 
@@ -557,7 +560,7 @@ public class AdventureDetailFragment extends Fragment implements LoaderManager.L
 
     private void updateContent() {
         ...
-        adventureDetailImage.setImageDrawable(RemoteImagesCache.getInstance().getDrawable(adventure.getPrimaryImagePath()));
+        adventureDetailImage.setImageDrawable(RemoteImagesCache.getInstance().getDrawable(adventure.getPrimaryImageDynamicUrl()));
         ...
     }
 ...

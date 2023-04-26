@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -367,7 +367,7 @@ Use o `json` tipo de retorno e inclua o `_references` ao criar uma consulta Grap
 
 ```graphql
 query ($path: String!) {
-  articleByPath(_path: $path)
+  articleByPath(_path: $path, _assetTransform: { format: JPG, preferWebp: true })
   {
     item {
       _path
@@ -377,17 +377,14 @@ query ($path: String!) {
     }
     _references {
       ...on ImageRef {
-        _path
-        _publishUrl
-        width
+        _dynamicUrl
         __typename
       }
       ...on ArticleModel {
         _path
         author
         __typename
-      }
-      
+      }  
     }
   }
 }
@@ -461,9 +458,7 @@ Na query acima, a variável `main` é retornado como JSON. O `_references` objet
       },
       "_references": [
         {
-          "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920,
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/sport-climbing.jpg?preferwebp=true",
           "__typename": "ImageRef"
         },
         {
@@ -477,7 +472,7 @@ Na query acima, a variável `main` é retornado como JSON. O `_references` objet
 }
 ```
 
-A resposta JSON inclui onde a referência foi inserida no rich text com a variável `"nodeType": "reference"`. O `_references` em seguida, inclui cada referência com as propriedades adicionais solicitadas. Por exemplo, a variável `ImageRef` retorna a variável `width` da imagem referenciada no artigo.
+A resposta JSON inclui onde a referência foi inserida no rich text com a variável `"nodeType": "reference"`. O `_references` em seguida, inclui cada referência.
 
 ## Renderização de referências em linha em rich text
 
@@ -493,12 +488,12 @@ const nodeMap = {
             let reference;
             
             // asset reference
-            if(node.data.path) {
+            if (node.data.path) {
                 // find reference based on path
                 reference = references.find( ref => ref._path === node.data.path);
             }
             // Fragment Reference
-            if(node.data.href) {
+            if (node.data.href) {
                 // find in-line reference within _references array based on href and _path properties
                 reference = references.find( ref => ref._path === node.data.href);
             }
@@ -518,7 +513,7 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._publishUrl} alt={'in-line reference'} /> 
+        return <img src={node._dynamicUrl} alt={'in-line reference'} /> 
     },
     'ArticleModel': (node) => {
         // when __typename === ArticleModel
@@ -534,13 +529,18 @@ O `__typename` do `_references` pode ser usado para mapear diferentes tipos de r
 
 Um exemplo completo de escrita de um renderizador de referências personalizado pode ser encontrado em [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) como parte da [Exemplo de reação de WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
-## Exemplo de ponta a ponta
+## Exemplo completo
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+
+>[!NOTE]
+>
+> O vídeo acima usa `_publishUrl` para renderizar a referência da imagem. Em vez disso, preferir `_dynamicUrl` como explicado no [instruções sobre imagens otimizadas para a Web](./images.md);
+
 
 O vídeo anterior mostra um exemplo completo:
 
 1. Atualização do campo de texto de várias linhas do modelo de fragmento de conteúdo para permitir referências de fragmento
-1. Uso do Editor de fragmento de conteúdo para incluir uma imagem e fazer referência a outro fragmento em um campo de texto de várias linhas.
-1. Criação de uma consulta GraphQL que inclui a resposta de texto de várias linhas como JSON e qualquer `_references` usado.
-1. Escreva uma SPA React que renderize as referências em linha da resposta Rich Text.
+2. Uso do Editor de fragmento de conteúdo para incluir uma imagem e fazer referência a outro fragmento em um campo de texto de várias linhas.
+3. Criação de uma consulta GraphQL que inclui a resposta de texto de várias linhas como JSON e qualquer `_references` usado.
+4. Escreva uma SPA React que renderize as referências em linha da resposta Rich Text.
