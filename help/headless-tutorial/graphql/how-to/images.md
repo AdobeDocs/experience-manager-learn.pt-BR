@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 71b2dc0e8ebec1157694ae55118f2426558566e3
+source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '932'
 ht-degree: 6%
 
 ---
@@ -58,10 +58,15 @@ Os tipos de campo são revisados na seção [Modelo de fragmento de conteúdo](h
 Na query de GraphQL, retorne o campo como o `ImageRef` e solicite o `_dynamicUrl` campo. Por exemplo, querendo uma aventura no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
 ```graphql {highlight="11"}
-query($path: String!, $assetTransform: AssetTransform!) {
+query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int, $imageQuality: Int) {
   adventureByPath(
     _path: $path
-    _assetTransform: $assetTransform
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+    }
   ) {
     item {
       _path
@@ -81,7 +86,8 @@ query($path: String!, $assetTransform: AssetTransform!) {
 ```json
 { 
   "path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
-  "assetTransform": { "format": "JPG", "quality": 80, "preferWebp": true}
+  "imageFormat": "JPG",
+  "imageWidth": 1000,
 }
 ```
 
@@ -89,17 +95,17 @@ O `$path` usada na variável `_path` o filtro requer o caminho completo para o f
 
 O `_assetTransform` define como o `_dynamicUrl` é construída para otimizar a representação da imagem servida. As URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
 
-| Parâmetro GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variável GraphQL | Valores de parâmetro de URL | Exemplo de variável GraphQL | Exemplo de parâmetro de URL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
-| `format` | `format` | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | `{ format: JPG }` | N/A |
-| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | `{ seoName: "bali-surf-camp" }` | N/A |
-| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Números inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
-| `size` | `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos | Inteiros positivos delimitados por vírgulas na ordem `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `{ rotation: R90 }` | `?rotate=90` |
-| `flip` | `flip` | Inverta a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `{ flip: horizontal }` | `?flip=h` |
-| `quality` | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 | 1-100 | `{ quality: 80 }` | `?quality=80` |
-| `width` | `width` | Largura da imagem de saída em pixels. When `size` é fornecido `width` é ignorada. | ✘ | Número inteiro positivo | Número inteiro positivo | `{ width: 1600 }` | `?width=1600` |
-| `preferWebP` | `preferwebp` | If `true` e AEM um WebP, se o navegador oferece suporte a ele, independentemente do `format`. | ✘ | `true`, `false` | `true`, `false` | `{ preferWebp: true }` | `?preferwebp=true` |
+| Parâmetro GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variável GraphQL | Valores de parâmetro de URL | Exemplo de parâmetro de URL |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
+| `format` | `format` | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
+| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | N/A |
+| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Números inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
+| `size` | `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos | Inteiros positivos delimitados por vírgulas na ordem `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
+| `rotation` | `rotate` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
+| `flip` | `flip` | Inverta a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
+| `quality` | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 | 1-100 | `?quality=80` |
+| `width` | `width` | Largura da imagem de saída em pixels. When `size` é fornecido `width` é ignorada. | ✘ | Número inteiro positivo | Número inteiro positivo | `?width=1600` |
+| `preferWebP` | `preferwebp` | If `true` e AEM um WebP, se o navegador oferece suporte a ele, independentemente do `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
 
 ## Resposta do GraphQL
 
@@ -113,7 +119,7 @@ A resposta JSON resultante contém os campos solicitados contendo o URL otimizad
         "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
         "title": "Bali Surf Camp",
         "primaryImage": {
-          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&quality=80"
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&width=1000&quality=80"
         }
       }
     }
@@ -219,7 +225,7 @@ function App() {
   // The 2nd parameter define the base GraphQL query parameters used to request the web-optimized image
   let { data, error } = useAdventureByPath(
         "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp", 
-        { assetTransform: { format: "JPG", preferWebp: true } }
+        { imageFormat: "JPG" }
       );
 
   // Wait for AEM Headless APIs to provide data
