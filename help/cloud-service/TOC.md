@@ -5,10 +5,10 @@ breadcrumb-title: Tutorials do AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
+source-git-commit: fc6c225f30132baec6245955318c7ca180d3ad62
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 20%
+source-wordcount: '934'
+ht-degree: 22%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 20%
 # Tutoriais do Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Visão geral](./overview.md)
++ [AEM](./aem-trials/index.md)
 + Introdução ao AEM as a Cloud Service{#introduction}
    + [O que é AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolução](./introduction/evolution.md)
@@ -36,8 +37,8 @@ ht-degree: 20%
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
    + [Ambientes](./cloud-manager/environments.md)
-   + [Pipeline de produção de CI/CD](./cloud-manager/cicd-production-pipeline.md)
-   + [Pipeline de não produção de CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Pipeline de produção CI/CD](./cloud-manager/cicd-production-pipeline.md)
+   + [Pipeline CI/CD de não produção](./cloud-manager/cicd-non-production-pipeline.md)
    + [Atividade](./cloud-manager/activity.md)
    + Ops de desenvolvimento{#devops}
       + [Implantação do código](./cloud-manager/devops/deploy-code.md)
@@ -50,7 +51,7 @@ ht-degree: 20%
 + Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-set-up}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
-   + [Tempo de Execução do AEM Local](./local-development-environment/aem-runtime.md)
+   + [AEM Runtime local](./local-development-environment/aem-runtime.md)
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desenvolvimento{#developing}
    + Extensibilidade{#extensibility}
@@ -70,7 +71,7 @@ ht-degree: 20%
          + Exemplo de extensões{#example-extensions}
             + [Atualização de propriedade em massa](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
             + [AEM geração de ativos de imagem usando o OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
-   + Conceitos básicos de desenvolvimento{#basics}
+   + Noções básicas de desenvolvimento{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
