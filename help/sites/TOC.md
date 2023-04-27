@@ -5,9 +5,9 @@ breadcrumb-title: Tutorials do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '443'
 ht-degree: 28%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 28%
 + Integrações {#integrations}
    + Experience Platform {#experience-platform}
       + [Gerar FPIDs](integrations/platform/fpid.md)
+      + [Web SDK](integrations/platform/web-sdk.md)
    + Tags de coleta de dados do Experience Platform (Launch) {#experience-platform-data-collection-tags}
       + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
       + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
