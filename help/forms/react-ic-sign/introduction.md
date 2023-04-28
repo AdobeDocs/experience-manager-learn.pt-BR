@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: 2ff7be5b-884c-420d-9a06-f0e2a99d3ef3
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +35,6 @@ Você precisará do seguinte para que o caso de uso funcione:
 * Um servidor AEM com o pacote de complementos do Forms
 * Um [chave de integração para um aplicativo Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
+## Próximas etapas
+
+Escreva um [serviço OSGi personalizado para gerar Documento de comunicação interativa](./create-ic-document.md) usando a API documentada
