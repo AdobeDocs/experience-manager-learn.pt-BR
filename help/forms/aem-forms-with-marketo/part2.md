@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -201,3 +201,8 @@ public class MarketoConfigurationService {
 1. Crie e implante o pacote no servidor AEM.
 1. [Aponte seu navegador para configMgr](http://localhost:4502/system/console/configMgr) e procure por &quot;Configuração do serviço de credenciais do Marketo&quot;
 1. Especifique as propriedades apropriadas específicas à sua instância do Marketo
+
+## Próximas etapas
+
+[Criar fonte de dados baseada no serviço RESTful](./part3.md)
+

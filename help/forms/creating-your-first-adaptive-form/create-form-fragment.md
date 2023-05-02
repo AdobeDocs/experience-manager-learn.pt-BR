@@ -8,10 +8,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 6%
 
 ---
 
@@ -27,3 +27,7 @@ Um fragmento é uma parte reutilizável de um formulário. Por exemplo, um fragm
 Consulte [documentação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) para obter mais detalhes
 
 Se necessário, é possível baixar a variável [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importar para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Próximas etapas
+
+[Criar formulário adaptável](./create-adaptive-form.md)

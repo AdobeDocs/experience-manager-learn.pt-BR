@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '213'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Este tutorial o guiará pelas etapas envolvidas na criação de um formulário adaptável com várias guias. Você aprenderá a usar Tabelas, Layout de acordeão e Editor de regras para criar regras comerciais.
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura.
+Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos.
 
 Este tutorial não usa nenhum modelo de formulário na criação do Formulário adaptável.
 
@@ -34,3 +34,7 @@ Você precisará do seguinte:
 * [Baixe o cliente-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) ao seu disco rígido.
 
 * Importe os arquivos zip no AEM usando [gerenciador de pacotes ](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Próximas etapas
+
+[Criar modelo de formulário adaptável](./create-adaptive-form-template.md)

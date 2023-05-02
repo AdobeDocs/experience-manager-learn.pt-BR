@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '135'
+ht-degree: 8%
 
 ---
 
@@ -28,5 +28,8 @@ Consulte [documentação do modelo de formulário adaptável](https://experience
 Se necessário, é possível baixar a variável [modelo de formulário adaptável](assets/peak-application-template.zip) e importar para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
 
+## Próximas etapas
+
+[Criar fragmento de formulário adaptável](./create-form-fragment.md)
 
 

@@ -7,10 +7,10 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 4%
+source-wordcount: '1804'
+ht-degree: 3%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 4%
 + [Práticas recomendadas para seguir](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuração da autenticação OKTA com o Autor do AEM](adaptive-forms/single-sign-on-with-okta.md)
 + Criar o primeiro formulário adaptável {#creating-your-first-adaptive-form}
-   + [Introdução e configuração](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [Criar modelo de formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form-template.md)
-   + [Criar fragmento de formulário](creating-your-first-adaptive-form/create-form-fragment.md)
-   + [Criar formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form.md)
-   + [Configuração do painel raiz e adição de painéis filhos](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
-   + [Adicionar componentes ao painel Pessoas](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
-   + [Adicionar tabela ao painel de renda](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
-   + [Configuração do painel Ativos](creating-your-first-adaptive-form/configuring-assets-panel.md)
-   + [Uso de funções personalizadas e do editor de códigos](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
+   + [1 - Introdução e configuração](creating-your-first-adaptive-form/introduction-and-setup.md)
+   + [2 - Criar modelo de formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [3 - Criar fragmento de formulário](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [4 - Criar formulário adaptável](creating-your-first-adaptive-form/create-adaptive-form.md)
+   + [5 - Configuração do painel raiz e adição de painéis filhos](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [6 - Adicionar componentes ao painel Pessoas](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [7 - Adicionar tabela ao painel de renda](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [8 - Configuração do painel Ativos](creating-your-first-adaptive-form/configuring-assets-panel.md)
+   + [9 - Uso de funções personalizadas e do editor de códigos](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Manuseio de envios de formulário {#handling-af-form-submissions}
    + [Criação de um fluxo de trabalho de revisão](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuração do formulário adaptável para acionar o fluxo de trabalho](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
@@ -173,9 +173,9 @@ ht-degree: 4%
    + [Salvar documento no sistema de arquivos](custom-workflow-steps/write-payload-document.md)
    + [Salvar dados enviados na variável de string](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Componente de fluxo de trabalho personalizado{#custom-workflow-component}
-   + [Introdução](custom-workflow-component/introduction.md)
-   + [Gravar código java](custom-workflow-component/custom-process-step-aem-workflow.md)
-   + [Criar componente de fluxo de trabalho](custom-workflow-component/custom-workflow-component.md)
+   + [1-Introdução](custom-workflow-component/introduction.md)
+   + [Código java de 2 gravações](custom-workflow-component/custom-process-step-aem-workflow.md)
+   + [3-Criar componente de fluxo de trabalho](custom-workflow-component/custom-workflow-component.md)
 + Variáveis no fluxo de trabalho AEM{#variables-aem-workflow}
    + [Introdução - Variáveis no fluxo de trabalho](variables-aem-workflow/introduction.md)
    + [Variáveis XML](variables-aem-workflow/part1.md)
@@ -218,11 +218,11 @@ ht-degree: 4%
    + [Parte4 - Colocar tudo junto](aem-forms-with-marketo/part4.md)
 
 + AEM Forms com Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
-   + [Introdução](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
-   + [Parte1 - Geração de tokens](aem-forms-with-adobe-campaign/partone.md)
-   + [Parte 2 - Criação do perfil ACS no envio do formulário](aem-forms-with-adobe-campaign/parttwo.md)
-   + [Parte3 - Preenchimento prévio de formulário usando informações de perfil do ACS](aem-forms-with-adobe-campaign/partthree.md)
-   + [Parte4 - Criar perfil ACS usando o Modelo de dados de formulário](aem-forms-with-adobe-campaign/partfour.md)
+   + [1 - Introdução](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [2 - Geração de tokens](aem-forms-with-adobe-campaign/partone.md)
+   + [3 - Criação do perfil ACS no envio do formulário](aem-forms-with-adobe-campaign/parttwo.md)
+   + [4 - Preenchimento prévio do formulário usando as informações de perfil do ACS](aem-forms-with-adobe-campaign/partthree.md)
+   + [5 - Criar perfil ACS usando o Modelo de dados de formulário](aem-forms-with-adobe-campaign/partfour.md)
 
 + Kit de boas-vindas {#welcome-kit}
    + [Introdução](welcome-kit/introduction.md)
@@ -231,10 +231,10 @@ ht-degree: 4%
    + [Testar a solução](welcome-kit/testing-the-solution.md)
 
 + Aplicativo React com Forms e Acrobat Sign {#react-ic-sign}
-   + [1-Introdução](react-ic-sign/introduction.md)
-   + [2-Gerar documento](react-ic-sign/create-ic-document.md)
-   + [Wrapper de API 3-Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
-   + [Widget de Sinal de 4 Gerações](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [1 - Introdução](react-ic-sign/introduction.md)
+   + [2 - Gerar documento](react-ic-sign/create-ic-document.md)
+   + [3 - Wrapper de API do Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [4 - Gerar widget de sinal](react-ic-sign/create-servlet-to-expose-endpoint.md)
    + [5 - Implantar os ativos de amostra](react-ic-sign/deploy-assets-on-your-server.md)
 + Serviços de documento {#document-services}
    + [Tipos de PDF forms](document-services/pdf-forms-and-documents.md)

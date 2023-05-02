@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -55,3 +55,7 @@ A primeira etapa na integração do Marketo com o AEM Forms é obter as credenci
 1. BlankTemplatePackage.zip - Este é o modelo de formulário adaptável. Importe isso usando o gerenciador de pacotes.
 1. marketo.json - Este é o arquivo do swagger usado para configurar a fonte de dados.
 1. MarketoAndForms.MarketoAndForms.core-1.0-SNAPSHOT.jar - Este é o pacote que faz a autenticação personalizada. Você pode usar isso se não conseguir concluir o tutorial ou se o pacote não estiver funcionando como esperado.
+
+## Próximas etapas
+
+[Criar autenticação personalizada](./part2.md)
