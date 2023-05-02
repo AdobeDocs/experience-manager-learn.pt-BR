@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 09b00a7edf2f4c90c6cb2178161c6d7e0c9432e8
+exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
+source-git-commit: 00257efe045eb85fb192bbb47f8e178cf909eb86
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,14 +76,10 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
   throws WorkflowException {
 
     String attachmentsPath = metaDataMap.get("attachmentsPath", String.class);
-<<<<<<< HEAD
-    log.debug("Got Attachments PAth" + attachmentsPath);
-    String saveToLocation = metaDataMap.get("saveToLocation", String.class);
-=======
-    log.debug("Got Attachments Path" + attachmentsPath);
+
+    log.debug("Got attachments path: " + attachmentsPath);
     String saveToLocation = metaDataMap.get("SaveToLocation", String.class);
->>>>>>> 1d85e32dec060b5f5f33607225cd6ceb8d2b21c5
-    log.debug("Got Save Location" + saveToLocation);
+    log.debug("Got save location: " + saveToLocation);
 
     log.debug("The seperator is" + File.separator);
     String payloadPath = workItem.getWorkflowData().getPayload().toString();
@@ -146,4 +143,3 @@ O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta at
 
 [Crie o pacote conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 [Certifique-se de que o pacote esteja implantado e no estado ativo](http://localhost:4502/system/console/bundles)
-
