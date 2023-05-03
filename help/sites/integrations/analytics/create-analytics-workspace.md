@@ -10,9 +10,9 @@ kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Saiba como mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics. Saiba como criar um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
 
-## O que você vai criar
+## O que você vai criar {#what-build}
 
-A equipe de marketing da WKND quer entender quais botões de Ação de Chamada (CTA) têm melhor desempenho na página inicial. Neste tutorial, criaremos um novo projeto no Analysis Workspace para visualizar o desempenho de diferentes botões CTA e entender o comportamento do usuário no site. As seguintes informações são capturadas usando o Adobe Analytics quando um usuário clica em um botão de Ação de Chamada (CTA) na página inicial da WKND.
+A equipe de marketing da WKND está interessada em saber qual `Call to Action (CTA)` os botões estão tendo o melhor desempenho na página inicial. Neste tutorial, crie um projeto no **Analysis Workspace** para visualizar o desempenho de diferentes botões CTA e entender o comportamento do usuário no site. As seguintes informações são capturadas usando o Adobe Analytics quando um usuário clica em um botão de Ação de Chamada (CTA) na página inicial da WKND.
 
 **Variáveis do Analytics**
 
@@ -41,8 +41,8 @@ Abaixo estão as variáveis do Analytics que estão sendo rastreadas no momento:
 
 ### Objetivos {#objective}
 
-1. Crie um novo Conjunto de relatórios ou use um existente.
-1. Configurar [Variáveis de conversão (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) e [Eventos bem-sucedidos (Eventos)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) no Conjunto de relatórios.
+1. Crie um Conjunto de relatórios ou use um existente.
+1. Configurar [Variáveis de conversão (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) e [Eventos bem-sucedidos (Eventos)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) no Conjunto de relatórios.
 1. Crie um [Projeto Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) para analisar dados com a ajuda de ferramentas que permitem criar, analisar e compartilhar insights rapidamente.
 1. Compartilhe o projeto do Analysis Workspace com outros membros da equipe.
 
@@ -50,13 +50,13 @@ Abaixo estão as variáveis do Analytics que estão sendo rastreadas no momento:
 
 Este tutorial é uma continuação do [Rastrear componente clicado com o Adobe Analytics](./track-clicked-component.md) e parte do princípio que você tem:
 
-* A **Propriedade do Launch** com o [Extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) ativado
-* **Adobe Analytics** ID do conjunto de relatórios de teste/desenvolvimento e servidor de rastreamento. Consulte a documentação a seguir para [criação de um novo conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) extensão do navegador configurada com a propriedade do Launch carregada em [https://wknd.site/us/en.html](https://wknd.site/us/en.html) ou um site AEM com a Camada de dados Adobe.
+* A **Propriedade de tag** com o [Extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) ativado
+* **Adobe Analytics** ID do conjunto de relatórios de teste/desenvolvimento e servidor de rastreamento. Consulte a documentação a seguir para [criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador configurada com uma propriedade de tag carregada no [Site WKND](https://wknd.site/us/en.html) ou um site AEM com a Camada de dados Adobe.
 
 ## Variáveis de conversão (eVars) e Eventos bem-sucedidos (Evento)
 
-A variável de conversão do Custom Insight (ou eVar) é colocada no código Adobe nas páginas da Web selecionadas do site. Seu objetivo principal é segmentar métricas de sucesso de conversão em relatórios de marketing personalizados. Um eVar pode ser baseado em visitas e funcionar de forma semelhante aos cookies. Os valores passados para variáveis de eVar seguem o usuário por um período predeterminado.
+A variável de conversão do Custom Insight (ou eVar) é colocada no código Adobe nas páginas da Web selecionadas do site. Seu objetivo principal é segmentar métricas de sucesso de conversão em relatórios de marketing personalizados. Um eVar pode ser baseado em visitas e funciona de forma semelhante aos cookies. Os valores passados para variáveis de eVar seguem o usuário por um período predeterminado.
 
 Quando um eVar é definido como o valor de um visitante, o Adobe lembra automaticamente esse valor até sua expiração. Quaisquer eventos bem-sucedidos que um visitante encontra enquanto o valor do eVar está ativo são contados em relação ao valor do eVar.
 
@@ -92,7 +92,7 @@ Eventos bem-sucedidos são ações que podem ser rastreadas. Você determina o q
 
    ![Adicionar novas eVars](assets/create-analytics-workspace/add-new-evars.png)
 
-1. Forneça um nome e uma descrição apropriados para cada eVars e **Salvar** suas alterações. Usamos essas eVars para criar um projeto do Analysis Workspace na próxima seção. Assim, um nome amigável torna as variáveis facilmente descobertas.
+1. Forneça um nome e uma descrição apropriados para cada eVars e **Salvar** suas alterações. No projeto do Analysis Workspace, as eVars com nome apropriado são usadas, portanto, um nome amigável torna as variáveis facilmente detectáveis.
 
    ![eVars](assets/create-analytics-workspace/evars.png)
 
@@ -102,18 +102,18 @@ Em seguida, vamos criar um evento para rastrear o clique do botão CTA.
 
 1. No **Gerenciador do Conjunto de relatórios** selecione a **Id Do Conjunto De Relatórios** e clique em **Editar configurações**.
 1. Clique em **Conversão** > **Eventos bem-sucedidos**
-1. Usar o **Adicionar novo** , crie um novo evento bem-sucedido personalizado para rastrear o clique do botão CTA e **Salvar** suas alterações.
+1. Usar o **Adicionar novo** , crie um evento bem-sucedido personalizado para rastrear o clique do botão CTA e **Salvar** suas alterações.
    * `Event` : `event8`
    * `Name`:`CTA Click`
    * `Type`:`Counter`
 
    ![eVars](assets/create-analytics-workspace/add-success-event.png)
 
-## Criar um novo projeto no Analysis Workspace {#workspace-project}
+## Criar um projeto no Analysis Workspace {#workspace-project}
 
 O Analysis Workspace é uma ferramenta de navegador flexível que permite criar análises e compartilhar insights rapidamente. Usando a interface de arrastar e soltar, você pode criar sua análise, adicionar visualizações para dar vida aos dados, preparar um conjunto de dados, compartilhar e agendar projetos com qualquer pessoa em sua organização.
 
-Em seguida, crie um novo [projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) para criar um painel para analisar o desempenho dos botões CTA em todo o site.
+Em seguida, crie um [projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html#analysis-workspace) para criar um painel para analisar o desempenho dos botões CTA em todo o site.
 
 1. Na barra de ferramentas do Analytics, selecione **Workspace** e clique em para **Criar um novo projeto**.
 
@@ -121,7 +121,7 @@ Em seguida, crie um novo [projeto](https://experienceleague.adobe.com/docs/analy
 
 1. Escolha iniciar a partir de um **projeto em branco** ou selecione um dos modelos pré-criados, fornecido pelo Adobe ou modelos personalizados criados por sua organização. Vários modelos estão disponíveis, dependendo da análise ou caso de uso que você tem em mente. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) sobre as diferentes opções de modelo disponíveis.
 
-   No projeto do Workspace, painéis, tabelas, visualizações e componentes são acessados no painel esquerdo. Estes são os componentes do projeto.
+   No projeto do Workspace, painéis, tabelas, visualizações e componentes são acessados no painel esquerdo. Eles formam os blocos fundamentais do seu projeto.
 
    * **[Componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html)** - Componentes são dimensões, métricas, segmentos ou intervalos de datas que podem ser combinados em uma tabela de forma livre para começar a responder suas perguntas comerciais. Familiarize-se com cada tipo de componente antes de mergulhar na análise. Depois de dominar a terminologia do componente, você pode começar a arrastar e soltar para criar a análise em uma tabela de Forma livre.
    * **[Visualizações](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)** - Visualizações, como um gráfico de barras ou de linhas, são adicionadas sobre os dados para dar vida visualmente a eles. No painel à esquerda, selecione o ícone do meio de Visualizações para ver a lista completa de visualizações disponíveis.
@@ -131,7 +131,7 @@ Em seguida, crie um novo [projeto](https://experienceleague.adobe.com/docs/analy
 
 ### Adicionar visualização de dados com o Analysis Workspace
 
-Em seguida, crie uma tabela para criar uma representação visual de como os usuários interagem com os botões de Ação de Chamada (CTA) na página inicial do Site WKND. Para criar essa representação, vamos usar os dados coletados no [Rastrear componente clicado com o Adobe Analytics](./track-clicked-component.md). Abaixo está um rápido resumo dos dados rastreados para interações do usuário com os botões de Ação de Chamada para o Site WKND.
+Em seguida, crie uma tabela para criar uma representação visual de como os usuários interagem com o `Call to Action (CTA)` botões na página inicial do Site WKND. Para criar essa representação, vamos usar os dados coletados no [Rastrear componente clicado com o Adobe Analytics](./track-clicked-component.md). Abaixo está um rápido resumo dos dados rastreados para interações do usuário com os botões de Ação de Chamada para o Site WKND.
 
 * `eVar5` -  `Page template`
 * `eVar6` - `Page Id`
@@ -149,17 +149,17 @@ Em seguida, crie uma tabela para criar uma representação visual de como os usu
 
    ![Métrica da página - Clique no CTA](assets/create-analytics-workspace/evar8-cta-click.png)
 
-1. Vamos analisar a página por tipo de modelo. Selecione a métrica de modelo de página dos componentes e arraste e solte a métrica Modelo de página na dimensão Nome da página . Agora é possível visualizar o nome da página detalhado pelo tipo de modelo.
+1. Vamos analisar a página de acordo com o tipo de modelo. Selecione a métrica de modelo de página dos componentes e arraste e solte a métrica Modelo de página na dimensão Nome da página . Agora é possível visualizar o nome da página detalhado pelo tipo de modelo.
 
    * **Antes**
 
-      ![eVar 5](assets/create-analytics-workspace/evar5.png)
+      ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Depois**
 
       ![Métricas do eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
-1. Para entender como os usuários interagem com botões CTA quando estão nas páginas do site WKND, precisamos detalhar ainda mais a métrica Modelo de página adicionando a métrica ID do botão (eVar8).
+1. Para entender como os usuários interagem com botões CTA quando estão nas páginas do site WKND, é necessário detalhar ainda mais adicionando a métrica ID do botão (eVar8) .
 
    ![eVar8](assets/create-analytics-workspace/evar8.png)
 
@@ -235,7 +235,7 @@ Em seguida, vamos baixar o Modelo de classificação para a variável ID do bot�
 
 #### Substitua a variável de conversão pela variável de classificação
 
-1. Na barra de ferramentas do Analytics, selecione **Workspace** e abra o espaço de trabalho criado em [Criar um novo projeto no Analysis Workspace](#workspace-project) deste tutorial.
+1. Na barra de ferramentas do Analytics, selecione **Workspace** e abra o espaço de trabalho criado no [Criar um projeto no Analysis Workspace](#create-a-project-in-analysis-workspace) deste tutorial.
 
    ![ID do botão do espaço de trabalho](assets/create-analytics-workspace/workspace-report-button-id.png)
 
@@ -263,6 +263,6 @@ Em seguida, vamos baixar o Modelo de classificação para a variável ID do bot�
 
    ![Compartilhar projeto](assets/create-analytics-workspace/share.png)
 
-## Parabéns. 
+## Parabéns!
 
-Você acabou de aprender a mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics, executar uma Classificação para as métricas e criar um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
+Você acabou de aprender a mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics. Além disso, realizou uma Classificação das métricas e crie um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.
