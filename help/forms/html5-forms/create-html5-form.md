@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,16 +14,16 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
 # Criar formulários HTML5
 
-Formulários HTML5 é um novo recurso no Adobe Experience Manager que oferece a renderização de modelos de formulário XFA (xdp) no formato HTML5. Esse recurso permite a renderização de formulários em navegadores para dispositivos móveis e desktop, nos quais o PDF com base em XFA não ofereça suporte. Os formulários HTML5 não só oferecem suporte aos recursos existentes dos modelos de formulário XFA, como também adicionam novos recursos, como assinatura de rabisco, para dispositivos móveis.
+Formulários HTML5 é um novo recurso no Adobe Experience Manager que oferece a renderização de modelos de formulário XFA (xdp) no formato HTML5. Esse recurso permite a renderização de formulários em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Os formulários HTML5 não só oferecem suporte aos recursos existentes dos modelos de formulário XFA, como também adicionam novos recursos, como assinatura de rabisco, para dispositivos móveis.
 
 ## Pré-requisitos
 
@@ -59,6 +59,6 @@ As propriedades avançadas do modelo xdp permitem especificar a data de publica�
 
 **Enviar URL** - Esse é o URL que processará o envio do formulário HTML5. Abordaremos esta questão na próxima lição. Se um URL de envio não for especificado, o manipulador de envio padrão será chamado, retornando os dados do formulário ao navegador.
 
-**Perfil de renderização HTML** - Formulários HTML5 têm a noção de Perfis que são expostos como Pontos de extremidade REST para permitir a renderização móvel de modelos de formulário. A maioria das vezes o perfil de renderização padrão deve ser suficiente para renderizar o formulário. Se o perfil de renderização padrão não atender às suas necessidades, um [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) podem ser criadas e associadas ao formulário.
+**Perfil de renderização HTML** - Formulários HTML5 têm a noção de Perfis que são expostos como Pontos de extremidade REST para permitir a renderização móvel de modelos de formulário. A maioria das vezes o perfil de renderização padrão deve ser suficiente para renderizar o formulário. Se o perfil de renderização padrão não atender às suas necessidades, um [perfil personalizado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) podem ser criadas e associadas ao formulário.
 
 **Serviço de preenchimento prévio** - O serviço de preenchimento prévio geralmente é usado para preencher seu formulário com dados obtidos de uma fonte de dados de back-end.

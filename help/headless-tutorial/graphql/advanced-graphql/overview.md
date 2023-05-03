@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Observe que a variável `WKND Shared Endpoint` já foi criada. Para criar um ter
 
 >[!NOTE]
 >
-> Depois de salvar o ponto de extremidade, você verá uma modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao ponto de extremidade. No entanto, as permissões de segurança propriamente ditas estão fora do escopo deste tutorial. Para obter mais informações, consulte [Documentação AEM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html?lang=pt-BR).
+> Depois de salvar o ponto de extremidade, você verá uma modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao ponto de extremidade. No entanto, as permissões de segurança propriamente ditas estão fora do escopo deste tutorial. Para obter mais informações, consulte [Documentação AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
 
 ### Revisar a estrutura de conteúdo WKND e a pasta raiz de idioma
 

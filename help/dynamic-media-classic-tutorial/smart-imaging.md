@@ -10,10 +10,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Um dos aspectos mais importantes da experiência do cliente em seu site ou site 
 
 O Smart Imaging também se beneficia do aumento de desempenho de ser totalmente integrado ao melhor serviço premium do Adobe. Esse serviço encontra a rota de Internet ideal entre servidores, redes e pontos de peering que tem a latência mais baixa e/ou a taxa de perda de pacotes que a rota padrão na Internet.
 
-Saiba mais sobre [Imagem inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Saiba mais sobre [Imagem inteligente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Benefícios da imagem inteligente
 
@@ -35,7 +35,7 @@ Como as imagens constituem a maioria do tempo de carregamento de uma página, a 
 
 Como mencionado anteriormente, o Smart Imaging utiliza os recursos do Adobe Sensei AI e funciona com as Predefinições de imagem existentes para converter automaticamente as imagens em formatos de imagem ideais de próxima geração, como o WebP, mantendo a fidelidade visual.
 
-Saiba mais sobre [Como a criação de imagens inteligentes funciona](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem compatíveis (e o que acontece se você não usar esses formatos) e seu impacto nas Predefinições de imagem existentes que estão em uso.
+Saiba mais sobre [Como a criação de imagens inteligentes funciona](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), incluindo detalhes como formatos de imagem compatíveis (e o que acontece se você não usar esses formatos) e seu impacto nas Predefinições de imagem existentes que estão em uso.
 
 ## Impactos da Smart Imaging
 
@@ -49,11 +49,11 @@ A geração de imagens inteligentes funciona com imagens entregues por HTTP, HTT
 
 O Smart Imaging está incluído em sua licença existente do Dynamic Media Classic. Não há custos adicionais para este recurso. Para aproveitar esse recurso, você deve atender a dois requisitos: têm um CDN fornecido em Adobe e um domínio dedicado. Em seguida, você deve habilitá-lo para sua conta, pois ele não é habilitado automaticamente.
 
-A ativação da Smart Imaging começa com você enviando uma solicitação de suporte técnico ao |criação de um caso de suporte| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O suporte funcionará com você para configurar um domínio personalizado que você associará ao Smart Imaging. Você alterará um parâmetro relacionado ao armazenamento em cache (Time To Live, ou TTL) e o suporte limpará o cache. Você também pode fazer uma etapa de preparo opcional, se desejar, antes de levar para a produção. Quando a Smart Imaging estiver ativada, você fornecerá aos clientes imagens de menor tamanho, mas com a mesma qualidade solicitada. Isso significa que eles experimentam tempos de carregamento de página mais rápidos — e tudo isso é feito automaticamente porque o Adobe Sensei ajuda a escolher o tamanho mais eficiente.
+A ativação da Smart Imaging começa com você enviando uma solicitação de suporte técnico ao |criação de um caso de suporte| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). O suporte funcionará com você para configurar um domínio personalizado que você associará ao Smart Imaging. Você alterará um parâmetro relacionado ao armazenamento em cache (Time To Live, ou TTL) e o suporte limpará o cache. Você também pode fazer uma etapa de preparo opcional, se desejar, antes de levar para a produção. Quando a Smart Imaging estiver ativada, você fornecerá aos clientes imagens de menor tamanho, mas com a mesma qualidade solicitada. Isso significa que eles experimentam tempos de carregamento de página mais rápidos — e tudo isso é feito automaticamente porque o Adobe Sensei ajuda a escolher o tamanho mais eficiente.
 
 Depois de ativar o Smart Imaging, você deverá verificar se ele está funcionando como esperado.
 
-Você provavelmente tem perguntas adicionais sobre Smart Imaging. Nós compilamos uma lista de perguntas frequentes com respostas. Leia o [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Você provavelmente tem perguntas adicionais sobre Smart Imaging. Nós compilamos uma lista de perguntas frequentes com respostas. Leia o [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Recursos adicionais
 

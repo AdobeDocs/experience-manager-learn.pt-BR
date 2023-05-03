@@ -3,15 +3,15 @@ title: Etapas simplificadas para instalar o AEM Forms no Windows
 description: Etapas rápidas e fáceis para instalar o AEM Forms no Windows
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Embora recomendemos seguir a [documentação oficial](https://helpx.adobe.com/br
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Essas duas propriedades são necessárias para que os serviços de documento funcionem
 * Salve o arquivo sling.properties
-* [Baixe o pacote de addon de formulários apropriado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [Baixe o pacote de addon de formulários apropriado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR)
 * Instale o pacote de complementos de formulários usando [gerenciador de pacotes.](http://localhost:4502/crx/packmgr/index.jsp)
 * Depois de instalar o pacote adicional, siga as seguintes etapas
 
@@ -87,4 +87,4 @@ Embora recomendemos seguir a [documentação oficial](https://helpx.adobe.com/br
 4. Salve as alterações.
 
 Parabéns!!! Agora você instalou e configurou o AEM Forms em seu sistema.
-Dependendo das suas necessidades, você pode configurar  [Extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=en) ou [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=pt-BR) no seu servidor
+Dependendo das suas necessidades, você pode configurar  [Extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ou [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) no seu servidor

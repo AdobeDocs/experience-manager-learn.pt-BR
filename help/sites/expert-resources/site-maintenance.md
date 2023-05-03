@@ -4,13 +4,13 @@ seo-title: Your Routine Site Maintenance Guide
 description: Seja administrador, autor ou desenvolvedor, a manutenção do site toca cada aspecto da instância do AEM Sites. Use este guia para garantir que sua estratégia seja configurada para ser bem-sucedida.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 4%
+source-wordcount: '1084'
+ht-degree: 5%
 
 ---
-
 
 # Dicas e truques de manutenção do site
 
@@ -44,23 +44,23 @@ Os índices permitem que as consultas sejam executadas o mais rápido possível,
 
 Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, é necessário limpar revisões antigas para liberar recursos de disco.
 
-#### [Limpeza de binários do Lucene](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-dashboard.html?lang=en#automated-maintenance-tasks)
+#### [Limpeza de binários do Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Limpe os binários do lucene e reduza o requisito de tamanho do armazenamento de dados em execução.
 
-#### [Lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/data-store-garbage-collection.html?lang=en)
+#### [Lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 Quando um ativo no AEM é excluído, a referência ao registro do armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro do armazenamento de dados permanece. Esse registro de armazenamento de dados não referenciado se torna &quot;lixo&quot; que não precisa ser retido. Nos casos em que existem vários ativos não referenciados, é útil livrá-los deles, preservar espaço, otimizar o backup e o desempenho de manutenção do sistema de arquivos.
 
-#### [Remoção do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/workflows-administering.html?lang=en)
+#### [Remoção do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=pt-BR)
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-#### [Manutenção do log de auditoria](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-audit-log.html?lang=en)
+#### [Manutenção do log de auditoria](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html)
 
 AEM eventos qualificados para registro de auditoria geram muitos dados arquivados. Esses dados podem crescer rapidamente ao longo do tempo devido a replicações, uploads de ativos e outras atividades do sistema.
 
-#### [Segurança](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [Segurança](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=pt-BR)
 
 Verifique se as práticas recomendadas da Lista de verificação de segurança são seguidas de perto para garantir a instância mais segura do AEM.
 
@@ -80,7 +80,7 @@ Os sistemas de estilos permitem que os componentes principais e até mesmo os co
 
 Lançamentos permitem que o trabalho seja concluído para uma nova promoção, venda ou implantação de site sem afetar as páginas implantadas no momento. Além disso, eles podem ser programados para ficarem ativos automaticamente, sem participação ou supervisão, permitindo que os Autores façam o trabalho da próxima semana (ou do próximo trimestre) hoje e não corram para o desenvolvimento da página no dia anterior ao lançamento - é realmente a dádiva do TEMPO!)
 
-### [Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html?lang=en)
+### [Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
 Fragmentos de conteúdo são &quot;partes&quot; personalizáveis de informações que podem ser facilmente reutilizadas em todo o site. Se você precisar de uma alteração, basta alterar o pedaço original e a atualização é vista em todos os lugares em que é usada - imediatamente!
 

@@ -1,7 +1,7 @@
 ---
 title: Configurar um ambiente de desenvolvimento de AEM local
 description: Saiba como configurar um ambiente de desenvolvimento local para o Experience Manager. Familiarize-se com a instalação local, o Apache Maven, ambientes de desenvolvimento integrados e depuração e solução de problemas. Use Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -138,7 +138,7 @@ Quando, usando um IDE, verifique `classic` na guia Perfil do Maven.
 
 ### [!DNL Eclipse] IDE
 
-O **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** O é um dos IDEs mais populares para desenvolvimento de Java™, em grande parte porque é de código aberto e ***grátis***! o Adobe fornece um plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)** para [!DNL Eclipse] para facilitar o desenvolvimento com uma GUI simpática para sincronizar o código com uma instância de AEM local. O [!DNL Eclipse] O IDE é recomendado para desenvolvedores novos a AEM em grande parte devido ao suporte da GUI por [!DNL AEM Developer Tools].
+O **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** O é um dos IDEs mais populares para desenvolvimento de Java™, em grande parte porque é de código aberto e ***grátis***! o Adobe fornece um plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)** para [!DNL Eclipse] para facilitar o desenvolvimento com uma GUI simpática para sincronizar o código com uma instância de AEM local. O [!DNL Eclipse] O IDE é recomendado para desenvolvedores novos a AEM em grande parte devido ao suporte da GUI por [!DNL AEM Developer Tools].
 
 #### Instalação e configuração
 
@@ -194,7 +194,7 @@ O **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** O é um IDE poderoso para
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) é uma visualização baseada em navegador do repositório de AEM. [!DNL CRXDE Lite] O está incorporado no AEM e permite que um desenvolvedor execute tarefas de desenvolvimento padrão, como editar arquivos, definir componentes, caixas de diálogo e modelos. [!DNL CRXDE Lite] é ***not*** O deve ser um ambiente de desenvolvimento completo, mas é eficaz como uma ferramenta de depuração. [!DNL CRXDE Lite] é útil ao estender ou simplesmente entender o código do produto fora da sua base de código. [!DNL CRXDE Lite] O fornece uma visualização eficiente do repositório e uma maneira de testar e gerenciar com eficácia as permissões.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) é uma visualização baseada em navegador do repositório de AEM. [!DNL CRXDE Lite] O está incorporado no AEM e permite que um desenvolvedor execute tarefas de desenvolvimento padrão, como editar arquivos, definir componentes, caixas de diálogo e modelos. [!DNL CRXDE Lite] é ***not*** O deve ser um ambiente de desenvolvimento completo, mas é eficaz como uma ferramenta de depuração. [!DNL CRXDE Lite] é útil ao estender ou simplesmente entender o código do produto fora da sua base de código. [!DNL CRXDE Lite] O fornece uma visualização eficiente do repositório e uma maneira de testar e gerenciar com eficácia as permissões.
 
 [!DNL CRXDE Lite] O deve ser usado com outros IDEs para testar e depurar o código, mas nunca como a ferramenta de desenvolvimento principal. Ele tem suporte de sintaxe limitado, nenhum recurso de preenchimento automático e integração limitada com os sistemas de gerenciamento de controle de origem.
 
