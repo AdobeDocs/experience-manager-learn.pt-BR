@@ -11,9 +11,9 @@ topic: Development
 kt: 7428
 thumbnail: 332437.jpg
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,14 @@ A configuração dos serviços em nuvem no AEM permite criar a integração entr
 O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços em nuvem para integrar o AEM com o Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
+
+## Resolução de problemas
+
+Se você receber um erro ao configurar a configuração da nuvem do Adobe Sign, as seguintes etapas podem ser tomadas para solucionar problemas
+* Certifique-se de que o url de redirecionamento especificado no aplicativo da API do Acrobat Sign esteja no seguinte formato
+&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+Por exemplo - https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS é o nome do contêiner que manterá a configuração da nuvem
+* Certifique-se de que o url de oAuth está correto
+* Verifique a ID do cliente e o segredo do cliente
+* Tente o modo incognitivo da janela
+

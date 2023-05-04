@@ -10,10 +10,10 @@ role: User
 level: Intermediate
 exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
 last-substantial-update: 2021-01-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 2%
 
 ---
 
@@ -35,3 +35,7 @@ O vídeo a seguir oferece uma visão geral do curso
 * Instância de trabalho do AEM Forms
 * Familiarizar-se com o banco de dados MySQL e o Workbench MySQL
 * Alguma experiência na criação do Adaptive Forms
+
+## Próximas etapas
+
+[Criar Tabelas de Banco de Dados](./create-database-tables.md)

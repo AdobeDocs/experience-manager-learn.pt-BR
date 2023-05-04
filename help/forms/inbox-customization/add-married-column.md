@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '311'
 ht-degree: 2%
 
 ---
@@ -95,3 +95,7 @@ return isMarried(inboxItem);
 O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;administrador&quot;. Você deve ver um valor na coluna Casado , como mostrado nesta captura de tela
 
 ![coluna casada](assets/married-column.PNG)
+
+## Próximas etapas
+
+[Exibir Coluna Casada](./use-sightly-template.md)

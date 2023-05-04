@@ -1,19 +1,19 @@
 ---
 title: Etapa personalizada do processo para compactar anexos de arquivo
 description: Etapa de processo personalizada para adicionar os anexos de formulário adaptável a um arquivo zip e armazenar o arquivo zip em uma variável de fluxo de trabalho
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1131dca8-882d-4904-8691-95468fb708b7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
-
 
 # Etapa de processo personalizada
 
@@ -70,7 +70,7 @@ import com.day.cq.search.result.SearchResult;
 
 public class ZipFormAttachments implements WorkflowProcess {
 
-	 private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
+     private static final Logger log = LoggerFactory.getLogger(ZipFormAttachments.class);
      @Reference
      QueryBuilder queryBuilder;
 
@@ -127,18 +127,18 @@ public class ZipFormAttachments implements WorkflowProcess {
                     Node payloadNode = session.getNode(payloadPath);
                     Node zippedFileNode =  payloadNode.addNode("zipped_attachments.zip", "nt:file");
                     javax.jcr.Node resNode = zippedFileNode.addNode("jcr:content", "nt:resource");
-        		
-        			ValueFactory valueFactory = session.getValueFactory();
-        			Document zippedDocument = new Document(baos.toByteArray());
+                
+                    ValueFactory valueFactory = session.getValueFactory();
+                    Document zippedDocument = new Document(baos.toByteArray());
 
-        			Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
-        			metaDataMap.put("no_of_attachments", no_of_attachments);
+                    Binary contentValue = valueFactory.createBinary(zippedDocument.getInputStream());
+                    metaDataMap.put("no_of_attachments", no_of_attachments);
 
                     workflowSession.updateWorkflowData(workItem.getWorkflow(), workItem.getWorkflow().getWorkflowData());
                     log.debug("Updated workflow");
-        			resNode.setProperty("jcr:data", contentValue);
-        			session.save();
-        			zippedDocument.close();
+                    resNode.setProperty("jcr:data", contentValue);
+                    session.save();
+                    zippedDocument.close();
 
 
 
@@ -159,5 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Verifique se você tem uma variável chamada *no_of_attachments* do tipo Double no seu fluxo de trabalho para que esse código funcione.
+> Verifique se você tem uma variável chamada  *no_of_attachment* do tipo Double in your workflow para esse código funcionar.
 
+## Próximas etapas
+
+[Preencha variáveis de fluxo de trabalho ArrayList com Anexos e Nome do Anexo](./custom-process-step.md)

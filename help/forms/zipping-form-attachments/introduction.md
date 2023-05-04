@@ -9,10 +9,10 @@ level: Beginner
 kt: kt-8049
 exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 0%
+source-wordcount: '137'
+ht-degree: 2%
 
 ---
 
@@ -34,3 +34,7 @@ Para realizar o caso de uso, uma etapa do processo de fluxo de trabalho personal
 Para realizar esse caso de uso, uma etapa do processo de fluxo de trabalho personalizado foi gravada. Nesta etapa do processo personalizado, preenchemos variáveis de fluxo de trabalho do tipo ArrayList of Documents e ArrayList of Strings.
 
 ![lista de envio de documentos](assets/send-list-of-documents.JPG)
+
+## Próximas etapas
+
+[Anexos de formulário zip](./custom-process-step.md)

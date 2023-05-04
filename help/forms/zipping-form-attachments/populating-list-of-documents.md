@@ -1,32 +1,32 @@
 ---
 title: Etapa do processo personalizado para preencher variáveis de lista
 description: Etapa de processo personalizada para preencher variáveis de lista do tipo documento e string
-feature: Fluxo de trabalho
-topic: Desenvolvimento
+feature: Workflow
+topic: Development
 version: 6.5
 role: Developer
 level: Beginner
 kt: kt-8063
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
 
-
 # Etapa de processo personalizada
 
 
-Uma etapa de processo personalizada foi implementada para preencher as variáveis de fluxo de trabalho da Lista de storage. Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Uma etapa do processo personalizado foi implementada para preencher variáveis de fluxo de trabalho do tipo Lista de matriz com os anexos e nomes de anexos. Essa variável é usada no componente de fluxo de trabalho Enviar email . Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 O código na etapa do processo personalizado faz o seguinte
 
 * Consulte todos os anexos de formulário adaptável na pasta payload. O nome da pasta é passado como um argumento de processo para a etapa do processo.
 
-* Preencha a variável de fluxo de trabalho `listOfDocuments`
-* Preencha a variável de fluxo de trabalho `attachmentNames`
-* Defina o valor da variável de workflow (`no_of_attachments`)
+* Preencher `listOfDocuments` variável de fluxo de trabalho
+* Preencher `attachmentNames` variável de fluxo de trabalho
+* Defina o valor da variável de fluxo de trabalho (`no_of_attachments`)
 
 ```java
  package com.aemforms.formattachments.core;
@@ -114,4 +114,8 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 > Verifique se você tem as seguintes variáveis definidas no fluxo de trabalho para o código funcionar
 > *listOfDocuments* - variável do tipo ArrayList of Documents
 > *attachmentNames* - variável do tipo ArrayList of String
-> *no_of_attachments* - variável do tipo Double
+> *no_of_attachment* - variável do tipo Double
+
+## Próximas etapas
+
+[Teste a solução em seu sistema local](./test.md)

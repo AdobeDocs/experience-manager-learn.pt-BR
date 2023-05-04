@@ -1,17 +1,18 @@
 ---
 title: Obter parâmetro de solicitação
 description: Acesse o parâmetro de solicitação em um serviço de preenchimento prévio do modelo de dados de formulário
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a640539d-c67f-4224-ad81-dd0b62e18c79
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 4%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 ## Obter parâmetro empID
 
-A próxima etapa é acessar o parâmetro empID a partir do url. O valor do parâmetro de solicitação empID é então passado para a operação de serviço **_get_** do modelo de dados de formulário.
+A próxima etapa é acessar o parâmetro empID a partir do url. O valor do parâmetro de solicitação empID é então passado para o **_get_** operação de serviço do modelo de dados de formulário.
 Para o objetivo deste curso, criamos e fornecemos o seguinte
 
 * Modelo de formulário adaptável chamado **_FDMDemo_**
@@ -29,7 +30,7 @@ Para o objetivo deste curso, criamos e fornecemos o seguinte
 
 Ao fazer isso, nosso código no jsp personalizado só será executado quando o formulário adaptável baseado nesse modelo personalizado for renderizado
 
-* [Importe o ](assets/template-page-component.zip) pacote usando o gerenciador  [de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe o pacote](assets/template-page-component.zip) usar [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Abra fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Exclua as linhas comentadas.
 * Salve as alterações
@@ -49,3 +50,7 @@ O valor de empID está associado à chave chamada empID no paraMap. Este mapa é
 >[!NOTE]
 >
 >A chave empID deve corresponder ao valor de vínculo das novas entidades que obtêm o serviço
+
+## Próximas etapas
+
+[Criar um formulário adaptável com base no modelo de dados de formulário](./create-adaptive-form.md)
