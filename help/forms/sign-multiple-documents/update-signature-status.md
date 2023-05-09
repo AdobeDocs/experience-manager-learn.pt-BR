@@ -1,20 +1,20 @@
 ---
 title: Atualizar o Status da Assinatura do Formulário no Banco de Dados
 description: Atualize o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho AEM
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 3%
+source-wordcount: '116'
+ht-degree: 2%
 
 ---
-
 
 # Atualizar status da assinatura
 
@@ -68,7 +68,10 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 }
 ```
 
-## Ativos
+## Assets
 
-O fluxo de trabalho de status da assinatura de atualização pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
+O fluxo de trabalho de atualização do status da assinatura pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
 
+## Próximas etapas
+
+[Personalize a etapa de resumo para exibir o próximo formulário para assinatura](./customize-summary-component.md)

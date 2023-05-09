@@ -14,13 +14,13 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 1%
 
 ---
-
 
 # Configuração do Painel do Outlook de Baixa{#configuring-retirement-outlook-panel}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
 
-* Substitua o texto padrão por &quot;**O seu Outlook de Renda de Baixa&quot;**
+* Substitua o texto padrão por &quot;**Sua previsão de receita de redução&quot;**
 
 **Configurar área de destino do Painel direito**
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 * Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
 
-* Substitua o texto padrão por &quot;**Receita de Baixa Mensal Estimada&quot;**
+* Substitua o texto padrão por &quot;**Receita de Reforma Mensal Estimada&quot;**
 
 ## Adicionar Fragmento do Documento do Outlook de Renda de Baixa {#add-retirement-income-outlook-document-fragment}
 
 * Clique no ícone Ativos e aplique o filtro para exibir ativos do tipo &quot;Fragmentos do documento&quot;. Arraste e solte o fragmento de documento RetimentaçãoRendaOutlook na área de destino do Painel esquerdo.
 
-* Você pode consultar [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) sobre como adicionar fragmento de documento a áreas de conteúdo.
+* Você pode consultar [para esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) ao adicionar fragmento de documento a áreas de conteúdo.
 
 ## Adição de Gráfico de Receita Mensal Estimada {#adding-estimated-monthly-income-chart}
 
@@ -68,12 +68,12 @@ ht-degree: 0%
 
 **AEM Forms 6.4 - Configuração do Gráfico da Coluna de Renda Mensal Estimada**
 
-![formulário64](assets/estimatedmonthlyincomechart.png)
+![form64](assets/estimatedmonthlyincomechart.png)
 
 **AEM Forms 6.5 - Configuração do Gráfico da Coluna de Renda Mensal Estimada**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
+## Próximas etapas
 
-
-
+[Configurar gráfico de pizza](./parteleven.md)

@@ -1,8 +1,8 @@
 ---
 title: Configuração do delivery do documento de canal da Web
-seo-title: Configuração do delivery do documento de canal da Web
+seo-title: Setting up the delivery of web channel document
 description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, verificamos o delivery de documentos do canal da Web por email.
-seo-description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, verificamos o delivery de documentos do canal da Web por email.
+seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
 feature: Interactive Communication
 topics: development
@@ -14,16 +14,15 @@ discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
-
-# Configuração do delivery do documento do canal da Web {#setting-up-the-delivery-of-web-channel-document}
+# Configuração do delivery do documento de canal da Web {#setting-up-the-delivery-of-web-channel-document}
 
 
 Nessa parte, verificamos o delivery de documentos do canal da Web por email.
@@ -34,9 +33,9 @@ Para poder usar o email como um mecanismo de delivery para nosso documento de ca
 
 [Para saber mais sobre a entrega do canal da Web por email](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
-Faça logon em AEM Forms.
+Faça logon no AEM Forms.
 
-* Navegue até Formulários -> Integrações de dados
+* Navegue até Forms ->Integrações de dados
 
 * Abra o Modelo de Dados RetimentaçãoContaDemonstrativo no modo de edição.
 
@@ -74,4 +73,8 @@ Faça logon em AEM Forms.
 
 >[!NOTE]
 >
->Consulte o arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
+>Por favor, dê uma olhada no **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável String webChannelDocument está apontando para um caminho de documento de comunicação válido.
+
+## Próximas etapas
+
+[Configurar delivery de email](../interactive-communications/delivery-of-web-channel-document-tutorial-use.md)

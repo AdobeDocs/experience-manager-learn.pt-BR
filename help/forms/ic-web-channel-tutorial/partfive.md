@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -37,3 +37,7 @@ O editor de fragmento de documento também tem a capacidade de inserir condiçõ
 >[!NOTE]
 >
 >Certifique-se de que os elementos do Modelo de dados de formulário inseridos em um fragmento de documento sejam descendentes do elemento raiz. Por exemplo, nesse caso de uso, verifique se os elementos do objeto Usuário selecionados são filhos do objeto de saldos
+
+## Próximas etapas
+
+[Criar documento de comunicação interativa](./partsix.md)

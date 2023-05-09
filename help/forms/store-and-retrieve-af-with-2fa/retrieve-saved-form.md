@@ -1,18 +1,19 @@
 ---
 title: Recuperar formulário adaptável salvo
 description: Servlet para renderizar o formulário adaptável com dados salvos
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: d722cb9c-6c8a-44de-aaea-fc07a555b864
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 2%
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
@@ -103,3 +104,7 @@ public class RenderForm extends SlingAllMethodsServlet {
 
 }
 ```
+
+## Próximas etapas
+
+[Criar biblioteca cliente para invocar o servlet para armazenar dados de formulário](./create-client-lib.md)

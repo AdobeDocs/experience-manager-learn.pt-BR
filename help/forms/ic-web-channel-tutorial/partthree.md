@@ -7,9 +7,9 @@ version: 6.4,6.5
 role: Developer
 level: Beginner
 exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -33,3 +33,9 @@ O Modelo de Dados de Formulário é a base de todas as Comunicações interativa
 Para obter mais informações, consulte [Configuração das Fontes de Dados](parttwo.md).
 
 Depois de criar o Modelo de dados de formulário, você pode usá-lo como base para criar fragmentos de documento e Documentos de comunicação interativos.
+
+## Próximas etapas
+
+[Criar modelo de documento de canal da Web](./partfour.md)
+
+

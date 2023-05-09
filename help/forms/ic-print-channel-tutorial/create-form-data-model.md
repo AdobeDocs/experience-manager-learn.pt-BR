@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ O Modelo de dados de formulário depende de uma Fonte de dados configurada corre
 O Modelo de Dados de Formulário é a base de todas as Comunicações interativas. A operação Get/Read do Form Data Model busca os dados da fonte de dados de backend e é usada para preencher o documento de Comunicações interativas.
 
 Depois de criar o Modelo de dados de formulário, você pode usá-lo como base para criar fragmentos de documento e Documentos de comunicação interativos.
+
+## Próximas etapas
+
+[Criar modelo usando o designer](./create-xdp-layout-using-forms-designer.md)

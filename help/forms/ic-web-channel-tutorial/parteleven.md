@@ -1,8 +1,8 @@
 ---
 title: Configuração do Painel de Combinação de Investimentos
-seo-title: Configuração do Painel de Combinação de Investimentos
+seo-title: Configuring Investment Mix Panel
 description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas.Nesta parte, adicionaremos gráficos de pizza para exibir o mix de investimento atual e de modelo.
-seo-description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas.Nesta parte, adicionaremos gráficos de pizza para exibir o mix de investimento atual e de modelo.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
 feature: Interactive Communication
 topics: development
@@ -14,20 +14,19 @@ discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
-
 
 # Configuração do Painel de Combinação de Investimentos
 
 Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de investimento atual e modelo.
 
-* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Formulários > Formulários e documentos.
+* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
 
 * Abra a pasta 401KStatement .
 
@@ -59,3 +58,6 @@ Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de inve
 
 * ![assettype](assets/modelassettypechart.png)
 
+## Próximas etapas
+
+[Preparar-se para entregar o documento de canal da Web](./parttwelve.md)

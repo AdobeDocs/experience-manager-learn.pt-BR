@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +34,7 @@ Criando modelo de documento de canal Web no AEM Forms 6.5
 O modelo terá áreas/espaços reservados de destino que terão vários tipos de fragmentos de documentos. Por exemplo, um modelo pode ter áreas de destino para logotipos e outra área de destino para conteúdo de texto.
 
 Depois que o modelo de documento do canal Web é criado, você pode criar documentos de Comunicação Interativa com base no modelo.
+
+## Próximas etapas
+
+[Criar fragmento de documento](./partfive.md)

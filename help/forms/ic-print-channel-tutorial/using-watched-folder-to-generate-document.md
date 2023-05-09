@@ -1,8 +1,8 @@
 ---
 title: Gerando documentos de canal de impressão usando a pasta assistida
-seo-title: Gerando documentos de canal de impressão usando a pasta assistida
+seo-title: Generating Print Channel Documents Using Watched Folder
 description: Esta é a parte 10 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
-seo-description: Esta é a parte 10 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
+seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
 topics: development
@@ -15,14 +15,13 @@ discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
-
 
 # Gerando documentos de canal de impressão usando a pasta assistida
 
@@ -32,7 +31,7 @@ Depois de criar e testar o documento do canal de impressão, precisamos de um me
 
 Ao configurar uma pasta assistida no AEM, você associa um script ECMA ou código java que é executado quando um arquivo é solto na pasta assistida. Neste artigo, o foco será no script ECMA que gerará documentos de canal de impressão e os salvará no sistema de arquivos.
 
-A configuração da pasta assistida e o script ECMA são parte dos ativos importados no [início deste tutorial](introduction.md)
+A configuração de pasta assistida e o script ECMA são parte dos ativos importados na [início deste tutorial](introduction.md)
 
 O arquivo de entrada que é solto na pasta assistida tem a seguinte estrutura. O script ECMA lê os números de conta e gera um documento de canal de impressão para cada uma dessas contas.
 
@@ -79,6 +78,6 @@ Para gerar o documento do canal de impressão usando o mecanismo de pasta assist
 
 * Verifique os arquivos pdf no local de salvamento, conforme especificado no script ECMA.
 
+## Próximas etapas
 
-
-
+[Abrir a interface do agente no envio do formulário](./opening-agent-ui-on-form-submission.md)

@@ -1,24 +1,25 @@
 ---
 title: Criar bibliotecas de clientes
 description: Criar biblioteca de clientes para manipular o evento click do botão "Salvar e sair"
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c90eea73-bd44-40af-aa98-d766aa572415
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 # Criar biblioteca do cliente
 
-Crie [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` da API `guideBridge` no evento click do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável, `fileMap`, e `mobileNumber` para o ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
+Criar [biblioteca do cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` do `guideBridge` API no evento click do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável. `fileMap`e o `mobileNumber` ao ponto de extremidade que escuta em `**/bin/storeafdatawithattachments`
 
 Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é levado ao formulário, o que permite recuperar o formulário adaptável salvo usando a ID de aplicativo exclusiva.
 
@@ -66,6 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Usamos [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para exibir a caixa de diálogo
+> Nós usamos [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) caixa de diálogo exibir
 
-As bibliotecas de clientes usadas neste exemplo podem ser [baixadas aqui](assets/client-libraries.zip)
+As bibliotecas de clientes usadas neste exemplo podem ser [baixado aqui](assets/client-libraries.zip)
+
+## Próximas etapas
+
+[Verificar usuários com o serviço OTP](./verify-users-with-otp.md)

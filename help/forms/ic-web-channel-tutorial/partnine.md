@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 1%
 
 ---
 
@@ -45,3 +45,7 @@ A capacidade de exibir dados tabulares usando tabelas no Documento de comunicaç
 Configuração da tabela no documento de canal da Web - Formulário AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)
+
+## Próximas etapas
+
+[Configurar gráfico de coluna](./partten.md)

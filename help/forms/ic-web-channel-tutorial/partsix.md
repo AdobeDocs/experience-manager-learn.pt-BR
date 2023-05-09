@@ -1,8 +1,8 @@
 ---
 title: Criar comunicação interativa para canal da Web
-seo-title: Criar comunicação interativa para canal da Web
+seo-title: Create Interactive Communication for Web Channel
 description: Esta é a parte 6 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos Comunicação interativa para canal da Web.
-seo-description: Esta é a parte 6 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos Comunicação interativa para canal da Web.
+seo-description: This is part 6 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create Interactive Communication for Web Channel.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
 feature: Interactive Communication
@@ -14,20 +14,19 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a0a0c8dc-5302-446c-9fec-e23fe1320e34
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '177'
 ht-degree: 1%
 
 ---
-
 
 # Criar comunicação interativa para canal da Web
 
 Nesta parte, criaremos Comunicação interativa para canal da Web.
 
-1. Faça logon na instância de autor do AEM e navegue até Adobe Experience Manager > Formulários > Formulários e documentos.
+1. Faça logon na instância do autor do AEM e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
 1. Abra a pasta 401KStatment.
 1. Toque em Criar e selecione Comunicação interativa. A página Criar comunicação interativa é exibida.
 1. Insira as seguintes informações
@@ -42,9 +41,12 @@ Nesta parte, criaremos Comunicação interativa para canal da Web.
 
    1. Desmarque a caixa de seleção Print channel (Canal de impressão). Não estamos criando o documento para o canal de impressão.
    1. Web: Selecione esta opção para gerar o documento para o canal da Web
-   1. Comunicação interativa: Modelo: **global>RetimentaçãoAccountStatemen** t(Este é o modelo criado na etapa anterior)
+   1. Comunicação interativa: Modelo: **global>MeasurementAccountStatemen** t(Este é o modelo criado na etapa anterior)
    1. Tema:** Tema de Referência ->Tela 2.0**
 
 1. Toque em Criar
 1. Você pode clicar em Concluído ou em Editar para fechar a caixa de diálogo.
 
+## Próximas etapas
+
+[Adicionar texto e imagem ao documento](./partseven.md)

@@ -1,17 +1,18 @@
 ---
 title: Criar biblioteca do cliente
 description: Código da biblioteca do cliente para buscar o próximo formulário para assinar
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 4%
+source-wordcount: '91'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +72,10 @@ $(document).ready(function()
 });
 ```
 
-## Ativos
+## Assets
 
 [A clientlib pode ser baixada aqui](assets/get-next-form-client-lib.zip)
+
+## Próximas etapas
+
+[Criar modelo de formulário personalizado para este caso de uso](./create-af-template.md)

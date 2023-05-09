@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 11145e87-7eef-4183-ac6f-efc8d35d0670
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 5%
 
 ---
 
@@ -29,3 +29,7 @@ Nesta parte, criaremos uma fonte de dados com resT.  O vídeo a seguir apresenta
 >[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
 Use o arquivo swagger fornecido para você como parte dos ativos relacionados a este tutorial. Os ativos estão disponíveis em [introdução](introduction.md) deste tutorial.
+
+## Próximas etapas
+
+[Criar modelo de dados do formulário](./partthree.md)

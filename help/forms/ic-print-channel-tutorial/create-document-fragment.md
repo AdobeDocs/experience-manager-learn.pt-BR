@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 2fe3f950-bc2a-4e91-8d91-00438691727a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ O editor de fragmento de documento também tem a capacidade de inserir condiçõ
 >[!NOTE]
 >
 >Certifique-se de que os elementos do Modelo de dados de formulário inseridos em um fragmento de documento sejam descendentes do elemento raiz. Por exemplo, nesse caso de uso, verifique se os elementos do objeto Usuário selecionados são filhos do objeto de saldos
+
+## Próximas etapas
+
+[Criar documento de canal de impressão](./create-print-channel-document.md)

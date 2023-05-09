@@ -9,10 +9,10 @@ role: Developer
 level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 2%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
@@ -33,3 +33,7 @@ Este curso pressupõe o seguinte:
 * Alguma experiência com o AEM/AEM Forms
 
 Ao seguir este tutorial e instalar os ativos fornecidos, você terá uma solução de trabalho para assinar vários formulários.
+
+## Próximas etapas
+
+[Configurar fonte de dados com backup do banco de dados ](./configure-data-source.md)

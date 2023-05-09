@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 3babebd8-3c17-4583-9201-d93bae82f134
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -35,3 +35,7 @@ Para adicionar conteúdo ao documento do canal da Web, siga o vídeo abaixo.
 O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de destino apropriadas no documento de canal da Web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22359?quality=12&learn=on)
+
+## Próximas etapas
+
+[Configurar gráfico de linha](./parteight.md)
