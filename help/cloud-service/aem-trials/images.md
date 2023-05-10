@@ -4,13 +4,13 @@ description: Este ficheiro contém uma referência às imagens utilizadas nos ma
 index: false
 hidefromtoc: true
 hide: true
-source-git-commit: e9422231b8237abe7e2e3703764b2fdc253f33d3
+exl-id: 59c45be7-6a9c-47f2-9c94-b00bf4351ed5
+source-git-commit: efa92bb34903e6c7dd63888fd54770fab9043674
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '59'
 ht-degree: 0%
 
 ---
-
 
 # Índice de imagem de AEM Trials
 
@@ -19,3 +19,4 @@ Os arquivos de imagem devem ser colocados na variável `assets` pasta que fica a
 Cada arquivo de imagem a ser publicado deve ser vinculado a partir desse arquivo usando a sintaxe :
 
 ![Conta pessoal de imagem de email pronta para avaliação](./assets/select-personal-account.png)
+![Imagem de email do Slack](./assets/Slack-email-image.png)
