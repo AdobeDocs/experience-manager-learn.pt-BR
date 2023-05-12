@@ -5,9 +5,9 @@ breadcrumb-title: Tutorials do AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
+source-git-commit: cf37733d0fd22d560c8021eb25e6df273c1a16f7
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 28%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 28%
    + [Entrega de imagem otimizada para a Web](components/web-optimized-image-delivery.md)
    + [Console de componentes](components/components-console-feature-video-use.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de Fragmentos de conteúdo](content-fragments/content-fragments-console.md)
+   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html)
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Tradução de fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
