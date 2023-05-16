@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando 
 * Copiar URLs para imagens e visualizadores responsivos
 * Variações de recorte inteligente para URLs
 
-## Dynamic Media com AEM Sites e qualquer outro CMS
+## Usar com o AEM Sites
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experienc
 * Download local com predefinições de imagem
 * Criação e publicação de banner interativo
 
-## Dynamic Media para criar a coleção de mídia mista e o visualizador personalizado
+## Criar uma coleção de mídia mista
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ Este vídeo descreve o processo de criação simples de uma coleção de ativos 
 * Criar conjunto de mídias mistas a partir do conjunto de rotação, vídeo e fotos
 * Editar e usar o visualizador de Mídia mista personalizado
 
-## Predefinições de imagem do Dynamic Media
+## Predefinições de imagem
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ Este vídeo descreve como as Predefinições de imagem são criadas e o que é u
 * Sempre usar nitidez
 * Campo do modificador de URL para adicionar comandos extras para redimensionar a predefinição de imagem
 
-## Modificadores de URL avançados do Dynamic Media
+## Modificadores de URL avançados
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os
 * Recortar em um caminho de imagem
 * Criação de um modelo de texto a partir de um arquivo Photoshop
 
-## Dynamic Media Controlando o tamanho do arquivo JPEG em Kilobytes
+## Gerenciamento de tamanho do arquivo JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ Este vídeo descreve ir além do redimensionamento de imagens para aproveitar os
 
 Equilibre a qualidade da imagem jpeg em relação ao tamanho de arquivo resultante (em kilobytes) para melhorar a velocidade de carregamento da página, usando 2 comandos para ajustar as configurações de compactação jpeg. O QLT define a qualidade da imagem ajustando as configurações de qualidade da compactação jpeg. JPEG Size permite designar qual tamanho de arquivo precisa ser obtido usando compactação.
 
-## Adicionar legendas ocultas CC ao vídeo do Dynamic Media
+## Legendas ocultas
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Adicione facilmente as Legendas ocultas ao vídeo do Dynamic Media ao anexar o URL da cópia para apontar para um documento de arquivo adicional de Legendas ocultas, um arquivo de vídeo Web.VTT, contendo as informações CC de qualquer vídeo.
 
-## Uso da nitidez da imagem com o AEM Dynamic Media
+## Nitidez da imagem
 
 Este vídeo aborda o motivo pelo qual a nitidez de uma imagem é essencial para manter a fidelidade da imagem e como usar configurações avançadas para criar a imagem perfeita.
 
