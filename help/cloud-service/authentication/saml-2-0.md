@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,6 @@ O Armazenamento de confiança global é configurado com o certificado público d
 _A criação de um repositório de chaves para o serviço de autenticação é necessária quando a função [Propriedade de configuração OSGi do manipulador de autenticação SAML 2.0 `handleLogout` está definida como `true`](#saml-20-authenticationsaml-2-0-authentication) ou quando [Autenticação de asserção AuthnRequest/SAML](#install-aem-public-private-key-pair) é obrigatório_
 
 1. Faça logon no AEM Author como Administrador do AEM para fazer upload da chave privada.
-1. Navegar para __Ferramentas > Segurança > Armazenamento de confiança__ e selecione __serviço de autenticação__ e selecione __Propriedades__ na barra de ação superior.
 1. Navegar para __Ferramentas > Segurança > Usuários__ e selecione __serviço de autenticação__ e selecione __Propriedades__ na barra de ação superior.
 1. Selecione o __Armazenamento de chaves__ guia .
 1. Crie ou abra o repositório de chaves. Se estiver criando um armazenamento de chaves, mantenha a senha segura.
