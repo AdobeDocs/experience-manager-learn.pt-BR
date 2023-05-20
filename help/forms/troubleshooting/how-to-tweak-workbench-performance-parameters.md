@@ -1,5 +1,5 @@
 ---
-title: Como ajustar os parâmetros de desempenho do Workbench
+title: Como ajustar parâmetros de desempenho do Workbench
 description: Etapas para ajustar os parâmetros de desempenho do Workbench
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como ajustar os parâmetros de desempenho do Workbench
+# Como ajustar parâmetros de desempenho do Workbench
 
-*Este vídeo aborda o processo para ajustar os parâmetros de desempenho do Workbench .*
+*Este vídeo aborda o processo de ajuste dos parâmetros de desempenho do Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

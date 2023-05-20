@@ -1,5 +1,5 @@
 ---
-title: Uso da operação Inserir Copiar ativo
+title: Uso da operação de colocação de ativo de cópia
 description: Saiba como usar ativos do AEM Assets usando a operação Inserir cópia.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link

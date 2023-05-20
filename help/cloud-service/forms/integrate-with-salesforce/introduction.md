@@ -1,6 +1,6 @@
 ---
-title: Integrar o Adobe Experience Manager Forms como Cloud Service com o Salesforce
-description: Criar um objeto de lead no Salesforce usando a integração
+title: Integrar o Adobe Experience Manager Forms as Cloud Service ao Salesforce
+description: Criar um objeto de cliente potencial no Salesforce usando a integração
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # Introdução
 
-Introdução à integração entre o Adobe Experience Manager Forms as cloud service e o Salesforce.
+Introdução à integração entre o Adobe Experience Manager Forms as a cloud service e o Salesforce.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331891?quality=12&learn=on)

@@ -23,10 +23,10 @@ Configuração da conexão de dados com uma fonte de dados JDBC
 
 >[!NOTE]
 >
->Os drivers JDBC do MySQL devem ser instalados por meio de pacotes OSGi na instância de AEM.
+>Os drivers JDBC MySQL devem ser instalados por meio de pacotes OSGi na instância do AEM.
 
-## Materiais de apoio {#supporting-materials}
+## Materiais de suporte {#supporting-materials}
 
-* [Baixar o pacote OSGi JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/)
+* [Baixar o pacote MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
 
-   * Baixe, descompacte e instale o arquivo JAR por meio da [Console da Web AEM](http://localhost:4502/system/console/bundles)
+   * Baixe, descompacte e instale o arquivo JAR através da [Console da Web AEM](http://localhost:4502/system/console/bundles)

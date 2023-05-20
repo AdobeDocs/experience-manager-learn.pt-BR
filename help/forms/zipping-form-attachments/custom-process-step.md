@@ -1,6 +1,6 @@
 ---
-title: Etapa personalizada do processo para compactar anexos de arquivo
-description: Etapa de processo personalizada para adicionar os anexos de formulário adaptável a um arquivo zip e armazenar o arquivo zip em uma variável de fluxo de trabalho
+title: Etapa de processo personalizada para compactar anexos de arquivo
+description: Etapa de processo personalizada para adicionar os anexos de formulário adaptáveis a um arquivo zip e armazenar o arquivo zip em uma variável de fluxo de trabalho
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -18,14 +18,14 @@ ht-degree: 1%
 # Etapa de processo personalizada
 
 
-Uma etapa do processo personalizado foi implementada para criar o arquivo zip contendo os anexos do formulário. Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Uma etapa de processo personalizada foi implementada para criar o arquivo zip que contém os anexos de formulário. Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
-O código na etapa do processo personalizado faz o seguinte
+O código na etapa de processo personalizada faz o seguinte
 
-* Consulte todos os anexos de formulário adaptável na pasta payload. O nome da pasta é passado como um argumento de processo para a etapa do processo.
+* Consulte todos os anexos de formulário adaptável na pasta de carga útil. O nome da pasta é passado como um argumento de processo para a etapa do processo.
 
-* Crie um arquivo zip contendo os anexos do formulário e armazene-o na pasta payload.
-* Definir o valor da variável de fluxo de trabalho (no_of_attachments)
+* Crie um arquivo zip contendo os anexos de formulário e armazene-o na pasta de carga útil.
+* Defina o valor da variável de workflow (no_of_attachments)
 
 
 
@@ -159,8 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Verifique se você tem uma variável chamada  *no_of_attachment* do tipo Double in your workflow para esse código funcionar.
+> Verifique se você tem uma variável chamada  *no_of_attachment* do tipo Double no seu workflow para que esse código funcione.
 
 ## Próximas etapas
 
-[Preencha variáveis de fluxo de trabalho ArrayList com Anexos e Nome do Anexo](./custom-process-step.md)
+[Preencher variáveis de fluxo de trabalho ArrayList com Anexos e Nome do Anexo](./custom-process-step.md)

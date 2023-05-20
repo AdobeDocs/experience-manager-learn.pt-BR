@@ -19,8 +19,8 @@ ht-degree: 1%
 
 # Recuperar formulário salvo
 
-O próximo passo é criar um servlet que renderizará o formulário adaptável com os dados salvos e seus anexos.
-O código do servlet a seguir é executado depois que o código OTP é verificado. Os dados do formulário adaptável e seu mapa de anexos de arquivo associado à ID de aplicativo exclusiva são obtidos do banco de dados. O objeto de solicitação é preenchido com os dados do formulário adaptável salvo e o mapa de anexos de arquivo. A solicitação é encaminhada para renderizar o formulário &quot;storeafwithattachment&quot; pré-preenchido com os dados originais e seus anexos.
+A próxima etapa é criar um servlet que renderizará o formulário adaptável com os dados salvos e seus anexos.
+O código de servlet a seguir é executado depois que o código OTP é verificado. Os dados do formulário adaptável e seu mapa de anexos de arquivo associado à ID exclusiva do aplicativo são buscados no banco de dados. O objeto de solicitação é preenchido com os dados salvos do formulário adaptável e o mapa de anexos de arquivo. A solicitação é então encaminhada para renderizar o formulário &quot;storeafwithattachments&quot; pré-preenchido com os dados originais e seus anexos.
 
 ```java
 package store.and.fetch.core.servlets;
@@ -107,4 +107,4 @@ public class RenderForm extends SlingAllMethodsServlet {
 
 ## Próximas etapas
 
-[Criar biblioteca cliente para invocar o servlet para armazenar dados de formulário](./create-client-lib.md)
+[Criar biblioteca cliente para chamar o servlet para armazenar dados de formulário](./create-client-lib.md)

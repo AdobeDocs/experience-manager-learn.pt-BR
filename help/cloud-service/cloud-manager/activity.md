@@ -1,6 +1,6 @@
 ---
-title: Uso do Adobe Cloud Manager - Atividade
-description: O Cloud Manager fornece uma visualização consolidada para a atividade de um Programa, listando todas as execuções de pipeline de CI/CD, tanto de produção quanto de não produção. Isso permite que os usuários visualizem todos os pipelines atualmente em andamento e revisem implantações anteriores.
+title: Utilização do Adobe Cloud Manager - Atividade
+description: O Cloud Manager fornece uma visualização consolidada para a atividade de um Programa, listando todas as execuções do pipeline CI/CD, tanto de produção quanto de não produção. Isso permite que os usuários visualizem todos os pipelines em andamento e examinem implantações anteriores.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 ---
 
-# Uso do Adobe Cloud Manager - Atividade
+# Utilização do Adobe Cloud Manager - Atividade
 
-O Cloud Manager fornece uma visualização consolidada para a atividade de um Programa, listando todas as execuções de pipeline de CI/CD, tanto de produção quanto de não produção. Isso permite que os usuários visualizem todos os pipelines atualmente em andamento e revisem implantações anteriores.
+O Cloud Manager fornece uma visualização consolidada para a atividade de um Programa, listando todas as execuções do pipeline CI/CD, tanto de produção quanto de não produção. Isso permite que os usuários visualizem todos os pipelines em andamento e examinem implantações anteriores.
 
-O Cloud Manager também se integra a um nível por usuário com [Notificações da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), fornecendo uma visão coerente dos acontecimentos e das ações de interesse.
+O Cloud Manager também se integra a um nível por usuário com [Notificações do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/notifications.html), proporcionando uma visão onipresente dos eventos e ações de interesse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

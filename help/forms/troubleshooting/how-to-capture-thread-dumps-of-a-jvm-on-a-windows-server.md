@@ -1,6 +1,6 @@
 ---
-title: Como capturar despejos de encadeamento de uma JVM em um servidor Windows
-description: Etapas para capturar os despejos de encadeamento de um processo Java em um servidor Windows
+title: Como capturar despejos de thread de uma JVM em um servidor Windows
+description: Etapas para capturar os despejos de thread de um processo Java em um servidor Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Como capturar despejos de encadeamento de uma JVM em um servidor Windows
+# Como capturar despejos de thread de uma JVM em um servidor Windows
 
 *Este vídeo aborda as etapas para capturar despejos de heap de uma JVM em um servidor Windows.*
 

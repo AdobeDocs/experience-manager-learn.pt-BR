@@ -1,6 +1,6 @@
 ---
-title: AEM APIs IPS do Dynamic Media Classic
-description: Introdução às APIs IPS do Dynamic Media Classic.
+title: APIs IPS para Dynamic Media Classic AEM
+description: Introdução às APIs do Dynamic Media Classic IPS.
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# AEM APIs IPS do Dynamic Media Classic
+# APIs IPS para Dynamic Media Classic AEM
 
-Este vídeo aborda as APIs do Dynamic Media Classic IPS.
+Este vídeo aborda as APIs de IPS clássicas do Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335453?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Serviços de utilidade pública
-description: Alguns serviços úteis de utilitários para desenvolvedores do AEM Forms
+title: Serviços úteis de utilidade pública
+description: Alguns serviços de utilitários úteis para desenvolvedores do AEM Forms
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ---
 
-# Serviços de utilidade pública
+# Serviços úteis de utilidade pública
 
-Este pacote de amostra fornece serviços úteis que podem ser usados por um desenvolvedor do AEM Forms. Os seguintes serviços estão disponíveis.
+Este pacote de exemplo fornece serviços de utilitários úteis que podem ser usados por um desenvolvedor do AEM Forms. Os serviços a seguir estão disponíveis.
 
 
 ```java
@@ -36,9 +36,9 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 
 O pacote de amostra pode ser [baixado aqui](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
-## Código de exemplo para usar o(s) serviço(s) de utilitário(s)
+## Código de exemplo para usar os serviços de utilitários
 
-Este é o código que foi usado na página JSP para criar org.w3c.dom.Document a partir da string e converter o documento e armazená-lo no repositório CRX, conforme mostrado no trecho de código a seguir.
+O código a seguir foi usado na página JSP para criar org.w3c.dom.Document a partir de uma sequência de caracteres, converter o documento e armazená-lo no repositório CRX como mostrado no seguinte fragmento de código.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -49,7 +49,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Pré-requisitos
 
 
-Você precisará implantar [DesenvolvendoComServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e inicie o pacote.
+Será necessário implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e inicie o pacote.
 
 
-Se você for salvar documentos no repositório CRX usando esse serviço de utilitário, siga o [desenvolvimento com artigo do usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer a variável [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas para o usuário fd-service.
+Se você for salvar documentos no repositório CRX usando esses serviços utilitários, siga o [desenvolvendo com o artigo de usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Certifique-se de fornecer a [permissões necessárias](http://localhost:4502/useradmin) nas pastas CRX apropriadas para o usuário do serviço fd.

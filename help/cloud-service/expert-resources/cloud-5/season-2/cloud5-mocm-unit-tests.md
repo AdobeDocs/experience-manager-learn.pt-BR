@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Mistérios do Cloud Manager - Testes de unidade
-description: Teste de unidade com o AEM e o Cloud Manager
+description: Teste de unidade com AEM e Cloud Manager
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Cloud 5 - Mistérios do Cloud Manager - Testes de unidade
 
-Um passo frequentemente negligenciado no desenvolvimento de software, os testes de unidade são uma atividade extremamente importante que todos os desenvolvedores devem realizar. AEM oferece muitas verificações de qualidade padrão nativamente, mas elas não podem testar tudo o que você personalizou ou alterou.
+Uma etapa frequentemente ignorada no desenvolvimento de software, os testes de unidade são uma atividade extremamente importante que todos os desenvolvedores devem concluir. O AEM fornece muitas verificações de qualidade padrão nativamente, mas elas não podem testar tudo o que você pode ter personalizado ou alterado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343623?quality=12&learn=on)
 

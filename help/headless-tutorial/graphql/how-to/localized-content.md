@@ -1,6 +1,6 @@
 ---
-title: Uso de conteúdo localizado com AEM headless
-description: Saiba como usar o GraphQL para consultar AEM de conteúdo localizado.
+title: Uso de conteúdo localizado com AEM Headless
+description: Saiba como usar o GraphQL para consultar AEM em busca de conteúdo localizado.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless
@@ -8,37 +8,37 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
+exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 3%
 
 ---
 
+# Conteúdo localizado com AEM Headless
 
-# Conteúdo localizado com AEM headless
+O AEM fornece uma [Estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo AEM, como Páginas, Fragmentos de experiência, Ativos e Forms. Uma vez [o conteúdo headless foi traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR)e publicado, está pronto para ser consumido por aplicativos headless.
 
-AEM fornece uma [Estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo sem interface, permitindo que Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em locais. Essa é a mesma estrutura usada para traduzir outro conteúdo AEM, como Páginas, Fragmentos de experiência, Ativos e Forms. Uma vez [o conteúdo sem cabeçalho foi traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR), e publicado, está pronto para o consumo por aplicações sem interface.
-
-## Estrutura da pasta Ativos{#assets-folder-structure}
+## Estrutura da pasta de ativos{#assets-folder-structure}
 
 Verifique se os Fragmentos de conteúdo localizados no AEM seguem o [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
-![AEM pastas de ativos localizados](./assets/localized-content/asset-folders.jpg)
+![Pastas localizadas de ativos do AEM](./assets/localized-content/asset-folders.jpg)
 
-As pastas de localidade devem ser irmãos, e o nome da pasta, em vez do título, deve ser válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) representando a localidade do conteúdo contido na pasta.
+As pastas de local devem ser irmãs e o nome da pasta, em vez do título, deve ser válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que representa o local do conteúdo contido na pasta.
 
-O código de local também é o valor usado para filtrar os Fragmentos de conteúdo retornados pela consulta GraphQL.
+O código de localidade também é o valor usado para filtrar os fragmentos de conteúdo retornados pela consulta do GraphQL.
 
-| Código de localidade | Caminho AEM | Localidade do conteúdo |
+| Código da localidade | Caminho AEM | Local do conteúdo |
 |--------------------------------|----------|----------|
-| de | /content/dam/../**de**/... | Conteúdo alemão |
-| en | /content/dam/../**en**/... | Conteúdo em inglês |
-| es | /content/dam/../**es**/... | Conteúdo espanhol |
+| de | /content/dam/.../**de**/... | Conteúdo em alemão |
+| en | /content/dam/.../**en**/... | Conteúdo em inglês |
+| es | /content/dam/.../**es**/... | Conteúdo em espanhol |
 
 ## Consulta persistente do GraphQL
 
-AEM fornece uma `_locale` Filtro GraphQL que filtra automaticamente o conteúdo por código de localidade . Por exemplo, querendo todas as aventuras em inglês no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definido como:
+O AEM fornece uma `_locale` Filtro do GraphQL que filtra automaticamente o conteúdo por código de localidade. Por exemplo, consultar todas as aventuras em inglês no [Projeto do site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definido como:
 
 ```graphql
 query($locale: String!) {
@@ -51,19 +51,19 @@ query($locale: String!) {
 }
 ```
 
-O `$locale` usada na variável `_locale` o filtro requer o código de localidade (por exemplo, `en`, `en_us`ou `de`), conforme especificado em [AEM convenção de localização baseada em pastas de ativos](#assets-folder-structure).
+A variável `$locale` variável usada no `_locale` O filtro exige o código de localidade (por exemplo, `en`, `en_us`ou `de`) conforme especificado no [Convenção de localização da base de pastas de ativos do AEM](#assets-folder-structure).
 
-## Exemplo de reação
+## Exemplo do React
 
-Vamos criar um aplicativo React simples que controla o conteúdo da Adventure para ser consultado AEM com base em um seletor de localidade usando a variável `_locale` filtro.
+Vamos criar um aplicativo React simples que controla qual conteúdo Adventure consultar do AEM com base em um seletor de localidade usando o `_locale` filtro.
 
-When __Inglês__ está selecionada no seletor de localidade, em seguida, em Inglês Aventurar fragmentos de conteúdo em `/content/dam/wknd/en` são retornadas, quando __Espanhol__ está selecionada, em seguida, Fragmentos de conteúdo em espanhol em `/content/dam/wknd/es`e assim por diante, e assim por diante.
+Quando __Inglês__ é selecionado no seletor de local e Fragmentos de conteúdo de aventura em inglês, em `/content/dam/wknd/en` são retornados, quando __Espanhol__ estiver selecionada, depois Fragmentos de conteúdo em espanhol em `/content/dam/wknd/es`e assim por diante.
 
 ![Aplicativo de exemplo React localizado](./assets/localized-content/react-example.png)
 
-### Crie um `LocaleContext`{#locale-context}
+### Criar um `LocaleContext`{#locale-context}
 
-Primeiro, crie um [Contexto de reação](https://reactjs.org/docs/context.html) para permitir que a localidade seja usada em todos os componentes do aplicativo React.
+Primeiro, crie um [Contexto do React](https://reactjs.org/docs/context.html) para permitir que o local seja usado nos componentes do aplicativo React.
 
 ```javascript
 // src/LocaleContext.js
@@ -80,11 +80,11 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### Crie um `LocaleSwitcher` Reagir componente{#locale-switcher}
+### Criar um `LocaleSwitcher` Componente do React{#locale-switcher}
 
-Em seguida, crie um componente de Reação do alternador de localidade que defina o [LocaleContext](#locale-context) para a seleção do usuário.
+Em seguida, crie um componente React do alternador de local que defina como [ContextoLocal](#locale-context) para a seleção do usuário.
 
-Esse valor de localidade é usado para direcionar as consultas do GraphQL, garantindo que elas retornem somente o conteúdo correspondente ao local selecionado.
+Esse valor de localidade é usado para direcionar as consultas do GraphQL, garantindo que elas retornem apenas o conteúdo correspondente à localidade selecionada.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -106,13 +106,13 @@ export default function LocaleSwitcher() {
 }
 ```
 
-### Consultar o conteúdo usando o `_locale` filter{#adventures}
+### Consultar conteúdo usando o `_locale` filtro{#adventures}
 
-As consultas do componente Aventuras AEM para todas as aventuras por localidade e listam seus títulos. Isso é feito transmitindo o valor da localidade armazenado no contexto React, ao query usando a variável `_locale` filtro.
+O componente Aventuras consulta o AEM para todas as aventuras por localidade e lista seus títulos. Isso é feito passando o valor do local armazenado no contexto do React, para a consulta usando o `_locale` filtro.
 
-Essa abordagem pode ser estendida a outras consultas em seu aplicativo, garantindo que todas as consultas incluam apenas o conteúdo especificado pela seleção de local de um usuário.
+Essa abordagem pode ser estendida para outras consultas em seu aplicativo, garantindo que todas as consultas incluam apenas o conteúdo especificado pela seleção de localidade de um usuário.
 
-A consulta contra AEM é realizada no gancho React personalizado [getAdventuresByLocale, descrito em mais detalhes na documentação Consulta AEM GraphQL](./aem-headless-sdk.md).
+A consulta ao AEM é executada no gancho React personalizado [getAdventuresByLocale, descrito com mais detalhes na documentação do Querying AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
@@ -138,9 +138,9 @@ export default function Adventures() {
 }
 ```
 
-### Defina as `App.js`{#app-js}
+### Defina o `App.js`{#app-js}
 
-Por fim, vincule tudo isso vinculando o aplicativo React ao `LanguageContext.Provider` e definir o valor da localidade. Isso permite que os outros componentes React , [LocaleSwitcher](#locale-switcher)e [Aventuras](#adventures) para compartilhar o estado de seleção da localidade.
+Por último, agrupe-o embrulhando o aplicativo React com o `LanguageContext.Provider` e definindo o valor do local. Isso permite que os outros componentes do React, [LocaleSwitcher](#locale-switcher), e [Aventuras](#adventures) para compartilhar o estado de seleção de local.
 
 ```javascript
 // src/App.js

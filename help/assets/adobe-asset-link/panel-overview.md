@@ -1,6 +1,6 @@
 ---
-title: Visão geral do painel Adobe Asset Link
-description: O Adobe Asset Link fornece aos usuários criativos a capacidade de navegar, pesquisar, sair e fazer check-in de ativos armazenados no AEM Assets usando o painel no aplicativo no InDesign, Photoshop e Illustrator. Obtenha introdução à interface do usuário do painel Adobe Asset Link e seus recursos.
+title: Visão geral do painel Link de ativos do Adobe
+description: O Adobe Asset Link fornece aos usuários criativos a capacidade de navegar, pesquisar, sair e fazer check-in de ativos armazenados no AEM Assets usando o painel no aplicativo no InDesign, Photoshop e Illustrator. Conheça a interface do usuário do painel do Adobe Asset Link e seus recursos.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Visão geral do painel Adobe Asset Link {#adobe-asset-link-panel-overview}
+# Visão geral do painel Link de ativos do Adobe {#adobe-asset-link-panel-overview}
 
-O Adobe Asset Link fornece aos usuários criativos a capacidade de navegar, pesquisar, sair e fazer check-in de ativos armazenados no AEM Assets usando o painel no aplicativo no InDesign, Photoshop e Illustrator. Obtenha introdução à interface do usuário do painel Adobe Asset Link e seus recursos.
+O Adobe Asset Link fornece aos usuários criativos a capacidade de navegar, pesquisar, sair e fazer check-in de ativos armazenados no AEM Assets usando o painel no aplicativo no InDesign, Photoshop e Illustrator. Conheça a interface do usuário do painel do Adobe Asset Link e seus recursos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734?quality=12&learn=on)

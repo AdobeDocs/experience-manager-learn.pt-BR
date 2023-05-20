@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ---
 
-# Aplicação de extensões Reader
+# Aplicação de extensões do Reader
 
-As extensões Reader permitem manipular direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos do PDF com direitos de uso adicionados são chamados de documentos ativados por direitos. Um usuário que abre um documento do PDF habilitado para direitos no Adobe Reader pode executar as operações ativadas para esse documento.
+As extensões do Reader permitem manipular os direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões do Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Adobe Reader pode executar as operações habilitadas para esse documento.
 
 Para realizar esse caso de uso, precisamos fazer o seguinte:
-* [Adicionar o certificado de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) para `fd-service` usuário.
+* [Adicionar o certificado de extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) para `fd-service` usuário.
 
 ## Criar serviço OSGi personalizado
 
@@ -72,10 +72,10 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 ## Criar servlet para transmitir o PDF estendido do leitor
 
-A próxima etapa é criar um servlet com um método POST para retornar o PDF estendido do leitor ao usuário. Nesse caso, o usuário é solicitado a salvar o PDF no sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que vêm com os navegadores não lidam com pdfs dinâmicos.
+A próxima etapa é criar um servlet com um método POST para retornar o PDF estendido do leitor para o usuário. Nesse caso, o usuário é solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que acompanham os navegadores não manipulam pdf dinâmicos.
 
-A seguir, o código do servlet. O servlet é chamado da ação customsubmit do Formulário adaptável.
-O servlet cria o objeto UsageRights e o define com base nos valores inseridos pelo usuário no Formulário adaptável. Em seguida, o servlet chama o método applyUsageRights do serviço criado para essa finalidade.
+A seguir está o código do servlet. O servlet é chamado da ação customsubmit do Formulário adaptável.
+O Servlet cria o objeto UsageRights e define suas propriedades com base nos valores inseridos pelo usuário no Formulário adaptável. O servlet chama o método applyUsageRights do serviço criado para essa finalidade.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -193,12 +193,12 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 }
 ```
 
-Para testar isso em seu servidor local, siga as seguintes etapas:
+Para testar isso no servidor local, siga as seguintes etapas:
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Baixe e instale o pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Isso tem o serviço personalizado e o servlet para aplicar direitos de uso e retornar o pdf
-1. [Importe as bibliotecas do cliente e envie personalizado](assets/applyaresdemo.zip)
+1. [Baixe e instale o pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta
+1. [Importe as bibliotecas do cliente e o envio personalizado](assets/applyaresdemo.zip)
 1. [Importar o formulário adaptável](assets/applyaresform.zip)
 1. Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;ares&quot;.
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecione os direitos apropriados e faça upload do arquivo PDF
-1. Clique em Enviar para obter o Reader Extended PDF
+1. Clique em Enviar para obter o PDF estendido do Reader

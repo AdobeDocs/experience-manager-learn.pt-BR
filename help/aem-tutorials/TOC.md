@@ -12,19 +12,19 @@ ht-degree: 34%
 ---
 
 
-# Tutoriais do Experience Manager {#aem-tutorials}
+# tutoriais do Experience Manager {#aem-tutorials}
 
-+ [AEM tutoriais](overview.md)
++ [Tutoriais do AEM](overview.md)
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 + [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-+ [AEM Cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
-+ [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
-+ [Guias de AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
++ [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
++ [Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
++ [Guias do AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 + Tutorials de várias etapas {#multi}
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-   + [Introdução ao AEM Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Introdução ao AEM e ao Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Tutorial do Dynamic Media Classic do AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
-   + [AEM 6.x Tutorial de cache do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
+   + [Tutorial de cache do Dispatcher do AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)

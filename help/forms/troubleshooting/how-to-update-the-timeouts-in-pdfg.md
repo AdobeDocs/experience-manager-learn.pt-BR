@@ -1,6 +1,6 @@
 ---
 title: Como atualizar a conversão do servidor e o tempo limite global do servidor no serviço PDFG
-description: Configurar a conversão do servidor e o tempo limite global do servidor para o gerador de PDF
+description: Configure a conversão do servidor e o tempo limite global do servidor para o PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como atualizar a conversão do servidor e o tempo limite global no serviço PDFG
+# Como atualizar a conversão do servidor e o tempo limite global no serviço PDF
 
-*Este vídeo descreve o processo de atualização da conversão do servidor e do tempo limite global do servidor no serviço Forms PDFG.*
+*Este vídeo descreve o processo de atualização da conversão do servidor e do tempo limite global do servidor no serviço PDFG do Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)

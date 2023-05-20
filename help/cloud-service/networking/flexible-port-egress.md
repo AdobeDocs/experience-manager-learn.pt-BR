@@ -1,6 +1,6 @@
 ---
-title: Saída flexível da porta
-description: Saiba como configurar e usar portas flexíveis para suportar conexões externas de AEM as a Cloud Service a serviços externos.
+title: Saída de porta flexível
+description: Saiba como configurar e usar saída de porta flexível para suportar conexões externas do AEM as a Cloud Service para serviços externos.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -16,47 +16,47 @@ ht-degree: 5%
 
 ---
 
-# Saída flexível da porta
+# Saída de porta flexível
 
-Saiba como configurar e usar portas flexíveis para suportar conexões externas de AEM as a Cloud Service a serviços externos.
+Saiba como configurar e usar saída de porta flexível para suportar conexões externas do AEM as a Cloud Service para serviços externos.
 
 ## O que é saída de porta flexível?
 
-O acesso flexível da porta permite que regras personalizadas e específicas de encaminhamento da porta sejam anexadas a AEM as a Cloud Service, permitindo que sejam feitas conexões de AEM a serviços externos.
+Saída de porta flexível permite que regras de encaminhamento de porta personalizadas e específicas sejam anexadas ao AEM as a Cloud Service, permitindo que conexões do AEM a serviços externos sejam feitas.
 
-Um programa do Cloud Manager só pode ter um __individual__ tipo de infraestrutura de rede. Certifique-se de que o endereço IP de saída dedicado seja o mais [tipo adequado de infraestrutura de rede](./advanced-networking.md)  para seu AEM as a Cloud Service antes de executar os seguintes comandos.
+Um programa do Cloud Manager só pode ter um __solteiro__ tipo de infraestrutura de rede. Certifique-se de que o endereço IP de saída dedicado seja o mais [tipo adequado de infraestrutura de rede](./advanced-networking.md)  para o AEM as a Cloud Service antes de executar os seguintes comandos.
 
 >[!MORELIKETHIS]
 >
-> Leia o AEM as a Cloud Service [documentação de configuração de rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) para obter mais detalhes sobre a saída flexível do porto.
+> Leia o as a Cloud Service do AEM [documentação avançada de configuração de rede](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) para obter mais detalhes sobre saída de porta flexível.
 
 ## Pré-requisitos
 
-Os itens a seguir são necessários ao configurar saídas flexíveis da porta:
+Os seguintes requisitos são necessários ao configurar a saída de porta flexível:
 
-+ Projeto do Adobe Developer Console com a API do Cloud Manager ativada e [Permissões de Proprietário comercial do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Acesso ao [Credenciais de autenticação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
++ Projeto do Adobe Developer Console com a API do Cloud Manager ativada e [Permissões do proprietário da empresa no Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ Acesso a [Credenciais de autenticação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/)
    + ID da organização (também conhecida como ID da organização IMS)
-   + ID do cliente (também conhecida como chave da API)
-   + Token de acesso (também conhecido como Token portador)
+   + ID do cliente (também conhecida como Chave de API)
+   + Token de acesso (também conhecido como Token do portador)
 + A ID do programa do Cloud Manager
-+ As IDs do ambiente do Cloud Manager
++ As IDs de ambiente do Cloud Manager
 
-Para obter mais detalhes, consulte a seguinte apresentação sobre como configurar, configurar e obter credenciais da API do Cloud Manager e como usá-las para fazer uma chamada da API do Cloud Manager.
+Para obter mais detalhes, assista à seguinte apresentação de como configurar e obter credenciais da API do Cloud Manager e como usá-las para fazer uma chamada de API do Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
 
-Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. O `curl` Os comandos assumem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o `\` caractere de quebra de linha com `^`.
+Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. Os dados fornecidos `curl` assumem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o `\` caractere de quebra de linha com `^`.
 
 ## Habilitar saída de porta flexível por programa
 
-Comece ativando o acesso flexível da porta AEM as a Cloud Service.
+Comece ativando a saída de porta flexível no AEM as a Cloud Service.
 
-1. Primeiro, determine a região em que a Rede avançada está configurada usando a API do Cloud Manager [listRegiões](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. O `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
+1. Primeiro, determine a região em que a Rede avançada é configurada usando a API do Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. A variável `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
 
-   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) nos termos do [detalhes do ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usado na API do Cloud Manager.
+   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) no [detalhes do ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usada na API do Cloud Manager.
 
-   __solicitação HTTP listRegiões__
+   __solicitação HTTP listRegions__
 
    ```shell
    $ curl -X GET https://cloudmanager.adobe.io/api/program/{programId}/regions \
@@ -66,7 +66,7 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
        -H 'Content-Type: application/json' 
    ```
 
-1. Habilitar saída de porta flexível para um Programa Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
+1. Ativar saída de porta flexível para um programa do Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
 
    __solicitação HTTP createNetworkInfrastructure__
 
@@ -79,9 +79,9 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
        -d '{ "kind": "flexiblePortEgress", "region": "va7" }'
    ```
 
-   Aguarde 15 minutos para que o Programa Cloud Manager forneça a infraestrutura de rede.
+   Aguarde 15 minutos para que o programa do Cloud Manager provisione a infraestrutura de rede.
 
-1. Verifique se o ambiente foi concluído __saída de porta flexível__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) , usando a `id` retornado da solicitação HTTP createNetworkInfrastructure na etapa anterior.
+1. Verifique se o ambiente terminou __saída de porta flexível__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operação, utilizando o `id` retornado da solicitação HTTP createNetworkInfrastructure na etapa anterior.
 
    __solicitação HTTP getNetworkInfrastructure__
 
@@ -93,11 +93,11 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
        -H 'Content-Type: application/json'
    ```
 
-   Verifique se a resposta HTTP contém uma __status__ de __ready__. Se ainda não estiver pronto, verifique novamente o status a cada poucos minutos.
+   Verifique se a resposta HTTP contém um __status__ de __pronto__. Se ainda não estiver pronto, verifique novamente o status a cada poucos minutos.
 
-## Configurar proxies flexíveis de saída de porta por ambiente
+## Configuração de proxies de saída de porta flexíveis por ambiente
 
-1. Ative e configure a variável __saída de porta flexível__ configuração em cada ambiente AEM as a Cloud Service usando a API do Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação.
+1. Habilite e configure o __saída de porta flexível__ configuração em cada ambiente do AEM as a Cloud Service usando a API do Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação.
 
    __solicitação HTTP enableEnvironmentAdvancedNetworkingConfiguration__
 
@@ -110,9 +110,9 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
        -d @./flexible-port-egress.json
    ```
 
-   Defina os parâmetros JSON em um `flexible-port-egress.json` e fornecidos por via de curl `... -d @./flexible-port-egress.json`.
+   Defina os parâmetros JSON em uma `flexible-port-egress.json` e fornecido para curl via `... -d @./flexible-port-egress.json`.
 
-   [Baixe o exemplo flexível-port-egress.json](./assets/flexible-port-egress.json). Este arquivo é apenas um exemplo. Configure seu arquivo conforme necessário com base nos campos opcionais/obrigatórios documentados em [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+   [Baixe o exemplo de Flex-port-egress.json](./assets/flexible-port-egress.json). Este arquivo é apenas um exemplo. Configure seu arquivo conforme necessário com base nos campos opcionais/obrigatórios documentados em [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
@@ -131,13 +131,13 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
    }
    ```
 
-   Para cada `portForwards` , a rede avançada define a seguinte regra de encaminhamento:
+   Para cada `portForwards` de rede avançada define a seguinte regra de encaminhamento:
 
-   | Host proxy | Porta proxy |  | Host externo | Porta externa |
+   | Host do proxy | Porta do proxy |  | Host externo | Porta externa |
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-   Se sua implantação de AEM __only__ exige conexões HTTP/HTTPS (porta 80/443) para o serviço externo, deixe a variável `portForwards` matriz vazia, pois essas regras são necessárias apenas para solicitações não HTTP/HTTPS.
+   Se a sua implantação do AEM __somente__ exige conexões HTTP/HTTPS (porta 80/443) para o serviço externo, deixe o `portForwards` matriz vazia, pois essas regras são necessárias somente para solicitações não HTTP/HTTPS.
 
 1. Para cada ambiente, valide se as regras de saída estão em vigor usando a API do Cloud Manager [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação.
 
@@ -151,46 +151,46 @@ Comece ativando o acesso flexível da porta AEM as a Cloud Service.
        -H 'Content-Type: application/json'
    ```
 
-1. Configurações flexíveis de saída de porta podem ser atualizadas usando a API do Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Lembrar `enableEnvironmentAdvancedNetworkingConfiguration` é um `PUT` , portanto, todas as regras devem ser fornecidas com cada invocação desta operação.
+1. Configurações flexíveis de saída de porta podem ser atualizadas usando a API do Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Lembrar `enableEnvironmentAdvancedNetworkingConfiguration` é um `PUT` para que todas as regras sejam fornecidas com cada chamada desta operação.
 
-1. Agora você pode usar a configuração flexível de saída da porta em seu código e configuração de AEM personalizados.
+1. Agora você pode usar a configuração flexível de saída de porta em seu código e configuração personalizados AEM.
 
 
-## Ligação a serviços externos através de portas flexíveis
+## Conexão com serviços externos por meio de saída de porta flexível
 
-Com o proxy de saída de porta flexível ativado, AEM código e configuração podem usá-los para fazer chamadas para serviços externos. Há dois sabores de chamadas externas que AEM tratam de forma diferente:
+Com o proxy de saída de porta flexível ativado, o código e a configuração do AEM podem usá-los para fazer chamadas para serviços externos. Há duas opções de chamadas externas que o AEM trata de forma diferente:
 
-1. Chamadas HTTP/HTTPS para serviços externos em portas não padrão
-   + Inclui chamadas HTTP/HTTPS feitas para serviços em execução em portas diferentes das portas 80 ou 443 padrão.
+1. Chamadas HTTP/HTTPS para serviços externos em portas fora do padrão
+   + Inclui chamadas HTTP/HTTPS feitas para serviços executados em portas diferentes das portas padrão 80 ou 443.
 1. chamadas não HTTP/HTTPS para serviços externos
    + Inclui chamadas não HTTP, como conexões com servidores de email, bancos de dados SQL ou serviços que são executados em outros protocolos não HTTP/HTTPS.
 
-Por padrão, as solicitações HTTP/HTTPS de AEM em portas padrão (80/443) são permitidas e não precisam de configuração ou considerações adicionais.
+As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas por padrão e não precisam de configuração ou considerações extras.
 
 
-### HTTP/HTTPS em portas não padrão
+### HTTP/HTTPS em portas fora do padrão
 
-Ao criar conexões HTTP/HTTPS com portas não padrão (não-80/443) a partir de AEM, as conexões devem ser feitas por meio de host e portas especiais, fornecidas por meio de espaços reservados.
+Ao criar conexões HTTP/HTTPS com portas fora do padrão (não-80/443) do AEM, as conexões devem ser feitas por meio de hosts e portas especiais, fornecidas por meio de espaços reservados.
 
-AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que mapeiam para AEM proxies HTTP/HTTPS.
+O AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que são mapeadas para proxies HTTP/HTTPS do AEM.
 
-| Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para ambas as conexões HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` | | `AEM_HTTP_PROXY_PORT` | Porta proxy para conexões HTTPS (defina o fallback para `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` | | `AEM_HTTPS_PROXY_PORT` | Porta proxy para conexões HTTPS (defina o fallback para `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
+| Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para conexões HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` | | `AEM_HTTP_PROXY_PORT` | Porta de proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` | | `AEM_HTTPS_PROXY_PORT` | Porta de proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
 
-Ao fazer chamadas HTTP/HTTPS para serviços externos em portas não padrão, nenhum `portForwards` deve ser definido usando a API do Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` , já que as &quot;regras&quot; de encaminhamento de porta são definidas como &quot;em código&quot;.
+Ao fazer chamadas HTTP/HTTPS para serviços externos em portas fora do padrão, nenhuma `portForwards` deve ser definido usando a API do Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` operação, já que as &quot;regras&quot; de encaminhamento de porta são definidas &quot;no código&quot;.
 
 >[!TIP]
 >
-> Consulte AEM documentação de saída de porta flexível do as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> Consulte a documentação de saída de porta flexível do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
 
 #### Exemplos de código
 
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports-flexible-port-egress.md"><img alt="HTTP/HTTPS em portas não padrão" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports-flexible-port-egress.md">HTTP/HTTPS em portas não padrão</a></strong></div>
+    <a  href="./examples/http-on-non-standard-ports-flexible-port-egress.md"><img alt="HTTP/HTTPS em portas fora do padrão" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-on-non-standard-ports-flexible-port-egress.md">HTTP/HTTPS em portas fora do padrão</a></strong></div>
     <p>
-        Exemplo de código Java™ tornando a conexão HTTP/HTTPS de AEM as a Cloud Service para um serviço externo em portas HTTP/HTTPS não padrão.
+        Exemplo de código Java™ que faz a conexão HTTP/HTTPS do AEM as a Cloud Service para um serviço externo em portas HTTP/HTTPS não padrão.
     </p>
 </td>   
 <td></td>   
@@ -198,16 +198,16 @@ Ao fazer chamadas HTTP/HTTPS para serviços externos em portas não padrão, nen
 </tr>
 </table>
 
-### Conexões não HTTP/HTTPS para serviços externos
+### Conexões não HTTP/HTTPS com serviços externos
 
 Ao criar conexões não HTTP/HTTPS (por exemplo, SQL, SMTP e assim por diante) do AEM, a conexão deve ser feita por meio de um nome de host especial fornecido pelo AEM.
 
 | Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para conexões não HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
-As conexões com serviços externos são então chamadas por meio da variável `AEM_PROXY_HOST` e a porta mapeada (`portForwards.portOrig`), que AEM então roteia para o nome de host externo mapeado (`portForwards.name`) e a porta (`portForwards.portDest`).
+As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_HOST` e a porta mapeada (`portForwards.portOrig`), que o AEM roteia para o nome de host externo mapeado (`portForwards.name`) e porta (`portForwards.portDest`).
 
-| Host proxy | Porta proxy |  | Host externo | Porta externa |
+| Host do proxy | Porta do proxy |  | Host externo | Porta externa |
 |---------------------------------|----------|----------------|------------------|----------|
 | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
@@ -218,21 +218,21 @@ As conexões com serviços externos são então chamadas por meio da variável `
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexão SQL usando JDBC DataSourcePool" src="./assets/code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexão SQL usando JDBC DataSourcePool</a></strong></div>
       <p>
-            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando AEM pool de fonte de dados JDBC.
+            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC do AEM.
       </p>
     </td>   
    <td>
       <a  href="./examples/sql-java-apis.md"><img alt="Conexão SQL usando APIs Java" src="./assets/code-examples__sql-java-api.png"/></a>
       <div><strong><a href="./examples/sql-java-apis.md">Conexão SQL usando APIs Java™</a></strong></div>
       <p>
-            Exemplo de código Java™ conectando-se a bancos de dados SQL externos usando as APIs SQL do Java™.
+            Exemplo de código Java™ conectando-se a bancos de dados SQL externos usando APIs SQL do Java™.
       </p>
     </td>   
    <td>
       <a  href="./examples/email-service.md"><img alt="VPN (Virtual Private Network)" src="./assets/code-examples__email.png"/></a>
-      <div><strong><a href="./examples/email-service.md">Serviço de email</a></strong></div>
+      <div><strong><a href="./examples/email-service.md">Serviço de e-mail</a></strong></div>
       <p>
-        Exemplo de configuração do OSGi usando AEM para se conectar a serviços de email externos.
+        Exemplo de configuração OSGi usando AEM para se conectar a serviços de email externos.
       </p>
     </td>   
 </tr></table>

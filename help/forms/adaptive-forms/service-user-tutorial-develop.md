@@ -18,43 +18,43 @@ ht-degree: 1%
 
 Este artigo o orienta pelo processo de criação de um usuário de serviço no AEM Forms
 
-Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos está obsoleto no AEM 6.3. Em vez disso, um usuário do sistema com permissões específicas no repositório é usado.
+Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end, o que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos foi descontinuado no AEM 6.3. Em vez disso, é usado um usuário do sistema com permissões específicas no repositório.
 
-Saiba mais sobre os detalhes do [criar e usar usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Saiba mais sobre os detalhes de [criar e usar usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
-Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador de usuários.
+Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador do usuário.
 
-1. Navegar para [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
-1. Efetuar logon como &#39; admin &#39;
-1. Clique em &quot;Administração de usuário&quot;
+1. Navegue até [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Fazer logon como &quot;administrador&quot;
+1. Clique em &quot;Administração de usuários&quot;
 1. Clique em &quot;Criar usuário do sistema&quot;
-1. Defina o tipo de usuário como &#39; data &#39; e clique no ícone verde para concluir o processo de criação do usuário do sistema
+1. Defina o tipo de ID do usuário como &quot;dados&quot; e clique no ícone verde para concluir o processo de criação do usuário do sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Procurar por _Serviço Mapeador de Usuário do Apache Sling Service_ e clique em para abrir as propriedades
-1. Clique no botão *+* ícone (mais) para adicionar o seguinte Mapeamento de serviço
+1. Pesquisar por _Serviço Mapeador de usuário do Apache Sling Service_ e clique em para abrir as propriedades
+1. Clique em *+* ícone (mais) para adicionar o seguinte Service Mapping
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
-1. Clique em &#39; Salvar &#39;
+1. Clique em &quot;Salvar&quot;
 
 Na configuração acima, DevelopingWithServiceUser.core é o nome simbólico do pacote. getresourceresolver é o nome do subserviço.data é o usuário do sistema criado na etapa anterior.
 
-Também podemos obter o resolvedor de recursos em nome do usuário do fd-service. Esse usuário de serviço é usado para serviços de documento. Por exemplo, se você deseja Certificar/Aplicar direitos de uso etc, usaremos o resolvedor de recursos do usuário do fd-service para executar as operações
+Também podemos obter o resolvedor de recursos em nome do usuário do serviço fd. Este usuário de serviço é usado para serviços de documento. Por exemplo, se você quiser Certificar/Aplicar direitos de uso, usaremos o resolvedor de recursos do usuário do serviço fd para executar as operações
 
 1. [Baixe e descompacte o arquivo zip associado a este artigo.](assets/developingwithserviceuser.zip)
-1. Navegar para [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
-1. Faça o upload e inicie o pacote OSGi
+1. Navegue até [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Carregue e inicie o pacote OSGi
 1. Verifique se o pacote está no estado ativo
-1. Agora você criou com êxito um *Usuário do sistema* e também implantou o *Pacote de Usuário do Serviço*.
+1. Agora você criou um *Usuário do sistema* e também implantou o *Pacote de usuário do serviço*.
 
-   Para fornecer acesso a /content, forneça ao usuário do sistema (&#39; data &#39;) permissões de leitura no nó de conteúdo.
+   Para fornecer acesso a /content, forneça ao usuário do sistema (&quot;dados&quot;) permissões de leitura no nó de conteúdo.
 
    1. Navegue até [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-   1. Procure os dados do usuário &#39; &#39;. Esse é o mesmo usuário do sistema criado na etapa anterior.
-   1. Clique duas vezes no usuário e, em seguida, clique na guia &#39; Permissões &#39;
-   1. Conceder acesso de leitura à pasta &#39;conteúdo&#39;.
-   1. Para usar o usuário de serviço para obter acesso à pasta /content, use o seguinte código
+   1. Pesquisar dados do usuário &#39;. É o mesmo usuário do sistema criado na etapa anterior.
+   1. Clique duas vezes no usuário e clique na guia &quot;Permissões&quot;
+   1. Conceda acesso de leitura à pasta de conteúdo.
+   1. Para usar o usuário do serviço para obter acesso à pasta /content, use o seguinte código
 
 
 
@@ -68,7 +68,7 @@ resourceResolver = aemDemoListings.getServiceResolver();
 Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
 ```
 
-Se quiser acessar o arquivo /content/dam/data.json no seu pacote, use o seguinte código. Esse código supõe que você tenha dado permissões de leitura ao usuário &quot;dados&quot; no nó /content/dam/
+Se quiser acessar o arquivo /content/dam/data.json em seu pacote, você usará o código a seguir. Esse código supõe que você tenha dado permissões de leitura ao usuário de &quot;dados&quot; no nó /content/dam/
 
 ```java
 @Reference
@@ -93,7 +93,7 @@ try {
 }
 ```
 
-O código completo da implementação é apresentado a seguir
+O código completo da implementação é fornecido abaixo
 
 ```java
 package com.mergeandfuse.getserviceuserresolver.impl;

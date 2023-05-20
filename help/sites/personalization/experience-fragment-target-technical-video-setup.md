@@ -1,7 +1,7 @@
 ---
-title: Configurar fragmentos de experiência e integração do Adobe Target no AEM
+title: Configurar fragmentos de experiência e a integração do Adobe Target no AEM
 seo-title: Set Up Experience Fragments and Adobe Target Integration in AEM
-description: O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre o AEM e o Target. As experiências criadas no AEM agora podem ser entregues diretamente ao Adobe Target como HTML Offers. Ele permite que os profissionais de marketing testem e personalizem com facilidade o conteúdo em diferentes canais.
+description: O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre AEM e Target. As experiências criadas com o AEM agora podem ser entregues diretamente ao Adobe Target como ofertas de HTML. Ele permite que os profissionais de marketing testem e personalizem conteúdo em diferentes canais sem problemas.
 seo-description: Adobe Experience Manager 6.4 reimagines the personalization workflow between AEM and Target. Experiences created within AEM can now be delivered directly to Adobe Target as HTML Offers. It allows Marketers to seamlessly test and personalize content across different channels.
 feature: Experience Fragments
 topics: integrations
@@ -22,21 +22,21 @@ ht-degree: 2%
 
 ---
 
-# Configurar fragmentos de experiência e integração com o Adobe Target{#set-up-experience-fragments-and-adobe-target-integration}
+# Configurar os Fragmentos de experiência e a Integração do Adobe Target{#set-up-experience-fragments-and-adobe-target-integration}
 
-O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre o AEM e o Target. As experiências criadas no AEM agora podem ser entregues diretamente ao Adobe Target como HTML Offers. Ele permite que os profissionais de marketing testem e personalizem com facilidade o conteúdo em diferentes canais.
+O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre AEM e Target. As experiências criadas com o AEM agora podem ser entregues diretamente ao Adobe Target como ofertas de HTML. Ele permite que os profissionais de marketing testem e personalizem conteúdo em diferentes canais sem problemas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
 
 >[!NOTE]
 >
->Recomendado o uso da biblioteca do cliente at.js e a prática recomendada é usar soluções de gerenciamento de tags como Launch by Adobe, Adobe DTM ou qualquer solução de gerenciamento de tags de terceiros para adicionar bibliotecas do Target às páginas do site
+>Recomendável usar a biblioteca do cliente at.js, e a prática recomendada é usar soluções de gerenciamento de tags, como o Launch by Adobe, o Adobe DTM ou qualquer solução de gerenciamento de tags de terceiros, para adicionar bibliotecas do Target às páginas do site
 
-* A configuração do serviço da Target Cloud aplicada à pasta Fragmento de experiência herda todos os Fragmentos de experiência criados diretamente na pasta principal. A pasta secundária não herda a configuração dos serviços de nuvem principais.
-* O código do cliente do Target pode ser obtido em Adobe Experience Cloud > Iniciar Target > Em Configurar guia > Implementação > Editar configurações da at.js.
-* O nome de usuário e a senha da API do Target podem ser obtidos enviando um tíquete para o Atendimento ao cliente com uma solicitação para ativar o recurso de Integração do Target do fragmento de experiência.
+* A configuração do serviço da nuvem de destino aplicada à pasta do fragmento de experiência herda todos os fragmentos de experiência criados diretamente na pasta principal. A pasta filho não herda a configuração dos serviços de nuvem pai.
+* O código do cliente do Target pode ser obtido em Adobe Experience Cloud > Iniciar Target > Na guia Configurar > Implementação > Editar configurações da at.js.
+* O nome de usuário e a senha da API do Target podem ser obtidos enviando um tíquete ao Atendimento ao cliente com uma solicitação para habilitar o recurso de Integração do Target com o fragmento de experiência.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação dos fragmentos de experiência](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
+* [Documentação de fragmentos de experiência](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Uso de Fragmentos de experiência](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

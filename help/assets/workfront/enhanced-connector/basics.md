@@ -1,6 +1,6 @@
 ---
 title: Noções básicas do conector aprimorado do Workfront
-description: Saiba mais sobre as noções básicas do conector avançado Adobe Workfront e Experience Manager Assets.
+description: Saiba mais sobre as noções básicas do conector aprimorado do Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ---
 
-# Noções básicas do conector avançado Workfront
+# Noções básicas do conector aprimorado do Workfront
 
-Saiba mais sobre os conceitos básicos do conector Adobe Workfront e Experience Manager Assetsenhanced, incluindo como:
+Saiba mais sobre as noções básicas do conector aprimorado do Adobe Workfront e do Experience Manager Assets, incluindo como:
 
 + Vincular ativos e pastas
 + Definir mapeamentos de metadados
 + Enviar ativos para AEM
-+ Ativos da versão
++ Ativos de versão
 + Publicar ativos automaticamente
 
 >[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Inclusão de jars de terceiros
-description: Saiba como usar o arquivo jar de terceiros no projeto do AEM
+title: Incluindo jars de terceiros
+description: Saiba como usar o arquivo jar de terceiros no projeto AEM
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
@@ -9,16 +9,17 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
-# Inclusão de pacotes de terceiros em seu projeto do AEM
+# Incluir pacotes de terceiros em seu projeto AEM
 
-Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no seu projeto do AEM.Para a finalidade deste artigo, vamos incluir o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
+Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no seu projeto AEM. Para o propósito deste artigo, incluiremos o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
 
 >[!NOTE]
 > Pressupõe-se que o jar de terceiros seja um pacote OSGi
@@ -32,7 +33,7 @@ Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de te
 </dependency>
 ```
 
-Se o seu pacote OSGi estiver em seu sistema de arquivos, crie uma pasta chamada **localjar** no diretório base do seu projeto (C:\aemformsbundles\AEMFormsProcessStep\localjar) a dependência será semelhante a esta
+Se o pacote OSGi estiver em seu sistema de arquivos, crie uma pasta chamada **localjar** no diretório base do seu projeto (C:\aemformsbundles\AEMFormsProcessStep\localjar), a dependência será semelhante a
 
 ```java
 <dependency>
@@ -46,21 +47,18 @@ Se o seu pacote OSGi estiver em seu sistema de arquivos, crie uma pasta chamada 
 
 ## Criar a estrutura de pastas
 
-Estamos adicionando este pacote ao nosso projeto AEM **AEMormsProcessStep** que residam no **c:\aemformsbundles** pasta
+Estamos adicionando este pacote ao nosso projeto AEM **AEMFormsProcessStep** que resida na **c:\aemformsbundles** pasta
 
-* Abra o **filter.xml** no diretório C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault folder of your project Make a note of the root attribute of the filter element.
+* Abra o **filter.xml** da pasta C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault do seu projeto Anote o atributo raiz do elemento filter.
 
 * Crie a seguinte estrutura de pastas C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install
-* O **apps/AEMFormsProcessStep-vendor-packages** é o valor do atributo raiz em filter.xml
+* A variável **apps/AEMFormsProcessStep-vendor-packages** é o valor do atributo raiz no filter.xml
 * Atualize a seção de dependências do POM.xml do projeto
-* Abra o prompt de comando. No meu caso, acesse a pasta do seu projeto (c:\aemformsbundles\AEMFormsProcessStep). Execute o seguinte comando
+* Abra o prompt de comando. Acesse a pasta do projeto (c:\aemformsbundles\AEMFormsProcessStep), no meu caso. Execute o seguinte comando
 
 ```java
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando [console da web felix](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do `crx` repositório como mostrado abaixo
+Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando [felix web console](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do `crx` repositório como mostrado abaixo
 ![terceiros](assets/custom-bundle1.png)
-
-
-

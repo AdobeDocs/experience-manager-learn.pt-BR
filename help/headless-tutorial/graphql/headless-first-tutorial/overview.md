@@ -1,6 +1,6 @@
 ---
-title: Primeiro tutorial autônomo do AEM
-description: Saiba como ser um aplicativo AEM Headless First.
+title: Primeiro tutorial sobre AEM Headless
+description: Saiba como ser um aplicativo AEM Headless primeiro.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
@@ -18,21 +18,21 @@ ht-degree: 4%
 ---
 
 
-# Primeiro tutorial autônomo do AEM
+# Primeiro tutorial sobre AEM Headless
 
-![Primeiro tutorial autônomo do AEM](./assets/overview/overview.png)
+![Primeiro tutorial sobre AEM Headless](./assets/overview/overview.png)
 
-Bem-vindo ao tutorial sobre a criação de uma experiência da Web usando o React, totalmente alimentado AEM APIs headless e GraphQL. Neste tutorial, vamos orientá-lo pelo processo de criação de uma aplicação web dinâmica e interativa ao combinar a eficiência do React, das APIs headless do Adobe Experience Manager (AEM) e do GraphQL.
+Bem-vindo ao tutorial sobre como criar uma experiência da Web usando o React, totalmente equipado com APIs AEM Headless e o GraphQL. Neste tutorial, guiaremos você pelo processo de criação de uma aplicação Web dinâmica e interativa combinando o poder das APIs headless do React, do Adobe Experience Manager (AEM) e do GraphQL.
 
-O React é uma biblioteca JavaScript popular para criar interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM oferece recursos robustos de gerenciamento de conteúdo e expõe APIs sem periféricos que permitem aos desenvolvedores acessar o conteúdo e os dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
+O React é uma biblioteca popular de JavaScript para a construção de interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM fornece recursos robustos de gerenciamento de conteúdo e expõe APIs headless que permitem aos desenvolvedores acessar conteúdo e dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
 
-Ao aproveitar AEM APIs headless, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
+Ao utilizar APIs AEM Headless, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
 
-Ao longo deste tutorial, vamos orientá-lo pelo processo passo a passo de criação de uma experiência da Web usando o React e AEM APIs headless com o GraphQL. Você aprenderá a configurar seu ambiente de desenvolvimento, estabelecer uma conexão entre o React e o AEM, recuperar conteúdo usando consultas do GraphQL e renderizá-lo dinamicamente em seu aplicativo da Web.
+Neste tutorial, guiaremos você pelo processo passo a passo de criação de uma experiência da Web usando as APIs do React e do AEM Headless com o GraphQL. Você aprenderá a configurar seu ambiente de desenvolvimento, estabelecer uma conexão entre o React e o AEM, recuperar conteúdo usando consultas do GraphQL e renderizá-lo dinamicamente em seu aplicativo web.
 
-Abordaremos tópicos como a configuração do seu projeto React, estabelecimento de autenticação com AEM, consulta de conteúdo de AEM usando o GraphQL, manipulação de dados em seus componentes React e otimização de desempenho utilizando armazenamento em cache e paginação.
+Abordaremos tópicos como configurar seu projeto no React, estabelecer autenticação com AEM, consultar conteúdo do AEM usando o GraphQL, manipular dados em seus componentes do React e otimizar o desempenho usando armazenamento em cache e paginação.
 
-Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar o React, AEM APIs headless e o GraphQL para criar uma experiência online poderosa e envolvente. Então, vamos mergulhar e começar a criar sua próxima aplicação web!
+Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar as APIs do React, do AEM Headless e do GraphQL para criar uma experiência da Web poderosa e envolvente. Então, vamos nos aprofundar e começar a criar seu próximo aplicativo web!
 
 ## Pré-requisitos
 
@@ -40,25 +40,25 @@ Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar
 
 + Proficiência no React
 + Proficiência no GraphQL
-+ Conhecimento básico AEM as a Cloud Service
++ Conhecimento básico do AEM as a Cloud Service
 
 ### AEM as a Cloud Service
 
-Este tutorial requer o acesso do Administrador a um ambiente AEM as a Cloud Service.
+Este tutorial requer acesso de administrador a um ambiente as a Cloud Service do AEM.
 
 ### Software
 
 + [Node.js v16+](https://nodejs.org/en/)
-   + Verifique a versão do nó executando `node -v` na linha de comando
+   + Verifique a versão do nó executando `node -v` da linha de comando
 + [npm 6+](https://www.npmjs.com/)
-   + Verifique sua versão do npm executando `npm -v` na linha de comando
+   + Verifique sua versão npm executando `npm -v` da linha de comando
 + [Git](https://git-scm.com/)
-   + Verifique a versão do Git executando `git -v` na linha de comando
+   + Verifique sua versão do Git executando `git -v` da linha de comando
 
-Use [gerenciador de versão do nó (nvm)](https://github.com/nvm-sh/nvm) para resolver ter várias versões do node.js na mesma máquina.
+Uso [gerenciador de versão de nó (nvm)](https://github.com/nvm-sh/nvm) para tratar de ter várias versões de node.js na mesma máquina.
 
-Assegure-se de ter privilégios para instalar software globalmente em seu computador.
+Verifique se você tem privilégios para instalar o software globalmente no computador.
 
 ## Próxima etapa
 
-Agora que seu ambiente foi configurado, vamos para a próxima etapa: [Configurar e criar conteúdo em AEM as a Cloud Service](./1-content-modeling.md)
+Agora que seu ambiente está configurado, vamos para a próxima etapa: [Configuração e criação de conteúdo no AEM as a Cloud Service](./1-content-modeling.md)

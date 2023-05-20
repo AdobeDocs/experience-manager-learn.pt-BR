@@ -1,6 +1,6 @@
 ---
-title: Armazenamento de dados de formulário adaptável
-description: Armazenamento de dados de formulários adaptáveis no DataBase como parte do fluxo de trabalho do AEM
+title: Armazenamento de dados do formulário adaptável
+description: Armazenamento de dados do formulário adaptável no DataBase como parte do fluxo de trabalho do AEM
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -15,10 +15,10 @@ ht-degree: 2%
 
 ---
 
-# Armazenamento de envios de formulário adaptável no banco de dados
+# Armazenamento de envios de formulários adaptáveis no banco de dados
 
-Há várias maneiras de armazenar os dados de formulário enviados no banco de dados de sua escolha. Uma fonte de dados JDBC pode ser usada para armazenar diretamente os dados no banco de dados. Um pacote OSGI personalizado pode ser gravado para armazenar os dados no banco de dados. Este artigo usa a etapa de processo personalizado AEM fluxo de trabalho para armazenar os dados.
-O caso de uso é acionar um fluxo de trabalho AEM em um envio de formulário adaptável e uma etapa no fluxo de trabalho armazena os dados enviados para a base de dados.
+Há várias maneiras de armazenar os dados do formulário enviado no banco de dados de sua escolha. Uma fonte de dados JDBC pode ser usada para armazenar os dados diretamente no banco de dados. Um pacote OSGI personalizado pode ser gravado para armazenar os dados no banco de dados. Este artigo usa a etapa de processo personalizada no fluxo de trabalho do AEM para armazenar os dados.
+O caso de uso é acionar um fluxo de trabalho de AEM em um envio de formulário adaptável, e uma etapa no fluxo de trabalho armazena os dados enviados na base de dados.
 
 
 
@@ -26,20 +26,20 @@ O caso de uso é acionar um fluxo de trabalho AEM em um envio de formulário ada
 
 * Ir para [ConfigMgr](http://localhost:4502/system/console/configMgr)
 
-   * Procure por &quot;Pool de Conexões JDBC&quot;. Crie um novo Pool de Conexões JDBC do Day Commons. Especifique as configurações específicas do seu banco de dados.
+   * Procure por &quot;Pool de conexão JDBC&quot;. Crie um novo Pool de Conexões JDBC do Day Commons. Especifique as configurações específicas do banco de dados.
 
    * ![Configuração OSGi do pool de conexões JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Especificar Detalhes do Banco de Dados
 
-* Pesquisar por &quot;**Especificar detalhes da Base de Dados**&quot;
+* Pesquisar por &quot;**Especificar detalhes do Banco de Dados**&quot;
 * Especifique as propriedades específicas do banco de dados.
-   * DataSourceName:Name da fonte de dados configurada anteriormente.
-   * TableName - Nome da tabela na qual você deseja armazenar os dados AF
-   * FormName - Nome da coluna para conter o nome do Formulário
-   * ColumnName - Nome da coluna para conter os dados AF
+   * DataSourceName: nome da origem de dados configurada anteriormente.
+   * TableName - Nome da tabela na qual você deseja armazenar os dados de AF
+   * FormName - O nome da coluna que conterá o nome do Formulário
+   * ColumnName - O nome da coluna que conterá os dados de AF
 
-   ![Especificar a configuração OSGi dos detalhes do banco de dados](assets/specify-database-details.png)
+   ![Especificar a configuração OSGi de detalhes do banco de dados](assets/specify-database-details.png)
 
 
 
@@ -206,15 +206,15 @@ public class InsertAfData implements WorkflowProcess {
 }
 ```
 
-## Implante os ativos de amostra
+## Implantar os ativos de amostra
 
-* Certifique-se de ter configurado seu pool de conexão JDBC
+* Verifique se você configurou o pool de conexão JDBC
 * Especifique os detalhes do banco de dados usando o configMgr
-* [Baixe o arquivo Zip e extraia seu conteúdo para o disco rígido](assets/article-assets.zip)
+* [Baixe o arquivo Zip e extraia o conteúdo no disco rígido](assets/article-assets.zip)
 
-   * Implante o arquivo jar usando [console da Web AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
+   * Implante o arquivo jar usando [Console da Web AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
 
-   * Importe os dois arquivos zip para [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso vai te dar a [exemplo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e [formulário adaptável de amostra](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta payload no repositório crx. Observe como a função [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho de AEM no envio e a configuração do arquivo de dados (data.xml)
+   * Importe os dois arquivos zip para o [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso lhe dará a [exemplo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e a variável [exemplo de formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta de carga útil no repositório crx. Observe como [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho do AEM no envio e na configuração do arquivo de dados (data.xml)
 
-   * Visualize e preencha o formulário e envie-o. Você deve ver uma nova linha criada no seu banco de dados
+   * Pré-visualize e preencha o formulário e envie. Você deve ver uma nova linha criada no banco de dados
 

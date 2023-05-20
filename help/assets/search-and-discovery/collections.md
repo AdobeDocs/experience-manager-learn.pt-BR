@@ -1,6 +1,6 @@
 ---
 title: Coleções
-description: Saiba como as coleções fornecem uma exibição alternativa no AEM Assets.
+description: Saiba como as coleções fornecem uma visualização alternativa no AEM Assets.
 feature: Collections
 version: Cloud Service
 kt: 4301
@@ -19,6 +19,6 @@ ht-degree: 9%
 
 # Coleções
 
-Saiba como as coleções fornecem uma exibição alternativa no AEM Assets.
+Saiba como as coleções fornecem uma visualização alternativa no AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32053?quality=12&learn=on)

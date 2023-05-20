@@ -1,6 +1,6 @@
 ---
-title: Analisador de Práticas recomendadas e Práticas Recomendadas
-description: Saiba como o Analisador de práticas recomendadas pode ajudar a preparar seu aplicativo para ser movido para Experience Manager as a Cloud Service
+title: Analisador de práticas recomendadas e disponibilidade
+description: Saiba como o Analisador de práticas recomendadas pode ajudar a preparar seu aplicativo para ser movido para o Experience Manager as a Cloud Service
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Analisador de Práticas recomendadas e Práticas Recomendadas
+# Analisador de práticas recomendadas e disponibilidade
 
-Saiba como o Analisador de práticas recomendadas pode ajudar você a migrar AEM serviços no local ou Adobe Managed Services para o Experience Manager as a Cloud Service.
+Saiba como o Analisador de práticas recomendadas pode ajudar você a migrar do AEM no local ou do Adobe Managed Services para o Experience Manager as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)

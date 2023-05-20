@@ -1,6 +1,6 @@
 ---
-title: Configuração inicial e configuração do Workfront para AEM conector aprimorado
-description: Saiba como configurar e configurar o conector aprimorado Workfront for Experience Manager, desbloqueando o poder combinado do AEM Assets e do Workfront.
+title: Instalação e configuração iniciais do conector aprimorado do Workfront para AEM
+description: Saiba como instalar e configurar o conector aprimorado do Workfront for Experience Manager, desbloqueando a capacidade combinada do AEM Assets e do Workfront.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ---
 
-# Configuração e configuração iniciais
+# Instalação e configuração iniciais
 
-![Série AEM especialistas](./assets/banner.png)
+![Série para especialistas em AEM](./assets/banner.png)
 
-Saiba como configurar e configurar o conector aprimorado Workfront for Experience Manager, desbloqueando o poder combinado do AEM Assets e do Workfront.
+Saiba como instalar e configurar o conector aprimorado do Workfront for Experience Manager, desbloqueando a capacidade combinada do AEM Assets e do Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_Esta é a primeira parte de um [série de especialistas de quatro partes sobre o conector Workfront for Experience Manager enhanced](./overview.md)_
+_Esta é a primeira parte de um [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_

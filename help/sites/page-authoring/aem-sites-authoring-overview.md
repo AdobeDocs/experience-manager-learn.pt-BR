@@ -1,7 +1,7 @@
 ---
 title: Visão geral da criação no AEM Sites
 seo-title: Overview of Authoring in AEM Sites
-description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação de AEM. Usa o console Sites como base.
+description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de autor de AEM. Usa o console Sites como base.
 seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
 feature: Page Editor, Editable Templates
 topics: authoring, publishing

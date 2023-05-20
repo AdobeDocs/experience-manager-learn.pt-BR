@@ -1,5 +1,5 @@
 ---
-title: Download de ativos no aplicativo AEM Dynamic Media Classic
+title: Baixar ativos no aplicativo AEM Dynamic Media Classic
 description: Etapas para baixar ativos no aplicativo Dynamic Media Classic
 version: Cloud Service
 role: Developer
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Download de ativos no aplicativo AEM Dynamic Media Classic
+# Baixar ativos no aplicativo AEM Dynamic Media Classic
 
 Este vídeo aborda as etapas para baixar ativos no aplicativo Dynamic Media Classic.
 

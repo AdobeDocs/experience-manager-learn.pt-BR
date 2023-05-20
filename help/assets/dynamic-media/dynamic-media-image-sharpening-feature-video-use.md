@@ -1,6 +1,6 @@
 ---
-title: Uso da nitidez da imagem com o AEM Dynamic Media
-description: Este vídeo aborda o motivo pelo qual a nitidez de uma imagem é essencial para manter a fidelidade da imagem e como usar configurações avançadas para criar a imagem perfeita.
+title: Utilização da nitidez de imagem com o AEM Dynamic Media
+description: Este vídeo aborda por que a nitidez de uma imagem é essencial para manter a fidelidade da imagem e como usar configurações avançadas para criar a imagem perfeita.
 feature: Image Profiles, Viewer Presets
 version: 6.4, 6.5
 topic: Content Management
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Uso da nitidez da imagem com o AEM Dynamic Media{#using-image-sharpening-with-aem-dynamic-media}
+# Utilização da nitidez de imagem com o AEM Dynamic Media{#using-image-sharpening-with-aem-dynamic-media}
 
-Este vídeo aborda o motivo pelo qual a nitidez de uma imagem é essencial para manter a fidelidade da imagem e como usar configurações avançadas para criar a imagem perfeita.
+Este vídeo aborda por que a nitidez de uma imagem é essencial para manter a fidelidade da imagem e como usar configurações avançadas para criar a imagem perfeita.
 
 >[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&amp;config=/etc/dam/presets/viewer/Video_social&amp;serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&amp;contenturl=%2F&amp;config2=/etc/dam/presets/analytics&amp;videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&amp;posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)

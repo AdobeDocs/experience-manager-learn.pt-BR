@@ -1,6 +1,6 @@
 ---
-title: Uso do Adobe Cloud Manager - Programas
-description: Os Programas do Cloud Manager representam conjuntos de ambientes AEM que suportam conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um Contrato de nível de serviço (SLA) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM central interno.
+title: Utilização do Adobe Cloud Manager - Programas
+description: Os Programas do Cloud Manager representam conjuntos de ambientes AEM que oferecem suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um SLA (contrato de nível de serviço) adquirido. Por exemplo, um programa pode representar os recursos do AEM para dar suporte aos sites públicos globais, enquanto outro programa representa um DAM central interno.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# Uso do Adobe Cloud Manager - Programas
+# Utilização do Adobe Cloud Manager - Programas
 
-Cloud Manager **Programas** representam conjuntos de ambientes AEM que oferecem suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondentes a um Contrato de nível de serviço (SLA) adquirido. Por exemplo, um Programa pode representar os recursos AEM para suportar os sites públicos globais, enquanto outro Programa representa um DAM central interno.
+Cloud Manager **Programas** representam conjuntos de ambientes AEM compatíveis com conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um SLA (Service Level Agreement, contrato de nível de serviço) adquirido. Por exemplo, um programa pode representar os recursos do AEM para dar suporte aos sites públicos globais, enquanto outro programa representa um DAM central interno.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)

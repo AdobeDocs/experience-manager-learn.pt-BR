@@ -1,6 +1,6 @@
 ---
-title: Avisos de passagem em AEM as a Cloud Service
-description: Saiba como mitigar avisos de travessia AEM as a Cloud Service.
+title: Avisos transversais no AEM as a Cloud Service
+description: Saiba como atenuar avisos de passagem no AEM as a Cloud Service.
 topics: Migration
 feature: Migration
 role: Architect, Developer
@@ -18,23 +18,23 @@ ht-degree: 10%
 
 ---
 
-# Avisos de travessia
+# Avisos transversais
 
 >[!TIP]
->Marque esta página como favorito para referência futura.
+>Marque esta página como favorita para referência futura.
 
-_O que são avisos transversais?_
+_O que são avisos de travessia?_
 
-Os avisos de travessia são __aemerror__ instruções de log indicando que consultas com baixo desempenho estão sendo executadas no serviço de publicação do AEM. Os avisos transversais normalmente manifestam-se em AEM de duas formas:
+Os avisos transversais são __aemerror__ instruções de log indicando consultas com baixo desempenho estão sendo executadas no serviço de publicação do AEM. Os avisos transversais normalmente se manifestam no AEM de duas maneiras:
 
 1. __Consultas lentas__ que não usam índices, resultando em tempos de resposta lentos.
-1. __Falhas nas consultas__, que lança uma `RuntimeNodeTraversalException`, resultando em uma experiência quebrada.
+1. __Consultas com falha__, que lançam um `RuntimeNodeTraversalException`, resultando em uma experiência com falha.
 
-Permitir que avisos de travessia fiquem desmarcados retarda o desempenho AEM e pode resultar em experiências quebradas para seus usuários.
+Permitir que avisos de passagem sejam desmarcados reduz o desempenho do AEM e pode resultar em experiências quebradas para os usuários.
 
-## Como resolver avisos transversais
+## Como resolver avisos de travessia
 
-A mitigação de avisos de travessia pode ser abordada usando três etapas simples: analisar, ajustar e verificar. Esperar várias iterações de ajuste e verificação antes de identificar os ajustes ideais.
+A mitigação de avisos de travessia pode ser abordada usando três etapas simples: analisar, ajustar e verificar. Espere várias iterações de ajuste e verifique antes de identificar os ajustes ideais.
 
 <div class="columns is-multiline">
 
@@ -50,8 +50,8 @@ A mitigação de avisos de travessia pode ser abordada usando três etapas simpl
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-                <p class="headline is-size-5 has-text-weight-bold">Analise o problema</p>
-               <p class="is-size-6">Identifique e entenda o que as consultas estão atravessando.</p>
+                <p class="headline is-size-5 has-text-weight-bold">Analisar o problema</p>
+               <p class="is-size-6">Identificar e entender quais consultas estão percorrendo.</p>
                <a href="#analyze" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Analisar</span>
                </a>
@@ -73,7 +73,7 @@ A mitigação de avisos de travessia pode ser abordada usando três etapas simpl
        <div class="card-content is-padded-small">
            <div class="content">
                 <p class="headline is-size-5 has-text-weight-bold">Ajustar o código ou a configuração</p>
-               <p class="is-size-6">Atualize as consultas e os índices para evitar os traversários da consulta.</p>
+               <p class="is-size-6">Atualize consultas e índices para evitar percursos de consulta.</p>
                <a href="#adjust" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ajustar</span>
                </a>
@@ -95,7 +95,7 @@ A mitigação de avisos de travessia pode ser abordada usando três etapas simpl
        <div class="card-content is-padded-small">
            <div class="content">
                 <p class="headline is-size-5 has-text-weight-bold">Verificar se os ajustes funcionaram</p>                       
-               <p class="is-size-6">Verifique se as alterações em queries e índices removem os traversais.</p>
+               <p class="is-size-6">Verifique se as alterações nas consultas e nos índices removem os percursos.</p>
                <a href="#verify" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Verificar</span>
                </a>
@@ -108,11 +108,11 @@ A mitigação de avisos de travessia pode ser abordada usando três etapas simpl
 
 ## 1. Analisar{#analyze}
 
-Primeiro, identifique quais serviços do AEM Publish estão exibindo avisos transversais. Para fazer isso, no Cloud Manager, [baixar serviços de publicação&quot; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos os ambientes (desenvolvimento, estágio e produção) do passado __três dias__.
+Primeiro, identifique quais serviços de publicação do AEM estão exibindo avisos de passagem. Para fazer isso, no Cloud Manager, [baixar Serviços de publicação&#39; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} de todos os ambientes (Desenvolvimento, Preparo e Produção) para o passado __três dias__.
 
-![Baixar AEM registros as a Cloud Service](./assets/traversals/download-logs.jpg)
+![Baixar logs as a Cloud Service do AEM](./assets/traversals/download-logs.jpg)
 
-Abra os arquivos de log e procure a classe Java™ `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. O log contendo avisos de travessia contém uma série de instruções semelhantes a:
+Abra os arquivos de registro e procure a classe Java™ `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. O log que contém avisos de passagem contém uma série de instruções semelhantes a:
 
 ```log
 24.05.2022 14:18:46.146 [cm-p123-e456-aem-author-9876-edcba] *WARN* [192.150.10.214 [1653401908419] GET /content/wknd/us/en/example.html HTTP/1.1] 
@@ -123,13 +123,13 @@ called by apps.wknd.components.search.example__002e__jsp._jspService;
 consider creating an index or changing the query
 ```
 
-Dependendo do contexto da execução do query, as declarações de log podem conter informações úteis sobre o originador do query:
+Dependendo do contexto da execução da consulta, as instruções de log podem conter informações úteis sobre o originador da consulta:
 
-+ URL da solicitação HTTP associada à execução da consulta
++ URL de solicitação HTTP associado à execução da consulta
 
    + Exemplo: `GET /content/wknd/us/en/example.html HTTP/1.1`
 
-+ Sintaxe de consulta Oak
++ Sintaxe de consulta do Oak
 
    + Exemplo: `select [jcr:path], [jcr:score], * from [nt:base] as a where [xyz] = 'abc' and isdescendantnode(a, '/content')`
 
@@ -141,7 +141,7 @@ Dependendo do contexto da execução do query, as declarações de log podem con
 
    + Exemplo:  `apps.wknd.components.search.example__002e__jsp._jspService` → `/apps/wknd/components/search/example.html`
 
-__Falhas nas consultas__ são seguidas por um `RuntimeNodeTraversalException` instrução, semelhante a:
+__Consultas com falha__ são seguidos de um `RuntimeNodeTraversalException` semelhante a:
 
 ```log
 24.05.2022 14:18:47.240 [cm-p123-e456-aem-author-9876-edcba] *WARN* [192.150.10.214 [1653401908419] GET /content/wknd/us/en/example.html HTTP/1.1] 
@@ -153,36 +153,36 @@ org.apache.jackrabbit.oak.query.RuntimeNodeTraversalException:
 
 ## 2. Ajustar{#adjust}
 
-Depois que as consultas ofensivas e seu código de chamada forem descobertos, os ajustes devem ser feitos. Dois tipos de ajustes podem ser feitos para atenuar avisos de travessia:
+Quando as queries ofensivas e seu código de chamada forem descobertos, os ajustes deverão ser feitos. Dois tipos de ajustes podem ser feitos para atenuar avisos de travessia:
 
-### Ajustar o query
+### Ajustar a consulta
 
-__Alterar a consulta__ para adicionar novas restrições de consulta que resolvam para restrições de índice existentes. Quando possível, preferir alterar a consulta a índices alterados.
+__Alterar a consulta__ para adicionar novas restrições de consulta que resolvem restrições de índice existentes. Quando possível, prefira alterar a consulta a alterar os índices.
 
-+ [Saiba como ajustar o desempenho do query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Saiba como ajustar o desempenho da consulta](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### Ajustar o índice
 
-__Alterar (ou criar) um índice de AEM__ de forma que as restrições de consulta existentes sejam resolvidas para as atualizações de índice.
+__Alterar (ou criar) um índice AEM__ de forma que as restrições de consulta existentes possam ser resolvidas para as atualizações de índice.
 
 + [Saiba como ajustar índices existentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 + [Saiba como criar índices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. Verificar{#verify}
 
-Os ajustes feitos nos queries, índices ou ambos - devem ser verificados para garantir que reduzam os avisos de travessia.
+Ajustes feitos em consultas, índices ou ambos - devem ser verificados para garantir que atendam aos avisos de passagem.
 
 ![Explicar consulta](./assets/traversals/verify.gif)
 
-Somente se [ajustes da consulta](#adjust-the-query) forem feitas, a consulta poderá ser testada diretamente em AEM as a Cloud Service por meio do Console do desenvolvedor [Explicar Consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"}. Explicar a consulta é executada em relação ao serviço de autor do AEM, no entanto, como as definições de índice são as mesmas nos serviços de Autor e Publicação, a validação de consultas em relação ao serviço de autor do AEM é suficiente.
+Se somente [ajustes na consulta](#adjust-the-query) feita, a consulta pode ser testada diretamente no AEM as a Cloud Service por meio do Console do desenvolvedor [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"}. A Consulta de explicação é executada em relação ao serviço do Autor do AEM, no entanto, como as definições de índice são as mesmas nos serviços do Autor e de Publicação, validar as consultas no serviço do Autor do AEM é suficiente.
 
-If [ajustamentos ao índice](#adjust-the-index) forem feitas, o índice deverá ser implantado AEM as a Cloud Service. Com os ajustes de índice implantados, o Console do desenvolvedor [Explicar Consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"} pode ser usada para executar e ajustar mais a query.
+Se [ajustes no índice](#adjust-the-index) forem feitas, o índice deve ser implantado no AEM as a Cloud Service. Com os ajustes de índice implantados, o Console do desenvolvedor [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"} pode ser usado para executar e ajustar ainda mais a consulta.
 
-Em última análise, todas as alterações (query e código) são confirmadas no Git e implantadas AEM as a Cloud Service usando o Cloud Manager. Depois de implantados, teste os caminhos de código associados aos avisos de travessia originais e verifique se os avisos de travessia não aparecem mais na variável `aemerror` log.
+Por fim, todas as alterações (consulta e código) são confirmadas no Git e implantadas no AEM as a Cloud Service usando o Cloud Manager. Depois de implantados, testam novamente os caminhos de código associados aos avisos de passagem originais e verificam se os avisos de passagem não aparecem mais no `aemerror` registro.
 
 ## Outros recursos
 
-Confira esses outros recursos úteis para entender AEM índices, pesquisa e avisos de travessia.
+Confira estes outros recursos úteis para entender os índices AEM, pesquisa e avisos de passagem.
 
 <div class="columns is-multiline">
 
@@ -197,7 +197,7 @@ Confira esses outros recursos úteis para entender AEM índices, pesquisa e avis
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - Pesquisa e indexação">Cloud 5 - Pesquisa e indexação</a></p>
-               <p class="is-size-6">A equipe do Cloud 5 mostra as explosões dos ins e outs da pesquisa e indexação AEM as a Cloud Service.</p>
+               <p class="is-size-6">A equipe da Cloud 5 mostra como explorar os detalhes da pesquisa e indexação no AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
@@ -220,7 +220,7 @@ Confira esses outros recursos úteis para entender AEM índices, pesquisa e avis
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR" title="Pesquisa e indexação de conteúdo">Documentação de pesquisa e indexação de conteúdo</a></p>
-               <p class="is-size-6">Saiba como criar e gerenciar índices em AEM as a Cloud Service.</p>
+               <p class="is-size-6">Saiba como criar e gerenciar índices no AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
@@ -242,7 +242,7 @@ Confira esses outros recursos úteis para entender AEM índices, pesquisa e avis
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernização de índices do Oak">Modernização de índices do Oak</a></p>
-               <p class="is-size-6">Saiba como converter AEM 6 definições de índice Oak para serem AEM as a Cloud Service compatíveis e manter índices a partir de agora.</p>
+               <p class="is-size-6">Saiba como converter definições de índice AEM 6 Oak para serem compatíveis com AEM as a Cloud Service e manter índices daqui para frente.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
@@ -264,7 +264,7 @@ Confira esses outros recursos úteis para entender AEM índices, pesquisa e avis
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="Documentação de definição de índice">Documentação do índice Lucene</a></p>
-               <p class="has-ellipsis is-size-6">O índice Apache Oak Jackrabbit Lucene que documenta todas as configurações de índice Lucene suportadas.</p>
+               <p class="has-ellipsis is-size-6">A referência de índice Apache Oak Jackrabbit Lucene que documenta todas as configurações de índice Lucene compatíveis.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>

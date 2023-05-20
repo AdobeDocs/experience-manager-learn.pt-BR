@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Criar fonte de dados
 
-Crie uma fonte de dados com resT usando o arquivo do swagger criado na etapa anterior
+Criar uma fonte de dados com suporte de REST usando o arquivo swagger criado na etapa anterior
 
 >[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)

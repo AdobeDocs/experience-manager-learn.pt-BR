@@ -1,5 +1,5 @@
 ---
-title: Configurar o painel de início
+title: Configurar o painel inicial
 description: Adicione um componente de texto estático ao painel inicial.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -13,13 +13,13 @@ thumbnail: 332235.jpg
 exl-id: f3c01af3-bce1-4a7b-84b7-5e0889bebe28
 source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
-# Configurar o painel de início
+# Configurar o painel inicial
 
-Estilo do texto no componente de texto estático usando o editor de rich text.
+Estilize o texto no componente de texto estático usando o editor de rich text.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)

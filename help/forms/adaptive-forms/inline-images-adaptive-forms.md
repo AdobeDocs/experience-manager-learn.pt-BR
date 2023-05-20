@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Imagens em linha no Adaptive Forms
+# Imagens integradas no Adaptive Forms
 
-Um caso de uso comum é exibir a imagem carregada como uma imagem embutida no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada ao exibir a imagem no formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
+Um caso de uso comum é exibir a imagem carregada como uma imagem em linha no Formulário adaptável. Por padrão, a imagem carregada é mostrada como um link e essa experiência pode ser aprimorada ao exibir a imagem no Formulário adaptável. Este artigo o guiará pelas etapas envolvidas na exibição da imagem em linha.
 
 ## Adicionar imagem de espaço reservado
 
-A primeira etapa é anexar um espaço reservado div ao componente de anexo de arquivo. No código abaixo, o componente de anexo de arquivo é identificado por seu nome de classe CSS de carregamento de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Essa função é chamada no evento initialize do componente de anexo de arquivo.
+A primeira etapa é anexar um espaço reservado div ao componente de anexo de arquivo. No código abaixo, o componente de anexo de arquivo é identificado pelo seu nome de classe CSS de upload de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Esta função é chamada no evento de inicialização do componente de anexo de arquivo.
 
 ```javascript
 /**
@@ -37,7 +37,7 @@ function addTempImage(){
 
 ### Exibir imagem em linha
 
-Após o usuário ter carregado a imagem, a função listada abaixo é chamada no evento commit do componente de anexo de arquivo. A função recebe o objeto de arquivo carregado como argumento.
+Depois que o usuário carrega a imagem, a função listada abaixo é chamada no evento de confirmação do componente de anexo de arquivo. A função recebe o objeto de arquivo carregado como argumento.
 
 ```javascript
 /**
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Implantar no servidor
 
-* Baixe e instale o [biblioteca do cliente](assets/inline-image-client-library.zip) na sua instância AEM usando AEM gerenciador de pacotes.
-* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
-* Aponte seu navegador para [Adicionar imagem em linha](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Clique no botão &quot;Anexar sua foto&quot; para adicionar a imagem
+* Baixe e instale o [biblioteca do cliente](assets/inline-image-client-library.zip) na instância do AEM usando o gerenciador de pacotes AEM.
+* Baixe e instale o [exemplo de formulário](assets/inline-image-af.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
+* Aponte seu navegador para [Adicionar imagem integrada](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Clique no botão &quot;Anexar sua foto&quot; para adicionar imagem

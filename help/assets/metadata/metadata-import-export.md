@@ -1,6 +1,6 @@
 ---
-title: Uso da importação e exportação de metadados no AEM Assets
-description: Saiba como usar os recursos de metadados de importação e exportação do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
+title: Utilização de importação e exportação de metadados no AEM Assets
+description: Saiba como usar os recursos de importação e exportação de metadados do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
 version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ---
 
-# Uso da importação e exportação de metadados no AEM Assets {#metadata-import-and-export}
+# Utilização de importação e exportação de metadados no AEM Assets {#metadata-import-and-export}
 
-Saiba como usar os recursos de metadados de importação e exportação do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
+Saiba como usar os recursos de importação e exportação de metadados do Adobe Experience Manager Assets. Os recursos de importação e exportação permitem que os autores de conteúdo atualizem metadados em massa para ativos existentes.
 
 ## Exportação de metadados {#metadata-export}
 
@@ -31,34 +31,34 @@ Saiba como usar os recursos de metadados de importação e exportação do Adobe
 
 >[!NOTE]
 >
-> Ao preparar um arquivo CSV para importação, é mais fácil gerar um CSV com a lista de ativos usando o recurso Exportação de metadados. Em seguida, você pode modificar o arquivo CSV gerado e importá-lo usando o recurso Importar .
+> Ao preparar um arquivo CSV para importar, é mais fácil gerar um CSV com a lista de ativos usando o recurso Exportação de metadados. Você pode modificar o arquivo CSV gerado e importá-lo usando o recurso Importar.
 
 ## Formato de arquivo CSV de metadados {#metadata-file-format}
 
 ### Primeira linha
 
 * A primeira linha do arquivo CSV define o esquema de metadados.
-* O padrão da Primeira coluna é `assetPath`, que retém o Caminho JCR absoluto de um ativo.
+* O padrão da Primeira coluna é `assetPath`, que contém o Caminho absoluto do JCR de um ativo.
 
-* Colunas subsequentes na primeira linha apontam para outras propriedades de metadados de um ativo.
+* As colunas subsequentes na primeira linha apontam para outras propriedades de metadados de um ativo.
    * Por exemplo : `dc:title, dc:description, jcr:title`
 
-* Formato de propriedade de valor único
+* Formato de Propriedade de Valor Único
 
    * `<metadata property name> {{<property type}}`
    * Se o tipo de propriedade não for especificado, o padrão será String.
    * Por exemplo: `dc:title {{String}}`
 
 * O nome da propriedade diferencia maiúsculas de minúsculas
-   * Correto : `dc:title {{String}}`
+   * Correto: `dc:title {{String}}`
    * Incorreto: `Dc:Title {{String}}`
 
 * O tipo de propriedade não diferencia maiúsculas de minúsculas
-* Todos válidos [Tipos de propriedades JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são compatíveis
+* Todos válidos [Tipos de propriedade JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são compatíveis
 
 * Formato de propriedade de vários valores - `<metadata property name> {{<property type : MULTI }}`
 
 ### Segunda linha para N linhas
 
-* A primeira coluna contém o caminho JCR absoluto de um ativo. Por exemplo: /content/dam/asset1.jpg
-* A propriedade de metadados de um ativo pode ter valores ausentes no arquivo CSV. As propriedades de metadados ausentes para esse ativo específico não são atualizadas.
+* A primeira coluna contém o caminho absoluto do JCR de um ativo. Por exemplo: /content/dam/asset1.jpg
+* A propriedade de metadados de um ativo pode ter valores ausentes no arquivo CSV. As propriedades de metadados ausentes desse ativo específico não são atualizadas.

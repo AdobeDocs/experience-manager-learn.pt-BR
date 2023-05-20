@@ -1,6 +1,6 @@
 ---
-title: Personalizar a camada de dados do cliente do Adobe com componentes de AEM
-description: Saiba como personalizar a Camada de dados do cliente do Adobe com conteúdo de componentes de AEM personalizados. Saiba como usar as APIs fornecidas pelos Componentes principais AEM para estender e personalizar a camada de dados.
+title: Personalizar a Camada de dados do cliente Adobe com componentes AEM
+description: Saiba como personalizar a Camada de dados do cliente Adobe com conteúdo de componentes AEM personalizados. Saiba como usar APIs fornecidas pelos Componentes principais do AEM para estender e personalizar a camada de dados.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
@@ -17,35 +17,35 @@ ht-degree: 2%
 
 ---
 
-# Personalizar a camada de dados do cliente do Adobe com componentes de AEM {#customize-data-layer}
+# Personalizar a Camada de dados do cliente Adobe com componentes AEM {#customize-data-layer}
 
-Saiba como personalizar a Camada de dados do cliente do Adobe com conteúdo de componentes de AEM personalizados. Saiba como usar APIs fornecidas por [AEM Componentes principais para estender](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizar a camada de dados.
+Saiba como personalizar a Camada de dados do cliente Adobe com conteúdo de componentes AEM personalizados. Saiba como usar APIs fornecidas pelo [Componentes principais do AEM a serem estendidos](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalize a camada de dados.
 
 ## O que você vai criar
 
 ![Camada de dados de byline](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-Neste tutorial, vamos explorar várias opções para estender a camada de dados do cliente do Adobe atualizando a WKND [Componente Byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). O _Byline_ componente é um **componente personalizado** As lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
+Neste tutorial, vamos explorar várias opções para estender a Camada de dados do cliente Adobe atualizando a WKND [Componente de byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). A variável _Subtítulo_ o componente é um **componente personalizado** As lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
 
 ### Objetivos {#objective}
 
-1. Insira dados de componentes na camada de dados estendendo um Modelo do Sling e um HTL do componente
-1. Use os utilitários de camada de dados dos Componentes principais para reduzir o esforço
-1. Usar os atributos de dados do Componente principal para se conectar aos eventos da camada de dados existente
+1. Insira dados do componente na camada de dados estendendo um Modelo Sling e o componente HTL
+1. Usar utilitários de camada de dados dos Componentes principais para reduzir o esforço
+1. Usar atributos de dados do Componente principal para conectar-se aos eventos existentes da camada de dados
 
 ## Pré-requisitos {#prerequisites}
 
-A **ambiente de desenvolvimento local** é necessário para concluir este tutorial. Capturas de tela e vídeo são capturados usando o SDK as a Cloud Service AEM executado em um macOS. Comandos e códigos são independentes do sistema operacional local, a menos que observado de outra forma.
+A **ambiente de desenvolvimento local** é necessário para concluir este tutorial. Capturas de tela e vídeos são capturados usando o SDK as a Cloud Service do AEM em execução em um macOS. Os comandos e o código são independentes do sistema operacional local, a menos que indicado de outra forma.
 
 **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
 **Novo no AEM 6.5?** Confira o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
 
-## Baixe e implante o site de referência WKND {#set-up-wknd-site}
+## Baixar e implantar o site de referência WKND {#set-up-wknd-site}
 
-Este tutorial estende o componente Byline no site de referência WKND. Clonar e instalar a base de código WKND no ambiente local.
+Este tutorial estende o componente Subtítulo no site de referência WKND. Clonar e instalar a base de código WKND em seu ambiente local.
 
-1. Iniciar um Início Rápido local **autor** instância de AEM em execução em [http://localhost:4502](http://localhost:4502).
+1. Iniciar um Quickstart local **autor** instância de AEM em execução [http://localhost:4502](http://localhost:4502).
 1. Abra uma janela de terminal e clone a base de código WKND usando Git:
 
    ```shell
@@ -61,16 +61,16 @@ Este tutorial estende o componente Byline no site de referência WKND. Clonar e 
 
    >[!NOTE]
    >
-   > Para o AEM 6.5 e o service pack mais recente, adicione `classic` perfil para o comando Maven:
+   > Para o AEM 6.5 e o pacote de serviços mais recente, adicione o `classic` perfil para o comando Maven:
    >
    > `mvn clean install -PautoInstallSinglePackage -Pclassic`
 
-1. Abra uma nova janela do navegador e faça logon no AEM. Abra um **Revista** tipo de página: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. Abra uma nova janela do navegador e faça logon no AEM. Abra um **Revista** página como: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   ![Componente Byline na Página](assets/adobe-client-data-layer/byline-component-onpage.png)
+   ![Componente de Subtítulo na página](assets/adobe-client-data-layer/byline-component-onpage.png)
 
-   Você deve ver um exemplo do componente Byline que foi adicionado à página como parte de um Fragmento de experiência. Você pode exibir o Fragmento de experiência em [http://localhost:4502/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/byline.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/byline.html)
-1. Abra as ferramentas do desenvolvedor e insira o seguinte comando no **Console**:
+   Você deve ver um exemplo do componente Subtítulo que foi adicionado à página como parte de um Fragmento de experiência. Você pode visualizar o fragmento de experiência em [http://localhost:4502/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/byline.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/byline.html)
+1. Abra as ferramentas do desenvolvedor e digite o seguinte comando no **Console**:
 
    ```js
    window.adobeDataLayer.getState();
@@ -78,20 +78,20 @@ Este tutorial estende o componente Byline no site de referência WKND. Clonar e 
 
    Para ver o estado atual da camada de dados em um site AEM, inspecione a resposta. Você deve ver informações sobre a página e os componentes individuais.
 
-   ![Resposta da camada de dados de Adobe](assets/data-layer-state-response.png)
+   ![Resposta da camada de dados Adobe](assets/data-layer-state-response.png)
 
-   Observe que o componente Byline não está listado na Camada de dados.
+   Observe que o componente Subtítulo não está listado na Camada de dados.
 
-## Atualizar o Modelo de Sling de Byline {#sling-model}
+## Atualizar o modelo Sling de byline {#sling-model}
 
-Para inserir dados sobre o componente na camada de dados, primeiro atualizemos o Modelo do Sling do componente. Em seguida, atualize a interface Java™ do Byline e a implementação do Modelo do Sling para ter um novo método `getData()`. Esse método contém as propriedades a serem inseridas na camada de dados.
+Para inserir dados sobre o componente na camada de dados, primeiro vamos atualizar o Modelo Sling do componente. Em seguida, atualize a interface Java™ do Byline e a implementação do Modelo Sling para ter um novo método `getData()`. Esse método contém as propriedades a serem inseridas na camada de dados.
 
-1. Abra o `aem-guides-wknd` projeto no IDE de sua escolha. Navegue até o `core` módulo.
-1. Abra o arquivo `Byline.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
+1. Abra o `aem-guides-wknd` projeto no IDE de sua escolha. Navegue até a `core` módulo.
+1. Abra o arquivo `Byline.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
 
-   ![Interface Java Byline](assets/adobe-client-data-layer/byline-java-interface.png)
+   ![Interface Java de linha de guia](assets/adobe-client-data-layer/byline-java-interface.png)
 
-1. Adicione o método abaixo à interface:
+1. Adicionar o método abaixo à interface:
 
    ```java
    public interface Byline {
@@ -104,9 +104,9 @@ Para inserir dados sobre o componente na camada de dados, primeiro atualizemos o
    }
    ```
 
-1. Abra o arquivo `BylineImpl.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`. É a implementação da `Byline` e é implementado como um Modelo do Sling.
+1. Abra o arquivo `BylineImpl.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`. Trata-se da implementação da `Byline` e é implementado como um Modelo Sling.
 
-1. Adicione as seguintes declarações de importação ao início do arquivo:
+1. Adicione as seguintes instruções de importação no início do arquivo:
 
    ```java
    import java.util.HashMap;
@@ -117,7 +117,7 @@ Para inserir dados sobre o componente na camada de dados, primeiro atualizemos o
    import com.adobe.cq.wcm.core.components.util.ComponentUtils;
    ```
 
-   O `fasterxml.jackson` As APIs são usadas para serializar os dados a serem expostos como JSON. O `ComponentUtils` dos Componentes principais AEM são usados para verificar se a camada de dados está ativada.
+   A variável `fasterxml.jackson` As APIs são usadas para serializar os dados a serem expostos como JSON. A variável `ComponentUtils` dos Componentes principais do AEM são usados para verificar se a camada de dados está ativada.
 
 1. Adicionar o método não implementado `getData()` para `BylineImple.java`:
 
@@ -158,29 +158,29 @@ Para inserir dados sobre o componente na camada de dados, primeiro atualizemos o
    }
    ```
 
-   No método acima, um novo `HashMap` é usada para capturar as propriedades a serem expostas como JSON. Observe que os métodos existentes como `getName()` e `getOccupations()` são usadas. O `@type` representa o tipo de recurso exclusivo do componente, permite que um cliente identifique facilmente eventos e/ou acionadores com base no tipo de componente.
+   No método acima, um novo `HashMap` é usado para capturar as propriedades a serem expostas como JSON. Observe que métodos existentes como `getName()` e `getOccupations()` são usados. A variável `@type` representa o tipo de recurso exclusivo do componente; permite que um cliente identifique eventos e/ou acionadores facilmente com base no tipo de componente.
 
-   O `ObjectMapper` é usada para serializar as propriedades e retornar uma string JSON. Essa cadeia de caracteres JSON pode ser inserida na camada de dados.
+   A variável `ObjectMapper` é usado para serializar as propriedades e retornar uma string JSON. Essa cadeia de caracteres JSON pode ser inserida na camada de dados.
 
-1. Abra uma janela de terminal. Crie e implante apenas o `core` módulo que usa suas habilidades Maven:
+1. Abra uma janela de terminal. Crie e implante apenas o `core` usando suas habilidades em Maven:
 
    ```shell
    $ cd aem-guides-wknd/core
    $ mvn clean install -PautoInstallBundle
    ```
 
-## Atualizar o HTL Byline {#htl}
+## Atualizar o HTL do byline {#htl}
 
 Em seguida, atualize o `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (Linguagem de modelo de HTML) é o modelo usado para renderizar o HTML do componente.
 
-Um atributo de dados especial `data-cmp-data-layer` em cada Componente de AEM é usado para expor sua camada de dados. O JavaScript fornecido pelos Componentes principais AEM procura por esse atributo de dados. O valor desse atributo de dados é preenchido com a Cadeia de caracteres JSON retornada pelo Modelo de Sling Byline `getData()` e injetado na camada de Dados do cliente do Adobe.
+Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é usado para expor sua camada de dados. O JavaScript fornecido pelos Componentes principais do AEM procura esse atributo de dados. O valor desse atributo de dados é preenchido com a sequência JSON retornada pelo modelo Sling de byline `getData()` e inserida na camada Dados do cliente Adobe.
 
-1. Abra o `aem-guides-wknd` projeto no IDE. Navegue até o `ui.apps` módulo.
-1. Abra o arquivo `byline.html` at `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
+1. Abra o `aem-guides-wknd` projeto no IDE. Navegue até a `ui.apps` módulo.
+1. Abra o arquivo `byline.html` em `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
-   ![HTML Byline](assets/adobe-client-data-layer/byline-html-template.png)
+   ![HTML de linha](assets/adobe-client-data-layer/byline-html-template.png)
 
-1. Atualizar `byline.html` para incluir a `data-cmp-data-layer` atributo:
+1. Atualizar `byline.html` para incluir o `data-cmp-data-layer` atributo:
 
    ```diff
      <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
@@ -191,32 +191,32 @@ Um atributo de dados especial `data-cmp-data-layer` em cada Componente de AEM é
        ...
    ```
 
-   O valor de `data-cmp-data-layer` foi definida como `"${byline.data}"` em que `byline` é o Modelo do Sling atualizado anteriormente. `.data` é a notação padrão para chamar um método Java™ Getter em HTL de `getData()` executado no exercício anterior.
+   O valor de `data-cmp-data-layer` foi definido como `"${byline.data}"` onde `byline` O é o Modelo do Sling atualizado anteriormente. `.data` é a notação padrão para chamar um método Getter Java™ no HTL de `getData()` no exercício anterior.
 
-1. Abra uma janela de terminal. Crie e implante apenas o `ui.apps` módulo que usa suas habilidades Maven:
+1. Abra uma janela de terminal. Crie e implante apenas o `ui.apps` usando suas habilidades em Maven:
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. Retorne ao navegador e abra a página novamente com um componente Linha de Byte: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. Retorne ao navegador e reabra a página com um componente Subtítulo: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-1. Abra as ferramentas do desenvolvedor e inspecione a fonte de HTML da página do componente Byline:
+1. Abra as ferramentas do desenvolvedor e inspecione o código-fonte HTML da página para o componente Subtítulo:
 
    ![Camada de dados de byline](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-   Você deve ver que a variável `data-cmp-data-layer` foi preenchida com a Cadeia JSON do Modelo Sling.
+   Você deve ver que a variável `data-cmp-data-layer` foi preenchida com a cadeia de caracteres JSON a partir do modelo Sling.
 
-1. Abra as ferramentas do desenvolvedor do navegador e insira o seguinte comando no **Console**:
+1. Abra as ferramentas de desenvolvedor do navegador e digite o seguinte comando no **Console**:
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-1. Navegue abaixo da resposta em `component` para encontrar a instância do `byline` componente foi adicionado à camada de dados:
+1. Navegue abaixo da resposta em `component` para encontrar a instância do `byline` O componente foi adicionado à camada de dados:
 
-   ![Ignorar parte da camada de dados](assets/adobe-client-data-layer/byline-part-of-datalayer.png)
+   ![Parte do byline da camada de dados](assets/adobe-client-data-layer/byline-part-of-datalayer.png)
 
    Você deve ver uma entrada como a seguinte:
 
@@ -229,18 +229,18 @@ Um atributo de dados especial `data-cmp-data-layer` em cada Componente de AEM é
        parentId: "page-30d989b3f8"
    ```
 
-   Observe que as propriedades expostas são as mesmas adicionadas no `HashMap` no Modelo do Sling.
+   Observe que as propriedades expostas são as mesmas adicionadas na variável `HashMap` no Modelo Sling.
 
 ## Adicionar um evento de clique {#click-event}
 
-A Camada de dados do cliente do Adobe é orientada por eventos e um dos eventos mais comuns para acionar uma ação é a `cmp:click` evento. Os componentes principais do AEM facilitam o registro do seu componente com a ajuda do elemento de dados: `data-cmp-clickable`.
+A Camada de dados de clientes Adobe é orientada por eventos e um dos eventos mais comuns para acionar uma ação é o `cmp:click` evento. Os Componentes principais do AEM facilitam o registro do componente com a ajuda do elemento de dados: `data-cmp-clickable`.
 
-Os elementos clicáveis geralmente são um botão CTA ou um link de navegação. Infelizmente, o componente Byline não tem nenhum desses componentes, mas vamos registrá-lo de qualquer maneira, pois isso pode ser comum para outros componentes personalizados.
+Os elementos clicáveis geralmente são um botão CTA ou um link de navegação. Infelizmente, o componente Subtítulo não tem nenhum desses, mas vamos registrá-lo de qualquer maneira, pois isso pode ser comum para outros componentes personalizados.
 
-1. Abra o `ui.apps` no IDE
-1. Abra o arquivo `byline.html` at `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
+1. Abra o `ui.apps` módulo em seu IDE
+1. Abra o arquivo `byline.html` em `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
-1. Atualizar `byline.html` para incluir a `data-cmp-clickable` no atributo Byline **name** elemento:
+1. Atualizar `byline.html` para incluir o `data-cmp-clickable` atributo no campo **name** elemento:
 
    ```diff
      <h2 class="cmp-byline__name" 
@@ -249,18 +249,18 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
      </h2>
    ```
 
-1. Abra um novo terminal. Crie e implante apenas o `ui.apps` módulo que usa suas habilidades Maven:
+1. Abra um novo terminal. Crie e implante apenas o `ui.apps` usando suas habilidades em Maven:
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. Retorne ao navegador e abra novamente a página com o componente Linha de Byte adicionado: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. Retorne ao navegador e abra a página novamente com o componente Subtítulo adicionado: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   Para testar nosso evento, adicionaremos manualmente um JavaScript usando o console do desenvolvedor. Consulte [Uso da camada de dados do cliente do Adobe com componentes principais AEM](data-layer-overview.md) para assistir a um vídeo sobre como fazer isso.
+   Para testar nosso evento, adicionaremos manualmente alguns JavaScripts usando o console do desenvolvedor. Consulte [Utilização da camada de dados do cliente Adobe com componentes principais AEM](data-layer-overview.md) para ver um vídeo sobre como fazer isso.
 
-1. Abra as ferramentas do desenvolvedor do navegador e insira o seguinte método no **Console**:
+1. Abra as ferramentas de desenvolvedor do navegador e insira o seguinte método no **Console**:
 
    ```javascript
    function bylineClickHandler(event) {
@@ -272,9 +272,9 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
    }
    ```
 
-   Este método simples deve lidar com o clique do nome do componente Byline.
+   Este método simples deve lidar com o clique do nome do componente Subtítulo.
 
-1. Insira o seguinte método no **Console**:
+1. Insira o seguinte método no campo **Console**:
 
    ```javascript
    window.adobeDataLayer.push(function (dl) {
@@ -282,29 +282,29 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
    });
    ```
 
-   O método acima envia um ouvinte de evento para a camada de dados para ouvir o `cmp:click` e chama a função `bylineClickHandler`.
+   O método acima envia um ouvinte de eventos para a camada de dados para ouvir o `cmp:click` e chama o evento de `bylineClickHandler`.
 
    >[!CAUTION]
    >
-   > É importante **not** para atualizar o navegador durante todo este exercício, caso contrário, o JavaScript do console será perdido.
+   > É importante **não** para atualizar o navegador durante todo este exercício, caso contrário, o JavaScript do console será perdido.
 
-1. No navegador, com a variável **Console** abrir, clique no nome do autor no componente Linha de bytes:
+1. No navegador, com a variável **Console** abra, clique no nome do autor no componente Subtítulo:
 
-   ![Componente Byline clicado](assets/adobe-client-data-layer/byline-component-clicked.png)
+   ![Componente de byline clicado](assets/adobe-client-data-layer/byline-component-clicked.png)
 
-   Você deve ver a mensagem do console `Byline Clicked!` e o nome Byline.
+   Você deve ver a mensagem do console `Byline Clicked!` e o nome do Subtítulo.
 
-   O `cmp:click` evento é o mais fácil de se conectar. Para componentes mais complexos e para rastrear outros comportamentos, é possível adicionar JavaScript personalizado para adicionar e registrar novos eventos. Um ótimo exemplo é o componente carrossel, que dispara um `cmp:show` sempre que um slide for alternado. Consulte a [código fonte para obter mais detalhes](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
+   A variável `cmp:click` é o mais fácil de conectar ao evento. Para componentes mais complexos e rastrear outros comportamentos, é possível adicionar JavaScript personalizado para adicionar e registrar novos eventos. Um ótimo exemplo é o componente Carrossel, que aciona um `cmp:show` evento sempre que um slide for alternado. Consulte a [código-fonte para obter mais detalhes](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
 
 ## Usar o utilitário DataLayerBuilder {#data-layer-builder}
 
-Quando o Modelo do Sling era [atualizado](#sling-model) anteriormente no capítulo, optamos por criar a cadeia de caracteres JSON usando um `HashMap` e configurar cada uma das propriedades manualmente. Esse método funciona bem para componentes únicos pequenos, no entanto, para componentes que estendem os Componentes principais do AEM, isso pode resultar em muito código extra.
+Quando o modelo Sling foi [atualizado](#sling-model) anteriormente neste capítulo, optamos por criar a cadeia de caracteres JSON usando um `HashMap` e definindo cada uma das propriedades manualmente. Esse método funciona bem para componentes únicos pequenos, no entanto, para componentes que estendem os Componentes principais do AEM, isso pode resultar em muito código extra.
 
-Uma classe de utilidade, `DataLayerBuilder`, existe para executar a maior parte do elevador pesado. Isso permite que as implementações estendam apenas as propriedades desejadas. Vamos atualizar o Modelo do Sling para usar o `DataLayerBuilder`.
+Uma classe de utilitário, `DataLayerBuilder`, existe para executar a maior parte do trabalho pesado. Isso permite que as implementações estendam apenas as propriedades que desejam. Vamos atualizar o Modelo do Sling para usar o `DataLayerBuilder`.
 
 1. Retorne ao IDE e navegue até o `core` módulo.
-1. Abra o arquivo `Byline.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
-1. Modifique o `getData()` para retornar um tipo de `ComponentData`
+1. Abra o arquivo `Byline.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/Byline.java`.
+1. Modifique o `getData()` método para retornar um tipo de `ComponentData`
 
    ```java
    import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
@@ -319,18 +319,18 @@ Uma classe de utilidade, `DataLayerBuilder`, existe para executar a maior parte 
    }
    ```
 
-   `ComponentData` é um objeto fornecido pelos Componentes principais AEM. Ele resulta em uma string JSON, exatamente como no exemplo anterior, mas também executa muito trabalho adicional.
+   `ComponentData` é um objeto fornecido pelos Componentes principais do AEM. Ele resulta em uma sequência JSON, como no exemplo anterior, mas também executa muito trabalho adicional.
 
-1. Abra o arquivo `BylineImpl.java` at `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
+1. Abra o arquivo `BylineImpl.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
 
-1. Adicione as seguintes declarações de importação:
+1. Adicione as seguintes instruções de importação:
 
    ```java
    import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
    import com.adobe.cq.wcm.core.components.models.datalayer.builder.DataLayerBuilder;
    ```
 
-1. Substitua o `getData()` com o seguinte método:
+1. Substitua o `getData()` com o seguinte:
 
    ```java
    @Override
@@ -349,11 +349,11 @@ Uma classe de utilidade, `DataLayerBuilder`, existe para executar a maior parte 
    }
    ```
 
-   O componente Byline reutiliza partes do Componente principal da imagem para exibir uma imagem que representa o autor. No trecho acima, a variável [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) é usada para estender a camada de dados do `Image` componente. Isso preenche previamente o objeto JSON com todos os dados sobre a imagem usada. Também faz algumas das funções de rotina, como definir a variável `@type` e o identificador exclusivo do componente. Observe que o método é pequeno!
+   O componente Subtítulo reutiliza partes do Componente principal de imagem para exibir uma imagem representando o autor. No trecho acima, a variável [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html) é usado para estender a camada de dados do `Image` componente. Isso preenche o objeto JSON previamente com todos os dados sobre a imagem usada. Também executa algumas funções de rotina, como definir o `@type` e o identificador exclusivo do componente. Observe que o método é pequeno!
 
-   A única propriedade estendeu o `withTitle` que é substituído pelo valor de `getName()`.
+   A única propriedade estendia a variável `withTitle` que é substituído pelo valor de `getName()`.
 
-1. Abra uma janela de terminal. Crie e implante apenas o `core` módulo que usa suas habilidades Maven:
+1. Abra uma janela de terminal. Crie e implante apenas o `core` usando suas habilidades em Maven:
 
    ```shell
    $ cd aem-guides-wknd/core
@@ -371,17 +371,17 @@ Uma classe de utilidade, `DataLayerBuilder`, existe para executar a maior parte 
    +   data-cmp-data-layer="${byline.data.json}"
    ```
 
-   Lembre-se de que agora estamos retornando um objeto do tipo `ComponentData`. Este objeto inclui um método getter `getJson()` e isso é usado para preencher a variável `data-cmp-data-layer` atributo.
+   Lembre-se de que agora estamos retornando um objeto do tipo `ComponentData`. Este objeto inclui um método getter `getJson()` e é usado para preencher o `data-cmp-data-layer` atributo.
 
-1. Abra uma janela de terminal. Crie e implante apenas o `ui.apps` módulo que usa suas habilidades Maven:
+1. Abra uma janela de terminal. Crie e implante apenas o `ui.apps` usando suas habilidades em Maven:
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
    $ mvn clean install -PautoInstallPackage
    ```
 
-1. Retorne ao navegador e abra novamente a página com o componente Linha de Byte adicionado: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
-1. Abra as ferramentas do desenvolvedor do navegador e insira o seguinte comando no **Console**:
+1. Retorne ao navegador e abra a página novamente com o componente Subtítulo adicionado: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. Abra as ferramentas de desenvolvedor do navegador e digite o seguinte comando no **Console**:
 
    ```js
    window.adobeDataLayer.getState();
@@ -407,29 +407,29 @@ Uma classe de utilidade, `DataLayerBuilder`, existe para executar a maior parte 
        repo:modifyDate: "2019-10-18T20:17:24Z"
    ```
 
-   Observe que agora há um `image` dentro do `byline` entrada do componente. Isso tem muito mais informações sobre o ativo no DAM. Observe também que a variável `@type` e a id exclusiva (neste caso, `byline-136073cfcb`) foram preenchidas automaticamente e a variável `repo:modifyDate` que indica quando o componente foi modificado.
+   Observe que agora há uma `image` objeto dentro do `byline` entrada de componente. Há muito mais informações sobre o ativo no DAM. Observe também que o `@type` e o identificador exclusivo (neste caso `byline-136073cfcb`) foram preenchidos automaticamente e a variável `repo:modifyDate` que indica quando o componente foi modificado.
 
 ## Exemplos adicionais {#additional-examples}
 
-1. Outro exemplo de extensão da camada de dados pode ser visualizado inspecionando o `ImageList` componente na base de código WKND:
-   * `ImageList.java` - Interface Java na `core` módulo.
-   * `ImageListImpl.java` - Modelo do Sling na `core` módulo.
-   * `image-list.html` - Modelo HTL na `ui.apps` módulo.
+1. Outro exemplo de extensão da camada de dados pode ser visualizado ao inspecionar o `ImageList` componente na base de código WKND:
+   * `ImageList.java` - Interface Java no `core` módulo.
+   * `ImageListImpl.java` - Modelo Sling no `core` módulo.
+   * `image-list.html` - Modelo HTL no `ui.apps` módulo.
 
    >[!NOTE]
    >
-   > É um pouco mais difícil incluir propriedades personalizadas como `occupation` ao usar a variável [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html). No entanto, se você estender um Componente principal que inclui uma Imagem ou Página, o utilitário economiza muito tempo.
+   > É um pouco mais difícil incluir propriedades personalizadas como `occupation` ao usar o [DataLayerBuilder](https://javadoc.io/doc/com.adobe.cq/core.wcm.components.core/latest/com/adobe/cq/wcm/core/components/models/datalayer/builder/ComponentDataBuilder.html). No entanto, se estender um Componente principal que inclua uma Imagem ou Página, o utilitário economiza muito tempo.
 
    >[!NOTE]
    >
-   > Se estiver criando uma camada de dados avançada para objetos reutilizados em uma implementação, é recomendável extrair os elementos da camada de dados em seus próprios objetos Java™ específicos da camada de dados. Por exemplo, os Componentes principais de comércio adicionaram interfaces para `ProductData` e `CategoryData` já que podem ser usados em muitos componentes em uma implementação do Commerce. Revisão [o código no acordo de recompra aem-CIF-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) para obter mais detalhes.
+   > Se estiver criando uma Camada de dados avançada para objetos reutilizados em uma implementação, é recomendável extrair os elementos da Camada de dados em seus próprios objetos Java™ específicos da camada de dados. Por exemplo, os Componentes principais do Commerce adicionaram interfaces para `ProductData` e `CategoryData` já que eles podem ser usados em muitos componentes em uma implementação do Commerce. Revisão [o código no repositório aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) para obter mais detalhes.
 
 ## Parabéns! {#congratulations}
 
-Você acabou de explorar algumas maneiras de estender e personalizar a Camada de dados do cliente do Adobe com componentes AEM!
+Você acabou de explorar algumas maneiras de estender e personalizar a Camada de dados do cliente Adobe com componentes AEM!
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação da camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Documentação da Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [Integração da camada de dados com os componentes principais](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
-* [Uso da camada de dados do cliente do Adobe e da documentação dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
+* [Uso da Camada de dados do cliente Adobe e da Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)

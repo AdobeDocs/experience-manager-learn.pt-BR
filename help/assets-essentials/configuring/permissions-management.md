@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento de permissões do Assets Essentials
-description: Saiba como o gerenciamento de permissões do AEM Assets Essentials permite que as organizações controlem o acesso aos ativos, protejam sua marca e garantam a conformidade.
+description: Saiba como o gerenciamento de permissões do AEM Assets Essentials permite que as organizações controlem o acesso aos ativos, protejam a marca e garantam a conformidade.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Gerenciamento de permissões no Assets Essentials
 
-Saiba como o gerenciamento de permissões do AEM Assets Essentials permite que as organizações controlem o acesso aos ativos, protejam sua marca e garantam a conformidade.
+Saiba como o gerenciamento de permissões do AEM Assets Essentials permite que as organizações controlem o acesso aos ativos, protejam a marca e garantam a conformidade.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)

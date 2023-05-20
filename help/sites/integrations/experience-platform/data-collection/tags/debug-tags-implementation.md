@@ -1,6 +1,6 @@
 ---
-title: Depuração de uma implementação de Tags
-description: Uma introdução a algumas ferramentas e técnicas comuns para depurar uma implementação de Tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Experience Platform Debugger para identificar e solucionar problemas principais de uma implementação de Tags.
+title: Depuração de uma implementação de tags
+description: Uma introdução a algumas ferramentas e técnicas comuns para depurar uma implementação de tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Depurador de Experience Platform para identificar e solucionar problemas de aspectos principais de uma implementação de tags.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 ---
 
-# Depuração de uma implementação de Tags {#debug-tags-implementation}
+# Depuração de uma implementação de tags {#debug-tags-implementation}
 
-Uma introdução a ferramentas e técnicas comuns usadas para depurar uma implementação de Tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Experience Platform Debugger para identificar e solucionar problemas principais de uma implementação de Tags.
+Uma introdução a ferramentas e técnicas comuns usadas para depurar uma implementação de tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Depurador de Experience Platform para identificar e solucionar problemas de aspectos principais de uma implementação de tags.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
 
 ## Depuração do lado do cliente por meio do objeto Satellite
 
-A depuração do lado do cliente é útil para verificar o carregamento da regra da propriedade de tag ou a ordem de execução. Sempre que uma propriedade de tag for adicionada ao site, a variável `_satellite` O objeto JavaScript está presente no navegador para facilitar o evento do lado do cliente e o rastreamento de dados.
+A depuração do lado do cliente é útil para verificar o carregamento da regra de propriedade da tag ou a ordem de execução. Sempre que uma propriedade de tag for adicionada ao site, a variável `_satellite` O objeto JavaScript está presente no navegador para facilitar o evento do lado do cliente e o rastreamento de dados.
 
-Para ativar a depuração do lado do cliente, chame a função `setDebug(true)` no método `_satellite` objeto.
+Para ativar a depuração no lado do cliente, chame o `setDebug(true)` no `_satellite` objeto.
 
 1. Abra o console do navegador e execute o comando abaixo.
 
@@ -37,22 +37,22 @@ Para ativar a depuração do lado do cliente, chame a função `setDebug(true)` 
        _satellite.setDebug(true);
    ```
 
-1. Recarregue a página AEM do site e verifique os programas de log do console _regra disparada_ como abaixo.
+1. Recarregue a página do site AEM e verifique se o log do console é exibido _regra acionada_ como abaixo.
 
-   ![Propriedade de tag em páginas de autor e publicação](assets/satellite-object-debugging.png)
+   ![Marcar propriedade nas páginas Autor e Publicar](assets/satellite-object-debugging.png)
 
 ## Depuração via Adobe Experience Platform Debugger
 
-O Adobe fornece Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Complemento do Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, entender e obter informações sobre a integração.
+O Adobe fornece o Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Complemento do Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, entender e obter insights sobre a integração.
 
-1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de publicação
+1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de Publicação
 
 1. No **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform** verifique os detalhes da propriedade da tag, como Nome, Versão, Data de build, Ambiente e Extensões.
 
-   ![Detalhes da propriedade de tag e do Adobe Experience Platform Debugger](assets/tag-property-details.png)
+   ![Detalhes do depurador da Adobe Experience Platform e da propriedade da tag](assets/tag-property-details.png)
 
 ## Recursos adicionais {#additional-resources}
 
 + [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
-+ [Referência a objeto do satélite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [Referência a objeto satélite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

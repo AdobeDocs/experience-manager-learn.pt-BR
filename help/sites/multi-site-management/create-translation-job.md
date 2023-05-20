@@ -1,6 +1,6 @@
 ---
 title: Trabalhos de tradução
-description: Saiba como adicionar um trabalho de tradução a um Projeto de tradução existente.
+description: Saiba como adicionar um trabalho de tradução a um projeto de tradução existente.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all

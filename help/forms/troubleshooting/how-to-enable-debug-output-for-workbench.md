@@ -1,5 +1,5 @@
 ---
-title: Como habilitar a saída de depuração para o Workbench
+title: Como ativar a saída de depuração para o Workbench
 description: Etapas para capturar os logs de depuração do Workbench
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como habilitar a saída de depuração para o Workbench
+# Como ativar a saída de depuração para o Workbench
 
-*Este vídeo aborda o processo para habilitar a saída de depuração do Workbench .*
+*Este vídeo percorre o processo para ativar a saída de depuração para o Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

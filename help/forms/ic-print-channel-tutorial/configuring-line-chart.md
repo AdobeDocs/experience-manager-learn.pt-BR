@@ -1,7 +1,7 @@
 ---
-title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
+title: Configuração do gráfico de linhas para o primeiro documento de comunicação interativa
 seo-title: Configuring line chart for your first interactive communication document
-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
+description: Esta é a parte 8 do tutorial em várias etapas para a criação do primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, adicionaremos um gráfico de linha para exibir o saldo da conta.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will add a Line chart to display the account balance.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
 feature: Interactive Communication
@@ -24,17 +24,17 @@ ht-degree: 0%
 
 ---
 
-# Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa {#configuring-line-chart-for-your-first-interactive-communication-document}
+# Configuração do gráfico de linhas para o primeiro documento de comunicação interativa {#configuring-line-chart-for-your-first-interactive-communication-document}
 
-Nesta parte, adicionaremos um gráfico de Linha para exibir o saldo da conta.
+Nesta parte, adicionaremos um gráfico de linha para exibir o saldo da conta.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e documentos.
 
 Abra a pasta 401KStatementPrint.
 
 Abra o 401KStatementPrint no modo de edição.
 
-A partir do AEM Forms 6.4, é muito fácil exibir dados usando vários tipos de gráficos. Usaremos um gráfico de Linha para exibir saldos por ano.
+A partir do AEM Forms 6.4, é muito fácil exibir dados usando vários tipos de gráficos. Usaremos um gráfico de linha para exibir saldos por ano.
 
 O vídeo a seguir o orienta pelas etapas para adicionar e configurar o componente de gráfico
 

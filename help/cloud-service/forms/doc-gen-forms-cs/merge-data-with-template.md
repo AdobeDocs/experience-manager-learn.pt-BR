@@ -1,6 +1,6 @@
 ---
 title: Mesclar dados com o modelo XDP
-description: Faça uma solicitação de POST para o ponto final com os parâmetros necessários
+description: Faça uma solicitação POST para o ponto final com os parâmetros necessários
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,19 +9,20 @@ feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
+source-git-commit: 47d36e472719049de1346c5f0bba010c9af4e039
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-# Efetuar a chamada de POST
+# Efetuar a chamada POST
 
 
-A próxima etapa é fazer uma chamada HTTP POST para o endpoint com os parâmetros necessários. O modelo e os arquivos de dados são fornecidos como arquivos de recurso. As propriedades do pdf gerado são especificadas por meio do parâmetro da opção na solicitação. A propriedade embedFonts é usada para incorporar fontes personalizadas no pdf gerado.[Siga esta documentação para implantar fontes personalizadas na instância da nuvem do Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) As propriedades são especificadas no arquivo de recurso options.json . Como, o ponto final tem autenticação baseada em token, passamos o Token de acesso no cabeçalho da solicitação.
+A próxima etapa é fazer uma chamada de POST HTTP para o endpoint com os parâmetros necessários. O modelo e os arquivos de dados são fornecidos como arquivos de recurso. As propriedades do pdf gerado são especificadas por meio do parâmetro da opção na solicitação. A propriedade embedFonts é usada para incorporar fontes personalizadas no pdf gerado.[Siga esta documentação para implantar fontes personalizadas na instância da nuvem do Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) As propriedades são especificadas no arquivo de recurso options.json. Como o ponto de extremidade tem autenticação baseada em token, passamos o token de acesso no cabeçalho da solicitação.
 
-O código a seguir foi usado para gerar pdf ao mesclar dados com o modelo
+O código a seguir foi usado para gerar o pdf ao mesclar dados com o modelo
 
 ```java
 public class DocumentGeneration

@@ -1,6 +1,6 @@
 ---
-title: Como relacionar e não relacionar ativos em AEM
-description: Saiba como estabelecer e gerenciar relacionamentos entre ativos no AEM.
+title: Como relacionar e não relacionar ativos no AEM
+description: Saiba como estabelecer e gerenciar relações entre ativos no AEM.
 feature: Asset Management
 role: User
 level: Beginner
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Relacionar e Não Relacionar
+# Relacionar e não relacionar
 
-Saiba como estabelecer e gerenciar relacionamentos entre ativos no AEM.
+Saiba como estabelecer e gerenciar relações entre ativos no AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)

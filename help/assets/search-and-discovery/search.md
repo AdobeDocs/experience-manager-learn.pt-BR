@@ -1,6 +1,6 @@
 ---
 title: Pesquisar
-description: Saiba como usar AEM Omnisearch para descobrir ativos rapidamente.
+description: Saiba como usar o AEM Omnisearch para descobrir ativos rapidamente.
 feature: Search
 version: Cloud Service
 kt: 4312
@@ -19,6 +19,6 @@ ht-degree: 9%
 
 # Pesquisar{#aem-assets-search}
 
-Saiba como usar AEM Omnisearch para descobrir ativos rapidamente.
+Saiba como usar o AEM Omnisearch para descobrir ativos rapidamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)

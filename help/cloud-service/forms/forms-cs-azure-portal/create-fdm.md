@@ -1,6 +1,6 @@
 ---
-title: Criar Modelo de Dados de Formulário com backup do armazenamento do Azure
-description: Integrar o AEM Forms CS ao armazenamento do Azure usando o Modelo de dados de formulário
+title: Criar modelo de dados de formulário com base no armazenamento do Azure
+description: Integrar o AEM Forms CS com o armazenamento do Azure usando o modelo de dados de formulário
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Criar Modelo de Dados de Formulário com backup do armazenamento do Azure
+# Criar modelo de dados de formulário com base no armazenamento do Azure
 
-Criar Modelo de Dados de Formulário com backup do armazenamento do Azure
+Criar modelo de dados de formulário com base no armazenamento do Azure
 
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)

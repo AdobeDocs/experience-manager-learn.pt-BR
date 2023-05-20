@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Admin Console
-description: A Adobe Admin Console e como ela se encaixa no AEM
+title: Nuvem 5 - Admin Console
+description: O Adobe Admin Console e como ele se encaixa no AEM
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 6%
 
 ---
 
-# Cloud 5 - Admin Console
+# Nuvem 5 - Admin Console
 
-Já se perguntou por que o que cada item faz no contexto de AEM dentro da Admin Console? A equipe tenta explicar algumas coisas comuns que as pessoas devem saber sobre provisionamento e acesso.
+Já se perguntou por que cada item faz, no contexto do AEM dentro do Admin Console? A equipe tenta explicar algumas coisas comuns que as pessoas devem saber sobre provisionamento e acesso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342866?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ [Entender o Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Compreender o Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
 + [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html)

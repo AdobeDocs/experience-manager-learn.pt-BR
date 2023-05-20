@@ -1,6 +1,6 @@
 ---
 title: Criar uma atividade do Target usando ofertas de fragmento de experiência
-description: Saiba como criar e testar uma atividade do Adobe Target usando AEM ofertas de fragmento de experiência.
+description: Saiba como criar e testar uma atividade do Adobe Target usando ofertas de fragmento de experiência AEM.
 feature: Experience Fragments
 topics: integrations, authoring, personalization, activity, offers
 audience: all
@@ -16,13 +16,13 @@ exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
 # Criar atividade do Adobe Target usando ofertas de fragmento de experiência {#target-activity-experience-fragment}
 
-Saiba como criar e testar uma atividade do Adobe Target usando AEM ofertas de fragmento de experiência.
+Saiba como criar e testar uma atividade do Adobe Target usando ofertas de fragmento de experiência AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
 
@@ -31,9 +31,9 @@ Saiba como criar e testar uma atividade do Adobe Target usando AEM ofertas de fr
 Para criar atividades do Adobe Target usando ofertas de fragmento de experiência, a seguinte configuração deve ser concluída:
 
 1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
-1. [Acionar uma chamada do Adobe Target a partir do Launch](./load-and-fire-target.md)
-1. [Integrar o serviço de autor do AEM ao Adobe Target](./setup-aem-target-cloud-service.md)
-1. [Exporte fragmentos de experiência do AEM para o Adobe Target](./export-experience-fragment-target.md)
+1. [Acionar uma chamada do Adobe Target no Launch](./load-and-fire-target.md)
+1. [Integrar o serviço do AEM Author ao Adobe Target](./setup-aem-target-cloud-service.md)
+1. [Exportar fragmentos de experiência do AEM para o Adobe Target](./export-experience-fragment-target.md)
 
 ## Links de suporte
 

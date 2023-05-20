@@ -20,7 +20,7 @@ ht-degree: 24%
 
 + Configuração{#configuring}
    + [Pastas de linha de base](configuring/baseline-folders.md)
-   + [Permissões de linha de base](configuring/baseline-permissions.md)
+   + [Permissões da linha de base](configuring/baseline-permissions.md)
    + [Marcação com tags](configuring/tagging.md)
    + [Esquemas de metadados](configuring/metadata-schemas.md)
    + [Perfis de metadados](configuring/metadata-profiles.md)
@@ -34,7 +34,7 @@ ht-degree: 24%
    + [Operações básicas](./authoring/basic-operations.md)
    + [Metadados](./authoring/metadata.md)
    + [Representações](./authoring/renditions.md)
-   + [Relacionar e Não Relacionar](./authoring/relate-unrelate.md)
+   + [Relacionar e não relacionar](./authoring/relate-unrelate.md)
 
 + Colaboração{#collaboration}
    + [Linha do tempo e caixa de entrada](./collaboration/timeline-and-inbox.md)
@@ -68,19 +68,19 @@ ht-degree: 24%
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
-      + [Configurar o AEM Brand Portal](brand-portal/configure.md)
-      + [Configurar origem dos ativos](brand-portal/configure-asset-sourcing.md)
+      + [Configurar AEM Brand Portal](brand-portal/configure.md)
+      + [Configurar origem de ativos](brand-portal/configure-asset-sourcing.md)
       + [Ativar downloads de representação](brand-portal/enable-renditions-download.md)
    + Compartilhamento de ativos{#assets-share}
-      + [Compartilhamento de ativos Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Configurar o Compartilhamento de Ativos Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
-      + [Theming Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
-      + [Compartilhamento de ativos - Kits de ativos comuns](./sharing/asset-share/asset-share-commons-asset-kits.md)
+      + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
+      + [Configurar o Asset Share Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Compartilhamento de ativos em temas](./sharing/asset-share-commons-feature-video-theming.md)
+      + [Compartilhamento de ativos Commons Kits de ativos](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Connected Assets](./sharing/connected-assets.md)
 
 
 + Integração com workflows criativos{#creative-workflows}
-   + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
+   + [Aplicativo de desktop AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
@@ -99,11 +99,11 @@ ht-degree: 24%
 
 + Automação de conteúdo{#content-automation}
    + [Visão geral](./content-automation/overview.md)
-   + [Operações criativas](./content-automation/creative-operations.md)
+   + [Operações de criação](./content-automation/creative-operations.md)
    + [Ações do Photoshop](./content-automation/photoshop-actions.md)
 
 + Dynamic Media{#dynamic-media}
-   + [Visão geral da Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Visão geral do Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Aplicativo de desktop do Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imagens {#images}
       + [Instantâneo do Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
@@ -115,48 +115,48 @@ ht-degree: 24%
       + [Player de vídeo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
       + [Vídeo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniaturas de vídeo personalizadas](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
-      + [Vídeo de recorte inteligente do Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [Dynamic Media Smart Crop Video](dynamic-media/dynamic-media-smart-crop-video.md)
    + Espectadores {#viewers}
       + [Espectadores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizadores de imagens panorâmica e vertical](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizadores com o Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Uso do AEM Sites {#dm-with-aem-sites}
+   + Utilização do com o AEM Sites {#dm-with-aem-sites}
       + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
    + Tutoriais {#tutorials}
       + [Criação de conjuntos de carrossel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Criação de conjuntos de imagens](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
-      + [Criação de predefinições de imagens](dynamic-media/tutorials/creating-image-presets.md)
-      + [Criação de perfis de imagem de recorte inteligente](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
-      + [Criação de perfis de vídeo](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
-      + [Processamento de ativos](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Criação de predefinições de imagem](dynamic-media/tutorials/creating-image-presets.md)
+      + [Criação de perfis de imagem de corte inteligente](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
+      + [Criar perfis de vídeo](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
+      + [Processando ativos](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [Configurar um servidor de visualização seguro](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
-      + [Gerando URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
-      + [Acionando um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
-      + [Invalidar o Cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Uso dos componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Excluindo a configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Gerar URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+      + [Acionamento de um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+      + [Invalidar o cache da CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+      + [Uso dos Componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Exclusão da configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download de ativos no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 
 + Integração do Workfront{#workfront}
-   + Conector avançado{#enhanced-connector}
+   + Conector aprimorado{#enhanced-connector}
       + [Noções básicas do conector aprimorado](./workfront/enhanced-connector/basics.md)
-      + [Pastas de projetos](./workfront/enhanced-connector/project-folders.md)
-      + Série AEM especialistas{#aem-experts-series}
+      + [Pastas de projeto](./workfront/enhanced-connector/project-folders.md)
+      + Série para especialistas em AEM{#aem-experts-series}
          + [Visão geral](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurar](./workfront/enhanced-connector/aem-experts-series/setup.md)
-         + [Formulários Workfront e metadados de AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Formulários Workfront e metadados AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
          + [Tags, pastas vinculadas ao projeto e metadados da pasta](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
          + [Configurações e fluxos de trabalho avançados](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Tradução {#translation}
    + [Tradução do arquivo de origem](translation/source-file-translation-feature-video-use.md)
-   + [Pesquisa de tradução inteligente](translation/smart-translation-search-feature-video-use.md)
-   + [Configurar pesquisa de tradução inteligente](translation/smart-translation-search-technical-video-setup.md)
+   + [Pesquisa inteligente de tradução](translation/smart-translation-search-feature-video-use.md)
+   + [Configurar a pesquisa inteligente de tradução](translation/smart-translation-search-technical-video-setup.md)
 
 + Modelos de ativos{#asset-templates}
    + [Noções básicas sobre modelos de ativos](asset-templates/asset-templates-tutorial-understand.md)

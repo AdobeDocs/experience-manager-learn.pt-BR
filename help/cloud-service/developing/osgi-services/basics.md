@@ -1,6 +1,6 @@
 ---
 title: Noções básicas de desenvolvimento de serviços OSGi
-description: Saiba mais sobre as noções básicas para desenvolver um serviço OSGi
+description: Saiba mais sobre as noções básicas para o desenvolvimento de um serviço OSGi
 role: Developer
 level: Beginner
 topic: Development

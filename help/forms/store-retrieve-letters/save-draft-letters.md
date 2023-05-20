@@ -1,6 +1,6 @@
 ---
-title: Salvar e recuperar letras de rascunho
-description: Saiba como salvar e recuperar letras de rascunho
+title: Salvar e recuperar cartas de rascunho
+description: Saiba como salvar e recuperar rascunhos de cartas
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ---
 
-# Salvar e recuperar letras de rascunho
+# Salvar e recuperar cartas de rascunho
 
-O código a seguir é usado para salvar a instância da carta. Os metadados da instância da carta são armazenados no _icrascunhos_ tabela. Uma string exclusiva (rascunhoID) é gerada e retornada. Essa string exclusiva é então usada para recuperar a instância da letra salva.
+O código a seguir é usado para salvar a ocorrência de carta. Os metadados da ocorrência de carta são armazenados no _icdrafts_ tabela. Uma sequência de caracteres exclusiva (draftID) é gerada e retornada. Essa sequência exclusiva é usada para recuperar a ocorrência de carta salva.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -67,10 +67,10 @@ public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException
 }
 ```
 
-## Obter Carta
+## Obter carta
 
-O código a seguir foi gravado para buscar a carta de rascunho salva.
-Para carregar instâncias de carta salvas, é necessário fornecer o rascunhoID. Com base nesse rascunhoID, consultamos o banco de dados para obter os metadados adicionais sobre a carta. A mesma DraftID é usada para criar os dados da carta lendo o xml apropriado do sistema de arquivos. Um objeto CCRDocumentInstance é então construído e retornado.
+O código a seguir foi escrito para buscar o rascunho salvo da carta.
+Para carregar instâncias de uma carta salva, é necessário fornecer a ID de rascunho. Com base nessa ID de rascunho, consultamos o banco de dados para obter os metadados adicionais sobre a carta. O mesmo draftID é usado para criar os dados da carta lendo o xml apropriado no sistema de arquivos. Em seguida, um objeto CCRDocumentInstance é construído e retornado.
 
 
 ```java
@@ -101,7 +101,7 @@ public CCRDocumentInstance get(String draftID) throws CCRDocumentException {
 
 ### Atualizar carta
 
-O código a seguir foi usado para atualizar a instância da carta salva. Os dados atualizados da carta são gravados no sistema de arquivos usando a ID da carta.
+O código a seguir foi usado para atualizar a ocorrência de carta salva. Os dados da carta atualizada são gravados no sistema de arquivos usando a ID da carta.
 
 ```java
 public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumentException {
@@ -120,10 +120,10 @@ public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumen
     }
 ```
 
-### Obter todas as cartas salvas
+### Obter Todas as Cartas Salvas
 
-O AEM Forms não fornece nenhuma interface de usuário pronta para listar as letras salvas. Para este artigo, listo as instâncias de carta salvas em um formato de tabela usando um formulário adaptável.
-Você pode personalizar a consulta para buscar as instâncias de carta salvas. Neste exemplo, estou consultando a instância da carta salva por &quot;administrador&quot;.
+A AEM Forms não fornece nenhuma interface de usuário pronta para uso para listar as cartas salvas. Para este artigo, eu listo as ocorrências de letras salvas em um formato tabular usando um formulário adaptável.
+Você pode personalizar a consulta para buscar as instâncias de cartas salvas. Neste exemplo, estou consultando a instância da carta salva por &quot;admin&quot;.
 
 ```java
     public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {

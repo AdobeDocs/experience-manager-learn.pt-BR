@@ -1,6 +1,6 @@
 ---
-title: Exibir Documento de Registro em Linha
-description: Mesclar dados de formulário adaptáveis com o modelo XDP e exibir o PDF em linha usando a API pdf de incorporação da nuvem de documentos.
+title: Exibir documento de registro em linha
+description: Mescle dados de formulário adaptáveis com o modelo XDP e exiba o PDF em linha usando a API de pdf incorporada da Document Cloud.
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -12,25 +12,25 @@ last-substantial-update: 2021-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Exibir DoR em linha
 
-Um caso de uso comum é exibir um documento pdf com os dados inseridos pelo usuário.
+Um caso de uso comum é exibir um documento pdf com os dados inseridos pelo preenchimento de formulário.
 
-Para realizar esse caso de uso, utilizamos a variável [API de incorporação do Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para realizar esse caso de uso, utilizamos o [API incorporada do Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 As etapas a seguir foram executadas para concluir a integração
 
 ## Criar componente personalizado para exibir o PDF em linha
 
-Um componente personalizado (embed-pdf) foi criado para incorporar o pdf retornado pela chamada de POST.
+Um componente personalizado (pdf incorporado) foi criado para incorporar o pdf retornado pela chamada POST.
 
 ## Biblioteca do cliente
 
-O código a seguir é executado quando a função `viewPDF` é clicado. Passamos os dados do formulário adaptável, o nome do modelo para o endpoint para gerar o pdf. O pdf gerado é exibido ao usuário usando a biblioteca de JavaScript embed pdf .
+O código a seguir é executado quando a variável `viewPDF` botão de caixa de seleção for clicado. Passamos os dados do formulário adaptável, o nome do modelo, para o endpoint para gerar o pdf. O pdf gerado é exibido no preenchimento de formulário usando a biblioteca JavaScript embed pdf.
 
 ```javascript
 $(document).ready(function() {
@@ -84,8 +84,8 @@ $(document).ready(function() {
 
 ## Gerar dados de amostra para o XDP
 
-* Abra o XDP no designer do AEM Forms.
-* Clique em Arquivo | Propriedades do formulário | Pré-visualização
+* Abra o XDP no AEM Forms Designer.
+* Clique em Arquivo | Propriedades do formulário | Visualização
 * Clique em Gerar dados de visualização
 * Clique em Gerar
 * Forneça um nome de arquivo significativo, como &quot;form-data.xml&quot;
@@ -96,27 +96,27 @@ Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](h
 
 ## Fazer upload do modelo
 
-Certifique-se de fazer upload do modelo xdp para [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uso do botão criar
+Certifique-se de fazer upload do modelo xdp em [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uso do botão criar
 
 
 ## Criar formulário adaptável
 
 Crie um formulário adaptável com base no XSD da etapa anterior.
-Adicione uma nova guia ao adaptador. Adicionar um componente de caixa de seleção e embed-pdf a esta guia Certifique-se de nomear o viewPDF da caixa de seleção.
-Configure o componente embed-pdf, conforme mostrado na captura de tela abaixo
+Adicione uma nova guia ao adaptável. Adicione um componente de caixa de seleção e um componente pdf incorporado a esta guia. Nomeie a caixa de seleção como viewPDF.
+Configure o componente de pdf incorporado como mostrado na captura de tela abaixo
 ![embed-pdf](assets/embed-pdf-configuration.png)
 
 **Incorporar chave de API do PDF** - Essa é a chave que você pode usar para incorporar o pdf. Essa chave só funcionará com localhost. Você pode criar [sua própria chave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associá-lo a outro domínio.
 
-**Endpoint que retorna o pdf** - Este é o servlet personalizado que mesclará os dados com o modelo xdp e retornará o pdf.
+**Endpoint que retorna o pdf** - Esse é o servlet personalizado que mesclará os dados com o modelo xdp e retornará o pdf.
 
-**Nome do modelo** - Este é o caminho para o xdp. Normalmente, é armazenado na pasta formsanddocuments .
+**Nome do modelo** - Este é o caminho para o xdp. Normalmente, ele é armazenado na pasta formulários e documentos.
 
-**Nome do arquivo PDF** - Essa é a string que aparecerá no componente pdf incorporado.
+**Nome do arquivo PDF** - Esta é a sequência de caracteres que aparecerá no componente de pdf incorporado.
 
 ## Criar servlet personalizado
 
-Um servlet personalizado foi criado para unir os dados ao modelo XDP e retornar o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [incorporar pacote pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Um servlet personalizado foi criado para mesclar os dados com o modelo XDP e retornar o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [pacote embpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -222,15 +222,15 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 ```
 
 
-## Implante a amostra no servidor
+## Implantar a amostra no servidor
 
-Para testar isso em seu servidor local, siga as seguintes etapas:
+Para testar isso no servidor local, siga as seguintes etapas:
 
-1. [Baixe e instale o pacote embpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
-Isso tem o servlet para unir os dados ao modelo XDP e fazer o stream do pdf de volta.
-1. Adicione o caminho /bin/getPDFToEmbed na seção de caminhos excluídos do Filtro CSRF do Adobe Granite usando o [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Em seu ambiente de produção, é recomendável usar o [Estrutura de proteção do CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
-1. [Importe a biblioteca do cliente e o componente personalizado](assets/embed-pdf.zip)
-1. [Importar o formulário adaptável e o modelo](assets/embed-pdf-form-and-xdp.zip)
+1. [Baixe e instale o pacote incorporado de PDF](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+Ele tem o servlet para unir os dados ao modelo XDP e transmitir o pdf de volta.
+1. Adicione o caminho /bin/getPDFToEmbed na seção caminhos excluídos do Filtro CSRF do Adobe Granite usando o [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). No seu ambiente de produção, é recomendável usar o [Estrutura de proteção CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. [Importar a biblioteca do cliente e o componente personalizado](assets/embed-pdf.zip)
+1. [Importar o formulário e o modelo adaptáveis](assets/embed-pdf-form-and-xdp.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
-1. Preencha alguns campos de formulário
-1. Toque na guia Exibir PDF. Marque a caixa de seleção exibir pdf . Você deve ver um pdf exibido no formulário preenchido com os dados do formulário adaptável
+1. Preencha alguns dos campos de formulário
+1. Vá até a guia View PDF. Marque a caixa de seleção exibir pdf. Você deve ver um pdf exibido no formulário preenchido com os dados do formulário adaptável

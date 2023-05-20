@@ -1,6 +1,6 @@
 ---
 title: Check-in Check-out
-description: O Adobe Asset Link permite que você faça check-out do AEM Assets diretamente do aplicativo criativo no qual você está trabalhando e pode começar a fazer edições imediatamente. Você pode fazer check-in facilmente de ativos de volta no AEM Assets com o controle de versão e comentários adequados depois de terminar de editá-los no aplicativo Creative Cloud.
+description: O Adobe Asset Link permite que você faça check-out do AEM Assets diretamente do aplicativo criativo no qual você está trabalhando, e é possível fazer edições imediatamente. Você pode facilmente devolver ativos ao AEM Assets com o controle de versão e comentários adequados depois de terminar de editá-los no aplicativo Creative Cloud.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Check-in Check-out {#check-in-check-out}
 
-O Adobe Asset permite que você faça check-out do AEM Assets diretamente do aplicativo criativo no qual você está trabalhando e pode começar a fazer edições imediatamente. Você pode fazer check-in facilmente de ativos de volta no AEM Assets com o controle de versão e comentários adequados depois de terminar de editá-los no aplicativo Creative Cloud.
+O Adobe Asset permite que você faça check-out do AEM Assets diretamente do aplicativo criativo no qual você está trabalhando, e é possível fazer edições imediatamente. Você pode facilmente devolver ativos ao AEM Assets com o controle de versão e comentários adequados depois de terminar de editá-los no aplicativo Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)

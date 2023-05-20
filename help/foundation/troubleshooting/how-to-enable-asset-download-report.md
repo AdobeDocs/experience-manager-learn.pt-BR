@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Como ativar o Relatório de download de ativos
+# Como habilitar o relatório de download de ativos
 
 *Este vídeo aborda as etapas para ativar o relatório de download de ativos.*
 

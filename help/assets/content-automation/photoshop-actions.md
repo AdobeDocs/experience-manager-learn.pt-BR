@@ -1,6 +1,6 @@
 ---
-title: Ações do Photoshop usando a automação de conteúdo do AEM Assets
-description: Saiba como os autores de conteúdo podem executar ações do Photoshop no AEM Assets usando APIs do Creative Cloud com o complemento de automação de conteúdo.
+title: Ações do Photoshop usando a Automação de conteúdo do AEM Assets
+description: Saiba como os autores de conteúdo podem executar ações do Photoshop no AEM Assets usando APIs Creative Cloud com o complemento de automação de conteúdo.
 version: Cloud Service
 topic: Content Management
 feature: Asset Processing, Renditions
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Ações do Photoshop
 
-Saiba como os autores de conteúdo podem executar ações do Photoshop no AEM Assets usando APIs do Creative Cloud com o complemento de automação de conteúdo.
+Saiba como os autores de conteúdo podem executar ações do Photoshop no AEM Assets usando APIs Creative Cloud com o complemento de automação de conteúdo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336539?quality=12&learn=on)

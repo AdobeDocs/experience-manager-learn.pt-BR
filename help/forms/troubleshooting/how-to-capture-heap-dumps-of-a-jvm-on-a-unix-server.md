@@ -1,6 +1,6 @@
 ---
 title: Como capturar despejos de heap de uma JVM em um servidor unix
-description: Capture os despejos de heap da execução do processo Java em um servidor unix
+description: Capturar os despejos de pilha da execução do processo Java em um servidor unix
 type: Troubleshooting
 role: Admin
 level: Intermediate

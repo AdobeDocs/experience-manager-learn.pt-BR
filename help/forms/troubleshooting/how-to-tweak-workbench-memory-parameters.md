@@ -1,6 +1,6 @@
 ---
-title: Como ajustar os parâmetros de memória do Workbench
-description: Etapas para ajustar os parâmetros da memória do Workbench
+title: Como ajustar parâmetros de memória do Workbench
+description: Etapas para ajustar parâmetros de memória do Workbench
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como ajustar os parâmetros de memória do Workbench
+# Como ajustar parâmetros de memória do Workbench
 
-*Este vídeo aborda o processo para ajustar os parâmetros de memória do Workbench .*
+*Este vídeo aborda o processo de ajuste dos parâmetros de memória do Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335509?quality=12&learn=on)

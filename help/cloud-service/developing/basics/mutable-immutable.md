@@ -1,6 +1,6 @@
 ---
-title: O que é conteúdo mutável e imutável AEM as a Cloud Service?
-description: Explore como os repositórios e pacotes usam conteúdo mutável e imutável e por que ele é importante AEM as a Cloud Service.
+title: O que é conteúdo mutável e imutável no AEM as a Cloud Service?
+description: Explore como os repositórios e pacotes usam conteúdo mutável e imutável e por que ele é importante no AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 10%
 
 ---
 
-# Conteúdo variável e imutável
+# Conteúdo mutável e imutável
 
-Saiba mais sobre a importância e as diferenças do [conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) no AEM as a Cloud e como isso afeta o seu desenvolvimento.
+Saiba mais sobre a importância e as diferenças do [conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) no AEM as a Cloud e como isso afeta a maneira como você se desenvolve.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

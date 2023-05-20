@@ -1,6 +1,6 @@
 ---
-title: Criar modelo AF
-description: Criar um modelo AF e associá-lo ao componente de renderização da página
+title: Criar modelo de AF
+description: Criar um modelo de AF e associá-lo ao componente de renderização da página
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -20,20 +20,20 @@ ht-degree: 2%
 
 ---
 
-# Criar modelo AF
+# Criar modelo de AF
 
-Criaremos um novo modelo de Formulário adaptável para a finalidade deste tutorial. Um novo componente de página também foi criado e associado a esse modelo. O JSP no componente de página busca dados do banco de dados MySql que é usado para preencher previamente o formulário adaptável.
+Criaremos um novo modelo de formulário adaptável para a finalidade deste tutorial. Um novo componente de página também foi criado e associado a este modelo. O JSP no componente Página busca dados do banco de dados MySql que são usados para preencher previamente o formulário adaptável.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[Você pode seguir este artigo para entender o processo de criação de um modelo de formulário adaptável e um componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[Siga este artigo para entender o processo de criação de um modelo de formulário adaptável e um componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
 ## Assets
 
-O modelo e o componente de página usado neste tutorial podem ser [baixado aqui](assets/sign-multiple-forms-template.zip)
+O modelo e o componente de página usados neste tutorial podem ser [baixado aqui](assets/sign-multiple-forms-template.zip)
 
 ## Próximas etapas
 
-[Selecione os formulários a serem assinados pelo usuário](./create-initial-form.md)
+[Selecionar os formulários a serem assinados pelos usuários](./create-initial-form.md)

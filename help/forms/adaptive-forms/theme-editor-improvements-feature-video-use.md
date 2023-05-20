@@ -1,6 +1,6 @@
 ---
-title: Melhorias no Editor de Temas no AEM Forms
-description: Melhorias no Editor de Temas para formulários adaptáveis no AEM 6.3
+title: Melhorias no editor de temas no AEM Forms
+description: Melhorias no Editor de temas para formulários adaptáveis no AEM 6.3
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ---
 
-# Melhorias no Editor de Temas no AEM Forms{#theme-editor-improvements-in-aem-forms}
+# Melhorias no editor de temas no AEM Forms{#theme-editor-improvements-in-aem-forms}
 
-Melhorias no Editor de Temas para formulários adaptáveis no AEM 6.3
+Melhorias no Editor de temas para formulários adaptáveis no AEM 6.3
 
 >[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
 
 >[!NOTE]
 >
->Este recurso está disponível somente a partir do AEM 6.3.
+>Esse recurso está disponível somente a partir do AEM 6.3.

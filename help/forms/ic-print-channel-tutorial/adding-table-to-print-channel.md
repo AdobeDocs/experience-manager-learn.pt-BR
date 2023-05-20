@@ -1,7 +1,7 @@
 ---
 title: Adicionar tabela à seção de contribuições
 seo-title: Adding table to contributions section
-description: Esta é a parte 9 do tutorial de várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
+description: Esta é a parte 9 do tutorial em várias etapas para criar seu primeiro documento de comunicação interativa.Nesta parte, adicionaremos uma tabela à seção contribuições.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
@@ -26,19 +26,19 @@ ht-degree: 1%
 
 # Adicionar tabela à seção de contribuições
 
-Nesta parte, adicionaremos uma tabela à seção contribuições.
-Consulte [Uso de tabelas no canal de impressão](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obter mais detalhes sobre o uso de tabelas no documento de canal de impressão.
+Nesta parte, adicionaremos uma tabela à seção de contribuições.
+Consulte [Uso de Tabelas no Canal de Impressão](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) para obter mais detalhes sobre o uso de tabelas no documento de canal de impressão.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e documentos.
 
 Abra a pasta 401KStatementPrint.
 
 Abra o 401KStatementPrint no modo de edição.
 
-O vídeo a seguir apresenta as etapas envolvidas na configuração de uma tabela no documento do canal de impressão.
+O vídeo a seguir mostra as etapas envolvidas na configuração de uma tabela no documento do canal de impressão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
 ## Próximas etapas
 
-[Usar pasta assistida para gerar documento de canal de impressão](./using-watched-folder-to-generate-document.md)
+[Usar pasta monitorada para gerar documento de canal de impressão](./using-watched-folder-to-generate-document.md)

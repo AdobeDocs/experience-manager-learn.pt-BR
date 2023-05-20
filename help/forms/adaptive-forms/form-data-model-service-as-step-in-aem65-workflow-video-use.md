@@ -1,6 +1,6 @@
 ---
-title: Uso do serviço do Modelo de dados de formulário como etapa AEM fluxo de trabalho 6.5
-description: O AEM Forms 6.5 apresentou a capacidade de criar variáveis no Fluxo de trabalho do AEM. Com esse novo recurso usando o "Invoke Form Data Model Service" em AEM fluxo de trabalho, ficou muito fácil. O vídeo a seguir guiará você pelas etapas envolvidas no uso do Invoke Form Data Model Service em AEM fluxo de trabalho.
+title: Utilização do serviço de modelo de dados de formulário como etapa no fluxo de trabalho do AEM 6.5
+description: O AEM Forms 6.5 apresentou a capacidade de criar variáveis no workflow AEM. Com esse novo recurso, usar o "Serviço de modelo de dados de formulário de chamada" no fluxo de trabalho do AEM ficou muito fácil. O vídeo a seguir o guiará pelas etapas relativas ao uso do serviço Chamar modelo de dados de formulário no fluxo de trabalho do AEM.
 feature: Workflow
 type: Tutorial
 version: 6.5
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# Uso do serviço do Modelo de dados de formulário como etapa AEM fluxo de trabalho 6.5 {#using-form-data-model-service-as-step-in-workflow}
+# Utilização do serviço de modelo de dados de formulário como etapa no fluxo de trabalho do AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
 
-A partir do AEM Forms 6.4, agora temos a capacidade de usar o Serviço do Modelo de dados de formulário como parte AEM fluxo de trabalho. O vídeo a seguir apresenta as etapas necessárias para configurar a etapa Modelo de dados de formulário AEM fluxo de trabalho
+A partir do AEM Forms 6.4, agora temos a capacidade de usar o Serviço de modelo de dados de formulário como parte do fluxo de trabalho do AEM. O vídeo a seguir aborda as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM
 
 >!![NOTE]O recurso demonstrado neste vídeo requer o AEM Forms 6.5.1
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
 
-Para testar esse recurso em seu servidor, siga as instruções abaixo
+Para testar esse recurso no servidor, siga as instruções abaixo
 
-* Configure o tomcat com o arquivo SampleRest.war conforme descrito [here](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato.A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure o tomcat com o arquivo SampleRest.war conforme descrito [aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
-* [ Importe os ativos no AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
+* [ Importar os ativos para o AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
 * O pacote contém o seguinte:
 
    * Modelo de fluxo de trabalho que usa a etapa FDM.
-   * Modelo de dados de formulário usado na etapa FDM.
+   * Modelo de dados de formulário usado na etapa do FDM.
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
-* Abra o [FormulárioDeAplicaçãoDeHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, a variável [fluxo de trabalho loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
+* Abra o [FormuláriodeInscriçãoHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, a variável [workflow de aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
 ![ fluxo de trabalho ](assets/invokefdm651.PNG).
-O workflow utiliza o componente Ou Dividir para direcionar o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, o aplicativo é roteado para cavery.
+O fluxo de trabalho utiliza o componente Ou divisão para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, a aplicação será encaminhada para cavery.

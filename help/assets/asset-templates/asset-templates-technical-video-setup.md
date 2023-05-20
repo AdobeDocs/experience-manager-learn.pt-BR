@@ -1,6 +1,6 @@
 ---
-title: Configurar modelos de ativos com AEM Assets e InDesign Server
-description: Os Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marketing, cartões comerciais, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos quando integrado ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
+title: Configurar modelos de ativos com o AEM Assets e o InDesign Server
+description: Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão e digitais. A criação de folhetos de marketing, cartões de visita, folhetos, anúncios e cartões-postais é muito mais fácil com os Modelos de ativos quando integrados ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 ---
 
-# Configurar modelos de ativos com AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
+# Configurar modelos de ativos com o AEM Assets e o InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
-Os Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão digital. A criação de folhetos de marketing, cartões comerciais, panfletos, anúncios e cartões de postagem é muito mais fácil com Modelos de ativos quando integrado ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
+Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão e digitais. A criação de folhetos de marketing, cartões de visita, folhetos, anúncios e cartões-postais é muito mais fácil com os Modelos de ativos quando integrados ao servidor do InDesign. A configuração do servidor InDesign com AEM é abordada nesta seção.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM **must** ser conectado a um servidor do InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor InDesign.
+>AEM **deve** estar conectado a um servidor InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor do InDesign.
 
 ## Baixar avaliação do InDesign Server {#download-indesign-server-trial}
 
 Baixar [Site de download de avaliação do InDesign Server](https://www.adobeprerelease.com/)
 
-## Iniciando o InDesign Server {#starting-indesign-server}
+## InDesign Server inicial {#starting-indesign-server}
 
 ```shell
 # macOS command

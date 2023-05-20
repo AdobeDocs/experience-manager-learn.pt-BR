@@ -1,6 +1,6 @@
 ---
 title: Etapas para ajustar parâmetros no console JMX
-description: Configurar parâmetros do Console JMX
+description: Configurar parâmetros do console JMX
 type: Troubleshooting
 role: Developer
 level: Intermediate

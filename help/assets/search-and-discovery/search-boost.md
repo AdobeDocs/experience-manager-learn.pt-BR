@@ -1,6 +1,6 @@
 ---
 title: O que é o Aumento de pesquisa no AEM Assets?
-description: Saiba como adicionar palavras-chave e frases para aumentar a relevância de pesquisa de um ativo no Adobe Experience Manager.
+description: Saiba como adicionar palavras-chave e frases para aumentar a relevância da pesquisa de um ativo no Adobe Experience Manager.
 topic: Content Management
 feature: Search
 role: User

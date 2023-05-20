@@ -1,22 +1,23 @@
 ---
-title: Criar componente de kit de boas-vindas
-description: Crie uma página de sites de AEM com links para baixar ativos com base em dados de formulário enviados.
+title: Criar componente do kit de boas-vindas
+description: Crie uma página de sites AEM com links para baixar ativos com base nos dados de formulário enviados.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: 66496f0e-c121-4b6d-b371-084393ece3ca
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
 
 ---
 
-# Componente kit de boas-vindas
+# Componente do kit de boas-vindas
 
-Um componente de página foi criado para listar os ativos na página que podem ser baixados pelo usuário final. Os caminhos para os ativos individuais são salvos em uma propriedade chamada **caminhos**. Os dados de formulário enviados determinam os ativos a serem incluídos.
+Um componente Página foi criado para listar os ativos na página que podem ser baixados pelo usuário final. Os caminhos para os ativos individuais são salvos em uma propriedade chamada **caminhos**. Os dados de formulário enviados determinam os ativos a serem incluídos.
 
 O código a seguir lista os ativos na página:
 
@@ -40,6 +41,3 @@ O código a seguir lista os ativos na página:
 </sly>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!ready}"></sly>
 ```
-
-
-

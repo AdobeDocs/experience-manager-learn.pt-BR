@@ -1,6 +1,6 @@
 ---
-title: Exponha o ponto de extremidade que pode ser chamado para retornar o url do formulário web
-description: Criar AEM servlet para retornar o url do formulário web
+title: Expor endpoint que pode ser chamado para retornar a url do formulário web
+description: Criar servlet AEM para retornar o URL do formulário web
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -16,9 +16,9 @@ ht-degree: 2%
 
 ---
 
-# Criar URL de formulário da Web do Acrobat Sign
+# Criar URL do formulário web do Acrobat Sign
 
-O código a seguir foi gravado para expor um ponto de extremidade POST. Esse ponto de extremidade extrai o icTemplateName dos dados enviados e retorna um URL de formulário da Web do Acrobat Sign para o usuário final assinar.
+O código a seguir foi gravado para expor um ponto de extremidade POST. Esse endpoint extrai o icTemplateName dos dados enviados e retorna um URL de formulário web do Acrobat Sign para que o usuário final assine.
 
 
 ```java
@@ -89,5 +89,5 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 ## Próximas etapas
 
-[Implante os ativos tutoriais no sistema local](./deploy-assets-on-your-server.md)
+[Implantar os ativos do tutorial no sistema local](./deploy-assets-on-your-server.md)
 

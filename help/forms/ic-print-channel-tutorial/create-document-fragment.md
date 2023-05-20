@@ -1,6 +1,6 @@
 ---
-title: Criar fragmento do documento
-description: Esta é a parte 5 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos fragmento de documento para manter o nome e o endereço do recipient.
+title: Criação de fragmento de documento
+description: Esta é a parte 5 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos o fragmento do documento para manter o nome e o endereço do recipient.
 seo-description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address.
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
 feature: Interactive Communication
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 ---
 
-# Criar fragmento do documento
+# Criação de fragmento de documento
 
-Nesta parte, criaremos fragmento de documento para manter o nome e o endereço do recipient.
+Nesta parte, criaremos o fragmento do documento para manter o nome e o endereço do recipient.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Fragmentos de documento contêm o conteúdo de texto de documentos de comunicação interativos. Esse conteúdo de texto pode ser texto estático ou inserido a partir dos valores dos elementos subjacentes do modelo de dados. Por exemplo **Caro _{name}_**, onde Preto é texto estático e nome é o nome do elemento do modelo de dados de formulário. No tempo de execução, isso resolverá para **Caro Gloria Rios**ou **Caro John Jacobs**dependendo do valor do elemento name.
+Os fragmentos de documento contêm o conteúdo de texto de documentos de comunicação interativa. Esse conteúdo de texto pode ser um texto estático ou inserido dos valores subjacentes dos elementos do modelo de dados. Por exemplo **Prezado(a) _{name}_**, em que Dear é texto estático e name é o nome do elemento do modelo de dados de formulário. No tempo de execução, isso resolverá para **Querida Gloria Rios**ou **Caro John Jacobs**dependendo do valor do elemento name.
 
-O editor de rich text é intuitivo o suficiente para um usuário empresarial criar texto e inserir elementos de dados do formulário. O editor de fragmentos de documento tem a capacidade de formatar o texto, especificar tipos e estilos de fonte, inserir caracteres especiais e criar hiperlinks.
+O editor de rich text é intuitivo o suficiente para um usuário empresarial criar texto e inserir elementos de dados de formulário. O editor de fragmento de documento tem a capacidade de formatar texto, especificar tipos e estilos de fonte, inserir caracteres especiais e criar hiperlinks.
 
-O editor de fragmento de documento também tem a capacidade de inserir condições em linha no seu texto, conforme demonstrado neste [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+O editor de fragmento de documento também tem a capacidade de inserir condições em linha no texto, conforme demonstrado nesta [vídeo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
->Certifique-se de que os elementos do Modelo de dados de formulário inseridos em um fragmento de documento sejam descendentes do elemento raiz. Por exemplo, nesse caso de uso, verifique se os elementos do objeto Usuário selecionados são filhos do objeto de saldos
+>Verifique se os elementos do Modelo de dados de formulário inseridos em fragmentos de um documento são descendentes do elemento raiz. Por exemplo, neste caso de uso, verifique se os elementos do objeto Usuário selecionados são filhos do objeto de saldos
 
 ## Próximas etapas
 

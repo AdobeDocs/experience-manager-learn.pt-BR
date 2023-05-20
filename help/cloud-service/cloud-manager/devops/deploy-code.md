@@ -1,6 +1,6 @@
 ---
-title: Implantar projetos de código AEM para AEM as a Cloud Service
-description: Explore a implantação de um projeto de código AEM para AEM as a Cloud Service usando o Cloud Manager.
+title: Implantação de projetos de código AEM no AEM as a Cloud Service
+description: Explore a implantação de um projeto de código AEM no AEM usando o as a Cloud Service Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial

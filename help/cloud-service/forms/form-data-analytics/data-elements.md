@@ -1,6 +1,6 @@
 ---
-title: Relatar campos de dados de formulário enviados usando o Adobe Analytics
-description: Integrar o AEM Forms CS ao Adobe Analytics para criar relatórios sobre campos de dados de formulário
+title: Relatório sobre campos de dados de formulário enviados usando o Adobe Analytics
+description: Integrar o AEM Forms CS com o Adobe Analytics para criar relatórios sobre campos de dados de formulário
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -18,16 +19,16 @@ ht-degree: 0%
 
 # Criar elementos de dados apropriados
 
-Na propriedade Tags , adicionamos dois novos elementos de dados (RequerentesStateOfResidence e validationError).
+Na propriedade Tags, adicionamos dois novos elementos de dados (ApplicantsStateOfResidence e validationError).
 
-![forma adaptável](assets/data_elements.png)
+![formulário adaptável](assets/data_elements.png)
 
-## RequerenteEstadoDeResidência
+## EstadoDeResidênciaCandidato
 
-O **RequerenteEstadoDeResidência** o elemento de dados foi configurado ao selecionar **Núcleo** no menu suspenso de extensão e **Código personalizado** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
+A variável **EstadoDeResidênciaCandidato** o elemento de dados foi configurado ao selecionar **Núcleo** na lista suspensa extensão e **Custom Code** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
 ![requerente-Estado-residência](assets/applicantstateofresidence.png)
 
-O código personalizado a seguir foi usado para capturar o valor da variável **_state_** campo de formulário adaptável.
+O código personalizado a seguir foi usado para capturar o valor do **_state_** campo de formulário adaptável.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -39,9 +40,9 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-O **ValidaçãoErro** o elemento de dados foi configurado ao selecionar **Núcleo** no menu suspenso de extensão e **Código personalizado** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
+A variável **ValidationError** o elemento de dados foi configurado ao selecionar **Núcleo** na lista suspensa extensão e **Custom Code** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
 
-![erro de validação](assets/validation-error.png)
+![validation-error](assets/validation-error.png)
 
 O código personalizado a seguir foi gravado para definir o valor do elemento de dados validationError.
 

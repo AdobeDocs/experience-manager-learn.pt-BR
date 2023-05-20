@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Configuração de dados em lote
 
-A configuração de dados em lote ajuda a configurar uma instância específica do armazenamento de blobs para APIs em lote. Ele permite especificar os locais de entrada e saída no armazenamento do Microsoft Azure Blob de propriedade do cliente.
+A configuração dos dados em lote ajuda a configurar uma instância específica do armazenamento de Blob para APIs em lote. Ele permite especificar os locais de entrada e saída no armazenamento do Microsoft Azure Blob de propriedade do cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)

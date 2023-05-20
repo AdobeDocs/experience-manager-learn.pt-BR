@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Uso de modelos de dados de associação com o AEM Forms{#using-association-data-models-with-aem-forms}
 
-Criar associações entre duas entidades no Modelo de dados de formulário
+Criar associações entre 2 entidades no Modelo de dados de formulário
 
 >[!VIDEO](https://video.tv.adobe.com/v/17737?quality=12&learn=on)

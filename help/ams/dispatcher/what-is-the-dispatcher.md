@@ -1,19 +1,19 @@
 ---
 title: O que é "O Dispatcher"
-description: Entenda o que é realmente um Dispatcher.
+description: Entender o que realmente é um Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 829ad9733b4326c79b9b574b13b1d4c691abf877
+exl-id: 96c8dd09-e0a7-4abc-b04b-a805aaa67502
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
 
 ---
-
 
 # O que é &quot;O Dispatcher&quot;
 
@@ -25,32 +25,32 @@ Começando com a descrição básica do que implica um Dispatcher AEM.
 
 Comece com uma instalação básica do Apache Web Server em um servidor Linux.
 
-Explicação básica do que um servidor Apache faz:
+Explicação básica sobre o que um servidor Apache faz:
 
-- Segue regras simples para veicular arquivos através dos protocolos HTTP(s) a partir de seu diretório de documento estático (`DocumentRoot`)
-- Arquivos armazenados em um local padrão (`/var/www/html`) são correspondidos nas solicitações e renderizadas no navegador do cliente solicitante
-
-
+- Segue regras simples para distribuir arquivos pelos protocolos HTTP(s) a partir do diretório de documentos estáticos (`DocumentRoot`)
+- Arquivos armazenados em um local padrão (`/var/www/html`) são correspondidos em solicitações e renderizados no navegador do cliente solicitante
 
 
-## AEM arquivo de módulo específico (`mod_dispatcher.so`)
 
-Em seguida, adicione um plug-in ao Apache Web Server chamado o módulo Dispatcher
 
-Explicação básica do que o módulo Dispatcher do Adobe AEM faz:
+## Arquivo do módulo específico AEM (`mod_dispatcher.so`)
+
+Em seguida, adicione um plug-in ao Apache Web Server chamado de módulo Dispatcher
+
+Explicação básica sobre o que o módulo Dispatcher do Adobe AEM faz:
 
 - Aumenta o manipulador de arquivos padrão
-- Filtra solicitações incorretas / Protege AEM barriga suave/pontos finais
-- Balanceamento de carga se houver mais de um renderizador
+- Filtra solicitações incorretas/Protege a barriga macia/pontos finais do AEM
+- Balanceamentos de carga se mais de um renderizador estiver presente
 - Permite um diretório de cache dinâmico / Suporta a liberação de arquivos estagnados
-- É a porta de entrada de todas as instalações do AMS e fornece sites e ativos ao navegador do cliente
-- Armazena em cache as solicitações para reservir a uma taxa muito mais rápida do que um servidor AEM poderia realizar por conta própria
-- Muito mais...
+- É a porta de entrada para todas as instalações do AMS e fornece sites e ativos ao navegador do cliente
+- Ele armazena solicitações em cache para serem atendidas em um ritmo muito mais rápido do que um servidor AEM poderia realizar sozinho
+- Mais...
 
-## Fluxo de trabalho do tráfego da Web
+## Fluxo de trabalho de tráfego da Web
 
-Entender quais partes são instaladas juntas para criar um servidor básico do Dispatcher faz com que você entenda o fluxo de trabalho básico do tráfego na Web para uma configuração dos Serviços do Adobe Manager.
-Isso deve ajudá-lo a entender qual função ele desempenha na cadeia de sistemas que veiculam conteúdo para os visitantes de seu conteúdo AEM.
+Entender quais partes são instaladas juntas para criar um servidor básico do Dispatcher nos leva a entender o fluxo de trabalho básico do tráfego da Web para uma configuração do Adobe Manager Services.
+Isso deve ajudá-lo a entender o papel que ele desempenha na cadeia de sistemas que fornecem conteúdo aos visitantes do seu conteúdo AEM.
 
 <b>Veiculação de conteúdo já armazenado em cache</b>
 
@@ -63,7 +63,7 @@ End User's Browser request
                     → End User
 ```
 
-<b>Veiculação de conteúdo novo do AEM</b>
+<b>Disponibilização de conteúdo novo a partir do AEM</b>
 
 ```
 End User's Browser request 

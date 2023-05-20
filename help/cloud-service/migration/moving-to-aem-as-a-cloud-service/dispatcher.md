@@ -1,6 +1,6 @@
 ---
-title: Configuração do Dispatcher ao mover-se para AEM as a Cloud Service
-description: Saiba mais sobre alterações importantes no AEM Dispatcher para AEM as a Cloud Service, na ferramenta de conversão do Dispatcher e como usar o SDK de Ferramentas do Dispatcher.
+title: Configuração do Dispatcher ao migrar para o AEM as a Cloud Service
+description: Saiba mais sobre alterações notáveis no AEM Dispatcher para AEM as a Cloud Service, a ferramenta de conversão do Dispatcher e como usar o SDK de ferramentas do Dispatcher.
 version: Cloud Service
 feature: Dispatcher
 topic: Migration, Upgrade
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # Dispatcher
 
-Saiba mais sobre AEM Dispatcher para AEM as a Cloud Service, com foco nas alterações importantes do Dispatcher para AEM 6, na ferramenta de conversão do Dispatcher e em como usar o SDK de Ferramentas do Dispatcher.
+Saiba mais sobre o AEM Dispatcher para AEM as a Cloud Service, com foco em alterações notáveis do Dispatcher para AEM 6, a ferramenta de conversão do Dispatcher e como usar o SDK de ferramentas do Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
@@ -27,7 +27,7 @@ Saiba mais sobre AEM Dispatcher para AEM as a Cloud Service, com foco nas altera
 
 ![Conversor do Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Como parte da refatoração da base de código, use o [Conversor do Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refatorar as configurações existentes no local ou do Adobe Managed Services Dispatcher para AEM a configuração as a Cloud Service compatível do Dispatcher.
+Como parte da refatoração de sua base de código, use o [Conversor do Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refatorar as configurações existentes no local ou do Dispatcher do Adobe Managed Services para a configuração do Dispatcher compatível com o AEM as a Cloud Service.
 
 ## Atividades principais
 
@@ -37,15 +37,15 @@ Como parte da refatoração da base de código, use o [Conversor do Dispatcher d
 
 ## Exercício prático
 
-Aplique o seu conhecimento experimentando o que aprendeu com este exercício prático.
+Aplique seu conhecimento experimentando o que você aprendeu com este exercício prático.
 
-Antes de experimentar o exercício prático, certifique-se de ter assistido e compreendido o vídeo acima e os seguintes materiais:
+Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
 + [Ferramentas de Modernização do AEM](./aem-modernization-tools.md)
 + [Integração](./onboarding.md)
 + [Cloud Manager](./cloud-manager.md)
 
-Além disso, certifique-se de que concluiu o exercício prático anterior:
+Além disso, verifique se você concluiu o exercício prático anterior:
 
 + [Exercício prático do Cloud Manager](./cloud-manager.md#hands-on-exercise)
 
@@ -54,13 +54,13 @@ Além disso, certifique-se de que concluiu o exercício prático anterior:
         <td style="width:150px">
             <a  rel="noreferrer"
                 target="_blank"
-                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session5-dispatcher#cloud-acceleration-bootcamp---session-5-dispatcher"><img alt="Repositório GitHub de exercício manual" src="./assets/github.png"/>
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session5-dispatcher#cloud-acceleration-bootcamp---session-5-dispatcher"><img alt="Repositório GitHub de exercícios práticos" src="./assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Mão com Ferramentas do Dispatcher</div>
+            <div style="font-size:1.25rem;font-weight:400;">Práticas com ferramentas do Dispatcher</div>
             <p style="margin:1rem 0">
-                Explore o uso das Ferramentas do Dispatcher do SDK AEM para validar as configurações do Dispatcher, além de executar AEM Dispatcher localmente usando o Docker.
+                Explore o usando as Ferramentas do Dispatcher do SDK do AEM para validar as configurações do Dispatcher, bem como executar o AEM Dispatcher localmente usando o Docker.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

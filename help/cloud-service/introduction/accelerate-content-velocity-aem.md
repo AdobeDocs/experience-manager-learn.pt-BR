@@ -1,6 +1,6 @@
 ---
 title: Acelere a velocidade do conteúdo com sistemas de estilo AEM
-description: Saiba como usar AEM Style Systems para capacitar designers, autores de conteúdo e desenvolvedores em sua organização a criar e fornecer experiências na velocidade e escala que seus clientes esperam.
+description: Saiba como usar Sistemas de estilo AEM para capacitar designers, autores de conteúdo e desenvolvedores em sua organização a criar e fornecer experiências na velocidade e escala que seus clientes esperam.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
@@ -16,24 +16,24 @@ Neste artigo, você aprenderá a usar sistemas de estilo AEM para capacitar desi
 
 ## Visão geral
 
-AEM Style Systems tem quatro benefícios principais:
+Sistemas de estilo AEM têm quatro benefícios principais:
 
-* Os autores de modelos podem definir classes de estilo na política de conteúdo de um componente ou página
+* Os autores dos modelos podem definir classes de estilo na política de conteúdo de um componente ou página
 * Os autores de conteúdo podem selecionar estilos para aplicar a uma página inteira ou ao editar um componente em uma página
-* Os componentes e modelos são mais flexíveis ao permitir que os autores renderizem variações visuais alternativas
-* A necessidade de desenvolver um componente personalizado e/ou caixas de diálogo complexas para apresentar variações de componentes é reduzida ou totalmente eliminada
+* Os componentes e modelos se tornam mais flexíveis, permitindo que os autores renderizem variações visuais alternativas
+* A necessidade de desenvolver um componente personalizado e/ou caixas de diálogo complexas para apresentar variações de componentes é reduzida ou completamente eliminada
 
-## Configuração inicial e uso
+## Configuração e uso iniciais
 
-A configuração de 5 etapas é muito semelhante a um fluxo de trabalho de desenvolvimento de componente padrão.
+A configuração de 5 etapas é muito semelhante a um fluxo de trabalho padrão de desenvolvimento de componentes.
 
-| **Liderança** | **Designer** | **Desenvolvedor/Arquiteto** | **Autor do modelo** | **Autor de conteúdo** |
+| **Liderança** | **Designer** | **Desenvolvedor / Arquiteto** | **Autor do modelo** | **Autor de conteúdo** |
 | --- | --- | --- | --- | --- |
-| Determina o conteúdo e os objetivos desse componente | Determina a apresentação visual e experimental do conteúdo | Desenvolve CSS e JS para oferecer suporte à experiência; define e fornece nomes de classe a serem usados | Configura políticas de modelo para componentes estilizados adicionando nomes de classe CSS definidos por desenvolvedores. Nomes amigáveis devem ser usados para cada estilo. | Ao criar páginas, aplica estilos conforme necessário para atingir a aparência desejada |
+| Determina o conteúdo e os objetivos desse componente | Determina a apresentação visual e experimental do conteúdo | Desenvolve CSS e JS para oferecer suporte à experiência; define e fornece nomes de classe a serem usados | Configura as políticas do modelo para componentes estilizados, adicionando nomes de classe CSS definidos pelos desenvolvedores. Nomes amigáveis devem ser usados para cada estilo. | Ao criar páginas, o aplica estilos conforme necessário para atingir a aparência desejada |
 
-Embora essa seja a configuração inicial, muitos de nossos clientes tiveram agilidade adicional ao simplificar esse processo, por exemplo, ao fazer upload de seu CSS no DAM, o que permite atualizações em estilos sem a necessidade de implantação. Outros clientes têm um conjunto completo de classes de utilitários, o que permite desenvolver componentes e estilos que podem ser aproveitados sem implantação ou desenvolvimento.
+Embora essa seja a configuração inicial, muitos de nossos clientes obtiveram agilidade adicional simplificando esse processo, por exemplo, carregando o CSS no DAM, o que permite atualizações de estilos sem a necessidade de implantação. Outros clientes têm um conjunto completo de classes de utilitários, o que permite desenvolver componentes e estilos que podem ser aproveitados sem implantação ou desenvolvimento.
 
-Os sistemas de estilos apresentam alguns tipos diferentes:
+Os sistemas de estilo têm alguns sabores diferentes:
 
 1. Estilos de layout
 
@@ -41,10 +41,10 @@ Os sistemas de estilos apresentam alguns tipos diferentes:
 
    * Usado para representação bem definida e identificável
 
-1. Exibir estilos
+1. Estilos de exibição
    * Pequenas variações que não alteram a natureza fundamental do estilo
 
-   * Por exemplo, alteração do esquema de cores, fonte, orientação da imagem etc.
+   * Por exemplo, alterar o esquema de cores, a fonte, a orientação da imagem etc.
 
 1. Estilos informativos
 
@@ -52,44 +52,44 @@ Os sistemas de estilos apresentam alguns tipos diferentes:
 
 >[!NOTE]
 >
->Para uma demonstração desses recursos, recomendamos assistir ao [Webinário de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
+>Para ver uma demonstração desses recursos, recomendamos assistir nossa [Webinário de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
 
 ## Práticas recomendadas
 
 * Solidificar primeiro o estilo padrão
-   * Layout e exibição do componente quando solto na página antes da aplicação de sistemas de estilos
-   * Essa deve ser a representação mais usada
-* Tente mostrar apenas as opções de estilo que têm um efeito quando possível
-   * Se as combinações ineficazes estiverem expostas, certifique-se de que não causam efeitos negativos
-   * Por exemplo, um estilo de layout que determina a posição da imagem e é acompanhado por um estilo de exibição ineficaz que controla a posição da imagem
+   * Layout e exibição do componente quando solto na página antes da aplicação de sistemas de estilo
+   * Esta deve ser a representação mais usada
+* Tentar mostrar apenas as opções de estilo que têm efeito quando possível
+   * Se combinações ineficazes forem expostas, certifique-se de que elas não causem efeitos negativos
+   * Por exemplo, Um estilo de layout que determina a posição da imagem e é acompanhado por um estilo de exibição ineficiente que controla a posição da imagem
 * Optar por estilos de layout em vez de estilos de exibição combinados
-   * Reduz o número de permutas que devem ser verificadas por qualidade
-   * Garante o cumprimento dos padrões da marca
+   * Reduz o número de permutas que devem ser verificadas em relação à qualidade
+   * Garante que os padrões da marca sejam seguidos
    * Simplifica a criação para autores de conteúdo
-   * Ajuda a criar uma identidade de marca de site consistente
+   * Ajuda a criar uma identidade consistente da marca do site
 * Seja conservador com estilos combinados
-   * Em todas as categorias e dentro delas
-* Aloque o tempo adequado para testar estilos combinados completamente
+   * Tanto em categorias quanto dentro de categorias
+* Aloque tempo adequado para testar completamente os estilos combinados
    * Ajuda a evitar efeitos indesejáveis
-* Minimize o número de opções e permutas de estilo
-   * Muitas opções podem levar à falta de consistência da marca para aparência e comportamento
-   * Pode causar confusão para os autores de conteúdo em que as combinações são necessárias para atingir o efeito desejado
-   * Aumenta as permutas que devem ser verificadas por qualidade
-* Usar rótulos e categorias de estilo comerciais amigáveis ao usuário
-   * &quot;Azul&quot; e &quot;Vermelho&quot; em vez de &quot;Primário&quot; e &quot;Secundário
-   * &quot;Cartão&quot; e &quot;Herói&quot; em vez de &quot;Variação A&quot; e &quot;Variação B&quot;
-   * Tal pode ser mais generalista para alguns clientes; a equipe de design, a equipe de negócios e a equipe de conteúdo estão familiarizadas com as cores primárias e secundárias ou com que variações estão testando. Mas, para a flexibilidade e para qualquer potencial de mudanças futuras, a utilização de termos específicos pode ser mais eficiente.
+* Minimizar o número de opções e permutas de estilo
+   * Muitas opções podem levar à falta de consistência da marca para aparência
+   * Pode causar confusão para os autores de conteúdo sobre quais combinações são necessárias para alcançar o efeito desejado
+   * Aumenta as permutações que devem ser verificadas quanto à qualidade
+* Usar rótulos e categorias de estilo amigáveis para empresas
+   * &quot;Azul&quot; e &quot;Vermelho&quot; em vez de &quot;Primário&quot; e &quot;Secundário&quot;
+   * &quot;Card&quot; e &quot;Hero&quot; em vez de &quot;Variation A&quot; e &quot;Variation B&quot;
+   * Isso pode ser mais uma generalidade para alguns clientes; a equipe de design, a equipe de negócios e a equipe de conteúdo estão muito familiarizadas com o que são suas cores primária e secundária ou quais variações estão testando. Mas para flexibilidade e qualquer potencial para mudanças futuras, usar termos específicos pode ser mais eficiente.
 
-## Capturas de chave
+## Principais aprendizados
 
-Os sistemas de estilos reduzem a necessidade de caixas de diálogo complexas, mas não são uma substituição de caixa de diálogo. Eles ajudam a simplificar as coisas, mas pode haver alguns casos em que você deseja usar as propriedades do componente ou a caixa de diálogo, em vez de criar um sistema de estilos para ele.
+Sistemas de estilo reduzem a necessidade de diálogos complexos, mas não são uma substituição de diálogo. Eles ajudam a simplificar as coisas, mas pode haver alguns casos em que você deseje usar propriedades de componentes ou caixas de diálogo em vez de criar um sistema de estilos para elas.
 
-Eles podem simplificar processos de uma perspectiva de desenvolvimento. Você pode obter várias aparências do mesmo conteúdo com um sistema de estilos. Da mesma forma, de uma perspectiva de criação, em vez de treinar autores e autores que precisam lembrar qual componente usar em qual palácio, você pode acelerar a velocidade de criação.
+Eles podem simplificar os processos de uma perspectiva de desenvolvimento. Você pode obter várias aparências do mesmo conteúdo com um sistema de estilo. Da mesma forma, de uma perspectiva de criação, em vez de treinar autores, e autores tendo que lembrar qual componente usar em qual palácio, você pode acelerar a velocidade de criação.
 
-As coisas são simplesmente mais limpas. A HTML dentro dos componentes principais é altamente detalhada. Fazer tudo isso no nível de CSS torna as criações do componente mais rápidas e o código também é mais limpo.
+As coisas estão simplesmente mais limpas. O HTML dos componentes principais é altamente explícito. Fazer tudo isso no nível CSS torna as criações do componente mais rápidas e o código também fica mais limpo.
 
-Por fim, o uso de Sistemas de Estilo é mais arte do que ciência. Conforme discutimos, há várias práticas recomendadas, mas você terá flexibilidade para personalizar a configuração de sua organização.
+Finalmente, o uso de sistemas de estilo é mais arte do que ciência. Conforme discutimos, há várias práticas recomendadas, mas você terá flexibilidade em como personalizar a configuração da sua organização.
 
-Para obter mais informações, consulte nossa [Webinar de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
+Para obter mais informações, consulte nosso [Webinário de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
 
-Saiba mais sobre estratégia e liderança de pensamento no [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) cubo.
+Saiba mais sobre estratégia e liderança de pensamento na [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

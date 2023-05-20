@@ -1,6 +1,6 @@
 ---
-title: Como aumentar "aries.transaction.timeout" para solucionar problemas relacionados à conversão de arquivos grandes
-description: Etapas para aumentar o "aries.transaction.timeout" para conversão de arquivos grandes
+title: Como aumentar "aries.transaction.timeout" para resolver os problemas relacionados à conversão de arquivos grandes
+description: Etapas para aumentar "aries.transaction.timeout" para a conversão de arquivos grandes
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como aumentar &quot;aries.transaction.timeout&quot; para solucionar problemas relacionados à conversão de arquivos grandes
+# Como aumentar &quot;aries.transaction.timeout&quot; para resolver os problemas relacionados à conversão de arquivos grandes
 
-*Este vídeo aborda o processo de aumentar &quot;aries.transaction.timeout&quot; para solucionar os problemas relacionados à conversão de arquivos grandes.*
+*Este vídeo aborda o processo de aumentar &quot;aries.transaction.timeout&quot; para resolver problemas relacionados à conversão de arquivos grandes.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335502?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Painel de pesquisa do administrador de ativos
-description: O painel de pesquisa do administrador de Ativos permite que os ativos sejam pesquisados usando critérios personalizados no Omnisearch.
+description: O painel de pesquisa do administrador de ativos permite que os ativos sejam pesquisados usando critérios personalizados no Omnisearch.
 sub-product: Experience Manager Assets
 feature: Search
 version: Cloud Service
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Painel de pesquisa do administrador de ativos
 
-O painel de pesquisa do administrador de Ativos permite que os ativos sejam pesquisados usando critérios personalizados no Omnisearch.
+O painel de pesquisa do administrador de ativos permite que os ativos sejam pesquisados usando critérios personalizados no Omnisearch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)

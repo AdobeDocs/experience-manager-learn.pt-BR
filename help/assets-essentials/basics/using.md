@@ -1,5 +1,5 @@
 ---
-title: Uso do Assets Essentials
+title: Utilização do Assets Essentials
 description: Saiba como baixar ativos no Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Uso do Assets Essentials
+# Utilização do Assets Essentials
 
 Saiba como filtrar, pesquisar e baixar ativos no Assets Essentials.
 

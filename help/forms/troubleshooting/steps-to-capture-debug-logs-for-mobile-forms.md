@@ -1,6 +1,6 @@
 ---
 title: Etapas para capturar logs de depuração para formulários móveis
-description: Configurar logs de depuração para problemas de depuração relacionados a formulários móveis
+description: Configurar logs de depuração para problemas de depuração relacionados aos formulários móveis
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para capturar logs de depuração para formulários móveis
 
-*Este vídeo aborda as etapas para capturar logs de depuração de formulários móveis.*
+*Este vídeo aborda as etapas para capturar logs de depuração para formulários móveis.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Filtro do aplicativo Preact
+title: Aplicativo Filtrar por preação
 description: Um aplicativo Preact simples que filtra aventuras WKND modeladas com Fragmentos de conteúdo.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -11,21 +11,21 @@ thumbnail: KT-11389.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: a21b78456354c18ad137e69a5d18258d652169b1
+exl-id: d2b7e8ab-8bbc-495f-94f1-362ea47b3853
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
+# Aplicativo Filtrar por preação
 
-# Filtro do aplicativo Preact
+Explore a capacidade das APIs do GraphQL sem periféricos do AEM de filtrar dados usando um [Preact](https://preactjs.com/) aplicativo. Este aplicativo Preact cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
 
-Explore AEM capacidade das APIs GraphQL sem cabeçalho de filtrar dados usando um [Preact](https://preactjs.com/) aplicativo. Este aplicativo Preact cria uma lista de aventuras WKND filtráveis por Tipo de atividade.
-
-Este código demonstra o uso do Adobe [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas GraphQL persistentes do React. Este aplicativo usa a variável `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para a função `wknd-shared/adventures-by-activity` consulta persistente e recupera os detalhes da aventura somente para as aventuras do Tipo de atividade especificado.
+Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL no React. Este aplicativo usa o `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para o `wknd-shared/adventures-by-activity` consulta persistente e recupera os detalhes de aventura somente para as aventuras do Tipo de atividade especificado.
 
 Este código:
 
 + Conecta-se a um serviço de publicação do AEM e não requer autenticação
-+ Usa as consultas persistentes de WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`
++ Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`

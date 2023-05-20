@@ -1,19 +1,19 @@
 ---
-title: Arquivos imutáveis ou somente leitura do AMS Dispatcher
-description: Como entender por que alguns arquivos são somente leitura ou não editáveis e como fazer as alterações funcionais que você deseja
+title: Arquivos imutáveis ou somente leitura do Dispatcher do AMS
+description: Entender por que alguns arquivos são somente leitura ou não editáveis e como fazer as alterações funcionais desejadas
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
 
 ---
-
 
 # Arquivos somente leitura ou imutáveis no AMS
 
@@ -23,20 +23,20 @@ ht-degree: 1%
 
 ## Descrição
 
-Este documento descreverá quais arquivos estão bloqueados e não devem ser alterados, e como fazer as configurações desejadas corretamente.
+Este documento descreverá quais arquivos estão bloqueados e não devem ser alterados e como fazer as configurações desejadas corretamente.
 
-Quando o AMS fornece um sistema, ele implementa uma configuração de linha de base que torna tudo funcional e seguro.  Essas são coisas que o AMS deseja garantir que permaneçam como uma linha de base de funcionalidade e segurança.  Para conseguir isso, alguns arquivos são marcados como somente leitura e imutáveis para evitar que você os altere.
+Quando o AMS provisiona um sistema, ele implementa uma configuração de linha de base que torna tudo funcional e seguro.  São itens que o AMS deseja garantir que permaneçam como uma linha de base de funcionalidade e segurança.  Para fazer isso, alguns arquivos são marcados como somente leitura e imutáveis para evitar que você os altere.
 
-O layout não impede que você altere seu comportamento e substitua as alterações necessárias.  Em vez de alterar esses arquivos, você sobreporá seu próprio arquivo que substitui o original.
+O layout não impede que você altere o comportamento deles e substitua as alterações necessárias.  Em vez de alterar esses arquivos, você sobreporá seu próprio arquivo, que substitui o original.
 
-Isso também permite que você tenha certeza de que, quando o AMS aplicar patches aos Dispatchers com as últimas correções e aprimoramentos de segurança, eles não alterarão seus arquivos.  Em seguida, você pode continuar a se beneficiar das melhorias e adotar apenas as alterações desejadas.
-![Mostra uma faixa de boliche com uma bola rolando pela pista.  A bola tem uma seta com a palavra mostrando você.  Os para-choques da sarjeta são levantados e eles têm as palavras arquivos imutáveis acima deles.](assets/immutable-files/bowling-file-immutability.png "boliche-ficheiro-immutabilidade")
-Como ilustrado na figura acima, arquivos imutáveis não impedem que você jogue o jogo.  Eles só te impedem de prejudicar sua performance e te manter na pista.  Este método permite usar os poucos recursos mais importantes:
+Isso também permite obter a garantia de que, quando o AMS corrigir os Dispatchers com as correções e os aprimoramentos de segurança mais recentes, eles não alterarão seus arquivos.  Dessa forma, você pode continuar a se beneficiar das melhorias e adotar apenas as alterações desejadas.
+![Mostra uma pista de boliche com uma bola rolando pela pista.  A bola tem uma seta com a palavra mostrando-lhe.  As proteções das canaletas estão levantadas e têm as palavras arquivos imutáveis acima delas.](assets/immutable-files/bowling-file-immutability.png "boliches-file-immutability")
+Como ilustrado na figura acima, os arquivos imutáveis não impedem que você jogue o jogo.  Eles apenas impedem que você prejudique sua performance e o mantêm na pista.  Este método permite usar alguns recursos muito importantes:
 
-- As personalizações são manipuladas em seus próprios espaços de segurança
+- As personalizações são tratadas em seus próprios espaços seguros
 - A sobreposição de alterações personalizadas espelha a dos métodos de sobreposição no AEM
 - A correção de configurações do AMS pode ser feita sem alterar as personalizações
-- Testar a instalação básica vs. configurações personalizadas pode ser feito simultaneamente para ajudar a discernir se os problemas são causados por personalizações ou por algo mais que quais arquivos?
+- O teste da instalação básica com relação às configurações personalizadas pode ser feito simultaneamente para ajudar a discernir se os problemas são causados por personalizações ou por outros arquivos.
 
 
 Esta é uma lista típica de arquivos implantados com um Dispatcher:
@@ -124,13 +124,13 @@ Esta é uma lista típica de arquivos implantados com um Dispatcher:
     └── mod_dispatcher.so
 ```
 
-Para determinar quais arquivos são imutáveis, execute o seguinte comando em um Dispatcher para ver:
+Para determinar quais arquivos são imutáveis, você pode executar o seguinte comando em um Dispatcher para ver:
 
 ```
 $ lsattr -Rl /etc/httpd 2>/dev/null | grep Immutable
 ```
 
-Esta é uma amostra de resposta de quais arquivos são imutáveis:
+Este é um exemplo de resposta de quais arquivos são imutáveis:
 
 ```
 /etc/httpd/conf/httpd.conf   Immutable
@@ -197,7 +197,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Veja como a diretiva DispatcherLogLevel tem uma variável de `DISP_LOG_LEVEL` em vez do valor normal, você veria lá.  Acima dessa seção do código, você também verá uma instrução include em um arquivo de variáveis.  O arquivo de variável `/etc/httpd/conf.d/variables/ams_default.vars` é onde queremos olhar a seguir.  Aqui está o conteúdo desse arquivo de variáveis:
+Veja como a diretiva DispatcherLogLevel tem uma variável de `DISP_LOG_LEVEL` em vez do valor normal que você normalmente veria.  Acima dessa seção do código, você também verá uma instrução Include em um arquivo de variáveis.  O arquivo de variável `/etc/httpd/conf.d/variables/ams_default.vars` é o próximo que queremos ver.  Este é o conteúdo do arquivo de variáveis:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -209,17 +209,17 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Você vê acima que o valor atual de `DISP_LOG_LEVEL` é `info`.  Podemos ajustar para rastrear ou depurar, ou o valor/nível do número de sua escolha.  Agora, em todos os lugares que controlam o nível de log, ele se ajustará automaticamente.
+Você vê acima que o valor atual de `DISP_LOG_LEVEL` é `info`.  Podemos ajustar para rastrear ou depurar, ou o valor/nível do número de sua escolha.  Agora, em qualquer lugar que controle o nível do log, ele será ajustado automaticamente.
 
 ### Método de sobreposição
 
-Entenda os arquivos de inclusão de nível superior, pois eles serão o local inicial para fazer personalizações.  Para começar com um exemplo simples, temos um cenário em que queremos adicionar um novo nome de domínio que pretendemos apontar para este Dispatcher.  O exemplo de domínio que usaremos é we-retail.adobe.com.  Começaremos copiando um arquivo de configuração existente em um novo, onde podemos adicionar as alterações:
+Você deve entender os arquivos de inclusão de nível superior, pois eles serão o ponto de partida para fazer personalizações.  Para começar com um exemplo simples, temos um cenário em que queremos adicionar um novo nome de domínio que pretendemos apontar para este Dispatcher.  O exemplo de domínio que usaremos is we-retail.adobe.com.  Começaremos copiando um arquivo de configuração existente para um novo, no qual poderemos adicionar as alterações:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
 ```
 
-Copiamos o arquivo aem_publish.vhost existente porque ele já tem o que precisamos para que as coisas funcionem e não queremos reinventar um início já forte.  Agora editamos o novo arquivo weretail.vhost e fazemos as alterações necessárias.
+Copiamos o arquivo aem_publish.vhost existente porque ele já tem tudo o que é necessário para as coisas funcionarem; portanto, não precisamos fazer alterações adicionais.  Agora editamos o novo arquivo weretail.vhost e fazemos as alterações necessárias.
 
 Antes:
 
@@ -257,19 +257,19 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Agora, atualizamos nossa `ServerName` e `ServerAlias` para corresponder aos novos nomes de domínio, bem como atualizar outros cabeçalhos de navegação estrutural.  Agora vamos permitir que nosso novo arquivo permita que o apache saiba usar nosso novo arquivo:
+Agora que atualizamos nossa `ServerName` e `ServerAlias` para corresponder aos novos nomes de domínio, bem como atualização de outros cabeçalhos de navegação estrutural.  Agora vamos ativar nosso novo arquivo para permitir que o Apache saiba como usar nosso novo arquivo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Agora, o servidor Web apache sabe que o domínio é algo para o qual deve gerar tráfego, mas ainda precisamos informar ao módulo Dispatcher se ele tem um novo nome de domínio a ser respeitado.  Começaremos criando um novo `*_vhost.any` arquivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e dentro desse arquivo, colocaremos o nome de domínio que queremos honrar:
+Agora, o servidor Web Apache sabe que o domínio deve fornecer tráfego, mas ainda precisamos informar ao módulo Dispatcher que ele tem um novo nome de domínio para levar em conta.  Começaremos criando um novo `*_vhost.any` arquivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e dentro desse arquivo colocaremos o nome de domínio que queremos considerar:
 
 ```
 "we-retail.adobe.com"
 ```
 
-Agora, precisamos criar um novo arquivo farm que usará nosso novo arquivo de entrada vhost e começaremos copiando um arquivo de início forte para o novo.
+Agora precisamos criar um novo arquivo de farm que usará nosso novo arquivo de entrada vhost e começaremos copiando um arquivo de início forte para nosso novo arquivo.
 
 ```
 $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/httpd/conf.dispatcher.d/available_farms/400_weretail_publish_farm.any
@@ -299,17 +299,17 @@ Depois:
 }
 ```
 
-Agora atualizamos o nome do farm e a inclusão que ele usa no `/virtualhosts` da configuração do farm.  Precisamos ativar este novo arquivo farm para que ele possa usá-lo na configuração em execução:
+Agora atualizamos o nome do farm e o &quot;include&quot; utilizado no `/virtualhosts` seção da configuração do farm.  Precisamos habilitar este novo arquivo farm para que ele possa ser usado na configuração em execução:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
 ```
 
-Agora, basta recarregar o serviço do servidor da Web e usar nosso novo domínio!
+Agora, basta recarregar o serviço do servidor Web e usar o novo domínio.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Observe que alteramos apenas as partes necessárias para alterar e aproveitar as inclusões e o código existentes que vieram com os arquivos de configuração da linha de base.  Temos apenas de definir o elemento que precisamos de mudar.  Torna as coisas muito mais fáceis e nos permite manter menos código
+Observe que alteramos apenas as partes necessárias e aproveitamos o código e os &quot;includes&quot; existentes que vieram com os arquivos de configuração da linha de base.  Precisamos apenas definir o elemento que precisa ser alterado.  Facilita as coisas e permite diminuir o tamanho do código
 </div>
 
 [Próximo -> Verificação de integridade do Dispatcher](./health-check.md)

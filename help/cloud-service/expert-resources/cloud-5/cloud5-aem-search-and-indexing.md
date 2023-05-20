@@ -1,6 +1,6 @@
 ---
-title: Pesquisa e indexação do Cloud 5 AEM
-description: Nós mergulhamos nossos dedos no oceano que é pesquisa e indexação
+title: Pesquisa e indexação do AEM na nuvem 5
+description: Mergulhamos nossos dedos no oceano que é busca e indexação
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,14 +16,14 @@ ht-degree: 8%
 
 ---
 
-# Pesquisa e indexação do Cloud 5 AEM
+# Pesquisa e indexação do AEM na nuvem 5
 
-Um mergulho rápido nas águas profundas da busca e indexação. Um tópico desafiador que esperamos ajudar a educá-lo com mais eficiência.
+Um mergulho rápido nas águas profundas da pesquisa e indexação. Um tópico desafiador que esperamos ajudar a educá-lo a oferecer com mais eficiência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ Pesquisar e indexar [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR)
++ Pesquisa e indexação [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR)
 + AEM [Conversor de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ Série Expert [Aprofundamento](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ Série especializada [Aprofundamento](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

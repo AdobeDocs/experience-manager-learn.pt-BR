@@ -1,6 +1,6 @@
 ---
 title: Obter um token de logon para integrações
-description: Um guia detalhado sobre como obter um token de login para integrações do Cloud Service e alguns casos de uso para isso.
+description: Um guia de profundidade sobre como obter um token de logon para integrações de Cloud Service e alguns casos de uso para fazer isso.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Obter um token de logon para integrações
 
-Um guia detalhado sobre como obter um token de login para integrações do Cloud Service e alguns casos de uso para isso.
+Um guia de profundidade sobre como obter um token de logon para integrações de Cloud Service e alguns casos de uso para fazer isso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
 
@@ -25,10 +25,10 @@ Um guia detalhado sobre como obter um token de login para integrações do Cloud
 
 + Métodos de acesso padrão do integrador de sistemas
    + tokens de acesso local
-   + tokens da conta de serviço
+   + tokens de conta de serviço
 + &quot;Integrações&quot; do console do desenvolvedor
    + Perfis adequados para acessar o json
-+ Verificação da conta técnica
++ Verificação de conta técnica
 + Uso simples de um token gerado
 
-Para obter uma visão mais detalhada sobre esse tópico, consulte o tutorial em [autenticação baseada em token](/help/headless-tutorial/authentication/overview.md).
+Para obter uma visão mais detalhada sobre este tópico, consulte o tutorial em [autenticação baseada em token](/help/headless-tutorial/authentication/overview.md).

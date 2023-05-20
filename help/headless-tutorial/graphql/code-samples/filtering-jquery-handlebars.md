@@ -1,6 +1,6 @@
 ---
-title: Filtragem com jQuery e Handlebars
-description: Uma implementação do JavaScript usando jQuery e Handlebars que filtra Aventuras WKND para exibição. .
+title: Filtrando com jQuery e Handlebars
+description: Uma implementação JavaScript usando jQuery e Handlebars que filtra as Aventuras WKND a serem exibidas. .
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -12,21 +12,21 @@ thumbnail: KT-11135.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
+exl-id: 75ffd84a-62b1-480f-b05f-3664f54bb171
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
+# Filtrando com jQuery e Handlebars
 
-# Filtragem com jQuery e Handlebars
+Explore a capacidade das APIs do GraphQL do AEM Headless de filtrar dados usando um aplicativo JavaScript que usa [jQuery](https://jquery.com/) e [Handlebars](https://handlebarsjs.com/). Este aplicativo cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
 
-Explore AEM capacidade das APIs GraphQL sem cabeçalho para filtrar dados usando um aplicativo JavaScript que usa [jQuery](https://jquery.com/) e [Handlebars](https://handlebarsjs.com/). Este aplicativo cria uma lista de aventuras WKND filtráveis por Tipo de atividade.
-
-Este código demonstra o uso do Adobe [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para chamar consultas GraphQL persistentes. Este aplicativo usa a variável `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para a função `wknd-shared/adventures-by-activity` consulta persistente e recupera os detalhes da aventura somente para as aventuras do Tipo de atividade especificado.
+Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL. Este aplicativo usa o `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para o `wknd-shared/adventures-by-activity` consulta persistente e recupera os detalhes de aventura somente para as aventuras do Tipo de atividade especificado.
 
 Este código:
 
 + Conecta-se a um serviço de publicação do AEM e não requer autenticação
-+ Usa as consultas persistentes de WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`
++ Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`

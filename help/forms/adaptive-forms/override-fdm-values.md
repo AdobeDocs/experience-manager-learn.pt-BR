@@ -1,6 +1,6 @@
 ---
-title: Substituir propriedades do Modelo de dados de formulário usando a configuração OSGi
-description: O AEM Forms 6.5.13 introduziu a capacidade de substituir propriedades do modelo de dados de formulário para facilitar o teste de um modelo de dados de formulário em relação a diferentes endpoints.
+title: Substituir as propriedades do modelo de dados de formulário usando a configuração OSGi
+description: O AEM Forms 6.5.13 apresentou a capacidade de substituir as propriedades do modelo de dados de formulário para facilitar o teste de um modelo de dados de formulário em relação a diferentes pontos de extremidade.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ---
 
-# Substituir propriedades do modelo de dados de formulário{#using-form-data-model-service-as-step-in-workflow}
+# Substituir propriedades do modelo de dados do formulário{#using-form-data-model-service-as-step-in-workflow}
 
-Antes do AEM Forms 6.5.13, era necessário alterar manualmente a configuração dos serviços em nuvem do modelo de dados de formulário para apontar para pontos finais diferentes ou criar um modelo de dados de formulário totalmente novo.
+Antes do AEM Forms 6.5.13, você tinha que alterar manualmente a configuração dos serviços em nuvem do seu modelo de dados de formulário para apontar para diferentes pontos de extremidade ou criar um modelo de dados de formulário completamente novo.
 
-## Substituir propriedades do modelo de dados de formulário
+## Substituir propriedades do modelo de dados do formulário
 
-Antes do AEM Forms 6.5.13, era necessário alterar manualmente a configuração dos serviços em nuvem do modelo de dados de formulário para apontar para diferentes endpoints ou criar um modelo de dados de formulário totalmente novo.
+Antes do AEM Forms 6.5.13, você tinha que alterar manualmente a configuração dos serviços em nuvem do seu modelo de dados de formulário para apontar para endpoints diferentes ou criar um modelo de dados de formulário completamente novo.
 
-O AEM Forms 6.5.13 apresentou a capacidade de substituir propriedades do Modelo de dados de formulário para facilitar o teste do Modelo de dados de formulário em relação a diferentes pontos de extremidade de serviço.
+O AEM Forms 6.5.13 apresentou a capacidade de substituir as propriedades do Modelo de dados de formulário para facilitar o teste do Modelo de dados de formulário em relação a diferentes pontos de extremidade de serviço.
 
 O vídeo a seguir demonstra o recurso e o caso de uso
 

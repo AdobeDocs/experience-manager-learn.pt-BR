@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Sling Job Scheduler
-description: AEM agendamento de trabalho na nuvem
+description: Agendamento de trabalho do AEM na nuvem
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Cloud 5 - Sling Job Scheduler
 
-O agendamento e o consumo de trabalho são diferentes de uma implantação de AEM sem cluster. Este vídeo mostra alguns resultados e coisas que devem ser observados ao executar essas tarefas.
+O Agendamento de trabalho e o consumo são diferentes de uma implantação do AEM não clusterizada. Este vídeo mostra algumas armadilhas e coisas que devem ser observadas ao executar essas tarefas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343473?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ Visão geral de tarefas na nuvem
-+ Exemplos de código do consumidor e do agendador do trabalho
++ Visão geral dos trabalhos na nuvem
++ Exemplos de código do programador e do consumidor de trabalhos

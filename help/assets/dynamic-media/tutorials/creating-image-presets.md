@@ -1,6 +1,6 @@
 ---
-title: Criar predefinições de imagens com o AEM Dynamic Media
-description: Configurar predefinições de imagens com o Dynamic Media
+title: Criação de predefinições de imagem com o AEM Dynamic Media
+description: Configurar predefinições de imagem com o Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service

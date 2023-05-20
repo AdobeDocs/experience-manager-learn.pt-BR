@@ -1,6 +1,6 @@
 ---
 title: Acessar o Adobe Asset Link
-description: O Adobe Asset Link fortalece a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. Você pode acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop do Creative Cloud mais conhecidos. Saiba como iniciar o painel Adobe Asset Link no aplicativo de desktop da creative cloud.
+description: O Adobe Asset Link fortalece a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. É possível acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop Creative Cloud mais conhecidos. Saiba como iniciar o painel Adobe Asset Link no aplicativo de desktop da Creative Cloud.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Acessar o Adobe Asset Link {#access-adobe-asset-link}
 
-O Adobe Asset Link fortalece a colaboração entre criadores e profissionais de marketing no processo de criação de conteúdo. Você pode acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop do Creative Cloud mais conhecidos. Saiba como iniciar o painel Adobe Asset Link no aplicativo de desktop da creative cloud.
+O Adobe Asset Link fortalece a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. É possível acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop Creative Cloud mais conhecidos. Saiba como iniciar o painel Adobe Asset Link no aplicativo de desktop da Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33733?quality=12&learn=on)

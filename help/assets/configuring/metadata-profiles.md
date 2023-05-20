@@ -1,6 +1,6 @@
 ---
 title: Perfis de metadados
-description: Os perfis de metadados permitem a aplicação automática de metadados padrão em ativos nas pastas de ativos, ajudando a reduzir a carga do gerenciamento de metadados sobre AEM usuários e aumentando a consistência dos metadados.
+description: Os perfis de metadados permitem a aplicação automática de metadados padrão em ativos nas pastas de ativos, ajudando a reduzir a carga do gerenciamento de metadados sobre usuários de AEM e aumentando a consistência dos metadados.
 feature: Metadata
 version: Cloud Service
 kt: 4984
@@ -19,6 +19,6 @@ ht-degree: 6%
 
 # Perfis de metadados
 
-Os perfis de metadados permitem a aplicação automática de metadados padrão em ativos nas pastas de ativos, ajudando a reduzir a carga do gerenciamento de metadados sobre AEM usuários e aumentando a consistência dos metadados.
+Os perfis de metadados permitem a aplicação automática de metadados padrão em ativos nas pastas de ativos, ajudando a reduzir a carga do gerenciamento de metadados sobre usuários de AEM e aumentando a consistência dos metadados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)

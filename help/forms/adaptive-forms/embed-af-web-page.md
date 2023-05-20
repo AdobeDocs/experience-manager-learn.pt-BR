@@ -1,6 +1,6 @@
 ---
-title: Incorporação de formulários adaptáveis Forms/HTML5 na página da Web
-description: Etapas de configuração necessárias para incorporar formulários adaptáveis Forms ou HTML5 em uma página da Web que não seja AEM.
+title: Incorporação de formulários Forms/HTML5 adaptáveis na página da Web
+description: Etapas de configuração necessárias para incorporar formulários do Adaptive Forms ou HTML5 em uma página da Web que não seja do AEM.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ---
 
-# Incorporação do formulário adaptável ou HTML5 na página da Web
+# Incorporação do formulário adaptável ou do formulário HTML5 na página da Web
 
-O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
+O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
 
-O vídeo a seguir explica as etapas necessárias para incorporar um formulário adaptável ou HTML5 na página da Web.
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para obter os melhores pré-requisitos, práticas recomendadas etc.
+O vídeo a seguir explica as etapas necessárias para incorporar um formulário adaptável ou HTML5 em uma página da Web.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para obter os pré-requisitos, as práticas recomendadas etc.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 Você pode baixar os arquivos de amostra usados no vídeo [daqui](assets/embedding-af-web-page.zip)
 
-Este é o código usado para buscar o formulário adaptável e incorporar o formulário no container identificado pelo nome da classe **right**
+Este é o código usado para buscar o formulário adaptável e incorporar o formulário no contêiner identificado pelo nome da classe **direita**
 
 ```javascript
 $(document).ready(function(){

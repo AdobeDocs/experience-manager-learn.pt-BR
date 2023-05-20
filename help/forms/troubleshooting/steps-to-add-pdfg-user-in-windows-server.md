@@ -1,6 +1,6 @@
 ---
-title: Etapas para adicionar usuário PDFG no Windows Server2016
-description: Configurar o gerador de PDF no Windows Server 2016
+title: Etapas para adicionar usuário PDFG no Windows Server 2016
+description: Configurar o Gerador de PDF no Windows Server 2016
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para adicionar usuários do AEM Forms PDFG no Windows Server 2016.
 
-*Este vídeo aborda as etapas adicionais para adicionar usuário AEM Forms PDFG no Windows 2016.*
+*Este vídeo aborda as etapas adicionais para adicionar um usuário PDFG do AEM Forms no Windows 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335479?quality=12&learn=on)

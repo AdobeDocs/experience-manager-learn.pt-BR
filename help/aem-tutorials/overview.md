@@ -9,24 +9,24 @@ ht-degree: 34%
 
 ---
 
-# Tutoriais do Experience Manager {#overview}
+# tutoriais do Experience Manager {#overview}
 
-O Adobe Experience Manager (AEM) é a plataforma líder de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais que ajudam a maximizar seu valor do AEM.
+O Adobe Experience Manager (AEM) é a principal plataforma de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais que ajudam a maximizar seu valor do AEM.
 
-## AEM tutoriais
+## Tutoriais do AEM
 
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
-+ [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
-+ [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
-+ [Tutoriais do AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
++ [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
++ [Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
++ [Tutorials do AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 
-## AEM tutoriais em várias etapas
+## Tutoriais em várias etapas do AEM
 
-+ [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-+ [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-+ [Introdução ao AEM Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
++ [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
++ [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
++ [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 + [Introdução ao AEM e ao Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
-+ [AEM 6.x Tutorial de cache do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
++ [Tutorial de cache do Dispatcher do AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
 + [Tutorial do Dynamic Media Classic do AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)

@@ -1,5 +1,5 @@
 ---
-title: Uso do caminho de carregamento de itens para preencher a lista suspensa
+title: Utilização do caminho de carregamento de itens para preencher a lista suspensa
 description: Configure e preencha uma lista suspensa para ler valores de um nó crx
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -18,16 +19,16 @@ ht-degree: 0%
 
 # Propriedade de carregamento de item no AEM Forms
 
-Configure e preencha a lista suspensa usando a propriedade de caminho de carregamento do item.
-O campo Caminho de carga do item permite que um autor forneça um url do qual carregue as opções disponíveis em uma lista suspensa.
+Configure e preencha a lista suspensa usando a propriedade de caminho de carregamento de item.
+O campo Caminho de carregamento de item permite que um autor forneça um URL do qual ele carrega as opções disponíveis em uma lista suspensa.
 Para criar esse nó no crx, siga as etapas mencionadas abaixo:
 * Logon no crx
-* Crie um nó chamado assets(você pode nomear esse nó de acordo com sua necessidade) e digite sling:folder no conteúdo.
+* Crie um nó chamado assets (você pode nomear esse nó de acordo com seu requisito) digite sling:folder em content.
 * Salvar
-* Clique no nó de ativos recém-criados e defina suas propriedades conforme mostrado abaixo
-* Você precisará criar uma propriedade do tipo String chamada asset types (você pode nomeá-la de acordo com seu requisito).Certifique-se de que a propriedade seja um valor multivalor. Forneça os valores desejados e salve.
+* Clique no nó ativos recém-criado e defina as propriedades conforme mostrado abaixo
+* Será necessário criar uma propriedade do tipo String chamada assettypes (você pode nomeá-la de acordo com seus requisitos). Verifique se a propriedade é um multivalor. Forneça os valores desejados e salve.
    ![item-load-path](assets/item-load-path-crx.png)
 
-Para carregar esses valores na lista suspensa, forneça o seguinte caminho na propriedade de caminho de carregamento de item  **/content/assets/assets/assets**
+Para carregar esses valores na lista suspensa, forneça o seguinte caminho na propriedade de caminho de carregamento do item  **/content/assets/assettypes**
 
 O pacote de amostra pode ser [baixado aqui](assets/item-load-path-package.zip)

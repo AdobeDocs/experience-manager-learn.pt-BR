@@ -1,6 +1,6 @@
 ---
-title: Etapas para configurar os localizadores do gemfire em um cluster e executar a configuração relacionada
-description: Configurar localizadores de gemfire em um cluster
+title: Etapas para configurar localizadores do gemfire em um cluster e executar a configuração relacionada
+description: Configurar localizadores do gemfire em um cluster
 type: Troubleshooting
 role: Admin
 level: Experienced
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para configurar os localizadores do gemfire em um cluster e executar a configuração relacionada
+# Etapas para configurar localizadores do gemfire em um cluster e executar a configuração relacionada
 
-*Este vídeo aborda as etapas para configurar os localizadores do gemfire em um cluster e executar a configuração relacionada.*
+*Este vídeo aborda as etapas para configurar localizadores do Gemfire em um cluster e executar configurações relacionadas.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)

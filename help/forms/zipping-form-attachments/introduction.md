@@ -1,6 +1,6 @@
 ---
 title: Enviar anexos de formulário adaptáveis
-description: Enviar anexos de formulário adaptáveis usando o componente Enviar email
+description: Enviar anexos de formulário adaptáveis usando o componente de envio de email
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -20,21 +20,21 @@ ht-degree: 2%
 
 
 
-Caso de uso comum é enviar os anexos de formulário adaptáveis usando o componente Enviar email em um fluxo de trabalho de AEM.
-Os clientes normalmente compactariam os anexos do formulário ou enviariam os anexos como arquivos individuais usando o componente Enviar email.
+Um caso de uso comum é o envio de anexos de formulário adaptáveis usando o componente de envio de email em um fluxo de trabalho AEM.
+Em geral, os clientes compactam os anexos do formulário ou os enviam como arquivos individuais usando o componente de envio de email.
 
-## Envie os anexos de formulário em um arquivo zip
+## Enviar os anexos de formulário em um arquivo zip
 
-Para realizar o caso de uso, uma etapa do processo de fluxo de trabalho personalizado foi gravada. Nesta etapa do processo personalizado, um arquivo zip com os anexos do formulário em criado e armazenado na pasta payload em um arquivo chamado *zipped_attachment.zip*
+Para realizar o caso de uso, uma etapa de processo de fluxo de trabalho personalizada foi escrita. Nesta etapa do processo personalizado, um arquivo zip com os anexos de formulário em é criado e armazenado na pasta de carga em um arquivo chamado *zipped_attachments.zip*
 
-![anexos de formulário de envio](assets/send-form-attachments.JPG)
+![send-form-attachments](assets/send-form-attachments.JPG)
 
-## Enviar os anexos de formulário individualmente
+## Enviar os anexos do formulário individualmente
 
-Para realizar esse caso de uso, uma etapa do processo de fluxo de trabalho personalizado foi gravada. Nesta etapa do processo personalizado, preenchemos variáveis de fluxo de trabalho do tipo ArrayList of Documents e ArrayList of Strings.
+Para realizar esse caso de uso, uma etapa de processo de fluxo de trabalho personalizada foi escrita. Nesta etapa de processo personalizada, preenchemos variáveis de fluxo de trabalho do tipo ArrayList of Documents e ArrayList of Strings.
 
-![lista de envio de documentos](assets/send-list-of-documents.JPG)
+![send-list-of-documents](assets/send-list-of-documents.JPG)
 
 ## Próximas etapas
 
-[Anexos de formulário zip](./custom-process-step.md)
+[Anexos de formulário Zip](./custom-process-step.md)

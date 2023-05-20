@@ -1,6 +1,6 @@
 ---
 title: Como solucionar problemas de dependência com bibliotecas C++ no Designer
-description: Instale as bibliotecas C++ necessárias para o Designer
+description: Instalar as bibliotecas C++ necessárias para o Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate

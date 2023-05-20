@@ -1,24 +1,24 @@
 ---
 title: Manual do Dispatcher do Adobe Managed Services
-description: Processos do AMS para obter o suporte adequado na configuração do Dispatcher.
+description: Processos AMS para obter suporte adequado na configuração do Dispatcher.
 version: 6.5
 topic: Administration, Performance, Security
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+exl-id: 4f72d010-f488-490a-83fb-38ff1b1e8183
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 5%
 
 ---
 
+# Manual do Dispatcher do Adobe Managed Services
 
-# Manual do Adobe Managed Services Dispatcher
-
-Se a sua instalação AEM estiver hospedada no Adobe Managed Service, você deverá ler este manual.
-Os documentos a seguir cobrirão os processos do AMS para personalizar e trabalhar corretamente com a configuração fornecida do Dispatcher.
+Se sua instalação do AEM estiver hospedada no Adobe Managed Service, leia este manual.
+Os documentos fornecidos a seguir abordarão os processos do AMS para personalizar e trabalhar corretamente com a configuração fornecida do Dispatcher.
 
 ## Índice
 
@@ -27,10 +27,10 @@ Estas são as subpáginas e os tópicos que compõem o manual do Dispatcher:
 - [O que é &quot;O Dispatcher&quot;](./what-is-the-dispatcher.md)
 - [Layout básico do arquivo](./basic-file-layout.md)
 - [Explicação dos arquivos de configuração](./explanation-config-files.md)
-- [Como entender o armazenamento em cache](./understanding-cache.md)
+- [Noções básicas sobre armazenamento em cache](./understanding-cache.md)
 - [Uso e noções básicas sobre variáveis](./variables.md)
 - [Liberação do Dispatcher](./disp-flushing.md)
 - [URL personalizada](./disp-vanity-url.md)
-- [Registro comum](./common-logs.md)
+- [Logon comum](./common-logs.md)
 - [Arquivos somente leitura](./immutable-files.md)
-- [Verificação de Integridade do Dispatcher](./health-check.md)
+- [Verificação de integridade do Dispatcher](./health-check.md)

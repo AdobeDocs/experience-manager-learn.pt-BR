@@ -1,6 +1,6 @@
 ---
-title: Implantações móveis sem periféricos AEM
-description: Saiba mais sobre as considerações de implantação para implantações móveis sem cabeçalho AEM.
+title: Implantações móveis AEM Headless
+description: Saiba mais sobre as considerações de implantação para implantações móveis do AEM Headless.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -8,29 +8,29 @@ role: Developer, Architect
 level: Intermediate
 kt: 10796
 thumbnail: KT-10796.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 1f536079-b3ce-4807-be88-804378e75d37
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 2%
 
 ---
 
+# Implantações móveis AEM Headless
 
-# Implantações móveis sem periféricos AEM
+As implantações móveis sem periféricos de AEM são aplicativos móveis nativos para iOS, Android™ etc. que consomem e interagem com conteúdo no AEM de forma headless.
 
-AEM implantações móveis headless são aplicativos móveis nativos para iOS, Android™ etc. que consomem e interagem com conteúdo em AEM sem interface.
-
-As implantações móveis exigem configuração mínima, pois as conexões HTTP para AEM APIs sem cabeçalho não são iniciadas no contexto de um navegador.
+As implantações móveis exigem configuração mínima, pois as conexões HTTP para APIs AEM Headless não são iniciadas no contexto de um navegador.
 
 ## Configurações de implantação
 
-A seguinte configuração de implantação deve estar no local para implantações de aplicativos móveis.
+A configuração de implantação a seguir deve estar em vigor para implantações de aplicativos móveis.
 
-| O aplicativo móvel se conecta a | Autor do AEM | AEM Publish | Visualização de AEM |
+| O aplicativo móvel se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Compartilhamento de recursos entre origens (CORS) | ✘ | ✘ | ✘ |
-| [AEM hosts](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Hospedeiros AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exemplo de aplicativos móveis
 
@@ -42,17 +42,17 @@ O Adobe fornece exemplos de aplicativos móveis iOS e Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/ios-swiftui-app.md" title="Aplicativo iOS" tabindex="-1">
-                       <img class="is-bordered-r-small" src="../example-apps/assets/ios-swiftui-app/ios-app-card.png" alt="Aplicativo iOS">
+                   <a href="../example-apps/ios-swiftui-app.md" title="aplicativo iOS" tabindex="-1">
+                       <img class="is-bordered-r-small" src="../example-apps/assets/ios-swiftui-app/ios-app-card.png" alt="aplicativo iOS">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="Aplicativo iOS">Aplicativo iOS</a></p>
-                   <p class="is-size-6">Um exemplo de aplicativo iOS, gravado em SwiftUI, que consome conteúdo AEM APIs GraphQL sem interface.</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="aplicativo iOS">aplicativo iOS</a></p>
+                   <p class="is-size-6">Um aplicativo de exemplo do iOS, escrito em SwiftUI, que consome conteúdo de APIs do AEM Headless GraphQL.</p>
                    <a href="../example-apps/ios-swiftui-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exemplo de exibição</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir exemplo</span>
                    </a>
                </div>
            </div>
@@ -63,22 +63,20 @@ O Adobe fornece exemplos de aplicativos móveis iOS e Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/android-app.md" title="Aplicativo Android™" tabindex="-1">
+                   <a href="../example-apps/android-app.md" title="aplicativo Android™" tabindex="-1">
                        <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="aplicativo Android">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="Aplicativo Android™">Aplicativo Android™</a></p>
-                   <p class="is-size-6">Um exemplo de aplicativo Java™ Android™ que consome conteúdo AEM APIs GraphQL sem interface.</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="aplicativo Android™">aplicativo Android™</a></p>
+                   <p class="is-size-6">Um exemplo de aplicativo Java™ Android™ que consome conteúdo de APIs AEM Headless GraphQL.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exemplo de exibição</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir exemplo</span>
                    </a>
                </div>
            </div>
        </div>
     </div>
 </div>
-
-

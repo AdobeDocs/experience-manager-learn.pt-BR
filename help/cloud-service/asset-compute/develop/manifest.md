@@ -1,6 +1,6 @@
 ---
 title: Configurar o manifest.yml de um projeto do Asset compute
-description: O arquivo manifest.yml do projeto do Asset compute descreve todos os trabalhadores neste projeto que serão implantados.
+description: O arquivo manifest.yml do projeto do Asset compute descreve todos os funcionários neste projeto que serão implantados.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 # Configurar o manifest.yml
 
-O `manifest.yml`, localizado na raiz do projeto Asset compute, descreve todos os trabalhadores neste projeto a serem implantados.
+A variável `manifest.yml`, localizado na raiz do projeto do Asset compute, descreve todos os trabalhadores deste projeto que serão implantados.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
 ## Definição de trabalhador padrão
 
-Os trabalhadores são definidos como entradas de ação do Adobe I/O Runtime em `actions` e são compostos de um conjunto de configurações.
+Os trabalhadores são definidos como entradas de ação do Adobe I/O Runtime em `actions`e composto por um conjunto de configurações.
 
-Os funcionários que acessam outras integrações do Adobe I/O devem definir a propriedade `annotations -> require-adobe-auth` como `true`, pois essa [expõe as credenciais do Adobe I/O do trabalhador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) por meio do objeto `params.auth` . Normalmente, isso é necessário quando o trabalhador chama APIs do Adobe I/O, como as APIs do Adobe Photoshop, Lightroom ou Sensei, e pode ser alternado por trabalhador.
+Os funcionários que acessam outras integrações de Adobe I/O devem definir o `annotations -> require-adobe-auth` propriedade para `true` como este [expõe as credenciais de Adobe I/O do trabalhador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) por meio da `params.auth` objeto. Normalmente, isso é necessário quando o trabalhador chama APIs do Adobe I/O, como APIs do Adobe Photoshop, Lightroom ou Sensei, e pode ser alternado por trabalhador.
 
-1. Abra e revise o trabalhador gerado automaticamente `manifest.yml`. Os projetos que contêm vários trabalhadores do Asset compute devem definir uma entrada para cada trabalhador sob a matriz `actions`.
+1. Abrir e revisar o trabalhador gerado automaticamente `manifest.yml`. Projetos que contêm vários trabalhadores do Asset compute, devem definir uma entrada para cada trabalhador sob o `actions` matriz.
 
 ```yml
 packages:
@@ -51,11 +51,11 @@ packages:
 
 ## Definir limites
 
-Cada trabalhador pode configurar os [limites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para seu contexto de execução no Adobe I/O Runtime. Esses valores devem ser ajustados para fornecer o dimensionamento ideal para o trabalhador, com base no volume, na taxa e no tipo de ativos que ele calculará, bem como no tipo de trabalho que ele executa.
+Cada trabalhador pode configurar o [limites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para o contexto de execução no Adobe I/O Runtime. Esses valores devem ser ajustados para fornecer o dimensionamento ideal para o trabalhador, com base no volume, na taxa e no tipo de ativos que ele calculará, bem como no tipo de trabalho que realizará.
 
-Revise [Orientação de dimensionamento de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de definir limites. Os trabalhadores do Asset compute podem ficar sem memória ao processar ativos, resultando na interrupção da execução do Adobe I/O Runtime, de modo que o trabalhador seja dimensionado adequadamente para lidar com todos os ativos candidatos.
+Revisão [Orientação de dimensionamento de Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de definir limites. Os trabalhadores do Asset compute podem ficar sem memória ao processar ativos, resultando na morte da execução do Adobe I/O Runtime. Portanto, verifique se o trabalhador está dimensionado adequadamente para lidar com todos os ativos candidatos.
 
-1. Adicione uma seção `inputs` à nova entrada de ações `wknd-asset-compute`. Isso permite ajustar o desempenho geral do trabalhador do Asset compute e a alocação de recursos.
+1. Adicionar um `inputs` para a nova `wknd-asset-compute` entrada de ações. Isso permite o ajuste do desempenho geral e da alocação de recursos do trabalhador do Asset compute.
 
 ```yml
 packages:
@@ -77,7 +77,7 @@ packages:
 
 ## O manifest.yml concluído
 
-O `manifest.yml` final tem a seguinte aparência:
+A versão final `manifest.yml` tem a seguinte aparência:
 
 ```yml
 packages:
@@ -98,18 +98,18 @@ packages:
 
 ## manifest.yml no Github
 
-O `.manifest.yml` final está disponível no Github em:
+A versão final `.manifest.yml` está disponível no Github em:
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
-## Validando o manifest.yml
+## Validar o manifest.yml
 
-Depois que o Asset compute gerado `manifest.yml` for atualizado, execute a Ferramenta de Desenvolvimento local e garanta que seja iniciado com êxito com as configurações atualizadas `manifest.yml`.
+Uma vez que o Asset compute gerado `manifest.yml` for atualizada, execute a Ferramenta de desenvolvimento local e verifique se inicia com êxito com a atualização `manifest.yml` configurações.
 
-Para iniciar a Ferramenta de desenvolvimento de Assets compute para o projeto do Asset compute:
+Para iniciar a Ferramenta de desenvolvimento do Asset compute para o projeto do Asset compute:
 
-1. Abra uma linha de comando na raiz do projeto do Asset compute (no Código VS, isso pode ser aberto diretamente no IDE via Terminal > Novo terminal) e execute o comando:
+1. Abra uma linha de comando na raiz do projeto Asset compute (no Código VS, isso pode ser aberto diretamente no IDE via Terminal > Novo terminal) e execute o comando:
 
    ```
    $ aio app run
@@ -119,10 +119,10 @@ Para iniciar a Ferramenta de desenvolvimento de Assets compute para o projeto do
 
    ![execução do aplicativo aio](assets/environment-variables/aio-app-run.png)
 
-1. Observe as mensagens de erro na saída da linha de comando e no navegador da Web, conforme a Ferramenta de desenvolvimento é inicializada.
-1. Para interromper a Ferramenta de desenvolvimento de Asset compute, toque em `Ctrl-C` na janela que executou `aio app run` para encerrar o processo.
+1. Observe a saída da linha de comando e o navegador da Web em busca de mensagens de erro enquanto a Ferramenta de desenvolvimento é inicializada.
+1. Para interromper a Ferramenta de desenvolvimento do Asset compute, toque em `Ctrl-C` na janela que executou `aio app run` para encerrar o processo.
 
 ## Resolução de problemas
 
 + [Recuo YAML incorreto](../troubleshooting.md#incorrect-yaml-indentation)
-+ [o limite memorySize está definido como muito baixo](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [O limite memorySize está definido como muito baixo](../troubleshooting.md#memorysize-limit-is-set-too-low)

@@ -1,6 +1,6 @@
 ---
 title: Armazenamento em cache de variantes de página com AEM as a Cloud Service
-description: Saiba como configurar e usar o AEM as a cloud service para suportar variantes de página em cache.
+description: Saiba como configurar e usar o AEM as a cloud service para suportar o armazenamento em cache de variantes de página.
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
@@ -12,27 +12,27 @@ ht-degree: 1%
 
 ---
 
-# Armazenamento de variantes de página em cache
+# Armazenamento em cache de variantes de página
 
-Saiba como configurar e usar o AEM as a cloud service para suportar variantes de página em cache.
+Saiba como configurar e usar o AEM as a cloud service para suportar o armazenamento em cache de variantes de página.
 
 ## Exemplo de casos de uso
 
-+ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
++ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e as opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
 
-+ Um cliente de varejo tem lojas em todo o país e cada loja tem ofertas diferentes com base em onde está localizada e o cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
++ Um cliente de varejo tem lojas em todo o país e cada loja tem diferentes ofertas com base em onde está localizada, e o cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
 
 ## Visão geral da solução
 
-+ Identifique a chave da variante e o número de valores que ela pode ter. No nosso exemplo, variamos de acordo com o estado dos EUA, portanto, o número máximo é 50. Isso é pequeno o suficiente para não causar problemas nos limites da variante na CDN. [Seção Analisar limitações de variante](#variant-limitations).
++ Identifique a chave da variante e o número de valores que ela pode ter. No nosso exemplo, variamos de acordo com o estado dos EUA, portanto, o número máximo é 50. É pequeno o suficiente para não causar problemas com os limites de variante na CDN. [Revisar seção de limitações da variante](#variant-limitations).
 
-+ O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ para o estado preferencial do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
++ O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ ao estado preferido do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
 
 + Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível da CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`) que é transmitido ao dispatcher.
 
-+ Uma regra de reescrita do Apache modifica o caminho da solicitação para incluir o valor de cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish forneça conteúdo diferente com base no seletor e no dispatcher armazene uma página em cache por variante.
++ Uma regra de regravação do Apache modifica o caminho da solicitação para incluir o valor do cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish veicule conteúdo diferente com base no seletor e no Dispatcher para armazenar em cache uma página por variante.
 
-+ A resposta enviada pelo AEM Dispatcher deve conter um cabeçalho de resposta HTTP `Vary: x-aem-variant`. Isso instrui a CDN a armazenar diferentes cópias de cache para diferentes valores de cabeçalho.
++ A resposta enviada pelo AEM Dispatcher deve conter um cabeçalho de resposta HTTP `Vary: x-aem-variant`. Isso instrui o CDN a armazenar cópias de cache diferentes para valores de cabeçalho diferentes.
 
 >[!TIP]
 >
@@ -40,21 +40,21 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
 
 ## Fluxo de solicitação HTTP
 
-![Fluxo de Solicitação de Cache Variável](./assets/variant-cache-request-flow.png)
+![Fluxo de solicitação de cache variante](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
->O fluxo de solicitação HTTP inicial acima deve ocorrer antes que qualquer conteúdo seja solicitado que use variantes.
+>O fluxo de solicitação HTTP inicial acima deve ocorrer antes que qualquer conteúdo que use variantes seja solicitado.
 
 ## Uso
 
-1. Para demonstrar o recurso, usaremos [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)Como exemplo, a implementação da .
+1. Para demonstrar o recurso, usaremos [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)Como exemplo, a implementação do.
 
-1. Implementar um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) em AEM para definir `x-aem-variant` na resposta HTTP, com um valor de variante.
+1. Implementar um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) no AEM para definir `x-aem-variant` cookie na resposta HTTP, com um valor de variante.
 
-1. AEM CDN transforma automaticamente `x-aem-variant` em um cabeçalho HTTP com o mesmo nome.
+1. CDN do AEM transforma automaticamente `x-aem-variant` cookie em um cabeçalho HTTP de mesmo nome.
 
-1. Adicionar uma regra mod_rewrite do servidor Apache Web `dispatcher` projeto, que modifica o caminho da solicitação para incluir o seletor de variante.
+1. Adicione uma regra mod_rewrite do Apache Web Server ao `dispatcher` projeto, que modifica o caminho da solicitação para incluir o seletor de variante.
 
 1. Implante o filtro e reescreva as regras usando o Cloud Manager.
 
@@ -62,7 +62,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
 
 ## Amostras de código
 
-+ Exemplo de SlingServletFilter para definir `x-aem-variant` com um valor em AEM.
++ Exemplo de SlingServletFilter para definir `x-aem-variant` cookie com um valor no AEM.
 
    ```
    package com.adobe.aem.guides.wknd.core.servlets.filters;
@@ -119,7 +119,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
    }
    ```
 
-+ Regra de reescrita de exemplo no __dispatcher/src/conf.d/rewrite.rules__ arquivo que é gerenciado como código fonte no Git e implantado usando o Cloud Manager.
++ Exemplo de regra de regravação no __dispatcher/src/conf.d/rewrite.rules__ arquivo que é gerenciado como código-fonte no Git e implantado usando o Cloud Manager.
 
    ```
    ...
@@ -131,12 +131,12 @@ Saiba como configurar e usar o AEM as a cloud service para suportar variantes de
    ...
    ```
 
-## Limitações de variáveis
+## Limitações da variante
 
-+ AEM CDN pode gerenciar até 200 variações. Isso significa que o `x-aem-variant` pode ter até 200 valores exclusivos. Para obter mais informações, consulte o [Limites de configuração de CDN](https://docs.fastly.com/en/guides/resource-limits).
++ O AEM CDN pode gerenciar até 200 variações. Isso significa que `x-aem-variant` pode ter até 200 valores únicos. Para obter mais informações, consulte [Limites de configuração da CDN](https://docs.fastly.com/en/guides/resource-limits).
 
-+ É necessário tomar cuidado para garantir que a chave de variante escolhida nunca exceda esse número.  Por exemplo, uma ID de usuário não é uma boa chave, pois excederia facilmente 200 valores para a maioria dos sites, enquanto os estados/territórios em um país são mais adequados se houver menos de 200 estados nesse país.
++ Tenha cuidado para garantir que a chave de variante escolhida nunca exceda esse número.  Por exemplo, uma ID de usuário não é uma boa chave, pois facilmente excederia 200 valores para a maioria dos sites, enquanto os estados/territórios em um país são mais adequados se houver menos de 200 estados nesse país.
 
 >[!NOTE]
 >
->Quando as variantes excederem 200, a CDN responderá com &quot;Muitas variantes&quot; em vez do conteúdo da página.
+>Quando as variantes excederem 200, a CDN responderá com a resposta &quot;Muitas variantes&quot; em vez do conteúdo da página.

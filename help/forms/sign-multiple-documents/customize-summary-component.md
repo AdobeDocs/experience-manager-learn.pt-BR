@@ -1,6 +1,6 @@
 ---
-title: Personalizar componente de resumo
-description: Estenda o componente de etapa de resumo para incluir a capacidade de navegar até o próximo formulário no pacote.
+title: Personalizar o componente de Resumo
+description: Estender o componente da etapa de resumo para incluir a capacidade de navegar até o próximo formulário no pacote.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
@@ -18,12 +18,12 @@ ht-degree: 1%
 
 # Personalizar etapa de resumo
 
-O componente Etapa de resumo é usado para exibir o resumo do envio do formulário com um link para baixar o formulário assinado. A etapa de resumo geralmente é colocada no último painel do formulário.
-Para o propósito deste caso de uso, criamos um novo componente baseado no componente Resumo pronto para uso e estendemos a capacidade de incluir clientlib personalizado.
+O componente da etapa de resumo é usado para exibir o resumo do envio do formulário com um link para baixar o formulário assinado. A etapa de resumo normalmente é colocada no último painel do formulário.
+Para o propósito deste caso de uso, criamos um novo componente com base no componente Resumo pronto para uso e estendemos a capacidade para incluir clientlib personalizado.
 
-Esse componente é identificado pelo rótulo Assinar vários formulários
+Este componente é identificado pelo rótulo Assinar formulário múltiplo
 
-A captura de tela a seguir mostra o novo componente criado para exibir a mensagem ao concluir a cerimônia de assinatura
+A captura de tela a seguir mostra o novo componente criado para exibir a mensagem na conclusão da cerimônia de assinatura
 
 ![componente de resumo](assets/summary.PNG)
 
@@ -31,9 +31,9 @@ O novo componente é baseado no componente de resumo pronto para uso.
 ![component-prop](assets/componentprop.PNG)
 
 Adicionamos um botão para navegar até o próximo formulário para assinatura
-![código do modelo](assets/template-code.PNG)
+![template-code](assets/template-code.PNG)
 
-O summary.jsp tem o seguinte código. Ela tem referência à biblioteca do cliente identificada pela id da categoria **getnextform**
+O summary.jsp tem o seguinte código. Ela faz referência à biblioteca do cliente identificada pela ID da categoria **getnextform**
 
 ```java
 <%--

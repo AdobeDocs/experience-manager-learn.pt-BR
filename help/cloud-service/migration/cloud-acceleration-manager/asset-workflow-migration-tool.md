@@ -1,6 +1,6 @@
 ---
 title: Ferramenta Migração de fluxo de trabalho de ativos
-description: Saiba como a ferramenta Migração de fluxo de trabalho de ativos ajuda a migrar seus fluxos de trabalho existentes do AEM Assets para AEM as a Cloud Service.
+description: Saiba como a ferramenta de Migração de fluxo de trabalho de ativos ajuda a migrar seus fluxos de trabalho existentes do AEM Assets para o AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 16%
 
 # Ferramenta Migração de fluxo de trabalho de ativos
 
-Saiba como a ferramenta Migração de fluxo de trabalho de ativos ajuda a migrar seus fluxos de trabalho existentes do AEM Assets para AEM as a Cloud Service.
+Saiba como a ferramenta de Migração de fluxo de trabalho de ativos ajuda a migrar seus fluxos de trabalho existentes do AEM Assets para o AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336697?quality=12&learn=on)

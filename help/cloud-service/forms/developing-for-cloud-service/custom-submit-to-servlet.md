@@ -1,6 +1,6 @@
 ---
-title: Criando manipulador de ação de envio personalizado
-description: Envio de formulário adaptável a um manipulador de envio personalizado
+title: Criar manipulador de ação de envio personalizado
+description: Envio de um formulário adaptável a um manipulador de envio personalizado
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 # Criar servlet para processar os dados enviados
 
 Inicie seu projeto aem-banking no IntelliJ.
-Crie um servlet simples para exibir os dados enviados para o arquivo de log. Verifique se o código está no projeto principal, como mostrado na captura de tela abaixo
+Crie um servlet simples para enviar os dados enviados para o arquivo de log. Verifique se o código está no projeto principal, conforme mostrado na captura de tela abaixo
 ![create-servlet](assets/create-servlet.png)
 
 ```java
@@ -42,7 +42,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Criar envio personalizado
 
-Crie seu envio personalizado na pasta aplicativo/banco da mesma forma que você criaria na [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
+Crie o envio personalizado na pasta app/bankingapplication da mesma forma que criaria no [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
 O código a seguir no post.POST.jsp simplesmente encaminha a solicitação para o servlet montado em /bin/formstutorial. Este é o mesmo servlet que foi criado na etapa anterior
 
 ```java
@@ -51,7 +51,7 @@ com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/f
 
 ## Configurar formulário adaptável
 
-Agora você pode configurar o Formulário adaptável para enviar para este manipulador de envio personalizado chamado **Enviar para AEM Servlet**
+Agora você pode configurar seu Formulário adaptável para enviar a esse manipulador de envio personalizado chamado **Enviar para Servlet AEM**
 
 
 

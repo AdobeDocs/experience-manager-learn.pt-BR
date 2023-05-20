@@ -1,6 +1,6 @@
 ---
 title: Remoção de amostras de um projeto AEM Maven
-description: Saiba como limpar e remover o código de amostra de um Projeto AEM gerado pelo Arquétipo de Projeto AEM.
+description: Saiba como limpar e remover o código de amostra de um projeto AEM gerado pelo Arquétipo de projeto AEM.
 version: Cloud Service
 topic: Development
 feature: AEM Project Archetype
@@ -18,18 +18,18 @@ ht-degree: 6%
 
 # Remoção de amostras de um projeto AEM Maven
 
-Saiba como limpar e remover o código de amostra gerado de um AEM Project gerado pelo Arquétipo de Projeto AEM.
+Saiba como limpar e remover o código de amostra gerado de um projeto AEM gerado pelo Arquétipo de projeto AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Recursos
 
-+ [Arquétipo de projeto AEM Maven](https://github.com/adobe/aem-project-archetype)
++ [Arquétipo de projeto Maven para AEM](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
-Os seguintes comandos podem ser executados para remover os arquivos de amostra gerados do Projeto Maven AEM:
+Os seguintes comandos podem ser executados para remover os arquivos de amostra gerados do projeto AEM Maven:
 
 ```
 rm -rf core/src/main/java/com/adobe/aem/wknd/examples/core/filters \
@@ -51,7 +51,7 @@ Remova o `<div class="helloworld" ...></div>` de:
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Remova o `<helloworld>` definição de instância de componente de:
+Remova o `<helloworld>` definição da instância do componente de:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

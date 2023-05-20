@@ -1,7 +1,7 @@
 ---
-title: Uso do Editor de páginas com AEM Sites
+title: Uso do Editor de páginas com o AEM Sites
 seo-title: Using the Page Editor with Adobe Experience Manager Sites
-description: O vídeo a seguir destaca vários dos principais recursos do editor de Sites da interface de toque no Adobe Experience Manager.
+description: O vídeo a seguir destaca vários dos principais recursos do editor de sites da interface para toque no Adobe Experience Manager.
 seo-description: The following video highlights several of the top features of the Touch-UI Sites editor in Adobe Experience Manager.
 feature: Page Editor
 topics: authoring
@@ -18,41 +18,41 @@ exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # Uso do Editor de páginas {#using-page-editor-with-aem-sites}
 
-AEM Editor de página do site é uma ferramenta poderosa para criar e editar conteúdo da Web. As ferramentas e os recursos do Editor de páginas são acessados na barra de ferramentas da interface do usuário do Editor de páginas.
+O Editor de páginas do site AEM é uma ferramenta poderosa para criar e editar conteúdo na Web. As ferramentas e os recursos do Editor de páginas são acessados na barra de ferramentas da interface do Editor de páginas.
 
 O vídeo a seguir destaca os principais recursos do Editor de páginas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
-Os recursos do Editor de páginas incluem:
+Os recursos do editor de páginas incluem:
 
-* Arrastar e soltar de componentes e ativos
-* Painel Árvore de conteúdo que fornece um índice de todos os componentes na página
+* Arrastar e soltar componentes e ativos
+* Painel Árvore de conteúdo que fornece um índice de todos os componentes da página
 * O painel Informações da página fornece acesso a informações adicionais e ações rápidas para um autor de conteúdo
    * Abrir propriedades
-   * Página de implantação
+   * Implantar página
    * Iniciar fluxo de trabalho
    * Bloquear página / Desbloquear página
-   * Publicar / Desfazer a publicação de uma página
+   * Publicar/desfazer publicação de uma página
    * Editar modelo
    * Exibir como publicado
    * Exibir no admin
    * Ajuda
-* Adição de ícones de componentes e descrição ao painel de componentes
+* Adição de ícones e descrição do componente ao painel do componente
 * Link direto para editar ativos no DAM
 * Emulador para edição de conteúdo em linha e gerenciamento mais rápido de componentes na grade responsiva
 * Modos de edição de página
-   * Modo de Edição
+   * Modo de edição
    * Modo de layout
    * Modo de desenvolvedor
-* Preenchimento automático e pesquisa de palavra-chave para campo de formulário pathfinder
-* Barra de status do fluxo de trabalho para a página atual
+* Preenchimento automático e pesquisa por palavra-chave para o campo de formulário do pathfinder
+* Barra de status do fluxo de trabalho da página atual
 
 ## Recursos adicionais {#additional-resources}
 

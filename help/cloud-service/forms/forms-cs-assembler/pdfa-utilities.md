@@ -1,6 +1,6 @@
 ---
 title: Converta PDF em PDF/A.
-description: Crie e valide arquivos PDF/A no Forms CA usando os pontos de extremidade HTTP
+description: Criar e validar arquivos PDF/A no Forms CA usando os endpoints HTTP
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -16,9 +16,9 @@ ht-degree: 3%
 
 ---
 
-# Criar e validar documentos PDF/A
+# Criar e validar documentos do PDF/A
 
-PDF/A é uma versão padronizada ISO do Portable Document Format (PDF) especializada para uso no arquivamento e na preservação a longo prazo de documentos eletrônicos. O PDF/A difere do PDF ao proibir recursos inadequados para arquivamento de longo prazo, como vínculo de fonte (em vez de incorporação de fonte) e criptografia.
+PDF/A é uma versão padronizada em ISO do Portable Document Format (PDF), especializada para uso no arquivamento e na preservação de documentos eletrônicos a longo prazo. PDF/A difere de PDF proibindo recursos inadequados para arquivamento de longo prazo, como vinculação de fontes (em oposição à incorporação de fontes) e criptografia.
 
 ## Converter para PDF/A
 
@@ -94,7 +94,7 @@ public class PDFAUtilities {
 
 ## Validar PDF/A
 
-O código a seguir é usado para validar um determinado PDF para conformidade de PDF/A.
+O código a seguir é usado para validar um determinado PDF para conformidade com PDF/A.
 
 ```java
 public void validatePDFA(String postURL) {

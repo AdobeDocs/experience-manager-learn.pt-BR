@@ -1,6 +1,6 @@
 ---
 title: Ciclo de vida do componente OSGi
-description: Saiba mais sobre o ciclo de vida do componente OSGi, incluindo como vincular um serviço OSGi aos eventos de ciclo de vida ativados, modificados e desativados.
+description: Saiba mais sobre o ciclo de vida do componente OSGi, incluindo como vincular um serviço OSGi aos eventos de ciclo de vida ativar, modificar e desativar.
 role: Developer
 level: Beginner
 topic: Development
@@ -17,19 +17,19 @@ ht-degree: 3%
 
 # Ciclo de vida do componente OSGi
 
-Saiba mais sobre o ciclo de vida do componente OSGi, incluindo como vincular um serviço OSGi ao:
+Saiba mais sobre o ciclo de vida do componente OSGi, incluindo como vincular um serviço OSGi a:
 
 + Ativar
 + Modificado
 + e desativar
 
-...eventos do ciclo de vida.
+...eventos de ciclo de vida.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
 
 ## Recursos
 
-+ [@Ativate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 + [@Modified JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
 + [@Deactivate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Deactivate.html)
 

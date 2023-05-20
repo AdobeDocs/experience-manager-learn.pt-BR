@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Como ativar o Visualizar PDF
+# Como habilitar o PDF de visualização
 
 *Este vídeo aborda as etapas para ativar o PDF de visualização no Designer.*
 

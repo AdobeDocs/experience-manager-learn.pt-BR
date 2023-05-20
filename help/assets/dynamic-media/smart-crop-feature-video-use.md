@@ -1,6 +1,6 @@
 ---
-title: Uso do Recorte inteligente com o AEM Assets Dynamic Media
-description: O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e dispendiosas de recortar o conteúdo para obter um design responsivo.
+title: Uso do Corte inteligente com o AEM Assets Dynamic Media
+description: O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e dispendiosas de recorte de conteúdo para oferecer design responsivo.
 feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -14,24 +14,24 @@ ht-degree: 2%
 
 ---
 
-# Uso do Recorte inteligente com o AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
+# Uso do Corte inteligente com o AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
-O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e dispendiosas de recortar o conteúdo para obter um design responsivo.
+O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e dispendiosas de recorte de conteúdo para oferecer design responsivo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >
->O Vídeo assume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre como configurar AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre a configuração do AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## O recurso de Corte inteligente da Dynamic Media da Adobe Experience Manager inclui
+## O recurso Dynamic Media Smart Crop da Adobe Experience Manager inclui
 
-* AEM administradores de ativos podem criar facilmente perfis de imagem para Corte inteligente com base na largura e na altura do dispositivo.
-* O corte inteligente pode ser executado para um ativo individual ou pode ser executado para todos os ativos em uma pasta.
-* O Layout de edição de recorte inteligente pode ser redimensionado para melhor visibilidade.
+* Os administradores de ativos de AEM podem criar facilmente perfis de imagem para Recorte inteligente com base na largura e na altura do dispositivo.
+* O recorte inteligente pode ser executado para um ativo individual ou para todos os ativos em uma pasta.
+* O layout de edição de corte inteligente pode ser redimensionado para melhorar a visibilidade.
 * O componente Dynamic Media do AEM Sites é compatível com o Recorte inteligente.
-* O URL publicado para o ativo Corte inteligente está disponível para ser usado com aplicativos de terceiros que aceitam ativos hospedados.
+* O URL publicado para o ativo Recortado inteligente está disponível para ser usado com aplicativos de terceiros que aceitam ativos hospedados.
 
 >[!NOTE]
 >
->As coordenadas de recorte inteligente dependem da taxa de proporção. Ou seja, para as várias configurações de recorte inteligente em um perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no perfil de imagem, a mesma proporção será enviada para o Dynamic Media. Por causa disso, a mesma área de corte é sugerida no Editor de Corte Inteligente. Por exemplo, uma configuração de corte de 100x100 e 200x200 resultaria na geração do mesmo recorte inteligente pelo sistema.
+>As coordenadas de corte inteligente dependem da taxa de proporção. Ou seja, para as várias configurações de recorte inteligente em um perfil de imagem, se a taxa de proporção for a mesma para as dimensões adicionadas no perfil de imagem, a mesma taxa de proporção será enviada para o Dynamic Media. Por causa disso, a mesma área de corte é sugerida no Editor de corte inteligente. Por exemplo, uma configuração de corte de 100x100 e 200x200 resultaria na geração do mesmo corte inteligente pelo sistema.

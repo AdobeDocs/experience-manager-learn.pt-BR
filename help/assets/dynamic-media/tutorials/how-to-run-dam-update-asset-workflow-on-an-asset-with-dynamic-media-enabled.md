@@ -1,6 +1,6 @@
 ---
-title: Processamento de ativos para AEM Dynamic Media
-description: Etapas para executar o fluxo de trabalho de ativo de atualização do DAM em um ativo com o Dynamic Media ativado.
+title: Processamento de ativos para o AEM Dynamic Media
+description: Etapas para executar o fluxo de trabalho do ativo de atualização do DAM em um ativo com o Dynamic Media ativado.
 role: Developer
 level: Intermediate
 version: 6.5
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Processamento de ativos para AEM Dynamic Media
+# Processamento de ativos para o AEM Dynamic Media
 
-Este vídeo aborda o processo para executar o fluxo de trabalho do Ativo de atualização do DAM em um ativo com o Dynamic Media ativado.
+Este vídeo aborda o processo de execução do fluxo de trabalho Ativo de atualização do DAM em um ativo com o Dynamic Media ativado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Controle de versão e comentários do arquivo
-description: Usando o painel Adobe Asset Link, você pode acessar detalhes do arquivo para ativos no AEM Assets, por exemplo, miniatura, metadados básicos e versões no painel. Explore como criar, visualizar e comparar versões de arquivo.
+description: Usando o painel Link de ativos do Adobe, você pode acessar detalhes do arquivo para ativos no AEM Assets, por exemplo, miniatura, metadados básicos e versões no painel. Saiba como criar, visualizar e comparar versões de arquivos.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 thumbnail: 34048.jpg
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Controle de versão e comentários do arquivo{#file-versioning-and-comments}
 
-Usando o painel Adobe Asset Link, você pode acessar detalhes do arquivo para ativos no AEM Assets, por exemplo, miniatura, metadados básicos e versões no painel. Explore como criar, visualizar e comparar versões de arquivo.
+Usando o painel Link de ativos do Adobe, você pode acessar detalhes do arquivo para ativos no AEM Assets, por exemplo, miniatura, metadados básicos e versões no painel. Saiba como criar, visualizar e comparar versões de arquivos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)

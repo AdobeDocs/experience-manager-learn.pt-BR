@@ -1,6 +1,6 @@
 ---
 title: O que é o pacote de estrutura do repositório em um projeto AEM?
-description: Explore o pacote de Estrutura do Repositório de um aplicativo AEM, sua importância e como defini-lo corretamente.
+description: Explore o pacote de estrutura do repositório de um aplicativo AEM, sua importância e como defini-lo corretamente.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 14%
 
 # Pacote de estrutura do repositório
 
-Explore um aplicativo AEM [Pacote de estrutura do repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=pt-BR), sua importância e como defini-la de maneira ideal.
+Explorar um aplicativo AEM [Pacote de estrutura do repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=pt-BR), sua importância e como defini-la de maneira ideal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

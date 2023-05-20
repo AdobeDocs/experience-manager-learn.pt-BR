@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como atualizar XDPs e arquivos de dados personalizados em FormsIVS e OutputIVS
+# Como atualizar XDPs personalizados e arquivos de dados em FormsIVS e OutputIVS
 
-*Este vídeo aborda as etapas para atualizar seus XDPs e arquivos de dados personalizados em FormsIVS e OutputIVS para fins de teste.*
+*Este vídeo aborda as etapas para atualizar XDPs personalizados e arquivos de dados em FormsIVS e OutputIVS para fins de teste.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)

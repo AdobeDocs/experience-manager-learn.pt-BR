@@ -1,6 +1,6 @@
 ---
-title: Arquivos de registro do Cloud 5 AEM
-description: Este é um aprofundamento sobre como acessar logs em AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário e das APIs.
+title: Arquivos de registro AEM da nuvem 5
+description: Veja em detalhes como acessar logs no AEM as a Cloud Service, inclusive como acessá-los por meio da interface do usuário, bem como de APIs.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,17 +15,17 @@ ht-degree: 14%
 
 ---
 
-# Arquivos de registro do Cloud 5 AEM
+# Arquivos de registro AEM da nuvem 5
 
-Este é um aprofundamento sobre como acessar logs em AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário e das APIs.
+Veja em detalhes como acessar logs no AEM as a Cloud Service, inclusive como acessá-los por meio da interface do usuário, bem como de APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ Arquivos de registro [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)
-+ Acesso a arquivos de log por meio da interface do usuário
++ Arquivos de log [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)
++ Acesso aos arquivos de registro por meio da interface do
 + Uso da CLI do Adobe
-   + [CLI extensível Adobe I/O](https://github.com/adobe/aio-cli)
+   + [CLI do Adobe I/O Extensible](https://github.com/adobe/aio-cli)
    + [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
-+ Arquivos de registro à direita
++ Resíduo de arquivos de registro

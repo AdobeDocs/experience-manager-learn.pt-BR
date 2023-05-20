@@ -1,5 +1,5 @@
 ---
-title: Etapas para capturar as informações necessárias para solucionar problemas de PDF/A
+title: Etapas para obter as informações necessárias para solucionar problemas de PDF/A
 description: Solucionar problemas relacionados à conversão e validação do Assembler
 type: Troubleshooting
 role: Developer

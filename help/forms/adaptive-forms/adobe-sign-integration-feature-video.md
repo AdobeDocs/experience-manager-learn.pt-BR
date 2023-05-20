@@ -1,6 +1,6 @@
 ---
-title: Uso do Acrobat Sign com AEM Forms
-description: Uso do Acrobat Sign com AEM Forms
+title: Utilização do Acrobat Sign com o AEM Forms
+description: Utilização do Acrobat Sign com o AEM Forms
 feature: Acrobat Sign
 role: Admin
 level: Beginner
@@ -22,16 +22,16 @@ ht-degree: 0%
 ---
 
 
-# Uso do Acrobat Sign com AEM Forms{#using-adobe-sign-with-aem-forms}
+# Utilização do Acrobat Sign com o AEM Forms{#using-adobe-sign-with-aem-forms}
 
-Uso do Acrobat Sign com AEM Forms
+Utilização do Acrobat Sign com o AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Este vídeo aborda o processo de configuração do serviço de nuvem Acrobat Sign e adição de vários campos de assinatura a um Formulário adaptável AEM.*
+*Este vídeo aborda o processo de configuração do serviço de nuvem da Acrobat Sign e a adição de vários campos de assinatura a um Formulário adaptável AEM.*
 
 >[!NOTE]
 >
->Este recurso está disponível somente a partir do AEM 6.3.
+>Esse recurso está disponível somente a partir do AEM 6.3.
 
-Visite o [Exemplos de AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para obter um link para uma demonstração ao vivo desse recurso.
+Visite o [Amostras do AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para obter um link para uma demonstração ao vivo desse recurso.

@@ -1,6 +1,6 @@
 ---
-title: Implementar etapa do processo personalizado com diálogo
-description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa do processo personalizado
+title: Implementação da etapa de processo personalizada com caixa de diálogo
+description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa de processo personalizada
 feature: Workflow
 version: 6.5
 topic: Development
@@ -17,24 +17,24 @@ ht-degree: 0%
 
 # Etapa de processo personalizada
 
-Este tutorial é destinado aos clientes do AEM Forms que precisam implementar um componente de fluxo de trabalho personalizado. A primeira etapa na criação do componente de fluxo de trabalho é gravar seu código java que será associado ao componente de fluxo de trabalho. Para a finalidade deste tutorial, vamos gravar uma classe java simples para armazenar os anexos de formulário adaptável no sistema de arquivos. Esse código java lerá os argumentos especificados no componente de fluxo de trabalho.
+Este tutorial destina-se aos clientes do AEM Forms que precisam implementar o componente de fluxo de trabalho personalizado. A primeira etapa na criação do componente de fluxo de trabalho é escrever seu código java que será associado ao componente de fluxo de trabalho. Para o propósito deste tutorial, vamos escrever classes java simples para armazenar os anexos de formulário adaptáveis ao sistema de arquivos. Este código java lerá os argumentos especificados no componente de fluxo de trabalho.
 
 As etapas a seguir são necessárias para gravar a classe java e implantar a classe como um pacote OSGi
 
 ## Criar projeto Maven
 
-O primeiro passo é criar um projeto maven usando o Adobe Archetype apropriado. As etapas detalhadas estão listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois que o projeto maven for importado para o eclipse, você estará pronto para começar a gravar seu primeiro componente OSGi que pode ser usado na etapa do processo.
+A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe apropriado. As etapas detalhadas estão listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois de importar o projeto maven para o eclipse, você estará pronto para começar a escrever seu primeiro componente OSGi que pode ser usado na etapa de processo.
 
 
-### Criar classe que implemente o WorkflowProcess
+### Criar classe que implementa WorkflowProcess
 
-Abra o projeto maven no eclipse IDE. Expandir **nome do projeto** > **núcleo** pasta. Expanda a pasta src/main/java. Você deve ver um pacote que termine com &quot;núcleo&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Você precisará substituir o método de execução. A assinatura do método execute é a seguinte execução pública void (WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)aciona WorkflowException
+Abra o projeto maven no IDE eclipse. Expandir **projectname** > **core** pasta. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;core&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
-Neste tutorial, gravaremos os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do fluxo de trabalho do AEM.
+Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
 
-Para realizar esse caso de uso, a seguinte classe java foi gravada
+Para realizar esse caso de uso, a seguinte classe java foi escrita
 
-Vamos dar uma olhada neste código
+Vamos analisar esse código
 
 ```java
 package com.mysite.core;
@@ -116,20 +116,20 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentPath - Esse é o mesmo local especificado no formulário adaptável quando você configura a ação de envio do formulário adaptável para chamar AEM fluxo de trabalho. Este é um nome da pasta na qual você deseja que os anexos sejam salvos em AEM em relação à carga do fluxo de trabalho.
+* attachmentsPath — esse é o mesmo local especificado no Formulário adaptável ao configurar a ação de envio do Formulário adaptável para chamar o Fluxo de trabalho do AEM. Esse é o nome da pasta na qual você deseja que os anexos sejam salvos no AEM em relação à carga útil do fluxo de trabalho.
 
-* saveToLocation - esse é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
+* saveToLocation — é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
 
 Esses dois valores são passados como argumentos de processo usando a caixa de diálogo do componente de fluxo de trabalho
 
-![ProcessStep](assets/custom-workflow-component.png)
+![EtapaProcesso](assets/custom-workflow-component.png)
 
-O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta attachmentPath. O restante do código é repetido por meio dos resultados da pesquisa para criar um objeto de Documento e salvá-lo no sistema de arquivos
+O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta attachmentsPath. O restante do código repete os resultados da pesquisa para criar o objeto Documento e salvá-lo no sistema de arquivos
 
 
 >[!NOTE]
 >
->Como estamos usando um objeto de Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk em seu projeto maven.
+>Como estamos usando um objeto Documento específico para o AEM Forms, é necessário incluir a dependência aemfd-client-sdk no projeto maven.
 
 ```xml
 <dependency>
@@ -142,9 +142,9 @@ O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta at
 #### Criar e implantar
 
 [Crie o pacote conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[Certifique-se de que o pacote esteja implantado e no estado ativo](http://localhost:4502/system/console/bundles)
+[Verifique se o pacote está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
 
 ## Próximas etapas
 
-Crie seu [componente de fluxo de trabalho personalizado](./custom-workflow-component.md)
+Crie seu [componente personalizado do fluxo de trabalho](./custom-workflow-component.md)
 

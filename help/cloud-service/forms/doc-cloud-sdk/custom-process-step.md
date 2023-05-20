@@ -1,6 +1,6 @@
 ---
-title: Criar etapa do processo personalizada
-description: Etapa de processo personalizada para converter palavras, anexos excel em PDF usando o Document Cloud.
+title: Criar etapa de processo personalizada
+description: Etapa de processo personalizada para converter anexos do Word, Excel para PDF usando Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -19,9 +19,8 @@ ht-degree: 0%
 
 # Etapa de processo personalizada
 
-Veja a seguir o código completo da etapa do processo personalizado que converte e substitui os arquivos nativos pelos pdfs convertidos.
-Esta etapa personalizada pesquisa todos os anexos sob o nome da pasta, que é fornecido como um argumento de processo no fluxo de trabalho.
-Esta etapa do processo personalizado usa os métodos do DocumentCloudSDKSservice personalizado para criar PDFs.
+Veja a seguir o código completo da etapa de processo personalizada que converte e substitui os arquivos nativos pelos PDFs convertidos. Essa etapa personalizada pesquisa todos os anexos sob o nome da pasta, que é fornecido como um argumento de processo no fluxo de trabalho.
+Esta etapa de processo personalizada usa os métodos do DocumentCloudSDKService personalizado para criar o PDF.
 
 
 ```java

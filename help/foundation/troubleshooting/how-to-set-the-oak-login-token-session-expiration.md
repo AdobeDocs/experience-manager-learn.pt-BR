@@ -1,5 +1,5 @@
 ---
-title: Como definir a expiração da sessão do token de login do Oak
+title: Como definir a expiração da sessão do token de logon do Oak
 description: Etapas para definir o tempo limite de expiração da sessão do token de origem do oak
 type: Troubleshooting
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Como definir a expiração da sessão do token de login do Oak
+# Como definir a expiração da sessão do token de logon do Oak
 
-*Este vídeo aborda as etapas para definir a expiração da sessão do token de login do Oak.*
+*Este vídeo aborda as etapas para definir a expiração da sessão do token de logon do Oak.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)

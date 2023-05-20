@@ -1,6 +1,6 @@
 ---
-title: Uso AEM fragmentos de experiência
-description: Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas do Sites e sistemas de terceiros.
+title: Uso de fragmentos de experiência do AEM
+description: Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
 sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
@@ -21,15 +21,15 @@ ht-degree: 2%
 
 # Uso de Fragmentos de experiência {#using-aem-experience-fragments}
 
-Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas do Sites e sistemas de terceiros.
+Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Um Fragmento de experiência é um conjunto agrupado de componentes que, quando combinados, cria uma experiência. Por exemplo, um *Título*, *Imagem*, *Descrição* e *Botão de ação Chamar para* pode ser combinado para formar uma experiência de teaser.
+Um Fragmento de experiência é um conjunto agrupado de componentes que, quando combinados, criam uma experiência. Por exemplo, uma variável *Título*, *Imagem*, *Descrição*, e *Botão de chamada para ação* podem ser combinados para formar uma experiência de teaser.
 
-Com fragmentos de experiência, os profissionais de marketing podem:
+Com Fragmentos de experiência, os profissionais de marketing podem:
 
 * Reutilizar uma experiência em canais (canais próprios e pontos de contato de terceiros)
 * Criar variações de uma experiência para casos de uso específicos
 * Manter variações sincronizadas com o uso da Live Copy
-* Experiências de postagem social para Facebook e Pinterest prontas para uso
+* Experiências de publicação social no Facebook e no Pinterest prontas para uso

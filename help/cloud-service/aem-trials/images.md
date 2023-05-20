@@ -1,6 +1,6 @@
 ---
-title: Índice de imagem de AEM Trials
-description: Este ficheiro contém uma referência às imagens utilizadas nos materiais de marketing dos ensaios de AEM.
+title: Índice de imagem de testes de AEM
+description: Este arquivo contém referência às imagens usadas nos materiais de marketing de testes de AEM.
 index: false
 hidefromtoc: true
 hide: true
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 ---
 
-# Índice de imagem de AEM Trials
+# Índice de imagem de testes de AEM
 
-Os arquivos de imagem devem ser colocados na variável `assets` pasta que fica ao lado deste arquivo.
+Os arquivos de imagem devem ser colocados na `assets` pasta que reside ao lado deste arquivo.
 
-Cada arquivo de imagem a ser publicado deve ser vinculado a partir desse arquivo usando a sintaxe :
+Cada arquivo de imagem a ser publicado deve ser vinculado a partir desse arquivo usando a sintaxe:
 
-![Conta pessoal de imagem de email pronta para avaliação](./assets/select-personal-account.png)
-![Imagem de email do Slack](./assets/Slack-email-image.png)
+![Conta pessoal da imagem de email pronta para avaliação](./assets/select-personal-account.png)
+![imagem de email do Slack](./assets/Slack-email-image.png)

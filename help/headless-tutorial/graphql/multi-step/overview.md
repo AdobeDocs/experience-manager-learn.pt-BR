@@ -1,6 +1,6 @@
 ---
-title: Introdução ao AEM tutorial autônomo - GraphQL
-description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs AEM GraphQL.
+title: Tutorial prático do AEM Headless - GraphQL
+description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs do AEM GraphQL.
 doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
@@ -14,45 +14,45 @@ exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # Introdução ao AEM Headless - GraphQL
 
-Um tutorial completo que ilustra como criar e expor conteúdo usando AEM APIs do GraphQL e consumido por um aplicativo externo, em um cenário de CMS sem cabeçalho.
+Um tutorial completo que ilustra como criar e expor conteúdo usando APIs do AEM GraphQL e consumi-lo por um aplicativo externo, em um cenário de CMS headless.
 
-Este tutorial explica como AEM APIs do GraphQL e recursos sem periféricos podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
+Este tutorial explora como as APIs do AEM GraphQL e os recursos headless podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
 
 Este tutorial aborda os seguintes tópicos:
 
 * Criar uma configuração de projeto
 * Criar modelos de fragmento de conteúdo para modelar dados
-* Crie Fragmentos de conteúdo com base nos modelos feitos anteriormente.
-* Explore como os Fragmentos de conteúdo no AEM podem ser consultados usando a ferramenta de desenvolvimento GraphiQL integrada.
-* Para armazenar ou manter as consultas do GraphQL no AEM
-* Consumir consultas persistentes do GraphQL a partir de um aplicativo React de amostra
+* Crie fragmentos de conteúdo com base nos modelos criados anteriormente.
+* Explore como os fragmentos de conteúdo no AEM podem ser consultados usando a ferramenta de desenvolvimento GraphiQL integrada.
+* Para armazenar ou criar consultas persistentes do GraphQL para AEM
+* Consumir consultas persistentes do GraphQL de um aplicativo React de amostra
 
 ## Pré-requisitos {#prerequisites}
 
-Os seguintes itens são necessários para seguir este tutorial:
+São necessários os seguintes itens para seguir este tutorial:
 
-* Habilidades básicas de HTML e JavaScript
+* Habilidades básicas em HTML e JavaScript
 * As seguintes ferramentas devem ser instaladas localmente:
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
-   * Um IDE (por exemplo, [Código Microsoft® Visual Studio](https://code.visualstudio.com/))
+   * Um IDE (por exemplo [Código do Microsoft® Visual Studio](https://code.visualstudio.com/))
 
 ### Ambiente AEM
 
-Para concluir este tutorial, AEM é recomendado o acesso do Administrador a um ambiente as a Cloud Service AEM. Se você não tiver acesso a AEM ambiente as a Cloud Service, poderá usar a variável [SDK do Quickstart local AEM as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). No entanto, é importante observar que algumas telas da interface do usuário do produto, como a navegação do Fragmento de conteúdo, são diferentes.
+Para concluir este tutorial, recomenda-se o acesso do administrador do AEM a um ambiente as a Cloud Service do AEM. Se você não tiver acesso ao ambiente as a Cloud Service do AEM, poderá usar o [SDK local de início rápido do AEM as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). No entanto, é importante observar que algumas telas de interface do usuário do produto, como a navegação pelo Fragmento de conteúdo, são diferentes.
 
 ## Vamos começar!
 
-Inicie o tutorial com [Definição dos modelos de fragmento do conteúdo](content-fragment-models.md).
+Inicie o tutorial com [Definição de modelos de fragmento de conteúdo](content-fragment-models.md).
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis na variável [Guias de AEM - Projeto WKND GraphQL GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis no [Guias do AEM - Projeto WKND GraphQL GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Se você encontrar um problema com o tutorial ou o código, deixe uma [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

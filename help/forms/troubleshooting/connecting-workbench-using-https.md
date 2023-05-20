@@ -1,6 +1,6 @@
 ---
 title: Etapas para conectar o Workbench ao servidor do AEM Forms usando HTTPS
-description: Este artigo explica as etapas para conectar o Workbench ao servidor AEM Forms por SSL (usando HTTPS)
+description: Este artigo explica as etapas para conectar o Workbench ao servidor do AEM Forms por SSL (usando HTTPS)
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para conectar o Workbench ao servidor do AEM Forms usando HTTPS
 
-*Este vídeo aborda as etapas para conectar o Workbench ao servidor da AEM Forms usando HTTPS.*
+*Este vídeo aborda as etapas para conectar o Workbench ao servidor do AEM Forms usando HTTPS.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335482?quality=12&learn=on)

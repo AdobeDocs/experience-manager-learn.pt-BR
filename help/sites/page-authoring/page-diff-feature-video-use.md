@@ -1,7 +1,7 @@
 ---
-title: Usando a diferença de página com o AEM Sites
+title: Usar a diferença de página com o AEM Sites
 seo-title: Using Page Difference with AEM Sites
-description: Os recursos de diferença de página do AEM Sites mostram uma exibição rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, lançamentos, cópia de idioma).
+description: Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e com código de cores do que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
 seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
@@ -24,29 +24,29 @@ ht-degree: 1%
 
 # Uso do recurso Diferença de página {#using-page-difference-with-aem-sites}
 
-Os recursos de diferença de página do AEM Sites mostram uma exibição rápida e codificada por cores do conteúdo que foi alterado em uma página (versão, live copy, lançamentos, cópia de idioma).
+Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e com código de cores do que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
 
-## Comparação de versões da página {#comparing-page-versions}
+## Comparação de versões de página {#comparing-page-versions}
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**Alterações de HTML**
+**Alterações no HTML**
 
 * **Verde**: Novo conteúdo
-* **Vermelho**: Conteúdo removido
+* **Vermelho**: conteúdo removido
 
-**Alterações de componentes**
+**Alterações de componente**
 
 * **Verde**: Novo componente
-* **Vermelho**: Componente removido
-* **Azul**: Componente modificado
+* **Vermelho**: componente removido
+* **Azul**: componente modificado
 
-## Comparação de páginas de lançamento {#comparing-launch-pages}
+## Comparação de páginas de inicialização {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
 
-O recurso de Diferença de página também pode ser usado para identificar a diferença entre blueprints e livecopies, e blueprints e cópias de idioma.
+O recurso Diferença de página também pode ser usado para identificar a diferença entre blueprints e livecopies, e blueprints e cópias de idioma.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de comparação de página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentação de comparação da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)

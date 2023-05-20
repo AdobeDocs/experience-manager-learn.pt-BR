@@ -1,6 +1,6 @@
 ---
-title: Como habilitar o Registro de desempenho no AEM Forms para depurar problemas relacionados ao Forms e ao serviço de saída
-description: Etapas para ativar o registro de desempenho para depurar problemas relacionados ao Forms ou ao serviço de saída
+title: Como habilitar o Log de desempenho no AEM Forms para depurar problemas relacionados ao Forms e ao serviço de saída
+description: Etapas para habilitar o log de desempenho para depurar problemas relacionados ao Forms ou ao serviço de saída
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como habilitar o Registro de desempenho no AEM Forms para depurar os problemas relacionados ao Forms e ao serviço de saída
+# Como habilitar o registro de desempenho no AEM Forms para depurar problemas relacionados ao serviço de saída e Forms
 
-*Este vídeo aborda o processo para habilitar o logon de desempenho no AEM Forms para depurar os problemas relacionados ao Forms e ao serviço de saída .*
+*Este vídeo aborda o processo de habilitação do logon de desempenho no AEM Forms para depurar problemas relacionados ao Forms e ao serviço de saída.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

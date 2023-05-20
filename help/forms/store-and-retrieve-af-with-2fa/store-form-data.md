@@ -1,6 +1,6 @@
 ---
 title: Armazenar dados de formulário
-description: Armazenar dados do formulário junto com o novo mapa de anexos no banco de dados
+description: Armazenar dados de formulário junto com o novo mapa de anexos no banco de dados
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 # Armazenar dados de formulário
 
-A próxima etapa é criar um serviço para inserir uma nova linha no banco de dados para armazenar os dados do formulário adaptável e as informações de anexos associadas.
+A próxima etapa é criar um serviço para inserir uma nova linha no banco de dados para armazenar os dados do formulário adaptável e os anexos associados.
 A captura de tela a seguir mostra uma linha no banco de dados.
 
 
-![exemplo de linha](assets/sample-row.JPG)
+![linha de exemplo](assets/sample-row.JPG)
 
 
 O código a seguir insere uma nova linha no banco de dados com os dados apropriados
@@ -72,5 +72,5 @@ public String storeFormData(String formData, String attachmentsInfo, String tele
 
 ## Próximas etapas
 
-[Implementar Salvar e Sair](./create-servlet.md)
+[Implementar Salvar e sair](./create-servlet.md)
 

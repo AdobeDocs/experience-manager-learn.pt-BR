@@ -1,6 +1,6 @@
 ---
-title: Combinação de informativos selecionados em um arquivo
-description: Combinar boletins informativos selecionados usando o serviço montador
+title: Combinação de boletins informativos selecionados em um arquivo
+description: Combinar boletins informativos selecionados usando o serviço de montagem
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 # Combinar informativos selecionados em um pdf
 
-As seleções do usuário são armazenadas em um campo oculto. O valor desse campo oculto é passado para o servlet, o que combinará as seleções em um pdf usando [Serviço Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+As seleções do usuário são armazenadas em um campo oculto. O valor desse campo oculto é passado para o servlet que combinará as seleções em um pdf usando [Serviço Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
-## Servlet para reunir arquivos pdf
+## Servlet para montar arquivos pdf
 
-O código a seguir faz a montagem dos boletins informativos selecionados. O código cria um mapa de documentos a partir das seleções do usuário. A partir deste mapa, um DDX é criado e esse DDX juntamente com o mapa de documentos é passado para o método de invocação do serviço Assembler para obter o documento combinado. O pdf montado é armazenado no repositório e seu caminho é retornado ao aplicativo chamador.
+O código a seguir faz a montagem dos boletins selecionados. O código cria um mapa de documentos a partir das seleções do usuário. A partir deste mapa um DDX é criado e este DDX junto com o mapa de documentos é passado para o método de chamada do serviço Assembler para obter o documento combinado. O pdf montado é armazenado no repositório e seu caminho é retornado ao aplicativo de chamada.
 
 ```java
 protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse response)
@@ -78,9 +78,9 @@ protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse r
    }
 ```
 
-## Funções do utilitário
+## Funções utilitárias
 
-As seguintes funções de utilitário foram usadas na montagem dos boletins informativos. Essas funções de utilitário criam DDX a partir do mapa de documentos e convertem o org.w3c.dom.Document em objeto de documento AEMFD.
+As seguintes funções utilitárias foram usadas na montagem dos informativos. Essas funções de utilitário criam DDX a partir do mapa de documentos e convertem o org.w3c.dom.Document em um objeto de documento AEMFD.
 
 
 ```java

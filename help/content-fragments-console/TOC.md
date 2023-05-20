@@ -1,7 +1,7 @@
 ---
-user-guide-title: Vídeos do console Fragmento de conteúdo AEM
-user-guide-description: Uma coleção de vídeos para o console Fragmento do conteúdo do Adobe Experience Manager.
-breadcrumb-title: Vídeos do console Fragmento de conteúdo AEM
+user-guide-title: Vídeos do console de Fragmento de conteúdo do AEM
+user-guide-description: Uma coleção de vídeos para o console de Fragmento de conteúdo do Adobe Experience Manager.
+breadcrumb-title: Vídeos do console de Fragmento de conteúdo do AEM
 sub-product: Experience Manager Sites
 version: Cloud Service
 feature-set: Experience Manager Sites
@@ -17,7 +17,7 @@ ht-degree: 24%
 ---
 
 
-# Vídeos do console Fragmento de conteúdo AEM {#content-fragments-console}
+# Vídeos do console de Fragmento de conteúdo do AEM {#content-fragments-console}
 
 + [Visão geral](overview.md)
 + Básico{#basics}
@@ -26,8 +26,8 @@ ht-degree: 24%
    + [Filtragem rápida](search/fast-filtering.md)
 + Editor{#editor}
    + [Cópias de idioma](editor/language-copies.md)
-   + [Nova alternância de editor](editor/new-editor-toggle.md)
-   + [Referências de conteúdo não ativo](editor/non-asset-content-references.md)
+   + [Alternância do novo editor](editor/new-editor-toggle.md)
+   + [Referências de conteúdo não relacionado a ativos](editor/non-asset-content-references.md)
    + [Comparação de variantes de RTE](editor/rte-variant-compare.md)
 + [Extensibilidade](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
 + [Documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR).

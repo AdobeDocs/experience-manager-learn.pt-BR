@@ -1,5 +1,5 @@
 ---
-title: Uso da operação Colocar ativo Vinculado
+title: Utilização da operação de ativo Vinculado ao local
 description: Saiba como usar ativos do AEM Assets usando a operação Inserir vinculado.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link

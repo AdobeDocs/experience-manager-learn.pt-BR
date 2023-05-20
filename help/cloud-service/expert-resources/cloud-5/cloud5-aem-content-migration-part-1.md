@@ -1,6 +1,6 @@
 ---
 title: Migração para a nuvem - Parte 1
-description: Darin e James discutem a migração para a AEM Cloud e demonstram algumas técnicas e práticas recomendadas.
+description: Darin e James discutem sobre a migração para a nuvem AEM e mostram algumas técnicas e práticas recomendadas.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -18,15 +18,15 @@ ht-degree: 5%
 
 # Migração para a nuvem - Parte 1
 
-Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/No local. Eles também tocam na migração para a nuvem. convidado especial e especialista em nuvem, [Dr. Applesmith](https://twitter.com/DrApplesmith) faz uma aparência.
+Darin e James discutem sobre o Dispatcher na nuvem do AEM, incluindo algumas práticas recomendadas e diferenças em relação ao AMS/No local. Elas também abordam a migração para a nuvem. Convidado especial e especialista em nuvem, [Dr. Applesmith](https://twitter.com/DrApplesmith) faz uma aparição.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
 + avaliação da(s) instância(s) que deseja migrar
-   + BPA - analisador de práticas recomendadas
-   + CAM - gerenciador de aceleração da nuvem
-+ [repostores](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
+   + BPA - Analisador de práticas recomendadas
+   + CAM - Cloud Acceleration Manager
++ [repostagens](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [Ferramentas de migração do Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration)

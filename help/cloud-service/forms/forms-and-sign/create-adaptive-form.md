@@ -1,5 +1,5 @@
 ---
-title: Crie um formulário adaptável para usar a configuração do Acrobat Sign Cloud Services criada
+title: Criar um formulário adaptável para usar a configuração criada do Acrobat Sign Cloud Services
 description: Criar um formulário adaptável para usar com o Acrobat Sign
 type: Documentation
 role: Developer
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Formulário adaptável com Acrobat Sign
+# Formulário adaptável com o Acrobat Sign
 
 
-Crie um formulário adaptável para usar a Configuração de nuvem do Acrobat Sign
+Criar um formulário adaptável para usar a Configuração de nuvem do Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332438?quality=12&learn=on)

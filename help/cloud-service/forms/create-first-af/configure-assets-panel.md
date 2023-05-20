@@ -1,6 +1,6 @@
 ---
-title: Configurar painel de ativos
-description: Adicione um painel Layout de acordeão ao painel Ativos.
+title: Configurar o painel de ativos
+description: Adicione um painel de layout Acordeão ao painel de ativos.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configurar painel de ativos
+# Configurar o painel de ativos
 
-Capture os ativos do requerente usando um painel repetível com um layout Acordeão .
+Capture os ativos do candidato usando o painel repetível com um layout Acordeão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)

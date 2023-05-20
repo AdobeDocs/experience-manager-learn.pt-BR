@@ -1,6 +1,6 @@
 ---
 title: Processamento de perfis
-description: Os perfis de processamento definem as representações a serem criadas para ativos AEM as a Cloud Service.
+description: Os perfis de processamento definem as representações que serão criadas para ativos no AEM as a Cloud Service.
 feature: Asset Compute Microservices
 version: Cloud Service
 kt: 4993
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # Processamento de perfis
 
-Os perfis de processamento definem as representações a serem criadas para ativos AEM as a Cloud Service.
+Os perfis de processamento definem as representações que serão criadas para ativos no AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)

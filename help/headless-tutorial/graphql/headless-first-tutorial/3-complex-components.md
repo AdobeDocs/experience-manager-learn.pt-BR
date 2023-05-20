@@ -1,5 +1,5 @@
 ---
-title: Criar um componente complexo de Lista de imagens - AEM tutorial autônomo
+title: Criar um componente complexo da lista de imagens - primeiro tutorial sobre AEM headless
 description: Saiba como trabalhar com Fragmento de conteúdo, referências de conteúdo e imagens.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -20,27 +20,27 @@ ht-degree: 2%
 
 # Criar componente complexo
 
-Bem-vindo a este capítulo tutorial, onde exploraremos a criação de um componente de Lista de imagens complexo que renderiza Fragmentos de conteúdo, referências aninhadas de Fragmento de conteúdo e ativos de imagem referenciados. Daremos um passo além ao tornar o aplicativo React editável usando o Editor Universal.
+Bem-vindo a este capítulo de tutorial, onde exploraremos a criação de um componente complexo da Lista de imagens que renderiza fragmentos de conteúdo, referências de fragmento de conteúdo aninhadas e ativos de imagem referenciados. Vamos um passo além, tornando o aplicativo React editável usando o Editor universal.
 
-Os Fragmentos de conteúdo no Adobe Experience Manager (AEM) fornecem uma abordagem estruturada para gerenciar conteúdo. Nós aproveitamos os Fragmentos de conteúdo para preencher nosso componente Lista de imagens , manipulando referências aninhadas e exibindo ativos de imagem referenciados.
+Os fragmentos de conteúdo no Adobe Experience Manager (AEM) fornecem uma abordagem estruturada para o gerenciamento de conteúdo. Usamos fragmentos de conteúdo para preencher nosso componente Lista de imagens, lidando com referências aninhadas e exibindo ativos de imagem referenciados.
 
-Ao longo deste tutorial, nós o guiaremos pela criação do componente Lista de imagens, manuseio de referências aninhadas, renderização de ativos de imagem referenciados e integração do Editor Universal. Você aprenderá a configurar dependências, projetar a estrutura do componente, recuperar e analisar Fragmentos de conteúdo e tornar o aplicativo editável usando o Editor universal.
+Neste tutorial, guiaremos você pela criação do componente Lista de imagens, lidando com referências aninhadas, renderizando ativos de imagem referenciados e integrando o Editor universal. Você aprenderá a configurar dependências, projetar a estrutura do componente, recuperar e analisar fragmentos de conteúdo e tornar o aplicativo editável usando o Editor universal.
 
-Ao final deste capítulo tutorial, você terá um componente de Lista de imagens totalmente funcional e editável. Você estará equipado com o conhecimento e as habilidades para criar componentes dinâmicos no aplicativo React, melhorando a experiência de criação de conteúdo com o Editor Universal. Vamos começar a criar seu componente de Lista de imagens editável!
+No final deste capítulo de tutorial, você terá um componente de Lista de imagens totalmente funcional e editável. Você estará equipado com o conhecimento e as habilidades para criar componentes dinâmicos no aplicativo React, aprimorando a experiência de criação de conteúdo com o Editor universal. Vamos começar a criar seu componente editável da Lista de imagens!
 
 ## Criar uma lista de imagens
 
-1. Agora, devemos criar alguns fragmentos de oferta e um componente da lista de imagens.  Navegue até o console do fragmento de conteúdo.
+1. Agora devemos criar alguns fragmentos de oferta e um componente de lista de imagens.  Navegue até o console de fragmentos de conteúdo.
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Queremos criar um fragmento do tipo `imagelist` (modelo é `imagelist`) e nós lhe daremos o título `imagelist`.
+   Queremos criar um fragmento do tipo `imagelist` (o modelo é `imagelist`) e daremos o título a ele `imagelist`.
 
-   No editor Fragmento de conteúdo, temos a oportunidade de selecionar um fragmento para incluir ou criar um fragmento.  Selecione criar um fragmento.
+   No editor de Fragmento de conteúdo, temos a oportunidade de selecionar um fragmento para incluir ou criar um fragmento.  Selecione criar um fragmento.
 
-   Nosso tipo de modelo é Lista de imagens.  Dê um título e nome ao fragmento.
+   Nosso tipo de modelo é Lista de imagens.  Dê um título e um nome ao fragmento.
 
-1. Como uma lista de imagens é um fragmento do tipo container que inclui referência a outros fragmentos, novas ofertas podem ser criadas diretamente do editor.  Crie um fragmento de oferta e inclua uma descrição da imagem e um artigo.  Você pode recortar e colar o texto abaixo.  Estamos usando o título do fragmento como o título do cartão.
+1. Como uma lista de imagens é um fragmento do tipo container que inclui referência a outros fragmentos, novas ofertas podem ser criadas diretamente no editor.  Crie um fragmento de oferta e inclua uma descrição da imagem e um artigo.  Você pode recortar e colar o texto abaixo.  Estamos usando o título do fragmento como o título do cartão.
 
    __Article1__
 
@@ -81,7 +81,7 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    Like a faint torch, a striking green hue shines through the tent fabric, disappearing just as quickly. The sound of zippers does its best to penetrate the ocean's roar, as we curiously peek our heads out into the freezing wind. Moments after, we sprint out in sweatpants, cameras in hand to document the fabled phenomenon the past week's cloud layer has prevented us from seeing; the Aurora Borealis. It starts with only the faintest streaks of green and blue, seemingly appearing out of thin air, only to vanish before our eyes have had a chance to adjust to the dark. Every pulse becoming more radiant, and before we know it we are gazing in awe at the dancing curtains, shifting colors under starry skies. After a week of battling the elements, it's as if Mother Nature has decided to treat us with just a taste of the breathtaking beauty she is capable of, as if we have finally proven ourselves worthy. With our jaws still open, we watch on as the mesmerizing curtains of emerald green are veiled in a dark cloud layer, and the winds once again take hold of the bay. The exhibition is over for now, but these islands will stay in our minds forever. See you next time, Lofoten, may the forces of life yet again gravitate us towards your majestic shores, because in the hardship of finding what we came for, something else has emerged, a yearning for the undisturbed, the unknown and the truly magical. It's waiting for you no matter where you are in the world.
    ```
 
-   __Artigo 2º__
+   __Article 2__
 
    _Título_
 
@@ -124,7 +124,7 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    Then there's the surf. A pointbreak breaking for 300 meters down a shallow coral shelf, producing immaculate almond-shaped barrels, grinding down the reef at a barely makeable speed. Even though many of the waves race past me on my struggling backhand, the few that I make it to the end of are some of the best I've ever experienced, and I have a hard time containing my excitement, hooting and hollering to Sofia on the cliffs, with her Canon 5D in hand. The line-up out back is an eclectic mix of old salty men on oversized gun surfboards, young semi-pros with stickered boards, girlfriends on longboards and hippies with dreadlocks and big smiles. Nothing of the notorious localism I have read about online, even though I quickly learn to respect the noticeable pecking order, letting the obviously more skilled crowd get the biggest set waves. There are still plenty of action for everyone, and a friendly smile opens up even the grumpiest old-timer. After the sun has set, the same faces are seen around campfires and tailgate barbeques all over the campground, where many seem to have gotten stuck for the season, ignoring distant calls of civilization urging them to return to normal lives. As the stars come out, we set up our cameras for timelapses, hoping to capture some of the magic that is happening above us, all the while our heads turn heavy from the five hours in the water and the beverages that followed.
    ```
 
-   __Artigo 3º__
+   __Article 3__
 
    _Título_
 
@@ -157,7 +157,7 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    Fast forward 5000 years, and although human ingenuity, competition and spirit for invention has further evolved this once crude way of transportation, the principles remain the same. We designed our now countless different models of wooden planks to float on top of powder snow, crafted metal edges to cut through ice, we shaved off every superfluous gram we could find to help us on our journeys, to reach farther, higher and steeper. And today, when in many places, multi-billion dollar corporations charge us big money to ride down over-crowded slopes, many of us are returning to the original way of skiing. Exchanging lift queues for solitude, quantity for quality, and apres-ski beer for trail mix, a new generation of skiers are rediscovering the virtue of earning one's turns, the silence of the mountains, and how far into the unknown a little off-season cardio training can get you.
    ```
 
-   __Artigo 4º__
+   __Artigo 4__
 
    _Título_
 
@@ -190,7 +190,7 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Vamos retornar ao editor de consultas e buscar esse novo componente.  Observe que estamos fazendo referência ao `OfferModel` em nosso query e metadados, que usaremos para o título do cartão.
+1. Vamos retornar ao Editor de consultas e buscar esse novo componente.  Observe que estamos referenciando a variável `OfferModel` em nosso query e nos metadados, que usaremos para o título do cartão.
 
    ```graphql
    query imageList {
@@ -226,13 +226,13 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    }
    ```
 
-1. Agora, conecte isso ao nosso aplicativo.  Em nosso `home.js`, referiremos ao nosso novo query. Acima `useEffect()` definiremos `list` e `setList`.
+1. Agora conecte isso ao nosso aplicativo.  Em nosso `home.js`, referenciaremos nossa nova consulta. Acima `useEffect()` definiremos `list` e `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Dentro `useEffect()` uma nova solicitação para a consulta da lista de imagens.
+   Dentro `useEffect()` uma nova solicitação para a consulta imagelist.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -246,13 +246,13 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    });
    ```
 
-   E agora, vamos adicionar isso ao DOM de nosso aplicativo.
+   E agora, vamos adicioná-lo ao DOM do nosso aplicativo.
 
    ```javascript
    <div>{list.cards && <ImageList content={list.cards} />}</div>
    ```
 
-   Vamos ver o nosso componente da lista de imagens.  Dentro da lista de imagens, fazemos loop por cada oferta.
+   Vamos analisar nosso componente de lista de imagens.  Dentro da imagelist, repetimos cada oferta.
 
    ```javascript
    {content.items && content.items.map((items) => (
@@ -279,9 +279,9 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    };
    ```
 
-   Além disso, observe que estamos referenciando um componente de imagem e passando um URL dinâmico.
+   Além disso, observe que estamos referenciando um componente de imagem e transmitindo a ele um URL dinâmico.
 
-   No componente de imagem, estamos usando o URL dinâmico para criar um conjunto de fontes com vários URLs.
+   No componente de imagem, estamos usando o URL dinâmico para criar um conjunto de origem com vários URLs.
 
    ```javascript
    const srcset = [
@@ -292,15 +292,15 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
    ];
    ```
 
-## Ativar o editor universal
+## Habilitar Editor Universal
 
-1. Adicionar `<meta />` ao aplicativo.  Abrir `App.js` e insira a importação na parte superior do arquivo.
+1. Adicionar `<meta />` ao aplicativo.  Abertura `App.js` e insira importar na parte superior do arquivo.
 
    ```javascript
    import { Helmet } from 'react-helmet';
    ```
 
-   E no retorno do aplicativo, adicione o seguinte código:
+   E, no retorno do aplicativo, adicione o seguinte código:
 
    ```javascript
    <Helmet>
@@ -310,9 +310,9 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
 
    >[!TIP]
    >
-   > Estamos usando a biblioteca de aprimoramento para tornar isso dinâmico com base no `.env` , no entanto, é possível codificar isso no `index.html`.
+   > Estamos usando a biblioteca Capacete para torná-la dinâmica com base no `.env` arquivo, no entanto, você pode codificá-lo na variável `index.html`.
 
-1. Agora vamos atualizar são Cartão para identificar o fragmento e o tipo de dados para editar cada cartão.
+1. Agora vamos atualizar o Cartão para identificar o fragmento e o tipo de dados para editar cada cartão.
 
    Dentro `<div className='card' key={card._path}>`
 
@@ -330,13 +330,13 @@ Ao final deste capítulo tutorial, você terá um componente de Lista de imagens
 
 1. Agora, identifique o que é editável.
 
-   Para a `<h3 />` adicionar:
+   Para o `<h3 />` adicionar:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   Para nosso `<div />` adicionar:
+   Para o nosso `<div />` adicionar:
 
    ```javascript
    itemProp="description" itemType="richtext"
@@ -421,4 +421,4 @@ export default Home;
 
 ## Parabéns!
 
-Você criou com sucesso uma experiência sem cabeçalho AEM totalmente disponibilizada por AEM APIs sem cabeçalho e é editável com o Editor universal.
+Você criou com sucesso uma experiência AEM Headless que é totalmente alimentada por APIs AEM Headless e é editável com o Universal Editor.

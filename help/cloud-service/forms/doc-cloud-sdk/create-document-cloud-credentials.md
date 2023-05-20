@@ -1,5 +1,5 @@
 ---
-title: Criar projeto de Adobe IO
+title: Criar projeto do Adobe IO
 description: Criar novo projeto no Console do Adobe Developer
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ---
 
-# Criar um projeto do Adobe I/O
+# Criar um projeto Adobe I/O
 
 1. A primeira etapa na criação da integração é criar [Adobe ID](https://account.adobe.com/)
-1. Vá para o [Console do Adobe Developer](https://console.adobe.io/home)
-1. Faça logon usando a Adobe ID criada na Etapa 1
+1. Vá para a [Console do Adobe Developer](https://console.adobe.io/home)
+1. Faça logon usando sua Adobe ID criada na Etapa 1
 1. Criar um novo projeto
 
-Siga o vídeo para criar seu projeto do Adobe I/O.
+Siga o vídeo para criar seu projeto Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333220?quality=12&learn=on)

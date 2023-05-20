@@ -1,6 +1,6 @@
 ---
 title: Conexões SQL usando APIs Java™
-description: Saiba como se conectar a bancos de dados SQL de AEM as a Cloud Service usando APIs SQL Java™ e portas de saída.
+description: Saiba como se conectar a bancos de dados SQL do AEM as a Cloud Service usando APIs Java™ SQL e portas de saída.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -22,19 +22,19 @@ As conexões com bancos de dados SQL (e outros serviços não HTTP/HTTPS) devem 
 
 A exceção a essa regra é quando [endereço ip de saída dedicado](../dedicated-egress-ip-address.md) está em uso e o serviço está no Adobe ou Azure.
 
-## Suporte avançado para rede
+## Suporte avançado a rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
 
-Verifique se a variável [adequada](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi configurada antes de seguir este tutorial.
+Assegure a [apropriado](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi definida antes de seguir este tutorial.
 
-| Sem rede avançada | [Saída flexível da porta](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
+| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
-## Configuração do OSGi
+## Configuração OSGi
 
-Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL são melhor fornecidos via [variáveis de configuração secretas do OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), definido usando a AIO CLI ou as APIs do Cloud Manager.
+Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL devem ser fornecidos via [variáveis de configuração OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), definido usando a CLI AIO ou as APIs do Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -45,7 +45,7 @@ Como os segredos não devem ser armazenados no código, o nome de usuário e a s
 }
 ```
 
-O seguinte `aio CLI` pode ser usado para definir os segredos do OSGi com base no ambiente:
+As seguintes `aio CLI` pode ser usado para definir os segredos do OSGi por ambiente:
 
 ```shell
 $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret MYSQL_USERNAME "mysql-user" --secret MYSQL_PASSWORD "password123"
@@ -150,11 +150,11 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## Dependências do driver MySQL
 
-AEM as a Cloud Service geralmente exige que você forneça drivers de banco de dados Java™ para suportar as conexões. Geralmente, é melhor fornecer os drivers incorporando os artefatos do pacote OSGi que contêm esses drivers ao projeto do AEM por meio do `all` pacote.
+O AEM as a Cloud Service geralmente requer que você forneça drivers de banco de dados Java™ para suportar as conexões. Normalmente, o melhor modo de obter o fornecimento dos drivers é incorporar os artefatos do pacote OSGi que contêm esses drivers ao projeto AEM por meio do `all` pacote.
 
-### Pom.xml do reator
+### Reator pom.xml
 
-Incluir as dependências do driver do banco de dados no reator `pom.xml` e, em seguida, referenciá-las no `all` subprojetos.
+Incluir as dependências do driver do banco de dados no reator `pom.xml` e, em seguida, referenciá-los no `all` subprojetos.
 
 + `pom.xml`
 
@@ -174,9 +174,9 @@ Incluir as dependências do driver do banco de dados no reator `pom.xml` e, em s
 ...
 ```
 
-## Todos pom.xml
+## Todos os pom.xml
 
-Incorpore os artefatos de dependência do driver do banco de dados no `all` para que sejam implantados e disponibilizados AEM as a Cloud Service. Esses artefatos __must__ ser pacotes OSGi que exportam a classe Java™ do driver de banco de dados.
+Incorpore os artefatos de dependência do driver do banco de dados no `all` para que sejam implantados e estejam disponíveis no AEM as a Cloud Service. Esses artefatos __deve__ ser pacotes OSGi que exportam a classe Java™ do driver do banco de dados.
 
 + `all/pom.xml`
 

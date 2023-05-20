@@ -1,6 +1,6 @@
 ---
 title: Mapas do site
-description: Saiba como ajudar a aumentar sua SEO criando mapas de site para o AEM Sites.
+description: Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 version: Cloud Service
 feature: Core Components
 topic: Content Management
@@ -19,21 +19,21 @@ ht-degree: 5%
 
 # Mapas do site
 
-Saiba como ajudar a aumentar sua SEO criando mapas de site para o AEM Sites.
+Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 
 >[!WARNING]
 >
->Este vídeo demonstra o uso de URLs relativos no mapa do site. Mapas do site [deve usar URLs absolutos](https://sitemaps.org/protocol.html). Consulte [Configurações](#absolute-sitemap-urls) para saber como ativar URLs absolutos, pois isso não é abordado no vídeo abaixo.
+>Este vídeo demonstra o uso de URLs relativos no mapa de site. Mapas do site [deve usar URLs absolutos](https://sitemaps.org/protocol.html). Consulte [Configurações](#absolute-sitemap-urls) para saber como ativar URLs absolutos, pois isso não é abordado no vídeo abaixo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configurações
 
-### URLs absolutos de mapa do site{#absolute-sitemap-urls}
+### URLs absolutos do mapa de site{#absolute-sitemap-urls}
 
-AEM mapa de site suporta URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços de AEM que geram mapas de site (normalmente o serviço AEM Publish).
+O mapa de site AEM oferece suporte a URLs absolutos usando [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Isso é feito criando nós de mapeamento nos serviços AEM que geram mapas de site (normalmente o serviço de publicação do AEM).
 
-Um exemplo de definição de nó de mapeamento Sling para `https://wknd.com` pode ser definido em `/etc/map/https` como se segue:
+Um exemplo de definição de nó de mapeamento Sling para `https://wknd.com` pode ser definido em `/etc/map/https` do seguinte modo:
 
 | Caminho  | Nome da propriedade | Tipo de propriedade | Valor da propriedade |
 |------|----------|---------------|-------|
@@ -46,9 +46,9 @@ A captura de tela abaixo ilustra uma configuração semelhante, mas para `http:/
 ![Configuração de URLs absolutos do mapa do site](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
-### Configuração OSGi do agendador de mapa do site
+### Configuração OSGi do agendador do mapa do site
 
-Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para a frequência (usando [expressões cron](http://www.cronmaker.com)) os mapas de site são regerados e armazenados em cache no AEM.
+Define o [Configuração de fábrica do OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para a frequência (usando [expressões cron](http://www.cronmaker.com)) mapas de site são gerados/novamente e armazenados em cache no AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -62,7 +62,7 @@ Define o [Configuração de fábrica OSGi](http://localhost:4502/system/console/
 
 ### Regra de filtro de permissão do Dispatcher
 
-Permitir solicitações HTTP para arquivos de índice e mapa do site.
+Permitir solicitações HTTP para os arquivos de índice do mapa de site e do mapa de site.
 
 `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -73,9 +73,9 @@ Permitir solicitações HTTP para arquivos de índice e mapa do site.
 /0200 { /type "allow" /path "/content/*" /selectors '(sitemap-index|sitemap)' /extension "xml" }
 ```
 
-### Regra de reescrita do servidor Web Apache
+### Regra de reescrita do Apache WebServer
 
-Garantir `.xml` as solicitações HTTP do mapa do site são roteadas para a página AEM subjacente correta. Se a redução de URL não for usada ou se os Mapeamentos do Sling forem usados para alcançar a redução de URL, essa configuração não será necessária.
+Assegurar `.xml` as solicitações HTTP do mapa do site são roteadas para a página AEM subjacente correta. Se a redução de URL não for usada ou se os Mapeamentos do Sling forem usados para obter a redução de URL, essa configuração não será necessária.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -87,8 +87,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ [Documentação do AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentação do mapa do site do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
 + [Documentação do Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentação do Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
-+ [Documentação do arquivo de índice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Documentação do mapa do site Sitemap.org](https://www.sitemaps.org/protocol.html)
++ [Documentação do arquivo de índice do mapa de site Sitemap.org](https://www.sitemaps.org/protocol.html#index)
 + [Cronmaker](http://www.cronmaker.com/)

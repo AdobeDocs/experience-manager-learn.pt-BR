@@ -1,5 +1,5 @@
 ---
-title: Buscar o JSON do formulário adaptável a ser incorporado
+title: Buscar o JSON do formulário adaptável para incorporar
 description: Use a API para buscar o json do formulário adaptável
 feature: Adaptive Forms
 version: 6.5
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Buscar o JSON do formulário
 
-Faça logon na instância do autor do AEM Forms e crie uma nova placa adaptável usando o **Em branco com componentes principais** modelo . Publique seu formulário na sua instância de publicação.
+Faça logon na instância de autor do AEM Forms e crie um novo adaptável usando o **Em branco com Componentes principais** modelo. Publique o formulário na instância de publicação.
 
-Para incorporar o formulário, primeiro buscamos o json do formulário adaptável fazendo uma chamada get em relação ao nosso servidor de publicação.
+Para incorporar o formulário, primeiro buscamos o json do formulário adaptável fazendo uma chamada get contra nosso servidor de publicação.
 
-O trecho de código a seguir busca o json do formulário adaptável chamado **contato**
+O trecho de código a seguir busca o json do formulário adaptável chamado **contactus**
 
 ```javascript
 const getForm = async () => {
@@ -32,7 +32,7 @@ const getForm = async () => {
       }
 ```
 
-O código completo do componente Função de contato é fornecido abaixo
+O código completo do componente da função Contato é fornecido abaixo
 
 ```javascript
 import Form from './components/Form';

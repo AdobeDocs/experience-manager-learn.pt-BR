@@ -1,6 +1,6 @@
 ---
 title: Representações
-description: Saiba mais sobre as representações no AEM Assets e como elas podem ser visualizadas.
+description: Saiba mais sobre representações no AEM Assets e como elas podem ser visualizadas.
 feature: Renditions
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 7%
 
 # Representações
 
-Saiba mais sobre as representações no AEM Assets e como elas podem ser visualizadas.
+Saiba mais sobre representações no AEM Assets e como elas podem ser visualizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)

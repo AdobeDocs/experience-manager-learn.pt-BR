@@ -1,5 +1,5 @@
 ---
-title: Analisar os resultados de teste do AEM Cloud Manager
+title: Analisar resultados de teste do AEM Cloud Manager
 description: Explore e corrija os resultados dos relatórios do AEM Cloud Manager
 role: Developer
 level: Beginner
@@ -24,6 +24,6 @@ ht-degree: 51%
 >abstract="Explore quaisquer erros de compilação em seu código e se esse código segue ou não as práticas recomendadas do AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="Entender os resultados de teste"
 
-Explore quaisquer erros de compilação em seu código e se esse código segue ou não as práticas recomendadas para AEM as a Cloud Service
+Explore quaisquer erros de compilação no código e se esse código segue ou não as práticas recomendadas para o AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330540?quality=12&learn=on)

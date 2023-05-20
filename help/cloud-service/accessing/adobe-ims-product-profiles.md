@@ -1,5 +1,5 @@
 ---
-title: Perfis e AEM de produtos do Adobe IMS
+title: Perfis de produto e AEM do Adobe IMS
 description: Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros.
 topic: Administration, Security
 feature: User and Groups

@@ -1,6 +1,6 @@
 ---
 title: Como habilitar o download de representações no Brand Portal.
-description: Etapas para habilitar o download da representação no Brand Portal
+description: Etapas para habilitar o download de representações no Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Habilitar download de representações no Brand Portal
+# Ativar download de representações no Brand Portal
 
 *Este vídeo aborda as etapas para habilitar o download de representações no Brand Portal.*
 

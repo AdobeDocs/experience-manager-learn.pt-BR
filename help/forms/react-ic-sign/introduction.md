@@ -1,6 +1,6 @@
 ---
-title: Reagir aplicativo com AEM Forms e Acrobat Sign
-description: A Acrobat Sign e a AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
+title: Aplicativo React com AEM Forms e Acrobat Sign
+description: O Acrobat Sign e o AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -16,25 +16,25 @@ ht-degree: 1%
 
 ---
 
-# AEM Forms com Acrobat Sign Web Form
+# AEM Forms com formulário web do Acrobat Sign
 
 
-Este tutorial aborda o caso de uso da geração de um documento de comunicação interativo com os dados enviados do [Reagir](https://react.dev/) aplicativo e apresentação do documento gerado para assinatura usando o formulário web Acrobat Sign.
+Este tutorial aborda o caso de uso da geração de um documento de comunicação interativa com os dados enviados do [React](https://react.dev/) e apresentar o documento gerado para assinatura usando o formulário web do Acrobat Sign.
 
 Veja a seguir o fluxo do caso de uso
 
 * O usuário preenche um formulário no aplicativo React.
-* Os dados do formulário são enviados para um endpoint da AEM Forms para gerar um documento de comunicações interativas.
-* Crie o url do widget do Acrobat Sign usando o documento gerado.
-* Apresente o url do widget no aplicativo que faz a chamada para que o usuário assine o documento.
+* Os dados de formulário são enviados a um endpoint da AEM Forms para gerar um documento de comunicações interativo.
+* Crie o URL do widget do Acrobat Sign usando o documento gerado.
+* Apresentar o url do widget no aplicativo de chamada para que o usuário assine o documento.
 
 ## Pré-requisitos
 
 Você precisará do seguinte para que o caso de uso funcione:
 
-* Um servidor AEM com o pacote de complementos do Forms
-* Um [chave de integração para um aplicativo Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Um servidor AEM com pacote complementar do Forms
+* Um [chave de integração para um aplicativo do Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
 ## Próximas etapas
 
-Escreva um [serviço OSGi personalizado para gerar Documento de comunicação interativa](./create-ic-document.md) usando a API documentada
+Escrever um [serviço OSGi personalizado para gerar o Documento de comunicação interativa](./create-ic-document.md) uso da API documentada

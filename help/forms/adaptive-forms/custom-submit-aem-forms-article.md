@@ -1,6 +1,6 @@
 ---
 title: Escrever um envio personalizado no AEM Forms
-description: Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
+description: Maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,20 +17,20 @@ ht-degree: 1%
 
 # Escrever um envio personalizado no AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
-Forma rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
+Maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
 
-Este artigo o guiará pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio do Adaptive Forms.
+Este artigo guiará você pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio do Adaptive Forms.
 
 * Logon no crx
-* Crie um nó do tipo &quot;sling :folder &quot; em aplicativos. Vamos chamar este nó CustomSubmitHelpx.
+* Crie um nó do tipo &quot;sling :folder&quot; em aplicativos. Vamos chamar este nó de CustomSubmitHelpx.
 * Salve o nó recém-criado.
 * Adicione as duas propriedades a seguir ao nó recém-criado
-* PropertyName | Valor de propriedade
+* PropertyName | Valor da propriedade
 * guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,básico
-* jcr:description | CustomSubmitHelpx
+* guideDataModel | xfa,xsd,basic
+* jcr :description | CustomSubmitHelpx
 * Salve as alterações
-* Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito neste arquivo. O código a seguir encaminha a solicitação para o servlet.
+* Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito nesse arquivo. O código a seguir encaminha a solicitação ao servlet.
 
 ```java
 <%
@@ -47,8 +47,8 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 %>
 ```
 
-* Crie um arquivo chamado addfields .jsp sob o nó CustomSubmitHelpx . Esse arquivo permitirá que você acesse o documento assinado.
-* Adicione o seguinte código a este arquivo
+* Crie o arquivo chamado addfields .jsp no nó CustomSubmitHelpx. Este arquivo permitirá que você acesse o documento assinado.
+* Adicionar o código a seguir a este arquivo
 
 ```java
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -62,6 +62,6 @@ Este artigo o guiará pelas etapas necessárias para criar uma ação de envio p
 
 * Salve as alterações
 
-Agora você verá &quot;CustomSubmitHelpx&quot; nas ações de envio do formulário adaptável, conforme mostrado nesta imagem.
+Agora você começará a ver &quot;CustomSubmitHelpx&quot; nas ações de envio do seu Formulário adaptável, como mostrado nesta imagem.
 
 ![Formulário adaptável com envio personalizado](assets/capture-2.gif)

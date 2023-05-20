@@ -1,5 +1,5 @@
 ---
-title: Introdução à Cópia de idioma
+title: Introdução à cópia de idioma
 seo-title: Introduction to Language Copy
 description: Obtenha uma visão geral de como criar um site multilíngue usando a Cópia de idioma no AEM Sites
 seo-description: Get an overview of how to create a multilingual site using Language Copy in AEM Sites
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ---
 
-# Introdução à Cópia de idioma {#introduction-language-copy}
+# Introdução à cópia de idioma {#introduction-language-copy}
 
 Obtenha uma visão geral de como criar um site multilíngue usando a Cópia de idioma no AEM Sites.
 

@@ -1,5 +1,5 @@
 ---
-title: Uso de imagens otimizadas com AEM headless
+title: Uso de imagens otimizadas com AEM Headless
 description: Saiba como solicitar URLs de imagem otimizadas com AEM Headless.
 version: Cloud Service
 topic: Headless
@@ -17,27 +17,27 @@ ht-degree: 6%
 
 ---
 
-# Imagens otimizadas com AEM headless {#images-with-aem-headless}
+# Imagens otimizadas com AEM Headless {#images-with-aem-headless}
 
-As imagens são um aspecto crítico do [desenvolvimento de experiências ricas e convincentes AEM sem interface](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
+As imagens são um aspecto crítico do [desenvolver experiências ricas e atraentes com o AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). O AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
 
-Fragmentos de conteúdo usados AEM modelagem de conteúdo sem cabeçalho, geralmente fazem referência a ativos de imagem destinados à exibição na experiência sem cabeçalho. AEM consultas do GraphQL podem ser escritas para fornecer URLs para imagens com base em onde a imagem é referenciada.
+Fragmentos de conteúdo usados na modelagem de conteúdo AEM Headless, geralmente fazem referência a ativos de imagem destinados à exibição na experiência headless. Consultas ao AEM GraphQL podem ser escritas para fornecer URLs a imagens com base no local de referência da imagem.
 
-O `ImageRef` tem quatro opções de URL para referências de conteúdo:
+A variável `ImageRef` O tipo tem quatro opções de URL para referências de conteúdo:
 
 + `_path` é o caminho referenciado no AEM e não inclui uma origem AEM (nome do host)
-+ `_dynamicUrl` é o URL completo do ativo de imagem preferido, otimizado para a Web.
-   + O `_dynamicUrl` não inclui uma origem AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
-+ `_authorUrl` é o URL completo para o ativo de imagem no Autor do AEM
-   + [Autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usada para fornecer uma experiência de visualização do aplicativo sem periféricos.
-+ `_publishUrl` é o URL completo para o ativo de imagem no AEM Publish
-   + [Publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) geralmente é onde a implantação de produção do aplicativo sem cabeçalho exibe imagens.
++ `_dynamicUrl` é o URL completo do ativo de imagem preferencial otimizado para a Web.
+   + A variável `_dynamicUrl` não inclui uma origem de AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
++ `_authorUrl` é o URL completo do ativo de imagem no AEM Author
+   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
++ `_publishUrl` é o URL completo do ativo de imagem na publicação do AEM
+   + [AEM Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) O geralmente é o local de onde a implantação em produção do aplicativo headless exibe imagens do.
 
-O `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`e `_publishUrl` sempre que possível.
+A variável `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`, e `_publishUrl` sempre que possível.
 
-|  | AEM as a Cloud Service | AEM RDE as a Cloud Service | AEM SDK | AEM 6.5 |
+|  | AEM as a Cloud Service | RDE AS A CLOUD SERVICE AEM | SDK do AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
-| Suporta imagens otimizadas para Web? | ✔ | ✔ | ✘ | ✘ |
+| Suporta imagens otimizadas para a Web? | ✔ | ✔ | ✘ | ✘ |
 
 
 >[!CONTEXTUALHELP]
@@ -47,15 +47,15 @@ O `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve subst
 
 ## Modelo de fragmentos do conteúdo
 
-Verifique se o campo Fragmento do conteúdo que contém a referência da imagem é do __referência de conteúdo__ tipo de dados.
+Verifique se o campo Fragmento de conteúdo que contém a referência da imagem é do __referência de conteúdo__ tipo de dados.
 
-Os tipos de campo são revisados na seção [Modelo de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), selecionando o campo e inspecionando o __Propriedades__ à direita.
+Os tipos de campo são revisados na variável [Modelo de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), selecionando o campo e inspecionando o __Propriedades__ à direita.
 
-![Modelo de fragmento de conteúdo com referência de conteúdo para uma imagem](./assets/images/content-fragment-model.jpeg)
+![Modelo de fragmento de conteúdo com referência de conteúdo a uma imagem](./assets/images/content-fragment-model.jpeg)
 
 ## Consulta persistente do GraphQL
 
-Na query de GraphQL, retorne o campo como o `ImageRef` e solicite o `_dynamicUrl` campo. Por exemplo, querendo uma aventura no [Projeto de Site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feito com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
+Na consulta do GraphQL, retorne o campo como a variável `ImageRef` e solicite a `_dynamicUrl` campo. Por exemplo, consultar uma aventura na [Projeto do site WKND](https://github.com/adobe/aem-guides-wknd) e incluindo o URL da imagem para as referências do ativo de imagem em sua `primaryImage` , pode ser feita com uma nova consulta persistente `wknd-shared/adventure-image-by-path` definido como:
 
 ```graphql {highlight="11"}
 query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int, $imageQuality: Int) {
@@ -91,25 +91,25 @@ query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: Str
 }
 ```
 
-O `$path` usada na variável `_path` o filtro requer o caminho completo para o fragmento de conteúdo (por exemplo, `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
+A variável `$path` variável usada no `_path` O filtro requer o caminho completo para o fragmento de conteúdo (por exemplo, `/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp`).
 
-O `_assetTransform` define como o `_dynamicUrl` é construída para otimizar a representação da imagem servida. As URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
+A variável `_assetTransform` define como o `_dynamicUrl` é construído para otimizar a representação da imagem fornecida. URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
 
-| Parâmetro GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variável GraphQL | Valores de parâmetro de URL | Exemplo de parâmetro de URL |
+| Parâmetro do GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variáveis do GraphQL | Valores de parâmetro de URL | Exemplo de parâmetro de URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
 | `format` | N/A | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
-| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | N/A |
-| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Números inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
+| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não for fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | N/A |
+| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos | Inteiros positivos delimitados por vírgulas na ordem `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
 | `rotation` | `rotate` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
-| `flip` | `flip` | Inverta a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
+| `flip` | `flip` | Inverter a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
 | `quality` | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 | 1-100 | `?quality=80` |
-| `width` | `width` | Largura da imagem de saída em pixels. When `size` é fornecido `width` é ignorada. | ✘ | Número inteiro positivo | Número inteiro positivo | `?width=1600` |
-| `preferWebP` | `preferwebp` | If `true` e AEM um WebP, se o navegador oferece suporte a ele, independentemente do `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
+| `width` | `width` | Largura da imagem de saída em pixels. Quando `size` é fornecido `width` é ignorado. | ✘ | Número inteiro positivo | Número inteiro positivo | `?width=1600` |
+| `preferWebP` | `preferwebp` | Se `true` e AEM fornece um WebP se o navegador oferecer suporte a ele, independentemente da `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
 
 ## Resposta do GraphQL
 
-A resposta JSON resultante contém os campos solicitados contendo o URL otimizado para a Web para os ativos de imagem.
+A resposta JSON resultante contém os campos solicitados que contêm o URL otimizado para a Web para os ativos de imagem.
 
 ```json {highlight="8"}
 {
@@ -127,9 +127,9 @@ A resposta JSON resultante contém os campos solicitados contendo o URL otimizad
 }
 ```
 
-Para carregar a imagem otimizada para a Web da imagem referenciada em seu aplicativo, use o `_dynamicUrl` do `primaryImage` como o URL de origem da imagem.
+Para carregar a imagem otimizada para a Web da imagem referenciada em seu aplicativo, o usou o `_dynamicUrl` do `primaryImage` como o URL de origem da imagem.
 
-No React, a exibição de uma imagem otimizada para a Web na AEM Publish é semelhante a:
+No React, a exibição de uma imagem otimizada para a Web do AEM Publish é semelhante a:
 
 ```jsx
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
@@ -139,11 +139,11 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 <img src={dynamicUrl} alt={data.adventureByPath.item.title}/>
 ```
 
-Lembre-se, `_dynamicUrl` não inclui o domínio AEM, portanto, você deve fornecer a origem desejada para que o URL da imagem seja resolvido.
+Lembre-se: `_dynamicUrl` O não inclui o domínio AEM, portanto, é necessário fornecer a origem desejada para o URL da imagem resolver.
 
 ## URLs responsivos
 
-O exemplo acima é exibido usando uma imagem de tamanho único, no entanto, em experiências da Web, conjuntos de imagens responsivos geralmente são necessários. Imagens responsivas podem ser implementadas usando [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). O trecho de código a seguir mostra como usar o `_dynamicUrl` como base e anexe diferentes parâmetros de largura para alimentar diferentes visualizações responsivas. Não apenas a função `width` parâmetro de consulta pode ser usado, mas outros parâmetros de consulta podem ser adicionados pelo cliente para otimizar ainda mais o ativo da imagem com base em suas necessidades.
+O exemplo acima mostra o uso de uma imagem de tamanho único, no entanto, em experiências da Web, conjuntos de imagens responsivas geralmente são necessários. Imagens responsivas podem ser implementadas usando [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). O trecho de código a seguir mostra como usar o `_dynamicUrl` como um baseado em e anexar diferentes parâmetros de largura para potencializar diferentes exibições responsivas. Não só o `width` O parâmetro de consulta pode ser usado, mas outros parâmetros de consulta podem ser adicionados pelo cliente para otimizar ainda mais o ativo de imagem com base em suas necessidades.
 
 ```javascript
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
@@ -171,18 +171,18 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-## Exemplo de reação
+## Exemplo do React
 
-Vamos criar um aplicativo React simples que exibe imagens otimizadas para a Web seguindo [padrões de imagem responsivos](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Existem dois padrões principais para imagens responsivas:
+Vamos criar um aplicativo React simples que exibe imagens otimizadas para a Web seguindo [padrões de imagem responsivos](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Há dois padrões principais para imagens responsivas:
 
-+ [Elemento Img com srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) para maior desempenho
++ [Elemento Img com srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) para melhor desempenho
 + [Elemento de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) para controle de design
 
 ### Elemento Img com srcset
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
-[Img elements com o srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) são usados com o `sizes` para fornecer ativos de imagem diferentes para tamanhos de tela diferentes. Os conjuntos de imagens são úteis ao fornecer ativos de imagem diferentes para tamanhos de tela diferentes.
+[Elementos Img com srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) são usados com o `sizes` para fornecer ativos de imagem diferentes para telas de tamanhos diferentes. Os conjuntos de imagens são úteis ao fornecer ativos de imagem diferentes para tamanhos de tela diferentes.
 
 ### Elemento de imagem
 
@@ -192,9 +192,9 @@ Vamos criar um aplicativo React simples que exibe imagens otimizadas para a Web 
 
 ### Exemplo de código
 
-Este aplicativo React simples usa a variável [SDK sem cabeçalho AEM](./aem-headless-sdk.md) para consultar AEM APIs headless para um conteúdo do Adventure e exibir a imagem otimizada para a Web usando [elemento img com srcset](#img-element-with-srcset) e [elemento de imagem](#picture-element). O `srcset` e `sources` usar um `setParams` para anexar o parâmetro de consulta de delivery otimizado para a Web à função `_dynamicUrl` da imagem, altere a representação da imagem entregue com base nas necessidades do cliente Web.
+Este aplicativo simples do React usa o [SDK do AEM Headless](./aem-headless-sdk.md) para consultar APIs AEM Headless para um conteúdo Adventure e exibe a imagem otimizada para a Web usando [elemento img com srcset](#img-element-with-srcset) e [elemento de imagem](#picture-element). A variável `srcset` e `sources` usar um personalizado `setParams` para anexar o parâmetro de consulta de entrega otimizada para a Web à `_dynamicUrl` da imagem, altere a representação da imagem entregue com base nas necessidades do cliente da Web.
 
-A consulta contra AEM é realizada no gancho React personalizado [useAdventureByPath que usa o SDK sem cabeçalho AEM](./aem-headless-sdk.md#graphql-persisted-queries).
+A consulta ao AEM é executada no gancho React personalizado [useAdventureByPath que usa o SDK AEM Headless](./aem-headless-sdk.md#graphql-persisted-queries).
 
 ```javascript
 // src/App.js

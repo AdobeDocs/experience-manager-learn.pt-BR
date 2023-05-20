@@ -1,27 +1,27 @@
 ---
-title: Variáveis no fluxo de trabalho AEM[Parte4]
-description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
+title: Variáveis no fluxo de trabalho do AEM[Part4]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
+# Variável ArrayList no fluxo de trabalho do AEM
 
-# Variável ArrayList em AEM fluxo de trabalho
+Variáveis do tipo ArrayList foram introduzidas no AEM Forms 6.5. Um caso de uso comum para o uso da variável ArrayList é definir rotas personalizadas a serem usadas em AssignTask.
 
-Variáveis do tipo ArrayList foram introduzidas no AEM Forms 6.5. Um caso de uso comum para usar a variável ArrayList é definir rotas personalizadas para serem usadas no AssignTask.
+Para usar a variável ArrayList em um workflow para AEM, é necessário criar um Formulário adaptável que gere elementos repetidos nos dados enviados. Uma prática comum é definir um schema que contém um elemento de matriz. Para os fins deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário preenchendo um relatório de despesas. No relatório de despesas, capturamos o nome do gerente do remetente e o nome do gerente. Os nomes do gerenciador são armazenados em uma matriz chamada managerchain. A captura de tela abaixo mostra o formulário do relatório de despesas e os dados do envio do Adaptive Forms.
 
-Para usar a variável ArrayList em um fluxo de trabalho AEM, é necessário criar um formulário adaptável que gera elementos repetitivos nos dados enviados. Uma prática comum é definir um schema que contenha um elemento de matriz. Para a finalidade deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário que preenche um relatório de despesas. No relatório de despesas, capturamos o nome de gerente do remetente e o nome de gerente do gerente. Os nomes do gerente são armazenados em um storage chamado gerenciamento de cadeia. A captura de tela abaixo mostra o formulário de relatório de despesas e os dados do envio do Adaptive Forms.
+![relatório de despesas](assets/expensereport.jpg)
 
-![custsereport](assets/expensereport.jpg)
-
-A seguir estão os dados do envio do formulário adaptável. O formulário adaptável era baseado no esquema JSON, os dados vinculados ao esquema eram armazenados no elemento de dados do elemento afBoundData . A cadeia de gerenciamento é uma matriz e precisamos preencher a ArrayList com o elemento name do objeto dentro da matriz da cadeia de gerenciamento.
+A seguir estão os dados do envio do formulário adaptável. O formulário adaptável foi baseado no schema JSON. Os dados vinculados ao esquema são armazenados no elemento de dados do elemento afBoundData. A cadeia de gerenciamento é uma matriz e precisamos preencher a ArrayList com o elemento name do objeto dentro da matriz da cadeia de gerenciamento.
 
 ```json
 {
@@ -62,21 +62,21 @@ A seguir estão os dados do envio do formulário adaptável. O formulário adapt
 }
 ```
 
-Para inicializar a variável ArrayList da sequência de subtipo, você pode usar a Notação de pontos JSON ou o modo de mapeamento XPath. A captura de tela a seguir mostra que você preenche uma variável ArrayList chamada CustomRoutes usando a Notação de Ponto JSON. Certifique-se de apontar para um elemento em um objeto de matriz, como mostrado na captura de tela abaixo. Estamos preenchendo a CustomRoutes ArrayList com os nomes do objeto de matriz da cadeia de gerenciamento.
+Para inicializar a variável ArrayList da string de subtipo, você pode usar o modo de mapeamento JSON Dot Notation ou XPath. A captura de tela a seguir mostra como preencher uma variável ArrayList chamada CustomRoutes usando a notação JSON Dot. Verifique se você está apontando para um elemento em um objeto de matriz, como mostrado na captura de tela abaixo. Estamos preenchendo a ArrayList CustomRoutes com os nomes do objeto de matriz managerchain.
 A ArrayList CustomRoutes é então usada para preencher as Rotas no componente AssignTask
 ![customroute](assets/arraylist.jpg)
-Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos dados enviados, as Rotas do componente AssignTask são preenchidas usando a variável CustomRoutes . A captura de tela abaixo mostra as rotas personalizadas em uma AssignTask
+Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos dados enviados, as Rotas do componente AssignTask são preenchidas usando a variável CustomRoutes. A captura de tela abaixo mostra os roteiros personalizados em uma AssignTask
 ![asingtask](assets/customactions.jpg)
 
 Para testar esse fluxo de trabalho em seu sistema, siga as etapas a seguir
 
-* Baixe e salve o arquivo ArrayListVariable.zip em seu sistema de arquivos
-* [Importe o arquivo zip ](assets/arraylistvariable.zip) usando o Gerenciador de pacotes de AEM
+* Baixe e salve o arquivo ArrayListVariable.zip no sistema de arquivos
+* [Importar o arquivo zip](assets/arraylistvariable.zip) uso do gerenciador de pacotes AEM
 * [Abra o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
-* Insira algumas despesas e os 2 nomes do gerente
-* Clique no botão Enviar
-* [Abrir sua caixa de entrada](http://localhost:4502/aem/inbox)
-* Você deve ver uma nova tarefa intitulada &quot;Atribuir ao administrador de despesas&quot;
-* Abra o formulário associado à tarefa
+* Insira algumas despesas e os nomes dos 2 gerentes
+* Clique no botão enviar
+* [Abra sua caixa de entrada](http://localhost:4502/aem/inbox)
+* Você deve ver uma nova tarefa chamada &quot;Atribuir ao administrador de despesas&quot;
+* Abrir o formulário associado à tarefa
 * Você deve ver duas rotas personalizadas com os nomes do gerente
-   [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Esse workflow usa a variável ArrayList, a variável do tipo JSON, o editor de regras no componente Or-Split
+   [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Esse fluxo de trabalho usa a variável ArrayList, a variável do tipo JSON e o editor de regras no componente Or-Split

@@ -16,21 +16,21 @@ ht-degree: 1%
 
 ---
 
-# Criar Tabelas de Banco de Dados
+# Criar tabelas de banco de dados
 
-O modelo de dados de formulário pode ser baseado em fontes RDBMS, RESTfull, SOAP ou OData. O foco deste curso é no preenchimento prévio do formulário adaptável usando o modelo de dados de formulário apoiado pela fonte de dados RDBMS. Para a finalidade deste tutorial, foi usado o banco de dados MYSQL. Criamos as duas tabelas a seguir para demonstrar o caso de uso
+O modelo de dados de formulário pode ser baseado em fontes RDBMS, RESTfull, SOAP ou OData. O foco deste curso é preencher previamente o formulário adaptável usando o modelo de dados de formulário compatível com a fonte de dados RDBMS. Para o propósito deste tutorial, foi usado o banco de dados MYSQL. Criamos as duas tabelas a seguir para demonstrar o caso de uso
 
-* **newhire** tabela - Essa tabela armazena as informações completas
+* **newhire** tabela - Esta tabela armazena as novas informações
 
    ![newhire](assets/newhire-table.png)
 
 
-* **beneficiários** tabela - Isso armazena novos beneficiários
+* **beneficiários** tabela - armazena novos beneficiários
 
    ![beneficiários](assets/beneficiaries-table.png)
 
-É possível importar a variável [arquivo sql](assets/db-schema.sql) usando o MySQL workbench para criar em tabelas com alguns dados de amostra.
+Você pode importar o [arquivo sql](assets/db-schema.sql) usar o MySQL workbench para criar para tabelas com alguns dados de amostra.
 
 ## Próximas etapas
 
-[Configurar o modelo de dados de formulário](./configuring-form-data-model.md)
+[Configurar modelo de dados do formulário](./configuring-form-data-model.md)

@@ -1,6 +1,6 @@
 ---
 title: Configuração do IntelliJ com a ferramenta Repo
-description: Prepare seu IntelliJ para sincronizar com AEM instância pronta para nuvem
+description: Preparar seu IntelliJ para sincronização com a instância pronta para nuvem AEM
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -19,69 +19,69 @@ ht-degree: 2%
 # Instalação do Cygwin
 
 
-O Cygwin é um ambiente de programação e tempo de execução compatível com POSIX, executado nativamente no Microsoft Windows.
-Instalar [Cygwin](https://www.cygwin.com/). Eu instalei em C:\cygwin64 folder
+Cygwin é um ambiente de programação e tempo de execução compatível com POSIX que é executado nativamente no Microsoft Windows.
+Instalar [Cygwin](https://www.cygwin.com/). Instalei o na pasta C:\cygwin64
 >[!NOTE]
 > Certifique-se de instalar pacotes zip, unzip, curl e rsync com sua instalação do cygwin
 
-Crie uma pasta chamada adoberepo no diretório c:\cloudmanager.
+Crie uma pasta chamada adoberepo em c:\cloudmanager.
 
-[Instale a ferramenta repo].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing a ferramenta repo não é nada além de copiar o arquivo repo e colocá-lo em seu c:\cloudmanger\adoberepo folder.
+[Instalar a ferramenta repo].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing a ferramenta repo não é nada além de copiar o arquivo repo e colocá-lo na pasta c:\cloudmanger\adoberepo.
 
 Adicione o seguinte à variável de ambiente Caminho C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
 ## Configurar ferramentas externas
 
-* Iniciar o IntelliJ
-* Pressione as teclas Ctrl+Alt+S para iniciar a janela de configurações.
-* Selecione Ferramentas->Ferramentas externas e clique no sinal + e insira o seguinte, como mostrado na captura de tela.
+* Iniciar IntelliJ
+* Pressione Ctrl+Alt+S para iniciar a janela de configurações.
+* Selecione Ferramentas->Ferramentas externas, clique no sinal + e insira o seguinte, conforme mostrado na captura de tela.
    ![rep](assets/repo.png)
-* Crie um grupo chamado repo digitando &quot;repo&quot; no campo suspenso Grupo e todos os comandos criados pertencem ao grupo **repo** grupo
+* Certifique-se de criar um grupo chamado repo digitando &quot;repo&quot; no campo suspenso Grupo e todos os comandos criados pertencem a **repo** grupo
 
 
 **Comando Put**
 **Programa**: C:\cygwin64\bin\bash
 **Argumentos**: -l C:\CloudManager\adoberepo\repo put -f \$FilePath\$
 **Diretório de trabalho**: \$ProjectFileDir\$
-![comando put](assets/put-command.png)
+![put-command](assets/put-command.png)
 
-**Comando Get**
+**Obter Comando**
 **Programa**: C:\cygwin64\bin\bash
 **Argumentos**: -l C:\CloudManager\adoberepo\repo get -f \$FilePath\$
 **Diretório de trabalho**: \$ProjectFileDir\$
 ![get-command](assets/get-command.png)
 
-**Comando Status**
+**Comando de Status**
 **Programa**: C:\cygwin64\bin\bash
 **Argumentos**: -l C:\CloudManager\adoberepo\repo st -f \$FilePath\$
 **Diretório de trabalho**: \$ProjectFileDir\$
 ![status-command](assets/status-command.png)
 
-**Comando Diff**
+**Comando &#39;Diff&#39;**
 **Programa**: C:\cygwin64\bin\bash
 **Argumentos**: -l C:\CloudManager\adoberepo\repo diff -f $FilePath$
 **Diretório de trabalho**: \$ProjectFileDir\$
 ![diff-command](assets/diff-command.png)
 
-Extraia o arquivo .repo de [repo.zip](assets/repo.zip) e coloque-o na pasta raiz AEM projetos . (C:\CloudManager\aem-banking-application). Abra o arquivo .repo e verifique se o servidor e as configurações de credenciais correspondem ao seu ambiente.
-Abra o arquivo .gitignore e adicione o seguinte na parte inferior do arquivo e salve as alterações \# repo .repo
+Extraia o arquivo .repo de [repo.zip](assets/repo.zip) e coloque-o na pasta raiz dos projetos AEM. C:\CloudManager\aem-banking-application). Abra o arquivo .repo e verifique se o servidor e as configurações de credenciais correspondem ao seu ambiente.
+Abra o arquivo .gitignore, adicione o seguinte na parte inferior do arquivo e salve as alterações \# repo .repo
 
-Selecione qualquer projeto em seu projeto do aem-banking-application, como ui.content e right click, e você deverá ver a opção repo e, na opção repo , verá os 4 comandos que adicionamos anteriormente.
+Selecione qualquer projeto no projeto aem-banking-application, como ui.content, e clique com o botão direito do mouse. Você verá a opção repo e, sob a opção repo, você verá os 4 comandos que adicionamos anteriormente.
 
-## Configurar a instância do autor do AEM
+## Configurar instância do autor do AEM
 
-As etapas a seguir podem ser seguidas para configurar rapidamente a instância pronta para nuvem em seu sistema local.
+As etapas a seguir podem ser seguidas para configurar rapidamente a instância pronta para nuvem no sistema local.
 * [Baixe o SDK do AEM mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* [Baixe o complemento AEM Forms mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [Baixar o complemento mais recente do AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
 * Crie a seguinte estrutura de pastas c:\aemformscs\aem-sdk\author
 
-* Extraia o arquivo aem-sdk-quickstart-xxxxxx.jar do arquivo zip do SDK AEM e coloque-o no arquivo jar c:\aemformscs\aem-sdk\author folder.Rename para aem-author-p4502.jar
+* Extraia o arquivo aem-sdk-quickstart-xxxxxxx.jar do arquivo zip do SDK do AEM e coloque-o na pasta c:\aemformscs\aem-sdk\author. Renomeie o arquivo jar para aem-author-p4502.jar
 
-* Abra o prompt de comando e navegue até c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui. Isso iniciará a instalação do AEM.
-* Faça logon usando credenciais de administrador/administrador
-* Pare a instância de AEM
+* Abra o prompt de comando e navegue até c:\aemformscs\aem-sdk\author insira o seguinte comando java -jar aem-author-p4502.jar -gui. Isso iniciará a instalação do AEM.
+* Fazer logon usando credenciais de administrador/administrador
+* Parar a instância do AEM
 * Crie a seguinte estrutura de pastas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
-* Copie o aem-forms-addon-xxxxx.far na pasta de instalação
-* Abra o prompt de comando e navegue até c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui. Isso implantará o pacote de complementos de formulários na sua instância de AEM.
+* Copie o aem-forms-addon-xxxxxx.far para a pasta de instalação
+* Abra o prompt de comando e navegue até c:\aemformscs\aem-sdk\author insira o seguinte comando java -jar aem-author-p4502.jar -gui. Isso implantará o pacote complementar de formulários na instância do AEM.

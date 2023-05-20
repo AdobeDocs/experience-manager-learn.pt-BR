@@ -19,4 +19,4 @@ ht-degree: 75%
 + [Visão geral](overview.md)
 + [1 - Conceitos, padrões e antipadrões](chapter-1.md)
 + [2 - Padrão de infraestrutura](chapter-2.md)
-+ [3 - Tópicos avançados de cache](chapter-3.md)
++ [3 - Tópicos avançados de armazenamento em cache](chapter-3.md)

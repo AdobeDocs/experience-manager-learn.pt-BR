@@ -1,6 +1,6 @@
 ---
 title: Versões
-description: Explore como o AEM cria e mantém versões de ativos.
+description: Saiba como o AEM cria e mantém versões de ativos.
 feature: Asset Management
 version: Cloud Service
 kt: 4671
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # Versões
 
-Explore como o AEM cria e mantém versões de ativos.
+Saiba como o AEM cria e mantém versões de ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)

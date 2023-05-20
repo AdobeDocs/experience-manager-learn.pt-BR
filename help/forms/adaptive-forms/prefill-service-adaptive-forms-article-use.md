@@ -1,6 +1,6 @@
 ---
-title: Serviço de preenchimento prévio no Adaptive Forms
-description: Preencha previamente formulários adaptáveis buscando dados de fontes de dados de backend.
+title: Preencher o serviço no Adaptive Forms
+description: Preencha previamente os formulários adaptáveis buscando dados das fontes de dados de back-end.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ---
 
-# Uso do serviço de preenchimento prévio no Adaptive Forms
+# Uso do serviço de preenchimento prévio no Forms adaptável
 
-É possível preencher previamente os campos de um formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. Existem várias maneiras de preencher previamente campos de formulários adaptáveis. Neste artigo, observaremos o preenchimento prévio do formulário adaptável usando o serviço de preenchimento prévio da AEM Forms.
+É possível preencher previamente os campos de um formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. Há várias maneiras de preencher previamente os campos de formulários adaptáveis. Neste artigo, analisaremos o preenchimento prévio de formulários adaptáveis usando o serviço de preenchimento prévio do AEM Forms.
 
-Para saber mais sobre vários métodos para preencher previamente formulários adaptáveis, [siga esta documentação](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Para saber mais sobre vários métodos para preencher formulários adaptáveis, [siga esta documentação](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Para preencher previamente um formulário adaptável usando o serviço de preenchimento prévio, é necessário criar uma classe que implemente o `com.adobe.forms.common.service.DataXMLProvider` interface. O método `getDataXMLForDataRef` terá a lógica de criar e retornar dados que o formulário adaptável consumirá para preencher previamente os campos. Nesse método, é possível buscar os dados de qualquer fonte e retornar o fluxo de entrada do documento de dados. O código de amostra a seguir busca as informações do perfil do usuário conectado e constrói um documento XML cujo fluxo de entrada é retornado para ser consumido pelos formulários adaptáveis.
+Para preencher previamente um formulário adaptável usando o serviço de preenchimento, você deve criar uma classe que implemente a `com.adobe.forms.common.service.DataXMLProvider` interface. O método `getDataXMLForDataRef` terá a lógica de criar e retornar dados que o formulário adaptável consumirá para preencher previamente os campos. Neste método, você pode buscar os dados de qualquer fonte e retornar o fluxo de entrada do documento de dados. O código de exemplo a seguir busca as informações de perfil do usuário conectado e constrói um documento XML cujo fluxo de entrada é retornado para ser consumido pelos formulários adaptáveis.
 
-No trecho de código abaixo, temos uma classe que implementa a interface DataXMLProvider. Obtemos acesso ao usuário conectado e, em seguida, obtemos as informações de perfil do usuário conectado. Em seguida, criamos um documento XML com um elemento de nó raiz chamado &quot;dados&quot; e anexamos os elementos apropriados a esse nó de dados. Depois que o documento XML é construído, o fluxo de entrada do documento XML é retornado.
+No trecho de código abaixo, temos uma classe que implementa a interface DataXMLProvider. Obtemos acesso ao usuário conectado e buscamos as informações de perfil do usuário conectado. Em seguida, criamos um documento XML com um elemento de nó raiz chamado &quot;dados&quot; e anexamos elementos apropriados a esse nó de dados. Depois que o documento XML é construído, o fluxo de entrada do documento XML é retornado.
 
-Essa classe é então transformada em pacote OSGi e implantada em AEM. Depois que o pacote é implantado, esse serviço de preenchimento prévio fica disponível para ser usado como serviço de preenchimento prévio do Formulário adaptável.
+Essa classe é então transformada em um pacote OSGi e implantada no AEM. Depois que o pacote é implantado, esse serviço de preenchimento prévio está disponível para ser usado como serviço de preenchimento do seu Formulário adaptável.
 
 ```java
 package com.aem.prefill.core;
@@ -132,16 +132,16 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 }
 ```
 
-Para testar esse recurso em seu servidor, execute o seguinte procedimento
+Para testar esse recurso no servidor, execute o seguinte procedimento
 
-* Verifique se o [perfil do usuário](http://localhost:4502/security/users.html) As informações são preenchidas. A amostra procura propriedades FirstName, LastName e Email do usuário conectado.
+* Verifique se o está conectado [perfil do usuário](http://localhost:4502/security/users.html) informações são preenchidas. O exemplo procura as propriedades FirstName, LastName e Email do usuário conectado.
 * [Baixe e extraia o conteúdo do arquivo zip no seu computador](assets/prefillservice.zip)
-* Implante o pacote prefill.core-1.0.0-SNAPSHOT usando o [console da Web AEM](http://localhost:4502/system/console/bundles)
+* Implante o pacote prefill.core-1.0.0-SNAPSHOT usando o [Console da Web AEM](http://localhost:4502/system/console/bundles)
 * Importe o formulário adaptável usando a opção Criar | Upload de arquivo do [Seção FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Certifique-se de que o [formulário](http://localhost:4502/editor.html/content/forms/af/prefill.html) está usando **&quot;Serviço personalizado de pré-preenchimento do AEM Forms&quot;** como o serviço de preenchimento prévio. Isso pode ser verificado nas propriedades de configuração do **Contêiner de formulário** seção.
+* Verifique se [formulário](http://localhost:4502/editor.html/content/forms/af/prefill.html) está usando **&quot;Serviço de pré-preenchimento personalizado do AEM Forms&quot;** como o serviço de preenchimento prévio. Isso pode ser verificado nas propriedades de configuração do **Contêiner de formulário** seção.
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Você deve ver o formulário preenchido com os valores corretos.
 
 >[!NOTE]
 >
->Se você ativou a depuração para o com.aem.prefill.core.PrefillAdaptiveForm, o arquivo de dados xml gerado é gravado na pasta de instalação do servidor AEM.
+>Se você ativou a depuração do com.aem.prefill.core.PrefillAdaptiveForm, o arquivo de dados xml gerado é gravado na pasta de instalação do servidor AEM.
 

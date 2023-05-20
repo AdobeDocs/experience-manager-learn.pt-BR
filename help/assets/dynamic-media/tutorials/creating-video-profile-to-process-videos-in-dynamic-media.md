@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Criação de perfis de vídeo no AEM Dynamic Media
 
-Este vídeo aborda o processo de criação de perfis de vídeo para processar vídeos no Dynamic Media.
+Este vídeo aborda o processo de criação de perfil de vídeo para processar vídeos no Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)

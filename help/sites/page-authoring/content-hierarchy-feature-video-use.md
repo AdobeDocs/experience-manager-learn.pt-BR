@@ -24,6 +24,6 @@ ht-degree: 0%
 
 # Estrutura de conteúdo e hierarquia {#content-hierarchy}
 
-Saiba como criar e organizar as páginas de site de sua organização no AEM Sites.
+Saiba como criar e organizar as páginas do site de sua organização no AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)

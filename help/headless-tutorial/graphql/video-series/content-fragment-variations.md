@@ -21,7 +21,7 @@ ht-degree: 8%
 
 Saiba como criar variações de Fragmentos de conteúdo e explorar alguns casos de uso comuns.
 
-Neste vídeo, você:
+Neste vídeo, você vai:
 
 + Saiba como criar uma variação de um Fragmento de conteúdo
 + Saiba como as variações podem ser usadas em um cenário real

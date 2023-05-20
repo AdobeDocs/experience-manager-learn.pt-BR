@@ -1,6 +1,6 @@
 ---
-title: Usando a API para gerar o Documento de registro com o AEM Forms
-description: Gerar Documento de Registro (DOR) programaticamente
+title: Utilização da API para gerar um documento de registro com o AEM Forms
+description: Gerar documento de registro (DOR) de forma programática
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,15 +15,15 @@ ht-degree: 1%
 
 ---
 
-# Usar API para gerar documento de registro no AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
+# Utilização da API para gerar o Documento de registro no AEM Forms {#using-api-to-generate-document-of-record-with-aem-forms}
 
-Gerar Documento de Registro (DOR) programaticamente
+Gerar documento de registro (DOR) de forma programática
 
-Este artigo ilustra o uso da variável `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar **Documento de registro** programaticamente. [Documento de registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) é uma versão PDF dos dados capturados no formulário adaptável.
+Este artigo ilustra a utilização do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar **Documento do registro** programaticamente. [Documento do registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) é uma versão em PDF dos dados capturados no Formulário adaptável.
 
-1. Veja a seguir o trecho de código. A primeira linha recebe o serviço DOR.
-1. Defina as opções do.
-1. Chame o método de renderização do DoRService e transmita o objeto DoROoptions para o método de renderização
+1. Veja a seguir o trecho de código. A primeira linha obtém o serviço DOR.
+1. Defina as DoROptions.
+1. Chame o método de renderização do DoRService e passe o objeto DoROptions para o método de renderização
 
 ```java
 String dataXml = request.getParameter("data");
@@ -62,23 +62,23 @@ writer.endObject();
 session.save();
 ```
 
-Para experimentar isso no sistema local, siga as seguintes etapas
+Para experimentar isso em seu sistema local, siga as etapas a seguir
 
 1. [Baixe e instale os ativos do artigo usando o gerenciador de pacotes](assets/dor-with-api.zip)
-1. Certifique-se de ter instalado e iniciado o pacote DevelopingWithServiceUser fornecido como parte do [Artigo Criar Usuário do Serviço](service-user-tutorial-develop.md)
-1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
-1. Procurar Serviço de Mapeador de Usuários do Apache Sling Service
-1. Certifique-se de que a seguinte entrada _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ na seção Service Mappings
+1. Verifique se você instalou e iniciou o pacote DevelopingWithServiceUser fornecido como parte de [Artigo Criar Usuário de Serviço](service-user-tutorial-develop.md)
+1. [Fazer logon no configMgr](http://localhost:4502/system/console/configMgr)
+1. Procurar serviço Mapeador de usuário do Apache Sling Service
+1. Certifique-se de inserir a seguinte entrada _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ na seção Mapeamentos do Serviço
 1. [Abra o formulário](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
-1. Preencha o formulário e clique em &quot; Ver PDF &quot;
-1. Você deve ver o DOR na nova guia no navegador
+1. Preencha o formulário e clique em &quot;Exibir PDF&quot;
+1. Você deve ver DOR em uma nova guia no navegador
 
 
 **Dicas de solução de problemas**
 
-O PDF não é exibido na nova guia do navegador:
+o PDF não é exibido na nova guia do navegador:
 
-1. Certifique-se de que você não está bloqueando pop-ups no seu navegador
-1. Certifique-se de iniciar AEM servidor como um administrador (pelo menos no Windows)
+1. Verifique se você não está bloqueando os pop-ups do seu navegador
+1. Verifique se você está iniciando o servidor AEM como administrador (pelo menos no Windows)
 1. Verifique se o pacote &quot;DevelopingWithServiceUser&quot; está em *estado ativo*
-1. [Certifique-se de que o usuário do sistema](http://localhost:4502/useradmin) &#39; fd-service&#39; tem permissões de Leitura, Modificação e Criação no seguinte nó `/content/usergenerated/content/aemformsenablement`
+1. [Verifique se o usuário do sistema](http://localhost:4502/useradmin) &#39;fd-service&#39; tem permissões de Leitura, Modificação e Criação no seguinte nó `/content/usergenerated/content/aemformsenablement`

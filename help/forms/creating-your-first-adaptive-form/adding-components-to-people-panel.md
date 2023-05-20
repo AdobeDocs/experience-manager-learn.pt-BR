@@ -1,6 +1,6 @@
 ---
-title: Adicionar componentes ao painel Pessoas
-description: Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o status civil do candidato for casado.
+title: Adição de componentes ao painel Pessoas
+description: Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o estado civil dos candidatos for casado.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4210
@@ -16,15 +16,15 @@ ht-degree: 2%
 
 ---
 
-# Adicionar componentes ao painel Pessoas {#adding-components-to-people-panel}
+# Adição de componentes ao painel Pessoas {#adding-components-to-people-panel}
 
-Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o status civil do candidato for casado.
+Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o estado civil dos candidatos for casado.
 
-**Configurar o painel Pessoas no AEM Forms 6.3 e 6.4**
+**Configurar o painel Gente no AEM Forms 6.3 e 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
 
-**Configurar o painel Pessoas no AEM Forms 6.5 e superior**
+**Configurar o painel Gente no AEM Forms 6.5 e posterior**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 

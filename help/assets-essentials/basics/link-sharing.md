@@ -1,6 +1,6 @@
 ---
-title: Compartilhamento público de links do Assets Essentials
-description: Saiba como o Link de compartilhamento do Assets Essentials permite que os usuários compartilhem ativos com participantes internos e externos, minimizando o risco de compartilhar ativos incorretos ... (as descrições devem ter entre 60 e 160 caracteres)
+title: Compartilhamento de link público do Assets Essentials
+description: Saiba como o link de compartilhamento do Assets Essentials permite que os usuários compartilhem ativos com participantes internos e externos, minimizando o risco de compartilhar ativos incorretos... (as descrições devem ter entre 60 e 160 caracteres)
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Compartilhamento de link público
 
-Saiba como o Link de compartilhamento do Assets Essentials permite que os usuários compartilhem ativos com participantes internos e externos, minimizando o risco de compartilhar ativos ou informações incorretos.
+Saiba como o link de compartilhamento do Assets Essentials permite que os usuários compartilhem ativos com participantes internos e externos, minimizando o risco de compartilhar ativos ou informações incorretos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

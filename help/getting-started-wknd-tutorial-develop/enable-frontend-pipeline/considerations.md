@@ -1,6 +1,6 @@
 ---
-title: Considerações de desenvolvimento
-description: Considere o impacto no processo de desenvolvimento front-end e back-end após habilitar o pipeline front-end.
+title: Considerações sobre desenvolvimento
+description: Considere o impacto no processo de desenvolvimento de front-end e back-end depois de habilitar o pipeline de front-end.
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -11,37 +11,34 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
+# Considerações sobre desenvolvimento
 
-# Considerações de desenvolvimento
-
-Depois de habilitar o pipeline front-end para implantar apenas os recursos front-end AEM ambiente as a Cloud Service, há algum impacto no desenvolvimento de AEM local e você precisa ajustar o modelo de ramificação git.
+Depois de permitir que o pipeline de front-end implante apenas os recursos de front-end no ambiente as a Cloud Service do AEM, há algum impacto no desenvolvimento local do AEM e é necessário ajustar o modelo de ramificação Git.
 
 ## Objetivo
 
-* Como ter um fluxo de desenvolvimento front-end e back-end sem atrito
-* Revise as dependências entre a pilha completa e o pipeline front-end
+* Como ter um fluxo de desenvolvimento front-end e back-end sem atritos
+* Analisar as dependências entre o pipeline de pilha completa e de front-end
 
 
-## Considerações sobre o desenvolvimento local
+## Considerações sobre desenvolvimento local
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409421?quality=12&learn=on)
 
 
-## Abordagem de desenvolvimento adaptada
+## Abordagem de desenvolvimento ajustada
 
-* Para o desenvolvimento local usando AEM SDK, a equipe de desenvolvimento de back-end ainda precisa de geração de clientlib por meio de `ui.frontend` mas durante a implantação do Cloud Manager para AEM ambiente as a Cloud Service é necessário ignorá-lo. Isso mostra um desafio sobre como isolar as alterações de configuração do projeto descritas na [Atualizar projeto](update-project.md) capítulo.
+* Para o desenvolvimento local usando o SDK do AEM, a equipe de desenvolvimento de back-end ainda precisa da geração clientlib via `ui.frontend` módulo, mas durante a implantação do Cloud Manager no ambiente as a Cloud Service AEM, é necessário ignorá-lo. Isso apresenta um desafio sobre como isolar as alterações de configuração do projeto descritas na [Atualizar projeto](update-project.md) capítulo.
 
-A __solução__ pode ser ajustar o modelo de ramificação git e garantir que as alterações na configuração do projeto AEM nunca retornem ao __desenvolvimento local__ ramificar o AEM que os desenvolvedores de back-end usam.
-
-
-* Como parte de um aprimoramento contínuo do seu projeto de AEM, se você apresentar novos componentes ou atualizar um componente existente que tenha alterações em ambos `ui.app` e `ui.frontend` módulo, você precisa executar pipelines full-stack e front-end.
+A __solução__ pode ser ajustar o modelo de ramificação Git e garantir que as alterações na configuração do projeto AEM nunca retornem para a __desenvolvimento local__ ramificar o AEM que os desenvolvedores de back-end usam.
 
 
-
+* Como parte de uma melhoria contínua do seu projeto AEM, se você introduzir novos componentes ou atualizar um componente existente que tenha alterações em ambos `ui.app` e `ui.frontend` , você precisa executar pipelines de pilha completa e de front-end.

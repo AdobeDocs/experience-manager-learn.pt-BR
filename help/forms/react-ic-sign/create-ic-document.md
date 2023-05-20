@@ -1,6 +1,6 @@
 ---
-title: Gerar documento de comunicação interativa usando API
-description: Gerar documento de Comunicação interativa mesclando os dados do aplicativo de reação
+title: Gerar documento de comunicação interativa usando a API
+description: Gerar documento de Comunicação interativa mesclando os dados do aplicativo react
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 ---
 
-# Gerar Documento de Comunicação Interativa
+# Gerar documento de comunicação interativa
 
 Para gerar um Documento de comunicação interativa usando a API, precisamos executar o seguinte
 
-* Criar serviço de pré-preenchimento
-* Gerar Documento de Comunicação Interativa
+* Criar serviço de preenchimento
+* Gerar documento de comunicação interativa
 
-O nome do serviço `ccm-print-test` é usada para acessar este serviço. Depois que esse serviço de pré-preenchimento for definido, você poderá acessar esse serviço na implementação da etapa do processo do servlet ou do fluxo de trabalho para gerar o documento do canal de impressão.
+O nome do serviço `ccm-print-test` é usado para acessar este serviço. Depois que esse serviço de pré-preenchimento for definido, você poderá acessá-lo na implementação da etapa do servlet ou do processo de fluxo de trabalho para gerar o documento do canal de impressão.
 
 ```java
 package com.acrobatsign.core;
@@ -229,7 +229,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Obter ID de widget
+## Obter ID do widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -317,4 +317,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Próximas etapas
 
-Escreva um [OSGi service wrapper para expor a API do Acrobat Sign](./wrapper-sign-api.md)
+Escreva um [Invólucro do serviço OSGi para expor a API do Acrobat Sign](./wrapper-sign-api.md)

@@ -1,6 +1,6 @@
 ---
 title: Download e upload
-description: Saiba como baixar e fazer upload de arquivos de ativos de e para o AEM Assets usando o painel Link de ativos .
+description: Saiba como baixar e fazer upload de arquivos de ativos de e para o AEM Assets usando o painel Link de ativos.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 kt: 4908
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Download e upload {#download-and-upload}
 
-Saiba como baixar e fazer upload de arquivos de ativos de e para o AEM Assets usando o painel Link de ativos .
+Saiba como baixar e fazer upload de arquivos de ativos de e para o AEM Assets usando o painel Link de ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33885?quality=12&learn=on)

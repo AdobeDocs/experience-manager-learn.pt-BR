@@ -1,6 +1,6 @@
 ---
-title: Como usar lançamentos no AEM Sites
-description: As inicializações no AEM Sites fornecem uma maneira de criar, criar e revisar o conteúdo para uma versão futura.
+title: Como usar Lançamentos no AEM Sites
+description: Os lançamentos no AEM Sites fornecem uma maneira de criar e revisar conteúdo para uma versão futura.
 topic: Content Management
 feature: Launches
 level: Intermediate, Experienced
@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Lançamentos
 
-As inicializações no AEM Sites fornecem uma maneira de criar, criar e revisar o conteúdo do site para uma versão futura. Durante a criação do lançamento, o site de produção pode continuar evoluindo e mudando dia a dia como normalmente.
+Os lançamentos no AEM Sites fornecem uma maneira de criar e revisar o conteúdo do site para uma versão futura. Durante a criação do lançamento, o site de produção pode continuar evoluindo e mudando a cada dia, como aconteceria normalmente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)

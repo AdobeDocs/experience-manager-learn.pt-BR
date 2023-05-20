@@ -1,6 +1,6 @@
 ---
-title: Qual é a estrutura AEM as a Cloud Service do projeto?
-description: Explore as práticas recomendadas para estruturar um projeto Maven para AEM as a Cloud Service.
+title: Qual é a estrutura do projeto AEM as a Cloud Service?
+description: Explore as práticas recomendadas para estruturar um projeto Maven para o AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Estrutura do projeto AEM
+# Estrutura de projeto do AEM
 
-Explore as práticas recomendadas para estruturar e [AEM projeto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#developing) para AEM as a Cloud Service.
+Explorar as práticas recomendadas para estruturar uma [Projeto Maven para AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#developing) para o AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)

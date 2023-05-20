@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Introdução
 
-Normalmente, os clientes desejam exportar os dados de formulário enviados no formato CSV. Este artigo destacará as etapas necessárias para exportar os dados do formulário no formato CSV. Este artigo supõe que os envios de formulário sejam armazenados na tabela RDBMS. A captura de tela a seguir detalha a estrutura mínima da tabela necessária para armazenar os envios do formulário.
+Normalmente, os clientes desejam exportar os dados do formulário enviado em formato CSV. Este artigo destacará as etapas necessárias para exportar os dados de formulário no formato CSV. Este artigo supõe que os envios de formulário estejam armazenados na tabela RDBMS. A captura de tela a seguir detalha a estrutura mínima da tabela necessária para armazenar os envios de formulário.
 
 >[!NOTE]
 >
->Este exemplo funciona somente com o Adaptive Forms não baseado no Esquema ou no Modelo de dados de formulário
+>Este exemplo funciona somente com o Adaptive Forms não baseado no esquema ou no modelo de dados de formulário
 
 ![Estrutura da tabela](assets/tablestructure.PNG)
-Como você pode ver, o nome do esquema é aemformstutorial.Dentro desse esquema estão os envios de formulários de tabela com as seguintes colunas definidas
+Como você pode ver, o nome do esquema é aemformstutorial.Dentro desse esquema há a tabela formsubmissions com as seguintes colunas definidas
 
-* formdata: Esta coluna contém os dados de formulário enviados
-* formname: Esta coluna contém o nome do formulário submetido
-* id: Esta é a chave primária e está definida para incremento automático
+* formdata: esta coluna contém os formdata enviados
+* formname: esta coluna contém o nome do formulário enviado
+* id: esta é a chave primária definida para incremento automático
 
 O nome da tabela e os nomes de duas colunas são expostos como propriedades de configuração OSGi, conforme mostrado na captura de tela abaixo:
 ![osgi-configuration](assets/configuration.PNG)
@@ -39,19 +39,19 @@ O código lê esses valores e constrói a consulta SQL apropriada para executar.
 
 `SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
 
-Na consulta acima, o nome do formulário (timeoffrequestform) é passado como parâmetro de solicitação para o servlet.
+Na consulta acima, o nome do formulário(timeoffrequestform) é passado como parâmetro de solicitação para o servlet.
 
 ## **Criar serviço OSGi**
 
 O serviço OSGI a seguir foi criado para exportar os dados enviados no formato CSV.
 
-* Linha 37: Estamos acessando a fonte de dados agrupada da conexão Apache Sling.
+* Linha 37: estamos acessando a fonte de dados agrupada da conexão Apache Sling.
 
-* Linha 89: Este é o ponto de entrada para o serviço.O método `getCSVFile(..)` O assume o formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome do formulário especificado.
+* Linha 89: este é o ponto de entrada para o serviço. O método `getCSVFile(..)` toma formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome do formulário fornecido.
 
 >[!NOTE]
 >
->O código pressupõe que você tenha definido a conexão do DataSource agrupada chamada &quot;aemformstutorial&quot; no Felix Web Console. O código também assume que você tenha um esquema no banco de dados chamado aemformstutorial
+>O código presume que você tenha definido a conexão agrupada DataSource chamada &quot;aemformstutorial&quot; no Felix Web Console. O código também presume que você tenha um esquema no banco de dados chamado aemformstutorial
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -244,7 +244,7 @@ public class StoreAndExportImpl implements StoreAndExport {
 
 ## Serviço de configuração
 
-Expusemos as três propriedades a seguir como propriedades de configuração do OSGI. A consulta SQL é construída lendo esses valores em tempo de execução.
+Expusemos as três propriedades a seguir como propriedades de configuração OSGI. A consulta SQL é construída lendo esses valores em tempo de execução.
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -267,7 +267,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-A seguir, o código do servlet que chama a variável `getCSVFile(..)` do serviço. O serviço retorna o objeto StringBuffer, que é transmitido de volta ao aplicativo chamador
+Veja a seguir o código de servlet que chama o `getCSVFile(..)` método do serviço. O serviço retorna o objeto StringBuffer, que é retornado ao aplicativo de chamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -309,6 +309,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implantar no servidor
 
-* Importe o [Arquivo SQL](assets/formsubmissions.sql) no servidor MySQL usando o MySQL Workbench. Isso cria um schema chamado **aemformstutorial** e tabela chamada **pedidos** com alguns dados de amostra.
-* Implantar [Pacote OSGi](assets/store-export.jar) usando o console da Web Felix
-* [Para obter Envio de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Você deve enviar o arquivo CSV para você.
+* Importe o [Arquivo SQL](assets/formsubmissions.sql) no servidor MySQL usando o MySQL Workbench. Isso cria um esquema chamado **aemformstutorial** e tabela chamada **envios de formulários** com alguns dados de amostra.
+* Implantar [Pacote OSGi](assets/store-export.jar) usando o Felix web console
+* [Para obter Envios de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Você deve receber o arquivo CSV transmitido de volta.

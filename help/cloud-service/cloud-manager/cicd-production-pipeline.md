@@ -1,6 +1,6 @@
 ---
-title: Uso do Adobe Cloud Manager - pipeline de produção de CI/CD
-description: O pipeline de produção de CI/CD é usado para criar e implantar o código por meio do Stage para o ambiente de produção, diminuindo o tempo para o valor. A configuração do pipeline de produção CI/CD define o acionador que inicia o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
+title: Utilização do Adobe Cloud Manager - pipeline de produção de CI/CD
+description: O pipeline de produção CI/CD é usado para criar e implantar código por meio do preparo no ambiente de produção, reduzindo o tempo de implantação. A configuração do pipeline de produção CI/CD define o acionador que inicia o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -19,7 +19,7 @@ ht-degree: 49%
 
 ---
 
-# Uso do Adobe Cloud Manager - pipeline de produção de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Utilização do Adobe Cloud Manager - pipeline de produção de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
@@ -30,12 +30,12 @@ ht-degree: 49%
 
 ## Configuração
 
-O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) A configuração define o acionador que iniciará o pipeline, parâmetros que controlam a implantação de produção e parâmetros de teste de desempenho.
+A variável [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) A configuração do define o acionador que iniciará o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Execução de pipeline
 
-O [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) O é usado para criar e implantar código por meio do Stage para o ambiente de produção, diminuindo o tempo para valor.
+A variável [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) O é usado para criar e implantar código por meio do ambiente de Preparo para o ambiente de Produção, reduzindo o tempo de implantação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

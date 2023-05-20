@@ -1,6 +1,6 @@
 ---
-title: Adicionar itens ao componente de grupo de opções
-description: Adicionar itens ao componente de grupo de opções dinamicamente
+title: Adicionar itens ao componente do grupo de opções
+description: Adicionar itens ao componente do grupo de opções dinamicamente
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,22 +15,22 @@ ht-degree: 0%
 
 ---
 
-# Adicionar itens dinamicamente ao componente de grupo de escolha
+# Adicionar itens dinamicamente ao componente do grupo de opções
 
-O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha do Adaptive Forms, como CheckBox, botão de opção e lista de imagens.
+O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de opções do Adaptive Forms, como CheckBox, Botão de opção e Lista de imagens.
 
 
-Você pode adicionar itens usando o editor visual, bem como o editor de códigos, dependendo do seu caso de uso.
+É possível adicionar itens usando o editor visual, bem como o editor de código, dependendo do caso de uso.
 
-**Usando o editor visual:** Você pode preencher os itens do grupo de escolha a partir dos resultados de uma chamada de função ou chamada de serviço. Por exemplo, é possível definir os itens do grupo de opções consumindo a resposta de uma chamada de API REST.
+**Uso do editor visual:** Você pode preencher os itens do grupo de opções a partir dos resultados de uma chamada de função ou de serviço. Por exemplo, você pode definir os itens do grupo de opções consumindo a resposta de uma chamada à API REST.
 
 Na captura de tela abaixo, estamos definindo as opções de Período de empréstimo (anos) para os resultados de uma chamada de serviço chamada getLoanPeriods.
 
 ![Editor de regras](assets/ruleeditor.png)
 
-**Uso do editor de código**: Quando quiser definir os itens no grupo de opções dinamicamente com base nos valores inseridos no formulário. Por exemplo, o trecho de código a seguir define os itens da caixa de seleção de acordo com os valores inseridos nos campos Nome do requerente e cônjuge do Formulário adaptativo.
+**Uso do editor de código**: quando quiser definir os itens no grupo de opções dinamicamente com base nos valores inseridos no formulário. Por exemplo, o trecho de código a seguir define os itens da caixa de seleção para os valores inseridos nos campos nome do candidato e cônjuge do Formulário adaptável.
 
-No snippet do código, estamos configurando os itens de membros de trabalho, que é um componente de caixa de seleção. A matriz para os itens está sendo construída dinamicamente buscando os valores dos campos de texto RequerName e do cônjuge dos formulários adaptáveis
+No trecho de código, estamos definindo os itens de WorkingMembers, que é um componente de caixa de seleção. A matriz dos itens está sendo criada dinamicamente, buscando os valores dos campos de texto applicationName e spouse dos formulários adaptáveis
 
 ```javascript
  
@@ -68,35 +68,35 @@ Os dados apresentados são os seguintes
 
 >[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
-**Adição de itens usando o editor de código**
+**Adicionar itens usando o editor de código**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
 
-Para experimentar isso em seu sistema:
+Para experimentar isso no seu sistema:
 
-**Uso do editor de códigos para adicionar itens**
+**Utilização do editor de código para adicionar itens**
 
 * [Baixar os ativos](assets/usingthecodeeditor.zip)
 * [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
-* [Visualizar formulários](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
-* Insira o Nome do Candidato e selecione o Status do Marital para Casar
+* Clique em &quot;Criar | Upload de arquivo&quot; e fazer upload do arquivo que você baixou na etapa anterior
+* [Pré-visualizar os formulários](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
+* Informe o Nome do Candidato e selecione o Estado Civil para Casado
 * Insira o nome do cônjuge
 * Clique em Avançar
 * Você deve ver a caixa de seleção preenchida com o nome do candidato e com o nome do cônjuge se o estado civil for casado
 
-**Usar o editor visual para adicionar itens**
+**Uso do editor visual para adicionar itens**
 
 * [Baixar os ativos](assets/usingthevisualeditor.zip)
-* Instale o Tomcat se ainda não o tiver. [Instruções para instalar o tomcat estão disponíveis aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Implante o arquivo SampleRest.war contido neste arquivo zip em seu Tomcat](assets/sample-rest.zip)
+* Instale o Tomcat se você ainda não o tiver. [As instruções para instalar o tomcat estão disponíveis aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* [Implantar o arquivo SampleRest.war contido neste arquivo zip no Tomcat](assets/sample-rest.zip)
 * [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
-* [Visualizar formulários](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
-* Insira Loan amount e tab fora do campo. Isso acionará a regra que exibe o campo do período de empréstimo.
-* Selecionar o período de empréstimo apropriado (Os itens para o período de empréstimo são preenchidos a partir do chamado &quot;restante&quot;)
+* Clique em &quot;Criar | Upload de arquivo&quot; e fazer upload do arquivo que você baixou na etapa anterior
+* [Pré-visualizar os formulários](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
+* Insira o valor do empréstimo e saia do campo. Isso acionará a regra que exibe o campo loan period.
+* Selecionar o período de empréstimo apropriado (os itens do período de empréstimo são preenchidos a partir da chamada restante)
 * Selecione a taxa de juros e clique em &quot;Obter Programação de Amortização&quot;
-* A tabela de amortização deve ser preenchida. O agendamento de amortização é obtido usando uma chamada REST.
+* A tabela de amortização deve ser preenchida. O calendário de amortização é obtido utilizando uma chamada REST.
 
 >[!NOTE]
-> Pressupõe-se que o tomcat esteja funcionando na porta 8080 e AEM na porta 4502
+> Pressupõe-se que o tomcat esteja em execução na porta 8080 e o AEM na porta 4502

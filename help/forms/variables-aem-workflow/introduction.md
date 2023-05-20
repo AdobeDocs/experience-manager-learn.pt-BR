@@ -1,6 +1,6 @@
 ---
-title: Variáveis no fluxo de trabalho AEM
-description: Uso de variáveis do tipo xml,json,arraylist,documento no fluxo de trabalho do aem
+title: Variáveis no fluxo de trabalho do AEM
+description: Uso de variáveis do tipo xml,json,arraylist,document no fluxo de trabalho do aem
 version: 6.5
 feature: Adaptive Forms
 topic: Development
@@ -15,16 +15,16 @@ ht-degree: 8%
 
 ---
 
-# Variáveis no fluxo de trabalho AEM
+# Variáveis no fluxo de trabalho do AEM
 
-A partir do AEM 6.5, agora é possível criar e usar variáveis AEM fluxo de trabalho. Antes desse recurso, os autores de fluxo de trabalho normalmente criavam chaves usando o mapa de metadados do fluxo de trabalho. Isso significava escrever algum código personalizado para criar e preencher essas chaves. Com esse novo fluxo de trabalho de recursos, os autores agora podem criar variáveis facilmente e usar essas variáveis em qualquer lugar no fluxo de trabalho.
+A partir do AEM 6.5, agora é possível criar e usar variáveis no AEM Workflow. Antes desse recurso, os autores de workflow normalmente criavam chaves usando o mapa de metadados do workflow. Isso significava escrever algum código personalizado para criar e preencher essas chaves. Com esse novo fluxo de trabalho de recurso, os autores agora podem criar variáveis facilmente e usá-las em qualquer lugar do fluxo de trabalho.
 
 As variáveis podem ser dos seguintes tipos
 
 * Longo
 * Duplo
 * Booleano
-* Sequência de caracteres
+* String
 * Data
 * JSON
 * XML
@@ -36,6 +36,6 @@ As variáveis podem ser dos seguintes tipos
 
 * [Variáveis XML](part1.md)
 * [Variáveis JSON](part2.md)
-* [Variáveis de documento](part3.md)
+* [Variáveis do documento](part3.md)
 * [Variável ArrayList](part4.md)
-* [Editor de regras em AEM fluxo de trabalho](part5.md)
+* [Editor de regras no fluxo de trabalho do AEM](part5.md)

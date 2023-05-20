@@ -1,6 +1,6 @@
 ---
-title: Encaminhar AEM projeto para o repositório do cloud manager
-description: Encaminhe o repositório Git local para o repositório do cloud manager
+title: Enviar projeto AEM para o repositório do Cloud Manager
+description: Enviar o repositório Git local para o repositório do cloud manager
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Encaminhar AEM projeto para o git repo do cloud manager
+# Enviar projeto AEM para o repositório Git do Cloud Manager
 
-Na etapa anterior, sincronizamos o AEM Project com a Adaptive Forms e os Themes criados na instância AEM.
-Agora precisamos adicionar essas alterações ao nosso repositório Git local e, em seguida, enviar o repositório Git local para o repositório Git do cloud manager.
-Abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app Execute the following commands
+Na etapa anterior, sincronizamos nosso projeto AEM com o Forms adaptável e Temas criados na instância AEM.
+Agora precisamos adicionar essas alterações ao repositório Git local e, em seguida, enviar o repositório Git local para o repositório Git do cloud manager.
+Abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app Execute os seguintes comandos
 
 ```
 git add .
@@ -38,4 +38,4 @@ Isso confirma os arquivos na ramificação principal do repositório Git local
 git push -f bankingapp master:"MyFirstAF"
 ```
 
-No comando acima, estamos enviando nossa ramificação principal do repositório Git local para a ramificação MyFirstAF do repositório do cloud manager identificado pelo nome amigável do aplicativo bancário.
+No comando acima, estamos enviando nossa ramificação principal do repositório Git local para a ramificação MyFirstAF do repositório do Cloud Manager identificado pelo nome amigável do bankingapp.

@@ -1,6 +1,6 @@
 ---
 title: Visão geral do gerenciamento de vários sites no AEM Sites
-description: O vídeo a seguir fornece uma visão geral dos conceitos básicos do gerenciamento de vários sites no AEM Sites.
+description: O vídeo a seguir fornece uma visão geral dos conceitos básicos de gerenciamento de vários sites no AEM Sites.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Visão geral do gerenciamento de vários sites
 
-O vídeo a seguir fornece uma visão geral dos conceitos básicos do gerenciamento de vários sites no AEM Sites.
+O vídeo a seguir fornece uma visão geral dos conceitos básicos de gerenciamento de vários sites no AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)

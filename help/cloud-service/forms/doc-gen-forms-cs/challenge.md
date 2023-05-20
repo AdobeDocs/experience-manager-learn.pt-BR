@@ -1,6 +1,6 @@
 ---
 title: Teste sua compreensão
-description: Concluir os exercícios
+description: Conclua os exercícios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Exercícios
 
-Modifique o código para passar o URL do modelo como um dos parâmetros de solicitação do POST.
+Modifique o código para passar o URL do modelo como um dos parâmetros de solicitação POST.
 
-O código no `DocumentGeneration.java` deve ser modificado para passar o URL do modelo.
+O código na variável `DocumentGeneration.java` deve ser modificado para passar o URL do modelo.

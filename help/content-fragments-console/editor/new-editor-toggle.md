@@ -1,6 +1,6 @@
 ---
-title: Nova alternância de editor - Editor de fragmento de conteúdo
-description: Aprenda a alternar o novo editor que permite alternar entre o editor padrão de Novo fragmento de conteúdo e o editor clássico sem esforço.
+title: Alternância Novo editor - Editor de fragmento de conteúdo
+description: Conheça a opção Novo editor, que permite alternar entre o editor padrão de Novo fragmento de conteúdo e o editor clássico sem esforço.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Nova alternância de editor
+# Alternância do novo editor
 
-Saiba como a alternância Novo editor permite alternar entre o novo editor padrão de Fragmento de conteúdo e o editor clássico facilmente.
+Saiba como a opção Novo editor permite alternar entre o novo editor de Fragmento de conteúdo padrão e o editor clássico sem esforço.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)

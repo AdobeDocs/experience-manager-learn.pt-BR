@@ -1,6 +1,6 @@
 ---
-title: Adobe App Builder Cloud 5
-description: Este episódio cai no padrão de integração externa que usa o Adobe App Builder
+title: Construtor de aplicativos Cloud 5 Adobe
+description: Esse episódio se aprofunda no padrão de integração externa que usa o Construtor de aplicativos do Adobe
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# Adobe App Builder Cloud 5
+# Construtor de aplicativos Cloud 5 Adobe
 
-O Amol Anand entra para nos fornecer o detalhamento das integrações com o Adobe App Builder e onde e quando usá-lo.
+Amol Anand entra em cena para nos fornecer a redução nas integrações com o Construtor de aplicativos Adobe e onde e quando usá-lo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ Visão geral da [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
-+ [Tutorials e Laboratórios de código](https://developer.adobe.com/app-builder/docs/resources/)
++ Visão geral do [Construtor de aplicativos](https://developer.adobe.com/app-builder/docs/overview/)
++ [Tutorials e Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
 + [Registro e monitoramento](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
 + Configuração [Limites do sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
 + [Desenvolvimento local](https://developer.adobe.com/app-builder/docs/resources/debugging/) Dicas

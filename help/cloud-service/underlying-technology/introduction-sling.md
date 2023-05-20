@@ -1,6 +1,6 @@
 ---
 title: Introdução ao Sling
-description: Uma introdução ao Sling, uma estrutura Web RESTful de código aberto que faz parte da pilha de tecnologia subjacente do Adobe Experience Manager.
+description: Uma introdução ao Sling, uma estrutura Web RESTful de código aberto que faz parte da pilha de tecnologia subjacente da Adobe Experience Manager.
 topics: sling, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -21,6 +21,6 @@ ht-degree: 4%
 
 # Introdução ao [!DNL Sling] {#introduction-sling}
 
-Uma introdução ao [!DNL Sling], um código aberto [!DNL RESTful] estrutura da Web que faz parte da pilha de tecnologia subjacente da Adobe Experience Manager.
+Uma introdução ao [!DNL Sling], um código aberto [!DNL RESTful] estrutura da web que faz parte da pilha de tecnologia subjacente da Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

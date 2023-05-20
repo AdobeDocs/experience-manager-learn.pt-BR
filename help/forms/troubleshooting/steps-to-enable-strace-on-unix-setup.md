@@ -1,6 +1,6 @@
 ---
-title: Etapas para ativar o rastreamento de sequência (configuração Unix)
-description: Configurar registros de sequência para solucionar problemas do PDF Generator
+title: Etapas para ativar o rastreamento de rastreamento (configuração do Unix)
+description: Configurar logs de rastreamento para solucionar problemas do PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para ativar o rastreamento de sequência na configuração do Unix
+# Etapas para ativar o rastreamento de rastreamento na configuração do Unix
 
-*Este vídeo aborda as etapas para ativar o rastreamento de strace na configuração do Unix para AEM Forms PDFG.*
+*Este vídeo aborda as etapas para ativar o rastreamento de rastreamento na configuração do Unix para o AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

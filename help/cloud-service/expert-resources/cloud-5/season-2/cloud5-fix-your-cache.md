@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Corrigir seu... Cache
+title: Cloud 5 - Corrigir... Cache
 description: Algumas dicas fáceis para otimizar o cache e acelerar o site
 version: Cloud Service
 role: Admin, Developer
@@ -15,9 +15,9 @@ ht-degree: 11%
 
 ---
 
-# Cloud 5 - Corrigir seu... Cache
+# Cloud 5 - Corrigir... Cache
 
-Em uma temporada de duas partes, segunda série, nós exploramos algumas coisas que você pode observar que acelerarão seu armazenamento em cache AEM as a Cloud Service.
+Em uma segunda temporada de duas partes, exploramos algumas coisas que você pode ver que vão acelerar seu armazenamento em cache no AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: Uso do catálogo de ativos com AEM Commerce e InDesign Server
-description: AEM 6.4 O aprimoramento do catálogo fornece a capacidade de criar páginas de catálogo usando AEM Modelos de ativos e InDesign Server.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear as propriedades do produto para campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para diferentes produtos.
+title: Utilização do catálogo de ativos com o AEM Commerce e o InDesign Server
+description: O aprimoramento de catálogo do AEM 6.4 oferece a capacidade de criar páginas de catálogo usando modelos de ativos e o InDesign Server AEM.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear propriedades do produto a campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para produtos diferentes.
 version: 6.4, 6.5
 topic: Content Management
 role: User
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 ---
 
-# Uso do catálogo de ativos com AEM Commerce e InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
+# Utilização do catálogo de ativos com o AEM Commerce e o InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
 
-AEM 6.4 O aprimoramento do catálogo fornece a capacidade de criar páginas de catálogo usando AEM Modelos de ativos e InDesign Server.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear as propriedades do produto para campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para diferentes produtos.
+O aprimoramento de catálogo do AEM 6.4 oferece a capacidade de criar páginas de catálogo usando modelos de ativos e o InDesign Server AEM.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear propriedades do produto a campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para produtos diferentes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
 
 >[!NOTE]
 >
->O servidor do InDesign deve estar em execução antes de fazer upload de arquivos \.indd para o AEM Assets.
+>Seu servidor do InDesign deve estar em execução antes de fazer upload dos arquivos \.indd para o AEM Assets.
 
-* Os usuários criativos podem marcar o conteúdo com um arquivo de InDesign. O arquivo InDesign com conteúdo marcado, quando carregado no AEM Assets, seria identificado como Campos editáveis.
-* Um usuário pode criar uma página de Catálogo usando um arquivo \.indd. O conteúdo marcado no arquivo \.indd estaria disponível como campos editáveis, dando aos autores de conteúdo a capacidade de modificar o conteúdo desses campos.
-* As propriedades do produto podem ser mapeadas para Campos editáveis, desde que o tipo de campo corresponda.
-* Páginas de catálogo para produtos semelhantes podem ser criadas facilmente.
-* Capacidade de mesclar diferentes páginas de catálogo em um único PDF ou arquivo \.indd
+* Os usuários de criação podem marcar o conteúdo com um arquivo de InDesign. O arquivo de InDesign com conteúdo marcado, quando carregado no AEM Assets, seria identificado como Campos editáveis.
+* Um usuário pode criar uma página de Catálogo usando um arquivo \.indd. O conteúdo marcado no arquivo \.indd estaria disponível como campos Editáveis, proporcionando aos autores de conteúdo a capacidade de modificar o conteúdo desses campos.
+* As propriedades do produto podem ser mapeadas para Campos editáveis desde que o tipo de campo corresponda.
+* Páginas de catálogo para produtos semelhantes podem ser facilmente criadas.
+* Capacidade de mesclar diferentes páginas do catálogo em um único arquivo PDF ou \.indd

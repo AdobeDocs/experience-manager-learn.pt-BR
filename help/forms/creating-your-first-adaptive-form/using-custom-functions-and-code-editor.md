@@ -1,6 +1,6 @@
 ---
-title: Uso de funções e editor de código
-description: Uso do editor de funções e códigos para criar regras de negócios
+title: Uso de funções e do editor de código
+description: Uso de funções e do editor de código para criar uma regra de negócios
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Uso de funções personalizadas e do editor de códigos {#using-functions-and-code-editor}
+# Uso de funções personalizadas e do editor de código {#using-functions-and-code-editor}
 
-Nessa parte, usaremos funções personalizadas e o editor de códigos para criar regras de negócios.
+Nesta parte, usaremos funções personalizadas e o editor de código para criar regras de negócios.
 
 você já instalou o [ClientLib com função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
 
-Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Essa biblioteca do cliente contém um arquivo javascript que expõe uma função para preencher valores de lista suspensa.
+Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Essa biblioteca do cliente contém um arquivo javascript que expõe uma função para preencher valores de listas suspensas.
 
 
 ## Função para preencher a lista suspensa {#function-to-populate-drop-down-list}
@@ -33,7 +33,7 @@ Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Es
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
-#### Validar painel {#validate-panels-using-rule-editor}
+#### Painel Validar {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
@@ -66,6 +66,6 @@ Linha 4 - Obter o painel atual
 
 Linha 5 - Valide o painel atual.
 
-Linha 9 - Se nenhum erro se mover para o painel seguinte
+Linha 9 - Se nenhum erro for movido para o próximo painel
 
-Visualize o formulário e teste a funcionalidade recém-ativada.
+Pré-visualize o formulário e teste a funcionalidade recém-ativada.

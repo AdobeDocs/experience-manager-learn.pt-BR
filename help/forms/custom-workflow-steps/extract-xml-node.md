@@ -1,6 +1,6 @@
 ---
-title: Extrair nó do xml de dados enviados
-description: Etapa do processo personalizado para adicionar documento de gravação residente na pasta carga ao sistema de arquivos
+title: Extrair nó do XML de dados enviado
+description: Etapa de processo personalizada para adicionar o documento de gravação localizado na pasta de carga útil ao sistema de arquivos
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ---
 
-# Extrair nó do xml de dados enviados
+# Extrair nó do XML de dados enviado
 
-Esta etapa do processo personalizado é criar um novo documento xml extraindo o nó de outro documento xml. Você precisaria usar isso quando quiser mesclar os dados enviados com o template xdp para gerar pdf. Por exemplo, ao enviar um formulário adaptável, os dados que você precisa mesclar com o modelo xdp estão dentro do elemento de dados. Nesse caso, seria necessário criar outro documento xml extraindo o elemento de dados apropriado.
+Esta etapa do processo personalizado é criar um novo documento xml extraindo o nó de outro documento xml. Você precisaria usá-la quando quiser mesclar os dados enviados com o modelo xdp para gerar o pdf. Por exemplo, quando você envia um formulário adaptável, os dados que você precisa mesclar com o modelo xdp estão dentro do elemento de dados. Nesse caso, seria necessário criar outro documento xml extraindo o elemento de dados apropriado.
 
-A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa do processo personalizado
+A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
 ![etapa do processo](assets/create-xml-process-step.png)
-A seguir estão os parâmetros
-* Data.xml - o arquivo xml do qual você deseja extrair o nó
-* datatomerge.xml - o novo xml criado com o nó extraído
+Veja a seguir os parâmetros
+* Data.xml - O arquivo xml do qual você deseja extrair o nó
+* datatomerge.xml - O novo xml criado com o nó extraído
 * /afData/afUnboundData/data - O nó a ser extraído
 
 
-A seguinte captura de tela mostra o datamerge.xml que está sendo criado na pasta payload
+A captura de tela a seguir mostra o datamerge.xml que está sendo criado na pasta de carga útil
 ![create-xml](assets/create-xml.png)
 
 [O pacote personalizado pode ser baixado aqui](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

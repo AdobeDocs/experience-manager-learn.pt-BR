@@ -1,6 +1,6 @@
 ---
-title: Configurações OSGi como objetos ObjectClassDefinition
-description: Saiba como criar e designar ObjectClassDefinition como representações de configuração OSGi em um serviço OSGi
+title: Configurações do OSGi como objetos ObjectClassDefinition
+description: Saiba como criar e designar definições de classe de objeto como representações de configuração OSGi em um serviço OSGi
 role: Developer
 level: Beginner
 topic: Development
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ---
 
-# Configurações OSGi como objetos ObjectClassDefinition
+# Configurações do OSGi como objetos ObjectClassDefinition
 
-Saiba como criar e designar ObjectClassDefinition como representações de configuração OSGi em um serviço OSGi.
+Saiba como criar e designar Definições de Classe de Objeto como representações de configuração OSGi em um serviço OSGi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
 
@@ -26,7 +26,7 @@ Saiba como criar e designar ObjectClassDefinition como representações de confi
 + [@Designate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/Designate.html)
 + [@ObjectClassDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/ObjectClassDefinition.html)
 + [@AttributeDefinition JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/metatype/annotations/AttributeDefinition.html)
-+ [@Ativate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
 ## Código
 

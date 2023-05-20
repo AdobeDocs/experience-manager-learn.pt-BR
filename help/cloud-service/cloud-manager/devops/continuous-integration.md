@@ -1,5 +1,5 @@
 ---
-title: Uso da integração contínua com o AEM Cloud Manager
+title: Utilização da integração contínua com o AEM Cloud Manager
 description: Entenda as práticas recomendadas e a integração contínua usando o Adobe Cloud Manager.
 role: Developer
 level: Beginner

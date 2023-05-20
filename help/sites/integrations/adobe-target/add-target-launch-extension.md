@@ -1,6 +1,6 @@
 ---
 title: Adicionar extensão do Target a uma propriedade do Launch
-description: Saiba como adicionar a extensão Adobe Target a uma propriedade do Adobe Experience Platform Launch.
+description: Saiba como adicionar a extensão do Adobe Target a uma propriedade do Adobe Experience Platform Launch.
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Para acompanhar este vídeo, você já deve ter [Experience Platform Launch integrado com AEM](../experience-platform/data-collection/tags/overview.md).
 
-Saiba como habilitar o Adobe Target no seu site de AEM usando o Experience Platform Launch.
+Saiba como habilitar o Adobe Target para o seu site AEM usando o Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 

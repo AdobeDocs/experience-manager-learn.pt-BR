@@ -1,6 +1,6 @@
 ---
-title: Etapas para redefinir a senha padrão do administrador no AEM Forms OSGi
-description: Etapas para redefinir a senha padrão do administrador no AEM Forms OSGi
+title: Etapas para redefinir a senha padrão para o administrador no AEM Forms OSGi
+description: Etapas para redefinir a senha padrão para o administrador no AEM Forms OSGi
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Etapas para redefinir a senha padrão do administrador no AEM Forms OSGi
+# Etapas para redefinir a senha padrão para o administrador no AEM Forms OSGi
 
 *Este vídeo aborda as etapas para redefinir a senha padrão do administrador no AEM Forms OSGi.*
 

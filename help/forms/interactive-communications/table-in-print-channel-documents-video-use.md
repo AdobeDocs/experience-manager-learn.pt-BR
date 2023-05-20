@@ -1,7 +1,7 @@
 ---
-title: Uso do Componente de tabela no Documento de canal de impressão do AEM Forms
+title: Uso do componente de Tabela no Documento de canal de impressão do AEM Forms
 seo-title: Using Table Component in AEM Forms Print Channel Document
-description: O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
+description: O vídeo a seguir mostra as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos de canal de impressão.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -20,25 +20,25 @@ ht-degree: 0%
 
 ---
 
-# Uso do Componente de tabela no Documento de canal de impressão do AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Uso do componente de Tabela no Documento de canal de impressão do AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
-O vídeo a seguir apresenta as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos do canal de impressão.
+O vídeo a seguir mostra as etapas necessárias para usar o componente de tabela nas Comunicações interativas para documentos de canal de impressão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Tabelas são usadas para exibir dados de maneira tabular. As linhas da tabela precisam crescer ou diminuir dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento de canal de impressão, precisamos criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Nesse arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto de campo de coluna é TextField ou Numeric Field, dependendo de suas necessidades. Para cada coluna, os campos garantem que o vínculo de dados esteja definido como Usar nome.
+As tabelas são usadas para exibir dados na forma de tabelas. As linhas na tabela precisam aumentar ou diminuir, dependendo dos dados retornados pela fonte de dados. Para usar uma tabela no documento de canal de impressão, precisamos criar um arquivo de layout (arquivo xdp) usando o AEM Forms Designer. Neste arquivo de layout, adicionamos a tabela com o número necessário de colunas. Verifique se o tipo de objeto do campo de coluna é TextField ou Numeric Field, dependendo de suas necessidades. Para cada coluna, os campos garantem que a associação de dados esteja definida como Usar nome.
 
 >[!NOTE]
 >
->Para tornar a tabela dinâmica, verifique se você marcou a Linha como repetitiva.
+>Para tornar a tabela dinâmica, verifique se você marcou a linha como repetitiva.
 
-**Experimente-o no seu próprio servidor**
+**Experimente no seu próprio servidor**
 
-* [Baixe e descompacte o arquivo de ativos no seu disco rígido](assets/usingtablesinprintchannel.zip)
+* [Baixe e descompacte o arquivo de ativos no disco rígido](assets/usingtablesinprintchannel.zip)
 
-* Importe os dois arquivos zip no AEM usando o gerenciador de pacotes
+* Importe os dois arquivos zip para o AEM usando o gerenciador de pacotes
 
-* Os ativos associados a este artigo estão incluídos no seguinte:
+* Estão incluídos nos ativos associados a este artigo:
 
    * Fragmento do layout
 
@@ -47,9 +47,9 @@ Tabelas são usadas para exibir dados de maneira tabular. As linhas da tabela pr
    * Documento de comunicação interativa
    * sampleretirementaccountdata.json
 
-* Abra o Documento de comunicação interativa em [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Abra o documento de comunicação interativa no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
-* Adicione o fragmento de layout TableDemo à seção contribuições.
+* Adicione o fragmento de layout TableDemo à seção de contribuições.
 * Vincule as células da tabela aos elementos apropriados do Modelo de dados de formulário, conforme mostrado no vídeo
 
-* Visualizar documento de comunicação interativa com o arquivo de dados json de amostra fornecido a você
+* Visualizar o documento de comunicação interativa com o arquivo de dados json de amostra fornecido a você

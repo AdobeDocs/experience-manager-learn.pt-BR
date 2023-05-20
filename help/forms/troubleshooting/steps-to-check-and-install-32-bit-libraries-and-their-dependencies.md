@@ -1,6 +1,6 @@
 ---
-title: Etapas para verificar as redistribuíveis Microsoft Visual C++ de 32 bits necessárias
-description: Instale redistribuíveis Microsoft Visual C++ de 32 bits.
+title: Etapas para verificar os redistribuíveis do Microsoft Visual C++ de 32 bits necessários
+description: Instalar redistribuíveis do Microsoft Visual C++ de 32 bits.
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para verificar e instalar as redistribuíveis Microsoft Visual C++ de 32 bits necessárias
+# Etapas para verificar e instalar os redistribuíveis Microsoft Visual C++ de 32 bits necessários
 
-*Este vídeo aborda o processo de verificação e instalação das redistribuíveis necessárias do Microsoft Visual C++ de 32 bits.*
+*Este vídeo aborda o processo de verificação e instalação dos redistribuíveis Microsoft Visual C++ de 32 bits necessários.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Criar Cloud Service de configuração da Acrobat Sign Cloud
+title: Criar Cloud Service de configuração do Acrobat Sign Cloud
 description: Crie a integração do AEM Forms e do Acrobat Sign usando a configuração dos serviços em nuvem.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 ---
 
-# Criar configuração da Acrobat Sign Cloud
+# Criar configuração do Acrobat Sign Cloud
 
 A configuração dos serviços em nuvem no AEM permite criar a integração entre o AEM e outros aplicativos em nuvem.
 
-O vídeo a seguir guiará você pelas etapas necessárias para criar a configuração dos serviços em nuvem para integrar o AEM com o Acrobat Sign
+O vídeo a seguir o guiará pelas etapas necessárias para criar a configuração dos serviços em nuvem a fim de integrar o AEM ao Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 
 ## Resolução de problemas
 
-Se você receber um erro ao configurar a configuração da nuvem do Adobe Sign, as seguintes etapas podem ser tomadas para solucionar problemas
-* Certifique-se de que o url de redirecionamento especificado no aplicativo da API do Acrobat Sign esteja no seguinte formato
+Se você receber um erro ao definir a configuração de nuvem do Adobe Sign, as seguintes etapas podem ser executadas para solucionar problemas
+* Verifique se o URL de redirecionamento especificado no aplicativo da API do Acrobat Sign está no seguinte formato
 &lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
-Por exemplo - https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS é o nome do contêiner que manterá a configuração da nuvem
-* Certifique-se de que o url de oAuth está correto
+Por exemplo - https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS é o nome do container que manterá a configuração de nuvem
+* Verifique se o URL oAuth está correto
 * Verifique a ID do cliente e o segredo do cliente
-* Tente o modo incognitivo da janela
+* Tentar modo de janela incógnito
 

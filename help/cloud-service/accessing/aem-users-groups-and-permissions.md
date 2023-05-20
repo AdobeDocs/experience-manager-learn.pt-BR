@@ -1,5 +1,5 @@
 ---
-title: AEM usuários, grupos e permissões
+title: Usuários, grupos e permissões do AEM
 description: O Adobe Experience Manager se baseia em usuários, grupos de usuários e perfis de produtos do Adobe IMS para fornecer aos usuários acesso personalizável ao AEM. Saiba mais sobre como definir grupos e permissões do AEM e como eles trabalham em conjunto com abstrações do Adobe IMS para fornecer acesso fácil e personalizável ao AEM.
 version: Cloud Service
 topic: Administration, Security
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 ---
 
-# AEM usuários, grupos e permissões {#aem-users-groups-and-permissions}
+# Usuários, grupos e permissões do AEM {#aem-users-groups-and-permissions}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_aem_users_groups"

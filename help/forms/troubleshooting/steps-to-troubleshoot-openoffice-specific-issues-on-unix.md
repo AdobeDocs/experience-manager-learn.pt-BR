@@ -1,6 +1,6 @@
 ---
 title: Etapas para solucionar problemas específicos do OpenOffice em uma configuração Unix
-description: Solucione problemas do OpenOffice com problemas de PDF Generator na configuração UNIX.
+description: Solução de problemas do OpenOffice com problemas do PDF Generator na configuração do UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate

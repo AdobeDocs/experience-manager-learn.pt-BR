@@ -1,7 +1,7 @@
 ---
-title: AEM Forms com esquema JSON e dados[Parte3]
+title: AEM Forms com esquema e dados JSON [Part3]
 seo-title: AEM Forms with JSON Schema and Data[Part3]
-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -23,9 +23,9 @@ ht-degree: 0%
 # Armazenamento do esquema JSON no banco de dados {#storing-json-schema-in-database}
 
 
-Para consultar os dados enviados, é necessário armazenar o esquema JSON associado ao formulário enviado. O esquema JSON é usado no construtor de consultas para criar a consulta.
+Para poder consultar os dados enviados, precisaremos armazenar o esquema JSON associado ao formulário enviado. O esquema JSON é usado no construtor de consultas para criar a consulta.
 
-Quando um Formulário adaptável é enviado, verificamos se o esquema JSON associado está no banco de dados. Se o schema JSON não existir, buscamos o schema JSON e armazenamos o schema na tabela apropriada. Também associamos o nome do formulário ao esquema JSON. A captura de tela a seguir mostra a tabela onde os esquemas JSON são armazenados.
+Quando um Formulário adaptável é enviado, verificamos se o esquema JSON associado está no banco de dados. Se o esquema JSON não existir, buscamos o esquema JSON e armazenamos o esquema na tabela apropriada. Também associamos o nome do formulário ao esquema JSON. A captura de tela a seguir mostra a tabela em que os esquemas JSON são armazenados.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -107,9 +107,9 @@ public String getJSONSchema(String afPath) {
 
 >[!NOTE]
 >
->Ao criar um Formulário adaptável, você pode usar o Esquema JSON que está no repositório ou fazer upload de um esquema JSON. O código acima funcionará em ambos os casos.
+>Ao criar um formulário adaptável, você pode usar o esquema JSON que está no repositório ou carregar um esquema JSON. O código acima funcionará para ambos os casos.
 
-O schema buscado é armazenado no banco de dados usando as operações JDBC padrão. O código a seguir insere o schema no banco de dados
+O esquema buscado é armazenado no banco de dados usando as operações JDBC padrão. O código a seguir insere o esquema no banco de dados
 
 ```java
 public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
@@ -148,7 +148,7 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
 Resumindo, fizemos o seguinte até agora
 
 * Criar formulário adaptável com base no esquema JSON
-* Se o formulário estiver sendo enviado na primeira vez, armazenaremos o esquema JSON associado ao formulário no banco de dados.
+* Se o formulário estiver sendo enviado na primeira vez que armazenarmos o esquema JSON associado ao formulário no banco de dados.
 * Armazenamos os dados vinculados do Formulário adaptável no banco de dados.
 
-As próximas etapas seriam usar o QueryBuilder para exibir os campos a serem pesquisados com base no esquema JSON
+As próximas etapas seriam usar o QueryBuilder para exibir os campos a serem pesquisados com base no Esquema JSON

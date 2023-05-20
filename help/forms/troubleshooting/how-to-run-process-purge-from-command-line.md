@@ -1,6 +1,6 @@
 ---
 title: Como executar a ferramenta de limpeza de processos a partir da linha de comando
-description: Etapas para executar a ferramenta de limpeza de processos a partir da linha de comando para excluir registros da tabela do Gerenciador de Tarefas
+description: Etapas para executar a ferramenta de limpeza de processos a partir da linha de comando para excluir registros da tabela Gerenciador de Jobs
 type: Troubleshooting
 role: Developer
 level: Intermediate

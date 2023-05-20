@@ -1,6 +1,6 @@
 ---
-title: Gravar o documento de carga no sistema de arquivos
-description: Etapa do processo personalizado para adicionar documento de gravação residente na pasta carga ao sistema de arquivos
+title: Gravar o documento de conteúdo no sistema de arquivos
+description: Etapa de processo personalizada para adicionar o documento de gravação localizado na pasta de carga útil ao sistema de arquivos
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Gravar o documento no sistema de arquivos
 
-Caso de uso comum é gravar os documentos gerados no fluxo de trabalho para o sistema de arquivos.
-Essa etapa personalizada do processo de fluxo de trabalho facilita a gravação dos documentos do fluxo de trabalho no sistema de arquivos.
-O processo personalizado aceita os seguintes argumentos separados por vírgula
+Um caso de uso comum é gravar os documentos gerados no fluxo de trabalho no sistema de arquivos.
+Essa etapa do processo de fluxo de trabalho personalizado facilita a gravação dos documentos do fluxo de trabalho no sistema de arquivos.
+O processo personalizado usa os seguintes argumentos separados por vírgula
 
 ```java
 ChangeBeneficiary.pdf,c:\confirmation
@@ -28,7 +28,7 @@ ChangeBeneficiary.pdf,c:\confirmation
 
 O primeiro argumento é o nome do documento que você deseja salvar no sistema de arquivos. O segundo argumento é o local da pasta em que você deseja salvar o documento. Por exemplo, no caso de uso acima, o documento é gravado em `c:\confirmation\ChangeBeneficiary.pdf`
 
-A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa do processo personalizado
+A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
 ![write-payload-file-system](assets/write-payload-file-system.png)
 
 [O pacote personalizado pode ser baixado aqui](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

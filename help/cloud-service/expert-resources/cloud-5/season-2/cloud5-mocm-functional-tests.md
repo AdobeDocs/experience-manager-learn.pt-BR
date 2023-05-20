@@ -17,12 +17,12 @@ ht-degree: 6%
 
 # Cloud 5 - Mistérios do Cloud Manager - Testes funcionais
 
-AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu aplicativo integrado na parte superior. No entanto, esses testes podem não abranger todos os testes necessários que você possa precisar. Testes funcionais personalizados chegam ao resgate.
+O AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu aplicativo criado no topo. No entanto, esses testes podem não abranger todos os testes necessários que você possa precisar. Testes funcionais personalizados são necessários.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
 + [Teste funcional](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
-+ [Testes de fumaça AEM](https://github.com/adobe/aem-test-samples/)
++ [Testes de fumaça do AEM](https://github.com/adobe/aem-test-samples/)
 + [Clientes de teste de AEM](https://github.com/adobe/aem-testing-clients/)

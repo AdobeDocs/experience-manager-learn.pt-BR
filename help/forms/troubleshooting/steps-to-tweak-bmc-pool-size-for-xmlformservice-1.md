@@ -1,5 +1,5 @@
 ---
-title: Etapas para ajustar o tamanho do pool de bmc para o serviço XMLForm (1 de 2)
+title: Etapas para ajustar o tamanho do pool da bmc para o serviço XMLForm (1 de 2)
 description: Configurar parâmetros XMLFormService
 type: Troubleshooting
 role: Developer

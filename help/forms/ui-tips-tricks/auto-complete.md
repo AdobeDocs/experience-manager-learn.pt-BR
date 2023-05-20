@@ -1,6 +1,6 @@
 ---
 title: Recurso de preenchimento automático no AEM Forms
-description: Permite que os usuários localizem e selecionem rapidamente a partir de uma lista pré-preenchida de valores à medida que digitam, aproveitando a pesquisa e a filtragem.
+description: Permite que os usuários localizem e selecionem rapidamente de uma lista pré-preenchida de valores à medida que digitam, aproveitando a pesquisa e a filtragem.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -9,27 +9,28 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
-# Implementação automática concluída
+# Implementação do Preenchimento automático
 
 Implemente o recurso de preenchimento automático em formulários AEM usando o recurso de preenchimento automático do jquery.
-A amostra incluída neste artigo usa uma variedade de fontes de dados (matriz estática, matriz dinâmica preenchida a partir de uma resposta REST API) para preencher as sugestões à medida que o usuário começa a digitar no campo de texto.
+A amostra incluída neste artigo usa uma variedade de fontes de dados (matriz estática, matriz dinâmica preenchida a partir de uma resposta da API REST) para preencher as sugestões conforme o usuário começa a digitar no campo de texto.
 
-O código usado para realizar o recurso de preenchimento automático está associado ao evento initialize do campo.
+O código usado para executar o recurso de preenchimento automático está associado ao evento de inicialização do campo.
 
-## Fornecer sugestão para endereço
+## Fornecendo sugestão para endereço
 
-![sugestões de país](assets/auto-complete2.png)
+![país-sugestões](assets/auto-complete2.png)
 
 
 
-Este é o código usado para fornecer sugestões de endereço de rua
+Este é o código usado para fornecer sugestões de endereço
 
 ```javascript
 $(".streetAddress input").autocomplete({
@@ -62,9 +63,9 @@ $(".streetAddress input").autocomplete({
 
 
 
-## Sugestões para emoji
+## Sugestões com emoji
 
-![sugestões de país](assets/auto-complete3.png)
+![país-sugestões](assets/auto-complete3.png)
 
 O código a seguir foi usado para exibir emojis na lista de sugestões
 
@@ -77,8 +78,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-O [é possível baixar o formulário de amostra](assets/auto-complete-form.zip) daqui. Certifique-se de fornecer seu próprio nome de usuário/chave de API usando o editor de código para o código para fazer chamadas REST bem-sucedidas.
+A variável [o formulário de exemplo pode ser baixado](assets/auto-complete-form.zip) daqui. Forneça seu próprio nome de usuário/chave de API usando o editor de código para que o código faça chamadas REST bem-sucedidas.
 
 >[!NOTE]
 >
-> Para que o preenchimento automático funcione, verifique se seu formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Essa biblioteca do cliente vem com AEM.
+> Para que o preenchimento automático funcione, verifique se seu formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Esta biblioteca cliente vem com AEM.

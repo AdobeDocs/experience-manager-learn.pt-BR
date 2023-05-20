@@ -1,6 +1,6 @@
 ---
 title: Como capturar despejos de heap de uma JVM em um servidor Windows
-description: Capture os despejos de heap da execução do processo Java em um servidor Windows
+description: Capturar os despejos de pilha da execução do processo Java em um servidor Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate

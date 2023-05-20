@@ -1,33 +1,33 @@
 ---
 title: Relatórios valiosos para administradores
-description: Descubra dois relatórios importantes que os administradores do Dynamic Media Classic devem considerar a configuração.
+description: Descubra dois relatórios valiosos que os administradores do Dynamic Media Classic devem considerar configurar.
 feature: Dynamic Media Classic
 topic: Content Management
 role: Admin
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: c3fbfb0b-3222-46ff-9248-dea70ce85a23
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-
 # Relatórios valiosos para administradores {#valuable-reports}
 
-Neste último capítulo, queremos que você saiba sobre dois relatórios valiosos que podem ser considerados como configuração se você for um administrador: o relatório Largura de banda e Armazenamento e o relatório Erros de imagem .
+Neste capítulo final, queremos que você saiba mais sobre dois importantes relatórios que podem ser considerados se você for um administrador: o relatório Largura de banda e armazenamento e o relatório de Erros de imagem.
 
 ## Relatório de largura de banda e armazenamento
 
-O relatório Largura de banda e armazenamento detalha quanta largura de banda do Servidor de imagem foi consumida por mês e o armazenamento que você está ocupando no Dynamic Media Classic. O armazenamento é um valor contratado, portanto, é importante verificar e garantir que você permaneça abaixo do limite para evitar taxas de excedente.
+O relatório Largura de banda e armazenamento detalha a largura de banda do Servidor de imagens consumida por mês e o armazenamento utilizado no Dynamic Media Classic. O armazenamento é uma quantidade contratada, portanto, é importante verificar e garantir que você permaneça abaixo do limite para evitar taxas de excedente.
 
 ![imagem](assets/valuable-reports/reports-1.jpg)
 
-_O relatório Bandwidth &amp; Storage mostra essa conta como ultrapassando o limite de armazenamento de 30 GB._
+_O relatório Largura de banda e armazenamento mostra essa conta como além do limite de armazenamento de 30 GB._
 
-## Relatório de erros de imagem
+## Relatório de Erros de Imagem
 
-Sempre que um URL solicita uma imagem que está ausente, o Servidor de imagem gera um erro. Você pode configurar uma imagem padrão para aparecer nesses casos, mas ainda deve estar ciente dos erros. O relatório Erros de imagem fornece uma lista dos 20 erros de imagem mais frequentes nas últimas 24 horas com detalhes como quantas vezes o erro ocorreu, a imagem que deu o erro e a página com a imagem do problema. Se a Resposta for &quot;DEFAULT&quot;, significa que sua imagem padrão foi disponibilizada.
+Sempre que um URL solicita uma imagem que está ausente, o Servidor de imagens gera um erro. Você pode configurar uma imagem padrão para aparecer nesses casos, mas ainda deve estar ciente dos erros. O relatório Erros de imagem fornece uma lista dos 20 erros de imagem mais frequentes nas últimas 24 horas, com detalhes como quantas vezes o erro ocorreu, a imagem que está fornecendo o erro e a página com a imagem do problema. Se a Resposta for &quot;DEFAULT&quot;, significa que a imagem padrão foi disponibilizada.
 
 ![imagem](assets/valuable-reports/reports-2.jpg)
 
@@ -35,11 +35,11 @@ _Relatório de erro de imagem._
 
 ## Conclusão
 
-Esperamos que você tenha considerado o conteúdo deste guia de práticas recomendadas útil para começar a usar ou aproveitar ao máximo a solução de mídia avançada.
+Esperamos que o conteúdo deste guia de práticas recomendadas seja útil para começar a usar ou aproveitar ao máximo sua poderosa solução de mídia avançada.
 
 Para saber mais sobre o Dynamic Media Classic, consulte os seguintes recursos:
 
 - [Dynamic Media Classic no Experience League - Obter valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic no Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Os Arquivos de Informativo do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Os arquivos do informativo do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

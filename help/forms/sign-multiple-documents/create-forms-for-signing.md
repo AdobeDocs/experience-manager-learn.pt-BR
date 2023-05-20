@@ -18,36 +18,36 @@ ht-degree: 0%
 
 # Criar formulários para assinatura
 
-A próxima etapa é criar os formulários adaptáveis que você deseja incluir no pacote. Lembre-se de aderir aos seguintes pontos ao criar formulários para assinatura:
+A próxima etapa é criar os formulários adaptáveis que você deseja incluir no pacote. Lembre-se de seguir os seguintes pontos ao criar formulários para assinatura:
 
-* Certifique-se de que os formulários sejam baseados no **SignMultipleForms** modelo . Isso garante que os formulários sejam preenchidos previamente com os dados obtidos do banco de dados.
+* Verifique se os formulários são baseados no **SignMultipleForms** modelo. Isso garante que os formulários sejam pré-preenchidos com os dados buscados no banco de dados.
 
-* Os formulários precisam ser configurados para usar o Acrobat Sign e o campo signer1 precisa ser associado ao campo Email do cliente
-* Os formulários também precisam ser associados ao clientLib chamado **getnextform**
+* Os formulários precisam ser configurados para usar o Acrobat Sign e o campo signatário1 precisa ser associado ao campo Email do cliente
+* Os formulários também precisam ser associados a clientLib chamado **getnextform**
 * Os formulários precisam usar o componente Etapa de assinatura.
-* O formulário também deve usar o **Assinar vários formulários** componente. Esse componente permite navegar até o próximo formulário para fazer logon no pacote.
-* O envio do formulário deve ser configurado para acionar AEM fluxo de trabalho **Atualizar Status da Assinatura**
-* Verifique se o Caminho do arquivo de dados está definido como **Data.xml**. Isso é muito importante, pois o código de amostra procura um arquivo chamado Data.xml na carga útil que processa o envio do formulário.
+* O formulário também deve usar o formato personalizado **Assinar vários formulários** componente. Este componente permite navegar até o próximo formulário para entrar no pacote.
+* O envio do formulário deve ser configurado para acionar o workflow do AEM **Atualizar Status da Assinatura**
+* Verifique se o Caminho do arquivo de dados está definido como **Dados.xml**. Isso é muito importante, pois o código de amostra procura um arquivo chamado Data.xml na carga do processo para o envio do formulário.
 
-Depois de criar seu formulário, inclua o **campos comuns** fragmento de formulário adaptável no formulário. O fragmento é marcado como oculto. Esse fragmento contém os seguintes campos.
+Depois de criar o formulário, inclua o **campos comuns** fragmento de formulário adaptável no formulário. O fragmento está marcado como oculto. Este fragmento contém os seguintes campos.
 
-* **assinado** - O campo para conter o status da assinatura
-* **guid** - Identificador exclusivo para identificar o formulário no pacote
+* **assinado** - O campo que conterá o status da assinatura
+* **guid** - Identificador exclusivo que identifica o formulário no pacote
 * **customerEmail** - Este campo contém o email do cliente
 
 
 
 >[!NOTE]
->Se você deseja carregar dados de um formulário para outro no pacote, certifique-se de que os campos do formulário tenham um nome idêntico em todos os formulários.
+>Se quiser carregar dados de um formulário para outro no pacote, verifique se os campos do formulário têm nomes idênticos em todos os formulários.
 
-## Todos os formulários concluídos
+## Formulário Concluído
 
-Depois que todos os formulários do pacote forem preenchidos e assinados, precisaremos exibir a mensagem apropriada. Essa mensagem é exibida com a ajuda do formulário Concluído. O formulário concluído é incluído nos formulários de amostra.
+Depois que todos os formulários no pacote forem preenchidos e assinados, precisamos exibir a mensagem apropriada. Esta mensagem é exibida com a ajuda do formulário Alldone. O formulário Aldone é incluído nos formulários de amostra.
 
 ## Assets
 
-Os formulários de amostra, incluindo os usados neste tutorial, podem ser [baixado aqui](assets/forms-for-signing.zip)
+Os formulários de amostra, incluindo o usado neste tutorial, podem ser [baixado aqui](assets/forms-for-signing.zip)
 
 ## Próximas etapas
 
-[Teste a solução em seu sistema local](./testing-and-trouble-shooting.md)
+[Testar a solução no sistema local](./testing-and-trouble-shooting.md)

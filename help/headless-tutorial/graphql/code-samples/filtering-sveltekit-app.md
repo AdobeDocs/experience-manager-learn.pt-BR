@@ -1,5 +1,5 @@
 ---
-title: Aplicativo SvelteKit Simples
+title: Aplicativo Simple SvelteKit
 description: Um aplicativo SvelteKit simples que exibe aventuras WKND modeladas com Fragmentos de conteúdo.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -12,21 +12,21 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 hidefromtoc: true
-source-git-commit: a0a1c7e5d3dd74454b9b8ab787ce7447e73ee098
+exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
+# Filtrar o aplicativo SvelteKit
 
-# Filtragem do aplicativo SvelteKit
+Explore a capacidade das APIs do GraphQL sem periféricos do AEM de listar dados usando uma [SvelteKit](https://kit.svelte.dev/) aplicativo. Este aplicativo SvelteKit cria uma lista de aventuras WKND, que podem ser selecionadas para exibir os detalhes da aventura.
 
-Explore AEM capacidade de APIs do GraphQL headless para listar dados usando uma [SvelteKit](https://kit.svelte.dev/) aplicativo. Este aplicativo SvelteKit cria uma lista de aventuras WKND, que podem ser selecionadas para exibir os detalhes da aventura.
-
-Este código demonstra o uso do Adobe [Cliente autônomo do AEM para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL a partir do SvelteKit. Este aplicativo usa a variável `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Os detalhes da Aventura são solicitados por meio do `wknd-shared/adventures-by-slug` consulta persistente.
+Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL no SvelteKit. Este aplicativo usa o `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Os detalhes da aventura são solicitados por meio do `wknd-shared/adventures-by-slug` consulta persistente.
 
 Este código:
 
 + Conecta-se a um serviço de publicação do AEM e não requer autenticação
-+ Usa as consultas persistentes de WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
++ Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`

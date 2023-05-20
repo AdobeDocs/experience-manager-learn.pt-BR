@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Corrigir seu... Regravações
+title: Cloud 5 - Corrigir... Substitui
 description: Algumas dicas fáceis para otimizar suas regravações e acelerar seu site
 version: Cloud Service
 role: Admin, Developer
@@ -15,13 +15,13 @@ ht-degree: 10%
 
 ---
 
-# Cloud 5 - Corrigir seu... Regravações
+# Cloud 5 - Corrigir... Substitui
 
-Parte dois da série, nós exploramos algumas coisas que você pode observar que irão acelerar seu desenvolvimento de reescrita e otimização AEM as a Cloud Service.
+Na segunda parte da série, exploramos algumas coisas que você pode ver que irão acelerar o seu desenvolvimento de reescrita e otimização no AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343600?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ visão geral de mod_rewrite
++ visão geral do mod_rewrite
 + [mod_rewrite docs](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)

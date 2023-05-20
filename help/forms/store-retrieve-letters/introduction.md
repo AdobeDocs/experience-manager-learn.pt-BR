@@ -1,7 +1,7 @@
 ---
 title: Salvar e retomar cartas
 seo-title: Save and resume letters
-description: Saiba como salvar e recuperar letras de rascunho
+description: Saiba como salvar e recuperar rascunhos de cartas
 seo-description: Learn how to save and retrieve draft letters
 feature: Interactive Communication
 topics: development
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 # Introdução
 
-As Comunicações interativas permitem que os agentes que preparam correspondências ad-hoc salvem correspondências parcialmente concluídas e recuperem as mesmas para continuar trabalhando. A AEM Forms fornece a [Interface do provedor de serviços](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Espera-se que o cliente implemente essa interface para obter a funcionalidade Salvar e Retomar .
+As Comunicações interativas permitem que os agentes que preparam correspondências ad-hoc salvem correspondências parcialmente concluídas e recuperem as mesmas para continuar trabalhando. A AEM Forms fornece a você o [Interface do provedor de serviços](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Espera-se que o cliente implemente essa interface para obter a funcionalidade Salvar e retomar.
 
-Este artigo usa o banco de dados MySQL para armazenar os metadados da instância da carta. Os dados da carta são armazenados no sistema de arquivos.
+Este artigo usa o banco de dados MySQL para armazenar os metadados da instância de carta. Os dados da carta são armazenados no sistema de arquivos.
 
 O vídeo a seguir demonstra o caso de uso:
 
@@ -34,8 +34,8 @@ O vídeo a seguir demonstra o caso de uso:
 
 ## Pré-requisitos
 
-Você precisará do seguinte para implementar a solução para atender às suas necessidades
+Você precisará do seguinte para implementar a solução que atenda às suas necessidades
 
 * Experiência de trabalho com o AEM Forms
-* AEM Server 6.5 com o Forms Add on
-* Deve ser familiar na criação de pacotes OSGI
+* Servidor AEM 6.5 com Forms Add on
+* Deve se familiarizar com a criação de pacotes OSGI

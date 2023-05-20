@@ -1,6 +1,6 @@
 ---
-title: Gerar DoR interativo com dados do formulário adaptável
-description: Mesclar dados de formulário adaptáveis com modelo XDP para gerar pdf baixável
+title: Gerar DoR interativa com dados de Formulário adaptável
+description: Mesclar dados de formulário adaptáveis com o modelo XDP para gerar PDF baixável
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -12,25 +12,25 @@ last-substantial-update: 2020-02-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Download Interativo DoR
+# Baixar DoR interativa
 
-Um caso de uso comum é ser capaz de baixar um DoR interativo com os dados do Formulário adaptável. O DoR baixado será concluído usando o Adobe Acrobat ou Adobe Reader.
+Um caso de uso comum é o de ser capaz de baixar uma DoR interativa com os dados do Formulário adaptável. A DoR baixada será concluída usando o Adobe Acrobat ou o Adobe Reader.
 
 ## O formulário adaptável não se baseia no esquema XSD
 
-Se o XDP e o Formulário adaptável não forem baseados em nenhum esquema, siga as etapas a seguir para gerar um Documento de registro interativo.
+Se o XDP e o formulário adaptável não estiverem baseados em nenhum esquema, siga as etapas a seguir para gerar um Documento de registro interativo.
 
 ### Criar formulário adaptável
 
-Crie um formulário adaptável e verifique se os nomes de campo do formulário adaptável são idênticos aos nomes de campo no modelo xdp.
+Crie um formulário adaptável e verifique se os nomes dos campos do formulário adaptável são idênticos aos nomes dos campos no modelo xdp.
 Anote o nome do elemento raiz do seu modelo xdp.
-![elemento raiz](assets/xfa-root-element.png)
+![root- element](assets/xfa-root-element.png)
 
-### Client Lib
+### Biblioteca do cliente
 
 O código a seguir é acionado quando o botão Baixar PDF é acionado
 
@@ -63,14 +63,14 @@ $(document).ready(function() {
 });
 ```
 
-## Formulário adaptável baseado no esquema XSD
+## Formulário adaptável com base no esquema XSD
 
-Se o xdp não for baseado no XSD, siga as etapas a seguir para criar o XSD(schema) no qual você baseará seu formulário adaptável
+Se o xdp não for baseado em XSD, siga as etapas a seguir para criar XSD(schema) no qual você baseará seu formulário adaptável
 
 ### Gerar dados de amostra para o XDP
 
-* Abra o XDP no designer do AEM Forms.
-* Clique em Arquivo | Propriedades do formulário | Pré-visualização
+* Abra o XDP no AEM Forms Designer.
+* Clique em Arquivo | Propriedades do formulário | Visualização
 * Clique em Gerar dados de visualização
 * Clique em Gerar
 * Forneça um nome de arquivo significativo, como &quot;form-data.xml&quot;
@@ -81,7 +81,7 @@ Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](h
 
 ### Criar formulário adaptável
 
-Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca cliente &quot;irs&quot;. Essa biblioteca do cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo chamador O código a seguir é acionado quando o _Baixar o PDF_ é clicado
+Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Essa biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada. O código a seguir é acionado quando o _Baixar PDF_ foi clicado
 
 ```javascript
 $(document).ready(function() {
@@ -209,21 +209,21 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-No código de amostra, extraímos o Nome xdp e outros parâmetros do objeto de solicitação. Se o formulário não for baseado em XSD, o documento xml a ser mesclado com o xdp será criado. Se o formulário for baseado em XSD, simplesmente extraímos o nó apropriado dos dados enviados do formulário adaptável para gerar o documento xml para mesclar com o modelo xdp.
+No código de amostra, extraímos o Nome xdp e outros parâmetros do objeto de solicitação. Se o formulário não for baseado em XSD, o documento xml a ser mesclado com o xdp será criado. Se o formulário for baseado em XSD, simplesmente extrairmos o nó apropriado do formulário adaptável enviado para gerar o documento xml a ser mesclado com o modelo xdp.
 
-## Implante a amostra no servidor
+## Implantar a amostra no servidor
 
-Para testar isso em seu servidor local, siga as seguintes etapas:
+Para testar isso no servidor local, siga as seguintes etapas:
 
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Adicione a seguinte entrada no Serviço Mapeador de Usuário do Apache Sling Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Baixe e instale o pacote personalizado DocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Isso tem o servlet para unir os dados ao modelo XDP e fazer o stream do pdf de volta
-1. [Importe a biblioteca do cliente](assets/generate-interactive-dor-client-lib.zip)
-1. [Importe os ativos do artigo (Formulário adaptativo, modelos XDP e XSD)](assets/generate-interactive-dor-sample-assets.zip)
+1. Adicione a seguinte entrada no serviço de mapeador de usuário do Apache Sling Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+1. [Baixe e instale o pacote DocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Ele tem o servlet para mesclar os dados com o modelo XDP e transmitir o pdf de volta
+1. [Importar a biblioteca do cliente](assets/generate-interactive-dor-client-lib.zip)
+1. [Importar os ativos do artigo (formulário adaptável, modelos XDP e XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
-1. Preencha alguns dos campos do formulário.
-1. Clique em Baixar PDF para obter o PDF. Talvez seja necessário aguardar alguns segundos para que o PDF baixe.
+1. Preencha alguns dos campos de formulário.
+1. Clique em Baixar PDF para obter o PDF. Talvez seja necessário aguardar alguns segundos para baixar o PDF.
 
 >[!NOTE]
 >
->Você pode experimentar o mesmo caso de uso com [formulário adaptável não baseado em xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Passe os parâmetros apropriados para o terminal de publicação em streampdf.js localizado na clientlib deles.
+>Você pode tentar o mesmo caso de uso com [formulário adaptável não baseado em xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Transmita os parâmetros apropriados para o endpoint de publicação no streampdf.js localizado na biblioteca de clientes irs.

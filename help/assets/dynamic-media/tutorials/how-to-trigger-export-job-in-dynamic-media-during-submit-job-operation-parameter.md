@@ -1,6 +1,6 @@
 ---
-title: Acionando um trabalho de exportação no AEM Dynamic Media
-description: Etapas para acionar o trabalho de exportação durante a operação de envio de trabalho no Dynamic Media.
+title: Acionamento de um trabalho de exportação no AEM Dynamic Media
+description: Etapas para acionar um trabalho de exportação durante a operação de envio de trabalho no Dynamic Media.
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Acionando um trabalho de exportação no AEM Dynamic Media
+# Acionamento de um trabalho de exportação no AEM Dynamic Media
 
-Este vídeo aborda as etapas para acionar o trabalho de exportação no Dynamic Media durante a submissão do parâmetro de operação de trabalho.
+Este vídeo aborda as etapas para acionar um trabalho de exportação no Dynamic Media durante o parâmetro de operação de envio de trabalho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)

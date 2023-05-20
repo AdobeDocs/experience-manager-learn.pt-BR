@@ -1,6 +1,6 @@
 ---
-title: Etapas para redefinir a senha padrão para o administrador no AEM Forms JEE
-description: Redefinir senha do usuário Administrador a partir da senha padrão
+title: Etapas para redefinir a senha padrão do administrador no AEM Forms JEE
+description: Redefinir a senha do usuário Administrador a partir da senha padrão
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Etapas para redefinir a senha padrão para o administrador no AEM Forms JEE
+# Etapas para redefinir a senha padrão do administrador no AEM Forms JEE
 
 *Este vídeo aborda as etapas para redefinir a senha padrão do administrador no AEM Forms JEE.*
 

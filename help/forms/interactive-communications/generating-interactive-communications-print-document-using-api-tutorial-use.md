@@ -1,7 +1,7 @@
 ---
-title: Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
+title: Gerar documento de comunicações interativas para canal de impressão usando o mecanismo de pasta de observação
 seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
-description: Usar pasta assistida para gerar documentos do canal de impressão
+description: Usar pasta monitorada para gerar documentos de canal de impressão
 seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ---
 
-# Gerando Documento de Comunicações Interativas para canal de impressão usando o mecanismo de pasta monitorada
+# Gerar documento de comunicações interativas para canal de impressão usando o mecanismo de pasta de observação
 
-Depois de projetar e testar seu documento de canal de impressão, geralmente é necessário gerar o documento fazendo uma chamada REST ou gerando documentos de impressão usando o mecanismo de pasta de observação.
+Depois de projetar e testar o documento de canal de impressão, geralmente será necessário gerar o documento fazendo uma chamada REST ou gerando documentos de impressão usando o mecanismo de pasta de observação.
 
-Este artigo explica o caso de uso da geração de documentos do canal de impressão usando o mecanismo de pasta monitorada.
+Este artigo explica o caso de uso de geração de documentos de canal de impressão usando o mecanismo de pasta monitorada.
 
-Quando você solta um arquivo na pasta assistida, um script associado à pasta assistida é executado. Esse script é explicado no artigo abaixo.
+Quando você solta um arquivo na pasta monitorada, um script associado à pasta monitorada é executado. Esse script é explicado no artigo abaixo.
 
-O arquivo colocado na pasta assistida tem a seguinte estrutura. O código gerará instruções para todos os números de conta listados no documento XML.
+O arquivo colocado na pasta monitorada tem a seguinte estrutura. O código gerará demonstrativos para todos os números de conta listados no documento XML.
 
 &lt;accountnumbers>
 
@@ -47,19 +47,19 @@ A listagem de código abaixo faz o seguinte:
 
 Linha 1 - Caminho para o InterativeCommunicationsDocument
 
-Linhas 15-20: Obter a lista de números de conta do documento XML solto na pasta assistida
+Linhas 15-20: obtenha a lista de números de contas do documento XML lançado na pasta monitorada
 
-Linhas 24-25: Obtenha o PrintChannelService e o Canal de impressão associados ao documento.
+Linhas 24 -25: Obtenha o PrintChannelService e o Print Channel associados ao documento.
 
-Linha 30: Passe o número da conta como o elemento principal para o Modelo de dados de formulário.
+Linha 30: transmita o número da conta como o elemento principal para o Modelo de dados do formulário.
 
-Linhas 32-36: Defina as Opções de Dados para o Documento que deve ser gerado.
+Linhas 32-36: Defina as Opções de Dados para o Documento a ser gerado.
 
-Linha 38: Renderize o documento.
+Linha 38: renderiza o documento.
 
 Linhas 39-40 - Salva o documento gerado no sistema de arquivos.
 
-O endpoint REST do Modelo de dados de formulário espera uma id como um parâmetro de entrada. essa id é mapeada para um Atributo de solicitação chamado account number, como mostrado na captura de tela abaixo.
+O ponto de extremidade REST do Modelo de dados de formulário espera uma ID como parâmetro de entrada. essa id é mapeada para um atributo de solicitação chamado account number, como mostrado na captura de tela abaixo.
 
 ![requestattribute](assets/requestattributeprintchannel.gif)
 
@@ -113,22 +113,22 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Para testar isso em seu sistema local, siga as seguintes instruções:**
 
-* Configure o Tomcat conforme descrito neste [artigo 10. o](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) O Tomcat tem o arquivo war que gera os dados de amostra.
-* Configure o usuário do sistema também conhecido como descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon no [administrador de usuário](https://localhost:4502/useradmin) e procure por &quot;dados&quot; do usuário do sistema e forneça as permissões de leitura no nó a seguir ao tabular para a guia de permissões
+* Configure o Tomcat conforme descrito neste [artigo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) O Tomcat tem o arquivo war que gera os dados de amostra.
+* Configure o serviço também conhecido como usuário do sistema conforme descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Verifique se esse usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon no [administrador de usuários](https://localhost:4502/useradmin) e pesquise o usuário do sistema &quot;data&quot; e forneça as permissões de leitura no seguinte nó, acessando a guia permissions
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importe os seguintes pacotes no AEM usando o gerenciador de pacotes. Este pacote contém o seguinte:
+* Importe os seguintes pacotes para o AEM usando o gerenciador de pacotes. Este pacote contém o seguinte:
 
 
 * [Exemplo de documento de comunicações interativas](assets/retirementstatementprint.zip)
-* [Script de pasta assistida](assets/printchanneldocumentusingwatchedfolder.zip)
+* [Script de pasta monitorada](assets/printchanneldocumentusingwatchedfolder.zip)
 * [Configuração da fonte de dados](assets/datasource.zip)
 
-* Abra o arquivo /etc/fd/watchfolder/scripts/PrintPDF.ecma . Certifique-se de que o caminho para o interativeCommunicationsDocument na linha 1 está apontando para o documento correto que você deseja imprimir
+* Abra o arquivo /etc/fd/watchfolder/scripts/PrintPDF.ecma. Verifique se o caminho para o interativeCommunicationsDocument na linha 1 aponta para o documento correto que você deseja imprimir
 
-* Modifique o saveLocation de acordo com sua preferência na Linha 2
+* Modifique saveLocation de acordo com sua preferência na Linha 2
 
 * Crie o arquivo accountnumbers.xml com o seguinte conteúdo
 
@@ -144,12 +144,12 @@ Verifique se o usuário do sistema tem permissões de leitura no nó a seguir. P
 ```
 
 
-* Solte o arquivo accountnumbers.xml no diretório C:\RenderPrintChannel\input folder.
+* Solte o arquivo accountnumbers.xml na pasta C:\RenderPrintChannel\input.
 
-* Os arquivos PDF gerados são gravados no saveLocation, conforme especificado no script de ecma.
+* Os arquivos de PDF gerados são gravados no saveLocation conforme especificado no script ecma.
 
 >[!NOTE]
 >
->Se você planeja usar isso em um sistema operacional que não seja Windows, navegue até
+>Se você planeja usá-lo em um sistema operacional que não seja Windows, navegue até
 >
->/etc/fd/watchfolder /config/PrintChannelDocument e altere folderPath de acordo com sua preferência
+>/etc/fd/watchfolder /config/PrintChannelDocument e altere o folderPath de acordo com sua preferência

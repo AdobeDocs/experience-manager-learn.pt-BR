@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Variáveis do tipo de modelo de dados de formulário
 
-As variáveis do tipo de modelo de dados de formulário geralmente são usadas para inserir linhas na fonte de dados subjacente do modelo de dados de formulário. Este vídeo explica as etapas necessárias para inserir uma linha no banco de dados usando AEM fluxo de trabalho.
+As variáveis do tipo de modelo de dados de formulário geralmente são usadas para inserir linhas na fonte de dados subjacente do modelo de dados de formulário. Este vídeo explica as etapas necessárias para inserir uma linha no banco de dados usando o workflow do AEM.
 
 
 

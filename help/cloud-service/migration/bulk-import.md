@@ -1,6 +1,6 @@
 ---
-title: Como usar a importação em massa com o AEM Assets
-description: A ferramenta Importação em massa em AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Azure Blob Storage ou Amazon S3) de maneira segura e eficiente.
+title: Utilização da importação em massa com o AEM Assets
+description: A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento na nuvem (Armazenamento Azure Blob ou Amazon S3) de maneira segura e eficiente.
 version: Cloud Service
 doc-type: technical-video
 topics: Migration
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # Uso da importação em massa
 
-A ferramenta Importação em massa em AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento em nuvem (Azure Blob Storage ou Amazon S3) de maneira segura e eficiente.
+A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento na nuvem (Armazenamento Azure Blob ou Amazon S3) de maneira segura e eficiente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
-## Agendar importação em massa
+## Programar importação em massa
 
-A Importação em Massa suporta a execução programada de configurações, incluindo:
+A Importação em massa é compatível com a execução agendada de configurações, incluindo:
 
-+ Execução única em data e hora definidas
-+ Execuções por período a cada hora, dia ou semana
++ Execução única em uma data e hora definidas
++ Execuções do período a cada hora, dia ou semana
 
-![Programação de importação em massa](./assets/bulk-import/schedule.png)
+![Agendamento de importação em massa](./assets/bulk-import/schedule.png)

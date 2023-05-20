@@ -1,7 +1,7 @@
 ---
 title: Capítulo 1 - Configuração e downloads do tutorial - Serviços de conteúdo
 seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
-description: Capítulo 1 do tutorial Sem cabeçalho do AEM a configuração da linha de base da instância do AEM para o tutorial.
+description: O capítulo 1 do tutorial do AEM headless mostra a configuração da linha de base para a instância do AEM no tutorial.
 seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
@@ -17,54 +17,54 @@ ht-degree: 1%
 
 # Configuração do tutorial
 
-A versão mais recente dos Componentes principais do AEM e AEM WCM é sempre recomendada.
+A versão mais recente dos componentes principais de WCM de AEM e AEM é sempre recomendada.
 
 * AEM 6.5 ou posterior
-* AEM Componentes principais do WCM 2.4.0 ou posterior
-   * Incluído na [Pacote de conteúdo do aplicativo AEM móvel WKND abaixo](#wknd-mobile-application-packages)
+* Componentes principais do WCM no AEM 2.4.0 ou posterior
+   * Incluído na variável [Pacote de conteúdo do aplicativo para AEM móvel WKND abaixo](#wknd-mobile-application-packages)
 
-Antes de iniciar este tutorial, verifique se as seguintes instâncias de AEM são [instalado e em execução no computador local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
+Antes de iniciar este tutorial, verifique se as seguintes instâncias do AEM são [instalado e em execução em seu computador local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **Autor do AEM** on **porta 4502**
-* **Publicação do AEM** on **porta 4503**
+* **AEM Author** em **porta 4502**
+* **AEM Publish** em **porta 4503**
 
-## Pacotes de aplicativos móveis WKND{#wknd-mobile-application-packages}
+## Pacotes de aplicativos WKND Mobile{#wknd-mobile-application-packages}
 
-Instale os seguintes pacotes de conteúdo AEM em **both** Autor do AEM e publicação do AEM, usando [!DNL AEM Package Manager].
+Instale os seguintes pacotes de conteúdo AEM no **ambos** AEM Author e AEM Publish, usando [!DNL AEM Package Manager].
 
-* [ui.apps: GitHub > Ativos > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [ui.apps: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
-   * [!DNL WKND Mobile] Componente proxy para componentes principais AEM WCM
-   * [!DNL WKND Mobile] CSS das páginas dos Serviços de conteúdo AEM (para estilos menores)
-* [ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+   * [!DNL WKND Mobile] Componente proxy para componentes principais do WCM no AEM
+   * [!DNL WKND Mobile] CSS das páginas do AEM Content Services (para estilo menor)
+* [ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile] Estrutura do site
-   * [!DNL WKND Mobile] Estrutura da pasta DAM
+   * [!DNL WKND Mobile] Estrutura de pastas do DAM
    * [!DNL WKND Mobile] ativos de imagem
 
-Em [Capítulo 7](./chapter-7.md) vamos executar o [!DNL WKND Mobile] Aplicativo móvel do Android usando [Android Studio](https://developer.android.com/studio) e o APK fornecido (Pacote de aplicativo Android):
+Entrada [Capítulo 7](./chapter-7.md) nós executaremos o [!DNL WKND Mobile] Aplicativo móvel Android usando [Android Studio](https://developer.android.com/studio) e o APK fornecido (Pacote de aplicativo Android):
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
-## Capítulo AEM pacotes de conteúdo
+## Pacotes de conteúdo do AEM do capítulo
 
-Esse conjunto de pacotes de conteúdo cria o conteúdo e a configuração descritos no capítulo associado e em todos os capítulos anteriores. Esses pacotes são opcionais, mas podem agilizar a criação de conteúdo.
+Esse conjunto de pacotes de conteúdo cria o conteúdo e a configuração descritos no capítulo associado e em todos os capítulos anteriores. Esses pacotes são opcionais, mas podem acelerar a criação de conteúdo.
 
-* [Capítulo 2 Conteúdo: GitHub > Ativos > com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [Capítulo 3 Conteúdo: GitHub > Ativos > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [Capítulo 4 Conteúdo: GitHub > Ativos > com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-* [Capítulo 5 Conteúdo: GitHub > Ativos > com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [Conteúdo do capítulo 2: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [Conteúdo do capítulo 3: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [Conteúdo do capítulo 4: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-4.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [Conteúdo do capítulo 5: GitHub > Assets > com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
-## Código fonte
+## Código-fonte
 
-O código-fonte do projeto do AEM e do [!DNL Android Mobile App] estão disponíveis no [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). O código-fonte não precisa ser criado ou modificado para este tutorial. Ele é fornecido para permitir total transparência em como todos os aspectos do tutorial são criados.
+O código-fonte para o projeto AEM e o [!DNL Android Mobile App] estão disponíveis no [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). O código-fonte não precisa ser construído ou modificado para este tutorial. Ele é fornecido para permitir total transparência em como todos os aspectos do tutorial são criados.
 
 Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
-## Ir para o fim
+## Pular para o final
 
-Para pular para o final do tutorial, a variável [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) o pacote de conteúdo pode ser instalado em **both** Autor do AEM e publicação do AEM. Observe que o conteúdo e a configuração não serão exibidos como publicados no AEM Author, no entanto, devido à implantação manual, todo o conteúdo e a configuração necessários estão disponíveis no AEM Publish, permitindo que a variável [!DNL WKND Mobile App] para acessar o conteúdo.
+Para ir até o fim do tutorial, a variável [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) o pacote de conteúdo pode ser instalado em **ambos** AEM Author e AEM Publish. Observe que o conteúdo e a configuração não serão exibidos como publicados no AEM Author, no entanto, devido à implantação manual, todo o conteúdo e a configuração necessários estarão disponíveis no AEM Publish, permitindo que o [!DNL WKND Mobile App] para acessar o conteúdo.
 
 
 ## Próxima etapa
 
-* [Capítulo 2 - Definição dos modelos de fragmento do conteúdo do evento](./chapter-2.md)
+* [Capítulo 2 - Definição de modelos de fragmento de conteúdo de evento](./chapter-2.md)

@@ -1,6 +1,6 @@
 ---
-title: Usuários do Serviço
-description: Saiba como criar e usar Usuários de serviço em seu código de AEM para fornecer acesso controlado e programático ao repositório AEM.
+title: Usuários de serviço
+description: Saiba como criar e usar Usuários de serviço em seu código AEM para fornecer acesso controlado e programático ao repositório AEM.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -17,16 +17,16 @@ ht-degree: 8%
 
 ---
 
-# Usuários do Serviço
+# Usuários de serviço
 
-Saiba como criar e usar Usuários de serviço em seu código de AEM para fornecer acesso controlado e programático ao repositório AEM.
+Saiba como criar e usar Usuários de serviço em seu código AEM para fornecer acesso controlado e programático ao repositório AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
 ## Recursos
 
-+ [Documentação de Inicialização do Repositório Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
-+ [Documentação de autenticação do serviço Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
++ [Documentação de inicialização do repositório Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Documentação de autenticação do Sling Service](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Código
 

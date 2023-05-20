@@ -1,6 +1,6 @@
 ---
-title: Java&trade de entrega de imagem otimizada para a Web; APIs
-description: Saiba como usar AEM o Java&trade de entrega de imagem otimizada para a Web do as a Cloud Service; APIs para desenvolver experiências da Web de alto desempenho.
+title: APIs Java&trade; de entrega de imagens otimizadas para a Web
+description: Saiba como usar as APIs Java&trade; da entrega de imagens otimizadas para a Web do AEM as a Cloud Service para desenvolver experiências da Web de alto desempenho.
 version: Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
 topic: Performance, Development
@@ -10,36 +10,36 @@ doc-type: Code Sample
 last-substantial-update: 2023-03-30T00:00:00Z
 jira: KT-13014
 thumbnail: KT-13014.jpeg
-source-git-commit: 14d89d1a3c424de044df4f6d74546788256fa383
+exl-id: c6bb9d6d-aef0-42d5-a189-f904bbbd7694
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 2%
 
 ---
 
+# APIs Java™ de entrega de imagens otimizadas para a Web
 
-# APIs Java™ de entrega de imagem otimizada para a Web
+Saiba como usar as APIs Java™ de entrega de imagens otimizadas para a Web do AEM as a Cloud Service para desenvolver experiências da Web de alto desempenho.
 
-Saiba como usar AEM APIs Java™ de entrega de imagem otimizada para a Web da as a Cloud Service para desenvolver experiências da Web de alto desempenho.
+Suporte a AEM as a Cloud Service [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) que gera automaticamente representações otimizadas de ativos na web. A entrega de imagens otimizadas para a Web pode ser usada em três abordagens principais:
 
-AEM suporte as a Cloud Service [entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) que gera automaticamente representações otimizadas da Web de imagens de ativos. A entrega de imagens otimizadas para a Web pode ser usada em três abordagens principais:
+1. [Usar componentes WCM do núcleo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+2. Crie um componente personalizado que [estende o componente de imagem do componente WCM principal do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
+3. Crie um componente personalizado que usa a API Java™ do Asset Delivery para gerar URLs de imagem otimizados para a Web.
 
-1. [Usar AEM componentes principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-2. Criar componente personalizado que [estende AEM componente de imagem do Componente WCM principal](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
-3. Crie um componente personalizado que usa a API Java™ AssetDelivery para gerar URLs de imagem otimizadas para a Web.
-
-Este artigo explora o uso de APIs Java™ de imagem otimizada para a Web em um componente personalizado, de uma maneira que permite que o baseado em código funcione em AEM as a Cloud Service e no SDK AEM.
+Este artigo aborda o uso de APIs Java™ de imagem otimizadas para a Web em um componente personalizado, de maneira que permita que as APIs baseadas em código funcionem no AEM as a Cloud Service e no AEM SDK.
 
 ## APIs Java™
 
-O [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) é um serviço OSGi que gera URLs de entrega otimizadas para a Web para ativos de imagem. `AssetDelivery.getDeliveryURL(...)` as opções permitidas são [documentado aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
+A variável [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) O é um serviço OSGi que gera URLs de entrega otimizados para a Web para ativos de imagem. `AssetDelivery.getDeliveryURL(...)` as opções permitidas são [documentado aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
-O `AssetDelivery` O Serviço OSGi só é satisfeito quando executado em AEM as a Cloud Service. No AEM SDK, as referências ao `AssetDelivery` Retorno de serviço OSGi `null`. É melhor usar condicionalmente o URL otimizado para a Web ao executar em AEM as a Cloud Service e usar um URL de imagem de fallback no SDK AEM. Normalmente, a renderização da Web do ativo é um fallback suficiente.
+A variável `AssetDelivery` O serviço OSGi só é satisfeito quando executado no AEM as a Cloud Service. No SDK do AEM, as referências à variável `AssetDelivery` Retorno de serviço OSGi `null`. É melhor usar condicionalmente o URL otimizado para a Web ao ser executado no AEM as a Cloud Service, e usar um URL de imagem de fallback no AEM SDK. Normalmente, a representação da Web do ativo é um fallback suficiente.
 
 
 ### Uso da API no serviço OSGi
 
-Marque a opção`AssetDelivery` referência como opcional nos serviços OSGi personalizados, para que o serviço OSGi personalizado permaneça disponível AEM SDK.
+Marque o`AssetDelivery` consulte como opcional nos Serviços OSGi personalizados para que o Serviço OSGi personalizado permaneça disponível no SDK do AEM.
 
 ```java
 import com.adobe.cq.wcm.spi.AssetDelivery;
@@ -48,9 +48,9 @@ import com.adobe.cq.wcm.spi.AssetDelivery;
 private volatile AssetDelivery assetDelivery;
 ```
 
-### Uso da API no Modelo do Sling
+### Uso da API no modelo Sling
 
-Marque a opção`AssetDelivery` referência como opcional em Modelos personalizados do Sling para que o Modelo personalizado do Sling permaneça disponível AEM SDK.
+Marque o`AssetDelivery` consulte como opcional em Modelos personalizados do Sling para que o Modelo personalizado do Sling permaneça disponível no SDK do AEM.
 
 ```java
 import com.adobe.cq.wcm.spi.AssetDelivery;
@@ -61,7 +61,7 @@ private AssetDelivery assetDelivery;
 
 ### Uso condicional da API
 
-Retorne condicionalmente o URL da imagem otimizada para a Web ou o URL de fallback com base no `AssetDelivery` Disponibilidade do serviço OSGi. O uso condicional permite que o código funcione ao executar o código no SDK AEM.
+Retorne condicionalmente o URL da imagem otimizada para a Web ou o URL de fallback com base na `AssetDelivery` Disponibilidade do serviço OSGi. O uso condicional permite que o código funcione ao executar o código no SDK do AEM.
 
 ```java
 if (assetDelivery != null ) {
@@ -78,33 +78,33 @@ if (assetDelivery != null ) {
 
 O código a seguir cria um componente de exemplo que exibe uma lista de ativos de imagem usando URLs de imagem otimizadas para a Web.
 
-Quando o código é executado AEM as a Cloud Service, as representações de imagem da Web otimizadas são usadas no componente personalizado.
+Quando o código é executado no AEM as a Cloud Service, as representações de imagem da Web otimizadas para a Web são usadas no componente personalizado.
 
-![Imagens otimizadas na Web AEM as a Cloud Service](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
+![Imagens otimizadas para a Web no AEM as a Cloud Service](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
 
-_AEM as a Cloud Service suporta a API AssetDelivery, de modo que a renderização Web otimizada é usada_
+_O AEM as a Cloud Service é compatível com a API AssetDelivery, portanto, a representação da Web otimizada para a Web é usada_
 
-Quando o código é executado AEM SDK, as renderizações estáticas da Web menos ideais são usadas, permitindo que o componente funcione durante o desenvolvimento local.
+Quando o código é executado no SDK do AEM, as representações estáticas da Web menos ideais são usadas, permitindo que o componente funcione durante o desenvolvimento local.
 
-![Imagens de fallback otimizadas pela Web AEM SDK](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+![Imagens de fallback otimizadas para a Web no SDK AEM](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
 
-_AEM SDK não é compatível com a API AssetDelivery, portanto, a renderização Web estática de fallback (PNG ou JPEG) é usada_
+_O SDK do AEM não é compatível com a API AssetDelivery, portanto, a representação estática da Web de fallback (PNG ou JPEG) é usada_
 
 A implementação é dividida em três partes lógicas:
 
-1. O `WebOptimizedImage` O serviço OSGi atua como um &quot;proxy inteligente&quot; para o AEM fornecido `AssetDelivery` Serviço OSGi que pode lidar com a execução AEM SDK as a Cloud Service e AEM.
-2. O `ExampleWebOptimizedImages` O Modelo do Sling fornece lógica de negócios de coletar a lista de ativos de imagem e seus urls otimizados para a Web para exibição.
-3. O `example-web-optimized-images` AEM Componente, implementa o HTL para exibir a lista de imagens otimizadas para a Web.
+1. A variável `WebOptimizedImage` O serviço OSGi atua como um &quot;proxy inteligente&quot; para o AEM `AssetDelivery` Serviço OSGi que pode lidar com a execução no SDK do AEM e do as a Cloud Service AEM.
+2. A variável `ExampleWebOptimizedImages` O Modelo Sling fornece uma lógica de negócios para coletar a lista de ativos de imagem e seus urls otimizados para a Web para exibição.
+3. A variável `example-web-optimized-images` Componente AEM, implementa o HTL para exibir a lista de imagens otimizadas para a Web.
 
-O código de exemplo abaixo pode ser copiado na base de código e atualizado conforme necessário.
+O código de exemplo abaixo pode ser copiado em sua base de código e atualizado conforme necessário.
 
 ### Serviço OSGi
 
-O `WebOptimizedImage` O serviço OSGi é dividido em uma interface pública endereçável (`WebOptimizedImage`e uma implementação interna (`WebOptimizedImageImpl`). O `WebOptimizedImageImpl` retorna um URL de imagem otimizada para a Web ao ser executado em AEM as a Cloud Service e um URL de renderização da Web estática no SDK AEM, permitindo que o componente permaneça funcional no SDK AEM.
+A variável `WebOptimizedImage` O serviço OSGi é dividido em uma interface pública endereçável (`WebOptimizedImage`e uma implementação interna (`WebOptimizedImageImpl`). A variável `WebOptimizedImageImpl` retorna um URL de imagem otimizado para a Web ao ser executado no AEM as a Cloud Service e um URL de representação da Web estático no AEM AEM SDK, permitindo que o componente permaneça funcional no SDK.
 
 #### Interface
 
-A interface define o contrato de Serviço OSGi com o qual outros códigos, como Modelos do Sling, podem interagir.
+A interface define o contrato de serviço OSGi com o qual outros códigos, como Modelos Sling, podem interagir.
 
 ```java
 package com.adobe.aem.guides.wknd.core.images;
@@ -134,7 +134,7 @@ public interface WebOptimizedImage {
 
 #### Implementação
 
-A implementação do Serviço OSGi inclui uma referência opcional para AEM `AssetDelivery` Serviço OSGi e lógica de fallback para selecionar um URL de imagem adequado quando `AssetDelivery` é `null` no SDK do AEM. A lógica de fallback pode ser atualizada com base nos requisitos.
+A implementação do serviço OSGi inclui uma referência opcional ao AEM `AssetDelivery` Serviço OSGi e lógica de fallback para selecionar um URL de imagem adequado quando `AssetDelivery` é `null` no SDK do AEM. A lógica de fallback pode ser atualizada com base nos requisitos.
 
 ```java
 package com.adobe.aem.guides.wknd.core.images.impl;
@@ -221,13 +221,13 @@ public class WebOptimizedImageImpl implements WebOptimizedImage {
 
 ### Modelo Sling
 
-O `ExampleWebOptimizedImages` O Modelo Sling é dividido em uma interface pública endereçável (`ExampleWebOptimizedImages`e uma implementação interna (`ExampleWebOptimizedImagesImpl`);
+A variável `ExampleWebOptimizedImages` O Modelo Sling é dividido em uma interface pública endereçável (`ExampleWebOptimizedImages`e uma implementação interna (`ExampleWebOptimizedImagesImpl`);
 
-O `ExampleWebOptimizedImagesImpl` O Modelo do Sling coleta a lista de ativos de imagem a serem exibidos e chama o `WebOptimizedImage` Serviço OSGi para obter o URL da imagem otimizada para a Web. Como esse Modelo do Sling representa um Componente AEM, ele tem os métodos habituais, como `isEmpty()`, `getId()`e `getData()` no entanto, esses métodos não são diretamente relevantes para o uso de imagens otimizadas para a Web.
+A variável `ExampleWebOptimizedImagesImpl` O Modelo Sling coleta a lista de ativos de imagem para exibir e invoca o modelo personalizado `WebOptimizedImage` Serviço OSGi para obter o URL da imagem otimizada para a Web. Como esse Modelo Sling representa um componente AEM, ele tem os métodos usuais, como `isEmpty()`, `getId()`, e `getData()` no entanto, esses métodos não são diretamente relevantes para o uso de imagens otimizadas para a web.
 
 #### Interface
 
-A interface define o contrato do Modelo do Sling com o qual outros códigos, como HTL, podem interagir.
+A interface define o contrato do Modelo do Sling com o qual outro código, como HTL, pode interagir.
 
 ```java
 package com.adobe.aem.guides.wknd.core.models;
@@ -290,7 +290,7 @@ public interface ExampleWebOptimizedImages {
 
 #### Implementação
 
-O Modelo do Sling usa o `WebOptimizeImage` Serviço OSGi para coletar os URLs de imagem otimizada para a Web para os ativos de imagem que seu componente exibe.
+O Modelo Sling usa o modelo personalizado `WebOptimizeImage` Serviço OSGi para coletar os URLs de imagem otimizados para a Web para os ativos de imagem que seu componente exibe.
 
 Neste exemplo, uma consulta simples é usada para coletar ativos de imagem.
 
@@ -438,15 +438,15 @@ public class ExampleWebOptimizedImagesImpl implements ExampleWebOptimizedImages 
 
 ### Componente AEM
 
-Um Componente AEM é vinculado ao tipo de recurso Sling do `WebOptimizedImagesImpl` Implementação do Sling Model e é responsável pela exibição da lista de imagens.
+Um componente AEM está vinculado ao tipo de recurso Sling do `WebOptimizedImagesImpl` Implementação do Modelo Sling, e é responsável pela exibição da lista de imagens.
 
 
 
-O componente recebe uma lista de `Img` objetos via `getImages()` que incluem as imagens WEBP otimizadas para a Web ao executar em AEM as a Cloud Service . O componente recebe uma lista de `Img` objetos via `getImages()` que incluem imagens estáticas da Web PNG/JPEG ao executar em AEM SDK.
+O componente recebe uma lista de `Img` objetos via `getImages()` que incluem as imagens WEBP otimizadas para a Web ao serem executadas no AEM as a Cloud Service. O componente recebe uma lista de `Img` objetos via `getImages()` que incluem imagens estáticas da web em PNG/JPEG ao serem executadas no AEM SDK.
 
 #### HTL
 
-O HTL usa a variável `WebOptimizedImages` Modelo do Sling e renderiza a lista de  `Img` objetos retornam por `getImages()`.
+O HTL usa o método `WebOptimizedImages` Modelo Sling e renderiza a lista de  `Img` objetos retornados por `getImages()`.
 
 ```html
 <style>

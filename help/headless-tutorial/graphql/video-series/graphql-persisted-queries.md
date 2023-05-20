@@ -1,6 +1,6 @@
 ---
 title: Consultas GraphQL Persistidas
-description: Saiba como habilitar, criar, atualizar e executar Consultas Persistentes no AEM.
+description: Saiba como habilitar, criar, atualizar e executar consultas persistentes no AEM.
 version: Cloud Service
 topic: Headless, Content Management
 feature: GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 10%
 
 # Consultas GraphQL Persistidas
 
-Saiba como habilitar, criar, atualizar e executar Consultas Persistentes no AEM.
+Saiba como habilitar, criar, atualizar e executar consultas persistentes no AEM.
 
-Neste vídeo, você:
+Neste vídeo, você vai:
 
 + Saiba como habilitar consultas persistentes do GraphQL
 + Saiba como criar, atualizar e executar consultas do GraphQL
-+ Entenda os benefícios de consultas persistentes sobre consultas do lado do cliente
++ Entender os benefícios das consultas persistentes em relação às consultas do lado do cliente
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)

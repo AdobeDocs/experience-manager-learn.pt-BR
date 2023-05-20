@@ -1,6 +1,6 @@
 ---
-title: AEM implantações headless
-description: Saiba mais sobre as várias considerações de implantação para AEM aplicativos headless.
+title: Implantações AEM Headless
+description: Saiba mais sobre as várias considerações de implantação para aplicativos AEM Headless.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -9,33 +9,33 @@ level: Intermediate
 kt: 10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
+# Implantações AEM Headless
 
-# AEM implantações headless
+As implantações de cliente do AEM headless assumem muitas formas: AEM hospedado no SPA SPA, externo, site, aplicativo móvel ou até mesmo processo de servidor para servidor.
 
-AEM as implantações de clientes headless assumem várias formas; SPA hospedados pela AEM, SPA externos, site, aplicativo móvel ou até mesmo processo servidor a servidor.
+Dependendo do cliente e de como ele é implantado, as implantações sem periféricos de AEM têm considerações diferentes.
 
-Dependendo do cliente e de como ele é implantado, AEM as implantações headless têm diferentes considerações.
+## Arquitetura de serviço do AEM
 
-## Arquitetura de serviço AEM
+Antes de explorar as considerações de implantação, é fundamental entender a arquitetura lógica do AEM, bem como a separação e as funções dos níveis de serviço do AEM as a Cloud Service. O AEM as a Cloud Service é composto de dois serviços lógicos:
 
-Antes de explorar as considerações sobre implantação, é imperativo entender AEM arquitetura lógica e a separação e as funções dos níveis de serviço AEM as a Cloud Service. AEM as a Cloud Service é composto por dois serviços lógicos:
++ __AEM Author__ O é o serviço no qual as equipes criam, colaboram e publicam fragmentos de conteúdo (e outros ativos).
++ __AEM Publish__ é o serviço que foi publicado Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
++ __Visualização do AEM__ é o serviço que imita a publicação no comportamento do AEM, mas tem conteúdo publicado para fins de visualização ou revisão. A Visualização do AEM é destinada a públicos-alvo internos, e não para a entrega geral de conteúdo. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
 
-+ __Autor do AEM__ é o serviço onde as equipes criam, colaboram e publicam Fragmentos de conteúdo (e outros ativos).
-+ __Publicação do AEM__ é o serviço que foi publicado e os Fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
-+ __Visualização de AEM__ é o serviço que imita o AEM Publish no comportamento, mas tem conteúdo publicado nele para fins de visualização ou revisão. AEM a Visualização destina-se a públicos internos, e não para a entrega geral de conteúdo. O uso de Visualização de AEM é opcional, com base no fluxo de trabalho desejado.
+![Arquitetura de serviço do AEM](./assets/overview/aem-service-architecture.png)
 
-![Arquitetura de serviço AEM](./assets/overview/aem-service-architecture.png)
+Arquitetura típica de implantação headless do AEM as a Cloud Service_
 
-Arquitetura de implantação normal típica AEM as a Cloud Service
-
-AEM clientes headless operando em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo aprovado e publicado. Os clientes que interagem com o autor do AEM precisam ter cuidado especial, pois o autor do AEM é seguro por padrão, requer autorização para todas as solicitações e também pode conter trabalho em andamento ou conteúdo não aprovado.
+Os clientes sem periféricos do AEM que operam em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo publicado e aprovado. Os clientes que interagem com o AEM Author precisam ter cuidado especial, pois o AEM Author é seguro por padrão, exigindo autorização para todas as solicitações, e também pode ter trabalho em andamento ou conteúdo não aprovado.
 
 ## Implantações de clientes headless
 
@@ -74,7 +74,7 @@ AEM clientes headless operando em uma capacidade de produção normalmente inter
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Componente da Web/JS">Componente da Web/JS</a></p>
-               <p class="is-size-6">Saiba mais sobre as considerações de implantação para componentes da Web e consumidores sem periféricos de JavaScript baseados em navegador.</p>
+               <p class="is-size-6">Saiba mais sobre as considerações de implantação para componentes da Web e consumidores headless de JavaScript baseados em navegador.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
@@ -87,14 +87,14 @@ AEM clientes headless operando em uma capacidade de produção normalmente inter
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="./mobile.md" title="Aplicativos para dispositivos móveis" tabindex="-1">
-                   <img class="is-bordered-r-small" src="./assets/mobile/mobile-card.png" alt="Aplicativos para dispositivos móveis">
+               <a href="./mobile.md" title="Aplicativos móveis" tabindex="-1">
+                   <img class="is-bordered-r-small" src="./assets/mobile/mobile-card.png" alt="Aplicativos móveis">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Aplicativos para dispositivos móveis">Aplicativo móvel</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Aplicativos móveis">Aplicativo móvel</a></p>
                <p class="is-size-6">Saiba mais sobre as considerações de implantação para aplicativos móveis.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -115,7 +115,7 @@ AEM clientes headless operando em uma capacidade de produção normalmente inter
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="Aplicativos de servidor para servidor">Aplicativo servidor a servidor</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="Aplicativos de servidor para servidor">Aplicativo de servidor para servidor</a></p>
                <p class="is-size-6">Saiba mais sobre as considerações de implantação para aplicativos de servidor para servidor</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>

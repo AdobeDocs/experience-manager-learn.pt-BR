@@ -1,6 +1,6 @@
 ---
-title: Inicializar um aplicativo do App Builder para a extensibilidade do console do fragmento de conteúdo
-description: Saiba como inicializar um aplicativo App Builder de extensão do console Fragmento de conteúdo AEM que define onde a extensão é exibida e o trabalho que ela executa.
+title: Inicializar um aplicativo do App Builder para extensibilidade do Console de fragmentos de conteúdo
+description: Saiba como inicializar um aplicativo do Construtor de aplicativos para a extensão do Console de fragmentos de conteúdo do AEM que defina onde a extensão é exibida e o trabalho que ela realiza.
 version: Cloud Service
 feature: Developer Tools
 topic: Development
@@ -11,17 +11,17 @@ recommendations: noDisplay, noCatalog
 last-substantial-update: 2023-01-04T00:00:00Z
 kt: 11659
 thumbnail: 3412876.jpeg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: ef5ad335-7278-4c00-beb6-233a3d1e330e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
 
 ---
 
-
 # Inicialização do aplicativo
 
-Inicialize um aplicativo App Builder de extensão do console Fragmento de conteúdo AEM que define onde a extensão aparece e o trabalho que ele executa.
+Inicialize um aplicativo Construtor de aplicativos da extensão Console do fragmento de conteúdo do AEM que defina onde a extensão é exibida e o trabalho que ela realiza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
 

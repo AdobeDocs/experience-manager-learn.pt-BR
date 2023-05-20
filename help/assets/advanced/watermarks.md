@@ -1,6 +1,6 @@
 ---
 title: Marcas d'água no AEM Assets
-description: AEM recursos de marca d'água do as a Cloud Service permitem que representações de imagens personalizadas sejam marcadas d'água usando qualquer imagem PNG.
+description: Os recursos de marca d'água do AEM as a Cloud Service permitem que representações de imagens personalizadas tenham marcas d'água usando qualquer imagem PNG.
 feature: Asset Compute Microservices
 version: Cloud Service
 kt: 6357
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Marcas d&#39;água
 
-AEM recursos de marca d&#39;água do as a Cloud Service permitem que representações de imagens personalizadas sejam marcadas d&#39;água usando qualquer imagem PNG.
+Os recursos de marca d&#39;água do AEM as a Cloud Service permitem que representações de imagens personalizadas tenham marcas d&#39;água usando qualquer imagem PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento do Assets Essentials
-description: Saiba mais sobre as noções básicas para criar uma estrutura de pastas e operações básicas, como mover, copiar e renomear.
+description: Aprenda os conceitos básicos para criar uma estrutura de pastas e operações básicas, como mover, copiar e renomear.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Gerenciamento do Assets Essentials
 
-Saiba mais sobre as noções básicas para criar uma estrutura de pastas e operações básicas, como mover, copiar e renomear.
+Aprenda os conceitos básicos para criar uma estrutura de pastas e operações básicas, como mover, copiar e renomear.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)

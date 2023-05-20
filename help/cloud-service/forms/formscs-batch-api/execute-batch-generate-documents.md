@@ -1,6 +1,6 @@
 ---
 title: Executar a configuração do lote
-description: Inicie o processo de geração de documentos executando o lote
+description: Iniciar o processo de geração de documentos executando o lote
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Executar configuração em lote
+# Executar configuração de lote
 
 Para executar o lote, faça uma solicitação POST para a seguinte API
 
@@ -26,7 +26,7 @@ Para executar o lote, faça uma solicitação POST para a seguinte API
 
 Essa API espera um objeto json vazio como parâmetro no corpo da solicitação.
 Essa API retorna um URL exclusivo no cabeçalho de resposta identificado por **localização** chave.
-Uma solicitação GET para esse URL exclusivo informará o status da execução do lote
+Uma solicitação de GET para esse URL exclusivo informará o status da execução do lote
 
 O vídeo a seguir demonstra o acionamento da configuração do lote
 

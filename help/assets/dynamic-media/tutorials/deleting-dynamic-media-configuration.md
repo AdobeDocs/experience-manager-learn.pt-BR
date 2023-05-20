@@ -1,6 +1,6 @@
 ---
-title: Exclusão de uma configuração AEM Dynamic Media
-description: Etapas para excluir uma configuração AEM Dynamic Media do AEM Assets.
+title: Exclusão de uma configuração de Dynamic Media do AEM
+description: Etapas para excluir uma configuração do Dynamic Media para AEM do AEM Assets.
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Exclusão de uma configuração AEM Dynamic Media
+# Exclusão de uma configuração de Dynamic Media do AEM
 
-Este vídeo aborda as etapas para excluir uma configuração AEM Dynamic Media.
+Este vídeo aborda as etapas para excluir uma configuração de Dynamic Media AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335363?quality=12&learn=on)

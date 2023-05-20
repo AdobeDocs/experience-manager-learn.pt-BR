@@ -1,5 +1,5 @@
 ---
-title: Como forçar uma recompilação de todos os scripts do Sling jsps, java e sightly
+title: Como forçar uma recompilação de todos os scripts do Sling, jsps, java e sightly
 description: Etapas para forçar a recompilação de JSPs
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como forçar uma recompilação de todos os scripts do Sling jsps, java e sightly
+# Como forçar uma recompilação de todos os scripts do Sling, jsps, java e sightly
 
-*Este vídeo aborda as etapas para forçar uma recompilação de todos os scripts Sling jsps, java e sightly.*
+*Este vídeo aborda as etapas para forçar uma recompilação de todos os scripts Sling, jsps, e sightly.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335464?quality=12&learn=on)

@@ -1,7 +1,7 @@
 ---
-title: Gerando documentos de canal de impressão usando a pasta assistida
+title: Gerando documentos do canal de impressão usando a pasta monitorada
 seo-title: Generating Print Channel Documents Using Watched Folder
-description: Esta é a parte 10 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
+description: Esta é a parte 10 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pastas monitoradas.
 seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
@@ -23,19 +23,19 @@ ht-degree: 0%
 
 ---
 
-# Gerando documentos de canal de impressão usando a pasta assistida
+# Gerando documentos do canal de impressão usando a pasta monitorada
 
-Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pasta monitorada.
+Nesta parte, geraremos documentos de canal de impressão usando o mecanismo de pastas monitoradas.
 
-Depois de criar e testar o documento do canal de impressão, precisamos de um mecanismo para gerar esse documento em modo de lote ou sob demanda. Normalmente, esses tipos de documentos são gerados no modo de lote e o mecanismo mais comum está usando a pasta assistida.
+Depois de criar e testar o documento de canal de impressão, precisamos de um mecanismo para gerar esse documento em modo de lote ou sob demanda. Normalmente, esses tipos de documentos são gerados em modo de lote e o mecanismo mais comum é usar a pasta monitorada.
 
-Ao configurar uma pasta assistida no AEM, você associa um script ECMA ou código java que é executado quando um arquivo é solto na pasta assistida. Neste artigo, o foco será no script ECMA que gerará documentos de canal de impressão e os salvará no sistema de arquivos.
+Ao configurar uma pasta monitorada no AEM, você associa um script ECMA ou código java que é executado quando um arquivo é colocado na pasta monitorada. Neste artigo, vamos nos concentrar no script ECMA que gerará documentos de canal de impressão e os salvará no sistema de arquivos.
 
-A configuração de pasta assistida e o script ECMA são parte dos ativos importados na [início deste tutorial](introduction.md)
+A configuração da pasta monitorada e o script ECMA fazem parte dos ativos importados na [início deste tutorial](introduction.md)
 
-O arquivo de entrada que é solto na pasta assistida tem a seguinte estrutura. O script ECMA lê os números de conta e gera um documento de canal de impressão para cada uma dessas contas.
+O arquivo de entrada solto na pasta monitorada tem a seguinte estrutura. O script ECMA lê os números de conta e gera um documento de canal de impressão para cada uma dessas contas.
 
-Para obter mais detalhes sobre o script ECMA para gerar documentos, [consulte este artigo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Para obter mais detalhes sobre o script ECMA para geração de documentos, [consulte este artigo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
@@ -50,15 +50,15 @@ Para obter mais detalhes sobre o script ECMA para gerar documentos, [consulte es
 </accountnumbers>
 ```
 
-Para gerar o documento do canal de impressão usando o mecanismo de pasta assistida, siga as etapas abaixo:
+Para gerar um documento de canal de impressão usando o mecanismo de pastas monitoradas, siga as etapas abaixo:
 
 * [Siga as etapas mencionadas neste documento](/help/forms/adaptive-forms/service-user-tutorial-develop.md)
 
 * Faça logon no crx e acesse /etc/fd/watchfolder/scripts/PrintPDF.ecma
 
-* Certifique-se de que o caminho para interativeCommunicationsDocument está apontando para o documento correto que você deseja imprimir.( Linha 1)
+* Verifique se o caminho para interativeCommunicationsDocument aponta para o documento correto que você deseja imprimir.( Linha 1)
 * Anote o saveLocation(Line 2). Você pode alterá-lo de acordo com suas necessidades.
-* Verifique se o parâmetro de entrada do Modelo de dados de formulário está vinculado ao Atributo de solicitação e se seu valor de vínculo está definido como &quot;accountnumber&quot;. Consulte a captura de tela abaixo.
+* Verifique se o parâmetro de entrada para o modelo de dados de formulário está vinculado ao atributo de solicitação e se o valor da vinculação está definido como &quot;accountnumber&quot;. Consulte a captura de tela abaixo.
    ![solicitação](assets/requestattributeprintchannel.gif)
 
 * Crie o arquivo accountnumbers.xml com o seguinte conteúdo
@@ -80,4 +80,4 @@ Para gerar o documento do canal de impressão usando o mecanismo de pasta assist
 
 ## Próximas etapas
 
-[Abrir a interface do agente no envio do formulário](./opening-agent-ui-on-form-submission.md)
+[Abrindo a interface do usuário do agente no envio do formulário](./opening-agent-ui-on-form-submission.md)

@@ -1,6 +1,6 @@
 ---
-title: Representação somente para posicionamento (FPO)
-description: Os ativos do Adobe Experience Manager agora podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud Enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, fazer upload de ativos, verificar, modificar, fazer check-in e exibir metadados de ativos AEM em ferramentas do Creative Cloud, como Adobe Photoshop, InDesign e Illustrator.
+title: Representação Somente para posicionamento (FPO)
+description: Os ativos do Adobe Experience Manager agora podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud Enterprise estende a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, fazer check-out, modificar, fazer check-in e exibir metadados de ativos AEM em ferramentas do Creative Cloud, como Adobe Photoshop, InDesign e Illustrator.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Representação somente para posicionamento (FPO){#for-placement-only-rendition}
+# Representação Somente para posicionamento (FPO){#for-placement-only-rendition}
 
-Explore como criar e usar uma representação Somente para disposição (FPO) para ativos de AEM.
+Explore como criar e usar uma representação Somente para posicionamento (FPO) para ativos de AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)

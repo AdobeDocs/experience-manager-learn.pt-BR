@@ -1,6 +1,6 @@
 ---
-title: Conversão de string separada por vírgulas em matriz de strings no AEM Forms Workflow
-description: quando o modelo de dados de formulário tiver uma matriz de strings como um dos parâmetros de entrada, será necessário massajar os dados gerados a partir da ação de envio de um formulário adaptável antes de invocar a ação de envio do modelo de dados de formulário.
+title: Conversão da string separada por vírgula em uma matriz de strings no AEM Forms Workflow
+description: quando seu modelo de dados de formulário tiver uma matriz de cadeias de caracteres como um dos parâmetros de entrada, será necessário massagear os dados gerados a partir da ação de envio de um Formulário adaptável antes de chamar a ação de envio do modelo de dados de formulário.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -16,30 +16,30 @@ ht-degree: 0%
 
 ---
 
-# Conversão de sequência separada por vírgulas em matriz de sequência {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Convertendo cadeia de caracteres separada por vírgula em matriz de cadeia de caracteres {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Quando seu formulário é baseado em um modelo de dados de formulário que tem uma matriz de strings como parâmetro de entrada, é necessário manipular os dados de formulário adaptável enviados para inserir uma matriz de strings. Como exemplo, se você tiver vinculado um campo de caixa de seleção a um elemento de modelo de dados de formulário do tipo matriz de sequência de caracteres, os dados do campo de caixa de seleção estarão em um formato de sequência de caracteres separado por vírgulas. O código de amostra listado abaixo mostra como substituir a string separada por vírgulas por uma matriz de strings.
+Quando o formulário é baseado em um modelo de dados de formulário que tem uma matriz de cadeias de caracteres como parâmetro de entrada, é necessário manipular os dados de formulário adaptáveis enviados para inserir uma matriz de cadeias de caracteres. Como exemplo, se você tiver vinculado um campo de caixa de seleção a um elemento de modelo de dados de formulário do tipo matriz de cadeia de caracteres, os dados do campo de caixa de seleção estarão em um formato de cadeia de caracteres separada por vírgulas. O código de amostra listado abaixo mostra como substituir a cadeia de caracteres separada por vírgula por uma matriz de cadeias de caracteres.
 
 ## Criar uma etapa do processo
 
-Uma etapa do processo é usada em um fluxo de trabalho AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizado executa o serviço OSGi.
+Uma etapa do processo é usada em um fluxo de trabalho de AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizada executa o serviço OSGi.
 
-Os dados enviados estão no seguinte formato. O valor do elemento businessUnits é uma string separada por vírgulas, que precisa ser convertida em uma matriz de string.
+Os dados enviados estão no formato a seguir. O valor do elemento businessUnits é uma string separada por vírgulas, que precisa ser convertida em uma matriz de string.
 
-![enviar dados](assets/submitted-data-string.png)
+![dados enviados](assets/submitted-data-string.png)
 
-Os dados de entrada do terminal restante associado ao modelo de dados de formulário esperam uma matriz de sequências de caracteres como mostrado nesta captura de tela. O código personalizado na etapa do processo converte os dados enviados no formato correto.
+Os dados de entrada para o endpoint restante associado ao modelo de dados de formulário esperam uma matriz de cadeias de caracteres, como mostrado nesta captura de tela. O código personalizado na etapa de processo converte os dados enviados no formato correto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Passamos o caminho do objeto JSON e o nome do elemento para a etapa do processo. O código na etapa do processo substitui os valores separados por vírgulas do elemento em uma matriz de sequências de caracteres.
+Passamos o caminho do objeto JSON e o nome do elemento para a etapa do processo. O código na etapa de processo substitui os valores separados por vírgula do elemento em uma matriz de cadeias de caracteres.
 ![etapa do processo](assets/create-string-array.png)
 
 >[!NOTE]
 >
 >Verifique se o caminho do Arquivo de dados nas opções de envio do Formulário adaptável está definido como &quot;Data.xml&quot;. Isso ocorre porque o código na etapa do processo procura um arquivo chamado Data.xml na pasta de carga útil.
 
-## Código de etapa do processo
+## Código da etapa do processo
 
 ```java
 import java.io.BufferedReader;

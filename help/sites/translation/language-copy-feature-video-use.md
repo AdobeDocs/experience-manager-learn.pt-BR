@@ -1,6 +1,6 @@
 ---
-title: Uso da Cópia de idioma com o AEM Sites
-description: Com AEM aprimoramento da tradução do site do Assistente de criação de idioma , os usuários podem criar uma cópia de idioma a partir do idioma principal sem precisar criar uma página raiz.
+title: Uso da cópia de idioma com o AEM Sites
+description: Com o aprimoramento da tradução do site AEM Create Language Copy Wizard, os usuários podem criar uma cópia de idioma a partir do idioma principal sem precisar criar uma página raiz.
 feature: Language Copy
 topics: localization, authoring, content-architecture
 audience: all
@@ -18,9 +18,9 @@ ht-degree: 5%
 
 ---
 
-# Usando a Cópia de idioma {#using-language-copy}
+# Usar cópia de idioma {#using-language-copy}
 
-Com o AEM 6.3 do Assistente para criação de cópia de idioma aprimorado de tradução do site, os usuários podem criar uma cópia de idioma a partir do idioma principal sem precisar criar uma página raiz.
+Com o aprimoramento da tradução para o site do Assistente para criar cópia de idioma do AEM 6.3, os usuários podem criar uma cópia de idioma a partir do idioma principal sem precisar criar uma página raiz.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17116?quality=12&learn=on)
 

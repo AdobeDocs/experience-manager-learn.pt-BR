@@ -1,6 +1,6 @@
 ---
-title: Delivery de Interative Communication Document - Web Channel AEM Forms
-description: Entrega do documento do canal da Web via link no email
+title: Entrega do documento de comunicação interativa - AEM Forms do canal da Web
+description: Entrega de documento de canal da Web por link no email
 feature: Interactive Communication
 audience: developer
 activity: implement
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ---
 
-# Entrega de email do documento de canal da Web
+# Entrega por email do documento de canal da Web
 
-Depois de definir e testar seu documento de comunicação interativa de canal da Web, você precisa de um mecanismo de delivery para entregar o documento de canal da Web ao recipient.
+Depois de definir e testar o documento de comunicação interativa do canal da Web, é necessário um mecanismo de entrega para entregar o documento do canal da Web ao destinatário.
 
-Neste artigo, analisamos o email como um mecanismo de delivery para documentos de canal da Web. O recipient obterá um link para o documento do canal da Web via email.Ao clicar no link, o usuário é solicitado a autenticar e o documento do canal da Web é preenchido com os dados específicos do usuário conectado.
+Neste artigo, analisamos o email como um mecanismo de entrega para o documento de canal da Web. O recipient receberá um link para o documento de canal da Web por email.Ao clicar no link, o usuário é solicitado a autenticar e o documento de canal da Web é preenchido com os dados específicos do usuário conectado.
 
-Vamos observar o seguinte trecho de código. Esse código faz parte do GET.jsp, que é acionado quando o usuário clica no link no email para exibir o documento do canal da Web. Obtemos o usuário conectado usando o jackrabbit UserManager. Depois que obtemos o usuário conectado, obtemos o valor da propriedade accountNumber associada ao perfil do usuário.
+Vamos observar o seguinte fragmento de código. Esse código faz parte do GET.jsp que é acionado quando o usuário clica no link no email para exibir o documento do canal da Web. Nós obtemos o usuário logado usando o UserManager jackrabbit. Depois que obtemos o usuário conectado, obtemos o valor da propriedade accountNumber associada ao perfil do usuário.
 
-Em seguida, associamos o valor accountNumber a uma chave chamada número de conta no mapa. A chave **accountnumber** é definida no modal de dados do formulário como um Atributo de solicitação. O valor desse atributo é passado como um parâmetro de entrada para o método de serviço de leitura Form Data Modal.
+Em seguida, associamos o valor accountNumber a uma chave chamada accountnumber no mapa. A chave **número da conta** é definido no modal de dados do formulário como um Atributo de solicitação. O valor desse atributo é passado como parâmetro de entrada para o método do serviço de leitura do Modal de dados de formulário.
 
-Linha 7: Estamos enviando a solicitação recebida para outro servlet, com base no tipo de recurso identificado pelo url do Documento de Comunicação Interativa. A resposta retornada por este segundo servlet é incluída na resposta do primeiro servlet.
+Linha 7: estamos enviando a solicitação recebida para outro servlet, com base no tipo de recurso identificado pelo URL do documento de comunicação interativa. A resposta retornada por esse segundo servlet é incluída na resposta do primeiro servlet.
 
 ```java
 org.apache.jackrabbit.api.security.user.UserManager um = ((org.apache.jackrabbit.api.JackrabbitSession) session).getUserManager();
@@ -39,12 +39,12 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatement/channels/web.html").include(wrapperRequest, response);
 ```
 
-![Incluir método](assets/includemethod.jpg)
+![Incluir abordagem de método](assets/includemethod.jpg)
 
 Representação visual do código da linha 7
 
-![Configurar parâmetro de solicitação](assets/requestparameter.png)
+![Configuração do parâmetro de solicitação](assets/requestparameter.png)
 
-Atributo de solicitação definido para o serviço de leitura do modal de dados do formulário
+Atributo de solicitação definido para o serviço de leitura do modal de dados de formulário
 
-[Pacote de AEM de exemplo](assets/webchanneldelivery.zip).
+[Amostra do pacote AEM](assets/webchanneldelivery.zip).

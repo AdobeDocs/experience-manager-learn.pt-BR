@@ -1,6 +1,6 @@
 ---
-title: Modelagem de conteúdo - AEM primeiro tutorial autônomo
-description: Saiba como aproveitar os Fragmentos de conteúdo, criar Modelos de fragmento e usar os pontos de extremidade do GraphQL no AEM.
+title: Modelagem de conteúdo - Primeiro tutorial sobre o AEM Headless
+description: Saiba como aproveitar os fragmentos de conteúdo, criar modelos de fragmento e usar endpoints do GraphQL no AEM.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
@@ -20,77 +20,77 @@ ht-degree: 9%
 
 # Modelagem de conteúdo
 
-Bem-vindo ao capítulo tutorial sobre Fragmentos de conteúdo e pontos de extremidade do GraphQL no Adobe Experience Manager (AEM). Abordaremos o aproveitamento dos Fragmentos de conteúdo, a criação de Modelos de fragmento e o uso de pontos de extremidade do GraphQL no AEM.
+Bem-vindo ao capítulo de tutorial sobre fragmentos de conteúdo e endpoints do GraphQL no Adobe Experience Manager (AEM). Abordaremos como aproveitar os fragmentos de conteúdo, criar modelos de fragmento e usar endpoints do GraphQL no AEM.
 
-Os Fragmentos de conteúdo oferecem uma abordagem estruturada para gerenciar conteúdo em vários canais, proporcionando flexibilidade e capacidade de reutilização. Habilitar Fragmentos de conteúdo no AEM permite a criação de conteúdo modular, melhorando a consistência e a adaptabilidade.
+Os fragmentos de conteúdo oferecem uma abordagem estruturada para gerenciar conteúdo em vários canais, fornecendo flexibilidade e reutilização. A ativação de fragmentos de conteúdo no AEM permite a criação de conteúdo modular, melhorando a consistência e a adaptabilidade.
 
-Primeiro, vamos orientá-lo na ativação dos Fragmentos de conteúdo no AEM, abordando as configurações e configurações necessárias para uma integração perfeita.
+Primeiro, guiaremos você pela ativação dos Fragmentos de conteúdo no AEM, abrangendo as configurações e definições necessárias para uma integração perfeita.
 
-Em seguida, abordaremos a criação de Modelos de fragmento, que definem a estrutura e os atributos. Saiba como projetar modelos alinhados às suas necessidades de conteúdo e gerenciá-los com eficácia.
+Em seguida, abordaremos a criação de modelos de fragmento, que definem a estrutura e os atributos. Saiba como projetar modelos alinhados aos seus requisitos de conteúdo e gerenciá-los de maneira eficaz.
 
-Em seguida, demonstraremos a criação de Fragmentos de conteúdo a partir dos modelos, fornecendo orientação passo a passo sobre a criação e a publicação.
+Em seguida, demonstraremos a criação de fragmentos de conteúdo dos modelos, fornecendo orientação passo a passo sobre criação e publicação.
 
-Além disso, exploraremos a definição AEM endpoints do GraphQL. O GraphQL recupera dados de AEM de maneira eficiente, e configuraremos endpoints para expor os dados desejados. Consultas persistentes otimizarão o desempenho e o armazenamento em cache.
+Além disso, exploraremos a definição de endpoints do AEM GraphQL. O GraphQL recupera dados do AEM com eficiência, e definiremos e configuraremos endpoints para expor os dados desejados. As consultas persistentes otimizarão o desempenho e o armazenamento em cache.
 
-Durante todo o tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades de ativar os Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir AEM endpoints do GraphQL e consultas persistentes. Vamos começar!
+Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades para ativar Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir endpoints de AEM GraphQL e consultas persistentes. Vamos começar!
 
 ## Configuração sensível ao contexto
 
-1. Navegar para __Ferramentas > Navegador de configuração__ para criar uma configuração para a experiência sem periféricos.
+1. Navegue até __Ferramentas > Navegador de configuração__ para criar uma configuração para a experiência headless.
 
    ![Criar pasta](./assets/1/create-configuration.png)
 
-   Forneça uma __título__ e __name__ e verificar __Consultas Persistentes do GraphQL__ e __Modelos de fragmentos do conteúdo__.
+   Forneça um __título__ e __name__, e verifique __Consultas persistentes do GraphQL__ e __Modelos de fragmentos do conteúdo__.
 
 
 ## Modelos de fragmentos do conteúdo
 
-1. Navegar para __Ferramentas > Modelos de fragmento de conteúdo__ e selecione a pasta com o nome da configuração criada na etapa 1.
+1. Navegue até __Ferramentas > Modelos de fragmentos do conteúdo__ e selecione a pasta com o nome da configuração criada na etapa 1.
 
    ![Pasta Modelo](./assets/1/model-folder.png)
 
-1. Dentro da pasta, selecione __Criar__ e nomeie o modelo __Teaser__. Adicione os seguintes tipos de dados ao __Teaser__ modelo.
+1. Dentro da pasta, selecione __Criar__ e nomeie o modelo __Teaser__. Adicione os seguintes tipos de dados à __Teaser__ modelo.
 
    | Tipo de dados | Nome | Obrigatório | Opções |
    |----------|------|----------|---------|
-   | Referência de conteúdo | Ativo | sim | Adicione uma imagem padrão, se desejar. Ex: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
+   | Referência de conteúdo | Ativo | sim | Adicione uma imagem padrão se desejar. Exemplo: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
    | Texto em linha única | Título | sim |
    | Texto em linha única | Pré-título | não |
-   | Texto multilinha | Descrição | não | Certifique-se de que o tipo padrão seja rich text |
-   | Lista discriminada | Estilo | sim | Renderizar como lista suspensa. As opções são Herói -> Herói e em destaque -> em destaque |
+   | Texto multilinha | Descrição | não | Verificar se o tipo padrão é rich text |
+   | Lista discriminada | Estilo | sim | Renderizar como lista suspensa. As opções são Herói -> Herói e Destaque -> Destaque |
 
    ![Modelo de teaser](./assets/1/teaser-model.png)
 
-1. Dentro da pasta, crie um segundo modelo chamado __Oferta__. Clique em criar e dê ao modelo o nome &quot;Oferta&quot; e adicione os seguintes tipos de dados:
+1. Dentro da pasta, crie um segundo modelo chamado __Oferta__. Clique em criar, dê ao modelo o nome &quot;Oferta&quot; e adicione os seguintes tipos de dados:
 
    | Tipo de dados | Nome | Obrigatório | Opções |
    |----------|------|----------|---------|
-   | Referência de conteúdo | Ativo | sim | Adicione a imagem padrão. Exemplo: `/content/dam/wknd-headless/assets/AdobeStock_238607111.jpeg` |
+   | Referência de conteúdo | Ativo | sim | Adicionar imagem padrão. Exemplo: `/content/dam/wknd-headless/assets/AdobeStock_238607111.jpeg` |
    | Texto multilinha | Descrição | não |  |
    | Texto multilinha | Artigo | não |  |
 
    ![Modelo de oferta](./assets/1/offer-model.png)
 
-1. Dentro da pasta, crie um terceiro modelo chamado __Lista de imagens__. Clique em criar e dê ao modelo o nome &quot;Lista de imagens&quot; e adicione os seguintes tipos de dados:
+1. Dentro da pasta, crie um terceiro modelo chamado __Lista de imagens__. Clique em criar, nomeie o modelo como &quot;Lista de imagens&quot; e adicione os seguintes tipos de dados:
 
    | Tipo de dados | Nome | Obrigatório | Opções |
    |----------|------|----------|---------|
-   | Referência de fragmento | Listar itens | sim | Renderizar como Campo múltiplo. O modelo de fragmento de conteúdo permitido é Oferta. |
+   | Referência de fragmento | Listar itens | sim | Renderizar como vários campos. O modelo de fragmento de conteúdo permitido é Oferta. |
 
    ![Modelo de lista de imagens](./assets/1/imagelist-model.png)
 
 ## Fragmentos de conteúdo
 
-1. Agora, navegue até Ativos e crie uma pasta para o novo site. Clique em criar e nomeie a pasta.
+1. Agora navegue até Ativos e crie uma pasta para o novo site. Clique em criar e nomeie a pasta.
 
    ![Adicionar pasta](./assets/1/create-folder.png)
 
-1. Após a criação da pasta, selecione-a e abra-a __Propriedades__.
-1. Na pasta __Configurações da nuvem__ , selecione a configuração [criado anteriormente](#enable-content-fragments-and-graphql).
+1. Depois que a pasta for criada, selecione-a e abra sua __Propriedades__.
+1. No da pasta __Configurações da nuvem__ selecione a configuração [criado anteriormente](#enable-content-fragments-and-graphql).
 
-   ![Pasta de ativos AEM configuração de nuvem headless](./assets/1/cloud-config.png)
+   ![Pasta de ativos AEM Configuração em nuvem sem periféricos](./assets/1/cloud-config.png)
 
-   Clique na nova pasta e crie um teaser. Clique em __Criar__ e __Fragmento de conteúdo__ e selecione o __Teaser__ modelo. Nomeie o modelo __Herói__ e clique em __Criar__.
+   Clique na nova pasta e crie um teaser. Clique em __Criar__ e __Fragmento do conteúdo__ e selecione o __Teaser__ modelo. Nomear o modelo __Herói__ e clique em __Criar__.
 
    | Nome | Notas |
    |----------|------|
@@ -104,17 +104,17 @@ Durante todo o tutorial, forneceremos explicações, exemplos de código e dicas
 
 ## Pontos de extremidade GraphQL.
 
-1. Navegar para __Ferramentas > GraphQL__
+1. Navegue até __Ferramentas > GraphQL__
 
-   ![AEM GraphiQL](./assets/1/endpoint-nav.png)
+   ![GraphiQL do AEM](./assets/1/endpoint-nav.png)
 
-1. Clique em __Criar__ e dê um nome ao novo ponto de extremidade e escolha a configuração recém-criada.
+1. Clique em __Criar__ e nomeie o novo endpoint e escolha a configuração recém-criada.
 
-   ![Ponto de extremidade do GraphQL sem cabeçalho AEM](./assets/1/endpoint.png)
+   ![Ponto de acesso do AEM Headless GraphQL](./assets/1/endpoint.png)
 
 ## Consultas GraphQL Persistidas
 
-1. Vamos testar o novo terminal. Navegar para __Ferramentas > Editor de consultas do GraphQL__ e escolha o terminal para o menu suspenso no canto superior direito da janela.
+1. Vamos testar o novo terminal. Navegue até __Ferramentas > Editor de consultas GraphQL__ e escolha nosso terminal para o menu suspenso no canto superior direito da janela.
 
 1. No Editor de consultas, crie algumas consultas diferentes.
 
@@ -129,9 +129,9 @@ Durante todo o tutorial, forneceremos explicações, exemplos de código e dicas
    }
    ```
 
-   É necessário obter uma lista contendo o único fragmento criado [above](#create-content).
+   Você deve obter uma lista contendo o único fragmento criado [acima](#create-content).
 
-   Para este exercício, crie uma consulta completa que o aplicativo sem cabeçalho AEM usa. Crie uma consulta que retorne um único teaser por caminho. No editor de query, insira a seguinte query:
+   Para este exercício, crie uma query completa que o aplicativo AEM headless usa. Crie uma query que retorne um único teaser por caminho. No editor de consultas, insira a seguinte consulta:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -183,15 +183,15 @@ Durante todo o tutorial, forneceremos explicações, exemplos de código e dicas
 
    >[!NOTE]
    >
-   > Talvez seja necessário ajustar a variável de consulta `path` baseado nos nomes de pasta e fragmento.
+   > Talvez seja necessário ajustar a variável de consulta `path` com base nos nomes da pasta e do fragmento.
 
 
-   Execute a query para receber os resultados do Fragmento de conteúdo criado anteriormente.
+   Execute a consulta para receber os resultados do fragmento de conteúdo criado anteriormente.
 
-1. Clique em __Salvar__  para persistir (salvar) a consulta e nomear a consulta __teaser__. Isso nos permite fazer referência à consulta por nome no aplicativo.
+1. Clique em __Salvar__  para criar uma consulta persistente (salvar) e nomear a consulta __teaser__. Isso nos permite fazer referência à consulta por nome no aplicativo.
 
 ## Próximas etapas
 
-Parabéns! Você configurou AEM as a Cloud Service com êxito para permitir a criação de Fragmentos de conteúdo e pontos de extremidade do GraphQL. Você também criou um Modelo de fragmento de conteúdo e um Fragmento de conteúdo, e definiu um terminal GraphQL e uma consulta persistente. Agora você está pronto para prosseguir para o próximo capítulo tutorial, onde aprenderá a criar um aplicativo de Reação sem cabeçalho AEM que consuma os Fragmentos de conteúdo e o ponto de extremidade do GraphQL criado neste capítulo.
+Parabéns! Você configurou o AEM as a Cloud Service com sucesso para permitir a criação de fragmentos de conteúdo e endpoints do GraphQL. Você também criou um modelo de fragmento de conteúdo e um fragmento de conteúdo, além de definir um terminal GraphQL e uma consulta persistente. Agora você está pronto para seguir para o próximo capítulo do tutorial, em que aprenderá a criar um aplicativo AEM Headless React que consome os fragmentos de conteúdo e o endpoint do GraphQL criados neste capítulo.
 
-[Próximo capítulo: AEM APIs headless e React](./2-aem-headless-apis-and-react.md)
+[Próximo capítulo: APIs AEM Headless e React](./2-aem-headless-apis-and-react.md)

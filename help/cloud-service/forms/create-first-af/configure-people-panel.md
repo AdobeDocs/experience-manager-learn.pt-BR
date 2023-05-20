@@ -1,6 +1,6 @@
 ---
 title: Configurar painel de pessoas
-description: Configure o painel de pessoas adicionando fragmento de detalhes do cônjuge.
+description: Configure o painel Gente adicionando o fragmento de detalhes do cônjuge.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -13,7 +13,7 @@ thumbnail: 332234.jpg
 exl-id: b7d0b192-1bbf-4735-8dc6-dd4cb1dc052a
 source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '22'
 ht-degree: 0%
 
 ---

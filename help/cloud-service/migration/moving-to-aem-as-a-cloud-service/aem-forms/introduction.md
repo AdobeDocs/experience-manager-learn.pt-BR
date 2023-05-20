@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms as a Cloud Service - Migração para AEM CS
+# AEM Forms as a Cloud Service - Migração para o AEM CS
 
 Saiba mais sobre casos de uso e recursos compatíveis com o AEM Forms as a Cloud Service.
 

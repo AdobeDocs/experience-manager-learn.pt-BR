@@ -1,6 +1,6 @@
 ---
-title: Como executar testes de carga da interface do usuário usando amostras de OOTB FormsIVS e OutputIVS
-description: Configurar testes de carregamento usando FormsIVS e OutputIVS
+title: Como executar testes de carga da interface usando amostras de OOTB FormsIVS e OutputIVS
+description: Configurar testes de carga usando FormsIVS e OutputIVS
 type: Troubleshooting
 role: Developer
 level: Intermediate

@@ -1,6 +1,6 @@
 ---
 title: Criar seu primeiro servlet no AEM Forms
-description: Crie seu primeiro servlet sling para unir dados ao modelo de formulário.
+description: Crie seu primeiro servlet sling para mesclar dados com o modelo de formulário.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,15 +15,15 @@ ht-degree: 1%
 
 ---
 
-# Servlet Sling
+# Sling Servlet
 
-Um Servlet é uma classe usada para estender os recursos de servidores que hospedam aplicativos acessados por meio de um modelo de programação de resposta de solicitação. Para esses aplicativos, a tecnologia Servlet define classes de servlet específicas para HTTP.
-Todos os servlets devem implementar a interface Servlet, que define métodos de ciclo de vida.
+Um Servlet é uma classe usada para estender os recursos dos servidores que hospedam aplicativos acessados por meio de um modelo de programação de solicitação-resposta. Para tais aplicações, a tecnologia Servlet define classes de servlet específicas de HTTP.
+Todos os servlets devem implementar a interface Servlet, que define os métodos do ciclo de vida.
 
 
-Um servlet no AEM pode ser registrado como serviço OSGi: você pode estender SlingSafeMethodsServlet para implementação somente leitura ou SlingAllMethodsServlet para implementar todas as operações RESTful.
+Um servlet no AEM pode ser registrado como um serviço OSGi: é possível estender SlingSafeMethodsServlet para implementação somente leitura ou SlingAllMethodsServlet para implementar todas as operações RESTful.
 
-## Código Servlet
+## Código de servlet
 
 ```java
 package com.mysite.core.servlets;
@@ -74,18 +74,18 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 Para criar seu projeto, siga as seguintes etapas:
 
-* Abrir **janela da tela de comandos**
+* Abertura **janela da tela de comandos**
 * Vá até `c:\aemformsbundles\mysite\core`
-* Execute o comando `mvn clean install -PautoInstallBundle`
-* O comando acima cria e implanta automaticamente o pacote em sua instância de AEM em execução no localhost:4502
+* Executar o comando `mvn clean install -PautoInstallBundle`
+* O comando acima cria e implanta automaticamente o pacote na instância do AEM em execução em localhost:4502
 
-O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado em AEM usando o [Console da Web Felix.](http://localhost:4502/system/console/bundles)
+O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [Felix web console.](http://localhost:4502/system/console/bundles)
 
 
-## Testar o Servlet Resolver
+## Testar o resolvedor de servlet
 
-Aponte seu navegador para o [URL do resolvedor do servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Isso informa o servlet que é chamado para um determinado caminho, como visto na captura de tela abaixo
-![servlet resolver](assets/servlet-resolver.JPG)
+Aponte seu navegador para a [URL do resolvedor de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Isso informa o servlet que é chamado para um determinado caminho, conforme visto na captura de tela abaixo
+![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Testar o servlet usando o Postman
 

@@ -1,6 +1,6 @@
 ---
-title: Criar formulário adaptável
-description: Na Parte 1, criaremos o Formulário adaptável, adicionaremos e configuraremos a barra de ferramentas com os botões apropriados.
+title: Criação do formulário adaptável
+description: Na Parte 1, criaremos o Formulário adaptável, adicionaremos e configuraremos a barra de ferramentas com botões apropriados.
 feature: Adaptive Forms
 kt: 4208
 thumbnail: 22173.jpg
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 ---
 
-# Criar formulário adaptável {#creating-adaptive-form}
+# Criação do formulário adaptável {#creating-adaptive-form}
 
-Criaremos o formulário adaptável com base no modelo criado na lição anterior e configuraremos a barra de ferramentas com os botões apropriados.
+Criaremos o formulário adaptável com base no modelo criado na lição anterior e configuraremos a barra de ferramentas com botões apropriados.
 
 **Criar o primeiro formulário adaptável**
 
@@ -25,4 +25,4 @@ Criaremos o formulário adaptável com base no modelo criado na lição anterior
 
 ## Próximas etapas
 
-[Adicionar painéis filhos ao painel raiz](./configuring-root-panel-and-adding-child-panels.md)
+[Adicionar painéis secundários ao painel raiz](./configuring-root-panel-and-adding-child-panels.md)

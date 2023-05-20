@@ -1,6 +1,6 @@
 ---
 title: Endpoints do GraphQL
-description: Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade do GraphQL.
+description: Saiba como habilitar, executar consultas em relação a e publicar e proteger endpoints do GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Endpoints do GraphQL
 
-Saiba como habilitar, executar consultas e publicar e proteger pontos de extremidade do GraphQL.
+Saiba como habilitar, executar consultas em relação a e publicar e proteger endpoints do GraphQL.
 
-Neste vídeo, você:
+Neste vídeo, você vai:
 
 + Saiba como habilitar endpoints do GraphQL
-+ Saiba como executar consultas do GraphQL em relação a endpoints
-+ Saiba como publicar endpoints do GraphQL
++ Saiba como executar consultas do GraphQL em relação aos endpoints
++ Entender como publicar endpoints do GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)

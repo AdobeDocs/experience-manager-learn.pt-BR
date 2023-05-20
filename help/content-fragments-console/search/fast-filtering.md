@@ -1,6 +1,6 @@
 ---
-title: Editor de fragmentos de conteúdo - Filtragem rápida
-description: Saiba como AEM interface do usuário do Fragmento de conteúdo facilita a localização dos Fragmentos de conteúdo por meio da filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
+title: Editor de fragmento de conteúdo — Filtragem rápida
+description: Saiba como a interface do usuário de fragmento de conteúdo do AEM facilita a localização de fragmentos de conteúdo usando uma filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
 version: Cloud Service
 role: User
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Filtragem rápida
 
-Saiba como AEM interface do usuário do Fragmento de conteúdo facilita a localização dos Fragmentos de conteúdo por meio da filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
+Saiba como a interface do usuário de fragmento de conteúdo do AEM facilita a localização de fragmentos de conteúdo usando uma filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)

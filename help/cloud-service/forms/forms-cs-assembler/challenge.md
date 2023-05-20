@@ -1,6 +1,6 @@
 ---
-title: Testar sua compreensão do Forms assember
-description: Concluir os exercícios
+title: Teste sua compreensão do Forms Asember
+description: Conclua os exercícios
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Exercícios
 
-## Compilar arquivos PDF
+## Montar arquivos PDF
 
-Modifique o `assemble2pdfs.ddx` para reunir 3 arquivos PDF.
+Modifique o `assemble2pdfs.ddx` arquivo para montar 3 arquivos PDF.
 
-Você colocará o terceiro pdf na pasta resources/pdffiles .
+Você colocará o terceiro pdf na pasta resources/pdffiles.

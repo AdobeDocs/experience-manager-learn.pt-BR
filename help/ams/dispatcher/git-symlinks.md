@@ -1,35 +1,35 @@
 ---
-title: Adição correta de links simbólicos no GIT
-description: Instruções sobre como e onde adicionar links simbólicos ao trabalhar nas configurações do Dispatcher.
+title: Adicionar links simbólicos ao GIT corretamente
+description: Instruções sobre como e onde adicionar symlinks ao trabalhar nas configurações do Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
+exl-id: 6e751586-e92e-482d-83ce-6fcae4c1102c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
 
 ---
 
-
-# Adição de links simbólicos no GIT
+# Adição de symlinks ao GIT
 
 [Índice](./overview.md)
 
-[&lt;- Anterior: Verificação de Integridade do Dispatcher](./health-check.md)
+[&lt;- Anterior: Verificação de integridade do Dispatcher](./health-check.md)
 
-No AMS, você terá um repositório GIT pré-preenchido contendo o código-fonte do dispatcher maduro e pronto para iniciar o desenvolvimento e a personalização.
+No AMS, você terá um repositório GIT pré-preenchido contendo o código-fonte do dispatcher pronto para iniciar o desenvolvimento e a personalização.
 
-Depois de criar o primeiro `.vhost` arquivo ou nível superior `farm.any` será necessário criar um link simbólico no arquivo `available_*` para `enabled_*` diretório. O uso do tipo de link adequado será fundamental para uma implantação bem-sucedida por meio do pipeline do Cloud Manager. Esta página ajudará você a saber como fazer isso.
+Depois de criar seu primeiro `.vhost` arquivo ou nível superior `farm.any` arquivo, será necessário criar um link simbólico a partir da `available_*` diretório para o `enabled_*` diretório. O uso do tipo de link apropriado será fundamental para uma implantação bem-sucedida por meio do pipeline do Cloud Manager. Esta página ajudará você a saber como fazer isso.
 
 ## Arquétipo do Dispatcher
 
-O desenvolvedor do AEM inicia o projeto normalmente no [AEM arquétipo](https://github.com/adobe/aem-project-archetype)
+O desenvolvedor do AEM inicia seu projeto normalmente a partir do [Arquétipo de AEM](https://github.com/adobe/aem-project-archetype)
 
-Esta é uma amostra da área do código-fonte, onde você pode ver os links simbólicos usados:
+Esta é uma amostra da área do código-fonte onde você pode ver os symlinks usados:
 
 ```
 $ tree dispatcher
@@ -67,21 +67,21 @@ dispatcher
 
 Como exemplo, a variável `/etc/httpd/conf.d/available_vhosts/` o diretório contém o potencial preparado `.vhost` arquivos que podemos usar em nossa configuração em execução.
 
-Ativado `.vhost` os arquivos serão exibidos como um caminho relativo `symlinks` dentro do `/etc/httpd/conf.d/enabled_vhosts/` diretório.
+O habilitado `.vhost` os arquivos serão exibidos como um caminho relativo `symlinks` dentro do `/etc/httpd/conf.d/enabled_vhosts/` diretório.
 
-## Criação de um link simbólico
+## Criação de uma ligação simbólica
 
-Usamos links simbólicos para o arquivo para que o servidor Web Apache trate o arquivo de destino como o mesmo arquivo.  Não queremos duplicar o arquivo em ambos os diretórios.  Em vez disso, apenas um atalho de um diretório (link simbólico) para outro.
+Usamos links simbólicos para o arquivo, de modo que o Apache Webserver trate o arquivo de destino como o mesmo arquivo.  Não queremos duplicar o arquivo em ambos os diretórios.  Em vez disso, basta um atalho de um diretório (link simbólico) para o outro.
 
-Reconheça que suas configurações implantadas terão como alvo um host Linux.  Criar um link simbólico que não seja compatível com o sistema de destino causará falhas e resultados indesejados.
+Reconhecer que suas configurações implantadas terão como alvo um host Linux.  A criação de um link simbólico incompatível com o sistema de destino causará falhas e resultados indesejados.
 
-Se sua estação de trabalho não for uma máquina Linux, você provavelmente se perguntará quais comandos usar para criar esses links corretamente, de modo que eles possam confirmá-los em GIT.
+Se sua estação de trabalho não for uma máquina Linux, você provavelmente se perguntará quais comandos usar para criar esses links corretamente para que eles possam confirmá-los no GIT.
 
-> `TIP:` É importante usar links relativos, pois se você instalasse uma cópia local do servidor Web Apache e tivesse uma base de instalação diferente, os links ainda funcionariam.  Se você usar um caminho absoluto, sua estação de trabalho ou outros sistemas precisarão corresponder à mesma estrutura exata de diretórios.
+> `TIP:` É importante usar links relativos, pois se você instalasse uma cópia local do Apache Webserver e tivesse uma base de instalação diferente, os links ainda funcionariam.  Se você usar um caminho absoluto, sua estação de trabalho ou outros sistemas deverão corresponder à mesma estrutura de diretório exata.
 
-### OSX / Linux
+### OSX/Linux
 
-Os links simbólicos são nativos nesses sistemas operacionais e aqui estão alguns exemplos de como criar esses links.  Abra seu aplicativo de terminal favorito e use os seguintes comandos de exemplo para criar o link:
+Os symlinks são nativos para esses sistemas operacionais e aqui estão alguns exemplos de como criar esses links.  Abra seu aplicativo de terminal favorito e use os seguintes comandos de exemplo para criar o link:
 
 ```
 $ cd <LOCATION OF CLONED GIT REPO>\src\conf.d\enabled_vhosts
@@ -96,7 +96,7 @@ $ cd aem-project-archetype/src/main/archetype/dispatcher.ams/src/conf.d/enabled_
 $ ln -s ../available_vhosts/aem_flush.vhost aem_flush.vhost
 ```
 
-Este é um exemplo do link agora, se você listar o arquivo usando a variável `ls` comando:
+Este é um exemplo do link agora, se você listar o arquivo usando o `ls` comando:
 
 ```
 ls -l
@@ -106,17 +106,17 @@ lrwxrwxrwx. 1 root root 35 Oct 13 21:38 aem_flush.vhost -> ../available_vhosts/a
 
 ### Windows
 
-> `Note:` O MS Windows (melhor, NTFS) suporta ligações simbólicas desde... Windows Vista!
+> `Note:` Acontece MS Windows (melhor, NTFS) suporta links simbólicos desde... Windows Vista
 
 ![Imagem do Prompt de Comando do Windows mostrando a saída de ajuda do comando mklink](./assets/git-symlinks/windows-terminal-mklink.png)
 
-> `Warning:` O comando mklink para criar links simbólicos requer privilégios de administrador para ser executado corretamente. Mesmo como uma conta de administrador, será necessário executar o Prompt de comando &quot;Como administrador&quot;, a menos que o modo de desenvolvedor esteja ativado
+> `Warning:` O comando mklink para criar symlinks requer privilégios de administrador para ser executado corretamente. Mesmo como uma conta de administrador, será necessário executar o Prompt de comando &quot;Como administrador&quot;, a menos que o modo de desenvolvedor esteja ativado
 > <br/>Permissões impróprias:
-> ![Imagem do Prompt de Comando do Windows mostrando o comando falhando devido a permissões](./assets/git-symlinks/windows-mklink-underpriv.png)
+> ![Imagem do Prompt de Comando do Windows mostrando a falha do comando devido a permissões](./assets/git-symlinks/windows-mklink-underpriv.png)
 > <br/>Permissões adequadas:
 > ![Imagem do Prompt de Comando do Windows executada como Administrador](./assets/git-symlinks/windows-mklink-properpriv.png)
 
-Aqui estão os comandos para criar o link:
+Estes são os comandos para criar o link:
 
 ```
 C:\<PATH TO SRC>\enabled_vhosts> mklink <Target File Name> ..\available_vhosts\<Destination File Name>
@@ -134,56 +134,56 @@ symbolic link created for aem_flush.vhost <<===>> ..\available_vhosts\aem_flush.
 
 #### Modo de desenvolvedor ( Windows 10 )
 
-Quando colocado em [Modo de desenvolvedor](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development), o Windows 10 permite testar mais facilmente os aplicativos que você está desenvolvendo, usar o ambiente shell Ubuntu Bash, alterar várias configurações focadas no desenvolvedor e fazer outras coisas desse tipo.
+Quando colocado em [Modo de desenvolvedor](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development), o Windows 10 permite testar mais facilmente os aplicativos que você está desenvolvendo, usar o ambiente shell do Ubuntu Bash, alterar uma variedade de configurações focadas no desenvolvedor e fazer outras coisas desse tipo.
 
-A Microsoft parece continuar adicionando recursos ao Modo do desenvolvedor, ou habilitando alguns desses recursos por padrão depois que eles atingem uma adoção mais ampla e são considerados estáveis (por exemplo, com a Atualização de criadores, o ambiente Ubuntu Bash Shell não precisa mais do Modo do desenvolvedor).
+O Microsoft parece continuar a adicionar recursos ao Modo de desenvolvedor ou habilitar alguns desses recursos por padrão, uma vez que alcançam uma adoção mais generalizada e são considerados estáveis (por exemplo, com a Atualização de criadores, o ambiente do Ubuntu Bash Shell não precisa mais do Modo de desenvolvedor).
 
-E os links simbólicos? Com o Modo de desenvolvedor ATIVADO, não há necessidade de executar um prompt de comando com privilégios elevados para poder criar links simbólicos. Portanto, quando o Modo de desenvolvedor estiver ativado, qualquer usuário poderá criar links simbólicos.
+E as ligações simbólicas? Com o Modo de desenvolvedor ATIVADO, não há necessidade de executar um prompt de comando com privilégios elevados para poder criar symlinks. Portanto, quando o Modo de desenvolvedor estiver ativado, qualquer usuário poderá criar symlinks.
 
-> Depois de ativar o Modo de desenvolvedor, os usuários devem fazer logoff/logon para que as alterações tenham efeito.
+> Depois de ativar o Modo de desenvolvedor, os usuários devem fazer logoff/logon para que as alterações entrem em vigor.
 
-Agora você pode ver sem executar como um Administrador o comando funciona
+Agora você pode ver sem executar o como um administrador o comando funciona
 
-![Imagem do Prompt de Comando do Windows executada como um usuário normal com o Modo de Desenvolvedor ativado](./assets/git-symlinks/windows-mklink-devmode.png)
+![Imagem do Prompt de Comando do Windows executada como um usuário normal com o Modo de Desenvolvedor habilitado](./assets/git-symlinks/windows-mklink-devmode.png)
 
 #### Abordagem alternativa/programática
 
-Há uma política específica que pode permitir que certos usuários criem links simbólicos → [Criar links simbólicos (Windows 10) - Segurança do Windows | Documentação da Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
+Há uma política específica que pode permitir que certos usuários criem links simbólicos → [Criar links simbólicos (Windows 10) - segurança do Windows | Documentação do Microsoft](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links)
 
 PROs:
-- Isso pode ser aproveitado pelos clientes para permitir de forma programática a criação de links simbólicos para todos os desenvolvedores em sua organização (ou seja, o Ative Diretory) sem precisar habilitar o Modo de desenvolvedor manualmente em cada dispositivo.
-- Além disso, essa política deve estar disponível em versões anteriores do MS Windows que não oferecem o Modo de desenvolvedor.
+- Isso pode ser aproveitado pelos clientes para permitir programaticamente a criação de links simbólicos para todos os desenvolvedores em sua organização (ou seja, o Ative Diretory) sem precisar habilitar o Modo de desenvolvedor manualmente em cada dispositivo.
+- Além disso, essa política deve estar disponível em versões anteriores do MS Windows que não oferecem o Modo de Desenvolvedor.
 
-CONs:
-- Essa política parece não ter efeito sobre os usuários pertencentes ao grupo Administradores . Os administradores ainda precisariam executar o prompt de comando com privilégios elevados. Estranho.
+Ícones:
+- Esta política parece não ter efeito sobre os usuários pertencentes ao grupo Administradores. Os administradores ainda precisariam executar o prompt de comando com privilégios elevados. Estranho.
 
-> O logoff/logon do usuário será necessário para que as alterações na política local/de grupo tenham efeito.
+> O logoff/logon do usuário será necessário para que as alterações na diretiva local/de grupo tenham efeito.
 
-Executar `gpedit.msc`, adicione/altere usuários, conforme necessário. Os administradores estão lá por padrão
+Executar `gpedit.msc`, adicione/altere usuários conforme necessário. Administradores estão lá por padrão
 
-![Janela Editor de Política de Grupo mostrando permissão para ajustar](./assets/git-symlinks/windows-localpolicies-symlinks.png)
+![Janela do Editor de Diretiva de Grupo mostrando permissão para ajustar](./assets/git-symlinks/windows-localpolicies-symlinks.png)
 
-#### Ativar links simbólicos no GIT
+#### Habilitar links simbólicos no GIT
 
-O Git lida com links simbólicos de acordo com a opção core.symlinks
+O Git lida com symlinks de acordo com a opção core.symlinks
 
-Fonte: [Documentação do Git - git-config](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
+Fonte: [Git - Documentação de git-config](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coresymlinks)
 
-*Se core.symlinks for falso, os links simbólicos serão verificados como pequenos arquivos simples que contêm o texto do link. `git-update-index[1]` e `git-add[1]` não alterará o tipo registrado para arquivo normal. Útil em sistemas de arquivos como o FAT, que não suportam links simbólicos.
-O padrão é true, exceto `git-clone[1]` ou `git-init[1] will probe and set core.symlinks false if appropriate when the repository is created.` Na maioria dos casos, o Git presumirá que o Windows não é bom para links simbólicos e definirá isso como falso.*
+*Se core.symlinks for falso, os links simbólicos serão verificados como arquivos simples pequenos que contêm o texto do link. `git-update-index[1]` e `git-add[1]` não alterará o tipo gravado para arquivo regular. Útil em sistemas de arquivos como FAT, que não suportam links simbólicos.
+O padrão é true, exceto `git-clone[1]` ou `git-init[1] will probe and set core.symlinks false if appropriate when the repository is created.` Na maioria dos casos, o Git presumirá que o Windows não é bom para symlinks e definirá como false.*
 
-O comportamento do Git no Windows é bem explicado aqui: Links simbólicos ・ Git-for-windows/git Wiki ・ GitHub
+O comportamento do Git no Windows é bem explicado aqui: Links simbólicos · Wiki git para windows/git · GitHub
 
-> `Info`: As suposições listadas na documentação vinculada acima parecem estar corretas com uma possível configuração do Desenvolvedor AEM no Windows, mais notavelmente NTFS e o fato de que temos apenas links simbólicos de arquivo vs. links simbólicos de diretórios
+> `Info`: as premissas listadas na documentação vinculada acima parecem estar corretas com uma possível configuração do desenvolvedor do AEM no Windows, principalmente o NTFS e o fato de termos apenas symlinks de arquivos versus symlinks de diretórios
 
-Aqui estão as boas notícias, já que [Git para Windows versão 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) o instalador tem um [opção explícita para ativar o suporte a links simbólicos.](https://github.com/git-for-windows/git/issues/921)
+Eis a boa notícia, já que [Git para Windows versão 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) o instalador tem um [opção explícita para ativar o suporte a links simbólicos.](https://github.com/git-for-windows/git/issues/921)
 
-> `Warning`: A opção core.symlink pode ser fornecida no tempo de execução durante a clonagem do repositório, ou pode ser armazenada como uma configuração global.
+> `Warning`: a opção core.symlink pode ser fornecida no tempo de execução durante a clonagem do repositório, ou pode ser armazenada como uma configuração global.
 
-![Mostrando o instalador de GIT mostrando suporte para links simbólicos](./assets/git-symlinks/windows-git-install-symlink.png)
+![Mostrando o instalador do GIT mostrando o suporte para symlinks](./assets/git-symlinks/windows-git-install-symlink.png)
 
-O Git para Windows armazenará as preferências globais em `"C:\Program Files\Git\etc\gitconfig"` . Essas configurações podem não ser consideradas por outros aplicativos de clientes de desktop Git.
-Veja o que acontece, nem todos os desenvolvedores usarão o cliente nativo Git (ou seja, Git Cmd, Git Bash) e alguns dos aplicativos Git Desktop (por exemplo, GitHub Desktop, Atlassian Sourcetree) podem ter configurações/padrões diferentes para usar o Sistema ou um Git incorporado
+O Git para Windows armazenará preferências globais em `"C:\Program Files\Git\etc\gitconfig"` . Essas configurações podem não ser consideradas por outros aplicativos clientes Git.
+Este é o ponto positivo, nem todos os desenvolvedores usarão o cliente nativo Git (ou seja, Git Cmd, Git Bash) e alguns dos aplicativos do Git Desktop (por exemplo, GitHub Desktop, Atlassian Sourcetree) podem ter configurações/padrões diferentes para usar o Sistema ou um Git incorporado
 
 Aqui está uma amostra do que está dentro do `gitconfig` arquivo
 
@@ -214,11 +214,11 @@ Aqui está uma amostra do que está dentro do `gitconfig` arquivo
 
 #### Dicas da linha de comando Git
 
-Pode haver cenários em que você tenha que criar novos links simbólicos (por exemplo, adicionar um novo host ou um novo farm).
+Pode haver cenários em que seja necessário criar novos links simbólicos (por exemplo, adicionar um novo vhost ou um novo farm).
 
 Vimos na documentação acima que o Windows oferece um comando &quot;mklink&quot; para criar links simbólicos.
 
-Se você trabalhar em um ambiente Git Bash, poderá usar o comando Bash padrão `ln -s` mas terá que receber o prefixo de uma instrução especial como o exemplo aqui:
+Se você trabalhar em um ambiente Git Bash, poderá usar o comando Bash padrão `ln -s` mas terá que ser prefixado por uma instrução especial como o exemplo aqui:
 
 ```
 MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/available_vhosts/default.vhost
@@ -226,14 +226,14 @@ MSYS=winsymlinks:nativestrict ln -s test_vhost_symlink ../dispatcher/src/conf.d/
 
 #### Resumo
 
-Para ter o Git manipulando links simbólicos corretamente (pelo menos para o escopo da linha de base de configuração atual do AEM Dispatcher) em um sistema operacional Microsoft Windows, será necessário:
+Para que o Git manipule links simbólicos corretamente (pelo menos para o escopo da linha de base de configuração atual do Dispatcher do AEM) em um sistema operacional Microsoft Windows, você precisará:
 
-| Item | Versão/configuração mínima | Versão/Configuração Recomendada |
+| Item | Versão/configuração mínima | Versão/configuração recomendada |
 |------|---------------------------------|-------------------------------------|
-| Sistema Operacional | Windows Vista ou mais recente | Atualização do criador do Windows 10 ou mais recente |
+| Sistema Operacional | Windows Vista ou mais recente | Atualização do Windows 10 Creator ou mais recente |
 | Sistema de arquivos | NTFS | NTFS |
-| Capacidade de lidar com links simbólicos para o usuário do Windows | `"Create symbolic links"` política local/de grupo `under "Group Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment"` | Modo de Desenvolvedor do Windows 10 habilitado |
-| GIT | Versão 1.5.3 do cliente nativo | Cliente nativo versão 2.10.2 ou mais recente |
-| Configuração do Git | `--core.symlinks=true` opção ao fazer um clone git a partir da linha de comando | Configuração global do Git<br/>`[core]`<br/>    symlinks = true <br/> Caminho de configuração do cliente Git nativo: `C:\Program Files\Git\etc\gitconfig` <br/>Localização padrão para clientes do Git Desktop: `%HOMEPATH%\.gitconfig` |
+| Capacidade de lidar com symlinks para o usuário do Windows | `"Create symbolic links"` Diretiva de grupo/local `under "Group Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment"` | Modo de Desenvolvedor do Windows 10 habilitado |
+| GIT | Versão 1.5.3 do cliente nativo | Native Client versão 2.10.2 ou mais recente |
+| Configuração do Git | `--core.symlinks=true` opção ao fazer um clone do Git a partir da linha de comando | Configuração global do Git<br/>`[core]`<br/>    symlinks = true <br/> Caminho de configuração do cliente Git nativo: `C:\Program Files\Git\etc\gitconfig` <br/>Local padrão para clientes do Git Desktop: `%HOMEPATH%\.gitconfig` |
 
-> `Note:` Se você já tiver um repositório local, precisará clonar uma atualização da origem. Você pode clonar para um novo local e mesclar as alterações locais não confirmadas/não preparadas manualmente no repositório recém-clonado.
+> `Note:` Se você já tiver um repositório local, precisará clonar novamente a partir da origem. Você pode clonar para um novo local e mesclar manualmente suas alterações locais não confirmadas/não preparadas no repositório recém-clonado.

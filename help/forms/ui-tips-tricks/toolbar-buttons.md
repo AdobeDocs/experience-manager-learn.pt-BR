@@ -1,5 +1,5 @@
 ---
-title: Espaça os botões seguinte e anterior da barra de ferramentas
+title: Espaçar os botões anterior e seguinte da barra de ferramentas
 description: Espaçar os botões da barra de ferramentas
 feature: Adaptive Forms
 type: Tutorial
@@ -17,28 +17,28 @@ ht-degree: 0%
 
 ---
 
-# Espaço do botão da barra de ferramentas
+# Espaço no botão da barra de ferramentas
 
-Quando os botões Next e Prev são adicionados à barra de ferramentas no AEM Forms, por padrão, os botões são colocados próximos um do outro. Talvez você queira pressionar o botão Next para a extremidade direita na barra de ferramentas, mantendo o botão prev/back à esquerda
+Ao adicionar os botões Próximo e Anterior à barra de ferramentas no AEM Forms, os botões por padrão são colocados próximos um do outro. Você pode pressionar o botão Avançar para a extrema direita na barra de ferramentas enquanto mantém o botão Voltar/Anterior à esquerda
 
-![espaçamento entre barras de ferramentas](assets/toolbar-spacing.png)
+![espaçamento da barra de ferramentas](assets/toolbar-spacing.png)
 
 
 ## Estilo da barra de ferramentas
 
-O caso de uso acima pode ser facilmente realizado usando o editor de estilo. Depois de adicionar o botão Anterior/Próximo à barra de ferramentas, verifique se você selecionou a camada Estilo no menu de edição. Com o modo de estilo selecionado, selecione a barra de ferramentas para abrir sua folha de propriedades de estilo. Expanda a seção Dimension e Posição e verifique se você está vendo todas as propriedades. Defina as seguintes propriedades
-* Dimension e posição
+O caso de uso acima pode ser facilmente realizado usando o editor de estilos. Depois de adicionar o botão Anterior/Próximo à barra de ferramentas, verifique se você selecionou a camada Estilo no menu de edição. Com o modo de estilo selecionado, selecione a barra de ferramentas para abrir sua folha de propriedades de estilo. Expanda a seção Dimension e Posição e verifique se você está vendo todas as propriedades. Definir as seguintes propriedades
+* Dimension e Posição
    * Largura: 100%
-   * Posição: relation
+   * Posição: relativa
 
 Salve as alterações
 
-## Estilo do botão Avançar
+## Estilo do botão Próximo
 
-Selecione o botão Next e certifique-se de abrir a folha de propriedades de estilo do botão next (não o texto do próximo botão). Defina as seguintes propriedades
-* Dimension e posição
-   * posição: 1 px Superior absoluto Direito 1px
+Selecione o botão Avançar e abra a folha de propriedades de estilo do botão Avançar (não o texto do botão Avançar). Definir as seguintes propriedades
+* Dimension e Posição
+   * posição: 1 px superior absoluto à direita 1 px
 * Borda
-   * Raio da borda: 4px(Superior,Direita,Inferior,Esquerda)
+   * Raio da borda: 4px(superior,direita,inferior,esquerda)
 
 Salve as alterações

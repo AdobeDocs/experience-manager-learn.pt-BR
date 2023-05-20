@@ -1,6 +1,6 @@
 ---
-title: Visão geral do console Fragmentos de conteúdo
-description: Saiba mais sobre os recursos básicos e as funcionalidades do console de criação dos Fragmentos de conteúdo do AEM as a Cloud Service.
+title: Visão geral do Console de fragmentos de conteúdo
+description: Saiba mais sobre os recursos básicos e as funcionalidades do console de criação dos fragmentos de conteúdo do AEM as a Cloud Service.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Visão geral do console Fragmentos de conteúdo
+# Visão geral do Console de fragmentos de conteúdo
 
-Saiba mais sobre os recursos básicos e as funcionalidades do console de criação dos Fragmentos de conteúdo do AEM as a Cloud Service.
+Saiba mais sobre os recursos básicos e as funcionalidades do console de criação dos fragmentos de conteúdo do AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)

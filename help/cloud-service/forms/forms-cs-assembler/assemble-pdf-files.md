@@ -1,6 +1,6 @@
 ---
-title: Montar arquivos PDF usando a operação invocar DDX
-description: Faça uma solicitação de POST para chamar o ponto de extremidade DDX com os parâmetros necessários
+title: Combine arquivos de PDF usando a operação de invocar DDX
+description: Faça uma solicitação POST para invocar o endpoint do DDX com os parâmetros necessários
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -8,18 +8,19 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9980
-source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
+exl-id: 693dac88-84f3-4051-8e46-3105093711a3
+source-git-commit: e925b9fa02dc8d4695b85377c5f7f43fbd45ebc8
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
 
-# Efetuar a chamada de POST
+# Efetuar a chamada POST
 
 
-A próxima etapa é fazer uma chamada HTTP POST para o endpoint com os parâmetros necessários. Os arquivos DDX e pdf são fornecidos como arquivos de recurso. O ponto final tem autenticação baseada em token e passamos o Token de acesso no cabeçalho da solicitação.
-Ao usar o serviço Assembler, use uma linguagem baseada em XML chamada Document Description XML (DDX) para descrever a saída desejada. DDX é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. O DDX a seguir foi usado para unir os dois documentos pdf identificados nos elementos de origem do PDF.
+A próxima etapa é fazer uma chamada de POST HTTP para o endpoint com os parâmetros necessários. O DDX e os arquivos pdf são fornecidos como arquivos de recurso. O ponto de extremidade tem autenticação baseada em token; passamos o token de acesso no cabeçalho da solicitação.
+Ao usar o serviço Assembler, use uma linguagem baseada em XML chamada Document Description XML (DDX) para descrever a saída desejada. O DDX é uma linguagem de marcação declarativa cujos elementos representam os blocos de construção de documentos. O DDX a seguir foi usado para mesclar os dois documentos PDF identificados nos elementos de origem do PDF.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">

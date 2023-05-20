@@ -21,22 +21,22 @@ ht-degree: 2%
 
 Teste automatizado do Adaptive Forms usando o Calvin SDK
 
-O SDK do Calvin é uma API de utilitário para os desenvolvedores do Adaptive Forms testarem o Adaptive Forms. O SDK do Calvin é criado sobre [Estrutura de teste do Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR). O Calvin SDK está disponível a partir do AEM Forms 6.3.
+O SDK do Calvin é uma API de utilitários para desenvolvedores do Adaptive Forms testarem o Adaptive Forms. O SDK do Calvin é criado sobre o [Estrutura de teste de Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR). O SDK do Calvin está disponível com o AEM Forms 6.3 em diante.
 
 Neste tutorial, você criará o seguinte:
 
-* Conjunto de testes
-* O Test Suite conterá um ou mais casos de teste
-* Os casos de teste conterão uma ou mais ações
+* Conjunto de teste
+* O conjunto de testes conterá um ou mais casos de teste
+* Os Casos de Teste conterão uma ou mais ações
 
 ## Introdução {#getting-started}
 
-[Baixe e instale os ativos usando o Gerenciador de pacotes](assets/testingadaptiveformsusingcalvinsdk1.zip)O pacote contém exemplos de scripts e vários Adaptive Forms.Esses Adaptive Forms são criados com a versão AEM Forms 6.3. É recomendável criar novos formulários específicos para a sua versão do AEM Forms, se você estiver testando isso no AEM Forms 6.4 ou posterior. Os scripts de amostra demonstram várias APIs do SDK do Calvin disponíveis para testar o Adaptive Forms. As etapas gerais para testar AEM Adaptive Forms são:
+[Baixe e instale os ativos usando o Gerenciador de pacotes](assets/testingadaptiveformsusingcalvinsdk1.zip)O pacote contém exemplos de scripts e vários Forms adaptáveis. Esses Forms adaptáveis são criados usando a versão AEM Forms 6.3. É recomendável criar novos formulários específicos para sua versão do AEM Forms, se você estiver testando isso no AEM Forms 6.4 ou superior. Os exemplos de scripts demonstram várias APIs de SDK Calvin disponíveis para testar o Adaptive Forms. As etapas gerais para testar o AEM Adaptive Forms são:
 
 * Navegue até o formulário que precisa ser testado
-* Definir o valor do campo
+* Definir valor do campo
 * Enviar o formulário adaptável
-* Verificar mensagens de erro
+* Verificar se há mensagens de erro
 
 Os scripts de amostra no pacote demonstram todas as ações acima.
 Vamos explorar o código de `mortgageForm.js`
@@ -48,11 +48,11 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 })
 ```
 
-O código acima cria um novo Test Suite.
+O código acima cria um novo Conjunto de testes.
 
-* O nome do TestSuite neste caso é &#39; `Mortgage Form Test` &quot;.
-* Fornecido é o caminho absoluto em AEM para o arquivo js que contém o conjunto de teste.
-* O parâmetro de registro quando definido como &#39; `true` &#39;, disponibiliza o Test Suite na interface de usuário de teste.
+* Nesse caso, o nome do TestSuite é &#39; `Mortgage Form Test` &#39;.
+* O caminho absoluto no AEM para o arquivo js que contém o conjunto de testes.
+* O parâmetro de registro quando definido como &#39; `true` &#39;, disponibiliza o Conjunto de testes na interface de usuário de teste.
 
 ```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
@@ -65,26 +65,26 @@ O código acima cria um novo Test Suite.
 
 >[!NOTE]
 >
->Se você estiver testando esse recurso no AEM Forms 6.4 ou superior, crie um novo formulário adaptável e use-o para fazer o teste.Não é recomendado usar o formulário adaptável fornecido com o pacote.
+>Se você estiver testando esse recurso no AEM Forms 6.4 ou superior, crie um novo Formulário adaptável e use-o para fazer seus testes.Não é recomendado usar o Formulário adaptável fornecido com o pacote.
 
-Casos de teste podem ser adicionados ao conjunto de teste para serem executados em relação a um formulário adaptável.
+Os casos de teste podem ser adicionados ao conjunto de testes para serem executados em um formulário adaptável.
 
-* Para adicionar um caso de teste ao conjunto de teste, use a variável `addTestCase` método do objeto TestSuite.
-* O `addTestCase` O método usa um objeto TestCase como parâmetro.
-* Para criar o TestCase use a variável `hobs.TestCase(..)` método .
-* Observação: O primeiro parâmetro é o nome do caso de teste que aparecerá na interface do usuário.
+* Para adicionar um caso de teste ao conjunto de testes, use o `addTestCase` método do objeto TestSuite.
+* A variável `addTestCase` O método usa um objeto TestCase como um parâmetro.
+* Para criar um TestCase, use o `hobs.TestCase(..)` método.
+* Observação: o primeiro parâmetro é o nome do Caso de teste que aparecerá na interface do usuário.
 * Depois de criar um caso de teste, você pode adicionar ações ao caso de teste.
-* Ações incluindo `navigateTo`, `asserts.isTrue` pode ser adicionado como ações ao caso de teste.
+* Ações que incluem `navigateTo`, `asserts.isTrue` podem ser adicionadas como ações ao caso de teste.
 
 ## Execução dos testes automatizados {#running-the-automated-tests}
 
-[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Expanda o Test Suite e execute os testes. Se tudo for executado com êxito, você verá a seguinte saída.
+[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Expanda o Conjunto de testes e execute os testes. Se tudo for executado com êxito, você verá a seguinte saída.
 
 ![calvinsdk](assets/calvinimage.png)
 
 ## Experimente os conjuntos de teste de amostra {#try-out-the-sample-test-suites}
 
-Como parte do pacote de amostra, há três conjuntos de testes adicionais. Você pode experimentá-los incluindo os arquivos apropriados no arquivo js.txt da biblioteca do cliente, conforme mostrado abaixo:
+Como parte do pacote de amostra, há três conjuntos de teste adicionais. Você pode experimentá-los incluindo os arquivos apropriados no arquivo js.txt da biblioteca do cliente, como mostrado abaixo:
 
 ```javascript
 #base=.

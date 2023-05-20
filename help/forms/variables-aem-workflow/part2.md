@@ -1,38 +1,39 @@
 ---
-title: Variáveis no fluxo de trabalho AEM[Parte2]
-description: Uso de variáveis do tipo XML, JSON, ArrayList, Documento em um fluxo de trabalho AEM
+title: Variáveis no fluxo de trabalho do AEM[Part2]
+description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
 version: 6.5
-topic: Desenvolvimento
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Variáveis do tipo JSON AEM fluxo de trabalho
+# Variáveis do tipo JSON no fluxo de trabalho do AEM
 
-A partir do AEM Forms 6.5, agora podemos criar variáveis do tipo JSON AEM fluxo de trabalho. Normalmente, você criará variáveis do tipo JSON se estiver enviando um Adaptive Forms com base no esquema JSON para um Fluxo de trabalho AEM ou quiser armazenar os resultados de uma operação Invocar Modelo de dados de formulário. O vídeo a seguir mostra as etapas necessárias para criar e usar uma variável do tipo JSON em AEM fluxo de trabalho
+A partir do AEM Forms 6.5, agora podemos criar variáveis do tipo JSON no workflow AEM. Normalmente, você criará variáveis do tipo JSON se estiver enviando o Adaptive Forms com base no esquema JSON para um fluxo de trabalho de AEM ou se quiser armazenar os resultados de uma operação de Chamada do modelo de dados de formulário. O vídeo a seguir mostra as etapas necessárias para criar e usar uma variável do tipo JSON no fluxo de trabalho do AEM
 
 **Se estiver usando o AEM Forms 6.5.0**
 
-Ao criar uma variável do tipo JSON para capturar os dados enviados no modelo de fluxo de trabalho, não associe o esquema JSON à variável . Isso ocorre porque, ao enviar o Formulário adaptável baseado no esquema JSON, os dados enviados não são compatíveis com o esquema JSON. Os dados de reclamação do esquema JSON são colocados no elemento afData.afBoundData.data .
+Quando estiver criando uma variável do tipo JSON para capturar os dados enviados no modelo de fluxo de trabalho, não associe o esquema JSON à variável. Isso ocorre porque quando você envia o esquema JSON com base no Formulário adaptável, os dados enviados não são compatíveis com o esquema JSON. Os dados de reclamação do esquema JSON são colocados no elemento afData.afBoundData.data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
 
 
 **Se estiver usando o AEM Forms 6.5.1 e superior**
 
-Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de trabalho. Em seguida, você pode usar o navegador de esquema para mapear os elementos do esquema com suas variáveis de string/número no modelo de fluxo de trabalho
+Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de trabalho. Em seguida, você pode usar o navegador de esquemas para mapear os elementos do esquema com as variáveis de sequência/número no modelo de fluxo de trabalho
 
 >[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
 
-Para que os ativos funcionem em seu sistema, siga as seguintes etapas:
+Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
-* [Baixe e importe os ativos no AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
-* [Explore o ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modelo de fluxo de trabalho para entender as variáveis usadas no fluxo de trabalho
+* [Baixar e importar os ativos para AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
+* [Explorar o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) para entender as variáveis usadas no workflow
 * [Configurar o serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abra o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie o formulário

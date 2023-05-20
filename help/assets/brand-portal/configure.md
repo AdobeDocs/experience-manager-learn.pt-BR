@@ -1,6 +1,6 @@
 ---
 title: Etapas para configurar o AEM Assets Brand Portal
-description: Configurar o AEM Assets Brand Portal
+description: Configurar AEM Assets Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Configurar o AEM Assets Brand Portal
+# Configurar AEM Assets Brand Portal
 
 *Este vídeo aborda as etapas para configurar o AEM Assets Brand Portal.*
 

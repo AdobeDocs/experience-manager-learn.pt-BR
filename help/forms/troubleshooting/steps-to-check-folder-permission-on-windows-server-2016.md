@@ -1,6 +1,6 @@
 ---
-title: Etapas para verificar a Permissão de pasta no Windows Server 2016
-description: Verifique se o usuário PDFG tem a permissão necessária de pasta no Windows Server 2016
+title: Etapas para verificar a Permissão de Pasta no Windows Server 2016
+description: Verifique se o usuário PDFG tem a permissão de pasta necessária no Windows Server 2016
 type: Troubleshooting
 role: Admin
 level: Intermediate

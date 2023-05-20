@@ -1,6 +1,6 @@
 ---
-title: Filtros do Dispatcher para AEM GraphQL
-description: Saiba como configurar filtros do Dispatcher de publicação do AEM para uso com AEM GraphQL.
+title: Filtros do Dispatcher para o AEM GraphQL
+description: Saiba como configurar filtros do AEM Publish Dispatcher para uso com o AEM GraphQL.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -8,38 +8,38 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
+exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 2%
 
 ---
 
-
 # Filtros do Dispatcher
 
-O Adobe Experience Manager as a Cloud Service usa filtros de Dispatcher de publicação do AEM para garantir que apenas as solicitações que devem AEM alcance o AEM. Por padrão, todas as solicitações são negadas e os padrões para URLs permitidos devem ser explicitamente adicionados.
+O Adobe Experience Manager as a Cloud Service usa filtros do Dispatcher de publicação do AEM para garantir que somente as solicitações que devem chegar ao AEM cheguem ao AEM. Por padrão, todas as solicitações são negadas e os padrões para URLs permitidos devem ser adicionados explicitamente.
 
-| Tipo de cliente | [Aplicativo de página única (SPA)](../spa.md) | [Componente da Web/JS](../web-component.md) | [Móvel](../mobile.md) | [Servidor para servidor](../server-to-server.md) |
+| Tipo de cliente | [Aplicativo de página única (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Móvel](../mobile.md) | [Servidor para servidor](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
-| Exige configuração de filtros do Dispatcher | ✔ | ✔ | ✔ | ✔ |
+| Requer a configuração de filtros do Dispatcher | ✔ | ✔ | ✔ | ✔ |
 
 >[!TIP]
 >
-> As configurações a seguir são exemplos. Ajuste-os para alinhar-se às necessidades do seu projeto.
+> As configurações a seguir são exemplos. Ajuste-os para se alinharem aos requisitos do seu projeto.
 
 ## Configuração de filtro do Dispatcher
 
-A configuração de filtro Publicar Dispatcher do AEM define os padrões de URL permitidos para alcançar o AEM e deve incluir o prefixo de URL do ponto de extremidade de consulta persistente do AEM.
+A configuração de filtro do Dispatcher de publicação do AEM define os padrões de URL permitidos para alcançar o AEM e deve incluir o prefixo do URL para o endpoint da consulta persistente AEM.
 
-| O cliente se conecta a | Autor do AEM | AEM Publish | Visualização de AEM |
+| O cliente se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
-| Exige configuração de filtros do Dispatcher | ✘ | ✔ | ✔ |
+| Requer a configuração de filtros do Dispatcher | ✘ | ✔ | ✔ |
 
-Adicione um `allow` com o padrão de URL `/graphql/execute.json/*`e garantir a ID do arquivo (por exemplo, `/0600`, é exclusiva no arquivo farm de exemplo).
-Isso permite a solicitação HTTP GET para o endpoint de consulta persistente, como `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` para AEM Publish.
+Adicionar um `allow` regra com o padrão de URL `/graphql/execute.json/*`e verifique a ID do arquivo (por exemplo, `/0600`, é exclusivo no arquivo de farm de exemplo).
+Isso permite a solicitação HTTP GET para o endpoint da consulta persistente, como `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` para o AEM Publish.
 
-Se estiver usando Fragmentos de experiência na experiência sem cabeçalho do AEM, faça o mesmo para esses caminhos.
+Se estiver usando Fragmentos de experiência na sua experiência com AEM Headless, faça o mesmo para esses caminhos.
 
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 

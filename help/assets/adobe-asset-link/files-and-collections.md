@@ -1,6 +1,6 @@
 ---
 title: Arquivos e coleções
-description: Saiba como acessar arquivos e coleções da AEM Assets de maneira rápida e fácil no painel Link de ativos .
+description: Saiba como acessar arquivos e coleções do AEM Assets de forma rápida e fácil no painel Link de ativos.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 thumbnail: 33884.jpg
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Arquivos e coleções {#files-and-collections}
 
-Saiba como acessar arquivos e coleções da AEM Assets de maneira rápida e fácil no painel Link de ativos .
+Saiba como acessar arquivos e coleções do AEM Assets de forma rápida e fácil no painel Link de ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33884?quality=12&learn=on)

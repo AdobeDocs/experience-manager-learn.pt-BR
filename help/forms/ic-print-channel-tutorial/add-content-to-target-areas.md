@@ -1,7 +1,7 @@
 ---
-title: Adicionar conteúdo de texto e imagem ao documento de canal de impressão
+title: Adição de conteúdo de texto e imagem ao documento de canal de impressão
 seo-title: Adding text and image content to print channel document
-description: Esta é a parte 7 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp).
+description: Esta é a parte 7 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp).
 seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
 feature: Interactive Communication
@@ -24,20 +24,20 @@ ht-degree: 1%
 
 ---
 
-# Adicionar conteúdo de texto e imagem ao documento de canal de impressão
+# Adição de conteúdo de texto e imagem ao documento de canal de impressão
 
-Nessa parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp).
+Nesta parte, adicionaremos imagens e conteúdo de texto às áreas de destino definidas no layout (xdp).
 
-Agora que você criou seu primeiro fragmento de documento que manterá o nome e o endereço do recipient, precisaremos adicionar o fragmento do documento ao documento do canal de impressão.
+Agora que você criou o primeiro fragmento do documento que manterá o nome e o endereço do destinatário, precisaremos adicionar o fragmento do documento ao documento do canal de impressão.
 
-Você pode adicionar conteúdo de vários tipos, como Fragmentos de documento, Imagens, Fragmentos de layout, etc., ao documento de canal de impressão.
+É possível adicionar conteúdo de vários tipos, como Fragmentos de documento, Imagens, Fragmentos de layout, etc., ao documento do canal de impressão.
 
-Para adicionar conteúdo ao documento do canal de impressão, siga o vídeo abaixo.
+Para adicionar conteúdo ao documento de canal de impressão, siga o vídeo abaixo.
 
-O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de destino apropriadas no documento de canal de impressão.
+O vídeo o orienta pelas etapas envolvidas na adição de conteúdo às áreas de destino apropriadas no documento do canal de impressão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)
 
 ## Próximas etapas
 
-[Configurar gráfico de linha](./configuring-line-chart.md)
+[Configurar Gráfico de Linhas](./configuring-line-chart.md)

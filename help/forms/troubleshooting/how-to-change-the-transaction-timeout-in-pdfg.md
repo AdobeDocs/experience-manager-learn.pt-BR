@@ -1,6 +1,6 @@
 ---
 title: Como alterar o tempo limite de transação de um servidor de aplicativos no serviço PDFG
-description: Etapas para aumentar ou diminuir o tempo limite de transação de um servidor de aplicativos para Gerador de PDF
+description: Etapas para aumentar ou diminuir o timeout de transações de um servidor de aplicativos para o Gerador de PDF
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como alterar o tempo limite de transação de um servidor de aplicativos no serviço PDFG
 
-*Este vídeo descreve o processo de alteração do tempo limite de transação de um servidor de aplicativos no serviço Forms PDFG.*
+*Este vídeo descreve o processo de alteração do tempo limite da transação de um servidor de aplicativos no serviço PDFG do Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

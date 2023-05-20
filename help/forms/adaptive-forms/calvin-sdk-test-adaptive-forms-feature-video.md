@@ -1,6 +1,6 @@
 ---
 title: Noções básicas sobre o teste automatizado do Forms com o AEM Forms
-description: AEM 6.3 O Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para o Adaptive Forms usando o SDK do Calvin criado sobre a estrutura do hobbes.js
+description: AEM 6.3 Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para Forms adaptável usando o SDK Calvin criado sobre a estrutura hobbes.js
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,13 +17,13 @@ ht-degree: 7%
 
 # Noções básicas sobre o teste automatizado do Forms com o AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
 
-AEM 6.3 O Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para o Adaptive Forms usando o SDK do Calvin criado sobre a estrutura do hobbes.js.
+AEM 6.3 O Forms apresenta a capacidade de permitir que os usuários criem casos de teste no AEM para Forms adaptável usando o SDK Calvin criado sobre a estrutura hobbes.js.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
 
 >[!NOTE]
 >
->O recurso de teste automatizado adaptável Forms está disponível a partir do AEM 6.3
+>O recurso de teste automatizado Forms adaptável está disponível com AEM 6.3 em diante
 
 >[!NOTE]
 >

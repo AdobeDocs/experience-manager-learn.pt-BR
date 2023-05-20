@@ -1,5 +1,5 @@
 ---
-title: Preencha previamente o formulário adaptável com dados do armazenamento do Azure
+title: Preencher previamente o formulário adaptável com dados do armazenamento do Azure
 description: Saiba como usar o serviço de preenchimento prévio do AEM Forms para preencher formulários adaptáveis do Armazenamento de blobs do Azure.
 feature: Adaptive Forms
 type: Documentation
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Preencha previamente o formulário adaptável com dados do armazenamento do Azure
+# Preencher previamente o formulário adaptável com dados do armazenamento do Azure
 
 Saiba como usar o serviço de preenchimento prévio do AEM Forms para preencher formulários adaptáveis do Armazenamento de blobs do Azure.
 

@@ -1,6 +1,6 @@
 ---
-title: Como atualizar o tempo limite do CORBA no PDFG para atenuar problemas de reversão de transação?
-description: Configure o tempo limite do CORBA no Gerador de PDF da AEM Forms para resolver problemas relacionados à reversão de transação
+title: Como atualizar o tempo limite CORBA no PDFG para atenuar problemas de reversão de transação?
+description: Configure o tempo limite CORBA no AEM Forms PDF Generator para resolver problemas relacionados à reversão de transações
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como atualizar o tempo limite do CORBA no PDFG para atenuar problemas de reversão de transação
+# Como atualizar o tempo limite CORBA no PDFG para atenuar problemas de reversão de transação
 
-*Este vídeo descreve o processo de atualização do tempo limite do CORBA no Forms PDFG para atenuar problemas de reversão de transação.*
+*Este vídeo descreve o processo de atualização do tempo limite CORBA no Forms PDFG para atenuar problemas de reversão de transação.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

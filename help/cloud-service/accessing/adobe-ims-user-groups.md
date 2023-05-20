@@ -1,5 +1,5 @@
 ---
-title: Grupos de usuários e AEM do Adobe IMS
+title: Grupos de usuários do Adobe IMS e AEM
 description: Os grupos de usuários do Adobe IMS estabelecem conjuntos lógicos de usuários expostos ao AEM, nos quais eles podem ser aproveitados para definir permissões de ajuste para usuários do AEM.
 version: Cloud Service
 topic: Administration, Security

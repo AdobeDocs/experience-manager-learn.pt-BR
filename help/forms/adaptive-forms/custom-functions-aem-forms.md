@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # Funções personalizadas
 
-O AEM Forms 6.5 apresentou a capacidade de definir funções JavaScript que podem ser usadas na definição de regras comerciais complexas usando o editor de regras.
-O AEM Forms fornece várias funções personalizadas prontas para uso, mas você terá que definir suas próprias funções personalizadas e usá-las em vários formulários.
+O AEM Forms 6.5 introduziu a capacidade de definir funções JavaScript que podem ser usadas na definição de regras de negócios complexas usando o editor de regras.
+O AEM Forms fornece várias dessas funções personalizadas prontas para uso, mas você terá a necessidade de definir suas próprias funções personalizadas e usá-las em vários formulários.
 
 Para definir sua primeira função personalizada, siga as seguintes etapas:
 * [Faça logon no crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
-* Crie uma nova pasta em aplicativos chamados experience-league (esse nome de pasta pode ser o nome de sua escolha)
+* Crie uma nova pasta em aplicativos chamada experience-league (esse nome de pasta pode ser o nome de sua escolha)
 * Salve as alterações.
-* Em uma pasta da experience-league, crie um novo nó do tipo cq:ClientLibraryFolder chamado clientlibs.
-* Selecione a pasta clientlibs recém-criada e adicione as propriedades allowProxy e categories conforme mostrado na captura de tela e salve as alterações.
+* Na pasta experience-league, crie um novo nó do tipo cq:ClientLibraryFolder chamado clientlibs.
+* Selecione a pasta recém-criada clientlibs e adicione as propriedades allowProxy e categories como mostrado na captura de tela e salve as alterações.
 
 ![client-lib](assets/custom-functions.png)
-* Crie uma pasta chamada **js** nos termos do **clientlibs** pasta
-* Crie um arquivo chamado **functions.js** nos termos do **js** pasta
-* Crie um arquivo chamado **js.txt** nos termos do **clientlibs** pasta. Salve as alterações.
-* A estrutura da pasta deve ser parecida com a captura de tela abaixo.
+* Crie uma pasta chamada **js** no **clientlibs** pasta
+* Crie um arquivo chamado **functions.js** no **js** pasta
+* Crie um arquivo chamado **js.txt** no **clientlibs** pasta. Salve as alterações.
+* A estrutura de pastas deve parecer com a captura de tela abaixo.
 
 ![Editor de regras](assets/folder-structure.png)
 
@@ -71,12 +71,12 @@ function convertUTC(strUTCString)
 }
 ```
 
-Por favor [consulte jsdoc ](https://jsdoc.app/index.html)para obter mais detalhes sobre a anotação de funções javascript.
+Por favor [consulte jsdoc ](https://jsdoc.app/index.html)para obter mais detalhes sobre como anotar funções javascript.
 O código acima tem duas funções:
-**getCountyNamesList** - retorna uma matriz de string
-**conversionUTC** - Converte o carimbo de data/hora UTC em fuso horário local
+**getCountyNamesList** - retorna uma matriz de sequência
+**convertUTC** - Converte o carimbo de data e hora UTC no fuso horário local
 
-Abra o js.txt e cole o código a seguir e salve as alterações.
+Abra o js.txt, cole o código a seguir e salve as alterações.
 
 ```javascript
 #base=js
@@ -84,11 +84,11 @@ functions.js
 ```
 
 A linha #base=js especifica em qual diretório os arquivos JavaScript estão localizados.
-As linhas abaixo indicam o local do arquivo JavaScript em relação ao local base.
+As linhas abaixo indicam a localização do arquivo JavaScript em relação à localização base.
 
-Se tiver problemas para criar funções personalizadas, sinta-se à vontade para [baixar e instalar este pacote](assets/custom-functions.zip) na sua instância de AEM.
+Se tiver problemas para criar as funções personalizadas, fique à vontade para [baixar e instalar este pacote](assets/custom-functions.zip) no seu caso de AEM.
 
 ## Uso das funções personalizadas
 
-O vídeo a seguir o orienta pelas etapas envolvidas no uso de funções personalizadas no editor de regras de um formulário adaptável
+O vídeo a seguir mostra as etapas envolvidas no uso da função personalizada no editor de regras de um formulário adaptável
 >[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

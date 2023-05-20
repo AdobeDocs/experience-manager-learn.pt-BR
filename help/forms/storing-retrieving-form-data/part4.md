@@ -1,6 +1,6 @@
 ---
-title: Armazenando e Recuperando Dados de Formulário do Banco de Dados MySQL - Criar biblioteca de clientes
-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas no armazenamento e recuperação de dados do formulário
+title: Armazenamento e recuperação de dados de formulário do banco de dados MySQL - Criar biblioteca do cliente
+description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas no armazenamento e na recuperação de dados de formulário
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Criar biblioteca do cliente
 
-AEM Biblioteca de clientes gerencia todo o código JavaScript do lado do cliente. Para este artigo, criei um JavaScript simples para buscar os dados do Formulário adaptável usando a API do guia bridge. Depois que os dados do Adaptive Form são obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, então precisamos executar a operação de atualização, se não for uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento click da classe .savebutton.
+A Biblioteca cliente AEM gerencia todo o código JavaScript do lado do cliente. Neste artigo, criei um JavaScript simples para buscar os dados do Formulário adaptável usando a API do guide bridge. Depois que os dados do formulário adaptável forem obtidos, a chamada de POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, precisaremos executar a operação de atualização, caso contrário, será uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento de clique da classe .savebutton.
 
 >[!NOTE]
 >

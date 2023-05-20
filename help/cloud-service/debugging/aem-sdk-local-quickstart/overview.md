@@ -1,6 +1,6 @@
 ---
-title: Depuração AEM SDK
-description: AEM SDK é o ambiente de desenvolvimento principal usado pelos desenvolvedores e oferece suporte a várias maneiras de depurar aplicativos AEM e implantados.
+title: Depuração do SDK do AEM
+description: O SDK do AEM é o principal ambiente de desenvolvimento usado pelos desenvolvedores e oferece suporte a uma variedade de maneiras de depurar o AEM e aplicativos implantados.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -19,30 +19,30 @@ ht-degree: 0%
 
 ---
 
-# Depuração AEM SDK
+# Depuração do SDK do AEM
 
-AEM inicialização rápida local do SDK é o ambiente de desenvolvimento principal usado pelos desenvolvedores e oferece suporte a várias maneiras de depurar aplicativos AEM e implantados. Este guia do usuário aborda algumas das ferramentas de depuração e consoles mais comuns para depurar seu aplicativo na inicialização rápida local do SDK AEM.
+O quickstart local do SDK do AEM é o principal ambiente de desenvolvimento usado pelos desenvolvedores e oferece suporte a uma variedade de maneiras de depurar o AEM e aplicativos implantados. Este guia do usuário aborda algumas das ferramentas e consoles de depuração mais comuns para depurar seu aplicativo na inicialização rápida local do SDK do AEM.
 
 ## Logs
 
-Os registros atuam como linha de frente para depurar aplicativos de AEM, mas dependem do logon adequado no aplicativo de AEM implantado.
+Os registros atuam como linha de frente para depurar aplicativos de AEM, mas dependem do logon adequado no aplicativo AEM implantado.
 
-[Depuração AEM SDK usando logs](./logs.md)
+[Depuração do SDK do AEM usando logs](./logs.md)
 
 ## Depuração remota
 
-A depuração remota do código Java em execução no início rápido local AEM SDK permite o avanço da execução do código ativo no AEM do IDE.
+A depuração remota do código Java em execução no quickstart local do SDK do AEM permite a passagem da execução do código em tempo real no AEM a partir do IDE.
 
 [Depuração remota do SDK do AEM](./remote-debugging.md)
 
-## consoles da Web OSGi
+## Consoles da Web OSGi
 
-O início rápido local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introduções no tempo de execução AEM local, úteis para entender como o aplicativo é reconhecido pelo e funciona dentro do AEM.
+O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
 
 [Depuração do SDK do AEM usando o console da Web OSGi](./osgi-web-consoles.md)
 
 ## Outras ferramentas
 
-Várias outras ferramentas podem ajudar na depuração do aplicativo na inicialização rápida local do SDK do AEM.
+Uma variedade de outras ferramentas pode ajudar na depuração do aplicativo no quickstart local do SDK do AEM.
 
-[Outras ferramentas para depurar AEM SDK](./other-tools.md)
+[Outras ferramentas para depuração do SDK do AEM](./other-tools.md)

@@ -1,7 +1,7 @@
 ---
-title: AEM Forms com esquema JSON e dados[Parte2]
+title: AEM Forms com esquema e dados JSON[Part2]
 seo-title: AEM Forms with JSON Schema and Data[Part2]
-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -20,18 +20,18 @@ ht-degree: 0%
 
 ---
 
-# Armazenamento de dados enviados no banco de dados
+# Armazenamento de Dados Enviados no Banco de Dados
 
 
 >[!NOTE]
 >
->Recomenda-se usar o MySQL 8 como banco de dados, pois ele tem suporte para o tipo de dados JSON. Você também precisará instalar o driver apropriado para o banco de dados MySQL. Eu usei o driver disponível neste local https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12
+>É recomendável usar o MySQL 8 como banco de dados, pois ele tem suporte para tipos de dados JSON. Você também precisará instalar o driver apropriado para MySQL DB. Usei o driver disponível neste local https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12
 
-Para armazenar os dados enviados no banco de dados, gravaremos um servlet para extrair os dados vinculados, o nome e o armazenamento do formulário. O código completo para lidar com o envio do formulário e armazenar afBoundData no banco de dados é fornecido abaixo.
+Para armazenar os dados enviados no banco de dados, gravaremos um servlet para extrair os dados vinculados e o nome e o armazenamento do formulário. O código completo para lidar com o envio do formulário e armazenar o afBoundData no banco de dados é fornecido abaixo.
 
-Criamos um envio personalizado para lidar com o envio do formulário. Neste post.POST.jsp de envio personalizado, encaminhamos a solicitação para nosso servlet.
+Criamos um envio personalizado para lidar com o envio do formulário. Neste post.POST.jsp do envio personalizado, encaminhamos a solicitação para nosso servlet.
 
-Para saber mais sobre submissão personalizada, leia esta [artigo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Para saber mais sobre envio personalizado, leia este [artigo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 
@@ -143,14 +143,14 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 
 ![connectionpool](assets/connectionpooled.gif)
 
-Para que isso funcione seu sistema, siga as etapas a seguir
+Para fazer com que isso funcione em seu sistema, siga as etapas a seguir
 
 * [Baixe e descompacte o arquivo zip](assets/aemformswithjson.zip)
-* Crie AdaptiveForm com Esquema JSON. Você pode usar o schema JSON fornecido como parte dos ativos deste artigo. Certifique-se de enviar a ação do formulário estiver configurada adequadamente. A ação Enviar precisa ser configurada para o &quot;CustomSubmitHelpx&quot;.
-* Crie um esquema na instância do MySQL importando o arquivo schema.sql usando a ferramenta MySQL Workbench. O arquivo schema.sql também é fornecido a você como parte desses ativos tutoriais.
-* Configurar a fonte de dados agrupada da conexão Apache Sling no console da Web Felix
-* Certifique-se de nomear o nome da fonte de dados &quot;aemformswithjson&quot;. Este é o nome usado pelo pacote OSGi de amostra fornecido para você
-* Consulte a imagem acima para obter as propriedades. Isso pressupõe que você usará o MySQL como seu Banco de Dados.
-* Implante os pacotes OSGi fornecidos como parte dos ativos deste artigo.
-* Visualize o formulário e envie-o.
+* Criar formulário adaptável com esquema JSON. Você pode usar o esquema JSON fornecido como parte dos ativos deste artigo. Verifique se a ação de envio do formulário está configurada corretamente. A ação Enviar precisa ser configurada como &quot;CustomSubmitHelpx&quot;.
+* Crie um esquema na instância do MySQL importando o arquivo schema.sql usando a ferramenta MySQL Workbench. O arquivo schema.sql também é fornecido como parte deste tutorial de ativos.
+* Configure a fonte de dados agrupada da conexão Apache Sling no console da Web Felix
+* Certifique-se de nomear o nome da fonte de dados como &quot;aemformswithjson&quot;. Este é o nome usado pelo pacote OSGi de amostra fornecido a você
+* Consulte as propriedades na imagem acima. Isso pressupõe que você usará o MySQL como banco de dados.
+* Implante os pacotes OSGi fornecidos como parte deste artigo de ativos.
+* Pré-visualize o formulário e envie.
 * Os dados JSON são armazenados no banco de dados criado ao importar o arquivo &quot;schema.sql&quot;.

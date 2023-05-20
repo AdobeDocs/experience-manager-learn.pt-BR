@@ -9,7 +9,7 @@ team: TM
 source-git-commit: 1ff03f5031389db1a779d28beab9d592857a2ba6
 workflow-type: tm+mt
 source-wordcount: '74'
-ht-degree: 29%
+ht-degree: 24%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 29%
    + [Gerenciar](basics/managing.md)
    + [Usar](basics/using.md)
    + [Criação de conteúdo](basics/creating.md)
-   + [Colaborar](basics/collaborating.md)
+   + [Colaborando](basics/collaborating.md)
    + [Compartilhamento de link](basics/link-sharing.md)
 
 + Configuração{#configuring}
@@ -32,13 +32,13 @@ ht-degree: 29%
    + [Formulários de metadados](configuring/metadata-forms.md)
    + [Gerenciamento de permissões](configuring/permissions-management.md)
 
-+ [Integração da Creative Cloud](integrations/creative-cloud.md)
++ [integração de Creative Cloud](integrations/creative-cloud.md)
 
 + Integração do Adobe Workfront{#workfront}
    + [Configuração](./integrations/workfront/configure.md)
    + [Mapeamento de metadados](./integrations/workfront/map-metadata.md)
    + [Envio de documentos e vinculação de ativos](./integrations/workfront/link-send.md)
-   + [Histórico da versão](./integrations/workfront/versions.md)
+   + [Histórico de versão](./integrations/workfront/versions.md)
 
 + [Integração do Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=pt-BR)
 

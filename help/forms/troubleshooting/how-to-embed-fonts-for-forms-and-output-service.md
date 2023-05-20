@@ -1,6 +1,6 @@
 ---
-title: Como incorporar fontes para Forms e conversões de serviço de saída
-description: Etapas para incorporar fontes ao Forms e conversões de serviço de saída
+title: Como incorporar fontes para conversões do Forms e do serviço de saída
+description: Etapas para incorporar fontes para conversões do Forms e do serviço de saída
 type: Troubleshooting
 role: Admin
 level: Experienced
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como incorporar fontes para Forms e conversões de serviço de saída
+# Como incorporar fontes para conversões do Forms e do serviço de saída
 
-*Este vídeo aborda as etapas para incorporar fontes ao Forms e conversões de serviço de saída.*
+*Este vídeo aborda as etapas para incorporar Fontes para conversões do Forms e do serviço de saída.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)

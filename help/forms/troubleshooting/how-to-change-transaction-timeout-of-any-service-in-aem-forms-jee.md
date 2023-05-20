@@ -1,6 +1,6 @@
 ---
-title: Como alterar o tempo limite de transação de um serviço no AEM Forms JEE
-description: Etapas para aumentar ou diminuir o tempo limite de transação de um serviço no AEM Forms JEE
+title: Como alterar o tempo limite de uma transação de um serviço no AEM Forms JEE
+description: Etapas para aumentar ou diminuir o tempo limite da transação de um serviço no AEM Forms JEE
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Como alterar o tempo limite de transação de um serviço no AEM Forms JEE
+# Como alterar o tempo limite de uma transação de um serviço no AEM Forms JEE
 
 *Este vídeo aborda as etapas para alterar o tempo limite da transação de um serviço no AEM Forms JEE.*
 

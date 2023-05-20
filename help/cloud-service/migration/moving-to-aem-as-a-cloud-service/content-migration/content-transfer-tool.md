@@ -1,6 +1,6 @@
 ---
 title: Migração de conteúdo usando a ferramenta Transferência de conteúdo
-description: Saiba como a ferramenta Transferência de conteúdo ajuda a migrar o conteúdo para o AEM as a Cloud Service do AEM 6.
+description: Saiba como a Ferramenta de transferência de conteúdo ajuda a migrar o conteúdo para o AEM as a Cloud Service do AEM 6.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Ferramenta Transferência de conteúdo
 
-Saiba como a ferramenta Transferência de conteúdo ajuda a migrar o conteúdo para o AEM as a Cloud Service do AEM 6.3+.
+Saiba como a Ferramenta de transferência de conteúdo ajuda a migrar o conteúdo para o AEM as a Cloud Service do AEM 6.3+.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
@@ -26,30 +26,30 @@ Saiba como a ferramenta Transferência de conteúdo ajuda a migrar o conteúdo p
 
 ![Ciclo de vida da ferramenta Transferência de conteúdo](../assets/content-transfer-tool.png)
 
-A ferramenta Transferência de conteúdo é instalada no AEM 6.3+ e transfere conteúdo para AEM as a Cloud Service.
+A ferramenta Transferência de conteúdo é instalada no AEM 6.3+ e transfere conteúdo para o AEM as a Cloud Service.
 
 ## Atividades principais
 
-+ Baixe o [Ferramenta Transferência de conteúdo mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=&amp;p.offset=0&amp;p.limit=2).
-+ Transfira o conteúdo final do AEM Author 6.3+ para AEM serviço de Autor as a Cloud Service.
-   + Instale a ferramenta Transferência de conteúdo no AEM 6.3+ Autor que contém o conteúdo final a ser transferido.
++ Baixe o [Ferramenta de transferência de conteúdo mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
++ Transfira o conteúdo final do AEM Author 6.3+ para o serviço de autor do AEM as a Cloud Service.
+   + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Author contendo o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
-+ Transfira o conteúdo final do AEM Publish 6.3 para AEM serviço de publicação as a Cloud Service.
-   + Instale a ferramenta Transferência de conteúdo em AEM 6.3+ Publish contendo o conteúdo final a ser transferido.
++ Transfira o conteúdo final do AEM Publish 6.3+ para o serviço de publicação as a Cloud Service do AEM.
+   + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Publicar contendo o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
-+ Opcionalmente, conteúdo &quot;complementar&quot; em AEM as a Cloud Service, transferindo novo conteúdo desde a última transferência de conteúdo
++ Opcionalmente, &quot;complemente&quot; o conteúdo no AEM as a Cloud Service, transferindo novo conteúdo desde a última transferência de conteúdo
 
 ## Exercício prático
 
-Aplique o seu conhecimento experimentando o que aprendeu com este exercício prático.
+Aplique seu conhecimento experimentando o que você aprendeu com este exercício prático.
 
-Antes de experimentar o exercício prático, certifique-se de ter assistido e compreendido o vídeo acima e os seguintes materiais:
+Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
 + [Ferramentas de Modernização do AEM](../aem-modernization-tools.md)
 + [Integração](../onboarding.md)
 + [Cloud Manager](../cloud-manager.md)
 
-Além disso, certifique-se de que concluiu o exercício prático anterior:
+Além disso, verifique se você concluiu o exercício prático anterior:
 
 + [Exercício prático do Dispatcher](../dispatcher.md#hands-on-exercise)
 
@@ -58,18 +58,18 @@ Além disso, certifique-se de que concluiu o exercício prático anterior:
         <td style="width:150px">
             <a  rel="noreferrer"
                 target="_blank"
-                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content"><img alt="Repositório GitHub de exercício manual" src="../assets/github.png"/>
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content"><img alt="Repositório GitHub de exercícios práticos" src="../assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Manual com a ferramenta Transferência de conteúdo</div>
+            <div style="font-size:1.25rem;font-weight:400;">Práticas com a ferramenta Transferência de conteúdo</div>
             <p style="margin:1rem 0">
-                Explore como a ferramenta Transferência de conteúdo pode mover automaticamente o conteúdo de AEM 6 para AEM as a Cloud Service.
+                Explore como a ferramenta Transferência de conteúdo pode mover automaticamente o conteúdo do AEM 6 para o AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Experimente a ferramenta Transferência de conteúdo</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Experimentar a ferramenta Transferência de conteúdo</span>
             </a>
         </td>
     </tr>
@@ -77,6 +77,6 @@ Além disso, certifique-se de que concluiu o exercício prático anterior:
 
 ## Outros recursos
 
-+ [Download da ferramenta Transferência de conteúdo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=&amp;p.offset=0&amp;p.limit=2)
-+ [Vídeo de instruções do serviço de importação em massa](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
++ [Baixar ferramenta Transferência de conteúdo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
++ [Vídeo explicativo do Serviço de importação em massa](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
 

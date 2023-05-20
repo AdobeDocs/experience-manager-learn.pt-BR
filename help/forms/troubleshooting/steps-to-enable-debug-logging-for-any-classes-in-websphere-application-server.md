@@ -1,6 +1,6 @@
 ---
-title: Etapas para ativar o log de depuração para qualquer classe no servidor de aplicativos do WebSphere
-description: Configure o log de depuração para solucionar problemas relacionados ao WebSphere Application Server
+title: Etapas para habilitar o log de depuração para qualquer classe no WebSphere Application Server
+description: Configurar o log de depuração para solucionar problemas relacionados ao WebSphere Application Server
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para ativar o log de depuração para qualquer classe no servidor de aplicativos do Websphere
+# Etapas para ativar o log de depuração para qualquer classe no servidor de aplicativos Websphere
 
-*Este vídeo aborda as etapas para habilitar o log de depuração para qualquer classe no servidor de aplicativos Websphere.*
+*Este vídeo aborda as etapas para ativar o log de depuração para qualquer classe no servidor de aplicativos Websphere.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)

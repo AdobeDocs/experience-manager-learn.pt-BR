@@ -1,38 +1,38 @@
 ---
-title: Depuração das ferramentas do Dispatcher
-description: As Ferramentas do Dispatcher fornecem um ambiente do Apache Web Server contêiner que pode ser usado para simular AEM como um Dispatcher do Dispatcher do Cloud Services AEM Publish localmente. A depuração dos logs e do conteúdo de cache das Ferramentas do Dispatcher pode ser essencial para garantir que o aplicativo de AEM completo e as configurações de cache e segurança de suporte estejam corretas.
+title: Ferramentas de depuração do Dispatcher
+description: As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM como um Dispatcher do serviço de publicação do Cloud Services AEM localmente. A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 feature: Dispatcher
 kt: 5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
+# Ferramentas de depuração do Dispatcher
 
-# Depuração das ferramentas do Dispatcher
+As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM como um Dispatcher do serviço de publicação do Cloud Services AEM localmente.
 
-As Ferramentas do Dispatcher fornecem um ambiente do Apache Web Server contêiner que pode ser usado para simular AEM como um Dispatcher do Dispatcher do Cloud Services AEM Publish localmente.
-
-A depuração dos logs e do conteúdo de cache das Ferramentas do Dispatcher pode ser essencial para garantir que o aplicativo de AEM completo e as configurações de cache e segurança de suporte estejam corretas.
+A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 
 >[!NOTE]
 >
->Como as Ferramentas do Dispatcher são baseadas em contêiner, sempre que ele é reiniciado os registros anteriores e o conteúdo do cache são destruídos.
+>Como as Ferramentas do Dispatcher são baseadas em contêiner, cada vez que ele é reiniciado, os logs anteriores e o conteúdo do cache são destruídos.
 
 ## Logs de ferramentas do Dispatcher
 
-Os logs de Ferramentas do Dispatcher estão disponíveis por meio do comando `stdout` ou `bin/docker_run`, ou com mais detalhes, disponíveis no container Docker em `/etc/https/logs`.
+Os logs das Ferramentas do Dispatcher estão disponíveis por meio da `stdout` ou o `bin/docker_run` ou com mais detalhes, disponíveis no contêiner Docker em `/etc/https/logs`.
 
 Consulte [Logs do Dispatcher](./logs.md#dispatcher-logs) para obter instruções sobre como acessar diretamente os logs do contêiner Docker das Ferramentas do Dispatcher.
 
-## Cache de Ferramentas do Dispatcher
+## Cache de ferramentas do Dispatcher
 
-### Acessar logs no container Docker
+### Acesso a logs no container do Docker
 
 O cache do Dispatcher pode ser acessado diretamente no container do Docker em ` /mnt/var/www/html`.
 
@@ -52,9 +52,9 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copiando os logs do Docker para o sistema de arquivos local
+### Copiar os logs do Docker para o sistema de arquivos local
 
-Os registros do Dispatcher podem ser copiados do contêiner Docker em `/mnt/var/www/html` para o sistema de arquivos local para inspeção usando suas ferramentas favoritas. Observe que esta é uma cópia point-in-time e não fornece atualizações em tempo real para o cache.
+Os logs do Dispatcher podem ser copiados do contêiner do Docker em `/mnt/var/www/html` ao sistema de arquivos local para inspeção usando suas ferramentas favoritas. Observe que essa é uma cópia point-in-time e não fornece atualizações em tempo real para o cache.
 
 ```shell
 $ docker ps
@@ -66,4 +66,3 @@ CONTAINER ID        IMAGE                                       COMMAND         
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache
 ```
-

@@ -1,6 +1,6 @@
 ---
-title: Geração de URLs e códigos incorporados para ativos AEM Dynamic Media
-description: Etapas para gerar URL público e incorporar código a um ativo no Dynamic Media
+title: Gerar URLs e códigos integrados para ativos do AEM Dynamic Media
+description: Etapas para gerar um URL público e código incorporado para um ativo no Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Geração de URLs e códigos incorporados para ativos AEM Dynamic Media
+# Gerar URLs e códigos integrados para ativos do AEM Dynamic Media
 
-Este vídeo aborda as etapas para gerar URL público ou Incorporar código para um ativo.
+Este vídeo aborda as etapas para gerar um URL público ou código incorporado para um ativo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335364?quality=12&learn=on)

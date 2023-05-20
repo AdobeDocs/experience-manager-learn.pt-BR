@@ -1,6 +1,6 @@
 ---
-title: Etapas para executar e interpretar a saída da Ferramenta de disponibilidade do sistema AEM Forms PDFG
-description: Analise os resultados do utilitário de preparação PDF Generator.
+title: Etapas para executar e interpretar a saída da Ferramenta de disponibilidade do sistema PDFG do AEM Forms
+description: Interprete os resultados do utilitário de preparação do gerador de PDF.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para executar e interpretar a saída da Ferramenta de disponibilidade do sistema AEM Forms PDFG
+# Etapas para executar e interpretar a saída da Ferramenta de disponibilidade do sistema PDFG do AEM Forms
 
-*Este vídeo aborda o processo de execução e interpretação da saída da AEM Forms PDFG System Readiness Tool (SRT).*
+*Este vídeo aborda o processo de execução e interpretação da saída do AEM Forms PDFG System Readiness Tool (SRT).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)

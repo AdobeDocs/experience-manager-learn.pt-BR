@@ -1,6 +1,6 @@
 ---
-title: Criar um objeto de lead no banco de dados do Salesforce em um evento de clique de botão
-description: Criar como lead chamando a operação de publicação do Modelo de dados de formulário
+title: Criar um objeto de cliente potencial no banco de dados do Salesforce em um evento de clique do botão
+description: Criar como cliente potencial chamando a operação de pós-operação do Modelo de dados de formulário
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Testar a integração
 
-Crie um formulário adaptável com base no modelo de dados do formulário da força de vendas e teste a criação de um lead no Salesforce no evento click de um botão
+Crie um formulário adaptável com base no modelo de dados do formulário da equipe de vendas e teste a criação de um cliente potencial no Salesforce no evento de clique de um botão
 
 >[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Adicionar itens da pasta DAM ao componente de grupo de opções
-description: Adicionar itens ao componente de grupo de opções dinamicamente
+title: Adicionar itens da pasta DAM ao componente do grupo de opções
+description: Adicionar itens ao componente do grupo de opções dinamicamente
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ---
 
-# Adicionar itens dinamicamente ao componente de grupo de escolha
+# Adicionar itens dinamicamente ao componente do grupo de opções
 
-O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de escolha do Adaptive Forms, como CheckBox, botão de opção e lista de imagens. Neste artigo, observaremos o caso de uso do preenchimento de um componente de grupo de escolha com o conteúdo da pasta DAM. Na captura de tela, os 3 arquivos estão na pasta chamada boletim informativo.Toda vez que um novo boletim informativo é adicionado à pasta, o componente de grupo de escolha será atualizado para listar seu conteúdo automaticamente. O usuário pode selecionar um ou mais boletins informativos para download.
+O AEM Forms 6.5 introduziu a capacidade de adicionar itens dinamicamente a um componente de grupo de opções do Adaptive Forms, como CheckBox, Botão de opção e Lista de imagens. Neste artigo, analisaremos o caso de uso de preenchimento de um componente de grupo de escolha com o conteúdo da pasta DAM. Na captura de tela, os 3 arquivos estão na pasta chamada informativo. Sempre que um novo informativo for adicionado à pasta, o componente do grupo de opções será atualizado para listar seu conteúdo automaticamente. O usuário pode selecionar um ou mais informativos para baixar.
 
 ![Editor de regras](assets/newsletters-download.png)
 
@@ -84,7 +84,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 
 ## Criar biblioteca do cliente com a função JavaScript
 
-O servlet é chamado de uma função JavaScript. A função retorna um objeto de matriz que será usado para preencher o componente de grupo de opções
+O servlet é chamado de uma função JavaScript. A função retorna um objeto de matriz que será usado para preencher o componente do grupo de opções
 
 ```javascript
 /**
@@ -110,11 +110,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Criar formulário adaptável
 
-Crie um formulário adaptável e associe-o à biblioteca do cliente **listfolder assets**. Adicione um componente de caixa de seleção ao formulário. Use o editor de regras para preencher as opções da caixa de seleção, conforme mostrado na captura de tela
-![set-options](assets/set-options-newsletter.png)
+Criar um formulário adaptável e associá-lo à biblioteca do cliente **listfolderassets**. Adicione um componente de caixa de seleção ao formulário. Use o editor de regras para preencher as opções da caixa de seleção, conforme mostrado na captura de tela
+![set- options](assets/set-options-newsletter.png)
 
-Chamamos a função javascript chamada **getDAMFolderAssets** e transmitindo o caminho dos ativos da pasta DAM para a lista no formulário.
+Estamos chamando a função javascript chamada **getDAMFolderAssets** e transmitindo o caminho dos ativos da pasta DAM para a lista no formulário.
 
 ## Próximas etapas
 
-[Reunir ativos selecionados](./assemble-selected-newsletters.md)
+[Montar ativos selecionados](./assemble-selected-newsletters.md)

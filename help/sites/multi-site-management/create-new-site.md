@@ -1,6 +1,6 @@
 ---
 title: Criar um site de país
-description: Saiba como criar um site de país a partir de Cópias de idioma existentes usando o assistente Criar site .
+description: Saiba como criar um site de país a partir de Cópias de idioma existentes usando o assistente Criar site.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Criar um site de país {#create-country-site}
 
-Saiba como criar um site de país a partir de Cópias de idioma existentes usando o assistente Criar site .
+Saiba como criar um site de país a partir de Cópias de idioma existentes usando o assistente Criar site.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)

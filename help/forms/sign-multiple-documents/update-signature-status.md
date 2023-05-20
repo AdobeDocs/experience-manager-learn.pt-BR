@@ -1,6 +1,6 @@
 ---
-title: Atualizar o Status da Assinatura do Formulário no Banco de Dados
-description: Atualize o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho AEM
+title: Atualizar o status de assinatura do formulário no banco de dados
+description: Atualizar o status da assinatura do formulário assinado no banco de dados usando o fluxo de trabalho AEM
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6888
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 # Atualizar status da assinatura
 
-O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui a cerimônia de assinatura. Este é o fluxo do workflow
+O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui a cerimônia de assinatura. Este é o fluxo do fluxo de trabalho
 
-![fluxo de trabalho principal](assets/update-signature.PNG)
+![main-workflow](assets/update-signature.PNG)
 
-Atualizar Status da Assinatura é uma etapa de processo personalizada.
-O principal motivo para implementar a etapa de processo personalizado é estender um fluxo de trabalho AEM. Este é o código personalizado usado para atualizar o status da assinatura.
-O código nesta etapa do processo personalizado faz referência ao serviço SignMultipleForms .
+Atualizar Status da Assinatura é a etapa de processo personalizada.
+O principal motivo para implementar a etapa de processo personalizada é estender um fluxo de trabalho do AEM. Este é o código personalizado usado para atualizar o status da assinatura.
+O código nesta etapa do processo personalizado faz referência ao serviço SignMultipleForms.
 
 
 ```java
@@ -70,8 +70,8 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-O fluxo de trabalho de atualização do status da assinatura pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
+O workflow de atualização de status de assinatura pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
 
 ## Próximas etapas
 
-[Personalize a etapa de resumo para exibir o próximo formulário para assinatura](./customize-summary-component.md)
+[Personalizar etapa de resumo para exibir o próximo formulário para assinatura](./customize-summary-component.md)

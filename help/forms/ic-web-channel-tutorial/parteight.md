@@ -1,7 +1,7 @@
 ---
-title: Configuração do gráfico de linhas para o seu primeiro documento de comunicação interativa parte 8
+title: Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa parte 8
 seo-title: Configuring line chart for your first interactive communication document
-description: Esta é a parte 8 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
+description: Esta é a parte 8 do tutorial em várias etapas para a criação do seu primeiro documento de comunicações interativas. Nesta parte, adicionaremos um gráfico de linha ao painel de progresso da conta.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document. In this part, we will add a Line chart to the account progress panel.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
 feature: Interactive Communication
@@ -22,31 +22,31 @@ ht-degree: 2%
 
 ---
 
-# Configuração do gráfico de linhas para seu primeiro documento de comunicação interativa
+# Configuração do gráfico de linhas para o primeiro documento de comunicação interativa
 
-Nesta parte, adicionaremos um gráfico de Linha ao painel de progresso da conta.
+Nesta parte, adicionaremos um gráfico de linha ao painel de progresso da conta.
 
-Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
+Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e documentos.
 
-Abra a pasta 401KStatement .
+Abra a pasta 401KStatement.
 
-Abra a declaração 401KS no modo de edição.
+Abra a instrução 401KS no modo de edição.
 
-O AEM Forms 6.4 tornou bastante simples exibir dados usando vários tipos de gráficos. Usaremos um gráfico de Linha para exibir saldos por ano.
+O AEM Forms 6.4 tornou muito simples exibir dados usando vários tipos de gráficos. Usaremos um gráfico de linha para exibir saldos por ano.
 
-Toque em **Progresso da Conta** área de destino no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo inserir componente.
+Toque no **Progresso da conta** área de destino no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo inserir componente.
 
-Selecione Chart para inserir o componente de gráfico.
+Selecione Gráfico para inserir o componente de gráfico.
 
 Configure o componente de gráfico de acordo com as configurações na captura de tela abaixo e salve suas configurações clicando no ícone de marca de seleção azul.
 
-Selecione o elemento correto do modelo de dados de formulário no eixo x e y.
+Selecione o elemento de modelo de dados de formulário correto nos eixos x e y.
 
-**Configurações do gráfico de linha no AEM Forms 6.4**
+**Configurações do gráfico de linhas no AEM Forms 6.4**
 
 ![linechart64](assets/linechart.png)
 
-**Configurações do gráfico de linha no AEM Forms 6.5**
+**Configurações do gráfico de linhas no AEM Forms 6.5**
 
 ![linechart64](assets/linechart65.PNG)
 

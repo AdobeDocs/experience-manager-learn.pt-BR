@@ -1,6 +1,6 @@
 ---
 title: Criar servlet
-description: Criar servlet para manipular as solicitações do POST para salvar os dados do formulário
+description: Criar servlet para lidar com as solicitações POST para salvar os dados de formulário
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Criar servlet
 
-O próximo passo é criar um servlet que chame os métodos apropriados de nosso serviço OSGi personalizado. O servlet tem acesso aos dados de formulário adaptável, às informações de anexos de arquivo. O servlet retorna uma ID de aplicativo exclusiva que pode ser usada para recuperar o formulário adaptável parcialmente preenchido.
+A próxima etapa é criar um servlet que chame os métodos apropriados de nosso serviço OSGi personalizado. O servlet tem acesso aos dados do formulário adaptável, às informações de anexos de arquivo. O servlet retorna uma ID de aplicativo exclusiva que pode ser usada para recuperar o formulário adaptável parcialmente preenchido.
 
-Este servlet é chamado quando o usuário clica no botão Salvar e Sair no formulário adaptável
+Esse servlet é chamado quando o usuário clica no botão Salvar e sair no formulário adaptável
 
 ```java
 package com.techmarketing.core.servlets;

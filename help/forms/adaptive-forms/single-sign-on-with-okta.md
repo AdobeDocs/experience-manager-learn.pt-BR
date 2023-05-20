@@ -1,6 +1,6 @@
 ---
 title: Configuração do OKTA com AEM
-description: Entender várias configurações para usar o logon único usando o okta
+description: Entender várias definições de configuração para usar o logon único usando o okta
 feature: Adaptive Forms
 version: 6.5
 topic: Administration
@@ -17,88 +17,88 @@ ht-degree: 1%
 
 # Autenticar para o autor do AEM usando OKTA
 
-O primeiro passo é configurar seu aplicativo no portal OKTA. Depois que seu aplicativo for aprovado pelo administrador OKTA, você terá acesso ao certificado IdP e ao URL de logon único. Veja a seguir as configurações normalmente usadas no registro do novo aplicativo.
+O primeiro passo é configurar seu aplicativo no portal OKTA. Depois que o aplicativo for aprovado pelo administrador OKTA, você terá acesso ao certificado IdP e à URL de logon único. A seguir estão as configurações normalmente usadas para registrar o novo aplicativo.
 
-* **Nome do aplicativo:** Este é o nome do seu aplicativo. Dê um nome exclusivo ao aplicativo.
-* **Recipient SAML:** Após a autenticação de OKTA, esse é o URL que seria acessado em sua instância do AEM com a resposta SAML. O manipulador de autenticação SAML normalmente intercepta todos os URLs com / saml_login, mas seria preferível anexá-los depois da raiz do aplicativo.
-* **Público-alvo SAML**: Este é o URL de domínio do seu aplicativo. Não use o protocolo (http ou https) no URL do domínio.
+* **Nome do aplicativo:** Este é o nome do seu aplicativo. Atribua um nome exclusivo ao aplicativo.
+* **Destinatário SAML:** Após a autenticação do OKTA, este é o URL que seria acessado em sua instância AEM com a resposta SAML. O manipulador de autenticação SAML normalmente intercepta todos os URLs com / saml_login, mas seria preferível anexá-lo após a raiz do aplicativo.
+* **Público-alvo de SAML**: este é o URL do domínio do seu aplicativo. Não use o protocolo (http ou https) no URL do domínio.
 * **ID do nome SAML:** Selecione Email na lista suspensa.
-* **Ambiente**: Escolha o ambiente apropriado.
-* **Atributos**: Esses são os atributos que você obtém sobre o usuário na resposta do SAML. Especifique-as de acordo com suas necessidades.
+* **Ambiente**: escolha o ambiente apropriado.
+* **Atributos**: estes são os atributos que você obtém sobre o usuário na resposta SAML. Especifique-os de acordo com suas necessidades.
 
 
-![aplicação de okta](assets/okta-app-settings-blurred.PNG)
+![okta-application](assets/okta-app-settings-blurred.PNG)
 
 
-## Adicionar o certificado OKTA (IdP) ao AEM Trust Store
+## Adicionar o certificado OKTA (IdP) ao armazenamento de confiança AEM
 
-Como as asserções de SAML são criptografadas, precisamos adicionar o certificado IdP (OKTA) ao armazenamento confiável AEM para permitir a comunicação segura entre OKTA e AEM.
+Como as asserções SAML são criptografadas, precisamos adicionar o certificado IdP (OKTA) ao armazenamento de confiança do AEM para permitir a comunicação segura entre o OKTA e o AEM.
 [Inicializar armazenamento de confiança](http://localhost:4502/libs/granite/security/content/truststore.html), se ainda não tiver sido inicializado.
-Lembre-se da senha do repositório de confiança. Precisaremos usar essa senha posteriormente neste processo.
+Lembrar a senha do armazenamento de confiança. Precisaremos usar essa senha posteriormente neste processo.
 
-* Navegar para [Armazenamento de Confiança Global](http://localhost:4502/libs/granite/security/content/truststore.html).
+* Navegue até [Armazenamento global de confiança](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Clique em &quot;Adicionar certificado do arquivo CER&quot;. Adicione o certificado IdP fornecido pelo OKTA e clique em enviar.
 
    >[!NOTE]
    >
    >Não mapeie o certificado para nenhum usuário
 
-Ao adicionar o certificado ao armazenamento confiável, você deve obter o alias do certificado, conforme mostrado na captura de tela abaixo. O nome do alias pode ser diferente no seu caso.
+Ao adicionar o certificado ao armazenamento confiável, você deve obter o alias do certificado conforme mostrado na captura de tela abaixo. O nome do alias pode ser diferente no seu caso.
 
-![Alias do certificado](assets/cert-alias.PNG)
+![Alias de certificado](assets/cert-alias.PNG)
 
-**Anote o alias do certificado. É necessário fazer isso nas etapas posteriores.**
+**Anote o alias do certificado. Você precisará disso nas etapas posteriores.**
 
-### Configurar o manipulador de autenticação SAML
+### Configurar manipulador de autenticação SAML
 
-Navegar para [configMgr](http://localhost:4502/system/console/configMgr).
-Pesquise e abra &quot;Manipulador de autenticação do Adobe Granite SAML 2.0&quot;.
-Forneça as seguintes propriedades conforme especificado abaixo As seguintes são as propriedades principais que precisam ser especificadas:
+Navegue até [configMgr](http://localhost:4502/system/console/configMgr).
+Pesquise e abra &quot;Manipulador de autenticação Adobe Granite SAML 2.0&quot;.
+Forneça as seguintes propriedades conforme especificado abaixo As propriedades principais que precisam ser especificadas são as seguintes:
 
-* **caminho** - Este é o caminho onde o manipulador de autenticação é acionado
-* **Url IdP**: Este é o seu URL IdP fornecido pelo OKTA
-* **Alias de certificado IDP**: é o alias que você obteve ao adicionar o certificado IdP ao AEM armazenamento confiável
-* **Id Da Entidade Do Provedor De Serviços**: Este é o nome do seu servidor AEM
-* **Senha do repositório de chaves**: esta é a senha do repositório de confiança que você usou
-* **Redirecionamento padrão**: este é o URL para o qual redirecionar na autenticação bem-sucedida
+* **caminho** - Esse é o caminho em que o manipulador de autenticação é acionado
+* **URL do IdP**: Este é o URL do seu IdP fornecido pelo OKTA
+* **Alias do certificado IDP**:Este é o alias que você recebeu quando adicionou o certificado IdP ao AEM trust store
+* **ID da entidade do provedor de serviços**:Este é o nome do seu Servidor AEM
+* **Senha do armazenamento de chaves**: esta é a senha do armazenamento de confiança que você usou
+* **Redirecionamento padrão**:Este é o URL para redirecionar na autenticação bem-sucedida
 * **Atributo UserID**:uid
 * **Usar criptografia**:false
 * **Criar automaticamente usuários do CRX**:true
 * **Adicionar a grupos**:true
-* **Grupos padrão**:oktausers(Este é o grupo ao qual os usuários são adicionados. Você pode fornecer qualquer grupo existente dentro do AEM)
-* **NamedIDPolicy**: Especifica restrições no identificador de nome a ser usado para representar o assunto solicitado. Copie e cole a seguinte sequência de caracteres realçada **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**
-* **Atributos sincronizados** - Esses são os atributos que estão sendo armazenados a partir da asserção SAML em AEM perfil
+* **Grupos padrão**:oktausers(Este é o grupo ao qual os usuários são adicionados. Você pode fornecer qualquer grupo existente dentro de AEM)
+* **NamedIDPolicy**: especifica restrições no identificador de nome a ser usado para representar o assunto solicitado. Copie e cole a seguinte cadeia de caracteres destacada **urn:oasis:nomes:tc:SAML:2.0:nameidformat:emailAddress**
+* **Atributos Sincronizados** - Esses são os atributos que estão sendo armazenados da asserção SAML no perfil AEM
 
-![manipulador de autenticação de saml](assets/saml-authentication-settings-blurred.PNG)
+![saml-authentication-handler](assets/saml-authentication-settings-blurred.PNG)
 
-### Configurar o filtro de referência do Apache Sling
+### Configurar o filtro referenciador do Apache Sling
 
-Navegar para [configMgr](http://localhost:4502/system/console/configMgr).
-Pesquise e abra &quot;Filtro de referenciador do Apache Sling&quot;.Defina as seguintes propriedades conforme especificado abaixo:
+Navegue até [configMgr](http://localhost:4502/system/console/configMgr).
+Pesquise e abra &quot;Filtro referenciador do Apache Sling&quot;. Defina as seguintes propriedades conforme especificado abaixo:
 
-* **Permitir vazio**: false
-* **Permitir hosts**: Nome do host do IdP (é diferente no seu caso)
-* **Permitir Host Regexp**: Nome do host do IdP (É diferente no seu caso) Captura de tela Propriedades do Referenciador de Filtro do Referenciador do Sling
+* **Permitir vazio**: falso
+* **Permitir hosts**: nome de host do IdP (no seu caso, é diferente)
+* **Permitir host de expressão regular**: nome de host do IdP (diferente no seu caso) Captura de tela das propriedades do referenciador de filtro do Sling
 
 ![referrer-filter](assets/okta-referrer.png)
 
-#### Configurar o registro DEBUG para a integração OKTA
+#### Configurar o log DEBUG para a integração OKTA
 
-Ao configurar a integração OKTA no AEM, pode ser útil consultar os registros DEBUG para AEM manipulador de Autenticação SAML. Para definir o nível de log como DEBUG, crie uma nova configuração do Sling Logger por meio do console da Web OSGi AEM.
+Ao configurar a integração OKTA no AEM, pode ser útil revisar os logs DEBUG para o manipulador de autenticação AEM SAML. Para definir o nível de log como DEBUG, crie uma nova configuração do Sling Logger por meio do console da Web AEM OSGi.
 
-Lembre-se de remover ou desativar esse logger no Stage e na Production para reduzir o ruído de log.
+Lembre-se de remover ou desativar esse agente de log no Palco e na Produção para reduzir o ruído de log.
 
-Ao configurar a integração OKTA no AEM, pode ser útil consultar os logs DEBUG para AEM manipulador de autenticação SAML. Para definir o nível de log como DEBUG, crie uma nova configuração do Sling Logger por meio do console da Web OSGi AEM.
-**Lembre-se de remover ou desativar esse logger no Stage e na Production para reduzir o ruído de log.**
-* Navegar para [configMgr](http://localhost:4502/system/console/configMgr)
+Ao configurar a integração OKTA no AEM, pode ser útil revisar os logs DEBUG para o manipulador de autenticação AEM SAML. Para definir o nível de log como DEBUG, crie uma nova configuração do Sling Logger por meio do console da Web AEM OSGi.
+**Lembre-se de remover ou desativar esse agente de log no Palco e na Produção para reduzir o ruído de log.**
+* Navegue até [configMgr](http://localhost:4502/system/console/configMgr)
 
-* Pesquise e abra &quot;Configuração do Apache Sling Logging Logger&quot;
-* Crie um logger com a seguinte configuração:
-   * **Nível de log**: Depurar
+* Pesquise e abra &quot;Configuração do logger de log do Apache Sling&quot;
+* Crie um agente de log com a seguinte configuração:
+   * **Nível de registro**: Depuração
    * **Arquivo de log**: logs/saml.log
    * **Logger**: com.adobe.granite.auth.saml
-* Clique em Salvar para salvar suas configurações
+* Clique em Salvar para salvar as configurações
 
-#### Testar sua configuração OKTA
+#### Testar a configuração OKTA
 
 Faça logoff da sua instância do AEM. Tente acessar o link. Você deve ver o SSO OKTA em ação.

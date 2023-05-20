@@ -1,6 +1,6 @@
 ---
 title: Armazenar dados do formulário adaptável no armazenamento do Azure
-description: Criar e configurar o Formulário Adaptável para armazenar dados no Armazenamento do Azure
+description: Criar e configurar o Formulário adaptável para armazenar dados no Armazenamento do Azure
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Criar Modelo de Dados de Formulário com backup do armazenamento do Azure
+# Criar modelo de dados de formulário com base no armazenamento do Azure
 
-Criar Modelo de Dados de Formulário de back-end do Armazenamento Azure Blob.
+Criar modelo de dados de formulário de back-end do Armazenamento Azure Blob.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)

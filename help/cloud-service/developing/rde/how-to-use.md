@@ -1,6 +1,6 @@
 ---
 title: Como usar o ambiente de desenvolvimento rápido
-description: Saiba como usar o Ambiente de desenvolvimento rápido para implantar código e conteúdo do computador local.
+description: Saiba como usar o Ambiente de desenvolvimento rápido para implantar código e conteúdo de seu computador local.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,31 +9,31 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-
 # Como usar o ambiente de desenvolvimento rápido
 
-Saiba mais **como usar** Ambiente de desenvolvimento rápido (RDE) em AEM as a Cloud Service. Implante código e conteúdo para ciclos de desenvolvimento mais rápidos do seu código quase final no RDE, do seu ambiente de desenvolvimento integrado (IDE) favorito.
+Saiba mais **como usar** Ambiente de desenvolvimento rápido (RDE) no AEM as a Cloud Service. Implante código e conteúdo para ciclos de desenvolvimento mais rápidos do seu código quase final no RDE, a partir do seu ambiente de desenvolvimento integrado (IDE) favorito.
 
-Usando [AEM Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) você aprenderá a implantar vários artefatos AEM no RDE executando o AEM-RDE `install` do seu IDE favorito.
+Usar [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) você aprende a implantar vários artefatos de AEM no RDE executando AEM-RDE `install` do seu IDE favorito.
 
-- Implantação do código AEM e do pacote de conteúdo (todos, ui.apps)
-- Implantação de pacote e arquivo de configuração do OSGi
+- Implantação do código e do pacote de conteúdo do AEM (all, ui.apps)
+- Implantação do pacote OSGi e do arquivo de configuração
 - O Apache e o Dispatcher configuram a implantação como um arquivo zip
-- Arquivos individuais, como HTL, `.content.xml` Implantação (XML da caixa de diálogo)
-- Revise outros comandos RDE como `status, reset and delete`
+- Arquivos individuais como HTL, `.content.xml` Implantação do (caixa de diálogo XML)
+- Revisar outros comandos RDE como `status, reset and delete`
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491?quality=12&learn=on)
 
 ## Pré-requisitos
 
-Clonar o [Sites WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) e abra-o no IDE favorito para implantar os artefatos de AEM no RDE.
+Clonar o [Sites da WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) projeto e abra-o em seu IDE favorito para implantar os artefatos de AEM no RDE.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -46,13 +46,13 @@ $ cd aem-guides-wknd/
 $ mvn clean install -PautoInstallSinglePackage
 ```
 
-## Implantar artefatos AEM usando o plug-in AEM-RDE
+## Implantar artefatos de AEM usando o plug-in AEM-RDE
 
 Usar o `aem:rde:install` , vamos implantar vários artefatos AEM.
 
 ### Implantar `all` e `dispatcher` pacotes
 
-Um ponto de partida comum é implantar primeiro a variável `all` e `dispatcher` pacotes executando os seguintes comandos.
+Um ponto de partida comum é primeiro implantar o `all` e `dispatcher` pacotes executando os comandos a seguir.
 
 ```shell
 # Install the 'all' package
@@ -62,14 +62,14 @@ $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
 $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
 ```
 
-Após implantações bem-sucedidas, verifique o site WKND nos serviços de autor e publicação. Você deve ser capaz de adicionar e editar o conteúdo nas páginas do site da WKND e publicá-lo.
+Após implantações bem-sucedidas, verifique o site do WKND nos serviços de criação e publicação. Você deve ser capaz de adicionar, editar e publicar o conteúdo nas páginas do site WKND.
 
 ### Aprimorar e implantar um componente
 
 Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
 
-1. Abra o XML da caixa de diálogo (`.content.xml`) arquivo de `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` pasta
-1. Adicione o `Description` campo de texto após o `Text` campo de diálogo
+1. Abrir o XML da caixa de diálogo (`.content.xml`) arquivo de `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` pasta
+1. Adicione o `Description` campo de texto após o existente `Text` campo de diálogo
 
    ```xml
    ...
@@ -82,7 +82,7 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
    ```
 
 1. Abra o `helloworld.html` arquivo de `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` pasta
-1. Renderize o `Description` após a `<div>` do `Text` propriedade.
+1. Renderize o `Description` após a propriedade existente `<div>` elemento do `Text` propriedade.
 
    ```html
    ...
@@ -93,9 +93,9 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
    ...
    ```
 
-1. Verifique as alterações no AEM-SDK local executando a build maven ou sincronizando arquivos individuais.
+1. Verifique as alterações no AEM-SDK local executando a compilação maven ou sincronizando arquivos individuais.
 
-1. Implantar as alterações no RDE via `ui.apps` ou implantando os arquivos individuais Dialog e HTL.
+1. Implante as alterações no RDE via `ui.apps` pacote ou implantando a caixa de diálogo individual e os arquivos HTL.
 
    ```shell
    # Using 'ui.apps' package
@@ -116,17 +116,17 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
 
 ### Revise o `install` opções de comando
 
-No exemplo de comando de implantação de arquivo individual acima, a variável `-t` e `-p` os sinalizadores são usados para indicar o tipo e o destino do caminho JCR, respectivamente. Vamos revisar a `install` executando o seguinte comando.
+No exemplo de comando de implantação de arquivo individual acima, a variável `-t` e `-p` Os sinalizadores são usados para indicar o tipo e o destino do caminho JCR, respectivamente. Vamos analisar os disponíveis `install` executando o comando a seguir.
 
 ```shell
 $ aio aem:rde:install --help
 ```
 
-As bandeiras são autoexplicativas, as `-s` O sinalizador é útil para direcionar a implantação apenas para os serviços de criação ou publicação. Use o `-t` sinalizador ao implantar o **content-file ou content-xml** arquivos junto com a `-p` sinalizador para especificar o caminho JCR de destino no ambiente RDE AEM.
+As bandeiras são autoexplicativas, o `-s` O sinalizador é útil para direcionar a implantação apenas para os serviços de criação ou publicação. Use o `-t` sinalizador ao implantar o **content-file ou content-xml** arquivos junto com o `-p` sinalizador para especificar o caminho JCR de destino no ambiente AEM RDE.
 
 ### Implantar pacote OSGi
 
-Para saber como implantar o pacote OSGi, vamos aprimorar o `HelloWorldModel` Classe Java™ e implante-a no RDE.
+Para saber como implantar o pacote OSGi, vamos aprimorar o `HelloWorldModel` classe Java™ e implante-a no RDE.
 
 1. Abra o `HelloWorldModel.java` arquivo de `core/src/main/java/com/adobe/aem/guides/wknd/core/models` pasta
 1. Atualize o `init()` como abaixo:
@@ -140,7 +140,7 @@ Para saber como implantar o pacote OSGi, vamos aprimorar o `HelloWorldModel` Cla
    ...
    ```
 
-1. Verifique as alterações no AEM-SDK local ao implantar a variável `core` pacote via comando maven
+1. Verifique as alterações no AEM-SDK local implantando o `core` pacote via comando maven
 1. Implante as alterações no RDE executando o seguinte comando
 
    ```shell
@@ -151,7 +151,7 @@ Para saber como implantar o pacote OSGi, vamos aprimorar o `HelloWorldModel` Cla
 
 1. Verifique as alterações no RDE adicionando ou editando o `Hello World Component` em uma página do site WKND.
 
-### Implantar configuração do OSGi
+### Implantar configuração OSGi
 
 Você pode implantar os arquivos de configuração individuais ou concluir o pacote de configuração, por exemplo:
 
@@ -174,7 +174,7 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 Os arquivos de configuração do Apache ou Dispatcher **não pode ser implantado individualmente**, mas toda a estrutura de pastas do Dispatcher precisa ser implantada no formato de um arquivo ZIP.
 
-1. Faça a alteração desejada no arquivo de configuração do `dispatcher` para fins de demonstração, atualize o `dispatcher/src/conf.d/available_vhosts/wknd.vhost` para armazenar em cache o `html` arquivos somente por 60 segundos.
+1. Faça uma alteração desejada no arquivo de configuração do `dispatcher` para fins de demonstração, atualize o `dispatcher/src/conf.d/available_vhosts/wknd.vhost` para armazenar em cache o `html` arquivos somente por 60 segundos.
 
    ```
    ...
@@ -200,7 +200,7 @@ Os arquivos de configuração do Apache ou Dispatcher **não pode ser implantado
 
 ## Comandos adicionais do plug-in AEM RDE
 
-Vamos analisar os comandos adicionais do plug-in AEM RDE para gerenciar e interagir com o RDE do computador local.
+Vamos rever os comandos adicionais do plug-in AEM RDE para gerenciar e interagir com o RDE na sua máquina local.
 
 ```shell
 $ aio aem:rde --help
@@ -218,7 +218,7 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-Usando os comandos acima, seu RDE pode ser gerenciado no IDE favorito para um ciclo de vida de desenvolvimento/implantação mais rápido.
+Usando os comandos acima, seu RDE pode ser gerenciado a partir de seu IDE favorito para um ciclo de vida de desenvolvimento/implantação mais rápido.
 
 ## Próxima etapa
 
@@ -229,6 +229,6 @@ Saiba mais sobre o [ciclo de vida de desenvolvimento/implantação usando RDE](.
 
 [Documentação de comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
 
-[Plug-in Adobe I/O Runtime CLI para interações com AEM ambientes de desenvolvimento rápido](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in da CLI da Adobe I/O Runtime para interações com ambientes de desenvolvimento AEM Rapid](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configuração do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[Configuração de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)

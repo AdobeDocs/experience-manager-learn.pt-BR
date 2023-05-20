@@ -1,6 +1,6 @@
 ---
 title: Como limpar registros de processo do banco de dados do Gerenciador de Jobs
-description: Configurar limpeza de processos de registros a partir do banco de dados do Gerenciador de Tarefas
+description: Configurar a limpeza de processos dos registros do banco de dados do Gerenciador de Jobs
 type: Troubleshooting
 role: Developer
 level: Experienced
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Como limpar registros do processo do Gerenciador de Tarefas
+# Como limpar registros de processo do Gerenciador de trabalhos
 
-*Este vídeo aborda as etapas para limpar registros do processo do Gerenciador de trabalhos.*
+*Este vídeo aborda as etapas para limpar registros de processo do Gerenciador de processos.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Introdução
 
-Criar configuração OSGi personalizada para capturar as credenciais da conta da nuvem de documentos
+Criar configuração OSGi personalizada para capturar as credenciais da conta da nuvem do documento
 
 
 Para fazer uma configuração OSGi personalizada, precisamos primeiro criar uma interface cujos métodos públicos representarão os campos na configuração.

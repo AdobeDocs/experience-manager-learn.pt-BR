@@ -1,6 +1,6 @@
 ---
 title: Uso da ferramenta Transferência de conteúdo
-description: A ferramenta Transferência de conteúdo é a maneira recomendada para migrar o conteúdo de uma versão local ou hospedada pelo AMS do AEM para um ambiente as a Cloud Service AEM.
+description: A ferramenta Transferência de conteúdo é a maneira recomendada para migrar o conteúdo de uma versão local ou hospedada pelo AMS do AEM para um ambiente as a Cloud Service do AEM.
 version: Cloud Service
 doc-type: technical-video
 topics: migration
@@ -16,13 +16,13 @@ exl-id: 0cefc336-2a46-4a11-a734-ba1cb63c5cbe
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
 # Uso da ferramenta Transferência de conteúdo
 
-A ferramenta Transferência de conteúdo é a maneira recomendada para migrar o conteúdo de uma versão local ou hospedada pelo AMS do AEM para um ambiente as a Cloud Service AEM.
+A ferramenta Transferência de conteúdo é a maneira recomendada para migrar o conteúdo de uma versão local ou hospedada pelo AMS do AEM para um ambiente as a Cloud Service do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
 

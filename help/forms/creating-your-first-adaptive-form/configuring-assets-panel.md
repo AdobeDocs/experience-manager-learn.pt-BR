@@ -1,6 +1,6 @@
 ---
 title: Adicionar componentes à seção Ativos
-description: Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
+description: Configurar o layout do Accordion para o painel Ativos.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4212
@@ -18,15 +18,15 @@ ht-degree: 3%
 
 # Adicionar componentes ao painel Ativos {#adding-components-to-assets-section}
 
-Configure o layout de opção para o painel Ativos. O layout de opção oferece uma melhor experiência do usuário final para adicionar seções repetíveis.
+Configurar o layout do Accordion para o painel Ativos.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
 
-**Configurar painel Ativos**
+**Painel Configurar ativos**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 
-**Definir título de resumo**
+**Definir título do resumo**
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 ## Próximas etapas
 
-[Preencha o menu suspenso usando a função personalizada](./using-custom-functions-and-code-editor.md)
+[Preencher menu suspenso usando a função personalizada](./using-custom-functions-and-code-editor.md)

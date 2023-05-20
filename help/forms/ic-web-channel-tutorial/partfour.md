@@ -1,7 +1,7 @@
 ---
-title: Criando AEM Forms de Modelo de Documento de Canal da Web
+title: Criação do modelo de documento de canal da Web no AEM Forms
 seo-title: Creating Web Channel Document Template AEM Forms
-description: Esta é a parte 4 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos um modelo para o documento de canal da Web.
+description: Esta é a parte 4 do tutorial em várias etapas para a criação do seu primeiro documento de comunicações interativas. Nesta parte, criaremos um modelo para o documento de canal da Web.
 seo-description: This is part 4 of the multistep tutorial for creating your first interactive communications document. In this part, we will create a template for web channel document.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
 feature: Interactive Communication
@@ -22,18 +22,18 @@ ht-degree: 1%
 
 ---
 
-# Criando AEM Forms de Modelo de Documento de Canal da Web {#creating-web-channel-document-template-aem-forms}
+# Criação do modelo de documento de canal da Web no AEM Forms {#creating-web-channel-document-template-aem-forms}
 
 Nesta parte, criaremos um modelo para o documento de canal da Web.
-Criando modelo de documento de canal Web no AEM Forms 6.4
+Criação do modelo de documento de canal da Web no AEM Forms 6.4
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
-Criando modelo de documento de canal Web no AEM Forms 6.5
+Criação do modelo de documento de canal da Web no AEM Forms 6.5
 >[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
 
-O modelo terá áreas/espaços reservados de destino que terão vários tipos de fragmentos de documentos. Por exemplo, um modelo pode ter áreas de destino para logotipos e outra área de destino para conteúdo de texto.
+O modelo terá áreas/espaços reservados de destino que conterão vários tipos de fragmentos de documentos. Por exemplo, um modelo pode ter áreas de destino para logotipos e outra área de destino para conteúdo de texto.
 
-Depois que o modelo de documento do canal Web é criado, você pode criar documentos de Comunicação Interativa com base no modelo.
+Depois que o modelo de documento do canal da Web é criado, é possível criar documentos de Comunicação interativa com base no modelo.
 
 ## Próximas etapas
 

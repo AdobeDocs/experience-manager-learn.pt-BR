@@ -24,15 +24,15 @@ O console Componentes fornece aos desenvolvedores e administradores um local cen
 
 >[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
 
-O Console de componentes fornece a seguinte funcionalidade:
+O console Componentes oferece a seguinte funcionalidade:
 
-* Visão geral: lista de todos os componentes instalados disponíveis na instância de AEM atual
-* [!UICONTROL Propriedades]: exibe metadados como título, grupo e descrição de um componente
-* [!UICONTROL Políticas]: exibe as políticas existentes para um determinado componente e o modelo associado
-* [!UICONTROL Uso em tempo real]: exibe uma lista de páginas em que o componente está incluído
+* Visão geral: lista de todos os componentes instalados disponíveis na instância AEM atual
+* [!UICONTROL Propriedades]: exibe metadados como o título, grupo e descrição de um componente
+* [!UICONTROL Políticas]: exibe todas as políticas existentes para um determinado componente e o modelo associado
+* [!UICONTROL Uso em tempo real]: exibe uma lista de páginas nas quais o componente é incluído
 
-O Console de componentes pode ser encontrado em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Componentes]**.
-URL do console do componente (autor local do AEM): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+O console Componentes pode ser encontrado em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Componentes]**.
+URL do console Componentes (AEM Author local): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Recursos adicionais {#additional-resources}
 

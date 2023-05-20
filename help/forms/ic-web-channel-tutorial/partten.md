@@ -1,7 +1,7 @@
 ---
-title: Configuração do Painel do Outlook de Baixa
+title: Configurando o Painel do Outlook de Baixa
 seo-title: Configuring Retirement Outlook Panel
-description: Esta é a parte 10 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, vamos configurar o Painel de Redimensionamento do Outlook adicionando componentes de texto e gráfico.
+description: Esta é a parte 10 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, configuraremos o Painel do Outlook de aposentadoria adicionando componentes de texto e gráfico.
 seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
 feature: Interactive Communication
@@ -22,55 +22,55 @@ ht-degree: 1%
 
 ---
 
-# Configuração do Painel do Outlook de Baixa{#configuring-retirement-outlook-panel}
+# Configurando o Painel do Outlook de Baixa{#configuring-retirement-outlook-panel}
 
-* Esta é a parte 10 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, vamos configurar o Painel de Redimensionamento do Outlook adicionando componentes de texto e gráfico.
+* Esta é a parte 10 de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, configuraremos o Painel do Outlook de aposentadoria adicionando componentes de texto e gráfico.
 
-* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
+* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e documentos.
 
-* Abra a pasta 401KStatement .
+* Abra a pasta 401KStatement.
 
 * Abra o documento 401KStatement no modo de edição.
 
-**Configurar área de destino do Painel esquerdo**
+**Configurar área de destino do LeftPanel**
 
-* Toque na área de destino do Painel esquerdo no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
+* Toque na área de destino do Painel esquerdo no lado direito e clique no ícone &quot;+&quot; para exibir a caixa de diálogo Inserir componente.
 
-* Inserir componente de Texto.
+* Componente Inserir texto.
 
-* Toque com cuidado no componente de texto recém-adicionado para abrir a barra de ferramentas do componente
-
-* Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
-
-* Substitua o texto padrão por &quot;**Sua previsão de receita de redução&quot;**
-
-**Configurar área de destino do Painel direito**
-
-* Toque na área de destino do Painel direito no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
-
-* Inserir componente de Texto.
-
-* Toque com cuidado no componente de texto recém-adicionado para abrir a barra de ferramentas do componente.
+* Toque com cuidado no componente de texto recém-adicionado para mostrar a barra de ferramentas do componente
 
 * Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
 
-* Substitua o texto padrão por &quot;**Receita de Reforma Mensal Estimada&quot;**
+* Substituir o texto padrão por &quot;**Seu Outlook de Renda de Aposentadoria&quot;**
 
-## Adicionar Fragmento do Documento do Outlook de Renda de Baixa {#add-retirement-income-outlook-document-fragment}
+**Configurar área de destino do RightPanel**
 
-* Clique no ícone Ativos e aplique o filtro para exibir ativos do tipo &quot;Fragmentos do documento&quot;. Arraste e solte o fragmento de documento RetimentaçãoRendaOutlook na área de destino do Painel esquerdo.
+* Toque na área de destino do RightPanel no lado direito e clique no ícone &quot;+&quot; para abrir a caixa de diálogo Inserir componente.
 
-* Você pode consultar [para esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) ao adicionar fragmento de documento a áreas de conteúdo.
+* Componente Inserir texto.
 
-## Adição de Gráfico de Receita Mensal Estimada {#adding-estimated-monthly-income-chart}
+* Toque com cuidado no componente de texto recém-adicionado para mostrar a barra de ferramentas do componente.
 
-* Clique na área de destino do Painel direito no lado direito. Clique no ícone &quot;+&quot; para inserir o componente de gráfico. Usaremos um gráfico de coluna para exibir a receita mensal estimada. Toque com cuidado no componente de gráfico recém-inserido. Selecione o ícone &quot;Chave&quot; para abrir a folha de propriedades de configuração.Configure o gráfico com as seguintes propriedades, conforme mostrado na captura de tela abaixo.
+* Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
 
-**AEM Forms 6.4 - Configuração do Gráfico da Coluna de Renda Mensal Estimada**
+* Substituir o texto padrão por &quot;**Receita Mensal Estimada da Aposentadoria&quot;**
+
+## Adicionar Fragmento de Documento do Outlook de Renda de Baixa {#add-retirement-income-outlook-document-fragment}
+
+* Clique no ícone Ativos e aplique o filtro para exibir ativos do tipo &quot;Fragmentos de documento&quot;. Arraste e solte o fragmento do documento RetiradaReceitaOutlook na área de destino do Painel esquerdo.
+
+* Você pode consultar [nesta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) sobre a adição do fragmento do documento às áreas de conteúdo.
+
+## Adição do Gráfico de Receita Mensal Estimada {#adding-estimated-monthly-income-chart}
+
+* Clique na área de destino do RightPanel no lado direito. Clique no ícone &quot;+&quot; para inserir o componente de gráfico. Usaremos um gráfico de colunas para exibir a receita mensal estimada. Toque com cuidado no componente de gráfico recém-inserido. Selecione o ícone &quot;Chave inglesa&quot; para abrir a folha de propriedades de configuração.Configure o gráfico com as seguintes propriedades, conforme mostrado na captura de tela abaixo.
+
+**AEM Forms 6.4 - Configuração do Gráfico de Colunas de Receita Mensal Estimada**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - Configuração do Gráfico da Coluna de Renda Mensal Estimada**
+**AEM Forms 6.5 - Configuração do gráfico de colunas de receita mensal estimada**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 

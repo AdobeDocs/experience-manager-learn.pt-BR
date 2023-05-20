@@ -1,6 +1,6 @@
 ---
 title: Implantar a amostra
-description: Obter caso de uso em execução na sua instância local do AEM Forms
+description: Execute o caso de uso em sua instância local do AEM Forms
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,52 +19,52 @@ ht-degree: 1%
 
 # Implantar a amostra
 
-Para que este caso de uso funcione em seu sistema, siga as seguintes instruções:
+Para fazer com que esse caso de uso funcione em seu sistema, siga as seguintes instruções:
 
 >[!NOTE]
->Pressupõe-se que você esteja executando o AEM Forms na porta 4502.
+>Presume-se que você esteja executando o AEM Forms na porta 4502.
 
 
 ## Criar banco de dados
 
-Este exemplo usa o banco de dados MySQL para armazenar os dados do formulário adaptável. Será necessário criar a variável [esquema de banco de dados importando o arquivo de esquema](assets/data-base-schema.sql) no Workbench MySQL.
+Esta amostra usa o banco de dados MySQL para armazenar os dados de formulário adaptáveis. Será necessário criar o [esquema de banco de dados importando o arquivo de esquema](assets/data-base-schema.sql) no MySQL workbench.
 
 ## Criar fonte de dados
 
-Você precisa criar uma fonte de dados chamada **StoreAndRetrieveAfData**. O código no pacote OSGi usa esse nome de fonte de dados
+Você precisa criar uma fonte de dados chamada **ArmazenarExecutarDadosAf**. O código no pacote OSGi usa esse nome de fonte de dados
 
 ## Criar modelo de dados do formulário
 
-O Modelo de Dados de Formulário precisa ser criado com base nessa fonte de dados chamada **StoreAndRetrieveAfData**. Este modelo de dados de formulário é usado para buscar o número do telefone celular associado à ID do aplicativo. O modelo de dados de formulário pode ser [baixado aqui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+O modelo de dados de formulário precisa ser criado com base nessa fonte de dados chamada **ArmazenarExecutarDadosAf**. Este modelo de dados de formulário é usado para buscar o número do telefone celular associado à ID do aplicativo. O modelo de dados de formulário pode ser [baixado aqui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
-## Criar conta do desenvolvedor com o nó
+## Criar conta de desenvolvedor com nexmo
 
-Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para envio e verificação de códigos OTP. Anote a Chave da API e a Chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você em relação a esse serviço e estão incluídos com os ativos mencionados na etapa anterior.
+Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para enviar e verificar códigos OTP. Anote a chave da API e a chave secreta da API. A fonte de dados e o modelo de dados de formulário já foram criados para você com base nesse serviço e estão incluídos nos ativos mencionados na etapa anterior.
 
 ## Implante os seguintes pacotes OSGi
 
-Implante o pacote que tem a variável [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Baixe e descompacte o [developingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+Implante o pacote que tem o [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Baixe e descompacte o [developing withserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Implante o arquivo DevelopingWithServiceUser.jar usando o console da Web Felix.
 
 ## Implantar a biblioteca do cliente
 
-A amostra usa duas bibliotecas de clientes. Importar [bibliotecas de clientes](assets/client-libraries.zip) em AEM.
+O exemplo usa duas bibliotecas de clientes. Importar estes [bibliotecas de clientes](assets/client-libraries.zip) no AEM.
 
 ## Importar o modelo de formulário adaptável personalizado
 
-Os formulários de amostra usados nessa demonstração são baseados em um modelo personalizado. Importe o [modelo personalizado em AEM](assets/custom-template-with-page-component.zip)
+Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importe o [modelo personalizado no AEM](assets/custom-template-with-page-component.zip)
 
-## Importar formulários adaptáveis de amostra
+## Importar os exemplos de formulários adaptáveis
 
 Os 2 formulários que compõem essa amostra precisam ser importados para o AEM. Os formulários de amostra podem ser [baixado aqui](assets/sample-forms.zip)
 
-Abra o [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique os valores Chave da API e Segredo da API nos campos apropriados no formulário adaptável.
+Abra o [FormuláriodeMinhaConta](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique os valores da Chave de API e do Segredo de API nos campos apropriados no formulário adaptável.
 
 ## Testar a solução
 
-Visualize o [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
-Insira seu número de celular, incluindo o código do país , preencha os detalhes do usuário e adicione alguns anexos. Clique no botão &quot;Salvar e sair&quot; para salvar o formulário adaptável e seus anexos
+Visualize o [ArmazenarAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Insira seu número de celular, incluindo o código do país, preencha seus detalhes de usuário e adicione alguns anexos. Clique no botão &quot;Salvar e sair&quot; para salvar o formulário adaptável e seus anexos
 
 
 ## Demonstração do caso de uso

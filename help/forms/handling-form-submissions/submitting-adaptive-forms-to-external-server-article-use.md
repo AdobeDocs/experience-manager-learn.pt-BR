@@ -1,7 +1,7 @@
 ---
 title: Envio do formulário adaptável ao servidor externo
 seo-title: Submitting Adaptive Form to External Server
-description: Envio do formulário adaptável ao terminal REST em execução no servidor externo
+description: Envio do formulário adaptável para o endpoint REST em execução no servidor externo
 seo-description: Submitting Adaptive Form to REST endpoint running on external server
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
 feature: Adaptive Forms
@@ -25,19 +25,19 @@ ht-degree: 0%
 
 # Envio do formulário adaptável ao servidor externo {#submitting-adaptive-form-to-external-server}
 
-Use a ação Enviar para o terminal REST para postar os dados enviados em um URL REST. O URL pode ser de um servidor interno (o servidor no qual o formulário é renderizado) ou externo.
+Use a ação Enviar para endpoint REST para publicar os dados enviados em um URL REST. A URL pode ser de um servidor interno (o servidor no qual o formulário é renderizado) ou externo.
 
-Normalmente, os clientes desejam enviar os dados do formulário para um servidor externo para processamento adicional.
+Normalmente, os clientes desejariam enviar os dados do formulário a um servidor externo para processamento adicional.
 
-Para postar dados em um servidor interno, forneça um caminho do recurso. Os dados são postados no caminho do recurso. Por exemplo, &lt;/content restendpoint=&quot;&quot;> . Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.
+Para publicar dados em um servidor interno, forneça um caminho para o recurso. Os dados são publicados no caminho do recurso. Por exemplo, &lt;/content restendpoint=&quot;&quot;> . Para essas solicitações de publicação, as informações de autenticação de solicitação de envio são usadas.
 
-Para postar dados em um servidor externo, forneça um URL. O formato do URL é <http://host:port/path_to_rest_end_point>. Verifique se você configurou o caminho para lidar com a solicitação POST anonimamente.
+Para publicar dados em um servidor externo, forneça um URL. O formato do URL é <http://host:port/path_to_rest_end_point>. Certifique-se de ter configurado o caminho para lidar com a solicitação POST anonimamente.
 
-Para o propósito deste artigo, escrevi um arquivo war simples que pode ser implantado em sua instância tomcat. Supondo que seu tomcat esteja funcionando na porta 8080, o url do POST será
+Para o propósito deste artigo, escrevi um simples arquivo war que pode ser implantado em sua instância tomcat. Supondo que o tomcat esteja em execução na porta 8080, o URL do POST será
 
 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>
 
-ao configurar o Formulário adaptável para enviar para esse ponto de extremidade, os dados do formulário e os anexos, se houver, podem ser extraídos no servlet pelo seguinte código
+ao configurar o formulário adaptável para enviar para esse endpoint, os dados do formulário e os anexos, se houver, podem ser extraídos no servlet pelo seguinte código
 
 ```java
 System.out.println("form was submitted");
@@ -56,12 +56,12 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 ```
 
 ![envio de formulário](assets/formsubmission.gif)
-Para testar isso em seu servidor, faça o seguinte
+Para testar isso no servidor, faça o seguinte
 
-1. Instale o Tomcat se ainda não o tiver. [Instruções para instalar o tomcat estão disponíveis aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Baixe o [arquivo zip](assets/aemformsenablement.zip) associado a este artigo. Descompacte o arquivo para obter o arquivo war.
-1. Implante o arquivo war no servidor tomcat.
-1. Crie um formulário adaptável simples com o componente de anexo de arquivo e configure sua ação de envio, conforme mostrado na captura de tela acima. O URL de POST é <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se seu AEM e tomcat não estiverem em execução no host local, altere o URL de acordo.
-1. Para habilitar o envio de dados de formulário multiparte para o tomcat, adicione o seguinte atributo ao elemento de contexto do &lt;tomcatinstalldir>\conf\context.xml e reinicie o servidor Tomcat.
+1. Instale o Tomcat se você ainda não o tiver. [As instruções para instalar o tomcat estão disponíveis aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
+1. Baixe o [arquivo zip](assets/aemformsenablement.zip) associado a este artigo. Descompacte o arquivo para obter o arquivo WAR.
+1. Implante o arquivo WAR no servidor Tomcat.
+1. Crie um formulário adaptável simples com o componente de anexo de arquivo e configure a ação de envio como mostrado na captura de tela acima. O URL do POST é <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se o AEM e o tomcat não estiverem em execução no host local, altere o URL de acordo.
+1. Para habilitar o envio de dados de formulário multiparte para tomcat, adicione o seguinte atributo ao elemento de contexto do &lt;tomcatinstalldir>\conf\context.xml e reinicie o servidor Tomcat.
 1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
-1. Visualize o formulário adaptável, adicione um anexo e envie. Verifique se há mensagens na janela do console tomcat.
+1. Pré-visualize o formulário adaptável, adicione um anexo e envie. Verifique se há mensagens na janela do console do tomcat.

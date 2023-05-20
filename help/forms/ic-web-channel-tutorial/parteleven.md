@@ -1,7 +1,7 @@
 ---
-title: Configuração do Painel de Combinação de Investimentos
+title: Configuração do painel de combinação de investimentos
 seo-title: Configuring Investment Mix Panel
-description: Esta é a parte 11 do tutorial de várias etapas para criar seu primeiro documento de comunicações interativas.Nesta parte, adicionaremos gráficos de pizza para exibir o mix de investimento atual e de modelo.
+description: Esta é a parte 11 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas.Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de investimento atual e modelo.
 seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
 feature: Interactive Communication
@@ -22,42 +22,42 @@ ht-degree: 0%
 
 ---
 
-# Configuração do Painel de Combinação de Investimentos
+# Configuração do painel de combinação de investimentos
 
 Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de investimento atual e modelo.
 
-* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms &amp; Documents.
+* Faça logon no AEM Forms e navegue até Adobe Experience Manager > Forms > Forms e documentos.
 
-* Abra a pasta 401KStatement .
+* Abra a pasta 401KStatement.
 
-* Abra a declaração 401KS no modo de edição.
+* Abra a instrução 401KS no modo de edição.
 
-* Acrescentaremos dois gráficos de pizza para representar a combinação de investimento atual e modelo do titular da conta.
+* Vamos adicionar dois gráficos de pizza para representar a combinação de investimento atual e modelo do titular da conta.
 
-## Combinação de ativos atuais {#current-asset-mix}
+## Combinação de ativos atual {#current-asset-mix}
 
-* Toque no painel &quot;CurrentAssetMix&quot; no lado direito e selecione o ícone &quot;+&quot; e insira o componente de texto. Altere o texto padrão para &quot;Combinação de ativos atuais&quot;.
+* Toque no painel &quot;CurrentAssetMix&quot; no lado direito e selecione o ícone &quot;+&quot; e insira o componente de texto. Altere o texto padrão para &quot;Combinação de ativos atual&quot;.
 
-* Toque no painel &quot;CurrentAssetMix&quot; e selecione o ícone &quot;+&quot; e insira o componente de gráfico. Toque no componente de gráfico recém-inserido e clique no ícone &quot;chave inglesa&quot; para abrir a folha de propriedades de configuração do gráfico.
+* Toque no painel &quot;CurrentAssetMix&quot;, selecione o ícone &quot;+&quot; e insira o componente de gráfico. Toque no componente de gráfico recém-inserido e clique no ícone &quot;chave inglesa&quot; para abrir a folha de propriedades de configuração do gráfico.
 
-* Defina as propriedades conforme mostrado na imagem abaixo. Certifique-se de que o tipo do gráfico é Pizza.
+* Defina as propriedades conforme mostrado na imagem abaixo. Verifique se o tipo de gráfico é de Pizza.
 
-* Observe o Objeto de Modelo de Dados vinculado aos eixos X e Y. Você precisa selecionar o elemento raiz do modelo de dados de formulário e, em seguida, detalhar para selecionar o elemento apropriado.
+* Observe o objeto de modelo de dados vinculado aos eixos X e Y. É necessário selecionar o elemento raiz do modelo de dados de formulário e detalhar para selecionar o elemento apropriado.
 
 * ![currentassetmix](assets/currentassetmixchart.png)
 
-## Mistura de ativos de modelo {#model-asset-mix}
+## Combinação de ativos do modelo {#model-asset-mix}
 
-* Toque no painel &quot;RecommendedAssetMix&quot; no lado direito e selecione o ícone &quot;+&quot; e insira o componente de texto. Altere o texto padrão para &quot;Model Asset Mix&quot;.
+* Toque no painel &quot;RecommendedAssetMix&quot; no lado direito e selecione o ícone &quot;+&quot; e insira o componente de texto. Altere o texto padrão para &quot;Combinação de ativos do modelo&quot;.
 
 * Toque no painel &quot;RecommendedAssetMix&quot; e selecione o ícone &quot;+&quot; e insira o componente de gráfico. Toque no componente de gráfico recém-inserido e clique no ícone &quot;chave inglesa&quot; para abrir a folha de propriedades de configuração do gráfico.
 
-* Defina as propriedades conforme mostrado na imagem abaixo. Certifique-se de que o tipo do gráfico é Pizza.
+* Defina as propriedades conforme mostrado na imagem abaixo. Verifique se o tipo de gráfico é de Pizza.
 
-* Observe o Objeto de Modelo de Dados vinculado aos eixos X e Y. Você precisa selecionar o elemento raiz do modelo de dados de formulário e, em seguida, detalhar para selecionar o elemento apropriado.
+* Observe o objeto de modelo de dados vinculado aos eixos X e Y. É necessário selecionar o elemento raiz do modelo de dados de formulário e detalhar para selecionar o elemento apropriado.
 
 * ![assettype](assets/modelassettypechart.png)
 
 ## Próximas etapas
 
-[Preparar-se para entregar o documento de canal da Web](./parttwelve.md)
+[Preparar para entregar o documento de canal da Web](./parttwelve.md)

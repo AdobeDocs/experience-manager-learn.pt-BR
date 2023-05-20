@@ -1,6 +1,6 @@
 ---
-title: Qual é o SDK do AEM?
-description: Use e configure o SDK para AEM as a Cloud Service.
+title: O que é o SDK do AEM?
+description: Use e configure o SDK para o AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Introdução ao SDK as a Cloud Service AEM
+# Introdução ao SDK do AEM as a Cloud Service
 
-Usar e configurar o SDK para AEM as a Cloud Service.
+Utilização e configuração do SDK para AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330552?quality=12&learn=on)

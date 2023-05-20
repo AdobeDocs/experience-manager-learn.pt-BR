@@ -1,6 +1,6 @@
 ---
-title: Compreender o suporte de autenticação no AEM
-description: Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente de autorização) com suporte do AEM.
+title: Entender o suporte à autenticação no AEM
+description: Uma visualização consolidada nos mecanismos de autenticação (e, ocasionalmente, autorização) compatíveis com o AEM.
 version: 6.4, 6.5
 feature: User and Groups
 topics: authentication, security
@@ -17,15 +17,15 @@ thumbnail: KT-406.jpg
 source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
-# Compreender o suporte de autenticação no AEM 6.x
+# Entender o suporte à autenticação no AEM 6.x
 
-Uma visualização consolidada dos mecanismos de autenticação (e ocasionalmente de autorização) com suporte do AEM.
+Uma visualização consolidada nos mecanismos de autenticação (e, ocasionalmente, autorização) compatíveis com o AEM.
 
-*A tabela a seguir descreve como os usuários podem se autenticar em AEM.*
+*A tabela a seguir descreve como os usuários podem se autenticar no AEM.*
 
 <table>
     <tbody>
@@ -36,7 +36,7 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM como fornecedor de identidade canônica</strong></td>
+            <td><strong>AEM como o provedor de identidade canônica</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -54,13 +54,13 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
             <td>✔</td>
         </tr>
         <tr>
-            <td>Baseado em token (com/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
+            <td>Baseado em token (c/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token encapsulado</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Sistema não AEM como fornecedor de identidade canônica</strong></td>
+            <td><strong>Sistema não AEM como provedor de identidade canônica</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -77,7 +77,7 @@ Uma visualização consolidada dos mecanismos de autenticação (e ocasionalment
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=pt-BR" target="_blank">SAML 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

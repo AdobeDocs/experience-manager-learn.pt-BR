@@ -1,6 +1,6 @@
 ---
-title: Solução de problemas AEM as a Cloud Service
-description: Saiba como solucionar problemas e depurar o SDK do AEM, AEM as a Cloud Service e o processo de criação e implantação.
+title: Solução de problemas do AEM as a Cloud Service
+description: Saiba como solucionar problemas e depurar o SDK do AEM, o AEM as a Cloud Service e o processo de criação e implantação.
 version: Cloud Service
 topic: Migration, Upgrade
 role: Developer
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Solução de problemas AEM as a Cloud Service
+# Solução de problemas do AEM as a Cloud Service
 
-Saiba como solucionar problemas e depurar o SDK do AEM, AEM as a Cloud Service e o processo de criação e implantação.
+Saiba como solucionar problemas e depurar o SDK do AEM, o AEM as a Cloud Service e o processo de criação e implantação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)

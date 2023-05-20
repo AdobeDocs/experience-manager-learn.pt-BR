@@ -1,6 +1,6 @@
 ---
 title: Selecionar e baixar conteúdo da pasta DAM
-description: Tutorial para preencher o componente de caixa de seleção com conteúdo de pasta DAM e permitir que o usuário baixe o conteúdo selecionado.
+description: Tutorial para preencher o componente de caixa de seleção com o conteúdo da pasta do DAM e permitir que o usuário baixe o conteúdo selecionado.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Introdução
 
-Um caso de uso comum é listar o conteúdo da pasta DAM (arquivos pdf, documentos do word etc.) usando o componente de caixa de seleção e permitir que o usuário selecione os arquivos para download. Os arquivos selecionados serão montados em um arquivo que o usuário pode baixar.
+Um caso de uso comum é listar o conteúdo da pasta DAM (arquivos pdf, documentos do Word, etc.) usando o componente de caixa de seleção e permitir que o usuário selecione os arquivos para download. Os arquivos selecionados serão reunidos em um arquivo que o usuário pode baixar.
 
 ![caso de uso](assets/newsletters-download1.png)
 
@@ -25,7 +25,7 @@ Um caso de uso comum é listar o conteúdo da pasta DAM (arquivos pdf, documento
 
 Você precisará do seguinte:
 
-* Uma instância de trabalho do AEM com o pacote do complemento de formulário instalado
+* Uma instância de trabalho do AEM com o pacote complementar de formulário instalado
 
 * [Ambiente de desenvolvimento configurado de acordo com este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 

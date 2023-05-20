@@ -1,7 +1,7 @@
 ---
-title: Melhorias no Editor de regras no AEM Forms
+title: Melhorias no editor de regras no AEM Forms
 seo-title: Rule Editor Improvements in AEM Forms
-description: O editor de regras permite que os usuários adicionem lógica AEM Adaptive Forms. AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionar inteligência.
+description: O editor de regras permite que os usuários adicionem lógica ao AEM Adaptive Forms. O AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionarem inteligência.
 seo-description: The rule editor enables users to add logic to AEM Adaptive Forms. AEM 6.3 improves the rule editor in several ways making it easier and faster for both technical and non-technical users alike to add intelligence.
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
 feature: Adaptive Forms
@@ -23,19 +23,19 @@ ht-degree: 0%
 
 ---
 
-# Melhorias no Editor de regras no AEM Forms {#rule-editor-improvements-in-aem-forms}
+# Melhorias no editor de regras no AEM Forms {#rule-editor-improvements-in-aem-forms}
 
-O editor de regras permite que os usuários adicionem lógica AEM Adaptive Forms. AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionar inteligência.
+O editor de regras permite que os usuários adicionem lógica ao AEM Adaptive Forms. O AEM 6.3 melhora o editor de regras de várias maneiras, tornando mais fácil e rápido para usuários técnicos e não técnicos adicionarem inteligência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
 **Algumas das melhorias no Editor de regras incluem:**
 
-* Os componentes de formulário com vários valores exibem as opções de componente automaticamente
+* Os componentes de formulário de vários valores exibem as opções de componente automaticamente
 * A capacidade de especificar um serviço Web WSDL no editor visual
 * A capacidade de desativar regras
 * Aprimoramentos no editor de código, como:
 * Realce da sintaxe
    * Recuo automático
-   * Dicas e sugestões para objetos, funções e propriedades do formulário
-   * Conclusão automática de nomes de componentes e funções comuns do Javascript
+   * Dicas e sugestões para objetos, funções e propriedades do Formulário
+   * Preenchimento automático de nomes de componentes e funções JavaScript comuns

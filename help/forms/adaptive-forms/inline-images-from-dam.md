@@ -1,5 +1,5 @@
 ---
-title: Exibição de imagens DAM em linha no Adaptive Forms
+title: Exibição de imagens do DAM em linha no Adaptive Forms
 description: Exibir imagens DAM em linha no Adaptive Forms
 feature: Adaptive Forms
 topics: development
@@ -10,20 +10,21 @@ level: Experienced
 last-substantial-update: 2022-10-20T00:00:00Z
 thumbnail: inline-dam.jpg
 kt: kt-11307
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Exibir imagem do DAM no Adaptive Forms
+# Exibir imagem DAM no Forms adaptável
 
-Um caso de uso comum é exibir as imagens que residem no repositório crx em linha em um formulário adaptável.
+Um caso de uso comum é exibir as imagens que residem no repositório crx em linha em um Formulário adaptável.
 
 ## Adicionar imagem de espaço reservado
 
-A primeira etapa é anexar um espaço reservado div ao componente do painel. No código abaixo, o componente do painel é identificado por seu nome de classe CSS de upload de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Essa função é chamada no evento initialize do componente de anexo de arquivo.
+A primeira etapa é anexar um espaço reservado div ao componente do painel. No código abaixo, o componente do painel é identificado pelo seu nome de classe CSS de upload de foto. A função JavaScript faz parte da biblioteca do cliente associada aos formulários adaptáveis. Esta função é chamada no evento de inicialização do componente de anexo de arquivo.
 
 ```javascript
 /**
@@ -37,7 +38,7 @@ function addPlaceholderDiv(){
 
 ### Exibir imagem em linha
 
-Depois que o usuário seleciona a imagem, o campo oculto ImageName é preenchido com o nome da imagem selecionada. Esse nome de imagem é passado para a função damURLToFile que chama a função createFile para converter um URL em um Blob para FileReader.readAsDataURL().
+Depois que o usuário seleciona a imagem, o campo oculto ImageName é preenchido com o nome da imagem selecionada. Esse nome de imagem é então passado para a função damURLToFile que invoca a função createFile para converter um URL em um Blob para FileReader.readAsDataURL().
 
 ```javascript
 /**
@@ -82,8 +83,8 @@ async function createFile(imageName){
 
 ### Implantar no servidor
 
-* Baixe e instale o [biblioteca do cliente e imagens de amostra](assets/InlineDAMImage.zip) na instância de AEM usando o Gerenciador de Pacotes AEM.
-* Baixe e instale o [formulário de amostra](assets/FieldInspectionForm.zip) em sua instância do AEM usando AEM gerenciador de pacotes.
-* Aponte seu navegador para [FormulárioInspeçãoDeCampos](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
-* Selecione uma das correções
+* Baixe e instale o [biblioteca do cliente e imagens de amostra](assets/InlineDAMImage.zip) na sua instância do AEM usando o Gerenciador de pacotes do AEM.
+* Baixe e instale o [exemplo de formulário](assets/FieldInspectionForm.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
+* Aponte seu navegador para [FormulárioDeInspeçãoDeCampo](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Selecione uma das opções de fixação
 * Você deve ver a imagem exibida no formulário

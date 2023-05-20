@@ -1,6 +1,6 @@
 ---
-title: Criar um fluxo de trabalho AEM
-description: Crie um modelo de fluxo de trabalho para imitar seu processo de negócios.
+title: Criar um fluxo de trabalho do AEM
+description: Crie um modelo de fluxo de trabalho para mimetizar seu processo comercial.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Criar um fluxo de trabalho AEM
+# Criar um fluxo de trabalho do AEM
 
-Crie um modelo de fluxo de trabalho usando componentes de fluxo de trabalho do AEM Forms. use o componente Or-Split para ramificar o workflow com base no valor da variável de estado.
+Crie um modelo de fluxo de trabalho usando componentes de fluxo de trabalho do AEM Forms. use o componente Or-Split para ramificar o fluxo de trabalho com base no valor da variável state.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)

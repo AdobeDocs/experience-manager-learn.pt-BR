@@ -1,5 +1,5 @@
 ---
-title: Etapas para capturar as informações necessárias para solucionar problemas relacionados ao DDX
+title: Etapas para obter as informações necessárias para solucionar problemas relacionados ao DDX
 description: Capturar detalhes necessários para solucionar problemas relacionados ao Assembler
 type: Troubleshooting
 role: Developer

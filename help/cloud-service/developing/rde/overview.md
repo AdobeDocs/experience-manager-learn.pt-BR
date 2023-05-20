@@ -1,6 +1,6 @@
 ---
 title: Ambientes de desenvolvimento rápido
-description: Saiba mais sobre AEM ambientes de desenvolvimento rápido, quais são e como eles podem ajudar no desenvolvimento mais rápido para ciclos de implantação.
+description: Saiba mais sobre os ambientes de desenvolvimento rápido de AEM, o que são e como eles podem ajudar no desenvolvimento mais rápido para ciclos de implantação.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,22 +9,22 @@ level: Beginner
 jira: KT-11860
 thumbnail: KT-11860.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 11%
 
 ---
 
-
 # Ambientes de desenvolvimento rápido
 
-Saiba mais sobre o Rapid Development Environment (RDE) em AEM as a Cloud Service.
+Saiba mais sobre o Ambiente de desenvolvimento rápido (RDE) no AEM as a Cloud Service.
 
-Este vídeo outline:
+Este vídeo descreve:
 
 - O que são RDEs?
-- Como eles ajudam em um desenvolvimento mais rápido para ciclos de implantação?
+- Como eles ajudam no desenvolvimento mais rápido dos ciclos de implantação?
 
 >[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
 

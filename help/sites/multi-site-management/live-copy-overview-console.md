@@ -1,6 +1,6 @@
 ---
 title: Console da Live Copy
-description: O vídeo a seguir explica como visualizar ou gerenciar a herança em um site ou executar operações de implantação usando o console Visão geral da Live Copy .
+description: O vídeo a seguir explica como visualizar ou gerenciar a herança em um site ou executar operações de implantação usando o console Visão geral da Live Copy.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all

@@ -1,6 +1,6 @@
 ---
-title: Capturando mensagens de erro no serviço do Modelo de dados de formulário como etapa no fluxo de trabalho
-description: A partir do AEM Forms 6.5.1, agora temos a capacidade de capturar mensagens de erro geradas ao usar invocar o serviço de modelo de dados de formulário como uma etapa AEM fluxo de trabalho. Fluxo de trabalho.
+title: Captura de mensagens de erro no serviço de modelo de dados de formulário como etapa no fluxo de trabalho
+description: A partir do AEM Forms 6.5.1, agora temos a capacidade de capturar mensagens de erro geradas ao usar o serviço de modelo de dados de formulário de invocação como uma etapa no fluxo de trabalho de AEM. Fluxo de trabalho.
 feature: Workflow
 version: 6.5
 topic: Development
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 ---
 
-# Capturando mensagens de erro na etapa Chamar serviço do modelo de dados de formulário
+# Captura de mensagens de erro na etapa do serviço Invoke Form Data Model
 
-A partir do AEM Forms 6.5.1, agora temos a opção de capturar mensagens de erro e especificar opções de validação. A etapa Chamar serviço do Modelo de dados de formulário foi aprimorada para fornecer os seguintes recursos.
+A partir do AEM Forms 6.5.1, agora temos a opção de capturar mensagens de erro e especificar opções de validação. A etapa Invocar serviço de modelo de dados de formulário foi aprimorada para fornecer os seguintes recursos.
 
-* Fornecendo uma opção para validação de 3 camadas (&quot;OFF&quot;, &quot;BASIC&quot; e &quot;FULL&quot;) para lidar com Exceções encontradas ao invocar o Serviço de Modelo de Dados de Formulário. As 3 opções indicam sucessivamente uma versão mais estrita de verificação dos requisitos específicos do banco de dados.
+* Fornecer uma opção para validação em três níveis (&quot;DESATIVADO&quot;, &quot;BÁSICO&quot; e &quot;COMPLETO&quot;) para lidar com exceções encontradas ao chamar o serviço de modelo de dados de formulário. As 3 opções indicam sucessivamente uma versão mais rigorosa da verificação dos requisitos específicos do banco de dados.
    ![níveis de validação](assets/validation-level.PNG)
 
-* Fornecer uma caixa de seleção para personalizar a execução do fluxo de trabalho. Portanto, o usuário agora tem a flexibilidade de prosseguir com a Execução do fluxo de trabalho, mesmo se a etapa Invocar modelo de dados de formulário acionar Exceções.
+* Fornecer uma caixa de seleção para personalizar a execução do workflow. Portanto, o usuário agora tem a flexibilidade de seguir em frente com a Execução do fluxo de trabalho, mesmo que a etapa Chamar modelo de dados de formulário acione Exceções.
 
-* Armazenando informações importantes sobre o erro que ocorre devido a exceções de validação. Três seletores de variável do tipo Autocomplete foram incorporados para selecionar variáveis relevantes para armazenar ErrorCode(String), ErrorMessage(String) e ErrorDetails(JSON). No entanto, ErrorDetails seria definido como nulo, pois a exceção não é um DermisValidationException.
-   ![como capturar mensagens de erro](assets/fdm-error-details.PNG)
+* Armazenando informações importantes de Ocorrência de erros devido a exceções de validação. Três seletores de variável do tipo Autocomplete foram incorporados para selecionar variáveis relevantes para armazenar ErrorCode(String), ErrorMessage(String) e ErrorDetails(JSON). No entanto, ErrorDetails seria definido como nulo caso a exceção não seja DermisValidationException.
+   ![captura de mensagens de erro](assets/fdm-error-details.PNG)
 
-Com essas alterações, a etapa Chamar serviço do modelo de dados de formulário garante que os valores de entrada sigam as restrições de dados fornecidas no arquivo do gerenciador. Por exemplo, a seguinte mensagem de erro é emitida quando os valores accountId e balance não estão em conformidade com as restrições de dados especificadas no arquivo swagger.
+Com essas alterações, a etapa Chamar serviço do modelo de dados de formulário garante que os valores de entrada sigam as restrições de dados fornecidas no arquivo swagger. Por exemplo, a seguinte mensagem de erro é emitida quando os valores accountId e balance não são compatíveis com as restrições de dados especificadas no arquivo swagger.
 
 ```json
 {

@@ -1,6 +1,6 @@
 ---
 title: Tags inteligentes de vídeo no AEM Assets
-description: O Experience Manager Assets usa o Adobe Sensei para marcar ativos de vídeo de forma inteligente com palavras-chave que descrevem elementos-chave do vídeo, permitindo que eles sejam facilmente descobertos usando a pesquisa por palavras-chave por usuários AEM.
+description: O Experience Manager Assets aproveita o Adobe Sensei para marcar ativos de vídeo de forma inteligente com palavras-chave que descrevem elementos-chave do vídeo, permitindo que eles sejam facilmente descobertos usando a pesquisa por palavra-chave por usuários do AEM.
 feature: Smart Tags
 version: Cloud Service
 kt: 6445
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Tags inteligentes de vídeo
 
-O Experience Manager Assets usa o Adobe Sensei para marcar ativos de vídeo de forma inteligente com palavras-chave que descrevem elementos-chave do vídeo, permitindo que eles sejam facilmente descobertos usando a pesquisa por palavras-chave por usuários AEM.
+O Experience Manager Assets aproveita o Adobe Sensei para marcar ativos de vídeo de forma inteligente com palavras-chave que descrevem elementos-chave do vídeo, permitindo que eles sejam facilmente descobertos usando a pesquisa por palavra-chave por usuários do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)

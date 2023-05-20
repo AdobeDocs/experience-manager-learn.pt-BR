@@ -1,6 +1,6 @@
 ---
-title: Como depurar fontes relacionadas a problemas com conversões do serviço de saída e do Forms
-description: Etapas para depurar fontes relacionadas ao problema com o Forms e o serviço de saída
+title: Como depurar problemas relacionados a fontes com conversões do Forms e do serviço de saída
+description: Etapas para depurar o problema relacionado ao Fonts com o Forms e o Serviço de saída
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como capturar as garantias para depurar o problema relacionado a fontes com as conversões do Forms e do serviço de saída
+# Como capturar materiais de apoio para depurar problemas relacionados a fontes com conversões de Forms e serviços de saída
 
-*Este vídeo aborda o processo de captura de garantias para depurar o problema relacionado a Fontes com o Forms e as conversões do serviço de saída .*
+*Este vídeo aborda o processo de captura de materiais de apoio para depurar problemas relacionados às fontes com conversões de Forms e do serviço de saída .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

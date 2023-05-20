@@ -1,6 +1,6 @@
 ---
-title: Navegar pelos painéis aninhados
-description: Navegar pelos painéis aninhados
+title: Navegar em painéis aninhados
+description: Navegar em painéis aninhados
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -17,47 +17,47 @@ ht-degree: 0%
 
 ---
 
-# Guias Navegação com vários painéis
+# Guias de navegação com vários painéis
 
-Quando o formulário tiver guias de navegação esquerdas e uma das guias tiver vários painéis, talvez você queira ocultar o título dos painéis filhos e ainda conseguir navegar entre as guias e os painéis filhos dessa guia
+Quando o formulário tem guias de navegação à esquerda e se uma das guias tiver vários painéis, talvez você queira ocultar o título dos painéis secundários e ainda poder navegar entre as guias e os painéis secundários dessas guias
 
 ## Criar formulário adaptável
 
-Crie um formulário adaptável com a seguinte estrutura. O painel raiz tem painéis filhos que são exibidos como guias à esquerda. Alguns deles &quot;**guias**&quot; tem painéis filhos adicionais. Por exemplo, a guia Família tem dois painéis filhos chamados Cônjuge e Filhos.
+Crie um formulário adaptável com a seguinte estrutura. O painel raiz tem painéis secundários que são exibidos como guias à esquerda. Alguns desses &quot;**guias**&quot; têm painéis secundários adicionais. Por exemplo, a guia Família tem dois painéis filhos chamados Cônjuge e Filhos.
 
-Uma barra de ferramentas também é adicionada em FormContainer com os botões Anterior e Próximo
+Uma barra de ferramentas também é adicionada abaixo de FormContainer com os botões Anterior e Próximo
 
-![espaçamento entre barras de ferramentas](assets/multiple-panels.png)
+![espaçamento da barra de ferramentas](assets/multiple-panels.png)
 
 
 
-O comportamento padrão desse formulário seria exibir todos os painéis à esquerda e, em seguida, navegar de uma guia para outra ao clicar no botão seguinte.
+O comportamento padrão desse formulário seria exibir todos os painéis à esquerda e, em seguida, navegar de uma guia para outra ao clicar no botão próximo.
 
-Para alterar esse comportamento padrão, precisamos fazer o seguinte
+Para alterar esse comportamento padrão, é necessário fazer o seguinte
 
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
-Adicione o seguinte código ao evento click da variável **Próximo** botão usando o editor de código
+Adicione o seguinte código ao evento de clique do **Próxima** botão usando o editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'nextItemDeep', true);
 ```
 
-Adicione o seguinte código ao evento click da variável **Anterior** botão usando o editor de código
+Adicione o seguinte código ao evento de clique do **Anterior** botão usando o editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'prevItemDeep', true);
 ```
 
-O código acima ajudará você a navegar entre as guias e os painéis filhos de cada guia.
+O código acima ajudará você a navegar entre as guias e os painéis secundários de cada guia.
 
-## Ocultar o título dos painéis filhos
+## Ocultar o título dos painéis secundários
 
-Use o editor de estilos para ocultar o título dos painéis filho de guias.
+Use o editor de estilos para ocultar o título dos painéis secundários das guias.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >
->O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis filhos, essa funcionalidade não funcionaria.
+>O recurso descrito neste artigo não funciona na última guia. Por exemplo, se a guia Endereço tivesse painéis secundários, essa funcionalidade não funcionaria.

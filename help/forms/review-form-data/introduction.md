@@ -1,6 +1,6 @@
 ---
-title: Analisar os dados do formulário antes de enviar
-description: Tutorial para criar o componente de resumo para revisar os dados do formulário antes de enviar.
+title: Revisar dados do formulário antes de enviar
+description: Tutorial para criar o componente de resumo para revisar os dados do formulário antes do envio.
 feature: Adaptive Forms
 topics: development
 doc-type: tutorial
@@ -20,16 +20,16 @@ ht-degree: 2%
 
 # Revisar dados do formulário antes de enviar
 
-Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação de um componente de resumo para revisão e edição de dados de formulário antes de enviar o formulário.
+Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação de um componente de resumo para revisar e editar dados de formulário antes de enviar o formulário.
 
-![revisar dados de formulário](assets/review-form-data.png)
+![review-form-data](assets/review-form-data.png)
 
-Para seguir este tutorial, é recomendável ter o seguinte instalado:
+Para seguir este tutorial, é recomendável que você tenha o seguinte instalado:
 
-* AEM 6.5 ou superior com o pacote de addon de formulários adequado
+* AEM 6.5 ou superior com pacote de complemento de formulários apropriado
 
-Também é recomendável que você tenha algum nível de experiência de desenvolvedor com o AEM e o AEM Forms.
+Também é recomendável que você tenha algum nível de experiência de desenvolvedor com AEM e AEM Forms.
 
 ## Próximas etapas
 
-[Resumir dados usando o componente personalizado](./create-component.md)
+[Resumir dados usando componente personalizado](./create-component.md)

@@ -1,6 +1,6 @@
 ---
-title: Uso do AEM Forms com Acrobat Sign
-description: A Acrobat Sign e a AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
+title: Utilização do AEM Forms com o Acrobat Sign
+description: O Acrobat Sign e o AEM Forms permitem automatizar transações complexas e incluir assinaturas eletrônicas legais como parte de uma experiência digital contínua.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 ---
 
-# Uso do AEM Forms com Acrobat Sign
+# Utilização do AEM Forms com o Acrobat Sign
 
-O Acrobat Sign habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras.
-A integração entre o AEM Forms e o Acrobat Sign permitirá que você faça o seguinte
+O Acrobat Sign habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
+A integração entre o AEM Forms e o Acrobat Sign permitirá fazer o seguinte
 
-* Use o Adaptive Forms para capturar dados e apresentar o Documento de Registro (DoR) gerado automaticamente para assinaturas
-* Crie um Adaptive Forms com base no modelo PDF. Mesclar os dados com o modelo pdf e apresentar o mesmo para assinaturas
+* Usar o Adaptive Forms para capturar dados e apresentar o Documento de registro (DoR) gerado automaticamente para assinaturas
+* Crie um Forms adaptável com base no seu modelo de PDF. Mescle os dados com o modelo pdf e apresente o mesmo para assinaturas
 * Enviar documentos para assinatura usando o componente de fluxo de trabalho Assinar documento
 
 ## Pré-requisitos
 
-Você precisa do seguinte para integrar o Acrobat Sign com o AEM Forms:
+Você precisa do seguinte para integrar o Acrobat Sign ao AEM Forms:
 
 * Um servidor AEM Forms habilitado para SSL
-* Uma conta ativa de desenvolvedor do Acrobat Sign.
+* Uma conta de desenvolvedor ativa do Acrobat Sign.
 * Um aplicativo de API do Acrobat Sign
 * Credenciais (ID do cliente e Segredo do cliente) do aplicativo da API do Acrobat Sign.

@@ -1,5 +1,5 @@
 ---
-title: Como adicionar usuário de gerenciamento ao console de administração do JBoss
+title: Como adicionar usuário de gerenciamento para o Admin Console JBoss
 description: Configurar o usuário de gerenciamento para o Admin Console JBOSS
 type: Troubleshooting
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Como adicionar usuário de gerenciamento ao console de administração do JBoss
+# Como adicionar usuário de gerenciamento para o Admin Console JBoss
 
-*Este vídeo aborda as etapas para adicionar usuário de gerenciamento ao Admin Console do JBoss.*
+*Este vídeo aborda as etapas para adicionar um usuário de gerenciamento ao Admin Console JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

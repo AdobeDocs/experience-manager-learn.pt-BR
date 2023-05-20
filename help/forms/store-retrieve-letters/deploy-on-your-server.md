@@ -1,6 +1,6 @@
 ---
-title: Implante os ativos de amostra no servidor
-description: Teste a funcionalidade salvar como rascunho para Comunicações interativas
+title: Implantar os ativos de amostra no servidor
+description: Testar a funcionalidade Salvar como rascunho para as Comunicações interativas
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -19,12 +19,12 @@ ht-degree: 2%
 
 ---
 
-# Implante os ativos de amostra no servidor
+# Implantar os ativos de amostra no servidor
 
-Siga as instruções abaixo para obter essa funcionalidade funcionando no servidor AEM
+Siga as instruções abaixo para fazer com que essa funcionalidade funcione no seu servidor AEM
 
-* [Criar o esquema do banco de dados](assets/icdrafts.sql)
-* [Importe a biblioteca do cliente](assets/icdrafts.zip)
+* [Criar o esquema de banco de dados](assets/icdrafts.sql)
+* [Importar a biblioteca do cliente](assets/icdrafts.zip)
 * [Importar o formulário adaptável](assets/SavedDraftsAdaptiveForm.zip)
 * Criar fonte de dados chamada _SaveAndContinue_
 
@@ -32,15 +32,15 @@ Siga as instruções abaixo para obter essa funcionalidade funcionando no servid
 
 | Nome da Propriedade | Valor da propriedade |
 |---|---|
-| Nome da origem de dados | SaveAndContinue |
+| Nome da fonte de dados | SaveAndContinue |
 | Classe de driver JDBC | com.mysql.cj.jdbc.Driver |
 | URL de conexão JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
-* [Implantar o pacote de ícones](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
-* Certifique-se de que _Habilitar Salvar Usando CCRDocumentInstanceService_ na configuração OSGI, como mostrado abaixo
+* [Implantar o pacote icdrafts](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
+* Verifique se você _Habilitar Salvar Usando CCRDocumentInstanceService_ na configuração OSGI, como mostrado abaixo
    ![Ativar rascunhos](assets/enable-drafts.png)
-* Abra qualquer comunicação interativa. Clique em Salvar como rascunho para salvar
-* [Exibir rascunhos salvos](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
+* Abra qualquer comunicação interativa. Clique no botão Salvar como rascunho para salvar
+* [Visualizar Rascunhos Salvos](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
 >Os arquivos xml são armazenados na pasta raiz da instalação do servidor AEM. O projeto do eclipse é fornecido a você para personalizar a solução de acordo com suas necessidades.

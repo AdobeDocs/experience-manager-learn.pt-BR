@@ -1,6 +1,6 @@
 ---
-title: Pastas de projeto do conector aprimorado do Workfront
-description: Saiba mais sobre Pastas de projeto ao usar o conector aprimorado Adobe Workfront e Experience Manager Assets.
+title: Pastas de projeto do Workfront Enhanced Connector
+description: Saiba mais sobre Pastas de projeto ao usar o conector aprimorado do Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Pastas de projeto do conector aprimorado do Workfront
 
-Saiba mais sobre Pastas de projeto ao usar o conector aprimorado do Adobe Workfront e Experience Manager Assets, incluindo:
+Saiba mais sobre Pastas de projeto ao usar o conector aprimorado do Adobe Workfront e do Experience Manager Assets, incluindo:
 
 + Pastas vinculadas ao projeto
-+ Mapeamento de metadados da pasta
++ Mapeamento de metadados de pasta
 + Herança de metadados da pasta
 
 >[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)

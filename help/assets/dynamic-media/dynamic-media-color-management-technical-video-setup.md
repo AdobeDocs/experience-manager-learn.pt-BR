@@ -1,6 +1,6 @@
 ---
-title: Como entender o gerenciamento de cores com o AEM Dynamic Media
-description: Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
+title: Noções básicas sobre gerenciamento de cores com o AEM Dynamic Media
+description: Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização da correção de cores no para AEM Assets.
 feature: Image Profiles, Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 ---
 
-# Como entender o gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
+# Noções básicas sobre gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele pode ser usado para fornecer recursos de visualização de correção de cores no para AEM Assets.
+Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização da correção de cores no para AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
@@ -24,11 +24,11 @@ Neste vídeo, exploramos o Gerenciamento de cores da Dynamic Media e como ele po
 >
 >[Ativar o Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) no AEM para usar esse recurso.
 
-Esse recurso está disponível para as versões AEM 6.1 e 6.2 como um Feature Pack.
+Este recurso está disponível para as versões AEM 6.1 e 6.2 como um Pacote de recursos.
 
-## Modelo XML para o nó de configuração do Gerenciamento de cores {#xml-template-for-the-color-management-configuration-node}
+## Modelo XML do nó de configuração de gerenciamento de cores {#xml-template-for-the-color-management-configuration-node}
 
-Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Esse modelo XML pode ser copiado no projeto de desenvolvimento de AEM e configurado com as configurações apropriadas ao projeto.
+Este é o modelo XML para o nó de configuração do gerenciamento de cores. Esse modelo XML pode ser copiado para o projeto de desenvolvimento AEM e configurado com as configurações apropriadas para o projeto.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,43 +84,43 @@ Este é o modelo XML para o nó de configuração do Gerenciamento de cores. Ess
 />
 ```
 
-### A lista de perfis de cores do Adobe padrão está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
+### A lista de perfis de cores de Adobe padrão está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Espaço de cor | Descrição |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | RGB Apple |
 | CIERGB | RGB | RGB CIE |
-| CoatedFogra27 | CMYK | Revestido FOGRA27 (ISO 12647-2:2004) |
-| CoatedFogra39 | CMYK | Revestido FOGRA39 (ISO 12647-2:2004) |
-| ColunaRevestida | CMYK | GRACoL 2006 revestido (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB | RGB ColorMatch |
+| CoatedFogra27 | CMYK | FOGRA27 revestida (ISO 12647-2:2004) |
+| CoatedFogra39 | CMYK | FOGRA39 revestida (ISO 12647-2:2004) |
+| GraCol revestido | CMYK | GRACoL 2006 revestido (ISO 12647-2:2004) |
+| ColorMatchRGB | RGB | ColorMatch RGB |
 | EuropeISOCoated | CMYK | Europa ISO Revestido FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
-| EuroescalaNãoRevestido | CMYK | Euroscale Não Revestido v2 |
-| JapãoColorCoated | CMYK | Japão - Cor 2001 Revestida |
-| JapãoCorJornal | CMYK | Jornal japonês Color 2002 |
-| JapãoCorNãoRevestida | CMYK | Japão - Cor 2001 não revestida |
-| JapãoColorWebCoated | CMYK | Japão Color 2003 Web Coated |
-| JapãoWebCoated | CMYK | Japão - Revestido da Web (Anúncio) |
-| NewsprintSNAP2007 | CMYK | Jornal dos EUA (SNAP 2007) |
+| EuroscaleNão revestido | CMYK | Euroscale não revestido v2 |
+| JapãoRevestidoPorCor | CMYK | Japão Colorido 2001 Revestido |
+| JapãoColorNewspaper | CMYK | Jornal Japan Color 2002 |
+| JapãoCorNãoRevestida | CMYK | Japão Colorido 2001 Sem Revestimento |
+| JapãoCorRevestidoWeb | CMYK | Japan Color 2003 Web Coated |
+| JapãoRevestidoWeb | CMYK | Revestimento Para Web No Japão (Anúncio) |
+| NewsprintSNAP2007 | CMYK | Papel de jornal dos EUA (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | RGB ProPhoto |
-| PS4Default | CMYK | CMYK padrão do Photoshop 4 |
+| PS4Default | CMYK | Photoshop 4 Padrão CMYK |
 | PS5Default | CMYK | CMYK padrão do Photoshop 5 |
-| CheifadoRevestido | CMYK | U.S. Sheetfeed Coated v2 |
-| PlacaSemRevestimento | CMYK | U.S.A., Placa Não Revestida v2 |
+| RevestidoFolheado | CMYK | U.S. Sheetfed Coated v2 |
+| Não revestidaFolha | CMYK | U.S. Sheetfed sem revestimento v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
 | UncoatedFogra29 | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
-| WebCoated | CMYK | US Web Coated (SWOP) v2 |
-| WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
-| WebCoatedGrade3 | CMYK | Papel SWOP Revestido da Web 2006 Grau 3 |
-| WebCoatedGrade5 | CMYK | Papel SWOP Revestido da Web 2006 Grau 5 |
-| WebUn-Revelado | CMYK | U.S. Web Untrated v2 |
-| WideGamutRGB | RGB | RGB de gama larga |
+| Revestido pela Web | CMYK | U.S. Web Coated (SWOP) v2 |
+| WebCoatedFogra28 | CMYK | FOGRA28 revestida com revestimento web (ISO 12647-2:2004) |
+| WebCoatedGrade3 | CMYK | Papel revestido para web SWOP 2006 Grade 3 |
+| WebCoatedGrade5 | CMYK | Papel revestido para web SWOP 2006 Grade 5 |
+| WebNão revestida | CMYK | U.S. Web sem revestimento v2 |
+| WideGamutRGB | RGB | RGB de gamut amplo |
 
 ## Recursos adicionais{#additional-resources}
 
-* [Configuração do gerenciamento de cores Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuração do gerenciamento de cores do Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

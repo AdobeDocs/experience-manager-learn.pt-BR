@@ -1,5 +1,5 @@
 ---
-title: Modelos de fluxo de trabalho do AEM Forms reutilizáveis
+title: Modelos de fluxo de trabalho reutilizáveis do AEM Forms
 description: Saiba como criar modelos de fluxo de trabalho independentes do Adaptive Forms.
 feature: Workflow
 version: 6.5
@@ -15,26 +15,26 @@ ht-degree: 0%
 
 ---
 
-# Criar modelos de fluxo de trabalho do AEM Forms reutilizáveis{#create-re-usable-aem-forms-workflow-models}
+# Criar Modelos De Fluxo De Trabalho Do AEM Forms Reutilizáveis{#create-re-usable-aem-forms-workflow-models}
 
-A partir da versão 6.5 do AEM Forms, agora podemos criar modelos de fluxo de trabalho que não estão vinculados a um formulário adaptável específico. Com esse recurso, agora é possível criar um modelo de fluxo de trabalho que pode ser chamado em diferentes envios de formulários adaptáveis. Com esse recurso, você pode ter um fluxo de trabalho genérico para lidar com todos os envios de formulários adaptáveis para revisão e aprovação.
+A partir da versão AEM Forms 6.5, podemos criar modelos de fluxo de trabalho que não estão vinculados a um Formulário adaptável específico. Com esse recurso, agora é possível criar um modelo de fluxo de trabalho que pode ser chamado em diferentes envios de formulários adaptáveis. Com esse recurso, você pode ter um fluxo de trabalho genérico para lidar com todos os envios de formulários adaptáveis para revisão e aprovação.
 
-Para projetar esse workflow, execute as seguintes etapas
+Para criar esse fluxo de trabalho, execute as seguintes etapas
 
-1. Faça logon no AEM
+1. Fazer logon no AEM
 1. Aponte seu navegador para [modelo de fluxo de trabalho](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Clique em __Criar > Criar modelo__ para adicionar um modelo de fluxo de trabalho
-1. Forneça o Nome e o Título apropriados ao modelo de fluxo de trabalho e clique em Concluído
-1. Abra o modelo recém-criado no modo de edição
-1. Arraste e solte o componente Atribuir tarefa no modelo de fluxo de trabalho
-1. Abra as propriedades de configuração do componente Atribuir tarefa
-1. Guia para a guia Forms e Documentos
-1. Selecione Tipo - Formulário adaptável ou Formulário adaptável somente leitura.
+1. Forneça o Nome e o Título apropriados para o modelo de fluxo de trabalho e clique em Concluído
+1. Abrir o modelo recém-criado no modo de edição
+1. Arraste e solte o componente Atribuir tarefa no seu modelo de fluxo de trabalho
+1. Abra as propriedades de configuração do componente Atribuir tarefa.
+1. Acesse a guia Forms e Documentos
+1. Selecione o Tipo - Formulário adaptável ou o Formulário adaptável somente leitura.
 
 Há três maneiras de especificar o caminho do formulário
 
-1. Disponível em um caminho absoluto - Isso significa que o fluxo de trabalho está totalmente acoplado ao formulário adaptável. Não é isso que queremos aqui
-1. **Enviado para o workflow** - Isso significa que, quando o formulário adaptável é enviado, o motor de fluxo de trabalho extrai o nome do formulário dos dados enviados. Essa é a opção que precisa ser selecionada
-1. Disponível em um caminho em uma variável - Isso significa que o formulário adaptável é extraído da variável de fluxo de trabalho A captura de tela a seguir mostra a opção correta que você precisa escolher para o fluxo de trabalho de desacoplamento do formulário adaptável
+1. Disponível em um caminho absoluto - Isso significa que o fluxo de trabalho é totalmente combinado com o formulário adaptável. Não é isso que queremos aqui
+1. **Enviado ao fluxo de trabalho** - Isso significa que quando o formulário adaptável é enviado, o mecanismo de fluxo de trabalho extrai o nome do formulário dos dados enviados. Esta é a opção que precisa ser selecionada
+1. Disponível em um caminho em uma variável - Isso significa que o formulário adaptável é retirado da variável do fluxo de trabalho. A captura de tela a seguir mostra a opção correta que você precisa escolher para desvincular o fluxo de trabalho do formulário adaptável
 
-![Modelos de fluxo de trabalho do AEM Forms reutilizáveis](assets/workflomodel.PNG)
+![Modelos de fluxo de trabalho reutilizáveis do AEM Forms](assets/workflomodel.PNG)

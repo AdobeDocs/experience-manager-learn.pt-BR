@@ -1,7 +1,7 @@
 ---
 title: Criação de uma nova página no AEM Sites
 seo-title: Create a new page in Adobe Experience Manager Sites
-description: O vídeo a seguir destaca como criar uma página do site com base em um modelo no Adobe Experience Manager.
+description: O vídeo a seguir destaca como criar uma página de site com base em um modelo no Adobe Experience Manager.
 seo-description: The following video highlights how to create a site page based on a template in Adobe Experience Manager.
 feature: Page Editor, Editable Templates
 topics: authoring, publishing
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ---
 
-# Criar uma página {#creating-page-aem-sites}
+# Criação de uma página {#creating-page-aem-sites}
 
 Saiba como criar páginas do site usando modelos de página no Adobe Experience Manager.
 

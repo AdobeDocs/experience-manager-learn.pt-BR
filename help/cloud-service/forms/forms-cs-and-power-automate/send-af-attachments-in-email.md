@@ -1,6 +1,6 @@
 ---
 title: Enviar anexos de formulário em um email
-description: Extrair e enviar anexos de formulário enviados em um email usando fluxo de trabalho de automatização de energia
+description: Extrair e enviar anexos de formulário enviados em um email usando o workflow do Power Automate
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11077
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 1be90d9b-3669-44a0-84fb-cbdec44074d8
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
@@ -18,11 +19,11 @@ ht-degree: 0%
 
 # Extrair anexos de formulário de dados de formulário enviados
 
-Extraia anexos de formulário e envie os anexos em um e-mail em um fluxo de trabalho de automatização de energia.
+Extraia anexos de formulário e envie-os por email no fluxo de trabalho do Power Automate.
 O vídeo a seguir explica as etapas necessárias para formar anexos a partir dos dados enviados.
 >[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
 
-A seguir está o schema de objetos de anexo que você precisa usar na etapa Analisar esquema JSON
+A seguir está o esquema de objeto de anexo que você precisa usar na etapa Analisar esquema JSON
 
 ```json
 {

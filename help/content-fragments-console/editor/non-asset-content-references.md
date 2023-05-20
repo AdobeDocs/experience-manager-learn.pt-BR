@@ -1,6 +1,6 @@
 ---
 title: Referências de conteúdo não ativo - Editor de fragmento de conteúdo
-description: Saiba como os campos Conteúdo do fragmento de conteúdo são compatíveis com a referência a vários tipos de conteúdo AEM, como Fragmentos de experiência e Páginas.
+description: Saiba como os campos de conteúdo do Fragmento de conteúdo oferecem suporte à referência a vários tipos de conteúdo AEM, como Fragmentos de experiência e Páginas.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Referências de conteúdo não ativo
+# Referências de conteúdo não relacionado a ativos
 
-Saiba como os campos Conteúdo do fragmento de conteúdo são compatíveis com a referência a vários tipos de conteúdo AEM, como Fragmentos de experiência e Páginas.
+Saiba como os campos de conteúdo do Fragmento de conteúdo oferecem suporte à referência a vários tipos de conteúdo AEM, como Fragmentos de experiência e Páginas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)

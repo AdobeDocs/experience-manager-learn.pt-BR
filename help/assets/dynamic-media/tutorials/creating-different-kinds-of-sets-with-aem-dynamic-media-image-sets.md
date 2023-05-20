@@ -1,5 +1,5 @@
 ---
-title: Criação de conjuntos de imagens com AEM Dynamic Media
+title: Criação de conjuntos de imagens com o AEM Dynamic Media
 description: Configurar conjunto de imagens com o Dynamic Media
 role: Developer
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Criação de conjuntos de imagens com AEM Dynamic Media
+# Criação de conjuntos de imagens com o AEM Dynamic Media
 
-Este vídeo aborda o processo de criação de Conjuntos de imagens com AEM Dynamic Media.
+Este vídeo aborda o processo de criação de conjuntos de imagens com AEM Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)

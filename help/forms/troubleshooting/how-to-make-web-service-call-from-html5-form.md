@@ -1,6 +1,6 @@
 ---
-title: Como fazer uma chamada de serviço da Web a partir do formulário HTML5
-description: etapas para configurar o serviço da Web a partir do formulário HTML5
+title: Como fazer uma chamada de serviço Web a partir do formulário HTML5
+description: etapas para configurar o serviço web no formulário HTML5
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Como fazer uma chamada de serviço da Web a partir do formulário HTML5
+# Como fazer uma chamada de serviço Web a partir do formulário HTML5
 
-*Este vídeo aborda o processo para fazer chamadas de serviço da Web a partir do formulário HTML5.*
+*Este vídeo aborda o processo para fazer uma chamada de serviço da Web do formulário HTML5.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Introdução ao Editor SPA e SPA remotos - Visão geral
-description: Bem-vindo ao tutorial de várias partes para desenvolvedores que procuram aumentar um SPA Remoto existente com conteúdo AEM editável usando AEM Editor SPA.
+title: Introdução ao Editor de SPA e SPA remoto - Visão geral
+description: Bem-vindo ao tutorial em várias partes para desenvolvedores que buscam aumentar um SPA remoto existente com conteúdo de AEM editável usando o editor de AEM SPA.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -18,22 +18,22 @@ ht-degree: 9%
 
 # Visão geral
 
-Bem-vindo ao tutorial de várias partes para desenvolvedores que procuram aumentar um SPA Remoto baseado em Reação (ou Next.js) existente com conteúdo AEM editável usando AEM Editor SPA.
+Bem-vindo ao tutorial em várias partes para desenvolvedores que buscam aumentar um SPA remoto baseado no React (ou Next.js) existente com conteúdo de AEM editável usando o Editor de SPA AEM.
 
-Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo React que consome AEM conteúdo do Fragmento de conteúdo em vez AEM APIs do GraphQL, no entanto não fornece criação de conteúdo SPA contexto.
+Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo do React que consome conteúdo de Fragmento de conteúdo do AEM por meio de APIs do AEM, no entanto, não fornece nenhuma criação em contexto de conteúdo do GraphQL SPA.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Sobre o tutorial
 
-O tutorial tem como objetivo ilustrar como um SPA Remoto, ou um SPA executado fora do contexto de AEM, pode ser atualizado para consumir e fornecer conteúdo criado em AEM.
+O tutorial destinado a ilustrar como um SPA remoto, ou SPA executado fora do contexto do AEM AEM, pode ser atualizado para consumir e entregar conteúdo criado no.
 
-A maioria das atividades no tutorial se concentra no desenvolvimento do JavaScript, no entanto, os aspectos críticos são abordados e giram em torno do AEM. Esses aspectos incluem a definição de onde o conteúdo é criado e armazenado em AEM e o mapeamento SPA rotas para páginas AEM.
+A maioria das atividades no tutorial se concentra no desenvolvimento do JavaScript, no entanto, são abordados aspectos críticos que giram em torno do AEM. Esses aspectos incluem definir onde o conteúdo é criado e armazenado no AEM e mapear rotas do SPA para páginas do AEM.
 
 O tutorial foi projetado para funcionar com **AEM as a Cloud Service** e é composto por dois projetos:
 
-1. O __Projeto AEM__ contém configuração e conteúdo que devem ser implantados em AEM.
-1. __Aplicativo WKND__ projeto é o SPA a ser integrado ao AEM SPA Editor
+1. A variável __Projeto AEM__ contém a configuração e o conteúdo que devem ser implantados no AEM.
+1. __Aplicativo WKND__ O projeto é o SPA para ser integrado ao SPA Editor do AEM
 
 ## Código mais recente
 
@@ -49,35 +49,35 @@ Este tutorial requer o seguinte:
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip ou superior](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql source code](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [aem-guides-wknd-graphql código-fonte](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
-Este tutorial presume:
+Este tutorial pressupõe:
 
-+ [Código Microsoft® Visual Studio](https://visualstudio.microsoft.com/) como o IDE
++ [Código do Microsoft® Visual Studio](https://visualstudio.microsoft.com/) como o IDE
 + Um diretório de trabalho de `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ Execução do SDK do AEM como um serviço de autor em `http://localhost:4502`
-+ Execução do SDK do AEM com o `admin` conta com senha `admin`
-+ Execução do SPA em `http://localhost:3000`
++ Execução do SDK do AEM como um serviço do autor no `http://localhost:4502`
++ Execução do SDK do AEM com o local `admin` conta com senha `admin`
++ Executando o SPA `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Precisa de ajuda para configurar seu ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
+> **Precisa de ajuda para configurar o ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
-## 1. Configurar AEM para SPA Editor
+## 1. Configurar o SPA para o Editor de AEM
 
-AEM configurações são necessárias para integrar o SPA com AEM Editor de SPA. Essas configurações são gerenciadas e implantadas por meio de um AEM Project. Neste capítulo, saiba mais sobre as configurações necessárias e como defini-las.
+Configurações de AEM são necessárias para integrar o SPA com o editor de AEM SPA. Essas configurações são gerenciadas e implantadas por meio de um projeto AEM. Neste capítulo, saiba quais configurações são necessárias e como defini-las.
 
-+ [Saiba como configurar o AEM para SPA Editor](./aem-configure.md)
++ [Saiba como configurar o AEM para o Editor SPA](./aem-configure.md)
 
 ## 2. Bootstrap do SPA
 
-Para que AEM SPA Editor integre um SPA ao seu contexto de criação, algumas adições devem ser feitas ao SPA.
+Para o SPA Editor integrar um SPA SPA ao contexto de criação, algumas adições devem ser feitas ao AEM.
 
-+ [Saiba como inicializar o SPA para AEM Editor SPA](./spa-bootstrap.md)
++ [Saiba como inicializar o SPA AEM para SPA Editor](./spa-bootstrap.md)
 
 ## 3. Componentes fixos editáveis
 
-Primeiro, explore a adição de um &quot;componente fixo&quot; editável ao SPA. Isso ilustra como um desenvolvedor pode colocar um componente editável específico no SPA. Embora o autor possa alterar o conteúdo do componente, ele não pode remover o componente ou alterar seu posicionamento, posicionamento ou tamanho.
+Primeiro, explore a adição de um &quot;componente fixo&quot; editável ao SPA. Isso ilustra como um desenvolvedor pode colocar um componente editável específico no SPA. Embora o autor possa alterar o conteúdo do componente, ele não pode remover o componente ou alterar sua disposição, posicionamento ou tamanho.
 
 + [Saiba mais sobre componentes fixos editáveis](./spa-fixed-component.md)
 
@@ -85,14 +85,14 @@ Primeiro, explore a adição de um &quot;componente fixo&quot; editável ao SPA.
 
 Em seguida, explore a adição de um &quot;componente de contêiner&quot; editável ao SPA. Isso ilustra como um desenvolvedor pode colocar um componente de contêiner no SPA. Os componentes do contêiner permitem que os autores coloquem o componente permitido nele e ajustem o layout dos componentes.
 
-+ [Saiba mais sobre componentes de contêiner editáveis](./spa-container-component.md)
++ [Saiba mais sobre componentes editáveis do contêiner](./spa-container-component.md)
 
 ## 5. Rotas dinâmicas e componentes editáveis
 
-Por último, utilizar os conceitos explicados nos capítulos anteriores para rotas dinâmicas; rotas que exibem conteúdo diferente com base no parâmetro da rota. Isso ilustra como AEM Editor de SPA pode ser usado para criar conteúdo em rotas que são orientadas e derivadas de forma programática.
+Por fim, use os conceitos explicados nos capítulos anteriores para rotas dinâmicas; rotas que exibem conteúdo diferente com base no parâmetro da rota. AEM Isso ilustra como o Editor de SPA pode ser usado para criar conteúdo em rotas que são orientadas e derivadas de forma programática.
 
 + [Saiba mais sobre rotas dinâmicas e componentes editáveis](./spa-dynamic-routes.md)
 
 ## Recursos adicionais
 
-+ [AEM SPA Reagir componentes editáveis](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [AEM Componentes editáveis do SPA React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

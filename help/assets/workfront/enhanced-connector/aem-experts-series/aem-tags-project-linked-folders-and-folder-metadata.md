@@ -1,6 +1,6 @@
 ---
-title: Tags de AEM, pastas vinculadas ao projeto e metadados de pastas para Workfront para AEM conector aprimorado
-description: Saiba como direcionar AEM Tags usadas em ativos por meio de dados do Workfront, usar pastas vinculadas a projetos e dados do Workfront para AEM esquemas de metadados de pastas de ativos.
+title: Tags do AEM, pastas vinculadas ao projeto e metadados da pasta para conector aprimorado do Workfront para AEM
+description: Saiba como direcionar o uso de tags do AEM em ativos por meio de dados do Workfront, usar pastas vinculadas a projetos e dados do Workfront AEM para esquemas de metadados de pastas de ativos do.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Tags de AEM, pastas vinculadas ao projeto e metadados da pasta
+# Tags do AEM, pastas vinculadas ao projeto e metadados da pasta
 
-![Série AEM especialistas](./assets/banner.png)
+![Série para especialistas em AEM](./assets/banner.png)
 
-Saiba como direcionar AEM Tags usadas em ativos por meio de dados do Workfront, configurar e usar pastas vinculadas a projetos e dados do Workfront para AEM esquemas de metadados de pastas de ativos.
+Saiba como direcionar o uso de tags do AEM em ativos por meio de dados do Workfront, configurar e usar pastas vinculadas a projetos e dados do Workfront AEM para esquemas de metadados de pastas de ativos do.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Parte 3 de a [série de especialistas de quatro partes sobre o conector Workfront for Experience Manager enhanced](./overview.md)_
+_Parte III-A [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_
 
 ## Correções
 
-+ __@ 4:34 e 6:20__ AEM sintaxe de tags está incorreta. Exibições de vídeo `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` mais geral `["namespace:tag/childtag"]`.
++ __Às 4:34 e 6:20__ A sintaxe das tags AEM está incorreta. Exibições de vídeo `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` ou mais genericamente `["namespace:tag/childtag"]`.

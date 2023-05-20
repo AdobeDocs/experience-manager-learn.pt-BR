@@ -1,6 +1,6 @@
 ---
 title: Crie uma Live Copy
-description: Entenda como criar uma Live Copy para seu site a partir de um Blueprint usando o assistente Criar Live Copy .
+description: Entenda como criar uma Live Copy para seu site a partir de um Blueprint usando o assistente Criar Live Copy.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 17%
 
 # Crie uma Live Copy {#create-livecopy}
 
-Entenda como criar uma Live Copy para seu site a partir de um Blueprint usando o assistente Criar Live Copy .
+Entenda como criar uma Live Copy para seu site a partir de um Blueprint usando o assistente Criar Live Copy.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)

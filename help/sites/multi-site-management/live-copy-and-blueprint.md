@@ -1,6 +1,6 @@
 ---
-title: Entender a relação entre uma Live Copy e seu blueprint
-description: O vídeo a seguir explica como uma Live Copy está relacionada ao Blueprint no AEM Sites.
+title: Entender a relação entre uma Live Copy e seu Blueprint
+description: O vídeo a seguir explica como uma Live Copy está relacionada a seu Blueprint no AEM Sites.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all

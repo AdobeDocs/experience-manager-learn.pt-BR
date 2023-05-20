@@ -1,6 +1,6 @@
 ---
 title: Configurar o formulário adaptável para acionar o fluxo de trabalho
-description: Acione o fluxo de trabalho no envio do formulário adaptável.
+description: Acione o fluxo de trabalho no envio do Formulário adaptável.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Configurar o formulário adaptável para acionar o fluxo de trabalho
 
-Configurar formulário adaptável para acionar o fluxo de trabalho de revisão
+Configurar o formulário adaptável para acionar o fluxo de trabalho de revisão
 
 >[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)

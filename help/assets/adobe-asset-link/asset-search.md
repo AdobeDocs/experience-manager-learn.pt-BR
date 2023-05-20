@@ -1,6 +1,6 @@
 ---
 title: Pesquisa de ativos
-description: Com o painel Adobe Asset Link, os usuários criativos podem pesquisar ativos armazenados no AEM Assets usando palavras-chave ou fazer uma pesquisa em um local específico. Além das opções básicas de pesquisa, o Adobe Asset Link também permite usar um ativo para pesquisar resultados visualmente semelhantes no AEM Assets. Desenvolvido pelo aprendizado de máquina com o Adobe Sensei, a pesquisa visual exibe resultados com características estéticas relacionadas à imagem de destino.
+description: Com o painel Adobe Asset Link, os usuários criativos podem pesquisar ativos armazenados no AEM Assets usando palavras-chave ou realizar uma pesquisa em um local específico. Além das opções básicas de pesquisa, o Adobe Asset Link também permite usar um ativo para pesquisar resultados visualmente semelhantes no AEM Assets. Alimentada pelo aprendizado de máquina com o Adobe Sensei, a pesquisa visual exibe resultados com características estéticas relacionadas à imagem desejada.
 feature: Adobe Asset Link
 version: Cloud Service
 thumbnail: 34260.jpg
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Pesquisa de ativos {#asset-search}
 
-Com o painel Adobe Asset Link, os usuários criativos podem pesquisar ativos armazenados no AEM Assets usando palavras-chave ou fazer uma pesquisa em um local específico. Além das opções básicas de pesquisa, o Adobe Asset Link também permite usar um ativo para pesquisar resultados visualmente semelhantes no AEM Assets. Desenvolvido pelo aprendizado de máquina com o Adobe Sensei, a pesquisa visual exibe resultados com características estéticas relacionadas à imagem de destino.
+Com o painel Adobe Asset Link, os usuários criativos podem pesquisar ativos armazenados no AEM Assets usando palavras-chave ou realizar uma pesquisa em um local específico. Além das opções básicas de pesquisa, o Adobe Asset Link também permite usar um ativo para pesquisar resultados visualmente semelhantes no AEM Assets. Alimentada pelo aprendizado de máquina com o Adobe Sensei, a pesquisa visual exibe resultados com características estéticas relacionadas à imagem desejada.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)

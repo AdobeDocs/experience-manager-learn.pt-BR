@@ -1,6 +1,6 @@
 ---
-title: Criar fluxo de trabalho principal para acionar o processo de assinatura
-description: Criar fluxo de trabalho para armazenar os formulários para assinatura no banco de dados
+title: Criar fluxo de trabalho principal para acionar o Processo de assinatura
+description: Criar workflow para armazenar os formulários para assinatura no banco de dados
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 6887.jpg
@@ -16,17 +16,17 @@ ht-degree: 1%
 
 ---
 
-# Criar workflow principal
+# Criar fluxo de trabalho principal
 
-O fluxo de trabalho principal é acionado quando o usuário envia o formulário inicial (**RefinanciarFormulário**). Este é o fluxo do workflow
+O workflow principal é acionado quando o usuário envia o formulário inicial (**FormulárioDeRefinanciamento**). Este é o fluxo do fluxo de trabalho
 
-![fluxo de trabalho principal](assets/main-workflow.PNG)
+![main-workflow](assets/main-workflow.PNG)
 
-**Armazenar Forms Para Assinar** é uma etapa do processo personalizado.
+**Armazenar o Forms para assinar** é uma etapa de processo personalizada.
 
-A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho AEM. O código a seguir implementa uma etapa do processo personalizado. O código extrai os nomes dos formulários para assinar e transmite os dados dos formulários enviados para o `insertData` no serviço SignMultipleForms. O `insertData` em seguida, insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
+A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho de AEM. O código a seguir implementa uma etapa de processo personalizada. O código extrai os nomes dos formulários para assinar e transmite os dados do formulário enviado para o `insertData` no serviço SignMultipleForms. A variável `insertData` e insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
 
-O código nesta etapa do processo personalizado faz referência à variável `SignMultipleForms` serviço.
+O código nesta etapa de processo personalizada faz referência ao `SignMultipleForms` serviço.
 
 
 
@@ -117,11 +117,11 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-O fluxo de trabalho Assinar vários Forms usado neste artigo pode ser [baixado aqui](assets/sign-multiple-forms-workflows.zip)
+O workflow Assinar vários Forms usado neste artigo pode ser [baixado aqui](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
-> Certifique-se de configurar o Day CQ Mail Service para enviar a notificação por email. O template de email também é fornecido no pacote acima.
+> Configure o Day CQ Mail Service para enviar uma notificação por email. O template de email também é fornecido no pacote acima.
 
 ## Próximas etapas
 
-[Atualizar status da assinatura na assinatura do documento](./update-signature-status.md)
+[Atualizar status de Assinatura na assinatura do documento](./update-signature-status.md)

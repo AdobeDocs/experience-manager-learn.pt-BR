@@ -1,6 +1,6 @@
 ---
-title: Enviar formulário usando a ação de envio do Modelo de dados de formulário
-description: Criar um formulário adaptável para testar a integração do Salesforce criando um objeto de lead no envio do formulário
+title: Enviar formulário usando a ação enviar do Modelo de dados de formulário
+description: Criar um formulário adaptável para testar a integração do Salesforce criando um objeto de cliente potencial no envio do formulário
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Testar geração de lead a partir do envio de formulário
+# Testar a geração de clientes potenciais a partir do envio do formulário
 
-Crie um formulário adaptável com base no modelo de dados do formulário da Força de vendas e teste a criação de um lead no Salesforce enviando o formulário
+Crie um Formulário adaptável com base no Modelo de dados do Formulário da equipe de vendas e teste a criação de um cliente potencial no Salesforce enviando o formulário
 
 >[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)

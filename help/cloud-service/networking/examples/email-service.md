@@ -1,6 +1,6 @@
 ---
-title: Serviço de email
-description: Saiba como configurar AEM as a Cloud Service para se conectar a um serviço de email usando portas de saída.
+title: Serviço de e-mail
+description: Saiba como configurar o AEM as a Cloud Service para se conectar a um serviço de email usando portas de saída.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -16,37 +16,37 @@ ht-degree: 0%
 
 ---
 
-# Serviço de email
+# Serviço de e-mail
 
-Enviar emails de AEM as a Cloud Service configurando AEM `DefaultMailService` para usar portas avançadas de saída de rede.
+Enviar emails do AEM as a Cloud Service configurando o AEM `DefaultMailService` para usar portas avançadas de saída de rede.
 
-Como a maioria dos serviços de email não é executada por HTTP/HTTPS, as conexões com os serviços de email AEM as a Cloud Service devem ser enviadas por proxy.
+Como os serviços de email (a maioria) não são executados por HTTP/HTTPS, as conexões com os serviços de email do AEM as a Cloud Service devem ser enviadas por proxy.
 
-+ `smtp.host` é definida como a variável de ambiente OSGi `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` então é roteado através da saída.
-   + `$[env:AEM_PROXY_HOST]` é uma variável reservada que AEM mapas as a Cloud Service para o `proxy.tunnel` host.
-   + NÃO tente definir a variável `AEM_PROXY_HOST` pelo Cloud Manager.
-+ `smtp.port` é definido como `portForward.portOrig` porta que mapeia para o host e a porta do serviço de email de destino. Este exemplo usa o mapeamento: `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
-   + O `smpt.port` é definido como `portForward.portOrig` e NÃO a porta real do servidor SMTP. O mapeamento entre a `smtp.port` e `portForward.portOrig` A porta é estabelecida pelo Cloud Manager `portForwards` (conforme demonstrado abaixo).
++ `smtp.host` está definido como a variável de ambiente OSGi `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` portanto, é roteado através da saída.
+   + `$[env:AEM_PROXY_HOST]` é uma variável reservada que o AEM as a Cloud Service mapeia para o estado interno `proxy.tunnel` host.
+   + NÃO tente definir o `AEM_PROXY_HOST` pelo Cloud Manager.
++ `smtp.port` está definido como `portForward.portOrig` porta que mapeia para o host e a porta do serviço de email de destino. Este exemplo usa o mapeamento: `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
+   + A variável `smpt.port` está definido como `portForward.portOrig` e NÃO a porta real do servidor SMTP. O mapeamento entre a variável `smtp.port` e a variável `portForward.portOrig` A porta é estabelecida pelo Cloud Manager `portForwards` regra (conforme demonstrado abaixo).
 
-Como os segredos não devem ser armazenados no código, o nome de usuário e a senha do serviço de email são melhor fornecidos usando [variáveis de configuração secretas do OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), definido usando a AIO CLI ou a API do Cloud Manager.
+Como os segredos não devem ser armazenados no código, é melhor fornecer o nome de usuário e a senha do serviço de email usando [variáveis de configuração OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), definido usando a CLI da AIO ou a API do Cloud Manager.
 
-Normalmente, [saída de porta flexível](../flexible-port-egress.md) é usada para satisfazer a integração com um serviço de email, a menos que seja necessário `allowlist` o Adobe IP, caso em que [endereço ip de saída dedicado](../dedicated-egress-ip-address.md) pode ser usada.
+Normalmente, [saída de porta flexível](../flexible-port-egress.md) é usado para satisfazer a integração com um serviço de email, a menos que seja necessário `allowlist` o IP Adobe, nesse caso [endereço ip de saída dedicado](../dedicated-egress-ip-address.md) pode ser usado.
 
-Além disso, reveja AEM documentação sobre [envio de e-mail](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Além disso, consulte a documentação do AEM em [envio de e-mail](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-## Suporte avançado para rede
+## Suporte avançado a rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
 
-Verifique se a variável [adequada](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi configurada antes de seguir este tutorial.
+Assegure a [apropriado](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi definida antes de seguir este tutorial.
 
-| Sem rede avançada | [Saída flexível da porta](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
+| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
-## Configuração do OSGi
+## Configuração OSGi
 
-Este exemplo de configuração OSGi configura AEM Serviço OSGi de Email para usar um serviço de email externo, por meio do seguinte Cloud Manager `portForwards` regra do [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) operação.
+Este exemplo de configuração OSGi configura o serviço OSGi de email do AEM para usar um serviço de email externo, por meio do seguinte Cloud Manager `portForwards` regra do [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) operação.
 
 ```json
 ...
@@ -77,10 +77,10 @@ Configurar AEM [DefaultMailService](https://experienceleague.adobe.com/docs/expe
 }
 ```
 
-O `EMAIL_USERNAME` e `EMAIL_PASSWORD` A variável OSGi e o segredo podem ser definidos por ambiente, usando:
+A variável `EMAIL_USERNAME` e `EMAIL_PASSWORD` A variável OSGi e o segredo podem ser definidos por ambiente, usando:
 
 + [Configuração do ambiente do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
-+ ou usando a `aio CLI` comando
++ ou usando o `aio CLI` comando
 
    ```shell
    $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret EMAIL_USERNAME "myApiKey" --secret EMAIL_PASSWORD "password123"

@@ -1,6 +1,6 @@
 ---
 title: Etapas para solucionar problemas de falhas específicas do OpenOffice em uma configuração do Windows
-description: Solucione problemas do OpenOffice com problemas de PDF Generator na Instalação do Windows.
+description: Solucione problemas do OpenOffice com problemas do PDF Generator na instalação do Windows.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Etapas para solucionar problemas de falhas específicas do OpenOffice em uma configuração do Windows para AEM Forms PDFG Conversion
+# Etapas para solucionar problemas de falhas específicas do OpenOffice em uma configuração do Windows para Conversão de PDFG do AEM Forms
 
 *Este vídeo aborda o processo de solução de problemas de falhas específicas do OpenOffice em uma configuração do Windows.*
 

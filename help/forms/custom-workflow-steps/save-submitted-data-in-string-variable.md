@@ -9,7 +9,8 @@ level: Beginner
 kt: 11199
 last-substantial-update: 2022-10-02T00:00:00Z
 thumbnail: string-variable.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+exl-id: 65dcbfbb-7eb5-4fa3-aeb3-587c59ee2fe9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
@@ -18,15 +19,15 @@ ht-degree: 0%
 
 # Extrair dados vinculados e salvá-los em uma variável de string
 
-Esse recurso permite incluir os dados enviados no corpo do email. A etapa do processo personalizado extrai a variável **dados vinculados** no envio do formulário adaptável e preenche uma variável do tipo string com os dados. Em seguida, você pode usar essa variável de string para inserir os dados em seu template de email.
-A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa do processo personalizado
+Esse recurso permite incluir os dados enviados no corpo do email. A etapa de processo personalizado extrai o **dados vinculados** do envio do formulário adaptável e preenche uma variável do tipo string com os dados. Em seguida, você pode usar essa variável de sequência de caracteres para inserir os dados no modelo de email.
+A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
 ![etapa do processo](assets/save-submitted-data-string.png)
 
-A seguir estão os parâmetros
+Veja a seguir os parâmetros
 
-* `data.xml` - O arquivo com os dados enviados. Se o formato estiver em json, o nome do arquivo pode ser data.json
+* `data.xml` - O arquivo que tem os dados enviados. Se o formato estiver em json, o nome do arquivo pode ser data.json
 
-A etapa do processo personalizado extrairá os dados vinculados e os armazenará na variável submitDataString definida no workflow
+A etapa de processo personalizada extrairá os dados vinculados e os armazenará na variável submitDataString definida no fluxo de trabalho
 
 
 [O pacote personalizado pode ser baixado aqui](assets/AEMFormsProcessStep.core-1.0.0-SNAPSHOT.jar)

@@ -21,13 +21,13 @@ ht-degree: 2%
 
 # Adicionar colunas personalizadas
 
-Para exibir dados de fluxo de trabalho na caixa de entrada, precisamos definir e preencher variáveis no fluxo de trabalho. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para dar a você um início importante, fornecemos um workflow de amostra que está pronto para ser implantado em seu servidor de AEM.
+Para exibir os dados do workflow na caixa de entrada, precisamos definir e preencher variáveis no workflow. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para você ter uma vantagem inicial, fornecemos um fluxo de trabalho de amostra pronto para ser implantado em seu servidor AEM.
 
-* [Logon no AEM](http://localhost:4502/crx/de/index.jsp)
-* [Importe o fluxo de trabalho de revisão](assets/review-workflow.zip)
+* [Fazer logon no AEM](http://localhost:4502/crx/de/index.jsp)
+* [Importar o fluxo de trabalho de revisão](assets/review-workflow.zip)
 * [Revisar o fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Esse workflow tem duas variáveis definidas (isCasado e renda) e seus valores são definidos usando o componente de variável set. Essas variáveis são disponibilizadas como colunas a serem adicionadas a AEM caixa de entrada
+Este workflow tem duas variáveis definidas (isMarried e revenue) e seus valores são definidos usando o componente set variable. Essas variáveis são disponibilizadas como colunas para serem adicionadas à caixa de entrada do AEM
 
 ## Criar serviço
 
@@ -75,26 +75,26 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Você precisa incluir AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
+>É necessário incluir AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
 
 ![uber-jar](assets/uber-jar.PNG)
 
-## Testar em seu servidor
+## Testar no servidor
 
-* [Faça logon AEM console da Web](http://localhost:4502/system/console/bundles)
+* [Fazer logon no console da Web do AEM](http://localhost:4502/system/console/bundles)
 * [Implantar e iniciar o pacote de personalização da caixa de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
-* [Abrir sua caixa de entrada](http://localhost:4502/aem/inbox)
-* Abra o Controle de Admin clicando em _Exibição de lista_ ícone ao lado de _Criar_ botão
-* Adicionar coluna Casado à Caixa de entrada e salvar suas alterações
-* [Ir para a interface do usuário do FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importe o formulário de amostra](assets/snap-form.zip) selecionando _Upload de arquivo_ from _Criar_ menu
+* [Abra sua caixa de entrada](http://localhost:4502/aem/inbox)
+* Abra o Admin Control clicando em _Exibição de lista_ ícone ao lado de _Criar_ botão
+* Adicione a coluna Casado à Caixa de entrada e salve as alterações
+* [Ir para a interface do FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Importar o formulário de amostra](assets/snap-form.zip) selecionando _Upload de arquivo_ de _Criar_ menu
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Selecione o _estado civil_ e enviar o formulário
    [exibir caixa de entrada](http://localhost:4502/aem/inbox)
 
-O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;administrador&quot;. Você deve ver um valor na coluna Casado , como mostrado nesta captura de tela
+O envio do formulário acionará o fluxo de trabalho e uma tarefa será atribuída ao usuário &quot;administrador&quot;. Você deve ver um valor na coluna Casado, como mostrado nesta captura de tela
 
-![coluna casada](assets/married-column.PNG)
+![coluna-casada](assets/married-column.PNG)
 
 ## Próximas etapas
 

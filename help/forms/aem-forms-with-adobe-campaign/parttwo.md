@@ -1,6 +1,6 @@
 ---
-title: Criação do perfil da campanha no envio do formulário adaptável
-description: Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo utiliza o mecanismo de envio personalizado para lidar com o envio do formulário adaptativo.
+title: Criar perfil da campanha no envio do formulário adaptável
+description: Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo usa o mecanismo de envio personalizado para lidar com o envio do Formulário adaptável.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 ---
 
-# Criação do perfil da campanha no envio do formulário adaptável {#creating-campaign-profile-on-adaptive-form-submission}
+# Criar perfil da campanha no envio do formulário adaptável {#creating-campaign-profile-on-adaptive-form-submission}
 
-Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo utiliza o mecanismo de envio personalizado para lidar com o envio do formulário adaptativo.
+Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo usa o mecanismo de envio personalizado para lidar com o envio do Formulário adaptável.
 
-Este tutorial percorrerá as etapas de criação do perfil do Campaign no envio adaptável de formulários. Para realizar esse caso de uso, precisamos fazer o seguinte
+Este tutorial guiará as etapas de criação de perfil do Campaign no envio de formulários adaptáveis. Para realizar esse caso de uso, precisamos fazer o seguinte
 
-* Crie um Serviço de AEM (CampaignService) para criar o Perfil do Adobe Campaign Standard usando a REST API
-* Criar uma ação de envio personalizada para lidar com o envio do formulário adaptável
+* Crie um serviço AEM (CampaignService) para criar um perfil do Adobe Campaign Standard usando a API REST
+* Criar uma ação de envio personalizada para lidar com o envio do Formulário adaptável
 * Chame o método createProfile do CampaignService
 
-## Criar Serviço AEM {#create-aem-service}
+## Criar serviço AEM {#create-aem-service}
 
-Crie AEM Service para criar um Perfil do Adobe Campaign. Esse serviço de AEM buscará as credenciais do Adobe Campaign na configuração do OSGI. Depois que as credenciais da campanha são obtidas, o token de acesso é gerado e o uso do token de acesso HTTP Post é feito para criar o perfil no Adobe Campaign. Este é o código para criação de perfil .
+Crie um serviço AEM para criar um perfil do Adobe Campaign. Esse serviço AEM buscará as credenciais do Adobe Campaign da configuração do OSGI. Depois que as credenciais da campanha são obtidas, o token de acesso é gerado e, usando a chamada HTTP Post do token de acesso, é feita para criar o perfil no Adobe Campaign. Veja a seguir o código para criar o perfil.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -239,13 +239,13 @@ return null;
 }
 ```
 
-## Envio personalizado {#custom-submit}
+## Personalizar envio {#custom-submit}
 
-Crie um manipulador de envio personalizado para lidar com o envio do Formulário adaptativo. Neste manipulador de envio personalizado, faremos uma chamada para o método createProfile do CampaignService. O método createProfile aceita um JSONObject que representa o perfil que precisa ser criado.
+Crie um manipulador de envio personalizado para lidar com o envio do Formulário adaptável. Neste manipulador de envio personalizado, faremos uma chamada para o método createProfile do CampaignService. O método createProfile aceita um JSONObject que representa o perfil que precisa ser criado.
 
-Para saber mais sobre o manipulador de envio personalizado no AEM Forms, siga este exemplo [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Para saber mais sobre o manipulador de envio personalizado no AEM Forms, siga este [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
-Este é o código no envio personalizado
+Veja a seguir o código no envio personalizado
 
 ```java
 aemforms.campaign.core.CampaignService addNewProfile = sling.getService(aemforms.campaign.core.CampaignService.class);
@@ -260,15 +260,15 @@ String pkey = addNewProfile.createProfile(profile);
 
 ## Testar a solução {#test-the-solution}
 
-Depois de definir o serviço e a ação de envio personalizado, estamos prontos para testar nossa solução. Para testar a solução, execute as seguintes etapas
+Após definir o serviço e a ação de envio personalizada, estamos prontos para testar nossa solução. Para testar a solução, execute as seguintes etapas
 
 
-* [Siga as etapas conforme descrito aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar formulário adaptável e manipulador de envio personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip).Este pacote contém o formulário adaptável configurado para enviar para a ação de envio personalizada.
+* [Siga as etapas descritas aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importar formulário adaptável e manipulador de envio personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip). Este pacote contém o Formulário adaptável configurado para enviar à ação de envio personalizada.
 * Visualize o [formulário](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Preencha todos os campos e envie
-* Um novo perfil é criado na instância do ACS
+* Um novo perfil é criado em sua instância do ACS
 
 ## Próximas etapas
 
-[Preenchimento prévio de formulário adaptável usando informações de perfil ACS](./partthree.md)
+[Preenchimento prévio do formulário adaptável usando informações de perfil do ACS](./partthree.md)

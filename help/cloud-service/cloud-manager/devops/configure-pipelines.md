@@ -1,5 +1,5 @@
 ---
-title: Configurar pipeline do Cloud Manager
+title: Configurar os pipelines do Cloud Manager
 description: Configure um pipeline no AEM e explore os diferentes tipos de pipelines.
 role: Developer
 level: Beginner

@@ -1,6 +1,6 @@
 ---
 title: Como coletar logs do Workbench no menu Ajuda
-description: Etapas para coletar os logs do Workbench no Menu Ajuda
+description: Etapas para coletar os logs do Workbench no menu Ajuda
 type: Troubleshooting
 role: Developer
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Coletando logs do Workbench no Menu de Ajuda
+# Coletando logs do Workbench no menu Ajuda
 
-*Este vídeo aborda o processo para coletar logs do Workbench no Menu de ajuda .*
+*Este vídeo aborda o processo de coleta de logs do Workbench no menu Ajuda.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)

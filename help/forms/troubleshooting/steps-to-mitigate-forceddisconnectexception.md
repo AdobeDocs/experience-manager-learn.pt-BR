@@ -1,6 +1,6 @@
 ---
 title: Obtendo ForcedDisconnectException. Possíveis causas e etapas para atenuar o problema.
-description: Etapas para resolver a exceção "ForcedDisconnectException - Este membro foi forçado a sair do sistema distribuído".
+description: Etapas para resolver a exceção "ForcedDisconnectException - esse membro foi forçado a sair do sistema distribuído".
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Etapas para mitigar o ForcedDisconnectException
+# Etapas para atenuar ForcedDisconnectException
 
-*Este vídeo aborda as possíveis causas e etapas para mitigar o ForcedDisconnectException*
+*Este vídeo aborda as possíveis causas e etapas para atenuar ForcedDisconnectException*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Adicionar painéis filhos ao painel raiz
-description: Configuração do layout do painel raiz para "Guias à esquerda" e adição de painéis filhos ao painel raiz.
+title: Adicionar painéis secundários ao painel raiz
+description: Configurar o layout do painel raiz como "Guias à esquerda" e adicionar painéis secundários ao painel raiz.
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 28536.jpg
@@ -16,16 +16,16 @@ ht-degree: 2%
 
 ---
 
-# Adicionar painéis filhos ao painel raiz {#adding-child-panels-to-root-panel}
+# Adicionar painéis secundários ao painel raiz {#adding-child-panels-to-root-panel}
 
-Adicione painéis filhos ao painel raiz.
+Adicione painéis secundários ao painel raiz.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
 
 >[!NOTE]
->Ao adicionar painéis filhos ao painel raiz, **Verifique se você está no modo de edição. O botão Editar está localizado no lado superior direito do navegador.**
+>Ao adicionar painéis secundários ao painel raiz, **Verifique se você está no modo de edição. O botão de edição está localizado no lado superior direito do navegador.**
 
 ## Próximas etapas
 
-[Adicionar componentes ao painel Pessoas](./adding-components-to-people-panel.md)
+[Adicionar componentes ao painel Gente](./adding-components-to-people-panel.md)

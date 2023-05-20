@@ -1,6 +1,6 @@
 ---
 title: Adobe Asset Link e AEM
-description: Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM nas ferramentas do Creative Cloud, como Adobe XD, Photoshop, InDesign e Illustrator.
+description: Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos nos aplicativos de desktop favoritos da Adobe Creative Cloud. A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise estende a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, fazer check-out, modificar, fazer check-in e exibir metadados de ativos AEM em ferramentas do Creative Cloud, como Adobe XD, Photoshop, InDesign e Illustrator.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 topic: Content Management
@@ -17,14 +17,14 @@ ht-degree: 1%
 
 # Adobe Asset Link 3.0
 
-Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos em seus aplicativos favoritos de desktop do Adobe Creative Cloud.
+Os ativos do Adobe Experience Manager podem ser usados por designers e usuários criativos nos aplicativos de desktop favoritos da Adobe Creative Cloud.
 
-A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, sair, modificar, fazer check-in e exibir metadados de ativos AEM em aplicativos Creative Cloud.
+A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise estende a capacidade de pesquisar e navegar, classificar, visualizar, carregar ativos, fazer check-out, modificar, fazer check-in e exibir metadados de ativos AEM em aplicativos Creative Cloud.
 
 ## Recursos do Adobe Asset Link
 
 + O Adobe Asset Link integra-se ao AEM Assets e ao Assets Essentials.
-+ O Adobe Asset Link configura automaticamente a conexão com ambientes de AEM baseados em nuvem (AEM Assets as a Cloud Service e Assets Essentials)
++ O Adobe Asset Link configura automaticamente a conexão com ambientes AEM baseados em nuvem (AEM Assets as a Cloud Service e Assets Essentials)
 + O Adobe Asset Link é uma extensão que funciona em aplicativos Adobe Creative Cloud:
 
    + Adobe XD
@@ -32,41 +32,41 @@ A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise amplia a
    + Adobe Illustrator
    + Adobe InDesign
 
-+ Autenticação automática para AEM usando Adobe Enterprise ID ou Federated ID
-+ Procure por ativos digitais no AEM
-+ Acesse os detalhes do arquivo para ativos que residem no AEM com o painel :
++ Autenticação automática para AEM usando seu Enterprise ID ou Federated ID de Adobe
++ Procurar e pesquisar ativos digitais no AEM
++ Acesse os detalhes do arquivo para ativos que residem em AEM no painel:
    + Miniatura 
    + Metadados básicos
    + Versões
-+ Inserir, baixar ou arrastar e soltar ativos em seu layout
-+ Modifique ativos fazendo check-out de AEM e trabalhando neles (WIP) em sua conta Creative Cloud Assets
-+ Verifique um ativo de volta para o AEM depois que terminar de modificá-lo e a nova versão refletida no AEM
-+ Pesquise ativos no AEM no painel no aplicativo do Adobe Asset Link
-+ Procurar coleções e coleções inteligentes do AEM Assets diretamente do painel Link de ativos
++ Inserir, baixar ou arrastar e soltar ativos no layout
++ Modifique ativos verificando-os do AEM e trabalhando neles (WIP) na conta de ativos Creative Cloud
++ Verificar novamente um ativo no AEM depois que ele terminar de modificá-lo e a nova versão refletida no AEM
++ Pesquisar por ativos no AEM no painel Adobe Asset Link no aplicativo
++ Procurar coleções do AEM Assets e coleções inteligentes diretamente no painel Link de ativos
 + Adicionar ativos recém-criados ao AEM diretamente do painel
 + Arraste e solte ativos diretamente nos quadros do InDesign
 
-## Colocar ativos no InDesign
+## Colocação de ativos no InDesign
 
-O Adobe Asset Link fornece suporte a vinculação direta do InDesign entre o Adobe Asset Link e o AEM. Com o suporte a links diretos InDesign, é possível inserir (__Local vinculado__ ou __Inserir cópia__) ou arraste e solte ativos digitais no InDesign por AEM através do painel Adobe Asset Link. Além disso, introduz a renderização *Para posicionamento somente+ (FPO) .
+O Adobe Asset Link fornece suporte à vinculação direta de InDesigns entre o Adobe Asset Link e o AEM. Com o suporte de vinculação direta do InDesign, você pode colocar (__Local vinculado__ ou __Inserir cópia__) ou arraste e solte ativos digitais no InDesign a partir do AEM por meio do painel Adobe Asset Link. Além disso, introduz a representação *Somente para posicionamento+ (FPO).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >
->Use somente o Enterprise ID ou Federated ID Adobe Creative Cloud. Certifique-se de que [configurar AEM para Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Use apenas o Enterprise ID ou Federated ID Adobe Creative Cloud. Verifique se você [configurar o AEM para o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 Você pode colocar um ativo no layout do InDesign usando uma das opções abaixo:
 
-+ **Inserir cópia** - A incorporação de um ativo (usando a opção Inserir cópia) coloca uma cópia do ativo original no layout do InDesign depois de baixar os binários no sistema local. O Adobe Asset Link não mantém nenhum link entre a cópia incorporada e o ativo original. Se o ativo original for modificado no AEM, você deverá excluir o ativo incorporado do arquivo do InDesign e reincorporar o ativo do AEM.
++ **Inserir cópia** : incorporar um ativo (usando a opção Inserir cópia ) coloca uma cópia do ativo original no layout do InDesign depois de baixar os binários no sistema local. O Adobe Asset Link não mantém nenhum vínculo entre a cópia incorporada e o ativo original. Se o ativo original for modificado no AEM, você deverá excluir o ativo incorporado do arquivo do InDesign e incorporar novamente o ativo do AEM.
 
-+ **Local vinculado** - Ao trabalhar com documentos do InDesign, você tem a opção de fazer referência aos ativos do AEM além de incorporar diretamente os ativos (usando a opção Inserir cópia no menu de contexto). Referenciar ativos permite colaborar com outros usuários e incorporar qualquer atualização feita ao ativo original no AEM. Para fazer referência a um ativo do AEM, use a opção Inserir link no menu de contexto.
++ **Local vinculado** - Ao trabalhar com documentos do InDesign, você tem a opção de fazer referência aos ativos do AEM, além de incorporar diretamente os ativos (usando a opção Inserir cópia no menu de contexto). A referência a ativos permite colaborar com outros usuários e incorporar todas as atualizações feitas no ativo original no AEM. Para fazer referência a um ativo do AEM, use a opção Inserir vinculado no menu de contexto.
 
-### Para imagens somente posicionamento
+### Imagens somente para posicionamento
 
-Quando arquivos de ativos grandes são colocados em Documentos do InDesign a partir de AEM usando o Adobe Asset Link, os usuários de criação precisam aguardar alguns segundos após iniciar a operação place. Isso afeta a experiência geral do usuário. Com o Adobe Asset Link, é possível colocar temporariamente uma imagem de baixa resolução do ativo original a partir do AEM, reduzindo assim o tempo gasto para colocar uma imagem. Ao mesmo tempo, aumenta a experiência geral do usuário e a produtividade. A imagem de resolução mais baixa é colocada temporariamente e quando a saída final é necessária para impressão ou publicação, é necessário substituir as representações FPO pelos originais. Se você deseja substituir várias imagens FPO com as respectivas imagens originais, navegue até **_Windows > Links_** e baixe os ativos originais. Após o download das imagens originais, escolha Substituir todas as FPOs por originais.
+Quando arquivos de ativos grandes são colocados em Documentos do InDesign a partir do AEM usando o Adobe Asset Link, os usuários de criação precisam aguardar alguns segundos após iniciar a operação de inserção. Isso afeta a experiência geral do usuário. Com o Adobe Asset Link, você pode colocar temporariamente uma imagem de baixa resolução do ativo original do AEM, reduzindo assim o tempo necessário para colocar uma imagem. Ao mesmo tempo, aumenta a experiência geral do usuário e a produtividade. A imagem de resolução mais baixa é colocada temporariamente e, quando a saída final for necessária para impressão ou publicação, será necessário substituir as representações FPO pelos originais. Se quiser substituir várias imagens FPO pelas respectivas imagens originais, navegue até **_Janelas > Links_** e baixe os ativos originais. Depois que as imagens originais forem baixadas, escolha Substituir todas as FPOs por originais.
 
-As representações de FPO são substitutos leves dos ativos originais. Elas têm a mesma proporção, mas têm tamanho menor em comparação às imagens originais. Atualmente, o InDesign suporta a importação de representações FPO somente para os seguintes tipos de imagem:
+As representações FPO são substitutos leves dos ativos originais. Elas têm a mesma proporção, mas são de tamanho menor em comparação às imagens originais. Atualmente, o InDesign oferece suporte à importação de representações FPO somente para os seguintes tipos de imagem:
 
 + JPEG
 + GIF
@@ -75,23 +75,23 @@ As representações de FPO são substitutos leves dos ativos originais. Elas tê
 + PSD
 + BMP
 
-Se uma representação de FPO não estiver disponível para um ativo específico no AEM, o ativo original de alta resolução será referenciado. Para imagens FPO, o status FPO é exibido no painel Links do InDesign .
+Se uma representação FPO não estiver disponível para um ativo específico no AEM, o ativo original de alta resolução será referenciado. Para imagens FPO, o status FPO é exibido no painel Vínculos de InDesign.
 
 ## Autenticação do Adobe Asset Link com o AEM Assets
 
-Como a autenticação do Adobe Asset Link funciona no contexto do Adobe Identity Management Services (IMS) e do Autor do Adobe Experience Manager.
+Como a autenticação do Adobe Asset Link funciona no contexto do Adobe Identity Management Services (IMS) e do Adobe Experience Manager Author.
 
 ![Arquitetura do Adobe Asset Link](assets/adobe-asset-link-article-understand.png)
 
-1. A extensão Adobe Asset Link faz uma solicitação de autorização, por meio do aplicativo de desktop do Adobe Creative Cloud, para o Adobe Identity Management Service (IMS) e, após o sucesso, recebe um token de portador.
-1. A extensão Adobe Asset Link se conecta ao Autor do AEM por HTTP(S), incluindo o token Portador obtido em **Etapa 1**, usando o esquema (HTTP/HTTPS), o host e a porta fornecidos nas configurações da extensão JSON.
-1. O Manipulador de autenticação do portador da AEM extrai o token do portador da solicitação e o valida com o Adobe IMS.
-1. Depois que o Adobe IMS valida o token do portador, um usuário é criado no AEM (caso ainda não exista) e sincroniza os dados de perfil e grupo/associações do Adobe IMS. O usuário AEM recebe um token de login AEM padrão, que é enviado de volta à extensão Adobe Asset Link como um Cookie na resposta HTTP(S).
-1. Interações subsequentes (ou seja, navegação, pesquisa, check-in/out de ativos etc.) com a extensão do Adobe Asset Link resulta em solicitações HTTP(S) para o Autor do AEM, que são validadas usando o token de login AEM, usando o Manipulador de Autenticação de Token AEM padrão.
+1. A extensão Adobe Asset Link faz uma solicitação de autorização, por meio do aplicativo de desktop da Adobe Creative Cloud, para o Adobe Identity Manager Service (IMS) e, após ser bem-sucedida, recebe um token de portador.
+1. A extensão Adobe Asset Link conecta-se ao AEM Author por HTTP(S), incluindo o token do portador obtido em **Etapa 1**, usando o esquema (HTTP/HTTPS), o host e a porta fornecidos nas configurações de JSON da extensão.
+1. O Manipulador de autenticação de portador do AEM extrai o token do portador da solicitação e o valida com o Adobe IMS.
+1. Depois que o Adobe IMS valida o token do portador, um usuário é criado no AEM (se ele ainda não existir) e sincroniza dados de perfil e de grupos/associações do Adobe IMS. O usuário AEM recebe um token de logon AEM padrão, que é enviado de volta para a extensão Adobe Asset Link como um Cookie na resposta HTTP(S).
+1. Interações subsequentes (ou seja, navegar, pesquisar, fazer check-in/check-out de ativos etc.) com a extensão Adobe Asset Link, o resultado são solicitações HTTP(S) para o AEM Author, validadas usando o token de logon AEM, usando o Manipulador de autenticação de token de AEM padrão.
 
 >[!NOTE]
 >
->Após o término do token de login, **Etapas 1-5** O invocará, autenticará automaticamente a extensão Adobe Asset Link usando o token portador e emitirá novamente um token de logon novo e válido.
+>Após a expiração do token de logon, **Etapas 1-5** O chamará automaticamente o, autenticando a extensão Adobe Asset Link usando o token de portador e emitirá novamente um token de logon novo e válido.
 
 ## Recursos adicionais
 

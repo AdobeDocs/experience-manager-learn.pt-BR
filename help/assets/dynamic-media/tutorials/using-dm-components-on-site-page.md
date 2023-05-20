@@ -1,6 +1,6 @@
 ---
-title: Uso dos componentes principais do Dynamic Media
-description: Etapas que usam componentes do Dynamic Media na página Sites
+title: Uso dos Componentes principais do Dynamic Media
+description: Etapas usam componentes do Dynamic Media na página Sites
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Uso dos componentes principais do Dynamic Media
+# Uso dos Componentes principais do Dynamic Media
 
-Este vídeo aborda o processo de uso dos Componentes principais habilitados para Dynamic Media em uma página da Web do AEM Sites.
+Este vídeo aborda o processo de usar os Componentes principais habilitados para o Dynamic Media em uma página da Web do AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)

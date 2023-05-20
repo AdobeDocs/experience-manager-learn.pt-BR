@@ -1,6 +1,6 @@
 ---
 title: Como alterar o valor da entropia
-description: Etapas para alterar o valor da entropia no nível do sistema operacional
+description: Etapas para alterar o valor de entropia no nível do sistema operacional
 type: Troubleshooting
 role: Admin
 level: Intermediate

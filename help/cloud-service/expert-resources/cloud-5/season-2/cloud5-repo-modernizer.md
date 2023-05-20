@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Repository Modernizer
-description: Modernização do repositório de AEM e como ele funciona
+title: Cloud 5 - Modernizador de repositório
+description: Modernização do repositório AEM e seu funcionamento
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 ---
 
-# Cloud 5 - Repository Modernizer
+# Cloud 5 - Modernizador de repositório
 
-Os caras examinam como o modernizador de repositório ajuda na transição para AEM as a Cloud Service com uma visão geral útil de como funciona e por quê.
+Os caras analisam como o modernizador de repositório ajuda na transição para o AEM as a Cloud Service com uma visão geral útil de como funciona e por quê.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 

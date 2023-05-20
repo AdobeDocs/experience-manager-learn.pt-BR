@@ -21,37 +21,37 @@ Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Este vídeo aborda o processo de adicionar um CAPTCHA a um Formulário adaptável AEM usando o serviço integrado AEM CAPTCHA e o serviço Google reCAPTCHA.*
+*Este vídeo aborda o processo de adicionar um CAPTCHA a um formulário adaptável AEM usando o serviço integrado AEM CAPTCHA, bem como o serviço reCAPTCHA da Google.*
 
 >[!NOTE]
 >
->Este recurso está disponível somente a partir do AEM 6.3.
+>Esse recurso está disponível somente a partir do AEM 6.3.
 
 >[!NOTE]
 >
 >**Para configurar o reCaptcha na instância de publicação, siga as etapas**
 >
->Configurar o reCaptach na instância do autor
+>Configurar reCaptach na instância do autor
 >
 >abra o Felix [console da web](http://localhost:4502/system/console/bundles) na instância do autor
 >
->pesquise o pacote com.adobe.granite.crypto.file
+>pesquisar pacote com.adobe.granite.crypto.file
 >
->Observe a id do pacote. No meu caso é 20
+>Observe a id do pacote. No meu caso, são 20
 >
 >Navegue até a id do pacote no sistema de arquivos na instância do autor
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copie o HMAC e os arquivos principais
+* Copie os arquivos HMAC e principais
 >
-Abra o [console da web felix](http://localhost:4502/system/console/bundles) na sua instância de publicação. Procure por um pacote com.adobe.granite.crypto.file. Observe a id do pacote
-Navegue até a id do pacote no sistema de arquivos da sua instância de publicação
+Abra o [felix web console](http://localhost:4502/system/console/bundles) na instância de publicação. Pesquise por pacote com.adobe.granite.crypto.file. Observe a id do pacote
+Navegue até a id do pacote no sistema de arquivos da instância de publicação
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * exclua os arquivos HMAC e principais existentes.
-* cole o HMAC e os arquivos principais copiados da instância do autor
+* cole os arquivos HMAC e principais copiados da instância do autor
 >
-Reinicie o servidor de publicação de AEM
+Reinicie o servidor de publicação AEM
 
-## Materiais de apoio {#supporting-materials}
+## Materiais de suporte {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)

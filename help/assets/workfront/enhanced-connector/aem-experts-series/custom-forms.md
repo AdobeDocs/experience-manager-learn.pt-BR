@@ -1,6 +1,6 @@
 ---
-title: Formulários personalizados Workfront e mapeamento de metadados com o Workfront para AEM conector aprimorado
-description: Saiba como configurar o Workfront e o AEM Assets para gerenciar e sincronizar metadados de ativos usando formulários personalizados do Workfront e esquemas de metadados de AEM.
+title: Formulários personalizados do Workfront e mapeamento de metadados com o conector aprimorado Workfront para AEM
+description: Saiba como configurar o Workfront e o AEM Assets para gerenciar e sincronizar metadados de ativos usando formulários personalizados do Workfront e esquemas de metadados do AEM.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# Formulários personalizados Workfront e mapeamento de metadados
+# Formulários personalizados do Workfront e mapeamento de metadados
 
-![Série AEM especialistas](./assets/banner.png)
+![Série para especialistas em AEM](./assets/banner.png)
 
-Saiba como configurar o Workfront e o AEM Assets para gerenciar e sincronizar metadados de ativos usando formulários personalizados do Workfront e esquemas de metadados de AEM.
+Saiba como configurar o Workfront e o AEM Assets para gerenciar e sincronizar metadados de ativos usando formulários personalizados do Workfront e esquemas de metadados do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Parte 2 de a [série de especialistas de quatro partes sobre o conector Workfront for Experience Manager enhanced](./overview.md)_
+_Segunda parte de a [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_

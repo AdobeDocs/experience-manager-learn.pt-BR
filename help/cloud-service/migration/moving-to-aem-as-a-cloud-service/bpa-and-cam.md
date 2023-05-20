@@ -1,6 +1,6 @@
 ---
-title: Configurar o BPA e o projeto CAM
-description: Saiba como o Analisador de práticas recomendadas e o Cloud Acceleration Manager fornecem um guia personalizado para a migração para AEM as a Cloud Service.
+title: Configurar seu projeto BPA e CAM
+description: Saiba como o Analisador de práticas recomendadas e o Cloud Acceleration Manager fornecem um guia personalizado sobre a migração para o AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
@@ -12,13 +12,13 @@ exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Gerenciador de aceleração de nuvem e do Analisador de práticas recomendadas
+# Analisador de práticas recomendadas e Cloud Acceleration Manager
 
-Saiba como o BPA (Best Practices Analyzer) e o CAM (Cloud Acceleration Manager) fornecem um guia personalizado para migrar para AEM as a Cloud Service. 
+Saiba como o Analisador de práticas recomendadas (BPA) e o Cloud Acceleration Manager (CAM) fornecem um guia personalizado sobre a migração para o AEM as a Cloud Service. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/336957?quality=12&learn=on)
 
@@ -26,39 +26,39 @@ Saiba como o BPA (Best Practices Analyzer) e o CAM (Cloud Acceleration Manager) 
 
 ![Diagrama de alto nível de BPA e CAM](assets/bpa-cam-diagram.png)
 
-O pacote BPA deve ser instalado em um clone do ambiente de produção AEM 6.x. O BPA gerará um relatório que poderá ser carregado para o CAM, o que fornecerá orientação sobre as atividades principais que precisam ocorrer para se mudarem para o AEM as a Cloud Service.
+O pacote de BPA deve ser instalado em um clone do ambiente de produção de AEM 6.x. O BPA gerará um relatório que poderá ser carregado no CAM, o que fornecerá orientação sobre as principais atividades que devem ocorrer para migrar para o AEM as a Cloud Service.
 
 ## Atividades principais
 
-+ Faça um clone do ambiente 6.x de produção. À medida que você migra o conteúdo e o código de refatoração, ter um clone de um ambiente de produção é valioso para testar várias ferramentas e alterações.
-+ Baixe a ferramenta BPA mais recente da [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e instale no ambiente clonado do AEM 6.x.
++ Faça um clone de seu ambiente de produção 6.x. À medida que você migra o conteúdo e refatora o código, ter um clone de um ambiente de produção é algo valioso para testar várias ferramentas e alterações.
++ Baixe a ferramenta BPA mais recente do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e instale no ambiente clonado do AEM 6.x.
 + Use a ferramenta BPA para gerar um relatório que pode ser carregado para o Cloud Acceleration Manager (CAM). O CAM é acessado por meio de [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
-+ Use CAM para fornecer orientação sobre quais atualizações precisam ser feitas na base de código e no ambiente atuais, a fim de mudar para AEM as a Cloud Service.
++ Use o CAM para fornecer orientação sobre quais atualizações precisam ser feitas na base de código e no ambiente atuais para migrar para o AEM as a Cloud Service.
 
 ## Exercício prático
 
-Aplique o seu conhecimento experimentando o que aprendeu com este exercício prático.
+Aplique seu conhecimento experimentando o que você aprendeu com este exercício prático.
 
-Antes de experimentar o exercício prático, certifique-se de ter assistido e compreendido o vídeo acima e os seguintes materiais:
+Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
-+ [Pensando de forma diferente sobre AEM as a Cloud Service](./introduction.md)
-+ [O que é AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
++ [Pensando diferente sobre AEM as a Cloud Service](./introduction.md)
++ [O que é o AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
 + [Arquitetura do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
-+ [Conteúdo variável e imutável](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
-+ [Diferenças no desenvolvimento para AEM as a Cloud Service e AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
++ [Conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
++ [Diferenças no desenvolvimento de AEM as a Cloud Service e AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
 
 <table style="border-width:0">
     <tr>
         <td style="width:150px">
             <a  rel="noreferrer"
                 target="_blank"
-                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session1-differently#bootcamp---session-1-introduction-and-thinking-differently"><img alt="Repositório GitHub de exercício manual" src="./assets/github.png"/>
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session1-differently#bootcamp---session-1-introduction-and-thinking-differently"><img alt="Repositório GitHub de exercícios práticos" src="./assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Manual com o Analisador de práticas recomendadas</div>
+            <div style="font-size:1.25rem;font-weight:400;">Práticas com o Analisador de práticas recomendadas</div>
             <p style="margin:1rem 0">
-                Explore o BPA (Best Practices Analyzer) e revise os resultados executando-o em uma base de código WKND herdada que contém exemplos de violações.
+                Explore o Analisador de práticas recomendadas (BPA) e revise os resultados ao executá-lo em uma base de código WKND herdada que contém violações de exemplo.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
@@ -72,4 +72,4 @@ Antes de experimentar o exercício prático, certifique-se de ter assistido e co
 
 ## Outros recursos
 
-+ [Baixe o Analisador de práticas recomendadas](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
++ [Baixar o Analisador de práticas recomendadas](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)

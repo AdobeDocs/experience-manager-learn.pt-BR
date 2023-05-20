@@ -1,6 +1,6 @@
 ---
-title: Configuração do formulário adaptável para acionar AEM fluxo de trabalho
-description: Entendendo as várias opções na configuração do Formulário adaptativo para acionar AEM fluxo de trabalho
+title: Configuração do formulário adaptável para acionar o fluxo de trabalho do AEM
+description: Compreender as várias opções na configuração do Formulário adaptável para acionar o fluxo de trabalho do AEM
 feature: Workflow
 topics: integrations
 audience: developer
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Configuração do formulário adaptável para acionar AEM fluxo de trabalho
+# Configuração do formulário adaptável para acionar o fluxo de trabalho do AEM
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28316?quality=12&learn=on)

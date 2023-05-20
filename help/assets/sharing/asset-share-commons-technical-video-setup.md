@@ -1,6 +1,6 @@
 ---
-title: Configurar o Compartilhamento de Ativos Commons no AEM local
-description: Materiais para o entendimento funcional e técnico Ativos Compartilham Commons
+title: Configurar o Asset Share Commons no AEM local
+description: Materiais para o entendimento funcional e técnico Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -14,14 +14,14 @@ ht-degree: 0%
 
 ---
 
-# Configurar o Compartilhamento de Ativos Commons no AEM local {#setup-asset-share-commons}
+# Configurar o Asset Share Commons no AEM local {#setup-asset-share-commons}
 
-Um breve guia para executar o Asset Share Commons em uma instância de AEM local.
+Um breve guia sobre como fazer o Asset Share Commons funcionar em uma instância local de AEM.
 
 >[!NOTE]
 >
->O Asset Share Commons requer um mínimo de AEM 6.3 com Service Pack 1 (SP1) instalado.
+>O Asset Share Commons exige um mínimo de AEM 6.3 com Service Pack 1 (SP1) instalado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20499?quality=12&learn=on)
 
-Uma breve apresentação em vídeo sobre download e instalação do Asset Share Commons, juntamente com seu conteúdo de amostra em uma instância de AEM local.
+Uma breve apresentação em vídeo sobre como baixar e instalar o Asset Share Commons, juntamente com seu conteúdo de amostra em uma instância de AEM local.

@@ -1,6 +1,6 @@
 ---
-title: Uso do Dispatcher na nuvem
-description: Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/No local. Eles também tocam na migração para a nuvem.
+title: Utilização do Dispatcher na nuvem
+description: Darin e James discutem sobre o Dispatcher na nuvem do AEM, incluindo algumas práticas recomendadas e diferenças em relação ao AMS/No local. Elas também abordam a migração para a nuvem.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,15 +17,15 @@ ht-degree: 2%
 ---
 
 
-# Uso do Dispatcher na nuvem
+# Utilização do Dispatcher na nuvem
 
-Darin e James discutem o Dispatcher na AEM Cloud, incluindo algumas práticas recomendadas e diferenças do AMS/No local. Eles também tocam na migração para a nuvem.
+Darin e James discutem sobre o Dispatcher na nuvem do AEM, incluindo algumas práticas recomendadas e diferenças em relação ao AMS/No local. Elas também abordam a migração para a nuvem.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342067?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
 + implantação de arquivos do dispatcher em um ambiente do cloud service
-   + [Documentos de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+   + [Documentação de migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
    + [Blog](https://medium.com/adobetech/migrating-a-dispatcher-configuration-from-managed-services-to-aem-as-a-cloud-service-fa8a80d242ee)
 + [Ferramentas de migração](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)

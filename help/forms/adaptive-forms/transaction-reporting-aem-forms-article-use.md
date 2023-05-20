@@ -1,6 +1,6 @@
 ---
-title: Uso de relatórios de transação no AEM Forms
-description: Relatórios de transação no AEM Forms permitem que você mantenha uma contagem de todas as transações realizadas desde uma data especificada na implantação do AEM Forms.
+title: Utilização do relatório de transações no AEM Forms
+description: Os relatórios de transações no AEM Forms permitem manter uma contagem de todas as transações ocorridas desde uma data especificada na implantação do AEM Forms.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,37 +15,37 @@ ht-degree: 1%
 
 ---
 
-# Uso de relatórios de transação no AEM Forms{#using-transaction-reporting-in-aem-forms}
+# Utilização do relatório de transações no AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-O relatório de transação para capturar o número de Envio de formulário, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais Web e Impressão) foi introduzido no AEM Forms 6.4.1. Esse recurso destina-se principalmente aos clientes que desejam licenciar o software com base no número de envios de formulário e/ou documentos renderizados. Esse recurso está disponível atualmente apenas na pilha OSGI do AEM Forms.
+O relatório de transações para capturar o número de envios de formulários, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais da Web e de impressão) foi introduzido com o AEM Forms 6.4.1. Esse recurso destina-se principalmente aos clientes que desejam licenciar o software com base no número de envios de formulários e/ou documentos renderizados. No momento, esse recurso está disponível somente na pilha OSGI do AEM Forms.
 
 ## Ativação do Relatório de Transações {#enabling-transaction-reporting}
 
-Por padrão, a gravação de transações é desativada. Para habilitar o registro de transações, siga as etapas mencionadas abaixo:
+Por padrão, a gravação de transação está desativada. Para habilitar a gravação de transação, siga as etapas mencionadas abaixo:
 
 * [Abra o configMgr](http://localhost:4502/system/console/configMgr)
-* Pesquise por &quot;Relatório de transação do Forms&quot;
-* Marque a caixa de seleção &quot;Registrar Transações&quot;
+* Procure por &quot;Relatórios de transações do Forms&quot;
+* Marque a caixa de seleção &quot;Registrar transações&quot;
 * Salve as alterações
 
-Quando o relatório de transações estiver ativado, você poderá enviar o Adaptive Forms, gerar documentos usando serviços de documento ou renderizar documentos do Interative Communication para ver o relatório de transações em ação.
+Quando o relatório de transação estiver ativado, você poderá enviar o Adaptive Forms, gerar documentos usando serviços de documento ou renderizar documentos da Comunicação interativa para ver o relatório de transação em ação.
 
 ## Exibindo Relatório de Transação {#viewing-transaction-report}
 
-Para exibir o relatório de transação, faça logon no AEM Forms como administrador. Somente os membros do grupo fd-Administrator podem exibir o relatório de transação.
+Para exibir o relatório de transações, faça logon no AEM Forms como administrador. Somente os membros do grupo fd-Administrator podem exibir o relatório de transações.
 
-Selecionar ferramentas | Forms | Exibir Relatório de Transação
+Selecionar ferramentas | FORMS | Visualizar relatório de transações
 
-ou exiba o relatório de transação clicando em [here](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+ou exiba o relatório de transações clicando em [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![TransactionReporting](assets/transactionreporting.gif)
 
-Na captura de tela acima do Documento processado está o número de documentos gerados usando serviços de documento. Documentos renderizados é o número de documentos de comunicação interativa (Web e Impressão) renderizados. Forms Enviado é o número de Envio de formulário adaptável.
+Na captura de tela acima de Documento processado é o número de documentos gerados usando os serviços de documento. Documentos renderizados é o número de documentos de Comunicação interativa (Web e Impressão) renderizados. Forms Enviados é o número de Envios de Formulários adaptáveis.
 
-Uma transação permanece no buffer por um período especificado (Tempo do buffer de liberação + Tempo de replicação inversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
+Uma transação permanece no buffer por um período especificado (Tempo do Buffer de Liberação + Tempo de replicação reversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. A AEM Forms fornece uma API para registrar essas transações. Chame a API das implementações personalizadas para registrar uma transação.
+Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
 
-Se você estiver exibindo o relatório de transação na instância do autor, verifique se a replicação inversa está configurada em todas as instâncias de publicação.
+Se você estiver visualizando o relatório de transações na instância do autor, verifique se a replicação inversa está configurada em todas as instâncias de publicação.
 
-Para saber mais sobre relatórios de transações [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para saber mais sobre relatórios de transação [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

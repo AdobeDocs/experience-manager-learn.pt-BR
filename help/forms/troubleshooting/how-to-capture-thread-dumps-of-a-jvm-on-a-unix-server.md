@@ -1,6 +1,6 @@
 ---
-title: Como capturar despejos de encadeamento de uma JVM em um servidor unix
-description: Etapas para capturar despejos de encadeamento de um processo Java em um servidor unix
+title: Como capturar despejos de thread de uma JVM em um servidor unix
+description: Etapas para capturar despejos de thread de um processo Java em um servidor unix
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Como capturar despejos de encadeamento de uma JVM em um servidor unix
+# Como capturar despejos de thread de uma JVM em um servidor unix
 
 *Este vídeo aborda as etapas para capturar despejos de heap de uma JVM em um servidor unix.*
 

@@ -1,6 +1,6 @@
 ---
-title: Como criar um projeto do AEM usando o AEM Maven Project Archetype
-description: Explore como criar um novo projeto de aplicativo AEM usando o arquétipo de projeto AEM Maven, para alinhar-se às práticas recomendadas e acelerar o início AEM desenvolvimento.
+title: Como criar um projeto AEM usando o Arquétipo de projeto AEM Maven
+description: Explore como criar um novo projeto de aplicativo AEM usando o arquétipo do projeto AEM Maven para alinhar-se às práticas recomendadas e acelerar o início do desenvolvimento do AEM.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Criar AEM projeto usando o arquétipo de projeto AEM
+# Criar projeto AEM usando o arquétipo de projeto AEM
 
-Explore como criar um novo projeto de aplicativo AEM usando o arquétipo de projeto AEM Maven, para alinhar-se às práticas recomendadas e acelerar o início AEM desenvolvimento.
+Explore como criar um novo projeto de aplicativo AEM usando o arquétipo do projeto AEM Maven para alinhar-se às práticas recomendadas e acelerar o início do desenvolvimento do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330551?quality=12&learn=on)

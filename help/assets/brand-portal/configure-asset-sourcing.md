@@ -1,6 +1,6 @@
 ---
-title: Configuração do fornecimento de ativos com o portal da marca.
-description: Etapas para configurar o fornecimento de ativos com o Brand Portal
+title: Configuração do fornecimento de ativos com o Brand Portal.
+description: Etapas para configurar a origem de ativos com o Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Configuração do fornecimento de ativos com a Brand Portal
+# Configuração da origem do ativo com o Brand Portal
 
-*Este vídeo aborda o processo de configuração de fornecimento de ativos com a Brand Portal.*
+*Este vídeo aborda o processo de configuração do fornecimento de ativos com a Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

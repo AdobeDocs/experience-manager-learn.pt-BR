@@ -19,45 +19,45 @@ ht-degree: 3%
 
 # Configurar fonte de dados
 
-Há muitas maneiras de AEM a integração com um banco de dados externo. Uma das práticas mais comuns e padrão da integração de banco de dados é usar as propriedades de configuração do DataSource Pool do Apache Sling Connection por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar o [Drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) para AEM.
-Em seguida, defina as propriedades da fonte de dados agrupadas da conexão do Sling específicas ao seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O schema do banco de dados é fornecido a você como parte desses ativos tutoriais.
+Há muitas maneiras pelas quais o AEM permite a integração com um banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração da fonte de dados agrupada da conexão Apache Sling por meio da [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar a solução [Drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) ao AEM.
+Em seguida, defina as propriedades da Fonte de dados agrupada da conexão do Sling específicas para seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O esquema de banco de dados é fornecido a você como parte deste tutorial de ativos.
 
 ![fonte de dados](assets/data-source.JPG)
 
 
-* Classe de Driver JDBC: `com.mysql.cj.jdbc.Driver`
+* Classe de driver JDBC: `com.mysql.cj.jdbc.Driver`
 * URI da conexão JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
 
 >[!NOTE]
->Certifique-se de nomear sua fonte de dados `StoreAndRetrieveAfData` como este é o nome usado no serviço OSGi.
+>Nomeie sua fonte de dados `StoreAndRetrieveAfData` pois esse é o nome usado no serviço OSGi.
 
 
 ## Criar banco de dados
 
 
-O banco de dados a seguir foi usado para o propósito deste caso de uso. O banco de dados tem uma tabela chamada `formdatawithattachments` com as 4 colunas, conforme mostrado na captura de tela abaixo.
-![base de dados](assets/table-schema.JPG)
+O seguinte banco de dados foi usado para este caso de uso. O banco de dados tem uma tabela chamada `formdatawithattachments` com as 4 colunas conforme mostrado na captura de tela abaixo.
+![data-base](assets/table-schema.JPG)
 
 * A coluna **afdata** manterá os dados do formulário adaptável.
-* A coluna **attachmentInfo** manterá as informações sobre os anexos do formulário.
-* As colunas **phoneNumber** manterá o número do celular da pessoa que preenche o formulário.
+* A coluna **attachmentsInfo** manterá as informações sobre os anexos do formulário.
+* As colunas **phoneNumber** manterá o número de celular da pessoa que preenche o formulário.
 
 Crie o banco de dados importando o [esquema de banco de dados](assets/data-base-schema.sql)
-usando o Workbench MySQL.
+usando o MySQL workbench.
 
 ## Criar modelo de dados do formulário
 
-Crie o modelo de dados de formulário e o baseie na fonte de dados criada na etapa anterior.
-Configure o **get** serviço desse modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
-Certifique-se de que você não esteja retornando uma matriz no **get** serviço.
+Crie o modelo de dados de formulário e baseie-o na fonte de dados criada na etapa anterior.
+Configure o **obter** serviço deste modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
+Verifique se você não está retornando um storage no **obter** serviço.
 
-O objetivo deste **get** O serviço é buscar o número de telefone associado à id do aplicativo.
+O objetivo do presente **obter** serviço é buscar o número de telefone associado à id do aplicativo.
 
 ![get-service](assets/get-service.JPG)
 
-Esse modelo de dados de formulário será usado no **MyAccountForm** para buscar o número de telefone associado à id do aplicativo.
+Esse modelo de dados de formulário será usado no **FormuláriodeMinhaConta** para obter o número de telefone associado à id do aplicativo.
 
 ## Próximas etapas
 
-[Gravar código para salvar anexos de formulário](./store-form-attachments.md)
+[Escrever código para salvar anexos de formulário](./store-form-attachments.md)

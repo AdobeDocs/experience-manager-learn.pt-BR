@@ -1,7 +1,7 @@
 ---
 title: AEM Forms com esquema e dados JSON
 seo-title: AEM Forms with JSON Schema and Data
-description: Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # AEM Forms com esquema e dados JSON
 
-Tutorial de várias partes para orientá-lo pelas etapas envolvidas na criação do formulário adaptável com esquema JSON e consulta dos dados enviados.
+Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 
 Para seguir este tutorial, é recomendável ter o seguinte instalado
 
-* AEM 6.3 ou superior com o pacote de addon forms adequado
+* AEM 6.3 ou superior com pacote de complemento de formulários apropriado
 
 * Banco de dados MySQL 8
 
-* Workbench do MySQL 8
+* MySQL 8 workbench
 
-Também é recomendável que você tenha algum nível de experiência com o AEM e o AEM Forms. Você também deve se familiarizar com a instalação do MySQL DB e do MySQL workbench
+Também é recomendável que você tenha algum nível de experiência com AEM e AEM Forms. Você também deve estar familiarizado com a instalação do MySQL DB e MySQL workbench

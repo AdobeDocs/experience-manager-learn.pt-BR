@@ -1,7 +1,7 @@
 ---
 title: Criar um projeto de tradução multilíngue
 seo-title: Create a multilingual Translation Project
-description: Saiba como criar, editar e gerenciar um projeto de tradução em vários idiomas para a Cópia de idioma AEM console Projeto
+description: Saiba como criar, editar e gerenciar um projeto de tradução em vários idiomas para a Cópia de idioma no console Projeto AEM
 seo-description: Learn how to create, edit and manage a multi-language translation project for your Language Copy from AEM's Project console
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -24,6 +24,6 @@ ht-degree: 0%
 
 # Criar um projeto de tradução em vários idiomas {#create-multi-language-translation-projects}
 
-Saiba como criar, editar e gerenciar um projeto de tradução em vários idiomas para a Cópia de idioma AEM console Projeto
+Saiba como criar, editar e gerenciar um projeto de tradução em vários idiomas para a Cópia de idioma no console Projeto AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/36485?quality=12&learn=on)

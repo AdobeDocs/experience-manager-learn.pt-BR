@@ -1,49 +1,50 @@
 ---
-title: Verificação de integridade do Dispatcher do AMS
-description: O AMS fornece um script cgi-bin de verificação de integridade que os balanceadores de carga de nuvem serão executados para ver se o AEM está íntegro e deve permanecer em serviço para o tráfego público.
+title: Verificação de integridade do AMS Dispatcher
+description: O AMS fornece um script cgi-bin de verificação de integridade que os balanceadores de carga da nuvem executarão para ver se o AEM está íntegro e deve permanecer em serviço para o tráfego público.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
+exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
 
 ---
 
-# Verificação de integridade do Dispatcher do AMS
+# Verificação de integridade do AMS Dispatcher
 
 [Índice](./overview.md)
 
 [&lt;- Anterior: Arquivos somente leitura](./immutable-files.md)
 
-Quando você tem um dispatcher de linha de base do AMS instalado, ele vem com algumas licenças.  Um desses recursos é um conjunto de scripts de verificação de integridade.
-Esses scripts permitem que o balanceador de carga que encaminha a pilha de AEM saiba quais pernas estão saudáveis e as mantenha em serviço.
+Quando você tem uma linha de base do AMS instalada no dispatcher, ela vem com alguns freebies.  Um desses recursos é um conjunto de scripts de verificação de integridade.
+Esses scripts permitem que o balanceador de carga que lidera a pilha de AEM saiba quais trechos estão íntegros e os mantenha em serviço.
 
-![GIF animado mostrando o fluxo de tráfego](assets/load-balancer-healthcheck/health-check.gif "Etapas da verificação de integridade")
+![GIF animado mostrando o fluxo de tráfego](assets/load-balancer-healthcheck/health-check.gif "Etapas de verificação de integridade")
 
-## Verificação de Integridade Básica do Balanceador de Carga
+## Verificação de integridade básica do balanceador de carga
 
-Quando o tráfego do cliente chegar pela Internet para acessar sua instância do AEM, ele passará por um balanceador de carga
+Quando o tráfego do cliente passar pela Internet para alcançar sua instância do AEM, ele passará por um balanceador de carga
 
-![A imagem mostra o fluxo de tráfego da Internet para o aem através de um balanceador de carga](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "balanceador de carga-fluxo-tráfego")
+![A imagem mostra o fluxo de tráfego da Internet para o aem por meio de um balanceador de carga](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "balanceador de carga-fluxo de tráfego")
 
-Cada solicitação que passar pelo balanceador de carga arredondará o robin para cada instância.  O balanceador de carga tem um mecanismo de verificação de integridade integrado para garantir que está enviando tráfego para um host saudável.
+Cada solicitação recebida pelo balanceador de carga arredondará o robin para cada instância.  O balanceador de carga tem um mecanismo de verificação de integridade integrado para garantir que esteja enviando tráfego para um host íntegro.
 
-Normalmente, a verificação padrão é uma verificação de porta para ver se os servidores direcionados no balanceador de carga estão ouvindo o tráfego da porta entram em (ou seja, TCP 80 e 443)
+A verificação padrão geralmente é uma verificação de porta para ver se os servidores direcionados no balanceador de carga estão ouvindo quando o tráfego de porta entra em operação (ou seja, TCP 80 e 443)
 
-> `Note:` Embora isso funcione, não tem um indicador real se AEM é saudável.  Ele só testa se o Dispatcher (servidor da Web Apache) está ativo e em execução.
+> `Note:` Enquanto isso funciona, ele não tem medidor real sobre se o AEM é saudável.  Ele só testa se o Dispatcher (servidor Web Apache) está ativo e em execução.
 
 ## Verificação de integridade do AMS
 
-Para evitar o envio de tráfego para um dispatcher saudável que esteja encaminhando uma instância de AEM não saudável, o AMS criou algumas extras que avaliam a integridade da perna e não apenas do Dispatcher.
+Para evitar o envio de tráfego para um Dispatcher saudável que esteja enfrentando uma instância de AEM não saudável, o AMS criou alguns extras que avaliam a integridade do trecho e não apenas do Dispatcher.
 
-![A imagem mostra as diferentes partes para que o exame de integridade funcione](assets/load-balancer-healthcheck/health-check-pieces.png "cheques de saúde")
+![A imagem mostra as diferentes partes para a verificação de integridade funcionar](assets/load-balancer-healthcheck/health-check-pieces.png "health-check-piece")
 
-O exame de saúde compreende as seguintes peças:
+A verificação de integridade é composta pelas seguintes partes
 - 1 `Load balancer`
 - 1 `Apache web server`
 - 3 `Apache *VirtualHost* config files`
@@ -51,31 +52,31 @@ O exame de saúde compreende as seguintes peças:
 - 1 `AEM instance`
 - 1 `AEM package`
 
-Vamos cobrir o que cada peça está configurada para fazer e sua importância
+Abordaremos o que cada peça está configurada para fazer e sua importância
 
-### Pacote de AEM
+### Pacote AEM
 
-Para indicar se AEM está funcionando, é necessário fazer uma compilação básica da página e fornecer a página.  O Adobe Managed Services criou um pacote básico que contém a página de teste.  A página testa que o repositório está ativo e que os recursos e o modelo da página podem ser renderizados.
+Para indicar se o AEM está funcionando, é necessário que ele faça uma compilação básica de páginas e forneça a página.  O Adobe Managed Services criou um pacote básico que contém a página de teste.  A página testa se o repositório está ativo e se os recursos e o modelo de página podem ser renderizados.
 
-![A imagem mostra o pacote AMS no gerenciador de pacotes CRX](assets/load-balancer-healthcheck/health-check-package.png "pacote de verificação de integridade")
+![A imagem mostra o pacote AMS no gerenciador de pacote CRX](assets/load-balancer-healthcheck/health-check-package.png "health-check-package")
 
 Aqui está a página.  Ele mostrará a ID do repositório da instalação
 
 ![A imagem mostra a página Regente do AMS](assets/load-balancer-healthcheck/health-check-page.png "página de verificação de integridade")
 
-> `Note:` Verificamos se a página não pode ser armazenada em cache.  Ele não verificaria o status real se cada vez que retornasse uma página em cache!
+> `Note:` Garantimos que a página não seja compatível com cache.  Ele não verificaria o status real se cada vez que retornasse uma página em cache!
 
-Este é o ponto de extremidade de peso leve que podemos testar para ver que o AEM está funcionando.
+Este é o ponto final leve que podemos testar para ver se o AEM está funcionando.
 
 ### Configuração do balanceador de carga
 
-Configuramos os balanceadores de carga para apontar para um ponto de extremidade CGI-BIN em vez de usar uma verificação de porta.
+Configuramos os balanceadores de carga para apontar para um ponto final CGI-BIN em vez de usar uma verificação de porta.
 
 ![A imagem mostra a configuração de verificação de integridade do balanceador de carga do AWS](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings")
 
-![A imagem mostra a configuração da verificação de integridade do balanceador de carga do Azure](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings")
+![A imagem mostra a configuração de verificação de integridade do balanceador de carga do Azure](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings")
 
-### Hosts Virtuais De Verificação De Integridade Do Apache
+### Hosts virtuais de verificação de integridade do Apache
 
 #### Host virtual CGI-BIN `(/etc/httpd/conf.d/available_vhosts/ams_health.vhost)`
 
@@ -90,7 +91,7 @@ Listen 81
 </VirtualHost>
 ```
 
-> `Note:` arquivos cgi-bin são scripts que podem ser executados.  Pode ser um vetor de ataque vulnerável e esses scripts que o AMS usa não estão acessíveis publicamente, disponíveis apenas para o balanceador de carga para testar.
+> `Note:` os arquivos cgi-bin são scripts que podem ser executados.  Isso pode ser um vetor de ataque vulnerável e esses scripts que o AMS usa não estão publicamente disponíveis apenas para o balanceador de carga testar.
 
 
 #### Hosts virtuais de manutenção não íntegros
@@ -98,11 +99,11 @@ Listen 81
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Esses arquivos são nomeados `000_` como o prefixo de propósito.  Ele é configurado intencionalmente para usar o mesmo nome de domínio do site ativo.  A intenção é que esse arquivo seja ativado quando a verificação de integridade detectar que há um problema com um dos back-end do AEM.  Em seguida, ofereça uma página de erro em vez de apenas um código de resposta HTTP 503 sem página.  Ele vai roubar tráfego do normal `.vhost` porque foi carregado antes disso `.vhost` ao compartilhar o mesmo `ServerName` ou `ServerAlias`.  O resultado é que as páginas destinadas a um determinado domínio vão para o vhost que não está funcionando, em vez do padrão, o tráfego é normal.
+Esses arquivos são nomeados como `000_` como o prefixo de propósito.  É configurado intencionalmente para usar o mesmo nome de domínio que o site ativo.  A intenção é que esse arquivo seja ativado quando a verificação de integridade detectar que há um problema com um dos backends AEM.  Em seguida, ofereça uma página de erro em vez de apenas um código de resposta HTTP 503 sem página.  Ele roubará o tráfego do normal `.vhost` arquivo porque foi carregado antes disso `.vhost` ao compartilhar o mesmo arquivo `ServerName` ou `ServerAlias`.  Resultando em páginas destinadas a um domínio específico que vão para o vhost não íntegro em vez do padrão pelo qual o tráfego normal flui.
 
-Quando os scripts de verificação de integridade são executados, eles fazem logout do status de integridade atual.  Uma vez por minuto, há um cronjob em execução no servidor que procura entradas não íntegras no log.  Se detectar que a instância do autor AEM não está funcionando, ela ativará o link simbólico:
+Quando os scripts de verificação de integridade são executados, eles fazem logoff de seus status de integridade atuais.  Uma vez por minuto, há um cronjob em execução no servidor que procura por entradas não íntegras no log.  Se detectar que a instância AEM do autor não está íntegra, ele ativará o link simbólico:
 
-Entrada do registro:
+Entrada do log:
 
 ```
 # grep "ERROR\|publish" /var/log/lb/health_check.log
@@ -110,14 +111,14 @@ E, [2022-11-23T20:13:54.984379 #26794] ERROR -- : AUTHOR -- Exception caught: Co
 I, [2022-11-23T20:13:54.984403 #26794]  INFO -- : [checkpublish]-author:0-publish:1-[checkpublish]
 ```
 
-Cron ao detectar o erro e reagir:
+Cron detectando o erro e reagindo:
 
 ```
 # grep symlink /var/log/lb/health_check_reload.log
 I, [2022-11-23T20:34:19.213179 #2275]  INFO -- : ADDING VHOST symlink /etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost => /etc/httpd/conf.d/enabled_vhosts/000_unhealthy_author.vhost
 ```
 
-Você pode controlar se os sites do autor ou publicados podem ter esse erro de carregamento de página configurando a configuração do modo de recarregamento em `/var/www/cgi-bin/health_check.conf`
+Você pode controlar se os sites do autor ou publicados podem ter esse erro na página carregada ao configurar o modo de recarregamento no `/var/www/cgi-bin/health_check.conf`
 
 ```
 # grep RELOAD_MODE /var/www/cgi-bin/health_check.conf
@@ -125,17 +126,17 @@ RELOAD_MODE='author'
 ```
 
 Opções válidas:
-- author
+- autor
    - Esta é a opção padrão.
-   - Isso colocará uma página de manutenção para o autor quando não estiver funcionando
+   - Isso exibirá uma página de manutenção para o autor quando ele não estiver íntegro
 - publicação
-   - Essa opção colocará uma página de manutenção para o editor quando ela não estiver funcionando
-- all
-   - Essa opção colocará uma página de manutenção para o autor ou editor, ou ambos, se não estiverem funcionando
-- nenhum
+   - Esta opção colocará uma página de manutenção para o editor quando ele não estiver íntegro
+- todas
+   - Essa opção colocará uma página de manutenção para o autor ou editor, ou ambos, se eles se tornarem não íntegros
+- nenhuma
    - Esta opção ignora este recurso da verificação de integridade
 
-Ao analisar a `VirtualHost` para isso, você verá que eles carregam o mesmo documento que uma página de erro para cada solicitação que vem quando ela está ativada:
+Ao examinar a `VirtualHost` ao configurar esses itens, você verá que eles carregam o mesmo documento como uma página de erro para cada solicitação que aparece quando ela é ativada:
 
 ```
 <VirtualHost *:80>
@@ -174,40 +175,40 @@ X-Vhost: unhealthy-author
 
 Em vez de uma página em branco, eles receberão essa página.
 
-![A imagem mostra a página de manutenção padrão](assets/load-balancer-healthcheck/unhealthy-page.png "página não íntegro")
+![A imagem mostra a página de manutenção padrão](assets/load-balancer-healthcheck/unhealthy-page.png "unhealthy-page")
 
 ### Scripts CGI-Bin
 
-Há 5 scripts diferentes que podem ser configurados nas configurações do balanceador de carga pelo CSE que alteram o comportamento ou critérios quando um Dispatcher é extraído do balanceador de carga.
+Há 5 scripts diferentes que podem ser definidos nas configurações do balanceador de carga pelo seu CSE que alteram o comportamento ou os critérios quando extrair um Dispatcher do balanceador de carga.
 
 #### /bin/checkauthor
 
-Esse script, quando usado, verificará e registrará todas as instâncias nas quais estiver sendo aberto, mas retornará apenas um erro se a variável `author` AEM instância não está funcionando
+Este script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas só retornará um erro se a variável `author` A instância do AEM não está íntegra
 
-> `Note:` Lembre-se de que, se a instância de publicação AEM não estivesse funcionando, o dispatcher permaneceria em serviço para permitir que o tráfego flua para a instância de AEM do autor
+> `Note:` Lembre-se de que se a instância do AEM de publicação estivesse com problemas, o dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância do AEM do autor
 
 #### /bin/checkpublish (padrão)
 
-Esse script, quando usado, verificará e registrará todas as instâncias nas quais estiver sendo aberto, mas retornará apenas um erro se a variável `publish` AEM instância não está funcionando
+Este script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas só retornará um erro se a variável `publish` A instância do AEM não está íntegra
 
-> `Note:` Lembre-se de que, se a instância do autor AEM não estivesse funcionando, o dispatcher permaneceria em serviço para permitir que o tráfego flua para a instância de publicação AEM
+> `Note:` Lembre-se de que, se a instância do AEM do autor não estivesse íntegra, o dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância de AEM de publicação
 
-#### /bin/checkor
+#### /bin/checkEIR
 
-Esse script, quando usado, verificará e registrará todas as instâncias nas quais estiver sendo aberto, mas retornará apenas um erro se a variável `author` ou `publisher` AEM instância não está funcionando
+Este script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas só retornará um erro se a variável `author` ou o `publisher` A instância do AEM não está íntegra
 
-> `Note:` Lembre-se de que se a instância de publicação AEM ou de autor AEM não estivesse funcionando, o dispatcher retiraria o serviço.  Isso significa que se um deles estivesse saudável, ele também não receberia tráfego
+> `Note:` Lembre-se de que se a instância do AEM de publicação ou a instância do AEM do autor não estivesse íntegra, o Dispatcher desativaria o serviço.  Ou seja, se um deles estivesse saudável, também não receberia tráfego
 
-#### /bin/checkambos
+#### /bin/checkboth
 
-Esse script, quando usado, verificará e registrará todas as instâncias nas quais estiver sendo aberto, mas retornará apenas um erro se a variável `author` e `publisher` AEM instância não está funcionando
+Este script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas só retornará um erro se a variável `author` e a variável `publisher` A instância do AEM não está íntegra
 
-> `Note:` Lembre-se de que, se a instância de publicação AEM ou de autor AEM não estivesse funcionando, o dispatcher não retiraria o serviço.  Isso significa que se um deles não fosse saudável, ele continuaria recebendo tráfego e cometendo erros às pessoas que solicitavam recursos.
+> `Note:` Lembre-se de que se a instância de publicação do AEM ou a instância do AEM do autor estivesse com problemas, o dispatcher não deixaria de funcionar.  Isso significa que se um deles não estivesse saudável, ele continuaria a receber tráfego e a dar erros às pessoas que solicitavam recursos.
 
-#### /bin/health
+#### /bin/healthy
 
-Este script, quando usado, verificará e registrará todas as instâncias nas quais ele estiver enviando, mas retornará em bom estado, independentemente de AEM estar retornando ou não um erro.
+Esse script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas retornará em bom estado, independentemente de o AEM estar ou não retornando um erro.
 
-> `Note:` Esse script é usado quando a verificação de integridade não está funcionando como desejado e permite que uma substituição mantenha AEM instâncias no balanceador de carga.
+> `Note:` Esse script é usado quando a verificação de integridade não está funcionando como desejado e permite uma substituição para manter instâncias AEM no balanceador de carga.
 
-[Próximo -> Simlinks GIT](./git-symlinks.md)
+[Próximo -> Links simbólicos GIT](./git-symlinks.md)

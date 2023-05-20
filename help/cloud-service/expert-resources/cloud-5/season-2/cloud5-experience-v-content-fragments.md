@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Experiência versus Fragmentos de conteúdo
-description: Uma comparação de quais são as diferenças entre um fragmento de experiência e um fragmento de conteúdo
+description: Uma comparação entre as diferenças entre um fragmento de experiência e um fragmento de conteúdo
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 ---
 
-# Cloud 5 - Fragmentos
+# Nuvem 5 - Fragmentos
 
-Um &quot;versus&quot; assume quais são as diferenças entre um fragmento de experiência e um fragmento de conteúdo
+Uma comparação entre as diferenças entre um fragmento de experiência e um fragmento de conteúdo
 
 >[!VIDEO](https://video.tv.adobe.com/v/342864?quality=12&learn=on)
 
