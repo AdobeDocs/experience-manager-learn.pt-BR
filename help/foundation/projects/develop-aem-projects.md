@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
    1. Adicionar outro **nt:não estruturado** nó rotulado aprovadores como filho do nó funções.
    1. Adicionar propriedades de string **jcr:title** = &quot;**Aprovadores**&quot;, **roleclass** =&quot;**proprietário**&quot;, **roleid**=&quot;**aprovadores**&quot;.
       1. O nome do nó de aprovadores, bem como jcr:title e roleid podem ser qualquer valor de string (desde que roleid seja exclusivo).
-      1. **roleclass** controla as permissões aplicadas para essa função com base no [3 funções OOTB](Funções do https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User em um projeto): **proprietário**, **editor**, e **observador**.
+      1. **roleclass** controla as permissões aplicadas para essa função com base no [3 funções OOTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **proprietário**, **editor**, e **observador**.
       1. Em geral, se a função personalizada for mais uma função gerencial, a classe de função poderá ser **proprietário;** se for uma função de criação mais específica, como Fotógrafo ou Designer, **editor** a classe de função deve ser suficiente. A grande diferença entre **proprietário** e **editor** é que os proprietários do projeto podem atualizar as propriedades do projeto e adicionar novos usuários ao projeto.
 
    ```shell
