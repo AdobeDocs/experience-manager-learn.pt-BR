@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 4%
@@ -20,13 +20,15 @@ ht-degree: 4%
 
 # Primeiro tutorial sobre AEM Headless
 
-![Primeiro tutorial sobre AEM Headless](./assets/overview/overview.png)
+{{aem-headless-trials-promo}}
 
 Bem-vindo ao tutorial sobre como criar uma experiência da Web usando o React, totalmente equipado com APIs AEM Headless e o GraphQL. Neste tutorial, guiaremos você pelo processo de criação de uma aplicação Web dinâmica e interativa combinando o poder das APIs headless do React, do Adobe Experience Manager (AEM) e do GraphQL.
 
 O React é uma biblioteca popular de JavaScript para a construção de interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM fornece recursos robustos de gerenciamento de conteúdo e expõe APIs headless que permitem aos desenvolvedores acessar conteúdo e dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
 
 Ao utilizar APIs AEM Headless, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
+
+![Primeiro tutorial sobre AEM Headless](./assets/overview/overview.png)
 
 Neste tutorial, guiaremos você pelo processo passo a passo de criação de uma experiência da Web usando as APIs do React e do AEM Headless com o GraphQL. Você aprenderá a configurar seu ambiente de desenvolvimento, estabelecer uma conexão entre o React e o AEM, recuperar conteúdo usando consultas do GraphQL e renderizá-lo dinamicamente em seu aplicativo web.
 
