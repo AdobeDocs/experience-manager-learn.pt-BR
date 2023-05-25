@@ -9,7 +9,7 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: 6a5e62a2a897adc421585e79c5f36f6aa759feaa
 workflow-type: tm+mt
 source-wordcount: '2447'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Os seguintes são obrigatórios:
 
 * **Propriedade da tag** no Experience Platform
 * **Adobe Analytics** ID do conjunto de relatórios de teste/desenvolvimento e servidor de rastreamento. Consulte a documentação a seguir para [criação de um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador. Capturas de tela neste tutorial capturadas do navegador Chrome.
+* [Depurador Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador. Capturas de tela neste tutorial capturadas do navegador Chrome.
 * (Opcional) Site AEM com a variável [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial usa informações voltadas ao público [WKND](https://wknd.site/us/en.html) site, mas você pode usar seu próprio site.
 
 >[!NOTE]
@@ -65,7 +65,7 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
 1. No navegador, abra uma nova guia e navegue até [Site da WKND](http://wknd.site/us/en.html)
 1. Abra a extensão do navegador Experience Platform Debugger
 
-   ![Experience Platform Debugger](assets/collect-data-analytics/experience-platform-debugger-extension.png)
+   ![Depurador Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
 1. Navegue até **Tags do Experience Platform** > **Configuração** e sob **Códigos de inserção inseridos** substituir o código incorporado existente por *seu* código incorporado copiado da etapa 3.
 
@@ -134,7 +134,7 @@ A Camada de dados de clientes Adobe é uma **evento** camada de dados orientada.
       // defensive coding to avoid a null pointer exception
       if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
          //trigger the Tag Rule and pass event
-         console.debug("cmp:show event: " + evt.eventInfo.path);
+         console.log("cmp:show event: " + evt.eventInfo.path);
          var event = {
             //include the path of the component that triggered the event
             path: evt.eventInfo.path,
@@ -171,10 +171,10 @@ A Camada de dados de clientes Adobe é uma **evento** camada de dados orientada.
 1. Clique em **Abrir editor** no painel principal e insira o seguinte trecho de código:
 
    ```js
-   console.debug("Page Loaded ");
-   console.debug("Page name: " + event.component['dc:title']);
-   console.debug("Page type: " + event.component['@type']);
-   console.debug("Page template: " + event.component['xdm:template']);
+   console.log("Page Loaded ");
+   console.log("Page name: " + event.component['dc:title']);
+   console.log("Page type: " + event.component['@type']);
+   console.log("Page template: " + event.component['xdm:template']);
    ```
 
    A variável `event` o objeto é transmitido de `trigger()` chamado no evento personalizado. Aqui, o `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
