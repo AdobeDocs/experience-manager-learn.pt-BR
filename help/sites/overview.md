@@ -1,10 +1,11 @@
 ---
 title: Vídeos e tutoriais do AEM Sites
 description: Saiba mais sobre o Experience Manager Sites em nossos vídeos e tutoriais. Descubra as escolhas da nossa equipe e as novidades do AEM Sites.
+solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: d24649d4b1411f57a46595edddb601ac49b51643
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 15%
