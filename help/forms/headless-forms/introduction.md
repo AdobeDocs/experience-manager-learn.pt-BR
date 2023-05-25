@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -17,8 +17,11 @@ ht-degree: 2%
 
 # Incorporação de formulário adaptável headless
 
-Este artigo abordará as noções básicas para incorporar um formulário adaptável headless no site de spa. Este artigo supõe que você tenha um aplicativo de página única existente e gostaria de incorporar um formulário adaptável criado no AEM Forms 6.5.16 usando os componentes principais.
-A inclusão de um formulário em um aplicativo de página única permite que os usuários insiram e enviem dados com facilidade, sem a necessidade de uma atualização de página. Isso melhora a interatividade e a eficiência do aplicativo.
+Este [Esse tutorial abordará as várias APIs headless](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) que permitem listar, exibir e enviar o formulário.
+
+Este artigo abordará as várias APIs headless fornecidas para permitir listar, exibir e enviar formulários adaptáveis de maneira headless.
+
+Este artigo supõe que você tenha um aplicativo de página única existente e gostaria de listar e exibir os formulários adaptáveis headless em seu site de spa.
 
 A captura de tela a seguir mostra um formulário entre em contato conosco sendo incorporado no SPA
 

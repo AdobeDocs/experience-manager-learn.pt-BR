@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1822'
 ht-degree: 2%
 
 ---
@@ -230,10 +230,12 @@ ht-degree: 2%
    + [Criar componente do kit de boas-vindas](welcome-kit/create-welcomekit-component.md)
    + [Criar componente de fluxo de trabalho](welcome-kit/create-workflow-component.md)
    + [Testar a solução](welcome-kit/testing-the-solution.md)
-+ Incorporar formulário adaptável no SPA {#embed-form-spa}
++ API do Forms headless {#embed-form-spa}
    + [1 - Introdução](headless-forms/introduction.md)
    + [2 - Instalar dependências](headless-forms/install-af-react-libraries.md)
    + [3 - Buscar o formulário](headless-forms/fetch-the-form.md)
+   + [4 - Selecionar formulário a ser preenchido](headless-forms/select-form-from-drop-down-list.md)
+   + [5 - Exibir formulários no formato de cartão](headless-forms/display-forms-card-view.md)
 
 + Aplicativo React com Forms e Acrobat Sign {#react-ic-sign}
    + [1 - Introdução](react-ic-sign/introduction.md)
