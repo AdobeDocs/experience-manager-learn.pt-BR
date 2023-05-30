@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 3%
+source-wordcount: '1646'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ O documento de DSE fornece uma visão geral abrangente do plano de implementaç�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Para obter mais informações sobre conceitos e vários elementos que devem ser incluídos no documento de SDR, visite o [Criação e manutenção de um documento de Referência de design de solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Você também pode baixar um modelo de amostra do Excel, no entanto, a versão específica do WKND também está disponível [aqui](./assets/Analytics-SDR-Template.xlsx).
+Para obter mais informações sobre conceitos e vários elementos que devem ser incluídos no documento de SDR, visite o [Criação e manutenção de um documento de Referência de design de solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Você também pode baixar um modelo de amostra do Excel, no entanto, a versão específica do WKND também está disponível [aqui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configuração do Analytics - conjunto de relatórios, Analysis Workspace
 
@@ -83,7 +83,7 @@ Neste tutorial,  `eVar5, eVar6, and eVar7` track  _Nome da página WKND, ID CTA 
 
 Para analisar, coletar insights e compartilhar esses insights com outras pessoas a partir dos dados coletados, um projeto no Analysis Workspace é criado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419875?quality=12&learn=on)
 
 Para saber mais sobre a configuração e os conceitos do Analytics, os seguintes recursos são altamente recomendados:
 
@@ -121,6 +121,10 @@ No [tutorial anterior](./web-sdk.md), uma propriedade de tag é criada, ela tem 
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
+
+>[!TIP]
+>
+>O elemento de dados e o código de evento de regra mostrados no vídeo estão disponíveis para sua referência, **expanda o elemento acordeão abaixo**. No entanto, se você NÃO estiver usando a Camada de dados de clientes Adobe, deverá modificar o código abaixo, mas o conceito de definir os Elementos de dados e usá-los na definição de Regra ainda se aplica.
 
 +++ Elemento de dados e código de evento de regra
 
@@ -209,6 +213,13 @@ No [tutorial anterior](./web-sdk.md), uma propriedade de tag é criada, ela tem 
 
 Para obter informações adicionais sobre a integração dos Componentes principais do AEM com a Camada de dados de clientes Adobe, consulte [Uso da Camada de dados do cliente Adobe com o guia dos Componentes principais AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR).
 
+
+>[!INFO]
+>
+>Para uma compreensão abrangente do **Mapa de variáveis** detalhes da propriedade da guia no documento Referência de design de solução (SDR) , acesse a versão completa específica da WKND para download [aqui](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+
+
+
 ## Verificar propriedade de tag atualizada na WKND
 
 Para garantir que a propriedade de tag atualizada seja criada, publicada e esteja funcionando corretamente nas páginas do site da WKND. Use o navegador da Web Google Chrome [Extensão do Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
@@ -235,7 +246,7 @@ O conjunto de dados é uma construção de armazenamento e gerenciamento para um
 
 O Analysis Workspace é uma ferramenta eficiente no Adobe Analytics que permite explorar e visualizar dados de maneira flexível e interativa. Ele fornece uma interface de arrastar e soltar para criar relatórios personalizados, executar segmentação avançada e aplicar várias visualizações de dados.
 
-Vamos reabrir o projeto do Analysis Workspace criado na [Configurar o Analytics](#setup-analytics---report-suite-analysis-workspace) etapa. No **Principais páginas** , examine várias métricas, como visitas, visitantes únicos, entradas, taxa de rejeição e muito mais. Para avaliar o desempenho de páginas WKND e CTAs da página inicial, arraste e solte as dimensões específicas da WKND (Nome da página WKND, Nome da CTA WKND) e as métricas (Evento de clique WKND CTA). Esses insights são valiosos para que os profissionais de marketing entendam quais CTAs são mais eficazes e tomem decisões orientadas por dados alinhadas aos seus objetivos de negócios.
+Vamos reabrir o projeto do Analysis Workspace criado na [Configurar o Analytics](#setup-analytics---report-suite-analysis-workspace) etapa. No **Principais páginas** , examine várias métricas, como visitas, visitantes únicos, entradas, taxa de rejeição e muito mais. Para avaliar o desempenho de páginas WKND e CTAs da página inicial, arraste e solte as dimensões específicas da WKND (Nome da página WKND, Nome da CTA WKND) e as métricas (Evento de clique WKND CTA). Esses insights são valiosos para que os profissionais de marketing entendam quais CTAs são mais eficazes e tomem decisões orientadas por dados, alinhadas a seus objetivos de negócios.
 
 Para visualizar jornadas do usuário, use a Visualização de fluxo, começando com a **Nome da página WKND** e expansão em vários caminhos.
 
@@ -250,6 +261,12 @@ A implementação do Adobe Analytics é fundamental para que as equipes de marke
 Ao implementar as etapas recomendadas e usar os recursos fornecidos, como o documento Referência de design de solução (SDR) e entender os principais conceitos do Analytics, os profissionais de marketing podem coletar e analisar dados de maneira eficaz.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419888?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>Se preferir o **vídeo completo** que cobre todo o processo de integração em vez de vídeos individuais da etapa de configuração, você pode clicar em [aqui](https://video.tv.adobe.com/v/3419889/) para acessá-lo.
+
 
 ## Recursos adicionais
 
