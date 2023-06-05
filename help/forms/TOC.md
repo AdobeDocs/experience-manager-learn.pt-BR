@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+source-git-commit: 3bbf80d5c301953b3a34ef8256702ac7445c40da
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1825'
 ht-degree: 2%
 
 ---
@@ -236,6 +236,7 @@ ht-degree: 2%
    + [3 - Buscar o formulário](headless-forms/fetch-the-form.md)
    + [4 - Selecionar formulário a ser preenchido](headless-forms/select-form-from-drop-down-list.md)
    + [5 - Exibir formulários no formato de cartão](headless-forms/display-forms-card-view.md)
+   + [6 - Exibir formulário selecionado](headless-forms/open-form-card-view.md)
 
 + Aplicativo React com Forms e Acrobat Sign {#react-ic-sign}
    + [1 - Introdução](react-ic-sign/introduction.md)
