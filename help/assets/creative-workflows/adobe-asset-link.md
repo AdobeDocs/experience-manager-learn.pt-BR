@@ -9,10 +9,10 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 1%
+source-wordcount: '1047'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ A extensão Adobe Asset Link para o Adobe Creative Cloud for enterprise estende 
 
 >[!TIP]
 >
-> Saiba mais sobre como o [Programa de treinamento Adobe XD Premium](https://spark.adobe.com/page/wU7OXv8qKGugO/) O pode ajudar a integrar o Asset Link ao seu fluxo de trabalho do Adobe Experience Manager.
+> Saiba mais sobre como o [Programa de treinamento Adobe XD Premium](https://helpx.adobe.com/support/xd.html) O pode ajudar a integrar o Asset Link ao seu fluxo de trabalho do Adobe Experience Manager.
 
 ## Fluxos de trabalho criativos do Adobe Asset Link e AEM
 
@@ -65,7 +65,7 @@ O Adobe Asset Link fornece suporte à vinculação direta de InDesigns entre o A
 
 >[!NOTE]
 >
->Use apenas o Enterprise ID ou Federated ID Adobe Creative Cloud. Verifique se você [configurar o AEM para o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Use apenas o Enterprise ID ou Federated ID Adobe Creative Cloud. Verifique se você [configurar o AEM para o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
 
 Você pode colocar um ativo no layout do InDesign usando uma das opções abaixo:
 

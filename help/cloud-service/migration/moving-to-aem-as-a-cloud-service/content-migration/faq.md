@@ -10,10 +10,10 @@ level: Beginner
 kt: 11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 1%
+source-wordcount: '2296'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Para obter mais informações, consulte [pré-requisitos da migração na nuvem]
 
 ### P: Tenho o relatório de BPA mais recente do meu sistema de origem. O que devo fazer com ele?
 
-Exporte o relatório como CSV e faça upload dele para o Cloud Acceleration Manager, [associado à sua organização IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html). Em seguida, passe pelo processo de revisão como [descrito na Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Exporte o relatório como CSV e faça upload dele para o Cloud Acceleration Manager, [associado à sua organização IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). Em seguida, passe pelo processo de revisão como [descrito na Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
 
 Revise a avaliação de complexidade de código e conteúdo fornecida pela ferramenta e anote os itens de ação associados que levam ao acúmulo de refatoração de código ou à Avaliação de migração na nuvem.
 
@@ -80,7 +80,7 @@ Se os ambientes de clonagem forem usados para migração, eles não afetarão a 
 
 A resposta curta é &quot;**Sim**&quot;.
 
-A extração e assimilação da CTT **sem** o mapeamento de usuários migra somente o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
+A extração e assimilação da CTT **sem** o mapeamento de usuários migra somente o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
 
 Nesse caso, o provedor de identidade SAML é configurado no Adobe IMS para usar Federated / Enterprise ID, em vez de usar diretamente para AEM usando Manipulador de autenticação.
 
@@ -88,15 +88,15 @@ Nesse caso, o provedor de identidade SAML é configurado no Adobe IMS para usar 
 
 A resposta curta é &quot;**Sim**&quot;.
 
-A extração e assimilação da CTT sem mapeamento de usuários realmente migra o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
+A extração e assimilação da CTT sem mapeamento de usuários realmente migra o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
 
 Nesse caso, os usuários usam o Adobe ID pessoal e o Adobe ID é usado pelo administrador do IMS para fornecer acesso ao AEMaaCS.
 
 ### P: O que significam os termos &quot;limpar&quot; e &quot;substituir&quot; no contexto da CTT?
 
-No contexto da [fase de extração](https://experienceleague.adobe.com/docs/experience-manager-cloud-servicemoving/cloud-migration/content-transfer-tool/extracting-content.html), As opções são substituir os dados no container de preparo de ciclos de extração anteriores ou adicionar o diferencial (adicionado/atualizado/excluído) a ele. O Contêiner de preparo não é nada, mas o contêiner de armazenamento de blob associado ao conjunto de migração. Cada conjunto de migração recebe seu próprio container de preparo.
+No contexto da [fase de extração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), As opções são substituir os dados no container de preparo de ciclos de extração anteriores ou adicionar o diferencial (adicionado/atualizado/excluído) a ele. O Contêiner de preparo não é nada, mas o contêiner de armazenamento de blob associado ao conjunto de migração. Cada conjunto de migração recebe seu próprio container de preparo.
 
-No contexto da [fase de assimilação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR), As opções são + para substituir todo o repositório de conteúdo do AEMaaCS ou sincronizar o conteúdo diferencial (adicionado/atualizado/excluído) do container de migração de preparo.
+No contexto da [fase de assimilação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), As opções são + para substituir todo o repositório de conteúdo do AEMaaCS ou sincronizar o conteúdo diferencial (adicionado/atualizado/excluído) do container de migração de preparo.
 
 ### P: Há vários sites, ativos associados, usuários, grupos no sistema de origem. É possível migrá-los em fases para o AEMaaCS?
 
@@ -224,6 +224,6 @@ A abordagem acima pode ser usada apenas para medir a duração da migração, ma
 
 + [Dicas e truques para migrar para o Experience Manager na nuvem ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [Vídeo da série CTT Expert](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-servicemigration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [Vídeo da série CTT Expert](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [Vídeos de séries de especialistas sobre outros tópicos do AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learncloud-service/aem-experts-series.html)
++ [Vídeos de séries de especialistas sobre outros tópicos do AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)

@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -446,7 +446,7 @@ Crie uma Interface Java™ pública para o Subtítulo. A variável `Byline.java`
    import org.osgi.annotation.versioning.Version;
    ```
 
-Sempre que forem feitas alterações nos arquivos deste pacote, a variável [a versão do pacote deve ser ajustada semanticamente](https://semver.org/). Caso contrário, as configurações do projeto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) O detecta uma versão de pacote inválida e quebra a compilação. Felizmente, em caso de falha, o plug-in Maven relata a versão inválida do pacote Java™ e a versão que deveria ser. Atualize o `@Version("...")` declaração na violação do pacote Java™ `package-info.java` à versão recomendada pelo plug-in para correção.
+Sempre que forem feitas alterações nos arquivos deste pacote, a variável [a versão do pacote deve ser ajustada semanticamente](https://semver.org/). Caso contrário, as configurações do projeto Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) O detecta uma versão de pacote inválida e quebra a compilação. Felizmente, em caso de falha, o plug-in Maven relata a versão inválida do pacote Java™ e a versão que deveria ser. Atualize o `@Version("...")` declaração na violação do pacote Java™ `package-info.java` à versão recomendada pelo plug-in para correção.
 
 ### Implementação de linha de comando {#byline-implementation}
 

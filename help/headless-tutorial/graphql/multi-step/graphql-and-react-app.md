@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ _As capturas de tela do IDE neste capítulo vêm de [Código do Visual Studio](h
 
 Os softwares a seguir devem ser instalados:
 
-- [Node.js v18](https://nodejs.org/)
+- [Node.js v18](https://nodejs.org/en)
 - [Código do Visual Studio](https://code.visualstudio.com/)
 
 ## Objetivos
@@ -109,7 +109,7 @@ A amostra do aplicativo React tem três partes principais:
 
 1. A variável `src/api` a pasta contém arquivos usados para fazer consultas do GraphQL ao AEM.
    - `src/api/aemHeadlessClient.js` inicializa e exporta o cliente AEM headless usado para se comunicar com AEM
-   - `src/api/usePersistedQueries.js` implementa [ganchos personalizados do React](https://react.dev/docs/hooks-custom.html) retornar dados do AEM GraphQL para o `Teams.js` e `Person.js` exibir componentes.
+   - `src/api/usePersistedQueries.js` implementa [ganchos personalizados do React](https://react.dev/learn/reusing-logic-with-custom-hooks#custom-hooks-sharing-logic-between-components) retornar dados do AEM GraphQL para o `Teams.js` e `Person.js` exibir componentes.
 
 1. A variável `src/components/Teams.js` arquivo exibe uma lista de equipes e seus membros usando uma consulta de lista.
 1. A variável `src/components/Person.js` arquivo exibe os detalhes de uma única pessoa, usando uma consulta parametrizada de resultado único.
@@ -187,7 +187,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 Em seguida, crie a funcionalidade para exibir as Equipes e seus membros na visualização principal do aplicativo React. Essa funcionalidade exige:
 
-- Um novo [personalizado React useEffect gancho](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` que invoca o `my-project/all-teams` consulta persistente, retornando uma lista de Fragmentos de conteúdo da equipe no AEM.
+- Um novo [personalizado React useEffect gancho](https://react.dev/reference/react/useEffect#useeffect) in `src/api/usePersistedQueries.js` que invoca o `my-project/all-teams` consulta persistente, retornando uma lista de Fragmentos de conteúdo da equipe no AEM.
 - Um componente do React em `src/components/Teams.js` que invoca o novo React personalizado `useEffect` e renderiza os dados das equipes.
 
 Uma vez concluída, a visualização principal do aplicativo é preenchida com os dados das equipes do AEM.
@@ -337,7 +337,7 @@ Com o [Funcionalidade de equipes](#implement-teams-functionality) completa, vamo
 
 Essa funcionalidade exige:
 
-- Um novo [personalizado React useEffect gancho](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` que invoca o parâmetro `my-project/person-by-name` consulta persistente e retorna um único registro de pessoa.
+- Um novo [personalizado React useEffect gancho](https://react.dev/reference/react/useEffect#useeffect) in `src/api/usePersistedQueries.js` que invoca o parâmetro `my-project/person-by-name` consulta persistente e retorna um único registro de pessoa.
 
 - Um componente do React em `src/components/Person.js` que usa o nome completo de uma pessoa como um parâmetro de consulta, invoca o novo React personalizado `useEffect` e renderiza os dados da pessoa.
 

@@ -12,9 +12,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento pa
 ## Objetivo
 
 1. Entenda as opções de roteamento do modelo SPA disponíveis ao usar o Editor SPA.
-1. Saiba como usar [Roteador React](https://reacttraining.com/react-router/) para navegar entre diferentes visualizações do SPA.
+1. Saiba como usar [Roteador React](https://reacttraining.com/react-router) para navegar entre diferentes visualizações do SPA.
 1. Use os Componentes principais de reação do AEM para implementar uma navegação dinâmica orientada pela hierarquia de páginas do AEM.
 
 ## O que você vai criar
 
-Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de página do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de página do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
@@ -209,9 +209,9 @@ Em seguida, inspecione o Modelo JSON que direciona a experiência de visualizaç
 
 ## Roteamento Inspect React  {#react-routing}
 
-A navegação e o roteamento são implementados com [Roteador React](https://reactrouter.com/). O Roteador React é uma coleção de componentes de navegação para aplicativos React. [Componentes principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components-base) O usa recursos do Roteador React para implementar o **Navegação** componente usado nas etapas anteriores.
+A navegação e o roteamento são implementados com [Roteador React](https://reactrouter.com/en/main). O Roteador React é uma coleção de componentes de navegação para aplicativos React. [Componentes principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components-base) O usa recursos do Roteador React para implementar o **Navegação** componente usado nas etapas anteriores.
 
-Em seguida, inspecione como o Roteador React está integrado ao SPA e experimente usando o Roteador React [Link](https://reactrouter.com/web/api/Link) componente.
+Em seguida, inspecione como o Roteador React está integrado ao SPA e experimente usando o Roteador React [Link](https://reactrouter.com/en/main/components/link) componente.
 
 1. No IDE, abra o arquivo `index.js` em `ui.frontend/src/index.js`.
 
@@ -238,7 +238,7 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
    });
    ```
 
-   Observe que `App` está envolvido com o `Router` componente de [Roteador React](https://reacttraining.com/react-router/). A variável `ModelManager`AEM , fornecido pelo SDK JS do Editor de SPA, adiciona as rotas dinâmicas para páginas AEM com base na API do modelo JSON.
+   Observe que `App` está envolvido com o `Router` componente de [Roteador React](https://reacttraining.com/react-router). A variável `ModelManager`AEM , fornecido pelo SDK JS do Editor de SPA, adiciona as rotas dinâmicas para páginas AEM com base na API do modelo JSON.
 
 1. Abra o arquivo `Page.js` em `ui.frontend/src/components/Page/Page.js`
 
@@ -260,7 +260,7 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
    A variável `Page` O componente SPA usa o `MapTo` função a mapear **Páginas** no AEM a um componente SPA correspondente. A variável `withRoute` ajuda a rotear dinamicamente o SPA para a página filho AEM apropriada com base na variável `cqPath` propriedade.
 
 1. Abra o `Header.js` componente em `ui.frontend/src/components/Header/Header.js`.
-1. Atualize o `Header` para embrulhar o `<h1>` tag em um [Link](https://reactrouter.com/web/api/Link) para a página inicial:
+1. Atualize o `Header` para embrulhar o `<h1>` tag em um [Link](https://reactrouter.com/en/main/components/link) para a página inicial:
 
    ```diff
      //Header.js
