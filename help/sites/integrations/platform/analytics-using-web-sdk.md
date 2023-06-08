@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
+source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ O documento de DSE fornece uma visão geral abrangente do plano de implementaç�
 
 Para obter mais informações sobre conceitos e vários elementos que devem ser incluídos no documento de SDR, visite o [Criação e manutenção de um documento de Referência de design de solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Você também pode baixar um modelo de amostra do Excel, no entanto, a versão específica do WKND também está disponível [aqui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
-## Configuração do Analytics - conjunto de relatórios, Analysis Workspace
+## Configurar o Analytics - conjunto de relatórios, Analysis Workspace
 
 A primeira etapa é configurar o Adobe Analytics, especificamente o conjunto de relatórios com variáveis de conversão (ou eVar) e eventos bem-sucedidos. As variáveis de conversão são usadas para medir causa e efeito. Os eventos bem-sucedidos são usados para rastrear ações.
 
@@ -130,84 +130,84 @@ No [tutorial anterior](./web-sdk.md), uma propriedade de tag é criada, ela tem 
 
 + A variável `Component ID` Código do elemento de dados.
 
-   ```javascript
-   if(event && event.path && event.path.includes('.')) {    
-       // split on the `.` to return just the component ID for e.g. button-06bc532b85, tabs-bb27f4f426-item-cc9c2e6718
-       return event.path.split('.')[1];
-   }else {
-       //return dummy ID
-       return "WKND-CTA-ID";
-   }
-   ```
+  ```javascript
+  if(event && event.path && event.path.includes('.')) {    
+      // split on the `.` to return just the component ID for e.g. button-06bc532b85, tabs-bb27f4f426-item-cc9c2e6718
+      return event.path.split('.')[1];
+  }else {
+      //return dummy ID
+      return "WKND-CTA-ID";
+  }
+  ```
 
 + A variável `Component Name` Código do elemento de dados.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
-       // Return the Button, Link, Image, Tab name, for e.g. View Trips, Full Article, See Trips
-       return event.component['dc:title'];
-   }else {
-       //return dummy ID
-       return "WKND-CTA-Name";    
-   }    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+      // Return the Button, Link, Image, Tab name, for e.g. View Trips, Full Article, See Trips
+      return event.component['dc:title'];
+  }else {
+      //return dummy ID
+      return "WKND-CTA-Name";    
+  }    
+  ```
 
 + A variável `all pages - on load` **Regra-Condição** código
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
-       return true;
-   }else{
-       return false;
-   }    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
+      return true;
+  }else{
+      return false;
+  }    
+  ```
 
 + A variável `home page - cta click` **Regra-Evento** código
 
-   ```javascript
-   var componentClickedHandler = function(evt) {
-   // defensive coding to avoid a null pointer exception
-   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-       //trigger Tag Rule and pass event
-       console.log("cmp:click event: " + evt.eventInfo.path);
-   
-       var event = {
-           //include the path of the component that triggered the event
-           path: evt.eventInfo.path,
-           //get the state of the component that triggered the event
-           component: window.adobeDataLayer.getState(evt.eventInfo.path)
-       };
-   
-       //Trigger the Tag Rule, passing in the new `event` object
-       // the `event` obj can now be referenced by the reserved name `event` by other Tag Property data elements
-       // i.e `event.component['someKey']`
-       trigger(event);
-   }
-   }
-   
-   //set the namespace to avoid a potential race condition
-   window.adobeDataLayer = window.adobeDataLayer || [];
-   //push the event listener for cmp:click into the data layer
-   window.adobeDataLayer.push(function (dl) {
-   //add event listener for `cmp:click` and callback to the `componentClickedHandler` function
-   dl.addEventListener("cmp:click", componentClickedHandler);
-   });    
-   ```
+  ```javascript
+  var componentClickedHandler = function(evt) {
+  // defensive coding to avoid a null pointer exception
+  if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+      //trigger Tag Rule and pass event
+      console.log("cmp:click event: " + evt.eventInfo.path);
+  
+      var event = {
+          //include the path of the component that triggered the event
+          path: evt.eventInfo.path,
+          //get the state of the component that triggered the event
+          component: window.adobeDataLayer.getState(evt.eventInfo.path)
+      };
+  
+      //Trigger the Tag Rule, passing in the new `event` object
+      // the `event` obj can now be referenced by the reserved name `event` by other Tag Property data elements
+      // i.e `event.component['someKey']`
+      trigger(event);
+  }
+  }
+  
+  //set the namespace to avoid a potential race condition
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  //push the event listener for cmp:click into the data layer
+  window.adobeDataLayer.push(function (dl) {
+  //add event listener for `cmp:click` and callback to the `componentClickedHandler` function
+  dl.addEventListener("cmp:click", componentClickedHandler);
+  });    
+  ```
 
 + A variável `home page - cta click` **Regra-Condição** código
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('@type')) {
-       //Check for Button Type OR Teaser CTA type
-       if(event.component['@type'] === 'wknd/components/button' ||
-       event.component['@type'] === 'wknd/components/teaser/cta') {
-           return true;
-       }
-   }
-   
-   // none of the conditions are met, return false
-   return false;    
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('@type')) {
+      //Check for Button Type OR Teaser CTA type
+      if(event.component['@type'] === 'wknd/components/button' ||
+      event.component['@type'] === 'wknd/components/teaser/cta') {
+          return true;
+      }
+  }
+  
+  // none of the conditions are met, return false
+  return false;    
+  ```
 
 +++
 
