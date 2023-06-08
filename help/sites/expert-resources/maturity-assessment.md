@@ -4,8 +4,9 @@ seo-title: AEM Sites Maturity Assessment
 description: Esta lista de verificação fornece uma visão geral das principais perguntas que você e sua equipe devem responder ao avaliar a maturidade da instância do AEM Sites
 seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
+feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

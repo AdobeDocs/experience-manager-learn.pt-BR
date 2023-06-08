@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '458'
 ht-degree: 27%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 27%
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
    + [Lançamentos](page-authoring/launches.md)
-   + Conselhos de especialistas {#expert-advice}
+   + Aprenda com seus colegas {#expert-advice}
       + [Dicas de Hierarquia do Site](page-authoring/expert-advice/site-hierarchy.md)
 + Componentes {#components}
    + [Desenvolvimento de componentes](components/component-development.md)
-   + [Componentes principais ](components/core-components-feature-video-understand.md)
+   + [Componentes principais](components/core-components-feature-video-understand.md)
    + [Entrega de imagem otimizada para a Web](components/web-optimized-image-delivery.md)
    + [Console de componentes](components/components-console-feature-video-use.md)
 + Fragmentos de conteúdo {#content-fragments}
@@ -123,7 +123,7 @@ ht-degree: 27%
       + [Criar atividade do Target usando ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
       + [Personalização usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Personalização da experiência completa de página da Web](integrations/adobe-target/personalization-web-page.md)
-+ Recursos de especialistas {#expert-resources}
++ Aprenda com seus colegas {#expert-resources}
    + [Avaliação de maturidade da AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenção do site](expert-resources/site-maintenance.md)
    + [Dicas e truques do especialista em AEM: Sessão 1](expert-resources/champion-tips-1.md)
