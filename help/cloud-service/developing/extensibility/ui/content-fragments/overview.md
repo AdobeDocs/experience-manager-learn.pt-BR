@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 82df468bc9a5f83133adbd7aa7332bb5c21a695c
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -278,7 +278,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-rte-toolbar.md" title="Botão da barra de ferramentas do Editor de Rich Text" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte-toolbar/card.png" alt="Botão da barra de ferramentas do Editor de Rich Text">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-toolbar-card.png" alt="Botão da barra de ferramentas do Editor de Rich Text">
           </a>
         </figure>
       </div>
@@ -293,4 +293,25 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
       </div>
     </div>
   </div>   
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Rich Text Editor Widget">
+    <div class="card" style="height: 100%">
+      <div class="card-image">
+        <figure class="image is-16by9">
+          <a href="./examples/editor-rte-widget.md" title="Widget do editor de rich text" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="Widget do editor de rich text">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small">
+        <div class="content">
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget do editor de rich text">Widget do editor de rich text</a></p>
+          <p class="is-size-6">Adicionar widgets ao Editor de Rich Text no Editor de fragmento de conteúdo.</p>
+          <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

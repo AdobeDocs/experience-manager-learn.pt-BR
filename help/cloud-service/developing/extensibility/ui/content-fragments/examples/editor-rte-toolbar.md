@@ -10,7 +10,7 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adicionar botão personalizado à barra de ferramentas do Editor de Rich Text (RTE)
 
-![Exemplo de extensão da barra de ferramentas do Editor de fragmento de conteúdo](./assets/rte-toolbar/hero.png){align="center"}
+![Exemplo de extensão da barra de ferramentas do Editor de fragmento de conteúdo](./assets/rte/rte-toolbar-hero.png){align="center"}
 
 Botões personalizados podem ser adicionados à **Barra de ferramentas do RTE** no Editor de fragmento de conteúdo usando o `rte` ponto de extensão. Este exemplo mostra como adicionar um botão personalizado chamado _Adicionar Dica_ à barra de ferramentas do RTE e modifique o conteúdo no RTE.
 
