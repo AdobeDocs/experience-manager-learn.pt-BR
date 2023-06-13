@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 82df468bc9a5f83133adbd7aa7332bb5c21a695c
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 22%
 
 ---
@@ -73,10 +73,11 @@ ht-degree: 22%
          + Fragmentos de conteúdo{#content-fragments}
             + [Visão geral](./developing/extensibility/ui/content-fragments/overview.md)
             + Exemplos{#examples}
-               + [Atualização de propriedade em massa](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Geração de imagem de IA](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
+               + [Atualização de propriedade em massa](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Colunas de Grade Personalizadas](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
                + [Exportar como XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
+               + [Botão da barra de ferramentas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
    + Noções básicas de desenvolvimento{#basics}
       + [SDK do AEM](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
