@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,7 @@ Inclua a entrada apropriada no filter.xml do projeto ui.content
 >[!NOTE]
 >
 >Agora, ao criar e implantar seu projeto usando o Cloud Manager, será necessário inserir novamente a chave de acesso do Azure na configuração dos serviços em nuvem. Para evitar inserir novamente a chave de acesso, é recomendável criar uma configuração sensível ao contexto usando as variáveis de ambiente, conforme explicado na [próximo artigo](./context-aware-fdm.md)
+
+## Próximas etapas
+
+[Criar configuração sensível ao contexto](./context-aware-fdm.md)

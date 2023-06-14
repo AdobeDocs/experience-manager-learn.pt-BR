@@ -8,10 +8,10 @@ version: Cloud Service
 topic: Development
 kt: 10373
 exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
-source-git-commit: 69cd5022d136e9fa84f33d2fc5ca249ac0fb6490
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
           componentGroup="BankingApplication - Content"/>
 ```
 
-### Pesquisa e Lister
+### Pesquisa e listagem
 
 Faça uma cópia do componente de botão e renomeie-a para _searchandlister_.
 Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
@@ -82,3 +82,7 @@ Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
 ```
 
 Depois que o projeto for implantado, você poderá usar esses componentes na página do AEM para criar o portal do Forms.
+
+## Próximas etapas
+
+[Incluir configuração de serviços em nuvem](./azure-storage-fdm.md)

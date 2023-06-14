@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 10423
 exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 10%
+source-wordcount: '395'
+ht-degree: 11%
 
 ---
 
@@ -67,3 +67,7 @@ Copie o texto a seguir no arquivo criado na etapa anterior. O código neste arqu
 ![cloud-config-property](assets/cloud-config-properties.png)
 
 Para configurações de nuvem baseadas em REST com autenticação básica, normalmente é desejável criar variáveis de ambiente para propriedades serviceEndPoint, userName e password.
+
+## Próximas etapas
+
+[Envie seu projeto AEM para o Cloud Manager](./push-project-to-cloud-manager-git.md)

@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Instalar [Cygwin](https://www.cygwin.com/). Instalei o na pasta C:\cygwin64
 
 Crie uma pasta chamada adoberepo em c:\cloudmanager.
 
-[Instalar a ferramenta repo].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing a ferramenta repo não é nada além de copiar o arquivo repo e colocá-lo na pasta c:\cloudmanger\adoberepo.
+[Instalar a ferramenta repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) A instalação da ferramenta de repositório nada mais é do que copiar o arquivo do repositório e colocá-lo na pasta c:\cloudmanger\adoberepo.
 
 Adicione o seguinte à variável de ambiente Caminho C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -35,7 +35,7 @@ Adicione o seguinte à variável de ambiente Caminho C:\cygwin64\bin;C:\CloudMan
 * Iniciar IntelliJ
 * Pressione Ctrl+Alt+S para iniciar a janela de configurações.
 * Selecione Ferramentas->Ferramentas externas, clique no sinal + e insira o seguinte, conforme mostrado na captura de tela.
-   ![rep](assets/repo.png)
+  ![rep](assets/repo.png)
 * Certifique-se de criar um grupo chamado repo digitando &quot;repo&quot; no campo suspenso Grupo e todos os comandos criados pertencem a **repo** grupo
 
 
@@ -85,3 +85,7 @@ As etapas a seguir podem ser seguidas para configurar rapidamente a instância p
 * Crie a seguinte estrutura de pastas.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copie o aem-forms-addon-xxxxxx.far para a pasta de instalação
 * Abra o prompt de comando e navegue até c:\aemformscs\aem-sdk\author insira o seguinte comando java -jar aem-author-p4502.jar -gui. Isso implantará o pacote complementar de formulários na instância do AEM.
+
+## Próximas etapas
+
+[Sincronizar formulários e modelos do AEM com o projeto AEM](./deploy-your-first-form.md)

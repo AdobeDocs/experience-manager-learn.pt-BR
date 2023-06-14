@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8851
 exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
-source-git-commit: f0beb8b32aa25d6c26243879c9c0e42095488e23
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
 
@@ -40,3 +40,7 @@ Executar o pipeline
 ![run-pipeline](assets/run-pipeline.png)
 
 Depois que o código for implantado, você deverá ver as alterações na instância do Cloud Service do AEM Forms.
+
+## Próximas etapas
+
+[Atualização do projeto do arquétipo maven](./updating-project-archetype.md)
