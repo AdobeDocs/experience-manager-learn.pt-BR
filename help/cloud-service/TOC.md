@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '963'
 ht-degree: 22%
 
 ---
@@ -78,7 +78,8 @@ ht-degree: 22%
                + [Colunas de Grade Personalizadas](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
                + [Exportar como XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
                + [Botão da barra de ferramentas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
-               + [Widget do RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
+               + [Widgets do RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
+               + [Medalhas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
    + Noções básicas de desenvolvimento{#basics}
       + [SDK do AEM](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
