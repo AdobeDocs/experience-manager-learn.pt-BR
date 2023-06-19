@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 24%
+source-wordcount: '396'
+ht-degree: 25%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 24%
    + [Impulsionar pesquisa](./search-and-discovery/search-boost.md)
 
 + Recursos avançados{#advanced}
+   + [Ativos 3D](./advanced/3d-assets.md)
    + [Saída de PDF de anotações](./advanced/customizing-annotations-pdf-output.md)
    + [Informações de ativos ](./advanced/asset-insights-launch-tutorial.md)
    + [Relatórios de ativos](./advanced/asset-reports.md)
@@ -72,13 +73,13 @@ ht-degree: 24%
       + [Configurar AEM Brand Portal](brand-portal/configure.md)
       + [Configurar origem de ativos](brand-portal/configure-asset-sourcing.md)
       + [Ativar downloads de representação](brand-portal/enable-renditions-download.md)
+
    + Compartilhamento de ativos{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurar o Asset Share Commons no AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Compartilhamento de ativos em temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Compartilhamento de ativos Commons Kits de ativos](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Connected Assets](./sharing/connected-assets.md)
-
 
 + Integração com workflows criativos{#creative-workflows}
    + [Aplicativo de desktop AEM](./creative-workflows/aem-desktop-app.md)
@@ -126,6 +127,7 @@ ht-degree: 24%
    + Utilização do com o AEM Sites {#dm-with-aem-sites}
       + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+
    + Tutoriais {#tutorials}
       + [Criação de conjuntos de carrossel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Criação de conjuntos de imagens](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
@@ -141,7 +143,6 @@ ht-degree: 24%
       + [Exclusão da configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download de ativos no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
-
 
 + Integração do Workfront{#workfront}
    + Conector aprimorado{#enhanced-connector}
