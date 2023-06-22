@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '977'
 ht-degree: 22%
 
 ---
@@ -208,6 +208,10 @@ ht-degree: 22%
       + [Configurar o painel de ativos](./forms/create-first-af/configure-assets-panel.md)
       + [Configurar o painel inicial](./forms/create-first-af/configure-start-panel.md)
       + [Adicionar e configurar a barra de ferramentas](./forms/create-first-af/add-configure-toolbar.md)
+   + Serviço de envio personalizado com formulário headless{#custom-submit-headless-forms}
+      + [1 - Introdução](./forms/custom-submit-headless-forms/introduction.md)
+      + [2 - Criar serviço de envio personalizado](./forms/custom-submit-headless-forms/custom-submit-service.md)
+      + [3 - Exibir a resposta](./forms/custom-submit-headless-forms/handle-response-react-app.md)
    + AEM Forms e Analytics{#forms-and-analytics}
       + [Introdução](./forms/form-data-analytics/introduction.md)
       + [Criar elementos de dados](./forms/form-data-analytics/data-elements.md)

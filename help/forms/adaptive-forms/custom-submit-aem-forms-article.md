@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
@@ -24,11 +24,15 @@ Este artigo guiará você pelas etapas necessárias para criar uma ação de env
 * Logon no crx
 * Crie um nó do tipo &quot;sling :folder&quot; em aplicativos. Vamos chamar este nó de CustomSubmitHelpx.
 * Salve o nó recém-criado.
-* Adicione as duas propriedades a seguir ao nó recém-criado
-* PropertyName | Valor da propriedade
-* guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,basic
-* jcr :description | CustomSubmitHelpx
+* Adicione as três propriedades a seguir ao nó recém-criado
+
+| Nome da Propriedade | Valor da propriedade |
+|----------------    | ---------------------------------|
+| guideComponentType | fd/af/components/guidesubmittype |
+| guideDataModel | xfa,xsd,basic |
+| jcr :description | CustomSubmitHelpx |
+
+
 * Salve as alterações
 * Crie um novo arquivo chamado post.POST.jsp no nó CustomSubmitHelpx.Quando um formulário adaptável é enviado, esse JSP é chamado. Você pode gravar o código JSP de acordo com seu requisito nesse arquivo. O código a seguir encaminha a solicitação ao servlet.
 
