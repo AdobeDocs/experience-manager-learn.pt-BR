@@ -10,17 +10,17 @@ jira: KT-13465
 thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
+source-git-commit: 9c8c03df7c510ab697d5222f9dffd5111519b712
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
 
-
 # Adicionar widgets ao Rich Text Editor (RTE)
 
-![Exemplo de widgets do Editor de fragmento de conteúdo](./assets/rte/rte-widget-hero.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Para adicionar o conteúdo dinâmico no Editor de Rich Text (RTE), a variável **widgets** A funcionalidade do pode ser usada. Os widgets ajudam a integrar a interface de usuário simples ou complexa no RTE e a interface de usuário pode ser criada usando a estrutura JS de sua escolha. Elas podem ser vistas como caixas de diálogo que são abertas ao pressionar `{` chave especial no RTE.
 
@@ -230,4 +230,3 @@ const DiscountCodes = () => {
 
 export default DiscountCodes;
 ```
-
