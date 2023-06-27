@@ -3,12 +3,13 @@ title: Utilização de ferramentas de modernização do AEM para migrar para o A
 description: Saiba como as Ferramentas de modernização do AEM são usadas para atualizar um projeto e conteúdo existente do AEM para serem compatíveis com o AEM as a Cloud Service.
 version: Cloud Service
 topic: Migration, Upgrade
+feature: Migration
 role: Developer
 level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 6%

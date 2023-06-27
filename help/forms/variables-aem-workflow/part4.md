@@ -3,10 +3,11 @@ title: Variáveis no fluxo de trabalho do AEM[Part4]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,4 +80,4 @@ Para testar esse fluxo de trabalho em seu sistema, siga as etapas a seguir
 * Você deve ver uma nova tarefa chamada &quot;Atribuir ao administrador de despesas&quot;
 * Abrir o formulário associado à tarefa
 * Você deve ver duas rotas personalizadas com os nomes do gerente
-   [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Esse fluxo de trabalho usa a variável ArrayList, a variável do tipo JSON e o editor de regras no componente Or-Split
+  [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Esse fluxo de trabalho usa a variável ArrayList, a variável do tipo JSON e o editor de regras no componente Or-Split

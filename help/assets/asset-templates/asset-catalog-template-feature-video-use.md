@@ -3,10 +3,11 @@ title: Utilização do catálogo de ativos com o AEM Commerce e o InDesign Serve
 description: O aprimoramento de catálogo do AEM 6.4 oferece a capacidade de criar páginas de catálogo usando modelos de ativos e o InDesign Server AEM.  Um usuário pode criar uma página de catálogo usando o modelo de InDesign e mapear propriedades do produto a campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para produtos diferentes.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Beginner
 exl-id: 45daa8e3-ce3b-43de-b3d6-276107215dd4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%

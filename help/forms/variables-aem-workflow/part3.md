@@ -3,10 +3,11 @@ title: Variáveis no fluxo de trabalho do AEM[Parte3]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
 version: 6.5
 topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 849bfe6c-6b7f-44d0-85bc-5df0287a9bca
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 0%

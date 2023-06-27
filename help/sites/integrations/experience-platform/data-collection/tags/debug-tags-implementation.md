@@ -9,10 +9,11 @@ activity: setup
 kt: 6047
 thumbnail: 38567.jpg
 topic: Integrations
+feature: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -43,13 +44,13 @@ Para ativar a depuração no lado do cliente, chame o `setDebug(true)` no `_sate
 
 ## Depuração via Adobe Experience Platform Debugger
 
-O Adobe fornece o Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Complemento do Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, entender e obter insights sobre a integração.
+Adobe fornece Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Complemento do Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, entender e obter insights sobre a integração.
 
-1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de Publicação
+1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de publicação
 
 1. No **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform** verifique os detalhes da propriedade da tag, como Nome, Versão, Data de build, Ambiente e Extensões.
 
-   ![Detalhes do depurador da Adobe Experience Platform e da propriedade da tag](assets/tag-property-details.png)
+   ![Detalhes de propriedade de Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
 
 ## Recursos adicionais {#additional-resources}
 

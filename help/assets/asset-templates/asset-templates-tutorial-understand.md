@@ -3,10 +3,11 @@ title: Noções básicas sobre arquivos InDesign e modelos de ativos no AEM Asse
 description: Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas as considerações que o acompanham, para uso no recurso Modelos de ativos do AEM Assets.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -35,6 +36,7 @@ Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas a
 4. Adicionar a imagem do logotipo FPO ([fornecido no zip](assets/asset-templates-tutorial-video--supporting-files.zip)) ao elemento de logotipo na página Principal.
 
    * **Clique com o botão direito** e selecione **&#39;Ajuste&#39; > &#39;Opções de ajuste ao quadro&#39;... > &#39;Ajuste de conteúdo&#39; > &#39;Preencher quadro proporcionalmente&#39;**
+
    [Saiba mais sobre as opções de Ajuste de Quadro](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)e que é adequado para o seu caso de uso.
 
 5. Copie para baixo o cabeçalho (Logotipo e Nome da empresa) do modelo Principal em Página e Página por meio de Colar no local.
