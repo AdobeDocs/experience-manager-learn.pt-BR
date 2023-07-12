@@ -12,10 +12,10 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 73bb813c961cf988355984b0385998a493ee3716
+source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 1%
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,22 @@ Geralmente, as mesmas considerações para armazenamento em cache de conteúdo n
 | Não | AEM Publish | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar solicitações autenticadas em cache, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso entregue. |
 | Sim | AEM Publish | Anônimo | As solicitações anônimas que podem ser armazenadas em cache no dispatcher também podem ter seus cabeçalhos de resposta em cache, garantindo que as futuras solicitações do CORS possam acessar o conteúdo em cache. Qualquer alteração na configuração do CORS na publicação do AEM **deve** ser seguido por uma invalidação dos recursos em cache afetados. As práticas recomendadas determinam as implantações de código ou configuração nas quais o cache do dispatcher é removido, já que é difícil determinar qual conteúdo em cache pode ser afetado. |
 
-Para permitir o armazenamento em cache de cabeçalhos CORS, adicione a seguinte configuração a todos os arquivos dispatcher.any de publicação do AEM compatíveis.
+### Permitir cabeçalhos de solicitação CORS
+
+Para permitir as [Cabeçalhos de solicitação HTTP para transmitir ao AEM para processamento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), eles devem ter permissão no do Dispatcher `/clientheaders` configuração.
+
+```
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Armazenamento em cache de cabeçalhos de resposta do CORS
+
+Para permitir o armazenamento em cache e a veiculação de cabeçalhos CORS no conteúdo em cache, adicione o seguinte [/cache /configuração de cabeçalhos](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#caching-http-response-headers) para o AEM Publish `dispatcher.any` arquivo.
 
 ```
 /publishfarm {
