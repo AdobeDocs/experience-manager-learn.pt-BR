@@ -12,7 +12,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: c6ca64d1b66bbf5bedf73736b5d94130bc21f6c8
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também 
 #### [!UICONTROL Cabeçalhos expostos]
 
 * `"exposedheaders" <header>`
-* Lista de parâmetros de cabeçalho indicando cabeçalhos de solicitação que os navegadores têm permissão para acessar.
+* Lista de parâmetros de cabeçalho que indica os cabeçalhos de resposta que os navegadores têm permissão para acessar.
 
 #### [!UICONTROL Idade máxima]
 
