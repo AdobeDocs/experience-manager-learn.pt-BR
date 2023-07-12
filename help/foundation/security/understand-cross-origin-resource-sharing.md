@@ -12,9 +12,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também 
 #### [!UICONTROL Cabeçalhos expostos]
 
 * `"exposedheaders" <header>`
-* Lista de parâmetros de cabeçalho que indica os cabeçalhos de resposta que os navegadores têm permissão para acessar.
+* Lista de parâmetros de cabeçalho que indica os cabeçalhos de resposta que os navegadores têm permissão para acessar. Para solicitações do CORS (não antes do voo), se não estiver vazio, esses valores serão copiados para o `Access-Control-Expose-Headers` cabeçalho de resposta. Os valores na lista (nomes de cabeçalho) são então acessíveis ao navegador; sem ela, esses cabeçalhos não são legíveis pelo navegador.
 
 #### [!UICONTROL Idade máxima]
 
@@ -74,7 +74,7 @@ Se nenhuma política estiver configurada, [!DNL CORS] as solicitações também 
 #### [!UICONTROL Cabeçalhos suportados]
 
 * `"supportedheaders" <header>`
-* Lista de `header` parâmetros que indicam quais cabeçalhos HTTP podem ser usados ao fazer a solicitação real.
+* Lista de `header` parâmetros que indicam quais cabeçalhos de solicitação HTTP podem ser usados ao fazer a solicitação real.
 
 #### [!UICONTROL Métodos permitidos]
 
@@ -98,8 +98,7 @@ O Site 1 é um cenário básico, acessível anonimamente e somente leitura, em q
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ O site 2 é mais complexo e requer solicitações autorizadas e mutantes (POST, 
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
