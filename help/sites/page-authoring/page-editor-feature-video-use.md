@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: d0027647ce3157173d2592728757150199db930d
+source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 8%
+ht-degree: 15%
 
 ---
 
@@ -35,6 +35,6 @@ Consulte a [Documentação do AEM para obter uma visão geral completa dos recur
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação do Editor de páginas do AEM[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
+* [Documentação do Editor de páginas do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
 * [Editando a documentação de conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
