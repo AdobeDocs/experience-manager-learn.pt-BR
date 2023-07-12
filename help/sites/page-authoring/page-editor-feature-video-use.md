@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: d0027647ce3157173d2592728757150199db930d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 9%
+source-wordcount: '127'
+ht-degree: 8%
 
 ---
 
@@ -26,35 +26,15 @@ ht-degree: 9%
 
 O Editor de páginas do site AEM é uma ferramenta poderosa para criar e editar conteúdo na Web. As ferramentas e os recursos do Editor de páginas são acessados na barra de ferramentas da interface do Editor de páginas.
 
-O vídeo a seguir destaca os principais recursos do Editor de páginas.
+O vídeo a seguir destaca alguns dos principais recursos do Editor de páginas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
-Os recursos do editor de páginas incluem:
 
-* Arrastar e soltar componentes e ativos
-* Painel Árvore de conteúdo que fornece um índice de todos os componentes da página
-* O painel Informações da página fornece acesso a informações adicionais e ações rápidas para um autor de conteúdo
-   * Abrir propriedades
-   * Implantar página
-   * Iniciar fluxo de trabalho
-   * Bloquear página / Desbloquear página
-   * Publicar/desfazer publicação de uma página
-   * Editar modelo
-   * Exibir como publicado
-   * Exibir no admin
-   * Ajuda
-* Adição de ícones e descrição do componente ao painel do componente
-* Link direto para editar ativos no DAM
-* Emulador para edição de conteúdo em linha e gerenciamento mais rápido de componentes na grade responsiva
-* Modos de edição de página
-   * Modo de edição
-   * Modo de layout
-   * Modo de desenvolvedor
-* Preenchimento automático e pesquisa por palavra-chave para o campo de formulário do pathfinder
-* Barra de status do fluxo de trabalho da página atual
+Consulte a [Documentação do AEM para obter uma visão geral completa dos recursos do Editor de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR).
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Documentação do Editor de páginas do AEM[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
+* [Editando a documentação de conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
