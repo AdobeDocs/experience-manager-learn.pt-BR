@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Value Video
 last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13228
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+exl-id: a52b253c-14b4-465b-9714-7f321435a945
+source-git-commit: 2e37a7ae14f98e2298bcb0a625f8ed55edcee6ad
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 5%
 
 ---
-
 
 # Dicas e truques do especialista em AEM - Manual de integração do Cloud Manager
 
@@ -23,7 +23,7 @@ O manual de integração ajudará você a assumir o controle como um novo admini
 
 >[!TIP]
 >
->Baixe o [manual de integração aqui.](./assets/AEM-Cloud-Manager-Onboarding-Playbook.xlsx)
+>Baixe o [manual de integração aqui.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
 
 Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é um defensor do Adobe Experience Manager e compartilha ideias sobre como usar o manual de integração.
 
