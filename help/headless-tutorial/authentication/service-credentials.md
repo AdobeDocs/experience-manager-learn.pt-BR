@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
+source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ As Credenciais de serviço, diferentemente dos Tokens de acesso de desenvolvimen
 As Contas técnicas são criadas uma vez, no entanto, as Chaves privadas usam o para gerenciar Credenciais de serviço associadas à Conta técnica do podem ser gerenciadas ao longo do tempo. Por exemplo, novas Credenciais de chave privada/serviço devem ser geradas antes da expiração da chave privada atual, para permitir o acesso ininterrupto por um usuário das Credenciais de serviço.
 
 1. Verifique se você está conectado como:
-   + __Administrador da organização Adobe IMS__
+   + __Administrador de sistema da organização IMS da Adobe__
    + Membro do __Administradores de AEM__ Perfil de produto IMS em __AEM Author__
 1. Efetue logon no [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Abra o Programa que contém o ambiente as a Cloud Service AEM para integrar e configure as Credenciais de serviço para
