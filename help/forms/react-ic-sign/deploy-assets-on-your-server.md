@@ -9,9 +9,9 @@ level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,21 @@ Os ativos/configurações a seguir foram implantados em um servidor de publicaç
 * [Modelo de comunicação interativa de amostra](assets/waiver-interactive-communication.zip)
 * [Implantar o pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Adicione a seguinte entrada no serviço Mapeador de usuários do Apache Sling Service usando o OSGi configMgr
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
-* [A amostra de código do aplicativo React pode ser baixada aqui](assets/src.zip)
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
+## Implantar o aplicativo de amostra do react
 
+* [Baixe o aplicativo de amostra do react](assets/mult-step-form1.zip)
+* Descompacte o conteúdo do aplicativo react em uma nova pasta
+* Navegue até a pasta e execute os seguintes comandos
 
-O aplicativo de amostra do react precisa ser implantado em seu ambiente local
+```java
+npm install
+npm start
+```
 
-Será necessário alterar o URL do endpoint para corresponder ao seu ambiente. Abra o arquivo EmergencyContact.js e altere o URL no método de busca
+Abra o arquivo EmergencyContact.js e altere o URL no método de busca para corresponder ao seu ambiente.
+
 
 ```javascript
  const getWebForm=async()=>
@@ -49,6 +56,6 @@ Será necessário alterar o URL do endpoint para corresponder ao seu ambiente. A
  
 ```
 
-Para habilitar a realização de chamadas de POST para o endpoint AEM a partir do aplicativo REACT, será necessário especificar as entradas apropriadas no campo Origens permitidas na configuração da Política de compartilhamento de recursos entre origens do Adobe Granite
+Para habilitar a realização de chamadas de POST para o endpoint AEM a partir do aplicativo REACT, será necessário especificar as entradas apropriadas no campo Origens permitidas na configuração da Política de compartilhamento de recursos entre origens do Adobe Granite.
 
 ![configuração de cors](assets/cors-settings.png)
