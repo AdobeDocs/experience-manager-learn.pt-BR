@@ -9,16 +9,17 @@ feature: Adaptive Forms
 topic: Development
 kt: 7431
 thumbnail: 332438.jpg
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 6bdfb841-3b7e-4c22-8907-a1b98df42ae5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '44'
+ht-degree: 2%
 
 ---
 
 # Formulário adaptável com o Acrobat Sign
-
 
 Criar um formulário adaptável para usar a Configuração de nuvem do Acrobat Sign
 

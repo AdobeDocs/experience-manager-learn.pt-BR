@@ -3,14 +3,16 @@ title: Geração de JSON Web Token e Access Token
 description: Este artigo explica o código necessário para gerar o JWT e o token de acesso necessários para fazer chamadas REST para o Adobe Campaign Standard
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 1%
 
 ---
 

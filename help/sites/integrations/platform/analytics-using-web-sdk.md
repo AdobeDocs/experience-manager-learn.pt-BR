@@ -1,6 +1,6 @@
 ---
-title: Integrar o Adobe Analytics usando o SDK da Web da plataforma
-description: Saiba mais sobre a abordagem moderna de como integrar o Adobe Experience Manager (AEM) e o Adobe Analytics usando o SDK da Web da plataforma. Este tutorial o orienta por meio da coleta de dados de visualização de página e cliques no CTA para obter insights de dados no Adobe Analytics Workspace.
+title: Integrar o AEM Sites e o Adobe Analytics ao SDK da Web da plataforma
+description: Integre o AEM Sites e o Adobe Analytics usando a abordagem moderna do SDK da Web da plataforma.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,15 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1637'
 ht-degree: 2%
 
 ---
 
-
-# Integrar o Adobe Analytics usando o SDK da Web da plataforma
+# Integrar o AEM Sites e o Adobe Analytics ao SDK da Web da plataforma
 
 Saiba mais sobre **abordagem moderna** sobre como integrar o Adobe Experience Manager (AEM) e o Adobe Analytics usando o SDK da Web da plataforma. Este tutorial abrangente orienta você pelo processo de coleta contínua de [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) dados de cliques em visualização de página e CTA. Obtenha insights valiosos visualizando os dados coletados no Adobe Analysis Workspace, onde é possível explorar várias métricas e dimensões. Além disso, explore o conjunto de dados da plataforma para verificar e analisar os dados. Junte-se a nós nesta jornada para aproveitar o poder do AEM e do Adobe Analytics para a tomada de decisões orientadas por dados.
 
@@ -222,7 +224,7 @@ Para obter informações adicionais sobre a integração dos Componentes princip
 
 ## Verificar propriedade de tag atualizada na WKND
 
-Para garantir que a propriedade de tag atualizada seja criada, publicada e esteja funcionando corretamente nas páginas do site da WKND. Use o navegador da Web Google Chrome [Extensão do Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+Para garantir que a propriedade de tag atualizada seja criada, publicada e esteja funcionando corretamente nas páginas do site da WKND. Use o navegador da Web Google Chrome [extensão do Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
 
 + Para garantir que a propriedade da tag seja da versão mais recente, verifique a data de build.
 

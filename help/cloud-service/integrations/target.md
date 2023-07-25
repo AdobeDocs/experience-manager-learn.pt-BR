@@ -1,6 +1,6 @@
 ---
-title: Personalização do AEM Headless e do Target
-description: Este tutorial explora como os fragmentos de conteúdo do AEM são exportados para o Adobe Target e, em seguida, usados para personalizar experiências headless usando o SDK da Web do Adobe.
+title: Integrar AEM Headless e Target
+description: Saiba como integrar o AEM headless e o Adobe Target para personalizar experiências headless usando o SDK da Web do Experience Platform.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -10,30 +10,32 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1679'
 ht-degree: 1%
 
 ---
 
-# Personalizar experiências AEM headless com fragmentos de conteúdo
+# Integrar AEM Headless e Target
 
-Este tutorial explora como os fragmentos de conteúdo do AEM são exportados para o Adobe Target e, em seguida, usados para personalizar experiências headless usando o SDK da Web do Adobe. A variável [React WKND App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) O é usado para explorar como uma atividade personalizada do Target usando Ofertas de fragmentos de conteúdo pode ser adicionada à experiência, para promover uma aventura WKND.
+Saiba como integrar o AEM headless ao Adobe Target, exportando fragmentos de conteúdo do AEM para o Adobe Target e usando-os para personalizar experiências headless usando o alloy.js do SDK da Web da Adobe Experience Platform. A variável [React WKND App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) O é usado para explorar como uma atividade personalizada do Target usando Ofertas de fragmentos de conteúdo pode ser adicionada à experiência, para promover uma aventura WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 O tutorial aborda as etapas envolvidas na configuração do AEM e do Adobe Target:
 
 1. [Criar configuração do Adobe IMS para o Adobe Target](#adobe-ims-configuration) no AEM Author
-1. [Criar Cloud Service Adobe Target](#adobe-target-cloud-service) no AEM Author
-1. [Aplicar o Cloud Service do Adobe Target às pastas do AEM Assets](#configure-asset-folders) no AEM Author
-1. [Permissão para o Cloud Service Adobe Target](#permission) no Adobe Admin Console
-1. [Exportar fragmentos de conteúdo](#export-content-fragments) do autor do AEM para o Target
-1. [Criar uma atividade usando ofertas de fragmento de conteúdo](#activity) no Adobe Target
-1. [Criar uma sequência de dados de Experience Platform](#datastream-id) no Experience Platform
-1. [Integrar personalização em um aplicativo AEM Headless baseado no React](#code) usando o SDK da Web do Adobe.
+2. [Criar Cloud Service Adobe Target](#adobe-target-cloud-service) no AEM Author
+3. [Aplicar o Cloud Service do Adobe Target às pastas do AEM Assets](#configure-asset-folders) no AEM Author
+4. [Permissão para o Cloud Service Adobe Target](#permission) no Adobe Admin Console
+5. [Exportar fragmentos de conteúdo](#export-content-fragments) do autor do AEM para o Target
+6. [Criar uma atividade usando ofertas de fragmento de conteúdo](#activity) no Adobe Target
+7. [Criar uma sequência de dados de Experience Platform](#datastream-id) no Experience Platform
+8. [Integrar personalização em um aplicativo AEM Headless baseado no React](#code) usando o SDK da Web do Adobe.
 
 ## Configuração do Adobe IMS{#adobe-ims-configuration}
 

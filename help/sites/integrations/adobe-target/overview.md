@@ -1,28 +1,30 @@
 ---
-title: Visão geral do AEM e do Adobe Target
-description: Saiba como criar e fornecer experiência personalizada usando o Adobe Experience Manager as a Cloud Service e o Adobe Target.
+title: Integrar o AEM Sites e o Adobe Target
+description: Saiba como integrar o AEM Sites e o Adobe Target para fornecer experiências personalizadas.
 feature: Experience Fragments, Core Components, Adobe Client Data Layer
-topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
-topic: Integrations
+topic: Integrations, Personalization
 role: User
 level: Beginner
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
-# AEM e ADOBE TARGET
+# Integrar o AEM Sites e o Adobe Target
 
-O Adobe Experience Manager (AEM) e o Adobe Target são soluções eficientes com recursos complementares que podem ser interpretados incorretamente como concorrentes. Às vezes, os clientes têm dificuldades em saber como e quando usar esses produtos em conjunto para fornecer uma experiência personalizada. Para fornecer uma experiência otimizada para cada usuário final, equipes diferentes em sua organização devem trabalhar em conjunto e definir quem faz o quê.
+Saiba como integrar o AEM Sites e o Adobe Target para fornecer experiências personalizadas.
+
+O Adobe Experience Manager (AEM) e o Adobe Target são soluções eficientes com recursos complementares que fornecem integração perfeita para fornecer experiências personalizadas. No entanto, os clientes podem enfrentar desafios para entender como e quando usar esses produtos juntos de maneira eficaz. Para otimizar a experiência para cada usuário final, é essencial que equipes diferentes em sua organização colaborem estreitamente e definam funções e responsabilidades claras. Ao aproveitar a integração entre AEM e Adobe Target, suas equipes podem trabalhar de forma harmoniosa para fornecer experiências personalizadas excepcionais.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 

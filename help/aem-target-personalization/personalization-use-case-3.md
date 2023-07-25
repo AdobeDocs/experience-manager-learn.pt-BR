@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -48,7 +50,6 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e, para e
 1. O profissional de marketing cria uma atividade de público-alvo A/B no Adobe Target.
    1. Na janela do Adobe Target, navegue até **Atividades** guia.
    2. Clique em **Criar atividade** e selecione o tipo de atividade como **Teste A/B**
-
       ![Adobe Target - Criar atividade](assets/personalization-use-case-2/create-ab-activity.png)
    3. Selecione o **Web** e escolha a variável **Visual Experience Composer**.
    4. Insira o **URL da atividade** e clique em **Próxima** para abrir o Visual Experience Composer.
@@ -63,7 +64,6 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e, para e
       ![Seleção de contêiner](assets/personalization-use-case-3/container-selection.png)
    9. Clique no contêiner que você deseja reorganizar e arraste-o e solte-o no local desejado. Vamos reorganizar as *Melhores assadores* contêiner da 1ª linha, 1ª coluna, para a 1ª linha, 3ª coluna. Agora a variável *Melhores assadores* o container está ao lado de *Exposições de fotografia* recipiente.
       ![Troca de contêiner](assets/personalization-use-case-3/container-swap.png)
-
       **Após a troca**
       ![Contêiner trocado](assets/personalization-use-case-3/after-swap-1-3.png)
    10. Da mesma forma, reorganize as posições para os outros contêineres de cartão.

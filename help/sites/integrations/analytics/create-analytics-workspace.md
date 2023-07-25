@@ -9,10 +9,11 @@ level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+badgeIntegration: label="Integração" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -152,12 +153,10 @@ Em seguida, crie uma tabela para criar uma representação visual de como os usu
 1. Vamos analisar a página por seu tipo de modelo. Selecione a métrica de modelo de página dos componentes e arraste e solte a métrica Modelo de página na dimensão Nome da página. Agora é possível exibir o nome da página detalhado por seu tipo de modelo.
 
    * **Antes**
-
-      ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Depois**
-
-      ![Métricas do eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![Métricas do eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Para entender como os usuários interagem com os botões CTA quando estão nas páginas do site WKND, é necessário detalhar ainda mais adicionando a métrica ID de botão (eVar8).
 
@@ -244,11 +243,9 @@ Em seguida, baixemos o Modelo de classificação da variável ID de botão (eVar
 1. No localizador de componentes, procure por **Botões WKND CTA** e arraste e solte a **Botões CTA do WKND (ID do botão)** dimensão na métrica ID de botão e substitua-a.
 
    * **Antes**
-
-      ![Botão Espaço de trabalho antes](assets/create-analytics-workspace/wknd-button-before.png)
+     ![Botão Espaço de trabalho antes](assets/create-analytics-workspace/wknd-button-before.png)
    * **Depois**
-
-      ![Botão Espaço de Trabalho Depois](assets/create-analytics-workspace/wknd-button-after.png)
+     ![Botão Espaço de Trabalho Depois](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. É possível observar que a métrica da ID do botão que continha a ID do botão de um botão de Chamada para ação (CTA) agora é substituída por um nome correspondente fornecido no modelo de classificação.
 1. Vamos comparar a tabela do Analytics Workspace com a página inicial da WKND e entender a contagem de cliques do botão CTA e sua análise. Com base nos dados da tabela de forma livre do espaço de trabalho, está claro que 22 vezes os usuários clicaram no **SKI AGORA** e quatro vezes para a Camping da página inicial do WKND na Austrália Ocidental **Leia mais** botão.

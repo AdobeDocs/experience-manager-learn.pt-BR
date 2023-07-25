@@ -10,10 +10,12 @@ kt: 10718
 thumbnail: KT-10718.png
 last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '928'
 ht-degree: 17%
 
 ---
@@ -23,24 +25,24 @@ ht-degree: 17%
 Saiba mais sobre as integrações compatíveis do AEM as a Cloud Service com outros produtos da Adobe Experience Cloud.
 Clique no produto Experience Cloud para obter a documentação sobre como configurar e usar as integrações.
 
-|  | AEM Sites | AEM Assets | AEM Forms |
+|                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
-| [Acrobat Sign](#adobe-acrobat-sign) |  |  | ✔ |
-| Publicidade |  |  |  |
+| [Acrobat Sign](#adobe-acrobat-sign) |           |            | ✔ |
+| Publicidade |           |            |          |
 | [Analytics](#adobe-analytics) | ✔ | ✔ | ✔ |
-| Gerenciador de público |  |  |  |
-| Campaign Classic |  |  |  |
-| Campaign Standard |  |  |  |
-| [Commerce](#adobe-commerce) | ✔ | ✔ |  |
-| Customer Journey Analytics |  |  |  |
-| [tags Experience Platform](#adobe-experience-platform-tags) | ✔ |  | ✔ |
-| [Journey Optimizer](#adobe-journey-optimizer) |  | ✔ |  |
-| [Learning Manager](#adobe-learning-manager) | ✔ |  |  |
-| Marketo Engage |  |  |  |
-| Real-time CDP |  |  |  |
+| Gerenciador de público |           |            |          |
+| Campaign Classic |           |            |          |
+| Campaign Standard |           |            |          |
+| [Commerce](#adobe-commerce) | ✔ | ✔ |          |
+| Customer Journey Analytics |           |            |          |
+| [tags Experience Platform](#adobe-experience-platform-tags) | ✔ |            | ✔ |
+| [Journey Optimizer](#adobe-journey-optimizer) |           | ✔ |          |
+| [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
+| Marketo Engage |           |            |          |
+| Real-time CDP |           |            |          |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
-| [Target](#adobe-target) | ✔ |  |  |
-| [Workfront](#adobe-workfront) |  | ✔ |  |
+| [Target](#adobe-target) | ✔ |            |          |
+| [Workfront](#adobe-workfront) |           | ✔ |          |
 
 
 ## Adobe Acrobat Sign

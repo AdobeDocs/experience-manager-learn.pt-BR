@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -57,7 +59,6 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e, para e
 1. O profissional de marketing cria uma atividade de direcionamento A/B com a oferta de redirecionamento como uma experiência e 100% do tráfego do site atribuído à nova página inicial com meta de sucesso e métricas adicionadas.
    1. Na janela do Adobe Target, navegue até **Atividades** guia.
    2. Clique em **Criar atividade** e selecione o tipo de atividade como **Teste A/B**
-
       ![Adobe Target - Criar atividade](assets/personalization-use-case-2/create-ab-activity.png)
    3. Selecione o **Web** e escolha a variável **Visual Experience Composer**.
    4. Insira o **URL da atividade** e clique em **Próxima** para abrir o Visual Experience Composer.

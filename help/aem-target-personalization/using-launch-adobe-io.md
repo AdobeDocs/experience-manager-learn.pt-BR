@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integração" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1067'
 ht-degree: 4%
 
 ---
@@ -27,9 +29,8 @@ ht-degree: 4%
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Console Adobe I/O](https://console.adobe.io)
 
-      >[!NOTE]
-      >Você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes no Launch. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis para você, entre em contato com o administrador do Experience Cloud para solicitar acesso. Para obter mais informações sobre as permissões do Launch, [consulte a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
-
+     >[!NOTE]
+     >Você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes no Launch. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis para você, entre em contato com o administrador do Experience Cloud para solicitar acesso. Para obter mais informações sobre as permissões do Launch, [consulte a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 * **Plug-ins do navegador**
    * Adobe Experience Cloud Debugger ([Cromo](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj))
