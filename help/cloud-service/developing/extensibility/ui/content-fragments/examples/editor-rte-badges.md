@@ -10,15 +10,17 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 
 # Adicionar selos ao Rich Text Editor (RTE)
+
+Saiba como adicionar selos ao Editor de Rich Text (RTE) no Editor de fragmento de conteúdo do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
