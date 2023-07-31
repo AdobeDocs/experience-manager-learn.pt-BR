@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Um aplicativo React simples é usado para query e exibição **Equipe** e **Pers
 
 ## Pré-requisitos
 
-Pressupõe-se que as etapas descritas nas partes anteriores deste tutorial de várias partes foram concluídas ou [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) O está instalado nos serviços de Autor e Publicação as a Cloud Service do AEM.
+Pressupõe-se que as etapas descritas nas partes anteriores deste tutorial de várias partes foram concluídas ou [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) O está instalado nos serviços de Autor e Publicação as a Cloud Service do AEM.
 
 _As capturas de tela do IDE neste capítulo vêm de [Código do Visual Studio](https://code.visualstudio.com/)_
 
@@ -68,9 +68,10 @@ Para obter o aplicativo React:
 
    ![Aplicativo React no VSCode](./assets/graphql-and-external-app/react-app-in-vscode.png)
 
-1. Atualizar `.env.development` para se conectar ao serviço de publicação do AEM as a Cloud Service.
+1. Atualizar `.env.development` para se conectar ao serviço de Publicação do AEM as a Cloud Service.
 
    - Definir `REACT_APP_HOST_URI`O valor de para ser o URL de publicação do AEM as a Cloud Service (por exemplo, `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) e `REACT_APP_AUTH_METHOD`do valor para `none`
+
    >[!NOTE]
    >
    > Verifique se você publicou a configuração do projeto, os modelos de fragmento de conteúdo, os fragmentos de conteúdo criados, os endpoints do GraphQL e as consultas persistentes das etapas anteriores.
@@ -102,6 +103,7 @@ Para obter o aplicativo React:
 >  // TODO :: Implemente isso seguindo as etapas do Tutorial AEM Headless
 >
 >  //*********************************
+>
 
 ## Anatomia do aplicativo React
 

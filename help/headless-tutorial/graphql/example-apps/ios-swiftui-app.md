@@ -9,11 +9,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 3%
 
 ---
 
@@ -34,11 +35,10 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 ## Requisitos do AEM
 
-O aplicativo iOS funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem o [Site WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) a ser instalado.
+O aplicativo iOS funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem o [Site WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) a ser instalado.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
 + Configuração local usando [o AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR?lang=pt#install-local-aem-instances)
 
 O aplicativo do iOS foi projetado para se conectar a um __AEM Publish__ ambiente, no entanto, ele poderá obter conteúdo do AEM Author se a autenticação for fornecida na configuração do aplicativo do iOS.
 
@@ -55,9 +55,9 @@ O aplicativo do iOS foi projetado para se conectar a um __AEM Publish__ ambiente
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
-   AEM_SCHEME = http
+   AEM_SCHEME = https
    // Target hostname for AEM environment, do not include http:// or https://
-   AEM_HOST = localhost:4503
+   AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
    Se estiver se conectando ao AEM Author, adicione o `AEM_AUTH_TYPE` e propriedades de autenticação de suporte para o `Config.xcconfig`.
@@ -95,43 +95,59 @@ Seguindo as práticas recomendadas do AEM Headless, o aplicativo iOS usa consult
 + `wknd/adventures-all` consulta persistente, que retorna todas as aventuras no AEM com um conjunto abreviado de propriedades. Essa consulta persistente direciona a lista de aventura da visualização inicial.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` consulta persistente, que retorna uma única aventura de `slug` (uma propriedade personalizada que identifica exclusivamente uma aventura) com um conjunto completo de propriedades. Essa consulta persistente possibilita as exibições de detalhes de aventura.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
-
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -146,22 +162,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -191,31 +207,23 @@ Consultas persistentes de AEM são executadas por HTTP GET e, portanto, bibliote
     /// For this func call to work, the `wknd-shared/adventures-all` query must be deployed to the AEM environment/service specified by the host.
     /// 
     /// Since HTTP requests are async, the completion syntax is used.
-    func getAdventures(completion: @escaping ([Adventure]) ->  ()) {
+    func getAdventures(params: [String:String], completion: @escaping ([Adventure]) ->  ()) {
                
-        // Create the HTTP request object representing the persisted query to get all adventures
-        let request = makeRequest(persistedQueryName: "wknd-shared/adventures-all")
+        let request = makeRequest(persistedQueryName: "wknd-shared/adventures-all", params: params)
         
-        // Wait fo the HTTP request to return
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            // Error check as needed
             if ((error) != nil) {
                 print("Unable to connect to AEM GraphQL endpoint")
                 completion([])
-            }
-                                    
-            if (!data!.isEmpty) {
-                // Decode the JSON data into Swift objects
+            } else if (!data!.isEmpty) {
                 let adventures = try! JSONDecoder().decode(Adventures.self, from: data!)
-                
                 DispatchQueue.main.async {
-                    // Return the array of Adventure objects
                     completion(adventures.data.adventureList.items)
                 }
             }
         }.resume();
     }
-
+    
     ...
 
     /// #makeRequest(..)
@@ -252,23 +260,23 @@ A SwiftUI é usada para as várias exibições no aplicativo. O Apple fornece um
 
 + `WKNDAdventuresApp.swift`
 
-   A entrada do aplicativo e inclui `AdventureListView` cujo `.onAppear` o manipulador de eventos é usado para buscar todos os dados de aventuras por meio de `aem.getAdventures()`. O compartilhamento `aem` objeto é inicializado aqui e exposto a outras exibições como um [EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject).
+  A entrada do aplicativo e inclui `AdventureListView` cujo `.onAppear` o manipulador de eventos é usado para buscar todos os dados de aventuras por meio de `aem.getAdventures()`. O compartilhamento `aem` objeto é inicializado aqui e exposto a outras exibições como um [EnvironmentObject](https://developer.apple.com/documentation/swiftui/environmentobject).
 
 + `Views/AdventureListView.swift`
 
-   Exibe uma lista de aventuras (com base nos dados de `aem.getAdventures()`) e exibe um item de lista para cada aventura usando o `AdventureListItemView`.
+  Exibe uma lista de aventuras (com base nos dados de `aem.getAdventures()`) e exibe um item de lista para cada aventura usando o `AdventureListItemView`.
 
 + `Views/AdventureListItemView.swift`
 
-   Exibe cada item na lista de aventuras (`Views/AdventureListView.swift`).
+  Exibe cada item na lista de aventuras (`Views/AdventureListView.swift`).
 
 + `Views/AdventureDetailView.swift`
 
-   Exibe os detalhes de uma aventura, incluindo o título, a descrição, o preço, o tipo de atividade e a imagem principal. Esta visualização consulta o AEM para obter detalhes completos sobre aventuras usando `aem.getAdventureBySlug(slug: slug)`, em que o `slug` é transmitido com base na linha da lista de seleção.
+  Exibe os detalhes de uma aventura, incluindo o título, a descrição, o preço, o tipo de atividade e a imagem principal. Esta visualização consulta o AEM para obter detalhes completos sobre aventuras usando `aem.getAdventureBySlug(slug: slug)`, em que o `slug` é transmitido com base na linha da lista de seleção.
 
 ### Imagens remotas
 
-Imagens referenciadas por Fragmentos de conteúdo de aventura são servidas pelo AEM. Este aplicativo iOS usa o caminho `_path` na resposta do GraphQL e adiciona os prefixos a `AEM_SCHEME` e `AEM_HOST` para criar um URL totalmente qualificado.
+Imagens referenciadas por Fragmentos de conteúdo de aventura são servidas pelo AEM. Este aplicativo iOS usa o caminho `_dynamicUrl` na resposta do GraphQL e adiciona os prefixos a `AEM_SCHEME` e `AEM_HOST` para criar um URL totalmente qualificado. Se estiver desenvolvendo em relação ao SDK do AEM, `_dynamicUrl` retorna nulo, portanto, para fallback de desenvolvimento para a imagem `_path` campo.
 
 Se a conexão com recursos protegidos no AEM exigir autorização, credenciais também deverão ser adicionadas às solicitações de imagem.
 
@@ -279,9 +287,10 @@ A variável `aem` classe (em `AEM/Aem.swift`) facilita o uso de imagens AEM de d
 1. `aem.imageUrl(path: String)` O é usado em exibições para anexar o esquema AEM e hospedar o caminho da imagem, criando um URL totalmente qualificado.
 
    ```swift
-   // adventure.image() => /content/dam/path/to/an/image.png
+   // adventure.image() => /adobe/dynamicmedia/deliver/dm-aid--741ed388-d5f8-4797-8095-10c896dc9f1d/example.jpg?quality=80&preferwebp=true
+   
    let imageUrl = aem.imageUrl(path: adventure.image()) 
-   // imageUrl => http://localhost:4503/content/dam/path/to/an/image.png
+   // imageUrl => https://publish-p123-e456.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--741ed388-d5f8-4797-8095-10c896dc9f1d/example.jpg?quality=80&preferwebp=true
    ```
 
 2. A variável `convenience init(..)` in `Aem` defina cabeçalhos de Autorização HTTP na solicitação de imagem HTTP, com base na configuração de aplicativos do iOS.
@@ -317,8 +326,6 @@ A variável `aem` classe (em `AEM/Aem.swift`) facilita o uso de imagens AEM de d
    ```
 
    + Se __sem autenticação__ estiver configurado, então nenhuma autenticação será anexada às solicitações de imagem.
-
-
 
 Uma abordagem semelhante pode ser usada com o SwiftUI-native [AsyncImage](https://developer.apple.com/documentation/swiftui/asyncimage). `AsyncImage` O é compatível com o iOS 15.0+.
 

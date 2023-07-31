@@ -9,11 +9,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 985d52f02025dc9cb2b9c70ead4a88af07c63f29
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 7%
+source-wordcount: '681'
+ht-degree: 6%
 
 ---
 
@@ -35,11 +36,9 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 ## Requisitos do AEM
 
-O aplicativo Android funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem o [Site WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) a ser instalado.
+O aplicativo Android funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem o [Site WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) a ser instalado.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
-+ Configuração local usando [o AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR?lang=pt#install-local-aem-instances)
 
 O aplicativo Android foi projetado para se conectar a um __AEM Publish__ ambiente, no entanto, ele pode obter conteúdo do Autor do AEM se a autenticação for fornecida na configuração do aplicativo Android.
 
@@ -55,7 +54,7 @@ O aplicativo Android foi projetado para se conectar a um __AEM Publish__ ambient
 1. Modificar o arquivo `config.properties` em `app/src/main/assets/config.properties` e atualizar `contentApi.endpoint` para corresponder ao ambiente do AEM do target:
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4503
+   contentApi.endpoint=https://publish-p123-e456.adobeaemcloud.com
    ```
 
    __Autenticação básica__
@@ -63,7 +62,7 @@ O aplicativo Android foi projetado para se conectar a um __AEM Publish__ ambient
    A variável `contentApi.user` e `contentApi.password` autenticar um usuário local do AEM com acesso ao conteúdo do WKND GraphQL.
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4502
+   contentApi.endpoint=https://author-p123-e456.adobeaemcloud.com
    contentApi.user=admin
    contentApi.password=admin
    ```
@@ -74,9 +73,7 @@ O aplicativo Android foi projetado para se conectar a um __AEM Publish__ ambient
 
 ### Conexão com ambientes AEM
 
-`10.0.2.2` é um [IP do alias especial](https://developer.android.com/studio/run/emulator-networking) para localhost ao usar a criação do emulador `10.0.2.2:4502` equivale a `localhost:4502`. Se estiver se conectando a um ambiente de publicação AEM (recomendado), nenhuma autorização será necessária e `contentAPi.user` e `contentApi.password` pode ser deixado em branco.
-
-Se estiver se conectando a um ambiente de autor de AEM [autorização](https://github.com/adobe/aem-headless-client-java#using-authorization) é obrigatório. Por padrão, o aplicativo está configurado para usar autenticação básica com um nome de usuário e senha `admin:admin`. A variável [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) oferece a capacidade de usar [autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Para usar a autenticação baseada em token, atualize o construtor do cliente no `AdventureLoader.java` e `AdventuresLoader.java`:
+Se estiver se conectando a um ambiente de autor de AEM [autorização](https://github.com/adobe/aem-headless-client-java#using-authorization) é obrigatório. A variável [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) oferece a capacidade de usar [autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Para usar a autenticação baseada em token, atualize o construtor do cliente no `AdventureLoader.java` e `AdventuresLoader.java`:
 
 ```java
 /* Comment out basicAuth
@@ -111,10 +108,7 @@ Seguindo as práticas recomendadas do AEM Headless, o aplicativo iOS usa consult
             tripLength
             primaryImage {
                 ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
+                _dynamicUrl
                 }
             }
         }
@@ -150,10 +144,7 @@ query($slug: String!) {
       price
       primaryImage {
         ... on ImageRef {
-          _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
@@ -186,11 +177,11 @@ Cada consulta persistente tem uma classe &quot;loader&quot; correspondente, que 
 
 + `loader/AdventuresLoader.java`
 
-   Obtém a lista de Aventuras na tela inicial do aplicativo usando o `wknd-shared/adventures-all` consulta persistente.
+  Obtém a lista de Aventuras na tela inicial do aplicativo usando o `wknd-shared/adventures-all` consulta persistente.
 
 + `loader/AdventureLoader.java`
 
-   Busca uma única aventura selecionando-a por meio da `slug` parâmetro, usando o `wknd-shared/adventure-by-slug` consulta persistente.
+  Busca uma única aventura selecionando-a por meio da `slug` parâmetro, usando o `wknd-shared/adventure-by-slug` consulta persistente.
 
 ```java
 //AdventuresLoader.java
@@ -222,11 +213,11 @@ O aplicativo Android usa duas visualizações para apresentar os dados de aventu
 
 + `AdventureListFragment.java`
 
-   Chama o `AdventuresLoader` e exibe as aventuras retornadas em uma lista.
+  Chama o `AdventuresLoader` e exibe as aventuras retornadas em uma lista.
 
 + `AdventureDetailFragment.java`
 
-   Chama o `AdventureLoader` usando o `slug` parâmetro passado pela seleção de aventura no `AdventureListFragment` e exibe os detalhes de uma única aventura.
+  Chama o `AdventureLoader` usando o `slug` parâmetro passado pela seleção de aventura no `AdventureListFragment` e exibe os detalhes de uma única aventura.
 
 ### Imagens remotas
 
