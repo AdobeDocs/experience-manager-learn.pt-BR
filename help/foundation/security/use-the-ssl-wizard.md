@@ -2,7 +2,8 @@
 title: Usar o assistente SSL no AEM
 description: Assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
-version: 6.4, 6.5
+version: 6.5, Cloud Service
+jira: KT-13465
 topics: security, operations
 feature: Security
 activity: use
@@ -14,20 +15,19 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
 # Usar o assistente SSL no AEM
 
-Assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
+Saiba como configurar o SSL no Adobe Experience Manager para que ele seja executado em HTTPS usando o assistente SSL integrado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
-Abra o __Assistente de configuração do SSL__ pode ser aberto diretamente navegando até __Autor do AEM > Ferramentas > Segurança > Configuração de SSL__.
 
 >[!NOTE]
 >
@@ -35,19 +35,63 @@ Abra o __Assistente de configuração do SSL__ pode ser aberto diretamente naveg
 >
 >Certificados autoassinados devem ser usados apenas para fins de desenvolvimento.
 
-## Download da chave privada e do certificado autoassinado
+## Usando o Assistente de configuração de SSL
 
-O zip a seguir contém [!DNL DER] e [!DNL CRT] arquivos necessários para configurar o AEM SSL no host local e destinados somente a fins de desenvolvimento local.
+Navegue até __Autor do AEM > Ferramentas > Segurança > Configuração de SSL__ e abra a variável __Assistente de configuração do SSL__.
+
+![Assistente de configuração do SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
+
+### Criar credenciais de armazenamento
+
+Para criar um _Armazenamento de chaves_ associado à `ssl-service` usuário do sistema e um global _Armazenamento de confiança_, use o __Credenciais de armazenamento__ etapa do assistente.
+
+1. Digite a senha e confirme a senha do __Armazenamento de chaves__ associado à `ssl-service` usuário do sistema.
+1. Digite a senha e confirme a senha do __Armazenamento de confiança__. Observe que é um armazenamento de confiança do sistema e, se já tiver sido criado, a senha inserida será ignorada.
+
+   ![Configuração do SSL - Credenciais de armazenamento](assets/use-the-ssl-wizard/store-credentials.png)
+
+### Carregar chave privada e certificado
+
+Para fazer upload da _chave privada_ e _Certificado SSL_, use o __Chave e certificado__ etapa do assistente.
+
+Normalmente, seu departamento de TI fornece o certificado e a chave confiáveis da CA, mas o certificado autoassinado pode ser usado para __desenvolvimento__ e __teste__ fins.
+
+Para criar ou baixar o certificado autoassinado, consulte a [Chave privada e certificado autoassinados](#self-signed-private-key-and-certificate).
+
+1. Faça upload do __Chave privada__ no formato DER (Distinguished Encoding Rules). Ao contrário do PEM, os arquivos codificados em DER não contêm instruções de texto simples, como `-----BEGIN CERTIFICATE-----`
+1. Fazer upload do associado __Certificado SSL__ no `.crt` formato.
+
+   ![Configuração do SSL - Chave privada e certificado](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
+
+### Atualizar detalhes do conector SSL
+
+Para atualizar o _hostname_ e _porta_ use o __Conector SSL__ etapa do assistente.
+
+1. Atualize ou verifique a __Nome de host HTTPS__ deve corresponder ao `Common Name (CN)` do certificado.
+1. Atualize ou verifique a __Porta HTTPS__ valor.
+
+   ![Configuração do SSL - Detalhes do conector SSL](assets/use-the-ssl-wizard/ssl-connector-details.png)
+
+### Verifique a configuração do SSL
+
+1. Para verificar o SSL, clique no link __Ir para o URL HTTPS__ botão.
+1. Se estiver usando um certificado autoassinado, você verá `Your connection is not private` erro.
+
+   ![Configuração do SSL - Verificar AEM em HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+
+## Chave privada e certificado autoassinados
+
+O zip a seguir contém [!DNL DER] e [!DNL CRT] arquivos necessários para a configuração local do AEM SSL e destinados apenas ao desenvolvimento local.
 
 A variável [!DNL DER] e [!DNL CERT] os arquivos são fornecidos para conveniência e gerados usando as etapas descritas na seção Gerar chave privada e certificado autoassinado abaixo.
 
 Se necessário, a senha do certificado é **administrador**.
 
-localhost - chave privada e certificate.zip autoassinado (expira em julho de 2028)
+Este host local - chave privada e certificate.zip autoassinado (expira em julho de 2028)
 
 [Baixar o arquivo de certificado](assets/use-the-ssl-wizard/certificate.zip)
 
-## Geração de chave privada e certificado autoassinado
+### Geração de chave privada e certificado autoassinado
 
 O vídeo acima descreve a configuração do SSL em uma instância de autor do AEM usando certificados autoassinados. Os comandos abaixo que usam [[!DNL OpenSSL]](https://www.openssl.org/) O pode gerar uma chave privada e um certificado para serem usados na Etapa 2 do assistente.
 
