@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Esta amostra usa o banco de dados MySQL para armazenar os dados de formulário a
 
 ## Criar fonte de dados
 
-Você precisa criar uma fonte de dados chamada **ArmazenarExecutarDadosAf**. O código no pacote OSGi usa esse nome de fonte de dados
+Você precisa criar uma fonte de dados agrupada da conexão Apache Sling chamada **ArmazenarExecutarDadosAf** apontando para o schema de banco de dados criado na etapa anterior. O código no pacote OSGi usa esse nome de fonte de dados.
 
 ## Criar modelo de dados do formulário
 
@@ -43,13 +43,13 @@ Crie uma conta de desenvolvedor com [Nexmo](https://dashboard.nexmo.com/) para e
 
 ## Implante os seguintes pacotes OSGi
 
-Implante o pacote que tem o [código para armazenar e buscar dados do banco de dados](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Implante o pacote que tem o [código para armazenar e buscar dados do banco de dados](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
 Baixe e descompacte o [developing withserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Implante o arquivo DevelopingWithServiceUser.jar usando o console da Web Felix.
 
 ## Implantar a biblioteca do cliente
 
-O exemplo usa duas bibliotecas de clientes. Importar estes [bibliotecas de clientes](assets/client-libraries.zip) no AEM.
+O exemplo usa duas bibliotecas de clientes. Importar estes [bibliotecas de clientes](assets/store-af-with-attachments-client-lib.zip) no AEM.
 
 ## Importar o modelo de formulário adaptável personalizado
 
@@ -59,7 +59,7 @@ Os formulários de amostra usados nesta demonstração são baseados em um model
 
 Os 2 formulários que compõem essa amostra precisam ser importados para o AEM. Os formulários de amostra podem ser [baixado aqui](assets/sample-forms.zip)
 
-Abra o [FormuláriodeMinhaConta](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique os valores da Chave de API e do Segredo de API nos campos apropriados no formulário adaptável.
+Abra o [FormuláriodeMinhaConta](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) no modo de edição. Especifique os valores da Chave da API Vonage e do Segredo da API nos campos apropriados no formulário adaptável.
 
 ## Testar a solução
 

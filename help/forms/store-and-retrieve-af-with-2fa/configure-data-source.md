@@ -10,10 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
@@ -23,14 +23,18 @@ Há muitas maneiras pelas quais o AEM permite a integração com um banco de dad
 A primeira etapa é baixar e implantar a solução [Drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) ao AEM.
 Em seguida, defina as propriedades da Fonte de dados agrupada da conexão do Sling específicas para seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O esquema de banco de dados é fornecido a você como parte deste tutorial de ativos.
 
-![fonte de dados](assets/data-source.JPG)
-
-
-* Classe de driver JDBC: `com.mysql.cj.jdbc.Driver`
-* URI da conexão JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
-
 >[!NOTE]
 >Nomeie sua fonte de dados `StoreAndRetrieveAfData` pois esse é o nome usado no serviço OSGi.
+
+
+![fonte de dados](assets/data-source.JPG)
+
+| Nome da Propriedade | Valor da propriedade |   |
+|---------------------|------------------------------------------------------------------------------------|---|
+| Nome da fonte de dados | ArmazenarExecutarDadosAf |   |
+| Classe de unidade JDBC | jdbc:mysql://localhost:3306/aemformstutorial |   |
+| URI da conexão JDBC | jdbc:mysql://localhost:3306/aemformstutorial?serverTimezone=UTC&amp;autoReconnect=true |   |
+|                     |                                                                                    |   |
 
 
 ## Criar banco de dados
