@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 27%
 
 ---
@@ -124,6 +124,7 @@ ht-degree: 27%
       + [Personalização usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Personalização da experiência completa de página da Web](integrations/adobe-target/personalization-web-page.md)
 + Aprenda com seus colegas {#expert-resources}
+   + [Visão geral](expert-resources/learn-from-your-peers-overview.md)
    + [Avaliação de maturidade da AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenção do site](expert-resources/site-maintenance.md)
    + [Dicas e truques do especialista em AEM: Sessão 1](expert-resources/champion-tips-1.md)
