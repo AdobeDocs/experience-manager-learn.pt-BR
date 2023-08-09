@@ -10,10 +10,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 9%
+source-wordcount: '1792'
+ht-degree: 10%
 
 ---
 
@@ -32,12 +32,32 @@ Observe que `~` é usado como abreviação para o Diretório do usuário. No Win
 
 ## Instalar o Java
 
-O Experience Manager é um aplicativo Java e, portanto, requer o SDK do Java para oferecer suporte às ferramentas de desenvolvimento.
+O Experience Manager é um aplicativo Java e, portanto, requer o SDK Java do Oracle para oferecer suporte às ferramentas de desenvolvimento.
 
 1. [Baixe e instale o SDK 11 do Java mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11)
-1. Verifique se o SDK do Java 11 está instalado executando o comando:
-   + Windows:`java -version`
-   + macOS/Linux: `java --version`
+1. Verifique se o SDK do Java 11 do Oracle está instalado executando o comando:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/aem-runtime/java.png)
 
@@ -69,7 +89,18 @@ O Serviço de autor local do AEM fornece aos desenvolvedores uma experiência lo
    Você *não é possível* inicie o AEM como Cloud Service Quickstart Jar [clicando duas vezes em](#troubleshooting-double-click).
 1. Acesse o Serviço do autor do AEM local em [http://localhost:4502](http://localhost:4502) em um navegador da Web
 
-Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ mkdir -p ~/aem-sdk/author
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cd ~/aem-sdk/author
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
@@ -78,7 +109,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
-macOS/Linux:
+>[!TAB Linux]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -86,6 +117,9 @@ $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
+
+>[!ENDTABS]
+
 
 ## Configurar o serviço de publicação local do AEM
 
@@ -100,16 +134,9 @@ O Serviço de publicação local do AEM fornece aos desenvolvedores a experiênc
    Você *não é possível* inicie o AEM como Cloud Service Quickstart Jar [clicando duas vezes em](#troubleshooting-double-click).
 1. Acesse o serviço de publicação local do AEM em [http://localhost:4503](http://localhost:4503) em um navegador da Web
 
-Windows:
+>[!BEGINTABS]
 
-```shell
-$ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ cd c:\Users\<My User>\aem-sdk\publish
-$ java -jar aem-publish-p4503.jar
-```
-
-macOS/Linux:
+>[!TAB macOS]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -118,9 +145,35 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
+>[!TAB Windows]
+
+```shell
+$ mkdir -p c:\Users\<My User>\aem-sdk\publish
+$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ cd c:\Users\<My User>\aem-sdk\publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ mkdir -p ~/aem-sdk/publish
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cd ~/aem-sdk/publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!ENDTABS]
+
+
 ## Configurar serviços locais do AEM no modo de pré-lançamento
 
 O tempo de execução local do AEM pode ser iniciado em [modo de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR) permitindo que um desenvolvedor compile em relação aos recursos da próxima versão do AEM as a Cloud Service. O pré-lançamento é ativado ao passar o `-r prerelease` argumento na primeira inicialização do tempo de execução local do AEM. Isso pode ser usado com os serviços locais do AEM Author e do AEM Publish.
+
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -129,6 +182,28 @@ $ java -jar aem-author-p4502.jar -r prerelease
 # For AEM Publish service in prerelease mode
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
+
+>[!TAB Windows]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!TAB Linux]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!ENDTABS]
 
 ## Simular distribuição de conteúdo {#content-distribution}
 
@@ -227,11 +302,51 @@ Isso ocorre porque o AEM as a Cloud Service Quickstart Jar não oferece suporte 
 
 Para iniciar o serviço do AEM Author, `cd` no diretório que contém o Quickstart Jar e execute o comando:
 
-`$ java -jar aem-author-p4502.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!ENDTABS]
 
 ou, para iniciar o serviço de publicação do AEM, `cd` no diretório que contém o Quickstart Jar e execute o comando:
 
-`$ java -jar aem-publish-p4503.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!ENDTABS]
 
 ### Iniciar o Quickstart Jar a partir da linha de comando interrompe imediatamente{#troubleshooting-java-8}
 
@@ -249,12 +364,30 @@ Quickstart: aborting
 ```
 
 Isso ocorre porque o AEM as a Cloud Service exige o SDK 11 do Java e você está executando uma versão diferente, provavelmente o Java 8. Para resolver esse problema, baixe e instale o [SDK 11 do Java do Oracle](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11).
-Depois que o SDK 11 do Java for instalado, verifique se essa é a versão ativa executando o seguinte na linha de comando.
 
-Depois que o SDK do Java 11 estiver instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
+Depois que o SDK do Java 11 do Oracle for instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
 
-+ Windows: `java -version`
-+ macOS/Linux: `java --version`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ## Recursos adicionais
 

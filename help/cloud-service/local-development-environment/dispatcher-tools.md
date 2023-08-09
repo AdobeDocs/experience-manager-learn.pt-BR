@@ -10,9 +10,9 @@ kt: 4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1621'
 ht-degree: 9%
 
 ---
@@ -73,9 +73,27 @@ A versão das Ferramentas do Dispatcher é diferente da versão do SDK do AEM. V
 1. Descompacte o baixado `aem-sdk-xxx.zip` arquivo
 1. Descompacte as ferramentas do Dispatcher em `~/aem-sdk/dispatcher`
 
-+ Windows: descompacte `aem-sdk-dispatcher-tools-x.x.x-windows.zip` em `C:\Users\<My User>\aem-sdk\dispatcher` (criando pastas ausentes conforme necessário)
-+ macOS Linux®: execute o script de shell que o acompanha `aem-sdk-dispatcher-tools-x.x.x-unix.sh` para descompactar as Ferramentas do Dispatcher
-   + `chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh && ./aem-sdk-dispatcher-tools-x.x.x-unix.sh`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!TAB Windows]
+
+Descompactar `aem-sdk-dispatcher-tools-x.x.x-windows.zip` em `C:\Users\<My User>\aem-sdk\dispatcher` (criando pastas ausentes conforme necessário).
+
+>[!TAB Linux]
+
+```shell
+$ chmod a+x aem-sdk-dispatcher-tools-x.x.x-unix.sh
+$ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
+```
+
+>[!ENDTABS]
 
 Todos os comandos emitidos abaixo pressupõem que o diretório de trabalho atual contém o conteúdo expandido das Ferramentas do Dispatcher.
 
@@ -98,17 +116,54 @@ Uma descrição completa dos arquivos de configuração está disponível nas Fe
 
 Como opção, as configurações do Dispatcher e do Apache Web Server (via `httpd -t`) pode ser validado usando o `validate` script (não confundir com o `validator` executável). A variável `validate` O script oferece uma maneira conveniente de executar o [três fases](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=en) do `validator`.
 
-+ Uso:
-   + Windows: `bin\validate src`
-   + macOS Linux®: `./bin/validate.sh ./src`
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\validate src
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/validate.sh ./src
+```
+
+>[!ENDTABS]
 
 ## Executar o Dispatcher localmente
 
 O Dispatcher do AEM é executado localmente usando o Docker no `src` Arquivos de configuração do Dispatcher e do Apache Web Server.
 
-+ Uso:
-   + Windows: `bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
-   + macOS Linux®: `./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+```
+
+>[!ENDTABS]
 
 A variável `<aem-publish-host>` pode ser definido como `host.docker.internal`, um nome DNS especial que o Docker fornece no contêiner que é resolvido para o IP da máquina host. Se a variável `host.docker.internal` não resolver, consulte o [solução de problemas](#troubleshooting-host-docker-internal) abaixo.
 
@@ -116,24 +171,54 @@ Por exemplo, para iniciar o contêiner Docker do Dispatcher usando os arquivos d
 
 Inicie o contêiner Dispatcher Docker fornecendo o caminho para a pasta src de configuração do Dispatcher:
 
-+ Windows: `bin\docker_run src host.docker.internal:4503 8080`
-+ macOS Linux®: `./bin/docker_run.sh ./src host.docker.internal:4503 8080`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ./src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
 
 O serviço de publicação do SDK as a Cloud Service do AEM, executado localmente na porta 4503, está disponível por meio do Dispatcher em `http://localhost:8080`.
 
 Para executar as Ferramentas do Dispatcher em relação à configuração do Dispatcher de um projeto Experience Manager, aponte para o `dispatcher/src` pasta.
 
-+ Windows:
+>[!BEGINTABS]
 
-   ```shell
-   $ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB macOS]
 
-+ macOS Linux®:
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
 
-   ```shell
-   $ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
-   ```
+>[!TAB Windows]
+
+```shell
+$ bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Linux]
+
+```shell
+$ ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!ENDTABS]
+
 
 ## Logs de ferramentas do Dispatcher
 
@@ -153,17 +238,27 @@ Parâmetros úteis para depuração do Dispatcher incluem:
 
 Um ou vários parâmetros, podem ser passados para `docker_run`
 
-+ Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
+```
+
+>[!TAB Windows]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
 
-+ macOS Linux®:
+>[!TAB Linux]
 
 ```shell
 $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh ~/code/my-project/dispatcher/src host.docker.internal:4503 8080
 ```
+
+>[!ENDTABS]
 
 ### Acesso ao arquivo de log
 
@@ -201,32 +296,32 @@ Agora, ao validar as configurações específicas do Dispatcher do projeto em re
 
 + Verifique se a validação está falhando em relação à versão mais recente das Ferramentas do Dispatcher
 
-   ```shell
-   $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Phase 3: Immutability check
-   empty mode param, assuming mode = 'check'
-   ...
-   ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
-   ```
+  ```shell
+  $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Phase 3: Immutability check
+  empty mode param, assuming mode = 'check'
+  ...
+  ** error: immutable file 'conf.d/available_vhosts/default.vhost' has been changed!
+  ```
 
 + Atualize os arquivos imutáveis usando o `update_maven.sh` script
 
-   ```shell
-   $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
-   
-   ...
-   Updating dispatcher configuration at folder 
-   running in 'extract' mode
-   running in 'extract' mode
-   reading immutable file list from /etc/httpd/immutable.files.txt
-   preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
-   ...
-   immutable files extraction COMPLETE
-   fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
-   Cloud manager validator 2.0.53
-   ```
+  ```shell
+  $ ./bin/update_maven.sh ${YOUR-AEM-PROJECT}/dispatcher/src
+  
+  ...
+  Updating dispatcher configuration at folder 
+  running in 'extract' mode
+  running in 'extract' mode
+  reading immutable file list from /etc/httpd/immutable.files.txt
+  preparing 'conf.d/available_vhosts/default.vhost' immutable file extraction
+  ...
+  immutable files extraction COMPLETE
+  fd72f4521fa838daaaf006bb8c9c96ed33a142a2d63cc963ba4cc3dd228948fe
+  Cloud manager validator 2.0.53
+  ```
 
 + Verifique os arquivos imutáveis atualizados, como `dispatcher_vhost.conf`, `default.vhost`, e `default.farm` e, se necessário, faça alterações relevantes nos arquivos personalizados derivados desses arquivos.
 
@@ -257,15 +352,26 @@ A variável `host.docker.internal` é um nome de host fornecido ao Docker conté
 Quando `bin/docker_run src host.docker.internal:4503 8080` resultados na mensagem __Aguardar até que host.docker.internal esteja disponível__, em seguida:
 
 1. Verifique se a versão instalada do Docker é 18.03 ou superior
-2. Você pode ter um computador local configurado que esteja impedindo o registro/resolução do `host.docker.internal` nome. Em vez disso, use o IP local.
-   + Windows:
-   + No prompt de comando, execute `ipconfig`e registre o host __Endereço IPv4__ da máquina host.
-   + Em seguida, execute `docker_run` usando este endereço IP:
-      `bin\docker_run src <HOST IP>:4503 8080`
-   + macOS Linux®:
-   + No Terminal, execute `ifconfig` e registrar o host __inet__ Endereço IP, geralmente o __en0__ dispositivo.
-   + Em seguida, execute `docker_run` usando o endereço IP do host:
-      `bin/docker_run.sh src <HOST IP>:4503 8080`
+1. Você pode ter um computador local configurado que esteja impedindo o registro/resolução do `host.docker.internal` nome. Em vez disso, use o IP local.
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
++ No Terminal, execute `ifconfig` e registrar o host __inet__ Endereço IP, geralmente o __en0__ dispositivo.
++ Em seguida, execute `docker_run` usando o endereço IP do host: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!TAB Windows]
+
++ No prompt de comando, execute `ipconfig`e registre o host __Endereço IPv4__ da máquina host.
++ Em seguida, execute `docker_run` usando este endereço IP: `$ bin\docker_run src <HOST IP>:4503 8080`
+
+>[!TAB Linux]
+
++ No Terminal, execute `ifconfig` e registrar o host __inet__ Endereço IP, geralmente o __en0__ dispositivo.
++ Em seguida, execute `docker_run` usando o endereço IP do host: `$ bin/docker_run.sh src <HOST IP>:4503 8080`
+
+>[!ENDTABS]
 
 #### Exemplo de erro
 
