@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: fc183d88bf772944562d0dd825b4d590266f3ffd
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 17%
+source-wordcount: '219'
+ht-degree: 16%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 17%
    + [Desenvolver para o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/develop-for-cross-origin-resource-sharing.md)
    + [Entender sobre o CORS (Cross-Origin Resource Sharing)](./security/understand-cross-origin-resource-sharing.md)
    + [Usar o Assistente de SSL](./security/use-the-ssl-wizard.md)
+   + [Proteção contra Ataques CRS DoS ModSecurity](./security/modsecurity-crs-dos-attack-protection.md)
 + Fluxo de trabalho {#workflow}
    + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
    + [Usar fluxo de trabalho](./workflow/use-workflow.md)
