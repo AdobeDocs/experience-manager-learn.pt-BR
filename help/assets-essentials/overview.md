@@ -5,9 +5,9 @@ recommendations: disable
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '134'
 ht-degree: 14%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 14%
 
 O Experience Manager Assets Essentials fornece uma interface simplificada para colaboração e gerenciamento leve de ativos.
 
-Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus ativos e como ele pode ser integrado ao Adobe Jornada Orchestrator!
+Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus ativos e como ele pode ser integrado ao Adobe Workfront e ao Adobe Jornada Orchestrator!
 
 ## Saiba mais sobre o Assets Essentials
 
@@ -33,7 +33,7 @@ Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus at
       </a>
    </div>
    <p>
-      <em>Aprenda os conceitos básicos do Assets Essentials.</em>
+      <em>Aprenda os conceitos básicos do Assets Essentials!</em>
    </p>
 </td>
 <td>
@@ -59,7 +59,7 @@ Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus at
       </a>
    </div>
    <p>
-      <em>Saiba como o Assets Essentials se integra ao Adobe Journey Optimizer.</em>
+      <em>Saiba como os Assets Essentials se integram ao Adobe Journey Optimizer.</em>
    <p>
 </td>
 </table>
