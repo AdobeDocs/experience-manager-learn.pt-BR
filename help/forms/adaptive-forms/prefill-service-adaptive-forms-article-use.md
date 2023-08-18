@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Para preencher previamente um formulário adaptável usando o serviço de preenc
 No trecho de código abaixo, temos uma classe que implementa a interface DataXMLProvider. Obtemos acesso ao usuário conectado e buscamos as informações de perfil do usuário conectado. Em seguida, criamos um documento XML com um elemento de nó raiz chamado &quot;dados&quot; e anexamos elementos apropriados a esse nó de dados. Depois que o documento XML é construído, o fluxo de entrada do documento XML é retornado.
 
 Essa classe é então transformada em um pacote OSGi e implantada no AEM. Depois que o pacote é implantado, esse serviço de preenchimento prévio está disponível para ser usado como serviço de preenchimento do seu Formulário adaptável.
+
+>[!NOTE]
+>
+>Você pode preencher previamente o formulário usando dados xml ou json usando a abordagem listada neste artigo.
 
 ```java
 package com.aem.prefill.core;
