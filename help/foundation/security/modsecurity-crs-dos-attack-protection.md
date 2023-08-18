@@ -9,8 +9,8 @@ level: Experienced
 kt: 10385
 thumbnail: KT-10385.png
 doc-type: article
-last-substantial-update: 2023-08-15T00:00:00Z
-source-git-commit: 31d54b14fc6381e8b231cf85d3c808b88c7df098
+last-substantial-update: 2023-08-18T00:00:00Z
+source-git-commit: c6f954968fdc43ea9070df52a4709da2ed04cacc
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 1%
@@ -21,6 +21,8 @@ ht-degree: 1%
 # Use o ModSecurity para proteger seu site AEM de ataques de DoS
 
 Saiba como ativar o ModSecurity para proteger seu site contra ataques de Negação de serviço (DoS) usando o **Conjunto de Regras Principais de Segurança do Modo OWASP (CRS)** no Dispatcher de publicação do Adobe Experience Manager (AEM).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Visão geral
 
