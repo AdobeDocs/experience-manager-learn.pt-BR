@@ -3,7 +3,7 @@ title: Usar o assistente SSL no AEM
 description: Assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
 version: 6.5, Cloud Service
-jira: KT-13465
+jira: KT-13839
 topics: security, operations
 feature: Security
 activity: use
@@ -15,7 +15,8 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
+last-substantial-update: 2023-08-08T00:00:00Z
+source-git-commit: 1a8e3f37554f98c1366a1a06cb4a7b867866dd1b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -37,7 +38,7 @@ Saiba como configurar o SSL no Adobe Experience Manager para que ele seja execut
 
 ## Usando o Assistente de configuração de SSL
 
-Navegue até __Autor do AEM > Ferramentas > Segurança > Configuração de SSL__ e abra a variável __Assistente de configuração do SSL__.
+Navegue até __AEM Author > Tools > Security > SSL Configuration__ e abra a variável __Assistente de configuração do SSL__.
 
 ![Assistente de configuração do SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
