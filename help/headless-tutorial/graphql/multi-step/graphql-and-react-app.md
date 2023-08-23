@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1218'
 ht-degree: 2%
 
 ---
@@ -489,6 +489,10 @@ Uma vez concluída, selecionar o nome de uma pessoa na exibição Equipes render
 ## Experimente o aplicativo
 
 Analisar o aplicativo [http://localhost:3000/](http://localhost:3000/) e clique em _Membros_ links. Você também pode adicionar mais equipes e/ ou membros à Equipe Alfa adicionando Fragmentos de conteúdo no AEM.
+
+>[!IMPORTANT]
+>
+>Para verificar suas alterações de implementação ou se não conseguir fazer o aplicativo funcionar após as alterações acima, consulte a [basic-tutorial](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) ramificação da solução.
 
 ## Debaixo da tampa
 
