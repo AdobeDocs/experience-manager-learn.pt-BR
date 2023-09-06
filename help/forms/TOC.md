@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
+source-git-commit: adfb805615d2abe34458d5aea685ae47517c5548
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1845'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 2%
    + [Criando um Workflow de Revisão](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuração do formulário adaptável para acionar o fluxo de trabalho](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Exibindo Página de Agradecimento](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
+   + [Personalizar página de agradecimento](handling-form-submissions/thank-you-page-on-fdm-submission.md)
    + [Enviando para Ponto de acesso externo](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envio de email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Fluxo de trabalho de solicitação de folga paga](handling-form-submissions/paid-time-off-request-workflow.md)
