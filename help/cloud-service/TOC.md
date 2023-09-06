@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 21%
 
 ---
@@ -128,6 +128,10 @@ ht-degree: 21%
          + [Avisos transversais](./debugging/cloud-service/risks/traversals.md)
 + Entrega de conteúdo{#content-delivery}
    + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
++ Armazenamento em cache{#caching}
+   + [Visão geral](./caching/overview.md)
+   + [Serviço de publicação do AEM](./caching/publish.md)
+   + [Serviço de Autor do AEM](./caching/author.md)
 + Acesso ao AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
@@ -193,7 +197,7 @@ ht-degree: 21%
       + [5 - Criar um formulário](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Manipulador de envio personalizado](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Ativar componentes do portal do Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Incluir Cloud Services e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Incluir Cloud Service e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - Configuração em nuvem com reconhecimento de contexto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Encaminhar para o Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - Implantar no ambiente de desenvolvimento](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
