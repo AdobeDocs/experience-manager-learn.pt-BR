@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
+source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ As Contas técnicas são criadas uma vez, no entanto, as Chaves privadas usam o 
 
 1. Verifique se você está conectado como:
    + __Administrador de sistema da organização IMS da Adobe__
-   + Membro do __Administradores de AEM__ Perfil de produto IMS em __AEM Author__
+   + Membro do __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
 1. Efetue logon no [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Abra o Programa que contém o ambiente as a Cloud Service AEM para integrar e configure as Credenciais de serviço para
 1. Toque nas reticências ao lado do ambiente no __Ambientes__ e selecione __Console do desenvolvedor__
@@ -75,7 +75,7 @@ O download das Credenciais de serviço segue as etapas semelhantes à inicializa
 
 1. Verifique se você está conectado como:
    + __Administrador da organização Adobe IMS__
-   + Membro do __Administradores de AEM__ Perfil de produto IMS em __AEM Author__
+   + Membro do __Administradores de AEM__ Perfil de produto IMS em __Autor do AEM__
 1. Efetue logon no [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Abra o Programa que contém o ambiente as a Cloud Service AEM para integrar com o
 1. Toque nas reticências ao lado do ambiente no __Ambientes__ e selecione __Console do desenvolvedor__
@@ -220,10 +220,11 @@ O token de acesso derivado de Credenciais de serviço usa uma conta técnica do 
 Quando o usuário técnico AEM existir no AEM (após a primeira solicitação HTTP com o token de acesso), as permissões desse usuário AEM AEM poderão ser gerenciadas da mesma forma que os outros usuários do.
 
 1. Primeiro, localize o nome de logon AEM da conta técnica abrindo o JSON de credenciais de serviço baixado no Console do desenvolvedor AEM e localize o `integration.email` que deve ser semelhante a: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
-1. Faça logon no serviço de Autor do ambiente AEM correspondente como um Administrador de AEM
+1. Fazer logon no serviço do autor do ambiente AEM correspondente como um administrador AEM
 1. Navegue até __Ferramentas__ > __Segurança__ > __Usuários__
 1. Localize o usuário AEM com a __Nome de logon__ identificadas na Etapa 1, e abrir a sua __Propriedades__
 1. Navegue até a __Grupos__ e adicione a guia __Usuários DAM__ grupo (a quem como acesso de gravação aos ativos)
+   + [Consulte a lista de grupos de usuários fornecidos pelo AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) para adicionar o usuário do serviço ao para obter as permissões ideais. Se nenhum grupo de usuários fornecido pelo AEM for suficiente, crie o seu próprio grupo e adicione as permissões apropriadas.
 1. Toque __Salvar e fechar__
 
 Com a conta técnica permitida no AEM para ter permissões de gravação em ativos, execute o aplicativo novamente:
@@ -258,6 +259,6 @@ A saída para o terminal é semelhante a:
 
 ![Atualização de Metadados de Uso Restrito da WKND](./assets/service-credentials/asset-metadata.png)
 
-## Parabéns!
+## Parabéns.
 
 Agora que acessamos programaticamente o AEM as a Cloud Service usando um token de acesso de desenvolvimento local e um token de acesso de serviço para serviço pronto para produção!
