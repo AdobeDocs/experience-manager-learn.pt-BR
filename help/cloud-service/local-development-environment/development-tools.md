@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 7%
 
 ---
@@ -70,11 +70,27 @@ Homebrew é um gerenciador de pacotes de código aberto para macOS, Windows e Li
 1. Abra o terminal
 1. Verifique se o Homebrew já está instalado executando o comando: `brew --version`.
 1. Se o Homebrew não estiver instalado, instale o Homebrew
-   + [Instalar o Homebrew no macOS](https://brew.sh/)
-      + Homebrew no macOS requer [Xcode](https://apps.apple.com/us/app/xcode/id497799835) ou [Ferramentas de Linha de Comando](https://developer.apple.com/download/more/), instalável por meio do comando:
-         + `xcode-select --install`
-   + [Instalar o Homebrew no Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
-   + [Instalar o Homebrew no Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+[Homebrew no macOS](https://brew.sh/) exige [Xcode](https://apps.apple.com/us/app/xcode/id497799835) ou [Ferramentas de Linha de Comando](https://developer.apple.com/download/more/), instalável por meio do comando:
+
+```shell
+$ xcode-select --install
+```
+
+>[!TAB Windows]
+
+[Instalar o Homebrew no Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!TAB Linux]
+
+[Instalar o Homebrew no Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!ENDTABS]
+
 1. Verifique se o Homebrew está instalado executando o comando: `brew --version`
 
 ![Homebrew](./assets/development-tools/homebrew.png)
@@ -161,7 +177,7 @@ O Apache Maven é a ferramenta de linha de comando Java de código aberto usada 
 
 A variável [CLI do Adobe I/O](https://github.com/adobe/aio-cli)ou `aio`, fornece acesso de linha de comando a vários serviços da Adobe, incluindo [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). A CLI do Adobe I/O desempenha um papel integral no desenvolvimento do AEM as a Cloud Service, pois fornece aos desenvolvedores a capacidade de:
 
-+ Registros finais de AEM como um serviço Cloud Services
++ Registros finais de AEM como um serviço Cloud Service
 + Gerenciar pipelines do Cloud Manager a partir da CLI
 + Implantar em [Ambientes de desenvolvimento rápido AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
