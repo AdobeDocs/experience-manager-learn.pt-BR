@@ -1,6 +1,6 @@
 ---
-title: Configurar o AEM Runtime local para o desenvolvimento as a Cloud Service AEM
-description: Configure o Tempo de execução local do AEM usando o Quickstart Jar do SDK do AEM as a Cloud Service.
+title: Configurar o SDK do AEM local para o desenvolvimento as a Cloud Service do AEM
+description: Configure o tempo de execução do SDK do AEM usando o Quickstart Jar do SDK do as a Cloud Service do AEM.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -10,14 +10,14 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1793'
 ht-degree: 10%
 
 ---
 
-# Configurar o AEM Runtime local {#set-up-local-aem-runtime}
+# Configurar o SDK do AEM local {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -63,7 +63,7 @@ $ java --version
 
 ## Baixar o SDK as a Cloud Service do AEM
 
-O SDK as a Cloud Service do AEM, ou AEM SDK, contém o Quickstart Jar usado para executar o AEM Author e o Publish localmente para desenvolvimento, bem como a versão compatível das Ferramentas do Dispatcher.
+O SDK as a Cloud Service do AEM, ou AEM AEM SDK, contém o Quickstart Jar usado para executar o Author e o Publish localmente para desenvolvimento, bem como a versão compatível das Ferramentas do Dispatcher.
 
 1. Efetue logon no [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) com o seu Adobe ID
    + Observe que sua organização Adobe __deve__ ser provisionado para o AEM as a Cloud Service baixar o SDK do AEM as a Cloud Service.
@@ -78,16 +78,16 @@ O SDK as a Cloud Service do AEM, ou AEM SDK, contém o Quickstart Jar usado para
 
 ## Configurar o serviço de autor local do AEM{#set-up-local-aem-author-service}
 
-O Serviço de autor local do AEM fornece aos desenvolvedores uma experiência local que os profissionais de marketing digital/autores de conteúdo compartilharão para criar e gerenciar conteúdo.  O Serviço do autor do AEM foi projetado como um ambiente de criação e pré-visualização, permitindo que a maioria das validações do desenvolvimento de recursos possa ser executada em relação a ele, tornando-o um elemento vital do processo de desenvolvimento local.
+O serviço de autor local do AEM fornece aos desenvolvedores uma experiência local que os profissionais de marketing digital/autores de conteúdo compartilharão para criar e gerenciar conteúdo.  O serviço de autoria do AEM foi projetado como um ambiente de autoria e visualização, permitindo que a maioria das validações do desenvolvimento de recursos possa ser realizada em relação a ele, tornando-o um elemento vital do processo de desenvolvimento local.
 
 1. Criar a pasta `~/aem-sdk/author`
 1. Copie o __JAR de início rápido__ arquivo para  `~/aem-sdk/author` e renomeie-o para `aem-author-p4502.jar`
-1. Inicie o Serviço de autor do AEM local executando o seguinte na linha de comando:
+1. Inicie o serviço de autor local do AEM executando o seguinte na linha de comando:
    + `java -jar aem-author-p4502.jar`
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfigurar.
 
    Você *não é possível* inicie o AEM como Cloud Service Quickstart Jar [clicando duas vezes em](#troubleshooting-double-click).
-1. Acesse o Serviço do autor do AEM local em [http://localhost:4502](http://localhost:4502) em um navegador da Web
+1. Acesse o serviço de autor local do AEM em [http://localhost:4502](http://localhost:4502) em um navegador da Web
 
 >[!BEGINTABS]
 
@@ -123,11 +123,11 @@ $ java -jar aem-author-p4502.jar
 
 ## Configurar o serviço de publicação local do AEM
 
-O Serviço de publicação local do AEM fornece aos desenvolvedores a experiência local que os usuários finais do AEM terão, como navegar pelo site hospedado no AEM. Um Serviço de publicação local do AEM é importante, pois se integra aos SDKs do AEM [Ferramentas do Dispatcher](./dispatcher-tools.md) e permite que os desenvolvedores testem e ajustem a experiência final voltada para o usuário final.
+O Serviço de publicação local do AEM fornece aos desenvolvedores a experiência local que os usuários finais do AEM terão, como navegar pelo site hospedado no AEM. Um serviço de publicação local do AEM é importante, pois se integra ao AEM SDK [Ferramentas do Dispatcher](./dispatcher-tools.md) e permite que os desenvolvedores testem e ajustem a experiência final voltada para o usuário final.
 
 1. Criar a pasta `~/aem-sdk/publish`
 1. Copie o __JAR de início rápido__ arquivo para  `~/aem-sdk/publish` e renomeie-o para `aem-publish-p4503.jar`
-1. Inicie o Serviço de publicação do AEM local executando o seguinte na linha de comando:
+1. Inicie o serviço de publicação local do AEM executando o seguinte na linha de comando:
    + `java -jar aem-publish-p4503.jar`
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfigurar.
 
@@ -168,7 +168,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Configurar serviços locais do AEM no modo de pré-lançamento
 
-O tempo de execução local do AEM pode ser iniciado em [modo de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR) permitindo que um desenvolvedor compile em relação aos recursos da próxima versão do AEM as a Cloud Service. O pré-lançamento é ativado ao passar o `-r prerelease` argumento na primeira inicialização do tempo de execução local do AEM. Isso pode ser usado com os serviços locais do AEM Author e do AEM Publish.
+O tempo de execução local do AEM pode ser iniciado em [modo de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR) permitindo que um desenvolvedor compile em relação aos recursos da próxima versão do AEM as a Cloud Service. O pré-lançamento é ativado ao passar o `-r prerelease` argumento na primeira inicialização do tempo de execução local do AEM. Isso pode ser usado com os serviços locais de publicação de AEM Author e AEM.
 
 
 >[!BEGINTABS]
@@ -259,14 +259,14 @@ As permutações disponíveis são as seguintes:
 
 Observe que o número da porta pode ser qualquer porta disponível na máquina de desenvolvimento local, no entanto, por convenção:
 
-+ Porta __4502__ é usado para o __Serviço de autor local do AEM__
-+ Porta __4503__ é usado para o __Serviço de publicação local do AEM__
++ Porta __4502__ é usado para o __serviço de autor local do AEM__
++ Porta __4503__ é usado para o __serviço de publicação local do AEM__
 
 Alterar esses parâmetros pode exigir ajustes nas configurações do SDK do AEM
 
 ## Interrupção de um tempo de execução local do AEM
 
-Para interromper um tempo de execução do AEM local, o serviço de Autor ou Publicação do AEM, abra a janela da linha de comando usada para iniciar o Tempo de execução do AEM e toque em `Ctrl-C`. Aguarde o desligamento do AEM. Quando o processo de desligamento estiver concluído, o prompt da linha de comando estará disponível.
+Para interromper um tempo de execução de AEM local, AEM Author ou Publish service, abra a janela da linha de comando usada para iniciar o AEM Runtime e toque em `Ctrl-C`. Aguarde o desligamento do AEM. Quando o processo de desligamento estiver concluído, o prompt da linha de comando estará disponível.
 
 ## Tarefas opcionais de configuração do tempo de execução do AEM
 
@@ -300,7 +300,7 @@ Ao clicar duas vezes no Quickstart Jar para iniciar, um modal de erro é exibido
 
 Isso ocorre porque o AEM as a Cloud Service Quickstart Jar não oferece suporte ao clique duplo do Quickstart Jar para iniciar o AEM localmente. Em vez disso, você deve executar o arquivo Jar a partir dessa linha de comando.
 
-Para iniciar o serviço do AEM Author, `cd` no diretório que contém o Quickstart Jar e execute o comando:
+Para iniciar o serviço de Autor do AEM, `cd` no diretório que contém o Quickstart Jar e execute o comando:
 
 >[!BEGINTABS]
 
