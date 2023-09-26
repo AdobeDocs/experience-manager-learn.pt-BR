@@ -13,7 +13,7 @@ level: Beginner
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 ---
 
 # Integrar o AEM Sites e o Adobe Target
+
+{{edge-delivery-services-and-page-editor}}
 
 Saiba como integrar o AEM Sites e o Adobe Target para fornecer experiências personalizadas.
 
@@ -34,7 +36,7 @@ Neste vídeo, discutimos três abordagens para o uso do AEM e do Target, e ajuda
 
    1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
    1. [Acionar uma chamada do Adobe Target no Launch](./load-and-fire-target.md)
-   1. [Integrar o serviço do AEM Author ao Adobe Target](./setup-aem-target-cloud-service.md)
+   1. [Integrar o serviço de autor do AEM ao Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exportar fragmentos de experiência do AEM para o Adobe Target](./export-experience-fragment-target.md)
    1. [Personalizar parte de uma página da Web usando ofertas de fragmento de experiência](./create-target-activity.md)
 

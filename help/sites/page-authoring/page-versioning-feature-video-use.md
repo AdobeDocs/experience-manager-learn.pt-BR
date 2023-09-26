@@ -13,14 +13,16 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: cc659581-031d-4f2a-90c1-cf721e481689
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 # Criação de versões de página {#creating-page-versions-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 O controle de versão da página ajuda os autores de conteúdo a rastrear as alterações associadas a uma página criando uma versão da página e fornece uma opção para visualizar uma versão, restaurar uma versão e comparar uma versão com a versão atual de uma página.
 

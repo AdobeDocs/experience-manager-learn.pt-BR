@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: bf4427f7-1b7b-4e60-90a8-ab428dc65251
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
@@ -23,6 +23,8 @@ ht-degree: 0%
 ---
 
 # Como marcar páginas {#using-page-tagging-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Saiba como manter e organizar suas páginas da Web no Adobe Experience Manager usando a marcação.
 

@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 # Blocos de construção com fragmentos de experiência {#building-blocks}
 
+{{edge-delivery-services-and-page-editor}}
 
 Os blocos são um sub-recurso dos Fragmentos de experiência. Os blocos permitem que os autores de conteúdo reutilizem componentes em diferentes variações de Fragmentos de experiência.
 

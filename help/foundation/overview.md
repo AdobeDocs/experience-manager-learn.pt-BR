@@ -4,7 +4,7 @@ description: Assista aos nossos vídeos e tutoriais para obter ajuda com a Adobe
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 
 # Vídeos e tutoriais da Fundação AEM {#overview}
 
+{{edge-delivery-services}}
+
 O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis para usuários do AEM Sites, Assets e Forms.
 
 <div id="whats-new-section">
@@ -20,14 +22,13 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 ## Novidades
 
 * **[Usar AEM do fluxo de trabalho (Vídeo)](./workflow/use-workflow.md)**
-
-   *O fluxo de trabalho do AEM fornece uma maneira de colaborar, gerenciar e processar conteúdo no AEM.*
+  *O fluxo de trabalho do AEM fornece uma maneira de colaborar, gerenciar e processar conteúdo no AEM.*
 
 * **[Noções básicas sobre o Cloud Manager para AEM (Vídeo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *O Cloud Manager para AEM facilita o gerenciamento, a inspeção e o autoatendimento de ambientes AEM.*
+  *O Cloud Manager para AEM facilita o gerenciamento, a inspeção e o autoatendimento de ambientes AEM.*
 
 * **[Usar o pipeline de CI/CD do Cloud Manager (Vídeo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Saiba como usar o pipeline de CI/CD do Cloud Manager para garantir implantações seguras e consistentes.*
+  *Saiba como usar o pipeline de CI/CD do Cloud Manager para garantir implantações seguras e consistentes.*
 
 </div>
 

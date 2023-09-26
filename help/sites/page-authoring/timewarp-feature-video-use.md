@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 kt: 3307
 thumbnail: 17453.jpg
 exl-id: 12d8c0c6-c556-49f4-a6fe-84fccfccf95e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 2%
@@ -17,6 +17,8 @@ ht-degree: 2%
 ---
 
 # Uso do Timewarp {#using-timewarp-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 O Timewarp é um recurso do Adobe Experience Manager Sites que fornece aos autores uma maneira rápida de revisar o estado de uma página em um momento específico no passado.
 

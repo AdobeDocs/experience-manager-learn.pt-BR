@@ -4,7 +4,7 @@ description: Uma coleção de tutoriais do Adobe Experience Manager (AEM) as a C
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 12%
@@ -12,6 +12,8 @@ ht-degree: 12%
 ---
 
 # Vídeos e tutoriais as a Cloud Service sobre o AEM {#overview}
+
+{{edge-delivery-services}}
 
 Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. O AEM as a Cloud Service apresenta a próxima geração da linha de produtos Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
 
@@ -22,24 +24,19 @@ Agora o Adobe Experience Manager (AEM) está disponível as a Cloud Service. O A
 ## Novidades
 
 * **[Autenticação baseada em token (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-
-   *Saiba como usar a autenticação baseada em token para interagir com o AEM as a Cloud Service por HTTP*
+  *Saiba como usar a autenticação baseada em token para interagir com o AEM as a Cloud Service por HTTP*
 
 * **[GraphQL headless (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR)**
-
-   *Saiba como usar APIs do AEM GraphQL para potencializar experiências em um aplicativo externo.*
+  *Saiba como usar APIs do AEM GraphQL para potencializar experiências em um aplicativo externo.*
 
 * **[Importação em massa (Vídeo)](./migration/bulk-import.md)**
-
-   *Saiba como importar ativos em massa para o AEM do Armazenamento Azure Blob ou do Amazon S3*
+  *Saiba como importar ativos em massa para o AEM do Armazenamento Azure Blob ou do Amazon S3*
 
 * **[Trabalhador de metadados do asset compute (Tutorial)](./asset-compute/advanced/metadata.md)**
-
-   *Saiba como gravar metadados de ativos de volta no AEM de um funcionário do Asset compute*
+  *Saiba como gravar metadados de ativos de volta no AEM de um funcionário do Asset compute*
 
 * **[Extensibilidade de microsserviços do Asset compute (Tutorial)](./asset-compute/overview.md)**
-
-   *Saiba como desenvolver trabalhadores do Asset compute para gerar representações de ativos personalizados*
+  *Saiba como desenvolver trabalhadores do Asset compute para gerar representações de ativos personalizados*
 
 </div>
 

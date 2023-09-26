@@ -4,7 +4,7 @@ description: Assista aos nossos vídeos para obter suporte e assistência aos at
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 15%
@@ -12,6 +12,8 @@ ht-degree: 15%
 ---
 
 # Vídeos e tutoriais do AEM Assets {#overview}
+
+{{edge-delivery-services}}
 
 O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de ativos digitais da plataforma AEM que permite que os usuários criem, gerenciem e compartilhem ativos digitais (imagens, vídeos, documentos e clipes de áudio) num repositório baseado na web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Assets.
 

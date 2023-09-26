@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: d24649d4b1411f57a46595edddb601ac49b51643
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 15%
@@ -13,6 +13,8 @@ ht-degree: 15%
 ---
 
 # Vídeos e tutoriais do AEM Sites {#overview}
+
+{{edge-delivery-services}}
 
 O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Sites.
 
@@ -22,24 +24,19 @@ O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento
 ## Novidades
 
 * **[Uso do Launches com o AEM Sites (Vídeo)](./page-authoring/launches.md)**
-
-   *Saiba mais sobre as Inicializações do AEM Sites e como elas podem ser usadas para preparar conteúdo do site para uma versão futura.*
+  *Saiba mais sobre os Lançamentos do AEM Sites e como eles podem ser usados para preparar o conteúdo do site para uma versão futura.*
 
 * **[Personalizar a Camada de dados do cliente Adobe com componentes AEM (Tutorial)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-
-   *Saiba como atualizar a Camada de dados do cliente Adobe com conteúdo de Componentes AEM personalizados.*
+  *Saiba como atualizar a Camada de dados do cliente Adobe com conteúdo de Componentes AEM personalizados.*
 
 * **[Introdução ao AEM Headless GraphQL (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR)**
-
-   *Como expor conteúdo do AEM para ser consumido por um aplicativo móvel nativo usando APIs do AEM GraphQL.*
+  *Como expor conteúdo do AEM para ser consumido por um aplicativo móvel nativo usando APIs do AEM GraphQL.*
 
 * **[Uso de fragmentos de conteúdo (série de vídeos)](./content-fragments/content-fragments-feature-video-use.md)**
-
-   *Fragmentos de conteúdo são partes de conteúdo independentes de canal que podem ser reutilizadas.*
+  *Fragmentos de conteúdo são partes de conteúdo independentes de canal que podem ser reutilizadas.*
 
 * **[Utilização do editor de SPA (Vídeo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-
-   *Saiba mais sobre os recursos de edição de AEM para aplicativos de página única (SPA).*
+  *Saiba mais sobre os recursos de edição de AEM para aplicativos de página única (SPA).*
 
 </div>
 

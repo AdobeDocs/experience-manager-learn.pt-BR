@@ -2,14 +2,16 @@
 title: Tutoriais do AEM
 description: Uma coleção de vídeos e tutoriais do Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: ebe252116f677ff7486346077736d0ee450896c1
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 34%
+ht-degree: 37%
 
 ---
 
 # tutoriais do Experience Manager {#overview}
+
+{{edge-delivery-services}}
 
 O Adobe Experience Manager (AEM) é a principal plataforma de gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais que ajudam a maximizar seu valor do AEM.
 
@@ -18,7 +20,7 @@ O Adobe Experience Manager (AEM) é a principal plataforma de gerenciamento de e
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
-+ [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
++ [AEM as Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=pt-BR)
 + [Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
 + [Tutorials do AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 

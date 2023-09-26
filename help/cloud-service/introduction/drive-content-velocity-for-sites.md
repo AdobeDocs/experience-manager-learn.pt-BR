@@ -3,7 +3,7 @@ title: Como impulsionar a velocidade do conteúdo com o Adobe Experience Manager
 description: Saiba mais sobre a velocidade do conteúdo e seu valor nas empresas. Mergulhe em quatro princípios de implementação efetiva e as armadilhas que devem ser observadas ao longo do caminho.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '2814'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Como impulsionar a velocidade do conteúdo com o Adobe Experience Manager
+
+{{edge-delivery-services}}
 
 Como líder na experiência do cliente, sabemos o quanto é desafiador para você garantir que tenha a estrutura e os princípios certos para impulsionar a velocidade do conteúdo — componentes essenciais para explorar o verdadeiro valor da sua plataforma Adobe Experience Manager. Neste artigo, analisaremos o que é a velocidade do conteúdo e seu valor nas organizações corporativas. Em seguida, analisaremos quatro princípios de implementação efetiva e as armadilhas que devem ser observadas ao longo do caminho.
 
@@ -126,9 +128,9 @@ Estes são quatro marcos que devem ser construídos durante a fase de execução
 
    À medida que as ferramentas evoluem, o processo e as equipes também evoluem.Mas isso pode não ocorrer da noite para o dia. Pode ser necessário um período de transição. Reserve tempo para sentar e definir quais são as ferramentas certas para fornecer seu conteúdo.
 
-   Parte desse processo significa observar o conteúdo de forma holística, não apenas como partes em uma página ou seção, mas como o conteúdo opera no site. Considere oportunidades potenciais para impulsionar a reutilização. Identifique áreas em que o conteúdo pode ser redefinido para impulsionar a eficiência. Pense em como aproveitar a funcionalidade pronta para uso (OOTB) em relação a áreas que exigem personalização. O uso de componentes prontos para uso ajudará a permitir esforços rápidos de reformulação da marca e a acelerar as mudanças estéticas no site.
+   Parte desse processo significa observar o conteúdo de forma holística, não apenas como partes em uma página ou seção, mas como o conteúdo opera no site. Considere oportunidades potenciais para impulsionar a reutilização. Identifique áreas em que o conteúdo pode ser redefinido para impulsionar a eficiência. Pense em como aproveitar a funcionalidade pronta para uso (OOTB) em relação a áreas que exigem personalização. O uso de componentes prontos para uso ajudará a permitir esforços rápidos de reformulação da marca e a impulsionar mudanças estéticas mais rápidas no site.
 
-   Da perspectiva de várias marcas, a mudança para paradigmas &quot;universais&quot; (em vez de específicos da página) permite reutilização e rebranding mais rápidos, impulsionando experimentos iterativos e rápidos com campanhas para criar a melhor experiência para o cliente. Velocidade = flexibilidade criativa e envolvimento do público-alvo.
+   Da perspectiva de várias marcas, a mudança para paradigmas &quot;universais&quot; (em vez de específicos da página) permite uma reutilização e rebranding mais rápidas, impulsionando experimentos iterativos e rápidos com campanhas para criar a melhor experiência para o cliente. Velocidade = flexibilidade criativa e envolvimento do público-alvo.
 
    Além disso, a utilização de uma estrutura orientada por conteúdo intrinsecamente facilita a adoção de fragmentos de conteúdo e fragmentos de experiência. Essas soluções podem ser criadas a partir de uma estrutura centralizada no Adobe Experience Manager, reduzindo a criação em silos ineficiente. Isso ajudará a impulsionar a unidade na experiência do autor e a enfatizar o conteúdo orientado estrategicamente no site.
 
@@ -164,7 +166,7 @@ AEM Sites: execução e operação básicas
 
 ## Possíveis armadilhas
 
-Estas são algumas armadilhas em potencial a serem evitadas:
+Estas são algumas das possíveis armadilhas a serem evitadas:
 
 * Não colocar as necessidades do público-alvo em primeiro lugar — responda às seguintes perguntas para tudo o que foi projetado e desenvolvido:
 

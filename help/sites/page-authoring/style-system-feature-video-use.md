@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 8%
@@ -23,6 +23,8 @@ ht-degree: 8%
 ---
 
 # Uso do sistema de estilos {#using-the-style-system-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 O sistema de estilos da Adobe Experience Manager permite variações visuais de componentes sem desenvolvimento de back-end, permitindo uma melhor reutilização de componentes AEM e uma criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com os Componentes principais do AEM, o editor de modelos e o layout responsivo, oferece recursos avançados para compor rapidamente experiências ricas.
 

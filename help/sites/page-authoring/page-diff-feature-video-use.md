@@ -16,7 +16,7 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -24,6 +24,8 @@ ht-degree: 1%
 ---
 
 # Uso do recurso Diferença de página {#using-page-difference-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e com código de cores do que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
 

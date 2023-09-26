@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 ---
 
 # Páginas e modelos {#pages-and-template}
+
+{{edge-delivery-services-and-page-editor}}
 
 Neste capítulo, vamos explorar a relação entre um componente de página base e modelos editáveis. Saiba como criar um modelo de artigo sem estilo com base em alguns modelos de [Adobe XD](https://helpx.adobe.com/support/xd.html). No processo de criação do modelo, os Componentes principais e as configurações de política avançadas dos Modelos editáveis são abordados.
 
@@ -359,7 +361,7 @@ As próximas etapas são realizadas no VSCode IDE usando o [Sincronização VSCo
    >
    > Para garantir implantações consistentes para o site de referência da WKND, algumas ramificações do projeto são configuradas de modo que `ui.content` substitui todas as alterações no JCR. Isso ocorre por design, ou seja, para Ramificações de solução, já que o código/estilos são criados para políticas específicas.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você criou um modelo e uma página com o Adobe Experience Manager Sites.
 
