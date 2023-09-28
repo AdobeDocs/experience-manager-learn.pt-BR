@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
+source-git-commit: 90d0d4876869b05c2ce00fd8cf18c474a6a00e27
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 25%
+source-wordcount: '401'
+ht-degree: 24%
 
 ---
 
@@ -63,6 +63,9 @@ ht-degree: 25%
    + [Tags inteligentes personalizadas para imagens](metadata/custom-smart-tags.md)
    + [Etiquetas Inteligentes para vídeos](metadata/video-smart-tags.md)
    + [Importar e exportar metadados](metadata/metadata-import-export.md)
+
++ Edge Delivery Services{#edge-delivery-services}
+   + [plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Compartilhamento e distribuição{#sharing}
    + [Baixar ativos](./sharing/download.md)
