@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 90d0d4876869b05c2ce00fd8cf18c474a6a00e27
+source-git-commit: 18b9d7c952027165598c8a55e250d846f10bfd74
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1037'
 ht-degree: 21%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 21%
    + [Serviços de Autor e Publicação](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/assets/edge-delivery-services/sidekick-plugin.md)
+   + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
    + [Ambientes](./cloud-manager/environments.md)
