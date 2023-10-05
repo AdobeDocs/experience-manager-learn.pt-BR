@@ -1,7 +1,7 @@
 ---
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 7f7bffa24539d0bba0dc9ac8cc94d0c8d1f2e871
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '129'
 ht-degree: 26%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 26%
 
 ## Edge Delivery Services{#edge-delivery-services}
 
-[!BADGE Para publicar do AEM no Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
+[!BADGE Para publicar do AEM Sites usando o Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
 
 ## Edge Delivery Services e Editor de páginas{#edge-delivery-services-and-page-editor}
 
-[!BADGE Para publicar do AEM no Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
+[!BADGE Para publicar do AEM Sites usando o Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
 
 ## Edge Delivery Services e Universal Visual Editor{#edge-delivery-services-and-universal-visual-editor}
 
-[!BADGE Para publicar do AEM no Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
+[!BADGE Para publicar do AEM Sites usando o Edge Delivery Services, clique aqui.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publicar de AEM para Edge Delivery Services"}
