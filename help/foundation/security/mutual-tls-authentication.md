@@ -1,5 +1,5 @@
 ---
-title: Autenticação mTLS (Mutual Transport Layer Security)
+title: Autenticação mTLS (Mutual Transport Layer Security) do AEM
 description: Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem autenticação MTLS (Mutual Transport Layer Security).
 feature: Security
 version: 6.5, Cloud Service
@@ -10,15 +10,15 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: 2f0490263eaf5e3458e2d71113411a4fdd0aa94c
+source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
 
 
-# Autenticação mTLS (Mutual Transport Layer Security)
+# Autenticação mTLS (Mutual Transport Layer Security) do AEM
 
 Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem autenticação MTLS (Mutual Transport Layer Security).
 
@@ -81,7 +81,7 @@ Para fins de demonstração, gere os detalhes relacionados ao certificado, como 
 
 ### Intercâmbio de certificados
 
-Se estiver usando uma CA autoassinada para o certificado AEM, como acima, troque o certificado ou o certificado interno da Autoridade de Certificação (CA) com o provedor da API.
+Se estiver usando uma CA autoassinada para o certificado AEM, como acima, envie o certificado ou o certificado de Autoridade de Certificação (CA) interno para o provedor de API.
 
 Além disso, se o provedor de API estiver usando um certificado de CA autoassinado, receba o certificado ou o certificado de CA (Autoridade de Certificação) interno do provedor de API.
 
