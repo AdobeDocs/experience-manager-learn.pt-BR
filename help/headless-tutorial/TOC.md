@@ -8,7 +8,7 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 19%
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 + [Visão geral do AEM Headless](./overview.md)
 + GraphQL {#graphql}
-   + [Portal do desenvolvedor AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+   + [Portal do desenvolvedor AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR){target=_blank}
    + [Visão geral](./graphql/overview.md)
    + Configuração rápida {#quick-setup}
       + [Serviço em nuvem](./graphql/quick-setup/cloud-service.md)
@@ -66,7 +66,7 @@ ht-degree: 19%
    + [Imagens](./graphql/how-to/images.md)
    + [Conteúdo localizado](./graphql/how-to/localized-content.md)
    + [Conjuntos de resultados grandes](./graphql/how-to/large-result-sets.md)
-   + [Visualizar](./graphql/how-to/preview.md)
+   + [Visualização](./graphql/how-to/preview.md)
    + [SDK do AEM Headless](./graphql/how-to/aem-headless-sdk.md)
    + [Instalar o GraphiQL no AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Exemplos {#example-apps}
@@ -113,7 +113,7 @@ ht-degree: 19%
    + [3 - Criação de fragmentos de conteúdo de evento](./content-services/chapter-3.md)
    + [4 - Definição dos Modelos dos Serviços de Conteúdo](./content-services/chapter-4.md)
    + [5 - Criação das páginas dos serviços de conteúdo](./content-services/chapter-5.md)
-   + [6 - Exposição do conteúdo no AEM Publish para entrega](./content-services/chapter-6.md)
+   + [6 - Exposição do conteúdo na publicação do AEM para entrega](./content-services/chapter-6.md)
    + [7 - Consumir serviços de conteúdo AEM de um aplicativo móvel](./content-services/chapter-7.md)
 + Amostras de código {#code-samples}
    + [Filtrar o aplicativo React](./graphql/code-samples/filtering-react-app.md)
