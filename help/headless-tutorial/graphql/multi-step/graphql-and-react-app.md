@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Para obter o aplicativo React:
 >
 > //*******************************
 >
->  // TODO :: Implemente isso seguindo as etapas do Tutorial AEM Headless
+>  // TODO Implemente isso seguindo as etapas do Tutorial AEM Headless
 >
 >  //*********************************
 >
@@ -488,7 +488,7 @@ Uma vez concluída, selecionar o nome de uma pessoa na exibição Equipes render
 
 ## Experimente o aplicativo
 
-Analisar o aplicativo [http://localhost:3000/](http://localhost:3000/) e clique em _Membros_ links. Você também pode adicionar mais equipes e/ ou membros à Equipe Alfa adicionando Fragmentos de conteúdo no AEM.
+Analisar o aplicativo [http://localhost:3000/](http://localhost:3000/) e clique em _Membros_ links. Você também pode adicionar mais equipes e/ou membros ao Alpha da equipe, adicionando Fragmentos de conteúdo no AEM.
 
 >[!IMPORTANT]
 >
@@ -496,7 +496,7 @@ Analisar o aplicativo [http://localhost:3000/](http://localhost:3000/) e clique 
 
 ## Debaixo da tampa
 
-Abra o navegador do **Ferramentas do desenvolvedor** > **Rede** e _Filtro_ para `all-teams` solicitação. Observe a solicitação da API do GraphQL `/graphql/execute.json/my-project/all-teams` é feita contra `http://localhost:3000` e **NOT** contra o valor de `REACT_APP_HOST_URI` (por exemplo, <https://publish-p123-e456.adobeaemcloud.com>). As solicitações são feitas no domínio do aplicativo React porque [configuração de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) é ativado usando `http-proxy-middleware` módulo.
+Abra o navegador do **Ferramentas do desenvolvedor** > **Rede** e _Filtro_ para `all-teams` solicitação. Observe a solicitação da API do GraphQL `/graphql/execute.json/my-project/all-teams` é feita contra `http://localhost:3000` e **NOT** contra o valor de `REACT_APP_HOST_URI`, por exemplo `<https://publish-pxxx-exxx.adobeaemcloud.com`. As solicitações são feitas no domínio do aplicativo React porque [configuração de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) é ativado usando `http-proxy-middleware` módulo.
 
 
 ![Solicitação de API do GraphQL via proxy](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
@@ -513,6 +513,6 @@ module.exports = function(app) {
 
 O uso do proxy local não é uma opção adequada para implantação de produção, e mais detalhes podem ser encontrados em _Implantação de produção_ seção.
 
-## Parabéns!{#congratulations}
+## Parabéns.{#congratulations}
 
 Parabéns! Você criou com sucesso o aplicativo React para consumir e exibir dados de APIs AEM GraphQL como parte de um tutorial básico!

@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Saiba como carregar, transmitir parâmetros para solicitação de página e acio
 
 ## Regra de carregamento de página
 
-A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da página AEM for carregada, ela acionará um evento `cmp:show` . No vídeo, a variável `Launch Library Loaded` A regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
+A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da página AEM é carregada, ela aciona um evento `cmp:show` . No vídeo, a variável `Launch Library Loaded` A regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
 
 ### Evento de exibição de página personalizada{#page-event}
 
@@ -162,7 +162,7 @@ window.targetGlobalSettings = {
 ## Links de suporte
 
 + [Documentação da Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Uso da Camada de dados do cliente Adobe e da Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
-+ [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

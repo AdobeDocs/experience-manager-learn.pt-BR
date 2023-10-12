@@ -10,10 +10,10 @@ kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="Integração" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 2%
+source-wordcount: '2468'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ Os seguintes são obrigatórios:
 
 * **Propriedade da tag** no Experience Platform
 * **Adobe Analytics** ID do conjunto de relatórios de teste/desenvolvimento e servidor de rastreamento. Consulte a documentação a seguir para [criação de um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Depurador Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador. Capturas de tela neste tutorial capturadas do navegador Chrome.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador. Capturas de tela neste tutorial capturadas do navegador Chrome.
 * (Opcional) Site AEM com a variável [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial usa informações voltadas ao público [WKND](https://wknd.site/us/en.html) site, mas você pode usar seu próprio site.
 
 >[!NOTE]
@@ -53,9 +53,9 @@ Os seguintes são obrigatórios:
 
 ## Alternar ambiente de tag para o site da WKND
 
-A variável [WKND](http://wknd.site/us/en.html) é um site voltado para o público, criado com base em [um projeto de código aberto](https://github.com/adobe/aem-guides-wknd) concebido como referência e [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) para uma implementação do AEM.
+A variável [WKND](https://wknd.site/us/en.html) é um site voltado para o público, criado com base em [um projeto de código aberto](https://github.com/adobe/aem-guides-wknd) concebido como referência e [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) para uma implementação do AEM.
 
-Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador Experience Platform para **alternar** o live [Site da WKND](http://wknd.site/us/en.html) para *seu* propriedade da tag. No entanto, você pode usar seu próprio site AEM se ele já tiver o [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador Experience Platform para **alternar** o live [Site da WKND](https://wknd.site/us/en.html) para *seu* propriedade da tag. No entanto, você pode usar seu próprio site AEM se ele já tiver o [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Faça logon no Experience Platform e [criar uma propriedade de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (caso ainda não o tenha feito).
 1. Verifique se uma tag inicial do JavaScript [a biblioteca foi criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promovido para a tag [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
@@ -63,10 +63,10 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
 
    ![Copiar código de inserção da propriedade de tag](assets/collect-data-analytics/launch-environment-copy.png)
 
-1. No navegador, abra uma nova guia e navegue até [Site da WKND](http://wknd.site/us/en.html)
+1. No navegador, abra uma nova guia e navegue até [Site da WKND](https://wknd.site/us/en.html)
 1. Abra a extensão do navegador Experience Platform Debugger
 
-   ![Depurador Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
+   ![Experience Platform Debugger](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
 1. Navegue até **Tags do Experience Platform** > **Configuração** e sob **Códigos de inserção inseridos** substituir o código incorporado existente por *seu* código incorporado copiado da etapa 3.
 
@@ -80,7 +80,7 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
 
 A variável [Projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) O é construído com os Componentes principais do AEM e tem o [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) por padrão. Em seguida, verifique se a Camada de dados do cliente Adobe está ativada.
 
-1. Navegue até [Site da WKND](http://wknd.site/us/en.html).
+1. Navegue até [Site da WKND](https://wknd.site/us/en.html).
 1. Abra as ferramentas de desenvolvedor do navegador e acesse o **Console**. Execute o seguinte comando:
 
    ```js
@@ -115,7 +115,7 @@ A variável [Projeto de referência WKND](https://github.com/adobe/aem-guides-wk
 
 ## Criar uma regra de Página carregada
 
-A Camada de dados de clientes Adobe é uma **evento** camada de dados orientada. Quando a camada de dados da página AEM é carregada, ela aciona um `cmp:show` evento. Crie uma regra que seja acionada quando o `cmp:show` é acionado a partir da camada de dados da página.
+A Camada de dados de clientes Adobe é uma **orientado por eventos** camada de dados. Quando a camada de dados da página AEM é carregada, ela aciona um `cmp:show` evento. Crie uma regra que seja acionada quando o `cmp:show` é acionado a partir da camada de dados da página.
 
 1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site AEM.
 1. Navegue até a **Regras** na interface de usuário da Propriedade de tag e clique em **Criar nova regra**.
@@ -178,7 +178,7 @@ A Camada de dados de clientes Adobe é uma **evento** camada de dados orientada.
    console.log("Page template: " + event.component['xdm:template']);
    ```
 
-   A variável `event` o objeto é transmitido de `trigger()` chamado no evento personalizado. Aqui, o `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
+   A variável `event` o objeto é transmitido de `trigger()` chamado no evento personalizado. Aqui, a variável `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
 
 1. Salve as alterações e execute um [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da tag para promover o código à [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) usado no seu site AEM.
 
@@ -377,7 +377,7 @@ Agora que o **Página carregada** Se uma regra enviar o beacon do Analytics, voc
 
 1. Acesse uma página de artigo como [Austrália Ocidental](https://wknd.site/us/en/magazine/western-australia.html). Observe que o Nome da página e o Tipo de modelo são alterados.
 
-## Parabéns!
+## Parabéns.
 
 Você acabou de usar a Camada de dados do cliente Adobe orientada por eventos e as Tags no Experience Platform para coletar dados da página de dados de um site AEM e enviá-los para o Adobe Analytics.
 

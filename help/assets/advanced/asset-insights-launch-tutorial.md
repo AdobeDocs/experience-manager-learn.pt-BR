@@ -1,6 +1,6 @@
 ---
 title: Configurar o Asset Insights com o AEM Assets e o Adobe Launch
-description: Nesta série de vídeos de 5 partes, abordamos a instalação e configuração do Asset Insights para Experience Manager implantado via Launch by Adobe.
+description: Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado via Launch by Adobe.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -10,16 +10,16 @@ last-substantial-update: 2022-06-04T00:00:00Z
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
 
 # Configurar o Asset Insights com o AEM Assets e o Adobe Experience Platform Launch
 
-Nesta série de vídeos de 5 partes, abordamos a instalação e a configuração do Asset Insights para Experience Manager implantado por meio do Adobe Launch.
+Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado por meio do Adobe Launch.
 
 ## Parte 1: Visão geral do Asset Insights {#overview}
 
@@ -35,7 +35,7 @@ Visão geral do Asset Insights. Instale os Componentes principais, Componente de
 >
 >Certifique-se de baixar o [versão mais recente dos Componentes principais](https://github.com/adobe/aem-core-wcm-components) para sua implementação.
 
-O vídeo usa os Componentes principais v2.2.2 que não são mais a versão mais recente. Certifique-se de usar a versão mais recente antes de prosseguir para a próxima seção.
+O vídeo usa os Componentes principais v2.2.2, que não é a versão mais recente. Certifique-se de usar a versão mais recente antes de prosseguir para a próxima seção.
 
 * Baixar [Conteúdo da imagem de amostra do Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
 * Baixar [os componentes principais WCM do AEM mais recentes](https://github.com/adobe/aem-core-wcm-components/releases)
@@ -52,14 +52,14 @@ Aprimoramentos nos Componentes principais e uso do componente proxy (Componente 
 
 Usos do componente de Imagem principal ***data-asset-id*** atributo dentro do pai &lt;div> de uma tag de imagem para ativar/desativar esse recurso. O componente proxy substitui o componente principal pelas alterações a seguir.
 
-* Remove o ***data-asset-id*** da div principal de um elemento  &lt;img>  dentro do image.html
-* Adiciona ***data-aem-asset-id*** diretamente para o elemento  &lt;img>  dentro da image.html
-* Adiciona ***data-trackable=&#39;true&#39;*** para o elemento  &lt;img>  dentro do image.html
+* Remove o ***data-asset-id*** da div principal de um elemento &lt;img> dentro do image.html
+* Adiciona ***data-aem-asset-id*** diretamente para o elemento &lt;img> dentro da image.html
+* Adiciona ***data-trackable=&#39;true&#39;*** para o elemento &lt;img> dentro do image.html
 * ***data-aem-asset-id*** e ***data-trackable=&#39;true&#39;*** são mantidas no mesmo nível de nó
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* e *data-trackable=&#39;true&#39;* são os principais atributos que precisam estar presentes para as impressões do ativo. Para o Asset Click Insights, além dos atributos de dados acima presentes na tag  &lt;img> , a tag principal deve ter um valor href válido.
+>*data-aem-asset-id=&#39;image.UUID&#39;* e *data-trackable=&#39;true&#39;* são os principais atributos que precisam estar presentes para as impressões do ativo. Para o Asset Click Insights, além dos atributos de dados acima presentes na tag &lt;img> , a tag principal deve ter um valor href válido.
 
 ## Parte 3: Adobe Analytics — Criação de um conjunto de relatórios, permitindo a coleta de dados em tempo real e a geração de relatórios do AEM Assets {#adobe-analytics-asset-insights}
 
@@ -69,7 +69,7 @@ O conjunto de relatórios com a coleta de dados em tempo real é criado para o r
 
 >[!NOTE]
 >
-A coleta de dados em tempo real e o relatório de ativos do AEM precisam estar habilitados para seu conjunto de relatórios do Adobe Analytics. A habilitação do Relatório de ativos AEM reserva variáveis de análise para rastrear insights de ativos.
+A coleta de dados em tempo real e o relatório de ativos do AEM devem ser ativados para o conjunto de relatórios do Adobe Analytics. A habilitação do Relatório de ativos AEM reserva variáveis de análise para rastrear insights de ativos.
 
 Para a configuração do AEM Assets Insights, você precisa das seguintes credenciais
 
@@ -106,10 +106,10 @@ O rastreador de páginas implementa dois retornos de chamada (registrados no có
 * **\&lt;code>assetAnalytics.core.assetLoaded\&lt;code>** : chamado quando o evento &quot;load&quot; é despachado para o elemento asset-DOM.
 * **\&lt;code>assetAnalytics.core.assetClicked\&lt;code>** : chamado quando o evento &#39;click&#39; é despachado para o asset-DOM-element. Isso é relevante somente quando o asset-DOM-element tem uma tag âncora como pai com um atributo &#39;href&#39; externo válido
 
-Finalmente, o Pagetracker implementa uma função de inicialização como.
+Finalmente, o Rastreador de páginas implementa uma função de inicialização como.
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : chamado para inicializar o componente Pagetracker. Isso DEVE ser chamado antes que qualquer um dos eventos de insights do ativo (impressões e/ou cliques) seja gerado na página da Web.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : opcionalmente aceita um objeto do AppMeasurement — se fornecido, ele não tentará criar uma nova instância do objeto do AppMeasurement.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : chamado para inicializar o componente Rastreador de páginas. Isso DEVE ser chamado antes que qualquer um dos eventos de insights do ativo (impressões e/ou cliques) seja gerado na página da Web.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : opcionalmente aceita um objeto do AppMeasurement — se fornecido, ele não tentará criar uma instância do objeto do AppMeasurement.
 
 ### Regra 2: Rastreador de imagens — Ação 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -189,9 +189,9 @@ document.querySelectorAll(".cmp-image__image");
 Duas extensões de navegador do Google Chrome são mencionadas no vídeo como maneiras de depurar o Analytics. Extensões semelhantes também estão disponíveis para outros navegadores.
 
 * [Extensão do Chrome para o Launch Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
+* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Também é possível alternar o DTM para o modo de depuração com a seguinte extensão do Chrome: [Launch e DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Isso facilita a verificação de erros relacionados à implantação do DTM. Além disso, é possível alternar manualmente o DTM para o modo de depuração por meio de qualquer navegador *ferramentas do desenvolvedor -> Console JS* adicionando o seguinte trecho:
+Também é possível alternar o DTM para o modo de depuração com a seguinte extensão do Chrome: [Launch e DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Isso facilita a verificação de erros relacionados à implantação do DTM. Além disso, é possível alternar manualmente o DTM para o modo de depuração por meio de qualquer navegador *ferramenta do desenvolvedor -> Console JS* adicionando o seguinte trecho:
 
 ## Parte 5: Teste de rastreamento analítico e sincronização de dados de insight{#analytics-tracking-asset-insights}
 

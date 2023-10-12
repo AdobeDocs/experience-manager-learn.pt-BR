@@ -1,6 +1,6 @@
 ---
 title: Criar bibliotecas de clientes
-description: Crie uma biblioteca do cliente para lidar com o evento click do botão "Salvar e sair"
+description: Crie uma biblioteca cliente para lidar com o evento click do botão "Salvar e sair"
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -10,16 +10,16 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 6%
 
 ---
 
 # Criar biblioteca do cliente
 
-Criar [biblioteca cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` do `guideBridge` API no evento de clique do botão identificado pela classe CSS **savebutton**.  Passamos os dados do formulário adaptável, `fileMap`, e o `mobileNumber` para o endpoint que está escutando em `**/bin/storeafdatawithattachments`
+Criar [biblioteca cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` do `guideBridge` API no evento de clique do botão identificado pela classe CSS **botão salvar**.  Passamos os dados do formulário adaptável, `fileMap`, e o `mobileNumber` para o endpoint que está escutando em `**/bin/storeafdatawithattachments`
 
 Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é levado ao formulário, o que permite recuperar o formulário adaptável salvo usando a ID exclusiva do aplicativo.
 
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Nós usamos [biblioteca javascript de bootbox](http://bootboxjs.com/examples.html) para exibir a caixa de diálogo
+> Nós usamos [biblioteca JavaScript bootbox](https://bootboxjs.com/examples.html) para exibir a caixa de diálogo
 
-As bibliotecas de clientes usadas nesta amostra podem ser [baixado aqui](assets/store-af-with-attachments-client-lib.zip)
+As bibliotecas de clientes usadas nesta amostra podem ser [baixado aqui.](assets/store-af-with-attachments-client-lib.zip)
 
 ## Próximas etapas
 

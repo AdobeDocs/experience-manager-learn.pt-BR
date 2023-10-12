@@ -14,10 +14,10 @@ level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 3%
+source-wordcount: '200'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Saiba como exportar fragmento de experiência do AEM como ofertas do Adobe Targe
 
 #### Erro
 
-A exportação do fragmento de experiência para o Adobe Target sem as permissões corretas no Adobe Admin Console resulta no seguinte erro no serviço do Autor do AEM:
+A exportação do fragmento de experiência para o Adobe Target sem as permissões corretas no Adobe Admin Console resulta no seguinte erro no serviço do autor do AEM:
 
     ![Erro de interface de API do Target](assets/error-target-offer.png)
 
@@ -49,7 +49,7 @@ A exportação do fragmento de experiência para o Adobe Target sem as permissõ
 
 1. Fazer logon em [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de produto Adobe Target usado, mas a integração AEM
 2. Selecionar __Produtos > Adobe Target > Perfil do produto__
-3. Em __Integrações__ , selecione a integração para o ambiente as a Cloud Service AEM (mesmo nome do projeto Adobe I/O)
+3. Em __Integrações__ , selecione a integração do seu ambiente as a Cloud Service AEM (mesmo nome do projeto do Adobe Developer)
 4. Atribuir __Editor__ ou __Aprovador__ função
 
    ![Erro na API do Target](assets/target-permissions.png)
@@ -58,5 +58,5 @@ Adicionar a permissão correta à integração do Adobe Target deve resolver ess
 
 ## Links de suporte
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

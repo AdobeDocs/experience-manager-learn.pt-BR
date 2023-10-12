@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '124'
 ht-degree: 1%
 
 ---
@@ -33,10 +33,10 @@ Para criar atividades do Adobe Target usando ofertas de fragmento de experiênci
 
 1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
 1. [Acionar uma chamada do Adobe Target no Launch](./load-and-fire-target.md)
-1. [Integrar o serviço do AEM Author ao Adobe Target](./setup-aem-target-cloud-service.md)
+1. [Integrar o serviço de autor do AEM ao Adobe Target](./setup-aem-target-cloud-service.md)
 1. [Exportar fragmentos de experiência do AEM para o Adobe Target](./export-experience-fragment-target.md)
 
 ## Links de suporte
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
