@@ -10,17 +10,19 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
+exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
+source-git-commit: 549b444d0a195fb9b5b8fd7ff48cf133746e5fd2
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
 
-
 # Autenticação mTLS (Mutual Transport Layer Security) do AEM
 
 Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem autenticação MTLS (Mutual Transport Layer Security).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 A autenticação mTLS ou TLS bidirecional melhora a segurança do protocolo TLS, exigindo **o cliente e o servidor se autenticam**. Essa autenticação é feita usando certificados digitais. Normalmente, é usada em cenários nos quais a segurança e a verificação de identidade fortes são críticas.
 
@@ -221,3 +223,9 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 Uma abordagem convencional para invocar efetivamente APIs mTLS com certificados privados envolve a modificação da JVM Keystore. Isso é feito importando os certificados privados usando o Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) comando.
 
 No entanto, esse método não está alinhado às práticas recomendadas de segurança e o AEM oferece uma opção superior por meio da utilização do **KeyStores específicos do usuário e TrustStore global** e [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+## Pacote de soluções
+
+O projeto Node.js de amostra demoed no vídeo pode ser baixado em [aqui](assets/internal-api-call/REST-APIs.zip).
+
+O código do servlet AEM está disponível no site do projeto WKND `tutorial/web-api-invocation` filial, [consulte](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
