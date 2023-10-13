@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -76,4 +77,3 @@ A amostra de carga para o serviço é a seguinte: Substitua os valores de espaç
 Certifique-se de que o `template_id` corresponde à ID do modelo de email dinâmico do SendGrid, e os endereços de email são válidos e verificados pelo SendGrid. Os valores na variável `personalizations` permite personalizar o email usando os dados inseridos pelo usuário do formulário adaptável.
 
 Seguindo essas etapas e personalizando a carga útil fornecida, você pode testar efetivamente a integração dos modelos dinâmicos do SendGrid com o AEM Forms.
-

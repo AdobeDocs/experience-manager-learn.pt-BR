@@ -12,8 +12,8 @@ jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
-exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 1%
@@ -60,11 +60,11 @@ O Cloud Service do Adobe Target, configurado em uma configuração sensível ao 
 
 +++Expandir para obter instruções passo a passo
 
-1. Efetue logon no __Serviço de autoria do AEM__ como administrador do DAM
+1. Efetue logon no __Serviço de Autor do AEM__ como administrador do DAM
 1. Navegue até __Ativos > Arquivos__, localize a pasta de ativos que tem o `/conf` aplicado a
 1. Selecione a pasta de ativos e selecione __Propriedades__ na barra de ação superior
 1. Selecione a guia __Cloud Services__
-1. Verifique se a Configuração na nuvem está definida como configuração com reconhecimento de contexto (`/conf`) que contém a configuração do Adobe Target Cloud Services.
+1. Verifique se a Configuração na nuvem está definida como configuração com reconhecimento de contexto (`/conf`) que contém a configuração do Adobe Target Cloud Service.
 1. Selecionar __Adobe Target__ do __Configurações do Cloud Service__ lista suspensa.
 1. Selecionar __Salvar e fechar__ na parte superior direita
 
@@ -99,7 +99,7 @@ Fragmentos de conteúdo existentes no [hierarquia de pastas configurada do AEM A
 
 +++Expandir para obter instruções passo a passo
 
-1. Efetue logon no __AEM Author__ como usuário do DAM
+1. Efetue logon no __Autor do AEM__ como usuário do DAM
 1. Navegue até __Ativos > Arquivos__ e localize os Fragmentos de conteúdo a serem exportados como JSON para o Target na pasta &quot;Adobe Target ativado&quot;
 1. Selecione os fragmentos de conteúdo que serão exportados para o Adobe Target
 1. Selecionar __Exportar para ofertas do Adobe Target__ na barra de ação superior
@@ -116,7 +116,7 @@ Fragmentos de conteúdo existentes no [hierarquia de pastas configurada do AEM A
 1. Selecione o __Tipo__ lista suspensa e seleção __Fragmentos de conteúdo__
 1. Verifique se o fragmento de conteúdo exportado do AEM aparece na lista
    + Passe o mouse sobre a oferta e selecione o __Exibir__ botão
-   + Revise o __Informações da oferta__ e consulte a __Deep link AEM__ que abre o fragmento de conteúdo diretamente no serviço do AEM Author
+   + Revise o __Informações da oferta__ e consulte a __Deep link AEM__ que abre o fragmento de conteúdo diretamente no serviço de autor do AEM
 
 +++
 
@@ -147,7 +147,7 @@ Neste exemplo, usamos uma atividade A/B simples, no entanto, qualquer atividade 
    + Neste exemplo, direcione a um local personalizado chamado `wknd-adventure-promo`
 1. Em __Conteúdo__ selecione o Default content e selecione __Alterar fragmento do conteúdo__
 1. Selecione o fragmento de conteúdo exportado para ser utilizado nessa experiência e selecione __Concluído__
-1. Revise o JSON da oferta do fragmento de conteúdo na área de texto Conteúdo. Esse é o mesmo JSON disponível no serviço do AEM Author por meio da ação Visualizar do fragmento de conteúdo.
+1. Revise a Oferta JSON de fragmento de conteúdo na área de texto Conteúdo. Esse é o mesmo JSON disponível no serviço do Autor de AEM por meio da ação Visualizar do fragmento de conteúdo.
 1. No painel à esquerda, adicione uma Experiência e selecione uma Oferta de fragmento de conteúdo diferente para distribuir
 1. Selecionar __Próxima__ e configurar as regras de direcionamento conforme necessário para a atividade
    + Neste exemplo, deixe o teste A/B como uma divisão manual 50/50.
@@ -463,6 +463,6 @@ As experiências móveis do Android™ e do iOS podem ser personalizadas seguind
 
    ![Ofertas de experiência](./assets/target/offers-in-app.png)
 
-## Parabéns!
+## Parabéns.
 
 Agora que configuramos o AEM as a Cloud Service para exportar fragmentos de conteúdo para o Adobe Target, usamos as Ofertas de fragmentos de conteúdo em uma Atividade do Adobe Target AEM e vimos essa Atividade em um aplicativo Headless, personalizando a experiência.

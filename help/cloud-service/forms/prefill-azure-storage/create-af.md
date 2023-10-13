@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 thumbnail: 335423.jpg
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 0b543c6b-9cfd-4fac-b8d0-33153c036f4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 2%
@@ -37,4 +38,3 @@ O formulário tem as seguintes regras de negócio
 ### Próximas etapas
 
 [Implantar os ativos de amostra](./deploy-sample-assets.md)
-

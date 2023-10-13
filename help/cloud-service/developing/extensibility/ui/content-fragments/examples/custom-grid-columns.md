@@ -10,13 +10,13 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # Colunas de grade personalizadas
 
@@ -202,7 +202,7 @@ Exemplo de Fragmento de conteúdo JSON que está disponível como um elemento do
 }
 ```
 
-Se outros dados forem necessários para preencher a coluna personalizada, as solicitações HTTP poderão ser feitas ao autor do AEM para recuperar os dados.
+Se outros dados forem necessários para preencher a coluna personalizada, as solicitações HTTP poderão ser feitas ao AEM Author para recuperar os dados.
 
 >[!IMPORTANT]
 >

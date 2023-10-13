@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: afc0df42-b4fc-4d04-a36e-63e5a9438597
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 2%
@@ -28,4 +29,3 @@ Para o propósito deste tutorial, um modelo de dados de formulário chamado Save
 ## Próximas etapas
 
 [Criar formulário adaptável](./create-af.md)
-

@@ -10,13 +10,13 @@ doc-type: Article
 last-substantial-update: 2023-08-28T00:00:00Z
 jira: KT-13858
 thumbnail: KT-13858.jpeg
-source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
+exl-id: b8e09820-f1f2-4897-b454-16c0df5a0459
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
 
 ---
-
 
 # Autor do AEM
 
@@ -50,4 +50,3 @@ Os seguintes recursos voltados para o cliente são armazenados em cache pelo CDN
 ## AEM Dispatcher
 
 O serviço de Autor do AEM não inclui o AEM Dispatcher e usa somente o [CDN](#cdn) para armazenamento em cache
-

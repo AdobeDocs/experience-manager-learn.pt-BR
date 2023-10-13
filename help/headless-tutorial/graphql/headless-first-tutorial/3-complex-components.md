@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 2%
 
 ---
-
 
 # Criar componente complexo
 
@@ -419,6 +419,6 @@ export default Home;
 ```
 
 
-## Parabéns!
+## Parabéns.
 
 Você criou com sucesso uma experiência AEM Headless que é totalmente alimentada por APIs AEM Headless e é editável com o Universal Editor.
