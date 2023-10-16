@@ -7,9 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
+jira: KT-8413, KT-3707
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 8dfc538e93ea5dc114cf0a5d57dd82d924e476ff
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -98,7 +99,7 @@ Como a autenticação do Adobe Asset Link funciona no contexto do Adobe Identity
 1. A extensão Adobe Asset Link conecta-se ao AEM Author por HTTP(S), incluindo o token do portador obtido em **Etapa 1**, usando o esquema (HTTP/HTTPS), o host e a porta fornecidos nas configurações de JSON da extensão.
 1. O Manipulador de autenticação do portador do AEM extrai o token do portador da solicitação e o valida com o Adobe IMS.
 1. Depois que o Adobe IMS valida o token do portador, um usuário é criado no AEM (se ainda não existir) e sincroniza dados de perfil e de grupo/associações do Adobe IMS. O usuário AEM recebe um token de logon AEM padrão, que é enviado de volta para a extensão Adobe Asset Link como um Cookie na resposta HTTP(S).
-1. Interações subsequentes (ou seja, navegar, pesquisar, fazer check-in/check-out de ativos etc.) com a extensão Adobe Asset Link, o resultado são solicitações HTTP(S) para o AEM Author, validadas usando o token de logon AEM, usando o Manipulador de autenticação de token de AEM padrão.
+1. Interações subsequentes (ou seja, navegar, pesquisar, fazer check-in/check-out de ativos etc.) com a extensão Adobe Asset Link, resulta em solicitações HTTP(S) para o AEM Author, que são validadas usando o token de logon do AEM, usando o Manipulador de autenticação de token do AEM padrão.
 
 >[!NOTE]
 >
