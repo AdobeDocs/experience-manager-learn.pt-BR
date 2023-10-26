@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 67e0a7530549a0d380e9ef82e3747c40d17b1b75
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '564'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ O processo de configuração envolve o seguinte:
 
 - _criação de regras_ com uma estrutura de projeto AEM apropriada e um arquivo de configuração.
 - _implantação de regras_ usando o pipeline de configuração do Adobe Cloud Manager.
-- _regras de teste_ uso de várias ferramentas para gerar tráfego
+- _regras de teste_ usar várias ferramentas para gerar tráfego.
 - _análise dos resultados_ usar logs de CDN e ferramentas de painel do AEM CS.
 
 ### Criar regras no projeto AEM
@@ -37,7 +37,7 @@ Para criar regras, siga estas etapas:
 
 1. No nível superior do projeto AEM, crie uma pasta `config`.
 
-1. No prazo de `config` , crie uma nova chamada `cdn.yaml`.
+1. No prazo de `config` , crie um novo arquivo chamado `cdn.yaml`.
 
 1. Adicione os seguintes metadados à `cdn.yaml` arquivo:
 
