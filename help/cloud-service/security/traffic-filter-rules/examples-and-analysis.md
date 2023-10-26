@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Exemplos e análise de resultados de regras de Filtro de tráfego incluindo regras WAF
+# Exemplos e análise de resultados de regras de filtro de tráfego, incluindo regras WAF
 
-Saiba como declarar vários tipos de regras de Filtro de tráfego e analisar os resultados usando logs de CDN e ferramentas de painel do Adobe Experience Manager as a Cloud Service (AEMCS).
+Saiba como declarar vários tipos de regras de filtro de tráfego e analisar os resultados usando logs de CDN e ferramentas de painel do Adobe Experience Manager as a Cloud Service (AEMCS).
 
-Nesta seção, você explora exemplos práticos de regras de Filtro de tráfego, incluindo regras WAF. Você aprende a registrar, permitir e bloquear solicitações com base no URI (ou caminho), endereço IP, o número de solicitações e diferentes tipos de ataques usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Nesta seção, você explora exemplos práticos de regras de filtro de tráfego, incluindo regras WAF. Você aprende a registrar, permitir e bloquear solicitações com base no URI (ou caminho), endereço IP, o número de solicitações e diferentes tipos de ataques usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 Além disso, você descobre como usar ferramentas de painel de controle que assimilam logs de CDN do AEM CS para visualizar métricas essenciais por meio de painéis de amostra fornecidos pelo Adobe.
 
@@ -30,7 +30,7 @@ Para se alinhar aos seus requisitos específicos, você pode aprimorar e criar p
 
 ## Exemplos
 
-Vamos explorar vários exemplos de regras de Filtro de tráfego, incluindo regras WAF. Verifique se você concluiu o processo de configuração necessário, conforme descrito na seção anterior [como configurar](./how-to-setup.md) e você tiver clonado a variável [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Vamos explorar vários exemplos de regras de filtro de tráfego, incluindo regras WAF. Verifique se você concluiu o processo de configuração necessário, conforme descrito na seção anterior [como configurar](./how-to-setup.md) e você tiver clonado a variável [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Registrando solicitações
 
@@ -222,7 +222,7 @@ Os exemplos de regra de filtro de tráfego até o momento podem ser configurados
 
 A seguir, vamos explorar a experiência de um cliente que adquiriu uma licença aprimorada de segurança ou WAF-DDoS Protection. Isso permite que você configure regras avançadas para proteger seus sites de AEM contra ataques mais sofisticados.
 
-Antes de continuar, ative a Proteção WAF-DDoS para o seu programa, conforme descrito na documentação Regras de filtro de tráfego [etapas de configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Antes de continuar, ative a Proteção WAF-DDoS para o seu programa, conforme descrito na documentação das regras de filtro de tráfego [etapas de configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
 #### Sem WAFFlags
 

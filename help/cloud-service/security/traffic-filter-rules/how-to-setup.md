@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Como configurar regras de Filtro de tráfego incluindo regras WAF
 
-Saiba mais **como configurar** Regras de Filtro de tráfego, incluindo regras WAF. Leia sobre como criar, implantar, testar e analisar resultados.
+Saiba mais **como configurar** regras de filtro de tráfego, incluindo regras WAF. Leia sobre como criar, implantar, testar e analisar resultados.
 
 ## Configurar
 
@@ -118,7 +118,7 @@ Para testar as regras, há várias ferramentas de terceiros disponíveis e sua o
 
 Depois de criar, implantar e testar as regras, é possível analisar os resultados usando **Elasticsearch, Logstash e Kibana (ELK)** ferramentas do painel. Ele pode analisar os logs de CDN do AEM CS, permitindo visualizar os resultados na forma de vários gráficos e tabelas.
 
-As ferramentas do painel de controle podem ser clonadas diretamente do [Repositório GitHub da AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e siga as etapas para instalar e carregar o **Regras de filtro de tráfego (incluindo WAF)** painel.
+As ferramentas do painel de controle podem ser clonadas diretamente do [Repositório GitHub da AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e siga as etapas para instalar e carregar o **regras de filtro de tráfego (incluindo WAF)** painel.
 
 - Depois de carregar o painel de amostra, a página de ferramenta do painel Elástico deve ser semelhante ao seguinte:
 
@@ -131,4 +131,4 @@ As ferramentas do painel de controle podem ser clonadas diretamente do [Reposit�
 
 ## Próxima etapa
 
-Saiba como declarar regras de Filtro de tráfego, incluindo regras WAF na [Exemplos e análise de resultados](./examples-and-analysis.md) capítulo, uso do projeto AEM WKND Sites.
+Saiba como declarar regras de filtro de tráfego, incluindo regras WAF na [Exemplos e análise de resultados](./examples-and-analysis.md) capítulo, uso do projeto AEM WKND Sites.
