@@ -6,11 +6,12 @@ level: Beginner, Intermediate
 topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
+jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 5%
 Há três opções quando se trata de instalar e manter uma instância de AEM
 
 * AEMaaCS (Cloud Service) - o sistema está sempre ativo, atualizado e dimensionado dinamicamente conforme você precisa
-* Adobe Managed Services, onde os engenheiros de atendimento ao cliente do Adobe fazem toda a manutenção diária/semanal/mensal e garantem que todos os service packs sejam instalados e que o sistema esteja sempre seguro e funcionando sem problemas
+* Adobe Managed Services, onde os engenheiros de atendimento ao cliente do Adobe fazem toda a manutenção diária/semanal/mensal e garantem que todos os service packs estejam instalados e que o sistema esteja sempre seguro e funcionando sem problemas
 * executá-lo no local, onde você precisa cuidar de todo o sistema, incluindo backups, atualizações e segurança.
 
 Se você optar por implementar seu próprio sistema localmente, lembre-se de algumas coisas para garantir que você tenha um sistema seguro e eficiente. Além dos itens &quot;cuidado e alimentação&quot;, este documento também apontará vários itens que os desenvolvedores de AEM devem ter em mente para ajudar a manter o sistema funcionando bem.
@@ -50,7 +51,7 @@ Cada atualização no repositório cria uma nova revisão de conteúdo. Como res
 
 Remova os binários do lucene e reduza o requisito de tamanho do armazenamento de dados em execução.
 
-#### [Lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
+#### [Lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=pt-BR)
 
 Quando um ativo no AEM é excluído, a referência ao registro de armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro de armazenamento de dados permanece. Esse registro de armazenamento de dados sem referência torna-se &quot;lixo&quot; que não precisa ser retido. Nos casos em que existem vários ativos sem referência, é útil eliminá-los para preservar espaço, otimizar o backup e o desempenho de manutenção do sistema de arquivos.
 
@@ -94,7 +95,7 @@ Pense antes de ver o que pode ser reutilizado. Um rodapé? Um aviso? Um Cabeçal
 
 ## Geral
 
-Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Serviços de aprendizado digital Adobe (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
+Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=pt-BR) e [Serviços de aprendizado digital Adobe (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
 
 ## Conclusão
 

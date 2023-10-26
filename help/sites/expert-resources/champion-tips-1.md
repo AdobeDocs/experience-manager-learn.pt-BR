@@ -8,8 +8,9 @@ role: User
 level: Beginner, Intermediate
 topic: Content Management
 audience: author, marketer
+jira: KT-14251
 exl-id: d5967fb5-c151-478e-a554-41e235de3f83
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%
