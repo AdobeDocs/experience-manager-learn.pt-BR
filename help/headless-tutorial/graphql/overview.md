@@ -52,7 +52,7 @@ Explore os recursos do AEM GraphQL criando um aplicativo React que consome fragm
 
 ## AEM GraphQL versus AEM Content Services
 
-|  | APIs do GraphQL para AEM | Serviços de conteúdo AEM |
+|                                | APIs do GraphQL para AEM | Serviços de conteúdo AEM |
 |--------------------------------|:-----------------|:---------------------|
 | Definição de esquema | Modelos de fragmentos do conteúdo estruturado | Componentes do AEM |
 | Conteúdo | Fragmentos de conteúdo | Componentes do AEM |

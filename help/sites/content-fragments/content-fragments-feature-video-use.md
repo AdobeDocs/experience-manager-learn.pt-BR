@@ -57,7 +57,7 @@ Os fragmentos de conteúdo podem ter várias variantes, cada uma abordando um ca
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
-Os fragmentos de conteúdo do AEM podem ser baixados do autor do AEM como um arquivo Zip contendo variantes, elementos e metadados.
+Os fragmentos de conteúdo do AEM podem ser baixados do AEM Author como um arquivo Zip contendo variantes, elementos e metadados.
 
 *Exemplo de arquivo zip de download do fragmento de conteúdo:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**

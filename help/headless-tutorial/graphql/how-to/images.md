@@ -29,13 +29,13 @@ A variável `ImageRef` O tipo tem quatro opções de URL para referências de co
 + `_dynamicUrl` é o URL completo do ativo de imagem preferencial otimizado para a Web.
    + A variável `_dynamicUrl` não inclui uma origem de AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
 + `_authorUrl` é o URL completo do ativo de imagem no AEM Author
-   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
+   + [Autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
 + `_publishUrl` é o URL completo do ativo de imagem na publicação do AEM
-   + [AEM Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) O geralmente é o local de onde a implantação em produção do aplicativo headless exibe imagens do.
+   + [Publicação no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) O geralmente é o local de onde a implantação em produção do aplicativo headless exibe imagens do.
 
 A variável `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`, e `_publishUrl` sempre que possível.
 
-|  | AEM as a Cloud Service | RDE AS A CLOUD SERVICE AEM | SDK do AEM | AEM 6.5 |
+|                                | AEM as a Cloud Service | RDE AS A CLOUD SERVICE AEM | SDK do AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | Suporta imagens otimizadas para a Web? | ✔ | ✔ | ✘ | ✘ |
 
@@ -129,7 +129,7 @@ A resposta JSON resultante contém os campos solicitados que contêm o URL otimi
 
 Para carregar a imagem otimizada para a Web da imagem referenciada em seu aplicativo, o usou o `_dynamicUrl` do `primaryImage` como o URL de origem da imagem.
 
-No React, a exibição de uma imagem otimizada para a Web do AEM Publish é semelhante a:
+No React, exibir uma imagem otimizada para a Web do AEM Publish é semelhante a:
 
 ```jsx
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";

@@ -36,7 +36,7 @@ Este tutorial aborda a configuração de um ambiente de desenvolvimento local pa
 O ambiente de desenvolvimento local do AEM pode ser dividido em três grupos lógicos:
 
 + A variável __Projeto AEM__ contém o código personalizado, a configuração e o conteúdo que são o aplicativo AEM personalizado.
-+ A variável __Tempo de execução local do AEM__ que executa uma versão local dos serviços de Autor e Publicação do AEM localmente.
++ A variável __Tempo de execução local do AEM__ que executa uma versão local dos serviços AEM Author e Publish localmente.
 + A variável __Tempo de execução local do Dispatcher__ que executa uma versão local do Apache HTTP Web Server e do Dispatcher.
 
 Este tutorial mostra como instalar e configurar os itens destacados no diagrama acima, fornecendo um ambiente de desenvolvimento local estável para o desenvolvimento do AEM.
@@ -46,7 +46,7 @@ Este tutorial mostra como instalar e configurar os itens destacados no diagrama 
 Este tutorial estabeleceu a localização dos artefatos do SDK as a Cloud Service do AEM e o código do projeto do AEM da seguinte maneira:
 
 + `~/aem-sdk` é uma pasta organizacional que contém as várias ferramentas fornecidas pelo SDK do AEM as a Cloud Service
-+ `~/aem-sdk/author` contém o Serviço do autor do AEM
++ `~/aem-sdk/author` contém o serviço de autor AEM
 + `~/aem-sdk/publish` contém o serviço de publicação do AEM
 + `~/aem-sdk/dispatcher` contém as Ferramentas do Dispatcher
 + `~/code/<project name>` contém o código fonte personalizado do projeto AEM
@@ -68,7 +68,7 @@ Esta seção do tutorial mostra como:
 
 ## AEM Runtime local
 
-O SDK as a Cloud Service do AEM fornece uma [!DNL QuickStart Jar] que executa uma versão local do AEM. A variável [!DNL QuickStart Jar] pode ser usado para executar o Serviço do autor do AEM ou o Serviço de publicação do AEM localmente. Observe que, embora a variável [!DNL QuickStart Jar] fornece uma experiência de desenvolvimento local, nem todos os recursos disponíveis no AEM as a Cloud Service estão incluídos no [!DNL QuickStart Jar].
+O SDK as a Cloud Service do AEM fornece uma [!DNL QuickStart Jar] que executa uma versão local do AEM. A variável [!DNL QuickStart Jar] O pode ser usado para executar o Serviço de autoria do AEM ou o Serviço de publicação do AEM localmente. Observe que, embora a variável [!DNL QuickStart Jar] fornece uma experiência de desenvolvimento local, nem todos os recursos disponíveis no AEM as a Cloud Service estão incluídos no [!DNL QuickStart Jar].
 
 Esta seção do tutorial mostra como:
 
