@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Saiba como declarar vários tipos de regras de filtro de tráfego e analisar os resultados usando logs de CDN e ferramentas de painel do Adobe Experience Manager as a Cloud Service (AEMCS).
 
-Nesta seção, você explora exemplos práticos de regras de filtro de tráfego, incluindo regras WAF. Você aprende a registrar, permitir e bloquear solicitações com base no URI (ou caminho), endereço IP, o número de solicitações e diferentes tipos de ataques usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Nesta seção, você explorará exemplos práticos de regras de filtro de tráfego, incluindo regras WAF. Você aprenderá a registrar, permitir e bloquear solicitações com base no URI (ou caminho), endereço IP, o número de solicitações e diferentes tipos de ataque usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
-Além disso, você descobre como usar ferramentas de painel de controle que assimilam logs de CDN do AEM CS para visualizar métricas essenciais por meio de painéis de amostra fornecidos pelo Adobe.
+Além disso, você descobrirá como usar ferramentas de painel que assimilam logs de CDN do AEM CS para visualizar métricas essenciais por meio de painéis de amostra fornecidos pelo Adobe.
 
 Para se alinhar aos seus requisitos específicos, você pode aprimorar e criar painéis personalizados, obtendo assim insights mais profundos e otimizando as configurações de regras para seus sites de AEM.
 
 ## Exemplos
 
-Vamos explorar vários exemplos de regras de filtro de tráfego, incluindo regras WAF. Verifique se você concluiu o processo de configuração necessário, conforme descrito na seção anterior [como configurar](./how-to-setup.md) e você tiver clonado a variável [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Vamos explorar vários exemplos de regras de filtro de tráfego, incluindo regras WAF. Verifique se você concluiu o processo de configuração necessário, conforme descrito na seção anterior [como configurar](./how-to-setup.md) capítulo e que você clonou o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Registrando solicitações
 
@@ -104,11 +104,11 @@ Vamos analisar os resultados da `publish-auth-requests` regra ao baixar os logs 
 
 ### Bloquear solicitações
 
-Neste exemplo, vamos adicionar uma página em uma _interno_ pasta em `/content/wknd/internal` no projeto WKND implantado. Em seguida, declare uma regra de filtro de tráfego que **bloqueia o tráfego** para subpáginas de qualquer lugar diferente de um endereço IP especificado que corresponda à sua organização (por exemplo, uma VPN corporativa).
+Neste exemplo, vamos adicionar uma página em uma _interno_ pasta no caminho `/content/wknd/internal` no projeto WKND implantado. Em seguida, declare uma regra de filtro de tráfego que **bloqueia o tráfego** para subpáginas de qualquer lugar diferente de um endereço IP especificado que corresponda à sua organização (por exemplo, uma VPN corporativa).
 
-Você pode criar sua própria página interna (por exemplo, `demo-page.html`) ou use o [pacote anexado](./assets/demo-internal-pages-package.zip)
+Você pode criar sua própria página interna (por exemplo, `demo-page.html`) ou use o [pacote anexado](./assets/demo-internal-pages-package.zip).
 
-- Adicione a seguinte regra no do projeto WKND `/config/cdn.yaml` arquivo.
+- Adicione a seguinte regra no do projeto WKND `/config/cdn.yaml` arquivo:
 
 ```yaml
 kind: CDN
@@ -200,7 +200,7 @@ data:
   $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
   ```
 
-  Esse comando faz 120 solicitações por 5 segundos e gera um relatório. Como você pode ver, a taxa de sucesso é de 32,5% e, para o restante, um código de resposta HTTP 406 é recebido, demonstrando que o tráfego foi bloqueado.
+  Esse comando faz 120 solicitações por 5 segundos e gera um relatório. Como você pode ver, a taxa de sucesso é de 32,5%; um código de resposta HTTP 406 é recebido para o restante, demonstrando que o tráfego foi bloqueado.
 
   ![Ataque De DoS Vegeta](./assets/vegeta-dos-attack.png)
 
@@ -212,7 +212,7 @@ Desta vez, você deverá ver muitos **Solicitações bloqueadas** e os valores c
 
 ![Solicitação de DoS do painel da ferramenta ELK](./assets/elk-tool-dashboard-dos.png)
 
-Além disso, a variável **Os 100 principais ataques por IP do cliente, país e agente do usuário** O painel mostra detalhes adicionais, que podem ser usados para otimizar ainda mais a configuração de regras.
+Além disso, a variável **Os 100 principais ataques por IP do cliente, país e agente do usuário** Os painéis do mostram detalhes adicionais, que podem ser usados para otimizar ainda mais a configuração de regras.
 
 ![As 100 principais solicitações do DoS do painel da ferramenta ELK](./assets/elk-tool-dashboard-dos-top-100.png)
 
@@ -220,7 +220,7 @@ Além disso, a variável **Os 100 principais ataques por IP do cliente, país e 
 
 Os exemplos de regra de filtro de tráfego até o momento podem ser configurados por todos os clientes do Sites e do Forms.
 
-A seguir, vamos explorar a experiência de um cliente que adquiriu uma licença aprimorada de segurança ou WAF-DDoS Protection. Isso permite que você configure regras avançadas para proteger seus sites de AEM contra ataques mais sofisticados.
+A seguir, vamos explorar a experiência de um cliente que adquiriu uma licença Enhanced Security ou WAF-DDoS Protection, que permite configurar regras avançadas para proteger sites de ataques mais sofisticados.
 
 Antes de continuar, ative a Proteção WAF-DDoS para o seu programa, conforme descrito na documentação das regras de filtro de tráfego [etapas de configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
@@ -228,7 +228,7 @@ Antes de continuar, ative a Proteção WAF-DDoS para o seu programa, conforme de
 
 Vamos ver a experiência antes mesmo de as Regras do WAF serem declaradas. Quando o WAF-DDoS está ativado em seu programa, os registros da CDN registram, por padrão, quaisquer correspondências de tráfego mal-intencionado, para que você tenha as informações corretas para criar as regras apropriadas.
 
-Vamos começar atacando o site WKND sem adicionar a regra WAF (ou usando o `wafFlags` propriedade ) e analisar os resultados.
+Vamos começar atacando o site WKND sem adicionar uma regra WAF (ou usar o `wafFlags` propriedade ) e analisar os resultados.
 
 - Para simular um ataque, use o [Nikto](https://github.com/sullo/nikto) abaixo, que envia cerca de 700 solicitações mal-intencionadas em 6 minutos.
 
@@ -248,7 +248,7 @@ No entanto, desta vez, você deverá ver o **Solicitações sinalizadas** e os v
 
 ![Solicitação sinalizada WAF do painel de ferramentas ELK](./assets/elk-tool-dashboard-waf-flagged.png)
 
-Observe como **Distribuição de Sinalizadores WAF e Ataques principais** Os painéis do mostram detalhes adicionais, que podem ser usados para otimizar ainda mais a configuração da regra.
+Observe como **Distribuição de sinalizadores do WAF** e **Principais ataques** Os painéis do mostram detalhes adicionais, que podem ser usados para otimizar ainda mais a configuração da regra.
 
 ![Solicitação de Ataques de Sinalizadores WAF do Painel de Ferramentas ELK](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
@@ -319,7 +319,7 @@ Desta vez, você deve ver entradas em **Solicitações bloqueadas** e os valores
 
 ![Solicitação de WAF bloqueada do painel da ferramenta ELK](./assets/elk-tool-dashboard-waf-blocked.png)
 
-Além disso, a variável **Distribuição de Sinalizadores WAF e Ataques principais** Os painéis do mostram detalhes adicionais.
+Além disso, a variável **Distribuição de sinalizadores do WAF** e **Principais ataques** Os painéis do mostram detalhes adicionais.
 
 ![Solicitação de Ataques de Sinalizadores WAF do Painel de Ferramentas ELK](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
@@ -327,7 +327,7 @@ Além disso, a variável **Distribuição de Sinalizadores WAF e Ataques princip
 
 ### Análise abrangente
 
-No quadro acima _análise_ seções, você aprendeu a analisar os resultados da **regra específica** usando a ferramenta painel. Você pode explorar ainda mais a análise dos resultados usando outros painéis de painel, incluindo:
+No quadro acima _análise_ seções, você aprendeu a analisar os resultados de regras específicas usando a ferramenta dashboard. Você pode explorar ainda mais a análise dos resultados usando outros painéis de painel, incluindo:
 
 
 - Solicitações analisadas, sinalizadas e bloqueadas

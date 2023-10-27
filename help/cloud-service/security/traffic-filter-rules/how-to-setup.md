@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -118,7 +118,7 @@ Para testar as regras, há várias ferramentas de terceiros disponíveis e sua o
 
 Depois de criar, implantar e testar as regras, é possível analisar os resultados usando **Elasticsearch, Logstash e Kibana (ELK)** ferramentas do painel. Ele pode analisar os logs de CDN do AEM CS, permitindo visualizar os resultados na forma de vários gráficos e tabelas.
 
-As ferramentas do painel de controle podem ser clonadas diretamente do [Repositório GitHub da AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e siga as etapas para instalar e carregar o **regras de filtro de tráfego (incluindo WAF)** painel.
+As ferramentas do painel de controle podem ser clonadas diretamente do [Repositório GitHub da AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e siga as etapas para instalar e carregar o **Regras de filtro de tráfego (incluindo WAF)** painel.
 
 - Depois de carregar o painel de amostra, a página de ferramenta do painel Elástico deve ser semelhante ao seguinte:
 
