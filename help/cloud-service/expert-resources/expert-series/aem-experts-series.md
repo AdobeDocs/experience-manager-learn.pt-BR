@@ -5,16 +5,14 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
 
-# Série para especialistas da Adobe Experience Manager as a Cloud Service
-
-![Série para especialistas em AEM](./assets/masthead.png)
+# Série Especialistas as a Cloud Service AEM
 
 Saiba mais sobre o Adobe Experience Manager (AEM) as a Cloud Service dos engenheiros especialistas da Adobe que o criaram e da equipe de serviços profissionais que o fornece. Junte-se a especialistas do Adobe para explorar o que é o AEM, como ele é o mesmo e diferente do as a Cloud Service 6 e como migrar do AEM AEM AEM 6 para o as a Cloud Service.
 
@@ -23,7 +21,7 @@ Saiba mais sobre o Adobe Experience Manager (AEM) as a Cloud Service dos engenhe
 
 ## Introdução ao AEM as a Cloud Service
 
-Saiba mais sobre os fundamentos do AEM como um Cloud Services e como ele difere do AEM 6, dos arquitetos em nuvem sênior da engenharia Adobe.
+Saiba mais sobre os fundamentos do AEM como um Cloud Service e como ele difere do AEM 6, dos arquitetos em nuvem sênior da engenharia Adobe.
 
 <table>
   <tr>
@@ -162,7 +160,7 @@ Planeia a transição do AEM 6 para o AEM as a Cloud Service? Saiba mais sobre a
 </table>
 
 
-## Recursos do AEM as a Cloud Services
+## Recursos do AEM as a Cloud Service
 
 Saiba mais sobre os recursos exclusivos do AEM de especialistas em Adobe as a Cloud Service.
 
@@ -178,7 +176,7 @@ Saiba mais sobre os recursos exclusivos do AEM de especialistas em Adobe as a Cl
       </div>
       <p>
         <br/>
-        Saiba mais sobre os microsserviços do Asset compute do AEM Assets, como eles substituem o processamento de ativos do AEM 6 e como eles podem ser estendidos para gerar representações de ativos personalizados.
+        Saiba mais sobre os microsserviços do Asset compute da AEM Assets, como eles substituem o processamento de ativos do AEM 6 e como eles podem ser estendidos para gerar representações de ativos personalizados.
       </p>
    </td>   
    <td>
@@ -198,7 +196,7 @@ Saiba mais sobre os recursos exclusivos do AEM de especialistas em Adobe as a Cl
   </tr>
 </table>
 
-## Precisa de ajuda com AEM como um Cloud Services?
+## Precisa de ajuda com AEM como um Cloud Service?
 
 Saiba como depurar e solucionar problemas do AEM as a Cloud Service e do AEM SDK dos especialistas!
 
