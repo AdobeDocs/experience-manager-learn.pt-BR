@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
-
 # Proteção de sites com regras de filtro de tráfego (incluindo regras WAF)
 
 Saiba mais sobre **regras de filtro de tráfego**, incluindo a sua subcategoria de **Regras do WAF (Web Application Firewall)** no AEM as a Cloud Service (AEMCS). Leia sobre como criar, implantar e testar as regras. Além disso, analise os resultados para proteger seus sites de AEM.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425401?quality=12&learn=on)
 
 ## Visão geral
 
@@ -41,6 +43,5 @@ Convidamos você a fornecer feedback ou fazer perguntas sobre as regras do filtr
 ## Próxima etapa
 
 Saiba mais [como configurar](./how-to-setup.md) Use o recurso para criar, implantar e testar regras de filtro de tráfego. Leia sobre como configurar o **Elasticsearch, Logstash e Kibana (ELK)** empilhe as ferramentas do painel para analisar os resultados dos logs de CDN do AEM CS.
-
 
 
