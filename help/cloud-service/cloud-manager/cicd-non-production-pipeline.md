@@ -16,11 +16,11 @@ exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
-# Utilização do Adobe Cloud Manager - pipeline de produção de CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
+# Uso do Adobe Cloud Manager - Pipeline de produção CI/CD {#using-adobe-cloud-manager-ci-cd-production-pipeline}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_nonprodpipeline"

@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ---
 
-# Imagens otimizadas com AEM Headless {#images-with-aem-headless}
+# Imagens otimizadas com o AEM Headless {#images-with-aem-headless}
 
 As imagens são um aspecto crítico do [desenvolver experiências ricas e atraentes com o AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). O AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
 
