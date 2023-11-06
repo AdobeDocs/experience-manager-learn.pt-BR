@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ Saiba como exportar fragmento de experiência do AEM como ofertas do Adobe Targe
 
 A exportação do fragmento de experiência para o Adobe Target sem as permissões corretas no Adobe Admin Console resulta no seguinte erro no serviço do autor do AEM:
 
-    ![Erro de interface de API do Target](assets/error-target-offer.png)
+![Erro na interface da API do Target](assets/error-target-offer.png)
 
 ... e as seguintes mensagens de log no `aemerror` registro:
 
-    ![Erro de console da API do Target](assets/target-console-error.png)
+![Erro de console da API de destino](assets/target-console-error.png)
 
 #### Resolução
 
