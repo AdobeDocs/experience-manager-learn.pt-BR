@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 21%
+source-wordcount: '1053'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 21%
    + [Imagens](./aem-trials/images.md)
 + Introdução ao AEM as a Cloud Service{#introduction}
    + [O que é o AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
-   + [Evolução](./introduction/evolution.md)
    + [Arquitetura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Estratégia e liderança de pensamento{#strategy}
@@ -138,7 +137,7 @@ ht-degree: 21%
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
    + [Grupos de usuários do Adobe IMS](./accessing/adobe-ims-user-groups.md)
-   + [Perfis de produto do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
+   + [Perfis de produtos do Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [Usuários, grupos e permissões do AEM](./accessing/aem-users-groups-and-permissions.md)
    + [Configuração do acesso ao AEM](./accessing/walk-through.md)
 + Autenticação{#authentication}
