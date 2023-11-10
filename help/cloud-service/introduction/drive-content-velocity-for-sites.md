@@ -3,9 +3,9 @@ title: Como impulsionar a velocidade do conteúdo com o Adobe Experience Manager
 description: Saiba mais sobre a velocidade do conteúdo e seu valor nas empresas. Mergulhe em quatro princípios de implementação efetiva e as armadilhas que devem ser observadas ao longo do caminho.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Estes são quatro marcos que devem ser construídos durante a fase de execução
 Em geral, por assim dizer, é melhor seguir estas regras básicas:
 
 * Procura que pelo menos 80% das experiências sejam [Componentes prontos para uso](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Sistemas de estilo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Por meio do depoimento de clientes, isso não só criará uma base mais escalável, permitindo que você aproveite o roteiro do produto, como também aumentará a velocidade em até 50%.
-* [Configuração](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afaste-se dos modelos estáticos. Ao configurar modelos editáveis (necessários para usar sistemas de estilo), é necessário atribuir um autor de modelo que controlará os diferentes estilos disponíveis para uma página ou seção do site. Essas atualizações no próprio modelo são mínimas em termos de trabalho diário.
+* [Configurar modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afaste-se dos modelos estáticos. Ao configurar modelos editáveis (necessários para usar sistemas de estilo), é necessário atribuir um autor de modelo que controlará os diferentes estilos disponíveis para uma página ou seção do site. Essas atualizações no próprio modelo são mínimas em termos de trabalho diário.
 * Uso [Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) possível. Embora o caso de uso geral dos fragmentos de experiência seja a distribuição de vários canais, eles também podem ser usados com eficiência em todo o site para preencher o conteúdo em uma área de uma vez, em vez de atualizar o conteúdo manualmente em várias áreas. Isso pode economizar tempo e esforço excessivos e liberar a equipe de criação para trabalhar em experiências mais específicas e avançadas.
 * Crie experiências mais ricas. Ao utilizar a regra 80/20 (conforme acima), uma organização pode utilizar CSS específico e desenvolvimento de back-end para experiências selecionadas, em vez de atualizações de manutenção comuns.
 * Opte por uma base escalável e uma reformulação rápida. Os sistemas de estilo executados com base em uma implementação moderna podem permitir uma reformulação eficiente da marca em toda a plataforma. A atualização de vários setores de conteúdo por meio da alteração de capas CSS permite testes e validação rápidos e aumenta a qualidade experimental do site, com impacto direto no ROI.

@@ -8,9 +8,9 @@ role: Admin
 level: Beginner
 thumbnail: xx.jpg
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 4%
 
 ## Visão geral
 
-Este documento ajudará você a entender como o AEM lida com urls personalizados e algumas técnicas adicionais usando regras de regravação para mapear o conteúdo mais próximo da borda do delivery
+Este documento ajuda você a entender como o AEM lida com urls personalizados e algumas técnicas adicionais usando regras de regravação para mapear o conteúdo mais próximo da borda do delivery
 
 ## O que são URLs personalizados
 
-Quando você tem conteúdo em uma estrutura de pastas lógica, ele nem sempre está em um URL de fácil referência.  URLs personalizados são como atalhos.  URLs menores ou exclusivos que fazem referência ao local em que o conteúdo real está.
+Quando você tem conteúdo em uma estrutura de pastas lógica, ele nem sempre está em um URL de fácil referência. URLs personalizados são como atalhos. URLs menores ou exclusivos que fazem referência ao local em que o conteúdo real está.
 
 Um exemplo: `/aboutus` apontado para `/content/we-retail/us/en/about-us.html`
 
-Os AEM Author têm a opção de definir as propriedades de url personalizado em um conteúdo no AEM e publicá-lo.
+Os autores do AEM têm a opção de definir propriedades de url personalizado em um conteúdo no AEM e publicá-lo.
 
-Para que esse recurso funcione, você precisará ajustar os filtros do Dispatcher para permitir a personalização.  Isso não é aceitável para ajustar os arquivos de configuração do Dispatcher na taxa que os autores precisariam para configurar essas entradas de página personalizada.
+Para que esse recurso funcione, é necessário ajustar os filtros do Dispatcher para permitir a personalização. Isso não é aceitável para ajustar os arquivos de configuração do Dispatcher na taxa que os autores teriam para configurar essas entradas de página personalizada.
 
 Por esse motivo, o módulo Dispatcher tem um recurso para permitir automaticamente qualquer item listado como personalizado na árvore de conteúdo.
 
@@ -42,9 +42,9 @@ Por esse motivo, o módulo Dispatcher tem um recurso para permitir automaticamen
 
 ### Criação de URLs personalizados
 
-O autor visita uma página no AEM e visita as propriedades da página e adiciona as entradas na seção url personalizado.
+O autor visita uma página no AEM, clica nas propriedades da página e adiciona entradas no _Vanity URL_ seção. Ao salvar as alterações e ativar a página, a personalização é atribuída à página.
 
-Depois que elas salvam as alterações e ativam a página, a personalização é atribuída a esta página.
+Os autores também podem selecionar a variável _Redirecionar URL personalizado_ caixa de seleção ao adicionar _Vanity URL_ entradas, isso faz com que urls personalizados se comportem como redirecionamentos 302. Isso significa que o navegador é instruído a ir para o novo URL (via `Location` cabeçalho de resposta) e o navegador faz uma nova solicitação para o novo URL.
 
 #### Interface de toque:
 
@@ -58,36 +58,36 @@ Depois que elas salvam as alterações e ativam a página, a personalização é
 
 ![Caixa de diálogo Propriedades da página da interface clássica](assets/disp-vanity-url/aem-page-properties-classic.png "aem-page-properties-classic")
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Ela é muito propensa a problemas de espaço.
 
-Entradas personalizadas são globais para todas as páginas, esta é apenas uma das falhas que você precisa planejar para soluções alternativas que explicaremos mais tarde.
-</div>
+>[!NOTE]
+>
+>Entenda que isso é propenso a problemas de espaço de nome. Entradas personalizadas são globais para todas as páginas, esta é apenas uma das falhas que você precisa planejar para soluções alternativas que explicaremos mais tarde.
+
 
 ## Resolução/mapeamento de recursos
 
 Cada entrada personalizada é uma entrada de mapa de sling para um redirecionamento interno.
 
-Esses mapas são visíveis ao visitar o console Felix de instâncias de AEM ( `/system/console/jcrresolver` )
+Os mapas são visíveis ao visitar o console Felix de instâncias do AEM ( `/system/console/jcrresolver` )
 
 Esta é uma captura de tela de uma entrada de mapa criada por uma entrada personalizada:
 ![captura de tela do console de uma entrada personalizada nas regras de resolução de recursos](assets/disp-vanity-url/vanity-resource-resolver-entry.png "vanity-resource-resolver-entry")
 
-No exemplo acima, quando solicitamos que a instância AEM visite `/aboutus` ele resolverá para `/content/we-retail/us/en/about-us.html`
+No exemplo acima, quando solicitamos que a instância AEM visite `/aboutus` resolve para `/content/we-retail/us/en/about-us.html`
 
 ## Filtros de permissão automática do Dispatcher
 
 O Dispatcher em um estado seguro filtra solicitações no caminho `/` por meio do Dispatcher, pois essa é a raiz da árvore do JCR.
 
-É importante garantir que os editores só estejam permitindo o conteúdo do `/content` e outros caminhos seguros etc.  e não caminhos como `/system` etc.
+É importante garantir que os editores só estejam permitindo o conteúdo do `/content` e outros caminhos seguros e assim por diante, e não caminhos como `/system`.
 
 Aqui estão os urls personalizados na pasta base do `/` então, como permitimos que eles alcancem os editores enquanto permanecem seguros?
 
-O Dispatcher simples tem um mecanismo de permissão de filtro automático e você precisa instalar um pacote AEM e configurar o Dispatcher para apontar para a página desses pacotes.
+O Dispatcher simples tem um mecanismo de permissão de filtro automático e você precisa instalar um pacote AEM e configurar o Dispatcher para apontar para a página desse pacote.
 
 [https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
-O Dispatcher tem uma seção de configuração no arquivo farm:
+O Dispatcher tem uma seção de configuração em seu arquivo farm:
 
 ```
 /vanity_urls { 
@@ -99,7 +99,7 @@ O Dispatcher tem uma seção de configuração no arquivo farm:
 
 Essa configuração instrui o Dispatcher a buscar esse URL da instância do AEM que ele envia a cada 300 segundos para buscar a lista de itens que queremos permitir.
 
-Ele armazena seu cache da resposta no `/file` argumento, portanto, neste exemplo `/tmp/vanity_urls`
+Ele armazena o cache da resposta no `/file` argumento, portanto, neste exemplo `/tmp/vanity_urls`
 
 Portanto, se você visitar a instância do AEM no URI, verá o que ela encontra:
 ![captura de tela do conteúdo renderizado em /libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
@@ -118,17 +118,17 @@ Vamos ver um exemplo da entrada personalizada `/aboutus` ao seu conteúdo `/cont
 RewriteRule ^/aboutus /content/we-retail/us/en/about-us.html [PT,L,NC]
 ```
 
-Essa regra procurará a personalização `/aboutus` e obtenha o caminho completo do renderizador com o sinalizador PT (Pass Through).
+Essa regra busca a personalização `/aboutus` e obtenha o caminho completo do renderizador com o sinalizador PT (Pass Through).
 
-Ele também deixará de processar todas as outras regras do sinalizador L (Last), o que significa que não precisará atravessar uma enorme lista de regras, como a Resolução JCR precisa fazer.
+Ele também para de processar todas as outras regras do sinalizador L (Last), o que significa que não precisa atravessar uma enorme lista de regras, como a Resolução JCR precisa fazer.
 
-Além de não ter que fazer o proxy da solicitação e esperar que o editor AEM responda a esses dois elementos desse método, ele tem um desempenho muito maior.
+Além de não ter que fazer o proxy da solicitação e esperar que o editor do AEM responda a esses dois elementos desse método, ele tem um desempenho muito maior.
 
-Em seguida, a cereja do bolo aqui é o sinalizador NC (Sem distinção entre maiúsculas e minúsculas), o que significa se um cliente acessar o URI com `/AboutUs` em vez de `/aboutus` ainda funcionará e permitirá a busca da página correta.
+Em seguida, a cereja do bolo aqui é o sinalizador NC (Sem distinção entre maiúsculas e minúsculas), o que significa se um cliente digita o URI com `/AboutUs` em vez de `/aboutus` ainda funciona.
 
 Para criar uma regra de regravação para fazer isso, você criaria um arquivo de configuração no Dispatcher (exemplo: `/etc/httpd/conf.d/rewrites/examplevanity_rewrite.rules`) e incluí-lo no `.vhost` arquivo que manipula o domínio que precisa desses urls personalizados para serem aplicados.
 
-Este é um trecho de código de exemplo da inclusão dentro de `/etc/httpd/conf.d/enabled_vhosts/we-retail.vhost`
+Este é um trecho de código de exemplo de inclusão dentro `/etc/httpd/conf.d/enabled_vhosts/we-retail.vhost`
 
 ```
 <VirtualHost *:80> 
@@ -147,23 +147,26 @@ Este é um trecho de código de exemplo da inclusão dentro de `/etc/httpd/conf.
 ## Que método e onde
 
 Usar o AEM para controlar entradas personalizadas tem os seguintes benefícios
+
 - Os autores podem criá-los dinamicamente
 - Eles vivem com o conteúdo e podem ser empacotados com o conteúdo
 
 Usar `mod_rewrite` controlar entradas personalizadas tem os seguintes benefícios
+
 - Solução de conteúdo mais rápida
 - Mais próximo da borda das solicitações de conteúdo do usuário final
 - Mais extensibilidade e opções para controlar como o conteúdo é mapeado em outras condições
 - Pode não diferenciar maiúsculas de minúsculas
 
 Use ambos os métodos, mas aqui estão os conselhos e critérios que devem ser usados quando:
+
 - Se a personalização for temporária e tiver níveis baixos de tráfego planejado, use o recurso integrado do AEM
 - Se a personalização for um endpoint básico que não muda com frequência e tem uso frequente, use um `mod_rewrite` regra.
 - Se o namespace personalizado (por exemplo: `/aboutus`) deve ser reutilizada para muitas marcas na mesma instância do AEM e, em seguida, usar regras de regravação.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
 
-Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura.  Uso de urls personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
+Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Uso de urls personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 </div>
 
 [Próximo -> Logon comum](./common-logs.md)
