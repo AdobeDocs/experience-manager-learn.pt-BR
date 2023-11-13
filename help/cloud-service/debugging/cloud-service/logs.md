@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 0565cf592a437acf5080dab1d3ee2d410997f01d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1007'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ As IDs de pod são fornecidas em cada declaração de log, permitindo a filtrage
 
 ## Arquivos de log personalizados
 
-O AEM as a Cloud Services não é compatível com arquivos de log personalizados, no entanto, ele é compatível com registro personalizado.
+O AEM as a Cloud Service não é compatível com arquivos de log personalizados, no entanto, ele é compatível com registro personalizado.
 
 Para que os registros Java fiquem disponíveis no AEM as a Cloud Service (via [Cloud Manager](#cloud-manager) ou [CLI do Adobe I/O](#aio)), as declarações de log personalizadas devem ser gravadas no `error.log`. Logs gravados em logs nomeados personalizados, como `example.log`, não poderão ser acessados pelo AEM as a Cloud Service.
 
@@ -47,7 +47,7 @@ Os logs podem ser gravados no `error.log` usando uma propriedade de configuraç�
 }
 ```
 
-## Logs do serviço de Autor e Publicação do AEM
+## Logs do serviço de Autor e Publicação no AEM
 
 Os serviços de Autor e Publicação do AEM fornecem logs do servidor de tempo de execução do AEM:
 
@@ -58,9 +58,9 @@ Os serviços de Autor e Publicação do AEM fornecem logs do servidor de tempo d
 + `aemaccess` lista solicitações HTTP para o serviço AEM com detalhes
 + `aemrequest` lista solicitações HTTP feitas ao serviço AEM e suas respostas HTTP correspondentes
 
-## Publicar logs do Dispatcher no AEM
+## Logs do Dispatcher de publicação do AEM
 
-Somente o AEM Publish Dispatcher fornece logs do Dispatcher e do servidor Web do Apache, pois esses aspectos só existem no nível de publicação do AEM e não no nível de criação do AEM.
+Somente o Dispatcher de publicação do AEM fornece logs do Apache Web Server e do Dispatcher, pois esses aspectos só existem no nível de publicação do AEM, e não no nível de criação do AEM.
 
 + `httpdaccess` lista solicitações HTTP feitas ao Apache Web Server/Dispatcher do serviço AEM.
 + `httperror`  lista mensagens de log do Apache Web Server e ajuda com a depuração de módulos Apache compatíveis, como `mod_rewrite`.
@@ -203,7 +203,7 @@ Isso requer a atualização das configurações de OSGi de registro para usar os
 Esta abordagem tem desvantagens que devem ser tidas em conta:
 
 + [Um número limitado de variáveis de ambiente é permitido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables)e criar uma variável para gerenciar o nível de log usará um.
-+ As variáveis de ambiente só podem ser gerenciadas de forma programática via [CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [APIs HTTP do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ As variáveis de ambiente podem ser gerenciadas de forma programática via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), e [APIs HTTP do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + As alterações nas variáveis de ambiente devem ser redefinidas manualmente por uma ferramenta compatível. Esquecer de redefinir um ambiente de alto tráfego, como Produção, para um nível de registro menos detalhado pode inundar os registros e afetar o desempenho do AEM.
 
 _As variáveis específicas do ambiente não funcionam para as configurações de log do Apache Web Server ou Dispatcher, pois não são definidas por meio da configuração OSGi._
