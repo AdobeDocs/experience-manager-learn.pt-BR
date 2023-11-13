@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1231'
 ht-degree: 1%
 
 ---
@@ -41,11 +41,11 @@ Para baixar os logs de CDN, siga estas etapas:
 
 1. Para um ambiente AEMCS desejado, selecione **Baixar logs** no menu reticências.
 
-   ![Baixar logs - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="200" zoomable="yes"}
+   ![Baixar logs - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
 1. No **Baixar logs** , selecione a **Publish** no menu suspenso, depois clique no ícone de download ao lado da guia **cdn** linha.
 
-   ![Logs CDN - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="200" zoomable="yes"}
+   ![Logs CDN - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
 
 Se o arquivo de log baixado for de _hoje_ a extensão do arquivo é `.log` caso contrário, para arquivos de log anteriores, a extensão será `.log.gz`.
@@ -71,11 +71,11 @@ Para identificar os principais detalhes, vamos usar o [AEMCS-CDN-Log-Analysis-EL
 
    1. Abra o **Taxa de acertos do cache do CDN** painel clicando em Menu do Hamburgo > Analytics > Painel > Taxa de acertos do cache do CDN.
 
-      ![Taxa de acertos do cache CDN - Painel Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="200" zoomable="yes"}
+      ![Taxa de acertos do cache CDN - Painel Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
    1. Selecione o intervalo de tempo desejado no canto superior direito.
 
-      ![Intervalo de tempo - Painel de Kibana](assets/cdn-logs-analysis/time-range.png){width="200" zoomable="yes"}
+      ![Intervalo de tempo - Painel de Kibana](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
 
    1. A variável **Taxa de acertos do cache do CDN** O painel de controle é autoexplicativo.
 
@@ -83,14 +83,14 @@ Para identificar os principais detalhes, vamos usar o [AEMCS-CDN-Log-Analysis-EL
       - Taxas de cache por tipo de cache
       - Contagens de cache por tipo de cache
 
-      ![Análise da solicitação total - Painel Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="200" zoomable="yes"}
+      ![Análise da solicitação total - Painel Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="500" zoomable="yes"}
 
    1. A variável _Análise por solicitação ou tipos MIME_ exibe os seguintes detalhes:
       - Taxas de cache por tipo de cache
       - Contagens de cache por tipo de cache
       - Principais URLs MISS e PASS
 
-      ![Análise por solicitação ou tipos MIME - Painel Kibana](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="200" zoomable="yes"}
+      ![Análise por solicitação ou tipos MIME - Painel Kibana](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="500" zoomable="yes"}
 
 #### Filtrar por nome de ambiente ou ID de programa
 
@@ -98,11 +98,11 @@ Para filtrar os logs assimilados por nome de ambiente, siga as etapas abaixo:
 
 1. No painel Taxa de acertos do cache CDN, clique no **Adicionar filtro** ícone.
 
-   ![Filtro - Painel Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtro - Painel Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. No **Adicionar filtro** , selecione a `aem_env_name.keyword` no menu suspenso e `is` operador e nome de ambiente desejado para o próximo campo e, por fim, clique em _Adicionar filtro_.
 
-   ![Adicionar filtro - Painel Kibana](assets/cdn-logs-analysis/add-filter.png){width="200" zoomable="yes"}
+   ![Adicionar filtro - Painel Kibana](assets/cdn-logs-analysis/add-filter.png){width="500" zoomable="yes"}
 
 #### Filtrar por nome de host
 
@@ -110,11 +110,11 @@ Para filtrar os logs assimilados por nome de host, siga as etapas abaixo:
 
 1. No painel Taxa de acertos do cache CDN, clique no **Adicionar filtro** ícone.
 
-   ![Filtro - Painel Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtro - Painel Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. No **Adicionar filtro** , selecione a `host.keyword` no menu suspenso e `is` operador e nome de host desejado para o próximo campo e, por fim, clique em _Adicionar filtro_.
 
-   ![Filtro de host - Painel do Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="200" zoomable="yes"}
+   ![Filtro de host - Painel do Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
 
 Da mesma forma, adicione mais filtros ao painel com base nos requisitos de análise.
 
@@ -127,7 +127,7 @@ Para acelerar a análise de registros CDN, baixe o [AEM-as-a-CloudService - Aná
 O arquivo baixado `aemcs_cdn_logs_analysis.ipynb` O arquivo &quot;Interative Python Notebook&quot; é autoexplicativo, no entanto, os principais destaques de cada seção são:
 
 - **Instalar bibliotecas adicionais**: instala o `termcolor` e `tabulate` Bibliotecas Python.
-- **Carregar arquivo de log do CDN**: carrega o arquivo de log do CDN usando `log_file` valor da variável, atualize seu valor. Também transforma esse log de CDN em [Quadro de dados Pandas](https://pandas.pydata.org/docs/reference/frame.html).
+- **Carregar logs CDN**: carrega o arquivo de log do CDN usando `log_file` valor da variável, atualize seu valor. Também transforma esse log de CDN em [Quadro de dados Pandas](https://pandas.pydata.org/docs/reference/frame.html).
 - **Realizar análise**: o primeiro bloco de código é _Exibir resultado da análise para total, HTML, JS/CSS e solicitações de imagem_, ele fornece gráficos de porcentagem de taxa de ocorrência do cache, de barras e de pizza.
 O segundo bloco de código é _Os 5 principais URLs de solicitação de MISS e PASS para HTML, JS/CSS e Imagem_, ele exibe URLs e suas contagens no formato de tabela.
 
@@ -141,33 +141,33 @@ Para executar o Jupyter Notebook no Experience Platform, siga estas etapas:
 
 1. Faça logon na [Adobe Experience Cloud](https://experience.adobe.com/), na Página inicial > **Acesso rápido** seção > clique no botão **Experience Platform**
 
-   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="200" zoomable="yes"}
+   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
 1. Na página inicial do Adobe Experience Platform > seção Ciência de dados >, clique no link **Notebooks** item de menu. Para iniciar o ambiente do Jupyter Notebooks, clique no link **JupyterLab** guia.
 
-   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="200" zoomable="yes"}
+   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="500" zoomable="yes"}
 
 1. No menu JupyterLab, usando o **Fazer upload de arquivos** , carregue o arquivo de log CDN baixado e `aemcs_cdn_logs_analysis.ipynb` arquivo.
 
-   ![Upload de arquivos - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="200" zoomable="yes"}
+   ![Upload de arquivos - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="500" zoomable="yes"}
 
 1. Abra o `aemcs_cdn_logs_analysis.ipynb` clicando duas vezes no arquivo.
 
 1. No **Carregar arquivo de log do CDN** do bloco de anotações, atualize a `log_file` valor.
 
-   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="200" zoomable="yes"}
+   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="500" zoomable="yes"}
 
 1. Para executar a célula selecionada e avançar, clique no **Reproduzir** ícone.
 
-   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="200" zoomable="yes"}
+   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
 1. Depois de executar o **Exibir resultado da análise para total, HTML, JS/CSS e solicitações de imagem** célula de código, a saída exibe os gráficos de porcentagem de taxa de ocorrência do cache, barra e pizza.
 
-   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="200" zoomable="yes"}
+   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
 1. Depois de executar o **Os 5 principais URLs de solicitação de MISS e PASS para HTML, JS/CSS e Imagem** célula de código, a saída exibe os 5 principais URLs de solicitação MISS e PASS.
 
-   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/output-top-urls.png){width="200" zoomable="yes"}
+   ![Atualização do Valor do Arquivo de Log do Notebook](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
 Você pode aprimorar o Jupyter Notebook para analisar os logs de CDN com base em seus requisitos.
 
