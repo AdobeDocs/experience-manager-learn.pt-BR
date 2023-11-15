@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 27%
+source-wordcount: '520'
+ht-degree: 26%
 
 ---
 
@@ -17,6 +17,23 @@ ht-degree: 27%
 # Vídeos e Tutorials do AEM Sites {#sites}
 
 + [Visão geral](overview.md)
++ Criação de documentos {#document-authoring}
+   + [Configurar](document-authoring/set-up.md)
+   + [Pré-visualizar e publicar](document-authoring/preview-and-publish.md)
+   + [Estrutura do documento](document-authoring/document-structure.md)
+   + [Blocos e autoblocos](document-authoring/blocks-and-auto-blocks.md)
+   + [Redirecionamentos](document-authoring/redirects.md)
+   + [Metadados em massa](document-authoring/bulk-metadata.md)
+   + [Metadados da página](document-authoring/page-metadata.md)
+   + [Navegação responsiva](document-authoring/responsive-navigation.md)
+   + Como{#how-to}
+      + [Auditoria de documentos](./document-authoring/how-to/document-audit.md)
+      + [Permissões de documento](./document-authoring/how-to/document-permissions.md)
+      + [Versões do documento](./document-authoring/how-to/document-versions.md)
+      + [Fluxos de trabalho de documento](./document-authoring/how-to/document-workflows.md)
+      + [Incorporar iFrames](./document-authoring/how-to/iframes.md)
+      + [Texto alternativo da imagem](./document-authoring/how-to/image-alt-text.md)
+      + [Impedir indexação do mecanismo de pesquisa](./document-authoring/how-to/no-index.md)
 + Criação de página {#page-authoring}
    + [Criação  ](page-authoring/aem-sites-authoring-overview.md)
    + [Navegação](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -52,8 +69,19 @@ ht-degree: 27%
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
    + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
-
++ Edge Delivery Services{#edge-delivery-services}
+   + Desenvolvimento{#developing}
+      + [Pré-requisitos](./edge-delivery-services/developing/prerequisites.md)
+      + [Repositório de conteúdo](./edge-delivery-services/developing/content-repository.md)
+      + [Pré-visualizar e publicar](./edge-delivery-services/developing/preview-and-publish.md)
+      + [AEM Sidekick](./edge-delivery-services/developing/sidekick.md)
+      + [Estrutura do documento](./edge-delivery-services/developing/document-structure.md)
+      + [Desenvolvimento local](./edge-delivery-services/developing/local-development.md)
+      + [Git](./edge-delivery-services/developing/git.md)
+   + Como{#how-to}
+      + [RSS feeds](./edge-delivery-services/how-to/rss.md)
 + Desenvolvimento {#developing}
+   + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR){target=_blank}
