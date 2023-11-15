@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
+source-git-commit: 32d109b534fe63b26530a4b88d202540cf7dff38
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 16%
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento de experiência. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Sites.
 
-<div id="whats-new-section-skip"></div>
+<div id="whats-new-section">
 
 ## Novidades
 
@@ -31,6 +31,7 @@ O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento
 * **[Visão geral da arquitetura do AEM com o Edge Delivery Services (Vídeo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
   *Saiba tudo sobre a arquitetura do AEM as a Cloud Service!*
 
+</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
