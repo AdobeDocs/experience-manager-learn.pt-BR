@@ -14,16 +14,20 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4912087feb69ccbed3c66a34941fa6d083af6319
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # Uso da importação em massa
 
-A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento na nuvem (Armazenamento Azure Blob ou Amazon S3) de maneira segura e eficiente.
+A ferramenta Importação em massa no AEM as a Cloud Service permite que os administradores importem ativos em massa do armazenamento na nuvem de maneira segura e eficiente.
+
+>[!TIP]
+>
+> As fontes de entrada neste vídeo mostram apenas o Armazenamento de blobs do Azure e o Amazon S3; no entanto, as fontes disponíveis continuam a crescer com o tempo. Para obter uma lista completa de fontes de entrada compatíveis, consulte as opções disponíveis no produto ou [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
