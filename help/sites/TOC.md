@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 155790de88f6775a6624637dce3f98a018de4afc
+source-git-commit: 05365ec0d6a42c9697b0d0d076c96bffd2cd40d5
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 26%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 26%
    + [Configurar](document-authoring/set-up.md)
    + [Pré-visualizar e publicar](document-authoring/preview-and-publish.md)
    + [Estrutura do documento](document-authoring/document-structure.md)
-   + [Blocos e autoblocos](document-authoring/blocks-and-auto-blocks.md)
+   + [Conteúdo e seções padrão](document-authoring/default-content-and-sections.md)
    + [Redirecionamentos](document-authoring/redirects.md)
    + [Metadados em massa](document-authoring/bulk-metadata.md)
    + [Metadados da página](document-authoring/page-metadata.md)
