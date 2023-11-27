@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bccaccd386d065720cddfd689cbadc220609b8a8
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1319'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Os seguintes itens são necessários ao configurar a Rede Virtual Privada:
    + Token de acesso (também conhecido como Token do portador)
 + A ID do programa do Cloud Manager
 + As IDs de ambiente do Cloud Manager
-+ Uma rede privada virtual, com acesso a todos os parâmetros de conexão necessários.
++ A **Baseado em Rota** Virtual Private Network, com acesso a todos os parâmetros de conexão necessários.
 
 Para obter mais detalhes, assista à seguinte apresentação de como configurar e obter credenciais da API do Cloud Manager e como usá-las para fazer uma chamada de API do Cloud Manager.
 
@@ -257,7 +257,9 @@ Ao criar conexões HTTP/HTTPS a partir do AEM, ao usar VPN, as conexões HTTP/HT
 
 Ao criar conexões não HTTP/HTTPS (por exemplo, SQL, SMTP e assim por diante) do AEM, a conexão deve ser feita por meio de um nome de host especial fornecido pelo AEM.
 
-| Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para conexões não HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
+| Nome da variável | Utilização | Código Java™ | Configuração OSGi |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | Host proxy para conexões não HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
 As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_HOST` e a porta mapeada (`portForwards.portOrig`), que o AEM roteia para o nome de host externo mapeado (`portForwards.name`) e porta (`portForwards.portDest`).
