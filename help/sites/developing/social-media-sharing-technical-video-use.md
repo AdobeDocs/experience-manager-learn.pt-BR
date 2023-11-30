@@ -2,16 +2,13 @@
 title: Utilização do compartilhamento de mídia social no AEM Sites
 description: Explore a configuração e o uso do componente de Compartilhamento em redes sociais.
 feature: Core Components
-topics: integrations
-audience: developer, implementer
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 569069e8-7964-49f1-96ed-7dfa4f8ed96c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 6%
@@ -37,9 +34,9 @@ Este vídeo explora os seguintes recursos do componente de Compartilhamento em r
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[Externalizador de AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve ser configurado no AEM Author e no AEM Publish para mapear o modo de execução de publicação para o domínio acessível publicamente usado para acessar o AEM Publish.
+[Externalizador de AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve ser configurado no AEM Author e no AEM Publish, para mapear o modo de execução de publicação para o domínio de acesso público usado para acessar o AEM Publish.
 
-Neste vídeo, usamos `/etc/hosts` para falsificação *www.example.com* para resolver para localhost, e use um [configuração básica do Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que www.example.com encare o AEM Publish.
+Neste vídeo, usamos `/etc/hosts` para falsificação *www.example.com* para resolver para localhost, e use um [configuração básica do Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que o www.example.com publique o AEM.
 
 ## Materiais de suporte {#supporting-materials}
 

@@ -2,15 +2,12 @@
 title: Visão geral do vídeo
 description: O Dynamic Media Classic é fornecido com conversão automática de vídeo durante o upload, streaming de vídeo em dispositivos móveis e de desktop e conjuntos de vídeos adaptáveis otimizados para reprodução com base no dispositivo e na largura de banda. Saiba mais sobre vídeo no Dynamic Media Classic e receba uma introdução sobre conceitos e terminologia de vídeo. Aprofunde-se em saber como fazer upload e codificar vídeos, escolher predefinições de vídeo para fazer upload, adicionar ou editar uma predefinição de vídeo, visualizar vídeos em um visualizador de vídeo, implantar vídeo em sites da Web e móveis, adicionar legendas e marcadores de capítulo ao vídeo e publicar visualizadores de vídeo em usuários de desktop e móveis.
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
-doc-type: tutorial
-topics: development, authoring, configuring, videos, video-profiles
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
@@ -210,7 +207,7 @@ As Predefinições de vídeo determinam como o vídeo é codificado ao especific
 
 Calcular a taxa de bits do seu vídeo é um dos fatores menos conhecidos para veicular vídeos na Web, mas possivelmente o mais importante, pois afeta diretamente a experiência do usuário. Se você definir sua taxa de bits como alta demais, terá alta qualidade de vídeo, mas baixo desempenho. Os usuários com conexões de Internet mais lentas são forçados a aguardar enquanto o vídeo é constantemente pausado à medida que é reproduzido. No entanto, se você defini-lo como muito baixo, a qualidade será afetada. Dentro da predefinição de vídeo, o Dynamic Media Classic sugere uma variedade de dados dependendo da largura de banda de destino. Este é um bom ponto de partida.
 
-No entanto, se você quiser descobrir você mesmo, precisará de uma calculadora de taxa de bits. Essa é uma ferramenta comumente usada por profissionais de vídeo e entusiastas para estimar a quantidade de dados que cabe em um determinado fluxo ou mídia (como um DVD).
+Entretanto, se você quiser descobrir você mesmo, precisará de uma calculadora de taxa de bits. Essa é uma ferramenta comumente usada por profissionais de vídeo e entusiastas para estimar a quantidade de dados que cabe em um determinado fluxo ou mídia (como um DVD).
 
 ## Criação de uma predefinição de vídeo personalizada
 
@@ -222,13 +219,13 @@ No entanto, se você quiser descobrir você mesmo, precisará de uma calculadora
 
    - Cada conta de transmissão de vídeo tem dezenas de predefinições prontas para uso e, se você criar suas próprias predefinições personalizadas, também as verá aqui.
    - Você pode filtrar por tipo usando o menu suspenso. As predefinições são divididas em Computador, Dispositivo móvel e Tablet.
-      ![imagem](assets/video-overview/video-overview-4.jpg)
+     ![imagem](assets/video-overview/video-overview-4.jpg)
 
 2. A coluna Ativo permite escolher se deseja exibir todas as predefinições durante o upload ou apenas aquelas escolhidas. Se você estiver nos EUA, convém desmarcar as predefinições PAL europeias e, se estiver no Reino Unido/EMEA, desmarque as predefinições NTSC.
 3. Clique em **Adicionar** botão para criar uma predefinição personalizada. Isso abre o painel Adicionar predefinição de vídeo. O processo aqui é semelhante à criação de uma Predefinição de imagem.
 4. Primeiro, dê a ele um **Nome da predefinição** para aparecer na lista de predefinições. No exemplo acima, esta predefinição é para vídeos tutoriais de captura de tela.
 5. A variável **Descrição** O é opcional, mas fornece aos usuários uma dica de ferramenta que descreve a finalidade dessa predefinição.
-6. A variável **Codificar sufixo do arquivo** é anexado ao final do nome do vídeo que você está criando aqui. Lembre-se de que você terá um Vídeo Principal assim como este vídeo codificado, que é um derivado do principal, e que dois ativos no Dynamic Media Classic não podem ter a mesma ID do ativo.
+6. A variável **Codificar sufixo do arquivo** é anexado ao final do nome do vídeo que você está criando aqui. Lembre-se de que você terá um Vídeo principal e este vídeo codificado, que é um derivado do principal, e que dois ativos no Dynamic Media Classic não podem ter a mesma ID de ativo.
 7. **Dispositivo de reprodução** é onde você escolhe qual formato de arquivo de vídeo deseja (Computador, Celular ou Tablet). Lembre-se de que o Mobile e o Tablet produzem o mesmo formato MP4. O Dynamic Media Classic só precisa saber em qual categoria colocar a predefinição; no entanto, a diferença teórica é que as predefinições de tablet são normalmente para uma conexão mais rápida com a Internet, pois todas oferecem suporte a WiFi.
 8. **Taxa de dados de público alvo** é algo que você terá que descobrir por si mesmo, no entanto, você pode ver um intervalo sugerido na imagem abaixo. Como alternativa, você pode arrastar o controle deslizante até a largura de banda de destino aproximada. Para obter uma figura mais precisa, use uma calculadora de taxa de bits. Há um pouco de tentativa e erro envolvido.
 

@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4854
+jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 1%
@@ -184,7 +185,7 @@ As políticas são um recurso dos modelos de AEM que fornece aos desenvolvedores
 
    Em **Plug-ins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
 
-   ![Ativar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Habilitar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
    Clique em **Concluído** para salvar a atualização de política.
 
@@ -242,7 +243,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    ![Criação final de amostra de capítulo](assets/map-components/final-page.png)
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu a mapear componentes do SPA para componentes do AEM e usou os Componentes principais do React. Você também tem a chance de explorar os recursos responsivos do **Contêiner de layout**.
 

@@ -4,15 +4,12 @@ description: O Apache Sling Models 1.3.0 apresenta o Exportador de modelos Sling
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: development, content-delivery, headless
-activity: understand
-audience: developer, architect
-doc-type: article
+doc-type: Article
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%

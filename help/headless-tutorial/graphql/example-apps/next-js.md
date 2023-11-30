@@ -7,12 +7,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10721
+jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 1%
@@ -38,11 +38,11 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 O aplicativo Next.js funciona com as seguintes opções de implantação de AEM. Todas as implantações exigem [WKND compartilhado v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou [Site WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) para ser instalado no ambiente as a Cloud Service AEM.
 
-Este aplicativo Next.js de exemplo foi projetado para se conectar a __AEM Publish__ serviço.
+Este aplicativo Next.js de exemplo foi projetado para se conectar a __Publicação no AEM__ serviço.
 
-### Requisitos do AEM Author
+### Requisitos do autor do AEM
 
-O Next.js foi projetado para se conectar a __AEM Publish__ e acessar conteúdo desprotegido. O Next.js pode ser configurado para se conectar ao AEM Author por meio do `.env` propriedades descritas abaixo. As imagens veiculadas pelo AEM Author exigem autenticação e, portanto, o usuário que acessar o aplicativo Next.js também deve estar conectado ao AEM Author.
+O Next.js foi projetado para se conectar a __Publicação no AEM__ e acessar conteúdo desprotegido. O Next.js pode ser configurado para se conectar ao AEM Author por meio do `.env` propriedades descritas abaixo. As imagens veiculadas pelo AEM Author exigem autenticação e, portanto, o usuário que acessar o aplicativo Next.js também deve estar conectado ao AEM Author.
 
 ## Como usar
 
@@ -60,7 +60,7 @@ O Next.js foi projetado para se conectar a __AEM Publish__ e acessar conteúdo d
    ...
    ```
 
-   Se você se conectar ao serviço do AEM Author, a autenticação deverá ser fornecida, pois o serviço do AEM Author é seguro por padrão.
+   Se você estiver se conectando ao serviço de Autor do AEM, a autenticação deverá ser fornecida, pois o serviço de Autor do AEM é seguro por padrão.
 
    Para usar um conjunto de contas do AEM local `AEM_AUTH_METHOD=basic` e forneça o nome de usuário e a senha no campo `AEM_AUTH_USER` e `AEM_AUTH_PASSWORD` propriedades.
 

@@ -10,14 +10,14 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 5994
+jira: KT-5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b5a6c1c9-2be1-4622-b85b-a1996fb86a2f
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 1%

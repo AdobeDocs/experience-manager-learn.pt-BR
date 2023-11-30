@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7634
+jira: KT-7634
 thumbnail: kt-7634.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%
@@ -176,7 +177,7 @@ A variável `Home.js` O arquivo deve ter a seguinte aparência:
    + Título: __Aventuras WKND__
    + Tipo/tamanho: __H2__
 
-      ![Caixa de diálogo do componente de Título](./assets/spa-fixed-component/title-dialog.png)
+     ![Caixa de diálogo do componente de Título](./assets/spa-fixed-component/title-dialog.png)
 
 1. Toque __Concluído__ para salvar
 1. Visualizar as alterações no Editor SPA do AEM
@@ -184,7 +185,7 @@ A variável `Home.js` O arquivo deve ter a seguinte aparência:
 
    ![Componente de título no SPA](./assets/spa-fixed-component/title-final.png)
 
-## Parabéns!
+## Parabéns.
 
 Você adicionou um componente fixo e editável ao aplicativo WKND! Agora você sabe como:
 

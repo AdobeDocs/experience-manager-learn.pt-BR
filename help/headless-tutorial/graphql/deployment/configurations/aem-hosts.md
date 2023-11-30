@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10831
+jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Normalmente, um aplicativo AEM headless interage com um único serviço AEM para
 | Tipo de implantação do AEM Headless | Ambiente do AEM | Serviço de AEM |
 |-------------------------------|:---------------------:|:----------------:|
 | Produção | Produção | Publicação |
-| Visualização de criação | Produção | Visualizar |
+| Visualização de criação | Produção | Visualização |
 | Desenvolvimento | Desenvolvimento | Publicação |
 
 Para lidar com permutas do tipo de implantação, cada implantação de aplicativo é criada usando uma configuração que especifica o serviço AEM ao qual se conectar. O host/domínio do serviço AEM configurado é então usado para construir os URLs da API AEM GraphQL e os URLs de imagem. Para determinar a abordagem correta para gerenciar configurações dependentes de criação, consulte a documentação da estrutura do aplicativo AEM Headless (por exemplo, React, iOS, Android™ e assim por diante), pois a abordagem varia de acordo com a estrutura.

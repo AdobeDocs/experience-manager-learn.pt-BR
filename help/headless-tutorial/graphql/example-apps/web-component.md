@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10797
+jira: KT-10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: 701d6d46d716faf51ba5ce3ed31de68928963e54
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 6%
@@ -46,7 +46,7 @@ Este aplicativo de exemplo depende de [basic-tutorial-solution.content.zip](../m
 
 >[!IMPORTANT]
 >
->O componente da Web foi projetado para se conectar a um __AEM Publish__ ambiente, no entanto, ele poderá obter conteúdo do Autor do AEM se a autenticação for fornecida no [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) arquivo.
+>O componente da Web foi projetado para se conectar a um __Publicação no AEM__ ambiente, no entanto, ele poderá obter conteúdo do autor do AEM se a autenticação for fornecida no [`person.js`](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/web-component/src/person.js#L11) arquivo.
 
 ## Como usar
 
@@ -64,7 +64,7 @@ Este aplicativo de exemplo depende de [basic-tutorial-solution.content.zip](../m
 
 1. Edite o `.../src/person.js` arquivo para incluir os detalhes da conexão AEM:
 
-   No `aemHeadlessService` objeto, atualize o `aemHost` para apontar para o serviço de Publicação do AEM.
+   No `aemHeadlessService` objeto, atualize o `aemHost` para apontar para o serviço de publicação do AEM.
 
    ```plain
    # AEM Server namespace
@@ -77,7 +77,7 @@ Este aplicativo de exemplo depende de [basic-tutorial-solution.content.zip](../m
    queryParamName=name
    ```
 
-   Se estiver se conectando a um serviço do AEM Author, no `aemCredentials` forneça as credenciais de usuário do AEM local.
+   Se você estiver se conectando a um serviço de Autor do AEM, no `aemCredentials` forneça as credenciais de usuário do AEM local.
 
    ```plain
    # For Basic auth, use AEM ['user','pass'] pair (for example, when connecting to local AEM Author instance)
@@ -185,6 +185,6 @@ class PersonInfo extends HTMLElement {
 
 ### Compartilhamento de recursos entre origens (CORS)
 
-Este componente da Web depende de uma configuração do CORS com base em AEM em execução no ambiente AEM de destino e presume que a página de host é executada em `http://localhost:8080` no modo de desenvolvimento e abaixo, há uma amostra da configuração OSGi do CORS para o serviço de autor local do AEM.
+Este componente da Web depende de uma configuração do CORS com base em AEM em execução no ambiente AEM de destino e presume que a página de host é executada em `http://localhost:8080` no modo de desenvolvimento e abaixo, há uma amostra da configuração OSGi do CORS para o serviço local AEM Author.
 
 Revise [configurações de implantação](../deployment/web-component.md) para o respectivo serviço AEM.

@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Intermediate
+doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6187'
 ht-degree: 0%
@@ -262,11 +263,11 @@ Não estamos a promover qualquer instrumento em particular. Mas dê dicas de com
 
 Ou você cria o seu próprio, com base em uma estrutura de armazenamento em cache bem desenvolvida, como [Ehcache](https://www.ehcache.org). Isso pode ser usado para armazenar em cache objetos Java e marcação renderizada (`String` objetos).
 
-Em alguns casos simples, você também pode se dar bem com o uso de mapas de hash simultâneos - você verá rapidamente os limites aqui - na ferramenta ou em suas habilidades. A simultaneidade é tão difícil de ser principal quanto nomear e armazenar em cache.
+Em alguns casos simples, você também pode se dar bem com o uso de mapas de hash simultâneos - você verá rapidamente os limites aqui - na ferramenta ou em suas habilidades. A simultaneidade é tão difícil de dominar quanto a nomeação e o armazenamento em cache.
 
 #### Referências
 
-* [Cache http do ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [Cache http do ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Estrutura de cache do cache do cache do cache](https://www.ehcache.org)
 
 ### Termos básicos

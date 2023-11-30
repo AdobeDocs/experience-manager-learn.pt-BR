@@ -6,10 +6,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-kt: 8507
+jira: KT-8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Quando o formulário é baseado em um modelo de dados de formulário que tem uma
 
 ## Criar uma etapa do processo
 
-Uma etapa do processo é usada em um fluxo de trabalho de AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizada executa o serviço OSGi.
+Uma etapa do processo é usada em um fluxo de trabalho AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizada executa o serviço OSGi.
 
 Os dados enviados estão no formato a seguir. O valor do elemento businessUnits é uma string separada por vírgulas, que precisa ser convertida em uma matriz de string.
 

@@ -3,7 +3,7 @@ title: Aplicativo iOS - exemplo de AEM Headless
 description: Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo do iOS demonstra como consultar conteúdo usando APIs AEM do GraphQL usando consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 3%
@@ -41,7 +41,7 @@ O aplicativo iOS funciona com as seguintes opções de implantação do AEM. Tod
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
 + Configuração local usando [o AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
 
-O aplicativo do iOS foi projetado para se conectar a um __AEM Publish__ ambiente, no entanto, ele poderá obter conteúdo do AEM Author se a autenticação for fornecida na configuração do aplicativo do iOS.
+O aplicativo do iOS foi projetado para se conectar a um __Publicação no AEM__ ambiente, no entanto, ele pode originar conteúdo do AEM Author se a autenticação for fornecida na configuração do aplicativo do iOS.
 
 ## Como usar
 
@@ -52,7 +52,7 @@ O aplicativo do iOS foi projetado para se conectar a um __AEM Publish__ ambiente
    ```
 
 1. Launch [Xcode](https://developer.apple.com/xcode/) e abra a pasta `ios-app`
-1. Modificar o arquivo `Config.xcconfig` arquivo e atualização `AEM_SCHEME` e `AEM_HOST` para corresponder ao serviço de publicação do AEM de destino.
+1. Modificar o arquivo `Config.xcconfig` arquivo e atualização `AEM_SCHEME` e `AEM_HOST` para corresponder ao serviço de publicação do AEM no target.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST

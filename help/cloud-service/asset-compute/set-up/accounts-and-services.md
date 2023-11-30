@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6264
+jira: KT-6264
 thumbnail: 40377.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Todos os serviços da Adobe devem ser acessíveis pela mesma organização de Ad
 
 >[!WARNING]
 >
->Certifique-se de ter acesso a todos os serviços mencionados acima antes de prosseguir com este tutorial.
+>Certifique-se de ter acesso a todos os serviços mencionados acima antes de continuar com este tutorial.
 > 
 > Analise as seções abaixo sobre como definir e provisionar os serviços necessários.
 

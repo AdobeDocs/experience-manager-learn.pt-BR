@@ -5,28 +5,29 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# Capítulo 6 - Expor o conteúdo no AEM Publish para entrega
+# Capítulo 6 - Expor o conteúdo na publicação do AEM para entrega
 
 O capítulo 6 do tutorial do AEM headless abrange garantir que todos os pacotes, a configuração e o conteúdo necessários estejam no AEM Publish para permitir o consumo pelo aplicativo móvel.
 
 ## Publicação de conteúdo para o AEM Content Services
 
-A configuração e o conteúdo criados para orientar os eventos por meio do AEM Content Services devem ser publicados no AEM Publish para que o aplicativo móvel possa acessá-los.
+A configuração e o conteúdo criados para orientar os eventos por meio do AEM Content Services devem ser publicados para AEM Publish, para que o aplicativo móvel possa acessá-los.
 
 Como os Serviços de conteúdo AEM são criados a partir de Configuração (modelos de fragmento de conteúdo, modelos editáveis), Ativos (fragmentos de conteúdo, imagens) e Páginas, todas essas partes desfrutam automaticamente dos recursos de gerenciamento de conteúdo do AEM, incluindo:
 
 * Fluxo de trabalho para revisão e processamento
-* e ativação/desativação para enviar e receber conteúdo dos pontos de acesso do AEM Publish&#39;s AEM Content Services
+* e ativação/desativação para enviar e receber conteúdo dos pontos de acesso do AEM Content Services do AEM Publish do
 
-1. Assegure a **[!DNL WKND Mobile]Pacotes de aplicativos**, listados em [Capítulo 1](./chapter-1.md#wknd-mobile-application-packages), são instalados em **AEM Publish** usar [!UICONTROL Gerenciador de pacotes].
+1. Assegure a **[!DNL WKND Mobile]Pacotes de aplicativos**, listados em [Capítulo 1](./chapter-1.md#wknd-mobile-application-packages), são instalados em **Publicação no AEM** usar [!UICONTROL Gerenciador de pacotes].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
 1. Publicar o **[!DNL WKND Mobile Events API]Modelo editável**
@@ -59,10 +60,11 @@ Como os Serviços de conteúdo AEM são criados a partir de Configuração (mode
 
 ## Verificar publicação do AEM
 
-1. Em um novo navegador da Web, certifique-se de estar desconectado do AEM Publish e solicitar os seguintes URLs (substituindo `http://localhost:4503` para qualquer host:porta em que o AEM Publish estiver sendo executado).
+1. Em um novo navegador da Web, verifique se você está desconectado do AEM Publish e solicite os seguintes URLs (substituindo `http://localhost:4503` para qualquer host:porta em que o AEM Publish estiver sendo executado).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
-   Essas solicitações devem retornar a mesma resposta JSON de quando os pontos de extremidade do autor do AEM correspondentes foram revisados. Caso contrário, verifique se todas as publicações tiveram êxito (verifique as filas de Replicação), a variável [!DNL WKND Mobile] `ui.apps` estiver instalado no AEM Publish e revise as `error.log` para publicação no AEM.
+
+   Essas solicitações devem retornar a mesma resposta JSON de quando os pontos de extremidade do autor do AEM correspondentes foram revisados. Caso contrário, verifique se todas as publicações tiveram êxito (verifique as filas de Replicação), a variável [!DNL WKND Mobile] `ui.apps` for instalado no AEM Publicar e revise as `error.log` para AEM Publish.
 
 ## Próxima etapa
 

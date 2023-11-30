@@ -2,16 +2,16 @@
 title: Componente personalizado
 description: Aborda a criação completa de um componente personalizado da linha de comentários que exibe o conteúdo criado. Inclui o desenvolvimento de um Modelo Sling para encapsular a lógica de negócios para preencher o componente de linha de bytes e o HTL correspondente para renderizar o componente.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4072
+jira: KT-4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 0%
@@ -117,7 +117,7 @@ A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem 
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
    ```
 
-A variável `byline.html` é [revisitado mais tarde](#byline-htl), após a criação do Modelo do Sling. O estado atual do arquivo HTL permite que o componente seja exibido em um estado vazio, no Editor de páginas do AEM Sites, quando ele é arrastado e solto na página.
+A variável `byline.html` é [revisitado mais tarde](#byline-htl), após a criação do Modelo do Sling. O estado atual do arquivo HTL permite que o componente seja exibido em um estado vazio no Editor de páginas do AEM Sites quando ele é arrastado e solto na página.
 
 ### Criar a definição do diálogo {#create-the-dialog-definition}
 
@@ -922,7 +922,7 @@ As expressões são adicionadas por meio de `@` operador na expressão HTL.
 
 ### Exibição condicional do espaço reservado {#conditionally-displaying-the-placeholder}
 
-A maioria dos scripts HTL para componentes AEM usa o **paradigma de espaço reservado** para fornecer uma dica visual aos autores **que indica que um componente foi criado incorretamente e não é exibido no AEM Publish**. A convenção para conduzir essa decisão é implementar um método no modelo Sling de apoio do componente, neste caso: `Byline.isEmpty()`.
+A maioria dos scripts HTL para componentes AEM usa o **paradigma de espaço reservado** para fornecer uma dica visual aos autores **indicando que um componente foi criado incorretamente e não é exibido na publicação do AEM**. A convenção para conduzir essa decisão é implementar um método no modelo Sling de apoio do componente, neste caso: `Byline.isEmpty()`.
 
 A variável `isEmpty()` é chamado no modelo Byline Sling e o resultado (ou melhor, é negativo, através da variável `!` operador) é salvo em uma variável HTL chamada `hasContent`:
 
@@ -1008,7 +1008,7 @@ Para isso, vamos incluir o recurso de byline atual, mas forçar o tipo de recurs
 
 ### Revisão do componente de Subtítulo não estilizado {#reviewing-the-unstyled-byline-component}
 
-1. Depois de implantar a atualização, navegue até o [Guia Ultimate para os Skateparks de Los Angeles ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) ou sempre que você adicionou o componente Subtítulo anteriormente no capítulo.
+1. Depois de implantar a atualização, navegue até o [Guia Ultimate para os Skateparks de Los Angeles](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) ou sempre que você adicionou o componente Subtítulo anteriormente no capítulo.
 
 1. A variável **imagem**, **name**, e **ocupações** agora aparecem e um não estilizado, mas o componente Subtítulo de trabalho está presente.
 
@@ -1089,7 +1089,7 @@ Adicione estilos padrão ao componente Subtítulo.
    >
    > Talvez seja necessário limpar o cache do navegador para garantir que o CSS obsoleto não esteja sendo fornecido e atualizar a página com o componente de Subtítulo para obter o estilo completo.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você criou um componente personalizado do zero usando o Adobe Experience Manager!
 

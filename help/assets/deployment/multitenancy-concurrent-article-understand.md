@@ -1,13 +1,14 @@
 ---
 title: Noções básicas sobre multilocação e desenvolvimento simultâneo
-description: Saiba mais sobre os benefícios, os desafios e as técnicas para gerenciar uma implementação de vários locatários com o Adobe Experience Manager Assets.
+description: Saiba mais sobre os benefícios, desafios e técnicas para gerenciar uma implementação de vários locatários com o Adobe Experience Manager Assets.
 feature: Connected Assets
 version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
+doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%
@@ -132,7 +133,7 @@ Embora uma boa arquitetura e canais de comunicação abertos possam ajudar a evi
 
 ### Recursos compartilhados {#shared-resources}
 
-O AEM é executado em uma única JVM; qualquer aplicativo AEM implantado inerentemente compartilha recursos entre si, além de recursos já consumidos na execução normal do AEM. Dentro do próprio espaço JVM, não há separação lógica de threads, e os recursos finitos disponíveis para o AEM, como memória, CPU e E/S de disco também são compartilhados. Qualquer locatário que consuma recursos inevitavelmente afetará outros locatários do sistema.
+O AEM é executado em uma única JVM; qualquer aplicativo AEM implantado inerentemente compartilha recursos entre si, além de recursos já consumidos na execução normal do AEM. Dentro do próprio espaço JVM, não há separação lógica de threads, e os recursos finitos disponíveis para AEM, como memória, CPU e E/S de disco também são compartilhados. Qualquer locatário que consuma recursos inevitavelmente afetará outros locatários do sistema.
 
 ### Desempenho {#performance}
 

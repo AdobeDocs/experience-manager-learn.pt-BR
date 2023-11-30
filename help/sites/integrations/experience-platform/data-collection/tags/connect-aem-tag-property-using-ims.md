@@ -1,12 +1,8 @@
 ---
 title: Conectar o AEM Sites com a propriedade de tag usando IMS
 description: Saiba como conectar o AEM Sites com a propriedade de tag usando a configuração IMS no AEM. Essa configuração autentica o AEM com a API do Launch e permite que o AEM se comunique por meio das APIs do Launch para acessar as propriedades da tag.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5981
+jira: KT-5981
 thumbnail: 38555.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%

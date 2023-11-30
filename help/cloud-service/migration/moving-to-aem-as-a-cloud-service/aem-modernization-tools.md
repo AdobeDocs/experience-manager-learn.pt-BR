@@ -6,10 +6,10 @@ topic: Migration, Upgrade
 feature: Migration
 role: Developer
 level: Experienced
-kt: 8629
+jira: KT-8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 6%

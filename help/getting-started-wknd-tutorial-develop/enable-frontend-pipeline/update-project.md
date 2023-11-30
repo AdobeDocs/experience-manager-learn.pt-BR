@@ -2,17 +2,17 @@
 title: Atualizar projeto AEM de pilha completa para usar pipeline de front-end
 description: Saiba como atualizar o projeto de AEM de pilha completa para habilitá-lo para o pipeline de front-end, de modo que ele apenas crie e implante os artefatos de front-end.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Há três alterações de configuração relacionadas ao projeto e uma alteraç�
 
    >[!NOTE]
    >
-   >As duas alterações de configuração de &quot;webpack&quot; acima devem ter nomes diferentes de arquivos de saída e pastas, para que possamos diferenciar facilmente entre artefatos de front-end de pipeline clientlib (pilha completa) e gerados por tema (front-end).
+   >As duas alterações de configuração de &quot;webpack&quot; acima devem ter nomes diferentes de arquivos de saída e pastas, para que possamos diferenciar facilmente entre artefatos de front-end de pipeline de clientlib (pilha completa) e de tema gerado (front-end).
    >
    >Como você imaginou, as alterações acima podem ser ignoradas para usar também as configurações de webpack existentes, mas as alterações abaixo são necessárias.
    >
@@ -200,7 +200,7 @@ A variável [Seletor de painéis](https://experienceleague.adobe.com/docs/experi
 
 Se for clicado por engano, é necessário executar novamente os pipelines para garantir que o contrato e as alterações do pipeline de front-end sejam restaurados.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você atualizou o projeto WKND Sites para habilitá-lo para o contrato de pipeline de front-end.
 

@@ -4,12 +4,12 @@ description: No segundo vídeo que aborda a migração de conteúdo, James e Dar
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
-kt: 10258
+jira: KT-10258
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342268.jpeg
 exl-id: 8b31c415-bf12-420f-a81a-6065c56ccbed
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 5%

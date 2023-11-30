@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7635
+jira: KT-7635
 thumbnail: kt-7635.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 1%
@@ -364,7 +365,7 @@ Use o Modo de layout AEM para permitir que ajustemos o tamanho e o layout dos co
    ![Componente de contêiner no SPA](./assets/spa-container-component/localhost-final.png)
 
 
-## Parabéns!
+## Parabéns.
 
 Você adicionou um componente de contêiner que permite que os componentes editáveis sejam adicionados pelos autores ao aplicativo WKND! Agora você sabe como:
 

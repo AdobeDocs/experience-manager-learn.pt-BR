@@ -2,19 +2,19 @@
 title: Token de acesso de desenvolvimento local
 description: Os tokens de acesso de desenvolvimento local do AEM são usados para acelerar o desenvolvimento de integrações com AEM as a Cloud Service que interage programaticamente com os serviços de Autor ou Publicação do AEM por HTTP.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
+doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Desenvolvedores criando integrações que exigem acesso programático ao AEM as 
 
 ![Obter um token de acesso de desenvolvimento local](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-O token de acesso de desenvolvimento local fornece acesso aos serviços de Autor e Publicação do AEM como o usuário que gerou o token, juntamente com suas permissões. Apesar de este ser um token de desenvolvimento, não compartilhe este token ou armazene no controle do código-fonte.
+O Token de acesso de desenvolvimento local fornece acesso aos serviços de publicação e criação do AEM como o usuário que gerou o token, juntamente com suas permissões. Apesar de este ser um token de desenvolvimento, não compartilhe este token ou armazene no controle do código-fonte.
 
 1. Entrada [Adobe Admin Console](https://adminconsole.adobe.com/) certifique-se de que você, o desenvolvedor, é membro de:
    + __Cloud Manager - Desenvolvedor__ Perfil de produto IMS (concede acesso ao Console do desenvolvedor AEM)

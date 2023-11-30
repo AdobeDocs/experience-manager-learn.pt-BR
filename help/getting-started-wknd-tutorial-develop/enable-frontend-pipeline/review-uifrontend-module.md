@@ -2,17 +2,17 @@
 title: Revisar módulo ui.frontend do projeto de pilha completa
 description: Revise o desenvolvimento front-end, a implantação e o ciclo de vida de entrega de um projeto AEM Sites de pilha completa baseado em Maven.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
@@ -70,41 +70,41 @@ Os recursos de front-end são fornecidos aos navegadores da Web por meio de cami
 
    1. `webpack.common` - Contém o __comum__ configuração para instruir o agrupamento e a otimização de recursos WKND. A variável __saída__ A propriedade informa onde emitir os arquivos consolidados (também conhecidos como pacotes JavaScript, mas não para ser confundido com pacotes AEM OSGi) que ela cria. O nome padrão é definido como `clientlib-site/js/[name].bundle.js`.
 
-   ```javascript
-       ...
-       output: {
-               filename: 'clientlib-site/js/[name].bundle.js',
-               path: path.resolve(__dirname, 'dist')
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      output: {
+              filename: 'clientlib-site/js/[name].bundle.js',
+              path: path.resolve(__dirname, 'dist')
+          }
+      ...    
+  ```
 
    1. `webpack.dev.js` contém o __desenvolvimento__ configuração do webpack-dev-serve e aponta para o modelo de HTML a ser usado. Também contém uma configuração de proxy para uma instância do AEM em execução em `localhost:4502`.
 
-   ```javascript
-       ...
-       devServer: {
-           proxy: [{
-               context: ['/content', '/etc.clientlibs', '/libs'],
-               target: 'http://localhost:4502',
-           }],
-       ...    
-   ```
+  ```javascript
+      ...
+      devServer: {
+          proxy: [{
+              context: ['/content', '/etc.clientlibs', '/libs'],
+              target: 'http://localhost:4502',
+          }],
+      ...    
+  ```
 
    1. `webpack.prod.js` contém o __produção__ e usa os plug-ins para transformar os arquivos de desenvolvimento em pacotes otimizados.
 
-   ```javascript
-       ...
-       module.exports = merge(common, {
-           mode: 'production',
-           optimization: {
-               minimize: true,
-               minimizer: [
-                   new TerserPlugin(),
-                   new CssMinimizerPlugin({ ...})
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      module.exports = merge(common, {
+          mode: 'production',
+          optimization: {
+              minimize: true,
+              minimizer: [
+                  new TerserPlugin(),
+                  new CssMinimizerPlugin({ ...})
+          }
+      ...    
+  ```
 
 
 * Os recursos agrupados são movidos para a `ui.apps` módulo usando [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) plug-in, usando a configuração gerenciada no `clientlib.config.js` arquivo.
@@ -150,7 +150,7 @@ Os recursos de front-end implantados por meio do pipeline de pilha completa são
     ....
 ```
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você revisou o módulo ui.frontend do projeto de pilha completa
 

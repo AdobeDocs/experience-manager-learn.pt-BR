@@ -2,7 +2,7 @@
 title: Criar aplicativo de API do Acrobat Sign
 description: O aplicativo de API do Acrobat Sign permite integrar o AEM Forms ao Acrobat Sign
 feature: Adaptive Forms,Acrobat Sign
-kt: 6032
+jira: KT-6032
 thumbnail: 38178.jpg
 topic: Development
 role: Admin
@@ -10,7 +10,7 @@ level: Beginner
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0fea826c-b481-4c8f-872f-e429430ed3a6
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 3%

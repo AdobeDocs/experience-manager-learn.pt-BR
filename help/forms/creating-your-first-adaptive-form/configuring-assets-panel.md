@@ -3,13 +3,13 @@ title: Adicionar componentes à seção Ativos
 description: Configurar o layout do Accordion para o painel Ativos.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 4212
+jira: KT-4212
 thumbnail: 22200.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 3%

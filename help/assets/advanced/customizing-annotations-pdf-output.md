@@ -7,8 +7,9 @@ topic: Collaboration
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-03T00:00:00Z
+doc-type: Feature Video
 exl-id: 972737dd-8ca6-47b4-a4ec-b73355c09cec
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%

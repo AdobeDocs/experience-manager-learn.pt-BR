@@ -1,22 +1,17 @@
 ---
 title: Usar a diferença de página com o AEM Sites
-seo-title: Using Page Difference with AEM Sites
 description: Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e com código de cores do que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
-seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
-topics: authoring
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
-kt: 4633
+jira: KT-4633
 thumbnail: 32152.jpg
 topic: Content Management
 feature: Authoring
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%

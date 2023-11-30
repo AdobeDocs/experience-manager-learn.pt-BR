@@ -4,12 +4,12 @@ description: Darin e James discutem sobre a migração para a nuvem AEM e mostra
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
-kt: 10207
+jira: KT-10207
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 6%

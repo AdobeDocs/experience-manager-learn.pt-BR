@@ -6,10 +6,10 @@ topic: Migration, Upgrade
 feature: Migration
 role: Developer
 level: Experienced
-kt: 8919
+jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -32,10 +32,10 @@ A ferramenta Transferência de conteúdo é instalada no AEM 6.3+ e transfere co
 ## Atividades principais
 
 + Baixe o [Ferramenta de transferência de conteúdo mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ Transfira o conteúdo final do AEM Author 6.3+ para o serviço de autor do AEM as a Cloud Service.
++ Transferir conteúdo final do AEM Author 6.3+ para o serviço de autor do AEM as a Cloud Service.
    + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Author contendo o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
-+ Transfira o conteúdo final do AEM Publish 6.3+ para o serviço de publicação as a Cloud Service do AEM.
++ Transferir conteúdo final do AEM Publish 6.3+ para o serviço de publicação do AEM as a Cloud Service.
    + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Publicar contendo o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
 + Opcionalmente, &quot;complemente&quot; o conteúdo no AEM as a Cloud Service, transferindo novo conteúdo desde a última transferência de conteúdo

@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -30,7 +30,7 @@ A seguir há um índice de problemas e erros comuns, juntamente com as resoluç�
 
 + __Erro__: a representação é renderizada de forma incompleta (quando uma imagem) ou está corrompida e não pode ser aberta.
 
-   ![A representação é retornada parcialmente desenhada](./assets/troubleshooting/develop__await.png)
+  ![A representação é retornada parcialmente desenhada](./assets/troubleshooting/develop__await.png)
 
 + __Causa__: O do trabalhador `renditionCallback` for encerrada antes que a representação possa ser completamente gravada `rendition.path`.
 + __Resolução__: revise o código de trabalho personalizado e verifique se todas as chamadas assíncronas foram tornadas síncronas usando `await`.
@@ -84,7 +84,7 @@ A Ferramenta de desenvolvimento de assets compute pode entrar em um estado em qu
 + __Causa:__ Esta funcionalidade não foi implementada
 + __Resolução:__ Faça logon no provedor de armazenamento na nuvem usando as credenciais definidas no `.env`. Localize o contêiner usado pelas Ferramentas de desenvolvimento (também especificado em `.env`), navegue até o __origem__ e exclua todas as imagens de origem. Talvez seja necessário executar as etapas descritas em [Lista suspensa de arquivos de origem incorreta](#source-files-dropdown-incorrect) se os arquivos de origem excluídos continuarem a ser exibidos na lista suspensa, pois podem ser armazenados em cache localmente no &quot;estado do aplicativo&quot; das Ferramentas de desenvolvimento.
 
-   ![Armazenamento de blobs do Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![Armazenamento de blobs do Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Testar{#test}
 
@@ -94,7 +94,7 @@ A Ferramenta de desenvolvimento de assets compute pode entrar em um estado em qu
 + __Causa:__ O trabalhador falhou ao gerar uma representação devido a um erro inesperado, como um erro de sintaxe JavaScript.
 + __Resolução:__ Revisar o da execução de teste `test.log` em `/build/test-results/test-worker/test.log`. Localize a seção nesse arquivo correspondente ao caso de teste com falha e verifique se há erros.
 
-   ![Solução de problemas - Nenhuma representação gerada](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![Solução de problemas - Nenhuma representação gerada](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### O teste gera representação incorreta, causando falha no teste{#tests-generates-incorrect-rendition}
 
@@ -139,11 +139,11 @@ A Ferramenta de desenvolvimento de assets compute pode entrar em um estado em qu
 + __Causa__: um erro no `@adobe/aio-cli-plugin-asset-compute` 1.3.x, resulta em `Ctrl-C` não é reconhecido como um comando de terminação.
 + __Resolução__: Atualizar `@adobe/aio-cli-plugin-asset-compute` para a versão 1.4.1+
 
-   ```
-   $ aio update
-   ```
+  ```
+  $ aio update
+  ```
 
-   ![Solução de problemas - atualização do aio](./assets/troubleshooting/debug__terminate.png)
+  ![Solução de problemas - atualização do aio](./assets/troubleshooting/debug__terminate.png)
 
 ## Implantar{#deploy}
 

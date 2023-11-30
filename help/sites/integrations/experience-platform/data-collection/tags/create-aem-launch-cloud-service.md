@@ -1,12 +1,8 @@
 ---
 title: Criar uma configuração do Launch Cloud Service no AEM Sites
 description: Saiba como criar uma configuração de Cloud Service do Launch no AEM. A configuração do Cloud Service do Launch pode ser aplicada a um site existente, e as bibliotecas de tags podem ser observadas nos ambientes do Author e Publish.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5982
+jira: KT-5982
 thumbnail: 38566.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -34,7 +31,7 @@ Saiba como criar uma configuração do Launch Cloud Service no Adobe Experience 
 
 Crie a configuração do Launch Cloud Service usando as etapas abaixo.
 
-1. No **Ferramentas** selecione **Cloud Services** e clique em **Configurações do Adobe Launch**
+1. No **Ferramentas** selecione **Cloud Service** e clique em **Configurações do Adobe Launch**
 
 1. Selecione a pasta de configuração do site ou selecione **Site da WKND** (se estiver usando um projeto do guia WKND) e clique em **Criar**
 
@@ -44,7 +41,7 @@ Crie a configuração do Launch Cloud Service usando as etapas abaixo.
 
 1. Por fim, clique em **Criar** para concluir os serviços em nuvem do Launch.
 
-   ![Iniciar configuração do Cloud Services](assets/launch-cloud-services-config.png)
+   ![Iniciar configuração do Cloud Service](assets/launch-cloud-services-config.png)
 
 ## Aplicar o Launch Cloud Service ao site
 
@@ -54,7 +51,7 @@ Para carregar a propriedade Tag e suas bibliotecas no site AEM, a configuração
 
 1. Selecione a página raiz do site AEM e clique em **Propriedades**. Em seguida, navegue até o **Avançado** guia e abaixo **Configuração** verifique se o valor da Configuração na nuvem aponta para a configuração específica do site `conf` pasta.
 
-   ![Aplicar configuração do Cloud Services ao site](assets/apply-cloud-services-config-to-site.png)
+   ![Aplicar configuração do Cloud Service ao site](assets/apply-cloud-services-config-to-site.png)
 
 ## Verificar o carregamento da propriedade Tag nas páginas Autor e Publicação
 

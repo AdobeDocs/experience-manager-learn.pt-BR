@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 6296
+jira: KT-6296
 thumbnail: KT-6296.jpg
 badgeIntegration: label="Integração" type="positive"
+doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 2%
@@ -43,7 +44,7 @@ Este tutorial é uma continuação do [Coletar dados de página com o Adobe Anal
 
 * A **Propriedade da tag** com o [Extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) habilitado
 * **Adobe Analytics** ID do conjunto de relatórios de teste/desenvolvimento e servidor de rastreamento. Consulte a documentação a seguir para [criação de um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Depurador Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador configurada com a propriedade da tag carregada no [Site da WKND](https://wknd.site/us/en.html) ou um site AEM com a Camada de dados de Adobe ativada.
+* [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) extensão do navegador configurada com a propriedade da tag carregada no [Site da WKND](https://wknd.site/us/en.html) ou um site AEM com a Camada de dados de Adobe ativada.
 
 ## Inspect do esquema de botão e teaser
 
@@ -316,6 +317,6 @@ Agora que o **CTA clicado** Se uma regra enviar o beacon do Analytics, você pod
    >
    > Se você não visualizar nenhum log do console, verifique se **Registro do console** está marcado em **Tags do Experience Platform** no Experience Platform Debugger.
 
-## Parabéns!
+## Parabéns.
 
 Você acabou de usar a Camada de dados do cliente Adobe orientada por eventos e a Tag no Experience Platform para rastrear os cliques de componentes específicos em um site de AEM.

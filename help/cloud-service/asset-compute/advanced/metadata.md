@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6448
+jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 1%
@@ -47,10 +47,10 @@ Os trabalhadores do Asset compute implementam o contrato de API do trabalhador d
 
 ![Fluxo lógico do trabalhador de metadados de asset compute](./assets/metadata/logical-flow.png)
 
-1. O serviço do Autor do AEM chama o trabalhador de metadados do Asset compute, fornecendo a __(1-A)__ binário original e __(1-B)__ quaisquer parâmetros definidos no Perfil de processamento.
+1. O serviço de Autor do AEM chama o trabalhador de metadados do Asset compute, fornecendo a __(1-A)__ binário original e __(1-B)__ quaisquer parâmetros definidos no Perfil de processamento.
 1. O SDK do Asset compute orquestra a execução do trabalhador de metadados do Asset compute personalizado `renditionCallback(...)` função, derivando uma representação XMP (XML), com base no binário do ativo __(1-A)__ e qualquer parâmetro do perfil de processamento __(1-B)__.
 1. O trabalhador do Asset compute salva a representação XMP (XML) em `rendition.path`.
-1. Os dados do XMP (XML) gravados no `rendition.path` é transportado por meio do SDK do Asset compute para o Serviço do autor do AEM e o expõe como __(4-A)__ uma representação de texto e __4-B)__ persistida no nó de metadados do ativo.
+1. Os dados do XMP (XML) gravados no `rendition.path` é transportado via SDK do Asset compute para o AEM Author Service e o expõe como __(4-A)__ uma representação de texto e __4-B)__ persistida no nó de metadados do ativo.
 
 ## Configurar o manifest.yml{#manifest}
 
@@ -288,7 +288,7 @@ Para revisar os metadados de cores, mapeie dois novos campos no esquema de metad
 
 ![Esquema de metadados](./assets/metadata/metadata-schema.png)
 
-1. No serviço do Autor do AEM, acesse __Ferramentas > Ativos > Esquemas de metadados__
+1. No serviço de Autor do AEM, navegue até __Ferramentas > Ativos > Esquemas de metadados__
 1. Navegue até __padrão__ e selecione e edite __imagem__ e adicionar campos de formulário somente leitura para expor os metadados de cores gerados
 1. Adicionar um __Texto em linha única__
    + __Rótulo do campo__: `Colors Family`
@@ -303,7 +303,7 @@ Para revisar os metadados de cores, mapeie dois novos campos no esquema de metad
 
 ![Detalhes do ativo](./assets/metadata/asset-details.png)
 
-1. No serviço do Autor do AEM, acesse __Ativos > Arquivos__
+1. No serviço de Autor do AEM, navegue até __Ativos > Arquivos__
 1. Navegue até a pasta ou subpasta à qual o Perfil de Processamento é aplicado
 1. Carregue uma nova imagem (JPEG, PNG, GIF ou SVG) na pasta ou processe novamente as imagens existentes usando o [Processando perfil](#processing-profile)
 1. Quando o processamento estiver concluído, selecione o ativo e toque em __propriedades__ na barra de ação superior para exibir seus metadados

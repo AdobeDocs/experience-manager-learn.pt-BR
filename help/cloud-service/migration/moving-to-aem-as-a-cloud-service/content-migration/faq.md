@@ -7,10 +7,10 @@ topic: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 11200
+jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2296'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Obtenha respostas para perguntas frequentes sobre a migração de conteúdo para
 ## Terminologia
 
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
-+ **BPA**: [Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
++ **BPA**: [Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=pt-BR)
 + **CTT**: [Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
@@ -36,7 +36,7 @@ Use o modelo abaixo para fornecer mais detalhes ao criar tíquetes de suporte pa
 
 ## Perguntas gerais sobre migração de conteúdo
 
-### P: Quais são os diferentes métodos para migrar o conteúdo para o AEM como Cloud Services?
+### P: Quais são os diferentes métodos para migrar o conteúdo para o AEM como Cloud Service?
 
 Há três métodos diferentes disponíveis
 

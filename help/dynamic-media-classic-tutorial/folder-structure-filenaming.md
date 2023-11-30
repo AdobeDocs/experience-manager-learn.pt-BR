@@ -2,15 +2,13 @@
 title: Determine a estrutura de pastas e a convenção de nomenclatura de arquivos
 description: A nomeação de arquivos talvez seja a decisão mais importante que você tomará ao implementar o Dynamic Media Classic. A estrutura de pastas também é importante. Saiba por que é tão importante e as possíveis abordagens a serem seguidas para a estrutura de pastas e os nomes de arquivos.
 feature: Dynamic Media Classic
-doc-type: tutorial
 activity: develop
-topics: development, authoring, configuring, architecture
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -77,9 +75,9 @@ Este é um sistema muito simples, e bom se você tem necessidades modestas. No e
 | SKU/PID | Categoria | Nome de arquivo | ID do ativo |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | Alternar visualizações | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
-|  | Exibições coloridas | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
-|  | Amostras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Conjunto de imagens ou Conjunto de amostras |  | AA123 ou AA123_SET | — |
+|         | Exibições coloridas | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
+|         | Amostras | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | Conjunto de imagens ou Conjunto de amostras |                                             | AA123 ou AA123_SET | — |
 
 Ao lidar com coleções definidas, como Conjuntos de imagens e Conjuntos de amostras, o próprio conjunto também deve ter um nome exclusivo. Nesse caso, o conjunto pode receber o SKU base como seu nome ou o SKU com uma extensão &quot;_SET&quot;.
 

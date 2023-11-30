@@ -2,18 +2,17 @@
 title: Integrar um SPA | Introdução ao SPA Editor e Angular do AEM
 description: Entenda como o código-fonte de um aplicativo de página única (SPA) escrito no Angular pode ser integrado a um projeto do Adobe Experience Manager (AEM). Saiba como usar ferramentas modernas de front-end, como a ferramenta CLI do Angular, para desenvolver rapidamente o SPA contra a API do modelo JSON do AEM.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5310
+jira: KT-5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -383,7 +382,7 @@ A configuração inicial do modelo JSON faz **exigir uma instância de AEM local
    ]
    ```
 
-   Essa configuração de proxy regravará solicitações que começam com `/content/wknd-spa-angular/us` com `/mocks/json` e veicular o arquivo JSON estático correspondente, por exemplo:
+   Essa configuração de proxy regravará solicitações que começam com `/content/wknd-spa-angular/us` com `/mocks/json` e veiculam o arquivo JSON estático correspondente, por exemplo:
 
    ```plain
    /content/wknd-spa-angular/us/en.model.json -> /mocks/json/en.model.json
@@ -648,7 +647,7 @@ As alterações feitas à **Cabeçalho** atualmente só são visíveis através 
 
    Agora que o SPA atualizado está no AEM, a criação pode continuar.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você atualizou o SPA e explorou a integração com o AEM! Agora você conhece duas abordagens diferentes para desenvolver o SPA contra a API do modelo JSON AEM usando um **servidor de desenvolvimento do webpack**.
 

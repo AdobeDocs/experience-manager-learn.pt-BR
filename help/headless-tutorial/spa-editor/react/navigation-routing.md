@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4988
+jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -325,6 +326,6 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
 
    Isso pode ajudar a ilustrar a diferença entre o roteamento SPA e os links de páginas da Web regulares.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu como várias exibições no SPA podem ser suportadas pelo mapeamento para páginas AEM com o SDK do Editor do SPA. A navegação dinâmica foi implementada usando o Roteador React e adicionada ao `Header` componente.

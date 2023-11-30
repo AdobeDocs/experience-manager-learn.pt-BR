@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7629
+jira: KT-7629
 thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 5%
@@ -153,8 +154,8 @@ Antes de criar conteúdo, organize as janelas do navegador de modo que o AEM Aut
 1. Adicionar, alterar ou remover componentes do componente de contêiner que está acima de __Itinerário__ cabeçalho
 1. Atualizar o SPA em execução `http://localhost:3000` e veja se as alterações foram refletidas
 
-Novas páginas AEM sob o __Página inicial do aplicativo WKND > Aventura__ _deve_ têm um nome de página AEM que corresponde ao nome do Fragmento de conteúdo da aventura correspondente. Isso ocorre porque o mapeamento da rota do SPA para a página do AEM se baseia no último segmento da rota, que é o nome do Fragmento de conteúdo.
+Novas páginas AEM sob o __Página inicial do aplicativo WKND > Aventura__ _deve_ têm um nome de página AEM que corresponde ao nome do Fragmento de conteúdo da aventura correspondente. Isso ocorre porque o mapeamento da rota do SPA para a página AEM se baseia no último segmento da rota, que é o nome do Fragmento de conteúdo.
 
-## Parabéns!
+## Parabéns.
 
 Você tem uma ideia rápida de como o Editor de SPA AEM pode melhorar seu SPA com áreas controladas e editáveis! Se você estiver interessado, confira o resto do tutorial, mas não deixe de começar do zero, já que nesta configuração rápida seu ambiente de desenvolvimento local agora está no estado final do tutorial!

@@ -1,21 +1,16 @@
 ---
 title: Configurar fragmentos de experiência e a integração do Adobe Target no AEM
-seo-title: Set Up Experience Fragments and Adobe Target Integration in AEM
 description: O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre AEM e Target. As experiências criadas com o AEM agora podem ser entregues diretamente ao Adobe Target como ofertas de HTML. Ele permite que os profissionais de marketing testem e personalizem conteúdo em diferentes canais sem problemas.
-seo-description: Adobe Experience Manager 6.4 reimagines the personalization workflow between AEM and Target. Experiences created within AEM can now be delivered directly to Adobe Target as HTML Offers. It allows Marketers to seamlessly test and personalize content across different channels.
 feature: Experience Fragments
-topics: integrations
-audience: administrator, developer
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 uuid: 05fd477d-0c1a-42c0-ab92-2bca86602e2e
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
 topic: Personalization
 role: Admin, Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%

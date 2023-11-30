@@ -3,14 +3,14 @@ title: Configuração rápida do AEM Headless usando o AEM SDK local
 description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Instale o SDK do AEM, adicione amostras de conteúdo e implante um aplicativo que consuma conteúdo do AEM usando suas APIs do GraphQL. Veja como o AEM capacita experiências omnicanal.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6386
+jira: KT-6386
 thumbnail: KT-6386.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 2%
@@ -120,7 +120,7 @@ Um dos objetivos deste tutorial é mostrar como consumir conteúdo AEM de um apl
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   Assegurar `REACT_APP_HOST_URI` aponta para o seu SDK AEM local. Para maior comodidade, este início rápido conecta o aplicativo React ao  **AEM Author**. **Autor** os serviços exigem autenticação, portanto, o aplicativo usa o `admin` para estabelecer sua conexão. Conectar um aplicativo ao AEM Author é uma prática comum durante o desenvolvimento, pois facilita a iteração rápida no conteúdo, sem a necessidade de publicar as alterações.
+   Assegurar `REACT_APP_HOST_URI` aponta para o seu SDK AEM local. Para maior comodidade, este início rápido conecta o aplicativo React ao  **Autor do AEM**. **Autor** os serviços exigem autenticação, portanto, o aplicativo usa o `admin` para estabelecer sua conexão. Conectar um aplicativo ao AEM Author é uma prática comum durante o desenvolvimento, pois facilita a iteração rápida no conteúdo, sem a necessidade de publicar as alterações.
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ Com o aplicativo React em execução, faça uma atualização do conteúdo no AE
    >
    > A ferramenta GraphiQL e a API do GraphQL são [explorado com mais detalhes posteriormente no tutorial](../multi-step/explore-graphql-api.md).
 
-## Parabéns!{#congratulations}
+## Parabéns.{#congratulations}
 
 Parabéns, agora você tem um aplicativo externo que consome conteúdo AEM com o GraphQL. Fique à vontade para inspecionar o código no aplicativo React e continuar a experimentar a modificação de fragmentos de conteúdo existentes.
 

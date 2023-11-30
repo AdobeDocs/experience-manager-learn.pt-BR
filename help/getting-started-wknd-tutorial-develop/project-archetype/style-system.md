@@ -3,20 +3,20 @@ title: Desenvolvimento com o sistema de estilo
 seo-title: Developing with the Style System
 description: Saiba como implementar estilos individuais e reutilizar os Componentes principais usando o Sistema de estilos do Experience Manager. Este tutorial aborda o desenvolvimento para o Sistema de estilos a fim de estender os Componentes principais com CSS específico da marca e configurações de política avançadas do Editor de modelos.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4128
+jira: KT-4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -338,7 +338,7 @@ Em vez de direcionar o `main` HTML, o Sistema de estilos poderia ser usado para 
 
 1. **Desafio extra** - utilizar os ensinamentos retirados dos exercícios anteriores e utilizar o sistema de estilos para implementar uma **Largura fixa** e **Largura do fluido** estilos para o componente de Contêiner.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, a página do artigo é quase do estilo e você ganhou experiência prática usando o Sistema de Estilos AEM.
 

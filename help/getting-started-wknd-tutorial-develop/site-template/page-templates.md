@@ -2,16 +2,16 @@
 title: Modelos de página
 description: Saiba como criar e modificar modelos de página. Entenda a relação entre um Modelo de página e uma Página. Saiba como configurar as políticas de um Modelo de página para fornecer governança granular e consistência de marca para o conteúdo.  Um modelo de Artigo de revista bem estruturado é criado com base em um modelo do Adobe XD.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -81,7 +81,7 @@ Em seguida, crie uma nova página usando o modelo Página de artigo da revista. 
 
 Use o [texto fornecido](./assets/page-templates/la-skateparks-copy.txt) para preencher o corpo do artigo.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você acabou de criar um novo modelo e página com o Adobe Experience Manager Sites.
 

@@ -1,13 +1,14 @@
 ---
 title: Utilização do reprodutor de vídeo no AEM Dynamic Media
-description: O reprodutor de vídeo AEM Dynamic Media, usado para depender do tempo de execução do Flash para suportar o streaming de vídeo adaptável em clientes desktop e navegadores, tornou-se mais agressivo no streaming de conteúdo baseado em flash. Apple Com a introdução do HLS (HTTP Live Streaming video delivery protocol), o conteúdo agora pode ser transmitido sem depender do flash.
+description: O reprodutor de vídeo AEM Dynamic Media, usado para depender do tempo de execução do Flash para suportar o streaming de vídeo adaptável em clientes desktop e navegadores, tornou-se mais agressivo no streaming de conteúdo baseado em flash. Apple Com a introdução do HLS (HTTP Live Streaming Video Delivery Protocol), o conteúdo agora pode ser transmitido sem depender do flash.
 feature: Video Profiles
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 6%
@@ -17,7 +18,7 @@ ht-degree: 6%
 
 # Utilização do reprodutor de vídeo no AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-O reprodutor de vídeo AEM Dynamic Media, usado para depender do tempo de execução do Flash para suportar o streaming de vídeo adaptável em clientes desktop e navegadores, tornou-se mais agressivo no streaming de conteúdo baseado em flash. Apple Com a introdução do HLS (HTTP Live Streaming video delivery protocol), o conteúdo agora pode ser transmitido sem depender do flash.
+O reprodutor de vídeo AEM Dynamic Media, usado para depender do tempo de execução do Flash para suportar o streaming de vídeo adaptável em clientes desktop e navegadores, tornou-se mais agressivo no streaming de conteúdo baseado em flash. Apple Com a introdução do HLS (HTTP Live Streaming Video Delivery Protocol), o conteúdo agora pode ser transmitido sem depender do flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 

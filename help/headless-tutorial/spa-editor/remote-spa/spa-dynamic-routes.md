@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7636
+jira: KT-7636
 thumbnail: kt-7636.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -102,7 +103,6 @@ Colocar o `<ResponsiveGrid...>` no `AdventureDetail` o componente cria um contê
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-
 Atualizar `AdventureDetail.js` com as seguintes linhas:
 
 ```javascript
@@ -168,7 +168,7 @@ Com o `<ResponsiveGrid...>` em vigor, e `pagePath` dinamicamente definido com ba
 
 Ao navegar para uma rota de detalhes de aventura que não tem uma página AEM mapeada, não há capacidade de criação nessa instância de rota. Para ativar a criação nessas páginas, basta criar uma página AEM com o nome correspondente sob o __Aventura__ página!
 
-## Parabéns!
+## Parabéns.
 
 Parabéns! Você adicionou a capacidade de criação a rotas dinâmicas no SPA!
 

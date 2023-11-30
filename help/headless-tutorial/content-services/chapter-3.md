@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 46ef11a2-81bd-4ff7-b9ef-9f8cba52c6a8
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 3%
@@ -55,12 +56,12 @@ Nesta etapa, crie um novo [!DNL Event] para `Punkrock Fest` no `/content/dam/wkn
 
 *Esta seção é apenas informativa e destina-se a socializar a estrutura JCR subjacente de fragmentos de conteúdo feitos de modelos de fragmento de conteúdo.*
 
-1. Abertura **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** no AEM Author.
+1. Abertura **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** sobre o AEM Author.
 1. No CRXDE Lite, no menu de hierarquia à esquerda, navegue até [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) que é o nó que representa o [!DNL Punkrock Fest] [!DNL Event] Fragmento de conteúdo no JCR.
 1. Expanda a [dados](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) nó.
 Revisão no **Painel Propriedades** que possui uma propriedade `cq:model` que aponta para o [!DNL Event] Definição do modelo de fragmento de conteúdo.
    * **`cq:model`**=**`/conf/settings/wknd-mobile/dam/cfm/models/event`**
-1. Abaixo de `data` nó selecione o [principal](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) e revise as propriedades. Este nó contém o conteúdo coletado durante a criação de um [!DNL Event] Modelo de fragmento de conteúdo. Os nomes de propriedade do JCR correspondem aos nomes de propriedade do modelo de fragmento de conteúdo, e os valores correspondem aos valores criados do &quot;[!DNL Punkrock Fest]&quot; [!DNL Event] Fragmento do conteúdo.
+1. Abaixo de `data` nó selecione o [master](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) e revise as propriedades. Este nó contém o conteúdo coletado durante a criação de um [!DNL Event] Modelo de fragmento de conteúdo. Os nomes de propriedade do JCR correspondem aos nomes de propriedade do modelo de fragmento de conteúdo, e os valores correspondem aos valores criados do &quot;[!DNL Punkrock Fest]&quot; [!DNL Event] Fragmento do conteúdo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28356?quality=12&learn=on)
 

@@ -2,15 +2,12 @@
 title: Fluxo de trabalho principal do Dynamic Media Classic e visualização de ativos
 description: 'Saiba mais sobre o fluxo de trabalho principal do Dynamic Media Classic, que inclui as três etapas: Criar (e fazer upload), Autor (e Publicar) e Entregar. Em seguida, saiba como visualizar ativos no Dynamic Media Classic.'
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 1%
@@ -80,11 +77,11 @@ Ao fazer upload de uma imagem de qualquer tipo para o Dynamic Media Classic, ela
 
 ![imagem](assets/main-workflow/pyramid-p-tiff.png)
 
-À medida que a imagem é convertida, o Dynamic Media Classic captura uma &quot;captura&quot; do tamanho total da imagem, dimensiona esse tamanho pela metade e o salva, dimensiona pela metade novamente e o salva, e assim por diante, até que seja preenchido com até mesmo múltiplos do tamanho original. Por exemplo, um P-TIFF de 2000 pixels tem tamanhos de 1000, 500, 250 e 125 pixels (e menores) no mesmo arquivo. O arquivo P-TIFF é o formato do que é chamado de &quot;imagem principal&quot; no Dynamic Media Classic.
+À medida que a imagem é convertida, o Dynamic Media Classic captura uma &quot;captura&quot; do tamanho total da imagem, dimensiona esse tamanho pela metade e o salva, dimensiona pela metade novamente e o salva, e assim por diante, até que seja preenchido com até mesmo múltiplos do tamanho original. Por exemplo, um P-TIFF de 2000 pixels tem tamanhos de 1000, 500, 250 e 125 pixels (e menores) no mesmo arquivo. O arquivo P-TIFF é o formato do que é chamado de &quot;imagem mestre&quot; no Dynamic Media Classic.
 
 Quando você solicita uma imagem de determinado tamanho, a criação do TIFF P permite que o Servidor de imagens do Dynamic Media Classic localize rapidamente o próximo tamanho maior e o dimensione. Por exemplo, se você carregar uma imagem de 2000 pixels e solicitar uma imagem de 100 pixels, o Dynamic Media Classic encontrará a versão de 125 pixels e a dimensionará para 100 pixels, em vez de dimensionar de 2000 para 100 pixels. Isso torna a operação muito rápida. Além disso, ao aplicar zoom em uma imagem, isso permite que o visualizador de zoom solicite apenas um bloco da imagem que está sendo ampliada, em vez da imagem com resolução total. É assim que o formato de imagem principal, o arquivo P-TIFF, suporta o dimensionamento dinâmico e o zoom.
 
-Da mesma forma, você pode carregar seu vídeo de origem principal no Dynamic Media Classic e, ao fazer upload, o Dynamic Media Classic pode redimensioná-lo automaticamente e convertê-lo para o formato MP4 compatível com a Web.
+Da mesma forma, você pode fazer upload do vídeo principal de origem no Dynamic Media Classic e, ao fazer upload, o Dynamic Media Classic pode redimensioná-lo automaticamente e convertê-lo para o formato MP4 compatível com a Web.
 
 ### Regras básicas para determinar o tamanho ideal das imagens que você carrega
 

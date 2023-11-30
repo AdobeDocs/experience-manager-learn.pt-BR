@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
@@ -40,7 +41,7 @@ A verificação padrão geralmente é uma verificação de porta para ver se os 
 
 ## Verificação de integridade do AMS
 
-Para evitar o envio de tráfego para um Dispatcher saudável que esteja enfrentando uma instância de AEM não saudável, o AMS criou alguns extras que avaliam a integridade do trecho e não apenas do Dispatcher.
+Para evitar o envio de tráfego para um Dispatcher saudável que esteja enfrentando uma instância de AEM não íntegra, o AMS criou alguns extras que avaliam a integridade do trecho e não apenas do Dispatcher.
 
 ![A imagem mostra as diferentes partes para a verificação de integridade funcionar](assets/load-balancer-healthcheck/health-check-pieces.png "health-check-piece")
 

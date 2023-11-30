@@ -3,17 +3,17 @@ title: Adicionar navegação e roteamento | Introdução ao SPA Editor e Angular
 description: Saiba como várias exibições no SPA são compatíveis usando páginas AEM e o SDK Editor de SPA. A navegação dinâmica é implementada usando rotas de Angular e adicionada a um componente de Cabeçalho existente.
 feature: SPA Editor
 topics: development
-doc-type: tutorial
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5312
+jira: KT-5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2712'
 ht-degree: 1%
@@ -725,7 +725,7 @@ Agora que a navegação foi implementada, inspecione o roteamento no AEM.
 
 5. Experimente os deep links navegando diretamente para: [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html). Observe que o botão Voltar do navegador continua funcionando.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu como várias exibições no SPA podem ser suportadas pelo mapeamento para páginas AEM com o SDK do Editor do SPA. A navegação dinâmica foi implementada usando o roteamento de Angulars e adicionada à `Header` componente.
 

@@ -6,11 +6,12 @@ topic: Content Management
 feature: Desktop App
 role: User
 level: Beginner
-kt: 2551
+jira: KT-2551
 thumbnail: 28868.jpeg
 last-substantial-update: 2022-06-24T00:00:00Z
+doc-type: Feature Video
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%

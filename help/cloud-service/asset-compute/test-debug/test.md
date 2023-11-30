@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6284
+jira: KT-6284
 thumbnail: KT-6284.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Esse caso de teste testa para garantir que o trabalhador acione o erro apropriad
 
 1. Como nenhuma representação deve ser gerada durante uma execução com erro, nenhuma `rendition.<extension>` arquivo é necessário.
 1. Execute o conjunto de testes na raiz do projeto executando o comando `aio app test`
-   + Assegurar [Desktop Docker](../set-up/development-environment.md#docker) e as imagens do Docker de suporte são instaladas e iniciadas
+   + Assegurar [Desktop Docker](../set-up/development-environment.md#docker) As imagens do Docker e de suporte foram instaladas e iniciadas
    + Encerrar todas as instâncias da Ferramenta de desenvolvimento em execução
 
 ![Teste - Contraste do erro](./assets/test/error-contrast/result.png)

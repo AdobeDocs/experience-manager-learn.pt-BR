@@ -2,17 +2,17 @@
 title: Teste de unidade
 description: Implemente um teste de unidade que valide o comportamento do Modelo Sling do componente Subtítulo, criado no tutorial Componente personalizado.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4089
+jira: KT-4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -138,8 +138,6 @@ Testes de unidade normalmente mapeiam 1-para-1 com classes Java™. Neste capít
    1. Identifique-o facilmente como o arquivo de teste _para_ `BylineImpl.java`
    1. Mas também diferenciar o arquivo de teste _de_ a classe que está sendo testada, `BylineImpl.java`
 
-
-
 ## Revisão de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
 Neste ponto, o arquivo de teste JUnit é uma classe Java™ vazia.
@@ -184,7 +182,7 @@ Neste ponto, o arquivo de teste JUnit é uma classe Java™ vazia.
 
    Para começar, começamos com um único método de teste para cada método público na classe que estamos testando, portanto:
 
-   | BylineImpl.java |  | BylineImplTest.java |
+   | BylineImpl.java |              | BylineImplTest.java |
    | ------------------|--------------|---------------------|
    | getName() | é testado por | testGetName() |
    | getOccupations() | é testado por | testGetOccupations() |

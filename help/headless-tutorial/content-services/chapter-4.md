@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -70,14 +71,14 @@ Para fazer isso, podemos mapear esses requisitos para componentes AEM (e, no nos
    * **[!DNL WKND Mobile > Image]**
 
       * O logotipo do aplicativo
+
    * **[!DNL WKND Mobile > Text]**
 
       * O texto de introdução do aplicativo
+
    * **[!DNL WKND Mobile > Content Fragment List]**
 
       * A lista de categorias de Evento disponíveis para exibição no aplicativo
-
-
 
 1. Toque no **[!UICONTROL Concluído]** marca de seleção no canto superior direito ao concluir.
 1. **Atualizar** a janela do navegador para ver as novas [!UICONTROL Componentes permitidos] no painel esquerdo.

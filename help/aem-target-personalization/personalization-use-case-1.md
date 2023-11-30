@@ -1,16 +1,15 @@
 ---
 title: Personalização usando fragmentos de experiência do AEM e o Adobe Target
-seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Um tutorial completo mostrando como criar e fornecer experiência personalizada usando fragmentos de experiência do Adobe Experience Manager e do Adobe Target.
-seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 47446e2a-73d1-44ba-b233-fa1b7f16bc76
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 1%
@@ -57,7 +56,7 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e, para e
       * **Texto**: &quot;Inscreva-se para os Audition&quot;
       * **Botão**: &quot;Detalhes do evento&quot; apontando para a página WKND SkateFest
       * **Página do WKND SkateFest**: uma nova página com detalhes do evento, incluindo o local do teste, a data e a hora.
-1. Com base nos requisitos, o Editor de conteúdo AEM cria um Fragmento de experiência para o bloco de conteúdo e o exporta para o Adobe Target como uma oferta. Para veicular conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação principal do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos. Quando um fragmento de experiência é exportado para o Adobe Target, todas as variações também são enviadas para o Adobe Target como ofertas.
+1. Com base nos requisitos, o Editor de conteúdo AEM cria um Fragmento de experiência para o bloco de conteúdo e o exporta para o Adobe Target como uma oferta. Para veicular conteúdo personalizado para todos os estados nos Estados Unidos, o autor de conteúdo pode criar uma variação mestre do Fragmento de experiência e, em seguida, criar 50 outras variações, uma para cada estado. O conteúdo de cada variação de estado com imagens e texto relevantes pode ser editado manualmente. Ao criar um fragmento de experiência, os editores de conteúdo podem acessar rapidamente todos os ativos disponíveis no AEM Assets usando a opção Localizador de ativos. Quando um fragmento de experiência é exportado para o Adobe Target, todas as variações também são enviadas para o Adobe Target como ofertas.
 
 1. Depois de exportar o fragmento de experiência do AEM para o Adobe Target como ofertas, os profissionais de marketing podem criar atividades no Target usando essas ofertas. Com base na campanha SkateFest do site WKND, o profissional de marketing precisa criar e fornecer uma experiência personalizada para visitantes do site WKND de cada estado. Para criar uma atividade de Direcionamento de experiência, o profissional de marketing precisa identificar os públicos. Para nossa campanha WKND SkateFest, precisamos criar 50 públicos-alvo separados, com base na localização deles na qual eles estão visitando o site da WKND.
    * [Públicos-alvo](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) defina o target para sua atividade e sejam usados em qualquer lugar onde o target estiver disponível. Os públicos-alvo são um conjunto definido de critérios de visitante. As ofertas podem ser direcionadas a públicos (ou segmentos) específicos. Somente os visitantes que pertencem a esse público veem a experiência direcionada a eles.  Por exemplo, você pode fornecer uma oferta a um público-alvo composto por visitantes que usam um determinado navegador ou de uma localização geográfica específica.

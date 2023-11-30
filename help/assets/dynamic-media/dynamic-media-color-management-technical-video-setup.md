@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
@@ -118,7 +119,7 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 | WebCoatedFogra28 | CMYK | FOGRA28 revestida com revestimento web (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel revestido para web SWOP 2006 Grade 3 |
 | WebCoatedGrade5 | CMYK | Papel revestido para web SWOP 2006 Grade 5 |
-| WebNão revestida | CMYK | U.S. Web sem revestimento v2 |
+| WebNão revestida | CMYK | Web sem revestimento dos EUA v2 |
 | WideGamutRGB | RGB | RGB de gamut amplo |
 
 ## Recursos adicionais{#additional-resources}

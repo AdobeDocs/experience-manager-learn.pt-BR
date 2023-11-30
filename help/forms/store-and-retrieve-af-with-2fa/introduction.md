@@ -4,14 +4,14 @@ description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
-kt: 6593
+jira: KT-6593
 thumbnail: 327122.jpg
 topic: Development
 role: Developer
 level: Experienced
 exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
 last-substantial-update: 2020-11-07T00:00:00Z
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 2%

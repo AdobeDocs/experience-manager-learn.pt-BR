@@ -7,8 +7,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -45,7 +46,7 @@ Agora temos conteúdo personalizado na forma de ofertas de AEM no Target. O Targ
 **Para implementar esse cenário, é necessário:**
 
 * [Integrar AEM e Adobe Target usando o Launch e o Adobe I/O](./implementation.md#integrating-aem-target-options)
-* [AEM e Adobe Target usando Cloud Services herdados](./implementation.md#integrating-aem-target-options)
+* [AEM e Adobe Target usando Cloud Service herdados](./implementation.md#integrating-aem-target-options)
 
 ***Depois de implementar as integrações acima, vamos explorar as [cenário em detalhes](./personalization-use-case-1.md).***
 

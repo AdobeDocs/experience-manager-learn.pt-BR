@@ -3,13 +3,13 @@ title: Solução de problemas de assinatura de vários documentos
 description: Testar e solucionar problemas da solução
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 6960
+jira: KT-6960
 thumbnail: 6960.jpg
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

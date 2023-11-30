@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5433
+jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 1%
@@ -167,7 +167,7 @@ Os servlets ajudam na depuração da determinação:
 
 ## Consultas
 
-As consultas ajudam a fornecer insights sobre o que e como as consultas de pesquisa são executadas no AEM. Essa funcionalidade é a mesma que  [Ferramentas > Desempenho da consulta do SDK local do AEM ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
+As consultas ajudam a fornecer insights sobre o que e como as consultas de pesquisa são executadas no AEM. Essa funcionalidade é a mesma que  [Ferramentas > Desempenho da consulta do SDK local do AEM](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
 
 O Queries só funciona quando um pod específico é selecionado, pois abre o console da Web Desempenho de consulta desse pod, exigindo que o desenvolvedor tenha acesso para fazer logon no serviço AEM.
 

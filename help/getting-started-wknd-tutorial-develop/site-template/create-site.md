@@ -2,16 +2,16 @@
 title: Criar um site | Criação rápida de sites no AEM
 description: Saiba como usar o assistente de Criação de sites para gerar um novo site. O modelo de site padrão fornecido pelo Adobe é um ponto de partida para o novo site.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7496
+jira: KT-7496
 thumbnail: KT-7496.jpg
+doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%

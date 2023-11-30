@@ -1,16 +1,13 @@
 ---
 title: Destinos de corte, imagens ajustadas e zoom
-description: A imagem principal do Dynamic Media Classic permite criar versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvar como um novo arquivo principal ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos principais e criar Destinos de zoom em suas imagens para mostrar os detalhes destacados.
+description: A imagem mestra do Dynamic Media Classic é compatível com a criação de versões cortadas separadas de cada imagem para mostrar detalhes ou para amostras sem precisar criar versões cortadas separadas de cada imagem. Saiba como recortar imagens no Dynamic Media Classic e salvar como um novo arquivo mestre ou uma imagem virtual, salvar imagens ajustadas virtuais e usá-las no lugar de ativos mestres e criar Destinos de zoom nas imagens para mostrar os detalhes destacados.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -19,17 +16,17 @@ ht-degree: 0%
 
 # Destinos de corte, imagens ajustadas e zoom {#crop-adjusted-zoom-targets}
 
-Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media Classic é que você pode redefinir a finalidade do ativo de imagem para muitos usos. Tradicionalmente, era necessário criar versões separadas e cortadas de cada imagem para exibir detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode fazer as mesmas tarefas em seu único principal e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
+Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media Classic é que você pode redefinir a finalidade do ativo de imagem para muitos usos. Tradicionalmente, era necessário criar versões separadas e cortadas de cada imagem para exibir detalhes ou para amostras. Ao usar o Dynamic Media Classic, você pode fazer as mesmas tarefas em seu único Principal e salvar essas versões cortadas como novos arquivos físicos ou como derivados virtuais que não ocupam espaço de armazenamento.
 
 Ao final desta seção do tutorial, você saberá como:
 
-- Recorte imagens no Dynamic Media Classic e salve como novos arquivos principais ou como imagens virtuais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
-- Salve imagens ajustadas virtuais e use-as no lugar de ativos principais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
+- Recorte imagens no Dynamic Media Classic e salve como novos arquivos mestres ou como imagens virtuais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
+- Salve as Imagens ajustadas virtuais e use-as no lugar dos ativos principais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
 - Criar Destinos de Zoom nas imagens para exibir seus destaques. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
 
 ## Cortar
 
-O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenientemente disponíveis na interface do usuário, incluindo a ferramenta Corte demarcado. Talvez você queira recortar sua imagem principal dentro do Dynamic Media Classic por vários motivos. Por exemplo:
+O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenientemente disponíveis na interface do usuário, incluindo a ferramenta Corte demarcado. Talvez você queira recortar a imagem principal dentro do Dynamic Media Classic por vários motivos. Por exemplo:
 
 - Você não tem acesso ao arquivo original. Você deseja exibir a imagem com um corte diferente ou taxa de proporção, mas não tem o arquivo original no computador ou está trabalhando em casa. Nesse caso, você pode acessar o Dynamic Media Classic, localizar a imagem, recortá-la e salvá-la ou salvá-la como uma nova versão.
 - Para remover o excesso de espaço em branco. A imagem foi fotografada com muito espaço em branco, o que faz com que o produto pareça pequeno. Você deseja que suas imagens em miniatura preencham a tela o máximo possível.
@@ -51,7 +48,7 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 
 Quando você salva uma versão cortada manualmente, parece que a imagem é cortada permanentemente; na verdade, o Dynamic Media Classic oculta os pixels adicionando um modificador de URL interno para cortar a imagem. Ao publicar, todos perceberão que a imagem foi cortada. No entanto, você poderá retornar ao Editor de corte e remover o corte posteriormente.
 
-Em seguida, você pode escolher se deseja salvar como uma Nova imagem Principal ou como uma Exibição adicional do principal. Um novo principal é um novo arquivo físico (como um TIFF ou JPEG) que ocupa espaço de armazenamento. Uma exibição adicional é uma imagem virtual que não ocupa espaço no servidor. Não recomendamos que você escolha Substituir original, pois isso substituirá seu principal e tornará o recorte permanente. Se você salvar como uma nova principal ou como uma visualização adicional, deverá escolher uma nova ID do ativo. Como outras IDs de ativos, deve ser um nome exclusivo no Dynamic Media Classic.
+Em seguida, você pode escolher se deseja salvar como uma Nova Imagem-Mestre ou como uma View Adicional da Imagem-Mestre. Um novo mestre é um novo arquivo físico (como um TIFF ou JPEG) que ocupa espaço de armazenamento. Uma exibição adicional é uma imagem virtual que não ocupa espaço no servidor. Não recomendamos que você escolha Substituir original, pois isso substituirá seu original e tornará o recorte permanente. Se você salvar como um novo mestre ou como uma visualização adicional, deverá escolher uma nova ID do ativo. Como outras IDs de ativos, deve ser um nome exclusivo no Dynamic Media Classic.
 
 ### _Cortar corte_
 
@@ -103,11 +100,11 @@ O corte agora fará parte dessa Predefinição de imagem e será aplicado automa
 
 ## Imagens ajustadas
 
-Ao usar a ferramenta Cortar, você tem a opção de **Salvar como Exibição Adicional do Principal**. Quando salvo, cria um novo tipo de ativo do Dynamic Media Classic — uma Imagem ajustada. Uma Imagem ajustada, também chamada de derivada, é uma imagem virtual. Na verdade, não é uma imagem; é uma referência de banco de dados (como um alias ou atalho) para a imagem física principal.
+Ao usar a ferramenta Cortar, você tem a opção de **Salvar como Exibição Adicional do Mestre**. Quando salvo, cria um novo tipo de ativo do Dynamic Media Classic — uma Imagem ajustada. Uma Imagem ajustada, também chamada de derivada, é uma imagem virtual. Na verdade, não é uma imagem; é uma referência de banco de dados (como um alias ou atalho) para a imagem mestra física.
 
 ### A Imagem Real, Por Favor, Levante-Se`?`
 
-Você consegue identificar qual é a principal e qual é a Imagem ajustada?
+Você sabe qual é o mestre e qual é a Imagem ajustada?
 
 ![imagem](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
@@ -119,14 +116,14 @@ Uma Imagem ajustada não usa espaço em disco, pois existe apenas como um item d
 
 Normalmente, as Imagens ajustadas são criadas com a ferramenta Corte demarcado; no entanto, elas também podem ser criadas com outros editores de imagem: as ferramentas Ajustar e Nitidez.
 
-As imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, é possível exibir as Imagens ajustadas associadas a uma imagem principal na **Construído e derivados** guia.
+As imagens ajustadas exigem uma ID de ativo exclusiva. Quando publicados (você deve publicar como qualquer outro ativo), eles atuam como qualquer outra imagem e são chamados em um URL pela ID do ativo. Na página Detalhes, é possível exibir as Imagens ajustadas associadas a uma imagem mestre na **Construído e derivados** guia.
 
 ![imagem](assets/crop-adjusted-zoom-targets/derivatives.jpg)
-_Exibições ajustadas para a imagem principal ASIAN_BR_MAIN_
+_Exibições Ajustadas para a imagem mestra ASIAN_BR_MAIN_
 
 ## Destinos de zoom
 
-As Metas de zoom também são encontradas no **Editar** menu e **Detalhes** página de uma imagem. Eles permitem definir &quot;pontos ativos&quot; para destacar recursos específicos de merchandising de uma imagem de zoom. Em vez de criar imagens separadas ao recortar uma grande principal, o visualizador de zoom pode exibir os detalhes na parte superior da imagem, juntamente com um rótulo curto criado por você.
+As Metas de zoom também são encontradas no **Editar** menu e **Detalhes** página de uma imagem. Eles permitem definir &quot;pontos ativos&quot; para destacar recursos específicos de merchandising de uma imagem de zoom. Em vez de criar imagens separadas ao recortar uma grande página-mestre, o visualizador de zoom pode exibir os detalhes na parte superior da imagem, juntamente com um pequeno rótulo criado por você.
 
 ![imagem](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -158,7 +155,7 @@ Este é o fluxo de trabalho para criar públicos-alvo no Dynamic Media Classic.
    - Isso carregará a imagem dentro do visualizador de zoom personalizado padrão. Verifique se a Predefinição do visualizador é compatível com Destinos de zoom — em geral, todas as predefinições padrão com a palavra &quot;-Guiado&quot; foram projetadas para uso com Destinos de zoom. Para usar os destinos, passe o mouse sobre a miniatura de destino (ou ícone de ponto de acesso) para ver o rótulo e clique nele para ver o zoom do visualizador nesse recurso.
    - Assim como qualquer outro trabalho que você faça no Dynamic Media Classic, é necessário publicar para que os Destinos de zoom estejam online. Se você já estiver usando um visualizador compatível com destinos, eles aparecerão imediatamente (depois que o cache for limpo). No entanto, se você não estiver usando um visualizador habilitado para o Zoom Target, eles permanecerão ocultos.
 
-      ![imagem](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
+     ![imagem](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
 7. Além disso, se precisar remover um target, selecione-o clicando em sua miniatura e pressione a tecla **Excluir Destino** ou pressione a tecla DELETE no teclado.
 8. Continue clicando em para adicionar novos destinos, renomeando e/ou redimensionando após adicionar.
@@ -176,7 +173,7 @@ Ao carregar a ferramenta Destino de zoom, o tamanho da exibição é exibido ao 
 
 ![imagem](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
-A predefinição integrada tem um tamanho de 900 x 550, o que significa que o destino nunca pode ficar menor que esse tamanho grande. Isso provavelmente é grande demais — se você tiver uma imagem de 2000 pixels, poderá chamar apenas um recurso que tenha no mínimo 900 pixels de diâmetro. O usuário pode aplicar mais zoom manualmente, mas você não pode orientá-lo mais de perto. Definir um tamanho de exibição para 350 x 350 permite que os alvos aproximem o zoom ou sejam redimensionados em tamanho maior. Mas se você quiser uma imagem com zoom maior em seu visualizador, será necessário criar uma nova predefinição, pois a sua é bloqueada a 350 pixels.
+A predefinição integrada tem um tamanho de 900 x 550, o que significa que o destino nunca pode ficar menor que esse tamanho grande. Provavelmente muito grande. Se você tiver uma imagem de 2000 pixels, você só pode chamar um recurso que tenha no mínimo 900 pixels de diâmetro. O usuário pode aplicar mais zoom manualmente, mas você não pode orientá-lo mais. Definir um tamanho de exibição para 350 x 350 permite que os alvos aproximem o zoom ou sejam redimensionados em tamanho maior. Mas se você quiser uma imagem de zoom maior no seu visualizador, precisará criar uma nova predefinição, pois a sua está bloqueada em 350 pixels.
 
 ### Criação ou edição de uma predefinição do visualizador com suporte para destinos de zoom
 

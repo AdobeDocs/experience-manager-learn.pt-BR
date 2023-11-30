@@ -7,14 +7,14 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -139,7 +139,7 @@ Esses tutoriais resumidos abordam casos de uso mais avançados com base em apren
 
 A base de código do tutorial está disponível no Github em:
 
-+ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ ramificação principal
++ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) ramificação mestre @
 
 O código-fonte não contém os caracteres necessários `.env` ou `config.json` arquivos. Eles devem ser adicionados e configurados usando o [contas e serviços](#accounts-and-services) informações.
 

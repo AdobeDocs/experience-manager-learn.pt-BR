@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6285
+jira: KT-6285
 thumbnail: 40383.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -31,11 +31,11 @@ A forma mais básica de depuração de trabalhadores de Asset compute usa o mode
 Estas instruções de log estão disponíveis para revisão de forma diferente com base em como o worker do Asset compute é executado:
 
 + De `aio app run`, registra a impressão em uma saída padrão e o [Ferramentas de desenvolvimento](../develop/development-tool.md) Logs de ativação
-   ![aplicativo aio executar console.log(...)](./assets/debug/console-log__aio-app-run.png)
+  ![aplicativo aio executar console.log(...)](./assets/debug/console-log__aio-app-run.png)
 + De `aio app test`, registros imprimir em `/build/test-results/test-worker/test.log`
-   ![aplicativo aio test console.log(...)](./assets/debug/console-log__aio-app-test.png)
+  ![aplicativo aio test console.log(...)](./assets/debug/console-log__aio-app-test.png)
 + Usar `wskdebug`, as instruções de registro são impressas no Console de depuração do código VS (Exibir > Console de depuração), padrão
-   ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
+  ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
 + Usar `aio app logs`, instruções de log são impressas na saída do log de ativação
 
 ## Depuração remota via depurador anexado
@@ -100,7 +100,7 @@ _Click-through de depuração de um funcionário do Asset compute usando wskdebu
 1. Assegure a [variáveis de ambiente específicas do espaço de trabalho](../deploy/runtime.md) são definidos via `AIO_runtime_namespace` e `AIO_runtime_auth`, com base no espaço de trabalho que requer depuração.
 1. Na linha de comando, execute `aio app logs`
    + Se o espaço de trabalho estiver com tráfego intenso, expanda o número de logs de ativação por meio da `--limit` sinalizador:
-      `$ aio app logs --limit=25`
+     `$ aio app logs --limit=25`
 1. O mais recente (até o fornecido `--limit`) os logs de ativação são retornados como a saída do comando para revisão.
 
    ![logs do aplicativo aio](./assets/debug/aio-app-logs.png)

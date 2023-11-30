@@ -6,8 +6,9 @@ feature: Search
 topic: Content Management
 role: Developer
 level: Beginner
+doc-type: Technical Video
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
@@ -26,28 +27,28 @@ A Pesquisa de tradução inteligente permite o uso de termos de pesquisa em outr
 
 1. Baixe e instale o pacote OSGi de tradução automática do Oak Search
    * [Baixe o pacote OSGi de tradução automática do Oak Search](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) que corresponde à versão AEM Oak.
-   * Instale o pacote OSGi baixado da tradução automática do Oak Search no AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
+   * Instale o pacote OSGi baixado da tradução automática do Oak Search no AEM via [`/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Baixar e atualizar os pacotes de idiomas do Apache Joshua
    * Baixe e descompacte o arquivo desejado [Pacotes de idioma do Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs).
    * Edite o `joshua.config` arquive e comente as 2 linhas que começam com:
 
-      ```
-      feature-function = LanguageModel ...
-      ```
+     ```
+     feature-function = LanguageModel ...
+     ```
 
    * Determine e registre o tamanho da pasta de modelo do pacote de idioma, pois isso influencia a quantidade de espaço extra de heap que o AEM exigirá.
    * Mova a pasta descompactada do pacote de idiomas Apache Joshua (com o `joshua.config` edições) a
 
-      ```
-      .../crx-quickstart/opt/<source_language-target_language>
-      ```
+     ```
+     .../crx-quickstart/opt/<source_language-target_language>
+     ```
 
-      Por exemplo:
+     Por exemplo:
 
-      ```
-       .../crx-quickstart/opt/es-en
-      ```
+     ```
+      .../crx-quickstart/opt/es-en
+     ```
 
 3. Reiniciar o AEM com alocação de memória heap atualizada
    * Parar AEM
@@ -56,11 +57,13 @@ A Pesquisa de tradução inteligente permite o uso de termos de pesquisa em outr
       * Tamanho do heap de pré-idioma do AEM + o tamanho do diretório modelo arredondado para os 2 GB mais próximos
       * Por exemplo: se os pacotes de pré-idioma para a instalação do AEM exigirem 8 GB de heap para serem executados e a pasta de modelo do pacote de idioma for 3,8 GB descompactada, o novo tamanho do heap será:
 
-         O original `8GB` + ( `3.75GB` arredondado para cima até o mais próximo `2GB`, que é `4GB`) para um total de `12GB`
+        O original `8GB` + ( `3.75GB` arredondado para cima até o mais próximo `2GB`, que é `4GB`) para um total de `12GB`
+
    * Verifique se o computador tem essa quantidade de memória extra disponível.
    * Atualize os scripts de inicialização do AEM para ajustar o novo tamanho da pilha
 
       * Exemplo. `java -Xmx12g -jar cq-author-p4502.jar`
+
    * Reinicie o AEM com o tamanho de heap aumentado.
 
    >[!NOTE]
@@ -93,8 +96,8 @@ A Pesquisa de tradução inteligente permite o uso de termos de pesquisa em outr
    * Se um pacote de idiomas for atualizado, para instalar as atualizações no AEM, siga as etapas 2 a 4 acima, ajustando o tamanho da pilha para cima ou para baixo, conforme necessário.
 
       * Observe que ao mover o pacote de idioma descompactado para a pasta crx-quickstart/opt, mova qualquer pasta existente de pacote de idioma antes de copiar na nova pasta.
-   * Se o AEM não exigir uma reinicialização, as configurações relevantes de OSGi do provedor de termos de consulta de texto completo da tradução de máquina Apache Jackrabbit Oak que pertencem aos pacotes de idiomas atualizados devem ser salvas novamente para que o AEM processe os arquivos atualizados.
 
+   * Se o AEM não exigir uma reinicialização, as configurações relevantes de OSGi do provedor de termos de consulta de texto completo da tradução de máquina Apache Jackrabbit Oak que pertencem aos pacotes de idiomas atualizados devem ser salvas novamente para que o AEM processe os arquivos atualizados.
 
 ## Atualização do índice damAssetLucene {#updating-damassetlucene-index}
 

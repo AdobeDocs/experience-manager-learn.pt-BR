@@ -1,14 +1,15 @@
 ---
 title: Utilização do Brand Portal
-description: Apresentações em vídeo do autor do AEM e integração com o AEM Assets Brand Portal.
+description: Demonstrações em vídeo do autor do AEM e integração com o AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
+doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 2%
@@ -66,7 +67,7 @@ Da mesma forma, especificando:
 * \*climb retorna todos os ativos que têm palavras que terminam com caracteres que sobem na frase de título.
 * \*climb\* retorna todos os ativos que contêm palavras que compreendem os caracteres que sobem na frase de título.
 
-#### Ativar hierarquia de pastas
+#### Habilitar hierarquia de pastas
 
 Agora, os administradores podem configurar como as pastas são exibidas para usuários não administradores (Editores, Visualizadores e Usuários convidados) no logon.
 [Ativar hierarquia de pastas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) A configuração é adicionada em Configurações gerais, no painel ferramentas administrativas. Se a configuração for:
@@ -82,7 +83,7 @@ Observe que a miniatura padrão das pastas virtuais é a imagem em miniatura da 
 
 ### Suporte a representações de vídeo do Dynamic Media
 
-Os usuários cuja instância do Autor do AEM está no modo híbrido do Dynamic Media podem visualizar e baixar as representações do Dynamic Media, além dos arquivos de vídeo originais.
+Os usuários cuja instância de autor do AEM está no modo híbrido do Dynamic Media podem visualizar e baixar as representações do Dynamic Media, além dos arquivos de vídeo originais.
 
 Para permitir a pré-visualização e o download de representações de mídia dinâmica em contas de locatário específicas, os administradores precisam especificar a Configuração do Dynamic Media (URL do serviço de vídeo (URL do gateway DM) e a ID de registro para buscar o vídeo dinâmico) na Configuração de vídeo do painel de ferramentas administrativas.
 
@@ -204,7 +205,7 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 ## Recursos adicionais{#additional-resources}
 
 * [Novidades do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#introduction)
-* [Agentes de replicação do AEM Author](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Agentes de replicação de autor do AEM](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guia para download acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/docs/)

@@ -7,10 +7,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 9359
+jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 15%
@@ -23,7 +23,7 @@ Quando você tem um formulário adaptável com a navegação da guia esquerda, t
 
 ![espaçamento da barra de ferramentas](assets/active-completed.png)
 
-## Criar um Formulário adaptável
+## Criação de um Formulário adaptável
 
 Um formulário adaptável simples baseado no modelo Básico e no tema do Canvas 3.0 foi usado para criar o formulário de amostra.
 A variável [ícones usados neste artigo](assets/icons.zip) pode ser baixado aqui.

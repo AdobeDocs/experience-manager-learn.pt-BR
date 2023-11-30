@@ -8,8 +8,9 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
+doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
@@ -42,9 +43,9 @@ Lembrar a senha do armazenamento de confiança. Precisaremos usar essa senha pos
 * Navegue até [Armazenamento global de confiança](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Clique em &quot;Adicionar certificado do arquivo CER&quot;. Adicione o certificado IdP fornecido pelo OKTA e clique em enviar.
 
-   >[!NOTE]
-   >
-   >Não mapeie o certificado para nenhum usuário
+  >[!NOTE]
+  >
+  >Não mapeie o certificado para nenhum usuário
 
 Ao adicionar o certificado ao armazenamento de confiança, você deve obter o alias do certificado, como mostrado na captura de tela abaixo. O nome do alias pode ser diferente no seu caso.
 

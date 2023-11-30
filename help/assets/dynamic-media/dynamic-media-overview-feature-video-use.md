@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -26,9 +27,9 @@ Esta série de vídeos em várias partes oferece uma visão geral de como o cont
 >
 >A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu.
 
-Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. O Dynamic Media opera em uma única metodologia de ativos Principais, na qual você faz upload de um ativo de imagem ou de vídeo que pode ser solicitado para preencher um conjunto ilimitado de variações consumíveis ou representações derivadas necessárias. Incluído:
+Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. A Dynamic Media opera em uma única metodologia de Ativo principal, na qual você faz upload de um ativo de imagem ou de vídeo que pode ser solicitado para preencher um conjunto ilimitado de variações consumíveis ou representações derivadas necessárias. Incluído:
 
-* Explicação de um único ativo Principal para entrega de produto URL
+* Explicação de um único ativo principal para entrega de produto URL
 * Opções de processamento de imagem
 * Opções do visualizador de conteúdo
 * Copiar URLs para imagens e visualizadores responsivos

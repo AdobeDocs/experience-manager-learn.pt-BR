@@ -6,11 +6,12 @@ topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Intermediate
-kt: 649
+jira: KT-649
 thumbnail: 22155.jpg
 last-substantial-update: 2022-06-06T00:00:00Z
+doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -35,7 +36,7 @@ Grupos de usuários fechados (CUGs) é um recurso usado para restringir o acesso
 
 Tanto o grupo de usuários fechado (CUG) quanto as listas de controle de acesso (ACL) são usados para controlar o acesso ao conteúdo no AEM e com base nos usuários e grupos de segurança do AEM. No entanto, a aplicação e a implementação desses recursos são muito diferentes. A tabela a seguir resume as distinções entre os dois recursos.
 
-|  | ACL | CUG |
+|                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Uso Pretendido | Configure e aplique permissões para o conteúdo no **atual** Instância do AEM. | Configurar políticas CUG para conteúdo no AEM **autor** instância. Aplicação de políticas CUG para conteúdo no AEM **publicar** instância(s). |
 | Níveis de permissão | Define permissões concedidas/negadas para usuários/grupos para todos os níveis: Ler, Modificar, Criar, Excluir, Ler ACL, Editar ACL, Replicar. | Concede acesso de leitura a um conjunto de usuários/grupos. Nega acesso de leitura a *todos os outros* usuários/grupos. |

@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -25,8 +26,8 @@ A versão mais recente dos componentes principais de WCM de AEM e AEM é sempre 
 
 Antes de iniciar este tutorial, verifique se as seguintes instâncias do AEM são [instalado e em execução em seu computador local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM Author** em **porta 4502**
-* **AEM Publish** em **porta 4503**
+* **Autor do AEM** em **porta 4502**
+* **Publicação no AEM** em **porta 4503**
 
 ## Pacotes de aplicativos WKND Mobile{#wknd-mobile-application-packages}
 
@@ -62,7 +63,7 @@ Se você encontrar um problema com o tutorial ou o código, deixe um [Problema d
 
 ## Pular para o final
 
-Para ir até o fim do tutorial, a variável [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) o pacote de conteúdo pode ser instalado em **ambos** AEM Author e AEM Publish. Observe que o conteúdo e a configuração não serão exibidos como publicados no AEM Author, no entanto, devido à implantação manual, todo o conteúdo e a configuração necessários estarão disponíveis no AEM Publish, permitindo que o [!DNL WKND Mobile App] para acessar o conteúdo.
+Para ir até o fim do tutorial, a variável [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) o pacote de conteúdo pode ser instalado em **ambos** AEM Author e AEM Publish. Observe que o conteúdo e a configuração não serão exibidos como publicados no AEM Author, no entanto, devido à implantação manual, todo o conteúdo e a configuração necessários estão disponíveis no AEM Publish, permitindo que o [!DNL WKND Mobile App] para acessar o conteúdo.
 
 
 ## Próxima etapa

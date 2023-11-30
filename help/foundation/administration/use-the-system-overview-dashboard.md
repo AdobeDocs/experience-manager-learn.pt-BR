@@ -2,17 +2,13 @@
 title: Usar o painel de visão geral do sistema no AEM
 description: Em versões anteriores do AEM, os administradores precisavam examinar vários locais para obter uma imagem completa da instância do AEM. A Visão geral do sistema tem como objetivo resolver isso fornecendo uma visualização de alto nível da configuração, do hardware e da integridade da instância do AEM, tudo a partir de um único painel.
 version: 6.4, 6.5
-topics: administration, operations, monitoring
 feature: Operations
-activity: use
-audience: administrator, architect, developer, implementer
-doc-type: technical video
-contentOwner: dgordon
+doc-type: Technical Video
 topic: Administration
 role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%

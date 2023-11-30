@@ -6,10 +6,10 @@ version: Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
-kt: 11743
+jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%

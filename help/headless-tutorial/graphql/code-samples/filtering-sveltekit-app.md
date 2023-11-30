@@ -6,14 +6,14 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 11811
+jira: KT-11811
 thumbnail: KT-11811.jpg
 index: false
 hide: true
 recommendations: noCatalog, noDisplay
 hidefromtoc: true
 exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -28,5 +28,5 @@ Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](htt
 
 Este código:
 
-+ Conecta-se a um serviço de publicação do AEM e não requer autenticação
++ Conecta-se a um serviço de publicação AEM e não requer autenticação
 + Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`

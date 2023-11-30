@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6283
+jira: KT-6283
 thumbnail: 40241.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -64,19 +64,19 @@ _Click-through da execução de um trabalho de Asset compute na Ferramenta de de
    + Outros valores/chaves podem ser fornecidos neste objeto JSON e estão disponíveis no trabalhador sob o `rendition.instructions` objeto
       + Opcionalmente, adicione valores para `size`, `contrast` e `brightness`:
 
-         ```json
-         {
-             "renditions": [
-                 {
-                     "worker": "...",
-                     "name": "rendition.png",
-                     "size":"800",
-                     "contrast": "0.30",
-                     "brightness": "-0.15"
-                 }
-             ]
-         }
-         ```
+        ```json
+        {
+            "renditions": [
+                {
+                    "worker": "...",
+                    "name": "rendition.png",
+                    "size":"800",
+                    "contrast": "0.30",
+                    "brightness": "-0.15"
+                }
+            ]
+        }
+        ```
 
 1. Toque no __Executar__ botão
 1. A variável __Seção Representações__ será preenchido com um espaço reservado de representação

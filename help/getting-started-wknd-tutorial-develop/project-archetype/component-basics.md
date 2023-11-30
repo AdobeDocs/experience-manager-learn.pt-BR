@@ -2,17 +2,17 @@
 title: Introdução ao AEM Sites - Noções básicas sobre componentes
 description: Entenda a tecnologia subjacente de um componente de sites do Adobe Experience Manager (AEM) por meio de um exemplo simples de "HelloWorld". Tópicos de HTL, Modelos Sling, bibliotecas do lado do cliente e caixas de diálogo de autor são explorados.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 4081
+jira: KT-4081
 thumbnail: 30177.jpg
+doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 1%
@@ -278,7 +278,7 @@ Em seguida, vamos fazer algumas atualizações no `HelloWorldModel` Sling Model 
    </div>
    ```
 
-1. Implante as alterações em uma instância local do AEM usando o plug-in Desenvolvedor do Eclipse ou usando suas habilidades de Maven.
+1. Implante as alterações em uma instância local do AEM usando o plug-in Desenvolvedor do Eclipse ou usando suas habilidades do Maven.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
@@ -333,7 +333,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
    ![Atualização das noções básicas do componente](assets/component-basics/color-update.png)
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu as noções básicas de desenvolvimento de componentes no Adobe Experience Manager!
 

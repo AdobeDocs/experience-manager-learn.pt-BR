@@ -10,13 +10,13 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 6168
+jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 # Erro ao abrir a interface do usuário do agente no envio do POST
 
-Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio de formulários.
+Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio do formulário.
 
 Este artigo o guiará pelas etapas relativas à abertura da interface do usuário do agente no envio de um formulário. Um caso de uso típico é o agente de atendimento ao cliente preencher um formulário com alguns parâmetros de entrada, e uma interface do agente de envio de formulário é aberta com dados pré-preenchidos no serviço de preenchimento do modelo de dados de formulário. Os parâmetros de entrada para o serviço de preenchimento do modelo de dados de formulário são extraídos do envio do formulário.
 

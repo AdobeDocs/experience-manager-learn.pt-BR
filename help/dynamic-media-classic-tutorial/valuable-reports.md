@@ -5,8 +5,9 @@ feature: Dynamic Media Classic
 topic: Content Management
 role: Admin
 level: Intermediate
+doc-type: Tutorial
 exl-id: c3fbfb0b-3222-46ff-9248-dea70ce85a23
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

@@ -3,14 +3,14 @@ title: Utilização do caminho de carregamento de itens para preencher a lista s
 description: Configure e preencha uma lista suspensa para ler valores de um nó crx
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 10961
+jira: KT-10961
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
 exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Para criar esse nó no crx, siga as etapas mencionadas abaixo:
 * Salvar
 * Clique no nó ativos recém-criado e defina as propriedades conforme mostrado abaixo
 * Será necessário criar uma propriedade do tipo String chamada assettypes (você pode nomeá-la de acordo com seus requisitos). Verifique se a propriedade é um multivalor. Forneça os valores desejados e salve.
-   ![item-load-path](assets/item-load-path-crx.png)
+  ![item-load-path](assets/item-load-path-crx.png)
 
 Para carregar esses valores na lista suspensa, forneça o seguinte caminho na propriedade de caminho de carregamento do item  **/content/assets/assettypes**
 

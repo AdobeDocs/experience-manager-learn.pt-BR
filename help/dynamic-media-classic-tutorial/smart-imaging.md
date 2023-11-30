@@ -2,15 +2,12 @@
 title: Imagem inteligente
 description: A Criação de imagens inteligentes no Dynamic Media Classic melhora o desempenho da entrega de imagens, otimizando automaticamente o formato e a qualidade da imagem com base nos recursos do navegador do cliente. Ele faz isso aproveitando os recursos de IA do Adobe Sensei e trabalhando com Predefinições de imagem existentes. Saiba mais sobre a Criação de imagens inteligentes e como usá-la para oferecer melhores experiências aos clientes por meio de carregamentos de página mais rápidos.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, renditions, images
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%

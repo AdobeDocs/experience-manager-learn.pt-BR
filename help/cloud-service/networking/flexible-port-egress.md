@@ -6,13 +6,13 @@ feature: Security
 topic: Development, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9350
+jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1133'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -174,7 +174,11 @@ Ao criar conexões HTTP/HTTPS com portas fora do padrão (não-80/443) do AEM, a
 
 O AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que são mapeadas para proxies HTTP/HTTPS do AEM.
 
-| Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para conexões HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` | | `AEM_HTTP_PROXY_PORT` | Porta de proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` | | `AEM_HTTPS_PROXY_PORT` | Porta de proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
+| Nome da variável | Utilização | Código Java™ | Configuração OSGi |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | Host proxy para conexões HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
+| `AEM_HTTP_PROXY_PORT` | Porta proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTP_PROXY_PORT", 3128)` | `$[env:AEM_HTTP_PROXY_PORT;default=3128]` |
+| `AEM_HTTPS_PROXY_PORT` | Porta proxy para conexões HTTPS (defina o fallback como `3128`) | `System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", 3128)` | `$[env:AEM_HTTPS_PROXY_PORT;default=3128]` |
 
 Ao fazer chamadas HTTP/HTTPS para serviços externos em portas fora do padrão, nenhuma `portForwards` deve ser definido usando a API do Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` operação, já que as &quot;regras&quot; de encaminhamento de porta são definidas &quot;no código&quot;.
 
@@ -202,7 +206,9 @@ Ao fazer chamadas HTTP/HTTPS para serviços externos em portas fora do padrão, 
 
 Ao criar conexões não HTTP/HTTPS (por exemplo, SQL, SMTP e assim por diante) do AEM, a conexão deve ser feita por meio de um nome de host especial fornecido pelo AEM.
 
-| Nome da variável | Utilização | Código Java™ | Configuração OSGi | | - | - | - | - | | `AEM_PROXY_HOST` | Host proxy para conexões não HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
+| Nome da variável | Utilização | Código Java™ | Configuração OSGi |
+| - |  - | - | - |
+| `AEM_PROXY_HOST` | Host proxy para conexões não HTTP/HTTPS | `System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel")` | `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` |
 
 
 As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_HOST` e a porta mapeada (`portForwards.portOrig`), que o AEM roteia para o nome de host externo mapeado (`portForwards.name`) e porta (`portForwards.portDest`).

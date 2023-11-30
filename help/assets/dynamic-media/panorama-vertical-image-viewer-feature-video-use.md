@@ -6,8 +6,9 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -51,7 +52,7 @@ Com amostras horizontais, dependendo do tamanho da tela do desktop do consumidor
    <td>DMS7 e Dynamic Media</td>
   </tr>
   <tr>
-   <td>Caso de uso </td>
+   <td>Caso de uso</td>
    <td><p>O visualizador panorâmico e o visualizador de realidade virtual fornecem aos usuários uma experiência mais envolvente. Um usuário pode verificar um quarto de hotel mesmo antes de fazer uma reserva ou sair de uma propriedade de aluguel sem ter que agendar uma consulta. Um usuário pode verificar um local e muitas outras possibilidades. O foco principal aqui é fornecer ao consumidor uma experiência melhor quando visitar seu site e, eventualmente, aumentar seu índice de conversão.</p> <p> </p> </td> 
    <td><p>O Visualizador de imagem vertical ajuda a maximizar a experiência de visualização de imagens do produto para fornecer aos consumidores a melhor representação do produto, impulsionando a conversão e minimizando os retornos.</p> <p> </p> </td>
   </tr>

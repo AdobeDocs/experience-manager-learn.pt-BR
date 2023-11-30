@@ -6,8 +6,9 @@ feature: User and Groups
 topic: Development
 role: Developer
 level: Experienced
+doc-type: Article
 exl-id: dd37355e-cfc7-4581-ac22-d89c951c22cf
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 1%

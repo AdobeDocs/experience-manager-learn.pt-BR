@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 10269
+jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 10%
@@ -26,7 +26,7 @@ O SDK do AEM Headless está disponível para várias plataformas:
 + [SDK headless do AEM para lado do servidor/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 + [SDK headless do AEM para Java™](https://github.com/adobe/aem-headless-client-java)
 
-## Consultas persistentes de GraphQL 
+## Consultas persistentes de GraphQL
 
 Consulta ao AEM usando o GraphQL usando consultas persistentes (em vez de [consultas do GraphQL definidas pelo cliente](#graphl-queries)) permite que os desenvolvedores criem uma consulta persistente (mas não seus resultados) no AEM e, em seguida, solicitem que a consulta seja executada por nome. As consultas persistentes são semelhantes ao conceito de procedimentos armazenados em bancos de dados SQL.
 

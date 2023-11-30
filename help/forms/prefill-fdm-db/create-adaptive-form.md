@@ -3,13 +3,13 @@ title: Criar formulário adaptável
 description: Criar e configurar o formulário adaptável para usar o serviço de preenchimento do modelo de dados de formulário
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5813
+jira: KT-5813
 thumbnail: kt-5813.jpg
 topic: Development
 role: User
 level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 1%
@@ -72,7 +72,7 @@ A próxima etapa é exibir os beneficiários do funcionário em forma de tabela.
 * Definir a referência de vinculação para **/newhire/GetEmployeeBeneficiaries**
 * Defina as Configurações de repetição - Contagem mínima para 1 e Contagem máxima para 5.
 * A configuração da Linha 1 deve ter a aparência da captura de tela abaixo
-   ![row-configure](assets/configure-row.PNG)
+  ![row-configure](assets/configure-row.PNG)
 * Clique no ícone azul de ù para salvar as alterações
 
 ## Associar células de linha

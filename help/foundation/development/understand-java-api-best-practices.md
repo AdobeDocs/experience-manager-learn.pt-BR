@@ -6,10 +6,11 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
+doc-type: Article
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
 last-substantial-update: 2022-06-24T00:00:00Z
 thumbnail: aem-java-bp.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 2%
@@ -79,7 +80,7 @@ A variável `com.adobe.cq` O pacote aceita casos de uso de produtos, enquanto `c
 
 A variável `com.day.cq` O pacote contém APIs &quot;originais&quot;. Essas APIs abordam abstrações e funcionalidades principais que existiam antes e/ou em torno da aquisição da Adobe [!DNL Day CQ]. Essas APIs são compatíveis e devem ser evitadas, a menos que `com.adobe.cq` ou `com.adobe.granite` O não fornece uma alternativa (mais recente).
 
-Novas abstrações, como [!DNL Content Fragments] e [!DNL Experience Fragments] são criados no `com.adobe.cq` espaço em vez de `com.day.cq` como descrito a seguir.
+Novas abstrações, como [!DNL Content Fragments] e [!DNL Experience Fragments] são criados no `com.adobe.cq` espaço em vez de `com.day.cq` descrito abaixo.
 
 ### APIs de consulta
 
@@ -102,6 +103,7 @@ A API preferida é [Construtor de consulta AEM](https://experienceleague.adobe.c
 >[!CAUTION]
 >
 >A API QueryBuilder do AEM vaza um objeto ResourceResolver. Para atenuar esse vazamento, siga este [amostra de código](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>
 
 ## [!DNL Sling] APIs
 
@@ -195,7 +197,7 @@ Observe também que a definição do nó de configuração OSGi prefere `cfg.jso
 
 ### APIs de ativos AEM
 
-* Preferir [ `com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) sobre [ `com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
+* Preferir [`com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) sobre [`com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
    * Embora a `com.day.cq` As APIs de ativos fornecem ferramentas mais complementares para casos de uso de gerenciamento de ativos do AEM.
    * As APIs do Granite Assets são compatíveis com casos de uso de gerenciamento de ativos de baixo nível (versão, relações).

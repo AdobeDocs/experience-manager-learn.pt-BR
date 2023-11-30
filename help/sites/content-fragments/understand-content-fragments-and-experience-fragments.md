@@ -3,16 +3,13 @@ title: Fragmentos de conteúdo e Fragmentos de experiência
 description: Saiba mais sobre as semelhanças e diferenças entre os Fragmentos de conteúdo e Fragmentos de experiência, e quando e como usar cada tipo.
 sub-product: Experience Manager Assets, Experience Manager Sites
 feature: Content Fragments, Experience Fragments
-topics: headless
 version: 6.4, 6.5
-doc-type: article
-activity: understand
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 84fdbaa173a929ae7467aecd031cacc4ce73538a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 5%
@@ -41,7 +38,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </tr><tr><td><strong>Inquilinos principais</strong></td>
 <td><ul>
 <li>Centrado no conteúdo</li>
-<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modelo de dados estruturado e baseado em formulários.</a></li>
+<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modelo de dados estruturado e baseado em formulário.</a></li>
 <li>Design e layout independentes.</li>
 <li>O canal é responsável pela apresentação do conteúdo do fragmento de conteúdo (layout e design)</li>
 </ul>
@@ -67,7 +64,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </td>
 </tr><tr><td><strong>Variações</strong></td>
 <td><ul>
-<li>A variação Principal é a variação canônica</li>
+<li>A variação principal é a variação canônica</li>
 <li>As variações são específicas de caso de uso, que podem se alinhar a canais.</li>
 </ul>
 </td>

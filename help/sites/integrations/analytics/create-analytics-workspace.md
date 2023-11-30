@@ -6,12 +6,13 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: User
 level: Intermediate
-kt: 6409
+jira: KT-6409
 thumbnail: KT-6296.jpg
+doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integração" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 0%
@@ -260,6 +261,6 @@ Em seguida, baixemos o Modelo de classificação da variável ID de botão (eVar
 
    ![Compartilhar projeto](assets/create-analytics-workspace/share.png)
 
-## Parabéns!
+## Parabéns.
 
 Você acabou de aprender a mapear dados capturados de um site do Adobe Experience Manager para métricas e dimensões em conjuntos de relatórios do Adobe Analytics. Além disso, o executou uma Classificação para as métricas e criou um painel de relatórios detalhado usando o recurso Analysis Workspace do Adobe Analytics.

@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 feature: AEM Project Archetype
-kt: 9534
+jira: KT-9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%

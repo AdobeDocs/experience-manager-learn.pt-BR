@@ -2,16 +2,16 @@
 title: Planejamento da interface do usuário com o Adobe XD | Criação rápida de sites no AEM
 description: Saiba como os Kits de interface do usuário do Adobe XD podem ser usados para projetar e acelerar a implementação do Adobe Experience Manager Sites.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components
 role: Developer
 level: Beginner
-kt: 9371
+jira: KT-9371
 thumbnail: 338680.jpg
+doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 4%
@@ -57,7 +57,7 @@ Etapas de alto nível:
 1. Baixe o [Arquivo XD do artigo da WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 1. Inspect os designs do modelo de Artigo WKND.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu como os Kits de interface do usuário do Adobe XD podem ser usados para mapear e planejar uma implementação do AEM Sites.
 

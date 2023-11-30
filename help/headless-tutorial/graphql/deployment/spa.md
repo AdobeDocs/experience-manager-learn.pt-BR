@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Abaixo estão as configurações de implantação necessárias para implantaçõ
 
 #### Exemplo de implantação do SPA em diferentes domínios
 
-Neste exemplo, o SPA é implantado em um domínio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) e o SPA consome APIs AEM do GraphQL do domínio de publicação do AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). As capturas de tela abaixo destacam o requisito do CORS.
+Neste exemplo, o SPA é implantado em um domínio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) e o SPA consome APIs do AEM GraphQL do domínio de publicação do AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). As capturas de tela abaixo destacam o requisito do CORS.
 
 1. O SPA é disponibilizado a partir de um domínio Netlify, mas faz uma chamada XHR para APIs AEM GraphQL em um domínio diferente. Esta solicitação entre sites requer [CORS](./configurations/cors.md) a ser configurado no AEM para permitir que a solicitação do domínio Netlify acesse o conteúdo.
 

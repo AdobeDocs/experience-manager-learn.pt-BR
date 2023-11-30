@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
-kt: 11603
+jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 O modal de extensão da interface do usuário do AEM fornece uma maneira de anexar a interface do usuário personalizada a extensões da interface do usuário do AEM.
 
-Modais são aplicativos React, baseados em [Espectro React](https://react-spectrum.adobe.com/react-spectrum/)e podem criar qualquer interface personalizada exigida pela extensão, incluindo, mas não limitado a:
+Modais são aplicativos React, baseados em [Espectro React](https://react-spectrum.adobe.com/react-spectrum/)e podem criar qualquer interface personalizada exigida pela extensão, incluindo, entre outros:
 
 + Caixas de diálogo de confirmação
 + [Formulários de entrada](https://react-spectrum.adobe.com/react-spectrum/#forms)

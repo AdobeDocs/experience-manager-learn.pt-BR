@@ -4,12 +4,12 @@ description: Esse episódio se concentra um pouco mais no validador do dispatche
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
-kt: 10271
+jira: KT-10271
 thumbnail: 342358.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 2%

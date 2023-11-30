@@ -5,11 +5,12 @@ topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7633
+jira: KT-7633
 thumbnail: kt-7633.jpeg
 last-substantial-update: 2022-11-01T00:00:00Z
+doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -63,7 +64,7 @@ Várias variáveis de ambiente devem ser expostas ao SPA remoto para que ele sai
    + `REACT_APP_USE_PROXY`: evita problemas do CORS durante o desenvolvimento, informando o servidor de desenvolvimento de reação para solicitações de AEM de proxy, como `/content, /graphql, .model.json` usar `http-proxy-middleware` módulo.
    + `REACT_APP_AUTH_METHOD`: método de autenticação para solicitações enviadas pelo AEM, as opções são &quot;service-token&quot;, &quot;dev-token&quot;, &quot;basic&quot; ou deixe em branco para caso de uso sem autenticação
       + Obrigatório para uso com o AEM Author
-      + Possivelmente necessário para uso com o AEM Publish (se o conteúdo estiver protegido)
+      + Possivelmente necessário para uso com AEM Publish (se o conteúdo estiver protegido)
       + O desenvolvimento em relação ao SDK do AEM é compatível com contas locais via Autenticação básica. Este é o método usado neste tutorial.
       + Ao integrar com o AEM as a Cloud Service, use [tokens de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
    + `REACT_APP_BASIC_AUTH_USER`: o AEM __nome de usuário__ pelo SPA para autenticar ao recuperar o conteúdo do AEM.
@@ -334,7 +335,7 @@ Com o SPA ligado [http://localhost:3000](http://localhost:3000), vamos abri-lo u
 
    ![SPA em execução em http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)
 
-## Parabéns!
+## Parabéns.
 
 Você inicializou o SPA remoto para ser compatível com o Editor de SPA do AEM! Agora você sabe como:
 

@@ -6,17 +6,17 @@ feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
-kt: 10718
+jira: KT-10718
 thumbnail: KT-10718.png
 last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -137,7 +137,7 @@ O Adobe Sensei fornece IA e tecnologia de aprendizado de máquina para transform
 + [Tags inteligentes para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 + [Tags inteligentes personalizadas para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [Tags inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Corte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
++ [Corte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=pt-BR)
 + [Pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms

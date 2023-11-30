@@ -5,27 +5,27 @@ topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 10427
+jira: KT-10427
 hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 # Avisos transversais
 
 >[!TIP]
->Marque esta página como favorita para referência futura.
+>Marque esta página para referência futura.
 
 _O que são avisos de travessia?_
 
-Os avisos transversais são __aemerror__ instruções de log indicando consultas com baixo desempenho estão sendo executadas no serviço de publicação do AEM. Os avisos transversais normalmente se manifestam no AEM de duas maneiras:
+Os avisos transversais são __aemerror__ instruções de log indicando que consultas com baixo desempenho estão sendo executadas no serviço de publicação do AEM. Os avisos transversais normalmente se manifestam no AEM de duas maneiras:
 
 1. __Consultas lentas__ que não usam índices, resultando em tempos de resposta lentos.
 1. __Consultas com falha__, que lançam um `RuntimeNodeTraversalException`, resultando em uma experiência com falha.
@@ -123,7 +123,7 @@ called by apps.wknd.components.search.example__002e__jsp._jspService;
 consider creating an index or changing the query
 ```
 
-Dependendo do contexto da execução da consulta, as instruções de log podem conter informações úteis sobre o originador da consulta:
+Dependendo do contexto de execução da consulta, as instruções de log podem conter informações úteis sobre o originador da consulta:
 
 + URL de solicitação HTTP associado à execução da consulta
 
@@ -174,7 +174,7 @@ Ajustes feitos em consultas, índices ou ambos - devem ser verificados para gara
 
 ![Explicar consulta](./assets/traversals/verify.gif)
 
-Se somente [ajustes na consulta](#adjust-the-query) feita, a consulta pode ser testada diretamente no AEM as a Cloud Service por meio do Console do desenvolvedor [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"}. A Consulta de explicação é executada em relação ao serviço do Autor do AEM, no entanto, como as definições de índice são as mesmas nos serviços do Autor e de Publicação, validar as consultas no serviço do Autor do AEM é suficiente.
+Se somente [ajustes na consulta](#adjust-the-query) feita, a consulta pode ser testada diretamente no AEM as a Cloud Service por meio do Console do desenvolvedor [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"}. A Explicação de consulta é executada em relação ao serviço do autor AEM; no entanto, como as definições de índice são as mesmas nos serviços do Autor e de Publicação, validar as consultas no serviço do autor AEM é suficiente.
 
 Se [ajustes no índice](#adjust-the-index) forem feitas, o índice deve ser implantado no AEM as a Cloud Service. Com os ajustes de índice implantados, o Console do desenvolvedor [Explicar consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries){target="_blank"} pode ser usado para executar e ajustar ainda mais a consulta.
 

@@ -1,14 +1,14 @@
 ---
 title: Criar um projeto do Asset compute para extensibilidade do Asset compute
 description: Os projetos do Asset compute são projetos Node.js, gerados usando a CLI do Adobe I/O, que seguem uma estrutura específica, permitindo que eles sejam implantados no Adobe I/O Runtime AEM e integrados ao as a Cloud Service.
-kt: 6269
+jira: KT-6269
 thumbnail: 40197.jpg
 topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
@@ -37,10 +37,10 @@ Use o [Plug-in de Asset compute CLI do Adobe I/O](../set-up/development-environm
 1. __Selecionar espaço de trabalho__
    + Selecione o `Development` espaço de trabalho
 1. __Quais recursos do aplicativo Adobe I/O você deseja habilitar para este projeto? Selecionar componentes para incluir__
-   + Selecionar `Actions: Deploy runtime actions`
+   + Selecione `Actions: Deploy runtime actions`
    + Use as teclas de setas para selecionar e espaçar para desmarcar/selecionar, e Enter para confirmar a seleção
 1. __Selecionar tipos de ações a serem geradas__
-   + Selecionar `DX Asset Compute Worker v1`
+   + Selecione `DX Asset Compute Worker v1`
    + Use as teclas de setas para selecionar, o espaço para desmarcar/selecionar e Enter para confirmar a seleção
 1. __Como você deseja nomear esta ação?__
    + Usar o nome padrão `worker`.
@@ -59,9 +59,8 @@ A ferramenta de desenvolvedor requer um arquivo chamado `console.json` que cont�
    + Mova-a para uma pasta arbitrária E faça referência a essa pasta a partir de sua `.env` arquivo com uma entrada de configuração `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. O caminho do arquivo pode ser absoluto ou relativo à raiz do projeto. Por exemplo:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-      Ou
+     Ou
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
-
 
 > OBSERVAÇÃO
 > O arquivo contém credenciais. Se você armazenar o arquivo no seu projeto, adicione-o ao seu `.gitignore` arquivo para impedir que seja compartilhado. O mesmo se aplica à `.env` file — Esses arquivos de credenciais não devem ser compartilhados nem armazenados no Git.

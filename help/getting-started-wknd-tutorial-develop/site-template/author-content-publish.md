@@ -1,17 +1,17 @@
 ---
 title: Introdução à criação e publicação | Criação rápida de sites no AEM
-description: Use o Editor de páginas no Adobe Experience Manager, AEM, para atualizar o conteúdo do site. Saiba como os Componentes são usados para facilitar a criação. Entenda a diferença entre um Autor do AEM e os ambientes de publicação e saiba como publicar alterações no site em tempo real.
+description: Use o Editor de páginas no Adobe Experience Manager, AEM, para atualizar o conteúdo do site. Saiba como os Componentes são usados para facilitar a criação. Entenda a diferença entre um autor de AEM e ambientes de publicação e saiba como publicar alterações no site em tempo real.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7497
+jira: KT-7497
 thumbnail: KT-7497.jpg
+doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%
@@ -150,7 +150,7 @@ Em seguida, navegue até o serviço de Publicação para visualizar as alteraç�
    ![Site publicado](assets/author-content-publish/publish-url-update.png)
 
 1. Usar o **Navegação** clique no menu **Artigo** > **Olá, mundo** para navegar até a página Olá, mundo, criada anteriormente.
-1. Retorne para a **Serviço de autoria do AEM** e faça algumas alterações de conteúdo adicionais no Editor de páginas.
+1. Retorne para a **Serviço de Autor do AEM** e faça algumas alterações de conteúdo adicionais no Editor de páginas.
 1. Publique essas alterações diretamente no editor de páginas, clicando no link **Propriedades da página** ícone > **Publicar página**
 
    ![publicar diretamente](assets/author-content-publish/page-editor-publish.png)
@@ -165,7 +165,7 @@ Em seguida, navegue até o serviço de Publicação para visualizar as alteraç�
 
    Em **Segmentos de ambiente** você pode encontrar links para a **Autor** e **Publish** serviços.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você acabou de criar e publicar alterações no seu site AEM!
 

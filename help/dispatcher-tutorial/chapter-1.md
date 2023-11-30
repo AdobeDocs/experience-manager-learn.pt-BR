@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '17460'
 ht-degree: 0%
@@ -204,7 +205,7 @@ Então... qual é o problema?
 
 `home.html` pode ser um arquivo ou uma pasta. Não ambos ao mesmo tempo que no AEM.
 
-Se você solicitar `home.html` primeiro, é criado como um arquivo.
+Se você solicitar `home.html` primeiro, ele é criado como um arquivo.
 
 Solicitações subsequentes para `home.html/suffix.html` retornar resultados válidos, mas como o arquivo `home.html` &quot;bloqueia&quot; a posição no sistema de arquivos,  `home.html` não pode ser criada uma segunda vez como uma pasta e, portanto, `home.html/suffix.html` não está armazenado em cache.
 
@@ -816,7 +817,7 @@ Podemos até usar seletores adicionais no espaço global, como,
 
 Calma, não é? Então por que as pessoas aparecem com padrões complicados como o Spooler?
 
-Bem, nós poderíamos resolver o problema evitando a referência de conteúdo interno porque o componente externo adicionou pouco valor ou informação à renderização do recurso interno, que ele poderia facilmente ser codificado em conjunto de seletores estáticos que controlam a representação de um recurso solitário.
+Bem, nós poderíamos resolver o problema evitando a referência de conteúdo interna porque o componente externo adicionou pouco valor ou informação à renderização do recurso interno, que ele poderia facilmente ser codificado em conjunto de seletores estáticos que controlam a representação de um recurso solitário.
 
 Mas há uma classe de casos que não podem ser resolvidos facilmente com um URL baseado em recursos. Chamamos esse tipo de caso de &quot;Componentes de inserção de parâmetro&quot; e discutimos sobre isso no próximo capítulo.
 
@@ -945,7 +946,7 @@ sempre responderia à mesma imagem que o q-40 teria:
 
 Essa abordagem não está ajudando em nada. Essas solicitações são solicitações válidas.  Eles consomem energia de processamento e ocupam espaço no diretório do cache no Dispatcher.
 
-Melhor é devolver um `301 – Moved permanently`:
+Melhor é devolver uma `301 – Moved permanently`:
 
 ```plain
   GET /content/dam/flower.respi.q-41.jpg
@@ -1296,7 +1297,7 @@ Concluiremos a primeira parte deste livro com uma coleção aleatória de dicas 
 
 ### Corrigir Tempo de Invalidação
 
-Se você instalar um autor do AEM e publicar imediatamente, a topologia será um pouco estranha. O autor envia o conteúdo para os Sistemas de publicação e a solicitação de invalidação para os Dispatchers ao mesmo tempo. Como ambos, os sistemas de Publicação e o Dispatcher, são dissociados do Autor por filas, o tempo pode ser um pouco infeliz. O Dispatcher pode receber a solicitação de invalidação do Autor antes que o conteúdo seja atualizado no sistema de publicação.
+Se você instalar um AEM Author e Publish imediatamente, a topologia será um pouco estranha. O autor envia o conteúdo para os Sistemas de publicação e a solicitação de invalidação para os Dispatchers ao mesmo tempo. Como ambos, os sistemas de Publicação e o Dispatcher, são dissociados do Autor por filas, o tempo pode ser um pouco infeliz. O Dispatcher pode receber a solicitação de invalidação do Autor antes que o conteúdo seja atualizado no sistema de publicação.
 
 Se um cliente solicitar esse conteúdo enquanto isso, o Dispatcher solicitará e armazenará conteúdo obsoleto.
 
@@ -1845,7 +1846,7 @@ Em seguida, você pode nomear e agrupar as regras de acordo e fornecer ao leitor
 
 ### Especificação de protocolo
 
-A última dica não é uma dica real, mas sentimos que valia a pena compartilhar isso com vocês de qualquer forma.
+A última dica não é uma dica real, mas achamos que valia a pena compartilhar isso com vocês de qualquer forma.
 
 O AEM e o Dispatcher, na maioria dos casos, funcionam imediatamente. Portanto, você não encontrará uma especificação abrangente do protocolo Dispatcher sobre o protocolo de invalidação para criar seu próprio aplicativo. As informações são públicas, mas um pouco dispersas por vários recursos.
 
@@ -1877,8 +1878,7 @@ CQ-Handle: <path-pattern>
 * `Deactive:` excluir `/path-pattern.*`
 E excluir `/path-pattern/*`
 * `Delete:`   excluir `/path-pattern.*`
-E excluir 
-`/path-pattern/*`
+E excluir `/path-pattern/*`
 * `Test:`   Retornar &quot;ok&quot;, mas não fazer nada
 
 `CQ-Handle: <path-pattern>` - O caminho do recurso de conteúdo a ser invalidado. Observação: `<path-pattern>` na verdade, é um &quot;caminho&quot; e não um &quot;padrão&quot;.

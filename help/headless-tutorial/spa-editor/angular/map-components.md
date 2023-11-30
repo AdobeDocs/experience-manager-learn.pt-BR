@@ -2,18 +2,15 @@
 title: Mapear componentes do SPA para componentes do AEM | Introdução ao SPA Editor e Angular do AEM
 description: Saiba como mapear componentes do Angular para componentes do Adobe Experience Manager (AEM AEM SPA) com o SDK JS do editor do. O mapeamento de componentes permite que os usuários façam atualizações dinâmicas nos componentes do SPA no editor SPA AEM, de forma semelhante à criação tradicional do AEM.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5311
+jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 1%
@@ -24,7 +21,7 @@ ht-degree: 1%
 
 Saiba como mapear componentes do Angular para componentes do Adobe Experience Manager (AEM AEM SPA) com o SDK JS do editor do. O mapeamento de componentes permite que os usuários façam atualizações dinâmicas nos componentes do SPA no editor SPA AEM, de forma semelhante à criação tradicional do AEM.
 
-Este capítulo detalha a API do modelo JSON do AEM e como o conteúdo JSON exposto por um componente AEM pode ser injetado automaticamente em um componente do Angular como props.
+Este capítulo detalha a API do modelo JSON do AEM e mostra como o conteúdo JSON exposto por um componente AEM pode ser injetado automaticamente em um componente do Angular como props.
 
 ## Objetivo
 
@@ -396,7 +393,7 @@ A variável `ImageComponent` O componente só é visível no **servidor de desen
 
    Em **Plug-ins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
 
-   ![Ativar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Habilitar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
    Clique em **Concluído** para salvar a atualização de política.
 
@@ -456,7 +453,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    ![Criação final de amostra de capítulo](assets/map-components/final-page.png)
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu a mapear componentes do SPA para componentes do AEM e implementou um novo `Image` componente. Você também tem a chance de explorar os recursos responsivos do **Contêiner de layout**.
 

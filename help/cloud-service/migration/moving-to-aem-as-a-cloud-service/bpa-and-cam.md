@@ -6,10 +6,10 @@ feature: Developer Tools
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8627
+jira: KT-8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 4%

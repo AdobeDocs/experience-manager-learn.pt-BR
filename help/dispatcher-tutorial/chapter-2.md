@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: a25b6f74-3686-40a9-a148-4dcafeda032f
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -85,7 +86,7 @@ O balanceador de carga geralmente &quot;faz o ping&quot;, uma página específic
 
 >[!NOTE]
 >
->Na verdade, você está criando um tipo de rede de distribuição de conteúdo (CDN) com essa abordagem; portanto, deve considerar comprar uma solução de CDN pronta para uso em vez de criar uma você mesmo. Criar e manter uma CDN personalizada não é uma tarefa trivial.
+>Na verdade, você está criando um tipo de rede de distribuição de conteúdo (CDN) com essa abordagem; portanto, deve considerar comprar uma solução de CDN pronta para uso em vez de criar uma por conta própria. Criar e manter uma CDN personalizada não é uma tarefa trivial.
 
 #### Escala horizontal
 

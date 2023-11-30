@@ -1,21 +1,14 @@
 ---
 title: Utilização do gerenciador de vários sites com o AEM Sites
-seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
 description: Visão geral da Live Copy e Gerenciador de configurações de blueprint são interfaces habilitadas para interface de toque para trabalhar com o Gerenciador de vários sites.
-seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
 feature: Multi Site Manager
-topics: localization, authoring, content-architecture
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
-uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
-discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
 topic: Localization
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 17%
@@ -24,7 +17,7 @@ ht-degree: 17%
 
 # Uso do gerenciador de vários sites {#using-multi-site-manager-with-aem-sites}
 
-Visão geral da Live Copy e do Blueprint Configuration Manager são interfaces do AEM Author para trabalhar com [Gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=pt-BR) no Adobe Experience Manager Sites.
+Visão geral da Live Copy e o Gerenciador de configurações de blueprint são interfaces de autor do AEM para trabalhar com [Gerenciador de vários sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=pt-BR) no Adobe Experience Manager Sites.
 
 ## Visão geral da Live Copy {#live-copy-overview}
 

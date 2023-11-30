@@ -6,10 +6,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
-kt: 10292
+jira: KT-10292
 exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Para testar isso no servidor local, siga as etapas:
 
 1. [Importar a biblioteca do cliente](assets/pdf-carousel-client-lib.zip) na instância local do AEM [uso do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 1. [Importar o componente de carrossel pdf](assets/pdf-carousel-component.zip) na instância local do AEM [uso do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importar o formulário adaptável ](assets/adaptive-form-pdf-carousel.zip) na instância local do AEM [uso do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importar o formulário adaptável](assets/adaptive-form-pdf-carousel.zip) na instância local do AEM [uso do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 1. [Importar os pdf de exemplo para exibição](assets/pdf-carousel-sample-documents.zip) na instância local do AEM [usando o link de upload do arquivo de ativos](http://localhost:4502/assets.html/content/dam)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Guia para a guia Documents to Review. Você deve ver três documentos PDF no componente Carrossel.

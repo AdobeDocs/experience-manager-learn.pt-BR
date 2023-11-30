@@ -6,10 +6,11 @@ feature: Core Components
 role: Developer
 level: Intermediate
 version: Cloud Service
-kt: 243
+jira: KT-243
 thumbnail: 25173.jpg
+doc-type: Technical Video
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%

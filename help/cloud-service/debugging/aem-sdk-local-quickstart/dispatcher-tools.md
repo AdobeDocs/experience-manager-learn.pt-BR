@@ -1,13 +1,13 @@
 ---
 title: Ferramentas de depuração do Dispatcher
-description: As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM como um Dispatcher do serviço de publicação do Cloud Services AEM localmente. A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
+description: As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM Cloud Service AEM como um Dispatcher do serviço de publicação do localmente. A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 feature: Dispatcher
-kt: 5918
+jira: KT-5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Ferramentas de depuração do Dispatcher
 
-As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM como um Dispatcher do serviço de publicação do Cloud Services AEM localmente.
+As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM Cloud Service AEM como um Dispatcher do serviço de publicação do localmente.
 
 A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 

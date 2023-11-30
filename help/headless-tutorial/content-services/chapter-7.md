@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -41,7 +42,7 @@ O Android é usado como tutorial devido à capacidade de executar um emulador An
 
 ### Configuração do aplicativo móvel para uso fora do host local
 
-Se a publicação do AEM não estiver sendo executada no **http://localhost:4503** o host e a porta podem ser atualizados no campo [!DNL Settings] para apontar para a propriedade Host/porta de publicação do AEM.
+Se a publicação do AEM não estiver sendo executada no **http://localhost:4503** o host e a porta podem ser atualizados no campo [!DNL Settings] para apontar para a propriedade AEM Publish host/port.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
@@ -87,7 +88,7 @@ Como o modelo editável da API de eventos (`/content/wknd-mobile/en/api/events.m
 
 ### Fluxo de código de alto nível
 
-1. Abrir o [!DNL WKND Mobile] O aplicativo chama um `HTTP GET` solicitação para publicar no AEM em `/content/wknd-mobile/en/api/events.model.json` para coletar o conteúdo e preencher a interface do usuário do aplicativo móvel.
+1. Abrir o [!DNL WKND Mobile] O aplicativo chama um `HTTP GET` solicitação para o AEM Publicar em `/content/wknd-mobile/en/api/events.model.json` para coletar o conteúdo e preencher a interface do usuário do aplicativo móvel.
 2. Ao receber o conteúdo do AEM, cada um dos três elementos de visualização do aplicativo móvel, o **logotipo, linha de tag e lista de eventos**, são inicializados com o conteúdo do AEM.
    * Para vincular ao conteúdo AEM ao elemento de visualização do aplicativo móvel, o JSON que representa cada componente AEM é o objeto mapeado para um POJO Java, que por sua vez é vinculado ao elemento de visualização do Android.
       * Componente de Imagem JSON → POJO de logotipo → Visualização de imagem de logotipo
@@ -130,7 +131,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 
 `onCreate(..)` é o gancho de inicialização do Aplicativo móvel e registra o 3 personalizado `ViewBinders` responsável por analisar o JSON e vincular os valores ao `View` elementos.
 
-`initApp(...)` Em seguida, é chamado de, o que faz a solicitação HTTP GET para o endpoint do AEM Content Services no AEM Publish para coletar o conteúdo. Ao receber uma Resposta JSON válida, a resposta JSON é transmitida a cada `ViewBinder` responsável por analisar o JSON e vinculá-lo ao dispositivo móvel `View` elementos.
+`initApp(...)` em seguida, é chamado de, o que faz a solicitação HTTP GET para o ponto de acesso AEM Content Services no AEM Publish para coletar o conteúdo. Ao receber uma Resposta JSON válida, a resposta JSON é transmitida a cada `ViewBinder` responsável por analisar o JSON e vinculá-lo ao dispositivo móvel `View` elementos.
 
 #### Análise da resposta JSON
 
@@ -160,7 +161,7 @@ Aqui, é feita uma verificação para uma chave chamada **imagem**, que represen
 
 Por último, o logótipo `src` é carregado no ImageView do Android usando o [!DNL Glide] biblioteca auxiliar.
 
-Observe que devemos fornecer o esquema, o host e a porta do AEM (via `aemHost`) para a instância de publicação do AEM, pois os serviços de conteúdo AEM fornecerão somente o caminho JCR (ou seja, `/content/dam/wknd-mobile/images/wknd-logo.png`) ao conteúdo referenciado.
+Observe que devemos fornecer o esquema, o host e a porta do AEM (via `aemHost`) para a instância de publicação do AEM, pois o AEM Content Services fornecerá somente o caminho JCR (ou seja, `/content/dam/wknd-mobile/images/wknd-logo.png`) ao conteúdo referenciado.
 
 #### O POJO de imagem{#image-pojo}
 

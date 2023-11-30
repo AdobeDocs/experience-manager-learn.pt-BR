@@ -1,18 +1,19 @@
 ---
-title: Envio de documentos do Workfront e vinculação de ativos do Assets Essentials
+title: Envio de documentos do Workfront e vinculação de ativos Assets Essentials
 description: Saiba como enviar documentos do Workfront para o Assets Essentials e vincular ativos do Assets Essentials ao Workfront.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
 role: User
 level: Beginner
-kt: 8220
+jira: KT-8220
 thumbnail: 336255.jpeg
 last-substantial-update: 2022-10-14T00:00:00Z
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Assets Essentials" before-title="false"
+doc-type: Feature Video
 exl-id: e1ec3560-2c74-47ac-ba8a-f05412b6b3e5
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 1%

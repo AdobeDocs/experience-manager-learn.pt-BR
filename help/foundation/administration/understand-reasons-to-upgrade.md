@@ -6,8 +6,9 @@ topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 4%
@@ -72,7 +73,7 @@ O AEM aumenta sua capacidade de integração com outros serviços da Adobe:
 [Cloud Manager](https://adobe.ly/2HODmsv), uma exclusividade dos clientes do Adobe Managed Services (AMS), oferece os seguintes recursos:
 
 + O Cloud Manager oferece suporte à ampliação do suporte à implantação do AEM da AEM Sites para **AEM Assets**, incluindo **teste de desempenho automatizado do processamento de ativos**.
-+ **Dimensionamento automático** da camada de Publicação do AEM em limites predefinidos, garante uma experiência ideal para o usuário final.
++ **Dimensionamento automático** do nível de publicação do AEM em limites predefinidos, garante uma experiência ideal para o usuário final.
 + **Pipelines de não produção** permitir que as equipes de desenvolvimento aproveitem o Cloud Manager para verificar continuamente a qualidade do código e implantar em ambientes inferiores (Desenvolvimento e controle de qualidade).
 + **APIs do pipeline de CI/CD** permitir que os clientes se envolvam programaticamente com o Cloud Manager, aprofundando as possibilidades de integração com a infraestrutura de desenvolvimento local.
 
@@ -408,7 +409,7 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pelo AE
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Suporte à autenticação do Adobe IMS</a><br>
- </strong>Exclusivo do Adobe Managed Services (AMS), gerencie centralmente o acesso às instâncias do AEM Author por meio do Adobe IMS (Identity Management System).</td>
+ </strong>Exclusivo do Adobe Managed Services (AMS), gerencie centralmente o acesso às instâncias do autor do AEM por meio do Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>

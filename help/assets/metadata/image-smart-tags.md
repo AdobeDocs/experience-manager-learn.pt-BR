@@ -6,11 +6,12 @@ feature: Smart Tags
 role: User
 level: Intermediate
 version: 6.4, 6.5, Cloud Service
-kt: 645
+jira: KT-645
 thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
+doc-type: Feature Video
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 11%
@@ -19,7 +20,7 @@ ht-degree: 11%
 
 # Tags inteligentes para imagens
 
-As Tags inteligentes do AEM Assets para imagens aumentam a pesquisa do AEM Assets adicionando automaticamente tags de metadados derivadas a ativos de imagem, melhorando a experiência de criação ao facilitar e agilizar a localização da imagem correta.
+As Tags inteligentes da AEM Assets para imagens aumentam a pesquisa da AEM Assets adicionando automaticamente tags de metadados derivadas a ativos de imagem, melhorando a experiência de criação ao facilitar e agilizar a localização da imagem correta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
 

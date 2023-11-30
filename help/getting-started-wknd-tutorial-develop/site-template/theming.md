@@ -2,16 +2,16 @@
 title: Fluxo de trabalho de tema | Criação rápida de sites no AEM
 description: Saiba como atualizar as fontes de tema de um site do Adobe Experience Manager para aplicar estilos específicos da marca. Saiba como usar um servidor proxy para exibir uma visualização ao vivo das atualizações de CSS e Javascript. Este tutorial também abordará como implantar atualizações de temas em um site AEM usando o pipeline de front-end do Adobe Cloud Manager.
 version: Cloud Service
-type: Tutorial
 feature: Core Components
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 7498
+jira: KT-7498
 thumbnail: KT-7498.jpg
+doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -80,7 +80,7 @@ Há alguns exemplos de repositórios GitHub que podem ser usados como referênci
 * [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
 * [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Usado como exemplo para projetos &quot;reais&quot;.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você acabou de atualizar e implantar um tema para AEM!
 

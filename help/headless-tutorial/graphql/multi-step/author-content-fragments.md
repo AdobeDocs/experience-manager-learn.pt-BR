@@ -3,17 +3,17 @@ title: Criação de fragmentos de conteúdo - Introdução ao AEM headless - Gra
 description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Crie e edite um novo Fragmento de conteúdo com base em um Modelo de fragmento de conteúdo. Saiba como criar variações de Fragmentos de conteúdo.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6713
+jira: KT-6713
 thumbnail: 22451.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ Os fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
    ![Abrir propriedades da pasta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Toque no **Cloud Services** guia. Na guia Configuração na nuvem, use o localizador de caminho para selecionar o **Meu projeto** configuração. O valor deve ser `/conf/my-project`.
+1. Toque no **Cloud Service** guia. Na guia Configuração na nuvem, use o localizador de caminho para selecionar o **Meu projeto** configuração. O valor deve ser `/conf/my-project`.
 
    ![Definir configuração na nuvem](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -90,7 +90,7 @@ Em seguida, vários Fragmentos de conteúdo são criados com base no **Equipe** 
    * Nome: `john-doe`
 
    ![Novo fragmento de conteúdo](assets/author-content-fragments/new-content-fragment-john-doe.png)
-1. Toque **Criar**.
+1. Toque em **Criar**.
 1. Repita as etapas acima para criar um fragmento representando **Alison Smith**:
 
    * Local: `/content/dam/my-project/en`
@@ -100,11 +100,11 @@ Em seguida, vários Fragmentos de conteúdo são criados com base no **Equipe** 
 
    Toque **Criar** para criar o fragmento Pessoa.
 
-1. Em seguida, repita as etapas para criar um **Equipe** fragmento que representa **Equipe Alfa**:
+1. Em seguida, repita as etapas para criar um **Equipe** fragmento que representa **Alpha da equipe**:
 
    * Local: `/content/dam/my-project/en`
    * Modelo de fragmento de conteúdo: **Equipe**
-   * Título: **Equipe Alfa**
+   * Título: **Alpha da equipe**
    * Nome: `team-alpha`
 
    Toque **Criar** para criar o fragmento Equipe.
@@ -131,7 +131,7 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
 ## Editar fragmento do conteúdo da equipe {#edit-team-content-fragment}
 
-1. Abra o **Equipe Alfa** Fragmento de conteúdo usando a interface do fragmento de conteúdo.
+1. Abra o **Alpha da equipe** Fragmento de conteúdo usando a interface do fragmento de conteúdo.
 1. Preencha os campos para **Título**, **Nome curto**, e **Descrição**.
 1. Selecione o **John Doe** e **Alison Smith** Fragmentos de conteúdo para preencher o **Membros da equipe** campo:
 
@@ -141,7 +141,7 @@ Em seguida, preencha os fragmentos recém-criados com dados.
    >
    >Também é possível criar Fragmentos de conteúdo em linha usando o **Novo fragmento de conteúdo** botão.
 
-1. Toque **Salvar e fechar** para salvar as alterações no fragmento Alfa de equipe.
+1. Toque **Salvar e fechar** para salvar as alterações no fragmento Alpha do grupo.
 
 ## Publicar fragmentos de conteúdo
 
@@ -154,7 +154,7 @@ Após a revisão e a verificação, publique o `Content Fragments`
 1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publish**.
    ![Publicar fragmento do conteúdo](assets/author-content-fragments/publish-content-fragment.png)
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você criou vários fragmentos de conteúdo e uma variação.
 

@@ -12,10 +12,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
-kt: 10208
+jira: KT-10208
 exl-id: e032070b-7332-4c2f-97ee-7e887a61aa7a
 last-substantial-update: 2022-01-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%

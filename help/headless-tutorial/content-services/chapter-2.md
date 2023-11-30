@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 9%
@@ -17,7 +18,7 @@ ht-degree: 9%
 
 # Capítulo 2 - Utilização de modelos de fragmento de conteúdo
 
-Os modelos de fragmento de conteúdo do AEM definem esquemas de conteúdo que podem ser usados para modelar a criação de conteúdo bruto por autores do AEM. Essa abordagem é semelhante à criação em andaime ou baseada em formulários. O conceito principal com Fragmentos de conteúdo é que o conteúdo criado é independente de apresentação, o que significa que ele é destinado ao uso em vários canais, onde o aplicativo de consumo, seja o AEM, um aplicativo de página única ou um aplicativo móvel, controla como o conteúdo é exibido ao usuário.
+Os modelos de fragmento de conteúdo do AEM definem esquemas de conteúdo que podem ser usados para modelar a criação de conteúdo bruto por autores do AEM. Essa abordagem é semelhante à criação em andaime ou baseada em formulários. O conceito principal com Fragmentos de conteúdo é que o conteúdo criado é independente de apresentação, o que significa que ele é destinado ao uso de vários canais, em que o aplicativo de consumo, seja o AEM, um aplicativo de página única ou um aplicativo móvel, controla como o conteúdo é exibido ao usuário.
 
 A principal preocupação do fragmento de conteúdo é garantir:
 
@@ -57,7 +58,6 @@ Se os modelos de fragmento de conteúdo forem **não** ativado para uma configur
    >    1. Abertura [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Vá até `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Exclua o `models` nó
-
    >    
    >Todos os modelos de fragmento de conteúdo existentes criados nessa configuração são excluídos, bem como suas definições são armazenadas em `/conf/wknd-mobile/settings/dam/cfm/models`.
 
@@ -66,7 +66,7 @@ Se os modelos de fragmento de conteúdo forem **não** ativado para uma configur
    1. Navegue até **[!UICONTROL AEM] > [!UICONTROL Assets] > [!UICONTROL Arquivos]**
    1. Selecione o **[!UICONTROL WKND Mobile] pasta**
    1. Toque no **[!UICONTROL Propriedades]** botão na barra de ação superior para abrir [!UICONTROL Propriedades da pasta]
-   1. Entrada [!UICONTROL Propriedades da pasta], toque na guia **[!UICONTROL Cloud Services]** guia
+   1. Entrada [!UICONTROL Propriedades da pasta], toque na guia **[!UICONTROL Cloud Service]** guia
    1. Verifique se **[!UICONTROL Configuração na nuvem]** o campo está definido como **/conf/wknd-mobile**
    1. Toque **[!UICONTROL Salvar e fechar]** no canto superior direito para continuar com as alterações
 

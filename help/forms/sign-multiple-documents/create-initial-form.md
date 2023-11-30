@@ -6,10 +6,10 @@ version: 6.4,6.5
 topic: Development
 role: User
 level: Intermediate
-kt: 6892
+jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 5%

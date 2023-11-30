@@ -2,15 +2,12 @@
 title: Introdução aos modelos básicos
 description: Saiba mais sobre os Modelos básicos no Dynamic Media Classic, modelos baseados em imagem chamados do Servidor de imagens e que consistem em imagens e texto renderizado. Um modelo pode ser alterado dinamicamente por meio da URL após a publicação do modelo. Você aprenderá a fazer upload de um PSD do Photoshop no Dynamic Media Classic para usá-lo como a base de um modelo. Crie um Modelo básico de merchandising simples que consiste em camadas de imagem. Adicione camadas de texto e torne-as variáveis por meio do uso de parâmetros. Construa um URL de modelo e manipule a imagem dinamicamente por meio do navegador da Web.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%
@@ -89,7 +86,7 @@ Antes de fazer upload dos ativos do modelo para o Dynamic Media Classic, será n
 
 ### Preparando o PSD para fazer upload
 
-Antes de fazer upload do arquivo Photoshop para o Dynamic Media Classic, simplifique as camadas no Photoshop para facilitar o trabalho e ter maior compatibilidade com o Servidor de imagens. Seu arquivo PSD geralmente consistirá em muitos elementos que a Dynamic Media Classic não reconhece e você também pode acabar com muitas pequenas partes que são difíceis de gerenciar. Certifique-se de salvar um backup do seu PSD principal caso precise editar o original posteriormente. Você fará o upload da cópia simplificada, e não da principal.
+Antes de fazer upload do arquivo Photoshop para o Dynamic Media Classic, simplifique as camadas no Photoshop para facilitar o trabalho e ter maior compatibilidade com o Servidor de imagens. Seu arquivo PSD geralmente consistirá em muitos elementos que a Dynamic Media Classic não reconhece e você também pode acabar com muitas pequenas partes que são difíceis de gerenciar. Certifique-se de salvar um backup do PSD principal caso precise editar o original posteriormente. Você fará upload da cópia simplificada, e não da principal.
 
 ![imagem](assets/basic-templates/basic-templates-2.jpg)
 

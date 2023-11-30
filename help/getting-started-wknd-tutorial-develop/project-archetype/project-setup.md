@@ -2,17 +2,17 @@
 title: Introdução ao AEM Sites - Configuração do projeto
 description: Crie um Projeto de vários módulos Maven para gerenciar o código e as configurações de um site Experience Manager.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 3418
+jira: KT-3418
 thumbnail: 30152.jpg
+doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 4%
@@ -157,7 +157,7 @@ Crie e implante o código do projeto em uma instância local do AEM.
 
    O perfil Maven `autoInstallSinglePackage` compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, esse pacote é implantado em uma instância AEM executada localmente na porta **4502** e com as credenciais de `admin:admin`.
 
-1. Navegue até o Gerenciador de pacotes na instância de AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Você deve ver pacotes para `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`, e `aem-guides-wknd.all`.
+1. Navegue até o Gerenciador de pacotes na instância local do AEM: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Você deve ver pacotes para `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`, e `aem-guides-wknd.all`.
 
 1. Navegue até o console Sites: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). O site da WKND é um dos sites. Ele inclui uma estrutura de site com uma hierarquia dos EUA e de Idiomas principais. Esta hierarquia do site é baseada nos valores para `language_country` e `isSingleCountryWebsite` ao gerar o projeto usando o arquétipo.
 
@@ -204,7 +204,7 @@ Em, a variável `ui.apps` módulo observe que muitos `.content.xml` arquivos sã
 
 O arquétipo do projeto AEM gera uma amostra `.gitignore` arquivo que pode ser usado como ponto de partida para o qual os arquivos podem ser ignorados com segurança. O arquivo é gerado em `<src>/aem-guides-wknd/.gitignore`.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você criou seu primeiro projeto AEM!
 
@@ -214,7 +214,7 @@ Compreender a tecnologia subjacente de um componente de sites do Adobe Experienc
 
 ## Comandos Maven avançados (Bônus) {#advanced-maven-commands}
 
-Durante o desenvolvimento, você pode estar trabalhando apenas com um dos módulos e deseja evitar criar o projeto inteiro para economizar tempo. Você também pode querer implantar diretamente em uma instância de publicação do AEM ou talvez em uma instância do AEM que não esteja em execução na porta 4502.
+Durante o desenvolvimento, você pode estar trabalhando apenas com um dos módulos e deseja evitar criar o projeto inteiro para economizar tempo. Talvez você também queira implantar diretamente em uma instância de publicação do AEM ou talvez em uma instância do AEM que não esteja em execução na porta 4502.
 
 Em seguida, vamos rever alguns perfis e comandos Maven adicionais que você pode usar para obter mais flexibilidade durante o desenvolvimento.
 

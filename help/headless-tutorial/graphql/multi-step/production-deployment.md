@@ -1,5 +1,5 @@
 ---
-title: Implantação de produção usando um serviço de publicação do AEM - Introdução ao AEM sem periféricos - GraphQL
+title: Implantação de produção usando um serviço de publicação do AEM - Introdução ao AEM Headless - GraphQL
 description: Saiba mais sobre os serviços de Autor e Publicação do AEM e o padrão de implantação recomendado para aplicativos headless. Neste tutorial, aprenda a usar variáveis de ambiente para alterar dinamicamente um endpoint do GraphQL com base no ambiente de destino. Saiba como configurar corretamente o AEM para CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -7,10 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 7131
+jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 # Implantação de produção com um serviço de publicação do AEM
 
-Neste tutorial, você configurará um ambiente local para simular o conteúdo que está sendo distribuído de uma instância de Autor para uma instância de Publicação. Você também gerará um build de produção de um aplicativo React configurado para consumir conteúdo do ambiente de publicação do AEM usando as APIs do GraphQL. Ao longo do caminho, você aprenderá a usar variáveis de ambiente de maneira eficaz e a atualizar as configurações do CORS do AEM.
+Neste tutorial, você configurará um ambiente local para simular o conteúdo que está sendo distribuído de uma instância de Autor para uma instância de Publicação. Você também gerará um build de produção de um aplicativo React configurado para consumir conteúdo do ambiente de publicação AEM usando as APIs do GraphQL. Ao longo do caminho, você aprenderá a usar variáveis de ambiente de maneira eficaz e a atualizar as configurações do CORS do AEM.
 
 ## Pré-requisitos
 
@@ -29,7 +29,7 @@ Este tutorial faz parte de um tutorial com várias partes. Pressupõe-se que as 
 
 Saiba como:
 
-* Entender a arquitetura de Autor e publicação do AEM.
+* Entenda a arquitetura de Autor e Publicação do AEM.
 * Conheça as práticas recomendadas para gerenciar variáveis de ambiente.
 * Saiba como configurar corretamente o AEM para CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
 
@@ -58,7 +58,7 @@ No final, três servidores locais estão sendo executados:
 
 ## Instalar o SDK do AEM - Modo de publicação {#aem-sdk-publish}
 
-Atualmente, temos uma instância do SDK em execução no **Autor** modo. O SDK também pode ser iniciado em **Publish** para simular um ambiente de publicação do AEM.
+Atualmente, temos uma instância do SDK em execução no **Autor** modo. O SDK também pode ser iniciado em **Publish** para simular um ambiente de publicação AEM.
 
 Um guia mais detalhado para configurar um ambiente de desenvolvimento do local [pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
@@ -98,7 +98,7 @@ Assim como na instância do Autor, a instância de Publicação precisa ter os e
 
    ![Site de referência de saída WKND](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   Diferentemente da instância do Autor do AEM, as instâncias de Publicação do AEM assumem o padrão de acesso anônimo somente leitura. Queremos simular a experiência de um usuário anônimo ao executar o aplicativo React.
+   Diferentemente da instância do Autor AEM, as instâncias AEM Publish assumem o padrão de acesso anônimo somente leitura. Queremos simular a experiência de um usuário anônimo ao executar o aplicativo React.
 
 ## Atualizar variáveis de Ambiente para apontar para a instância de Publicação {#react-app-publish}
 
@@ -399,7 +399,7 @@ Em seguida, experimente a configuração CORS da instância de publicação do A
 
    ![Erro de CORS corrigido](assets/publish-deployment/cors-error-corrected.png)
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns! Agora você simulou uma implantação de produção completa usando um ambiente de publicação do AEM. Você também aprendeu a usar a configuração do CORS no AEM.
 

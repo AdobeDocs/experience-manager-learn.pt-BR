@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate, Experienced
-kt: 6265
+jira: KT-6265
 thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
+doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 2%
@@ -294,7 +295,7 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
 
    Você deve ver a mensagem do console `Byline Clicked!` e o nome do Subtítulo.
 
-   A variável `cmp:click` é o mais fácil de conectar ao evento. Para componentes mais complexos e rastrear outros comportamentos, é possível adicionar JavaScript personalizado para adicionar e registrar novos eventos. Um ótimo exemplo é o componente Carrossel, que aciona um `cmp:show` evento sempre que um slide for alternado. Consulte a [código-fonte para obter mais detalhes](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
+   A variável `cmp:click` é o mais fácil de conectar ao evento. Para componentes mais complexos e rastrear outros comportamentos, é possível adicionar JavaScript personalizado para adicionar e registrar novos eventos. Um ótimo exemplo é o componente Carrossel, que aciona um `cmp:show` evento sempre que um slide é alternado. Consulte a [código-fonte para obter mais detalhes](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/carousel/v1/carousel/clientlibs/site/js/carousel.js).
 
 ## Usar o utilitário DataLayerBuilder {#data-layer-builder}
 
@@ -424,7 +425,7 @@ Uma classe de utilitário, `DataLayerBuilder`, existe para executar a maior part
    >
    > Se estiver criando uma Camada de dados avançada para objetos reutilizados em uma implementação, é recomendável extrair os elementos da Camada de dados em seus próprios objetos Java™ específicos da camada de dados. Por exemplo, os Componentes principais do Commerce adicionaram interfaces para `ProductData` e `CategoryData` já que eles podem ser usados em muitos componentes em uma implementação do Commerce. Revisão [o código no repositório aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) para obter mais detalhes.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Você acabou de explorar algumas maneiras de estender e personalizar a Camada de dados do cliente Adobe com componentes AEM!
 

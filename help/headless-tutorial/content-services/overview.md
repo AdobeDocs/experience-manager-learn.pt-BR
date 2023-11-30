@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 6%
@@ -30,7 +31,7 @@ Este tutorial explica como os serviços de conteúdo do AEM podem ser usados par
 Este tutorial abordará os seguintes tópicos:
 
 * Criar conteúdo que representa um evento usando fragmentos de conteúdo
-* Definir pontos de acesso do AEM Content Services usando Modelos e páginas do AEM Sites que exponham os dados do Evento como JSON
+* Defina um ponto final do AEM Content Services usando Modelos e páginas do AEM Sites que expõem os dados do Evento como JSON
 * Saiba como os Componentes principais do WCM no AEM podem ser usados para permitir que os profissionais de marketing criem pontos de extremidade JSON
 * Consumir AEM Content Services JSON de um aplicativo móvel
    * O uso do Android é porque ele tem um emulador entre plataformas que todos os usuários (Windows, macOS e Linux) deste tutorial podem usar para executar o aplicativo nativo.
@@ -43,7 +44,7 @@ Se você encontrar um problema com o tutorial ou o código, deixe um [Problema d
 
 ## AEM GraphQL versus AEM Content Services
 
-|  | APIs do GraphQL para AEM | Serviços de conteúdo AEM |
+|                                | APIs do GraphQL para AEM | Serviços de conteúdo AEM |
 |--------------------------------|:-----------------|:---------------------|
 | Definição de esquema | Modelos de fragmentos do conteúdo estruturado | Componentes do AEM |
 | Conteúdo | Fragmentos de conteúdo | Componentes do AEM |

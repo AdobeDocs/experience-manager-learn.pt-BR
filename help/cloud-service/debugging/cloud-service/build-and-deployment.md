@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5434
+jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 0%
@@ -33,14 +33,14 @@ A etapa de validação simplesmente garante que as configurações básicas do C
 ### O ambiente está em um estado inválido
 
 + __Mensagem de erro:__ O ambiente está em um estado inválido.
-   ![O ambiente está em um estado inválido](./assets/build-and-deployment/validation__invalid-state.png)
+  ![O ambiente está em um estado inválido](./assets/build-and-deployment/validation__invalid-state.png)
 + __Causa:__ O ambiente de destino do pipeline está em um estado transitório, no qual não pode aceitar novas builds.
 + __Resolução:__ Aguarde até que o estado seja resolvido para um estado em execução (ou atualização disponível). Se o ambiente estiver sendo excluído, recrie-o ou escolha outro ambiente para o qual criar.
 
 ### Não foi possível encontrar o ambiente associado ao pipeline
 
 + __Mensagem de erro:__ O ambiente está marcado como excluído.
-   ![O ambiente está marcado como excluído](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
+  ![O ambiente está marcado como excluído](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
 + __Causa:__ O ambiente que o pipeline está configurado para usar foi excluído.
 Mesmo que um novo ambiente com o mesmo nome seja recriado, o Cloud Manager não reassociará automaticamente o pipeline a esse ambiente com o mesmo nome.
 + __Resolução:__ Edite a configuração do pipeline e selecione novamente o ambiente no qual implantar.
@@ -48,7 +48,7 @@ Mesmo que um novo ambiente com o mesmo nome seja recriado, o Cloud Manager não 
 ### Não foi possível encontrar a ramificação Git associada ao pipeline
 
 + __Mensagem de erro:__ Pipeline inválido: XXXXXX. Motivo=Branch=xxxx não encontrado no repositório.
-   ![Pipeline inválido: XXXXXX. Motivo=Ramificação=xxxx não encontrada no repositório](./assets/build-and-deployment/validation__branch-not-found.png)
+  ![Pipeline inválido: XXXXXX. Motivo=Ramificação=xxxx não encontrada no repositório](./assets/build-and-deployment/validation__branch-not-found.png)
 + __Causa:__ A ramificação Git que o pipeline está configurado para usar foi excluída.
 + __Resolução:__ Recrie a ramificação Git ausente usando exatamente o mesmo nome ou reconfigure o pipeline para criar a partir de uma ramificação diferente existente.
 
@@ -135,16 +135,15 @@ O AEM as a Cloud Service inclui automaticamente a versão mais recente dos Compo
 Para evitar essa falha, sempre que uma Atualização do ambiente as a Cloud Service AEM estiver disponível, inclua a atualização como parte da próxima build/implantação e sempre verifique se as atualizações estão incluídas após incrementar a versão dos Componentes principais na base de código do aplicativo.
 
 + __Sintomas:__
-A etapa Criar imagem falha com um relatório de ERRO que 
-`com.adobe.cq.wcm.core.components...` pacote(s) em intervalos de versões específicos não pôde ser importado pelo `core` projeto.
+A etapa Criar imagem falha com um relatório de ERRO que `com.adobe.cq.wcm.core.components...` pacote(s) em intervalos de versões específicos não pôde ser importado pelo `core` projeto.
 
-   ```
-   [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
-   [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
-   [INFO] ------------------------------------------------------------------------
-   [INFO] BUILD FAILURE
-   [INFO] ------------------------------------------------------------------------
-   ```
+  ```
+  [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
+  [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
+  [INFO] ------------------------------------------------------------------------
+  [INFO] BUILD FAILURE
+  [INFO] ------------------------------------------------------------------------
+  ```
 
 + __Causa:__  O pacote OSGi do aplicativo (definido na variável `core` projeto) importa classes Java da dependência principal dos Componentes principais, em um nível de versão diferente do que é implantado no AEM as a Cloud Service.
 + __Resolução:__
@@ -158,11 +157,11 @@ Se as abordagens de solução de problemas acima não resolverem o problema, cri
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Guia Suporte > Criar caso
 
-   _Se você for membro de várias organizações de Adobe, verifique se a organização de Adobe que tem pipeline com falha está selecionada no alternador de organizações de Adobe antes de criar o caso._
+  _Se você for membro de várias organizações de Adobe, verifique se a organização de Adobe que tem pipeline com falha está selecionada no alternador de organizações de Adobe antes de criar o caso._
 
 ## Implantar em
 
-A etapa Implantar em é responsável por pegar o artefato de código gerado na Imagem de compilação, iniciar novos serviços de Autor e Publicação do AEM usando-o e, após o sucesso, remover quaisquer serviços antigos de Autor e Publicação do AEM. Os pacotes e índices de conteúdo mutável também são instalados e atualizados nesta etapa.
+A etapa Implantar em é responsável por pegar o artefato de código gerado na Imagem de build, iniciar os novos serviços de Autor e Publicação do AEM usando-o e, após o sucesso, remover todos os serviços de Autor e Publicação do AEM antigos. Os pacotes e índices de conteúdo mutável também são instalados e atualizados nesta etapa.
 
 Familiarize-se com [Logs as a Cloud Service do AEM](./logs.md) antes de depurar a etapa Implantar em. A variável `aemerror` O registro contém informações sobre a inicialização e o encerramento de pods que podem ser pertinentes à implantação de problemas. Observe que o log disponível por meio do botão Baixar log na etapa Implantar em do Cloud Manager não é o `aemerror` e não contém informações detalhadas relacionadas à inicialização dos aplicativos.
 
@@ -173,7 +172,7 @@ Os três principais motivos pelos quais a etapa Implantar em podem falhar:
 ### O pipeline do Cloud Manager contém uma versão antiga do AEM
 
 + __Causa:__ Um pipeline do Cloud Manager contém uma versão de AEM mais antiga do que a implantada no ambiente de destino. Isso pode acontecer quando um pipeline é reutilizado e apontado para um novo ambiente que está executando uma versão posterior do AEM. Isso pode ser identificado verificando se a versão do AEM do ambiente é maior do que a versão do AEM do pipeline.
-   ![O pipeline do Cloud Manager contém uma versão antiga do AEM](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
+  ![O pipeline do Cloud Manager contém uma versão antiga do AEM](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Resolução:__
    + Se o ambiente de destino tiver uma Atualização disponível, selecione Atualizar nas ações do ambiente e execute o build novamente.
    + Se o ambiente de destino não tiver uma Atualização disponível, significa que ele está executando a versão mais recente do AEM. Para resolver isso, exclua o pipeline e recrie-o.
@@ -184,14 +183,14 @@ Os três principais motivos pelos quais a etapa Implantar em podem falhar:
 O código em execução durante a inicialização do serviço AEM recém-implantado leva tanto tempo que o Cloud Manager atinge o tempo limite antes que a implantação possa ser concluída. Nesses casos, a implantação pode ser bem-sucedida, mesmo que o status do Cloud Manager relatou Falha.
 
 + __Causa:__ O código personalizado pode executar operações, como grandes consultas ou percursos de conteúdo, acionados antecipadamente no pacote OSGi ou nos ciclos de vida dos componentes, atrasando significativamente o tempo de inicialização do AEM.
-+ __Resolução:__ Revise a implementação do código que é executado antecipadamente no ciclo de vida do pacote OSGi e revise o `aemerror` registra os serviços de Autor e Publicação do AEM no momento da falha (hora do log em GMT), conforme mostrado pelo Cloud Manager, e procura mensagens de log indicando quaisquer processos personalizados de execução de log.
++ __Resolução:__ Revise a implementação do código que é executado antecipadamente no ciclo de vida do pacote OSGi e revise o `aemerror` registra os serviços de Autor e Publicação do AEM no momento da falha (hora do registro em GMT), conforme mostrado pelo Cloud Manager, e procura mensagens de registro indicando quaisquer processos personalizados de execução de registro.
 
 ### Código ou configuração incompatível
 
 A maioria das violações de código e configuração é capturada anteriormente na build. No entanto, é possível que o código ou a configuração personalizada seja incompatível com o AEM as a Cloud Service e não seja detectado até que seja executado no contêiner.
 
 + __Causa:__ O código personalizado pode invocar operações longas, como consultas grandes ou percursos de conteúdo, acionadas antecipadamente no pacote OSGi ou ciclos de vida de componentes que atrasam significativamente o tempo de inicialização do AEM.
-+ __Resolução:__ Revise o `aemerror` Registra os serviços de Autor e Publicação do AEM por volta do horário da falha (registro em GMT), conforme mostrado pelo Cloud Manager.
++ __Resolução:__ Revise o `aemerror` registra os serviços de Autor e Publicação do AEM por volta do horário (registro em GMT) da falha, conforme mostrado pelo Cloud Manager.
    1. Revise os logs para qualquer ERRO lançado pelas classes Java fornecidas pelo aplicativo personalizado. Se algum problema for encontrado, resolva, envie o código corrigido e recrie o pipeline.
    1. Revise os logs para quaisquer ERROS relatados por aspectos do AEM com os quais você está estendendo/interagindo no aplicativo personalizado e investigue-os; esses ERROS podem não ser diretamente atribuídos a classes Java. Se algum problema for encontrado, resolva, envie o código corrigido e recrie o pipeline.
 
@@ -201,8 +200,8 @@ A maioria das violações de código e configuração é capturada anteriormente
 
 Esse problema é difícil de identificar, pois não resulta em falha na implantação inicial, somente em implantações subsequentes. Os sintomas perceptíveis incluem:
 
-+ A implantação inicial é bem-sucedida, no entanto, o conteúdo mutável novo ou alterado, que faz parte da implantação, parece não existir no serviço de Publicação do AEM.
-+ A ativação/desativação de conteúdo no AEM Author está bloqueada
++ A implantação inicial é bem-sucedida, no entanto, o conteúdo mutável novo ou alterado, que faz parte da implantação, parece não existir no serviço de publicação do AEM.
++ Ativação/desativação de conteúdo no AEM Author está bloqueada
 + As implantações subsequentes falham na etapa Implantar em, com a etapa Implantar em falhando após aproximadamente 60 minutos.
 
 Para validar esse problema, é a causa do comportamento com falha:
@@ -210,7 +209,7 @@ Para validar esse problema, é a causa do comportamento com falha:
 1. Ao determinar que pelo menos um pacote de conteúdo faz parte da implantação, o grava em `/var`.
 1. Verifique se a fila de distribuição primária (em negrito) está bloqueada em:
    + AEM Author > Tools > Deployment > Distribution
-      ![Fila de distribuição bloqueada](./assets/build-and-deployment/deploy-to__var--distribution.png)
+     ![Fila de distribuição bloqueada](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. Ao falhar na implantação subsequente, baixe os logs &quot;Implantar em&quot; do Cloud Manager usando o botão Baixar log:
 
    ![Baixar implantação para logs](./assets/build-and-deployment/deploy-to__var--download-logs.png)
@@ -229,11 +228,11 @@ Para validar esse problema, é a causa do comportamento com falha:
 
    Observe que esse log não conterá esses indicadores nas implantações iniciais que relatam como bem-sucedido, apenas em implantações subsequentes com falha.
 
-+ __Causa:__ O usuário do serviço de replicação do AEM usado para implantar pacotes de conteúdo no serviço de publicação do AEM não pode gravar no `/var` na publicação do AEM. Isso resulta na falha da implantação do pacote de conteúdo no serviço de publicação do AEM.
++ __Causa:__ O usuário do serviço de replicação do AEM usado para implantar pacotes de conteúdo no serviço de publicação do AEM não pode gravar no `/var` no AEM Publish. Isso resulta na falha da implantação do pacote de conteúdo no serviço de publicação do AEM.
 + __Resolução:__ As seguintes maneiras de resolver esses problemas são listadas na ordem de preferência:
    1. Se a variável `/var` Os recursos não são necessários para remover recursos em `/var` de pacotes de conteúdo implantados como parte do aplicativo.
    2. Se a variável `/var` recursos são necessários, defina as estruturas de nó usando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Os scripts de repoinit podem ser direcionados para o AEM Author, AEM Publish ou ambos, por meio dos modos de execução OSGi.
-   3. Se a variável `/var` recursos são necessários apenas para o autor de AEM e não podem ser modelados razoavelmente usando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), mova-os para um pacote de conteúdo distinto, que só é instalado no AEM Author por [incorporação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR#embeddeds) no `all` pacote em uma pasta de modo de execução do AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
+   3. Se a variável `/var` recursos são necessários apenas para o autor de AEM e não podem ser modelados razoavelmente usando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), mova-os para um pacote de conteúdo distinto, que só é instalado no AEM Author por [incorporação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR#embeddeds) no `all` pacote em uma pasta de modo de execução AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
    4. Forneça ACLs apropriadas ao `sling-distribution-importer` usuário do serviço conforme descrito neste [ADOBE KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Criar um caso de suporte do Adobe
@@ -242,4 +241,4 @@ Se as abordagens de solução de problemas acima não resolverem o problema, cri
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Guia Suporte > Criar caso
 
-   _Se você for membro de várias organizações de Adobe, verifique se a organização de Adobe que tem pipeline com falha está selecionada no alternador de organizações de Adobe antes de criar o caso._
+  _Se você for membro de várias organizações de Adobe, verifique se a organização de Adobe que tem pipeline com falha está selecionada no alternador de organizações de Adobe antes de criar o caso._

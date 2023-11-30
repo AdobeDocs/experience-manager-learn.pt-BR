@@ -3,12 +3,12 @@ title: Clique no cartão para exibir o formulário
 description: Fazer drill-down no formulário a partir da exibição de cartão
 feature: Adaptive Forms
 version: 6.5
-kt: 13372
+jira: KT-13372
 topic: Development
 role: User
 level: Intermediate
 exl-id: c8684cd9-b9c5-4b5b-b990-27c5700cea9f
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 3%

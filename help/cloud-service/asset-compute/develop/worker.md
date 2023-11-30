@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6282
+jira: KT-6282
 thumbnail: KT-6282.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Os trabalhadores do Asset compute implementam o contrato de API do trabalhador d
 
 ![Fluxo lógico do trabalhador do asset compute](./assets/worker/logical-flow.png)
 
-1. O serviço do Autor do AEM chama o trabalhador do Asset compute, fornecendo a __(1-A)__ binário original (`source` parâmetro) e __(1-B)__ quaisquer parâmetros definidos no Perfil de processamento (`rendition.instructions` parâmetro).
+1. O serviço de Autor do AEM chama o trabalhador do Asset compute, fornecendo a __(1-A)__ binário original (`source` parâmetro) e __(1-B)__ quaisquer parâmetros definidos no Perfil de processamento (`rendition.instructions` parâmetro).
 1. O SDK do Asset compute orquestra a execução do trabalhador de metadados do Asset compute personalizado `renditionCallback(...)` gerando uma nova representação binária, com base no binário original do ativo __(1-A)__ e quaisquer parâmetros __(1-B)__.
 
    + Neste tutorial, a representação é criada &quot;em andamento&quot;, o que significa que o trabalhador compõe a representação. No entanto, o binário de origem também pode ser enviado para outras APIs de serviço Web para geração de representação.
 
 1. O trabalhador do Asset compute salva os dados binários da nova representação em `rendition.path`.
-1. Os dados binários gravados em `rendition.path` é transportado por meio do SDK do Asset compute para o Serviço do autor do AEM e exposto como __(4-A)__ uma representação de texto e __4-B)__ persistida no nó de metadados do ativo.
+1. Os dados binários gravados em `rendition.path` é transportado por meio do SDK do Asset compute para o AEM Author Service e exposto como __(4-A)__ uma representação de texto e __4-B)__ persistida no nó de metadados do ativo.
 
 O diagrama acima articula as preocupações do desenvolvedor do Asset compute e o fluxo lógico para a invocação do trabalhador do Asset compute. Para os curiosos, o [detalhes internos da execução do Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) estão disponíveis, no entanto, somente os contratos de API do SDK do Asset compute público podem ser dependentes.
 

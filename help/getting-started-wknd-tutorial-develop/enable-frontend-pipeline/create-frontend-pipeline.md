@@ -2,17 +2,17 @@
 title: Implantar usando o pipeline de front-end
 description: Saiba como criar e executar um pipeline de front-end que cria recursos de front-end e implanta no CDN integrado no AEM as a Cloud Service.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -102,7 +102,7 @@ E __mais importante__ para o __Localização do código__ o valor é `/ui.fronte
 
 
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você criou, executou e verificou o pipeline de front-end que só cria e implanta o módulo &quot;ui.frontend&quot; do projeto do WKND Sites. Agora, sua equipe de front-end pode iterar rapidamente sobre o design do site e o comportamento de front-end, fora do ciclo de vida completo do projeto AEM.
 

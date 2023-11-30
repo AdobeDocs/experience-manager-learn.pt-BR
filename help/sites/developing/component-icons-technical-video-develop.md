@@ -1,17 +1,14 @@
 ---
 title: Personalização de ícones de componentes no Adobe Experience Manager Sites
 description: Os Ícones de componente permitem que os autores identifiquem rapidamente um componente com ícones ou abreviações relevantes. Os autores agora podem localizar os Componentes necessários para criar suas experiências da Web mais rápido do que nunca.
-topics: components
-audience: administrator, developer
-doc-type: technical video
-activity: develop
 version: 6.4, 6.5
 feature: Core Components
 topic: Development
 role: User
 level: Intermediate
+doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%

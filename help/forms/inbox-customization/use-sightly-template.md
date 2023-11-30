@@ -7,12 +7,12 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-kt: 5830
+jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%

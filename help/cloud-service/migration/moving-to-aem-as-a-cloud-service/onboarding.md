@@ -6,10 +6,10 @@ feature: Onboarding
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8631
+jira: KT-8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 8%

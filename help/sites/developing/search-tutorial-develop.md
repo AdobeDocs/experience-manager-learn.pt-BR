@@ -6,10 +6,11 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 3%
@@ -105,8 +106,7 @@ Correções e esclarecimentos das discussões no laboratório e respostas das pe
    * As consultas DEVEM especificar uma restrição de caminho que seja igual ao escopo do caminho de consulta do índice, ou ser um descendente dele.
    * Índices com escopo mais amplo (por exemplo, `/oak:index/cqPageLucene`) TAMBÉM indexarão os dados, resultando em assimilação duplicada e custo de uso do disco.
    * Pode exigir gerenciamento de configuração duplicado (por exemplo, adicionar as mesmas indexRules em vários índices de locatário se eles precisarem atender aos mesmos conjuntos de consultas)
-   * Essa abordagem é mais adequada no nível de publicação do AEM para pesquisa de site personalizada, já que no AEM Author é comum que as consultas sejam executadas no alto da árvore de conteúdo para diferentes locatários (por exemplo, por meio do OmniSearch). Definições de índice diferentes podem resultar em um comportamento diferente com base apenas na restrição de caminho.
-
+   * Essa abordagem é mais adequada no nível de publicação do AEM para pesquisa de site personalizada, como no AEM Author, é comum que as consultas sejam executadas no alto da árvore de conteúdo para diferentes locatários (por exemplo, por meio do OmniSearch). Definições de índice diferentes podem resultar em um comportamento diferente com base apenas na restrição de caminho.
 
 3. **Onde está uma lista de todos os analisadores disponíveis?**
 

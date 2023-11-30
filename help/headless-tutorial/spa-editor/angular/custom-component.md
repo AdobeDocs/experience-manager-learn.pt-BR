@@ -2,18 +2,15 @@
 title: Criar um componente personalizado | Introdução ao SPA Editor e Angular do AEM
 description: Saiba como criar um componente personalizado a ser usado com o Editor de SPA AEM. Saiba como desenvolver caixas de diálogo de criação e Modelos Sling para estender o modelo JSON e preencher um componente personalizado.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 3%
@@ -236,6 +233,7 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    Alguma &quot;lógica de negócios&quot; adicional é adicionada para retornar o valor da mensagem como maiúsculas. Isso nos permite ver a diferença entre o valor bruto armazenado pela caixa de diálogo do autor e o valor exposto pelo Modelo do Sling.
 
    >[!NOTE]
+   >
    É possível exibir a [CustomComponentImpl.java concluído aqui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Atualizar o componente de Angular
@@ -328,7 +326,7 @@ Em seguida, crie o `Custom Component` uso do editor SPA AEM.
 
    Observe que o valor JSON está definido como todas as letras maiúsculas com base na lógica adicionada ao Modelo Sling.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu a criar um componente AEM personalizado e como os Modelos e caixas de diálogo do Sling funcionam com o modelo JSON.
 

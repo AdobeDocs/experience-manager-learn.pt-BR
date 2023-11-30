@@ -6,10 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 9442
+jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 2%
@@ -158,7 +158,7 @@ _Screencast de etapas_
 
 ## 5. Editar conteúdo no AEM
 
-Com o aplicativo WKND React de amostra se conectando e consumindo conteúdo das APIs AEM Headless do GraphQL, crie conteúdo no serviço do AEM Author e veja como a experiência do aplicativo React é atualizada em conjunto.
+Com a amostra do aplicativo WKND React conectando-se e consumindo conteúdo das APIs AEM Headless do GraphQL, crie conteúdo no serviço de autor do AEM e veja como a experiência do aplicativo React é atualizada em conjunto.
 
 _Screencast de etapas_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -178,7 +178,7 @@ _Screencast de etapas_
 1. Atualizar o aplicativo React em execução em [http://localhost:3000](http://localhost:3000).
 1. No aplicativo React, selecione a aventura Ciclismo atualizada e verifique as alterações de conteúdo feitas no fragmento de conteúdo.
 
-1. Usando a mesma abordagem, no serviço do AEM Author:
+1. Usando a mesma abordagem, no serviço de Autor de AEM:
    1. Desfaça a publicação de um fragmento de conteúdo Adventure existente e verifique se ele foi removido da experiência do aplicativo React
    1. Crie e publique um novo Fragmento de conteúdo de aventura e verifique se ele aparece na experiência do aplicativo React
 
@@ -186,7 +186,7 @@ _Screencast de etapas_
    >
    > Se você não estiver familiarizado com a criação e publicação de novos fragmentos de conteúdo ou com o cancelamento da publicação de fragmentos de conteúdo existentes, assista ao screencast acima.
 
-## Parabéns!
+## Parabéns.
 
 Parabéns! Você usou o AEM Headless com sucesso para alimentar um aplicativo React!
 

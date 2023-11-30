@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -84,9 +85,8 @@ Romper este contrato em uma API publicada pode resultar em comportamento incorre
 > Esse JSON pode ser emitido em um **arrumado** forma (formatada) para legibilidade humana, utilizando o `.tidy` seletor:
 > * [http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json)
 
-
 ## Próxima etapa
 
 Como opção, instale o [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) pacote de conteúdo no AEM Author via [Gerenciador de pacotes AEM](http://localhost:4502/crx/packmgr/index.jsp). Este pacote contém as configurações e o conteúdo descritos neste e nos capítulos anteriores do tutorial.
 
-* [Capítulo 6 - Expor o conteúdo no AEM Publish como JSON](./chapter-6.md)
+* [Capítulo 6 - Exposição do conteúdo na publicação do AEM como JSON](./chapter-6.md)

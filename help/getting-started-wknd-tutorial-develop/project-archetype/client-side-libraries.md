@@ -2,16 +2,16 @@
 title: Bibliotecas de clientes e fluxo de trabalho de front-end
 description: Saiba como usar bibliotecas de clientes para implantar e gerenciar CSS e JavaScript para uma implementação do Adobe Experience Manager (AEM) Sites. Saiba como o módulo ui.frontend, um projeto de webpack, pode ser integrado ao processo de build completo.
 version: 6.4, 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4083
+jira: KT-4083
 thumbnail: 30359.jpg
+doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2799'
 ht-degree: 2%

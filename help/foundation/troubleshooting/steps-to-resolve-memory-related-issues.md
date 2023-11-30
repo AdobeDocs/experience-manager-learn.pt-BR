@@ -8,8 +8,9 @@ version: 6.5, Cloud Service
 feature: Developer Tools
 topic: Administration
 index: y
+doc-type: Technical Video
 exl-id: 6477e9df-f33f-46b1-aa9b-535063da65dd
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%

@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8844
+jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 3%
@@ -68,7 +68,7 @@ Abra o arquivo .gitignore, adicione o seguinte na parte inferior do arquivo e sa
 
 Selecione qualquer projeto no projeto aem-banking-application, como ui.content, e clique com o botão direito do mouse. Você verá a opção repo e, sob a opção repo, você verá os 4 comandos que adicionamos anteriormente.
 
-## Configurar instância do autor do AEM{#set-up-aem-author-instance}
+## Configurar instância de autor AEM{#set-up-aem-author-instance}
 
 As etapas a seguir podem ser seguidas para configurar rapidamente a instância pronta para nuvem no sistema local.
 * [Baixe o SDK do AEM mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)

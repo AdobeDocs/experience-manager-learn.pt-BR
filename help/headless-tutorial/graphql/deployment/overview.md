@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10794
+jira: KT-10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Dependendo do cliente e de como ele é implantado, as implantações sem perifé
 
 Antes de explorar as considerações de implantação, é fundamental entender a arquitetura lógica do AEM, bem como a separação e as funções dos níveis de serviço do AEM as a Cloud Service. O AEM as a Cloud Service é composto de dois serviços lógicos:
 
-+ __AEM Author__ O é o serviço no qual as equipes criam, colaboram e publicam fragmentos de conteúdo (e outros ativos).
-+ __AEM Publish__ é o serviço que foi publicado Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
-+ __Visualização do AEM__ é o serviço que imita a publicação no comportamento do AEM, mas tem conteúdo publicado para fins de visualização ou revisão. A Visualização do AEM é destinada a públicos-alvo internos, e não para a entrega geral de conteúdo. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
++ __Autor do AEM__ O é o serviço no qual as equipes criam, colaboram e publicam fragmentos de conteúdo (e outros ativos).
++ __Publicação no AEM__ é o serviço que foi publicado Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
++ __Visualização do AEM__ é o serviço que imita o AEM Publicar no comportamento, mas tem conteúdo publicado para fins de visualização ou revisão. A Visualização do AEM é destinada a públicos-alvo internos, e não para a entrega geral de conteúdo. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
 
 ![Arquitetura de serviço do AEM](./assets/overview/aem-service-architecture.png)
 

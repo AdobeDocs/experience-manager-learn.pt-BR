@@ -3,13 +3,13 @@ title: Uso de rich text com AEM Headless
 description: Saiba como criar conteúdo e incorporar conteúdo referenciado usando um editor de rich text de várias linhas com Fragmentos de conteúdo do Adobe Experience Manager e como o rich text é entregue pelas APIs do AEM GraphQL como JSON para ser consumido por aplicativos headless.
 version: Cloud Service
 doc-type: article
-kt: 9985
+jira: KT-9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%
@@ -359,7 +359,7 @@ A API do GraphQL permite que os desenvolvedores criem um query que inclui propri
 Por exemplo, talvez você queira:
 
 * Inclua uma lógica de roteamento personalizada para gerenciar links para outros Fragmentos de conteúdo ao implementar um Aplicativo de página única, como usar o Roteador React ou o Next.js
-* Renderize uma imagem em linha usando o caminho absoluto para um ambiente de publicação do AEM como a `src` valor.
+* Renderize uma imagem em linha usando o caminho absoluto para um ambiente de publicação AEM como a `src` valor.
 * Determine como renderizar uma referência incorporada a outro fragmento de conteúdo com propriedades personalizadas adicionais.
 
 Use o `json` tipo de retorno e inclua o `_references` ao criar uma consulta GraphQL:

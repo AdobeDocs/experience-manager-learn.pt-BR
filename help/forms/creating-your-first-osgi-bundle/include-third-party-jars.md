@@ -6,11 +6,11 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-kt: 11245
+jira: KT-11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%

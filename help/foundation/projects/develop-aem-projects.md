@@ -3,15 +3,12 @@ title: Desenvolver projetos no AEM
 description: Um tutorial de desenvolvimento que ilustra como desenvolver projetos no AEM.  Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
 version: 6.4, 6.5
 feature: Projects, Workflow
-topics: collaboration, development, governance
-activity: develop
-audience: developer, implementer, administrator
-doc-type: tutorial
+doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -261,7 +258,7 @@ Agora podemos testar nosso Modelo de projeto criando um novo projeto.
 
 1. Clique em &quot;Criar&quot; para concluir a criação do projeto com base no Modelo personalizado. Você observará no Painel do projeto que o Bloco de tarefas e os outros blocos configurados em gadgets são exibidos automaticamente.
 
-   ![Mosaico de tarefas](./assets/develop-aem-projects/tasks-tile.png)
+   ![Bloco de tarefas](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Por que o fluxo de trabalho?
@@ -331,7 +328,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
 1. Introduzido no AEM 6.3 é a capacidade de adicionar Estágios de fluxo de trabalho a um determinado fluxo de trabalho. Os estágios serão exibidos para o usuário na Caixa de entrada da guia Informações do fluxo de trabalho. Ele mostrará ao usuário o estágio atual no workflow, bem como os estágios anteriores e posteriores.
 
-   Para configurar os estágios, abra a caixa de diálogo Propriedades da página no SideKick. A quarta guia é rotulada como &quot;Estágios&quot;. Adicione os seguintes valores para configurar os três estágios desse workflow:
+   Para configurar os estágios, abra a caixa de diálogo Propriedades da página no Sidekick. A quarta guia é rotulada como &quot;Estágios&quot;. Adicione os seguintes valores para configurar os três estágios desse workflow:
 
    1. Editar conteúdo
    1. Aprovação
@@ -349,7 +346,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
 1. O processo de fluxo de trabalho Criar tarefa do projeto foi projetado para criar uma Tarefa como uma etapa no fluxo de trabalho. Somente após a conclusão da tarefa é que o workflow avançará. Um aspecto importante da etapa Criar tarefa do projeto é que ela pode ler valores de metadados de fluxo de trabalho e usá-los para criar a tarefa dinamicamente.
 
-   Primeiro exclua a Etapa do participante que é criada por padrão. No Sidekick do menu Componentes, expanda a variável **&quot;Projetos&quot;** subtítulo e arraste e solte a **&quot;Criar tarefa de projeto&quot;** no modelo.
+   Primeiro exclua a Etapa do participante que é criada por padrão. No Sidekick do menu Componentes, expanda a **&quot;Projetos&quot;** subtítulo e arraste e solte a **&quot;Criar tarefa de projeto&quot;** no modelo.
 
    Clique duas vezes na etapa &quot;Criar tarefa do projeto&quot; para abrir a caixa de diálogo do fluxo de trabalho. Configure as seguintes propriedades:
 
@@ -541,7 +538,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Como o grupo Aprovadores tem a opção de enviar o workflow de volta ao editor original para mais revisões, confiaremos no **Ir para** etapa para ler a última ação realizada e rotear o workflow para o início ou deixá-lo continuar.
 
-   Arraste e solte o componente Etapa ir para (encontrado no Sidekick em Fluxo de trabalho) abaixo da divisão OU onde ele se junta novamente. Clique duas vezes e configure as seguintes propriedades na caixa de diálogo:
+   Arraste e solte o componente Etapa Ir para (encontrado no Sidekick em Fluxo de trabalho) abaixo da divisão OR onde ele se une novamente. Clique duas vezes e configure as seguintes propriedades na caixa de diálogo:
 
    ```
    Common Tab
@@ -574,7 +571,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Para publicar a carga, usaremos a guia **Ativar página/ativo** Etapa do processo. Essa etapa do processo requer pouca configuração e adicionará a carga do fluxo de trabalho à fila de replicação para ativação. Adicionaremos a etapa abaixo de Ir para e, dessa forma, ela só poderá ser atingida se o grupo Aprovador tiver aprovado o conteúdo para publicação ou o editor original escolher a rota Ignorar aprovação.
 
-   Arraste e solte a **Ativar página/ativo** Etapa do processo (encontrada no Sidekick em Fluxo de trabalho WCM) abaixo de Etapa Ir para no modelo.
+   Arraste e solte a **Ativar página/ativo** Etapa do processo (encontrada no Sidekick sob WCM Workflow) abaixo de Ir para Step no modelo.
 
    ![modelo de fluxo de trabalho concluído](assets/develop-aem-projects/workflow-model-final.png)
 

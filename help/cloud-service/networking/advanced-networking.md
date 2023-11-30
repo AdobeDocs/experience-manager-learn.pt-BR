@@ -6,14 +6,14 @@ feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9354
+jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 3%
 
 O AEM as a Cloud Service fornece recursos avançados de rede que permitem o gerenciamento preciso de conexões de e para programas as a Cloud Service do AEM.
 
-|  | [Programas de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programas do Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [Programas de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programas do Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Oferece suporte a redes avançadas | ✔ | ✘ |
 
 
 A rede avançada AEM é composta de três opções para gerenciar a conectividade com serviços externos. Um programa do Cloud Manager e seus ambientes as a Cloud Service de AEM só podem usar um único tipo de configuração avançada de rede por vez, portanto, verifique se o tipo mais apropriado está selecionado.
 
-|  | HTTP/HTTPS em portas padrão | HTTP/HTTPS em portas fora do padrão | Conexões não HTTP/HTTPS | IP de saída dedicado | Lista &quot;Hosts sem proxy&quot; | Conectar-se a serviços protegidos por VPN | Limitar o tráfego de publicação do AEM por IP |
+|                                   | HTTP/HTTPS em portas padrão | HTTP/HTTPS em portas fora do padrão | Conexões não HTTP/HTTPS | IP de saída dedicado | Lista &quot;Hosts sem proxy&quot; | Conectar-se a serviços protegidos por VPN | Limitar o tráfego de publicação de AEM por IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Sem rede avançada__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Saída de porta flexível__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |

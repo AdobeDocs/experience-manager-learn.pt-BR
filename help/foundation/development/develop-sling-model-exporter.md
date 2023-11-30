@@ -4,15 +4,12 @@ description: Esta apresentação técnica aborda a configuração do AEM para us
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: content-delivery, development, headless
-activity: develop
-audience: developer
-doc-type: technical video
+doc-type: Technical Video
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

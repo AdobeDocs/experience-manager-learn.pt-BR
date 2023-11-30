@@ -6,8 +6,9 @@ topic: Content Management
 feature: Templates
 role: Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

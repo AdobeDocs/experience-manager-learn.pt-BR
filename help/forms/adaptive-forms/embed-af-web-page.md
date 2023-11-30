@@ -7,10 +7,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 8390
+jira: KT-8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

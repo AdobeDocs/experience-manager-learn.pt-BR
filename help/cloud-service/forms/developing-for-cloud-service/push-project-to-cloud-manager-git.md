@@ -7,9 +7,9 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
-kt: 8851
+jira: KT-8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -32,13 +32,13 @@ Isso adiciona os novos arquivos à ramificação de preparo do repositório Git 
 git commit -m "My First AF"
 ```
 
-Isso confirma os arquivos na ramificação principal do repositório Git local
+Isso confirma os arquivos na ramificação mestre do repositório Git local
 
 ```
 git push -f bankingapp master:"MyFirstAF"
 ```
 
-No comando acima, estamos enviando nossa ramificação principal do repositório Git local para a ramificação MyFirstAF do repositório do Cloud Manager identificado pelo nome amigável do bankingapp.
+No comando acima, estamos enviando a ramificação mestre do repositório Git local para a ramificação MyFirstAF do repositório do Cloud Manager identificado pelo nome amigável do bankingapp.
 
 ## Próximas etapas
 

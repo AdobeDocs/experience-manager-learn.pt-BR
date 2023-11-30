@@ -1,12 +1,8 @@
 ---
 title: Depuração de uma implementação de tags
 description: Uma introdução a algumas ferramentas e técnicas comuns para depurar uma implementação de tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Depurador de Experience Platform para identificar e solucionar problemas de aspectos principais de uma implementação de tags.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 6047
+jira: KT-6047
 thumbnail: 38567.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
