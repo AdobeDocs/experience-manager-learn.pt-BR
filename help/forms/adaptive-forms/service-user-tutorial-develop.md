@@ -7,10 +7,11 @@ role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
 last-substantial-update: 2020-09-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 187
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
+source-wordcount: '415'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ Este artigo o orienta pelo processo de criação de um usuário de serviço no A
 
 Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end, o que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos foi descontinuado no AEM 6.3. Em vez disso, é usado um usuário do sistema com permissões específicas no repositório.
 
-Saiba mais sobre os detalhes de [criar e usar usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Saiba mais sobre os detalhes de [criação e uso de usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador do usuário.
 

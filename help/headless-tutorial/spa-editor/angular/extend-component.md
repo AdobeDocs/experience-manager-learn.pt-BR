@@ -2,10 +2,7 @@
 title: Estender um componente | Introdução ao SPA Editor e Angular do AEM
 description: Saiba como estender um Componente principal existente para ser usado com o Editor de SPA AEM. AEM Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor de SPA. Saiba como usar o padrão de delegação para estender os modelos e recursos do Sling Resource Merger.
 feature: SPA Editor, Core Components
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 621
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 2%
+source-wordcount: '1713'
+ht-degree: 0%
 
 ---
 
@@ -261,7 +259,7 @@ Retorne ao IDE de sua escolha e abra o `core` módulo.
 
    Esses métodos são expostos por meio da API do modelo JSON e passados para o componente Angular.
 
-3. Abrir `CardImpl.java`. Trata-se da implementação do `Card.java` interface. Esta implementação foi parcialmente removida para acelerar o tutorial.  Observe o uso da variável `@Model` e `@Exporter` anotações para garantir que o Modelo do Sling possa ser serializado como JSON por meio do Exportador de modelos do Sling.
+3. Abertura `CardImpl.java`. Trata-se da implementação do `Card.java` interface. Esta implementação foi parcialmente removida para acelerar o tutorial.  Observe o uso da variável `@Model` e `@Exporter` anotações para garantir que o Modelo do Sling possa ser serializado como JSON por meio do Exportador de modelos do Sling.
 
    `CardImpl.java` também usa o [Padrão de delegação para modelos do Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para evitar a regravação da lógica do Componente principal de imagem.
 

@@ -3,7 +3,8 @@ title: Utilização da pesquisa no AEM Assets
 description: Nesses vídeos, analisamos algumas melhorias na pesquisa de Ativos introduzidas no AEM. Os autores podem aumentar determinados ativos nos resultados da pesquisa por palavra-chave atualizando as respectivas propriedades de metadados. Além disso, analisamos algumas configurações avançadas para predicados do Assets OmniSearch.
 version: 6.4, 6.5
 doc-type: Feature Video
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 388
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%

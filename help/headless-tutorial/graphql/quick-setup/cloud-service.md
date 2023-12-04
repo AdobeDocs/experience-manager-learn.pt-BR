@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 868
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
@@ -100,12 +101,12 @@ _Screencast de etapas_
       1. Selecionar __Acionador de implantação > Sobre alterações do Git__
       1. Selecionar __Comportamento de falhas de métricas importantes > Continuar imediatamente__
       1. Selecionar __Continuar__
-   1. Na guia __Código-fonte__
+   1. No __Código-fonte__ guia
       1. Selecionar __Código de pilha completa__ opção
       1. Selecione o __Ambiente de desenvolvimento as a Cloud Service AEM__ do __Ambientes de implantação qualificados__ caixa selecionar
       1. Selecionar `aem-headless-quick-setup-wknd` no __Repositório__ caixa selecionar
       1. Selecionar `main` do __Ramificação Git__ caixa selecionar
-      1. Selecione __Salvar__
+      1. Selecionar __Salvar__
 1. Execute o __Pipeline de implantação de desenvolvimento__
    1. Selecionar __Visão geral__ na navegação superior
    1. Localize o recém-criado __Pipeline de implantação de desenvolvimento__ no __Pipelines__ seção

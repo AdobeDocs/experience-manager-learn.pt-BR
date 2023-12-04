@@ -1,24 +1,19 @@
 ---
 title: Configuração da entrega do documento de canal da Web
-seo-title: Setting up the delivery of web channel document
 description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, analisamos a entrega de documentos de canal da Web por email.
-seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
-uuid: c1066600-1abd-4401-b04f-b93c28603cc7
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 97
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +45,7 @@ Faça logon no AEM Forms.
 * Dessa forma, estamos transmitindo o número da conta pelo atributo de solicitação para o modelo de dados de formulário
 
 * Salve as alterações.
-   ![fdm](assets/requestattribute.gif)
+  ![fdm](assets/requestattribute.gif)
 
 ## Testar entrega de email do documento de canal da Web {#test-email-delivery-of-web-channel-document}
 

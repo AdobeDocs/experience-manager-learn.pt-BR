@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 227
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 5%
+source-wordcount: '789'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +31,7 @@ Este é um tutorial em várias partes e presume-se que as etapas descritas no [D
 * Criar um fragmento de conteúdo com base em um modelo de fragmento de conteúdo
 * Criar uma variação de Fragmento do conteúdo
 
-## Criar um da pasta do ativo
+## Criar uma pasta de ativos
 
 Os fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar fragmentos de conteúdo a partir dos modelos criados no capítulo anterior, uma pasta deve ser criada para armazená-los. Uma configuração é necessária na pasta para habilitar a criação de fragmentos de modelos específicos.
 
@@ -84,16 +85,16 @@ Em seguida, vários Fragmentos de conteúdo são criados com base no **Equipe** 
 1. No painel esquerdo, expanda **Meu projeto** e toque em **Inglês**.
 1. Toque **Criar** para trazer à tona o **Novo fragmento de conteúdo** e insira os seguintes valores:
 
-   * Local: `/content/dam/my-project/en`
+   * Localização: `/content/dam/my-project/en`
    * Modelo de fragmento de conteúdo: **Person**
    * Título: **John Doe**
    * Nome: `john-doe`
 
    ![Novo fragmento de conteúdo](assets/author-content-fragments/new-content-fragment-john-doe.png)
-1. Toque em **Criar**.
+1. Toque **Criar**.
 1. Repita as etapas acima para criar um fragmento representando **Alison Smith**:
 
-   * Local: `/content/dam/my-project/en`
+   * Localização: `/content/dam/my-project/en`
    * Modelo de fragmento de conteúdo: **Person**
    * Título: **Alison Smith**
    * Nome: `alison-smith`
@@ -102,7 +103,7 @@ Em seguida, vários Fragmentos de conteúdo são criados com base no **Equipe** 
 
 1. Em seguida, repita as etapas para criar um **Equipe** fragmento que representa **Alpha da equipe**:
 
-   * Local: `/content/dam/my-project/en`
+   * Localização: `/content/dam/my-project/en`
    * Modelo de fragmento de conteúdo: **Equipe**
    * Título: **Alpha da equipe**
    * Nome: `team-alpha`

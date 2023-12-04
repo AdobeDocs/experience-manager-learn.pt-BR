@@ -3,9 +3,10 @@ title: Como impulsionar a velocidade do conteúdo com o Adobe Experience Manager
 description: Saiba mais sobre a velocidade do conteúdo e seu valor nas empresas. Mergulhe em quatro princípios de implementação efetiva e as armadilhas que devem ser observadas ao longo do caminho.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
+duration: 728
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2795'
+source-wordcount: '2742'
 ht-degree: 0%
 
 ---

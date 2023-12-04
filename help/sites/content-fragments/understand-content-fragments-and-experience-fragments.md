@@ -9,10 +9,11 @@ role: User
 level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 242
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 5%
+source-wordcount: '829'
+ht-degree: 2%
 
 ---
 
@@ -109,7 +110,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 <td><ul>
 <li>Componente Fragmento de experiência do AEM para uso no AEM Sites, AEM Screens ou outros Fragmentos de experiência.</li>
 <li>Exportar como <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">HTML simples</a> para uso por sistemas de terceiros</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=pt-BR" target="_blank">Exportação de HTML para o Adobe Target</a> para ofertas direcionadas</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">Exportação de HTML para o Adobe Target</a> para ofertas direcionadas</li>
 <li>Exportação JSON para o Adobe Target para ofertas direcionadas</li>
 </ul>
 </td>

@@ -13,10 +13,11 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1398
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 4%
+source-wordcount: '1235'
+ht-degree: 1%
 
 ---
 
@@ -217,8 +218,8 @@ Excelente trabalho. Você concluiu a configuração do AEM com o SDK da Web do E
 
 ## Recursos adicionais
 
-+ [Uso da Camada de dados de clientes Adobe com os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR)
++ [Utilização da Camada de dados do cliente Adobe com os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR)
 + [Integração de tags de coleção de dados do Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=pt-BR)
 + [Visão geral do SDK da Web da Adobe Experience Platform e da rede de borda](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Tutoriais de Coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Tutoriais da Coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

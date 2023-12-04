@@ -2,21 +2,19 @@
 title: Desenvolver um trabalhador de metadados do Asset compute
 description: Saiba como criar um trabalhador de metadados de Asset compute que deriva as cores mais usadas em um ativo de imagem e grava os nomes das cores de volta nos metadados do ativo no AEM.
 feature: Asset Compute Microservices
-topics: metadata, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 526
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1405'
+ht-degree: 0%
 
 ---
 
@@ -275,7 +273,7 @@ Chame o trabalhador do AEM criando um novo serviço de perfil de processamento p
          + Chave: `colorFamily`
          + Valor: `pantone`
             + Valores compatíveis: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
-   + __Tipos de mime__
+   + __Tipos de Mime__
       + __Inclui:__ `image/jpeg`, `image/png`, `image/gif`, `image/svg`
          + Esses são os únicos tipos MIME aceitos pelos módulos npm de terceiros usados para derivar as cores.
       + __Exclui:__ `Leave blank`

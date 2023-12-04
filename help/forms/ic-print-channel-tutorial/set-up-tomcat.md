@@ -1,13 +1,8 @@
 ---
 title: Instalar e configurar vídeo Tomcat
-seo-title: Install and Configure Tomcat
 description: Esta é a parte 1 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas.
-uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 thumbnail: 37815.jpg
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
@@ -15,10 +10,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 1%
+source-wordcount: '239'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +39,7 @@ Para configurar o tomcat, siga as seguintes instruções:
 11. Depois que o tomcat for iniciado, teste o endpoint exposto pelo arquivo WAR ao [clicando aqui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. Você deve obter dados de amostra como o resultado desta chamada.
 
-Parabéns !!!. Você configurou o tomcat e implantou o arquivo SampleRest.war.
+Parabéns!!!. Você configurou o tomcat e implantou o arquivo SampleRest.war.
 
 O vídeo a seguir explica a implantação do aplicativo de amostra no Tomcat
 >[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

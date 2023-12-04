@@ -11,10 +11,11 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 350
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 3%
+source-wordcount: '1285'
+ht-degree: 1%
 
 ---
 
@@ -155,7 +156,7 @@ Em seguida, navegue até o serviço de Publicação para visualizar as alteraç�
 
    ![publicar diretamente](assets/author-content-publish/page-editor-publish.png)
 
-1. Retorne para a **Serviço de publicação do AEM** para visualizar as alterações. Provavelmente você **não** veja imediatamente as atualizações. Isso ocorre porque a variável **Serviço de publicação do AEM** inclui [armazenamento em cache por meio de um servidor Web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=pt-BR). Por padrão, o conteúdo de HTML é armazenado em cache por ~5 minutos.
+1. Retorne para a **Serviço de publicação do AEM** para visualizar as alterações. Provavelmente você **não** veja imediatamente as atualizações. Isso ocorre porque a variável **Serviço de publicação do AEM** inclui [armazenamento em cache por meio de um servidor Web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). Por padrão, o conteúdo de HTML é armazenado em cache por ~5 minutos.
 
 1. Para ignorar o cache para fins de teste/depuração, basta adicionar um parâmetro de consulta como `?nocache=true`. O URL seria semelhante a `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Mais detalhes sobre a estratégia e as configurações de armazenamento em cache disponíveis [pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 

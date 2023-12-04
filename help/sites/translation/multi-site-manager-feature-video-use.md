@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 523
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 17%
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
@@ -33,6 +34,6 @@ Visão geral da Live Copy e o Gerenciador de configurações de blueprint são i
 
 ## Recursos adicionais {#additional-resources}
 
-* [Visão geral do console da Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Console de visão geral da Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
 * [Criação e sincronização de Live Copies](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
 * [Práticas recomendadas do MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

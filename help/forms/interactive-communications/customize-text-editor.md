@@ -1,10 +1,7 @@
 ---
 title: Personalizar editor de texto
-seo-title: Customize text editor
 description: Saiba como personalizar o editor de texto.
-seo-description: Learn how to customize text editor.
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
@@ -13,9 +10,10 @@ feature: Interactive Communication
 last-substantial-update: 2023-04-19T00:00:00Z
 jira: KT-13126
 exl-id: e551ac8d-0bfc-4c94-b773-02ff9bba202e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 193
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---

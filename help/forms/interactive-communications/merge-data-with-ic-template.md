@@ -2,20 +2,18 @@
 title: Gerar documento de canal de impressão mesclando dados
 description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -179,7 +177,7 @@ Para testar isso no servidor, siga as seguintes etapas:
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Verifique se o formulário adaptável está configurado para enviar ao Fluxo de trabalho do AEM conforme mostrado abaixo
-   ![imagem](assets/generateic.PNG)
+  ![imagem](assets/generateic.PNG)
 * [Configure o modelo de workflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifique se a etapa do processo e os componentes de email de envio estão configurados de acordo com o seu ambiente
 * [Visualize o ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie
 * O fluxo de trabalho deve ser chamado e o documento de canal de impressão IC deve ser enviado para o recipient especificado no componente de envio de email como um anexo

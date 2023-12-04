@@ -7,14 +7,15 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 253
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
 
-# Consultas persistentes de GraphQL 
+# Consultas persistentes de GraphQL
 
 Consultas persistentes são consultas armazenadas no servidor do Adobe Experience Manager (AEM). Os clientes podem enviar uma solicitação HTTP GET com o nome da consulta para executá-la. O benefício dessa abordagem é a capacidade de armazenamento em cache. Embora as consultas GraphQL do lado do cliente também possam ser executadas usando solicitações HTTP POST, que não podem ser armazenadas em cache, as consultas persistentes podem ser armazenadas em cache por caches HTTP ou um CDN, melhorando o desempenho. As consultas persistentes permitem simplificar suas solicitações e melhorar a segurança, pois as consultas são encapsuladas no servidor e o administrador do AEM tem controle total sobre elas. É necessário **prática recomendada e altamente recomendada** para usar consultas persistentes ao trabalhar com a API AEM GraphQL.
 
@@ -206,7 +207,7 @@ Executando o `getAllAdventureDetailsBySlug` Ao consultar o terminal de linha de 
 
 >[!TIP]
 >
->    Se estiver executando a consulta acima no ambiente do AEM Author, você precisará enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para a sua demonstração e [Chamar a API do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
+>    Se você estiver executando a consulta acima no ambiente de autor do AEM, será necessário enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para a sua demonstração e [Chamar a API do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
 
 Além disso, revise [Como executar uma consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Uso de variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), e [Codificação do URL de consulta para uso por um aplicativo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para saber mais sobre a execução de consulta persistente por aplicativos clientes.
 
@@ -233,7 +234,7 @@ Use o `adventures-all` consulta para atualizar os parâmetros de controle de cac
 Revisão [Armazenamento em cache de consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) para obter mais informações sobre parâmetros de controle de cache default.
 
 
-## Parabéns!
+## Parabéns.
 
 Parabéns! Agora você aprendeu a criar consultas persistentes do GraphQL com parâmetros, atualizar consultas persistentes e usar parâmetros de controle de cache com consultas persistentes.
 

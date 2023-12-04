@@ -1,9 +1,7 @@
 ---
 title: Arquétipo de projeto do AEM
-description: O Arquétipo de projeto do AEM cria um projeto mínimo do Adobe Experience Manager com base em práticas recomendadas como ponto de partida para seus próprios projetos AEM.
+description: O Arquétipo de projeto AEM cria um projeto mínimo do Adobe Experience Manager, baseado em práticas recomendadas, como ponto de partida para seus próprios projetos AEM.
 feature: AEM Project Archetype
-audience: developer
-activity: understand
 version: 6.4, 6.5, Cloud Service
 jira: KT-4675
 thumbnail: 32550.jpg
@@ -12,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 9f46ce7e-9c6d-429d-9d8a-c93c274f70d7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 717
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 50%
+source-wordcount: '65'
+ht-degree: 10%
 
 ---
 

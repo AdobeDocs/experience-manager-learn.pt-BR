@@ -4,14 +4,14 @@ description: Seja você um administrador, autor ou desenvolvedor, a manutenção
 role: Admin
 level: Beginner, Intermediate
 topic: Administration
-audience: author, marketer, developer
 feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+duration: 266
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 7%
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Há vários itens que você precisa monitorar para garantir uma operação sem p
 
 ### Manutenção de rotina
 
-#### [manutenção de índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=pt-BR)
+#### [manutenção de índice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 Os índices permitem que as consultas sejam executadas o mais rápido possível, liberando recursos para outras operações. Verifique se os índices estão na forma de topo de ponta! O AEM cancela consultas que viajam em vez de usar um índice para impedir que uma consulta ruim afete o desempenho geral do AEM.
 
@@ -55,7 +55,7 @@ Remova os binários do lucene e reduza o requisito de tamanho do armazenamento d
 
 Quando um ativo no AEM é excluído, a referência ao registro de armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro de armazenamento de dados permanece. Esse registro de armazenamento de dados sem referência torna-se &quot;lixo&quot; que não precisa ser retido. Nos casos em que existem vários ativos sem referência, é útil eliminá-los para preservar espaço, otimizar o backup e o desempenho de manutenção do sistema de arquivos.
 
-#### [Remoção do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=pt-BR)
+#### [Limpeza do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
@@ -63,7 +63,7 @@ Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do 
 
 Eventos AEM qualificados para registro de auditoria geram muitos dados arquivados. Esses dados podem crescer rapidamente com o tempo devido a replicações, uploads de ativos e outras atividades do sistema.
 
-#### [Segurança](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=pt-BR)
+#### [Segurança](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
 
 Certifique-se de que as práticas recomendadas da Lista de verificação de segurança sejam seguidas cuidadosamente para garantir a instância mais segura do AEM.
 
@@ -95,7 +95,7 @@ Pense antes de ver o que pode ser reutilizado. Um rodapé? Um aviso? Um Cabeçal
 
 ## Geral
 
-Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=pt-BR) e [Serviços de aprendizado digital Adobe (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
+Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Serviços de aprendizado digital Adobe (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
 
 ## Conclusão
 

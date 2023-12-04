@@ -2,7 +2,6 @@
 title: Configuração de extensões do Reader no OSGi do AEM Forms
 description: Adicionar a credencial Reader Extensions ao armazenamento de confiança no OSGi do AEM Forms
 feature: Reader Extensions
-audience: developer
 type: Tutorial
 version: 6.4,6.5
 topic: Administration
@@ -10,7 +9,8 @@ role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%

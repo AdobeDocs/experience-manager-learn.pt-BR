@@ -9,9 +9,10 @@ level: Intermediate
 last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 120
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 Neste artigo, usaremos o serviço de saída para gerar arquivos pdf usando fragmentos xdp. O xdp principal e os fragmentos residem no repositório crx. É importante imitar a estrutura de pastas do sistema de arquivos no AEM. Por exemplo, se estiver usando um fragmento na pasta de fragmentos do xdp, você deve criar uma pasta chamada **fragmentos** em sua pasta base no AEM. A pasta base conterá o modelo base xdp. Por exemplo, se você tiver a seguinte estrutura em seu sistema de arquivos
 * c:\xdptemplates - Conterá o modelo base xdp
 * c:\xdptemplates\fragments - Essa pasta conterá fragmentos e o modelo principal fará referência ao fragmento conforme mostrado abaixo
-   ![fragment-xdp](assets/survey-fragment.png).
+  ![fragment-xdp](assets/survey-fragment.png).
 * A pasta xdpdocuments conterá o modelo base e os fragmentos em **fragmentos** pasta
 
 É possível criar a estrutura necessária usando o [formulários e interface do usuário do documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
@@ -67,7 +68,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Para testar o pacote de amostra no seu sistema**
 * [Implantar o pacote DevelopingWithServiceUSer](assets/DevelopingWithServiceUser.jar)
 * Adicionar a entrada **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** na emenda do serviço mapeador do usuário, conforme mostrado na captura de tela abaixo
-   ![alteração do mapeador de usuários](assets/user-mapper-service-amendment.png)
+  ![alteração do mapeador de usuários](assets/user-mapper-service-amendment.png)
 * [Baixe e importe os arquivos xdp de amostra e os scripts ECMA](assets/watched-folder-fragments-ecma.zip).
 Isso criará uma estrutura de pasta monitorada na pasta c:/fragmentsandoutputservice
 

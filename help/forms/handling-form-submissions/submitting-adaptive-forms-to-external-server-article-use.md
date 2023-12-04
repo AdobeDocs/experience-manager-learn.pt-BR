@@ -1,14 +1,8 @@
 ---
 title: Envio do formulário adaptável ao servidor externo
-seo-title: Submitting Adaptive Form to External Server
 description: Envio do formulário adaptável para o endpoint REST em execução no servidor externo
-seo-description: Submitting Adaptive Form to REST endpoint running on external server
-uuid: 1a46e206-6188-4096-816a-d59e9fb43263
 feature: Adaptive Forms
-topics: developing
-audience: implementer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
 topic: Development
@@ -16,9 +10,10 @@ role: Developer
 level: Beginner
 exl-id: 5363c3f7-9006-4430-b647-f3283a366a64
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ Para publicar dados em um servidor interno, forneça um caminho para o recurso. 
 
 Para publicar dados em um servidor externo, forneça um URL. O formato do URL é <http://host:port/path_to_rest_end_point>. Certifique-se de ter configurado o caminho para lidar com a solicitação POST anonimamente.
 
-Para o propósito deste artigo, escrevi um simples arquivo war que pode ser implantado em sua instância tomcat. Supondo que o tomcat esteja em execução na porta 8080, o URL do POST será
+Para o propósito deste artigo, escrevi um arquivo war simples que pode ser implantado em sua instância tomcat. Supondo que o tomcat esteja em execução na porta 8080, o URL do POST será
 
 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>
 

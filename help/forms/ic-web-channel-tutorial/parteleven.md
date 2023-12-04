@@ -1,23 +1,18 @@
 ---
 title: Configuração do painel de combinação de investimentos
-seo-title: Configuring Investment Mix Panel
 description: Esta é a parte 11 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas.Nesta parte, adicionaremos gráficos de pizza para exibir a combinação de investimento atual e modelo.
-seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
-uuid: b0132912-cb6e-4dec-8309-5125d29ad291
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 97
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---

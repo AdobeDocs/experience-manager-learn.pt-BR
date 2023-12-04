@@ -8,14 +8,15 @@ role: Developer
 level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
 
-# Práticas recomendadas    
+# Práticas recomendadas
 
 Os formulários Adobe Experience Manager (AEM) podem ajudar você a transformar transações complexas em experiências digitais simples e atraentes. O documento a seguir descreve algumas práticas recomendadas adicionais que precisam ser seguidas ao desenvolver o Adaptive Forms. Este documento deve ser usado em conjunto com [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
@@ -37,6 +38,7 @@ Os formulários Adobe Experience Manager (AEM) podem ajudar você a transformar 
    * Os fragmentos de formulário devem ser considerados ao desenvolver formulários grandes. Ativar carregamento lento de fragmentos de formulário para tempos de carregamento mais rápidos
    * **Modelo de dados**
       * É recomendável associar o formulário adaptável ao modelo de dados apropriado
+
    * **Eventos de objeto**
       * O código relacionado à visibilidade de um objeto deve sempre ser colocado no evento de visibilidade desse objeto.
    * **Script**

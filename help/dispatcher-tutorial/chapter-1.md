@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 1 - Conceitos, padrões e antipadrões do Dispatcher"
+title: Capítulo 1 - Conceitos, padrões e antipadrões do Dispatcher
 description: Este capítulo fornece uma breve introdução sobre a história e a mecânica do Dispatcher e discute como isso influencia como um desenvolvedor de AEM projetaria seus componentes.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '17460'
+source-wordcount: '17384'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ No entanto, o conselho &quot;Primeiro fazê-lo funcionar - depois fazê-lo rápi
 
 3. Padrões de software que são usados e reutilizados repetidamente, em todas as partes do sistema. Se o padrão do software ficar abaixo do ideal, todos os artefatos que usam o padrão precisarão ser recodificados.
 
-Lembrar? Na parte superior desta página, dissemos que o Dispatcher é uma parte essencial de um aplicativo AEM. O acesso a um aplicativo web é muito aleatório - os usuários estão chegando e indo em momentos imprevisíveis. No final, todo o conteúdo será (ou deve) ser armazenado em cache no Dispatcher. Portanto, se você prestasse muita atenção, perceberia que o armazenamento em cache poderia ser visto como um artefato &quot;arquitetônico&quot; e, portanto, deveria ser entendido por todos os membros da equipe, tanto desenvolvedores quanto administradores.
+Lembra? Na parte superior desta página, dissemos que o Dispatcher é uma parte essencial de um aplicativo AEM. O acesso a um aplicativo web é muito aleatório - os usuários estão chegando e indo em momentos imprevisíveis. No final, todo o conteúdo será (ou deve) ser armazenado em cache no Dispatcher. Portanto, se você prestasse muita atenção, perceberia que o armazenamento em cache poderia ser visto como um artefato &quot;arquitetônico&quot; e, portanto, deveria ser entendido por todos os membros da equipe, tanto desenvolvedores quanto administradores.
 
 Não estamos dizendo que um desenvolvedor deve realmente configurar o Dispatcher. Eles precisam conhecer os conceitos, especialmente os limites, para garantir que seu código também possa ser aproveitado pelo Dispatcher.
 
@@ -268,7 +269,7 @@ Vamos analisar um resumo rápido do último capítulo, além de mais algumas exc
 
 O último capítulo listou um grande número de exceções quando o Dispatcher não podia armazenar uma solicitação em cache. Mas há mais coisas a serem consideradas: apenas porque o Dispatcher _pode_ armazenar uma solicitação em cache, isso não significa necessariamente que ela _deve_.
 
-O ponto é: o armazenamento em cache geralmente é fácil. O Dispatcher só precisa armazenar o resultado de uma resposta e retorná-lo na próxima vez que a mesma solicitação for recebida. Direita? Errado!
+O ponto é: o armazenamento em cache geralmente é fácil. O Dispatcher só precisa armazenar o resultado de uma resposta e retorná-lo na próxima vez que a mesma solicitação for recebida. Certo? Errado!
 
 A parte difícil é a _invalidação_ ou _rubor_ do cache. O Dispatcher precisa descobrir quando um recurso foi alterado e precisa ser renderizado novamente.
 
@@ -715,7 +716,7 @@ O caminho,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-não se relaciona com nenhum dos recursos invalidados. Lembrar? Apenas invalidamos um recurso &quot;fictício&quot; e dependemos da invalidação automática para considerar &quot;inicial&quot; como inválido. A imagem em si pode nunca ser _fisicamente_ excluído. Assim, o cache crescerá, crescerá e crescerá. Quando as imagens são alteradas e ativadas, elas obtêm novos nomes de arquivo no sistema de arquivos do Dispatcher.
+não se relaciona com nenhum dos recursos invalidados. Lembra? Apenas invalidamos um recurso &quot;fictício&quot; e dependemos da invalidação automática para considerar &quot;inicial&quot; como inválido. A imagem em si pode nunca ser _fisicamente_ excluído. Assim, o cache crescerá, crescerá e crescerá. Quando as imagens são alteradas e ativadas, elas obtêm novos nomes de arquivo no sistema de arquivos do Dispatcher.
 
 Há três problemas com a não exclusão física dos arquivos em cache e sua manutenção indefinidamente:
 
@@ -877,7 +878,7 @@ Só falta o valor da qualidade. O componente sabe qual propriedade é inserida p
   …
 ```
 
-Isso é uma má ideia. Lembrar? As solicitações com parâmetros de consulta não podem ser armazenadas em cache.
+Isso é uma má ideia. Lembra? As solicitações com parâmetros de consulta não podem ser armazenadas em cache.
 
 #### Abordagem Naïve 2: Transmitir Informações Adicionais como Seletor
 

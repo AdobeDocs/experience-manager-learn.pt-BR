@@ -8,17 +8,18 @@ role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 130
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 2%
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 # Costura XDP usando o serviço de montagem
 
 Este artigo fornece os ativos para demonstrar a capacidade de compilar documentos xdp usando o serviço de montagem.
-O código jsp a seguir foi gravado para inserir um subformulário chamado **endereço** de um documento xdp chamado address.xdp em um ponto de inserção chamado **endereço** no documento principal.xdp. O xdp resultante foi salvo na pasta raiz da instalação do AEM.
+O código jsp a seguir foi gravado para inserir um subformulário chamado **endereço** de um documento xdp chamado address.xdp em um ponto de inserção chamado **endereço** no documento master.xdp. O xdp resultante foi salvo na pasta raiz da instalação do AEM.
 
 O serviço do Assembler depende de documentos DDX válidos para descrever a manipulação de documentos PDF. Você pode consultar a [Documento de referência DDX aqui](assets/ddxRef.pdf).A página 40 tem informações sobre a compilação xdp.
 
@@ -52,7 +53,7 @@ O serviço do Assembler depende de documentos DDX válidos para descrever a mani
     finalXDP.copyToFile(new java.io.File("stitched.xdp"));
 ```
 
-O arquivo DDX para inserir fragmentos em outro xdp está listado abaixo. O DDX insere o subformulário  **endereço** de address.xdp no ponto de inserção chamado **endereço** no principal.xdp. O documento resultante chamado **stitched.xdp** é salvo no sistema de arquivos.
+O arquivo DDX para inserir fragmentos em outro xdp está listado abaixo. O DDX insere o subformulário  **endereço** de address.xdp no ponto de inserção chamado **endereço** no master.xdp. O documento resultante chamado **stitched.xdp** é salvo no sistema de arquivos.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -87,3 +88,4 @@ Forneça os seguintes parâmetros de entrada, conforme especificado na captura d
 >[!NOTE]
 >
 >Verifique se a instalação do AEM Forms foi concluída. Todos os seus pacotes precisam estar no estado ativo.
+>

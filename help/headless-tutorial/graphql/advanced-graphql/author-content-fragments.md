@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 818
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2931'
 ht-degree: 1%
 
 ---
@@ -391,7 +392,7 @@ Por fim, vamos adicionar os Fragmentos de conteúdo recém-criados a uma aventur
 
 1. Selecionar **Salvar e fechar** para salvar seu conteúdo.
 
-## Parabéns!
+## Parabéns.
 
 Parabéns! Agora você criou fragmentos de conteúdo com base nos modelos avançados de fragmento de conteúdo criados no capítulo anterior. Você também criou uma política de pastas para limitar quais modelos de fragmento de conteúdo podem ser selecionados em uma pasta.
 

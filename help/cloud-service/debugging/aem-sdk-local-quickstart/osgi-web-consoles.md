@@ -2,20 +2,18 @@
 title: Depuração do SDK do AEM usando o console da Web OSGi
 description: O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 516
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 1%
 
 ---
 

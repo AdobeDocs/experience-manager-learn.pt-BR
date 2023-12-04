@@ -1,7 +1,7 @@
 ---
 title: Tutorial prático do AEM Headless - GraphQL
 description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs do AEM GraphQL.
-doc-type: tutorial
+doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
 thumbnail: KT-6678.jpg
@@ -11,10 +11,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 81
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 5%
+source-wordcount: '277'
+ht-degree: 3%
 
 ---
 

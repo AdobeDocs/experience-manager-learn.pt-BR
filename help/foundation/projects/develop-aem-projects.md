@@ -8,10 +8,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1753
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4571'
-ht-degree: 1%
+source-wordcount: '4460'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +39,7 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/the-basics.html) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/the-basics.html) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Estrutura de um modelo de projeto
 
@@ -258,7 +259,7 @@ Agora podemos testar nosso Modelo de projeto criando um novo projeto.
 
 1. Clique em &quot;Criar&quot; para concluir a criação do projeto com base no Modelo personalizado. Você observará no Painel do projeto que o Bloco de tarefas e os outros blocos configurados em gadgets são exibidos automaticamente.
 
-   ![Bloco de tarefas](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaico de tarefas](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Por que o fluxo de trabalho?

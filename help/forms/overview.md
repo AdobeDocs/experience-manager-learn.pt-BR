@@ -5,9 +5,10 @@ topic: Development
 role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -21,16 +22,13 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 ## Novidades
 
 * **[Manipular mensagens de erro na etapa de serviço Chamar modelo de dados de formulário](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados*
+  *Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados*
 
 * **[Gráficos Multissérie em Documentos de Comunicação Interativa (Vídeo)](./interactive-communications/multiseriescharts.md)**
-
-   *Plotar mais de uma série no mesmo gráfico. Normalmente, os gráficos de várias séries são usados em associação com o tipo de gráfico Linha, Barra, Coluna.*
+  *Plotar mais de uma série no mesmo gráfico. Normalmente, os gráficos de várias séries são usados em associação com o tipo de gráfico Linha, Barra, Coluna.*
 
 * **[Criação de modelos de fluxo de trabalho reutilizáveis](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *Criar modelos de fluxo de trabalho não vinculados a um formulário específico*
+  *Criar modelos de fluxo de trabalho não vinculados a um formulário específico*
 
 </div>
 

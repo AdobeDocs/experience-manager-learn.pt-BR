@@ -11,10 +11,11 @@ thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 448
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 3%
+source-wordcount: '249'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +43,7 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
 * O padrão da Primeira coluna é `assetPath`, que contém o Caminho absoluto do JCR de um ativo.
 
 * As colunas subsequentes na primeira linha apontam para outras propriedades de metadados de um ativo.
-   * Por exemplo : `dc:title, dc:description, jcr:title`
+   * Por exemplo: `dc:title, dc:description, jcr:title`
 
 * Formato de Propriedade de Valor Único
 

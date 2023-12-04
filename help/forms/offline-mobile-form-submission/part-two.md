@@ -1,19 +1,15 @@
 ---
 title: Acionar o fluxo de trabalho do AEM no envio de formulário HTM5 - lidar com o envio de PDF
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Continue preenchendo o formulário para publicação de conteúdo para dispositivos móveis no modo offline e envie o formulário para publicação de conteúdo para dispositivos móveis para acionar o fluxo de trabalho do AEM
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+duration: 182
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -22,12 +18,12 @@ ht-degree: 0%
 
 # Tratar Envio de PDF
 
-Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio de PDF do Acrobat/Reader. Esse servlet, por sua vez, fará uma solicitação HTTP POST para um servlet em execução em uma instância de autor AEM responsável por salvar os dados enviados como um `nt:file` no repositório do Autor do AEM.
+Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio de PDF do Acrobat/Reader. Esse servlet, por sua vez, fará uma solicitação HTTP POST para um servlet em execução em uma instância de autor AEM responsável por salvar os dados enviados como um `nt:file` no repositório do autor do AEM.
 
-Veja a seguir o código do servlet que processa o envio do PDF. Neste servlet, fazemos uma chamada de POST para um servlet montado em **/bin/startworkflow** em uma instância de autor do AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
+Veja a seguir o código do servlet que processa o envio do PDF. Neste servlet, fazemos uma chamada de POST para um servlet montado em **/bin/startworkflow** em uma instância de autor AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
 
 
-## Servlet de publicação do AEM
+## Servlet de publicação AEM
 
 ```java
 package com.aemforms.handlepdfsubmission.core.servlets;
@@ -102,7 +98,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-## Servlet do autor do AEM
+## Servlet de autor AEM
 
 A próxima etapa é armazenar os dados enviados no repositório do autor do AEM. O servlet montado em `/bin/startworkflow` salva os dados enviados.
 

@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 711
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 1%
+source-wordcount: '2213'
+ht-degree: 0%
 
 ---
 
@@ -393,7 +394,7 @@ A variável `ImageComponent` O componente só é visível no **servidor de desen
 
    Em **Plug-ins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
 
-   ![Habilitar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Ativar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
    Clique em **Concluído** para salvar a atualização de política.
 

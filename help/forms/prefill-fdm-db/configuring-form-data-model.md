@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 146
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '491'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ A primeira etapa na criação do modelo de dados de formulário RDBMS é configu
 * Aponte seu navegador para [Integrações de dados](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Clique em _Criar_->_Modelo de dados do formulário_
 * Forneça nome e título significativos para o modelo de dados de formulário, como **Funcionário**
-* Clique em _Avançar_
+* Clique em _Próxima_
 * Selecione a fonte de dados criada na seção anterior (fóruns)
 * Clique em _Criar_->Editar para abrir o modelo de dados de formulário recém-criado no modo de edição
 * Expanda a _fóruns_ para ver o esquema de funcionário. Expanda o nó employee para ver as 2 tabelas

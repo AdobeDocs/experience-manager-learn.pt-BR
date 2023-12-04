@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 274
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -170,7 +171,7 @@ Para fazer com que esse exemplo funcione em seu sistema, siga as etapas listadas
 * [Importar os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) uso do gerenciador de pacotes AEM
 * Abra o [exemplo de formulário no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e envie o formulário.
 * [Navegar até a pasta Pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
-Parabéns!! Você instalou com êxito a amostra no seu sistema
+Parabéns! Você instalou com êxito a amostra no seu sistema
 
 * Vamos explorar o [fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que é acionado no envio do formulário.
 * A primeira etapa do fluxo de trabalho cria um nome de arquivo exclusivo pela concatenação do nome e do município de residência dos candidatos.

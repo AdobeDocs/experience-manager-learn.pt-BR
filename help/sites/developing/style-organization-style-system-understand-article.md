@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 447
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 3%
+source-wordcount: '1522'
+ht-degree: 0%
 
 ---
 
@@ -175,7 +176,7 @@ Observe o nome da classe CSS, `cmp-teaser--alternate`, não precisa corresponder
 
 * **Estilo de layout**
    * Nome do estilo: **Promoção (alinhado à direita)**
-   * Classes em CSS: `cmp-teaser--promo cmp-teaser--alternate`
+   * Classes CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de exibição**
    * Nenhum
 * **Classes CSS efetivas**: `.cmp-teaser--promo.cmp-teaser--alternate`
@@ -186,7 +187,7 @@ Observe o nome da classe CSS, `cmp-teaser--alternate`, não precisa corresponder
 
 * **Estilo de layout**
    * Nome do estilo: **Promoção (alinhado à direita)**
-   * Classes em CSS: `cmp-teaser--promo cmp-teaser--alternate`
+   * Classes CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de exibição**
    * Nome do estilo: **Verde**
    * Classe CSS: `cmp-teaser--primary-color`
@@ -198,7 +199,7 @@ Observe o nome da classe CSS, `cmp-teaser--alternate`, não precisa corresponder
 
 * **Estilo de layout**
    * Nome do estilo: **Promoção (alinhado à direita)**
-   * Classes em CSS: `cmp-teaser--promo cmp-teaser--alternate`
+   * Classes CSS: `cmp-teaser--promo cmp-teaser--alternate`
 * **Estilo de exibição**
    * Nome do estilo: **Amarelo**
    * Classe CSS: `cmp-teaser--secondary-color`

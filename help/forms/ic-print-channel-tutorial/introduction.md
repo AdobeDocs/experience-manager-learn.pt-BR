@@ -1,22 +1,18 @@
 ---
 title: Criação da primeira comunicação interativa para o canal de impressão
-seo-title: Creating your first interactive communication for the print channel
 description: As Comunicações interativas são novidade no AEM Forms 6.4. Este documento o guiará pelas etapas necessárias para criar uma comunicação interativa para o canal de impressão.
-seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the print channel.
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
 last-substantial-update: 2019-08-07T00:00:00Z
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 49
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '174'
 ht-degree: 4%
 
 ---

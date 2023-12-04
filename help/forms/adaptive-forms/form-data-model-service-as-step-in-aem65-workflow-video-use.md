@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 259
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 A partir do AEM Forms 6.4, agora temos a capacidade de usar o Serviço de modelo de dados de formulário como parte do fluxo de trabalho do AEM. O vídeo a seguir aborda as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM
 
->!![NOTE]O recurso demonstrado neste vídeo requer o AEM Forms 6.5.1
+>O recurso demonstrado neste vídeo requer o AEM Forms 6.5.1
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
@@ -29,7 +30,7 @@ Para testar esse recurso no servidor, siga as instruções abaixo
 
 * Configure o tomcat com o arquivo SampleRest.war conforme descrito [aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
-* [ Importar os ativos para o AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
+* [Importar os ativos para o AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
 * O pacote contém o seguinte:
 
    * Modelo de fluxo de trabalho que usa a etapa FDM.

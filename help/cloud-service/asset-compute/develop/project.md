@@ -8,10 +8,11 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 2%
+source-wordcount: '577'
+ht-degree: 0%
 
 ---
 
@@ -37,10 +38,10 @@ Use o [Plug-in de Asset compute CLI do Adobe I/O](../set-up/development-environm
 1. __Selecionar espaço de trabalho__
    + Selecione o `Development` espaço de trabalho
 1. __Quais recursos do aplicativo Adobe I/O você deseja habilitar para este projeto? Selecionar componentes para incluir__
-   + Selecione `Actions: Deploy runtime actions`
+   + Selecionar `Actions: Deploy runtime actions`
    + Use as teclas de setas para selecionar e espaçar para desmarcar/selecionar, e Enter para confirmar a seleção
 1. __Selecionar tipos de ações a serem geradas__
-   + Selecione `DX Asset Compute Worker v1`
+   + Selecionar `DX Asset Compute Worker v1`
    + Use as teclas de setas para selecionar, o espaço para desmarcar/selecionar e Enter para confirmar a seleção
 1. __Como você deseja nomear esta ação?__
    + Usar o nome padrão `worker`.
@@ -54,7 +55,7 @@ A ferramenta de desenvolvedor requer um arquivo chamado `console.json` que cont�
 1. Selecione o espaço de trabalho do projeto para baixar `console.json` credenciais para, nesse caso, selecione `Development`
 1. Vá para a raiz do projeto Adobe I/O e toque em __Baixar tudo__ no canto superior direito.
 1. Um arquivo é baixado como um `.json` arquivo prefixado com o projeto e espaço de trabalho, por exemplo: `wkndAemAssetCompute-81368-Development.json`
-1. Você pode
+1. Você pode:
    + Renomear o arquivo como `console.json` e mova-o para a raiz do seu projeto do Asset compute Worker. Esta é a abordagem neste tutorial.
    + Mova-a para uma pasta arbitrária E faça referência a essa pasta a partir de sua `.env` arquivo com uma entrada de configuração `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. O caminho do arquivo pode ser absoluto ou relativo à raiz do projeto. Por exemplo:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`

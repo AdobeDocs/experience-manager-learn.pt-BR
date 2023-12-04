@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 439
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +83,7 @@ O AMS complementa a instalação básica do Apache Web Server.
 Raízes padrão do documento AMS:
 - Autor:
    - `/mnt/var/www/author/`
-- Publicação:
+- Publicar:
    - `/mnt/var/www/html/`
 - Manutenção de captura e verificação de integridade
    - `/mnt/var/www/default/`

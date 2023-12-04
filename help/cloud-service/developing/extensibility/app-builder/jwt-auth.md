@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 229
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '452'
+ht-degree: 0%
 
 ---
 
@@ -68,14 +69,14 @@ A variável `JWT_PRIVATE_KEY` deve ser especialmente formatado, pois é nativame
 
 >[!TAB macOS]
 
-1. Abrir `Terminal`
+1. Abertura `Terminal`
 1. Execute o comando `base64 -i /path/to/private.key | pbcopy`
 1. A saída base64 é copiada automaticamente para a área de transferência
 1. Colar em `.env` como valor para a chave correspondente
 
 >[!TAB Windows]
 
-1. Abrir `Command Prompt`
+1. Abertura `Command Prompt`
 1. Execute o comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
 1. Execute o comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. Copie a saída base64 para a área de transferência

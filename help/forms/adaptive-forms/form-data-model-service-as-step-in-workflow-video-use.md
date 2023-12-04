@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ A partir do AEM Forms 6.4, agora podemos usar o Modelo de dados de formulário c
 
 Para testar esse recurso no servidor, siga as instruções abaixo
 * [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define as propriedades dos metadados.
->!![NOTE]No AEM Forms 6.5 e superior, esse recurso está disponível imediatamente como [descreva aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>No AEM Forms 6.5 e superior, esse recurso está disponível imediatamente como [descreva aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * Configure o tomcat com o arquivo SampleRest.war conforme descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).O arquivo WAR implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 

@@ -1,7 +1,6 @@
 ---
 title: Personalização da experiência completa da página da Web
 description: Saiba como criar uma atividade do Target para redirecionar as páginas do site de AEM para novas páginas usando o Adobe Target.
-topics: integrations, authoring, personalization, activity, offers
 jira: KT-6353
 thumbnail: 6353-personalization-web-page.jpg
 topic: Integrations
@@ -12,10 +11,11 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 126
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 1%
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ O site da WKND reprojetou sua página inicial e gostaria de redirecionar os visi
 
 1. Exiba as opções disponíveis para a Experiência A e selecione a **Redirecionar para URL** e forneça um URL para a nova página inicial do Site WKND.
 
-   ![URI de redirecionamento](assets/redirect-url.png)
+   ![URL de redirecionamento](assets/redirect-url.png)
 
 1. Renomear *Experiência A* para *Nova página inicial da WKND* e *Experiência B* para *Página inicial da WKND*
 
@@ -59,7 +59,7 @@ O site da WKND reprojetou sua página inicial e gostaria de redirecionar os visi
 
 1. Clique em **Próxima** para ir para Direcionamento e manter uma alocação de tráfego manual de 50 a 50 entre as duas experiências.
 
-   ![Direcionar](assets/targeting.png)
+   ![Direcionamento](assets/targeting.png)
 
 1. Para Metas e configurações, escolha a origem de Relatório como Adobe Target e selecione a métrica Meta como Conversão com uma ação de exibição de página.
 

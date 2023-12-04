@@ -8,9 +8,10 @@ version: 6.4,6.5
 level: Intermediate
 exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 149
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Pegamos a pessoa que iniciou o workflow. Em seguida, obtemos o valor da propried
 
 Dependendo de como a propriedade do gerenciador é armazenada no LDAP, talvez seja necessário fazer alguma manipulação de string para obter a ID do gerenciador.
 
-Leia este artigo para implementar o seu próprio [  ParticipantChooser.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Leia este artigo para implementar o seu próprio [ParticipantChooser.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para testá-lo em seu sistema (para os funcionários da Adobe, você pode usar essa amostra imediatamente)
 

@@ -11,9 +11,10 @@ mini-toc-levels: 1
 thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1427
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '3869'
 ht-degree: 0%
 
 ---
@@ -457,7 +458,7 @@ A variável `BylineImpl.java` é a implementação do Modelo Sling que implement
 
    ![Arquivo Impl de Subtítulo](assets/custom-component/byline-impl-file.png)
 
-1. Abrir `BylineImpl.java`. Especificar que ele implementa o `Byline` interface. Use os recursos de preenchimento automático do IDE ou atualize manualmente o arquivo para incluir os métodos necessários para implementar o `Byline` interface:
+1. Abertura `BylineImpl.java`. Especificar que ele implementa o `Byline` interface. Use os recursos de preenchimento automático do IDE ou atualize manualmente o arquivo para incluir os métodos necessários para implementar o `Byline` interface:
 
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;

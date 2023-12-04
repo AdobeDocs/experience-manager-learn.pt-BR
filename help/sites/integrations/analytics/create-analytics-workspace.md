@@ -12,9 +12,10 @@ doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integração" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 596
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ Em seguida, crie um [projeto](https://experienceleague.adobe.com/docs/analytics/
 
 1. Na barra de ferramentas do Analytics, selecione **Workspace** e clique em para **Criar um novo projeto**.
 
-   ![Espaço de trabalho](assets/create-analytics-workspace/create-workspace.png)
+   ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
 1. Optar por iniciar com um **projeto em branco** ou selecione um dos modelos pré-criados, fornecidos pelo Adobe ou modelos personalizados criados por sua organização. Vários modelos estão disponíveis, dependendo da análise ou caso de uso que você tenha em mente. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) sobre as diferentes opções de modelo disponíveis.
 
@@ -154,18 +155,18 @@ Em seguida, crie uma tabela para criar uma representação visual de como os usu
 1. Vamos analisar a página por seu tipo de modelo. Selecione a métrica de modelo de página dos componentes e arraste e solte a métrica Modelo de página na dimensão Nome da página. Agora é possível exibir o nome da página detalhado por seu tipo de modelo.
 
    * **Antes**
-     ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![EVAR 5](assets/create-analytics-workspace/evar5.png)
 
    * **Depois**
      ![Métricas do eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Para entender como os usuários interagem com os botões CTA quando estão nas páginas do site WKND, é necessário detalhar ainda mais adicionando a métrica ID de botão (eVar8).
 
-   ![eVar8](assets/create-analytics-workspace/evar8.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8.png)
 
 1. Abaixo você pode ver uma representação visual do Site WKND detalhada por seu modelo de página e detalhada ainda mais por interação do usuário com os botões Clique para ação (CTA) do Site WKND.
 
-   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Você pode substituir o valor ID do botão por um nome mais amigável usando as Classificações do Adobe Analytics. Você pode ler mais sobre como criar uma classificação para uma métrica específica [aqui](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). Nesse caso, temos uma métrica de classificação `Button Section (Button ID)` configurar para `eVar8` que mapeia a id do botão para um nome amigável.
 

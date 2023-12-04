@@ -5,10 +5,11 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
-source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '709'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +69,7 @@ Saiba mais sobre os fundamentos do AEM como um Cloud Service e como ele difere d
   </tr>
 </table>
 
-## Migração para o AEM as a Cloud Service?
+## Migrando para o AEM as a Cloud Service?
 
 Planeia a transição do AEM 6 para o AEM as a Cloud Service? Saiba mais sobre a metodologia Adobe para migrar para o AEM as a Cloud Service, bem como as várias ferramentas e recursos que tornam essa transição suave.
 

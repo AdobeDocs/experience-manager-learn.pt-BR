@@ -12,10 +12,11 @@ thumbnail: 30152.jpg
 doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 659
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 4%
+source-wordcount: '1684'
+ht-degree: 1%
 
 ---
 
@@ -254,7 +255,7 @@ A variável **[core](https://experienceleague.adobe.com/docs/experience-manager-
 
 ### Módulos Ui.apps e Ui.content {#apps-content-module}
 
-A variável **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** o módulo maven contém todo o código de renderização necessário para o site sob `/apps`. Isso inclui CSS/JS armazenado em um formato AEM chamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR). Isso também inclui [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) scripts para renderização de HTML dinâmico. Pense no **ui.apps** módulo como um mapa para a estrutura no JCR, mas em um formato que pode ser armazenado em um sistema de arquivos e comprometido com o controle de origem. A variável **ui.apps** o módulo contém apenas o código.
+A variável **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** o módulo maven contém todo o código de renderização necessário para o site sob `/apps`. Isso inclui CSS/JS armazenado em um formato AEM chamado [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Isso também inclui [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) scripts para renderização de HTML dinâmico. Pense no **ui.apps** módulo como um mapa para a estrutura no JCR, mas em um formato que pode ser armazenado em um sistema de arquivos e comprometido com o controle de origem. A variável **ui.apps** o módulo contém apenas o código.
 
 Para criar apenas este módulo:
 

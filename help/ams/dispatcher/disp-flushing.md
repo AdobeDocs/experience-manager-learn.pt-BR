@@ -9,9 +9,10 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 751
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -132,7 +133,7 @@ Se a configuração de nível do arquivo stat for definida como muito alta, cada
 
 Definir esse nível de arquivo como muito baixo pode fazer com que uma solicitação de liberação limpe mais do que o esperado.  O que, por sua vez, faria com que o cache fosse retido com mais frequência, com menos solicitações sendo atendidas do cache, o que pode causar problemas de desempenho.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Defina o `statfilelevel` razoável.  Observe a estrutura de pastas e verifique se ela está configurada para permitir liberações concisas sem precisar percorrer muitos diretórios.   Teste e certifique-se de que ele atenda às suas necessidades durante um teste de desempenho do sistema.
 
@@ -275,7 +276,7 @@ Esta configuração mede a profundidade `.stat` os arquivos precisarão ser gera
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Lembre-se de que, quando ocorre a interação do carimbo de data e hora, ela procura o mais próximo `.stat` arquivo.
 

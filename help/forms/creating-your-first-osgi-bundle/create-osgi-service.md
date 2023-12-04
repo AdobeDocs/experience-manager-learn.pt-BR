@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 126
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 2%
+source-wordcount: '337'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +86,7 @@ A variável `@Reference` A anotação faz parte dos serviços declarativos OSGi 
 ## Criar e implantar o pacote
 
 * Abertura **janela da tela de comandos**
-* Vá até `c:\aemformsbundles\mysite\core`
+* Navegue até `c:\aemformsbundles\mysite\core`
 * Executar o comando `mvn clean install -PautoInstallBundle`
 * O comando acima criará e implantará automaticamente o pacote na instância do AEM em execução em localhost:4502
 

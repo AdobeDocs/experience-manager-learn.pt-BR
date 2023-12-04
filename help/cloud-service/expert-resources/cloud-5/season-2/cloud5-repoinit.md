@@ -1,5 +1,5 @@
 ---
-title: Nuvem 5 - REPOINIT
+title: Cloud 5 - REPOINIT
 description: Utilização do REPOINIT para inicializar o repositório AEM
 version: Cloud Service
 role: Admin, Developer
@@ -8,14 +8,15 @@ thumbnail: 343474.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 6428d1c2-8453-449c-9d57-bb860e2e9c1a
-source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
+duration: 322
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# Nuvem 5 - REPOINIT
+# Cloud 5 - REPOINIT
 
 Introdução ao REPOINIT — ou ao Sling Repository Initializer. Aprenda alguns truques para explorar o potencial de uso dessa ferramenta e alguns de seus casos de uso.
 

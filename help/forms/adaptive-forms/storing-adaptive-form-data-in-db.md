@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 224
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +40,7 @@ O caso de uso é acionar um fluxo de trabalho de AEM em um envio de formulário 
    * FormName - O nome da coluna que conterá o nome do Formulário
    * ColumnName - O nome da coluna que conterá os dados de AF
 
-   ![Especificar a configuração OSGi de detalhes do banco de dados](assets/specify-database-details.png)
+  ![Especificar a configuração OSGi de detalhes do banco de dados](assets/specify-database-details.png)
 
 
 

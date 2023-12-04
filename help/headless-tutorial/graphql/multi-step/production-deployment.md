@@ -10,10 +10,11 @@ mini-toc-levels: 1
 jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 655
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 9%
+source-wordcount: '2137'
+ht-degree: 5%
 
 ---
 
@@ -46,7 +47,7 @@ O diagrama acima descreve esse padrão de implantação comum.
 1. A **Autor de conteúdo** O usa o serviço do autor do AEM para criar, editar e gerenciar conteúdo.
 2. O **Autor de conteúdo** e outros usuários internos podem visualizar o conteúdo diretamente no serviço do Autor. É possível configurar uma versão de Visualização do aplicativo que se conecta ao serviço de Autor.
 3. Depois que o conteúdo é aprovado, ele pode ser **publicado** ao serviço de publicação do AEM.
-4. **Os usuários finais interagem com a versão de Produção do aplicativo.** O aplicativo de Produção se conecta ao serviço de Publicação e usa as APIs do GraphQL para solicitar e consumir conteúdo.
+4. **Usuários finais** interagir com a versão de Produção do aplicativo. O aplicativo de Produção se conecta ao serviço de Publicação e usa as APIs do GraphQL para solicitar e consumir conteúdo.
 
 O tutorial simula a implantação acima adicionando uma instância de publicação do AEM à configuração atual. Nos capítulos anteriores, o aplicativo React atuava como pré-visualização ao se conectar diretamente à instância do Autor. Uma build de produção do aplicativo React é implantada em um servidor Node.js estático que se conecta à nova instância de publicação.
 
@@ -407,7 +408,7 @@ Parabéns! Agora você simulou uma implantação de produção completa usando u
 
 Para obter mais detalhes sobre os Fragmentos de conteúdo e o GraphQL, consulte os seguintes recursos:
 
-* [Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=pt-BR)
+* [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=pt-BR)
 * [API GraphQL do AEM para uso com Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=pt-BR)
 * [Autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
 * [Implantação de código no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)

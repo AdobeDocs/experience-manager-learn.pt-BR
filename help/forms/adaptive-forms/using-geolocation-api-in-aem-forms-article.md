@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 127
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -93,8 +94,7 @@ O JSON retornado pela API é analisado para definir os campos do Formulário ada
 Para colocar esse recurso no servidor, siga as etapas a seguir
 
 * Instale e inicie o servidor do AEM Forms.
-
->!![NOTE] Esse recurso foi testado no AEM Forms 6.3 e posterior
+> Esse recurso foi testado no AEM Forms 6.3 e posterior
 * [Obter a chave de API do Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [Importe os ativos relacionados a este artigo para o AEM.](assets/geolocationapi.zip)
 * [Abra o fragmento do Formulário adaptável no modo de edição.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)

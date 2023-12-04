@@ -7,14 +7,15 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 342
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 6%
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
-# Introdução ao AEM Headless - Content Services
+# Introdução ao AEM Headless - Serviços de conteúdo
 
 Os Serviços de conteúdo do AEM usam as páginas AEM tradicionais para compor endpoints da API REST headless, e os componentes do AEM definem, ou fazem referência, ao conteúdo a ser exposto nesses endpoints.
 

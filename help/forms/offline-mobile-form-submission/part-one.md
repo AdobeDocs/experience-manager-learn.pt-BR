@@ -1,21 +1,17 @@
 ---
 title: Acionar o fluxo de trabalho do AEM no envio do formulário HTM5 - Criar perfil personalizado
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Continue preenchendo o formulário para publicação de conteúdo para dispositivos móveis no modo offline e envie o formulário para publicação de conteúdo para dispositivos móveis para acionar o fluxo de trabalho do AEM
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+duration: 151
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---

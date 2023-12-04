@@ -8,9 +8,10 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: 5139aa84-58d5-40e3-936a-0505bd407ee8
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 80
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---

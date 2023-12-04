@@ -8,10 +8,11 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
+source-wordcount: '2586'
+ht-degree: 1%
 
 ---
 
@@ -92,12 +93,12 @@ Abaixo está uma matriz dos principais recursos básicos oferecidos pelo AEM. Al
         <tr>
             <td>Recurso do Foundation</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -146,7 +147,7 @@ Abaixo está uma matriz dos principais recursos básicos oferecidos pelo AEM. Al
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpeza de revisão online</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpeza de revisão online</a>:</strong>
                 Faça a manutenção do repositório sem tempo de inatividade do servidor.</td>
             <td> </td>
             <td> </td>
@@ -286,12 +287,12 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pelo AE
         <tr>
             <td>Recurso de segurança</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -307,7 +308,7 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pelo AE
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gerenciamento de Armazenamento de Chaves</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gerenciamento de Armazenamento de Chaves</a></strong>
             <br> Armazenamento global de confiança, certificados e chaves, todos gerenciados no repositório.</td>
         <td></td>
         <td>✔</td>
@@ -329,7 +330,7 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pelo AE
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>suporte</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>suporte</strong></a>
             <br> Suporte ao compartilhamento de recursos entre origens para maior flexibilidade dos aplicativos.</td>
         <td></td>
         <td></td>
@@ -436,12 +437,12 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
         <tr>
             <td><strong>Recurso do Sites</strong></td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -523,7 +524,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Tradução de conteúdo</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Tradução de conteúdo</a>:</strong>
             A estrutura Plug and Play integra-se aos principais serviços de tradução de terceiros do setor.</td>
             <td></td>
             <td></td>
@@ -684,12 +685,12 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
         <tr>
             <td>Recurso de ativos</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -896,12 +897,12 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
         <tr>
             <td>Recurso do Dynamic Media</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3 +FP</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -999,12 +1000,12 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
         <tr>
             <td>Recurso do Forms</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>

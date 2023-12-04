@@ -10,10 +10,11 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1044
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 16%
+source-wordcount: '464'
+ht-degree: 14%
 
 ---
 
@@ -74,7 +75,7 @@ A variável [Pipeline de produção de CI/CD](https://experienceleague.adobe.com
 
 ## Pipelines CI/CD de não produção {#cicd-non-production-pipeline}
 
-[Os pipelines CI/CD de não produção são divididos em duas categorias: pipelines de qualidade de código e pipelines de implantação.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) A qualidade do código canaliza todo o código de uma ramificação (branch) do Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente do AEM provisionado que não seja Estágio ou Produção.
+[Pipelines CI/CD de não produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) são divididos em duas categorias: Pipelines de qualidade do código e Pipelines de implantação. A qualidade do código canaliza todo o código de uma ramificação (branch) do Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente do AEM provisionado que não seja Estágio ou Produção.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 

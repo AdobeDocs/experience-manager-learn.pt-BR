@@ -1,6 +1,6 @@
 ---
 title: Etapas para solucionar problemas de conversão de PDFG multiusuário em uma configuração do Unix
-description: Solucionar problemas do PDF Generator de vários usuários na configuração do UNIX.
+description: Solucionar problemas de PDF Generator de vários usuários na configuração do UNIX.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Development
 index: y
 exl-id: 35732b0f-a492-4d7f-b152-4a43d2c9b58b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 149
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

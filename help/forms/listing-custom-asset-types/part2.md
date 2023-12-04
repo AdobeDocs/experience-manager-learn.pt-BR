@@ -1,12 +1,8 @@
 ---
 title: Listagem de tipos de ativos personalizados no AEM Forms
 description: Parte 2 da lista de tipos de ativos personalizados no AEM Forms
-uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
@@ -14,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
 last-substantial-update: 2019-07-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 184
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -78,7 +75,7 @@ O código a seguir lista os vários tipos de ativos que usam o componente de pes
 
 ## Configurar Componente De Pesquisa E Lister {#configure-search-and-lister-component}
 
-Depois de definir o modelo personalizado, precisamos associá-lo ao componente &quot;Pesquisa e Lister&quot;. Aponte seu navegador [para este url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Depois de definir o modelo personalizado, precisamos associá-lo ao componente &quot;Pesquisa e Lister&quot;. Aponte seu navegador [para este url](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Alterne para o modo Design e configure o sistema de parágrafo para incluir o componente Pesquisa e Lister no grupo de componentes permitidos. O componente de Pesquisa e Lister faz parte do grupo de Serviços de documento.
 
@@ -108,7 +105,7 @@ A captura de tela a seguir mostra os tipos de ativos configurados para listagem
 
 ![assettypes](assets/assettypes.png)
 
-Agora que você configurou o componente de Portal de Pesquisa e Lister, é hora de ver a lista em ação. Aponte seu navegador [para este url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Os resultados devem ser algo como a imagem mostrada abaixo.
+Agora que você configurou o componente de Portal de Pesquisa e Lister, é hora de ver a lista em ação. Aponte seu navegador [para este url](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Os resultados devem ser algo como a imagem mostrada abaixo.
 
 >[!NOTE]
 >

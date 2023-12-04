@@ -13,10 +13,11 @@ thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1721
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 1%
+source-wordcount: '1618'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ O Cloud Service do Adobe Target, configurado em uma configuração sensível ao 
 1. Efetue logon no __Serviço de Autor do AEM__ como administrador do DAM
 1. Navegue até __Ativos > Arquivos__, localize a pasta de ativos que tem o `/conf` aplicado a
 1. Selecione a pasta de ativos e selecione __Propriedades__ na barra de ação superior
-1. Selecione a guia __Cloud Services__
+1. Selecione o __Cloud Service__ guia
 1. Verifique se a Configuração na nuvem está definida como configuração com reconhecimento de contexto (`/conf`) que contém a configuração do Adobe Target Cloud Service.
 1. Selecionar __Adobe Target__ do __Configurações do Cloud Service__ lista suspensa.
 1. Selecionar __Salvar e fechar__ na parte superior direita
@@ -176,7 +177,7 @@ Um [Sequência de dados do Adobe Experience Platform](https://experienceleague.a
    + Nome: `AEM Target integration`
    + Descrição: `Datastream used by the Adobe Web SDK to serve personalized Content Fragments Offers.`
    + Esquema de evento: `Leave blank`
-1. Selecione __Salvar__
+1. Selecionar __Salvar__
 1. Selecionar __Adicionar serviço__
 1. Entrada __Serviço__ selecionar __Adobe Target__
    + Ativado: __Sim__
@@ -184,7 +185,7 @@ Um [Sequência de dados do Adobe Experience Platform](https://experienceleague.a
    + ID do ambiente de destino: __Deixe em branco__
       + O ambiente do Target pode ser definido no Adobe Target em __Administração > Hosts__.
    + Namespace da ID de terceiros do Target: __Deixe em branco__
-1. Selecione __Salvar__
+1. Selecionar __Salvar__
 1. No lado direito, copie o __ID da sequência de dados__ para uso no [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) chamada de configuração.
 
 +++

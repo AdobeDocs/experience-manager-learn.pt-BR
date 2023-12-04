@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 617
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
@@ -65,7 +66,7 @@ O suporte para navegador HLS é o seguinte: para navegadores não compatíveis, 
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
-   <td> <p>Chrome</p> </td>
+   <td> <p>Cromo</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
@@ -74,32 +75,32 @@ O suporte para navegador HLS é o seguinte: para navegadores não compatíveis, 
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (Android 6 ou anterior)</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (Android 7 ou posterior)</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Android (navegador padrão)</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Safari (iOS)</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Chrome (iOS)</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
-   <td> <p>Móvel</p> </td>
+   <td> <p>Mobile</p> </td>
    <td> <p>Blackberry</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>

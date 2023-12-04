@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +84,7 @@ Para acelerar o tutorial, é fornecido um aplicativo JS React de início.
 
    >[!NOTE]
    > 
-   > As instruções acima são para conectar o aplicativo React ao **Serviço de publicação do AEM**, no entanto, para se conectar ao **Serviço de autoria do AEM** obtenha um token de desenvolvimento local para o ambiente as a Cloud Service do AEM de destino.
+   > As instruções acima são para conectar o aplicativo React ao **Serviço de publicação do AEM**, no entanto, para se conectar ao **Serviço de Autor do AEM** obtenha um token de desenvolvimento local para o ambiente as a Cloud Service do AEM de destino.
    >
    > Também é possível conectar o aplicativo a um [Instância de autor local usando o SDK do AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) usando autenticação básica.
 
@@ -111,7 +112,7 @@ Para acelerar o tutorial, é fornecido um aplicativo JS React de início.
 
 >[!IMPORTANT]
 >
->    Se você estiver se perguntando por que a solicitação da API do GraphQL é feita em relação ao `http://localhost:3000` e NÃO em relação ao domínio do AEM Publish Service, revise [Debaixo da tampa](../multi-step/graphql-and-react-app.md#under-the-hood) do Tutorial básico.
+>    Se você estiver se perguntando por que a solicitação da API do GraphQL é feita em relação ao `http://localhost:3000` e NÃO contra o domínio AEM Publish Service, revise [Debaixo da tampa](../multi-step/graphql-and-react-app.md#under-the-hood) do Tutorial básico.
 
 
 ## Revise o código
@@ -153,7 +154,7 @@ A variável `AdventureDetail` O componente React renderiza os detalhes da aventu
 
 No capítulo anterior, criamos a variável `adventure-details-by-slug` consulta persistente, ele fornece informações adicionais do Adventure, como _local, equipe de instrutores e administrador_. Vamos substituir `adventure-by-slug` com `adventure-details-by-slug` consulta persistente para renderizar essas informações adicionais.
 
-1. Abrir `src/api/usePersistedQueries.js`.
+1. Abertura `src/api/usePersistedQueries.js`.
 
 1. Localize a função `useAdventureBySlug()` e atualizar consulta como
 

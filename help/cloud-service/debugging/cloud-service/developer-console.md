@@ -2,21 +2,19 @@
 title: Console do desenvolvedor
 description: O AEM as a Cloud Service fornece um Console do desenvolvedor para cada ambiente que expõe vários detalhes do serviço AEM em execução que são úteis na depuração.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 388
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 1%
+source-wordcount: '1408'
+ht-degree: 0%
 
 ---
 

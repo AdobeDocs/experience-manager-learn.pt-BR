@@ -2,20 +2,18 @@
 title: Outras ferramentas para depuração do SDK do AEM
 description: Uma variedade de outras ferramentas pode ajudar na depuração da inicialização rápida local do SDK do AEM.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5251
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 148
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 

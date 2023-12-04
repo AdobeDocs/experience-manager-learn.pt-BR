@@ -2,20 +2,18 @@
 title: Depuração do AEM as a Cloud Service
 description: em infraestruturas de nuvem dimensionáveis e de autoatendimento, o que faz com que o exija que os desenvolvedores de AEM entendam como entender e depurar várias facetas do AEM as a Cloud Service AEM, desde a criação e implantação até a obtenção de detalhes sobre a execução de aplicativos do.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5346
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

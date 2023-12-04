@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 664
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ A Pesquisa de tradução inteligente permite o uso de termos de pesquisa em outr
    * Verifique se o computador tem essa quantidade de memória extra disponível.
    * Atualize os scripts de inicialização do AEM para ajustar o novo tamanho da pilha
 
-      * Exemplo. `java -Xmx12g -jar cq-author-p4502.jar`
+      * Ex. `java -Xmx12g -jar cq-author-p4502.jar`
 
    * Reinicie o AEM com o tamanho de heap aumentado.
 

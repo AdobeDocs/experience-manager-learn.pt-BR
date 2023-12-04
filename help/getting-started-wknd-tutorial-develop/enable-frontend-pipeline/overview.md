@@ -14,10 +14,11 @@ thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 234
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 4%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ Um relacionado [tutorial em várias etapas](https://experienceleague.adobe.com/d
 
 A etapa de implantação deste tutorial ocorre em um Adobe Cloud Manager, verifique se você tem um __Gerente de implantação__ , consulte Cloud Manager [Definições de função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions).
 
-Certifique-se de usar o [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR) e [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) ao concluir este tutorial.
+Certifique-se de usar o [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) ao concluir este tutorial.
 
 ## Próximas etapas {#next-steps}
 

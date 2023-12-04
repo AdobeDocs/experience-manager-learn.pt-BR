@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 272
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ Crie um modelo de fluxo de trabalho. Arraste e solte a etapa do processo no mode
 
 Forneça os argumentos de processo necessários separados por vírgula. Por exemplo, Attachments,c:\\scrappp\\. O primeiro argumento é a pasta quando os anexos do formulário adaptável serão armazenados em relação à carga do fluxo de trabalho. Esse deve ser o mesmo valor especificado ao configurar a ação de envio do Formulário adaptável. O segundo argumento é o local em que você deseja que os anexos sejam armazenados.
 
-Criar um Formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação de envio do formulário para invocar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
+Crie um formulário adaptável. Arraste e solte o componente Anexos de arquivo no formulário. Configure a ação de envio do formulário para invocar o fluxo de trabalho criado nas etapas anteriores. Forneça o caminho de anexo apropriado.
 
 Salve as configurações.
 

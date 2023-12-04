@@ -9,10 +9,11 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 910
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +54,7 @@ Uma apresentação em vídeo da instalação e utilização do [!DNL Apache Slin
    -->
    ```
 
-1. (Opcional) Repita a última etapa para permitir componentes em [conteúdo bloqueado (inicial) de modelos editáveis](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/page-templates-editable.html) a ser distribuído via [!DNL SDI] também. O motivo para a configuração adicional é que o conteúdo bloqueado dos modelos editáveis é exibido no `/conf` em vez de `/content`.
+1. (Opcional) Repita a última etapa para permitir componentes em [conteúdo bloqueado (inicial) de modelos editáveis](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) a ser distribuído via [!DNL SDI] também. O motivo para a configuração adicional é que o conteúdo bloqueado dos modelos editáveis é exibido no `/conf` em vez de `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -152,7 +153,7 @@ Uma apresentação em vídeo da instalação e utilização do [!DNL Apache Slin
 >* &quot;Cache-Control&quot;
 >* &quot;Disposição de conteúdo&quot;
 >* &quot;Content-Type&quot;
->* &quot;Expira em&quot;
+>* &quot;Expira&quot;
 >* &quot;Última modificação&quot;
 >* &quot;ETag&quot;
 >* &quot;X-Content-Type-Options&quot;

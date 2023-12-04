@@ -11,10 +11,11 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1162
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +43,7 @@ No final deste capítulo de tutorial, você terá um componente de Lista de imag
 
 1. Como uma lista de imagens é um fragmento do tipo container que inclui referência a outros fragmentos, novas ofertas podem ser criadas diretamente no editor.  Crie um fragmento de oferta e inclua uma descrição da imagem e um artigo.  Você pode recortar e colar o texto abaixo.  Estamos usando o título do fragmento como o título do cartão.
 
-   __Article1__
+   __Article 1__
 
    _Título_
 
@@ -314,7 +315,7 @@ No final deste capítulo de tutorial, você terá um componente de Lista de imag
 
 1. Agora vamos atualizar o Cartão para identificar o fragmento e o tipo de dados para editar cada cartão.
 
-   Dentro `<div className='card' key={card._path}>`
+   Dentro de `<div className='card' key={card._path}>`
 
    adicionar
 

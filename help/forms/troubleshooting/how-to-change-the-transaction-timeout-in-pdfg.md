@@ -1,6 +1,6 @@
 ---
 title: Como alterar o tempo limite de transação de um servidor de aplicativos no serviço PDFG
-description: Etapas para aumentar ou diminuir o timeout de transações de um servidor de aplicativos para o Gerador de PDF
+description: Etapas para aumentar ou diminuir o timeout de transações de um servidor de aplicativos para PDF Generator
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -9,7 +9,8 @@ feature: PDF Generator
 topic: Administration
 index: y
 exl-id: ec190f18-1ab8-4fac-adec-3b64caee290a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 93
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%

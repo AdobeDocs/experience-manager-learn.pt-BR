@@ -2,18 +2,16 @@
 title: CRXDE Lite
 description: O CRXDE Lite é uma ferramenta clássica, mas poderosa, para depurar ambientes de desenvolvedor as a Cloud Service com AEM. O CRXDE Lite fornece um conjunto de funcionalidades que auxilia a depuração da inspeção de todos os recursos e propriedades, manipulação das partes mutáveis do JCR e investigação de permissões.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: KT-5481
 thumbnail: kt-5481.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+duration: 168
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -24,13 +22,13 @@ ht-degree: 0%
 
 CRXDE Lite é __SOMENTE__ disponível em ambientes de desenvolvimento as a Cloud Service AEM (bem como no SDK AEM local).
 
-## Acessar o CRXDE Lite no AEM Author
+## Acesso ao CRXDE Lite no AEM Author
 
 CRXDE Lite é __somente__ acessível em ambientes de desenvolvimento as a Cloud Service com AEM, e é __não__ disponível em ambientes de Preparo ou Produção.
 
 Para acessar o CRXDE Lite no AEM Author:
 
-1. Faça logon no serviço de Autor do AEM as a Cloud Service para AEM.
+1. Faça logon no serviço de Autor do AEM AEM as a Cloud Service.
 1. Navegue até Ferramentas > Geral > CRXDE Lite
 
 Isso abrirá o CRXDE Lite usando as credenciais e permissões usadas para fazer logon no AEM Author.

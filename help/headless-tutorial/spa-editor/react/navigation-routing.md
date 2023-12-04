@@ -2,10 +2,7 @@
 title: Adicionar navegação e roteamento AEM | Introdução ao SPA Editor e React
 description: Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento para páginas AEM com o SDK do Editor de SPA. A navegação dinâmica é implementada usando o Roteador React e os Componentes principais do React.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
@@ -13,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 467
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---

@@ -1,18 +1,17 @@
 ---
 title: Capítulo 2 - Definição de modelos de fragmento de conteúdo de eventos - Serviços de conteúdo
-seo-title: Getting Started with AEM Content Services - Chapter 2 - Defining Event Content Fragment Models
 description: O capítulo 2 do tutorial do AEM headless aborda a ativação e a definição de modelos de fragmento de conteúdo usados para definir uma estrutura de dados normalizada e uma interface de criação para criar eventos.
-seo-description: Chapter 2 of the AEM Headless tutorial covers enabling and defining Content Fragment Models used to define a normalized data structure and authoring interface for creating Events.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 9%
+source-wordcount: '940'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +55,7 @@ Se os modelos de fragmento de conteúdo forem **não** ativado para uma configur
    >Essa alteração de configuração não é reversível do [!UICONTROL Configuração do AEM] Interface da Web. Para desfazer essa configuração:
    >    
    >    1. Abertura [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Vá até `/conf/wknd-mobile/settings/dam/cfm`
+   >    1. Navegue até `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Exclua o `models` nó
    >    
    >Todos os modelos de fragmento de conteúdo existentes criados nessa configuração são excluídos, bem como suas definições são armazenadas em `/conf/wknd-mobile/settings/dam/cfm/models`.
@@ -104,7 +103,7 @@ De posse do mapeamento, podemos definir os Fragmentos de conteúdo usados para c
 
    * [!UICONTROL Renderizar como] : `textfield`
    * [!UICONTROL Rótulo do campo] : `Event Title`
-   * [!UICONTROL Nome da Propriedade] : `eventTitle`
+   * [!UICONTROL Nome da propriedade] : `eventTitle`
    * [!UICONTROL Comprimento máximo] : 25
    * [!UICONTROL Obrigatório] : `Yes`
 
@@ -118,21 +117,21 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 
 * [!UICONTROL Tipo de dados] : `Multi-line text`
 * [!UICONTROL Rótulo do campo] : `Event Description`
-* [!UICONTROL Nome da Propriedade] : `eventDescription`
+* [!UICONTROL Nome da propriedade] : `eventDescription`
 * [!UICONTROL Tipo padrão] : `Rich text`
 
 ### Data e hora do evento
 
 * [!UICONTROL Tipo de dados] : `Date and time`
 * [!UICONTROL Rótulo do campo] : `Event Date and Time`
-* [!UICONTROL Nome da Propriedade] : `eventDateAndTime`
+* [!UICONTROL Nome da propriedade] : `eventDateAndTime`
 * [!UICONTROL Obrigatório] : `Yes`
 
 ### Tipo de evento
 
 * [!UICONTROL Tipo de dados] : `Enumeration`
 * [!UICONTROL Rótulo do campo] : `Event Type`
-* [!UICONTROL Nome da Propriedade] : `eventType`
+* [!UICONTROL Nome da propriedade] : `eventType`
 * [!UICONTROL Opções] : `Art,Music,Performance,Photography`
 
 ### Preço do tíquete
@@ -140,7 +139,7 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 * [!UICONTROL Tipo de dados] : `Number`
 * [!UICONTROL Renderizar como] : `numberfield`
 * [!UICONTROL Rótulo do campo] : `Ticket Price`
-* [!UICONTROL Nome da Propriedade] : `eventPrice`
+* [!UICONTROL Nome da propriedade] : `eventPrice`
 * [!UICONTROL Tipo] : `Integer`
 * [!UICONTROL Obrigatório] : `Yes`
 
@@ -149,7 +148,7 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 * [!UICONTROL Tipo de dados] : `Content Reference`
 * [!UICONTROL Renderizar como] : `contentreference`
 * [!UICONTROL Rótulo do campo] : `Event Image`
-* [!UICONTROL Nome da Propriedade] : `eventImage`
+* [!UICONTROL Nome da propriedade] : `eventImage`
 * [!UICONTROL Caminho raiz] : `/content/dam/wknd-mobile/images`
 * [!UICONTROL Obrigatório] : `Yes`
 
@@ -158,7 +157,7 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 * [!UICONTROL Tipo de dados] : `Single-line text`
 * [!UICONTROL Renderizar como] : `textfield`
 * [!UICONTROL Rótulo do campo] : `Venue Name`
-* [!UICONTROL Nome da Propriedade] : `venueName`
+* [!UICONTROL Nome da propriedade] : `venueName`
 * [!UICONTROL Comprimento máximo] : 20
 * [!UICONTROL Obrigatório] : `Yes`
 
@@ -166,7 +165,7 @@ Repita essas etapas usando as definições de entrada definidas abaixo para cria
 
 * [!UICONTROL Tipo de dados] : `Enumeration`
 * [!UICONTROL Rótulo do campo] : `Venue City`
-* [!UICONTROL Nome da Propriedade] : `venueCity`
+* [!UICONTROL Nome da propriedade] : `venueCity`
 * [!UICONTROL Opções] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)

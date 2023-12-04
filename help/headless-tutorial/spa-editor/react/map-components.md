@@ -2,10 +2,7 @@
 title: Mapear componentes do SPA para componentes do AEM AEM | Introdução ao SPA Editor e React
 description: Saiba como mapear componentes do React para componentes do Adobe Experience Manager (AEM) com o SDK JS do editor do AEM SPA. O mapeamento de componentes permite que os usuários façam atualizações dinâmicas nos componentes do SPA no editor SPA AEM, de forma semelhante à criação tradicional do AEM. Você também aprenderá a usar os Componentes principais de reação AEM prontos para uso.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 657
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 1%
+source-wordcount: '2123'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +183,7 @@ As políticas são um recurso dos modelos de AEM que fornece aos desenvolvedores
 
    Em **Plug-ins** > **Estilos de parágrafo** > marque a caixa para **Ativar estilos de parágrafo**:
 
-   ![Habilitar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Ativar estilos de parágrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
    Clique em **Concluído** para salvar a atualização de política.
 

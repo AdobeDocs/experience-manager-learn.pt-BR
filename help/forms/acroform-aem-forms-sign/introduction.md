@@ -2,17 +2,15 @@
 title: Formas com o AEM Forms
 description: Um tutorial que aborda a criação de um formulário adaptável usando o Acroform e a mesclagem de dados para obter um PDF. O PDF com os dados mesclados pode ser enviado para assinatura usando o Acrobat Sign.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 69
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 2%
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 

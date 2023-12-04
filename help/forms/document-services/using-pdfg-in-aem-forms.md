@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 76
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 2%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ Os ativos associados a este artigo permitirão que você arraste e solte documen
 
 Para instalar os ativos de demonstração, execute as seguintes etapas
 
-1. Configure o PDFG conforme mencionado neste documento [aqui](https://helpx.adobe.com/br/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Configure o PDFG conforme mencionado neste documento [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Siga a documentação apropriada relacionada à sua versão do AEM Forms.
 1. [Importe e instale ativos relacionados a este artigo usando o gerenciador de pacotes.](assets/createpdfgdemov2.zip)
 1. [Navegue até post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) no seu CRX

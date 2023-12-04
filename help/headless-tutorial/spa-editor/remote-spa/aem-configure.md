@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 432
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -136,8 +137,8 @@ A importância dessa configuração é explorada posteriormente.
 O mapeamento pode ser feito com [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#root-level-mappings-1) definido em `/etc/map`.
 
 1. No IDE, abra o `ui.content` subprojeto
-1. Vá até  `src/main/content/jcr_root`
-1. Crie uma pasta `etc`
+1. Navegue até  `src/main/content/jcr_root`
+1. Criar uma pasta `etc`
 1. Entrada `etc`, criar uma pasta `map`
 1. Entrada `map`, criar uma pasta `http`
 1. Entrada `http`, criar um arquivo `.content.xml` pelo conteúdo:

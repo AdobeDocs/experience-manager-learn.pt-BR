@@ -10,10 +10,11 @@ jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 157
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 5%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 5%
 
 O AEM as a Cloud Service fornece recursos avançados de rede que permitem o gerenciamento preciso de conexões de e para programas as a Cloud Service do AEM.
 
-|                                                   | [Programas de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programas do Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR) |
+|                                                   | [Programas de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programas do Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Oferece suporte a redes avançadas | ✔ | ✘ |
 

@@ -10,16 +10,17 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 68
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 6%
+source-wordcount: '140'
+ht-degree: 1%
 
 ---
 
 # Criar biblioteca do cliente
 
-Criar [biblioteca cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` do `guideBridge` API no evento de clique do botão identificado pela classe CSS **botão salvar**.  Passamos os dados do formulário adaptável, `fileMap`, e o `mobileNumber` para o endpoint que está escutando em `**/bin/storeafdatawithattachments`
+Criar [biblioteca cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) que incluirá o código para chamar o método `doAjaxSubmitWithFileAttachment` do `guideBridge` API no evento de clique do botão identificado pela classe CSS **botão salvar**.  Passamos os dados do formulário adaptável, `fileMap`, e o `mobileNumber` para o endpoint que está escutando em `**/bin/storeafdatawithattachments`
 
 Depois que os dados do formulário são salvos, uma ID de aplicativo exclusiva é gerada e apresentada ao usuário em uma caixa de diálogo. Ao descartar a caixa de diálogo, o usuário é levado ao formulário, o que permite recuperar o formulário adaptável salvo usando a ID exclusiva do aplicativo.
 

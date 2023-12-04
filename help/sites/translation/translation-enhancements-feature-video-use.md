@@ -8,10 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 701
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -41,6 +42,6 @@ Agora, os autores podem criar rápida e facilmente projetos de tradução em vá
 
 ## Recursos adicionais {#additional-resources}
 
-* [Tradução de conteúdo para sites multilíngues](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/translation.html)
+* [Tradução de conteúdo para sites multilíngues](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [Práticas recomendadas de tradução](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)

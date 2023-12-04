@@ -10,10 +10,11 @@ jira: KT-5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 148
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 28%
+source-wordcount: '598'
+ht-degree: 26%
 
 ---
 
@@ -72,6 +73,6 @@ Uma apresentação resumida configurando usuários do Adobe IMS, grupos de usuá
 
 A documentação a seguir aborda [Adobe Admin Console](https://adminconsole.adobe.com)Detalhes e preocupações específicos do que podem ajudar a entender melhor o Adobe Admin Console e usá-lo para gerenciar usuários e acessar em produtos Experience Cloud.
 
-+ [Visão geral da identidade do Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/identity.html)
++ [Visão geral da identidade da Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/identity.html)
 + [Funções de administrador do Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Funções do desenvolvedor do Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)

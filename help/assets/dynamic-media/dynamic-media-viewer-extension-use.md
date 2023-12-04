@@ -9,10 +9,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 646
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 23%
+source-wordcount: '333'
+ht-degree: 18%
 
 ---
 
@@ -166,5 +167,5 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
 ## Recursos adicionais{#additional-resources}
 
 * [Integração do Adobe Experience Manager com o Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
-* [Execução do Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=pt-BR)
+* [Execução do Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
 * [Integração dos visualizadores do Dynamic Media ao Adobe Analytics e ao Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

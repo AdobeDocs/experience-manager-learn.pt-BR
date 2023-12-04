@@ -9,10 +9,11 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 179
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 8%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +46,7 @@ Para clientes do AEM, que gostariam de usar as ofertas de Fragmento de experiên
 * **Ambiente**
    * Java 1.8 ou Java 11 (somente AEM 6.5+)
    * Apache Maven (3.3.9 ou mais recente)
-   * Chrome
+   * Cromo
 
 >[!NOTE]
 >
@@ -59,7 +60,7 @@ A instância de autor e publicação do AEM é necessária para concluir este tu
 
 1. Obtenha uma cópia do [AEM Quickstart Jar e uma licença.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Crie uma estrutura de pastas no seu computador da seguinte maneira:
-   ![Estrutura da pasta](assets/implementation/aem-setup-1.png)
+   ![Estrutura de pastas](assets/implementation/aem-setup-1.png)
 3. Renomeie o Quickstart jar para `aem-author-p4502.jar` e coloque-o abaixo de `/author` diretório. Adicione o `license.properties` arquivo abaixo de `/author` diretório.
    ![Instância de autor AEM](assets/implementation/aem-setup-author.png)
 4. Faça uma cópia do Quickstart jar, renomeie-a para `aem-publish-p4503.jar` e coloque-o abaixo de `/publish` diretório. Adicione uma cópia do `license.properties` arquivo abaixo de `/publish` diretório.

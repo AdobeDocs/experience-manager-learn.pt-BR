@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 1%
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -115,10 +116,10 @@ Expanda a `src/main/java` no `mysite.core` pasta. Essa é a pasta na qual você 
 Para criar seu projeto, siga as seguintes etapas:
 
 * Abertura **janela da tela de comandos**
-* Vá até `c:\aemformsbundles\mysite\core`
+* Navegue até `c:\aemformsbundles\mysite\core`
 * Executar o comando `mvn clean install -PautoInstallBundle`
 O comando acima cria e instala o pacote no servidor AEM em execução `http://localhost:4502`. O pacote também está disponível no sistema de arquivos em
-   `C:\AEMFormsBundles\mysite\core\target` e podem ser implantados usando [Felix web console](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` e podem ser implantados usando [Felix web console](http://localhost:4502/system/console/bundles)
 
 ## Próximas etapas
 

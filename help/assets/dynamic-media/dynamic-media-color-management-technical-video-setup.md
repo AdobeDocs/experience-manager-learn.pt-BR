@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 343
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 17%
+source-wordcount: '337'
+ht-degree: 11%
 
 ---
 
@@ -92,8 +93,8 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 | AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | RGB Apple |
 | CIERGB | RGB | RGB CIE |
-| CoatedFogra27 | CMYK | FOGRA27 revestida (ISO 12647-2:2004) |
-| CoatedFogra39 | CMYK | FOGRA39 revestida (ISO 12647-2:2004) |
+| FograRevestida27 | CMYK | FOGRA27 revestida (ISO 12647-2:2004) |
+| FograRevestida39 | CMYK | FOGRA39 revestida (ISO 12647-2:2004) |
 | GraCol revestido | CMYK | GRACoL 2006 revestido (ISO 12647-2:2004) |
 | ColorMatchRGB | RGB | ColorMatch RGB |
 | EuropeISOCoated | CMYK | Europa ISO Revestido FOGRA27 |
@@ -104,17 +105,17 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 | JapãoCorNãoRevestida | CMYK | Japão Colorido 2001 Sem Revestimento |
 | JapãoCorRevestidoWeb | CMYK | Japan Color 2003 Web Coated |
 | JapãoRevestidoWeb | CMYK | Revestimento Para Web No Japão (Anúncio) |
-| NewsprintSNAP2007 | CMYK | Papel de jornal dos EUA (SNAP 2007) |
+| Papel de jornalSNAP2007 | CMYK | Papel de jornal dos EUA (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | RGB ProPhoto |
 | PS4Default | CMYK | Photoshop 4 Padrão CMYK |
-| PS5Default | CMYK | CMYK padrão do Photoshop 5 |
+| PS5Padrão | CMYK | CMYK padrão do Photoshop 5 |
 | RevestidoFolheado | CMYK | U.S. Sheetfed Coated v2 |
 | Não revestidaFolha | CMYK | U.S. Sheetfed sem revestimento v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
+| Fogra29 não revestida | CMYK | FOGRA29 não revestida (ISO 12647-2:2004) |
 | Revestido pela Web | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | FOGRA28 revestida com revestimento web (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Papel revestido para web SWOP 2006 Grade 3 |

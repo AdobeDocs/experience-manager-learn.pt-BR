@@ -11,9 +11,10 @@ last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 532
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Aplicativos AEM headless oferecem suporte à pré-visualização de criação in
 Para usar a visualização do Fragmento de conteúdo, várias condições devem ser atendidas:
 
 1. O aplicativo deve ser implantado em um URL acessível aos autores
-1. O aplicativo deve ser configurado para se conectar ao serviço do AEM Author (em vez do serviço de Publicação do AEM)
+1. O aplicativo deve ser configurado para se conectar ao serviço de Autor do AEM (em vez do serviço de Publicação do AEM)
 1. O aplicativo deve ser projetado com URLs ou rotas que possam usar [Caminho ou ID do fragmento de conteúdo](#url-expressions) para selecionar os fragmentos de conteúdo que serão exibidos para visualização na experiência do aplicativo.
 
 ## Visualizar URLs
@@ -36,17 +37,17 @@ URLs de visualização, uso de [Expressões de URL](#url-expressions), são defi
 
 ![URL de visualização do modelo de fragmento de conteúdo](./assets/preview/cf-model-preview-url.png)
 
-1. Faça logon no serviço de Autor do AEM como administrador
+1. Fazer logon no serviço de Autor do AEM como administrador
 1. Navegue até __Ferramentas > Geral > Modelos de fragmento de conteúdo__
 1. Selecione o __Modelo de fragmento de conteúdo__ e selecione __Propriedades__ na barra de ação superior.
 1. Insira o URL de visualização do modelo de fragmento de conteúdo usando [Expressões de URL](#url-expressions)
-   + O URL de visualização deve apontar para uma implantação do aplicativo que se conecta ao serviço do AEM Author.
+   + O URL de visualização deve apontar para uma implantação do aplicativo que se conecta ao serviço de Autor de AEM.
 
 ### Expressões de URL
 
 Cada modelo de fragmento de conteúdo pode ter um URL de visualização definido. O URL de visualização pode ser parametrizado por Fragmento de conteúdo usando as expressões de URL listadas na tabela abaixo. Várias expressões de URL podem ser usadas em um único URL de visualização.
 
-|  | Expressão de URL | Valor |
+|                                         | Expressão de URL | Valor |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | Caminho do fragmento de conteúdo | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | ID do fragmento de conteúdo | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |

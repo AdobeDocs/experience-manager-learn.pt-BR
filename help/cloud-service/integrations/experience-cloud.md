@@ -13,10 +13,11 @@ mini-toc-levels: 1
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 211
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 18%
+source-wordcount: '684'
+ht-degree: 11%
 
 ---
 
@@ -137,12 +138,12 @@ O Adobe Sensei fornece IA e tecnologia de aprendizado de máquina para transform
 + [Tags inteligentes para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 + [Tags inteligentes personalizadas para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [Tags inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Corte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=pt-BR)
++ [Corte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 + [Pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms
 
-+ [Serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
++ [Serviço Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
 
 
 ## Adobe Target

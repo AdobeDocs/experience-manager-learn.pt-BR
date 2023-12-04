@@ -1,23 +1,18 @@
 ---
 title: Criação de fragmentos de documento para manter o nome e o endereço do destinatário
-seo-title: Creating Document Fragments to hold the recipient name and address
 description: Esta é a parte 5 de um tutorial de várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, criaremos o fragmento do documento para manter o nome e o endereço do recipient.
-seo-description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address.
-uuid: 689931e4-a026-4e62-9acd-552918180819
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 404eed65-ec55-492a-85b5-59773896b217
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 238
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -28,7 +23,7 @@ Nesta parte, criaremos o fragmento do documento para manter o nome e o endereço
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Os fragmentos de documento contêm o conteúdo de texto de documentos de comunicação interativa. Esse conteúdo de texto pode ser um texto estático ou inserido dos valores subjacentes dos elementos do modelo de dados. Por exemplo, Prezado {name}, onde Prezado é texto estático e {name} é o nome do elemento de dados do formulário. No tempo de execução, isso resolverá para Dear Gloria Rios ou Dear John Jacobs dependendo do valor do elemento name.
+Os fragmentos de documento contêm o conteúdo de texto de documentos de comunicação interativa. Esse conteúdo de texto pode ser um texto estático ou inserido dos valores subjacentes dos elementos do modelo de dados. Por exemplo Dear {name}, onde Dear é texto estático e {name} é o nome do elemento de dados do formulário. No tempo de execução, isso resolverá para Dear Gloria Rios ou Dear John Jacobs dependendo do valor do elemento name.
 
 O editor de rich text é intuitivo o suficiente para um usuário empresarial criar texto e inserir elementos de dados de formulário. O editor de fragmento de documento tem a capacidade de formatar texto, especificar tipos e estilos de fonte, inserir caracteres especiais e criar hiperlinks.
 

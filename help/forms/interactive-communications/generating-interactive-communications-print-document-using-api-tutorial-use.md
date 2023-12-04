@@ -1,22 +1,18 @@
 ---
 title: Gerar documento de comunicações interativas para canal de impressão usando o mecanismo de pasta de observação
-seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Usar pasta monitorada para gerar documentos de canal de impressão
-seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 161
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---

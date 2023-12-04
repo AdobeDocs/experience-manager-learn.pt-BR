@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 315
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 4%
+source-wordcount: '1110'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +73,7 @@ Criar um modelo para um **Person**, que é o modelo de dados que representa uma 
 1. Arrastar e soltar um **Texto em linha única** elemento no painel principal. Insira as seguintes propriedades na **Propriedades** guia:
 
    * **Rótulo do campo**: **Nome completo**
-   * **Nome da Propriedade**: `fullName`
+   * **Nome da propriedade**: `fullName`
    * Marcar **Obrigatório**
 
    ![Campo de propriedade Nome completo](assets/content-fragment-models/full-name-property-field.png)
@@ -82,13 +83,13 @@ Criar um modelo para um **Person**, que é o modelo de dados que representa uma 
 1. Toque no **Tipos de dados** e arraste e solte uma **Texto multilinha** sob o campo **Nome completo** campo. Insira as seguintes propriedades:
 
    * **Rótulo do campo**: **Biografia**
-   * **Nome da Propriedade**: `biographyText`
+   * **Nome da propriedade**: `biographyText`
    * **Tipo padrão**: **Rich Text**
 
 1. Clique em **Tipos de dados** e arraste e solte uma **Referência de conteúdo** campo. Insira as seguintes propriedades:
 
    * **Rótulo do campo**: **Foto do perfil**
-   * **Nome da Propriedade**: `profilePicture`
+   * **Nome da propriedade**: `profilePicture`
    * **Caminho raiz**: `/content/dam`
 
    Ao configurar o **Caminho raiz**, você pode clicar no botão **pasta** ícone para exibir uma modal e selecionar o caminho. Restringe quais pastas os autores podem usar para preencher o caminho. `/content/dam` é a raiz na qual todos os AEM Assets (imagens, vídeos, outros fragmentos de conteúdo) são armazenados.
@@ -101,7 +102,7 @@ Criar um modelo para um **Person**, que é o modelo de dados que representa uma 
 
    * **Renderizar como**: **Caixas de seleção**
    * **Rótulo do campo**: **Ocupação**
-   * **Nome da Propriedade**: `occupation`
+   * **Nome da propriedade**: `occupation`
 
 1. Adicionar vários **Opções** usando o **Adicionar uma opção** botão. Use o mesmo valor para **Rótulo de opção** e **Valor de opção**:
 
@@ -125,13 +126,13 @@ Criar um modelo para um **Equipe**, que é o modelo de dados de uma equipe de pe
 1. Arrastar e soltar um **Texto em linha única** elemento no painel principal. Insira as seguintes propriedades na **Propriedades** guia:
 
    * **Rótulo do campo**: **Título**
-   * **Nome da Propriedade**: `title`
+   * **Nome da propriedade**: `title`
    * Marcar **Obrigatório**
 
 1. Toque no **Tipos de dados** e arraste e solte uma **Texto em linha única** elemento no painel principal. Insira as seguintes propriedades na **Propriedades** guia:
 
    * **Rótulo do campo**: **Nome curto**
-   * **Nome da Propriedade**: `shortName`
+   * **Nome da propriedade**: `shortName`
    * Marcar **Obrigatório**
    * Marcar **Exclusivo**
    * Em, **Tipo de validação** > escolher **Personalizado**
@@ -142,14 +143,14 @@ Criar um modelo para um **Equipe**, que é o modelo de dados de uma equipe de pe
 1. Toque no **Tipos de dados** e arraste e solte uma **Texto multilinha** sob o campo **Nome curto** campo. Insira as seguintes propriedades:
 
    * **Rótulo do campo**: **Descrição**
-   * **Nome da Propriedade**: `description`
+   * **Nome da propriedade**: `description`
    * **Tipo padrão**: **Rich Text**
 
 1. Clique em **Tipos de dados** e arraste e solte uma **Referência do fragmento** campo. Insira as seguintes propriedades:
 
    * **Renderizar como**: **Múltiplo campo**
    * **Rótulo do campo**: **Membros da equipe**
-   * **Nome da Propriedade**: `teamMembers`
+   * **Nome da propriedade**: `teamMembers`
    * **Modelos de fragmentos do conteúdo permitido**: Use o ícone de pasta para selecionar o **Person** modelo.
 
 1. A versão final **Equipe** O modelo deve ser semelhante ao seguinte:

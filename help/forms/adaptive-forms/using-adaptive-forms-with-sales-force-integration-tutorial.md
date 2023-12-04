@@ -2,16 +2,16 @@
 title: Configuração do DataSource com o Salesforce no AEM Forms 6.3 e 6.4
 description: Integração do AEM Forms com o Salesforce usando o modelo de dados de formulário
 feature: Adaptive Forms, Form Data Model
-topics: integrations
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
 last-substantial-update: 2020-02-14T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 232
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Fo
       * Nome: CreateLeadInSalesForce
       * Título: CreateLeadInSalesForce
       * Tipo de serviço: serviço RESTful
+
    * Clique em Avançar
    * Origem do Swagger: Arquivo
    * Procure e selecione o arquivo Swagger que você baixou na etapa anterior
@@ -104,7 +105,6 @@ Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Fo
    * Escopo da autorização: ** api chatter_api id completa openid refresh_token visualforce web**
    * Manipulador de autenticação: portador de autorização
    * Clique no botão &quot;Conectar ao OAuth&quot;. Caso veja algum erro, revise as etapas anteriores para garantir que todas as informações foram inseridas com precisão.
-
 
 Depois de criar a Fonte de dados usando o SalesForce, você poderá criar a Integração de dados do formulário usando a Fonte de dados recém-criada. O link da documentação para isso é [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 

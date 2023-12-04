@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 437
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 3%
+source-wordcount: '1321'
+ht-degree: 0%
 
 ---
 
@@ -315,7 +316,7 @@ Em seguida, crie o `Custom Component` uso do editor SPA AEM.
 
    ![Mensagem exibida em Todas em Maiúsculas](assets/custom-component/message-displayed.png)
 
-5. Visualize o modelo JSON navegando até [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Pesquisar `wknd-spa-angular/components/custom-component`:
+5. Visualize o modelo JSON navegando até [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json). Pesquisar por `wknd-spa-angular/components/custom-component`:
 
    ```json
    "custom_component_208183317": {

@@ -9,7 +9,8 @@ feature: Mobile Forms
 topic: Development
 index: y
 exl-id: 28fa5597-bab5-4fb9-8d30-e9fd41820749
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 67
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%

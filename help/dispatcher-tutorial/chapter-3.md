@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 3 - Tópicos avançados de armazenamento em cache do Dispatcher"
+title: Capítulo 3 - Tópicos avançados de armazenamento em cache do Dispatcher
 description: Esta é a Parte 3 de uma série de três partes do armazenamento em cache no AEM. Onde as duas primeiras partes se concentraram no armazenamento em cache http simples no Dispatcher e quais limitações existem. Esta parte discute algumas ideias sobre como superar essas limitações.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1674
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6172'
 ht-degree: 0%
 
 ---

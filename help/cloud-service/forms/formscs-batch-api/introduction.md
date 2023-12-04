@@ -8,9 +8,10 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 exl-id: 165e2884-4399-4970-81ff-1f2f8b041a10
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 42
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '134'
 ht-degree: 14%
 
 ---

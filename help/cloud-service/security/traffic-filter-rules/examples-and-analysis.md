@@ -11,9 +11,10 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
-source-git-commit: c32497a7fdcf144d30bb8c0e58527013b66013b0
+duration: 667
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ data:
 
   ![Logon do WKND](./assets/wknd-login.png)
 
-#### Analisando{#analyzing}
+#### Análise{#analyzing}
 
 Vamos analisar os resultados da `publish-auth-requests` regra ao baixar os logs de CDN do AEM CS no Cloud Manager e usar o [ferramentas do painel](how-to-setup.md#analyze-results-using-elk-dashboard-tool), que você configurou no capítulo anterior.
 
@@ -149,7 +150,7 @@ data:
 
 - Repita a etapa acima a partir do endereço IP usado na regra e de um endereço IP diferente (por exemplo, usando seu celular).
 
-#### Analisando
+#### Análise
 
 Para analisar os resultados do `block-internal-paths` siga as mesmas etapas descritas na seção [exemplo anterior](#analyzing).
 
@@ -206,7 +207,7 @@ data:
 
   ![Ataque De DoS Vegeta](./assets/vegeta-dos-attack.png)
 
-#### Analisando
+#### Análise
 
 Para analisar os resultados do `prevent-dos-attacks` siga as mesmas etapas descritas na seção [exemplo anterior](#analyzing).
 
@@ -242,7 +243,7 @@ Vamos começar atacando o site WKND sem adicionar uma regra WAF (ou usar o `wafF
 
   Para saber mais sobre a simulação de ataques, reveja o [Nikto - Ajuste de Digitalização](https://github.com/sullo/nikto/wiki/Scan-Tuning) documentação, que informa como especificar o tipo de ataques de teste a serem incluídos ou excluídos.
 
-##### Analisando
+##### Análise
 
 Para analisar os resultados da simulação de ataque, siga as mesmas etapas descritas em [exemplo anterior](#analyzing).
 
@@ -312,7 +313,7 @@ data:
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
   ```
 
-##### Analisando
+##### Análise
 
 Repita as mesmas etapas descritas no [exemplo anterior](#analyzing).
 

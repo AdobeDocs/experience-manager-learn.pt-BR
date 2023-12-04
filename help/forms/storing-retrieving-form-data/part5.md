@@ -3,13 +3,13 @@ title: Armazenamento e recuperação de dados de formulário do banco de dados M
 description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas no armazenamento e na recuperação de dados de formulário
 feature: Adaptive Forms
 type: Tutorial
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fcef5adc-10fb-42b2-ab46-c7674e94e805
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 251
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%

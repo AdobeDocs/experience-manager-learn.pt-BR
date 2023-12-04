@@ -2,21 +2,19 @@
 title: Logs
 description: Os registros atuam como linha de frente para depurar aplicativos de AEM no AEM as a Cloud Service, mas dependem do registro adequado no aplicativo AEM implantado.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5432
 thumbnail: kt-5432.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 321
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 3%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +51,7 @@ Os serviços de Autor e Publicação do AEM fornecem logs do servidor de tempo d
 
 + `aemerror` é o log de erros Java (encontrado em `/crx-quickstart/logs/error.log` no SDK do AEM (início rápido local). A seguir estão os [níveis de log recomendados](#log-levels) para logs personalizados por tipo de ambiente:
    + Desenvolvimento: `DEBUG`
-   + Fase: `WARN`
+   + Estágio: `WARN`
    + Produção: `ERROR`
 + `aemaccess` lista solicitações HTTP para o serviço AEM com detalhes
 + `aemrequest` lista solicitações HTTP feitas ao serviço AEM e suas respostas HTTP correspondentes
@@ -65,11 +63,11 @@ Somente o Dispatcher de publicação do AEM fornece logs do Apache Web Server e 
 + `httpdaccess` lista solicitações HTTP feitas ao Apache Web Server/Dispatcher do serviço AEM.
 + `httperror`  lista mensagens de log do Apache Web Server e ajuda com a depuração de módulos Apache compatíveis, como `mod_rewrite`.
    + Desenvolvimento: `DEBUG`
-   + Fase: `WARN`
+   + Estágio: `WARN`
    + Produção: `ERROR`
 + `aemdispatcher` lista mensagens de log dos módulos do Dispatcher, incluindo filtragem e veiculação de mensagens de cache.
    + Desenvolvimento: `DEBUG`
-   + Fase: `WARN`
+   + Estágio: `WARN`
    + Produção: `ERROR`
 
 ## Cloud Manager{#cloud-manager}
@@ -173,7 +171,7 @@ As orientações gerais de Adobe sobre níveis de log por ambiente AEM as a Clou
 
 + Desenvolvimento local (SDK do AEM): `DEBUG`
 + Desenvolvimento: `DEBUG`
-+ Fase: `WARN`
++ Estágio: `WARN`
 + Produção: `ERROR`
 
 Definir o nível de log mais apropriado para cada tipo de ambiente é com AEM as a Cloud Service, os níveis de log são mantidos no código

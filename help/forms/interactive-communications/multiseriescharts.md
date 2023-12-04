@@ -2,19 +2,17 @@
 title: Gráficos de várias séries no AEM Forms
 description: Crie o modelo de dados de formulário apropriado para criar gráficos de várias séries em documentos impressos e de canal da Web.
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 454
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---

@@ -10,10 +10,11 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2511
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 2%
+source-wordcount: '3137'
+ht-degree: 1%
 
 ---
 
@@ -221,7 +222,7 @@ A assinatura de AuthnRequest e a criptografia de asserção SAML são opcionais,
       + Usar o `openssl` acima, este é o `aem-private-pkcs8.der` arquivo
    + __Selecionar arquivo da cadeia de certificados__: Faça upload do arquivo de cadeia que o acompanha (essa pode ser a chave pública).
       + Usar o `openssl` acima, este é o `aem-public.crt` arquivo
-   + Selecione __Enviar__
+   + Selecionar __Enviar__
 1. O certificado recém-adicionado aparece acima do campo __Adicionar certificado do arquivo CRT__ seção.
    + Anote o __alias__ como isso é usado no [Configuração OSGi do manipulador de autenticação SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
 1. Selecionar __Salvar e fechar__.
@@ -395,7 +396,7 @@ A Publicação do AEM oferece suporte a uma única configuração de filtro Refe
 
 Configurações de OSGi por ambiente (`config.publish.dev`, `config.publish.stage`, e `config.publish.prod`) pode ser definida com atributos específicos se a variável `allow.hosts` (ou `allow.hosts.regex`) variam entre os ambientes.
 
-## Configure o CORS (Cross-Origin Resource Sharing)
+## Configurar o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)
 
 Durante o processo de autenticação SAML, o IDP inicia um POST HTTP do lado do cliente para o AEM Publish&#39;s `.../saml_login` ponto final. Se o IDP e o AEM Publish existirem em hosts/domínios diferentes, o AEM Publish __Compartilhamento de recursos de origem CRoss (CORS)__ deve ser configurado para permitir POSTs HTTP do host/domínio do IDP.
 

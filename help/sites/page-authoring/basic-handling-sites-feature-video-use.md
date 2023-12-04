@@ -10,10 +10,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 310
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 26%
+source-wordcount: '320'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +30,7 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
 * Interface de usuário habilitada para toque
 * O painel Navegação global consiste em:
-   * Navegação - Representado por uma bússola  
+   * Navegação - Representado por uma bússola
 
      | Console | Propósito |
      |---|---|
@@ -37,10 +38,10 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
      | Fragmentos de experiência | Um fragmento de experiência é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências |
      | Forms | Esse console permite criar, gerenciar e processar formulários e documentos |
      | Personalização | Esse console fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas |
-     | Projetos | O console Projetos concede acesso direto aos projetos . Projetos são painéis virtuais. Eles podem ser usados para criar uma equipe e, em seguida, conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem em uma meta comum |
+     | Projetos | O console de Projetos oferece acesso direto aos projetos. Projetos são painéis virtuais. Eles podem ser usados para criar uma equipe e, em seguida, conceder a essa equipe acesso a recursos, fluxos de trabalho e tarefas, permitindo que as pessoas trabalhem em uma meta comum |
      | Sites | O console Sites permite criar, exibir e gerenciar sites em execução na sua instância do AEM. Por meio desses consoles, você pode criar, editar, copiar, mover e excluir páginas do site, iniciar fluxos de trabalho e publicar páginas |
 
-   * Ferramentas: representadas por um martelo
+   * Ferramentas - Representado por um martelo
 * Omni Search
 * Alternador de soluções
 * Ajuda

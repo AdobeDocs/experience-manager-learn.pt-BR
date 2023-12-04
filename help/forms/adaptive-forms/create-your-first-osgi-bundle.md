@@ -2,19 +2,17 @@
 title: Criar seu primeiro pacote OSGi com formulários AEM
 description: Crie seu primeiro pacote OSGi usando o maven e o eclipse
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +88,7 @@ Se tudo correr bem, você verá uma mensagem de sucesso da build na janela de co
 ## Crie um projeto do eclipse a partir do seu projeto maven
 
 Altere seu diretório de trabalho para `learningaemforms`.
-Execução `mvn eclipse:eclipse` na linha de comando O comando acima lê o arquivo pom e cria projetos Eclipse com metadados corretos para que o Eclipse entenda os tipos de projeto, os relacionamentos, o classpath, etc.
+Execução `mvn eclipse:eclipse` na linha de comando O comando acima lê o arquivo pom e cria projetos Eclipse com metadados corretos para que o Eclipse entenda os tipos de projeto, os relacionamentos, o classpath etc.
 
 ## Importar o projeto para o eclipse
 
@@ -132,6 +130,6 @@ Depois de escrever o serviço OSGi ou servlet, é necessário criar o projeto pa
 Para criar seu projeto, siga as seguintes etapas:
 
 * Abertura **janela da tela de comandos**
-* Vá até `c:\aemformsbundles\learningaemforms\core`
+* Navegue até `c:\aemformsbundles\learningaemforms\core`
 * Executar o comando `mvn clean install`
 Se tudo correr bem, você deverá ver o pacote no seguinte local `C:\AEMFormsBundles\learningaemforms\core\target`. Esse pacote agora está pronto para ser implantado no AEM usando o Felix web console.

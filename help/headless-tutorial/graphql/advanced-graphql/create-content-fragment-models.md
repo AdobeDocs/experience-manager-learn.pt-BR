@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 884
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 Este capítulo aborda as etapas para criar cinco modelos de fragmento de conteúdo:
 
-* **Informação de contato**
+* **Informações de contato**
 * **Endereço**
 * **Pessoa**
 * **Local**
@@ -34,7 +35,7 @@ Este é um tutorial avançado. Antes de continuar com este capítulo, verifique 
 
 ## Objetivos {#objectives}
 
-* Criar modelos de fragmentos de conteúdo.
+* Criar modelos de fragmento de conteúdo.
 * Adicione espaços reservados em guias, data e hora, objetos JSON, referências de fragmento e referências de conteúdo aos modelos.
 * Adicione validação às referências de conteúdo.
 
@@ -143,7 +144,7 @@ Em seguida, crie um modelo que contenha informações sobre uma pessoa.
 
    ![Enumeração de habilidades](assets/define-content-fragment-models/skills-enum.png)
 
-1. Por fim, crie um rótulo de campo &quot;Detalhes do administrador&quot; usando um **Texto multilinha** campo.
+1. Por último, crie um rótulo de campo &quot;Detalhes do administrador&quot; usando um **Texto multilinha** campo.
 
 Selecionar **Salvar** para confirmar as alterações e fechar o Editor de modelos de fragmentos de conteúdo.
 
@@ -217,7 +218,7 @@ Semelhante à forma como o modelo Equipe tem uma referência de fragmento para o
 
 1. Selecionar **Salvar** para confirmar as alterações e fechar o Editor de modelos de fragmentos de conteúdo.
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 Existem algumas práticas recomendadas relacionadas à criação de modelos de fragmento de conteúdo:
 
@@ -227,7 +228,7 @@ Existem algumas práticas recomendadas relacionadas à criação de modelos de f
 
 * Aninhe os modelos de fragmento de conteúdo tão profundamente quanto necessário, mas somente conforme necessário. Lembre-se de que o aninhamento é realizado com referências de fragmento ou de conteúdo. Considere um máximo de cinco níveis de aninhamento.
 
-## Parabéns! {#congratulations}
+## Parabéns. {#congratulations}
 
 Parabéns! Agora você adicionou guias, usou os tipos de dados de objeto data e hora e JSON e aprendeu mais sobre referências de fragmento e conteúdo. Você também adicionou regras de validação de referência de conteúdo.
 

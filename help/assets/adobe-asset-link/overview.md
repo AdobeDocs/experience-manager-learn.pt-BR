@@ -7,9 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 734
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
@@ -86,8 +87,8 @@ Como a autenticação do Adobe Asset Link funciona no contexto do Adobe Identity
 1. A extensão Adobe Asset Link faz uma solicitação de autorização, por meio do aplicativo de desktop da Adobe Creative Cloud, para o Adobe Identity Manager Service (IMS) e, após ser bem-sucedida, recebe um token de portador.
 1. A extensão Adobe Asset Link conecta-se ao AEM Author por HTTP(S), incluindo o token do portador obtido em **Etapa 1**, usando o esquema (HTTP/HTTPS), o host e a porta fornecidos nas configurações de JSON da extensão.
 1. O Manipulador de autenticação de portador do AEM extrai o token do portador da solicitação e o valida com o Adobe IMS.
-1. Depois que o Adobe IMS valida o token do portador, um usuário é criado no AEM (se ele ainda não existir) e sincroniza dados de perfil e de grupos/associações do Adobe IMS. O usuário AEM recebe um token de logon AEM padrão, que é enviado de volta para a extensão Adobe Asset Link como um Cookie na resposta HTTP(S).
-1. Interações subsequentes (ou seja, navegar, pesquisar, fazer check-in/check-out de ativos etc.) com a extensão Adobe Asset Link, o resultado são solicitações HTTP(S) para o AEM Author, validadas usando o token de logon AEM, usando o Manipulador de autenticação de token de AEM padrão.
+1. Depois que o Adobe IMS valida o token do portador, um usuário é criado no AEM (se ele ainda não existir) e sincroniza dados de perfil e de grupo/associações do Adobe IMS. O usuário AEM recebe um token de logon AEM padrão, que é enviado de volta para a extensão Adobe Asset Link como um Cookie na resposta HTTP(S).
+1. Interações subsequentes (ou seja, navegar, pesquisar, fazer check-in/check-out de ativos etc.) com a extensão Adobe Asset Link, resulta em solicitações HTTP(S) para o AEM Author, que são validadas usando o token de logon do AEM, usando o Manipulador de autenticação de token do AEM padrão.
 
 >[!NOTE]
 >

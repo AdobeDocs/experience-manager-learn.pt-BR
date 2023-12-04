@@ -8,9 +8,10 @@ topic: Performance
 role: Developer
 level: Experienced
 exl-id: be49718e-f1f5-4ab2-9c9d-6430a52bb439
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 766
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -85,6 +86,6 @@ java -jar oak-run*.jar index
 
 ## Materiais de suporte
 
-* [Download [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
+* [Baixar [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
    * *Verifique se a versão baixada corresponde à versão do Oak instalada no AEM conforme descrito acima*
 * [Documentação do comando Apache Jackrabbit Oak oak-run.jar Index](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)

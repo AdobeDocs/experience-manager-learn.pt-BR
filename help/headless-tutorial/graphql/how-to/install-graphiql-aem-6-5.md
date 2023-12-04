@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 68
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 25%
+source-wordcount: '208'
+ht-degree: 14%
 
 ---
 
@@ -21,8 +22,8 @@ ht-degree: 25%
 No AEM 6.5, a ferramenta GraphiQL IDE deve ser instalada manualmente.
 
 1. Navegue até o **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Pesquise por &quot;GraphiQL&quot; (não deixe de incluir o **i** em **GraphiQL**).
-1. Baixe a versão mais recente do **pacote de conteúdo GraphiQL v.x.x.x**.
+1. Pesquise por &quot;GraphiQL&quot; (não deixe de incluir o **i** in **GraphiQL**).
+1. Baixe o mais recente **Pacote de conteúdo GraphiQL v.x.x.x**.
 
    ![Baixar pacote GraphiQL](assets/graphiql/software-distribution.png)
 

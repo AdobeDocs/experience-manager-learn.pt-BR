@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
 last-substantial-update: 2020-10-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 100
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Para atender a esse requisito, é fornecido um pacote OSGi de amostra que pode s
 
 A captura de tela a seguir mostra como usar a etapa do processo no [Fluxo de trabalho do AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentários e armazená-los como propriedade de metadados. O &quot;Comentários do fluxo de trabalho de captura&quot; é o nome da classe java que precisa ser usada na etapa do processo. É necessário passar o nome da propriedade de metadados que conterá os comentários. Na captura de tela abaixo, managerComments é a propriedade de metadados que armazenará os comentários.
 
-![workflowcomments1](assets/workflowcomments1.gif)
+![comentáriosdo fluxo de trabalho1](assets/workflowcomments1.gif)
 
 Para testar esse recurso em seu sistema, siga as seguintes etapas:
 * [Verifique se a etapa do processo no fluxo de trabalho está configurada para usar Capture Workflow Comments](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)

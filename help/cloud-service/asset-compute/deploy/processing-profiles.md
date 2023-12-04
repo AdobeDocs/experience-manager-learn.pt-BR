@@ -2,21 +2,19 @@
 title: Integrar trabalhadores Assets compute com perfis de processamento AEM
 description: O AEM as a Cloud Service integra-se aos funcionários do Asset compute implantados no Adobe I/O Runtime por meio de perfis de processamento do AEM Assets. Os Perfis de processamento são configurados no serviço Autor para processar ativos específicos usando trabalhadores personalizados e armazenar os arquivos gerados pelos trabalhadores como representações de ativos.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 179
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +52,7 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
          + Chave: `brightness`
          + Valor: `0.10`
       + Esses pares de chave/valor passados para o trabalhador do Asset compute e disponíveis via `rendition.instructions` Objeto JavaScript.
-   + __Tipos de mime__
+   + __Tipos de Mime__
       + __Inclui:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + Esses tipos MIME são os únicos dos módulos npm do trabalhador. Esta lista limita os que são processados pelo funcionário personalizado.
       + __Exclui:__ `Leave blank`

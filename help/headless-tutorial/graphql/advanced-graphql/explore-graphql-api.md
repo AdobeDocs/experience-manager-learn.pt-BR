@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+duration: 628
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -719,7 +720,7 @@ query getAdventureDetailsBySlug($slug: String!) {
 }
 ```
 
-## Parabéns!
+## Parabéns.
 
 Parabéns! Agora, você testou consultas avançadas para coletar dados dos Fragmentos de conteúdo criados no capítulo anterior.
 

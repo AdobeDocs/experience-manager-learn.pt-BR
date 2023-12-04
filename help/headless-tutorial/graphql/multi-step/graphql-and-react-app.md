@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 611
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +103,7 @@ Para obter o aplicativo React:
 >
 >  // TODO Implemente isso seguindo as etapas do Tutorial AEM Headless
 >
->  //*********************************
+>  //*******************************
 >
 
 ## Anatomia do aplicativo React
@@ -120,7 +121,7 @@ A amostra do aplicativo React tem três partes principais:
 
 Revise o `aemHeadlessClient.js` arquivo para saber como criar o `AEMHeadless` objeto usado para se comunicar com o AEM.
 
-1. Abrir `src/api/aemHeadlessClient.js`.
+1. Abertura `src/api/aemHeadlessClient.js`.
 
 1. Revise as linhas 1-40:
 
@@ -198,7 +199,7 @@ Uma vez concluída, a visualização principal do aplicativo é preenchida com o
 
 ### Etapas
 
-1. Abrir `src/api/usePersistedQueries.js`.
+1. Abertura `src/api/usePersistedQueries.js`.
 
 1. Localize a função `useAllTeams()`
 
@@ -235,7 +236,7 @@ Uma vez concluída, a visualização principal do aplicativo é preenchida com o
    }
    ```
 
-1. Abrir `src/components/Teams.js`
+1. Abertura `src/components/Teams.js`
 
 1. No `Teams` Componente do React, obtenha a lista de equipes do AEM usando o `useAllTeams()` gancho.
 
@@ -347,7 +348,7 @@ Uma vez concluída, selecionar o nome de uma pessoa na exibição Equipes render
 
 ![Pessoa](./assets/graphql-and-external-app/react-app__person-view.png)
 
-1. Abrir `src/api/usePersistedQueries.js`.
+1. Abertura `src/api/usePersistedQueries.js`.
 
 1. Localize a função `usePersonByName(fullName)`
 
@@ -393,7 +394,7 @@ Uma vez concluída, selecionar o nome de uma pessoa na exibição Equipes render
    }
    ```
 
-1. Abrir `src/components/Person.js`
+1. Abertura `src/components/Person.js`
 1. No `Person` Componente do React, analise o `fullName` parâmetro de rota e obtenha os dados da pessoa do AEM usando o `usePersonByName(fullName)` gancho.
 
    ```javascript

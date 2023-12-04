@@ -8,10 +8,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 541
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 1%
+source-wordcount: '1716'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ Usamos os seguintes diretórios de cache padrão em nossas instalações de linh
 
 Quando cada solicitação atravessa o Dispatcher, as solicitações seguem as regras configuradas para manter uma versão em cache localmente para responder a itens elegíveis
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Intencionalmente, mantemos a carga de trabalho publicada separada da carga de trabalho do autor, pois quando o Apache procura um arquivo no DocumentRoot, ele não sabe de qual instância AEM ele veio. Portanto, mesmo que o cache esteja desativado no farm do autor, se DocumentRoot do autor for o mesmo que o publicador, ele fornecerá arquivos do cache quando presentes. Isso significa que você fornecerá arquivos de autor para do cache publicado e proporcionará uma experiência de combinação de combinações realmente horrível para seus visitantes.
 
@@ -94,7 +95,7 @@ Aqui está um autor base `/cache {` seção do arquivo farm do autor:
 
 O importante a ser observado aqui é que o `/docroot` está definido para o diretório de cache do autor.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Verifique se o `DocumentRoot` no do autor `.vhost` o arquivo corresponde aos farms `/docroot` parâmetro
 </div>
@@ -135,7 +136,7 @@ A instrução include das regras de cache inclui o arquivo `/etc/httpd/conf.disp
 Em um cenário de criação, o conteúdo é alterado o tempo todo e de propósito. Você só deseja armazenar em cache itens que não serão alterados com frequência.
 Temos regras para armazenar em cache `/libs` porque fazem parte da instalação básica do AEM e seriam alteradas até que você instalasse um Service Pack, Cumulative Fix Pack, Upgrade ou Hotfix. Portanto, armazenar esses elementos em cache faz muito sentido e realmente tem grandes benefícios da experiência do autor dos usuários finais que usam o site.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Lembre-se de que essas regras também fazem cache <b>`/apps`</b> é aqui que reside o código de aplicativo personalizado. Se você estiver desenvolvendo seu código nesta instância, será muito confuso quando você salvar o arquivo e não verá se reflete na interface do usuário, pois ele serve uma cópia em cache. A intenção aqui é que, se você implantar seu código no AEM, também não seja frequente, e parte de suas etapas de implantação deve ser limpar o cache do autor. Novamente, o benefício é enorme, tornando seu código que pode ser armazenado em cache mais rápido para os usuários finais.
 </div>
@@ -145,7 +146,7 @@ Lembre-se de que essas regras também fazem cache <b>`/apps`</b> é aqui que res
 
 Esta é uma dessas pedras preciosas de um recurso do Dispatcher. Se o editor estiver sob carga ou não responder, normalmente emitirá um código de resposta http 502 ou 503. Se isso acontecer e esse recurso estiver ativado, o Dispatcher será instruído a continuar a fornecer o conteúdo que ainda estiver no cache, como um melhor esforço, mesmo que não seja uma cópia atualizada. É melhor servir algo se você o receber do que apenas mostrar uma mensagem de erro que não oferece nenhuma funcionalidade.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Lembre-se de que, se o renderizador do editor tiver um tempo limite de soquete ou uma mensagem de erro 500, esse recurso não será acionado. Se o AEM estiver inacessível, esse recurso não fará nada
 </div>
@@ -159,7 +160,7 @@ Essa configuração pode ser definida em qualquer farm, mas faz sentido aplicá-
 
 ## Armazenamento em cache de páginas com parâmetros/argumentos de consulta
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Um dos comportamentos normais do módulo Dispatcher é que, se uma solicitação tiver um parâmetro de consulta no URI (normalmente mostrado como `/content/page.html?myquery=value`) ignorará o armazenamento em cache do arquivo e irá diretamente para a instância do AEM. Essa solicitação é considerada uma página dinâmica e não deve ser armazenada em cache. Isso pode causar efeitos negativos na eficiência do cache.
 </div>
@@ -252,7 +253,7 @@ Exemplo:
 
 As páginas que usam parâmetros de consulta por meio do JavaScript ainda funcionarão plenamente, ignorando os parâmetros nessa configuração.  Porque eles não alteram o arquivo html em repouso.  Eles usam javascript para atualizar os navegadores dom em tempo real no navegador local.  Isso significa que se você consumir os parâmetros de consulta com javascript, é altamente provável que você possa ignorar esse parâmetro para o armazenamento em cache da página.  Permita que essa página armazene em cache e aproveite o ganho de desempenho!
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Acompanhar essas páginas requer alguma manutenção, mas vale a pena obter ganhos de desempenho.  Você pode solicitar que seu CSE execute um relatório no tráfego dos sites para fornecer uma lista de todas as páginas que usam parâmetros de consulta nos últimos 90 dias para que você analise e verifique quais páginas serão exibidas e quais parâmetros de consulta não serão ignorados
 </div>
@@ -288,7 +289,7 @@ Este é um exemplo de um farm com os cabeçalhos para armazenar em cache especif
 
 No exemplo, eles configuraram o AEM para servir cabeçalhos que o CDN procura para saber quando invalidar seu cache. Isso significa que agora o AEM pode ditar corretamente quais arquivos são invalidados com base nos cabeçalhos.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Lembre-se de que não é possível usar expressões regulares ou correspondência glob. É uma lista literal dos cabeçalhos a serem armazenados em cache. Coloque somente em uma lista dos cabeçalhos literais que deseja armazenar em cache.
 </div>

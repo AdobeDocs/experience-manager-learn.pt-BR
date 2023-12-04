@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 286
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +48,7 @@ O autor visita uma página no AEM, clica nas propriedades da página e adiciona 
 
 Os autores também podem selecionar a variável _Redirecionar URL personalizado_ caixa de seleção ao adicionar _Vanity URL_ entradas, isso faz com que urls personalizados se comportem como redirecionamentos 302. Isso significa que o navegador é instruído a ir para o novo URL (via `Location` cabeçalho de resposta) e o navegador faz uma nova solicitação para o novo URL.
 
-#### Interface de toque:
+#### Interface do usuário para toque:
 
 ![Menu suspenso de diálogo para a interface de usuário de criação do AEM na tela do editor do site](assets/disp-vanity-url/aem-page-properties-drop-down.png "aem-page-properties-drop-down")
 
@@ -86,7 +87,7 @@ Aqui estão os urls personalizados na pasta base do `/` então, como permitimos 
 
 O Dispatcher simples tem um mecanismo de permissão de filtro automático e você precisa instalar um pacote AEM e configurar o Dispatcher para apontar para a página desse pacote.
 
-[https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
+[https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
 O Dispatcher tem uma seção de configuração em seu arquivo farm:
 
@@ -165,7 +166,7 @@ Use ambos os métodos, mas aqui estão os conselhos e critérios que devem ser u
 - Se a personalização for um endpoint básico que não muda com frequência e tem uso frequente, use um `mod_rewrite` regra.
 - Se o namespace personalizado (por exemplo: `/aboutus`) deve ser reutilizada para muitas marcas na mesma instância do AEM e, em seguida, usar regras de regravação.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Uso de urls personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 </div>

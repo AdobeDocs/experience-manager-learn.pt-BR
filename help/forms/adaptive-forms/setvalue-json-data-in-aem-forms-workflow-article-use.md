@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 1%
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ Para implantar os ativos no sistema local:
 * Aponte seu navegador para [Forms e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Fazer upload do arquivo TimeOffRequestForm.zip
-   **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está usando o AEM Forms 6.4 ou superior**
+  **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está usando o AEM Forms 6.4 ou superior**
 * Abra o [formulário](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Preencha as Datas inicial e final e envie o formulário.
 * Ir para [&quot;Caixa de entrada&quot;](http://localhost:4502/aem/inbox)
@@ -60,7 +61,7 @@ Para implantar os ativos no sistema local:
 
 >[!NOTE]
 >
->Como estamos preenchendo previamente o formulário adaptável usando o perfil do usuário, verifique se o administrador [informações de perfil do usuário ](http://localhost:4502/security/users.html). No mínimo, verifique se você definiu os valores dos campos FirstName, LastName e Email.
+>Como estamos preenchendo previamente o formulário adaptável usando o perfil do usuário, verifique se o administrador [informações de perfil do usuário](http://localhost:4502/security/users.html). No mínimo, verifique se você definiu os valores dos campos FirstName, LastName e Email.
 >Você pode ativar o log de depuração ativando o logger para com.aemforms.setvalue.core.SetValueInJson [daqui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

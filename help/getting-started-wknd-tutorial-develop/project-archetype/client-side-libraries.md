@@ -11,10 +11,11 @@ thumbnail: 30359.jpg
 doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 752
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2799'
-ht-degree: 2%
+source-wordcount: '2546'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +82,7 @@ As bibliotecas do lado do cliente fornecem um mecanismo para organizar e gerenci
 1. Gerenciar dependências em estruturas de terceiros de maneira organizada
 1. Minimize o número de solicitações do lado do cliente concatenando CSS/JS em uma ou duas solicitações.
 
-Mais informações sobre como usar o [As bibliotecas do lado do cliente podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR)
+Mais informações sobre como usar o [As bibliotecas do lado do cliente podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 As bibliotecas do lado do cliente têm algumas limitações. Mais notavelmente, é um suporte limitado para linguagens de front-end populares como Sass, LESS e TypeScript. No tutorial, vamos examinar como a variável **ui.frontend** pode ajudar a resolver isso.
 

@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 508
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +81,7 @@ Observe que `WKND Shared Endpoint` já foi criada. Para criar um endpoint para o
 
 >[!NOTE]
 >
-> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte [Documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
+> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte [Documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### Revisar a estrutura de conteúdo WKND e a pasta raiz de idioma
 
@@ -106,7 +107,7 @@ Para atribuir a pasta raiz do idioma à configuração, selecione a pasta e, em 
 
 ![Selecionar propriedades](assets/overview/properties.png)
 
-Em seguida, navegue até o **Cloud Services** e selecione o ícone de pasta na guia **Configuração na nuvem** campo.
+Em seguida, navegue até o **Cloud Service** e selecione o ícone de pasta na guia **Configuração na nuvem** campo.
 
 ![Configuração na nuvem](assets/overview/cloud-conf.png)
 

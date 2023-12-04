@@ -1,13 +1,13 @@
 ---
-doc-type: tutorial
+doc-type: Tutorial
 user-guide-title: Tutoriais do AEM
 sub-product: Experience Manager
 version: 6.4, 6.5, Cloud Service
 index: y
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 34%
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 

@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 9%
+source-wordcount: '1622'
+ht-degree: 4%
 
 ---
 
@@ -26,9 +27,9 @@ ht-degree: 9%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher na nuvem"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Baixar SDK do AEM as a Cloud Service"
 
-O Dispatcher do Adobe Experience Manager (AEM) é um módulo de servidor Web Apache HTTP que fornece uma camada de segurança e desempenho entre a camada do CDN e do AEM Publish. O Dispatcher é parte integrante da arquitetura geral do Experience Manager e deve fazer parte da configuração de desenvolvimento local.
+O Dispatcher do Adobe Experience Manager (AEM) é um módulo de servidor Web Apache HTTP que fornece uma camada de segurança e desempenho entre a camada do CDN e do AEM Publish. O Dispatcher é parte integral da arquitetura Experience Manager geral e deve fazer parte da configuração de desenvolvimento local.
 
-O SDK do AEM as a Cloud Service inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são compostas de:
+O SDK as a Cloud Service do AEM inclui a versão recomendada das Ferramentas do Dispatcher, que facilita a configuração, validação e simulação do Dispatcher localmente. As Ferramentas do Dispatcher são compostas de:
 
 + um conjunto de linhas de base de arquivos de configuração do Apache HTTP Web server e do Dispatcher, localizado em `.../dispatcher-sdk-x.x.x/src`
 + uma ferramenta de CLI do validador de configuração, localizada em `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -234,9 +235,9 @@ Os logs das Ferramentas do Dispatcher são emitidos para o padrão quando `docke
 Parâmetros úteis para depuração do Dispatcher incluem:
 
 + `DISP_LOG_LEVEL=Debug` define o log do módulo Dispatcher para o nível de Depuração
-   + O valor padrão é: `Warn`
+   + Valor padrão: `Warn`
 + `REWRITE_LOG_LEVEL=Debug` define o log do módulo de reescrita do servidor Web Apache HTTP no nível de Depuração
-   + O valor padrão é: `Warn`
+   + Valor padrão: `Warn`
 + `DISP_RUN_MODE` define o &quot;modo de execução&quot; do ambiente do Dispatcher, carregando os modos de execução correspondentes nos arquivos de configuração do Dispatcher.
    + O padrão é `dev`
 + Valores válidos: `dev`, `stage`ou `prod`

@@ -11,9 +11,10 @@ thumbnail: KT-11604.png
 doc-type: article
 last-substantial-update: 2022-12-09T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+duration: 1550
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Este exemplo se estende ao ponto de extensão `actionBar` para adicionar um bot�
 
 | IU do AEM estendida | Ponto de extensão |
 | ------------------------ | --------------------- | 
-| [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de ações](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
+| [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de ação](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 
 ## Exemplo de extensão

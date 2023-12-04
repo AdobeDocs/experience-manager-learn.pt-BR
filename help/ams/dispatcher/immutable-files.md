@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 376
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -308,7 +309,7 @@ $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_w
 
 Agora, basta recarregar o serviço do servidor Web e usar o novo domínio.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Observação:</b>
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
 Observe que alteramos apenas as partes necessárias e aproveitamos o código e os &quot;includes&quot; existentes que vieram com os arquivos de configuração da linha de base.  Precisamos apenas definir o elemento que precisa ser alterado.  Facilita as coisas e permite diminuir o tamanho do código
 </div>

@@ -9,10 +9,11 @@ level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2561
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 2%
+source-wordcount: '1703'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +112,7 @@ As organizações podem personalizar o URL do portal tendo um prefixo alternativ
 Observe que somente o prefixo do URL do Brand Portal pode ser personalizado, e não o URL inteiro.
 Por exemplo, uma organização com um domínio existente `wknd.brand-portal.adobe.com` pode obter `wkndinc.brand-portal.adobe.com` criado mediante solicitação.
 
-No entanto, a instância do autor do AEM pode ser [configurado](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da id do locatário e não com a URL do alias do locatário (alternativo).
+No entanto, a instância do autor do AEM pode ser [configurado](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da id do locatário e não com a URL do alias do locatário (alternativo).
 
 **Caso de uso** : as organizações podem atender às suas necessidades de marca, obtendo o URL do portal personalizado, em vez de aderir ao URL fornecido pelo Adobe.
 
@@ -158,7 +159,7 @@ Seis novas configurações são adicionadas para que os administradores ativem/d
 
 ### Adobe I/O hospeda a interface do usuário para configurar integrações oAuth
 
-A Brand Portal usa o Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada no `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/br/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+A Brand Portal usa o Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada no `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2018{#brand-portal-features-and-enhancements-632}
 
@@ -205,7 +206,7 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 ## Recursos adicionais{#additional-resources}
 
 * [Novidades do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#introduction)
-* [Agentes de replicação de autor do AEM](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Agentes de replicação de autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guia para download acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/docs/)
