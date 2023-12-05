@@ -9,7 +9,7 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 duration: 60
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -34,7 +34,7 @@ A depuração remota do código Java em execução no quickstart local do SDK do
 
 ## Consoles da Web OSGi
 
-O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
+O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, que são úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
 
 [Depuração do SDK do AEM usando o console da Web OSGi](./osgi-web-consoles.md)
 

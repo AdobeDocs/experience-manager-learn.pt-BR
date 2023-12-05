@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 26%
+source-wordcount: '491'
+ht-degree: 18%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 26%
 
 + [Visão geral](overview.md)
 + Criação de documentos {#document-authoring}
+   + [Visão geral](document-authoring/overview.md)
    + [Configurar](document-authoring/set-up.md)
    + [Pré-visualizar e publicar](document-authoring/preview-and-publish.md)
    + [Estrutura do documento](document-authoring/document-structure.md)
@@ -56,7 +57,7 @@ ht-degree: 26%
    + Aprenda com seus colegas {#expert-advice}
       + [Dicas de Hierarquia do Site](page-authoring/expert-advice/site-hierarchy.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
+   + [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Tradução de fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -66,6 +67,7 @@ ht-degree: 26%
    + [Blocos de construção](experience-fragments/building-blocks.md)
    + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
+   + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolvimento{#developing}
       + [Pré-requisitos](edge-delivery-services/developing/prerequisites.md)
       + [Placa perfurada AEM](edge-delivery-services/developing/aem-boilerplate.md)
@@ -109,7 +111,7 @@ ht-degree: 26%
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
-   + [Crie uma Live Copy](./multi-site-management/create-live-copy.md)
+   + [Criar uma Live Copy](./multi-site-management/create-live-copy.md)
    + [Gerenciar a herança da Live Copy em um componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gerenciar a herança da Live Copy em uma página](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console de visão geral da Live Copy](./multi-site-management/live-copy-overview-console.md)
