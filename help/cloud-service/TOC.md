@@ -1,20 +1,20 @@
 ---
-user-guide-title: Tutoriais do Adobe Experience Manager as a Cloud Service
+user-guide-title: Tutorials do Adobe Experience Manager as a Cloud Service
 user-guide-description: Uma coleção de tutoriais do Adobe Experience Manager as a Cloud Service.
 breadcrumb-title: Tutorials do AEM as a Cloud Service
 solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 21%
+source-wordcount: '1072'
+ht-degree: 16%
 
 ---
 
 
-# Tutoriais do Adobe Experience Manager as a Cloud Service {#cloud-service}
+# Tutorials do Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Visão geral](./overview.md)
 + Testes de AEM {#aem-trials}
@@ -27,7 +27,7 @@ ht-degree: 21%
       + [Experience Manager - Modelos e arquétipos de governança e equipe](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Como impulsionar a velocidade do conteúdo com o Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [Acelere a velocidade do conteúdo com sistemas de estilo AEM](./introduction/accelerate-content-velocity-aem.md)
-+ Integrações da Experience Cloud{#integrations}
++ integrações de Experience Cloud{#integrations}
    + [Integrações](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Tecnologia subjacente {#underlying-technology}
@@ -81,7 +81,7 @@ ht-degree: 21%
                + [Botão da barra de ferramentas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
                + [Widgets do RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
                + [Medalhas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
-   + Noções básicas de desenvolvimento{#basics}
+   + Conceitos básicos de desenvolvimento{#basics}
       + [SDK do AEM](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
@@ -99,7 +99,7 @@ ht-degree: 21%
       + [Ciclo de vida do componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Noções básicas de configurações do OSGi](./developing/osgi-services/configurations.md)
       + [Configurações do OSGi usando o OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avançado {#advanced}
+   + Avançado{#advanced}
       + [Armazenamento em cache de variantes de página](./developing/advanced/variant-caching.md)
       + [Proteção CSRF](./developing/advanced/csrf-protection.md)
       + [Namespaces personalizados](./developing/advanced/custom-namespaces.md)
@@ -134,6 +134,9 @@ ht-degree: 21%
    + [Serviço de publicação do AEM](./caching/publish.md)
    + [Serviço de Autor do AEM](./caching/author.md)
    + [Análise de Taxa de Acertos do Cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
+   + Como{#how-to}
+      + [Ativar armazenamento em cache](./caching/how-to/enable-caching.md)
+      + [Desativar armazenamento em cache](./caching/how-to/disable-caching.md)
 + Acesso ao AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
@@ -325,7 +328,7 @@ ht-degree: 21%
    + Implantar{#deploy}
       + [Implantar no Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrar ao AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avançado {#advanced}
+   + Avançado{#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
    + [Resolução de problemas](./asset-compute/troubleshooting.md)
 
