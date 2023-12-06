@@ -1,26 +1,28 @@
 ---
-title: integração de Adobe Express
-description: Saiba como otimizar as cadeias de fornecimento de conteúdo com o AEM Assets e o Adobe Express, aumentando a produtividade e a acessibilidade para todos os membros da equipe.
+title: AEM ASSETS e ADOBE EXPRESS
+description: Descubra como criar e editar conteúdo no AEM Assets usando o Adobe Express sem esforço.
 version: Cloud Service
 feature: Integrations
-topic: Integrations, Content Management
-role: User
-level: Intermediate
-last-substantial-update: 2023-10-26T00:00:00Z
-jira: KT-14192
-thumbnail: 3425193.jpeg
+topic: Integrations, Content Management, Content Supply Chain
+role: Admin, User
+level: Beginner
 doc-type: Feature Video
-exl-id: 4da1b1ff-5472-4282-a998-ae344e7b8309
-duration: 610
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 500
+last-substantial-update: 2023-12-06T00:00:00Z
+jira: KT-14645
+thumbnail: 3425972.jpeg
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
-# integração de Adobe Express
 
-Saiba como otimizar as cadeias de fornecimento de conteúdo com o AEM Assets e [Adobe Express](https://www.adobe.com/express/), melhorando a produtividade e a acessibilidade de todos os membros da equipe.
+# AEM ASSETS e ADOBE EXPRESS
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+Descubra como criar e editar conteúdo no Adobe Experience Manager Assets usando o Adobe Express sem esforço. Este vídeo orienta você sobre como aprimorar os fluxos de trabalho de conteúdo, demonstrando a edição de ativos existentes e a criação de novos, tudo simplificado para oferecer eficiência e facilidade de uso.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+
+Saiba como configurar o [Complemento AEM Assets para Adobe Express](./adobe-express-aem-assets-add-on.md) para acessar facilmente o AEM Assets pelo Adobe Express.
