@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # Como desativar o armazenamento em cache do CDN
 
@@ -48,16 +48,16 @@ Vamos analisar cada uma dessas opções.
 
 Essa opção é a abordagem recomendada para desabilitar o armazenamento em cache, no entanto, só está disponível para publicação no AEM. Para atualizar os cabeçalhos de cache, use o `mod_headers` módulo e `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # Remove o cabeçalho de resposta desse nome, se existir. Se houver vários cabeçalhos com o mesmo nome, todos serão removidos.
-    Cabeçalho não definido Cache-Controle
-    O cabeçalho não definido expira em
-    
-    # Instrui a CDN a não armazenar a resposta em cache.
-    Cabeçalho definido Controle de cache &quot;privado&quot;
-    &lt;/locationmatch>
-    &quot;
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Expires
+
+    # Instructs the CDN to not cache the response.
+    Header set Cache-Control "private"
+</LocationMatch>
+```
 
 #### Exemplo
 
@@ -68,16 +68,17 @@ Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS 
 1. No projeto AEM, localize o arquivo vhsot desejado em `dispatcher/src/conf.d/available_vhosts` diretório.
 1. Atualizar o vhost (por exemplo, `wknd.vhost`) da seguinte forma:
 
-       &quot;conf
-       &lt;locationmatch etc.clientlibs=&quot;&quot;>*.(css)$&quot;>
-       # Remove o cabeçalho de resposta desse nome, se existir. Se houver vários cabeçalhos com o mesmo nome, todos serão removidos.
-       Cabeçalho não definido Cache-Controle
-       O cabeçalho não definido expira em
-       
-       # Instrui a CDN a não armazenar a resposta em cache.
-       Cabeçalho definido Controle de cache &quot;privado&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/etc.clientlibs/.*\.(css)$">
+       # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+       Header unset Cache-Control
+       Header unset Expires
+   
+       # Instructs the CDN to not cache the response.
+       Header set Cache-Control "private"
+   </LocationMatch>
+   ```
+
    Os arquivos vhost em `dispatcher/src/conf.d/enabled_vhosts` diretório são **symlinks** aos arquivos em `dispatcher/src/conf.d/available_vhosts` diretório, portanto, crie symlinks se não estiver presente.
 1. Implante as alterações do vhost no ambiente as a Cloud Service do AEM desejado usando o [Cloud Manager - Pipeline de configuração no nível da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -85,6 +86,6 @@ Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS 
 
 Essa opção está disponível para publicação no AEM e para Autor. Para atualizar os cabeçalhos de cache, use o `SlingHttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
 
-    &quot;java
-    response.setHeader(&quot;Cache-Control&quot;, &quot;private&quot;);
-    &quot;
+```java
+response.setHeader("Cache-Control", "private");
+```
