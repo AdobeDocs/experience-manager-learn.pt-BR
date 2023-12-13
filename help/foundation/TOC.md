@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 338bb13f1739d822e6a4b7232ae1a2da6b24732a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '224'
+ht-degree: 14%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 16%
    + [Entender a autenticação IMS no AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Entender o Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
-   + [Usar o pipeline de CI/CD no Adobe Cloud Manager](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [Pipelines de CI/CD](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
+   + [Permissões personalizadas](./cloud-manager/cloud-permissions.md)
 + Desenvolvimento {#development}
    + [Desenvolver exportadores de modelo do Sling](./development/develop-sling-model-exporter.md)
    + [Configurar um ambiente de desenvolvimento de AEM local](./development/set-up-a-local-aem-development-environment.md)
@@ -40,7 +41,7 @@ ht-degree: 16%
    + [Usar projetos mestre](./projects/use-project-masters.md)
 + Segurança {#security}
    + [Desenvolver para o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/develop-for-cross-origin-resource-sharing.md)
-   + [Entender sobre o CORS (Cross-Origin Resource Sharing)](./security/understand-cross-origin-resource-sharing.md)
+   + [Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](./security/understand-cross-origin-resource-sharing.md)
    + [Usar o Assistente de SSL](./security/use-the-ssl-wizard.md)
    + [Proteção contra Ataques CRS DoS ModSecurity](./security/modsecurity-crs-dos-attack-protection.md)
    + [Conexões HTTPS com APIs com certificados privados](./security/call-internal-apis-having-private-certificate.md)
