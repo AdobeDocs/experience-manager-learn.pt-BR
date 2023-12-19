@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+source-git-commit: d9612adbc2ff3e601c2efe5a779c03ad24769276
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1084'
 ht-degree: 16%
 
 ---
@@ -264,6 +264,10 @@ ht-degree: 16%
       + [Criar configuração OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Criar tags de índice](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Criar envio personalizado](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
+   + Preencher previamente o formulário baseado no componente principal{#prefill-core-component-based-form}
+      + [Introdução](./forms/prefill-core-component-form/introduction.md)
+      + [Serviço de preenchimento prévio de gravação](./forms/prefill-core-component-form/pre-fill-service.md)
+      + [Testar a solução](./forms/prefill-core-component-form/test-solution.md)
    + Armazenamento do Portal do Azure{#forms-cs-azure-portal}
       + [Introdução](./forms/forms-cs-azure-portal/introduction.md)
       + [Criar modelo de dados do formulário](./forms/forms-cs-azure-portal/create-fdm.md)
