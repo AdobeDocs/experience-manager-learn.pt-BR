@@ -11,10 +11,10 @@ level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 563
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 8%
+source-wordcount: '1696'
+ht-degree: 4%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="AEM Runtime local"
->abstract="O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente do AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR" text="SDK do AEM as a Cloud Service"
+>abstract="O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código, configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente as a Cloud Service AEM."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="SDK do AEM as a Cloud Service"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Baixar SDK do AEM as a Cloud Service"
 
-O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente do AEM as a Cloud Service.
+O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que os desenvolvedores implantem e testem código, configuração e conteúdo personalizados antes de confirmá-los no controle de origem e implantá-los em um ambiente as a Cloud Service AEM.
 
 Observe que `~` é usado como abreviação para o Diretório do usuário. No Windows, é equivalente a `%HOMEPATH%`.
 
-## Instalar o Java
+## Instalar o Java™
 
-O Experience Manager é um aplicativo Java e, portanto, requer o SDK Java do Oracle para oferecer suporte às ferramentas de desenvolvimento.
+O Experience Manager é um aplicativo Java™ e, portanto, requer o SDK Java™ do Oracle para oferecer suporte às ferramentas de desenvolvimento.
 
-1. [Baixe e instale o SDK 11 do Java mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11)
-1. Verifique se o SDK do Java 11 do Oracle está instalado executando o comando:
+1. [Baixe e instale o Java™ SDK 11 mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11)
+1. Verifique se o SDK do Java™ 11 do Oracle está instalado executando o comando:
 
 >[!BEGINTABS]
 
@@ -52,7 +52,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ java --version
@@ -110,7 +110,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -155,7 +155,7 @@ $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -194,7 +194,7 @@ $ java -jar aem-author-p4502.jar -r prerelease
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -214,7 +214,7 @@ Durante o desenvolvimento, pode ser desejável simular a distribuição de conte
 
 >[!NOTE]
 >
-> Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
+Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
 
 1. Faça logon na **Autor** e navegue até [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
 1. Clique em **Agente padrão (publicação)** para abrir o Agente de replicação padrão.
@@ -279,7 +279,7 @@ Atualize o SDK do AEM pelo menos mensalmente na última quinta-feira de cada mê
 
 >[!WARNING]
 >
-> Atualizar o Quickstart Jar para uma nova versão requer a substituição de todo o ambiente de desenvolvimento local, resultando na perda de todo o código, configuração e conteúdo nos repositórios AEM locais. Verifique se qualquer código, configuração ou conteúdo que não deve ser destruído foi confirmado com segurança no Git ou exportado da instância local do AEM como Pacotes de AEM.
+Atualizar o Quickstart Jar para uma nova versão requer a substituição de todo o ambiente de desenvolvimento local, resultando na perda de todo o código, configuração e conteúdo nos repositórios AEM locais. Verifique se qualquer código, configuração ou conteúdo que não deve ser destruído foi confirmado com segurança no Git ou exportado da instância local do AEM como Pacotes de AEM.
 
 ### Como evitar perda de conteúdo ao atualizar o SDK do AEM
 
@@ -317,7 +317,7 @@ $ java -jar aem-author-p4502.jar
 $ java -jar aem-author-p4502.jar
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ java -jar aem-author-p4502.jar
@@ -341,7 +341,7 @@ $ java -jar aem-publish-p4503.jar
 $ java -jar aem-publish-p4503.jar
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ java -jar aem-publish-p4503.jar
@@ -364,9 +364,9 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-Isso ocorre porque o AEM as a Cloud Service exige o SDK 11 do Java e você está executando uma versão diferente, provavelmente o Java 8. Para resolver esse problema, baixe e instale o [SDK 11 do Java do Oracle](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11).
+Isso ocorre porque o AEM as a Cloud Service requer o SDK 11 do Java™ e você está executando uma versão diferente, provavelmente o Java™ 8. Para resolver esse problema, baixe e instale o [Oracle Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11).
 
-Depois que o SDK do Java 11 do Oracle for instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
+Depois que o SDK do Java™ 11 do Oracle estiver instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
 
 >[!BEGINTABS]
 
@@ -382,7 +382,7 @@ $ java --version
 $ java -version
 ```
 
->[!TAB Linux]
+>[!TAB Linux®]
 
 ```shell
 $ java --version
