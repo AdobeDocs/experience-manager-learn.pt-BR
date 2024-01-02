@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ Para simplificar, essa aplicação Web hospedada busca somente o primeiro lote d
 
 ## Recursos adicionais
 
-- [Código de origem do webhook com falha](https://glitch.com/edit/#!/indigo-speckle-antler)
+- [Código de origem do webhook com falha](https://glitch.com/edit/#!/indigo-speckle-antler) O está disponível para referência. É um aplicativo simples do React que usa [Espectro de Reação Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html) componentes para renderizar a interface.
+
+- [API de registro de eventos Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) O fornece informações detalhadas sobre a API, como primeiro, próximo e último lote de eventos, paginação e muito mais.
