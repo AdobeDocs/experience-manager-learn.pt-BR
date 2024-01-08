@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: 338bb13f1739d822e6a4b7232ae1a2da6b24732a
+source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '229'
 ht-degree: 14%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 14%
    + [Configurar a inclusão dinâmica do Sling](./development/set-up-sling-dynamic-include.md)
    + [Entender as práticas recomendadas da API Java](./development/understand-java-api-best-practices.md)
    + [Entender o exportador de modelo do Sling](./development/understand-sling-model-exporter.md)
+   + [Entender as práticas recomendadas de indexação do Oak](./development/understand-indexing-best-practices.md)
 + Projetos {#projects}
    + [Desenvolver projetos no AEM](./projects/develop-aem-projects.md)
    + [Usar projetos mestre](./projects/use-project-masters.md)
