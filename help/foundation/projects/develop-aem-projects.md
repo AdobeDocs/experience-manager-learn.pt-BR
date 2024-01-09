@@ -1,6 +1,6 @@
 ---
 title: Desenvolver projetos no AEM
-description: Um tutorial de desenvolvimento que ilustra como desenvolver projetos no AEM.  Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
+description: Um tutorial de desenvolvimento que ilustra como desenvolver projetos no AEM. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
 version: 6.4, 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
@@ -9,16 +9,16 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1753
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: b9b8dd9d815d7a0ef800635a74b030c50821b9df
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4441'
 ht-degree: 0%
 
 ---
 
 # Desenvolver projetos no AEM
 
-Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL AEM Projects].  Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
+Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL AEM Projects]. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -26,9 +26,9 @@ Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL A
 
 ## Introdução {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) O é um recurso do AEM projetado para facilitar o gerenciamento e o agrupamento de todos os fluxos de trabalho e tarefas associados à criação de conteúdo como parte de uma implementação do AEM Sites ou do Assets.
+[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) O é um recurso do AEM projetado para facilitar o gerenciamento e o agrupamento de todos os fluxos de trabalho e tarefas associados à criação de conteúdo como parte de uma implementação do AEM Sites ou do Assets.
 
-Projetos AEM vem com vários [Modelos de projeto OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Ao criar um novo projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações de AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um de amostra.
+Projetos AEM vem com vários [Modelos de projeto OOTB](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). Ao criar um projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações de AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um modelo de amostra.
 
 ![Cartão de Projeto Personalizado](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,13 +39,13 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/the-basics.html) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
 
 ## Estrutura de um modelo de projeto
 
 Os modelos de projeto devem ser colocados no controle do código-fonte e devem estar localizados abaixo da pasta do aplicativo em /apps. Idealmente, eles devem ser colocados em uma subpasta com a convenção de nomenclatura de **&#42;/projects/templates/**&lt;my-template>. Ao seguir essa convenção de nomenclatura, qualquer novo modelo personalizado ficará disponível automaticamente para os autores ao criar um projeto. A configuração dos Modelos de projeto disponíveis está definida em: **/content/projects/jcr:content** nó pelo **cq:allowedTemplates** propriedade. Por padrão, esta é uma expressão regular: **/(apps|libs)/.&#42;/projetos/modelos/.&#42;**
 
-O nó raiz de um Modelo de projeto terá um **jcr:primaryType** de **cq:Template**. Abaixo do nó raiz de há 3 nós: **gadgets**, **funções**, e **workflows**. Esses nós são todos **nt:não estruturado**. Abaixo do nó raiz também pode haver um arquivo thumbnail.png que é exibido ao selecionar o modelo no assistente Criar projeto.
+O nó raiz de um Modelo de projeto terá um **jcr:primaryType** de **cq:Template**. Abaixo do nó raiz de há três nós: **gadgets**, **funções**, e **workflows**. Esses nós são todos **nt:não estruturado**. Abaixo do nó raiz também pode haver um arquivo thumbnail.png que é exibido ao selecionar o modelo no assistente Criar projeto.
 
 A estrutura completa do nó:
 
@@ -69,15 +69,15 @@ Um exemplo de assistente personalizado pode ser encontrado para o Modelo de proj
 
 ### Gadgets {#gadgets}
 
-Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os mosaicos do projeto](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. **Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
+Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os mosaicos do projeto](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. **Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
 
 ### Funções {#roles}
 
-Há 3 [Funções padrão](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) para cada projeto: **Observadores**, **Editores**, e **Proprietários**. Ao adicionar nós filhos abaixo do nó de funções, é possível adicionar outras Funções do projeto específicas da empresa para o modelo. Em seguida, é possível vincular essas funções a fluxos de trabalho específicos associados ao projeto.
+Há três [Funções padrão](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) para cada projeto: **Observadores**, **Editores**, e **Proprietários**. Ao adicionar nós filhos abaixo do nó funções, é possível adicionar outras Funções do projeto específicas da empresa para o modelo. Em seguida, é possível vincular essas funções a fluxos de trabalho específicos associados ao projeto.
 
 ### Fluxos de trabalhos {#workflows}
 
-Um dos motivos mais atraentes para criar um modelo de projeto personalizado é que ele oferece a capacidade de configurar os fluxos de trabalho disponíveis para uso com o projeto. Eles podem usar workflows OOTB ou personalizados. Abaixo de **workflows** precisa haver um nó **modelos** nó (também `nt:unstructured`) e os nós secundários abaixo de especificam os modelos de fluxo de trabalho disponíveis. A propriedade **modelId **aponta para o modelo de fluxo de trabalho em /etc/workflow e a propriedade **assistente** aponta para a caixa de diálogo usada ao iniciar o fluxo de trabalho. Uma grande vantagem dos Projetos é a capacidade de adicionar uma caixa de diálogo personalizada (assistente) para capturar metadados específicos da empresa no início do fluxo de trabalho, que pode impulsionar outras ações dentro do fluxo de trabalho.
+Um dos motivos mais atraentes para criar um modelo de projeto personalizado é que ele oferece a capacidade de configurar os fluxos de trabalho disponíveis para uso com o projeto. Eles podem usar workflows OOTB ou personalizados. Abaixo de **workflows** precisa haver um nó **modelos** nó (também `nt:unstructured`) e os nós secundários abaixo de especificam os modelos de fluxo de trabalho disponíveis. A propriedade **modelId **aponta para o modelo de fluxo de trabalho em /etc/workflow e a propriedade **assistente** aponta para a caixa de diálogo usada ao iniciar o fluxo de trabalho. Uma vantagem significativa dos Projetos é a capacidade de adicionar uma caixa de diálogo personalizada (assistente) para capturar metadados específicos de negócios no início do fluxo de trabalho que podem impulsionar outras ações dentro do fluxo de trabalho.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -92,7 +92,7 @@ Um dos motivos mais atraentes para criar um modelo de projeto personalizado é q
 
 Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. Na instância local do AEM, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
-1. Comece criando uma nova pasta abaixo de `/apps/&lt;your-app-folder&gt;` nomeado `projects`. Crie outra pasta abaixo de com o nome `templates`.
+1. Comece criando uma pasta abaixo de `/apps/&lt;your-app-folder&gt;` nomeado `projects`. Crie outra pasta abaixo de com o nome `templates`.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -148,11 +148,11 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
 
 1. Adicionaremos uma Função de aprovador personalizada ao modelo do projeto.
 
-   1. Abaixo do nó do modelo de projeto (authoring-project) adicione um novo **nt:não estruturado** nó rotulado **funções**.
+   1. Abaixo do nó do modelo de projeto (authoring-project) adicione um novo **nt:não estruturado** com rótulo de nó **funções**.
    1. Adicionar outro **nt:não estruturado** nó rotulado aprovadores como filho do nó funções.
    1. Adicionar propriedades de string **jcr:title** = &quot;**Aprovadores**&quot;, **roleclass** =&quot;**proprietário**&quot;, **roleid**=&quot;**aprovadores**&quot;.
       1. O nome do nó de aprovadores, bem como jcr:title e roleid podem ser qualquer valor de string (desde que roleid seja exclusivo).
-      1. **roleclass** controla as permissões aplicadas para essa função com base no [3 funções OOTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **proprietário**, **editor**, e **observador**.
+      1. **roleclass** controla as permissões aplicadas para essa função com base no [três funções OOTB](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **proprietário**, **editor**, e **observador**.
       1. Em geral, se a função personalizada for mais uma função gerencial, a classe de função poderá ser **proprietário;** se for uma função de criação mais específica, como Fotógrafo ou Designer, **editor** a classe de função deve ser suficiente. A grande diferença entre **proprietário** e **editor** é que os proprietários do projeto podem atualizar as propriedades do projeto e adicionar novos usuários ao projeto.
 
    ```shell
@@ -165,7 +165,7 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
                 - roleid = "approver"
    ```
 
-1. Ao copiar o modelo Projeto simples, você terá quatro fluxos de trabalho OOTB configurados. Cada nó abaixo de workflows/models aponta para um workflow específico e um assistente de caixa de diálogo inicial para esse workflow. Posteriormente neste tutorial, criaremos um fluxo de trabalho personalizado para este projeto. Por enquanto, exclua os nós abaixo de fluxo de trabalho/modelos:
+1. Ao copiar o modelo Projeto simples, você obterá quatro fluxos de trabalho OOTB configurados. Cada nó abaixo de workflows/models aponta para um workflow específico e um assistente de caixa de diálogo inicial para esse workflow. Posteriormente neste tutorial, criaremos um fluxo de trabalho personalizado para este projeto. Por enquanto, exclua os nós abaixo de workflow/models:
 
    ```shell
    ../projects/templates/authoring-project
@@ -177,7 +177,7 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
    ```
 
 1. Para facilitar para que os autores de conteúdo identifiquem o Modelo de projeto, você pode adicionar uma miniatura personalizada. O tamanho recomendado é de 319x319 pixels.
-   1. No CRXDE Lite, crie um novo arquivo como um irmão de gadgets, funções e nós de fluxos de trabalho chamados **miniatura.png**.
+   1. No CRXDE Lite, crie um arquivo como um irmão de gadgets, funções e nós de fluxos de trabalho chamados **miniatura.png**.
    1. Salve e navegue até o `jcr:content` e clique duas vezes no `jcr:data` propriedade (evite clicar em &quot;exibir&quot;).
       1. Isso deve solicitar uma edição `jcr:data` caixa de diálogo de arquivo e você pode fazer upload de uma miniatura personalizada.
 
@@ -247,7 +247,7 @@ Representação XML concluída do Modelo de Projeto:
 
 ## Teste do modelo de projeto personalizado
 
-Agora podemos testar nosso Modelo de projeto criando um novo projeto.
+Agora podemos testar nosso Modelo de projeto criando um projeto.
 
 1. Você deve ver o modelo personalizado como uma das opções para a criação do projeto.
 
@@ -278,7 +278,7 @@ O uso de uma Etapa de criação de tarefa em relação às etapas tradicionais d
 
 Como as etapas do Participante, as Tarefas podem ser atribuídas e roteadas dinamicamente. Metadados de tarefas como Título, Prioridade também podem ser definidos dinamicamente com base em ações anteriores, como veremos no tutorial a seguir.
 
-Embora as Tarefas tenham algumas vantagens em relação às Etapas do participante, elas carregam uma sobrecarga adicional e não são tão úteis fora de um Projeto. Além disso, todo o comportamento dinâmico de Tarefas deve ser codificado usando scripts ecma que tenham suas próprias limitações.
+Embora as Tarefas tenham algumas vantagens em relação às Etapas do participante, elas carregam uma sobrecarga adicional e não são tão úteis fora de um Projeto. Além disso, todo comportamento dinâmico de Tarefas deve ser codificado usando scripts ecma que têm suas próprias limitações.
 
 ## Requisitos de caso de uso de exemplo {#goals-tutorial}
 
@@ -290,27 +290,27 @@ A primeira etapa é criar uma Tarefa para concluir a edição de um conteúdo. P
 
 Quando a primeira tarefa for concluída, o destinatário terá três opções para rotear o workflow:
 
-**Normal **- o roteamento normal cria uma tarefa atribuída ao grupo Aprovador do projeto para análise e aprovação. A prioridade da tarefa é Normal e o prazo é de 5 dias a partir de quando ela é criada.
+**Normal **- o roteamento normal cria uma tarefa atribuída ao grupo Aprovador do projeto para análise e aprovação. A prioridade da tarefa é Normal e o prazo é de cinco dias a partir de quando ela é criada.
 
-**Rush** : o roteamento de horários de pico também cria uma tarefa atribuída ao grupo Aprovador do projeto. A prioridade da tarefa é Alta e o prazo é de apenas 1 dia.
+**Rush** : o roteamento de horários de pico também cria uma tarefa atribuída ao grupo Aprovador do projeto. A prioridade da tarefa é Alta e o prazo é de apenas um dia.
 
 **Ignorar** - nesse exemplo de fluxo de trabalho, o participante inicial tem a opção de ignorar o grupo de aprovação. (sim, isso pode anular a finalidade de um workflow de &quot;Aprovação&quot;, mas permite ilustrar recursos adicionais de roteamento)
 
-O Grupo de aprovadores pode aprovar o conteúdo ou enviá-lo de volta ao destinatário inicial para retrabalho. No caso de ser enviada de volta para retrabalho, uma nova tarefa é criada e rotulada apropriadamente como &#39;Enviada de volta para retrabalho&#39;.
+O Grupo de aprovadores pode aprovar o conteúdo ou enviá-lo de volta ao destinatário inicial para retrabalho. No caso de ser reenviada de volta para, o retrabalho de uma nova tarefa é criado e rotulado apropriadamente como &#39;Reenviada de volta para retrabalho&#39;.
 
 A última etapa do fluxo de trabalho usa a etapa de processo Ativar página/ativo OBT e replica a carga.
 
 ## Criar o modelo de fluxo de trabalho
 
-1. No menu inicial do AEM, navegue até Ferramentas -> Fluxo de trabalho -> Modelos. Clique em &quot;Criar&quot; no canto superior direito para criar um novo Modelo de fluxo de trabalho.
+1. No menu inicial do AEM, navegue até Ferramentas -> Fluxo de trabalho -> Modelos. Clique em &quot;Criar&quot; no canto superior direito para criar um Modelo de fluxo de trabalho.
 
    Dê um título ao novo modelo: &quot;Fluxo de trabalho de aprovação de conteúdo&quot; e um nome de URL: &quot;content-approval-workflow&quot;.
 
    ![Caixa de diálogo de criação do fluxo de trabalho](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   Para obter mais informações relacionadas a [criação de workflows lidos aqui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
+   [Para obter mais informações relacionadas à criação de workflows, leia aqui](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 
-1. Como prática recomendada, os workflows personalizados devem ser agrupados em sua própria pasta em /etc/workflow/models. No CRXDE Lite, crie um novo **&#39;nt:folder&#39;** abaixo de /etc/workflow/models chamado **&quot;aem-guides&quot;**. Adicionar uma subpasta garante que os workflows personalizados não sejam substituídos acidentalmente durante atualizações ou instalações do Service Pack.
+1. Como prática recomendada, os workflows personalizados devem ser agrupados em sua própria pasta em /etc/workflow/models. No CRXDE Lite, crie um **&#39;nt:folder&#39;** abaixo de /etc/workflow/models chamado **&quot;aem-guides&quot;**. Adicionar uma subpasta garante que os workflows personalizados não sejam substituídos acidentalmente durante atualizações ou instalações do Service Pack.
 
    &#42;Observe que é importante nunca colocar a pasta ou os workflows personalizados abaixo de subpastas ootb, como /etc/workflow/models/dam ou /etc/workflow/models/projects, pois a subpasta inteira também pode ser substituída por atualizações ou service packs.
 
@@ -320,7 +320,7 @@ A última etapa do fluxo de trabalho usa a etapa de processo Ativar página/ativ
 
    >[!NOTE]
    >
-   >Se estiver usando o AEM 6.4+, a localização do Fluxo de trabalho foi alterada. Consulte [aqui para obter mais detalhes.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Se estiver usando o AEM 6.4+, a localização do Fluxo de trabalho foi alterada. Consulte [aqui para obter mais detalhes.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    Se estiver usando o AEM 6.4+, o modelo de fluxo de trabalho será criado em `/conf/global/settings/workflow/models`. Repita as etapas acima com o diretório /conf e adicione uma subpasta chamada `aem-guides` e mova a variável `content-approval-workflow` abaixo dele.
 
@@ -347,7 +347,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
 1. O processo de fluxo de trabalho Criar tarefa do projeto foi projetado para criar uma Tarefa como uma etapa no fluxo de trabalho. Somente após a conclusão da tarefa é que o workflow avançará. Um aspecto importante da etapa Criar tarefa do projeto é que ela pode ler valores de metadados de fluxo de trabalho e usá-los para criar a tarefa dinamicamente.
 
-   Primeiro exclua a Etapa do participante que é criada por padrão. No Sidekick do menu Componentes, expanda a **&quot;Projetos&quot;** subtítulo e arraste e solte a **&quot;Criar tarefa de projeto&quot;** no modelo.
+   Primeiro exclua a Etapa do participante que é criada por padrão. No Sidekick do menu Componentes, expanda a **&quot;Projetos&quot;** subtítulo, arraste e solte a **&quot;Criar tarefa de projeto&quot;** no modelo.
 
    Clique duas vezes na etapa &quot;Criar tarefa do projeto&quot; para abrir a caixa de diálogo do fluxo de trabalho. Configure as seguintes propriedades:
 
@@ -372,7 +372,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
        Due In - Days = "2"
    ```
 
-   A guia Roteamento é uma caixa de diálogo opcional que pode especificar as ações disponíveis para o usuário que está concluindo a tarefa. Essas ações são apenas valores de sequência de caracteres e são salvas nos metadados do fluxo de trabalho. Esses valores podem ser lidos por scripts e/ou etapas do processo posteriormente no workflow para &quot;rotear&quot; dinamicamente o workflow. Com base no [metas do fluxo de trabalho](#goals-tutorial) adicionaremos três ações a esta guia:
+   A guia Roteamento é uma caixa de diálogo opcional que pode especificar as ações disponíveis para o usuário que está concluindo a tarefa. Essas ações são apenas valores de sequência de caracteres e são salvas nos metadados do fluxo de trabalho. Esses valores podem ser lidos por scripts e/ou etapas do processo posteriormente no workflow para &quot;rotear&quot; dinamicamente o workflow. Com base nas metas do workflow, adicionaremos três ações a esta guia:
 
    ```shell
    Routing Tab
@@ -393,7 +393,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
 1. Na etapa anterior, referenciamos um script de tarefa de pré-criação. Agora criaremos esse script no qual definiremos o Destinatário da tarefa com base no valor de um valor de metadados de fluxo de trabalho &quot;**destinatário**&quot;. A variável **&quot;destinatário&quot;** é definido quando o workflow é iniciado. Também leremos os metadados do fluxo de trabalho para escolher dinamicamente a prioridade da tarefa lendo o &quot;**taskPriority&quot;** valor dos metadados do fluxo de trabalho, bem como a **&quot;taskDueDate&quot; ** para definir dinamicamente quando a primeira tarefa vencer.
 
-   Para fins organizacionais, criamos uma pasta abaixo da pasta do aplicativo para armazenar todos os scripts relacionados ao projeto: **/apps/aem-guides/projects-tasks/projects/scripts**. Crie um novo arquivo abaixo desta pasta chamado **&quot;start-task-config.ecma&quot;**. &#42;Observe que o caminho para o arquivo start-task-config.ecma corresponde ao caminho definido na guia Configurações avançadas na Etapa 4.
+   Para fins organizacionais, criamos uma pasta abaixo da pasta do aplicativo para armazenar todos os scripts relacionados ao projeto: **/apps/aem-guides/projects-tasks/projects/scripts**. Crie um arquivo abaixo desta pasta chamado **&quot;start-task-config.ecma&quot;**. &#42;Observe que o caminho para o arquivo start-task-config.ecma corresponde ao caminho definido na guia Configurações avançadas na Etapa 4.
 
    Adicione o seguinte como conteúdo do arquivo:
 
@@ -738,7 +738,7 @@ A configuração do fluxo de trabalho é uma área de um modelo de projeto que e
    >Se estiver usando o AEM 6.4, a localização do Fluxo de trabalho foi alterada. Aponte o `modelId` para o local do modelo de fluxo de trabalho de tempo de execução em `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Consulte [aqui para obter mais detalhes sobre a alteração na localização do fluxo de trabalho.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Consulte [aqui para obter mais detalhes sobre a alteração na localização do fluxo de trabalho.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ A configuração do fluxo de trabalho é uma área de um modelo de projeto que e
 
 * [Baixar pacote de tutorial concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentação de projetos do AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
+* [Documentação de projetos do AEM](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
