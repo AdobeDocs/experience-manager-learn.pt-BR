@@ -9,16 +9,17 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14501
 duration: 40
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
+source-git-commit: 016b06d3bd5b62945c168588839454544b2f7d41
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '130'
 ht-degree: 3%
 
 ---
 
 # Introdução
 
-Neste tutorial, implementaremos um caso de uso simples de armazenamento de envios de formulários no armazenamento do Azure com tags de índice de blob. As tags de índice Blob fornecem recursos de gerenciamento e descoberta de dados usando atributos de tag de índice de valor-chave. Você pode categorizar e localizar objetos em um único contêiner ou em todos os contêineres da conta de armazenamento.
+Neste tutorial, você aprenderá a implementar um caso de uso simples de armazenamento de envios de formulários no armazenamento do Azure com tags de índice de blob. As tags de índice Blob fornecem recursos de gerenciamento e descoberta de dados usando atributos de tag de índice de valor-chave. Você pode categorizar e localizar objetos em um único contêiner ou em todos os contêineres da conta de armazenamento.
 ![blob-index-tags](assets/blob-with-index-tags.png)
 
 ## Pré-requisitos
