@@ -10,7 +10,7 @@ level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
 duration: 242
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 7e1f538b111815a7934b798e0dac3587d8962c31
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 <li>Um composto reutilizável de um ou mais componentes do AEM que definem o conteúdo e a apresentação que forma uma <strong>experiência</strong> o que faz sentido por si só</li>
 </ul>
 </td>
-</tr><tr><td><strong>Inquilinos principais</strong></td>
+</tr><tr><td><strong>Princípios principais</strong></td>
 <td><ul>
 <li>Centrado no conteúdo</li>
 <li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modelo de dados estruturado e baseado em formulário.</a></li>
