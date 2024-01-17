@@ -11,9 +11,9 @@ duration: 107
 last-substantial-update: 2024-01-09T00:00:00Z
 jira: KT-14756
 thumbnail: 3426806.jpeg
-source-git-commit: eb64367ffa110d1d28fe91a372c724a476e36f5e
+source-git-commit: 32ea9d9b395a061c0be1e60a2f378dcaa7340f7d
 workflow-type: tm+mt
-source-wordcount: '43'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Alternar Exibições
 
-Saiba como alternar eficientemente entre exibições no AEM Assets as a Cloud Service, garantindo um gerenciamento de ativos ininterrupto.
+Saiba como alternar com eficiência entre as [Exibição de ativos e exibição de administrador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) no AEM Assets as a Cloud Service, garantindo um gerenciamento perfeito de ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)
