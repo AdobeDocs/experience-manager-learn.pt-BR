@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # Utilização do relatório de transações no AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-O relatório de transações para capturar o número de envios de formulários, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais da Web e de impressão) foi introduzido com o AEM Forms 6.4.1. Esse recurso destina-se principalmente aos clientes que desejam licenciar o software com base no número de envios de formulários e/ou documentos renderizados. No momento, esse recurso está disponível somente na pilha OSGI do AEM Forms.
+O relatório de transações para capturar o número de envios de formulários, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais da Web e de impressão) foi introduzido com o AEM Forms 6.4.1. No momento, esse recurso está disponível somente na pilha OSGI do AEM Forms.
 
 ## Ativação do Relatório de Transações {#enabling-transaction-reporting}
 
@@ -35,7 +35,7 @@ Quando o relatório de transação estiver ativado, você poderá enviar o Adapt
 
 Para exibir o relatório de transações, faça logon no AEM Forms como administrador. Somente os membros do grupo fd-Administrator podem exibir o relatório de transações.
 
-Selecionar ferramentas | FORMS | Visualizar relatório de transações
+Selecionar ferramentas | Forms | Exibir Relatório de Transações
 
 ou exiba o relatório de transações clicando em [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
