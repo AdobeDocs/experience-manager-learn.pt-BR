@@ -8,8 +8,8 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-duration: 374
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 350
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Para experimentar isso no seu sistema:
 
 * [Baixar os ativos](assets/usingthecodeeditor.zip)
 * [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Clique em &quot;Criar | Upload de arquivo&quot; e fazer upload do arquivo que você baixou na etapa anterior
+* Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
 * [Pré-visualizar os formulários](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Informe o Nome do Candidato e selecione o Estado Civil para Casado
 * Insira o nome do cônjuge
@@ -92,7 +92,7 @@ Para experimentar isso no seu sistema:
 * Instale o Tomcat se você ainda não o tiver. [As instruções para instalar o tomcat estão disponíveis aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Implantar o arquivo SampleRest.war contido neste arquivo zip no Tomcat](assets/sample-rest.zip)
 * [Abrir Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Clique em &quot;Criar | Upload de arquivo&quot; e fazer upload do arquivo que você baixou na etapa anterior
+* Clique em &quot;Criar | Upload de arquivo&quot; e faça upload do arquivo baixado na etapa anterior
 * [Pré-visualizar os formulários](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Insira o valor do empréstimo e saia do campo. Isso acionará a regra que exibe o campo loan period.
 * Selecionar o período de empréstimo apropriado (os itens do período de empréstimo são preenchidos a partir da chamada restante)

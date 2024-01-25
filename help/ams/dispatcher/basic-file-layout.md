@@ -9,8 +9,8 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
-duration: 439
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 373
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
@@ -275,7 +275,7 @@ Os arquivos padrão menos instalados que você altera são melhores, por razões
 
 Em vez disso, cria uma `.rpmnew` ao lado do original.  Isso significa que você perderá algumas alterações desejadas e criará mais lixo em suas pastas de configuração.
 
-ou seja, O RPM durante a instalação da atualização observará `httpd.conf` se estiver no estado `unaltered` estado em que será *replace* o arquivo e você receberá as atualizações vitais.  Se a variável `httpd.conf` foi `altered` então *não substituirá* o arquivo e, em vez disso, ele criará um arquivo de referência chamado `httpd.conf.rpmnew` e as muitas correções desejadas estarão nesse arquivo que não se aplica na inicialização do serviço.
+ou seja, o RPM durante a instalação da atualização observará `httpd.conf` se estiver no estado `unaltered` estado em que será *replace* o arquivo e você receberá as atualizações vitais.  Se a variável `httpd.conf` foi `altered` então *não substituirá* o arquivo e, em vez disso, ele criará um arquivo de referência chamado `httpd.conf.rpmnew` e as muitas correções desejadas estarão nesse arquivo que não se aplica na inicialização do serviço.
 
 O Enterprise Linux foi configurado adequadamente para lidar com esse caso de uso de maneira melhor.  Elas fornecem áreas em que você pode estender ou substituir os padrões definidos para você.  Dentro da instalação básica do httpd, você encontrará o arquivo `/etc/httpd/conf/httpd.conf`e tem sintaxe, como:
 

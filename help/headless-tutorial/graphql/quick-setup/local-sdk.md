@@ -10,8 +10,8 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-duration: 328
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 297
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Configuração rápida do AEM Headless usando o AEM SDK local {#setup}
 
-A configuração rápida do AEM sem periféricos oferece uma abordagem prática do AEM sem periféricos usando conteúdo do projeto de amostra do WKND Site e uma amostra do aplicativo React (um SPA) que consome o conteúdo por meio das APIs do GraphQL do AEM sem periféricos. Este guia usa o [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+A configuração rápida do AEM sem periféricos oferece uma abordagem prática do AEM sem periféricos usando conteúdo do projeto de amostra do WKND Site e uma amostra do aplicativo React (um SPA) que consome o conteúdo por meio das APIs do GraphQL do AEM sem periféricos. Este guia usa o [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR).
 
 ## Pré-requisitos {#prerequisites}
 

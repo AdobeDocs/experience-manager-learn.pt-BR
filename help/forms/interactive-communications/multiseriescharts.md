@@ -9,8 +9,8 @@ role: Developer
 level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 454
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 437
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -41,6 +41,6 @@ Para testar isso em seu sistema, siga as etapas a seguir
 * [Baixe o SeriesChartSampleData.json no disco rígido.](assets/serieschartsampledata.json) Estes são os dados de exemplo usados para preencher o gráfico.
 * [Navegue até Forms e Documentos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecione cuidadosamente o modelo de comunicações interativas &quot;MutualFundGrowthFactSheet&quot;.
-* Clique em Visualizar | Canal de impressão | Fazer upload de dados de amostra.
+* Clique em Visualizar | Canal de impressão | Carregar dados de amostra.
 * Navegue até o arquivo de dados de amostra fornecido como parte deste artigo.
 * Pré-visualize o canal de impressão da comunicação interativa &quot;MutualFundGrowthFactSheet&quot; com os dados de amostra baixados na etapa anterior.

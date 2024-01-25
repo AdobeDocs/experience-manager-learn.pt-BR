@@ -8,8 +8,8 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-duration: 274
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 237
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Para fazer com que esse exemplo funcione em seu sistema, siga as etapas listadas
 
 * [Ir para Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Clique em Criar | Carregamento de arquivo e carregamento da tag-and-store-in-dam-adaptive-form.zip
+* Clique em Criar | Fazer upload do arquivo Faça upload da tag-and-store-in-dam-adaptive-form.zip
 
 * [Importar os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) uso do gerenciador de pacotes AEM
 * Abra o [exemplo de formulário no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e envie o formulário.

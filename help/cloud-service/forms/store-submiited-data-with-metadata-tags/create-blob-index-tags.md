@@ -8,8 +8,9 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 jira: KT-14501
-duration: 71
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 54
+exl-id: eb9bcd1b-c86f-4894-bcf8-9c17e74dd6ec
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 1%
@@ -79,5 +80,3 @@ O código a seguir cria a string das tags de dados do índice de blob com seus v
 ## Próximas etapas
 
 [Criar manipulador de envio personalizado](./create-custom-submit.md)
-
-
