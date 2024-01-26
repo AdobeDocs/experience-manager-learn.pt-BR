@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '2001'
 ht-degree: 2%
 
 ---
@@ -131,6 +131,11 @@ ht-degree: 2%
    + [2 - Anexos de formulário zip](zipping-form-attachments/custom-process-step.md)
    + [3 - Anexos de formulário de email](zipping-form-attachments/populating-list-of-documents.md)
    + [4 - Testar a solução](zipping-form-attachments/test.md)
++ Preenchimento prévio de formulário com dados e anexos{#prefill-form-with-data-attachments}
+   + [1 - Introdução](prefill-form-with-data-attachments/introduction.md)
+   + [2 - Criar envio personalizado](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [3 - Criar configuração OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [4 - Criar serviço de preenchimento](prefill-form-with-data-attachments/create-prefill-service.md)
 + Armazenamento e recuperação do formulário adaptável{#store-and-retrieve-af-with-2fa}
    + [1 - Introdução](store-and-retrieve-af-with-2fa/introduction.md)
    + [2 - Configurar fonte de dados](store-and-retrieve-af-with-2fa/configure-data-source.md)
@@ -151,7 +156,7 @@ ht-degree: 2%
    + [5 - Testar a solução](import-data-from-pdf-form/test-the-solution.md)
 + Exportação de Dados Enviados no Formato CSV{#export-submitted-data-csv-format}
    + [Exportar dados enviados](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ Formulários HTML5{#html5-forms}
++ HTML5 FORMS{#html5-forms}
    + [Criar formulário HTML5](html5-forms/create-html5-form.md)
    + [Tratar Envio de Formulário HTML5](html5-forms/handle-html5-form-submission.md)
 + AEM FORMS e ACROBAT SIGN{#forms-and-sign}
@@ -163,7 +168,7 @@ ht-degree: 2%
    + [Criar e configurar o formulário adaptável](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurar formulário adaptável para signatário único](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurar o formulário adaptável para dois signatários](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurar o serviço de conversão automática de formulários](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configurar o serviço do Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Converter formulário de PDF em formulário adaptável](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurar formulário adaptável convertido](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Uso de modelos XDP com o Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
