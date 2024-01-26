@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 637
-source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
+source-git-commit: f48fb02887d909a102718dc5a0c4d1ecd2b1ef34
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -39,9 +39,9 @@ Para criar um URL que monte a extensão de não produção no AEM, o URL da inte
 Por exemplo, para visualizar uma extensão do console de Fragmentos de conteúdo:
 
 1. Faça login no ambiente as a Cloud Service AEM desejado.
-2. Selecione o __Fragmentos de conteúdo__ ícone.
-3. Aguarde o Console do Fragmento de conteúdo do AEM ser carregado no navegador.
-4. Copie o URL do Console do Fragmento de conteúdo do AEM da barra de endereços do navegador. Ele deve se parecer com:
+1. Selecione o __Fragmentos de conteúdo__ ícone.
+1. Aguarde o Console do Fragmento de conteúdo do AEM ser carregado no navegador.
+1. Copie o URL do Console do Fragmento de conteúdo do AEM da barra de endereços do navegador. Ele deve se parecer com:
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
@@ -80,11 +80,11 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-2. Copie e cole o URL de visualização no navegador.
+1. Copie e cole o URL de visualização no navegador.
 
    + Talvez seja necessário inicialmente e depois periodicamente, [aceitar o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) para o host do aplicativo local (`https://localhost:9080`).
 
-3. A interface do AEM é carregada com a versão local da extensão inserida nela para verificação.
+1. A interface do AEM é carregada com a versão local da extensão inserida nela para verificação.
 
 >[!IMPORTANT]
 >
@@ -144,9 +144,9 @@ Para facilitar a criação dos URLs de visualização e visualização descritos
 O bookmarklet abaixo pré-visualiza a [builds de desenvolvimento local](#verify-local-development-builds) da extensão em `https://localhost:9080`. Para visualizar [builds de estágio](#verify-stage-builds), crie um bookmarklet com a `previewApp` variável definida como o URL do aplicativo App Builder implantado.
 
 1. Crie um marcador no navegador.
-2. Edite o marcador.
-3. Dê um nome significativo a um marcador, como `AEM UI Extension Preview (localhost:9080)`.
-4. Defina o URL do marcador com o seguinte código:
+1. Edite o marcador.
+1. Dê um nome significativo a um marcador, como `AEM UI Extension Preview (localhost:9080)`.
+1. Defina o URL do marcador com o seguinte código:
 
    ```javascript
    javascript: (() => {
@@ -161,7 +161,7 @@ O bookmarklet abaixo pré-visualiza a [builds de desenvolvimento local](#verify-
    })();
    ```
 
-5. Navegue até uma interface de usuário AEM extensível para carregar a extensão de visualização no e clique no bookmarklet.
+1. Navegue até uma interface de usuário AEM extensível para carregar a extensão de visualização no e clique no bookmarklet.
 
 >[!TIP]
 >
