@@ -11,10 +11,10 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 5%
+source-wordcount: '843'
+ht-degree: 4%
 
 ---
 
@@ -27,14 +27,14 @@ Fragmentos de conteúdo usados na modelagem de conteúdo AEM Headless, geralment
 A variável `ImageRef` O tipo tem quatro opções de URL para referências de conteúdo:
 
 + `_path` é o caminho referenciado no AEM e não inclui uma origem AEM (nome do host)
-+ `_dynamicUrl` é o URL completo do ativo de imagem preferencial otimizado para a Web.
++ `_dynamicUrl` é o URL para a entrega otimizada para a Web do ativo de imagem.
    + A variável `_dynamicUrl` não inclui uma origem de AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
 + `_authorUrl` é o URL completo do ativo de imagem no AEM Author
    + [Autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
 + `_publishUrl` é o URL completo do ativo de imagem na publicação do AEM
    + [Publicação no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) O geralmente é o local de onde a implantação em produção do aplicativo headless exibe imagens do.
 
-A variável `_dynamicUrl` é o URL preferencial para usar em ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`, e `_publishUrl` sempre que possível.
+A variável `_dynamicUrl` é o URL recomendado para usar na entrega de ativos de imagem e deve substituir o uso de `_path`, `_authorUrl`, e `_publishUrl` sempre que possível.
 
 |                                | AEM as a Cloud Service | RDE AS A CLOUD SERVICE AEM | SDK do AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
@@ -96,17 +96,17 @@ A variável `$path` variável usada no `_path` O filtro requer o caminho complet
 
 A variável `_assetTransform` define como o `_dynamicUrl` é construído para otimizar a representação da imagem fornecida. URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
 
-| Parâmetro do GraphQL | Parâmetro de URL | Descrição | Obrigatório | Valores de variáveis do GraphQL | Valores de parâmetro de URL | Exemplo de parâmetro de URL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | N/A | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/A | N/A |
-| `seoName` | N/A | Nome do segmento de arquivo no URL. Se não for fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` | N/A | N/A |
-| `crop` | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original | String delimitada por vírgulas de coordenadas numéricas `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
-| `size` | `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos | Inteiros positivos delimitados por vírgulas na ordem `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
-| `flip` | `flip` | Inverter a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
-| `quality` | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 | 1-100 | `?quality=80` |
-| `width` | `width` | Largura da imagem de saída em pixels. Quando `size` é fornecido `width` é ignorado. | ✘ | Número inteiro positivo | Número inteiro positivo | `?width=1600` |
-| `preferWebP` | `preferwebp` | Se `true` e AEM fornece um WebP se o navegador oferecer suporte a ele, independentemente da `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
+| Parâmetro do GraphQL | Descrição | Obrigatório | Valores de variáveis do GraphQL |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+| `format` | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
+| `seoName` | Nome do segmento de arquivo no URL. Se não for fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` |
+| `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original |
+| `size` | Tamanho da imagem de saída (altura e largura) em pixels. | ✘ | Inteiros positivos |
+| `rotation` | Rotação da imagem em graus. | ✘ | `R90`, `R180`, `R270` |
+| `flip` | Inverter a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
+| `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 |
+| `width` | Largura da imagem de saída em pixels. Quando `size` é fornecido `width` é ignorado. | ✘ | Número inteiro positivo |
+| `preferWebP` | Se `true` e AEM fornece um WebP se o navegador oferecer suporte a ele, independentemente da `format`. | ✘ | `true`, `false` |
 
 ## Resposta do GraphQL
 
@@ -145,7 +145,7 @@ Lembre-se: `_dynamicUrl` O não inclui o domínio AEM, portanto, é necessário 
 
 ## URLs responsivos
 
-O exemplo acima mostra o uso de uma imagem de tamanho único, no entanto, em experiências da Web, conjuntos de imagens responsivas geralmente são necessários. Imagens responsivas podem ser implementadas usando [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). O trecho de código a seguir mostra como usar o `_dynamicUrl` como um baseado em e anexar diferentes parâmetros de largura para potencializar diferentes exibições responsivas. Não só o `width` O parâmetro de consulta pode ser usado, mas outros parâmetros de consulta podem ser adicionados pelo cliente para otimizar ainda mais o ativo de imagem com base em suas necessidades.
+O exemplo acima mostra o uso de uma imagem de tamanho único, no entanto, em experiências da Web, conjuntos de imagens responsivas geralmente são necessários. Imagens responsivas podem ser implementadas usando [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [elementos de imagem](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). O trecho de código a seguir mostra como usar o `_dynamicUrl` como base. `width` é um parâmetro de URL que pode ser anexado a `_dynamicUrl` para potencializar diferentes visualizações responsivas.
 
 ```javascript
 // The AEM host is usually read from a environment variable of the SPA.
