@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+source-git-commit: d178059f6f00228586e692465f7f437129bffaae
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -97,7 +97,7 @@ A variável `$path` variável usada no `_path` O filtro requer o caminho complet
 A variável `_assetTransform` define como o `_dynamicUrl` é construído para otimizar a representação da imagem fornecida. URLs de imagens otimizadas para a Web também podem ser ajustadas no cliente alterando os parâmetros de consulta do URL.
 
 | Parâmetro do GraphQL | Descrição | Obrigatório | Valores de variáveis do GraphQL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+|-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | O formato do ativo de imagem. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
 | `seoName` | Nome do segmento de arquivo no URL. Se não for fornecido, o nome do ativo de imagem será usado. | ✘ | Alfanumérico, `-`ou `_` |
 | `crop` | O quadro de corte retirado da imagem deve estar dentro do tamanho da imagem | ✘ | Inteiros positivos que definem uma região de corte dentro dos limites das dimensões da imagem original |
@@ -107,6 +107,7 @@ A variável `_assetTransform` define como o `_dynamicUrl` é construído para ot
 | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 |
 | `width` | Largura da imagem de saída em pixels. Quando `size` é fornecido `width` é ignorado. | ✘ | Número inteiro positivo |
 | `preferWebP` | Se `true` e AEM fornece um WebP se o navegador oferecer suporte a ele, independentemente da `format`. | ✘ | `true`, `false` |
+
 
 ## Resposta do GraphQL
 
