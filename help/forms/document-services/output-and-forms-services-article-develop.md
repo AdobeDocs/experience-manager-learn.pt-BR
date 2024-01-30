@@ -6,12 +6,10 @@ version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
-exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-last-substantial-update: 2020-07-07T00:00:00Z
-duration: 152
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+last-substantial-update: 2024-01-29T00:00:00Z
+source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -22,8 +20,8 @@ Uso da API de serviço de saída e Forms no AEM Forms
 
 Neste artigo, analisaremos o seguinte
 
-* Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte esta [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída.
-* FormsService - É um serviço muito versátil que permite exportar/importar dados de e para um arquivo PDF. Para obter mais detalhes, consulte esta [javadoc](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) para o serviço Forms.
+* [Serviço de saída](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado.
+* [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - Este é um serviço muito versátil que permite que você renderize xdp como pdf e exportar / importar dados de e para o arquivo PDF.
 
 
 O trecho de código a seguir exporta dados do arquivo PDF
@@ -47,7 +45,7 @@ O Line 6 exporta o xmlData do Arquivo PDF
 
 **Para testar o pacote de amostra no seu sistema**
 
-[Baixe e instale o pacote usando o gerenciador de pacotes AEM](assets/outputandformsservice.zip)
+[Baixe e instale o pacote usando o gerenciador de pacotes AEM](assets/using-output-and-form-service-api.zip)
 
 
 
@@ -61,6 +59,7 @@ O Line 6 exporta o xmlData do Arquivo PDF
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
+1. /content/AemFormsSamples/renderxdp
 1. Procure por &quot;Sling Referrer Filter&quot;
 1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor. Instale o aplicativo Postman no sistema.
 Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
@@ -69,9 +68,9 @@ Certifique-se de ter selecionado &quot;POST&quot; na lista suspensa http://local
 ![exportar](assets/postexport.png)
 Clique no botão Send
 
-O pacote contém 3 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Forms Service, o url do serviço, os parâmetros de entrada que cada serviço espera
+O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Forms Service, o url do serviço, os parâmetros de entrada que cada serviço espera
 
-## Mesclar dados e nivelar saída
+## Utilização do OutputService para mesclar dados com o modelo xdp
 
 * Usar o Serviço de saída para mesclar dados com um documento xdp ou pdf para gerar um PDF nivelado
 * **URL DO POST**: http://localhost:4502/content/AemFormsSamples/outputservice.html
@@ -81,22 +80,34 @@ O pacote contém 3 amostras. Os parágrafos a seguir explicam quando usar o serv
    * **xmlfile**: o arquivo de dados xml que é mesclado com xdp_or_pdf_file
    * **saveLocation**: o local onde salvar o documento renderizado no sistema de arquivos. Por exemplo c:\\documents\\sample.pdf
 
-### Importar dados para o arquivo PDF
+### Uso da API FormsService
 
-* Usar o FormsService para importar dados para um arquivo PDF
+#### Importar dados
+
+* Usar FormsService importData para importar dados no arquivo PDF
 * **URL DO POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+
 * **Parâmetros de solicitação:**
 
    * **pdffile** : o arquivo PDF com o qual você deseja mesclar dados
    * **xmlfile**: o arquivo de dados xml que é mesclado com o arquivo pdf
    * **saveLocation**: o local onde salvar o documento renderizado no sistema de arquivos. Por exemplo, `c:\\outputsample.pdf`.
 
-**Exportar dados do arquivo PDF**
-* Usar o FormsService para exportar dados do arquivo PDF
-* **UR POST** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
+#### Exportar dados
+
+* Usar a API FormsService exportData para exportar dados do Arquivo PDF
+* **URL DO POST** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parâmetros de solicitação:**
 
    * **pdffile** : o arquivo pdf do qual você deseja exportar os dados
    * **saveLocation**: o local para salvar os dados exportados no sistema de arquivos. Por exemplo c:\\documentos\\dados_exportados.xml
 
-[Você poderia importar essa coleção do carteiro para testar a API](assets/document-services-postman-collection.json)
+#### Renderizar XDP
+
+* Renderizar modelo XDP como pdf estático/dinâmico
+* Use a API renderPDFForm do FormsService para renderizar o modelo xdp como PDF
+* **URL DO POST** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
+* Parâmetro de solicitação:
+   * xdpName: Nome do arquivo xdp a ser renderizado como pdf
+
+[Você poderia importar essa coleção do carteiro para testar a API](assets/UsingDocumentServicesInAEMForms.postman_collection.json)
