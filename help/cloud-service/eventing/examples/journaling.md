@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 163
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Eventos de registro e AEM
 
 Saiba como recuperar o conjunto inicial de eventos AEM do journal e explorar os detalhes sobre cada evento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
 O registro em log é um método de recebimento para consumir Eventos AEM, e um registro em log é uma lista ordenada de eventos. Usando a API de registro de eventos Adobe I/O, você pode buscar os eventos AEM no registro e processá-los no aplicativo. Essa abordagem permite gerenciar eventos com base em uma cadência especificada e processá-los com eficiência em massa. Consulte a [Registro em log](https://developer.adobe.com/events/docs/guides/journaling_intro/) para obter insights detalhados, incluindo considerações essenciais, como períodos de retenção, paginação e muito mais.
 

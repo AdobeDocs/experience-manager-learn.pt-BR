@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 16%
+source-wordcount: '1119'
+ht-degree: 17%
 
 ---
 
@@ -150,8 +150,8 @@ ht-degree: 16%
 + Rede avançada{#networking}
    + [Visão geral](./networking/advanced-networking.md)
    + [Saída de porta flexível](./networking/flexible-port-egress.md)
-   + [Endereço IP de saída dedicado](./networking/dedicated-egress-ip-address.md)
-   + [Rede privada virtual](./networking/vpn.md)
+   + [Endereço IP de saída exclusivo](./networking/dedicated-egress-ip-address.md)
+   + [Rede virtual privada](./networking/vpn.md)
    + Exemplos de código{#examples}
       + [HTTP/HTTPS em portas fora do padrão para saída de porta flexível](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
       + [HTTP/HTTPS para endereço IP de saída dedicado/VPN](./networking/examples/http-dedicated-egress-ip-vpn.md)
@@ -169,6 +169,8 @@ ht-degree: 16%
    + Exemplos{#examples}
       + [Webhook - Receber eventos de AEM](./eventing/examples/webhook.md)
       + [Registro em log - Carregar eventos AEM](./eventing/examples/journaling.md)
+      + [Ação do Adobe I/O Runtime - Receber eventos AEM](./eventing/examples/runtime-action.md)
+      + [Ação do Adobe I/O Runtime - Processar eventos AEM](./eventing/examples/event-processing-using-runtime-action.md)
 + Migração {#migration}
    + [Ferramenta Transferência de conteúdo](./migration/content-transfer-tool.md)
    + [Importação em massa de ativos](./migration/bulk-import.md)
