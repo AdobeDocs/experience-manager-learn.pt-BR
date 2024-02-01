@@ -9,9 +9,9 @@ level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 59
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 1%
 
 Maneira rápida e fácil de criar sua própria ação de envio personalizada para o Formulário adaptável
 
+>[!NOTE]
+>O código deste artigo não funciona com os componentes principais baseados em formulário adaptável.
+>[O artigo equivalente para o formulário adaptável baseado em componentes principais está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+
+
 Este artigo guiará você pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio do Adaptive Forms.
 
 * Logon no crx
@@ -27,7 +32,7 @@ Este artigo guiará você pelas etapas necessárias para criar uma ação de env
 * Salve o nó recém-criado.
 * Adicione as três propriedades a seguir ao nó recém-criado
 
-| Nome da Propriedade | Valor da propriedade |
+| Nome de propriedade | Valor de propriedade |
 |----------------    | ---------------------------------|
 | guideComponentType | fd/af/components/guidesubmittype |
 | guideDataModel | xfa,xsd,basic |

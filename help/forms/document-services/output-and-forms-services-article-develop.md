@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -61,12 +61,18 @@ O Line 6 exporta o xmlData do Arquivo PDF
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. Procure por &quot;Sling Referrer Filter&quot;
-1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor. Instale o aplicativo Postman no sistema.
-Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
+1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste)
 
-Certifique-se de ter selecionado &quot;POST&quot; na lista suspensa http://localhost:4502/content/AemFormsSamples/exportdata.html Certifique-se de especificar &quot;Authorization&quot; como &quot;Basic Auth&quot;. Especifique o nome de usuário e a senha do Servidor AEM. Navegue até a guia &quot;Corpo&quot; e especifique os parâmetros da solicitação, conforme mostrado na imagem abaixo
-![exportar](assets/postexport.png)
-Clique no botão Send
+## Teste das amostras
+
+Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor.
+
+* Instale o aplicativo Postman no sistema.
+* Inicie o aplicativo e insira o URL apropriado
+* Verifique se selecionou &quot;POST&quot; na lista suspensa
+* Certifique-se de especificar &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especifique o nome de usuário e a senha do Servidor AEM
+* Especifique os parâmetros da solicitação na guia do corpo
+* Clique no botão Enviar
 
 O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serviço de saída ou o Forms Service, o url do serviço, os parâmetros de entrada que cada serviço espera
 

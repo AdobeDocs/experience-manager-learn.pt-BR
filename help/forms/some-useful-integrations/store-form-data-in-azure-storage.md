@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 Este artigo mostra como fazer chamadas REST para armazenar dados AEM Forms enviados no Armazenamento do Azure.
 Para poder armazenar dados de formulário enviados no Armazenamento do Azure, as etapas a seguir devem ser seguidas.
+
+>[!NOTE]
+>O código deste artigo não funciona com os componentes principais baseados em formulário adaptável. [O artigo equivalente para o formulário adaptável baseado em componentes principais está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Criar conta de Armazenamento do Azure
 
@@ -45,6 +49,7 @@ Certifique-se de especificar as permissões apropriadas e a data final apropriad
 ## Fornecer o token SAS de blob e o URI de armazenamento
 
 Para tornar o código mais genérico, as duas propriedades podem ser configuradas usando a configuração OSGi, como mostrado abaixo. A variável _**aemformstutorial**_ é o nome da conta de armazenamento, _**envios de formulários**_ é o container no qual os dados serão armazenados.
+Verifique se você tem / no final do URI de armazenamento e se o token SAS começa com?
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -98,7 +103,8 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken A
 
 * [Importar a amostra de formulário adaptável](./assets/bank-account-sample-form.zip)
 
-* Especifique os valores apropriados na Configuração do Portal do Azure usando o console de configuração OSGi
+* [Especifique os valores apropriados na Configuração do Portal do Azure usando o console de configuração OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+
 * [Pré-visualizar e enviar o formulário Conta Bancária](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Verifique se os dados estão armazenados no contêiner de armazenamento do Azure de sua escolha. Copie a ID do blob.

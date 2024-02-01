@@ -10,9 +10,9 @@ last-substantial-update: 2023-10-23T00:00:00Z
 jira: KT-14238
 duration: 81
 exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,9 @@ ht-degree: 0%
 
 Este artigo mostra como preencher um formulário adaptável com os dados armazenados no armazenamento do Azure.
 Pressupõe-se que você tenha armazenado os dados do formulário adaptável no armazenamento do Azure e agora queira preencher previamente seu formulário adaptável com esses dados.
+>[!NOTE]
+>O código deste artigo não funciona com os componentes principais baseados em formulário adaptável.[O artigo equivalente para o formulário adaptável baseado em componentes principais está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Criar solicitação GET
 
@@ -83,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importar a amostra de formulário adaptável](./assets/bank-account-sample-form.zip)
 
-* Especifique os valores apropriados na Configuração do Portal do Azure usando o console de configuração OSGi.
+* [Especifique os valores apropriados na Configuração do Portal do Azure usando o console de configuração OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
 * [Pré-visualizar e enviar o formulário Conta Bancária](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

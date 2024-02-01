@@ -8,9 +8,9 @@ level: Beginner
 version: 6.5
 topic: Integrations
 jira: KT-14794
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Neste tutorial, você aprenderá a implementar um caso de uso simples de preench
 
 Para implementar o caso de uso acima no AEM Forms, você precisará do seguinte
 
-* Instância do AEM Forms 6.5.19
+* Instância do AEM Forms 6.5.19 ou posterior
 * [Conta do portal do Azure](https://portal.azure.com/)
 
 
