@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: f0930e517254b6353fe50c3bbf9ae915d9ef6ca3
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ Para concluir este tutorial, você precisa:
 
 - Projeto inicializado localmente a partir do exemplo anterior [Eventos de ação e AEM do Adobe I/O Runtime](./runtime-action.md#initialize-project-for-local-development).
 
+>[!IMPORTANT]
+>
+>O evento as a Cloud Service de AEM só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar o evento de AEM em seu ambiente as a Cloud Service AEM, entre em contato com [Equipe de evento do AEM](mailto:grp-aem-events@adobe.com).
 
 ## Ação do processador de eventos AEM
 
