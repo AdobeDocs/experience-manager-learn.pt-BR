@@ -1,6 +1,6 @@
 ---
-title: Entender o suporte à autenticação no AEM
-description: Uma visualização consolidada nos mecanismos de autenticação (e, ocasionalmente, autorização) compatíveis com o AEM.
+title: Suporte à autenticação no AEM 6.x
+description: Uma visualização consolidada nos mecanismos de autenticação compatíveis com o AEM 6.x.
 version: 6.4, 6.5
 feature: User and Groups
 doc-type: Article
@@ -12,14 +12,14 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 38
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 9ef35d4d20ea574ac2051d7d3e997ecc18c2aaaa
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '116'
 ht-degree: 7%
 
 ---
 
-# Entender o suporte à autenticação no AEM 6.x
+# Suporte à autenticação no AEM 6.x
 
 Uma visualização consolidada nos mecanismos de autenticação (e, ocasionalmente, autorização) compatíveis com o AEM.
 
