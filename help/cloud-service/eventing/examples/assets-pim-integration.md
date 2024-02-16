@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f150a2517c4cafe55917e1aa50dca297c9bb3bc5
+source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,19 @@ ht-degree: 0%
 
 # Eventos do AEM Assets para integração do PIM
 
-Saiba como integrar o AEM Assets e o sistema de Gerenciamento de informações de produtos (PIM) para atualizar os metadados de ativos **usar evento de AEM**. Ao receber um evento do AEM Assets, os metadados de ativos podem ser atualizados no AEM, no PIM ou em ambos os sistemas, com base nos requisitos comerciais. No entanto, neste exemplo, vamos atualizar os metadados do ativo no AEM.
+** OBSERVAÇÃO: este tutorial usa APIs experimentais as a Cloud Service para AEM.  Para obter acesso a essas APIs, será necessário aceitar um contrato de software de pré-lançamento e habilitar manualmente essas APIs para o seu ambiente pela engenharia de Adobe.  Entre em contato com o suporte do Adobe para solicitar acesso. **
 
-Para executar a atualização dos metadados do ativo **código fora do AEM**, o [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) uma plataforma sem servidor é usada. O fluxo de processamento de eventos é o seguinte:
+Saiba como integrar o AEM Assets a um sistema de terceiros, como um sistema de Gerenciamento de informações de produtos (PIM) ou de Gerenciamento de linha de produtos (PLM), para atualizar metadados de ativos **uso de eventos nativos de AEM IO**. Ao receber um evento do AEM Assets, os metadados do ativo podem ser atualizados no AEM, no PIM ou em ambos os sistemas, com base nos requisitos comerciais. No entanto, neste exemplo, demonstraremos a atualização dos metadados do ativo no AEM.
+
+Para executar a atualização dos metadados do ativo **código fora do AEM**, nós aproveitaremos [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), uma plataforma sem servidor. O fluxo de processamento de eventos é o seguinte:
 
 ![Eventos do AEM Assets para integração do PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. O serviço de Autor do AEM aciona um _Processamento de ativos concluído_ evento quando o upload de um ativo é concluído.
+1. O serviço de Autor do AEM aciona um _Processamento de ativos concluído_ evento quando o upload de um ativo é concluído e todas as atividades de processamento de ativos são concluídas.  Aguardar a conclusão do processamento garante que qualquer processamento pronto para uso, como extração de metadados, seja concluído antes de continuar.
 1. O evento é enviado para o [Eventos Adobe I/O](https://developer.adobe.com/events/) serviço.
 1. O serviço de Eventos do Adobe I/O transmite o evento para o [Ação do Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) para processamento.
-1. A Ação do Adobe I/O Runtime chama a API PIM zombada para recuperar metadados adicionais, como SKU, informações do fornecedor.
-1. O PIM recuperado com metadados adicionais é atualizado no AEM Assets usando o [API do autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+1. A Ação do Adobe I/O Runtime chama a API do sistema PIM para recuperar metadados adicionais, como SKU, informações do fornecedor ou outros detalhes.
+1. Os metadados adicionais recuperados do PIM são atualizados no AEM Assets usando o [API do autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
 ## Pré-requisitos
 
@@ -47,22 +49,22 @@ Para concluir este tutorial, você precisa:
 
 As etapas de desenvolvimento de alto nível são:
 
-1. [Criar projeto no Console do Adobe Developer (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
-1. [Inicializar projeto para desenvolvimento local](./runtime-action.md#initialize-project-for-local-development)
-1. Configurar projeto no ADC
-1. Configurar o serviço do autor no AEM para habilitar a comunicação do projeto ADC
-1. Desenvolver uma ação em tempo de execução que orquestre a recuperação e a atualização de metadados
-1. Faça upload de um ativo no serviço do autor do AEM e verifique a atualização dos metadados
+1. [Crie um projeto no Console do Adobe Developer (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
+1. [Inicializar o projeto para desenvolvimento local](./runtime-action.md#initialize-project-for-local-development)
+1. Configurar o projeto no ADC
+1. Configurar o serviço do autor do AEM para habilitar a comunicação do projeto ADC
+1. Desenvolver uma ação de tempo de execução que orquestre a recuperação e a atualização de metadados
+1. Faça upload de um ativo para o serviço de Autor do AEM e verifique se os metadados foram atualizados
 
-Para obter etapas detalhadas sobre 1-2, consulte [Eventos de ação e AEM do Adobe I/O Runtime](./runtime-action.md#) exemplo, e para 3-6, consulte as seções a seguir.
+Para obter detalhes sobre as etapas 1 a 2, consulte o [Eventos de ação e AEM do Adobe I/O Runtime](./runtime-action.md#) exemplo, e para as etapas 3 a 6, consulte as seções a seguir.
 
-### Configurar projeto no Console do Adobe Developer (ADC)
+### Configure o projeto no Console do Adobe Developer (ADC)
 
 Para receber Eventos do AEM Assets e executar a Ação do Adobe I/O Runtime criada na etapa anterior, configure o projeto no ADC.
 
 - No ADC, navegue até o [projeto](https://developer.adobe.com/console/projects). Selecione o `Stage` espaço de trabalho, é aqui que a ação de tempo de execução é implantada.
 
-- Clique em **Adicionar serviço** e selecione **Evento** opção. No **Adicionar eventos** , selecione **Experience Cloud** > **AEM Assets** e clique em **Próxima**. Siga as etapas de configuração adicionais, selecione Instância do AEM, _Processamento de ativos concluído_ evento, tipo de autenticação de servidor para servidor OAuth e outros detalhes.
+- Clique em **Adicionar serviço** e selecione o botão **Evento** opção. No **Adicionar eventos** , selecione **Experience Cloud** > **AEM Assets** e clique em **Próxima**. Siga as etapas de configuração adicionais, selecione Instância do AEM, _Processamento de ativos concluído_ evento, tipo de autenticação de servidor para servidor OAuth e outros detalhes.
 
   ![Evento do AEM Assets - adicionar evento](../assets/examples/assets-pim-integration/add-aem-assets-event.png)
 
@@ -70,13 +72,13 @@ Para receber Eventos do AEM Assets e executar a Ação do Adobe I/O Runtime cria
 
   ![Evento do AEM Assets - Receber evento](../assets/examples/assets-pim-integration/receive-aem-assets-event.png)
 
-- Da mesma forma, clique em **Adicionar serviço** e selecione **API** opção. No **Adicionar uma API** modal, selecione **Experience Cloud** > **API AS A CLOUD SERVICE AEM** e clique em **Próxima**.
+- Da mesma forma, clique no link **Adicionar serviço** e selecione o botão **API** opção. No **Adicionar uma API** modal, selecione **Experience Cloud** > **API AS A CLOUD SERVICE AEM** e clique em **Próxima**.
 
   ![Adicionar a API as a Cloud Service do AEM - Configurar projeto](../assets/examples/assets-pim-integration/add-aem-api.png)
 
 - Em seguida, selecione **Servidor OAuth para servidor** para tipo de autenticação e clique em **Próxima**.
 
-- Em seguida, selecione o **Administradores do AEM-XXX** perfil do produto e clique em **Salvar API configurada**. Para obter acesso a recursos e permissões granulares, o perfil de produto selecionado deve ser associado ao evento do AEM Assets que produz o ambiente do AEMCS.
+- Em seguida, selecione o **Administradores do AEM-XXX** perfil do produto e clique em **Salvar API configurada**. Para atualizar o ativo em questão, o perfil de produto selecionado deve estar associado ao ambiente do AEM Assets do qual o evento está sendo produzido e ter acesso suficiente para atualizar os ativos lá.
 
   ![Adicionar a API as a Cloud Service do AEM - Configurar projeto](../assets/examples/assets-pim-integration/add-aem-api-product-profile-select.png)
 
@@ -104,7 +106,7 @@ Para executar a recuperação e atualização de metadados, comece atualizando o
 
 Consulte a guia anexada [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) para obter o código completo, e abaixo da seção realça os arquivos principais.
 
-- A variável `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` O arquivo faz um simulacro da chamada da API do PIM para recuperar metadados adicionais, como o SKU e o nome do fornecedor.
+- A variável `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` O arquivo faz um simulacro da chamada da API do PIM para recuperar metadados adicionais, como o SKU e o nome do fornecedor.  Este arquivo é usado para fins de demonstração.  Depois que o fluxo de ponta a ponta estiver funcionando, substitua essa função por uma chamada para o sistema PIM real para recuperar metadados do ativo.
 
   ```javascript
   /**
@@ -285,7 +287,7 @@ Para verificar a integração do AEM Assets e do PIM, siga estas etapas:
 
 A sincronização de metadados de ativos entre o AEM e outros sistemas, como o PIM, geralmente é necessária na empresa. O uso do evento AEM desses requisitos pode ser obtido.
 
-- O código de metadados de ativos é executado fora do AEM, evitando a carga no serviço de autor AEM e, portanto, uma arquitetura orientada por eventos que é dimensionada de maneira independente.
+- O código de recuperação de metadados de ativos é executado fora do AEM, evitando a carga no serviço de Autor AEM, portanto, uma arquitetura orientada por eventos que é dimensionada de forma independente.
 - A recém-introduzida API do autor do Assets é usada para atualizar os metadados do ativo no AEM.
 - A autenticação de API usa OAuth de servidor para servidor (também conhecido como fluxo de credenciais de cliente), consulte [Guia de implementação de credenciais do OAuth de servidor para servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - Em vez de Ações do Adobe I/O Runtime, outros webhooks ou o Amazon EventBridge podem ser usados para receber o evento do AEM Assets e processar a atualização de metadados.
