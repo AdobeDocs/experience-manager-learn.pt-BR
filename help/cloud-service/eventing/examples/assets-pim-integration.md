@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
+source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,19 @@ ht-degree: 0%
 
 # Eventos do AEM Assets para integração do PIM
 
-** OBSERVAÇÃO: este tutorial usa APIs experimentais as a Cloud Service para AEM.  Para obter acesso a essas APIs, será necessário aceitar um contrato de software de pré-lançamento e habilitar manualmente essas APIs para o seu ambiente pela engenharia de Adobe.  Entre em contato com o suporte do Adobe para solicitar acesso. **
+>[!IMPORTANT]
+>
+>Este tutorial usa APIs as a Cloud Service de AEM experimentais. Para obter acesso a essas APIs, você deve aceitar um contrato de software de pré-lançamento e ter essas APIs habilitadas manualmente para o seu ambiente pela engenharia de Adobe. Para solicitar acesso, entre em contato com o suporte do Adobe.
 
-Saiba como integrar o AEM Assets a um sistema de terceiros, como um sistema de Gerenciamento de informações de produtos (PIM) ou de Gerenciamento de linha de produtos (PLM), para atualizar metadados de ativos **uso de eventos nativos de AEM IO**. Ao receber um evento do AEM Assets, os metadados do ativo podem ser atualizados no AEM, no PIM ou em ambos os sistemas, com base nos requisitos comerciais. No entanto, neste exemplo, demonstraremos a atualização dos metadados do ativo no AEM.
+Saiba como integrar o AEM Assets a um sistema de terceiros, como um sistema de Gerenciamento de informações de produtos (PIM) ou de Gerenciamento de linha de produtos (PLM), para atualizar metadados de ativos **uso de eventos nativos de AEM IO**. Ao receber um evento do AEM Assets, os metadados do ativo podem ser atualizados no AEM, no PIM ou em ambos os sistemas, com base nos requisitos comerciais. No entanto, este exemplo demonstra a atualização dos metadados do ativo no AEM.
 
-Para executar a atualização dos metadados do ativo **código fora do AEM**, nós aproveitaremos [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), uma plataforma sem servidor. O fluxo de processamento de eventos é o seguinte:
+Para executar a atualização dos metadados do ativo **código fora do AEM**, o [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), uma plataforma sem servidor é usada.
+
+O fluxo de processamento de eventos é o seguinte:
 
 ![Eventos do AEM Assets para integração do PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. O serviço de Autor do AEM aciona um _Processamento de ativos concluído_ evento quando o upload de um ativo é concluído e todas as atividades de processamento de ativos são concluídas.  Aguardar a conclusão do processamento garante que qualquer processamento pronto para uso, como extração de metadados, seja concluído antes de continuar.
+1. O serviço de Autor do AEM aciona um _Processamento de ativos concluído_ evento quando o upload de um ativo é concluído e todas as atividades de processamento de ativos são concluídas. Aguardar a conclusão do processamento garante que qualquer processamento pronto para uso, como extração de metadados, tenha sido concluído.
 1. O evento é enviado para o [Eventos Adobe I/O](https://developer.adobe.com/events/) serviço.
 1. O serviço de Eventos do Adobe I/O transmite o evento para o [Ação do Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) para processamento.
 1. A Ação do Adobe I/O Runtime chama a API do sistema PIM para recuperar metadados adicionais, como SKU, informações do fornecedor ou outros detalhes.
@@ -106,7 +110,7 @@ Para executar a recuperação e atualização de metadados, comece atualizando o
 
 Consulte a guia anexada [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) para obter o código completo, e abaixo da seção realça os arquivos principais.
 
-- A variável `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` O arquivo faz um simulacro da chamada da API do PIM para recuperar metadados adicionais, como o SKU e o nome do fornecedor.  Este arquivo é usado para fins de demonstração.  Depois que o fluxo de ponta a ponta estiver funcionando, substitua essa função por uma chamada para o sistema PIM real para recuperar metadados do ativo.
+- A variável `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` O arquivo faz um simulacro da chamada da API do PIM para recuperar metadados adicionais, como o SKU e o nome do fornecedor. Este arquivo é usado para fins de demonstração. Depois que o fluxo de ponta a ponta estiver funcionando, substitua essa função por uma chamada para o sistema PIM real para recuperar metadados do ativo.
 
   ```javascript
   /**
@@ -209,7 +213,7 @@ Consulte a guia anexada [WKND-Assets-PIM-Integration.zip](../assets/examples/ass
 
 - A variável `src/dx-excshell-1/actions/model` pasta contém `aemAssetEvent.js` e `errors.js` arquivos, que são usados pela ação para analisar o evento recebido e manipular erros, respectivamente.
 
-- A variável `src/dx-excshell-1/actions/generic/index.js` O arquivo do usa os módulos acima para orquestrar a recuperação e a atualização de metadados.
+- A variável `src/dx-excshell-1/actions/generic/index.js` O arquivo do usa os módulos mencionados anteriormente para orquestrar a recuperação e a atualização de metadados.
 
   ```javascript
   ...
@@ -277,7 +281,7 @@ $ aio app deploy
 
 Para verificar a integração do AEM Assets e do PIM, siga estas etapas:
 
-- Para exibir os metadados fornecidos pelo PIM modelo, como SKU e Nome do fornecedor, crie o esquema de metadados no AEM Assets, consulte [Esquemas de metadados](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) que exibe as propriedades de metadados do SKU e do nome do fornecedor.
+- Para exibir os metadados fornecidos pelo PIM modelo, como SKU e Nome do fornecedor, crie o esquema de metadados no AEM Assets, consulte [Esquema de metadados](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) que exibe as propriedades de metadados do SKU e do nome do fornecedor.
 
 - Carregue um ativo no serviço do autor do AEM e verifique a atualização dos metadados.
 
@@ -291,5 +295,5 @@ A sincronização de metadados de ativos entre o AEM e outros sistemas, como o P
 - A recém-introduzida API do autor do Assets é usada para atualizar os metadados do ativo no AEM.
 - A autenticação de API usa OAuth de servidor para servidor (também conhecido como fluxo de credenciais de cliente), consulte [Guia de implementação de credenciais do OAuth de servidor para servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - Em vez de Ações do Adobe I/O Runtime, outros webhooks ou o Amazon EventBridge podem ser usados para receber o evento do AEM Assets e processar a atualização de metadados.
-- O evento de ativos por meio do AEM capacita as empresas a automatizar e simplificar processos críticos, promovendo a eficiência e a coerência em todo o ecossistema de conteúdo.
+- Os eventos de ativos por meio do evento AEM capacitam as empresas a automatizar e simplificar processos críticos, promovendo a eficiência e a coerência em todo o ecossistema de conteúdo.
 
