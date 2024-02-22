@@ -4,9 +4,9 @@ description: A terceira temporada permite que você saiba mais sobre o serviço 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: da8d584e04b5ef375ef5731ea1d5f9e2c0438b2a
+source-git-commit: f2dceed935f563e83092f8e14133746f4126a212
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,20 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                 Saiba como a pesquisa de terceiros pode ser integrada melhor ao Edge Delivery Services.
             </p>
         </td>   
-         <td>           
-         </td>
+        <td>
+            <a href="./season-3/cloud5-rum.md">
+                <img alt="Monitoramento do usuário real (RUM)" src="https://video.tv.adobe.com/v/3427495?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-rum.md">
+                <strong>Monitoramento do usuário real (RUM)</strong></a>        
+                <br/><em>com James Talbot e Varun Mitra, Engenharia de AEM</em>
+            </div>
+            <p>
+                <br/>
+                O RUM (Monitoramento de usuário real) do Explore funciona com o Edge Delivery Services.
+            </p>
+        </td>   
          <td>           
          </td> 
   </tr>  
