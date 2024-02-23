@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -59,10 +59,9 @@ Seguir qualquer um dos métodos sugeridos eliminaria essa mensagem de erro dos l
 
 ## Filtrar rejeitos
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Essas entradas nem sempre são exibidas, mesmo que as rejeições ocorram se o nível do log estiver definido como muito baixo. Defina-o como Info ou debug para garantir que você possa ver se os filtros estão rejeitando as solicitações.
-</div>
+>[!NOTE]
+>
+>Essas entradas nem sempre são exibidas, mesmo que as rejeições ocorram se o nível do log estiver definido como muito baixo. Defina-o como Info ou debug para garantir que você possa ver se os filtros estão rejeitando as solicitações.
 
 Exemplo de entrada de log:
 
@@ -76,10 +75,9 @@ ou:
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-
 ```
 
-<div style="color: #000;border-left: 6px solid red;background-color:#ddffff;"><b>Atenção:</b>
-
-Entenda que as regras do Dispatcher foram definidas para filtrar essa solicitação. Nesse caso, a página que tentou ser visitada foi rejeitada de propósito e não desejamos fazer nada com ela.
-</div>
+>[!CAUTION]
+>
+>Entenda que as regras do Dispatcher foram definidas para filtrar essa solicitação. Nesse caso, a página que tentou ser visitada foi rejeitada de propósito e não desejamos fazer nada com ela.
 
 Se o seu log for semelhante a esta entrada:
 
@@ -136,9 +134,9 @@ Significa que a busca do nível de renderização vs do cache foi medida. Você 
 
 Para obter este número o mais alto possível.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Mesmo que as configurações de cache no arquivo do farm armazenem em cache tudo o que você estiver liberando com muita frequência ou intensidade, isso pode causar uma taxa de ocorrência de cache de porcentagem menor
-</div>
+>[!NOTE]
+>
+>Mesmo que as configurações de cache no arquivo do farm armazenem em cache tudo o que você estiver liberando com muita frequência ou intensidade, isso pode causar uma taxa de ocorrência de cache de porcentagem menor
 
 ## Diretório ausente
 

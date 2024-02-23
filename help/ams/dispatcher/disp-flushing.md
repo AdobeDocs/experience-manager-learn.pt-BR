@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -133,16 +133,17 @@ Se a configuração de nível do arquivo stat for definida como muito alta, cada
 
 Definir esse nível de arquivo como muito baixo pode fazer com que uma solicitação de liberação limpe mais do que o esperado.  O que, por sua vez, faria com que o cache fosse retido com mais frequência, com menos solicitações sendo atendidas do cache, o que pode causar problemas de desempenho.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
+>[!BEGINSHADEBOX &quot;Nota&quot;]
 
-Defina o `statfilelevel` razoável.  Observe a estrutura de pastas e verifique se ela está configurada para permitir liberações concisas sem precisar percorrer muitos diretórios.   Teste e certifique-se de que ele atenda às suas necessidades durante um teste de desempenho do sistema.
+Defina o `statfilelevel` razoável. Observe a estrutura de pastas e verifique se ela está configurada para permitir liberações concisas sem precisar percorrer muitos diretórios. Teste e certifique-se de que ele atenda às suas necessidades durante um teste de desempenho do sistema.
 
-Um bom exemplo é um site compatível com idiomas.  A árvore de conteúdo típica teria os seguintes diretórios
+Um bom exemplo é um site compatível com idiomas. A árvore de conteúdo típica teria os seguintes diretórios
 
 `/content/brand1/en/us/`
 
-Neste exemplo, use uma configuração de nível 4 do arquivo stat.  Isso garantirá que, ao liberar o conteúdo contido em <b>`us`</b> que isso não fará com que as pastas de idioma também sejam liberadas.
-</div>
+Neste exemplo, use uma configuração de nível 4 do arquivo stat. Isso garantirá que, ao liberar o conteúdo contido em **`us`** que isso não fará com que as pastas de idioma também sejam liberadas.
+
+>[!ENDSHADEBOX]
 
 ### HANDSHAKE DE CARIMBO DE DATA E HORA DO ARQUIVO STAT
 
@@ -227,11 +228,11 @@ Essa entrada de configuração consta na seguinte seção do arquivo farm:
 
 Você especifica o diretório em que deseja que o Dispatcher seja preenchido e gerenciado como um diretório de cache.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Esse diretório deve corresponder à configuração da raiz do documento Apache do domínio para o qual o servidor Web está configurado para usar.
-
-Ter pastas docroot aninhadas para cada farm contido nas subpastas da raiz do documento Apache é uma péssima ideia por vários motivos.
-</div>
+>[!NOTE]
+>
+>Esse diretório deve corresponder à configuração da raiz do documento Apache do domínio para o qual o servidor Web está configurado para usar.
+>
+>Ter pastas docroot aninhadas para cada farm contido nas subpastas da raiz do documento Apache é uma péssima ideia por vários motivos.
 
 ### Nível dos arquivos stat
 
@@ -275,13 +276,11 @@ Esta configuração mede a profundidade `.stat` os arquivos precisarão ser gera
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Lembre-se de que, quando ocorre a interação do carimbo de data e hora, ela procura o mais próximo `.stat` arquivo.
-
-ter um `.stat` nível de arquivo 0 e um arquivo stat somente em `/var/www/html/.stat` significa que o conteúdo contido em `/var/www/html/content/dam/brand1/en/us/` procuraria o mais próximo `.stat` arquivo e percorra até 5 pastas para encontrar a única `.stat` arquivo que existe no nível 0 e comparar datas.  Isso significa que uma liberação de nível tão alto invalidaria todos os itens em cache.
-</div>
+>[!NOTE]
+>
+>Lembre-se de que, quando ocorre a interação do carimbo de data e hora, ela procura o mais próximo `.stat` arquivo.
+>
+>Ter um `.stat` nível de arquivo 0 e um arquivo stat somente em `/var/www/html/.stat` significa que o conteúdo contido em `/var/www/html/content/dam/brand1/en/us/` procuraria o mais próximo `.stat` arquivo e percorra até 5 pastas para encontrar a única `.stat` arquivo que existe no nível 0 e comparar datas. Isso significa que uma liberação de nível tão alto invalidaria todos os itens em cache.
 
 ### Invalidação permitida
 

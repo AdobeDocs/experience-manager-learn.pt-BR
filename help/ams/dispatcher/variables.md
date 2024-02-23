@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
 duration: 307
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
@@ -147,10 +147,9 @@ RUNMODE='sites'
 
 Isso não é algo que você pode alterar, mas é útil para aproveitar em seus arquivos de configuração
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Devido ao fato de que esse arquivo só é incluído quando o serviço é iniciado.  É necessário reiniciar o serviço para pegar as alterações.  Isso significa que uma recarga não é suficiente, mas uma reinicialização é necessária
-</div>
+>[!NOTE]
+>
+>Devido ao fato de que esse arquivo só é incluído quando o serviço é iniciado.  É necessário reiniciar o serviço para pegar as alterações.  Isso significa que uma recarga não é suficiente, mas uma reinicialização é necessária
 
 ### Arquivos de variáveis (`.vars`)
 

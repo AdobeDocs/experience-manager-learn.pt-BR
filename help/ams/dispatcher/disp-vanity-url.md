@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -182,9 +182,8 @@ Use ambos os métodos, mas aqui estão os conselhos e critérios que devem ser u
 - Se a personalização for um endpoint básico que não muda com frequência e tem uso frequente, use um `mod_rewrite` regra.
 - Se o namespace personalizado (por exemplo: `/aboutus`) deve ser reutilizada para muitas marcas na mesma instância do AEM e, em seguida, usar regras de regravação.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Uso de urls personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
-</div>
+>[!NOTE]
+>
+>Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Uso de urls personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Próximo -> Logon comum](./common-logs.md)
