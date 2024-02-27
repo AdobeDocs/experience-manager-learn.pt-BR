@@ -2,11 +2,13 @@
 title: Cloud 5 - Monitoramento de usuário real (RUM)
 description: O RUM (Monitoramento de usuário real) do Explore funciona com o Edge Delivery Services.
 version: Cloud Service
+feature: Edge Delivery Services
+topic: Development
 role: Admin, Developer
 level: Intermediate
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: f2dceed935f563e83092f8e14133746f4126a212
+source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%

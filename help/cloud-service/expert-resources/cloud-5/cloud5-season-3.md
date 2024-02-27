@@ -4,9 +4,9 @@ description: A terceira temporada permite que você saiba mais sobre o serviço 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 8a88caeb8d894eb281321fc0b28fd41621c5c8db
+source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,19 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                 O RUM (Monitoramento de usuário real) do Explore funciona com o Edge Delivery Services.
             </p>
         </td>   
-         <td>           
-         </td> 
+ <td>
+            <a href="./season-3/cloud5-edge-workers.md">
+                <img alt="Trabalhadores de borda" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-edge-workers.md">
+                <strong>Trabalhadores de borda</strong></a>        
+                <br/><em>com James Talbot e Amol Anand, Engenharia de AEM</em>
+            </div>
+            <p>
+                <br/>
+                Explore a importância dos trabalhadores de borda com o Edge Delivery Services.
+            </p>
+        </td>   
   </tr>  
 </table>
