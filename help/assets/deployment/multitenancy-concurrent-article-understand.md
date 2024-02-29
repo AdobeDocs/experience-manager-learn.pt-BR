@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 524
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 3b6de935b5f1fb5ee2d0e50372188f1eba7baeaa
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Isso não elimina a necessidade de várias equipes dependerem e possivelmente at
 
 Para garantir que as alterações feitas nesse pacote principal não interrompam a funcionalidade do sistema, recomendamos que um desenvolvedor ou equipe sênior de desenvolvedores mantenha a supervisão. Uma opção é ter uma única equipe que gerencie todas as alterações neste pacote; outra é ter equipes que enviem solicitações de pull que são revisadas e mescladas por esses recursos. É importante que um modelo de governança seja projetado e acordado pelas equipes e que os desenvolvedores o sigam.
 
-## Gerenciando Escopo de Implantação  {#managing-deployment-scope}
+## Gerenciando Escopo de Implantação {#managing-deployment-scope}
 
 À medida que equipes diferentes implantam seu código no mesmo repositório, é importante que elas não substituam as alterações umas das outras. O AEM tem um mecanismo para controlar isso ao implantar pacotes de conteúdo, o filtro. arquivo xml. É importante que não haja sobreposição entre os filtros.  arquivos xml, caso contrário, a implantação de uma equipe poderia apagar a implantação anterior de outra equipe. Para ilustrar esse ponto, consulte os seguintes exemplos de arquivos de filtro bem criados vs. problemáticos:
 
