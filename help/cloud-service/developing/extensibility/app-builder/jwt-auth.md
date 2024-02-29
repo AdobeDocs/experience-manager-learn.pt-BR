@@ -1,6 +1,6 @@
 ---
-title: Gerar token de acesso na ação do Construtor de aplicativos
-description: Saiba como gerar um token de acesso usando credenciais JWT para usar em uma ação do App Builder.
+title: Gerar token de acesso JWT na ação do Construtor de aplicativos
+description: Saiba como gerar um token de acesso usando credenciais JWT para uso em uma ação do App Builder.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
-# Gerar token de acesso na ação do Construtor de aplicativos
+# Gerar token de acesso JWT na ação do Construtor de aplicativos
 
 As ações do Construtor de aplicativos podem precisar interagir com APIs de Adobe associadas a projetos do Adobe Developer Console nos quais o aplicativo Construtor de aplicativos também é implantado.
 
-Isso pode exigir que a ação do App Builder gere seu próprio token de acesso associado ao projeto do Adobe Developer Console desejado.
+Isso pode exigir que a ação do App Builder gere seu próprio token de acesso JWT associado ao projeto do Adobe Developer Console desejado.
 
 >[!IMPORTANT]
 >
