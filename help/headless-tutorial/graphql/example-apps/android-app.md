@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 duration: 190
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0a9a9c6deeab70f12906874b571dc3cf4e6a3305
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -65,8 +65,8 @@ O aplicativo Android foi projetado para se conectar a um __Publicação no AEM__
 
    ```plain
    contentApi.endpoint=https://author-p123-e456.adobeaemcloud.com
-   contentApi.user=admin
-   contentApi.password=admin
+   contentApi.user=my-special-android-app-user
+   contentApi.password=password123
    ```
 
 1. Baixar um [Dispositivo virtual Android](https://developer.android.com/studio/run/managing-avds) (API mínima 28).
