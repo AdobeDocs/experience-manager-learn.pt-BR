@@ -8,9 +8,9 @@ type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 691
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Este artigo guiará você pelas etapas envolvidas no salvamento e na recuperaç�
 
 A fonte de dados agrupada da conexão Apache Sling está configurada para apontar para o banco de dados que será usado para armazenar os dados do formulário adaptável. A captura de tela a seguir mostra a configuração da minha instância. As seguintes propriedades podem ser copiadas e coladas
 
-* Nome da fonte de dados:aemformstutorial - Esse é o nome usado em meu código.
+* `Datasource Name:aemformstutorial` - Este é o nome usado no meu código.
 
-* Classe de Driver JDBC:com.mysql.jdbc.Driver
+* `JDBC Driver Class:com.mysql.jdbc.Driver`
 
-* URL de conexão JDBC:jdbc:mysql://localhost:3306/aemformstutorial
+* `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
 ![connectionpool](assets/storingdata.PNG)
 

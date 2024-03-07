@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
 duration: 49
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
@@ -32,8 +32,8 @@ O arquivo sql para criar o esquema pode ser [baixado aqui](assets/form-data-db.s
 >[!NOTE]
 >Nomeie sua fonte de dados **SaveAndContinue**. O código de amostra usa o nome para se conectar ao banco de dados.
 
-| Nome da Propriedade | Valor |
+| Nome de propriedade | Valor |
 | ------------------------|---------------------------------------|
-| Nome da fonte de dados | SaveAndContinue |
-| Classe de driver JDBC | com.mysql.cj.jdbc.Driver |
-| URI de conexão JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| Nome da fonte de dados | `SaveAndContinue` |
+| Classe de driver JDBC | `com.mysql.cj.jdbc.Driver` |
+| URI de conexão JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |

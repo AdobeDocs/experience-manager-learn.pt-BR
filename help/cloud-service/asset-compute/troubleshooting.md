@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ A seguir há um índice de problemas e erros comuns, juntamente com as resoluç�
 
 ### Arquivo Console.json ausente do projeto do Asset compute{#missing-console-json}
 
-+ __Erro:__ Erro: arquivos necessários ausentes na validação (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:AA) em setupAssetCompute assíncrono (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:AA)
++ __Erro:__ Erro: arquivos necessários ausentes na validação (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) em setupAssetCompute assíncrono (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Causa:__ A variável `console.json` arquivo está ausente na raiz do projeto do Asset compute
 + __Resolução:__ Baixar um novo `console.json` do seu projeto Adobe I/O
    1. Em console.adobe.io, abra o projeto Adobe I/O que o projeto Asset compute está configurado para usar
