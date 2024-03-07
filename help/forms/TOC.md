@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 2%
 
 ---
@@ -220,12 +220,13 @@ ht-degree: 2%
    + [Tratar Envio de PDF](offline-mobile-form-submission/part-two.md)
    + [Fluxo de trabalho para PDF de revisão](offline-mobile-form-submission/part-three.md)
    + [Implantar no sistema](offline-mobile-form-submission/part-four.md)
-+ Consulta de dados enviados{#querying-submitted-data}
-   + [Introdução](querying-submitted-data/introduction.md)
-   + [Criação de formulário com base no esquema JSON](querying-submitted-data/part1.md)
-   + [Armazenar os dados enviados](querying-submitted-data/part2.md)
-   + [Armazenar o esquema JSON](querying-submitted-data/part3.md)
-   + [Consultar os dados enviados](querying-submitted-data/part4.md)
++ Consulta aos envios de formulários{#query-form-submissions}
+   + [Introdução](query-form-submissions/introduction.md)
+   + [Criar campos pesquisáveis](query-form-submissions/part1.md)
+   + [Criar envio personalizado](query-form-submissions/part2.md)
+   + [Criar interface de consulta](query-form-submissions/part3.md)
+   + [Serviço de preenchimento prévio de gravação](query-form-submissions/part4.md)
+   + [Implantar a amostra](query-form-submissions/part5.md)
 + Listagem de tipos de ativos personalizados no Forms Portal{#listing-custom-asset-types}
    + [Parte1 - Registro de tipos de ativos personalizados](listing-custom-asset-types/part1.md)
    + [Parte2 - Criação do modelo personalizado](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 2%
    + [Montagem de anexos de formulário](document-services/assemble-form-attachments.md)
    + [Serviços úteis de utilitários](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
+   + [Visualização Design](forms-designer/design-view.md)
    + [Criar o primeiro formulário](forms-designer/create-simple-form.md)
+   + [Criar modelo de formulário](forms-designer/creating-form-template.md)
    + [Script do formulário](forms-designer/first-script-designer.md)
    + [Ligação de dados XML](forms-designer/xml-data-binding.md)
    + [Ligação de banco de dados](forms-designer/binding-to-mysql-db.md)
