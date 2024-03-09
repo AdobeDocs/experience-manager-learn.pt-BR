@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: 19beb662b63476f4745291338d944502971638a3
+source-git-commit: 80c04ce1ad7d60c1fc75ecc194dd54a2ad5b82fa
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Exemplo de entrada de log:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Significa que a busca do nível de renderização vs do cache foi medida. Você deseja atingir 80% ou mais do cache e deve seguir a ajuda [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html%3Flang%3Den):
+Significa que a busca do nível de renderização vs do cache foi medida. Você deseja atingir 80% ou mais do cache e deve seguir a ajuda [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html):
 
 Para obter este número o mais alto possível.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração instalando o pacote no renderizador do AEM.
 
-Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html%3Flang%3Den)
+Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 Uma configuração de Vanity URL de trabalho é semelhante ao seguinte:
 
