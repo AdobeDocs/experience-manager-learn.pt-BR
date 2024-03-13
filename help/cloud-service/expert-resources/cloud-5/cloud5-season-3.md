@@ -4,13 +4,13 @@ description: A terceira temporada permite que você saiba mais sobre o serviço 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
-
 
 # Cloud 5 temporada 3
 
@@ -84,6 +84,20 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             <p>
                 <br/>
                 Explore eventos que são acionados ao publicar e desfazer a publicação no Edge Delivery Services, bem como casos de uso e exemplos para usar esses eventos.
+            </p>
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-query-indexes.md">
+                <img alt="Índices de consulta e fórmulas do Excel" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-query-indexes.md">
+                <strong>Índices de consulta e fórmulas do Excel</strong></a>        
+                <br/><em>com James Talbot e Varun Mitra, Engenharia de AEM</em>
+            </div>
+            <p>
+                <br/>
+                Explore índices de consulta e como gravar fórmulas do Excel para manipular e classificar conjuntos de dados.
             </p>
         </td>   
     </tr>  
