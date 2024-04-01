@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 296
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: e4c50b66f15b129197f22e104cedf698a1dac079
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -126,7 +126,7 @@ O Site 1 é um cenário básico, acessível anonimamente e somente leitura, em q
     "X-Requested-With",
     "Content-Type",
     "Access-Control-Request-Method",
-    "Access-Control-Request-Headers",
+    "Access-Control-Request-Headers"
   ]
 }
 ```
@@ -181,9 +181,9 @@ Geralmente, as mesmas considerações para armazenamento em cache de conteúdo n
 
 | Armazenável em cache | Ambiente | Status de autenticação | Explicação |
 |-----------|-------------|-----------------------|-------------|
-| Não | AEM Publish | Autenticado | O armazenamento em cache do Dispatcher no AEM Author é limitado a ativos estáticos, não criados. Isso torna difícil e impraticável armazenar em cache a maioria dos recursos no AEM Author, incluindo cabeçalhos de resposta HTTP. |
-| Não | AEM Publish | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar solicitações autenticadas em cache, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso entregue. |
-| Sim | AEM Publish | Anônimo | As solicitações anônimas que podem ser armazenadas em cache no dispatcher também podem ter seus cabeçalhos de resposta em cache, garantindo que as futuras solicitações do CORS possam acessar o conteúdo em cache. Qualquer alteração de configuração do CORS na publicação do AEM **deve** ser seguido por uma invalidação dos recursos em cache afetados. As práticas recomendadas determinam as implantações de código ou configuração nas quais o cache do dispatcher é removido, já que é difícil determinar qual conteúdo em cache pode ser afetado. |
+| Não | Publicação no AEM | Autenticado | O armazenamento em cache do Dispatcher no AEM Author é limitado a ativos estáticos, não criados. Isso torna difícil e impraticável armazenar em cache a maioria dos recursos no AEM Author, incluindo cabeçalhos de resposta HTTP. |
+| Não | Publicação no AEM | Autenticado | Evite armazenar cabeçalhos CORS em cache em solicitações autenticadas. Isso se alinha à orientação comum de não armazenar solicitações autenticadas em cache, pois é difícil determinar como o status de autenticação/autorização do usuário solicitante afetará o recurso entregue. |
+| Sim | Publicação no AEM | Anônimo | As solicitações anônimas que podem ser armazenadas em cache no dispatcher também podem ter seus cabeçalhos de resposta em cache, garantindo que as futuras solicitações do CORS possam acessar o conteúdo em cache. Qualquer alteração de configuração do CORS na publicação do AEM **deve** ser seguido por uma invalidação dos recursos em cache afetados. As práticas recomendadas determinam as implantações de código ou configuração nas quais o cache do dispatcher é removido, já que é difícil determinar qual conteúdo em cache pode ser afetado. |
 
 ### Permitir cabeçalhos de solicitação CORS
 
