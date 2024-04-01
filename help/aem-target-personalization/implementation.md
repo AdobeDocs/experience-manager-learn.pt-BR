@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
 duration: 173
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 Nesta seção, discutiremos como configurar o Adobe Experience Manager Sites com o Adobe Target para diferentes cenários. Com base em seu cenário e requisitos organizacionais.
 
 * **Adicionar biblioteca JavaScript do Adobe Target (obrigatório para todos os cenários)**
-Para sites hospedados no AEM, é possível adicionar bibliotecas do Target ao seu site usando, [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). O Launch oferece uma forma simples de implantar e gerenciar todas as tags necessárias para potencializar experiências de cliente relevantes.
+Para sites hospedados no AEM, é possível adicionar bibliotecas do Target ao seu site usando, [tags na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). As tags oferecem uma forma simples de implantar e gerenciar todas as tags necessárias para potencializar experiências de cliente relevantes.
 * **Adicionar os Cloud Service do Adobe Target (necessário para o cenário de Fragmentos de experiência)**
 Para clientes do AEM, que gostariam de usar as ofertas de Fragmento de experiência para criar uma atividade no Adobe Target, será necessário integrar o Adobe Target ao AEM usando os Cloud Service herdados. Essa integração é necessária para enviar Fragmentos de experiência do AEM para o Target como ofertas HTML/JSON e manter as ofertas em sincronia com o AEM. *Essa integração é necessária para a implementação do cenário 1.*
 
@@ -39,7 +39,7 @@ Para clientes do AEM, que gostariam de usar as ofertas de Fragmento de experiên
 * **Experience Cloud**
    * Acesso à Adobe Experience Cloud de suas organizações - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud provisionado com as seguintes soluções
-      * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
+      * [Coleta de dados](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Console Adobe I/O](https://console.adobe.io)
 
@@ -50,7 +50,7 @@ Para clientes do AEM, que gostariam de usar as ofertas de Fragmento de experiên
 
 >[!NOTE]
 >
-> O cliente precisa ser provisionado com Experience Platform Launch e Adobe I/O do [suporte para Adobe](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) ou entre em contato com o administrador do sistema
+> O cliente precisa ser provisionado com a coleta de dados e o Adobe I/O da [suporte para Adobe](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) ou entre em contato com o administrador do sistema
 
 ### Configurar AEM{#set-up-aem}
 
@@ -82,4 +82,4 @@ senha: **administrador**
 10. Depois de instalar os pacotes no AEM Author, selecione cada pacote carregado no Gerenciador de pacotes AEM e selecione **Mais > Replicar** para garantir que os pacotes sejam implantados no AEM Publish.
 11. Neste ponto, você instalou com êxito seu site de referência WKND e todos os pacotes adicionais necessários para este tutorial.
 
-[PRÓXIMO CAPÍTULO](./using-launch-adobe-io.md): No próximo capítulo, você integrará o Launch com AEM.
+[PRÓXIMO CAPÍTULO](./using-launch-adobe-io.md): No próximo capítulo, você integrará tags ao AEM.

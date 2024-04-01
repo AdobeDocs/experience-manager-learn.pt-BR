@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 duration: 190
-source-git-commit: 0a9a9c6deeab70f12906874b571dc3cf4e6a3305
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -52,7 +52,7 @@ O aplicativo Android foi projetado para se conectar a um __Publicação no AEM__
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Android Studio](https://developer.android.com/studio) e abra a pasta `android-app`
+1. Abertura [Android Studio](https://developer.android.com/studio) e abra a pasta `android-app`
 1. Modificar o arquivo `config.properties` em `app/src/main/assets/config.properties` e atualizar `contentApi.endpoint` para corresponder ao ambiente do AEM do target:
 
    ```plain

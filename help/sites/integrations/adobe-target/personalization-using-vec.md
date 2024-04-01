@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 141
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Saiba como criar uma Atividade de teste A/B usando o Visual Experience Composer 
 Para usar o VEC em um site de AEM, a seguinte configuração deve ser concluída:
 
 1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
-1. [Acionar uma chamada do Adobe Target no Launch](./load-and-fire-target.md)
+1. [Acionar uma chamada Adobe Target a partir de tags](./load-and-fire-target.md)
 
 ## Visão geral do cenário
 

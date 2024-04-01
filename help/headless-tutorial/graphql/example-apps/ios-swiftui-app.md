@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 duration: 308
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -52,7 +52,7 @@ O aplicativo do iOS foi projetado para se conectar a um __Publicação no AEM__ 
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Xcode](https://developer.apple.com/xcode/) e abra a pasta `ios-app`
+1. Abertura [Xcode](https://developer.apple.com/xcode/) e abra a pasta `ios-app`
 1. Modificar o arquivo `Config.xcconfig` arquivo e atualização `AEM_SCHEME` e `AEM_HOST` para corresponder ao serviço de publicação do AEM no target.
 
    ```plain

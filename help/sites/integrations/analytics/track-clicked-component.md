@@ -12,18 +12,14 @@ badgeIntegration: label="Integração" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 527
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
 
 # Rastrear componente clicado com o Adobe Analytics
-
->[!NOTE]
->
->O Adobe Experience Platform Launch foi reformulado como um conjunto de tecnologias de coleção de dados na Adobe Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obter uma referência consolidada das alterações de terminologia.
 
 Usar o orientado por eventos [Camada de dados de clientes Adobe com componentes principais AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) para rastrear cliques de componentes específicos em um site do Adobe Experience Manager. Saiba como usar regras na propriedade de tag para acompanhar eventos de clique, filtrar por componente e enviar os dados para uma Adobe Analytics com um beacon de rastreamento de link.
 

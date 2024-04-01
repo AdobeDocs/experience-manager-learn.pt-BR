@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 54
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Você pode personalizar uma Caixa de entrada de Experience Manager para alterar 
 
 ## Personalização de coluna
 
-[Iniciar caixa de entrada do AEM](http://localhost:4502/aem/inbox)
+[Abrir caixa de entrada do AEM](http://localhost:4502/aem/inbox)
 Abra o Admin Control clicando na guia _Exibição de lista_ e, em seguida, selecionando _Controle de administração_ como mostrado na captura de tela abaixo
 
 ![admin-control](assets/open-customization.png)

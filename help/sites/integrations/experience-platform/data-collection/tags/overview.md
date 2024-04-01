@@ -1,6 +1,6 @@
 ---
-title: Integração de tags de coleção de dados do Experience Platform (Launch) e AEM
-description: As tags na coleção de dados do Experience Platform Adobe são a solução de gerenciamento de tags de próxima geração e a melhor maneira de implantar o Adobe Analytics, o Target, o Audience Manager e muitas outras soluções. Obtenha uma visão geral de Tags (antigo Launch) e a integração recomendada com o Adobe Experience Manager.
+title: Integração de tags no Adobe Experience Platform e no AEM
+description: As tags na coleção de dados do Experience Platform Adobe são a solução de gerenciamento de tags de próxima geração e a melhor maneira de implantar o Adobe Analytics, o Target, o Audience Manager e muitas outras soluções. Obtenha uma visão geral das tags na Adobe Experience Platform e a integração recomendada com o Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5979
 thumbnail: 39090.jpg
@@ -14,26 +14,20 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 256
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '270'
 ht-degree: 2%
 
 ---
 
 # Integração de tags de coleção de dados do Experience Platform e AEM {#overview}
 
-Saiba como integrar o Experience Platform _Tags de coleção de dados_ (conhecido anteriormente como Launch) com o Adobe Experience Manager.
-
->[!NOTE]
->
->O Adobe Experience Platform Launch foi reformulado como um conjunto de tecnologias de coleção de dados na Adobe Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obter uma referência consolidada das alterações de terminologia.
-
+Saiba como integrar as tags na Adobe Experience Platform com o Adobe Experience Manager.
 
 As tags são a próxima geração da tecnologia de gerenciamento de tags da Adobe Experience Platform. As tags oferecem a maneira mais simples de implantar o Adobe Analytics, o Target, o Audience Manager e muitas outras soluções. Obtenha uma visão geral das Tags e a integração recomendada com o Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
-
 
 ## Pré-requisitos
 
@@ -49,7 +43,7 @@ Os itens a seguir são obrigatórios ao integrar as Tags da coleção de dados d
 
 + Na Coleção de dados do Adobe Experience Platform, crie uma propriedade de tag e edite-a para _Adicionar regra_. Depois _Adicionar biblioteca_, selecione a regra recém-adicionada, aprove e publique-a.
 + Conecte AEM e tags usando a configuração IMS existente (ou nova)
-+ No AEM, crie uma configuração do Launch Cloud Services, aplique-a a um site existente e, por fim, verifique se a propriedade Tags e suas bibliotecas são carregadas no site Publicado ou do Autor.
++ No AEM, crie uma configuração de serviço na nuvem de tags, aplique-a a um site existente e, por fim, verifique se a propriedade Tags e suas bibliotecas são carregadas no site Publicado ou do Autor.
 
 ## Próximas etapas
 

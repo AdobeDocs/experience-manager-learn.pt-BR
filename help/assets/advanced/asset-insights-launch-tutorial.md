@@ -1,6 +1,6 @@
 ---
-title: Configurar o Asset Insights com o AEM Assets e o Adobe Launch
-description: Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado via Launch by Adobe.
+title: Configurar o Asset Insights com a AEM Assets e tags
+description: Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado por meio de tags.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -12,16 +12,16 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-titl
 doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
-# Configurar o Asset Insights com o AEM Assets e o Adobe Experience Platform Launch
+# Configurar o Asset Insights com a AEM Assets e tags
 
-Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado por meio do Adobe Launch.
+Nesta série de vídeos de cinco partes, vamos analisar a instalação e configuração do Asset Insights para Experience Manager implantado por meio de tags.
 
 ## Parte 1: Visão geral do Asset Insights {#overview}
 
@@ -81,9 +81,9 @@ Para a configuração do AEM Assets Insights, você precisa das seguintes creden
 * Segredo compartilhado (pode ser obtido em *Adobe Analytics > Administração > Configurações da empresa > Serviço da Web*).
 * Conjunto de relatórios (certifique-se de selecionar o Conjunto de relatórios correto que é usado para os Relatórios de ativos)
 
-## Parte 4: Uso do Adobe Experience Platform Launch para adicionar uma extensão do Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Parte 4: Uso de tags para adicionar a extensão do Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Adição de extensão do Adobe Analytics, Criação de regras de carregamento de página e Integração do AEM ao Launch com a conta técnica do Adobe IMS.
+Adição de extensão do Adobe Analytics, criação de regras de carregamento de página e integração do AEM com tags à conta técnica do Adobe IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
@@ -175,13 +175,13 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 ### Instruções de depuração do console {#console-debug-statements}
 
 ```javascript
-//Launch Build Info
+// Tags build info
 _satellite.buildInfo
 
 //Enables debug messages
 _satellite.setDebug(true);
 
-//Asset Insight JS Object
+//Asset Insight JavaScript Object
 assetAnalytics
 
 //List of trackable images
@@ -190,10 +190,8 @@ document.querySelectorAll(".cmp-image__image");
 
 Duas extensões de navegador do Google Chrome são mencionadas no vídeo como maneiras de depurar o Analytics. Extensões semelhantes também estão disponíveis para outros navegadores.
 
-* [Extensão do Chrome para o Launch Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Também é possível alternar o DTM para o modo de depuração com a seguinte extensão do Chrome: [Launch e DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Isso facilita a verificação de erros relacionados à implantação do DTM. Além disso, é possível alternar manualmente o DTM para o modo de depuração por meio de qualquer navegador *ferramenta do desenvolvedor -> Console JS* adicionando o seguinte trecho:
 
 ## Parte 5: Teste de rastreamento analítico e sincronização de dados de insight{#analytics-tracking-asset-insights}
 

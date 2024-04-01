@@ -10,7 +10,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 9c139a36-e3c5-407e-af5d-b4fb8860f5a2
 duration: 248
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -25,7 +25,7 @@ O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização en
 
 >[!NOTE]
 >
->Recomendável usar a biblioteca do cliente at.js, e a prática recomendada é usar soluções de gerenciamento de tags, como o Launch by Adobe, o Adobe DTM ou qualquer solução de gerenciamento de tags de terceiros, para adicionar bibliotecas do Target às páginas do site
+>Recomendado usar a biblioteca do cliente at.js, e a prática recomendada é usar soluções de gerenciamento de tags, como tags na Adobe Experience Platform ou qualquer solução de gerenciamento de tags de terceiros para adicionar bibliotecas do Target às páginas do site
 
 * A configuração do serviço da nuvem de destino aplicada à pasta do fragmento de experiência herda todos os fragmentos de experiência criados diretamente na pasta principal. A pasta filho não herda a configuração dos serviços de nuvem pai.
 * O código do cliente do Target pode ser obtido em Adobe Experience Cloud > Iniciar Target > Na guia Configurar > Implementação > Editar configurações da at.js.

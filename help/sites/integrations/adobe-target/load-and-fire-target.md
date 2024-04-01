@@ -1,6 +1,6 @@
 ---
 title: Carregar e acionar uma chamada do Target
-description: Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra do Launch. As informações da página são recuperadas e passadas como parâmetros usando a Camada de dados do cliente Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
+description: Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags.
 feature: Core Components, Adobe Client Data Layer
 version: Cloud Service
 jira: KT-6133
@@ -13,28 +13,28 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 610
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
 
 # Carregar e acionar uma chamada do Target {#load-fire-target}
 
-Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra do Launch. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
+Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regra de carregamento de página
 
-A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da página AEM é carregada, ela aciona um evento `cmp:show` . No vídeo, a variável `Launch Library Loaded` A regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
+A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da página AEM é carregada, ela aciona um evento `cmp:show` . No vídeo, a variável `tags Library Loaded` A regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
 
 ### Evento de exibição de página personalizada{#page-event}
 
 ![Configuração de evento e código personalizado mostrados na página](assets/load-and-fire-target-call.png)
 
-Na propriedade do Launch, adicione um novo **Evento** para o **Regra**
+Na propriedade tags, adicione um novo **Evento** para o **Regra**
 
 + __Extensão:__ Núcleo
 + __Tipo de evento:__ Custom Code
@@ -53,7 +53,7 @@ var pageShownEventHandler = function(coreComponentEvent) {
         // Debug the AEM Component path the show event is associated with
         console.debug("cmp:show event: " + coreComponentEvent.eventInfo.path);
 
-        // Create the Launch Event object
+        // Create the tags Event object
         var launchEvent = {
             // Include the ID of the AEM Component that triggered the event
             id: coreComponentEvent.eventInfo.path,
@@ -61,14 +61,14 @@ var pageShownEventHandler = function(coreComponentEvent) {
             component: window.adobeDataLayer.getState(coreComponentEvent.eventInfo.path)
         };
 
-        //Trigger the Launch Rule, passing in the new `event` object
-        // the `event` obj can now be referenced by the reserved name `event` by other Launch data elements
+        // Trigger the tags Rule, passing in the new `event` object
+        // the `event` obj can now be referenced by the reserved name `event` by other tags data elements
         // i.e `event.component['someKey']`
         trigger(launchEvent);
    }
 }
 
-// With the AEM Core Component event handler, that proxies the event and relevant information to Adobe Launch, defined above...
+// With the AEM Core Component event handler, that proxies the event and relevant information to Data Collection, defined above...
 
 // Initialize the adobeDataLayer global object in a safe way
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Uma função personalizada define o `pageShownEventHandler`e escuta os eventos emitidos pelos Componentes principais do AEM, obtém as informações relevantes do Componente principal, compacta-o em um objeto de evento e aciona o Evento de inicialização com as informações do evento derivadas em sua carga.
+Uma função personalizada define o `pageShownEventHandler`, e ouve eventos emitidos pelos Componentes principais do AEM, deriva as informações relevantes do Componente principal, empacota-o em um objeto de evento e aciona as tags Evento com as informações do evento derivado em sua carga.
 
-A regra do Launch é acionada usando o `trigger(...)` função que é __somente__ disponível em uma definição de trecho de código personalizado do Evento de regra.
+A regra de tags é acionada usando o da tag `trigger(...)` função que é __somente__ disponível em uma definição de trecho de código personalizado do Evento de regra.
 
-A variável `trigger(...)` A função pega um objeto de evento como um parâmetro que, por sua vez, é exposto nos Elementos de dados do Launch por outro nome reservado no Launch chamado `event`. Os elementos de dados no Launch agora podem fazer referência a dados desse objeto de evento na `event` objeto usando sintaxe como `event.component['someKey']`.
+A variável `trigger(...)` A função utiliza um objeto de evento como um parâmetro que, por sua vez, é exposto em tags Elementos de dados, por outro nome reservado em tags chamadas `event`. Os elementos de dados nas tags agora podem fazer referência a dados desse objeto de evento da `event` objeto usando sintaxe como `event.component['someKey']`.
 
-Se `trigger(...)` for usado fora do contexto de um tipo de evento Código personalizado do evento (por exemplo, em uma Ação), o erro de JavaScript `trigger is undefined` é lançado no site integrado à propriedade do Launch.
+Se `trigger(...)` for usado fora do contexto de um tipo de evento Código personalizado do evento (por exemplo, em uma Ação), o erro de JavaScript `trigger is undefined` é lançado no site integrado à propriedade das tags.
 
 
 ### Elementos de dados
 
 ![Elementos de dados](assets/data-elements.png)
 
-Os Elementos de dados do Adobe Launch mapeiam os dados do objeto de evento [acionado no evento personalizado Exibição de página](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
+Os elementos de dados das tags mapeiam os dados do objeto de evento [acionado no evento personalizado Exibição de página](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
 
 #### Elemento de dados da ID da página
 

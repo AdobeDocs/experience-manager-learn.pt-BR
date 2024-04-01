@@ -12,7 +12,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Saiba como criar uma atividade para redirecionar as páginas do site hospedadas 
 Para personalizar páginas inteiras de um site de AEM, a seguinte configuração deve ser concluída:
 
 1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
-1. [Acionar uma chamada do Adobe Target no Launch](./load-and-fire-target.md)
+1. [Acionar uma chamada Adobe Target a partir de tags](./load-and-fire-target.md)
 
 ## Visão geral do cenário
 

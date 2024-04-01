@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ Para este exercício, os seguintes usuários precisam estar envolvidos e, para e
 
 * **AEM**
    * [Autor e instância de publicação do AEM](./implementation.md#getting-aem) executando localhost 4502 e 4503, respectivamente.
-   * [AEM integrado ao Adobe Target usando o Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM integrado ao Adobe Target usando tags](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Acesso à Adobe Experience Cloud de suas organizações - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud provisionado com as seguintes soluções
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-## Atividades do Editor de conteúdo
+## Atividades do editor de conteúdo
 
 1. O profissional de marketing inicia a discussão de redesign da página inicial do WKND com o editor de conteúdo AEM e detalha os requisitos.
    * ***Requisito*** : recrie a página inicial do site WKND com design baseado em cartão.
