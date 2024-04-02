@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 7680564ef0058a362ebf47622e50f96eec2866d7
+source-git-commit: e84f8375c94a2834ac3c61d3860ec92510950934
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '407'
 ht-degree: 17%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 17%
 
 + Fluxos de trabalho criativos{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
-   + [Complemento Adobe Express AEM Assets](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [Aplicativo de desktop AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
