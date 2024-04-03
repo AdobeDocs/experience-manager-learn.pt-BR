@@ -10,7 +10,7 @@ level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 446
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 O AEM Forms 6.5 apresentou a capacidade de criar e configurar vários gráficos de série. Normalmente, os gráficos de várias séries são usados em associação com o tipo de gráfico Linha, Barra e Coluna. O gráfico a seguir é um bom exemplo de gráfico de várias séries. O gráfico mostra o crescimento de US$ 10.000,00 em três fundos mútuos diferentes ao longo de um período. Para criar e usar gráficos desse tipo no AEM Forms, será necessário criar o modelo de dados de formulário apropriado.
 
-![Gráfico de várias séries](assets/seriescharts.jfif)
+![Gráfico de várias séries](assets/series_charts.png)
 
 Para criar gráficos de várias séries no AEM Forms, você precisa criar um Modelo de dados de formulário apropriado com as entidades necessárias e associações entre as entidades. A captura de tela a seguir destaca as entidades e as associações entre as 3 entidades. No nível superior, temos uma entidade chamada &quot;Organização&quot;, que tem uma associação um para muitos com a entidade Fundo. A entidade Fundo, por sua vez, tem uma associação um para muitos com a entidade Desempenho.
 
-![Modelo de dados do formulário](assets/formdatamodel.jfif)
+![Modelo de dados do formulário](assets/form_data_model.png)
 
 ## Criar Modelo de Dados de Formulário para Gráficos Multissérie
 
