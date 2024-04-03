@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 19%
+source-wordcount: '341'
+ht-degree: 13%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 19%
    + [Conteúdo localizado](./graphql/how-to/localized-content.md)
    + [Conjuntos de resultados grandes](./graphql/how-to/large-result-sets.md)
    + [Visualização](./graphql/how-to/preview.md)
+   + [Conteúdo protegido](./graphql/how-to/protected-content.md)
    + [SDK do AEM Headless](./graphql/how-to/aem-headless-sdk.md)
    + [Instalar o GraphiQL no AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Exemplos {#example-apps}
@@ -106,7 +107,7 @@ ht-degree: 19%
    + [Visão geral](./authentication/overview.md)
    + [1 - Token de acesso de desenvolvimento local](./authentication/local-development-access-token.md)
    + [2 - Credenciais de serviço](./authentication/service-credentials.md)
-+ Content Services {#content-services}
++ Serviços de conteúdo {#content-services}
    + [Visão geral](./content-services/overview.md)
    + [1 - Configuração do tutorial](./content-services/chapter-1.md)
    + [2 - Definição de modelos de fragmento de conteúdo de evento](./content-services/chapter-2.md)
