@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9c757ef00776c09a8892f477baad24c58401f4dc
+source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 17%
+source-wordcount: '1168'
+ht-degree: 16%
 
 ---
 
@@ -392,3 +392,4 @@ ht-degree: 17%
          + [Trabalhadores de borda](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
          + [Publicar, cancelar publicação de eventos no Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Índices de consulta e fórmulas do Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
+         + [Traga sua própria CDN do Cloud Flare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
