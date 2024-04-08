@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL A
 
 ## Introdução {#introduction}
 
-[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) O é um recurso do AEM projetado para facilitar o gerenciamento e o agrupamento de todos os fluxos de trabalho e tarefas associados à criação de conteúdo como parte de uma implementação do AEM Sites ou do Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) O é um recurso do AEM projetado para facilitar o gerenciamento e o agrupamento de todos os fluxos de trabalho e tarefas associados à criação de conteúdo como parte de uma implementação do AEM Sites ou do Assets.
 
-Projetos AEM vem com vários [Modelos de projeto OOTB](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). Ao criar um projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações de AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um modelo de amostra.
+Projetos AEM vem com vários [Modelos de projeto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Ao criar um projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações de AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um modelo de amostra.
 
 ![Cartão de Projeto Personalizado](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
+Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estrutura de um modelo de projeto
 
@@ -69,11 +69,11 @@ Um exemplo de assistente personalizado pode ser encontrado para o Modelo de proj
 
 ### Gadgets {#gadgets}
 
-Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os mosaicos do projeto](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. **Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
+Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os mosaicos do projeto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. **Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
 
 ### Funções {#roles}
 
-Há três [Funções padrão](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) para cada projeto: **Observadores**, **Editores**, e **Proprietários**. Ao adicionar nós filhos abaixo do nó funções, é possível adicionar outras Funções do projeto específicas da empresa para o modelo. Em seguida, é possível vincular essas funções a fluxos de trabalho específicos associados ao projeto.
+Há três [Funções padrão](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) para cada projeto: **Observadores**, **Editores**, e **Proprietários**. Ao adicionar nós filhos abaixo do nó funções, é possível adicionar outras Funções do projeto específicas da empresa para o modelo. Em seguida, é possível vincular essas funções a fluxos de trabalho específicos associados ao projeto.
 
 ### Fluxos de trabalhos {#workflows}
 
@@ -152,7 +152,7 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
    1. Adicionar outro **nt:não estruturado** nó rotulado aprovadores como filho do nó funções.
    1. Adicionar propriedades de string **jcr:title** = &quot;**Aprovadores**&quot;, **roleclass** =&quot;**proprietário**&quot;, **roleid**=&quot;**aprovadores**&quot;.
       1. O nome do nó de aprovadores, bem como jcr:title e roleid podem ser qualquer valor de string (desde que roleid seja exclusivo).
-      1. **roleclass** controla as permissões aplicadas para essa função com base no [três funções OOTB](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **proprietário**, **editor**, e **observador**.
+      1. **roleclass** controla as permissões aplicadas para essa função com base no [três funções OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects): **proprietário**, **editor**, e **observador**.
       1. Em geral, se a função personalizada for mais uma função gerencial, a classe de função poderá ser **proprietário;** se for uma função de criação mais específica, como Fotógrafo ou Designer, **editor** a classe de função deve ser suficiente. A grande diferença entre **proprietário** e **editor** é que os proprietários do projeto podem atualizar as propriedades do projeto e adicionar novos usuários ao projeto.
 
    ```shell
@@ -308,7 +308,7 @@ A última etapa do fluxo de trabalho usa a etapa de processo Ativar página/ativ
 
    ![Caixa de diálogo de criação do fluxo de trabalho](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [Para obter mais informações relacionadas à criação de workflows, leia aqui](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+   [Para obter mais informações relacionadas à criação de workflows, leia aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. Como prática recomendada, os workflows personalizados devem ser agrupados em sua própria pasta em /etc/workflow/models. No CRXDE Lite, crie um **&#39;nt:folder&#39;** abaixo de /etc/workflow/models chamado **&quot;aem-guides&quot;**. Adicionar uma subpasta garante que os workflows personalizados não sejam substituídos acidentalmente durante atualizações ou instalações do Service Pack.
 
@@ -320,7 +320,7 @@ A última etapa do fluxo de trabalho usa a etapa de processo Ativar página/ativ
 
    >[!NOTE]
    >
-   >Se estiver usando o AEM 6.4+, a localização do Fluxo de trabalho foi alterada. Consulte [aqui para obter mais detalhes.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Se estiver usando o AEM 6.4+, a localização do Fluxo de trabalho foi alterada. Consulte [aqui para obter mais detalhes.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    Se estiver usando o AEM 6.4+, o modelo de fluxo de trabalho será criado em `/conf/global/settings/workflow/models`. Repita as etapas acima com o diretório /conf e adicione uma subpasta chamada `aem-guides` e mova a variável `content-approval-workflow` abaixo dele.
 
@@ -738,7 +738,7 @@ A configuração do fluxo de trabalho é uma área de um modelo de projeto que e
    >Se estiver usando o AEM 6.4, a localização do Fluxo de trabalho foi alterada. Aponte o `modelId` para o local do modelo de fluxo de trabalho de tempo de execução em `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Consulte [aqui para obter mais detalhes sobre a alteração na localização do fluxo de trabalho.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Consulte [aqui para obter mais detalhes sobre a alteração na localização do fluxo de trabalho.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ A configuração do fluxo de trabalho é uma área de um modelo de projeto que e
 
 * [Baixar pacote de tutorial concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentação de projetos do AEM](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
+* [Documentação de projetos do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

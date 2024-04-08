@@ -14,9 +14,9 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Depois de vincular a propriedade da tag, o site da WKND pode carregar a bibliote
 
 ### Verificar carregamento de propriedade de tag no WKND
 
-Utilização do Adobe Experience Platform Debugger [Cromo](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ou [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) extensão, verifique se a propriedade da tag está sendo carregada nas páginas WKND. Você pode verificar,
+Utilização do Adobe Experience Platform Debugger [Cromo](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extensão, verifique se a propriedade da tag está sendo carregada nas páginas WKND. Você pode verificar,
 
 + Detalhes de propriedade da tag, como extensão, versão, nome e muito mais.
 + Versão da biblioteca do SDK da Web da plataforma, ID da sequência de dados

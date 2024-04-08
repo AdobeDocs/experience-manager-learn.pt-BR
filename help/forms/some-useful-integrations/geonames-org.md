@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Uma lista suspensa em cascata é uma série de controles DropDownList dependente
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Para o propósito deste tutorial, usei [API REST Geonames](http://api.geonames.org/) para demonstrar esse recurso.
+Para o propósito deste tutorial, usei [API REST Geonames](https://www.geonames.org/export/web-services.html) para demonstrar esse recurso.
 Há várias organizações que fornecem esse tipo de serviço e, desde que tenham APIs REST bem documentadas, é possível integrar facilmente ao AEM Forms usando o recurso de integração de dados
 
 As etapas a seguir foram seguidas para implementar listas suspensas em cascata no AEM Forms
@@ -88,7 +88,7 @@ Adicione 2 listas suspensas chamadas counties e cities no formulário para lista
 
 Você pode baixar os seguintes ativos para começar a criar a amostra da lista suspensa em cascata. Os arquivos concluídos do Swagger podem ser baixados em [aqui](assets/geonames-swagger-files.zip)
 Os arquivos swagger descrevem a seguinte API REST
-* [Obter todos os países](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Obter objeto filho de Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obter todos os países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Obter objeto filho de Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 O concluído [O modelo de dados de formulário pode ser baixado aqui](assets/geonames-api-form-data-model.zip)

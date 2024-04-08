@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -44,11 +44,11 @@ Para ativar a depuração no lado do cliente, chame o `setDebug(true)` no `_sate
 
 ## Depuração via Adobe Experience Platform Debugger
 
-Adobe fornece Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Complemento do Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) para depurar, entender e obter insights sobre a integração.
+Adobe fornece Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, entender e obter insights sobre a integração.
 
 1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de publicação
 
-1. No **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform** verifique os detalhes da propriedade da tag, como Nome, Versão, Data de build, Ambiente e Extensões.
+2. No **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform** verifique os detalhes da propriedade da tag, como Nome, Versão, Data de build, Ambiente e Extensões.
 
    ![Detalhes de propriedade de Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
 
