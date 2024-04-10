@@ -12,24 +12,20 @@ last-substantial-update: 2024-02-29T00:00:00Z
 jira: KT-15053
 thumbnail: 3427620.jpeg
 exl-id: ac482951-9941-4c14-95b2-29d274fa610e
-source-git-commit: c4181907c7b398d2ba1a8735a028695831aca90e
+source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 3%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
 
 # Criar formulário simples usando o AEM Forms Designer
 
-Introdução
-
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
-
-Parte 1
+Parte 1 - Adicionar títulos, imagens, campos de texto e campos de data
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
 
-Parte 2
+Parte 2 - Adicionar e criar objetos personalizados e fragmentos de formulário
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
 
