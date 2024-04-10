@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 81
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0f853040911ad92aea0ebac57011e659d7f0b7c0
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
 # Utilização do relatório de transações no AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-O relatório de transações para capturar o número de envios de formulários, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais da Web e de impressão) foi introduzido com o AEM Forms 6.4.1. No momento, esse recurso está disponível somente na pilha OSGI do AEM Forms.
+O relatório de transações para capturar o número de envios de formulários, a renderização de documentos usando serviços de documento e a renderização de comunicações interativas (canais da Web e de impressão) foi introduzido com o AEM Forms 6.4.1. Esse recurso foi introduzido com o AEM Forms 6.4.1 para pilha do OSGi do AEM Forms e 6.5.20 para pilha do AEM Forms JEE.
 
 ## Ativação do Relatório de Transações {#enabling-transaction-reporting}
 
