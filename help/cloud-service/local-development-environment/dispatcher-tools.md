@@ -24,7 +24,7 @@ ht-degree: 4%
 >id="aemcloud_localdev_dispatcher"
 >title="Ferramentas locais do Dispatcher"
 >abstract="O Dispatcher é parte integrante da arquitetura geral do Experience Manager e deve fazer parte da configuração de desenvolvimento local. O SDK do AEM as a Cloud Service inclui a versão recomendada das ferramentas do Dispatcher, o que facilita a configuração, validação e simulação do Dispatcher localmente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html" text="Dispatcher na nuvem"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=pt-BR" text="Dispatcher na nuvem"
 >additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br" text="Baixar SDK do AEM as a Cloud Service"
 
 O Dispatcher do Adobe Experience Manager (AEM) é um módulo de servidor Web Apache HTTP que fornece uma camada de segurança e desempenho entre a camada do CDN e do AEM Publish. O Dispatcher é parte integral da arquitetura Experience Manager geral e deve fazer parte da configuração de desenvolvimento local.
@@ -105,7 +105,7 @@ Todos os comandos emitidos abaixo pressupõem que o diretório de trabalho atual
 ## Entender os arquivos de configuração do Dispatcher
 
 >[!TIP]
-Projetos Experience Manager criados a partir do [Arquétipo Maven do projeto AEM](https://github.com/adobe/aem-project-archetype) são preenchidos previamente nesse conjunto de arquivos de configuração do Dispatcher, portanto, não há necessidade de copiar da pasta src de Ferramentas do Dispatcher.
+> Projetos Experience Manager criados a partir do [Arquétipo Maven do projeto AEM](https://github.com/adobe/aem-project-archetype) são preenchidos previamente nesse conjunto de arquivos de configuração do Dispatcher, portanto, não há necessidade de copiar da pasta src de Ferramentas do Dispatcher.
 
 As Ferramentas do Dispatcher fornecem um conjunto de arquivos de configuração do Apache HTTP Web server e do Dispatcher que definem o comportamento para todos os ambientes, incluindo o desenvolvimento local.
 
@@ -353,7 +353,7 @@ Phase 3 finished
 
 A variável `host.docker.internal` é um nome de host fornecido ao Docker contém que é resolvido para o host. Por docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
->A partir do Docker 18.03, a recomendação é se conectar ao nome DNS especial host.docker.internal, que é resolvido para o endereço IP interno usado pelo host
+> A partir do Docker 18.03, a recomendação é se conectar ao nome DNS especial host.docker.internal, que é resolvido para o endereço IP interno usado pelo host
 
 Quando `bin/docker_run src host.docker.internal:4503 8080` resultados na mensagem __Aguardar até que host.docker.internal esteja disponível__, em seguida:
 
