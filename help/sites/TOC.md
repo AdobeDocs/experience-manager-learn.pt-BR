@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '501'
 ht-degree: 18%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 18%
       + [Texto alternativo da imagem](./document-authoring/how-to/image-alt-text.md)
       + [Impedir indexação do mecanismo de pesquisa](./document-authoring/how-to/no-index.md)
       + [Navegação responsiva](document-authoring/how-to/responsive-navigation.md)
+      + [Modelos de prompt GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
 + Criação de página {#page-authoring}
    + [Criação  ](page-authoring/aem-sites-authoring-overview.md)
    + [Navegação](page-authoring/basic-handling-sites-feature-video-use.md)

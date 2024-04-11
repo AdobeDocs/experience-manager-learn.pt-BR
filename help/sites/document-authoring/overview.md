@@ -10,13 +10,13 @@ jira: KT-14609
 doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
-source-git-commit: e5e1b1b9313f5c7b031c6e4233052dee67c6bd7c
+exl-id: 172a477f-d277-43c1-8e47-68870b02203c
+source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 5%
+source-wordcount: '452'
+ht-degree: 7%
 
 ---
-
 
 # Vídeos de criação de documentos
 
@@ -509,7 +509,7 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
         </div>
       </div>
     </div>
-      <!-- No Index -->
+    <!-- No Index -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="No Index" tabindex="7">
       <div class="card">
@@ -541,4 +541,36 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
         </div>
       </div>
     </div>
+    <!-- GenAI Prompt Templates -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Use GenAI Prompt Templates" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/prompt-templates-for-content-variations.md" title="Usar Modelos de Prompt GenAI"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                alt="Usar Modelos de Prompt GenAI">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/prompt-templates-for-content-variations.md" title="Usar Modelos de Prompt GenAI">Modelos de prompt GenAI</a>
+            </p>
+            <p class="is-size-6">Saiba como usar os modelos de prompt da IA gerativa para gerar variações de conteúdo.</p>
+            <a href="./how-to/prompt-templates-for-content-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
   </div>
