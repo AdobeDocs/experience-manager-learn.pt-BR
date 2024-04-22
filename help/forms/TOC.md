@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -105,6 +105,10 @@ ht-degree: 2%
    + [Pré-preenchimento do HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modelo de dados de formulário com Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Adicionar itens dinamicamente ao componente de escolha](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Preencher um formulário PDF com o ChatBot{#chatbot-and-aem-forms}
+   + [1 - Introdução](chatbot-and-aem-forms/introduction.md)
+   + [2 - Analisar dados de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
+   + [3 - Criar PDF](chatbot-and-aem-forms/merge-data-with-template.md)
 + Formulários baseados em Componentes principais{#core-component-based-forms}
    + [Acessar dados de formulário usando a API do GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Selecionar e reunir o conteúdo da pasta do DAM{#select-dam-folder-content}
