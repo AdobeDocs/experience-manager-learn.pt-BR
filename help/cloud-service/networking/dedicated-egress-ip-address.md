@@ -9,11 +9,12 @@ level: Intermediate
 jira: KT-9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 926
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 2%
+source-wordcount: '1365'
+ht-degree: 1%
 
 ---
 
@@ -25,15 +26,15 @@ Saiba como configurar e usar o endereço IP de saída dedicado, que permite que 
 
 Endereço IP de saída dedicado permite que solicitações do AEM as a Cloud Service usem um endereço IP dedicado, permitindo que os serviços externos filtrem solicitações recebidas por esse endereço IP. Curtir [portas de saída flexíveis](./flexible-port-egress.md), o IP de saída dedicado permite que você saia em portas fora do padrão.
 
-Um programa do Cloud Manager só pode ter um __solteiro__ tipo de infraestrutura de rede. Certifique-se de que o endereço IP de saída dedicado seja o mais [tipo adequado de infraestrutura de rede](./advanced-networking.md)  para o AEM as a Cloud Service antes de executar os seguintes comandos.
+Um programa do Cloud Manager só pode ter um __solteiro__ tipo de infraestrutura de rede. Garantir que o endereço IP de saída dedicado seja o mais [tipo adequado de infraestrutura de rede](./advanced-networking.md) para o AEM as a Cloud Service antes de executar os seguintes comandos.
 
 >[!MORELIKETHIS]
 >
-> Leia o as a Cloud Service do AEM [documentação avançada de configuração de rede](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedicated-egress-IP-address) para obter mais detalhes sobre endereço IP de saída dedicado.
+> Leia o as a Cloud Service do AEM [documentação avançada de configuração de rede](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) para obter mais detalhes sobre endereço IP de saída dedicado.
 
 ## Pré-requisitos
 
-Os seguintes itens são necessários ao configurar o endereço IP de saída dedicado:
+Os seguintes itens são necessários ao configurar um endereço IP de saída dedicado usando as APIs do Cloud Manager:
 
 + API do Cloud Manager com [Permissões do proprietário da empresa no Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Acesso a [Credenciais de autenticação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -53,9 +54,41 @@ Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. 
 
 Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a Cloud Service.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud Manager]
+
+O endereço IP de saída dedicado pode ser ativado usando o Cloud Manager. As etapas a seguir descrevem como ativar o endereço IP de saída dedicado no AEM as a Cloud Service usando o Cloud Manager.
+
+1. Faça logon no [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) como Proprietário da empresa do Cloud Manager.
+1. Navegue até o Programa desejado.
+1. No menu esquerdo, navegue até __Serviços > Infraestrutura de rede__.
+1. Selecione o __Adicionar infraestrutura de rede__ botão.
+
+   ![Adicionar infraestrutura de rede](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. No __Adicionar infraestrutura de rede__ , selecione a __Endereço IP de saída dedicado__ e selecione a opção __Região__ para criar o endereço IP de saída dedicado.
+
+   ![Adicionar endereço IP de saída dedicado](./assets/dedicated-egress-ip-address/select-type.png)
+
+1. Selecionar __Salvar__ para confirmar a adição do endereço IP de saída dedicado.
+
+   ![Confirmar criação de endereço IP de saída dedicado](./assets/dedicated-egress-ip-address/confirmation.png)
+
+1. Aguardar a infraestrutura de rede ser criada e marcada como __Pronto__. Esse processo pode levar até 1 hora.
+
+   ![Status de criação do endereço IP de saída dedicado](./assets/dedicated-egress-ip-address/ready.png)
+
+Com o endereço IP de saída dedicado criado, agora é possível configurá-lo usando as APIs do Cloud Manager, conforme descrito abaixo.
+
+>[!TAB APIs do Cloud Manager]
+
+O endereço IP de saída dedicado pode ser ativado usando as APIs do Cloud Manager. As etapas a seguir descrevem como ativar o endereço IP de saída dedicado no AEM as a Cloud Service usando a API do Cloud Manager.
+
+
 1. Primeiro, determine a região em que a Rede avançada é necessária, usando a API do Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. A variável `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
 
-   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) no [detalhes do ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usada na API do Cloud Manager.
+   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) no [detalhes do ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usada na API do Cloud Manager.
 
    __solicitação HTTP listRegions__
 
@@ -67,7 +100,7 @@ Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a 
        -H 'Content-Type: application/json' 
    ```
 
-1. Ative o endereço IP de saída dedicado para um programa do Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
+2. Ative o endereço IP de saída dedicado para um programa do Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
 
    __solicitação HTTP createNetworkInfrastructure__
 
@@ -82,7 +115,7 @@ Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a 
 
    Aguarde 15 minutos para que o programa do Cloud Manager provisione a infraestrutura de rede.
 
-1. Verifique se o programa foi concluído __endereço IP de saída dedicado__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operação, utilizando o `id` retornado da solicitação HTTP createNetworkInfrastructure na etapa anterior.
+3. Verifique se o programa foi concluído __endereço IP de saída dedicado__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operação, utilizando o `id` retornado do `createNetworkInfrastructure` Solicitação HTTP na etapa anterior.
 
    __solicitação HTTP getNetworkInfrastructure__
 
@@ -95,6 +128,11 @@ Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a 
    ```
 
    Verifique se a resposta HTTP contém um __status__ de __pronto__. Se ainda não estiver pronto, verifique novamente o status a cada poucos minutos.
+
+Com o endereço IP de saída dedicado criado, agora é possível configurá-lo usando as APIs do Cloud Manager, conforme descrito abaixo.
+
+>[!ENDTABS]
+
 
 ## Configurar proxies dedicados de endereço IP de saída por ambiente
 
@@ -138,7 +176,7 @@ Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a 
 
    A assinatura HTTP da configuração de endereço IP de saída dedicado é diferente apenas da [porta de saída flexível](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) na medida em que também apoia a `nonProxyHosts` configuração.
 
-   `nonProxyHosts` declara um conjunto de hosts para o qual a porta 80 ou 443 deve ser roteada por meio dos intervalos de endereços IP compartilhados padrão em vez do IP de saída dedicado. `nonProxyHosts` pode ser útil, pois a criação de tráfego por meio de IPs compartilhados pode ser otimizada ainda mais automaticamente pelo Adobe.
+   `nonProxyHosts` declara um conjunto de hosts para o qual a porta 80 ou 443 deve ser roteada por meio dos intervalos de endereços IP compartilhados padrão em vez do IP de saída dedicado. `nonProxyHosts` pode ser útil, pois a criação de tráfego por meio de IPs compartilhados é otimizada automaticamente pelo Adobe.
 
    Para cada `portForwards` de rede avançada define a seguinte regra de encaminhamento:
 
@@ -168,9 +206,9 @@ Comece habilitando e configurando o endereço IP de saída dedicado no AEM as a 
 
    O nome de host não pode ser `pinged`, uma vez que se trata de uma saída e _não_ e entrada.
 
-   Observe que __endereço IP de saída dedicado__ é compartilhado por todos os ambientes as a Cloud Service AEM no programa.
+   Observe que o endereço IP de saída dedicado é compartilhado por todos os ambientes as a Cloud Service AEM no programa.
 
-1. Agora você pode usar o endereço IP de saída dedicado no código e configuração personalizados do AEM. Geralmente, ao usar o endereço IP de saída dedicado, os serviços externos aos quais o AEM as a Cloud Service se conecta são configurados para permitir apenas o tráfego desse endereço IP dedicado.
+1. Agora, você pode usar o endereço IP de saída dedicado no código e configuração personalizados do AEM. Geralmente, ao usar o endereço IP de saída dedicado, os serviços externos aos quais o AEM as a Cloud Service se conecta são configurados para permitir apenas o tráfego desse endereço IP dedicado.
 
 ## Conexão com serviços externos por meio do endereço IP de saída dedicado
 
@@ -181,11 +219,11 @@ Com o endereço IP de saída dedicado ativado, o código e a configuração do A
 1. chamadas não HTTP/HTTPS para serviços externos
    + Inclui chamadas não HTTP, como conexões com servidores de email, bancos de dados SQL ou serviços que são executados em outros protocolos não HTTP/HTTPS.
 
-As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas por padrão, mas não usarão o endereço IP de saída dedicado se não estiver configurado adequadamente, conforme descrito abaixo.
+As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas por padrão, mas não usam o endereço IP de saída dedicado se não estiverem configuradas adequadamente conforme descrito abaixo.
 
 >[!TIP]
 >
-> Consulte a documentação dedicada de endereço IP de saída do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing=).
+> Consulte a documentação dedicada de endereço IP de saída do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

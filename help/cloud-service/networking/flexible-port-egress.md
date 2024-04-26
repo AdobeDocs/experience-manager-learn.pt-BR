@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 906
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,16 @@ Saiba como configurar e usar saída de porta flexível para suportar conexões e
 
 Saída de porta flexível permite que regras de encaminhamento de porta personalizadas e específicas sejam anexadas ao AEM as a Cloud Service, permitindo que conexões do AEM a serviços externos sejam feitas.
 
-Um programa do Cloud Manager só pode ter um __solteiro__ tipo de infraestrutura de rede. Certifique-se de que o endereço IP de saída dedicado seja o mais [tipo adequado de infraestrutura de rede](./advanced-networking.md)  para o AEM as a Cloud Service antes de executar os seguintes comandos.
+Um programa do Cloud Manager só pode ter um __solteiro__ tipo de infraestrutura de rede. Garantir que a saída de porta flexível seja a mais [tipo adequado de infraestrutura de rede](./advanced-networking.md) para o AEM as a Cloud Service antes de executar os seguintes comandos.
 
 >[!MORELIKETHIS]
 >
-> Leia o as a Cloud Service do AEM [documentação avançada de configuração de rede](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) para obter mais detalhes sobre saída de porta flexível.
+> Leia o as a Cloud Service do AEM [documentação avançada de configuração de rede](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) para obter mais detalhes sobre saída de porta flexível.
+
 
 ## Pré-requisitos
 
-Os seguintes requisitos são necessários ao configurar a saída de porta flexível:
+Os itens a seguir são necessários ao definir ou definir a saída de porta flexível usando as APIs do Cloud Manager:
 
 + Projeto do Adobe Developer Console com a API do Cloud Manager ativada e [Permissões do proprietário da empresa no Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Acesso a [Credenciais de autenticação da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -49,13 +51,45 @@ Para obter mais detalhes, assista à seguinte apresentação de como configurar 
 
 Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. Os dados fornecidos `curl` assumem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o `\` caractere de quebra de linha com `^`.
 
+
 ## Habilitar saída de porta flexível por programa
 
 Comece ativando a saída de porta flexível no AEM as a Cloud Service.
 
-1. Primeiro, determine a região em que a Rede avançada é configurada usando a API do Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. A variável `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
+>[!BEGINTABS]
 
-   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) no [detalhes do ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usada na API do Cloud Manager.
+>[!TAB Cloud Manager]
+
+A saída de porta flexível pode ser ativada usando o Cloud Manager. As etapas a seguir descrevem como ativar a saída de porta flexível no AEM as a Cloud Service usando o Cloud Manager.
+
+1. Faça logon no [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) como Proprietário da empresa do Cloud Manager.
+1. Navegue até o Programa desejado.
+1. No menu esquerdo, navegue até __Serviços > Infraestrutura de rede__.
+1. Selecione o __Adicionar infraestrutura de rede__ botão.
+
+   ![Adicionar infraestrutura de rede](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. No __Adicionar infraestrutura de rede__ , selecione a __Saída de porta flexível__ e selecione a opção __Região__ para criar o endereço IP de saída dedicado.
+
+   ![Adicionar saída de porta flexível](./assets/flexible-port-egress/select-type.png)
+
+1. Selecionar __Salvar__ para confirmar a adição da saída de porta flexível.
+
+   ![Confirmar criação de saída de porta flexível](./assets/flexible-port-egress/confirmation.png)
+
+1. Aguardar a infraestrutura de rede ser criada e marcada como __Pronto__. Esse processo pode levar até 1 hora.
+
+   ![Status de criação de saída de porta flexível](./assets/flexible-port-egress/ready.png)
+
+Com a saída de porta flexível criada, agora é possível configurar as regras de encaminhamento de porta usando as APIs do Cloud Manager, conforme descrito abaixo.
+
+>[!TAB APIs do Cloud Manager]
+
+A saída de porta flexível pode ser ativada usando as APIs do Cloud Manager. As etapas a seguir descrevem como ativar a saída de porta flexível no AEM as a Cloud Service usando a API do Cloud Manager.
+
+1. Primeiro, determine a região em que a Rede avançada é configurada no usando a API do Cloud Manager [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. A variável `region name` O é necessário para fazer chamadas de API subsequentes do Cloud Manager. Normalmente, a região em que o ambiente de Produção reside é usada.
+
+   Encontre a região do seu ambiente as a Cloud Service AEM em [Cloud Manager](https://my.cloudmanager.adobe.com) no [detalhes do ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usada na API do Cloud Manager.
 
    __solicitação HTTP listRegions__
 
@@ -67,7 +101,7 @@ Comece ativando a saída de porta flexível no AEM as a Cloud Service.
        -H 'Content-Type: application/json' 
    ```
 
-1. Ativar saída de porta flexível para um programa do Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
+2. Ativar saída de porta flexível para um programa do Cloud Manager usando a API do Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Use o `region` código obtido da API do Cloud Manager `listRegions` operação.
 
    __solicitação HTTP createNetworkInfrastructure__
 
@@ -82,7 +116,7 @@ Comece ativando a saída de porta flexível no AEM as a Cloud Service.
 
    Aguarde 15 minutos para que o programa do Cloud Manager provisione a infraestrutura de rede.
 
-1. Verifique se o ambiente terminou __saída de porta flexível__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operação, utilizando o `id` retornado da solicitação HTTP createNetworkInfrastructure na etapa anterior.
+3. Verifique se o ambiente terminou __saída de porta flexível__ configuração usando a API do Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) operação, utilizando o `id` retornado do `createNetworkInfrastructure` Solicitação HTTP na etapa anterior.
 
    __solicitação HTTP getNetworkInfrastructure__
 
@@ -95,6 +129,10 @@ Comece ativando a saída de porta flexível no AEM as a Cloud Service.
    ```
 
    Verifique se a resposta HTTP contém um __status__ de __pronto__. Se ainda não estiver pronto, verifique novamente o status a cada poucos minutos.
+
+Com a saída de porta flexível criada, agora é possível configurar as regras de encaminhamento de porta usando as APIs do Cloud Manager, conforme descrito abaixo.
+
+>[!ENDTABS]
 
 ## Configuração de proxies de saída de porta flexíveis por ambiente
 
@@ -154,7 +192,7 @@ Comece ativando a saída de porta flexível no AEM as a Cloud Service.
 
 1. Configurações flexíveis de saída de porta podem ser atualizadas usando a API do Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operação. Lembrar `enableEnvironmentAdvancedNetworkingConfiguration` é um `PUT` para que todas as regras sejam fornecidas com cada chamada desta operação.
 
-1. Agora você pode usar a configuração flexível de saída de porta em seu código e configuração personalizados AEM.
+1. Agora, você pode usar a configuração flexível de saída de porta em seu código e configuração personalizados do AEM.
 
 
 ## Conexão com serviços externos por meio de saída de porta flexível
@@ -185,7 +223,7 @@ Ao fazer chamadas HTTP/HTTPS para serviços externos em portas fora do padrão, 
 
 >[!TIP]
 >
-> Consulte a documentação de saída de porta flexível do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> Consulte a documentação de saída de porta flexível do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Exemplos de código
 
