@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -42,15 +43,14 @@ Para implementar permissões orientadas por metadados:
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. Substitua os nomes de propriedade e os caminhos de restrição pelos valores necessários.
+1. Substitua os nomes de propriedade pelos valores necessários.
 
 
 Antes de adicionar Entradas de controle de acesso com base em restrições, uma nova entrada de nível superior deve ser adicionada para primeiro negar acesso de leitura a todos os grupos que estão sujeitos à avaliação de permissão para Ativos (por exemplo, &quot;colaboradores&quot; ou semelhante):
