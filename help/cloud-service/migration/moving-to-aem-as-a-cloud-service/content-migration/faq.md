@@ -11,9 +11,9 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Obtenha respostas para perguntas frequentes sobre a migração de conteúdo para
 
 ## Terminologia
 
-+ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
++ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=pt-BR)
 + **BPA**: [Analisador de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=pt-BR)
 + **CTT**: [Ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR)
 + **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
@@ -77,22 +77,6 @@ A quantidade de recursos que o processo de extração da CTT utiliza depende do 
 
 Se os ambientes de clonagem forem usados para migração, eles não afetarão a utilização de recursos do servidor de produção em tempo real, mas terão seus próprios inconvenientes em relação à sincronização de conteúdo entre a produção em tempo real e o clone
 
-### P: No meu sistema de autor de origem, configuramos o SSO para que os usuários se autentiquem na instância do autor. Preciso usar o recurso de Mapeamento de usuário da CTT neste caso?
-
-A resposta curta é &quot;**Sim**&quot;.
-
-A extração e assimilação da CTT **sem** o mapeamento de usuários migra somente o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
-
-Nesse caso, o provedor de identidade SAML é configurado no Adobe IMS para usar Federated / Enterprise ID, em vez de usar diretamente para AEM usando Manipulador de autenticação.
-
-### P: No meu sistema de autor de origem, temos a autenticação básica configurada para que os usuários se autentiquem na instância do autor com usuários locais do AEM. Preciso usar o recurso de Mapeamento de usuário da CTT neste caso?
-
-A resposta curta é &quot;**Sim**&quot;.
-
-A extração e assimilação da CTT sem mapeamento de usuários realmente migra o conteúdo, os princípios associados (usuários, grupos) do AEM de origem para o AEMaaCS. Mas há um requisito para que esses usuários (identidades) presentes no Adobe IMS e que tenham (provisionados com) acesso à instância do AEMaaCS para se autenticarem com êxito. O trabalho de [ferramenta de mapeamento do usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) é mapear o usuário local do AEM para o usuário do IMS para que a autenticação e as autorizações funcionem juntas.
-
-Nesse caso, os usuários usam o Adobe ID pessoal e o Adobe ID é usado pelo administrador do IMS para fornecer acesso ao AEMaaCS.
-
 ### P: O que significam os termos &quot;limpar&quot; e &quot;substituir&quot; no contexto da CTT?
 
 No contexto da [fase de extração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), As opções são substituir os dados no container de preparo de ciclos de extração anteriores ou adicionar o diferencial (adicionado/atualizado/excluído) a ele. O Contêiner de preparo não é nada, mas o contêiner de armazenamento de blob associado ao conjunto de migração. Cada conjunto de migração recebe seu próprio container de preparo.
@@ -107,10 +91,11 @@ Sim, é possível, mas exige um planejamento cuidadoso em relação a:
    + Verifique se é aceitável migrar todos os ativos como parte de um conjunto de migração e depois trazer os locais que os estão usando em fases
 + No estado atual, o processo de assimilação do autor torna a instância do autor indisponível para criação de conteúdo, mesmo que o nível de publicação ainda possa servir o conteúdo
    + Isso significa que, até que a assimilação seja concluída no autor, as atividades de criação de conteúdo serão congeladas
++ Os usuários não são mais migrados, embora os grupos sejam
 
 Revise o processo de extração e assimilação complementar conforme documentado antes de planejar as migrações.
 
-### P: Meus sites estarão disponíveis para os usuários finais mesmo que a assimilação aconteça nas instâncias de autor ou publicação do AEMaaCS?
+### P: Meus sites estarão disponíveis para os usuários finais mesmo que a assimilação esteja acontecendo nas instâncias de autor ou publicação do AEMaaCS?
 
 Sim. O tráfego do usuário final não é interrompido pela atividade de migração de conteúdo. No entanto, a assimilação do autor congela a criação de conteúdo até que seja concluída.
 
@@ -160,7 +145,6 @@ O processo da CTT requer conectividade com os recursos abaixo:
 
 + O ambiente as a Cloud Service do AEM: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
-+ O ponto de extremidade de E/S do Mapeamento de Usuário: `usermanagement.adobe.io`
 
 Consulte a documentação para obter mais informações sobre [conectividade de origem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ Se o número de ativos/nós no ambiente de origem estiver na extremidade inferio
 + Continuar trabalhando no local/autor de produção do AMS
 + A partir de agora, execute todas as outras provas de ciclos de migração com o `wipe=true`
    + Observe que esta operação migra o armazenamento de nós completo, mas apenas os blobs modificados, em vez dos blobs inteiros. O conjunto anterior de blobs está lá no armazenamento de blob do Azure da instância de destino do AEMaaCS.
-   + Use essa prova de migrações para medir a duração da migração, o mapeamento do usuário, os testes e a validação de todas as outras funcionalidades
+   + Use essa prova de migrações para medir a duração da migração, os testes e a validação de todas as outras funcionalidades
 + Por fim, antes da semana de ativação, execute uma migração wipe=true
    + Conectar a Dynamic Media no AEMaaCS
    + Desconectar a configuração DM da origem local do AEM
