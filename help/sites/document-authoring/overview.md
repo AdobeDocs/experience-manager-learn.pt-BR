@@ -11,10 +11,10 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
+source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 7%
+source-wordcount: '915'
+ht-degree: 6%
 
 ---
 
@@ -700,6 +700,262 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
           </div>
         </div>
       </div>
+    </div>
+    <!-- Using Adobe Target Audiences for Generate Variations -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Using Adobe Target audiences for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-target-audiences-in-generate-variations.md" title="Uso de públicos-alvo da Adobe Target para gerar variações"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                alt="Uso de públicos-alvo da Adobe Target para gerar variações">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-target-audiences-in-generate-variations.md" title="Uso de públicos-alvo da Adobe Target para gerar variações">Uso de públicos-alvo da Adobe Target para gerar variações</a>
+            </p>
+            <p class="is-size-6">Saiba como usar os públicos-alvo do Adobe Target para direcionar o público-alvo correto para suas variações de conteúdo.</p>
+            <a href="./how-to/using-target-audiences-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Using audience CSV files for Generate Variations -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Using audience CSV files for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="Uso de arquivos CSV de público-alvo para gerar variações"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                alt="Uso de arquivos CSV de público-alvo para gerar variações">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" title="Uso de arquivos CSV de público-alvo para gerar variações">Uso de arquivos CSV de público-alvo para gerar variações</a>
+            </p>
+            <p class="is-size-6">Saiba como usar arquivos CSV de público-alvo para direcionar o público-alvo correto para suas variações de conteúdo.</p>
+            <a href="./how-to/using-audiences-csv-file-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- Use Adobe Firefly to create images -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Use Adobe Firefly to create images for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Usar o Adobe Firefly para criar imagens para Gerar variações"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                alt="Usar o Adobe Firefly para criar imagens para Gerar variações">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" title="Usar o Adobe Firefly para criar imagens para Gerar variações">Usar o Adobe Firefly para criar imagens para Gerar variações</a>
+            </p>
+            <p class="is-size-6">Saiba como usar o Adobe Firefly para criar imagens para suas variações de conteúdo.</p>
+            <a href="./how-to/using-adobe-firefly-for-images-in-generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Generate Variations Actions -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Generative Variation actions" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations-actions.md" title="Ações de variação geradora"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                alt="Ações de variação geradora">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations-actions.md" title="Ações de variação geradora">Ações de variação geradora</a>
+            </p>
+            <p class="is-size-6">Explorar as ações que podem ser usadas em uma variação gerada</p>
+            <a href="./how-to/generate-variations-actions.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>    
+    <!-- Customizing prompts using metadata -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Customizing prompts using metadata" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/customizing-prompts-using-metadata.md" title="Personalização de prompts usando metadados"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
+                alt="Personalização de prompts usando metadados">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/customizing-prompts-using-metadata.md" title="Personalização de prompts usando metadados">Personalização de prompts usando metadados</a>
+            </p>
+            <p class="is-size-6">Explorar o uso de metadados em prompts personalizados</p>
+            <a href="./how-to/customizing-prompts-using-metadata.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Trust and privacy in Generative AI -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Trust and privacy in Generative AI" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations-trust-privacy.md" title="Confiança e privacidade na IA gerativa"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                alt="Confiança e privacidade na IA gerativa">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations-trust-privacy.md" title="Confiança e privacidade na IA gerativa">Confiança e privacidade na IA gerativa</a>
+            </p>
+            <p class="is-size-6">Explorar como o Adobe lida com a confiança e a privacidade no uso da IA gerativa</p>
+            <a href="./how-to/generate-variations-trust-privacy.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Overview of experimentation framework -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Overview of experimentation framework" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/experimentation-framework.md" title="Visão geral da estrutura de experimentação"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
+                alt="Visão geral da estrutura de experimentação">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/experimentation-framework.md" title="Visão geral da estrutura de experimentação">Visão geral da estrutura de experimentação</a>
+            </p>
+            <p class="is-size-6">Explore a estrutura de experimentação que permite aos profissionais de marketing testar quais variações de conteúdo são mais eficazes.</p>
+            <a href="./how-to/experimentation-framework.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                        
+    <!-- Setup experimentation framework -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Setting up experimentation framework" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/setup-experimentation-framework.md" title="Configuração da estrutura de experimentação"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                alt="Configuração da estrutura de experimentação">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/setup-experimentation-framework.md" title="Configuração da estrutura de experimentação">Configuração da estrutura de experimentação</a>
+            </p>
+            <p class="is-size-6">Saiba como configurar a estrutura de experimentação no Edge Delivery Services.</p>
+            <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                            
   </div>
 

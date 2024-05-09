@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
+source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '549'
 ht-degree: 17%
 
 ---
@@ -41,6 +41,14 @@ ht-degree: 17%
       + [Modelos de prompt GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
       + [Modelos de prompt personalizados GenAI](./document-authoring/how-to/custom-prompt-templates.md)
       + [Modelos de prompt personalizados para salvar GenAI](./document-authoring/how-to/save-custom-prompt-template.md)
+      + [Públicos-alvo para gerar variação](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
+      + [Arquivo CSV de Públicos-alvo para gerar variação](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
+      + [Adobe Firefly para gerar variação](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
+      + [Ações de variação geradora](./document-authoring/how-to/generate-variations-actions.md)
+      + [Personalização de prompts usando metadados](./document-authoring/how-to/customizing-prompts-using-metadata.md)
+      + [Confiança e privacidade da GenAI](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + [Estrutura de experimentação](./document-authoring/how-to/experimentation-framework.md)
+      + [Configurar estrutura de experimentação](./document-authoring/how-to/setup-experimentation-framework.md)
 + Criação de página {#page-authoring}
    + [Criação  ](page-authoring/aem-sites-authoring-overview.md)
    + [Navegação](page-authoring/basic-handling-sites-feature-video-use.md)
