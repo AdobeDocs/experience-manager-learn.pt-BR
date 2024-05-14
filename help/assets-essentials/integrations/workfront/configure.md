@@ -14,7 +14,7 @@ badgeVersions: label="AEM Assets Essentials" before-title="false"
 doc-type: Feature Video
 exl-id: c3961fdf-b8aa-410d-9561-520a248ea5b0
 duration: 324
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 2%
@@ -24,5 +24,6 @@ ht-degree: 2%
 # Configuração da integração
 
 Saiba como configurar a integração do Adobe Workfront e do Assets Essentials.
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336254?quality=12&learn=on)
