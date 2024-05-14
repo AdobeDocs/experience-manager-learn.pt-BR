@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: b778fa9334d70b61b0d0fa31b6c62ac03490b11e
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de código completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Este tutorial presume algum conhecimento básico sobre [Práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/br/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com [Configuração de projeto Maven para AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Todo o código mencionado deve ser usado como referência e deve ser implantado somente em um [instância AEM de desenvolvimento local](https://experienceleague.adobe.com/br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estrutura de um modelo de projeto
 
@@ -129,7 +129,7 @@ Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. N
    1. Adicionar um novo **nt:não estruturado** nó abaixo de authoring-project/gadgets chamado **tarefas**.
    1. Adicionar propriedades de string ao nó de tarefas para **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tasks&quot; e **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Agora a variável [Mosaico de tarefas](https://experienceleague.adobe.com/docs/#Tasks) será exibido por padrão quando um novo projeto for criado.
+   Agora a variável [Mosaico de tarefas](https://experienceleague.adobe.com/en/docs) será exibido por padrão quando um novo projeto for criado.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ A criação de um assistente personalizado pode ser muito eficiente, pois você 
 
 1. No CRXDE-Lite, criaremos uma subpasta abaixo de `/apps/aem-guides/projects-tasks/projects` pasta chamada &quot;assistentes&quot;. Copiar o assistente padrão de: `/libs/cq/core/content/projects/workflowwizards/default_workflow` abaixo da pasta assistentes recém-criada e renomeie-a para **content-approval-start**. O caminho completo agora deve ser: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   O assistente padrão é um assistente de 2 colunas, com a primeira coluna mostrando o Título, a Descrição e a Miniatura do modelo de fluxo de trabalho selecionado. A segunda coluna inclui campos para o Título do fluxo de trabalho, Comentário inicial e Caminho da carga útil. O assistente é um formulário padrão de interface para toque e usa o padrão [Componentes de formulário da interface do Granite](https://experienceleague.adobe.com/docs/) para preencher os campos.
+   O assistente padrão é um assistente de 2 colunas, com a primeira coluna mostrando o Título, a Descrição e a Miniatura do modelo de fluxo de trabalho selecionado. A segunda coluna inclui campos para o Título do fluxo de trabalho, Comentário inicial e Caminho da carga útil. O assistente é um formulário padrão de interface para toque e usa o padrão [Componentes de formulário da interface do Granite](https://experienceleague.adobe.com/en/docs) para preencher os campos.
 
    ![assistente de fluxo de trabalho de aprovação de conteúdo](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Adicionaremos um campo adicional ao assistente, usado para definir o destinatário da primeira tarefa no fluxo de trabalho (consulte [Criar o modelo de fluxo de trabalho](#create-workflow-model): Etapa 5).
 
-   Abaixo `../content-approval-start/jcr:content/items/column2/items` criar um novo nó do tipo `nt:unstructured` nomeado **&quot;atribuir&quot;**. Usaremos o componente Seletor de usuários de projetos (que é baseado no [Componente Seletor de usuários do Granite](https://experienceleague.adobe.com/docs/)). Esse campo de formulário facilita a restrição da seleção do usuário e do grupo somente aos que pertencem ao projeto atual.
+   Abaixo `../content-approval-start/jcr:content/items/column2/items` criar um novo nó do tipo `nt:unstructured` nomeado **&quot;atribuir&quot;**. Usaremos o componente Seletor de usuários de projetos (que é baseado no [Componente Seletor de usuários do Granite](https://experienceleague.adobe.com/en/docs)). Esse campo de formulário facilita a restrição da seleção do usuário e do grupo somente aos que pertencem ao projeto atual.
 
    Abaixo está a representação XML do **atribuir** nó:
 
@@ -655,7 +655,7 @@ A criação de um assistente personalizado pode ser muito eficiente, pois você 
 
 1. Também adicionaremos um campo de seleção de prioridade que determinará a prioridade da primeira tarefa no fluxo de trabalho (consulte [Criar o modelo de fluxo de trabalho](#create-workflow-model): Etapa 5).
 
-   Abaixo `/content-approval-start/jcr:content/items/column2/items` criar um novo nó do tipo `nt:unstructured` nomeado **prioridade**. Usaremos o [Selecionar componente da interface de usuário do Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para preencher o campo de formulário.
+   Abaixo `/content-approval-start/jcr:content/items/column2/items` criar um novo nó do tipo `nt:unstructured` nomeado **prioridade**. Usaremos o [Selecionar componente da interface de usuário do Granite](https://experienceleague.adobe.com/br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para preencher o campo de formulário.
 
    Abaixo de **prioridade** nó adicionaremos um **itens** nó de **nt:não estruturado**. Abaixo de **itens** nó adicione mais 3 nós para preencher as opções de seleção para Alto, Médio e Baixo. Cada nó é do tipo **nt:não estruturado** e deve ter um **texto** e **value** propriedade. O texto e o valor devem ser iguais:
 
@@ -691,7 +691,7 @@ A criação de um assistente personalizado pode ser muito eficiente, pois você 
    </priority>
    ```
 
-1. Permitiremos que o iniciador do fluxo de trabalho defina a data de vencimento da tarefa inicial. Usaremos o [Seletor de data da interface do usuário do Granite](https://experienceleague.adobe.com/docs/) campo de formulário para capturar essa entrada. Também adicionaremos um campo oculto com um [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para garantir que a entrada seja armazenada como uma propriedade do tipo Data no JCR.
+1. Permitiremos que o iniciador do fluxo de trabalho defina a data de vencimento da tarefa inicial. Usaremos o [Seletor de data da interface do usuário do Granite](https://experienceleague.adobe.com/en/docs) campo de formulário para capturar essa entrada. Também adicionaremos um campo oculto com um [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) para garantir que a entrada seja armazenada como uma propriedade do tipo Data no JCR.
 
    Adicionar dois **nt:não estruturado** nós com as seguintes propriedades representadas abaixo em XML:
 
