@@ -7,17 +7,17 @@ topic: Administration, Architecture
 role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
-duration: null
+duration: 1042
 last-substantial-update: 2024-03-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
-source-git-commit: 8230991cebf1a9e994f0dfe96c5590d0c19ef887
+exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar nome de domínio personalizado
 
@@ -92,7 +92,7 @@ Para adicionar o certificado SSL no Cloud Manager, siga o [Adicionar certificado
 
 Para verificar o nome de domínio, siga estas etapas:
 
-- Adicione o nome do domínio no Cloud Manager seguindo o [Adicionar nome de domínio personalizado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) documentação.
+- Adicione o nome do domínio no Cloud Manager seguindo o [Adicionar nome de domínio personalizado](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) documentação.
 - Adicionar uma mensagem específica do AEM [Registro TXT](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) no serviço de hospedagem DNS.
 - Verifique as etapas acima consultando os servidores DNS usando o `dig` comando.
 
@@ -156,5 +156,3 @@ Para verificar se o site pode ser acessado usando o nome de domínio personaliza
 Você também pode assistir ao vídeo completo que demonstra a visão geral, os pré-requisitos e as etapas acima para adicionar um nome de domínio personalizado ao site hospedado pelo AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)
-
-

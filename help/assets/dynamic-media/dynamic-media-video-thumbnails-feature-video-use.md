@@ -8,11 +8,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: da3190bb-f350-420f-bf24-a6dede296efa
-duration: 381
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 376
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,4 +28,4 @@ As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capa
 
 >[!NOTE]
 >
->Você deve executar o [Instância do AEM no Dynamic Media](https://experienceleague.adobe.com/docs/) modo
+>Você deve executar o [Instância do AEM no Dynamic Media](https://experienceleague.adobe.com/pt-br/docs) modo

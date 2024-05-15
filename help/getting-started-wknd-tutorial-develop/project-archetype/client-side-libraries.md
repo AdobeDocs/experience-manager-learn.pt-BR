@@ -11,8 +11,8 @@ thumbnail: 30359.jpg
 doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-duration: 732
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 557
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2546'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Neste capítulo, você adiciona alguns estilos de linha de base para o site da W
 
 *Página de artigo com estilos de linha de base aplicados*
 
-## Segundo plano {#background}
+## Fundo {#background}
 
 As bibliotecas do lado do cliente fornecem um mecanismo para organizar e gerenciar arquivos CSS e JavaScript necessários para uma implementação do AEM Sites. As metas básicas para bibliotecas do lado do cliente ou clientlibs são:
 

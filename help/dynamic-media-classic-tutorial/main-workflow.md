@@ -7,8 +7,8 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-duration: 694
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 569
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2658'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Saiba mais sobre o [Opção de substituição de imagens](https://experienceleag
 
 Embora não seja obrigatório, ao fazer upload usando um dos dois métodos acima, você pode especificar Opções de trabalho para esse upload específico — por exemplo, para agendar um upload recorrente, definir opções de recorte no upload e muitos outros. Eles podem ser valiosos para alguns fluxos de trabalho, portanto, vale a pena considerar se podem ser para o seu.
 
-Saiba mais sobre [Opções de trabalho](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Saiba mais sobre [Opções de trabalho](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-options).
 
 O upload é a primeira etapa necessária em qualquer fluxo de trabalho porque o Dynamic Media Classic não pode trabalhar com qualquer conteúdo que ainda não esteja em seu sistema. Em segundo plano, durante o upload, o sistema registra cada ativo carregado no banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem para um formato que permite redimensionamento dinâmico e zoom e converte arquivos de vídeo para o formato MP4 compatível com a Web.
 

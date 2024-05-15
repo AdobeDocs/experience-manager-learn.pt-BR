@@ -13,8 +13,8 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-duration: 1360
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 1303
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 1%
@@ -66,7 +66,7 @@ A variável [Visão geral do sistema XDM](https://experienceleague.adobe.com/doc
 
 ## Criar sequência de dados - Experience Platform
 
-Uma sequência de dados instrui a Rede de borda da plataforma para onde enviar os dados coletados. Por exemplo, ela pode ser enviada para o Experience Platform, Analytics ou Adobe Target.
+Um fluxo de dados instrui o Edge Network da plataforma para onde enviar os dados coletados. Por exemplo, ela pode ser enviada para o Experience Platform, Analytics ou Adobe Target.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
@@ -79,7 +79,7 @@ Saiba como criar uma propriedade de tag no Experience Platform para adicionar a 
 
 + Extensões de tag: [Núcleo](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) e [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Elementos de dados: os elementos de dados do tipo de código personalizado que extraem o nome da página, a seção do site e o nome do host usando a Camada de dados do cliente Adobe do site WKND. Além disso, o elemento de dados do tipo Objeto XDM é compatível com a compilação do esquema XDM da WKND recém-criado anteriormente [Criar esquema XDM](#create-xdm-schema---experience-platform) etapa.
-+ Regra: enviar dados para a Rede de borda da Platform sempre que uma página da Web WKND for visitada usando a Camada de dados do cliente Adobe acionada `cmp:show` evento.
++ Regra: enviar dados para o Platform Edge Network sempre que uma página da Web WKND for visitada usando a Camada de dados do cliente Adobe acionada `cmp:show` evento.
 
 Ao criar e publicar a biblioteca de tags usando o **Fluxo de publicação**, você pode usar o **Adicionar todos os recursos alterados** botão. Para selecionar todos os recursos como Elemento de dados, Regra e Extensões de tag, em vez de identificar e selecionar um recurso individual. Além disso, durante a fase de desenvolvimento, você pode publicar a biblioteca apenas no _Desenvolvimento_ e, em seguida, verifique e promova-o para o _Estágio_ ou _Produção_ ambiente.
 
@@ -220,6 +220,6 @@ Excelente trabalho. Você concluiu a configuração do AEM com o SDK da Web do E
 
 + [Utilização da Camada de dados do cliente Adobe com os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR)
 + [Integração de tags de coleção de dados do Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=pt-BR)
-+ [Visão geral do SDK da Web da Adobe Experience Platform e da rede de borda](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Visão geral do SDK da Web da Adobe Experience Platform e do Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriais da Coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

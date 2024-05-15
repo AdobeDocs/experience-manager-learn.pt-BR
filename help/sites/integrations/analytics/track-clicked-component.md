@@ -11,8 +11,8 @@ thumbnail: KT-6296.jpg
 badgeIntegration: label="Integração" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-duration: 527
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 394
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -147,7 +147,7 @@ A Camada de dados de clientes Adobe é uma **evento** camada de dados orientada.
 
    A variável `event` o objeto é transmitido de `trigger()` chamado no evento personalizado. A variável `component` objeto é o estado atual do componente derivado da camada de dados `getState()` e é o elemento que provocou o clique.
 
-1. Salve as alterações e execute um [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da tag para promover o código à [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) usado no seu site AEM.
+1. Salve as alterações e execute um [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da tag para promover o código à [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no seu site AEM.
 
    >[!NOTE]
    >

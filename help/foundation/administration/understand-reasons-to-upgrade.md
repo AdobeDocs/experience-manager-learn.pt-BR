@@ -8,8 +8,8 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-duration: 809
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 538
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2588'
 ht-degree: 1%
@@ -341,7 +341,7 @@ Abaixo está uma matriz dos principais recursos de segurança oferecidos pelo AE
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Aprimoramento do suporte à autenticação SAML</a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/pt-br/docs" target="_blank">Aprimoramento do suporte à autenticação SAML</a><br>
  </strong>Melhorias no redirecionamento de SAML, informações de grupo otimizadas e problemas de criptografia de chave resolvidos.
             <br>
         </td>
@@ -952,7 +952,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Visualizadores</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/pt-br/docs" target="_blank">Visualizadores</a>:</strong>
             Reprodutores de mídia avançada de marca personalizada e predefinições com suporte para telas/dispositivos diferentes.</td>
             <td> </td>
             <td>✔</td>

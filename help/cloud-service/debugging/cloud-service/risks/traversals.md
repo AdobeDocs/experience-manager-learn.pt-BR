@@ -10,8 +10,8 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-duration: 303
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 155
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 4%
@@ -65,8 +65,8 @@ A mitigação de avisos de travessia pode ser abordada usando três etapas simpl
    <div class="x-card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="#adjust" title="Ajustar " tabindex="-1">
-                   <img class="is-bordered-r-small" src="./assets/traversals/2-adjust.png" alt="Ajustar ">
+               <a href="#adjust" title="Ajustar" tabindex="-1">
+                   <img class="is-bordered-r-small" src="./assets/traversals/2-adjust.png" alt="Ajustar">
                </a>
            </figure>
        </div>

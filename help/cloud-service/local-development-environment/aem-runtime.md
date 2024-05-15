@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-duration: 529
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 411
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 7%
@@ -214,7 +214,7 @@ Durante o desenvolvimento, pode ser desejável simular a distribuição de conte
 
 >[!NOTE]
 >
-Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
+> Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
 
 1. Faça logon na **Autor** e navegue até [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
 1. Clique em **Agente padrão (publicação)** para abrir o Agente de replicação padrão.
@@ -279,7 +279,7 @@ Atualize o SDK do AEM pelo menos mensalmente na última quinta-feira de cada mê
 
 >[!WARNING]
 >
-Atualizar o Quickstart Jar para uma nova versão requer a substituição de todo o ambiente de desenvolvimento local, resultando na perda de todo o código, configuração e conteúdo nos repositórios AEM locais. Verifique se qualquer código, configuração ou conteúdo que não deve ser destruído foi confirmado com segurança no Git ou exportado da instância local do AEM como Pacotes de AEM.
+> Atualizar o Quickstart Jar para uma nova versão requer a substituição de todo o ambiente de desenvolvimento local, resultando na perda de todo o código, configuração e conteúdo nos repositórios AEM locais. Verifique se qualquer código, configuração ou conteúdo que não deve ser destruído foi confirmado com segurança no Git ou exportado da instância local do AEM como Pacotes de AEM.
 
 ### Como evitar perda de conteúdo ao atualizar o SDK do AEM
 

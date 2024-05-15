@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 825
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 609
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -193,7 +193,7 @@ Deixe a **Informações adicionais** campo vazio.
 
 Adicione as seguintes informações nos fragmentos de Informações de contato:
 
-| Título do fragmento de conteúdo | Telefone | Email |
+| Título do fragmento de conteúdo | Celular | Email |
 | ------- | -------- | -------- |
 | Stacey Roswells Contact Info | 209-888-0011 | sroswells@wknd.com |
 | Informações de contato de Kumar Selvaraj | 209-888-0002 | kselvaraj@wknd.com |

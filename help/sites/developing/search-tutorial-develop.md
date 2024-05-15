@@ -10,11 +10,11 @@ doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-duration: 182
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 138
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -77,7 +77,7 @@ A implementação de pesquisa simples são os materiais do **Adobe Summit lab AE
 * [Repositório do GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API do QueryBuilder](https://experienceleague.adobe.com/docs/)
+* [API do QueryBuilder](https://experienceleague.adobe.com/pt-br/docs)
 * [Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página da documentação](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correções e acompanhamento {#corrections-and-follow-up}

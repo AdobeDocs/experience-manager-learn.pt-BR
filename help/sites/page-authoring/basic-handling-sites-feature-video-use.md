@@ -10,8 +10,8 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-duration: 289
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 269
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 9%
@@ -34,7 +34,7 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
      | Console | Propósito |
      |---|---|
-     | Assets | Esses consoles permitem importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM | Communities | Esse console permite criar e gerenciar sites da comunidade para envolvimento e capacitação | Commerce | Isso permite gerenciar produtos, catálogos de produtos e pedidos relacionados aos sites do Commerce |
+     | Ativos | Esses consoles permitem importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM | Communities | Esse console permite criar e gerenciar sites da comunidade para envolvimento e capacitação | Commerce | Isso permite gerenciar produtos, catálogos de produtos e pedidos relacionados aos sites do Commerce |
      | Fragmentos de experiência | Um fragmento de experiência é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências |
      | Forms | Esse console permite criar, gerenciar e processar formulários e documentos |
      | Personalização | Esse console fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas |

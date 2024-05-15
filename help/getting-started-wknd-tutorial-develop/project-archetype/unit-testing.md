@@ -12,8 +12,8 @@ thumbnail: 30207.jpg
 doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-duration: 870
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 706
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 1. Saiba mais sobre estruturas e ferramentas comumente usadas para testar o código do AEM.
 1. Entenda as opções para zombar ou simular recursos de AEM ao gravar testes de unidade.
 
-## Segundo plano {#unit-testing-background}
+## Fundo {#unit-testing-background}
 
 Neste tutorial, exploraremos como escrever [Testes de unidade](https://en.wikipedia.org/wiki/Unit_testing) para o nosso componente de Subtítulo [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) (criado no [Criação de um componente de AEM personalizado](custom-component.md)). Testes de unidade são testes de tempo de compilação escritos em Java™ que verificam o comportamento esperado do código Java™. Cada teste de unidade é normalmente pequeno e valida a saída de um método (ou unidades de trabalho) em relação aos resultados esperados.
 

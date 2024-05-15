@@ -9,8 +9,8 @@ version: 6.4,6.5
 jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
-duration: 53
-source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+duration: 39
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 3%
@@ -39,7 +39,7 @@ O banco de dados tem uma tabela chamada formdata com as 3 colunas conforme mostr
 | Classe de driver JDBC | `com.mysql.cj.jdbc.Driver` |
 | URI de conexão JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
-## Assets
+## Ativos
 
 O arquivo SQL para criar o esquema pode ser [baixado aqui](assets/sign-multiple-forms.sql). Você precisará importar esse arquivo usando o MySql workbench para criar o esquema e a tabela.
 

@@ -3,8 +3,8 @@ title: Modelos e arquétipos de governança e equipe
 description: Aprenda maneiras de operacionalizar sua plataforma Adobe Experience Manager (AEM) e obter o máximo valor de seus esforços.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-duration: 320
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 257
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Veja a seguir exemplos de funções de um cenário leve (empresa de vestuário e
 
 Veja a seguir exemplos de funções para um cenário de cliente leve e pesado:
 
-1. Clara
+1. Claro
 
    * 2 desenvolvedores de CSS - online
    * 1 Proprietário do produto — tempo integral, onshore

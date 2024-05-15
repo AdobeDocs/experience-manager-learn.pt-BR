@@ -9,8 +9,8 @@ level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
-duration: 67
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 48
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 2%
@@ -33,7 +33,7 @@ O Adobe Experience Manager as a Cloud Service usa filtros do Dispatcher de publi
 
 A configuração de filtro do Dispatcher de publicação do AEM define os padrões de URL permitidos para alcançar AEM e deve incluir o prefixo do URL para o endpoint da consulta persistente do AEM.
 
-| O cliente se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
+| O cliente se conecta ao | Autor do AEM | Publicação no AEM | Visualização do AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requer a configuração de filtros do Dispatcher | ✘ | ✔ | ✔ |
 

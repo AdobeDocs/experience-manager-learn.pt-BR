@@ -8,11 +8,11 @@ thumbnail: 342864.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: bfd455c4-9a51-4537-ae6d-548d552e13e6
-duration: 281
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 278
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '59'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,6 @@ Uma comparação entre as diferenças entre um fragmento de experiência e um fr
 
 ## Conteúdo abordado neste vídeo
 
-+ [Trabalhar com fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
++ [Trabalhar com fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html?lang=pt-BR)
 + [Uso de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)
 + [Documentação do fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html)

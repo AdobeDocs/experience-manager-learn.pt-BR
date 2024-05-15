@@ -9,8 +9,8 @@ level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-duration: 2546
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 2460
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -209,6 +209,6 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 * [Agentes de replicação de autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guia para download acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/docs/)
+* [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/pt-br/docs)
 * [Baixar Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Servidor de teste Aspera Connect](https://test-connect.asperasoft.com/)

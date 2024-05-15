@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 115
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 68
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 14%
@@ -44,14 +44,14 @@ Salve as alterações
 
 Verifique se você está no estado Ativo e estilize as seguintes propriedades de CSS
 
-| Categoria | Nome da Propriedade | Valor da propriedade |
+| Categoria | Nome de propriedade | Valor de propriedade |
 |:---|:---|:---|
 | Dimension e Posição | Largura | 50px |
 | Texto | Espessura da Fonte | Negrito |
 | Texto | Cor | #FFF |
 | Texto | Altura da Linha | 3 |
-| Texto | Alinhamento do Texto | Esquerda |
-| Segundo plano | Cor | #056dae |
+| Texto | Alinhamento do Texto | À esquerda |
+| Fundo | Cor | #056dae |
 
 Estilize a imagem de plano de fundo conforme mostrado na captura de tela abaixo
 
@@ -65,14 +65,14 @@ Salve as alterações.
 
 Verifique se você está no estado visitado e estilize as seguintes propriedades
 
-| Categoria | Nome da Propriedade | Valor da propriedade |
+| Categoria | Nome de propriedade | Valor de propriedade |
 |:---|:---|:---|
 | Dimension e Posição | Largura | 50px |
 | Texto | Espessura da Fonte | Negrito |
 | Texto | Cor | #FFF |
 | Texto | Altura da Linha | 3 |
-| Texto | Alinhamento do Texto | Esquerda |
-| Segundo plano | Cor | #056dae |
+| Texto | Alinhamento do Texto | À esquerda |
+| Fundo | Cor | #056dae |
 
 Estilize a imagem de plano de fundo conforme mostrado na captura de tela abaixo
 

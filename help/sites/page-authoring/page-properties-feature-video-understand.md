@@ -10,8 +10,8 @@ jira: KT-4321
 thumbnail: 32192.jpg
 doc-type: Feature Video
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-duration: 420
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 410
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 47%
@@ -46,7 +46,7 @@ Neste vídeo, os seguintes elementos de propriedade da página são abordados:
       * Redirecionar
       * Design
       * Alias
-   * Configuração na nuvem
+   * Configuração de nuvem
    * Configurações do modelo
    * Requisitos de autenticação
    * Exportar

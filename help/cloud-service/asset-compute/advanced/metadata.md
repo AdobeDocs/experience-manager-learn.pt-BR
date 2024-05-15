@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-duration: 500
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 432
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Os trabalhadores de Assets compute personalizados podem produzir dados XMP (XML)
 Casos de uso comuns incluem:
 
 + Integrações com sistemas de terceiros, como um PIM (Product Information Management System), em que os metadados adicionais devem ser recuperados e armazenados no ativo
-+ Integrações com os serviços da Adobe, como IA de conteúdo e comércio, para aumentar os metadados de ativos com atributos adicionais de aprendizado de máquina
++ Integrações com os serviços da Adobe, como IA de conteúdo e Commerce, para aumentar os metadados de ativos com atributos adicionais de aprendizado de máquina
 + Derivar metadados sobre o ativo de seu binário e armazená-lo como metadados de ativos no AEM as a Cloud Service
 
 ## O que você fará

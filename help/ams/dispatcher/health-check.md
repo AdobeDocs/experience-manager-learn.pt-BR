@@ -9,8 +9,8 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-duration: 323
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 247
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -135,7 +135,7 @@ Opções válidas:
    - Esta opção colocará uma página de manutenção para o editor quando ele não estiver íntegro
 - todas
    - Essa opção colocará uma página de manutenção para o autor ou editor, ou ambos, se eles se tornarem não íntegros
-- nenhuma
+- nenhum
    - Esta opção ignora este recurso da verificação de integridade
 
 Ao examinar a `VirtualHost` ao configurar esses itens, você verá que eles carregam o mesmo documento como uma página de erro para cada solicitação que aparece quando ela é ativada:

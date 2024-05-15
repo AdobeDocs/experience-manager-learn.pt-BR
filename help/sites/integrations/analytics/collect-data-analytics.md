@@ -11,8 +11,8 @@ thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="Integração" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-duration: 668
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 490
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 1%
@@ -55,7 +55,7 @@ A variável [WKND](https://wknd.site/us/en.html) é um site voltado para o públ
 Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador Experience Platform para **alternar** o live [Site da WKND](https://wknd.site/us/en.html) para *seu* propriedade da tag. No entanto, você pode usar seu próprio site AEM se ele já tiver o [Camada de dados de clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Faça logon no Experience Platform e [criar uma propriedade de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (caso ainda não o tenha feito).
-1. Verifique se uma tag inicial do JavaScript [a biblioteca foi criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promovido para a tag [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
+1. Verifique se uma tag inicial do JavaScript [a biblioteca foi criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promovido para a tag [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR).
 1. Copie o código de incorporação do JavaScript do ambiente de tag em que sua biblioteca foi publicada.
 
    ![Copiar código de inserção da propriedade de tag](assets/collect-data-analytics/launch-environment-copy.png)
@@ -177,7 +177,7 @@ A Camada de dados de clientes Adobe é uma **orientado por eventos** camada de d
 
    A variável `event` o objeto é transmitido de `trigger()` chamado no evento personalizado. Aqui, a variável `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
 
-1. Salve as alterações e execute um [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da tag para promover o código à [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) usado no seu site AEM.
+1. Salve as alterações e execute um [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da tag para promover o código à [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no seu site AEM.
 
    >[!NOTE]
    >

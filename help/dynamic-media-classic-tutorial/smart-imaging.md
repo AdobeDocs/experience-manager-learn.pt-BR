@@ -7,8 +7,8 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-duration: 158
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 130
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Um dos aspectos mais importantes da experiência do cliente em seu site ou site 
 
 A Smart Imaging também se beneficia do aumento de desempenho de estar totalmente integrado ao melhor serviço premium da classe do Adobe. Este serviço encontra a rota de Internet ideal entre servidores, redes e pontos de troca de tráfego (peering) que tem a menor latência e/ou taxa de perda de pacotes do que a rota padrão na Internet.
 
-Saiba mais sobre [Imagem inteligente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Saiba mais sobre [Imagem inteligente](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=pt-BR).
 
 ## Benefícios do Smart Imaging
 
@@ -51,7 +51,7 @@ A habilitação de Smart Imaging começa com o envio de uma solicitação ao sup
 
 Depois de habilitar o Smart Imaging, você verificará se ele está funcionando como esperado.
 
-Você provavelmente tem outras dúvidas sobre o Smart Imaging. Compilamos uma lista de perguntas frequentes com respostas. Leia o [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Você provavelmente tem outras dúvidas sobre o Smart Imaging. Compilamos uma lista de perguntas frequentes com respostas. Leia o [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=pt-BR).
 
 ## Recursos adicionais
 

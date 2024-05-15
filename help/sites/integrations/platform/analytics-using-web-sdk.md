@@ -13,8 +13,8 @@ thumbnail: KT-13328.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
-duration: 2330
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 2252
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Para saber mais sobre a configuração e os conceitos do Analytics, os seguintes
 
 ## Atualizar sequência de dados - Adicionar serviço do Analytics
 
-Uma sequência de dados instrui a Rede de borda da plataforma para onde enviar os dados coletados. No [tutorial anterior](./web-sdk.md), um Datastream é configurado para enviar os dados ao Experience Platform. Essa sequência de dados é atualizada para enviar os dados ao conjunto de relatórios do Analytics que foi configurado no [acima](#setup-analytics---report-suite-analysis-workspace) etapa.
+Um fluxo de dados instrui o Edge Network da plataforma para onde enviar os dados coletados. No [tutorial anterior](./web-sdk.md), um Datastream é configurado para enviar os dados ao Experience Platform. Essa sequência de dados é atualizada para enviar os dados ao conjunto de relatórios do Analytics que foi configurado no [acima](#setup-analytics---report-suite-analysis-workspace) etapa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
@@ -276,6 +276,6 @@ Ao implementar as etapas recomendadas e usar os recursos fornecidos, como o docu
 + [Integrar SDK da Web do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [Utilização da Camada de dados do cliente Adobe com os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR)
 + [Integração de tags de coleção de dados do Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=pt-BR)
-+ [Visão geral do SDK da Web da Adobe Experience Platform e da rede de borda](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Visão geral do SDK da Web da Adobe Experience Platform e do Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriais da Coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
