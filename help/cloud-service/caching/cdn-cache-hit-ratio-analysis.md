@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,9 @@ Os logs CDN estão disponíveis no formato JSON, que contém vários campos, inc
 Para o propósito deste tutorial, a variável [Projeto WKND do AEM](https://github.com/adobe/aem-guides-wknd) é implantado no ambiente as a Cloud Service AEM e um pequeno teste de desempenho é acionado usando [Apache JMeter](https://jmeter.apache.org/).
 
 Este tutorial está estruturado para orientá-lo pelo seguinte processo:
+
 1. Baixar logs CDN por meio do Cloud Manager
-1. Análise desses logs CDN, que pode ser executada com duas abordagens: um painel instalado localmente ou um Jupityer Notebook acessado remotamente (para aqueles que licenciam o Adobe Experience Platform)
+1. A análise desses logs de CDN pode ser executada com duas abordagens: um painel instalado localmente ou um Splunk ou Jupityer Notebook acessado remotamente (para aqueles que licenciam o Adobe Experience Platform)
 1. Otimização da configuração do cache da CDN
 
 ## Baixar logs CDN
@@ -60,24 +61,27 @@ Se o arquivo de log baixado for de _hoje_ a extensão do arquivo é `.log` caso 
 
 ## Analisar logs de CDN baixados
 
-Para obter insights, como a taxa de acertos do cache e os principais URLs dos tipos de cache MISS e PASS, analise o arquivo de log de CDN baixado. Esses insights ajudam a otimizar o [Configuração do cache da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=pt-BR) e aprimorar o desempenho do site.
+Para obter insights, como a taxa de acertos do cache e os principais URLs dos tipos de cache MISS e PASS, analise o arquivo de log de CDN baixado. Esses insights ajudam a otimizar o [Configuração do cache da CDN](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) e aprimorar o desempenho do site.
 
-Para analisar os logs CDN, este artigo apresenta duas opções: a **Elasticsearch, Logstash e Kibana (ELK)** [ferramentas do painel](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e [Jupyter Notebook](https://jupyter.org/). A ferramenta de painel ELK pode ser instalada localmente em seu notebook, enquanto a ferramenta Jupityr Notebook pode ser acessada remotamente [como parte do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) sem instalar software adicional, para quem licenciou o Adobe Experience Platform.
+Para analisar os logs de CDN, este tutorial apresenta três opções:
 
+1. **Elasticsearch, Logstash e Kibana (ELK)**: A variável [Ferramentas de painéis ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) O pode ser instalado localmente.
+1. **Splunk**: A variável [Ferramentas do painel do Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) requer acesso ao Splunk e [Encaminhamento de log do AEM CS habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) para assimilar os logs do CDN.
+1. [Jupyter Notebook](https://jupyter.org/): ele pode ser acessado remotamente como parte de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sem instalar software adicional, para clientes que licenciaram o Adobe Experience Platform.
 
 ### Opção 1: usar ferramentas de painel ELK
 
 A variável [Pilha ELK](https://www.elastic.co/elastic-stack) O é um conjunto de ferramentas que fornecem uma solução escalável para pesquisar, analisar e visualizar os dados. Consiste em Elasticsearch, Logstash e Kibana.
 
-Para identificar os principais detalhes, vamos usar o [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) projeto de ferramentas do painel. Este projeto fornece um contêiner Docker da pilha ELK e um painel Kibana pré-configurado para analisar os logs CDN.
+Para identificar os principais detalhes, vamos usar o [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projeto. Este projeto fornece um contêiner Docker da pilha ELK e um painel Kibana pré-configurado para analisar os logs CDN.
 
-1. Siga as etapas de [Como configurar o container ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool#how-to-set-up-the-elk-docker-container) e certifique-se de importar o **Taxa de acertos do cache do CDN** Painel Kibana.
+1. Siga as etapas de [Como configurar o contêiner ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) e certifique-se de importar o **Taxa de acertos do cache do CDN** Painel Kibana.
 
 1. Para identificar a taxa de acertos do cache do CDN e os URLs principais, siga estas etapas:
 
-   1. Copie os arquivos de log da CDN baixados na pasta específica do ambiente.
+   1. Copie os arquivos de log da CDN baixada na pasta de logs específicos do ambiente, por exemplo, `ELK/logs/stage`.
 
-   1. Abra o **Taxa de acertos do cache do CDN** painel clicando no canto superior esquerdo Menu de navegação > Analytics > Painel > Taxa de ocorrência do cache do CDN.
+   1. Abra o **Taxa de acertos do cache do CDN** clicando no canto superior esquerdo _Menu Navegação > Analytics > Painel > Taxa de acertos do cache do CDN_.
 
       ![Taxa de acertos do cache CDN - Painel Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -126,11 +130,22 @@ Para filtrar os logs assimilados por nome de host, siga as etapas abaixo:
 
 Da mesma forma, adicione mais filtros ao painel com base nos requisitos de análise.
 
-### Opção 2: usar o Jupyter Notebook
+### Opção 2: usar a ferramenta Painel do Splunk
+
+A variável [Splunk](https://www.splunk.com/) O é uma ferramenta de análise de log popular que ajuda a agregar, analisar logs e criar visualizações para fins de monitoramento e solução de problemas.
+
+Para identificar os principais detalhes, vamos usar o [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projeto. Este projeto fornece um painel do Splunk para analisar os logs do CDN.
+
+1. Siga as etapas de [Painéis do Splunk para a Análise de Log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) e certifique-se de importar o **Taxa de acertos do cache do CDN** Painel do Splunk.
+1. Se necessário, atualize o _Índice, Tipo de Origem e outros_ filtrar valores no painel do Splunk.
+
+   ![Painel do Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+### Opção 3: usar o Jupyter Notebook
 
 Para aqueles que preferem não instalar o software localmente (ou seja, a ferramenta do painel ELK da seção anterior), há outra opção, mas ela requer uma licença para a Adobe Experience Platform.
 
-A variável [Jupyter Notebook](https://jupyter.org/) O é um aplicativo web de código aberto que permite criar documentos com código, texto e visualização. Ele é usado para transformação de dados, visualização e modelagem estatística. Ele pode ser acessado remotamente [como parte do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
+A variável [Jupyter Notebook](https://jupyter.org/) O é um aplicativo web de código aberto que permite criar documentos com código, texto e visualização. Ele é usado para transformação de dados, visualização e modelagem estatística. Ele pode ser acessado remotamente [como parte do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Baixando o arquivo de Bloco de Anotações Python Interativo
 
@@ -181,6 +196,6 @@ Você pode aprimorar o Jupyter Notebook para analisar os logs de CDN com base em
 
 Depois de analisar os logs de CDN, você pode otimizar a configuração do cache de CDN para melhorar o desempenho do site. A prática recomendada do AEM é ter uma taxa de acerto de cache de 90% ou mais.
 
-Para obter mais informações, consulte [Otimizar configuração do cache da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#caching).
+Para obter mais informações, consulte [Otimizar configuração do cache da CDN](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 O projeto WKND do AEM tem uma configuração de CDN de referência. Para obter mais informações, consulte [Configuração da CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) do `wknd.vhost` arquivo.

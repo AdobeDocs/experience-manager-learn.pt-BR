@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1968'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Vamos entender as proteções de DDoS padrão para o seu site de AEM:
 - **Bloqueio:** O CDN de Adobe bloqueia o tráfego para a origem se ele exceder uma taxa definida por Adobe de um endereço IP específico, por PoP (Ponto de Presença) de CDN.
 - **Alerta:** O Centro de Ações envia uma notificação de alerta de pico de tráfego na origem quando o tráfego excede uma determinada taxa. Esse alerta é disparado quando o tráfego para qualquer PoP de CDN excede um _definido por Adobe_ taxa de solicitação por endereço IP. Consulte [Alertas de regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para obter mais detalhes.
 
-Essas proteções integradas devem ser consideradas uma linha de base para a capacidade de uma organização de minimizar o impacto no desempenho de um ataque de DDoS. Como cada site tem características de desempenho diferentes e pode observar degradação de desempenho antes que o limite de taxa definido pelo Adobe seja atingido, é recomendável estender as proteções padrão por meio do _configuração do cliente_.
+Essas proteções integradas devem ser consideradas uma linha de base para a capacidade de uma organização de minimizar o impacto no desempenho de um ataque de DDoS. Como cada site tem características de desempenho diferentes e pode observar que a degradação de desempenho antes do limite de taxa definido pelo Adobe é atendida, é recomendável estender as proteções padrão por meio do _configuração do cliente_.
 
 Vamos analisar algumas medidas adicionais e recomendadas que os clientes podem tomar para proteger seus sites contra ataques de DDoS:
 
@@ -76,14 +76,20 @@ Adobe envia um pico de tráfego no alerta de origem como um [Notificação da Ce
 
 ## Análise de padrões de tráfego {#analyze-traffic}
 
-Se o site já estiver ativo, você poderá analisar os padrões de tráfego usando logs CDN e um dos seguintes métodos:
+Se o site já estiver ativo, você poderá analisar os padrões de tráfego usando logs CDN e painéis fornecidos pelo Adobe.
+
+- **Painel de tráfego CDN**: fornece insights sobre o tráfego por meio da taxa de solicitação de CDN e Origem, taxas de erro 4xx e 5xx e solicitações não armazenadas em cache. Também fornece o máximo de solicitações CND e Origin por segundo por endereço IP de cliente e mais insights para otimizar as configurações de CDN.
+
+- **Taxa de acertos do cache do CDN**: fornece insights sobre a taxa de acertos do cache total e a contagem total de solicitações por status HIT, PASS e MISS. Também fornece os principais URLs de HIT, PASS e MISS.
+
+Configurar as ferramentas do painel usando _uma das seguintes opções_:
 
 ### ELK - configurando ferramentas de painel de controle
 
 A variável **Elasticsearch, Logstash e Kibana (ELK)** As ferramentas de painel fornecidas pelo Adobe podem ser usadas para analisar os logs de CDN. Essa ferramenta inclui um painel que visualiza os padrões de tráfego, facilitando a determinação dos limites ideais para suas regras de filtro de tráfego de limite de taxa.
 
-- Clonar o [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositório GitHub.
-- Configure a ferramenta seguindo o método [Como configurar o contêiner ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container) etapas.
+- Clonar o [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositório GitHub.
+- Configure a ferramenta seguindo o método [Como configurar o contêiner ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) etapas.
 - Como parte da configuração, importe o `traffic-filter-rules-analysis-dashboard.ndjson` arquivo para visualizar os dados. A variável _Tráfego CDN_ O painel inclui visualizações que mostram o número máximo de solicitações por IP/POP na borda e na origem do CDN.
 - No [Cloud Manager](https://my.cloudmanager.adobe.com/)do _Ambientes_ , baixe os logs de CDN do serviço de publicação do AEMCS.
 
@@ -95,9 +101,9 @@ A variável **Elasticsearch, Logstash e Kibana (ELK)** As ferramentas de painel 
 
 ### Splunk - configurando as ferramentas do painel
 
-Clientes que têm [Encaminhamento do Log do Splunk habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) O pode criar um novo painel para analisar os padrões de tráfego. O arquivo XML a seguir ajuda a criar um painel no Splunk:
+Clientes que têm [Encaminhamento do Log do Splunk habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) O pode criar novos painéis para analisar os padrões de tráfego.
 
-- [CDN - Painel de tráfego](./assets/traffic-dashboard.xml): esse painel fornece insights sobre os padrões de tráfego na borda e na origem do CDN. Inclui visualizações que mostram o número máximo de solicitações por IP/POP na borda e na origem do CDN.
+Para criar painéis no Splunk, siga [Painéis do Splunk para a Análise de Log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) etapas.
 
 ### Examinando dados
 

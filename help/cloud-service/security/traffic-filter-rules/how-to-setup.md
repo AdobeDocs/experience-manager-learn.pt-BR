@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '575'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Veja um exemplo de `cdn.yaml` arquivo no projeto de sites WKND de guias do AEM:
 
 ### Implantar regras por meio do Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Para implantar regras, siga estas etapas:
+Para implantar as regras, siga estas etapas:
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -95,7 +95,7 @@ Para implantar regras, siga estas etapas:
 
 ### Testar regras gerando tráfego
 
-Para testar as regras, há várias ferramentas de terceiros disponíveis e sua organização pode ter uma ferramenta preferencial. Para fins de demonstração, vamos usar as seguintes ferramentas:
+Para testar as regras, há várias ferramentas de terceiros disponíveis e sua organização pode ter uma ferramenta preferencial. Para o propósito da demonstração, vamos usar as seguintes ferramentas:
 
 - [Curl](https://curl.se/) para testes básicos, como chamar um URL e verificar o código de resposta.
 
@@ -119,9 +119,11 @@ Para testar as regras, há várias ferramentas de terceiros disponíveis e sua o
 
 ### Analisar resultados usando a ferramenta do painel
 
-Depois de criar, implantar e testar as regras, é possível analisar os resultados usando **Elasticsearch, Logstash e Kibana (ELK)** ferramentas do painel. Ele pode analisar os logs de CDN do AEM CS, permitindo visualizar os resultados na forma de vários gráficos e tabelas.
+Depois de criar, implantar e testar as regras, é possível analisar os resultados usando **CDN** logs e **AEMCS-CDN-Log-Analysis-Tooling**. A ferramenta fornece um conjunto de painéis para visualizar os resultados para a pilha Splunk e ELK (Elasticsearch, Logstash e Kibana).
 
-As ferramentas do painel de controle podem ser clonadas diretamente do [Repositório GitHub da AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e siga as etapas para instalar e carregar o **Regras de filtro de tráfego (incluindo WAF)** painel.
+A ferramenta pode ser clonada a partir do [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositório GitHub. Em seguida, siga as instruções para instalar e carregar o **Painel de tráfego CDN** e **Painel WAF** painéis para sua ferramenta de observabilidade preferida.
+
+Neste tutorial, vamos usar a pilha ELK. Siga as [Contêiner ELK Docker para análise de log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instruções para configurar a pilha de ELK.
 
 - Depois de carregar o painel de amostra, a página de ferramenta do painel Elástico deve ser semelhante ao seguinte:
 

@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Saiba mais sobre as práticas recomendadas para regras de filtro de tráfego, in
 - Ao declarar e validar regras, sempre comece com `action` type `log` para garantir que a regra não esteja bloqueando o tráfego legítimo.
 - Para certas regras, a transição de `log` para `block` deve basear-se exclusivamente na análise de um volume suficiente de tráfego no local.
 - Introduza regras de forma incremental e considere envolver suas equipes de teste (controle de qualidade, desempenho, teste de penetração) no processo.
-- Analise o impacto das regras regularmente usando o [ferramentas do painel](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Dependendo do volume de tráfego do site, a análise pode ser feita diariamente, semanalmente ou mensalmente.
+- Analise o impacto das regras regularmente usando o [ferramentas do painel](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Dependendo do volume de tráfego do site, a análise pode ser feita diariamente, semanalmente ou mensalmente.
 - Para bloquear o tráfego mal-intencionado que você possa saber após a análise, adicione regras adicionais. Por exemplo, determinados IPs que têm atacado seu site.
 - A criação, a implantação e a análise de regras devem ser um processo contínuo e iterativo. Não é uma atividade única.
 
@@ -91,7 +91,7 @@ data:
 
 ## Práticas recomendadas para regras do WAF
 
-Depois que o WAF é licenciado e ativado para o seu programa, os sinalizadores de correspondência de tráfego do WAF aparecem em gráficos e registros de solicitações, mesmo que você não os tenha declarado em uma regra. Dessa forma, você sempre estará ciente do tráfego mal-intencionado potencialmente novo e poderá criar regras conforme necessário. Observe os sinalizadores do WAF que não são refletidos nas regras declaradas e considere declará-los.
+Depois que o WAF é licenciado e ativado para o seu programa, os sinalizadores de correspondência de tráfego do WAF aparecem em gráficos e registros de solicitações, mesmo que você não os tenha declarado em uma regra. Portanto, você está sempre ciente do tráfego mal-intencionado potencialmente novo e pode criar regras conforme necessário. Observe os sinalizadores do WAF que não são refletidos nas regras declaradas e considere declará-los.
 
 Considere as regras do WAF abaixo para o seu projeto AEM. No entanto, os valores desejados para `action` e `wafFlags` A propriedade deve ser determinada em colaboração com a equipe de segurança.
 
