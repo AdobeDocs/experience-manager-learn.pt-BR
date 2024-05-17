@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,9 @@ Este artigo supõe que você tenha [formulário adaptável configurado com êxit
 * Configure a etapa invocar FDM para usar o modelo de dados de formulário criado na etapa anterior.
 * ![associate-fdm](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* Observe o uso da notação de pontos JSON. Os dados enviados estão no formato abaixo e estamos extraindo o objeto ContactUS dos dados enviados.
+## Formulário adaptável baseado em componentes principais
+
+Os dados enviados estão no formato a seguir. Precisamos extrair o objeto ContactUS usando a notação de pontos na etapa de fluxo de trabalho invocar serviço de modelo de dados de formulário, conforme mostrado na captura de tela
 
 ```json
 {
@@ -54,6 +55,41 @@ Este artigo supõe que você tenha [formulário adaptável configurado com êxit
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## Formulário adaptável baseado em componentes de base
+
+Os dados enviados estão no formato a seguir. Extraia o objeto JSON ContactUS usando a notação de pontos na etapa de fluxo de trabalho Chamar serviço de modelo de dados de formulário
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![foundation-based-form](assets/foundation-based-form.png)
 
 ## Configurar o formulário adaptável para acionar o fluxo de trabalho do AEM
 
