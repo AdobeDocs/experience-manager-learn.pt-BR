@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-c
 
 Para organizações que utilizam [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) e que ativaram o encaminhamento de logs do AEMCS para as instâncias do Splunk podem importar rapidamente os painéis pré-criados. Essa configuração facilita a análise de registro acelerada, fornecendo insights acionáveis para otimizar implementações de AEM e mitigar ameaças à segurança, como ataques de DOS.
 
-Você pode começar a usar o [Painéis do Splunk para a Análise de Log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guia.
+Você pode começar a usar o [Painéis do Splunk para a Análise de Log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guia.
 
 
 ## Integração de ELK
