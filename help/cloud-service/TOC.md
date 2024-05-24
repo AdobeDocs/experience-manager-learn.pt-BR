@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 211cacf02a73be9e32af91bb6ee5f0d67de56ee0
+source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1209'
 ht-degree: 16%
 
 ---
@@ -261,6 +261,8 @@ ht-degree: 16%
       + [Mesclar dados com modelo](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Testar a solução](./forms/doc-gen-forms-cs/test.md)
       + [Desafio](./forms/doc-gen-forms-cs/challenge.md)
+   + Uso da API DocAssurance{#doc-assurance-api}
++[Exemplos de snippets de código](./forms/doc-assurance-api/using-doc-assurance-api.md)
    + Geração de documentos usando a API em lote{#formscs-batch-api}
       + [Introdução](./forms/formscs-batch-api/introduction.md)
       + [Configurar armazenamento do Azure](./forms/formscs-batch-api/configure-azure-storage.md)
