@@ -11,7 +11,7 @@ last-substantial-update: 2021-01-11T00:00:00Z
 doc-type: Tutorial
 exl-id: 066693b7-2b87-45e8-93ec-8bd09a7c263e
 duration: 777
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: dc40b8e022477d2b1d8f0ffe3b5e8bcf13be30b3
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -102,7 +102,7 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
 
    ```js
    function teaserShownHandler(event) {
-       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/teaser"});
+       var dataObject = getDataObjectHelper(event, {"@type": "wknd/components/carousel/item"});
        if(dataObject != null) {
            console.log("Teaser Shown: " + dataObject['dc:title']);
            console.log(dataObject);
@@ -110,7 +110,7 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
    }
    ```
 
-   A variável `teaserShownHandler` chama a função `getDataObjectHelper` e passa um filtro de `wknd/components/teaser` como o `@type` para filtrar eventos acionados por outros componentes.
+   A variável `teaserShownHandler` chama a função `getDataObjectHelper` e passa um filtro de `wknd/components/carousel/item` como o `@type` para filtrar eventos acionados por outros componentes.
 
 1. Em seguida, envie um ouvinte de eventos para a camada de dados para ouvir o `cmp:show` evento.
 
