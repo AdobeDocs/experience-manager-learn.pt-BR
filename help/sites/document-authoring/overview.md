@@ -11,9 +11,9 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
+source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '1047'
 ht-degree: 7%
 
 ---
@@ -280,6 +280,38 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
         </div>
       </div>
     </div>
+    <!-- Author Authentication -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Author Authentication" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="author-authentication.md" title="Autenticação do autor"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                alt="Autenticação do autor">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="author-authentication.md" title="Autenticação do autor">Autenticação do autor</a>
+            </p>
+            <p class="is-size-6">Saiba como configurar a autenticação do autor.</p>
+            <a href="author-authentication.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
 </div>
 
 ## Vídeos explicativos
@@ -541,6 +573,139 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
         </div>
       </div>
     </div>
+    <!-- Dynamic Media in Edge Delivery Services -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Dynamic Media" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
+                alt="Dynamic Media">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
+            </p>
+            <p class="is-size-6">Saiba como usar o Dynamic Media para entrega otimizada de imagens.</p>
+            <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- Site Migration using the Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Site migration using Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/migration-using-importer.md" title="Migração de site usando o Importador"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                alt="Migração de site usando o Importador">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/migration-using-importer.md" title="Migração de site usando o Importador">Migração de site usando o Importador</a>
+            </p>
+            <p class="is-size-6">Saiba como migrar sites para o Edge Delivery Services usando a ferramenta Importador de AEM.</p>
+            <a href="./how-to/migration-using-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>     
+    <!-- Customizing the Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Customizing the Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/customizing-importer.md" title="Personalização do importador"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                alt="Personalização do importador">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">3 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/customizing-importer.md" title="Personalização do importador">Personalização do importador</a>
+            </p>
+            <p class="is-size-6">Saiba como personalizar a ferramenta Importador de AEM para migração de site.</p>
+            <a href="./how-to/customizing-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bulk importing using Importer -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Bulk importing using the Importer" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/bulk-importing-using-importer.md" title="Importação em massa usando o Importador"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                alt="Importação em massa usando o Importador">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">3 minutos</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importação em massa usando o Importador">Importação em massa usando o Importador</a>
+            </p>
+            <p class="is-size-6">Saiba como importar páginas da Web em massa usando a ferramenta Importador de AEM durante a migração do site.</p>
+            <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Assista ao vídeo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>                
+  </div>
+
+### Gerar vídeos de variações
+
+<div class="columns is-multiline">
     <!-- Intro Generate Variation -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Generate Variations" tabindex="7">
@@ -956,6 +1121,5 @@ Revise o [documentação](https://experienceleague.adobe.com/docs/experience-man
           </div>
         </div>
       </div>
-    </div>                                
+    </div>   
   </div>
-

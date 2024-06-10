@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: caee59e03da7905b1d57b4325e06501d46d073e6
+source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '547'
 ht-degree: 17%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 17%
    + [Redirecionamentos](document-authoring/redirects.md)
    + [Metadados em massa](document-authoring/bulk-metadata.md)
    + [Metadados da página](document-authoring/page-metadata.md)
+   + [Autenticação do autor](document-authoring/author-authentication.md)
    + Como{#how-to}
       + [Auditoria de documentos](./document-authoring/how-to/document-audit.md)
       + [Permissões de documento](./document-authoring/how-to/document-permissions.md)
@@ -36,6 +37,10 @@ ht-degree: 17%
       + [Texto alternativo da imagem](./document-authoring/how-to/image-alt-text.md)
       + [Impedir indexação do mecanismo de pesquisa](./document-authoring/how-to/no-index.md)
       + [Navegação responsiva](document-authoring/how-to/responsive-navigation.md)
+      + [Dynamic Media](./document-authoring/how-to/using-dynamic-media.md)
+      + [Migração de site usando o Importador](./document-authoring/how-to/migration-using-importer.md)
+      + [Personalização do importador](./document-authoring/how-to/customizing-importer.md)
+      + [Importação em massa usando o Importador](./document-authoring/how-to/bulk-importing-using-importer.md)
       + Gerar variações{#generate-variations}
          + [Visão geral](./document-authoring/how-to/generate-variations/overview.md)
          + [Configurar Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
