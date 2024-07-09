@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 16%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 16%
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositório de conteúdo Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Serviços de Autor e Publicação](./underlying-technology/introduction-author-publish.md)
+   + [Serviços de Autor e Publish](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
    + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
@@ -62,13 +62,13 @@ ht-degree: 16%
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desenvolvimento{#developing}
    + Extensibilidade{#extensibility}
-      + Construtor de aplicativos{#app-builder}
+      + App Builder{#app-builder}
          + [Gerar token de acesso JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Gerar token de acesso de servidor para servidor](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Verificação de webhook do Github](./developing/extensibility/app-builder/github-webhook-verification.md)
       + Extensibilidade da interface{#ui}
          + [Visão geral](./developing/extensibility/ui/overview.md)
-         + [Projeto de console do Adobe Developer](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [Projeto do Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Inicializar aplicativo](./developing/extensibility/ui/app-initialization.md)
          + [Registrar extensão](./developing/extensibility/ui/extension-registration.md)
          + [Modal](./developing/extensibility/ui/modal.md)
@@ -141,7 +141,7 @@ ht-degree: 16%
    + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Armazenamento em cache{#caching}
    + [Visão geral](./caching/overview.md)
-   + [Serviço de publicação do AEM](./caching/publish.md)
+   + [Serviço de Publish para AEM](./caching/publish.md)
    + [Serviço de Autor do AEM](./caching/author.md)
    + [Análise de Taxa de Acertos do Cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Como{#how-to}
@@ -193,7 +193,7 @@ ht-degree: 16%
       + [BPA e CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [Ferramentas de Modernização do AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernização do repositório](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Microsserviços do Asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Microsserviços do Asset Compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Pesquisa e indexação](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migração de conteúdo {#content-migration}
@@ -212,11 +212,11 @@ ht-degree: 16%
       + [Ferramenta Transferência de conteúdo](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [Ferramentas de refatoração de código](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Modernizador do repositório de código](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
-      + [Conversor do Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
+      + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Conversor de índice](./migration/cloud-acceleration-manager/index-converter.md)
       + [Ferramenta Migração de fluxo de trabalho de ativos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegação no Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
-      + [Utilização do Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
+      + [Uso do Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + [Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Desenvolvimento do Forms as a Cloud Service{#developing-for-cloud-service}
@@ -326,7 +326,7 @@ ht-degree: 16%
       + [Extrair anexos de formulário de dados enviados](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integrar ao Microsoft Dynamics{#formscs-dynamics-crm}
       + [Criar Aplicativo do Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
-      + [Configurar fonte de dados](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Configurar o Data Source](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Criar modelo de dados do formulário](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Criar formulário adaptável](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrar ao Salesforce{#integrate-with-salesforce}
@@ -342,14 +342,14 @@ ht-degree: 16%
       + [Armazenar dados de formulário no sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Preencher formulário com dados da lista do SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Inserir dados na lista do SharePoint usando o fluxo de trabalho](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Extensibilidade do Asset compute{#asset-compute}
++ Extensibilidade do Asset Compute{#asset-compute}
    + [Visão geral](./asset-compute/overview.md)
    + Configurar{#set-up}
       + [Provisionamento de conta e serviço](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente de desenvolvimento local](./asset-compute/set-up/development-environment.md)
-      + [Construtor de aplicativos](./asset-compute/set-up/app-builder.md)
+      + [App Builder](./asset-compute/set-up/app-builder.md)
    + Desenvolver{#develop}
-      + [Criar um projeto do Asset compute](./asset-compute/develop/project.md)
+      + [Criar um projeto do Asset Compute](./asset-compute/develop/project.md)
       + [Configurar variáveis de ambiente](./asset-compute/develop/environment-variables.md)
       + [Configurar o manifest.yml](./asset-compute/develop/manifest.md)
       + [Desenvolver um trabalhador](./asset-compute/develop/worker.md)
@@ -385,12 +385,12 @@ ht-degree: 16%
       + [CDN AEM Parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [Arquivos de registro do AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
       + [Tokens de logon](./expert-resources/cloud-5/cloud5-getting-login-token-integrations.md)
-      + [Dispatcher da nuvem](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
+      + [Cloud Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-cloud.md)
       + [Migração 1](./expert-resources/cloud-5/cloud5-aem-content-migration-part-1.md)
       + [Migração 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
-      + [Validador do Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
+      + [Dispatcher Validator](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [Pesquisa e indexação](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
-      + [Construtor de aplicativos Adobe](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
+      + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
       + Temporada 2{#season-2}
          + [Fragmentos](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Modernizador do repositório](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
@@ -405,9 +405,8 @@ ht-degree: 16%
       + Temporada 3{#season-3}
          + [Pesquisa de terceiros](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Monitoramento do usuário real (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
-         + [Explorador de Monitoramento de Usuário Real (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum-explorer.md)
-         + [Trabalhadores de borda](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Publicar, cancelar publicação de eventos no Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Trabalhadores da Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
+         + [Publish, cancelar publicação de eventos no Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Índices de consulta e fórmulas do Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Traga sua própria CDN do Cloud Flare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Integrar o AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
