@@ -12,10 +12,10 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,22 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
 ## Exportação de metadados {#metadata-export}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+
+>[!TIP]
+>
+> Ao abrir o arquivo CSV de exportação de metadados no Excel, use o [Importador do Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) em vez de clicar duas vezes no arquivo para evitar problemas com arquivos CSV codificados em UTF-8.
+>
+> Para abrir o arquivo CSV de exportação de metadados no Excel, siga estas etapas:
+> 
+> 1. Abrir o Microsoft Excel
+> 1. Selecionar __Arquivo > Novo__ para criar uma planilha vazia
+> 1. Com a planilha vazia aberta, selecione __Arquivo > Importar__
+> 1. Selecionar __Texto__ e clique em __Importar__
+> 1. Selecione o arquivo CSV exportado no sistema de arquivos e clique em __Obter dados__
+> 1. Na etapa 1 do assistente de importação, selecione __Delimitado__ e defina __Origem do arquivo__ para __Unicode (UTF-8)__ e clique em __Próxima__
+> 1. Na etapa 2, defina o __Delimitadores__ para __Vírgula__ e clique em __Próxima__
+> 1. Na etapa 3, deixe a variável __Formato de dados da coluna__ como está e clique em __Concluir__
+> 1. Selecionar __Importar__ para adicionar os dados à planilha
 
 ## Importação de metadados {#metadata-import}
 
