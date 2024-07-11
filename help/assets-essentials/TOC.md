@@ -8,10 +8,10 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
+source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 27%
+source-wordcount: '68'
+ht-degree: 20%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 27%
 
 + [Introdução](./getting-started.md)
 
-+ Básico{#basics}
-   + [Gerenciar](basics/managing.md)
++ Noções básicas{#basics}
+   + [Gerenciamento](basics/managing.md)
    + [Usar](basics/using.md)
    + [Criação de conteúdo](basics/creating.md)
    + [Acesso rápido](basics/quick-access.md)
@@ -34,6 +34,7 @@ ht-degree: 27%
    + [Meu espaço de trabalho](configuring/my-workspace.md)
    + [Formulários de metadados](configuring/metadata-forms.md)
    + [Gerenciamento de permissões](configuring/permissions-management.md)
+   + [Gerenciamento de taxonomia](configuring/taxonomy-management.md)
 
 + [integração de Creative Cloud](integrations/creative-cloud.md)
 
@@ -42,7 +43,7 @@ ht-degree: 27%
    + [Configuração](./integrations/workfront/configure.md)
    + [Mapeamento de metadados](./integrations/workfront/map-metadata.md)
    + [Envio de documentos e vinculação de ativos](./integrations/workfront/link-send.md)
-   + [Histórico de versão](./integrations/workfront/versions.md)
+   + [Histórico da versão](./integrations/workfront/versions.md)
 
 + [Integração do Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=pt-BR){target=_blank}
 
