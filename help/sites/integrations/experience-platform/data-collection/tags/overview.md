@@ -33,15 +33,15 @@ As tags são a próxima geração da tecnologia de gerenciamento de tags da Adob
 
 Os itens a seguir são obrigatórios ao integrar as Tags da coleção de dados do Experience Platform.
 
-+ Acesso do administrador do AEM ao ambiente as a Cloud Service do AEM
-+ Um site de referência como [WKND](https://github.com/adobe/aem-guides-wknd) implantado nela.
++ Acesso do administrador do AEM ao ambiente do AEM as a Cloud Service
++ Um site de referência como [WKND](https://github.com/adobe/aem-guides-wknd) foi implantado nele.
 + Acesso à solução de coleta de dados da Adobe Experience Platform
-+ Acesso de administrador do sistema a [Console do Adobe Developer](https://developer.adobe.com/developer-console/)
++ Acesso de Administrador do Sistema ao [Adobe Developer Console](https://developer.adobe.com/developer-console/)
 
 
 ## Etapas de alto nível
 
-+ Na Coleção de dados do Adobe Experience Platform, crie uma propriedade de tag e edite-a para _Adicionar regra_. Depois _Adicionar biblioteca_, selecione a regra recém-adicionada, aprove e publique-a.
++ Na Coleção de dados da Adobe Experience Platform, crie uma propriedade de Marca e edite-a para _Adicionar regra_. Em seguida, _Adicionar biblioteca_, selecione a regra recém-adicionada, aprove e publique-a.
 + Conecte AEM e tags usando a configuração IMS existente (ou nova)
 + No AEM, crie uma configuração de serviço na nuvem de tags, aplique-a a um site existente e, por fim, verifique se a propriedade Tags e suas bibliotecas são carregadas no site Publicado ou do Autor.
 
@@ -51,6 +51,6 @@ Os itens a seguir são obrigatórios ao integrar as Tags da coleção de dados d
 
 ## Recursos adicionais {#additional-resources}
 
-+ [Integrações de Experience Platform com aplicativos de Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
++ [Integrações de Experience Platform com aplicativos Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
 + [Visão geral das tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementar o Experience Cloud em sites com tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Implementando o Experience Cloud em sites com marcas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)

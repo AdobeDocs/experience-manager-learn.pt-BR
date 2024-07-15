@@ -26,9 +26,9 @@ Este vídeo mostra como fornecer estilos personalizados para a funcionalidade Di
 
 >[!NOTE]
 >
->Este vídeo adiciona CSS personalizado à biblioteca de cliente we.Retail, em que, conforme essas alterações, devem ser feitas no projeto AEM Sites do personalizador; no código de exemplo abaixo: `my-project`.
+>Este vídeo adiciona CSS personalizado à biblioteca do cliente we.Retail, em que, conforme essas alterações, devem ser feitas ao projeto AEM Sites do personalizador; no código de exemplo abaixo: `my-project`.
 
-A diferença de página do AEM obtém o CSS OOTB por meio de uma carga direta de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+A diferença de página do AEM obtém o CSS OOTB por uma carga direta de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 Devido a essa carga direta de CSS em vez de usar uma categoria de biblioteca do cliente, precisamos encontrar outro ponto de injeção para os estilos personalizados, e esse ponto de injeção personalizado é a clientlib de criação do projeto.
 
@@ -36,7 +36,7 @@ Isso tem a vantagem de permitir que essas substituições de estilo personalizad
 
 ### Preparar a clientlib de criação {#prepare-the-authoring-clientlib}
 
-Assegurar a existência de uma `authoring` clientlib para seu projeto em `/apps/my-project/clientlib/authoring.`
+Verifique a existência de uma clientlib `authoring` para seu projeto em `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ Assegurar a existência de uma `authoring` clientlib para seu projeto em `/apps/
 
 ### Fornecer o CSS personalizado {#provide-the-custom-css}
 
-Adicionar ao do projeto `authoring` clientlib a `css.txt` que aponta para menos arquivos que fornecerão os estilos de substituição. [Menos](https://lesscss.org/) é preferida devido às suas muitas características convenientes, incluindo empacotamento de classes que é aproveitado neste exemplo.
+Adicione ao clientlib do projeto `authoring` um `css.txt` que aponte para menos arquivo que fornecerá os estilos de substituição. [Less](https://lesscss.org/) é preferido devido a seus muitos recursos convenientes, incluindo quebra de classe que é utilizada neste exemplo.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Crie o `less` arquivo que contém as substituições de estilo em `/apps/my-project/clientlibs/authoring/css/htmldiff.less`e fornecem os estilos de sobreposição conforme necessário.
+Crie o arquivo `less` que contém as substituições de estilo em `/apps/my-project/clientlibs/authoring/css/htmldiff.less` e forneça os estilos de substituição conforme necessário.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,9 +103,9 @@ body {
 
 ### Inclua o CSS de clientlib de criação por meio do componente de página {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Incluir a categoria clientlibs de criação nas páginas base do projeto `/apps/my-project/components/structure/page/customheaderlibs.html` diretamente antes do `</head>` para garantir que os estilos sejam carregados.
+Inclua a categoria clientlibs de criação no `/apps/my-project/components/structure/page/customheaderlibs.html` da página base do projeto diretamente antes da tag `</head>` para garantir que os estilos sejam carregados.
 
-Esses estilos devem ser limitados a [!UICONTROL Editar] e [!UICONTROL pré-visualização] Modos WCM.
+Esses estilos devem ser limitados aos modos WCM [!UICONTROL Editar] e [!UICONTROL visualizar].
 
 ```xml
 <head>
@@ -121,6 +121,6 @@ O resultado final de uma página de comparação com os estilos acima aplicados 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Baixe o site de amostra we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Uso de bibliotecas de clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Baixar o site de exemplo we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
+* [Usando Bibliotecas de Clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Menos documentação de CSS](https://lesscss.org/)

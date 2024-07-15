@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Como configurar regras de Filtro de tráfego incluindo regras WAF
 
-Saiba mais **como configurar** regras de filtro de tráfego, incluindo regras WAF. Leia sobre como criar, implantar, testar e analisar resultados.
+Saiba **como configurar** regras de filtro de tráfego, incluindo regras WAF. Leia sobre como criar, implantar, testar e analisar resultados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -29,20 +29,20 @@ Saiba mais **como configurar** regras de filtro de tráfego, incluindo regras WA
 
 O processo de configuração envolve o seguinte:
 
-- _criação de regras_ com uma estrutura de projeto AEM apropriada e um arquivo de configuração.
-- _implantação de regras_ usando o pipeline de configuração do Adobe Cloud Manager.
-- _regras de teste_ usar várias ferramentas para gerar tráfego.
-- _análise dos resultados_ usar logs de CDN e ferramentas de painel do AEM CS.
+- _criando regras_ com uma estrutura de projeto AEM apropriada e um arquivo de configuração.
+- _implantando regras_ usando o pipeline de configuração do Adobe Cloud Manager.
+- _testando regras_ usando várias ferramentas para gerar tráfego.
+- _analisando os resultados_ usando logs de CDN e ferramentas de painel do AEMCS.
 
 ### Criar regras no projeto AEM
 
 Para criar regras, siga estas etapas:
 
-1. No nível superior do projeto AEM, crie uma pasta `config`.
+1. No nível superior do seu projeto AEM, crie uma pasta `config`.
 
-1. No prazo de `config` , crie um novo arquivo chamado `cdn.yaml`.
+1. Na pasta `config`, crie um novo arquivo chamado `cdn.yaml`.
 
-1. Adicione os seguintes metadados à `cdn.yaml` arquivo:
+1. Adicionar os seguintes metadados ao arquivo `cdn.yaml`:
 
 ```yaml
 kind: CDN
@@ -57,7 +57,7 @@ data:
     rules:
 ```
 
-Veja um exemplo de `cdn.yaml` arquivo no projeto de sites WKND de guias do AEM:
+Veja um exemplo do arquivo `cdn.yaml` no Projeto do AEM Guides WKND Sites:
 
 ![Arquivo e pasta de regras do projeto AEM WKND](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
@@ -65,41 +65,41 @@ Veja um exemplo de `cdn.yaml` arquivo no projeto de sites WKND de guias do AEM:
 
 Para implantar as regras, siga estas etapas:
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. Navegue até a _Pipelines_ do _Visão geral do programa_ e clique no link **+Adicionar** e selecione o tipo de pipeline desejado.
+1. Navegue até o cartão _Pipelines_ da página _Visão geral do programa_, clique no botão **+Adicionar** e selecione o tipo de pipeline desejado.
 
    ![Cartão Pipelines do Cloud Manager](./assets/cloud-manager-pipelines-card.png)
 
-   No exemplo acima, para fins de demonstração _Adicionar pipeline de não produção_ está selecionado desde que um ambiente dev é usado.
+   No exemplo acima, para fins de demonstração, _Adicionar pipeline de não produção_ está selecionado, pois um ambiente dev é usado.
 
-1. No _Adicionar pipeline de não produção_ escolha e insira os seguintes detalhes:
+1. Na caixa de diálogo _Adicionar pipeline de não produção_, escolha e insira os seguintes detalhes:
 
    1. Etapa de configuração:
 
-      - **Tipo**: Pipeline de implantação
-      - **Nome do pipeline**: Dev-Config
+      - **Tipo**: pipeline de implantação
+      - **Nome Do Pipeline**: Dev-Config
 
-      ![Caixa de diálogo de configuração do pipeline do Cloud Manager](./assets/cloud-manager-config-pipeline-step1-dialog.png)
+      ![Caixa de diálogo Pipeline de configuração do Cloud Manager](./assets/cloud-manager-config-pipeline-step1-dialog.png)
 
-   2. Etapa Código-fonte:
+   2. Etapa do Source Code:
 
-      - **Código para implantação**: Implantação direcionada
+      - **Código para implantação**: implantação direcionada
       - **Incluir**: Configuração
-      - **Ambiente de implantação**: Nome do ambiente, por exemplo, wknd-program-dev.
+      - **Ambiente de implantação**: nome do seu ambiente, por exemplo, wknd-program-dev.
       - **Repositório**: o repositório Git de onde o pipeline deve recuperar o código; por exemplo, `wknd-site`
       - **Ramificação Git**: o nome da ramificação do repositório Git.
-      - **Localização do código**: `/config`, correspondente à pasta de configuração de nível superior criada na etapa anterior.
+      - **Localização do Código**: `/config`, correspondente à pasta de configuração de nível superior criada na etapa anterior.
 
-      ![Caixa de diálogo de configuração do pipeline do Cloud Manager](./assets/cloud-manager-config-pipeline-step2-dialog.png)
+      ![Caixa de diálogo Pipeline de configuração do Cloud Manager](./assets/cloud-manager-config-pipeline-step2-dialog.png)
 
 ### Testar regras gerando tráfego
 
 Para testar as regras, há várias ferramentas de terceiros disponíveis e sua organização pode ter uma ferramenta preferencial. Para o propósito da demonstração, vamos usar as seguintes ferramentas:
 
-- [Curl](https://curl.se/) para testes básicos, como chamar um URL e verificar o código de resposta.
+- [Curl](https://curl.se/) para testes básicos, como invocar uma URL e verificar o código de resposta.
 
-- [Vegeta](https://github.com/tsenart/vegeta) para executar o DOS (negação de serviço). Siga as instruções de instalação do [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) para executar negação de serviço (DOS). Siga as instruções de instalação do [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
 
 - [Nikto](https://github.com/sullo/nikto/wiki) para encontrar possíveis problemas e vulnerabilidades de segurança, como XSS, injeção de SQL e muito mais. Siga as instruções de instalação do [Nikto GitHub](https://github.com/sullo/nikto).
 
@@ -119,15 +119,15 @@ Para testar as regras, há várias ferramentas de terceiros disponíveis e sua o
 
 ### Analisar resultados usando a ferramenta do painel
 
-Depois de criar, implantar e testar as regras, é possível analisar os resultados usando **CDN** logs e **AEMCS-CDN-Log-Analysis-Tooling**. A ferramenta fornece um conjunto de painéis para visualizar os resultados para a pilha Splunk e ELK (Elasticsearch, Logstash e Kibana).
+Depois de criar, implantar e testar as regras, você pode analisar os resultados usando os logs do **CDN** e o **AEMCS-CDN-Log-Analysis-Tooling**. A ferramenta fornece um conjunto de painéis para visualizar os resultados para a pilha Splunk e ELK (Elasticsearch, Logstash e Kibana).
 
-A ferramenta pode ser clonada a partir do [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositório GitHub. Em seguida, siga as instruções para instalar e carregar o **Painel de tráfego CDN** e **Painel WAF** painéis para sua ferramenta de observabilidade preferida.
+A ferramenta pode ser clonada do [repositório GitHub AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Em seguida, siga as instruções para instalar e carregar os painéis do **Painel de Tráfego do CDN** e do **Painel do WAF** para sua ferramenta de observabilidade preferida.
 
-Neste tutorial, vamos usar a pilha ELK. Siga as [Contêiner ELK Docker para análise de log do AEM CS CDN](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instruções para configurar a pilha de ELK.
+Neste tutorial, vamos usar a pilha ELK. Siga as instruções do [contêiner ELK Docker da Análise de Log da CDN do AEM CS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) para configurar a pilha ELK.
 
 - Depois de carregar o painel de amostra, a página de ferramenta do painel Elástico deve ser semelhante ao seguinte:
 
-  ![Painel de regras de filtro de tráfego ELK](./assets/elk-dashboard.png)
+  ![Painel de Regras de Filtro de Tráfego ELK](./assets/elk-dashboard.png)
 
 >[!NOTE]
 >
@@ -136,4 +136,4 @@ Neste tutorial, vamos usar a pilha ELK. Siga as [Contêiner ELK Docker para aná
 
 ## Próxima etapa
 
-Saiba como declarar regras de filtro de tráfego, incluindo regras WAF na [Exemplos e análise de resultados](./examples-and-analysis.md) capítulo, uso do projeto AEM WKND Sites.
+Saiba como declarar regras de filtro de tráfego, incluindo regras WAF, no capítulo [Exemplos e análise de resultados](./examples-and-analysis.md), usando o Projeto de sites WKND do AEM.

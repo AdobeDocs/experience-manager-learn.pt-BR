@@ -28,7 +28,7 @@ A partir do AEM Forms 6.4, agora temos a capacidade de usar o Serviço de modelo
 
 Para testar esse recurso no servidor, siga as instruções abaixo
 
-* Configure o tomcat com o arquivo SampleRest.war conforme descrito [aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure o tomcat com o arquivo SampleRest.war como descrito [aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
 * [Importar os ativos para o AEM usando o gerenciador de pacotes](assets/aem65-loanapplication.zip)
 * O pacote contém o seguinte:
@@ -36,7 +36,7 @@ Para testar esse recurso no servidor, siga as instruções abaixo
    * Modelo de fluxo de trabalho que usa a etapa FDM.
    * Modelo de dados de formulário usado na etapa do FDM.
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
-* Abra o [FormuláriodeInscriçãoHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, a variável [workflow de aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
+* Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o [fluxo de trabalho do aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
 ![ fluxo de trabalho ](assets/invokefdm651.PNG).
 O fluxo de trabalho utiliza o componente Ou divisão para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, a aplicação será encaminhada para cavery.

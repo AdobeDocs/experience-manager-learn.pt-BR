@@ -22,7 +22,7 @@ Maneira rápida e fácil de criar sua própria ação de envio personalizada par
 
 >[!NOTE]
 >O código deste artigo não funciona com os componentes principais baseados em formulário adaptável.
->[O artigo equivalente para o formulário adaptável baseado em componentes principais está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+>[O artigo equivalente para o formulário adaptável baseado em componente principal está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
 
 
 Este artigo guiará você pelas etapas necessárias para criar uma ação de envio personalizada para lidar com o envio do Adaptive Forms.

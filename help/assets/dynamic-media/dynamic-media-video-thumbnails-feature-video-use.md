@@ -28,4 +28,4 @@ As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capa
 
 >[!NOTE]
 >
->Você deve executar o [Instância do AEM no Dynamic Media](https://experienceleague.adobe.com/pt-br/docs) modo
+>Você deve executar sua instância do [AEM no modo Dynamic Media](https://experienceleague.adobe.com/pt-br/docs)

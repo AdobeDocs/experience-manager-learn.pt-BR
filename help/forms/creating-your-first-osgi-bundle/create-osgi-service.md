@@ -24,7 +24,7 @@ Um serviço OSGi é definido semanticamente por sua interface de serviço e impl
 
 ## Definir a interface
 
-Uma interface simples com um método para mesclar dados com <span class="x x-first x-last">XDP</span> modelo.
+Uma interface simples com um método para unir dados com o modelo <span class="x x-first x-last">XDP</span>.
 
 ```java
 package com.mysite.samples;
@@ -40,7 +40,7 @@ public interface MyfirstInterface
 
 ## Implementar a interface
 
-Crie um novo pacote chamado `com.mysite.samples.impl` para controlar a implementação da interface.
+Crie um novo pacote chamado `com.mysite.samples.impl` para conter a implementação da interface.
 
 ```java
 package com.mysite.samples.impl;
@@ -78,19 +78,19 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 }
 ```
 
-A anotação `@Component(...)` Na linha 10, o marca essa classe Java como um componente OSGi, além de registrá-la como um serviço OSGi.
+A anotação `@Component(...)` na linha 10 marca essa classe Java como um componente OSGi, bem como a registra como um Serviço OSGi.
 
-A variável `@Reference` A anotação faz parte dos serviços declarativos OSGi e é usada para inserir uma referência do [Serviço de saída](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) na variável `outputService`.
+A anotação `@Reference` faz parte dos serviços declarativos OSGi e é usada para inserir uma referência do [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) na variável `outputService`.
 
 
 ## Criar e implantar o pacote
 
-* Abertura **janela da tela de comandos**
+* Abrir **janela do prompt de comando**
 * Navegue até `c:\aemformsbundles\mysite\core`
 * Executar o comando `mvn clean install -PautoInstallBundle`
 * O comando acima criará e implantará automaticamente o pacote na instância do AEM em execução em localhost:4502
 
-O pacote também estará disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [Felix web console.](http://localhost:4502/system/console/bundles)
+O pacote também estará disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [console da Web Felix.](http://localhost:4502/system/console/bundles)
 
 ## Uso do serviço
 
@@ -101,7 +101,7 @@ MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samp
 com.adobe.aemfd.docmanager.Document generatedDocument = myFirstAEMFormsService.mergeDataWithXDPTemplate(xdp_or_pdf_template,xmlDocument);
 ```
 
-O pacote de exemplo que contém a página JSP pode ser [baixado aqui](assets/learning_aem_forms.zip)
+O pacote de exemplo contendo a página JSP pode ser [baixado daqui](assets/learning_aem_forms.zip)
 
 [O pacote completo está disponível para download](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 

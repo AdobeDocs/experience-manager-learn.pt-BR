@@ -20,9 +20,9 @@ ht-degree: 2%
 
 # Ação do Adobe I/O Runtime
 
-![Ações de tempo de execução de extensão da interface do AEM](./assets/runtime-action/action-runtime-flow.png){align="center"}
+![Ações de tempo de execução da extensão da interface do AEM](./assets/runtime-action/action-runtime-flow.png){align="center"}
 
-As extensões da interface do usuário do AEM podem, opcionalmente, incluir qualquer número de [Ações do Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+Como opção, as extensões da interface do usuário do AEM podem incluir qualquer número de [ações do Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 
 As ações do Adobe I/O Runtime são funções sem servidor que podem ser chamadas pela extensão. As ações são úteis para executar trabalhos que exijam a interação com o AEM ou outros serviços da Web de Adobe. As ações normalmente são mais úteis para executar tarefas de longa duração (algo maior que alguns segundos) ou fazer solicitações HTTP para AEM ou outros serviços da Web.
 
@@ -32,7 +32,7 @@ Os benefícios de usar ações do Adobe I/O Runtime para executar trabalho são:
 + As ações não podem ser interrompidas pelo usuário (por exemplo, atualizar o navegador)
 + As ações são assíncronas, portanto, podem ser executadas conforme necessário sem bloquear o usuário
 
-No contexto das extensões da interface do usuário do AEM, as ações são frequentemente usadas para se comunicar diretamente com o AEM as a Cloud Service:
+No contexto das extensões da interface do usuário do AEM, as ações são usadas com frequência para se comunicar diretamente com o AEM as a Cloud Service:
 
 + Coleta de dados relacionados do AEM sobre o conteúdo selecionado ou atual
 + Realização de operações personalizadas no conteúdo
@@ -44,12 +44,12 @@ Embora a extensão da interface do AEM seja exibida em interfaces do usuário AE
 
 As ações do Adobe I/O Runtime são chamadas principalmente de dois locais em uma extensão da interface do usuário AEM:
 
-1. A variável [do registro de extensão](./extension-registration.md) `onClick(..)` manipulador
-1. Em um [modal](./modal.md)
+1. O manipulador `onClick(..)` do [registro de extensão](./extension-registration.md)
+1. Dentro de um [modal](./modal.md)
 
 ### Do registro de extensão
 
-As ações do Adobe I/O Runtime podem ser chamadas diretamente do código de registro da extensão. O caso de uso mais comum é vincular uma ação a um [menu de cabeçalho](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/)O botão do que não usa [modais](./modal.md).
+As ações do Adobe I/O Runtime podem ser chamadas diretamente do código de registro da extensão. O caso de uso mais comum é vincular uma ação ao botão de [menu de cabeçalho](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/) que não usa [modais](./modal.md).
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -110,7 +110,7 @@ export default ExtensionRegistration;
 
 ### Do modal
 
-As ações do Adobe I/O Runtime podem ser chamadas diretamente dos modais para realizar trabalhos mais envolvidos, especialmente trabalhos que dependam de comunicação com AEM as a Cloud Service, serviço da web Adobe ou até mesmo serviços de terceiros.
+As ações do Adobe I/O Runtime podem ser chamadas diretamente dos modais para executar trabalhos mais envolvidos, especialmente os trabalhos que dependem da comunicação com o AEM as a Cloud Service, o Adobe web service ou até mesmo serviços de terceiros.
 
 As ações do Adobe I/O Runtime são aplicativos JavaScript baseados em Node.js executados no ambiente Adobe I/O Runtime sem servidor. Essas ações são endereçáveis via HTTP pela extensão SPA.
 
@@ -309,8 +309,8 @@ As seguintes APIs HTTP de AEM são normalmente usadas para interagir com AEM a p
 + [APIs do GraphQL para AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 + [API HTTP do AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html)
    + [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
-+ [API AEM QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
-+ [Referência completa da API as a Cloud Service do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
++ [API do Construtor de Consulta do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html)
++ [Concluir a referência da API do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/reference-materials.html)
 
 
 ## módulos npm Adobe
@@ -320,12 +320,12 @@ Estes são módulos npm úteis para o desenvolvimento de ações do Adobe I/O Ru
 + [@adobe/aio-sdk](https://www.npmjs.com/package/@adobe/aio-sdk)
    + [SDK principal](https://github.com/adobe/aio-sdk-core)
    + [Biblioteca de estados](https://github.com/adobe/aio-lib-state)
-   + [Biblioteca de arquivos](https://github.com/adobe/aio-lib-files)
+   + [Biblioteca de Arquivos](https://github.com/adobe/aio-lib-files)
    + [Biblioteca da Adobe Target](https://github.com/adobe/aio-lib-target)
    + [Biblioteca da Adobe Analytics](https://github.com/adobe/aio-lib-analytics)
    + [Biblioteca da Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard)
-   + [Biblioteca de perfil do cliente do Adobe](https://github.com/adobe/aio-lib-customer-profile)
+   + [Biblioteca de perfis de clientes do Adobe](https://github.com/adobe/aio-lib-customer-profile)
    + [Biblioteca de dados do cliente da Adobe Audience Manager](https://github.com/adobe/aio-lib-audience-manager-cd)
-   + [Eventos Adobe I/O](https://github.com/adobe/aio-lib-events)
+   + [Adobe I/O Eventos](https://github.com/adobe/aio-lib-events)
 + [@adobe/aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking)
 + [@adobe/node-httptransfer](https://github.com/adobe/node-httptransfer)

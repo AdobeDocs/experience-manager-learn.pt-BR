@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como capturar despejos de heap de uma JVM em um servidor Windows
 
-*Este vídeo aborda as etapas para capturar despejos de heap de uma JVM em um servidor Windows.*
+*Este vídeo mostra as etapas para capturar despejos de heap de uma JVM em um servidor Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

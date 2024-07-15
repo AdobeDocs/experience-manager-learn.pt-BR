@@ -24,7 +24,7 @@ Saiba como criar campos personalizados no Editor de fragmento de conteúdo do AE
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-As extensões da interface do usuário do AEM devem ser desenvolvidas usando o [Espectro de Reação Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html) estrutura, já que mantém uma aparência consistente com o restante do AEM, além de ter uma ampla biblioteca de funcionalidades pré-criadas, diminuindo o tempo de desenvolvimento.
+As extensões da interface do AEM devem ser desenvolvidas usando a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), pois ela mantém uma aparência consistente com o restante do AEM, além de ter uma ampla biblioteca de funcionalidades pré-criadas, reduzindo o tempo de desenvolvimento.
 
 ## Ponto de extensão
 
@@ -42,7 +42,7 @@ O código-fonte deste exemplo é [disponível para download](./assets/editor-cus
 
 ### Definição do modelo de fragmento de conteúdo
 
-Esse exemplo vincula a qualquer campo Fragmento de conteúdo cujo nome seja `sku` (via [correspondência de expressão regular](#extension-registration) de `^sku$`) e o substitui por um campo personalizado. O exemplo usa o modelo de Fragmento de conteúdo WKND Adventure que foi atualizado e a definição é a seguinte:
+Este exemplo está associado a qualquer campo Fragmento do Conteúdo cujo nome seja `sku` (por meio de uma [correspondência de expressão regular](#extension-registration) de `^sku$`) e o substitui por um campo personalizado. O exemplo usa o modelo de Fragmento de conteúdo WKND Adventure que foi atualizado e a definição é a seguinte:
 
 ![Definição do modelo de fragmento de conteúdo](./assets/editor-custom-field/content-fragment-editor.png)
 
@@ -51,7 +51,7 @@ Embora o campo SKU personalizado seja exibido como uma lista suspensa, seu model
 
 ### Rotas de aplicativo
 
-No componente principal do React `App.js`, inclua o `/sku-field` rota para renderizar o `SkuField` Componente do React.
+No componente React principal `App.js`, inclua a rota `/sku-field` para renderizar o componente React `SkuField`.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -85,14 +85,14 @@ function App() {
 ...
 ```
 
-Esta rota personalizada de `/sku-field` mapeia para o `SkuField` componente é usado abaixo no [Registro de extensão](#extension-registration).
+Esta rota personalizada de `/sku-field` mapeia para o componente `SkuField` e é usada abaixo no [Registro de extensão](#extension-registration).
 
 ### Registro de extensão
 
 `ExtensionRegistration.js`, mapeado para a rota index.html, é o ponto de entrada para a extensão AEM e define:
 
-+ A definição do widget em `getDefinitions()` função com `fieldNameExp` e `url` atributos. A lista completa de atributos disponíveis está disponível no [Referência da API de renderização do elemento de formulário personalizado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
-+ A variável `url` valor do atributo, um caminho de URL relativo (`/index.html#/skuField`) para carregar a interface do usuário do campo.
++ A definição do widget na função `getDefinitions()` com os atributos `fieldNameExp` e `url`. A lista completa de atributos disponíveis está disponível na [Referência da API de Renderização do Elemento de Formulário Personalizado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
++ O valor do atributo `url`, um caminho de URL relativo (`/index.html#/skuField`) para carregar a interface do usuário do campo.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -132,13 +132,13 @@ export default ExtensionRegistration;
 
 ### Campo personalizado
 
-A variável `SkuField` O componente React atualiza o Editor de fragmento de conteúdo com uma interface personalizada, usando o Espectro de reação Adobe para sua forma seletor. Os destaques incluem:
+O componente React `SkuField` atualiza o Editor de Fragmento de Conteúdo com uma interface personalizada, usando o Espectro de Reação de Adobe para sua forma seletor. Os destaques incluem:
 
-+ Utilizar `useEffect` para inicialização e conexão com o Editor de fragmento de conteúdo AEM, com um estado de carregamento exibido até que a configuração seja concluída.
-+ A renderização dentro de um iFrame ajusta dinamicamente a altura do iFrame por meio da `onOpenChange` para acomodar o menu suspenso do Seletor de Espectro de Reação Adobe.
-+ Comunica seleções de campo de volta ao host usando `connection.host.field.onChange(value)` no `onSelectionChange` , garantindo que o valor selecionado seja validado e salvo automaticamente de acordo com as diretrizes do Modelo de fragmento de conteúdo.
++ Utilizando `useEffect` para inicialização e conexão com o Editor de Fragmento de Conteúdo do AEM, com um estado de carregamento mostrado até que a instalação seja concluída.
++ A renderização dentro de um iFrame ajusta dinamicamente a altura do iFrame por meio da função `onOpenChange` para acomodar a lista suspensa do Seletor de Espectro de Reação de Adobe.
++ Comunica as seleções de campo de volta ao host usando `connection.host.field.onChange(value)` na função `onSelectionChange`, garantindo que o valor selecionado seja validado e salvo automaticamente de acordo com as diretrizes do Modelo de fragmento de conteúdo.
 
-Os campos personalizados são renderizados em um iFrame inserido no Editor de fragmento de conteúdo. A comunicação entre o código de campo personalizado e o Editor de fragmento de conteúdo é feita exclusivamente por meio da `connection` estabelecido pela `attach` função do `@adobe/uix-guest` pacote.
+Os campos personalizados são renderizados em um iFrame inserido no Editor de fragmento de conteúdo. A comunicação entre o código de campo personalizado e o Editor de Fragmento de Conteúdo é feita exclusivamente através do objeto `connection`, estabelecido pela função `attach` do pacote `@adobe/uix-guest`.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 

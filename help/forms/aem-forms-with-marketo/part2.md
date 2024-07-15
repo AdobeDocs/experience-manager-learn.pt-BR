@@ -202,7 +202,7 @@ public class MarketoConfigurationService {
 ```
 
 1. Crie e implante o pacote no servidor AEM.
-1. [Aponte seu navegador para configMgr](http://localhost:4502/system/console/configMgr) e procure por &quot;Marketo Credentials Service Configuration&quot;
+1. [Aponte seu navegador para configMgr](http://localhost:4502/system/console/configMgr) e procure por &quot;Configuração do Serviço de Credenciais da Marketo&quot;
 1. Especifique as propriedades apropriadas específicas para sua instância do Marketo
 
 ## Próximas etapas

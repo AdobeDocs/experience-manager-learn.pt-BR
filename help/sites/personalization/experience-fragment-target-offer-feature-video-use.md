@@ -24,7 +24,7 @@ O Adobe Experience Manager recria o fluxo de trabalho de personalização entre 
 
 >[!NOTE]
 >
->Uso recomendado `at.js` a biblioteca do cliente e a prática recomendada é usar soluções de gerenciamento de tags, como tags na Adobe Experience Platform ou qualquer solução de gerenciamento de tags de terceiros, para adicionar bibliotecas do target às páginas do site
+>Recomendamos o uso da biblioteca cliente `at.js`, e a prática recomendada é usar soluções de gerenciamento de tags, como tags na Adobe Experience Platform ou qualquer solução de gerenciamento de tags de terceiros, para adicionar bibliotecas de destino às páginas do site
 
 
 * O eficiente e fácil mecanismo de criação de conteúdo da Adobe Experience Manager, juntamente com a Inteligência artificial (AI) e o Aprendizado de máquina da Adobe Target, ajudam os autores de conteúdo a criar e gerenciar conteúdo para todos os canais em um local centralizado. Com a capacidade de exportar fragmentos de experiência para o Adobe Target como ofertas de HTML, os profissionais de marketing agora têm mais flexibilidade para criar uma experiência mais personalizada usando essas ofertas e podem testar e dimensionar cada experiência criada.
@@ -35,5 +35,5 @@ O Adobe Experience Manager recria o fluxo de trabalho de personalização entre 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
+* [Documentação de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
 * [Uso de Fragmentos de experiência](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

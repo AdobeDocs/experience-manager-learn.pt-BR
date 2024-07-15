@@ -21,6 +21,6 @@ ht-degree: 0%
 
 ## Montar arquivos PDF
 
-Modifique o `assemble2pdfs.ddx` arquivo para montar 3 arquivos PDF.
+Modifique o arquivo `assemble2pdfs.ddx` para montar 3 arquivos PDF.
 
 Você colocará o terceiro pdf na pasta resources/pdffiles.

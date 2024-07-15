@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
+exl-id: 40617082-4d23-4c91-a016-2d947187052b
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -17,17 +18,17 @@ ht-degree: 0%
 
 # Uso da API DocAssurance
 
-A variável [Serviço DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) O fornece a capacidade de executar várias operações de assinatura digital ou criptografia com documentos PDF, como assinatura, certificação, adição de campos de assinatura, criptografia, descriptografia etc.
-Este artigo fornece trechos de código java para começar a usar a API. O trecho de código usa um token de acesso. [Este artigo explica as etapas necessárias para gerar um token de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
+O [DocAssurance service](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) oferece a capacidade de executar várias operações de assinatura digital ou criptografia com documentos PDF, como assinatura, certificação, adição de campos de assinatura, criptografia, descriptografia etc.
+Este artigo fornece trechos de código java para começar a usar a API. O trecho de código usa um token de acesso. [Este artigo explica as etapas necessárias para gerar o token de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
 
 
-<span class="preview">Esse recurso está disponível no programa Early Adoter. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso a essa funcionalidade</span>
+<span class="preview">Este recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso a essa funcionalidade</span>
 
 
 ## Pré-requisitos
 
 * Experiência com o AEM Forms Cloud Service
-* Experiência no uso do [Componentes HTTP do Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
+* Experiência no uso de [Componentes HTTP do Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
 * Acesso ao ambiente do AEM Forms Cloud Service
 
 ## Documento do Inspect
@@ -157,4 +158,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Coleção Postman
 
-Uma coleção Postman da API pode ser [baixado aqui para fins de teste](assets/DocAssuranceAPI.postman_collection.json). Você pode usar o tipo de autenticação Autenticação básica ou Token de portador para chamar a API.
+Uma coleção Postman da API pode ser [baixada daqui para fins de teste](assets/DocAssuranceAPI.postman_collection.json). Você pode usar o tipo de autenticação Autenticação básica ou Token de portador para chamar a API.

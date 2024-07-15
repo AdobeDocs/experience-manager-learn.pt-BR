@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Para que esse caso de uso funcione em seu sistema, implante os seguintes ativos em seu sistema pronto para nuvem local.
 
-* Verifique se você criou todas as configurações/contas necessárias listadas no[documento de introdução](./introduction.md)
+* Certifique-se de ter criado todas as configurações/contas necessárias listadas no[documento de introdução](./introduction.md)
 
 * [Instalar o modelo de formulário adaptável personalizado e o componente de página associado](./assets/azure-portal-template-page-component.zip)
 
-* [Instalar o modelo de dados do formulário SendGrid](./assets/send-grid-form-data-model.zip). Será necessário fornecer sua chave de API e o endereço &quot;SendGrid verificado&quot; para que este modelo de dados de formulário funcione. Testar o modelo de dados de formulário no editor de modelo de dados de formulário
+* [Instalar o Modelo de Dados de Formulário SendGrid](./assets/send-grid-form-data-model.zip). Será necessário fornecer sua chave de API e o endereço &quot;SendGrid verificado&quot; para que este modelo de dados de formulário funcione. Testar o modelo de dados de formulário no editor de modelo de dados de formulário
 
-* [Instalar o modelo de dados de formulário com suporte do Azure](./assets/azure-storage-fdm.zip). Será necessário fornecer suas credenciais da conta de Armazenamento do Azure para que o modelo de dados de formulário funcione. Teste o modelo de dados de formulário no editor de modelo de dados de formulário.
+* [Instalar o Modelo de Dados de Formulário ](./assets/azure-storage-fdm.zip) com suporte do Azure. Será necessário fornecer suas credenciais da conta de Armazenamento do Azure para que o modelo de dados de formulário funcione. Teste o modelo de dados de formulário no editor de modelo de dados de formulário.
 
 * [Importar a amostra de formulário adaptável](./assets/credit-applications-af.zip)
 * [Importar a biblioteca do cliente](./assets/client-lib.zip)

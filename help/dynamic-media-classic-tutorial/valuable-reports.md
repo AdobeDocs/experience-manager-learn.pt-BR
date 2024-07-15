@@ -25,7 +25,7 @@ O relatório Largura de banda e armazenamento detalha a largura de banda do Serv
 
 ![imagem](assets/valuable-reports/reports-1.jpg)
 
-_O relatório Largura de banda e armazenamento mostra essa conta como além do limite de armazenamento de 30 GB._
+_O relatório Largura de Banda e Armazenamento mostra esta conta como além do limite de armazenamento de 30 GB._
 
 ## Relatório de Erros de Imagem
 
@@ -33,7 +33,7 @@ Sempre que um URL solicita uma imagem que está ausente, o Servidor de imagens g
 
 ![imagem](assets/valuable-reports/reports-2.jpg)
 
-_Relatório de erro de imagem._
+_Relatório de erros de imagem._
 
 ## Conclusão
 
@@ -43,5 +43,5 @@ Para saber mais sobre o Dynamic Media Classic, consulte os seguintes recursos:
 
 - [Dynamic Media Classic no Experience League - Obter valor](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic no Experience League - Faça mais](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Os arquivos do informativo do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Arquivos do Informativo do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=pt-BR)

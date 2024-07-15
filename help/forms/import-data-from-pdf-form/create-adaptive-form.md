@@ -32,7 +32,7 @@ Use o esquema para criar seu formulário adaptável
 * Clique em Gerar.
 * Forneça um nome de arquivo significativo, como `form-data.xml`
 
-Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) dos dados xml gerados na etapa anterior.
+Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) a partir dos dados xml gerados na etapa anterior.
 
 Crie um formulário adaptável com base no esquema da etapa anterior.
 
@@ -43,9 +43,9 @@ Dados enviados do formulário adaptável
 ![dados enviados](./assets/af-submitted-data.png)
 
 Dados exportados do PDF
-![dados exportados](./assets/exported-data.png)
+![dados-exportados](./assets/exported-data.png)
 
-A partir dos dados exportados, será necessário extrair o **_topmostSubform_** com os namespaces apropriados preservados para mesclar dados com êxito com o formulário adaptável.
+Nos dados exportados, será necessário extrair o nó **_topmostSubform_** com os namespaces apropriados preservados para mesclar dados com o formulário adaptável com êxito.
 
 ## Próximas etapas
 

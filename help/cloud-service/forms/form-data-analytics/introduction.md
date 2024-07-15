@@ -34,7 +34,7 @@ Para aproveitar ao máximo este tutorial, o recomendou que você atenda aos segu
 
 Este tutorial usa um formulário adaptável simples integrado ao AEM Forms e mede os envios de formulários para o estado dos valores de residência, bem como campos que geram erros de validação.
 
-![formulário adaptável](assets/use-case.png)
+![formulário-adaptável](assets/use-case.png)
 
 ## Próximas etapas
 

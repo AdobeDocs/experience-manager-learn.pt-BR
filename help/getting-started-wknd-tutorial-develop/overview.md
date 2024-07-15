@@ -36,37 +36,37 @@ O objetivo deste tutorial em várias partes é ensinar o desenvolvedor a impleme
 
 Há duas abordagens básicas para iniciar um projeto AEM Sites.
 
-**Arquétipo de projeto AEM** - Abordagem tradicional para o desenvolvimento do AEM, gerando um projeto AEM mínimo usando um modelo Maven. Esta é a abordagem recomendada para projetos AEM 6.5/6.4 e projetos AEM as a Cloud Service que antecipam uma personalização pesada. O tutorial oferece um mergulho mais profundo no desenvolvimento do AEM.
+**Arquétipo de projeto AEM** - Abordagem tradicional para o desenvolvimento do AEM gerando um projeto AEM mínimo usando um modelo Maven. Essa é a abordagem recomendada para projetos AEM 6.5/6.4 e projetos AEM as a Cloud Service que preveem personalização intensa. O tutorial oferece um mergulho mais profundo no desenvolvimento do AEM.
 
 [Inicie o tutorial com o Arquétipo de projeto AEM](./project-archetype/overview.md)
 
-**Modelos de site do AEM** - Também conhecida como Criação rápida de sites, uma abordagem low-code para gerar um site AEM usando um modelo de site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho de temas para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Disponível somente para AEM as a Cloud Service.
+**Modelos de Site do AEM** - Também conhecido como Criação Rápida de Sites, uma abordagem low-code para gerar um Site do AEM usando um Modelo de Site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho de temas para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Disponível somente para AEM as a Cloud Service.
 
 [Iniciar o tutorial usando um modelo de site](./site-template/create-site.md)
 
 ## Kit de interface do usuário do Adobe XD
 
-Para tornar este tutorial mais próximo de um cenário do mundo real, os designers de UX talentosos da Adobe criaram os modelos para o site usando [Adobe XD](https://www.adobe.com/products/xd.html). Ao longo do tutorial, várias partes dos projetos são implementadas em um site de AEM totalmente autorável. Muito obrigado a **Lorenzo Buosi** e **Kilian Amendola** que criou o belo design para o site WKND.
+Para tornar este tutorial mais próximo de um cenário real, designers de UX talentosos Adobe criaram os modelos para o site usando o [Adobe XD](https://www.adobe.com/products/xd.html). Ao longo do tutorial, várias partes dos projetos são implementadas em um site de AEM totalmente autorável. Agradecimentos especiais ao **Lorenzo Buosi** e ao **Kilian Amendola**, que criaram um belo design para o site WKND.
 
 Baixe os kits de interface do usuário do XD:
 
 * [Kit de interface do usuário dos Componentes principais do AEM](assets/overview/AEM-CoreComponents-UI-Kit.xd)
-* [Kit de interface do usuário do WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
+* [Kit de Interface do Usuário do WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
 
 ## Site de referência {#reference-site}
 
-Uma versão concluída do site da WKND também está disponível como referência: [https://wknd.site/](https://wknd.site/)
+Uma versão concluída do Site WKND também está disponível como referência: [https://wknd.site/](https://wknd.site/)
 
-O tutorial aborda as principais habilidades de desenvolvimento necessárias para um desenvolvedor de AEM, mas *não* criar todo o site de ponta a ponta. O site de referência concluído é outro grande recurso para explorar e ver mais do AEM recursos prontos para uso.
+O tutorial aborda as principais habilidades de desenvolvimento necessárias para um desenvolvedor de AEM, mas *não* criará todo o site de ponta a ponta. O site de referência final é outro grande recurso para explorar e ver mais do AEM oferecendo recursos prontos para uso.
 
-Para testar o código mais recente antes de entrar no tutorial, baixe e instale o **[versão mais recente do GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Para testar o código mais recente antes de ir para o tutorial, baixe e instale a **[última versão do GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Desenvolvido pela Adobe Stock
 
-Muitas das imagens no site de referência da WKND são de [Adobe Stock](https://stock.adobe.com/) e são Materiais de terceiros conforme definido nos Termos adicionais do ativo de demonstração em [https://www.adobe.com/legal/terms.html](https://www.adobe.com/br/legal/terms.html). Se você quiser usar uma imagem do Adobe Stock para outros propósitos além da exibição deste site de demonstração, como exibi-la em um site ou em materiais de marketing, é possível adquirir uma licença no Adobe Stock.
+Muitas das imagens no site de Referência WKND são do [Adobe Stock](https://stock.adobe.com/) e são Materiais de Terceiros conforme definido nos Termos Adicionais do Ativo de Demonstração em [https://www.adobe.com/legal/terms.html](https://www.adobe.com/br/legal/terms.html). Se você quiser usar uma imagem do Adobe Stock para outros propósitos além da exibição deste site de demonstração, como exibi-la em um site ou em materiais de marketing, é possível adquirir uma licença no Adobe Stock.
 
 Com o Adobe Stock, você tem acesso a mais de 140 milhões de imagens de alta qualidade e isentas de royalties, incluindo fotos, gráficos, vídeos e modelos para dar o pontapé inicial nos seus projetos criativos.
 
 ## Próximas etapas {#next-steps}
 
-O que você está esperando?! Saiba como [gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de projeto AEM](./project-archetype/overview.md) ou [criar um site usando um Modelo de site](./site-template/create-site.md).
+O que você está esperando?! Saiba como [gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de Projeto AEM](./project-archetype/overview.md) ou [criar um site usando um Modelo de Site](./site-template/create-site.md).

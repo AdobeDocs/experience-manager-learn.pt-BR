@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Dicas e truques do especialista em AEM - Interface do usuário do Cloud Manager
 
-Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é um defensor do Adobe Experience Manager e explica como navegar e entender a interface do usuário do Cloud Manager.
+Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é um defensor do Adobe Experience Manager e explica como navegar e entender a interface do usuário da Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419298?quality=12&learn=on)
 

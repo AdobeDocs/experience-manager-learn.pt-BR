@@ -40,18 +40,18 @@ A exportação do fragmento de experiência para o Adobe Target sem as permissõ
 
 ![Erro na interface da API do Target](assets/error-target-offer.png)
 
-... e as seguintes mensagens de log no `aemerror` registro:
+... e as seguintes mensagens de log no log `aemerror`:
 
-![Erro de console da API de destino](assets/target-console-error.png)
+![Erro de Console da API de Destino](assets/target-console-error.png)
 
 #### Resolução
 
-1. Fazer logon em [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de produto Adobe Target usado, mas a integração AEM
-2. Selecionar __Produtos > Adobe Target > Perfil do produto__
-3. Em __Integrações__ , selecione a integração do seu ambiente as a Cloud Service AEM (mesmo nome do projeto do Adobe Developer)
-4. Atribuir __Editor__ ou __Aprovador__ função
+1. Logon em [Admin Console](https://adminconsole.adobe.com/) com direitos administrativos para o Perfil de Produto Adobe Target usado, mas a integração do AEM
+2. Selecione __Produtos > Adobe Target > Perfil de produto__
+3. Na guia __Integrações__, selecione a integração para seu ambiente do AEM as a Cloud Service (mesmo nome do projeto do Adobe Developer)
+4. Atribuir função de __Editor__ ou __Aprovador__
 
-   ![Erro na API do Target](assets/target-permissions.png)
+   ![Erro na API de Destino](assets/target-permissions.png)
 
 Adicionar a permissão correta à integração do Adobe Target deve resolver esse erro.
 

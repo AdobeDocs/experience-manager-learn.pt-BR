@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Um caso de uso comum é exibir um documento pdf com os dados inseridos pelo preenchimento de formulário.
 
-Para realizar esse caso de uso, utilizamos o [API incorporada do Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Para concluir este caso de uso, utilizamos a [API de Incorporação do Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 As etapas a seguir foram executadas para concluir a integração
 
@@ -31,7 +31,7 @@ Um componente personalizado (pdf incorporado) foi criado para incorporar o pdf r
 
 ## Biblioteca do cliente
 
-O código a seguir é executado quando a variável `viewPDF` botão de caixa de seleção for clicado. Passamos os dados do formulário adaptável, o nome do modelo, para o endpoint para gerar o pdf. O pdf gerado é exibido no preenchimento de formulário usando a biblioteca JavaScript embed pdf.
+O código a seguir é executado quando o botão de caixa de seleção `viewPDF` é clicado. Passamos os dados do formulário adaptável, o nome do modelo, para o endpoint para gerar o pdf. O pdf gerado é exibido no preenchimento de formulário usando a biblioteca JavaScript de pdf incorporada.
 
 ```javascript
 $(document).ready(function() {
@@ -93,31 +93,32 @@ $(document).ready(function() {
 
 ## Gerar XSD a partir dos dados xml
 
-Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) dos dados xml gerados na etapa anterior.
+Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) a partir dos dados xml gerados na etapa anterior.
 
 ## Fazer upload do modelo
 
-Certifique-se de fazer upload do modelo xdp em [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) uso do botão criar
+Carregue o modelo xdp no [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) usando o botão criar
 
 
 ## Criar formulário adaptável
 
 Crie um formulário adaptável com base no XSD da etapa anterior.
-Adicione uma nova guia ao adaptável. Adicione um componente de caixa de seleção e um componente pdf incorporado a esta guia. Nomeie a caixa de seleção como viewPDF.
+Adicione uma nova guia ao adaptável. Adicionar um componente caixa de seleção e componente pdf incorporado a esta guia
+Nomeie a caixa de seleção viewPDF.
 Configure o componente de pdf incorporado como mostrado na captura de tela abaixo
-![embed-pdf](assets/embed-pdf-configuration.png)
+![pdf incorporado](assets/embed-pdf-configuration.png)
 
-**Incorporar chave de API do PDF** - Essa é a chave que você pode usar para incorporar o pdf. Essa chave só funcionará com localhost. Você pode criar [sua própria chave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associá-lo a outro domínio.
+**Incorporar Chave de API de PDF** - Esta é a chave que você pode usar para incorporar o pdf. Essa chave só funcionará com localhost. Você pode criar [sua própria chave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associá-la a outro domínio.
 
-**Endpoint que retorna o pdf** - Esse é o servlet personalizado que mesclará os dados com o modelo xdp e retornará o pdf.
+**Ponto de extremidade retornando o pdf** - Este é o servlet personalizado que mesclará os dados com o modelo xdp e retornará o pdf.
 
 **Nome do modelo** - Este é o caminho para o xdp. Normalmente, ele é armazenado na pasta formulários e documentos.
 
-**Nome do arquivo PDF** - Esta é a sequência de caracteres que aparecerá no componente de pdf incorporado.
+**Nome do Arquivo PDF** - Esta é a cadeia de caracteres que aparecerá no componente pdf incorporado.
 
 ## Criar servlet personalizado
 
-Um servlet personalizado foi criado para mesclar os dados com o modelo XDP e retornar o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [pacote embpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+Um servlet personalizado foi criado para mesclar os dados com o modelo XDP e retornar o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [pacote embutido](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -227,9 +228,9 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Para testar isso no servidor local, siga as seguintes etapas:
 
-1. [Baixe e instale o pacote incorporado de PDF](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [Baixe e instale o pacote de pdf incorporado](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Ele tem o servlet para unir os dados ao modelo XDP e transmitir o pdf de volta.
-1. Adicione o caminho /bin/getPDFToEmbed na seção caminhos excluídos do Filtro CSRF do Adobe Granite usando o [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). No seu ambiente de produção, é recomendável usar o [Estrutura de proteção CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Adicione o caminho /bin/getPDFToEmbed na seção de caminhos excluídos do Filtro CSRF do Adobe Granite usando o [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). É recomendável usar a [estrutura de proteção do CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en) em seu ambiente de produção
 1. [Importar a biblioteca do cliente e o componente personalizado](assets/embed-pdf.zip)
 1. [Importar o formulário e o modelo adaptáveis](assets/embed-pdf-form-and-xdp.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

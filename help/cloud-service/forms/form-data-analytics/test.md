@@ -28,13 +28,13 @@ Pré-visualize e envie seu formulário usando várias combinações de valores d
 
 Os dados de formulário capturados no Adobe Analytics são apresentados no formato de rosca
 
-**Observações por Estado**
+**Envios por Estado**
 
 ![applicantsbystate](assets/donut.png)
 
 Erros de validação de campo
 
-![erro de validação de campo](assets/donut-field-validation.png)
+![erro-validação-campo](assets/donut-field-validation.png)
 
 ## Depuração
 
@@ -51,14 +51,14 @@ _satellite.setDebug(true)
 
 Interaja com o formulário enquanto mantém a janela do console aberta. Você deve ver algo como isso
 
-![console-debug](assets/debug.png)
+![depuração-console](assets/debug.png)
 
 ## Usar Adobe Experience Platform Debugger
 
-Adicione o [Extensão do depurador da AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) no navegador (é necessário fazer logon) para obter mais informações de depuração
+Adicione a [extensão do depurador da AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) ao seu navegador (você precisa entrar) para obter mais informações sobre depuração
 
-![platform-debugger](assets/platform-debugger.png)
+![depurador-plataforma](assets/platform-debugger.png)
 
 ## Parabéns
 
-Você integrou com êxito o AEM Forms as a Cloud Service com o Adobe Analytics para criar relatórios sobre campos de dados de formulário.
+Você integrou com êxito o AEM Forms as a Cloud Service ao Adobe Analytics para criar relatórios sobre campos de dados de formulário.

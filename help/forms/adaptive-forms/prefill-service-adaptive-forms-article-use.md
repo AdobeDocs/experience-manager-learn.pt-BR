@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Para saber mais sobre vários métodos para preencher formulários adaptáveis, [siga esta documentação](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Para preencher previamente um formulário adaptável usando o serviço de preenchimento, você deve criar uma classe que implemente a `com.adobe.forms.common.service.DataXMLProvider` interface. O método `getDataXMLForDataRef` terá a lógica de criar e retornar dados que o formulário adaptável consumirá para preencher previamente os campos. Neste método, você pode buscar os dados de qualquer fonte e retornar o fluxo de entrada do documento de dados. O código de exemplo a seguir busca as informações de perfil do usuário conectado e constrói um documento XML cujo fluxo de entrada é retornado para ser consumido pelos formulários adaptáveis.
+Para preencher previamente um formulário adaptável usando o serviço de preenchimento prévio, você deve criar uma classe que implemente a interface `com.adobe.forms.common.service.DataXMLProvider`. O método `getDataXMLForDataRef` terá a lógica de criar e retornar dados que o formulário adaptável consumirá para preencher previamente os campos. Neste método, você pode buscar os dados de qualquer fonte e retornar o fluxo de entrada do documento de dados. O código de exemplo a seguir busca as informações de perfil do usuário conectado e constrói um documento XML cujo fluxo de entrada é retornado para ser consumido pelos formulários adaptáveis.
 
 No trecho de código abaixo, temos uma classe que implementa a interface DataXMLProvider. Obtemos acesso ao usuário conectado e buscamos as informações de perfil do usuário conectado. Em seguida, criamos um documento XML com um elemento de nó raiz chamado &quot;dados&quot; e anexamos elementos apropriados a esse nó de dados. Depois que o documento XML é construído, o fluxo de entrada do documento XML é retornado.
 
@@ -139,11 +139,11 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 
 Para testar esse recurso no servidor, execute o seguinte procedimento
 
-* Verifique se o está conectado [perfil do usuário](http://localhost:4502/security/users.html) informações são preenchidas. O exemplo procura as propriedades FirstName, LastName e Email do usuário conectado.
+* Verifique se as informações de perfil](http://localhost:4502/security/users.html) do [usuário logado estão preenchidas. O exemplo procura as propriedades FirstName, LastName e Email do usuário conectado.
 * [Baixe e extraia o conteúdo do arquivo zip no seu computador](assets/prefillservice.zip)
-* Implante o pacote prefill.core-1.0.0-SNAPSHOT usando o [Console da Web AEM](http://localhost:4502/system/console/bundles)
-* Importe o formulário adaptável usando a opção Criar | Upload de arquivo do [Seção FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Verifique se [formulário](http://localhost:4502/editor.html/content/forms/af/prefill.html) está usando **&quot;Serviço de pré-preenchimento personalizado do AEM Forms&quot;** como o serviço de preenchimento prévio. Isso pode ser verificado nas propriedades de configuração do **Contêiner de formulário** seção.
+* Implante o pacote prefill.core-1.0.0-SNAPSHOT usando o [console da Web do AEM](http://localhost:4502/system/console/bundles)
+* Importe o formulário adaptável usando a opção Criar | Carregamento de Arquivo da [seção FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Verifique se o [formulário](http://localhost:4502/editor.html/content/forms/af/prefill.html) está usando o **&quot;Serviço de Preenchimento Prévio do AEM Forms Personalizado&quot;** como o serviço de preenchimento prévio. Isso pode ser verificado nas propriedades de configuração da seção **Contêiner de formulário**.
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Você deve ver o formulário preenchido com os valores corretos.
 
 >[!NOTE]

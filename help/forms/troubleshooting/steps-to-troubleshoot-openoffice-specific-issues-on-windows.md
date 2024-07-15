@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas de falhas específicas do OpenOffice em uma configuração do Windows para Conversão de PDFG do AEM Forms
 
-*Este vídeo aborda o processo de solução de problemas de falhas específicas do OpenOffice em uma configuração do Windows.*
+*Este vídeo aborda o processo de solução de problemas de falhas específicas do OpenOffice em uma instalação do Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335481?quality=12&learn=on)

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas de conversão de PDFG multiusuário em uma configuração do Unix
 
-*Este vídeo descreve o processo de solução de problemas de conversão de PDFG multiusuário em uma configuração Unix.*
+*Este vídeo descreve o processo de solução de problemas de Conversão de PDFG Multiusuário em uma instalação Unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335549?quality=12&learn=on)

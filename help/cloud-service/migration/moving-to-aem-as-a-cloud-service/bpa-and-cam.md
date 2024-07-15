@@ -1,6 +1,6 @@
 ---
 title: Configurar seu projeto BPA e CAM
-description: Saiba como o Analisador de práticas recomendadas e o Cloud Acceleration Manager fornecem um guia personalizado sobre a migração para o AEM as a Cloud Service.
+description: Saiba como o Analisador de práticas recomendadas e o Cloud Acceleration Manager fornecem um guia personalizado para migrar para o AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Analisador de práticas recomendadas e Cloud Acceleration Manager
 
-Saiba como o Analisador de práticas recomendadas (BPA) e o Cloud Acceleration Manager (CAM) fornecem um guia personalizado sobre a migração para o AEM as a Cloud Service. 
+Saiba como o Analisador de práticas recomendadas (BPA) e o Cloud Acceleration Manager (CAM) fornecem um guia personalizado sobre migração para o AEM as a Cloud Service. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/336957?quality=12&learn=on)
 
@@ -33,7 +33,7 @@ O pacote de BPA deve ser instalado em um clone do ambiente de produção de AEM 
 
 + Faça um clone de seu ambiente de produção 6.x. À medida que você migra o conteúdo e refatora o código, ter um clone de um ambiente de produção é algo valioso para testar várias ferramentas e alterações.
 + Baixe a ferramenta BPA mais recente do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) e instale no ambiente clonado do AEM 6.x.
-+ Use a ferramenta BPA para gerar um relatório que pode ser carregado para o Cloud Acceleration Manager (CAM). O CAM é acessado por meio de [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
++ Use a ferramenta BPA para gerar um relatório que pode ser carregado no Cloud Acceleration Manager (CAM). O CAM é acessado por meio de [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
 + Use o CAM para fornecer orientação sobre quais atualizações precisam ser feitas na base de código e no ambiente atuais para migrar para o AEM as a Cloud Service.
 
 ## Exercício prático
@@ -42,11 +42,11 @@ Aplique seu conhecimento experimentando o que você aprendeu com este exercício
 
 Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
-+ [Pensando diferente sobre AEM as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre o AEM as a Cloud Service](./introduction.md)
 + [O que é o AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
 + [Arquitetura do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
 + [Conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
-+ [Diferenças no desenvolvimento de AEM as a Cloud Service e AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
++ [Diferenças no desenvolvimento para AEM as a Cloud Service e AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
 
 <table style="border-width:0">
     <tr>
@@ -73,4 +73,4 @@ Antes de experimentar o exercício prático, verifique se você assistiu e compr
 
 ## Outros recursos
 
-+ [Baixar o Analisador de práticas recomendadas](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
++ [Baixar o Analisador de Práticas Recomendadas](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)

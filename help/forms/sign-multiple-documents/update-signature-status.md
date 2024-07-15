@@ -21,7 +21,7 @@ ht-degree: 2%
 
 O fluxo de trabalho UpdateSignatureStatus é acionado quando o usuário conclui a cerimônia de assinatura. Este é o fluxo do fluxo de trabalho
 
-![main-workflow](assets/update-signature.PNG)
+![fluxo de trabalho principal](assets/update-signature.PNG)
 
 Atualizar Status da Assinatura é a etapa de processo personalizada.
 O principal motivo para implementar a etapa de processo personalizada é estender um fluxo de trabalho do AEM. Este é o código personalizado usado para atualizar o status da assinatura.
@@ -71,7 +71,7 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Ativos
 
-O workflow de atualização de status de assinatura pode ser [baixado aqui](assets/update-signature-status-workflow.zip)
+O fluxo de trabalho de atualização de status de assinatura pode ser [baixado daqui](assets/update-signature-status-workflow.zip)
 
 ## Próximas etapas
 

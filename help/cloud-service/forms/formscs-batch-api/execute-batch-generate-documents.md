@@ -26,7 +26,7 @@ Para executar o lote, faça uma solicitação POST para a seguinte API
 ```
 
 Essa API espera um objeto json vazio como parâmetro no corpo da solicitação.
-Essa API retorna um URL exclusivo no cabeçalho de resposta identificado por **localização** chave.
+Esta API retorna uma URL exclusiva no cabeçalho de resposta identificado pela chave **location**.
 Uma solicitação de GET para esse URL exclusivo informará o status da execução do lote
 
 O vídeo a seguir demonstra o acionamento da configuração do lote

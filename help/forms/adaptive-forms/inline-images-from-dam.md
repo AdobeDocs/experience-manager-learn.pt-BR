@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Implantar no servidor
 
-* Baixe e instale o [biblioteca do cliente e imagens de amostra](assets/InlineDAMImage.zip) na sua instância do AEM usando o Gerenciador de pacotes do AEM.
-* Baixe e instale o [exemplo de formulário](assets/FieldInspectionForm.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
-* Aponte seu navegador para [FormulárioDeInspeçãoDeCampo](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Baixe e instale a [biblioteca do cliente e as imagens de exemplo](assets/InlineDAMImage.zip) na sua instância do AEM usando o Gerenciador de Pacotes AEM.
+* Baixe e instale o [formulário de amostra](assets/FieldInspectionForm.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
+* Aponte seu navegador para [FielInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Selecione uma das opções de fixação
 * Você deve ver a imagem exibida no formulário

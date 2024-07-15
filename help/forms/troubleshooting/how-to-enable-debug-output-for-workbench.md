@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como ativar a saída de depuração para o Workbench
 
-*Este vídeo percorre o processo para ativar a saída de depuração para o Workbench.*
+*Este vídeo percorre o processo para habilitar a saída de depuração para o Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

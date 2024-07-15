@@ -1,6 +1,6 @@
 ---
-title: Conversor do Dispatcher Converter
-description: Saiba como o Conversor do Dispatcher atualiza automaticamente as configurações existentes do AEM Dispatcher para serem compatíveis com o AEM as a Cloud Service.
+title: Dispatcher Converter
+description: Saiba como o Dispatcher Converter atualiza automaticamente as configurações existentes do AEM Dispatcher para serem compatíveis com o AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Conversor do Dispatcher Converter
+# Dispatcher Converter
 
-Saiba como o Conversor do Dispatcher atualiza automaticamente as configurações existentes do AEM Dispatcher para serem compatíveis com o AEM as a Cloud Service.
+Saiba como o Dispatcher Converter atualiza automaticamente as configurações existentes do AEM Dispatcher para serem compatíveis com o AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336695?quality=12&learn=on)

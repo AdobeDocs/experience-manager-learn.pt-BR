@@ -22,7 +22,7 @@ Neste artigo, analisaremos o uso da API de geolocalização do Google para preen
 
 As etapas a seguir foram seguidas para usar a API de geolocalização no Adaptive Forms.
 
-1. [Obter chave de API](https://developers.google.com/maps/documentation/javascript/get-api-key) do Google para usar a plataforma Google Maps. Você pode obter uma chave de avaliação válida por 1 ano.
+1. [Obtenha a Chave de API](https://developers.google.com/maps/documentation/javascript/get-api-key) do Google para usar a plataforma Google Maps. Você pode obter uma chave de avaliação válida por 1 ano.
 
 1. O fragmento de formulário adaptável foi criado com campos para manter o endereço atual
 
@@ -75,7 +75,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 }
 ```
 
-![Campos preenchidos com a API de geolocalização](assets/capture-4.gif)
+![Campos preenchidos com a api de geolocalização](assets/capture-4.gif)
 
 Na linha 1, usamos a API de geolocalização do HTML para obter a localização atual. Depois que a localização atual é obtida, passamos a localização atual para a função showPosition.
 
@@ -95,11 +95,11 @@ Para colocar esse recurso no servidor, siga as etapas a seguir
 
 * Instale e inicie o servidor do AEM Forms.
 > Esse recurso foi testado no AEM Forms 6.3 e posterior
-* [Obter a chave de API do Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importe os ativos relacionados a este artigo para o AEM.](assets/geolocationapi.zip)
-* [Abra o fragmento do Formulário adaptável no modo de edição.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+* [Obter a Chave de API do Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+* [Importar os ativos relacionados a este artigo para o AEM.](assets/geolocationapi.zip)
+* [Abra o fragmento de Formulário adaptável no modo de edição.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Abra o editor de regras para o componente Opção de imagem.
-* Substitua o &lt;your_api_key> com a chave de API do Google.
+* Substitua a &lt;your_api_key> pela chave de API do Google.
 * Salve as alterações.
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Clique no ícone &quot;geolocalização&quot;.

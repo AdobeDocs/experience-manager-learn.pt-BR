@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para criptografar a senha do keystore a ser usada em lc_turnkey.xml
 
-*Este vídeo aborda as etapas para criptografar a senha do Keystore a ser usada em lc_turnkey.xml.*
+*Este vídeo mostra as etapas para criptografar a senha do Keystore a ser usada em lc_turnkey.xml.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

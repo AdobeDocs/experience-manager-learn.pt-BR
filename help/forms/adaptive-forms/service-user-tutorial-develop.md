@@ -21,7 +21,7 @@ Este artigo o orienta pelo processo de criação de um usuário de serviço no A
 
 Em versões anteriores do Adobe Experience Manager (AEM), o resolvedor de recursos administrativos era usado para processamento de back-end, o que exigia acesso ao repositório. O uso do resolvedor de recursos administrativos foi descontinuado no AEM 6.3. Em vez disso, é usado um usuário do sistema com permissões específicas no repositório.
 
-Saiba mais sobre os detalhes de [criação e uso de usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Saiba mais sobre os detalhes da [criação e uso de usuários de serviço no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Este artigo aborda a criação de um usuário do sistema e a configuração das propriedades do mapeador do usuário.
 
@@ -31,8 +31,8 @@ Este artigo aborda a criação de um usuário do sistema e a configuração das 
 1. Clique em &quot;Criar usuário do sistema&quot;
 1. Defina o tipo de ID do usuário como &quot;dados&quot; e clique no ícone verde para concluir o processo de criação do usuário do sistema
 1. [Abrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Pesquisar por _Serviço Mapeador de usuário do Apache Sling Service_ e clique em para abrir as propriedades
-1. Clique em *+* ícone (mais) para adicionar o seguinte Service Mapping
+1. Pesquise por _Serviço Mapeador de Usuários do Apache Sling Service_ e clique em para abrir as propriedades
+1. Clique no ícone *+* (mais) para adicionar o seguinte Service Mapping
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -47,7 +47,7 @@ Também podemos obter o resolvedor de recursos em nome do usuário do serviço f
 1. Navegue até [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carregue e inicie o pacote OSGi
 1. Verifique se o pacote está no estado ativo
-1. Agora você criou um *Usuário do sistema* e também implantou o *Pacote de usuário do serviço*.
+1. Você agora criou com êxito um *Usuário do Sistema* e também implantou o *conjunto de Usuários de Serviço*.
 
    Para fornecer acesso a /content, forneça ao usuário do sistema (&quot;dados&quot;) permissões de leitura no nó de conteúdo.
 

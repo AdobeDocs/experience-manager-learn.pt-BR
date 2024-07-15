@@ -1,5 +1,5 @@
 ---
-title: Validador do Dispatcher AEM da nuvem 5
+title: Validador de Dispatcher AEM da nuvem 5
 description: Esse episódio se concentra um pouco mais no validador do dispatcher e nas nuances que ele fornece.
 version: Cloud Service
 role: Admin, Developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Validador do Dispatcher AEM da nuvem 5
+# Validador de Dispatcher AEM da nuvem 5
 
 Um exemplo rápido de como você pode usar o validador do dispatcher em seus workflows de desenvolvimento de AEM.
 

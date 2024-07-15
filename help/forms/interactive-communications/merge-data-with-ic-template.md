@@ -167,17 +167,17 @@ Para testar isso no servidor, siga as seguintes etapas:
 * Verifique se você adicionou a seguinte entrada na configuração do serviço do mapeador de usuário do Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Baixe e descompacte os ativos relacionados a este artigo no seu sistema de arquivos](assets/prefillservice.zip)
-* [Importe os seguintes pacotes usando o Gerenciador de pacotes do AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe os seguintes pacotes usando o Gerenciador de pacotes AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Implante o seguinte usando o console da Web AEM Felix](http://localhost:4502/system/console/bundles)
+* [Implante o seguinte usando o Console Web AEM Felix](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar Este pacote contém o código mencionado neste artigo.
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Verifique se o formulário adaptável está configurado para enviar ao Fluxo de trabalho do AEM conforme mostrado abaixo
   ![imagem](assets/generateic.PNG)
-* [Configure o modelo de workflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifique se a etapa do processo e os componentes de email de envio estão configurados de acordo com o seu ambiente
-* [Visualize o ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie
+* [Configure o modelo de fluxo de trabalho.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifique se a etapa do processo e os componentes de email de envio estão configurados de acordo com o seu ambiente
+* [Visualizar o ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie
 * O fluxo de trabalho deve ser chamado e o documento de canal de impressão IC deve ser enviado para o recipient especificado no componente de envio de email como um anexo

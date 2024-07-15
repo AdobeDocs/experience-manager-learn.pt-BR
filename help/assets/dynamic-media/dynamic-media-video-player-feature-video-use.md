@@ -66,7 +66,7 @@ O suporte para navegador HLS é o seguinte: para navegadores não compatíveis, 
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
-   <td> <p>Cromo</p> </td>
+   <td> <p>Chrome</p> </td>
    <td> <p>Transmissão de vídeo HLS</p> </td>
   </tr>
   <tr> 
@@ -86,7 +86,7 @@ O suporte para navegador HLS é o seguinte: para navegadores não compatíveis, 
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Android (navegador padrão)</p> </td>
+   <td> <p>Android (Navegador padrão)</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 

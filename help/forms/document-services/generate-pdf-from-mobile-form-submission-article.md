@@ -79,7 +79,7 @@ $("#file1").click();
 });
 ```
 
-[Perfil personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Usar o perfil personalizado facilita a manipulação de objetos DOM HTML do formulário móvel. Um elemento de arquivo oculto é adicionado ao HTML.jsp. Quando o usuário clica em &quot;Adicionar sua foto&quot;, acionamos o evento de clique do elemento do arquivo. Isso permite que o usuário navegue e selecione a fotografia a ser anexada. Em seguida, usamos o objeto FileReader do javascript para obter a string codificada em base64 da imagem. A cadeia de caracteres da imagem base64 é armazenada no campo de texto do formulário. Quando o formulário é enviado, extraímos esse valor e o inserimos no elemento img do XML. Esse XML é usado para mesclar com o xdp para gerar o pdf final.
+[Perfil Personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Usar o perfil personalizado facilita a manipulação de objetos DOM HTML do formulário móvel. Um elemento de arquivo oculto é adicionado ao HTML.jsp. Quando o usuário clica em &quot;Adicionar sua foto&quot;, acionamos o evento de clique do elemento do arquivo. Isso permite que o usuário navegue e selecione a fotografia a ser anexada. Em seguida, usamos o objeto FileReader do javascript para obter a string codificada em base64 da imagem. A cadeia de caracteres da imagem base64 é armazenada no campo de texto do formulário. Quando o formulário é enviado, extraímos esse valor e o inserimos no elemento img do XML. Esse XML é usado para mesclar com o xdp para gerar o pdf final.
 
 O perfil personalizado usado para este artigo foi disponibilizado para você como parte dos ativos deste artigo.
 
@@ -116,7 +116,7 @@ Para testar esse recurso em seu próprio servidor, siga as seguintes etapas:
 
 * [Baixe e instale o pacote associado a este artigo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Verifique se o URL de envio e o perfil de Renderização do HTML estão definidos corretamente, visualizando a página de propriedades do  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Verifique se a URL de envio e o perfil de Renderização de HTML estão definidos corretamente ao visualizar a página de propriedades do [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Visualizar o XDP como html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 

@@ -24,7 +24,7 @@ O relatório de transações para capturar o número de envios de formulários, 
 
 Por padrão, a gravação de transação está desativada. Para habilitar a gravação de transação, siga as etapas mencionadas abaixo:
 
-* [Abra o configMgr](http://localhost:4502/system/console/configMgr)
+* [Abrir o configMgr](http://localhost:4502/system/console/configMgr)
 * Procure por &quot;Relatórios de transações do Forms&quot;
 * Marque a caixa de seleção &quot;Registrar transações&quot;
 * Salve as alterações
@@ -37,9 +37,9 @@ Para exibir o relatório de transações, faça logon no AEM Forms como administ
 
 Selecionar ferramentas | Forms | Exibir Relatório de Transações
 
-ou exiba o relatório de transações clicando em [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+ou exiba o relatório de transações clicando [aqui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
-![TransactionReporting](assets/transactionreporting.gif)
+![RelatóriosDeTransação](assets/transactionreporting.gif)
 
 Na captura de tela acima de Documento processado é o número de documentos gerados usando os serviços de documento. Documentos renderizados é o número de documentos de Comunicação interativa (Web e Impressão) renderizados. Forms Enviados é o número de Envios de Formulários adaptáveis.
 
@@ -49,4 +49,4 @@ Ações como enviar um Formulário PDF, usar a interface do usuário do agente p
 
 Se você estiver visualizando o relatório de transações na instância do autor, verifique se a replicação inversa está configurada em todas as instâncias de publicação.
 
-Para saber mais sobre relatórios de transação [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para saber mais sobre o relatório de transações [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

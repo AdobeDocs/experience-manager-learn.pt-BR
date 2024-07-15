@@ -22,7 +22,7 @@ ht-degree: 0%
 Esta etapa do processo personalizado é criar um novo documento xml extraindo o nó de outro documento xml. Você precisaria usá-la quando quiser mesclar os dados enviados com o modelo xdp para gerar o pdf. Por exemplo, quando você envia um formulário adaptável, os dados que você precisa mesclar com o modelo xdp estão dentro do elemento de dados. Nesse caso, seria necessário criar outro documento xml extraindo o elemento de dados apropriado.
 
 A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
-![etapa do processo](assets/create-xml-process-step.png)
+![etapa-processo](assets/create-xml-process-step.png)
 Veja a seguir os parâmetros
 * Data.xml - O arquivo xml do qual você deseja extrair o nó
 * datatomerge.xml - O novo xml criado com o nó extraído

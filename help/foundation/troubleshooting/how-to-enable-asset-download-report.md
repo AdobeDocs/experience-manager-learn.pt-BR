@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Como habilitar o relatório de download de ativos
 
-*Este vídeo aborda as etapas para ativar o relatório de download de ativos.*
+*Este vídeo mostra as etapas para habilitar o relatório de download de ativos.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)

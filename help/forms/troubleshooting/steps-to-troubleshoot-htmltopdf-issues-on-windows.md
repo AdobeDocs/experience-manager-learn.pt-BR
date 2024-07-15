@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas específicos de htmlPDF em uma configuração do Windows
 
-*Este vídeo aborda o processo de solução de problemas específicos do htmlPDF em uma configuração do Windows.*
+*Este vídeo aborda o processo de solução de problemas específicos do HtmltoPDF em uma instalação do Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Arquivos imutáveis ou somente leitura do Dispatcher do AMS
+title: Arquivos imutáveis ou somente leitura do AMS Dispatcher
 description: Entender por que alguns arquivos são somente leitura ou não editáveis e como fazer as alterações funcionais desejadas
 version: 6.5
 topic: Administration, Development
@@ -32,7 +32,7 @@ Quando o AMS provisiona um sistema, ele implementa uma configuração de linha d
 O layout não impede que você altere o comportamento deles e substitua as alterações necessárias.  Em vez de alterar esses arquivos, você sobreporá seu próprio arquivo, que substitui o original.
 
 Isso também permite obter a garantia de que, quando o AMS corrigir os Dispatchers com as correções e os aprimoramentos de segurança mais recentes, eles não alterarão seus arquivos.  Dessa forma, você pode continuar a se beneficiar das melhorias e adotar apenas as alterações desejadas.
-![Mostra uma pista de boliche com uma bola rolando pela pista.  A bola tem uma seta com a palavra mostrando-lhe.  As proteções das canaletas estão levantadas e têm as palavras arquivos imutáveis acima delas.](assets/immutable-files/bowling-file-immutability.png "boliches-file-immutability")
+![Mostra uma pista de boliche com uma bola rolando pela pista.  A bola tem uma seta com a palavra mostrando-lhe.  As proteções das canaletas estão levantadas e têm as palavras arquivos imutáveis acima delas.](assets/immutable-files/bowling-file-immutability.png "imutabilidade de arquivo de boliche")
 Como ilustrado na figura acima, os arquivos imutáveis não impedem que você jogue o jogo.  Eles apenas impedem que você prejudique sua performance e o mantêm na pista.  Este método permite usar alguns recursos muito importantes:
 
 - As personalizações são tratadas em seus próprios espaços seguros
@@ -41,7 +41,7 @@ Como ilustrado na figura acima, os arquivos imutáveis não impedem que você jo
 - O teste da instalação básica com relação às configurações personalizadas pode ser feito simultaneamente para ajudar a discernir se os problemas são causados por personalizações ou por outros arquivos.
 
 
-Esta é uma lista típica de arquivos implantados com um Dispatcher:
+Esta é uma lista típica de arquivos implantados com uma Dispatcher:
 
 ```
 /etc/httpd/
@@ -186,7 +186,7 @@ Este é um exemplo de resposta de quais arquivos são imutáveis:
 
 ### Variáveis
 
-As variáveis permitem fazer alterações funcionais sem alterar os próprios arquivos de configuração.  Determinados elementos da configuração podem ser ajustados com o ajuste dos valores das variáveis.  Um exemplo que podemos destacar do arquivo `/etc/httpd/conf.d/dispatcher_vhost.conf` é mostrado aqui:
+As variáveis permitem fazer alterações funcionais sem alterar os próprios arquivos de configuração.  Determinados elementos da configuração podem ser ajustados com o ajuste dos valores das variáveis.  Um exemplo que podemos destacar do arquivo `/etc/httpd/conf.d/dispatcher_vhost.conf` é mostrado aqui:
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -199,7 +199,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Veja como a diretiva DispatcherLogLevel tem uma variável de `DISP_LOG_LEVEL` em vez do valor normal que você normalmente veria.  Acima dessa seção do código, você também verá uma instrução Include em um arquivo de variáveis.  O arquivo de variável `/etc/httpd/conf.d/variables/ams_default.vars` é o próximo que queremos ver.  Este é o conteúdo do arquivo de variáveis:
+Veja como a diretiva DispatcherLogLevel tem uma variável de `DISP_LOG_LEVEL` em vez do valor normal que você normalmente veria.  Acima dessa seção do código, você também verá uma instrução Include em um arquivo de variáveis.  O arquivo de variável `/etc/httpd/conf.d/variables/ams_default.vars` é o próximo que devemos verificar.  Este é o conteúdo do arquivo de variáveis:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -211,11 +211,11 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Você vê acima que o valor atual de `DISP_LOG_LEVEL` é `info`.  Podemos ajustar para rastrear ou depurar, ou o valor/nível do número de sua escolha.  Agora, em qualquer lugar que controle o nível do log, ele será ajustado automaticamente.
+Você vê acima que o valor atual da variável `DISP_LOG_LEVEL` é `info`.  Podemos ajustar para rastrear ou depurar, ou o valor/nível do número de sua escolha.  Agora, em qualquer lugar que controle o nível do log, ele será ajustado automaticamente.
 
 ### Método de sobreposição
 
-Você deve entender os arquivos de inclusão de nível superior, pois eles serão o ponto de partida para fazer personalizações.  Para começar com um exemplo simples, temos um cenário em que queremos adicionar um novo nome de domínio que pretendemos apontar para este Dispatcher.  O exemplo de domínio que usaremos is we-retail.adobe.com.  Começaremos copiando um arquivo de configuração existente para um novo, no qual poderemos adicionar as alterações:
+Você deve entender os arquivos de inclusão de nível superior, pois eles serão o ponto de partida para fazer personalizações.  Para começar com um exemplo simples, temos um cenário em que queremos adicionar um novo nome de domínio que pretendemos apontar para esta Dispatcher.  O exemplo de domínio que usaremos is we-retail.adobe.com.  Começaremos copiando um arquivo de configuração existente para um novo, no qual poderemos adicionar as alterações:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
@@ -259,13 +259,13 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Agora que atualizamos nossa `ServerName` e `ServerAlias` para corresponder aos novos nomes de domínio, bem como atualização de outros cabeçalhos de navegação estrutural.  Agora vamos ativar nosso novo arquivo para permitir que o Apache saiba como usar nosso novo arquivo:
+Atualizamos nossos `ServerName` e `ServerAlias` para corresponder aos novos nomes de domínio, bem como a atualização de outros cabeçalhos de navegação estrutural.  Agora vamos ativar nosso novo arquivo para permitir que o Apache saiba como usar nosso novo arquivo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Agora, o servidor Web Apache sabe que o domínio deve fornecer tráfego, mas ainda precisamos informar ao módulo Dispatcher que ele tem um novo nome de domínio para levar em conta.  Começaremos criando um novo `*_vhost.any` arquivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e dentro desse arquivo colocaremos o nome de domínio que queremos considerar:
+Agora, o servidor Web Apache sabe que o domínio deve fornecer tráfego, mas ainda precisamos informar ao módulo do Dispatcher que ele tem um novo nome de domínio para levar em conta.  Vamos começar criando um novo `*_vhost.any` arquivo `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any`. Dentro desse arquivo, colocaremos o nome de domínio que queremos considerar:
 
 ```
 "we-retail.adobe.com"
@@ -301,7 +301,7 @@ Depois:
 }
 ```
 
-Agora atualizamos o nome do farm e o &quot;include&quot; utilizado no `/virtualhosts` seção da configuração do farm.  Precisamos habilitar este novo arquivo farm para que ele possa ser usado na configuração em execução:
+Agora, atualizamos o nome do farm e o include que ele usa na seção `/virtualhosts` da configuração do farm.  Precisamos habilitar este novo arquivo farm para que ele possa ser usado na configuração em execução:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .

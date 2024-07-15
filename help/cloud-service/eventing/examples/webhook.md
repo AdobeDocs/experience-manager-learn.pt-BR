@@ -25,19 +25,19 @@ Saiba como receber eventos de AEM em um webhook e revisar os detalhes do evento,
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-Neste exemplo, utilizar uma variável fornecida por Adobe _webhook hospedado_ O permite que você receba eventos de AEM sem precisar configurar seu próprio webhook. Este webhook fornecido por Adobe está hospedado em [Falha](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web, propício à criação e à implantação de aplicativos da Web. No entanto, a opção de usar seu próprio webhook também está disponível, se preferir.
+Neste exemplo, utilizar um _webhook hospedado_ fornecido pelo Adobe permite receber eventos AEM sem a necessidade de configurar seu próprio webhook. Este webhook fornecido pelo Adobe está hospedado em [Glitch](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web propício à criação e implantação de aplicativos Web. No entanto, a opção de usar seu próprio webhook também está disponível, se preferir.
 
 ## Pré-requisitos
 
 Para concluir este tutorial, você precisa:
 
-- Ambiente as a Cloud Service AEM com [Evento AEM ativado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Ambiente AEM as a Cloud Service com [evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [Projeto do console do Adobe Developer configurado para eventos AEM](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [Projeto do Adobe Developer Console configurado para AEM Eventos](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
 >[!IMPORTANT]
 >
->O evento as a Cloud Service de AEM só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar o evento de AEM em seu ambiente as a Cloud Service AEM, entre em contato com [Equipe de evento do AEM](mailto:grp-aem-events@adobe.com).
+>O AEM as a Cloud Service Eventing só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar eventos de AEM no seu ambiente AEM as a Cloud Service, entre em contato com a [equipe de eventos de AEM](mailto:grp-aem-events@adobe.com).
 
 ## Acessar webhook
 
@@ -47,29 +47,29 @@ Para acessar o webhook fornecido pelo Adobe, siga estas etapas:
 
   ![Falha - webhook hospedado](../assets/examples/webhook/glitch-hosted-webhook.png)
 
-- Insira um nome exclusivo para seu webhook, por exemplo `<YOUR_PETS_NAME>-aem-eventing` e clique em **Conectar**. Você deve ver `Connected to: ${YOUR-WEBHOOK-URL}` aparecerá na tela.
+- Digite um nome exclusivo para o seu webhook, por exemplo `<YOUR_PETS_NAME>-aem-eventing` e clique em **Conectar**. Você deve ver a mensagem `Connected to: ${YOUR-WEBHOOK-URL}` aparecendo na tela.
 
   ![Falha - criar webhook](../assets/examples/webhook/glitch-create-webhook.png)
 
-- Anote o **URL do Webhook**. Você precisa disso mais tarde neste tutorial.
+- Anote a **URL do Webhook**. Você precisa disso mais tarde neste tutorial.
 
-## Configurar webhook no projeto de console do Adobe Developer
+## Configurar webhook no projeto do Adobe Developer Console
 
 Para receber eventos de AEM no URL do webhook acima, siga estas etapas:
 
-- No [Console do Adobe Developer](https://developer.adobe.com), navegue até o projeto e clique em para abri-lo.
+- Na [Adobe Developer Console](https://developer.adobe.com), navegue até o projeto e clique em para abri-lo.
 
-- Em **Produtos e serviços** clique em reticências `...` ao lado do cartão eventos desejado que deve enviar eventos AEM para o webhook e selecione **Editar**.
+- Na seção **Produtos e serviços**, clique nas reticências `...` ao lado do cartão de eventos desejado que deve enviar eventos AEM para o webhook e selecione **Editar**.
 
-  ![Edição de projeto do console do Adobe Developer](../assets/examples/webhook/adobe-developer-console-project-edit.png)
+  ![Edição de projeto do Adobe Developer Console](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
-- No recém-aberto **Configurar registro de eventos** clique em **Próxima** para prosseguir para **Como receber eventos** etapa.
+- Na caixa de diálogo **Configurar registro de evento** recém-aberta, clique em **Avançar** para prosseguir para a etapa **Como receber eventos**.
 
-  ![Configuração de projeto do console do Adobe Developer](../assets/examples/webhook/adobe-developer-console-project-configure.png)
+  ![Configuração do projeto do Adobe Developer Console](../assets/examples/webhook/adobe-developer-console-project-configure.png)
 
-- No **Como receber eventos** etapa, selecione **Webhook** e cole a variável **URL do Webhook** você copiou anteriormente do webhook hospedado pelo Glitch e clique em **Salvar eventos configurados**.
+- Na etapa **Como receber eventos**, selecione a opção **Webhook** e cole a **URL do Webhook** copiada anteriormente do webhook hospedado por Falha e clique em **Salvar eventos configurados**.
 
-  ![Webhook de projeto do console do Adobe Developer](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
+  ![Webhook do Adobe Developer Console Project](../assets/examples/webhook/adobe-developer-console-project-webhook.png)
 
 - Na página do webook Glitch, você deve ver uma solicitação do GET, é uma solicitação de desafio enviada pelo Adobe I/O Events para verificar o URL do webhook.
 
@@ -78,17 +78,17 @@ Para receber eventos de AEM no URL do webhook acima, siga estas etapas:
 
 ## Acionar eventos de AEM
 
-Para acionar eventos de AEM do seu ambiente as a Cloud Service AEM que foi registrado no projeto do Adobe Developer Console acima, siga estas etapas:
+Para acionar eventos de AEM do seu ambiente do AEM as a Cloud Service que foi registrado no projeto do Adobe Developer Console acima, siga estas etapas:
 
-- Acesse e faça logon no ambiente de autor do AEM as a Cloud Service por meio do [Cloud Manager](https://my.cloudmanager.adobe.com/).
+- Acesse e faça logon no ambiente de criação do AEM as a Cloud Service via [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
-- Dependendo do **Eventos Assinados**, criar, atualizar, excluir, publicar ou desfazer a publicação de um fragmento de conteúdo.
+- Dependendo dos seus **Eventos nos quais você se inscreveu**, crie, atualize, exclua, publique ou cancele a publicação de um Fragmento de conteúdo.
 
 ## Revisar detalhes do evento
 
 Depois de concluir as etapas acima, você deve ver os eventos de AEM sendo entregues ao webhook. Procure a solicitação POST na página do webhook Falha.
 
-![Falha - solicitação POST](../assets/examples/webhook/glitch-post-request.png)
+![Falha - Solicitação POST](../assets/examples/webhook/glitch-post-request.png)
 
 Estes são os principais detalhes da solicitação POST:
 
@@ -154,8 +154,8 @@ Estes são os principais detalhes da solicitação POST:
 }
 ```
 
-Você pode ver que os detalhes do evento AEM têm todas as informações necessárias para processar o evento no webhook. Por exemplo, o tipo de evento (`type`), fonte do evento (`source`), id de evento (`event_id`), hora do evento (`time`) e dados do evento (`data`).
+Você pode ver que os detalhes do evento AEM têm todas as informações necessárias para processar o evento no webhook. Por exemplo, o tipo de evento (`type`), a origem do evento (`source`), a ID do evento (`event_id`), a hora do evento (`time`) e os dados do evento (`data`).
 
 ## Recursos adicionais
 
-- [Código de origem do webhook com falha](https://glitch.com/edit/#!/adorável-montanha-russa-antiga) O está disponível para referência.
+- [O código de origem do webhook com falha](https://glitch.com/edit/#!/adorável-montanha-russa-antiga) está disponível para referência.

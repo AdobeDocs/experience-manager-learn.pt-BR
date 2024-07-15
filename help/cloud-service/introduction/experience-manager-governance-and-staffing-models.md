@@ -43,7 +43,7 @@ Há dois fluxos de operacionalização para [!DNL AEM Sites] e [!DNL AEM Assets]
 
 ### Funções de alto nível do ativo AEM
 
-**Lacuna geral:** Essa linha de base suporta modelos centralizados e descentralizados. Se você tem um modelo descentralizado, AEM pode ser usado de forma abstrata. Observe que a função Proprietário do produto deve ser usada de forma criativa, mas você também precisa ter um Proprietário do produto que possua os diferentes estilos para um tipo de ativo e outro que supervisione toda a organização.
+**Lacuna geral:** esta linha de base oferece suporte a modelos centralizados e descentralizados. Se você tem um modelo descentralizado, AEM pode ser usado de forma abstrata. Observe que a função Proprietário do produto deve ser usada de forma criativa, mas você também precisa ter um Proprietário do produto que possua os diferentes estilos para um tipo de ativo e outro que supervisione toda a organização.
 
 1. Funções básicas de execução e operação
 
@@ -59,7 +59,7 @@ Há dois fluxos de operacionalização para [!DNL AEM Sites] e [!DNL AEM Assets]
    * Arquiteto de negócios — desenvolve requisitos para auxiliar em marcos técnicos e iniciativas estratégicas; pode ser compensado com um proprietário de produto adicional
    * Arquiteto técnico — alguém que tem compreensão de nível empresarial e está constantemente presente em toda a organização. Essa função serve como ponto central da verdade do DAM.
 
-**Exemplos de cenários**
+**Cenários de exemplo**
 
 1. **Executar e operar:**
 
@@ -81,11 +81,11 @@ Veja a seguir exemplos de funções de um cenário leve (empresa de vestuário e
    * 4 principais administradores SME por marca
    * 1 Arquiteto técnico
 
-### Alto nível [!DNL AEM Sites] funções
+### Funções de alto nível [!DNL AEM Sites]
 
 1. Execução e operação básicas
 
-   **Lacuna geral:** Os desenvolvedores de CSS criam novas capas para os componentes. O consultor de negócios Adobe Sr, Joseph Van Buskirk, recomenda &quot;Obter componentes sem cortinas e sistemas de estilo. Essa é a função que gera economia de custos. 80% das experiências criadas devem ser criadas usando componentes principais ou criados anteriormente.&quot; O objetivo é redefinir os objetivos dos componentes principais ou personalizados com novos estilos usando um desenvolvedor de CSS (ou equipe de desenvolvimento de front-end) .
+   **Lacuna geral:** desenvolvedores de CSS criam novas capas para componentes. O consultor de negócios Adobe Sr, Joseph Van Buskirk, recomenda &quot;Obter componentes sem cortinas e sistemas de estilo. Essa é a função que gera economia de custos. 80% das experiências criadas devem ser criadas usando componentes principais ou criados anteriormente.&quot; O objetivo é redefinir os objetivos dos componentes principais ou personalizados com novos estilos usando um desenvolvedor de CSS (ou equipe de desenvolvimento de front-end) .
 
    Exemplos de funções:
 
@@ -126,12 +126,12 @@ Veja a seguir exemplos de funções para um cenário de cliente leve e pesado:
 
 ### Principais pontos
 
-**Entender os arquétipos** — Comece devagar, entenda e analise os arquétipos. Seja criativo e flexível, tendo em mente que não há um modelo correto a ser seguido.
+**Entender os arquétipos** — Começar devagar, entender e analisar os arquétipos. Seja criativo e flexível, tendo em mente que não há um modelo correto a ser seguido.
 
 **Entenda seu roteiro** - Algumas organizações têm muitos marcos que desejam executar. Esteja preparado para alocar mais recursos técnicos do que você pode estimar.
 
-**Aproveitar recursos internos** - As lacunas podem surgir inesperadamente. Talvez você possa preenchê-los mais rapidamente fornecendo membros da equipe interna, em vez de pesquisar fora da organização.
+**Aproveitar recursos internos** - As lacunas podem aparecer inesperadamente. Talvez você possa preenchê-los mais rapidamente fornecendo membros da equipe interna, em vez de pesquisar fora da organização.
 
-Para uma discussão mais detalhada de Governança e Modelos e Arquétipos de Pessoal, ouça esta discussão do painel de uma hora: [Arquétipos de função e Criação de uma estrutura operacional para [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Para uma discussão mais aprofundada sobre Governança e Modelos e Arquétipos de Equipe, ouça esta discussão de uma hora do painel: [Arquétipos de Função e Criação de uma Estrutura Operacional para [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Saiba mais sobre estratégia e liderança de pensamento na [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

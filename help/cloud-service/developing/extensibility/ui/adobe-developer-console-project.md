@@ -1,6 +1,6 @@
 ---
-title: Criar um projeto do Console do Adobe Developer para extensibilidade da interface do AEM
-description: Saiba como criar um projeto do Console do Adobe Developer que define seu acesso a outros serviços da Adobe e gerencia suas implantações.
+title: Criar um projeto do Adobe Developer Console para extensibilidade da interface do AEM
+description: Saiba como criar um projeto do Adobe Developer Console que define seu acesso a outros serviços da Adobe e gerencia suas implantações.
 version: Cloud Service
 feature: Developer Tools
 topic: Development
@@ -28,6 +28,6 @@ Crie um projeto do Adobe Developer Console que defina seu acesso a outros servi�
 
 >[!IMPORTANT]
 >
-> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a criação de projetos do Console do Adobe Developer. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
+> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a criação de projetos no Adobe Developer Console. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
 
-Consulte a documentação do Adobe Developer para obter uma [apresentação detalhada da criação de um projeto do Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).
+Consulte a documentação do Adobe Developer para obter uma [apresentação detalhada sobre como criar um projeto do Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).

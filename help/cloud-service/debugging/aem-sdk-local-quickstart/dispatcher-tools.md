@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de depuração do Dispatcher
-description: As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM Cloud Service AEM como um Dispatcher do serviço de publicação do localmente. A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
+description: As Ferramentas do Dispatcher fornecem um ambiente Web Apache contido que pode ser usado para simular AEM como um servidor Cloud Service Publish Dispatcher do serviço AEM. A depuração dos registros e do conteúdo do cache das ferramentas do Dispatcher pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 feature: Dispatcher
 jira: KT-5918
 topic: Development
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 # Ferramentas de depuração do Dispatcher
 
-As Ferramentas do Dispatcher fornecem um ambiente contido do Apache Web Server que pode ser usado para simular o AEM Cloud Service AEM como um Dispatcher do serviço de publicação do localmente.
+As Ferramentas do Dispatcher fornecem um ambiente Web Apache contido que pode ser usado para simular AEM como um servidor Cloud Service Publish Dispatcher do serviço AEM.
 
-A depuração dos registros das ferramentas do Dispatcher e do conteúdo do cache pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
+A depuração dos registros e do conteúdo do cache das ferramentas do Dispatcher pode ser essencial para garantir que o aplicativo AEM completo e as configurações de cache e segurança estejam corretas.
 
 >[!NOTE]
 >
->Como as Ferramentas do Dispatcher são baseadas em contêiner, cada vez que ele é reiniciado, os logs anteriores e o conteúdo do cache são destruídos.
+>Como as Ferramentas do Dispatcher são baseadas em contêiner, sempre que elas são reiniciadas, os registros e o conteúdo do cache anteriores são destruídos.
 
 ## Logs de ferramentas do Dispatcher
 
-Os logs das Ferramentas do Dispatcher estão disponíveis por meio da `stdout` ou o `bin/docker_run` ou com mais detalhes, disponíveis no contêiner Docker em `/etc/https/logs`.
+Os logs das Ferramentas do Dispatcher estão disponíveis por meio do comando `stdout` ou `bin/docker_run`, ou com mais detalhes, disponíveis no contêiner Docker em `/etc/https/logs`.
 
-Consulte [Logs do Dispatcher](./logs.md#dispatcher-logs) para obter instruções sobre como acessar diretamente os logs do contêiner Docker das Ferramentas do Dispatcher.
+Consulte [logs do Dispatcher](./logs.md#dispatcher-logs) para obter instruções sobre como acessar diretamente os logs do contêiner Docker das Ferramentas do Dispatcher.
 
 ## Cache de ferramentas do Dispatcher
 
 ### Acesso a logs no container do Docker
 
-O cache do Dispatcher pode ser acessado diretamente no container do Docker em ` /mnt/var/www/html`.
+O cache do Dispatcher pode estar acessando diretamente no contêiner Docker em ` /mnt/var/www/html`.
 
 ```shell
 $ docker ps
@@ -55,7 +55,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copiar os logs do Docker para o sistema de arquivos local
 
-Os logs do Dispatcher podem ser copiados do contêiner do Docker em `/mnt/var/www/html` ao sistema de arquivos local para inspeção usando suas ferramentas favoritas. Observe que essa é uma cópia point-in-time e não fornece atualizações em tempo real para o cache.
+Os logs do Dispatcher podem ser copiados do contêiner Docker em `/mnt/var/www/html` para o sistema de arquivos local para inspeção usando suas ferramentas favoritas. Observe que essa é uma cópia point-in-time e não fornece atualizações em tempo real para o cache.
 
 ```shell
 $ docker ps

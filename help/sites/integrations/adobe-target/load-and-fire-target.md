@@ -28,19 +28,19 @@ Saiba como carregar, transmitir parâmetros para solicitação de página e acio
 
 ## Regra de carregamento de página
 
-A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da página AEM é carregada, ela aciona um evento `cmp:show` . No vídeo, a variável `tags Library Loaded` A regra é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
+A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da Página AEM é carregada, ela aciona um evento `cmp:show`. No vídeo, a regra `tags Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
 
 ### Evento de exibição de página personalizada{#page-event}
 
-![Configuração de evento e código personalizado mostrados na página](assets/load-and-fire-target-call.png)
+![Configuração de evento mostrada na página e código personalizado](assets/load-and-fire-target-call.png)
 
-Na propriedade tags, adicione um novo **Evento** para o **Regra**
+Na propriedade de marcas, adicione um novo **Evento** à **Regra**
 
-+ __Extensão:__ Núcleo
-+ __Tipo de evento:__ Custom Code
-+ __Nome:__ Página Mostrar manipulador de eventos (ou algo descritivo)
++ __Extensão:__ Principal
++ __Tipo de evento:__ código personalizado
++ __Nome:__ Manipulador de eventos de Exibição de Página (ou algo descritivo)
 
-Toque no __Abrir editor__ e cole no seguinte trecho de código. Este código __deve__ ser adicionado ao __Configuração de evento__ e uma __Ação__.
+Toque no botão __Abrir Editor__ e cole no seguinte trecho de código. Este código __deve__ ser adicionado à __Configuração do Evento__ e a uma __Ação__ subsequente.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Uma função personalizada define o `pageShownEventHandler`, e ouve eventos emitidos pelos Componentes principais do AEM, deriva as informações relevantes do Componente principal, empacota-o em um objeto de evento e aciona as tags Evento com as informações do evento derivado em sua carga.
+Uma função personalizada define o `pageShownEventHandler` e escuta os eventos emitidos pelos Componentes Principais do AEM, deriva as informações relevantes do Componente Principal, empacota-as em um objeto de evento e aciona o Evento de tags com as informações do evento derivado em sua carga.
 
-A regra de tags é acionada usando o da tag `trigger(...)` função que é __somente__ disponível em uma definição de trecho de código personalizado do Evento de regra.
+A Regra de marcas é disparada usando a função `trigger(...)` das marcas, que é __only__ disponível em uma definição de trecho de código Personalizado do Evento de Regra.
 
-A variável `trigger(...)` A função utiliza um objeto de evento como um parâmetro que, por sua vez, é exposto em tags Elementos de dados, por outro nome reservado em tags chamadas `event`. Os elementos de dados nas tags agora podem fazer referência a dados desse objeto de evento da `event` objeto usando sintaxe como `event.component['someKey']`.
+A função `trigger(...)` usa um objeto de evento como um parâmetro que, por sua vez, é exposto em Elementos de Dados de marcas por outro nome reservado em marcas chamadas `event`. Agora os elementos de dados nas marcas podem fazer referência a dados desse objeto de evento do objeto `event` usando uma sintaxe como `event.component['someKey']`.
 
-Se `trigger(...)` for usado fora do contexto de um tipo de evento Código personalizado do evento (por exemplo, em uma Ação), o erro de JavaScript `trigger is undefined` é lançado no site integrado à propriedade das tags.
+Se `trigger(...)` for usado fora do contexto de um tipo de evento de Código personalizado do evento (por exemplo, em uma Ação), o erro de JavaScript `trigger is undefined` será lançado no site integrado à propriedade de marcas.
 
 
 ### Elementos de dados
 
 ![Elementos de dados](assets/data-elements.png)
 
-Os elementos de dados das tags mapeiam os dados do objeto de evento [acionado no evento personalizado Exibição de página](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados de código personalizado da extensão principal.
+Os elementos de dados de marcas mapeiam os dados do objeto de evento [acionado no evento personalizado Página exibida](#page-event) para variáveis disponíveis no Adobe Target, por meio do Tipo de elemento de dados Código personalizado da extensão principal.
 
 #### Elemento de dados da ID da página
 
@@ -105,7 +105,7 @@ if (event && event.id) {
 
 Esse código retorna a ID exclusiva gerada pelo Componente principal.
 
-![ID da página](assets/pageid.png)
+![ID da Página](assets/pageid.png)
 
 ### Elemento de dados do caminho da página
 
@@ -146,7 +146,7 @@ Esse código retorna o título da página AEM.
 #### Solução
 
 Os clientes do, às vezes, usam instâncias baseadas em nuvem com o Target para testes ou fins de prova de conceito simples. Esses domínios e muitos outros fazem parte da Lista de sufixos públicos.
-Se estiver usando esses domínios, os navegadores modernos não salvarão os cookies, a menos que você personalize o `cookieDomain` configuração usando `targetGlobalSettings()`.
+Se estiver usando esses domínios, os navegadores modernos não salvarão os cookies, a menos que você personalize a configuração de `cookieDomain` usando `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Links de suporte
 
-+ [Documentação da Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Documentação da Camada de Dados do Cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Uso da Camada de dados do cliente Adobe e da Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
++ [Usando a Camada de Dados do Cliente Adobe e a Documentação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
 + [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

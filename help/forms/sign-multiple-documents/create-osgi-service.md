@@ -165,7 +165,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obter próximo formulário para assinar
 
-O código a seguir foi usado para obter o próximo formulário para assinatura de determinada customerID com status 0. Se a consulta sql não retornar nenhuma linha, retornamos a string **&quot;AllDone&quot;** que indica que não há mais formulários para assinatura para a id do cliente fornecida.
+O código a seguir foi usado para obter o próximo formulário para assinatura de determinada customerID com status 0. Se a consulta sql não retornar nenhuma linha, retornaremos a cadeia de caracteres **&quot;AllDone&quot;**, que indica que não há mais formulários para assinatura para a ID de cliente fornecida.
 
 ```java
 @Override
@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## Ativos
 
-O pacote OSGi com os serviços mencionados acima pode ser [baixado aqui](assets/sign-multiple-forms.jar)
+O pacote OSGi com os serviços mencionados acima pode ser [baixado daqui](assets/sign-multiple-forms.jar)
 
 ## Próximas etapas
 

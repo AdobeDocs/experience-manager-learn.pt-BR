@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * Copie e cole suas credenciais de serviço no arquivo de recurso service_token.json no projeto.
 * Abra o arquivo AssemblePDFFiles.java e especifique a pasta na qual deseja salvar os arquivos de PDF gerados
-* Abra ExecuteAssemblerService.java. Definir o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
+* Abra ExecuteAssemblerService.java. Defina o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
 * Remova o comentário das linhas apropriadas para testar a montagem de dois ou mais arquivos PDF
 * Execute o ExecuteAssemblerService.java como aplicativo java
 
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 * Copie e cole suas credenciais de serviço no arquivo de recurso service_token.json no projeto.
 * Abra o arquivo PDFAUtilities.java e especifique a pasta na qual deseja salvar os arquivos de PDF gerados.
-* Abra ExecuteAssemblerService.java. Definir o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
+* Abra ExecuteAssemblerService.java. Defina o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
 * Remova o comentário das linhas apropriadas para testar operações de PDFA.
 * Execute o ExecuteAssemblerService.java como aplicativo java.
 
 
 
 >[!NOTE]
-> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para passar por isso, certifique-se de dar a [permissões apropriadas para o usuário da conta técnica no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para superar isso, forneça as [permissões apropriadas ao usuário técnico da conta no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
 **Usuários do AEM Forms** é a função que usei neste curso.

@@ -21,15 +21,15 @@ ht-degree: 1%
 
 # Exportar fragmento de conteúdo para XML
 
-![Exemplo de extensão de menu do cabeçalho do Editor de fragmento de conteúdo](./assets/export-to-xml/hero.png){align="center"}
+![Exemplo de extensão de menu do cabeçalho do Editor de Fragmento do Conteúdo](./assets/export-to-xml/hero.png){align="center"}
 
-Botões personalizados podem ser adicionados ao menu de cabeçalho do Editor de fragmento de conteúdo usando o `headerMenu` ponto de extensão. Esse exemplo mostra como adicionar um botão ao menu de cabeçalho e como lidar com o evento de clique para exportar o fragmento de conteúdo ativo como XML ou CSV.
+Botões personalizados podem ser adicionados ao menu de cabeçalho do Editor de fragmento de conteúdo usando o ponto de extensão `headerMenu`. Esse exemplo mostra como adicionar um botão ao menu de cabeçalho e como lidar com o evento de clique para exportar o fragmento de conteúdo ativo como XML ou CSV.
 
 Os botões de cabeçalho podem existir como um único botão ou como um botão com subitens. Esse exemplo mostra como implementar um botão com subitens. No entanto, inclui o código comentado para implementar um único botão.
 
 ## Ponto de extensão
 
-Este exemplo se estende ao ponto de extensão `headerBar` para adicionar um botão personalizado ao Editor de fragmento de conteúdo.
+Este exemplo estende o ponto de extensão `headerBar` para adicionar um botão personalizado ao Editor de Fragmento de Conteúdo.
 
 | IU do AEM estendida | Ponto de extensão |
 | ------------------------ | --------------------- | 
@@ -45,7 +45,7 @@ O código mostra como o conteúdo do fragmento de conteúdo pode ser obtido no a
 
 `ExtensionRegistration.js`, mapeado para a rota index.html, é o ponto de entrada para a extensão AEM e define:
 
-+ O local do botão de extensão é exibido (`headerMenu`) na experiência de criação do AEM
++ O local do botão de extensão aparece (`headerMenu`) na experiência de criação do AEM
 + A definição do botão de extensão na função getButton()
 + O manipulador de cliques do botão, da função onClick() ou de uma lista de subitens e seus manipuladores de cliques.
 
@@ -148,13 +148,13 @@ export default ExtensionRegistration;
 
 #### Dados do fragmento de conteúdo
 
-O fragmento de conteúdo ativo pode ser recuperado usando o `getContentFragment()` no `guestConnection.host.contentFragment` objeto.
+O Fragmento de Conteúdo ativo pode ser recuperado usando o método `getContentFragment()` no objeto `guestConnection.host.contentFragment`.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-A variável `contentFragment` O objeto contém todas as informações sobre o fragmento de conteúdo, incluindo caminho, modelo, metadados, conteúdo principal e quaisquer variantes.
+O objeto `contentFragment` contém todas as informações sobre o fragmento de conteúdo, incluindo caminho, modelo, metadados, conteúdo principal e quaisquer variantes.
 
 ```json
 {

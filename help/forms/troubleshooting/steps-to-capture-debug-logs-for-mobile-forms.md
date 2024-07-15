@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para capturar logs de depuração para formulários móveis
 
-*Este vídeo aborda as etapas para capturar logs de depuração para formulários móveis.*
+*Este vídeo mostra as etapas para capturar logs de depuração para formulários móveis.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

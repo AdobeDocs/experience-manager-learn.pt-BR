@@ -25,9 +25,9 @@ O código na etapa de processo personalizada faz o seguinte
 
 * Consulte todos os anexos de formulário adaptável na pasta de carga útil. O nome da pasta é passado como um argumento de processo para a etapa do processo.
 
-* Preencher `listOfDocuments` variável de fluxo de trabalho
-* Preencher `attachmentNames` variável de fluxo de trabalho
-* Defina o valor da variável de workflow (`no_of_attachments`)
+* Popular a variável de fluxo de trabalho `listOfDocuments`
+* Popular a variável de fluxo de trabalho `attachmentNames`
+* Definir o valor da variável de fluxo de trabalho (`no_of_attachments`)
 
 ```java
  package com.aemforms.formattachments.core;
@@ -113,9 +113,9 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >[!NOTE]
 >
 > Verifique se você tem as seguintes variáveis definidas no fluxo de trabalho para que o código funcione
-> *listOfDocuments* - variável do tipo ArrayList of Documents
-> *attachmentNames* - variável de tipo ArrayList of String
-> *no_of_attachment* - variável de tipo Double
+> *listOfDocuments* - variável do tipo ArrayList de Documentos
+> *attachmentNames* - variável do tipo ArrayList de String
+> *no_of_attachments* - variável de tipo Double
 
 ## Próximas etapas
 

@@ -32,8 +32,8 @@ Este tutorial aborda os seguintes tópicos:
 - Uma breve visão geral do Universal Editor
 - Configuração do ambiente de desenvolvimento local
    - **SDK do AEM**: fornece o conteúdo armazenado nos Fragmentos de conteúdo para o aplicativo React usando APIs do GraphQL.
-   - **aplicativo React**: uma interface simples que exibe o conteúdo do AEM.
-   - **Serviço de Editor Universal**: a _cópia local do serviço Editor Universal_ que vincula o Editor universal e o SDK do AEM.
+   - **Aplicativo React**: uma interface de usuário simples que exibe o conteúdo do AEM.
+   - **Serviço do Editor Universal**: uma _cópia local do serviço do Editor Universal_ que associa o Editor Universal e o SDK do AEM.
 - Como instrumentar o aplicativo React para editar o conteúdo usando o Editor universal
 - Como editar o conteúdo do aplicativo React usando o Editor universal
 
@@ -50,13 +50,13 @@ O Editor universal capacita os autores e desenvolvedores de conteúdo (front-end
 
 ## Amostra do aplicativo React
 
-Este tutorial usa [**Equipes da WKND**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) como a amostra do aplicativo React. A variável **Equipes da WKND** O aplicativo React exibe uma lista de membros da equipe e seus detalhes.
+Este tutorial usa [**Equipes WKND**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) como um aplicativo React de exemplo. O aplicativo React **Equipes da WKND** exibe uma lista de membros da equipe e seus detalhes.
 
-Os detalhes da Equipe, como título, descrição e membros da equipe, são armazenados como _Equipe_ Fragmentos de conteúdo no AEM. Da mesma forma, os detalhes da Pessoa, como nome, biografia e foto do perfil, são armazenados como _Person_ Fragmentos de conteúdo no AEM.
+Os detalhes da Equipe, como título, descrição e membros da equipe, são armazenados como Fragmentos de conteúdo da _Equipe_ no AEM. Da mesma forma, os detalhes de Pessoa, como nome, biografia e imagem do perfil, são armazenados como Fragmentos de conteúdo de _Pessoa_ no AEM.
 
-O conteúdo do aplicativo React é fornecido por AEM usando APIs do GraphQL e a interface do usuário é criada usando dois componentes React, `Teams` e `Person`.
+O conteúdo do aplicativo React é fornecido pelo AEM usando APIs GraphQL e a interface do usuário é criada usando dois componentes React, `Teams` e `Person`.
 
-Um tutorial correspondente está disponível para saber como criar a **Equipes da WKND** aplicativo React. Você pode encontrar o tutorial [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+Um tutorial correspondente está disponível para saber como criar o aplicativo React **WKND Teams**. Você pode encontrar o tutorial [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
 
 ## Próxima etapa
 

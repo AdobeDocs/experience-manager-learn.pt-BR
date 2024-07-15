@@ -31,13 +31,13 @@ A variável de string pode ser preenchida pelo Xpathing na variável XML. Essa v
 >
 >**/afData/afUnboundData/data/submitterName**
 
-Os dados do formulário adaptável são armazenados no elemento de dados, como mostrado acima. **_No XPath submitterName acima, está o nome do campo de texto no Formulário adaptável._**
+Os dados do formulário adaptável são armazenados no elemento de dados, como mostrado acima. **_No XPath submitterName acima é o nome do campo de texto no Formulário Adaptável._**
 
 >[!NOTE]
 >
 >**AEM Forms 6.5.0** - Quando estiver criando uma variável do tipo XML para capturar os dados enviados no modelo de fluxo de trabalho, não associe o XSD à variável. Isso ocorre porque quando você envia o Formulário adaptável baseado em XSD, os dados enviados não são compatíveis com o XSD. Os dados de reclamação de XSD estão entre o elemento /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** - Se associar XSD à variável XML, você poderá navegar pelos elementos do esquema para fazer o mapeamento da variável. Você não poderá acessar dados de formulário não vinculados a elementos do esquema. Se o caso de uso for acessar dados vinculados a elementos de esquema e dados não vinculados, não vincule o esquema à variável XML no fluxo de trabalho. Será necessário usar a expressão XPath apropriada para obter os dados necessários
+>**AEM Forms 6.5.1** - Se você associar XSD à variável XML, poderá navegar pelos elementos do esquema para fazer o mapeamento da variável. Você não poderá acessar dados de formulário não vinculados a elementos do esquema. Se o caso de uso for acessar dados vinculados a elementos de esquema e dados não vinculados, não vincule o esquema à variável XML no fluxo de trabalho. Será necessário usar a expressão XPath apropriada para obter os dados necessários
 
 ## Criando variáveis XML
 
@@ -45,7 +45,7 @@ Os dados do formulário adaptável são armazenados no elemento de dados, como m
 
 ### Usando esquema com variável XML
 
-**Mapeando uma variável XML com esquema. Usar esse recurso a partir do AEM Forms 6.5.1**
+**Mapeando uma variável XML com esquema. Use esse recurso com o AEM Forms 6.5.1 em diante**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ Os dados do formulário adaptável são armazenados no elemento de dados, como m
 Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
 * [Baixar e importar os ativos para AEM usando o gerenciador de pacotes](assets/xmlandstringvariable.zip)
-* [Explorar o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para entender as variáveis usadas no workflow
-* [Configurar o serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [Abra o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
+* [Explore o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para entender as variáveis usadas no fluxo de trabalho
+* [Configurar o Serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Abrir o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie o formulário.

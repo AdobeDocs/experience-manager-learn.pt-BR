@@ -1,5 +1,5 @@
 ---
-title: Visualização do HTML do Designer Preview- como ativar o HTML de visualização
+title: Visualização do HTML de visualização do Designer - como ativar o HTML de visualização
 description: Etapas para configurar a Visualização do HTML no Designer
 type: Troubleshooting
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Como habilitar o HTML de visualização
 
-*Este vídeo aborda as etapas para ativar o HTML de visualização no Designer.*
+*Este vídeo mostra as etapas para habilitar o HTML de visualização no Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)

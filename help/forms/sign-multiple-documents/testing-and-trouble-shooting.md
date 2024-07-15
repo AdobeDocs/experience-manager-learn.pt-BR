@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Visualizar o formulário de refinamento
 
-O caso de uso é acionado quando o agente de atendimento ao cliente preenche e envia [formulário de refinanciamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+O caso de uso é acionado quando o agente de atendimento ao cliente preenche e envia o [formulário de refinamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 O fluxo de trabalho Assinar vários Forms recebe acionadores neste envio de formulário e o cliente recebe uma notificação por email com um link para iniciar o processo de preenchimento e assinatura do formulário.
 
 ## Preencher formulários no pacote
 
-O cliente é apresentado para preencher e assinar o primeiro formulário no pacote. Ao assinar o formulário com êxito, o cliente pode navegar até o próximo formulário no pacote. Depois que todos os formulários forem preenchidos e assinados, o cliente será apresentado ao &quot;**TudoConcluído**&quot;.
+O cliente é apresentado para preencher e assinar o primeiro formulário no pacote. Ao assinar o formulário com êxito, o cliente pode navegar até o próximo formulário no pacote. Depois que todos os formulários forem preenchidos e assinados, o cliente receberá o formulário &quot;**AllDone**&quot;.
 
 ## Solução de problemas
 
@@ -50,4 +50,4 @@ Ao assinar com êxito um formulário no pacote, o fluxo de trabalho Atualizar st
 
 ### Não vendo o formulário AllDone
 
-Quando não houver mais formulários para fazer logon no pacote, o formulário AllDone é apresentado ao usuário.Se você não estiver vendo o formulário AllDone, verifique o URL usado na linha 33 do arquivo GetNextFormToSign.js que faz parte do **getnextform** biblioteca do cliente.
+Quando não houver mais formulários para entrar no pacote, o formulário AllDone será apresentado ao usuário. Se você não estiver vendo o formulário AllDone, verifique a URL usada na linha 33 do arquivo GetNextFormToSign.js que faz parte da biblioteca cliente **getnextform**.

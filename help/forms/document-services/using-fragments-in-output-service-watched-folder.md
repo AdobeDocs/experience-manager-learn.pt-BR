@@ -20,19 +20,19 @@ ht-degree: 0%
 # Geração de documento pdf com fragmentos usando o script ECMA{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-Neste artigo, usaremos o serviço de saída para gerar arquivos pdf usando fragmentos xdp. O xdp principal e os fragmentos residem no repositório crx. É importante imitar a estrutura de pastas do sistema de arquivos no AEM. Por exemplo, se estiver usando um fragmento na pasta de fragmentos do xdp, você deve criar uma pasta chamada **fragmentos** em sua pasta base no AEM. A pasta base conterá o modelo base xdp. Por exemplo, se você tiver a seguinte estrutura em seu sistema de arquivos
+Neste artigo, usaremos o serviço de saída para gerar arquivos pdf usando fragmentos xdp. O xdp principal e os fragmentos residem no repositório crx. É importante imitar a estrutura de pastas do sistema de arquivos no AEM. Por exemplo, se estiver usando um fragmento na pasta de fragmentos do xdp, você deve criar uma pasta chamada **fragmentos** na pasta base no AEM. A pasta base conterá o modelo base xdp. Por exemplo, se você tiver a seguinte estrutura em seu sistema de arquivos
 * c:\xdptemplates - Conterá o modelo base xdp
 * c:\xdptemplates\fragments - Essa pasta conterá fragmentos e o modelo principal fará referência ao fragmento conforme mostrado abaixo
   ![fragment-xdp](assets/survey-fragment.png).
-* A pasta xdpdocuments conterá o modelo base e os fragmentos em **fragmentos** pasta
+* A pasta xdpdocuments conterá o modelo base e os fragmentos na pasta **fragmentos**
 
-É possível criar a estrutura necessária usando o [formulários e interface do usuário do documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+Você pode criar a estrutura necessária usando os [formulários e a interface do usuário do documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 A seguir está a estrutura de pastas da amostra xdp que usa 2 fragmentos
 ![formulários&amp;documento](assets/fragment-folder-structure-ui.png)
 
 
-* Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída. Nesta amostra, estamos usando fragmentos que residem no repositório crx.
+* Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída. Nesta amostra, estamos usando fragmentos que residem no repositório crx.
 
 
 O script ECMA a seguir foi usado para gerar PDF. Observe o uso de ResourceResolver e ResourceResolverHelper no código. O ResourceResolver é necessário, pois esse código está sendo executado fora de qualquer contexto de usuário.
@@ -65,13 +65,13 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
  });
 ```
 
-**Para testar o pacote de amostra no seu sistema**
+**Para testar o pacote de exemplo em seu sistema**
 * [Implantar o pacote DevelopingWithServiceUSer](assets/DevelopingWithServiceUser.jar)
-* Adicionar a entrada **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** na emenda do serviço mapeador do usuário, conforme mostrado na captura de tela abaixo
+* Adicione a entrada **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** no aditamento do serviço de mapeador do usuário, conforme mostrado na captura de tela abaixo
   ![alteração do mapeador de usuários](assets/user-mapper-service-amendment.png)
-* [Baixe e importe os arquivos xdp de amostra e os scripts ECMA](assets/watched-folder-fragments-ecma.zip).
+* [Baixe e importe os arquivos xdp de exemplo e os scripts ECMA](assets/watched-folder-fragments-ecma.zip).
 Isso criará uma estrutura de pasta monitorada na pasta c:/fragmentsandoutputservice
 
-* [Extraia o arquivo de dados de amostra](assets/usingFragmentsSampleData.zip) e coloque-o na pasta install da pasta monitorada (c:\fragmentsandoutputservice\install)
+* [Extraia o arquivo de dados de exemplo](assets/usingFragmentsSampleData.zip) e coloque-o na pasta de instalação da pasta monitorada (c:\fragmentsandoutputservice\install)
 
 * Verifique a pasta de resultados da configuração da pasta monitorada para o arquivo pdf gerado

@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Consultas persistentes de GraphQL
 
-Consultas persistentes são consultas armazenadas no servidor do Adobe Experience Manager (AEM). Os clientes podem enviar uma solicitação HTTP GET com o nome da consulta para executá-la. O benefício dessa abordagem é a capacidade de armazenamento em cache. Embora as consultas GraphQL do lado do cliente também possam ser executadas usando solicitações HTTP POST, que não podem ser armazenadas em cache, as consultas persistentes podem ser armazenadas em cache por caches HTTP ou um CDN, melhorando o desempenho. As consultas persistentes permitem simplificar suas solicitações e melhorar a segurança, pois as consultas são encapsuladas no servidor e o administrador do AEM tem controle total sobre elas. É necessário **prática recomendada e altamente recomendada** para usar consultas persistentes ao trabalhar com a API AEM GraphQL.
+Consultas persistentes são consultas armazenadas no servidor do Adobe Experience Manager (AEM). Os clientes podem enviar uma solicitação HTTP GET com o nome da consulta para executá-la. O benefício dessa abordagem é a capacidade de armazenamento em cache. Embora as consultas GraphQL do lado do cliente também possam ser executadas usando solicitações HTTP POST, que não podem ser armazenadas em cache, as consultas persistentes podem ser armazenadas em cache por caches HTTP ou um CDN, melhorando o desempenho. As consultas persistentes permitem simplificar suas solicitações e melhorar a segurança, pois as consultas são encapsuladas no servidor e o administrador do AEM tem controle total sobre elas. É **prática recomendada e altamente recomendável** usar consultas persistentes ao trabalhar com a API do GraphQL do AEM.
 
 No capítulo anterior, você explorou algumas consultas avançadas do GraphQL para coletar dados para o aplicativo WKND. Neste capítulo, você mantém as consultas ao AEM e aprende a usar o controle de cache em consultas persistentes.
 
 ## Pré-requisitos {#prerequisites}
 
-Este documento faz parte de um tutorial dividido em várias partes. Certifique-se de que o [capítulo anterior](explore-graphql-api.md) foi concluída antes de prosseguir com este capítulo.
+Este documento faz parte de um tutorial dividido em várias partes. Verifique se o [capítulo anterior](explore-graphql-api.md) foi concluído antes de continuar com este capítulo.
 
 ## Objetivos {#objectives}
 
@@ -32,15 +32,15 @@ Neste capítulo, saiba como:
 * Persistir consultas do GraphQL com parâmetros
 * Usar parâmetros de controle de cache com consultas persistentes
 
-## Revisão _Consultas persistentes do GraphQL_ definição de configuração
+## Revisar definição da configuração _Consultas GraphQL persistidas_
 
-Vamos revisar isso _Consultas persistentes do GraphQL_ são ativados para o projeto do Site WKND na instância do AEM.
+Vamos revisar que as _Consultas GraphQL persistidas_ estão habilitadas para o projeto do Site WKND na sua instância AEM.
 
-1. Navegue até **Ferramentas** > **Geral** > **Navegador de configuração**.
+1. Navegue até **Ferramentas** > **Geral** > **Navegador de Configuração**.
 
-1. Selecionar **WKND compartilhado** e selecione **Propriedades** na barra de navegação superior para abrir as propriedades de configuração. Na página Propriedades da configuração, você deve ver que a variável **Consultas persistentes do GraphQL** a permissão está ativada.
+1. Selecione **WKND Compartilhado** e selecione **Propriedades** na barra de navegação superior para abrir as propriedades de configuração. Na página Propriedades de configuração, você deve ver que a permissão **Consultas persistentes do GraphQL** está habilitada.
 
-   ![Propriedades de configuração](assets/graphql-persisted-queries/configuration-properties.png)
+   ![Propriedades de Configuração](assets/graphql-persisted-queries/configuration-properties.png)
 
 ## Persistir consultas do GraphQL usando a ferramenta GraphiQL Explorer integrada
 
@@ -157,9 +157,9 @@ Nesta seção, vamos manter a consulta do GraphQL usada posteriormente no aplica
 
    Verifique se a consulta funciona antes de salvá-la.
 
-1. Próximo toque em Salvar como e insira `adventure-details-by-slug` como o Nome da consulta.
+1. Em seguida, toque em Salvar como e insira `adventure-details-by-slug` como o Nome da consulta.
 
-   ![Consulta persistente do GraphQL](assets/graphql-persisted-queries/persist-graphql-query.png)
+   ![Consulta GraphQL Persistente](assets/graphql-persisted-queries/persist-graphql-query.png)
 
 ## Execução de consulta persistente com variáveis por meio da codificação de caracteres especiais
 
@@ -171,7 +171,7 @@ Para executar uma consulta persistente, o aplicativo cliente faz uma solicitaç�
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
 ```
 
-Para executar uma consulta persistente _com uma variável_, a sintaxe acima é alterada para:
+Para executar uma consulta persistente _com uma variável_, a sintaxe acima muda para:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>;variable1=value1;variable2=value2
@@ -179,9 +179,9 @@ GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
 
 Os caracteres especiais como ponto e vírgula (;), sinal de igual (=), barras (/) e espaço devem ser convertidos para usar a codificação UTF-8 correspondente.
 
-Executando o `getAllAdventureDetailsBySlug` Ao consultar o terminal de linha de comando, analisamos esses conceitos em ação.
+Ao executar a consulta `getAllAdventureDetailsBySlug` no terminal de linha de comando, revisamos esses conceitos em ação.
 
-1. Abra o GraphiQL Explorer e clique no link **reticências** (...) ao lado da consulta persistente `getAllAdventureDetailsBySlug`e, em seguida, clique em **Copiar URL**. Cole o URL copiado em um painel de texto; a aparência é a seguinte:
+1. Abra o GraphiQL Explorer e clique nas **reticências** (...) ao lado da consulta persistente `getAllAdventureDetailsBySlug` e clique em **Copiar URL**. Cole o URL copiado em um painel de texto; a aparência é a seguinte:
 
    ```code
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug;slug=
@@ -199,7 +199,7 @@ Executando o `getAllAdventureDetailsBySlug` Ao consultar o terminal de linha de 
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
    ```
 
-1. Abra um terminal de linha de comando e use [Curl](https://curl.se/) executar a consulta
+1. Abrir um terminal de linha de comando e, usando [Curl](https://curl.se/), executar a consulta
 
    ```shell
    $ curl -X GET http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
@@ -207,9 +207,9 @@ Executando o `getAllAdventureDetailsBySlug` Ao consultar o terminal de linha de 
 
 >[!TIP]
 >
->    Se você estiver executando a consulta acima no ambiente de autor do AEM, será necessário enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para a sua demonstração e [Chamar a API do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
+>    Se você estiver executando a consulta acima no ambiente de autor do AEM, será necessário enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para obter uma demonstração dele e [Chamando a API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
 
-Além disso, revise [Como executar uma consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Uso de variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), e [Codificação do URL de consulta para uso por um aplicativo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para saber mais sobre a execução de consulta persistente por aplicativos clientes.
+Além disso, confira [Como executar uma consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Usando variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) e [Codificando a URL da consulta para uso por um aplicativo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para conhecer a execução de consultas persistentes por aplicativos clientes.
 
 ## Atualizar parâmetros de controle de cache em consultas persistentes {#cache-control-all-adventures}
 
@@ -219,19 +219,19 @@ A API AEM GraphQL permite atualizar os parâmetros padrão de controle de cache 
 
 * 7200 segundos é o TTL padrão (s-maxage=7200) para o Dispatcher e o CDN; também conhecido como caches compartilhados
 
-Use o `adventures-all` consulta para atualizar os parâmetros de controle de cache. A resposta da consulta é grande e é útil controlar sua `age` no cache. Esta consulta persistente é usada posteriormente para atualizar a [aplicativo cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
+Use a consulta `adventures-all` para atualizar os parâmetros de controle de cache. A resposta da consulta é grande e é útil controlar seu `age` no cache. Esta consulta persistente é usada posteriormente para atualizar o [aplicativo cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
 
-1. Abra o GraphiQL Explorer e clique no link **reticências** (...) ao lado da consulta persistente e clique em **Cabeçalhos** para abrir **Configuração de cache** modal.
+1. Abra o GraphiQL Explorer e clique nas **reticências** (...) ao lado da consulta persistente e clique em **Cabeçalhos** para abrir a modal **Configuração de cache**.
 
-   ![Opção Persistir Cabeçalho Do GraphQL](assets/graphql-persisted-queries/persist-graphql-header-option.png)
-
-
-1. No **Configuração de cache** modal, atualize o `max-age` valor do cabeçalho para `600 `segundos (10 minutos) e clique em **Salvar**
-
-   ![Manter configuração de cache do GraphQL](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+   ![Opção De Cabeçalho Persistir Do GraphQL](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 
 
-Revisão [Armazenamento em cache de consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) para obter mais informações sobre parâmetros de controle de cache default.
+1. No modal **Configuração de cache**, atualize o valor do cabeçalho `max-age` para `600 `segundos (10 minutos) e clique em **Salvar**
+
+   ![Manter Configuração de Cache do GraphQL](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+
+
+Revise [Armazenamento em cache das consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) para obter mais informações sobre os parâmetros de controle de cache padrão.
 
 
 ## Parabéns.

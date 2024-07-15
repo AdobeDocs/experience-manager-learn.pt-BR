@@ -24,7 +24,7 @@ Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser us
 
 >[!NOTE]
 >
->[Ativar o Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) no AEM para usar esse recurso.
+>[Habilite o Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) no AEM para usar este recurso.
 
 Este recurso está disponível para as versões AEM 6.1 e 6.2 como um Pacote de recursos.
 
@@ -125,4 +125,4 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 
 ## Recursos adicionais{#additional-resources}
 
-* [Configuração do gerenciamento de cores do Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurando o Gerenciamento de Cores do Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

@@ -27,16 +27,25 @@ Quando você tem um formulário adaptável com a navegação da guia esquerda, t
 ## Criação de um Formulário adaptável
 
 Um formulário adaptável simples baseado no modelo Básico e no tema do Canvas 3.0 foi usado para criar o formulário de amostra.
-A variável [ícones usados neste artigo](assets/icons.zip) pode ser baixado aqui.
+Os [ícones usados neste artigo](assets/icons.zip) podem ser baixados aqui.
 
 
 ## Estilo do estado padrão
 
-Abra o formulário no modo de edição. Verifique se você está na camada de estilo e selecione qualquer guia (por exemplo, guia General ).
+Abrir o formulário no modo de edição
+Verifique se você está na camada de estilo e selecione qualquer guia (por exemplo, guia Geral).
 Você está no estado padrão ao abrir o editor de estilos da guia, como mostrado na captura de tela abaixo
 ![guia de navegação](assets/navigation-tab.png)
 
-Defina as propriedades de CSS para o estado padrão conforme mostrado abaixo | Categoria | Nome da propriedade | Valor da propriedade | |:—|:—|:—| | Dimension e Posição | Largura | 50px | | Texto | Espessura da Fonte| Negrito | | Texto | Cor | #FFF | |Texto | Altura da linha| 3 | |Texto | Alinhamento do texto | Esquerda | |Plano de fundo| Cor | #056dae |
+Defina as propriedades de CSS para o estado padrão conforme mostrado abaixo
+| Categoria | Nome da propriedade  |  Valor da propriedade |
+|:—|:—|:—|
+| Dimension e Posição | Largura | 50px |
+| Texto | Espessura da Fonte| Negrito |
+| Texto | Cor | #FFF |
+|Texto | Altura da linha| 3 |
+|Texto  | Alinhamento do texto | Esquerda |
+|Plano de fundo| Cor | #056dae |
 
 Salve as alterações
 

@@ -27,7 +27,7 @@ Neste artigo, analisamos um fluxo de trabalho simples usado para solicitar o Tem
 * O administrador abre o formulário. O administrador não deve ser capaz de editar qualquer informação preenchida pelo remetente.
 * A seção Aprovador deve estar visível para o aprovador (nesse caso, é o usuário administrador do AEM).
 
-Para atender ao requisito acima, usamos um campo oculto chamado **initialstep** no formulário e seu valor padrão estiver definido como Sim.Quando o formulário for enviado, a primeira etapa do fluxo de trabalho definirá o valor de initialstep como Não. O formulário tem regras de negócios para ocultar e mostrar as seções apropriadas com base no valor da etapa inicial.
+Para cumprir o requisito acima, usamos um campo oculto chamado **initialstep** no formulário e seu valor padrão é definido como Sim. Quando o formulário é enviado, a primeira etapa do fluxo de trabalho define o valor de initialstep como Não. O formulário tem regras de negócios para ocultar e mostrar as seções apropriadas com base no valor da etapa inicial.
 
 **Configurar o formulário para acionar o fluxo de trabalho do AEM**
 
@@ -37,11 +37,11 @@ Para atender ao requisito acima, usamos um campo oculto chamado **initialstep** 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
 
-**Visualização do emissor do formulário de Solicitação de folga**
+**Modo de exibição do emissor do formulário de Solicitação de folga**
 
-![initialstep](assets/initialstep.gif)
+![inicialstep](assets/initialstep.gif)
 
-**Visualização do aprovador do formulário**
+**Modo de exibição Aprovador do formulário**
 
 ![aproverview](assets/approversview.gif)
 
@@ -51,8 +51,8 @@ Para testar esse workflow em seu sistema, siga as etapas mencionadas abaixo:
 * [Baixe e implante DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Baixe e implante o pacote OSGI personalizado SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [Importar os ativos relacionados a este artigo para o AEM](assets/helpxworkflow.zip)
-* Abra o [Formulário de solicitação de folga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Abra o [formulário de Solicitação de Folga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie
-* Abra o [caixa de entrada](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Você deverá ver uma nova tarefa atribuída. Abra o formulário. Os dados do remetente devem ser somente leitura e uma nova seção do aprovador deve estar visível.
+* Abra a [caixa de entrada](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Você deverá ver uma nova tarefa atribuída. Abra o formulário. Os dados do remetente devem ser somente leitura e uma nova seção do aprovador deve estar visível.
 * Explore o [modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
 * Explore a etapa do processo. Esta é a etapa que define o valor de initialstep como No.

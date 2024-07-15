@@ -27,8 +27,8 @@ O gerenciamento avançado de metadados permite que os usuários criem regras de 
 
 Há três conjuntos de regras dinâmicas que podem ser ativados para um determinado campo de metadados:
 
-1. **Requisito** : um campo pode ser marcado dinamicamente como obrigatório com base no valor de outro campo suspenso.
+1. **Requisito**: um campo pode ser marcado dinamicamente como obrigatório com base no valor de outro campo suspenso.
 
-2. **Visibilidade** : os campos sempre podem ser visíveis ou visíveis apenas com base no valor de outro campo suspenso.
+2. **Visibilidade**: os campos sempre podem ser visíveis ou somente visíveis com base no valor de outro campo suspenso.
 
-3. **Opções** : (aplicável somente a campos suspensos) filtre as opções mostradas ao usuário com base no valor selecionado atualmente de outro campo suspenso.
+3. **Opções** : (aplicável apenas a campos suspensos) filtre as opções mostradas ao usuário com base no valor selecionado atualmente de outro campo suspenso.

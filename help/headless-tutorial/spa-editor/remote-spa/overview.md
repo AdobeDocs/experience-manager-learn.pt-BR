@@ -24,7 +24,7 @@ ht-degree: 6%
 
 Bem-vindo ao tutorial em várias partes para desenvolvedores que buscam aumentar um SPA remoto baseado no React (ou Next.js) existente com conteúdo de AEM editável usando o Editor de SPA AEM.
 
-Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo do React que consome conteúdo de Fragmento de conteúdo do AEM por meio de APIs do AEM, no entanto, não fornece nenhuma criação em contexto de conteúdo do GraphQL SPA.
+Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo React que consome conteúdo do Fragmento de conteúdo do AEM em vez das APIs do GraphQL SPA do AEM, no entanto, não fornece nenhuma criação em contexto do conteúdo do.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -32,16 +32,16 @@ Este tutorial se baseia no [Aplicativo WKND GraphQL](https://experienceleague.ad
 
 O tutorial destinado a ilustrar como um SPA remoto, ou SPA executado fora do contexto do AEM AEM, pode ser atualizado para consumir e entregar conteúdo criado no.
 
-A maioria das atividades no tutorial se concentra no desenvolvimento do JavaScript, no entanto, são abordados aspectos críticos que giram em torno do AEM. Esses aspectos incluem definir onde o conteúdo é criado e armazenado no AEM e mapear rotas do SPA para páginas do AEM.
+A maioria das atividades do tutorial foca no desenvolvimento de JavaScript, no entanto, são abordados aspectos críticos que giram em torno do AEM. Esses aspectos incluem definir onde o conteúdo é criado e armazenado no AEM e mapear rotas do SPA para páginas do AEM.
 
-O tutorial foi projetado para funcionar com **AEM as a Cloud Service** e é composto por dois projetos:
+O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e é composto por dois projetos:
 
-1. A variável __Projeto AEM__ contém a configuração e o conteúdo que devem ser implantados no AEM.
-1. __Aplicativo WKND__ O projeto é o SPA para ser integrado ao SPA Editor do AEM
+1. O __Projeto AEM__ contém a configuração e o conteúdo que devem ser implantados para AEM.
+1. O projeto __WKND App__ é o SPA a ser integrado ao editor SPA do AEM do do
 
 ## Código mais recente
 
-+ O ponto de partida do código deste tutorial pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) no `remote-spa-tutorial` pasta.
++ O ponto de partida do código deste tutorial pode ser encontrado no [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) da pasta `remote-spa-tutorial`.
 
 ## Pré-requisitos
 
@@ -53,15 +53,15 @@ Este tutorial requer o seguinte:
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip ou superior](https://github.com/adobe/aem-guides-wknd/releases)
-+ [aem-guides-wknd-graphql código-fonte](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [código-fonte aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Este tutorial pressupõe:
 
-+ [Código do Microsoft® Visual Studio](https://visualstudio.microsoft.com/) como o IDE
++ [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/) como IDE
 + Um diretório de trabalho de `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ Execução do SDK do AEM como um serviço do autor no `http://localhost:4502`
-+ Execução do SDK do AEM com o local `admin` conta com senha `admin`
-+ Executando o SPA `http://localhost:3000`
++ Executando o SDK do AEM como um serviço de Autor em `http://localhost:4502`
++ Executando o SDK do AEM com a conta local `admin` com a senha `admin`
++ Executando o SPA em `http://localhost:3000`
 
 >[!NOTE]
 >
@@ -99,4 +99,4 @@ Por fim, use os conceitos explicados nos capítulos anteriores para rotas dinâm
 
 ## Recursos adicionais
 
-+ [AEM Componentes editáveis do SPA React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ AEM [Componentes editáveis do SPA React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

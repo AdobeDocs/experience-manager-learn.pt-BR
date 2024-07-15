@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 A incorporação de um código QR em um Formulário adaptável pode melhorar muito a conveniência e a eficiência para que os usuários acessem informações adicionais relacionadas ao formulário.
 
-O componente de amostra utiliza [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
+O componente de exemplo usa [QRCode.js](https://davidshimjs.github.io/qrcodejs/).
 
 O QRCode.js é uma biblioteca javascript para fazer QRCode, ele suporta Cross-browser com HTML5 Canvas e tag de tabela no DOM.
 
@@ -44,7 +45,7 @@ O &quot;url&quot; é o url que precisa ser incorporado no código qr. Esta url �
 
 
 
-O código a seguir usa o método makeCode da biblioteca QRCode.js na biblioteca do cliente do componente qr-code-generator. O código QR gerado é anexado ao div identificado por id **&quot;qrcode&quot;**.
+O código a seguir usa o método makeCode da biblioteca QRCode.js na biblioteca do cliente do componente qr-code-generator. O código QR gerado é anexado ao div identificado pela id **&quot;qrcode&quot;**.
 
 ```javascript
 $(document).ready(function()
@@ -60,5 +61,3 @@ $(document).ready(function()
 * [Baixe e instale o componente de código QR usando o Gerenciador de pacotes.](assets/qrcode.zip)
 * [Baixe e instale o formulário adaptável de exemplo usando o Gerenciador de pacotes.](assets/form-with-qr-code.zip)
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). A seção de ajuda do formulário tem o código QR.
-
-

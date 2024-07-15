@@ -27,8 +27,8 @@ Usamos a API SendGrid para enviar emails usando um modelo dinâmico. Presume-se 
 
 Siga as etapas a seguir para criar a integração entre o AEM Forms e o SendGrid
 
-* Crie uma fonte de dados RESTful usando o [arquivo swagger](./assets/SendGridWithDynamicTemplate.yaml). [Siga este vídeo para obter instruções detalhadas](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) sobre a criação de fontes de dados no AEM Forms
-* Criar modelo de dados de formulário com base na fonte de dados criada na etapa anterior.[Siga a documentação detalhada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) sobre a criação do modelo de dados de formulário.
+* Crie uma fonte de dados RESTful usando o [arquivo swagger](./assets/SendGridWithDynamicTemplate.yaml). [Siga este vídeo para obter instruções detalhadas](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) sobre como criar fontes de dados no AEM Forms
+* Criar modelo de dados de formulário com base na fonte de dados criada na etapa anterior.[Siga a documentação detalhada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) sobre como criar o modelo de dados de formulário.
 
 O modelo de dados de formulário criado para este tutorial é incluído como parte dos ativos do artigo.
 

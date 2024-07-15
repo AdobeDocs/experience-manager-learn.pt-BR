@@ -30,7 +30,7 @@ Criaremos um novo modelo de formulário adaptável para a finalidade deste tutor
 
 ## Ativos
 
-O modelo e o componente de página usados neste tutorial podem ser [baixado aqui](assets/sign-multiple-forms-template.zip)
+O modelo e o componente de página usados neste tutorial podem ser [baixados daqui](assets/sign-multiple-forms-template.zip)
 
 ## Próximas etapas
 

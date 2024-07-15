@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como alterar o valor da entropia
 
-*Este vídeo aborda as etapas para alterar o valor da entropia.*
+*Este vídeo mostra as etapas para alterar o valor da entropia.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)

@@ -26,8 +26,8 @@ Saiba como usar a Pesquisa contextual no Adobe Experience Manager Assets para en
 
 ## Alternar pesquisa contextual
 
-Para ativar ou desativar a pesquisa contextual para todos os usuários, os administradores do AEM podem fazer isso navegando até o __Configurações gerais__ e alternando a variável __Pesquisa contextual__ para a configuração desejada.
+Para habilitar ou desabilitar a pesquisa contextual para todos os usuários, os administradores do AEM podem fazer isso navegando até as __Configurações Gerais__ e alternando a __Pesquisa Contextual__ para a configuração desejada.
 
 Por padrão, a pesquisa contextual é ativada para todos os usuários.
 
-![Habilitar pesquisa contextual](./assets/contextual-search/enable-contextual-search.png)
+![Habilitar Pesquisa Contextual](./assets/contextual-search/enable-contextual-search.png)

@@ -25,7 +25,7 @@ O vídeo a seguir o orienta pelas etapas necessárias para criar a integração.
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
 
 Para o propósito deste tutorial, um modelo de dados de formulário chamado SaveAndRetrieveFromAzurePortal foi criado com uma entidade chamada CreditApplications
-![fdm-entity](./assets/fdm-entity.png)
+![entidade-fdm](./assets/fdm-entity.png)
 
 ## Próximas etapas
 

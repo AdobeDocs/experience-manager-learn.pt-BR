@@ -1,6 +1,6 @@
 ---
-title: Inicializar um aplicativo do App Builder para interface do AEM
-description: Saiba como inicializar um aplicativo Construtor de aplicativos com extensão da interface do usuário para AEM que defina onde a extensão é exibida e o trabalho que ela realiza.
+title: Inicializar um aplicativo do App Builder para a interface do AEM
+description: Saiba como inicializar um aplicativo App Builder de extensão da interface do usuário AEM que defina onde a extensão é exibida e o trabalho que ela realiza.
 version: Cloud Service
 feature: Developer Tools
 topic: Development
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 # Inicialização do aplicativo
 
-Inicialize um aplicativo Construtor de aplicativos com extensão da interface do usuário para AEM que defina onde a extensão é exibida e o trabalho que ela realiza.
+Inicialize um aplicativo App Builder de extensão da interface do usuário do AEM que defina onde a extensão é exibida e o trabalho que ela executa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
-> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a inicialização do aplicativo da extensão do Construtor de aplicativos. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
+> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a inicialização do aplicativo de extensão do App Builder. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
 
 Consulte a documentação do Adobe Developer para obter uma [apresentação detalhada do processo de inicialização do aplicativo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation/#launch-code-generation-during-project-initialization).

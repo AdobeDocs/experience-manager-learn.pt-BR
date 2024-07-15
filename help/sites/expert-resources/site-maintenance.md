@@ -43,19 +43,19 @@ Há vários itens que você precisa monitorar para garantir uma operação sem p
 
 Os índices permitem que as consultas sejam executadas o mais rápido possível, liberando recursos para outras operações. Verifique se os índices estão na forma de topo de ponta! O AEM cancela consultas que viajam em vez de usar um índice para impedir que uma consulta ruim afete o desempenho geral do AEM.
 
-#### [Limpeza de compactação/ revisão de TAR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [Limpeza de compactação/revisão de TAR](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
 
 Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, as revisões antigas precisam ser removidas para liberar recursos de disco.
 
-#### [Limpeza de binários do Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
+#### [Limpeza de binários Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Remova os binários do lucene e reduza o requisito de tamanho do armazenamento de dados em execução.
 
-#### [Lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=pt-BR)
+#### [Lixo do Armazenamento de Dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=pt-BR)
 
 Quando um ativo no AEM é excluído, a referência ao registro de armazenamento de dados subjacente pode ser removida da hierarquia do nó, mas o próprio registro de armazenamento de dados permanece. Esse registro de armazenamento de dados sem referência torna-se &quot;lixo&quot; que não precisa ser retido. Nos casos em que existem vários ativos sem referência, é útil eliminá-los para preservar espaço, otimizar o backup e o desempenho de manutenção do sistema de arquivos.
 
-#### [Limpeza do fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [Limpeza do Fluxo de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
@@ -73,9 +73,9 @@ Monitore o espaço em disco para garantir que você tenha espaço suficiente par
 
 ## Desenvolvedor
 
-Tentar não usar componentes personalizados - use [componentes principais](https://www.aemcomponents.dev/). Sua meta deve ser usar os componentes principais 80 a 90% do tempo e componentes personalizados com moderação. Isso geralmente requer uma nova maneira de observar os componentes em uma página. Você deve perceber que os componentes podem ser reestilizados facilmente por um desenvolvedor de front-end usando CSS. Lembre-se também de que esses componentes principais podem ser incorporados entre si para alcançar resultados bastante complexos. Seja criativo!
+Tente não usar componentes personalizados - use [componentes principais](https://www.aemcomponents.dev/). Sua meta deve ser usar os componentes principais 80 a 90% do tempo e componentes personalizados com moderação. Isso geralmente requer uma nova maneira de observar os componentes em uma página. Você deve perceber que os componentes podem ser reestilizados facilmente por um desenvolvedor de front-end usando CSS. Lembre-se também de que esses componentes principais podem ser incorporados entre si para alcançar resultados bastante complexos. Seja criativo!
 
-### [Sistemas de estilo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
+### [Sistemas de Estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
 
 Os sistemas de estilo permitem que os componentes principais e até mesmo os componentes personalizados tenham sua aparência e comportamento alterados a critério dos Autores para criar componentes com aparência completamente nova. Essas mudanças estilísticas geralmente envolvem apenas um designer de front-end e um autor experiente (geralmente chamado de &quot;Super Autor&quot;)
 
@@ -95,8 +95,8 @@ Pense antes de ver o que pode ser reutilizado. Um rodapé? Um aviso? Um Cabeçal
 
 ## Geral
 
-Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Uso [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Serviços de aprendizado digital Adobe (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
+Mantenha-se informado sobre as mudanças ocorridas no AEM através da aprendizagem contínua - não fique preso no passado. Use o [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e o [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) para aprimorar suas habilidades.
 
 ## Conclusão
 
-O AEM pode ser um sistema de grande porte, e são necessários muitos tipos de pessoas para fazê-lo &quot;cantar&quot;. De administradores a desenvolvedores (desenvolvedores de front-end e hardcore Java) a autores - há algo para todos! E se você não tem vontade de lidar com a administração cotidiana, sempre há AMS e AEM as a Cloud Service.
+O AEM pode ser um sistema de grande porte, e são necessários muitos tipos de pessoas para fazê-lo &quot;cantar&quot;. De administradores a desenvolvedores (desenvolvedores de front-end e hardcore Java) a autores - há algo para todos! E se você não quiser lidar com a administração cotidiana, sempre há AMS e AEM as a Cloud Service.

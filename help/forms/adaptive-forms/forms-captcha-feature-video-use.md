@@ -22,7 +22,7 @@ Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Este vídeo aborda o processo de adicionar um CAPTCHA a um formulário adaptável AEM usando o serviço integrado AEM CAPTCHA, bem como o serviço reCAPTCHA da Google.*
+*Este vídeo aborda o processo de adicionar um CAPTCHA a um Formulário adaptável AEM usando o serviço AEM CAPTCHA integrado, bem como o serviço reCAPTCHA da Google.*
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 >
 >Configurar reCaptach na instância do autor
 >
->abra o Felix [console da web](http://localhost:4502/system/console/bundles) na instância do autor
+>abra o Felix [web console](http://localhost:4502/system/console/bundles) na instância do autor
 >
 >pesquisar pacote com.adobe.granite.crypto.file
 >
@@ -45,7 +45,7 @@ Adicionar e usar um CAPTCHA com AEM Adaptive Forms.
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copie os arquivos HMAC e mestre
 >
-Abra o [felix web console](http://localhost:4502/system/console/bundles) na instância de publicação. Pesquise por pacote com.adobe.granite.crypto.file. Observe a id do pacote
+Abra o [felix web console](http://localhost:4502/system/console/bundles) na sua instância de publicação. Pesquise por pacote com.adobe.granite.crypto.file. Observe a id do pacote
 >
 Navegue até a id do pacote no sistema de arquivos da instância de publicação
 >
@@ -57,4 +57,4 @@ Reinicie o servidor de publicação AEM
 
 ## Materiais de suporte {#supporting-materials}
 
-* [Google reCAPTCHA](https://www.google.com/recaptcha)
+* [reCAPTCHA do Google](https://www.google.com/recaptcha)

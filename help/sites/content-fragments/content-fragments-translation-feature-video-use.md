@@ -28,15 +28,15 @@ Saiba como os fragmentos de conteúdo podem ser localizados e traduzidos com o A
 
 Fragmentos de conteúdo são um tipo de conteúdo reconhecido que o AEM extrai para ser enviado a um serviço de tradução externo. Vários casos de uso são compatíveis imediatamente:
 
-1. Um fragmento de conteúdo pode ser [selecionado diretamente no console de Ativos para cópia e tradução de idioma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. Um Fragmento do conteúdo pode ser [selecionado diretamente no console do Assets para cópia e tradução de idioma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 2. Os fragmentos de conteúdo referenciados em uma página do Sites são copiados para a pasta de idioma apropriada e extraídos para tradução quando a página do Sites é selecionada para cópia de idioma.
 3. Os ativos de mídia incorporados em um fragmento de conteúdo podem ser extraídos e traduzidos.
 4. As coleções de ativos associadas a um fragmento de conteúdo podem ser extraídas e traduzidas.
 
 ## Editor de regras de tradução {#translation-rules-editor}
 
-O comportamento da tradução de Experience Manager pode ser atualizado usando o **Editor de regras de tradução**. Para atualizar a tradução, navegue até **Ferramentas** > **Geral** > **Configuração de tradução** em [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+O comportamento da tradução de Experience Manager pode ser atualizado com o **Editor de regras de tradução**. Para atualizar a tradução, navegue até **Ferramentas** > **Geral** > **Configuração de Tradução** em [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-As configurações prontas para uso fazem referência aos Fragmentos de conteúdo em `fragmentPath` com um tipo de recurso de `core/wcm/components/contentfragment/v1/contentfragment`. Todos os componentes herdados do `v1/contentfragment` são reconhecidos pela configuração padrão.
+As configurações prontas para uso fazem referência aos Fragmentos de conteúdo em `fragmentPath` com um tipo de recurso de `core/wcm/components/contentfragment/v1/contentfragment`. Todos os componentes herdados de `v1/contentfragment` são reconhecidos pela configuração padrão.
 
 ![Editor de regras de tradução](assets/translation-configuration.png)

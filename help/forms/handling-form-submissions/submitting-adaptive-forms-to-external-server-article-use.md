@@ -24,9 +24,9 @@ Use a ação Enviar para endpoint REST para publicar os dados enviados em um URL
 
 Normalmente, os clientes desejariam enviar os dados do formulário a um servidor externo para processamento adicional.
 
-Para publicar dados em um servidor interno, forneça um caminho para o recurso. Os dados são publicados no caminho do recurso. Por exemplo, &lt;/content restendpoint=&quot;&quot;> . Para essas solicitações de publicação, as informações de autenticação de solicitação de envio são usadas.
+Para publicar dados em um servidor interno, forneça um caminho para o recurso. Os dados são publicados no caminho do recurso. Por exemplo, &lt;/content/restEndPoint> . Para essas solicitações de publicação, as informações de autenticação de solicitação de envio são usadas.
 
-Para publicar dados em um servidor externo, forneça um URL. O formato do URL é <http://host:port/path_to_rest_end_point>. Certifique-se de ter configurado o caminho para lidar com a solicitação POST anonimamente.
+Para publicar dados em um servidor externo, forneça um URL. O formato da URL é <http://host:port/path_to_rest_end_point>. Certifique-se de ter configurado o caminho para lidar com a solicitação POST anonimamente.
 
 Para o propósito deste artigo, escrevi um arquivo war simples que pode ser implantado em sua instância tomcat. Supondo que o tomcat esteja em execução na porta 8080, o URL do POST será
 
@@ -50,13 +50,13 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![envio de formulário](assets/formsubmission.gif)
+![formsubmit](assets/formsubmission.gif)
 Para testar isso no servidor, faça o seguinte
 
 1. Instale o Tomcat se você ainda não o tiver. [As instruções para instalar o tomcat estão disponíveis aqui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
 1. Baixe o [arquivo zip](assets/aemformsenablement.zip) associado a este artigo. Descompacte o arquivo para obter o arquivo WAR.
 1. Implante o arquivo WAR no servidor Tomcat.
-1. Crie um formulário adaptável simples com o componente de anexo de arquivo e configure a ação de envio como mostrado na captura de tela acima. O URL do POST é <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se o AEM e o tomcat não estiverem em execução no host local, altere o URL de acordo.
-1. Para habilitar o envio de dados de formulário multiparte para tomcat, adicione o seguinte atributo ao elemento de contexto do &lt;tomcatinstalldir>\conf\context.xml e reinicie o servidor Tomcat.
-1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
+1. Crie um formulário adaptável simples com o componente de anexo de arquivo e configure a ação de envio como mostrado na captura de tela acima. A URL do POST é <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se o AEM e o tomcat não estiverem em execução no host local, altere o URL de acordo.
+1. Para habilitar o envio de dados de formulário de várias partes para o tomcat, adicione o seguinte atributo ao elemento de contexto do &lt;tomcatInstallDir>\conf\context.xml e reinicie o servidor Tomcat.
+1. **&lt;Contexto allowCasualMultipartParsing=&quot;true&quot;>**
 1. Pré-visualize o formulário adaptável, adicione um anexo e envie. Verifique se há mensagens na janela do console do tomcat.

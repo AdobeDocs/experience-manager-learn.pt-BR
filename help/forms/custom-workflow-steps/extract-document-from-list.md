@@ -31,12 +31,12 @@ Este artigo o guiará pelas etapas de uso do componente de fluxo de trabalho per
 * Uma variável do tipo Documento.(Essa variável manterá o documento extraído de ArrayList)
 
 * Adicione o componente personalizado ao seu fluxo de trabalho e configure as propriedades dele
-  ![extract-item-workflow](assets/extract-document-array-list.png)
+  ![extrair-item-fluxo-de-trabalho](assets/extract-document-array-list.png)
 
 ## Configurar formulário adaptável
 
 * Configure a ação de envio do formulário adaptável para acionar o fluxo de trabalho do AEM
-  ![ação de envio](assets/store-attachments.png)
+  ![ação-envio](assets/store-attachments.png)
 
 ## Testar a solução
 

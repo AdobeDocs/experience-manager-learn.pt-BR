@@ -1,6 +1,6 @@
 ---
 title: Aplicativo React - Exemplo AEM Headless
-description: Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando APIs AEM GraphQL usando consultas persistentes.
+description: Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando as APIs do GraphQL do AEM usando consultas persistentes.
 version: Cloud Service
 mini-toc-levels: 1
 jira: KT-10715
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 # Aplicativo React{#react-app}
 
-Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando APIs AEM GraphQL usando consultas persistentes. O AEM Headless Client para JavaScript é usado para executar as consultas persistentes do GraphQL que alimentam o aplicativo.
+Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando as APIs do GraphQL do AEM usando consultas persistentes. O AEM Headless Client para JavaScript é usado para executar as consultas persistentes do GraphQL que alimentam o aplicativo.
 
-![Aplicativo React com AEM Headless](./assets/react-app/react-app.png)
+![React app com AEM Headless](./assets/react-app/react-app.png)
 
 Exibir o [código-fonte no GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
-A [tutorial passo a passo completo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) descrever como este aplicativo React foi criado está disponível.
+Um [tutorial passo a passo completo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) que descreve como este aplicativo React foi compilado está disponível.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -39,23 +39,23 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 ## Requisitos do AEM
 
-O aplicativo React funciona com as seguintes opções de implantação de AEM. Todas as implantações exigem o [Site WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) a ser instalado.
+O aplicativo React funciona com as seguintes opções de implantação de AEM. Todas as implantações exigem que o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) esteja instalado.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Configuração local usando [o AEM CLOUD SERVICE SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
-   + Exige [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11)
++ Configuração local usando [o SDK do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
+   + Requer [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=11)
 
-O aplicativo React foi projetado para se conectar a um __Publicação no AEM__ ambiente, no entanto, ele pode originar conteúdo do AEM Author se a autenticação for fornecida na configuração do aplicativo React.
+O aplicativo React foi projetado para se conectar a um ambiente __AEM Publish__, no entanto, ele pode obter conteúdo do autor do AEM se a autenticação for fornecida na configuração do aplicativo React.
 
 ## Como usar
 
-1. Clonar o `adobe/aem-guides-wknd-graphql` repositório:
+1. Clonar o repositório `adobe/aem-guides-wknd-graphql`:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Edite o `aem-guides-wknd-graphql/react-app/.env.development` arquivo e definir `REACT_APP_HOST_URI` para apontar para seu AEM alvo.
+1. Edite o arquivo `aem-guides-wknd-graphql/react-app/.env.development` e defina `REACT_APP_HOST_URI` para apontar para seu AEM de destino.
 
    Atualize o método de autenticação se estiver se conectando a uma instância de autor.
 
@@ -86,12 +86,12 @@ O aplicativo React foi projetado para se conectar a um __Publicação no AEM__ a
    $ npm start
    ```
 
-1. Uma nova janela do navegador deve ser carregada em [http://localhost:3000](http://localhost:3000)
+1. Uma nova janela de navegador deve ser carregada em [http://localhost:3000](http://localhost:3000)
 1. Uma lista de aventuras do site de referência WKND deve ser exibida no aplicativo.
 
 ## O código
 
-Abaixo está um resumo de como o aplicativo React é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes do GraphQL e como esses dados são apresentados. O código completo pode ser encontrado em [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Abaixo está um resumo de como o aplicativo React é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes do GraphQL e como esses dados são apresentados. O código completo pode ser encontrado no [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 
 ### Consultas persistentes
@@ -140,7 +140,7 @@ query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFor
 }
 ```
 
-+ `wknd/adventure-by-slug` consulta persistente, que retorna uma única aventura de `slug` (uma propriedade personalizada que identifica exclusivamente uma aventura) com um conjunto completo de propriedades. Essa consulta persistente possibilita as exibições de detalhes de aventura.
++ `wknd/adventure-by-slug` consulta persistente, que retorna uma única aventura por `slug` (uma propriedade personalizada que identifica exclusivamente uma aventura) com um conjunto completo de propriedades. Essa consulta persistente possibilita as exibições de detalhes de aventura.
 
 ```
 # Retrieves an Adventure Fragment based on it's unique slug.
@@ -211,11 +211,11 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Executar consulta persistente do GraphQL
 
-As consultas persistentes de AEM são executadas por HTTP GET e, portanto, o [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas persistentes do GraphQL](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contra o AEM e carregue o conteúdo de aventura no aplicativo.
+As consultas persistentes do AEM são executadas por HTTP GET e, portanto, o [cliente AEM Headless do JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas persistentes do GraphQL AEM](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) em relação ao e carregar o conteúdo de aventura no aplicativo.
 
-Cada consulta persistente tem um React correspondente [useEffect](https://reactjs.org/docs/hooks-effect.html) gancho em `src/api/usePersistedQueries.js`, que chama de forma assíncrona o ponto de acesso de consulta persistente do AEM HTTP GET e retorna os dados de aventura.
+Cada consulta persistente tem um gancho React [useEffect](https://reactjs.org/docs/hooks-effect.html) correspondente em `src/api/usePersistedQueries.js`, que chama de forma assíncrona o ponto de extremidade da consulta persistente AEM HTTP GET e retorna os dados de aventura.
 
-Cada função, por sua vez, chama a variável `aemHeadlessClient.runPersistedQuery(...)`, executando a consulta persistente do GraphQL.
+Cada função, por sua vez, invoca o `aemHeadlessClient.runPersistedQuery(...)`, executando a consulta persistente do GraphQL.
 
 ```js
 // src/api/usePersistedQueries.js
@@ -285,33 +285,33 @@ O aplicativo React usa duas visualizações para apresentar os dados de aventura
 
 + `src/components/Adventures.js`
 
-  Chamadas `getAdventuresByActivity(..)` de `src/api/usePersistedQueries.js` e exibe as aventuras retornadas em uma lista.
+  Chama `getAdventuresByActivity(..)` de `src/api/usePersistedQueries.js` e exibe as aventuras retornadas em uma lista.
 
 + `src/components/AdventureDetail.js`
 
-  Chama o `getAdventureBySlug(..)` usando o `slug` parâmetro passado pela seleção de aventura no `Adventures` e exibe os detalhes de uma única aventura.
+  Invoca o `getAdventureBySlug(..)` usando o parâmetro `slug` transmitido por meio da seleção de aventura no componente `Adventures`, e exibe os detalhes de uma única aventura.
 
 ### Variáveis de ambiente
 
-Vários [variáveis de ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) são usados para se conectar a um ambiente AEM. O padrão se conecta ao AEM Publicação em execução em `http://localhost:4503`. Atualize o `.env.development` arquivo, para alterar a conexão AEM:
+Várias [variáveis de ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) são usadas para se conectar a um ambiente AEM. O padrão se conecta ao AEM Publish em execução em `http://localhost:4503`. Atualize o arquivo `.env.development` para alterar a conexão AEM:
 
-+ `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: Definir para host de destino do AEM
-+ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Defina o caminho do endpoint do GraphQL. Isso não é usado por este aplicativo React, pois este aplicativo usa apenas consultas persistentes.
++ `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: Definir como host de destino AEM
++ `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Definir o caminho do ponto de extremidade do GraphQL. Isso não é usado por este aplicativo React, pois este aplicativo usa apenas consultas persistentes.
 + `REACT_APP_AUTH_METHOD=`: o método de autenticação preferencial. Opcional, por padrão, nenhuma autenticação é usada.
-   + `service-token`: usar credenciais de serviço para obter um token de acesso no AEM as a Cloud Service
-   + `dev-token`: Use o token de desenvolvimento para desenvolvimento local no AEM as a Cloud Service
-   + `basic`: use user/pass para desenvolvimento local com AEM Author local
+   + `service-token`: Usar credenciais de serviço para obter um token de acesso no AEM as a Cloud Service
+   + `dev-token`: Usar token dev para desenvolvimento local no AEM as a Cloud Service
+   + `basic`: Usar usuário/senha para desenvolvimento local com o autor local do AEM
    + Deixe em branco para se conectar ao AEM sem autenticação
-+ `REACT_APP_AUTHORIZATION=admin:admin`: defina credenciais básicas de autenticação para usar se estiver se conectando a um ambiente de autor de AEM (somente para desenvolvimento). Se você estiver se conectando a um Ambiente de publicação, essa configuração não será necessária.
-+ `REACT_APP_DEV_TOKEN`: cadeia de caracteres do token de desenvolvimento. Para se conectar à instância remota, além da autenticação básica (user:pass), você pode usar a autenticação de portador com o token DEV do console da nuvem
-+ `REACT_APP_SERVICE_TOKEN`: Caminho para o arquivo de credenciais de serviço. Para se conectar à instância remota, a autenticação também pode ser feita com o token de serviço (baixe o arquivo do Console do desenvolvedor).
++ `REACT_APP_AUTHORIZATION=admin:admin`: Defina as credenciais básicas de autenticação a serem usadas se estiver se conectando a um ambiente de Autor de AEM (somente para desenvolvimento). Se estiver se conectando a um ambiente Publish, essa configuração não será necessária.
++ `REACT_APP_DEV_TOKEN`: Cadeia de caracteres do token de desenvolvimento. Para se conectar à instância remota, além da autenticação básica (user:pass), você pode usar a autenticação de portador com o token DEV do console da nuvem
++ `REACT_APP_SERVICE_TOKEN`: Caminho para o arquivo de credenciais de serviço. Para se conectar à instância remota, a autenticação também pode ser feita com o token de serviço (baixar arquivo da Developer Console).
 
 ### Solicitações de Proxy AEM
 
-Ao usar o servidor de desenvolvimento de webpack (`npm start`) o projeto depende de um [configuração de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) usar `http-proxy-middleware`. O arquivo está configurado em [src/setupProxy.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/setupProxy.js) e depende de várias variáveis de ambiente personalizadas definidas em `.env` e `.env.development`.
+Ao usar o servidor de desenvolvimento do webpack (`npm start`), o projeto depende de uma [configuração de proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) usando `http-proxy-middleware`. O arquivo está configurado em [src/setupProxy.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/setupProxy.js) e depende de várias variáveis de ambiente personalizadas definidas em `.env` e `.env.development`.
 
-Se você se conectar a um ambiente de autor de AEM, a variável [o método de autenticação precisa ser configurado](#environment-variables).
+Se você estiver se conectando a um ambiente de autor AEM, o [método de autenticação correspondente precisará ser configurado](#environment-variables).
 
 ### Compartilhamento de recursos entre origens (CORS)
 
-Esse aplicativo React depende de uma configuração CORS baseada em AEM sendo executada no ambiente AEM de destino e presume que o aplicativo React é executado em `http://localhost:3000` no modo de desenvolvimento.  Revise o[Documentação de implantação do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) para obter mais informações sobre como configurar o CORS.
+Este aplicativo React depende de uma configuração CORS baseada em AEM sendo executada no ambiente AEM de destino e presume que o aplicativo React é executado em `http://localhost:3000` no modo de desenvolvimento.  Revise a[documentação de implantação do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) para obter mais informações sobre como configurar o CORS.

@@ -21,7 +21,7 @@ Como líder na experiência do cliente, sabemos o quanto é desafiador para voc�
 
 A velocidade do conteúdo não é apenas uma ferramenta. Nem é um recurso.
 
-_A velocidade do conteúdo é o gás que impulsiona o veículo de personalização. A velocidade do conteúdo significa simplificar e se tornar mais eficiente, para poder fornecer experiências personalizadas em escala._ - Monique Misrahi da T-Mobile
+_A velocidade do conteúdo é o gás que alimenta o veículo de personalização. A velocidade do conteúdo significa simplificar e se tornar mais eficiente, para poder fornecer experiências personalizadas em escala._ - Monique Misrahi do T-Mobile
 
 É uma filosofia predominante de conteúdo que adota uma estrutura de nível corporativo que abrange todas as partes de uma organização corporativa, desde a criação, passando pelo gerenciamento, até a distribuição.
 
@@ -62,9 +62,9 @@ Isso ocorre porque a velocidade de direção em CMS de nível corporativo é, em
 
 Repetidamente, vimos que a jornada de um modelo em silos para um modelo flexível e rápido vem dessa voz inicial e poderosa na liderança. Uma compreensão de que abordar o ciclo de vida do conteúdo de uma maneira requer uma recriação da imagem dele por meio da equipe — do criador ao testador. E esse ponto de decisão — a percepção — de que a criação de conteúdo não é uma questão de qual ferramenta, mas como a estamos concebendo.
 
-_&quot;Quando você começa a pensar no conteúdo de uma maneira diferente, você traz diferentes grupos para a mesa que podem não estar juntos. Desde o design de experiência orientada por produto e desenvolvimento até o cliente, você tem participantes diferentes para criar essas coisas. Para nós, internamente, o suporte à liderança e a adesão foram o único fator maior para nossa transformação digital.&quot;_ - Monique Misrahi, T-Mobile
+_&quot;Quando você começa a pensar no conteúdo de uma maneira diferente, você traz diferentes grupos para a tabela que podem não ter estado juntos. Desde o design de experiência orientada por produto e desenvolvimento até o cliente, você tem participantes diferentes para criar essas coisas. Para nós, internamente, o suporte à liderança e a adesão foram o único fator maior para nossa transformação digital.&quot;_ - Monique Misrahi, T-Mobile
 
-_&quot;O suporte, a direção e a visão da liderança foram fatores críticos. O fantástico foi que nossa liderança era inclusiva e aberta ao estímulo. Eles escutaram.&quot;_ - Amy Bergstrom, Deloitte
+_&quot;O suporte, a direção e a visão da liderança foram um fator crítico. O fantástico foi que nossa liderança era inclusiva e aberta ao estímulo. Eles escutaram.&quot;_ - Amy Bergstrom, Deloitte
 
 ### Foundation
 
@@ -78,7 +78,7 @@ Para ilustrar esse ponto, vamos ver um exemplo de uma organização corporativa 
 
 A questão é: você vai esperar para reinventar conteúdo até que todas as marcas estejam operando de forma unificada? Será sensato resolver a questão da mudança para todos eles?
 
-A resposta é não. Isso aumentaria a complexidade. Além disso, muitas das partes interessadas ficarão frustradas com as conversas intermináveis em torno do antigo, frustrando tentativas de criar o novo. Uma pessoa fica presa em uma conversa _sobre_ em vez de fazê-lo.
+A resposta é não. Isso aumentaria a complexidade. Além disso, muitas das partes interessadas ficarão frustradas com as conversas intermináveis em torno do antigo, frustrando tentativas de criar o novo. Um usuário é bloqueado em uma conversa _sobre_ alteração, em vez de fazê-la.
 
 O que é necessário é um quadro concreto. Um novo paradigma para trabalhar. Algo que as pessoas podem ver e sentir. No passado, o conteúdo pode ter sido considerado uma página, uma campanha ou qualquer coisa imaginada no singular. A mudança fundamental é ver o conteúdo como conteúdo em si: para ser redefinido, reestilizado e reciclado de volta para a equipe de criação. O novo desenvolvimento principal deve ser usado para experiências ricas em públicos-alvos.
 
@@ -89,9 +89,9 @@ Para muitos clientes, a melhor maneira de instigar mudanças é criar um mini si
 * Aumentar a probabilidade e a velocidade de adesão das partes interessadas
 * Resolva as porcas e os parafusos táticos e diminua as lacunas antes de reaplicar as alterações à escala
 
-_&quot;Mudamos nossa organização de design de experiência para uma visualização mais omnicanal do cliente. Criamos uma equipe de estrutura de sistemas de design que está definindo totalmente quais serão nossos componentes de conteúdo e como eles serão usados. Isso nos ajudou a alcançar um nível de velocidade de conteúdo que não podíamos imaginar antes.&quot;_ - Monique Misrahi, T-Mobile
+_&quot;Alteramos nossa organização de design de experiência para uma exibição mais omnicanal do cliente. Criamos uma equipe de estrutura de sistemas de design que está definindo totalmente quais serão nossos componentes de conteúdo e como eles serão usados. Isso nos ajudou a alcançar um nível de velocidade de conteúdo que não podíamos imaginar antes.&quot;_ - Monique Misrahi, T-Mobile
 
-_&quot;Sabíamos que havia muito conteúdo surgindo. Então fizemos uma pesquisa com nosso público para descobrir se eles eram capazes de encontrar nossas peças de liderança de pensamento. Descobrimos que havia confusão, então adotamos uma abordagem única, segmentando todas as melhores ideias em um site piloto e marcando esse conteúdo. Criamos uma área dedicada para esse conteúdo e cultivamos um grande público para ele. Vários anos depois, pudemos reintegrar isso ao nosso site mais amplo e agora nosso conteúdo de liderança de pensamento ajuda a conduzir as pessoas pelo ciclo de vendas.&quot;_ - Amy Bergstrom, Deloitte
+_&quot;Sabíamos que havia muito conteúdo sendo lançado. Então fizemos uma pesquisa com nosso público para descobrir se eles eram capazes de encontrar nossas peças de liderança de pensamento. Descobrimos que havia confusão, então adotamos uma abordagem única, segmentando todas as melhores ideias em um site piloto e marcando esse conteúdo. Criamos uma área dedicada para esse conteúdo e cultivamos um grande público para ele. Vários anos depois, pudemos reintegrar isso ao nosso site mais amplo e agora nosso conteúdo de liderança de pensamento ajuda a conduzir as pessoas pelo ciclo de vendas.&quot;_ - Amy Bergstrom, Deloitte
 
 ### Execução
 
@@ -101,9 +101,9 @@ Ao criar a estrutura, há alguns paradigmas comuns para os quais você precisar�
 
 Estes são quatro marcos que devem ser construídos durante a fase de execução:
 
-1. **Defina os alicerces da sua taxonomia organizacional global.**
+1. **Defina os fundamentos da sua taxonomia organizacional global.**
 
-   Quando falamos sobre taxonomia, não estamos apenas fazendo referência à estrutura de pastas, mas entendendo quem está criando o quê e quando. Além disso, precisaremos considerar a [permissão diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) estruturas que precisarão ser arquitetadas para cada tipo de autor.
+   Quando falamos sobre taxonomia, não estamos apenas fazendo referência à estrutura de pastas, mas entendendo quem está criando o quê e quando. Além disso, precisaremos considerar as estruturas de [permissão diferente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) que precisarão ser arquitetadas para cada tipo de autor.
 
    Nesse ponto, considere se você deseja um modelo de governança centralizado ou descentralizado.Por um lado, um modelo de governança centralizado cria uma estratégia taxonômica consolidada que oferece controle de qualidade mais rigoroso e insights de processo que seriam impossíveis ou, no mínimo, difíceis em uma estrutura descentralizada.
 
@@ -113,7 +113,7 @@ Estes são quatro marcos que devem ser construídos durante a fase de execução
 
    A decisão sobre qual direção seguir dependerá do objetivo estratégico geral da organização. Pode se resumir a escolher entre maior flexibilidade para usuários empresariais ou uma experiência unificada entre marcas. Alinhar no modelo apropriado é essencial para uma execução de som.
 
-1. **Realizar uma auditoria de propriedade de conteúdo**
+1. **Executar uma auditoria de propriedade de conteúdo**
 
    Considere o seguinte cenário:
 
@@ -139,7 +139,7 @@ Estes são quatro marcos que devem ser construídos durante a fase de execução
 
    Procure criar uma equipe com diretrizes de uso claras, em vez de projetar para a &quot;borda&quot;. Uma bela simplicidade está no centro da velocidade do conteúdo. E não se esqueça de incluir equipes de acessibilidade para tudo o que é projetado e desenvolvido. Um sistema de design precisa encontrar esse equilíbrio entre atender a uma experiência muito específica e a flexibilidade para trabalhar de forma sistemática dentro de um CMS corporativo. Os Componentes principais e Sistemas de estilo são incrivelmente adaptáveis a uma miríade de experiências e permitirão mais do que o suficiente de liberdade para atender às ambições estéticas dos criadores. Ainda assim, é essencial para a velocidade e a escala que uma abordagem de senso comum seja aplicada ao determinar a execução de uma experiência. É necessário um certo malabarismo de prioridades. Ao projetar um sistema, observe os fundamentos de reutilização e velocidade.A grande maioria das experiências em um site deve ser executada usando componentes OOTB e sistemas de estilo.
 
-   _&quot;É necessária uma mudança de mentalidade em torno do conteúdo. Muitos profissionais de conteúdo trabalharam com a lente de conteúdo específico de canal, de marca ou de página para sua carreira. É hora de pensar de forma holística e dar tempo para essa exploração.&quot;_ - Monique Misrahi, T-Mobile
+   _&quot;É necessária uma mudança de mentalidade em relação ao conteúdo. Muitos profissionais de conteúdo trabalharam com a lente de conteúdo específico de canal, de marca ou de página para sua carreira. É hora de pensar de forma holística e dar tempo para essa exploração.&quot;_ - Monique Misrahi, T-Mobile
 
    _&quot;Ter uma estratégia de conteúdo centralizada nos ajuda a evitar a duplicação. Não estamos saturando demais o mercado, não estamos dizendo coisas diferentes em tópicos semelhantes. Ele nos ajuda a otimizar nossa biblioteca completa de conteúdo e a falar com uma voz consistente em todo o mundo.&quot;_ - Amy Bergstrom, Deloitte
 
@@ -147,9 +147,9 @@ Estes são quatro marcos que devem ser construídos durante a fase de execução
 
 Em geral, por assim dizer, é melhor seguir estas regras básicas:
 
-* Procura que pelo menos 80% das experiências sejam [Componentes prontos para uso](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Sistemas de estilo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Por meio do depoimento de clientes, isso não só criará uma base mais escalável, permitindo que você aproveite o roteiro do produto, como também aumentará a velocidade em até 50%.
-* [Configurar modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afaste-se dos modelos estáticos. Ao configurar modelos editáveis (necessários para usar sistemas de estilo), é necessário atribuir um autor de modelo que controlará os diferentes estilos disponíveis para uma página ou seção do site. Essas atualizações no próprio modelo são mínimas em termos de trabalho diário.
-* Uso [Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) possível. Embora o caso de uso geral dos fragmentos de experiência seja a distribuição de vários canais, eles também podem ser usados com eficiência em todo o site para preencher o conteúdo em uma área de uma vez, em vez de atualizar o conteúdo manualmente em várias áreas. Isso pode economizar tempo e esforço excessivos e liberar a equipe de criação para trabalhar em experiências mais específicas e avançadas.
+* O objetivo é ter nada menos que 80% das experiências conduzidas pelos [Componentes prontos](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Sistemas de Estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Por meio do depoimento de clientes, isso não só criará uma base mais escalável, permitindo que você aproveite o roteiro do produto, como também aumentará a velocidade em até 50%.
+* [Configurar modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e afastar-se de modelos estáticos. Ao configurar modelos editáveis (necessários para usar sistemas de estilo), é necessário atribuir um autor de modelo que controlará os diferentes estilos disponíveis para uma página ou seção do site. Essas atualizações no próprio modelo são mínimas em termos de trabalho diário.
+* Use os [Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) quando possível. Embora o caso de uso geral dos fragmentos de experiência seja a distribuição de vários canais, eles também podem ser usados com eficiência em todo o site para preencher o conteúdo em uma área de uma vez, em vez de atualizar o conteúdo manualmente em várias áreas. Isso pode economizar tempo e esforço excessivos e liberar a equipe de criação para trabalhar em experiências mais específicas e avançadas.
 * Crie experiências mais ricas. Ao utilizar a regra 80/20 (conforme acima), uma organização pode utilizar CSS específico e desenvolvimento de back-end para experiências selecionadas, em vez de atualizações de manutenção comuns.
 * Opte por uma base escalável e uma reformulação rápida. Os sistemas de estilo executados com base em uma implementação moderna podem permitir uma reformulação eficiente da marca em toda a plataforma. A atualização de vários setores de conteúdo por meio da alteração de capas CSS permite testes e validação rápidos e aumenta a qualidade experimental do site, com impacto direto no ROI.
 
@@ -176,8 +176,8 @@ Estas são algumas das possíveis armadilhas a serem evitadas:
    * Estamos maximizando o alcance orgânico?
 * A experiência está acessível a todos?
 
-* Exibir soluções em silos. Por exemplo, concentrar-se apenas no aspecto técnico da implementação do AEM não obterá todos os benefícios para os negócios. Em vez disso, recomendamos analisar casos de uso e cenários de negócios e, em seguida, direcionar para a arquitetura e o design, pois isso fornecerá uma visão maior das capacidades do AEM. Anurandha Pentareddy do Adobe compartilha : _&quot;Uma coisa que eu aconselho é olhar antecipadamente para os seus objetivos de valor para a plataforma que você está implementando.&quot;_
+* Exibir soluções em silos. Por exemplo, concentrar-se apenas no aspecto técnico da implementação do AEM não obterá todos os benefícios para os negócios. Em vez disso, recomendamos analisar casos de uso e cenários de negócios e, em seguida, direcionar para a arquitetura e o design, pois isso fornecerá uma visão maior das capacidades do AEM. Anurandha Pentareddy do Adobe Shares: _&quot;Uma coisa que aconselho é que você analise com antecedência seus objetivos de valor para a plataforma que está implementando.&quot;_
 
-Para uma discussão mais detalhada da velocidade do conteúdo, ouça esta mensagem de uma hora [discussão do painel](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) com Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e Adobe Anuradha Pentareddy.
+Para uma discussão mais detalhada da velocidade do conteúdo, ouça esta [discussão do painel](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) de uma hora com Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e Adobe Anuradha Pentareddy.
 
-Saiba mais sobre estratégia e liderança de pensamento na [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

@@ -30,7 +30,7 @@ ht-degree: 20%
    + [Colaborando](basics/collaborating.md)
    + [Compartilhamento de link](basics/link-sharing.md)
 
-+ Configuração{#configuring}
++ Configurando{#configuring}
    + [Meu espaço de trabalho](configuring/my-workspace.md)
    + [Formulários de metadados](configuring/metadata-forms.md)
    + [Gerenciamento de permissões](configuring/permissions-management.md)
@@ -38,7 +38,7 @@ ht-degree: 20%
 
 + [integração de Creative Cloud](integrations/creative-cloud.md)
 
-+ Integração do Adobe Workfront{#workfront}
++ Integração com o Adobe Workfront{#workfront}
    + [Visão geral](./integrations/workfront/overview.md)
    + [Configuração](./integrations/workfront/configure.md)
    + [Mapeamento de metadados](./integrations/workfront/map-metadata.md)

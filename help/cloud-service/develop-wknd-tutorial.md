@@ -27,7 +27,7 @@ A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AE
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-O tutorial foi projetado para funcionar com **AEM as a Cloud Service** e é compatível com versões anteriores com **AEM 6.5+** e **AEM 6.4.2+**.
+O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e tem compatibilidade retroativa com o **AEM 6.5+** e o **AEM 6.4.2+**.
 
 **[Veja o tutorial aqui!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)**
 
@@ -41,6 +41,6 @@ O vídeo mostra como o projeto do Site WKND pode ser:
 
 1. Originado de um repositório Git de terceiros, neste caso Github.com, mas pode ser qualquer repositório Git
 2. Enviado para um repositório Git upstream do Adobe Cloud Manager registrado com um programa AEM as a Cloud Service
-3. Implantado por meio de pipelines do Cloud Manager em ambientes as a Cloud Service do AEM
+3. Implantado via pipelines do Cloud Manager em ambientes do AEM as a Cloud Service
 
-Para obter uma visão geral completa de como implantar o projeto AEM no AEM as a Cloud Service, assista à série de vídeos sobre como [integrar o Git com o Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Para obter uma visão geral completa de como implantar o projeto AEM no AEM as a Cloud Service, assista à série de vídeos sobre como [integrar o Git ao Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

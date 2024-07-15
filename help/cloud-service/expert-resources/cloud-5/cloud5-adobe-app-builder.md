@@ -1,6 +1,6 @@
 ---
-title: Construtor de aplicativos Cloud 5 Adobe
-description: Esse episódio se aprofunda no padrão de integração externa que usa o Construtor de aplicativos do Adobe
+title: Cloud 5 Adobe App Builder
+description: Esse episódio se aprofunda no padrão de integração externa que usa o Adobe App Builder
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Construtor de aplicativos Cloud 5 Adobe
+# Cloud 5 Adobe App Builder
 
-Amol Anand entra em cena para nos fornecer a redução nas integrações com o Construtor de aplicativos Adobe e onde e quando usá-lo.
+Amol Anand entra em cena para nos dar a redução nas integrações com o Adobe App Builder e onde e quando usá-lo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Conteúdo abordado neste vídeo
 
-+ Visão geral do [Construtor de aplicativos](https://developer.adobe.com/app-builder/docs/overview/)
++ Visão geral do [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
 + [Tutorials e Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
-+ [Registro e monitoramento](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ Configuração [Limites do sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
-+ [Desenvolvimento local](https://developer.adobe.com/app-builder/docs/resources/debugging/) Dicas
++ [Logs e monitoramento](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
++ Definindo [Limites do Sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
++ Dicas de [Desenvolvimento Local](https://developer.adobe.com/app-builder/docs/resources/debugging/)

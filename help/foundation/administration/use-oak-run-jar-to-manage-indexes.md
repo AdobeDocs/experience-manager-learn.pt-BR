@@ -18,18 +18,18 @@ ht-degree: 0%
 
 # Usar oak-run.jar para gerenciar índices
 
-[!DNL oak-run.jar]O comando index do consolida vários recursos para gerenciar [!DNL Oak]200 índices no AEM, desde a coleta de estatísticas de índice, execução de verificações de consistência de índice e reindexação de índices.
+O comando index de [!DNL oak-run.jar] consolida vários recursos para gerenciar [!DNL Oak]200 índices no AEM, desde a coleta de estatísticas de índice, a execução de verificações de consistência de índice e a reindexação de índices.
 
 >[!NOTE]
 >
 >Neste artigo e vídeos, os termos indexação e reindexação são usados alternadamente e considerados a mesma operação.
 
-## [!DNL oak-run.jar] Noções básicas sobre o comando index
+## Fundamentos do comando de índice [!DNL oak-run.jar]
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* A versão de [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) usado deve corresponder à versão do Oak usada na instância do AEM.
-* Gerenciamento de índices usando [!DNL oak-run.jar] utiliza o **[!DNL index]** comando com vários sinalizadores para suportar operações diferentes.
+* A versão de [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) usada deve corresponder à versão do Oak usada na instância AEM.
+* O gerenciamento de índices usando [!DNL oak-run.jar] aproveita o comando **[!DNL index]** com vários sinalizadores para dar suporte a diferentes operações.
 
    * `java -jar oak-run*.jar index ...`
 
@@ -37,44 +37,44 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
 
-* `oak-run.jar` despeja todas as definições de índice, estatísticas de índice importantes e conteúdo de índice para análise offline.
+* `oak-run.jar` descarta todas as definições de índice, estatísticas de índice importantes e conteúdo de índice para análise offline.
 * A coleta de estatísticas de índice é segura para ser executada em instâncias AEM em uso.
 
 ## Verificação de consistência do índice
 
 >[!VIDEO](https://video.tv.adobe.com/v/21476?quality=12&learn=on)
 
-* `oak-run.jar` determina rapidamente se os índices do lucene Oak estão corrompidos.
+* `oak-run.jar` determina rapidamente se os índices Lucene Oak estão corrompidos.
 * A verificação de consistência é segura para ser executada na instância AEM em uso para os níveis de verificação de consistência 1 e 2.
 
-## Indexação online do TarMK com [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
+## Indexação TarMK Online com [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21479?quality=12&learn=on)
 
-* Indexação online de [!DNL TarMK] usar [!DNL oak-run.jar] é mais rápido que a configuração `reindex=true` no `oak:queryIndexDefinition` nó. Apesar desse aumento de desempenho, a indexação online usando [!DNL oak-run.jar] ainda requer uma janela de manutenção para executar a indexação.
+* A indexação online de [!DNL TarMK] usando [!DNL oak-run.jar] é mais rápida que a configuração `reindex=true` no nó `oak:queryIndexDefinition`. Apesar desse aumento de desempenho, a indexação online usando o [!DNL oak-run.jar] ainda requer uma janela de manutenção para executar a indexação.
 
-* Indexação online de [!DNL TarMK] usar [!DNL oak-run.jar] deve **não** ser executado em instâncias de AEM fora da janela de manutenção de instâncias de AEM.
+* A indexação online de [!DNL TarMK] usando [!DNL oak-run.jar] deve **não** ser executada em instâncias AEM fora da janela de manutenção de instâncias AEM.
 
 ## Indexação offline do TarMK com oak-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
 
-* Indexação offline de [!DNL TarMK] usar [!DNL oak-run.jar] é o mais simples [!DNL oak-run.jar] abordagem de indexação baseada em [!DNL TarMK] uma vez que exige uma única [!DNL oak-run.jar] , no entanto, requer que a instância AEM seja encerrada.
+* A indexação offline de [!DNL TarMK] usando [!DNL oak-run.jar] é a abordagem de indexação baseada em [!DNL oak-run.jar] mais simples para [!DNL TarMK], pois requer um único comando [!DNL oak-run.jar], no entanto, requer que a instância de AEM seja desligada.
 
 ## Indexação fora de banda TarMK com oak-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
 
-* Indexação fora de banda ativada [!DNL TarMK] usar [!DNL oak-run.jar] minimiza o impacto da indexação em instâncias AEM em uso.
+* A indexação fora de banda em [!DNL TarMK] usando [!DNL oak-run.jar] minimiza o impacto da indexação em instâncias AEM em uso.
 * A indexação fora da banda é a abordagem de indexação recomendada para instalações de AEM em que o tempo de reindexação/indexação excede as janelas de manutenção disponíveis.
 
 ## Indexação online do MongoMK com oak-run.jar
 
-* Índice online com [!DNL oak-run.jar] em [!DNL MongoMK] e [!DNL RDBMK] é o método recomendado para reindexação [!DNL MongoMK] (e [!DNL RDBMK]) Instalações de AEM. **Nenhum outro método deve ser usado para [!DNL MongoMK] ou [!DNL RDBMK].**
+* O índice online com [!DNL oak-run.jar] em [!DNL MongoMK] e [!DNL RDBMK] é o método recomendado para reindexar [!DNL MongoMK] (e [!DNL RDBMK]) instalações de AEM. **Nenhum outro método deve ser usado para [!DNL MongoMK] ou [!DNL RDBMK].**
 * Essa indexação precisa ser executada somente em uma única instância do AEM no cluster.
-* Indexação online de [!DNL MongoMK] é seguro para execução em um cluster AEM em execução, pois a passagem do repositório ocorrerá em apenas um [!DNL MongoDB] permitindo que os outros continuem atendendo solicitações sem impacto significativo no desempenho.
+* A indexação online de [!DNL MongoMK] é segura para execução em um cluster AEM em execução, pois a passagem do repositório ocorrerá em apenas um único nó [!DNL MongoDB], permitindo que os outros continuem atendendo solicitações sem impacto significativo no desempenho.
 
-A variável [!DNL oak-run.jar] comando index para executar uma indexação on-line de [!DNL MongoMK] é o [igual ao [!DNL TarMK] Indexação online com [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) com a diferença de que o parâmetro de armazenamento de segmentos aponta para o [!DNL MongoDB] instância que contém o armazenamento de nós.
+O comando index [!DNL oak-run.jar] para executar uma indexação online de [!DNL MongoMK] é o [mesmo que o [!DNL TarMK] indexação Online com [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) com a diferença de que o parâmetro do repositório de segmentos aponta para a instância [!DNL MongoDB] que contém o repositório de nós.
 
 ```
 java -jar oak-run*.jar index
@@ -88,4 +88,4 @@ java -jar oak-run*.jar index
 
 * [Baixar [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
    * *Verifique se a versão baixada corresponde à versão do Oak instalada no AEM conforme descrito acima*
-* [Documentação do comando Apache Jackrabbit Oak oak-run.jar Index](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)
+* [Documentação de comando do Apache Jackrabbit Oak oak-run.jar Index](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)

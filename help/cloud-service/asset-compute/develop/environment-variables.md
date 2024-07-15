@@ -1,5 +1,5 @@
 ---
-title: Configurar as variáveis de ambiente para extensibilidade do Asset compute
+title: Configurar as variáveis de ambiente para extensibilidade do Asset Compute
 description: As variáveis de ambiente são mantidas no arquivo .env para desenvolvimento local e são usadas para fornecer credenciais de Adobe I/O e credenciais de armazenamento de nuvem necessárias para o desenvolvimento local.
 feature: Asset Compute Microservices
 version: Cloud Service
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 # Configurar as variáveis de ambiente
 
-![arquivo dot env](assets/environment-variables/dot-env-file.png)
+![arquivo env. dot](assets/environment-variables/dot-env-file.png)
 
-Antes de iniciar o desenvolvimento de trabalhadores do Asset compute, verifique se o projeto está configurado com informações de armazenamento em Adobe I/O e nuvem. Essas informações são armazenadas no `.env`  que é usado apenas para desenvolvimento local e não é salvo no Git. A variável `.env` O arquivo fornece uma maneira conveniente de expor pares de chave/valores ao ambiente de desenvolvimento local do Asset compute. Quando [implantação](../deploy/runtime.md) Os trabalhadores do Asset compute para o Adobe I/O Runtime, a `.env` O arquivo não é usado, mas um subconjunto de valores é transmitido por meio de variáveis de ambiente. Outros parâmetros e segredos personalizados podem ser armazenados no `.env` arquivo, como credenciais de desenvolvimento para serviços Web de terceiros.
+Antes de iniciar o desenvolvimento de trabalhadores do Asset Compute, verifique se o projeto está configurado com informações de armazenamento em Adobe I/O e nuvem. Essas informações são armazenadas no `.env` do projeto, que é usado apenas para desenvolvimento local, e não são salvas no Git. O arquivo `.env` fornece uma maneira conveniente de expor pares de chave/valores ao ambiente de desenvolvimento local do Asset compute local. Ao [implantar](../deploy/runtime.md) trabalhadores de Asset compute no Adobe I/O Runtime, o arquivo `.env` não é usado, mas um subconjunto de valores é transmitido por meio de variáveis de ambiente. Outros segredos e parâmetros personalizados também podem ser armazenados no arquivo `.env`, como credenciais de desenvolvimento para serviços Web de terceiros.
 
-## Referencie a `private.key`
+## Referenciar o `private.key`
 
 ![chave privada](assets/environment-variables/private-key.png)
 
-Abra o `.env` arquivo, remova o comentário do `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` e forneça o caminho absoluto no sistema de arquivos para a variável `private.key` que corresponde ao certificado público adicionado ao projeto do Adobe I/O App Builder.
+Abra o arquivo `.env`, remova o comentário da chave `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` e forneça o caminho absoluto em seu sistema de arquivos para o `private.key` que é emparelhado com o certificado público adicionado ao seu projeto Adobe I/O App Builder.
 
-+ Se o par de chaves foi gerado pelo Adobe I/O, ele foi baixado automaticamente como parte do  `config.zip`.
++ Se o par de chaves foi gerado pelo Adobe I/O, ele foi baixado automaticamente como parte do `config.zip`.
 + Se você forneceu a chave pública para o Adobe I/O, então você também deve estar de posse da chave privada correspondente.
 + Se você não tiver esses pares de chaves, poderá gerar novos pares de chaves ou fazer upload de novas chaves públicas na parte inferior do:
-  [https://console.adobe.com](https://console.adobe.io) > Seu projeto do Asset compute App Builder > Workspaces @ Development > Conta de serviço (JWT).
+  [https://console.adobe.com](https://console.adobe.io) > Seu projeto do Asset Compute App Builder > Workspaces @ Development > Conta de Serviço (JWT).
 
-Lembre-se do `private.key` O arquivo não deve ser verificado no Git porque contém segredos, mas deve ser armazenado em um local seguro fora do projeto.
+Lembre-se de que não é necessário fazer check-in do arquivo `private.key` no Git, pois ele contém segredos. Em vez disso, ele deve ser armazenado em um local seguro fora do projeto.
 
 Por exemplo, no macOS, pode ser semelhante a:
 
@@ -47,19 +47,19 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 ## Configurar credenciais do Armazenamento na nuvem
 
-O desenvolvimento local dos trabalhadores Assets compute exige o [armazenamento na nuvem](../set-up/accounts-and-services.md#cloud-storage). As credenciais de armazenamento na nuvem usadas para o desenvolvimento local são fornecidas na `.env` arquivo.
+O desenvolvimento local de trabalhadores do Asset Compute requer acesso ao [armazenamento na nuvem](../set-up/accounts-and-services.md#cloud-storage). As credenciais de armazenamento na nuvem usadas para desenvolvimento local são fornecidas no arquivo `.env`.
 
-Este tutorial prefere o uso do Armazenamento Azure Blob, no entanto, o Amazon S3 e suas chaves correspondentes no `.env` arquivo pode ser usado em seu lugar.
+Este tutorial prefere o uso do Armazenamento Azure Blob, no entanto, o Amazon S3 e suas chaves correspondentes no arquivo `.env` podem ser usados.
 
 ### Usando o armazenamento Azure Blob
 
-Remova o comentário e preencha as seguintes chaves na `.env` e preencha-os com os valores do armazenamento em nuvem provisionado encontrado no Portal do Azure.
+Remova o comentário e preencha as seguintes chaves no arquivo `.env` e preencha-as com os valores do armazenamento na nuvem provisionado encontrado no Portal do Azure.
 
 ![Armazenamento Azure Blob](./assets/environment-variables/azure-portal-credentials.png)
 
-1. Valor para o `AZURE_STORAGE_CONTAINER_NAME` key
-1. Valor para o `AZURE_STORAGE_ACCOUNT` key
-1. Valor para o `AZURE_STORAGE_KEY` key
+1. Valor da chave `AZURE_STORAGE_CONTAINER_NAME`
+1. Valor da chave `AZURE_STORAGE_ACCOUNT`
+1. Valor da chave `AZURE_STORAGE_KEY`
 
 Por exemplo, isso pode parecer com (valores somente para ilustração):
 
@@ -71,7 +71,7 @@ AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ...
 ```
 
-O resultado `.env` O arquivo tem a seguinte aparência:
+O arquivo resultante `.env` tem a seguinte aparência:
 
 ![Credenciais do Armazenamento Azure Blob](assets/environment-variables/cloud-storage-credentials.png)
 
@@ -79,7 +79,7 @@ Se você NÃO estiver usando o Armazenamento de blobs do Microsoft Azure, remova
 
 ### Uso do armazenamento em nuvem Amazon S3{#amazon-s3}
 
-Se estiver usando o armazenamento na nuvem do Amazon S3, remova o comentário e preencha as seguintes chaves na `.env` arquivo.
+Se estiver usando o armazenamento na nuvem do Amazon S3, remova o comentário e preencha as seguintes chaves no arquivo `.env`.
 
 Por exemplo, isso pode parecer com (valores somente para ilustração):
 
@@ -94,22 +94,22 @@ AWS_REGION=us-east-1
 
 ## Validar a configuração do projeto
 
-Após configurar o projeto de Asset compute gerado, valide a configuração antes de fazer alterações no código para garantir que os serviços de suporte sejam provisionados, no `.env` arquivos.
+Após configurar o projeto de Asset compute gerado, valide a configuração antes de fazer alterações no código para garantir que os serviços de suporte sejam provisionados nos arquivos `.env`.
 
-Para iniciar a Ferramenta de desenvolvimento do Asset compute para o projeto do Asset compute:
+Para iniciar a Ferramenta de desenvolvimento do Asset Compute para o projeto do Asset Compute:
 
-1. Abra uma linha de comando na raiz do projeto Asset compute (no Código VS, isso pode ser aberto diretamente no IDE via Terminal > Novo terminal) e execute o comando:
+1. Abra uma linha de comando na raiz do projeto Asset Compute (no Código VS, isso pode ser aberto diretamente no IDE via Terminal > Novo terminal) e execute o comando:
 
    ```
    $ aio app run
    ```
 
-1. A Ferramenta de desenvolvimento de Asset compute local será aberta no navegador da Web padrão em __http://localhost:9000__.
+1. A Ferramenta de Desenvolvimento do Asset compute local será aberta no navegador da Web padrão em __http://localhost:9000__.
 
-   ![execução do aplicativo aio](assets/environment-variables/aio-app-run.png)
+   ![aio aplicativo executado](assets/environment-variables/aio-app-run.png)
 
 1. Observe a saída da linha de comando e o navegador da Web em busca de mensagens de erro enquanto a Ferramenta de desenvolvimento é inicializada.
-1. Para interromper a Ferramenta de desenvolvimento do Asset compute, toque em `Ctrl-C` na janela que executou `aio app run` para encerrar o processo.
+1. Para interromper a Ferramenta de Desenvolvimento do Asset Compute, toque em `Ctrl-C` na janela que executou `aio app run` para encerrar o processo.
 
 ## Resolução de problemas
 

@@ -1,6 +1,6 @@
 ---
-title: Configurar um ambiente de desenvolvimento local para extensibilidade do Asset compute
-description: O desenvolvimento de trabalhadores do Asset compute, que são aplicativos JavaScript Node.js, exigem ferramentas de desenvolvimento específicas que diferem do desenvolvimento de AEM tradicional, que vai de Node.js e vários módulos npm a Docker Desktop e Microsoft Visual Studio Code.
+title: Configurar um ambiente de desenvolvimento local para extensibilidade do Asset Compute
+description: O desenvolvimento de trabalhadores do Asset Compute, que são aplicativos Node.js do JavaScript, exigem ferramentas de desenvolvimento específicas que diferem do desenvolvimento do AEM tradicional, que variam de Node.js e vários módulos npm a Docker Desktop e Microsoft Visual Studio Code.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Configurar ambiente de desenvolvimento local
 
-Os projetos do Adobe Asset compute não podem ser integrados ao tempo de execução do AEM local fornecido pelo SDK do AEM AEM AEM e são desenvolvidos usando sua própria cadeia de ferramentas, separada daquela exigida pelos aplicativos do com base no arquétipo de projeto Maven.
+Os projetos do Adobe Asset Compute não podem ser integrados ao tempo de execução do AEM local fornecido pelo SDK do AEM AEM AEM e são desenvolvidos usando sua própria cadeia de ferramentas, separada daquela exigida pelos aplicativos do com base no arquétipo de projeto Maven.
 
-Para estender os microsserviços do Asset compute, as seguintes ferramentas devem ser instaladas na máquina do desenvolvedor local.
+Para estender os microsserviços do Asset Compute, as seguintes ferramentas devem ser instaladas na máquina do desenvolvedor local.
 
 ## Instruções de configuração abreviadas
 
 Veja a seguir as instruções de uma configuração resumida. Detalhes sobre essas ferramentas de desenvolvimento são descritos nas seções discretas abaixo.
 
-1. [Instalar o Docker Desktop](https://www.docker.com/products/docker-desktop) e obtenha as imagens necessárias do Docker:
+1. [Instale o Docker Desktop](https://www.docker.com/products/docker-desktop) e obtenha as imagens do Docker necessárias:
 
    ```
    $ docker pull openwhisk/action-nodejs-v12:latest
@@ -48,13 +48,13 @@ Para obter mais informações sobre as instruções de instalação resumidas, l
 
 ## Instalar o Visual Studio Code{#vscode}
 
-[Código do Microsoft Visual Studio](https://code.visualstudio.com/download) O é usado para desenvolver e depurar trabalhadores do Asset compute. Embora outras [IDE compatível com JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) pode ser usado para desenvolver o trabalhador, somente o Visual Studio Code pode ser integrado [depurar](../test-debug/debug.md) Trabalhador de asset compute.
+O [Microsoft Visual Studio Code](https://code.visualstudio.com/download) é usado para desenvolver e depurar trabalhadores de Asset compute. Embora outro [IDE compatível com JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) possa ser usado para desenvolver o trabalhador, somente o Visual Studio Code pode ser integrado ao trabalhador de Asset compute [debug](../test-debug/debug.md).
 
-Este tutorial presume o uso do Visual Studio Code, pois ele fornece a melhor experiência do desenvolvedor para estender o Asset compute.
+Este tutorial presume o uso do Visual Studio Code, pois ele fornece a melhor experiência do desenvolvedor para estender o Asset Compute.
 
 ## Instalar o Docker Desktop{#docker}
 
-Baixe e instale o mais recente e estável [Desktop Docker](https://www.docker.com/products/docker-desktop), pois isso é necessário para [test](../test-debug/test.md) e [depurar](../test-debug/debug.md) Asset compute projetos localmente.
+Baixe e instale o [Docker Desktop](https://www.docker.com/products/docker-desktop) estável mais recente, pois ele é necessário para [testar](../test-debug/test.md) e [depurar](../test-debug/debug.md) projetos do Asset Compute localmente.
 
 Depois de instalar o Docker Desktop, inicie-o e instale as seguintes imagens do Docker na linha de comando:
 
@@ -63,17 +63,17 @@ $ docker pull openwhisk/action-nodejs-v12:latest
 $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
-Os desenvolvedores em máquinas Windows devem verificar se estão usando contêineres Linux para as imagens acima. As etapas para alternar para contêineres Linux estão descritas em [Documentação do Docker para Windows](https://docs.docker.com/docker-for-windows/).
+Os desenvolvedores em máquinas Windows devem verificar se estão usando contêineres Linux para as imagens acima. As etapas para alternar para contêineres Linux estão descritas na [Documentação do Docker para Windows](https://docs.docker.com/docker-for-windows/).
 
 ## Instalar Node.js (e npm){#node-js}
 
-Os trabalhadores assets compute são [Node.js](https://nodejs.org/)com base em e, portanto, exigem que o Node.js 10+ (e npm) seja desenvolvido e criado.
+Os trabalhadores do Asset Compute são baseados em [Node.js](https://nodejs.org/) e, portanto, exigem Node.js 10+ (e npm) para serem desenvolvidos e compilados.
 
-+ [Instalar Node.js (e npm)](../../local-development-environment/development-tools.md#node-js) da mesma forma que para o desenvolvimento tradicional do AEM.
++ [Instale o Node.js (e o npm)](../../local-development-environment/development-tools.md#node-js) da mesma maneira que para o desenvolvimento tradicional do AEM.
 
 ## Instalar o Adobe I/O CLI{#aio}
 
-[Instale o Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli)ou __aio__ é um módulo npm de linha de comando (CLI) que facilita o uso e a interação com tecnologias Adobe I/O e é usado para trabalhadores de Assets compute personalizados gerados e desenvolvidos localmente.
+[Instalar o Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) ou __aio__ é um módulo npm de linha de comando (CLI) que facilita o uso e a interação com tecnologias Adobe I/O e é usado para gerar e desenvolver localmente trabalhadores de Asset compute personalizado.
 
 ```
 $ npm install -g @adobe/aio-cli
@@ -81,7 +81,7 @@ $ npm install -g @adobe/aio-cli
 
 ## Instalar o plug-in do Asset compute CLI do Adobe I/O{#aio-asset-compute}
 
-A variável [Plug-in de Asset compute do Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-asset-compute)
+O [plug-in de Asset compute CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
 ```
 $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
@@ -89,9 +89,9 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Instalar wskdebug{#wskdebug}
 
-Baixe e instale o [Depuração do Apache OpenWhisk](https://www.npmjs.com/package/@openwhisk/wskdebug) módulo npm para facilitar a depuração local de trabalhadores do Asset compute.
+Baixe e instale o módulo [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm para facilitar a depuração local de trabalhadores do Asset Compute.
 
-_O Visual Studio Code 1.48.x+ é necessário para [wskdebug](#wskdebug) para trabalhar._
+_O Visual Studio Code 1.48.x+ é necessário para que [wskdebug](#wskdebug) funcione._
 
 ```
 $ npm install -g @openwhisk/wskdebug
@@ -99,7 +99,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## Instalar ngrok{#ngrok}
 
-Baixe e instale o [grok](https://www.npmjs.com/package/ngrok) módulo npm, que fornece acesso público à máquina de desenvolvimento local, para facilitar a depuração local de trabalhadores do Asset compute.
+Baixe e instale o módulo [ngrok](https://www.npmjs.com/package/ngrok) npm, que fornece acesso público à sua máquina de desenvolvimento local, para facilitar a depuração local dos trabalhadores do Asset Compute.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true

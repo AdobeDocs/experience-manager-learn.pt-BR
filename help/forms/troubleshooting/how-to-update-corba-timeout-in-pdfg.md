@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como atualizar o tempo limite CORBA no PDFG para atenuar problemas de reversão de transação
 
-*Este vídeo descreve o processo de atualização do tempo limite CORBA no Forms PDFG para atenuar problemas de reversão de transação.*
+*Este vídeo descreve o processo de atualização do tempo limite CORBA no Forms PDFG para atenuar problemas de reversão de transações.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)

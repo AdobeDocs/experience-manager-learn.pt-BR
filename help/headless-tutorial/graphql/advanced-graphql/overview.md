@@ -19,17 +19,17 @@ ht-degree: 0%
 
 {{aem-headless-trials-promo}}
 
-Este tutorial completo continua a [tutorial básico](../multi-step/overview.md) que abordou os fundamentos do Adobe Experience Manager (AEM) Headless e do GraphQL. O tutorial avançado ilustra os aspectos detalhados do trabalho com modelos de fragmento de conteúdo, fragmentos de conteúdo e as consultas persistentes do AEM GraphQL, incluindo o uso das consultas persistentes do GraphQL em um aplicativo cliente.
+Este tutorial completo continua o [tutorial básico](../multi-step/overview.md) que aborda os fundamentos do Adobe Experience Manager (AEM) Headless e do GraphQL. O tutorial avançado ilustra os aspectos detalhados do trabalho com modelos de fragmento de conteúdo, fragmentos de conteúdo e as consultas persistentes do AEM GraphQL, incluindo o uso das consultas persistentes do GraphQL em um aplicativo cliente.
 
 ## Pré-requisitos
 
-Conclua o [configuração rápida para o AEM as a Cloud Service](../quick-setup/cloud-service.md) para configurar o ambiente do AEM as a Cloud Service.
+Conclua a [instalação rápida do AEM as a Cloud Service](../quick-setup/cloud-service.md) para configurar seu ambiente do AEM as a Cloud Service.
 
-É altamente recomendável que você conclua a etapa anterior [tutorial básico](../multi-step/overview.md) e [série de vídeos](../video-series/modeling-basics.md) tutoriais antes de prosseguir com este tutorial avançado. Embora você possa concluir o tutorial usando um ambiente AEM local, este tutorial aborda apenas o fluxo de trabalho para o AEM as a Cloud Service.
+É altamente recomendável concluir os tutoriais anteriores [tutoriais básicos](../multi-step/overview.md) e [séries de vídeos](../video-series/modeling-basics.md) antes de prosseguir com este tutorial avançado. Embora você possa concluir o tutorial usando um ambiente AEM local, este tutorial aborda apenas o fluxo de trabalho do AEM as a Cloud Service.
 
 >[!CAUTION]
 >
->Se você não tiver acesso ao ambiente as a Cloud Service do AEM, poderá concluir [Configuração rápida do AEM sem periféricos usando o SDK local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). No entanto, é importante observar que algumas páginas da interface do usuário do produto, como a navegação por Fragmentos de conteúdo, são diferentes.
+>Se você não tiver acesso ao ambiente do AEM as a Cloud Service, poderá concluir a configuração rápida do [AEM Headless usando o SDK local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). No entanto, é importante observar que algumas páginas da interface do usuário do produto, como a navegação por Fragmentos de conteúdo, são diferentes.
 
 
 
@@ -51,7 +51,7 @@ O vídeo a seguir fornece uma visão geral de alto nível dos conceitos abordado
 
 >[!CAUTION]
 >
->Este vídeo (aos 2:25) menciona a instalação do editor de consultas GraphiQL por meio do Gerenciador de pacotes para explorar consultas do GraphQL. No entanto, em versões mais recentes do AEM como Cloud Service um incorporado **GraphiQL Explorer** for fornecido, portanto, a instalação do pacote não é necessária. Consulte [Uso do GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obter mais informações.
+>Este vídeo (aos 2:25) menciona a instalação do editor de consultas GraphiQL por meio do Gerenciador de pacotes para explorar consultas do GraphQL. No entanto, em versões mais recentes do AEM como Cloud Service, um **GraphiQL Explorer** integrado é fornecido, portanto, a instalação do pacote não é necessária. Consulte [Usando o GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obter mais informações.
 
 
 ## Configuração do projeto
@@ -61,27 +61,27 @@ O projeto do Site WKND tem todas as configurações necessárias, portanto, voc�
 
 ### Revisar configuração existente
 
-A primeira etapa para iniciar qualquer novo projeto no AEM é criar sua configuração, como um espaço de trabalho e criar endpoints da API do GraphQL. Para revisar ou criar uma configuração, navegue até **Ferramentas** > **Geral** > **Navegador de configuração**.
+A primeira etapa para iniciar qualquer novo projeto no AEM é criar sua configuração, como um espaço de trabalho e criar endpoints da API do GraphQL. Para revisar ou criar uma configuração, navegue até **Ferramentas** > **Geral** > **Navegador de Configuração**.
 
-![Navegue até o Navegador de configuração](assets/overview/create-configuration.png)
+![Navegar até o Navegador de Configuração](assets/overview/create-configuration.png)
 
-Observe que `WKND Shared` a configuração do site já foi criada para o tutorial. Para criar uma configuração para o seu próprio projeto, selecione **Criar** no canto superior direito e preencha o formulário no modal Criar configuração exibido.
+Observe que a configuração de site `WKND Shared` já foi criada para o tutorial. Para criar uma configuração para o seu próprio projeto, selecione **Criar** no canto superior direito e preencha o formulário no modal Criar configuração exibido.
 
-![Revisar configuração compartilhada WKND](assets/overview/review-wknd-shared-configuration.png)
+![Revisar Configuração Compartilhada WKND](assets/overview/review-wknd-shared-configuration.png)
 
 ### Revisar endpoints da API do GraphQL
 
-Em seguida, você deve configurar os endpoints de API para enviar consultas do GraphQL para o. Para revisar endpoints existentes ou criar um, navegue até **Ferramentas** > **Geral** > **GraphQL**.
+Em seguida, você deve configurar os endpoints de API para enviar consultas do GraphQL para o. Para revisar os pontos de extremidade existentes ou criar um, navegue até **Ferramentas** > **Geral** > **GraphQL**.
 
 ![Configurar pontos de extremidade](assets/overview/endpoints.png)
 
-Observe que `WKND Shared Endpoint` já foi criada. Para criar um endpoint para o seu projeto, selecione **Criar** no canto superior direito e siga o fluxo de trabalho.
+Observe que `WKND Shared Endpoint` já foi criado. Para criar um ponto de extremidade para o seu projeto, selecione **Criar** no canto superior direito e siga o fluxo de trabalho.
 
 ![Revisar Ponto de Extremidade Compartilhado WKND](assets/overview/review-wknd-shared-endpoint.png)
 
 >[!NOTE]
 >
-> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte [Documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte a [documentação sobre AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### Revisar a estrutura de conteúdo WKND e a pasta raiz de idioma
 
@@ -89,11 +89,11 @@ Uma estrutura de conteúdo bem definida é a chave para o sucesso da implementa�
 
 Uma pasta raiz de idioma é uma pasta com um código de idioma ISO como seu nome, como EN ou FR. O sistema de gerenciamento de tradução AEM usa essas pastas para definir o idioma principal do conteúdo e os idiomas para a tradução de conteúdo.
 
-Ir para **Navegação** > **Assets** > **Arquivos**.
+Vá para **Navegação** > **Assets** > **Arquivos**.
 
-![Navegar para Arquivos](assets/overview/files.png)
+![Navegar até os Arquivos](assets/overview/files.png)
 
-Navegue até o **WKND compartilhado** pasta. Observe a pasta com o título &quot;Inglês&quot; e o nome &quot;EN&quot;. Esta pasta é a pasta raiz do idioma para o projeto do Site WKND.
+Navegue até a pasta **WKND Compartilhado**. Observe a pasta com o título &quot;Inglês&quot; e o nome &quot;EN&quot;. Esta pasta é a pasta raiz do idioma para o projeto do Site WKND.
 
 ![Pasta em inglês](assets/overview/english.png)
 
@@ -105,9 +105,9 @@ Por fim, você deve atribuir a configuração do projeto à pasta raiz do idioma
 
 Para atribuir a pasta raiz do idioma à configuração, selecione a pasta e, em seguida, **Propriedades** na barra de navegação superior.
 
-![Selecionar propriedades](assets/overview/properties.png)
+![Selecionar Propriedades](assets/overview/properties.png)
 
-Em seguida, navegue até o **Cloud Service** e selecione o ícone de pasta na guia **Configuração na nuvem** campo.
+Em seguida, navegue até a guia **Cloud Service** e selecione o ícone de pasta no campo **Configuração da nuvem**.
 
 ![Configuração na nuvem](assets/overview/cloud-conf.png)
 
@@ -122,17 +122,17 @@ Estas são as práticas recomendadas ao criar seu próprio projeto no AEM:
 
 ## Pacotes de Início e Solução
 
-Dois AEM **pacotes** estão disponíveis e podem ser instaladas via [Gerenciador de pacotes](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content)
+Dois **pacotes** AEM estão disponíveis e podem ser instalados via [Gerenciador de Pacotes](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md#sample-content)
 
-* [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) é usado posteriormente no tutorial e contém imagens e pastas de amostra.
-* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) A contém a solução concluída para os capítulos 1 a 4, incluindo novos modelos de fragmento de conteúdo, fragmentos de conteúdo e consultas persistentes do GraphQL. Útil para aqueles que desejam pular diretamente para o [Integração de aplicativos cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) capítulo.
+* [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip) é usado posteriormente no tutorial e contém imagens e pastas de exemplo.
+* [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contém a solução concluída para os Capítulos 1 a 4, incluindo novos modelos de fragmento de conteúdo, fragmentos de conteúdo e consultas de GraphQL persistentes. Útil para quem deseja pular diretamente para o capítulo [Integração de aplicativos cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
 
 
-A variável [Aplicativo React - Tutorial avançado - Aventuras WKND](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) O projeto está disponível para revisar e explorar o aplicativo de amostra. Este aplicativo de amostra recupera o conteúdo do AEM invocando as consultas persistentes do GraphQL e as renderiza em uma experiência imersiva.
+O projeto [Aplicativo React - Tutorial Avançado - Aventuras WKND](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) está disponível para examinar e explorar o aplicativo de amostra. Este aplicativo de amostra recupera o conteúdo do AEM invocando as consultas persistentes do GraphQL e as renderiza em uma experiência imersiva.
 
 ## Introdução
 
 Para começar a usar este tutorial avançado, siga estas etapas:
 
-1. Configurar um ambiente de desenvolvimento usando [AEM as a Cloud Service](../quick-setup/cloud-service.md).
-1. Iniciar o capítulo do tutorial em [Criar modelos de fragmento de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md).
+1. Configure um ambiente de desenvolvimento usando o [AEM as a Cloud Service](../quick-setup/cloud-service.md).
+1. Inicie o capítulo de tutorial em [Criar modelos de fragmento de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md).

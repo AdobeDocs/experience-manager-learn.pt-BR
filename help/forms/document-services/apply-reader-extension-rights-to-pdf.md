@@ -21,7 +21,7 @@ ht-degree: 0%
 As extensões do Reader permitem manipular os direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões do Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Adobe Reader pode executar as operações habilitadas para esse documento.
 
 Para realizar esse caso de uso, precisamos fazer o seguinte:
-* [Adicionar o certificado de extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) para `fd-service` usuário.
+* [Adicionar o certificado de Extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ao usuário `fd-service`.
 
 ## Criar serviço OSGi personalizado
 
@@ -196,7 +196,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Para testar isso no servidor local, siga as seguintes etapas:
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Baixe e instale o pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta
+1. [Baixe e instale o Pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta
 1. [Importe as bibliotecas do cliente e o envio personalizado](assets/applyaresdemo.zip)
 1. [Importar o formulário adaptável](assets/applyaresform.zip)
 1. Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;ares&quot;.

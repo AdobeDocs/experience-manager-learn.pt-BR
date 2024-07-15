@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como alterar o tempo limite de transação de um servidor de aplicativos no serviço PDFG
 
-*Este vídeo descreve o processo de alteração do tempo limite da transação de um servidor de aplicativos no serviço PDFG do Forms.*
+*Este vídeo descreve o processo de alteração do tempo limite de transação de um servidor de aplicativos no serviço PDFG do Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

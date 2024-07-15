@@ -1,5 +1,5 @@
 ---
-title: Ativos 3D
+title: Assets 3D
 description: Saiba mais sobre o suporte a ativos 3D no AEM Assets as a Cloud Service.
 version: Cloud Service
 feature: 3D Assets

@@ -1,6 +1,6 @@
 ---
 title: Operações de criação usando a Automação de conteúdo do AEM Assets
-description: Saiba como você pode usar o complemento de Automação de conteúdo que integra o Adobe Experience Manager Assets as a Cloud Service com as APIs de serviço do Adobe Creative Cloud para processar seus ativos.
+description: Saiba como você pode usar o complemento de Automação de conteúdo que integra o Adobe Experience Manager Assets as a Cloud Service às APIs de serviço do Adobe Creative Cloud para processar seus ativos.
 topic: Content Management
 feature: Asset Processing, Renditions
 role: Leader, Architect, Developer, Admin, User
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Operações de criação
 
-Saiba como você pode usar o complemento de Automação de conteúdo que integra o Adobe Experience Manager Assets as a Cloud Service com as APIs de serviço do Adobe Creative Cloud para processar seus ativos.
+Saiba como você pode usar o complemento de Automação de conteúdo que integra o Adobe Experience Manager Assets as a Cloud Service às APIs de serviço do Adobe Creative Cloud para processar seus ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336540?quality=12&learn=on)

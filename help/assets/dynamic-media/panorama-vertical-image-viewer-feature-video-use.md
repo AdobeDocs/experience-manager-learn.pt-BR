@@ -24,7 +24,7 @@ As melhorias do Dynamic Media Viewer no AEM 6.4 incluem a adição do Panoramic 
 
 >[!NOTE]
 >
->O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre a configuração do AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visualizador de RV Panorâmica e Panorâmica
 
@@ -65,9 +65,9 @@ Com amostras horizontais, dependendo do tamanho da tela do desktop do consumidor
  </tbody>
 </table>
 
-[Configuração do Dynamic Media no modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurando o Dynamic Media no modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
-[Configuração do Dynamic Media no modo híbrido](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html)
+[Configurando o Dynamic Media no modo Híbrido](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html)
 
 >[!NOTE]
 >

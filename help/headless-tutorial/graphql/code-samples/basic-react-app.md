@@ -23,11 +23,11 @@ ht-degree: 1%
 
 # Aplicativo básico React
 
-Este [React](https://reactjs.org/) Este aplicativo demonstra como consultar conteúdo usando APIs AEM GraphQL e consultas persistentes. Este aplicativo renderiza um filtro de Aventuras WKND e, ao selecionar uma aventura, exibe os detalhes completos das aventuras.
+Este aplicativo [React](https://reactjs.org/) demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes. Este aplicativo renderiza um filtro de Aventuras WKND e, ao selecionar uma aventura, exibe os detalhes completos das aventuras.
 
 Este código:
 
-+ Conecta-se a um serviço de publicação AEM e não requer autenticação
++ Conecta-se a um serviço AEM Publish e não requer autenticação
 + Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
-Para obter uma análise mais detalhada de como esse aplicativo Next.js é criado, consulte [exemplo de documentação do aplicativo React](../example-apps/react-app.md).
+Para uma análise mais detalhada de como este aplicativo Next.js é criado, consulte a [documentação de exemplo do aplicativo React](../example-apps/react-app.md).

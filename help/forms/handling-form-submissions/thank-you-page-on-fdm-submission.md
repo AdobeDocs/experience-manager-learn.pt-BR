@@ -26,7 +26,7 @@ A captura de tela a seguir mostra que um formulário está sendo enviado usando 
 
 ![página de agradecimento](./assets/thank-you-page-fdm-submit.png)
 
-O POST de um Modelo de dados de formulário sempre retornará um objeto JSON na resposta. Esse JSON está disponível no URL da página de agradecimento como um parâmetro de consulta chamado _fdmSubmitResult_. Você pode analisar esse parâmetro de consulta e exibir os elementos JSON na página de agradecimento.
+O POST de um Modelo de dados de formulário sempre retornará um objeto JSON na resposta. Este JSON está disponível na URL da página de agradecimento como um parâmetro de consulta chamado _fdmSubmitResult_. Você pode analisar esse parâmetro de consulta e exibir os elementos JSON na página de agradecimento.
 O código de amostra a seguir analisa a resposta JSON para extrair o valor do campo de número. O xml apropriado é construído e passado no slingRequest para preencher o formulário. Normalmente, esse código é escrito no jsp do componente Página associado ao modelo de Formulário adaptável.
 
 ```java
@@ -45,7 +45,9 @@ if(request.getParameter("fdmSubmitResult")!=null)
 ## Testar a solução
 
 Crie um Formulário adaptável e configure-o para enviar o formulário usando a ação de envio do modelo de dados de formulário.
-[Implante o modelo de formulário adaptável de amostra](assets/thank-you-page-template.zip)
-Crie um formulário de agradecimento com base neste modelo Associe esta página de agradecimento ao seu formulário principal Modifique o código jsp no [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) para criar o xml necessário para preencher previamente o formulário adaptável.
+[Implantar o modelo de formulário adaptável de exemplo](assets/thank-you-page-template.zip)
+Crie um formulário de agradecimento com base neste modelo
+Associe esta página de agradecimento ao seu formulário principal
+Modifique o código jsp no [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) para criar o xml necessário para preencher previamente o formulário adaptável.
 Pré-visualize e envie seu formulário adaptável.
 A página de agradecimento deve ser exibida e pré-preenchida com dados conforme especificado no XML

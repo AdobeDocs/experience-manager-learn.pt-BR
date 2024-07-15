@@ -24,7 +24,7 @@ As melhorias do Dynamic Media Viewer no AEM 6.5 incluem a adição de suporte pa
 
 >[!NOTE]
 >
->O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7.  [As instruções sobre a configuração do AEM com o Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Por padrão, ao carregar um vídeo, o Dynamic Media processa a sequência de imagens como um vídeo 360, se ela tiver uma proporção largura/altura de 2:1. ou seja, a relação largura/altura é de 2:1.
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7.  [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Por padrão, ao carregar um vídeo, o Dynamic Media processa a sequência de imagens como um vídeo 360, se ela tiver uma proporção largura/altura de 2:1. ou seja, a relação largura/altura é de 2:1.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ O vídeo do Dynamic Media agora permite selecionar uma miniatura personalizada p
    <tr>
       <td>Modo de execução do Dynamic Media</td>
       <td>Somente modo Dynamic Media Scene7</td>
-      <td>Somente modo Dynamic Media Scene7<br>
+      <td>Somente Modo Dynamic Media Scene7<br>
          <br>
       </td>
    </tr>
@@ -104,4 +104,4 @@ O vídeo do Dynamic Media agora permite selecionar uma miniatura personalizada p
 
 ## Recursos adicionais{#additional-resources}
 
-[Configuração do Dynamic Media no modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurando o Dynamic Media no modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Adicionar tags de índice de blob
 
-À medida que os conjuntos de dados aumentam, pode ser difícil encontrar um objeto específico em um mar de dados. As tags de índice Blob fornecem recursos de gerenciamento e descoberta de dados usando atributos de tag de índice de valor-chave. Você pode categorizar e localizar objetos em um único contêiner ou em todos os contêineres da conta de armazenamento. Por exemplo, tag de índice de blob _**CustomerType=Platinum**_, onde Platina é o valor do campo CustomerType.
+À medida que os conjuntos de dados aumentam, pode ser difícil encontrar um objeto específico em um mar de dados. As tags de índice Blob fornecem recursos de gerenciamento e descoberta de dados usando atributos de tag de índice de valor-chave. Você pode categorizar e localizar objetos em um único contêiner ou em todos os contêineres da conta de armazenamento. Por exemplo, marca de índice de blob _**CustomerType=Platinum**_, onde Platinum é o valor do campo CustomerType.
 
 ![index-tags](assets/blob-with-index-tags1.png)
 O código a seguir cria a string das tags de dados do índice de blob com seus valores correspondentes dos dados enviados

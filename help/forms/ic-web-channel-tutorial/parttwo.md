@@ -23,7 +23,7 @@ Nesta parte, criaremos uma fonte de dados com suporte REST.  O vídeo a seguir m
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
-Use o arquivo Swagger fornecido a você como parte dos ativos relacionados a este tutorial. Os ativos estão disponíveis em [introdução](introduction.md) deste tutorial.
+Use o arquivo Swagger fornecido a você como parte dos ativos relacionados a este tutorial. Os ativos estão disponíveis na [introdução](introduction.md) deste tutorial.
 
 ## Próximas etapas
 

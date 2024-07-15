@@ -25,21 +25,21 @@ Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas a
 >[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Baixe e abra o [**modelo de arquivo de InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
-2. **Abra o painel &#39;Tags&#39;,** analise a convenção de nomenclatura de tags e observe que os elementos que podem ser criados no arquivo do InDesign já estão marcados. Lembre-se de que somente os elementos marcados são editáveis no AEM.
+2. **Abra o painel &#39;Marcas de formatação&#39;**, analise a convenção de nomenclatura de marcas e observe que os elementos que podem ser criados no arquivo do InDesign já estão marcados. Lembre-se de que somente os elementos marcados são editáveis no AEM.
 
-   * **&#39;Janela&#39; > &#39;Utilitários&#39; > &#39;Tags&#39;**
+   * **Janela > Utilitários > Marcas**
 
-3. Na página, adicione um novo elemento de texto, forneça o texto &quot;Cabeçalho&quot; e aplique a variável **Cabeçalho** Estilo de parágrafo.
+3. Na Página, adicione um novo elemento de texto, forneça o texto &quot;Cabeçalho&quot; e aplique o Estilo de parágrafo **Cabeçalho**.
 
-   * **&#39;Janela&#39; > &#39;Estilos&#39; > &#39;Estilos de parágrafo&#39;**
+   * **Janela > Estilos > Estilos de parágrafo**
 
    Em seguida, crie e aplique uma nova tag chamada **Page2Heading.**
 
-4. Adicionar a imagem do logotipo FPO ([fornecido no zip](assets/asset-templates-tutorial-video--supporting-files.zip)) ao elemento de logotipo na página principal.
+4. Adicione a imagem do Logotipo FPO ([fornecida no zip](assets/asset-templates-tutorial-video--supporting-files.zip)) ao elemento Logo na página Mestra.
 
-   * **Clique com o botão direito** e selecione **&#39;Ajuste&#39; > &#39;Opções de ajuste ao quadro&#39;... > &#39;Ajuste de conteúdo&#39; > &#39;Preencher quadro proporcionalmente&#39;**
+   * **Clique com o botão direito do mouse em** e selecione **Ajuste > Opções de Ajuste de Quadro... > Ajuste de Conteúdo > Preencher Quadro Proporcionalmente**
 
-   [Saiba mais sobre as opções de Ajuste de Quadro](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)e que é adequado para o seu caso de uso.
+   [Saiba mais sobre as opções de Ajuste de Quadro](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), e qual é a escolha certa para o seu caso de uso.
 
 5. Copie para baixo o cabeçalho (Logotipo e Nome da empresa) do Modelo mestre em Página e Página por meio de Colar no local.
 
@@ -58,23 +58,23 @@ Este tutorial em vídeo aborda a definição de um arquivo do InDesign e todas a
 >[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Iniciar InDesign Server** na porta 8080.
-2. Assegure a **A instância de autor do AEM está configurada para interagir com seu InDesign Server**(e vice-versa).
+2. Verifique se a instância do Autor AEM **está configurada para interagir com o InDesign Server** (e vice-versa).
 
-   * [Configuração de Cloud Service do trabalhador de IDS](http://localhost:4502/etc/cloudservices/proxy/ids.html)
-   * [Configuração de Cloud Service do proxy de nuvem](http://localhost:4502/etc/cloudservices/proxy.html)
+   * [Configuração de Cloud Service de trabalho de IDS](http://localhost:4502/etc/cloudservices/proxy/ids.html)
+   * [Configuração de Cloud Service do Proxy da Nuvem](http://localhost:4502/etc/cloudservices/proxy.html)
    * [Configuração OSGi do Externalizador de AEM](http://localhost:4502/system/console/configMgr)
 
-3. **Carregado o arquivo InDesign para o AEM Assets** e permitir que o Fluxo de trabalho e o InDesign Server do AEM processem totalmente os ativos.
-4. **Criar um Novo Modelo** em **Ativos > Modelos** e selecione o arquivo InDesign carregado para AEM na Etapa #4.
-5. **Editar o modelo do ativo** criado na Etapa #5 e criar os campos editáveis.
-6. Clique em **Concluído** para gerar as representações finais de alta fidelidade do Modelo de ativo.
+3. **Carregou o arquivo de InDesign para o AEM Assets** e permitiu que o Fluxo de Trabalho e o InDesign Server do AEM processassem totalmente os ativos.
+4. **Crie um novo Modelo** em **Assets > Modelos** e selecione o arquivo de InDesign carregado para AEM na etapa #4.
+5. **Edite o Modelo de ativo** criado na Etapa #5 e crie os campos editáveis.
+6. Clique em **Concluído** para gerar as representações finais de alta fidelidade do Modelo de Ativo.
 7. Clique no cartão Modelo de ativo para abrir o, e revise as Representações de ativos para baixar as representações de alta fidelidade.
 
 ## Recursos adicionais {#additional-resources}
 
 Arquivo de modelo do InDesign e imagens de suporte
 
-Baixar [Arquivo de modelo do InDesign e imagens de suporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Baixar [arquivo de modelo de InDesign e imagens de suporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Download de avaliação do InDesign CC](https://creative.adobe.com/products/download/indesign)
-* A versão de avaliação do InDesign Server pode ser baixada de [Site de pré-lançamento do Adobe](https://www.adobeprerelease.com/) ou [Os clientes da CC Enterprise podem entrar em contato com o executivo da conta para solicitar uma licença de avaliação do InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+* [download de avaliação do InDesign CC](https://creative.adobe.com/products/download/indesign)
+* A avaliação do InDesign Server pode ser baixada do [site de pré-lançamento do Adobe](https://www.adobeprerelease.com/) ou do [CC Enterprise, os clientes podem entrar em contato com o Executivo de Contas para solicitar uma licença de avaliação do InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

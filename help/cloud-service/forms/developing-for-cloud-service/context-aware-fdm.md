@@ -32,9 +32,10 @@ As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Clou
 
 
 A captura de tela a seguir mostra as variáveis de ambiente azure_key e azure_connection_string definidas
-![environment_variables](assets/environment-variables.png)
+![variáveis_de_ambiente](assets/environment-variables.png)
 
-Essas variáveis de ambiente podem ser especificadas nos arquivos de configuração a serem usados no ambiente apropriado. Por exemplo, se você quiser que todas as instâncias do autor usem essas variáveis de ambiente, você definirá o arquivo de configuração na pasta config.author conforme especificado abaixo
+Essas variáveis de ambiente podem ser especificadas nos arquivos de configuração a serem usados no ambiente apropriado
+Por exemplo, se você quiser que todas as instâncias do autor usem essas variáveis de ambiente, você definirá o arquivo de configuração na pasta config.author, conforme especificado abaixo
 
 ## Criar arquivo de configuração
 

@@ -23,15 +23,15 @@ Nesta parte, criaremos o Modelo de dados de formulário. O modelo de dados de fo
 
 >[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
-**Criação do modelo de dados de formulário no AEM Forms 6.5 e superior**
+**Criando o modelo de dados de formulário no AEM Forms 6.5 e posterior**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-O modelo de dados de formulário depende de uma fonte de dados configurada corretamente. Usaremos a fonte de dados configurada na etapa anterior como a base para esse modelo de dados de formulário.
+O modelo de dados de formulário depende de uma Source de dados configurada corretamente. Usaremos o Data Source configurado na etapa anterior como a base para esse Modelo de dados de formulário.
 
 O modelo de dados de formulário é a base de todas as comunicações interativas. A operação de Obter/Ler do modelo de dados de formulário buscará os dados de sua fonte de dados de back-end e será usada para preencher o documento de Comunicações interativas.
 
-Para obter mais informações, consulte [Configurar fontes de dados](parttwo.md).
+Para obter mais informações, consulte [Configurando Fontes de Dados](parttwo.md).
 
 Depois de criar o modelo de dados de formulário, você pode usá-lo como base para criar fragmentos de documento e documentos de comunicação interativa.
 

@@ -30,7 +30,7 @@ As Tags inteligentes personalizadas, ou Tags inteligentes aprimoradas, podem ser
 >[!NOTE]
 > Tags inteligentes personalizadas para imagens são provisionadas automaticamente para o AEM as a Cloud Service.
 
-As Tags inteligentes personalizadas para imagens exigem [Tags inteligentes para a configuração de imagens](./image-smart-tags.md#set-up).
+As Tags Inteligentes personalizadas para imagens exigem a configuração de [Tags Inteligentes para imagens](./image-smart-tags.md#set-up).
 
 Saiba como configurar o treinamento de Tags inteligentes no AEM Assets, usando o Serviço de conteúdo inteligente e o Adobe I/O. Tags inteligentes personalizadas para imagens
 

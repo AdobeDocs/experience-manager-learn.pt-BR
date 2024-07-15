@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Uma interface de consulta simples foi criada para permitir que o &quot;Administrador&quot; insira critérios de pesquisa para recuperar envios de formulários específicos. Os resultados são exibidos em um formato de tabela simples com a opção para visualizar o envio de um formulário específico.
 
-![envios de consultas](assets/query-submissions.png)
+![envios-consulta](assets/query-submissions.png)
 
 Os menus suspensos nessa interface são uma lista suspensa em cascata. As opções disponíveis na lista suspensa mudam com base nas seleções feitas na lista suspensa anterior.
 

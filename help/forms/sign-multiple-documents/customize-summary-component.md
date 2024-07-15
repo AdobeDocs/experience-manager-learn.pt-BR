@@ -29,12 +29,12 @@ A captura de tela a seguir mostra o novo componente criado para exibir a mensage
 ![componente de resumo](assets/summary.PNG)
 
 O novo componente é baseado no componente de resumo pronto para uso.
-![component-prop](assets/componentprop.PNG)
+![propriedade-componente](assets/componentprop.PNG)
 
 Adicionamos um botão para navegar até o próximo formulário para assinatura
-![template-code](assets/template-code.PNG)
+![código-modelo](assets/template-code.PNG)
 
-O summary.jsp tem o seguinte código. Ela faz referência à biblioteca do cliente identificada pela ID da categoria **getnextform**
+O summary.jsp tem o seguinte código. Ela tem referência à biblioteca do cliente identificada pela ID de categoria **getnextform**
 
 ```java
 <%--
@@ -47,7 +47,7 @@ O summary.jsp tem o seguinte código. Ela faz referência à biblioteca do clien
 
 ## Ativos
 
-O componente de resumo personalizado pode ser [baixado aqui](assets/custom-summary-step.zip)
+O componente de resumo personalizado pode ser [baixado daqui](assets/custom-summary-step.zip)
 
 ## Próximas etapas
 

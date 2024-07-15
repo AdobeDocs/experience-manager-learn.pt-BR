@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como capturar logs/ferramentas de rede a serem usados
 
-*Este vídeo aborda as etapas para capturar logs de rede/ferramentas a serem usadas.*
+*Este vídeo mostra as etapas para capturar logs de rede/ferramentas a serem usadas.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)

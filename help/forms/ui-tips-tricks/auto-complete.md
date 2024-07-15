@@ -27,7 +27,7 @@ O código usado para executar o recurso de preenchimento automático está assoc
 
 ## Fornecendo sugestão para endereço
 
-![país-sugestões](assets/auto-complete2.png)
+![sugestões de países](assets/auto-complete2.png)
 
 
 
@@ -66,7 +66,7 @@ $(".streetAddress input").autocomplete({
 
 ## Sugestões com emoji
 
-![país-sugestões](assets/auto-complete3.png)
+![sugestões de países](assets/auto-complete3.png)
 
 O código a seguir foi usado para exibir emojis na lista de sugestões
 
@@ -79,8 +79,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-A variável [o formulário de exemplo pode ser baixado](assets/auto-complete-form.zip) daqui. Forneça seu próprio nome de usuário/chave de API usando o editor de código para que o código faça chamadas REST bem-sucedidas.
+O [formulário de exemplo pode ser baixado](assets/auto-complete-form.zip) daqui. Forneça seu próprio nome de usuário/chave de API usando o editor de código para que o código faça chamadas REST bem-sucedidas.
 
 >[!NOTE]
 >
-> Para que o preenchimento automático funcione, verifique se seu formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Esta biblioteca cliente vem com AEM.
+> Para que o preenchimento automático funcione, verifique se o formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Esta biblioteca cliente vem com AEM.

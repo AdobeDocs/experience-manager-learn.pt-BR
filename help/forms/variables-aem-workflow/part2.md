@@ -26,7 +26,7 @@ Quando estiver criando uma variável do tipo JSON para capturar os dados enviado
 >[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
 
 
-**Se estiver usando o AEM Forms 6.5.1 e superior**
+**Se estiver usando o AEM Forms 6.5.1 e posterior**
 
 Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de trabalho. Em seguida, você pode usar o navegador de esquemas para mapear os elementos do esquema com as variáveis de sequência/número no modelo de fluxo de trabalho
 
@@ -35,7 +35,7 @@ Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de t
 Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
 * [Baixar e importar os ativos para AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
-* [Explorar o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) para entender as variáveis usadas no workflow
-* [Configurar o serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [Abra o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
+* [Explore o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) para entender as variáveis usadas no fluxo de trabalho
+* [Configurar o Serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Abrir o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie o formulário

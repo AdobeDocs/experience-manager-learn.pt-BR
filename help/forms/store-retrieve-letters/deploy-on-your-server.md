@@ -26,7 +26,7 @@ Siga as instruções abaixo para fazer com que essa funcionalidade funcione no s
 * [Importar o formulário adaptável](assets/SavedDraftsAdaptiveForm.zip)
 * Criar fonte de dados chamada _SaveAndContinue_
 
-![Criar fonte de dados](assets/data-source.png)
+![Criar Source de Dados](assets/data-source.png)
 
 | Nome de propriedade | Valor de propriedade |
 |---|---|
@@ -35,12 +35,12 @@ Siga as instruções abaixo para fazer com que essa funcionalidade funcione no s
 | URL de conexão JDBC | `jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true` |
 
 * [Implantar o pacote icdrafts](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
-* Verifique se você _Habilitar Salvar Usando CCRDocumentInstanceService_ na configuração OSGI, como mostrado abaixo
-  ![Ativar rascunhos](assets/enable-drafts.png)
+* Certifique-se de _Habilitar Salvar Usando CCRDocumentInstanceService_ na configuração OSGI, como mostrado abaixo
+  ![Habilitar rascunhos](assets/enable-drafts.png)
 * Abra qualquer comunicação interativa. Clique no botão Salvar como rascunho para salvar
-* [Visualizar Rascunhos Salvos](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
+* [Exibir Rascunhos Salvos](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
 >Os arquivos xml são armazenados na pasta raiz da instalação do servidor AEM. O projeto do eclipse é fornecido a você para personalizar a solução de acordo com suas necessidades.
 
-O projeto do eclipse com implementação de amostra pode ser [baixado aqui](assets/icdrafts-eclipse-project.zip)
+O projeto do eclipse com implementação de amostra pode ser [baixado daqui](assets/icdrafts-eclipse-project.zip)

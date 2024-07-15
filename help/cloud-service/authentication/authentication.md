@@ -18,9 +18,9 @@ ht-degree: 3%
 
 ---
 
-# Autenticação as a Cloud Service do AEM
+# Autenticação AEM as a Cloud Service
 
-O AEM as a Cloud Service suporta várias opções de autenticação e varia de acordo com o tipo de serviço.
+O AEM as a Cloud Service oferece suporte a várias opções de autenticação e varia de acordo com o tipo de serviço.
 
 |                       | Autor do AEM | Publicação no AEM |
 |-----------------------|:----------:|:-----------:|
@@ -29,7 +29,7 @@ O AEM as a Cloud Service suporta várias opções de autenticação e varia de a
 | [SAML 2.0](./saml-2-0.md) | ✘ | ✔ |
 | [Logon único (SSO)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
 | [OAuth](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#integration-with-an-idp) | ✘ | ✔ |
-| [Autenticação de token](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
+| [Autenticação do token](../../headless-tutorial/authentication/overview.md) | ✔ | ✔ |
 | Autenticação básica | ✘ | ✘ |
 
 ## Opções de autenticação
@@ -49,12 +49,12 @@ Clique no link correspondente abaixo para obter detalhes sobre como configurar e
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        Autentique o usuário do site em um IDP usando a integração SAML 2.0 do serviço de publicação do AEM.
+        Autentique o usuário do site em um IDP usando a integração SAML 2.0 do serviço AEM Publish.
       </p>
     </td>   
    <td>
       <a  href="../../headless-tutorial/authentication/overview.md"><img alt="Token" src="./assets/card--token.png"/></a>
-      <div><strong><a href="../../headless-tutorial/authentication/overview.md">Autenticação de token</a></strong></div>
+      <div><strong><a href="../../headless-tutorial/authentication/overview.md">Autenticação do token</a></strong></div>
       <p>
         Permitir que aplicativos e middleware se autentiquem no AEM usando um token de serviço de API.
       </p>

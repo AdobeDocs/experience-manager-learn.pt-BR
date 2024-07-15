@@ -22,8 +22,8 @@ ht-degree: 0%
 Um pacote personalizado de AEM foi desenvolvido para criar e retornar o formulário web ao usuário final
 
 * [Criar documento transitório](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). O documento carregado por meio desta chamada é chamado de transitório, pois está disponível somente por 7 dias após o upload. A ID do documento transitório retornada pode ser usada nas chamadas de API onde o arquivo carregado precisa ser referenciado. A solicitação de documento transitório é uma solicitação de várias partes que consiste em três partes: nome do arquivo, tipo MIME e fluxo de arquivos. Você só pode carregar um arquivo por vez nesta solicitação.
-* [Criar formulário web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Este é um terminal primário usado para criar um novo formulário web. O formulário web foi criado em um estado ATIVO para hospedar imediatamente o formulário web.
-* [Recuperar o formulário web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets). Recuperar formulário da Web do usuário. Esse formulário web é então apresentado ao aplicativo chamador para assinar o documento.
+* [Criar formulário Web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Este é um ponto de extremidade primário usado para criar um novo formulário Web. O formulário web foi criado em um estado ATIVO para hospedar imediatamente o formulário web.
+* [Recuperar o formulário Web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recuperar formulário Web do usuário. Esse formulário web é então apresentado ao aplicativo chamador para assinar o documento.
 
 ## Criar configuração OSGi do Acrobat Sign
 

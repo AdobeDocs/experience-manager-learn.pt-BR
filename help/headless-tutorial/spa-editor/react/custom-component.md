@@ -20,39 +20,39 @@ ht-degree: 0%
 
 # Criar um componente de clima personalizado {#custom-component}
 
-Saiba como criar um componente de clima personalizado para ser usado com o Editor de SPA AEM. Saiba como desenvolver caixas de diálogo de criação e Modelos Sling para estender o modelo JSON e preencher um componente personalizado. A variável [Abrir API de clima](https://openweathermap.org) e [Componente meteorológico aberto no React](https://www.npmjs.com/package/react-open-weather) são usados.
+Saiba como criar um componente de clima personalizado para ser usado com o Editor de SPA AEM. Saiba como desenvolver caixas de diálogo de criação e Modelos Sling para estender o modelo JSON e preencher um componente personalizado. A [API de Clima Aberto](https://openweathermap.org) e o [componente de Clima Aberto do React](https://www.npmjs.com/package/react-open-weather) são usados.
 
 ## Objetivo
 
 1. Entenda a função dos Modelos do Sling na manipulação da API do modelo JSON fornecida pelo AEM.
 2. Entenda como criar caixas de diálogo do novo componente AEM.
-3. Saiba como criar um **personalizado** Componente de AEM compatível com a estrutura do editor de SPA.
+3. Saiba como criar um Componente de AEM **personalizado** que seja compatível com a estrutura do editor de SPA.
 
 ## O que você vai criar
 
 Um componente meteorológico simples é construído. Esse componente pode ser adicionado ao SPA por autores de conteúdo. Usando uma caixa de diálogo AEM, os autores podem definir o local para a exibição do tempo.  A implementação deste componente ilustra as etapas necessárias para criar um novo componente de AEM que seja compatível com a estrutura do Editor de SPA do AEM.
 
-![Configurar o componente de Tempo aberto](assets/custom-component/enter-dialog.png)
+![Configurar o Componente de Clima Aberto](assets/custom-component/enter-dialog.png)
 
 ## Pré-requisitos
 
-Analisar as ferramentas e instruções necessárias para a configuração de um [ambiente de desenvolvimento local](overview.md#local-dev-environment). O presente capítulo é uma continuação do [Navegação e Roteamento](navigation-routing.md) No entanto, para acompanhar tudo o que você precisa é de um projeto AEM habilitado para SPA implantado em uma instância do AEM local.
+Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Navegação e Roteamento](navigation-routing.md). No entanto, basta seguir um projeto AEM habilitado para SPA implantado em uma instância AEM local para que você precise seguir.
 
 ### Abrir chave de API do clima
 
-Uma chave de API de [Tempo aberto](https://openweathermap.org/) é necessário seguir juntamente com o tutorial. [Inscrever-se é gratuito](https://home.openweathermap.org/users/sign_up) para uma quantidade limitada de chamadas de API.
+Uma chave de API do [Tempo Aberto](https://openweathermap.org/) é necessária para acompanhar o tutorial. [A inscrição é gratuita](https://home.openweathermap.org/users/sign_up) para uma quantidade limitada de chamadas de API.
 
 ## Definir o componente AEM
 
-Um componente AEM é definido como um nó e propriedades. No projeto, esses nós e propriedades são representados como arquivos XML na variável `ui.apps` módulo. Em seguida, crie o componente AEM no `ui.apps` módulo.
+Um componente AEM é definido como um nó e propriedades. No projeto, esses nós e propriedades são representados como arquivos XML no módulo `ui.apps`. Em seguida, crie o componente AEM no módulo `ui.apps`.
 
 >[!NOTE]
 >
-> Uma atualização rápida no [as noções básicas dos componentes do AEM podem ser úteis](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Uma atualização rápida das [noções básicas sobre os componentes do AEM pode ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
-1. No IDE de sua escolha, abra o `ui.apps` pasta.
+1. No IDE de sua escolha, abra a pasta `ui.apps`.
 2. Navegue até `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` e crie uma nova pasta chamada `open-weather`.
-3. Crie um novo arquivo chamado `.content.xml` abaixo de `open-weather` pasta. Preencha o `open-weather/.content.xml` com o seguinte:
+3. Crie um novo arquivo chamado `.content.xml` abaixo da pasta `open-weather`. Preencha o `open-weather/.content.xml` com o seguinte:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -66,10 +66,10 @@ Um componente AEM é definido como um nó e propriedades. No projeto, esses nós
 
    `jcr:primaryType="cq:Component"` - identifica que este nó é um componente AEM.
 
-   `jcr:title` é o valor exibido para os Autores de conteúdo e a `componentGroup` determina o agrupamento de componentes na interface de criação.
+   `jcr:title` é o valor exibido para os Autores de Conteúdo e `componentGroup` determina o agrupamento de componentes na interface de criação.
 
-4. Abaixo de `custom-component` , crie outra pasta chamada `_cq_dialog`.
-5. Abaixo de `_cq_dialog` pasta criar um novo arquivo chamado `.content.xml` e preencha-o com o seguinte:
+4. Abaixo da pasta `custom-component`, crie outra pasta chamada `_cq_dialog`.
+5. Abaixo da pasta `_cq_dialog`, crie um novo arquivo chamado `.content.xml` e preencha-o com o seguinte:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -136,25 +136,25 @@ Um componente AEM é definido como um nó e propriedades. No projeto, esses nós
 
    ![Definição de componente personalizado](assets/custom-component/dialog-custom-component-defintion.png)
 
-   O arquivo XML acima gera uma caixa de diálogo muito simples para o `Weather Component`. A parte crítica do arquivo é a parte interna `<label>`, `<lat>` e `<lon>` nós. Esta caixa de diálogo contém dois `numberfield`s e a `textfield` que permite ao usuário configurar o tempo a ser exibido.
+   O arquivo XML acima gera uma caixa de diálogo muito simples para `Weather Component`. A parte crítica do arquivo são os nós internos `<label>`, `<lat>` e `<lon>`. Esta caixa de diálogo contém dois `numberfield`s e um `textfield` que permite que um usuário configure o tempo a ser exibido.
 
-   Um modelo Sling é criado ao lado do para expor o valor do `label`,`lat` e `long` propriedades por meio do modelo JSON.
+   Um Modelo Sling é criado próximo a expor o valor das propriedades `label`,`lat` e `long` por meio do modelo JSON.
 
    >[!NOTE]
    >
-   > Você pode ver muito mais [exemplos de caixas de diálogo exibindo as definições dos Componentes principais](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Também é possível exibir campos de formulário adicionais, como `select`, `textarea`, `pathfield`, disponível abaixo de `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
+   > Você pode exibir muito mais [exemplos de caixas de diálogo ao exibir as definições dos Componentes principais](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Você também pode exibir campos de formulário adicionais, como `select`, `textarea`, `pathfield`, disponíveis em `/libs/granite/ui/components/coral/foundation/form` no [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Com um componente AEM tradicional, um [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR) normalmente é necessário. Como o SPA renderizará o componente, nenhum script HTL é necessário.
+   Com um componente AEM tradicional, geralmente é necessário um script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR). Como o SPA renderizará o componente, nenhum script HTL é necessário.
 
 ## Criar o modelo do Sling
 
-Os Modelos do Sling são objetos POJO (Plain Old Java Objects) orientados por anotações que facilitam o mapeamento de dados do JCR para variáveis Java. [Modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) geralmente funcionam para encapsular uma lógica comercial complexa do lado do servidor para componentes AEM.
+Os Modelos do Sling são objetos POJO (Plain Old Java Objects) orientados por anotações que facilitam o mapeamento de dados do JCR para variáveis Java. Os [Modelos Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) geralmente funcionam para encapsular uma lógica comercial complexa do lado do servidor para Componentes AEM.
 
-No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um componente por meio do modelo JSON por meio de um recurso que usa o [Exportador de modelo Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=pt-BR).
+No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um componente por meio do modelo JSON por meio de um recurso que usa o [Exportador de Modelo Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=pt-BR).
 
-1. No IDE de sua escolha, abra o `core` módulo em `aem-guides-wknd-spa.react/core`.
+1. No IDE de sua escolha, abra o módulo `core` em `aem-guides-wknd-spa.react/core`.
 1. Crie um arquivo com o nome em `OpenWeatherModel.java` em `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Preencher `OpenWeatherModel.java` com o seguinte:
+1. Popular `OpenWeatherModel.java` com o seguinte:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
@@ -169,10 +169,10 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    }
    ```
 
-   Esta é a interface Java do nosso componente. Para que nosso Modelo Sling seja compatível com a estrutura do Editor de SPA, ele deve estender a `ComponentExporter` classe.
+   Esta é a interface Java do nosso componente. Para que nosso Modelo Sling seja compatível com a estrutura do Editor de SPA, ele deve estender a classe `ComponentExporter`.
 
-1. Crie uma pasta chamada `impl` debaixo `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Crie um arquivo chamado `OpenWeatherModelImpl.java` debaixo `impl` e preencha com o seguinte:
+1. Crie uma pasta chamada `impl` abaixo de `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. Crie um arquivo com o nome `OpenWeatherModelImpl.java` abaixo de `impl` e preencha com o seguinte:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models.impl;
@@ -239,13 +239,13 @@ No contexto do Editor de SPA, os Modelos Sling expõem o conteúdo de um compone
    } 
    ```
 
-   A variável estática `RESOURCE_TYPE` deve apontar para o caminho em `ui.apps` do componente. A variável `getExportedType()` é usado para mapear as propriedades JSON para o componente SPA via `MapTo`. `@ValueMapValue` é uma anotação que lê a propriedade jcr salva pelo diálogo.
+   A variável estática `RESOURCE_TYPE` deve apontar para o caminho em `ui.apps` do componente. O `getExportedType()` é usado para mapear as propriedades JSON para o componente SPA via `MapTo`. `@ValueMapValue` é uma anotação que lê a propriedade jcr salva pelo diálogo.
 
 ## Atualizar o SPA
 
-Em seguida, atualize o código do React para incluir o [Componente meteorológico aberto no React](https://www.npmjs.com/package/react-open-weather) e mapeie-o para o componente AEM criado nas etapas anteriores.
+Em seguida, atualize o código do React para incluir o [componente de Tempo Aberto do React](https://www.npmjs.com/package/react-open-weather) e mapeie-o para o componente AEM criado nas etapas anteriores.
 
-1. Instalar o componente de clima aberto no React como um **npm** dependência:
+1. Instalar o componente de clima aberto do React como uma dependência de **npm**:
 
    ```shell
    $ cd aem-guides-wknd-spa.react/ui.frontend
@@ -253,7 +253,7 @@ Em seguida, atualize o código do React para incluir o [Componente meteorológic
    ```
 
 1. Crie uma nova pasta chamada `OpenWeather` em `ui.frontend/src/components/OpenWeather`.
-1. Adicionar um arquivo chamado `OpenWeather.js` e preencha-o com o seguinte:
+1. Adicione um arquivo chamado `OpenWeather.js` e preencha-o com o seguinte:
 
    ```js
    import React from 'react';
@@ -315,7 +315,7 @@ Em seguida, atualize o código do React para incluir o [Componente meteorológic
    MapTo('wknd-spa-react/components/open-weather')(OpenWeather, OpenWeatherEditConfig);
    ```
 
-1. Atualizar `import-components.js` em `ui.frontend/src/components/import-components.js` para incluir o `OpenWeather` componente:
+1. Atualize `import-components.js` em `ui.frontend/src/components/import-components.js` para incluir o componente `OpenWeather`:
 
    ```diff
      // import-component.js
@@ -333,7 +333,7 @@ Em seguida, atualize o código do React para incluir o [Componente meteorológic
 
 ## Atualizar a política do modelo
 
-Em seguida, acesse AEM para verificar as atualizações e permitir a `OpenWeather` componente a ser adicionado ao SPA.
+Em seguida, navegue até AEM para verificar as atualizações e permitir que o componente `OpenWeather` seja adicionado ao SPA.
 
 1. Verifique o registro do novo Modelo do Sling navegando até [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
 
@@ -343,37 +343,37 @@ Em seguida, acesse AEM para verificar as atualizações e permitir a `OpenWeathe
    com.adobe.aem.guides.wkndspa.react.core.models.impl.OpenWeatherModelImpl exports 'wknd-spa-react/components/open-weather' with selector 'model' and extension '[Ljava.lang.String;@2fd80fc5' with exporter 'jackson'
    ```
 
-   Você deve ver as duas linhas acima que indicam a `OpenWeatherModelImpl` está associado à `wknd-spa-react/components/open-weather` e que está registrado por meio do Exportador de Modelo Sling.
+   Você deve ver as duas linhas acima que indicam que `OpenWeatherModelImpl` está associado ao componente `wknd-spa-react/components/open-weather` e que ele está registrado por meio do Exportador de Modelo do Sling.
 
-1. Navegue até o modelo de página SPA em [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. Atualize a política do Contêiner de layout para adicionar o novo `Open Weather` como um componente permitido:
+1. Navegue até o Modelo de página SPA em [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. Atualize a política do Contêiner de Layout para adicionar o novo `Open Weather` como um componente permitido:
 
-   ![Atualizar política do Contêiner de layout](assets/custom-component/custom-component-allowed.png)
+   ![Atualizar política de Contêiner de Layout](assets/custom-component/custom-component-allowed.png)
 
-   Salve as alterações na política e observe as `Open Weather` como um componente permitido:
+   Salve as alterações na política e observe o `Open Weather` como um componente permitido:
 
    ![Componente personalizado como um componente permitido](assets/custom-component/custom-component-allowed-layout-container.png)
 
 ## Criar o componente de Tempo aberto
 
-Em seguida, crie o `Open Weather` usando o editor SPA AEM.
+Em seguida, crie o componente `Open Weather` usando o Editor SPA AEM.
 
 1. Navegue até [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html).
-1. Entrada `Edit` , adicione o `Open Weather` para o `Layout Container`:
+1. No modo `Edit`, adicione o `Open Weather` ao `Layout Container`:
 
    ![Inserir novo componente](assets/custom-component/insert-custom-component.png)
 
-1. Abra a caixa de diálogo do componente e insira um **Rótulo**, **Latitude**, e **Longitude**. Por exemplo **San Diego**, **32.7157**, e **-117.1611**. Os números do hemisfério ocidental e do hemisfério sul são representados como números negativos com a API de Tempo Aberto
+1. Abra a caixa de diálogo do componente e insira um **Rótulo**, **Latitude** e **Longitude**. Por exemplo **San Diego**, **32.7157** e **-117.1611**. Os números do hemisfério ocidental e do hemisfério sul são representados como números negativos com a API de Tempo Aberto
 
-   ![Configurar o componente de Tempo aberto](assets/custom-component/enter-dialog.png)
+   ![Configurar o Componente de Clima Aberto](assets/custom-component/enter-dialog.png)
 
    Esta é a caixa de diálogo que foi criada com base no arquivo XML mencionado anteriormente no capítulo.
 
 1. Salve as alterações. Observe que o tempo para **San Diego** agora é exibido:
 
-   ![Componente de clima atualizado](assets/custom-component/weather-updated.png)
+   ![Componente de meteorologia atualizado](assets/custom-component/weather-updated.png)
 
-1. Visualize o modelo JSON navegando até [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Pesquisar por `wknd-spa-react/components/open-weather`:
+1. Exiba o modelo JSON navegando até [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json). Pesquisar por `wknd-spa-react/components/open-weather`:
 
    ```json
    "open_weather": {
@@ -392,4 +392,4 @@ Parabéns, você aprendeu a criar um componente personalizado do AEM para ser us
 
 ### Próximas etapas {#next-steps}
 
-[Estender um Componente principal](extend-component.md) - Saiba como estender um Componente principal AEM existente para ser usado com o editor do SPA para AEM. AEM Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor de SPA.
+[Estender um Componente Principal](extend-component.md) - Saiba como estender um Componente Principal do AEM existente para ser usado com o Editor de SPA do AEM. AEM Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor de SPA.

@@ -21,39 +21,39 @@ ht-degree: 0%
 
 # Processamento de eventos AEM usando a ação do Adobe I/O Runtime
 
-Saiba como processar eventos AEM recebidos usando [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Ação. Este exemplo aprimora o anterior [Eventos de ação e AEM do Adobe I/O Runtime](runtime-action.md), verifique se você o concluiu antes de continuar com este.
+Saiba como processar eventos AEM recebidos usando a Ação [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/). Este exemplo aprimora o exemplo anterior [Ação do Adobe I/O Runtime e Eventos AEM](runtime-action.md). Verifique se você o concluiu antes de continuar com este.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-Neste exemplo, o processamento de eventos armazena os dados originais do evento e o evento recebido como uma mensagem de atividade no armazenamento do Adobe I/O Runtime. No entanto, se o evento for _Fragmento de conteúdo modificado_ , ele também chama o serviço de autor do AEM para encontrar os detalhes da modificação. Por fim, exibe os detalhes do evento em um aplicativo de página única (SPA).
+Neste exemplo, o processamento de eventos armazena os dados originais do evento e o evento recebido como uma mensagem de atividade no armazenamento do Adobe I/O Runtime. No entanto, se o evento for do tipo _Fragmento de conteúdo modificado_, ele também chamará o serviço de autor do AEM para encontrar os detalhes de modificação. Por fim, exibe os detalhes do evento em um aplicativo de página única (SPA).
 
 ## Pré-requisitos
 
 Para concluir este tutorial, você precisa:
 
-- Ambiente as a Cloud Service AEM com [Evento AEM ativado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Além disso, a amostra [Sites da WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) O projeto deve ser implantado nele.
+- Ambiente AEM as a Cloud Service com [evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Além disso, o projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) de amostra deve ser implantado nele.
 
-- Acesso a [Console do Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acesso ao [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
-- [CLI do Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado no computador local.
+- [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalada no computador local.
 
-- Projeto inicializado localmente a partir do exemplo anterior [Eventos de ação e AEM do Adobe I/O Runtime](./runtime-action.md#initialize-project-for-local-development).
+- Projeto inicializado localmente a partir do exemplo anterior [Ação do Adobe I/O Runtime e Eventos AEM](./runtime-action.md#initialize-project-for-local-development).
 
 >[!IMPORTANT]
 >
->O evento as a Cloud Service de AEM só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar o evento de AEM em seu ambiente as a Cloud Service AEM, entre em contato com [Equipe de evento do AEM](mailto:grp-aem-events@adobe.com).
+>O AEM as a Cloud Service Eventing só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar eventos de AEM no seu ambiente AEM as a Cloud Service, entre em contato com a [equipe de eventos de AEM](mailto:grp-aem-events@adobe.com).
 
 ## Ação do processador de eventos AEM
 
-Neste exemplo, o processador de eventos [ação](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) O executa as seguintes tarefas:
+Neste exemplo, a [ação](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) do processador de eventos executa as seguintes tarefas:
 
 - Analisa o evento recebido em uma mensagem de atividade.
-- Se o evento recebido for de _Fragmento de conteúdo modificado_ digite, retorne a chamada ao serviço de autoria do AEM para encontrar os detalhes da modificação.
+- Se o evento recebido for do tipo _Fragmento de Conteúdo Modificado_, chame de volta para o serviço de autor do AEM para encontrar os detalhes da modificação.
 - Mantém os dados originais do evento, a mensagem de atividade e os detalhes de modificação (se houver) no armazenamento da Adobe I/O Runtime.
 
-Para executar as tarefas acima, vamos começar adicionando uma ação ao projeto, desenvolver módulos JavaScript para executar as tarefas acima e, finalmente, atualizar o código de ação para usar os módulos desenvolvidos.
+Para executar as tarefas acima, vamos começar adicionando uma ação ao projeto, desenvolver módulos do JavaScript para executar as tarefas acima e, finalmente, atualizar o código de ação para usar os módulos desenvolvidos.
 
-Consulte a guia anexada [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) para obter o código completo, e abaixo da seção realça os arquivos principais.
+Consulte o arquivo [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) anexado para obter o código completo, e a seção abaixo destaca os arquivos principais.
 
 ### Adicionar ação
 
@@ -63,15 +63,15 @@ Consulte a guia anexada [WKND-AEM-Eventing-Runtime-Action.zip](../assets/example
   aio app add action
   ```
 
-- Selecionar `@adobe/generator-add-action-generic` como modelo de ação, nomeie a ação como `aem-event-processor`.
+- Selecione `@adobe/generator-add-action-generic` como modelo de ação, nomeie a ação como `aem-event-processor`.
 
   ![Adicionar ação](../assets/examples/event-processing-using-runtime-action/add-action-template.png)
 
-### Desenvolver módulos JavaScript
+### Desenvolver módulos do JavaScript
 
-Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módulos JavaScript.
+Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módulos do JavaScript.
 
-- A variável `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` O módulo determina se o evento recebido é de _Fragmento de conteúdo modificado_ tipo.
+- O módulo `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` determina se o evento recebido é do tipo _Fragmento de conteúdo modificado_.
 
   ```javascript
   async function needsAEMCallback(aemEvent) {
@@ -98,7 +98,7 @@ Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módu
   module.exports = needsAEMCallback;
   ```
 
-- A variável `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` O módulo chama o serviço de autor do AEM para encontrar os detalhes da modificação.
+- O módulo `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` chama o serviço de autor do AEM para localizar os detalhes da modificação.
 
   ```javascript
   ...
@@ -166,9 +166,9 @@ Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módu
   ...
   ```
 
-  Consulte [Tutorial de credenciais de serviço do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para saber mais sobre isso. Além disso, a variável [Arquivos de configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
+  Consulte o [tutorial sobre credenciais de serviço do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para saber mais. Além disso, os [Arquivos de Configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
 
-- A variável `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` O módulo armazena os dados do evento original, a mensagem de atividade e os detalhes de modificação (se houver) no armazenamento da Adobe I/O Runtime.
+- O módulo `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` armazena os dados originais do evento, a mensagem de atividade e os detalhes de modificação (se houver) no armazenamento do Adobe I/O Runtime.
 
   ```javascript
   ...
@@ -193,7 +193,7 @@ Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módu
 
 ### Atualizar código de ação
 
-Por fim, atualize o código de ação em `src/dx-excshell-1/actions/aem-event-processor/index.js` para usar os módulos desenvolvidos.
+Finalmente, atualize o código de ação em `src/dx-excshell-1/actions/aem-event-processor/index.js` para usar os módulos desenvolvidos.
 
 ```javascript
 ...
@@ -251,10 +251,10 @@ if (params.challenge) {
 
 ## Recursos adicionais
 
-- A variável `src/dx-excshell-1/actions/model` pasta contém `aemEvent.js` e `errors.js` arquivos, que são usados pela ação para analisar o evento recebido e manipular erros, respectivamente.
-- A variável `src/dx-excshell-1/actions/load-processed-aem-events` contém o código de ação, essa ação é usada pelo SPA para carregar os Eventos AEM processados do armazenamento da Adobe I/O Runtime.
-- A variável `src/dx-excshell-1/web-src` contém o código SPA, que exibe os Eventos AEM processados.
-- A variável `src/dx-excshell-1/ext.config.yaml` O arquivo contém a configuração e os parâmetros da ação.
+- A pasta `src/dx-excshell-1/actions/model` contém arquivos `aemEvent.js` e `errors.js`, que são usados pela ação para analisar o evento recebido e manipular erros, respectivamente.
+- A pasta `src/dx-excshell-1/actions/load-processed-aem-events` contém o código de ação. Essa ação é usada pelo SPA para carregar os Eventos AEM processados do armazenamento Adobe I/O Runtime.
+- A pasta `src/dx-excshell-1/web-src` contém o código SPA, que exibe os Eventos AEM processados.
+- O arquivo `src/dx-excshell-1/ext.config.yaml` contém parâmetros e configurações de ação.
 
 ## Conceito e principais pontos
 

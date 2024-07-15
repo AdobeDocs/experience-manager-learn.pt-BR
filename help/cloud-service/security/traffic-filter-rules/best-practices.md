@@ -29,16 +29,16 @@ Saiba mais sobre as práticas recomendadas para regras de filtro de tráfego, in
 
 - Para determinar quais regras são apropriadas para sua organização, colabore com a equipe de segurança.
 - Sempre teste regras em ambientes de Desenvolvimento antes de implantá-las em ambientes de Preparo e Produção.
-- Ao declarar e validar regras, sempre comece com `action` type `log` para garantir que a regra não esteja bloqueando o tráfego legítimo.
-- Para certas regras, a transição de `log` para `block` deve basear-se exclusivamente na análise de um volume suficiente de tráfego no local.
+- Ao declarar e validar regras, sempre comece com `action` tipo `log` para garantir que a regra não esteja bloqueando o tráfego legítimo.
+- Para determinadas regras, a transição de `log` para `block` deve ser puramente baseada na análise de tráfego suficiente do site.
 - Introduza regras de forma incremental e considere envolver suas equipes de teste (controle de qualidade, desempenho, teste de penetração) no processo.
-- Analise o impacto das regras regularmente usando o [ferramentas do painel](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Dependendo do volume de tráfego do site, a análise pode ser feita diariamente, semanalmente ou mensalmente.
+- Analise o impacto das regras regularmente usando a [ferramenta de painel](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Dependendo do volume de tráfego do site, a análise pode ser feita diariamente, semanalmente ou mensalmente.
 - Para bloquear o tráfego mal-intencionado que você possa saber após a análise, adicione regras adicionais. Por exemplo, determinados IPs que têm atacado seu site.
 - A criação, a implantação e a análise de regras devem ser um processo contínuo e iterativo. Não é uma atividade única.
 
 ## Práticas recomendadas para regras de filtro de tráfego
 
-Ative as regras de filtro de tráfego abaixo para seu projeto AEM. No entanto, os valores desejados para `rateLimit` e `clientCountry` As propriedades do devem ser determinadas em colaboração com a equipe de segurança.
+Ative as regras de filtro de tráfego abaixo para seu projeto AEM. No entanto, os valores desejados para as propriedades `rateLimit` e `clientCountry` devem ser determinados em colaboração com a equipe de segurança.
 
 ```yaml
 kind: CDN
@@ -93,7 +93,7 @@ data:
 
 Depois que o WAF é licenciado e ativado para o seu programa, os sinalizadores de correspondência de tráfego do WAF aparecem em gráficos e registros de solicitações, mesmo que você não os tenha declarado em uma regra. Portanto, você está sempre ciente do tráfego mal-intencionado potencialmente novo e pode criar regras conforme necessário. Observe os sinalizadores do WAF que não são refletidos nas regras declaradas e considere declará-los.
 
-Considere as regras do WAF abaixo para o seu projeto AEM. No entanto, os valores desejados para `action` e `wafFlags` A propriedade deve ser determinada em colaboração com a equipe de segurança.
+Considere as regras do WAF abaixo para o seu projeto AEM. No entanto, os valores desejados para as propriedades `action` e `wafFlags` devem ser determinados em colaboração com a equipe de segurança.
 
 ```yaml
 kind: CDN

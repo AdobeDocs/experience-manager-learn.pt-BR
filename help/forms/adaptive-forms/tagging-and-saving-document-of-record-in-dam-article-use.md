@@ -160,7 +160,7 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 Para fazer com que esse exemplo funcione em seu sistema, siga as etapas listadas abaixo:
 * [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define as tags dos dados de formulário enviados.
+* [Baixe e implante o conjunto setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define as tags dos dados de formulário enviados.
 
 * [Baixe o formulário adaptável de exemplo](assets/tag-and-store-in-dam-adaptive-form.zip)
 
@@ -168,9 +168,9 @@ Para fazer com que esse exemplo funcione em seu sistema, siga as etapas listadas
 
 * Clique em Criar | Fazer upload do arquivo Faça upload da tag-and-store-in-dam-adaptive-form.zip
 
-* [Importar os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) uso do gerenciador de pacotes AEM
-* Abra o [exemplo de formulário no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e envie o formulário.
-* [Navegar até a pasta Pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
+* [Importe os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) usando o gerenciador de pacotes AEM
+* Abra o [formulário de amostra no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e envie o formulário.
+* [Navegue até Pasta de pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
 Parabéns! Você instalou com êxito a amostra no seu sistema
 
 * Vamos explorar o [fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) que é acionado no envio do formulário.
@@ -180,4 +180,4 @@ Parabéns! Você instalou com êxito a amostra no seu sistema
 
 Os outros dois parâmetros são específicos para DoR e Caminho do arquivo de dados, conforme especificado nas opções de envio do Formulário adaptável. Verifique se os valores especificados aqui correspondem aos valores especificados nas opções de envio do Formulário adaptável.
 
-![Tag Dor](assets/tag_dor_service_configuration.gif)
+![Marca Dor](assets/tag_dor_service_configuration.gif)

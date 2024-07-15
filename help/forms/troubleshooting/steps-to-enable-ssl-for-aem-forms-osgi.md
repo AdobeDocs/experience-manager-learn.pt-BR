@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para ativar o SSL para a instância OSGi do AEM Forms
 
-*Este vídeo aborda as etapas para habilitar o SSL para a instância OSGi do AEM Forms.*
+*Este vídeo mostra as etapas para habilitar o SSL para a instância OSGi do AEM Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335524?quality=12&learn=on)

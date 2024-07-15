@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para ativar o log de depuração para qualquer classe no servidor da aplicação JBoss
 
-*Este vídeo aborda as etapas para ativar o log de depuração para qualquer classe no servidor da aplicação JBoss.*
+*Este vídeo mostra as etapas para habilitar o log de depuração para qualquer classe no servidor de Aplicativos JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)

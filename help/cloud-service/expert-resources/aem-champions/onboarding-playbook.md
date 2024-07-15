@@ -1,6 +1,6 @@
 ---
 title: Dicas e truques do especialista em AEM - Manual de integração do Cloud Manager
-description: Confira estas dicas para integração do Cloud Manager e o manual de integração do campeão e especialista em AEM, Rakesh Pasupuleti.
+description: Confira estas dicas para integração com o Cloud Manager e o manual de integração do campeão e especialista em AEM, Rakesh Pasupuleti.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -32,4 +32,4 @@ Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é
 
 ## Recursos adicionais {#additional-resources}
 
-* [Jornada de integração as a Cloud Service com AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR) - Um guia passo a passo para um novo administrador de sistema provisionar inicialmente os recursos de nuvem e atribuir usuários a funções com base em suas responsabilidades de trabalho, para que cada membro da equipe possa fazer logon e acessar seus novos recursos as a Cloud Service de AEM
+* [Jornada de integração do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR) - Um guia passo a passo para um novo administrador do sistema provisionar inicialmente os recursos de nuvem e atribuir usuários a funções com base em suas responsabilidades de trabalho, para que cada membro da equipe possa fazer logon e acessar seus novos recursos do AEM as a Cloud Service

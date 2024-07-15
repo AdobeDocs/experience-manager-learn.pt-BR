@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Modelos de página {#page-templates}
 
-Neste capítulo, exploraremos a relação entre um Modelo de página e uma Página. Criaremos um modelo de artigo de revista sem estilo com base em alguns modelos de [AdobeXD](https://www.adobe.com/products/xd.html). No processo de criação do modelo, os Componentes principais e as configurações de política avançadas são abordados.
+Neste capítulo, exploraremos a relação entre um Modelo de página e uma Página. Criaremos um modelo não estilizado de Artigo de revista com base em alguns modelos de [AdobeXD](https://www.adobe.com/products/xd.html). No processo de criação do modelo, os Componentes principais e as configurações de política avançadas são abordados.
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial em várias partes e presume-se que as etapas descritas no [Criar conteúdo e publicar alterações](./author-content-publish.md) capítulo foram concluídas.
+Este é um tutorial em várias partes e presume-se que as etapas descritas no capítulo [Criar conteúdo e publicar alterações](./author-content-publish.md) foram concluídas.
 
 ## Objetivo
 
@@ -58,11 +58,11 @@ Você pode usar a seguinte miniatura para identificar seu modelo (ou fazer uploa
 
 ### Pacote de soluções
 
-Um concluído [solução do modelo de revista](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) O pode ser baixado e instalado pelo Gerenciador de pacotes.
+Uma solução [concluída do Modelo de Revista](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) pode ser baixada e instalada via Gerenciador de Pacotes.
 
 ## Atualizar o cabeçalho e o rodapé com fragmentos de experiência {#experience-fragments}
 
-Uma prática comum ao criar conteúdo global, como um cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragmentos de experiência, permitem que os usuários combinem vários componentes para criar um único componente que pode ser referenciado. Os Fragmentos de experiência têm a vantagem de oferecer suporte ao gerenciamento de vários sites e [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Uma prática comum ao criar conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragmentos de experiência, permitem que os usuários combinem vários componentes para criar um único componente que pode ser referenciado. Os Fragmentos de experiência têm a vantagem de oferecer suporte ao gerenciamento de vários sites e à [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 O modelo de site gerou um Cabeçalho e Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
@@ -70,7 +70,7 @@ O modelo de site gerou um Cabeçalho e Rodapé. Em seguida, atualize os Fragment
 
 Etapas de alto nível para o vídeo abaixo:
 
-1. Baixe o pacote de conteúdo de amostra **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
+1. Baixe o pacote de conteúdo de exemplo **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
 1. Faça upload e instale o pacote de conteúdo usando o Gerenciador de pacotes.
 1. Atualizar os Fragmentos de experiência de cabeçalho e rodapé para usar o logotipo da WKND
 
@@ -88,8 +88,8 @@ Parabéns, você acabou de criar um novo modelo e página com o Adobe Experience
 
 ### Próximas etapas {#next-steps}
 
-Nesse momento, a página de artigo da revista e o site não correspondem aos estilos de marca da WKND. Siga as [Theming](theming.md) tutorial para saber mais sobre as práticas recomendadas para atualizar o código de front-end CSS e Javascript usado para aplicar estilos globais ao site.
+Nesse momento, a página de artigo da revista e o site não correspondem aos estilos de marca da WKND. Siga o tutorial [Theming](theming.md) para saber as práticas recomendadas para atualizar o código de front-end CSS e Javascript usado para aplicar estilos globais ao site.
 
 ### Pacote de soluções
 
-Um pacote de solução para este capítulo está disponível para download: [WKND-Magazine-Template-SOLUTION-1.0.zip](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.0.zip).
+Um pacote de soluções para este capítulo está disponível para download: [WKND-Magazine-Template-SOLUTION-1.0.zip](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.0.zip).

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Nesta parte, usaremos funções personalizadas e o editor de código para criar regras de negócios.
 
-você já instalou o [ClientLib com função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
+você já instalou a [ClientLib com a função personalizada](assets/client-libs-and-logo.zip) anteriormente neste tutorial.
 
 Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Essa biblioteca do cliente contém um arquivo javascript que expõe uma função para preencher valores de listas suspensas.
 

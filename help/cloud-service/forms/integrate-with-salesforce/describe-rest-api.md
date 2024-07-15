@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Criar arquivo do Swagger
 
-Descreva a API REST do Salesforce usando o [Especificação do OPEN API 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
+Descreva a API REST do Salesforce usando a [especificação da API OPEN 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
 
-O arquivo swagger que pode ser baixado é [disponível aqui](assets/sfdc-rest-swagger.zip)
+O arquivo swagger que pode ser baixado está [disponível aqui](assets/sfdc-rest-swagger.zip)

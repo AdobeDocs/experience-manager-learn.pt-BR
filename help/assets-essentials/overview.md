@@ -8,8 +8,8 @@ doc-type: Catalog
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus at
       </a>
    </div>
    <p>
-      <em>Aprenda os conceitos básicos do Assets Essentials!</em>
+      <em>Saiba mais sobre as noções básicas do Assets Essentials!</em>
    </p>
 </td>
 <td>
@@ -43,11 +43,11 @@ Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus at
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-      <strong>Documentação do Assets Essentials</strong>
+      <strong>documentação do Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Confira a documentação do produto Assets Essentials.</em>
+      <em>Confira a documentação do produto Assets Essentials!</em>
    <p>
 </td>
 <td>
@@ -56,11 +56,11 @@ Confira estes vídeos sobre como usar o Assets Essentials para gerenciar seus at
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=pt-BR">
-      <strong>Integração do Adobe Journey Optimizer</strong>
+      <strong>integração com o Adobe Journey Optimizer</strong>
       </a>
    </div>
    <p>
-      <em>Saiba como os Assets Essentials se integram ao Adobe Journey Optimizer.</em>
+      <em>Saiba como o Assets Essentials se integra ao Adobe Journey Optimizer!</em>
    <p>
 </td>
 </table>

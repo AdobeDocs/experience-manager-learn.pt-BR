@@ -53,7 +53,7 @@ Os sistemas de estilo têm alguns sabores diferentes:
 
 >[!NOTE]
 >
->Para ver uma demonstração desses recursos, recomendamos assistir nossa [Webinário de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
+>Para ver uma demonstração desses recursos, recomendamos assistir ao nosso [webinário de Sucesso do Cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
 
 ## Práticas recomendadas
 
@@ -93,4 +93,4 @@ Finalmente, o uso de sistemas de estilo é mais arte do que ciência. Conforme d
 
 Para obter mais informações, consulte nosso [Webinário de sucesso do cliente](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) com Will Brisbane e Joseph Van Buskirk.
 
-Saiba mais sobre estratégia e liderança de pensamento na [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Etapas para resolver problemas relacionados à memória no AEM
 
-*Este vídeo aborda as etapas para resolver problemas relacionados à memória no AEM.*
+*Este vídeo mostra as etapas para resolver problemas relacionados à memória no AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)

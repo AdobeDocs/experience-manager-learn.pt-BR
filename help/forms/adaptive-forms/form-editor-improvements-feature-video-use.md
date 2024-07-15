@@ -22,9 +22,9 @@ O AEM 6.3 apresenta vários novos recursos e melhorias nesta versão para simpli
 
 >[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
-**Algumas das principais melhorias do Editor de formulário adaptável incluem:**
+**Algumas das principais melhorias do Editor de Formulário Adaptável incluem:**
 
-* [Melhoria na experiência do usuário final](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [Experiência do usuário final aprimorada](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 
 * Preencher campos de formulário automaticamente
 * Rich text para um componente de caixa de texto
@@ -35,5 +35,5 @@ O AEM 6.3 apresenta vários novos recursos e melhorias nesta versão para simpli
 * [Atalhos de teclado para uma experiência de criação de conteúdo mais rápida](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
 * [Suporte para esquema JSON para criação de formulários adaptáveis](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
 * [CAPTCHA em formulários adaptáveis](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
-* [Integração aprimorada do Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
+* [Integração aprimorada com o Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
 * [Envios assíncronos de formulários](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

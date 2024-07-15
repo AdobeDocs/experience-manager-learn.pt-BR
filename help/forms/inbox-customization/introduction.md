@@ -33,7 +33,7 @@ Você pode personalizar uma Caixa de entrada de Experience Manager para alterar 
 ## Personalização de coluna
 
 [Abrir caixa de entrada do AEM](http://localhost:4502/aem/inbox)
-Abra o Admin Control clicando na guia _Exibição de lista_ e, em seguida, selecionando _Controle de administração_ como mostrado na captura de tela abaixo
+Abra o Admin Control clicando no ícone _Exibição da Lista_ e selecionando _Admin Control_ como mostrado na captura de tela abaixo
 
 ![admin-control](assets/open-customization.png)
 
@@ -52,7 +52,7 @@ Na personalização da marca, é possível fazer o seguinte
 * Personalizar o link de ajuda
 * Ocultar opções de Navegação
 
-![inbox-branding](assets/branding-customization.PNG)
+![marca-caixa de entrada](assets/branding-customization.PNG)
 
 ## Próximas etapas
 

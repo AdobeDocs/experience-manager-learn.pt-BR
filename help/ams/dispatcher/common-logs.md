@@ -1,6 +1,6 @@
 ---
-title: Logs comuns do Dispatcher do AEM
-description: Consulte as entradas de log comuns do Dispatcher e saiba o que significam e como abordá-las.
+title: Logs comuns do AEM Dispatcher
+description: Consulte as entradas de log comuns na Dispatcher e saiba o que significam e como abordá-las.
 version: 6.5
 topic: Administration, Performance
 feature: Dispatcher
@@ -37,7 +37,7 @@ Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_co
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
-Desde o módulo Dispatcher 4.2.x, eles começaram a desencorajar as pessoas a usar o seguinte tipo de correspondência nos arquivos de filtros:
+Desde o módulo do Dispatcher 4.2.x, eles começaram a desencorajar as pessoas a usar o seguinte tipo de correspondência nos arquivos de filtros:
 
 ```
 /0041 { /type "allow" /glob "* *.css *"   }
@@ -86,8 +86,8 @@ Fri Jul 20 17:26:47 2018 D pid 20051 (tid 139937517123328) Filter rejects:
 GET /etc/designs/exampleco/fonts/montserrat-regular/montserrat-regular-webfont.eot HTTP/1.1
 ```
 
-Isso nos informa que nosso arquivo de design `.eot` O está sendo bloqueado e queremos corrigir isso.
-Portanto, devemos examinar nosso arquivo de filtros e adicionar a seguinte linha para permitir `.eot` arquivos até
+Isso informa que nosso arquivo de design `.eot` está sendo bloqueado e queremos corrigir isso.
+Portanto, devemos examinar nosso arquivo de filtros e adicionar a seguinte linha para permitir a passagem de `.eot` arquivos
 
 ```
 /0011 { /type "allow" /method "GET" /extension 'eot' /path "/etc/designs/*" }
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Isso significa que a instância do AEM tinha um soquete aberto que podia ser acessado e o tempo limite de resposta foi excedido. Significa que a instância do AEM estava muito lenta ou não estava funcionando e o Dispatcher atingiu as configurações de tempo limite definidas na seção de renderização do farm. Aumente a configuração de tempo limite ou deixe a instância do AEM em bom funcionamento.
+Isso significa que a instância do AEM tinha um soquete aberto que podia ser acessado e o tempo limite de resposta foi excedido. Isso significa que a instância do AEM estava muito lenta ou não estava funcionando e o Dispatcher atingiu as configurações de tempo limite definidas na seção de renderização do farm. Aumente a configuração de tempo limite ou deixe a instância do AEM em bom funcionamento.
 
 ## Nível de armazenamento em cache
 
@@ -167,7 +167,7 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração instalando o pacote no renderizador do AEM.
+Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração com a instalação do pacote no renderizador AEM.
 
 Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
@@ -187,11 +187,11 @@ Exemplo de entrada de log:
 Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'we-retail.com', selected last farm 'publishfarm'
 ```
 
-Esse erro indica que de todos os arquivos do farm disponíveis em `/etc/httpd/conf.dispatcher.d/enabled_farms/` não foi possível encontrar uma entrada correspondente do `/virtualhost` seção.
+Este erro indica que, dentre todos os arquivos do farm disponíveis em `/etc/httpd/conf.dispatcher.d/enabled_farms/`, não foi possível localizar uma entrada correspondente na seção `/virtualhost`.
 
-Os arquivos do farm correspondem ao tráfego com base no nome do domínio ou caminho em que a solicitação foi recebida. Ele usa a correspondência de glob e, se não corresponder, você não configurou o farm corretamente, digitou a entrada no farm ou a entrada está totalmente ausente. Quando o farm não corresponde às entradas, o padrão é o último farm incluído na pilha de arquivos do farm incluídos. Neste exemplo, foi `999_ams_publish_farm.any` que é chamado de nome genérico de publishfarm.
+Os arquivos do farm correspondem ao tráfego com base no nome do domínio ou caminho em que a solicitação foi recebida. Ele usa a correspondência de glob e, se não corresponder, você não configurou o farm corretamente, digitou a entrada no farm ou a entrada está totalmente ausente. Quando o farm não corresponde às entradas, o padrão é o último farm incluído na pilha de arquivos do farm incluídos. Neste exemplo, era `999_ams_publish_farm.any`, chamado de nome genérico de publishfarm.
 
-Este é um exemplo de arquivo farm `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` foi reduzido para realçar as partes relevantes.
+Este é um exemplo de arquivo de farm `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` que foi reduzido para realçar as partes relevantes.
 
 ## Item veiculado a partir de
 
@@ -201,6 +201,6 @@ Exemplo de entrada de log:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-A página foi buscada pelo método http do GET para o conteúdo `/content/we-retail/us/en.html` e levou 24034 milissegundos. A parte em que desejamos prestar atenção está no final `publishfarm/0`. Você verá que ele direcionou e correspondeu aos `publishfarm`. A solicitação foi obtida da renderização 0. Isso significa que essa página teve que ser solicitada ao AEM e depois armazenada em cache. Agora vamos solicitar esta página novamente e ver o que acontece com o log.
+A página foi buscada pelo método GET http para o conteúdo `/content/we-retail/us/en.html` e levou 24034 milissegundos. A parte em que desejamos prestar atenção está no final de `publishfarm/0`. Você verá que ele direcionou e correspondeu a `publishfarm`. A solicitação foi obtida da renderização 0. Isso significa que essa página teve que ser solicitada ao AEM e depois armazenada em cache. Agora vamos solicitar esta página novamente e ver o que acontece com o log.
 
 [Próximo -> Arquivos somente leitura](./immutable-files.md)

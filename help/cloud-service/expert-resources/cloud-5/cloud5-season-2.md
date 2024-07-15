@@ -1,6 +1,6 @@
 ---
 title: Nuvem 5 - Temporada 2
-description: A segunda temporada permite que você aprenda sobre o Adobe Experience Manager (AEM) as a Cloud Service Adobe com os próprios engenheiros especialistas que o criaram, e com os serviços especializados que o fornecem.
+description: A segunda temporada permite que você aprenda sobre o as a Cloud Service Adobe da Adobe Experience Manager (AEM) com os próprios engenheiros especialistas que o criaram, e com os serviços especializados que o fornecem.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -23,7 +23,7 @@ Bem-vindo à segunda temporada da Cloud 5 Series da AEM Engineering. Um dos prin
 
 ## Caixa de Sugestão
 
-Visite o [Caixa de Sugestão](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias de tópicos.
+Visite a [Caixa de Sugestões](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias sobre tópicos.
 
 ## Temporada 2
 
@@ -37,7 +37,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="season-2/cloud5-experience-v-content-fragments.md"><strong>Fragmentos</strong></a>        
-                <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+                <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
             </div>
             <p>
                 <br/>
@@ -50,7 +50,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="season-2/cloud5-repo-modernizer.md"><strong>Modernizador de repositório</strong></a> 
-               <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+               <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
             </div>
             <p>
                 <br/>
@@ -63,7 +63,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                   <a href="season-2/cloud5-admin-console.md"><strong>Admin Console</strong></a>
-               <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+               <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
             </div>
             <p>
             <br/>
@@ -77,8 +77,8 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                  <img alt="Sling Jobs" src="./imgs/s2/003-thumb.png"/>
             </a>
             <div>
-                  <a href="season-2/cloud5-sling-job-scheduler.md"><strong>Sling Jobs</strong></a>
-               <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+                  <a href="season-2/cloud5-sling-job-scheduler.md"><strong>Trabalhos do Sling</strong></a>
+               <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
             </div>
             <p>
             <br/>
@@ -90,8 +90,8 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                  <img alt="Inicializador do repositório (repoinit)" src="./imgs/s2/004-thumb.png"/>
             </a>
             <div>
-                  <a href="season-2/cloud5-repoinit.md"><strong>Inicializador do repositório Sling</strong></a>
-               <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Inicializador do Repositório do Sling</strong></a>
+               <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
             </div>
             <p>
             <br/>
@@ -104,7 +104,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
       <div>
          <a href="season-2/cloud5-fix-your-cache.md"><strong>Corrigir... Cache</strong></a>
-         <br/><em>com Damian Langsweirdt e James Talbot, arquitetos seniores da nuvem</em>
+         <br/><em>com Damian Langsweirdt e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
          <br/>
@@ -118,12 +118,12 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                <img alt="Corrigir suas...substituições" src="./imgs/s2/006-thumb.png"/>
             </a>
       <div>
-            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Corrigir... Substitui</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Corrigir... Substituições</strong></a>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Visão rápida de coisas que ajudarão a acelerar seu desenvolvimento de reescrita e otimização no AEM as a Cloud Service.
+         Visão rápida sobre coisas que ajudarão a acelerar seu desenvolvimento de reescrita e otimização no AEM as a Cloud Service.
       </p>
      </td>   
      <td>
@@ -132,7 +132,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                </a>
       <div>
             <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Mistérios do Cloud Manager... Auditoria de experiência</strong></a>
-         <br/><em>com Darin Kuntze, arquiteto sênior de nuvem</em>
+         <br/><em>com Darin Kuntze, arquiteto de nuvem sênior</em>
       </div>
       <p>
         <br/>
@@ -149,7 +149,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
       </div>
       <p>
         <br/>
-        Darin e Bryan discutem como o Cloud Manager integra a execução de testes de unidade e relatórios de cobertura de código ao pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada de teste de unidade de código AEM.
+        Darin e Bryan discutem como a Cloud Manager integra a execução de testes de unidade e os relatórios de cobertura de código em seu pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada de teste de unidade de código AEM.
       </p>
    </td> 
   </tr>
@@ -163,7 +163,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                 <em>com Darin Kuntze e Bryan Stopp, arquitetos sênior da nuvem</em>
             </div>
             <p><br/>
-                Darin e Bryan discutem diferentes tipos de testes funcionais integrados ao processo de implantação as a Cloud Service do AEM para garantir a qualidade e a confiabilidade do seu código.
+                Darin e Bryan discutem diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
             </p>
         </td>
         <td></td>

@@ -86,7 +86,7 @@ Alguns exemplos de código que geralmente em um módulo principal incluem:
 * Iniciadores de fluxo de trabalho
 * Elementos de design comuns usados em sites
 
-*Arquitetura de projeto modular*
+*Arquitetura de Projeto Modular*
 
 Isso não elimina a necessidade de várias equipes dependerem e possivelmente atualizarem o mesmo conjunto de códigos. Ao criar um projeto principal, diminuímos o tamanho da base de código que é compartilhado entre as equipes, diminuindo mas não eliminando a necessidade de recursos compartilhados.
 

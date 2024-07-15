@@ -20,7 +20,7 @@ ht-degree: 0%
 
 O componente de fluxo de trabalho captura informações relacionadas à página que lista os ativos, como o modelo de página, o tipo de recurso de componente e a pasta base para armazenar as páginas geradas.
 
-![workflow-component](assets/workflow-component.png)
+![componente do fluxo de trabalho](assets/workflow-component.png)
 
 ## Implementação do processo de fluxo de trabalho
 

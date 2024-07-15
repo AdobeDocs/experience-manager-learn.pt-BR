@@ -62,13 +62,13 @@ Faça logon no AEM Forms.
 
 * Defina o valor dessa propriedade accountnumber como &quot;3059827&quot;. Você pode definir esse valor para qualquer número aleatório que desejar.
 
-* [Abra getad.html](http://localhost:4502/content/getad.html)
+* [Abrir getad.html](http://localhost:4502/content/getad.html)
 
 * O código associado a este URL obterá o número da conta do usuário conectado. Esse número de conta é passado como requestattribute para o FDM. O FDM buscará os dados associados a esse número de conta e preencherá o documento de canal da Web.
 
 >[!NOTE]
 >
->Por favor, olhe o **/apps/AEMForms/fetchad/GET.jsp** arquivo no crx. Verifique se a variável de cadeia de caracteres webChannelDocument aponta para um caminho de documento de comunicação válido.
+>Consulte o arquivo **/apps/AEMForms/fetchad/GET.jsp** no crx. Verifique se a variável de cadeia de caracteres webChannelDocument aponta para um caminho de documento de comunicação válido.
 
 ## Próximas etapas
 

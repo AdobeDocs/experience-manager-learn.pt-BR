@@ -21,13 +21,13 @@ ht-degree: 0%
 O formato de exibição de cartão é um padrão de design que apresenta informações ou dados na forma de cartões. Cada cartão representa uma parte distinta do conteúdo ou da entrada de dados e geralmente consiste em um contêiner visualmente distinto com elementos específicos organizados dentro dele.
 Cartões clicáveis no React são componentes interativos que se assemelham a cartões ou blocos e podem ser clicados ou tocados pelo usuário. Quando um usuário clica ou toca em um cartão clicável, ele aciona uma ação ou comportamento especificado, como navegar para outra página, abrir um modal ou atualizar a interface do usuário.
 
-Neste artigo, usaremos o [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) para buscar os formulários e exibir os formulários no formato de cartão e abrir o formulário adaptável no evento de clique.
+Neste artigo, usaremos a [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) para buscar os formulários, exibir os formulários no formato de cartão e abrir o formulário adaptável no evento de clique.
 
 ![exibição de cartão](./assets/card-view-forms.png)
 
 ## Modelo de cartão
 
-O código a seguir foi usado para criar o modelo de cartão. O modelo de cartão está exibindo o título e a descrição do formulário adaptável, juntamente com o logotipo do Adobe. [Componentes da interface do usuário de material](https://mui.com/) foram usadas na criação deste layout.
+O código a seguir foi usado para criar o modelo de cartão. O modelo de cartão está exibindo o título e a descrição do formulário adaptável, juntamente com o logotipo do Adobe. [Componentes de material da interface do usuário](https://mui.com/) foram usados na criação deste layout.
 
 
 

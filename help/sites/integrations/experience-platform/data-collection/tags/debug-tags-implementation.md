@@ -28,9 +28,9 @@ Uma introdução a ferramentas e técnicas comuns usadas para depurar uma implem
 
 ## Depuração do lado do cliente por meio do objeto Satellite
 
-A depuração do lado do cliente é útil para verificar o carregamento da regra de propriedade da tag ou a ordem de execução. Sempre que uma propriedade de tag for adicionada ao site, a variável `_satellite` O objeto JavaScript está presente no navegador para facilitar o evento do lado do cliente e o rastreamento de dados.
+A depuração do lado do cliente é útil para verificar o carregamento da regra de propriedade da tag ou a ordem de execução. Sempre que uma propriedade Tag é adicionada ao site, o objeto JavaScript `_satellite` está presente no navegador para facilitar o rastreamento de eventos e dados no lado do cliente.
 
-Para ativar a depuração no lado do cliente, chame o `setDebug(true)` no `_satellite` objeto.
+Para habilitar a depuração no lado do cliente, chame o método `setDebug(true)` no objeto `_satellite`.
 
 1. Abra o console do navegador e execute o comando abaixo.
 
@@ -38,19 +38,19 @@ Para ativar a depuração no lado do cliente, chame o `setDebug(true)` no `_sate
        _satellite.setDebug(true);
    ```
 
-1. Recarregue a página do site AEM e verifique se o log do console é exibido _regra acionada_ como abaixo.
+1. Recarregue a página do site AEM e verifique se o log do console mostra a mensagem _regra acionada_ como abaixo.
 
-   ![Marcar propriedade nas páginas Autor e Publicar](assets/satellite-object-debugging.png)
+   ![Marcar propriedade nas páginas Autor e Publish](assets/satellite-object-debugging.png)
 
 ## Depuração via Adobe Experience Platform Debugger
 
-Adobe fornece Adobe Experience Platform Debugger [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, entender e obter insights sobre a integração.
+O Adobe fornece o Adobe Experience Platform Debugger [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para depurar, entender e obter informações sobre a integração.
 
-1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância de publicação
+1. Abra a extensão Adobe Experience Platform Debugger e abra a página do site na instância do Publish
 
-2. No **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform** verifique os detalhes da propriedade da tag, como Nome, Versão, Data de build, Ambiente e Extensões.
+2. Na seção **Adobe Experience Platform Debugger > Resumo > Tags do Adobe Experience Platform**, verifique os detalhes da propriedade da Marca, como Nome, Versão, Data de Compilação, Ambiente e Extensões.
 
-   ![Detalhes de propriedade de Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
+   ![Detalhes de Adobe Experience Platform Debugger e Propriedades de Marca](assets/tag-property-details.png)
 
 ## Recursos adicionais {#additional-resources}
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas específicos de htmlPDF em uma configuração Unix (conversão do WebKit)
 
-*Este vídeo aborda o processo de solução de problemas específicos do htmlPDF em uma configuração Unix (conversão do WebKit).*
+*Este vídeo aborda o processo de solução de problemas específicos do HtmltoPDF em uma configuração Unix (conversão do WebKit).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335548?quality=12&learn=on)

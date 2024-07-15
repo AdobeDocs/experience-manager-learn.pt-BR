@@ -21,7 +21,7 @@ Bem-vindo à terceira temporada da Cloud 5 Series da AEM Engineering. Um dos pri
 
 ## Caixa de Sugestão
 
-Visite o [Caixa de Sugestão](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias de tópicos.
+Visite a [Caixa de Sugestões](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias sobre tópicos.
 
 ## Temporada 3
 
@@ -49,7 +49,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-rum.md">
-                <strong>Monitoramento do usuário real (RUM)</strong></a>        
+                <strong>RUM (Monitoramento de Usuário Real)</strong></a>        
                 <br/><em>com James Talbot e Damian Langsweirdt, Engenharia de AEM</em>
             </div>
             <p>
@@ -79,7 +79,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
-                <strong>Trabalhadores da Edge</strong></a>        
+                <strong>Edge Workers</strong></a>        
                 <br/><em>com James Talbot e Amol Anand, Engenharia de AEM</em>
             </div>
             <p>
@@ -95,7 +95,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Publish, cancelar publicação de eventos no Edge Delivery Services</strong></a>        
+                <strong>Publish, cancelar publicação de eventos em Edge Delivery Services</strong></a>        
                 <br/><em>com James Talbot e Amol Anand, Engenharia de AEM</em>
             </div>
             <p>
@@ -123,7 +123,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <strong>Traga sua própria CDN do Cloud Flare</strong></a>        
+                <strong>Traga sua própria CDN do Cloudflare</strong></a>        
                 <br/><em>com James Talbot e Kunwar Saluja, Engenharia de AEM</em>
             </div>
             <p>
@@ -153,8 +153,8 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <strong>IA gerativa no AEM Sites</strong></a>        
-                <br/><em>com James Talbot e Karthik Muralidharan, AEM Product Marketing</em>
+                <strong>IA de geração na AEM Sites</strong></a>        
+                <br/><em>com James Talbot e Karthik Muralidharan, Marketing de Produto AEM</em>
             </div>
             <p>
                 <br/>                
@@ -167,8 +167,8 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </a>
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <strong>Explorar editor universal</strong></a>        
-                <br/><em>com James Talbot e Dirk Rudolph, Engenharia de AEM</em>
+                <strong>Explorando o Editor Universal</strong></a>        
+                <br/><em>com James Talbot e Dirk Rudolph, engenharia de AEM</em>
             </div>
             <p>
                 <br/>                

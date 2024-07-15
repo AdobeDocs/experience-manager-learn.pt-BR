@@ -1,6 +1,6 @@
 ---
 title: Navegação responsiva
-description: Saiba como executar uma navegação responsiva na criação de documento de entrega de borda.
+description: Saiba como executar uma navegação responsiva na criação de documentos do Edge Delivery.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management

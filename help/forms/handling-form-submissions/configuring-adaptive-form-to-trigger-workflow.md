@@ -34,9 +34,9 @@ O formulário de amostra usado neste fluxo de trabalho é baseado em um modelo d
 ### Obter o exemplo de formulário adaptável
 
 * Baixar [Formulário adaptável](assets/peak-application-form.zip)
-* Navegue até [Formulário E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Navegar até [Formulário e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar -> Upload de arquivo
-* O exemplo de formulário adaptável é colocado em uma pasta chamada [Forms do aplicativo](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* O exemplo de formulário adaptável é colocado em uma pasta chamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 O vídeo a seguir explica como configurar um Formulário adaptável para acionar um fluxo de trabalho de AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

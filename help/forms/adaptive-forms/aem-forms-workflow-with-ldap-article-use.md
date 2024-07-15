@@ -22,7 +22,7 @@ Atribuir a tarefa de fluxo de trabalho AEM Forms ao gerente do remetente.
 
 Ao usar o formulário adaptável no fluxo de trabalho AEM, você atribuirá dinamicamente uma tarefa ao gerente do remetente do formulário. Para realizar esse caso de uso, precisaremos configurar o AEM com Ldap.
 
-As etapas necessárias para configurar o AEM com LDAP são explicadas em [detalhe aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+As etapas necessárias para configurar o AEM com LDAP estão explicadas em [detalhe aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Para os fins deste artigo, estou anexando arquivos de configuração usados na configuração do AEM com Adobe Ldap. Esses arquivos estão incluídos no pacote que pode ser importado usando o gerenciador de pacotes.
 
@@ -32,7 +32,7 @@ Na captura de tela abaixo, buscamos todos os usuários que pertencem a um centro
 
 Na captura de tela abaixo, atribuímos os grupos aos usuários buscados do LDAP para o AEM. Observe o grupo de formulários-usuários atribuído aos usuários importados. O usuário precisa ser membro desse grupo para interação com o AEM Forms. Também armazenamos a propriedade manager no nó profile/manager no AEM.
 
-![Synchandler](assets/synchandler.gif)
+![Sincronizador](assets/synchandler.gif)
 
 Depois de configurar o LDAP e importar usuários para AEM, podemos criar um workflow que atribuirá a tarefa ao gerente dos remetentes. Para o propósito deste artigo, desenvolvemos um simples fluxo de trabalho de aprovação de uma etapa.
 
@@ -62,13 +62,13 @@ Pegamos a pessoa que iniciou o workflow. Em seguida, obtemos o valor da propried
 
 Dependendo de como a propriedade do gerenciador é armazenada no LDAP, talvez seja necessário fazer alguma manipulação de string para obter a ID do gerenciador.
 
-Leia este artigo para implementar o seu próprio [ParticipantChooser.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Leia este artigo para implementar seu próprio [ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Para testá-lo em seu sistema (para os funcionários da Adobe, você pode usar essa amostra imediatamente)
 
-* [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado para definir a propriedade do gerenciador.
+* [Baixe e implante o conjunto setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado para definir a propriedade do gerenciador.
 * [Baixe e instale o DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importe os Ativos associados a este artigo para o AEM usando o gerenciador de pacotes](assets/aem-forms-ldap.zip).Incluídos como parte desse pacote estão os arquivos de configuração LDAP, fluxo de trabalho e um formulário adaptável.
+* [Importe a Assets associada a este artigo para AEM usando o gerenciador de pacotes](assets/aem-forms-ldap.zip). Incluídos como parte deste pacote estão arquivos de configuração LDAP, fluxo de trabalho e um formulário adaptável.
 * Configure o AEM com seu LDAP usando as credenciais LDAP apropriadas.
 * Faça logon no AEM usando suas credenciais LDAP.
 * Abra o [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)

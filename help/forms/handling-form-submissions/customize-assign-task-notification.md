@@ -22,16 +22,16 @@ ht-degree: 0%
 # Personalizar Atribuir Notificação de Tarefa
 
 O componente Atribuir tarefa é usado para atribuir tarefas aos participantes do fluxo de trabalho. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário ou aos membros do grupo definidos.
-Normalmente, essa notificação por e-mail conterá dados dinâmicos relacionados à tarefa. Esses dados dinâmicos são obtidos usando a variável [propriedades de metadados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Normalmente, essa notificação por e-mail conterá dados dinâmicos relacionados à tarefa. Estes dados dinâmicos são obtidos usando as [propriedades de metadados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) geradas pelo sistema.
 Para incluir valores dos dados de formulário enviados na notificação por email, precisamos criar uma propriedade de metadados personalizada e usar essas propriedades de metadados personalizadas no modelo de email
 
 
 
 ## Criação da propriedade de metadados personalizada
 
-A abordagem recomendada é criar um componente OSGI que implemente o método getUserMetadata do [ServiçoDeMetadadosDeUsuárioDeTrabalho](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+A abordagem recomendada é criar um componente OSGI que implemente o método getUserMetadata do [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-O código a seguir cria quatro propriedades de metadados (_firstName_,_lastName_,_motivo_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, a propriedade de metadados _firstName_ O valor de está definido como o valor do elemento chamado firstName a partir dos dados enviados. O código a seguir presume que os dados enviados do formulário adaptável estão no formato xml. O Forms adaptável baseado em esquema JSON ou modelo de dados de formulário gera dados no formato JSON.
+O código a seguir cria 4 propriedades de metadados (_firstName_,_lastName_,_reason_ e _amountRequested_) e define seu valor a partir dos dados enviados. Por exemplo, o valor da propriedade de metadados _firstName_ está definido como o valor do elemento chamado firstName dos dados enviados. O código a seguir presume que os dados enviados do formulário adaptável estão no formato xml. O Forms adaptável baseado em esquema JSON ou modelo de dados de formulário gera dados no formato JSON.
 
 
 ```java
@@ -113,14 +113,14 @@ return customMetadataMap;
 
 ## Usar as propriedades de metadados personalizadas no modelo de email de notificação de tarefa
 
-No modelo de email, é possível incluir a propriedade de metadados usando a seguinte sintaxe, em que amountRequested é a propriedade de metadados `${amountRequested}`
+No modelo de email você pode incluir a propriedade de metadados usando a seguinte sintaxe, onde amountRequested é a propriedade de metadados `${amountRequested}`
 
 ## Configurar Atribuir Tarefa para usar a propriedade de metadados personalizada
 
 Depois que o componente OSGi for criado e implantado no servidor AEM, configure o componente Atribuir tarefa como mostrado abaixo para usar propriedades de metadados personalizadas.
 
 
-![Notificação de Tarefa](assets/task-notification.PNG)
+![Notificação de tarefa](assets/task-notification.PNG)
 
 ## Permitir o uso de propriedades de metadados personalizadas
 
@@ -129,11 +129,11 @@ Depois que o componente OSGi for criado e implantado no servidor AEM, configure 
 ## Para tentar isso no servidor
 
 * [Configurar o Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Associar uma ID de e-mail válida a [usuário administrador](http://localhost:4502/security/users.html)
-* Baixe e instale o [Modelo de fluxo de trabalho e notificação](assets/workflow-and-task-notification-template.zip) usar [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Baixar [Formulário adaptável](assets/request-travel-authorization.zip) e importar para o AEM da [interface do usuário de formulários e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Implante e inicie o [Pacote personalizado](assets/work-items-user-service-bundle.jar) usando o [console da web](http://localhost:4502/system/console/bundles)
-* [Pré-visualizar e enviar o formulário](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* Associar uma ID de email válida a [usuário administrador](http://localhost:4502/security/users.html)
+* Baixe e instale o [modelo de fluxo de trabalho e notificação](assets/workflow-and-task-notification-template.zip) usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Baixe o [Formulário adaptável](assets/request-travel-authorization.zip) e importe para o AEM da [interface de formulários e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Implante e inicie o [Pacote Personalizado](assets/work-items-user-service-bundle.jar) usando o [console da Web](http://localhost:4502/system/console/bundles)
+* [Visualizar e enviar o formulário](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 No envio do formulário, a notificação de atribuição de tarefa é enviada para a ID de e-mail associada ao usuário administrador. A captura de tela a seguir mostra um exemplo de notificação de atribuição de tarefa
 
@@ -142,7 +142,7 @@ No envio do formulário, a notificação de atribuição de tarefa é enviada pa
 >[!NOTE]
 >O template de email para a notificação da tarefa atribuída precisa estar no seguinte formato.
 >
-> subject=Tarefa atribuída - `${workitem_title}`
+> assunto=Tarefa atribuída - `${workitem_title}`
 >
 > message=String que representa seu modelo de email sem nenhum caractere de nova linha.
 
@@ -200,4 +200,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-O pacote com o código acima pode ser [baixado aqui](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+O pacote com o código acima pode ser [baixado daqui](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)

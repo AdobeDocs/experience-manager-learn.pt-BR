@@ -66,7 +66,7 @@ O serviço de envio personalizado extrai e armazena os anexos no portal do Azure
 ```
 
 
-[O exemplo de manipulador de envio personalizado para componentes principais baseado em formulário adaptável está disponível aqui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). O envio personalizado a seguir foi gravado para lidar com o envio do formulário
+[O manipulador de envio personalizado de exemplo para o formulário adaptável baseado nos componentes principais está disponível aqui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). O envio personalizado a seguir foi gravado para lidar com o envio do formulário
 
 ```java
 package com.azuredemo.core;

@@ -20,7 +20,8 @@ ht-degree: 0%
 
 Baixe e descompacte o [arquivo zip](./assets/aem-forms-cs-doc-gen.zip)
 
-Iniciar o Eclipse e importar o projeto para o Eclipse O projeto inclui os seguintes arquivos na pasta de recursos:
+Iniciar o Eclipse e importar o projeto para o Eclipse
+O projeto inclui os seguintes arquivos na pasta de recursos:
 
 * DataFile1, DataFile2 e DataFile3 - Arquivos de dados xml de amostra a serem mesclados com o modelo para gerar o arquivo de PDF final
 * custom_fonts.xdp - modelo XDP.
@@ -37,6 +38,6 @@ Iniciar o Eclipse e importar o projeto para o Eclipse O projeto inclui os seguin
 * Execute o aplicativo Main.java as java
 
 >[!NOTE]
-> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para passar por isso, certifique-se de dar a [permissões apropriadas para o usuário da conta técnica no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para superar isso, forneça as [permissões apropriadas ao usuário técnico da conta no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
 **Usuários do AEM Forms** é a função que usei neste curso.

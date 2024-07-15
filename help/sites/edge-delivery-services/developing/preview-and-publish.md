@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Pré-visualizar e publicar conteúdo
 
-Pré-visualizar e publicar conteúdo com o Edge Delivery Services usando o [AEM Sidekick](./sidekick.md).
+Visualize e publique conteúdo com Edge Delivery Services usando o [AEM Sidekick](./sidekick.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)

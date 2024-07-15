@@ -25,7 +25,7 @@ Uma lista suspensa em cascata é uma série de controles DropDownList dependente
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Para o propósito deste tutorial, usei [API REST Geonames](https://www.geonames.org/export/web-services.html) para demonstrar esse recurso.
+Para fins deste tutorial, usei a [API REST Geonames](https://www.geonames.org/export/web-services.html) para demonstrar esse recurso.
 Há várias organizações que fornecem esse tipo de serviço e, desde que tenham APIs REST bem documentadas, é possível integrar facilmente ao AEM Forms usando o recurso de integração de dados
 
 As etapas a seguir foram seguidas para implementar listas suspensas em cascata no AEM Forms
@@ -39,26 +39,27 @@ Crie uma conta de desenvolvedor com [Geonames](https://www.geonames.org/login). 
 A Especificação de OpenAPI (antiga Especificação do Swagger) é um formato de descrição de API para APIs REST. Um arquivo OpenAPI permite descrever toda a API, incluindo:
 
 * Pontos de extremidade disponíveis (/users) e operações em cada ponto de extremidade (GET /users, POST /users)
-* Parâmetros de operação Entrada e saída para cada operação Métodos de autenticação
+* Parâmetros de operação Entrada e saída para cada operação
+Métodos de autenticação
 * Informações de contato, licença, termos de uso e outras informações.
 * As especificações da API podem ser escritas em YAML ou JSON. O formato é fácil de aprender e legível tanto para seres humanos quanto para máquinas.
 
-Para criar seu primeiro arquivo swagger/OpenAPI, siga o [Documentação da OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Para criar seu primeiro arquivo swagger/OpenAPI, siga a [documentação sobre OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > O AEM Forms é compatível com a especificação OpenAPI versão 2.0 (FKA Swagger).
 
-Use o [editor swagger](https://editor.swagger.io/) para criar seu arquivo swagger para descrever as operações que buscam todos os países e elementos secundários do país ou estado. O arquivo swagger pode ser criado no formato JSON ou YAML.
+Use o [editor swagger](https://editor.swagger.io/) para criar seu arquivo swagger e descrever as operações que buscam todos os países e elementos secundários do país ou estado. O arquivo swagger pode ser criado no formato JSON ou YAML.
 
 ## Criar fontes de dados
 
-Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use o [arquivos swagger](assets/geonames-swagger-files.zip) para criar suas fontes de dados.
+Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar a fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use os [arquivos swagger](assets/geonames-swagger-files.zip) para criar suas fontes de dados.
 Você precisará criar duas fontes de dados (uma para buscar todos os países e outra para obter elementos secundários)
 
 
 ## Criar modelo de dados do formulário
 
-A integração de dados do AEM Forms fornece uma interface intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados do formulário nas fontes de dados criadas na etapa anterior. Modelo de dados de formulário com 2 fontes de dados
+A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados do formulário nas fontes de dados criadas na etapa anterior. Modelo de dados de formulário com 2 fontes de dados
 
 ![fdm](assets/geonames-fdm.png)
 
@@ -71,12 +72,12 @@ Crie um formulário adaptável com duas listas suspensas. Um para listar os paí
 ### Lista suspensa Preencher países
 
 A lista de países é preenchida quando o formulário é inicializado pela primeira vez. A captura de tela a seguir mostra o editor de regras configurado para preencher as opções da lista suspensa do país. Você terá que fornecer seu nome de usuário com a conta de nomes geográficos para que isso funcione.
-![países get](assets/get-countries-rule-editor.png)
+![obter-países](assets/get-countries-rule-editor.png)
 
 #### Preencher a lista suspensa Estado/Província
 
 Precisamos preencher a lista suspensa Estado/Província com base no país selecionado. A captura de tela a seguir mostra a configuração do editor de regras
-![estado-província-opções](assets/state-province-options.png)
+![opções-estado-província](assets/state-province-options.png)
 
 ### Exercício
 
@@ -84,11 +85,12 @@ Adicione 2 listas suspensas chamadas counties e cities no formulário para lista
 ![exercício](assets/cascading-drop-down-exercise.png)
 
 
-### Ativos de amostra
+### Assets de amostra
 
-Você pode baixar os seguintes ativos para começar a criar a amostra da lista suspensa em cascata. Os arquivos concluídos do Swagger podem ser baixados em [aqui](assets/geonames-swagger-files.zip)
+Você pode baixar os seguintes ativos para começar a criar a amostra de lista suspensa em cascata
+Os arquivos concluídos do Swagger podem ser baixados de [aqui](assets/geonames-swagger-files.zip)
 Os arquivos swagger descrevem a seguinte API REST
-* [Obter todos os países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Obter objeto filho de Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obter Todos os Países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Obter Filhos do objeto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
-O concluído [O modelo de dados de formulário pode ser baixado aqui](assets/geonames-api-form-data-model.zip)
+O [Modelo de Dados de Formulário concluído pode ser baixado daqui](assets/geonames-api-form-data-model.zip)

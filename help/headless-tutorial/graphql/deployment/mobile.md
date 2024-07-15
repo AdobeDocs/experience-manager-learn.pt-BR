@@ -31,7 +31,7 @@ A configuração de implantação a seguir deve estar em vigor para implantaçõ
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Compartilhamento de recursos entre origens (CORS) | ✘ | ✘ | ✘ |
-| [Hospedeiros AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Hosts AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exemplo de aplicativos móveis
 

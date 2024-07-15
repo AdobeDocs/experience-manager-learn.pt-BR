@@ -1,6 +1,6 @@
 ---
-title: Integrações as a Cloud Service do AEM com o Adobe Experience Cloud
-description: Saiba mais sobre as integrações compatíveis do AEM as a Cloud Service com outros produtos da Adobe Experience Cloud.
+title: Integrações do AEM as a Cloud Service com o Adobe Experience Cloud
+description: Saiba mais sobre as integrações compatíveis da AEM as a Cloud Service com outros produtos da Adobe Experience Cloud.
 version: Cloud Service
 feature: Integrations
 topic: Integrations
@@ -21,24 +21,24 @@ ht-degree: 11%
 
 ---
 
-# Integrações as a Cloud Service do AEM com o Adobe Experience Cloud
+# Integrações do AEM as a Cloud Service com o Adobe Experience Cloud
 
-Saiba mais sobre as integrações compatíveis do AEM as a Cloud Service com outros produtos da Adobe Experience Cloud.
+Saiba mais sobre as integrações compatíveis da AEM as a Cloud Service com outros produtos da Adobe Experience Cloud.
 Clique no produto Experience Cloud para obter a documentação sobre como configurar e usar as integrações.
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
 | [Acrobat Sign](#adobe-acrobat-sign) |           |            | ✔ |
-| Publicidade |           |            |          |
-| [Analytics](#adobe-analytics) | ✔ | ✔ | ✔ |
+| Advertising |           |            |          |
+| [Análises](#adobe-analytics) | ✔ | ✔ | ✔ |
 | Gerenciador de público |           |            |          |
 | Campaign Classic |           |            |          |
 | Campaign Standard |           |            |          |
 | [Commerce](#adobe-commerce) | ✔ | ✔ |          |
 | Customer Journey Analytics |           |            |          |
-| [tags Experience Platform](#adobe-experience-platform-tags) | ✔ |            | ✔ |
+| [marcas de Experience Platform](#adobe-experience-platform-tags) | ✔ |            | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |           | ✔ |          |
-| [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
+| [Gerente de aprendizado](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
 | Real-time CDP |           |            |          |
 | [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
@@ -65,15 +65,15 @@ A integração do Adobe Analytics com o AEM as a Cloud Service permite rastrear 
 + [Tutorial do AEM Sites e do Analytics](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html?lang=pt-BR)
 + Camada de dados de clientes Adobe (ACDL)
 
-   + [Estender o ACDL nos componentes principais do WCM no AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
-   + [Integrar o ACDL com os componentes principais do WCM no AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
+   + [Estender o ACDL em Componentes Principais do WCM no AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
+   + [Integrar o ACDL com os Componentes principais do WCM do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
    + [Manipulação de dados orientada por eventos com o ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
-   + [Tutorial da Camada de dados do cliente Adobe (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR)
+   + [Tutorial da Camada de Dados do Cliente (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=pt-BR) do Adobe
 
 ### AEM Assets
 
 + [Visão geral do Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
-+ [Configurar insights do Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
++ [Configurar o Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
 + [Tutorial do Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
 
 ### AEM Forms
@@ -83,7 +83,7 @@ A integração do Adobe Analytics com o AEM as a Cloud Service permite rastrear 
 ### AEM Sites
 
 + [Integração com o Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
-+ [Criação de boletim informativo no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
++ [Criando um informativo do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
 + [Documentação dos Componentes principais de email do AEM](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
 ## Adobe Commerce
@@ -92,22 +92,22 @@ A integração do Adobe Commerce com o AEM as a Cloud Service permite que as mar
 
 ### AEM Sites
 
-+ [Guia do usuário de conteúdo e Commerce do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
++ [Guia do usuário de Conteúdo e Commerce do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
 
 
 ## Tags no Adobe Experience Platform
 
-As tags na Adobe Experience Platform se integram perfeitamente ao AEM, fornecendo uma maneira simples de implantar e gerenciar [analytics](#adobe-analytics), [direcionamento](#adobe-target)tags de marketing e publicidade necessárias para envolver as experiências do cliente.
+As tags na Adobe Experience Platform se integram perfeitamente com o AEM, fornecendo uma maneira simples de implantar e gerenciar as tags de [análise](#adobe-analytics), [direcionamento](#adobe-target), marketing e publicidade necessárias para envolver as experiências do cliente.
 
 ### AEM Sites
 
 + [guia do usuário de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Tutorial de tags do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
++ [Tutorial de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
 
 ### AEM Forms
 
 + [guia do usuário de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Tutorial de tags do Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
++ [Tutorial de tags Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
 
 ## Adobe Journey Optimizer
 
@@ -127,7 +127,8 @@ O Adobe Learning Manager (antigo Adobe Captivate Prime) oferece aprendizado pers
 
 ## Adobe Sensei
 
-O Adobe Sensei fornece IA e tecnologia de aprendizado de máquina para transformar o processo de gerenciamento de conteúdo por meio de Tags inteligentes, Recorte inteligente, Pesquisa visual e muito mais.
+A Adobe Sensei fornece IA e tecnologia de aprendizado de máquina para transformar o processo de gerenciamento de conteúdo por meio de Tags inteligentes, Smart
+Recorte, pesquisa visual e muito mais!
 
 ### AEM Sites
 
@@ -135,15 +136,15 @@ O Adobe Sensei fornece IA e tecnologia de aprendizado de máquina para transform
 
 ### AEM Assets
 
-+ [Tags inteligentes para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-+ [Tags inteligentes personalizadas para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
-+ [Tags inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Corte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
++ [Marcas inteligentes para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
++ [Marcas inteligentes personalizadas para imagens](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
++ [Marcas inteligentes para vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
++ [Recorte inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 + [Pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms
 
-+ [Serviço Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
++ [Serviço do Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
 
 
 ## Adobe Target
@@ -155,8 +156,8 @@ O Adobe Target integra-se ao AEM as a Cloud Service para fornecer experiência o
 + [Configurar a integração do Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 + Fragmentos de experiência para o Target
 
-   + [Publicar fragmentos de experiência no Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [Publicar fragmentos de experiência como JSON no Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Fragmentos de experiência do Publish para o Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Fragmentos de experiência do Publish como JSON para Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
 + [Usar o AEM Context Hub com o Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [Tutorial do AEM Sites e do Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
@@ -168,7 +169,7 @@ As integrações da Adobe Workfront com o AEM s a Cloud Service simplificam o pr
 ### AEM Assets
 
 + [Configurar o conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=pt-BR)
-+ [Vídeos do conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
++ [vídeos do conector aprimorado do Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
 + AEM Assets Essentials
 
    + [Guia do usuário do Adobe Workfront para Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)

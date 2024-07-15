@@ -21,17 +21,17 @@ ht-degree: 2%
 
 # Planejamento da interface do usuário com o Adobe XD {#ui-planning-adobe-xd}
 
-Na maioria dos casos, o planejamento para um novo site começa com modelos e designs estáticos. [Adobe XD](https://www.adobe.com/products/xd.html) O é a melhor ferramenta de design do setor para criar experiências para o usuário. A Adobe recomenda o planejamento da implementação do Sites por meio do uso de modelos de interface do usuário com o Adobe XD ou outra ferramenta.
+Na maioria dos casos, o planejamento para um novo site começa com modelos e designs estáticos. O [Adobe XD](https://www.adobe.com/products/xd.html) é a melhor ferramenta de design do setor para criar experiências de usuário. A Adobe recomenda o planejamento da implementação do Sites por meio do uso de modelos de interface do usuário com o Adobe XD ou outra ferramenta.
 
 ## Pré-requisitos {#prerequisites}
 
 Este é um tutorial em várias partes e presume-se que as etapas descritas no capítulo anterior foram concluídas. Este capítulo é simplesmente uma parte de observação e aprendizado, nenhuma ação é necessária para poder continuar com os capítulos subsequentes.
 
-Para acompanhar os vídeos, você precisará [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html) instalado, um [avaliação gratuita disponível](https://www.adobe.com/products/xd/pricing/free-trial.html).
+Para acompanhar os vídeos que você precisará do [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html) instalado, uma [avaliação gratuita está disponível](https://www.adobe.com/products/xd/pricing/free-trial.html).
 
 ## Objetivo
 
-1. Revise o kit de interface do usuário fornecido pelo [Modelo de site padrão](https://github.com/adobe/aem-site-template-standard) e pela equipe de design da WKND.
+1. Examine o Kit de Interface do Usuário fornecido pelo [Modelo de Site Padrão](https://github.com/adobe/aem-site-template-standard) e pela equipe de design da WKND.
 1. Entenda como os kits de interface do usuário podem ser usados para mapear e planejar uma implementação do AEM Sites.
 1. Saiba como entregar designs de interface do usuário criados no Adobe XD para um desenvolvedor front-end para implementação.
 
@@ -45,7 +45,7 @@ Neste capítulo, dois arquivos Adobe XD são inspecionados, um para o [Modelo de
 
 Etapas de alto nível:
 
-1. Baixe o [Arquivo XD de modelo de site padrão](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
+1. Baixe o [Arquivo XD de Modelo de Site Padrão](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
 1. Inspect o kit de interface do usuário no Adobe XD.
 1. Simular a entrega dos designs a um desenvolvedor front-end.
 
@@ -55,14 +55,14 @@ Etapas de alto nível:
 
 Etapas de alto nível:
 
-1. Baixe o [Arquivo XD do artigo da WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
+1. Baixe o [Arquivo XD do Artigo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 1. Inspect os designs do modelo de Artigo WKND.
 
 ## Parabéns. {#congratulations}
 
 Parabéns, você aprendeu como os Kits de interface do usuário do Adobe XD podem ser usados para mapear e planejar uma implementação do AEM Sites.
 
-Adicional [Os kits de interface do usuário estão disponíveis](https://www.adobe.com/products/xd/features/ui-kits.html) para inspecionar e baixar.
+[Kits de Interface do Usuário adicionais estão disponíveis](https://www.adobe.com/products/xd/features/ui-kits.html) para inspeção e download.
 
 ### Próximas etapas {#next-steps}
 

@@ -40,10 +40,10 @@ Para fazer isso, é necessário:
 
 Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguinte:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta apps, crie uma pasta chamada config com caminho/estrutura semelhante à pasta config, que está em libs/fd/cm/config, usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/config`
 
@@ -53,9 +53,9 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
       **Caminho:** /libs/fd/cm/config
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
       ![Sobrepor nó](assets/overlay1.png)
 
@@ -65,12 +65,12 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 1. Crie uma cópia do arquivo tbxeditor-config.xml na pasta de configuração recém-criada, usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no arquivo tbxeditor-config.xml em libs/fd/cm/config e selecione **Copiar**.
-   1. Clique com o botão direito do mouse na pasta a seguir e selecione **Colar:**
+   1. Clique com o botão direito no arquivo tbxeditor-config.xml em libs/fd/cm/config e selecione **Copiar**.
+   1. Clique com o botão direito do mouse na seguinte pasta e selecione **Colar:**
 
       `apps/fd/cm/config`
 
-   1. O nome do arquivo colado, por padrão, é `copy of tbxeditor-config.xml.` Renomeie o arquivo para `tbxeditor-config.xml` e clique em **Salvar tudo**.
+   1. O nome do arquivo colado, por padrão, é `copy of tbxeditor-config.xml.` Renomeie o arquivo para `tbxeditor-config.xml` e clique em **Salvar Tudo**.
 
 1. Abra o arquivo tbxeditor-config.xml em apps/fd/cm/config e faça as alterações necessárias.
 
@@ -168,7 +168,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
       * Valores padrão de família de fontes e tamanho, altura, espaçamento entre letras e formato de data
       * Recuos com marcadores
 
-      Por exemplo, para adicionar uma fonte japonesa chamada Sazanami Mincho Medium, é necessário fazer a seguinte entrada no arquivo XML: `<font>Sazanami Mincho Medium</font>`. Também é necessário ter essa fonte instalada na máquina cliente usada para acessar e trabalhar com a personalização de fontes. Para obter mais informações, consulte [Adicionar fontes personalizadas ao computador cliente](#addcustomfonts).
+      Por exemplo, para adicionar uma fonte em japonês chamada Sazanami Mincho Medium, é necessário criar a seguinte entrada no arquivo XML: `<font>Sazanami Mincho Medium</font>`. Também é necessário ter essa fonte instalada na máquina cliente usada para acessar e trabalhar com a personalização de fontes. Para obter mais informações, consulte [Adicionar fontes personalizadas ao computador cliente](#addcustomfonts).
 
       Também é possível alterar os padrões de vários aspectos do texto e, removendo as entradas, remover as fontes do editor de texto.
 
@@ -187,7 +187,7 @@ Para obter mais informações sobre a instalação de fontes, consulte o seguint
 
 Depois de fazer alterações nas fontes no arquivo tbxeditor-config.xml no CRX e instalar as fontes necessárias na máquina cliente usada para acessar o AEM Forms, as alterações serão exibidas no editor de texto.
 
-Por exemplo, a fonte Sazanami Mincho Medium adicionada na variável [Personalizar fontes editando o arquivo tbxeditor-config.xml no CRX](#customizefonts) O procedimento aparece na interface do editor de texto da seguinte maneira:
+Por exemplo, a fonte Sazanami Mincho Medium adicionada ao [Personalizar fontes editando o arquivo tbxeditor-config.xml no procedimento CRX](#customizefonts) aparece na interface do editor de texto da seguinte maneira:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 

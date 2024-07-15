@@ -33,7 +33,7 @@ O vídeo a seguir o guiará pelas etapas necessárias para criar a configuraçã
 
 Se você receber um erro ao definir a configuração de nuvem do Adobe Sign, as seguintes etapas podem ser executadas para solucionar problemas
 * Verifique se o URL de redirecionamento especificado no aplicativo da API do Acrobat Sign está no seguinte formato
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+&lt;your instance name>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
 Por exemplo - https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS é o nome do container que manterá a configuração de nuvem
 * Verifique se o URL oAuth está correto
 * Verifique a ID do cliente e o segredo do cliente

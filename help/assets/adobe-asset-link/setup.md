@@ -24,18 +24,18 @@ Dê um impacto rápido à sua organização, facilitando a colaboração de equi
 
 ## Configuração do Asset Link para o AEM as a Cloud Service
 
-Saiba como configurar o Adobe Asset Link para o AEM as a Cloud Service AEM as a Cloud Service, configurando os direitos de usuário e o, e como instalar e usar o Adobe Asset Link.
+Saiba como configurar o Adobe Asset Link para o AEM as a Cloud Service, configurar direitos de usuário e o AEM as a Cloud Service e como instalar e usar o Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
-Não exibido no vídeo acima, o Adobe Asset Link pode ser adicionado através da variável __Pacote gerenciado__ opção do gerenciador de pacotes Creative Cloud:
+Não exibido no vídeo acima, o Adobe Asset Link pode ser adicionado através da opção __Pacote gerenciado__ do gerenciador de pacotes Creative Cloud:
 
-1. Escolher __Adobe Asset Link CEP__ in __Escolher plug-ins__ etapa
-2. No __Etapa de opção__ selecionar __Habilitar instalação de autoatendimento__ e __Permitir que não administradores atualizem e instalem aplicativos__ para permitir que não administradores tenham privilégios para gerenciar aplicativos e plug-ins do Creative Cloud.
+1. Escolha o __CEP do Link de Ativo do Adobe__ na etapa __Escolher Plug-ins__
+2. Na __Etapa de opção__, selecione __Habilitar instalação de autoatendimento__ e __Permitir que não administradores atualizem e instalem aplicativos__ para permitir que não administradores tenham privilégios para gerenciar aplicativos e plug-ins do Creative Cloud.
 
 ## Configuração do Asset Link para o Managed Services e No local
 
-Saiba como configurar o Adobe Asset Link para AEM 6 em execução no Adobe Managed Services AEM as a Cloud Service ou no local, configurando os direitos de usuário e o, e como instalar e usar o Adobe Asset Link.
+Saiba como configurar o Adobe Asset Link para AEM 6 em execução no Adobe Managed Services ou no local, configurando os direitos de usuário e o AEM as a Cloud Service, e como instalar e usar o Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 

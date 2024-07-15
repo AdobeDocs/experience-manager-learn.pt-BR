@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Etapa de processo personalizada
 
-Veja a seguir o código completo da etapa de processo personalizada que converte e substitui os arquivos nativos pelos PDFs convertidos. Essa etapa personalizada pesquisa todos os anexos sob o nome da pasta, que é fornecido como um argumento de processo no fluxo de trabalho.
+Veja a seguir o código completo da etapa de processo personalizada que converte e substitui os arquivos nativos pelos PDFs convertidos.
+Essa etapa personalizada pesquisa todos os anexos sob o nome da pasta, que é fornecido como um argumento de processo no fluxo de trabalho.
 Esta etapa de processo personalizada usa os métodos do DocumentCloudSDKService personalizado para criar o PDF.
 
 

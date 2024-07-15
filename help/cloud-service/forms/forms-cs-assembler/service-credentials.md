@@ -1,6 +1,6 @@
 ---
 title: Credenciais de serviço do AEM
-description: Baixe as credenciais de serviço do Console do desenvolvedor do AEM.
+description: Baixar credenciais de serviço da Developer Console do AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Credenciais de serviço
 
-As integrações com o AEM as a Cloud Service devem ser capazes de se autenticar com segurança no AEM. O Console do desenvolvedor do AEM gera Credenciais de serviço, que são usadas por aplicativos, sistemas e serviços externos para interagir programaticamente com os serviços de Autor ou Publicação do AEM por HTTP.
+As integrações com o AEM as a Cloud Service devem ser capazes de autenticar com segurança para AEM. O Developer Console do AEM gera Credenciais de serviço, que são usadas por aplicativos, sistemas e serviços externos para interagir programaticamente com os serviços do AEM Author ou do Publish por HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

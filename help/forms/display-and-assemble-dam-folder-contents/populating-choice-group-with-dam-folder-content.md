@@ -111,11 +111,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Criar formulário adaptável
 
-Criar um formulário adaptável e associá-lo à biblioteca do cliente **listfolderassets**. Adicione um componente de caixa de seleção ao formulário. Use o editor de regras para preencher as opções da caixa de seleção, conforme mostrado na captura de tela
-![set- options](assets/set-options-newsletter.png)
+Crie um formulário adaptável e associe o formulário à biblioteca do cliente **listfolderassets**. Adicione um componente de caixa de seleção ao formulário. Use o editor de regras para preencher as opções da caixa de seleção, conforme mostrado na captura de tela
+![set-options](assets/set-options-newsletter.png)
 
 Estamos chamando a função javascript chamada **getDAMFolderAssets** e transmitindo o caminho dos ativos da pasta DAM para a lista no formulário.
 
 ## Próximas etapas
 
-[Montar ativos selecionados](./assemble-selected-newsletters.md)
+[Montar Assets Selecionado](./assemble-selected-newsletters.md)

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 O modal de extensão da interface do usuário do AEM fornece uma maneira de anexar a interface do usuário personalizada a extensões da interface do usuário do AEM.
 
-Modais são aplicativos React, baseados em [Espectro React](https://react-spectrum.adobe.com/react-spectrum/)e podem criar qualquer interface personalizada exigida pela extensão, incluindo, entre outros:
+Os modais são aplicativos do React, com base no [Espectro do React](https://react-spectrum.adobe.com/react-spectrum/), e podem criar qualquer interface personalizada exigida pela extensão, incluindo, mas não limitado a:
 
 + Caixas de diálogo de confirmação
 + [Formulários de entrada](https://react-spectrum.adobe.com/react-spectrum/#forms)
@@ -35,9 +35,9 @@ Modais são aplicativos React, baseados em [Espectro React](https://react-spectr
 
 ## Rotas modais
 
-A experiência modal é definida pelo aplicativo App Builder React de extensão definido na seção `web-src` pasta. Como em qualquer aplicativo React, a experiência completa é orquestrada usando [Reagir rotas](https://reactrouter.com/en/main/components/routes) que renderizam [Componentes do React](https://reactjs.org/docs/components-and-props.html).
+A experiência modal é definida pela extensão do aplicativo App Builder React definida na pasta `web-src`. Como em qualquer aplicativo React, a experiência completa é orquestrada usando [rotas React](https://reactrouter.com/en/main/components/routes) que renderizam [componentes React](https://reactjs.org/docs/components-and-props.html).
 
-Pelo menos uma rota é necessária para gerar a exibição modal inicial. Essa rota inicial é invocada na variável [registro de extensão](#extension-registration)do `onClick(..)` conforme mostrado abaixo.
+Pelo menos uma rota é necessária para gerar a exibição modal inicial. Esta rota inicial é invocada na função `onClick(..)` do [registro de extensão](#extension-registration), conforme mostrado abaixo.
 
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
@@ -81,12 +81,12 @@ function App(props) {
 
 ## Registro de extensão
 
-Para abrir uma modal, faça uma chamada para `guestConnection.host.modal.showUrl(..)` é feito a partir do `onClick(..)` função. `showUrl(..)` é transmitido a um objeto JavaScript com chave/valores:
+Para abrir uma modal, uma chamada para `guestConnection.host.modal.showUrl(..)` é feita a partir da função `onClick(..)` da extensão. `showUrl(..)` recebeu um objeto JavaScript com chave/valores:
 
 + `title` fornece o nome do título do modal exibido ao usuário
-+ `url` é o URL que chama a variável [Reagir via](#modal-routes) responsável pela visualização inicial do modal.
++ `url` é a URL que invoca a [Rota de reação](#modal-routes) responsável pela exibição inicial do modal.
 
-É imperativo que o `url` passado para `guestConnection.host.modal.showUrl(..)` resolve rotear na extensão; caso contrário, nada é exibido no modal.
+É imperativo que o `url` passado para `guestConnection.host.modal.showUrl(..)` resolva rotear na extensão, caso contrário nada será exibido no modal.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -109,7 +109,7 @@ function ExtensionRegistration() {
 
 ## Componente modal
 
-Cada rota da extensão, [essa não é a `index` rota](./extension-registration.md#app-routes), mapeia para um componente React que pode ser renderizado no modal da extensão.
+Cada rota da extensão, [que não seja a `index` rota](./extension-registration.md#app-routes), é mapeada para um componente React que pode ser renderizado no modal da extensão.
 
 Um modal pode ser composto de qualquer número de rotas React, de um modal simples de uma rota para um modal complexo de várias rotas.
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Fechar o modal
 
-![Botão de fechamento modal da extensão da interface do AEM](./assets/modal/close.png){align="center"}
+![Botão de fechamento modal da extensão da interface do usuário do AEM](./assets/modal/close.png){align="center"}
 
 Os modais devem fornecer seu próprio controle de fechamento. Isso é feito chamando `guestConnection.host.modal.close()`.
 

@@ -19,14 +19,14 @@ ht-degree: 17%
 
 + [Visão geral](overview.md)
 
-+ Configuração{#configuring}
++ Configurando{#configuring}
    + [Pastas de linha de base](configuring/baseline-folders.md)
    + [Permissões da linha de base](configuring/baseline-permissions.md)
    + [Marcação com tags](configuring/tagging.md)
    + [Esquemas de metadados](configuring/metadata-schemas.md)
    + [Perfis de metadados](configuring/metadata-profiles.md)
    + [Esquemas da pasta de metadados](configuring/metadata-folder-schemas.md)
-   + [Painel de pesquisa do administrador de ativos](configuring/assets-admin-search-rail.md)
+   + [Painel de pesquisa do administrador do Assets](configuring/assets-admin-search-rail.md)
    + [Processamento de perfis](configuring/processing-profiles.md)
    + [Workflows de início automático](configuring/auto-start-workflows.md)
 
@@ -38,7 +38,7 @@ ht-degree: 17%
    + [Representações](./authoring/renditions.md)
    + [Relacionar e não relacionar](./authoring/relate-unrelate.md)
 
-+ Colaboração{#collaboration}
++ Collaboration{#collaboration}
    + [Observar](./collaboration/watch.md)
    + [Linha do tempo e caixa de entrada](./collaboration/timeline-and-inbox.md)
    + [Comentários e anotações](./collaboration/comments-and-annotations.md)
@@ -46,7 +46,7 @@ ht-degree: 17%
    + [Versões](./collaboration/versions.md)
    + [Tarefa de análise](./collaboration/review-task.md)
 
-+ Pesquisa e descoberta{#search-and-discovery}
++ Pesquisa e Descoberta{#search-and-discovery}
    + [Pesquisar](./search-and-discovery/search.md)
    + [Pesquisa contextual](./search-and-discovery/contextual-search.md)
    + [integração de Adobe Firefly](./search-and-discovery/adobe-firefly.md)
@@ -55,9 +55,9 @@ ht-degree: 17%
    + [Localizar Imagens Semelhantes](./search-and-discovery/find-similar-images.md)
 
 + Recursos avançados{#advanced}
-   + [Ativos 3D](./advanced/3d-assets.md)
+   + [3D Assets](./advanced/3d-assets.md)
    + [Saída de PDF de anotações](./advanced/customizing-annotations-pdf-output.md)
-   + [Relatórios de ativos](./advanced/asset-reports.md)
+   + [Relatórios do Assets](./advanced/asset-reports.md)
    + [Tags bloqueadas](./advanced/blocked-tags.md)
    + [Extrair arquivo](./advanced/extract-archive.md)
    + [Permissões (CUGs)](./advanced/closed-user-groups.md)
@@ -74,8 +74,8 @@ ht-degree: 17%
 + Edge Delivery Services{#edge-delivery-services}
    + [plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
-+ Compartilhamento e distribuição{#sharing}
-   + [Baixar ativos](./sharing/download.md)
++ Compartilhamento e Distribuição{#sharing}
+   + [Baixar o Assets](./sharing/download.md)
    + [Exportar ativos](./sharing/export.md)
    + [Publicar ativos](./sharing/publish.md)
 
@@ -90,7 +90,7 @@ ht-degree: 17%
       + [Compartilhamento de ativos em temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Compartilhamento de ativos Commons Kits de ativos](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Fluxos de trabalho criativos{#creative-workflows}
++ Fluxos de Trabalho Criativos{#creative-workflows}
    + [integração de Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [Aplicativo de desktop AEM](./creative-workflows/aem-desktop-app.md)
@@ -135,7 +135,7 @@ ht-degree: 17%
       + [Visualizadores com o Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilização do com o AEM Sites {#dm-with-aem-sites}
+   + Usando com o AEM Sites {#dm-with-aem-sites}
       + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
@@ -145,21 +145,21 @@ ht-degree: 17%
       + [Criação de predefinições de imagem](dynamic-media/tutorials/creating-image-presets.md)
       + [Criação de perfis de imagem de corte inteligente](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
       + [Criar perfis de vídeo](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
-      + [Processando ativos](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Processamento do Assets](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [Configurar um servidor de visualização seguro](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
       + [Gerar URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Acionamento de um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalidar o cache da CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Uso dos Componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Exclusão da configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
-      + [Download de ativos no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [Download do Assets no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Integração do Workfront{#workfront}
    + Conector aprimorado{#enhanced-connector}
       + [Noções básicas do conector aprimorado](./workfront/enhanced-connector/basics.md)
       + [Pastas de projeto](./workfront/enhanced-connector/project-folders.md)
-      + Série para especialistas em AEM{#aem-experts-series}
+      + Série Especialistas em AEM{#aem-experts-series}
          + [Visão geral](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurar](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Formulários Workfront e metadados AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
@@ -167,7 +167,7 @@ ht-degree: 17%
          + [Configurações e fluxos de trabalho avançados](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Tradução {#translation}
-   + [Tradução do arquivo de origem](translation/source-file-translation-feature-video-use.md)
+   + [Tradução de arquivo do Source](translation/source-file-translation-feature-video-use.md)
    + [Pesquisa inteligente de tradução](translation/smart-translation-search-feature-video-use.md)
    + [Configurar a pesquisa inteligente de tradução](translation/smart-translation-search-technical-video-setup.md)
 

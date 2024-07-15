@@ -20,7 +20,7 @@ ht-degree: 0%
 # Alternar visibilidade do campo de senha
 
 Um caso de uso comum é permitir que os preenchimentos de formulário alternem para a visibilidade do texto inserido no campo de senha.
-Para concluir esse caso de uso, usei o ícone de olho do [Biblioteca impressionante de fontes](https://fontawesome.com/). O CSS necessário e o eye.svg estão incluídos na biblioteca do cliente criada para esta demonstração.
+Para concluir este caso de uso, usei o ícone de olho da [Biblioteca impressionante de fontes](https://fontawesome.com/). O CSS necessário e o eye.svg estão incluídos na biblioteca do cliente criada para esta demonstração.
 
 
 ## Código de exemplo
@@ -49,7 +49,7 @@ $(document).ready(function() {
 });
 ```
 
-O CSS a seguir foi usado para posicionar o **olho** ícone dentro do campo de senha
+O CSS a seguir foi usado para posicionar o ícone **olho** dentro do campo de senha
 
 ```javascript
 .svg-inline--fa {
@@ -66,10 +66,10 @@ O CSS a seguir foi usado para posicionar o **olho** ícone dentro do campo de se
 
 ## Implantar a amostra de alternância de senha
 
-* Baixe o [biblioteca do cliente](assets/simple-ui-tips.zip)
-* Baixe o [exemplo de formulário](assets/simple-ui-tricks-form.zip)
-* Importe a biblioteca do cliente usando o [IU do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Importe o formulário de amostra usando o [Forms e Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Baixe a [biblioteca do cliente](assets/simple-ui-tips.zip)
+* Baixe o [formulário de exemplo](assets/simple-ui-tricks-form.zip)
+* Importar a biblioteca do cliente usando a [interface do usuário do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Importar o formulário de exemplo usando o [Forms e o Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 

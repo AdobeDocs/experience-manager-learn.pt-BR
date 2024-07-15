@@ -32,11 +32,11 @@ Na captura de tela abaixo, estamos enviando o formulário adaptável para a pág
 
 Também é possível enviar para o endpoint externo por meio do POST. Para fazer isso, basta marcar a caixa de seleção &quot;habilitar solicitação post&quot; e fornecer o URL para o endpoint externo. Ao enviar o formulário, você recebe uma página de agradecimento e o ponto de extremidade POST é chamado simultaneamente.
 
-![Configuração de captura](assets/capture.gif)
+![Capturar configuração](assets/capture.gif)
 
 Para testar esse recurso no servidor, siga as instruções mencionadas abaixo:
 
-* Importe o [arquivo de ativos associado a este artigo no AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
-* Aponte seu navegador para a [Formulário de solicitação de folga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importar o [arquivo de ativos associado a este artigo para AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
+* Aponte seu navegador para o [Formulário de solicitação de folga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha o campo obrigatório e envie o formulário
 * Você deve receber a página de agradecimento com suas informações preenchidas na página

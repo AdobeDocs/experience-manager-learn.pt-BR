@@ -29,12 +29,12 @@ ht-degree: 53%
 
 ## Configuração
 
-A variável [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) A configuração do define o acionador que iniciará o pipeline, os parâmetros que controlam a implantação da produção e os parâmetros de teste de desempenho.
+A configuração [Pipeline de Produção CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) define o gatilho que iniciará o pipeline, os parâmetros que controlam a implantação de produção e os parâmetros de teste de desempenho.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Execução de pipeline
 
-A variável [Pipeline de produção de CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) O é usado para criar e implantar código por meio do ambiente de Preparo para o ambiente de Produção, reduzindo o tempo de implantação.
+O [Pipeline de Produção CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) é usado para compilar e implantar código através de Preparo no ambiente de Produção, diminuindo o tempo de implantação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

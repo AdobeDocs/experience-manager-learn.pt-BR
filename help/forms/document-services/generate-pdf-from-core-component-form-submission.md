@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Aqui está o texto revisado com &quot;Componentes principais&quot; em maiúsculas:
 
-Um cenário típico envolve a geração de um PDF a partir de dados enviados por meio de um formulário adaptável baseado em Componentes principais. Esses dados estão sempre no formato JSON. Para gerar um PDF usando a API Render PDF, é necessário converter os dados JSON no formato XML. A variável `toString` método de `org.json.XML` é usada para esta conversão. Para obter mais detalhes, consulte [documentação de `org.json.XML.toString` método](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Um cenário típico envolve a geração de um PDF a partir de dados enviados por meio de um formulário adaptável baseado em Componentes principais. Esses dados estão sempre no formato JSON. Para gerar um PDF usando a API Render PDF, é necessário converter os dados JSON no formato XML. O método `toString` de `org.json.XML` é usado para esta conversão. Para obter mais detalhes, consulte a [documentação do `org.json.XML.toString` método](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Baseado em formulário adaptável no esquema JSON
 
@@ -112,7 +112,7 @@ Para lidar com envios de formulários, crie um fluxo de trabalho que inclua duas
 1. A etapa inicial emprega um processo personalizado para transformar os dados JSON enviados em XML.
 1. A etapa subsequente gera um PDF ao combinar os dados XML com o modelo XDP.
 
-![json para xml](assets/json-to-xml-process-step.png)
+![json-para-xml](assets/json-to-xml-process-step.png)
 
 
 ## Implante o código de exemplo
@@ -121,8 +121,8 @@ Para testar isso no servidor local, siga estas etapas simplificadas:
 
 1. [Baixe e instale o pacote personalizado por meio do console da Web AEM OSGi](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
 1. [Importar o pacote de fluxo de trabalho](assets/workflow_to_render_pdf.zip).
-1. [Importar a amostra de formulário adaptável e modelo XDP](assets/adaptive_form_and_xdp_template.zip).
-1. [Pré-visualizar o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
+1. [Importe o formulário adaptável de exemplo e o modelo XDP](assets/adaptive_form_and_xdp_template.zip).
+1. [Visualizar o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Preencha alguns campos de formulário.
 1. Envie o formulário para iniciar o fluxo de trabalho do AEM.
 1. Localize o PDF renderizado na pasta de conteúdo do fluxo de trabalho.

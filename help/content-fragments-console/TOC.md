@@ -12,8 +12,8 @@ role: User
 team: TM
 source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 22%
+source-wordcount: '54'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 # Vídeos do console de Fragmento de conteúdo do AEM {#content-fragments-console}
 
 + [Visão geral](overview.md)
-+ Básico{#basics}
++ Noções básicas{#basics}
    + [Visão geral do console](./basics/content-fragments-console.md)
    + [Visão geral do editor](./basics/content-fragment-editor.md)
 + Pesquisa e descoberta{#search}

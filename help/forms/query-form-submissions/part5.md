@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Para que esse caso de uso funcione no servidor local, siga as etapas listadas abaixo. Presume-se que a instância do AEM esteja em execução no host local, porta 4502.
 
-* [Instalar o pacote](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) usando o gerenciador de pacotes.
+* [Instale o pacote](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) usando o gerenciador de pacotes.
 
 * Forneça as credenciais do portal do Azure usando o OSGi configMgr
-  ![azure-portal](assets/azure-portal-config.png)
+  ![portal do azure](assets/azure-portal-config.png)
 Certifique-se de que o URI de armazenamento termine em uma barra e o token SAS comece com um ?
 * Navegue até [AzureDemo](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
 
 * Edite as configurações de autenticação das 3 fontes de dados a seguir para corresponder ao seu ambiente
-  ![fontes de dados](assets/fdm-data-sources.png)
+  ![fontes-de-dados](assets/fdm-data-sources.png)
 
 * Visualizar e enviar [Formulário ContactUs](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled)
 

@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Funções personalizadas
 
-O AEM Forms 6.5 introduziu a capacidade de definir funções JavaScript que podem ser usadas na definição de regras de negócios complexas usando o editor de regras.
+O AEM Forms 6.5 apresentou a capacidade de definir funções do JavaScript que podem ser usadas na definição de regras de negócios complexas usando o editor de regras.
 O AEM Forms fornece várias dessas funções personalizadas prontas para uso, mas você terá a necessidade de definir suas próprias funções personalizadas e usá-las em vários formulários.
 
 Para definir sua primeira função personalizada, siga as seguintes etapas:
-* [Faça logon no crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
+* [Fazer logon no crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
 * Crie uma nova pasta em aplicativos chamada experience-league (esse nome de pasta pode ser o nome de sua escolha)
 * Salve as alterações.
 * Na pasta experience-league, crie um novo nó do tipo cq:ClientLibraryFolder chamado clientlibs.
 * Selecione a pasta recém-criada clientlibs e adicione as propriedades allowProxy e categories como mostrado na captura de tela e salve as alterações.
 
 ![client-lib](assets/custom-functions.png)
-* Crie uma pasta chamada **js** no **clientlibs** pasta
-* Crie um arquivo chamado **functions.js** no **js** pasta
-* Crie um arquivo chamado **js.txt** no **clientlibs** pasta. Salve as alterações.
+* Crie uma pasta chamada **js** na pasta **clientlibs**
+* Crie um arquivo chamado **functions.js** na pasta **js**
+* Crie um arquivo chamado **js.txt** na pasta **clientlibs**. Salve as alterações.
 * A estrutura de pastas deve parecer com a captura de tela abaixo.
 
 ![Editor de regras](assets/folder-structure.png)
@@ -72,10 +72,10 @@ function convertUTC(strUTCString)
 }
 ```
 
-Por favor [consulte jsdoc](https://jsdoc.app/index.html)para obter mais detalhes sobre como anotar funções javascript.
+[Consulte jsdoc](https://jsdoc.app/index.html)para obter mais detalhes sobre como anotar funções javascript.
 O código acima tem duas funções:
-**getCountyNamesList** - retorna uma matriz de sequência
-**convertUTC** - Converte o carimbo de data e hora UTC no fuso horário local
+**getCountyNamesList** - retorna uma matriz de cadeia de caracteres
+**convertUTC** - Converte o carimbo de data e hora UTC para a data e a hora locais
 
 Abra o js.txt, cole o código a seguir e salve as alterações.
 
@@ -85,9 +85,9 @@ functions.js
 ```
 
 A linha #base=js especifica em qual diretório os arquivos JavaScript estão localizados.
-As linhas abaixo indicam a localização do arquivo JavaScript em relação à localização base.
+As linhas abaixo indicam o local do arquivo JavaScript relativo ao local base.
 
-Se tiver problemas para criar as funções personalizadas, fique à vontade para [baixar e instalar este pacote](assets/custom-functions.zip) no seu caso de AEM.
+Se tiver problemas para criar as funções personalizadas, sinta-se à vontade para [baixar e instalar este pacote](assets/custom-functions.zip) na sua instância do AEM.
 
 ## Uso das funções personalizadas
 

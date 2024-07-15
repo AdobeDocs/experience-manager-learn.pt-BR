@@ -1,5 +1,5 @@
 ---
-title: Criar e configurar a Fonte Odata
+title: Criar e configurar o Odata Source
 description: Criar e definir a configuração do serviço em nuvem para se conectar com o Microsoft Dynamics.
 type: Documentation
 role: Developer

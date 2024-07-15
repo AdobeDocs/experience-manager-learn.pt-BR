@@ -30,4 +30,4 @@ Configuração da conexão de dados com uma fonte de dados JDBC
 
 * [Baixar o pacote MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
 
-   * Baixe, descompacte e instale o arquivo JAR através da [Console da Web AEM](http://localhost:4502/system/console/bundles)
+   * Baixe, descompacte e instale o arquivo JAR através do [Console da Web do AEM](http://localhost:4502/system/console/bundles)

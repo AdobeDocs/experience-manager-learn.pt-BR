@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como ajustar parâmetros de memória do Workbench
 
-*Este vídeo aborda o processo de ajuste dos parâmetros de memória do Workbench.*
+*Este vídeo mostra o processo de ajuste dos parâmetros de memória do Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335509?quality=12&learn=on)

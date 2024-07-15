@@ -80,13 +80,13 @@ Um modelo de metadados geralmente é projetado para atender aos seguintes casos 
 * Referência cruzada: Metadados associativos que capturam a relação de dois ou mais ativos entre si (a síntese de metadados permite a referência cruzada e a organização coerente do grupo)
 * Navegar: a estrutura de pastas na qual os ativos são armazenados (usada para recuperar informações ao navegar)
 
-*Os metadados do autor suportam principalmente processos operacionais. A publicação aceita casos de uso de recuperação e distribuição.*
+*Os metadados do autor oferecem suporte principalmente a processos operacionais. O Publish oferece suporte a casos de uso de recuperação e distribuição.*
 
 ## Uso de tags como termos predefinidos
 
 Uma tag é uma palavra-chave ou termo atribuído a uma informação.vPor exemplo, em vez de inserir &quot;carro&quot;, &quot;veículo&quot;, &quot;automóvel&quot;, um sistema de tags permite escolher apenas um valor, tornando a pesquisa mais previsível.  As tags normalizam e simplificam a categorização de ativos.
 
-*Observação: embora o AEM permita a marcação ad-hoc, é prática recomendada deixar isso para trás, pois isso pode levar a uma taxonomia indefinida e difícil de controlar.*
+*Observação: embora o AEM permita a marcação ad-hoc, é prática recomendada manter essa prática, pois isso pode levar a uma taxonomia indefinida e difícil de controlar.*
 
 Usos comuns de tags:
 
@@ -111,19 +111,31 @@ Quando usadas no AEM, as tags podem ajudar a obter uma implementação muito mai
 Uma taxonomia é um sistema de organização de tags com base em características compartilhadas, que geralmente são hierarquizadas de acordo com a necessidade organizacional. A estrutura pode ajudar a encontrar uma tag mais rapidamente ou impor uma generalização.
 Exemplo: é necessário classificar as imagens de stock de carros.  A taxonomia pode ser semelhante a:
 
-/subject/car/ /subject/car/sportscar /subject/car/sportscar/porsche /subject/car/sportscar/ferrari ... /subject/car/minivan /subject/car/minivan/mercedes /subject/car/minivan/volkswagen ... /subject/car/limousine ...
+/subject/car/
+/subject/car/sportscar
+/subject/car/sportscar/porsche
+/subject/car/sportscar/ferrari
+..
+/subject/car/minivan
+/subject/car/minivan/mercedes
+/subject/car/minivan/volkswagen
+..
+/subject/car/limousine
+..
 
 Agora um usuário pode escolher se ele quer olhar para imagens de carros esportivos em geral ou um &quot;Porsche&quot; em particular. Afinal, ambos são carros esportivos.
 Prática recomendada: evitar taxonomias simples. As taxonomias planas não apresentam os benefícios descritos acima e exigem manutenção constante
 
-**Usando uma Taxonomia como Tesauro.**  Quando um usuário pesquisa uma palavra-chave, o sistema cria uma segunda pesquisa para todos os sinônimos encontrados lá.
+**Usando uma Taxonomia como Tesauro.** Quando um usuário procura uma palavra-chave, o sistema cria uma segunda pesquisa para todos os sinônimos encontrados lá.
 Além disso, em vez de digitar &quot;car&quot; manualmente, o sistema pode fornecer uma lista de palavras-chave para melhorar a consistência.
 
-**Usando uma taxonomia como dicionário.** Em vez de apenas imprimir o &quot;carro&quot;, é possível expandir a tag única e usar todos os sinônimos da tag.
+**Usando uma Taxonomia como Dicionário.** Em vez de apenas imprimir &quot;carro&quot;, você pode expandir a tag única e usar todos os sinônimos da tag.
 
-**Várias Categorias.** Ao contrário de uma hierarquia de pastas, as tags podem ser usadas para expressar várias categorizações ao mesmo tempo. Um ativo marcado com:
+**Várias Categorias.** Ao contrário de uma hierarquia de pastas, as marcas podem ser usadas para expressar várias categorizações ao mesmo tempo. Um ativo marcado com:
 
-/subject/car/minivan/mercedes /subject/people/family /color/red
+/subject/car/minivan/mercedes
+/subject/people/family
+/color/red
 
 ## Metadados vs tag
 
@@ -145,13 +157,13 @@ Certifique-se de que os colaboradores de conteúdo saibam como podem propor alte
 
 ## Práticas recomendadas com tags e taxonomias
 
-**Padronizar tags.** Crie um glossário que forneça um vocabulário autorizado. Sem o estabelecimento de normas, a duplicação causará problemas. Além disso, é recomendável auditar não apenas a taxonomia, mas também o uso das tags.
+**Padronizar Marcas.** Crie um glossário que forneça um vocabulário autorizado. Sem o estabelecimento de normas, a duplicação causará problemas. Além disso, é recomendável auditar não apenas a taxonomia, mas também o uso das tags.
 
-**Não exagere.** As tags podem perder importância se forem distribuídas com muita frequência.Remova as tags irrelevantes para obter eficiência ideal.
+**Não Use a Marca em Excesso.** marcas podem perder sua importância se forem distribuídas com muita frequência.Remova as tags irrelevantes para obter eficiência ideal.
 
-**Reavalie As Tags Ao Longo Do Tempo.** Lembre-se de que a terminologia e o contexto de negócios raramente permanecem estáticos. Talvez você precise padronizar e reaplicar tags.
+**Reavalie As Marcas Ao Longo Do Tempo.** Lembre-se de que a terminologia e o contexto de negócios raramente permanecem estáticos. Talvez você precise padronizar e reaplicar tags.
 
-**Uso da marcação inteligente habilitada por IA.** Marcação inteligente [consulte o link] O é um recurso de IA no AEM que reduz o esforço de marcar ativos manualmente. A marcação inteligente usa uma IA para inferir informações sobre o assunto de uma imagem. Ele gera tags descritivas que descrevem o conteúdo de uma imagem.
+**Usando marcação inteligente habilitada por IA.** A marcação inteligente [ver link] é um recurso de IA no AEM para reduzir o esforço de marcar ativos manualmente. A marcação inteligente usa uma IA para inferir informações sobre o assunto de uma imagem. Ele gera tags descritivas que descrevem o conteúdo de uma imagem.
 
 ## Qualidade e manutenção dos metadados
 
@@ -159,7 +171,7 @@ Entender os requisitos de negócios é uma etapa importante na execução de um 
 
 Além disso, os metadados devem ser capturados o mais cedo possível no processo de criação de conteúdo. Se os metadados não forem &#39;aplicados na hora certa, há pouca chance de aplicá-los retroativamente.
 
-**Utilizar metadados** para aprimorar a colaboração: utilize o Adobe Asset Link, o Adobe Bridge e o AEM Desktop para unir o processo criativo e utilize metadados para simplificar fluxos de trabalho criativos. O uso dessas ferramentas enriquecerá os metadados e a experiência do usuário em todo o processo criativo.
+**Utilizar metadados** para aprimorar a colaboração: Utilize o Adobe Asset Link, o Adobe Bridge e o AEM Desktop para unir o processo criativo e utilizar metadados para simplificar fluxos de trabalho criativos. O uso dessas ferramentas enriquecerá os metadados e a experiência do usuário em todo o processo criativo.
 
 ## Práticas recomendadas para gerenciamento de metadados
 
@@ -174,17 +186,17 @@ Além disso, os metadados devem ser capturados o mais cedo possível no processo
 
 Algumas diretrizes podem ajudar você a decidir como categorizar metadados:
 
-**Descrição** - Se os dados descreverem o ativo ou parte do conteúdo, ele deverá fazer parte dos metadados anexados.
+**Descrição** - Se os dados descreverem o ativo ou parte do conteúdo, eles deverão fazer parte dos metadados anexados.
 
-**Pesquisar** - Se os metadados forem utilizados na pesquisa, devem ser anexados.
+**Pesquisa** - Se os metadados forem usados na pesquisa, eles deverão ser anexados.
 
-**Exposição** - Se estiver expondo os metadados em uma plataforma de distribuição a terceiros, tenha cuidado para não expor também metadados &quot;internos&quot;.
+**Exposição** - Se você estiver expondo os metadados em uma plataforma de distribuição a terceiros, tenha cuidado para não expor também metadados &quot;internos&quot;.
 
-**Duração** - Quanto mais tempo os metadados tiverem de viver, mais provável será que sejam um bom candidato para os metadados anexados.
+**Duração** - Quanto mais tempo os metadados devem permanecer, mais provável será que sejam um bom candidato para metadados anexados.
 
-**Processos de negócios relacionados** - Definitivamente, é útil ter uma ID de produto permanente como parte dos metadados. Mas a categoria de um item em relação ao catálogo de produtos é um metadado questionável para o ativo.
+**Processos Comerciais Relacionados** - Definitivamente, é útil ter uma ID de produto permanente como parte dos metadados. Mas a categoria de um item em relação ao catálogo de produtos é um metadado questionável para o ativo.
 
-**Organização e processamento** - Se a natureza dos metadados for de natureza organizacional, como estado em um fluxo de trabalho de aprovação ou propriedade de um determinado departamento, os metadados externos devem ser considerados ao anexar os metadados ao ativo.
+**Organização e processamento** - Se a natureza dos metadados for de natureza organizacional, como estado em um fluxo de trabalho de aprovação ou propriedade de um determinado departamento, os metadados externos devem ser considerados para anexar os metadados ao ativo.
 
 *Para criar a estratégia, faça as seguintes perguntas:*
 

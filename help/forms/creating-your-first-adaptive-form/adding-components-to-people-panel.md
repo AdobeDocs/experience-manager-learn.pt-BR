@@ -21,11 +21,11 @@ ht-degree: 2%
 
 Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma regra é criada para exibir o fragmento de detalhes do cônjuge se o estado civil dos candidatos for casado.
 
-**Configurar o painel Gente no AEM Forms 6.3 e 6.4**
+**Configurar o Painel de Pessoas no AEM Forms 6.3 e 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
 
-**Configurar o painel Gente no AEM Forms 6.5 e posterior**
+**Configurar o Painel de Pessoas no AEM Forms 6.5 e posterior**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 

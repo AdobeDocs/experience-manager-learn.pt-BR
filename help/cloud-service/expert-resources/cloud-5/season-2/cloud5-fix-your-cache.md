@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Cloud 5 - Corrigir... Cache
 
-Em uma segunda temporada de duas partes, exploramos algumas coisas que você pode ver que vão acelerar seu armazenamento em cache no AEM as a Cloud Service.
+Em uma segunda temporada de duas partes, exploramos algumas coisas que você pode ver que irão acelerar seu armazenamento em cache no AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 

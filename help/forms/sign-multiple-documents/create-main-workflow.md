@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # Criar fluxo de trabalho principal
 
-O workflow principal é acionado quando o usuário envia o formulário inicial (**FormulárioDeRefinanciamento**). Este é o fluxo do fluxo de trabalho
+O fluxo de trabalho principal é acionado quando o usuário envia o formulário inicial (**RefinanceForm**). Este é o fluxo do fluxo de trabalho
 
-![main-workflow](assets/main-workflow.PNG)
+![fluxo de trabalho principal](assets/main-workflow.PNG)
 
-**Armazenar o Forms para assinar** é uma etapa de processo personalizada.
+**Armazenar Forms para Assinar** é uma etapa de processo personalizada.
 
-A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho de AEM. O código a seguir implementa uma etapa de processo personalizada. O código extrai os nomes dos formulários para assinar e transmite os dados do formulário enviado para o `insertData` no serviço SignMultipleForms. A variável `insertData` e insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
+A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho de AEM. O código a seguir implementa uma etapa de processo personalizada. O código extrai os nomes dos formulários a serem assinados e passa os dados de formulário enviados para o método `insertData` no serviço SignMultipleForms. O método `insertData` insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
 
-O código nesta etapa de processo personalizada faz referência ao `SignMultipleForms` serviço.
+O código nesta etapa de processo personalizada faz referência ao serviço `SignMultipleForms`.
 
 
 
@@ -118,7 +118,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Ativos
 
-O workflow Assinar vários Forms usado neste artigo pode ser [baixado aqui](assets/sign-multiple-forms-workflows.zip)
+O fluxo de trabalho Assinar Vários Forms usado neste artigo pode ser [baixado daqui](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Configure o Day CQ Mail Service para enviar uma notificação por email. O template de email também é fornecido no pacote acima.

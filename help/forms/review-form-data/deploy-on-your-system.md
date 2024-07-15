@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Implantar ativos no sistema
 
-Implante o [summary-component](assets/summarize-component.zip).
+Implante o [componente-resumo](assets/summarize-component.zip).
 
-[Implante o exemplo de formulário adaptável](assets/sample-adaptive-form.zip).
+[Implante o formulário adaptável de exemplo](assets/sample-adaptive-form.zip).
 
-[Pré-visualizar o formulário de amostra](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
+[Visualizar o formulário de exemplo](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
-Preencha os campos de formulário e navegue até a tela de resumo clicando no **próximo** para ver os dados do formulário. Também é possível editar os dados do formulário clicando no ícone de lápis.
+Preencha os campos do formulário e navegue até a tela de resumo clicando no botão **avançar** para ver revisar os dados do formulário. Também é possível editar os dados do formulário clicando no ícone de lápis.

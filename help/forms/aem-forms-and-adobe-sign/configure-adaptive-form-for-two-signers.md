@@ -24,7 +24,7 @@ O vídeo explica as várias etapas necessárias para configurar um formulário a
 
 >[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
-Os ativos relacionados a este vídeo podem ser baixados nos links a seguir
+As Assets relacionadas a este vídeo podem ser baixadas nos links a seguir
 
 * [Modelo de formulário adaptável](assets/tenancy-agreement-template.zip)
 * [Formulário de Contrato de Locação](assets/rental-agreement-form.zip)

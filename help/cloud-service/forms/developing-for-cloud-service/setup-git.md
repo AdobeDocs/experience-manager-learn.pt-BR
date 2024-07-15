@@ -20,8 +20,10 @@ ht-degree: 0%
 # Instalar o Git
 
 
-[Instalar o Git](https://git-scm.com/downloads). Você pode selecionar as configurações padrão e concluir o processo de instalação.
-Vá para o prompt de comando Navegue até c:\cloudmanager\aem-banking-app type no git —version. Você deve ver a versão do GIT instalada em seu sistema
+[Instalar Git](https://git-scm.com/downloads). Você pode selecionar as configurações padrão e concluir o processo de instalação.
+Ir para o prompt de comando
+Navegue até c:\cloudmanager\aem-banking-app
+digite git — version. Você deve ver a versão do GIT instalada em seu sistema
 
 ## Inicializar repositório Git local
 
@@ -50,9 +52,9 @@ Isso confirma os arquivos no repositório Git
 ## Registrar o repositório do Cloud Manager com nosso repositório Git local
 
 Acesse seu repositório do Cloud Manager
-![acessar as informações do representante](assets/cloud-manager-repo.png)
+![acesse as informações do representante](assets/cloud-manager-repo.png)
 Obter as credenciais do repositório do Cloud Manager
-![get-credentials](assets/cloud-manager-repo1.png)
+![obter-credenciais](assets/cloud-manager-repo1.png)
 
 Salvar o nome de usuário no arquivo de configuração
 
@@ -68,7 +70,7 @@ git config --global user.password "XXXX"
 
 (A senha é sua senha do repositório Git do cloud manager)
 
-Registre o repositório Git do cloud manager com seu repositório Git local. O comando abaixo associa **bankingapp** com o repositório git remoto do cloud manager. Você poderia ter usado qualquer nome em vez de **bankingapp**
+Registre o repositório Git do cloud manager com seu repositório Git local. O comando abaixo associa **bankingapp** ao repositório Git do gerenciador de nuvem remoto. Você poderia ter usado qualquer nome em vez de **bankingapp**
 
 
 ```shell

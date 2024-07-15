@@ -23,35 +23,35 @@ O AEM e o Target são soluções eficientes com recursos aparentemente sobrepost
 
 Neste tutorial, abordamos três cenários diferentes para AEM e Target, que ajudam você a entender o que funciona melhor para sua organização e como equipes diferentes colaboram.
 
-* Cenário 1: personalização usando fragmentos de experiência de AEM
-* Cenário 2: personalização usando o Visual Experience Composer
-* Cenário 3: personalização de experiências completas de página da Web
+* Cenário 1: Personalization usando fragmentos de experiência de AEM
+* Cenário 2: Personalization usando o Visual Experience Composer
+* Cenário 3: Personalization de experiências completas de página da Web
 
-## Personalização usando fragmentos de experiência do AEM {#personalization-using-aem-experience-fragment}
+## Personalization usando fragmentos de experiência do AEM {#personalization-using-aem-experience-fragment}
 
-Neste cenário, usaremos AEM e Target. Claramente, ambos os produtos têm seus próprios pontos fortes e, quando se trata de fornecer experiências personalizadas aos usuários do seu site, você precisa **conteúdo personalizado (conteúdo do AEM)** e uma **forma inteligente (Target)** para distribuir esse conteúdo com base em um usuário específico.
+Neste cenário, usaremos AEM e Target. Claramente, ambos os produtos têm seus próprios pontos fortes e, quando se trata de fornecer experiências personalizadas aos usuários do seu site, você precisa de **conteúdo personalizado (conteúdo do AEM)** e de uma **maneira inteligente (Target)** para fornecer esse conteúdo com base em um usuário específico.
 
 O AEM ajuda você a criar conteúdo personalizado, reunindo todo o seu conteúdo e ativos em um local central para alimentar sua estratégia de personalização. O AEM permite que você crie conteúdo facilmente para desktops, tablets e dispositivos móveis em um único local sem escrever código. Não há necessidade de criar páginas para cada dispositivo. O AEM ajusta automaticamente cada experiência usando seu conteúdo. Você também pode exportar o conteúdo do AEM para o Adobe Target como ofertas pressionando um botão.
 
 Agora temos conteúdo personalizado na forma de ofertas de AEM no Target. O Target permite entregar essas ofertas em escala com base em uma combinação de abordagens de aprendizagem de máquina baseadas em regras e AI que incorporam variáveis comportamentais, contextuais e offline.  Com o Target, você pode configurar e executar facilmente atividades A/B e multivariadas (MVT) para determinar as melhores ofertas, experiências e conteúdo.
 
-**Fragmentos de experiência** representam um enorme passo à frente para vincular os criadores de conteúdo/experiência aos profissionais de personalização que impulsionam os resultados de negócios usando o Target.
+**Os fragmentos de experiência** representam um enorme passo à frente para vincular os criadores de conteúdo/experiência aos profissionais de personalização que impulsionam os resultados de negócios usando o Target.
 
 * Autores do editor de conteúdo AEM personalizaram o conteúdo como Fragmentos de experiência e suas variações
 * O AEM exporta o HTML de fragmento de experiência para o Target&#x200B;
 * Target&#x200B; usa a marcação de fragmento de experiência AEM como ofertas nas atividades
 * O Target fornece o HTML do fragmento de experiência, o AEM fornece imagens referenciadas
 
-  ![Personalização usando o diagrama de Fragmentos de experiência](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![Personalization usando o diagrama de Fragmentos de Experiência](assets/personalization-use-case-1/use-case-1-diagram.png)
 
-**Para implementar esse cenário, é necessário:**
+**Para implementar este cenário, você precisa:**
 
 * [Integrar AEM e Adobe Target usando tags e Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM e Adobe Target usando Cloud Service herdados](./implementation.md#integrating-aem-target-options)
 
-***Depois de implementar as integrações acima, vamos explorar as [cenário em detalhes](./personalization-use-case-1.md).***
+***Depois de implementar as integrações acima, vamos explorar o [cenário em detalhes](./personalization-use-case-1.md).***
 
-## Personalização usando o Visual Experience Composer
+## Personalization usando o Visual Experience Composer
 
 Os profissionais de marketing podem fazer alterações rápidas em seu site sem alterar nenhum código para executar um teste usando o Adobe Target Visual Experience Composer (VEC). O VEC é uma interface WYSIWYG (o que você vê é o que você obtém) que permite criar e testar facilmente experiências e ofertas personalizadas no contexto do site. Você pode criar experiências e ofertas para atividades do Target arrastando e soltando, trocando e modificando o layout e o conteúdo de uma página da Web (ou oferta) ou página da Web móvel.
 
@@ -63,15 +63,15 @@ O VEC é um dos principais recursos do Adobe Target. O VEC permite aos profissio
 * O novo conteúdo de rede é criado usando o Adobe Target VEC
 * Aplicável a sites hospedados pelo AEM e sites não hospedados pelo AEM
 
-  ![Personalização usando o diagrama do Visual Experience Composer](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![Personalization usando o diagrama do Visual Experience Composer](assets/personalization-use-case-3/use-case-diagram-3.png)
 
-**Para implementar esse cenário, é necessário:**
+**Para implementar este cenário, você precisa:**
 
 * [Integrar AEM e Adobe Target usando tags e Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Depois de implementar a integração acima, vamos explorar as [cenário em detalhes.](./personalization-use-case-3.md)***
+***Depois de implementar a integração acima, vamos explorar o [cenário em detalhes.](./personalization-use-case-3.md)***
 
-## Personalização de experiências completas de página da Web
+## Personalization de experiências completas de página da Web
 
 A integração do Adobe Experience Manager com o Adobe Target ajuda a fornecer uma experiência personalizada aos usuários do site. Além disso, também ajuda você a entender melhor quais versões do conteúdo do seu site melhoram suas conversões durante um período de teste especificado. Por exemplo, um teste A/B compara duas ou mais versões do conteúdo do site para ver qual eleva melhor suas conversões, vendas ou outras métricas identificadas. Um profissional de marketing pode criar atividades no Adobe Target para entender como os usuários interagem com o conteúdo do site e como ele afeta as métricas do site.
 
@@ -83,8 +83,8 @@ A integração do Adobe Experience Manager com o Adobe Target ajuda a fornecer u
 
   ![diagrama](assets/personalization-use-case-2/use-case-2-diagram.png)
 
-**Para implementar esse cenário, é necessário:**
+**Para implementar este cenário, você precisa:**
 
 * [Integrar AEM e Adobe Target usando tags e Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Depois de implementar a integração acima, vamos explorar as [cenário em detalhes.](./personalization-use-case-2.md)***
+***Depois de implementar a integração acima, vamos explorar o [cenário em detalhes.](./personalization-use-case-2.md)***

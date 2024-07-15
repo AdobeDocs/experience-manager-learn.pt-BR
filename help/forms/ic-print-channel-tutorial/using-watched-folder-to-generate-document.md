@@ -26,7 +26,7 @@ Depois de criar e testar o documento de canal de impressão, precisamos de um me
 
 Ao configurar uma pasta monitorada no AEM, você associa um script ECMA ou código java que é executado quando um arquivo é colocado na pasta monitorada. Neste artigo, vamos nos concentrar no script ECMA que gerará documentos de canal de impressão e os salvará no sistema de arquivos.
 
-A configuração da pasta monitorada e o script ECMA fazem parte dos ativos importados na [início deste tutorial](introduction.md)
+A configuração da pasta monitorada e o script ECMA fazem parte dos ativos que você importou no [início deste tutorial](introduction.md)
 
 O arquivo de entrada solto na pasta monitorada tem a seguinte estrutura. O script ECMA lê os números de conta e gera um documento de canal de impressão para cada uma dessas contas.
 

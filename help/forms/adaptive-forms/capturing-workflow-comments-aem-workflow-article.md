@@ -26,20 +26,20 @@ Para atender a esse requisito, é fornecido um pacote OSGi de amostra que pode s
 
 A captura de tela a seguir mostra como usar a etapa do processo no [Fluxo de trabalho do AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentários e armazená-los como propriedade de metadados. O &quot;Comentários do fluxo de trabalho de captura&quot; é o nome da classe java que precisa ser usada na etapa do processo. É necessário passar o nome da propriedade de metadados que conterá os comentários. Na captura de tela abaixo, managerComments é a propriedade de metadados que armazenará os comentários.
 
-![comentáriosdo fluxo de trabalho1](assets/workflowcomments1.gif)
+![comentários do fluxo de trabalho1](assets/workflowcomments1.gif)
 
 Para testar esse recurso em seu sistema, siga as seguintes etapas:
 * [Verifique se a etapa do processo no fluxo de trabalho está configurada para usar Capture Workflow Comments](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
 
 * [Implantar o pacote Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Implantar o pacote SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este pacote contém o código de amostra para capturar os comentários e armazená-los como uma propriedade de metadados
+* [Implante o conjunto SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este pacote contém o código de amostra para capturar os comentários e armazená-los como uma propriedade de metadados
 
-* [Baixe e descompacte os ativos relacionados a este artigo no seu sistema de arquivos](assets/capturecomments.zip) Os ativos contêm um modelo de fluxo de trabalho e um formulário adaptável de amostra.
+* [Baixe e descompacte os ativos relacionados a este artigo no sistema de arquivos](assets/capturecomments.zip). Os ativos contêm um modelo de fluxo de trabalho e um formulário adaptável de amostra.
 
 * Importe os 2 arquivos zip para o AEM usando o gerenciador de pacotes
 
-* [Pré-visualize o formulário navegando até este URL](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
+* [Visualizar o formulário navegando até esta URL](http://localhost:4502/content/dam/formsanddocuments/capturecomments/jcr:content?wcmmode=disabled)
 
 * Preencha os campos do formulário e envie o formulário
 
@@ -47,7 +47,7 @@ Para testar esse recurso em seu sistema, siga as seguintes etapas:
 
 * Abra a tarefa da caixa de entrada e envie o formulário. Insira alguns comentários quando solicitado.
 
-Os comentários são armazenados na propriedade de metadados chamada `managerComments` no repositório AEM. Para verificar os comentários, faça logon no crx como administrador. As instâncias de fluxo de trabalho são armazenadas no seguinte caminho:
+Os comentários são armazenados na propriedade de metadados chamada `managerComments` no repositório do AEM. Para verificar os comentários, faça logon no crx como administrador. As instâncias de fluxo de trabalho são armazenadas no seguinte caminho:
 
 `/var/workflow/instances/server0`
 

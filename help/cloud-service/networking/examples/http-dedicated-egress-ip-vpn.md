@@ -1,6 +1,6 @@
 ---
 title: Conexões HTTP/HTTPS para endereço IP de saída dedicado e VPN
-description: Saiba como fazer solicitações HTTP/HTTPS do AEM as a Cloud Service para serviços Web externos em execução para endereços IP de saída dedicados e VPN
+description: Saiba como fazer solicitações HTTP/HTTPS do AEM as a Cloud Service para serviços da Web externos em execução para endereços IP de saída dedicados e VPN
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # Conexões HTTP/HTTPS para endereço IP de saída dedicado e VPN
 
-As conexões HTTP/HTTPS são automaticamente enviadas por proxy do AEM as a Cloud Service com endereço IP de saída dedicado ou VPN e não precisam de nenhum endereço `portForwards` regras.
+As conexões HTTP/HTTPS são automaticamente enviadas por proxy da AEM as a Cloud Service com endereço IP de saída dedicado ou VPN e não precisam de regras `portForwards` especiais.
 
 ## Suporte avançado a rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
 
-Assegure a [endereço IP de saída ou VPN dedicado](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi definida antes de seguir este tutorial.
+Verifique se o [endereço IP de saída dedicado ou a configuração de rede avançada VPN](../advanced-networking.md#advanced-networking) foi definida antes de seguir este tutorial.
 
-| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
+| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede Virtual Privada](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✘ | ✔ | ✔ |
 
 >[!CAUTION]
 >
-> Este exemplo de código é somente para [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) e [VPN](../vpn.md). Um exemplo de código semelhante, mas diferente, está disponível para [Conexões HTTP/HTTPS em portas fora do padrão para saída de porta flexível](./http-on-non-standard-ports-flexible-port-egress.md).
+> Este exemplo de código é somente para [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) e [VPN](../vpn.md). Um exemplo de código semelhante, mas diferente, está disponível para [conexões HTTP/HTTPS em portas não padrão para Saída de Porta Flexível](./http-on-non-standard-ports-flexible-port-egress.md).
 
 ## Exemplo de código
 
 Este exemplo de código Java™ é de um serviço OSGi que pode ser executado no AEM as a Cloud Service que faz uma conexão HTTP com um servidor Web externo no 8080. As conexões HTTPS (ou HTTP) são automaticamente enviadas por proxy do AEM as a Cloud Service e não exigem desenvolvimento especial.
 
 >[!NOTE]
-> Recomenda-se a [APIs HTTP do Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) são usados para fazer chamadas HTTP/HTTPS do AEM.
+> Recomenda-se que as [APIs HTTP do Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) sejam usadas para fazer chamadas HTTP/HTTPS do AEM.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

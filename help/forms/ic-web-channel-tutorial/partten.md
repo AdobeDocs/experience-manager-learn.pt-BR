@@ -49,13 +49,13 @@ ht-degree: 0%
 
 * Selecione o ícone de &quot;lápis&quot; para editar o texto padrão.
 
-* Substituir o texto padrão por &quot;**Receita Mensal Estimada da Aposentadoria&quot;**
+* Substituir o texto padrão por &quot;**Receita Mensal Estimada de Aposentadoria&quot;**
 
 ## Adicionar Fragmento de Documento do Outlook de Renda de Baixa {#add-retirement-income-outlook-document-fragment}
 
-* Clique no ícone Ativos e aplique o filtro para exibir ativos do tipo &quot;Fragmentos de documento&quot;. Arraste e solte o fragmento do documento RetiradaReceitaOutlook na área de destino do Painel esquerdo.
+* Clique no ícone do Assets e aplique o filtro para exibir ativos do tipo &quot;Fragmentos de documento&quot;. Arraste e solte o fragmento do documento RetiradaReceitaOutlook na área de destino do Painel esquerdo.
 
-* Você pode consultar [nesta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) sobre a adição do fragmento do documento às áreas de conteúdo.
+* Você pode consultar [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) ao adicionar fragmento de documento a áreas de conteúdo.
 
 ## Adição do Gráfico de Receita Mensal Estimada {#adding-estimated-monthly-income-chart}
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ![formulário64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - Configuração do gráfico de colunas de receita mensal estimada**
+**AEM Forms 6.5 - Configuração do Gráfico de Colunas de Receita Mensal Estimada**
 
 ![formulários65](assets/estimatedmonthlyincomechart65.PNG)
 

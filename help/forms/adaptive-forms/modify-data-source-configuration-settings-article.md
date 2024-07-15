@@ -1,6 +1,6 @@
 ---
-title: Modifique As Configurações Da Fonte De Dados.
-description: Modifique o nome do host e outras configurações nas Configurações da fonte de dados.
+title: Modificar Definições de Configuração do Data Source.
+description: Modifique o nome do host e outras configurações nas Configurações do Data Source.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Capacidade de modificar as Configurações da Fonte de Dados{#ability-to-modify-data-source-configuration-settings}
+# Capacidade de modificar as Configurações do Data Source{#ability-to-modify-data-source-configuration-settings}
 
 Até a versão AEM Forms 6.4, depois que uma fonte de dados era configurada, não era possível alterar schema, host, caminho base para o serviço RESTful. Isso era problemático se você quisesse testar suas fontes de dados em ambientes diferentes.
 
@@ -24,8 +24,8 @@ Com o lançamento do AEM Forms 6.5, agora é possível alterar facilmente as pro
 
 As capturas de tela abaixo mostram as configurações da fonte de dados no AEM Forms 6.4 e no Forms 6.5
 
-**Configuração da fonte de dados no AEM 6.4**
+**Configuração do Data Source no AEM 6.4**
 
-![64Configuração da fonte de dados](assets/64release.gif)
-**Configuração da fonte de dados editável no AEM 6.5 e superior**
-![65Configuração da fonte de dados](assets/modifiable_data_source.png)
+![64Configuração de DataSource](assets/64release.gif)
+**Configuração de Source de Dados Editáveis no AEM 6.5 e posterior**
+![65Configuração de DataSource](assets/modifiable_data_source.png)

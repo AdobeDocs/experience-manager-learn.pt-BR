@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Introdução
 
-Neste tutorial, você aprenderá a implementar um caso de uso simples de preenchimento prévio **componente principal** formulário baseado em com dados e anexos enviados.
+Neste tutorial, você aprenderá a implementar um caso de uso simples de preenchimento prévio do formulário baseado no **componente principal** com dados e anexos enviados.
 
 ## Pré-requisitos
 
@@ -30,7 +30,7 @@ Neste tutorial, você aprenderá a implementar um caso de uso simples de preench
 Para implementar o caso de uso acima no AEM Forms, você precisará do seguinte
 
 * Instância do AEM Forms 6.5.19 ou posterior
-* [Conta do portal do Azure](https://portal.azure.com/)
+* [Conta de portal do Azure](https://portal.azure.com/)
 
 
 ### Próximas etapas

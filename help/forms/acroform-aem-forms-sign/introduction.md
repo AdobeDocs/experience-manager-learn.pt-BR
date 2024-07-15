@@ -35,10 +35,10 @@ As organizações têm uma grande variedade de formas. Alguns desses formulário
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Baixar e importar este pacote para AEM](assets/acro-form-aem-form.zip). Este pacote contém o fluxo de trabalho de amostra e a página html para criar XSD a partir de acroform
+* [Baixe e importe este pacote para AEM](assets/acro-form-aem-form.zip). Este pacote contém o fluxo de trabalho de amostra e a página html para criar XSD a partir de acroform
 * Abra o [configMgr](http://localhost:4502/system/console/configMgr)
    * Pesquise por &#39;Apache Sling Service User Mapper Service&#39; e clique em para abrir as propriedades
-   * Clique em `+` ícone (mais) para adicionar o seguinte Service Mapping
+   * Clique no ícone `+` (mais) para adicionar o seguinte Service Mapping
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Clique em &#39;Salvar&#39;

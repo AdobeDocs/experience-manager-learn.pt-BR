@@ -29,7 +29,7 @@ Aplique seu conhecimento experimentando o que você aprendeu com este exercício
 
 Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
-+ [Pensando diferente sobre AEM as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre o AEM as a Cloud Service](./introduction.md)
 + [Integração](./onboarding.md)
 
 Além disso, verifique se você concluiu o exercício prático anterior:
@@ -48,7 +48,7 @@ Além disso, verifique se você concluiu o exercício prático anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Práticas com o Cloud Manager</div>
             <p style="margin:1rem 0">
-                Explore o acionamento de um pipeline do Cloud Manager usando o plug-in do Cloud Manager da CLI do AIO.
+                Explore o acionamento de um pipeline do Cloud Manager usando o plug-in AIO CLI Cloud Manager.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

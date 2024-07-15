@@ -32,4 +32,4 @@ Um guia de profundidade sobre como obter um token de logon para integrações de
 + Verificação de conta técnica
 + Uso simples de um token gerado
 
-Para obter uma visão mais detalhada sobre este tópico, consulte o tutorial em [autenticação baseada em token](/help/headless-tutorial/authentication/overview.md).
+Para obter uma visão mais detalhada sobre este tópico, consulte o tutorial sobre [autenticação baseada em token](/help/headless-tutorial/authentication/overview.md).

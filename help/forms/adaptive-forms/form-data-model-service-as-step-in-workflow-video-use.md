@@ -25,17 +25,17 @@ A partir do AEM Forms 6.4, agora podemos usar o Modelo de dados de formulário c
 >[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Para testar esse recurso no servidor, siga as instruções abaixo
-* [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define as propriedades dos metadados.
->No AEM Forms 6.5 e superior, esse recurso está disponível imediatamente como [descreva aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+* [Baixe e implante o conjunto setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que define as propriedades dos metadados.
+>No AEM Forms 6.5 e posterior, esse recurso está disponível imediatamente, conforme [descrito aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Configure o tomcat com o arquivo SampleRest.war conforme descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).O arquivo WAR implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure o tomcat com o arquivo SampleRest.war como descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
-* [Importar os ativos para o AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip).O pacote contém o seguinte:
+* [Importe os ativos para o AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip). O pacote contém o seguinte:
 
    * Modelo de fluxo de trabalho que usa a etapa FDM.
    * Modelo de dados de formulário usado na etapa do FDM.
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
-* Abra o [FormuláriodeInscriçãoHipoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, a variável [workflow de aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
+* Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o [fluxo de trabalho do aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
 ![ fluxo de trabalho ](assets/fdm-as-service-step-workflow.PNG).
 O fluxo de trabalho utiliza o componente Ou divisão para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, a aplicação será encaminhada para a cavery

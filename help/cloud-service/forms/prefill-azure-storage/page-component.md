@@ -24,11 +24,11 @@ Um componente de página é um componente regular responsável pela renderizaç�
 ## Criar componente de página
 
 Faça logon na sua instância do AEM Forms pronta para nuvem local. Crie a seguinte estrutura na pasta de aplicativos
-![page-component](./assets/page-component1.png)
+![componente-página](./assets/page-component1.png)
 
 1. Clique com o botão direito do mouse na pasta de páginas e crie um nó chamado storeandfetch do tipo cq:Component
 1. Salve as alterações
-1. Adicione as seguintes propriedades à `storeandfetch` nó e salvar
+1. Adicione as seguintes propriedades ao nó `storeandfetch` e salve
 
 | **Nome da Propriedade** | **Tipo de propriedade** | **Valor da propriedade** |
 |-------------------------|-------------------|----------------------------------------|
@@ -37,9 +37,9 @@ Faça logon na sua instância do AEM Forms pronta para nuvem local. Crie a segui
 | jcr:title | String | Página do modelo de formulário adaptável |
 | sling:resourceSuperType | String | `fd/af/components/page2/aftemplatedpage` |
 
-Copie o `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e cole-o sob o `storeandfetch` nó. Renomeie o `aftemplatedpage.jsp` para `storeandfetch.jsp`.
+Copie o `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e cole-o no nó `storeandfetch`. Renomeie o `aftemplatedpage.jsp` para `storeandfetch.jsp`.
 
-Abertura `storeandfetch.jsp` e adicione a seguinte linha:
+Abra `storeandfetch.jsp` e adicione a seguinte linha:
 
 ```jsp
 <cq:include script="azureportal.jsp"/>
@@ -58,7 +58,8 @@ O código final deve ser semelhante ao mostrado abaixo
 <cq:include script="azureportal.jsp"/>
 ```
 
-Crie um arquivo chamado azureportal.jsp no nó storeandfetch, copie o seguinte código no azureportal.jsp e salve as alterações
+Crie um arquivo chamado azureportal.jsp no nó storeandfetch
+copie o código a seguir no azureportal.jsp e salve as alterações
 
 ```jsp
 <%@page session="false" %>
@@ -78,7 +79,7 @@ Crie um arquivo chamado azureportal.jsp no nó storeandfetch, copie o seguinte c
 %>
 ```
 
-Neste código, obtemos o valor do parâmetro de solicitação **guid** e armazene-o em uma variável chamada BlobId. Esse BlobId é passado para a solicitação do sling usando o atributo paramMap. Para que esse código funcione, presume-se que você tenha um formulário baseado em um modelo de dados de formulário com suporte do Armazenamento do Azure e o serviço de leitura do modelo de dados de formulário esteja vinculado a um atributo de solicitação chamado BlobId, conforme mostrado na captura de tela abaixo.
+Neste código, obtemos o valor do parâmetro de solicitação **guid** e o armazenamos em uma variável chamada BlobId. Esse BlobId é passado para a solicitação do sling usando o atributo paramMap. Para que esse código funcione, presume-se que você tenha um formulário baseado em um modelo de dados de formulário com suporte do Armazenamento do Azure e o serviço de leitura do modelo de dados de formulário esteja vinculado a um atributo de solicitação chamado BlobId, conforme mostrado na captura de tela abaixo.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 

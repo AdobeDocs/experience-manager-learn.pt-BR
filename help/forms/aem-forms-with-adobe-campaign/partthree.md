@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Nesta parte, preenchemos previamente o Formulário adaptável com informações de perfil buscadas no ACS. O AEM Forms tem esse recurso avançado para preencher previamente formulários adaptáveis.
 
-Para saber mais sobre o preenchimento prévio de formulários adaptáveis, leia este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Para saber mais sobre como preencher formulários adaptáveis, leia este [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Para preencher previamente o formulário adaptável buscando dados do ACS, pressupomos que haja um perfil no ACS que tenha o mesmo email que o usuário AEM conectado. Por exemplo, se a ID de email da pessoa conectada ao AEM for csimms@adobe.com, esperamos encontrar um perfil no ACS cujo email seja csimms@adobe.com.
 
@@ -33,7 +33,7 @@ As etapas a seguir são necessárias para buscar informações de perfil do ACS 
 * Criar documento XML com as informações de perfil
 * Retornar InputStream do documento XML que é consumido pelo AEM Forms
 
-![prefillservice](assets/prefillserviceaf.gif)
+![serviço de preenchimento](assets/prefillserviceaf.gif)
 
 Associação do serviço de preenchimento prévio ao formulário adaptável
 

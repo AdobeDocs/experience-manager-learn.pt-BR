@@ -25,7 +25,7 @@ O Recorte inteligente usa o Adobe Sensei para eliminar as tarefas demoradas e di
 
 >[!NOTE]
 >
->O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre a configuração do AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## O recurso Dynamic Media Smart Crop da Adobe Experience Manager inclui
 

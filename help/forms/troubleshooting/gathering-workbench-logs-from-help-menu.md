@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Coletando logs do Workbench no menu Ajuda
 
-*Este vídeo aborda o processo de coleta de logs do Workbench no menu Ajuda.*
+*Este vídeo percorre o processo para coletar logs do Workbench do Menu de Ajuda .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)

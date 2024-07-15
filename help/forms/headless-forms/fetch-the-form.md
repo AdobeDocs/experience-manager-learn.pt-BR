@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Buscar o JSON do formulário
 
-Faça logon na instância de autor do AEM Forms e crie um novo adaptável usando o **Em branco com Componentes principais** modelo. Publique o formulário na instância de publicação.
+Faça logon na instância de autor do AEM Forms e crie um novo adaptável usando o modelo **Em branco com componentes principais**. Publish o formulário para a instância de publicação.
 
 Para incorporar o formulário, primeiro buscamos o json do formulário adaptável fazendo uma chamada get contra nosso servidor de publicação.
 
@@ -78,7 +78,7 @@ export default function Contact(){
 }
 ```
 
-O código acima usa componentes html nativos que são mapeados para os componentes usados no formulário adaptável. Por exemplo, estamos mapeando o componente de formulário adaptável de entrada de texto para o componente TextField. Os componentes nativos usados no artigo [pode ser baixado aqui](./assets/native-components.zip)
+O código acima usa componentes html nativos que são mapeados para os componentes usados no formulário adaptável. Por exemplo, estamos mapeando o componente de formulário adaptável de entrada de texto para o componente TextField. Os componentes nativos usados no artigo [podem ser baixados daqui](./assets/native-components.zip)
 
 ## Próximas etapas
 

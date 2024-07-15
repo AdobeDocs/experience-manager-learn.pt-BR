@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # Tags do AEM, pastas vinculadas ao projeto e metadados da pasta
 
-![Série para especialistas em AEM](./assets/banner.png)
+![Série de especialistas em AEM](./assets/banner.png)
 
 Saiba como direcionar o uso de tags do AEM em ativos por meio de dados do Workfront, configurar e usar pastas vinculadas a projetos e dados do Workfront AEM para esquemas de metadados de pastas de ativos do.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Parte III-A [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_
+_Parte três de uma [série especializada de quatro partes sobre o conector aprimorado do Workfront for Experience Manager](./overview.md)_
 
 ## Correções
 
-+ __Às 4:34 e 6:20__ A sintaxe das tags AEM está incorreta. Exibições de vídeo `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` ou mais genericamente `["namespace:tag/childtag"]`.
++ __@ 4:34 e 6:20__ a sintaxe das marcas AEM está incorreta. O vídeo exibe `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` ou mais geralmente `["namespace:tag/childtag"]`.

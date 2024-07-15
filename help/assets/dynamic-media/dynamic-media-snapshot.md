@@ -25,7 +25,7 @@ O Dynamic Media Snapshot é uma ferramenta de demonstração visual criada para 
 >[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Iniciar instantâneo do Dynamic Media</span>
+  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Iniciar Instantâneo do Dynamic Media</span>
 </a>
 
 ## Recursos adicionais

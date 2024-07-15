@@ -25,7 +25,8 @@ Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e RDBMS de Or
 1. Perfil de usuário AEM
 1. Serviços Web RESTful
 1. Serviços da Web com base em SOAP
-1. Serviços OData Este artigo destacará a integração de informações de perfil do usuário AEM com o Adaptive Forms.
+1. Serviços OData
+Este artigo destacará a integração de informações de perfil do usuário AEM com o Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud Manager e AEM as a Cloud Service
+# CLOUD MANAGER e AEM AS A CLOUD SERVICE
 
 Explore a finalidade do Cloud Manager e como ele funciona com o AEM as a Cloud Service.
 

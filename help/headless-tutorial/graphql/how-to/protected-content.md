@@ -30,22 +30,22 @@ Ao discutir o conteúdo de marketing, estamos nos referindo ao conteúdo persona
 Esta instrução não abrange:
 
 - Proteger os endpoints diretamente, mas em vez disso se concentra em proteger o conteúdo que eles fornecem.
-- Autenticação para publicação no AEM ou obtenção de tokens de logon. Os métodos de autenticação e a transmissão de credenciais dependem de casos de uso e implementações individuais.
+- Autenticação para AEM Publish ou obtenção de tokens de logon. Os métodos de autenticação e a transmissão de credenciais dependem de casos de uso e implementações individuais.
 
 ## Grupos de usuários
 
 Primeiro, devemos definir um [grupo de usuários](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) contendo os usuários que devem ter acesso ao conteúdo protegido.
 
-![Grupo de usuários de conteúdo protegido do AEM Headless](./assets/protected-content/user-groups.png){align="center"}
+![Grupo de usuários de conteúdo protegido por AEM Headless](./assets/protected-content/user-groups.png){align="center"}
 
 Os grupos de usuários atribuem acesso ao conteúdo AEM Headless, incluindo Fragmentos de conteúdo ou outros ativos referenciados.
 
-1. Faça logon no AEM Author as a **administrador de usuários**.
+1. Faça logon no AEM Author como **administrador de usuário**.
 1. Navegue até **Ferramentas** > **Segurança** > **Grupos**.
-1. Selecionar **Criar** no canto superior direito.
-1. No **Detalhes** especifique a **ID do grupo** e **Nome do grupo**.
-   - A ID do grupo e o Nome do grupo podem ser qualquer coisa, mas neste exemplo usa o nome **Usuários da API AEM Headless**.
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Criar** no canto superior direito.
+1. Na guia **Detalhes**, especifique a **ID do Grupo** e o **Nome do Grupo**.
+   - A ID do grupo e o Nome do grupo podem ser qualquer coisa, mas neste exemplo usam o nome **Usuários da API AEM Headless**.
+1. Selecione **Salvar e fechar**.
 1. Selecione o grupo recém-criado e escolha **Ativar** na barra de ações.
 
 Se vários níveis de acesso forem necessários, crie vários grupos de usuários que podem ser associados a diferentes conteúdos.
@@ -54,35 +54,35 @@ Se vários níveis de acesso forem necessários, crie vários grupos de usuário
 
 Para conceder acesso a solicitações de API AEM Headless do GraphQL a conteúdo protegido, você pode associar a solicitação headless a um usuário pertencente a um grupo de usuários específico. Estas são duas abordagens comuns:
 
-1. **AEM as a Cloud Service [contas técnicas](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
-   - Crie uma conta técnica no Console do desenvolvedor as a Cloud Service AEM.
+1. **contas técnicas [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials):**
+   - Crie uma conta técnica no AEM as a Cloud Service Developer Console.
    - Faça logon no AEM Author uma vez com a conta técnica.
-   - Adicionar a conta técnica ao grupo de usuários via **Ferramentas > Segurança > Grupos > Usuários da API AEM Headless > Membros**.
-   - **Ativar** tanto o usuário da conta técnica quanto o grupo de usuários no AEM Publish.
+   - Adicione a conta técnica ao grupo de usuários por meio de **Ferramentas > Segurança > Grupos > Usuários da API AEM Headless > Membros**.
+   - **Ativar** o usuário da conta técnica e o grupo de usuários no AEM Publish.
    - Este método requer que o cliente headless não exponha as Credenciais de serviço ao usuário, pois elas são credenciais de um usuário específico e não devem ser compartilhadas.
 
-   ![Gestão de grupo de contas técnicas AEM](./assets/protected-content/group-membership.png){align="center"}
+   ![Gerenciamento de grupos de contas técnicas do AEM](./assets/protected-content/group-membership.png){align="center"}
 
 2. **Usuários nomeados:**
-   - Autentique usuários nomeados e adicione-os diretamente ao grupo de usuários na publicação do AEM.
-   - Esse método exige que o cliente headless autentique as credenciais do usuário com AEM Publish, obtenha um logon AEM ou token de acesso e use esse token para solicitações subsequentes ao AEM. Os detalhes de como fazer isso não são abordados nesta instrução e dependem da implementação.
+   - Autentique usuários nomeados e adicione-os diretamente ao grupo de usuários no AEM Publish.
+   - Esse método exige que o cliente headless autentique credenciais do usuário com AEM Publish, obtenha um token de logon ou acesso do AEM AEM e use esse token para solicitações subsequentes ao. Os detalhes de como fazer isso não são abordados nesta instrução e dependem da implementação.
 
 ## Proteção dos fragmentos de conteúdo
 
 A proteção de fragmentos de conteúdo é essencial para proteger o conteúdo AEM headless e é alcançada ao associar o conteúdo a um Grupo de usuários fechado (CUG). Quando um usuário faz uma solicitação para a API AEM Headless do GraphQL, o conteúdo retornado é filtrado com base nos CUGs do usuário.
 
-![AEM Headless CUGs](./assets/protected-content/cugs.png){align="center"}
+![CUGs sem periféricos do AEM](./assets/protected-content/cugs.png){align="center"}
 
-Siga estas etapas para fazer isso até [Grupos de usuários fechados (CUGs)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/advanced/closed-user-groups).
+Siga estas etapas para fazer isso por meio de [Grupos de Usuários Fechados (CUGs)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/advanced/closed-user-groups).
 
-1. Faça logon no AEM Author as a **Usuário DAM**.
-2. Navegue até **Ativos > Arquivos** e selecione o **pasta** que contém os fragmentos de conteúdo a serem protegidos. Os CUGs são aplicados hierarquicamente e afetam subpastas, a menos que sejam substituídos por um CUG diferente.
+1. Faça logon no AEM Author como um **usuário do DAM**.
+2. Navegue até **Assets > Arquivos** e selecione a **pasta** que contém os Fragmentos de conteúdo a serem protegidos. Os CUGs são aplicados hierarquicamente e afetam subpastas, a menos que sejam substituídos por um CUG diferente.
    - Certifique-se de que os usuários pertencentes a outros canais que utilizam o conteúdo das pastas estejam incluídos nesse grupo de usuários. Como alternativa, inclua os grupos de usuários associados a esses canais na lista de CUGs. Caso contrário, o conteúdo não estará acessível a esses canais.
 3. Selecione a pasta e escolha **Propriedades** na barra de ferramentas.
-4. Selecione o **Permissões** guia.
-5. Digite o **Nome do grupo** e selecione o **Adicionar** botão para adicionar o novo CUG.
-6. **Salvar** para aplicar o CUG.
-7. **Selecionar** selecione a pasta de ativos e **Publish** para enviar a pasta com os CUGs aplicados para a publicação do AEM, onde ela será avaliada como uma permissão.
+4. Selecione a guia **Permissões**.
+5. Digite o **Nome do Grupo** e selecione o botão **Adicionar** para adicionar o novo CUG.
+6. **Salve** para aplicar o CUG.
+7. **Selecione** a pasta de ativos e selecione **Publish** para enviar a pasta com os CUGs aplicados ao AEM Publish, onde ela será avaliada como uma permissão.
 
 Execute essas mesmas etapas para todas as pastas que contenham Fragmentos de conteúdo que precisam ser protegidos, aplicando os CUGs corretos a cada pasta.
 
@@ -96,7 +96,7 @@ Dependendo da arquitetura de conteúdo, pode ser necessário aplicar CUGs a vár
 
 ## Impedir o armazenamento em cache de conteúdo protegido
 
-AEM as a Cloud Service [armazena em cache respostas HTTP por padrão](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish) para melhorar o desempenho. No entanto, isso pode causar problemas com a veiculação de conteúdo protegido. Para impedir o armazenamento em cache desse conteúdo, [remover cabeçalhos de cache para endpoints específicos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) na configuração do Apache da instância de publicação do AEM.
+O AEM as a Cloud Service [armazena em cache respostas HTTP por padrão](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish) para aprimoramento de desempenho. No entanto, isso pode causar problemas com a veiculação de conteúdo protegido. Para evitar o armazenamento em cache desse conteúdo, [remova cabeçalhos de cache para pontos de extremidade específicos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/publish#how-to-customize-cache-rules-1) na configuração do Apache da instância do AEM Publish.
 
 Adicione a seguinte regra ao arquivo de configuração do Apache do projeto do Dispatcher para remover cabeçalhos de cache de pontos de extremidade específicos:
 
@@ -120,4 +120,4 @@ Observe que isso incorrerá em uma penalidade de desempenho, pois o conteúdo n�
 
 ## Proteção de pontos de acesso AEM Headless da API do GraphQL
 
-Este guia não aborda a proteção do [Endpoints de API do GraphQL sem periféricos do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) se concentrem na proteção do conteúdo que veiculam. Todos os usuários, incluindo usuários anônimos, podem acessar os endpoints com conteúdo protegido. Somente o conteúdo acessível pelos Grupos fechados de usuários do usuário serão retornados. Se nenhum conteúdo estiver acessível, a resposta da API AEM Headless ainda terá um código de status de resposta 200 HTTP, mas os resultados estarão vazios. Normalmente, proteger o conteúdo é suficiente, pois os próprios endpoints não expõem inerentemente dados confidenciais. Se você precisar proteger os endpoints, aplique ACLs a eles na publicação do AEM via [Scripts de inicialização do repositório Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
+Este guia não aborda a proteção dos próprios [pontos de extremidade da API do GraphQL sem periféricos do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint), mas foca na proteção do conteúdo distribuído por eles. Todos os usuários, incluindo usuários anônimos, podem acessar os endpoints com conteúdo protegido. Somente o conteúdo acessível pelos Grupos fechados de usuários do usuário serão retornados. Se nenhum conteúdo estiver acessível, a resposta da API AEM Headless ainda terá um código de status de resposta 200 HTTP, mas os resultados estarão vazios. Normalmente, proteger o conteúdo é suficiente, pois os próprios endpoints não expõem inerentemente dados confidenciais. Se você precisar proteger os pontos de extremidade, aplique ACLs a eles no AEM Publish por meio de [scripts de Inicialização do Repositório de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).

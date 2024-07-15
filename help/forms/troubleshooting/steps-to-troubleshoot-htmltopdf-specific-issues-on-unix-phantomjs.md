@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas específicos de htmlPDF em uma configuração Unix (PhantomJS)
 
-*Este vídeo aborda as etapas para solucionar problemas específicos do htmlPDF em uma configuração Unix (PhantomJS).*
+*Este vídeo mostra as etapas para solucionar problemas específicos do htmlPDF em uma configuração Unix (PhantomJS).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)

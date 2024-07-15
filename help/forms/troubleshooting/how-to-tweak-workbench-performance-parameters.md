@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como ajustar parâmetros de desempenho do Workbench
 
-*Este vídeo aborda o processo de ajuste dos parâmetros de desempenho do Workbench.*
+*Este vídeo percorre o processo para ajustar os parâmetros de desempenho do Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

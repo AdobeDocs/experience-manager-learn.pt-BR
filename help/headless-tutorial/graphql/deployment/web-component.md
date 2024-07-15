@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Implantações de Componente Web AEM Headless
 
-AEM Headless [Componente da Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)As implantações do /JS são aplicativos JavaScript puros executados em um navegador da Web, que consomem e interagem com conteúdo no AEM de maneira headless. As implantações do componente da Web/JS são diferentes das [Implantações de SPA](./spa.md) na medida em que elas não usam uma estrutura robusta de SPA, e espera-se que sejam incorporadas ao contexto de qualquer site, para exibir o conteúdo do AEM.
+AEM Headless [As implantações do componente da Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS são aplicativos puros do JavaScript executados em um navegador da Web, que consomem e interagem com conteúdo no AEM de forma headless. As implantações de Componentes da Web/JS diferem das [implantações de SPA](./spa.md), pois não usam uma estrutura de SPA robusta e devem ser inseridas no contexto de qualquer site, entregar, para exibir o conteúdo do AEM.
 
 
 ## Configurações de implantação
@@ -30,7 +30,7 @@ A configuração de implantação a seguir deve estar em vigor para implantaçõ
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Compartilhamento de recursos entre origens (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [Hospedeiros AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Hosts AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exemplo de componente da Web
 
@@ -50,7 +50,7 @@ O Adobe fornece um exemplo de componente da Web.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="Componente da Web">Componente da Web</a></p>
-                   <p class="is-size-6">Um componente da Web de exemplo, escrito em JavaScript puro, que consome conteúdo de APIs AEM Headless GraphQL.</p>
+                   <p class="is-size-6">Um componente da Web de exemplo, escrito em JavaScript puro, que consome conteúdo de APIs GraphQL AEM Headless.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir exemplo</span>
                    </a>

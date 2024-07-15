@@ -29,7 +29,7 @@ A hierarquia de pastas é importante para você e sua empresa somente para fins 
 
 Outra consideração importante é o número de ativos ou pastas a serem armazenados em cada pasta. Se muitos ativos estiverem armazenados em uma pasta, o desempenho será reduzido ao visualizar ativos no Dynamic Media Classic. Não armazene milhares de ativos em uma pasta. Em vez disso, desenvolva uma hierarquia organizacional com menos de cerca de 500 ativos ou pastas em uma determinada ramificação da hierarquia. Isso não é um requisito estrito, mas ajuda a manter tempos de resposta aceitáveis ao visualizar ou pesquisar ativos. Na verdade, a recomendação é criar hierarquias largas e superficiais em vez de estreitas e profundas.
 
-A maneira mais fácil de criar pastas é fazer upload de toda a estrutura de pastas usando o FTP e habilitar a opção **Incluir subpastas**. Essa opção faz com que o Dynamic Media Classic recrie a estrutura de pastas no site FTP no Dynamic Media Classic.
+A maneira mais fácil de criar pastas é carregar toda a estrutura de pastas usando FTP e habilitar a opção **Incluir subpastas**. Essa opção faz com que o Dynamic Media Classic recrie a estrutura de pastas no site FTP no Dynamic Media Classic.
 
 Queremos que você considere sua estrutura de pastas antes de começar a fazer upload de todos os arquivos, pois é muito mais fácil organizar e gerenciar seus arquivos e pastas localmente no computador do que dentro do Dynamic Media Classic. Por exemplo, você só pode arrastar e soltar arquivos, mas não pastas inteiras, dentro do Dynamic Media Classic.
 
@@ -45,7 +45,7 @@ Para sua estratégia de pastas, considere o que faz sentido para sua organizaç�
 
 A maneira como você escolhe nomear os arquivos talvez seja a decisão mais importante a ser tomada antecipadamente em relação ao Dynamic Media Classic. Isso ocorre porque todos os ativos no Dynamic Media Classic devem ter nomes exclusivos, independentemente de onde estejam armazenados na conta.
 
-Todos os URLs e transações no Dynamic Media Classic são orientados por uma ID de ativo, que é o identificador exclusivo de um ativo no banco de dados. Ao fazer upload de um arquivo, a ID do ativo é criada pegando o nome do arquivo e removendo a extensão. Por exemplo, _896649.jpg_ obtém ativo _BI 896649_.
+Todos os URLs e transações no Dynamic Media Classic são orientados por uma ID de ativo, que é o identificador exclusivo de um ativo no banco de dados. Ao fazer upload de um arquivo, a ID do ativo é criada pegando o nome do arquivo e removendo a extensão. Por exemplo, _896649.jpg_ obtém o Ativo _ID 896649_.
 
 Regras sobre IDs de ativos:
 
@@ -61,7 +61,7 @@ A maioria dos usuários baseia sua convenção de nomenclatura em seu SKU intern
 
 Sua estratégia de nomenclatura deve ser flexível para expansão futura, para que você possa evitar a necessidade de renomear após iniciar o. Estas são algumas estratégias de nomenclatura típicas:
 
-**Nenhuma imagem alternativa.** Neste cenário, há apenas uma imagem por produto e nenhuma exibição alternativa ou colorida. Você nomearia cada imagem estritamente de acordo com seu SKU exclusivo ou número de ID do produto. Quando a página é carregada, o modelo de página chama a ID do ativo com o mesmo número SKU.
+**Nenhuma imagem alternativa.** Neste cenário, você tem apenas uma imagem por produto e nenhuma exibição alternativa ou colorida. Você nomearia cada imagem estritamente de acordo com seu SKU exclusivo ou número de ID do produto. Quando a página é carregada, o modelo de página chama a ID do ativo com o mesmo número SKU.
 
 | SKU/PID | Nome de arquivo | ID do ativo |
 | ------- | ---------- | -------- |
@@ -70,7 +70,7 @@ Sua estratégia de nomenclatura deve ser flexível para expansão futura, para q
 
 Este é um sistema muito simples, e bom se você tem necessidades modestas. No entanto, não é muito flexível. Só porque você não tem imagens alternativas hoje não significa que você não terá essas imagens amanhã. O próximo cenário oferece mais flexibilidade.
 
-**Uso da imagem, exibições alternativas, versões coloridas e amostras.** Esta estratégia permite visões alternativas e/ ou coloridas, se você as tiver. Em vez de nomear a imagem somente após o SKU, você adiciona um modificador, como &quot;_1&quot; e &quot;_2&quot; para exibições alternativas, e um código de cor de &quot;_RED&quot; ou &quot;_BLU&quot; para exibições coloridas. Se você tiver imagens coloridas e visualizações alternativas para o mesmo produto, talvez adicione &quot;_RED_1&quot; e &quot;_RED_2&quot; para a primeira e segunda visualização em cor vermelha. As amostras seriam nomeadas com o SKU, o código de cor e uma extensão &quot;_SW&quot;.
+**Usando a imagem, modos de exibição alternativos, versões coloridas e amostras.** Esta estratégia permite visões alternativas e/ ou coloridas, se você as tiver. Em vez de nomear a imagem somente após o SKU, você adiciona um modificador, como &quot;_1&quot; e &quot;_2&quot; para exibições alternativas, e um código de cor de &quot;_RED&quot; ou &quot;_BLU&quot; para exibições coloridas. Se você tiver imagens coloridas e visualizações alternativas para o mesmo produto, talvez adicione &quot;_RED_1&quot; e &quot;_RED_2&quot; para a primeira e segunda visualização em cor vermelha. As amostras seriam nomeadas com o SKU, o código de cor e uma extensão &quot;_SW&quot;.
 
 | SKU/PID | Categoria | Nome de arquivo | ID do ativo |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |

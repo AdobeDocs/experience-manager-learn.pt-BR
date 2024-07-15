@@ -28,8 +28,8 @@ Para criar esse nó no crx, siga as etapas mencionadas abaixo:
 * Salvar
 * Clique no nó ativos recém-criado e defina as propriedades conforme mostrado abaixo
 * Será necessário criar uma propriedade do tipo String chamada assettypes (você pode nomeá-la de acordo com seus requisitos). Verifique se a propriedade é um multivalor. Forneça os valores desejados e salve.
-  ![item-load-path](assets/item-load-path-crx.png)
+  ![caminho-de-carregamento-do-item](assets/item-load-path-crx.png)
 
-Para carregar esses valores na lista suspensa, forneça o seguinte caminho na propriedade de caminho de carregamento do item  **/content/assets/assettypes**
+Para carregar esses valores na lista suspensa, forneça o seguinte caminho na propriedade de caminho de carregamento de item **/content/assets/assettypes**
 
-O pacote de amostra pode ser [baixado aqui](assets/item-load-path-package.zip)
+O pacote de exemplo pode ser [baixado daqui](assets/item-load-path-package.zip)

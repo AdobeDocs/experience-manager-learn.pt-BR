@@ -21,19 +21,19 @@ ht-degree: 0%
 
 A próxima etapa é criar os formulários adaptáveis que você deseja incluir no pacote. Lembre-se de seguir os seguintes pontos ao criar formulários para assinatura:
 
-* Verifique se os formulários são baseados no **SignMultipleForms** modelo. Isso garante que os formulários sejam pré-preenchidos com os dados buscados no banco de dados.
+* Verifique se os formulários são baseados no modelo **SignMultipleForms**. Isso garante que os formulários sejam pré-preenchidos com os dados buscados no banco de dados.
 
 * Os formulários precisam ser configurados para usar o Acrobat Sign e o campo signatário1 precisa ser associado ao campo Email do cliente
-* Os formulários também precisam ser associados a clientLib chamado **getnextform**
+* Os formulários também precisam ser associados com clientLib chamado **getnextform**
 * Os formulários precisam usar o componente Etapa de assinatura.
-* O formulário também deve usar o formato personalizado **Assinar vários formulários** componente. Este componente permite navegar até o próximo formulário para entrar no pacote.
-* O envio do formulário deve ser configurado para acionar o workflow do AEM **Atualizar Status da Assinatura**
-* Verifique se o Caminho do arquivo de dados está definido como **Dados.xml**. Isso é muito importante, pois o código de amostra procura um arquivo chamado Data.xml na carga do processo para o envio do formulário.
+* O formulário também deve usar o componente personalizado **Assinar vários formulários**. Este componente permite navegar até o próximo formulário para entrar no pacote.
+* O envio do formulário deve ser configurado para acionar o fluxo de trabalho do AEM **Atualizar status da assinatura**
+* Verifique se o Caminho do Arquivo de Dados está definido como **Data.xml**. Isso é muito importante, pois o código de amostra procura um arquivo chamado Data.xml na carga do processo para o envio do formulário.
 
-Depois de criar o formulário, inclua o **campos comuns** fragmento de formulário adaptável no formulário. O fragmento está marcado como oculto. Este fragmento contém os seguintes campos.
+Depois de criar o formulário, inclua o fragmento de formulário adaptável **commonfields** no formulário. O fragmento está marcado como oculto. Este fragmento contém os seguintes campos.
 
-* **assinado** - O campo que conterá o status da assinatura
-* **guid** - Identificador exclusivo que identifica o formulário no pacote
+* **assinado** - O campo que contém o status da assinatura
+* **guid** - Identificador exclusivo para identificar o formulário no pacote
 * **customerEmail** - Este campo contém o email do cliente
 
 
@@ -47,7 +47,7 @@ Depois que todos os formulários no pacote forem preenchidos e assinados, precis
 
 ## Ativos
 
-Os formulários de amostra, incluindo o usado neste tutorial, podem ser [baixado aqui](assets/forms-for-signing.zip)
+Os formulários de exemplo, incluindo o usado neste tutorial, podem ser [baixados daqui](assets/forms-for-signing.zip)
 
 ## Próximas etapas
 

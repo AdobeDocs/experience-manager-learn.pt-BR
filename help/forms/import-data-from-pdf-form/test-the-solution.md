@@ -21,6 +21,6 @@ ht-degree: 0%
 
 * [Importe a biblioteca do cliente e o componente personalizado para fazer upload do formulário pdf pelo Gerenciador de pacotes](./assets/client-libs-custom-component.zip)
 * Baixe e implante o pacote usando o console da Web OSGi[Pacote de serviços de documento personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Baixe e implante o pacote usando o console da Web OSGi [Desenvolvimento com o pacote de usuário de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Baixe e implante o pacote usando o console da Web OSGi[importar dados do arquivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Adicionar a entrada _**DevelopingWithServiceUser.core:getresourceresolver=dados**_ no _**Serviço Mapeador de usuário do Apache Sling Service**_ Console de configuração OSGi
+* Baixe e implante o pacote usando o console da Web OSGi [Desenvolvimento com o Conjunto de Usuários de Serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Baixe e implante o pacote usando o console OSGi da Web[importe dados do arquivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
+* Adicione a entrada _**DevelopingWithServiceUser.core:getresourceresolver=data**_ no console de configuração OSGi do _**Serviço Mapeador do Usuário do Apache Sling Service**_

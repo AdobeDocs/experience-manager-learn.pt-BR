@@ -24,6 +24,7 @@ Este tutorial ajuda a criar uma página AEM com links para baixar vários ativos
 
 Você precisará do seguinte:
 
-Uma instância de trabalho do AEM com o pacote complementar de formulário instalado Componentes principais instalados
+Uma instância de trabalho do AEM com o pacote complementar de formulário instalado
+Componentes principais instalados
 
 [Ambiente de desenvolvimento configurado de acordo com este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)

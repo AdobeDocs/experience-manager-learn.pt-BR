@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # Pacote de estrutura do repositório
 
-Explorar um aplicativo AEM [Pacote de estrutura do repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=pt-BR), sua importância e como defini-la de maneira ideal.
+Explore o [Pacote de estrutura do repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=pt-BR) de um aplicativo AEM, sua importância e como defini-lo de maneira ideal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

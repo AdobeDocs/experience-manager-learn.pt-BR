@@ -24,14 +24,14 @@ ht-degree: 2%
 
 Na propriedade Tags, adicionamos dois novos elementos de dados (ApplicantsStateOfResidence e validationError).
 
-![formulário adaptável](assets/data_elements.png)
+![formulário-adaptável](assets/data_elements.png)
 
 ## EstadoDeResidênciaCandidato
 
-A variável **EstadoDeResidênciaCandidato** o elemento de dados foi configurado ao selecionar **Núcleo** na lista suspensa extensão e **Custom Code** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
-![requerente-Estado-residência](assets/applicantstateofresidence.png)
+O elemento de dados **ApplicantStateOfResidence** foi configurado ao selecionar **Core** no menu suspenso de extensões e **Custom Code** para o Tipo de Elemento de Dados, conforme mostrado na captura de tela abaixo
+![requerente-de-residência](assets/applicantstateofresidence.png)
 
-O código personalizado a seguir foi usado para capturar o valor do **_state_** campo de formulário adaptável.
+O código personalizado a seguir foi usado para capturar o valor do campo de formulário adaptável **_state_**.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -43,11 +43,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-A variável **ValidationError** o elemento de dados foi configurado ao selecionar **Núcleo** na lista suspensa extensão e **Custom Code** para o Tipo de elemento de dados, como mostrado na captura de tela abaixo
+O elemento de dados **ValidationError** foi configurado ao selecionar **Core** no menu suspenso de extensões e **Custom Code** para o Tipo de Elemento de Dados conforme mostrado na captura de tela abaixo
 
-![validation-error](assets/validation-error.png)
+![erro-validação](assets/validation-error.png)
 
-O código personalizado a seguir foi gravado para definir a `validationError` valor do elemento de dados.
+O código personalizado a seguir foi gravado para definir o valor do elemento de dados `validationError`.
 
 ```javascript
 var validationError = "";

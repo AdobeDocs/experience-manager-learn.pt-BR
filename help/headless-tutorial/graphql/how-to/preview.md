@@ -28,19 +28,19 @@ Aplicativos AEM headless oferecem suporte à pré-visualização de criação in
 Para usar a visualização do Fragmento de conteúdo, várias condições devem ser atendidas:
 
 1. O aplicativo deve ser implantado em um URL acessível aos autores
-1. O aplicativo deve ser configurado para se conectar ao serviço de Autor do AEM (em vez do serviço de Publicação do AEM)
-1. O aplicativo deve ser projetado com URLs ou rotas que possam usar [Caminho ou ID do fragmento de conteúdo](#url-expressions) para selecionar os fragmentos de conteúdo que serão exibidos para visualização na experiência do aplicativo.
+1. O aplicativo deve ser configurado para se conectar ao serviço AEM Author (em vez do serviço AEM Publish)
+1. O aplicativo deve ser projetado com URLs ou rotas que possam usar [caminho ou ID do fragmento de conteúdo](#url-expressions) para selecionar os fragmentos de conteúdo a serem exibidos para visualização na experiência do aplicativo.
 
 ## Visualizar URLs
 
-URLs de visualização, uso de [Expressões de URL](#url-expressions), são definidos nas Propriedades do modelo de fragmento de conteúdo.
+As URLs de visualização, usando [expressões de URL](#url-expressions), estão definidas nas Propriedades do modelo de fragmento de conteúdo.
 
-![URL de visualização do modelo de fragmento de conteúdo](./assets/preview/cf-model-preview-url.png)
+![URL de Visualização do Modelo de Fragmento de Conteúdo](./assets/preview/cf-model-preview-url.png)
 
 1. Fazer logon no serviço de Autor do AEM como administrador
 1. Navegue até __Ferramentas > Geral > Modelos de fragmento de conteúdo__
 1. Selecione o __Modelo de fragmento de conteúdo__ e selecione __Propriedades__ na barra de ação superior.
-1. Insira o URL de visualização do modelo de fragmento de conteúdo usando [Expressões de URL](#url-expressions)
+1. Insira a URL de visualização para o Modelo de fragmento de conteúdo usando [expressões de URL](#url-expressions)
    + O URL de visualização deve apontar para uma implantação do aplicativo que se conecta ao serviço de Autor de AEM.
 
 ### Expressões de URL
@@ -57,12 +57,12 @@ Cada modelo de fragmento de conteúdo pode ter um URL de visualização definido
 
 Exemplo de URLs de visualização:
 
-+ Um URL de pré-visualização no __Aventura__ modelo pode parecer `https://preview.app.wknd.site/adventure${contentFragment.path}` que resolve para `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ Um URL de pré-visualização no __Artigo__ modelo pode parecer `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` a resolução `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ Uma URL de visualização no modelo __Aventura__ pode ser semelhante a `https://preview.app.wknd.site/adventure${contentFragment.path}`, resolvido como `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
++ Uma URL de visualização no modelo __Article__ pode ser semelhante a `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` que resolve `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
 
 ## Visualização no aplicativo
 
-Qualquer fragmento de conteúdo que use o modelo de fragmento de conteúdo configurado tem um botão Visualizar. O botão Visualizar abre o URL de visualização do modelo de fragmento de conteúdo e injeta os valores do fragmento de conteúdo aberto na [Expressões de URL](#url-expressions).
+Qualquer fragmento de conteúdo que use o modelo de fragmento de conteúdo configurado tem um botão Visualizar. O botão Visualizar abre a URL de visualização do modelo de fragmento de conteúdo e injeta os valores do fragmento de conteúdo aberto nas [expressões de URL](#url-expressions).
 
 ![Botão Visualizar](./assets/preview/preview-button.png)
 
@@ -76,9 +76,9 @@ O código de exemplo está disponível em [Github.com](https://github.com/adobe/
 
 ## URLs e roteiros
 
-As URLs ou rotas usadas para visualizar um fragmento de conteúdo devem ser combináveis usando [Expressões de URL](#url-expressions). Nesta versão habilitada para visualização do aplicativo WKND, os Fragmentos de conteúdo de aventura são exibidos por meio da `AdventureDetail` componente vinculado à rota `/adventure<CONTENT FRAGMENT PATH>`. Portanto, o URL de visualização do modelo WKND Adventure deve ser definido como `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` para resolver para esta rota.
+As URLs ou rotas usadas para visualizar um Fragmento de Conteúdo devem ser combináveis usando [expressões de URL](#url-expressions). Nesta versão habilitada para visualização do aplicativo WKND, os Fragmentos de Conteúdo de aventura são exibidos por meio do componente `AdventureDetail` vinculado à rota `/adventure<CONTENT FRAGMENT PATH>`. Assim, a URL de Visualização do modelo WKND Adventure deve ser definida como `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` para resolver para essa rota.
 
-A visualização do Fragmento de conteúdo só funciona se o aplicativo tiver uma rota endereçável, que possa ser preenchida com [Expressões de URL](#url-expressions) que renderizam esse Fragmento de conteúdo no aplicativo de maneira visualizável.
+A visualização do Fragmento de conteúdo só funciona se o aplicativo tiver uma rota endereçável, que pode ser preenchida com [expressões de URL](#url-expressions) que renderizam esse Fragmento de conteúdo no aplicativo de forma visualizável.
 
 + `src/App.js`
 
@@ -109,7 +109,7 @@ export default App;
 
 ### Exibir o conteúdo criado
 
-A variável `AdventureDetail` O componente simplesmente analisa o caminho do Fragmento de conteúdo, inserido no URL de visualização por meio da `${contentFragment.path}` [Expressão de URL](#url-expressions), do URL da rota, e o usa para coletar e renderizar o WKND Adventure.
+O componente `AdventureDetail` simplesmente analisa o caminho do Fragmento do Conteúdo, inserido na URL de Visualização por meio da `${contentFragment.path}` [expressão de URL](#url-expressions), da URL de rota, e a usa para coletar e renderizar o WKND Adventure.
 
 + `src/components/AdventureDetail.js`
 

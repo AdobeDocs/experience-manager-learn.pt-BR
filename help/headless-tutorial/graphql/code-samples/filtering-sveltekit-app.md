@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Filtrar o aplicativo SvelteKit
 
-Explore a capacidade das APIs do GraphQL sem periféricos do AEM de listar dados usando uma [SvelteKit](https://kit.svelte.dev/) aplicativo. Este aplicativo SvelteKit cria uma lista de aventuras WKND, que podem ser selecionadas para exibir os detalhes da aventura.
+Explore a capacidade das APIs AEM Headless do GraphQL de listar dados usando um aplicativo [SvelteKit](https://kit.svelte.dev/). Este aplicativo SvelteKit cria uma lista de aventuras WKND, que podem ser selecionadas para exibir os detalhes da aventura.
 
-Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL no SvelteKit. Este aplicativo usa o `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Os detalhes da aventura são solicitados por meio do `wknd-shared/adventures-by-slug` consulta persistente.
+Este código demonstra o uso de Adobe [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL do SDK. Este aplicativo usa a consulta persistente `wknd-shared/adventures-all` para coletar todas as aventuras e obter uma lista de Tipos de atividade disponíveis. Os detalhes de aventura são solicitados por meio da consulta persistente `wknd-shared/adventures-by-slug`.
 
 Este código:
 
-+ Conecta-se a um serviço de publicação AEM e não requer autenticação
++ Conecta-se a um serviço AEM Publish e não requer autenticação
 + Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Índice de imagem de testes de AEM
 
-Os arquivos de imagem devem ser colocados na `assets` pasta que reside ao lado deste arquivo.
+Os arquivos de imagem devem ser colocados na pasta `assets` que fica ao lado desse arquivo.
 
 Cada arquivo de imagem a ser publicado deve ser vinculado a partir desse arquivo usando a sintaxe:
 

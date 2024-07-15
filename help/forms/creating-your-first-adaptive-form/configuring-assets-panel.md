@@ -1,6 +1,6 @@
 ---
-title: Adicionar componentes à seção Ativos
-description: Configurar o layout do Accordion para o painel Ativos.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
+title: Seção Adicionar componentes ao Assets
+description: Configurar o layout do Accordion para o painel Assets.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
 feature: Adaptive Forms
 version: 6.4,6.5
 jira: KT-4212
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ---
 
-# Adicionar componentes ao painel Ativos {#adding-components-to-assets-section}
+# Adicionar componentes ao painel do Assets {#adding-components-to-assets-section}
 
-Configurar o layout do Accordion para o painel Ativos.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
+Configurar o layout do Accordion para o painel Assets.O layout do Accordion fornece uma melhor experiência ao usuário final para adicionar seções repetíveis.
 
-**Painel Configurar ativos**
+**Configurar Painel do Assets**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 

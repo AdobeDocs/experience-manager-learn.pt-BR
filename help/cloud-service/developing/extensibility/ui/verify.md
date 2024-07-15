@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Verificar uma extensão
 
-As extensões da interface do usuário do AEM AEM podem ser verificadas em relação a qualquer ambiente as a Cloud Service na organização Adobe à qual a extensão pertence.
+As extensões da interface do usuário do AEM podem ser verificadas em relação a qualquer ambiente do AEM as a Cloud Service na organização Adobe à qual a extensão pertence.
 
 O teste de uma extensão é feito por meio de um URL especialmente criado que instrui o AEM a carregar a extensão somente para essa solicitação.
 
@@ -28,18 +28,18 @@ O teste de uma extensão é feito por meio de um URL especialmente criado que in
 
 >[!IMPORTANT]
 >
-> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a pré-visualização e a verificação do aplicativo da extensão do App Builder. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
+> O vídeo acima mostra o uso de uma extensão do Console de fragmentos de conteúdo para ilustrar a visualização e a verificação do aplicativo de extensão do App Builder. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
 
 ## URL da interface do AEM
 
-![URL do console de fragmentos de conteúdo do AEM](./assets/verify/content-fragment-console-url.png){align="center"}
+![URL do Console de Fragmentos de Conteúdo do AEM](./assets/verify/content-fragment-console-url.png){align="center"}
 
-Para criar um URL que monte a extensão de não produção no AEM, o URL da interface do AEM na qual a extensão é inserida deve ser obtido. Navegue até o ambiente as a Cloud Service do AEM para verificar a extensão e abra a interface do usuário na qual a extensão deve ser visualizada.
+Para criar um URL que monte a extensão de não produção no AEM, o URL da interface do AEM na qual a extensão é inserida deve ser obtido. Navegue até o ambiente do AEM as a Cloud Service para verificar a extensão e abra a interface do usuário na qual a extensão deve ser visualizada.
 
 Por exemplo, para visualizar uma extensão do console de Fragmentos de conteúdo:
 
-1. Faça login no ambiente as a Cloud Service AEM desejado.
-1. Selecione o __Fragmentos de conteúdo__ ícone.
+1. Faça logon no ambiente do AEM as a Cloud Service desejado.
+1. Selecione o ícone __Fragmentos de conteúdo__.
 1. Aguarde o Console do Fragmento de conteúdo do AEM ser carregado no navegador.
 1. Copie o URL do Console do Fragmento de conteúdo do AEM da barra de endereços do navegador. Ele deve se parecer com:
 
@@ -52,7 +52,7 @@ Esse URL é usado abaixo ao criar os URLs para desenvolvimento e verificação d
 ## Verificar builds de desenvolvimento local
 
 1. Abra uma linha de comando na raiz do projeto de extensão.
-1. Execute a extensão da interface do usuário para AEM como um aplicativo local do App Builder
+1. Execute a extensão da interface do usuário AEM como um aplicativo App Builder local
 
    ```shell
    $ aio app run
@@ -65,14 +65,14 @@ Esse URL é usado abaixo ao criar os URLs para desenvolvimento e verificação d
      -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
    ```
 
-Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
+Anote a URL do aplicativo local, mostrada acima como `-> https://localhost:9080`
 
-1. Inicialmente (e sempre que você vir um Erro de conexão) aberto `https://localhost:9080` (ou seja qual for o URL do aplicativo local) no navegador da Web e aceitar manualmente [o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
-1. Adicione os dois parâmetros de consulta a seguir à [URL da interface do AEM](#aem-ui-url)
+1. Inicialmente (e sempre que você vir um Erro de Conexão), abra o `https://localhost:9080` (ou qualquer URL de aplicativo local) no navegador da Web e aceite manualmente o [certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
+1. Adicionar os dois parâmetros de consulta a seguir à URL da [interface do AEM](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, normalmente `&ext=https://localhost:9080`.
 
-   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __primeiro__ parâmetros de consulta no URL. Rotas de hash de uso da interface extensível do AEM (`#/@wknd/aem/...`), então a pós-fixação incorreta dos parâmetros após a variável `#` não funciona.
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como os parâmetros de consulta __first__ na URL. As IUs extensíveis do AEM usam rotas de hash (`#/@wknd/aem/...`), portanto, a pós-correção incorreta dos parâmetros após `#` não funciona.
 
    O URL de visualização deve ser semelhante a:
 
@@ -82,7 +82,7 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 
 1. Copie e cole o URL de visualização no navegador.
 
-   + Talvez seja necessário inicialmente e depois periodicamente, [aceitar o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) para o host do aplicativo local (`https://localhost:9080`).
+   + Talvez seja necessário inicialmente e depois periodicamente [aceitar o certificado HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) para o host do aplicativo local (`https://localhost:9080`).
 
 1. A interface do AEM é carregada com a versão local da extensão inserida nela para verificação.
 
@@ -93,7 +93,7 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 ## Verificar builds de estágio
 
 1. Abra uma linha de comando na raiz do projeto de extensão.
-1. Verifique se o espaço de trabalho Preparo está ativo (ou o espaço de trabalho usado para verificação).
+1. Verifique se o espaço de trabalho Preparo está ativo (ou o Workspace usado para verificação).
 
    ```shell
    $ aio app use -w Stage
@@ -117,11 +117,11 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
    Successful deployment 🏄
    ```
 
-1. Adicione os dois parâmetros de consulta a seguir à [URL da interface do AEM](#aem-ui-url)
+1. Adicionar os dois parâmetros de consulta a seguir à URL da [interface do AEM](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como a __primeiro__ parâmetros de consulta no URL, já que as interfaces do usuário AEM extensíveis usam uma rota de hash (`#/@wknd/aem/...`), então a pós-fixação incorreta dos parâmetros após a variável `#` não funciona.
+   Adicione os dois parâmetros de consulta acima (`devMode` e `ext`) como os parâmetros de consulta __first__ na URL, já que as interfaces do usuário com AEM extensíveis usam uma rota de hash (`#/@wknd/aem/...`), portanto, a pós-correção incorreta dos parâmetros após `#` não funcionará.
 
    O URL de visualização deve ser semelhante a:
 
@@ -134,14 +134,14 @@ Anote o URL do aplicativo local, mostrado acima como `-> https://localhost:9080`
 
 Lembre-se de que, ao usar essa abordagem, a extensão Preparada é inserida somente no Console do Fragmento de conteúdo do AEM quando o acesso for feito com o URL do estágio de artesanato.
 
-1. As extensões implantadas podem ser atualizadas executando `aio app deploy` novamente e essas alterações serão refletidas automaticamente ao usar o URL de visualização.
+1. Extensões implantadas podem ser atualizadas executando-se `aio app deploy` novamente e essas alterações refletem automaticamente ao usar a URL de visualização.
 1. Para remover uma extensão para verificação, execute `aio app undeploy`.
 
 ## Visualizar bookmarklet
 
-Para facilitar a criação dos URLs de visualização e visualização descritos acima, um bookmarklet JavaScript que carrega a extensão pode ser criado.
+Para facilitar a criação dos URLs de visualização e visualização descritos acima, um bookmarklet do JavaScript que carrega a extensão pode ser criado.
 
-O bookmarklet abaixo pré-visualiza a [builds de desenvolvimento local](#verify-local-development-builds) da extensão em `https://localhost:9080`. Para visualizar [builds de estágio](#verify-stage-builds), crie um bookmarklet com a `previewApp` variável definida como o URL do aplicativo App Builder implantado.
+O bookmarklet abaixo visualiza as [compilações de desenvolvimento local](#verify-local-development-builds) da extensão em `https://localhost:9080`. Para visualizar [compilações de estágio](#verify-stage-builds), crie um bookmarklet com a variável `previewApp` definida como a URL do aplicativo App Builder implantado.
 
 1. Crie um marcador no navegador.
 1. Edite o marcador.

@@ -50,11 +50,11 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Crie seu primeiro documento do canal de impressão</strong>
+    <strong>Criar o primeiro Documento do Canal de Impressão</strong>
     </a>
     </div>
     <p>
-    <em>As Comunicações interativas centralizam e gerenciam a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. </em>
+    <em>As Comunicações Interativas centralizam e gerenciam a criação, montagem e entrega de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas. </em>
     <p>
   </td>
   <td>
@@ -63,11 +63,11 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Utilização do modelo de dados de formulário no fluxo de trabalho do AEM</strong>
+    <strong>Usando o Modelo de Dados de Formulário no Fluxo de Trabalho do AEM</strong>
     </a>
     </div>
     <p>
-    <em>Invocar o serviço do modelo de dados de formulário como uma etapa no fluxo de trabalho do AEM</em>
+    <em>Invocar o serviço do Modelo de Dados de Formulário como uma etapa no Fluxo de Trabalho do AEM</em>
     <p>
   </td>
 </tr>
@@ -82,7 +82,7 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 * [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [Tutoriais as a Cloud Service do AEM](/help/cloud-service/overview.md)
+* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
 * [Tutoriais da Fundação AEM](/help/foundation/overview.md)

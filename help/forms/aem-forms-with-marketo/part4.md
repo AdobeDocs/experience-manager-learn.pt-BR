@@ -37,7 +37,7 @@ A captura de tela a seguir explica as configurações do editor de regras
 
 ## Depuração
 
-Se estiver usando os pacotes fornecidos com este artigo, talvez você queira ativar [logs de depuração](http://localhost:4502/system/console/slinglog) para as seguintes classes:
+Se você estiver usando os pacotes fornecidos com este artigo, talvez queira habilitar [logs de depuração](http://localhost:4502/system/console/slinglog) para as seguintes classes:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

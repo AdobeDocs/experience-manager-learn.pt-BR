@@ -23,26 +23,26 @@ A AEM Forms fornece os seguintes componentes do portal prontos para uso:
 
 **Pesquisa e Lister**: esse componente permite listar formulários do repositório de formulários na página do portal e fornece opções de configuração para listar formulários com base em critérios especificados.
 
-**Rascunhos e envios**: enquanto o componente de Pesquisa e Lister exibe formulários que são tornados públicos pelo autor do Forms, o componente Rascunhos e envios exibe formulários que são salvos como rascunho para concluir os formulários mais tarde e enviados. Este componente fornece experiência personalizada para qualquer usuário conectado.
+**Rascunhos e Envios**: enquanto o componente Pesquisa e Listagem exibe formulários que são tornados públicos pelo autor do Forms, o componente Rascunhos e Envios exibe formulários que são salvos como rascunho para conclusão posterior e formulários enviados. Este componente fornece experiência personalizada para qualquer usuário conectado.
 
 **Link**: este componente permite criar um link para um formulário em qualquer lugar da página.
 
 ## Habilitar Componentes do Portal Forms
 
-Inicie o IntelliJ e abra o projeto BankingApplication criado no [etapa anterior.](./getting-started.md) Expanda ui.apps->src->main->content->jcr_root->apps.bankingapplication->components
+Inicie o IntelliJ e abra o projeto BankingApplication criado na etapa [anterior.](./getting-started.md) Expanda ui.apps->src->main->content->jcr_root->apps.bankingapplication->components
 
 Para usar qualquer componente principal (incluindo os componentes de portal prontos para uso) em um site do Adobe Experience Manager (AEM), você deve criar um componente proxy e habilitá-lo para o seu site.
 O componente proxy recém-criado precisa apontar para o componente de formulários pronto para uso, para que eles herdem tudo deles. Isso é feito alterando o resourceSuperType no content.xml do componente proxy. No content.xml, também especificamos o título e o grupo de componentes.
 >[!NOTE]
 >
-> Você pode construir o supertipo de recurso para cada [estes componentes daqui](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
+> Você pode construir o supertipo de recurso para cada um destes [componentes daqui](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/formsportal)
 
 
 ### Rascunhos e envios
 
-Fazer uma cópia de um componente existente (por exemplo, `button`) e nomeie-o como _relatorioe observações_.
-![relatorioe observações](assets/forms-portal-components2.png)
-Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
+Faça uma cópia de um componente existente (por exemplo, `button`) e nomeie-o como _rascunhos e envios_.
+![rascunhos e envios](assets/forms-portal-components2.png)
+Substituir o conteúdo de `.content.xml` pelo seguinte XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -55,8 +55,8 @@ Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
 
 ### Pesquisa e listagem
 
-Faça uma cópia do componente de botão e renomeie-a para _searchandlister_.
-Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
+Faça uma cópia do componente de botão e renomeie-o para _searchandlister_.
+Substituir o conteúdo de `.content.xml` pelo seguinte XML:
 
 
 ```xml
@@ -70,8 +70,8 @@ Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
 
 ### Componente do link
 
-Faça uma cópia do componente de botão e renomeie-a para _link_.
-Substitua o conteúdo na caixa `.content.xml` com o seguinte XML:
+Faça uma cópia do componente de botão e renomeie-o para _link_.
+Substituir o conteúdo de `.content.xml` pelo seguinte XML:
 
 
 ```xml

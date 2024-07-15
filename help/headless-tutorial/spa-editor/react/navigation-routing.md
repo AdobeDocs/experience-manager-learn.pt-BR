@@ -25,60 +25,60 @@ Saiba como várias exibições no SPA podem ser compatíveis com o mapeamento pa
 ## Objetivo
 
 1. Entenda as opções de roteamento do modelo SPA disponíveis ao usar o Editor SPA.
-1. Saiba como usar [Roteador React](https://reacttraining.com/react-router) para navegar entre diferentes visualizações do SPA.
+1. Saiba como usar o [Roteador de reação](https://reacttraining.com/react-router) para navegar entre diferentes exibições do SPA.
 1. Use os Componentes principais de reação do AEM para implementar uma navegação dinâmica orientada pela hierarquia de páginas do AEM.
 
 ## O que você vai criar
 
-Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de página do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
 ## Pré-requisitos
 
-Analisar as ferramentas e instruções necessárias para a configuração de um [ambiente de desenvolvimento local](overview.md#local-dev-environment). O presente capítulo é uma continuação do [Mapear componentes](map-components.md) No entanto, para acompanhar tudo o que você precisa é de um projeto AEM habilitado para SPA implantado em uma instância do AEM local.
+Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Mapear componentes](map-components.md). No entanto, basta seguir um projeto AEM habilitado para SPA implantado em uma instância do AEM local para que você possa seguir.
 
 ## Adicionar a navegação ao modelo {#add-navigation-template}
 
 1. Abra um navegador e faça logon no AEM, [http://localhost:4502/](http://localhost:4502/). A base de código inicial já deve estar implantada.
-1. Navegue até a **Modelo de página SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
-1. Selecione o mais externo **Contêiner de layout raiz** e clique em sua **Política** ícone. Tenha cuidado **não** para selecionar o **Contêiner de layout** desbloqueado para criação.
+1. Navegue até o **Modelo de página do SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
+1. Selecione o **Contêiner de Layout Raiz** mais externo e clique em seu ícone **Política**. Tenha cuidado **não** para selecionar o **Contêiner de layout** desbloqueado para criação.
 
-   ![Selecionar o ícone da política do contêiner de layout raiz](assets/navigation-routing/root-layout-container-policy.png)
+   ![Selecione o ícone da política de contêiner de layout raiz](assets/navigation-routing/root-layout-container-policy.png)
 
 1. Crie uma nova política chamada **Estrutura SPA**:
 
-   ![Política de estrutura do SPA](assets/navigation-routing/spa-policy-update.png)
+   ![Política de Estrutura SPA](assets/navigation-routing/spa-policy-update.png)
 
-   Em **Componentes permitidos** > **Geral** > selecione a **Contêiner de layout** componente.
+   Em **Componentes Permitidos** > **Geral** > selecione o componente **Contêiner de Layout**.
 
-   Em **Componentes permitidos** > **REAÇÃO SPA WKND - ESTRUTURA** > selecione a **Navegação** componente:
+   Em **Componentes Permitidos** > **WKND SPA REACT - STRUCTURE** > selecione o componente **Navigation**:
 
    ![Selecionar componente de Navegação](assets/navigation-routing/select-navigation-component.png)
 
-   Em **Componentes permitidos** > **REAÇÃO SPA WKND - Conteúdo** > selecione a **Imagem** e **Texto** componentes. Você deve ter um total de quatro componentes selecionados.
+   Em **Componentes Permitidos** > **WKND SPA REACT - Conteúdo** > selecione os componentes **Imagem** e **Texto**. Você deve ter um total de quatro componentes selecionados.
 
    Clique em **Concluído** para salvar as alterações.
 
-1. Atualize a página e adicione o **Navegação** componente acima do desbloqueado **Contêiner de layout**:
+1. Atualize a página e adicione o componente **Navegação** acima do **Contêiner de Layout** desbloqueado:
 
    ![adicionar componente de Navegação ao modelo](assets/navigation-routing/add-navigation-component.png)
 
-1. Selecione o **Navegação** e clique em seu **Política** ícone para editar a política.
-1. Criar uma nova política com um **Título da política** de **Navegação no SPA**.
+1. Selecione o componente de **Navegação** e clique em seu ícone de **Política** para editar a política.
+1. Crie uma nova política com um **Título da Política** de **Navegação por SPA**.
 
-   No **Propriedades**:
+   Em **Propriedades**:
 
-   * Defina o **Raiz da navegação** para `/content/wknd-spa-react/us/en`.
-   * Defina o **Excluir níveis de raiz** para **1**.
+   * Defina a **Raiz de Navegação** como `/content/wknd-spa-react/us/en`.
+   * Defina os **Excluir Níveis de Raiz** para **1**.
    * Desmarcar **Coletar todas as páginas secundárias**.
-   * Defina o **Profundidade da estrutura de navegação** para **3**.
+   * Defina a **Profundidade da Estrutura de Navegação** como **3**.
 
-   ![Configurar política de navegação](assets/navigation-routing/navigation-policy.png)
+   ![Configurar Política de Navegação](assets/navigation-routing/navigation-policy.png)
 
-   Isso coletará os 2 níveis de navegação abaixo `/content/wknd-spa-react/us/en`.
+   Isso coletará os 2 níveis de navegação abaixo de `/content/wknd-spa-react/us/en`.
 
-1. Depois de salvar as alterações, você deverá ver a tag `Navigation` como parte do modelo:
+1. Depois de salvar as alterações, você deverá ver o `Navigation` preenchido como parte do modelo:
 
    ![Componente de navegação preenchido](assets/navigation-routing/populated-navigation.png)
 
@@ -86,32 +86,32 @@ Analisar as ferramentas e instruções necessárias para a configuração de um 
 
 Em seguida, crie páginas adicionais no AEM que servirão como as diferentes visualizações no SPA. Também vamos inspecionar a estrutura hierárquica do modelo JSON fornecido pelo AEM.
 
-1. Navegue até a **Sites** console: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Selecione o **Página inicial do WKND SPA React** e clique em **Criar** > **Página**:
+1. Navegue até o console **Sites**: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Selecione a **Página Inicial do WKND SPA** e clique em **Criar** > **Página**:
 
    ![Criar nova página](assets/navigation-routing/create-new-page.png)
 
-1. Em **Modelo** selecionar **Página SPA**. Em **Propriedades** inserir **Página 1** para o **Título** e **página-1** como o nome.
+1. Em **Modelo**, selecione **Página SPA**. Em **Propriedades**, digite **Página 1** para o **Título** e a **página-1** como o nome.
 
    ![Insira as propriedades da página inicial](assets/navigation-routing/initial-page-properties.png)
 
-   Clique em **Criar** e, na caixa de diálogo pop-up, clique em **Abertura** para abrir a página no Editor SPA AEM.
+   Clique em **Criar** e, na janela pop-up da caixa de diálogo, clique em **Abrir** para abrir a página no Editor de SPA AEM.
 
-1. Adicionar um novo **Texto** componente ao principal **Contêiner de layout**. Edite o componente e insira o texto: **Página 1** usando o RTE e o **H2** elemento.
+1. Adicionar um novo componente **Texto** ao **Contêiner de Layout** principal. Edite o componente e insira o texto: **Página 1** usando o RTE e o elemento **H2**.
 
-   ![Exemplo de conteúdo, página 1](assets/navigation-routing/page-1-sample-content.png)
+   ![Exemplo de página de conteúdo 1](assets/navigation-routing/page-1-sample-content.png)
 
    Fique à vontade para adicionar mais conteúdo, como uma imagem.
 
-1. Retorne ao console do AEM Sites e repita as etapas acima, criando uma segunda página chamada **Página 2** como um irmão de **Página 1**.
-1. Por último, crie uma terceira página, **Página 3** mas como **filho** de **Página 2**. Depois de concluída, a hierarquia do site deve ser semelhante ao seguinte:
+1. Retorne ao console do AEM Sites e repita as etapas acima, criando uma segunda página denominada **Página 2** como irmã da **Página 1**.
+1. Por fim, crie uma terceira página, **Página 3**, mas como **criança** da **Página 2**. Depois de concluída, a hierarquia do site deve ser semelhante ao seguinte:
 
-   ![Hierarquia do site de exemplo](assets/navigation-routing/wknd-spa-sample-site-hierarchy.png)
+   ![Hierarquia do Site de Exemplo](assets/navigation-routing/wknd-spa-sample-site-hierarchy.png)
 
 1. O componente de Navegação agora pode ser usado para navegar para diferentes áreas do SPA.
 
    ![Navegação e roteamento](assets/navigation-routing/navigation-working.gif)
 
-1. Abra a página fora do Editor de AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html). Use o **Navegação** para navegar em diferentes exibições do aplicativo.
+1. Abra a página fora do Editor de AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html). Use o componente de **Navegação** para navegar para diferentes modos de exibição do aplicativo.
 
 1. Use as ferramentas de desenvolvedor do seu navegador para inspecionar as solicitações de rede enquanto você navega. As capturas de tela abaixo são feitas no navegador Google Chrome.
 
@@ -152,15 +152,15 @@ Em seguida, inspecione o Modelo JSON que direciona a experiência de visualizaç
 
    Não é recomendável carregar **TODOS** do conteúdo de um SPA na solicitação JSON inicial, pois isso retardaria o carregamento da página inicial. Em seguida, vamos ver como a profundidade da hierarquia de páginas é coletada.
 
-1. Navegue até a **Raiz SPA** modelo em: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html).
+1. Navegue até o modelo **Raiz SPA** em: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-app-template/structure.html).
 
-   Clique em **Menu de propriedades da página** > **Política da página**:
+   Clique no menu **Propriedades da página** > **Política da página**:
 
-   ![Abrir a política da página para a raiz do SPA](assets/navigation-routing/open-page-policy.png)
+   ![Abrir a política de página para Raiz SPA](assets/navigation-routing/open-page-policy.png)
 
-1. A variável **Raiz SPA** O modelo tem um **Estrutura Hierárquica** para controlar o conteúdo JSON coletado. A variável **Profundidade da estrutura** determina a profundidade da hierarquia do site para coletar páginas secundárias abaixo de **raiz**. Você também pode usar a variável **Padrões de estrutura** para filtrar páginas adicionais com base em uma expressão regular.
+1. O modelo **Raiz SPA** tem uma guia **Estrutura Hierárquica** extra para controlar o conteúdo JSON coletado. A **Profundidade da Estrutura** determina a profundidade na hierarquia do site para coletar páginas secundárias abaixo da **raiz**. Você também pode usar o campo **Padrões de estrutura** para filtrar páginas adicionais com base em uma expressão regular.
 
-   Atualize o **Profundidade da estrutura** para **2**:
+   Atualize a **Profundidade da Estrutura** para **2**:
 
    ![Atualizar profundidade da estrutura](assets/navigation-routing/update-structure-depth.png)
 
@@ -188,29 +188,29 @@ Em seguida, inspecione o Modelo JSON que direciona a experiência de visualizaç
    }
    ```
 
-   Observe que **Página 3** o caminho foi removido: `/content/wknd-spa-react/us/en/home/page-2/page-3` do modelo JSON inicial. Isso ocorre porque **Página 3** O está em um nível 3 na hierarquia e atualizamos a política para incluir conteúdo somente em uma profundidade máxima de nível 2.
+   Observe que o caminho **Página 3** foi removido: `/content/wknd-spa-react/us/en/home/page-2/page-3` do modelo JSON inicial. Isso ocorre porque a **Página 3** está em um nível 3 na hierarquia e atualizamos a política para incluir conteúdo somente em uma profundidade máxima de nível 2.
 
-1. Reabra a página inicial do SPA: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html) e abra as ferramentas do desenvolvedor do seu navegador.
+1. Abra novamente a página inicial do SPA: [http://localhost:4502/content/wknd-spa-react/us/en/home.html](http://localhost:4502/content/wknd-spa-react/us/en/home.html) e abra as ferramentas de desenvolvedor do seu navegador.
 
-   Atualize a página e você deverá ver a solicitação XHR para `/content/wknd-spa-react/us/en.model.json`, que é a raiz do SPA. Observe que apenas três páginas secundárias são incluídas com base na configuração de profundidade da hierarquia para o modelo Raiz SPA definido anteriormente no tutorial. Isso não inclui **Página 3**.
+   Atualize a página e você verá a solicitação XHR para `/content/wknd-spa-react/us/en.model.json`, que é a Raiz SPA. Observe que apenas três páginas secundárias são incluídas com base na configuração de profundidade da hierarquia para o modelo Raiz SPA definido anteriormente no tutorial. Isso não inclui a **Página 3**.
 
    ![Solicitação JSON inicial - Raiz SPA](assets/navigation-routing/initial-json-request.png)
 
-1. Com as ferramentas do desenvolvedor abertas, use a `Navigation` componente para navegar diretamente até **Página 3**:
+1. Com as ferramentas do desenvolvedor abertas, use o componente `Navigation` para navegar diretamente para a **Página 3**:
 
    Observe que uma nova solicitação XHR é feita para: `/content/wknd-spa-react/us/en/home/page-2/page-3.model.json`
 
-   ![Solicitação XHR da página 3](assets/navigation-routing/page-3-xhr-request.png)
+   ![Solicitação XHR da página três](assets/navigation-routing/page-3-xhr-request.png)
 
-   O gerente de modelos do AEM entende que o **Página 3** O conteúdo JSON não está disponível e aciona automaticamente a solicitação XHR adicional.
+   O Gerenciador de Modelos AEM entende que o conteúdo JSON da **Página 3** não está disponível e aciona automaticamente a solicitação XHR adicional.
 
 1. Experimente os deep links navegando diretamente para: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Observe também que o botão Voltar do navegador continua funcionando.
 
 ## Roteamento Inspect React  {#react-routing}
 
-A navegação e o roteamento são implementados com [Roteador React](https://reactrouter.com/en/main). O Roteador React é uma coleção de componentes de navegação para aplicativos React. [Componentes principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components-base) O usa recursos do Roteador React para implementar o **Navegação** componente usado nas etapas anteriores.
+A navegação e o roteamento são implementados com o [Roteador React](https://reactrouter.com/en/main). O Roteador React é uma coleção de componentes de navegação para aplicativos React. Os [Componentes Principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components-base) usam recursos do Roteador React para implementar o componente de **Navegação** usado nas etapas anteriores.
 
-Em seguida, inspecione como o Roteador React está integrado ao SPA e experimente usando o Roteador React [Link](https://reactrouter.com/en/main/components/link) componente.
+Em seguida, inspecione como o Roteador React está integrado ao SPA e experimente usando o componente [Link](https://reactrouter.com/en/main/components/link) do Roteador React.
 
 1. No IDE, abra o arquivo `index.js` em `ui.frontend/src/index.js`.
 
@@ -237,9 +237,9 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
    });
    ```
 
-   Observe que `App` está envolvido com o `Router` componente de [Roteador React](https://reacttraining.com/react-router). A variável `ModelManager`AEM , fornecido pelo SDK JS do Editor de SPA, adiciona as rotas dinâmicas para páginas AEM com base na API do modelo JSON.
+   Observe que `App` está encapsulado no componente `Router` do [Roteador React](https://reacttraining.com/react-router). O `ModelManager`, fornecido pelo SDK JS do Editor SPA AEM, adiciona as rotas dinâmicas para páginas AEM com base na API do modelo JSON.
 
-1. Abra o arquivo `Page.js` em `ui.frontend/src/components/Page/Page.js`
+1. Abrir o arquivo `Page.js` em `ui.frontend/src/components/Page/Page.js`
 
    ```js
    class AppPage extends Page {
@@ -256,10 +256,10 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
    );
    ```
 
-   A variável `Page` O componente SPA usa o `MapTo` função a mapear **Páginas** no AEM a um componente SPA correspondente. A variável `withRoute` ajuda a rotear dinamicamente o SPA para a página filho AEM apropriada com base na variável `cqPath` propriedade.
+   O componente SPA `Page` usa a função `MapTo` para mapear **Páginas** no AEM para um componente SPA correspondente. O utilitário `withRoute` ajuda a rotear dinamicamente o SPA para a página AEM Filho apropriada com base na propriedade `cqPath`.
 
-1. Abra o `Header.js` componente em `ui.frontend/src/components/Header/Header.js`.
-1. Atualize o `Header` para embrulhar o `<h1>` tag em um [Link](https://reactrouter.com/en/main/components/link) para a página inicial:
+1. Abra o componente `Header.js` em `ui.frontend/src/components/Header/Header.js`.
+1. Atualize o `Header` para envolver a marca `<h1>` em um [Link](https://reactrouter.com/en/main/components/link) para a página inicial:
 
    ```diff
      //Header.js
@@ -282,7 +282,7 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
        }
    ```
 
-   Em vez de usar um padrão `<a>` tag de âncora que usamos `<Link>` fornecido pelo roteador React. Contanto que a variável `to=` para uma rota válida, o SPA mudará para essa rota e **não** execute uma atualização de página completa. Aqui, simplesmente codificamos o link para a página inicial para ilustrar o uso de `Link`.
+   Em vez de usar uma marca de âncora `<a>` padrão, usamos `<Link>` fornecida pelo Roteador React. Desde que `to=` aponte para uma rota válida, o SPA mudará para essa rota e **não** executará uma atualização de página inteira. Aqui, simplesmente codificamos o link para a página inicial para ilustrar o uso de `Link`.
 
 1. Atualizar o teste em `App.test.js` em `ui.frontend/src/App.test.js`.
 
@@ -297,7 +297,7 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
      });
    ```
 
-   Como estamos usando recursos do Roteador React em um componente estático referenciado em `App.js` precisamos atualizar o teste de unidade para levar em conta.
+   Como estamos usando recursos do Roteador React em um componente estático referenciado em `App.js`, precisamos atualizar o teste de unidade para levar em conta.
 
 1. Abra um terminal, navegue até a raiz do projeto e implante o projeto no AEM usando suas habilidades em Maven:
 
@@ -306,15 +306,15 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. SPA Acesse uma das páginas no AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html)
+1. SPA Navegue até uma das páginas no AEM: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-1.html)
 
-   Em vez de usar o `Navigation` para navegar, use o link na caixa `Header`.
+   Em vez de usar o componente `Navigation` para navegar, use o link no `Header`.
 
    ![Link do cabeçalho](assets/navigation-routing/header-link.png)
 
-   Observe que uma atualização de página inteira é **não** acionado e que o roteamento SPA está funcionando.
+   Observe que uma atualização de página inteira é **não** acionada e que o roteamento SPA está funcionando.
 
-1. Como opção, experimente o `Header.js` arquivo usando um padrão `<a>` tag de âncora:
+1. Opcionalmente, experimente o arquivo `Header.js` usando uma marca de âncora `<a>` padrão:
 
    ```js
    <a href="/content/wknd-spa-react/us/en/home.html">
@@ -326,4 +326,4 @@ Em seguida, inspecione como o Roteador React está integrado ao SPA e experiment
 
 ## Parabéns. {#congratulations}
 
-Parabéns, você aprendeu como várias exibições no SPA podem ser suportadas pelo mapeamento para páginas AEM com o SDK do Editor do SPA. A navegação dinâmica foi implementada usando o Roteador React e adicionada ao `Header` componente.
+Parabéns, você aprendeu como várias exibições no SPA podem ser suportadas pelo mapeamento para páginas AEM com o SDK do Editor do SPA. A navegação dinâmica foi implementada com o Roteador React e adicionada ao componente `Header`.

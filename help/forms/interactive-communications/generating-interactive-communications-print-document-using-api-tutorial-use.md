@@ -27,7 +27,7 @@ Quando você solta um arquivo na pasta monitorada, um script associado à pasta 
 
 O arquivo colocado na pasta monitorada tem a seguinte estrutura. O código gerará demonstrativos para todos os números de conta listados no documento XML.
 
-&lt;accountnumbers>
+&lt;números de conta>
 
 &lt;accountnumber>509840&lt;/accountnumber>
 
@@ -107,11 +107,11 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 ```
 
 
-**Para testar isso em seu sistema local, siga as seguintes instruções:**
+**Para testar isto no seu sistema local, siga as seguintes instruções:**
 
-* Configure o Tomcat conforme descrito neste [artigo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) O Tomcat tem o arquivo war que gera os dados de amostra.
+* Configure o Tomcat conforme descrito neste [artigo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat tem o arquivo war que gera os dados de amostra.
 * Configure o serviço também conhecido como usuário do sistema conforme descrito neste [artigo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Verifique se esse usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon no [administrador de usuários](https://localhost:4502/useradmin) e pesquise o usuário do sistema &quot;data&quot; e forneça as permissões de leitura no seguinte nó, acessando a guia permissions
+Verifique se esse usuário do sistema tem permissões de leitura no nó a seguir. Para conceder as permissões de logon a [user admin](https://localhost:4502/useradmin) e pesquisar os &quot;dados&quot; do usuário do sistema e conceder as permissões de leitura no seguinte nó, tabulação na guia de permissões
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af

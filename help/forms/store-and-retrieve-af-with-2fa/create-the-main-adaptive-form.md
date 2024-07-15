@@ -20,18 +20,18 @@ ht-degree: 0%
 
 # Criar o formulário adaptável principal
 
-O formulário **ArmazenarAFWithAttachments** é o formulário adaptável principal. Este formulário adaptável é o ponto de entrada para o caso de uso. Nesse formulário, os detalhes do usuário, incluindo o número de celular, são capturados. Este formulário também pode adicionar alguns anexos. Quando o botão Salvar e sair é clicado, o código do lado do servidor é executado para armazenar os dados do formulário no banco de dados e uma ID exclusiva do aplicativo é gerada e apresentada ao usuário para segurança. Essa ID do aplicativo é usada para recuperar o número do celular associado ao aplicativo.
+O formulário **StoreAFWithAttachments** é o formulário adaptável principal. Este formulário adaptável é o ponto de entrada para o caso de uso. Nesse formulário, os detalhes do usuário, incluindo o número de celular, são capturados. Este formulário também pode adicionar alguns anexos. Quando o botão Salvar e sair é clicado, o código do lado do servidor é executado para armazenar os dados do formulário no banco de dados e uma ID exclusiva do aplicativo é gerada e apresentada ao usuário para segurança. Essa ID do aplicativo é usada para recuperar o número do celular associado ao aplicativo.
 
 ![formulário principal do aplicativo](assets/6552.JPG)
 
-Este formulário está associado a **bootboxjs540,storeAFWithAttachments** bibliotecas de clientes criadas anteriormente no curso e um fluxo de trabalho AEM que é acionado no envio do formulário.
+Este formulário está associado às bibliotecas de clientes **bootboxjs540,storeAFWithAttachments** criadas anteriormente no curso e a um fluxo de trabalho do AEM que é acionado no envio do formulário.
 
 
-* Os formulários de amostra são baseados em [modelo de formulário adaptável personalizado](assets/custom-template-with-page-component.zip) que precisa ser importado para o AEM para que os formulários de amostra sejam renderizados corretamente.
+* Os formulários de amostra são baseados no [modelo de formulário adaptável personalizado](assets/custom-template-with-page-component.zip) que precisa ser importado para o AEM para que os formulários de amostra sejam renderizados corretamente.
 
-* O concluído [Formulário StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) O pode ser baixado e importado para a instância do AEM.
+* O [Formulário StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) concluído pode ser baixado e importado para a instância do AEM.
 
-* A variável [Fluxo de trabalho do AEM associado a este formulário](assets/workflow-model-store-af-with-attachments.zip) precisa ser importado para a instância do AEM para que o formulário funcione.
+* O fluxo de trabalho do [AEM associado a este formulário](assets/workflow-model-store-af-with-attachments.zip) precisa ser importado para a instância do AEM para que o formulário funcione.
 
 
 ## Próximas etapas

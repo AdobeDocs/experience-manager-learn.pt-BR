@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Preencher tabela de formulários adaptáveis com os resultados da chamada do serviço de modelo de dados de formulário
 
-[O formulário disponível está hospedado aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+[O formulário online está hospedado aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Neste artigo, observamos o preenchimento da tabela de formulários adaptáveis, buscando dados da invocação do serviço do modelo de dados de formulário. Vamos criar um cronograma de amortização em uma tabela que lista cada pagamento regular em uma hipoteca ao longo do tempo. Os resultados da amortização são retornados pelo Modelo de dados do formulário. O serviço do Modelo de dados de formulário é chamado no evento de clique do botão calcular, conforme mostrado na captura de tela. Os parâmetros de entrada e saída da chamada de serviço são mapeados adequadamente, conforme mostrado na captura de tela. A saída é mapeada para as colunas da Linha 1
 ![clickevent](assets/amortization.PNG)
 
@@ -27,8 +27,9 @@ A linha 1 é configurada para ser expandida dependendo dos dados retornados pela
 
 ## Implantar no servidor
 
-[Instale o Tomcat conforme especificado aqui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
+[Instalar Tomcat conforme especificado aqui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Implantar o arquivo SampleRest.war contido neste arquivo zip no Tomcat](assets/sample-rest.zip)
-[Instalar os ativos](assets/amortizationschedule.zip) uso do gerenciador de pacotes AEM
-[Abra o Formulário de programação de amortização](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-Insira o valor apropriado e clique em Calcular programação de amortização deve ser preenchida no formulário
+[Instalar os ativos](assets/amortizationschedule.zip) usando o gerenciador de pacotes AEM
+[Abrir o Formulário de Agendamento de Amortização](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+Insira o valor apropriado e clique em calcular
+A Programação de Amortização deve ser preenchida em seu formulário

@@ -35,7 +35,8 @@ Para criar esse fluxo de trabalho, execute as seguintes etapas
 Há três maneiras de especificar o caminho do formulário
 
 1. Disponível em um caminho absoluto - Isso significa que o fluxo de trabalho é totalmente combinado com o formulário adaptável. Não é isso que queremos aqui
-1. **Enviado ao fluxo de trabalho** - Isso significa que quando o formulário adaptável é enviado, o mecanismo de fluxo de trabalho extrai o nome do formulário dos dados enviados. Esta é a opção que precisa ser selecionada
-1. Disponível em um caminho em uma variável - Isso significa que o formulário adaptável é retirado da variável do fluxo de trabalho. A captura de tela a seguir mostra a opção correta que você precisa escolher para desvincular o fluxo de trabalho do formulário adaptável
+1. **Enviado ao fluxo de trabalho** - Isso significa que, quando o formulário adaptável é enviado, o mecanismo de fluxo de trabalho extrai o nome do formulário dos dados enviados. Esta é a opção que precisa ser selecionada
+1. Disponível em um caminho em uma variável - significa que o formulário adaptável é retirado da variável do fluxo de trabalho
+A captura de tela a seguir mostra a opção correta que você precisa escolher para desvincular o fluxo de trabalho do formulário adaptável
 
-![Modelos de fluxo de trabalho reutilizáveis do AEM Forms](assets/workflomodel.PNG)
+![Modelos reutilizáveis de fluxo de trabalho do AEM Forms](assets/workflomodel.PNG)

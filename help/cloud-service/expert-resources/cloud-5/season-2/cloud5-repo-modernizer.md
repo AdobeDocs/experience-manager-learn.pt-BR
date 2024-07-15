@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Cloud 5 - Modernizador de repositório
 
-Os caras analisam como o modernizador de repositório ajuda na transição para o AEM as a Cloud Service com uma visão geral útil de como funciona e por quê.
+Os caras analisam como o modernizador de repositório ajuda na transição para o AEM as a Cloud Service, com uma visão geral útil de como ele funciona e por quê.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 

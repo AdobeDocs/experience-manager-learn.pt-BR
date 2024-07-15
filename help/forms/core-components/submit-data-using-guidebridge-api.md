@@ -25,7 +25,7 @@ Para realizar esse caso de uso, precisamos acessar e enviar os dados de formulá
 Os dados do formulário são salvos no evento de clique de um botão usando o editor de regras
 ![editor de regras](assets/rule-editor.png)
 
-A seguinte função JavaScript foi gravada para enviar os dados para o endpoint especificado
+A seguinte função JavaScript foi gravada para enviar os dados para o ponto de extremidade especificado
 
 ```javascript
 /**
@@ -70,7 +70,7 @@ A seguinte função JavaScript foi gravada para enviar os dados para o endpoint 
 
 ## Código do lado do servidor
 
-O código Java do lado do servidor a seguir foi gravado para manipular os dados de formulário. Veja a seguir o servlet Java em execução no AEM chamado por meio da chamada XHR no JavaScript acima.
+O código Java do lado do servidor a seguir foi gravado para manipular os dados de formulário. Veja a seguir o servlet Java em execução no AEM chamado por meio da chamada XHR na JavaScript acima.
 
 ```java
 package com.azuredemo.core.servlets;

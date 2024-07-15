@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Como investigar problemas relacionados a SAML
 
-*Este vídeo aborda as etapas para investigar problemas relacionados ao SAML no AEM.*
+*Este vídeo mostra as etapas para investigar problemas relacionados a SAML no AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)

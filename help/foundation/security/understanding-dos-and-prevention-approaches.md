@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Compreender a prevenção de DoS/DDoS no AEM
 
-Saiba mais sobre as opções disponíveis para impedir e mitigar ataques de DoS e DDoS no seu ambiente AEM. Antes de mergulhar nos mecanismos de prevenção, uma breve [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) e [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Saiba mais sobre as opções disponíveis para impedir e mitigar ataques de DoS e DDoS no seu ambiente AEM. Antes de mergulhar nos mecanismos de prevenção, forneça uma breve visão geral do [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) e do [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - Os ataques de DoS (Negação de serviço) e DDoS (Negação de serviço distribuída) são tentativas mal-intencionadas de interromper o funcionamento normal de um servidor, serviço ou rede de destino, tornando-o inacessível aos usuários desejados.
 - Os ataques de DoS normalmente se originam de uma única fonte, enquanto os ataques de DDoS vêm de várias fontes.
@@ -42,28 +42,28 @@ A tabela a seguir descreve como impedir e mitigar ataques de DoS e DDoS:
             <td>Firewall de Aplicativo Web (WAF)</td>
             <td>Uma solução de segurança projetada para proteger aplicativos da Web contra vários tipos de ataques.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licença de proteção WAF-DDoS</a></td>
+            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licença de Proteção WAF-DDoS</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> ou <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF via contrato AMS.</td>
             <td>Seu WAF preferido</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>O ModSecurity (também conhecido como módulo Apache "mod_security") é uma solução de código aberto e entre plataformas que fornece proteção contra uma variedade de ataques contra aplicativos web.<br/> No AEM as a Cloud Service, isso só é aplicável ao serviço de publicação do AEM, pois não há um servidor Web Apache e o Dispatcher do AEM AEM na frente do serviço do Autor do.</td>
+            <td>O ModSecurity (também conhecido como módulo Apache "mod_security") é uma solução de código aberto e entre plataformas que fornece proteção contra uma variedade de ataques contra aplicativos web.<br/> No AEM as a Cloud Service, isso só é aplicável ao serviço AEM Publish AEM, pois não há servidor Web Apache e Dispatcher AEM na frente do serviço de autor.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Ativar ModSecurity </a></td>
         </tr>
         <tr>
             <td>Regras de filtro de tráfego</td>
             <td>As regras de filtro de tráfego podem ser usadas para bloquear ou permitir solicitações na camada CDN.</td>
             <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Exemplo de regras de filtro de tráfego</a></td>
-            <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> ou <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a> regra que limita os recursos.</td>
+            <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> ou <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a> regra limitando recursos.</td>
             <td>Sua solução preferida</td>
         </tr>
     </tbody>
 </table>
 
-## Análise pós-incidente e melhoria contínua
+## Análise de incidentes Post e melhoria contínua
 
-Embora não haja um fluxo padrão único para identificar e impedir ataques de DoS/DDoS e ele dependa do processo de segurança de sua organização. A variável **análise pós-incidente e melhoria contínua** é uma etapa crucial do processo. Estas são algumas das práticas recomendadas a serem consideradas:
+Embora não haja um fluxo padrão único para identificar e impedir ataques de DoS/DDoS e ele dependa do processo de segurança de sua organização. A **análise pós-incidente e o aprimoramento contínuo** é uma etapa crucial no processo. Estas são algumas das práticas recomendadas a serem consideradas:
 
 - Identifique a causa raiz do ataque DoS/DDoS realizando uma análise pós-incidente, incluindo a análise de registros, tráfego de rede e configurações do sistema.
 - Melhorar os mecanismos de prevenção com base nos resultados da análise pós-incidente.

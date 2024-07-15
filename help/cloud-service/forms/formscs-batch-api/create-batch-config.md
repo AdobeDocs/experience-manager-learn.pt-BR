@@ -22,7 +22,7 @@ ht-degree: 0%
 Para usar uma API de lote, crie uma configuração de lote e execute uma execução com base nessa configuração. O vídeo a seguir mostra uma demonstração da criação da configuração em lote usando a API
 
 >[!NOTE]
->Certifique-se de que o usuário do AEM pertence a ```forms-users``` grupo para fazer chamadas de API.
+>Certifique-se de que o usuário AEM pertence ao grupo ```forms-users``` para fazer chamadas de API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)

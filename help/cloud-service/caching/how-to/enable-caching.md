@@ -1,6 +1,6 @@
 ---
 title: Como ativar o armazenamento em cache do CDN
-description: Saiba como habilitar o armazenamento em cache de respostas HTTP no CDN do AEM as a Cloud Service.
+description: Saiba como habilitar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -21,32 +21,32 @@ ht-degree: 0%
 
 # Como ativar o armazenamento em cache do CDN
 
-Saiba como habilitar o armazenamento em cache de respostas HTTP no CDN do AEM as a Cloud Service. O armazenamento em cache de respostas é controlado pela `Cache-Control`, `Surrogate-Control`ou `Expires` Cabeçalhos de cache de resposta HTTP.
+Saiba como habilitar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service. O cache de respostas é controlado por `Cache-Control`, `Surrogate-Control` ou `Expires` cabeçalhos de cache de resposta HTTP.
 
-Esses cabeçalhos de cache normalmente são definidos em configurações de vhost do Dispatcher do AEM usando `mod_headers`, mas também pode ser definido no código Java™ personalizado em execução no próprio AEM Publish.
+Normalmente, esses cabeçalhos de cache são definidos em configurações de vhost do AEM Dispatcher usando `mod_headers`, mas também podem ser definidos no código Java™ personalizado em execução no próprio Publish AEM.
 
 ## Comportamento de cache padrão
 
-Quando as configurações personalizadas NÃO estiverem presentes, os valores padrão serão usados. Na captura de tela a seguir, você pode ver o comportamento padrão de armazenamento em cache para AEM Publish e Author quando um [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) baseado `mynewsite` Projeto AEM implantado.
+Quando as configurações personalizadas NÃO estiverem presentes, os valores padrão serão usados. Na captura de tela a seguir, você pode ver o comportamento padrão de armazenamento em cache para o AEM Publish e Autor quando um [Arquétipo de projeto do AEM AEM](https://github.com/adobe/aem-project-archetype) baseado no `mynewsite` é implantado.
 
 ![Comportamento de cache padrão](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Revise o [Publicação no AEM - Vida útil do cache padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) e [Autor do AEM - Vida útil do cache padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) para obter mais informações.
+Revise a [Publish AEM - Vida útil do cache padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) e o [Autor do AEM - Vida útil do cache padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) para obter mais informações.
 
-Em resumo, o AEM as a Cloud Service armazena em cache a maioria dos tipos de conteúdo (HTML AEM AEM, JSON, JS, CSS e Assets) no Publish e alguns tipos de conteúdo (JS, CSS) no Author.
+Em resumo, o AEM as a Cloud Service armazena em cache a maioria dos tipos de conteúdo (HTML, JSON, JS, CSS e Assets AEM Publish AEM) no e alguns tipos de conteúdo (JS, CSS) no Author.
 
 ## Ativar armazenamento em cache
 
 Para alterar o comportamento padrão de armazenamento em cache, você pode atualizar os cabeçalhos de cache de duas maneiras.
 
-1. **Configuração do vhost do Dispatcher:** Disponível somente para publicação no AEM.
-1. **Código Java™ personalizado:** Disponível para publicação no AEM e para Autor.
+1. **Configuração do Dispatcher vhost:** disponível somente para AEM Publish.
+1. **Código Java™ personalizado:** disponível para AEM Publish e Author.
 
 Vamos analisar cada uma dessas opções.
 
-### Configuração do vhost do Dispatcher
+### Configuração do Dispatcher vhost
 
-Essa opção é a abordagem recomendada para ativar o armazenamento em cache, no entanto, só está disponível para publicação no AEM. Para atualizar os cabeçalhos de cache, use o `mod_headers` módulo e `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
+Essa opção é a abordagem recomendada para ativar o armazenamento em cache, mas só está disponível para o AEM Publish. Para atualizar os cabeçalhos de cache, use o módulo `mod_headers` e a diretiva `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -66,7 +66,7 @@ Essa opção é a abordagem recomendada para ativar o armazenamento em cache, no
 </LocationMatch>
 ```
 
-A seguir, é apresentado um resumo da finalidade de cada **cabeçalho** e aplicável **atributos** para o cabeçalho.
+A seguir está um resumo da finalidade de cada **cabeçalho** e dos **atributos** aplicáveis ao cabeçalho.
 
 |                     | Navegador da Web | CDN | Descrição |
 |---------------------|:-----------:|:---------:|:-----------:|
@@ -75,18 +75,18 @@ A seguir, é apresentado um resumo da finalidade de cada **cabeçalho** e aplic�
 | Expira em | ✔ | ✔ | Esse cabeçalho controla a vida útil do navegador da Web e do cache CDN. |
 
 
-- **max-age**: Esse atributo controla o TTL ou o &quot;tempo de vida&quot; do conteúdo da resposta em segundos.
-- **stale-while-revalidate**: Esse atributo controla o _estado obsoleto_ o tratamento do conteúdo da resposta na camada CDN quando a solicitação recebida se dá dentro do período especificado em segundos. A variável _estado obsoleto_ é o período de tempo após a expiração do TTL e antes da revalidação da resposta.
-- **stale-if-error**: Esse atributo controla o _estado obsoleto_ tratamento do conteúdo da resposta na camada CDN quando o servidor de origem estiver indisponível e a solicitação recebida estiver dentro do período especificado em segundos.
+- **max-age**: Este atributo controla o TTL ou o &quot;tempo de vida&quot; do conteúdo da resposta em segundos.
+- **stale-while-revalidate**: este atributo controla o tratamento do _estado obsoleto_ do conteúdo da resposta na camada CDN quando a solicitação recebida está dentro do período especificado em segundos. O _estado obsoleto_ é o período de tempo após a expiração do TTL e antes da revalidação da resposta.
+- **stale-if-error**: este atributo controla o tratamento do _estado obsoleto_ do conteúdo da resposta na camada CDN quando o servidor de origem está indisponível e a solicitação recebida está dentro do período especificado em segundos.
 
-Revise o [desatualização e revalidação](https://developer.fastly.com/learning/concepts/edge-state/cache/stale/) detalhes para obter mais informações.
+Revise os detalhes de [desatualização e revalidação](https://developer.fastly.com/learning/concepts/edge-state/cache/stale/) para obter mais informações.
 
 #### Exemplo
 
-Para aumentar a vida útil do navegador da Web e do cache da CDN do **tipo de conteúdo HTML** para _10 minutos_ sem o tratamento de estado obsoleto, siga estas etapas:
+Para aumentar a vida do navegador da Web e do cache da CDN do **tipo de conteúdo de HTML** para _10 minutos_ sem o tratamento de estado obsoleto, siga estas etapas:
 
-1. No projeto AEM, localize o arquivo vhsot desejado em `dispatcher/src/conf.d/available_vhosts` diretório.
-1. Atualizar o vhost (por exemplo, `wknd.vhost`) da seguinte forma:
+1. No projeto AEM, localize o arquivo vhsot desejado do diretório `dispatcher/src/conf.d/available_vhosts`.
+1. Atualize o arquivo vhost (por exemplo, `wknd.vhost`) da seguinte maneira:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -98,18 +98,18 @@ Para aumentar a vida útil do navegador da Web e do cache da CDN do **tipo de co
    </LocationMatch>
    ```
 
-   Os arquivos vhost em `dispatcher/src/conf.d/enabled_vhosts` diretório são **symlinks** aos arquivos em `dispatcher/src/conf.d/available_vhosts` diretório, portanto, crie symlinks se não estiver presente.
-1. Implante as alterações do vhost no ambiente as a Cloud Service do AEM desejado usando o [Cloud Manager - Pipeline de configuração no nível da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+   Os arquivos vhost no diretório `dispatcher/src/conf.d/enabled_vhosts` são **symlinks** para os arquivos no diretório `dispatcher/src/conf.d/available_vhosts`. Portanto, se não houver, crie symlinks.
+1. Implante as alterações do vhost no ambiente do AEM as a Cloud Service desejado usando o [Pipeline de Configuração da Camada da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou os [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration) do Cloud Manager.
 
-No entanto, para ter valores diferentes para a vida útil do navegador da Web e do cache de CDN, você pode usar o `Surrogate-Control` no exemplo acima. Da mesma forma que para expirar o cache em uma data e hora específicas, você pode usar o `Expires` cabeçalho. Além disso, usando o `stale-while-revalidate` e `stale-if-error` atributos, é possível controlar o tratamento de estado obsoleto do conteúdo da resposta. O projeto AEM WKND tem um [tratamento de estado obsoleto de referência](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155) Configuração do cache do CDN.
+No entanto, para ter valores diferentes para a vida útil do navegador da Web e do cache CDN, você pode usar o cabeçalho `Surrogate-Control` no exemplo acima. Da mesma forma que para expirar o cache em uma data e hora específicas, você pode usar o cabeçalho `Expires`. Além disso, usando os atributos `stale-while-revalidate` e `stale-if-error`, você pode controlar o tratamento de estado obsoleto do conteúdo da resposta. O projeto WKND AEM tem uma [configuração de cache de CDN de tratamento de estado obsoleto de referência](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 
-Da mesma forma, também é possível atualizar os cabeçalhos de cache para outros tipos de conteúdo (JSON, JS, CSS e Assets).
+Da mesma forma, também é possível atualizar os cabeçalhos de cache de outros tipos de conteúdo (JSON, JS, CSS e Assets).
 
 ### Código Java™ personalizado
 
-Essa opção está disponível para publicação no AEM e para Autor. No entanto, não é recomendável ativar o armazenamento em cache no AEM Author e manter o comportamento padrão do armazenamento em cache.
+Essa opção está disponível para o AEM Publish e para o Author. No entanto, não é recomendável ativar o armazenamento em cache no AEM Author e manter o comportamento padrão do armazenamento em cache.
 
-Para atualizar os cabeçalhos de cache, use o `HttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
+Para atualizar os cabeçalhos de cache, use o objeto `HttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
 
 ```java
 // Instructs the web browser and CDN to cache the response for 'max-age' value (XXX) seconds. The 'stale-while-revalidate' and 'stale-if-error' attributes controls the stale state treatment at CDN layer.

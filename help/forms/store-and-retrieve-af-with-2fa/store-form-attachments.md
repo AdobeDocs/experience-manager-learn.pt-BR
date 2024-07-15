@@ -1,6 +1,6 @@
 ---
 title: Armazenar anexos de formulário
-description: Extraia os anexos do formulário e armazene em um novo local no repositório CRX.
+description: Extraia os anexos do formulário e armazene em um novo local no repositório do CRX.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Armazenar anexos de formulário
 
-Ao adicionar anexos a um formulário adaptável, os anexos são armazenados em um local temporário no repositório CRX. Para que nosso caso de uso funcione, precisamos armazenar os anexos de formulário em um novo local no repositório CRX.
+Ao adicionar anexos a um formulário adaptável, os anexos são armazenados em um local temporário no repositório do CRX. Para que nosso caso de uso funcione, precisamos armazenar os anexos de formulário em um novo local no repositório do CRX.
 
-O serviço OSGi é criado para armazenar os anexos do formulário em um novo local no repositório CRX. Um novo mapa de arquivos é criado com o novo local dos anexos no CRX e retornado ao aplicativo de chamada.
+O serviço OSGi é criado para armazenar os anexos de formulário em um novo local no repositório do CRX. Um novo mapa de arquivos é criado com o novo local dos anexos no CRX e retornado ao aplicativo de chamada.
 Veja a seguir o FileMap que é enviado para o servlet. A chave é o campo de formulário adaptável e o valor é o local temporário do anexo. Em nosso servlet, extrairemos o anexo e o armazenaremos em um novo local no repositório AEM e atualizaremos o FileMap com o novo local
 
 ```java
@@ -32,7 +32,7 @@ Veja a seguir o FileMap que é enviado para o servlet. A chave é o campo de for
 }
 ```
 
-A seguir está o código que extrai os anexos da solicitação e os armazena em **/content/afattachments** pasta
+A seguir está o código que extrai os anexos da solicitação e os armazena na pasta **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {

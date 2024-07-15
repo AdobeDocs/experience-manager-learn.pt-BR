@@ -32,11 +32,11 @@ Os formulários Adobe Experience Manager (AEM) podem ajudar você a transformar 
    * Os nomes podem conter letras, dígitos, sublinhados e cifrões.
    * Os nomes devem começar com uma letra
    * Os nomes diferenciam maiúsculas de minúsculas
-   * Palavras reservadas (como palavras-chave JavaScript) não podem ser usadas como nomes. Cuidado com outras palavras reservadas específicas da AF, como &quot;panel&quot;,&quot;name&quot;.
+   * Palavras reservadas (como palavras-chave do JavaScript) não podem ser usadas como nomes. Cuidado com outras palavras reservadas específicas de AF, como   como &quot;painel&quot;, &quot;nome&quot;.
    * Não inclua traços &quot;-&quot; em seus nomes
-* **Desenvolvimento do Forms**
-   * Os fragmentos de formulário devem ser considerados ao desenvolver formulários grandes. Ativar carregamento lento de fragmentos de formulário para tempos de carregamento mais rápidos
-   * **Modelo de dados**
+* **Desenvolvendo o Forms**
+   * Os fragmentos de formulário devem ser considerados ao desenvolver formulários grandes. Habilitar carregamento lento de fragmentos de formulário para carregamento mais rápido   vezes
+   * **DataModel**
       * É recomendável associar o formulário adaptável ao modelo de dados apropriado
 
    * **Eventos de objeto**

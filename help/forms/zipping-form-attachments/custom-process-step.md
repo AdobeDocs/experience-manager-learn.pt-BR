@@ -160,7 +160,7 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Verifique se você tem uma variável chamada  *no_of_attachment* do tipo Double no seu workflow para que esse código funcione.
+> Verifique se você tem uma variável chamada *no_of_attachments* do tipo Double em seu fluxo de trabalho para que esse código funcione.
 
 ## Próximas etapas
 

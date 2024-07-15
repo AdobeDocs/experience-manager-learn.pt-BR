@@ -26,9 +26,9 @@ O vídeo a seguir explica as etapas necessárias para incorporar um formulário 
 Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para obter os pré-requisitos, as práticas recomendadas etc.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
-Você pode baixar os arquivos de amostra usados no vídeo [daqui](assets/embedding-af-web-page.zip)
+Você pode baixar os arquivos de exemplo usados no vídeo [daqui](assets/embedding-af-web-page.zip)
 
-Este é o código usado para buscar o formulário adaptável e incorporar o formulário no contêiner identificado pelo nome da classe **direita**
+Este é o código usado para buscar o formulário adaptável e incorporar o formulário no contêiner identificado pelo nome de classe **right**
 
 ```javascript
 $(document).ready(function(){

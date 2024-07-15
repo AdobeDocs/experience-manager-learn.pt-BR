@@ -59,7 +59,7 @@ function handleFiles(formData) {
 ```
 
 O servlet montado em **_/bin/ExtractDataFromPDF_** extrai os dados do arquivo PDF e retorna o caminho do nó crx onde os dados extraídos estão armazenados.
-A variável [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) é usado para definir os dados do formulário adaptável.
+O método [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) é então usado para definir os dados do formulário adaptável.
 
 ## Próximas etapas
 

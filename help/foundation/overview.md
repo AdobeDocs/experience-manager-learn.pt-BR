@@ -33,15 +33,15 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="Entenda o Cloud Manager para AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Entender o Cloud Manager para o AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <strong>Entenda o Cloud Manager para AEM</strong>
+    <strong>Entender o Cloud Manager para AEM</strong>
     </a>
     </div>
     <p>
-    <em>O Cloud Manager para AEM fornece uma solução simples, mas eficiente, que permite gerenciar, inspecionar e realizar o autoatendimento de ambientes AEM com facilidade.</em>
+    O <em>Cloud Manager for AEM fornece uma solução simples, mas robusta, que facilita o gerenciamento, a inspeção e o autoatendimento de ambientes AEM.</em>
     <p>
   </td>
    <td>
@@ -54,7 +54,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
     </a>
     </div>
     <p>
-    <em>Explore como configurar a Sling Dynamic Include (SDI) e permitir que os componentes dinâmicos do AEM sempre forneçam conteúdo novo.</em>
+    <em>Saiba como configurar a Sling Dynamic Include (SDI) e permitir que os componentes dinâmicos do AEM sempre forneçam conteúdo novo.</em>
     <p>
   </td>
   <td>
@@ -67,7 +67,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
     </a>
     </div>
     <p>
-    <em>Um detalhamento de alto nível dos principais recursos para entender o, ao considerar a atualização para a versão mais recente do AEM.</em>
+    <em>Um detalhamento de alto nível dos principais recursos que você deve compreender ao considerar a atualização para a versão mais recente do AEM.</em>
     </p>
   </td>
 </tr>
@@ -77,7 +77,7 @@ O Adobe Experience Manager fornece um conjunto comum de recursos disponíveis pa
 
 ## Recursos adicionais
 
-* [Tutoriais as a Cloud Service do AEM](/help/cloud-service/overview.md)
+* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vídeos e tutoriais do AEM Sites](/help/sites/overview.md)
 * [Vídeos e tutoriais do AEM Assets](/help/assets/overview.md)
 * [Vídeos e tutoriais do AEM Forms](/help/forms/overview.md)

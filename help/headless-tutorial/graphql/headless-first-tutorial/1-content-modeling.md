@@ -41,16 +41,16 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
 
    ![Criar pasta](./assets/1/create-configuration.png)
 
-   Forneça um __título__ e __name__, e verifique __Consultas persistentes do GraphQL__ e __Modelos de fragmentos do conteúdo__.
+   Forneça um __título__ e __nome__ e verifique as __Consultas GraphQL persistidas__ e os __Modelos de fragmentos de conteúdo__.
 
 
 ## Modelos de fragmentos do conteúdo
 
-1. Navegue até __Ferramentas > Modelos de fragmentos do conteúdo__ e selecione a pasta com o nome da configuração criada na etapa 1.
+1. Navegue até __Ferramentas > Modelos de fragmento de conteúdo__ e selecione a pasta com o nome da configuração criada na etapa 1.
 
-   ![Pasta Modelo](./assets/1/model-folder.png)
+   ![Pasta de Modelo](./assets/1/model-folder.png)
 
-1. Dentro da pasta, selecione __Criar__ e nomeie o modelo __Teaser__. Adicione os seguintes tipos de dados à __Teaser__ modelo.
+1. Dentro da pasta, selecione __Criar__ e nomeie o modelo __Teaser__. Adicione os seguintes tipos de dados ao modelo __Teaser__.
 
    | Tipo de dados | Nome | Obrigatório | Opções |
    |----------|------|----------|---------|
@@ -78,20 +78,20 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
    |----------|------|----------|---------|
    | Referência de fragmento | Listar itens | sim | Renderizar como vários campos. O modelo de fragmento de conteúdo permitido é Oferta. |
 
-   ![Modelo de lista de imagens](./assets/1/imagelist-model.png)
+   ![Modelo de Lista de Imagens](./assets/1/imagelist-model.png)
 
 ## Fragmentos de conteúdo
 
-1. Agora navegue até Ativos e crie uma pasta para o novo site. Clique em criar e nomeie a pasta.
+1. Agora navegue até o Assets e crie uma pasta para o novo site. Clique em criar e nomeie a pasta.
 
    ![Adicionar pasta](./assets/1/create-folder.png)
 
-1. Depois que a pasta for criada, selecione-a e abra sua __Propriedades__.
-1. No da pasta __Configurações da nuvem__ selecione a configuração [criado anteriormente](#enable-content-fragments-and-graphql).
+1. Depois que a pasta for criada, selecione-a e abra suas __Propriedades__.
+1. Na guia __Configurações de Nuvem__ da pasta, selecione a configuração [criada anteriormente](#enable-content-fragments-and-graphql).
 
-   ![Pasta de ativos AEM Configuração em nuvem sem periféricos](./assets/1/cloud-config.png)
+   ![Configuração de nuvem do AEM Headless da pasta de ativos](./assets/1/cloud-config.png)
 
-   Clique na nova pasta e crie um teaser. Clique em __Criar__ e __Fragmento do conteúdo__ e selecione o __Teaser__ modelo. Nomear o modelo __Herói__ e clique em __Criar__.
+   Clique na nova pasta e crie um teaser. Clique em __Criar__ e __Fragmento do conteúdo__ e selecione o modelo __Teaser__. Nomeie o modelo __Hero__ e clique em __Create__.
 
    | Nome | Notas |
    |----------|------|
@@ -101,7 +101,7 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
    | Descrição | Deixe em branco |
    | Estilo | `Hero` |
 
-   ![fragmento herói](./assets/1/teaser-model.png)
+   ![fragmento principal](./assets/1/teaser-model.png)
 
 ## Pontos de extremidade GraphQL.
 
@@ -109,13 +109,13 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
 
    ![GraphiQL do AEM](./assets/1/endpoint-nav.png)
 
-1. Clique em __Criar__ e nomeie o novo endpoint e escolha a configuração recém-criada.
+1. Clique em __Criar__, nomeie o novo ponto de extremidade e escolha a configuração recém-criada.
 
-   ![Ponto de acesso do AEM Headless GraphQL](./assets/1/endpoint.png)
+   ![Ponto de extremidade do AEM Headless GraphQL](./assets/1/endpoint.png)
 
 ## Consultas persistentes de GraphQL
 
-1. Vamos testar o novo terminal. Navegue até __Ferramentas > Editor de consultas GraphQL__ e escolha nosso terminal para o menu suspenso no canto superior direito da janela.
+1. Vamos testar o novo terminal. Navegue até __Ferramentas > Editor de consultas do GraphQL__ e escolha nosso ponto de extremidade para o menu suspenso no canto superior direito da janela.
 
 1. No Editor de consultas, crie algumas consultas diferentes.
 
@@ -174,7 +174,7 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
    }
    ```
 
-   No __variáveis de consulta__ na parte inferior, digite:
+   Na entrada __variáveis de consulta__ na parte inferior, digite:
 
    ```json
    {
@@ -189,10 +189,10 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
 
    Execute a consulta para receber os resultados do fragmento de conteúdo criado anteriormente.
 
-1. Clique em __Salvar__  para criar uma consulta persistente (salvar) e nomear a consulta __teaser__. Isso nos permite fazer referência à consulta por nome no aplicativo.
+1. Clique em __Salvar__ para manter (salvar) a consulta e nomear a consulta __teaser__. Isso nos permite fazer referência à consulta por nome no aplicativo.
 
 ## Próximas etapas
 
-Parabéns! Você configurou o AEM as a Cloud Service com sucesso para permitir a criação de fragmentos de conteúdo e endpoints do GraphQL. Você também criou um modelo de fragmento de conteúdo e um fragmento de conteúdo, além de definir um terminal GraphQL e uma consulta persistente. Agora você está pronto para seguir para o próximo capítulo do tutorial, em que aprenderá a criar um aplicativo AEM Headless React que consome os fragmentos de conteúdo e o endpoint do GraphQL criados neste capítulo.
+Parabéns! Você configurou o AEM as a Cloud Service com êxito para permitir a criação de fragmentos de conteúdo e endpoints do GraphQL. Você também criou um modelo de fragmento de conteúdo e um fragmento de conteúdo, além de definir um terminal GraphQL e uma consulta persistente. Agora você está pronto para seguir para o próximo capítulo do tutorial, em que aprenderá a criar um aplicativo AEM Headless React que consome os fragmentos de conteúdo e o endpoint do GraphQL criados neste capítulo.
 
 [Próximo capítulo: APIs AEM Headless e React](./2-aem-headless-apis-and-react.md)

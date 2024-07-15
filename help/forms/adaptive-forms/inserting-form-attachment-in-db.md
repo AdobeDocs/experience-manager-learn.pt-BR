@@ -26,19 +26,19 @@ Para realizar esse caso de uso, as seguintes etapas foram seguidas
 
 ## Criar tabela de banco de dados para armazenar os dados do formulário e o anexo
 
-Uma tabela chamada newhire foi criada para conter os dados de formulário. Observe a imagem do nome da coluna do tipo **LONGBLOB** para armazenar o anexo do formulário
-![esquema de tabela](assets/insert-picture-table.png)
+Uma tabela chamada newhire foi criada para conter os dados de formulário. Observe a imagem de nome de coluna do tipo **LONGBLOB** para armazenar o anexo de formulário
+![esquema-tabela](assets/insert-picture-table.png)
 
 ## Criar modelo de dados do formulário
 
 Um modelo de dados de formulário foi criado para se comunicar com o banco de dados MySQL. Será necessário criar o seguinte
 
 * [Fonte de dados JDBC no AEM](./data-integration-technical-video-setup.md)
-* [Modelo de dados de formulário com base na fonte de dados JDBC](./jdbc-data-model-technical-video-use.md)
+* [Modelo de Dados de Formulário baseado na Fonte de Dados JDBC](./jdbc-data-model-technical-video-use.md)
 
 ## Criar fluxo de trabalho
 
-Ao configurar o formulário adaptável para enviar para um fluxo de trabalho AEM, você tem a opção de salvar os anexos do formulário em uma variável de fluxo de trabalho ou salvar os anexos em uma pasta especificada na carga. Para esse caso de uso, precisamos salvar os anexos em uma variável de fluxo de trabalho do tipo ArrayList of Document. Desse ArrayList, precisamos extrair o primeiro item e inicializar uma variável de documento. As variáveis de fluxo de trabalho chamadas **listOfDocuments** e **employeePhoto** foram criados.
+Ao configurar o formulário adaptável para enviar para um fluxo de trabalho AEM, você tem a opção de salvar os anexos do formulário em uma variável de fluxo de trabalho ou salvar os anexos em uma pasta especificada na carga. Para esse caso de uso, precisamos salvar os anexos em uma variável de fluxo de trabalho do tipo ArrayList of Document. Desse ArrayList, precisamos extrair o primeiro item e inicializar uma variável de documento. As variáveis de fluxo de trabalho chamadas **listOfDocuments** e **employeePhoto** foram criadas.
 Quando o formulário adaptável é enviado para acionar o fluxo de trabalho, uma etapa no fluxo de trabalho inicializará a variável employeePhoto usando o script ECMA. Veja a seguir o código de script ECMA
 
 ```javascript
@@ -55,7 +55,7 @@ log.info("Employee Photo updated");
 ```
 
 A próxima etapa do fluxo de trabalho é inserir dados e o anexo do formulário na tabela usando o componente de serviço Chamar modelo de dados de formulário.
-![insert-pic](assets/fdm-insert-pic.png)
+![inserir-imagem](assets/fdm-insert-pic.png)
 [O fluxo de trabalho completo com o exemplo de script ecma pode ser baixado daqui](assets/add-new-employee.zip).
 
 >[!NOTE]

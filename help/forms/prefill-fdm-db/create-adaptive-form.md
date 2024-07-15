@@ -25,7 +25,7 @@ Até agora criamos o seguinte
 * Fonte de dados agrupada da conexão Apache Sling
 * Modelo de dados de formulário baseado no RDBMS
 
-A próxima etapa é criar e configurar um Formulário adaptável para usar o modelo de dados de formulário.  Para começar, você pode [baixar e importar](assets/fdm-demo-af.zip) formulário de exemplo. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para listar os beneficiários do funcionário.
+A próxima etapa é criar e configurar um Formulário adaptável para usar o modelo de dados de formulário.  Para começar, você pode [baixar e importar](assets/fdm-demo-af.zip) o formulário de amostra. O formulário de amostra tem uma seção para exibir os detalhes do funcionário e outra seção para listar os beneficiários do funcionário.
 
 ## Associar formulário com modelo de dados de formulário
 
@@ -41,10 +41,10 @@ O formulário de amostra fornecido com este curso não está associado a nenhum 
 
 A primeira etapa é associar o serviço de preenchimento prévio ao formulário. Para associar o serviço de preenchimento prévio, siga as etapas mencionadas abaixo
 
-* Selecione o `FDMDemo` formulário
+* Selecione o formulário `FDMDemo`
 * Clique em _Editar_ para abrir o formulário no modo de edição
 * Selecione Container de formulário na hierarquia de conteúdo e clique no ícone de chave inglesa para abrir a folha de propriedades
-* Selecionar _Serviço de preenchimento do modelo de dados de formulário_ na lista suspensa Serviço de preenchimento prévio
+* Selecione o _serviço de Preenchimento de modelo de dados de formulário_ na lista suspensa Serviço de Preenchimento Prévio
 * Clique em azul ù para salvar as alterações
 
 * ![serviço de preenchimento](assets/fdm-prefill.png)
@@ -70,10 +70,10 @@ A próxima etapa é exibir os beneficiários do funcionário em forma de tabela.
 * Abra o formulário no modo de edição.
 * Expanda O Painel Raiz->Seus Beneficiários->Tabela
 * Selecione Row1 e clique no ícone da chave inglesa para abrir sua folha de propriedades.
-* Definir a referência de vinculação para **/newhire/GetEmployeeBeneficiaries**
+* Definir a Referência de Associação para **/newhire/GetEmployeeBeneficiaries**
 * Defina as Configurações de repetição - Contagem mínima para 1 e Contagem máxima para 5.
 * A configuração da Linha 1 deve ter a aparência da captura de tela abaixo
-  ![row-configure](assets/configure-row.PNG)
+  ![configuração de linha](assets/configure-row.PNG)
 * Clique no ícone azul de ù para salvar as alterações
 
 ## Associar células de linha

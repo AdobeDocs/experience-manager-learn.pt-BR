@@ -39,9 +39,9 @@ Este tutorial abordará os seguintes tópicos:
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis no [Guias do AEM - Projeto GitHub para dispositivos móveis WKND](https://github.com/adobe/aem-guides-wknd-mobile).
+O código-fonte e os pacotes de conteúdo estão disponíveis no [AEM Guides - Projeto GitHub do WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## AEM GraphQL versus AEM Content Services
 

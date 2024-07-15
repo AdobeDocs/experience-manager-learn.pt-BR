@@ -32,11 +32,11 @@ Atualize o package.json para incluir as dependências a seguir. No momento da es
 
 >[!NOTE]
 >
->A lista suspensa e o layout do cartão neste tutorial foram criados usando [Biblioteca da interface do usuário de material](https://mui.com/). Você precisará baixar os pacotes de Material UI apropriados para que o código funcione em seu sistema.
+>A lista suspensa e o layout do cartão neste tutorial foram criados usando a [Biblioteca de Interface do Usuário do Material](https://mui.com/). Você precisará baixar os pacotes de Material UI apropriados para que o código funcione em seu sistema.
 
 ## Configurar proxy
 
-O Compartilhamento de recursos entre origens (CORS) é um mecanismo de segurança que impede que os navegadores da Web façam solicitações para um domínio diferente daquele em que o aplicativo está hospedado. Os erros do CORS podem ocorrer ao tentar buscar dados de uma API hospedada em um domínio diferente. Ao configurar um proxy, você pode ignorar as restrições do CORS e fazer solicitações à API usando seu aplicativo React. Eu usei o seguinte código em um arquivo chamado setUpProxy.js na pasta src. **Altere o destino para apontar para a instância de publicação.**
+O Compartilhamento de recursos entre origens (CORS) é um mecanismo de segurança que impede que os navegadores da Web façam solicitações para um domínio diferente daquele em que o aplicativo está hospedado. Os erros do CORS podem ocorrer ao tentar buscar dados de uma API hospedada em um domínio diferente. Ao configurar um proxy, você pode ignorar as restrições do CORS e fazer solicitações à API usando seu aplicativo React. Eu usei o seguinte código em um arquivo chamado setUpProxy.js na pasta src. **Altere o destino para apontar para sua instância de publicação.**
 
 ```
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -56,7 +56,7 @@ module.exports = function(app) {
 };
 ```
 
-Será necessário também instalar e adicionar o **http-proxy-middleware** para o seu projeto.
+Você também precisará instalar e adicionar o módulo **http-proxy-middleware** ao seu projeto.
 
 ## Próximas etapas
 

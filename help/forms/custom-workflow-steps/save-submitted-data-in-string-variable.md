@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Extrair dados vinculados e salvá-los em uma variável de string
 
-Esse recurso permite incluir os dados enviados no corpo do email. A etapa de processo personalizado extrai o **dados vinculados** do envio do formulário adaptável e preenche uma variável do tipo string com os dados. Em seguida, você pode usar essa variável de sequência de caracteres para inserir os dados no modelo de email.
+Esse recurso permite incluir os dados enviados no corpo do email. A etapa de processo personalizada extrai os **dados vinculados** do envio do formulário adaptável e preenche uma variável do tipo string com os dados. Em seguida, você pode usar essa variável de sequência de caracteres para inserir os dados no modelo de email.
 A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
-![etapa do processo](assets/save-submitted-data-string.png)
+![etapa-processo](assets/save-submitted-data-string.png)
 
 Veja a seguir os parâmetros
 

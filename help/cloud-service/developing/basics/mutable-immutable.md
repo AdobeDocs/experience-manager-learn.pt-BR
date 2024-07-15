@@ -19,6 +19,6 @@ ht-degree: 1%
 
 # Conteúdo mutável e imutável
 
-Saiba mais sobre a importância e as diferenças do [conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) no AEM as a Cloud e como isso afeta a maneira como você se desenvolve.
+Saiba mais sobre a importância e as diferenças do [conteúdo mutável e imutável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) no AEM as a Cloud e como ele afeta a maneira como você se desenvolve.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)

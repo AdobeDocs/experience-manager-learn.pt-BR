@@ -27,7 +27,7 @@ Grupos de usuários fechados (CUGs) é um recurso usado para restringir o acesso
 
 ## Grupo de usuários fechado (CUG) com o AEM Assets
 
-* Projetado para restringir o acesso a ativos em uma instância de publicação do AEM.
+* Projetado para restringir o acesso a ativos em uma instância do AEM Publish.
 * Concede acesso de leitura a um conjunto de usuários/grupos.
 * O CUG só pode ser configurado no nível da pasta. O CUG não pode ser definido em ativos individuais.
 * As políticas CUG são automaticamente herdadas por qualquer subpasta e ativo aplicado.
@@ -39,12 +39,12 @@ Tanto o grupo de usuários fechado (CUG) quanto as listas de controle de acesso 
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso Pretendido | Configure e aplique permissões para o conteúdo no **atual** Instância do AEM. | Configurar políticas CUG para conteúdo no AEM **autor** instância. Aplicação de políticas CUG para conteúdo no AEM **publicar** instância(s). |
+| Uso Pretendido | Configure e aplique permissões para o conteúdo na instância do AEM **current**. | Configure as políticas CUG para o conteúdo na instância do AEM **author**. Aplique políticas de CUG para conteúdo em instâncias de AEM **publicar**. |
 | Níveis de permissão | Define permissões concedidas/negadas para usuários/grupos para todos os níveis: Ler, Modificar, Criar, Excluir, Ler ACL, Editar ACL, Replicar. | Concede acesso de leitura a um conjunto de usuários/grupos. Nega acesso de leitura a *todos os outros* usuários/grupos. |
-| Publicação | ACLs são *não* publicado com conteúdo. | Políticas de CUG *são* publicado com conteúdo. |
+| Publicação | As ACLs estão *não* publicadas com conteúdo. | As políticas CUG *são* publicadas com conteúdo. |
 
 ## Links de suporte {#supporting-links}
 
-* [Gerenciar ativos e grupos de usuários fechados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [Criação de um grupo fechado de usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [Gerenciamento de Assets e grupos de usuários fechados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [Criando um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
 * [Documentação de grupo de usuários fechado do Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

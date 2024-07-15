@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para solucionar problemas relacionados ao DDX
 
-*Este vídeo aborda as etapas para capturar as informações necessárias para solucionar problemas relacionados ao DDX no serviço Forms Assembler.*
+*Este vídeo mostra as etapas para capturar as informações necessárias para solucionar problemas relacionados ao DDX no serviço Forms Assembler.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)

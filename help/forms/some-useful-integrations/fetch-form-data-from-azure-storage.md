@@ -22,7 +22,7 @@ ht-degree: 0%
 Este artigo mostra como preencher um formulário adaptável com os dados armazenados no armazenamento do Azure.
 Pressupõe-se que você tenha armazenado os dados do formulário adaptável no armazenamento do Azure e agora queira preencher previamente seu formulário adaptável com esses dados.
 >[!NOTE]
->O código deste artigo não funciona com os componentes principais baseados em formulário adaptável.[O artigo equivalente para o formulário adaptável baseado em componentes principais está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>O código deste artigo não funciona com os componentes principais baseados em formulário adaptável.[O artigo equivalente para o formulário adaptável baseado em componente principal está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
 
 
 ## Criar solicitação GET
@@ -88,8 +88,8 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Especifique os valores apropriados na Configuração do Portal do Azure usando o console de configuração OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
-* [Pré-visualizar e enviar o formulário Conta Bancária](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [Visualizar e enviar o formulário BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Verifique se os dados estão armazenados no contêiner de armazenamento do Azure de sua escolha. Copie a ID do blob.
 
-* [Visualizar o formulário Conta Bancária](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) e especifique a ID de Blob como um parâmetro de guid na URL para que o formulário seja pré-preenchido com os dados do armazenamento do Azure
+* [Visualize o formulário BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) e especifique a ID Blob como um parâmetro guid na URL para o formulário a ser preenchido com os dados do armazenamento do Azure

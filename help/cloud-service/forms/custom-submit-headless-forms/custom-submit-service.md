@@ -26,16 +26,16 @@ Para escrever um serviço de envio personalizado, as seguintes etapas foram segu
 
 ## Criar projeto AEM
 
-Se você já tiver um projeto AEM Forms Cloud Service existente, é possível [ir para o serviço de envio personalizado de gravação](#Write-the-custom-submit-service)
+Se você já tiver um projeto AEM Forms Cloud Service existente, pode [pular para a gravação do serviço de envio personalizado](#Write-the-custom-submit-service)
 
 * Crie uma pasta chamada cloudmanager na unidade c.
 * Navegar até esta pasta recém-criada
-* Copie e cole o conteúdo de [este arquivo de texto](./assets/creating-maven-project.txt) na janela do prompt de comando. Talvez seja necessário alterar DarchetypeVersion=41 dependendo da [versão mais recente](https://github.com/adobe/aem-project-archetype/releases). No momento em que este artigo foi escrito, a última versão era a 41.
+* Copie e cole o conteúdo de [este arquivo de texto](./assets/creating-maven-project.txt) na janela de prompt de comando. Talvez seja necessário alterar DarchetypeVersion=41, dependendo da [versão mais recente](https://github.com/adobe/aem-project-archetype/releases). No momento em que este artigo foi escrito, a última versão era a 41.
 * Execute o comando pressionando a tecla Enter. Se tudo correr corretamente, você verá a mensagem de sucesso da build.
 
 ## Escrever o serviço de envio personalizado{#Write-the-custom-submit-service}
 
-Inicie o IntelliJ e abra o projeto AEM. Crie uma nova classe java chamada **HandleRegistrationFormSubmission** como mostrado na captura de tela abaixo
+Inicie o IntelliJ e abra o projeto AEM. Crie uma nova classe java chamada **HandleRegistrationFormSubmission** conforme mostrado na captura de tela abaixo
 ![custom-submit-service](./assets/custom-submit-service.png)
 
 O código a seguir foi gravado para implementar o serviço
@@ -88,9 +88,9 @@ public class HandleRegistrationFormSubmission implements FormSubmitActionService
 
 ## Crie um nó crx em aplicativos
 
-Expanda o nó ui.apps e crie um novo pacote chamado **HandleRegistrationFormSubmission** no nó aplicativos, como mostrado na captura de tela abaixo
+Expanda o nó ui.apps e crie um novo pacote chamado **HandleRegistrationFormSubmission** no nó apps, como mostrado na captura de tela abaixo
 ![crx-node](./assets/crx-node.png)
-Crie um arquivo chamado .content.xml sob o **HandleRegistrationFormSubmission**. Copie e cole o seguinte código no arquivo .content.xml
+Crie um arquivo chamado .content.xml em **HandleRegistrationFormSubmission**. Copie e cole o seguinte código no arquivo .content.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -102,7 +102,7 @@ Crie um arquivo chamado .content.xml sob o **HandleRegistrationFormSubmission**.
     submitService="Core Custom AF Submit"/>
 ```
 
-O valor de **submitService** o elemento deve corresponder  **serviceName = &quot;Envio de AF personalizado principal&quot;** na implementação FormSubmitActionService.
+O valor do elemento **submitService** deve corresponder ao **serviceName = &quot;Envio de AF personalizado principal&quot;** na implementação de FormSubmitActionService.
 
 ## Implante o código na instância local do AEM Forms
 
@@ -118,10 +118,10 @@ Isso implantará o código como um único pacote na instância do autor
 ## Envie o código ao Cloud Manager e Implante o código
 
 Depois de verificar o código na instância local, envie o código para a instância da nuvem.
-Envie as alterações para o repositório Git local e, em seguida, para o repositório do cloud manager. Você pode consultar o  [Configuração do Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [envio do projeto AEM para o repositório do cloud manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implantação no ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) artigos.
+Envie as alterações para o repositório Git local e, em seguida, para o repositório do cloud manager. Você pode consultar os [artigos sobre configuração do Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [envio do projeto AEM para o repositório do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implantação no ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Depois que o pipeline for executado com sucesso, você poderá associar a ação de envio do seu formulário ao manipulador de envio personalizado, conforme mostrado na captura de tela abaixo
-![ação de envio](./assets/configure-submit-action.png)
+![ação-envio](./assets/configure-submit-action.png)
 
 ## Próximas etapas
 

@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Placa perfurada AEM
 
-Configure o repositório Git de código com o [Modelo padrão AEM](https://github.com/adobe/aem-boilerplate) para Edge Delivery Services.
+Configure o repositório Git de código com o [modelo padronizado para AEM](https://github.com/adobe/aem-boilerplate) para o Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

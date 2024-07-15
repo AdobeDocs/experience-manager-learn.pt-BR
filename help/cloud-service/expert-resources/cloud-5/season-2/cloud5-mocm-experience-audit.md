@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Cloud 5 - Mistérios do Cloud Manager - Auditoria de experiência
 
-Na primeira parte de uma série de três partes, exploramos as noções básicas do Cloud Manager e mergulhamos nos recursos de Auditoria de experiência.
+Na primeira parte de uma série de três, exploramos os conceitos básicos do Cloud Manager e mergulhamos nos recursos da Auditoria de experiência.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 

@@ -24,7 +24,7 @@ Saiba como tornar os sites rápidos com o Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obter detalhes completos sobre o Edge Delivery Services e seus recursos.
+Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obter detalhes completos sobre o Edge Delivery Services e seus recursos.
 
 ## Introdução ao Edge Delivery Services
 
@@ -70,7 +70,8 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <a href="./developing/aem-boilerplate.md" title="Usar modelo padronizado"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurar Modelo">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configuração
+                Boilerplate">
             </a>
           </figure>
         </div>
@@ -79,7 +80,7 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/aem-boilerplate.md" title="Usar modelo padrão">AEM Boilerplate</a>
+              <a href="./developing/aem-boilerplate.md" title="Usar modelo padrão">Modelo do AEM</a>
             </p>
             <p class="is-size-6">Use o modelo de boletim AEM para configurar o repositório de código.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
@@ -110,7 +111,7 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/content-repository.md" title="Vincular unidade Google">Vincular unidade Google</a>
+              <a href="./developing/content-repository.md" title="Vincular unidade Google">Vincular Unidade Google</a>
             </p>
             <p class="is-size-6">Use o Google Drive como repositório para todo o conteúdo.</p>
             <a href="./developing/content-repository.md" class="spectrum-Button
@@ -160,10 +161,10 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Visualizar e publicar conteúdo"
+            <a href="./developing/preview-and-publish.md" title="Visualização e conteúdo do Publish"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Visualizar e publicar conteúdo">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Visualização e conteúdo do Publish">
             </a>
           </figure>
         </div>
@@ -172,7 +173,7 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Visualizar e publicar conteúdo">Pré-visualizar e publicar conteúdo</a>
+              <a href="./developing/preview-and-publish.md" title="Visualização e conteúdo do Publish">Visualizar e publicar conteúdo</a>
             </p>
             <p class="is-size-6">Pré-visualize e publique conteúdo usando o AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
@@ -300,7 +301,7 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/git.md" title="Integrar ao Git">Integrar ao Git</a>
+              <a href="./developing/git.md" title="Integrar ao Git">Integrar com o Git</a>
             </p>
             <p class="is-size-6">Configure Git e Edge Delivery Services.</p>
             <a href="./developing/git.md" class="spectrum-Button
@@ -401,7 +402,7 @@ Revise o [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/delete-page.md" title="Excluir páginas">Excluir páginas</a>
+              <a href="./how-to/delete-page.md" title="Excluir páginas">Excluindo páginas</a>
             </p>
             <p class="is-size-6">Saiba como excluir páginas.</p>
             <a href="./how-to/delete-page.md" class="spectrum-Button

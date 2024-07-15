@@ -24,4 +24,4 @@ Este vídeo ilustra como criar um Modelo de dados de formulário com base em uma
 
 >[!NOTE]
 >
->Qualquer fonte de dados RDBMS pode ser usada, desde que os drivers de banco de dados necessários sejam implantados no AEM como um pacote OSGi. A configuração de uma fonte de dados RDBMS no AEM é abordada em [Configurar a integração de dados com o AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Qualquer fonte de dados RDBMS pode ser usada, desde que os drivers de banco de dados necessários sejam implantados no AEM como um pacote OSGi. A configuração de uma fonte de dados RDBMS no AEM é abordada em [Configurar Integração de Dados com o AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).

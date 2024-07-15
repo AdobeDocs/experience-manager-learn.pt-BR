@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Registro de extensão
 
-As extensões da interface do usuário do AEM são aplicativos especializados do App Builder, com base no React e usam o [Espectro React](https://react-spectrum.adobe.com/react-spectrum/) Estrutura da interface.
+As extensões da interface do usuário do AEM são aplicativos especializados do App Builder, com base no React e usam a estrutura da interface do usuário [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
 
 Para definir onde e como a extensão da interface do usuário do AEM é exibida, duas configurações são necessárias no aplicativo App Builder da extensão: roteamento de aplicativos e o registro da extensão.
 
 ## Rotas de aplicativo{#app-routes}
 
-A extensão do `App.js` declara o [Roteador React](https://reactrouter.com/en/main) que inclui uma rota de índice que registra a extensão na interface do AEM.
+A extensão `App.js` declara o [roteador React](https://reactrouter.com/en/main) que inclui uma rota de índice que registra a extensão na interface do AEM.
 
 A rota de índice é invocada quando a interface do usuário do AEM é carregada inicialmente, e o destino dessa rota define como a extensão é exposta no console.
 
@@ -53,15 +53,15 @@ function App(props) {
 
 ## Registro de extensão
 
-`ExtensionRegistration.js` deve ser carregado imediatamente por meio da rota de índice da extensão e atua como o ponto de registro da extensão.
+`ExtensionRegistration.js` deve ser carregado imediatamente por meio da rota de índice da extensão e atua como ponto de registro da extensão.
 
-Com base no modelo de extensão da interface do usuário AEM selecionado quando [inicializar a extensão de aplicativo App Builder](./app-initialization.md), diferentes pontos de extensão são compatíveis.
+Com base no modelo de extensão da interface do usuário AEM selecionado ao [inicializar a extensão do aplicativo App Builder](./app-initialization.md), há suporte para diferentes pontos de extensão.
 
 + [Pontos de extensão da interface do usuário de fragmentos de conteúdo](./content-fragments/overview.md#extension-points)
 
 ## Incluir extensões condicionalmente
 
-As extensões da interface do usuário do AEM podem executar uma lógica personalizada para limitar os ambientes AEM em que a extensão aparece. Essa verificação é realizada antes da variável `register` chame no `ExtensionRegistration` e retornará imediatamente se a extensão não for exibida.
+As extensões da interface do usuário do AEM podem executar uma lógica personalizada para limitar os ambientes AEM em que a extensão aparece. Essa verificação é executada antes da chamada `register` no componente `ExtensionRegistration` e retorna imediatamente se a extensão não deve ser exibida.
 
 Esta verificação tem contexto limitado disponível:
 
@@ -70,10 +70,10 @@ Esta verificação tem contexto limitado disponível:
 
 As verificações mais comuns para carregar uma extensão são:
 
-+ Uso do host AEM (`new URLSearchParams(window.location.search).get('repo')`) para determinar se a extensão deve ser carregada.
++ Usar o host AEM (`new URLSearchParams(window.location.search).get('repo')`) para determinar se a extensão deve ser carregada.
    + Mostrar apenas a extensão em ambientes AEM que fazem parte de um programa específico (como mostrado no exemplo abaixo).
    + Mostrar apenas a extensão em um ambiente AEM específico (host AEM).
-+ Uso de um [Ação do Adobe I/O Runtime](./runtime-action.md) para fazer uma chamada HTTP ao AEM a fim de determinar se o usuário atual deve ver a extensão.
++ Usar uma [ação do Adobe I/O Runtime](./runtime-action.md) para fazer uma chamada HTTP para AEM a fim de determinar se o usuário atual deve ver a extensão.
 
 O exemplo abaixo ilustra a limitação da extensão a todos os ambientes no programa `p12345`.
 

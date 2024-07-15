@@ -19,28 +19,28 @@ ht-degree: 0%
 
 # Conexões HTTP/HTTPS em portas fora do padrão para saída de porta flexível
 
-As conexões HTTP/HTTPS em portas fora do padrão (não 80/443) devem ser enviadas por proxy do AEM as a Cloud Service, no entanto, elas não precisam de nenhum `portForwards` e podem usar redes avançadas AEM `AEM_PROXY_HOST` e uma porta de proxy reservada `AEM_HTTP_PROXY_PORT` ou `AEM_HTTPS_PROXY_PORT` dependendo de, o destino é HTTP/HTTPS.
+As conexões HTTP/HTTPS em portas fora do padrão (não 80/443) devem ser enviadas por proxy do AEM as a Cloud Service, no entanto, elas não precisam de regras `portForwards` especiais e podem usar o `AEM_PROXY_HOST` da rede avançada AEM e uma porta de proxy reservada `AEM_HTTP_PROXY_PORT` ou `AEM_HTTPS_PROXY_PORT`, dependendo se o destino é HTTP/HTTPS.
 
 ## Suporte avançado a rede
 
 O código de exemplo a seguir é suportado pelas seguintes opções avançadas de rede.
 
-Assegure a [apropriado](../advanced-networking.md#advanced-networking) a configuração avançada de rede foi definida antes de seguir este tutorial.
+Verifique se a configuração avançada de rede [apropriada](../advanced-networking.md#advanced-networking) foi definida antes de seguir este tutorial.
 
-| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede privada virtual](../vpn.md) |
+| Sem rede avançada | [Saída de porta flexível](../flexible-port-egress.md) | [Endereço IP de saída dedicado](../dedicated-egress-ip-address.md) | [Rede Virtual Privada](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✘ | ✘ |
 
 >[!CAUTION]
 >
-> Este exemplo de código é somente para [Saída flexível da porta](../flexible-port-egress.md). Um exemplo de código semelhante, mas diferente, está disponível para [Conexões HTTP/HTTPS em portas fora do padrão para VPN e endereço IP de saída dedicado](./http-dedicated-egress-ip-vpn.md).
+> Este exemplo de código é somente para [Saída de porta flexível](../flexible-port-egress.md). Um exemplo de código semelhante, mas diferente, está disponível para [conexões HTTP/HTTPS em portas não padrão para VPN e endereço IP de saída dedicado](./http-dedicated-egress-ip-vpn.md).
 
 ## Exemplo de código
 
 Este exemplo de código Java™ é de um serviço OSGi que pode ser executado no AEM as a Cloud Service que faz uma conexão HTTP com um servidor Web externo no 8080. As conexões com servidores Web HTTPS usam as variáveis de ambiente `AEM_PROXY_HOST` e `AEM_HTTPS_PROXY_PORT` (padrão para `proxy.tunnel:3128` em versões AEM &lt; 6094).
 
 >[!NOTE]
-> Recomenda-se a [APIs HTTP do Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) são usados para fazer chamadas HTTP/HTTPS do AEM.
+> Recomenda-se que as [APIs HTTP do Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) sejam usadas para fazer chamadas HTTP/HTTPS do AEM.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

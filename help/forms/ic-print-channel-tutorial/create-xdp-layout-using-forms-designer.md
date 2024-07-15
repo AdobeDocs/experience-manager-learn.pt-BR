@@ -1,6 +1,6 @@
 ---
 title: Criar layout usando o Forms Designer
-description: Esta é a parte 4 do tutorial em várias partes para criar seu primeiro documento de comunicação interativa para o canal de impressão. Nesta parte, analisamos o arquivo de layout criado com o AEM Forms Designer.
+description: Esta é a parte 4 do tutorial em várias partes para a criação do primeiro documento de comunicação interativa para o canal de impressão.Nesta parte, analisaremos o arquivo de layout criado com o AEM Forms Designer.
 feature: Interactive Communication
 doc-type: Tutorial
 version: 6.4,6.5

@@ -26,8 +26,8 @@ As avaliações de maturidade permitem a avaliação e a adesão a padrões e pr
 
 Para obter as práticas recomendadas sobre administração, desenvolvimento ou criação, consulte os seguintes recursos:
 
-* [Administração de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
-* [Desenvolvimento de práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
+* [Administrando práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
+* [Desenvolvendo práticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
 * [Práticas recomendadas de criação](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
 
 Cada uma dessas áreas de práticas recomendadas acima também inclui outras práticas recomendadas para criação, desenvolvimento e implantação do AEM.

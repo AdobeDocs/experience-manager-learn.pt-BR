@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Trabalhadores de borda
+title: Cloud 5 - Trabalhadores da Edge
 description: Explore a importância dos trabalhadores de borda no AEM Sites e no Edge Delivery Services e como integrá-los aos seus sistemas de back-end.
 feature: Edge Delivery Services
 topic: Development
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 - Trabalhadores de borda
+# Cloud 5 - Trabalhadores da Edge
 
 Explore a importância dos trabalhadores de borda no AEM Sites e no Edge Delivery Services e como integrá-los aos seus sistemas de back-end.
 

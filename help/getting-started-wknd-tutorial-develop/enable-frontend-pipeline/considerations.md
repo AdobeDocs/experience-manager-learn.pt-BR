@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Considerações sobre desenvolvimento
 
-Depois de permitir que o pipeline de front-end implante apenas os recursos de front-end no ambiente as a Cloud Service do AEM, há algum impacto no desenvolvimento local do AEM e é necessário ajustar o modelo de ramificação Git.
+Depois de permitir que o pipeline de front-end implante apenas os recursos de front-end no ambiente do AEM as a Cloud Service, há algum impacto no desenvolvimento local do AEM e é necessário ajustar o modelo de ramificação Git.
 
 ## Objetivo
 
@@ -37,9 +37,9 @@ Depois de permitir que o pipeline de front-end implante apenas os recursos de fr
 
 ## Abordagem de desenvolvimento ajustada
 
-* Para o desenvolvimento local usando o SDK do AEM, a equipe de desenvolvimento de back-end ainda precisa da geração clientlib via `ui.frontend` módulo, mas durante a implantação do Cloud Manager no ambiente as a Cloud Service AEM, é necessário ignorá-lo. Isso apresenta um desafio sobre como isolar as alterações de configuração do projeto descritas na [Atualizar projeto](update-project.md) capítulo.
+* Para o desenvolvimento local usando o SDK do AEM, a equipe de desenvolvimento de back-end ainda precisa da geração de clientlib por meio do módulo `ui.frontend`, mas durante a implantação do Cloud Manager no ambiente do AEM as a Cloud Service, é necessário ignorá-la. Isso revela um desafio sobre como isolar as alterações de configuração do projeto descritas no capítulo [Atualizar projeto](update-project.md).
 
-A __solução__ pode ser ajustar o modelo de ramificação Git e garantir que as alterações na configuração do projeto AEM nunca retornem para a __desenvolvimento local__ ramificar o AEM que os desenvolvedores de back-end usam.
+Uma __solução__ pode ser ajustar seu modelo de ramificação Git e garantir que as alterações de configuração do projeto AEM nunca retornem à ramificação __de desenvolvimento local__ que os desenvolvedores de back-end do AEM usam.
 
 
-* Como parte de uma melhoria contínua do seu projeto AEM, se você introduzir novos componentes ou atualizar um componente existente que tenha alterações em ambos `ui.app` e `ui.frontend` , você precisa executar pipelines de pilha completa e de front-end.
+* Como parte de um aprimoramento contínuo do seu projeto AEM, se você introduzir novos componentes ou atualizar um componente existente que tenha alterações nos módulos `ui.app` e `ui.frontend`, será necessário executar pipelines de pilha completa e de front-end.

@@ -1,5 +1,5 @@
 ---
-title: Configurar fonte de dados
+title: Configurar o Data Source
 description: Criar DataSource apontando para o banco de dados MySQL
 feature: Adaptive Forms
 type: Tutorial
@@ -18,17 +18,17 @@ ht-degree: 3%
 
 ---
 
-# Configurar fonte de dados
+# Configurar o Data Source
 
-Há muitas maneiras pelas quais o AEM permite a integração com um banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração da fonte de dados agrupada da conexão Apache Sling por meio da [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar a solução [Drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) ao AEM.
+Há muitas maneiras pelas quais o AEM permite a integração com um banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração de DataSource agrupada da conexão Apache Sling por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+A primeira etapa é baixar e implantar os [drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados para AEM.
 Em seguida, defina as propriedades da Fonte de dados agrupada da conexão do Sling específicas para seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O esquema de banco de dados é fornecido a você como parte deste tutorial de ativos.
 
 >[!NOTE]
->Nomeie sua fonte de dados `StoreAndRetrieveAfData` pois esse é o nome usado no serviço OSGi.
+>Nomeie sua fonte de dados `StoreAndRetrieveAfData`, pois este é o nome usado no serviço OSGi.
 
 
-![fonte de dados](assets/data-source.JPG)
+![fonte-de-dados](assets/data-source.JPG)
 
 | Nome de propriedade | Valor de propriedade |   |
 |---------------------|------------------------------------------------------------------------------------|---|
@@ -42,11 +42,11 @@ Em seguida, defina as propriedades da Fonte de dados agrupada da conexão do Sli
 
 
 O seguinte banco de dados foi usado para este caso de uso. O banco de dados tem uma tabela chamada `formdatawithattachments` com as 4 colunas conforme mostrado na captura de tela abaixo.
-![data-base](assets/table-schema.JPG)
+![banco de dados](assets/table-schema.JPG)
 
-* A coluna **afdata** manterá os dados do formulário adaptável.
-* A coluna **attachmentsInfo** manterá as informações sobre os anexos do formulário.
-* As colunas **phoneNumber** manterá o número de celular da pessoa que preenche o formulário.
+* A coluna **afdata** conterá os dados de formulário adaptáveis.
+* A coluna **attachmentsInfo** conterá as informações sobre os anexos de formulário.
+* As colunas **telephoneNumber** conterão o número de celular da pessoa que está preenchendo o formulário.
 
 Crie o banco de dados importando o [esquema de banco de dados](assets/data-base-schema.sql)
 usando o MySQL workbench.
@@ -54,14 +54,14 @@ usando o MySQL workbench.
 ## Criar modelo de dados do formulário
 
 Crie o modelo de dados de formulário e baseie-o na fonte de dados criada na etapa anterior.
-Configure o **obter** serviço deste modelo de dados de formulário, conforme mostrado na captura de tela abaixo.
-Verifique se você não está retornando um storage no **obter** serviço.
+Configure o serviço **get** desse modelo de dados de formulário conforme mostrado na captura de tela abaixo.
+Verifique se você não está retornando uma matriz no serviço **get**.
 
-O objetivo do presente **obter** serviço é buscar o número de telefone associado à id do aplicativo.
+A finalidade deste serviço **get** é buscar o número de telefone associado à identificação do aplicativo.
 
-![get-service](assets/get-service.JPG)
+![obter-serviço](assets/get-service.JPG)
 
-Esse modelo de dados de formulário será usado no **FormuláriodeMinhaConta** para obter o número de telefone associado à id do aplicativo.
+Este modelo de dados de formulário será usado no **MyAccountForm** para buscar o número de telefone associado à ID do aplicativo.
 
 ## Próximas etapas
 

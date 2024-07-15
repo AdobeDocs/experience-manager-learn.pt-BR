@@ -26,7 +26,7 @@ Para realizar esse caso de uso, precisamos executar as seguintes etapas:
 * Lidar com o envio de PDF do Acrobat/Reader
 * Acione o fluxo de trabalho do Adobe Experience Manager (AEM) para revisar o PDF enviado
 
-Este tutorial aborda as etapas necessárias para realizar o caso de uso acima. Exemplos de código e ativos relacionados a este tutorial são [disponível aqui.](part-four.md)
+Este tutorial aborda as etapas necessárias para realizar o caso de uso acima. Exemplos de código e ativos relacionados a este tutorial estão [disponíveis aqui.](part-four.md)
 
 O vídeo a seguir fornece uma visão geral do caso de uso
 

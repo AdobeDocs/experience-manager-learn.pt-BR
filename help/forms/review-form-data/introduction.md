@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação de um componente de resumo para revisar e editar dados de formulário antes de enviar o formulário.
 
-![review-form-data](assets/review-form-data.png)
+![formulário-dados-revisão](assets/review-form-data.png)
 
 Para seguir este tutorial, é recomendável que você tenha o seguinte instalado:
 

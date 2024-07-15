@@ -23,30 +23,30 @@ ht-degree: 0%
 
 ![Coluna de grade personalizada do Console de fragmentos de conteúdo](./assets/custom-grid-columns/hero.png){align="center"}
 
-Colunas de grade personalizadas podem ser adicionadas ao Console de fragmentos de conteúdo usando o  `contentFragmentGrid` ponto de extensão. Este exemplo mostra como adicionar uma coluna personalizada que exibe a página Fragmentos de conteúdo, com base em sua última data modificada, em formato legível por humanos.
+Colunas de grade personalizadas podem ser adicionadas ao Console de Fragmentos de Conteúdo usando o ponto de extensão `contentFragmentGrid`. Este exemplo mostra como adicionar uma coluna personalizada que exibe a página Fragmentos de conteúdo, com base em sua última data modificada, em formato legível por humanos.
 
 ## Ponto de extensão
 
-Este exemplo se estende ao ponto de extensão `contentFragmentGrid` para adicionar uma coluna personalizada ao Console de fragmentos de conteúdo.
+Este exemplo se estende ao ponto de extensão `contentFragmentGrid` para adicionar uma coluna personalizada ao Console de Fragmentos de Conteúdo.
 
 | IU do AEM estendida | Ponto de extensão |
 | ------------------------ | --------------------- | 
-| [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colunas de grade](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
+| [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colunas da Grade](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Exemplo de extensão
 
-O exemplo a seguir cria uma coluna personalizada, `Age` que exibe a idade do fragmento de conteúdo em formato legível por humanos. A idade é calculada a partir da data da última modificação do fragmento de conteúdo.
+O exemplo a seguir cria uma coluna personalizada, `Age`, que exibe a idade do fragmento de conteúdo em formato legível por humanos. A idade é calculada a partir da data da última modificação do fragmento de conteúdo.
 
 O código mostra como os metadados do fragmento de conteúdo podem ser obtidos no arquivo de registro da extensão e como o conteúdo JSON do fragmento de conteúdo pode ser transformado pode ser exportado.
 
-Este exemplo usa o [Luxon](https://moment.github.io/luxon/) para calcular a idade do Fragmento de conteúdo, instalado via `npm i luxon`.
+Este exemplo usa a biblioteca [Luxon](https://moment.github.io/luxon/) para calcular a idade do Fragmento de Conteúdo, instalado via `npm i luxon`.
 
 ### Registro de extensão
 
 `ExtensionRegistration.js`, mapeado para a rota index.html, é o ponto de entrada para a extensão AEM e define:
 
 + O local da extensão injeta a si mesmo (`contentFragmentGrid`) na experiência de criação do AEM
-+ A definição da coluna personalizada, no campo `getColumns()` função
++ A definição da coluna personalizada, na função `getColumns()`
 + Os valores de cada coluna personalizada, por linha
 
 ```javascript
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### Dados do fragmento de conteúdo
 
-A variável `render(..)` método em `getColumns()` recebe uma matriz de fragmentos. Cada objeto na matriz representa uma linha na grade e contém os seguintes metadados sobre o fragmento de conteúdo. Esses metadados podem ser usados para colunas personalizadas populares na grade.
+O método `render(..)` em `getColumns()` recebeu uma matriz de fragmentos. Cada objeto na matriz representa uma linha na grade e contém os seguintes metadados sobre o fragmento de conteúdo. Esses metadados podem ser usados para colunas personalizadas populares na grade.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-Exemplo de Fragmento de conteúdo JSON que está disponível como um elemento do `fragments` parâmetro no `render(..)` método.
+Exemplo de Fragmento de Conteúdo JSON que está disponível como um elemento do parâmetro `fragments` no método `render(..)`.
 
 ```json
 {
@@ -208,9 +208,9 @@ Se outros dados forem necessários para preencher a coluna personalizada, as sol
 
 >[!IMPORTANT]
 >
-> Verifique se a instância do autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens em que o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem de Estágio do AppBuilder e a origem de Produção do AppBuilder.
+> Verifique se a instância do Autor AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens em que o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
 >
-> Como alternativa, a extensão pode chamar uma [Ação do AppBuilder](../../runtime-action.md) que faz a solicitação ao AEM Author em nome da extensão.
+> Como alternativa, a extensão pode chamar uma [ação do AppBuilder](../../runtime-action.md) personalizada que faz a solicitação ao AEM Author em nome da extensão.
 
 
 ```javascript
@@ -229,7 +229,7 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 O resultado do método de renderização é um objeto JavaScript cujas chaves são o caminho do Fragmento de conteúdo (ou o `fragment.id`) e o valor é o valor a ser exibido na coluna.
 
-Por exemplo, os resultados dessa extensão para o `age` são:
+Por exemplo, os resultados desta extensão para a coluna `age` são:
 
 ```json
 {

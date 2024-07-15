@@ -25,7 +25,7 @@ Para clientes com o Dynamic Media e o Adobe Analytics, agora é possível rastre
 
 >[!NOTE]
 >
-> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Também é necessário [integrar tags à instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR).
+> Execute o Adobe Experience Manager no modo Dynamic Media Scene7 para essa funcionalidade. Também é necessário [integrar marcas à instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR).
 
 Com a introdução da extensão do Visualizador do Dynamic Media, a Adobe Experience Manager agora oferece suporte avançado de análise para ativos fornecidos com visualizadores do Dynamic Media (5.13), fornecendo controle mais granular sobre o rastreamento de eventos quando um Visualizador do Dynamic Media é usado em uma página do Sites.
 
@@ -166,6 +166,6 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
 
 ## Recursos adicionais{#additional-resources}
 
-* [Integração do AEM com tags na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
-* [Execução do Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
-* [Integração do Dynamic Media Viewers com o Adobe Analytics usando tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
+* [Integrando AEM com marcas na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
+* [Executando o Adobe Experience Manager no modo Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Integrando visualizadores do Dynamic Media com o Adobe Analytics usando tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

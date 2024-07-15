@@ -24,7 +24,7 @@ O editor de regras permite que os usuários adicionem lógica ao AEM Adaptive Fo
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Algumas das melhorias no Editor de regras incluem:**
+**Algumas das melhorias no Editor de Regras incluem:**
 
 * Os componentes de formulário de vários valores exibem as opções de componente automaticamente
 * A capacidade de especificar um serviço Web WSDL no editor visual

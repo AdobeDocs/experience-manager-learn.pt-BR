@@ -30,7 +30,7 @@ A Camada de dados de clientes Adobe apresenta um método padrão para coletar e 
 
 ## Explorar a camada de dados
 
-Você pode ter uma ideia da funcionalidade integrada da Camada de dados do cliente Adobe apenas usando as ferramentas de desenvolvedor do seu navegador e o Live [Site de referência da WKND](https://wknd.site/us/en.html).
+Você pode ter uma ideia da funcionalidade integrada da Camada de Dados do Cliente Adobe apenas usando as ferramentas de desenvolvedor do seu navegador e o [site de referência WKND](https://wknd.site/us/en.html) ativo.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
 
    Para ver o estado atual da camada de dados em um site AEM, inspecione a resposta. Você deve ver informações sobre a página e os componentes individuais.
 
-   ![Resposta da camada de dados Adobe](assets/data-layer-state-response.png)
+   ![Resposta da Camada de Dados Adobe](assets/data-layer-state-response.png)
 
 1. Envie um objeto de dados para a camada de dados inserindo o seguinte no console:
 
@@ -67,7 +67,7 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
    window.adobeDataLayer.getState('component.training-data');
    ```
 
-   ![Retorna apenas uma única entrada de dados de componente](assets/return-just-single-component.png)
+   ![Retornar apenas uma única entrada de dados de componente](assets/return-just-single-component.png)
 
 ## Trabalhar com eventos
 
@@ -92,13 +92,13 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
    }
    ```
 
-   O código acima inspeciona o `event` objeto e usa o `adobeDataLayer.getState` para obter o estado atual do objeto que acionou o evento. Em seguida, o método auxiliar inspeciona o `filter` e somente se o atual `dataObject` atende aos critérios de filtro retornados.
+   O código acima inspeciona o objeto `event` e usa o método `adobeDataLayer.getState` para obter o estado atual do objeto que acionou o evento. O método auxiliar inspeciona o `filter` e somente se o `dataObject` atual atender aos critérios de filtro ele será retornado.
 
    >[!CAUTION]
    >
-   > É importante **não** para atualizar o navegador durante todo este exercício, caso contrário, o JavaScript do console será perdido.
+   > É importante **não** atualizar o navegador durante todo este exercício, caso contrário, o JavaScript do console será perdido.
 
-1. Em seguida, insira um manipulador de eventos chamado quando um **Teaser** componente é exibido em um **Carrossel**.
+1. Em seguida, insira um manipulador de eventos chamado quando um componente **Teaser** for exibido em um **Carrossel**.
 
    ```js
    function teaserShownHandler(event) {
@@ -110,9 +110,9 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
    }
    ```
 
-   A variável `teaserShownHandler` chama a função `getDataObjectHelper` e passa um filtro de `wknd/components/carousel/item` como o `@type` para filtrar eventos acionados por outros componentes.
+   A função `teaserShownHandler` chama a função `getDataObjectHelper` e passa um filtro de `wknd/components/carousel/item` como `@type` para filtrar eventos acionados por outros componentes.
 
-1. Em seguida, envie um ouvinte de eventos para a camada de dados para ouvir o `cmp:show` evento.
+1. Em seguida, envie um ouvinte de eventos por push para a camada de dados para ouvir o evento `cmp:show`.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +120,13 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
    });
    ```
 
-   A variável `cmp:show` evento é acionado por vários componentes diferentes, como quando um novo slide é mostrado no **Carrossel** ou quando uma nova guia é selecionada na variável **Guia** componente.
+   O evento `cmp:show` é acionado por vários componentes diferentes, como quando um novo slide é mostrado no **Carrossel** ou quando uma nova guia é selecionada no componente **Guia**.
 
 1. Na página, alterne os slides do carrossel e observe as instruções do console:
 
-   ![Alterne o Carrossel e consulte o ouvinte de eventos](assets/teaser-console-slides.png)
+   ![Alternar Carrossel e ver ouvinte de eventos](assets/teaser-console-slides.png)
 
-1. Para parar de ouvir o `cmp:show` evento, remova o ouvinte de eventos da camada de dados
+1. Para interromper a escuta do evento `cmp:show`, remova o ouvinte do evento da camada de dados
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -151,7 +151,7 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
 
    Observe que o tipo de recurso `wknd/components/page` é usado para filtrar o evento.
 
-1. Em seguida, envie um ouvinte de eventos para a camada de dados para ouvir o `cmp:show` evento, chamar o `pageShownHandler`.
+1. Em seguida, envie um ouvinte de eventos por push para a camada de dados para ouvir o evento `cmp:show`, chamando o `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -164,19 +164,19 @@ Você pode ter uma ideia da funcionalidade integrada da Camada de dados do clien
 
    ![Dados de exibição de página](assets/page-show-console-data.png)
 
-   A variável `cmp:show` para a página é acionado em cada carregamento de página na parte superior da página. Você pode perguntar, por que o manipulador de eventos foi acionado quando a página claramente já foi carregada?
+   O evento `cmp:show` para a página é acionado em cada carregamento de página na parte superior da página. Você pode perguntar, por que o manipulador de eventos foi acionado quando a página claramente já foi carregada?
 
-   Um dos recursos exclusivos da Camada de dados de clientes Adobe é que você pode registrar ouvintes de eventos **antes** ou **após** A Camada de dados foi inicializada e ajuda a evitar as condições de corrida.
+   Um dos recursos exclusivos da Camada de Dados de Clientes Adobe é registrar ouvintes de eventos **antes** ou **depois** de a Camada de Dados ter sido inicializada. Isso ajuda a evitar as condições de corrida.
 
-   A Camada de dados mantém uma matriz de filas de todos os eventos que ocorreram em sequência. A Camada de dados, por padrão, acionará retornos de chamada de evento para eventos que ocorreram na **passado** e eventos na **futuro**. É possível filtrar os eventos do passado ou do futuro. [Mais informações podem ser encontradas na documentação](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   A Camada de dados mantém uma matriz de filas de todos os eventos que ocorreram em sequência. A Camada de Dados por padrão disparará retornos de chamada de evento para eventos que ocorreram no **passado** e eventos no **futuro**. É possível filtrar os eventos do passado ou do futuro. [Mais informações podem ser encontradas na documentação](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Próximas etapas
 
-Há duas opções para continuar aprendendo: primeiro, confira o [coletar dados de página e enviá-los para a Adobe Analytics](../analytics/collect-data-analytics.md) tutorial que demonstra o uso da camada de dados do cliente Adobe. A segunda opção é aprender a [Personalizar a Camada de dados do cliente Adobe com componentes AEM](./data-layer-customize.md)
+Há duas opções para continuar aprendendo: primeiro, confira o tutorial [coletar dados de página e enviá-los para o Adobe Analytics](../analytics/collect-data-analytics.md) que demonstra o uso da camada de Dados de Clientes Adobe. A segunda opção é aprender a [Personalizar a Camada de Dados de Clientes Adobe com Componentes AEM](./data-layer-customize.md)
 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação da Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Uso da Camada de dados do cliente Adobe e da Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
+* [Documentação da Camada de Dados do Cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Usando a Camada de Dados do Cliente Adobe e a Documentação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)

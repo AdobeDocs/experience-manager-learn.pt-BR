@@ -31,9 +31,9 @@ A origem de ativos da Brand Portal é usada para coletar ativos de agências e e
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
-*O Experience Manager Author 6.5 SP2 (6.5.2) ou superior é necessário para usar a Origem de ativos*
+O *Experience Manager Author 6.5 SP2 (6.5.2) ou superior é necessário para usar a Origem de Ativos*
 
-Revisão [Ativar autor de Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) para obter instruções sobre como configurar e configurar a Origem de ativos no Experience Manager Author.
+Revise [Habilitar autor de Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) para obter instruções sobre como configurar e configurar a origem de ativos no autor de Experience Manager.
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2019{#brand-portal-features-and-enhancements-644}
 
@@ -51,7 +51,7 @@ Leia para saber mais sobre pesquisa de texto parcial e pesquisa com curinga.
 
 Agora é possível pesquisar ativos especificando apenas uma parte (ou seja, uma ou duas palavras) da frase pesquisada no painel de filtragem.
 
-**Caso de uso** : a pesquisa parcial de frases é útil quando você não tem certeza da combinação exata de palavras que ocorrem na frase pesquisada.
+**Caso de uso**: a pesquisa de frase parcial é útil quando você não tem certeza da combinação exata de palavras que ocorre na frase pesquisada.
 
 Por exemplo, se o formulário de pesquisa no Brand Portal usar o Predicado de propriedade para pesquisa parcial no título de ativos, especificar o termo camp retornará todos os ativos com a palavra camp na frase de título.
 
@@ -59,7 +59,7 @@ Por exemplo, se o formulário de pesquisa no Brand Portal usar o Predicado de pr
 
 O Brand Portal permite usar o asterisco (*) na consulta de pesquisa junto com uma parte da palavra na frase pesquisada.
 
-**Caso de uso** :Se não tiver certeza das palavras exatas que ocorrem na frase pesquisada, você poderá usar uma pesquisa com curinga para preencher as lacunas na consulta de pesquisa.
+**Caso de uso**: se não tiver certeza das palavras exatas que ocorrem na frase pesquisada, você poderá usar uma pesquisa com curinga para preencher as lacunas na sua consulta de pesquisa.
 
 Por exemplo, especificar climb* retorna todos os ativos que têm palavras que começam com os caracteres sobem na frase de título se o formulário de pesquisa no Brand Portal usar o Predicado de propriedade para pesquisa parcial no título de ativos.
 
@@ -71,12 +71,12 @@ Da mesma forma, especificando:
 #### Habilitar hierarquia de pastas
 
 Agora, os administradores podem configurar como as pastas são exibidas para usuários não administradores (Editores, Visualizadores e Usuários convidados) no logon.
-[Ativar hierarquia de pastas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) A configuração é adicionada em Configurações gerais, no painel ferramentas administrativas. Se a configuração for:
+A configuração [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) foi adicionada em Configurações Gerais, no painel de ferramentas administrativas. Se a configuração for:
 
 * Ativada, a árvore de pastas que começa na pasta raiz fica visível para usuários não administradores. Assim, concedendo a eles uma experiência de navegação semelhante aos administradores.
 * Desativado, somente as pastas compartilhadas são exibidas na landing page.
 
-[Ativar hierarquia de pastas](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) A funcionalidade (quando ativada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de hierarquias diferentes. Ao fazer logon, os usuários não administradores agora veem as pastas principais virtuais (e ancestrais) das pastas compartilhadas.
+A funcionalidade [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (quando habilitada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de hierarquias diferentes. Ao fazer logon, os usuários não administradores agora veem as pastas principais virtuais (e ancestrais) das pastas compartilhadas.
 
 As pastas compartilhadas são organizadas nos respectivos diretórios em pastas virtuais. Você pode reconhecer essas pastas virtuais com um ícone de cadeado.
 
@@ -101,7 +101,7 @@ Os códigos de vídeo do Dynamic Media podem ser baixados de:
 
 ### Publicação agendada no Brand Portal
 
-Fluxo de trabalho de publicação de ativos (e pastas) a partir do [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) A instância do autor para o Brand Portal pode ser agendada para uma data ou hora posterior.
+O fluxo de trabalho de publicação do Assets (e pastas) da instância do Autor [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) no Brand Portal pode ser agendado para data e hora posteriores.
 
 Da mesma forma, os ativos publicados podem ser removidos do portal em uma data (hora) posterior, agendando o fluxo de trabalho Cancelar publicação da Brand Portal.
 
@@ -110,11 +110,11 @@ Da mesma forma, os ativos publicados podem ser removidos do portal em uma data (
 As organizações podem personalizar o URL do portal tendo um prefixo alternativo no URL. Para obter um alias para o nome do locatário no URL do portal existente, as organizações precisam entrar em contato com o suporte ao Adobe.
 
 Observe que somente o prefixo do URL do Brand Portal pode ser personalizado, e não o URL inteiro.
-Por exemplo, uma organização com um domínio existente `wknd.brand-portal.adobe.com` pode obter `wkndinc.brand-portal.adobe.com` criado mediante solicitação.
+Por exemplo, uma organização com o domínio existente `wknd.brand-portal.adobe.com` pode obter a criação de `wkndinc.brand-portal.adobe.com` mediante solicitação.
 
-No entanto, a instância do autor do AEM pode ser [configurado](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da id do locatário e não com a URL do alias do locatário (alternativo).
+No entanto, a instância do Autor AEM pode ser [configurada](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da ID do locatário e não com a URL do alias do locatário (alternativo).
 
-**Caso de uso** : as organizações podem atender às suas necessidades de marca, obtendo o URL do portal personalizado, em vez de aderir ao URL fornecido pelo Adobe.
+**Caso de uso**: as organizações podem atender às suas necessidades de marca, obtendo a URL do portal personalizada, em vez de aderir à URL fornecida pelo Adobe.
 
 ## Recursos e aprimoramentos do Brand Portal dezembro de 2018{#brand-portal-features-and-enhancements-642}
 
@@ -129,7 +129,7 @@ AEM Brand portal permite o acesso de visitantes ao portal. Um usuário convidado
 Os usuários do Brand Portal podem aproveitar os downloads rápidos baseados no Aspera para obter velocidades até 25 vezes mais rápidas e uma experiência de download contínua, independentemente da sua localização no mundo. Para baixar os ativos mais rapidamente do Brand Portal ou do link compartilhado, os usuários precisam selecionar a opção Habilitar aceleração de download na caixa de diálogo de download, desde que a aceleração de download esteja habilitada em sua organização.
 
 * [Guia para acelerar downloads do Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [Servidor de teste Aspera Connect](https://test-connect.asperasoft.com/)
+* [Servidor de Teste Aspera Connect](https://test-connect.asperasoft.com/)
 
 ### Relatório de logon do usuário
 
@@ -154,12 +154,12 @@ Seis novas configurações são adicionadas para que os administradores ativem/d
 
 ### Outras melhorias
 
-* *Caminho de hierarquia de pastas em visualizações de cartão e lista* — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
-* *Opção de visão geral* — O fornece metadados sobre o ativo/pasta a usuários não administradores, selecionando o ativo/pasta e depois a opção de visão geral na barra de ferramentas. Atualmente, exibe título, data de criação e caminho
+* *Caminho de hierarquia de pastas em exibições de cartão e lista* — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
+* *Opção de visão geral* — fornece metadados de usuários não administradores sobre o ativo/pasta ao selecionar o ativo/pasta e depois selecionar a opção de visão geral na barra de ferramentas. Atualmente, exibe título, data de criação e caminho
 
 ### Adobe I/O hospeda a interface do usuário para configurar integrações oAuth
 
-A Brand Portal usa o Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada no `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+O Brand Portal usa a interface Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2018{#brand-portal-features-and-enhancements-632}
 
@@ -205,10 +205,10 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 
 ## Recursos adicionais{#additional-resources}
 
-* [Novidades do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#introduction)
-* [Agentes de replicação de autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
-* [Guia para download acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [Novidades no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#introduction)
+* [Agentes de replicação do autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Guia de Download Acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/pt-br/docs)
 * [Baixar Aspera Connect](https://downloads.asperasoft.com/connect2/)
-* [Servidor de teste Aspera Connect](https://test-connect.asperasoft.com/)
+* [Servidor de Teste Aspera Connect](https://test-connect.asperasoft.com/)

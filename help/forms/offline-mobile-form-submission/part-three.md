@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Fluxo de trabalho para revisar e aprovar o PDF enviado
 
-A última e última etapa é criar um workflow de AEM que gerará um PDF estático ou não interativo para revisão e aprovação. O fluxo de trabalho é acionado por meio de um Iniciador AEM configurado no nó `/content/pdfsubmissions`.
+A última e última etapa é criar um workflow de AEM que gerará um PDF estático ou não interativo para revisão e aprovação. O fluxo de trabalho é disparado por um Iniciador AEM configurado no nó `/content/pdfsubmissions`.
 
 A captura de tela a seguir mostra as etapas envolvidas no fluxo de trabalho.
 
@@ -26,7 +26,7 @@ A captura de tela a seguir mostra as etapas envolvidas no fluxo de trabalho.
 
 ## Etapa de geração de fluxo de trabalho de PDF não interativo
 
-O modelo XDP e os dados a serem mesclados com o modelo são especificados aqui. Os dados a serem mesclados são os dados enviados do PDF. Esses dados enviados são armazenados no nó `/content/pdfsubmissions`.
+O modelo XDP e os dados a serem mesclados com o modelo são especificados aqui. Os dados a serem mesclados são os dados enviados do PDF. Os dados enviados estão armazenados no nó `/content/pdfsubmissions`.
 
 ![fluxo de trabalho](assets/generate-pdf1.PNG)
 
@@ -36,6 +36,6 @@ O PDF gerado é atribuído à variável de fluxo de trabalho chamada `submittedP
 
 ### Atribuir o PDF gerado para revisão e aprovação
 
-O componente de fluxo de trabalho Atribuir tarefa é usado aqui para atribuir o PDF gerado para revisão e aprovação. A variável `submittedPDF` é usado na guia Forms e Documentos do componente de fluxo de trabalho Atribuir tarefa.
+O componente de fluxo de trabalho Atribuir tarefa é usado aqui para atribuir o PDF gerado para revisão e aprovação. A variável `submittedPDF` é usada na guia Forms e Documentos do componente de fluxo de trabalho Atribuir tarefa.
 
 ![fluxo de trabalho](assets/assign-task.PNG)

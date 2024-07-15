@@ -1,6 +1,6 @@
 ---
 title: Introdução ao AEM as a Cloud Service
-description: Saiba como pensar de forma diferente sobre implementações as a Cloud Service do AEM.
+description: Saiba como pensar de forma diferente sobre implementações do AEM as a Cloud Service.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -19,6 +19,6 @@ ht-degree: 17%
 
 # Introdução ao AEM as a Cloud Service
 
-Saiba como pensar de forma diferente sobre implementações as a Cloud Service do AEM.
+Saiba como pensar de forma diferente sobre implementações do AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336956?quality=12&learn=on)

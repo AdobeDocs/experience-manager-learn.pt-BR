@@ -30,6 +30,6 @@ ChangeBeneficiary.pdf,c:\confirmation
 O primeiro argumento é o nome do documento que você deseja salvar no sistema de arquivos. O segundo argumento é o local da pasta em que você deseja salvar o documento. Por exemplo, no caso de uso acima, o documento é gravado em `c:\confirmation\ChangeBeneficiary.pdf`
 
 A captura de tela a seguir mostra os argumentos que você precisa passar para a etapa de processo personalizada
-![write-payload-file-system](assets/write-payload-file-system.png)
+![sistema-de-arquivos-de-carga-de-gravação](assets/write-payload-file-system.png)
 
 [O pacote personalizado pode ser baixado aqui](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

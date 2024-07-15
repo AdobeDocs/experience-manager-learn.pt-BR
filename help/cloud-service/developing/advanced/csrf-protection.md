@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Saiba como gerar e adicionar tokens CSRF AEM a POST, PUT AEM e solicitações de exclusão permitidas do para usuários autenticados.
 
-O AEM requer que um token CSRF válido seja enviado para __autenticado__ __POST__, __PUT ou __DELETE__ Solicitações HTTP para os serviços de Autor e Publicação do AEM.
+O AEM requer que um token CSRF válido seja enviado para solicitações HTTP __authenticated__ __POST__, __PUT ou __DELETE AEM__ para os serviços Author e Publish.
 
-O token CSRF não é necessário para __GET__ solicitações ou __anônimo__ solicitações.
+O token CSRF não é necessário para solicitações __GET__ ou __anônimas__.
 
 Se um token CSRF não for enviado com uma solicitação POST, PUT ou DELETE, o AEM AEM retornará uma resposta 403 Proibido e o registrará o seguinte erro:
 
@@ -34,18 +34,18 @@ Se um token CSRF não for enviado com uma solicitação POST, PUT ou DELETE, o A
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-Consulte a [documentação para obter mais detalhes sobre a proteção AEM CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
+Consulte a [documentação para obter mais detalhes sobre a proteção CSRF do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
 
 
 ## Biblioteca cliente CSRF
 
-O AEM fornece uma biblioteca de cliente que pode ser usada para gerar e adicionar tokens CSRF XHR e solicitações de POST de formulário, por meio do patch de funções de protótipo principais. A funcionalidade é fornecida pela variável `granite.csrf.standalone` categoria da biblioteca do cliente.
+O AEM fornece uma biblioteca de cliente que pode ser usada para gerar e adicionar tokens CSRF XHR e solicitações de POST de formulário, por meio do patch de funções de protótipo principais. A funcionalidade é fornecida pela categoria de biblioteca cliente `granite.csrf.standalone`.
 
-Para usar essa abordagem, adicione `granite.csrf.standalone` como uma dependência ao carregamento da biblioteca do cliente na sua página. Por exemplo, se estiver usando a variável `wknd.site` categoria da biblioteca do cliente, adicionar `granite.csrf.standalone` como uma dependência ao carregamento da biblioteca do cliente na sua página.
+Para usar essa abordagem, adicione `granite.csrf.standalone` como uma dependência ao carregamento da biblioteca do cliente na sua página. Por exemplo, se você estiver usando a categoria de biblioteca de cliente `wknd.site`, adicione `granite.csrf.standalone` como uma dependência ao carregamento da biblioteca de cliente na sua página.
 
 ## Envio de formulário personalizado com proteção CSRF
 
-Se a utilização de [`granite.csrf.standalone` biblioteca do cliente](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF ao envio de um formulário. O exemplo a seguir mostra como adicionar um token CSRF ao envio de um formulário.
+Se o uso da biblioteca [`granite.csrf.standalone` do cliente ](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF ao envio de um formulário. O exemplo a seguir mostra como adicionar um token CSRF ao envio de um formulário.
 
 Este trecho de código demonstra como, durante o envio de um formulário, o token CSRF pode ser obtido do AEM e adicionado a uma entrada de formulário chamada `:cq_csrf_token`. Como o token CSRF tem uma vida útil curta, é melhor recuperar e definir o token CSRF imediatamente antes do envio do formulário, garantindo sua validade.
 
@@ -74,9 +74,9 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 ## Buscar com proteção CSRF
 
-Se a utilização de [`granite.csrf.standalone` biblioteca do cliente](#csrf-client-library) não for compatível com seu caso de uso, é possível adicionar manualmente um token CSRF a um XHR ou buscar solicitações. O exemplo a seguir mostra como adicionar um token CSRF a um XHR criado com a busca.
+Se o uso da biblioteca [`granite.csrf.standalone` do cliente ](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF a um XHR ou buscar solicitações. O exemplo a seguir mostra como adicionar um token CSRF a um XHR criado com a busca.
 
-Este trecho de código demonstra como buscar um token CSRF do AEM e adicioná-lo a solicitações de busca `CSRF-Token` cabeçalho da solicitação HTTP. Como o token CSRF tem uma vida útil curta, é melhor recuperar e definir o token CSRF imediatamente antes de fazer a solicitação de busca, garantindo sua validade.
+Este trecho de código demonstra como buscar um token CSRF do AEM e adicioná-lo ao cabeçalho de solicitação HTTP `CSRF-Token` de uma solicitação de busca. Como o token CSRF tem uma vida útil curta, é melhor recuperar e definir o token CSRF imediatamente antes de fazer a solicitação de busca, garantindo sua validade.
 
 ```javascript
 /**
@@ -102,7 +102,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Configuração do Dispatcher
 
-Ao usar tokens CSRF no serviço de publicação do AEM, a configuração do Dispatcher deve ser atualizada para permitir solicitações GET para o endpoint do token CSRF. A configuração a seguir permite solicitações do GET para o endpoint do token CSRF no serviço de publicação do AEM. Se essa configuração não for adicionada, o endpoint do token CSRF retornará uma resposta 404 Não encontrado.
+Ao usar tokens CSRF no serviço AEM Publish, a configuração do Dispatcher deve ser atualizada para permitir solicitações GET para o endpoint do token CSRF. A configuração a seguir permite solicitações do GET para o endpoint do token CSRF no serviço AEM Publish. Se essa configuração não for adicionada, o endpoint do token CSRF retornará uma resposta 404 Não encontrado.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 

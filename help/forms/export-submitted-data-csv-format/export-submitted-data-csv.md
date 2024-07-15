@@ -39,13 +39,13 @@ O código lê esses valores e constrói a consulta SQL apropriada para executar.
 
 Na consulta acima, o nome do formulário(timeoffrequestform) é passado como parâmetro de solicitação para o servlet.
 
-## **Criar serviço OSGi**
+## **Criar Serviço OSGi**
 
 O serviço OSGI a seguir foi criado para exportar os dados enviados no formato CSV.
 
 * Linha 37: estamos acessando a fonte de dados agrupada da conexão Apache Sling.
 
-* Linha 89: este é o ponto de entrada para o serviço. O método `getCSVFile(..)` toma formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome do formulário fornecido.
+* Linha 89: Este é o ponto de entrada para o serviço. O método `getCSVFile(..)` assume formName como parâmetro de entrada e busca os dados enviados pertencentes ao nome de formulário fornecido.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Veja a seguir o código de servlet que chama o `getCSVFile(..)` método do serviço. O serviço retorna o objeto StringBuffer, que é retornado ao aplicativo de chamada
+Este é o código de servlet que invoca o método `getCSVFile(..)` do serviço. O serviço retorna o objeto StringBuffer, que é retornado ao aplicativo de chamada
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,6 +307,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implantar no servidor
 
-* Importe o [Arquivo SQL](assets/formsubmissions.sql) no servidor MySQL usando o MySQL Workbench. Isso cria um esquema chamado **aemformstutorial** e tabela chamada **envios de formulários** com alguns dados de amostra.
-* Implantar [Pacote OSGi](assets/store-export.jar) usando o Felix web console
+* Importe o [arquivo SQL](assets/formsubmissions.sql) para o MySQL server usando o MySQL Workbench. Isto cria um esquema chamado **aemformstutorial** e uma tabela chamada **formsubmissions** com alguns dados de exemplo.
+* Implante o [Pacote OSGi](assets/store-export.jar) usando o Felix web console
 * [Para obter Envios de TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Você deve receber o arquivo CSV transmitido de volta.

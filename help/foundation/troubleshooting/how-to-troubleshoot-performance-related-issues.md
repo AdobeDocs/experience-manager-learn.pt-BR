@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Como solucionar problemas relacionados ao desempenho no AEM
 
-*Este vídeo aborda as etapas para solucionar problemas relacionados ao desempenho no AEM.*
+*Este vídeo mostra as etapas para solucionar problemas de desempenho no AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

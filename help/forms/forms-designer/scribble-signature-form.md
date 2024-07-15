@@ -1,5 +1,5 @@
 ---
-title: Utilização da assinatura de rabisco no Forms Designer
+title: Uso da assinatura à mão no Forms Designer
 description: Vídeo curto que descreve como adicionar uma assinatura assinável ao AEM Forms
 version: 6.5
 feature: Forms Designer,Designer
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Utilização da assinatura de rabisco no AEM Forms Designer
+# Uso da assinatura à mão no AEM Forms Designer
 
 Vídeo curto que descreve como adicionar uma assinatura à AEM Forms
 

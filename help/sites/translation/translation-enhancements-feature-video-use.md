@@ -1,6 +1,6 @@
 ---
 title: Aprimoramentos de tradução no AEM
-description: Uma estrutura de tradução robusta para AEM permite que o conteúdo do AEM seja traduzido perfeitamente por fornecedores de tradução compatíveis. Saiba mais sobre os últimos aprimoramentos.
+description: A estrutura de tradução robusta do AEM permite que o conteúdo do AEM seja traduzido sem problemas por fornecedores de tradução compatíveis. Saiba mais sobre os últimos aprimoramentos.
 version: 6.4, 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aprimoramentos de tradução com o Gerenciador de vários sites {#translation-enhancements}
 
-Uma estrutura de tradução robusta para AEM permite que o conteúdo do AEM seja traduzido perfeitamente por fornecedores de tradução compatíveis.
+A estrutura de tradução robusta do AEM permite que o conteúdo do AEM seja traduzido sem problemas por fornecedores de tradução compatíveis.
 
 ## Melhorias na tradução no AEM 6.5
 
@@ -26,13 +26,13 @@ Uma estrutura de tradução robusta para AEM permite que o conteúdo do AEM seja
 
 As melhorias na tradução do AEM 6.5 incluem:
 
-**Aprovar trabalhos de tradução automaticamente**: o sinalizador de aprovação no trabalho de tradução é uma propriedade binária. Ele não direciona nem se integra a fluxos de trabalho de revisão e aprovação prontos para uso. Para manter o número de etapas em um trabalho de tradução mínimo, por padrão, ele é definido para &quot;aprovar automaticamente&quot; no [!UICONTROL Propriedades avançadas] de um projeto de tradução. Se sua organização exigir aprovação para um trabalho de tradução, você poderá desmarcar a opção &quot;aprovar automaticamente&quot; no [!UICONTROL Propriedades avançadas] de um projeto de tradução.
+**Aprovar trabalhos de tradução automaticamente**: o sinalizador de aprovação no trabalho de tradução é uma propriedade binária. Ele não direciona nem se integra a fluxos de trabalho de revisão e aprovação prontos para uso. Para manter o número de etapas em um trabalho de tradução mínimo, por padrão, ele é definido como &quot;aprovar automaticamente&quot; nas [!UICONTROL Propriedades avançadas] de um projeto de tradução. Se sua organização exigir aprovação para um trabalho de tradução, você poderá desmarcar a opção &quot;aprovar automaticamente&quot; nas [!UICONTROL Propriedades avançadas] de um Projeto de tradução.
 
-**Excluir inicializações de tradução automaticamente**: em vez de excluir manualmente inicializações de tradução no Administrador de inicializações após o fato, agora é possível excluir automaticamente inicializações de tradução depois que elas foram promovidas.
+**Excluir inicializações de tradução automaticamente**: em vez de excluir manualmente inicializações de tradução no Administrador de inicializações após o fato, agora é possível excluir automaticamente inicializações de tradução após serem promovidas.
 
-**Exportar objetos de Tradução no formato JSON**: o AEM 6.4 e as versões anteriores são compatíveis com formatos XML e XLIFF de objetos de tradução. Agora você pode configurar o formato de exportação para o formato JSON usando o console de sistemas [!UICONTROL Gerenciador de configurações]. Procure [!UICONTROL Configuração da plataforma de tradução]e, em seguida, você poderá selecionar o formato de exportação como JSON.
+**Exportar objetos de Tradução no formato JSON**: o AEM 6.4 e versões anteriores oferecem suporte aos formatos XML e XLIFF de objetos de tradução. Agora você pode configurar o formato de exportação para o formato JSON usando o console de sistemas [!UICONTROL Config Manager]. Procure por [!UICONTROL Configuração da plataforma de tradução] e, em seguida, você pode selecionar o formato de exportação como JSON.
 
-**Atualizar conteúdo de AEM traduzido na Memória de tradução (TMS)**: o autor local que não tem acesso ao AEM pode fazer atualizações no conteúdo traduzido, que já foi assimilado de volta no AEM, diretamente no TM (Translation Memory, em TMS), e atualizar as traduções no AEM reenviando o trabalho de tradução do TMS para o AEM
+**Atualizar conteúdo do AEM traduzido na Memória de Tradução (TMS)**: o autor local que não tem acesso ao AEM pode fazer atualizações no conteúdo traduzido, que já foi assimilado de volta no AEM, diretamente na TM (Memória de Tradução, no TMS), e atualizar as traduções no AEM reenviando o trabalho de tradução do TMS para o AEM
 
 ## Melhorias na tradução no AEM 6.4
 

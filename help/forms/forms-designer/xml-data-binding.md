@@ -1,6 +1,6 @@
 ---
 title: Criar vínculo de dados XML em formulários baseados em XDP
-description: Vídeo curto que descreve como vincular um formulário AEM a uma fonte de dados XML
+description: Vídeo curto que descreve como vincular um formulário AEM a um Source de dados XML
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# Criar vinculação de dados XML no AEM Forms Designer
+# Criar vínculo de dados XML no AEM Forms Designer
 
-Vídeo curto que descreve como vincular um formulário AEM a uma fonte de dados XML
+Vídeo curto que descreve como vincular um formulário AEM a um Source de dados XML
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Navegação pelo Cloud Acceleration Manager
-description: Explore a experiência de navegação do Cloud Acceleration Manager para o Experience Manager as a Cloud Service.
+title: Navegação no Cloud Acceleration Manager
+description: Explore a experiência de navegação do Cloud Acceleration Manager para Experience Manager as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Navegação pelo Cloud Acceleration Manager
+# Navegação no Cloud Acceleration Manager
 
-Explore a experiência de navegação do Cloud Acceleration Manager para o Experience Manager as a Cloud Service.
+Explore a experiência de navegação do Cloud Acceleration Manager para Experience Manager as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336698?quality=12&learn=on)

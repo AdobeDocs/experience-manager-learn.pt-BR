@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Extensibilidade da interface do AEM
 
-O Adobe Experience Manager (AEM) oferece uma interface de usuário (UI) avançada para criar experiências digitais. Para personalizar e estender a interface do usuário, o Adobe apresentou o Construtor de aplicativos. Essa ferramenta permite que os desenvolvedores aprimorem a experiência do usuário sem codificação complexa usando JavaScript e React.
+O Adobe Experience Manager (AEM) oferece uma interface de usuário (UI) avançada para criar experiências digitais. Para personalizar e estender a interface do usuário, o Adobe apresentou o App Builder. Essa ferramenta permite que os desenvolvedores aprimorem a experiência do usuário sem codificação complexa usando o JavaScript e o React.
 
-O Construtor de aplicativos fornece uma camada de implementação para criar extensões vinculadas a pontos de extensão bem definidos no AEM. O App Builder se integra perfeitamente ao AEM, permitindo pré-visualização e testes em tempo real. A implantação de alterações no AEM é rápida e simplificada. Ao usar o App Builder, os desenvolvedores economizam tempo e esforço, permitindo a prototipagem rápida e a colaboração com as partes interessadas.
+O App Builder fornece uma camada de implementação para criar extensões vinculadas a pontos de extensão bem definidos no AEM. O App Builder integra-se perfeitamente ao AEM, permitindo pré-visualização e testes em tempo real. A implantação de alterações no AEM é rápida e simplificada. Ao usar o App Builder, os desenvolvedores economizam tempo e esforço, permitindo a prototipagem rápida e a colaboração com as partes interessadas.
 
 ## Desenvolver uma extensão da interface do usuário para AEM
 
-AEM, várias interfaces têm pontos de extensão diferentes, no entanto, os conceitos básicos são os mesmos.
+As várias interfaces do AEM têm pontos de extensão diferentes, no entanto, os conceitos básicos são os mesmos.
 
 Os vídeos e apresentações fornecidos vinculados abaixo mostram o uso de uma extensão do Console do fragmento de conteúdo para ilustrar várias atividades. No entanto, é importante observar que os conceitos abordados podem ser aplicados a todas as extensões da interface do usuário do AEM.
 
@@ -45,4 +45,4 @@ Os vídeos e apresentações fornecidos vinculados abaixo mostram o uso de uma e
 
 ## Documentação do Adobe Developer
 
-O Adobe Developer contém detalhes do desenvolvedor sobre a extensibilidade da interface do AEM. Revise o [Conteúdo do Adobe Developer para obter mais detalhes técnicos](https://developer.adobe.com/uix/docs/).
+O Adobe Developer contém detalhes do desenvolvedor sobre a extensibilidade da interface do AEM. Revise o [conteúdo do Adobe Developer para obter mais detalhes técnicos](https://developer.adobe.com/uix/docs/).

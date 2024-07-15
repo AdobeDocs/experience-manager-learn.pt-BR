@@ -1,6 +1,6 @@
 ---
-title: Dicas e truques do especialista em AEM - Tipos de ambientes do Cloud Manager
-description: Confira estas dicas sobre os tipos de ambientes do Cloud Manager do especialista e defensor do AEM, Rakesh Pasupuleti.
+title: Dicas e truques do especialista em AEM - Tipos de ambientes Cloud Manager
+description: Confira estas dicas sobre os tipos de ambientes do Cloud Manager do campeão e especialista em AEM, Rakesh Pasupuleti.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 ---
 
-# Dicas e truques do especialista em AEM - Tipos de ambientes do Cloud Manager
+# Dicas e truques do especialista em AEM - Tipos de ambientes Cloud Manager
 
-Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é um defensor do Adobe Experience Manager e explica como entender os tipos de ambiente do Cloud Manager.
+Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é um defensor do Adobe Experience Manager e explica como entender os tipos de ambientes da Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419297?quality=12&learn=on)
 
 ## Recursos adicionais {#additional-resources}
 
-* [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - Documentação sobre gestão ambiental no AEM as a Cloud Service
-* [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentação sobre RDE em AEM as a Cloud Service
+* [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - Documentação sobre o gerenciamento de ambientes no AEM as a Cloud Service
+* [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentação sobre RDEs no AEM as a Cloud Service

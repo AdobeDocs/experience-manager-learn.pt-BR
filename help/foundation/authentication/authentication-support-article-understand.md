@@ -95,4 +95,4 @@ Uma visualização consolidada nos mecanismos de autenticação (e, ocasionalmen
     </tbody>
 </table>
 
-⁕ *Fornecido por meio de projetos da comunidade, mas não diretamente suportado pelo Adobe.*
+⁕ *Fornecido pelos projetos da comunidade, mas não suportado diretamente pelo Adobe.*

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Incluir pacotes de terceiros em seu projeto AEM
 
-Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no seu projeto AEM. Para o propósito deste artigo, incluiremos o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
+Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no projeto AEM.Para o propósito deste artigo, incluiremos o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
 
 >[!NOTE]
 > Pressupõe-se que o jar de terceiros seja um pacote OSGi
@@ -34,7 +34,7 @@ Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de te
 </dependency>
 ```
 
-Se o pacote OSGi estiver em seu sistema de arquivos, crie uma pasta chamada **localjar** no diretório base do seu projeto (C:\aemformsbundles\AEMFormsProcessStep\localjar), a dependência será semelhante a
+Se o pacote OSGi estiver no sistema de arquivos, crie uma pasta chamada **localjar** no diretório base do projeto (C:\aemformsbundles\AEMFormsProcessStep\localjar). A dependência será semelhante a esta
 
 ```java
 <dependency>
@@ -48,12 +48,13 @@ Se o pacote OSGi estiver em seu sistema de arquivos, crie uma pasta chamada **lo
 
 ## Criar a estrutura de pastas
 
-Estamos adicionando este pacote ao nosso projeto AEM **AEMFormsProcessStep** que resida na **c:\aemformsbundles** pasta
+Estamos adicionando este pacote ao nosso projeto AEM **AEMFormsProcessStep** que reside na pasta **c:\aemformsbundles**
 
-* Abra o **filter.xml** da pasta C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault do seu projeto Anote o atributo raiz do elemento filter.
+* Abra o **filter.xml** da pasta C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault do seu projeto
+Anote o atributo raiz do elemento de filtro.
 
 * Crie a seguinte estrutura de pastas C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install
-* A variável **apps/AEMFormsProcessStep-vendor-packages** é o valor do atributo raiz no filter.xml
+* **apps/AEMFormsProcessStep-vendor-packages** é o valor do atributo raiz no filter.xml
 * Atualize a seção de dependências do POM.xml do projeto
 * Abra o prompt de comando. Acesse a pasta do projeto (c:\aemformsbundles\AEMFormsProcessStep), no meu caso. Execute o seguinte comando
 
@@ -61,5 +62,5 @@ Estamos adicionando este pacote ao nosso projeto AEM **AEMFormsProcessStep** que
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando [felix web console](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do `crx` repositório como mostrado abaixo
+Se tudo correr bem, o pacote será instalado junto com o pacote de terceiros na instância do AEM. Você pode verificar o pacote usando o [felix web console](http://localhost:4502/system/console/bundles). O pacote de terceiros está disponível na pasta /apps do repositório `crx`, como mostrado abaixo
 ![terceiros](assets/custom-bundle1.png)

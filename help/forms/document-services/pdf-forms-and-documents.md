@@ -28,15 +28,15 @@ Veja a seguir um exemplo de um arquivo PDF/A no Acrobat DC.
 
 ![Pdfa](assets/pdfa-file-in-acrobat.png)
 
-Os arquivos de exemplo podem ser [baixado aqui](assets/pdf-file-types.zip)
+Arquivos de exemplo podem ser [baixados daqui](assets/pdf-file-types.zip)
 
 ## PDF da arquitetura XML Forms (PDF XFA)
 
-O Adobe usa o termo formulário PDF XFA para se referir ao Forms interativo e dinâmico criado com o AEM Forms Designer. O Forms e os arquivos criados com o Designer são baseados na Adobe XML Forms Architecture (XFA). De muitas formas, o formato de arquivo PDF XFA está mais próximo de um arquivo HTML do que de um arquivo PDF tradicional. Por exemplo, o código a seguir mostra como um objeto de texto simples se parece em um arquivo PDF XFA.
+O Adobe usa o termo forma de PDF XFA para se referir ao Forms interativo e dinâmico criado com o AEM Forms Designer. A Forms e os arquivos criados com o Designer são baseados na Adobe XML Forms Architecture (XFA). De muitas formas, o formato de arquivo PDF XFA está mais próximo de um arquivo HTML do que de um arquivo PDF tradicional. Por exemplo, o código a seguir mostra como um objeto de texto simples se parece em um arquivo PDF XFA.
 
 ![Campo de texto](assets/text-field.JPG)
 
-O XFA Forms é baseado em XML. Esse formato bem estruturado e flexível permite que um servidor AEM Forms transforme seus arquivos Designer em diferentes formatos, incluindo PDF, PDF/A e HTML tradicionais. Você pode ver a estrutura XML completa do Forms no Designer selecionando a guia Código-fonte XML do Editor de layout. Você pode criar Forms XFA estático e dinâmico no AEM Forms Designer.
+O XFA Forms é baseado em XML. Esse formato bem estruturado e flexível permite que um servidor AEM Forms transforme seus arquivos Designer em diferentes formatos, incluindo PDF, PDF/A e HTML tradicionais. Você pode ver a estrutura XML completa do Forms no Designer selecionando a guia XML Source do Editor de layout. Você pode criar Forms XFA estática e dinâmica no AEM Forms Designer.
 
 ## PDF estático
 
@@ -50,7 +50,7 @@ O layout estático de PDF forms do XFA nunca é alterado no tempo de execução,
 
 >[!NOTE]
 >
-> Você pode criar PDF estáticos usando o AEM Forms Designer, salvando o XDP como o Formulário PDF estático de Adobe
+> Você pode criar PDF estáticos usando o AEM Forms Designer, salvando o XDP como Adobe Formulário de PDF estática
 
 
 
@@ -86,7 +86,8 @@ Um Documento certificado fornece aos destinatários do documento de PDF e dos fo
 
 ### Acroforms
 
-Adobe As acroformas são tecnologias de formulário interativo mais antigas; elas remontam à versão 3 do Acrobat. O Adobe fornece a [Referência da API do Acrobat Forms](assets/FormsAPIReference.pdf), de maio de 2003, para fornecer os detalhes técnicos dessa tecnologia. Os acroforms são uma combinação dos seguintes itens:
+Adobe As acroformas são tecnologias de formulário interativo mais antigas; elas remontam à versão 3 do Acrobat. O Adobe fornece a [Referência de API do Acrobat Forms](assets/FormsAPIReference.pdf), datada de maio de 2003, para fornecer os detalhes técnicos desta tecnologia. Acroforms são uma combinação dos
+seguintes itens:
 
 * Um PDF tradicional que define o layout estático e os gráficos do formulário.
 * Campos de formulário interativos fixados em cima com as ferramentas de formulário do programa Adobe Acrobat. Essas ferramentas de formulário são um pequeno subconjunto do que está disponível no AEM Forms Designer.
@@ -99,7 +100,7 @@ Como o PDF, PDF/A é uma especificação padrão ISO. Ele foi desenvolvido por u
 
 * Todo o conteúdo deve estar contido no arquivo e não pode haver dependências em fontes externas como hiperlinks, fontes ou programas de software.
 * Todas as fontes devem ser incorporadas e precisam ser fontes com licença de uso ilimitado para documentos eletrônicos.
-* JavaScript não é permitido
+* O JavaScript não é permitido
 * Transparência não permitida
 * A criptografia não é permitida
 * O conteúdo de áudio e vídeo não é permitido

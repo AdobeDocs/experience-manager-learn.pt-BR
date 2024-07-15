@@ -20,25 +20,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para que os ativos de amostra funcionem em seu sistema, presume-se que você tenha a instância de Autor e Publicação do AEM em execução nas portas 4502 e 4503, respectivamente. Também se presume que o autor do AEM seja acessível por meio de `admin`/`admin`. Se os números de porta ou a senha do administrador tiverem sido alterados, esses ativos de amostra não funcionarão. Você terá que criar seus próprios ativos usando o código de amostra fornecido.
+>Para que os ativos de amostra funcionem em seu sistema, presume-se que você tenha o AEM Author e a instância do Publish em execução nas portas 4502 e 4503, respectivamente. Também presume-se que o Autor do AEM possa ser acessado via `admin`/`admin`. Se os números de porta ou a senha do administrador tiverem sido alterados, esses ativos de amostra não funcionarão. Você terá que criar seus próprios ativos usando o código de amostra fornecido.
 
 Para que esse caso de uso funcione no sistema local, siga estas etapas:
 
-* Instale a instância do autor do AEM na porta 4502 e a instância de publicação do AEM na porta 4503
-* [Siga as instruções especificadas em desenvolvimento com usuário de serviço no AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Crie o usuário de serviço e implante o pacote em sua instância de Autor e Publicação do AEM.
+* Instale a instância AEM Author na porta 4502 e a instância AEM Publish na porta 4503
+* [Siga as instruções especificadas em desenvolvimento com usuário de serviço no AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Crie o usuário de serviço e implante o pacote no seu autor de AEM e na instância do Publish.
 * [Abra a configuração osgi](http://localhost:4503/system/console/configMgr).
-* Pesquisar por  **Filtro referenciador do Apache Sling**. Certifique-se de que a caixa de seleção Permitir vazio esteja marcada.
-* [Implantar o pacote AEMFormDocumentService personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esse pacote precisa ser implantado na instância de publicação do AEM. Este pacote tem o código para gerar PDF interativo de formulários móveis.
-* [Baixe e descompacte os ativos relacionados a este artigo.](assets/offline-pdf-submission-assets.zip) Você terá o seguinte
-   * **offline-submit-profile.zip** - Este pacote AEM contém o perfil personalizado que permite baixar o pdf interativo para o seu sistema de arquivos local. Implante este pacote na instância de publicação do AEM.
-   * **xdp-form-and-workflow.zip** - Esse pacote de AEM contém XDP, exemplo de fluxo de trabalho, iniciador configurado nos envios de conteúdo/pdfdo nó. Implante esse pacote na instância de publicação e do autor do AEM.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** - Esse é o pacote AEM que faz a maior parte do trabalho. Esse pacote contém o servlet montado em `/bin/startworkflow`. Esse servlet salva os dados de formulário enviados em `/content/pdfsubmissions` no repositório AEM. Implante esse pacote na instância do autor e de publicação do AEM.
-* [Pré-visualizar o formulário para dispositivos móveis](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
+* Procure por **Filtro referenciador Apache Sling**. Certifique-se de que a caixa de seleção Permitir vazio esteja marcada.
+* [Implantar o Pacote AEMFormDocumentService personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Esse pacote precisa ser implantado em sua instância do AEM Publish. Este pacote tem o código para gerar PDF interativo de formulários móveis.
+* [Baixe e descompacte os ativos relacionados a este artigo.](assets/offline-pdf-submission-assets.zip) Você obterá o seguinte
+   * **offline-submit-profile.zip** - Este pacote de AEM contém o perfil personalizado que permite baixar o pdf interativo no sistema de arquivos local. Implante esse pacote na instância do Publish AEM.
+   * **xdp-form-and-workflow.zip** - Este pacote de AEM contém XDP, exemplo de fluxo de trabalho, iniciador configurado no nó content/pdfsubmissions. Implante esse pacote no autor do AEM e na instância do Publish.
+   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** - Este é o pacote AEM que faz a maior parte do trabalho. Este pacote contém o servlet montado em `/bin/startworkflow`. Este servlet salva os dados de formulário enviados no nó `/content/pdfsubmissions` no repositório AEM. Implante esse pacote em seu autor AEM e na instância do Publish.
+* [Visualizar o formulário móvel](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Preencha vários campos e clique no botão na barra de ferramentas para baixar o PDF interativo.
 * Preencha o PDF baixado usando o Acrobat e pressione o botão enviar.
 * Você deve receber uma mensagem de sucesso
 * Fazer logon na instância do autor do AEM como administrador
-* [Marque a caixa de entrada do AEM](http://localhost:4502/aem/inbox)
+* [Verificar a Caixa de Entrada do AEM](http://localhost:4502/aem/inbox)
 * Você deve ter um item de trabalho para revisar o PDF enviado
 
 >[!NOTE]

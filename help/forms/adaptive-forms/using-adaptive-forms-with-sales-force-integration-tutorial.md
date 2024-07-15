@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-Neste artigo, abordamos o processo de criação da Fonte de dados com o Salesforce
+Neste artigo, abordamos o processo de criação do Data Source com Salesforce
 
 Pré-requisitos para este tutorial:
 
@@ -35,22 +35,22 @@ Pré-requisitos para este tutorial:
 * Fornecer escopos OAuth apropriados para o aplicativo (selecionei todos os escopos OAuth disponíveis para fins de teste)
 * Forneça a URL de retorno de chamada. No meu caso, o URL de retorno de chamada era
 
-   * Se você estiver usando **AEM Forms 6.3**, a URL de retorno de chamada é https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Nesse cabeçalho de criação de URL está o nome do meu modelo de dados de formulário.
+   * Se você estiver usando o **AEM Forms 6.3**, a URL de retorno de chamada será https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Nesse cabeçalho de criação de URL está o nome do meu modelo de dados de formulário.
 
    * Se estiver usando o** AEM Forms 6.4**, o URL de retorno de chamada será https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta na qual o AEM está sendo executado.
 
-Depois de criar o Aplicativo conectado, observe que **Chave do consumidor e Chave secreta**. Você precisa delas ao criar a fonte de dados no AEM Forms.
+Depois de criar o Aplicativo Conectado, anote a **Chave do Consumidor e a Chave Secreta**. Você precisa delas ao criar a fonte de dados no AEM Forms.
 
 Agora que você criou o aplicativo conectado, é necessário criar um arquivo swagger para as operações que você precisa executar no salesforce. Um exemplo de arquivo Swagger é incluído como parte dos ativos baixáveis. Esse arquivo Swagger permite criar um objeto &quot;Lead&quot; no envio do Formulário adaptável. Por favor, explore este arquivo Swagger.
 
-A próxima etapa é criar uma Fonte de dados no AEM Forms. Siga as etapas a seguir de acordo com a versão do AEM Forms
+A próxima etapa é criar o Data Source no AEM Forms. Siga as etapas a seguir de acordo com a versão do AEM Forms
 
 ## AEM Forms 6.3 {#aem-forms}
 
 * Faça logon no AEM Forms usando o protocolo https
-* Navegue até os serviços em nuvem digitando em https://&lt;servername>:&lt;serverport> /etc/cloudservices.html, Por exemplo, https://gbedekar-w7-1:6443/etc/cloudservices.html
+* Navegue até os serviços em nuvem digitando https://&lt;nome_do_servidor>:&lt;porta_do_servidor> /etc/cloudservices.html, Por exemplo, https://gbedekar-w7-1:6443/etc/cloudservices.html
 * Role para baixo até &quot;Modelo de dados de formulário&quot;.
 * Clique em &quot;Mostrar configurações&quot;.
 * Clique em &quot;+&quot; para adicionar nova configuração
@@ -66,14 +66,14 @@ A próxima etapa é criar uma Fonte de dados no AEM Forms. Siga as etapas a segu
 * Selecione &quot;Arquivo&quot; como a opção para o arquivo de origem do swagger. Navegue até o arquivo que você baixou anteriormente
 * Selecione o tipo de autenticação como OAuth2.0
 * Fornecer os valores de ID do cliente e Segredo do cliente
-* O URL do OAuth é - **https://login.salesforce.com/services/oauth2/authorize**
-* URL do token de atualização - **https://na5.salesforce.com/services/oauth2/token**
-* **URL do token de acesso - https://na5.salesforce.com/services/oauth2/token**
-* Escopo da autorização: ** api chatter_api id completa openid refresh_token visualforce web**
+* A URL do OAuth é - **https://login.salesforce.com/services/oauth2/authorize**
+* URL do Token de Atualização - **https://na5.salesforce.com/services/oauth2/token**
+* **URL do Token de Acesso - https://na5.salesforce.com/services/oauth2/token**
+* Escopo da autorização: ** api   id completa do chatter_api   openid   refresh_token visualforce web**
 * Manipulador de autenticação: portador de autorização
 * Clique em &quot;Conectar ao OAUTH&quot;. Se tudo correr bem, você não deve ver nenhum erro
 
-Depois de criar seu Modelo de dados de formulário usando o Salesforce, você poderá criar a Integração de dados de formulário usando a Fonte de dados que acabou de criar. A documentação oficial para criar a Integração de dados do formulário é [aqui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Depois de criar seu Modelo de dados de formulário usando o Salesforce, você poderá criar a Integração de dados de formulário usando o Data Source que acabou de criar. A documentação oficial para criar a Integração de dados de formulário está [aqui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 
@@ -83,9 +83,9 @@ Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Fo
 
 ## AEM Forms 6.4 {#aem-forms-1}
 
-* Criar fonte de dados
+* Criar Source de dados
 
-   * [Navegar até as Fontes de dados](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/global)
+   * [Navegar até as Fontes de Dados](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/global)
 
    * Clique no botão &quot;Criar&quot;
    * Forneça alguns valores significativos
@@ -95,18 +95,18 @@ Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Fo
       * Tipo de serviço: serviço RESTful
 
    * Clique em Avançar
-   * Origem do Swagger: Arquivo
+   * Source do Swagger: Arquivo
    * Procure e selecione o arquivo Swagger que você baixou na etapa anterior
    * Tipo de autenticação: OAuth 2.0. Especifique os seguintes valores
    * Fornecer os valores de ID do cliente e Segredo do cliente
-   * O URL do OAuth é - **https://login.salesforce.com/services/oauth2/authorize**
-   * URL do token de atualização - **https://na5.salesforce.com/services/oauth2/token**
-   * URL do token de acesso **l - https://na5.salesforce.com/services/oauth2/token**
+   * A URL do OAuth é - **https://login.salesforce.com/services/oauth2/authorize**
+   * URL do Token de Atualização - **https://na5.salesforce.com/services/oauth2/token**
+   * URL do Token de Acesso **l - https://na5.salesforce.com/services/oauth2/token**
    * Escopo da autorização: ** api chatter_api id completa openid refresh_token visualforce web**
    * Manipulador de autenticação: portador de autorização
    * Clique no botão &quot;Conectar ao OAuth&quot;. Caso veja algum erro, revise as etapas anteriores para garantir que todas as informações foram inseridas com precisão.
 
-Depois de criar a Fonte de dados usando o SalesForce, você poderá criar a Integração de dados do formulário usando a Fonte de dados recém-criada. O link da documentação para isso é [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Depois de criar o Data Source usando o SalesForce, você poderá criar a Integração de dados de formulário usando o Data Source que acabou de criar. O link da documentação para isso está [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 

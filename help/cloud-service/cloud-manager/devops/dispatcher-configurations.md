@@ -1,6 +1,6 @@
 ---
 title: Gerenciar o dispatcher no AEM Cloud Manager
-description: Gerencie configurações do dispatcher no AEM Cloud Manager.
+description: Gerenciar configurações do dispatcher no AEM Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial

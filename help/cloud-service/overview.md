@@ -13,11 +13,11 @@ ht-degree: 5%
 
 ---
 
-# Vídeos e tutoriais as a Cloud Service sobre o AEM {#overview}
+# Vídeos e tutoriais do AEM as a Cloud Service {#overview}
 
 {{edge-delivery-services}}
 
-O Adobe Experience Manager (AEM) agora está disponível as a Cloud Service. O AEM as a Cloud Service apresenta a próxima geração da linha de produtos Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
+O Adobe Experience Manager (AEM) agora está disponível as a Cloud Service. A AEM as a Cloud Service apresenta a próxima geração da linha de produtos Experience Manager, com base em investimentos e inovações anteriores, preservando e estendendo todos os casos de uso e funcionalidades.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
@@ -39,7 +39,7 @@ O Adobe Experience Manager (AEM) agora está disponível as a Cloud Service. O A
       </a>
       <div>
          <a href="./accessing/overview.md">
-         <strong>Tutorial de configuração do acesso ao AEM</strong>
+         <strong>Configurando o acesso ao Tutorial de AEM</strong>
          </a>
       </div>
       <p>
@@ -52,11 +52,11 @@ O Adobe Experience Manager (AEM) agora está disponível as a Cloud Service. O A
       </a>
       <div>
          <a href="./local-development-environment/overview.md">
-         <strong>Tutorial de configuração do ambiente de desenvolvimento local</strong>
+         <strong>Tutorial de Instalação do Ambiente de Desenvolvimento Local</strong>
          </a>
       </div>
       <p>
-         <em>Prepare sua máquina de desenvolvimento local para o desenvolvimento as a Cloud Service do AEM!</em>
+         <em>Prepare sua máquina de desenvolvimento local para o desenvolvimento do AEM as a Cloud Service!</em>
       <p>
    </td>   
    <td>
@@ -65,11 +65,11 @@ O Adobe Experience Manager (AEM) agora está disponível as a Cloud Service. O A
       </a>
       <div>
          <a href="./debugging/aem-sdk-local-quickstart/overview.md">
-         <strong>Depuração do SDK do AEM</strong>
+         <strong>Depurando o SDK do AEM</strong>
          </a>
       </div>
       <p>
-         <em>Explore as ferramentas usadas para depurar seu aplicativo no quickstart local do SDK do AEM as a Cloud Service.</em>
+         <em>Explore as ferramentas usadas para depurar o aplicativo na inicialização rápida local do SDK do AEM as a Cloud Service.</em>
       <p>
    </td>
 </table>

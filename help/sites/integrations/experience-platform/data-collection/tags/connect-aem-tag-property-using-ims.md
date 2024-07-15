@@ -28,16 +28,16 @@ Saiba como conectar o AEM com a Propriedade de tags usando a configuração IMS 
 
 A configuração do IMS usando o projeto Adobe Developer Console é necessária para integrar o AEM à Propriedade de tag recém-criada. Essa configuração permite que o AEM se comunique com o aplicativo de tags usando APIs de tags, e o IMS lida com o aspecto de segurança dessa integração.
 
-Sempre que um ambiente AEM as Cloud Service é provisionado, algumas configurações de IMS, como Asset compute, Adobe Analytics e tags, são criadas automaticamente. A variável criada automaticamente **tags na Adobe Experience Platform** A configuração IMS pode ser usada ou uma nova configuração IMS deve ser criada se você estiver usando um ambiente AEM 6.X.
+Sempre que um ambiente AEM as Cloud Service é provisionado, algumas configurações de IMS, como Asset Compute, Adobe Analytics e tags, são criadas automaticamente. As **tags criadas automaticamente na configuração do IMS do Adobe Experience Platform** podem ser usadas ou uma nova configuração do IMS deve ser criada se você estiver usando o ambiente AEM 6.X.
 
-Revisar criado automaticamente **tags na Adobe Experience Platform** Configuração do IMS usando as etapas a seguir.
+Revise as **tags criadas automaticamente na configuração IMS do Adobe Experience Platform** usando as seguintes etapas.
 
-1. No AEM, abra o **Ferramentas** menu
+1. No AEM, abra o menu **Ferramentas**
 1. Na seção Segurança, selecione Configurações do Adobe IMS.
-1. Selecione o **Adobe Launch** e clique em **Propriedades**, revise os detalhes de **Certificado** e **Conta** guias. Clique em **Cancelar** para retornar sem modificar os detalhes criados automaticamente.
-1. Selecione o **Adobe Launch** e desta vez clique em **Verificar integridade**, você deverá ver o **Sucesso** como abaixo.
+1. Selecione o cartão **Adobe Launch** e clique em **Propriedades**, revise os detalhes nas guias **Certificado** e **Conta**. Em seguida, clique em **Cancelar** para retornar sem modificar os detalhes criados automaticamente.
+1. Selecione o cartão **Adobe Launch** e desta vez clique em **Verificar integridade**. Você deverá ver a mensagem **Success** como abaixo.
 
-   ![Configuração de IMS íntegro das tags](assets/adobe-launch-healthy-ims-config.png)
+   ![Configuração IMS Íntegra das Marcas](assets/adobe-launch-healthy-ims-config.png)
 
 ## Próximas etapas
 

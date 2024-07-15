@@ -22,11 +22,11 @@ ht-degree: 0%
 
 # Filtrar aplicativo Angular
 
-Explore a capacidade das APIs do GraphQL sem periféricos do AEM de filtrar dados usando um [Angular](https://angular.io/) aplicativo. Este aplicativo Angular cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
+Explore a capacidade das APIs AEM Headless do GraphQL de filtrar dados usando um aplicativo [Angular](https://angular.io/). Este aplicativo Angular cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
 
-Este código demonstra o uso de Adobe [Cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL no Angular. Este aplicativo usa o `wknd-shared/adventures-all` consulta persistente para coletar todas as aventuras e derivar uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para o `wknd-shared/adventures-by-activity` consulta persistente e recupera os detalhes de aventura somente para as aventuras do Tipo de atividade especificado.
+Este código demonstra o uso de Adobe [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) para invocar consultas persistentes do GraphQL a partir do Angular. Este aplicativo usa a consulta persistente `wknd-shared/adventures-all` para coletar todas as aventuras e obter uma lista de Tipos de atividade disponíveis. Quando um usuário seleciona um Tipo de atividade, o tipo selecionado é passado para a consulta persistente `wknd-shared/adventures-by-activity` e recupera os detalhes de aventura somente para as aventuras do Tipo de atividade especificado.
 
 Este código:
 
-+ Conecta-se a um serviço de publicação AEM e não requer autenticação
++ Conecta-se a um serviço AEM Publish e não requer autenticação
 + Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`

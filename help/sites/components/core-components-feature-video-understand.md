@@ -33,5 +33,5 @@ Os Componentes principais do AEM são um conjunto de componentes padrão a ser u
 ## Recursos adicionais {#additional-resources}
 
 * [Projeto do GitHub](https://github.com/adobe/aem-core-wcm-components)
-* [Exemplos de componentes principais](https://www.aemcomponents.dev/)
-* [Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+* [Exemplos de Componentes Principais](https://www.aemcomponents.dev/)
+* [Documentação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)

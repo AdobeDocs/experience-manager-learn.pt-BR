@@ -26,7 +26,7 @@ Saiba como limpar e remover o código de amostra gerado de um projeto AEM gerado
 
 ## Recursos
 
-+ [Arquétipo de projeto Maven para AEM](https://github.com/adobe/aem-project-archetype)
++ [Arquétipo de projeto AEM Maven](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
@@ -46,13 +46,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## Edições
 
-Remova o `<div class="helloworld" ...></div>` de:
+Remover o `<div class="helloworld" ...></div>` de:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Remova o `<helloworld>` definição da instância do componente de:
+Remover a definição da instância do componente `<helloworld>` de:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

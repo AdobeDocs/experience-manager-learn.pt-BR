@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Implantar no servidor
 
-* Baixe e instale o [biblioteca do cliente](assets/inline-image-client-library.zip) na instância do AEM usando o gerenciador de pacotes AEM.
-* Baixe e instale o [exemplo de formulário](assets/inline-image-af.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
+* Baixe e instale a [biblioteca do cliente](assets/inline-image-client-library.zip) na sua instância do AEM usando o gerenciador de pacotes AEM.
+* Baixe e instale o [formulário de amostra](assets/inline-image-af.zip) em sua instância do AEM usando o gerenciador de pacotes AEM.
 * Aponte seu navegador para [Adicionar imagem integrada](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Clique no botão &quot;Anexar sua foto&quot; para adicionar imagem

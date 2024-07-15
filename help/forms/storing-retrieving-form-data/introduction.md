@@ -25,7 +25,7 @@ Este tutorial guiará você pelas etapas envolvidas no salvamento e na recupera�
 
 * Fazer uma chamada de POST para um servlet. Esse servlet armazena os dados no banco de dados. Os dados armazenados estão associados a um GUID
 
-* Quando quiser preencher o Formulário adaptável com os dados armazenados, você recuperará os dados associados à GUID e preencherá o Formulário adaptável usando o **request.setAttribute** método.
+* Quando quiser preencher o formulário adaptável com os dados armazenados, você recuperará os dados associados ao GUID e preencherá o formulário adaptável usando o método **request.setAttribute**.
 
 ## Demonstração do caso de uso
 

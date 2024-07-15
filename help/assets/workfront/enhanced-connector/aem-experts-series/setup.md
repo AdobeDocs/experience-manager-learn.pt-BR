@@ -23,10 +23,10 @@ ht-degree: 1%
 
 # Instalação e configuração iniciais
 
-![Série para especialistas em AEM](./assets/banner.png)
+![Série de especialistas em AEM](./assets/banner.png)
 
 Saiba como instalar e configurar o conector aprimorado do Workfront for Experience Manager, desbloqueando a capacidade combinada do AEM Assets e do Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_Esta é a primeira parte de um [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_
+_Esta é a primeira parte de uma série especializada de [quatro partes sobre o conector aprimorado do Workfront for Experience Manager](./overview.md)_

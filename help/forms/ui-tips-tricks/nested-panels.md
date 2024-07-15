@@ -24,7 +24,7 @@ Quando o formulário tem guias de navegação à esquerda e se uma das guias tiv
 
 ## Criar formulário adaptável
 
-Crie um formulário adaptável com a seguinte estrutura. O painel raiz tem painéis secundários que são exibidos como guias à esquerda. Alguns desses &quot;**guias**&quot; têm painéis secundários adicionais. Por exemplo, a guia Família tem dois painéis filhos chamados Cônjuge e Filhos.
+Crie um formulário adaptável com a seguinte estrutura. O painel raiz tem painéis secundários que são exibidos como guias à esquerda. Algumas dessas &quot;**guias**&quot; têm painéis secundários adicionais. Por exemplo, a guia Família tem dois painéis filhos chamados Cônjuge e Filhos.
 
 Uma barra de ferramentas também é adicionada abaixo de FormContainer com os botões Anterior e Próximo
 
@@ -39,13 +39,13 @@ Para alterar esse comportamento padrão, é necessário fazer o seguinte
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
-Adicione o seguinte código ao evento de clique do **Próxima** botão usando o editor de código
+Adicione o seguinte código ao evento de clique do botão **Próximo** usando o editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'nextItemDeep', true);
 ```
 
-Adicione o seguinte código ao evento de clique do **Anterior** botão usando o editor de código
+Adicione o seguinte código ao evento de clique do botão **Anterior** usando o editor de código
 
 ```javascript
 window.guideBridge.setFocus(null, 'prevItemDeep', true);

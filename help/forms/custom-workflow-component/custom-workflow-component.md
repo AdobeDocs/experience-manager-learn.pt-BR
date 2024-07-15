@@ -22,7 +22,7 @@ Este tutorial destina-se aos clientes do AEM Forms que precisam criar um compone
 
 
 [Baixar o componente de fluxo de trabalho personalizado](assets/saveFiles.zip)
-Importar o componente de fluxo de trabalho [uso do gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+Importar o componente de fluxo de trabalho [usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
 O componente de fluxo de trabalho personalizado está localizado em /apps/AEMFormsDemoListings/workflowcomponent/SaveFiles
 
@@ -30,12 +30,12 @@ Selecione o nó SaveFiles e examine suas propriedades
 
 **componentGroup** - O valor dessa propriedade determina a categoria do componente do fluxo de trabalho.
 
-**jcr:Title** - Esse é o título do componente de fluxo de trabalho.
+**jcr:Title** - Este é o título do componente do fluxo de trabalho.
 
 **sling:resourceSuperType** O valor dessa propriedade determinará a herança desse componente. Nesse caso, estamos herdando do componente do processo
 
 
-![component-properties](assets/component-properties1.png)
+![propriedades-componente](assets/component-properties1.png)
 
 ## cq:dialog
 
@@ -46,17 +46,18 @@ Os nós no nó itens representam as guias do componente pelas quais os autores i
 
 Os argumentos do processo estão no nó processargs
 
-![process-args](assets/process-arguments.png)
+![argumentos-processo](assets/process-arguments.png)
 
 O autor especifica os argumentos conforme mostrado na captura de tela abaixo
-![workflow-component](assets/custom-workflow-component.png)
+![componente do fluxo de trabalho](assets/custom-workflow-component.png)
 
 Os valores são armazenados como propriedades do nó de metadados. Por exemplo, o valor **c:\formsattachments** será armazenado na propriedade saveToLocation do nó de metadados
-![save-location](assets/save-to-location.png)
+![local para salvar](assets/save-to-location.png)
 
 ## cq:editConfig
 
-O cq:EditConfig é simplesmente um nó com o tipo primário cq:EditConfig e o nome cq:editConfig na raiz do componente. O comportamento de edição de um componente é configurado ao adicionar um nó cq:editConfig do tipo cq:EditConfig abaixo do nó do componente (do tipo cq:Component)
+O cq:EditConfig é simplesmente um nó com o tipo primário cq:EditConfig e o nome cq:editConfig na raiz do componente
+O comportamento de edição de um componente é configurado adicionando um nó cq:editConfig do tipo cq:EditConfig abaixo do nó do componente (do tipo cq:Component)
 
 ![edit-config](assets/cq-edit-config.png)
 
@@ -64,6 +65,6 @@ cq:formParameters (tipo de nó nt:unstructured): define parâmetros adicionais q
 
 
 Observe as propriedades do nó cq:formParameters
-![from-parameters-properties](assets/form-parameters-properties.png)
+![de-parâmetros-propriedades](assets/form-parameters-properties.png)
 
 O valor da propriedade PROCESS indica o código java que será associado ao componente do fluxo de trabalho.

@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Preencher formulário com dados e anexos enviados
 
-Quando a variável **Administrador** Ao clicar em ViewLink na tabela de resultados da pesquisa, o formulário será preenchido previamente com os dados enviados.
+Quando o **Administrator** clica no ViewLink na tabela de resultados da pesquisa, o formulário é preenchido previamente com os dados enviados.
 
 Um serviço de preenchimento prévio foi usado para buscar os dados associados ao BlobId no portal do Azure.
 
-[Um artigo separado sobre como preencher o formulário com dados e anexos está disponível aqui.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[Um artigo separado sobre preenchimento prévio de formulário com dados e anexo está disponível aqui.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
 
 ## Próximas etapas
 

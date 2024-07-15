@@ -22,7 +22,7 @@ Restrição do Editor de regras do formulário adaptável a grupos específicos 
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
-*Este vídeo aborda o processo de restringir o editor de regras de formulário adaptável a grupos específicos no AEM.*
+*Este vídeo mostra o processo de restringir o editor de regras de formulário adaptável a grupos específicos no AEM.*
 
 >[!NOTE]
 >

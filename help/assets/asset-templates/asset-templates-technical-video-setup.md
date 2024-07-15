@@ -24,11 +24,11 @@ Modelos de ativos permitem que os profissionais de marketing criem, gerenciem e 
 
 >[!NOTE]
 >
->AEM **deve** estar conectado a um servidor InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor do InDesign.
+>O AEM **deve** estar conectado a um servidor do InDesign em execução quando o modelo INDD for carregado. Parte do processamento inicial no arquivo INDD requer o servidor do InDesign.
 
 ## Baixar avaliação do InDesign Server {#download-indesign-server-trial}
 
-Baixar [Site de download de avaliação do InDesign Server](https://www.adobeprerelease.com/)
+Baixe o [site de download de avaliação do InDesign Server](https://www.adobeprerelease.com/)
 
 ## InDesign Server inicial {#starting-indesign-server}
 

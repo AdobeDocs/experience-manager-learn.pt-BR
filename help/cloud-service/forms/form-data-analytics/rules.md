@@ -22,20 +22,20 @@ ht-degree: 1%
 
 # Definir a regra
 
-Na propriedade Tags, criamos dois novos [regras](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Erro de validação de campo e FormSubmit**).
+Na propriedade Tags, criamos duas novas [regras](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Erro de validação de campo e FormSubmit**).
 
-![formulário adaptável](assets/rules.png)
+![formulário-adaptável](assets/rules.png)
 
 
 ## Erro de validação de campo
 
-A variável **Erro de validação de campo** a regra é acionada sempre que há erro de validação no campo de formulário adaptável. Por exemplo, em nosso formulário, se o número de telefone ou o email não estiver no formato esperado, uma mensagem de erro de validação será exibida.
+A regra **Erro de validação de campo** é acionada sempre que há erro de validação no campo de formulário adaptável. Por exemplo, em nosso formulário, se o número de telefone ou o email não estiver no formato esperado, uma mensagem de erro de validação será exibida.
 
-A regra Erro de validação de campo é configurada definindo o evento como _**Adobe Experience Manager Forms-Error**_ como mostrado na captura de tela
+A regra Erro de Validação de Campo é configurada definindo o evento como _**Adobe Experience Manager Forms-Error**_ conforme mostrado na captura de tela
 
 
 
-![requerente-Estado-residência](assets/field_validation_error_rule.png)
+![requerente-de-residência](assets/field_validation_error_rule.png)
 
 O Adobe Analytics - Definir variáveis é configurado da seguinte maneira
 
@@ -45,16 +45,16 @@ O Adobe Analytics - Definir variáveis é configurado da seguinte maneira
 
 A regra de Envio de formulário é acionada toda vez que um Formulário adaptável é enviado com êxito.
 
-A regra de envio de formulário é configurada usando o _**Adobe Experience Manager Forms - Enviar**_ evento
+A regra de Envio de Formulário é configurada usando o evento _**Adobe Experience Manager Forms - Enviar**_
 
-![form-submit-rule](assets/form-submit-rule.png)
+![regra de envio de formulário](assets/form-submit-rule.png)
 
-Na regra Enviar formulário, o valor do elemento de dados _**CandidatosEstadoDeResidência**_ é mapeado para prop5 e o valor do elemento de dados FormTitle é mapeado para prop8.
+Na regra de Envio de Formulário, o valor do elemento de dados _**ApplicantsStateOfResidence**_ é mapeado para prop5 e o valor do elemento de dados FormTitle é mapeado para prop8.
 
 As variáveis Adobe Analytics - Set são configuradas da seguinte maneira.
-![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
+![formulário-envio-regra-conjunto-variáveis](assets/form-submit-set-variable.png)
 
-Quando estiver pronto para testar o código de tags,[publicar as alterações feitas nas tags](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) usando o fluxo de publicação.
+Quando estiver pronto para testar seu código de marcas,[publique as alterações feitas nas marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) usando o fluxo de publicação.
 
 ## Próximas etapas
 

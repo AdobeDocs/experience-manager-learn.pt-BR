@@ -1,5 +1,5 @@
 ---
-title: Personalização da experiência completa da página da Web
+title: Personalization da experiência completa da página da Web
 description: Saiba como criar uma atividade do Target para redirecionar as páginas do site de AEM para novas páginas usando o Adobe Target.
 jira: KT-6353
 thumbnail: 6353-personalization-web-page.jpg
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Personalização da experiência completa da página da Web {#personalization-fpe}
+# Personalization da experiência completa da página da Web {#personalization-fpe}
 
 Saiba como criar uma atividade para redirecionar as páginas do site hospedadas no AEM para uma nova página usando o Adobe Target.
 
@@ -37,27 +37,27 @@ O site da WKND reprojetou sua página inicial e gostaria de redirecionar os visi
 ## Etapas para criar um teste A/B usando o Visual Experience Composer (VEC)
 
 1. Faça logon no Adobe Target e navegue até a guia Atividades
-1. Clique em **Criar atividade** e escolha **Teste A/B** atividade
+1. Clique no botão **Criar atividade** e escolha a atividade **Teste A/B**
 
    ![Atividade A/B](assets/ab-target-activity.png)
 
-1. Selecione o **Visual Experience Composer** , forneça o URL da atividade e clique em **Próxima**
+1. Selecione a opção **Visual Experience Composer**, forneça a URL da atividade e clique em **Avançar**
 
    ![URL da atividade](assets/ab-test-url.png)
 
-1. O Visual Experience Composer exibe duas guias no lado esquerdo depois que você cria uma atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o **Adicionar experiência** botão.
+1. O Visual Experience Composer exibe duas guias no lado esquerdo depois que você cria uma atividade: *Experiência A* e *Experiência B*. Selecione uma experiência na lista. Você pode adicionar novas experiências à lista usando o botão **Adicionar experiência**.
 
    ![Opções de experiência](assets/experience-options.png)
 
-1. Exiba as opções disponíveis para a Experiência A e selecione a **Redirecionar para URL** e forneça um URL para a nova página inicial do Site WKND.
+1. Exiba as opções disponíveis para a Experiência A e selecione a opção **Redirecionar para URL** e forneça uma URL para a nova home page do Site WKND.
 
    ![URL de redirecionamento](assets/redirect-url.png)
 
-1. Renomear *Experiência A* para *Nova página inicial da WKND* e *Experiência B* para *Página inicial da WKND*
+1. Renomear a *Experiência A* como *Nova Página Inicial da WKND* e *Experiência B* como *Página Inicial da WKND*
 
    ![Aventuras](assets/new-experiences.png)
 
-1. Clique em **Próxima** para ir para Direcionamento e manter uma alocação de tráfego manual de 50 a 50 entre as duas experiências.
+1. Clique em **Avançar** para ir para Direcionamento e manter uma alocação de tráfego manual de 50 a 50 entre as duas experiências.
 
    ![Direcionamento](assets/targeting.png)
 

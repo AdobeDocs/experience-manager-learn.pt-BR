@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de refatoração de código
-description: Saiba como as Ferramentas de refatoração de código AEM ajudam a automatizar a conversão de projetos existentes de AEM para serem compatíveis com o AEM as a Cloud Service.
+description: Saiba como as Ferramentas de refatoração de código do AEM ajudam a automatizar a conversão de projetos existentes do AEM para que sejam compatíveis com o AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Ferramentas de refatoração de código
 
-Saiba como as Ferramentas de refatoração de código AEM ajudam a automatizar a conversão de projetos existentes de AEM para serem compatíveis com o AEM as a Cloud Service.
+Saiba como as Ferramentas de refatoração de código do AEM ajudam a automatizar a conversão de projetos existentes do AEM para que sejam compatíveis com o AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)

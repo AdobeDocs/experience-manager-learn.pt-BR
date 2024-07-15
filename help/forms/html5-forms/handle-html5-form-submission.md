@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Tratar Envio de Formulário HTML5
 
-Os formulários HTML5 podem ser enviados ao servlet hospedado no AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar o formulário HTML5, é necessário adicionar o &quot;Botão de envio HTTP&quot; ao modelo de formulário usando o AEM Forms Designer
+Os formulários HTML5 podem ser enviados ao servlet hospedado no AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar seu formulário HTML5, é necessário adicionar o &quot;Botão de envio HTTP&quot; ao modelo de formulário usando o AEM Forms Designer
 
 ## Criar seu manipulador de envio
 
-Um servlet simples pode ser criado para lidar com o envio do formulário HTML5. Os dados enviados podem ser extraídos usando o código a seguir. Este [servlet](assets/html5-submit-handler.zip) O é disponibilizado para você como parte deste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usar [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+Um servlet simples pode ser criado para lidar com o envio do formulário HTML5. Os dados enviados podem ser extraídos usando o código a seguir. Este [servlet](assets/html5-submit-handler.zip) foi disponibilizado para você como parte deste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
-O código da linha 9 pode ser usado para chamar o processo J2EE. Verifique se você configurou o [Configuração do SDK do cliente do LiveCycle Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se você pretende usar o código para chamar o processo J2EE.
+O código da linha 9 pode ser usado para chamar o processo J2EE. Certifique-se de ter configurado a [Configuração do SDK do cliente do Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se pretender usar o código para invocar o processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -59,11 +59,11 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ## Configure a URL de envio do formulário HTML5
 
-![submit-url](assets/submit-url.PNG)
+![enviar-url](assets/submit-url.PNG)
 
-* Clique no xdp e _Propriedades_->_Avançado_
+* Toque no xdp e clique em _Propriedades_->_Avançadas_
 * copie http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e cole no campo de texto Enviar URL
-* Clique em _SalvarEfechar_ botão.
+* Clique no botão _Salvar e fechar_.
 
 ### Adicionar entrada nos Caminhos de exclusão
 
@@ -82,4 +82,4 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Leitura adicional
 
-Este [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) ao gerar PDF a partir do envio do formulário HTML5 também é recomendado.
+Este [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre geração de PDF a partir do envio do formulário HTML5 também é recomendado.

@@ -27,11 +27,11 @@ Observe a sintaxe para inserir valores de campos de formulário no email. També
 
 Quando o Formulário adaptável for enviado, o destinatário receberá um email.
 
-![SendEmail](assets/sendemailaction.gif)
+![EnviarEmail](assets/sendemailaction.gif)
 
 ## Configurações necessárias {#configurations-needed}
 
-Você terá que configurar o serviço Day CQ Mail. Isso pode ser configurado apontando seu navegador para [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Você terá que configurar o serviço Day CQ Mail. Isto pode ser configurado apontando seu navegador para o [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 A captura de tela mostra as propriedades de configuração do servidor de email da Adobe.
 
@@ -39,9 +39,9 @@ A captura de tela mostra as propriedades de configuração do servidor de email 
 
 Para tentar isso no servidor, siga estas instruções:
 
-* [Importar os ativos](assets/timeoffrequest.zip) associado a este artigo no AEM usando o gerenciador de pacotes.
+* [Importe os ativos](assets/timeoffrequest.zip) associados a este artigo no AEM usando o gerenciador de pacotes.
 
-* Abra o [FormuláriodeSolicitaçãodeFolga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Abra o [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Preencha os detalhes. Forneça um endereço de email válido no campo de email.
 

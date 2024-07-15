@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para configurar localizadores do gemfire em um cluster e executar a configuração relacionada
 
-*Este vídeo aborda as etapas para configurar localizadores do Gemfire em um cluster e executar configurações relacionadas.*
+*Este vídeo mostra as etapas para configurar localizadores do gemfire em um cluster e executar configurações relacionadas.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)

@@ -20,7 +20,7 @@ ht-degree: 13%
 
 + [Visão geral do AEM Headless](./overview.md)
 + GraphQL {#graphql}
-   + [Portal do desenvolvedor AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR){target=_blank}
+   + [Portal de desenvolvedores AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR){target=_blank}
    + [Visão geral](./graphql/overview.md)
    + Configuração rápida {#quick-setup}
       + [Serviço em nuvem](./graphql/quick-setup/cloud-service.md)
@@ -31,9 +31,9 @@ ht-degree: 13%
       + [3 - Criação de consultas do GraphQL](./graphql/video-series/creating-graphql-queries.md)
       + [4 - Variações de fragmento de conteúdo](./graphql/video-series/content-fragment-variations.md)
       + [5 - Endpoints do GraphQL](./graphql/video-series/graphql-endpoints.md)
-      + [6 - Arquitetura do autor e da publicação](./graphql/video-series/author-publish-architecture.md)
+      + [6 - Autor e arquitetura do Publish](./graphql/video-series/author-publish-architecture.md)
       + [7 - Consultas persistentes do GraphQL](./graphql/video-series/graphql-persisted-queries.md)
-   + Tutorial básico{#multi-step}
+   + Tutorial Básico{#multi-step}
       + [Visão geral](./graphql/multi-step/overview.md)
       + [1 - Definição dos modelos de fragmento de conteúdo](./graphql/multi-step/content-fragment-models.md)
       + [2 - Criação de fragmentos de conteúdo](./graphql/multi-step/author-content-fragments.md)
@@ -46,7 +46,7 @@ ht-degree: 13%
       + [3 - Explorar a API do GraphQL do AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Consultas persistentes do GraphQL](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integração de aplicativos cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + Primeiro tutorial do Headless{#headless-first}
+   + Primeiro tutorial do headless{#headless-first}
       + [Visão geral](./graphql/headless-first-tutorial/overview.md)
       + [1 - Modelagem de conteúdo](./graphql/headless-first-tutorial/1-content-modeling.md)
       + [2 - APIs AEM headless e React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
@@ -114,7 +114,7 @@ ht-degree: 13%
    + [3 - Criação de fragmentos de conteúdo de evento](./content-services/chapter-3.md)
    + [4 - Definição dos Modelos dos Serviços de Conteúdo](./content-services/chapter-4.md)
    + [5 - Criação das páginas dos serviços de conteúdo](./content-services/chapter-5.md)
-   + [6 - Exposição do conteúdo na publicação do AEM para entrega](./content-services/chapter-6.md)
+   + [6 - Exposição do conteúdo no AEM Publish para entrega](./content-services/chapter-6.md)
    + [7 - Consumir serviços de conteúdo AEM de um aplicativo móvel](./content-services/chapter-7.md)
 + Amostras de código {#code-samples}
    + [Filtrar o aplicativo React](./graphql/code-samples/filtering-react-app.md)

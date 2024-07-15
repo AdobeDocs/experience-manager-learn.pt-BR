@@ -1,6 +1,6 @@
 ---
-title: Fluxo de trabalho principal do Dynamic Media Classic e visualização de ativos
-description: 'Saiba mais sobre o fluxo de trabalho principal do Dynamic Media Classic, que inclui as três etapas: Criar (e fazer upload), Autor (e Publicar) e Entregar. Em seguida, saiba como visualizar ativos no Dynamic Media Classic.'
+title: Fluxo de trabalho principal do Dynamic Media Classic e pré-visualização do Assets
+description: Saiba mais sobre o fluxo de trabalho principal do Dynamic Media Classic, que inclui as três etapas - Criar (e fazer upload), Autor (e Publish) e Entregar. Em seguida, saiba como visualizar ativos no Dynamic Media Classic.
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
@@ -15,23 +15,23 @@ ht-degree: 0%
 
 ---
 
-# Fluxo de trabalho principal do Dynamic Media Classic e visualização de ativos {#main-workflow}
+# Fluxo de trabalho principal do Dynamic Media Classic e pré-visualização do Assets {#main-workflow}
 
-O Dynamic Media é compatível com um processo de fluxo de trabalho Criar (e fazer upload), Autor (e Publicar) e Entregar. Você começa fazendo upload de ativos e, em seguida, fazendo algo com esses ativos, como criar um Conjunto de imagens e finalmente publicar para ativá-los. A etapa Criar é opcional para alguns fluxos de trabalho. Por exemplo, se o objetivo for apenas fazer o dimensionamento dinâmico e o zoom em imagens ou converter e publicar vídeo para transmissão, não há etapas de criação necessárias.
+O Dynamic Media é compatível com um processo de fluxo de trabalho Criar (e fazer upload), Autor (e Publish) e Entregar. Você começa fazendo upload de ativos e, em seguida, fazendo algo com esses ativos, como criar um Conjunto de imagens e finalmente publicar para ativá-los. A etapa Criar é opcional para alguns fluxos de trabalho. Por exemplo, se o objetivo for apenas fazer o dimensionamento dinâmico e o zoom em imagens ou converter e publicar vídeo para transmissão, não há etapas de criação necessárias.
 
 ![imagem](assets/main-workflow/create-author-deliver.jpg)
 
 O fluxo de trabalho nas soluções da Dynamic Media Classic consiste em três etapas principais:
 
 1. Criar (e fazer upload) conteúdo de origem
-2. Ativos do autor (e publicação)
-3. Entregar ativos
+2. Assets do autor (e Publish)
+3. Fornecer Assets
 
 ## Etapa 1: criar (e fazer upload)
 
 Este é o início do workflow. Nesta etapa, colete ou crie o conteúdo original que se encaixa no fluxo de trabalho que está sendo usado e faça upload dele para o Dynamic Media Classic. O sistema suporta vários tipos de arquivos para imagens, vídeo e fontes, mas também para PDF, Adobe Illustrator e Adobe InDesign.
 
-Veja a lista completa de [Tipos de arquivo suportados](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Consulte a lista completa de [Tipos de Arquivos com Suporte](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Você pode fazer upload do conteúdo original de várias maneiras diferentes:
 
@@ -44,9 +44,9 @@ O modo padrão é Da área de trabalho, onde você procura por arquivos em sua r
 
 >[!TIP]
 >
->Não adicione as pastas manualmente. Em vez disso, execute um upload do FTP e use o **Incluir subpastas** opção para recriar a estrutura de pastas dentro do Dynamic Media Classic.
+>Não adicione as pastas manualmente. Em vez disso, execute um upload do FTP e use a opção **Incluir subpastas** para recriar sua estrutura de pastas dentro do Dynamic Media Classic.
 
-As duas opções de upload mais importantes são ativadas por padrão — **Marcar para publicação**, que discutimos anteriormente, e **Substituir**. Substituir significa que, se o arquivo que está sendo carregado tiver o mesmo nome de um arquivo que já está no sistema, o novo arquivo substituirá a versão existente. Se você desmarcar essa opção, talvez o arquivo não seja carregado.
+As duas opções de carregamento mais importantes estão habilitadas por padrão: **Marcar para Publish**, que discutimos anteriormente, e **Substituir**. Substituir significa que, se o arquivo que está sendo carregado tiver o mesmo nome de um arquivo que já está no sistema, o novo arquivo substituirá a versão existente. Se você desmarcar essa opção, talvez o arquivo não seja carregado.
 
 ### Substituir opções ao carregar imagens
 
@@ -64,11 +64,11 @@ Exige que a imagem de substituição tenha a mesma extensão de nome de arquivo 
 - **Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão**.
 Essa opção é a regra de substituição mais inclusiva. É possível fazer upload de uma imagem de substituição para uma pasta diferente da original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição ficará localizada na nova pasta para a qual foi carregada.
 
-Saiba mais sobre o [Opção de substituição de imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Saiba mais sobre a [Opção Substituir imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Embora não seja obrigatório, ao fazer upload usando um dos dois métodos acima, você pode especificar Opções de trabalho para esse upload específico — por exemplo, para agendar um upload recorrente, definir opções de recorte no upload e muitos outros. Eles podem ser valiosos para alguns fluxos de trabalho, portanto, vale a pena considerar se podem ser para o seu.
 
-Saiba mais sobre [Opções de trabalho](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-options).
+Saiba mais sobre [Opções de Trabalho](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=pt-BR#upload-options).
 
 O upload é a primeira etapa necessária em qualquer fluxo de trabalho porque o Dynamic Media Classic não pode trabalhar com qualquer conteúdo que ainda não esteja em seu sistema. Em segundo plano, durante o upload, o sistema registra cada ativo carregado no banco de dados centralizado do Dynamic Media Classic, atribui uma ID e a copia para o armazenamento. Além disso, o sistema converte arquivos de imagem para um formato que permite redimensionamento dinâmico e zoom e converte arquivos de vídeo para o formato MP4 compatível com a Web.
 
@@ -86,20 +86,20 @@ Da mesma forma, você pode fazer upload do vídeo principal de origem no Dynamic
 
 ### Regras básicas para determinar o tamanho ideal das imagens que você carrega
 
-**Carregue imagens no maior tamanho que precisar.**
+**Carregue as imagens no maior tamanho que precisar.**
 
 - Se precisar aplicar o zoom, carregue uma imagem de alta resolução com um intervalo de 1500 a 2500 pixels na dimensão mais longa. Considere quantos detalhes você deseja fornecer, a qualidade das imagens de origem e o tamanho do produto que está sendo mostrado. Por exemplo, carregue uma imagem de 1000 pixels para um anel pequeno, mas uma imagem de 3000 pixels para uma cena inteira da sala.
 - Se você não precisar aplicar o zoom, carregue-o no tamanho exato em que é exibido. Por exemplo, se você tiver logotipos ou imagens de abertura/banner para colocar em suas páginas, carregue-as exatamente no tamanho 1:1 e chame-as exatamente nesse tamanho.
 
-**Nunca faça upsample ou exploda suas imagens antes de fazer upload para o Dynamic Media Classic.** Por exemplo, não remova a resolução de uma imagem menor para transformá-la em uma imagem de 2000 pixels. Não vai parecer bom. Faça suas imagens o mais próximo possível da perfeição antes de carregá-las.
+**Nunca remova a amostra ou estoure suas imagens antes de carregá-las no Dynamic Media Classic.** Por exemplo, não remova a resolução de uma imagem menor para transformá-la em uma imagem de 2000 pixels. Não vai parecer bom. Faça suas imagens o mais próximo possível da perfeição antes de carregá-las.
 
-**Não há tamanho mínimo para o zoom, mas, por padrão, os visualizadores não aplicarão o zoom além de 100%.** Se a imagem for muito pequena, ela não fará nenhum zoom ou apenas ampliará uma pequena quantidade para evitar que pareça ruim.
+**Não há tamanho mínimo para zoom, mas, por padrão, os visualizadores não irão ampliar além de 100%.** Se a sua imagem for muito pequena, ela não fará nenhum zoom ou apenas um pequeno zoom para evitar que pareça ruim.
 
 **Embora não haja um mínimo para o tamanho da imagem, não recomendamos carregar imagens gigantes.** Uma imagem gigante pode ser considerada com mais de 4000 pixels. O upload de imagens desse tamanho pode mostrar falhas potenciais, como grãos de poeira ou pelos na imagem. Essas imagens ocupam mais espaço no servidor do Dynamic Media Classic, o que pode fazer com que você ultrapasse os limites de armazenamento contratados.
 
-Saiba mais sobre [Upload de arquivos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Saiba mais sobre [Carregando Arquivos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
-## Etapa 2: Autor (e publicação)
+## Etapa 2: autor (e Publish)
 
 Depois de criar e carregar seu conteúdo, você criará novos ativos de mídia avançada a partir dos ativos carregados executando um ou mais sub-workflows. Isso inclui todos os diferentes tipos de coleções de conjuntos — Imagem, Amostra, Rotação e Conjuntos de mídia mista, bem como Modelos. Também inclui vídeo. Posteriormente, entraremos em maiores detalhes sobre cada tipo de conjunto de coleção de imagens e mídia avançada de vídeo. No entanto, em quase todos os casos, você começa selecionando um ou mais ativos (ou sem ativos selecionados) e escolhendo o tipo de ativo que deseja criar. Por exemplo, você pode selecionar uma imagem principal e algumas exibições dessa imagem e optar por criar um Conjunto de imagens, uma coleção de exibições alternativas do mesmo produto.
 
@@ -107,15 +107,15 @@ Depois de criar e carregar seu conteúdo, você criará novos ativos de mídia a
 >
 >Verifique se todos os ativos estão marcados para publicação. Embora, por padrão, todos os ativos sejam marcados automaticamente para publicação ao carregar, todos os ativos recém-criados do conteúdo carregado também precisarão ser marcados para publicação.
 
-Depois de criar o novo ativo, você executará um trabalho de publicação. Você pode fazer isso manualmente ou agendar um trabalho de publicação que é executado automaticamente. Publicar copia todo o conteúdo da esfera privada, da esfera do Dynamic Media Classic para a esfera pública e do servidor de publicação da equação. O produto de um trabalho de publicação do Dynamic Media é um URL exclusivo para cada ativo publicado.
+Depois de criar o novo ativo, você executará um trabalho de publicação. Você pode fazer isso manualmente ou agendar um trabalho de publicação que é executado automaticamente. Publicar copia todo o conteúdo da esfera privada, da esfera do Dynamic Media Classic para a esfera pública e do servidor de publicação da equação. O produto de uma tarefa do Dynamic Media Publish é um URL exclusivo para cada ativo publicado.
 
 O servidor no qual você publica depende do tipo de conteúdo e fluxo de trabalho. Por exemplo, todas as imagens vão para o Servidor de imagens e o vídeo de fluxo contínuo para o Servidor FMS. Para maior comodidade, falaremos de &quot;publicar&quot; como um único evento em um único servidor.
 
-Publicar publica todo o conteúdo marcado para publicação, não apenas o seu conteúdo. Um único administrador normalmente publica em nome de todos, em vez de usuários individuais que executam uma publicação. O administrador pode publicar conforme necessário ou configurar um trabalho recorrente diário, semanal ou até mesmo a cada 10 minutos que será publicado automaticamente. Publique de acordo com uma programação adequada para sua empresa.
+Publicar publica todo o conteúdo marcado para publicação, não apenas o seu conteúdo. Um único administrador normalmente publica em nome de todos, em vez de usuários individuais que executam uma publicação. O administrador pode publicar conforme necessário ou configurar um trabalho recorrente diário, semanal ou até mesmo a cada 10 minutos que será publicado automaticamente. Publish em uma programação adequada para sua empresa.
 
 >[!TIP]
 >
->Automatize os trabalhos de publicação e agende uma Publicação completa para ser executada todos os dias às 12h ou a qualquer momento depois da noite.
+>Automatize os trabalhos de publicação e agende um Publish completo para ser executado todos os dias às 12h ou a qualquer momento depois da noite.
 
 ### Conceito: entender o URL do Dynamic Media Classic
 
@@ -139,18 +139,18 @@ Os ativos recém-carregados e publicados são vistos imediatamente, enquanto os 
 
 Normalmente, isso não é um problema, a menos que ocorra um erro e a imagem/ativo tenha o mesmo nome da versão publicada anteriormente, mas há um problema com a imagem. Por exemplo, você carregou acidentalmente uma versão de baixa resolução ou o diretor de arte não aprovou a imagem. Nesse caso, é necessário recuperar a imagem original e substituí-la por uma nova versão usando a mesma ID do ativo.
 
-Saiba como [Limpe manualmente o cache para os URLs que precisam ser atualizados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=pt-BR).
+Saiba como [Limpar manualmente o cache das URLs que precisam ser atualizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=pt-BR).
 
 >[!TIP]
 >
 >Para evitar problemas com atraso de armazenamento em cache, sempre trabalhe com antecedência — uma noite, um dia, duas semanas etc. Crie em tempo hábil para garantir a qualidade/aceitação para que as partes internas testem seu trabalho antes de lançá-lo ao público. Mesmo trabalhar uma noite antes do permite fazer alterações e republicar essa noite. Pela manhã, decorreram 10 horas e o cache é atualizado com a imagem correta.
 
-- Saiba mais sobre [Criação de um trabalho de publicação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Saiba mais sobre [Criação de um Trabalho de Publicação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
 - Saiba mais sobre [Publicação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Etapa 3: entrega
 
-Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou alguma outra coleção ou vídeo de Conjunto de imagens. Você precisa pegar esse URL e fazer algo com ele, como editar seu HTML, para que a variável `<IMG>` as tags apontam para a imagem do Dynamic Media Classic em vez de apontar para uma imagem vinda do site atual.
+Lembre-se de que o produto final de um fluxo de trabalho do Dynamic Media Classic é um URL que aponta para o ativo. O URL pode apontar para uma imagem individual, um Conjunto de imagens, um Conjunto de rotação ou alguma outra coleção ou vídeo de Conjunto de imagens. Você precisa pegar essa URL e fazer algo com ela, como editar seu HTML, para que as tags `<IMG>` apontem para a imagem do Dynamic Media Classic, em vez de apontar para uma imagem que vem do seu site atual.
 
 Na etapa Entrega, você deve integrar esses URLs ao seu site, aplicativo móvel, campanha de email ou qualquer outro ponto de contato digital no qual deseja exibir o ativo.
 
@@ -172,16 +172,16 @@ Exemplo de um link (em vermelho) que abrirá um Conjunto de imagens em um visual
 >
 >É necessário integrar os URLs do Dynamic Media Classic ao seu site, aplicativo móvel, email e outros pontos de contato digitais. A Dynamic Media Classic não pode fazer isso para você.
 
-## Visualização de ativos
+## Visualização do Assets
 
-Você provavelmente desejará visualizar os ativos carregados ou que estão sendo criados ou editados para garantir que eles apareçam como você deseja quando os clientes os visualizarem. É possível acessar a janela Visualizar clicando em qualquer **Visualizar** na miniatura do ativo, na parte superior do menu **Painel Procurar/Construir**, ou acessando **Arquivo > Visualizar**. Em uma janela do navegador, ela visualizará qualquer ativo que esteja atualmente no painel, seja uma imagem, vídeo ou ativo criado, como um Conjunto de imagens.
+Você provavelmente desejará visualizar os ativos carregados ou que estão sendo criados ou editados para garantir que eles apareçam como você deseja quando os clientes os visualizarem. Você pode acessar a janela de Visualização clicando em qualquer botão **Visualizar**, na miniatura do ativo, na parte superior do **Painel de Navegação/Compilação**, ou acessando **Arquivo > Visualizar**. Em uma janela do navegador, ela visualizará qualquer ativo que esteja atualmente no painel, seja uma imagem, vídeo ou ativo criado, como um Conjunto de imagens.
 
 ### Visualização do tamanho dinâmico (predefinições de imagem)
 
-É possível visualizar imagens em vários tamanhos usando o **Tamanhos** visualização. Isso carrega uma lista de suas Predefinições de imagem disponíveis. Posteriormente, discutiremos as Predefinições de imagem, mas as consideraremos &quot;receitas&quot; para carregar sua imagem em um tamanho nomeado, com quantidades específicas de nitidez e qualidade de imagem.
+Você pode visualizar suas imagens em vários tamanhos usando a visualização de **Tamanhos**. Isso carrega uma lista de suas Predefinições de imagem disponíveis. Posteriormente, discutiremos as Predefinições de imagem, mas as consideraremos &quot;receitas&quot; para carregar sua imagem em um tamanho nomeado, com quantidades específicas de nitidez e qualidade de imagem.
 
 ### Visualização do zoom
 
-Você também pode usar a variável **Zoom** opção para visualizar a imagem em uma das muitas predefinições de zoom pré-criadas, que são baseadas em diferentes visualizadores de zoom incluídos.
+Você também pode usar a opção **Zoom** para visualizar sua imagem em uma das muitas predefinições de zoom pré-criadas, que são baseadas em diferentes visualizadores de zoom incluídos.
 
-Saiba mais sobre [Visualização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Saiba mais sobre [Visualização do Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).

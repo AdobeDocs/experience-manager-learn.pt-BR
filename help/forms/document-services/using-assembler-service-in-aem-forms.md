@@ -103,10 +103,10 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Para que esse recurso funcione no servidor AEM
 
-* Baixe o [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) ao seu sistema local.
-* Faça upload e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* Baixar[Pacote de serviços de documento personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Baixar [Desenvolvimento com o pacote de usuário de serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Baixe o [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) no sistema local.
+* Carregue e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* Baixar[Pacote de Serviços de Documentos Personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Baixar [Desenvolvimento com o Conjunto de Usuários de Serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Implante e inicie os pacotes usando o [felix web console](http://localhost:4502/system/console/bundles)
 * Aponte seu navegador para [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Arraste e solte alguns arquivos de PDF
@@ -115,7 +115,7 @@ Para que esse recurso funcione no servidor AEM
 >
 >Verifique se a instalação do AEM Forms foi concluída. Todos os seus pacotes precisam estar no estado ativo.
 >
->Verifique se você adicionou - Boot delegate RSA e bibliotecas BouncyCastle, conforme mencionado neste [Instalação do AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Verifique se você adicionou - Boot delegate RSA e bibliotecas BouncyCastle como mencionado nesta [Instalação do AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avisos para esta demonstração**
 >

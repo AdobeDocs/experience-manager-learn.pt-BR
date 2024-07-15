@@ -267,8 +267,8 @@ Após definir o serviço e a ação de envio personalizada, estamos prontos para
 
 
 * [Siga as etapas descritas aqui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importar formulário adaptável e manipulador de envio personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip). Este pacote contém o Formulário adaptável configurado para enviar à ação de envio personalizada.
-* Visualize o [formulário](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importar Formulário Adaptável e Manipulador de Envio Personalizado usando o gerenciador de pacotes](assets/create-acs-profile-on-af-submission.zip).Este pacote contém o Formulário Adaptável configurado para enviar para ação de envio personalizada.
+* Visualizar o [formulário](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Preencha todos os campos e envie
 * Um novo perfil é criado em sua instância do ACS
 

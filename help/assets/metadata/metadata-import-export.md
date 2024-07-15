@@ -29,19 +29,19 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
 
 >[!TIP]
 >
-> Ao abrir o arquivo CSV de exportação de metadados no Excel, use o [Importador do Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) em vez de clicar duas vezes no arquivo para evitar problemas com arquivos CSV codificados em UTF-8.
+> Ao abrir o arquivo CSV de exportação de metadados no Excel, use o [importador do Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) em vez de clicar duas vezes no arquivo para evitar problemas com arquivos CSV codificados em UTF-8.
 >
 > Para abrir o arquivo CSV de exportação de metadados no Excel, siga estas etapas:
 > 
 > 1. Abrir o Microsoft Excel
-> 1. Selecionar __Arquivo > Novo__ para criar uma planilha vazia
+> 1. Selecione __Arquivo > Novo__ para criar uma planilha vazia
 > 1. Com a planilha vazia aberta, selecione __Arquivo > Importar__
-> 1. Selecionar __Texto__ e clique em __Importar__
-> 1. Selecione o arquivo CSV exportado no sistema de arquivos e clique em __Obter dados__
-> 1. Na etapa 1 do assistente de importação, selecione __Delimitado__ e defina __Origem do arquivo__ para __Unicode (UTF-8)__ e clique em __Próxima__
-> 1. Na etapa 2, defina o __Delimitadores__ para __Vírgula__ e clique em __Próxima__
-> 1. Na etapa 3, deixe a variável __Formato de dados da coluna__ como está e clique em __Concluir__
-> 1. Selecionar __Importar__ para adicionar os dados à planilha
+> 1. Selecione o arquivo __Texto__ e clique em __Importar__
+> 1. Selecione o arquivo CSV exportado do sistema de arquivos e clique em __Obter dados__
+> 1. Na etapa 1 do assistente de importação, selecione __Delimitado__ e defina __Origem do arquivo__ como __Unicode (UTF-8)__ e clique em __Avançar__
+> 1. Na etapa 2, defina os __Delimitadores__ como __Vírgula__ e clique em __Avançar__
+> 1. Na etapa 3, deixe o __Formato de dados da coluna__ como está e clique em __Concluir__
+> 1. Selecione __Importar__ para adicionar os dados à planilha
 
 ## Importação de metadados {#metadata-import}
 
@@ -56,7 +56,7 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
 ### Primeira linha
 
 * A primeira linha do arquivo CSV define o esquema de metadados.
-* O padrão da Primeira coluna é `assetPath`, que contém o Caminho absoluto do JCR de um ativo.
+* O padrão da Primeira coluna é `assetPath`, que contém o Caminho JCR absoluto para um ativo.
 
 * As colunas subsequentes na primeira linha apontam para outras propriedades de metadados de um ativo.
    * Por exemplo: `dc:title, dc:description, jcr:title`
@@ -72,9 +72,9 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
    * Incorreto: `Dc:Title {{String}}`
 
 * O tipo de propriedade não diferencia maiúsculas de minúsculas
-* Todos válidos [Tipos de propriedade JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) são compatíveis
+* Todos os [tipos de propriedades JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) válidos são suportados
 
-* Formato de propriedade de vários valores - `<metadata property name> {{<property type : MULTI }}`
+* Formato da Propriedade de Vários Valores - `<metadata property name> {{<property type : MULTI }}`
 
 ### Segunda linha para N linhas
 

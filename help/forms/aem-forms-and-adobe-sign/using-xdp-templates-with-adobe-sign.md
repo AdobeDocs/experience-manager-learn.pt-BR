@@ -24,7 +24,7 @@ Aproveitar modelos XDP existentes com a integração do AEM Forms e do Sign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
 
-Os ativos relacionados a este vídeo podem ser baixados nos links a seguir
+As Assets relacionadas a este vídeo podem ser baixadas nos links a seguir
 
 * [Modelo NDA](assets/nda-agreement-xdp-template.zip)
 * [Formulário adaptável](assets/nda-agreement-af-with-xdp-template.zip)

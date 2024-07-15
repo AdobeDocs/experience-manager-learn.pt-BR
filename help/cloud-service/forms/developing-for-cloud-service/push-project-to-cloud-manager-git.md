@@ -21,7 +21,8 @@ ht-degree: 1%
 
 Na etapa anterior, sincronizamos nosso projeto AEM com o Forms adaptável e Temas criados na instância AEM.
 Agora precisamos adicionar essas alterações ao repositório Git local e, em seguida, enviar o repositório Git local para o repositório Git do cloud manager.
-Abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app Execute os seguintes comandos
+Abra o prompt de comando e navegue até c:\cloudmanager\aem-banking-app
+Execute os seguintes comandos
 
 ```
 git add .

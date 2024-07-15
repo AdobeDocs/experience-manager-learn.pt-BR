@@ -1,6 +1,6 @@
 ---
 title: Como desativar o armazenamento em cache do CDN
-description: Saiba como desativar o armazenamento em cache de respostas HTTP no CDN do AEM as a Cloud Service.
+description: Saiba como desativar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 # Como desativar o armazenamento em cache do CDN
 
-Saiba como desativar o armazenamento em cache de respostas HTTP no CDN do AEM as a Cloud Service. O armazenamento em cache de respostas é controlado pela `Cache-Control`, `Surrogate-Control`ou `Expires` Cabeçalhos de cache de resposta HTTP.
+Saiba como desativar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service. O cache de respostas é controlado por `Cache-Control`, `Surrogate-Control` ou `Expires` cabeçalhos de cache de resposta HTTP.
 
-Esses cabeçalhos de cache normalmente são definidos em configurações de vhost do Dispatcher do AEM usando `mod_headers`, mas também pode ser definido no código Java™ personalizado em execução no próprio AEM Publish.
+Normalmente, esses cabeçalhos de cache são definidos em configurações de vhost do AEM Dispatcher usando `mod_headers`, mas também podem ser definidos no código Java™ personalizado em execução no próprio Publish AEM.
 
 ## Comportamento de cache padrão
 
-Revise o comportamento padrão de armazenamento em cache para publicação e autor do AEM quando um [Arquétipo de projeto AEM](./enable-caching.md#default-caching-behavior) com base no AEM for implantado.
+Revise o comportamento padrão de armazenamento em cache do AEM Publish e do Author quando um projeto do baseado no [Arquétipo de projeto do AEM AEM](./enable-caching.md#default-caching-behavior) for implantado.
 
 ## Desativar armazenamento em cache
 
-Desativar o armazenamento em cache pode ter um impacto negativo no desempenho da instância do AEM as a Cloud Service, portanto, tenha cuidado ao desativar o comportamento padrão de armazenamento em cache.
+A desativação do armazenamento em cache pode ter um impacto negativo no desempenho da sua instância do AEM as a Cloud Service, portanto, tenha cuidado ao desativar o comportamento padrão de armazenamento em cache.
 
 No entanto, há alguns cenários em que você pode desejar desativar o armazenamento em cache, como:
 
@@ -40,14 +40,14 @@ No entanto, há alguns cenários em que você pode desejar desativar o armazenam
 
 Para desativar o armazenamento em cache, você pode atualizar os cabeçalhos de cache de duas maneiras.
 
-1. **Configuração do vhost do Dispatcher:** Disponível somente para publicação no AEM.
-1. **Código Java™ personalizado:** Disponível para publicação no AEM e para Autor.
+1. **Configuração do Dispatcher vhost:** disponível somente para AEM Publish.
+1. **Código Java™ personalizado:** disponível para AEM Publish e Author.
 
 Vamos analisar cada uma dessas opções.
 
-### Configuração do vhost do Dispatcher
+### Configuração do Dispatcher vhost
 
-Essa opção é a abordagem recomendada para desabilitar o armazenamento em cache, no entanto, só está disponível para publicação no AEM. Para atualizar os cabeçalhos de cache, use o `mod_headers` módulo e `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
+Essa opção é a abordagem recomendada para desativar o armazenamento em cache, mas só está disponível para o AEM Publish. Para atualizar os cabeçalhos de cache, use o módulo `mod_headers` e a diretiva `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -62,12 +62,12 @@ Essa opção é a abordagem recomendada para desabilitar o armazenamento em cach
 
 #### Exemplo
 
-Para desativar o armazenamento em cache CDN do **Tipos de conteúdo CSS** para alguns fins de solução de problemas, siga estas etapas.
+Para desabilitar o cache CDN dos **tipos de conteúdo CSS** para alguns fins de solução de problemas, siga estas etapas.
 
 Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS é necessária para gerar uma nova chave de cache para o arquivo CSS.
 
-1. No projeto AEM, localize o arquivo vhsot desejado em `dispatcher/src/conf.d/available_vhosts` diretório.
-1. Atualizar o vhost (por exemplo, `wknd.vhost`) da seguinte forma:
+1. No projeto AEM, localize o arquivo vhsot desejado do diretório `dispatcher/src/conf.d/available_vhosts`.
+1. Atualize o arquivo vhost (por exemplo, `wknd.vhost`) da seguinte maneira:
 
    ```
    <LocationMatch "^/etc.clientlibs/.*\.(css)$">
@@ -80,12 +80,12 @@ Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS 
    </LocationMatch>
    ```
 
-   Os arquivos vhost em `dispatcher/src/conf.d/enabled_vhosts` diretório são **symlinks** aos arquivos em `dispatcher/src/conf.d/available_vhosts` diretório, portanto, crie symlinks se não estiver presente.
-1. Implante as alterações do vhost no ambiente as a Cloud Service do AEM desejado usando o [Cloud Manager - Pipeline de configuração no nível da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+   Os arquivos vhost no diretório `dispatcher/src/conf.d/enabled_vhosts` são **symlinks** para os arquivos no diretório `dispatcher/src/conf.d/available_vhosts`. Portanto, se não houver, crie symlinks.
+1. Implante as alterações do vhost no ambiente do AEM as a Cloud Service desejado usando o [Pipeline de Configuração da Camada da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou os [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration) do Cloud Manager.
 
 ### Código Java™ personalizado
 
-Essa opção está disponível para publicação no AEM e para Autor. Para atualizar os cabeçalhos de cache, use o `SlingHttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
+Essa opção está disponível para o AEM Publish e para o Author. Para atualizar os cabeçalhos de cache, use o objeto `SlingHttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
 
 ```java
 response.setHeader("Cache-Control", "private");

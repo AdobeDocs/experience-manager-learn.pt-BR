@@ -29,10 +29,10 @@ O vídeo a seguir destaca alguns dos principais recursos do Editor de páginas.
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
 
-Consulte a [Documentação do AEM para obter uma visão geral completa dos recursos do Editor de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR).
+Consulte a [documentação do AEM para obter uma visão geral completa dos recursos do Editor de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR).
 
 ## Recursos adicionais {#additional-resources}
 
 * [Documentação do Editor de páginas do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
 * [Editando a documentação de conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia do usuário de criação de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Guia do usuário de criação do Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)

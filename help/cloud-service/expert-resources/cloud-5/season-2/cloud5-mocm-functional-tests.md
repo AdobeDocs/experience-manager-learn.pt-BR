@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Cloud 5 - Mistérios do Cloud Manager - Testes funcionais
 
-O AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu aplicativo criado no topo. No entanto, esses testes podem não abranger todos os testes necessários que você possa precisar. Testes funcionais personalizados são necessários.
+O AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu aplicativo integrado. No entanto, esses testes podem não abranger todos os testes necessários que você possa precisar. Testes funcionais personalizados são necessários.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 

@@ -33,7 +33,7 @@ Usamos os seguintes diretórios de cache padrão em nossas instalações de linh
 - Editor
    - `/mnt/var/www/html`
 
-Quando cada solicitação atravessa o Dispatcher, as solicitações seguem as regras configuradas para manter uma versão em cache localmente para responder a itens elegíveis
+Quando cada solicitação passa pelo Dispatcher, as solicitações seguem as regras configuradas para manter uma versão em cache localmente para responder aos itens elegíveis
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Quando cada solicitação atravessa o Dispatcher, as solicitações seguem as re
 
 ## Arquivos de configuração
 
-O Dispatcher controla o que é qualificado como armazenável em cache no `/cache {` seção de qualquer arquivo farm. 
+O Dispatcher controla o que é qualificado como armazenável em cache na seção `/cache {` de qualquer arquivo farm. 
 Nos farms de configuração de linha de base do AMS, você encontrará nossas inclusões, como mostrado abaixo:
 
 
@@ -65,7 +65,7 @@ Eles estão perdendo um grande avanço no desempenho e na capacidade de resposta
 
 Vamos falar sobre a estratégia adotada na configuração do farm do autor para armazenar em cache corretamente.
 
-Aqui está um autor base `/cache {` seção do arquivo farm do autor:
+Esta é uma seção base do autor `/cache {` do arquivo farm do autor:
 
 
 ```
@@ -92,13 +92,13 @@ Aqui está um autor base `/cache {` seção do arquivo farm do autor:
 }
 ```
 
-O importante a ser observado aqui é que o `/docroot` está definido para o diretório de cache do autor.
+O importante a ser observado aqui é que o `/docroot` está definido como o diretório de cache do autor.
 
 >[!NOTE]
 >
->Verifique se o `DocumentRoot` no do autor `.vhost` o arquivo corresponde aos farms `/docroot` parâmetro
+>Verifique se o `DocumentRoot` no arquivo `.vhost` do autor corresponde ao parâmetro `/docroot` dos farms
 
-A instrução include das regras de cache inclui o arquivo `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` que contém estas regras:
+As regras de cache incluem instruções que incluem o arquivo `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` que contém estas regras:
 
 ```
 /0000 { 
@@ -132,15 +132,15 @@ A instrução include das regras de cache inclui o arquivo `/etc/httpd/conf.disp
 ```
 
 Em um cenário de criação, o conteúdo é alterado o tempo todo e de propósito. Você só deseja armazenar em cache itens que não serão alterados com frequência.
-Temos regras para armazenar em cache `/libs` porque fazem parte da instalação básica do AEM e seriam alteradas até que você instalasse um Service Pack, Cumulative Fix Pack, Upgrade ou Hotfix. Portanto, armazenar esses elementos em cache faz muito sentido e realmente tem grandes benefícios da experiência do autor dos usuários finais que usam o site.
+Temos regras para armazenar em cache `/libs` porque elas fazem parte da instalação básica do AEM e seriam alteradas até que você instalasse um Service Pack, Cumulative Fix Pack, Atualização ou Hotfix. Portanto, armazenar esses elementos em cache faz muito sentido e realmente tem grandes benefícios da experiência do autor dos usuários finais que usam o site.
 
 >[!NOTE]
 >
->Lembre-se de que essas regras também fazem cache <b>`/apps`</b> é aqui que reside o código de aplicativo personalizado. Se você estiver desenvolvendo seu código nesta instância, será muito confuso quando você salvar o arquivo e não verá se reflete na interface do usuário, pois ele serve uma cópia em cache. A intenção aqui é que, se você implantar seu código no AEM, também não seja frequente, e parte de suas etapas de implantação deve ser limpar o cache do autor. Novamente, o benefício é enorme, tornando seu código que pode ser armazenado em cache mais rápido para os usuários finais.
+>Lembre-se de que essas regras também armazenam em cache <b>`/apps`</b>, é aqui que reside o código de aplicativo personalizado. Se você estiver desenvolvendo seu código nesta instância, será muito confuso quando você salvar o arquivo e não verá se reflete na interface do usuário, pois ele serve uma cópia em cache. A intenção aqui é que, se você implantar seu código no AEM, também não seja frequente, e parte de suas etapas de implantação deve ser limpar o cache do autor. Novamente, o benefício é enorme, tornando seu código que pode ser armazenado em cache mais rápido para os usuários finais.
 
 ## ServeOnStale (também conhecido como Serve on Stale / SOS)
 
-Esta é uma dessas pedras preciosas de um recurso do Dispatcher. Se o editor estiver sob carga ou não responder, normalmente emitirá um código de resposta http 502 ou 503. Se isso acontecer e esse recurso estiver ativado, o Dispatcher será instruído a continuar a fornecer o conteúdo que ainda estiver no cache, como um melhor esforço, mesmo que não seja uma cópia atualizada. É melhor servir algo se você o receber do que apenas mostrar uma mensagem de erro que não oferece nenhuma funcionalidade.
+Esta é uma daquelas joias de um recurso do Dispatcher. Se o editor estiver sob carga ou não responder, normalmente emitirá um código de resposta http 502 ou 503. Se isso acontecer e esse recurso estiver ativado, o Dispatcher será instruído a continuar a servir o conteúdo que ainda estiver no cache, como um melhor esforço, mesmo que não seja uma cópia atualizada. É melhor servir algo se você o receber do que apenas mostrar uma mensagem de erro que não oferece nenhuma funcionalidade.
 
 >[!NOTE]
 >
@@ -157,21 +157,21 @@ Essa configuração pode ser definida em qualquer farm, mas faz sentido aplicá-
 
 >[!NOTE]
 >
->Um dos comportamentos normais do módulo Dispatcher é que, se uma solicitação tiver um parâmetro de consulta no URI (normalmente mostrado como `/content/page.html?myquery=value`) ignorará o armazenamento em cache do arquivo e irá diretamente para a instância do AEM. Essa solicitação é considerada uma página dinâmica e não deve ser armazenada em cache. Isso pode causar efeitos negativos na eficiência do cache.
+>Um dos comportamentos normais do módulo Dispatcher é que, se uma solicitação tiver um parâmetro de consulta no URI (normalmente mostrado como `/content/page.html?myquery=value`), ela ignorará o armazenamento em cache do arquivo e irá diretamente para a instância do AEM. Essa solicitação é considerada uma página dinâmica e não deve ser armazenada em cache. Isso pode causar efeitos negativos na eficiência do cache.
 
-Veja isto [artigo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrando como parâmetros de consulta importantes podem afetar o desempenho do site.
+Consulte este [artigo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrando como parâmetros de consulta importantes podem afetar o desempenho do site.
 
-Por padrão, você deseja definir a variável `ignoreUrlParams` regras para permitir `*`.  Isso significa que todos os parâmetros de consulta são ignorados e permitem que todas as páginas sejam armazenadas em cache, independentemente dos parâmetros usados.
+Por padrão, você deseja definir as regras de `ignoreUrlParams` para permitir `*`.  Isso significa que todos os parâmetros de consulta são ignorados e permitem que todas as páginas sejam armazenadas em cache, independentemente dos parâmetros usados.
 
 Este é um exemplo em que alguém criou um mecanismo de referência de deep link de redes sociais que usa a referência de argumento no URI para saber de onde a pessoa veio.
 
-*Exemplo ignorável:*
+*Exemplo Ignorável:*
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
 A página é 100% armazenável em cache, mas não armazena em cache porque os argumentos estão presentes. 
-Configuração do `ignoreUrlParams` o as a lista de permissões ajudará a corrigir esse problema:
+Configurar o `ignoreUrlParams` como uma lista de permissões ajudará a corrigir esse problema:
 
 ```
 /cache { 
@@ -180,7 +180,7 @@ Configuração do `ignoreUrlParams` o as a lista de permissões ajudará a corri
     }
 ```
 
-Agora, quando o Dispatcher visualizar a solicitação, ele ignorará o fato de que a solicitação tem o `query` parâmetro de `?` referenciar e ainda armazenar a página em cache
+Agora, quando o Dispatcher vir a solicitação, ele ignorará o fato de que a solicitação tem o parâmetro `query` de referência `?` e ainda armazenará a página em cache
 
 <b>Exemplo dinâmico:</b>
 
@@ -229,10 +229,10 @@ Então aqui está a fonte html de cada pesquisa:
 </html>
 ```
 
-Se você visitou `/search.html?q=fruit` primeiro, armazenava o html em cache, com os resultados mostrando frutos.
+Se você visitou `/search.html?q=fruit` primeiro, ele armazenaria em cache o html com os resultados mostrando frutos.
 
-Em seguida, você visita `/search.html?q=vegetables` segundo, mas mostraria resultados de frutas.
-Isso ocorre porque o parâmetro de consulta de `q` O está sendo ignorado em relação ao armazenamento em cache.  Para evitar esse problema, você precisará anotar as páginas que renderizam HTML diferente com base nos parâmetros de consulta e negar o armazenamento em cache para eles.
+Depois você visita `/search.html?q=vegetables` segundo, mas mostraria resultados de fruto.
+Isso ocorre porque o parâmetro de consulta de `q` está sendo ignorado em relação ao armazenamento em cache.  Para evitar esse problema, você precisará anotar as páginas que renderizam HTML diferente com base nos parâmetros de consulta e negar o armazenamento em cache para eles.
 
 Exemplo:
 
@@ -252,7 +252,7 @@ As páginas que usam parâmetros de consulta por meio do JavaScript ainda funcio
 
 ## Armazenamento em cache de cabeçalhos de resposta
 
-É bastante óbvio que o Dispatcher armazene em cache `.html` páginas e clientlibs (ou seja, `.js`, `.css`), mas você sabia que também pode armazenar em cache cabeçalhos de resposta específicos ao lado do conteúdo em um arquivo com o mesmo nome, mas um `.h` extensão de arquivo. Isso permite que a próxima resposta não seja apenas ao conteúdo, mas aos cabeçalhos de resposta que devem acompanhá-lo do cache.
+É bastante óbvio que o Dispatcher armazena em cache `.html` páginas e clientlibs (ou seja, `.js`, `.css`), mas você sabia que também pode armazenar em cache cabeçalhos de resposta específicos junto com o conteúdo em um arquivo com o mesmo nome, mas com a extensão de arquivo `.h`. Isso permite que a próxima resposta não seja apenas ao conteúdo, mas aos cabeçalhos de resposta que devem acompanhá-lo do cache.
 
 O AEM pode lidar com mais do que apenas a codificação UTF-8
 
@@ -260,7 +260,7 @@ O AEM pode lidar com mais do que apenas a codificação UTF-8
 
 Esses valores quando em cache são removidos por padrão e o servidor Web Apache httpd fará seu próprio trabalho de processar o ativo com seus métodos normais de manipulação de arquivos, que normalmente é limitado à adivinhação de tipo mime com base em extensões de arquivo.
 
-Se você tiver o Dispatcher armazenado em cache no ativo e nos cabeçalhos desejados, poderá expor a experiência adequada e garantir que todos os detalhes cheguem ao navegador dos clientes.
+Se o Dispatcher armazenar o ativo em cache e os cabeçalhos desejados, você poderá expor a experiência adequada e garantir que todos os detalhes cheguem ao navegador dos clientes.
 
 Este é um exemplo de um farm com os cabeçalhos para armazenar em cache especificados:
 
@@ -290,9 +290,9 @@ Nos sistemas AEM que têm muita atividade de autores que fazem muitas ativaçõe
 
 ### Exemplo de como isso funciona:
 
-Se você tiver 5 solicitações para invalidar `/content/exampleco/en/` tudo acontece dentro de um período de 3 segundos.
+Se você tiver 5 solicitações para invalidar `/content/exampleco/en/`, tudo acontecerá em um período de 3 segundos.
 
-Com esse recurso desativado, você invalidaria o diretório do cache `/content/exampleco/en/` 5 vezes
+Com este recurso desativado, você invalidaria o diretório de cache `/content/exampleco/en/` 5 vezes
 
 Com esse recurso ativado e definido como 5 segundos, ele invalidaria o diretório de cache `/content/exampleco/en/` <b>uma vez</b>
 
@@ -305,7 +305,7 @@ Este é um exemplo de sintaxe desse recurso sendo configurado para um período d
 
 ## Invalidação baseada em TTL
 
-Um recurso mais recente do módulo Dispatcher foi `Time To Live (TTL)` opções de invalidação com base em para itens em cache. Quando um item é armazenado em cache, ele procura a presença de cabeçalhos de controle de cache e gera um arquivo no diretório de cache com o mesmo nome e um `.ttl` extensão.
+Um recurso mais recente do módulo Dispatcher foi `Time To Live (TTL)` com base nas opções de invalidação para itens em cache. Quando um item é armazenado em cache, ele procura a presença de cabeçalhos de controle de cache e gera um arquivo no diretório de cache com o mesmo nome e uma extensão `.ttl`.
 
 Este é um exemplo do recurso que está sendo configurado no arquivo de configuração do farm:
 
@@ -316,7 +316,7 @@ Este é um exemplo do recurso que está sendo configurado no arquivo de configur
 
 >[!NOTE]
 >
->Lembre-se que o AEM ainda precisa ser configurado para enviar cabeçalhos TTL para que o Dispatcher os honre. Alternar esse recurso permite que o Dispatcher saiba apenas quando remover os arquivos para os quais o AEM enviou cabeçalhos de controle de cache. Se o AEM não começar a enviar cabeçalhos TTL, o Dispatcher não fará nada especial aqui.
+>Lembre-se de que o AEM ainda precisa ser configurado para enviar cabeçalhos TTL para que o Dispatcher os honre. Alternar esse recurso permite que o Dispatcher saiba apenas quando remover os arquivos para os quais o AEM enviou cabeçalhos de controle de cache. Se o AEM não começar a enviar cabeçalhos TTL, o Dispatcher não fará nada de especial aqui.
 
 ## Regras de Filtro de Cache
 
@@ -336,6 +336,6 @@ Este é um exemplo de uma configuração de linha de base para quais elementos a
 
 Queremos tornar nosso site publicado ganancioso quanto possível e armazenar tudo em cache.
 
-Se houver elementos que interrompem a experiência quando armazenados em cache, você poderá adicionar regras para remover a opção para armazenar esse item em cache. Como você vê no exemplo acima, os tokens csrf nunca devem ser armazenados em cache e foram excluídos. Mais detalhes sobre a gravação dessas regras podem ser encontrados [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Se houver elementos que interrompem a experiência quando armazenados em cache, você poderá adicionar regras para remover a opção para armazenar esse item em cache. Como você vê no exemplo acima, os tokens csrf nunca devem ser armazenados em cache e foram excluídos. Mais detalhes sobre como a gravação dessas regras podem ser encontrados [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 [Próximo -> Uso e noções básicas sobre variáveis](./variables.md)

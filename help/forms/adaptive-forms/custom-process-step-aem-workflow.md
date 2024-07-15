@@ -34,7 +34,7 @@ A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe aprop
 
 ### Criar classe que implementa WorkflowProcess
 
-Abra o projeto Maven no Eclipse IDE. Expandir **projectname** > **core** pasta. Expanda a `src/main/java` pasta. Você deve ver um pacote que termina com `core`. Crie uma classe Java™ que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte:
+Abra o projeto Maven no Eclipse IDE. Expanda a pasta **nomedoprojeto** > **núcleo**. Expanda a pasta `src/main/java`. Você deve ver um pacote que termina com `core`. Crie uma classe Java™ que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte:
 
 ```java
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
@@ -42,11 +42,11 @@ public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaData
 
 O método execute dá acesso às 3 variáveis a seguir:
 
-**Item de trabalho**: a variável item de trabalho dará acesso aos dados relacionados ao fluxo de trabalho. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: a variável item de trabalho dará acesso aos dados relacionados ao fluxo de trabalho. A documentação da API pública está disponível [aqui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Essa variável workflowSession fornecerá a capacidade de controlar o workflow. A documentação da API pública está disponível [aqui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
+**WorkflowSession**: essa variável workflowSession lhe dará a capacidade de controlar o fluxo de trabalho. A documentação da API pública está disponível [aqui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
-**MetaDataMap**: todos os metadados associados ao workflow. Todos os argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap.[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap**: todos os metadados associados ao fluxo de trabalho. Todos os argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap.[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
 
@@ -133,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-Linha 1 - define as propriedades do componente. A variável `process.label` é o que você verá ao associar o componente OSGi à etapa do processo, como mostrado em uma das capturas de tela abaixo.
+Linha 1 - define as propriedades do componente. A propriedade `process.label` é o que você verá ao associar o componente OSGi à etapa do processo, conforme mostrado em uma das capturas de tela abaixo.
 
 Linhas 13-15 - Os argumentos do processo transmitidos para esse componente OSGi são divididos usando o separador &quot;,&quot;. Os valores de attachmentPath e saveToLocation são extraídos da matriz de cadeias de caracteres.
 
@@ -150,7 +150,7 @@ O serviço QueryBuilder é usado para consultar nós do tipo `nt:file` na pasta 
 
 >[!NOTE]
 >
->Como estamos usando um objeto Documento específico do AEM Forms, é necessário incluir a dependência aemfd-client-sdk no projeto maven. A ID do grupo é `com.adobe.aemfd` e a id dos artefatos for `aemfd-client-sdk`.
+>Como estamos usando um objeto Documento específico do AEM Forms, é necessário incluir a dependência aemfd-client-sdk no projeto maven. A ID do grupo é `com.adobe.aemfd` e a ID dos artefatos é `aemfd-client-sdk`.
 
 #### Criar e implantar
 

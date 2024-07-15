@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como limpar registros de processo do Gerenciador de trabalhos
 
-*Este vídeo aborda as etapas para limpar registros de processo do Gerenciador de processos.*
+*Este vídeo mostra as etapas para limpar registros de processo do Gerenciador de Trabalhos.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335577?quality=12&learn=on)

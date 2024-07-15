@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para verificar a Permissão de pasta no Windows Server 2016 para AEM Forms PDFG
 
-*Este vídeo aborda as etapas adicionais para verificar a Permissão de pasta no Windows Server 2016.*
+*Este vídeo mostra as etapas adicionais para verificar a Permissão de Pasta no Windows Server 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)

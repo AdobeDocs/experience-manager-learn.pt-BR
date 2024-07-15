@@ -24,7 +24,7 @@ Neste artigo, analisamos o email como um mecanismo de entrega para o documento d
 
 Vamos observar o seguinte fragmento de código. Esse código faz parte do GET.jsp que é acionado quando o usuário clica no link no email para exibir o documento do canal da Web. Nós obtemos o usuário logado usando o UserManager jackrabbit. Depois que obtemos o usuário conectado, obtemos o valor da propriedade accountNumber associada ao perfil do usuário.
 
-Em seguida, associamos o valor accountNumber a uma chave chamada accountnumber no mapa. A chave **número da conta** é definido no modal de dados do formulário como um Atributo de solicitação. O valor desse atributo é passado como parâmetro de entrada para o método do serviço de leitura do Modal de dados de formulário.
+Em seguida, associamos o valor accountNumber a uma chave chamada accountnumber no mapa. A chave **accountnumber** está definida no modal de dados de formulário como um Atributo de solicitação. O valor desse atributo é passado como parâmetro de entrada para o método do serviço de leitura do Modal de dados de formulário.
 
 Linha 7: estamos enviando a solicitação recebida para outro servlet, com base no tipo de recurso identificado pelo URL do documento de comunicação interativa. A resposta retornada por esse segundo servlet é incluída na resposta do primeiro servlet.
 
@@ -42,8 +42,8 @@ wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatemen
 
 Representação visual do código da linha 7
 
-![Configuração do parâmetro de solicitação](assets/requestparameter.png)
+![Solicitar configuração de parâmetro](assets/requestparameter.png)
 
 Atributo de solicitação definido para o serviço de leitura do modal de dados de formulário
 
-[Amostra do pacote AEM](assets/webchanneldelivery.zip).
+[Exemplo de Pacote AEM](assets/webchanneldelivery.zip).

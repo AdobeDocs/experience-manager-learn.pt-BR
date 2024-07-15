@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Veja a seguir o código completo da classe que implementa a interface.
 
-Esta classe utiliza 2 métodos de utilitário `getAccessToken`, `getJWTToken` e método estático `getContentAnalyserRequest` de `GetContentAnalyser` classe.
+Esta classe usa 2 métodos de utilitário `getAccessToken`, `getJWTToken` e método estático `getContentAnalyserRequest` da classe `GetContentAnalyser`.
 
 
 ```java

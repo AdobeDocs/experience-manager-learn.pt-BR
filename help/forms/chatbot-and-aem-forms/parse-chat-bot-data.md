@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # Analisar dados de ChatBot
 
-A [Webhook do ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) foi usado para enviar os dados do ChatBot para um servlet AEM.
+Um [webhook ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) foi usado para enviar os dados do ChatBot para um servlet AEM.
 Os dados capturados no ChatBot estão no formato JSON com os dados inseridos pelo usuário no objeto de atributos, conforme mostrado abaixo
-![chatbot-data](assets/chat-bot-data.png)
+![dados de chatbot](assets/chat-bot-data.png)
 
 Para mesclar os dados com o modelo XDP, precisamos criar o seguinte XML. Observe o elemento raiz do xml, que deve corresponder ao elemento raiz do modelo XDP para que os dados sejam mesclados com sucesso.
 
@@ -37,7 +37,7 @@ Para mesclar os dados com o modelo XDP, precisamos criar o seguinte XML. Observe
 </topmostSubForm>
 ```
 
-![xdp-template](assets/xdp-template.png)
+![modelo-xdp](assets/xdp-template.png)
 
 ## Próximas etapas
 

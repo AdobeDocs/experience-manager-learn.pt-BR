@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Como aumentar o tempo limite da sessão do UM
 
-*Este vídeo aborda o processo de aumentar o tempo limite da sessão do UM.*
+*Este vídeo mostra o processo de aumentar o tempo limite da sessão do UM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)

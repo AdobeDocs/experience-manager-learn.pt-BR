@@ -23,9 +23,9 @@ ht-degree: 4%
 
 {{aem-headless-trials-promo}}
 
-Um tutorial completo que ilustra como criar e expor conteúdo usando APIs do AEM GraphQL e consumi-lo por um aplicativo externo, em um cenário de CMS headless.
+Um tutorial completo que ilustra como criar e expor conteúdo usando APIs do GraphQL do AEM e consumi-lo por um aplicativo externo, em um cenário de CMS headless.
 
-Este tutorial explora como as APIs do AEM GraphQL e os recursos headless podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
+Este tutorial explora como as APIs GraphQL do AEM e os recursos headless podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
 
 Este tutorial aborda os seguintes tópicos:
 
@@ -44,18 +44,18 @@ São necessários os seguintes itens para seguir este tutorial:
 * As seguintes ferramentas devem ser instaladas localmente:
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
-   * Um IDE (por exemplo [Código do Microsoft® Visual Studio](https://code.visualstudio.com/))
+   * Um IDE (por exemplo, [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
 ### Ambiente AEM
 
-Para concluir este tutorial, é recomendável que você tenha acesso de administrador do AEM a um ambiente as a Cloud Service do AEM. Se você não tiver acesso a um ambiente as a Cloud Service do AEM, [inscrever-se para o teste AEM Headless](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) para explorar as capacidades do AEM headless.
+Para concluir este tutorial, é recomendável que você tenha acesso de administrador do AEM a um ambiente do AEM as a Cloud Service. Se você não tiver acesso a um ambiente do AEM as a Cloud Service, [inscreva-se no teste AEM Headless](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en) para explorar as capacidades do AEM Headless.
 
 ## Vamos começar!
 
-Inicie o tutorial com [Definição de modelos de fragmento de conteúdo](content-fragment-models.md).
+Inicie o tutorial com [Definindo Modelos de Fragmento de Conteúdo](content-fragment-models.md).
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis no [Guias do AEM - Projeto WKND GraphQL GitHub](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis no [AEM Guides - Projeto GitHub do WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um [Problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

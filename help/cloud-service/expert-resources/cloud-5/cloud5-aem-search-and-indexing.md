@@ -25,6 +25,6 @@ Um mergulho rápido nas águas profundas da pesquisa e indexação. Um tópico d
 
 ## Conteúdo abordado neste vídeo
 
-+ Pesquisa e indexação [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR)
-+ AEM [Conversor de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ [Visão Geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR) de Pesquisa e Índice
++ AEM [Conversor de Índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
 + Série especializada [Aprofundamento](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

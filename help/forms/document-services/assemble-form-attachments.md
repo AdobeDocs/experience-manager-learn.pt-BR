@@ -35,7 +35,7 @@ Quando um formulário adaptável é enviado para acionar um fluxo de trabalho do
 
 A ordem dos anexos é especificada como argumentos de etapa do processo no fluxo de trabalho, conforme mostrado na captura de tela abaixo. Aqui, estamos montando os anexos adicionados ao campo descartado, seguidos pelos demonstrativos bancários
 
-![etapa do processo](assets/process-step.JPG)
+![etapa-processo](assets/process-step.JPG)
 
 O trecho de código a seguir extrai os nomes dos anexos dos argumentos do processo
 
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Criar DDX a partir dos nomes dos anexos
 
-Depois, é necessário criar [Descrição do documento XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) documento que é usado pelo serviço Assembler para montar documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos XFA antes de serem montados. Observe que os elementos de origem de PDF estão na ordem correta, conforme especificado nos argumentos do processo.
+Em seguida, precisamos criar o documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço do Assembler para montar documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos XFA antes de serem montados. Observe que os elementos de origem de PDF estão na ordem correta, conforme especificado nos argumentos do processo.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -130,19 +130,19 @@ session.save();
 
 Veja a seguir a estrutura da pasta de carga útil após os anexos de formulário serem montados e armazenados.
 
-![estrutura de carga útil](assets/payload-structure.JPG)
+![estrutura de carga](assets/payload-structure.JPG)
 
 ### Para que esse recurso funcione no servidor AEM
 
-* Baixe o [Montar formulário de anexos de formulário](assets/assemble-form-attachments-af.zip) ao seu sistema local.
-* Importe o formulário do[Forms E Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) página.
-* Baixar [fluxo de trabalho](assets/assemble-form-attachments.zip) e importe para AEM usando o gerenciador de pacotes.
-* Baixe o [pacote personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Implante e inicie o pacote usando o [console da web](http://localhost:4502/system/console/bundles)
-* Aponte seu navegador para [Formulário MontarAnexos](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
+* Baixe o [Formulário de anexos de formulário](assets/assemble-form-attachments-af.zip) no sistema local.
+* Importe o formulário da página[Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Baixe o [fluxo de trabalho](assets/assemble-form-attachments.zip) e importe para AEM usando o gerenciador de pacotes.
+* Baixar o [pacote personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Implante e inicie o pacote usando o [console da Web](http://localhost:4502/system/console/bundles)
+* Aponte seu navegador para [Formulário AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Adicionar um anexo no documento de ID e alguns documentos em pdf à seção de extratos bancários
 * Enviar o formulário para acionar o fluxo de trabalho
-* Verifique o fluxo de trabalho [pasta de carga no crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para o pdf montado
+* Verifique a pasta [de carga do fluxo de trabalho no crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) para o pdf montado
 
 >[!NOTE]
 > Se você ativou o agente de log para o pacote personalizado, o DDX e o arquivo montado serão gravados na pasta da instalação do AEM.

@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Repositório de conteúdo
 
-Para integrar o Adobe Experience Manager (AEM) com Edge Delivery Services, comece configurando [SharePoint](#sharepoint) ou [Unidade Google](#google-drive) como seu repositório de conteúdo. Ambas as plataformas funcionam bem com o AEM, permitindo uma gestão e entrega de conteúdo tranquilas. Escolha o que se alinha às suas preferências e siga as etapas para colocá-lo em funcionamento com AEM e Edge Delivery Services.
+Para integrar o Adobe Experience Manager (AEM) com o Edge Delivery Services, comece configurando o [SharePoint](#sharepoint) ou a [Unidade Google](#google-drive) como seu repositório de conteúdo. Ambas as plataformas funcionam bem com o AEM, permitindo uma gestão e entrega de conteúdo tranquilas. Escolha o que se alinha às suas preferências e siga as etapas para colocá-lo em funcionamento com AEM e Edge Delivery Services.
 
 ## Opções de criação de documento
 
-Há dois repositórios de conteúdo compatíveis com o [criação de documentos](../../document-authoring/set-up.md), [SharePoint](#sharepoint) e [Unidade Google](#google-drive).
+Há dois repositórios de conteúdo com suporte para [criação de documentos](../../document-authoring/set-up.md), [SharePoint](#sharepoint) e [Unidade Google](#google-drive).
 
 >[!BEGINTABS]
 

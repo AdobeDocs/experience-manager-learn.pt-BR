@@ -1,6 +1,6 @@
 ---
 title: Integrar o AEM Forms com o Microsoft OneDrive
-description: Saiba como armazenar dados de envio as a Cloud Service do Adobe Experience Manager Forms no Microsoft OneDrive.
+description: Saiba como armazenar dados de envio do Adobe Experience Manager Forms as a Cloud Service no Microsoft OneDrive.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# AEM Forms Forms as a Cloud Service com o Microsoft OneDrive
+# AEM Forms Forms as a Cloud Service com Microsoft OneDrive
 
 Armazene dados de formulários adaptáveis no Microsoft OneDrive.
 

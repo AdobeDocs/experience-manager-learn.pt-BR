@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Este artigo guiará você pelas etapas envolvidas no salvamento e na recuperação dos dados do formulário adaptável do banco de dados. O banco de dados MySQL foi usado para armazenar os dados do Formulário adaptável. Em um alto nível, as etapas a seguir são as para obter o caso de uso:
 
-* [Configurar fonte de dados](#Configure-Data-Source)
+* [Configurar o Data Source](#Configure-Data-Source)
 * [Criar Servlet para gravar dados no banco de dados](#create-servlet)
 * [Crie o serviço OSGI para buscar dados armazenados](#create-osgi-service)
 * [Criar biblioteca do cliente](#create-client-library)
@@ -28,11 +28,11 @@ Este artigo guiará você pelas etapas envolvidas no salvamento e na recuperaç�
 * [Demonstração da capacidade](#capability-demo)
 * [Implantar no servidor](#deploy-on-your-server)
 
-## Configurar fonte de dados {#Configure-Data-Source}
+## Configurar o Data Source {#Configure-Data-Source}
 
 A fonte de dados agrupada da conexão Apache Sling está configurada para apontar para o banco de dados que será usado para armazenar os dados do formulário adaptável. A captura de tela a seguir mostra a configuração da minha instância. As seguintes propriedades podem ser copiadas e coladas
 
-* `Datasource Name:aemformstutorial` - Este é o nome usado no meu código.
+* `Datasource Name:aemformstutorial` - Este é o nome usado em meu código.
 
 * `JDBC Driver Class:com.mysql.jdbc.Driver`
 

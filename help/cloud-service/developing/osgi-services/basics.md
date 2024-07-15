@@ -95,4 +95,4 @@ package com.adobe.aem.wknd.examples.core.adventures;
 import org.osgi.annotation.versioning.Version;
 ```
 
-Adicionar um `package-info.java` é necessário para garantir que outros pacotes OSGi no AEM possam resolver a interface de serviço OSGi (ou qualquer classe Java). Se a variável `package-info.java` estiver ausente, o pacote Java e suas interfaces ou classes Java não serão exportados. Outros pacotes OSGi que tentam importar essas interfaces ou classes Java a partir deste pacote Java apresentarão um erro com a mensagem __Não pode ser resolvido__ no console do pacote AEM OSGi.
+Adicionar um `package-info.java` é necessário para garantir que outros pacotes OSGi no AEM possam resolver a interface de serviço OSGi (ou qualquer classe Java). Se o `package-info.java` estiver ausente, o pacote Java e suas interfaces ou classes Java não serão exportados. Outros pacotes OSGi tentando importar essas interfaces ou classes Java deste pacote Java gerarão um erro com a mensagem __Não é possível resolver__ no console Pacote OSGi do AEM.

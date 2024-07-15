@@ -27,7 +27,7 @@ No final, nosso site é atualizado para incluir estilos que correspondam à marc
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial em várias partes e presume-se que as etapas descritas no [Modelos de página](./page-templates.md) capítulo foram concluídas.
+Este é um tutorial de várias partes e presume-se que as etapas descritas no capítulo [Modelos de página](./page-templates.md) foram concluídas.
 
 ## Objetivos
 
@@ -50,17 +50,17 @@ Etapas de alto nível para o vídeo:
 
 ### Arquivos de solução
 
-Baixe os estilos concluídos para o [Tema de amostra do WKND](assets/theming/WKND-THEME-src-1.1.zip)
+Baixe os estilos concluídos para o [Tema de Amostra do WKND](assets/theming/WKND-THEME-src-1.1.zip)
 
 ## Implantar um tema usando um pipeline de front-end {#deploy-theme}
 
-Implante atualizações em um tema para um ambiente AEM usando o pipeline de front-end do Cloud Manager.
+Implante atualizações em um tema para um ambiente AEM usando o pipeline front-end do Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Etapas de alto nível para o vídeo:
 
-1. Criar um novo Git [repositório no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Criar um novo repositório Git [no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
 1. Adicione o projeto de fontes de tema ao repositório Git do Cloud Manager:
 
    ```shell
@@ -71,7 +71,7 @@ Etapas de alto nível para o vídeo:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configurar um [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) no Cloud Manager para implantar o código de front-end.
+1. Configure um [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) no Cloud Manager para implantar o código de front-end.
 1. Execute o pipeline de front-end para implantar atualizações no ambiente AEM de destino.
 
 ### Exemplo de acordos de recompra
@@ -87,4 +87,4 @@ Parabéns, você acabou de atualizar e implantar um tema para AEM!
 
 ### Próximas etapas {#next-steps}
 
-Aprofunde-se no desenvolvimento do AEM e entenda mais sobre a tecnologia subjacente criando um site usando o [Arquétipo de projeto AEM](../project-archetype/overview.md).
+Saiba mais sobre o desenvolvimento do AEM e entenda mais sobre a tecnologia subjacente criando um site usando o [Arquétipo de projeto do AEM](../project-archetype/overview.md).

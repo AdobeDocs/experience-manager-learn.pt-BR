@@ -20,7 +20,7 @@ ht-degree: 1%
 # AEM Forms com formulário web do Acrobat Sign
 
 
-Este tutorial aborda o caso de uso da geração de um documento de comunicação interativa com os dados enviados do [React](https://react.dev/) e apresentar o documento gerado para assinatura usando o formulário web do Acrobat Sign.
+Este tutorial o guiará pelo caso de uso de geração de um documento de comunicação interativa com os dados enviados pelo aplicativo [React](https://react.dev/) e de apresentação do documento gerado para assinatura usando o formulário web do Acrobat Sign.
 
 Veja a seguir o fluxo do caso de uso
 
@@ -34,8 +34,8 @@ Veja a seguir o fluxo do caso de uso
 Você precisará do seguinte para que o caso de uso funcione:
 
 * Um servidor AEM com pacote complementar do Forms
-* Um [chave de integração para um aplicativo do Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Uma [chave de integração para um aplicativo do Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
 
 ## Próximas etapas
 
-Escrever um [serviço OSGi personalizado para gerar o Documento de comunicação interativa](./create-ic-document.md) uso da API documentada
+Escreva um [serviço OSGi personalizado para gerar o Documento de comunicação interativa](./create-ic-document.md) usando a API documentada

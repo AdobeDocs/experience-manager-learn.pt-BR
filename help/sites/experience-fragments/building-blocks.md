@@ -29,7 +29,7 @@ Os blocos são um sub-recurso dos Fragmentos de experiência. Os blocos permitem
 
 >[!NOTE]
 >
-> O modelo usado para os Fragmentos de experiência deve incluir **Blocos de construção** como um componente permitido.
+> O modelo usado para Fragmentos de experiência deve incluir **Blocos de construção** como um componente permitido.
 
 * Os blocos facilitam a reutilização de componentes em variações.
 * As alterações no Bloco de construção principal são refletidas automaticamente em qualquer referência. As alterações no layout do Bloco de construção não são afetadas.

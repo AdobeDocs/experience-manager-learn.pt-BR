@@ -23,7 +23,7 @@ ht-degree: 1%
 
 As consultas do AEM Headless no GraphQL podem retornar grandes resultados. Este artigo descreve como trabalhar com grandes resultados no AEM Headless para garantir o melhor desempenho para seu aplicativo.
 
-AEM Headless suporta um [deslocamento/limite](#list-query) e [paginação baseada em cursor](#paginated-query) consultas a subconjuntos menores de um conjunto de resultados maior. Várias solicitações podem ser feitas para coletar quantos resultados forem necessários.
+O AEM Headless oferece suporte a [consultas de deslocamento/limite](#list-query) e [paginação baseada em cursor](#paginated-query) para subconjuntos menores de um conjunto de resultados maior. Várias solicitações podem ser feitas para coletar quantos resultados forem necessários.
 
 Os exemplos abaixo usam pequenos subconjuntos de resultados (quatro registros por solicitação) para demonstrar as técnicas. Em um aplicativo real, você usaria um número maior de registros por solicitação para melhorar o desempenho. 50 registros por solicitação é uma boa linha de base.
 
@@ -37,7 +37,7 @@ Ao trabalhar com grandes conjuntos de dados, a paginação baseada em cursor e d
 
 ### Deslocamento/limite
 
-Listar consultas, usando `limit` e `offset` fornecer uma abordagem simples que especifique o ponto de partida (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado em qualquer lugar no conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer a verificação de todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento é alto, pois pode exigir a recuperação e o descarte de muitos resultados.
+Consultas de lista, usando `limit` e `offset` fornecem uma abordagem simples que especifica o ponto inicial (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado em qualquer lugar no conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer a verificação de todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento é alto, pois pode exigir a recuperação e o descarte de muitos resultados.
 
 #### consulta do GraphQL
 
@@ -65,7 +65,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### Resposta do GraphQL
 
-A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500` assim, o [consulta de lista](#list-queries) especifica que aventuras com o mesmo preço são classificadas por título em ordem crescente.)
+A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500`, portanto, a [consulta de lista](#list-queries) especifica que aventuras com o mesmo preço são classificadas por título em ordem crescente.)
 
 ```json
 {
@@ -100,7 +100,7 @@ A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. A
 
 ### Consulta paginada
 
-A paginação baseada em cursor, disponível em consultas Paginadas, envolve o uso de um cursor (uma referência a um registro específico) para recuperar o próximo conjunto de resultados. Essa abordagem é mais eficiente, pois evita a necessidade de examinar todos os registros anteriores para recuperar o subconjunto de dados necessário. As consultas paginadas são excelentes para iterar por meio de grandes conjuntos de resultados desde o início, até algum ponto no meio ou até o fim. Listar consultas, usando `limit` e `offset` fornecer uma abordagem simples que especifique o ponto de partida (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado em qualquer lugar no conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer a verificação de todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento é alto, pois pode exigir a recuperação e o descarte de muitos resultados.
+A paginação baseada em cursor, disponível em consultas Paginadas, envolve o uso de um cursor (uma referência a um registro específico) para recuperar o próximo conjunto de resultados. Essa abordagem é mais eficiente, pois evita a necessidade de examinar todos os registros anteriores para recuperar o subconjunto de dados necessário. As consultas paginadas são excelentes para iterar por meio de grandes conjuntos de resultados desde o início, até algum ponto no meio ou até o fim. Consultas de lista, usando `limit` e `offset` fornecem uma abordagem simples que especifica o ponto inicial (`offset`) e o número de registros a serem recuperados (`limit`). Essa abordagem permite que um subconjunto de resultados seja selecionado em qualquer lugar no conjunto de resultados completo, como pular para uma página específica de resultados. Embora seja fácil de implementar, pode ser lento e ineficiente ao lidar com resultados grandes, pois a recuperação de muitos registros requer a verificação de todos os registros anteriores. Essa abordagem também pode levar a problemas de desempenho quando o valor de deslocamento é alto, pois pode exigir a recuperação e o descarte de muitos resultados.
 
 #### consulta do GraphQL
 
@@ -134,7 +134,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### Resposta do GraphQL
 
-A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500` assim, o [consulta de lista](#list-queries) especifica que aventuras com o mesmo preço são classificadas por título em ordem crescente.)
+A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. As duas primeiras aventuras nos resultados têm o mesmo preço (`4500`, portanto, a [consulta de lista](#list-queries) especifica que aventuras com o mesmo preço são classificadas por título em ordem crescente.)
 
 ```json
 {
@@ -177,7 +177,7 @@ A resposta JSON resultante contém a 2ª, 3ª, 4ª e 5ª Aventuras mais caras. A
 
 #### Próximo conjunto de resultados paginados
 
-O próximo conjunto de resultados pode ser obtido usando o `after` e o parâmetro `endCursor` valor da consulta anterior. Se não houver mais resultados a serem obtidos, `hasNextPage` é `false`.
+O próximo conjunto de resultados pode ser obtido usando o parâmetro `after` e o valor `endCursor` da consulta anterior. Se não houver mais resultados a serem obtidos, `hasNextPage` será `false`.
 
 ##### Variáveis de consulta
 
@@ -190,7 +190,7 @@ O próximo conjunto de resultados pode ser obtido usando o `after` e o parâmetr
 
 ## Exemplos do React
 
-Veja a seguir exemplos do React que demonstram como usar [deslocamento e limite](#offset-and-limit) e [paginação baseada em cursor](#cursor-based-pagination) abordagens. Normalmente, o número de resultados por solicitação é maior. No entanto, para os fins desses exemplos, o limite é definido como 5.
+A seguir estão exemplos do React que demonstram como usar [deslocamento e limite](#offset-and-limit) e [paginação baseada em cursor](#cursor-based-pagination) abordagens. Normalmente, o número de resultados por solicitação é maior. No entanto, para os fins desses exemplos, o limite é definido como 5.
 
 ### Exemplo de deslocamento e limite
 
@@ -200,7 +200,7 @@ Usando deslocamento e limite, subconjuntos de resultados podem ser facilmente re
 
 #### gancho useEffect
 
-A variável `useEffect` hook invoca uma consulta persistente (`adventures-by-offset-and-limit`) que recupera uma lista de Aventuras. A consulta usa o `offset` e `limit` parâmetros para especificar o ponto inicial e o número de resultados a serem recuperados. A variável `useEffect` o gancho é chamado quando a variável `page` alterações de valor.
+O gancho `useEffect` invoca uma consulta persistente (`adventures-by-offset-and-limit`) que recupera uma lista de Aventuras. A consulta usa os parâmetros `offset` e `limit` para especificar o ponto inicial e o número de resultados a serem recuperados. O gancho `useEffect` é chamado quando o valor `page` é alterado.
 
 
 ```javascript
@@ -243,7 +243,7 @@ export function useOffsetLimitAdventures(page, limit) {
 
 #### Componente
 
-O componente usa o `useOffsetLimitAdventures` gancho para recuperar uma lista de Aventuras. A variável `page` O valor de é incrementado e diminuído para buscar o conjunto de resultados seguinte e anterior. A variável `hasMore` é usado para determinar se o botão next page deve ser ativado.
+O componente usa o gancho `useOffsetLimitAdventures` para recuperar uma lista de Aventuras. O valor `page` é incrementado e diminuído para buscar o conjunto de resultados seguinte e anterior. O valor `hasMore` é usado para determinar se o botão de próxima página deve ser habilitado.
 
 ```javascript
 import { useState } from "react";
@@ -312,7 +312,7 @@ Usando a paginação baseada em cursor, grandes conjuntos de resultados podem se
 
 #### Gancho UseEffect
 
-A variável `useEffect` hook invoca uma consulta persistente (`adventures-by-paginated`) que recupera uma lista de Aventuras. A consulta usa o `first` e `after` parâmetros para especificar o número de resultados a serem recuperados e o cursor do qual iniciar. `fetchData` O realiza um loop contínuo, coletando o próximo conjunto de resultados paginados, até que não haja mais resultados a serem obtidos.
+O gancho `useEffect` invoca uma consulta persistente (`adventures-by-paginated`) que recupera uma lista de Aventuras. A consulta usa os parâmetros `first` e `after` para especificar o número de resultados a serem recuperados e o cursor do qual iniciar. `fetchData` faz um loop contínuo, coletando o próximo conjunto de resultados paginados, até que não haja mais resultados a serem buscados.
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -367,7 +367,7 @@ export function usePaginatedAdventures() {
 
 #### Componente
 
-O componente usa o `usePaginatedAdventures` gancho para recuperar uma lista de Aventuras. A variável `queryCount` value é utilizado para exibir o número de solicitações HTTP feitas para recuperar a lista de Aventuras.
+O componente usa o gancho `usePaginatedAdventures` para recuperar uma lista de Aventuras. O valor `queryCount` é usado para exibir o número de solicitações HTTP feitas para recuperar a lista de Aventuras.
 
 ```javascript
 import { useState } from "react";

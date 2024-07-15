@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Comunicações (Serviço de Saída)
 
-Saiba como o AEM Forms as a Cloud Service oferece suporte ao caso de uso Comunicação.
+Saiba como o AEM Forms as a Cloud Service oferece suporte ao caso de uso de comunicação.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336967?quality=12&learn=on)

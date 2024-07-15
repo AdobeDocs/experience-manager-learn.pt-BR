@@ -1,5 +1,5 @@
 ---
-title: Relatórios de ativos no AEM Assets
+title: Relatórios do Assets no AEM Assets
 description: A AEM Assets fornece uma estrutura de relatórios de nível empresarial que pode ser dimensionada para repositórios grandes por meio de uma experiência do usuário intuitiva.
 feature: Asset Reports
 topic: Administration
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Relatórios de ativos{#using-reports-in-aem-assets}
+# Relatórios do Assets{#using-reports-in-aem-assets}
 
 A AEM Assets fornece uma estrutura de relatórios de nível empresarial que pode ser dimensionada para repositórios grandes por meio de uma experiência do usuário intuitiva.
 
@@ -28,4 +28,4 @@ A AEM Assets fornece uma estrutura de relatórios de nível empresarial que pode
 
 >[!IMPORTANT]
 >
->O AEM 6.5 oferece a capacidade de configurar [relatórios de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), permitindo que os administradores definam o que é rastreado e incluído nos relatórios.
+>O AEM 6.5 fornece a capacidade de configurar [relatórios de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), permitindo que os administradores definam o que é rastreado e incluído nos relatórios.

@@ -24,7 +24,7 @@ A Marketo, parte da Adobe fornece software de Automação de marketing com foco 
 
 Usando o modelo de dados de formulário do AEM Forms, agora podemos integrar o formulário AEM ao Marketo sem interrupções.
 
-[Saiba mais sobre o modelo de dados de formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
+[Saiba mais sobre o Modelo de Dados de Formulário](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
 O Marketo expõe uma API REST que permite a execução remota de muitos dos recursos do sistema. Desde a criação de programas até a importação de leads em massa, há muitas opções que permitem o controle refinado de uma instância do Marketo. Usar o modelo de dados de formulário é muito simples integrar o AEM Forms com o Marketo.
 
@@ -40,7 +40,7 @@ Para começar, é altamente recomendável que você esteja familiarizado com os 
 1. Conhecimento básico dos arquivos do Swagger
 1. Criação de Forms adaptável
 
-**ID do segredo do cliente e chave do segredo do cliente**
+**ID e Chave Secreta do Cliente**
 
 A primeira etapa na integração do Marketo com o AEM Forms é obter as credenciais de API necessárias para fazer as chamadas REST usando a API. Você precisará do seguinte
 
@@ -49,7 +49,7 @@ A primeira etapa na integração do Marketo com o AEM Forms é obter as credenci
 1. identity_endpoint
 1. URL de autenticação
 
-[Siga a documentação oficial do Marketo para obter as propriedades mencionadas acima.](https://developers.marketo.com/rest-api/) Como alternativa, você também pode entrar em contato com o administrador da sua instância do Marketo.
+[Siga a documentação oficial do Marketo para obter as propriedades mencionadas acima.](https://developers.marketo.com/rest-api/) Como alternativa, você também pode contatar o administrador da sua instância do Marketo.
 
 **Antes de começar**
 

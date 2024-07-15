@@ -10,8 +10,8 @@ audience: developer
 index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 46%
+source-wordcount: '124'
+ht-degree: 40%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 46%
    + [3 - Planejamento da interface do usuário com o Adobe XD](./site-template/ui-planning-adobe-xd.md)
    + [4 - Modelos de página](./site-template/page-templates.md)
    + [5 - Theming](./site-template/theming.md)
-+ Ativar pipeline front-end - DevOps{#enable-frontend-pipeline-devops}
++ Habilitar Pipeline de Front-End - DevOps{#enable-frontend-pipeline-devops}
    + [Visão geral](./enable-frontend-pipeline/overview.md)
    + [1 - Revisar projeto de pilha completa](./enable-frontend-pipeline/review-uifrontend-module.md)
    + [2 - Atualizar projeto para usar pipeline de front-end](./enable-frontend-pipeline/update-project.md)

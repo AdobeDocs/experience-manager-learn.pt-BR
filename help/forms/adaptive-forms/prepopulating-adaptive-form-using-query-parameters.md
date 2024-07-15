@@ -27,7 +27,7 @@ https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=Joh
 
 Para realizar esse caso de uso, um novo modelo de formulário adaptável foi criado e associado a um componente de página. Neste componente da página, temos um jsp para obter os parâmetros de consulta e criar uma estrutura xml que pode ser usada para preencher o formulário adaptável.
 
-Os detalhes sobre a criação de um novo modelo de formulário adaptável e componente de página são [explicadas neste vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
+Os detalhes sobre a criação de um novo modelo de formulário adaptável e componente de página são [explicados neste vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
 
 Veja a seguir o código que foi usado na página jsp
 
@@ -56,5 +56,5 @@ slingRequest.setAttribute("data", dataXml);
 * [Baixe e instale o modelo de formulário adaptável usando o Gerenciador de pacotes](assets/populate-with-xml.zip)
 * [Baixe e instale o formulário adaptável de exemplo](assets/populate-af-with-query-paramters-form.zip)
 
-* [Pré-visualizar o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/testingxml/jcr:content?wcmmode=disabled&amp;FirstName=John&amp;LastName=Doe)
+* [Visualizar o formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/testingxml/jcr:content?wcmmode=disabled&amp;FirstName=John&amp;LastName=Doe)
 Você deve ver o formulário adaptável preenchido com o valor John e Doe

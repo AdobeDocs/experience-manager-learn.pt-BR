@@ -75,18 +75,18 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 
 Para criar seu projeto, siga as seguintes etapas:
 
-* Abertura **janela da tela de comandos**
+* Abrir **janela do prompt de comando**
 * Navegue até `c:\aemformsbundles\mysite\core`
 * Executar o comando `mvn clean install -PautoInstallBundle`
 * O comando acima cria e implanta automaticamente o pacote na instância do AEM em execução em localhost:4502
 
-O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [Felix web console.](http://localhost:4502/system/console/bundles)
+O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [console da Web Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Testar o resolvedor de servlet
 
-Aponte seu navegador para a [URL do resolvedor de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Isso informa o servlet que é chamado para um determinado caminho, conforme visto na captura de tela abaixo
-![servlet-resolver](assets/servlet-resolver.JPG)
+Aponte seu navegador para o [URL do resolvedor de servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Isso informa o servlet que é chamado para um determinado caminho, conforme visto na captura de tela abaixo
+![resolvedor-servlet](assets/servlet-resolver.JPG)
 
 ## Testar o servlet usando o Postman
 

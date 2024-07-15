@@ -26,7 +26,7 @@ Saiba como criar e usar Usuários de serviço em seu código AEM para fornecer a
 
 ## Recursos
 
-+ [Documentação de inicialização do repositório Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Documentação de Inicialização do Repositório do Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 + [Documentação de autenticação do Sling Service](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Código

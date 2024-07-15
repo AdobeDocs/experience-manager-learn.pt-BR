@@ -1,6 +1,6 @@
 ---
 title: Extensões dos fragmentos de conteúdo do AEM
-description: Saiba como criar e implantar extensões de fragmento de conteúdo as a Cloud Service para AEM
+description: Saiba como criar e implantar extensões de fragmento de conteúdo do AEM as a Cloud Service
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -29,7 +29,7 @@ O Console do fragmento de conteúdo no AEM (Adobe Experience Manager) é uma int
 
 ![Console de fragmentos de conteúdo](./assets/overview/cfc.png)
 
-[Console de fragmentos de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) O é a interface do usuário extensível para listar e gerenciar fragmentos de conteúdo. [Extensões do console de fragmentos de conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) usando o `@adobe/aem-cf-admin-ui-ext-tpl` Modelo do App Builder.
+O [Console de Fragmentos de Conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) é a interface do usuário extensível para listar e gerenciar fragmentos de conteúdo. [As extensões do Console de Fragmentos de Conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) usando o modelo do App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
 
 Os seguintes pontos de extensão do Console de fragmentos de conteúdo estão disponíveis:
 
@@ -102,7 +102,7 @@ O Editor de fragmento de conteúdo no AEM (Adobe Experience Manager) é um compo
 
 ![Editor de fragmentos de conteúdo](./assets/overview/cfe.png)
 
-O Editor de fragmentos de conteúdo do AEM é a interface do usuário extensível para editar fragmentos de conteúdo. [Extensões do Editor de Fragmento de conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) usando o `@adobe/aem-cf-editor-ui-ext-tpl` Modelo do App Builder.
+O Editor de fragmentos de conteúdo do AEM é a interface do usuário extensível para editar fragmentos de conteúdo. [As extensões do Editor de Fragmento de Conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) usando o modelo do App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Os seguintes pontos de extensão do Editor de fragmentos de conteúdo estão disponíveis:
 
@@ -209,7 +209,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-bulk-property-update.md" title="Atualização de propriedade em massa">Atualização em massa da propriedade do fragmento de conteúdo</a></p>
           <p class="is-size-6">Uma extensão da Barra de ação do console de Fragmento de conteúdo com ações modais e do Adobe I/O Runtime.</p>
           <a href="./examples/console-bulk-property-update.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -229,7 +229,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
                     <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Geração de imagens com base em OpenAI e upload para a extensão AEM">Geração de imagem OpenAPI</a></p>
                     <p class="is-size-6">Explore um exemplo de extensão da barra de ação que gera uma imagem usando OpenAI, faz o upload para AEM e atualiza a propriedade da imagem no Fragmento de conteúdo selecionado.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
                     </a>
                 </div>
             </div>
@@ -249,7 +249,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/custom-grid-columns.md" title="Colunas personalizadas">Colunas personalizadas</a></p>
           <p class="is-size-6">Adicione uma coluna personalizada ao Console de fragmentos de conteúdo.</p>
           <a href="./examples/custom-grid-columns.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -269,7 +269,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-export-to-xml.md" title="Exportar para XML">Exportar para XML</a></p>
           <p class="is-size-6">Exporte um fragmento de conteúdo como XML do editor de fragmentos de conteúdo.</p>
           <a href="./examples/editor-export-to-xml.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -289,7 +289,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Botão da barra de ferramentas do Editor de Rich Text">Botão da barra de ferramentas do Editor de Rich Text</a></p>
           <p class="is-size-6">Adicionar botões personalizados da barra de ferramentas aos campos do RTE no Editor de fragmento de conteúdo.</p>
           <a href="./examples/editor-rte-toolbar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -309,7 +309,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget do editor de rich text">Widget do editor de rich text</a></p>
           <p class="is-size-6">Adicionar widgets ao Editor de Rich Text no Editor de fragmento de conteúdo.</p>
           <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -329,7 +329,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-badges.md" title="Medalha do Editor de Rich Text">Medalha do Editor de Rich Text</a></p>
           <p class="is-size-6">Adicionar selos ao Editor de Rich Text no Editor de fragmento de conteúdo.</p>
           <a href="./examples/editor-rte-badges.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>
@@ -350,7 +350,7 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
           <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-custom-field.md" title="Campos personalizados">Campos personalizados</a></p>
           <p class="is-size-6">Crie campos personalizados de Fragmento de conteúdo.</p>
           <a href="./examples/editor-custom-field.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Veja o exemplo</span>
+            <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
           </a>
         </div>
       </div>

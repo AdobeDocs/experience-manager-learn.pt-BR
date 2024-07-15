@@ -29,7 +29,7 @@ O caso de uso é acionar um fluxo de trabalho de AEM em um envio de formulário 
 
    * Procure por &quot;Pool de conexão JDBC&quot;. Crie um novo Pool de Conexões JDBC do Day Commons. Especifique as configurações específicas do banco de dados.
 
-   * ![Configuração OSGi do pool de conexões JDBC](assets/aemformstutorial-jdbc.png)
+   * ![Configuração OSGi do pool de conexão JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Especificar Detalhes do Banco de Dados
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Especifique os detalhes do banco de dados usando o configMgr
 * [Baixe o arquivo Zip e extraia o conteúdo no disco rígido](assets/article-assets.zip)
 
-   * Implante o arquivo jar usando [Console da Web AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
+   * Implante o arquivo jar usando o [console da Web AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
 
-   * Importe os dois arquivos zip para o [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso lhe dará a [exemplo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e a variável [exemplo de formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta de carga útil no repositório crx. Observe como [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho do AEM no envio e na configuração do arquivo de dados (data.xml)
+   * Importe os dois arquivos zip para [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso fornecerá a você a [amostra do fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e a [amostra do formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta de carga útil no repositório crx. Observe como o [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho do AEM no envio e na configuração do arquivo de dados(data.xml)
 
    * Pré-visualize e preencha o formulário e envie. Você deve ver uma nova linha criada no banco de dados
 

@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Bem-vindo ao tutorial sobre como criar uma experiência da Web usando o React, totalmente equipado com APIs AEM Headless e o GraphQL. Neste tutorial, guiaremos você pelo processo de criação de uma aplicação Web dinâmica e interativa combinando o poder das APIs headless do React, do Adobe Experience Manager (AEM) e do GraphQL.
 
-O React é uma biblioteca popular de JavaScript para a construção de interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM fornece recursos robustos de gerenciamento de conteúdo e expõe APIs headless que permitem aos desenvolvedores acessar conteúdo e dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
+O React é uma biblioteca popular do JavaScript para criação de interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM fornece recursos robustos de gerenciamento de conteúdo e expõe APIs headless que permitem aos desenvolvedores acessar conteúdo e dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
 
 Ao utilizar APIs AEM Headless, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
 
@@ -47,21 +47,21 @@ Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar
 
 ### AEM as a Cloud Service
 
-Este tutorial requer acesso de administrador a um ambiente as a Cloud Service do AEM.
+Este tutorial requer acesso de administrador a um ambiente do AEM as a Cloud Service.
 
 ### Software
 
 + [Node.js v16+](https://nodejs.org/en/)
-   + Verifique a versão do nó executando `node -v` da linha de comando
+   + Verifique a versão do nó executando `node -v` na linha de comando
 + [npm 6+](https://www.npmjs.com/)
-   + Verifique sua versão npm executando `npm -v` da linha de comando
+   + Verifique sua versão do npm executando `npm -v` na linha de comando
 + [Git](https://git-scm.com/)
-   + Verifique sua versão do Git executando `git -v` da linha de comando
+   + Verifique sua versão do Git executando `git -v` na linha de comando
 
-Uso [gerenciador de versão de nó (nvm)](https://github.com/nvm-sh/nvm) para tratar de ter várias versões de node.js na mesma máquina.
+Use o [gerenciador de versão de nó (nvm)](https://github.com/nvm-sh/nvm) para endereçar ter várias versões do node.js na mesma máquina.
 
 Verifique se você tem privilégios para instalar o software globalmente no computador.
 
 ## Próxima etapa
 
-Agora que seu ambiente está configurado, vamos para a próxima etapa: [Configuração e criação de conteúdo no AEM as a Cloud Service](./1-content-modeling.md)
+Agora que seu ambiente está configurado, vamos seguir para a próxima etapa: [Configurar e criar conteúdo no AEM as a Cloud Service](./1-content-modeling.md)

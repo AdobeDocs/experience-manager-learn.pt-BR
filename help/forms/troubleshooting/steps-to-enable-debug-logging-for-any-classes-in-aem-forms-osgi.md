@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para ativar o log de depuração para qualquer classe no AEM Forms OSGi
 
-*Este vídeo aborda as etapas para ativar o log de depuração para qualquer classe no AEM Forms OSGi.*
+*Este vídeo mostra as etapas para habilitar o log de depuração para qualquer classe no AEM Forms OSGi.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)

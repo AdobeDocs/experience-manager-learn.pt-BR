@@ -28,14 +28,14 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**Alterações no HTML**
+**alterações de HTML**
 
-* **Verde**: Novo conteúdo
+* **Verde**: novo conteúdo
 * **Vermelho**: conteúdo removido
 
 **Alterações de componente**
 
-* **Verde**: Novo componente
+* **Verde**: novo componente
 * **Vermelho**: componente removido
 * **Azul**: componente modificado
 

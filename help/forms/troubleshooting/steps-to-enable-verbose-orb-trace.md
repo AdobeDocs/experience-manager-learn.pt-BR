@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para ativar o rastreamento ORB detalhado
 
-*Este vídeo aborda as etapas para ativar o rastreamento ORB detalhado.*
+*Este vídeo mostra as etapas para habilitar o rastreamento ORB detalhado.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)

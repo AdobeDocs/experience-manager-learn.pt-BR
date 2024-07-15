@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Implantar usando o pipeline de front-end
 
-Neste capítulo, criamos e executamos um pipeline de front-end no Adobe Cloud Manager. Ele só cria os arquivos de `ui.frontend` e os implanta no CDN incorporado no AEM as a Cloud Service. Assim, afastando-se da  `/etc.clientlibs` com base na entrega de recursos de front-end.
+Neste capítulo, criamos e executamos um pipeline de front-end no Adobe Cloud Manager. Ele só compila os arquivos do módulo `ui.frontend` e os implanta no CDN incorporado no AEM as a Cloud Service. Afastando-se assim da entrega de recursos de front-end baseada em `/etc.clientlibs`.
 
 
 ## Objetivos {#objectives}
 
 * Crie e execute um pipeline de front-end.
-* Verificar se os recursos de front-end NÃO são entregues pelo `/etc.clientlibs` mas de um novo nome de host que começa com `https://static-`
+* Verifique se os recursos de front-end NÃO são entregues a partir de `/etc.clientlibs`, mas de um novo nome de host que comece com `https://static-`
 
 ## Uso do pipeline de front-end
 
@@ -36,70 +36,70 @@ Neste capítulo, criamos e executamos um pipeline de front-end no Adobe Cloud Ma
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial em várias partes e presume-se que as etapas descritas no [Atualizar projeto AEM padrão](./update-project.md) foram concluídas.
+Este é um tutorial em várias partes e presume-se que as etapas descritas em [Atualizar projeto AEM padrão](./update-project.md) foram concluídas.
 
-Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [acesso a um ambiente as a Cloud Service do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ## Renomear pipeline existente
 
-Renomear o pipeline existente de __Implantar para desenvolvimento__ para  __Implantação do FullStack WKND no Desenvolvimento__ acessando o __Configuração__ da guia __Nome do pipeline de não produção__ campo. Isso é para tornar explícito se um pipeline é de pilha completa ou front-end apenas observando seu nome.
+Renomeie o pipeline existente de __Implantar em Desenvolvimento__ para __Implantação WKND de Empilhamento Completo em Desenvolvimento__ indo para o campo __Nome do Pipeline de Não Produção__ da guia __Configuração__. Isso é para tornar explícito se um pipeline é de pilha completa ou front-end apenas observando seu nome.
 
-![Renomear pipeline](assets/fullstack-wknd-deploy-dev-pipeline.png)
+![Renomear Pipeline](assets/fullstack-wknd-deploy-dev-pipeline.png)
 
 
-Também no __Código-fonte__ , verifique se os valores de campo Repositório e Ramificação Git estão corretos e se a ramificação tem suas alterações de contrato de pipeline de front-end.
+Além disso, na guia __Código Source__, verifique se os valores de campo do Repositório e da Ramificação Git estão corretos e se a ramificação tem suas alterações de contrato de pipeline de front-end.
 
-![Pipeline de configuração do código-fonte](assets/fullstack-wknd-source-code-config.png)
+![Pipeline de configuração de código Source](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Criar um pipeline de front-end
 
-Para __SOMENTE__ criar e implantar os recursos de front-end a partir do `ui.frontend` , execute as seguintes etapas:
+Para __SOMENTE__ compilar e implantar os recursos de front-end do módulo `ui.frontend`, execute as seguintes etapas:
 
-1. Na interface do usuário do Cloud Manager, no __Pipelines__ clique em __Adicionar__ e selecione __Adicionar pipeline de não produção__ (ou __Adicionar pipeline de produção__) com base no ambiente as a Cloud Service AEM no qual você deseja implantar.
+1. Na interface do usuário do Cloud Manager, na seção __Pipelines__, clique no botão __Adicionar__ e selecione __Adicionar pipeline de não produção__ (ou __Adicionar pipeline de produção__) com base no ambiente do AEM as a Cloud Service no qual você deseja implantar.
 
-1. No __Adicionar pipeline de não produção__ como parte da __Configuração__ , selecione a __Pipeline de implantação__ opção, nomeie-a como __Implantação WKND de FrontEnd para Desenvolvimento__ e clique em __Continuar__
+1. Na caixa de diálogo __Adicionar Pipeline de Não Produção__, como parte das etapas __Configuração__, selecione a opção __Pipeline de Implantação__, nomeie-a como __Implantação WKND FrontEnd para Desenvolvimento__ e clique em __Continuar__
 
-![Criar configurações de pipeline front-end](assets/create-frontend-pipeline-configs.png)
+![Criar Configurações De Pipeline De Front-End](assets/create-frontend-pipeline-configs.png)
 
-1. Como parte da __Código-fonte__ , selecione a __Código de front-end__ e escolha o ambiente em __Ambientes de implantação qualificados__. No __Código-fonte__ seção verifique se os valores de campo Repositório e Ramificação Git estão corretos e se a ramificação tem suas alterações de contrato de pipeline de front-end.
-E __mais importante__ para o __Localização do código__ o valor é `/ui.frontend` e, por fim, clique em __Salvar__.
+1. Como parte das etapas __Código Source__, selecione a opção __Código de front-end__ e escolha o ambiente em __Ambientes de implantação qualificados__. Na seção __Código Source__, verifique se os valores dos campos Repositório e Ramificação Git estão corretos e se a ramificação tem suas alterações no contrato do pipeline de front-end.
+E __o mais importante__ para o campo __Localização do Código__, o valor é `/ui.frontend` e, por fim, clique em __Salvar__.
 
-![Criar código-fonte do pipeline de front-end](assets/create-frontend-pipeline-source-code.png)
+![Criar código Source do pipeline de front-end](assets/create-frontend-pipeline-source-code.png)
 
 
 ## Sequência de implantação
 
-* Primeiro execute o recém-renomeado __Implantação do FullStack WKND no Desenvolvimento__ pipeline para remover os arquivos clientlib WKND do repositório AEM. E, o mais importante, prepare o AEM para o contrato de pipeline de front-end adicionando __Configuração do Sling__ arquivos (`SiteConfig`, `HtmlPageItemsConfig`).
+* Primeiro execute o pipeline __FullStack WKND Deploy to Dev__ recém-renomeado para remover os arquivos clientlib WKND do repositório AEM. E, o mais importante, prepare o AEM para o contrato de pipeline de front-end adicionando __arquivos de configuração do Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
 
-![Site WKND sem estilo](assets/unstyled-wknd-site.png)
+![Site WKND Sem Estilo](assets/unstyled-wknd-site.png)
 
 >[!WARNING]
 >
->Depois, a variável __Implantação do FullStack WKND no Desenvolvimento__ conclusão do pipeline, você terá um __sem estilo__ Site da WKND, que pode parecer quebrado. Planeje uma interrupção ou implante durante horas ímpares. Essa é uma interrupção única que você precisa planejar durante o switch inicial, desde usar um pipeline de pilha completa única até o pipeline de front-end.
+>Após a conclusão do pipeline __FullStack WKND Dev__, você terá um Site WKND __sem estilo__, que pode parecer quebrado. Planeje uma interrupção ou implante durante horas ímpares. Essa é uma interrupção única que você precisa planejar durante o switch inicial, desde usar um pipeline de pilha completa única até o pipeline de front-end.
 
 
-* Por fim, execute o __Implantação WKND de FrontEnd para Desenvolvimento__ pipeline somente para compilação `ui.frontend` e implante os recursos de front-end diretamente na CDN.
+* Finalmente, execute a Implantação do WKND de __FrontEnd no pipeline de Desenvolvimento__ para compilar somente o módulo `ui.frontend` e implantar os recursos de front-end diretamente no CDN.
 
 >[!IMPORTANT]
 >
->Você percebe que a variável __sem estilo__ O site da WKND voltou ao normal e desta vez __FrontEnd__ a execução do pipeline foi muito mais rápida do que o pipeline de pilha completa.
+>Você percebe que o site WKND __sem estilo__ voltou ao normal e, desta vez, a execução do pipeline __FrontEnd__ foi muito mais rápida do que o pipeline de pilha completa.
 
 ## Verificar alterações de estilo e novo paradigma de entrega
 
-* Abra qualquer página do site WKND e você poderá ver o texto e colorir __Adobe Vermelho__ e os arquivos de recursos de front-end (CSS, JS) são entregues pela CDN. O nome de host da solicitação de recurso começa com `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e também o site.js ou qualquer outro recurso estático que você referenciou na variável `HtmlPageItemsConfig` arquivo.
+* Abra qualquer página do Site WKND e você poderá ver a cor do texto usando __Adobe Vermelho__ e os arquivos de recursos de front-end (CSS, JS) são entregues a partir do CDN. O nome de host da solicitação de recurso começa com `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e também com o site.js ou qualquer outro recurso estático que você referenciou no arquivo `HtmlPageItemsConfig`.
 
 
-![Site WKND recém-estilizado](assets/newly-styled-wknd-site.png)
+![Site WKND Recém-Estilizado](assets/newly-styled-wknd-site.png)
 
 
 
 >[!TIP]
 >
->A variável `$HASH_VALUE$` aqui é o mesmo que você vê no __Implantação WKND de FrontEnd para Desenvolvimento__  do pipeline __HASH DE CONTEÚDO__ campo. O AEM é notificado do URL CDN do recurso front-end, o valor é armazenado em `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` em __prefixPath__ propriedade.
+>O `$HASH_VALUE$` aqui é o mesmo que você vê no campo __CONTENT HASH__ da __Implantação WKND de FrontEnd no pipeline de Desenvolvimento__. O AEM é notificado da URL CDN do recurso front-end. O valor é armazenado em `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` na propriedade __prefixPath__.
 
 
-![Correlação do valor de hash](assets/hash-value-correlartion.png)
+![Correlação de Valor de Hash](assets/hash-value-correlartion.png)
 
 
 

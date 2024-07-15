@@ -25,7 +25,7 @@ Ao concluir este curso você terá aprendido o seguinte.
 
 * Criar modelo de dados de formulário RDBMS
 * Criar Associação entre 2 entidades
-* Preencher tabela com dados retornados por _obter_ serviço do modelo de dados do formulário
+* Popular tabela com dados retornados pelo serviço _get_ do Modelo de Dados de Formulário
 * Usar o atributo de solicitação do modelo de dados de formulário
 
 O vídeo a seguir fornece uma visão geral do curso

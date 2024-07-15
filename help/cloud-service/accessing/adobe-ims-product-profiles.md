@@ -31,4 +31,4 @@ Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um 
 
 ## Recursos adicionais
 
-+ [Gerenciamento de produtos e acesso do usuário na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Gerenciando produtos e o acesso dos usuários na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)

@@ -1,6 +1,6 @@
 ---
 title: Nuvem 5 - Temporada 1
-description: Saiba mais sobre o Adobe Experience Manager (AEM) as a Cloud Service na Adobe e seus próprios engenheiros especialistas que o criam, além dos serviços especializados que o fornecem.
+description: Saiba mais sobre o Adobe Experience Manager (AEM) as a Cloud Service da Adobe e seus próprios engenheiros especialistas que o criam, além dos serviços especializados que o fornecem.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Bem-vindo à Cloud série 5 da engenharia AEM. Um dos principais problemas na fase de implementação de qualquer produto é ter amostras de código suficientes e/ou demonstrações em tempo real dessas amostras, ferramentas ou APIs. O objetivo desta série é fornecer informações úteis sobre o AEM as a Cloud Service em 5 minutos ou menos.
 
-Visite o [Caixa de Sugestão](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias de tópicos.
+Visite a [Caixa de Sugestões](https://forms.office.com/r/74P5Xz4UH0) para enviar ideias sobre tópicos.
 
 ## Temporada 1
 
@@ -33,11 +33,11 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
       </a>
       <div>
          <a href="./cloud5-aem-cdn-part1.md"><strong>Aprofundamento do CDN com AEM (parte 1)</strong></a>         
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
-         A Parte 1 é uma análise do CDN do AEM as a Cloud Service e como usá-lo na implementação.
+         A Parte 1 é uma análise da CDN da AEM as a Cloud Service e de como usá-la na implementação.
       </p>
      </td>   
      <td>
@@ -46,11 +46,11 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
       </a>
       <div>
          <a href="./cloud5-aem-cdn-part2.md"><strong>Aprofundamento do CDN com AEM (parte 2)</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
-         A Parte 2 é uma continuação de nosso olhar sobre a CDN as a Cloud Service do AEM. Respondemos a algumas das perguntas e mitos mais comuns sobre quais recursos você obtém com a nova CDN.
+         A Parte 2 é uma continuação de nossa visão da CDN da AEM as a Cloud Service. Respondemos a algumas das perguntas e mitos mais comuns sobre quais recursos você obtém com a nova CDN.
       </p>
    </td>
      <td>
@@ -58,12 +58,12 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             <img alt="Arquivos de registro e registro" src="./imgs/003-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-log-files.md"><strong>Arquivos de registro e registro</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <a href="./cloud5-aem-log-files.md"><strong>Arquivos de Log e Log</strong></a>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
-         Esta é uma rápida análise de como acessar logs no AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário, bem como de APIs.
+         Esta é uma visão rápida de como acessar logs no AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário, bem como de APIs.
       </p>
    </td> 
   </tr>
@@ -74,7 +74,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </a>
       <div>
         <a href="./cloud5-getting-login-token-integrations.md"><strong>Integração com tokens de acesso</strong></a>        
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
@@ -87,11 +87,11 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
        </a>  
       <div>
         <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher na nuvem</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
-        Darin e James discutem sobre o Dispatcher na nuvem do AEM, incluindo algumas práticas recomendadas e diferenças em relação ao AMS/No local. 
+        Darin e James discutem sobre o Dispatcher na nuvem de AEM, incluindo algumas práticas recomendadas e diferenças em relação ao AMS/On-Prem. 
       </p>
    </td>
      <td>
@@ -100,7 +100,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </a>
       <div>
          <a href="./cloud5-aem-content-migration-part-1.md"><strong>Migração (parte 1)</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos seniores da nuvem e Dr. Applesmith</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior e Dr. Applesmith</em>
       </div>
       <p>
         <br/>
@@ -115,7 +115,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </a>
       <div>
         <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migração (parte 2)</strong></a>     
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
@@ -124,11 +124,11 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
      </td>   
      <td>
         <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Validador do Dispatcher" src="./imgs/008-thumb.png"/>
+            <img alt="Dispatcher Validator" src="./imgs/008-thumb.png"/>
         </a>
       <div>
          <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validador do Dispatcher</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
@@ -140,8 +140,8 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             <img alt="Dicas de indexação e pesquisa" src="./imgs/009-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>Dicas de indexação e pesquisa</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem</em>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>Dicas de Indexação e Pesquisa</strong></a>
+         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
       </div>
       <p>
         <br/>
@@ -152,14 +152,14 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
     <tr>
         <td>
             <a href="./cloud5-adobe-app-builder.md">
-                <img alt="Construtor de aplicativos Adobe" src="./imgs/010-thumb.png"/>
+                <img alt="Adobe App Builder" src="./imgs/010-thumb.png"/>
             </a>
             <div>
-                <a href="./cloud5-adobe-app-builder.md"><strong>Construtor de aplicativos Adobe</strong></a><br/>        
-                <em>com Darin Kuntze e James Talbot, arquitetos sênior da nuvem e Amol Anand</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe App Builder</strong></a><br/>        
+                <em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior e Amol Anand</em>
             </div>
             <p><br/>
-                Confira algumas coisas legais que você pode fazer com o Construtor de aplicativos Adobe e saiba mais sobre o futuro das personalizações na nuvem.
+                Confira algumas coisas interessantes que você pode fazer com o Adobe App Builder e saiba mais sobre o futuro das personalizações em nuvem.
             </p>
         </td>
         <td></td>

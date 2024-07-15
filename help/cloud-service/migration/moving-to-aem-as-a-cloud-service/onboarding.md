@@ -25,15 +25,15 @@ Saiba mais sobre a integração com o AEM as a Cloud Service, desde a fase de co
 
 ## Cloud Manager e Admin Console
 
-![Diagrama de alto nível integrado](assets/onboarding-diagram.png)
+![Diagrama de alto nível de integração](assets/onboarding-diagram.png)
 
-Uma parte crítica da integração é criar programas de AEM as a Cloud Service e provisionar vários ambientes usando o Adobe Cloud Manager. A variável [Admin Console](https://adminconsole.adobe.com/) O é usado para atribuir funções e fornecer acesso aos ambientes AEM aos usuários em sua organização.
+Uma parte crítica da integração é criar programas do AEM as a Cloud Service e provisionar vários ambientes usando o Adobe Cloud Manager. O [Admin Console](https://adminconsole.adobe.com/) é usado para atribuir funções e fornecer acesso aos ambientes AEM para os usuários em sua organização.
 
 ## Principais atividades
 
-+ Um administrador do sistema usa o [Admin Console](https://adminconsole.adobe.com/) para atribuir um ou mais usuários à variável [Cloud Manager - Proprietário da empresa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) perfil do produto.
-+ Os usuários atribuídos ao Perfil de produto Proprietário da empresa usam os recursos de autoatendimento do [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) para [criar programa(s)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) e [adicionar ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-+ Use o [Admin Console](https://adminconsole.adobe.com/) para atribuir desenvolvedores e usuários a diferentes [Funções do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) e conceder permissão a vários ambientes AEM.
++ Um administrador de sistema usa o [Admin Console](https://adminconsole.adobe.com/) para atribuir um ou mais usuários ao perfil de produto [Cloud Manager - Proprietário da empresa](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
++ Os usuários atribuídos ao Perfil de Produto Proprietário da Empresa usam os recursos de autoatendimento do [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) para [criar programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) e [adicionar ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
++ Use o [Admin Console](https://adminconsole.adobe.com/) para atribuir desenvolvedores e usuários a diferentes [funções do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) e conceder permissão a vários ambientes do AEM.
 
 ## Exercício prático
 
@@ -41,7 +41,7 @@ Aplique seu conhecimento experimentando o que você aprendeu com este exercício
 
 Antes de experimentar o exercício prático, verifique se você assistiu e compreendeu o vídeo acima e os seguintes materiais:
 
-+ [Pensando diferente sobre AEM as a Cloud Service](./introduction.md)
++ [Pensar de forma diferente sobre o AEM as a Cloud Service](./introduction.md)
 + [Cloud Manager](./cloud-manager.md)
 
 Além disso, verifique se você concluiu o exercício prático anterior:
@@ -59,7 +59,7 @@ Além disso, verifique se você concluiu o exercício prático anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Práticas com integração</div>
             <p style="margin:1rem 0">
-                Explore o processo de integração do AEM as a Cloud Service e como implantar um aplicativo do AEM no SDK do AEM.
+                Explore o processo de integração do AEM as a Cloud Service e como implantar um aplicativo AEM no SDK do AEM.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

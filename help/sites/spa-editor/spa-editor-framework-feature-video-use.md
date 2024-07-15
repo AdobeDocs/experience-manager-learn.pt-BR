@@ -34,10 +34,10 @@ O Editor SPA do AEM fornece aos autores a capacidade de editar conteúdo para um
 
 ## Recursos adicionais {#additional-resources}
 
-A implementação do SPA WKND só fornece suporte para AEM 6.4.8+, AEM 6.5.5++ e AEM as a Cloud Service.
+A implementação do SPA WKND só fornece suporte para AEM 6.4.8+, AEM 6.5.5+ e AEM as a Cloud Service.
 
-Baixe e instale os programas apropriados [Pacote SPA WKND](https://github.com/adobe/aem-guides-wknd-spa/releases) baseado na sua versão do AEM. Há versões separadas para **React**.
+Baixe e instale o [pacote WKND SPA](https://github.com/adobe/aem-guides-wknd-spa/releases) apropriado com base na sua versão do AEM. Há versões separadas para **React**.
 
 Para obter um tutorial detalhado sobre o desenvolvimento com o editor de SPA, consulte:
 
-* [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [Introdução ao Editor SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

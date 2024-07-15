@@ -48,7 +48,7 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Uso do aplicativo de desktop AEM</strong>
+      <strong>Usando o Aplicativo de Desktop AEM</strong>
       </a>
    </div>
    <p>
@@ -65,7 +65,7 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
       </a>
    </div>
    <p>
-      <em>Acelere a criação de experiências, do conceito ao design e à entrega.</em>
+      <em>Acelere a criação de experiência, do conceito ao design e à entrega.</em>
    <p>
 </td>
 <td>
@@ -88,7 +88,7 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
 ## Recursos adicionais
 
 * [Documentação do AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [Tutoriais as a Cloud Service do AEM](/help/cloud-service/overview.md)
+* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Sites](/help/sites/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
 * [Tutoriais da Fundação AEM](/help/foundation/overview.md)

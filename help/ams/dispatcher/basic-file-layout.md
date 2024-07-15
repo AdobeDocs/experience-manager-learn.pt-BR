@@ -1,6 +1,6 @@
 ---
 title: Layout básico do arquivo do AMS Dispatcher
-description: Entender o layout básico do arquivo do Apache e Dispatcher.
+description: Entenda o layout básico de arquivo do Apache e Dispatcher.
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [Índice](./overview.md)
 
-[&lt;- Anterior: O que é &quot;O Dispatcher&quot;](./what-is-the-dispatcher.md)
+[&lt;- Anterior: O que é &quot;A Dispatcher&quot;](./what-is-the-dispatcher.md)
 
 Este documento explica o conjunto de arquivos de configuração padrão do AMS e a filosofia por trás desse padrão de configuração
 
@@ -86,7 +86,7 @@ O AMS complementa a instalação básica do Apache Web Server.
 Raízes padrão do documento AMS:
 - Autor:
    - `/mnt/var/www/author/`
-- Publicar:
+- Publish:
    - `/mnt/var/www/html/`
 - Manutenção de captura e verificação de integridade
    - `/mnt/var/www/default/`
@@ -97,27 +97,27 @@ Os diretórios a seguir permitem criar arquivos de configuração com uma área 
 - `/etc/httpd/conf.d/available_vhosts/`
    - Esta pasta hospeda todos os VirtualHost/arquivos chamados `.vhost`
 - `/etc/httpd/conf.d/enabled_vhosts/`
-   - Quando estiver pronto para usar o `.vhost` arquivos, que você tem dentro da `available_vhosts` os vincule através de um caminho relativo na pasta `enabled_vhosts` diretório
+   - Quando estiver pronto para usar os arquivos `.vhost`, você terá dentro da pasta `available_vhosts` o symlink deles usando um caminho relativo para o diretório `enabled_vhosts`
 
-### Adicional `conf.d` Diretórios
+### Diretórios `conf.d` adicionais
 
 Há partes adicionais comuns nas configurações do Apache e criamos subdiretórios para permitir uma maneira limpa de separar esses arquivos e não ter todos os arquivos em um diretório
 
 #### Substitui o Diretório
 
-Esse diretório pode conter todas as `_rewrite.rules` arquivos que você cria e que contêm sua sintaxe típica RewriteRulesque envolve servidores Web Apache [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) módulo
+Este diretório pode conter todos os `_rewrite.rules` arquivos criados por você que contêm a sintaxe típica RewriteRulesyntax que envolve o módulo [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) dos servidores Web Apache
 
 - `/etc/httpd/conf.d/rewrites/`
 
 #### Diretório de listas de permissões
 
-Esse diretório pode conter todas as `_whitelist.rules` arquivos que você criar e que contenham seu `IP Allow` ou `Require IP`sintaxe que envolve os servidores Web Apache [controles de acesso](https://httpd.apache.org/docs/2.4/howto/access.html)
+Este diretório pode conter todos os `_whitelist.rules` arquivos que você cria que contêm sua `IP Allow` ou `Require IP`sintaxe típica que envolve os [controles de acesso](https://httpd.apache.org/docs/2.4/howto/access.html) dos servidores Web Apache
 
 - `/etc/httpd/conf.d/whitelists/`
 
 #### Diretório de variáveis
 
-Esse diretório pode conter todas as `.vars` arquivos criados que contêm variáveis que podem ser consumidas nos arquivos de configuração
+Este diretório pode conter todos os arquivos `.vars` criados por você, que contêm variáveis que podem ser consumidas em seus arquivos de configuração
 
 - `/etc/httpd/conf.d/variables/`
 
@@ -135,41 +135,41 @@ Seguimos as práticas recomendadas e criamos a nossa própria
 
 Os diretórios a seguir permitem criar arquivos de configuração com uma área de preparação na qual você pode trabalhar e só ativar quando estiverem prontos.
 - `/etc/httpd/conf.dispatcher.d/available_farms/`
-   - Esta pasta hospeda todos os `/myfarm {` arquivos chamados `_farm.any`
+   - Esta pasta hospeda todos os arquivos do `/myfarm {` chamados `_farm.any`
 - `/etc/httpd/conf.dispatcher.d/enabled_farms/`
    - Quando estiver pronto para usar o arquivo farm, você terá dentro da pasta available_farms os vinculando através de um caminho relativo para o diretório enabled_farms
 
-### Adicional `conf.dispatcher.d` Diretórios
+### Diretórios `conf.dispatcher.d` adicionais
 
 Há partes adicionais que são subseções das configurações de arquivo do farm do Dispatcher e criamos subdiretórios para permitir uma maneira limpa de separar esses arquivos e não ter todos os arquivos em um diretório
 
 #### Diretório de cache
 
-Esse diretório contém todos os `_cache.any`, `_invalidate.any` os arquivos criados que contêm suas regras sobre como você deseja que o módulo manipule elementos de cache provenientes do AEM, bem como a sintaxe de regras de invalidação.  Mais detalhes sobre esta seção estão aqui [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Esse diretório contém todos os arquivos `_cache.any`, `_invalidate.any` criados por você, que contêm suas regras sobre como você deseja que o módulo lide com os elementos em cache provenientes do AEM, bem como a sintaxe de regras de invalidação.  Mais detalhes sobre esta seção estão aqui [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
 #### Diretório de Cabeçalhos do Cliente
 
-Esse diretório pode conter todas as `_clientheaders.any` arquivos criados que contêm listas de Cabeçalhos do cliente que você deseja transmitir para o AEM quando entrar uma solicitação.  Mais detalhes sobre esta seção são [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
+Esse diretório pode conter todos os `_clientheaders.any` arquivos criados por você que contenham listas de Cabeçalhos do cliente que você deseja passar para o AEM quando entrar uma solicitação.  Mais detalhes sobre esta seção estão [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### Diretório de filtros
 
-Esse diretório pode conter todas as `_filters.any` arquivos criados por você que contêm todas as regras de filtro para bloquear ou permitir o tráfego pelo Dispatcher para alcançar o AEM
+Este diretório pode conter todos os `_filters.any` arquivos que você criar e que contenham todas as suas regras de filtro para bloquear ou permitir o tráfego pelo Dispatcher para alcançar AEM
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 
 #### Diretório de renderizações
 
-Esse diretório pode conter todas as `_renders.any` arquivos criados por você que contêm os detalhes de conectividade para cada servidor de back-end do qual o dispatcher consumirá conteúdo
+Este diretório pode conter todos os `_renders.any` arquivos criados por você que contenham os detalhes de conectividade para cada servidor back-end do qual o Dispatcher consumirá conteúdo
 
 - `/etc/httpd/conf.dispatcher.d/renders/`
 
 #### Diretório Vhosts
 
-Esse diretório pode conter todas as `_vhosts.any` arquivos criados por você que contêm uma lista dos nomes de domínio e caminhos para corresponder a um farm específico para um servidor back-end específico
+Este diretório pode conter todos os arquivos `_vhosts.any` criados por você que contenham uma lista dos nomes de domínio e caminhos para corresponder a um farm específico para um servidor back-end específico
 
 - `/etc/httpd/conf.dispatcher.d/vhosts/`
 
@@ -276,20 +276,20 @@ O Enterprise Linux tem ciclos de patch para o Apache Webserver Package (httpd).
 
 Os arquivos padrão menos instalados que você altera são melhores, por razões que, se houver correções de segurança ou melhorias de configuração corrigidas, são aplicadas por meio do comando RPM / Yum, elas não aplicarão as correções sobre um arquivo alterado.
 
-Em vez disso, cria uma `.rpmnew` ao lado do original.  Isso significa que você perderá algumas alterações desejadas e criará mais lixo em suas pastas de configuração.
+Em vez disso, ele cria um arquivo `.rpmnew` ao lado do original.  Isso significa que você perderá algumas alterações desejadas e criará mais lixo em suas pastas de configuração.
 
-ou seja, o RPM durante a instalação da atualização observará `httpd.conf` se estiver no estado `unaltered` estado em que será *replace* o arquivo e você receberá as atualizações vitais.  Se a variável `httpd.conf` foi `altered` então *não substituirá* o arquivo e, em vez disso, ele criará um arquivo de referência chamado `httpd.conf.rpmnew` e as muitas correções desejadas estarão nesse arquivo que não se aplica na inicialização do serviço.
+Ou seja, o RPM durante a instalação da atualização observará `httpd.conf`, se estiver no estado `unaltered`, ele *substituirá* o arquivo e você obterá as atualizações vitais.  Se o `httpd.conf` era `altered`, então *não substituirá* o arquivo e, em vez disso, criará um arquivo de referência chamado `httpd.conf.rpmnew`, e as muitas correções desejadas estarão nesse arquivo que não se aplica na inicialização do serviço.
 
-O Enterprise Linux foi configurado adequadamente para lidar com esse caso de uso de maneira melhor.  Elas fornecem áreas em que você pode estender ou substituir os padrões definidos para você.  Dentro da instalação básica do httpd, você encontrará o arquivo `/etc/httpd/conf/httpd.conf`e tem sintaxe, como:
+O Enterprise Linux foi configurado adequadamente para lidar com esse caso de uso de maneira melhor.  Elas fornecem áreas em que você pode estender ou substituir os padrões definidos para você.  Dentro da instalação base do httpd você encontrará o arquivo `/etc/httpd/conf/httpd.conf`, que contém a sintaxe como:
 
 ```
 Include conf.modules.d/.conf
 IncludeOptional conf.d/.conf
 ```
 
-A ideia é que o Apache deseje estender os módulos e as configurações ao adicionar novos arquivos à `/etc/httpd/conf.d/` e `/etc/httpd/conf.modules.d/` diretórios com uma extensão de arquivo de `.conf`
+A ideia é que o Apache deseje estender os módulos e as configurações ao adicionar novos arquivos aos diretórios `/etc/httpd/conf.d/` e `/etc/httpd/conf.modules.d/` com uma extensão de arquivo de `.conf`
 
-Como exemplo perfeito ao adicionar o módulo Dispatcher ao Apache, você criaria um módulo `.so` arquivo em ` /etc/httpd/modules/` e inclua-o adicionando um arquivo em `/etc/httpd/conf.modules.d/02-dispatcher.conf` com o conteúdo para carregar seu módulo `.so` arquivo
+Como exemplo perfeito ao adicionar o módulo Dispatcher ao Apache, você criaria um arquivo do módulo `.so` em ` /etc/httpd/modules/` e o incluiria adicionando um arquivo em `/etc/httpd/conf.modules.d/02-dispatcher.conf` com o conteúdo para carregar o arquivo do módulo `.so`
 
 ```
 LoadModule dispatcher_module modules/mod_dispatcher.so
@@ -299,7 +299,7 @@ LoadModule dispatcher_module modules/mod_dispatcher.so
 >
 >Não modificamos nenhum arquivo já existente fornecido pelo Apache. Em vez disso, adicionamos o nosso aos diretórios que eles deveriam ir.
 
-Agora consumimos nosso módulo em nosso arquivo <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> que inicializa nosso módulo e carrega o arquivo de configuração inicial específico do módulo
+Agora consumimos nosso módulo em nosso arquivo <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b>, que inicializa nosso módulo e carrega o arquivo de configuração inicial específico do módulo
 
 ```
 <IfModule disp_apache2.c> 

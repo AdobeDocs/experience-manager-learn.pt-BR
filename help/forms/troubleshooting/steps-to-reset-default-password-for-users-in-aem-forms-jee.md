@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Etapas para redefinir a senha padrão do administrador no AEM Forms JEE
 
-*Este vídeo aborda as etapas para redefinir a senha padrão do administrador no AEM Forms JEE.*
+*Este vídeo mostra as etapas para redefinir a senha padrão do administrador no AEM Forms JEE.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)

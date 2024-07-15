@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Salvar e recuperar cartas de rascunho
 
-O código a seguir é usado para salvar a ocorrência de carta. Os metadados da ocorrência de carta são armazenados no _icdrafts_ tabela. Uma sequência de caracteres exclusiva (draftID) é gerada e retornada. Essa sequência exclusiva é usada para recuperar a ocorrência de carta salva.
+O código a seguir é usado para salvar a ocorrência de carta. Os metadados da instância de carta são armazenados na tabela _icdrafts_. Uma sequência de caracteres exclusiva (draftID) é gerada e retornada. Essa sequência exclusiva é usada para recuperar a ocorrência de carta salva.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -168,4 +168,4 @@ Você pode personalizar a consulta para buscar as instâncias de cartas salvas. 
 
 ### Projeto Eclipse
 
-O projeto do eclipse com implementação de amostra pode ser [baixado aqui](assets/icdrafts-eclipse-project.zip)
+O projeto do eclipse com implementação de amostra pode ser [baixado daqui](assets/icdrafts-eclipse-project.zip)

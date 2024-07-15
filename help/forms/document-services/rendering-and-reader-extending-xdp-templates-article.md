@@ -28,7 +28,7 @@ Para realizar esse caso de uso, precisamos fazer o seguinte.
 * Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar a credencial de extensões do Reader estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
-* Você também pode consultar o vídeo no [configuração de credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* Você também pode consultar o vídeo em [configurando credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
 * Crie um serviço OSGi personalizado que renderiza e aplica direitos de uso. O código para fazer isso está listado abaixo
@@ -126,7 +126,7 @@ public @interface DocSvcConfiguration {
 
 A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor para o usuário. Nesse caso, o usuário é solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que acompanham os navegadores não manipulam pdf dinâmicos.
 
-Veja a seguir o código do servlet. Passamos o caminho do XDP no repositório CRX para esse servlet.
+Veja a seguir o código do servlet. Passamos o caminho do XDP no repositório do CRX para esse servlet.
 
 Em seguida, chamamos o método renderAndExtendXdp de com.aemformssamples.documentservices.core.DocumentServices.
 
@@ -204,5 +204,5 @@ Para testar isso no servidor local, siga as etapas a seguir
 1. [Baixe e importe os ativos relacionados a este artigo para o AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
    * Este pacote tem portal de exemplo e arquivo xdp
 1. Adicionar certificado de extensões Reader ao usuário &quot;fd-service&quot;
-1. Aponte seu navegador para [página da web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Aponte seu navegador para a [página da Web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Clique no ícone pdf para renderizar o arquivo xdp como um arquivo pdf com direitos de uso aplicados.

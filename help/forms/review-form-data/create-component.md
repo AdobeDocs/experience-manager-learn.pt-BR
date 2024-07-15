@@ -19,9 +19,9 @@ ht-degree: 1%
 
 # Criar componente para resumir os dados de formulário
 
-Um componente simples foi criado para listar os dados de formulário para revisão. A variável [função de visita da API do guidebridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) foi usado para iterar pelos campos de formulário. O código na biblioteca do cliente associado a este componente obtém os componentes painel/tabela no formulário. Dos elementos secundários deste painel/tabela, os componentes dos campos de formulário, título, valor e expressão SOM são extraídos usando os métodos da API GuidBridge. Uma tabela de HTML simples é então construída com o título, valor e expressão SOM para o usuário final revisar/editar os dados do formulário antes de enviar o formulário.
+Um componente simples foi criado para listar os dados de formulário para revisão. A [função de visita da API guidebridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html?q=visit) foi usada para iterar pelos campos de formulário. O código na biblioteca do cliente associado a este componente obtém os componentes painel/tabela no formulário. Dos elementos secundários deste painel/tabela, os componentes dos campos de formulário, título, valor e expressão SOM são extraídos usando os métodos da API GuidBridge. Uma tabela de HTML simples é então construída com o título, valor e expressão SOM para o usuário final revisar/editar os dados do formulário antes de enviar o formulário.
 
-Por exemplo, a captura de tela abaixo mostra a tabela criada para listar os campos e seus valores do **SeusDetalhes**. O último TD no TR é usado para editar o valor do campo usando a expressão SOM dos campos.
+Por exemplo, a captura de tela abaixo mostra a tabela criada para listar os campos e seus valores de **SeusDetalhes**. O último TD no TR é usado para editar o valor do campo usando a expressão SOM dos campos.
 
 ![visit-func](assets/visit-function.png)
 

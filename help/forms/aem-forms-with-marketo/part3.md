@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# Configurar fonte de dados
+# Configurar o Data Source
 
 A Integração de dados do AEM Forms permite configurar e conectar-se a diferentes fontes de dados. Os seguintes tipos são prontos para uso. No entanto, com um pouco de personalização, também é possível integrar o a outras fontes de dados.
 
@@ -27,7 +27,7 @@ A Integração de dados do AEM Forms permite configurar e conectar-se a diferent
 1. Serviços da Web com base em SOAP
 1. Serviços OData
 
-Para a integração do AEM Forms com o Marketo, estamos usando os serviços Web RESTful. A primeira etapa da integração é configurar um [fonte de dados.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo Swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas durante a configuração da fonte de dados.
+Para a integração do AEM Forms com o Marketo, estamos usando os serviços Web RESTful. A primeira etapa da integração é configurar uma fonte de dados [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo Swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas durante a configuração da fonte de dados.
 ![fonte de dados](assets/datasource.png)
 
 O &quot;marketo.json&quot; é o arquivo swagger e é fornecido como parte dos ativos deste tutorial.
@@ -38,7 +38,7 @@ O Tipo de autenticação é personalizado e a Implementação de autenticação 
 
 Depois de configurar a fonte de dados, a próxima etapa é criar um Modelo de dados de formulário com base na fonte de dados configurada na etapa anterior. Para criar o modelo de dados de formulário, siga as seguintes etapas:
 
-Aponte seu navegador para a [integração de dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas na instância do AEM.
+Aponte seu navegador para a página de [integrações de dados.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Isso lista todas as integrações de dados criadas na sua instância do AEM.
 
 1. Clique em Criar | Modelo de dados do formulário
 1. Forneça um título significativo, como FormsAndMarketo, e clique em Próximo

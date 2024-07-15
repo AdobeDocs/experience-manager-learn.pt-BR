@@ -34,4 +34,4 @@ Utilização do Acrobat Sign com o AEM Forms
 >
 >Esse recurso está disponível somente a partir do AEM 6.3.
 
-Visite o [Amostras do AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para obter um link para uma demonstração ao vivo desse recurso.
+Visite a página [amostras de AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) para obter um link para uma demonstração ao vivo desse recurso.

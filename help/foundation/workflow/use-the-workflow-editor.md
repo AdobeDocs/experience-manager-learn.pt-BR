@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Usar o Editor de fluxo de trabalho
 
-O fluxo de trabalho permite o gerenciamento do processo empresarial no Experience Manager e é usado para o processamento automático de conteúdo, além de facilitar a governança e os processos que exigem tomada de decisão humana. O fluxo de trabalho é definido por meio de Modelos de fluxo de trabalho que são compostos por uma série de etapas e criadas e gerenciadas no [!UICONTROL Editor de modelo de fluxo de trabalho].
+O fluxo de trabalho permite o gerenciamento do processo empresarial no Experience Manager e é usado para o processamento automático de conteúdo, além de facilitar a governança e os processos que exigem tomada de decisão humana. O fluxo de trabalho é definido por meio de Modelos de Fluxo de Trabalho compostos por uma série de etapas e criados e gerenciados no [!UICONTROL Editor de Modelo de Fluxo de Trabalho].
 
 >[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

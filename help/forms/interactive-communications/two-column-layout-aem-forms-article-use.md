@@ -21,14 +21,14 @@ ht-degree: 0%
 
 Este pequeno artigo destacará as etapas necessárias para criar o layout de 2 colunas no canal de impressão. O caso de uso é gerar documentos de duas páginas, com a página 1 tendo o layout de duas colunas e a página 2 tendo o layout de coluna padrão 1.
 
-A seguir estão as etapas de alto nível envolvidas na criação de layouts de duas colunas usando o AEM Forms Designer.
+Veja a seguir as etapas de alto nível envolvidas na criação de layouts de duas colunas usando o AEM Forms Designer.
 
 * Criar 2 áreas de conteúdo na página 1 da página mestra
 * Nomeie as 2 áreas de conteúdo como &quot;left column&quot; e &quot;right column&quot;
 * Criar segunda página mestra com uma área de conteúdo (esse é o padrão)
 * Selecione a guia Paginação (Subformulário sem título) (página 1) e (Subformulário sem título) (página 2) e defina as propriedades conforme mostrado nas capturas de tela abaixo.
 
-![page1](assets/untitledsubform_paginationproperties.gif)
+![página1](assets/untitledsubform_paginationproperties.gif)
 
 ![página2](assets/untitled_subformpage2.gif)
 
@@ -39,4 +39,4 @@ Então, podemos adicionar fragmentos de documento a esses subformulários ou ár
 Para testar isso no servidor local, baixe os ativos relacionados a este artigo. Rolar para baixo até a parte inferior desta página
 
 * [Baixe e instale o Exemplo de documento do canal de impressão usando o gerenciador de pacotes](assets/print-channel-with-two-column-layout.zip)
-* [Visualizar o documento do canal de impressão](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)
+* [Visualizar o Documento do Canal de Impressão](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)

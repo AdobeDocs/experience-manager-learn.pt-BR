@@ -28,7 +28,7 @@ Para o propósito deste caso de uso, os seguintes tipos de campos foram estendid
 * botão de opção
 
 Os autores do formulário podem marcar esses tipos de campos como pesquisáveis, conforme mostrado abaixo
-![campo pesquisável](assets/searchable-fields.png)
+![campo-pesquisável](assets/searchable-fields.png)
 
 Os campos foram estendidos criando a seguinte estrutura
 

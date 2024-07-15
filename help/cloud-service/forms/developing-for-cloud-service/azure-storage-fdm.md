@@ -20,10 +20,11 @@ ht-degree: 0%
 
 # Incluir a configuração dos serviços em nuvem no projeto
 
-Crie um contêiner de configuração chamado &quot;FormTutorial&quot; para manter sua configuração de serviços em nuvem Crie uma configuração de serviços em nuvem para o Armazenamento do Azure chamada &quot;FormsCSAndAzureBlob&quot; no contêiner &quot;FormTutorial&quot; fornecendo os detalhes da conta de armazenamento do Azure e a chave de acesso do Azure.
+Crie um contêiner de configuração chamado &quot;FormTutorial&quot; para manter a configuração dos serviços em nuvem
+Crie uma configuração de serviços de nuvem para o Armazenamento do Azure chamada &quot;FormsCSAndAzureBlob&quot; no contêiner &quot;FormTutorial&quot; fornecendo os detalhes da conta de armazenamento do Azure e a chave de acesso do Azure.
 
 Abra o projeto AEM no IntelliJ. Adicione a pasta FormTutorial como mostrado abaixo no projeto ui.content
-![cloud-services-configuration](assets/cloud-services-configuration.png)
+![configuração-de-serviços-em-nuvem](assets/cloud-services-configuration.png)
 
 Certifique-se de adicionar a seguinte entrada no filter.xml do projeto ui.content
 
@@ -31,7 +32,7 @@ Certifique-se de adicionar a seguinte entrada no filter.xml do projeto ui.conten
 <filter root="/conf/FormTutorial" mode="replace"/>
 ```
 
-![filter-xml](assets/ui-content-filter.png)
+![xml-filtro](assets/ui-content-filter.png)
 
 ## Incluir modelo de dados de formulário no projeto
 
@@ -47,7 +48,7 @@ Inclua a entrada apropriada no filter.xml do projeto ui.content
 
 >[!NOTE]
 >
->Agora, ao criar e implantar seu projeto usando o Cloud Manager, será necessário inserir novamente a chave de acesso do Azure na configuração dos serviços em nuvem. Para evitar inserir novamente a chave de acesso, é recomendável criar uma configuração sensível ao contexto usando as variáveis de ambiente, conforme explicado na [próximo artigo](./context-aware-fdm.md)
+>Agora, ao criar e implantar seu projeto usando o Cloud Manager, será necessário inserir novamente a chave de acesso do Azure na configuração dos serviços em nuvem. Para evitar inserir novamente a chave de acesso, é recomendável criar uma configuração sensível ao contexto usando as variáveis de ambiente conforme explicado no [próximo artigo](./context-aware-fdm.md)
 
 ## Próximas etapas
 

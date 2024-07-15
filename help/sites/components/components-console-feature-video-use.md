@@ -29,8 +29,8 @@ O console Componentes oferece a seguinte funcionalidade:
 * [!UICONTROL Políticas]: exibe todas as políticas existentes para um determinado componente e o modelo associado
 * [!UICONTROL Uso em tempo real]: exibe uma lista de páginas nas quais o componente é incluído
 
-O console Componentes pode ser encontrado em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Componentes]**.
-URL do console Componentes (autor local do AEM): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+O Console de Componentes pode ser encontrado em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Componentes]**.
+URL do Console de Componentes (Autor do AEM local): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Recursos adicionais {#additional-resources}
 

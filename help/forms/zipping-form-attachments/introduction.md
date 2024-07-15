@@ -28,13 +28,13 @@ Em geral, os clientes compactam os anexos do formulário ou os enviam como arqui
 
 Para realizar o caso de uso, uma etapa de processo de fluxo de trabalho personalizada foi escrita. Nesta etapa do processo personalizado, um arquivo zip com os anexos de formulário em é criado e armazenado na pasta de carga em um arquivo chamado *zipped_attachments.zip*
 
-![send-form-attachments](assets/send-form-attachments.JPG)
+![enviar-formulário-anexos](assets/send-form-attachments.JPG)
 
 ## Enviar os anexos do formulário individualmente
 
 Para realizar esse caso de uso, uma etapa de processo de fluxo de trabalho personalizada foi escrita. Nesta etapa de processo personalizada, preenchemos variáveis de fluxo de trabalho do tipo ArrayList of Documents e ArrayList of Strings.
 
-![send-list-of-documents](assets/send-list-of-documents.JPG)
+![enviar-lista-de-documentos](assets/send-list-of-documents.JPG)
 
 ## Próximas etapas
 

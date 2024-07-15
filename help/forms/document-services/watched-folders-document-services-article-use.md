@@ -30,7 +30,7 @@ O serviço de saída é um serviço OSGi que faz parte dos Serviços de document
 
 Para saber mais sobre o serviço de saída, [clique aqui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar a pasta monitorada no seu sistema, siga as etapas abaixo:
-* [Baixe e extraia o conteúdo do arquivo zip](assets/outputservicewatchedfolderkt.zip)Este arquivo zip contém um pacote para a criação de pastas monitoradas e arquivos de exemplo para testar o serviço de saída usando o mecanismo de pastas monitoradas
+* [Baixe e extraia o conteúdo do arquivo zip](assets/outputservicewatchedfolderkt.zip).Este arquivo zip contém um pacote para a criação de pastas monitoradas e arquivos de exemplo para testar o serviço de saída usando o mecanismo de pastas monitoradas
    * Sistema Windows
 
       * Importe o outputservicewatchedfolder.zip para o AEM usando o gerenciador de pacotes

@@ -140,10 +140,10 @@ Linha 23 - Chamar o método extractBarCode do DocumentServices para obter o obje
 
 Para executar isso em seu sistema, siga as seguintes etapas:
 
-1. [Baixar BarcodeService.zip](assets/barcodeservice.zip) e importar para AEM usando o gerenciador de pacotes
+1. [Baixe BarcodeService.zip](assets/barcodeservice.zip) e importe para AEM usando o gerenciador de pacotes
 1. [Baixe e instale o pacote de serviços de documento personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Baixe o formulário de PDF de amostra](assets/barcode.pdf)
-1. Aponte seu navegador para a [exemplo de formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Aponte seu navegador para o [formulário adaptável de amostra](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Carregar o PDF de amostra fornecido
 1. Você deve ver os formulários preenchidos com os dados

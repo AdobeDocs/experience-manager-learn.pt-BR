@@ -18,6 +18,6 @@ ht-degree: 3%
 
 # Cópias de idioma
 
-Saiba como o editor de Fragmento de conteúdo para AEM facilita a localização de Fragmentos de conteúdo usando uma filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
+Saiba como o editor de Fragmento de conteúdo do AEM facilita a localização de Fragmentos de conteúdo usando uma filtragem rápida. Com esse recurso, encontrar fragmentos de conteúdo específicos torna-se rápido e sem esforços.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)

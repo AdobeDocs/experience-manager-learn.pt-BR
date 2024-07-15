@@ -55,20 +55,20 @@ O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento
     </a>
     </div>
     <p>
-    <em>Um guia de introdução para desenvolvedores que procuram usar o AEM como CMS headless.</em>
+    <em>Guia de introdução para desenvolvedores que procuram usar o AEM como CMS headless.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="Introdução ao Editor SPA AEM" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="Introdução ao Editor SPA do do AEM" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>Introdução ao Editor SPA AEM</strong>
+        <strong>Introdução ao Editor SPA do AEM do</strong>
       </a>
     </div>
     <p>
-    <em>Um guia de introdução para desenvolvedores integrarem um aplicativo de página única (SPA) ao AEM.</em>
+    <em>Guia de introdução para desenvolvedores integrarem um aplicativo de página única (SPA) ao AEM.</em>
     <p>
   </td>
 </tr>
@@ -82,7 +82,7 @@ O Adobe Experience Manager (AEM) Sites é uma plataforma líder em gerenciamento
 * [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [Tutoriais as a Cloud Service do AEM](/help/cloud-service/overview.md)
+* [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
 * [Tutoriais da Fundação AEM](/help/foundation/overview.md)

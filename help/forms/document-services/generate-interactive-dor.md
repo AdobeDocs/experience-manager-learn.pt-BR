@@ -29,7 +29,7 @@ Se o XDP e o formulário adaptável não estiverem baseados em nenhum esquema, s
 
 Crie um formulário adaptável e verifique se os nomes dos campos do formulário adaptável são idênticos aos nomes dos campos no modelo xdp.
 Anote o nome do elemento raiz do seu modelo xdp.
-![root- element](assets/xfa-root-element.png)
+![elemento-raiz](assets/xfa-root-element.png)
 
 ### Biblioteca do cliente
 
@@ -78,11 +78,12 @@ Se o xdp não for baseado em XSD, siga as etapas a seguir para criar XSD(schema)
 
 ### Gerar XSD a partir dos dados xml
 
-Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) dos dados xml gerados na etapa anterior.
+Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](https://www.freeformatter.com/xsd-generator.html) a partir dos dados xml gerados na etapa anterior.
 
 ### Criar formulário adaptável
 
-Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Essa biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada. O código a seguir é acionado quando o _Baixar PDF_ foi clicado
+Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Esta biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada
+O código a seguir é acionado ao clicar no _PDF de Download_
 
 ```javascript
 $(document).ready(function() {
@@ -117,7 +118,7 @@ $(document).ready(function() {
 
 ## Criar servlet personalizado
 
-Crie um servlet personalizado que mesclará os dados com o modelo XDP e retornará o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [Pacote AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Crie um servlet personalizado que mesclará os dados com o modelo XDP e retornará o pdf. O código para fazer isso está listado abaixo. O servlet personalizado faz parte do [pacote AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -217,14 +218,15 @@ No código de amostra, extraímos o Nome xdp e outros parâmetros do objeto de s
 Para testar isso no servidor local, siga as seguintes etapas:
 
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Adicione a seguinte entrada no serviço de mapeador de usuário do Apache Sling Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Baixe e instale o pacote DocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Ele tem o servlet para mesclar os dados com o modelo XDP e transmitir o pdf de volta
+1. Adicione a seguinte entrada no serviço Mapeador de usuários do Apache Sling Service
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+1. [Baixe e instale o pacote personalizado de DocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Ele tem o servlet para mesclar os dados com o modelo XDP e transmitir o pdf de volta
 1. [Importar a biblioteca do cliente](assets/generate-interactive-dor-client-lib.zip)
-1. [Importar os ativos do artigo (formulário adaptável, modelos XDP e XSD)](assets/generate-interactive-dor-sample-assets.zip)
+1. [Importar o artigo Assets (formulário adaptável, modelos XDP e XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Preencha alguns dos campos de formulário.
 1. Clique em Baixar PDF para obter o PDF. Talvez seja necessário aguardar alguns segundos para baixar o PDF.
 
 >[!NOTE]
 >
->Você pode tentar o mesmo caso de uso com [formulário adaptável não baseado em xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Transmita os parâmetros apropriados para o endpoint de publicação no streampdf.js localizado na biblioteca de clientes irs.
+>Você pode tentar o mesmo caso de uso com [formulário adaptável baseado em não xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Transmita os parâmetros apropriados para o endpoint de publicação no streampdf.js localizado na biblioteca de clientes irs.

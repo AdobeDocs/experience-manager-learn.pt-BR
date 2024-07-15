@@ -17,7 +17,7 @@ ht-degree: 17%
 # Vídeos e Tutorials do AEM Sites {#sites}
 
 + [Visão geral](overview.md)
-+ Criação de documentos {#document-authoring}
++ Criação de documento {#document-authoring}
    + [Visão geral](document-authoring/overview.md)
    + [Configurar](document-authoring/set-up.md)
    + [Pré-visualizar e publicar](document-authoring/preview-and-publish.md)
@@ -41,7 +41,7 @@ ht-degree: 17%
       + [Migração de site usando o Importador](./document-authoring/how-to/migration-using-importer.md)
       + [Personalização do importador](./document-authoring/how-to/customizing-importer.md)
       + [Importação em massa usando o Importador](./document-authoring/how-to/bulk-importing-using-importer.md)
-      + Gerar variações{#generate-variations}
+      + Gerar Variações{#generate-variations}
          + [Visão geral](./document-authoring/how-to/generate-variations/overview.md)
          + [Configurar Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
          + [Modelos de prompt](./document-authoring/how-to/generate-variations/prompt-templates.md)
@@ -73,7 +73,7 @@ ht-degree: 17%
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
    + [Lançamentos](page-authoring/launches.md)
-   + Aprenda com seus colegas {#expert-advice}
+   + Aprender com colegas {#expert-advice}
       + [Dicas de Hierarquia do Site](page-authoring/expert-advice/site-hierarchy.md)
 + IA gerativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
@@ -89,7 +89,7 @@ ht-degree: 17%
    + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
-   + Desenvolvimento{#developing}
+   + Desenvolvendo{#developing}
       + [Pré-requisitos](edge-delivery-services/developing/prerequisites.md)
       + [Placa perfurada AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Repositório de conteúdo](edge-delivery-services/developing/content-repository.md)
@@ -107,7 +107,7 @@ ht-degree: 17%
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR){target=_blank}
-   + [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + AEM [Introdução ao Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
    + [Pontos de interrupção responsivos](developing/responsive-breakpoints.md)
    + [Desenvolvimento com o sistema de estilo](developing/style-system-technical-video-understand.md)
@@ -128,9 +128,9 @@ ht-degree: 17%
    + [Console de componentes](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [Mapas do site](./seo/sitemaps.md)
-+ Aplicativos de página única {#spa-editor}
++ Aplicativos de Página Única {#spa-editor}
    + [Utilização do editor de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + AEM [Introdução ao Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
@@ -156,7 +156,7 @@ ht-degree: 17%
       + [Gerar FPIDs](integrations/platform/fpid.md)
       + [SDK da Web](integrations/platform/web-sdk.md)
       + [Analytics usando o SDK da Web da plataforma](integrations/platform/analytics-using-web-sdk.md)
-   + Tags no Adobe Experience Platform {#experience-platform-data-collection-tags}
+   + Marcas no Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
       + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [Conectar AEM e propriedade de tag usando IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
@@ -176,9 +176,9 @@ ht-degree: 17%
       + [Criar conta Cloud Service do Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exportar fragmentos de experiência para o Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Criar atividade do Target usando ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
-      + [Personalização usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
-      + [Personalização da experiência completa de página da Web](integrations/adobe-target/personalization-web-page.md)
-+ Aprenda com seus colegas {#expert-resources}
+      + [Personalization usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
+      + [Personalization de experiência completa de página da Web](integrations/adobe-target/personalization-web-page.md)
++ Aprender com colegas {#expert-resources}
    + [Visão geral](expert-resources/learn-from-your-peers-overview.md)
    + [Avaliação de maturidade da AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenção do site](expert-resources/site-maintenance.md)

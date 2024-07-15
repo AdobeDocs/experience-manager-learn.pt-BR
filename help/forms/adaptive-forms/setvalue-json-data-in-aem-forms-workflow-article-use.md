@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Como um formulário adaptável é roteado para diferentes usuários no fluxo de trabalho do AEM, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base no valor desse campo oculto, as regras de negócios podem ser criadas para ocultar/desativar painéis ou campos apropriados.
 
-![Configuração do valor de um elemento nos dados json](assets/capture-3.gif)
+![Definindo o valor de um elemento em dados json](assets/capture-3.gif)
 
 No AEM Forms OSGi - devemos criar um pacote OSGi personalizado para definir o valor do elemento de dados JSON. O pacote é fornecido como parte deste tutorial.
 
@@ -42,16 +42,16 @@ Para implantar os ativos no sistema local:
 
 * [Baixe e implante DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Baixe e implante o pacote setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
+* [Baixe e implante o conjunto setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Este é o pacote OSGI personalizado que permite definir os valores de um elemento nos dados json enviados.
 
 * [Baixe e extraia o conteúdo do arquivo zip](assets/set-value-jsondata.zip)
    * Aponte seu navegador para [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
       * Importe e instale o SetValueOfElementInJSONDataWorkflow.zip. Este pacote tem o modelo de fluxo de trabalho de amostra e o Modelo de dados de formulário associados ao formulário.
 
-* Aponte seu navegador para [Forms e documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Aponte seu navegador para [Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Clique em Criar | Upload de arquivo
 * Fazer upload do arquivo TimeOffRequestForm.zip
-  **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está usando o AEM Forms 6.4 ou superior**
+  **Este formulário foi criado usando o AEM Forms 6.4. Verifique se você está no AEM Forms 6.4 ou posterior**
 * Abra o [formulário](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Preencha as Datas inicial e final e envie o formulário.
 * Ir para [&quot;Caixa de entrada&quot;](http://localhost:4502/aem/inbox)
@@ -61,8 +61,8 @@ Para implantar os ativos no sistema local:
 
 >[!NOTE]
 >
->Como estamos preenchendo previamente o formulário adaptável usando o perfil do usuário, verifique se o administrador [informações de perfil do usuário](http://localhost:4502/security/users.html). No mínimo, verifique se você definiu os valores dos campos FirstName, LastName e Email.
->Você pode ativar o log de depuração ativando o logger para com.aemforms.setvalue.core.SetValueInJson [daqui](http://localhost:4502/system/console/slinglog)
+>Como estamos preenchendo previamente o formulário adaptável usando o perfil do usuário, verifique as [informações do perfil do usuário](http://localhost:4502/security/users.html) do administrador. No mínimo, verifique se você definiu os valores dos campos FirstName, LastName e Email.
+>Você pode habilitar o log de depuração habilitando o agente de log para com.aemforms.setvalue.core.SetValueInJson [daqui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >

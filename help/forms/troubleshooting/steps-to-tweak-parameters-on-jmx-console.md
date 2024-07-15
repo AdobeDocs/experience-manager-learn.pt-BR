@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Etapas para ajustar parâmetros no console JMX
 
-*Este vídeo aborda as etapas para ajustar parâmetros no console JMX.*
+*Este vídeo mostra as etapas para ajustar parâmetros no console JMX.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)

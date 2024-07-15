@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Nesta parte, criaremos um [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Um perfil é responsável por renderizar o XDP como HTML. Um perfil padrão é fornecido imediatamente para renderizar XDPs como HTML. Ele representa uma versão personalizada do serviço de representação do Mobile Forms. Você pode usar o serviço de Representação de formulários para dispositivos móveis para personalizar a aparência, o comportamento e as interações do Forms para dispositivos móveis. Em nosso perfil personalizado, capturaremos os dados preenchidos no formulário móvel usando a API do guidebridge. Esses dados são enviados para o servlet personalizado que gerará um PDF interativo e o transmitirá ao aplicativo de chamada.
 
-Obtenha os dados do formulário usando o `formBridge` API do JavaScript. Utilizamos o `getDataXML()` método:
+Obtenha os dados do formulário usando a API do JavaScript `formBridge`. Usamos o método `getDataXML()`:
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
@@ -59,7 +59,7 @@ var suc = function(obj) {
 
 ## Gerar PDF interativo
 
-Veja a seguir o código do servlet responsável por renderizar o pdf interativo e devolvê-lo ao aplicativo de chamada. O servlet chama `mobileFormToInteractivePdf` método do serviço OSGi personalizado do DocumentServices.
+Veja a seguir o código do servlet responsável por renderizar o pdf interativo e devolvê-lo ao aplicativo de chamada. O servlet invoca o método `mobileFormToInteractivePdf` do serviço OSGi DocumentServices personalizado.
 
 ```java
 import java.io.File;
@@ -121,7 +121,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Renderizar PDF interativo
 
-O código a seguir usa o [API de serviço do Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para renderizar o PDF interativo com os dados do formulário para dispositivos móveis.
+O código a seguir usa a [API de Serviço do Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para renderizar o PDF interativo com os dados do formulário para dispositivos móveis.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -144,7 +144,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Para visualizar a capacidade de baixar o PDF interativo do formulário para dispositivos móveis parcialmente preenchido, [clique aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
+Para exibir a capacidade de baixar PDF interativo de um formulário para dispositivos móveis parcialmente preenchido, [clique aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
 Depois que o PDF é baixado, a próxima etapa é enviar o PDF para acionar um workflow de AEM. Esse fluxo de trabalho mesclará os dados do PDF enviado e gerará um PDF não interativo para revisão.
 
 O perfil personalizado criado para este caso de uso está disponível como parte deste tutorial de ativos.

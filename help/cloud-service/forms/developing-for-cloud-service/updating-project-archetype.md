@@ -28,23 +28,23 @@ As etapas a seguir foram seguidas para migrar o projeto criado usando o arquéti
 
 * Abra o prompt de comando e navegue até c:\cloudmanager
 * Crie um projeto maven usando o arquétipo mais recente.
-* Copie e cole o conteúdo do [arquivo de texto](assets/creating-maven-project.txt) na janela do prompt de comando. Talvez seja necessário alterar DarchetypeVersion=33 dependendo da variável [versão mais recente](https://github.com/adobe/aem-project-archetype/releases). O Arquétipo 33 inclui novos temas do AEM Forms.
-Como estamos criando o novo projeto maven na pasta cloudmanager que já tem o projeto aem-banking-application, você deve alterar a variável **DartifactId** de aem-banking-application para algo diferente. Eu usei o aem-banking-application1 para este artigo.
+* Copie e cole o conteúdo do [arquivo de texto](assets/creating-maven-project.txt) na janela do prompt de comando. Talvez seja necessário alterar DarchetypeVersion=33 dependendo da [versão mais recente](https://github.com/adobe/aem-project-archetype/releases). O Arquétipo 33 inclui novos temas do AEM Forms.
+Como estamos criando o novo projeto maven na pasta cloudmanager que já tem o projeto aem-banking-application, você deve alterar a **DartifactId** de aem-banking-application para algo diferente. Eu usei o aem-banking-application1 para este artigo.
 
 >[!NOTE]
 >
->Se você implantar esse novo projeto como está, a instância do Cloud Service não terá HandleFormSubmission e SubmitToAEMervlet. Isso ocorre porque toda vez que você implanta um projeto usando o Cloud Manager qualquer item no `/apps` a pasta é excluída e substituída.
+>Se você implantar esse novo projeto como está, a instância do Cloud Service não terá HandleFormSubmission e SubmitToAEMervlet. Isso ocorre porque toda vez que você implanta um projeto usando o Cloud Manager, qualquer item na pasta `/apps` é excluído e substituído.
 
 ## Copie seu código java
 
 Depois que o projeto for criado com êxito, você pode começar a copiar códigos/configurações etc., do projeto antigo para o novo projeto
 
-* Copie o servlet HandleFormSubmission do ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
+* Copiar o servlet HandleFormSubmission de ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
 para
   ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 
 * Copiar o CustomSubmit de
-  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` do projeto aem-banking-application para o projeto aem-banking-application1
+  ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` de aem-banking-application para projeto aem-banking-application1
 
 * importar o novo projeto para o IntelliJ
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 O AEM Forms CS fornece uma ação de envio pronta para uso para armazenar dados de formulário no Azure, mas não tem a capacidade de criar tags de índice de blob no blob. Para atender ao caso de uso, um serviço de envio personalizado foi criado para armazenar os dados enviados no Azure e criar tags de dados de índice de blob usando os campos marcados como pesquisáveis no formulário.
 
-[O exemplo de manipulador de envio personalizado para componentes principais baseado em formulário adaptável está disponível aqui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). O envio personalizado a seguir foi gravado para lidar com o envio do formulário
+[O manipulador de envio personalizado de exemplo para o formulário adaptável baseado nos componentes principais está disponível aqui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). O envio personalizado a seguir foi gravado para lidar com o envio do formulário
 
 ```java
 package com.aemforms.saveandfecthfromazure.prefill;

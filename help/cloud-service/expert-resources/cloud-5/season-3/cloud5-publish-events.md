@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Publicar, cancelar a publicação de eventos no Edge Delivery Services
+title: Cloud 5 - Publish, cancelar publicação de eventos no Edge Delivery Services
 description: Explore eventos que são acionados ao publicar e desfazer a publicação no Edge Delivery Services, bem como casos de uso e exemplos para usar esses eventos.
 feature: Edge Delivery Services
 topic: Development
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 - Publicar, cancelar a publicação de eventos no Edge Delivery Services
+# Cloud 5 - Publish, cancelar publicação de eventos no Edge Delivery Services
 
 Explore eventos que são acionados ao publicar e desfazer a publicação no Edge Delivery Services, bem como casos de uso e exemplos para usar esses eventos.
 

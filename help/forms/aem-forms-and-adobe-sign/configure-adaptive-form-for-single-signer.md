@@ -25,7 +25,7 @@ O vídeo explica as várias etapas necessárias para configurar um formulário a
 
 >[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
 
-Os ativos relacionados a este vídeo podem ser baixados no link a seguir
+As Assets relacionadas a este vídeo podem ser baixadas no link a seguir
 
 * [Alteração Do Formulário Do Beneficiário](assets/change-of-beneficiary-form.zip)
 

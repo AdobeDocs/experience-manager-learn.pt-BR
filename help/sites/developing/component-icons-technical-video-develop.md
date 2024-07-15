@@ -24,22 +24,22 @@ Os Ícones de componente permitem que os autores identifiquem rapidamente um com
 
 O navegador de componentes agora é exibido em um tema cinza consistente, exibindo o:
 
-* **[!UICONTROL Grupo do componente]**
+* **[!UICONTROL Grupo de componentes]**
 * **[!UICONTROL Título do componente]**
 * **[!UICONTROL Descrição do componente]**
 * **[!UICONTROL Ícone do componente]**
-   * As duas primeiras letras do título do componente *(padrão)*
-   * Imagem PNG personalizada *(configurado por um desenvolvedor)*
-   * Imagem de SVG personalizada *(configurado por um desenvolvedor)*
-   * Ícone do CoralUI *(configurado por um desenvolvedor)*
+   * As duas primeiras letras do Título de Componente *(padrão)*
+   * Imagem PNG personalizada *(configurada por um desenvolvedor)*
+   * Imagem de SVG personalizada *(configurada por um desenvolvedor)*
+   * Ícone CoralUI *(configurado por um desenvolvedor)*
 
 ## Opções de configuração do ícone do componente {#component-icon-configuration-options}
 
 ### Abreviações {#abbreviations}
 
-Por padrão, os dois primeiros caracteres do título do componente (**[cq:Component]@jcr:title**) são usadas como abreviação. Por exemplo, se **[cq:Component]@jcr:title=Lista de artigos** a abreviação seria exibida como &quot;**Ar**&quot;.
+Por padrão, os dois primeiros caracteres do título do componente (**[cq:Component]@jcr:title**) são usados como abreviação. Por exemplo, se **[cq:Component]@jcr:title=Article List**, a abreviação seria exibida como &quot;**Ar**&quot;.
 
-A abreviação pode ser personalizada por meio da **[cq:Component]@abbreviation** propriedade. Embora esse valor possa aceitar mais de 2 caracteres, é recomendável limitar a abreviação a 2 caracteres para evitar perturbações visuais.
+A abreviação pode ser personalizada por meio da propriedade **[cq:Component]@abbreviation**. Embora esse valor possa aceitar mais de 2 caracteres, é recomendável limitar a abreviação a 2 caracteres para evitar perturbações visuais.
 
 ```plain
 /apps/.../components/content/my-component
@@ -49,7 +49,7 @@ A abreviação pode ser personalizada por meio da **[cq:Component]@abbreviation*
 
 ### Ícones do CoralUI {#coralui-icons}
 
-Os ícones CoralUI, fornecidos pelo AEM, podem ser usados para ícones de componentes. Para configurar um ícone CoralUI, defina um **[cq:Component]@cq:icon** para o valor do atributo do ícone HTML do CoralUI desejado (enumerado na variável [Documentação do CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Os ícones CoralUI, fornecidos pelo AEM, podem ser usados para ícones de componentes. Para configurar um ícone CoralUI, defina uma propriedade **[cq:Component]@cq:icon** para o valor de atributo de ícone HTML do ícone CoralUI desejado (enumerado na [documentação do CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -59,11 +59,11 @@ Os ícones CoralUI, fornecidos pelo AEM, podem ser usados para ícones de compon
 
 ### Imagens PNG {#png-images}
 
-Imagens PNG podem ser usadas para ícones de componentes. Para configurar uma imagem PNG como um ícone de componente, adicione a imagem desejada como um **nt:arquivo** nomeado **cq:icon.png** no **[cq:Component]**.
+Imagens PNG podem ser usadas para ícones de componentes. Para configurar uma imagem PNG como um ícone de componente, adicione a imagem desejada como um **nt:file** chamado **cq:icon.png** em **[cq:Component]**.
 
 O PNG deve ter um plano de fundo transparente ou uma cor de plano de fundo definida como **#707070**.
 
-As imagens PNG são dimensionadas para **20px por 20px**. No entanto, para acomodar exibições de retina **40px** por **40px** pode ser preferível.
+As imagens PNG foram dimensionadas para **20px por 20px**. No entanto, para acomodar exibições de retina **40px** por **40px** pode ser preferível.
 
 ```plain
 /apps/.../components/content/my-component
@@ -74,9 +74,9 @@ As imagens PNG são dimensionadas para **20px por 20px**. No entanto, para acomo
 
 ### Imagens SVG {#svg-images}
 
-imagens SVG (baseadas em vetor) podem ser usadas para ícones de componentes. Para configurar uma imagem de SVG como um ícone de componente, adicione o SVG desejado como um **nt:arquivo** nomeado **cq:icon.svg** no **[cq:Component]**.
+imagens SVG (baseadas em vetor) podem ser usadas para ícones de componentes. Para configurar uma imagem de SVG como um ícone de componente, adicione o SVG desejado como um **nt:file** chamado **cq:icon.svg** em **[cq:Component]**.
 
-As imagens do SVG devem ter uma cor de plano de fundo definida como **#707070** e um tamanho de **20px por 20px.**
+As imagens SVG devem ter uma cor de plano de fundo definida como **#707070** e um tamanho de **20px por 20px.**
 
 ```plain
 /apps/.../components/content/my-component

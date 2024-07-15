@@ -18,10 +18,11 @@ ht-degree: 0%
 
 # Implantar e testar os ativos de amostra
 
-[Instale o pacote do kit de boas-vindas](assets/welcomekit.zip). Este pacote contém o modelo de página, o componente personalizado para listar os ativos, fluxo de trabalho de amostra, modelo de email e documentos pdf de amostra para incluir no kit de boas-vindas.
-[Instalar o pacote do kit de boas-vindas](assets/welcomekit.core-1.0.0-SNAPSHOT.jar). Esse pacote contém o código para criar a página e a classe java para retornar os ativos a serem exibidos na página da Web.
-[Instale o exemplo de formulário adaptável](assets/account-openeing-form.zip)
+[Instalar o pacote do kit de boas-vindas](assets/welcomekit.zip). Este pacote contém o modelo de página, o componente personalizado para listar os ativos, fluxo de trabalho de amostra, modelo de email e documentos pdf de amostra para incluir no kit de boas-vindas.
+[Instalar o conjunto do kit de boas-vindas](assets/welcomekit.core-1.0.0-SNAPSHOT.jar). Esse pacote contém o código para criar a página e a classe java para retornar os ativos a serem exibidos na página da Web.
+[Instalar o formulário adaptável de exemplo](assets/account-openeing-form.zip)
 Configure o Day CQ Mail Service. O fluxo de trabalho envia o link do kit de boas-vindas para o remetente do formulário que precisa do SMTP configurado corretamente.
 Configure o componente de Envio de email do fluxo de trabalho de acordo com seus requisitos
 [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/co-operators/accountopeningform/jcr:content?wcmmode=disabled)
-Insira seus detalhes, selecione um ou mais fundos mútuos e envie o formulário. Você deve receber um email com um link para o kit de boas-vindas
+Insira seus detalhes, selecione um ou mais fundos mútuos e envie o formulário
+Você deve receber um email com um link para o kit de boas-vindas

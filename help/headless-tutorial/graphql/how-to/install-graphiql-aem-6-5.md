@@ -22,31 +22,31 @@ ht-degree: 14%
 No AEM 6.5, a ferramenta GraphiQL IDE deve ser instalada manualmente.
 
 1. Navegue até o **[Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Pesquise por &quot;GraphiQL&quot; (não deixe de incluir o **i** in **GraphiQL**).
-1. Baixe o mais recente **Pacote de conteúdo GraphiQL v.x.x.x**.
+1. Pesquise por &quot;GraphiQL&quot; (certifique-se de incluir o **i** em **GraphiQL**).
+1. Baixe o **Pacote de Conteúdo GraphiQL v.x.x.x** mais recente.
 
-   ![Baixar pacote GraphiQL](assets/graphiql/software-distribution.png)
+   ![Baixar Pacote GraphiQL](assets/graphiql/software-distribution.png)
 
    O arquivo zip é um pacote AEM que pode ser instalado diretamente.
 
 1. No menu Iniciar do AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes**.
 1. Clique em **Fazer upload do pacote** e escolha o pacote baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
 
-   ![Instalar pacote GraphiQL](assets/graphiql/install-graphiql-package.png)
+   ![Instalar Pacote GraphiQL](assets/graphiql/install-graphiql-package.png)
 
-1. Navegue até **CRXDE Lite** > **Painel Repositório** > selecionar `/content/graphiql` nó (por exemplo, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
-1. No **Propriedades** valor de alteração da guia de `endpoint` propriedade para `/content/_cq_graphql/wknd-shared/endpoint.json`.
-   ![Alteração do Valor de Propriedade do Ponto de Extremidade](assets/graphiql/endpoint-prop-value-change.png)
+1. Navegue até **CRXDE Lite** > **Painel do Repositório** > selecione o nó `/content/graphiql` (por exemplo, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
+1. Na guia **Propriedades**, altere o valor da propriedade `endpoint` para `/content/_cq_graphql/wknd-shared/endpoint.json`.
+   ![Alteração do Valor da Propriedade do Ponto de Extremidade](assets/graphiql/endpoint-prop-value-change.png)
 
-1. Navegue até a **Configuração do console da Web** Interface do usuário > Pesquisar por **Filtro CSRF** configuração (por exemplo,<http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter)>
-1. No `Excluded Paths` atualização do campo nome da propriedade, o caminho do ponto de extremidade WKND GraphQL para `/content/cq:graphql/wknd-shared/endpoint`.
+1. Navegue até a **Configuração do Console da Web** > Pesquisar por **Configuração do Filtro CSRF** (por exemplo,<http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter)>
+1. Na atualização do campo de nome de propriedade `Excluded Paths`, o caminho do ponto de extremidade WKND GraphQL para `/content/cq:graphql/wknd-shared/endpoint`.
 
 ![Excluir Alteração do Valor da Propriedade dos Caminhos](assets/graphiql/exclude-paths-value-change.png)
 
-1. Acesse o editor de GraphiQL usando `//HOST:PORT/content/graphiql.html`e verifique se você pode construir uma nova consulta ou executar uma consulta existente. (por exemplo, <http://localhost:4502/content/graphiql.html>)
+1. Acesse o editor de GraphiQL usando `//HOST:PORT/content/graphiql.html` e verifique se é possível construir uma nova consulta ou executar uma consulta existente. (ex.: <http://localhost:4502/content/graphiql.html>)
 
-![Editor GraphiQL](assets/graphiql/graphiql-editor.png)
+![Editor de GraphiQL](assets/graphiql/graphiql-editor.png)
 
 >[!TIP]
 >
->Para oferecer suporte ao esquema GraphQL específico do projeto e à execução da consulta, é necessário fazer as alterações correspondentes para o `endpoint` e `Excluded Paths` valores nas etapas acima.
+>Para suportar o esquema GraphQL específico do seu projeto e a execução da consulta, você deve fazer as alterações correspondentes para os valores `endpoint` e `Excluded Paths` nas etapas acima.

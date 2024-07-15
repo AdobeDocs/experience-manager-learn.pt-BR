@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Gerar documento de registro (DOR) de forma programática
 
-Este artigo ilustra a utilização do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar **Documento do registro** programaticamente. [Documento do registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) é uma versão em PDF dos dados capturados no Formulário adaptável.
+Este artigo ilustra o uso do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar programaticamente o **Documento de Registro**. [Documento de Registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) é uma versão PDF dos dados capturados no Formulário adaptável.
 
 1. Veja a seguir o trecho de código. A primeira linha obtém o serviço DOR.
 1. Defina as DoROptions.
@@ -66,20 +66,20 @@ session.save();
 Para experimentar isso em seu sistema local, siga as etapas a seguir
 
 1. [Baixe e instale os ativos do artigo usando o gerenciador de pacotes](assets/dor-with-api.zip)
-1. Verifique se você instalou e iniciou o pacote DevelopingWithServiceUser fornecido como parte de [Artigo Criar Usuário de Serviço](service-user-tutorial-develop.md)
-1. [Fazer logon no configMgr](http://localhost:4502/system/console/configMgr)
+1. Verifique se você instalou e iniciou o pacote DevelopingWithServiceUser fornecido como parte do [Artigo Criar Usuário de Serviço](service-user-tutorial-develop.md)
+1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
 1. Procurar serviço Mapeador de usuário do Apache Sling Service
-1. Certifique-se de inserir a seguinte entrada _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ na seção Mapeamentos do Serviço
-1. [Abra o formulário](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
+1. Verifique a seguinte entrada _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ na seção Mapeamentos do Serviço
+1. [Abrir o formulário](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. Preencha o formulário e clique em &quot;Exibir PDF&quot;
 1. Você deve ver DOR em uma nova guia no navegador
 
 
-**Dicas de solução de problemas**
+**Dicas de Solução de Problemas**
 
 o PDF não é exibido na nova guia do navegador:
 
 1. Verifique se você não está bloqueando os pop-ups do seu navegador
 1. Verifique se você está iniciando o servidor AEM como administrador (pelo menos no Windows)
-1. Verifique se o pacote &quot;DevelopingWithServiceUser&quot; está em *estado ativo*
-1. [Verifique se o usuário do sistema](http://localhost:4502/useradmin) &#39;fd-service&#39; tem permissões de Leitura, Modificação e Criação no seguinte nó `/content/usergenerated/content/aemformsenablement`
+1. Verifique se o pacote &#39;DevelopingWithServiceUser&#39; está no *estado ativo*
+1. [Verifique se o usuário do sistema](http://localhost:4502/useradmin) &#39; fd-service&#39; tem permissões de Leitura, Modificação e Criação no seguinte nó `/content/usergenerated/content/aemformsenablement`

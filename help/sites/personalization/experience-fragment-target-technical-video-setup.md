@@ -33,5 +33,5 @@ O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização en
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de fragmentos de experiência](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
+* [Documentação de Fragmentos de experiência](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html)
 * [Uso de Fragmentos de experiência](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

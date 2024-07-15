@@ -8,35 +8,35 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-
 # Criar componente de endereço
 
 Faça logon no CRXDE da instância do AEM Forms pronta para nuvem local.
 
-Faça uma cópia do ``/apps/bankingapplication/components/adaptiveForm/button`` e renomeie-o para addressblock. Selecione o nó addressblock e defina suas propriedades conforme mostrado abaixo.
+Faça uma cópia do nó ``/apps/bankingapplication/components/adaptiveForm/button`` e renomeie-o para addressblock. Selecione o nó addressblock e defina suas propriedades conforme mostrado abaixo.
 
 >[!NOTE]
 >
-> ``bankingapplication`` é a appId fornecida ao criar o projeto Maven. Esta appId pode ser diferente no seu ambiente. Você pode fazer uma cópia de qualquer componente; por acaso, fiz uma cópia do componente de botão
+> ``bankingapplication`` é o appId fornecido ao criar o projeto Maven. Esta appId pode ser diferente no seu ambiente. Você pode fazer uma cópia de qualquer componente; por acaso, fiz uma cópia do componente de botão
 
 
-![address-bloc](assets/address-properties.png)
+![bloco-endereço](assets/address-properties.png)
 
 ## propriedades do nó cq-template
 
-Selecione o ``cq-template`` sob o nó ``addressblock`` e defina suas propriedades conforme mostrado abaixo. Observe que fieldType está definido como panel
+Selecione o nó ``cq-template`` sob o nó ``addressblock`` e defina suas propriedades conforme mostrado abaixo. Observe que fieldType está definido como panel
 ![cq-template](assets/cq-template.png)
 
 ## Adicionar nós no cq-template
 
-Adicione os seguintes nós do tipo ``nt:unstructured`` em ``cq-template``
+Adicionar os seguintes nós do tipo ``nt:unstructured`` em ``cq-template``
 
 * streetaddress
 * cidade
@@ -49,34 +49,30 @@ Esses nós representam os campos do componente de bloco de endereço. Os campos 
 
 >[!NOTE]
 >
-> A variável **_bankingapplication_** no caminho se refere ao appId do projeto maven. Pode ser diferente no seu ambiente
+> O **_bankingapplication_** no caminho se refere ao appId do projeto maven. Pode ser diferente no seu ambiente
 
-Selecione o ``streetaddress`` e defina suas propriedades conforme mostrado abaixo.
-![street-address](assets/streetaddress.png)
+Selecione o nó ``streetaddress`` e defina suas propriedades conforme mostrado abaixo.
+![endereço](assets/streetaddress.png)
 
 ## Definir as propriedades do nó city
 
-Selecione o ``city`` e defina suas propriedades conforme mostrado abaixo.
-![city](assets/city.png)
+Selecione o nó ``city`` e defina suas propriedades conforme mostrado abaixo.
+![cidade](assets/city.png)
 
 ## Definir as propriedades do nó zip
 
-Selecione o ``zip`` e defina suas propriedades conforme mostrado abaixo.
+Selecione o nó ``zip`` e defina suas propriedades conforme mostrado abaixo.
 ![zip](assets/zip.png)
 
 ## Definir as propriedades do nó de estado
 
-Selecione o ``state`` e defina suas propriedades conforme mostrado abaixo. Observe o fieldType do estado - ele está definido como uma lista suspensa
-![state](assets/state.png)
+Selecione o nó ``state`` e defina suas propriedades conforme mostrado abaixo. Observe o fieldType do estado - ele está definido como uma lista suspensa
+![estado](assets/state.png)
 
 O componente de bloco de endereço final terá esta aparência
 
-![final-address](assets/crx-address-block.png)
+![endereço-final](assets/crx-address-block.png)
 
 ## Próximas etapas
 
 [Implantar o projeto](./deploy-your-project.md)
-
-
-
-

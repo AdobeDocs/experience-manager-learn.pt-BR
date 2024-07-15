@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Visualização de design no AEM Forms Designer
 
-Vídeo curto na visualização do designer no AEM Forms Designer
+Vídeo curto sobre a visualização do designer no AEM Forms Designer
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)

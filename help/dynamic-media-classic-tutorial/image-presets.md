@@ -37,8 +37,8 @@ Uma predefinição de imagem tem um cifrão ($) em ambos os lados do nome e segu
 >
 >Crie uma predefinição de imagem por tamanho de imagem exclusivo no site. Por exemplo, se você precisar de uma imagem de 350 X 350 para a página de detalhes do produto, uma imagem de 120 X 120 para as páginas de navegação/pesquisa e uma imagem de 90 X 90 para um item de venda cruzada/em destaque, você precisará de três Predefinições de imagem, independentemente de ter 500 imagens ou 500.000.
 
-- Saiba mais sobre [Predefinições da imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Saiba como [Criar uma predefinição de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Saiba mais sobre [Predefinições de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Saiba como [Criar uma Predefinição de Imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Predefinições e nitidez da imagem
 
@@ -66,4 +66,4 @@ Saiba mais sobre [Opções de nitidez do Dynamic Media Classic](https://experien
 
 [Guia de predefinição de imagem](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Configurações a serem usadas para otimizar a qualidade da imagem e a velocidade de carregamento.
 
-[Imagem é tudo Parte 2: Nunca é apenas um desfoque — Qualidade versus Velocidade](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Uma publicação do blog que discute o uso de predefinições de imagem para fornecer imagens de alta qualidade e carregamento rápido.
+[A Imagem É Tudo Parte 2: Nunca É Apenas Um Desfoque — Qualidade Versus Velocidade](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Uma publicação do blog que discute o uso de predefinições de imagem para fornecer imagens de alta qualidade e carregamento rápido.

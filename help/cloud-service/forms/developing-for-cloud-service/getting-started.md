@@ -28,13 +28,13 @@ Este tutorial guiará você pelas etapas necessárias para criar um projeto do A
 Este tutorial se referirá a esta estrutura de pastas no futuro.
 
 * [Instalar JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). Baixei o jdk-11.0.6_windows-x64_bin.zip
-* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html)Por exemplo, se você tiver instalado o Maven na pasta c:\maven, será necessário criar uma variável de ambiente chamada M2_HOME com o valor C:\maven\apache-maven-3.6.0. Em seguida, adicione M2_HOME\bin ao caminho e salve sua configuração.
+* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Por exemplo, se você tiver instalado o Maven na pasta c:\maven, será necessário criar uma variável de ambiente chamada M2_HOME com o valor C:\maven\apache-maven-3.6.0. Em seguida, adicione M2_HOME\bin ao caminho e salve sua configuração.
 
 ## Criar projeto Maven usando o arquétipo de projeto AEM
 
-* Crie uma pasta chamada **cloudmanager**(você pode dar qualquer nome a ele) na unidade c
+* Crie uma pasta chamada **cloudmanager**(você pode dar qualquer nome a ela) na unidade c
 * Abra a janela do prompt de comando e navegue até **c:\cloudmanager**
-* Copie e cole o conteúdo do [arquivo de texto](assets/creating-maven-project.txt) na janela do prompt de comando. Talvez seja necessário alterar DarchetypeVersion=30 dependendo da variável [versão mais recente](https://github.com/adobe/aem-project-archetype/releases). No momento em que este artigo foi escrito, a última versão tinha 30 anos.
+* Copie e cole o conteúdo do [arquivo de texto](assets/creating-maven-project.txt) na janela do prompt de comando. Talvez seja necessário alterar DarchetypeVersion=30 dependendo da [última versão](https://github.com/adobe/aem-project-archetype/releases). No momento em que este artigo foi escrito, a última versão tinha 30 anos.
 * Execute o comando pressionando a tecla Enter. Se tudo correr corretamente, você verá a mensagem de sucesso da build.
 
 ## Próximas etapas

@@ -38,11 +38,11 @@ A veiculação de imagens talvez seja a função mais usada do Dynamic Media Cla
 
 Neste guia, discutiremos os seguintes recursos principais do Dynamic Media Classic.
 
-- **Dynamic Imaging.** O termo abrangente para edição, formatação e dimensionamento em tempo real e zoom e panorâmica interativos; observação de cores e texturas; rotação de 360 graus; modelos de imagem; e visualizadores multimídia.
+- **Dynamic Imaging.** O termo genérico para edição, formatação e dimensionamento em tempo real e zoom e panorâmica interativos; observação de cores e texturas; rotação de 360 graus; modelos de imagem; e visualizadores multimídia.
 - **Vídeo.** Carregue os vídeos finais, publique-os e baixe-os progressivamente em visualizadores de vídeo configuráveis.
-- **Imagem inteligente.** Tecnologia que aproveita os recursos de IA do Adobe Sensei e funciona com &quot;Predefinições de imagem&quot; existentes para aprimorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
+- **Imagens inteligentes.Tecnologia do** que aproveita os recursos de IA do Adobe Sensei e funciona com &quot;Predefinições de imagem&quot; existentes para aprimorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
-Para descobrir os recursos adicionais da solução, visite o [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## A interface do usuário (UI) do Dynamic Media Classic
 
@@ -50,26 +50,26 @@ A interface principal do Dynamic Media Classic consiste em três áreas principa
 
 ![imagem](assets/overview/overview-dmc-ui-ew.png)
 
-_Interface do usuário do Dynamic Media Classic_
+_INTERFACE DO USUÁRIO DO Dynamic Media Classic_
 
-**Barra de navegação global.** Localizado na parte superior da tela, você usará os botões dessa barra para acessar as principais áreas e recursos da solução. Por exemplo, você o usará para acessar recursos de upload, abrir várias áreas de criação de ativos (conjunto de imagens, conjunto de rotação etc.), executar tarefas importantes, como configurar predefinições de imagens e predefinições do visualizador, e publicar seus ativos. Aqui, você também pode monitorar seus trabalhos, ver atividades recentes e escolher entre uma variedade de opções de ajuda.
+**Barra de Navegação Global.** Localizado na parte superior da tela, você usará os botões desta barra para acessar as principais áreas e recursos da solução. Por exemplo, você o usará para acessar recursos de upload, abrir várias áreas de criação de ativos (conjunto de imagens, conjunto de rotação etc.), executar tarefas importantes, como configurar predefinições de imagens e predefinições do visualizador, e publicar seus ativos. Aqui, você também pode monitorar seus trabalhos, ver atividades recentes e escolher entre uma variedade de opções de ajuda.
 
-**Biblioteca de ativos.** Localizado no lado esquerdo da tela, está a Biblioteca de ativos, um painel usado para organizar os ativos em pastas e subpastas criadas por você. Na parte superior do painel, você encontrará pesquisa e filtros para ajudá-lo a localizar ativos. A Pesquisa avançada permite pesquisar especificando várias opções como critérios, incluindo campos de metadados ocultos anexados a esse ativo. Na parte inferior do painel, é possível ver os itens excluídos clicando no ícone Lixeira. Inicialmente, você não começa com nenhuma pasta, exceto a pasta de nível superior, que tem o mesmo nome da conta.
+**Biblioteca de ativos.** Localizado no lado esquerdo da tela, está a Biblioteca de ativos, um painel usado para organizar seus ativos em pastas e subpastas criadas por você. Na parte superior do painel, você encontrará pesquisa e filtros para ajudá-lo a localizar ativos. A Pesquisa avançada permite pesquisar especificando várias opções como critérios, incluindo campos de metadados ocultos anexados a esse ativo. Na parte inferior do painel, é possível ver os itens excluídos clicando no ícone Lixeira. Inicialmente, você não começa com nenhuma pasta, exceto a pasta de nível superior, que tem o mesmo nome da conta.
 
 >[!NOTE]
 >
->Os ativos na Lixeira serão automaticamente excluídos permanentemente sete dias após serem colocados lá, a menos que você os restaure.
+>O Assets na lixeira será excluído automaticamente sete dias após ser colocado lá, a menos que você o restaure.
 
-**Painel Procurar/Criar.** Esse é o centro da interface do usuário, onde você navegará pelos ativos no modo Procurar ou, se estiver no modo Criar, o usará como uma tela para criar ativos como parte de um fluxo de trabalho. Ao entrar pela primeira vez, você verá o Painel de navegação. No centro da tela estão as versões em miniatura das imagens em uma exibição de Grade. É possível alterar para uma exibição de Lista ou selecionar um ativo e exibir detalhes sobre ele usando a exibição de Detalhes.
+**Procurar/Criar Painel.** Este é o centro da interface do usuário, onde você navegará pelos ativos no modo Procurar ou, se estiver no modo Criar, você o usará como uma tela para criar ativos como parte de um fluxo de trabalho. Ao entrar pela primeira vez, você verá o Painel de navegação. No centro da tela estão as versões em miniatura das imagens em uma exibição de Grade. É possível alterar para uma exibição de Lista ou selecionar um ativo e exibir detalhes sobre ele usando a exibição de Detalhes.
 
 >[!IMPORTANT]
 >
->Ao lado de cada ID de ativo está a variável **Marcar para publicação** interruptor. Quando o botão está ativado (verde), isso indica que o ativo está marcado para publicação.
+>Ao lado de cada ID de ativo há a opção **Marcar para Publish**. Quando o botão está ativado (verde), isso indica que o ativo está marcado para publicação.
 
 ![imagem](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Selecione o **Publicar após o upload** na caixa de seleção Fazer upload para publicar ativos automaticamente após o upload.
+>Marque a caixa de seleção **Publish Após o carregamento** na caixa de diálogo Carregar para publicar ativos automaticamente após o carregamento.
 
 Saiba mais sobre [Navegação na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

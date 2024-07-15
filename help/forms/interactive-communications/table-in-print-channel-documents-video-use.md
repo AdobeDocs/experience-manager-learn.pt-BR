@@ -29,7 +29,7 @@ As tabelas são usadas para exibir dados na forma de tabelas. As linhas na tabel
 >
 >Para tornar a tabela dinâmica, verifique se você marcou a linha como repetitiva.
 
-**Experimente no seu próprio servidor**
+**Experimente em seu próprio servidor**
 
 * [Baixe e descompacte o arquivo de ativos no disco rígido](assets/usingtablesinprintchannel.zip)
 
@@ -44,7 +44,7 @@ As tabelas são usadas para exibir dados na forma de tabelas. As linhas na tabel
    * Documento de comunicação interativa
    * sampleretirementaccountdata.json
 
-* Abra o documento de comunicação interativa no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Abra o Documento de Comunicação Interativa no [modo de edição](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Adicione o fragmento de layout TableDemo à seção de contribuições.
 * Vincule as células da tabela aos elementos apropriados do Modelo de dados de formulário, conforme mostrado no vídeo

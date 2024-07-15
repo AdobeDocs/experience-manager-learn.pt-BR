@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Permissões personalizadas do Cloud Manager
 
-Saiba como usar o Cloud Manager [permissões personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) no AEM para gerenciar estrategicamente o acesso de diferentes equipes, garantindo um gerenciamento e uma implantação de projetos eficientes e seguros.
+Saiba como usar as [permissões personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html) do Cloud Manager no AEM para gerenciar estrategicamente o acesso de diferentes equipes, garantindo um gerenciamento e uma implantação de projetos eficientes e seguros.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

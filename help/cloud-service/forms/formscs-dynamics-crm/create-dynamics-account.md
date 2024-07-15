@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Criar e configurar a conta do Dynamics
 
-[Logon](https://dynamics.microsoft.com/en-us/) para sua conta do Microsoft Dynamics. Você pode criar um [conta de avaliação gratuita](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) se você não tiver uma conta do Dynamics.
+[Faça logon](https://dynamics.microsoft.com/en-us/) em sua conta do Microsoft Dynamics. Você pode criar uma [conta de avaliação gratuita](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) se não tiver uma conta do Dynamics.
 
 >[!NOTE]
 >Substitua o servidor e o número da porta no URI abaixo para obter o URI de nova tentativa. Você precisará desse URI de nova tentativa ao configurar seu aplicativo com o Azure Ative Diretory.
->https://[server]:[porta]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+>https://[servidor]:[porta]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 O vídeo a seguir o orienta pelas etapas para registrar o Microsoft Dynamics com o Azure Ative Diretory.
 

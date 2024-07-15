@@ -25,7 +25,7 @@ Uma variedade de outras ferramentas pode ajudar na depuração do aplicativo no 
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite é uma interface baseada na web para interagir com o repositório de dados JCR, AEM. O CRXDE Lite fornece visibilidade total do JCR, incluindo nós, propriedades, valores de propriedade e permissões.
+CRXDE Lite é uma interface baseada na web para interagir com o JCR, o repositório de dados do AEM. O CRXDE Lite fornece visibilidade total do JCR, incluindo nós, propriedades, valores de propriedade e permissões.
 
 CRXDE Lite está localizado em:
 
@@ -42,9 +42,9 @@ O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível via CRXDE Lite �
 + Clicar duas vezes em um nó de arquivo na navegação à esquerda abre o conteúdo do arquivo no painel superior direito
 + Toque no botão Salvar tudo na parte superior esquerda para manter as alterações ou na seta para baixo ao lado de Salvar tudo para Reverter as alterações não salvas.
 
-![CRXDE Lite - Depuração de conteúdo](./assets/other-tools/crxde-lite__debugging-content.png)
+![CRXDE Lite - Depurando Conteúdo](./assets/other-tools/crxde-lite__debugging-content.png)
 
-Quaisquer alterações feitas diretamente no SDK do AEM por meio do CRXDE Lite podem ser difíceis de rastrear e administrar. Conforme apropriado, garantir que as alterações feitas por meio do CRXDE Lite retornem aos pacotes de conteúdo mutável do projeto AEM (`ui.content`) e comprometido com o Git. Idealmente, todas as alterações de conteúdo de aplicativos se originam da base de código e fluem para o SDK do AEM por meio de implantações, em vez de fazer alterações diretamente no SDK do AEM por meio do CRXDE Lite.
+Quaisquer alterações feitas diretamente no SDK do AEM por meio do CRXDE Lite podem ser difíceis de rastrear e administrar. Conforme apropriado, verifique se as alterações feitas por meio do CRXDE Lite retornam aos pacotes de conteúdo mutáveis (`ui.content`) do projeto AEM e confirmadas no Git. Idealmente, todas as alterações de conteúdo de aplicativos se originam da base de código e fluem para o SDK do AEM por meio de implantações, em vez de fazer alterações diretamente no SDK do AEM por meio do CRXDE Lite.
 
 ### Depuração de controles de acesso
 
@@ -54,7 +54,7 @@ Para acessar o console Testar controle de acesso no CRXDE Lite, navegue até:
 
 + CRXDE Lite > Ferramentas > Testar controle de acesso ...
 
-![CRXDE Lite - Testar o controle de acesso](./assets/other-tools/crxde-lite__test-access-control.png)
+![CRXDE Lite - Testar Controle de Acesso](./assets/other-tools/crxde-lite__test-access-control.png)
 
 1. Usando o campo Caminho, selecione um Caminho JCR para avaliar
 1. Usando o campo Principal, selecione o usuário ou grupo para avaliar o caminho em relação a
@@ -63,10 +63,10 @@ Para acessar o console Testar controle de acesso no CRXDE Lite, navegue até:
 Os resultados são exibidos abaixo:
 
 + __Caminho__ reitera o caminho que foi avaliado
-+ __Principal__ reitera o usuário ou grupo cujo caminho foi avaliado
++ __Principal__ reitera o usuário ou grupo para o qual o caminho foi avaliado
 + __Principais__ lista todos os principais dos quais o principal selecionado faz parte.
    + Isso é útil para entender as associações de grupo transitivo que podem fornecer permissões por herança
-+ __Privilégios no caminho__ lista todas as permissões JCR que o principal selecionado tem no caminho avaliado
++ __Privilégios no Caminho__ lista todas as permissões JCR que a entidade de segurança selecionada tem no caminho avaliado
 
 ## Explicar consulta
 
@@ -77,13 +77,13 @@ Explicar a ferramenta baseada na Web Query no início rápido local do SDK do AE
 A Explicar consulta está localizada em:
 
 + Ferramentas > Diagnóstico > Desempenho da consulta > Guia Explicar consulta
-+ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) Guia Consulta > Explicar
++ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > guia Explicar consulta
 
 ## QueryBuilder Debugger
 
-![QueryBuilder Debugger](./assets/other-tools/query-debugger.png)
+![Depurador do QueryBuilder](./assets/other-tools/query-debugger.png)
 
-O QueryBuilder debugger é uma ferramenta baseada na Web que ajuda a depurar e entender consultas de pesquisa usando AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) sintaxe.
+O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda a depurar e entender consultas de pesquisa usando a sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) do AEM.
 
 O QueryBuilder Debugger está localizado em:
 

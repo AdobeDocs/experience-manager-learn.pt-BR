@@ -30,13 +30,13 @@ O AEM Sites fornece várias opções para publicar e desfazer a publicação de 
 O AEM Sites fornece vários métodos para publicar e desfazer a publicação de conteúdo, com base no fluxo de trabalho do autor.
 
 * Publicação da página atual pelo Editor de páginas do AEM Sites
-   * Publicar a página atual e permitir a seleção opcional de referências
+   * O Publish exibe a página atual e permite a seleção opcional de referências
    * Cancelar publicação da página atual
-* Publicação rápida pelo administrador do AEM Sites
+* Publish rápido do administrador do AEM Sites
    * Publicação com um clique das páginas selecionadas e publicação automática de todas as referências não publicadas
 * Gerenciar publicação do administrador do AEM Sites
    * Console robusto para o gerenciamento detalhado de publicação em massa e cancelamento da publicação de conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação das páginas de publicação](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Publicando Documentação de Páginas](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)

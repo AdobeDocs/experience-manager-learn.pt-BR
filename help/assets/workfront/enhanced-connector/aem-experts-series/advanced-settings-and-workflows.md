@@ -23,10 +23,10 @@ ht-degree: 0%
 
 # Configurações e fluxos de trabalho avançados
 
-![Série para especialistas em AEM](./assets/banner.png)
+![Série de especialistas em AEM](./assets/banner.png)
 
 Saiba mais sobre as configurações avançadas do conector aprimorado do Workfront para AEM e como configurar fluxos de trabalho e iniciadores avançados no AEM AEM para gerenciar a sincronização de dados entre o e o Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_Parte 4 de a [série especializada de quatro partes sobre o conector aprimorado do Workfront para Experience Manager](./overview.md)_
+_Parte quatro de uma [série especializada de quatro partes sobre o conector aprimorado do Workfront for Experience Manager](./overview.md)_

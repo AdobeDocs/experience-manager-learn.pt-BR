@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Configuração da origem do ativo com o Brand Portal
 
-*Este vídeo aborda o processo de configuração do fornecimento de ativos com a Brand Portal.*
+*Este vídeo aborda o processo de configuração da fonte de ativos com a Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

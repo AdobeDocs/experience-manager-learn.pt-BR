@@ -28,7 +28,7 @@ O AEM fornece três escopos:
 * Acesso off-line
 * Replicar
 
-Escopos OAuth extensíveis para AEM permitem que outros escopos personalizados sejam definidos. Por exemplo, um escopo personalizado pode ser desenvolvido e implantado no AEM, permitindo que um aplicativo móvel autorizado por meio do OAuth seja restrito à leitura, mas não à gravação de ativos.
+Os escopos OAuth extensíveis do AEM permitem que outros escopos personalizados sejam definidos. Por exemplo, um escopo personalizado pode ser desenvolvido e implantado no AEM, permitindo que um aplicativo móvel autorizado por meio do OAuth seja restrito à leitura, mas não à gravação de ativos.
 
 OAuth é o método preferido para autorizar um aplicativo cliente, pois usa um token de acesso em vez de exigir que as credenciais de um usuário do AEM sejam fornecidas a esse aplicativo.
 

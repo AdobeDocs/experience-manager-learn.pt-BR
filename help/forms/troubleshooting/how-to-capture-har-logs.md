@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Como capturar logs HAR (arquivo HTTP)
 
-*Este vídeo aborda as etapas para capturar logs HAR (arquivamento HTTP).*
+*Este vídeo mostra as etapas para capturar logs HAR (arquivo HTTP).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)

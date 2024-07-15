@@ -26,4 +26,4 @@ Um aplicativo conectado é uma estrutura que permite que um aplicativo externo s
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Crie uma conta na [Salesforce Developer Edition](https://developer.salesforce.com/signup) como as APIs REST são ativadas por padrão na edição do desenvolvedor.
+>Certifique-se de criar uma conta na [Salesforce Developer Edition](https://developer.salesforce.com/signup), pois as APIs REST estão habilitadas por padrão na edição do desenvolvedor.

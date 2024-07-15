@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como solucionar problemas de dependência com bibliotecas C++ no Designer
 
-*Este vídeo aborda as etapas para solucionar problemas de dependência com bibliotecas C++ no Designer.*
+*Este vídeo mostra as etapas para solucionar problemas de dependência com bibliotecas C++ no Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

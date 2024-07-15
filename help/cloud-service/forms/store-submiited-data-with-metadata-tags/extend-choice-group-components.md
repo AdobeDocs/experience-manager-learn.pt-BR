@@ -25,7 +25,7 @@ Os componentes principais do grupo de caixas de seleção, lista suspensa e bot�
 
 O seguinte .content.xml foi criado na pasta _cq_dialog.
 
-![drop-down-project-view](assets/drop-down-project-view.png)
+![exibição de projeto suspensa](assets/drop-down-project-view.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

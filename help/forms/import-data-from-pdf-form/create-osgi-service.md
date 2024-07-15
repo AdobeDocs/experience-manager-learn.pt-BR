@@ -63,7 +63,7 @@ public String getFormData(Document pdfForm) {
 }
 ```
 
-Veja a seguir a função de utilitário gravada para extrair o _**topmostSubForm**_ com os namespaces apropriados
+Esta é a função de utilitário gravada para extrair o _**topmostSubForm**_ com os namespaces apropriados
 
 ```java
 private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, String tagName) {

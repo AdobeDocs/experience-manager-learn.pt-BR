@@ -34,7 +34,7 @@ Como configurar um ambiente de desenvolvimento local para desenvolvimento do Edg
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Altere o diretório para o diretório do projeto que é um repositório Git feito a partir do [Placa perfurada AEM](https://github.com/adobe/aem-boilerplate) modelo.
+1. Altere o diretório para seu diretório de projeto, que é um repositório Git criado a partir do modelo [AEM](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git

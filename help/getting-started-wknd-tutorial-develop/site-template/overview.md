@@ -26,10 +26,10 @@ Saiba como usar uma abordagem low-code para criar seu primeiro site no Adobe Exp
 
 >[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
-* [Kit de interface do usuário do Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
-* [Modelo de site AEM](https://github.com/adobe/aem-site-template-basic)
+* [Kit de Interface do Usuário do Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
+* [Modelo de site do AEM](https://github.com/adobe/aem-site-template-basic)
 
-## Ambiente as a Cloud Service AEM {#environment}
+## Ambiente do AEM as a Cloud Service {#environment}
 
 As etapas deste tutorial ocorrerão em um ambiente Adobe Experience Manager as a Cloud Service. Verifique se você tem acesso administrativo ao ambiente AEM. É recomendável usar um [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) ao concluir este tutorial.
 
@@ -37,4 +37,4 @@ As etapas deste tutorial ocorrerão em um ambiente Adobe Experience Manager as a
 
 Um tutorial passo a passo aborda a implementação de um site AEM para uma marca fictícia de estilo de vida, a WKND, usando o recurso de Criação rápida de sites.
 
-O que você está esperando?! Inicie o tutorial navegando até o [Criar site](create-site.md) e saiba como gerar um novo projeto do Adobe Experience Manager usando um Modelo de site.
+O que você está esperando?! Inicie o tutorial navegando até o capítulo [Criar Site](create-site.md) e saiba como gerar um novo projeto do Adobe Experience Manager usando um Modelo de Site.

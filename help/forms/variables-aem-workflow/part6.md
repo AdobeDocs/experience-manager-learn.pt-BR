@@ -179,5 +179,5 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 ## Implante o pacote de amostra
 
-[Implantar o pacote de agente de log variável](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) usando o Felix web console.
+[Implante o pacote de agente de log variável](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) usando o Felix web console.
 Associe esse pacote a uma etapa do processo no fluxo de trabalho do AEM para registrar o valor da variável String e Document.

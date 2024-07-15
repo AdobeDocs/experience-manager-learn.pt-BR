@@ -39,7 +39,7 @@ Selecione o código-fonte e a ramificação Git apropriada
 Atualize suas alterações
 
 Executar o pipeline
-![run-pipeline](assets/run-pipeline.png)
+![executar-pipeline](assets/run-pipeline.png)
 
 Depois que o código for implantado, você deverá ver as alterações na instância do Cloud Service do AEM Forms.
 

@@ -29,5 +29,5 @@ Saiba como executar operações básicas de gerenciamento de página em uma pág
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editar a documentação do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Editando a Documentação do Conteúdo da Página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

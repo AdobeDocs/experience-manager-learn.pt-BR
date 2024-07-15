@@ -21,19 +21,19 @@ ht-degree: 0%
 
 # Exportar ativos
 
-Saiba como exportar ativos para seu computador local usando um script Node.js personalizável. Este script de exportação fornece um exemplo de como baixar programaticamente ativos do AEM usando [APIs HTTP do AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), com foco especificamente nas representações originais para garantir a mais alta qualidade. Ele foi projetado para replicar a estrutura de pastas do AEM Assets em sua unidade local, facilitando o backup ou a migração de ativos.
+Saiba como exportar ativos para seu computador local usando um script Node.js personalizável. Este script de exportação fornece um exemplo de como baixar programaticamente ativos do AEM usando [APIs HTTP do AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), com foco específico nas representações originais para garantir a mais alta qualidade. Ele foi projetado para replicar a estrutura de pastas do AEM Assets em sua unidade local, facilitando o backup ou a migração de ativos.
 
 O script baixa somente as representações originais do ativo, sem metadados associados, a menos que os metadados tenham sido incorporados ao ativo como XMP. Isso significa que qualquer informação descritiva, categorização ou tag armazenada no AEM, mas não integrada aos arquivos do ativo, não é incluída no download. Outras representações também podem ser baixadas modificando o script para incluí-las. Verifique se há espaço suficiente para armazenar os ativos exportados.
 
-Normalmente, o script é executado em relação ao AEM Author, no entanto, também pode ser executado em relação ao AEM Publish, desde que os endpoints da API HTTP do AEM Assets e as representações de ativos estejam acessíveis por meio do Dispatcher.
+O script geralmente é executado contra AEM Author, no entanto, também pode ser executado contra AEM Publish, desde que os endpoints da API HTTP do AEM Assets e as representações de ativos estejam acessíveis por meio do Dispatcher.
 
 Antes de executar o script, você deve configurá-lo com o URL da instância do AEM, as credenciais do usuário (token de acesso) e o caminho para a pasta que deseja exportar.
 
 ## Exportar script
 
-O script, gravado como um módulo JavaScript, faz parte de um projeto Node.js, pois tem uma dependência em `node-fetch`. Você pode [baixar o projeto como um arquivo zip](./assets/export/export-aem-assets-script.zip), ou copie o script abaixo em um projeto Node.js vazio do tipo `module`, e execute `npm install node-fetch` para instalar a dependência.
+O script, gravado como um módulo JavaScript, faz parte de um projeto Node.js, pois tem uma dependência em `node-fetch`. Você pode [baixar o projeto como um arquivo zip](./assets/export/export-aem-assets-script.zip) ou copiar o script abaixo em um projeto Node.js vazio do tipo `module` e executar `npm install node-fetch` para instalar a dependência.
 
-Esse script percorre a árvore de pastas do AEM Assets, baixando ativos e pastas para uma pasta local no computador. Ele usa o [API HTTP do AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para buscar a pasta e os dados do ativo, e baixa as representações originais dos ativos.
+Esse script percorre a árvore de pastas do AEM Assets, baixando ativos e pastas para uma pasta local no computador. Ele usa a [API HTTP do AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para buscar a pasta e os dados do ativo, e baixa as representações originais dos ativos.
 
 ```javascript
 // export-assets.js
@@ -243,7 +243,7 @@ console.timeEnd('Download AEM assets');
 
 Com o script baixado, atualize as variáveis de configuração na parte inferior do script.
 
-A variável `AEM_ACCESS_TOKEN` pode ser obtida utilizando as etapas do [Autenticação baseada em token para AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) tutorial. Geralmente, o token do desenvolvedor de 24 horas é suficiente, desde que a exportação leve menos de 24 horas para ser concluída e o usuário que gera o token tenha acesso de leitura aos ativos que serão exportados.
+O `AEM_ACCESS_TOKEN` pode ser obtido usando as etapas do tutorial [Autenticação baseada em token para o AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview). Geralmente, o token do desenvolvedor de 24 horas é suficiente, desde que a exportação leve menos de 24 horas para ser concluída e o usuário que gera o token tenha acesso de leitura aos ativos que serão exportados.
 
 ```javascript
 ...
@@ -270,7 +270,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 
 Execute o script usando Node.js para exportar os ativos para o computador local.
 
-Dependendo do número de ativos e de seus tamanhos, o script pode levar algum tempo para ser concluído. À medida que o script é executado, [registra o progresso](#output) ao console.
+Dependendo do número de ativos e de seus tamanhos, o script pode levar algum tempo para ser concluído. À medida que o script é executado, ele [registra o progresso](#output) no console.
 
 ```shell
 $ node export-assets.js
@@ -294,6 +294,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-Os ativos exportados podem ser encontrados na pasta local especificada na configuração `LOCAL_DOWNLOAD_FOLDER`. A estrutura de pastas espelha a estrutura de pastas do AEM Assets, com os ativos baixados nas subpastas apropriadas. Esses arquivos podem ser carregados em [provedores de armazenamento na nuvem compatíveis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), para [importação em massa](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) em outras instâncias do AEM ou para fins de backup.
+Os ativos exportados podem ser encontrados na pasta local especificada na configuração `LOCAL_DOWNLOAD_FOLDER`. A estrutura de pastas espelha a estrutura de pastas do AEM Assets, com os ativos baixados nas subpastas apropriadas. Esses arquivos podem ser carregados em [provedores de armazenamento na nuvem compatíveis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), para [importação em massa](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) para outras instâncias de AEM ou para fins de backup.
 
 ![Ativos exportados](./assets/export/exported-assets.png)

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Etapas para adicionar usuários do AEM Forms PDFG no Windows Server 2016.
 
-*Este vídeo aborda as etapas adicionais para adicionar um usuário PDFG do AEM Forms no Windows 2016.*
+*Este vídeo mostra as etapas adicionais para adicionar um usuário PDFG do AEM Forms no Windows 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335479?quality=12&learn=on)

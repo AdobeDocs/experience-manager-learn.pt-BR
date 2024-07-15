@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Inicie seu projeto aem-banking no IntelliJ.
 Crie um servlet simples para enviar os dados enviados para o arquivo de log. Verifique se o código está no projeto principal, conforme mostrado na captura de tela abaixo
-![create-servlet](assets/create-servlet.png)
+![criar-servlet](assets/create-servlet.png)
 
 ```java
 package com.aem.bankingapplication.core.servlets;
@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Criar manipulador de envio personalizado
 
-Crie sua ação de envio personalizada no `apps/bankingapplication` pasta da mesma forma que você criaria na [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para o propósito deste tutorial, crio uma pasta chamada SubmitToAEMervlet no `apps/bankingapplication` no repositório CRX.
+Crie sua ação de envio personalizada na pasta `apps/bankingapplication` da mesma forma que criaria nas [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para fins deste tutorial, crio uma pasta chamada SubmitToAEMServlet no nó `apps/bankingapplication` no repositório do CRX.
 
 O código a seguir no post.POST.jsp simplesmente encaminha a solicitação para o servlet montado em /bin/formstutorial. Este é o mesmo servlet que foi criado na etapa anterior
 
@@ -53,12 +53,12 @@ O código a seguir no post.POST.jsp simplesmente encaminha a solicitação para 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-No projeto AEM no IntelliJ, clique com o botão direito do mouse no `apps/bankingapplication` e selecione Novo | Empacote e digite SubmitToAEMervlet após o aplicativo apps.bankingna caixa de diálogo novo pacote. Clique com o botão direito do mouse no nó SubmitToAEMervlet e selecione repo | Obtenha o comando para sincronizar o projeto AEM com o repositório do servidor AEM.
+No projeto AEM no IntelliJ, clique com o botão direito do mouse na pasta `apps/bankingapplication` e selecione Novo | Empacote e digite SubmitToAEMervlet após o aplicativo apps.bankingna caixa de diálogo novo pacote. Clique com o botão direito do mouse no nó SubmitToAEMervlet e selecione repo | Obtenha o comando para sincronizar o projeto AEM com o repositório do servidor AEM.
 
 
 ## Configurar formulário adaptável
 
-Agora você pode configurar qualquer Formulário adaptável para enviar a esse manipulador de envio personalizado chamado **Enviar para Servlet AEM**
+Agora você pode configurar qualquer Formulário adaptável para enviar a este manipulador de envio personalizado chamado **Enviar ao AEM Servlet**
 
 ## Próximas etapas
 

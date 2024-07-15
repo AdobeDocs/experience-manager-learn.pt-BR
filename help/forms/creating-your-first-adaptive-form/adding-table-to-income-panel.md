@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Adicionaremos uma tabela ao painel Receita. Configure as linhas da tabela e use o editor de regras para calcular o total geral.
 
-**Adicionar e configurar o componente de tabela**
+**Adicionar e Configurar o Componente de Tabela**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
 
@@ -29,7 +29,7 @@ Adicionaremos uma tabela ao painel Receita. Configure as linhas da tabela e use 
 
 ## Tornar a tabela de renda dinâmica {#make-the-income-table-dynamic}
 
-**Verifique se você está no modo de edição. O botão de edição está localizado no lado superior direito do navegador.**
+**Verifique se você está no modo de edição. O botão Editar está localizado no canto superior direito do navegador.**
 
 * Por padrão, ao inserir uma tabela no Formulário adaptável, a tabela não é dinâmica, o que significa que não é possível adicionar novas linhas à tabela no tempo de execução.
 
@@ -48,4 +48,4 @@ Adicionaremos uma tabela ao painel Receita. Configure as linhas da tabela e use 
 
 ## Próximas etapas
 
-[Configurar o painel Ativos](./configuring-assets-panel.md)
+[Configurar o painel do Assets](./configuring-assets-panel.md)

@@ -21,29 +21,30 @@ ht-degree: 0%
 
 Extrair dados automaticamente de uma grande variedade de documentos emitidos pelo governo para preencher seus formulários adaptáveis.
 
-Há várias organizações que fornecem esse serviço e, desde que tenham APIs REST bem documentadas, é possível integrar facilmente ao AEM Forms usando o recurso de integração de dados. Para o propósito deste tutorial, usei [Analisador de ID](https://www.idanalyzer.com/) para demonstrar a extração de dados OCR de documentos carregados.
+Há várias organizações que fornecem esse serviço e, desde que tenham APIs REST bem documentadas, é possível integrar facilmente ao AEM Forms usando o recurso de integração de dados. Para fins deste tutorial, usei o [ID Analyzer](https://www.idanalyzer.com/) para demonstrar a extração de dados de OCR dos documentos carregados.
 
 As etapas a seguir foram seguidas para implementar a extração de dados de OCR com o AEM Forms usando o serviço do Analisador de ID.
 
 ## Criar conta de desenvolvedor
 
-Crie uma conta de desenvolvedor com [Analisador de ID](https://portal.idanalyzer.com/signin.html). Anote a chave de API. Essa chave é necessária para chamar as APIs REST do serviço do Analisador de ID.
+Crie uma conta de desenvolvedor com o [Analisador de ID](https://portal.idanalyzer.com/signin.html). Anote a chave de API. Essa chave é necessária para chamar as APIs REST do serviço do Analisador de ID.
 
 ## Criar arquivo Swagger/OpenAPI
 
 A Especificação de OpenAPI (antiga Especificação do Swagger) é um formato de descrição de API para APIs REST. Um arquivo OpenAPI permite descrever toda a API, incluindo:
 
 * Pontos de extremidade disponíveis (/users) e operações em cada ponto de extremidade (GET /users, POST /users)
-* Parâmetros de operação Entrada e saída para cada operação Métodos de autenticação
+* Parâmetros de operação Entrada e saída para cada operação
+Métodos de autenticação
 * Informações de contato, licença, termos de uso e outras informações.
 * As especificações da API podem ser escritas em YAML ou JSON. O formato é fácil de aprender e legível tanto para seres humanos quanto para máquinas.
 
-Para criar seu primeiro arquivo swagger/OpenAPI, siga o [Documentação da OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Para criar seu primeiro arquivo swagger/OpenAPI, siga a [documentação sobre OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > O AEM Forms é compatível com a especificação OpenAPI versão 2.0 (fka Swagger).
 
-Use o [editor swagger](https://editor.swagger.io/) para criar seu arquivo swagger para descrever as operações que enviam e verificam o código OTP enviado usando SMS. O arquivo swagger pode ser criado no formato JSON ou YAML. O arquivo Swagger completo pode ser baixado de [aqui](assets/drivers-license-swagger.zip)
+Use o [editor do swagger](https://editor.swagger.io/) para criar seu arquivo do swagger e descrever as operações que enviam e verificam o código OTP enviado por SMS. O arquivo swagger pode ser criado no formato JSON ou YAML. O arquivo Swagger completo pode ser baixado de [aqui](assets/drivers-license-swagger.zip)
 
 ## Considerações ao definir o arquivo swagger
 
@@ -80,13 +81,13 @@ O seguinte é suportado com uma referência à definição requestBody
 
 * [Arquivo Swagger de amostra para sua referência](assets/sample-swagger.json)
 
-## Criar fonte de dados
+## Criar Source de dados
 
-Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use o [arquivo swagger](assets/drivers-license-swagger.zip) para criar sua fonte de dados.
+Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar a fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use o [arquivo swagger](assets/drivers-license-swagger.zip) para criar sua fonte de dados.
 
 ## Criar modelo de dados do formulário
 
-A integração de dados do AEM Forms fornece uma interface intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados do formulário na fonte de dados criada na etapa anterior.
+A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados do formulário na fonte de dados criada na etapa anterior.
 
 ![fdm](assets/test-dl-fdm.PNG)
 
@@ -103,13 +104,13 @@ Integre as invocações POST do modelo de dados de formulário ao formulário ad
 
 Se quiser usar os ativos de amostra com sua chave de API, siga as seguintes etapas:
 
-* [Baixar a fonte de dados](assets/drivers-license-source.zip) e importar para AEM usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Baixar o modelo de dados do formulário](assets/drivers-license-fdm.zip) e importar para AEM usando [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Baixe a fonte de dados](assets/drivers-license-source.zip) e importe para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Baixar o modelo de dados de formulário](assets/drivers-license-fdm.zip) e importar para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Baixar a biblioteca do cliente](assets/drivers-license-client-lib.zip)
-* Baixe o formulário adaptável de exemplo [baixado aqui](assets/adaptive-form-dl.zip). Este formulário de amostra usa as invocações de serviço do modelo de dados de formulário fornecido como parte deste artigo.
-* Importe o formulário para o AEM do [Forms e interface do usuário de documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Abra o formulário no [modo de edição.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
+* Baixe o formulário adaptável de exemplo pode ser [baixado daqui](assets/adaptive-form-dl.zip). Este formulário de amostra usa as invocações de serviço do modelo de dados de formulário fornecido como parte deste artigo.
+* Importar o formulário para o AEM da [Interface do usuário do Forms e do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Abrir o formulário no modo de edição [nto.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Especifique sua Chave de API como o valor padrão no campo apikey e salve as alterações
 * Abra o editor de regras para o campo String Base 64. Observe a invocação do serviço quando o valor desse campo for alterado.
 * Salve o formulário
-* [Visualizar o formulário](http://localhost:4502/content/dam/formsanddocuments/driverslicenseandpassport/jcr:content?wcmmode=disabled), carregue a foto da frente da sua licença de motorista
+* [Visualize o formulário](http://localhost:4502/content/dam/formsanddocuments/driverslicenseandpassport/jcr:content?wcmmode=disabled), carregue a imagem frontal da sua licença de motorista

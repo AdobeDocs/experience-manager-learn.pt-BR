@@ -61,4 +61,4 @@ Para habilitar a realização de chamadas de POST para o endpoint AEM a partir d
 
 ![configuração de cors](assets/cors-settings.png)
 
-Consulte [compreensão do CORS com AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obter mais detalhes sobre as opções de configuração do CORS.
+Consulte [noções básicas sobre o CORS com AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obter mais detalhes sobre as opções de configuração do CORS.

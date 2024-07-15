@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como definir a expiração da sessão do token de logon do Oak
 
-*Este vídeo aborda as etapas para definir a expiração da sessão do token de logon do Oak.*
+*Este vídeo mostra as etapas para definir a expiração da sessão do token de logon do Oak.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)

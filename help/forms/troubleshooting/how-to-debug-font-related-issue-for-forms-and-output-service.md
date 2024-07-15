@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Como capturar materiais de apoio para depurar problemas relacionados a fontes com conversões de Forms e serviços de saída
 
-*Este vídeo aborda o processo de captura de materiais de apoio para depurar problemas relacionados às fontes com conversões de Forms e do serviço de saída .*
+*Este vídeo aborda o processo de captura de materiais de apoio para depurar problemas relacionados a Fontes com conversões de Forms e Serviço de saída.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

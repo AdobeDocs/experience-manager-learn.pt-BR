@@ -1,6 +1,6 @@
 ---
 title: Marcação com tags
-description: As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas dos ativos. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e analisem ativos e organizem ativos no AEM.
+description: As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas da Assets. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e analisem ativos e organizem ativos no AEM.
 feature: Asset Management
 version: Cloud Service
 jira: KT-4871
@@ -21,6 +21,6 @@ ht-degree: 3%
 
 # Marcação com tags
 
-As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas dos ativos. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e analisem ativos e organizem ativos no AEM.
+As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas da Assets. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e analisem ativos e organizem ativos no AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)

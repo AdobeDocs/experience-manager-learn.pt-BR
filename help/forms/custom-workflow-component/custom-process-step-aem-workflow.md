@@ -29,7 +29,8 @@ A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe aprop
 
 ### Criar classe que implementa WorkflowProcess
 
-Abra o projeto maven no IDE eclipse. Expandir **projectname** > **core** pasta. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;core&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
+Abra o projeto maven no IDE eclipse. Expanda a pasta **nomedoprojeto** > **núcleo**. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;core&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
 Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
 
@@ -147,5 +148,5 @@ O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta at
 
 ## Próximas etapas
 
-Crie seu [componente personalizado do fluxo de trabalho](./custom-workflow-component.md)
+Crie seu [componente de fluxo de trabalho personalizado](./custom-workflow-component.md)
 

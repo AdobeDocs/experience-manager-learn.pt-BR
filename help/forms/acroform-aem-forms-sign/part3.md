@@ -22,7 +22,7 @@ Esse pacote contém o fluxo de trabalho de amostra e a página html que permite 
 
 ## Configurar fluxo de trabalho
 
-1. [Abrir o modelo de fluxo de trabalho no modo de edição](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
+1. [Abra o Modelo de Fluxo de Trabalho no modo de edição](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html).
 2. Abra as propriedades de configuração da etapa MergeCrossData.
 3. Clique na guia Processo.
 4. Verifique se os argumentos que você está transmitindo são uma pasta válida no servidor.

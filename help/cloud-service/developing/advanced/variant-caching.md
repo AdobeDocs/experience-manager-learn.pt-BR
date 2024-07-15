@@ -1,5 +1,5 @@
 ---
-title: Armazenamento em cache de variantes de página com AEM as a Cloud Service
+title: Armazenamento em cache de variantes de página com o AEM as a Cloud Service
 description: Saiba como configurar e usar o AEM as a cloud service para suportar o armazenamento em cache de variantes de página.
 role: Architect, Developer
 topic: Development
@@ -19,19 +19,19 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Exemplo de casos de uso
 
-+ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e as opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
++ Qualquer provedor de serviços que ofereça um conjunto diferente de ofertas de serviço e as opções de preço correspondentes com base na localização geográfica do usuário e no cache de páginas com conteúdo dinâmico deve ser gerenciado na CDN e na Dispatcher.
 
-+ Um cliente de varejo tem lojas em todo o país e cada loja tem diferentes ofertas com base em onde está localizada, e o cache de páginas com conteúdo dinâmico deve ser gerenciado no CDN e no Dispatcher.
++ Um cliente de varejo tem lojas em todo o país e cada loja tem diferentes ofertas com base em onde está localizada, e o cache de páginas com conteúdo dinâmico deve ser gerenciado na CDN e no Dispatcher.
 
 ## Visão geral da solução
 
-+ Identifique a chave da variante e o número de valores que ela pode ter. No nosso exemplo, variamos de acordo com o estado dos EUA, portanto, o número máximo é 50. É pequeno o suficiente para não causar problemas com os limites de variante na CDN. [Revisar seção de limitações da variante](#variant-limitations).
++ Identifique a chave da variante e o número de valores que ela pode ter. No nosso exemplo, variamos de acordo com o estado dos EUA, portanto, o número máximo é 50. É pequeno o suficiente para não causar problemas com os limites de variante na CDN. [Revise a seção de limitações de variantes](#variant-limitations).
 
-+ O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ ao estado preferido do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
++ O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ para o estado preferido do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
 
-+ Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível da CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`) que é transmitido ao dispatcher.
++ Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível de CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`), que é passado para o Dispatcher.
 
-+ Uma regra de regravação do Apache modifica o caminho da solicitação para incluir o valor do cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que a Publicação do AEM forneça conteúdo diferente com base no seletor e no Dispatcher para armazenar em cache uma página por variante.
++ Uma regra de regravação do Apache modifica o caminho da solicitação para incluir o valor do cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish forneça conteúdo diferente com base no seletor e no dispatcher, para armazenar em cache uma página por variante.
 
 + A resposta enviada pelo AEM Dispatcher deve conter um cabeçalho de resposta HTTP `Vary: x-aem-variant`. Isso instrui o CDN a armazenar cópias de cache diferentes para valores de cabeçalho diferentes.
 
@@ -41,7 +41,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Fluxo de solicitação HTTP
 
-![Fluxo de solicitação de cache variante](./assets/variant-cache-request-flow.png)
+![Fluxo de Solicitação de Cache Variante](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
@@ -49,13 +49,13 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Uso
 
-1. Para demonstrar o recurso, usaremos [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)Como exemplo, a implementação do.
+1. Para demonstrar o recurso, usaremos como exemplo a implementação do [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
 
-1. Implementar um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) no AEM para definir `x-aem-variant` cookie na resposta HTTP, com um valor de variante.
+1. Implemente um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) no AEM para definir o cookie `x-aem-variant` na resposta HTTP, com um valor de variante.
 
-1. CDN do AEM transforma automaticamente `x-aem-variant` cookie em um cabeçalho HTTP de mesmo nome.
+1. A CDN do AEM transforma automaticamente o cookie `x-aem-variant` em um cabeçalho HTTP de mesmo nome.
 
-1. Adicione uma regra mod_rewrite do Apache Web Server ao `dispatcher` projeto, que modifica o caminho da solicitação para incluir o seletor de variante.
+1. Adicione uma regra mod_rewrite do Apache Web Server ao projeto `dispatcher`, que modifica o caminho da solicitação para incluir o seletor de variantes.
 
 1. Implante o filtro e reescreva as regras usando o Cloud Manager.
 
@@ -63,7 +63,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Amostras de código
 
-+ Exemplo de SlingServletFilter para definir `x-aem-variant` cookie com um valor no AEM.
++ SlingServletFilter de exemplo para definir o cookie `x-aem-variant` com um valor no AEM.
 
   ```
   package com.adobe.aem.guides.wknd.core.servlets.filters;
@@ -120,7 +120,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
   }
   ```
 
-+ Exemplo de regra de regravação no __dispatcher/src/conf.d/rewrite.rules__ arquivo que é gerenciado como código-fonte no Git e implantado usando o Cloud Manager.
++ Exemplo de regra de regravação no arquivo __dispatcher/src/conf.d/rewrite.rules__, que é gerenciado como código-fonte no Git e implantado usando o Cloud Manager.
 
   ```
   ...
@@ -134,7 +134,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Limitações da variante
 
-+ O AEM CDN pode gerenciar até 200 variações. Isso significa que `x-aem-variant` pode ter até 200 valores únicos. Para obter mais informações, consulte [Limites de configuração da CDN](https://docs.fastly.com/en/guides/resource-limits).
++ A CDN do AEM pode gerenciar até 200 variações. Isso significa que o cabeçalho `x-aem-variant` pode ter até 200 valores únicos. Para obter mais informações, reveja os [limites de configuração da CDN](https://docs.fastly.com/en/guides/resource-limits).
 
 + Tenha cuidado para garantir que a chave de variante escolhida nunca exceda esse número.  Por exemplo, uma ID de usuário não é uma boa chave, pois facilmente excederia 200 valores para a maioria dos sites, enquanto os estados/territórios em um país são mais adequados se houver menos de 200 estados nesse país.
 

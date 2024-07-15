@@ -19,9 +19,9 @@ ht-degree: 0%
 # Costura XDP usando o serviço de montagem
 
 Este artigo fornece os ativos para demonstrar a capacidade de compilar documentos xdp usando o serviço de montagem.
-O código jsp a seguir foi gravado para inserir um subformulário chamado **endereço** de um documento xdp chamado address.xdp em um ponto de inserção chamado **endereço** no documento master.xdp. O xdp resultante foi salvo na pasta raiz da instalação do AEM.
+O código jsp a seguir foi gravado para inserir um subformulário chamado **endereço** de um documento xdp chamado endereço.xdp em um ponto de inserção chamado **endereço** no documento master.xdp. O xdp resultante foi salvo na pasta raiz da instalação do AEM.
 
-O serviço do Assembler depende de documentos DDX válidos para descrever a manipulação de documentos PDF. Você pode consultar a [Documento de referência DDX aqui](assets/ddxRef.pdf).A página 40 tem informações sobre a compilação xdp.
+O serviço do Assembler depende de documentos DDX válidos para descrever a manipulação de documentos PDF. Consulte o [documento de referência do DDX aqui](assets/ddxRef.pdf).A página 40 tem informações sobre a compilação xdp.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -53,7 +53,7 @@ O serviço do Assembler depende de documentos DDX válidos para descrever a mani
     finalXDP.copyToFile(new java.io.File("stitched.xdp"));
 ```
 
-O arquivo DDX para inserir fragmentos em outro xdp está listado abaixo. O DDX insere o subformulário  **endereço** de address.xdp no ponto de inserção chamado **endereço** no master.xdp. O documento resultante chamado **stitched.xdp** é salvo no sistema de arquivos.
+O arquivo DDX para inserir fragmentos em outro xdp está listado abaixo. O DDX insere o subformulário **address** de address.xdp no ponto de inserção chamado **address** em master.xdp. O documento resultante denominado **stitched.xdp** foi salvo no sistema de arquivos.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -68,19 +68,21 @@ O arquivo DDX para inserir fragmentos em outro xdp está listado abaixo. O DDX i
 
 Para que esse recurso funcione no servidor AEM
 
-* Baixar [Pacote de compilação XDP](assets/xdp-stitching.zip) ao seu sistema local.
-* Faça upload e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Extrair o conteúdo deste arquivo zip](assets/xdp-and-ddx.zip) para obter os arquivos xdp e DDX de exemplo
+* Baixe o [pacote de compilação XDP](assets/xdp-stitching.zip) no sistema local.
+* Carregue e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Extraia o conteúdo deste arquivo zip](assets/xdp-and-ddx.zip) para obter os arquivos xdp e DDX de exemplo
 
-**Depois de instalar o pacote, você terá que incluir na lista de permissões os seguintes URLs no Filtro CSRF do Adobe Granite.**
+incluir na lista de permissões **Depois de instalar o pacote, você terá que copiar os seguintes URLs no Filtro CSRF do Adobe Granite.**
 
 1. Siga as etapas mencionadas abaixo para incluir na lista de permissões os caminhos mencionados acima.
-1. [Fazer logon no configMgr](http://localhost:4502/system/console/configMgr)
+1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
 1. Pesquisar por filtro CSRF do Adobe Granite
 1. Adicione o seguinte caminho nas seções excluídas e salve `/content/AemFormsSamples/assemblerservice`
 1. Procure por &quot;Sling Referrer Filter&quot;
-1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste) Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor. Instale o aplicativo Postman no sistema.
-Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação http://localhost:4502/content/AemFormsSamples/assemblerservice.html
+1. Marque a caixa de seleção &quot;Permitir vazio&quot;. (Essa configuração deve ser somente para fins de teste)
+Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor. Instale o aplicativo Postman no sistema.
+Inicie o aplicativo e insira o seguinte URL para testar a API de dados de exportação
+http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 
 Forneça os seguintes parâmetros de entrada, conforme especificado na captura de tela. Você pode usar os documentos de amostra baixados anteriormente,
 ![xdp-stitch-postman](assets/xdp-stitching-postman.png)

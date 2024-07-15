@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Conteúdo localizado com AEM Headless
 
-O AEM fornece uma [Estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo AEM, como Páginas, Fragmentos de experiência, Ativos e Forms. Uma vez [o conteúdo headless foi traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR)e publicado, está pronto para ser consumido por aplicativos headless.
+O AEM fornece uma [estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo AEM, como Páginas, Fragmentos de experiência, Assets e Forms. Depois que o conteúdo [headless for traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR) e publicado, ele estará pronto para consumo por aplicativos headless.
 
-## Estrutura da pasta de ativos{#assets-folder-structure}
+## Estrutura de pastas do Assets{#assets-folder-structure}
 
-Verifique se os Fragmentos de conteúdo localizados no AEM seguem o [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Verifique se os Fragmentos de conteúdo localizados no AEM seguem a [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
-![Pastas localizadas de ativos do AEM](./assets/localized-content/asset-folders.jpg)
+![Pastas de ativos AEM localizadas](./assets/localized-content/asset-folders.jpg)
 
-As pastas de local devem ser irmãs e o nome da pasta, em vez do título, deve ser válido [Código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) que representa o local do conteúdo contido na pasta.
+As pastas de localidade devem ser irmãs e o nome da pasta, em vez do título, deve ser um [código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) válido representando a localidade do conteúdo contido na pasta.
 
 O código de localidade também é o valor usado para filtrar os fragmentos de conteúdo retornados pela consulta do GraphQL.
 
@@ -39,7 +39,7 @@ O código de localidade também é o valor usado para filtrar os fragmentos de c
 
 ## Consulta persistente do GraphQL
 
-O AEM fornece uma `_locale` Filtro do GraphQL que filtra automaticamente o conteúdo por código de localidade. Por exemplo, consultar todas as aventuras em inglês no [Projeto do site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definido como:
+O AEM fornece um filtro do GraphQL `_locale` que filtra automaticamente o conteúdo por código de localidade. Por exemplo, a consulta de todas as aventuras em inglês no [projeto do Site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definida como:
 
 ```graphql
 query($locale: String!) {
@@ -52,19 +52,19 @@ query($locale: String!) {
 }
 ```
 
-A variável `$locale` variável usada no `_locale` O filtro exige o código de localidade (por exemplo, `en`, `en_us`ou `de`) conforme especificado no [Convenção de localização da base de pastas de ativos do AEM](#assets-folder-structure).
+A variável `$locale` usada no filtro `_locale` requer o código de localidade (por exemplo `en`, `en_us` ou `de`) conforme especificado em [convenção de localização da pasta de ativos do AEM](#assets-folder-structure).
 
 ## Exemplo do React
 
-Vamos criar um aplicativo React simples que controla qual conteúdo Adventure consultar do AEM com base em um seletor de localidade usando o `_locale` filtro.
+Vamos criar um aplicativo React simples que controla qual conteúdo Adventure consultar do AEM com base em um seletor de localidade usando o filtro `_locale`.
 
-Quando __Inglês__ é selecionado no seletor de local e Fragmentos de conteúdo de aventura em inglês, em `/content/dam/wknd/en` são retornados, quando __Espanhol__ estiver selecionada, depois Fragmentos de conteúdo em espanhol em `/content/dam/wknd/es`e assim por diante.
+Quando __Inglês__ é selecionado no seletor de localidades, os Fragmentos de Conteúdo de Aventura em Inglês `/content/dam/wknd/en` são retornados, quando __Espanhol__ é selecionado, os Fragmentos de Conteúdo em Espanhol `/content/dam/wknd/es` e assim por diante.
 
-![Aplicativo de exemplo React localizado](./assets/localized-content/react-example.png)
+![Aplicativo de exemplo localizado do React](./assets/localized-content/react-example.png)
 
 ### Criar um `LocaleContext`{#locale-context}
 
-Primeiro, crie um [Contexto do React](https://reactjs.org/docs/context.html) para permitir que o local seja usado nos componentes do aplicativo React.
+Primeiro, crie um [Contexto do React](https://reactjs.org/docs/context.html) para permitir que a localidade seja usada nos componentes do aplicativo React.
 
 ```javascript
 // src/LocaleContext.js
@@ -81,9 +81,9 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### Criar um `LocaleSwitcher` Componente do React{#locale-switcher}
+### Criar um componente React `LocaleSwitcher`{#locale-switcher}
 
-Em seguida, crie um componente React do alternador de local que defina como [ContextoLocal](#locale-context) para a seleção do usuário.
+Em seguida, crie um componente React do alternador de local que defina o valor [LocaleContext](#locale-context) para a seleção do usuário.
 
 Esse valor de localidade é usado para direcionar as consultas do GraphQL, garantindo que elas retornem apenas o conteúdo correspondente à localidade selecionada.
 
@@ -107,13 +107,13 @@ export default function LocaleSwitcher() {
 }
 ```
 
-### Consultar conteúdo usando o `_locale` filtro{#adventures}
+### Consultar conteúdo usando o filtro `_locale`{#adventures}
 
-O componente Aventuras consulta o AEM para todas as aventuras por localidade e lista seus títulos. Isso é feito passando o valor do local armazenado no contexto do React, para a consulta usando o `_locale` filtro.
+O componente Aventuras consulta o AEM para todas as aventuras por localidade e lista seus títulos. Isso é feito passando o valor da localidade armazenado no contexto do React, para a consulta usando o filtro `_locale`.
 
 Essa abordagem pode ser estendida para outras consultas em seu aplicativo, garantindo que todas as consultas incluam apenas o conteúdo especificado pela seleção de localidade de um usuário.
 
-A consulta ao AEM é executada no gancho React personalizado [getAdventuresByLocale, descrito com mais detalhes na documentação do Querying AEM GraphQL](./aem-headless-sdk.md).
+A consulta em relação ao AEM é executada no gancho personalizado React [getAdventuresByLocale, descrito com mais detalhes na documentação do Querying AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
@@ -139,9 +139,9 @@ export default function Adventures() {
 }
 ```
 
-### Defina o `App.js`{#app-js}
+### Definir o `App.js`{#app-js}
 
-Por último, agrupe-o embrulhando o aplicativo React com o `LanguageContext.Provider` e definindo o valor do local. Isso permite que os outros componentes do React, [LocaleSwitcher](#locale-switcher), e [Aventuras](#adventures) para compartilhar o estado de seleção de local.
+Por fim, junte tudo isso encapsulando o aplicativo React com o `LanguageContext.Provider` e definindo o valor de localidade. Isso permite que os outros componentes do React, [LocaleSwitcher](#locale-switcher) e [Adventures](#adventures) compartilhem o estado de seleção de localidade.
 
 ```javascript
 // src/App.js

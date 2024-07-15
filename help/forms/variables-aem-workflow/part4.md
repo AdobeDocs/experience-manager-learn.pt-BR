@@ -66,19 +66,19 @@ A seguir estão os dados do envio do formulário adaptável. O formulário adapt
 
 Para inicializar a variável ArrayList da string de subtipo, você pode usar o modo de mapeamento JSON Dot Notation ou XPath. A captura de tela a seguir mostra como preencher uma variável ArrayList chamada CustomRoutes usando a notação JSON Dot. Verifique se você está apontando para um elemento em um objeto de matriz, como mostrado na captura de tela abaixo. Estamos preenchendo a ArrayList CustomRoutes com os nomes do objeto de matriz managerchain.
 A ArrayList CustomRoutes é então usada para preencher as Rotas no componente AssignTask
-![customroute](assets/arraylist.jpg)
+![rotas personalizadas](assets/arraylist.jpg)
 Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos dados enviados, as Rotas do componente AssignTask são preenchidas usando a variável CustomRoutes. A captura de tela abaixo mostra os roteiros personalizados em uma AssignTask
 ![asingtask](assets/customactions.jpg)
 
 Para testar esse fluxo de trabalho em seu sistema, siga as etapas a seguir
 
 * Baixe e salve o arquivo ArrayListVariable.zip no sistema de arquivos
-* [Importar o arquivo zip](assets/arraylistvariable.zip) uso do gerenciador de pacotes AEM
-* [Abra o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
+* [Importe o arquivo zip](assets/arraylistvariable.zip) usando o Gerenciador de Pacotes AEM
+* [Abrir o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Insira algumas despesas e os nomes dos 2 gerentes
 * Clique no botão enviar
 * [Abra sua caixa de entrada](http://localhost:4502/aem/inbox)
 * Você deve ver uma nova tarefa chamada &quot;Atribuir ao administrador de despesas&quot;
 * Abrir o formulário associado à tarefa
 * Você deve ver duas rotas personalizadas com os nomes do gerente
-  [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Esse fluxo de trabalho usa a variável ArrayList, a variável do tipo JSON e o editor de regras no componente Or-Split
+  [Explore o ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Este fluxo de trabalho usa a variável ArrayList, a variável do tipo JSON e o editor de regras no componente Or-Split

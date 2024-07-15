@@ -34,7 +34,7 @@ Os dados de entrada para o endpoint restante associado ao modelo de dados de for
 ![fdm-string-array](assets/string-array-fdm.png)
 
 Passamos o caminho do objeto JSON e o nome do elemento para a etapa do processo. O código na etapa de processo substitui os valores separados por vírgula do elemento em uma matriz de cadeias de caracteres.
-![etapa do processo](assets/create-string-array.png)
+![etapa-processo](assets/create-string-array.png)
 
 >[!NOTE]
 >
@@ -142,4 +142,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-O pacote de amostra pode ser [baixado aqui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+O pacote de exemplo pode ser [baixado daqui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

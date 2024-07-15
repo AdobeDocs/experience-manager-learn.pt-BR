@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Este artigo explica as etapas necessárias para inserir dados na lista do SharePoint usando a etapa invocar FDM no fluxo de trabalho AEM.
 
-Este artigo supõe que você tenha [formulário adaptável configurado com êxito para enviar dados à lista do SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artigo supõe que você tenha [configurado com êxito um formulário adaptável para enviar dados à lista do SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 
 ## Criar um modelo de dados de formulário com base na fonte de dados da lista do SharePoint
@@ -55,7 +55,7 @@ Os dados enviados estão no formato a seguir. Precisamos extrair o objeto Contac
 ```
 
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
+* ![mapear-parâmetros-entrada](assets/fdm-insert-2.png)
 
 
 ## Formulário adaptável baseado em componentes de base
@@ -89,14 +89,14 @@ Os dados enviados estão no formato a seguir. Extraia o objeto JSON ContactUS us
 }
 ```
 
-![foundation-based-form](assets/foundation-based-form.png)
+![formulário baseado em fundação](assets/foundation-based-form.png)
 
 ## Configurar o formulário adaptável para acionar o fluxo de trabalho do AEM
 
 * Crie o formulário adaptável usando o Modelo de dados de formulário criado na etapa anterior.
 * Arraste e solte alguns campos da fonte de dados no formulário.
 * Configure a ação de envio do formulário conforme mostrado abaixo
-* ![ação de envio](assets/configure-af.png)
+* ![ação-envio](assets/configure-af.png)
 
 
 
