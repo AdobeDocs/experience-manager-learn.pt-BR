@@ -10,31 +10,14 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 1%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
-# Configurar o Data Source
-
-A Integração de dados do AEM Forms permite configurar e conectar-se a diferentes fontes de dados. Os seguintes tipos são prontos para uso. No entanto, com um pouco de personalização, também é possível integrar o a outras fontes de dados.
-
-1. Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e RDBMS de Oracle
-1. Perfil de usuário AEM
-1. Serviços Web RESTful
-1. Serviços da Web com base em SOAP
-1. Serviços OData
-
-Para a integração do AEM Forms com o Marketo, estamos usando os serviços Web RESTful. A primeira etapa da integração é configurar uma fonte de dados [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Use o arquivo Swagger fornecido como parte deste tutorial. A captura de tela a seguir mostra as propriedades importantes que precisam ser especificadas durante a configuração da fonte de dados.
-![fonte de dados](assets/datasource.png)
-
-O &quot;marketo.json&quot; é o arquivo swagger e é fornecido como parte dos ativos deste tutorial.
-O Host de propriedade é específico para sua instância do Marketo.
-O Tipo de autenticação é personalizado e a Implementação de autenticação deve corresponder ao &quot;AemForms With Marketo&quot;. (A menos que você tenha alterado isso no código).
-
-## Criar modelo de dados do formulário
+# Criar modelo de dados do formulário
 
 Depois de configurar a fonte de dados, a próxima etapa é criar um Modelo de dados de formulário com base na fonte de dados configurada na etapa anterior. Para criar o modelo de dados de formulário, siga as seguintes etapas:
 

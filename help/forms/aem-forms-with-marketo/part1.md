@@ -11,9 +11,9 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,6 @@ A primeira etapa na integração do Marketo com o AEM Forms é obter as credenci
 1. client_id
 1. client_secret
 1. identity_endpoint
-1. URL de autenticação
 
 [Siga a documentação oficial do Marketo para obter as propriedades mencionadas acima.](https://developers.marketo.com/rest-api/) Como alternativa, você também pode contatar o administrador da sua instância do Marketo.
 

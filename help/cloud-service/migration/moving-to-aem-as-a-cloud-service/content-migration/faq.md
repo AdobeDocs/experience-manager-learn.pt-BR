@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Sim, é possível, mas exige um planejamento cuidadoso em relação a:
    + Verifique se é aceitável migrar todos os ativos como parte de um conjunto de migração e depois trazer os locais que os estão usando em fases
 + No estado atual, o processo de assimilação do autor torna a instância do autor indisponível para criação de conteúdo, mesmo que o nível de publicação ainda possa servir o conteúdo
    + Isso significa que, até que a assimilação seja concluída no autor, as atividades de criação de conteúdo serão congeladas
-+ Os usuários não são mais migrados, embora os grupos sejam
++ Os usuários não são mais migrados, mas os grupos são.
 
 Revise o processo de extração e assimilação complementar conforme documentado antes de planejar as migrações.
 
