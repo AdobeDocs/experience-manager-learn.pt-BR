@@ -12,9 +12,9 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,6 @@ Para concluir este tutorial, você precisa:
 
 - [Projeto do Adobe Developer Console configurado para AEM Eventos](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
->[!IMPORTANT]
->
->O AEM as a Cloud Service Eventing só está disponível para usuários registrados no modo de pré-lançamento. Para habilitar eventos de AEM no seu ambiente AEM as a Cloud Service, entre em contato com a [equipe de eventos de AEM](mailto:grp-aem-events@adobe.com).
 
 ## Acessar webhook
 

@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -68,6 +68,16 @@ Selecione o nó ``zip`` e defina suas propriedades conforme mostrado abaixo.
 
 Selecione o nó ``state`` e defina suas propriedades conforme mostrado abaixo. Observe o fieldType do estado - ele está definido como uma lista suspensa
 ![estado](assets/state.png)
+
+## Definir valores padrão para o campo de estado
+
+Selecione o nó ``state`` e adicione as seguintes propriedades.
+
+| Nome | Tipo | Valor |
+|----------|----------|---------------------|
+| enum | Cadeia de caracteres[] | CA,NY |
+| enumName | Cadeia de caracteres[] | Califórnia, Nova York |
+
 
 O componente de bloco de endereço final terá esta aparência
 

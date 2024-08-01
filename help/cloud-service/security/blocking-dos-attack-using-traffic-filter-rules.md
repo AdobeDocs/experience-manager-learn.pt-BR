@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ Vamos analisar algumas medidas adicionais e recomendadas que os clientes podem t
 - Configure **alertas** sobre regras de filtro de limite de taxa por meio de uma &quot;ação de alerta&quot; para que, quando a regra for acionada, uma notificação da Central de Ações seja enviada.
 - Aumente a cobertura do cache declarando **solicitar transformações** para ignorar os parâmetros de consulta.
 
->[!NOTE]
->
->O recurso [alertas da regra de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) ainda não foi lançado. Para obter acesso através do programa de adoção antecipada, envie um email para **<aemcs-waf-adopter@adobe.com>**.
-
 ### Variações das regras de tráfego de limite de taxa {#rate-limit-variations}
 
 Há duas variações de regras de tráfego de limite de taxa:
@@ -72,7 +68,6 @@ Como mencionado anteriormente, o Adobe por padrão bloqueia o tráfego na CDN qu
 Idealmente, você configuraria as regras antes de entrar em produção. Na prática, muitas organizações declaram regras reativamente apenas uma vez alertadas de um pico de tráfego, indicando um provável ataque.
 
 O Adobe envia um alerta de pico de tráfego na origem como uma [Notificação do Centro de Ações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) quando um limite padrão de tráfego de um único endereço IP é excedido, para um determinado PoP. Se você recebeu esse alerta, é recomendável configurar uma regra de filtro de tráfego de limite de taxa. Esse alerta padrão é diferente dos alertas que devem ser ativados explicitamente pelos clientes ao definir as regras de filtro de tráfego, sobre as quais você aprenderá em uma seção futura.
-
 
 ## Análise de padrões de tráfego {#analyze-traffic}
 
