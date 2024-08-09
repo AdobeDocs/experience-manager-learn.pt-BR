@@ -11,9 +11,9 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -49,17 +49,19 @@ $ mvn clean package
 
 ## Implantar artefatos de AEM usando o plug-in AEM-RDE
 
-Usando o comando `aem:rde:install`, vamos implantar vários artefatos de AEM.
+Primeiro, verifique se você tem o [último `aio` módulo CLI instalado](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+
+Em seguida, use o comando `aio aem:rde:install` para implantar vários artefatos de AEM. Agora que você deve
 
 ### Implantar pacotes `all` e `dispatcher`
 
 Um ponto de partida comum é primeiro implantar os pacotes `all` e `dispatcher` executando os comandos a seguir.
 
 ```shell
-# Install the 'all' package
+# Install the 'all' content package (zip file)
 $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
 
-# Install the 'dispatcher' zip
+# Install the 'dispatcher' deployment artifact (zip file)
 $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
 ```
 
@@ -94,12 +96,13 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
    ...
    ```
 
-1. Verifique as alterações no AEM-SDK local executando a compilação maven ou sincronizando arquivos individuais.
+1. Verifique as alterações no SDK AEM local executando a compilação do Maven ou sincronizando arquivos individuais.
 
-1. Implante as alterações no RDE por meio do pacote `ui.apps` ou implantando a caixa de diálogo individual e os arquivos HTL.
+1. Implante as alterações no RDE por meio do pacote `ui.apps` ou implantando a caixa de diálogo individual e os arquivos HTL:
 
    ```shell
    # Using 'ui.apps' package
+   
    $ cd ui.apps
    $ mvn clean package
    $ aio aem:rde:install target/aem-guides-wknd.ui.apps-2.1.3-SNAPSHOT.zip
