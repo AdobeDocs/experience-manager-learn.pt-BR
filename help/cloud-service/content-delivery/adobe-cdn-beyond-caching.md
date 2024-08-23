@@ -1,0 +1,106 @@
+---
+title: Adobe CDN - Recursos avançados além do cache
+description: Saiba mais sobre recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, páginas de erro de CDN e muito mais.
+version: Cloud Service
+feature: Website Performance, CDN Cache
+topic: Architecture, Performance, Content Management
+role: Developer, Architect, User, Leader
+level: Beginner
+doc-type: Article
+duration: 0
+last-substantial-update: 2024-08-21T00:00:00Z
+jira: KT-15123
+thumbnail: KT-15123.jpeg
+source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
+
+---
+
+
+# Adobe CDN - Recursos avançados além do cache
+
+Saiba mais sobre recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, páginas de erro de CDN e muito mais.
+
+Além do armazenamento em cache de conteúdo, o Adobe CDN oferece vários recursos avançados que podem ajudar a otimizar o desempenho do seu site. Esses recursos incluem:
+
+- Configuração do tráfego no CDN
+- Configuração de credenciais e autenticação da CDN
+- Páginas de erro da CDN
+
+Estes recursos são do **autoatendimento**. Configurado no arquivo `cdn.yaml` do seu projeto AEM e implantado usando o pipeline de configuração do Cloud Manager.
+
+## Configuração do tráfego no CDN
+
+Vamos entender os principais recursos relacionados à _Configuração do tráfego na CDN_:
+
+- **Prevenção de ataques de DoS:** o CDN de Adobe absorve ataques de DoS na rede
+camada, impedindo-os de chegar ao servidor de origem.
+- **Limitação de taxa:** para proteger seu servidor de origem de ser sobrecarregado com muitas solicitações, você pode configurar a limitação de taxa no CDN.
+- **Firewall do Aplicativo Web (WAF):** O WAF protege seu site contra vulnerabilidades comuns de aplicativos Web, como injeção de SQL, script entre sites e muito mais. A licença de Segurança aprimorada ou de Proteção WAF-DDoS é necessária para usar esse recurso.
+- **Transformação de solicitação:** modifique solicitações de entrada, como definir ou remover cabeçalhos, modificar parâmetros de consulta, cookies e muito mais.
+- **Transformação de resposta:** modifique as respostas de saída, como definir ou remover cabeçalhos.
+- **Seleção de origem:** roteia o tráfego para servidores de origem diferentes (Adobe e não Adobe) com base na URL da solicitação.
+- **Redirecionamento de URL:** Redirecione solicitações (HTTP 301/302) para uma URL absoluta ou relativa diferente.
+
+## Configuração de credenciais e autenticação da CDN
+
+Vamos entender os principais recursos relacionados a _Configuração de credenciais e autenticação de CDN_:
+
+- **Token da API de Limpeza**: permite que você crie sua própria chave de limpeza para limpar um único grupo ou todos os recursos do cache.
+- **Autenticação Básica**: um mecanismo de autenticação leve quando você deseja restringir o acesso ao seu site ou a uma parte dele. Necessário principalmente como parte de vários processos de revisão antes de entrar em funcionamento.
+- **Validação do cabeçalho HTTP**: usada quando uma CDN gerenciada pelo cliente está roteando o tráfego para a CDN Adobe. O CDN do Adobe valida a solicitação de entrada com base no valor do cabeçalho `X-AEM-Edge-Key`.
+Permite criar seu próprio valor para o cabeçalho `X-AEM-Edge-Key`.
+
+## Páginas de erro da CDN
+
+Vamos entender os principais recursos relacionados às _páginas de erro da CDN_:
+
+- **Páginas de erro com marca**: exiba uma página de erro com marca para seus usuários no _cenário improvável_ quando o CDN do Adobe não conseguir acessar seu servidor de origem.
+
+## Como implementar o
+
+A implementação desses recursos avançados envolve duas etapas:
+
+1. **Atualizar arquivo de configuração da CDN**: atualize o arquivo `cdn.yaml` no projeto AEM com as configurações necessárias. As configurações são adicionadas como regras e seguem uma sintaxe de regra. A regra tem três componentes principais: `name`, `when` e `action`.
+
+2. **Implantar arquivo de configuração CDN**: implante o arquivo `cdn.yaml` atualizado usando o pipeline de configuração do Cloud Manager. Para obter mais informações, consulte [Implantar regras por meio do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+
+### Exemplo
+
+No exemplo abaixo, o site WKND de exemplo está configurado para redirecionar a URL `/top3` para `/us/en/top3.html`.
+
+```yaml
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  experimental_redirects:
+    rules:
+      - name: redirect-top3-adventures
+        when: { reqProperty: path, equals: "/top3" }
+        action:
+          type: redirect
+          status: 302
+          location: /us/en/top3.html
+```
+
+## Recursos adicionais
+
+[Protegendo sites com regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
+
+[Configurar e implantar a regra CDN de validação do Cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)
+
+[Como limpar o cache da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)
+
+[Configurando o tráfego na CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors)
+
+[Configurando Credenciais e Autenticação da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+
+[Configurando Páginas de Erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+
+
+
+
