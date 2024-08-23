@@ -1,6 +1,6 @@
 ---
 title: Adobe CDN - Recursos avançados além do cache
-description: Saiba mais sobre recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, páginas de erro de CDN e muito mais.
+description: Saiba mais sobre os recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Adobe CDN - Recursos avançados além do cache
 
-Saiba mais sobre recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, páginas de erro de CDN e muito mais.
+Saiba mais sobre os recursos avançados da Rede de entrega de conteúdo (CDN) do Adobe além do armazenamento em cache, como configuração de tráfego na CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
 
 Além do armazenamento em cache de conteúdo, o Adobe CDN oferece vários recursos avançados que podem ajudar a otimizar o desempenho do seu site. Esses recursos incluem:
 
@@ -50,8 +50,7 @@ Vamos entender os principais recursos relacionados a _Configuração de credenci
 
 - **Token da API de Limpeza**: permite que você crie sua própria chave de limpeza para limpar um único grupo ou todos os recursos do cache.
 - **Autenticação Básica**: um mecanismo de autenticação leve quando você deseja restringir o acesso ao seu site ou a uma parte dele. Necessário principalmente como parte de vários processos de revisão antes de entrar em funcionamento.
-- **Validação do cabeçalho HTTP**: usada quando uma CDN gerenciada pelo cliente está roteando o tráfego para a CDN Adobe. O CDN do Adobe valida a solicitação de entrada com base no valor do cabeçalho `X-AEM-Edge-Key`.
-Permite criar seu próprio valor para o cabeçalho `X-AEM-Edge-Key`.
+- **Validação do cabeçalho HTTP**: usada quando uma CDN gerenciada pelo cliente está roteando o tráfego para a CDN Adobe. O CDN do Adobe valida a solicitação de entrada com base no valor do cabeçalho `X-AEM-Edge-Key`. Permite criar seu próprio valor para o cabeçalho `X-AEM-Edge-Key`.
 
 ## Páginas de erro da CDN
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Recursos adicionais
+## Tutorials relacionados
 
 [Protegendo sites com regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [Configurando Credenciais e Autenticação da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [Configurando Páginas de Erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
