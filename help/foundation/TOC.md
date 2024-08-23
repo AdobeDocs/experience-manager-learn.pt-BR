@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: a504ace72b1b90c6e7c711a939595b95f24733e6
+source-git-commit: 1e1a33986e202ce2af9cf2d03eca7895514465df
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 13%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 14%
 # Vídeos e Tutorials do AEM Foundation {#foundation}
 
 + [Visão geral](./overview.md)
++ [POC](./poc.md)
 + Administração {#administration}
    + [Entender os motivos para atualizar o AEM](./administration/understand-reasons-to-upgrade.md)
    + [Usar oak-run.jar para gerenciar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
@@ -26,6 +27,7 @@ ht-degree: 14%
    + [Escopos OAuth](authentication/oauth-code-sample-develop.md)
    + [Entendendo a autenticação](authentication/authentication-support-article-understand.md)
    + [Entender a autenticação IMS no AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
+   + [Migração de credencial JWT para OAuth](authentication/jwt-to-oauth-migration.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Entender o Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [Pipelines de CI/CD](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
@@ -48,6 +50,7 @@ ht-degree: 14%
    + [Proteção contra Ataques CRS DoS ModSecurity](./security/modsecurity-crs-dos-attack-protection.md)
    + [Conexões HTTPS com APIs com certificados privados](./security/call-internal-apis-having-private-certificate.md)
    + [Autenticação TLS mútuo (mTLS) do AEM](./security/mutual-tls-authentication.md)
+   + [Migração de credenciais JWT para OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Fluxo de trabalho {#workflow}
    + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
    + [Usar fluxo de trabalho](./workflow/use-workflow.md)
