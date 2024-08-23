@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: 1e1a33986e202ce2af9cf2d03eca7895514465df
+source-git-commit: 231ca44f9708ab0b239e4cbf363e8cf2695eedc2
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 13%
 # Vídeos e Tutorials do AEM Foundation {#foundation}
 
 + [Visão geral](./overview.md)
-+ [POC](./poc.md)
 + Administração {#administration}
    + [Entender os motivos para atualizar o AEM](./administration/understand-reasons-to-upgrade.md)
    + [Usar oak-run.jar para gerenciar índices](./administration/use-oak-run-jar-to-manage-indexes.md)
