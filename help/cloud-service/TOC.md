@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1275'
 ht-degree: 16%
 
 ---
@@ -151,7 +151,8 @@ ht-degree: 16%
    + [Análise de Taxa de Acertos do Cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Como{#how-to}
       + [Ativar armazenamento em cache](./caching/how-to/enable-caching.md)
-      + [Desabilitar armazenamento em cache](./caching/how-to/disable-caching.md)
+      + [Desativar armazenamento em cache](./caching/how-to/disable-caching.md)
+      + [Limpar cache](./caching/how-to/purge-cache.md)
 + Acessando AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
@@ -259,6 +260,10 @@ ht-degree: 16%
       + [2 - Configuração](./forms/create-address-block-component/set-up.md)
       + [3 - Criar componente](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Implantar componente](./forms/create-address-block-component/deploy-your-project.md)
+   + Criar componente de imagem clicável{#clickable-image-component}
+      + [1 - Introdução](./forms/clickable-image-component/introduction.md)
+      + [2 - Criar componente](./forms/clickable-image-component/create-component.md)
+      + [3 - Manipular evento de clique](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms e Analytics{#forms-and-analytics}
       + [Introdução](./forms/form-data-analytics/introduction.md)
       + [Criar elementos de dados](./forms/form-data-analytics/data-elements.md)
@@ -421,3 +426,4 @@ ht-degree: 16%
          + [Integrar o AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [IA gerativa para o AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Explorar editor universal](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [Importar sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)

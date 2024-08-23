@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f344f6c2fdf763a55c18a0db9625ccbe408919e2
+source-git-commit: 3eb4ed310e08f9dd8a527fdb7c42062b285db84e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 17%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 17%
    + [Extrair arquivo](./advanced/extract-archive.md)
    + [Permissões (CUGs)](./advanced/closed-user-groups.md)
    + [Permissões orientadas por metadados](./advanced/metadata-driven-permissions.md)
+   + [Legendas ocultas de vídeo](./advanced/video-closed-captions.md)
    + [Marcas d&#39;água](./advanced/watermarks.md)
 
 + Gerenciamento avançado de metadados{#metadata}
@@ -73,6 +74,9 @@ ht-degree: 17%
 
 + Edge Delivery Services{#edge-delivery-services}
    + [plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
+
++ Content Hub{#content-hub}
+   + [Fazendo upload do Assets e do processo de aprovação](./content-hub/uploading-assets-and-approval-process.md)
 
 + Compartilhamento e Distribuição{#sharing}
    + [Baixar o Assets](./sharing/download.md)
