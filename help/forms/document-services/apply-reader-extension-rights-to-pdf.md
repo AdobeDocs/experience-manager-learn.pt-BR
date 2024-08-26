@@ -9,9 +9,9 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -196,10 +196,18 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Para testar isso no servidor local, siga as seguintes etapas:
 1. [Baixe e instale o pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Baixe e instale o Pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta
+
+1. Adicione a seguinte entrada ao Apache Sling User Mapper Service usando o console do configMgr, como mostrado abaixo
+
+```
+       DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![mapeador-usuário](assets/user-mapper-service.PNG)
+1. [Baixe e instale o Pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta.
 1. [Importe as bibliotecas do cliente e o envio personalizado](assets/applyaresdemo.zip)
 1. [Importar o formulário adaptável](assets/applyaresform.zip)
-1. Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;ares&quot;.
+1. Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;**ares**&quot;.
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Selecione os direitos apropriados e faça upload do arquivo PDF
 1. Clique em Enviar para obter o PDF estendido do Reader
