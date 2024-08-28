@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
+source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,12 +31,13 @@ Além do armazenamento em cache de conteúdo, o Adobe CDN oferece vários recurs
 
 Estes recursos são do **autoatendimento**. Configurado no arquivo `cdn.yaml` do seu projeto AEM e implantado usando o pipeline de configuração do Cloud Manager.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+
 ## Configuração do tráfego no CDN
 
 Vamos entender os principais recursos relacionados à _Configuração do tráfego na CDN_:
 
-- **Prevenção de ataques de DoS:** o CDN de Adobe absorve ataques de DoS na rede
-camada, impedindo-os de chegar ao servidor de origem.
+- **Prevenção de ataques de DoS:** o Adobe CDN absorve ataques de DoS na camada de rede, impedindo-os de alcançar seu servidor de origem.
 - **Limitação de taxa:** para proteger seu servidor de origem de ser sobrecarregado com muitas solicitações, você pode configurar a limitação de taxa no CDN.
 - **Firewall do Aplicativo Web (WAF):** O WAF protege seu site contra vulnerabilidades comuns de aplicativos Web, como injeção de SQL, script entre sites e muito mais. A licença de Segurança aprimorada ou de Proteção WAF-DDoS é necessária para usar esse recurso.
 - **Transformação de solicitação:** modifique solicitações de entrada, como definir ou remover cabeçalhos, modificar parâmetros de consulta, cookies e muito mais.
