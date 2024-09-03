@@ -1,5 +1,5 @@
 ---
-title: Acionar o fluxo de trabalho de AEM na introdução do envio do formulário HTM5
+title: Acionar fluxo de trabalho de AEM na introdução do envio do formulário HTML5
 description: Continue preenchendo o formulário para publicação de conteúdo para dispositivos móveis no modo offline e envie o formulário para publicação de conteúdo para dispositivos móveis para acionar o fluxo de trabalho do AEM
 feature: Mobile Forms
 doc-type: article
@@ -9,10 +9,12 @@ role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
+jira: kt-16133
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -26,8 +28,12 @@ Para realizar esse caso de uso, precisamos executar as seguintes etapas:
 * Lidar com o envio de PDF do Acrobat/Reader
 * Acione o fluxo de trabalho do Adobe Experience Manager (AEM) para revisar o PDF enviado
 
-Este tutorial aborda as etapas necessárias para realizar o caso de uso acima. Exemplos de código e ativos relacionados a este tutorial estão [disponíveis aqui.](part-four.md)
+Este tutorial aborda as etapas necessárias para realizar o caso de uso acima. Exemplos de código e ativos relacionados a este tutorial estão [disponíveis aqui.](./deploy-assets.md)
 
 O vídeo a seguir fornece uma visão geral do caso de uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=12&learn=on)
+
+## Próximas etapas
+
+[Criar perfil personalizado](./custom-profile.md)

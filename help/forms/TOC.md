@@ -8,9 +8,9 @@ breadcrumb-title: Tutorials do AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2089'
 ht-degree: 2%
 
 ---
@@ -224,10 +224,11 @@ ht-degree: 2%
    + [Implantar ativos de amostra](storing-retrieving-form-data/part6.md)
 + Acionando Fluxo de Trabalho de AEM a partir do envio de Formulário para Dispositivos Móveis{#offline-mobile-form-submission}
    + [Introdução](offline-mobile-form-submission/introduction.md)
-   + [Perfil personalizado](offline-mobile-form-submission/part-one.md)
-   + [Tratar Envio de PDF](offline-mobile-form-submission/part-two.md)
-   + [Fluxo de trabalho para PDF de revisão](offline-mobile-form-submission/part-three.md)
-   + [Implantar no sistema](offline-mobile-form-submission/part-four.md)
+   + [Perfil personalizado](offline-mobile-form-submission/custom-profile.md)
+   + [Tratar Envio De Formulário](offline-mobile-form-submission/handle-form-submission.md)
+   + [Armazenar dados enviados](offline-mobile-form-submission/author-servlet.md)
+   + [Fluxo de trabalho para PDF de revisão](offline-mobile-form-submission/review-workflow.md)
+   + [Implantar no sistema](offline-mobile-form-submission/deploy-assets.md)
 + Consultando Envios de Formulário{#query-form-submissions}
    + [Introdução](query-form-submissions/introduction.md)
    + [Criar campos pesquisáveis](query-form-submissions/part1.md)

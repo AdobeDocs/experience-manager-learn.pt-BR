@@ -9,9 +9,9 @@ level: Experienced
 exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -127,9 +127,18 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Para testar esse recurso no servidor, siga as instruções abaixo:
 
-* [Baixar e extrair o conteúdo do arquivo zip para o sistema de arquivos](assets/mult-records-template-and-xml-file.zip).Este arquivo zip contém o modelo e o arquivo de dados xml.
+* [Baixar os ativos de exemplo](assets/mult-records-template-and-xml-file.zip).Este arquivo zip contém o modelo e o arquivo de dados xml.
+* [Importar o]
 * [Aponte seu navegador para o Felix web console](http://localhost:4502/system/console/bundles)
 * [Implantar o Pacote DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* Adicione a seguinte entrada no serviço Mapeador de usuários do Apache Sling Service usando o configMgr.
+
+```java
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+```
+
+![user-mapper-service](assets/user-mapper-service-fd-service.png)
+
 * [Implantar o pacote AEMFormsDocumentServices personalizado](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Pacote personalizado que gera os pdf usando a API OutputService
 * [Aponte seu navegador para o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importe e instale o pacote](assets/generate-multiple-pdf-from-xml.zip). Este pacote contém a página html que permite que você solte o modelo e os arquivos de dados.
