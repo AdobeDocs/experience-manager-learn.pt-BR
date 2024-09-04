@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -198,7 +198,7 @@ Para permitir que os [cabeçalhos de solicitação HTTP necessários sejam trans
 }
 ```
 
-### Armazenamento em cache de cabeçalhos de resposta do CORS
+### Armazenamento em cache de cabeçalhos de resposta CORS
 
 Para permitir o armazenamento em cache e a veiculação de cabeçalhos CORS no conteúdo em cache, adicione a seguinte configuração [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#caching-http-response-headers) ao arquivo AEM Publish `dispatcher.any`.
 
