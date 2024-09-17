@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
+source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -208,13 +208,13 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <img alt="Otimização da pontuação do farol" 
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <img alt="Otimização da pontuação do farol - Parte 1" 
                      src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
             </a>
             <div>
-                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <strong>Otimização de Pontuação do Lighthouse</strong></a>        
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <strong>Otimização de Pontuação do Lighthouse - Parte 1</strong></a>
                 <br/><em>com James Talbot e Varun Mitra, arquiteto da nuvem</em>
             </div>
             <p>
@@ -222,5 +222,22 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
                  Saiba mais sobre a pontuação do farol e as técnicas para obter a melhor pontuação possível do farol.
             </p>
         </td>            
-    </tr>    
+    </tr> 
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <img alt="Otimização de pontuação do farol - Parte 2"
+                     src="https://video.tv.adobe.com/v/3434042?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <strong>Otimização de Pontuação do Lighthouse - Parte 2</strong></a>
+                <br/><em>com James Talbot e Varun Mitra, arquiteto da nuvem</em>
+            </div>
+            <p>
+                <br/>                
+                 Saiba mais sobre as técnicas para melhorar o tempo total de bloqueio.
+            </p>
+        </td>            
+    </tr>        
 </table>
