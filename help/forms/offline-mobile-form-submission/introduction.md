@@ -1,5 +1,5 @@
 ---
-title: Acionar fluxo de trabalho de AEM na introdução do envio do formulário HTML5
+title: Acionar o fluxo de trabalho de AEM no envio do formulário de PDF
 description: Continue preenchendo o formulário para publicação de conteúdo para dispositivos móveis no modo offline e envie o formulário para publicação de conteúdo para dispositivos móveis para acionar o fluxo de trabalho do AEM
 feature: Mobile Forms
 doc-type: article
@@ -12,14 +12,14 @@ last-substantial-update: 2021-04-07T00:00:00Z
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Download do formulário móvel parcialmente concluído e envio ao fluxo de trabalho do AEM
+# Download do formulário para dispositivos móveis parcialmente preenchido e envio para acionar um fluxo de trabalho do AEM
 
 Um caso de uso comum é a capacidade de renderizar o XDP como HTML para atividades de captura de dados. Isso funciona bem quando os formulários são simples e podem ser preenchidos e enviados online. No entanto, se o formulário for complexo, os usuários talvez não consigam preenchê-lo online, precisamos fornecer a capacidade de permitir que os preenchimentos de formulário baixem a versão interativa do formulário a ser preenchido usando Acrobat/Reader offline. Depois que o formulário for preenchido, o usuário poderá estar online para enviar o formulário.
 Para realizar esse caso de uso, precisamos executar as seguintes etapas:
