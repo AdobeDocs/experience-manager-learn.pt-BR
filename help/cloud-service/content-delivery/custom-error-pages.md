@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-09-24T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: acecb13a5b7f3c75bc6cd8eb36d398f8cebfe0a6
+source-git-commit: d11b07441d8c46ce9a352e4c623ddc1781b9b9be
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Para fins de demonstração, vamos usar o [React](https://react.dev/). No entant
    - `src/App.css`: Estilo do conteúdo da página de erro.
 
      ```css
-         .App {
+     .App {
        text-align: left;
      }
      
