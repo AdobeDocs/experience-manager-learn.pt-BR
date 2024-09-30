@@ -13,7 +13,7 @@ duration: 50
 source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -26,7 +26,7 @@ O App Builder fornece uma camada de implementação para criar extensões vincul
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_extensibility_app_builder"
 >title="Introdução ao Adobe Developer App Builder e AEM Headless"
->abstract="Saiba como o AEM App Builder permite que os desenvolvedores personalizem e estendam rapidamente as interfaces do usuário do AEM com o JavaScript e o React, oferecendo suporte à integração contínua e à implantação rápida."
+>abstract="Saiba como o AEM App Builder permite que os desenvolvedores personalizem e estendam rapidamente as interfaces do AEM com o JavaScript e o React, oferecendo suporte a uma integração perfeita e uma implantação rápida."
 
 ## Desenvolver uma extensão da interface do usuário para AEM
 
