@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Configurar um ambiente de desenvolvimento local é o primeiro passo ao desenvolv
 
 Quando nos referimos a uma instância local do AEM, estamos falando de uma cópia do Adobe Experience Manager que está sendo executada na máquina pessoal de um desenvolvedor. ***Todos*** o desenvolvimento de AEM deve começar gravando e executando código em uma instância de AEM local.
 
-Se você nunca usou o AEM, há dois modos de execução básicos que podem ser instalados: ***Autor*** e ***Publish***. O ***Author*** [runmode](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) é o ambiente que os profissionais de marketing digital usam para criar e gerenciar conteúdo. Ao desenvolver o na maioria das vezes, você está implantando o código em uma instância de autor. Isso permite criar páginas e adicionar e configurar componentes. O AEM Sites é um CMS de criação WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
+Se você nunca usou o AEM, há dois modos de execução básicos que podem ser instalados: ***Autor*** e ***Publish***. O ***Author*** [runmode](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) é o ambiente que os profissionais de marketing digital usam para criar e gerenciar conteúdo. Ao desenvolver o na maioria das vezes, você está implantando o código em uma instância de autor. Isso permite criar páginas e adicionar e configurar componentes. O AEM Sites é um CMS de criação do WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
 
 Também é um código de teste *crítico* em relação a uma instância ***Publish*** local. A instância do ***Publish*** é o ambiente AEM com o qual os visitantes do site interagem. Embora a instância ***Publish*** seja a mesma pilha de tecnologia que a instância ***Author***, há algumas distinções importantes entre configurações e permissões. O código deve ser testado em relação a uma instância ***Publish*** local antes de ser promovido para ambientes de nível superior.
 
@@ -181,6 +181,7 @@ O [!DNL Visual Studio Code] é uma ótima opção para desenvolvedores de front-
 * **[repositório](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Ferramenta semelhante a FTP para conteúdo JCR
 * **[aemfed](https://aemfed.io/)** - Acelere seu fluxo de trabalho de front-end no AEM
 * **[Sincronização com AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Extensão com suporte da comunidade&#42; para Visual Studio Code
+* **[Projeto WKND](https://github.com/adobe/aem-guides-wknd)** - Exemplo de projeto AEM mostrado neste vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
