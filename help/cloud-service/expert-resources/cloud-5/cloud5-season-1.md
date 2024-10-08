@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
 duration: 112
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ffd90bec7ef63cac96590e59b1b5a92d043cbc03
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 1%
 
 ---
 
@@ -105,47 +105,6 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
       <p>
         <br/>
          A primeira parte (de duas) de nossas dicas e truques para migrar para a nuvem. Nosso foco principal, na primeira parte, é a prática recomendada e o trabalho preparatório que preparam você para a migração.
-      </p>
-   </td> 
-  </tr>
-<tr>
-   <td>
-        <a href="./cloud5-aem-content-migration-part-2.md">
-            <img alt="Migração (parte 2)" src="./imgs/007-thumb.png"/>
-        </a>
-      <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migração (parte 2)</strong></a>     
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
-      </div>
-      <p>
-        <br/>
-         A segunda parte (de duas) de nossas dicas e truques para migrar para a nuvem. A segunda parte trata principalmente do uso das ferramentas disponíveis para migração.
-      </p>
-     </td>   
-     <td>
-        <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Dispatcher Validator" src="./imgs/008-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Validador do Dispatcher</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
-      </div>
-      <p>
-        <br/>
-         Uma ramificação das discussões anteriores sobre migração, observamos o validador do dispatcher e algumas das tarefas que ele pode realizar.
-      </p>
-   </td>
-     <td>
-        <a href="./cloud5-aem-search-and-indexing.md">
-            <img alt="Dicas de indexação e pesquisa" src="./imgs/009-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>Dicas de Indexação e Pesquisa</strong></a>
-         <br/><em>com Darin Kuntze e James Talbot, arquitetos de nuvem sênior</em>
-      </div>
-      <p>
-        <br/>
-         Para algo tão complexo como indexação e pesquisa, a equipe mostra algumas vitórias fáceis para otimizar seu tempo de desenvolvimento e resolver coisas antes que se tornem problemas.
       </p>
    </td> 
   </tr>
