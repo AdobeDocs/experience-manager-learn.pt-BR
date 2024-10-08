@@ -1,6 +1,6 @@
 ---
-title: Utilização de guias verticais no Cloud Service do AEM Forms
-description: Criar um formulário adaptável usando guias verticais
+title: Usar guias verticais no AEM Forms Cloud Service
+description: Criar um formulário adaptável usando guias verticais.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -12,14 +12,14 @@ thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16023
 exl-id: 84c03212-47dc-4398-a197-e69e3f3bf77e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4f7d9762c009e16dc65f7134356edcf7ad7a45d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Introdução
+# Introdução a guias verticais
 
 As guias verticais são usadas para organizar e exibir conteúdo em um formato compacto e fácil de navegar. Vertical proporcionam os seguintes benefícios
 1. Eficiência de espaço - As guias verticais utilizam espaço vertical, que pode ser mais eficiente quando há muitas informações a serem capturadas.
