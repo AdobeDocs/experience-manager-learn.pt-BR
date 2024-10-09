@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: f1b13bba9e83ac1d25f2af23ff2673554726eb19
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Como o tráfego de AEM e SPA é roteado no domínio compartilhado, depende de vo
 
 Abaixo estão as configurações de implantação necessárias para implantações de produção de SPA, quando hospedadas no mesmo domínio que AEM.
 
-| SPA se conecta a | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| SPA se conecta a → | Autor do AEM | Publicação no AEM | Visualização do AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Compartilhamento de recursos entre origens (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ Como o AEM e o SPA são acessados de domínios diferentes, os navegadores da Web
 
 Abaixo estão as configurações de implantação necessárias para implantações de produção de SPA, quando hospedadas em um domínio diferente do AEM.
 
-| SPA se conecta a | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| SPA se conecta a → | Autor do AEM | Publicação no AEM | Visualização do AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Compartilhamento de recursos entre origens (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
