@@ -10,7 +10,7 @@ jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 089bcf71f03bdbb6d21337cc23452afb33ce8098
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM Headless [As implantações do componente da Web](https://developer.mozilla.
 
 A configuração de implantação a seguir deve estar em vigor para implantações de Componente web/JS.
 
-| O componente Web/aplicativo JS se conecta a | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O componente Web/aplicativo JS se conecta a → | Autor do AEM | Publicação no AEM | Visualização do AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Compartilhamento de recursos entre origens (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
