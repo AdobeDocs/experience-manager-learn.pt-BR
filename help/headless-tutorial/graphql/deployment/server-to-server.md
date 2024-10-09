@@ -10,7 +10,7 @@ jira: KT-10798
 thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
 duration: 48
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b607ea10e0eed73b70751b1dd76266a4812d5280
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -27,7 +27,7 @@ As implantações de servidor para servidor exigem configuração mínima, já q
 
 A configuração de implantação a seguir deve estar em vigor para implantações de aplicativo de servidor para servidor.
 
-| O aplicativo de servidor para servidor se conecta ao | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O aplicativo de servidor para servidor se conecta ao → | Autor do AEM | Publicação no AEM | Visualização do AEM |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Compartilhamento de recursos entre origens (CORS) | ✘ | ✘ | ✘ |
