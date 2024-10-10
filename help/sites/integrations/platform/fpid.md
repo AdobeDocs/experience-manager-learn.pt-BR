@@ -6,23 +6,23 @@ feature: Integrations, APIs, Dispatcher
 topic: Integrations, Personalization, Development
 role: Developer
 level: Beginner
-last-substantial-update: 2022-10-20T00:00:00Z
+last-substantial-update: 2024-10-09T00:00:00Z
 jira: KT-11336
 thumbnail: kt-11336.jpeg
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c638c1e012952f2f43806a325d729cde088ab9f5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
 
 # Gerar FPIDs de Experience Platform com o AEM Sites
 
-A integração do Adobe Experience Manager (AEM) Sites com o Adobe Experience Platform (AEP) exige que o AEM gere e mantenha um cookie exclusivo de ID de dispositivo primário (FPID) para rastrear exclusivamente a atividade do usuário.
+A integração dos sites do Adobe Experience Manager (AEM) entregues por meio do AEM Publish, com o Adobe Experience Platform AEM (AEP) exige que o gere e mantenha um cookie exclusivo de ID de dispositivo primário (FPID) para rastrear de forma exclusiva a atividade do usuário.
 
 Leia a documentação de suporte para [saber mais sobre os detalhes de como as IDs de dispositivo de primeira parte e as IDs de Experience Cloud funcionam juntas](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
@@ -53,9 +53,9 @@ O diagrama a seguir descreve como o serviço AEM Publish gerencia FPIDs.
 
 O código e a configuração a seguir podem ser implantados no serviço AEM Publish para criar um endpoint que gera ou estende a vida útil de um cookie FPID existente e retorna o FPID como JSON.
 
-### Servlet de cookie FPID do AEM
+### Servlet de cookie AEM Publish FPID
 
-Um ponto de extremidade HTTP AEM deve ser criado para gerar ou estender um cookie FPID, usando um [servlet Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
+Um ponto de extremidade AEM Publish HTTP deve ser criado para gerar ou estender um cookie FPID, usando um [servlet Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
 
 + O servlet está associado a `/bin/aem/fpid`, pois a autenticação não é necessária para acessá-lo. Se a autenticação for necessária, associe a um tipo de recurso do Sling.
 + O servlet aceita solicitações HTTP GET. A resposta está marcada com `Cache-Control: no-store` para impedir o armazenamento em cache, mas esse ponto de extremidade também deve ser solicitado usando parâmetros de consulta exclusivos para substituição de cache.
@@ -67,9 +67,9 @@ Quando uma solicitação HTTP atinge o servlet, o servlet verifica se existe um 
 
 O servlet grava o FPID na resposta como um objeto JSON no formato: `{ fpid: "<FPID VALUE>" }`.
 
-É importante fornecer o FPID ao cliente no corpo, pois o cookie FPID está marcado como `HttpOnly`, o que significa que somente o servidor pode ler seu valor, e o JavaScript do lado do cliente não.
+É importante fornecer o FPID ao cliente no corpo, pois o cookie FPID está marcado como `HttpOnly`, o que significa que somente o servidor pode ler seu valor, e o JavaScript do lado do cliente não. Para evitar uma nova busca desnecessária do FPID em cada carregamento de página, um cookie `FPID_CLIENT` também é definido, indicando que o FPID foi gerado e expondo o valor ao JavaScript do lado do cliente para uso.
 
-O valor FPID do corpo da resposta é usado para parametrizar chamadas usando o SDK da Web da plataforma.
+O valor FPID é usado para parametrizar chamadas usando o SDK da Web da plataforma.
 
 Abaixo está um código de exemplo de um endpoint de servlet AEM (disponível via `HTTP GET /bin/aep/fpid`) que gera ou atualiza um cookie FPID e retorna o FPID como JSON.
 
@@ -104,8 +104,9 @@ import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVL
 public class FpidServlet extends SlingAllMethodsServlet {
     private static final Logger log = LoggerFactory.getLogger(FpidServlet.class);
     private static final String COOKIE_NAME = "FPID";
+    private static final String CLIENT_COOKIE_NAME = "FPID_CLIENT";
     private static final String COOKIE_PATH = "/";
-    private static final int COOKIE_MAX_AGE = 60 * 60 * 24 * 30 * 13;
+    private static final int COOKIE_MAX_AGE = 60 * 60 * 24 * 30 * 13; // 13 months
     private static final String JSON_KEY = "fpid";
 
     @Override
@@ -116,15 +117,15 @@ public class FpidServlet extends SlingAllMethodsServlet {
         String cookieValue;
 
         if (existingCookie == null) {
-            //  If no FPID cookie exists, Create a new FPID UUID
+            //  If no FPID cookie exists, create a new FPID UUID
             cookieValue = UUID.randomUUID().toString();
         } else {
-            // If a FPID cookie exists. get its FPID UUID so it's life can be extended
+            // If a FPID cookie exists, get its FPID UUID so its life can be extended
             cookieValue = existingCookie.getValue();
         }
 
-        // Add the newly generate FPID value, or the extended FPID value to the response
-        // Use addHeader(..), as we need to set SameSite=Lax (and addCoookie(..) does not support this)
+        // Add the FPID value to the response, either newly generated or the extended one
+        // This can be read by the Server (AEM Publish) due to HttpOnly flag.
         response.addHeader("Set-Cookie",
                 COOKIE_NAME + "=" + cookieValue + "; " +
                         "Max-Age=" + COOKIE_MAX_AGE + "; " +
@@ -132,20 +133,26 @@ public class FpidServlet extends SlingAllMethodsServlet {
                         "HttpOnly; " +
                         "Secure; " +
                         "SameSite=Lax");
-        
-        // Avoid caching the response in any cache
+
+        // Also set FPID_CLIENT cookie to avoid further server-side FPID generation
+        // This can be read by the client-side JavaScript to check if FPID is already generated
+        // or if it needs to be requested from server (AEM Publish)
+        response.addHeader("Set-Cookie",
+                CLIENT_COOKIE_NAME + "=" + cookieValue + "; " +
+                        "Max-Age=" + COOKIE_MAX_AGE + "; " +
+                        "Path=" + COOKIE_PATH + "; " +
+                        "Secure; " + 
+                        "SameSite=Lax");
+
+        // Avoid caching the response
         response.addHeader("Cache-Control", "no-store");
 
-        // Since the FPID is HttpOnly, JavaScript cannot read it (only the server can)
-        // Write the FPID to the response as JSON so client JavaScript can access it.
+        // Return FPID in the response as JSON for client-side access
         final JsonObject json = new JsonObject();
         json.addProperty(JSON_KEY, cookieValue);
-        
-        // The JSON `{ fpid: "11111111-2222-3333-4444-55555555" }` is returned in the response
+
         response.setContentType("application/json");
         response.getWriter().write(json.toString());
-    }
-}
 ```
 
 ### script HTML
@@ -170,21 +177,47 @@ Consulte a documentação do Experience Platform para obter mais informações s
 ```javascript
 ...
 <script>
-    // Invoke the AEM FPID servlet, and then do something with the response
+    // Wrap in anonymous function to avoid global scope pollution
 
-    fetch(`/bin/aep/fpid?_=${new Date().getTime() + '' + Math.random()}`, { 
-            method: 'GET',
-            headers: {
-                'Cache-Control': 'no-store'
+    (function() {
+        // Utility function to get a cookie value by name
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Async function to handle getting the FPID via fetching from AEM, or reading an existing FPID_CLIENT cookie
+        async function getFpid() {
+            let fpid = getCookie('FPID_CLIENT');
+            
+            // If FPID can be retrieved from FPID_CLIENT then skip fetching FPID from server
+            if (!fpid) {
+                // Fetch FPID from the server if no FPID_CLIENT cookie value is present
+                try {
+                    const response = await fetch(`/bin/aep/fpid?_=${new Date().getTime() + '' + Math.random()}`, {
+                        method: 'GET',
+                        headers: {
+                            'Cache-Control': 'no-store'
+                        }
+                    });
+                    const data = await response.json();
+                    fpid = data.fpid;
+                } catch (error) {
+                    console.error('Error fetching FPID:', error);
+                }
             }
-        })
-        .then((response) => response.json())
-        .then((data) => { 
-            // Get the FPID from JSON returned by AEM's FPID servlet
-            console.log('My FPID is: ' + data.fpid);
 
-            // Send the `data.fpid` to Experience Platform APIs            
-        });
+            console.log('My FPID is: ', fpid);
+            return fpid;
+        }
+
+        // Invoke the async function to fetch or skip FPID
+        const fpid = await getFpid();
+
+        // Add the fpid to the identityMap in the Platform Web SDK
+        // and/or send to AEP via AEP tags or direct AEP Web SDK calls (alloy.js)
+    })();
 </script>
 ```
 
