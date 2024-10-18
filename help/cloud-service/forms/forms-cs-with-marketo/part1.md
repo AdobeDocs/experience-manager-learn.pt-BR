@@ -1,5 +1,5 @@
 ---
-title: Integrar o Cloud Service da AEM Forms e o Marketo
+title: Integrar o AEM Forms as a Cloud Service e o Marketo
 description: Saiba como integrar o AEM Forms e o Marketo usando o Modelo de dados de formulário do AEM Forms.
 feature: Form Data Model,Integration
 version: Cloud Service
@@ -11,9 +11,9 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: c3145149-bfa4-4dcb-acde-c359e9348f99
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Para começar, é altamente recomendável que você esteja familiarizado com os 
 
 ## Pré-requisitos
 
-1. Acesso à instância do AEM Forms Cloud Service
+1. Acesso à instância as a Cloud Service do AEM Forms
 1. Familiarizar-se com o modelo de dados de formulário
 1. Conhecimento básico dos arquivos do Swagger
 1. Criação de Forms adaptável

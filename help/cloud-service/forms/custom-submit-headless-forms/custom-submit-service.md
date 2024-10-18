@@ -11,9 +11,9 @@ topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Para escrever um serviço de envio personalizado, as seguintes etapas foram segu
 
 ## Criar projeto AEM
 
-Se você já tiver um projeto AEM Forms Cloud Service existente, pode [pular para a gravação do serviço de envio personalizado](#Write-the-custom-submit-service)
+Se você já tiver um as a Cloud Service AEM Forms existente, [vá para a gravação do serviço de envio personalizado](#Write-the-custom-submit-service)
 
 * Crie uma pasta chamada cloudmanager na unidade c.
 * Navegar até esta pasta recém-criada

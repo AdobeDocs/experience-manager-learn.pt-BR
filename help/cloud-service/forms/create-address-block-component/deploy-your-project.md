@@ -1,6 +1,6 @@
 ---
 title: Criando componente de endereço
-description: Criação do novo componente principal de endereço no AEM Forms Cloud Service
+description: Criação do novo componente principal de endereço no AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,16 +9,16 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 # Implante seu projeto
 
-Antes de começar a implantar o projeto no Cloud Service AEM Forms, é recomendável implantar o projeto na instância do AEM Forms pronta para nuvem local.
+Antes de começar a implantar o projeto no as a Cloud Service do AEM Forms, é recomendável implantar o projeto na instância do AEM Forms pronta para nuvem local.
 
 ## Sincronizar alterações com o projeto AEM
 

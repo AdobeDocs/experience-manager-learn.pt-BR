@@ -1,6 +1,6 @@
 ---
 title: Criação de componente de imagem clicável
-description: Criação do componente de imagem clicável no AEM Forms Cloud Service
+description: Criação do componente de imagem clicável no AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,9 +9,9 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15968
 exl-id: b635f171-775d-480e-bf7a-c92ab4af0aee
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '223'
 ht-degree: 1%
 
 ---
