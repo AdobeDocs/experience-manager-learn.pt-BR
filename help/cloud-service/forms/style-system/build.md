@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 # Testar as alterações
 
 Crie um formulário adaptável com base no modelo **&quot;Em branco com Componentes principais&quot;**. Arraste e solte três botões no formulário e rotule-os como &quot;Corporativo&quot;, &quot;Marketing&quot; e &quot;Padrão&quot;.
-Atribua as variantes de estilo apropriadas aos botões Corporativo e Marketing, selecionando o pincel de tinta conforme mostrado
+Atribua as variantes de estilo apropriadas aos botões Corporativo e Marketing, selecionando o pincel de pintura, conforme mostrado abaixo.
 
 ![estilos](assets/marketing-variation.png)
+
+O terceiro botão terá o estilo padrão aplicado.
 
 ## Criar o projeto de tema
 
