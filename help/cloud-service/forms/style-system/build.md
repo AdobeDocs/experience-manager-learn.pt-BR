@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ O terceiro botão terá o estilo padrão aplicado.
 
 ## Criar o projeto de tema
 
-A próxima etapa é criar o projeto de tema. Navegue até a pasta raiz do projeto de tema e execute o comando _**npm run build**_, conforme mostrado na captura de tela abaixo
+A próxima etapa é criar o projeto de tema. Navegue até a pasta raiz do projeto de tema e execute o comando _**npm run build**_, conforme mostrado na captura de tela abaixo.
 
 ![tema de compilação](assets/build-theme.png)
 
@@ -46,4 +46,8 @@ Depois que o projeto de tema for criado com sucesso, você estará pronto para t
 * Os botões devem ser atualizados com os estilos apropriados, conforme mostrado abaixo.
 
 ![botões-finais](assets/final-state-buttons.png)
+
+## Enviar as alterações
+
+Se você estiver satisfeito com as alterações, poderá enviar as alterações para sua instância da nuvem usando o [pipeline de front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
 
