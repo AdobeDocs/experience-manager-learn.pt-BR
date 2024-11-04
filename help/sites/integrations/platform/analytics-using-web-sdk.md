@@ -14,7 +14,7 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Saiba mais sobre a **abordagem moderna** sobre como integrar o Adobe Experience 
 
 ## Visão geral
 
-Obter insights sobre o comportamento do usuário é um objetivo crucial para cada equipe de marketing. Ao entender como os usuários interagem com seu conteúdo, as equipes podem tomar decisões informadas, otimizar estratégias e gerar melhores resultados. A equipe de marketing da WKND, uma entidade fictícia, se preocupou em implementar o Adobe Analytics em seu site para atingir essa meta. O objetivo principal é coletar dados em duas métricas principais: visualizações de página e cliques de frase de chamariz (CTA) da página inicial.
+Obter insights sobre o comportamento do usuário é um objetivo crucial para cada equipe de marketing. Ao entender como os usuários interagem com seu conteúdo, as equipes podem tomar decisões informadas, otimizar estratégias e gerar melhores resultados. A equipe de marketing da WKND, uma entidade fictícia, se preocupou em implementar o Adobe Analytics em seu site para atingir essa meta. O objetivo principal é coletar dados em duas métricas principais: visualizações de página e cliques de frase de chamariz da página inicial (CTA).
 
-Ao rastrear visualizações de página, a equipe pode analisar quais páginas estão recebendo mais atenção dos usuários. Além disso, o rastreamento dos cliques na CTA da página inicial fornece informações valiosas sobre a eficácia dos elementos de chamada para ação da equipe. Esses dados podem revelar quais CTAs estão repercutindo com os usuários, quais precisam de ajuste e, possivelmente, descobrir novas oportunidades para melhorar o engajamento do usuário e impulsionar conversões.
+Ao rastrear visualizações de página, a equipe pode analisar quais páginas estão recebendo mais atenção dos usuários. Além disso, o rastreamento dos cliques do CTA na página inicial fornece informações valiosas sobre a eficácia dos elementos de chamada para ação da equipe. Esses dados podem revelar quais CTAs estão repercutindo com os usuários, quais precisam de ajuste e, possivelmente, descobrir novas oportunidades para melhorar o engajamento do usuário e impulsionar conversões.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
@@ -82,7 +82,7 @@ Para obter mais informações sobre conceitos e vários elementos que devem ser 
 
 A primeira etapa é configurar o Adobe Analytics, especificamente o conjunto de relatórios com variáveis de conversão (ou eVar) e eventos bem-sucedidos. As variáveis de conversão são usadas para medir causa e efeito. Os eventos bem-sucedidos são usados para rastrear ações.
 
-Neste tutorial, o `eVar5, eVar6, and eVar7` rastreia o _Nome da página WKND, a ID CTA WKND e o Nome CTA WKND_, respectivamente, e o `event7` é usado para rastrear o _Evento de clique no CTA WKND_.
+Neste tutorial, o `eVar5, eVar6, and eVar7` rastreia o _Nome da página WKND, a ID do CTA WKND e o Nome do CTA WKND_, respectivamente, e o `event7` é usado para rastrear o _Evento de clique do CTA WKND_.
 
 Para analisar, coletar insights e compartilhar esses insights com outras pessoas a partir dos dados coletados, um projeto no Analysis Workspace é criado.
 
@@ -92,7 +92,7 @@ Para saber mais sobre a configuração e os conceitos do Analytics, os seguintes
 
 + [Conjunto de Relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [Variáveis de conversão](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [Eventos bem-sucedidos](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
++ [Eventos bem-sucedidos](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
 + [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## Atualizar sequência de dados - Adicionar serviço do Analytics
@@ -118,7 +118,7 @@ No [tutorial anterior](./web-sdk.md), uma propriedade de tag é criada, ela tem 
 
 + Mapeando o nome da página para `eVar5`
 + Acionando a chamada do Analytics **pageview** (ou enviar beacon)
-+ Coleta de dados CTA usando a Camada de dados de clientes Adobe
++ Coletando dados do CTA usando a Camada de dados de clientes Adobe
 + Mapeando a ID e o Nome do CTA para `eVar6` e `eVar7`, respectivamente. Além disso, a contagem de cliques do CTA para `event7`
 + Acionando a chamada **de clique no link** do Analytics (ou enviar beacon)
 
@@ -229,7 +229,7 @@ Para garantir que a propriedade de tag atualizada seja criada, publicada e estej
 
 + Para garantir que a propriedade da tag seja da versão mais recente, verifique a data de build.
 
-+ Para verificar os dados do evento XDM para o Clique em PageView e HomePage CTA, use a opção de menu do SDK da Web do Experience Platform na extensão.
++ Para verificar os dados do evento XDM para PageView e HomePage CTA Click, use a opção de menu do SDK da Web do Experience Platform na extensão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -239,17 +239,17 @@ Para gerar uma quantidade significativa de tráfego para fins de teste, um scrip
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419884?quality=12&learn=on)
 
-## Verificação do conjunto de dados - Exibição de página WKND, dados CTA
+## Verificação do conjunto de dados - Exibição de página WKND, dados do CTA
 
 O conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, como uma tabela de banco de dados que segue um esquema. O Conjunto de dados criado no [tutorial anterior](./web-sdk.md) é reutilizado para verificar se os dados de cliques de pageview e CTA são assimilados no Conjunto de dados do Experience Platform. Na interface do usuário do conjunto de dados, vários detalhes, como registros totais, tamanho e lotes assimilados, são exibidos junto com um gráfico de barras visualmente atraente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
-## Analytics - Exibição de página WKND, visualização de dados CTA
+## Analytics - Exibição de página WKND, visualização de dados do CTA
 
 O Analysis Workspace é uma ferramenta eficiente no Adobe Analytics que permite explorar e visualizar dados de maneira flexível e interativa. Ele fornece uma interface de arrastar e soltar para criar relatórios personalizados, executar segmentação avançada e aplicar várias visualizações de dados.
 
-Vamos reabrir o projeto do Analysis Workspace criado na etapa [Configurar o Analytics](#setup-analytics---report-suite-analysis-workspace). Na seção **Principais páginas**, examine várias métricas, como visitas, visitantes únicos, entradas, taxa de rejeição e muito mais. Para avaliar o desempenho de páginas WKND e CTAs da página inicial, arraste e solte as dimensões específicas da WKND (Nome da página WKND, Nome da CTA WKND) e as métricas (Evento de clique WKND CTA). Esses insights são valiosos para que os profissionais de marketing entendam quais CTAs são mais eficazes e tomem decisões orientadas por dados, alinhadas a seus objetivos de negócios.
+Vamos reabrir o projeto do Analysis Workspace criado na etapa [Configurar o Analytics](#setup-analytics---report-suite-analysis-workspace). Na seção **Principais páginas**, examine várias métricas, como visitas, visitantes únicos, entradas, taxa de rejeição e muito mais. Para avaliar o desempenho das páginas WKND e CTAs da página inicial, arraste e solte as dimensões específicas da WKND (Nome da página WKND, Nome do CTA WKND) e as métricas (Evento de clique WKND CTA). Esses insights são valiosos para que os profissionais de marketing entendam quais CTAs são mais eficazes e tomem decisões orientadas por dados, alinhadas a seus objetivos de negócios.
 
 Para visualizar jornadas de usuário, use a Visualização de fluxo, começando com o **Nome da página do WKND** e expandindo em vários caminhos.
 
@@ -257,7 +257,7 @@ Para visualizar jornadas de usuário, use a Visualização de fluxo, começando 
 
 ## Resumo
 
-Excelente trabalho. Você concluiu a configuração do AEM e do Adobe Analytics usando o SDK da Web da plataforma para coletar, analisar a visualização de página e os dados de cliques do CTA.
+Excelente trabalho. Você concluiu a configuração do AEM e do Adobe Analytics usando o SDK da Web da plataforma para coletar, analisar a visualização da página e os dados de cliques do CTA.
 
 A implementação do Adobe Analytics é fundamental para que as equipes de marketing obtenham insights do comportamento do usuário, tomem decisões informadas, permitindo que otimizem seu conteúdo e tomem decisões orientadas por dados.
 
