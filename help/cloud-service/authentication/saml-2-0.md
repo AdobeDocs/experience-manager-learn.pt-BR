@@ -11,7 +11,7 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 49f8df6e658b35aa3ba6e4f70cd39ff225c46120
+source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
 workflow-type: tm+mt
 source-wordcount: '3919'
 ht-degree: 1%
@@ -615,7 +615,7 @@ Permitir os padrões de URL necessários com base em se GET ou POST é usado
 
 ```
 # Allow GET-based SAML authentication invocation
-/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query "*" }
 
 # Allow POST-based SAML authentication invocation
 /0192 { /type "allow" /method "POST" /url "/system/sling/login" }
