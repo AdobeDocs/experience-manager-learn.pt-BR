@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 9e093e87c8c369ddd750be4a7dc30e2bf86495d5
+source-git-commit: d5dff9378f31acb0fbce0bb86e2d0022ee725f83
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Há dois recursos disponíveis em [ACS AEM Commons](https://adobe-consulting-ser
 
 #### Gerenciador do Mapa de Redirecionamento
 
-O [Gerenciador do Mapa de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ajuda os administradores do AEM a manter e publicar facilmente os arquivos do [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sem acessar diretamente o Apache Web Server ou exigir uma reinicialização do Apache Web Server. Esse recurso permite que os usuários de permissões criem, atualizem e excluam regras de redirecionamento de um console no AEM, sem a ajuda da equipe de desenvolvimento ou de uma implantação do AEM. O Gerenciador de Redirecionamento é compatível com **AEM as a Cloud Service** e **AEM 6.x**.
+O [Gerenciador do Mapa de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ajuda os administradores do AEM a manter e publicar facilmente os arquivos do [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sem acessar diretamente o Apache Web Server ou exigir uma reinicialização do Apache Web Server. Esse recurso permite que os usuários de permissões criem, atualizem e excluam regras de redirecionamento de um console no AEM, sem a ajuda da equipe de desenvolvimento ou de uma implantação do AEM. O Gerenciador de Redirecionamento é compatível com **AEM as a Cloud Service** (consulte a estratégia [Redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)) e **AEM 6.x**.
 
 #### Gerenciador de redirecionamento
 
