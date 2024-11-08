@@ -1,5 +1,5 @@
 ---
-title: Utilização de guias verticais no AEM Forms as a Cloud Service
+title: Adição de ícones personalizados
 description: Adicionar ícones personalizados a guias verticais
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,9 +11,10 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Adicionar ícones personalizados às guias pode melhorar a experiência do usuá
 
 * Usabilidade aprimorada: os ícones podem transmitir rapidamente o propósito de cada guia, facilitando para os usuários encontrar o que estão procurando rapidamente. Dicas visuais como ícones ajudam os usuários a navegar de forma mais intuitiva.
 
-* Hierarquia visual e foco: os ícones criam uma separação mais distinta entre as guias, melhorando a hierarquia visual. Isso pode ajudar guias importantes a se destacarem e orientar a atenção dos usuários com mais eficiência.
+* Hierarquia visual e foco: os ícones criam uma separação mais distinta entre as guias, melhorando a hierarquia visual. Isso pode ajudar guias importantes a se destacarem e orientar efetivamente a atenção dos usuários.
 Ao seguir este artigo, você poderá colocar os ícones como mostrado abaixo
 
 ![ícones](assets/icons.png)
@@ -42,9 +43,9 @@ Os ícones marcados em vermelho são os novos ícones adicionados.
 
 ## Criar mapa de ícones para armazenar os ícones
 
-Crie o mapa de ícones para o arquivo _variable.scss. O mapa de CSS $icon-map é uma coleção de pares de valores chave, onde cada chave representa um nome de ícone (como início, família, etc.) e cada valor é o caminho para o arquivo de imagem associado a esse ícone.
+Crie o mapa de ícones no arquivo _variable.scss. O mapa de CSS $icon-map é uma coleção de pares de valores chave, onde cada chave representa um nome de ícone (como início, família, etc.) e cada valor é o caminho para o arquivo de imagem associado a esse ícone.
 
-![variable-scss](assets/variable.scss)
+![variable-scss](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ Adicione o seguinte código ao _mixin.scss
 
 A combinação de adicionar ícone à guia vertical foi projetada para adicionar um ícone personalizado ao lado do texto em uma guia vertical. Ele permite incluir facilmente uma imagem como um ícone nas guias, posicionando-a ao lado do texto e estilizando-a para garantir consistência e alinhamento.
 
-Detalhamento do mixin
-Aqui está o que cada parte da mixin faz:
+Detalhamento do mixin, aqui está o que cada parte do mixin faz:
 
 Parâmetros:
 
