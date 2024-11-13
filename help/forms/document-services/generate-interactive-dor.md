@@ -10,9 +10,9 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](h
 
 ### Criar formulário adaptável
 
-Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Esta biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada
+Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Essa biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada.
 O código a seguir é acionado ao clicar no _PDF de Download_
 
 ```javascript
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-No código de amostra, extraímos o Nome xdp e outros parâmetros do objeto de solicitação. Se o formulário não for baseado em XSD, o documento xml a ser mesclado com o xdp será criado. Se o formulário for baseado em XSD, simplesmente extrairmos o nó apropriado do formulário adaptável enviado para gerar o documento xml a ser mesclado com o modelo xdp.
+Neste exemplo de código, o nome xdp e outros parâmetros são extraídos do objeto de solicitação. Se o formulário não for baseado em um XSD, um novo documento XML será criado para mesclar com o xdp. No entanto, se o formulário for baseado em XSD, o nó relevante será extraído diretamente dos dados enviados do formulário adaptável e um documento XML será gerado para mesclar-se com o modelo xdp de acordo.
 
 ## Implantar a amostra no servidor
 
@@ -226,6 +226,11 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Preencha alguns dos campos de formulário.
 1. Clique em Baixar PDF para obter o PDF. Talvez seja necessário aguardar alguns segundos para baixar o PDF.
+
+>[!NOTE]
+>
+>Ao abrir o PDF baixado usando o visualizador de pdf do navegador, você não verá os dados no pdf. Abra o PDF baixado usando Adobe Acrobat ou Adobe Reader.
+
 
 >[!NOTE]
 >
