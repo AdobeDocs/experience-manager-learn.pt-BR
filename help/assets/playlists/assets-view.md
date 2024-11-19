@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 889d9a15041e23fa42d24c508a131690db58738a
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
 # Listas de reprodução de vídeo para exibição do Assets
 
-![exibição do AEM Assets Assets](./assets/assets-view.png){align=center}
+![exibição do AEM Assets Assets](./assets/assets-view.png){align="center"}
 
 Explore essas listas de reprodução para dominar a visualização do AEM Assets as a Cloud Service Assets — que abrange configuração, otimização, uso e integração contínua com fluxos de trabalho criativos. Obtenha os insights necessários para ter sucesso com o AEM Assets as a Cloud Service.
 
