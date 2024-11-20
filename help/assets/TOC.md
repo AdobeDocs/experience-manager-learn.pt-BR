@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 197f8b0d664971283cd893417a43e4e85e1b4923
+source-git-commit: abc6b4df7026f702b3cdaac34fd8ac790670aaa0
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 15%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 15%
 + [Visão geral](overview.md)
 
 + Listas de reprodução de vídeo{#video-playlists}
-   + [Exibição do administrador](playlists/admin-view.md)
    + [Visualização do Assets](playlists/assets-view.md)
+   + [Exibição do administrador](playlists/admin-view.md)
 
 + Configurando{#configuring}
    + [Pastas de linha de base](configuring/baseline-folders.md)
@@ -82,6 +82,7 @@ ht-degree: 15%
 + Content Hub{#content-hub}
    + [Visão geral](./content-hub/overview.md)
    + [Configurar](./content-hub/set-up.md)
+   + [Configurar ](./content-hub/configure.md)
    + [Adicionar ativos](./content-hub/add-assets.md)
    + [Baixar ativos](./content-hub/download-assets.md)
    + [Variantes de imagem usando Adobe Express](./content-hub/image-variants.md)
