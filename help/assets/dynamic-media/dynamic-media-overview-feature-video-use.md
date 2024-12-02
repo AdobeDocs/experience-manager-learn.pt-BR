@@ -9,9 +9,9 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 0%
 # Utilização do Dynamic Media com o AEM Assets {#understanding-aem-dynamic-media}
 
 Esta série de vídeos em várias partes oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo do Experience Manager Assets. Nossa estrutura e o conjunto de componentes permitem que os profissionais de marketing personalizem e entreguem experiências interativas de multimídia em todos os dispositivos.
+
+## Demonstração ao vivo do Dynamic Media
+
+[![Demonstração ao vivo do AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+
+Explore as possibilidades do Adobe Dynamic Media com nossa [**Demonstração ao vivo**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), onde as soluções de ponta ganham vida. Saiba como o [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) simplifica fluxos de trabalho e eleva o gerenciamento de conteúdo e descubra as [**Experiências interativas**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) que cativam públicos em todos os canais. [Veja como o Dynamic Media pode transformar sua estratégia de conteúdo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
 
 ## Visão geral do Dynamic Media
 
