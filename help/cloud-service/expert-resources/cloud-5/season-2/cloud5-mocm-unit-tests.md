@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 09a4b4fd-b4b5-413b-bd27-d0c1c41b1c8d
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 5%
+source-wordcount: '88'
+ht-degree: 6%
 
 ---
 
@@ -26,3 +26,7 @@ Uma etapa frequentemente ignorada no desenvolvimento de software, os testes de u
 
 + Visão geral das verificações automatizadas
 + [Regras de qualidade do código personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
+
+## Recursos adicionais
+
+Assista a vídeos relacionados na página [Cloud 5 temporada 2](../cloud5-season-2.md).

@@ -10,10 +10,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
 duration: 312
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 0%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -30,3 +30,7 @@ Amol Anand entra em cena para nos dar a redução nas integrações com o Adobe 
 + [Logs e monitoramento](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
 + Definindo [Limites do Sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
 + Dicas de [Desenvolvimento Local](https://developer.adobe.com/app-builder/docs/resources/debugging/)
+
+## Recursos adicionais
+
+Assista a vídeos relacionados na página [Cloud 5 temporada 1](cloud5-season-1.md).
