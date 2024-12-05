@@ -8,16 +8,16 @@ role: Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 duration: 0
-last-substantial-update: 2024-09-24T00:00:00Z
+last-substantial-update: 2024-12-04T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 01e6ef917d855e653eccfe35a2d7548f12628604
+exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
+source-git-commit: 97680d95d4cd3cb34956717a88c15a956286c416
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
-
 
 # Páginas de erro personalizadas
 
@@ -50,14 +50,18 @@ A página de erro padrão _é servida_ do _tipo de serviço AEM_(autor, publica�
 
 | Página de erro exibida em | Detalhes |
 |---------------------|:-----------------------:|
-| Tipo de serviço AEM - autor, publicação, visualização | Quando a solicitação de página é fornecida pelo tipo de serviço AEM e qualquer um dos cenários de erro acima ocorre, a página de erro é fornecida pelo tipo de serviço AEM. |
+| Tipo de serviço AEM - autor, publicação, visualização | Quando a solicitação de página é fornecida pelo tipo de serviço AEM e qualquer um dos cenários de erro acima ocorre, a página de erro é fornecida pelo tipo de serviço AEM. Por padrão, a página de erro 5XX é substituída pela página de erro CDN gerenciada por Adobe, a menos que o cabeçalho `x-aem-error-pass: true` esteja definido. |
 | CDN gerenciada por Adobe | Quando o CDN gerenciado por Adobe _não pode alcançar o tipo de serviço AEM_ (servidor de origem), a página de erro é disponibilizada pelo CDN gerenciado por Adobe. **É um evento improvável, mas que vale a pena planejar.** |
+
+>[!NOTE]
+>
+>No AEM as Cloud Service, o CDN fornece uma página de erro genérica quando um erro 5XX é recebido do back-end. Para permitir que a resposta real do back-end passe, é necessário adicionar o seguinte cabeçalho à resposta: `x-aem-error-pass: true`.
+>Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibem a página de erro genérico.
 
 
 Por exemplo, as páginas de erro padrão veiculadas pelo tipo de serviço AEM e pelo CDN gerenciado por Adobe são as seguintes:
 
 ![Páginas de Erro Padrão do AEM](./assets/aem-default-error-pages.png)
-
 
 No entanto, você pode _personalizar o tipo de serviço do AEM e as páginas de erro da CDN_ gerenciadas por Adobe para corresponder à sua marca e fornecer uma melhor experiência ao usuário.
 
@@ -110,22 +114,33 @@ Vamos analisar como o projeto [AEM WKND](https://github.com/adobe/aem-guides-wkn
    - O valor [DispatcherPassError](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L133) está definido como 1 para que o Dispatcher permita que o Apache manipule todos os erros.
 
   ```
+  # In `wknd.vhost` file:
+  
   ...
-  # ErrorDocument directive in wknd.vhost file
+  
+  ## ErrorDocument directive
   ErrorDocument 404 ${404_PAGE}
   ErrorDocument 500 ${500_PAGE}
   ErrorDocument 502 ${500_PAGE}
   ErrorDocument 503 ${500_PAGE}
   ErrorDocument 504 ${500_PAGE}
   
+  ## Add Header for 5XX error page response
+  <IfModule mod_headers.c>
+    ### By default, CDN overrides 5XX error pages. To allow the actual response of the backend to pass through, add the header x-aem-error-pass: true
+    Header set x-aem-error-pass "true" "expr=%{REQUEST_STATUS} >= 500 && %{REQUEST_STATUS} < 600"
+  </IfModule>
+  
   ...
-  # DispatcherPassError value in wknd.vhost file
+  ## DispatcherPassError directive
   <IfModule disp_apache2.c>
       ...
       DispatcherPassError        1
   </IfModule>
   
-  # Custom error pages path in custom.vars file
+  # In `custom.vars` file
+  ...
+  ## Define the error page paths
   Define 404_PAGE /content/wknd/us/en/errors/404.html
   Define 500_PAGE /content/wknd/us/en/errors/500.html
   ...
@@ -370,7 +385,7 @@ Por fim, implante a regra CDN configurada no ambiente do AEM as a Cloud Service 
 
 Para testar as páginas de erro do CDN, siga as etapas abaixo:
 
-- Abra o navegador e navegue até a URL de ambiente Publish, anexe o `cdnstatus?code=404` à URL, por exemplo, [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404), ou acesse usando a [URL de domínio personalizado](https://wknd.enablementadobe.com/cdnstatus?code=404)
+- No navegador, navegue até o URL do Publish do AEM as a Cloud Service, anexe o `cdnstatus?code=404` ao URL, por exemplo, [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) ou acesse usando o [URL de domínio personalizado](https://wknd.enablementadobe.com/cdnstatus?code=404)
 
   ![WKND - Página de Erro da CDN](./assets/wknd-cdn-error-page.png)
 
@@ -389,4 +404,3 @@ Neste tutorial, você aprendeu sobre as páginas de erro padrão, de onde as pá
 - [Configurando Páginas de Erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
 - [Cloud Manager - Configurar pipelines](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
-
