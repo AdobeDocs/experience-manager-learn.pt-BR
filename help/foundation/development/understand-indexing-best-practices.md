@@ -13,7 +13,7 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Para ter uma funcionalidade de pesquisa eficiente e correta que não afete o des
 
 - Entenda os requisitos de pesquisa e verifique se os índices OOTB podem dar suporte aos requisitos de pesquisa. Use a **Ferramenta de Desempenho de Consulta**, disponível em [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS via Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Defina uma consulta ideal, use o [fluxograma de otimização de consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) como referência.
+- Defina uma consulta ideal, use o [fluxograma de otimização de consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) como referência.
 
 - Se os índices OOTB não forem compatíveis com os requisitos de pesquisa, você terá duas opções. No entanto, examine as [Dicas para Criar Índices Eficientes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Personalizar o índice OOTB: opção preferencial, pois é fácil de manter e atualizar.

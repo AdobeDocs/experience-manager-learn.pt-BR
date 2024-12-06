@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de Código Completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre as [práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/br/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com a [configuração do projeto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Todos os códigos mencionados devem ser usados como referência e só devem ser implantados em uma [instância de AEM de desenvolvimento local](https://experienceleague.adobe.com/br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Este tutorial presume algum conhecimento básico sobre as [práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com a [configuração do projeto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Todos os códigos mencionados devem ser usados como referência e só devem ser implantados em uma [instância de AEM de desenvolvimento local](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estrutura de um modelo de projeto
 
@@ -655,7 +655,7 @@ A criação de um assistente personalizado pode ser muito eficiente, pois você 
 
 1. Também adicionaremos um campo de seleção de prioridade que determinará a prioridade da primeira tarefa no fluxo de trabalho (consulte [Criar o modelo de fluxo de trabalho](#create-workflow-model): Etapa 5).
 
-   Abaixo de `/content-approval-start/jcr:content/items/column2/items`, crie um novo nó do tipo `nt:unstructured` chamado **prioridade**. Usaremos o [componente Selecionar da interface do usuário do Granite](https://experienceleague.adobe.com/br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para preencher o campo de formulário.
+   Abaixo de `/content-approval-start/jcr:content/items/column2/items`, crie um novo nó do tipo `nt:unstructured` chamado **prioridade**. Usaremos o [componente Selecionar da interface do usuário do Granite](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) para preencher o campo de formulário.
 
    Abaixo do nó **priority** adicionaremos um nó **items** de **nt:unstructured**. Abaixo do nó **items** adicione mais 3 nós para preencher as opções de seleção de Alto, Medium e Baixo. Cada nó é do tipo **nt:unstructured** e deve ter uma propriedade **text** e **value**. O texto e o valor devem ser iguais:
 
