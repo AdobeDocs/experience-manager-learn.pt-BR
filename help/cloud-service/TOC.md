@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1356'
 ht-degree: 15%
 
 ---
@@ -416,9 +416,10 @@ ht-degree: 15%
    + [Série para especialistas em AEM](./expert-resources/expert-series/aem-experts-series.md)
    + Nuvem 5{#cloud-5}
       + [Introdução](./expert-resources/cloud-5/cloud5-introduction.md)
+      + [Temporada 4](./expert-resources/cloud-5/cloud5-season-4.md)
       + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
-      + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [Temporada 3](./expert-resources/cloud-5/cloud5-season-3.md)
+      + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
       + [CDN AEM Parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [CDN AEM Parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [Arquivos de registro do AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
@@ -453,4 +454,7 @@ ht-degree: 15%
          + [Otimização de pontuação do farol - Parte1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
          + [Otimização de pontuação do farol - Parte2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
          + [Otimização de pontuação do farol - Parte3](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part3.md)
-
+      + Temporada 4{#season-4}
+         + [Práticas recomendadas](./expert-resources/cloud-5/season-4/cloud5-edge-delivery-services-best-practices.md)
+         + [Otimizações de pesquisa](./expert-resources/cloud-5/season-4/cloud5-search-optimization.md)
+         + [Google Maps](./expert-resources/cloud-5/season-4/cloud5-google-maps.md)
