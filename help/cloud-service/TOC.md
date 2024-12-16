@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 891fd1cfdcb82a6d4f1bb031cfa11893a69d0546
+source-git-commit: 9c0c0594d8bcecbf1e0daf7f3c5d7146adcdb08f
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 15%
@@ -59,7 +59,7 @@ ht-degree: 15%
 + Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-set-up}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
-   + [SDK AEM local](./local-development-environment/aem-runtime.md)
+   + [AEM SDK local](./local-development-environment/aem-runtime.md)
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
 + Desenvolvendo{#developing}
    + Extensibilidade{#extensibility}
@@ -88,7 +88,7 @@ ht-degree: 15%
                + [Medalhas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
                + [Campos personalizados](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
    + Conceitos básicos de desenvolvimento{#basics}
-      + [SDK do AEM](./developing/basics/aem-sdk.md)
+      + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
       + [Estrutura de projetos do AEM](./developing/basics/project-structure.md)
@@ -124,9 +124,9 @@ ht-degree: 15%
          + [Visão geral](./developing/universal-editor/react-app/overview.md)
          + [Configuração de desenvolvimento local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Aplicativo React do instrumento](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [JavaDocs da API do SDK do AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [JavaDocs da API SDK do AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Depurando AEM{#debugging}
-   + Depurando o SDK do AEM{#debugging-aem-sdk}
+   + Depurando o SDK AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuração remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -417,9 +417,9 @@ ht-degree: 15%
    + Nuvem 5{#cloud-5}
       + [Introdução](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Temporada 4](./expert-resources/cloud-5/cloud5-season-4.md)
-      + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [Temporada 3](./expert-resources/cloud-5/cloud5-season-3.md)
       + [Temporada 2](./expert-resources/cloud-5/cloud5-season-2.md)
+      + [Temporada 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [CDN AEM Parte 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [CDN AEM Parte 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [Arquivos de registro do AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
