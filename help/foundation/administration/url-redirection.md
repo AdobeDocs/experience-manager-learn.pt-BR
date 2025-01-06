@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 50ddda35adbb3af0b66a6e24a135fd5b94a3fb3a
+source-git-commit: 907a313a9ed7e92358f0aa2503f8333fb26ba35d
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ As soluções de redirecionamento de URL do AEM são as seguintes:
 | [Na Edge via, traga sua própria CDN (BYOCDN)](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [Regras do Apache `mod_rewrite` como configuração do Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS Commons - Gerenciador de Mapa de Redirecionamento](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
-| [ACS Commons - Gerenciador de redirecionamento](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
+| [ACS Commons - Gerenciador de redirecionamento](#redirect-manager) | ✘ | ✔ | ✔ | AEM/Dispatcher |
 | [A propriedade da página `Redirect`](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
 
@@ -81,6 +81,8 @@ O [Gerenciador do Mapa de Redirecionamento](https://adobe-consulting-services.gi
 #### Gerenciador de redirecionamento
 
 O [Gerenciador de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) permite que os usuários no AEM mantenham e publiquem facilmente redirecionamentos do AEM. A implementação é baseada no filtro de servlet Java™, portanto, no consumo típico de recursos JVM. Esse recurso também elimina a dependência da equipe de desenvolvimento do AEM e das implantações do AEM. O Gerenciador de Redirecionamento é compatível com **AEM as a Cloud Service** e **AEM 6.x**. Embora a solicitação redirecionada inicial deva atingir o serviço AEM Publish para gerar o cache 301/302 (a maioria) dos CDNs 301/302 por padrão, permitindo que as solicitações subsequentes sejam redirecionadas na borda/CDN.
+
+O [Gerenciador de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) também oferece suporte à estratégia [Redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para **AEM as a Cloud Service** ao [compilar redirecionamentos em um arquivo de texto](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) para [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), de modo que ele permite a atualização de redirecionamentos usados no Apache Web Server sem acessá-lo diretamente ou exigir sua reinicialização. Nesse cenário, a solicitação de redirecionamento inicial atinge o servidor Web Apache, e não o serviço AEM Publish.
 
 ### A propriedade da página `Redirect`
 
