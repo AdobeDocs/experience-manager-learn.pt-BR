@@ -1,6 +1,6 @@
 ---
 title: Como chamar APIs do AEM baseadas em OpenAPI
-description: Saiba como configurar e chamar APIs AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados.
+description: Saiba como configurar e chamar APIs AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados usando a autenticação de servidor para servidor OAuth.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,18 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
 
-# Como chamar APIs do AEM baseadas em OpenAPI{#invoke-openapi-based-aem-apis}
+# Invocar APIs AEM baseadas em OpenAPI para autenticação de servidor para servidor{#invoke-openapi-based-aem-apis}
 
-Saiba como configurar e chamar APIs AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados.
+Saiba como configurar e invocar APIs AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados usando a autenticação de _servidor para servidor do OAuth_.
+
+A autenticação de servidor para servidor OAuth é ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário. Ele usa o tipo de concessão OAuth 2.0 _client_credentials_ para autenticar o aplicativo cliente.
 
 >[!AVAILABILITY]
 >
@@ -30,7 +32,7 @@ Saiba como configurar e chamar APIs AEM baseadas em OpenAPI no AEM as a Cloud Se
 Neste tutorial, você aprenderá a:
 
 - Habilite o acesso às APIs do AEM com base em OpenAPI para o seu ambiente do AEM as a Cloud Service.
-- Crie e configure um projeto do Adobe Developer Console (ADC) para acessar APIs AEM usando a autenticação de servidor para servidor OAuth.
+- Crie e configure um projeto do Adobe Developer Console (ADC) para acessar APIs AEM usando a _autenticação de servidor para servidor OAuth_.
 - Desenvolva um aplicativo NodeJS de amostra que chame a API do autor do Assets para recuperar metadados de um ativo específico.
 
 Antes de começar, verifique se você revisou a seção [Acessando APIs de Adobe e conceitos relacionados](overview.md#accessing-adobe-apis-and-related-concepts).
