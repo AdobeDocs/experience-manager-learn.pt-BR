@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '4037'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ O fluxo típico de uma integração AEM Publish SAML é o seguinte:
    + O IDP solicita as credenciais ao usuário.
    + O usuário já está autenticado com o IDP e não precisa fornecer mais credenciais.
 1. O IDP gera uma asserção SAML contendo os dados do usuário e a assina usando o certificado privado do IDP.
-1. O IDP envia a asserção SAML via HTTP POST, por meio do navegador da Web do usuário, para o AEM Publish.
+1. O IDP envia a asserção SAML via HTTP POST, por meio do navegador da Web do usuário (RESPECTIVE_PROTECTED_PATH/saml_login), para o AEM Publish.
 1. O AEM Publish recebe a declaração SAML e valida a integridade e autenticidade da declaração SAML usando o certificado público IDP.
 1. O AEM Publish gerencia o registro de usuário do AEM com base na configuração OSGi do SAML 2.0 e no conteúdo da Asserção SAML.
    + Cria usuário
@@ -402,7 +402,7 @@ Durante o processo de autenticação SAML, o IDP inicia um POST HTTP do lado do 
 
 O cabeçalho `Origin` dessa solicitação POST HTTP geralmente tem um valor diferente do host AEM Publish, exigindo a configuração do CORS.
 
-Ao testar a autenticação SAML no SDK AEM local (`localhost:4503`), o IDP pode definir o cabeçalho `Origin` como `null`. Em caso afirmativo, adicione `"null"` à lista `alloworigin`.
+Ao testar a autenticação SAML no AEM SDK local (`localhost:4503`), o IDP pode definir o cabeçalho `Origin` como `null`. Em caso afirmativo, adicione `"null"` à lista `alloworigin`.
 
 1. Crie um arquivo de configuração OSGi em seu projeto em `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`
    + Altere `/wknd-examples/` para o nome do seu projeto
@@ -439,6 +439,9 @@ Após a autenticação bem-sucedida para o IDP, o IDP orquestrará um POST HTTP 
 # Allow SAML HTTP POST to ../saml_login end points
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
+
+>[!NOTE]
+>Ao implantar várias configurações SAML no AEM para vários caminhos protegidos e endpoints IDP distintos, verifique se o IDP publica no endpoint RESPECTIVE_PROTECTED_PATH/saml_login para selecionar a configuração SAML apropriada no lado do AEM. Se houver configurações SAML duplicadas para o mesmo caminho protegido, a seleção da configuração SAML ocorrerá aleatoriamente.
 
 Se a regravação de URL no servidor Web Apache estiver configurada (`dispatcher/src/conf.d/rewrites/rewrite.rules`), verifique se as solicitações para os pontos de extremidade `.../saml_login` não foram acidentalmente danificadas.
 
@@ -561,6 +564,12 @@ Implante a ramificação Git do Cloud Manager de destino (neste exemplo, `develo
 ## Chamar a autenticação SAML
 
 O fluxo de autenticação SAML pode ser chamado de uma página da Web do site AEM, criando links especialmente criados ou um botão. Os parâmetros descritos abaixo podem ser definidos de forma programática conforme necessário, portanto, por exemplo, um botão de logon pode definir o `saml_request_path`, que é o local em que o usuário é levado após a autenticação SAML bem-sucedida, para páginas AEM diferentes, com base no contexto do botão.
+
+## Armazenamento em cache seguro ao usar SAML
+
+Na instância de publicação do AEM, a maioria das páginas normalmente é armazenada em cache. No entanto, para caminhos protegidos por SAML, o armazenamento em cache deve ser desativado ou o armazenamento em cache seguro ativado usando a configuração auth_checker. Para obter mais informações, consulte os detalhes fornecidos [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+
+Observe que, se você armazenar em cache caminhos protegidos sem ativar o auth_checker, poderá enfrentar um comportamento imprevisível.
 
 ### solicitação GET
 
