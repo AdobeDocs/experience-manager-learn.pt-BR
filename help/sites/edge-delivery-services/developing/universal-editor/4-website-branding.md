@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
+source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar identidade visual do site
 
@@ -343,8 +343,8 @@ Adicione os nomes de família de fontes de fallback às variáveis CSS de fontes
 
 Você pode baixar os arquivos CSS atualizados a partir dos links abaixo:
 
-* [`styles.css`](https://adobe.com#TODO)
-* [`fonts.css`](https://adobe.com#TODO)
+* [`styles.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/styles.css)
+* [`fonts.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/fonts.css)
 
 ## Vincule os arquivos CSS
 
