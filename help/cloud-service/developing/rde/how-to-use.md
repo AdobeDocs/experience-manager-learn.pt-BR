@@ -11,22 +11,22 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
+source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
 
 # Como usar o ambiente de desenvolvimento rápido
 
-Saiba como usar o **Ambiente de desenvolvimento rápido (RDE) do** no AEM as a Cloud Service. Implante código e conteúdo para ciclos de desenvolvimento mais rápidos do seu código quase final no RDE, a partir do seu ambiente de desenvolvimento integrado (IDE) favorito.
+Saiba **como usar** o Ambiente de desenvolvimento rápido (RDE) no AEM as a Cloud Service. Implante código e conteúdo para ciclos de desenvolvimento mais rápidos do seu código quase final no RDE, a partir do seu ambiente de desenvolvimento integrado (IDE) favorito.
 
 Usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), você aprenderá a implantar vários artefatos AEM no RDE executando o comando AEM-RDE `install` no IDE favorito.
 
 - Implantação do código e do pacote de conteúdo do AEM (all, ui.apps)
 - Implantação do pacote OSGi e do arquivo de configuração
-- Implantação de configurações do Apache e Dispatcher como um arquivo zip
+- Implantação das configurações do Apache e Dispatcher como um arquivo zip
 - Arquivos individuais como HTL, implantação de `.content.xml` (caixa de diálogo XML)
 - Revisar outros comandos RDE como `status, reset and delete`
 
@@ -96,7 +96,7 @@ Vamos aprimorar o `Hello World Component` e implantá-lo no RDE.
    ...
    ```
 
-1. Verifique as alterações no SDK AEM local executando a compilação do Maven ou sincronizando arquivos individuais.
+1. Verifique as alterações no AEM SDK local executando a compilação Maven ou sincronizando arquivos individuais.
 
 1. Implante as alterações no RDE por meio do pacote `ui.apps` ou implantando a caixa de diálogo individual e os arquivos HTL:
 
@@ -191,7 +191,7 @@ Os arquivos de configuração do Apache ou Dispatcher **não podem ser implantad
    ...
    ```
 
-1. Verifique as alterações localmente. Consulte [Executar o Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) para obter mais detalhes.
+1. Verifique as alterações localmente. Consulte [Executar o Dispatcher localmente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) para obter mais detalhes.
 1. Implante as alterações no RDE executando o seguinte comando:
 
    ```shell
@@ -200,7 +200,49 @@ Os arquivos de configuração do Apache ou Dispatcher **não podem ser implantad
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
+1. Verifique as alterações no RDE.
+
+### Implantar arquivos de configuração (YAML)
+
+Os arquivos de configuração de CDN, tarefas de manutenção, encaminhamento de logs e autenticação da API AEM podem ser implantados no RDE usando o comando `install`. Essas configurações são gerenciadas como arquivos YAML na pasta `config` do projeto AEM. Consulte [Configurações com Suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obter mais detalhes.
+
+Para saber como implantar os arquivos de configuração, vamos aprimorar o arquivo de configuração `cdn` e implantá-lo no RDE.
+
+1. Abrir o arquivo `cdn.yaml` da pasta `config`
+1. Atualizar a configuração desejada; por exemplo, atualizar o limite de taxa para 200 solicitações por segundo
+
+   ```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev", "stage", "prod"]
+   data:
+     trafficFilters:
+       rules:
+       #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+       - name: limit-origin-requests-client-ip
+         when:
+           reqProperty: tier
+           equals: 'publish'
+         rateLimit:
+           limit: 200 # updated rate limit
+           window: 10
+           count: fetches
+           penalty: 300
+           groupBy:
+             - reqProperty: clientIp
+         action: log
+   ...
+   ```
+
+1. Implante as alterações no RDE executando o seguinte comando
+
+   ```shell
+   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   ```
+
 1. Verificar alterações no RDE
+
 
 ## Comandos adicionais do plug-in AEM RDE
 
@@ -231,8 +273,8 @@ Saiba mais sobre o [ciclo de vida de desenvolvimento/implantação usando o RDE]
 
 ## Recursos adicionais
 
-[Documentação de comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
+[Documentação de comandos RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Plug-in da CLI do Adobe I/O Runtime para interações com ambientes de desenvolvimento AEM Rapid](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configuração do projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[Configuração do projeto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
