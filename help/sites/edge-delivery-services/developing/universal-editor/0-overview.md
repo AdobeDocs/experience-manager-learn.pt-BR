@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 doc-type: Catalog
 jira: KT-15832
-duration: 89
+duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: aa8ea183639c4c63be74f7ef1ce099c89454c099
+source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Neste tutorial, você aprenderá os fundamentos da criação de um site de AEM q
 
 Saiba como criar um projeto de código e configurar um novo site no AEM as a Cloud Service. Essa configuração permite o desenvolvimento contínuo com o Editor universal para a criação de conteúdo e a entrega rápida de conteúdo por meio do Edge Delivery Services.
 
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./1-new-code-project.md
 * ./2-new-aem-site.md
@@ -87,7 +87,7 @@ Saiba como criar um projeto de código e configurar um novo site no AEM as a Clo
 ## Configuração de desenvolvimento
 
 Saiba como configurar o ambiente de desenvolvimento local para permitir o desenvolvimento rápido do site. Essa configuração permite a criação contínua de sites com o Editor universal e a entrega eficiente de conteúdo por meio de Edge Delivery Services, garantindo um fluxo de trabalho de desenvolvimento suave e otimizado.
-<!-- XCARDS 
+<!-- CARDS 
 
 * ./3-local-development-environment.md
 * ./4-website-branding.md
@@ -163,7 +163,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./5-new-block.md" title="Criar um bloco" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/5-new-block/teaser-block.png" alt="Criar um bloco"
+                        <img class="is-bordered-r-small" src="./assets/5-new-block/card.png" alt="Criar um bloco"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./6-author-block.md" title="Criar um bloco" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/6-author-block/open-new-site.png" alt="Criar um bloco"
+                        <img class="is-bordered-r-small" src="./assets/6-author-block/card.png" alt="Criar um bloco"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7a-block-css.md" title="Desenvolver um bloco com CSS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="Desenvolver um bloco com CSS"
+                        <img class="is-bordered-r-small" src="./assets/7a-block-css/card.png" alt="Desenvolver um bloco com CSS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./7b-block-js-css.md" title="Desenvolver um bloco com CSS e JS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/7a-block-css/inspect-block-dom.png" alt="Desenvolver um bloco com CSS e JS"
+                        <img class="is-bordered-r-small" src="./assets/7b-block-js-css/card.png" alt="Desenvolver um bloco com CSS e JS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
