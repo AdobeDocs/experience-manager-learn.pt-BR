@@ -13,9 +13,9 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
-source-git-commit: c638c1e012952f2f43806a325d729cde088ab9f5
+source-git-commit: 241c56d34c851cf9bac553cb9fc545a835e495d2
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 # Gerar FPIDs de Experience Platform com o AEM Sites
 
 A integração dos sites do Adobe Experience Manager (AEM) entregues por meio do AEM Publish, com o Adobe Experience Platform AEM (AEP) exige que o gere e mantenha um cookie exclusivo de ID de dispositivo primário (FPID) para rastrear de forma exclusiva a atividade do usuário.
+
+O cookie FPID deve ser definido pelo servidor (AEM Publish) em vez de usar o JavaScript para criar um cookie do lado do cliente. Isso ocorre porque os navegadores modernos, como Safari e Firefox, podem bloquear ou expirar rapidamente os cookies gerados pelo JavaScript.
 
 Leia a documentação de suporte para [saber mais sobre os detalhes de como as IDs de dispositivo de primeira parte e as IDs de Experience Cloud funcionam juntas](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
@@ -47,7 +49,7 @@ O diagrama a seguir descreve como o serviço AEM Publish gerencia FPIDs.
 1. A página da Web é retornada ao navegador da Web, preenchendo os caches que não puderam atender à solicitação. Com o AEM, espere que as taxas de hit do cache do CDN e AEM Dispatcher sejam maiores que 90%.
 1. A página da Web contém JavaScript que faz uma solicitação XHR (AJAX) assíncrona não armazenável em cache para um servlet FPID personalizado no serviço AEM Publish. Como essa é uma solicitação não armazenável em cache (em virtude de seu parâmetro de consulta aleatório e cabeçalhos Cache-Control), ela nunca é armazenada em cache pelo CDN ou pelo AEM Dispatcher e sempre alcança o serviço AEM Publish para gerar a resposta.
 1. O servlet FPID personalizado no serviço AEM Publish processa a solicitação, gerando um novo FPID quando nenhum cookie FPID existente é encontrado, ou estende a vida de qualquer cookie FPID existente. O servlet também retorna o FPID no corpo da resposta para uso pelo JavaScript do lado do cliente. Felizmente a lógica de servlet FPID personalizado é leve, evitando que essa solicitação afete o desempenho do serviço AEM Publish.
-1. A resposta para a solicitação XHR retorna ao navegador com o cookie FPID e o FPID como JSON no corpo da resposta para uso pelo SDK da Web da Platform.
+1. A resposta para a solicitação XHR retorna ao navegador com o cookie FPID e o FPID como JSON no corpo da resposta para uso pelo Platform Web SDK.
 
 ## Exemplo de código
 
@@ -69,7 +71,7 @@ O servlet grava o FPID na resposta como um objeto JSON no formato: `{ fpid: "<FP
 
 É importante fornecer o FPID ao cliente no corpo, pois o cookie FPID está marcado como `HttpOnly`, o que significa que somente o servidor pode ler seu valor, e o JavaScript do lado do cliente não. Para evitar uma nova busca desnecessária do FPID em cada carregamento de página, um cookie `FPID_CLIENT` também é definido, indicando que o FPID foi gerado e expondo o valor ao JavaScript do lado do cliente para uso.
 
-O valor FPID é usado para parametrizar chamadas usando o SDK da Web da plataforma.
+O valor FPID é usado para parametrizar chamadas usando o Platform Web SDK.
 
 Abaixo está um código de exemplo de um endpoint de servlet AEM (disponível via `HTTP GET /bin/aep/fpid`) que gera ou atualiza um cookie FPID e retorna o FPID como JSON.
 
@@ -170,7 +172,7 @@ Se isso ocorrer, o mesmo processo tentará novamente no próximo carregamento de
 O HTTP GET para o servlet AEM FPID (`/bin/aep/fpid`) é parametrizado com um parâmetro de consulta aleatória para garantir que qualquer infraestrutura entre o navegador e o serviço AEM Publish não armazene em cache a resposta da solicitação.
 Da mesma forma, o cabeçalho de solicitação `Cache-Control: no-store` é adicionado para oferecer suporte à prevenção de armazenamento em cache.
 
-Após a invocação do servlet FPID AEM, o FPID é recuperado da resposta JSON e usado pelo [SDK da Web da plataforma](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) para enviá-lo para as APIs Experience Platform.
+Após a invocação do servlet FPID AEM, o FPID é recuperado da resposta JSON e usado pelo [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) para enviá-lo às APIs Experience Platform.
 
 Consulte a documentação do Experience Platform para obter mais informações sobre [uso de FPIDs no identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
 
@@ -235,8 +237,8 @@ Se essa configuração do Dispatcher não for implementada corretamente, as soli
 
 ## recursos de Experience Platform
 
-Consulte a documentação do Experience Platform a seguir para IDs de dispositivo primário (FPIDs) e gerenciamento de dados de identidade com o SDK da Web da plataforma.
+Consulte a documentação do Experience Platform a seguir para IDs de dispositivo primário (FPIDs) e gerenciamento de dados de identidade com o Platform Web SDK.
 
 + [Gerar IDs de dispositivo primário](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
-+ [IDs de dispositivo próprio no SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [Dados de identidade no SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
++ [IDs de dispositivo próprio no Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
++ [Dados de identidade no Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
