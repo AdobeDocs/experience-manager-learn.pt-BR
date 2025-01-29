@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ Depois de criar o site no AEM Author, publique-o na pré-visualização do Edge 
 3. Escolha **Visualizar** em **Destinos** e clique em **Avançar**.
 4. Em **Incluir configurações secundárias**, selecione **Incluir secundárias**, desmarque outras opções e clique em **OK**.
 5. Clique em **Publish** para publicar o conteúdo do site para visualização.
+6. Depois de publicadas para visualização, as páginas ficam disponíveis no ambiente de visualização do Edge Delivery Services (as páginas não aparecerão no serviço de Visualização do AEM).
