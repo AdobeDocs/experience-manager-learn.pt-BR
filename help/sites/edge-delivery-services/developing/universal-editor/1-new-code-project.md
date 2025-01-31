@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
-source-git-commit: 9b10d79190d805b86884f033e040891655c3c890
+source-git-commit: 48b402642738abf512edab68b6074935cb7dd444
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Lembre-se, [os sites do AEM entregues pelo Edge Delivery Services](https://exper
 
 ![Novo projeto do Edge Delivery Services](./assets/1-new-project/new-project.png)
 
-Siga as etapas abaixo para criar um projeto de código Edge Delivery Services cujo conteúdo é editável no Universal Editor:
+Siga as [etapas detalhadas descritas na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) um projeto de código Edge Delivery Services cujo conteúdo é editável no Universal Editor.  Abaixo está uma lista resumida das etapas, incluindo os valores usados neste tutorial.
 
 1. **Configurar uma conta do GitHub.** Se estiver criando um projeto para sua organização, verifique se a organização tem uma conta GitHub e se você é membro.
 2. **Crie um novo projeto de código** usando o [modelo de projeto XWalk com Boilerplate de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
@@ -36,4 +36,4 @@ Siga as etapas abaixo para criar um projeto de código Edge Delivery Services cu
 
 5. **Edite o`paths.json`** do seu novo projeto para mapear o caminho do serviço de Autor de AEM para a raiz do seu site.
 
-Para obter instruções mais detalhadas, consulte a [seção Criar projeto do GitHub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) no guia de introdução.
+Este repositório Git é clonado no capítulo [ambiente de desenvolvimento local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/developing/universal-editor/3-local-development-environment) e onde o código é desenvolvido.
