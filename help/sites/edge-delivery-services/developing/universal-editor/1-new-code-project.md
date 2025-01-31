@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
-source-git-commit: 48b402642738abf512edab68b6074935cb7dd444
+source-git-commit: 176be4209409763b69ceff5e893d0e857efa6d30
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Lembre-se, [os sites do AEM entregues pelo Edge Delivery Services](https://exper
 
 ![Novo projeto do Edge Delivery Services](./assets/1-new-project/new-project.png)
 
-Siga as [etapas detalhadas descritas na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) um projeto de código Edge Delivery Services cujo conteúdo é editável no Universal Editor.  Abaixo está uma lista resumida das etapas, incluindo os valores usados neste tutorial.
+Siga as [etapas detalhadas descritas na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) para criar um projeto de código Edge Delivery Services cujo conteúdo é editável no Universal Editor.  Abaixo está uma lista resumida das etapas, incluindo os valores usados neste tutorial.
 
 1. **Configurar uma conta do GitHub.** Se estiver criando um projeto para sua organização, verifique se a organização tem uma conta GitHub e se você é membro.
 2. **Crie um novo projeto de código** usando o [modelo de projeto XWalk com Boilerplate de AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
