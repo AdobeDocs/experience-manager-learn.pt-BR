@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
+source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,11 @@ As ferramentas e os processos de desenvolvimento de um projeto de site do Edge D
 
 ## Topologia de desenvolvimento
 
-A topologia de desenvolvimento para um projeto de site do Edge Delivery Services que é editável com o Universal Editor consiste nos seguintes aspectos:
+Este vídeo fornece uma visão geral da topologia de desenvolvimento para um projeto de site do Edge Delivery Services editável com o Universal Editor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+
++++Consulte detalhes adicionais da topologia de desenvolvimento
 
 - **Repositório do GitHub**:
    - **Propósito**: hospeda o código do site (CSS e JavaScript).
@@ -54,6 +58,8 @@ A topologia de desenvolvimento para um projeto de site do Edge Delivery Services
       - Um clone local do **repositório GitHub** para desenvolvimento baseado em ramificação.
       - A **CLI do AEM**, que atua como um servidor de desenvolvimento, aplica alterações de código local ao **ambiente de Visualização** para obter uma experiência de recarregamento a quente.
    - **Fluxo de trabalho**: desenvolvedores gravam código localmente, confirmam alterações em uma ramificação de trabalho, enviam a ramificação para o GitHub, validam-na no **Editor Universal** (usando a ramificação especificada) e mesclam-na na **ramificação principal** quando pronta para implantação de produção.
+
++++
 
 ## Pré-requisitos
 
