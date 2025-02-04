@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
+source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ As seguintes visualizações estão disponíveis nos painéis ELK e Splunk:
   **Painel ELK**:
   ![Painel ELK - Máximo de Solicitações por IP/POP](./assets/elk-edge-max-per-ip-pop.png)
 
-  **Painel do Splunk**:\
+  **Painel do Splunk**:
   ![Painel do Splunk - Máximo de Solicitações por IP/POP](./assets/splunk-edge-max-per-ip-pop.png)
 
 - **RPS de Origem por IP e POP de Cliente**: esta visualização mostra o número máximo de solicitações por IP/POP **na origem**. O pico na visualização indica o número máximo de solicitações.
@@ -168,10 +168,10 @@ data:
           count: all # count all requests
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true
-    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average            
+          alert: true
+    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average
       - name: prevent-dos-attacks-origin
         when:
           reqProperty: tier
@@ -183,17 +183,12 @@ data:
           count: fetches # count only fetches
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true   
-          
+          alert: true
 ```
 
 Observe que as regras de origem e de borda são declaradas e que a propriedade de alerta está definida como `true` para que você possa receber alertas sempre que o limite for atingido, provavelmente indicando um ataque.
-
->[!NOTE]
->
->O _experimental_ prefix_ na frente de experimental_alert será removido quando o recurso de alerta for lançado. Para participar do programa de adoção antecipada, envie um email para **<aemcs-waf-adopter@adobe.com>**.
 
 Recomenda-se que o tipo de ação seja definido para registrar inicialmente, para que você possa monitorar o tráfego por algumas horas ou dias, garantindo que o tráfego legítimo não exceda essas taxas. Após alguns dias, altere para o modo de bloqueio.
 
@@ -211,13 +206,13 @@ Além das regras de filtro de limite de taxa de tráfego, é recomendável usar 
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: 
+  envTypes:
     - dev
     - stage
-    - prod  
-data:  
-  experimental_requestTransformations:
-    rules:            
+    - prod
+data:
+  requestTransformations:
+    rules:
       - name: unset-all-query-params-except-those-needed
         when:
           reqProperty: tier
@@ -229,7 +224,7 @@ data:
 
 ## Recebimento de alertas de regras de filtro de tráfego {#receiving-alerts}
 
-Como mencionado acima, se a regra de filtro de tráfego incluir *experimental_alert: true*, um alerta será recebido quando a regra for correspondida.
+Como mencionado acima, se a regra de filtro de tráfego incluir *alerta: true*, um alerta será recebido quando a regra for correspondida.
 
 ## Atuação em alertas {#acting-on-alerts}
 
@@ -242,7 +237,7 @@ Esta seção descreve métodos para simular um ataque de DoS, que podem ser usad
 >[!CAUTION]
 >
 > Não execute essas etapas em um ambiente de produção. As etapas a seguir são somente para fins de simulação.
-> 
+>
 >Se você recebeu um alerta indicando um pico no tráfego, prossiga para a seção [Analisando padrões de tráfego](#analyzing-traffic-patterns).
 
 Para simular um ataque, ferramentas como o [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html), o [Apache JMeter](https://jmeter.apache.org/), o [Vegeta](https://github.com/tsenart/vegeta) e outras podem ser usadas.
