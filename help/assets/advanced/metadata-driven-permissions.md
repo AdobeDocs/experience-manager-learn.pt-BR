@@ -11,22 +11,22 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Permissões orientadas por metadados{#metadata-driven-permissions}
 
-As Permissões orientadas por metadados são um recurso usado para permitir que as decisões de controle de acesso no AEM Assets Author sejam baseadas nas propriedades dos metadados do ativo, em vez da estrutura de pastas. Com esse recurso, é possível definir políticas de controle de acesso que avaliem atributos como status, tipo ou qualquer propriedade de metadados personalizada que você definir.
+As Permissões orientadas por metadados são um recurso usado para permitir que as decisões de controle de acesso no AEM Assets Author sejam baseadas no conteúdo do ativo ou nas propriedades dos metadados, em vez da estrutura de pastas. Com esse recurso, você pode definir políticas de controle de acesso que avaliem atributos como status, tipo ou qualquer propriedade personalizada que você definir.
 
-Vamos ver um exemplo. Os criadores fazem o upload do trabalho deles para o AEM Assets na pasta relacionada à campanha. Pode ser um ativo de trabalho em andamento que não foi aprovado para uso. Queremos garantir que os profissionais de marketing vejam apenas os ativos aprovados para essa campanha. Podemos utilizar a propriedade de metadados para indicar que um ativo foi aprovado e pode ser usado pelos profissionais de marketing.
+Vamos ver um exemplo. Os criadores fazem o upload do trabalho deles para o AEM Assets na pasta relacionada à campanha. Pode ser um ativo de trabalho em andamento que não foi aprovado para uso. Queremos garantir que os profissionais de marketing vejam apenas os ativos aprovados para essa campanha. Podemos utilizar uma propriedade de metadados para indicar que um ativo foi aprovado e pode ser usado pelos profissionais de marketing.
 
 ## Como funciona
 
-A ativação de permissões orientadas por metadados envolve a definição de quais propriedades de metadados de ativos direcionarão as restrições de acesso, como &quot;status&quot; ou &quot;marca&quot;. Essas propriedades podem ser usadas para criar entradas de controle de acesso que especificam quais grupos de usuários têm acesso aos ativos com valores de propriedade específicos.
+A ativação de permissões orientadas por metadados envolve a definição de qual conteúdo de ativos ou propriedades de metadados direcionará as restrições de acesso, como &quot;status&quot; ou &quot;marca&quot;. Essas propriedades podem ser usadas para criar entradas de controle de acesso que especificam quais grupos de usuários têm acesso aos ativos com valores de propriedade específicos.
 
 ## Pré-requisitos
 
@@ -34,9 +34,9 @@ O acesso a um ambiente do AEM as a Cloud Service atualizado para a versão mais 
 
 ## Configuração OSGi {#configure-permissionable-properties}
 
-Para implementar Permissões orientadas por metadados, um desenvolvedor deve implantar uma configuração OSGi no AEM as a Cloud Service, que permite que propriedades específicas de metadados de ativos alimentem permissões orientadas por metadados.
+Para implementar Permissões orientadas por metadados, um desenvolvedor deve implantar uma configuração OSGi no AEM as a Cloud Service, que permite que propriedades específicas de conteúdo de ativos ou metadados possibilitem permissões orientadas por metadados.
 
-1. Determine quais propriedades de metadados de ativos serão usadas para controle de acesso. Os nomes de propriedades são os nomes de propriedades JCR no recurso `jcr:content/metadata` do ativo. No nosso caso, será uma propriedade chamada `status`.
+1. Determine qual conteúdo de ativo ou propriedades de metadados serão usados para controle de acesso. Os nomes de propriedades são os nomes de propriedades JCR no recurso `jcr:content` ou `jcr:content/metadata` do ativo. No nosso caso, será uma propriedade chamada `status`.
 1. Crie uma configuração OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` em seu projeto AEM Maven.
 1. Cole o seguinte JSON no arquivo criado:
 
@@ -46,11 +46,12 @@ Para implementar Permissões orientadas por metadados, um desenvolvedor deve imp
        "status",
        "brand"
      ],
+     "restrictionContentPropertyNames":[],
      "enabled":true
    }
    ```
 
-1. Substitua os nomes de propriedade pelos valores necessários.
+1. Substitua os nomes de propriedade pelos valores necessários.  A propriedade de configuração `restrictionContentPropertyNames` é usada para habilitar permissões nas propriedades de recurso `jcr:content`, enquanto a propriedade de configuração `restrictionPropertyNames` habilita permissões nas propriedades de recurso `jcr:content/metadata` para ativos.
 
 ## Redefinir permissões do ativo base
 
@@ -90,7 +91,7 @@ A pasta de exemplo contém alguns ativos.
 
 ![Exibição do administrador](./assets/metadata-driven-permissions/admin-view.png)
 
-Depois de configurar as permissões e definir as propriedades dos metadados do ativo de acordo, os usuários (usuário do Marketeer no nosso caso) verão somente o ativo aprovado.
+Depois de configurar as permissões e definir as propriedades de metadados do ativo de acordo, os usuários (usuário do Marketeer no nosso caso) verão somente o ativo aprovado.
 
 ![Exibição do profissional de marketing](./assets/metadata-driven-permissions/marketeer-view.png)
 
@@ -100,13 +101,13 @@ Os benefícios das permissões orientadas por metadados incluem:
 
 - Controle refinado do acesso a ativos com base em atributos específicos.
 - Dissociação das políticas de controle de acesso da estrutura de pastas, permitindo uma organização de ativos mais flexível.
-- Capacidade de definir regras complexas de controle de acesso com base em várias propriedades de metadados.
+- Capacidade de definir regras complexas de controle de acesso com base em várias propriedades de conteúdo ou metadados.
 
 >[!NOTE]
 >
 > É importante observar:
 > 
-> - As propriedades de metadados são avaliadas em relação às restrições usando __Igualdade de cadeia de caracteres__ (`=`) (outros tipos de dados ou operadores ainda não têm suporte, para propriedades maiores que (`>`) ou de Data)
+> - As propriedades são avaliadas em relação às restrições usando __Igualdade de cadeia de caracteres__ (`=`) (outros tipos de dados ou operadores ainda não têm suporte, para propriedades maiores que (`>`) ou de Data)
 > - Para permitir vários valores para uma propriedade de restrição, restrições adicionais podem ser adicionadas à Entrada de Controle de Acesso selecionando a mesma propriedade na lista suspensa &quot;Selecionar Tipo&quot; e inserindo um novo Valor de Restrição (por exemplo, `status=approved`, `status=wip`) e clicando em &quot;+&quot; para adicionar a restrição à entrada
 > ![Permitir Valores Múltiplos](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - Há suporte para __restrições AND__, por meio de várias restrições em uma única Entrada de Controle de Acesso com diferentes nomes de propriedade (por exemplo, `status=approved`, `brand=Adobe`) que será avaliada como uma condição AND, ou seja, o grupo de usuários selecionado receberá acesso de leitura aos ativos com `status=approved AND brand=Adobe`
