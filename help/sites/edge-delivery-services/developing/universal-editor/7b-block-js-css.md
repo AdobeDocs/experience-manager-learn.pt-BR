@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolver um bloco com CSS e JavaScript
 
@@ -179,7 +179,7 @@ Crie um arquivo `teaser.css` na pasta do bloco. Esse arquivo contém o código C
 
 Os elementos simples ainda podem ser estilizados diretamente ou com as classes CSS personalizadas aplicadas. Para blocos mais complexos, a aplicação de classes CSS semânticas pode ajudar a tornar o CSS mais compreensível e sustentável, especialmente ao trabalhar com equipes maiores em períodos mais longos.
 
-[Como antes](./7a-block-css.md#develop-a-block-with-css), defina o escopo do CSS para `.block.teaser` para evitar conflito com outros blocos.
+[Como antes](./7a-block-css.md#develop-a-block-with-css), defina o escopo do CSS para `.block.teaser` usando o [aninhamento de CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) para evitar conflito com outros blocos.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -195,85 +195,86 @@ Os elementos simples ainda podem ser estilizados diretamente ou com as classes C
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
-}
 
-/* The image is rendered to the first div in the block */
-.block.teaser .image-wrapper {
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    box-sizing: border-box;
-    overflow: hidden; 
-}
+    /* The teaser image */
+    & .image-wrapper {
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        box-sizing: border-box;
+        overflow: hidden; 
 
-.block.teaser .image {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    transform: scale(1); 
-    transition: transform 0.6s ease-in-out;
-}
+        & .image {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+            transform: scale(1); 
+            transition: transform 0.6s ease-in-out;
+        }
+    }
 
-.block.teaser .content {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--background-color);
-    padding: 1.5rem 1.5rem 1rem;
-    width: 80vw;
-    max-width: 1200px;
-}
+    /* The teaser text content */
+    & .content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--background-color);
+        padding: 1.5rem 1.5rem 1rem;
+        width: 80vw;
+        max-width: 1200px;
+  
+        & .title {
+            font-size: var(--heading-font-size-xl);
+            margin: 0;
+        }
 
-.block.teaser .title {
-    font-size: var(--heading-font-size-xl);
-    margin: 0;
-}
+        & .title::after {
+            border-bottom: 0;
+        }
 
-.block.teaser .title::after {
-    border-bottom: 0;
-}
+        & p {
+            font-size: var(--body-font-size-s);
+            margin-bottom: 1rem;
+            animation: teaser-fade-in .6s;
+        }
 
-.block.teaser p {
-    font-size: var(--body-font-size-s);
-    margin-bottom: 1rem;
-    animation: teaser-fade-in .6s;
-}
+        & p.terms-and-conditions {
+            font-size: var(--body-font-size-xs);
+            color: var(--secondary-color);
+            padding: .5rem 1rem;
+            font-style: italic;
+            border: solid var(--light-color);
+            border-width: 0 0 0 10px;
+        }
 
-.block.teaser p.terms-and-conditions {
-    font-size: var(--body-font-size-xs);
-    color: var(--secondary-color);
-    padding: .5rem 1rem;
-    font-style: italic;
-    border: solid var(--light-color);
-    border-width: 0 0 0 10px;
-}
+        /* Add underlines to links in the text */
+        & a:hover {
+            text-decoration: underline;
+        }
 
-/* Add underlines to links in the text */
-.block.teaser a:hover {
-    text-decoration: underline;
-}
+        /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
+        & .button-container {
+            margin: 0;
+            padding: 0;
+        }
 
-/* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-.block.teaser .button-container {
-    margin: 0;
-    padding: 0;
-}
+        & .button {   
+            background-color: var(--primary-color);
+            border-radius: 0;
+            color: var(--dark-color);
+            font-size: var(--body-font-size-xs);
+            font-weight: bold;
+            padding: 1em 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+    }
 
-.block.teaser .button {   
-    background-color: var(--primary-color);
-    border-radius: 0;
-    color: var(--dark-color);
-    font-size: var(--body-font-size-xs);
-    font-weight: bold;
-    padding: 1em 2.5em;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.block.teaser .zoom {
-    transform: scale(1.1);
+    & .zoom {
+        transform: scale(1.1);
+    }
 }
 
 /** Animations 
@@ -339,4 +340,3 @@ $ git push origin teaser
 Agora, você pode visualizar as alterações no Editor Universal ao adicionar o parâmetro de consulta `?ref=teaser`.
 
 ![Teaser no Editor Universal](./assets/7b-block-js-css/universal-editor-preview.png)
-

@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ As `roboto-fallback` e `roboto-condensed-fallback` são fontes substitutas atual
 As fontes da Web geralmente afetam o desempenho devido ao seu tamanho, aumentando potencialmente as pontuações Cumulative Layout Shift (CLS) e reduzindo as pontuações gerais do Lighthouse. Para garantir a exibição instantânea do texto enquanto as fontes da Web estão sendo carregadas, os projetos do Edge Delivery Services usam fontes substitutas nativas do navegador. Essa abordagem ajuda a manter uma experiência do usuário suave, enquanto a fonte desejada se aplica.
 
 Para selecionar a melhor fonte de fallback, use a [extensão do Adobe Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), que determina uma fonte estritamente correspondente para os navegadores usarem antes que a fonte personalizada seja carregada. As declarações de fonte de fallback resultantes devem ser adicionadas ao arquivo `styles/styles.css` para melhorar o desempenho e garantir uma experiência perfeita para os usuários.
+
+![Extensão Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
 Para usar a [extensão do Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verifique se a página da Web tem fontes da Web aplicadas nas mesmas variações usadas no site do Edge Delivery Services. Este tutorial demonstra a extensão no [wknd.site](http://wknd.site/us/en.html). Ao desenvolver um site, aplique a extensão ao site em que está sendo trabalhado, em vez de [wknd.site](http://wknd.site/us/en.html).
 
