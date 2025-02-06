@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -519,6 +519,11 @@ Isso é feito definindo a configuração no arquivo `config.yaml` no Projeto AEM
    ```
 
    Substitua `<ADC Project's OAuth Web App credential ClientID>` pela ClientID real da credencial do Aplicativo Web OAuth do projeto ADC. O ponto de extremidade de API usado neste tutorial está disponível somente na camada do autor, mas para outras APIs, a configuração yaml também pode ter um nó _publicar_ ou _visualizar_.
+
+   >[!CAUTION]
+   >
+   > Para fins de demonstração, a mesma ClientID é usada para todos os ambientes. É recomendável usar uma ID do cliente separada por ambiente (desenvolvimento, preparo, produção) para melhorar a segurança e o controle.
+
 
 1. Confirme as alterações de configuração no repositório Git e envie as alterações para o repositório remoto.
 

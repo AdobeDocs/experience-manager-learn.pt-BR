@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,11 @@ Isso é feito definindo a configuração no arquivo `config.yaml` no Projeto AEM
   ```
 
   Substitua `<ADC Project's OAuth Server-to-Server credential ClientID>` pela ClientID real da credencial servidor para servidor OAuth do projeto ADC.
+
+  >[!CAUTION]
+  >
+  > Para fins de demonstração, a mesma ClientID é usada para todos os ambientes. É recomendável usar uma ID do cliente separada por ambiente (desenvolvimento, preparo, produção) para melhorar a segurança e o controle.
+
 
 - Confirme as alterações de configuração no repositório Git e envie as alterações para o repositório remoto.
 
