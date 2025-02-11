@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Este exemplo mostra como aprimorar um bloco de três maneiras:
 
 Essa abordagem é particularmente útil nos seguintes cenários:
 
-- **Gerenciamento de CSS externo:** quando o CSS do bloco é gerenciado fora dos Edge Delivery Services e não está alinhado com sua estrutura de HTML.
+- **Gerenciamento de CSS externo:** quando o CSS do bloco é gerenciado fora do Edge Delivery Services e não está alinhado com sua estrutura HTML.
 - **Atributos adicionais:** quando atributos extras, como [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) para acessibilidade ou [microdados](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata), são necessários.
 - **Aprimoramentos do JavaScript:** quando recursos interativos, como ouvintes de eventos, são necessários.
 
@@ -39,7 +39,7 @@ Esse método depende da manipulação de DOM nativa do navegador do JavaScript, 
 
 ## Bloquear HTML
 
-Para abordar o desenvolvimento de blocos, comece revisando o DOM exposto pelos Edge Delivery Services. A estrutura é aprimorada com o JavaScript e estilizada com CSS.
+Para abordar o desenvolvimento de blocos, comece revisando o DOM exposto pelo Edge Delivery Services. A estrutura é aprimorada com o JavaScript e estilizada com CSS.
 
 >[!BEGINTABS]
 
@@ -85,7 +85,7 @@ A seguir está o DOM do bloco de teaser que é o destino a ser decorado usando J
 
 Para encontrar o DOM para decorar, abra a página com o bloco não decorado no ambiente de desenvolvimento local, selecione o bloco e inspecione o DOM.
 
-![Bloco DOM](./assets/7a-block-css/inspect-block-dom.png) do Inspect
+![Inspecionar DOM de bloco](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -100,7 +100,7 @@ O arquivo JavaScript deve exportar uma função padrão:
 export default function decorate(block) { ... }
 ```
 
-A função padrão pega o elemento/árvore DOM que representa o bloco no HTML Edge Delivery Services e contém o JavaScript personalizado executado quando o bloco é renderizado.
+A função padrão pega o elemento/árvore DOM que representa o bloco no HTML do Edge Delivery Services e contém o JavaScript personalizado executado quando o bloco é renderizado.
 
 Este exemplo de JavaScript executa três ações principais:
 
@@ -195,27 +195,32 @@ Os elementos simples ainda podem ser estilizados diretamente ou com as classes C
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The teaser image */
-    & .image-wrapper {
+    .image-wrapper {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
         overflow: hidden; 
 
-        & .image {
+        .image {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 100%;
             transform: scale(1); 
             transition: transform 0.6s ease-in-out;
+
+            .zoom {
+                transform: scale(1.1);
+            }            
         }
     }
 
     /* The teaser text content */
-    & .content {
+    .content {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -225,55 +230,51 @@ Os elementos simples ainda podem ser estilizados diretamente ou com as classes C
         width: 80vw;
         max-width: 1200px;
   
-        & .title {
+        .title {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & .title::after {
+        .title::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
             animation: teaser-fade-in .6s;
-        }
-
-        & p.terms-and-conditions {
-            font-size: var(--body-font-size-xs);
-            color: var(--secondary-color);
-            padding: .5rem 1rem;
-            font-style: italic;
-            border: solid var(--light-color);
-            border-width: 0 0 0 10px;
+        
+            &.terms-and-conditions {
+                font-size: var(--body-font-size-xs);
+                color: var(--secondary-color);
+                padding: .5rem 1rem;
+                font-style: italic;
+                border: solid var(--light-color);
+                border-width: 0 0 0 10px;
+            }
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
+        
+            .button {   
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
-
-        & .button {   
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-    }
-
-    & .zoom {
-        transform: scale(1.1);
     }
 }
 
@@ -311,7 +312,7 @@ Verifique se o parágrafo é renderizado com o estilo de termos e condições no
 
 ## Visualização do desenvolvimento
 
-À medida que o CSS e o JavaScript são adicionados, o ambiente de desenvolvimento local da CLI AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se a imagem do teaser aumenta ou diminui o zoom.
+À medida que o CSS e o JavaScript são adicionados, o ambiente de desenvolvimento local da CLI do AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se a imagem do teaser aumenta ou diminui o zoom.
 
 ![Visualização de desenvolvimento local de teaser usando CSS e JS](./assets/7b-block-js-css/local-development-preview.png)
 

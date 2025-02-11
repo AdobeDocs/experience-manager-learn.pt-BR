@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Desenvolver um bloco com CSS
 
-Os blocos em Edge Delivery Services são estilizados usando CSS. O arquivo CSS de um bloco é armazenado no diretório do bloco e tem o mesmo nome do bloco. Por exemplo, o arquivo CSS para um bloco chamado `teaser` está localizado em `blocks/teaser/teaser.css`.
+Os blocos no Edge Delivery Services são estilizados usando CSS. O arquivo CSS de um bloco é armazenado no diretório do bloco e tem o mesmo nome do bloco. Por exemplo, o arquivo CSS para um bloco chamado `teaser` está localizado em `blocks/teaser/teaser.css`.
 
 Idealmente, um bloco deve precisar apenas do CSS para estilização, sem depender do JavaScript para modificar o DOM ou adicionar classes CSS. A necessidade do JavaScript depende da [modelagem de conteúdo](./5-new-block.md#block-model) do bloco e de sua complexidade. Se necessário, [bloquear JavaScript](./7b-block-js-css.md) pode ser adicionado.
 
-Usando uma abordagem somente CSS, os elementos de HTML semântica (em sua maioria) do bloco são direcionados e estilizados.
+Usando uma abordagem somente CSS, os elementos de HTML semânticos (em sua maioria) simples do bloco são direcionados e estilizados.
 
 ## Bloquear HTML
 
-Para entender como estilizar um bloco, revise primeiro o DOM exposto por Edge Delivery Services, pois é ele que está disponível para estilização. O DOM pode ser encontrado ao inspecionar o bloco servido pelo ambiente de desenvolvimento local do AEM CLI. Evite usar o DOM do Editor Universal, pois ele é ligeiramente diferente.
+Para entender como estilizar um bloco, revise primeiro o DOM exposto pelo Edge Delivery Services, pois ele é o que está disponível para estilização. O DOM pode ser encontrado ao inspecionar o bloco distribuído pelo ambiente de desenvolvimento local da CLI do AEM. Evite usar o DOM do Editor Universal, pois ele é ligeiramente diferente.
 
 >[!BEGINTABS]
 
@@ -75,7 +75,7 @@ Observe o `<p class="button-container">...` que é [automaticamente aumentado](.
 
 Para localizar o DOM com estilo, abra a página com o bloco sem estilo no ambiente de desenvolvimento local, selecione o bloco e inspecione o DOM.
 
-![Bloco DOM](./assets/7a-block-css/inspect-block-dom.png) do Inspect
+![Inspecionar DOM de bloco](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -83,7 +83,7 @@ Para localizar o DOM com estilo, abra a página com o bloco sem estilo no ambien
 
 Crie um novo arquivo CSS na pasta do bloco, usando o nome do bloco como o nome do arquivo. Por exemplo, para o bloco **teaser**, o arquivo está localizado em `/blocks/teaser/teaser.css`.
 
-Esse arquivo CSS é carregado automaticamente quando o Edge Delivery Services JavaScript detecta um elemento DOM na página que representa um bloco de teaser.
+Esse arquivo CSS é carregado automaticamente quando o JavaScript dos serviços de entrega de borda detecta um elemento DOM na página que representa um bloco de teaser.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -99,15 +99,16 @@ Esse arquivo CSS é carregado automaticamente quando o Edge Delivery Services Ja
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The image is rendered to the first div in the block */
-    & picture {
+    picture {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
 
-        & img {
+        img {
             object-fit: cover;
             object-position: center;
             width: 100%;
@@ -143,53 +144,52 @@ Esse arquivo CSS é carregado automaticamente quando o Edge Delivery Services Ja
         **/
 
         /* Regardless of the authored heading level, we only want one style the heading */
-        & h1,
-        & h2,
-        & h3,
-        & h4,
-        & h5,
-        & h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & h1::after,
-        & h2::after,
-        & h3::after,
-        & h4::after,
-        & h5::after,
-        & h6::after {
+        h1::after,
+        h2::after,
+        h3::after,
+        h4::after,
+        h5::after,
+        h6::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
-        }
 
-        & .button {
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
+            .button {
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
     }
-
 }
 
 /** Animations 
@@ -211,7 +211,7 @@ Esse arquivo CSS é carregado automaticamente quando o Edge Delivery Services Ja
 
 ## Visualização do desenvolvimento
 
-À medida que o CSS é gravado no projeto de código, o recarregamento automático da CLI do AEM faz as alterações, tornando mais rápido e fácil entender como o CSS está afetando o bloco.
+À medida que o CSS é gravado no projeto de código, o recarregamento automático da CLI do AEM altera, tornando mais rápido e fácil entender como o CSS está afetando o bloco.
 
 ![Visualização somente de CSS](./assets/7a-block-css/local-development-preview.png)
 

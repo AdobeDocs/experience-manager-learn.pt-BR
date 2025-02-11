@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 17%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 17%
    + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolvendo{#developing}
       + [Pré-requisitos](edge-delivery-services/developing/prerequisites.md)
-      + [Placa perfurada AEM](edge-delivery-services/developing/aem-boilerplate.md)
+      + [Modelo do AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Repositório de conteúdo](edge-delivery-services/developing/content-repository.md)
       + [Pré-visualizar e publicar](edge-delivery-services/developing/preview-and-publish.md)
       + [AEM Sidekick](edge-delivery-services/developing/sidekick.md)
@@ -101,13 +101,15 @@ ht-degree: 17%
       + Editor universal {#universal-editor}
          + [Visão geral](./edge-delivery-services/developing/universal-editor/0-overview.md)
          + [Novo projeto de código](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
-         + [Novo site AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
+         + [Novo site do AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
          + [Ambiente de desenvolvimento local](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
          + [Identidade visual do site](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
          + [Novo bloco](./edge-delivery-services/developing/universal-editor/5-new-block.md)
          + [Criar o bloco](./edge-delivery-services/developing/universal-editor/6-author-block.md)
          + [Bloquear somente com CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
          + [Bloco com CSS e JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
+         + Como{#how-to}
+            + [Opções de bloco](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
    + Como{#how-to}
       + [RSS feeds](edge-delivery-services/how-to/rss.md)
       + [Compartilhamento em redes sociais](edge-delivery-services/how-to/social-media-sharing.md)
@@ -117,12 +119,12 @@ ht-degree: 17%
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR){target=_blank}
-   + AEM [Introdução ao Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
    + [Pontos de interrupção responsivos](developing/responsive-breakpoints.md)
    + [Desenvolvimento com o sistema de estilo](developing/style-system-technical-video-understand.md)
    + [Práticas recomendadas do sistema de estilo](developing/style-organization-style-system-understand-article.md)
-   + [Acelere a velocidade do conteúdo com sistemas de estilo AEM](developing/accelerate-content-velocity-aem-style-system.md)
+   + [Acelere a velocidade do conteúdo com sistemas no estilo AEM](developing/accelerate-content-velocity-aem-style-system.md)
    + [Desenvolvimento da diferença de página](developing/page-diff-technical-video-develop.md)
    + [Implementando a pesquisa simples](developing/search-tutorial-develop.md)
    + [Compartilhamento em redes sociais](developing/social-media-sharing-technical-video-use.md)
@@ -140,8 +142,8 @@ ht-degree: 17%
 + SEO {#seo}
    + [Mapas do site](./seo/sitemaps.md)
 + Aplicativos de Página Única {#spa-editor}
-   + [Utilização do editor de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + AEM [Introdução ao Editor de SPA e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [Uso do Editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
@@ -170,12 +172,12 @@ ht-degree: 17%
    + Marcas no Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
       + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [Conectar AEM e propriedade de tag usando IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [Criar Cloud Service de Tags AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Conectar o AEM e a propriedade de tag usando IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
+      + [Criar Cloud Service de Tags do AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Depuração de uma implementação de tags](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Camada de dados de clientes Adobe {#adobe-client-data-layer}
-      + [Utilização da camada de dados do cliente Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
-      + [Personalizar a camada de dados do cliente Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
+      + [Utilização da camada de dados de clientes Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Personalizar a camada de dados do cliente da Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analytics {#analytics}
       + [Coletar dados de página com o Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Rastrear componente clicado com o Adobe Analytics](integrations/analytics/track-clicked-component.md)
@@ -184,7 +186,7 @@ ht-degree: 17%
       + [Visão geral](integrations/adobe-target/overview.md)
       + [Adicionar extensão do Target à propriedade Tags](integrations/adobe-target/add-target-launch-extension.md)
       + [Carregar e acionar uma chamada do Target](integrations/adobe-target/load-and-fire-target.md)
-      + [Criar conta Cloud Service do Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
+      + [Criar conta do Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exportar fragmentos de experiência para o Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Criar atividade do Target usando ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
       + [Personalization usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
@@ -193,5 +195,5 @@ ht-degree: 17%
    + [Visão geral](expert-resources/learn-from-your-peers-overview.md)
    + [Avaliação de maturidade da AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenção do site](expert-resources/site-maintenance.md)
-   + [Dicas e truques do especialista em AEM: Sessão 1](expert-resources/champion-tips-1.md)
-   + [Dicas e truques do especialista em AEM: Sessão 2](expert-resources/champion-tips-2.md)
+   + [Dicas e truques do AEM Champion: Sessão 1](expert-resources/champion-tips-1.md)
+   + [Dicas e truques do AEM Champion: Sessão 2](expert-resources/champion-tips-2.md)
