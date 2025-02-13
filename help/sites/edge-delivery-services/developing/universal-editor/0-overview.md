@@ -1,6 +1,6 @@
 ---
 title: Tutorial do desenvolvedor do Edge Delivery Services e do Universal Editor
-description: Aprenda os conceitos básicos para desenvolver um novo site criado no Editor universal de AEM e entregue usando o Edge Delivery Services.
+description: Aprenda os conceitos básicos para desenvolver um novo site criado no AEM Universal Editor e fornecido usando o Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,18 +10,18 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: 9dd07383a3d46d1bbecd2dc8574e6d06a0535fee
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # Tutorial do desenvolvedor do Edge Delivery Services e do Universal Editor
 
-![Tutorial do desenvolvedor do Edge Delivery Services e do Universal Editor](./assets/0-overview/hero.png)
+![Tutorial do desenvolvedor do Edge Delivery Services e Universal Editor](./assets/0-overview/hero.png)
 
-Neste tutorial, você aprenderá os fundamentos da criação de um site de AEM que combine criação poderosa com Universal Editor e entrega ultrarrápida usando Edge Delivery Services. Ao final, você terá uma compreensão básica de como criar um novo projeto, configurar um ambiente de desenvolvimento local e criar um novo bloco.
+Neste tutorial, você aprenderá os fundamentos da criação de um site do AEM que combine criação avançada com Universal Editor e entrega com velocidade surpreendente usando o Edge Delivery Services. Ao final, você terá uma compreensão básica de como criar um novo projeto, configurar um ambiente de desenvolvimento local e criar um novo bloco.
 
 ## Configuração do projeto
 
@@ -62,8 +62,8 @@ Saiba como criar um projeto de código e configurar um novo site no AEM as a Clo
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./2-new-aem-site.md" title="Criar um site de AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/2-new-aem-site/new-site.png" alt="Criar um site de AEM"
+                    <a href="./2-new-aem-site.md" title="Criar um site do AEM" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="assets/2-new-aem-site/new-site.png" alt="Criar um site do AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Saiba como criar um projeto de código e configurar um novo site no AEM as a Clo
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./2-new-aem-site.md" target="_blank" rel="referrer" title="Criar um site de AEM">Criar um site AEM</a>
+                        <a href="./2-new-aem-site.md" target="_blank" rel="referrer" title="Criar um site do AEM">Criar um site do AEM</a>
                     </p>
                     <p class="is-size-6">Crie um site no AEM Sites para Edge Delivery Services, editável usando o Editor universal.</p>
                 </div>
@@ -86,7 +86,7 @@ Saiba como criar um projeto de código e configurar um novo site no AEM as a Clo
 
 ## Configuração de desenvolvimento
 
-Saiba como configurar o ambiente de desenvolvimento local para permitir o desenvolvimento rápido do site. Essa configuração permite a criação contínua de sites com o Editor universal e a entrega eficiente de conteúdo por meio de Edge Delivery Services, garantindo um fluxo de trabalho de desenvolvimento suave e otimizado.
+Saiba como configurar o ambiente de desenvolvimento local para permitir o desenvolvimento rápido do site. Essa configuração permite a criação contínua de sites com o Universal Editor e a entrega eficiente de conteúdo por meio do Edge Delivery Services, garantindo um fluxo de trabalho de desenvolvimento suave e otimizado.
 <!-- CARDS 
 
 * ./3-local-development-environment.md
@@ -100,7 +100,7 @@ Saiba como configurar o ambiente de desenvolvimento local para permitir o desenv
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configurar um ambiente de desenvolvimento do local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="assets/3-local-development-environment/github-clone.png" alt="Configurar um ambiente de desenvolvimento do local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1739374885708" alt="Configurar um ambiente de desenvolvimento do local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -110,7 +110,7 @@ Saiba como configurar o ambiente de desenvolvimento local para permitir o desenv
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./3-local-development-environment.md" target="_blank" rel="referrer" title="Configurar um ambiente de desenvolvimento do local">Configurar um ambiente de desenvolvimento local</a>
                     </p>
-                    <p class="is-size-6">Configure um ambiente de desenvolvimento local para sites fornecidos com Edge Delivery Services e editáveis com o Universal Editor.</p>
+                    <p class="is-size-6">Configure um ambiente de desenvolvimento local para sites fornecidos com o Edge Delivery Services e editáveis com o Universal Editor.</p>
                 </div>
                 <a href="./3-local-development-environment.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -133,7 +133,7 @@ Saiba como configurar o ambiente de desenvolvimento local para permitir o desenv
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./4-website-branding.md" target="_blank" rel="referrer" title="Adicionar identidade visual do site">Adicionar identidade visual do site</a>
                     </p>
-                    <p class="is-size-6">Defina CSS global, variáveis CSS e fontes da Web para um site Edge Delivery Services.</p>
+                    <p class="is-size-6">Defina CSS global, variáveis CSS e fontes da Web para um site do Edge Delivery Services.</p>
                 </div>
                 <a href="./4-website-branding.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -146,7 +146,7 @@ Saiba como configurar o ambiente de desenvolvimento local para permitir o desenv
 
 ## Desenvolvimento em bloco
 
-Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando conteúdos de amostra para teste e desenvolvimento. Explore dois métodos para renderizar o bloco e entenda como estruturá-lo para obter o desempenho e a flexibilidade ideais no AEM e no Edge Delivery Services.
+Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando conteúdos de amostra para teste e desenvolvimento. Explore dois métodos para renderizar o bloco e entenda como estruturá-lo para obter desempenho e flexibilidade ideais no AEM e no Edge Delivery Services.
 
 <!-- CARDS 
 
@@ -173,7 +173,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./5-new-block.md" target="_blank" rel="referrer" title="Criar um bloco">Criar um bloco</a>
                     </p>
-                    <p class="is-size-6">Crie um bloco para um site do Edge Delivery Services que seja editável com o Universal Editor.</p>
+                    <p class="is-size-6">Crie um bloco para um site da Edge Delivery Services que seja editável com o Universal Editor.</p>
                 </div>
                 <a href="./5-new-block.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -196,7 +196,7 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./6-author-block.md" target="_blank" rel="referrer" title="Criar um bloco">Criar um bloco</a>
                     </p>
-                    <p class="is-size-6">Crie um bloco Edge Delivery Services com o Universal Editor.</p>
+                    <p class="is-size-6">Crie um bloco do Edge Delivery Services com o Universal Editor.</p>
                 </div>
                 <a href="./6-author-block.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -245,6 +245,43 @@ Saiba como criar um novo bloco definindo seu modelo de conteúdo e configurando 
                     <p class="is-size-6">Desenvolva um bloco com CSS e JavaScript para Edge Delivery Services, editável usando o Editor universal.</p>
                 </div>
                 <a href="./7b-block-js-css.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## Próximas etapas
+
+Agora que você concluiu este tutorial, aproveite o que você aprendeu com essas instruções focadas. Esses guias expandem o código e os conceitos abordados aqui, explorando casos de uso específicos de função, técnicas avançadas e dicas adicionais para aprimorar as habilidades de desenvolvimento do Edge Delivery Services e do Universal Editor.
+
+<!-- CARDS 
+
+* ./how-to/block-options.md
+
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Block options">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./how-to/block-options.md" title="Opções de bloco" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="how-to/assets/block-options/main.png" alt="Opções de bloco"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./how-to/block-options.md" target="_blank" rel="referrer" title="Opções de bloco">Opções de bloqueio</a>
+                    </p>
+                    <p class="is-size-6">Saiba como criar um bloco com várias opções de exibição.</p>
+                </div>
+                <a href="./how-to/block-options.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
