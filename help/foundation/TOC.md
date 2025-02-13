@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials da AEM Foundation
 user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos do Adobe Experience Manager.
 sub-product: Experience Manager
 index: y
-source-git-commit: 515c4020e1c358b5ee044a81affc8d7e1e4ff4eb
+source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '248'
 ht-degree: 14%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 14%
    + [Usar Limpeza de Revisão Online](./administration/use-online-revision-clean-up.md)
    + [Usar o painel de visão geral do sistema](./administration/use-the-system-overview-dashboard.md)
    + [Redirecionamentos de URL](./administration/url-redirection.md)
+   + [Implementação de redirecionamentos de URL sem pipeline](./administration/implementing-pipeline-free-url-redirects.md)
 + Autenticação {#authentication}
    + [OKTA e AEM](authentication/okta-saml-integration.md)
    + [Escopos OAuth](authentication/oauth-code-sample-develop.md)
@@ -33,14 +34,14 @@ ht-degree: 14%
    + [Permissões personalizadas](./cloud-manager/cloud-permissions.md)
 + Desenvolvimento {#development}
    + [Desenvolver exportadores de modelo do Sling](./development/develop-sling-model-exporter.md)
-   + [Configurar um ambiente de desenvolvimento de AEM local](./development/set-up-a-local-aem-development-environment.md)
+   + [Configurar um Ambiente de desenvolvimento do AEM local](./development/set-up-a-local-aem-development-environment.md)
    + [Configurar a inclusão dinâmica do Sling](./development/set-up-sling-dynamic-include.md)
    + [Entender as práticas recomendadas da API Java](./development/understand-java-api-best-practices.md)
    + [Entender o exportador de modelo do Sling](./development/understand-sling-model-exporter.md)
    + [Entender as práticas recomendadas de indexação do Oak](./development/understand-indexing-best-practices.md)
    + [Instalar artefatos de terceiros](./development/install-third-party-artifacts.md)
 + Projetos {#projects}
-   + [Desenvolver projetos no AEM](./projects/develop-aem-projects.md)
+   + [Desenvolver projetos do AEM](./projects/develop-aem-projects.md)
    + [Usar projetos mestre](./projects/use-project-masters.md)
 + Segurança {#security}
    + [Noções básicas sobre prevenção de DoS/DDoS](./security/understanding-dos-and-prevention-approaches.md)
@@ -57,7 +58,7 @@ ht-degree: 14%
    + [Usar a Caixa de entrada](./workflow/use-the-inbox.md)
 + Resolução de problemas {#troubleshooting}
    + [Como ativar o relatório de download de ativos](./troubleshooting/how-to-enable-asset-download-report.md)
-   + [Como forçar a recompilação no AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Como forçar a recompilação no AEM 6.4](./troubleshooting/how-to-force-recompilation.md)
    + [Como investigar problemas relacionados à indexação no AEM](./troubleshooting/how-to-investigate-indexing-related-issues.md)
    + [Como investigar problemas relacionados a SAML no AEM](./troubleshooting/how-to-investigate-saml-related-issues.md)
    + [Como investigar problemas relacionados à pesquisa no AEM](./troubleshooting/how-to-investigate-search-related-issues.md)
