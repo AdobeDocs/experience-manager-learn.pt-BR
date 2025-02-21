@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Saiba **como usar** o Ambiente de desenvolvimento rápido (RDE) no AEM as a Cloud Service. Implante código e conteúdo para ciclos de desenvolvimento mais rápidos do seu código quase final no RDE, a partir do seu ambiente de desenvolvimento integrado (IDE) favorito.
 
-Usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), você aprenderá a implantar vários artefatos AEM no RDE executando o comando AEM-RDE `install` no IDE favorito.
+Usando o [Projeto de Sites do AEM WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), você aprenderá a implantar vários artefatos do AEM no RDE executando o comando `install` do AEM-RDE em seu IDE favorito.
 
-- Implantação do código e do pacote de conteúdo do AEM (all, ui.apps)
+- Implantação do pacote de código e conteúdo do AEM (all, ui.apps)
 - Implantação do pacote OSGi e do arquivo de configuração
 - Implantação das configurações do Apache e Dispatcher como um arquivo zip
 - Arquivos individuais como HTL, implantação de `.content.xml` (caixa de diálogo XML)
@@ -34,7 +34,7 @@ Usando o [Projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-w
 
 ## Pré-requisitos
 
-Clonar o projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) e abri-lo em seu IDE favorito para implantar os artefatos do AEM no RDE.
+Clona o projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) e o abre em seu IDE favorito para implantar os artefatos do AEM no RDE.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -47,11 +47,11 @@ $ cd aem-guides-wknd/
 $ mvn clean package
 ```
 
-## Implantar artefatos de AEM usando o plug-in AEM-RDE
+## Implantar artefatos do AEM usando o plug-in AEM-RDE
 
 Primeiro, verifique se você tem o [último `aio` módulo CLI instalado](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-Em seguida, use o comando `aio aem:rde:install` para implantar vários artefatos de AEM. Agora que você deve
+Em seguida, use o comando `aio aem:rde:install` para implantar vários artefatos do AEM. Agora que você deve
 
 ### Implantar pacotes `all` e `dispatcher`
 
@@ -204,7 +204,7 @@ Os arquivos de configuração do Apache ou Dispatcher **não podem ser implantad
 
 ### Implantar arquivos de configuração (YAML)
 
-Os arquivos de configuração de CDN, tarefas de manutenção, encaminhamento de logs e autenticação da API AEM podem ser implantados no RDE usando o comando `install`. Essas configurações são gerenciadas como arquivos YAML na pasta `config` do projeto AEM. Consulte [Configurações com Suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obter mais detalhes.
+Os arquivos de configuração de CDN, tarefas de manutenção, encaminhamento de logs e autenticação de API do AEM podem ser implantados no RDE usando o comando `install`. Essas configurações são gerenciadas como arquivos YAML na pasta `config` do projeto do AEM. Consulte [Configurações suportadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations) para obter mais detalhes.
 
 Para saber como implantar os arquivos de configuração, vamos aprimorar o arquivo de configuração `cdn` e implantá-lo no RDE.
 
@@ -238,15 +238,15 @@ Para saber como implantar os arquivos de configuração, vamos aprimorar o arqui
 1. Implante as alterações no RDE executando o seguinte comando
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. Verificar alterações no RDE
 
 
-## Comandos adicionais do plug-in AEM RDE
+## Comandos adicionais do plug-in RDE do AEM
 
-Vamos rever os comandos adicionais do plug-in AEM RDE para gerenciar e interagir com o RDE na sua máquina local.
+Vamos analisar os comandos adicionais do plug-in do AEM RDE para gerenciar e interagir com o RDE na máquina local.
 
 ```shell
 $ aio aem:rde --help
@@ -275,6 +275,6 @@ Saiba mais sobre o [ciclo de vida de desenvolvimento/implantação usando o RDE]
 
 [Documentação de comandos RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
-[Plug-in da CLI do Adobe I/O Runtime para interações com ambientes de desenvolvimento AEM Rapid](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in da CLI do Adobe I/O Runtime para interações com os ambientes de desenvolvimento AEM Rapid](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configuração do projeto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
+[Configuração do AEM Project](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
