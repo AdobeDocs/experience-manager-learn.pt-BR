@@ -1,6 +1,6 @@
 ---
 title: Criar aplicativo conectado ao Salesforce.
-description: O aplicativo conectado permite integrar o Salesforce com aplicativos de terceiros, como o AEM Forms com o Salesforce.
+description: O aplicativo conectado permite integrar o Salesforce a aplicativos de terceiros, como o AEM Forms com o Salesforce.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -10,9 +10,9 @@ feature: Adaptive Forms, Integrations
 topic: Development
 jira: KT-7152
 thumbnail: 331757.jpg
-exl-id: 6e130397-9747-4d60-9975-4c45c5aab87b
+exl-id: d9e6a4de-ba2c-4565-86aa-117646d665f5
 duration: 243
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ce22dd482417a54d222165deaf485ff69c2856b7
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -22,8 +22,9 @@ ht-degree: 0%
 # Criar aplicativo conectado
 
 Um aplicativo conectado é uma estrutura que permite que um aplicativo externo se integre ao Salesforce usando APIs e protocolos padrão, como SAML, OAuth e OpenID Connect. Os aplicativos conectados usam esses protocolos para autenticar, autorizar e fornecer logon único (SSO) para aplicativos externos.
+<!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
 
 >[!NOTE]
->Certifique-se de criar uma conta na [Salesforce Developer Edition](https://developer.salesforce.com/signup), pois as APIs REST estão habilitadas por padrão na edição do desenvolvedor.
+>Crie uma conta na [Salesforce Developer Edition](https://developer.salesforce.com/signup), pois as APIs REST são habilitadas por padrão na edição do desenvolvedor.
