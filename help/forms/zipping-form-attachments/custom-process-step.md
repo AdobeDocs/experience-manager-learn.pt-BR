@@ -9,31 +9,27 @@ level: Beginner
 kt: kt-8049
 exl-id: 1131dca8-882d-4904-8691-95468fb708b7
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '149'
 ht-degree: 1%
 
 ---
 
+
 # Etapa de processo personalizada
 
+Uma etapa de processo personalizada foi implementada para criar o arquivo zip que contém os anexos de formulário. Se você não estiver familiarizado com a criação de um pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-Uma etapa de processo personalizada foi implementada para criar o arquivo zip que contém os anexos de formulário. Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+O código na etapa de processo personalizada faz o seguinte:
 
-O código na etapa de processo personalizada faz o seguinte
-
-* Consulte todos os anexos de formulário adaptável na pasta de carga útil. O nome da pasta é passado como um argumento de processo para a etapa do processo.
-
-* Crie um arquivo zip contendo os anexos de formulário e armazene-o na pasta de carga útil.
-* Defina o valor da variável de workflow (no_of_attachments)
-
-
-
-
+- Consulte todos os anexos de formulário adaptável na pasta de carga útil. O nome da pasta é passado como um argumento de processo para a etapa do processo.
+- Crie um arquivo zip contendo os anexos de formulário e armazene-o na pasta de carga útil.
+- Defina o valor da variável de workflow (no_of_attachments).
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
+
 import javax.jcr.Binary;
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
@@ -58,16 +54,14 @@ import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;
 import com.day.cq.search.QueryBuilder;
-import com.day.cq.search.result.Hit
+import com.day.cq.search.result.Hit;
 import com.day.cq.search.result.SearchResult;
-
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=Zip form attachments",
         Constants.SERVICE_VENDOR + "=Adobe Systems",
         "process.label" + "=Zip form attachments"
 })
-
 
 public class ZipFormAttachments implements WorkflowProcess {
 
@@ -76,13 +70,12 @@ public class ZipFormAttachments implements WorkflowProcess {
      QueryBuilder queryBuilder;
 
      @Override
-     public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
-     {
+     public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException {
              String payloadPath = workItem.getWorkflowData().getPayload().toString();
-             log.debug("The payload path  is" + payloadPath);
+             log.debug("The payload path is " + payloadPath);
              MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
              Session session = workflowSession.adaptTo(Session.class);
-             Map < String, String > map = new HashMap < String, String > ();
+             Map<String, String> map = new HashMap<String, String>();
              map.put("path", workItem.getWorkflowData().getPayload().toString() + "/" + processArguments.get("PROCESS_ARGS", "string").toString());
              map.put("type", "nt:file");
              Query query = queryBuilder.createQuery(PredicateGroup.create(map), workflowSession.adaptTo(Session.class));
@@ -93,19 +86,16 @@ public class ZipFormAttachments implements WorkflowProcess {
              ByteArrayOutputStream baos = new ByteArrayOutputStream();
              ZipOutputStream zipOut = new ZipOutputStream(baos);
              int no_of_attachments = result.getHits().size();
-             for (Hit hit: result.getHits())
-             {
-                     try
-                     {
+             for (Hit hit: result.getHits()) {
+                     try {
                              String attachmentPath = hit.getPath();
-                             log.debug("The hit path is" + hit.getPath());
+                             log.debug("The hit path is " + hit.getPath());
                              Node attachmentNode = session.getNode(attachmentPath + "/jcr:content");
                              InputStream attachmentStream = attachmentNode.getProperty("jcr:data").getBinary().getStream();
                              ByteArrayOutputStream buffer = new ByteArrayOutputStream();
                              int nRead;
                              byte[] data = new byte[1024];
-                             while ((nRead = attachmentStream.read(data, 0, data.length)) != -1)
-                             {
+                             while ((nRead = attachmentStream.read(data, 0, data.length)) != -1) {
                                      buffer.write(data, 0, nRead);
                              }
 
@@ -116,19 +106,16 @@ public class ZipFormAttachments implements WorkflowProcess {
                              zipOut.write(byteArray);
                              zipOut.closeEntry();
 
-                     } 
-                     catch (Exception e)
-                     {
+                     } catch (Exception e) {
                              log.debug("The error message is " + e.getMessage());
                      }
              }
-             try
-             {
+             try {
                     zipOut.close();
                     Node payloadNode = session.getNode(payloadPath);
                     Node zippedFileNode =  payloadNode.addNode("zipped_attachments.zip", "nt:file");
                     javax.jcr.Node resNode = zippedFileNode.addNode("jcr:content", "nt:resource");
-                
+
                     ValueFactory valueFactory = session.getValueFactory();
                     Document zippedDocument = new Document(baos.toByteArray());
 
@@ -141,27 +128,19 @@ public class ZipFormAttachments implements WorkflowProcess {
                     session.save();
                     zippedDocument.close();
 
-
-
-             }
-             catch (IOException | RepositoryException e)
-             {
-                     
+             } catch (IOException | RepositoryException e) {
                      log.error("Error in closing zipout", e);
              }
-             
-            
-             
-
      }
-
 }
 ```
 
 >[!NOTE]
 >
-> Verifique se você tem uma variável chamada *no_of_attachments* do tipo Double em seu fluxo de trabalho para que esse código funcione.
+> Certifique-se de que você tenha uma variável chamada _no_of_attachments_ do tipo Double em seu fluxo de trabalho para que esse código funcione.
 
 ## Próximas etapas
 
-[Preencher variáveis de fluxo de trabalho ArrayList com Anexos e Nome do Anexo](./custom-process-step.md)
+[Preencher variáveis de fluxo de trabalho ArrayList com anexos e nome do anexo](./custom-process-step.md)
+
+

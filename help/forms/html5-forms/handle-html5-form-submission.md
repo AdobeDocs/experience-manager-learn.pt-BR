@@ -1,6 +1,6 @@
 ---
-title: Tratar Envio de Formulário HTML5
-description: Criar manipulador de envio de formulário HTML5
+title: Lidar com o envio de um formulário HTML5
+description: Criar manipulador de envio de formulário HTML5.
 feature: Mobile Forms
 doc-type: article
 version: 6.4,6.5
@@ -12,22 +12,21 @@ level: Experienced
 exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 66
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
-# Tratar Envio de Formulário HTML5
 
-Os formulários HTML5 podem ser enviados ao servlet hospedado no AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar seu formulário HTML5, é necessário adicionar o &quot;Botão de envio HTTP&quot; ao modelo de formulário usando o AEM Forms Designer
+# Lidar com o envio de formulário do HTML5
+
+Os formulários do HTML5 podem ser enviados a um servlet hospedado no AEM. Os dados enviados podem ser acessados no servlet como um fluxo de entrada. Para enviar o formulário HTML5, adicione um &quot;Botão de envio HTTP&quot; ao modelo de formulário usando o AEM Forms Designer.
 
 ## Criar seu manipulador de envio
 
-Um servlet simples pode ser criado para lidar com o envio do formulário HTML5. Os dados enviados podem ser extraídos usando o código a seguir. Este [servlet](assets/html5-submit-handler.zip) foi disponibilizado para você como parte deste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-
-O código da linha 9 pode ser usado para chamar o processo J2EE. Certifique-se de ter configurado a [Configuração do SDK do cliente do Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se pretender usar o código para invocar o processo J2EE.
+Um servlet simples pode lidar com o envio do formulário HTML5. Extraia os dados enviados usando o seguinte trecho de código. Baixe o [servlet](assets/html5-submit-handler.zip) fornecido neste tutorial. Instale o [servlet](assets/html5-submit-handler.zip) usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp).
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -38,48 +37,33 @@ while ((line = reader.readLine()) != null) {
     stringBuffer.append(line);
 }
 System.out.println("The submitted form data is " + stringBuffer.toString());
-/*
-        * java.util.Map params = new java.util.HashMap();
-        * params.put("in",stringBuffer.toString());
-        * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider scfp =
-        * sling.getService(com.adobe.livecycle.dsc.clientsdk.
-        * ServiceClientFactoryProvider.class);
-        * com.adobe.idp.dsc.clientsdk.ServiceClientFactory serviceClientFactory =
-        * scfp.getDefaultServiceClientFactory(); com.adobe.idp.dsc.InvocationRequest ir
-        * = serviceClientFactory.createInvocationRequest("Test1/NewProcess1", "invoke",
-        * params, true);
-        * ir.setProperty(com.adobe.livecycle.dsc.clientsdk.InvocationProperties.
-        * INVOKER_TYPE,com.adobe.livecycle.dsc.clientsdk.InvocationProperties.
-        * INVOKER_TYPE_SYSTEM); com.adobe.idp.dsc.InvocationResponse response1 =
-        * serviceClientFactory.getServiceClient().invoke(ir);
-        * System.out.println("The response is "+response1.getInvocationId());
-        */
 ```
 
+Verifique se você configurou a [Configuração do SDK do Adobe LiveCycle Client](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se planeja usar o código para invocar um processo J2EE.
 
-## Configure a URL de envio do formulário HTML5
+## Configurar a URL de envio do formulário HTML5
 
-![enviar-url](assets/submit-url.PNG)
+![Enviar URL](assets/submit-url.PNG)
 
-* Toque no xdp e clique em _Propriedades_->_Avançadas_
-* copie http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e cole no campo de texto Enviar URL
-* Clique no botão _Salvar e fechar_.
+- Abra o xdp e navegue até _Propriedades_->_Avançadas_.
+- Copie o http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e cole-o no campo de texto Enviar URL.
+- Clique no botão _SalvarEFechar_.
 
 ### Adicionar entrada nos Caminhos de exclusão
 
-* Navegue até [configMgr](http://localhost:4502/system/console/configMgr).
-* Pesquisar por _Filtro CSRF do Adobe Granite_
-* Adicione a seguinte entrada na seção Caminhos excluídos
-* _/content/AemFormsSamples/handlehml5formsubmit_
-* Salve as alterações
+- Vá para [configMgr](http://localhost:4502/system/console/configMgr).
+- Pesquise por _Filtro CSRF do Adobe Granite_.
+- Adicione a seguinte entrada na seção Caminhos Excluídos: _/content/AemFormsSamples/handlehml5formsubmit_.
+- Salve as alterações.
 
 ### Testar o formulário
 
-* Toque no modelo xdp.
-* Clique em _Visualizar_->Visualizar como HTML
-* Insira alguns dados no formulário e clique em enviar
-* Você deve ver os dados enviados gravados no arquivo stdout.log do seu servidor
+- Abra o modelo xdp.
+- Clique em _Visualizar_->Visualizar como HTML.
+- Insira os dados no formulário e clique em enviar.
+- Verifique os dados enviados no arquivo stdout.log do servidor.
 
 ### Leitura adicional
 
-Este [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sobre geração de PDF a partir do envio do formulário HTML5 também é recomendado.
+Para obter mais informações sobre como gerar PDFs a partir de envios de formulários do HTML5, consulte este [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html).
+

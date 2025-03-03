@@ -1,6 +1,6 @@
 ---
-title: Etapa de processo personalizada para preencher as variáveis da lista
-description: Etapa de processo personalizada para preencher as variáveis de lista do tipo documento e string
+title: Etapa de processo personalizada para preencher variáveis de lista
+description: Saiba como criar uma etapa de processo personalizada para preencher variáveis de lista do tipo documento e sequência de caracteres no Adobe Experience Manager.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
+
 # Etapa de processo personalizada
 
+Este guia o guiará pela criação de uma etapa de processo personalizada para preencher as variáveis de lista do tipo Lista de matriz com anexos e nomes de anexos no Adobe Experience Manager. Essas variáveis são essenciais para o componente de fluxo de trabalho Enviar email.
 
-Uma etapa de processo personalizada foi implementada para preencher variáveis de fluxo de trabalho do tipo Array List com os anexos e nomes de anexos. Essa variável é usada no componente de fluxo de trabalho Enviar email. Se você não estiver familiarizado com a criação do pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se você não estiver familiarizado com a criação de um pacote OSGi, siga estas [instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-O código na etapa de processo personalizada faz o seguinte
+O código na etapa de processo personalizada executa as seguintes ações:
 
-* Consulte todos os anexos de formulário adaptável na pasta de carga útil. O nome da pasta é passado como um argumento de processo para a etapa do processo.
-
-* Popular a variável de fluxo de trabalho `listOfDocuments`
-* Popular a variável de fluxo de trabalho `attachmentNames`
-* Definir o valor da variável de fluxo de trabalho (`no_of_attachments`)
+1. Consulta todos os anexos de formulário adaptável na pasta de carga. O nome da pasta é passado como um argumento de processo para a etapa.
+2. Preenche a variável de fluxo de trabalho `listOfDocuments`.
+3. Preenche a variável de fluxo de trabalho `attachmentNames`.
+4. Define o valor da variável de fluxo de trabalho `no_of_attachments`.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Verifique se você tem as seguintes variáveis definidas no fluxo de trabalho para que o código funcione
-> *listOfDocuments* - variável do tipo ArrayList de Documentos
-> *attachmentNames* - variável do tipo ArrayList de String
-> *no_of_attachments* - variável de tipo Double
+> Verifique se as seguintes variáveis estão definidas no fluxo de trabalho para que o código funcione:
+> 
+> - `listOfDocuments`: variável do tipo ArrayList of Documents
+> - `attachmentNames`: variável do tipo ArrayList de String
+> - `no_of_attachments`: variável do tipo Double
 
 ## Próximas etapas
 
