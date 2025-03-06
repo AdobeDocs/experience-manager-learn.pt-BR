@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1387'
 ht-degree: 15%
 
 ---
@@ -309,8 +309,12 @@ ht-degree: 15%
       + [Mesclar dados com modelo](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Testar a solução](./forms/doc-gen-forms-cs/test.md)
       + [Desafio](./forms/doc-gen-forms-cs/challenge.md)
-   + Usando a API DocAssurance{#doc-assurance-api}
-      + [Exemplos de snippets de código](./forms/doc-assurance-api/using-doc-assurance-api.md)
+   + Usando a API de Serviços de documento da Forms{#forms-document-services-api}
+      + [Introdução](./forms/forms-document-services/introduction.md)
+      + [Configurar OpenAPI](./forms/forms-document-services/using-open-api.md)
+      + [Gerar token de acesso](./forms/forms-document-services/generate-access-token.md)
+      + [Aplicar direitos de uso](./forms/forms-document-services/make-api-calls.md)
+      + [Código de exemplo](./forms/forms-document-services/sample-project.md)
    + Geração de documentos usando a API em lote {#formscs-batch-api}
       + [Introdução](./forms/formscs-batch-api/introduction.md)
       + [Configurar armazenamento do Azure](./forms/formscs-batch-api/configure-azure-storage.md)
