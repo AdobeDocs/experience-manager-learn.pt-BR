@@ -11,21 +11,21 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
+exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
+source-git-commit: bc4f1d7dd345dbaf7532367425c90fe1a718249c
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%
 
 ---
 
+# Implementação de redirecionamentos de URL sem pipeline
 
-# Implementação de redirecionamentos URL de pipeline grátis
+Saiba como implementar [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) no AEM as a Cloud Service para permitir que a equipe de marketing gerencie os redirecionamentos sem precisar de um desenvolvedor.
 
-Saiba como implementar [redirecionamentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) grátis de pipeline URL em AEM como Cloud Service para permitir que os equipe do marketing gerenciar os redirecionamentos sem precisar de um desenvolvedor.
+Há várias opções para gerenciar redirecionamentos de URL no AEM. Para obter mais informações, consulte [redirecionamentos de URL](url-redirection.md).
 
-Há várias opções para gerenciar URL redirecionamentos no AEM, para obter mais informações, consulte [URL redirecionamentos](url-redirection.md).
-
-A tutorial foca na criação de redirecionamentos URL como pares de valores-chave em um arquivo de texto curtir [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) e usa AEM como uma configuração Cloud Service específica para carregue-os no Apache/Dispatcher módulo.
+O tutorial foca em criar redirecionamentos de URL como pares de valores chave em um arquivo de texto como [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) e usa a configuração específica do AEM as a Cloud Service para carregá-los no módulo Apache/Dispatcher.
 
 ## Pré-requisitos
 
@@ -37,22 +37,22 @@ Para concluir este tutorial, você precisa:
 
 ## Caso de uso do tutorial
 
-Para o propósito da demonstração, vamos supor que a equipe de marketing da WKND esteja lançando uma nova campanha de esqui. Eles gostariam de criar URLs curtos para as páginas de aventura de esqui e gerenciá-los por conta própria como gerenciam o conteúdo. Eles decidiram usar a [abordagem de redirecionamentos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) grátis de pipeline URL para gerenciar os redirecionamentos URL.
+Para o propósito da demonstração, vamos supor que a equipe de marketing da WKND esteja lançando uma nova campanha de esqui. Eles gostariam de criar URLs curtos para as páginas de aventura de esqui e gerenciá-los por conta própria como gerenciam o conteúdo. Eles decidiram usar a abordagem [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para gerenciar os redirecionamentos de URL.
 
-Com base nos requisitos da marketing equipe, os seguintes são os redirecionamentos URL que precisam ser criados.
+Com base nos requisitos da equipe de marketing, os redirecionamentos de URL que precisam ser criados são os seguintes.
 
-| URL de Origem | URL de direcionamento |
+| URL do Source | URL de direcionamento |
 |------------|------------|
 | /ski | /us/en/adventures.html |
 | /ski/northamerica | /us/en/adventures/downhill-skiing-wyoming.html |
 | /ski/costa oeste | /us/en/adventures/tahoe-skiing.html |
 | /ski/europa | /us/en/adventures/ski-touring-mont-blanc.html |
 
-Agora, vamos ver como gerenciar esses redirecionamentos URL e configurações de Dispatcher necessárias em AEM como Cloud Service ambiente Cloud Service.
+Agora, vamos ver como gerenciar esses redirecionamentos de URL e as configurações únicas de Dispatcher necessárias no ambiente do AEM as a Cloud Service.
 
-## Como gerenciar redirecionamentos URL{#manage-redirects}
+## Como gerenciar redirecionamentos de URL{#manage-redirects}
 
-Para gerenciar o URL redireciona há várias opções disponíveis, vamos explorá-las.
+Para gerenciar os redirecionamentos de URL, há várias opções disponíveis, vamos explorá-las.
 
 ### Arquivo de texto em DAM
 
@@ -72,15 +72,15 @@ Por exemplo, os redirecionamentos de URL acima podem ser salvos em um arquivo de
 
 ### ACS Commons - Redirect Map Manager
 
-O [ACS Commons - Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) fornece uma interface usuário amigável para gerenciar os redirecionamentos URL.
+O [ACS Commons - Gerenciador de Mapa de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) fornece uma interface amigável para gerenciar os redirecionamentos de URL.
 
-Por exemplo, a marketing equipe pode criar um novo *Mapas de Redirecionamento* página nomeados `SkiCampaign` e adicionar os redirecionamentos URL acima usando o **guia de Entradas** do Editar. Os redirecionamentos URL estão disponíveis em `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`.
+Por exemplo, a equipe de marketing pode criar uma nova página *Mapas de redirecionamento* chamada `SkiCampaign` e adicionar os redirecionamentos de URL acima usando a guia **Editar Entradas**. Os redirecionamentos de URL estão disponíveis em `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`.
 
-![Gerenciador do mapa de redirecionamento](./assets/pipeline-free-redirects/redirect-map-manager.png)
+![Gerenciador do Mapa de Redirecionamento](./assets/pipeline-free-redirects/redirect-map-manager.png)
 
 >[!IMPORTANT]
 >
->O ACS Commons versão **6.7.0 ou superior** é necessário para usar o Redirect Map Manager, para obter mais informações, consulte o [ACS Commons - Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
+>O ACS Commons versão **6.7.0 ou superior** é necessário para usar o Gerenciador de Mapa de Redirecionamento. Para obter mais informações, consulte o [ACS Commons - Gerenciador de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
 
 ### ACS Commons - Gerenciador de redirecionamento
 
@@ -92,13 +92,13 @@ Por exemplo, a equipe de marketing pode criar uma nova configuração chamada `/
 
 >[!IMPORTANT]
 >
->O ACS Commons versão **6.10.0 ou superior** é necessário para usar o Gerenciador de Redirecionamento, para obter mais informações, consulte o [ACS Commons - Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
+>O ACS Commons versão **6.10.0 ou superior** é necessário para usar o Gerenciador de Redirecionamento. Para obter mais informações, consulte o [ACS Commons - Gerenciador de Redirecionamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
 ## Como configurar o Dispatcher
 
-Para carregar os URL redirecionamentos como um RewriteMap e aplicá-los às solicitações de entrada, são necessárias as seguintes Dispatcher configurações.
+Para carregar os redirecionamentos de URL como um RewriteMap e aplicá-los às solicitações recebidas, as seguintes configurações de Dispatcher são necessárias.
 
-### Habilitar Dispatcher módulo para o modo flexível
+### Habilitar o módulo Dispatcher para o modo flexível
 
 Primeiro, verifique se o módulo Dispatcher está habilitado para o _modo flexível_. A presença do arquivo `USE_SOURCES_DIRECTLY` na pasta `dispatcher/src/opt-in` indica que o Dispatcher está no modo flexível.
 
@@ -120,9 +120,9 @@ Durante a implantação, o Dispatcher cria o arquivo `<MAPNAME>.map` na pasta `/
 >
 > O nome do arquivo (`managed-rewrite-maps.yaml`) e o local (`dispatcher/src/opt-in`) devem ser exatamente como mencionado acima. Pense nele como uma convenção a ser seguida.
 
-### Aplicar URL redireciona para solicitações de entrada
+### Aplicar redirecionamentos de URL a solicitações recebidas
 
-Finalmente, crie ou atualize o arquivo de configuração de reescrita do Apache para usar o mapa acima (`<MAPNAME>.map`). Por exemplo, vamos usar o `rewrite.rules` arquivo da `dispatcher/src/conf.d/rewrites` pasta para aplicar os redirecionamentos de URL.
+Finalmente, crie ou atualize o arquivo de configuração de regravação do Apache para usar o mapa acima (`<MAPNAME>.map`). Por exemplo, vamos usar o arquivo `rewrite.rules` da pasta `dispatcher/src/conf.d/rewrites` para aplicar os redirecionamentos de URL.
 
 ```
 ...
@@ -161,17 +161,17 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
 
 >[!TAB ACS Commons - Gerenciador de Mapa de Redirecionamento]
 
-Quando os redirecionamentos URL são gerenciados usando o ACS Commons - Redirect Map Manager, as configurações são as seguintes.
+Quando os redirecionamentos de URL são gerenciados usando o ACS Commons - Redirect Map Manager, as configurações são as seguintes.
 
-[!BADGE dispatcher/src/aceitar/managed-rewrite-maps.yaml]{type=Neutral tooltip="Arquivo nome da amostra de código abaixo."}
+[!BADGE dispatcher/src/opt-in/managed-rewrite-maps.yaml]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
 ```yaml
 maps:
@@ -179,7 +179,7 @@ maps:
   path: /etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt
 ```
 
-[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Arquivo nome da amostra de código abaixo."}
+[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
 ```
 ...
@@ -188,8 +188,8 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
@@ -206,7 +206,7 @@ maps:
   path: /conf/wknd/settings/redirects.txt
 ```
 
-[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Arquivo nome da amostra de código abaixo."}
+[!BADGE dispatcher/src/conf.d/rewrites/rewrite.rules]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
 ```
 ...
@@ -215,8 +215,8 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
@@ -227,7 +227,7 @@ RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
 
 >[!IMPORTANT]
 >
->O *termo grátis* pipeline é usado para enfatizar que as configurações são *implantadas apenas uma vez* e que os marketing equipe podem gerenciar os redirecionamentos URL atualizando o arquivo de texto.
+>O termo *sem pipeline* é usado para enfatizar que as configurações são *implantadas apenas uma vez* e a equipe de marketing pode gerenciar os redirecionamentos de URL atualizando o arquivo de texto.
 
 Para implantar as configurações, use o pipeline de [pilha completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) ou [configuração da camada da Web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) na [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -242,12 +242,11 @@ Vamos testar os redirecionamentos de URL usando o navegador ou o comando `curl`.
 
 ## Resumo
 
-Nesta tutorial, você aprendeu a gerenciar URL redirecionamentos usando configurações grátis pipeline em AEM como Cloud Service ambiente.
+Neste tutorial, você aprendeu a gerenciar redirecionamentos de URL usando configurações sem pipeline no ambiente do AEM as a Cloud Service.
 
-A marketing equipe pode gerenciar os redirecionamentos URL como pares de valores-chave em um arquivo de texto e upload-los ao DAM ou usar o ACS Commons - Redirect Map Manager ou Redirect Manager. As configurações Dispatcher são atualizadas para carregar as URL redirecionamentos como um RewriteMap e aplicá-las às solicitações de entrada.
+A equipe de marketing pode gerenciar os redirecionamentos de URL como pares de valores chave em um arquivo de texto e carregá-los no DAM ou usar o ACS Commons - Gerenciador de mapa de redirecionamento ou Gerenciador de redirecionamento. As configurações do Dispatcher são atualizadas para carregar os redirecionamentos de URL como um RewriteMap e aplicá-los às solicitações recebidas.
 
 ## Recursos adicionais
 
-- [Redirecionamentos URL grátis pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
-- [redirecionamentos URL](url-redirection.md)
-
+- [Redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Redirecionamentos de URL](url-redirection.md)
