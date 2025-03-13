@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -41,7 +41,7 @@ As etapas de alto nível são:
    - CDN do cliente - para configurar o CDN do cliente e adicionar certificados SSL e detalhes de domínio, como AWS CloudFront, CDN do Azure ou Akamai.
    - Serviço de hospedagem de DNS (Sistema de Nomes de Domínio) - para adicionar registros DNS ao seu domínio personalizado, como Azure DNS ou AWS Route 53.
 - Acesso ao [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) para implantar a regra CDN de validação do Cabeçalho HTTP no ambiente do AEM as a Cloud Service.
-- O site [AEM WKND](https://github.com/adobe/aem-guides-wknd) de amostra foi implantado no ambiente AEM as a Cloud Service do tipo [programa de produção](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- O site [AEM WKND](https://github.com/adobe/aem-guides-wknd) de exemplo está implantado no ambiente AEM as a Cloud Service do tipo [programa de produção](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Se você não tiver acesso a serviços de terceiros, _colabore com a equipe de segurança ou hospedagem para concluir as etapas_.
 
@@ -90,7 +90,7 @@ Configure o CDN do cliente, como AWS CloudFront, Azure CDN ou Akamai, e adicione
 - Adicione o nome de domínio personalizado à CDN.
 - Configure a CDN para armazenar o conteúdo em cache, como imagens, CSS e arquivos JavaScript.
 - Adicione o cabeçalho HTTP `X-Forwarded-Host` às configurações de CDN para que sua CDN inclua esse cabeçalho em todas as solicitações enviadas à origem do AEMCD.
-- Verifique se o valor do cabeçalho `Host` está definido como o domínio padrão do AEM as a Cloud Service que contém a ID do programa e do ambiente e que termina com `adobeaemcloud.com`. O valor do cabeçalho do host HTTP passado do CDN do cliente para o CDN do Adobe deve ser o domínio padrão do AEM as a Cloud Service. Qualquer outro valor deve resultar em um estado de erro.
+- Verifique se o valor do cabeçalho `Host` está definido como o domínio padrão do AEM as a Cloud Service que contém a ID do programa e do ambiente e que termina com `adobeaemcloud.com`. O valor do cabeçalho do host HTTP passado do CDN do cliente para o CDN da Adobe deve ser o domínio padrão do AEM as a Cloud Service. Qualquer outro valor deve resultar em um estado de erro.
 
 ## Configurar registros DNS
 
@@ -113,7 +113,7 @@ Uma etapa de segurança crucial é implantar a regra CDN de validação de cabe�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432565?quality=12&learn=on)
 
-Sem a regra CDN de validação do Cabeçalho HTTP, o valor do cabeçalho `Host` é definido como o domínio padrão do AEM as a Cloud Service que contém a ID do programa e do ambiente e termina com `adobeaemcloud.com`. O CDN do Adobe transforma o valor do cabeçalho `Host` no valor de `X-Forwarded-Host` recebido do CDN do cliente somente se a regra CDN de validação do Cabeçalho HTTP for implantada. Caso contrário, o valor do cabeçalho `Host` será passado como está para o ambiente AEM as a Cloud Service e o cabeçalho `X-Forwarded-Host` não será usado.
+Sem a regra CDN de validação do Cabeçalho HTTP, o valor do cabeçalho `Host` é definido como o domínio padrão do AEM as a Cloud Service que contém a ID do programa e do ambiente e termina com `adobeaemcloud.com`. O Adobe CDN transforma o valor do cabeçalho `Host` no valor de `X-Forwarded-Host` recebido do CDN do cliente somente se a regra CDN de validação do Cabeçalho HTTP for implantada. Caso contrário, o valor do cabeçalho `Host` será passado como está para o ambiente AEM as a Cloud Service e o cabeçalho `X-Forwarded-Host` não será usado.
 
 ### Exemplo de código de servlet para imprimir o valor do cabeçalho do Host
 
@@ -201,16 +201,16 @@ Para configurar e implantar a regra CDN de validação do Cabeçalho HTTP, siga 
   kind: "CDN"
   version: "1"
   metadata:
-  envTypes: ["prod"]
+    envTypes: ["prod"]
   data:
-  authentication:
+    authentication:
       authenticators:
-      - name: edge-auth
+        - name: edge-auth
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_080124}}
           edgeKey2: ${{CDN_EDGEKEY_110124}}
       rules:
-      - name: edge-auth-rule
+        - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
           type: authenticate
@@ -224,7 +224,7 @@ Para configurar e implantar a regra CDN de validação do Cabeçalho HTTP, siga 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
-Atualize o CDN do cliente para transmitir o segredo no Cabeçalho HTTP `X-AEM-Edge-Key`. O segredo é usado pelo CDN do Adobe para validar se a solicitação vem do CDN do cliente e transformar o valor do cabeçalho `Host` no valor do `X-Forwarded-Host` recebido do CDN do cliente.
+Atualize o CDN do cliente para transmitir o segredo no Cabeçalho HTTP `X-AEM-Edge-Key`. O segredo é usado pela CDN da Adobe para validar se a solicitação vem da CDN do cliente e transformar o valor do cabeçalho `Host` no valor da `X-Forwarded-Host` recebida da CDN do cliente.
 
 ## Vídeo completo
 
