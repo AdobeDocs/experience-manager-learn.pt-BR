@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 15%
 
 ---
@@ -53,16 +53,16 @@ ht-degree: 15%
 + Pesquisa e descoberta{#search-and-discovery}
    + [Pesquisar](./search-and-discovery/search.md)
    + [Pesquisa contextual](./search-and-discovery/contextual-search.md)
-   + [integração de Adobe Firefly](./search-and-discovery/adobe-firefly.md)
+   + [Integração do Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Coleções](./search-and-discovery/collections.md)
    + [Impulsionamento de pesquisa](./search-and-discovery/search-boost.md)
    + [Localizar imagens semelhantes](./search-and-discovery/find-similar-images.md)
 
 + Recursos avançados{#advanced}
    + [3D assets](./advanced/3d-assets.md)
-   + [Saída de PDF de anotações](./advanced/customizing-annotations-pdf-output.md)
+   + [Saída do PDF de anotações](./advanced/customizing-annotations-pdf-output.md)
    + [Relatórios do Assets](./advanced/asset-reports.md)
-   + [Contents credentials](./advanced/content-credentials.md)
+   + [Credenciais de conteúdo](./advanced/content-credentials.md)
    + [Tags bloqueadas](./advanced/blocked-tags.md)
    + [Extrair arquivo](./advanced/extract-archive.md)
    + [Permissões (CUGs)](./advanced/closed-user-groups.md)
@@ -83,12 +83,12 @@ ht-degree: 15%
    + [Configurar ](./content-hub/configure.md)
    + [Adicionar ativos](./content-hub/add-assets.md)
    + [Baixar ativos](./content-hub/download-assets.md)
-   + [Variantes de imagem usando Adobe Express](./content-hub/image-variants.md)
+   + [Variantes de imagem usando o Adobe Express](./content-hub/image-variants.md)
    + [Coleções](./content-hub/collections.md)
    + [Compartilhamento](./content-hub/share.md)
 
 + Edge Delivery Services{#edge-delivery-services}
-   + [plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
+   + [Plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
    + [AEM Assets e GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
@@ -96,7 +96,7 @@ ht-degree: 15%
 + Compartilhamento e distribuição{#sharing}
    + [Baixar ativos](./sharing/download.md)
    + [Exportar ativos](./sharing/export.md)
-   + [Ativos do Publish](./sharing/publish.md)
+   + [Publicar ativos](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -109,10 +109,10 @@ ht-degree: 15%
       + [Compartilhamento de ativos em temas](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kits de ativos do Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Fluxos de trabalho de criação{#creative-workflows}
-   + [integração de Adobe Express](./creative-workflows/adobe-express.md)
++ Fluxos de trabalho do Creative{#creative-workflows}
+   + [Integração do Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
-   + [Aplicativo de desktop AEM](./creative-workflows/aem-desktop-app.md)
+   + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
@@ -131,13 +131,14 @@ ht-degree: 15%
 
 + Automação de conteúdo{#content-automation}
    + [Visão geral](./content-automation/overview.md)
-   + [Operações de criação](./content-automation/creative-operations.md)
+   + [Operações do Creative](./content-automation/creative-operations.md)
    + [Ações do Photoshop](./content-automation/photoshop-actions.md)
 
 + Dynamic Media{#dynamic-media}
    + [Visão geral do Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [aplicativo de desktop do Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imagens {#images}
+      + [Modelos do Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantâneo do Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Corte inteligente](dynamic-media/smart-crop-feature-video-use.md)
       + [Nitidez da imagem](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
@@ -158,7 +159,7 @@ ht-degree: 15%
       + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutorials {#tutorials}
+   + Tutoriais {#tutorials}
       + [Criação de conjuntos do Carousel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Criação de conjuntos de imagens](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Criação de predefinições de imagens](dynamic-media/tutorials/creating-image-presets.md)
@@ -169,7 +170,7 @@ ht-degree: 15%
       + [Geração de URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Acionamento de um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalidação do cache da CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Uso dos Componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Uso de componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Exclusão da configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download do Assets no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
@@ -178,10 +179,10 @@ ht-degree: 15%
    + Conector aprimorado{#enhanced-connector}
       + [Noções básicas do conector aprimorado](./workfront/enhanced-connector/basics.md)
       + [Pastas de projeto](./workfront/enhanced-connector/project-folders.md)
-      + Série de especialistas em AEM{#aem-experts-series}
+      + Série Especialistas da AEM{#aem-experts-series}
          + [Visão geral](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurar](./workfront/enhanced-connector/aem-experts-series/setup.md)
-         + [Formulários Workfront e metadados AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Formulários do Workfront e metadados do AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
          + [Tags, pastas vinculadas ao projeto e metadados da pasta](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
          + [Configurações e fluxos de trabalho avançados](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 

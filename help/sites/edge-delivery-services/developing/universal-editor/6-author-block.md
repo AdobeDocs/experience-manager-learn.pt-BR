@@ -1,6 +1,6 @@
 ---
 title: Criar um bloco
-description: Crie um bloco Edge Delivery Services com o Universal Editor.
+description: Crie um bloco do Edge Delivery Services com o Universal Editor.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -9,17 +9,17 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: ca356d38-262d-4c30-83a0-01c8a1381ee6
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-
 # Criar um bloco
 
-Depois de enviar o JSON](./5-new-block.md) do [bloco de teaser`teaser` para a ramificação , o bloco torna-se editável no Editor Universal AEM.
+Depois de enviar o [JSON do bloco de teaser](./5-new-block.md) para a ramificação `teaser`, o bloco torna-se editável no AEM Universal Editor.
 
 A criação de um bloco em desenvolvimento é importante por vários motivos:
 
@@ -54,11 +54,11 @@ A criação de um bloco em desenvolvimento é importante por vários motivos:
 
    ![Editor Universal - Bloco do Autor](./assets/6-author-block/author-block.png)
 
-8. Após concluir a criação, alterne para a guia anterior do navegador (AEM Sites Admin), selecione a página Teaser, clique em **Gerenciar publicações**, escolha **Visualizar** e publique as alterações no ambiente de visualização. As alterações são publicadas no domínio `aem.page` do site.
-   ![AEM Sites - Publish ou Visualização](./assets/6-author-block/publish-to-preview.png)
+8. Após concluir a criação, clique no botão **Publicar** na parte superior direita do Universal Editor, escolha Publicar na **Visualização** e publique as alterações no ambiente de visualização. As alterações são publicadas no domínio `aem.page` do site.
+   ![AEM Sites - Publicar ou Visualizar](./assets/6-author-block/publish-to-preview.png)
 
-9. Aguarde as alterações para publicar para visualização e, em seguida, abra a página da Web por meio da [CLI do AEM](./3-local-development-environment.md#install-the-aem-cli) em [http://localhost:3000/branches/teaser](http://localhost:3000/branches/teaser).
+9. Aguarde as alterações para publicar para visualização e, em seguida, abra a página da Web pela [CLI do AEM](./3-local-development-environment.md#install-the-aem-cli) em [http://localhost:3000/branches/teaser](http://localhost:3000/branches/teaser).
 
    ![Site Local - Atualizar](./assets/6-author-block/preview.png)
 
-Agora, o conteúdo do bloco de teaser criado e o HTML semântico estão disponíveis no site de visualização, prontos para desenvolvimento usando o AEM CLI no ambiente de desenvolvimento local.
+Agora, o conteúdo do bloco de teaser criado e o HTML semântico estão disponíveis no site de visualização, prontos para desenvolvimento usando a CLI do AEM no ambiente de desenvolvimento local.
