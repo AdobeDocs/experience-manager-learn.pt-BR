@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 0%
@@ -21,24 +21,24 @@ ht-degree: 0%
 
 # Bloqueio de ataques de DoS e DDoS usando regras de filtro de tráfego
 
-Saiba como bloquear ataques de Negação de Serviço (DoS) e de Negação de Serviço Distribuída (DDoS) usando regras de **filtro de limite de tráfego de taxa** e outras estratégias na CDN gerenciada pelo AEM as a Cloud Service (AEMCS). Esses ataques causam picos de tráfego na CDN e possivelmente no serviço AEM Publish (também conhecido como origem) e podem afetar a capacidade de resposta e a disponibilidade do site.
+Saiba como bloquear ataques de Negação de Serviço (DoS) e de Negação de Serviço Distribuída (DDoS) usando regras de **filtro de limite de tráfego de taxa** e outras estratégias na CDN gerenciada pelo AEM as a Cloud Service (AEMCS). Esses ataques causam picos de tráfego na CDN e possivelmente no serviço de publicação do AEM (também conhecido como origem) e podem afetar a capacidade de resposta e a disponibilidade do site.
 
 Este tutorial serve como um guia sobre _como analisar seus padrões de tráfego e configurar as [regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)_ de limite de taxa para mitigar esses ataques. O tutorial também descreve como [configurar alertas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para que você seja notificado quando houver suspeita de ataque.
 
 ## Noções básicas sobre proteção
 
-Vamos entender as proteções de DDoS padrão para o seu site de AEM:
+Vamos entender as proteções de DDoS padrão para seu site da AEM:
 
 - **Armazenamento em cache:** com boas políticas de armazenamento em cache, o impacto de um ataque de DDoS é mais limitado porque a CDN impede que a maioria das solicitações vá para a origem e cause degradação de desempenho.
-- **Dimensionamento automático:** o AEM faz o dimensionamento automático dos serviços de autoria e publicação para lidar com picos de tráfego, embora eles ainda possam ser afetados por aumentos repentinos e maciços no tráfego.
-- **Bloqueio:** O CDN de Adobe bloqueia o tráfego para a origem se ele exceder uma taxa definida por Adobe de um endereço IP específico, por PoP (Ponto de Presença) de CDN.
-- **Alertas:** a Central de Ações envia uma notificação de alerta de pico de tráfego na origem quando o tráfego excede uma determinada taxa. Este alerta é disparado quando o tráfego para qualquer PoP de CDN excede uma taxa de solicitação _definida por Adobe_ por endereço IP. Consulte [Alertas das regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para obter mais detalhes.
+- **Dimensionamento automático:** os serviços de autoria e publicação do AEM se dimensionam automaticamente para lidar com picos de tráfego, embora ainda possam ser afetados por aumentos súbitos e maciços no tráfego.
+- **Bloqueio:** a CDN da Adobe bloqueará o tráfego para a origem se ela exceder uma taxa definida pela Adobe de um endereço IP específico, por PoP (Ponto de Presença) da CDN.
+- **Alertas:** a Central de Ações envia uma notificação de alerta de pico de tráfego na origem quando o tráfego excede uma determinada taxa. Este alerta é disparado quando o tráfego para qualquer PoP de CDN excede uma taxa de solicitação _definida pela Adobe_ por endereço IP. Consulte [Alertas das regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) para obter mais detalhes.
 
-Essas proteções integradas devem ser consideradas uma linha de base para a capacidade de uma organização de minimizar o impacto no desempenho de um ataque de DDoS. Como cada site tem características de desempenho diferentes e pode observar essa degradação de desempenho antes que o limite de taxa definido pelo Adobe seja atingido, é recomendável estender as proteções padrão por meio da _configuração do cliente_.
+Essas proteções integradas devem ser consideradas uma linha de base para a capacidade de uma organização de minimizar o impacto no desempenho de um ataque de DDoS. Como cada site tem características de desempenho diferentes e pode observar essa degradação de desempenho antes que o limite de taxa definido pela Adobe seja atingido, é recomendável estender as proteções padrão por meio da _configuração do cliente_.
 
 Vamos analisar algumas medidas adicionais e recomendadas que os clientes podem tomar para proteger seus sites contra ataques de DDoS:
 
-- Declarar **regras de filtro de limite de taxa** para bloquear o tráfego que excede uma determinada taxa de um único endereço IP por PoP. Normalmente, esses são um limite mais baixo do que o limite de taxa definido pelo Adobe.
+- Declarar **regras de filtro de limite de taxa** para bloquear o tráfego que excede uma determinada taxa de um único endereço IP por PoP. Normalmente, esses são um limite mais baixo do que o limite de taxa definido pela Adobe.
 - Configure **alertas** sobre regras de filtro de limite de taxa por meio de uma &quot;ação de alerta&quot; para que, quando a regra for acionada, uma notificação da Central de Ações seja enviada.
 - Aumente a cobertura do cache declarando **solicitar transformações** para ignorar os parâmetros de consulta.
 
@@ -53,7 +53,7 @@ Há duas variações de regras de tráfego de limite de taxa:
 
 As etapas abaixo refletem o processo provável pelo qual os clientes devem proteger seus sites.
 
-1. Reconheça a necessidade de uma regra de filtro de tráfego de limite de taxa. Isso pode ser o resultado do recebimento do pico de tráfego de saída de Adobe no alerta de origem, ou pode ser uma decisão proativa para tomar precauções a fim de reduzir o risco de um DDoS bem-sucedido.
+1. Reconheça a necessidade de uma regra de filtro de tráfego de limite de taxa. Isso pode ser o resultado do recebimento do alerta predefinido de pico de tráfego na origem do Adobe, ou pode ser uma decisão proativa para tomar precauções a fim de reduzir o risco de um DDoS bem-sucedido.
 1. Analise os padrões de tráfego usando um painel, se o site já estiver ativo, para determinar os limites ideais para suas regras de filtro de tráfego de limite de taxa. Se o site ainda não estiver ativo, escolha valores com base nas expectativas de tráfego.
 1. Usando os valores da etapa anterior, configure as regras de filtro de tráfego de limite de taxa. Ative os alertas correspondentes para ser notificado sempre que o limite for atingido.
 1. Receba alertas de regras de filtro de tráfego sempre que picos de tráfego ocorrerem, fornecendo informações valiosas sobre se sua organização está sendo potencialmente alvo de agentes mal-intencionados.
@@ -63,7 +63,7 @@ O restante deste tutorial o orienta por esse processo.
 
 ## Reconhecendo a necessidade de configurar regras {#recognize-the-need}
 
-Como mencionado anteriormente, o Adobe por padrão bloqueia o tráfego na CDN que excede uma determinada taxa. No entanto, alguns sites podem enfrentar desempenho degradado abaixo desse limite. Portanto, as regras de filtro de tráfego de limite de taxa devem ser configuradas.
+Como mencionado anteriormente, o Adobe, por padrão, bloqueia o tráfego na CDN que excede uma determinada taxa. No entanto, alguns sites podem enfrentar desempenho degradado abaixo desse limite. Portanto, as regras de filtro de tráfego de limite de taxa devem ser configuradas.
 
 Idealmente, você configuraria as regras antes de entrar em produção. Na prática, muitas organizações declaram regras reativamente apenas uma vez alertadas de um pico de tráfego, indicando um provável ataque.
 
@@ -71,7 +71,7 @@ O Adobe envia um alerta de pico de tráfego na origem como uma [Notificação do
 
 ## Análise de padrões de tráfego {#analyze-traffic}
 
-Se o site já estiver ativo, você poderá analisar os padrões de tráfego usando logs CDN e painéis fornecidos pelo Adobe.
+Se o site já estiver ativo, você poderá analisar os padrões de tráfego usando logs CDN e painéis fornecidos pela Adobe.
 
 - **Painel de Tráfego da CDN**: fornece informações sobre o tráfego por meio da taxa de solicitação de CDN e Origem, taxas de erro 4xx e 5xx e solicitações não armazenadas em cache. Também fornece o máximo de solicitações CND e Origin por segundo por endereço IP de cliente e mais insights para otimizar as configurações de CDN.
 
@@ -81,12 +81,12 @@ Configure a ferramenta de painel usando _uma das seguintes opções_:
 
 ### ELK - configurando ferramentas de painel de controle
 
-A ferramenta de painel **Elasticsearch, Logstash e Kibana (ELK)** fornecida pelo Adobe pode ser usada para analisar os logs de CDN. Essa ferramenta inclui um painel que visualiza os padrões de tráfego, facilitando a determinação dos limites ideais para suas regras de filtro de tráfego de limite de taxa.
+A ferramenta de painel **Elasticsearch, Logstash e Kibana (ELK)** fornecida pela Adobe pode ser usada para analisar os logs de CDN. Essa ferramenta inclui um painel que visualiza os padrões de tráfego, facilitando a determinação dos limites ideais para suas regras de filtro de tráfego de limite de taxa.
 
 - Clonar o [repositório GitHub AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 - Configure a ferramenta seguindo as etapas [Como configurar o contêiner ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container).
 - Como parte da configuração, importe o arquivo `traffic-filter-rules-analysis-dashboard.ndjson` para visualizar os dados. O painel _Tráfego do CDN_ inclui visualizações que mostram o número máximo de solicitações por IP/POP no Edge e na Origem do CDN.
-- No cartão [Ambientes _do_ Cloud Manager](https://my.cloudmanager.adobe.com/), baixe os logs de CDN do serviço AEMCS Publish.
+- No cartão [Ambientes _do_ Cloud Manager](https://my.cloudmanager.adobe.com/), baixe os logs de CDN do serviço de publicação do AEMCS.
 
   ![Downloads de Registros CDN da Cloud Manager](./assets/cloud-manager-cdn-log-downloads.png)
 
@@ -140,9 +140,9 @@ Se o site ainda não estiver ativo, não há dados para analisar e você deve fa
 
 ## Configuração de regras {#configure-rules}
 
-Configure as regras de **filtro de limite de taxa** no arquivo `/config/cdn.yaml` do projeto AEM, com valores baseados na discussão acima. Se necessário, consulte sua equipe de Segurança da Web para verificar se os valores de limite de taxa são apropriados e não bloqueiam o tráfego legítimo.
+Configure as regras de **filtro de limite de taxa** no arquivo `/config/cdn.yaml` do seu projeto do AEM, com valores baseados na discussão acima. Se necessário, consulte sua equipe de Segurança da Web para verificar se os valores de limite de taxa são apropriados e não bloqueiam o tráfego legítimo.
 
-Consulte [Criar regras no projeto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project) para obter mais detalhes.
+Consulte [Criar regras no seu projeto do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#create-rules-in-your-aem-project) para obter mais detalhes.
 
 ```yaml
 kind: CDN
@@ -247,12 +247,12 @@ Para simular um ataque, ferramentas como o [Apache Benchmark](https://httpd.apac
 Usando o seguinte comando [Vegeta](https://github.com/tsenart/vegeta), você pode fazer muitas solicitações para o seu site:
 
 ```shell
-$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=5s | vegeta report
+$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=60s | vegeta report
 ```
 
 O comando acima faz 120 solicitações por 5 segundos e gera um relatório. Supondo que o site não tenha taxa limitada, isso pode causar um pico no tráfego.
 
 ### Solicitações de origem
 
-Para ignorar o cache da CDN e fazer solicitações à origem (serviço AEM Publish), você pode adicionar um parâmetro de consulta exclusivo ao URL. Consulte o exemplo de script Apache JMeter do [Simular ataque DoS usando o script JMeter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)
+Para ignorar o cache da CDN e fazer solicitações à origem (serviço de Publicação do AEM), você pode adicionar um parâmetro de consulta exclusivo ao URL. Consulte o exemplo de script Apache JMeter do [Simular ataque DoS usando o script JMeter](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection#simulate-dos-attack-using-jmeter-script)
 
