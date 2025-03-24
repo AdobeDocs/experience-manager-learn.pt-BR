@@ -1,7 +1,7 @@
 ---
 title: Next.js - Exemplo de AEM Headless
-description: Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo Next.js demonstra como consultar conteúdo usando as APIs do GraphQL do AEM usando consultas persistentes.
-version: Cloud Service
+description: Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Next.js demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -13,7 +13,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
 duration: 210
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Aplicativo Next.js
 
-Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo Next.js demonstra como consultar conteúdo usando as APIs do GraphQL do AEM usando consultas persistentes. O AEM Headless Client para JavaScript é usado para executar as consultas persistentes do GraphQL que alimentam o aplicativo.
+Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Next.js demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes. O AEM Headless Client para JavaScript é usado para executar as consultas persistentes do GraphQL que alimentam o aplicativo.
 
 ![Aplicativo Next.js com AEM Headless](./assets/next-js/next-js.png)
 
@@ -37,9 +37,9 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 ## Requisitos do AEM
 
-O aplicativo Next.js funciona com as seguintes opções de implantação de AEM. Todas as implantações exigem que o [WKND Compartilhado v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) seja instalado no ambiente do AEM as a Cloud Service.
+O aplicativo Next.js funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem que o [WKND Compartilhado v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) seja instalado no ambiente do AEM as a Cloud Service.
 
-Este aplicativo Next.js de exemplo foi criado para se conectar ao serviço __AEM Publish__.
+Este aplicativo Next.js de exemplo foi criado para se conectar ao serviço __Publicação AEM__.
 
 ### Requisitos do autor do AEM
 
@@ -61,9 +61,9 @@ O Next.js foi criado para se conectar ao serviço __AEM Publish__ e acessar cont
    ...
    ```
 
-   Se você estiver se conectando ao serviço de Autor do AEM, a autenticação deverá ser fornecida, pois o serviço de Autor do AEM é seguro por padrão.
+   Se você estiver se conectando ao serviço do AEM Author, a autenticação deverá ser fornecida, pois o serviço do AEM Author é seguro por padrão.
 
-   Para usar um conjunto de contas AEM local `AEM_AUTH_METHOD=basic` e fornecer o nome de usuário e a senha nas propriedades `AEM_AUTH_USER` e `AEM_AUTH_PASSWORD`.
+   Para usar um conjunto de contas do AEM local `AEM_AUTH_METHOD=basic` e fornecer o nome de usuário e a senha nas propriedades `AEM_AUTH_USER` e `AEM_AUTH_PASSWORD`.
 
    ```plain
    ...
@@ -82,7 +82,7 @@ O Next.js foi criado para se conectar ao serviço __AEM Publish__ e acessar cont
    AEM_AUTH_DEV_TOKEN=my-dev-token
    ```
 
-1. Edite o arquivo `aem-guides-wknd-graphql/next-js/.env.local` e valide se `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` está definido como o ponto de extremidade AEM GraphQL apropriado.
+1. Edite o arquivo `aem-guides-wknd-graphql/next-js/.env.local` e valide se `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` está definido como o ponto de extremidade apropriado do AEM GraphQL.
 
    Ao usar o [Site WKND Compartilhado](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou o [Site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest), use o ponto de extremidade de API do GraphQL `wknd-shared`.
 
@@ -224,9 +224,9 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Executar consulta persistente do GraphQL
 
-As consultas persistentes do AEM são executadas por HTTP GET e, portanto, o [cliente AEM Headless do JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas persistentes do GraphQL AEM](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) em relação ao e carregar o conteúdo de aventura no aplicativo.
+As consultas persistentes do AEM são executadas por HTTP GET e, portanto, o [cliente AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js) é usado para [executar as consultas persistentes do GraphQL](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) no AEM e carregar o conteúdo de aventura no aplicativo.
 
-Cada consulta persistente tem uma função correspondente em `src/lib//aem-headless-client.js`, que chama o ponto de acesso AEM GraphQL e retorna os dados de aventura.
+Cada consulta persistente tem uma função correspondente em `src/lib//aem-headless-client.js`, que chama o ponto de acesso do AEM GraphQL e retorna os dados de aventura.
 
 Cada função, por sua vez, invoca o `aemHeadlessClient.runPersistedQuery(...)`, executando a consulta persistente do GraphQL.
 
@@ -279,4 +279,4 @@ O aplicativo Next.js usa duas páginas para apresentar os dados de aventura.
 
 Os aplicativos Next.js, especialmente no contexto de Renderização do lado do servidor (SSR) e Geração do lado do servidor (SSG), não exigem configurações de segurança avançadas, como o Compartilhamento de recursos entre origens (CORS).
 
-No entanto, se o Next.js fizer solicitações HTTP para o AEM a partir do contexto do cliente, configurações de segurança no AEM podem ser necessárias. Revise o [tutorial de implantação de aplicativo de página única AEM Headless](../deployment/spa.md) para obter mais detalhes.
+No entanto, se o Next.js fizer solicitações HTTP para o AEM a partir do contexto do cliente, as configurações de segurança no AEM poderão ser necessárias. Revise o [tutorial de implantação de aplicativo de página única do AEM Headless](../deployment/spa.md) para obter mais detalhes.

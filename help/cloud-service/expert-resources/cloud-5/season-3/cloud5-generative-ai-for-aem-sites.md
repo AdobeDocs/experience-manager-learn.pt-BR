@@ -1,7 +1,7 @@
 ---
 title: IA gerativa no AEM Sites
-description: Explore os novos recursos de IA gerativa disponíveis para a criação de documentos no AEM.
-version: Cloud Service
+description: Explore os novos recursos da IA gerativa disponíveis para a criação de documentos do AEM.
+version: Experience Manager as a Cloud Service
 feature: Generative AI, Edge Delivery Services
 topic: Content Management
 role: Admin, Developer, Leader, User
@@ -13,7 +13,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 jira: KT-15348
 exl-id: c7020e3e-2664-42f1-a3b4-c23eb17cbf4b
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 2%

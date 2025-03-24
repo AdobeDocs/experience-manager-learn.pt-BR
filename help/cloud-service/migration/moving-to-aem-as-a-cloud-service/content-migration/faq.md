@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre migração de conteúdo para o AEM as a Cloud Service
 description: Obtenha respostas para perguntas frequentes sobre a migração de conteúdo para o AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: article
 topic: Migration
 feature: Migration
@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -29,15 +29,15 @@ Obtenha respostas para perguntas frequentes sobre a migração de conteúdo para
 + **CTT**: [Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR)
 + **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
-+ **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
++ **DM**: [Mídia dinâmica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
-Use o modelo abaixo para fornecer mais detalhes ao criar tíquetes de suporte para Adobe relacionados à CTT.
+Use o modelo abaixo para fornecer mais detalhes ao criar tíquetes de suporte da Adobe relacionados à CTT.
 
-![Modelo de tíquete de suporte a Adobe de migração de conteúdo](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
+![Modelo de tíquete de suporte da Adobe para migração de conteúdo](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
 
 ## Perguntas gerais sobre migração de conteúdo
 
-### P: Quais são os diferentes métodos para migrar o conteúdo para o AEM como Cloud Service?
+### P: Quais são os diferentes métodos para migrar o conteúdo para o AEM as a Cloud Services?
 
 Há três métodos diferentes disponíveis
 
@@ -47,7 +47,7 @@ Há três métodos diferentes disponíveis
 
 ### P: Há um limite para a quantidade de conteúdo que pode ser transferida usando a CTT?
 
-Não. A CTT como ferramenta poderia extrair da fonte do AEM e assimilar no AEMaaCS. No entanto, há limites específicos na plataforma AEMaaCS que devem ser considerados antes da migração.
+Não. A CTT como uma ferramenta poderia extrair da origem do AEM e assimilar no AEMaaCS. No entanto, há limites específicos na plataforma AEMaaCS que devem ser considerados antes da migração.
 
 Para obter mais informações, consulte [pré-requisitos de migração da nuvem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR).
 
@@ -65,13 +65,13 @@ Revise a avaliação de complexidade de código e conteúdo fornecida pela ferra
 
 Como o processo de migração depende da largura de banda da Internet, do heap alocado para o processo CTT, da memória livre disponível e da E/S de disco que são subjetivos para cada sistema de origem, é recomendável executar as migrações de Prova de Antecedência e extrapolar esses pontos de dados para gerar estimativas.
 
-### P: Como o desempenho do AEM de minha origem será afetado se eu iniciar o processo de extração de TTC?
+### P: Como o desempenho do meu AEM de origem será afetado se eu iniciar o processo de extração da CTT?
 
 A ferramenta CTT é executada em seu próprio processo Java™, que ocupa até um heap de 4 gb, que é configurável por meio da configuração OSGi. Esse número pode mudar, mas você pode pular para o processo Java™ e descobrir isso.
 
-Se o AZCopy estiver instalado e/ou a opção de Pré-cópia/recurso de validação estiver ativado, o processo do AZCopy consumirá ciclos da CPU.
+Se o AZCopy estiver instalado e/ou a opção de Pré-cópia/recurso de validação estiver ativado, o processo do AZCopy consumirá os ciclos do CPU.
 
-Além do jvm , a ferramenta também usa E/S de disco para armazenar os dados em um espaço temporário de transição e que será limpo após o ciclo de extração. Além da RAM, CPU e E/S de disco, a ferramenta CTT também usa a largura de banda da rede do sistema de origem para carregar dados no armazenamento de blobs do Azure.
+Além do jvm , a ferramenta também usa E/S de disco para armazenar os dados em um espaço temporário de transição e que será limpo após o ciclo de extração. Além da RAM, CPU e Disk IO, a ferramenta CTT também usa a largura de banda da rede do sistema de origem para carregar dados no armazenamento de blobs do Azure.
 
 A quantidade de recursos que o processo de extração da CTT utiliza depende do número de nós, do número de blobs e do seu tamanho agregado. É difícil fornecer uma fórmula e, portanto, é recomendável executar uma pequena Prova de migração para determinar os requisitos de upsize do servidor de origem.
 
@@ -101,7 +101,7 @@ Sim. O tráfego do usuário final não é interrompido pela atividade de migraç
 
 ### P: O relatório do BPA mostra itens relacionados a representações originais ausentes. Devo limpá-los na origem antes da extração?
 
-Sim. A representação original ausente significa que o binário do ativo não é carregado corretamente em primeiro lugar. Considerá-lo como dados ruins; revise, faça backup usando o Gerenciador de pacotes (conforme necessário) e remova-o do AEM de origem antes de executar a extração. Os dados incorretos terão resultados negativos nas etapas de processamento do ativo.
+Sim. A representação original ausente significa que o binário do ativo não é carregado corretamente em primeiro lugar. Considerá-los como dados ruins; revise, faça backup usando o Gerenciador de pacotes (conforme necessário) e remova-os do AEM de origem antes de executar a extração. Os dados incorretos terão resultados negativos nas etapas de processamento do ativo.
 
 ### P: O relatório do BPA tem itens relacionados ao nó `jcr:content` ausente para pastas. O que devo fazer com eles?
 
@@ -148,7 +148,7 @@ O processo da CTT requer conectividade com os recursos abaixo:
 
 Consulte a documentação para obter mais informações sobre a [conectividade de origem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
-## Perguntas relacionadas ao Dynamic Media para processamento de ativos
+## Perguntas relacionadas ao processamento de ativos do Dynamic Media
 
 ### P: Os ativos serão reprocessados automaticamente após a assimilação no AEMaaCS?
 
@@ -160,13 +160,13 @@ Sim. Os ativos são reindexados com base nas definições de índice disponívei
 
 ### P: O AEM de origem tem uma integração com o Dynamic Media. Há alguma coisa específica que deve ser considerada antes da migração de conteúdo?
 
-Sim, considere o seguinte quando o AEM de origem tiver integração com o Dynamic Media.
+Sim, considere o seguinte quando o AEM de origem tiver a Integração do Dynamic Media.
 
 + O AEMaaCS é compatível somente com o modo Scene7 do Dynamic Media. Se o sistema de origem estiver no modo híbrido, será necessária a migração do DM para os modos do Scene7.
 + Se a abordagem for migrar das instâncias de clone de origem, é seguro desabilitar a integração DM no clone que seria usado para CTT. Essa etapa serve exclusivamente para evitar gravações no DM ou a carga no tráfego do DM.
 + Observe que a CTT migra nós, metadados de um conjunto de migração do AEM de origem para o AEMaaCS. Ele não executará operações diretamente no DM.
 
-### P: Quais são as diferentes abordagens de migração quando a integração do DM está presente no AEM do Source?
+### P: Quais são as diferentes abordagens de migração quando a integração do DM está presente no Source AEM?
 
 Leia a pergunta e a resposta acima antes de
 
@@ -184,8 +184,8 @@ Se o número de ativos/nós no ambiente de origem estiver na extremidade inferio
    + Observe que esta operação migra o armazenamento de nós completo, mas apenas os blobs modificados, em vez dos blobs inteiros. O conjunto anterior de blobs está lá no armazenamento de blob do Azure da instância de destino do AEMaaCS.
    + Use essa prova de migrações para medir a duração da migração, os testes e a validação de todas as outras funcionalidades
 + Por fim, antes da semana de ativação, execute uma migração wipe=true
-   + Conectar a Dynamic Media no AEMaaCS
-   + Desconectar a configuração DM da origem local do AEM
+   + Conectar o Dynamic Media no AEMaaCS
+   + Desconectar configuração DM da origem local do AEM
 
 Com essa opção, é possível executar a migração de um para um, ou seja, desenvolvimento no local → desenvolvimento do AEMaaCS e assim por diante. e mover as configurações do DM de seus respectivos ambientes
 

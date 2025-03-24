@@ -1,15 +1,15 @@
 ---
-title: Como entender como codificar para o Sistema de Estilos AEM
-description: Neste vídeo, examinaremos a anatomia do CSS (ou MENOS) e do JavaScript Adobe usados para estilizar o Componente principal de título do Experience Manager usando o Sistema de estilos, bem como a forma como esses estilos são aplicados ao HTML e ao DOM.
+title: Noções básicas sobre como codificar para o Sistema de estilos do AEM
+description: Neste vídeo, observaremos a anatomia do CSS (ou MENOS) e do JavaScript usados para estilizar o Componente principal de título do Adobe Experience Manager usando o Sistema de estilos, bem como a forma como esses estilos são aplicados ao HTML e ao DOM.
 feature: Style System
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
 duration: 1005
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Para aqueles que preferem CSS, abaixo deste trecho de código está o CSS no qua
 }
 ```
 
-O [!DNL LESS] acima é compilado nativamente por Experience Manager para o seguinte CSS.
+O [!DNL LESS] acima é compilado nativamente pelo Experience Manager para o seguinte CSS.
 
 ```css
 /* CSS */
@@ -175,7 +175,7 @@ jQuery(function ($) {
 
 * É melhor expor mais dados e ocultá-los do que expor poucos dados que precisem de desenvolvimento de back-end futuro para expô-los.
 
-   * A implementação de alternadores de conteúdo editável pode ajudar a manter esse HTML enxuto, permitindo que os autores selecionem quais elementos de conteúdo serão gravados no HTML. As podem ser especialmente importantes ao gravar imagens no HTML que pode não ser usado para todos os estilos.
+   * A implementação de alternadores de conteúdo que podem ser criados pode ajudar a manter esse HTML enxuto, permitindo que os autores selecionem quais elementos de conteúdo são gravados na HTML. As podem ser especialmente importantes ao gravar imagens na HTML que podem não ser usadas para todos os estilos.
    * A exceção a essa regra é quando recursos caros, por exemplo, imagens, são expostos por padrão, já que as imagens de eventos ocultas pelo CSS são, nesse caso, buscadas desnecessariamente.
 
       * Os componentes de imagem modernos geralmente usam o JavaScript para selecionar e carregar a imagem mais apropriada para o caso de uso (visor).
@@ -190,11 +190,11 @@ jQuery(function ($) {
 >
 >Todos os outros locatários de [BEM](https://en.bem.info/) devem estar alinhados com.
 
-* Use pré-processadores como [LESS](https://lesscss.org/) (com suporte do AEM nativamente) ou [SCSS](https://sass-lang.com/) (requer um sistema de compilação personalizado) para permitir uma definição de CSS clara e a reutilização.
+* Use pré-processadores como [LESS](https://lesscss.org/) (com suporte nativo do AEM) ou [SCSS](https://sass-lang.com/) (requer um sistema de compilação personalizado) para permitir uma definição de CSS clara e a reutilização.
 
 * Mantenha o peso/especificidade do seletor uniforme; isso ajuda a evitar e resolver conflitos em cascata de CSS difíceis de identificar.
 * Organize cada estilo em um arquivo distinto.
-   * Esses arquivos podem ser combinados usando LESS/SCSS `@imports` ou, se o CSS bruto for necessário, por meio da inclusão de arquivos da Biblioteca de Cliente HTML ou de sistemas de build de ativos front-end personalizados.
+   * Esses arquivos podem ser combinados usando LESS/SCSS `@imports` ou, se CSS bruto for necessário, por meio da inclusão de arquivos da Biblioteca de clientes da HTML ou de sistemas de build de ativos front-end personalizados.
 * Evite misturar muitos estilos complexos.
    * Quanto mais estilos puderem ser aplicados em uma única vez a um componente, maior será a variedade de permutas. Isso pode se tornar difícil de manter/garantir o alinhamento da marca.
 * Sempre use classes CSS (seguindo a notação BEM) para definir regras CSS.
@@ -240,7 +240,7 @@ As práticas recomendadas definidas nesta seção referem-se ao &quot;style-Java
 * Style-JavaScript deve ser usado principalmente para manipular o DOM do componente para suportar estilos por CSS.
 * Reavalie o uso do Javascript se os componentes aparecerem muitas vezes em uma página e entenda o custo computacional e/ou de redesenho.
 * Reavalie o uso do Javascript se ele extrair novos dados/conteúdo de forma assíncrona (via AJAX) quando o componente puder aparecer muitas vezes em uma página.
-* Lidar com as experiências do Publish e de criação.
+* Lide com as experiências de publicação e criação.
 * Quando possível, reutilize o style-Javascript.
    * Por exemplo, se vários estilos de um componente exigirem que sua imagem seja movida para uma imagem de plano de fundo, o estilo JavaScript poderá ser implementado uma vez e anexado a vários `BLOCK--MODIFIERs`.
 * Separe o style-JavaScript do JavaScript funcional quando possível.
@@ -257,7 +257,7 @@ As práticas recomendadas definidas nesta seção referem-se ao &quot;style-Java
 ## Recursos adicionais {#additional-resources}
 
 * [Documentação do Sistema de Estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [Criando bibliotecas de clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Criando bibliotecas de Clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Site de documentação do BEM (Block Element Modifier)](https://getbem.com/)
 * [MENOS Site de documentação](https://lesscss.org/)
 * [jQuery](https://jquery.com/)

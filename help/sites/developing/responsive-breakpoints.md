@@ -1,7 +1,7 @@
 ---
 title: Pontos de interrupção responsivos
-description: Saiba como configurar novos pontos de interrupção responsivos para o Editor de página responsivo para AEM.
-version: Cloud Service
+description: Saiba como configurar novos pontos de interrupção responsivos para o Editor de página responsivo AEM.
+version: Experience Manager as a Cloud Service
 feature: Page Editor
 topic: Mobile, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Pontos de interrupção responsivos
 
-Saiba como configurar novos pontos de interrupção responsivos para o Editor de página responsivo para AEM.
+Saiba como configurar novos pontos de interrupção responsivos para o Editor de página responsivo AEM.
 
 ## Criar pontos de interrupção de CSS
 
-Primeiro, crie pontos de interrupção de mídia no CSS da Grade responsiva AEM que o site AEM responsivo segue.
+Primeiro, crie pontos de interrupção de mídia no CSS da Grade responsiva do AEM ao qual o site responsivo do AEM adere.
 
 No arquivo `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less`, crie seus pontos de interrupção para serem usados junto com o emulador móvel. Anote o `max-width` para cada ponto de interrupção, pois isso mapeia os pontos de interrupção de CSS para os pontos de interrupção responsivos do Editor de página do AEM.
 
@@ -39,17 +39,17 @@ Abra o arquivo `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wc
 
 ## Criar emuladores
 
-Os emuladores de AEM devem ser definidos para permitir que os autores selecionem a visualização responsiva a ser editada no Editor de páginas.
+Os emuladores de AEM devem ser definidos para permitir que os autores selecionem a visualização responsiva para editar no Editor de páginas.
 
 Criar nós de emuladores em `/ui.apps/src/main/content/jcr_root/apps/<app name>/emulators`
 
-Por exemplo, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copie um nó do emulador de referência de `/libs/wcm/mobile/components/emulators` em CRXDE Lite para e atualize a cópia para expedir a definição do nó.
+Por exemplo, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copie um nó do emulador de referência de `/libs/wcm/mobile/components/emulators` no CRXDE Lite para e atualize a cópia para expedir a definição do nó.
 
 ![Criar novos emuladores](./assets/responsive-breakpoints/create-new-emulators.jpg)
 
 ## Criar grupo de dispositivos
 
-Agrupar os emuladores para [disponibilizá-los no Editor de Páginas AEM](#update-the-templates-device-group).
+Agrupar os emuladores para [disponibilizá-los no Editor de Páginas do AEM](#update-the-templates-device-group).
 
 Crie a estrutura do nó `/apps/settings/mobile/groups/<name of device group>` em `/ui.apps/src/main/content/jcr_root`.
 

@@ -1,8 +1,8 @@
 ---
-title: Extensibilidade de microsserviços do Asset Compute para o AEM as a Cloud Service
-description: Este tutorial aborda a criação de um trabalhador do Asset Compute simples que cria uma representação do ativo ao recortar o ativo original em um círculo e aplica contraste e brilho configuráveis. Embora o próprio trabalhador seja básico, este tutorial o usa para explorar a criação, o desenvolvimento e a implantação de um trabalhador de Asset compute personalizado para uso com o AEM as a Cloud Service.
+title: Extensibilidade de microsserviços da Asset Compute para o AEM as a Cloud Service
+description: Este tutorial aborda a criação de um simples trabalhador do Asset Compute que cria uma representação do ativo ao recortar o ativo original em um círculo e aplica contraste e brilho configuráveis. Embora o próprio trabalhador seja básico, este tutorial o usa para explorar a criação, o desenvolvimento e a implantação de um trabalhador personalizado do Asset Compute para uso com o AEM as a Cloud Service.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
@@ -12,7 +12,7 @@ level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
 duration: 277
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -21,27 +21,27 @@ ht-degree: 0%
 
 # Extensibilidade de microsserviços do Asset Compute
 
-O AEM como microsserviços de Asset compute AEM de Cloud Service são compatíveis com o desenvolvimento e a implantação de trabalhadores personalizados usados para ler e manipular dados binários de ativos armazenados no, principalmente para criar representações de ativos personalizados.
+Os microsserviços do Asset Compute do AEM as a Cloud Service são compatíveis com o desenvolvimento e a implantação de trabalhadores personalizados usados para ler e manipular dados binários de ativos armazenados no AEM, geralmente para criar representações de ativos personalizados.
 
-Enquanto no AEM 6.x os processos personalizados de fluxo de trabalho de AEM eram usados para ler, transformar e gravar representações de ativos, no AEM as a Cloud Service os trabalhadores do Asset Compute atendem a essa necessidade.
+Enquanto no AEM 6.x os processos personalizados de fluxo de trabalho do AEM eram usados para ler, transformar e gravar representações de ativos, no AEM as a Cloud Service os trabalhadores da Asset Compute atendem a essa necessidade.
 
 ## O que você fará
 
 >[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
-Este tutorial aborda a criação de um trabalhador do Asset Compute simples que cria uma representação do ativo ao recortar o ativo original em um círculo e aplica contraste e brilho configuráveis. Embora o próprio trabalhador seja básico, este tutorial o usa para explorar a criação, o desenvolvimento e a implantação de um trabalhador de Asset compute personalizado para uso com o AEM as a Cloud Service.
+Este tutorial aborda a criação de um simples trabalhador do Asset Compute que cria uma representação do ativo ao recortar o ativo original em um círculo e aplica contraste e brilho configuráveis. Embora o próprio trabalhador seja básico, este tutorial o usa para explorar a criação, o desenvolvimento e a implantação de um trabalhador personalizado do Asset Compute para uso com o AEM as a Cloud Service.
 
 ### Objetivos {#objective}
 
 1. Provisionar e configurar as contas e os serviços necessários para criar e implantar um trabalhador do Asset Compute
 1. Criar e configurar um projeto do Asset Compute
 1. Desenvolver um trabalhador do Asset Compute que gere uma representação personalizada
-1. Escreva testes para o e saiba como depurar o trabalhador de Asset compute personalizado
+1. Escreva testes para o e saiba como depurar o trabalhador personalizado do Asset Compute
 1. Implante o trabalhador do Asset Compute e integre-o ao serviço do AEM as a Cloud Service Author por meio de Perfis de processamento
 
 ## Configurar
 
-Saiba como se preparar adequadamente para estender os funcionários do Asset Compute e entender quais serviços e contas devem ser provisionados e configurados, e o software instalado localmente para desenvolvimento.
+Saiba como se preparar adequadamente para estender os funcionários da Asset Compute e entender quais serviços e contas devem ser provisionados e configurados, e o software instalado localmente para desenvolvimento.
 
 ### Provisionamento de conta e serviço{#accounts-and-services}
 
@@ -67,13 +67,13 @@ Saiba como criar e configurar um projeto do Asset Compute e desenvolver um traba
 
 ### Criar um novo projeto do Asset Compute
 
-Os projetos do Asset Compute, que contêm um ou mais trabalhadores do Asset Compute, são gerados usando a CLI de Adobe I/O interativa. Os projetos do Asset Compute são projetos App Builder especialmente estruturados que, por sua vez, são projetos Node.js.
+Os projetos do Asset Compute, que contêm um ou mais trabalhadores do Asset Compute, são gerados usando a CLI interativa do Adobe I/O. Os projetos do Asset Compute são projetos App Builder especialmente estruturados que, por sua vez, são projetos Node.js.
 
 + [Criar um novo projeto do Asset Compute](./develop/project.md)
 
 ### Configurar variáveis de ambiente
 
-As variáveis de ambiente são mantidas no arquivo `.env` para desenvolvimento local e são usadas para fornecer credenciais de Adobe I/O e credenciais de armazenamento de nuvem necessárias para o desenvolvimento local.
+As variáveis de ambiente são mantidas no arquivo `.env` para desenvolvimento local e são usadas para fornecer credenciais do Adobe I/O e credenciais de armazenamento de nuvem necessárias para o desenvolvimento local.
 
 + [Configurar as variáveis de ambiente](./develop/environment-variables.md)
 
@@ -85,53 +85,53 @@ Os projetos do Asset Compute contêm manifestos que definem todos os trabalhador
 
 ### Desenvolver um trabalhador
 
-O desenvolvimento de um trabalhador do Asset Compute é o núcleo da extensão dos microsserviços do Asset Compute, pois o trabalhador contém o código personalizado que gera ou coordena a geração da representação do ativo resultante.
+O desenvolvimento de um trabalhador do Asset Compute é o núcleo da extensão dos microsserviços do Asset Compute, pois o trabalhador contém o código personalizado que gera ou coordena a geração da representação de ativos resultante.
 
 + [Desenvolver um trabalhador do Asset Compute](./develop/worker.md)
 
-### Usar a Ferramenta de desenvolvimento de Assets compute
+### Usar a Ferramenta de desenvolvimento do Asset Compute
 
-A Ferramenta de desenvolvimento de Assets compute fornece um recurso da Web local para implantar, executar e pré-visualizar representações geradas pelo trabalhador, oferecendo suporte ao desenvolvimento rápido e iterativo do trabalhador de Assets compute.
+A Ferramenta de desenvolvimento do Asset Compute fornece um recurso da Web local para implantar, executar e pré-visualizar representações geradas pelo trabalhador, oferecendo suporte ao desenvolvimento rápido e iterativo do trabalhador do Asset Compute.
 
-+ [Usar a Ferramenta de desenvolvimento de Assets compute](./develop/development-tool.md)
++ [Usar a Ferramenta de desenvolvimento do Asset Compute](./develop/development-tool.md)
 
 ## Teste e depuração
 
-Saiba como testar trabalhadores de Assets compute personalizados para serem confiantes em sua operação e depurar trabalhadores de Assets compute para entender e solucionar problemas de como o código personalizado é executado.
+Saiba como testar trabalhadores personalizados do Asset Compute para terem confiança em sua operação e depurar trabalhadores do Asset Compute para entender e solucionar problemas de como o código personalizado é executado.
 
 ### Testar um trabalhador
 
-O Asset Compute fornece uma estrutura de teste para a criação de conjuntos de testes para trabalhadores, facilitando a definição de testes que garantam o comportamento adequado.
+O Asset Compute fornece uma estrutura de teste para criar conjuntos de testes para trabalhadores, facilitando a definição de testes que garantam o comportamento adequado.
 
 + [Testar um trabalhador](./test-debug/test.md)
 
 ### Depurar um trabalhador
 
-Os trabalhadores do Asset Compute fornecem vários níveis de depuração, desde a saída tradicional do `console.log(..)` até integrações com o __Código VS__ e o __wskdebug__, permitindo que os desenvolvedores passem pelo código do à medida que ele é executado em tempo real.
+Os trabalhadores do Asset Compute fornecem vários níveis de depuração, desde a saída tradicional do `console.log(..)` até integrações com o __Código VS__ e o __wskdebug__, permitindo que os desenvolvedores passem pelo código do trabalhador à medida que ele é executado em tempo real.
 
 + [Depurar um trabalhador](./test-debug/debug.md)
 
 ## Implantar
 
-Saiba como integrar trabalhadores de Assets compute personalizados ao AEM as a Cloud Service, primeiro implantando-os no Adobe I/O Runtime e, em seguida, chamando do AEM as a Cloud Service Author por meio dos Perfis de processamento do AEM Assets.
+Saiba como integrar trabalhadores personalizados do Asset Compute ao AEM as a Cloud Service, primeiro implantando-os no Adobe I/O Runtime e depois chamando do AEM as a Cloud Service Author por meio dos Perfis de processamento do AEM Assets.
 
 ### Implantar no Adobe I/O Runtime
 
-Os funcionários do Asset Compute devem ser implantados no Adobe I/O Runtime para serem usados com o AEM as a Cloud Service.
+Os funcionários da Asset Compute devem ser implantados no Adobe I/O Runtime para serem usados com o AEM as a Cloud Service.
 
 + [Uso de perfis de processamento](./deploy/runtime.md)
 
-### Integrar trabalhadores por meio de perfis de processamento AEM
+### Integrar trabalhadores por meio de perfis de processamento do AEM
 
-Após a implantação no Adobe I/O Runtime, os trabalhadores do Asset Compute podem ser registrados no AEM as a Cloud Service através de [Perfis de Processamento Assets](../../assets/configuring/processing-profiles.md). Os perfis de processamento são, por sua vez, aplicados às pastas de ativos que se aplicam aos ativos contidos neles.
+Após a implantação no Adobe I/O Runtime, os trabalhadores da Asset Compute podem ser registrados no AEM as a Cloud Service através de [Perfis de Processamento do Assets](../../assets/configuring/processing-profiles.md). Os perfis de processamento são, por sua vez, aplicados às pastas de ativos que se aplicam aos ativos contidos neles.
 
-+ [Integrar a perfis de processamento AEM](./deploy/processing-profiles.md)
++ [Integrar a perfis de processamento do AEM](./deploy/processing-profiles.md)
 
 ## Avançado 
 
 Esses tutoriais resumidos abordam casos de uso mais avançados com base em aprendizados fundamentais estabelecidos nos capítulos anteriores.
 
-+ [Desenvolver um trabalhador de metadados do Asset compute](./advanced/metadata.md) que possa gravar metadados de volta no
++ [Desenvolver um trabalhador de metadados do Asset Compute](./advanced/metadata.md) que possa gravar metadados de volta no
 
 ## Codebase no Github
 
@@ -143,19 +143,19 @@ O código-fonte não contém os arquivos `.env` ou `config.json` necessários. E
 
 ## Recursos adicionais
 
-A seguir estão vários recursos de Adobe que fornecem mais informações e APIs e SDKs úteis para o desenvolvimento de funcionários de Assets compute.
+A seguir estão vários recursos do Adobe que fornecem mais informações e APIs e SDKs úteis para o desenvolvimento de trabalhadores do Asset Compute.
 
 ### Documentação
 
-+ [Documentação do Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [Documentação de serviço do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
 + [readme da Ferramenta de desenvolvimento do Asset Compute](https://github.com/adobe/asset-compute-devtool)
-+ [trabalhadores de exemplo do Asset Compute](https://github.com/adobe/asset-compute-example-workers)
++ [exemplos de trabalhadores do Asset Compute](https://github.com/adobe/asset-compute-example-workers)
 
 ### APIs e SDKs
 
-+ [SDK do Asset Compute](https://github.com/adobe/asset-compute-sdk)
++ [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
    + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
-   + [Asset compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
-+ [biblioteca do Adobe Cloud Blobstore Wrapper](https://github.com/adobe/node-cloud-blobstore-wrapper)
-+ [biblioteca de Repetição de Busca de Nó Adobe](https://github.com/adobe/node-fetch-retry)
-+ [trabalhadores de exemplo do Asset Compute](https://github.com/adobe/asset-compute-example-workers)
+   + [Asset Compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
++ [Biblioteca de Wrapper de Blobstore da Adobe Cloud](https://github.com/adobe/node-cloud-blobstore-wrapper)
++ [Biblioteca de repetição de busca de nós do Adobe](https://github.com/adobe/node-fetch-retry)
++ [exemplos de trabalhadores do Asset Compute](https://github.com/adobe/asset-compute-example-workers)

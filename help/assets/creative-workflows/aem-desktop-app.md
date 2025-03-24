@@ -1,7 +1,7 @@
 ---
-title: Aplicativo de desktop AEM
-description: Use o aplicativo de desktop AEM para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
-version: 6.5, 6.4
+title: Aplicativo de desktop do AEM
+description: Use o aplicativo de desktop do AEM para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
+version: Experience Manager 6.5, Experience Manager 6.4
 topic: Content Management
 feature: Desktop App
 role: User
@@ -12,7 +12,7 @@ last-substantial-update: 2022-06-24T00:00:00Z
 doc-type: Feature Video
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
 duration: 367
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Usar o aplicativo de desktop do AEM
 
-Use o aplicativo de desktop AEM para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
+Use o aplicativo de desktop do AEM para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
@@ -32,8 +32,8 @@ Use o aplicativo de desktop AEM para simplificar o acesso a qualquer ativo geren
 
 >[!NOTE]
 >
-> O [Adobe Asset Link](./adobe-asset-link.md) é uma solução dedicada Adobe para trabalhar com ativos AEM em aplicativos da Adobe Creative Cloud: Photoshop, Illustrator e InDesign. Ao usar o AEM Assets nesses aplicativos, o Adobe Asset Link é preferível ao aplicativo de desktop AEM.
+> O [Adobe Asset Link](./adobe-asset-link.md) é a solução dedicada da Adobe para trabalhar com ativos da AEM dentro de aplicativos da Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Ao usar o AEM Assets nesses aplicativos, o Adobe Asset Link é preferível ao aplicativo de desktop da AEM.
 
 ## Recursos adicionais
 
-+ [Baixe o aplicativo de desktop AEM mais recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Baixe o Aplicativo de Desktop AEM mais recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)

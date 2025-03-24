@@ -2,7 +2,7 @@
 title: Ciclo de vida de desenvolvimento usando o ambiente de desenvolvimento rápido
 description: Saiba como o novo ciclo de vida de desenvolvimento se parece com o uso do ambiente de desenvolvimento rápido e os principais benefícios do RDE.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,10 +11,10 @@ thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 062672f6-d03c-44da-9ac5-3d1ecff1a628
 duration: 153
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

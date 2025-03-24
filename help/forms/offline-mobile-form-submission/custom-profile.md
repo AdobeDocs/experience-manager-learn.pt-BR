@@ -1,9 +1,9 @@
 ---
-title: Acionar o fluxo de trabalho de AEM no envio do formulário HTML5 - Criar perfil personalizado
+title: Acionar o fluxo de trabalho do AEM no envio do formulário do HTML5 - Criar perfil personalizado
 description: Crie um perfil personalizado para baixar um pdf interativo com os dados do formulário HTML5 parcialmente preenchido
 feature: Mobile Forms
 doc-type: article
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 duration: 102
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Criar perfil personalizado
 
-Nesta parte, criaremos um [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Um perfil é responsável por renderizar o XDP como HTML. Um perfil padrão é fornecido imediatamente para renderizar XDPs como HTML. Ele representa uma versão personalizada do serviço de representação do Mobile Forms. Você pode usar o serviço de Representação de formulários para dispositivos móveis para personalizar a aparência, o comportamento e as interações do Forms para dispositivos móveis. Em nosso perfil personalizado, capturaremos os dados preenchidos no formulário móvel usando a API do guidebridge. Esses dados são enviados para o servlet personalizado que gerará um PDF interativo e o transmitirá ao aplicativo de chamada.
+Nesta parte, criaremos um [perfil personalizado.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Um perfil é responsável por renderizar o XDP como HTML. Um perfil padrão é fornecido imediatamente para renderizar XDPs como HTML. Ele representa uma versão personalizada do serviço de representação do Mobile Forms. Você pode usar o serviço de Representação de formulários para dispositivos móveis para personalizar a aparência, o comportamento e as interações do Forms para dispositivos móveis. Em nosso perfil personalizado, capturaremos os dados preenchidos no formulário móvel usando a API do guidebridge. Esses dados são enviados para o servlet personalizado que gerará uma PDF interativa e a transmitirá ao aplicativo de chamada.
 
 Obtenha os dados do formulário usando a API do JavaScript `formBridge`. Usamos o método `getDataXML()`:
 
@@ -64,7 +64,7 @@ var suc = function(obj) {
 }
 ```
 
-## Gerar PDF interativo
+## Gerar PDF interativa
 
 Veja a seguir o código do servlet responsável por renderizar o pdf interativo e devolvê-lo ao aplicativo de chamada. O servlet invoca o método `mobileFormToInteractivePdf` do serviço OSGi DocumentServices personalizado.
 

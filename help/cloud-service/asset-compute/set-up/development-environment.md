@@ -1,8 +1,8 @@
 ---
 title: Configurar um ambiente de desenvolvimento local para extensibilidade do Asset Compute
-description: O desenvolvimento de trabalhadores do Asset Compute, que são aplicativos Node.js do JavaScript, exigem ferramentas de desenvolvimento específicas que diferem do desenvolvimento do AEM tradicional, que variam de Node.js e vários módulos npm a Docker Desktop e Microsoft Visual Studio Code.
+description: O desenvolvimento de trabalhadores do Asset Compute, que são aplicativos Node.js do JavaScript, exigem ferramentas de desenvolvimento específicas que diferem do desenvolvimento tradicional do AEM, que vai de Node.js e vários módulos npm a Docker Desktop e Microsoft Visual Studio Code.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6266
 thumbnail: KT-6266.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 96
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurar ambiente de desenvolvimento local
 
-Os projetos do Adobe Asset Compute não podem ser integrados ao tempo de execução do AEM local fornecido pelo SDK do AEM AEM AEM e são desenvolvidos usando sua própria cadeia de ferramentas, separada daquela exigida pelos aplicativos do com base no arquétipo de projeto Maven.
+Os projetos do Adobe Asset Compute não podem ser integrados ao tempo de execução local do AEM fornecido pelo AEM SDK e são desenvolvidos usando sua própria cadeia de ferramentas, separada daquela exigida pelos aplicativos do AEM com base no arquétipo de projeto AEM Maven.
 
 Para estender os microsserviços do Asset Compute, as seguintes ferramentas devem ser instaladas na máquina do desenvolvedor local.
 
@@ -37,7 +37,7 @@ Veja a seguir as instruções de uma configuração resumida. Detalhes sobre ess
 
 1. [Instalar o Visual Studio Code](https://code.visualstudio.com/download)
 1. [Instalar Node.js 10+](../../local-development-environment/development-tools.md#node-js)
-1. Instale os módulos npm necessários e os plug-ins da CLI do Adobe I/O na linha de comando:
+1. Instale os módulos npm necessários e os plug-ins da Adobe I/O CLI na linha de comando:
 
    ```
    $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
@@ -48,7 +48,7 @@ Para obter mais informações sobre as instruções de instalação resumidas, l
 
 ## Instalar o Visual Studio Code{#vscode}
 
-O [Microsoft Visual Studio Code](https://code.visualstudio.com/download) é usado para desenvolver e depurar trabalhadores de Asset compute. Embora outro [IDE compatível com JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) possa ser usado para desenvolver o trabalhador, somente o Visual Studio Code pode ser integrado ao trabalhador de Asset compute [debug](../test-debug/debug.md).
+O [Microsoft Visual Studio Code](https://code.visualstudio.com/download) é usado para desenvolver e depurar trabalhadores do Asset Compute. Embora outro [IDE compatível com JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) possa ser usado para desenvolver o trabalhador, somente o Visual Studio Code pode ser integrado ao trabalhador do Asset Compute [debug](../test-debug/debug.md).
 
 Este tutorial presume o uso do Visual Studio Code, pois ele fornece a melhor experiência do desenvolvedor para estender o Asset Compute.
 
@@ -67,21 +67,21 @@ Os desenvolvedores em máquinas Windows devem verificar se estão usando contêi
 
 ## Instalar Node.js (e npm){#node-js}
 
-Os trabalhadores do Asset Compute são baseados em [Node.js](https://nodejs.org/) e, portanto, exigem Node.js 10+ (e npm) para serem desenvolvidos e compilados.
+Os trabalhadores do Asset Compute são baseados em [Node.js](https://nodejs.org/) e, portanto, exigem que o Node.js 10+ (e npm) seja desenvolvido e criado.
 
-+ [Instale o Node.js (e o npm)](../../local-development-environment/development-tools.md#node-js) da mesma maneira que para o desenvolvimento tradicional do AEM.
++ [Instale Node.js (e npm)](../../local-development-environment/development-tools.md#node-js) da mesma maneira que para o desenvolvimento tradicional do AEM.
 
 ## Instalar o Adobe I/O CLI{#aio}
 
-[Instalar o Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) ou __aio__ é um módulo npm de linha de comando (CLI) que facilita o uso e a interação com tecnologias Adobe I/O e é usado para gerar e desenvolver localmente trabalhadores de Asset compute personalizado.
+[Instalar o Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli) ou __aio__ é um módulo npm de linha de comando (CLI) que facilita o uso e a interação com tecnologias Adobe I/O e é usado para gerar e desenvolver localmente trabalhadores personalizados do Asset Compute.
 
 ```
 $ npm install -g @adobe/aio-cli
 ```
 
-## Instalar o plug-in do Asset compute CLI do Adobe I/O{#aio-asset-compute}
+## Instalar o plug-in do Adobe I/O CLI Asset Compute{#aio-asset-compute}
 
-O [plug-in de Asset compute CLI do Adobe I/O](https://github.com/adobe/aio-cli-plugin-asset-compute)
+O [plug-in Adobe I/O CLI Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
 ```
 $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
@@ -89,7 +89,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Instalar wskdebug{#wskdebug}
 
-Baixe e instale o módulo [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm para facilitar a depuração local de trabalhadores do Asset Compute.
+Baixe e instale o [módulo Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm para facilitar a depuração local dos trabalhadores do Asset Compute.
 
 _O Visual Studio Code 1.48.x+ é necessário para que [wskdebug](#wskdebug) funcione._
 

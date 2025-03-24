@@ -2,14 +2,14 @@
 title: Exibir os formulários buscados na exibição de cartão
 description: Use a API listforms para exibir os formulários
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13311
 topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -85,7 +85,7 @@ A rota a seguir foi definida no Main.js para navegar até DisplayForm.js
 
 ## Busque os formulários
 
-A API listforms foi usada para buscar os formulários do servidor AEM. A API retorna uma matriz de objetos JSON, cada objeto JSON representando um formulário.
+A API listforms foi usada para buscar os formulários do servidor do AEM. A API retorna uma matriz de objetos JSON, cada objeto JSON representando um formulário.
 
 ```javascript
 import { useState,useEffect } from "react";

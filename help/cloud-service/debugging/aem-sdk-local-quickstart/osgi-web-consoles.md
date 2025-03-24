@@ -1,8 +1,8 @@
 ---
-title: Depuração do SDK do AEM usando o console da Web OSGi
-description: O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
+title: Depuração do AEM SDK usando o console da Web OSGi
+description: A inicialização rápida local do AEM SDK tem um console da Web OSGi que fornece várias informações e introspecções no tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido pelo e funciona no AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
@@ -10,18 +10,18 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
 duration: 486
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
 
-# Depuração do SDK do AEM usando o console da Web OSGi
+# Depuração do AEM SDK usando o console da Web OSGi
 
-O quickstart local do SDK do AEM tem um console da Web OSGi que fornece uma variedade de informações e introspecções sobre o tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido e funciona no AEM.
+A inicialização rápida local do AEM SDK tem um console da Web OSGi que fornece várias informações e introspecções no tempo de execução local do AEM, úteis para entender como seu aplicativo é reconhecido pelo e funciona no AEM.
 
-O AEM fornece vários consoles OSGi, cada um deles fornecendo insights importantes sobre diferentes aspectos do AEM, no entanto, os seguintes são normalmente os mais úteis na depuração do aplicativo.
+O AEM fornece vários consoles OSGi, cada um deles fornecendo insights importantes sobre diferentes aspectos do AEM, no entanto, os itens a seguir são normalmente os mais úteis na depuração do aplicativo.
 
 ## Pacotes
 

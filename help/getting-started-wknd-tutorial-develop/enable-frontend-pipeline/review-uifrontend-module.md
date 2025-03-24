@@ -1,7 +1,7 @@
 ---
 title: Revisar módulo ui.frontend do projeto de pilha completa
 description: Revise o desenvolvimento front-end, a implantação e o ciclo de vida de entrega de um projeto AEM Sites de pilha completa baseado em Maven.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,25 +13,25 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
 duration: 364
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Revisar o módulo &quot;ui.frontend&quot; do projeto AEM de pilha completa {#aem-full-stack-ui-frontent}
+# Revise o módulo &quot;ui.frontend&quot; do projeto de pilha completa do AEM {#aem-full-stack-ui-frontent}
 
-No, este capítulo analisamos o desenvolvimento, a implantação e a entrega de artefatos de front-end de um projeto AEM de pilha completa, com foco no módulo &quot;ui.frontend&quot; do __projeto do WKND Sites__.
+No, este capítulo analisamos o desenvolvimento, a implantação e a entrega de artefatos de front-end de um projeto AEM de pilha completa, com foco no módulo &quot;ui.frontend&quot; do __projeto WKND Sites__.
 
 
 ## Objetivos {#objective}
 
-* Entender o fluxo de compilação e implantação de artefatos de front-end em um projeto de pilha completa de AEM
-* Revise as configurações do [webpack](https://webpack.js.org/) do módulo `ui.frontend` do projeto de pilha completa de AEM
-* Processo de geração de biblioteca de cliente AEM (também conhecido como clientlibs)
+* Entender o fluxo de compilação e implantação de artefatos de front-end em um projeto de pilha completa do AEM
+* Revise as configurações do [webpack](https://webpack.js.org/) do módulo `ui.frontend` do projeto de pilha completa do AEM
+* Processo de geração de bibliotecas de clientes do AEM (também conhecido como clientlibs)
 
-## Fluxo de implantação de front-end para projetos de pilha completa de AEM e Criação rápida de sites
+## Fluxo de implantação front-end para projetos de pilha completa e Criação rápida de sites do AEM
 
 >[!IMPORTANT]
 >
@@ -42,19 +42,19 @@ No, este capítulo analisamos o desenvolvimento, a implantação e a entrega de 
 ## Pré-requisitos {#prerequisites}
 
 
-* Clonar o [projeto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd)
-* Criou e implantou o projeto clonado AEM WKND Sites no AEM as a Cloud Service.
+* Clonar o [projeto do AEM WKND Sites](https://github.com/adobe/aem-guides-wknd)
+* Criou e implantou o projeto clonado do AEM WKND Sites no AEM as a Cloud Service.
 
-Consulte o projeto do site AEM WKND [README.md](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) para obter mais detalhes.
+Consulte o projeto do site WKND do AEM [README.md](https://github.com/adobe/aem-guides-wknd/blob/main/README.md) para obter mais detalhes.
 
-## Fluxo de artefatos de front-end do projeto de pilha completa de AEM {#flow-of-frontend-artifacts}
+## Fluxo de artefatos de front-end do projeto de pilha completa do AEM {#flow-of-frontend-artifacts}
 
-Abaixo está uma representação de alto nível do __fluxo de desenvolvimento, implantação e entrega__ dos artefatos de front-end em um projeto AEM de pilha completa.
+Abaixo está uma representação de alto nível do __fluxo de desenvolvimento, implantação e entrega__ dos artefatos de front-end em um projeto de pilha completa do AEM.
 
 ![Desenvolvimento, Implantação e Entrega de Artefatos de Front-End](assets/Dev-Deploy-Delivery-AEM-Project.png)
 
 
-Durante a fase de desenvolvimento, alterações de front-end, como estilo e rebranding, são realizadas atualizando os arquivos CSS, JS da pasta `ui.frontend/src/main/webpack`. Em seguida, durante o tempo de compilação, o pacote de módulos do [webpack](https://webpack.js.org/) e o plug-in maven transformam esses arquivos em clientlibs AEM otimizadas no módulo `ui.apps`.
+Durante a fase de desenvolvimento, alterações de front-end, como estilo e rebranding, são realizadas atualizando os arquivos CSS, JS da pasta `ui.frontend/src/main/webpack`. Em seguida, durante o tempo de compilação, o pacote de módulos [webpack](https://webpack.js.org/) e o plug-in maven transformam esses arquivos em clientlibs otimizadas do AEM no módulo `ui.apps`.
 
 As alterações de front-end são implantadas no ambiente do AEM as a Cloud Service ao executar o pipeline [__de pilha completa__ no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
 
@@ -63,13 +63,13 @@ Os recursos de front-end são entregues aos navegadores da Web por meio de camin
 
 >[!NOTE]
 >
-> Da mesma forma, na __Jornada de Criação Rápida de Site do AEM__, as [alterações de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) são implantadas no ambiente do AEM as a Cloud Service executando o pipeline de __Front-End__. Consulte [Configurar o Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Da mesma forma, na __Jornada de Criação Rápida de Sites do AEM__, as [alterações de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) são implantadas no ambiente do AEM as a Cloud Service executando o pipeline de __Front-End__. Consulte [Configurar o Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
 
 ### Revisar configurações do webpack no projeto Sites WKND {#development-frontend-webpack-clientlib}
 
 * Há três arquivos de configuração do __webpack__ usados para agrupar os recursos de front-end de sites WKND.
 
-   1. `webpack.common` - Contém a configuração __common__ para instruir o agrupamento e a otimização de recursos WKND. A propriedade __output__ informa onde emitir os arquivos consolidados (também conhecidos como pacotes JavaScript, mas não devem ser confundidos com pacotes OSGi AEM) que ela cria. O nome padrão está definido como `clientlib-site/js/[name].bundle.js`.
+   1. `webpack.common` - Contém a configuração __common__ para instruir o agrupamento e a otimização de recursos WKND. A propriedade __output__ informa onde emitir os arquivos consolidados (também conhecidos como pacotes JavaScript, mas não devem ser confundidos com pacotes OSGi do AEM) que ela cria. O nome padrão está definido como `clientlib-site/js/[name].bundle.js`.
 
   ```javascript
       ...
@@ -80,7 +80,7 @@ Os recursos de front-end são entregues aos navegadores da Web por meio de camin
       ...    
   ```
 
-   1. `webpack.dev.js` contém a configuração de __desenvolvimento__ para o webpack-dev-serve e aponta para o modelo de HTML a ser usado. Também contém uma configuração de proxy para uma instância AEM em execução em `localhost:4502`.
+   1. `webpack.dev.js` contém a configuração de __desenvolvimento__ para o webpack-dev-serve e aponta para o modelo de HTML a ser usado. Também contém uma configuração de proxy para uma instância do AEM em execução em `localhost:4502`.
 
   ```javascript
       ...
@@ -128,7 +128,7 @@ Os recursos de front-end são entregues aos navegadores da Web por meio de camin
     ...
 ```
 
-* O __frontend-maven-plugin__ de `ui.frontend/pom.xml` orquestra o agrupamento de webpacks e a geração de clientlib durante a compilação do projeto AEM.
+* O __frontend-maven-plugin__ de `ui.frontend/pom.xml` orquestra o agrupamento de webpack e a geração de clientlib durante a compilação do projeto do AEM.
 
 `$ mvn clean install -PautoInstallSinglePackage`
 
@@ -139,7 +139,7 @@ O pipeline [__de pilha completa__](https://experienceleague.adobe.com/docs/exper
 
 ### Entrega do AEM as a Cloud Service {#delivery-frontend-aemaacs}
 
-Os recursos de front-end implantados por meio do pipeline de pilha completa são entregues do site AEM para navegadores da Web como arquivos `/etc.clientlibs`. Você pode verificar isso acessando o [site da WKND hospedado publicamente](https://wknd.site/content/wknd/us/en.html) e exibindo a fonte da página da Web.
+Os recursos de front-end implantados por meio do pipeline de pilha completa são entregues do site do AEM para navegadores da Web como arquivos `/etc.clientlibs`. Você pode verificar isso acessando o [site da WKND hospedado publicamente](https://wknd.site/content/wknd/us/en.html) e exibindo a fonte da página da Web.
 
 ```html
     ....

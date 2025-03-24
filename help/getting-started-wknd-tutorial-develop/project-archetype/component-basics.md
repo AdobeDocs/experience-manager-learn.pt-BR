@@ -1,7 +1,7 @@
 ---
 title: Introdução ao AEM Sites - Noções básicas sobre componentes
-description: Entenda a tecnologia subjacente de um componente de sites do Adobe Experience Manager (AEM) por meio de um exemplo simples de "HelloWorld". Tópicos de HTL, Modelos Sling, bibliotecas do lado do cliente e caixas de diálogo de autor são explorados.
-version: 6.5, Cloud Service
+description: Entenda a tecnologia subjacente de um componente do Sites do Adobe Experience Manager (AEM) por meio de um exemplo simples de "HelloWorld". Tópicos de HTL, Modelos Sling, bibliotecas do lado do cliente e caixas de diálogo de autor são explorados.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
 duration: 1715
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Noções básicas sobre componentes {#component-basics}
 
-Neste capítulo, vamos explorar a tecnologia subjacente de um componente de Sites do Adobe Experience Manager (AEM) por meio de um exemplo simples de `HelloWorld`. Pequenas modificações são feitas em um componente existente, que abrange tópicos de criação, HTL, Modelos Sling e bibliotecas do lado do cliente.
+Neste capítulo, vamos explorar a tecnologia subjacente de um componente do Sites do Adobe Experience Manager (AEM) por meio de um simples exemplo `HelloWorld`. Pequenas modificações são feitas em um componente existente, que abrange tópicos de criação, HTL, Modelos Sling e bibliotecas do lado do cliente.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -42,7 +42,7 @@ Neste capítulo, você executa várias modificações em um componente `HelloWor
 
 ## Projeto de início de capítulo {#starter-project}
 
-Este capítulo se baseia em um projeto genérico gerado pelo [Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype). Assista ao vídeo abaixo e confira os [pré-requisitos](#prerequisites) para começar!
+Este capítulo se baseia em um projeto genérico gerado pelo [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype). Assista ao vídeo abaixo e confira os [pré-requisitos](#prerequisites) para começar!
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Abra um novo terminal de linha de comando e execute as ações a seguir.
 
    >[!NOTE]
    >
-   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+   > Se estiver usando o AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -98,9 +98,9 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 1. Alterne para o modo de desenvolvedor, visualize o Caminho de conteúdo no CRXDE-Lite e inspecione as propriedades da instância do componente.
 1. Use o CRXDE-Lite para exibir o script `cq:dialog` e `helloworld.html` de `/apps/wknd/components/content/helloworld`.
 
-## HTL (Linguagem de modelo HTML) e caixas de diálogo {#htl-dialogs}
+## HTL (Linguagem de modelo do HTML) e caixas de diálogo {#htl-dialogs}
 
-A Linguagem de Modelo do HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** é uma linguagem de modelo leve do lado do servidor usada por componentes AEM para renderizar conteúdo.
+A Linguagem de Modelo do HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** é uma linguagem de modelo leve do lado do servidor usada por componentes do AEM para renderizar conteúdo.
 
 **Caixas de diálogo** definem as configurações disponíveis que podem ser feitas para um componente.
 
@@ -111,8 +111,8 @@ Em seguida, atualizemos o script HTL `HelloWorld` para exibir uma saudação ext
 Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
 1. Alterne para o IDE e abra o projeto para o módulo `ui.apps`.
-1. Abra o arquivo `helloworld.html` e atualize a Marcação HTML.
-1. Use as ferramentas do IDE, como o [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), para sincronizar a alteração do arquivo com a instância local do AEM.
+1. Abra o arquivo `helloworld.html` e atualize a HTML Markup.
+1. Use as ferramentas do IDE como [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) para sincronizar a alteração de arquivo com a instância do AEM local.
 1. Retorne ao navegador e observe que a renderização do componente foi alterada.
 1. Abra o arquivo `.content.xml` que define a caixa de diálogo para o componente `HelloWorld` em:
 
@@ -172,7 +172,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
 ## Modelos sling {#sling-models}
 
-Os Modelos do Sling são objetos POJO (Plain Old Java™ Objects) do Java™ orientados por anotações que facilitam o mapeamento de dados do JCR para as variáveis do Java™. Eles também fornecem várias outras sutilezas ao se desenvolver no contexto do AEM.
+Os Modelos do Sling são objetos POJO (Plain Old Java™ Objects) do Java™ orientados por anotações que facilitam o mapeamento de dados do JCR para as variáveis do Java™. Eles também fornecem várias outras gentilezas ao desenvolver no contexto do AEM.
 
 Em seguida, vamos fazer algumas atualizações no Modelo Sling `HelloWorldModel` para aplicar alguma lógica de negócios aos valores armazenados no JCR antes de enviá-los para a página.
 
@@ -279,7 +279,7 @@ Em seguida, vamos fazer algumas atualizações no Modelo Sling `HelloWorldModel`
    </div>
    ```
 
-1. Implante as alterações em uma instância local do AEM usando o plug-in Desenvolvedor do Eclipse ou usando suas habilidades do Maven.
+1. Implante as alterações em uma instância local do AEM usando o plug-in Desenvolvedor do Eclipse ou usando suas habilidades de Maven.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
@@ -295,7 +295,7 @@ Abaixo estão as etapas de alto nível executadas no vídeo acima.
 
 1. Abra uma janela de terminal e navegue até o diretório `ui.frontend`
 
-1. Estando no diretório `ui.frontend`, execute o comando `npm install npm-run-all --save-dev` para instalar o módulo do nó [npm-run-all](https://www.npmjs.com/package/npm-run-all). Esta etapa é **necessária no projeto AEM gerado pelo Arquétipo 39**. Na versão futura do Arquétipo, isso não é necessário.
+1. Estando no diretório `ui.frontend`, execute o comando `npm install npm-run-all --save-dev` para instalar o módulo do nó [npm-run-all](https://www.npmjs.com/package/npm-run-all). Esta etapa é **necessária no projeto AEM gerado pelo Archetype 39**. Na versão futura do Archetype, isso não é necessário.
 
 1. Em seguida, execute o comando `npm run watch`:
 

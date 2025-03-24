@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -53,7 +53,7 @@ O código a seguir no post.POST.jsp simplesmente encaminha a solicitação para 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-No projeto AEM no IntelliJ, clique com o botão direito do mouse na pasta `apps/bankingapplication` e selecione Novo | Empacote e digite SubmitToAEMervlet após o aplicativo apps.bankingna caixa de diálogo novo pacote. Clique com o botão direito do mouse no nó SubmitToAEMervlet e selecione repo | Obtenha o comando para sincronizar o projeto AEM com o repositório do servidor AEM.
+No projeto do AEM no IntelliJ, clique com o botão direito do mouse na pasta `apps/bankingapplication` e selecione Novo | Empacote e digite SubmitToAEMervlet após o aplicativo apps.bankingna caixa de diálogo novo pacote. Clique com o botão direito do mouse no nó SubmitToAEMervlet e selecione repo | Obtenha o comando para sincronizar o projeto do AEM com o repositório do servidor do AEM.
 
 
 ## Configurar formulário adaptável

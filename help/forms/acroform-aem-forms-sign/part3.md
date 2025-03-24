@@ -3,11 +3,11 @@ title: Formas com o AEM Forms
 description: Parte 3 de um tutorial que integra o Acroforms com o AEM Forms. Teste o fluxo de trabalho e o formulário adaptável no sistema.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Testar esse recurso no sistema
 
-[Baixar e importar este pacote para AEM](assets/acro-form-aem-form.zip)
+[Baixar e importar este pacote para o AEM](assets/acro-form-aem-form.zip)
 Esse pacote contém o fluxo de trabalho de amostra e a página html que permite criar o esquema a partir do Acrobat carregado.
 
 ## Configurar fluxo de trabalho

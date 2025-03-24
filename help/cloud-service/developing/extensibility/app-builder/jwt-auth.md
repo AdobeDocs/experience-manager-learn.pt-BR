@@ -2,7 +2,7 @@
 title: Gerar token de acesso JWT na ação do App Builder
 description: Saiba como gerar um token de acesso usando credenciais JWT para uso em uma ação do App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Gerar token de acesso JWT na ação do App Builder
 
-As ações do App Builder podem precisar interagir com APIs de Adobe associadas a projetos do Adobe Developer Console nos quais o aplicativo App Builder é implantado.
+As ações do App Builder podem precisar interagir com as APIs do Adobe associadas aos projetos do Adobe Developer Console aos quais o aplicativo App Builder é implantado.
 
 Isso pode exigir que a ação do App Builder gere seu próprio token de acesso JWT associado ao projeto do Adobe Developer Console desejado.
 
@@ -50,7 +50,7 @@ Os valores de `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, 
 
 ### Metascópios
 
-Determine as APIs de Adobe e seus metascópios com os quais a ação do App Builder interage. Listar metascópios com vírgulas como delimitadores na chave `JWT_METASCOPES`. Os metascópios válidos estão listados em [Documentação do Metascope JWT do Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Determine as APIs do Adobe e seus metascópios com os quais a ação do App Builder interage. Listar metascópios com vírgulas como delimitadores na chave `JWT_METASCOPES`. Os metascópios válidos estão listados na [documentação do Metascope JWT da Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
 Por exemplo, o seguinte valor pode ser adicionado à chave `JWT_METASCOPES` em `.env`:

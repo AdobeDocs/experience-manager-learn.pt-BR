@@ -1,7 +1,7 @@
 ---
 title: Recurso de URLs personalizados do AEM Dispatcher
 description: Entenda como o AEM lida com URLs personalizados e técnicas adicionais usando regras de regravação para mapear o conteúdo mais próximo da borda do delivery.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 244
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Quando você tem conteúdo em uma estrutura de pastas lógica, ele nem sempre es
 
 Um exemplo: `/aboutus` apontou para `/content/we-retail/us/en/about-us.html`
 
-Os autores do AEM têm a opção de definir propriedades de url personalizado em um conteúdo no AEM e publicá-lo.
+Os AEM Author têm a opção de definir as propriedades de url personalizado em um conteúdo no AEM e publicá-lo.
 
 Para que esse recurso funcione, é necessário ajustar os filtros do Dispatcher para permitir a personalização. Isso não é aceitável para ajustar os arquivos de configuração do Dispatcher na taxa que os autores teriam para configurar essas entradas de página personalizada.
 
@@ -50,13 +50,13 @@ Os autores também podem marcar a caixa de seleção _Redirecionar URL personali
 
 #### Interface do usuário para toque:
 
-![Menu suspenso da caixa de diálogo para a interface de usuário de criação de AEM na tela do editor de sites](assets/disp-vanity-url/aem-page-properties-drop-down.png "lista suspensa de aem-page-properties")
+![Menu suspenso de diálogo para a interface de usuário de criação do AEM na tela do editor de sites](assets/disp-vanity-url/aem-page-properties-drop-down.png "menu suspenso de aem-page-properties")
 
 ![página de diálogo de propriedades da página do aem](assets/disp-vanity-url/aem-page-properties.png "aem-page-properties")
 
 #### Localizador de conteúdo clássico:
 
-![Propriedades da página de sidekick clássica do siteadmin do AEM](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
+![propriedades da página de sidekick da interface clássica do AEM siteadmin](assets/disp-vanity-url/aem-page-properties-sidekick.png "aem-page-properties-sidekick")
 
 ![Caixa de diálogo Propriedades da página da interface clássica](assets/disp-vanity-url/aem-page-properties-classic.png "aem-page-properties-classic")
 
@@ -75,7 +75,7 @@ Os mapas são visíveis ao visitar o console Felix de instâncias do AEM ( `/sys
 Esta é uma captura de tela de uma entrada de mapa criada por uma entrada personalizada:
 ![captura de tela do console de uma entrada personalizada nas regras de resolução de recursos](assets/disp-vanity-url/vanity-resource-resolver-entry.png "vanity-resource-resolver-entry")
 
-No exemplo acima, quando solicitamos à instância AEM que visite `/aboutus`, ela é resolvida como `/content/we-retail/us/en/about-us.html`
+No exemplo acima, quando solicitamos à instância do AEM que visite `/aboutus`, ele é resolvido como `/content/we-retail/us/en/about-us.html`
 
 ## Filtros de permissão automática do Dispatcher
 
@@ -85,7 +85,7 @@ O Dispatcher em um estado seguro filtra solicitações no caminho `/` por meio d
 
 Aqui estão os urls personalizados na pasta base de `/`. Então, como permitimos que eles alcancem os editores enquanto permanecem seguros?
 
-O Dispatcher simples tem um mecanismo de permissão de filtro automático e você precisa instalar um pacote AEM e configurar o Dispatcher para apontar para essa página de pacote.
+O Dispatcher simples tem um mecanismo de permissão de filtro automático e você precisa instalar um pacote do AEM e configurar o Dispatcher para apontar para essa página de pacote.
 
 [https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
@@ -184,6 +184,6 @@ Use ambos os métodos, mas aqui estão os conselhos e critérios que devem ser u
 
 >[!NOTE]
 >
->Se você quiser usar o recurso personalizado AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Usando URLs personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
+>Se você quiser usar o recurso personalizado do AEM e evitar o namespace, é possível criar uma convenção de nomenclatura. Usando URLs personalizados aninhados como `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Próximo -> Logon comum](./common-logs.md)

@@ -1,7 +1,7 @@
 ---
-title: Variáveis de registro no fluxo de trabalho do AEM[Part6]
+title: Variáveis de registro no fluxo de trabalho do AEM[Parte6]
 description: Registre o valor das variáveis de fluxo de trabalho do AEM
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
@@ -9,16 +9,16 @@ level: Beginner
 jira: KT-13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
-# Registra o valor das variáveis no fluxo de trabalho do AEM
+# Registre o valor das variáveis no fluxo de trabalho do AEM
 
-O registro do valor das variáveis é uma prática comum no desenvolvimento de software. Ele ajuda os desenvolvedores a rastrear e entender como um fluxo de trabalho de AEM está sendo executado, diagnosticar problemas e monitorar o fluxo de dados em um fluxo de trabalho de AEM.
+O registro do valor das variáveis é uma prática comum no desenvolvimento de software. Ele ajuda os desenvolvedores a rastrear e entender como um fluxo de trabalho do AEM está sendo executado, diagnosticar problemas e monitorar o fluxo de dados em um fluxo de trabalho do AEM.
 
 
 
@@ -175,9 +175,9 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 >[!NOTE]
 >
->Os documentos são salvos na pasta raiz da instalação do servidor AEM.
+>Os documentos são salvos na pasta raiz da instalação do servidor do AEM.
 
 ## Implante o pacote de amostra
 
 [Implante o pacote de agente de log variável](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) usando o Felix web console.
-Associe esse pacote a uma etapa do processo no fluxo de trabalho do AEM para registrar o valor da variável String e Document.
+Associe esse pacote a uma etapa do processo em seu fluxo de trabalho do AEM para registrar o valor da variável String e Documento.

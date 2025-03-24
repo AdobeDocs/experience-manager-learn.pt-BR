@@ -1,14 +1,14 @@
 ---
-title: Usar a exibição de calendário com projetos e caixa de entrada do AEM
-description: A Exibição de calendário do AEM rastreia projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento de projetos. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
-version: 6.4, 6.5
+title: Usar a Exibição de calendário com o AEM Projects e a Caixa de entrada
+description: A Exibição de calendário da AEM rastreia projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento de projetos. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
 topic: Collaboration
 role: User
 level: Beginner
 duration: 478
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# Usar a exibição de calendário com projetos e caixa de entrada do AEM
+# Usar a Exibição de calendário com o AEM Projects e a Caixa de entrada
 
-A Exibição de calendário do AEM rastreia projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento de projetos. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
+A Exibição de calendário da AEM rastreia projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento de projetos. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

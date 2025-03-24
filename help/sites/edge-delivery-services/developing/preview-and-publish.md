@@ -1,7 +1,7 @@
 ---
 title: Pré-visualizar e publicar conteúdo com o Edge Delivery Services
-description: Pré-visualizar e publicar conteúdo com Edge Delivery Services com o AEM Sidekick
-version: 6.5, Cloud Service
+description: Pré-visualizar e publicar conteúdo com o Edge Delivery Services e a AEM Sidekick
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14480
 thumbnail: 3425714.jpeg
 duration: 136
 exl-id: e8ec372e-622e-4954-80df-9c4d73265837
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 0%
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Pré-visualizar e publicar conteúdo
 
-Visualize e publique conteúdo com Edge Delivery Services usando o [AEM Sidekick](./sidekick.md).
+Visualize e publique conteúdo com o Edge Delivery Services usando a [AEM Sidekick](./sidekick.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)

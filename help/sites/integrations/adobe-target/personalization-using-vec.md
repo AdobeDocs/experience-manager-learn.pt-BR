@@ -1,7 +1,7 @@
 ---
 title: Personalization usando o Visual Experience Composer
 description: Saiba como criar uma atividade do Adobe Target usando o Visual Experience Composer.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 101
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Saiba como criar uma Atividade de teste A/B usando o Visual Experience Composer 
 
 ## Pré-requisitos
 
-Para usar o VEC em um site de AEM, a seguinte configuração deve ser concluída:
+Para usar o VEC em um site do AEM, a seguinte configuração deve ser concluída:
 
-1. [Adicionar o Adobe Target ao seu site AEM](./add-target-launch-extension.md)
+1. [Adicionar o Adobe Target ao seu site da AEM](./add-target-launch-extension.md)
 1. [Acionar uma chamada Adobe Target a partir de tags](./load-and-fire-target.md)
 
 ## Visão geral do cenário
@@ -39,7 +39,7 @@ A página inicial do site WKND exibe atividades locais ou as melhores coisas a s
 
 1. Faça logon no [Adobe Experience Cloud](https://experience.adobe.com/), toque em __Target__, navegue até a guia __Atividades__
 
-   + Se você não vir __Target__ no painel Experience Cloud, verifique se a organização Adobe correta está selecionada no alternador de organização na parte superior direita e se o usuário recebeu acesso ao Target no [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se você não vir __Target__ no painel do Experience Cloud, verifique se a organização correta da Adobe está selecionada no alternador de organização na parte superior direita e se o usuário recebeu acesso ao Target no [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Clique no botão **Criar atividade** e escolha a atividade **Teste A/B**
 
@@ -53,7 +53,7 @@ A página inicial do site WKND exibe atividades locais ou as melhores coisas a s
 
    ![Experiência A](assets/experience.png)
 
-1. Selecione uma imagem ou texto na página para começar a fazer modificações ou use o editor de código para escolher e HTML elemento.
+1. Selecione uma imagem ou texto na página para começar a fazer modificações ou use o editor de código para escolher um elemento HTML.
 
    ![Elemento](assets/select-element.png)
 

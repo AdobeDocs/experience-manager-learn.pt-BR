@@ -1,7 +1,7 @@
 ---
-title: Aplicativo Node.js de servidor para servidor - Exemplo de AEM Headless
-description: Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo Node.js do lado do servidor demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes.
-version: Cloud Service
+title: Aplicativo Node.js de servidor para servidor - Exemplo do AEM Headless
+description: Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo Node.js do lado do servidor demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aplicativo Node.js de servidor para servidor
 
-Aplicativos de exemplo são uma ótima maneira de explorar as capacidades headless do Adobe Experience Manager (AEM). Este aplicativo de servidor para servidor demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes e imprimi-las no terminal.
+Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless do Adobe Experience Manager (AEM). Este aplicativo de servidor para servidor demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes e imprimi-las no terminal.
 
 ![Aplicativo Node.js de servidor para servidor com AEM Headless](./assets/server-to-server-app/server-to-server-app.png)
 
@@ -39,7 +39,7 @@ As seguintes ferramentas devem ser instaladas localmente:
 O aplicativo Node.js funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem que o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) esteja instalado.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Opcionalmente, [credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se autorizar solicitações (por exemplo, conectar-se ao serviço de Autor AEM).
++ Opcionalmente, [credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html), se estiver autorizando solicitações (por exemplo, conectando-se ao serviço do AEM Author).
 
 Este aplicativo Node.js pode se conectar ao AEM Author ou ao AEM Publish com base nos parâmetros da linha de comando.
 
@@ -64,13 +64,13 @@ Este aplicativo Node.js pode se conectar ao AEM Author ou ao AEM Publish com bas
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Por exemplo, para executar o aplicativo no AEM Publish sem autorização:
+   Por exemplo, para executar o aplicativo em relação ao AEM Publish sem autorização:
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
    ```
 
-   Para executar o aplicativo em AEM Author com autorização:
+   Para executar o aplicativo em relação ao AEM Author com autorização:
 
    ```shell
    $ node index.js https://author-p123-e456.adobeaemcloud.com ./service-config.json
@@ -82,7 +82,7 @@ Este aplicativo Node.js pode se conectar ao AEM Author ou ao AEM Publish com bas
 
 Abaixo está um resumo de como o aplicativo Node.js servidor a servidor é criado, como ele se conecta ao AEM Headless para recuperar conteúdo usando consultas persistentes do GraphQL e como esses dados são apresentados. O código completo pode ser encontrado no [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
-O caso de uso comum para aplicativos sem periféricos AEM de servidor para servidor é sincronizar dados do Fragmento de conteúdo do AEM para outros sistemas, no entanto, esse aplicativo é intencionalmente simples e imprime os resultados JSON da consulta persistente.
+O caso de uso comum para aplicativos headless do AEM de servidor para servidor é sincronizar dados do fragmento de conteúdo do AEM com outros sistemas, no entanto, esse aplicativo é intencionalmente simples e imprime os resultados JSON da consulta persistente.
 
 ### Consultas persistentes
 
@@ -130,7 +130,7 @@ query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFor
 }
 ```
 
-### Criar cliente AEM Headless
+### Criar cliente do AEM Headless
 
 ```javascript
 const { AEMHeadless, getToken } = require('@adobe/aem-headless-client-nodejs');
@@ -163,7 +163,7 @@ async function run() {
 
 ### Executar consulta persistente do GraphQL
 
-As consultas persistentes do AEM são executadas por HTTP GET e, portanto, o [cliente AEM Headless para Node.js](https://github.com/adobe/aem-headless-client-nodejs) é usado para [executar as consultas persistentes do GraphQL AEM](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) em relação ao e recupera o conteúdo de aventura.
+As consultas persistentes do AEM são executadas por HTTP GET e, portanto, o [cliente AEM Headless para Node.js](https://github.com/adobe/aem-headless-client-nodejs) é usado para [executar as consultas persistentes do GraphQL](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) no AEM e recuperar o conteúdo de aventura.
 
 A consulta persistente é invocada chamando `aemHeadlessClient.runPersistedQuery(...)` e transmitindo o nome da consulta persistente do GraphQL. Depois que o GraphQL retornar os dados, passe-os para a função simplificada `doSomethingWithDataFromAEM(..)`, que imprime os resultados, mas normalmente enviaria os dados para outro sistema ou geraria alguma saída com base nos dados recuperados.
 

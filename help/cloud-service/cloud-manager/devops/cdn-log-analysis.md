@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de análise de log da CDN
-description: Saiba mais sobre a ferramenta de análise de registros CDN da AEM Cloud Service que o Adobe fornece e como ela ajuda a obter insights sobre o desempenho do CDN e a implementação do AEM.
-version: Cloud Service
+description: Saiba mais sobre a ferramenta de análise de logs de CDN do AEM Cloud Service fornecida pela Adobe e como ela ajuda a obter insights sobre o desempenho da CDN e a implementação do AEM.
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
 role: Developer, Architect, Admin
@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Ferramentas de análise de log da CDN
 
-Saiba mais sobre a _Ferramenta de Análise de Log da AEM Cloud Service CDN_ fornecida pelo Adobe e como ela ajuda a obter insights sobre o desempenho da CDN e a implementação do AEM.
+Saiba mais sobre a _Ferramenta de Análise de Log da CDN do AEM Cloud Service_ fornecida pela Adobe e como ela ajuda a obter insights sobre o desempenho da CDN e a implementação do AEM.
  
 >[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
@@ -42,7 +42,7 @@ Com essa ferramenta, você pode obter monitoramento em tempo real e detecção p
 
 ## Visão geral do painel
 
-Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-construídos para pilhas Splunk e ELK.
+Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-criados para pilhas Splunk e ELK.
 
 - **Taxa de Acertos do Cache do CDN**: fornece informações sobre a taxa de acertos do cache total e a contagem total de solicitações por status HIT, PASS e MISS. Ele também fornece os principais URLs de HIT, PASS e MISS.
 
@@ -52,13 +52,13 @@ Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-c
 
   ![Painel de Tráfego da CDN](assets/Traffic-dashboard.png)
 
-- **Painel do WAF**: fornece informações por meio de solicitações analisadas, sinalizadas e bloqueadas. Ele também fornece os principais ataques pelo WAF Flag ID, os 100 principais invasores pelo IP do cliente, país e agente do usuário e mais insights para otimizar as configurações do WAF.
+- **Painel do WAF**: fornece informações por meio de solicitações analisadas, sinalizadas e bloqueadas. Ele também fornece os principais ataques pela WAF Flag ID, os 100 principais invasores por IP de cliente, país e agente de usuário e mais insights para otimizar as configurações do WAF.
 
   ![Painel do WAF](assets/WAF-Dashboard.png)
 
 ## Integração do Splunk
 
-Para organizações que usam o [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) e que habilitaram o encaminhamento de logs do AEMCS para suas instâncias do Splunk, é possível importar rapidamente os painéis pré-criados. Essa configuração facilita a análise de registro acelerada, fornecendo insights acionáveis para otimizar implementações de AEM e mitigar ameaças à segurança, como ataques de DOS.
+Para organizações que usam o [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) e que habilitaram o encaminhamento de logs do AEMCS para suas instâncias do Splunk, é possível importar rapidamente os painéis pré-criados. Essa configuração facilita a análise de registro acelerada, fornecendo insights acionáveis para otimizar as implementações do AEM e mitigar as ameaças à segurança, como ataques de DOS.
 
 Você pode começar a usar os [painéis do Splunk para o guia de Análise de Log da CDN do AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis).
 

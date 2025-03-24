@@ -1,15 +1,15 @@
 ---
-title: Criar serviço OSGi para exportar dados de um formulário PDF
-description: Exportar os dados de um formulário PDF usando a API do FormsService
+title: Criar um serviço OSGi para exportar dados de um formulário do PDF
+description: Exportar os dados de um formulário do PDF usando a API do FormsService
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: c3032669-154c-4565-af6e-32d94e975e37
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Exportar dados
 
-O primeiro passo para preencher um formulário adaptável de um arquivo de PDF é exportar os dados do arquivo de PDF especificado e armazená-lo no repositório de AEM.
+A primeira etapa para preencher um formulário adaptável de um arquivo do PDF é exportar os dados do arquivo do PDF fornecido e armazená-lo no repositório do AEM.
 
 O código a seguir foi escrito para extrair os dados do pdf carregado e massageado para obter o formato correto que pode ser usado para preencher o formulário adaptável
 

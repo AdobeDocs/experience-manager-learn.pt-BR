@@ -1,7 +1,7 @@
 ---
 title: Implantar usando o pipeline de front-end
 description: Saiba como criar e executar um pipeline de front-end que cria recursos de front-end e implanta no CDN integrado no AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Neste capítulo, criamos e executamos um pipeline de front-end no Adobe Cloud Ma
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial em várias partes e presume-se que as etapas descritas em [Atualizar projeto AEM padrão](./update-project.md) foram concluídas.
+Este é um tutorial em várias partes e presume-se que as etapas descritas no [Projeto de Atualização de AEM Padrão](./update-project.md) foram concluídas.
 
 Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
@@ -70,7 +70,7 @@ E __o mais importante__ para o campo __Localização do Código__, o valor é `/
 
 ## Sequência de implantação
 
-* Primeiro execute o pipeline __FullStack WKND Deploy to Dev__ recém-renomeado para remover os arquivos clientlib WKND do repositório AEM. E, o mais importante, prepare o AEM para o contrato de pipeline de front-end adicionando __arquivos de configuração do Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
+* Primeiro execute o pipeline __FullStack WKND Deploy para Dev__ recém-renomeado para remover os arquivos clientlib WKND do repositório do AEM. E, o mais importante, prepare o AEM para o contrato de pipeline de front-end adicionando __arquivos de configuração do Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
 
 ![Site WKND Sem Estilo](assets/unstyled-wknd-site.png)
 
@@ -87,7 +87,7 @@ E __o mais importante__ para o campo __Localização do Código__, o valor é `/
 
 ## Verificar alterações de estilo e novo paradigma de entrega
 
-* Abra qualquer página do Site WKND e você poderá ver a cor do texto usando __Adobe Vermelho__ e os arquivos de recursos de front-end (CSS, JS) são entregues a partir do CDN. O nome de host da solicitação de recurso começa com `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e também com o site.js ou qualquer outro recurso estático que você referenciou no arquivo `HtmlPageItemsConfig`.
+* Abra qualquer página do Site WKND e você poderá ver a cor do texto usando o __Adobe Red__, e os arquivos de recursos de front-end (CSS, JS) serão entregues pela CDN. O nome de host da solicitação de recurso começa com `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e também com o site.js ou qualquer outro recurso estático que você referenciou no arquivo `HtmlPageItemsConfig`.
 
 
 ![Site WKND Recém-Estilizado](assets/newly-styled-wknd-site.png)
@@ -96,7 +96,7 @@ E __o mais importante__ para o campo __Localização do Código__, o valor é `/
 
 >[!TIP]
 >
->O `$HASH_VALUE$` aqui é o mesmo que você vê no campo __CONTENT HASH__ da __Implantação WKND de FrontEnd no pipeline de Desenvolvimento__. O AEM é notificado da URL CDN do recurso front-end. O valor é armazenado em `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` na propriedade __prefixPath__.
+>O `$HASH_VALUE$` aqui é o mesmo que você vê no campo __CONTENT HASH__ da __Implantação WKND de FrontEnd no pipeline de Desenvolvimento__. O AEM é notificado da URL CDN do recurso front-end; o valor é armazenado em `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` na propriedade __prefixPath__.
 
 
 ![Correlação de Valor de Hash](assets/hash-value-correlartion.png)
@@ -105,7 +105,7 @@ E __o mais importante__ para o campo __Localização do Código__, o valor é `/
 
 ## Parabéns. {#congratulations}
 
-Parabéns, você criou, executou e verificou o pipeline de front-end que só cria e implanta o módulo &quot;ui.frontend&quot; do projeto do WKND Sites. Agora, sua equipe de front-end pode iterar rapidamente sobre o design do site e o comportamento de front-end, fora do ciclo de vida completo do projeto AEM.
+Parabéns, você criou, executou e verificou o pipeline de front-end que só cria e implanta o módulo &quot;ui.frontend&quot; do projeto do WKND Sites. Agora, sua equipe de front-end pode iterar rapidamente sobre o design do site e o comportamento do front-end, fora do ciclo de vida completo do projeto do AEM.
 
 ## Próximas etapas {#next-steps}
 

@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: e1e5745e-96fb-46c6-aa7f-43cdf2dfddbc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 1%
@@ -23,7 +24,7 @@ O componente Países herda a estrutura de diálogo do componente suspenso, mas i
 
 A maneira mais fácil de criar essa caixa de diálogo é a seguinte:
 
-1. No projeto AEM, crie uma pasta chamada _cq_dialog na pasta de componentes países.
+1. No projeto do AEM, crie uma pasta chamada _cq_dialog na pasta de componentes Países.
 2. Dentro da pasta _cq_dialog, crie um arquivo chamado .content.xml.
 3. Cole o código XML fornecido abaixo nesse arquivo.
 4. Salve as alterações e sincronize o projeto com o AEM.

@@ -1,7 +1,7 @@
 ---
 title: Modelos de página
 description: Saiba como criar e modificar modelos de página. Entenda a relação entre um Modelo de página e uma Página. Saiba como configurar as políticas de um Modelo de página para fornecer governança granular e consistência de marca para o conteúdo.  Um modelo de Artigo de revista bem estruturado é criado com base em um modelo do Adobe XD.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
 duration: 1561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Existem 3 áreas principais de [Modelos de página](https://experienceleague.ado
 1. **Conteúdo inicial** - define os componentes com os quais o modelo começa; eles podem ser editados e/ou excluídos por autores de conteúdo
 1. **Políticas** - define as configurações sobre como os componentes se comportam e quais opções os autores terão disponíveis.
 
-Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local de AEM. Siga as etapas do vídeo abaixo:
+Em seguida, crie um novo modelo no AEM que corresponda à estrutura dos modelos. Isso ocorrerá em uma instância local do AEM. Siga as etapas do vídeo abaixo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 

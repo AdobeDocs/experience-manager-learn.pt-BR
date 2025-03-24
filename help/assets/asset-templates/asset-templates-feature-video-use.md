@@ -1,7 +1,7 @@
 ---
 title: Uso de modelos de ativos com o AEM Assets e o InDesign Server
 description: O modelo do AEM Assets permite que os profissionais de marketing criem, gerenciem e entreguem ativos digitais para impressão e digitais. Criar folhetos de marcação, cartões de visita, folhetos, anúncios e cartões postais é muito mais fácil com os Modelos do Assets quando integrados ao servidor do InDesign.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Templates
 role: User
@@ -11,7 +11,7 @@ thumbnail: 25170.jpg
 doc-type: Feature Video
 exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
 duration: 737
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -24,7 +24,7 @@ O modelo do AEM Assets permite que os profissionais de marketing criem, gerencie
 
 >[!NOTE]
 >
->Para obter etapas sobre como configurar o InDesign Server, consulte [Configurar Modelos do Assets com o InDesign Server](asset-templates-technical-video-setup.md).
+>Para obter etapas sobre como configurar o InDesign Server, consulte [Configurar modelos do Assets com o InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Visão geral {#overview}
 
@@ -34,6 +34,6 @@ Este vídeo aborda os conceitos e as etapas para gerar ativos prontos para impre
 
 ## Visão geral técnica {#technical-overview}
 
-Este vídeo fornece uma visão geral mais técnica da funcionalidade de Modelos de asserção do AEM Assets e como o AEM facilita a composição do AEM Assets e conteúdo por meio do InDesign para criar experiências de impressão ricas e atraentes.
+Este vídeo fornece uma visão geral mais técnica da funcionalidade de Modelo de declaração do AEM Assets e como o AEM facilita a composição de AEM Assets e conteúdo por meio do InDesign para criar experiências de impressão avançadas e atraentes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)

@@ -1,7 +1,7 @@
 ---
 title: Teste de unidade
 description: Implemente um teste de unidade que valide o comportamento do Modelo Sling do componente Subtítulo, criado no tutorial Componente personalizado.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
 duration: 706
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
    $ git checkout tutorial/unit-testing-start
    ```
 
-1. Implante a base de código em uma instância de AEM local usando suas habilidades de Maven:
+1. Implante a base de código em uma instância do AEM local usando suas habilidades do Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -53,7 +53,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
 
    >[!NOTE]
    >
-   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+   > Se estiver usando o AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -64,14 +64,14 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 ## Objetivo
 
 1. Entenda as noções básicas de teste de unidade.
-1. Saiba mais sobre estruturas e ferramentas comumente usadas para testar o código do AEM.
-1. Entenda as opções para zombar ou simular recursos de AEM ao gravar testes de unidade.
+1. Saiba mais sobre estruturas e ferramentas usadas normalmente para testar o código AEM.
+1. Entenda as opções para zombar ou simular recursos do AEM ao gravar testes de unidade.
 
 ## Fundo {#unit-testing-background}
 
-Neste tutorial, exploraremos como gravar [Testes de Unidade](https://en.wikipedia.org/wiki/Unit_testing) para o [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) do nosso componente Subtítulo (criado no [Criação de um componente AEM personalizado](custom-component.md)). Testes de unidade são testes de tempo de compilação escritos em Java™ que verificam o comportamento esperado do código Java™. Cada teste de unidade é normalmente pequeno e valida a saída de um método (ou unidades de trabalho) em relação aos resultados esperados.
+Neste tutorial, exploraremos como gravar [Testes de Unidade](https://en.wikipedia.org/wiki/Unit_testing) para o [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) do componente Subtítulo (criado no [Criação de um componente AEM personalizado](custom-component.md)). Testes de unidade são testes de tempo de compilação escritos em Java™ que verificam o comportamento esperado do código Java™. Cada teste de unidade é normalmente pequeno e valida a saída de um método (ou unidades de trabalho) em relação aos resultados esperados.
 
-Usamos as práticas recomendadas de AEM e empregamos:
+Usamos as práticas recomendadas da AEM e empregamos:
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Estrutura de teste Mockito](https://site.mockito.org/)
@@ -79,7 +79,7 @@ Usamos as práticas recomendadas de AEM e empregamos:
 
 ## Teste de unidade e Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-O [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) integra a execução de teste de unidade e os [relatórios de cobertura de código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) ao seu pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada do código AEM de teste de unidade.
+O [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) integra a execução de teste de unidade e os [relatórios de cobertura de código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) ao seu pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada de teste de unidade de código AEM.
 
 Embora o código de teste de unidade seja uma boa prática para qualquer base de código, ao usar o Cloud Manager é importante aproveitar seus recursos de relatórios e testes de qualidade de código, fornecendo testes de unidade para o Cloud Manager executar.
 
@@ -92,9 +92,9 @@ A primeira etapa é inspecionar as dependências do Maven para oferecer suporte 
 1. Apache Sling Mocks
 1. Estrutura de teste AEM Mocks (by io.wcm)
 
-As dependências de teste **JUnit5**, **Mockito e **AEM Mocks** são adicionadas automaticamente ao projeto durante a instalação usando o [arquétipo Maven AEM](project-setup.md).
+As dependências de teste **JUnit5**, **Mockito e **AEM Mocks** são adicionadas automaticamente ao projeto durante a instalação usando o [arquétipo AEM Maven](project-setup.md).
 
-1. Para exibir essas dependências, abra o POM do Reator Pai em **aem-guides-wknd/pom.xml**, navegue até `<dependencies>..</dependencies>` e exiba as dependências de Testes de Mock do AEM, Mockito, Apache Sling Mocks e JUnit por io.wcm em `<!-- Testing -->`.
+1. Para exibir essas dependências, abra o POM do Reator Pai em **aem-guides-wknd/pom.xml**, navegue até `<dependencies>..</dependencies>` e exiba as dependências para JUnit, Mockito, Apache Sling Mocks e AEM Mock Tests de io.wcm em `<!-- Testing -->`.
 1. Verifique se `io.wcm.testing.aem-mock.junit5` está definido como **4.1.0**:
 
    ```xml
@@ -211,17 +211,17 @@ Ao escrever testes de unidade, há duas abordagens principais:
 * [TDD ou Desenvolvimento Controlado por Teste](https://en.wikipedia.org/wiki/Test-driven_development), que envolve gravar os testes de unidade de forma incremental, imediatamente antes da implementação ser desenvolvida; gravar um teste, gravar a implementação para fazer o teste passar.
 * Desenvolvimento de implementação primeiro, que envolve o desenvolvimento de código de trabalho primeiro e, em seguida, a gravação de testes que validam esse código.
 
-Neste tutorial, a última abordagem é usada (já que criamos um **BylineImpl.java** de trabalho em um capítulo anterior). Por causa disso, devemos revisar e entender os comportamentos de seus métodos públicos, mas também alguns de seus detalhes de implementação. Isso pode parecer contrário, uma vez que um bom teste só deve se preocupar com as entradas e saídas, no entanto, quando se trabalha com AEM, há várias considerações de implementação que são necessárias para ser entendida a fim de construir testes de trabalho.
+Neste tutorial, a última abordagem é usada (já que criamos um **BylineImpl.java** de trabalho em um capítulo anterior). Por causa disso, devemos revisar e entender os comportamentos de seus métodos públicos, mas também alguns de seus detalhes de implementação. Isso pode parecer contrário, como um bom teste deve se preocupar apenas com as entradas e saídas, no entanto, ao trabalhar no AEM, há várias considerações de implementação que são necessárias para ser entendida a fim de construir testes de trabalho.
 
-O TDD no contexto do AEM requer um nível de experiência e é mais bem adotado por desenvolvedores do AEM proficientes em desenvolvimento do AEM e teste de unidade do código do AEM.
+O TDD no contexto do AEM requer um nível de conhecimento e é melhor adotado por desenvolvedores do AEM proficientes em desenvolvimento de AEM e teste de unidade do código AEM.
 
-## Configuração do contexto de teste de AEM  {#setting-up-aem-test-context}
+## Configuração do contexto de teste do AEM  {#setting-up-aem-test-context}
 
-A maioria dos códigos escritos para AEM depende de APIs JCR, Sling ou AEM, que, por sua vez, exigem o contexto de uma execução correta do AEM.
+A maioria dos códigos escritos para o AEM depende de APIs JCR, Sling ou AEM, que, por sua vez, exigem o contexto de um AEM em execução para ser executado corretamente.
 
-Como os testes de unidade são executados na criação, fora do contexto de uma instância AEM em execução, esse contexto não existe. Para facilitar isso, o AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) do [wcm.io cria um contexto simulado que permite que essas APIs _na maioria_ atuem como se estivessem sendo executadas no AEM.
+Como os testes de unidade são executados na criação, fora do contexto de uma instância do AEM em execução, esse contexto não existe. Para facilitar isso, o AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) do [wcm.io cria um contexto de simulação que permite que essas APIs _na maioria_ atuem como se estivessem em execução no AEM.
 
-1. Crie um contexto AEM usando **wcm.io** `AemContext` em **BylineImplTest.java** adicionando-o como uma extensão JUnit decorada com `@ExtendWith` ao arquivo **BylineImplTest.java**. A extensão cuida de todas as tarefas de inicialização e limpeza necessárias. Crie uma variável de classe para `AemContext` que possa ser usada para todos os métodos de teste.
+1. Crie um contexto AEM usando **wcm.io&#39;s** `AemContext` em **BylineImplTest.java** adicionando-o como uma extensão JUnit decorada com `@ExtendWith` ao arquivo **BylineImplTest.java**. A extensão cuida de todas as tarefas de inicialização e limpeza necessárias. Crie uma variável de classe para `AemContext` que possa ser usada para todos os métodos de teste.
 
    ```java
    import org.junit.jupiter.api.extension.ExtendWith;
@@ -235,12 +235,12 @@ Como os testes de unidade são executados na criação, fora do contexto de uma 
        private final AemContext ctx = new AemContext();
    ```
 
-   Essa variável, `ctx`, expõe um contexto de AEM simulado que fornece algumas abstrações de AEM e Sling:
+   Esta variável, `ctx`, expõe um contexto fictício do AEM que fornece algumas abstrações do AEM e do Sling:
 
    * O modelo Sling BylineImpl está registrado neste contexto
    * Estruturas de conteúdo JCR fictícias são criadas neste contexto
    * Os serviços OSGi personalizados podem ser registrados neste contexto
-   * Fornece vários objetos de modelo e auxiliares comuns necessários, como objetos SlingHttpServletRequest, vários serviços de OSGi de Sling e AEM como ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag etc.
+   * Fornece vários objetos de modelo e auxiliares comuns necessários, como objetos SlingHttpServletRequest, vários serviços de OSGi de modelo e AEM, como ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag etc.
       * *Nem todos os métodos para estes objetos foram implementados!*
    * E [muito mais](https://wcm.io/testing/aem-mock/usage.html)!
 
@@ -256,7 +256,7 @@ Como os testes de unidade são executados na criação, fora do contexto de uma 
    }
    ```
 
-   * O **`addModelsForClasses`** registra o Modelo do Sling a ser testado no Contexto de AEM de modelo, para que ele possa ser instanciado nos métodos `@Test`.
+   * **`addModelsForClasses`** registra o Modelo do Sling a ser testado no Contexto de AEM simulado, para que possa ser instanciado nos métodos `@Test`.
    * O **`load().json`** carrega estruturas de recursos no contexto fictício, permitindo que o código interaja com esses recursos como se eles fossem fornecidos por um repositório real. As definições de recurso no arquivo **`BylineImplTest.json`** são carregadas no contexto JCR fictício em **/content**.
    * **`BylineImplTest.json`** ainda não existe, então vamos criá-lo e definir as estruturas de recursos JCR necessárias para o teste.
 

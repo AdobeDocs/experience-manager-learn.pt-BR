@@ -1,7 +1,7 @@
 ---
 title: Autenticação no AEM as a Cloud Service
 description: Saiba mais sobre autenticação no AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 3%
@@ -42,14 +42,14 @@ Clique no link correspondente abaixo para obter detalhes sobre como configurar e
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
       <div><strong><a href="../accessing/overview.md">Adobe IMS</a></strong></div>
       <p>
-          Gerencie o acesso do autor do AEM usando o Adobe IMS pela Adobe Admin Console.
+          Gerencie o acesso de autor do AEM usando o Adobe IMS pela Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        Autentique o usuário do site em um IDP usando a integração SAML 2.0 do serviço AEM Publish.
+        Autentique o usuário do site em um IDP usando a integração SAML 2.0 do serviço de publicação do AEM.
       </p>
     </td>   
    <td>

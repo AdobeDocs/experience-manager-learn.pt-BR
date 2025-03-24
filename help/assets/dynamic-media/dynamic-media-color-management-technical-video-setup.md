@@ -1,22 +1,22 @@
 ---
-title: Noções básicas sobre gerenciamento de cores com o AEM Dynamic Media
+title: Noções básicas sobre o gerenciamento de cores com o AEM Dynamic Media
 description: Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização da correção de cores no para AEM Assets.
 feature: Image Profiles, Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 duration: 274
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 11%
 
 ---
 
-# Noções básicas sobre gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
+# Noções básicas sobre o gerenciamento de cores com o AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
 Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser usado para fornecer recursos de visualização da correção de cores no para AEM Assets.
 
@@ -26,11 +26,11 @@ Neste vídeo, exploramos o Dynamic Media Color Management e como ele pode ser us
 >
 >[Habilite o Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) no AEM para usar este recurso.
 
-Este recurso está disponível para as versões AEM 6.1 e 6.2 como um Pacote de recursos.
+Esse recurso está disponível para as versões do AEM 6.1 e 6.2 como um Pacote de recursos.
 
 ## Modelo XML do nó de configuração de gerenciamento de cores {#xml-template-for-the-color-management-configuration-node}
 
-Este é o modelo XML para o nó de configuração do gerenciamento de cores. Esse modelo XML pode ser copiado para o projeto de desenvolvimento AEM e configurado com as configurações apropriadas para o projeto.
+Este é o modelo XML para o nó de configuração do gerenciamento de cores. Esse modelo XML pode ser copiado para o projeto de desenvolvimento do AEM e configurado com as configurações apropriadas para o projeto.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,12 +86,12 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 />
 ```
 
-### A lista de perfis de cores de Adobe padrão está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
+### A lista de perfis de cores padrão do Adobe está listada abaixo {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Espaço de cor | Descrição |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
-| AppleRGB | RGB | RGB Apple |
+| AppleRGB | RGB | Apple RGB |
 | CIERGB | RGB | RGB CIE |
 | FograRevestida27 | CMYK | FOGRA27 revestida (ISO 12647-2:2004) |
 | FograRevestida39 | CMYK | FOGRA39 revestida (ISO 12647-2:2004) |
@@ -108,7 +108,7 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 | Papel de jornalSNAP2007 | CMYK | Papel de jornal dos EUA (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
-| ProPhoto | RGB | RGB ProPhoto |
+| ProPhoto | RGB | ProPhoto RGB |
 | PS4Default | CMYK | Photoshop 4 Padrão CMYK |
 | PS5Padrão | CMYK | CMYK padrão do Photoshop 5 |
 | RevestidoFolheado | CMYK | U.S. Sheetfed Coated v2 |

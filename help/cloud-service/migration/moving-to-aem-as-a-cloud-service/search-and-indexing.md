@@ -1,7 +1,7 @@
 ---
 title: Pesquisa e indexação no AEM as a Cloud Service
-description: Saiba mais sobre os índices de pesquisa do AEM as a Cloud Service, como converter definições de índice AEM 6 e como implantar índices.
-version: Cloud Service
+description: Saiba mais sobre os índices de pesquisa do AEM as a Cloud Service, como converter definições de índice do AEM 6 e como implantar índices.
+version: Experience Manager as a Cloud Service
 feature: Search
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
 duration: 1231
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Pesquisa e indexação
 
-Saiba mais sobre os índices de pesquisa do AEM as a Cloud Service, como converter definições de índice AEM 6 para serem compatíveis com o AEM as a Cloud Service e como implantar índices para o AEM as a Cloud Service.
+Saiba mais sobre os índices de pesquisa do AEM as a Cloud Service, como converter as definições de índice do AEM 6 para que sejam compatíveis com o AEM as a Cloud Service e como implantar índices para o AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
@@ -33,7 +33,7 @@ Revise a [documentação do conversor de índice](https://experienceleague.adobe
 
 ## Atividades principais
 
-+ Use a ferramenta [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para migrar fluxos de trabalho de processamento de ativos para usar os microsserviços do Asset Compute.
++ Use a ferramenta [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para migrar fluxos de trabalho de processamento de ativos para usar os microsserviços da Asset Compute.
 + Configure um [ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR) e implante os índices personalizados. Verifique se os índices atualizados estão atualizados.
 + Implante a base de código atualizada em um ambiente de desenvolvimento do AEM as a Cloud Service e continue a validar.
 + Se você modificar um índice pronto para uso **SEMPRE**, copie a definição de índice mais recente de um ambiente do AEM as a Cloud Service em execução na versão mais recente. Modifique a definição do índice copiado para atender às suas necessidades.

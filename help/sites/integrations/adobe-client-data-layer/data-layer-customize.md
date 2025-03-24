@@ -1,7 +1,7 @@
 ---
-title: Personalizar a Camada de dados do cliente Adobe com componentes AEM
-description: Saiba como personalizar a Camada de dados do cliente Adobe com conteúdo de componentes AEM personalizados. Saiba como usar APIs fornecidas pelos Componentes principais do AEM para estender e personalizar a camada de dados.
-version: Cloud Service
+title: Personalizar a camada de dados do cliente da Adobe com componentes do AEM
+description: Saiba como personalizar a Camada de dados de clientes Adobe com conteúdo de Componentes AEM personalizados. Saiba como usar APIs fornecidas pelos Componentes principais do AEM para estender e personalizar a camada de dados.
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
@@ -12,22 +12,22 @@ last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
 duration: 452
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 1%
 
 ---
 
-# Personalizar a Camada de dados do cliente Adobe com componentes AEM {#customize-data-layer}
+# Personalizar a camada de dados do cliente da Adobe com componentes do AEM {#customize-data-layer}
 
-Saiba como personalizar a Camada de dados do cliente Adobe com conteúdo de componentes AEM personalizados. Saiba como usar APIs fornecidas pelos [Componentes principais do AEM para estender](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizar a camada de dados.
+Saiba como personalizar a Camada de dados de clientes Adobe com conteúdo de Componentes AEM personalizados. Saiba como usar APIs fornecidas pelos [Componentes principais do AEM para estender](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizar a camada de dados.
 
 ## O que você vai criar
 
 ![Camada de dados de byline](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-Neste tutorial, vamos explorar várias opções para estender a Camada de dados do cliente Adobe, atualizando o [Componente de byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) da WKND. O componente _Subtítulo_ é um **componente personalizado** e as lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
+Neste tutorial, vamos explorar várias opções para estender a Camada de dados de clientes Adobe atualizando o [componente de linha de guia](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) da WKND. O componente _Subtítulo_ é um **componente personalizado** e as lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
 
 ### Objetivos {#objective}
 
@@ -37,7 +37,7 @@ Neste tutorial, vamos explorar várias opções para estender a Camada de dados 
 
 ## Pré-requisitos {#prerequisites}
 
-É necessário um **ambiente de desenvolvimento local** para concluir este tutorial. Capturas de tela e vídeos são capturados usando o SDK do AEM as a Cloud Service em execução em uma macOS. Os comandos e o código são independentes do sistema operacional local, a menos que indicado de outra forma.
+É necessário um **ambiente de desenvolvimento local** para concluir este tutorial. Capturas de tela e vídeos são capturados usando o AEM as a Cloud Service SDK em execução em uma macOS. Os comandos e o código são independentes do sistema operacional local, a menos que indicado de outra forma.
 
 **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
@@ -47,14 +47,14 @@ Neste tutorial, vamos explorar várias opções para estender a Camada de dados 
 
 Este tutorial estende o componente Subtítulo no site de referência WKND. Clonar e instalar a base de código WKND em seu ambiente local.
 
-1. Inicie uma instância de AEM do Quickstart **author** local em execução em [http://localhost:4502](http://localhost:4502).
+1. Inicie uma instância do AEM Quickstart **author** local em execução em [http://localhost:4502](http://localhost:4502).
 1. Abra uma janela de terminal e clone a base de código WKND usando Git:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Implante a base de código WKND em uma instância local de AEM:
+1. Implante a base de código WKND em uma instância local do AEM:
 
    ```shell
    $ cd aem-guides-wknd
@@ -78,9 +78,9 @@ Este tutorial estende o componente Subtítulo no site de referência WKND. Clona
    window.adobeDataLayer.getState();
    ```
 
-   Para ver o estado atual da camada de dados em um site AEM, inspecione a resposta. Você deve ver informações sobre a página e os componentes individuais.
+   Para ver o estado atual da camada de dados em um site do AEM, inspecione a resposta. Você deve ver informações sobre a página e os componentes individuais.
 
-   ![Resposta da Camada de Dados Adobe](assets/data-layer-state-response.png)
+   ![Resposta da Camada de Dados da Adobe](assets/data-layer-state-response.png)
 
    Observe que o componente Subtítulo não está listado na Camada de dados.
 
@@ -173,14 +173,14 @@ Para inserir dados sobre o componente na camada de dados, primeiro vamos atualiz
 
 ## Atualizar o HTL do byline {#htl}
 
-Em seguida, atualize o `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (Linguagem de modelo de HTML) é o modelo usado para renderizar o HTML do componente.
+Em seguida, atualize o `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (HTML Template Language) é o modelo usado para renderizar o HTML do componente.
 
-Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é usado para expor sua camada de dados. O JavaScript fornecido pelos Componentes principais AEM procura esse atributo de dados. O valor desse atributo de dados é preenchido com a Cadeia de caracteres JSON retornada pelo método `getData()` do Modelo Sling de byline e inserida na camada de Dados do cliente Adobe.
+Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é usado para expor sua camada de dados. O JavaScript fornecido pelos Componentes principais do AEM procura esse atributo de dados. O valor desse atributo de dados é preenchido com a Cadeia de Caracteres JSON retornada pelo método `getData()` do Modelo Sling de byline e inserida na camada de Dados do cliente do Adobe.
 
 1. Abra o projeto `aem-guides-wknd` no IDE. Navegue até o módulo `ui.apps`.
 1. Abra o arquivo `byline.html` em `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
-   ![HTML de Linha](assets/adobe-client-data-layer/byline-html-template.png)
+   ![HTML de Linha ](assets/adobe-client-data-layer/byline-html-template.png)
 
 1. Atualize `byline.html` para incluir o atributo `data-cmp-data-layer`:
 
@@ -235,7 +235,7 @@ Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é
 
 ## Adicionar um evento de clique {#click-event}
 
-A Camada de Dados de Clientes Adobe é orientada por eventos e um dos eventos mais comuns para disparar uma ação é o evento `cmp:click`. Os Componentes principais do AEM facilitam o registro do componente com a ajuda do elemento de dados: `data-cmp-clickable`.
+A Camada de Dados de Clientes Adobe é orientada por eventos e um dos eventos mais comuns para acionar uma ação é o evento `cmp:click`. Os Componentes principais do AEM facilitam o registro do componente com a ajuda do elemento de dados: `data-cmp-clickable`.
 
 Os elementos clicáveis geralmente são um botão CTA ou um link de navegação. Infelizmente, o componente Subtítulo não tem nenhum desses, mas vamos registrá-lo de qualquer maneira, pois isso pode ser comum para outros componentes personalizados.
 
@@ -260,7 +260,7 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
 
 1. Retorne ao navegador e reabra a página com o componente Subtítulo adicionado: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   Para testar nosso evento, adicionaremos manualmente alguns JavaScript usando o console do desenvolvedor. Consulte [Usando a Camada de Dados do Cliente Adobe com Componentes Principais AEM](data-layer-overview.md) para ver um vídeo sobre como fazer isso.
+   Para testar nosso evento, adicionaremos manualmente alguns JavaScript usando o console do desenvolvedor. Consulte [Usando a Camada de Dados de Clientes Adobe com Componentes Principais do AEM](data-layer-overview.md) para ver um vídeo sobre como fazer isso.
 
 1. Abra as ferramentas de desenvolvedor do navegador e insira o seguinte método no **Console**:
 
@@ -300,7 +300,7 @@ Os elementos clicáveis geralmente são um botão CTA ou um link de navegação.
 
 ## Usar o utilitário DataLayerBuilder {#data-layer-builder}
 
-Quando o Modelo Sling foi [atualizado](#sling-model) anteriormente no capítulo, optamos por criar a Cadeia de caracteres JSON usando um `HashMap` e definindo cada uma das propriedades manualmente. Esse método funciona bem para componentes únicos pequenos, no entanto, para componentes que estendem os Componentes principais do AEM, isso pode resultar em muito código extra.
+Quando o Modelo Sling foi [atualizado](#sling-model) anteriormente no capítulo, optamos por criar a Cadeia de caracteres JSON usando um `HashMap` e definindo cada uma das propriedades manualmente. Esse método funciona bem para componentes pequenos e únicos, no entanto, para componentes que estendem os Componentes principais do AEM, isso pode resultar em muito código extra.
 
 Uma classe de utilitário, `DataLayerBuilder`, existe para executar a maior parte do trabalho pesado. Isso permite que as implementações estendam apenas as propriedades que desejam. Vamos atualizar o Modelo do Sling para usar o `DataLayerBuilder`.
 
@@ -321,7 +321,7 @@ Uma classe de utilitário, `DataLayerBuilder`, existe para executar a maior part
    }
    ```
 
-   `ComponentData` é um objeto fornecido pelos Componentes principais do AEM. Ele resulta em uma sequência JSON, como no exemplo anterior, mas também executa muito trabalho adicional.
+   `ComponentData` é um objeto fornecido pelos Componentes Principais do AEM. Ele resulta em uma sequência JSON, como no exemplo anterior, mas também executa muito trabalho adicional.
 
 1. Abra o arquivo `BylineImpl.java` em `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
 
@@ -428,10 +428,10 @@ Uma classe de utilitário, `DataLayerBuilder`, existe para executar a maior part
 
 ## Parabéns. {#congratulations}
 
-Você acabou de explorar algumas maneiras de estender e personalizar a Camada de dados do cliente Adobe com componentes AEM!
+Você acabou de explorar algumas maneiras de estender e personalizar a Camada de dados do cliente da Adobe com componentes do AEM!
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação da Camada de Dados do Cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Documentação da Camada de Dados de Clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [Integração da Camada de Dados com os Componentes Principais](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
-* [Usando a Camada de Dados do Cliente Adobe e a Documentação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
+* [Usando a Camada de Dados de Clientes Adobe e a Documentação de Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)

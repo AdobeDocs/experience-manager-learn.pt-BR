@@ -1,7 +1,7 @@
 ---
-title: Criar um projeto a partir da chapa AEM para Edge Delivery Services
-description: Criar um projeto a partir da chapa AEM para Edge Delivery Services
-version: 6.5, Cloud Service
+title: Criar um projeto a partir da matriz da AEM para o Edge Delivery Services
+description: Criar um projeto a partir da matriz da AEM para o Edge Delivery Services
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,15 +12,15 @@ jira: KT-14479
 thumbnail: 3425713.jpeg
 duration: 89
 exl-id: 8fa9ac34-d77a-46d1-af19-4b89c1b8d54f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
 
 ---
 
-# Placa perfurada AEM
+# Modelo do AEM
 
-Configure o repositório Git de código com o [modelo padronizado para AEM](https://github.com/adobe/aem-boilerplate) para o Edge Delivery Services.
+Configure o repositório Git de código com o [modelo padronizado do AEM](https://github.com/adobe/aem-boilerplate) para o Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

@@ -2,13 +2,13 @@
 title: Variáveis no fluxo de trabalho do AEM[Part1]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
 feature: Adaptive Forms, Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Os dados do formulário adaptável são armazenados no elemento de dados, como m
 
 Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
-* [Baixar e importar os ativos para AEM usando o gerenciador de pacotes](assets/xmlandstringvariable.zip)
+* [Baixar e importar os ativos para a AEM usando o gerenciador de pacotes](assets/xmlandstringvariable.zip)
 * [Explore o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) para entender as variáveis usadas no fluxo de trabalho
 * [Configurar o Serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)

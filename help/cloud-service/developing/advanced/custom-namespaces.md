@@ -1,7 +1,7 @@
 ---
 title: Namespaces personalizados
 description: Saiba como definir e implantar namespaces personalizados para o AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development, Content Management
 feature: Metadata
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: 3412319.jpg
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: e86ddc9d-ce44-407a-a20c-fb3297bb0eb2
 duration: 496
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Os namespaces personalizados são a parte opcional de uma propriedade JCR que pr
 
 ... e muitos outros.
 
-Os namespaces podem ser usados para denotar o escopo e a intenção de uma propriedade. A criação de um namespace personalizado, geralmente o nome da sua empresa, ajuda a identificar claramente os nós ou propriedades específicos da sua implementação de AEM e contém dados específicos da sua empresa.
+Os namespaces podem ser usados para denotar o escopo e a intenção de uma propriedade. A criação de um namespace personalizado, geralmente o nome da sua empresa, ajuda a identificar claramente os nós ou propriedades específicos da sua implementação do AEM e contém dados específicos da sua empresa.
 
-Os namespaces personalizados são gerenciados nos scripts [Inicialização do Repositório de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e são implantados no AEM as a Cloud Service como configurações OSGi - e adicionados ao projeto ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) `ui.config` do seu [projeto AEM.
+Os namespaces personalizados são gerenciados nos scripts [Inicialização do Repositório de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e são implantados no AEM as a Cloud Service como configurações OSGi - e adicionados ao projeto [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) `ui.config` do seu projeto do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 

@@ -1,24 +1,24 @@
 ---
 title: Uso do AEM Forms com Chatbot
-description: Preencher um formulário de PDF usando o Chatbot
+description: Preencher um formulário do PDF usando o Chatbot
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-15344
 topic: Development
 role: User
 level: Intermediate
 exl-id: 8c51a374-7444-4a6a-99ed-dce671dc57cb
 duration: 161
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 2%
 
 ---
 
-# Preencha um formulário de PDF usando o ChatBot
+# Preencha um formulário do PDF usando o ChatBot
 
-Bem-vindo ao nosso tutorial sobre como usar um ChatBot para preencher um formulário PDF com o Adobe Experience Manager Forms (AEM Forms) e enviá-lo para assinatura digital usando o Adobe Sign.
+Bem-vindo ao nosso tutorial sobre como usar um ChatBot para preencher um formulário do PDF com o Adobe Experience Manager Forms (AEM Forms) e enviá-lo para assinatura digital usando o Adobe Sign.
 
 O ChatBot foi criado usando o [chatbot](https://www.chatbot.com/).
 

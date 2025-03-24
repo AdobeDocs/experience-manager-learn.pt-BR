@@ -1,7 +1,7 @@
 ---
 title: Como trabalhar com grandes conjuntos de resultados no AEM Headless
-description: Saiba como trabalhar com conjuntos de resultados grandes com AEM Headless.
-version: Cloud Service
+description: Saiba como trabalhar com conjuntos de resultados grandes com o AEM Headless.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Architect, Developer
@@ -12,16 +12,16 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
-# Grandes conjuntos de resultados no AEM Headless
+# Conjuntos de resultados grandes no AEM Headless
 
-As consultas do AEM Headless no GraphQL podem retornar grandes resultados. Este artigo descreve como trabalhar com grandes resultados no AEM Headless para garantir o melhor desempenho para seu aplicativo.
+As consultas do AEM Headless GraphQL podem retornar grandes resultados. Este artigo descreve como trabalhar com resultados grandes no AEM Headless para garantir o melhor desempenho para seu aplicativo.
 
 O AEM Headless oferece suporte a [consultas de deslocamento/limite](#list-query) e [paginação baseada em cursor](#paginated-query) para subconjuntos menores de um conjunto de resultados maior. Várias solicitações podem ser feitas para coletar quantos resultados forem necessários.
 

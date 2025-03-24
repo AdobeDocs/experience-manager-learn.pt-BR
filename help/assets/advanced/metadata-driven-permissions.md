@@ -1,7 +1,7 @@
 ---
 title: Permissões orientadas por metadados no AEM Assets
 description: As Permissões orientadas por metadados são um recurso usado para restringir o acesso com base nas propriedades dos metadados do ativo, em vez da estrutura de pastas.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%

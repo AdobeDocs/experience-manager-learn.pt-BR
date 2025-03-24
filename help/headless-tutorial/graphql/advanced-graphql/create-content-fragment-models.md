@@ -1,14 +1,14 @@
 ---
-title: Criar modelos de fragmento de conteúdo — Conceitos avançados de AEM headless — GraphQL
+title: Criar modelos de fragmento de conteúdo - Conceitos avançados do AEM Headless - GraphQL
 description: Neste capítulo dos conceitos avançados do Adobe Experience Manager (AEM) Headless, saiba como editar um modelo de fragmento de conteúdo adicionando espaços reservados para guias, data e hora, objetos JSON, referências de fragmento e referências de conteúdo.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
 duration: 757
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -236,5 +236,5 @@ Parabéns! Agora você adicionou guias, usou os tipos de dados de objeto data e 
 
 O próximo capítulo desta série abordará [criação de fragmentos de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) a partir dos modelos criados neste capítulo. Saiba como usar os tipos de dados introduzidos neste capítulo e criar políticas de pasta para limitar quais modelos de fragmento de conteúdo podem ser criados em uma pasta de ativos.
 
-Embora seja opcional para este tutorial, publique todo o conteúdo em situações de produção reais. Para obter uma revisão dos ambientes do Author e do Publish no AEM, consulte o
-[Séries de vídeos AEM Headless e GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+Embora seja opcional para este tutorial, publique todo o conteúdo em situações de produção reais. Para obter uma revisão dos ambientes Autor e Publicação no AEM, consulte o
+[Série de vídeos do AEM Headless e do GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

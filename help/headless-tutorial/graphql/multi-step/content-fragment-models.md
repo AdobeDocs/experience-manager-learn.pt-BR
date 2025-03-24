@@ -1,7 +1,7 @@
 ---
-title: Definição de modelos de fragmento de conteúdo - Introdução ao AEM headless - GraphQL
-description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Saiba como modelar conteúdo e criar um esquema com modelos de fragmento de conteúdo no AEM. Revise os modelos existentes e crie um modelo. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um esquema.
-version: Cloud Service
+title: Definição de modelos de fragmento de conteúdo - Introdução ao AEM Headless - GraphQL
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Saiba como modelar conteúdo e criar um esquema com modelos de fragmento de conteúdo no AEM. Revise os modelos existentes e crie um modelo. Saiba mais sobre os diferentes tipos de dados que podem ser usados para definir um esquema.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6712
 thumbnail: 22452.jpg
@@ -11,10 +11,10 @@ role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1110'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Você também é bem-vindo para criar seu próprio modelo seguindo as etapas bá
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial em várias partes e presume-se que um [ambiente de autor de AEM esteja disponível](./overview.md#prerequisites).
+Este é um tutorial em várias partes e presume-se que um [ambiente de criação do AEM esteja disponível](./overview.md#prerequisites).
 
 ## Objetivos {#objectives}
 
@@ -40,7 +40,7 @@ Este é um tutorial em várias partes e presume-se que um [ambiente de autor de 
 
 Uma configuração de projeto contém todos os modelos de Fragmento de conteúdo associados a um projeto específico e fornece um meio de organizar modelos. Pelo menos um projeto deve ser criado **antes** de criar o Modelo de fragmento de conteúdo.
 
-1. Fazer logon no ambiente AEM **Author** (ex. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. Fazer logon no ambiente **Author** do AEM (ex. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Na tela inicial do AEM, navegue até **Ferramentas** > **Geral** > **Navegador de Configuração**.
 
    ![Navegar até o Navegador de Configuração](assets/content-fragment-models/navigate-config-browser.png)
@@ -78,7 +78,7 @@ Crie um modelo para uma **Pessoa**, que é o modelo de dados que representa uma 
 
    ![Campo de propriedade Nome Completo](assets/content-fragment-models/full-name-property-field.png)
 
-   O **Nome da Propriedade** define o nome da propriedade que é persistente no AEM. O **Nome da Propriedade** também define o nome **chave** dessa propriedade como parte do esquema de dados. Esta **chave** é usada quando os dados do Fragmento de conteúdo são expostos por meio de APIs do GraphQL.
+   O **Nome da Propriedade** define o nome da propriedade que é persistida no AEM. O **Nome da Propriedade** também define o nome **chave** dessa propriedade como parte do esquema de dados. Esta **chave** é usada quando os dados do Fragmento de conteúdo são expostos por meio de APIs do GraphQL.
 
 1. Toque na guia **Tipos de dados** e arraste e solte um campo **Texto de várias linhas** abaixo do campo **Nome completo**. Insira as seguintes propriedades:
 
@@ -163,23 +163,23 @@ Crie um modelo para uma **Equipe**, que é o modelo de dados para uma equipe de 
 
    ![Dois Modelos](assets/content-fragment-models/two-new-models.png)
 
-## Modelos de fragmento de conteúdo e configuração de projetos do Publish
+## Publicar configuração do projeto e modelos de fragmento de conteúdo
 
 Após a revisão e verificação, publique os `Project Configuration` e `Content Fragment Model`
 
 1. Na tela inicial do AEM, navegue até **Ferramentas** > **Geral** > **Navegador de Configuração**.
 
-1. Toque na caixa de seleção ao lado de **Meu projeto** e toque em **Publish**
+1. Toque na caixa de seleção ao lado de **Meu projeto** e toque em **Publicar**
 
-   ![Configuração de projeto do Publish](assets/content-fragment-models/publish-project-config.png)
+   ![Publicar configuração do projeto](assets/content-fragment-models/publish-project-config.png)
 
 1. Na tela inicial do AEM, navegue até **Ferramentas** > **Geral** > **Modelos de fragmentos de conteúdo**.
 
 1. Navegue até a pasta **Meu Projeto**.
 
-1. Toque nos modelos **Pessoa** e **Equipe** e toque em **Publish**
+1. Toque nos modelos **Pessoa** e **Equipe** e em **Publicar**
 
-   ![Modelos de fragmentos de conteúdo do Publish](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![Publicar modelos de fragmento de conteúdo](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Parabéns. {#congratulations}
 

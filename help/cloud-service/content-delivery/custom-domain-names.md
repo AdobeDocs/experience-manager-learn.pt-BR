@@ -1,7 +1,7 @@
 ---
 title: Opções de nome de domínio personalizado
 description: Saiba como gerenciar e implementar nomes de domínio personalizados para seu site hospedado na AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Custom Domain Names
 topic: Architecture, Migration
 role: Admin, Architect, Developer
@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
 exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Um nome de domínio é o nome amigável do nome do site, como adobe.com, que apo
 
 ### Nomes de domínio padrão no AEM as a Cloud Service
 
-Por padrão, o AEM as a Cloud Service é provisionado com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. O certificado SSL curinga emitido em `*.adobeaemcloud.com` é aplicado automaticamente a todos os ambientes e esse certificado curinga é responsabilidade do Adobe.
+Por padrão, o AEM as a Cloud Service é provisionado com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. O certificado SSL curinga emitido em `*.adobeaemcloud.com` é aplicado automaticamente a todos os ambientes e esse certificado curinga é responsabilidade da Adobe.
 
 Os nomes de domínio padrão estão no formato `https://<SERVICE-TYPE>-p<PROGRAM-ID>-e<ENVIRONMENT-ID>.adobeaemcloud.com`.
 
@@ -45,9 +45,9 @@ Os nomes de domínio padrão estão no formato `https://<SERVICE-TYPE>-p<PROGRAM
 
 Em resumo, depois que todos os ambientes do AEM as a Cloud Service forem provisionados, você terá URLs exclusivas **11** (o RDE não tem um ambiente de visualização) combinadas com o nome de domínio padrão.
 
-### CDN gerenciada por Adobe vs. CDN gerenciada pelo cliente
+### CDN gerenciada pela Adobe versus CDN gerenciada pelo cliente
 
-Para reduzir a latência e melhorar o desempenho do site, o AEM as a Cloud Service é integrado a uma Rede de entrega de conteúdo (CDN) gerenciada por Adobe. A CDN gerenciada por Adobe é ativada automaticamente para todos os ambientes. Consulte [cache do AEM as a Cloud Service](../caching/overview.md) para obter mais detalhes.
+Para reduzir a latência e melhorar o desempenho do site, o AEM as a Cloud Service é integrado a uma Rede de entrega de conteúdo (CDN) gerenciada pela Adobe. A CDN gerenciada pela Adobe é ativada automaticamente para todos os ambientes. Consulte [cache do AEM as a Cloud Service](../caching/overview.md) para obter mais detalhes.
 
 No entanto, os clientes também podem usar sua própria CDN, chamada de **CDN gerenciada pelo cliente**. Não é necessário, mas poucos clientes o usam para políticas corporativas ou outros motivos. Nesse caso, o cliente é responsável por gerenciar as configurações e os ajustes da CDN.
 
@@ -59,7 +59,7 @@ Ao adicionar nomes de domínio personalizados, você deve fornecer um certificad
 
 Normalmente, os clientes usam um nome de domínio personalizado para ambientes de produção (site do AEM as a Cloud Service) e, às vezes, para ambientes inferiores como **stage** ou **dev**.
 
-| Tipo de serviço AEM | Domínio personalizado aceito? |
+| Tipo de serviço do AEM | Domínio personalizado aceito? |
 |---------------------|:-----------------------:|
 | Autor | ✘ |
 | Visualização | ✔ |
@@ -67,7 +67,7 @@ Normalmente, os clientes usam um nome de domínio personalizado para ambientes d
 
 ## Implementar nomes de domínio
 
-Para implementar nomes de domínio usando CDN gerenciado por Adobe ou CDN gerenciado pelo cliente, o fluxograma a seguir o orienta pelo processo:
+Para implementar nomes de domínio usando a CDN gerenciada pela Adobe ou a CDN gerenciada pelo cliente, o fluxograma a seguir o orienta pelo processo:
 
 ![Fluxograma de Gerenciamento de Nomes de Domínio](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
 
@@ -75,12 +75,12 @@ Além disso, a tabela a seguir orienta onde gerenciar as configurações especí
 
 | Nome de domínio personalizado com | Adicionar certificado SSL a | Adicionar nome de domínio a | Configurar registros DNS em | É necessária a regra CDN de validação do cabeçalho HTTP? |
 |---------------------|:-----------------------:|-----------------------:|-----------------------:|-----------------------:|
-| CDN gerenciada por Adobe | Adobe Cloud Manager | Adobe Cloud Manager | Serviço de hospedagem DNS | ✘ |
+| CDN gerenciada pela Adobe | Adobe Cloud Manager | Adobe Cloud Manager | Serviço de hospedagem DNS | ✘ |
 | CDN gerenciada pelo cliente | Fornecedor de CDN | Fornecedor de CDN | Serviço de hospedagem DNS | ✔ |
 
 ### Tutoriais passo a passo
 
 Agora que você entende o processo de gerenciamento de nomes de domínio, pode implementar nomes de domínio personalizados para seu site do AEM as a Cloud Service seguindo os tutoriais abaixo:
 
-**[Nomes de domínio personalizados com CDN gerenciado por Adobe](./custom-domain-name-with-adobe-managed-cdn.md)**: neste tutorial, você aprenderá a adicionar um nome de domínio personalizado a um **site da AEM as a Cloud Service com CDN gerenciado por Adobe**.
+**[Nomes de domínio personalizados com CDN gerenciada pela Adobe](./custom-domain-name-with-adobe-managed-cdn.md)**: neste tutorial, você aprenderá a adicionar um nome de domínio personalizado a um **site da AEM as a Cloud Service com CDN gerenciada pela Adobe**.
 **[Nomes de domínio personalizados com CDN gerenciada pelo cliente](./custom-domain-names-with-customer-managed-cdn.md)**: neste tutorial, você aprenderá a adicionar um nome de domínio personalizado a um **site da AEM as a Cloud Service com CDN gerenciada pelo cliente**.

@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Mistérios do Cloud Manager - Testes funcionais
 description: Como e por que criar testes funcionais personalizados
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343624.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 5d9d70ab-3aaa-4e88-b0f8-e8cfe73cc617
 duration: 310
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
@@ -25,8 +25,8 @@ O AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu ap
 ## Conteúdo abordado neste vídeo
 
 + [Teste funcional](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
-+ [Testes de fumaça do AEM](https://github.com/adobe/aem-test-samples/)
-+ [Clientes de teste de AEM](https://github.com/adobe/aem-testing-clients/)
++ [Testes de fumaça AEM](https://github.com/adobe/aem-test-samples/)
++ [Clientes de teste do AEM](https://github.com/adobe/aem-testing-clients/)
 
 ## Recursos adicionais
 

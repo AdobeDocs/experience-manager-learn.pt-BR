@@ -1,7 +1,7 @@
 ---
 title: Análise da taxa de acertos do cache do CDN
 description: Saiba como analisar os logs de CDN fornecidos pela AEM as a Cloud Service. Obtenha insights, como a taxa de acertos do cache e os principais URLs dos tipos de cache MISS e PASS para fins de otimização.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Análise da taxa de acertos do cache do CDN
 
-O conteúdo armazenado em cache na CDN reduz a latência experimentada pelos usuários do site, que não precisam aguardar a solicitação para retornar à publicação do Apache/Dispatcher ou do AEM. Com isso em mente, vale a pena otimizar a taxa de ocorrência do cache do CDN para maximizar a quantidade de conteúdo armazenável em cache no CDN.
+O conteúdo armazenado em cache na CDN reduz a latência experimentada pelos usuários do site, que não precisam aguardar a solicitação para retornar ao Apache/Dispatcher ou à publicação do AEM. Com isso em mente, vale a pena otimizar a taxa de ocorrência do cache do CDN para maximizar a quantidade de conteúdo armazenável em cache no CDN.
 
 Saiba como analisar os **logs de CDN** fornecidos pela AEM as a Cloud Service e obter insights, como **taxa de acertos de cache** e **principais URLs de _MISS_ e _PASS_ tipos de cache**, para fins de otimização.
 
@@ -30,11 +30,11 @@ Os logs CDN estão disponíveis no formato JSON, que contém vários campos, inc
 
 | Estado de Cache </br> Valor Possível | Descrição |
 |------------------------------------|:-----------------------------------------------------:|
-| HIT | Os dados solicitados são _encontrados no cache da CDN e não requerem uma solicitação de busca_ para o servidor AEM. |
+| HIT | Os dados solicitados são _encontrados no cache da CDN e não requerem uma solicitação de busca_ para o servidor do AEM. |
 | SENHORITA | Os dados solicitados são _não encontrados no cache CDN e devem ser solicitados_ do servidor AEM. |
-| PASS | Os dados solicitados são _explicitamente definidos para não serem armazenados em cache_ e sempre serem recuperados do servidor AEM. |
+| PASS | Os dados solicitados são _explicitamente definidos para não serem armazenados em cache_ e sempre serem recuperados do servidor do AEM. |
 
-Para fins deste tutorial, o [projeto WKND de AEM](https://github.com/adobe/aem-guides-wknd) é implantado no ambiente do AEM as a Cloud Service e um pequeno teste de desempenho é acionado usando o [Apache JMeter](https://jmeter.apache.org/).
+Para fins deste tutorial, o [projeto WKND do AEM](https://github.com/adobe/aem-guides-wknd) é implantado no ambiente do AEM as a Cloud Service e um pequeno teste de desempenho é acionado usando o [Apache JMeter](https://jmeter.apache.org/).
 
 Este tutorial está estruturado para orientá-lo pelo seguinte processo:
 
@@ -52,7 +52,7 @@ Para baixar os logs de CDN, siga estas etapas:
 
    ![Baixar Logs - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. Na caixa de diálogo **Baixar Logs**, selecione o Serviço **Publish** no menu suspenso e clique no ícone de download ao lado da linha **CDN**.
+1. Na caixa de diálogo **Baixar Logs**, selecione o Serviço **Publicar** no menu suspenso e clique no ícone de download ao lado da linha **CDN**.
 
    ![Logs da CDN - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -61,7 +61,7 @@ Se o arquivo de log baixado for de _hoje_, a extensão de arquivo será `.log`; 
 
 ## Analisar logs de CDN baixados
 
-Para obter insights, como a taxa de acertos do cache e os principais URLs dos tipos de cache MISS e PASS, analise o arquivo de log de CDN baixado. Esses insights ajudam a otimizar a [configuração de cache da CDN](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) e aprimorar o desempenho do site.
+Para obter insights, como a taxa de acertos do cache e os principais URLs dos tipos de cache MISS e PASS, analise o arquivo de log de CDN baixado. Esses insights ajudam a otimizar a [configuração de cache da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) e aprimorar o desempenho do site.
 
 Para analisar os logs de CDN, este tutorial apresenta três opções:
 
@@ -158,7 +158,7 @@ Primeiro, baixe o arquivo [AEM-as-a-CloudService - CDN Logs Analysis - Jupyter N
 - **Instalar bibliotecas adicionais**: instala as bibliotecas Python `termcolor` e `tabulate`.
 - **Carregar logs CDN**: carrega o arquivo de log CDN usando o valor de variável `log_file`. Atualize seu valor. Ele também transforma este log de CDN no [DataFrame Pandas](https://pandas.pydata.org/docs/reference/frame.html).
 - **Executar análise**: o primeiro bloco de código é _Exibir Resultado da Análise para Total, HTML, JS/CSS e Solicitações de Imagem_; ele fornece gráficos de porcentagem de taxa de acertos de cache, de barras e de pizza.
-O segundo bloco de código é _Top 5 URLs de Solicitação MISS e PASS para HTML, JS/CSS e Image_; ele exibe URLs e suas contagens em formato de tabela.
+O segundo bloco de código é _Top 5 URLs de solicitação de MISS e PASS para HTML, JS/CSS e Image_; ele exibe URLs e suas contagens em formato de tabela.
 
 #### Execução do Jupyter Notebook
 
@@ -186,11 +186,11 @@ Em seguida, execute o Jupyter Notebook no Adobe Experience Platform, seguindo es
 
    ![Atualização de Valor do Arquivo de Log do Bloco de Anotações](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
-1. Após executar a célula de código **Exibir Resultado da Análise para Total, HTML, JS/CSS e Solicitações de Imagem**, a saída exibe os gráficos de porcentagem de taxa de acertos do cache, barra e pizza.
+1. Após executar a célula de código **Exibir Resultado da Análise para Total, HTML, JS/CSS e Solicitações de Imagem**, a saída exibe os gráficos de porcentagem da taxa de acertos do cache, barra e pizza.
 
    ![Atualização de Valor do Arquivo de Log do Bloco de Anotações](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
-1. Depois de executar os **Top 5 URLs de solicitação de MISS e PASS para a célula de código HTML, JS/CSS e Image**, a saída exibe os 5 principais URLs de solicitação de MISS e PASS.
+1. Depois de executar as **Principais 5 URLs de solicitação de MISS e PASS para HTML, JS/CSS e célula de código de Imagem**, a saída exibe as 5 Principais URLs de solicitação de MISS e PASS.
 
    ![Atualização de Valor do Arquivo de Log do Bloco de Anotações](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
@@ -198,8 +198,8 @@ Você pode aprimorar o Jupyter Notebook para analisar os logs de CDN com base em
 
 ## Otimização da configuração do cache da CDN
 
-Depois de analisar os logs de CDN, você pode otimizar a configuração do cache de CDN para melhorar o desempenho do site. A prática recomendada do AEM é ter uma taxa de acerto de cache de 90% ou mais.
+Depois de analisar os logs de CDN, você pode otimizar a configuração do cache de CDN para melhorar o desempenho do site. A prática recomendada do AEM é ter uma taxa de acertos de cache de 90% ou superior.
 
-Para obter mais informações, consulte [Otimizar a configuração do cache da CDN](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
+Para obter mais informações, consulte [Otimizar a configuração do cache da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
-O projeto WKND AEM tem uma configuração de CDN de referência. Para obter mais informações, consulte [Configuração de CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) do arquivo `wknd.vhost`.
+O projeto WKND do AEM tem uma configuração de CDN de referência. Para obter mais informações, consulte [Configuração de CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) do arquivo `wknd.vhost`.

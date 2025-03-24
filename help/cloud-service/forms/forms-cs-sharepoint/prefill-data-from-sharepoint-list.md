@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14795
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 duration: 46
 exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Preencher previamente o formulário adaptável com os dados da lista de pontos de compartilhamento
 
-Na versão anterior do Formulário AEM (6.5), o código personalizado precisava ser gravado para preencher previamente o formulário adaptável com suporte ao modelo de dados de formulário usando o atributo de solicitação. No AEM Forms as a cloud service, a necessidade de gravar código personalizado não é mais necessária.
+Na versão anterior do AEM Form(6.5), o código personalizado tinha que ser gravado para preencher previamente o formulário adaptável com suporte do modelo de dados de formulário usando o atributo de solicitação. No AEM Forms as a cloud service, a necessidade de gravar código personalizado não é mais necessária.
 
 Este artigo explica as etapas necessárias para preencher/preencher previamente o formulário adaptável com dados obtidos da lista do SharePoint usando o serviço de preenchimento do modelo de dados de formulário.
 

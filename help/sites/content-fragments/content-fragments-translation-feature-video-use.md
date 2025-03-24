@@ -1,24 +1,24 @@
 ---
-title: Suporte para tradução de fragmentos de conteúdo do AEM
+title: Suporte à tradução para fragmentos de conteúdo do AEM
 description: Saiba como os fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
 feature: Content Fragments, Multi Site Manager
 topic: Localization
 role: User
 level: Intermediate
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-201
 thumbnail: 18131.jpg
 doc-type: Feature Video
 exl-id: cc4ffbd0-207a-42e4-bfcb-d6c83fb97237
 duration: 223
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 2%
 
 ---
 
-# Suporte para tradução de fragmentos de conteúdo do AEM {#translation-support-content-fragments}
+# Suporte à tradução para fragmentos de conteúdo do AEM {#translation-support-content-fragments}
 
 Saiba como os fragmentos de conteúdo podem ser localizados e traduzidos com o Adobe Experience Manager. Os ativos de mídia mista associados a um Fragmento de conteúdo também podem ser extraídos e traduzidos.
 
@@ -35,7 +35,7 @@ Fragmentos de conteúdo são um tipo de conteúdo reconhecido que o AEM extrai p
 
 ## Editor de regras de tradução {#translation-rules-editor}
 
-O comportamento da tradução de Experience Manager pode ser atualizado com o **Editor de regras de tradução**. Para atualizar a tradução, navegue até **Ferramentas** > **Geral** > **Configuração de Tradução** em [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+O comportamento da tradução do Experience Manager pode ser atualizado com o **Editor de regras de tradução**. Para atualizar a tradução, navegue até **Ferramentas** > **Geral** > **Configuração de Tradução** em [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
 As configurações prontas para uso fazem referência aos Fragmentos de conteúdo em `fragmentPath` com um tipo de recurso de `core/wcm/components/contentfragment/v1/contentfragment`. Todos os componentes herdados de `v1/contentfragment` são reconhecidos pela configuração padrão.
 

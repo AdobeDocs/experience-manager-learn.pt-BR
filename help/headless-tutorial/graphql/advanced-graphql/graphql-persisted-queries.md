@@ -1,14 +1,14 @@
 ---
 title: Consultas persistentes do GraphQL - Conceitos avançados do AEM Headless - GraphQL
 description: Neste capítulo de Conceitos avançados do Adobe Experience Manager (AEM) Headless, saiba como criar e atualizar consultas persistentes do GraphQL com parâmetros. Saiba como transmitir parâmetros de controle de cache em consultas persistentes.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
 duration: 183
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Consultas persistentes de GraphQL
 
-Consultas persistentes são consultas armazenadas no servidor do Adobe Experience Manager (AEM). Os clientes podem enviar uma solicitação HTTP GET com o nome da consulta para executá-la. O benefício dessa abordagem é a capacidade de armazenamento em cache. Embora as consultas GraphQL do lado do cliente também possam ser executadas usando solicitações HTTP POST, que não podem ser armazenadas em cache, as consultas persistentes podem ser armazenadas em cache por caches HTTP ou um CDN, melhorando o desempenho. As consultas persistentes permitem simplificar suas solicitações e melhorar a segurança, pois as consultas são encapsuladas no servidor e o administrador do AEM tem controle total sobre elas. É **prática recomendada e altamente recomendável** usar consultas persistentes ao trabalhar com a API do GraphQL do AEM.
+As consultas persistentes são consultas armazenadas no servidor do Adobe Experience Manager (AEM). Os clientes podem enviar uma solicitação HTTP GET com o nome da consulta para executá-la. O benefício dessa abordagem é a capacidade de armazenamento em cache. Embora as consultas GraphQL do lado do cliente também possam ser executadas usando solicitações HTTP POST, que não podem ser armazenadas em cache, as consultas persistentes podem ser armazenadas em cache por caches HTTP ou um CDN, melhorando o desempenho. As consultas persistentes permitem simplificar suas solicitações e melhorar a segurança, pois as consultas são encapsuladas no servidor e o administrador do AEM tem controle total sobre elas. É **prática recomendada e altamente recomendável** usar consultas persistentes ao trabalhar com a API do AEM GraphQL.
 
-No capítulo anterior, você explorou algumas consultas avançadas do GraphQL para coletar dados para o aplicativo WKND. Neste capítulo, você mantém as consultas ao AEM e aprende a usar o controle de cache em consultas persistentes.
+No capítulo anterior, você explorou algumas consultas avançadas do GraphQL para coletar dados para o aplicativo WKND. Neste capítulo, você mantém as consultas no AEM e aprende a usar o controle de cache em consultas persistentes.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -34,7 +34,7 @@ Neste capítulo, saiba como:
 
 ## Revisar definição da configuração _Consultas GraphQL persistidas_
 
-Vamos revisar que as _Consultas GraphQL persistidas_ estão habilitadas para o projeto do Site WKND na sua instância AEM.
+Vamos revisar que as _Consultas GraphQL persistidas_ estão habilitadas para o projeto do Site WKND na sua instância do AEM.
 
 1. Navegue até **Ferramentas** > **Geral** > **Navegador de Configuração**.
 
@@ -207,13 +207,13 @@ Ao executar a consulta `getAllAdventureDetailsBySlug` no terminal de linha de co
 
 >[!TIP]
 >
->    Se você estiver executando a consulta acima no ambiente de autor do AEM, será necessário enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para obter uma demonstração dele e [Chamando a API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
+>    Se estiver executando a consulta acima no ambiente do AEM Author, você precisará enviar as credenciais. Consulte [Token de acesso de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) para obter uma demonstração dele e [Chamando a API do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) para obter detalhes sobre a documentação.
 
 Além disso, confira [Como executar uma consulta persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Usando variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) e [Codificando a URL da consulta para uso por um aplicativo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) para conhecer a execução de consultas persistentes por aplicativos clientes.
 
 ## Atualizar parâmetros de controle de cache em consultas persistentes {#cache-control-all-adventures}
 
-A API AEM GraphQL permite atualizar os parâmetros padrão de controle de cache para seus queries a fim de melhorar o desempenho. Os valores padrão de controle de cache são:
+A API do GraphQL do AEM permite atualizar os parâmetros de controle de cache padrão para suas consultas para melhorar o desempenho. Os valores padrão de controle de cache são:
 
 * 60 segundos é o TTL padrão (maxage=60) para o cliente (por exemplo, um navegador)
 

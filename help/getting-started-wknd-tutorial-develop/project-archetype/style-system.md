@@ -1,7 +1,7 @@
 ---
 title: Desenvolvimento com o sistema de estilo
 description: Saiba como implementar estilos individuais e reutilizar os Componentes principais usando o Sistema de estilos do Experience Manager. Este tutorial aborda o desenvolvimento para o Sistema de estilos a fim de estender os Componentes principais com CSS específico da marca e configurações de política avançadas do Editor de modelos.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Style System
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
 duration: 358
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Saiba como implementar estilos individuais e reutilizar os Componentes principai
 
 Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
 
-Também é recomendável revisar o tutorial [Bibliotecas do lado do cliente e Fluxo de trabalho de front-end](client-side-libraries.md) para entender os fundamentos das bibliotecas do lado do cliente e as várias ferramentas de front-end integradas ao projeto AEM.
+Também é recomendável revisar o tutorial [Bibliotecas do lado do cliente e Fluxo de trabalho de front-end](client-side-libraries.md) para entender os fundamentos das bibliotecas do lado do cliente e as várias ferramentas de front-end integradas ao projeto do AEM.
 
 ### Projeto inicial
 
@@ -45,7 +45,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
    $ git checkout tutorial/style-system-start
    ```
 
-1. Implante a base de código em uma instância de AEM local usando suas habilidades de Maven:
+1. Implante a base de código em uma instância do AEM local usando suas habilidades do Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -53,7 +53,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
 
    >[!NOTE]
    >
-   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+   > Se estiver usando o AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -130,7 +130,7 @@ Como autor, vamos aplicar o estilo sublinhado a determinados Componentes de tít
    >
    > Neste ponto, nenhuma alteração visível ocorre, pois o estilo `underline` não foi implementado. No próximo exercício, esse estilo será implementado.
 
-1. Clique no ícone **Informações da página** > **Exibir como publicado** para inspecionar a página fora do editor do AEM.
+1. Clique no ícone **Informações da página** > **Exibir como publicada** para inspecionar a página fora do editor do AEM.
 1. Use as ferramentas de desenvolvedor do seu navegador para verificar se a marcação ao redor do componente de Título tem a classe CSS `cmp-title--underline` aplicada ao div externo.
 
    ![Div com classe sublinhada aplicada](assets/style-system/div-underline-class-applied.png)
@@ -146,7 +146,7 @@ Como autor, vamos aplicar o estilo sublinhado a determinados Componentes de tít
 
 ### Implementar o estilo de sublinhado - ui.frontend
 
-Em seguida, implemente o estilo Underline usando o módulo **ui.frontend** do projeto AEM. O servidor de desenvolvimento do webpack que é fornecido com o módulo **ui.frontend** para visualizar os estilos *antes* de implantar em uma instância local de AEM é usado.
+Em seguida, implemente o estilo Underline usando o módulo **ui.frontend** do projeto do AEM. O servidor de desenvolvimento do webpack que é fornecido com o módulo **ui.frontend** para visualizar os estilos *antes* de implantar em uma instância local do AEM é usado.
 
 1. Iniciar o processo `watch` no módulo **ui.frontend**:
 
@@ -185,13 +185,13 @@ Em seguida, implemente o estilo Underline usando o módulo **ui.frontend** do pr
    >
    >É considerada uma prática recomendada definir sempre os estilos como escopo para o componente de destino. Isso garante que estilos extras não afetem outras áreas da página.
    >
-   >Todos os Componentes principais aderem à **[notação BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. É uma prática recomendada direcionar a classe CSS externa ao criar um estilo padrão para um componente. Outra prática recomendada é direcionar nomes de classe especificados pela notação BEM dos Componentes principais em vez de elementos HTML.
+   >Todos os Componentes principais aderem à **[notação BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. É uma prática recomendada direcionar a classe CSS externa ao criar um estilo padrão para um componente. Outra prática recomendada é direcionar nomes de classe especificados pela notação BEM dos Componentes principais em vez de elementos do HTML.
 
-1. Retorne à página do navegador e do AEM. Você verá que o estilo Underline foi adicionado:
+1. Retorne ao navegador e à página do AEM. Você verá que o estilo Underline foi adicionado:
 
    ![Estilo de sublinhado visível no servidor de desenvolvimento do webpack](assets/style-system/underline-implemented-webpack.png)
 
-1. No Editor de AEM, agora você pode ativar e desativar o estilo **Sublinhado** e ver que as alterações são refletidas visualmente.
+1. No Editor do AEM, agora você pode ativar e desativar o estilo **Sublinhado** e ver que as alterações são refletidas visualmente.
 
 ## Estilo do bloco de aspas - Texto {#text-component}
 
@@ -252,7 +252,7 @@ Em seguida, adicione uma política para os componentes de Texto.
 
 ### Implementar o estilo de bloco de cotação - ui.frontend
 
-A seguir, vamos implementar o estilo de Bloco de Cotação usando o módulo **ui.frontend** do projeto AEM.
+A seguir, vamos implementar o estilo de Bloco de Cotação usando o módulo **ui.frontend** do projeto do AEM.
 
 1. Se ainda não estiver em execução, inicie o processo `watch` de dentro do módulo **ui.frontend**:
 
@@ -300,7 +300,7 @@ A seguir, vamos implementar o estilo de Bloco de Cotação usando o módulo **ui
 
    >[!CAUTION]
    >
-   > Nesse caso, os elementos de HTML brutos são direcionados pelos estilos. Isso ocorre porque o componente de Texto fornece um Editor de Rich Text para autores de conteúdo. A criação de estilos diretamente em relação ao conteúdo do RTE deve ser feita com cuidado, e é ainda mais importante definir o escopo mais preciso dos estilos.
+   > Nesse caso, elementos HTML brutos são direcionados pelos estilos. Isso ocorre porque o componente de Texto fornece um Editor de Rich Text para autores de conteúdo. A criação de estilos diretamente em relação ao conteúdo do RTE deve ser feita com cuidado, e é ainda mais importante definir o escopo mais preciso dos estilos.
 
 1. Retorne ao navegador mais uma vez e você verá que o estilo de bloco Cotação foi adicionado:
 
@@ -334,17 +334,17 @@ main.container {
 }
 ```
 
-Em vez de direcionar o elemento de HTML `main`, o Sistema de Estilos pode ser usado para criar um estilo de **Largura fixa** como parte da política de Contêiner. O Sistema de Estilos pode dar aos usuários a opção de alternar entre contêineres de **Largura fixa** e **Largura fluida**.
+Em vez de direcionar o elemento HTML `main`, o Sistema de Estilos pode ser usado para criar um estilo de **Largura fixa** como parte da política de Contêiner. O Sistema de Estilos pode dar aos usuários a opção de alternar entre contêineres de **Largura fixa** e **Largura fluida**.
 
 1. **Desafio de Bônus** - use as lições aprendidas com os exercícios anteriores e use o Sistema de Estilos para implementar estilos de **Largura fixa** e **Largura fluida** para o componente de Contêiner.
 
 ## Parabéns. {#congratulations}
 
-Parabéns, a página do artigo é quase do estilo e você ganhou experiência prática usando o Sistema de Estilos AEM.
+Parabéns, a página do artigo está quase no estilo, e você ganhou experiência prática usando o Sistema de Estilos do AEM.
 
 ### Próximas etapas {#next-steps}
 
-Saiba mais sobre as etapas completas para criar um [componente AEM personalizado](custom-component.md) que exiba conteúdo criado em uma caixa de diálogo e explore o desenvolvimento de um Modelo Sling para encapsular a lógica de negócios que preencha o HTL do componente.
+Saiba mais sobre as etapas completas para criar um [componente personalizado do AEM](custom-component.md) que exiba conteúdo criado em uma caixa de diálogo e explore o desenvolvimento de um Modelo do Sling para encapsular a lógica de negócios que preencha o HTL do componente.
 
 Visualize o código concluído em [GitHub](https://github.com/adobe/aem-guides-wknd) ou revise e implante o código localmente em na ramificação Git `tutorial/style-system-solution`.
 

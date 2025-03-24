@@ -3,7 +3,7 @@ title: Salvar e retomar cartas
 description: Saiba como salvar e recuperar rascunhos de cartas
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -11,7 +11,7 @@ jira: KT-10208
 exl-id: e032070b-7332-4c2f-97ee-7e887a61aa7a
 last-substantial-update: 2022-01-07T00:00:00Z
 duration: 160
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
@@ -33,5 +33,5 @@ O vídeo a seguir demonstra o caso de uso:
 Você precisará do seguinte para implementar a solução que atenda às suas necessidades
 
 * Experiência de trabalho com o AEM Forms
-* Servidor AEM 6.5 com Forms Add on
+* AEM Server 6.5 com complemento do Forms
 * Deve se familiarizar com a criação de pacotes OSGI

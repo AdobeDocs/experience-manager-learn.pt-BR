@@ -1,7 +1,7 @@
 ---
 title: Usar a diferença de página com o AEM Sites
 description: Os recursos de diferença de página do AEM Sites mostram uma visualização rápida e com código de cores do que foi alterado em uma página (versão, live copy, inicializações, cópia de idioma).
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-4633
 thumbnail: 32152.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
 duration: 502
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**alterações de HTML**
+**Alterações no HTML**
 
 * **Verde**: novo conteúdo
 * **Vermelho**: conteúdo removido

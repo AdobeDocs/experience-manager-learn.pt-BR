@@ -1,15 +1,15 @@
 ---
 title: Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets
-description: As melhorias do Dynamic Media Viewer no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (video360Social e video360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
+description: As melhorias do Visualizador do Dynamic Media no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (video360Social e video360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
 duration: 656
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -18,17 +18,17 @@ ht-degree: 3%
 
 # Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets
 
-As melhorias do Dynamic Media Viewer no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (video360Social e video360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
+As melhorias do Visualizador do Dynamic Media no AEM 6.5 incluem a adição de suporte para renderização de vídeo 360, visualizadores de mídia 360 (video360Social e video360VR) e a capacidade de selecionar miniaturas de vídeo personalizadas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
 
 >[!NOTE]
 >
->O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7.  [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Por padrão, ao carregar um vídeo, o Dynamic Media processa a sequência de imagens como um vídeo 360, se ela tiver uma proporção largura/altura de 2:1. ou seja, a relação largura/altura é de 2:1.
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7.  [As instruções sobre como configurar o AEM com Dynamic Media podem ser encontradas aqui](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Ao carregar um vídeo, por padrão, o Dynamic Media processa a sequência de imagens como um vídeo 360, se ela tiver uma proporção largura/altura de 2:1. ou seja, a relação largura/altura é de 2:1.
 
 >[!NOTE]
 >
->Os componentes de mídia do Dynamic Media 360 são compatíveis apenas com vídeos 360.
+>Os componentes do Dynamic Media 360 Media são compatíveis apenas com 360 vídeos.
 
 ## Vídeos do Dynamic Media 360
 
@@ -36,7 +36,7 @@ Vídeos de 360 graus, também conhecidos como vídeos esféricos, são gravaçõ
 
 ## Vídeos do Dynamic Media 360
 
-O vídeo do Dynamic Media agora permite selecionar uma miniatura personalizada para o vídeo. Um usuário pode selecionar um ativo existente do AEM Assets ou selecionar um quadro de vídeo como miniatura.
+O Dynamic Media Video agora é compatível com a capacidade de selecionar uma miniatura personalizada para o seu vídeo. Um usuário pode selecionar um ativo existente do AEM Assets ou selecionar um quadro de vídeo como miniatura.
 
 ## Visualizadores do Dynamic 360 Media
 
@@ -49,8 +49,8 @@ O vídeo do Dynamic Media agora permite selecionar uma miniatura personalizada p
    </tr>
    <tr>
       <td>Modo de execução do Dynamic Media</td>
-      <td>Somente modo Dynamic Media Scene7</td>
-      <td>Somente Modo Dynamic Media Scene7<br>
+      <td>Somente modo Scene7 do Dynamic Media</td>
+      <td>Somente modo Scene7 do Dynamic Media<br>
          <br>
       </td>
    </tr>

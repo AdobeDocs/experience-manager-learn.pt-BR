@@ -2,14 +2,14 @@
 title: Verificação de webhook do Github.com
 description: Saiba como verificar uma solicitação de webhook do Github.com em uma ação do App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15714
 last-substantial-update: 2023-06-06T00:00:00Z
 exl-id: 5492dc7b-f034-4a7f-924d-79e083349e26
-source-git-commit: 8f64864658e521446a91bb4c6475361d22385dc1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verificação de webhook do Github.com
 
-Os webhooks permitem criar ou configurar integrações que assinam determinados eventos em GitHub.com. Quando um desses eventos é acionado, o GitHub envia uma carga de POST HTTP para o URL configurado do webhook. No entanto, por motivos de segurança, é importante verificar se a solicitação de webhook recebida é realmente do GitHub e não de um ator mal-intencionado. Este tutorial o orienta pelas etapas para verificar uma solicitação de webhook GitHub.com em uma ação Adobe App Builder usando um segredo compartilhado.
+Os webhooks permitem criar ou configurar integrações que assinam determinados eventos em GitHub.com. Quando um desses eventos é acionado, o GitHub envia uma carga HTTP POST para o URL configurado do webhook. No entanto, por motivos de segurança, é importante verificar se a solicitação de webhook recebida é realmente do GitHub e não de um ator mal-intencionado. Este tutorial o orienta pelas etapas para verificar uma solicitação de webhook GitHub.com em uma ação do Adobe App Builder usando um segredo compartilhado.
 
 ## Configurar segredo do GitHub no AppBuilder
 
@@ -39,7 +39,7 @@ Os webhooks permitem criar ou configurar integrações que assinam determinados 
 
    - Defina a configuração `web` da ação do AppBuilder como `raw` para receber o corpo bruto da solicitação de GitHub.com.
    - Em `inputs` na configuração da ação do AppBuilder, adicione a chave `GITHUB_SECRET`, mapeando-a para o campo `.env` que contém o segredo. O valor dessa chave é o nome de campo `.env` prefixado com `$`.
-   - Defina a anotação `require-adobe-auth` na configuração de ação do AppBuilder para `false` para permitir que a ação seja chamada sem a necessidade de autenticação de Adobe.
+   - Defina a anotação `require-adobe-auth` na configuração de ação do AppBuilder para `false` para permitir que a ação seja chamada sem exigir autenticação do Adobe.
 
    O arquivo `ext.config.yaml` resultante deve ser mais ou menos assim:
 

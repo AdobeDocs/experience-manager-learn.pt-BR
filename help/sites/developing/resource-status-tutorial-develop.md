@@ -1,10 +1,10 @@
 ---
 title: Desenvolvimento de status de recursos no AEM Sites
-description: As APIs de status de recursos do Adobe Experience Manager são uma estrutura conectável para expor mensagens de status no AEM em várias interfaces do usuário da Web do editor.
+description: As APIs de status de recursos do Adobe Experience Manager são uma estrutura conectável para expor mensagens de status nas várias interfaces do usuário da Web do editor do AEM.
 doc-type: Tutorial
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Desenvolvendo status de recursos {#developing-resource-statuses-in-aem-sites}
 
-As APIs de status de recursos do Adobe Experience Manager são uma estrutura conectável para expor mensagens de status no AEM em várias interfaces do usuário da Web do editor.
+As APIs de status de recursos do Adobe Experience Manager são uma estrutura conectável para expor mensagens de status nas várias interfaces do usuário da Web do editor do AEM.
 
 ## Visão geral {#overview}
 
@@ -28,7 +28,7 @@ Exemplos de casos de uso para provedores de status de recurso personalizados:
 * Notificar os autores que uma página foi ativada nos últimos 15 minutos
 * Notificar os autores que uma página foi editada nos últimos 5 minutos e por quem
 
-![Visão geral do status do recurso do editor de AEM](assets/sample-editor-resource-status-screenshot.png)
+![visão geral do status do recurso do editor do AEM](assets/sample-editor-resource-status-screenshot.png)
 
 ## Estrutura do provedor de status do recurso {#resource-status-provider-framework}
 

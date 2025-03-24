@@ -1,7 +1,7 @@
 ---
-title: Criação de fragmentos de conteúdo - Introdução ao AEM headless - GraphQL
-description: Introdução ao Adobe Experience Manager (AEM) e ao GraphQL. Crie e edite um novo Fragmento de conteúdo com base em um Modelo de fragmento de conteúdo. Saiba como criar variações de Fragmentos de conteúdo.
-version: Cloud Service
+title: Criação de fragmentos de conteúdo - Introdução ao AEM Headless - GraphQL
+description: Introdução ao Adobe Experience Manager (AEM) e GraphQL. Crie e edite um novo Fragmento de conteúdo com base em um Modelo de fragmento de conteúdo. Saiba como criar variações de Fragmentos de conteúdo.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6713
 thumbnail: 22451.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 2%
@@ -50,7 +50,7 @@ Os fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
    ![Abrir propriedades da pasta](assets/author-content-fragments/open-folder-properties.png)
 
-1. Toque na guia **Cloud Service**. Na guia Configuração na nuvem, use o localizador de caminhos para selecionar a configuração **Meu projeto**. O valor deve ser `/conf/my-project`.
+1. Toque na guia **Cloud Services**. Na guia Configuração na nuvem, use o localizador de caminhos para selecionar a configuração **Meu projeto**. O valor deve ser `/conf/my-project`.
 
    ![Definir configuração de nuvem](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -78,7 +78,7 @@ Os fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
 
 >[!TIP]
 >
->Para usuários locais do SDK do AEM: utilize a interface do usuário do AEM Assets para criar e criar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação sobre AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para criar e criar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 Em seguida, vários Fragmentos de conteúdo são criados com base nos modelos **Equipe** e **Pessoa**.
 
@@ -136,7 +136,7 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
 ## Editar fragmento do conteúdo da equipe {#edit-team-content-fragment}
 
-1. Abra o Fragmento de Conteúdo da **Alpha da Equipe** usando a Interface do Usuário de Fragmento de Conteúdo.
+1. Abra o Fragmento de Conteúdo do **Team Alpha** usando a interface de Fragmento de Conteúdo.
 1. Preencha os campos para **Título**, **Nome Abreviado** e **Descrição**.
 1. Selecione os Fragmentos de Conteúdo de **João da Silva** e **Alison Smith** para preencher o campo **Membros da Equipe**:
 
@@ -146,13 +146,13 @@ Em seguida, preencha os fragmentos recém-criados com dados.
    >
    >Você também pode criar fragmentos de conteúdo embutidos usando o botão **Novo fragmento de conteúdo**.
 
-1. Toque em **Salvar e fechar** para salvar as alterações no fragmento de Alpha da equipe.
+1. Toque em **Salvar e fechar** para salvar as alterações no fragmento do Team Alpha.
 
-## Fragmentos de conteúdo do Publish
+## Publicar fragmentos de conteúdo
 
 >[!TIP]
 >
->Para usuários locais do SDK do AEM: utilize a interface do usuário do AEM Assets para publicar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação sobre AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para publicar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Após a revisão e verificação, publique o `Content Fragments` criado
 
@@ -160,8 +160,8 @@ Após a revisão e verificação, publique o `Content Fragments` criado
 
 1. No painel à esquerda, expanda **Meu projeto** e toque em **Inglês**.
 
-1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publish**.
-   ![Fragmento do conteúdo do Publish](assets/author-content-fragments/publish-content-fragment.png)
+1. Toque na caixa de seleção ao lado dos fragmentos de conteúdo e toque em **Publicar**.
+   ![Publicar fragmento do conteúdo](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Parabéns. {#congratulations}
 
@@ -169,7 +169,7 @@ Parabéns, você criou vários fragmentos de conteúdo e uma variação.
 
 ## Próximas etapas {#next-steps}
 
-No próximo capítulo, [Explorar APIs do GraphQL](explore-graphql-api.md), você explorará as APIs do AEM do GraphQL usando a ferramenta GrapiQL integrada. Saiba como o AEM gera automaticamente um esquema do GraphQL com base em um modelo de Fragmento de conteúdo. Você experimentará a construção de consultas básicas usando a sintaxe do GraphQL.
+No próximo capítulo, [Explorar APIs do GraphQL](explore-graphql-api.md), você explorará as APIs do GraphQL da AEM usando a ferramenta GrapiQL integrada. Saiba como o AEM gera automaticamente um esquema do GraphQL com base em um modelo de Fragmento de conteúdo. Você experimentará a construção de consultas básicas usando a sintaxe do GraphQL.
 
 ## Documentação relacionada
 

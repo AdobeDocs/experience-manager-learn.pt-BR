@@ -1,7 +1,7 @@
 ---
 title: Configuração do Dispatcher ao migrar para o AEM as a Cloud Service
 description: Saiba mais sobre alterações importantes no AEM Dispatcher para AEM as a Cloud Service, a ferramenta de conversão do Dispatcher e como usar o SDK de ferramentas do Dispatcher.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Dispatcher
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
 duration: 1618
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Dispatcher
 
-Saiba mais sobre o AEM Dispatcher para AEM as a Cloud Service, com foco em alterações notáveis do Dispatcher AEM para o 6, a ferramenta de conversão do Dispatcher, e como usar o SDK de ferramentas do Dispatcher.
+Saiba mais sobre o AEM Dispatcher para AEM as a Cloud Service, com foco em alterações notáveis do Dispatcher para AEM 6, a ferramenta de conversão do Dispatcher e como usar o SDK de ferramentas do Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
@@ -28,13 +28,13 @@ Saiba mais sobre o AEM Dispatcher para AEM as a Cloud Service, com foco em alter
 
 ![Conversor do Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Como parte da refatoração de sua base de código, use o [Conversor de Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refatorar as configurações existentes no local ou do Adobe Managed Services Dispatcher para configurações de Dispatcher compatíveis com o AEM as a Cloud Service.
+Como parte da refatoração de sua base de código, use o [AEM Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) para refatorar configurações existentes no local ou do Adobe Managed Services Dispatcher para configurações do Dispatcher compatíveis com o AEM as a Cloud Service.
 
 ## Atividades principais
 
 + Use a [ferramenta Adobe I/O Dispatcher Converter](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) para migrar uma configuração existente do Dispatcher.
-+ Consulte o módulo do Dispatcher do [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) como prática recomendada.
-+ [Configure as Ferramentas do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=pt-BR) locais para validar o dispatcher, antes de testar em um ambiente de Cloud Service.
++ Consulte o módulo Dispatcher do [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) como prática recomendada.
++ [Configure as Ferramentas locais do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=pt-BR) para validar o dispatcher, antes de testar em um ambiente do Cloud Service.
 
 ## Exercício prático
 
@@ -61,7 +61,7 @@ Além disso, verifique se você concluiu o exercício prático anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Práticas com as ferramentas do Dispatcher</div>
             <p style="margin:1rem 0">
-                Explore o usando as Ferramentas do Dispatcher do SDK do AEM para validar as configurações do Dispatcher AEM, bem como a execução local do Dispatcher usando o Docker.
+                Explore o usando as Ferramentas do Dispatcher do AEM SDK para validar configurações do Dispatcher, bem como executar o AEM Dispatcher localmente usando o Docker.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

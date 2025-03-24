@@ -1,15 +1,15 @@
 ---
 title: Criação de componente de imagem clicável
-description: Criação do componente de imagem clicável no AEM Forms as a Cloud Service
+description: Criação de componente de imagem clicável no AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15968
 exl-id: b635f171-775d-480e-bf7a-c92ab4af0aee
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Crie um arquivo chamado .content.xml no nó svg. Adicione o conteúdo a seguir a
 
 ## Criar svg.html
 
-Crie um arquivo chamado svg.html. Este arquivo renderizará o SVG do mapa dos EUA. Copie o conteúdo de [svg.html](assets/svg.html) no arquivo recém-criado. O que você copiou é o mapa da SVG dos EUA. Salve o arquivo.
+Crie um arquivo chamado svg.html. Este arquivo renderizará o mapa do SVG dos EUA. Copie o conteúdo de [svg.html](assets/svg.html) no arquivo recém-criado. O que você copiou é o mapa do SVG dos EUA. Salve o arquivo.
 
 ## Implantar o projeto
 

@@ -1,7 +1,7 @@
 ---
-title: Primeiro tutorial sobre AEM Headless
-description: Saiba como ser um aplicativo AEM Headless primeiro.
-version: Cloud Service
+title: Primeiro tutorial do AEM Headless
+description: Saiba como ser um primeiro aplicativo headless do AEM.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,30 +12,30 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# Primeiro tutorial sobre AEM Headless
+# Primeiro tutorial do AEM Headless
 
 {{aem-headless-trials-promo}}
 
-Bem-vindo ao tutorial sobre como criar uma experiência da Web usando o React, totalmente equipado com APIs AEM Headless e o GraphQL. Neste tutorial, guiaremos você pelo processo de criação de uma aplicação Web dinâmica e interativa combinando o poder das APIs headless do React, do Adobe Experience Manager (AEM) e do GraphQL.
+Bem-vindo ao tutorial sobre como criar uma experiência da Web usando o React, totalmente habilitado pelas APIs do AEM Headless e pelo GraphQL. Neste tutorial, guiaremos você pelo processo de criação de uma aplicação web dinâmica e interativa combinando o poder do React, das APIs headless do Adobe Experience Manager (AEM) e do GraphQL.
 
 O React é uma biblioteca popular do JavaScript para criação de interfaces de usuário, conhecida por sua simplicidade, reutilização e arquitetura baseada em componentes. O AEM fornece recursos robustos de gerenciamento de conteúdo e expõe APIs headless que permitem aos desenvolvedores acessar conteúdo e dados armazenados no AEM por meio de uma variedade de canais e aplicativos.
 
-Ao utilizar APIs AEM Headless, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
+Ao usar as APIs headless do AEM, você pode recuperar conteúdo, ativos e dados da instância do AEM e usá-los para potencializar o aplicativo React. O GraphQL, uma linguagem de consulta flexível para APIs, fornece uma maneira eficiente e precisa de solicitar dados específicos da sua instância do AEM, permitindo uma integração perfeita entre o React e o AEM.
 
-![Primeiro tutorial sobre AEM Headless](./assets/overview/overview.png)
+![Primeiro tutorial sobre o AEM Headless](./assets/overview/overview.png)
 
 Neste tutorial, guiaremos você pelo processo passo a passo de criação de uma experiência da Web usando as APIs do React e do AEM Headless com o GraphQL. Você aprenderá a configurar seu ambiente de desenvolvimento, estabelecer uma conexão entre o React e o AEM, recuperar conteúdo usando consultas do GraphQL e renderizá-lo dinamicamente em seu aplicativo web.
 
-Abordaremos tópicos como configurar seu projeto no React, estabelecer autenticação com AEM, consultar conteúdo do AEM usando o GraphQL, manipular dados em seus componentes do React e otimizar o desempenho usando armazenamento em cache e paginação.
+Abordaremos tópicos como configurar seu projeto no React, estabelecer autenticação com o AEM, consultar conteúdo do AEM usando o GraphQL, manipular dados em seus componentes do React e otimizar o desempenho usando armazenamento em cache e paginação.
 
-Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar as APIs do React, do AEM Headless e do GraphQL para criar uma experiência da Web poderosa e envolvente. Então, vamos nos aprofundar e começar a criar seu próximo aplicativo web!
+Ao final deste tutorial, você terá uma sólida compreensão de como aproveitar o React, as APIs do AEM Headless e o GraphQL para criar uma experiência da Web poderosa e envolvente. Então, vamos nos aprofundar e começar a criar seu próximo aplicativo web!
 
 ## Pré-requisitos
 

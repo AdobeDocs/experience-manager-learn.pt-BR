@@ -1,7 +1,7 @@
 ---
-title: Uso de conteúdo localizado com AEM Headless
-description: Saiba como usar o GraphQL para consultar AEM em busca de conteúdo localizado.
-version: Cloud Service
+title: Usar conteúdo localizado com o AEM Headless
+description: Saiba como usar o GraphQL para consultar o conteúdo localizado no AEM.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless
 role: Developer
@@ -10,28 +10,28 @@ jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
 duration: 130
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# Conteúdo localizado com AEM Headless
+# Conteúdo localizado com o AEM Headless
 
-O AEM fornece uma [estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo AEM, como Páginas, Fragmentos de experiência, Assets e Forms. Depois que o conteúdo [headless for traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR) e publicado, ele estará pronto para consumo por aplicativos headless.
+O AEM fornece uma [estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo do AEM, como Páginas, Fragmentos de experiência, Assets e Forms. Depois que o conteúdo [headless for traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR) e publicado, ele estará pronto para consumo por aplicativos headless.
 
 ## Estrutura de pastas do Assets{#assets-folder-structure}
 
-Verifique se os Fragmentos de conteúdo localizados no AEM seguem a [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Verifique se os fragmentos de conteúdo localizados no AEM seguem a [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
-![Pastas de ativos AEM localizadas](./assets/localized-content/asset-folders.jpg)
+![Pastas localizadas de ativos da AEM](./assets/localized-content/asset-folders.jpg)
 
 As pastas de localidade devem ser irmãs e o nome da pasta, em vez do título, deve ser um [código ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) válido representando a localidade do conteúdo contido na pasta.
 
 O código de localidade também é o valor usado para filtrar os fragmentos de conteúdo retornados pela consulta do GraphQL.
 
-| Código da localidade | Caminho AEM | Local do conteúdo |
+| Código da localidade | Caminho do AEM | Local do conteúdo |
 |--------------------------------|----------|----------|
 | de | /content/dam/.../**de**/... | Conteúdo em alemão |
 | en | /content/dam/.../**en**/... | Conteúdo em inglês |
@@ -39,7 +39,7 @@ O código de localidade também é o valor usado para filtrar os fragmentos de c
 
 ## Consulta persistente do GraphQL
 
-O AEM fornece um filtro do GraphQL `_locale` que filtra automaticamente o conteúdo por código de localidade. Por exemplo, a consulta de todas as aventuras em inglês no [projeto do Site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definida como:
+O AEM fornece um filtro GraphQL `_locale` que filtra automaticamente o conteúdo por código de localidade. Por exemplo, a consulta de todas as aventuras em inglês no [projeto do Site WKND](https://github.com/adobe/aem-guides-wknd) pode ser feita com uma nova consulta persistente `wknd-shared/adventures-by-locale` definida como:
 
 ```graphql
 query($locale: String!) {
@@ -52,7 +52,7 @@ query($locale: String!) {
 }
 ```
 
-A variável `$locale` usada no filtro `_locale` requer o código de localidade (por exemplo `en`, `en_us` ou `de`) conforme especificado em [convenção de localização da pasta de ativos do AEM](#assets-folder-structure).
+A variável `$locale` usada no filtro `_locale` requer o código de localidade (por exemplo `en`, `en_us` ou `de`) conforme especificado na [convenção de localização baseada em pasta de ativos da AEM](#assets-folder-structure).
 
 ## Exemplo do React
 
@@ -113,7 +113,7 @@ O componente Aventuras consulta o AEM para todas as aventuras por localidade e l
 
 Essa abordagem pode ser estendida para outras consultas em seu aplicativo, garantindo que todas as consultas incluam apenas o conteúdo especificado pela seleção de localidade de um usuário.
 
-A consulta em relação ao AEM é executada no gancho personalizado React [getAdventuresByLocale, descrito com mais detalhes na documentação do Querying AEM GraphQL](./aem-headless-sdk.md).
+A consulta em relação ao AEM é executada no gancho personalizado React [getAdventuresByLocale, descrito com mais detalhes na documentação de Consulta do AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

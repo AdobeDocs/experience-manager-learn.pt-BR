@@ -1,7 +1,7 @@
 ---
 title: Remoção de amostras de um projeto AEM Maven
-description: Saiba como limpar e remover o código de amostra de um projeto AEM gerado pelo Arquétipo de projeto AEM.
-version: Cloud Service
+description: Saiba como limpar e remover o código de amostra de um projeto do AEM gerado pelo Arquétipo de projeto do AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9092
 thumbnail: 337263.jpeg
 exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
 duration: 341
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 3%
@@ -19,18 +19,18 @@ ht-degree: 3%
 
 # Remoção de amostras de um projeto AEM Maven
 
-Saiba como limpar e remover o código de amostra gerado de um projeto AEM gerado pelo Arquétipo de projeto AEM.
+Saiba como limpar e remover o código de amostra gerado de um projeto do AEM gerado pelo Arquétipo de projeto do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Recursos
 
-+ [Arquétipo de projeto AEM Maven](https://github.com/adobe/aem-project-archetype)
++ [Arquétipo de projeto do AEM Maven](https://github.com/adobe/aem-project-archetype)
 
 ## Comandos
 
-Os seguintes comandos podem ser executados para remover os arquivos de amostra gerados do projeto AEM Maven:
+Os seguintes comandos podem ser executados para remover os arquivos de amostra gerados do projeto Maven do AEM:
 
 ```
 rm -rf core/src/main/java/com/adobe/aem/wknd/examples/core/filters \

@@ -1,15 +1,15 @@
 ---
 title: Configuração do ContextHub para Personalization com AEM Sites
-description: O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas. Esta página descreve como adicionar um hub de contexto às páginas do site AEM.
+description: O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas. Esta página descreve como adicionar o hub de contexto às páginas do site do AEM.
 feature: Context Hub
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
 doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 2%
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 # Configurar o ContextHub para o Personalization {#set-up-contexthub}
 
-O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas. Esta página descreve como adicionar um hub de contexto às páginas do site AEM.
+O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas. Esta página descreve como adicionar o hub de contexto às páginas do site do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
->Usamos o site de referência da WKND neste vídeo e ele não faz parte da versão do AEM. Você pode baixar a [última versão aqui](https://github.com/adobe/aem-guides-wknd/releases).
+>Usamos o site de referência da WKND para este vídeo e ele não faz parte da versão do AEM. Você pode baixar a [última versão aqui](https://github.com/adobe/aem-guides-wknd/releases).
 
 Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas de JavaScript do ContextHub. A API do ContextHub JavaScript fornece acesso aos dados de contexto que o ContextHub gerencia.
 

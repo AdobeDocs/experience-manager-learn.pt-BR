@@ -1,7 +1,7 @@
 ---
 title: Verificação de integridade do AMS Dispatcher
 description: O AMS fornece um script cgi-bin de verificação de integridade que os balanceadores de carga da nuvem executarão para ver se o AEM está íntegro e deve permanecer em serviço para o tráfego público.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
 duration: 247
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -24,13 +24,13 @@ ht-degree: 0%
 [&lt;- Anterior: Arquivos somente leitura](./immutable-files.md)
 
 Quando você tem uma linha de base do AMS instalada no dispatcher, ela vem com alguns freebies.  Um desses recursos é um conjunto de scripts de verificação de integridade.
-Esses scripts permitem que o balanceador de carga que lidera a pilha de AEM saiba quais trechos estão íntegros e os mantenha em serviço.
+Esses scripts permitem que o balanceador de carga que lidera a pilha do AEM saiba quais trechos estão íntegros e os mantenha em serviço.
 
 ![GIF animado mostrando o fluxo de tráfego](assets/load-balancer-healthcheck/health-check.gif "Etapas de Verificação de Integridade")
 
 ## Verificação de integridade básica do balanceador de carga
 
-Quando o tráfego do cliente passar pela Internet para alcançar sua instância do AEM, ele passará por um balanceador de carga
+Quando o tráfego do cliente vier pela Internet para alcançar sua instância do AEM, ele passará por um balanceador de carga
 
 ![A imagem mostra o fluxo de tráfego da Internet para o aem por meio de um balanceador de carga](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "fluxo de tráfego do balanceador de carga")
 
@@ -38,11 +38,11 @@ Cada solicitação recebida pelo balanceador de carga arredondará o robin para 
 
 A verificação padrão geralmente é uma verificação de porta para ver se os servidores direcionados no balanceador de carga estão ouvindo quando o tráfego de porta entra em operação (ou seja, TCP 80 e 443)
 
-> `Note:` Enquanto isso funciona, ele não tem medidor real se o AEM está saudável.  Ele só testa se o Dispatcher (Apache Web Server) está em execução.
+> `Note:` Enquanto isso funciona, não há medidor real para o AEM estar saudável.  Ele só testa se o Dispatcher (Apache Web Server) está em execução.
 
 ## Verificação de integridade do AMS
 
-Para evitar o envio de tráfego para um dispatcher saudável que esteja enfrentando uma instância de AEM não saudável, o AMS criou alguns extras que avaliam a integridade do trecho e não apenas do Dispatcher.
+Para evitar o envio de tráfego para um dispatcher saudável que esteja enfrentando uma instância do AEM não íntegra, o AMS criou alguns extras que avaliam a integridade do trecho e não apenas do Dispatcher.
 
 ![A imagem mostra as diferentes partes para que a verificação de integridade funcione](assets/load-balancer-healthcheck/health-check-pieces.png "partes da verificação de integridade")
 
@@ -56,7 +56,7 @@ A verificação de integridade é composta pelas seguintes partes
 
 Abordaremos o que cada peça está configurada para fazer e sua importância
 
-### Pacote AEM
+### Pacote do AEM
 
 Para indicar se o AEM está funcionando, é necessário que ele faça uma compilação básica de páginas e forneça a página.  O Adobe Managed Services criou um pacote básico que contém a página de teste.  A página testa se o repositório está ativo e se os recursos e o modelo de página podem ser renderizados.
 
@@ -68,7 +68,7 @@ Aqui está a página.  Ele mostrará a ID do repositório da instalação
 
 > `Note:` Verificamos se a página não é compatível com cache.  Ele não verificaria o status real se cada vez que retornasse uma página em cache!
 
-Este é o ponto final leve que podemos testar para ver se o AEM está funcionando.
+Este é o terminal mais leve que podemos testar para verificar se o AEM está funcionando.
 
 ### Configuração do balanceador de carga
 
@@ -101,9 +101,9 @@ Listen 81
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Esses arquivos são nomeados como `000_` como o prefixo proposital.  É configurado intencionalmente para usar o mesmo nome de domínio que o site ativo.  A intenção é que esse arquivo seja ativado quando a verificação de integridade detectar que há um problema com um dos backends AEM.  Em seguida, ofereça uma página de erro em vez de apenas um código de resposta HTTP 503 sem página.  Ele roubará o tráfego do arquivo `.vhost` normal porque foi carregado antes desse arquivo `.vhost` enquanto compartilha o mesmo `ServerName` ou `ServerAlias`.  Resultando em páginas destinadas a um domínio específico que vão para o vhost não íntegro em vez do padrão pelo qual o tráfego normal flui.
+Esses arquivos são nomeados como `000_` como o prefixo proposital.  É configurado intencionalmente para usar o mesmo nome de domínio que o site ativo.  A intenção é que esse arquivo seja ativado quando a verificação de integridade detectar que há um problema com um dos back-end do AEM.  Em seguida, ofereça uma página de erro em vez de apenas um código de resposta HTTP 503 sem página.  Ele roubará o tráfego do arquivo `.vhost` normal porque foi carregado antes desse arquivo `.vhost` enquanto compartilha o mesmo `ServerName` ou `ServerAlias`.  Resultando em páginas destinadas a um domínio específico que vão para o vhost não íntegro em vez do padrão pelo qual o tráfego normal flui.
 
-Quando os scripts de verificação de integridade são executados, eles fazem logoff de seus status de integridade atuais.  Uma vez por minuto, há um cronjob em execução no servidor que procura por entradas não íntegras no log.  Se detectar que a instância AEM do autor não está íntegra, ele ativará o link simbólico:
+Quando os scripts de verificação de integridade são executados, eles fazem logoff de seus status de integridade atuais.  Uma vez por minuto, há um cronjob em execução no servidor que procura por entradas não íntegras no log.  Se detectar que a instância do AEM do autor não está íntegra, ele habilitará o link simbólico:
 
 Entrada do log:
 
@@ -185,32 +185,32 @@ Há 5 scripts diferentes que podem ser definidos nas configurações do balancea
 
 #### /bin/checkauthor
 
-Este script, quando usado, verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se a instância do AEM `author` não estiver íntegra
+Quando usado, este script verificará e registrará todas as instâncias que ele está apresentando, mas retornará apenas um erro se a instância do AEM `author` não estiver íntegra
 
-> `Note:` Lembre-se de que, se a instância do AEM publicada estivesse com problemas, o Dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância AEM do autor
+> `Note:` Lembre-se de que, se a instância do AEM de publicação não estivesse íntegra, o Dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância do AEM do autor
 
 #### /bin/checkpublish (padrão)
 
-Este script, quando usado, verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se a instância do AEM `publish` não estiver íntegra
+Quando usado, este script verificará e registrará todas as instâncias que ele está apresentando, mas retornará apenas um erro se a instância do AEM `publish` não estiver íntegra
 
-> `Note:` Lembre-se que se a instância do AEM do autor não estivesse íntegra, o dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância do AEM de publicação
+> `Note:` Lembre-se que se a instância do AEM do autor não estivesse íntegra, o Dispatcher permaneceria em serviço para permitir que o tráfego fluísse para a instância do AEM de publicação
 
 #### /bin/checkEIR
 
-Este script, quando usado, verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se a instância do AEM `author` ou do `publisher` não estiver íntegra
+Quando usado, este script verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se a instância do AEM `author` ou `publisher` não estiver íntegra
 
-> `Note:` Lembre-se de que se a instância do AEM de publicação ou do AEM do autor estivesse com problemas, o dispatcher desativaria o serviço.  Ou seja, se um deles estivesse saudável, também não receberia tráfego
+> `Note:` Lembre-se de que se a instância do AEM de publicação ou a instância do AEM do autor não estivesse íntegra, o dispatcher encerraria o serviço.  Ou seja, se um deles estivesse saudável, também não receberia tráfego
 
 #### /bin/checkboth
 
-Quando usado, este script verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se as instâncias do AEM `author` e do `publisher` não estiverem íntegras
+Quando usado, este script verificará e registrará todas as instâncias que ele está apresentando, mas somente retornará um erro se as instâncias do AEM `author` e `publisher` não estiverem íntegras
 
-> `Note:` Lembre-se de que se a instância do AEM de publicação ou a instância do AEM do autor estivesse com problemas, o Dispatcher não desativaria o serviço.  Isso significa que se um deles não estivesse saudável, ele continuaria a receber tráfego e a dar erros às pessoas que solicitavam recursos.
+> `Note:` Lembre-se de que, se a instância do AEM de publicação ou a instância do AEM de criação não estivesse íntegra, o Dispatcher não deixaria o serviço.  Isso significa que se um deles não estivesse saudável, ele continuaria a receber tráfego e a dar erros às pessoas que solicitavam recursos.
 
 #### /bin/healthy
 
-Esse script, quando usado, verificará e registrará todas as instâncias que está apresentando, mas retornará em bom estado, independentemente de o AEM estar ou não retornando um erro.
+Quando usado, esse script verificará e registrará todas as instâncias nas quais está apresentando, mas retornará íntegro, independentemente de o AEM estar retornando um erro.
 
-> `Note:` Esse script é usado quando a verificação de integridade não está funcionando como desejado e permite uma substituição para manter instâncias AEM no balanceador de carga.
+> `Note:` Este script é usado quando a verificação de integridade não está funcionando como desejado e permite uma substituição para manter instâncias do AEM no balanceador de carga.
 
 [Próximo -> Links simbólicos GIT](./git-symlinks.md)

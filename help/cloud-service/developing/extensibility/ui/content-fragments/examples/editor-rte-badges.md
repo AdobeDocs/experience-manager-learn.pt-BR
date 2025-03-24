@@ -2,7 +2,7 @@
 title: Adicionar selos ao Rich Text Editor (RTE)
 description: Saiba como adicionar selos ao Editor de Rich Text (RTE) no Editor de fragmento de conteúdo do AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Este exemplo mostra como adicionar um widget chamado _Atendimento ao cliente das
 
 Além disso, o **Número de Telefone** tem um estilo diferente (azul), o que é um caso de uso extra da funcionalidade de selos.
 
-Para simplificar as coisas, este exemplo usa a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desenvolver a interface do usuário do widget ou da caixa de diálogo e números de telefone do Serviço de Atendimento ao Cliente da WKND embutidos em código. Para controlar o aspecto de não edição e de estilo diferente do conteúdo, o caractere `#` é usado no atributo `prefix` e `suffix` da definição dos emblemas.
+Para simplificar as coisas, este exemplo usa a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para desenvolver a interface do usuário do widget ou da caixa de diálogo e números de telefone do Serviço de Atendimento ao Cliente WKND embutidos em código. Para controlar o aspecto de não edição e de estilo diferente do conteúdo, o caractere `#` é usado no atributo `prefix` e `suffix` da definição dos emblemas.
 
 ## Pontos de extensão
 
 Este exemplo se estende ao ponto de extensão `rte` para adicionar um selo ao RTE no Editor de Fragmento de Conteúdo.
 
-| IU do AEM estendida | Pontos de extensão |
+| Interface do usuário estendida do AEM | Pontos de extensão |
 | ------------------------ | --------------------- | 
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Selos do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) e [Widgets do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
@@ -55,7 +55,7 @@ Depois que o número de atendimento ao cliente desejado é adicionado a partir d
 
 ### Registro de extensão
 
-`ExtensionRegistration.js`, mapeado para a rota `index.html`, é o ponto de entrada para a extensão AEM e define:
+`ExtensionRegistration.js`, mapeado para a rota `index.html`, é o ponto de entrada para a extensão do AEM e define:
 
 + A definição do selo é definida em `getBadges()` usando os atributos de configuração `id`, `prefix`, `suffix`, `backgroundColor` e `textColor`.
 + Neste exemplo, o caractere `#` é usado para definir os limites deste selo, o que significa que qualquer cadeia de caracteres no RTE rodeada por `#` é tratada como uma instância deste selo.
@@ -137,15 +137,15 @@ No componente principal do React `App.js`, adicione a rota `largeBookingsCustome
 
 ### Criar o componente React `LargeBookingsCustomerService`{#create-widget-react-component}
 
-A interface de widget ou caixa de diálogo é criada usando a estrutura [Espectro de Reação Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html).
+A interface de widget ou caixa de diálogo é criada usando a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html).
 
 O código do componente React ao adicionar os detalhes de atendimento ao cliente, cercar a variável de número de telefone com o caractere `#` de selos registrados para convertê-la em selos, como `#${phoneNumber}#`, tornando-a não editável.
 
 Estes são os principais destaques do código `LargeBookingsCustomerService`:
 
 + A interface é renderizada usando componentes do Espectro React, como [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ A matriz `largeGroupCustomerServiceList` tem mapeamento codificado de nome de representante e número de telefone. Em um cenário real, esses dados podem ser recuperados da ação do Adobe AppBuilder ou de sistemas externos, ou de um gateway de API crescido em casa ou baseado em provedor de nuvem.
-+ O `guestConnection` é inicializado usando o `useEffect` [Gancho de reação](https://react.dev/reference/react/useEffect) e gerenciado como estado de componente. É usado para se comunicar com o host AEM.
++ A matriz `largeGroupCustomerServiceList` tem mapeamento codificado de nome de representante e número de telefone. Em um cenário real, esses dados podem ser recuperados da ação do AppBuilder da Adobe ou de sistemas externos, ou do gateway de API crescido em casa ou baseado em provedor de nuvem.
++ O `guestConnection` é inicializado usando o `useEffect` [Gancho de reação](https://react.dev/reference/react/useEffect) e gerenciado como estado de componente. É usado para se comunicar com o host do AEM.
 + A função `handleCustomerServiceChange` obtém o nome representativo e o número de telefone e atualiza as variáveis de estado do componente.
 + A função `addCustomerServiceDetails` que usa o objeto `guestConnection` fornece instruções de RTE para execução. Neste caso, instrução `insertContent` e trecho de código HTML.
 + Para tornar o **número de telefone não editável** usando medalhas, o caractere especial `#` é adicionado antes e depois da variável `phoneNumber`, como `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.

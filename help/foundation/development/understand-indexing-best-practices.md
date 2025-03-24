@@ -1,7 +1,7 @@
 ---
 title: Práticas recomendadas de indexação no AEM
 description: Saiba mais sobre as práticas recomendadas de indexação no AEM.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
@@ -13,7 +13,7 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
@@ -24,10 +24,10 @@ ht-degree: 0%
 
 Saiba mais sobre as práticas recomendadas de indexação no Adobe Experience Manager (AEM). O Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html) habilita a pesquisa de conteúdo no AEM e os seguintes são pontos-chave:
 
-- Imediatamente, o AEM fornece vários índices para oferecer suporte à funcionalidade de pesquisa e consulta, por exemplo `damAssetLucene`, `cqPageLucene` e muito mais.
+- Pronto para uso, o AEM fornece vários índices para oferecer suporte à funcionalidade de pesquisa e consulta, por exemplo `damAssetLucene`, `cqPageLucene` e muito mais.
 - Todas as definições de índice são armazenadas no repositório no nó `/oak:index`.
 - O AEM as a Cloud Service só oferece suporte a índices Oak Lucene.
-- A configuração do índice deve ser gerenciada na base de código do projeto AEM e implantada usando os pipelines de CI/CD do Cloud Manager.
+- A configuração do índice deve ser gerenciada na base de código do projeto do AEM e implantada usando os pipelines de CI/CD do Cloud Manager.
 - Se vários índices estiverem disponíveis para uma determinada consulta, o **índice com o menor custo estimado será usado**.
 - Se nenhum índice estiver disponível para uma determinada consulta, a árvore de conteúdo será percorrida para encontrar o conteúdo correspondente. No entanto, o limite padrão via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` é percorrer apenas 10.0000 nós.
 - Os resultados de uma consulta são **filtrados por último** para garantir que o usuário atual tenha acesso de leitura. Isso significa que os resultados da consulta podem ser menores que o número de nós indexados.
@@ -51,17 +51,17 @@ Para ter uma funcionalidade de pesquisa eficiente e correta que não afete o des
 
 - No **AEMCS**, ao personalizar o índice OOTB, use a convenção de nomenclatura **\&lt;OOTBIndexName>-\&lt;productVersion>-custom-\&lt;customVersion>**. Por exemplo, `cqPageLucene-custom-1` ou `damAssetLucene-8-custom-1`. Isso ajuda a mesclar a definição de índice personalizado sempre que o índice OOTB é atualizado. Consulte [Alterações em índices prontos para uso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) para obter mais detalhes.
 
-- No **AEM 6.X**, a nomeação _acima não funciona_. No entanto, basta atualizar o índice OOTB com as propriedades necessárias no nó `indexRules`.
+- No **AEM 6.X**, a nomenclatura _acima não funciona_. No entanto, basta atualizar o índice OOTB com as propriedades necessárias no nó `indexRules`.
 
-- Sempre copie a definição de índice OOTB mais recente da instância AEM usando o Gerenciador de pacotes CRX DE (/crx/packmgr/), renomeie-a e adicione personalizações dentro do arquivo XML.
+- Sempre copie a definição de índice OOTB mais recente da instância do AEM usando o Gerenciador de pacotes do CRX DE (/crx/packmgr/), renomeie-a e adicione personalizações dentro do arquivo XML.
 
-- Armazene a definição de índice no projeto AEM em `ui.apps/src/main/content/jcr_root/_oak_index` e implante-a usando os pipelines CI/CD do Cloud Manager. Consulte [Implantando Definições de Índice Personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) para obter mais detalhes.
+- Armazene a definição de índice no projeto do AEM em `ui.apps/src/main/content/jcr_root/_oak_index` e implante-a usando os pipelines de CI/CD do Cloud Manager. Consulte [Implantando Definições de Índice Personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) para obter mais detalhes.
 
 ### Índice totalmente personalizado
 
 A criação de um índice totalmente personalizado deve ser a última opção e somente se a opção acima não funcionar.
 
-- Ao criar um índice totalmente personalizado, use **\&lt;prefix>.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>** convenção de nomenclatura. Por exemplo, `wknd.adventures-1-custom-1`. Isso ajuda a evitar conflitos de nomenclatura. Aqui, `wknd` é o prefixo e `adventures` é o nome de índice personalizado. Essa convenção é aplicável ao AEM 6.X e ao AEMCS e ajuda a preparar a migração futura para o AEMCS.
+- Ao criar um índice totalmente personalizado, use **\&lt;prefix>.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>** convenção de nomenclatura. Por exemplo, `wknd.adventures-1-custom-1`. Isso ajuda a evitar conflitos de nomenclatura. Aqui, `wknd` é o prefixo e `adventures` é o nome de índice personalizado. Essa convenção é aplicável ao AEM 6.X e AEMCS e ajuda a preparar a migração futura para o AEMCS.
 
 - O AEM CS é compatível apenas com os índices Lucene, portanto, para se preparar para a migração futura para o AEM, sempre use os índices Lucene. Consulte [Índices Lucene versus Índices de propriedades](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) para obter mais detalhes.
 
@@ -69,7 +69,7 @@ A criação de um índice totalmente personalizado deve ser a última opção e 
 
 - Além disso, evite adicionar vários tipos de nó, por exemplo `cq:Page` e `cq:Tag`, sob o nó de regras de indexação (`indexRules`). Em vez disso, crie índices separados para cada tipo de nó.
 
-- Como mencionado na seção acima, armazene a definição de índice no projeto AEM em `ui.apps/src/main/content/jcr_root/_oak_index` e implante-a usando os pipelines de CI/CD do Cloud Manager. Consulte [Implantando Definições de Índice Personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) para obter mais detalhes.
+- Como mencionado na seção acima, armazene a definição do índice no projeto do AEM em `ui.apps/src/main/content/jcr_root/_oak_index` e implante-a usando os pipelines de CI/CD do Cloud Manager. Consulte [Implantando Definições de Índice Personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) para obter mais detalhes.
 
 - As diretrizes de definição do índice são:
    - O tipo de nó (`jcr:primaryType`) deve ser `oak:QueryIndexDefinition`
@@ -185,7 +185,7 @@ O AEM usa o [Apache Tika](https://tika.apache.org/) para _extrair conteúdo de m
 
 Para desativar o Apache Tika por tipo MIME, use as seguintes etapas:
 
-- Adicione o nó `tika` do tipo `nt:unstructured` sob a definição de índice OOBT ou personalizado. No exemplo a seguir, o tipo de PDF mime está desabilitado para o índice OOTB `damAssetLucene`.
+- Adicione o nó `tika` do tipo `nt:unstructured` sob a definição de índice OOBT ou personalizado. No exemplo a seguir, o tipo mime do PDF está desabilitado para o índice `damAssetLucene` OOTB.
 
 ```xml
 /oak:index/damAssetLucene
@@ -211,7 +211,7 @@ Para desativar o Apache Tika por tipo MIME, use as seguintes etapas:
 
 - Para atualizar o índice armazenado, defina a propriedade `refresh` como `true` no nó de definição de índice. Consulte [Propriedades de Definição de Índice](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property) para obter mais detalhes.
 
-A imagem a seguir mostra o índice OOTB `damAssetLucene` com o nó `tika` e o arquivo `config.xml` que desabilita o PDF e outros tipos MIME.
+A imagem a seguir mostra o índice `damAssetLucene` OOTB com o nó `tika` e o arquivo `config.xml` que desabilita o PDF e outros tipos MIME.
 
 ![Índice damAssetLucene de OOTB com nó tika](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
 
@@ -253,11 +253,11 @@ A ferramenta [Analisador de Definição de Índice](https://oakutils.appspot.com
 
 ### Ferramenta de desempenho de consulta
 
-A _Ferramenta de Desempenho de Consulta_ do OOTB, disponível no [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e no AEMCS via Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`, ajuda o **a analisar o desempenho da consulta** e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) para definir a consulta ideal.
+A _Ferramenta de Desempenho de Consulta_ do OOTB, disponível em [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS por meio da Developer Console ou do `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`, ajuda a **analisar o desempenho da consulta** e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) para definir a consulta ideal.
 
 ### Dicas e ferramentas para solução de problemas
 
-A maioria dos itens abaixo é aplicável para AEM 6.X e solução de problemas local.
+A maioria dos itens abaixo é aplicável ao AEM 6.X e para fins de solução de problemas local.
 
 - Gerenciador de Índice disponível em `http://host:port/libs/granite/operations/content/diagnosistools/indexManager.html` para obter informações de índice, como tipo, última atualização, tamanho.
 

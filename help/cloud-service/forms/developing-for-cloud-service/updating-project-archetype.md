@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 jira: KT-9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,4 +55,4 @@ Depois de copiar todo o código para o novo projeto, você pode enviar este proj
 
 >[!NOTE]
 >
->Para sincronizar o conteúdo (Forms Adaptável, Modelo de Dados de Formulário etc.) no novo projeto, você terá que criar a estrutura de pastas apropriada no projeto IntelliJ e sincronizar o projeto IntelliJ com a instância AEM usando o comando Obter da ferramenta de repositório.
+>Para sincronizar o conteúdo (Forms Adaptável, Modelo de Dados de Formulário etc.) no novo projeto, você terá que criar a estrutura de pastas apropriada no projeto IntelliJ e sincronizar o projeto IntelliJ com a instância do AEM usando o comando Obter da ferramenta de repositório.

@@ -1,7 +1,7 @@
 ---
-title: Modelagem de conteúdo - Primeiro tutorial sobre o AEM Headless
+title: Modelagem de conteúdo - Primeiro tutorial do AEM Headless
 description: Saiba como aproveitar os fragmentos de conteúdo, criar modelos de fragmento e usar endpoints do GraphQL no AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -21,11 +21,11 @@ ht-degree: 9%
 
 # Modelagem de conteúdo
 
-Bem-vindo ao capítulo de tutorial sobre fragmentos de conteúdo e endpoints do GraphQL no Adobe Experience Manager (AEM). Abordaremos como aproveitar os fragmentos de conteúdo, criar modelos de fragmento e usar endpoints do GraphQL no AEM.
+Bem-vindo ao capítulo de tutorial sobre fragmentos de conteúdo e endpoints do GraphQL no Adobe Experience Manager (AEM). Abordaremos a utilização de fragmentos de conteúdo, a criação de modelos de fragmento e o uso de endpoints do GraphQL no AEM.
 
-Os fragmentos de conteúdo oferecem uma abordagem estruturada para gerenciar conteúdo em vários canais, fornecendo flexibilidade e reutilização. A ativação de fragmentos de conteúdo no AEM permite a criação de conteúdo modular, melhorando a consistência e a adaptabilidade.
+Os fragmentos de conteúdo oferecem uma abordagem estruturada para gerenciar conteúdo em vários canais, fornecendo flexibilidade e reutilização. Ativar fragmentos de conteúdo no AEM permite a criação de conteúdo modular, melhorando a consistência e a adaptabilidade.
 
-Primeiro, guiaremos você pela ativação dos Fragmentos de conteúdo no AEM, abrangendo as configurações e definições necessárias para uma integração perfeita.
+Primeiro, guiaremos você pela ativação dos Fragmentos de conteúdo no AEM, abordando as configurações e definições necessárias para uma integração perfeita.
 
 Em seguida, abordaremos a criação de modelos de fragmento, que definem a estrutura e os atributos. Saiba como projetar modelos alinhados aos seus requisitos de conteúdo e gerenciá-los de maneira eficaz.
 
@@ -33,7 +33,7 @@ Em seguida, demonstraremos a criação de fragmentos de conteúdo dos modelos, f
 
 Além disso, exploraremos a definição de endpoints do AEM GraphQL. O GraphQL recupera dados do AEM com eficiência, e definiremos e configuraremos endpoints para expor os dados desejados. As consultas persistentes otimizarão o desempenho e o armazenamento em cache.
 
-Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades para ativar Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir endpoints de AEM GraphQL e consultas persistentes. Vamos começar!
+Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades para ativar Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir endpoints e consultas persistentes do AEM GraphQL. Vamos começar!
 
 ## Configuração sensível ao contexto
 
@@ -132,7 +132,7 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
 
    Você deve obter uma lista contendo o único fragmento criado [acima](#create-content).
 
-   Para este exercício, crie uma query completa que o aplicativo AEM headless usa. Crie uma query que retorne um único teaser por caminho. No editor de consultas, insira a seguinte consulta:
+   Para este exercício, crie uma consulta completa que o aplicativo headless do AEM usa. Crie uma query que retorne um único teaser por caminho. No editor de consultas, insira a seguinte consulta:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -195,4 +195,4 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
 
 Parabéns! Você configurou o AEM as a Cloud Service com êxito para permitir a criação de fragmentos de conteúdo e endpoints do GraphQL. Você também criou um modelo de fragmento de conteúdo e um fragmento de conteúdo, além de definir um terminal GraphQL e uma consulta persistente. Agora você está pronto para seguir para o próximo capítulo do tutorial, em que aprenderá a criar um aplicativo AEM Headless React que consome os fragmentos de conteúdo e o endpoint do GraphQL criados neste capítulo.
 
-[Próximo capítulo: APIs AEM Headless e React](./2-aem-headless-apis-and-react.md)
+[Próximo capítulo: APIs do AEM Headless e React](./2-aem-headless-apis-and-react.md)

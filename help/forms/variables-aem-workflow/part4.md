@@ -1,14 +1,14 @@
 ---
-title: Variáveis no fluxo de trabalho do AEM[Part4]
+title: Variáveis no fluxo de trabalho do AEM[Parte4]
 description: Uso de variáveis do tipo XML, JSON, ArrayList, Document em um workflow AEM
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
 duration: 102
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Variáveis do tipo ArrayList foram introduzidas no AEM Forms 6.5. Um caso de uso comum para o uso da variável ArrayList é definir rotas personalizadas a serem usadas em AssignTask.
 
-Para usar a variável ArrayList em um workflow para AEM, é necessário criar um Formulário adaptável que gere elementos repetidos nos dados enviados. Uma prática comum é definir um schema que contém um elemento de matriz. Para os fins deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário preenchendo um relatório de despesas. No relatório de despesas, capturamos o nome do gerente do remetente e o nome do gerente. Os nomes do gerenciador são armazenados em uma matriz chamada managerchain. A captura de tela abaixo mostra o formulário do relatório de despesas e os dados do envio do Adaptive Forms.
+Para usar a variável ArrayList em um fluxo de trabalho do AEM, é necessário criar um formulário adaptável que gere elementos repetidos nos dados enviados. Uma prática comum é definir um schema que contém um elemento de matriz. Para os fins deste artigo, criei um esquema JSON simples contendo elementos de matriz. O caso de uso é de um funcionário preenchendo um relatório de despesas. No relatório de despesas, capturamos o nome do gerente do remetente e o nome do gerente. Os nomes do gerenciador são armazenados em uma matriz chamada managerchain. A captura de tela abaixo mostra o formulário do relatório de despesas e os dados do envio do Adaptive Forms.
 
 ![relatório de despesas](assets/expensereport.jpg)
 
@@ -73,7 +73,7 @@ Depois que a variável CustomRoutes ArrayList é inicializada com os valores dos
 Para testar esse fluxo de trabalho em seu sistema, siga as etapas a seguir
 
 * Baixe e salve o arquivo ArrayListVariable.zip no sistema de arquivos
-* [Importe o arquivo zip](assets/arraylistvariable.zip) usando o Gerenciador de Pacotes AEM
+* [Importe o arquivo zip](assets/arraylistvariable.zip) usando o Gerenciador de Pacotes do AEM
 * [Abrir o formulário TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Insira algumas despesas e os nomes dos 2 gerentes
 * Clique no botão enviar

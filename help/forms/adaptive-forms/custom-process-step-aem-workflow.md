@@ -2,14 +2,14 @@
 title: Implementando Etapa de Processo Personalizada
 description: Gravação de anexos do formulário adaptável no sistema de arquivos usando uma etapa de processo personalizada
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 203
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -48,7 +48,7 @@ O método execute dá acesso às 3 variáveis a seguir:
 
 **MetaDataMap**: todos os metadados associados ao fluxo de trabalho. Todos os argumentos de processo passados para a etapa do processo estão disponíveis usando o objeto MetaDataMap.[Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
-Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
+Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do fluxo de trabalho do AEM.
 
 Para realizar esse caso de uso, a seguinte classe Java™ foi escrita
 
@@ -137,9 +137,9 @@ Linha 1 - define as propriedades do componente. A propriedade `process.label` é
 
 Linhas 13-15 - Os argumentos do processo transmitidos para esse componente OSGi são divididos usando o separador &quot;,&quot;. Os valores de attachmentPath e saveToLocation são extraídos da matriz de cadeias de caracteres.
 
-* attachmentPath — é o mesmo local especificado no Formulário adaptável ao configurar a ação de envio do Formulário adaptável para chamar o Fluxo de trabalho AEM. Esse é o nome da pasta na qual você deseja que os anexos sejam salvos no AEM em relação à carga útil do fluxo de trabalho.
+* attachmentPath — é o mesmo local especificado no Formulário adaptável quando você configura a ação de envio do Formulário adaptável para chamar o Fluxo de trabalho do AEM. Esse é um nome da pasta na qual você deseja que os anexos sejam salvos no AEM com relação à carga útil do fluxo de trabalho.
 
-* saveToLocation — é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
+* saveToLocation — este é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
 
 Esses dois valores são passados como argumentos de processo, conforme mostrado na captura de tela abaixo.
 

@@ -1,7 +1,7 @@
 ---
 title: Considerações sobre desenvolvimento
 description: Considere o impacto no processo de desenvolvimento de front-end e back-end depois de habilitar o pipeline de front-end.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
 duration: 79
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Depois de permitir que o pipeline de front-end implante apenas os recursos de fr
 
 ## Abordagem de desenvolvimento ajustada
 
-* Para o desenvolvimento local usando o SDK do AEM, a equipe de desenvolvimento de back-end ainda precisa da geração de clientlib por meio do módulo `ui.frontend`, mas durante a implantação do Cloud Manager no ambiente do AEM as a Cloud Service, é necessário ignorá-la. Isso revela um desafio sobre como isolar as alterações de configuração do projeto descritas no capítulo [Atualizar projeto](update-project.md).
+* Para o desenvolvimento local usando o AEM SDK, a equipe de desenvolvimento de back-end ainda precisa da geração de clientlib por meio do módulo `ui.frontend`, mas durante a implantação do Cloud Manager no ambiente do AEM as a Cloud Service, é necessário ignorá-la. Isso revela um desafio sobre como isolar as alterações de configuração do projeto descritas no capítulo [Atualizar projeto](update-project.md).
 
-Uma __solução__ pode ser ajustar seu modelo de ramificação Git e garantir que as alterações de configuração do projeto AEM nunca retornem à ramificação __de desenvolvimento local__ que os desenvolvedores de back-end do AEM usam.
+Uma __solução__ pode ser ajustar seu modelo de ramificação Git e garantir que as alterações de configuração do projeto do AEM nunca retornem à ramificação __de desenvolvimento local__ que os desenvolvedores de back-end do AEM usam.
 
 
-* Como parte de um aprimoramento contínuo do seu projeto AEM, se você introduzir novos componentes ou atualizar um componente existente que tenha alterações nos módulos `ui.app` e `ui.frontend`, será necessário executar pipelines de pilha completa e de front-end.
+* Como parte de um aprimoramento contínuo do seu projeto do AEM, se você introduzir novos componentes ou atualizar um componente existente que tenha alterações nos módulos `ui.app` e `ui.frontend`, será necessário executar pipelines de pilha completa e de front-end.

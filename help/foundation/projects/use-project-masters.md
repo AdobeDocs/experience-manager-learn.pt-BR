@@ -1,7 +1,7 @@
 ---
-title: Como usar o Project Masters no AEM
-description: Projetos Mestres simplifica muito o gerenciamento de usuários e equipes com projetos AEM.
-version: 6.4, 6.5, Cloud Service
+title: Como usar Projetos mestres no AEM
+description: Projetos mestre simplifica muito o gerenciamento de usuários e equipes com projetos AEM.
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management, Collaboration
 feature: Projects
 level: Intermediate
@@ -11,7 +11,7 @@ thumbnail: 17740.jpg
 doc-type: Feature Video
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Agora, os administradores podem criar um **[!DNL Master Project]** e atribuir us
 * Gerenciar associação de equipe de um local central e quaisquer atualizações para Equipes são herdadas automaticamente pelos Projetos
 * evita a criação de ACLs duplicadas que podem causar problemas de desempenho
 
-[!DNL Master Projects] pode ser criado na pasta [!UICONTROL Master] em [!UICONTROL Projetos AEM]. Depois que um projeto mestre é criado, ele é exibido como uma opção junto com os modelos disponíveis no assistente quando novos projetos são criados.
+[!DNL Master Projects] pode ser criado na pasta [!UICONTROL Mestres] em [!UICONTROL Projetos AEM]. Depois que um projeto mestre é criado, ele é exibido como uma opção junto com os modelos disponíveis no assistente quando novos projetos são criados.
 
-URL [!DNL Project Masters] (instância de autor AEM local): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+URL [!DNL Project Masters] (instância de Autor do AEM local): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Excluir [!DNL Project Masters]
 
@@ -51,6 +51,6 @@ Para mostrar projetos mestres inativos, alterne o botão de filtro &quot;mostrar
 
 ![Modo de exibição técnico de mestres de projeto](assets/use-project-masters/project-masters-architecture.png)
 
-[!DNL Project Masters] trabalha definindo um conjunto de grupos de usuários AEM (proprietários, editor e observador) e permitindo que os projetos derivados referenciem e reutilizem esses grupos de usuários definidos centralmente.
+[!DNL Project Masters] trabalha definindo um conjunto de grupos de usuários do AEM (proprietários, editor e observador) e permitindo que os projetos derivados referenciem e reutilizem esses grupos de usuários definidos centralmente.
 
 Isso reduz o número geral de grupos de usuários necessários no AEM. Antes de [!DNL Project Masters], cada projeto criava três grupos de usuários com as ACEs associadas para aplicar a permissão. Assim, 100 projetos geravam 300 grupos de usuários. Projetos mestre permite que qualquer número de projetos reutilize os mesmos três grupos, supondo que a associação compartilhada esteja alinhada aos requisitos de negócios no projeto.

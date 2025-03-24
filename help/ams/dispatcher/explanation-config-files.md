@@ -1,7 +1,7 @@
 ---
 title: Explicação dos arquivos de configuração do Dispatcher
 description: Entenda arquivos de configuração, convenções de nomenclatura e muito mais.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Na verdade, o Apache Web Server não se importa com a extensão do arquivo ao di
 | NOME DE ARQUIVO`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` arquivos estão incluídos de dentro dos `conf.dispatcher.d/enabled_farms/*_farm.any` arquivos. Esses arquivos especificam quais itens são armazenados em cache e quais não são |
 | NOME DE ARQUIVO`_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_invalidate_allowed.any` arquivos estão incluídos dentro dos `conf.dispatcher.d/enabled_farms/*_farm.any` arquivos. Eles especificam quais endereços IP têm permissão para enviar solicitações de liberação e invalidação. |
 | NOME DE ARQUIVO`_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | `*_clientheaders.any` arquivos estão incluídos dentro dos `conf.dispatcher.d/enabled_farms/*_farm.any` arquivos. Eles especificam quais cabeçalhos do cliente devem ser transmitidos para cada renderizador. |
-| NOME DE ARQUIVO`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` arquivos estão incluídos dentro dos `conf.dispatcher.d/enabled_farms/*_farm.any` arquivos. Eles especificam configurações de IP, porta e tempo limite para cada renderizador. Um renderizador adequado pode ser um servidor do LiveCycle ou qualquer sistema AEM no qual o Dispatcher possa buscar/aplicar proxy nas solicitações do |
+| NOME DE ARQUIVO`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` arquivos estão incluídos dentro dos `conf.dispatcher.d/enabled_farms/*_farm.any` arquivos. Eles especificam configurações de IP, porta e tempo limite para cada renderizador. Um renderizador adequado pode ser um servidor do LiveCycle ou qualquer sistema do AEM no qual o Dispatcher pode buscar/criar um proxy das solicitações do |
 
 ## Problemas evitados
 

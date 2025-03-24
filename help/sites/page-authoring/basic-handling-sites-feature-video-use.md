@@ -1,8 +1,8 @@
 ---
 title: Manuseio básico no AEM Sites
-description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente do autor do AEM. Usa o console Sites como base.
+description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console Sites como base.
 feature: Page Editor, Editable Templates
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4495
 thumbnail: 31784.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
 duration: 269
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 9%
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 {{edge-delivery-services-and-page-editor}}
 
-O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente do autor do AEM. Usa o console Sites como base.
+O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console Sites como base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 * Notificações
 * Propriedades do usuário
 * Seletor de painéis
-* Visualizações do console do site no AEM
+* Exibições do console do site do AEM
    * Exibição de lista
    * Exibição de coluna
    * Exibição de cartão

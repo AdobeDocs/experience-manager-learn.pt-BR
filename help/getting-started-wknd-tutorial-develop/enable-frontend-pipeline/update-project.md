@@ -1,7 +1,7 @@
 ---
-title: Atualizar projeto AEM de pilha completa para usar pipeline de front-end
-description: Saiba como atualizar o projeto de AEM de pilha completa para habilitá-lo para o pipeline de front-end, de modo que ele apenas crie e implante os artefatos de front-end.
-version: Cloud Service
+title: Atualizar projeto de pilha completa do AEM para usar pipeline de front-end
+description: Saiba como atualizar o projeto de pilha completa do AEM para habilitá-lo para o pipeline de front-end, de modo que ele apenas crie e implante os artefatos de front-end.
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,14 +13,14 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-# Atualizar projeto AEM de pilha completa para usar pipeline de front-end {#update-project-enable-frontend-pipeline}
+# Atualizar projeto de pilha completa do AEM para usar pipeline de front-end {#update-project-enable-frontend-pipeline}
 
 Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sites__ para usar o pipeline de front-end para implantar JavaScript e CSS, em vez de exigir uma execução completa de pipeline de pilha completa. Isso dissocia o ciclo de vida de desenvolvimento e implantação dos artefatos de front-end e back-end, permitindo um processo de desenvolvimento mais rápido e iterativo em geral.
 
@@ -28,7 +28,7 @@ Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sit
 
 * Atualizar projeto de pilha completa para usar o pipeline de front-end
 
-## Visão geral das alterações de configuração no projeto AEM de pilha completa
+## Visão geral das alterações de configuração no projeto de pilha completa do AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
@@ -37,7 +37,7 @@ Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sit
 Este é um tutorial de várias partes e presume-se que você tenha revisado o [ Módulo&#39;ui.frontend&#39;](./review-uifrontend-module.md).
 
 
-## Alterações no projeto AEM de pilha completa
+## Alterações no projeto de pilha completa do AEM
 
 Há três alterações de configuração relacionadas ao projeto e uma alteração de estilo a ser implantada para uma execução de teste, ou seja, um total de quatro alterações específicas no projeto WKND para habilitá-lo para o contrato de pipeline de front-end.
 
@@ -158,7 +158,7 @@ Há três alterações de configuração relacionadas ao projeto e uma alteraç�
 
    >[!TIP]
    >
-   >    Consulte o [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) completo no __projeto AEM WKND Sites__.
+   >    Consulte o [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) completo no __projeto do AEM WKND Sites__.
 
 
    * Segundo o `com.adobe.aem.wcm.site.manager.config.SiteConfig` com o valor `themePackageName` igual ao valor de propriedade `package.json` e `name` e `siteTemplatePath` apontando para um valor de caminho de stub `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0`.
@@ -178,7 +178,7 @@ Há três alterações de configuração relacionadas ao projeto e uma alteraç�
    >
    >    Consulte a [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) concluída no __projeto do AEM WKND Sites__.
 
-1. Se um tema ou estilos forem alterados para implantação por meio do pipeline de front-end para uma execução de teste, estamos alterando `text-color` para Adobe vermelho (ou você pode escolher o seu) ao atualizar o `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Se um tema ou estilos forem alterados para implantação por meio do pipeline de front-end para uma execução de teste, estamos alterando `text-color` para vermelho do Adobe (ou você pode escolher o seu) ao atualizar o `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
    ```css
        $black:     #a40606;
@@ -190,7 +190,7 @@ Por fim, envie essas alterações para o repositório Git do Adobe do seu progra
 
 >[!AVAILABILITY]
 >
-> Estas alterações estão disponíveis no GitHub na ramificação [__front-end do pipeline__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) do __projeto AEM de Sites WKND__.
+> Estas alterações estão disponíveis no GitHub na ramificação [__front-end do pipeline__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) do __projeto do AEM WKND Sites__.
 
 
 ## Cuidado - _Botão Habilitar pipeline de front-end_

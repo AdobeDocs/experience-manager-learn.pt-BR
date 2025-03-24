@@ -1,7 +1,7 @@
 ---
 title: Assets 3D
 description: Saiba mais sobre o suporte a ativos 3D no AEM Assets as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: 3D Assets
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ thumbnail: 3420690.jpeg
 doc-type: Feature Video
 exl-id: b08f662c-e2b2-4643-b92b-a957e1d359e8
 duration: 116
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%

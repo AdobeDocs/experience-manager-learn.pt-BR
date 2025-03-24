@@ -1,7 +1,7 @@
 ---
 title: Introdução ao Editor de SPA no AEM e React
 description: Crie o seu primeiro aplicativo de página única (SPA) editável em React no Adobe Experience Manager (AEM) com o WKND SPA. Saiba como criar um SPA usando a estrutura React JS com o editor de SPA do AEM. Este tutorial de várias partes aborda a implementação de um aplicativo em React para uma marca fictícia de estilo de vida, a WKND. O tutorial aborda a criação completa do SPA e a integração com o AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5912
 thumbnail: 5912-spa-react.jpg
 feature: SPA Editor
@@ -12,22 +12,22 @@ doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 30%
 
 ---
 
-# Criar o seu primeiro SPA React no AEM {#overview}
+# Crie seu primeiro SPA do React no AEM {#overview}
 
 {{edge-delivery-services}}
 
-Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no **editor de SPA** no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um aplicativo React para uma marca fictícia de estilo de vida, a WKND. O aplicativo React é desenvolvido e projetado para ser implantado com o editor SPA do AEM, que mapeia componentes do React para componentes do AEM. O SPA completo, implantado no AEM, pode ser criado dinamicamente com as ferramentas tradicionais de edição em linha do AEM.
+Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no **recurso Editor de SPA** do Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um aplicativo React para uma marca fictícia de estilo de vida, a WKND. O aplicativo React é desenvolvido e projetado para ser implantado com o editor de SPA do AEM, que mapeia componentes do React para componentes do AEM. O SPA concluído, implantado no AEM, pode ser criado dinamicamente com as ferramentas tradicionais de edição em linha do AEM.
 
 ![SPA Final Implementado](assets/wknd-spa-implementation.png)
 
-*Implementação WKND do SPA*
+*Implementação WKND SPA*
 
 ## Sobre
 
@@ -37,20 +37,20 @@ O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e tem c
 
 Todo o código do tutorial pode ser encontrado no [GitHub](https://github.com/adobe/aem-guides-wknd-spa).
 
-A [base de código mais recente](https://github.com/adobe/aem-guides-wknd-spa/releases) está disponível como Pacotes AEM baixáveis.
+A [base de código mais recente](https://github.com/adobe/aem-guides-wknd-spa/releases) está disponível como Pacotes do AEM para download.
 
 ## Pré-requisitos
 
 Antes de iniciar este tutorial, você precisará do seguinte:
 
-* Conhecimento básico do HTML, CSS e JavaScript
+* Um conhecimento básico da HTML, CSS e JavaScript
 * Familiaridade básica com [React](https://reactjs.org/tutorial/tutorial.html)
 
 *Embora não seja obrigatório, é benéfico ter uma compreensão básica do [desenvolvimento de componentes tradicionais do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).*
 
 ## Ambiente de desenvolvimento local {#local-dev-environment}
 
-Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Capturas de tela e vídeos são capturados usando o SDK do AEM as a Cloud Service em execução em um ambiente de sistema operacional Mac com o [Visual Studio Code](https://code.visualstudio.com/) como o IDE. Os comandos e o código devem ser independentes do sistema operacional local, a menos que indicado de outra forma.
+Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Capturas de tela e vídeos são capturados usando o AEM as a Cloud Service SDK em execução em um ambiente Mac OS com o [Visual Studio Code](https://code.visualstudio.com/) como IDE. Os comandos e o código devem ser independentes do sistema operacional local, a menos que indicado de outra forma.
 
 ### Software necessário
 
@@ -67,4 +67,4 @@ Um ambiente de desenvolvimento local é necessário para concluir este tutorial.
 
 ## Próximas etapas {#next-steps}
 
-O que você está esperando?! Inicie o tutorial navegando até o capítulo [Criar projeto](create-project.md) e saiba como gerar um projeto habilitado para o Editor de SPA usando o Arquétipo de Projeto AEM.
+O que você está esperando?! Inicie o tutorial navegando até o capítulo [Criar projeto](create-project.md) e saiba como gerar um projeto habilitado para o Editor SPA usando o Arquétipo de projeto do AEM.

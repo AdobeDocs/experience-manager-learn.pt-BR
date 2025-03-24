@@ -1,7 +1,7 @@
 ---
 title: Introdução ao Cloud Acceleration Manager
 description: Saiba como o Cloud Acceleration Manager pode ajudá-lo a migrar de maneira rápida e fácil para o Experience Manager as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Migration
 topic: Migration, Upgrade
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-8658
 thumbnail: 336689.jpeg
 exl-id: 87f1ef0c-dc47-49a7-bb7a-513d4c260dd8
 duration: 529
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%

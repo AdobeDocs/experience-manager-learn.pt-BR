@@ -2,7 +2,7 @@
 title: Gerar token de acesso de servidor para servidor na ação do App Builder
 description: Saiba como gerar um token de acesso usando credenciais OAuth de servidor para servidor para usar em uma ação do App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Gerar token de acesso de servidor para servidor na ação do App Builder
 
-As ações do App Builder podem precisar interagir com APIs Adobe que oferecem suporte a **credenciais de servidor para servidor do OAuth** e estão associadas a projetos do Adobe Developer Console nos quais o aplicativo App Builder está implantado.
+Talvez as ações do App Builder precisem interagir com as APIs do Adobe que oferecem suporte às **credenciais de servidor para servidor do OAuth** e que estão associadas aos projetos do Adobe Developer Console nos quais o aplicativo App Builder está implantado.
 
 Este guia explica como gerar um token de acesso usando as _credenciais de Servidor para Servidor do OAuth_ para usar em uma ação do App Builder.
 
 >[!IMPORTANT]
 >
-> As credenciais da Conta de serviço (JWT) foram substituídas pelas credenciais de servidor para servidor do OAuth. No entanto, ainda há algumas APIs de Adobe que só oferecem suporte às credenciais da Conta de serviço (JWT) e a migração para o servidor OAuth está em andamento. Consulte a documentação da API de Adobe para entender quais credenciais são compatíveis.
+> As credenciais da Conta de serviço (JWT) foram substituídas pelas credenciais de servidor para servidor do OAuth. No entanto, ainda há algumas APIs do Adobe que só oferecem suporte às credenciais da Conta de serviço (JWT) e a migração para o servidor OAuth está em andamento. Consulte a documentação da API do Adobe para entender quais credenciais são compatíveis.
 
 ## Configurações de projeto do Adobe Developer Console
 
-Ao adicionar a API de Adobe desejada ao projeto do Adobe Developer Console, na etapa _Configurar API_, selecione o tipo de autenticação **Servidor para servidor OAuth**.
+Ao adicionar a API do Adobe desejada ao projeto do Adobe Developer Console, na etapa _Configurar API_, selecione o tipo de autenticação **Servidor para servidor OAuth**.
 
 ![Adobe Developer Console - Servidor a Servidor OAuth](./assets/s2s-auth/oauth-server-to-server.png)
 
@@ -87,7 +87,7 @@ As chaves definidas em `inputs` estão disponíveis no objeto `params` fornecido
 
 ## Credenciais de servidor para servidor do OAuth para acessar o token
 
-Na ação do App Builder, as credenciais de Servidor para Servidor do OAuth estão disponíveis no objeto `params`. Usando essas credenciais, o token de acesso pode ser gerado usando [bibliotecas do OAuth 2.0](https://oauth.net/code/). Ou você pode usar a [biblioteca de Busca de Nós](https://www.npmjs.com/package/node-fetch) para fazer uma solicitação POST ao ponto de extremidade do token do Adobe IMS para obter o token de acesso.
+Na ação do App Builder, as credenciais de Servidor para Servidor do OAuth estão disponíveis no objeto `params`. Usando essas credenciais, o token de acesso pode ser gerado usando [bibliotecas do OAuth 2.0](https://oauth.net/code/). Ou você pode usar a [biblioteca de Busca de Nós](https://www.npmjs.com/package/node-fetch) para fazer uma solicitação POST para o ponto de extremidade do token do Adobe IMS para obter o token de acesso.
 
 O exemplo a seguir demonstra como usar a biblioteca `node-fetch` para fazer uma solicitação POST para o ponto de extremidade do token do Adobe IMS para obter o token de acesso.
 

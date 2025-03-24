@@ -1,7 +1,7 @@
 ---
 title: Migração de conteúdo usando o serviço de importação em massa
-description: Saiba como o AEM como um Serviço de importação em massa do Cloud Service pode ser usado para importar ativos de fontes que não sejam do AEM.
-version: Cloud Service
+description: Saiba como o Serviço de importação em massa do AEM as a Cloud Services pode ser usado para importar ativos de fontes externas à AEM.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
 duration: 650
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Serviço de importação em massa
 
-Saiba como o AEM como um Serviço de importação em massa do Cloud Service pode ser usado para importar ativos de fontes que não sejam do AEM.
+Saiba como o Serviço de importação em massa do AEM as a Cloud Services pode ser usado para importar ativos de fontes externas à AEM.
 
 
 

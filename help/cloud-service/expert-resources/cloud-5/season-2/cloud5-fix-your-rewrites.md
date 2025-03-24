@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Corrigir... Substitui
 description: Algumas dicas fáceis para otimizar suas regravações e acelerar seu site
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343600.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 38580af1-e5ad-431a-b41d-634fb136ce64
 duration: 290
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 4%

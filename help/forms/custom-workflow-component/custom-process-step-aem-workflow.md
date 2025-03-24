@@ -2,14 +2,14 @@
 title: Implementação da etapa de processo personalizada com caixa de diálogo
 description: Gravação de anexos de formulário adaptável no sistema de arquivos usando a etapa de processo personalizada
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -32,7 +32,7 @@ A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe aprop
 Abra o projeto maven no IDE eclipse. Expanda a pasta **nomedoprojeto** > **núcleo**. Expanda a pasta src/main/java. Você deve ver um pacote que termina com &quot;core&quot;. Crie a classe Java que implementa WorkflowProcess neste pacote. Será necessário substituir o método de execução. A assinatura do método execute é a seguinte
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
-Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do Fluxo de trabalho do AEM.
+Neste tutorial, vamos gravar os anexos adicionados ao Formulário adaptável no sistema de arquivos como parte do fluxo de trabalho do AEM.
 
 Para realizar esse caso de uso, a seguinte classe java foi escrita
 
@@ -118,9 +118,9 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentsPath — esse é o mesmo local especificado no Formulário adaptável ao configurar a ação de envio do Formulário adaptável para chamar o Fluxo de trabalho do AEM. Esse é o nome da pasta na qual você deseja que os anexos sejam salvos no AEM em relação à carga útil do fluxo de trabalho.
+* attachmentsPath — esse é o mesmo local especificado no Formulário adaptável ao configurar a ação de envio do Formulário adaptável para chamar o Fluxo de trabalho do AEM. Esse é um nome da pasta na qual você deseja que os anexos sejam salvos no AEM com relação à carga útil do fluxo de trabalho.
 
-* saveToLocation — é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
+* saveToLocation — este é o local em que você deseja que os anexos sejam salvos no sistema de arquivos do servidor AEM.
 
 Esses dois valores são passados como argumentos de processo usando a caixa de diálogo do componente de fluxo de trabalho
 

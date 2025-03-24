@@ -5,12 +5,12 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14675
 duration: 98
 exl-id: 1cd385b3-7e00-4f75-b728-1b47f7a8fb2a
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Implementar a interface do DataProvider
 
-Crie um projeto AEM usando o arquétipo mais recente e adicione o seguinte código ao projeto.
+Crie um projeto do AEM usando o arquétipo mais recente e adicione o seguinte código ao projeto.
 Normalmente, os dados são obtidos de uma fonte externa de dados, como um banco de dados, um armazenamento do Azure, um bucket do S3 ou qualquer outra fonte. Será necessário gravar o código para buscar os dados.
 
 ```java

@@ -1,7 +1,7 @@
 ---
 title: Layout básico do arquivo do AMS Dispatcher
 description: Entenda o layout básico de arquivo do Apache e Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -86,7 +86,7 @@ O AMS complementa a instalação básica do Apache Web Server.
 Raízes padrão do documento AMS:
 - Autor:
    - `/mnt/var/www/author/`
-- Publish:
+- Publicar:
    - `/mnt/var/www/html/`
 - Manutenção de captura e verificação de integridade
    - `/mnt/var/www/default/`
@@ -145,19 +145,19 @@ Há partes adicionais que são subseções das configurações de arquivo do far
 
 #### Diretório de cache
 
-Esse diretório contém todos os arquivos `_cache.any`, `_invalidate.any` criados por você, que contêm suas regras sobre como você deseja que o módulo lide com os elementos em cache provenientes do AEM, bem como a sintaxe de regras de invalidação.  Mais detalhes sobre esta seção estão aqui [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Esse diretório contém todos os arquivos `_cache.any`, `_invalidate.any` criados por você, que contêm suas regras sobre como você deseja que o módulo manipule elementos de cache provenientes do AEM, bem como a sintaxe de regras de invalidação.  Mais detalhes sobre esta seção estão aqui [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
 #### Diretório de Cabeçalhos do Cliente
 
-Esse diretório pode conter todos os `_clientheaders.any` arquivos criados por você que contenham listas de Cabeçalhos do cliente que você deseja passar para o AEM quando entrar uma solicitação.  Mais detalhes sobre esta seção estão [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
+Esse diretório pode conter todos os arquivos `_clientheaders.any` criados por você que contenham listas de Cabeçalhos do cliente que você deseja passar para a AEM quando entrar uma solicitação.  Mais detalhes sobre esta seção estão [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### Diretório de filtros
 
-Este diretório pode conter todos os `_filters.any` arquivos que você criar e que contenham todas as suas regras de filtro para bloquear ou permitir o tráfego pelo Dispatcher para alcançar AEM
+Este diretório pode conter todos os `_filters.any` arquivos criados por você, que contêm todas as regras de filtro para bloquear ou permitir o tráfego pela Dispatcher para alcançar o AEM
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 

@@ -3,7 +3,7 @@ title: Recurso de preenchimento automático no AEM Forms
 description: Permite que os usuários localizem e selecionem rapidamente de uma lista pré-preenchida de valores à medida que digitam, aproveitando a pesquisa e a filtragem.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11374
 last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
 duration: 47
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Implementação do Preenchimento automático
 
-Implemente o recurso de preenchimento automático em formulários AEM usando o recurso de preenchimento automático do jquery.
+Implemente o recurso de preenchimento automático nos formulários do AEM usando o recurso de preenchimento automático do jquery.
 A amostra incluída neste artigo usa uma variedade de fontes de dados (matriz estática, matriz dinâmica preenchida a partir de uma resposta da API REST) para preencher as sugestões conforme o usuário começa a digitar no campo de texto.
 
 O código usado para executar o recurso de preenchimento automático está associado ao evento de inicialização do campo.
@@ -83,4 +83,4 @@ O [formulário de exemplo pode ser baixado](assets/auto-complete-form.zip) daqui
 
 >[!NOTE]
 >
-> Para que o preenchimento automático funcione, verifique se o formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Esta biblioteca cliente vem com AEM.
+> Para que o preenchimento automático funcione, verifique se o formulário usa a seguinte biblioteca do cliente **cq.jquery.ui**. Esta biblioteca cliente vem com o AEM.

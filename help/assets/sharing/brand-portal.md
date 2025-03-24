@@ -1,8 +1,8 @@
 ---
 title: Utilização do Brand Portal
-description: Demonstrações em vídeo do autor do AEM e integração com o AEM Assets Brand Portal.
+description: Apresentações em vídeo do autor do AEM e integração com o AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,30 +10,30 @@ last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
 
 # Utilização do Brand Portal com o AEM Assets{#using-brand-portal-with-aem-assets}
 
-Guias em vídeo da integração do Adobe Experience Manager (AEM) com o Assets Brand Portal.
+Guias em vídeo da integração do Assets Brand Portal com o Adobe Experience Manager (AEM).
 
 ## Recursos e aprimoramentos do Brand Portal setembro de 2019
 
-Em setembro de 2019, a Brand Portal apresenta com mais destaque a Origem de ativos, que aumenta a velocidade do conteúdo e permite a troca fácil e rápida de ativos entre autores de Experience Manager e criadores e colaboradores de terceiros.
+Em setembro de 2019, a Brand Portal apresenta com mais destaque a Origem de ativos, que aumenta a velocidade do conteúdo e permite a troca fácil e rápida de ativos entre autores do Experience Manager e criadores e colaboradores de terceiros.
 
 ### Origem de ativos do Brand Portal{#asset-sourcing}
 
-A origem de ativos da Brand Portal é usada para coletar ativos de agências e equipes de terceiros, sincronizando-os continuamente com o Autor do Experience Manager para análise e uso.
+A origem de ativos da Brand Portal é usada para coletar ativos de agências e equipes de terceiros, sincronizando-os continuamente com o Experience Manager Author para análise e uso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 O *Experience Manager Author 6.5 SP2 (6.5.2) ou superior é necessário para usar a Origem de Ativos*
 
-Revise [Habilitar autor de Experience Manager para origem de ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) para obter instruções sobre como configurar e configurar a origem de ativos no autor de Experience Manager.
+Revise [Habilitar o Experience Manager Author para a Origem de Ativos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) para obter instruções sobre como configurar a Origem de Ativos no Experience Manager Author.
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2019{#brand-portal-features-and-enhancements-644}
 
@@ -84,9 +84,9 @@ Observe que a miniatura padrão das pastas virtuais é a imagem em miniatura da 
 
 ### Suporte a representações de vídeo do Dynamic Media
 
-Os usuários cuja instância de autor do AEM está no modo híbrido do Dynamic Media podem visualizar e baixar as representações do Dynamic Media, além dos arquivos de vídeo originais.
+Os usuários cuja instância do Autor do AEM está no modo híbrido do Dynamic Media podem visualizar e baixar as representações do Dynamic Media, além dos arquivos de vídeo originais.
 
-Para permitir a pré-visualização e o download de representações de mídia dinâmica em contas de locatário específicas, os administradores precisam especificar a Configuração do Dynamic Media (URL do serviço de vídeo (URL do gateway DM) e a ID de registro para buscar o vídeo dinâmico) na Configuração de vídeo do painel de ferramentas administrativas.
+Para permitir a pré-visualização e o download de representações de mídia dinâmica em contas de locatário específicas, os administradores precisam especificar a Configuração de mídia dinâmica (URL do serviço de vídeo (URL do gateway DM) e a ID de registro para buscar o vídeo dinâmico) na Configuração de vídeo do painel de ferramentas administrativas.
 
 Os vídeos do Dynamic Media podem ser visualizados em:
 
@@ -101,20 +101,20 @@ Os códigos de vídeo do Dynamic Media podem ser baixados de:
 
 ### Publicação agendada no Brand Portal
 
-O fluxo de trabalho de publicação do Assets (e pastas) da instância do Autor [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) no Brand Portal pode ser agendado para data e hora posteriores.
+O fluxo de trabalho de publicação do Assets (e pastas) da instância do Autor do [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) no Brand Portal pode ser agendado para data/hora posterior.
 
 Da mesma forma, os ativos publicados podem ser removidos do portal em uma data (hora) posterior, agendando o fluxo de trabalho Cancelar publicação da Brand Portal.
 
 ### Alias de locatário configurável no URL
 
-As organizações podem personalizar o URL do portal tendo um prefixo alternativo no URL. Para obter um alias para o nome do locatário no URL do portal existente, as organizações precisam entrar em contato com o suporte ao Adobe.
+As organizações podem personalizar o URL do portal tendo um prefixo alternativo no URL. Para obter um alias para o nome do locatário no URL do portal existente, as organizações precisam entrar em contato com o suporte da Adobe.
 
 Observe que somente o prefixo do URL do Brand Portal pode ser personalizado, e não o URL inteiro.
 Por exemplo, uma organização com o domínio existente `wknd.brand-portal.adobe.com` pode obter a criação de `wkndinc.brand-portal.adobe.com` mediante solicitação.
 
-No entanto, a instância do Autor AEM pode ser [configurada](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da ID do locatário e não com a URL do alias do locatário (alternativo).
+No entanto, a instância do Autor do AEM pode ser [configurada](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da ID do locatário e não com a URL do alias do locatário (alternativo).
 
-**Caso de uso**: as organizações podem atender às suas necessidades de marca, obtendo a URL do portal personalizada, em vez de aderir à URL fornecida pelo Adobe.
+**Caso de uso**: as organizações podem atender às suas necessidades de marca, obtendo a URL do portal personalizada, em vez de aderir à URL fornecida pela Adobe.
 
 ## Recursos e aprimoramentos do Brand Portal dezembro de 2018{#brand-portal-features-and-enhancements-642}
 
@@ -122,7 +122,7 @@ No entanto, a instância do Autor AEM pode ser [configurada](https://helpx.adobe
 
 ### Acesso de convidado
 
-AEM Brand portal permite o acesso de visitantes ao portal. Um usuário convidado não exige credenciais para entrar no portal e pode acessar e baixar todas as pastas e coleções públicas. Os usuários convidados podem adicionar ativos à caixa de luz (coleção privada) e baixar os mesmos. Eles também podem exibir a pesquisa inteligente de tags e pesquisar predicados definidos pelos administradores. A sessão de convidado não permite que os usuários criem coleções e pesquisas salvas ou as compartilhem ainda mais, acessem configurações de pasta e coleções e compartilhem ativos como links.
+O AEM Brand Portal permite o acesso de visitantes ao portal. Um usuário convidado não exige credenciais para entrar no portal e pode acessar e baixar todas as pastas e coleções públicas. Os usuários convidados podem adicionar ativos à caixa de luz (coleção privada) e baixar os mesmos. Eles também podem exibir a pesquisa inteligente de tags e pesquisar predicados definidos pelos administradores. A sessão de convidado não permite que os usuários criem coleções e pesquisas salvas ou as compartilhem ainda mais, acessem configurações de pasta e coleções e compartilhem ativos como links.
 
 ### Download acelerado
 
@@ -157,9 +157,9 @@ Seis novas configurações são adicionadas para que os administradores ativem/d
 * *Caminho de hierarquia de pastas em exibições de cartão e lista* — permite que os usuários saibam o local das pastas armazenadas em uma instância do Brand Portal. Ajuda os usuários a diferenciar pastas com o mesmo nome em diferentes hierarquias de pastas.
 * *Opção de visão geral* — fornece metadados de usuários não administradores sobre o ativo/pasta ao selecionar o ativo/pasta e depois selecionar a opção de visão geral na barra de ferramentas. Atualmente, exibe título, data de criação e caminho
 
-### Adobe I/O hospeda a interface do usuário para configurar integrações oAuth
+### O Adobe I/O hospeda a interface do usuário para configurar integrações oAuth
 
-O Brand Portal usa a interface Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+O Brand Portal usa a interface do Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2018{#brand-portal-features-and-enhancements-632}
 
@@ -169,7 +169,7 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 
 ### Melhorias na navegação
 
-* Atualização da interface do usuário que se alinha ao AEM e usa a interface do usuário Coral3.
+* Atualização da interface do usuário que se alinha à AEM e usa a interface do usuário Coral3.
 * Acesso rápido e fácil a ferramentas administrativas através do novo logotipo do Adobe.
 * Navegação do produto por uma sobreposição
 * Navegação rápida para pastas principais de uma pasta secundária.
@@ -184,7 +184,7 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 * Sugestões automáticas de palavras-chave para facilitar a pesquisa
 * Melhore seu Omnisearch com filtros adicionais. Opção para salvar o resultado da pesquisa em uma coleção inteligente para que você visite novamente sua pesquisa mais tarde.
 * Compatível com pesquisa de ativos com tags inteligentes
-* AEM Os ativos com tags inteligentes podem ser compartilhados de AEM para Brand Portal e usar tags inteligentes para pesquisa de ativos no Brand Portal.
+* Os ativos com tags inteligentes da AEM podem ser compartilhados da AEM para a Brand Portal e usam tags inteligentes para pesquisa de ativos na Brand Portal.
 
 ### Melhorias no compartilhamento de arquivos
 

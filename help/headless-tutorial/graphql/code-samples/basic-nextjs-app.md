@@ -1,7 +1,7 @@
 ---
 title: Aplicativo básico Next.js
 description: Um aplicativo Next.js básico que exibe uma lista de aventuras WKND e seus detalhes
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -14,7 +14,7 @@ hide: true
 hidefromtoc: true
 exl-id: 2d4396dc-2346-4561-b040-eba0ab62a96f
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Este aplicativo [Next.js](https://nextjs.org/) demonstra como consultar conteúd
 
 Este código:
 
-+ Conecta-se a um serviço AEM Publish e não requer autenticação
++ Conecta-se a um serviço de Publicação do AEM e não requer autenticação
 + Usa as consultas persistentes do WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
 Para obter uma análise mais detalhada de como este aplicativo Next.js é criado, consulte a [documentação de exemplo do aplicativo Next.js](../example-apps/next-js.md).

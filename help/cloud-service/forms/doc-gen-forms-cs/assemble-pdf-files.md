@@ -1,16 +1,16 @@
 ---
-title: Montar arquivos PDF
+title: Montagem de arquivos do PDF
 description: Use a operação invokeDDX para manipular arquivos pdf.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9958
 thumbnail: 332439.jpg
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 # Manipular arquivos PDF usando o ponto de extremidade invocar DDX
 
 
-A próxima etapa é fazer uma chamada de POST HTTP para o endpoint com os parâmetros necessários. O modelo e os arquivos de dados são fornecidos como arquivos de recurso. As propriedades do pdf gerado são especificadas por meio do parâmetro da opção na solicitação. A propriedade embedFonts é usada para incorporar fontes personalizadas no pdf gerado. Siga [esta documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implantar fontes personalizadas na instância da nuvem do Forms. As propriedades são especificadas no arquivo de recurso options.json. Como o ponto de extremidade tem autenticação baseada em token, passamos o token de acesso no cabeçalho da solicitação.
+A próxima etapa é fazer uma chamada HTTP POST para o endpoint com os parâmetros necessários. O modelo e os arquivos de dados são fornecidos como arquivos de recurso. As propriedades do pdf gerado são especificadas por meio do parâmetro da opção na solicitação. A propriedade embedFonts é usada para incorporar fontes personalizadas no pdf gerado. Siga [esta documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) para implantar fontes personalizadas na instância da nuvem do Forms. As propriedades são especificadas no arquivo de recurso options.json. Como o ponto de extremidade tem autenticação baseada em token, passamos o token de acesso no cabeçalho da solicitação.
 
 O código a seguir foi usado para gerar o pdf ao mesclar dados com o modelo
 

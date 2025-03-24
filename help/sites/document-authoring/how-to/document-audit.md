@@ -1,7 +1,7 @@
 ---
-title: Auditoria de documentos com criação de documentos AEM
-description: Saiba como auditar documentos com criação de documentos AEM
-version: 6.5, Cloud Service
+title: Auditoria de documentos com a criação de documentos do AEM
+description: Saiba como auditar documentos com a criação de documentos do AEM
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ jira: KT-14489
 thumbnail: 3425722.jpeg
 duration: 77
 exl-id: 85e3303d-f59a-4b71-bfb7-09470b9ab3c6
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 0%
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Saiba como auditar documentos criados usando a criação de documentos AEM.
+Saiba como auditar documentos criados usando a criação de documentos do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)

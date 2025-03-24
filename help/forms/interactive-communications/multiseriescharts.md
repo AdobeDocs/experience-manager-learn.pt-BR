@@ -3,14 +3,14 @@ title: Gráficos de várias séries no AEM Forms
 description: Crie o modelo de dados de formulário apropriado para criar gráficos de várias séries em documentos impressos e de canal da Web.
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 430
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Para criar gráficos de várias séries no AEM Forms, você precisa criar um Mod
 
 Para testar isso em seu sistema, siga as etapas a seguir
 
-* [Baixe e importe o MutualFundFactSheet.zip usando o Gerenciador de pacotes AEM.](assets/mutualfundfactsheet.zip)
+* [Baixe e importe o MutualFundFactSheet.zip usando o Gerenciador de pacotes do AEM.](assets/mutualfundfactsheet.zip)
 * [Baixe o SeriesChartSampleData.json no disco rígido.](assets/serieschartsampledata.json) Estes são os dados de exemplo usados para preencher o gráfico.
 * [Navegue até Forms e Documentos.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selecione cuidadosamente o modelo de comunicações interativas &quot;MutualFundGrowthFactSheet&quot;.

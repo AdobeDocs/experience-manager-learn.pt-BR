@@ -2,7 +2,7 @@
 title: Extensibilidade da interface do AEM
 description: Saiba mais sobre a extensibilidade da interface do AEM usando o App Builder para criar extensões.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ recommendations: noDisplay
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
 duration: 50
-source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 14%
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 # Extensibilidade da interface do AEM {#aem-ui-extensibility}
 
-O Adobe Experience Manager (AEM) oferece uma interface de usuário (UI) avançada para criar experiências digitais. Para personalizar e estender a interface do usuário, o Adobe apresentou o App Builder. Essa ferramenta permite que os desenvolvedores aprimorem a experiência do usuário sem codificação complexa usando o JavaScript e o React.
+O Adobe Experience Manager (AEM) oferece uma interface de usuário (UI) avançada para criar experiências digitais. Para personalizar e estender a interface do usuário, a Adobe apresentou o App Builder. Essa ferramenta permite que os desenvolvedores aprimorem a experiência do usuário sem codificação complexa usando o JavaScript e o React.
 
 O App Builder fornece uma camada de implementação para criar extensões vinculadas a pontos de extensão bem definidos no AEM. O App Builder integra-se perfeitamente ao AEM, permitindo pré-visualização e testes em tempo real. A implantação de alterações no AEM é rápida e simplificada. Ao usar o App Builder, os desenvolvedores economizam tempo e esforço, permitindo a prototipagem rápida e a colaboração com as partes interessadas.
 
@@ -28,7 +28,7 @@ O App Builder fornece uma camada de implementação para criar extensões vincul
 >title="Introdução ao Adobe Developer App Builder e AEM Headless"
 >abstract="Saiba como o AEM App Builder permite que os desenvolvedores personalizem e estendam rapidamente as interfaces do AEM com o JavaScript e o React, oferecendo suporte a uma integração perfeita e uma implantação rápida."
 
-## Desenvolver uma extensão da interface do usuário para AEM
+## Desenvolver uma extensão da interface do usuário do AEM
 
 As várias interfaces do AEM têm pontos de extensão diferentes, no entanto, os conceitos básicos são os mesmos.
 
@@ -50,4 +50,4 @@ Os vídeos e apresentações fornecidos vinculados abaixo mostram o uso de uma e
 
 ## Documentação do Adobe Developer
 
-O Adobe Developer contém detalhes do desenvolvedor sobre a extensibilidade da interface do AEM. Revise o [conteúdo do Adobe Developer para obter mais detalhes técnicos](https://developer.adobe.com/uix/docs/).
+O Adobe Developer contém detalhes do desenvolvedor sobre a extensibilidade da interface do usuário do AEM. Revise o [conteúdo do Adobe Developer para obter mais detalhes técnicos](https://developer.adobe.com/uix/docs/).

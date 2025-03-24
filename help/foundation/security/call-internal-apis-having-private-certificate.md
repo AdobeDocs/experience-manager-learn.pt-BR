@@ -2,7 +2,7 @@
 title: Chamar APIs internas com certificados privados
 description: Saiba como chamar APIs internas com certificados privados ou autoassinados.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect, Developer
 level: Experienced
@@ -12,7 +12,7 @@ doc-type: Article
 last-substantial-update: 2023-08-25T00:00:00Z
 exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
 duration: 332
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -33,7 +33,7 @@ PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
 
 Normalmente, esse problema ocorre quando o certificado SSL da **API não é emitido por uma autoridade de certificação reconhecida (CA)** e o aplicativo Java™ não pode validar o certificado SSL/TLS.
 
-Saiba como chamar com êxito APIs com certificados privados ou autoassinados usando o [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) e o **AEM TrustStore global**.
+Saiba como chamar com êxito APIs com certificados privados ou autoassinados usando o [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) e o **TrustStore global da AEM**.
 
 
 ## Código de invocação de API de protótipo usando HttpClient
@@ -60,9 +60,9 @@ CloseableHttpResponse closeableHttpResponse = httpClient.execute(new HttpGet(API
 O código usa as classes de biblioteca [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) do [Apache HttpComponent](https://hc.apache.org/) e seus métodos.
 
 
-## HttpClient e carregar material AEM TrustStore
+## HttpClient e carregar material do AEM TrustStore
 
-Para chamar um ponto de extremidade de API que tenha _certificado privado ou autoassinado_, o `SSLContextBuilder` do [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) deve ser carregado com TrustStore do AEM e usado para facilitar a conexão.
+Para chamar um ponto de extremidade de API que tenha _certificado privado ou autoassinado_, o `SSLContextBuilder` do [HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) deve ser carregado com o TrustStore da AEM e usado para facilitar a conexão.
 
 Siga as etapas abaixo:
 
@@ -73,7 +73,7 @@ Siga as etapas abaixo:
 
 1. Para importar um certificado privado, clique no botão **Selecionar Arquivo de Certificado** e selecione o arquivo de certificado desejado com a extensão `.cer`. Importe clicando no botão **Enviar**.
 
-1. Atualize o código Java™ conforme abaixo. Observe que para usar `@Reference` para obter AEM `KeyStoreService`, o código de chamada deve ser um componente/serviço OSGi ou um Modelo Sling (e `@OsgiService` é usado lá).
+1. Atualize o código Java™ conforme abaixo. Observe que para usar `@Reference` para obter o `KeyStoreService` do AEM, o código de chamada deve ser um componente/serviço OSGi ou um Modelo Sling (e `@OsgiService` é usado lá).
 
    ```java
    ...
@@ -137,12 +137,12 @@ Siga as etapas abaixo:
    * Obtenha o AEM TrustStore global usando `KeyStoreService` e `ResourceResolver`, o método `getAEMTrustStore(...)` faz isso.
    * Crie um objeto de `SSLContextBuilder`, consulte [Detalhes da API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html) do Java™.
    * Carregue o AEM TrustStore global em `SSLContextBuilder` usando o método `loadTrustMaterial(KeyStore truststore,TrustStrategy trustStrategy)`.
-   * Passe `null` para `TrustStrategy` no método acima. Isso garante que somente certificados confiáveis de AEM sejam bem-sucedidos durante a execução da API.
+   * Passe `null` para `TrustStrategy` no método acima. Isso garante que somente os certificados confiáveis do AEM tenham êxito durante a execução da API.
 
 
 >[!CAUTION]
 >
->As chamadas de API com certificados válidos emitidos pela CA falham quando executadas usando a abordagem mencionada. Somente chamadas de API com certificados confiáveis AEM podem ter êxito ao seguir esse método.
+>As chamadas de API com certificados válidos emitidos pela CA falham quando executadas usando a abordagem mencionada. Somente chamadas de API com certificados confiáveis do AEM podem ter êxito ao seguir esse método.
 >
 >Use a [abordagem padrão](#prototypical-api-invocation-code-using-httpclient) para executar chamadas de API de certificados válidos emitidos por CA, o que significa que somente as APIs associadas a certificados privados devem ser executadas usando o método mencionado anteriormente.
 
@@ -150,7 +150,7 @@ Siga as etapas abaixo:
 
 Uma abordagem convencional para chamar efetivamente APIs internas com certificados privados envolve a modificação da JVM Keystore. Isso é feito importando os certificados privados usando o comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
 
-No entanto, este método não está alinhado com as práticas recomendadas de segurança e o AEM oferece uma opção superior por meio da utilização do **Armazenamento Global de Confiança** e do [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+No entanto, este método não está alinhado com as práticas recomendadas de segurança e a AEM oferece uma opção superior por meio da utilização do **Armazenamento Global de Confiança** e do [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
 
 
 ## Pacote de soluções

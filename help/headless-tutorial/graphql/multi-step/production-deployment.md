@@ -1,7 +1,7 @@
 ---
-title: Implantação de produção usando um serviço AEM Publish - Introdução ao AEM Headless - GraphQL
-description: Saiba mais sobre os serviços AEM Author e Publish e o padrão de implantação recomendado para aplicativos headless. Neste tutorial, aprenda a usar variáveis de ambiente para alterar dinamicamente um endpoint do GraphQL com base no ambiente de destino. Saiba como configurar corretamente o AEM para CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
-version: Cloud Service
+title: Implantação de produção usando um serviço de publicação do AEM - Introdução ao AEM Headless - GraphQL
+description: Saiba mais sobre os serviços de Autor e Publicação do AEM e o padrão de implantação recomendado para aplicativos headless. Neste tutorial, aprenda a usar variáveis de ambiente para alterar dinamicamente um endpoint do GraphQL com base no ambiente de destino. Saiba como configurar corretamente o AEM para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -11,16 +11,16 @@ jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
 duration: 486
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 5%
 
 ---
 
-# Implantação de produção com um serviço AEM Publish
+# Implantação de produção com um serviço de publicação do AEM
 
-Neste tutorial, você configurará um ambiente local para simular o conteúdo que está sendo distribuído de uma instância do Author para uma instância do Publish. Você também gerará um build de produção de um aplicativo React configurado para consumir conteúdo do ambiente AEM Publish usando as APIs do GraphQL. Ao longo do caminho, você aprenderá a usar variáveis de ambiente de maneira eficaz e a atualizar as configurações do CORS do AEM.
+Neste tutorial, você configurará um ambiente local para simular o conteúdo que está sendo distribuído de uma instância de Autor para uma instância de Publicação. Você também gerará um build de produção de um aplicativo React configurado para consumir conteúdo do ambiente de publicação do AEM usando as APIs do GraphQL. Ao longo do caminho, você aprenderá a usar variáveis de ambiente de maneira eficaz e a atualizar as configurações do AEM CORS.
 
 ## Pré-requisitos
 
@@ -30,13 +30,13 @@ Este tutorial faz parte de um tutorial com várias partes. Pressupõe-se que as 
 
 Saiba como:
 
-* Entenda a arquitetura do AEM Author e do Publish.
+* Entenda a arquitetura de Autor e Publicação do AEM.
 * Conheça as práticas recomendadas para gerenciar variáveis de ambiente.
-* Saiba como configurar corretamente o AEM para CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
+* Saiba como configurar corretamente o AEM para o CORS (Cross-Origin Resource Sharing, compartilhamento de recursos entre origens).
 
-## Padrão de implantação do Author Publish {#deployment-pattern}
+## Padrão de implantação de publicação do autor {#deployment-pattern}
 
-Um ambiente do AEM completo é composto de um Autor, Publicação e Dispatcher. O serviço do Autor é onde os usuários internos criam, gerenciam e visualizam conteúdo. O serviço do Publish é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído ao serviço do Publish.
+Um ambiente do AEM completo é composto de um Autor, Publicação e Dispatcher. O serviço do Autor é onde os usuários internos criam, gerenciam e visualizam conteúdo. O serviço de Publicação é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído ao serviço de Publicação.
 
 O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
@@ -44,30 +44,30 @@ O padrão de implantação mais comum com aplicativos headless do AEM é ter uma
 
 O diagrama acima descreve esse padrão de implantação comum.
 
-1. Um **Autor de conteúdo** usa o serviço de autor do AEM para criar, editar e gerenciar conteúdo.
+1. Um **Autor de conteúdo** usa o serviço de autoria do AEM para criar, editar e gerenciar conteúdo.
 2. O **Autor de conteúdo** e outros usuários internos podem visualizar o conteúdo diretamente no serviço do Autor. É possível configurar uma versão de Visualização do aplicativo que se conecta ao serviço de Autor.
-3. Depois que o conteúdo é aprovado, ele pode ser **publicado** no serviço AEM Publish.
-4. **Usuários finais** interagem com a versão de Produção do aplicativo. O aplicativo de Produção se conecta ao serviço Publish e usa as APIs do GraphQL para solicitar e consumir conteúdo.
+3. Depois que o conteúdo é aprovado, ele pode ser **publicado** no serviço de Publicação do AEM.
+4. **Usuários finais** interagem com a versão de Produção do aplicativo. O aplicativo de Produção se conecta ao serviço de Publicação e usa as APIs do GraphQL para solicitar e consumir conteúdo.
 
-O tutorial simula a implantação acima adicionando uma instância do Publish AEM à configuração atual. Nos capítulos anteriores, o aplicativo React atuava como pré-visualização ao se conectar diretamente à instância do Autor. Uma build de produção do aplicativo React é implantada em um servidor Node.js estático que se conecta à nova instância do Publish.
+O tutorial simula a implantação acima adicionando uma instância de publicação do AEM à configuração atual. Nos capítulos anteriores, o aplicativo React atuava como pré-visualização ao se conectar diretamente à instância do Autor. Uma build de produção do aplicativo React é implantada em um servidor Node.js estático que se conecta à nova instância de publicação.
 
 No final, três servidores locais estão sendo executados:
 
 * http://localhost:4502 - Instância do autor
-* http://localhost:4503 - Instância do Publish
-* http://localhost:5000 - Aplicativo React no modo de produção, conectando-se à instância do Publish.
+* http://localhost:4503 - Publicar instância
+* http://localhost:5000 - Aplicativo React no modo de produção, conectando-se à instância de publicação.
 
-## Instalar o SDK do AEM - modo Publish {#aem-sdk-publish}
+## Instalar o AEM SDK - Modo de publicação {#aem-sdk-publish}
 
-Atualmente temos uma instância do SDK em execução no modo **Autor**. O SDK também pode ser iniciado no modo **Publish** para simular um ambiente AEM do Publish.
+Atualmente temos uma instância da SDK em execução no modo **Autor**. O SDK também pode ser iniciado no modo **Publicar** para simular um ambiente de Publicação do AEM.
 
 Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
-1. No sistema de arquivos local, crie uma pasta dedicada para instalar a instância do Publish, ou seja, chamada `~/aem-sdk/publish`.
+1. No sistema de arquivos local, crie uma pasta dedicada para instalar a instância de Publicação, ou seja, chamada `~/aem-sdk/publish`.
 1. Copie o arquivo jar Quickstart usado para a instância Autor nos capítulos anteriores e cole-o no diretório `publish`. Como alternativa, navegue até o [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html), baixe o SDK mais recente e extraia o arquivo jar Quickstart.
 1. Renomeie o arquivo jar como `aem-publish-p4503.jar`.
 
-   A cadeia de caracteres `publish` especifica que o Quickstart jar inicia no modo Publish. O `p4503` especifica que o servidor de Início Rápido é executado na porta 4503.
+   A cadeia de caracteres `publish` especifica que o jar de Início rápido é iniciado no modo de Publicação. O `p4503` especifica que o servidor de Início Rápido é executado na porta 4503.
 
 1. Abra uma nova janela de terminal e navegue até a pasta que contém o arquivo jar. Instale e inicie a instância do AEM:
 
@@ -79,19 +79,19 @@ Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pod
 1. Forneça uma senha de administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para evitar configurações adicionais.
 1. Quando a instalação da instância do AEM for concluída, uma nova janela do navegador será aberta em [http://localhost:4503/content.html](http://localhost:4503/content.html)
 
-   Espera-se que retorne uma página 404 Não encontrado. Esta é uma instância de AEM totalmente nova e nenhum conteúdo foi instalado.
+   Espera-se que retorne uma página 404 Não encontrado. Esta é uma instância totalmente nova do AEM e nenhum conteúdo foi instalado.
 
 ## Instalar conteúdo de amostra e endpoints do GraphQL {#wknd-site-content-endpoints}
 
-Assim como na instância do Autor, a instância do Publish precisa ter os endpoints do GraphQL ativados e precisa de conteúdo de amostra. Em seguida, instale o Site de referência WKND na instância do Publish.
+Assim como na instância do Autor, a instância de Publicação precisa ter os endpoints do GraphQL ativados e precisa de conteúdo de amostra. Em seguida, instale o Site de referência WKND na instância de Publicação.
 
-1. Baixe o pacote AEM compilado mais recente para o Site WKND: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
+1. Baixe o Pacote do AEM compilado mais recente para o Site WKND: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
    >[!NOTE]
    >
    > Baixe a versão padrão compatível com o AEM as a Cloud Service e **não** a versão `classic`.
 
-1. Faça logon na instância do Publish navegando diretamente para: [http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html) com o nome de usuário `admin` e a senha `admin`.
+1. Faça logon na instância de Publicação navegando diretamente para: [http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html) com o nome de usuário `admin` e a senha `admin`.
 1. Em seguida, navegue até o Gerenciador de Pacotes em [http://localhost:4503/crx/packmgr/index.jsp](http://localhost:4503/crx/packmgr/index.jsp).
 1. Clique em **Carregar Pacote** e escolha o pacote WKND baixado na etapa anterior. Clique em **Instalar** para instalar o pacote.
 1. Após instalar o pacote, o site de referência WKND agora está disponível em [http://localhost:4503/content/wknd/us/en.html](http://localhost:4503/content/wknd/us/en.html).
@@ -99,11 +99,11 @@ Assim como na instância do Autor, a instância do Publish precisa ter os endpoi
 
    ![Site de Referência de Saída do WKND](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   Diferentemente da instância AEM Author, as instâncias AEM Publish assumem o padrão de acesso anônimo somente leitura. Queremos simular a experiência de um usuário anônimo ao executar o aplicativo React.
+   Diferentemente da instância do Autor do AEM, as instâncias de Publicação do AEM assumem o acesso anônimo somente leitura como padrão. Queremos simular a experiência de um usuário anônimo ao executar o aplicativo React.
 
-## Atualizar variáveis de Ambiente para apontar para a instância do Publish {#react-app-publish}
+## Atualizar variáveis de Ambiente para apontar para a instância de Publicação {#react-app-publish}
 
-Em seguida, atualize as variáveis de ambiente usadas pelo aplicativo React para apontar para a instância do Publish. O aplicativo React deve **somente** conectar-se à instância Publish no modo de produção.
+Em seguida, atualize as variáveis de ambiente usadas pelo aplicativo React para apontar para a instância de publicação. O aplicativo React deve **somente** conectar-se à instância Publish no modo de produção.
 
 Em seguida, adicione um novo arquivo `.env.production.local` para simular a experiência de produção.
 
@@ -119,11 +119,11 @@ Em seguida, adicione um novo arquivo `.env.production.local` para simular a expe
 
    ![Adicionar novo arquivo de variável de ambiente](assets/publish-deployment/env-production-local-file.png)
 
-   Usar variáveis de ambiente facilita a alternância do endpoint do GraphQL entre um ambiente de Autor ou Publish sem adicionar lógica extra no código do aplicativo. Mais informações sobre [variáveis de ambiente personalizadas para o React podem ser encontradas aqui](https://create-react-app.dev/docs/adding-custom-environment-variables).
+   Usar variáveis de ambiente facilita a alternância do endpoint do GraphQL entre um ambiente de Autor ou Publicação sem adicionar lógica extra no código do aplicativo. Mais informações sobre [variáveis de ambiente personalizadas para o React podem ser encontradas aqui](https://create-react-app.dev/docs/adding-custom-environment-variables).
 
    >[!NOTE]
    >
-   > Observe que nenhuma informação de autenticação é incluída, pois os ambientes do Publish fornecem acesso anônimo ao conteúdo por padrão.
+   > Observe que nenhuma informação de autenticação é incluída, pois os ambientes de publicação fornecem acesso anônimo ao conteúdo por padrão.
 
 ## Implantar um servidor de nó estático {#static-server}
 
@@ -176,7 +176,7 @@ O aplicativo React pode ser iniciado usando o servidor do webpack, mas isso é s
 
    ![Aplicativo React Fornecido](assets/publish-deployment/react-app-served-port5000.png)
 
-   Observe que a consulta do GraphQL está funcionando na página inicial. Inspect a solicitação **XHR** usando suas ferramentas de desenvolvedor. Observe que o POST GraphQL está na instância do Publish em `http://localhost:4503/content/graphql/global/endpoint.json`.
+   Observe que a consulta do GraphQL está funcionando na página inicial. Inspecione a solicitação **XHR** usando suas ferramentas de desenvolvedor. Observe que o POST do GraphQL está na instância de Publicação em `http://localhost:4503/content/graphql/global/endpoint.json`.
 
    No entanto, todas as imagens são quebradas na página inicial!
 
@@ -188,9 +188,9 @@ O aplicativo React pode ser iniciado usando o servidor do webpack, mas isso é s
 
 ## Referências absolutas de imagem {#absolute-image-references}
 
-As imagens parecem quebradas porque o atributo `<img src` está definido como um caminho relativo e acaba apontando para o servidor estático Nó em `http://localhost:5000/`. Em vez disso, essas imagens devem apontar para a instância do Publish AEM. Há várias soluções possíveis para isso. Ao usar o servidor de desenvolvimento do webpack, o arquivo `react-app/src/setupProxy.js` configura um proxy entre o servidor do webpack e a instância do autor do AEM para qualquer solicitação para `/content`. Uma configuração de proxy pode ser usada em um ambiente de produção, mas deve ser configurada no nível do servidor Web. Por exemplo, [módulo proxy do Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
+As imagens parecem quebradas porque o atributo `<img src` está definido como um caminho relativo e acaba apontando para o servidor estático Nó em `http://localhost:5000/`. Em vez disso, essas imagens devem apontar para a instância de publicação do AEM. Há várias soluções possíveis para isso. Ao usar o servidor de desenvolvimento do webpack, o arquivo `react-app/src/setupProxy.js` configura um proxy entre o servidor do webpack e a instância de autor do AEM para qualquer solicitação para `/content`. Uma configuração de proxy pode ser usada em um ambiente de produção, mas deve ser configurada no nível do servidor Web. Por exemplo, [módulo proxy do Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
-O aplicativo pode ser atualizado para incluir uma URL absoluta usando a variável de ambiente `REACT_APP_HOST_URI`. Em vez disso, vamos usar um recurso da API do GraphQL do AEM para solicitar um URL absoluto para a imagem.
+O aplicativo pode ser atualizado para incluir uma URL absoluta usando a variável de ambiente `REACT_APP_HOST_URI`. Em vez disso, vamos usar um recurso da API GraphQL do AEM para solicitar um URL absoluto para a imagem.
 
 1. Pare o servidor Node.js.
 1. Retorne ao IDE e abra o arquivo `Adventures.js` em `react-app/src/components/Adventures.js`.
@@ -303,55 +303,55 @@ O aplicativo pode ser atualizado para incluir uma URL absoluta usando a variáve
 
 ## Simular publicação de conteúdo {#content-publish}
 
-Lembre-se de que um erro de GraphQL é lançado para `adventureContributor` quando uma página de Detalhes de Aventura é solicitada. O modelo de fragmento de conteúdo do **Colaborador** ainda não existe na instância do Publish. As atualizações feitas no Modelo de fragmento de conteúdo **Adventure** também não estão disponíveis na instância do Publish. Essas alterações foram feitas diretamente na instância do Autor e precisam ser distribuídas para a instância do Publish.
+Lembre-se de que um erro de GraphQL é lançado para `adventureContributor` quando uma página de Detalhes de Aventura é solicitada. O modelo de fragmento de conteúdo do **Colaborador** ainda não existe na instância de publicação. As atualizações feitas no Modelo de fragmento de conteúdo **Adventure** também não estão disponíveis na instância de publicação. Essas alterações foram feitas diretamente na instância do Autor e precisam ser distribuídas para a instância de Publicação.
 
 Isso é algo a ser considerado ao implantar novas atualizações em um aplicativo que depende de atualizações em um Fragmento de conteúdo ou em um Modelo de fragmento de conteúdo.
 
-Em seguida, vamos simular a publicação de conteúdo entre as instâncias locais do Autor e do Publish.
+Em seguida, vamos simular a publicação de conteúdo entre as instâncias locais de Autor e Publicação.
 
 1. Inicie a instância do Autor (se ainda não tiver sido iniciada) e navegue até o Gerenciador de Pacotes em [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 1. Baixe o pacote [EnableReplicationAgent.zip](./assets/publish-deployment/EnableReplicationAgent.zip) e instale-o usando o Gerenciador de Pacotes.
 
-   Este pacote instala uma configuração que permite que a instância do Autor publique conteúdo na instância do Publish. Etapas manuais para [esta configuração pode ser encontrada aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
+   Este pacote instala uma configuração que permite que a instância do Autor publique conteúdo na instância de Publicação. Etapas manuais para [esta configuração pode ser encontrada aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
 
    >[!NOTE]
    >
-   > Em um ambiente do AEM as a Cloud Service, o nível de Autor é configurado automaticamente para distribuir conteúdo para o nível do Publish.
+   > Em um ambiente do AEM as a Cloud Service, a camada Autor é configurada automaticamente para distribuir conteúdo para a camada Publicar.
 
-1. No menu **Iniciar** do AEM, navegue até **Ferramentas** > **Assets** > **Modelos de fragmentos de conteúdo**.
+1. No menu **Início do AEM**, navegue até **Ferramentas** > **Assets** > **Modelos de fragmentos de conteúdo**.
 
 1. Clique na pasta **WKND Site**.
 
-1. Selecione todos os três modelos e clique em **Publish**:
+1. Selecione todos os três modelos e clique em **Publicar**:
 
-   ![Modelos de fragmentos de conteúdo do Publish](assets/publish-deployment/publish-contentfragment-models.png)
+   ![Publicar modelos de fragmento de conteúdo](assets/publish-deployment/publish-contentfragment-models.png)
 
-   Uma caixa de diálogo de confirmação é exibida, clique em **Publish**.
+   Uma caixa de diálogo de confirmação é exibida, clique em **Publicar**.
 
 1. Navegue até o fragmento de conteúdo do campo de navegação de Bali em [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp).
 
-1. Clique no botão **Publish** na barra de menu superior.
+1. Clique no botão **Publicar** na barra de menu superior.
 
-   ![Clique no botão Publish no Editor de Fragmento de Conteúdo](assets/publish-deployment/publish-bali-content-fragment.png)
+   ![Clique no botão Publicar no Editor de Fragmento de Conteúdo](assets/publish-deployment/publish-bali-content-fragment.png)
 
-1. O assistente do Publish mostra todos os ativos dependentes que devem ser publicados. Nesse caso, o fragmento referenciado **stacey-roswells** está listado e várias imagens também são referenciadas. Os ativos referenciados são publicados junto com o fragmento.
+1. O Assistente de publicação mostra todos os ativos dependentes que devem ser publicados. Nesse caso, o fragmento referenciado **stacey-roswells** está listado e várias imagens também são referenciadas. Os ativos referenciados são publicados junto com o fragmento.
 
    ![Assets referenciado para publicação](assets/publish-deployment/referenced-assets.png)
 
-   Clique no botão **Publish** novamente para publicar o fragmento de conteúdo e os ativos dependentes.
+   Clique no botão **Publicar** novamente para publicar o fragmento de conteúdo e os ativos dependentes.
 
 1. Retorne ao Aplicativo React em execução em [http://localhost:5000/](http://localhost:5000/). Agora você pode clicar no Acampamento de Surf de Bali para ver os detalhes da aventura.
 
 1. Retorne à instância do Autor do AEM em [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e atualize o **Título** do fragmento. **Salvar e fechar** o fragmento. Em seguida, **publique** o fragmento.
 1. Retorne a [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e observe as alterações publicadas.
 
-   ![Atualização do Publish sobre o Bali Surf Camp](assets/publish-deployment/bali-surf-camp-update.png)
+   ![Atualização de publicação do Campo de Surf de Bali](assets/publish-deployment/bali-surf-camp-update.png)
 
 ## Atualizar configuração de CORs
 
-O AEM é seguro por padrão e não permite que propriedades da Web que não sejam AEM façam chamadas do lado do cliente. A configuração do Compartilhamento de recursos entre origens (CORS) do AEM pode permitir que domínios específicos façam chamadas para AEM.
+O AEM é seguro por padrão e não permite que propriedades da Web que não sejam da AEM façam chamadas do lado do cliente. A configuração do Compartilhamento de recursos entre origens (CORS) da AEM pode permitir que domínios específicos façam chamadas para a AEM.
 
-Em seguida, experimente a configuração CORS da instância AEM Publish.
+Em seguida, experimente a configuração CORS da instância de publicação do AEM.
 
 1. Retorne à janela do terminal onde o Aplicativo React está sendo executado com o comando `npm run serve`:
 
@@ -374,7 +374,7 @@ Em seguida, experimente a configuração CORS da instância AEM Publish.
 
    ![Erro do CORS](assets/publish-deployment/cors-error-not-fetched.png)
 
-   Em seguida, atualize a configuração do CORS do Publish AEM para permitir solicitações do endereço IP da rede.
+   Em seguida, atualize a configuração do CORS de publicação do AEM para permitir solicitações do endereço IP da rede.
 
 1. Navegue até [http://localhost:4503/content/wknd/us/en/errors/sign-in.html](http://localhost:4503/content/wknd/us/en/errors/sign-in.html) e entre com o nome de usuário `admin` e a senha `admin`.
 
@@ -394,7 +394,7 @@ Em seguida, experimente a configuração CORS da instância AEM Publish.
 
    >[!NOTE]
    >
-   > As configurações de OSGi são gerenciadas em um projeto AEM comprometido com o controle do código-fonte. Um projeto AEM pode ser implantado no AEM como ambientes Cloud Service usando o Cloud Manager. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) pode ajudar a gerar um projeto para uma implementação específica.
+   > As configurações de OSGi são gerenciadas em um projeto do AEM comprometido com o controle do código-fonte. Um projeto do AEM pode ser implantado em ambientes do AEM as Cloud Service usando o Cloud Manager. O [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype) pode ajudar a gerar um projeto para uma implementação específica.
 
 1. Retorne ao Aplicativo React iniciando com [http://192.168.86.XXX:5000](http://192.168.86.XXX:5000) e observe que o aplicativo não lança mais um erro CORS.
 
@@ -402,7 +402,7 @@ Em seguida, experimente a configuração CORS da instância AEM Publish.
 
 ## Parabéns. {#congratulations}
 
-Parabéns! Agora você simulou uma implantação de produção completa usando um ambiente Publish AEM. Você também aprendeu a usar a configuração do CORS no AEM.
+Parabéns! Agora você simulou uma implantação de produção completa usando um ambiente de publicação do AEM. Você também aprendeu a usar a configuração do CORS no AEM.
 
 ## Outros recursos
 

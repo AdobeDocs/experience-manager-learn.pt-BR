@@ -1,15 +1,15 @@
 ---
 title: Utilização do Panorama e do Visualizador de imagem vertical com o AEM Assets Dynamic Media
-description: As melhorias do Dynamic Media Viewer no AEM 6.4 incluem a adição do Panoramic Image Viewer, Panoramic Virtual Reality Image Viewer e Vertical Image Viewer. O Visualizador panorâmico oferece uma maneira fácil de proporcionar uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem sem qualquer desenvolvimento personalizado.
+description: As melhorias do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de imagem panorâmica, do Visualizador de imagem de realidade virtual panorâmica e do Visualizador de imagem vertical. O Visualizador panorâmico oferece uma maneira fácil de proporcionar uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem sem qualquer desenvolvimento personalizado.
 feature: Video Profiles, Video Profiles, 360 VR Video
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
 duration: 535
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Utilização do Panorama e do Visualizador de imagem vertical com o AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-As melhorias do Dynamic Media Viewer no AEM 6.4 incluem a adição do Panoramic Image Viewer, Panoramic Virtual Reality Image Viewer e Vertical Image Viewer. O Visualizador panorâmico oferece uma maneira fácil de proporcionar uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem sem qualquer desenvolvimento personalizado.
+As melhorias do Visualizador do Dynamic Media no AEM 6.4 incluem a adição do Visualizador de imagem panorâmica, do Visualizador de imagem de realidade virtual panorâmica e do Visualizador de imagem vertical. O Visualizador panorâmico oferece uma maneira fácil de proporcionar uma experiência envolvente e imersiva da sala, propriedade, localização ou paisagem sem qualquer desenvolvimento personalizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
 
 >[!NOTE]
 >
->O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com o Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>O vídeo presume que a instância do AEM está sendo executada no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com Dynamic Media podem ser encontradas aqui.](https://helpx.adobe.com/br/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visualizador de RV Panorâmica e Panorâmica
 
@@ -49,7 +49,7 @@ Com amostras horizontais, dependendo do tamanho da tela do desktop do consumidor
   </tr>
   <tr>
    <td>Modo de execução do Dynamic Media</td>
-   <td>Somente modo Dynamic Media Scene7</td>
+   <td>Somente modo Scene7 do Dynamic Media</td>
    <td>DMS7 e Dynamic Media</td>
   </tr>
   <tr>

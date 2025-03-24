@@ -1,7 +1,7 @@
 ---
 title: Vídeos de criação de documentos
 description: Saiba como configurar a criação de documentos no AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 7%
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Vídeos de criação de documentos
 
-Entenda como configurar a criação de documentos, permitindo que os autores de AEM editem e publiquem documentos usando o Microsoft Word ou o Google Docs.
+Entenda como configurar a criação de documentos, permitindo que os autores do AEM editem e publiquem documentos usando o Microsoft Word ou o Google Docs.
 
 Revise a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para obter detalhes completos sobre a configuração da criação de documentos.
 
@@ -595,7 +595,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
             </p>
-            <p class="is-size-6">Saiba como usar o Dynamic Media para entrega otimizada de imagens.</p>
+            <p class="is-size-6">Saiba como usar o Dynamic Media para a entrega otimizada de imagens.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -627,7 +627,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/migration-using-importer.md" title="Migração de site usando o Importador">Migração de sites usando o Importador</a>
             </p>
-            <p class="is-size-6">Saiba como migrar sites para o Edge Delivery Services usando a ferramenta Importador de AEM.</p>
+            <p class="is-size-6">Saiba como migrar sites para o Edge Delivery Services usando a ferramenta AEM Importer.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -659,7 +659,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/customizing-importer.md" title="Personalização do importador">Personalizando o importador</a>
             </p>
-            <p class="is-size-6">Saiba como personalizar a ferramenta Importador de AEM para migração de site.</p>
+            <p class="is-size-6">Saiba como personalizar a ferramenta AEM Importer para migração de site.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -691,7 +691,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/bulk-importing-using-importer.md" title="Importação em massa usando o Importador">Importação em massa usando o Importador</a>
             </p>
-            <p class="is-size-6">Saiba como importar páginas da Web em massa usando a ferramenta Importador de AEM durante a migração do site.</p>
+            <p class="is-size-6">Saiba como importar páginas da Web em massa usando a ferramenta AEM Importer durante a migração do site.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -728,7 +728,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/overview.md" title="Gerar variações">Gerar Variações</a>
             </p>
-            <p class="is-size-6">Introdução ao Gerar variações em Edge Delivery Services e compreender como ele pode ser útil para profissionais de marketing.</p>
+            <p class="is-size-6">Introdução ao Gerar variações no Edge Delivery Services e entender como ele pode ser útil para profissionais de marketing.</p>
             <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -760,7 +760,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/configure-sidekick.md" title="Gerar variações - Configurar Sidekick">Gerar Variações - Configurar Sidekick</a>
             </p>
-            <p class="is-size-6">Aprenda a configurar o sidekick para Gerar variações na criação de documentos do Edge Delivery Services.</p>
+            <p class="is-size-6">Explore como configurar o sidekick para Gerar variações na criação de documentos do Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1016,7 +1016,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/trust-privacy.md" title="Gerar variações - Confiança e privacidade">Gerar variações - Confiança e Privacidade</a>
             </p>
-            <p class="is-size-6">Explorar como o Adobe lida com a confiança e a privacidade para Gerar variações.</p>
+            <p class="is-size-6">Explorar como o Adobe lida com confiança e privacidade para gerar variações.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

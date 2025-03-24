@@ -1,7 +1,7 @@
 ---
 title: Como desativar o armazenamento em cache do CDN
 description: Saiba como desativar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Saiba como desativar o armazenamento em cache de respostas HTTP no CDN da AEM as a Cloud Service. O cache de respostas é controlado por `Cache-Control`, `Surrogate-Control` ou `Expires` cabeçalhos de cache de resposta HTTP.
 
-Normalmente, esses cabeçalhos de cache são definidos em configurações de vhost do AEM Dispatcher usando `mod_headers`, mas também podem ser definidos no código Java™ personalizado em execução no próprio Publish AEM.
+Normalmente, esses cabeçalhos de cache são definidos nas configurações do AEM Dispatcher vhost usando o `mod_headers`, mas também podem ser definidos no código Java™ personalizado em execução no próprio AEM Publish.
 
 ## Comportamento de cache padrão
 
-Revise o comportamento padrão de armazenamento em cache do AEM Publish e do Author quando um projeto do baseado no [Arquétipo de projeto do AEM AEM](./enable-caching.md#default-caching-behavior) for implantado.
+Revise o comportamento padrão de armazenamento em cache para Publicação e Autor do AEM quando um [Arquétipo de projeto do AEM](./enable-caching.md#default-caching-behavior) baseado no AEM for implantado.
 
 ## Desativar armazenamento em cache
 
@@ -40,14 +40,14 @@ No entanto, há alguns cenários em que você pode desejar desativar o armazenam
 
 Para desativar o armazenamento em cache, você pode atualizar os cabeçalhos de cache de duas maneiras.
 
-1. **Configuração do Dispatcher vhost:** disponível somente para AEM Publish.
-1. **Código Java™ personalizado:** disponível para AEM Publish e Author.
+1. **Configuração do Dispatcher vhost:** disponível somente para publicação do AEM.
+1. **Código Java™ personalizado:** disponível para publicação e autor do AEM.
 
 Vamos analisar cada uma dessas opções.
 
 ### Configuração do Dispatcher vhost
 
-Essa opção é a abordagem recomendada para desativar o armazenamento em cache, mas só está disponível para o AEM Publish. Para atualizar os cabeçalhos de cache, use o módulo `mod_headers` e a diretiva `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
+Essa opção é a abordagem recomendada para desabilitar o armazenamento em cache, no entanto, só está disponível para o AEM Publish. Para atualizar os cabeçalhos de cache, use o módulo `mod_headers` e a diretiva `<LocationMatch>` no arquivo vhost do Apache HTTP Server. A sintaxe geral é a seguinte:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -66,7 +66,7 @@ Para desabilitar o cache CDN dos **tipos de conteúdo CSS** para alguns fins de 
 
 Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS é necessária para gerar uma nova chave de cache para o arquivo CSS.
 
-1. No projeto AEM, localize o arquivo vhsot desejado do diretório `dispatcher/src/conf.d/available_vhosts`.
+1. No projeto do AEM, localize o arquivo vhsot desejado do diretório `dispatcher/src/conf.d/available_vhosts`.
 1. Atualize o arquivo vhost (por exemplo, `wknd.vhost`) da seguinte maneira:
 
    ```
@@ -85,7 +85,7 @@ Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS 
 
 ### Código Java™ personalizado
 
-Essa opção está disponível para o AEM Publish e para o Author. Para atualizar os cabeçalhos de cache, use o objeto `SlingHttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
+Essa opção está disponível para Publicação no AEM e Autor. Para atualizar os cabeçalhos de cache, use o objeto `SlingHttpServletResponse` no código Java™ personalizado (servlet Sling, filtro de servlet Sling). A sintaxe geral é a seguinte:
 
 ```java
 response.setHeader("Cache-Control", "private");

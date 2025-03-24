@@ -1,26 +1,26 @@
 ---
-title: Combine arquivos de PDF usando a operação de invocar DDX
-description: Faça uma solicitação POST para invocar o endpoint do DDX com os parâmetros necessários
+title: Combine arquivos PDF usando a operação de invocar DDX
+description: Faça uma solicitação POST para chamar o endpoint do DDX com os parâmetros necessários
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9980
 exl-id: 693dac88-84f3-4051-8e46-3105093711a3
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
 
-# Efetuar a chamada POST
+# Fazer a chamada de POST
 
 
-A próxima etapa é fazer uma chamada de POST HTTP para o endpoint com os parâmetros necessários. O DDX e os arquivos pdf são fornecidos como arquivos de recurso. O ponto de extremidade tem autenticação baseada em token; passamos o token de acesso no cabeçalho da solicitação.
+A próxima etapa é fazer uma chamada HTTP POST para o endpoint com os parâmetros necessários. O DDX e os arquivos pdf são fornecidos como arquivos de recurso. O ponto de extremidade tem autenticação baseada em token; passamos o token de acesso no cabeçalho da solicitação.
 Ao usar o serviço Assembler, use uma linguagem baseada em XML chamada Document Description XML (DDX) para descrever a saída desejada. O DDX é uma linguagem de marcação declarativa cujos elementos representam os blocos de construção de documentos. O DDX a seguir foi usado para mesclar os dois documentos PDF identificados nos elementos de origem do PDF.
 
 ```xml

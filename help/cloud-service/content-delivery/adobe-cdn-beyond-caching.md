@@ -1,7 +1,7 @@
 ---
-title: Adobe CDN - Recursos avançados além do cache
-description: Saiba mais sobre os recursos avançados do CDN de Adobe além do armazenamento em cache, como configuração de tráfego no CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
-version: Cloud Service
+title: Adobe CDN - Recursos avançados além do armazenamento em cache
+description: Saiba mais sobre os recursos avançados do Adobe CDN além do armazenamento em cache, como configuração de tráfego no CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,24 +12,24 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Adobe CDN - Recursos avançados além do cache
+# Adobe CDN - Recursos avançados além do armazenamento em cache
 
-Saiba mais sobre os recursos avançados da Rede de entrega de conteúdo (CDN) do Adobe além do armazenamento em cache, como configuração de tráfego na CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
+Saiba mais sobre os recursos avançados da Rede de entrega de conteúdo (CDN) da Adobe além do armazenamento em cache, como configuração de tráfego na CDN, configuração de tokens e credenciais, páginas de erro de CDN e muito mais.
 
-Além do armazenamento em cache de conteúdo, o Adobe CDN oferece vários recursos avançados que podem ajudar a otimizar o desempenho do seu site. Esses recursos incluem:
+Além do armazenamento em cache do conteúdo, o Adobe CDN oferece vários recursos avançados que podem ajudar a otimizar o desempenho do seu site. Esses recursos incluem:
 
 - Configuração do tráfego no CDN
 - Configuração de credenciais e autenticação da CDN
 - Páginas de erro da CDN
 
-Estes recursos são do **autoatendimento**. Configurado no arquivo `cdn.yaml` do seu projeto AEM e implantado usando o pipeline de configuração do Cloud Manager.
+Estes recursos são do **autoatendimento**. Configurado no arquivo `cdn.yaml` do seu projeto do AEM e implantado usando o pipeline de configuração do Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
@@ -51,19 +51,19 @@ Vamos entender os principais recursos relacionados a _Configuração de credenci
 
 - **Token da API de Limpeza**: permite que você crie sua própria chave de limpeza para limpar um único grupo ou todos os recursos do cache.
 - **Autenticação Básica**: um mecanismo de autenticação leve quando você deseja restringir o acesso ao seu site ou a uma parte dele. Necessário principalmente como parte de vários processos de revisão antes de entrar em funcionamento.
-- **Validação do cabeçalho HTTP**: usada quando uma CDN gerenciada pelo cliente está roteando o tráfego para a CDN Adobe. O CDN do Adobe valida a solicitação de entrada com base no valor do cabeçalho `X-AEM-Edge-Key`. Permite criar seu próprio valor para o cabeçalho `X-AEM-Edge-Key`.
+- **Validação do cabeçalho HTTP**: usada quando uma CDN gerenciada pelo cliente está roteando o tráfego para a CDN da Adobe. A CDN do Adobe valida a solicitação de entrada com base no valor do cabeçalho `X-AEM-Edge-Key`. Permite criar seu próprio valor para o cabeçalho `X-AEM-Edge-Key`.
 
 ## Páginas de erro da CDN
 
 Vamos entender os principais recursos relacionados às _páginas de erro da CDN_:
 
-- **Páginas de erro com marca**: exiba uma página de erro com marca para seus usuários no _cenário improvável_ quando o CDN do Adobe não conseguir acessar seu servidor de origem.
+- **Páginas de erro com marca**: exiba uma página de erro com marca para seus usuários no _cenário improvável_ quando a CDN da Adobe não conseguir acessar seu servidor de origem.
 
 ## Como implementar o
 
 A implementação desses recursos avançados envolve duas etapas:
 
-1. **Atualizar arquivo de configuração da CDN**: atualize o arquivo `cdn.yaml` no projeto AEM com as configurações necessárias. As configurações são adicionadas como regras e seguem uma sintaxe de regra. A regra tem três componentes principais: `name`, `when` e `action`.
+1. **Atualizar arquivo de configuração da CDN**: atualize o arquivo `cdn.yaml` em seu projeto do AEM com as configurações necessárias. As configurações são adicionadas como regras e seguem uma sintaxe de regra. A regra tem três componentes principais: `name`, `when` e `action`.
 
 2. **Implantar arquivo de configuração CDN**: implante o arquivo `cdn.yaml` atualizado usando o pipeline de configuração do Cloud Manager. Para obter mais informações, consulte [Implantar regras por meio do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
@@ -87,7 +87,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Tutorials relacionados
+## Tutoriais relacionados
 
 [Protegendo sites com regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 

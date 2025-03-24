@@ -2,14 +2,14 @@
 title: Selecionar um formulário de uma lista de formulários disponíveis
 description: Usar a API listforms para preencher a lista suspensa
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13346
 topic: Development
 role: User
 level: Intermediate
 exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -129,7 +129,7 @@ As duas chamadas de API a seguir foram usadas na criação desta interface de us
 * [FormulárioLista](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). A chamada para buscar os formulários é feita apenas uma vez quando o componente é renderizado. Os resultados da chamada da API são armazenados na variável afForms.
 No código acima, iteramos por meio do afForms usando a função map e, para cada item na matriz afForms, um componente MenuItem é criado e adicionado ao componente Selecionar.
 
-* Formulário de busca - Uma chamada get é feita para o [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), onde a ID é a ID do formulário adaptável selecionado pelo usuário na lista suspensa. GET O resultado desta chamada é armazenado no seletedForm.
+* Formulário de busca - Uma chamada get é feita para o [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), onde a ID é a ID do formulário adaptável selecionado pelo usuário na lista suspensa. O resultado desta chamada GET é armazenado no seletedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

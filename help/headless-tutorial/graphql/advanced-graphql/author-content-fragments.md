@@ -1,14 +1,14 @@
 ---
-title: Fragmentos de conteúdo do autor - Conceitos avançados do AEM headless - GraphQL
+title: Fragmentos de conteúdo do autor - Conceitos avançados do AEM Headless - GraphQL
 description: Neste capítulo dos conceitos avançados do Adobe Experience Manager (AEM) Headless, aprenda a trabalhar com guias, data e hora, objetos JSON e referências de fragmento em Fragmentos de conteúdo. Defina políticas de pastas para limitar quais Modelos de fragmento de conteúdo podem ser incluídos.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
 duration: 609
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -36,10 +36,10 @@ Neste capítulo, saiba como:
 
 ## Instalar conteúdo de amostra {#sample-content}
 
-Instale um pacote de AEM que contenha várias pastas e imagens de amostra usadas para acelerar o tutorial.
+Instale um pacote do AEM que contenha várias pastas e imagens de amostra usadas para acelerar o tutorial.
 
 1. Baixar [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
-1. No AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes** para acessar o **Gerenciador de pacotes**.
+1. No AEM, navegue até **Ferramentas** > **Implantação** > **Pacotes** para acessar o **Gerenciador de Pacotes**.
 1. Carregue e instale o pacote (arquivo zip) baixado na etapa anterior.
 
    ![Pacote carregado via gerenciador de pacotes](assets/author-content-fragments/install-starter-package.png)
@@ -213,7 +213,7 @@ Acesse a pasta **Parque Nacional de Yosemite**. Atualmente, contém apenas uma f
 
 ### Marcadores de posição de guias
 
-O AEM permite usar espaços reservados para guias, a fim de agrupar diferentes tipos de conteúdo e facilitar a leitura e o gerenciamento dos fragmentos de conteúdo. No capítulo anterior, você adicionou espaços reservados para guias ao modelo de Localização. Como resultado, o Fragmento de Conteúdo de Local agora tem duas seções de guia: **Detalhes de Local** e **Endereço de Local**.
+O AEM permite usar espaços reservados para guias a fim de agrupar diferentes tipos de conteúdo e facilitar a leitura e o gerenciamento dos fragmentos de conteúdo. No capítulo anterior, você adicionou espaços reservados para guias ao modelo de Localização. Como resultado, o Fragmento de Conteúdo de Local agora tem duas seções de guia: **Detalhes de Local** e **Endereço de Local**.
 
 ![Espaços reservados de guia](assets/author-content-fragments/tabs.png)
 
@@ -318,7 +318,7 @@ Vamos criar um fragmento de conteúdo usando o Modelo de fragmento de conteúdo 
 
 ### Referências de conteúdo e fragmento no editor de texto de várias linhas
 
-O AEM permite adicionar referências de conteúdo e fragmento diretamente no editor de texto multilinha e recuperá-las posteriormente usando consultas do GraphQL. Vamos adicionar referências de conteúdo e fragmento ao campo **Descrição**.
+O AEM permite adicionar conteúdo e referências de fragmento diretamente no editor de texto multilinha e recuperá-las posteriormente usando consultas do GraphQL. Vamos adicionar referências de conteúdo e fragmento ao campo **Descrição**.
 
 1. Primeiro, adicione o seguinte texto no campo **Descrição**: &quot;A equipe de aventureiros profissionais e instrutores de caminhada trabalhando no Parque Nacional de Yosemite.&quot;
 

@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de permissões do perfil do produto e do grupo de usuários de Serviços
 description: Saiba como gerenciar permissões para o Perfil de produto e grupos de usuários de serviços no AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -11,13 +11,13 @@ jira: KT-17429
 thumbnail: KT-17429.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+exl-id: 3230a8e7-6342-4497-9163-1898700f29a4
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciamento de permissões do perfil do produto e do grupo de usuários de Serviços
 

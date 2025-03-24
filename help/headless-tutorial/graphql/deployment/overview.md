@@ -1,7 +1,7 @@
 ---
-title: Implantações AEM Headless
+title: Implantações do AEM Headless
 description: Saiba mais sobre as várias considerações de implantação para aplicativos AEM Headless.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -11,32 +11,32 @@ thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Implantações AEM Headless
+# Implantações do AEM Headless
 
-As implantações de cliente do AEM headless assumem muitas formas: AEM hospedado no SPA SPA, externo, site, aplicativo móvel ou até mesmo processo de servidor para servidor.
+As implantações de clientes do AEM Headless assumem muitas formas; SPA hospedado na AEM, SPA externo, site, aplicativo móvel ou até mesmo processo de servidor para servidor.
 
-Dependendo do cliente e de como ele é implantado, as implantações sem periféricos de AEM têm considerações diferentes.
+Dependendo do cliente e de como ele é implantado, as implantações do AEM Headless têm considerações diferentes.
 
 ## Arquitetura de serviço do AEM
 
-Antes de explorar as considerações sobre implantação, é fundamental compreender a arquitetura lógica do AEM, bem como a separação e as funções dos níveis de serviço da AEM as a Cloud Service. A AEM as a Cloud Service é composta de dois serviços lógicos:
+Antes de explorar as considerações sobre implantação, é fundamental compreender a arquitetura lógica da AEM, bem como a separação e as funções dos níveis de serviço da AEM as a Cloud Service. A AEM as a Cloud Service é composta de dois serviços lógicos:
 
 + O __AEM Author__ é o serviço no qual as equipes criam, colaboram e publicam fragmentos de conteúdo (e outros ativos).
-+ O __AEM Publish__ é o serviço que publicou Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
-+ __Visualização do AEM__ é o serviço que imita o AEM Publish no comportamento, mas tem conteúdo publicado para fins de visualização ou revisão. A Visualização do AEM é destinada a públicos-alvo internos, e não para a entrega geral de conteúdo. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
++ __Publicação do AEM__ é o serviço que publicou Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
++ __Visualização do AEM__ é o serviço que imita a Publicação do AEM no comportamento, mas tem conteúdo publicado nele para fins de visualização ou revisão. A Visualização do AEM destina-se a públicos-alvo internos, e não à entrega de conteúdo em geral. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
 
-![Arquitetura do serviço AEM](./assets/overview/aem-service-architecture.png)
+![Arquitetura de serviço do AEM](./assets/overview/aem-service-architecture.png)
 
 Arquitetura típica de implantação headless do AEM as a Cloud Service_
 
-Os clientes AEM Headless que operam em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo publicado e aprovado. Os clientes que interagem com o AEM Author precisam ter cuidado especial, pois o AEM Author é seguro por padrão, exigindo autorização para todas as solicitações, e também pode ter trabalho em andamento ou conteúdo não aprovado.
+Os clientes do AEM Headless que operam em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo publicado e aprovado. Os clientes que interagem com o AEM Author precisam ter cuidado especial, pois o AEM Author é seguro por padrão, exigindo autorização para todas as solicitações, e também pode ter trabalho em andamento ou conteúdo não aprovado.
 
 ## Implantações de clientes headless
 

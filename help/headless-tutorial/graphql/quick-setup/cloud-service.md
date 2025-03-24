@@ -1,7 +1,7 @@
 ---
 title: Configuração rápida do AEM sem periféricos para AEM as a Cloud Service
-description: A configuração rápida do AEM sem periféricos oferece uma abordagem prática do AEM sem periféricos usando conteúdo do projeto de amostra do WKND Site e um aplicativo React que consome o conteúdo por meio das APIs do GraphQL do AEM sem periféricos.
-version: Cloud Service
+description: A configuração rápida do AEM sem periféricos oferece uma abordagem prática do AEM sem periféricos usando o conteúdo do projeto de amostra do WKND Site e um aplicativo React que consome o conteúdo por meio das APIs do AEM sem periféricos GraphQL.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
 duration: 781
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configuração rápida do AEM sem periféricos para AEM as a Cloud Service
 
-A configuração rápida do AEM sem periféricos oferece uma abordagem prática do AEM sem periféricos usando conteúdo do projeto de amostra do WKND Site e uma amostra do aplicativo React (um SPA) que consome o conteúdo por meio das APIs do GraphQL do AEM sem periféricos.
+A configuração rápida do AEM Headless oferece uma abordagem prática do AEM Headless usando o conteúdo do projeto de amostra do WKND Site e uma amostra do aplicativo React (um SPA) que consome o conteúdo por meio das APIs do AEM Headless GraphQL.
 
 ## Pré-requisitos
 
@@ -36,7 +36,7 @@ Para seguir esta configuração rápida, é necessário:
 
 ## 1. Criar um repositório Git do Cloud Manager
 
-Primeiro, crie um repositório Git do Cloud Manager usado para implantar o Site WKND. O Site WKND é um projeto de exemplo de site AEM que contém conteúdo (fragmentos de conteúdo) e um endpoint do GraphQL AEM usado pelo aplicativo React da configuração rápida.
+Primeiro, crie um repositório Git do Cloud Manager usado para implantar o Site WKND. O site WKND é um exemplo de projeto de site do AEM que contém conteúdo (fragmentos de conteúdo) e um terminal GraphQL AEM usado pelo aplicativo React da configuração rápida.
 
 _Screencast de etapas_
 >[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
@@ -47,7 +47,7 @@ _Screencast de etapas_
    1. Selecione __Repositórios__ na navegação superior
    1. Selecione __Adicionar repositório__ na barra de ações superior
    1. Nomeie o novo repositório Git: `aem-headless-quick-setup-wknd`
-      + Os nomes dos repositórios Git devem ser exclusivos por organização Adobe,
+      + Os nomes dos repositórios Git devem ser exclusivos para cada organização da Adobe,
    1. Selecione __Salvar__ e aguarde a inicialização do repositório Git
 
 ## 2. Encaminhar amostra de projeto do site WKND para o repositório Git da Cloud Manager
@@ -87,7 +87,7 @@ _Screencast de etapas_
 
 Com o projeto do Site WKND enviado para o repositório Git do Cloud Manager, ele não pode ser implantado no AEM as a Cloud Service usando os pipelines do Cloud Manager.
 
-Lembre-se, o projeto Site WKND fornece conteúdo de amostra que o aplicativo React consome por meio de APIs AEM Headless GraphQL.
+Lembre-se, o projeto do Site WKND fornece conteúdo de amostra que o aplicativo React consome por meio das APIs do AEM Headless GraphQL.
 
 _Screencast de etapas_
 >[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
@@ -132,19 +132,19 @@ _Screencast de etapas_
 
 1. Abra a pasta `~/Code/aem-guides-wknd-graphql/react-app` no IDE.
 1. No IDE, abra o arquivo `.env.development`.
-1. Aponte para o URI do host do serviço AEM as a Cloud Service __Publish__ a partir da propriedade `REACT_APP_HOST_URI`.
+1. Aponte para o URI do host do serviço de publicação __AEM as a Cloud Service__ a partir da propriedade `REACT_APP_HOST_URI`.
 
    ```plain
    REACT_APP_HOST_URI=https://publish-pXXXX-eYYYY.adobeaemcloud.com
    ...
    ```
 
-   Para encontrar o URI do host do serviço AEM as a Cloud Service Publish:
+   Para localizar o URI do host do serviço de publicação do AEM as a Cloud Service:
 
    1. No Cloud Manager, selecione __Ambientes__ na navegação superior
    1. Selecionar ambiente de __desenvolvimento__
-   1. Localize a tabela __Serviço Publish (AEM e Dispatcher)__ no link __Segmentos de ambiente__
-   1. Copie o endereço do link e use-o como o URI do serviço AEM as a Cloud Service Publish
+   1. Localize a tabela __Serviço de Publicação (AEM e Dispatcher)__ no link __Segmentos de ambiente__
+   1. Copie o endereço do link e use-o como o URI do serviço de publicação do AEM as a Cloud Service
 
 1. No IDE, salve as alterações em `.env.development`
 1. Na linha de comando, execute o aplicativo React
@@ -159,7 +159,7 @@ _Screencast de etapas_
 
 ## 5. Editar conteúdo no AEM
 
-Com a amostra do aplicativo WKND React conectando-se e consumindo conteúdo das APIs AEM Headless do GraphQL, crie conteúdo no serviço de autor do AEM e veja como a experiência do aplicativo React é atualizada em conjunto.
+Com o aplicativo WKND React de amostra se conectando e consumindo conteúdo das APIs do AEM Headless GraphQL, o conteúdo do autor é criado no serviço de autor do AEM e você pode ver como a experiência do aplicativo React é atualizada em conjunto.
 
 _Screencast de etapas_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -175,11 +175,11 @@ _Screencast de etapas_
    + Preço: `3500`
    + Imagem Principal: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Selecione __Salvar__ na barra de ações superior
-1. Selecione __Publish Rápido__ na barra de ações superior __...__
+1. Selecione __Publicação rápida__ na barra de ações superior __...__
 1. Atualize o Aplicativo React em execução em [http://localhost:3000](http://localhost:3000).
 1. No aplicativo React, selecione a aventura Ciclismo atualizada e verifique as alterações de conteúdo feitas no fragmento de conteúdo.
 
-1. Usando a mesma abordagem, no serviço de Autor de AEM:
+1. Usando a mesma abordagem, no serviço AEM Author:
    1. Desfaça a publicação de um fragmento de conteúdo Adventure existente e verifique se ele foi removido da experiência do aplicativo React
    1. Crie e publique um novo Fragmento de conteúdo de aventura e verifique se ele aparece na experiência do aplicativo React
 
@@ -189,10 +189,10 @@ _Screencast de etapas_
 
 ## Parabéns.
 
-Parabéns! Você usou o AEM Headless com sucesso para alimentar um aplicativo React!
+Parabéns! Você usou o AEM Headless com sucesso para potencializar um aplicativo React!
 
 Para entender em detalhes como o aplicativo React consome conteúdo do AEM as a Cloud Service, confira o [tutorial do AEM Headless](../multi-step/overview.md). O tutorial explora como os fragmentos de conteúdo no AEM foram criados e como este aplicativo React consome o conteúdo como JSON.
 
 ### Próximas etapas
 
-+ [Iniciar o tutorial AEM Headless](../multi-step/overview.md)
++ [Iniciar o tutorial do AEM Headless](../multi-step/overview.md)

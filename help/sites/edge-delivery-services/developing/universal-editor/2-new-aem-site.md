@@ -1,7 +1,7 @@
 ---
 title: Criar um site do AEM
 description: Crie um site no AEM Sites para Edge Delivery Services, editável usando o Editor universal.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%

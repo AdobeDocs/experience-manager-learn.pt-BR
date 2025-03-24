@@ -3,14 +3,14 @@ title: Uso do modelo sightly para exibir os dados da caixa de entrada
 description: Adicionar colunas personalizadas para exibir dados adicionais do fluxo de trabalho usando um modelo simples
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Você pode usar o modelo sightly para formatar os dados a serem exibidos nas col
 
 ## Modelo do Sightly
 
-A seguir está o template sightly. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface do usuário do coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com AEM.
+A seguir está o template sightly. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface do usuário do coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com o AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -84,7 +84,7 @@ return val;
 
 * [Fazer logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo do sightly](assets/sightly-template.zip)
-* [Fazer logon no console da Web AEM](http://localhost:4502/system/console/bundles)
+* [Fazer logon no console da Web do AEM](http://localhost:4502/system/console/bundles)
 * [Implantar e iniciar o pacote de personalização da caixa de entrada](assets/income-column-customization.jar)
 * [Abra sua caixa de entrada](http://localhost:4502/aem/inbox)
 * Abra o Admin Control clicando em Exibição de lista ao lado do botão Criar

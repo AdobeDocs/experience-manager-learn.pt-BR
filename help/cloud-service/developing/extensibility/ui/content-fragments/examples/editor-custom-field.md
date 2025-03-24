@@ -2,7 +2,7 @@
 title: Console de fragmentos de conteúdo - Campos personalizados
 description: Saiba como criar um campo personalizado no Editor de fragmento de conteúdo do AEM.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 doc-type: Tutorial
@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -24,13 +24,13 @@ Saiba como criar campos personalizados no Editor de fragmento de conteúdo do AE
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-As extensões da interface do AEM devem ser desenvolvidas usando a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), pois ela mantém uma aparência consistente com o restante do AEM, além de ter uma ampla biblioteca de funcionalidades pré-criadas, reduzindo o tempo de desenvolvimento.
+As extensões da interface do usuário do AEM devem ser desenvolvidas usando a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), pois essa estrutura mantém uma aparência consistente com o restante do AEM, além de ter uma ampla biblioteca de funcionalidades pré-criadas, reduzindo o tempo de desenvolvimento.
 
 ## Ponto de extensão
 
 Este exemplo substitui um campo existente no Editor de fragmento de conteúdo por uma implementação personalizada.
 
-| IU do AEM estendida | Ponto de extensão |
+| Interface do usuário estendida do AEM | Ponto de extensão |
 | ------------------------ | --------------------- | 
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Renderização de elemento de formulário personalizado](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
@@ -132,10 +132,10 @@ export default ExtensionRegistration;
 
 ### Campo personalizado
 
-O componente React `SkuField` atualiza o Editor de Fragmento de Conteúdo com uma interface personalizada, usando o Espectro de Reação de Adobe para sua forma seletor. Os destaques incluem:
+O componente React `SkuField` atualiza o Editor de Fragmento de Conteúdo com uma interface personalizada, usando o Adobe React Spectrum para sua forma seletor. Os destaques incluem:
 
 + Utilizando `useEffect` para inicialização e conexão com o Editor de Fragmento de Conteúdo do AEM, com um estado de carregamento mostrado até que a instalação seja concluída.
-+ A renderização dentro de um iFrame ajusta dinamicamente a altura do iFrame por meio da função `onOpenChange` para acomodar a lista suspensa do Seletor de Espectro de Reação de Adobe.
++ A renderização dentro de um iFrame ajusta dinamicamente a altura do iFrame por meio da função `onOpenChange` para acomodar a lista suspensa do Seletor de Espectro do Adobe React.
 + Comunica as seleções de campo de volta ao host usando `connection.host.field.onChange(value)` na função `onSelectionChange`, garantindo que o valor selecionado seja validado e salvo automaticamente de acordo com as diretrizes do Modelo de fragmento de conteúdo.
 
 Os campos personalizados são renderizados em um iFrame inserido no Editor de fragmento de conteúdo. A comunicação entre o código de campo personalizado e o Editor de Fragmento de Conteúdo é feita exclusivamente através do objeto `connection`, estabelecido pela função `attach` do pacote `@adobe/uix-guest`.

@@ -2,7 +2,7 @@
 title: Enviar formulário de armazenamento no Armazenamento do Azure
 description: Armazenar dados de formulário no Armazenamento do Azure usando a API REST
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 143
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
@@ -55,8 +55,8 @@ Verifique se você tem / no final do URI de armazenamento e se o token SAS come�
 
 ## Criar solicitação PUT
 
-A próxima etapa é criar uma solicitação PUT para armazenar os dados de formulário enviados no Armazenamento do Azure. Todo envio de formulário precisa ser identificado por uma ID de BLOB exclusiva. O ID de BLOB exclusivo geralmente é criado em seu código e inserido no url da solicitação PUT.
-Veja a seguir o URL parcial da solicitação PUT. `aemformstutorial` é o nome da conta de armazenamento, formsubmissions é o contêiner no qual os dados serão armazenados com uma ID de BLOB exclusiva. O restante do URL permanecerá o mesmo.
+A próxima etapa é criar uma solicitação do PUT para armazenar os dados de formulário enviados no Armazenamento do Azure. Todo envio de formulário precisa ser identificado por uma ID de BLOB exclusiva. Normalmente, a ID exclusiva do BLOB é criada em seu código e inserida no url da solicitação do PUT.
+Este é o URL parcial da solicitação PUT. `aemformstutorial` é o nome da conta de armazenamento, formsubmissions é o contêiner no qual os dados serão armazenados com uma ID de BLOB exclusiva. O restante do URL permanecerá o mesmo.
 https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
 A função a seguir é gravada para armazenar os dados do formulário enviado no Armazenamento do Azure usando uma solicitação PUT. Observe o uso do nome do container e da uuid no url. Você pode criar um serviço OSGi ou um servlet sling usando o código de amostra listado abaixo e armazenar os envios de formulários no Armazenamento do Azure.
 

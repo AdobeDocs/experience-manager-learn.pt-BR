@@ -1,7 +1,7 @@
 ---
 title: Guia simples de implementação de pesquisa
 description: A implementação de pesquisa simples são os materiais do laboratório AEM Search Demystified de 2017. Esta página contém os materiais deste laboratório. Para um tour guiado pelo laboratório, consulte a pasta de trabalho do laboratório na seção Apresentação desta página.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Guia simples de implementação de pesquisa{#simple-search-implementation-guide}
 
-A implementação de pesquisa simples são os materiais do **Laboratório de Adobe Summit AEM Pesquisa Demystified**. Esta página contém os materiais deste laboratório. Para um tour guiado pelo laboratório, consulte a pasta de trabalho do laboratório na seção Apresentação desta página.
+A implementação de pesquisa simples são os materiais do **Adobe Summit lab AEM Search Demystified**. Esta página contém os materiais deste laboratório. Para um tour guiado pelo laboratório, consulte a pasta de trabalho do laboratório na seção Apresentação desta página.
 
 ![Visão Geral da Arquitetura de Pesquisa](assets/l4080/simple-search-application.png)
 
@@ -78,7 +78,7 @@ A implementação de pesquisa simples são os materiais do **Laboratório de Ado
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportador de Modelo do Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API do QueryBuilder](https://experienceleague.adobe.com/pt-br/docs)
-* [Plug-in do AEM para Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentação](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [Plug-in do AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Página de documentação](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correções e acompanhamento {#corrections-and-follow-up}
 
@@ -86,7 +86,7 @@ Correções e esclarecimentos das discussões no laboratório e respostas das pe
 
 1. **Como interromper a reindexação?**
 
-   A reindexação pode ser interrompida por meio do MBean IndexStats disponível via [Console da Web AEM > JMX](http://localhost:4502/system/console/jmx)
+   A reindexação pode ser interrompida por meio do MBean IndexStats disponível através do [AEM Web Console > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * Execute `abortAndPause()` para anular a reindexação. Isso bloqueará o índice para reindexação até que `resume()` seja chamado.
@@ -107,7 +107,7 @@ Correções e esclarecimentos das discussões no laboratório e respostas das pe
    * As consultas DEVEM especificar uma restrição de caminho que seja igual ao escopo do caminho de consulta do índice, ou ser um descendente dele.
    * Índices com escopo mais amplo (por exemplo, `/oak:index/cqPageLucene`) TAMBÉM indexarão os dados, resultando em assimilação duplicada e custo de uso do disco.
    * Pode exigir gerenciamento de configuração duplicado (por exemplo, adicionar as mesmas indexRules em vários índices de locatário se eles precisarem atender aos mesmos conjuntos de consultas)
-   * Essa abordagem é mais adequada no nível do AEM Publish para pesquisa de site personalizada, como no AEM Author, é comum que as consultas sejam executadas no alto da árvore de conteúdo para diferentes locatários (por exemplo, por meio do OmniSearch). Definições de índice diferentes podem resultar em um comportamento diferente com base apenas na restrição do caminho.
+   * Essa abordagem é mais adequada no nível de publicação do AEM para pesquisa de site personalizada, já que, no AEM Author, é comum que as consultas sejam executadas no alto da árvore de conteúdo para diferentes locatários (por exemplo, por meio do OmniSearch). Definições de índice diferentes podem resultar em um comportamento diferente, com base apenas na restrição de caminho.
 
 3. **Onde está uma lista de todos os Analisadores disponíveis?**
 
@@ -120,7 +120,7 @@ Correções e esclarecimentos das discussões no laboratório e respostas das pe
 
 4. **Como pesquisar por Páginas e Assets na mesma consulta?**
 
-   Uma novidade no AEM 6.3 é a capacidade de consultar vários tipos de nó no mesmo query fornecido. A seguinte consulta do QueryBuilder. Observe que cada &quot;subconsulta&quot; pode resolver para seu próprio índice. Portanto, neste exemplo, a subconsulta `cq:Page` é resolvida como `/oak:index/cqPageLucene` e a subconsulta `dam:Asset` é resolvida como `/oak:index/damAssetLucene`.
+   Uma novidade no AEM 6.3 é a capacidade de consultar vários tipos de nó na mesma consulta fornecida. A seguinte consulta do QueryBuilder. Observe que cada &quot;subconsulta&quot; pode resolver para seu próprio índice. Portanto, neste exemplo, a subconsulta `cq:Page` é resolvida como `/oak:index/cqPageLucene` e a subconsulta `dam:Asset` é resolvida como `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true

@@ -1,8 +1,8 @@
 ---
-title: Testar um trabalhador de Asset compute
+title: Testar um trabalhador do Asset Compute
 description: O projeto do Asset Compute define um padrão para criar e executar facilmente testes de trabalhadores do Asset Compute.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6284
 thumbnail: KT-6284.jpg
@@ -11,20 +11,20 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
 duration: 142
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
-# Testar um trabalhador de Asset compute
+# Testar um trabalhador do Asset Compute
 
-O projeto Asset Compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+O projeto do Asset Compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomia de um teste do trabalhador
 
-Os testes dos trabalhadores assets compute são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste afirmam uma condição a ser testada.
+Os testes dos trabalhadores da Asset Compute são divididos em conjuntos de testes e, em cada conjunto de testes, um ou mais casos de teste afirmam uma condição a ser testada.
 
 A estrutura dos testes em um projeto do Asset Compute é a seguinte:
 
@@ -78,7 +78,7 @@ Este caso de teste declara que a entrada parametrizada (`params.json`) para o ar
    }
    ```
 
-   Esses são os mesmos valores/chaves passados para a [definição de perfil de Asset compute da Ferramenta de Desenvolvimento](../develop/development-tool.md), menos a chave `worker`.
+   Esses são os mesmos valores/chaves passados para a [definição de perfil do Asset Compute da Ferramenta de Desenvolvimento](../develop/development-tool.md), menos a chave `worker`.
 
 1. Adicione o [arquivo de representação](./assets/test/success-parameterized/rendition.png) esperado a este caso de teste e nomeie-o `rendition.png`. Este arquivo representa a saída esperada do trabalhador para a entrada especificada `file.jpg`.
 1. Na linha de comando, execute os testes na raiz do projeto executando `aio app test`

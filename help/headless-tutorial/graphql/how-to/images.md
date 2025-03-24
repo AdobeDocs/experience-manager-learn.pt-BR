@@ -1,7 +1,7 @@
 ---
-title: Uso de imagens otimizadas com AEM Headless
-description: Saiba como solicitar URLs de imagem otimizadas com AEM Headless.
-version: Cloud Service
+title: Uso de imagens otimizadas com o AEM Headless
+description: Saiba como solicitar URLs de imagem otimizadas com o AEM Headless.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 300
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -20,23 +20,23 @@ ht-degree: 4%
 
 # Imagens otimizadas com o AEM Headless {#images-with-aem-headless}
 
-As imagens são um aspecto crítico do [desenvolvimento de experiências AEM headless avançadas e atraentes](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). O AEM Headless suporta o gerenciamento de ativos de imagem e sua entrega otimizada.
+As imagens são um aspecto crítico do [desenvolvimento de experiências headless avançadas e atraentes do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR). O AEM Headless oferece suporte ao gerenciamento de ativos de imagem e sua entrega otimizada.
 
-Fragmentos de conteúdo usados na modelagem de conteúdo AEM Headless, geralmente fazem referência a ativos de imagem destinados à exibição na experiência headless. As consultas do GraphQL do AEM podem ser gravadas para fornecer URLs para imagens, com base na origem da referência da imagem.
+Fragmentos de conteúdo usados na modelagem de conteúdo do AEM Headless, geralmente fazem referência a ativos de imagem destinados à exibição na experiência headless. As consultas do GraphQL da AEM podem ser gravadas para fornecer URLs para imagens com base no local de referência da imagem.
 
 O tipo `ImageRef` tem quatro opções de URL para referências de conteúdo:
 
 + `_path` é o caminho referenciado no AEM e não inclui uma origem AEM (nome do host)
 + `_dynamicUrl` é a URL para a entrega otimizada para a Web do ativo de imagem.
-   + O `_dynamicUrl` não inclui uma origem de AEM, portanto, o domínio (AEM Author ou AEM Publish service) deve ser fornecido pelo aplicativo cliente.
-+ `_authorUrl` é a URL completa do ativo de imagem no Autor AEM
+   + O `_dynamicUrl` não inclui uma origem AEM, portanto, o domínio (Autor do AEM ou Serviço de Publicação do AEM) deve ser fornecido pelo aplicativo cliente.
++ `_authorUrl` é a URL completa para o ativo de imagem no Autor do AEM
    + O [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
-+ `_publishUrl` é a URL completa do ativo de imagem no AEM Publish
-   + O [AEM Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) geralmente é de onde a implantação de produção do aplicativo headless exibe imagens.
++ `_publishUrl` é a URL completa para o ativo de imagem na Publicação do AEM
+   + A [Publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) geralmente é de onde a implantação de produção do aplicativo headless exibe imagens.
 
 O `_dynamicUrl` é a URL recomendada para usar na entrega de ativos de imagem e deve substituir o uso de `_path`, `_authorUrl` e `_publishUrl` sempre que possível.
 
-|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | SDK do AEM | AEM 6.5 |
+|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | AEM SDK | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | Suporta imagens otimizadas para a Web? | ✔ | ✔ | ✘ | ✘ |
 
@@ -106,7 +106,7 @@ O `_assetTransform` define como o `_dynamicUrl` é construído para otimizar a r
 | `flip` | Inverter a imagem. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
 | `quality` | Qualidade da imagem em porcentagem da qualidade original. | ✘ | 1-100 |
 | `width` | Largura da imagem de saída em pixels. Quando `size` é fornecido, `width` é ignorado. | ✘ | Número inteiro positivo |
-| `preferWebP` | Se `true` e AEM fornecerem um WebP se o navegador permitir, independentemente do `format`. | ✘ | `true`, `false` |
+| `preferWebP` | Se `true` e o AEM fornecerem um WebP, se o navegador permitir, independentemente do `format`. | ✘ | `true`, `false` |
 
 
 ## Resposta do GraphQL
@@ -196,9 +196,9 @@ Vamos criar um aplicativo React simples que exiba imagens otimizadas para a Web 
 
 ### Exemplo de código
 
-Este aplicativo simples do React usa o [SDK do AEM Headless](./aem-headless-sdk.md) para consultar APIs do AEM Headless para obter um conteúdo Adventure e exibe a imagem otimizada para a Web usando o [elemento img com srcset](#img-element-with-srcset) e o [elemento picture](#picture-element). O `srcset` e o `sources` usam uma função `setParams` personalizada para anexar o parâmetro de consulta de entrega otimizado para a Web ao `_dynamicUrl` da imagem. Portanto, altere a representação da imagem entregue com base nas necessidades do cliente Web.
+Este aplicativo simples do React usa o [AEM Headless SDK](./aem-headless-sdk.md) para consultar as APIs do AEM Headless quanto a um conteúdo Adventure e exibe a imagem otimizada para a Web usando o [elemento img com srcset](#img-element-with-srcset) e o [elemento picture](#picture-element). O `srcset` e o `sources` usam uma função `setParams` personalizada para anexar o parâmetro de consulta de entrega otimizado para a Web ao `_dynamicUrl` da imagem. Portanto, altere a representação da imagem entregue com base nas necessidades do cliente Web.
 
-A consulta ao AEM é executada no gancho React personalizado [useAdventureByPath que usa o SDK AEM Headless](./aem-headless-sdk.md#graphql-persisted-queries).
+A consulta ao AEM é executada no gancho React personalizado [useAdventureByPath que usa o AEM Headless SDK](./aem-headless-sdk.md#graphql-persisted-queries).
 
 ```javascript
 // src/App.js

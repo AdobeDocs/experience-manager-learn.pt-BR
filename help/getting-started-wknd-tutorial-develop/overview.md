@@ -1,7 +1,7 @@
 ---
 title: Introdução ao AEM Sites - Tutorial WKND
-description: Saiba como implementar um site de AEM para uma marca fictícia de estilo de vida chamada WKND. Obtenha uma apresentação sobre tópicos fundamentais do Experience Manager, como configuração de projetos, arquétipos maven, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes.
-version: Cloud Service
+description: Saiba como implementar um site do AEM para uma marca fictícia de estilo de vida chamada WKND. Obtenha uma apresentação sobre tópicos fundamentais do Experience Manager, como configuração de projetos, arquétipos maven, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes.
+version: Experience Manager as a Cloud Service
 jira: KT-13565
 mini-toc-levels: 1
 index: y
@@ -13,7 +13,7 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 5%
@@ -24,11 +24,11 @@ ht-degree: 5%
 
 {{edge-delivery-services}}
 
-Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um site AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial abrange tópicos fundamentais como configuração de projetos, componentes principais, modelos editáveis, bibliotecas do lado do cliente e desenvolvimento de componentes com o Adobe Experience Manager Sites.
+Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial abrange tópicos fundamentais como configuração de projetos, componentes principais, modelos editáveis, bibliotecas do lado do cliente e desenvolvimento de componentes com o Adobe Experience Manager Sites.
 
 ## Visão geral {#wknd-tutorial-overview}
 
-O objetivo deste tutorial em várias partes é ensinar o desenvolvedor a implementar um site usando os mais recentes padrões e tecnologias no Adobe Experience Manager (AEM). Após concluir este tutorial, um desenvolvedor deve entender a base básica da plataforma e os padrões de design comuns no AEM.
+O objetivo deste tutorial em várias partes é ensinar ao desenvolvedor como implementar um site usando os padrões e as tecnologias mais recentes do Adobe Experience Manager (AEM). Após concluir este tutorial, um desenvolvedor deve entender a base básica da plataforma e os padrões de design comuns no AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
@@ -36,17 +36,17 @@ O objetivo deste tutorial em várias partes é ensinar o desenvolvedor a impleme
 
 Há duas abordagens básicas para iniciar um projeto AEM Sites.
 
-**Arquétipo de projeto AEM** - Abordagem tradicional para o desenvolvimento do AEM gerando um projeto AEM mínimo usando um modelo Maven. Essa é a abordagem recomendada para projetos AEM 6.5/6.4 e projetos AEM as a Cloud Service que preveem personalização intensa. O tutorial oferece um mergulho mais profundo no desenvolvimento do AEM.
+**Arquétipo de projeto do AEM** - Abordagem tradicional para o desenvolvimento do AEM gerando um projeto AEM mínimo usando um modelo Maven. Essa é a abordagem recomendada para projetos do AEM 6.5/6.4 e projetos do AEM as a Cloud Service que preveem personalização intensa. O tutorial oferece um mergulho mais profundo no desenvolvimento do AEM.
 
-[Inicie o tutorial com o Arquétipo de projeto AEM](./project-archetype/overview.md)
+[Inicie o tutorial com o Arquétipo de projeto do AEM](./project-archetype/overview.md)
 
-**Modelos de Site do AEM** - Também conhecido como Criação Rápida de Sites, uma abordagem low-code para gerar um Site do AEM usando um Modelo de Site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho de temas para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Disponível somente para AEM as a Cloud Service.
+**Modelos de Site do AEM** - Também conhecido como Criação Rápida de Site, uma abordagem low-code para gerar um Site do AEM usando um Modelo de Site predefinido. Use componentes e modelos prontos para uso para ativar e executar rapidamente um site. Use um fluxo de trabalho de temas para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores. Disponível somente para AEM as a Cloud Service.
 
 [Iniciar o tutorial usando um modelo de site](./site-template/create-site.md)
 
 ## Kit de interface do usuário do Adobe XD
 
-Para tornar este tutorial mais próximo de um cenário real, designers de UX talentosos Adobe criaram os modelos para o site usando o [Adobe XD](https://www.adobe.com/products/xd.html). Ao longo do tutorial, várias partes dos projetos são implementadas em um site de AEM totalmente autorável. Agradecimentos especiais ao **Lorenzo Buosi** e ao **Kilian Amendola**, que criaram um belo design para o site WKND.
+Para tornar este tutorial mais próximo de um cenário real, os talentosos designers de UX da Adobe criaram os modelos para o site usando o [Adobe XD](https://www.adobe.com/products/xd.html). Ao longo do tutorial, várias partes dos designs são implementadas em um site do AEM totalmente autorável. Agradecimentos especiais ao **Lorenzo Buosi** e ao **Kilian Amendola**, que criaram um belo design para o site WKND.
 
 Baixe os kits de interface do usuário do XD:
 
@@ -57,7 +57,7 @@ Baixe os kits de interface do usuário do XD:
 
 Uma versão concluída do Site WKND também está disponível como referência: [https://wknd.site/](https://wknd.site/)
 
-O tutorial aborda as principais habilidades de desenvolvimento necessárias para um desenvolvedor de AEM, mas *não* criará todo o site de ponta a ponta. O site de referência final é outro grande recurso para explorar e ver mais do AEM oferecendo recursos prontos para uso.
+O tutorial aborda as principais habilidades de desenvolvimento necessárias para um desenvolvedor do AEM, mas *não* criará todo o site de ponta a ponta. O site de referência concluído é outro grande recurso para explorar e ver mais dos recursos prontos para uso da AEM.
 
 Para testar o código mais recente antes de ir para o tutorial, baixe e instale a **[última versão do GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
@@ -69,4 +69,4 @@ Com o Adobe Stock, você tem acesso a mais de 140 milhões de imagens de alta qu
 
 ## Próximas etapas {#next-steps}
 
-O que você está esperando?! Saiba como [gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de Projeto AEM](./project-archetype/overview.md) ou [criar um site usando um Modelo de Site](./site-template/create-site.md).
+O que você está esperando?! Saiba como [gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de Projeto do AEM](./project-archetype/overview.md) ou [criar um site usando um Modelo de Site](./site-template/create-site.md).

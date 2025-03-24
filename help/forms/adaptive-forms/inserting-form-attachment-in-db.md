@@ -1,8 +1,8 @@
 ---
 title: Inserir anexo do formulário no banco de dados
-description: Inserir anexo de formulário no banco de dados usando o fluxo de trabalho AEM.
+description: Inserir anexo de formulário no banco de dados usando o fluxo de trabalho do AEM.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Um modelo de dados de formulário foi criado para se comunicar com o banco de da
 
 ## Criar fluxo de trabalho
 
-Ao configurar o formulário adaptável para enviar para um fluxo de trabalho AEM, você tem a opção de salvar os anexos do formulário em uma variável de fluxo de trabalho ou salvar os anexos em uma pasta especificada na carga. Para esse caso de uso, precisamos salvar os anexos em uma variável de fluxo de trabalho do tipo ArrayList of Document. Desse ArrayList, precisamos extrair o primeiro item e inicializar uma variável de documento. As variáveis de fluxo de trabalho chamadas **listOfDocuments** e **employeePhoto** foram criadas.
+Ao configurar o formulário adaptável para enviar para um fluxo de trabalho do AEM, você tem a opção de salvar os anexos do formulário em uma variável de fluxo de trabalho ou salvar os anexos em uma pasta especificada na carga. Para esse caso de uso, precisamos salvar os anexos em uma variável de fluxo de trabalho do tipo ArrayList of Document. Desse ArrayList, precisamos extrair o primeiro item e inicializar uma variável de documento. As variáveis de fluxo de trabalho chamadas **listOfDocuments** e **employeePhoto** foram criadas.
 Quando o formulário adaptável é enviado para acionar o fluxo de trabalho, uma etapa no fluxo de trabalho inicializará a variável employeePhoto usando o script ECMA. Veja a seguir o código de script ECMA
 
 ```javascript

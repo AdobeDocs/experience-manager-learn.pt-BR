@@ -1,7 +1,7 @@
 ---
 title: AEM SIDEKICK e EDGE DELIVERY SERVICES
-description: Usar o Sidekick no Edge Delivery Services para ativar o conteúdo.
-version: 6.5, Cloud Service
+description: Usar a Sidekick no Edge Delivery Services para ativar o conteúdo.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14481
 thumbnail: 3425715.jpeg
 duration: 136
 exl-id: 47fc8774-43c1-4e0b-8101-cff628059b09
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '31'
 ht-degree: 6%
@@ -21,6 +21,6 @@ ht-degree: 6%
 
 # AEM Sidekick
 
-Use o AEM Sidekick no Edge Delivery Services para ativar o conteúdo.
+Use a AEM Sidekick no Edge Delivery Services para ativar o conteúdo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)

@@ -1,7 +1,7 @@
 ---
 title: Componente personalizado
 description: Aborda a criação completa de um componente personalizado da linha de comentários que exibe o conteúdo criado. Inclui o desenvolvimento de um Modelo Sling para encapsular a lógica de negócios para preencher o componente de linha de bytes e o HTL correspondente para renderizar o componente.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ thumbnail: 30181.jpg
 doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
 duration: 1039
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Componente personalizado {#custom-component}
 
-Este tutorial aborda a criação completa de um componente AEM `Byline` personalizado que exibe o conteúdo criado em uma caixa de diálogo e explora o desenvolvimento de um Modelo do Sling para encapsular a lógica de negócios que preenche o HTL do componente.
+Este tutorial aborda a criação completa de um Componente AEM `Byline` personalizado que exibe o conteúdo criado em uma caixa de diálogo e explora o desenvolvimento de um Modelo Sling para encapsular a lógica de negócios que preenche o HTL do componente.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -42,7 +42,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
    $ git checkout tutorial/custom-component-start
    ```
 
-1. Implante a base de código em uma instância de AEM local usando suas habilidades de Maven:
+1. Implante a base de código em uma instância do AEM local usando suas habilidades do Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -50,7 +50,7 @@ Verifique o código de linha base no qual o tutorial se baseia:
 
    >[!NOTE]
    >
-   > Se estiver usando AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
+   > Se estiver usando o AEM 6.5 ou 6.4, anexe o perfil `classic` a qualquer comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -60,7 +60,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## Objetivo
 
-1. Entender como criar um componente de AEM personalizado
+1. Entender como criar um componente personalizado do AEM
 1. Saiba como encapsular a lógica de negócios com modelos Sling
 1. Saiba como usar um modelo do Sling de dentro de um script HTL
 
@@ -82,7 +82,7 @@ A implementação do componente Subtítulo inclui uma caixa de diálogo que cole
 
 Primeiro, crie a estrutura do nó do componente de Subtítulo e defina uma caixa de diálogo. Representa o componente no AEM e define implicitamente o tipo de recurso do componente por sua localização no JCR.
 
-A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem fornecer. Para esta implementação, o componente **Imagem** do Componente principal WCM do AEM é usado para manipular a criação e renderização da imagem do Subtítulo; portanto, ele deve ser definido como `sling:resourceSuperType` deste componente.
+A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem fornecer. Para esta implementação, o componente **Imagem** do Componente principal WCM do AEM é usado para tratar a criação e a renderização da imagem do Subtítulo; portanto, ele deve ser definido como `sling:resourceSuperType` deste componente.
 
 ### Criar definição de componente {#create-component-definition}
 
@@ -107,7 +107,7 @@ A caixa de diálogo expõe a interface com a qual os autores de conteúdo podem 
 
 ### Criar o script HTL {#create-the-htl-script}
 
-1. Dentro da pasta `byline`, adicione um arquivo `byline.html`, que é responsável pela apresentação HTML do componente. É importante nomear o arquivo como a pasta, pois ele se torna o script padrão que o Sling usa para renderizar esse tipo de recurso.
+1. Na pasta `byline`, adicione um arquivo `byline.html`, responsável pela apresentação do componente no HTML. É importante nomear o arquivo como a pasta, pois ele se torna o script padrão que o Sling usa para renderizar esse tipo de recurso.
 
 1. Adicione o seguinte código ao `byline.html`.
 
@@ -284,11 +284,11 @@ Seguindo a mesma abordagem da criação de caixa de diálogo, crie uma caixa de 
 
 1. Sincronize as alterações em `ui.apps` com seu IDE ou usando suas habilidades em Maven.
 
-   ![Exportar para o componente de byline do servidor AEM](assets/custom-component/export-byline-component-aem.png)
+   ![Exportar para o componente de byline do servidor do AEM](assets/custom-component/export-byline-component-aem.png)
 
 ## Adicionar o componente a uma página {#add-the-component-to-a-page}
 
-Para manter as coisas simples e focadas no desenvolvimento de componentes AEM, vamos adicionar o componente Subtítulo em seu estado atual a uma página de Artigo para verificar se a definição do nó `cq:Component` está correta. Também para verificar se o AEM reconhece a nova definição do componente e a caixa de diálogo do componente funciona para criação.
+Para simplificar as coisas e focalizar no desenvolvimento de componentes do AEM, vamos adicionar o componente Subtítulo em seu estado atual a uma página de Artigo para verificar se a definição do nó `cq:Component` está correta. Também para verificar se o AEM reconhece a nova definição de componente e a caixa de diálogo do componente funciona para criação.
 
 ### Adicionar uma imagem à AEM Assets
 
@@ -328,7 +328,7 @@ Em seguida, adicione o componente Subtítulo a uma página no AEM. Como o compon
 
    Os autores do AEM configuram e criam componentes por meio das caixas de diálogo. Nesse ponto, no desenvolvimento do componente Subtítulo, as caixas de diálogo são incluídas para coletar os dados, no entanto, a lógica para renderizar o conteúdo criado ainda não foi adicionada. Portanto, somente o espaço reservado é exibido.
 
-1. Depois de salvar a caixa de diálogo, navegue até [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) e revise como o conteúdo do componente é armazenado no nó do conteúdo do componente byline na página AEM.
+1. Depois de salvar a caixa de diálogo, navegue até [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) e revise como o conteúdo do componente é armazenado no nó do conteúdo do componente de linha de byline na página do AEM.
 
    Localize o nó de conteúdo do componente Subtítulo abaixo da página Parques de skate LA, ou seja, `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`.
 
@@ -346,7 +346,7 @@ Os Modelos do Sling são POJOs (Plain Old Java™ Objects) do Java™ orientados
 
 ### Revisar dependências do Maven {#maven-dependency}
 
-O modelo Byline Sling depende de várias APIs Java™ fornecidas pelo AEM. Essas APIs são disponibilizadas através do `dependencies` listado no arquivo POM do módulo `core`. O projeto usado para este tutorial foi criado para o AEM as a Cloud Service. No entanto, é único, pois é compatível com o AEM 6.5/6.4. Portanto, ambas as dependências para o Cloud Service e AEM 6.x estão incluídas.
+O modelo Byline Sling depende de várias APIs Java™ fornecidas pela AEM. Essas APIs são disponibilizadas através do `dependencies` listado no arquivo POM do módulo `core`. O projeto usado para este tutorial foi criado para o AEM as a Cloud Service. No entanto, é exclusivo, pois é compatível com versões anteriores do AEM 6.5/6.4. Portanto, ambas as dependências do Cloud Service e do AEM 6.x estão incluídas.
 
 1. Abra o arquivo `pom.xml` abaixo de `<src>/aem-guides-wknd/core/pom.xml`.
 1. Localizar a dependência de `aem-sdk-api` - **Somente AEM as a Cloud Service**
@@ -358,7 +358,7 @@ O modelo Byline Sling depende de várias APIs Java™ fornecidas pelo AEM. Essas
    </dependency>
    ```
 
-   A [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contém todas as APIs do Java™ públicas expostas por AEM. O `aem-sdk-api` é usado por padrão ao compilar este projeto. A versão é mantida no pom do reator pai da raiz do projeto em `aem-guides-wknd/pom.xml`.
+   A [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contém todas as APIs do Java™ públicas expostas pelo AEM. O `aem-sdk-api` é usado por padrão ao compilar este projeto. A versão é mantida no pom do reator pai da raiz do projeto em `aem-guides-wknd/pom.xml`.
 
 1. Localizar a dependência de `uber-jar` - **AEM 6.5/6.4 Somente**
 
@@ -372,7 +372,7 @@ O modelo Byline Sling depende de várias APIs Java™ fornecidas pelo AEM. Essas
    ...
    ```
 
-   O `uber-jar` é incluído somente quando o perfil `classic` é chamado, ou seja, `mvn clean install -PautoInstallSinglePackage -Pclassic`. Novamente, isso é exclusivo para este projeto. Em um projeto real, gerado pelo Arquétipo de Projeto AEM, o `uber-jar` é o padrão se a versão do AEM especificada for a 6.5 ou 6.4.
+   O `uber-jar` é incluído somente quando o perfil `classic` é chamado, ou seja, `mvn clean install -PautoInstallSinglePackage -Pclassic`. Novamente, isso é exclusivo para este projeto. Em um projeto real, gerado pelo Arquétipo de Projeto do AEM, o `uber-jar` será o padrão se a versão do AEM especificada for 6.5 ou 6.4.
 
    O [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contém todas as APIs do Java™ públicas expostas pelo AEM 6.x. A versão é mantida no pom do reator pai da raiz do projeto `aem-guides-wknd/pom.xml`.
 
@@ -386,7 +386,7 @@ O modelo Byline Sling depende de várias APIs Java™ fornecidas pelo AEM. Essas
        </dependency>
    ```
 
-   Estas são as APIs do Java™ públicas completas expostas pelos Componentes principais do AEM. Componentes principais do AEM é um projeto mantido fora do AEM e, portanto, tem um ciclo de lançamento separado. Por esse motivo, é uma dependência que precisa ser incluída separadamente e **não** incluída com `uber-jar` ou `aem-sdk-api`.
+   Estas são as APIs do Java™ públicas completas expostas pelos Componentes principais do AEM. Os Componentes principais do AEM são um projeto mantido fora do AEM e, portanto, têm um ciclo de lançamento separado. Por esse motivo, é uma dependência que precisa ser incluída separadamente e **não** incluída com `uber-jar` ou `aem-sdk-api`.
 
    Assim como o uber-jar, a versão dessa dependência é mantida no arquivo pom do reator pai de `aem-guides-wknd/pom.xml`.
 
@@ -923,7 +923,7 @@ As expressões são adicionadas por meio do operador `@` na expressão HTL.
 
 ### Exibição condicional do espaço reservado {#conditionally-displaying-the-placeholder}
 
-A maioria dos scripts HTL para Componentes AEM usa o **paradigma de espaço reservado** para fornecer uma dica visual aos autores **indicando que um componente foi criado incorretamente e não é exibido no AEM Publish**. A convenção para conduzir essa decisão é implementar um método no modelo Sling de apoio do componente, neste caso: `Byline.isEmpty()`.
+A maioria dos scripts HTL para Componentes do AEM usa o **paradigma de espaço reservado** para fornecer uma dica visual aos autores **indicando que um componente foi criado incorretamente e não é exibido na Publicação do AEM**. A convenção para conduzir essa decisão é implementar um método no modelo Sling de apoio do componente, neste caso: `Byline.isEmpty()`.
 
 O método `isEmpty()` é chamado no Modelo Sling de byline e o resultado (ou melhor, é negativo, por meio do operador `!`) é salvo em uma variável HTL chamada `hasContent`:
 
@@ -984,7 +984,7 @@ Para isso, vamos incluir o recurso de byline atual, mas forçar o tipo de recurs
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-3. Implante a base de código em uma instância de AEM local. Como foram feitas alterações em `core` e `ui.apps`, ambos os módulos precisam ser implantados.
+3. Implante a base de código em uma instância do AEM local. Como foram feitas alterações em `core` e `ui.apps`, ambos os módulos precisam ser implantados.
 
    ```shell
    $ cd aem-guides-wknd/ui.apps
@@ -1009,7 +1009,7 @@ Para isso, vamos incluir o recurso de byline atual, mas forçar o tipo de recurs
 
 ### Revisão do componente de Subtítulo não estilizado {#reviewing-the-unstyled-byline-component}
 
-1. Depois de implantar a atualização, navegue até a página [Guia Final para os Skateparks de Los Angeles](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) ou onde você adicionou o componente Subtítulo anteriormente no capítulo.
+1. Depois de implantar a atualização, navegue até a página [Guia do Ultimate para os Skateparks da América do Norte](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) ou para onde você adicionou o componente Subtítulo anteriormente no capítulo.
 
 1. A **imagem**, **nome** e **ocupações** agora aparecem e um componente de Subtítulo não estilizado está presente.
 
@@ -1017,7 +1017,7 @@ Para isso, vamos incluir o recurso de byline atual, mas forçar o tipo de recurs
 
 ### Revisão do registro do Modelo do Sling {#reviewing-the-sling-model-registration}
 
-A [exibição de Status de Modelos Sling do Console da Web do AEM](http://localhost:4502/system/console/status-slingmodels) exibe todos os Modelos Sling registrados no AEM. O modelo Byline Sling pode ser validado como instalado e reconhecido ao revisar esta lista.
+O [modo de exibição Status dos Modelos Sling do Console da Web do AEM](http://localhost:4502/system/console/status-slingmodels) exibe todos os Modelos Sling registrados no AEM. O modelo Byline Sling pode ser validado como instalado e reconhecido ao revisar esta lista.
 
 Se o **BylineImpl** não for exibido nesta lista, provavelmente será um problema com as anotações do Modelo Sling ou o Modelo não foi adicionado ao pacote correto (`com.adobe.aem.guides.wknd.core.models`) no projeto principal.
 
@@ -1096,7 +1096,7 @@ Parabéns, você criou um componente personalizado do zero usando o Adobe Experi
 
 ### Próximas etapas {#next-steps}
 
-Continue a aprender sobre o desenvolvimento de componentes AEM explorando como escrever testes JUnit para o código Byline Java™ para garantir que tudo seja desenvolvido corretamente e que a lógica de negócios implementada seja correta e completa.
+Continue a aprender sobre o desenvolvimento de componentes do AEM explorando como escrever testes JUnit para o código Byline Java™ para garantir que tudo seja desenvolvido corretamente e que a lógica de negócios implementada seja correta e completa.
 
 * [Gravação de testes de unidade ou componentes do AEM](unit-testing.md)
 

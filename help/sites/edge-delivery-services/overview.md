@@ -1,7 +1,7 @@
 ---
-title: vídeos do Edge Delivery Services
-description: Saiba como tornar os sites rápidos com o Edge Delivery Services.
-version: Cloud Service
+title: Vídeos do Edge Delivery Services
+description: Saiba como agilizar os sites com o Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -11,23 +11,23 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 12%
 
 ---
 
-# vídeos do Edge Delivery Services
+# Vídeos do Edge Delivery Services
 
-Saiba como tornar os sites rápidos com o Edge Delivery Services.
+Saiba como agilizar os sites com o Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
 Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obter detalhes completos sobre o Edge Delivery Services e seus recursos.
 
 
-## tutoriais do desenvolvedor do Edge Delivery Services
+## Tutoriais do desenvolvedor do Edge Delivery Services
 
 <!-- CARDS 
 
@@ -48,8 +48,8 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutorial de criação e Edge Delivery Services baseado em documentos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutorial de criação e Edge Delivery Services baseado em documentos"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Criação baseada em documento e tutorial do Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Criação baseada em documento e tutorial do Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,7 +57,7 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutorial de criação e Edge Delivery Services baseado em documentos">Tutorial de criação e Edge Delivery Services baseado em documentos</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Criação baseada em documento e tutorial do Edge Delivery Services">Tutorial do Edge Delivery Services e da criação com base em documentos</a>
                     </p>
                     <p class="is-size-6">Saiba como criar sites do Edge Delivery Services criados usando a criação baseada em documento.</p>
                 </div>
@@ -80,9 +80,9 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Editor universal e tutorial do Edge Delivery Services">Editor universal e tutorial do Edge Delivery Services</a>
+                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Editor universal e tutorial do Edge Delivery Services">Tutorial do Universal Editor e do Edge Delivery Services</a>
                     </p>
-                    <p class="is-size-6">Aprenda as noções básicas para criar um site Edge Delivery Services criado com o Universal Editor.</p>
+                    <p class="is-size-6">Saiba mais sobre as noções básicas para a criação de sites do Edge Delivery Services criados com o Universal Editor.</p>
                 </div>
                 <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Iniciar o tutorial</span>
@@ -152,7 +152,7 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/aem-boilerplate.md" title="Usar modelo padrão">Modelo do AEM</a>
             </p>
-            <p class="is-size-6">Use o modelo de boletim AEM para configurar o repositório de código.</p>
+            <p class="is-size-6">Use o modelo do AEM Boilerplate para configurar o repositório de códigos.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -231,10 +231,10 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Visualização e conteúdo do Publish"
+            <a href="./developing/preview-and-publish.md" title="Visualizar e publicar conteúdo"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Visualização e conteúdo do Publish">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Visualizar e publicar conteúdo">
             </a>
           </figure>
         </div>
@@ -243,9 +243,9 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Visualização e conteúdo do Publish">Visualizar e publicar conteúdo</a>
+              <a href="./developing/preview-and-publish.md" title="Visualizar e publicar conteúdo">Visualizar e publicar conteúdo</a>
             </p>
-            <p class="is-size-6">Pré-visualize e publique conteúdo usando o AEM Sidekick.</p>
+            <p class="is-size-6">Pré-visualizar e publicar conteúdo usando o AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -373,7 +373,7 @@ Revise a [documentação](https://experienceleague.adobe.com/en/docs/experience-
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/git.md" title="Integrar ao Git">Integrar com o Git</a>
             </p>
-            <p class="is-size-6">Configure Git e Edge Delivery Services.</p>
+            <p class="is-size-6">Configure o Git e o Edge Delivery Services.</p>
             <a href="./developing/git.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

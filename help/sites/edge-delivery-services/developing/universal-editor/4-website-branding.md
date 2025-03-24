@@ -1,7 +1,7 @@
 ---
 title: Adicionar identidade visual do site
-description: Defina CSS global, variáveis CSS e fontes da Web para um site Edge Delivery Services.
-version: Cloud Service
+description: Defina CSS global, variáveis CSS e fontes da Web para um site do Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Conforme você desenvolve um site e se encontra repetindo os mesmos valores de C
 
 Os elementos simples são estilizados diretamente pelo nome do elemento, em vez de usar uma classe CSS. Por exemplo, em vez de estilizar uma classe CSS `.page-heading`, os estilos são aplicados ao elemento `h1` usando `h1 { ... }`.
 
-No arquivo `styles/styles.css`, um conjunto de estilos base é aplicado a elementos HTML simples. Os sites da Edge Delivery Services priorizam o uso de elementos simples porque estão alinhados com o HTML semântico nativo do Edge Delivery Service.
+No arquivo `styles/styles.css`, um conjunto de estilos base é aplicado a elementos HTML simples. Os sites da Edge Delivery Services priorizam o uso de elementos simples, pois estão alinhados com a HTML semântica nativa do Edge Delivery Service.
 
 Para alinhar com a marca WKND, vamos estilizar alguns elementos simples em `styles.css`:
 
@@ -123,7 +123,7 @@ Esses estilos garantem que os elementos `h2`, a menos que sejam substituídos, s
 
 ### Elementos inferidos
 
-No Edge Delivery Services, o código `scripts.js` e `aem.js` do projeto aprimoram automaticamente elementos de HTML sem sistema específicos com base em seu contexto dentro do HTML.
+No Edge Delivery Services, o código `scripts.js` e `aem.js` do projeto aprimoram automaticamente elementos HTML básicos específicos com base em seu contexto no HTML.
 
 Por exemplo, elementos de âncora (`<a>`) criados em sua própria linha - em vez de embutidos com o texto ao redor - são inferidos como botões com base nesse contexto. Essas âncoras são automaticamente encapsuladas com um contêiner `div` com a classe CSS `button-container` e o elemento âncora tem uma classe CSS `button` adicionada.
 
@@ -174,7 +174,7 @@ Esse CSS define os estilos de botão de base e inclui tratamentos específicos d
 
 ## Fontes da Web
 
-Os projetos do Edge Delivery Services otimizam o uso de fontes da web para manter o alto desempenho e minimizar o impacto nas pontuações do Lighthouse. Esse método garante a renderização rápida sem comprometer a identidade visual do site. Veja como implementar fontes da Web com eficiência para obter um desempenho ideal.
+Os projetos do Edge Delivery Services otimizam o uso de fontes da Web para manter o alto desempenho e minimizar o impacto nas pontuações do Lighthouse. Esse método garante a renderização rápida sem comprometer a identidade visual do site. Veja como implementar fontes da Web com eficiência para obter um desempenho ideal.
 
 ### Faces de fontes
 
@@ -289,13 +289,13 @@ As `roboto-fallback` e `roboto-condensed-fallback` são fontes substitutas atual
 
 ### Fontes de fallback
 
-As fontes da Web geralmente afetam o desempenho devido ao seu tamanho, aumentando potencialmente as pontuações Cumulative Layout Shift (CLS) e reduzindo as pontuações gerais do Lighthouse. Para garantir a exibição instantânea do texto enquanto as fontes da Web estão sendo carregadas, os projetos do Edge Delivery Services usam fontes substitutas nativas do navegador. Essa abordagem ajuda a manter uma experiência do usuário suave, enquanto a fonte desejada se aplica.
+As fontes da Web geralmente afetam o desempenho devido ao seu tamanho, aumentando potencialmente as pontuações Cumulative Layout Shift (CLS) e reduzindo as pontuações gerais do Lighthouse. Para garantir a exibição instantânea do texto enquanto as fontes da Web estão sendo carregadas, os projetos Edge Delivery Services usam fontes substitutas nativas do navegador. Essa abordagem ajuda a manter uma experiência do usuário suave, enquanto a fonte desejada se aplica.
 
-Para selecionar a melhor fonte de fallback, use a [extensão do Adobe Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), que determina uma fonte estritamente correspondente para os navegadores usarem antes que a fonte personalizada seja carregada. As declarações de fonte de fallback resultantes devem ser adicionadas ao arquivo `styles/styles.css` para melhorar o desempenho e garantir uma experiência perfeita para os usuários.
+Para selecionar a melhor fonte de fallback, use a [Extensão Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) da Adobe, que determina uma fonte exatamente correspondente para os navegadores usarem antes que a fonte personalizada seja carregada. As declarações de fonte de fallback resultantes devem ser adicionadas ao arquivo `styles/styles.css` para melhorar o desempenho e garantir uma experiência perfeita para os usuários.
 
 ![Extensão Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Para usar a [extensão do Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verifique se a página da Web tem fontes da Web aplicadas nas mesmas variações usadas no site do Edge Delivery Services. Este tutorial demonstra a extensão no [wknd.site](http://wknd.site/us/en.html). Ao desenvolver um site, aplique a extensão ao site em que está sendo trabalhado, em vez de [wknd.site](http://wknd.site/us/en.html).
+Para usar a [extensão do Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verifique se a página da Web tem fontes da Web aplicadas às mesmas variações usadas no site do Edge Delivery Services. Este tutorial demonstra a extensão no [wknd.site](http://wknd.site/us/en.html). Ao desenvolver um site, aplique a extensão ao site em que está sendo trabalhado, em vez de [wknd.site](http://wknd.site/us/en.html).
 
 ```css
 /* styles/styles.css */
@@ -385,10 +385,10 @@ Depois que as alterações forem enviadas para a ramificação `wknd-styles`, cr
    ```
 
    * O `Fix #1` faz referência ao problema do GitHub criado anteriormente.
-   * Os URLs de teste informam à Sincronização de código AEM quais ramificações usar para validação e comparação. A URL &quot;Depois&quot; usa a ramificação de trabalho `wknd-styles` para verificar como as alterações de código afetam o desempenho do site.
+   * Os URLs de teste informam à Sincronização de código do AEM quais ramificações usar para validação e comparação. A URL &quot;Depois&quot; usa a ramificação de trabalho `wknd-styles` para verificar como as alterações de código afetam o desempenho do site.
 
 6. Clique em **Criar solicitação de pull**.
-7. Aguarde o [aplicativo GitHub de Sincronização de Código AEM](./1-new-code-project.md) para **concluir as verificações de qualidade**. Se eles falharem, resolva os erros e execute as verificações novamente.
+7. Aguarde o [aplicativo GitHub da Sincronização de Código do AEM](./1-new-code-project.md) para **concluir as verificações de qualidade**. Se eles falharem, resolva os erros e execute as verificações novamente.
 8. Depois que as verificações forem aprovadas, **mescle a solicitação de pull** em `main`.
 
 Com as alterações mescladas em `main`, elas não são consideradas implantadas em produção, e o novo desenvolvimento pode continuar com base nessas atualizações.

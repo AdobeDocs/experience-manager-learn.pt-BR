@@ -2,7 +2,7 @@
 title: Carregar e acionar uma chamada do Target
 description: Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags.
 feature: Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 # Carregar e acionar uma chamada do Target {#load-fire-target}
 
-Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
+Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente da Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Regra de carregamento de página
 
-A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da Página AEM é carregada, ela aciona um evento `cmp:show`. No vídeo, a regra `tags Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
+A Camada de dados de clientes Adobe é uma camada de dados orientada por eventos. Quando a camada de dados da Página do AEM é carregada, ela aciona um evento `cmp:show`. No vídeo, a regra `tags Library Loaded` é invocada usando um evento personalizado. Abaixo, você pode encontrar os trechos de código usados no vídeo para o evento personalizado e para os elementos de dados.
 
 ### Evento de exibição de página personalizada{#page-event}
 
@@ -80,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Uma função personalizada define o `pageShownEventHandler` e escuta os eventos emitidos pelos Componentes Principais do AEM, deriva as informações relevantes do Componente Principal, empacota-as em um objeto de evento e aciona o Evento de tags com as informações do evento derivado em sua carga.
+Uma função personalizada define o `pageShownEventHandler` e acompanha eventos emitidos pelos Componentes Principais do AEM, deriva as informações relevantes do Componente Principal, empacota-o em um objeto de evento e aciona o Evento de tags com as informações do evento derivado em sua carga.
 
 A Regra de marcas é disparada usando a função `trigger(...)` das marcas, que é __only__ disponível em uma definição de trecho de código Personalizado do Evento de Regra.
 
@@ -115,7 +115,7 @@ if (event && event.component && event.component.hasOwnProperty('repo:path')) {
 }
 ```
 
-Esse código retorna o caminho da página AEM.
+Esse código retorna o caminho da página do AEM.
 
 ![Caminho da página](assets/pagepath.png)
 
@@ -127,7 +127,7 @@ if (event && event.component && event.component.hasOwnProperty('dc:title')) {
 }
 ```
 
-Esse código retorna o título da página AEM.
+Esse código retorna o título da página do AEM.
 
 ![Título da página](assets/pagetitle.png)
 
@@ -160,7 +160,7 @@ window.targetGlobalSettings = {
 
 ## Links de suporte
 
-+ [Documentação da Camada de Dados do Cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Documentação da Camada de Dados de Clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Usando a Camada de Dados do Cliente Adobe e a Documentação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
++ [Usando a Camada de Dados de Clientes Adobe e a Documentação de Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR)
 + [Introdução ao Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: 87e790c9-6ef6-4337-90b8-687ca576b21a
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -42,7 +43,7 @@ Para criar o arquivo HTL para o componente Países:
 
 ![modelo-sling](assets/countriesdropdown.png)
 
-Por fim, sincronize seu projeto com essas atualizações para garantir que as alterações no repositório do CRX sejam refletidas em seu projeto AEM.
+Por fim, sincronize seu projeto com essas atualizações para garantir que as alterações no repositório do CRX sejam refletidas em seu projeto do AEM.
 
 
 ## Próximas etapas

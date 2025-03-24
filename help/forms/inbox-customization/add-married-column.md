@@ -3,14 +3,14 @@ title: Adicionar colunas personalizadas
 description: Adicionar colunas personalizadas para exibir dados adicionais do fluxo de trabalho
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Adicionar colunas personalizadas
 
-Para exibir os dados do workflow na caixa de entrada, precisamos definir e preencher variáveis no workflow. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para você ter uma vantagem inicial, fornecemos um fluxo de trabalho de amostra pronto para ser implantado em seu servidor AEM.
+Para exibir os dados do workflow na caixa de entrada, precisamos definir e preencher variáveis no workflow. O valor da variável precisa ser definido antes que uma tarefa seja atribuída a um usuário. Para você ter uma vantagem inicial, fornecemos um fluxo de trabalho de amostra pronto para ser implantado em seu servidor do AEM.
 
 * [Logon no AEM](http://localhost:4502/crx/de/index.jsp)
 * [Importar o fluxo de trabalho de revisão](assets/review-workflow.zip)
@@ -73,13 +73,13 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->É necessário incluir AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
+>É necessário incluir o AEM 6.5.5 Uber.jar em seu projeto para que o código acima funcione
 
 ![uber-jar](assets/uber-jar.PNG)
 
 ## Testar no servidor
 
-* [Fazer logon no console da Web AEM](http://localhost:4502/system/console/bundles)
+* [Fazer logon no console da Web do AEM](http://localhost:4502/system/console/bundles)
 * [Implantar e iniciar o pacote de personalização da caixa de entrada](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Abra sua caixa de entrada](http://localhost:4502/aem/inbox)
 * Abra o Admin Control clicando no ícone _Exibição da Lista_ ao lado do botão _Criar_

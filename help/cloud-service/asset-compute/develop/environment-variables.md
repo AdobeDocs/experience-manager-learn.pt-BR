@@ -1,8 +1,8 @@
 ---
 title: Configurar as variáveis de ambiente para extensibilidade do Asset Compute
-description: As variáveis de ambiente são mantidas no arquivo .env para desenvolvimento local e são usadas para fornecer credenciais de Adobe I/O e credenciais de armazenamento de nuvem necessárias para o desenvolvimento local.
+description: As variáveis de ambiente são mantidas no arquivo .env para desenvolvimento local e são usadas para fornecer credenciais do Adobe I/O e credenciais de armazenamento de nuvem necessárias para o desenvolvimento local.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6270
 thumbnail: KT-6270.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
 duration: 121
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 ![arquivo env. dot](assets/environment-variables/dot-env-file.png)
 
-Antes de iniciar o desenvolvimento de trabalhadores do Asset Compute, verifique se o projeto está configurado com informações de armazenamento em Adobe I/O e nuvem. Essas informações são armazenadas no `.env` do projeto, que é usado apenas para desenvolvimento local, e não são salvas no Git. O arquivo `.env` fornece uma maneira conveniente de expor pares de chave/valores ao ambiente de desenvolvimento local do Asset compute local. Ao [implantar](../deploy/runtime.md) trabalhadores de Asset compute no Adobe I/O Runtime, o arquivo `.env` não é usado, mas um subconjunto de valores é transmitido por meio de variáveis de ambiente. Outros segredos e parâmetros personalizados também podem ser armazenados no arquivo `.env`, como credenciais de desenvolvimento para serviços Web de terceiros.
+Antes de iniciar o desenvolvimento de trabalhadores do Asset Compute, verifique se o projeto está configurado com informações de armazenamento do Adobe I/O e da nuvem. Essas informações são armazenadas no `.env` do projeto, que é usado apenas para desenvolvimento local, e não são salvas no Git. O arquivo `.env` fornece uma maneira conveniente de expor pares de chave/valores ao ambiente de desenvolvimento local do Asset Compute. Ao [implantar](../deploy/runtime.md) trabalhadores do Asset Compute para o Adobe I/O Runtime, o arquivo `.env` não é usado, mas um subconjunto de valores é transmitido por meio de variáveis de ambiente. Outros segredos e parâmetros personalizados também podem ser armazenados no arquivo `.env`, como credenciais de desenvolvimento para serviços Web de terceiros.
 
 ## Referenciar o `private.key`
 
 ![chave privada](assets/environment-variables/private-key.png)
 
-Abra o arquivo `.env`, remova o comentário da chave `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` e forneça o caminho absoluto em seu sistema de arquivos para o `private.key` que é emparelhado com o certificado público adicionado ao seu projeto Adobe I/O App Builder.
+Abra o arquivo `.env`, remova o comentário da chave `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` e forneça o caminho absoluto em seu sistema de arquivos para o `private.key` que é emparelhado com o certificado público adicionado ao seu projeto do Adobe I/O App Builder.
 
 + Se o par de chaves foi gerado pelo Adobe I/O, ele foi baixado automaticamente como parte do `config.zip`.
-+ Se você forneceu a chave pública para o Adobe I/O, então você também deve estar de posse da chave privada correspondente.
++ Se você forneceu a chave pública para o Adobe I/O, também deverá estar de posse da chave privada correspondente.
 + Se você não tiver esses pares de chaves, poderá gerar novos pares de chaves ou fazer upload de novas chaves públicas na parte inferior do:
   [https://console.adobe.com](https://console.adobe.io) > Seu projeto do Asset Compute App Builder > Workspaces @ Development > Conta de Serviço (JWT).
 
@@ -94,9 +94,9 @@ AWS_REGION=us-east-1
 
 ## Validar a configuração do projeto
 
-Após configurar o projeto de Asset compute gerado, valide a configuração antes de fazer alterações no código para garantir que os serviços de suporte sejam provisionados nos arquivos `.env`.
+Após configurar o projeto Asset Compute gerado, valide a configuração antes de fazer alterações no código para garantir que os serviços de suporte sejam provisionados nos arquivos `.env`.
 
-Para iniciar a Ferramenta de desenvolvimento do Asset Compute para o projeto do Asset Compute:
+Para iniciar a Ferramenta de desenvolvimento do Asset Compute para o projeto Asset Compute:
 
 1. Abra uma linha de comando na raiz do projeto Asset Compute (no Código VS, isso pode ser aberto diretamente no IDE via Terminal > Novo terminal) e execute o comando:
 
@@ -104,7 +104,7 @@ Para iniciar a Ferramenta de desenvolvimento do Asset Compute para o projeto do 
    $ aio app run
    ```
 
-1. A Ferramenta de Desenvolvimento do Asset compute local será aberta no navegador da Web padrão em __http://localhost:9000__.
+1. A Ferramenta de Desenvolvimento do Asset Compute local será aberta no navegador da Web padrão em __http://localhost:9000__.
 
    ![aio aplicativo executado](assets/environment-variables/aio-app-run.png)
 

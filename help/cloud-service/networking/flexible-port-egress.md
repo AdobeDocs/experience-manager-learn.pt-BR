@@ -1,7 +1,7 @@
 ---
 title: Saída de porta flexível
 description: Saiba como configurar e usar saída de porta flexível para suportar conexões externas do AEM as a Cloud Service com serviços externos.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Saiba como configurar e usar saída de porta flexível para suportar conexões e
 
 ## O que é saída de porta flexível?
 
-Saída de porta flexível permite que regras específicas e personalizadas de encaminhamento de porta sejam conectadas ao AEM as a Cloud Service, permitindo que conexões do AEM a serviços externos sejam feitas.
+Saída de porta flexível permite que regras específicas e personalizadas de encaminhamento de porta sejam conectadas ao AEM as a Cloud Service, permitindo que sejam feitas conexões do AEM com serviços externos.
 
 Um Programa Cloud Manager só pode ter um tipo de infraestrutura de rede __único__. Certifique-se de que a saída de porta flexível seja o [tipo mais apropriado de infraestrutura de rede](./advanced-networking.md) para o AEM as a Cloud Service antes de executar os comandos a seguir.
 
@@ -174,7 +174,7 @@ Com a saída de porta flexível criada, agora é possível configurar as regras 
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-   Se sua implantação do AEM __only__ exigir conexões HTTP/HTTPS (porta 80/443) com um serviço externo, deixe a matriz `portForwards` vazia, pois essas regras são necessárias somente para solicitações não HTTP/HTTPS.
+   Se sua implantação do AEM __only__ exigir conexões HTTP/HTTPS (porta 80/443) para um serviço externo, deixe a matriz `portForwards` vazia, pois essas regras são necessárias somente para solicitações não HTTP/HTTPS.
 
 1. Para cada ambiente, valide se as regras de saída estão em vigor usando a operação [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) da API do Cloud Manager.
 
@@ -190,7 +190,7 @@ Com a saída de porta flexível criada, agora é possível configurar as regras 
 
 1. Configurações flexíveis de saída de porta podem ser atualizadas usando a operação [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) da API do Cloud Manager. Lembre-se de que `enableEnvironmentAdvancedNetworkingConfiguration` é uma operação `PUT`, portanto todas as regras devem ser fornecidas com cada invocação desta operação.
 
-1. Agora, você pode usar a configuração flexível de saída de porta em seu código e configuração personalizados do AEM.
+1. Agora, você pode usar a configuração flexível de saída de porta no código e configuração personalizados do AEM.
 
 
 ## Conexão com serviços externos por meio de saída de porta flexível
@@ -202,14 +202,14 @@ Com o proxy de saída de porta flexível ativado, o código e a configuração d
 1. chamadas não HTTP/HTTPS para serviços externos
    + Inclui chamadas não HTTP, como conexões com servidores de email, bancos de dados SQL ou serviços que são executados em outros protocolos não HTTP/HTTPS.
 
-As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas por padrão e não precisam de configuração ou considerações extras.
+As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas por padrão e não precisam de configuração ou considerações adicionais.
 
 
 ### HTTP/HTTPS em portas fora do padrão
 
 Ao criar conexões HTTP/HTTPS com portas fora do padrão (não-80/443) do AEM, as conexões devem ser feitas por meio de hosts e portas especiais, fornecidas por meio de espaços reservados.
 
-O AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que são mapeadas para proxies HTTP/HTTPS do AEM.
+O AEM fornece dois conjuntos de variáveis especiais do sistema Java™ que mapeiam para proxies HTTP/HTTPS da AEM.
 
 | Nome da variável | Utilização | Código Java™ | Configuração OSGi |
 | - |  - | - | - |
@@ -261,7 +261,7 @@ As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexão SQL usando JDBC DataSourcePool" src="./assets/code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexão SQL usando JDBC DataSourcePool</a></strong></div>
       <p>
-            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC do AEM.
+            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC da AEM.
       </p>
     </td>   
    <td>
@@ -275,7 +275,7 @@ As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_
       <a  href="./examples/email-service.md"><img alt="VPN (Virtual Private Network)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Serviço de email</a></strong></div>
       <p>
-        Exemplo de configuração OSGi usando AEM para se conectar a serviços de email externos.
+        Exemplo de configuração OSGi usando o AEM para conectar-se a serviços de email externos.
       </p>
     </td>   
 </tr></table>

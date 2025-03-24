@@ -1,8 +1,8 @@
 ---
-title: Integrar trabalhadores Assets compute com perfis de processamento AEM
-description: O AEM as a Cloud Service integra-se aos trabalhadores do Asset Compute implantados no Adobe I/O Runtime por meio de Perfis de processamento AEM Assets. Os Perfis de processamento são configurados no serviço Autor para processar ativos específicos usando trabalhadores personalizados e armazenar os arquivos gerados pelos trabalhadores como representações de ativos.
+title: Integrar os trabalhadores do Asset Compute aos perfis de processamento do AEM
+description: O AEM as a Cloud Service integra-se aos funcionários da Asset Compute implantados no Adobe I/O Runtime por meio de perfis de processamento do AEM Assets. Os Perfis de processamento são configurados no serviço Autor para processar ativos específicos usando trabalhadores personalizados e armazenar os arquivos gerados pelos trabalhadores como representações de ativos.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
@@ -11,14 +11,14 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
 
 ---
 
-# Integrar a perfis de processamento AEM
+# Integrar a perfis de processamento do AEM
 
 Para que os trabalhadores do Asset Compute gerem representações personalizadas no AEM as a Cloud Service, eles devem ser registrados no serviço de Autor do AEM as a Cloud Service por meio de Perfis de processamento. Todos os ativos sujeitos a esse Perfil de processamento terão o trabalhador chamado após o upload ou o reprocessamento e a representação personalizada será gerada e disponibilizada por meio das representações do ativo.
 
@@ -51,7 +51,7 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
       + Toque em __Adicionar parâmetro__
          + Chave: `brightness`
          + Valor: `0.10`
-      + Esses pares de chave/valor passados para o trabalhador do Asset Compute e disponíveis por meio do objeto do JavaScript `rendition.instructions`.
+      + Esses pares de chave/valor passados para o Asset Compute Worker e disponíveis por meio do objeto JavaScript `rendition.instructions`.
    + __Tipos MIME__
       + __Inclui:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + Esses tipos MIME são os únicos dos módulos npm do trabalhador. Esta lista limita os que são processados pelo funcionário personalizado.
@@ -75,7 +75,7 @@ Primeiro, crie um novo Perfil de processamento que chamará o trabalhador com os
 
 ## Concluído!
 
-Parabéns! Você concluiu o [tutorial](../overview.md) sobre como estender os microsserviços do AEM as a Cloud Service Asset Compute! Agora você deve ter a capacidade de configurar, desenvolver, testar, depurar e implantar trabalhadores do Asset Compute personalizados para uso pelo serviço de Autor do AEM as a Cloud Service.
+Parabéns! Você concluiu o [tutorial](../overview.md) sobre como estender os microsserviços do AEM as a Cloud Service Asset Compute! Agora você deve ter a capacidade de configurar, desenvolver, testar, depurar e implantar trabalhadores personalizados do Asset Compute para uso pelo serviço de autor do AEM as a Cloud Service.
 
 ### Revisar o código-fonte completo do projeto no Github
 

@@ -1,7 +1,7 @@
 ---
-title: Liberação de Dispatcher do AEM
+title: Liberação do AEM Dispatcher
 description: Entenda como o AEM invalida arquivos de cache antigos do Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -58,7 +58,7 @@ A seguir há uma captura de tela de exemplo de um agente de replicação de libe
 
 ### REPLICAÇÃO DE LIBERAÇÃO DO DISPATCHER RECEBENDO HOST VIRTUAL
 
-O módulo Dispatcher procura por cabeçalhos específicos para saber quando uma solicitação de POST é algo a ser transmitido para renderizações de AEM ou se é serializado como uma solicitação de liberação e precisa ser manipulado pelo próprio manipulador Dispatcher.
+O módulo Dispatcher procura por cabeçalhos específicos para saber quando uma solicitação POST é algo a ser transmitido para as renderizações do AEM ou se é serializado como uma solicitação de liberação e precisa ser manipulado pelo próprio manipulador Dispatcher.
 
 Esta é uma captura de tela da página de configuração, que mostra esses valores:
 ![imagem da guia de configurações da tela de configuração principal com o Tipo de Serialização mostrado como Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
@@ -69,15 +69,15 @@ A página de configuração padrão mostra `Serialization Type` como `Dispatcher
 
 Na guia `Transport`, você pode ver o `URI` sendo definido para apontar para o endereço IP da Dispatcher que receberá as solicitações de liberação.  O caminho `/dispatcher/invalidate.cache` não é como o módulo determina se é uma liberação, é apenas um terminal óbvio que você pode ver no log de acesso para saber se era uma solicitação de liberação.  Na guia `Extended`, veremos tudo contido ali para qualificar se é uma solicitação de liberação do módulo Dispatcher.
 
-![Captura de tela da guia Expandido do agente de replicação.  Observe os cabeçalhos que são enviados com a solicitação POST enviada para informar ao Dispatcher para liberar](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Captura de tela da guia Expandido do agente de replicação.  Observe que os cabeçalhos são enviados com a solicitação POST para avisar a Dispatcher para liberar](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
 O `HTTP Method` para solicitações de liberação é apenas uma solicitação `GET` com alguns cabeçalhos de solicitação especiais:
 - CQ-Action
    - Usa uma variável do AEM com base na solicitação, e o valor geralmente é *ativar ou excluir*
 - CQ-Handle
-   - Usa uma variável AEM com base na solicitação, e o valor geralmente é o caminho completo para o item liberado, por exemplo `/content/dam/logo.jpg`
+   - Usa uma variável do AEM com base na solicitação, e o valor geralmente é o caminho completo para o item liberado, por exemplo `/content/dam/logo.jpg`
 - CQ-Path
-   - Usa uma variável AEM com base na solicitação, e o valor geralmente é o caminho completo para o item que está sendo liberado, por exemplo `/content/dam`
+   - Usa uma variável do AEM com base na solicitação, e o valor geralmente é o caminho completo para o item que está sendo liberado, por exemplo `/content/dam`
 - Host
    - É aqui que o cabeçalho `Host` é falsificado para direcionar um `VirtualHost` específico que está configurado no servidor Web Apache do Dispatcher (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  O valor inserido no código que corresponde a uma entrada no `ServerName` ou `ServerAlias` do arquivo `aem_flush.vhost`
 
@@ -150,7 +150,7 @@ Neste exemplo, use uma configuração de nível 4 do arquivo stat. Isso garantir
 Quando uma solicitação de conteúdo é recebida, ocorre a mesma rotina
 
 1. O carimbo de data/hora do arquivo `.stat` é comparado ao do arquivo solicitado
-2. Se o arquivo `.stat` for mais recente que o arquivo solicitado, ele excluirá o conteúdo armazenado em cache e obterá um novo a partir do AEM e, em seguida, o armazenará em cache.  Em seguida, serve o conteúdo
+2. Se o arquivo `.stat` for mais recente que o arquivo solicitado, ele excluirá o conteúdo armazenado em cache e obterá um novo arquivo do AEM e, em seguida, o armazenará em cache.  Em seguida, serve o conteúdo
 3. Se o arquivo `.stat` for mais antigo que o arquivo solicitado, ele saberá que o arquivo é novo e pode fornecer o conteúdo.
 
 ### HANDSHAKE DE CACHE - EXEMPLO 1
@@ -171,7 +171,7 @@ A data e hora do arquivo `logo.jpg` é 31/10/2019 às 13:13
 
 A data e hora do arquivo `.stat` mais próximo é 01/11/2019 às 12:22
 
-Como você pode ver neste exemplo, o arquivo é mais antigo que o arquivo `.stat` e será removido, e uma arquivo novo extraído do AEM o substituirá no cache antes de ser vinculado ao usuário final que o solicitou.
+Como você pode ver neste exemplo, o arquivo é mais antigo que o arquivo `.stat` e será removido, e uma arquivo novo será extraído do AEM para substituí-lo no cache antes de ser vinculado ao usuário final que o solicitou.
 
 ## Configurações do arquivo farm
 

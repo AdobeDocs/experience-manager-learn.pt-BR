@@ -1,7 +1,7 @@
 ---
 title: Migração de conteúdo usando a ferramenta Transferência de conteúdo
 description: Saiba como a Ferramenta de transferência de conteúdo ajuda a migrar o conteúdo do AEM 6 para o AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 3%
@@ -34,10 +34,10 @@ A ferramenta Transferência de conteúdo é instalada no AEM 6.3+ e transfere co
 
 + Baixe a [ferramenta de transferência de conteúdo mais recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
 + Transfira o conteúdo final do AEM Author 6.3+ para o serviço do AEM as a Cloud Service Author.
-   + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Author contendo o conteúdo final a ser transferido.
+   + Instale a Ferramenta de transferência de conteúdo no Autor do AEM 6.3+ que contém o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
-+ Transfira o conteúdo final do AEM Publish 6.3+ para o serviço AEM as a Cloud Service Publish.
-   + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Publish que contém o conteúdo final a ser transferido.
++ Transfira o conteúdo final do AEM Publish 6.3+ para o serviço de publicação do AEM as a Cloud Service.
+   + Instale a Ferramenta de transferência de conteúdo no AEM 6.3+ Publicar contendo o conteúdo final a ser transferido.
    + Execute a ferramenta Transferência de conteúdo em lotes, transferindo conjuntos de conteúdo.
 + Opcionalmente, &quot;complemente&quot; o conteúdo no AEM as a Cloud Service, transferindo novo conteúdo desde a última transferência de conteúdo
 
@@ -66,7 +66,7 @@ Além disso, verifique se você concluiu o exercício prático anterior:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Práticas com a ferramenta Transferência de conteúdo</div>
             <p style="margin:1rem 0">
-                Explore como a ferramenta Transferência de conteúdo pode mover automaticamente o conteúdo do AEM 6 para o AEM as a Cloud Service.
+                Saiba como a ferramenta Transferência de conteúdo pode mover automaticamente o conteúdo do AEM 6 para o AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

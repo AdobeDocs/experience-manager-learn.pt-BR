@@ -1,14 +1,14 @@
 ---
 title: Gerenciar segredos no AEM as a Cloud Service
-description: Conheça as práticas recomendadas para gerenciar segredos no AEM as a Cloud Service, usando ferramentas e técnicas fornecidas pelo AEM para proteger suas informações confidenciais, garantindo que seu aplicativo permaneça seguro e confidencial.
-version: Cloud Service
+description: Conheça as práticas recomendadas para gerenciar segredos no AEM as a Cloud Service, usando ferramentas e técnicas fornecidas pela AEM para proteger suas informações confidenciais, garantindo que seu aplicativo permaneça seguro e confidencial.
+version: Experience Manager as a Cloud Service
 topic: Development, Security
 feature: OSGI, Cloud Manager
 role: Developer
 jira: KT-15880
 level: Intermediate, Experienced
 exl-id: 856b7da4-9ee4-44db-b245-4fdd220e8a4e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Gerenciamento de segredos no AEM as a Cloud Service
 
-O gerenciamento de segredos, como chaves de API e senhas, é fundamental para manter a segurança do aplicativo. O Adobe Experience Manager (AEM) as a Cloud Service ferramentas robustas para manipular segredos com segurança.
+O gerenciamento de segredos, como chaves de API e senhas, é fundamental para manter a segurança do aplicativo. O Adobe Experience Manager (AEM) as a Cloud Service oferece ferramentas eficientes para manipular segredos com segurança.
 
-Neste tutorial, você aprenderá as práticas recomendadas para gerenciar segredos no AEM. Abordaremos as ferramentas e técnicas fornecidas pelo AEM para proteger suas informações confidenciais, garantindo que seu aplicativo permaneça seguro e confidencial.
+Neste tutorial, você aprenderá as práticas recomendadas para gerenciar segredos no AEM. Abordaremos as ferramentas e técnicas fornecidas pela AEM para proteger suas informações confidenciais, garantindo que seu aplicativo permaneça seguro e confidencial.
 
 Este tutorial presume um conhecimento prático do desenvolvimento em Java do AEM, serviços OSGi, Modelos Sling e Adobe Cloud Manager.
 
@@ -82,7 +82,7 @@ public interface SecretsManager {
 
 Para expor valores secretos no serviço OSGi, mapeie-os para configurações OSGi usando [valores de configuração secreta OSGi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#secret-configuration-values). Defina o nome da propriedade OSGi como a chave para recuperar o valor secreto do método `SecretsManager.getSecret()`.
 
-Defina os segredos no arquivo de configuração OSGi `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` em seu projeto AEM Maven. Cada propriedade representa um segredo exposto no AEM, com o valor definido pelo Cloud Manager. A chave é o nome da propriedade OSGi, usada para recuperar o valor secreto do serviço `SecretsManager`.
+Defina os segredos no arquivo de configuração OSGi `/apps/example/osgiconfig/config/com.example.core.util.impl.SecretsManagerImpl.cfg.json` em seu projeto AEM Maven. Cada propriedade representa um segredo exposto no AEM, com o valor definido por meio do Cloud Manager. A chave é o nome da propriedade OSGi, usada para recuperar o valor secreto do serviço `SecretsManager`.
 
 ```json
 {
@@ -99,7 +99,7 @@ Os segredos podem ser consumidos do serviço OSGi de várias maneiras, como a pa
 
 ### Do modelo Sling
 
-Os Modelos Sling geralmente fornecem lógica de negócios para componentes do site AEM. O serviço OSGi `SecretsManager` pode ser consumido por meio da anotação `@OsgiService` e usado no Modelo Sling para recuperar o valor secreto.
+Os Modelos Sling geralmente fornecem lógica de negócios para os componentes do site do AEM. O serviço OSGi `SecretsManager` pode ser consumido por meio da anotação `@OsgiService` e usado no Modelo Sling para recuperar o valor secreto.
 
 ```java
 import com.example.core.util.SecretsManager;
@@ -127,7 +127,7 @@ public class ExampleDatabaseModelImpl implements ExampleDatabaseModel {
 
 ### Do serviço OSGi
 
-Os serviços OSGi geralmente expõem a lógica de negócios reutilizável no AEM, usada por Modelos Sling, serviços AEM, como Workflows ou outros serviços OSGi personalizados. O serviço OSGi `SecretsManager` pode ser consumido por meio da anotação `@Reference` e usado no serviço OSGi para recuperar o valor secreto.
+Os serviços OSGi geralmente expõem a lógica de negócios reutilizável no AEM, usada pelos Modelos Sling, serviços do AEM como Workflows ou outros serviços OSGi personalizados. O serviço OSGi `SecretsManager` pode ser consumido por meio da anotação `@Reference` e usado no serviço OSGi para recuperar o valor secreto.
 
 ```java
 import com.example.core.util.SecretsManager;
@@ -156,7 +156,7 @@ Os valores de segredos podem ser definidos por meio da [API do Cloud Manager](ht
 ![Configuração de Segredos do Cloud Manager](./assets/secrets/cloudmanager-configuration.png)
 
 1. Faça logon no [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
-1. Selecione o Programa AEM e o Ambiente para o qual deseja definir o segredo.
+1. Selecione o Programa e o Ambiente AEM para os quais deseja definir o segredo.
 1. Na exibição de detalhes do Ambiente, selecione a guia **Configuração**.
 1. Selecione **Adicionar**.
 1. Na caixa de diálogo Configuração do ambiente:
@@ -165,6 +165,6 @@ Os valores de segredos podem ser definidos por meio da [API do Cloud Manager](ht
    - Selecione a qual serviço AEM o segredo se aplica.
    - Selecione **Segredo** como o tipo.
 1. Selecione **Adicionar** para manter o segredo.
-1. Adicione quantos segredos forem necessários. Quando terminar, selecione **Salvar** para aplicar as alterações imediatamente ao ambiente AEM.
+1. Adicione quantos segredos forem necessários. Quando terminar, selecione **Salvar** para aplicar as alterações imediatamente ao ambiente do AEM.
 
-Usar as configurações do Cloud Manager para segredos oferece a vantagem de aplicar valores diferentes a ambientes ou serviços diferentes e girar segredos sem reimplantar o aplicativo AEM.
+Usar as configurações do Cloud Manager para segredos oferece a vantagem de aplicar valores diferentes a ambientes ou serviços diferentes e girar segredos sem reimplantar o aplicativo do AEM.

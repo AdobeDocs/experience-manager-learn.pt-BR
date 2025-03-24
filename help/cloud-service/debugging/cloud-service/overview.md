@@ -1,8 +1,8 @@
 ---
 title: Depuração do AEM as a Cloud Service
-description: em infraestruturas em nuvem dimensionáveis e de autoatendimento, o que faz com que os desenvolvedores de AEM entendam como entender e depurar vários aspectos do AEM as a Cloud Service, desde a criação e a implantação até a obtenção de detalhes sobre a execução de aplicativos do AEM.
+description: em infraestruturas de nuvem dimensionáveis e de autoatendimento, o que torna o necessário que os desenvolvedores do AEM entendam como entender e depurar vários aspectos do AEM as a Cloud Service, desde a criação e a implantação até a obtenção de detalhes sobre a execução de aplicativos da AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5346
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Depuração do AEM as a Cloud Service
 
-O AEM as a Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos AEM. O AEM as a Cloud Service é executado em uma infraestrutura de nuvem dimensionável e de autoatendimento, o que requer que os desenvolvedores AEM entendam como entender e depurar várias facetas do AEM as a Cloud Service AEM, desde a criação e implantação até a obtenção de detalhes sobre a execução de aplicativos do.
+O AEM as a Cloud Service é a maneira nativa em nuvem de aproveitar os aplicativos da AEM. O AEM as a Cloud Service é executado em uma infraestrutura de nuvem escalável e de autoatendimento, o que requer que os desenvolvedores do AEM entendam como entender e depurar vários aspectos do AEM as a Cloud Service, desde a criação e a implantação até a obtenção de detalhes sobre a execução de aplicativos da AEM.
 
 ## Logs
 
@@ -29,7 +29,7 @@ Os registros fornecem detalhes sobre como o aplicativo está funcionando no AEM 
 
 ## Criar e implantar
 
-Os pipelines Adobe Cloud Manager implantam o aplicativo AEM por meio de uma série de etapas para determinar a qualidade e a viabilidade do código quando implantado no AEM as a Cloud Service. Cada uma das etapas pode resultar em falha, o que torna importante entender como depurar builds para determinar a causa raiz da falha e como resolvê-las.
+Os pipelines do Adobe Cloud Manager implantam o aplicativo do AEM por meio de uma série de etapas, a fim de determinar a qualidade e a viabilidade do código quando implantado no AEM as a Cloud Service. Cada uma das etapas pode resultar em falha, o que torna importante entender como depurar builds para determinar a causa raiz da falha e como resolvê-las.
 
 [Depuração da build e da implantação do AEM as a Cloud Service](./build-and-deployment.md)
 
@@ -41,6 +41,6 @@ O console do desenvolvedor fornece diversas informações e introspecções em a
 
 ## Navegador de repositório
 
-O Navegador do repositório é uma ferramenta poderosa que oferece visibilidade do armazenamento de dados subjacente do AEM, permitindo uma depuração fácil do ambiente do AEM as a Cloud Service. O Navegador do repositório é compatível com uma exibição somente leitura dos recursos e propriedades do AEM nos ambientes de Produção, Preparo e Desenvolvimento, bem como com os serviços Author, Publish e Preview.
+O Navegador do repositório é uma ferramenta poderosa que oferece visibilidade do armazenamento interno de dados do AEM, permitindo uma depuração fácil do ambiente do AEM as a Cloud Service. O Navegador do repositório é compatível com uma exibição somente leitura dos recursos e propriedades do AEM nos ambientes de Produção, Preparo e Desenvolvimento, bem como dos serviços Author, Publish e Preview.
 
 [Depuração do AEM as a Cloud Service com o Navegador do repositório](./repository-browser.md)

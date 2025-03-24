@@ -2,14 +2,14 @@
 title: Configurar regras de tradução no AEM
 description: A interface de configuração de tradução permite que um usuário gerencie regras para traduzir conteúdo no AEM Sites. Este vídeo detalha a criação de uma nova regra de tradução para um componente personalizado.
 feature: Language Copy
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 role: User
 level: Beginner
 doc-type: Technical Video
 exl-id: 359da531-839c-4680-abf9-c880cc700159
 duration: 542
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%

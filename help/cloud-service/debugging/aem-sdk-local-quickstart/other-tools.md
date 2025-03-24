@@ -1,8 +1,8 @@
 ---
-title: Outras ferramentas para depuração do SDK do AEM
-description: Uma variedade de outras ferramentas pode ajudar na depuração da inicialização rápida local do SDK do AEM.
+title: Outras ferramentas para depurar o AEM SDK
+description: Várias outras ferramentas podem ajudar na depuração da inicialização rápida local do AEM SDK.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5251
 topic: Development
@@ -10,31 +10,31 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
 duration: 107
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 1%
 
 ---
 
-# Outras ferramentas para depuração do SDK do AEM
+# Outras ferramentas para depurar o AEM SDK
 
-Uma variedade de outras ferramentas pode ajudar na depuração do aplicativo no quickstart local do SDK do AEM.
+Várias outras ferramentas podem ajudar a depurar seu aplicativo na inicialização rápida local do AEM SDK.
 
 ## CRXDE Lite
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite é uma interface baseada na web para interagir com o JCR, o repositório de dados do AEM. O CRXDE Lite fornece visibilidade total do JCR, incluindo nós, propriedades, valores de propriedade e permissões.
+O CRXDE Lite é uma interface baseada na Web para interagir com o JCR, o repositório de dados da AEM. O CRXDE Lite oferece visibilidade total do JCR, incluindo nós, propriedades, valores de propriedade e permissões.
 
-CRXDE Lite está localizado em:
+O CRXDE Lite está localizado em:
 
 + Ferramentas > Geral > CRXDE Lite
 + ou diretamente em [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ### Depuração de conteúdo
 
-O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível via CRXDE Lite é limitado pelas permissões concedidas ao usuário, o que significa que você pode não conseguir ver ou modificar tudo no JCR, dependendo do seu acesso.
+O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível por meio do CRXDE Lite é limitado pelas permissões concedidas ao usuário, o que significa que você pode não conseguir ver ou modificar tudo no JCR, dependendo do seu acesso.
 
 + A estrutura JCR é navegada e manipulada usando o painel de navegação esquerdo
 + Selecionar um nó no painel de navegação esquerdo expõe as propriedades do nó no painel inferior.
@@ -44,7 +44,7 @@ O CRXDE Lite fornece acesso direto ao JCR. O conteúdo visível via CRXDE Lite �
 
 ![CRXDE Lite - Depurando Conteúdo](./assets/other-tools/crxde-lite__debugging-content.png)
 
-Quaisquer alterações feitas diretamente no SDK do AEM por meio do CRXDE Lite podem ser difíceis de rastrear e administrar. Conforme apropriado, verifique se as alterações feitas por meio do CRXDE Lite retornam aos pacotes de conteúdo mutáveis (`ui.content`) do projeto AEM e confirmadas no Git. Idealmente, todas as alterações de conteúdo de aplicativos se originam da base de código e fluem para o SDK do AEM por meio de implantações, em vez de fazer alterações diretamente no SDK do AEM por meio do CRXDE Lite.
+Quaisquer alterações feitas diretamente no AEM SDK por meio do CRXDE Lite podem ser difíceis de rastrear e controlar. Conforme apropriado, verifique se as alterações feitas por meio do CRXDE Lite retornam aos pacotes de conteúdo mutáveis (`ui.content`) do projeto AEM e foram confirmadas no Git. Idealmente, todas as alterações de conteúdo de aplicativos se originam da base de código e fluem para o AEM SDK por meio de implantações, em vez de fazer alterações diretamente no AEM SDK por meio do CRXDE Lite.
 
 ### Depuração de controles de acesso
 
@@ -72,7 +72,7 @@ Os resultados são exibidos abaixo:
 
 ![Explicar consulta](./assets/other-tools/explain-query.png)
 
-Explicar a ferramenta baseada na Web Query no início rápido local do SDK do AEM, que fornece informações importantes sobre como o AEM interpreta e executa consultas, e uma ferramenta inestimável para garantir que as consultas estejam sendo executadas de maneira eficiente pelo AEM.
+Explicar a ferramenta de consulta baseada na Web na inicialização rápida local do AEM SDK, que fornece informações importantes sobre como o AEM interpreta e executa consultas, e uma ferramenta inestimável para garantir que as consultas estejam sendo executadas de maneira eficiente pelo AEM.
 
 A Explicar consulta está localizada em:
 
@@ -83,7 +83,7 @@ A Explicar consulta está localizada em:
 
 ![Depurador do QueryBuilder](./assets/other-tools/query-debugger.png)
 
-O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda a depurar e entender consultas de pesquisa usando a sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) do AEM.
+O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda você a depurar e entender consultas de pesquisa usando a sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) do AEM.
 
 O QueryBuilder Debugger está localizado em:
 

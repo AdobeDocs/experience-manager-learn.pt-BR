@@ -4,14 +4,14 @@ description: Definir configuração de dados em lote
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9673
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: db25e5a2-e1a8-40ad-af97-35604d515450
 duration: 233
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -23,14 +23,14 @@ ht-degree: 0%
 Para usar uma API de lote, crie uma configuração de lote e execute uma execução com base nessa configuração. O vídeo a seguir mostra uma demonstração da criação da configuração em lote usando a API
 
 >[!NOTE]
->Certifique-se de que o usuário AEM pertence ao grupo ```forms-users``` para fazer chamadas de API.
+>Certifique-se de que o usuário do AEM pertence ao grupo ```forms-users``` para fazer chamadas de API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
 ## Criar configuração em lote
 
-Este é o endpoint de POST para criação da configuração de Lote
+Este é o terminal POST para a criação da configuração de lote
 
 ```xml
 <baseURL>/config

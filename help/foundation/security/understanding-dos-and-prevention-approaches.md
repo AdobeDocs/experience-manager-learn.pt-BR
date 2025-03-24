@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre prevenção de DoS/DDoS
-description: Saiba como impedir e mitigar ataques de DoS e DDoS contra AEM.
-version: 6.5, Cloud Service
+description: Saiba como impedir e mitigar ataques de DoS e DDoS contra o AEM.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
 role: Admin, Architect, Developer
@@ -11,16 +11,16 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
 
 ---
 
-# Compreender a prevenção de DoS/DDoS no AEM
+# Noções básicas sobre prevenção de DoS/DDoS no AEM
 
-Saiba mais sobre as opções disponíveis para impedir e mitigar ataques de DoS e DDoS no seu ambiente AEM. Antes de mergulhar nos mecanismos de prevenção, forneça uma breve visão geral do [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) e do [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
+Saiba mais sobre as opções disponíveis para impedir e mitigar ataques de DoS e DDoS em seu ambiente do AEM. Antes de mergulhar nos mecanismos de prevenção, forneça uma breve visão geral do [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) e do [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
 - Os ataques de DoS (Negação de serviço) e DDoS (Negação de serviço distribuída) são tentativas mal-intencionadas de interromper o funcionamento normal de um servidor, serviço ou rede de destino, tornando-o inacessível aos usuários desejados.
 - Os ataques de DoS normalmente se originam de uma única fonte, enquanto os ataques de DDoS vêm de várias fontes.
@@ -39,7 +39,7 @@ A tabela a seguir descreve como impedir e mitigar ataques de DoS e DDoS:
             <td><strong>AEM 6.5 (no local)</strong></td>
         </tr>
         <tr>
-            <td>Firewall de Aplicativo Web (WAF)</td>
+            <td>Firewall de aplicativo da Web (WAF)</td>
             <td>Uma solução de segurança projetada para proteger aplicativos da Web contra vários tipos de ataques.</td>
             <td>
             <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licença de Proteção WAF-DDoS</a></td>
@@ -48,7 +48,7 @@ A tabela a seguir descreve como impedir e mitigar ataques de DoS e DDoS:
         </tr>
         <tr>
             <td>ModSecurity</td>
-            <td>O ModSecurity (também conhecido como módulo Apache "mod_security") é uma solução de código aberto e entre plataformas que fornece proteção contra uma variedade de ataques contra aplicativos web.<br/> No AEM as a Cloud Service, isso só é aplicável ao serviço AEM Publish AEM, pois não há servidor Web Apache e Dispatcher AEM na frente do serviço de autor.</td>
+            <td>O ModSecurity (também conhecido como módulo Apache "mod_security") é uma solução de código aberto e entre plataformas que fornece proteção contra uma variedade de ataques contra aplicativos web.<br/> No AEM as a Cloud Service, isso só é aplicável ao serviço de Publicação do AEM, pois não há um Apache Web Server e um AEM Dispatcher na frente do serviço de Autor do AEM.</td>
             <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Ativar ModSecurity </a></td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@ A tabela a seguir descreve como impedir e mitigar ataques de DoS e DDoS:
     </tbody>
 </table>
 
-## Análise de incidentes Post e melhoria contínua
+## Análise pós-incidente e melhoria contínua
 
 Embora não haja um fluxo padrão único para identificar e impedir ataques de DoS/DDoS e ele dependa do processo de segurança de sua organização. A **análise pós-incidente e o aprimoramento contínuo** é uma etapa crucial no processo. Estas são algumas das práticas recomendadas a serem consideradas:
 

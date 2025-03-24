@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 Crie um contêiner de configuração chamado &quot;FormTutorial&quot; para manter a configuração dos serviços em nuvem
 Crie uma configuração de serviços de nuvem para o Armazenamento do Azure chamada &quot;FormsCSAndAzureBlob&quot; no contêiner &quot;FormTutorial&quot; fornecendo os detalhes da conta de armazenamento do Azure e a chave de acesso do Azure.
 
-Abra o projeto AEM no IntelliJ. Adicione a pasta FormTutorial como mostrado abaixo no projeto ui.content
+Abra o projeto do AEM no IntelliJ. Adicione a pasta FormTutorial como mostrado abaixo no projeto ui.content
 ![configuração-de-serviços-em-nuvem](assets/cloud-services-configuration.png)
 
 Certifique-se de adicionar a seguinte entrada no filter.xml do projeto ui.content
@@ -36,7 +36,7 @@ Certifique-se de adicionar a seguinte entrada no filter.xml do projeto ui.conten
 
 ## Incluir modelo de dados de formulário no projeto
 
-Crie o modelo de dados de formulário com base na configuração dos serviços em nuvem que você criou na etapa anterior. Para incluir o modelo de dados de formulário no projeto, crie a estrutura de pastas apropriada no projeto AEM no IntelliJ. Por exemplo, meu modelo de dados de formulário está em uma pasta chamada registros
+Crie o modelo de dados de formulário com base na configuração dos serviços em nuvem que você criou na etapa anterior. Para incluir o modelo de dados de formulário no projeto, crie a estrutura de pastas apropriada no projeto do AEM no IntelliJ. Por exemplo, meu modelo de dados de formulário está em uma pasta chamada registros
 ![fdm-content](assets/ui-content-fdm.png)
 
 Inclua a entrada apropriada no filter.xml do projeto ui.content

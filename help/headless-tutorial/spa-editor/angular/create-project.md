@@ -1,8 +1,8 @@
 ---
-title: Projeto do Editor de SPA | Introdução ao Editor e Angular SPA do AEM
-description: Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular AEM SPA integrado ao editor do.
+title: Projeto do SPA Editor | Introdução ao AEM SPA Editor e Angular
+description: Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular integrado ao AEM SPA Editor.
 feature: SPA Editor, AEM Project Archetype
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
@@ -11,27 +11,27 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
 
 ---
 
-# Projeto do Editor de SPA {#create-project}
+# Projeto do SPA Editor {#create-project}
 
-Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular AEM SPA integrado ao editor do.
+Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular integrado ao AEM SPA Editor.
 
 ## Objetivo
 
-1. Entenda a estrutura de um novo projeto SPA AEM Editor construído a partir de um arquétipo Maven.
+1. Entenda a estrutura de um novo projeto do Editor SPA do AEM criado a partir de um arquétipo Maven.
 2. Implante o projeto inicial em uma instância local do AEM.
 
 ## O que você vai criar
 
-Neste capítulo, um novo projeto AEM é implantado, com base no [Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype). O projeto AEM é inicializado com um ponto de partida muito simples para o Angular SPA. O projeto usado neste capítulo servirá de base para uma implementação do SPA WKND e será construído em capítulos futuros.
+Neste capítulo, um novo projeto do AEM é implantado, com base no [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype). O projeto do AEM é inicializado com um ponto de partida muito simples para o SPA do Angular. O projeto usado neste capítulo servirá de base para uma implementação da SPA da WKND e será desenvolvido em capítulos futuros.
 
-![Projeto Inicial do Angular SPA WKND](./assets/create-project/what-you-will-build.png)
+![Projeto inicial do WKND SPA Angular](./assets/create-project/what-you-will-build.png)
 
 *Uma mensagem clássica do Hello World.*
 
@@ -41,11 +41,11 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
 
 ## Obter o projeto
 
-Há várias opções para criar um projeto de vários módulos Maven para AEM. Este tutorial usou o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) mais recente como base para o código do tutorial. Foram feitas modificações no código do projeto para suportar várias versões do AEM. Revise [a observação sobre compatibilidade com versões anteriores](overview.md#compatibility).
+Há várias opções para criar um projeto de vários módulos do Maven para o AEM. Este tutorial usou o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) mais recente como base para o código do tutorial. Foram feitas modificações no código do projeto para oferecer suporte a várias versões do AEM. Revise [a observação sobre compatibilidade com versões anteriores](overview.md#compatibility).
 
 >[!CAUTION]
 >
->É uma prática recomendada usar a versão **mais recente** do [arquétipo](https://github.com/adobe/aem-project-archetype) para gerar um novo projeto para uma implementação real. Os projetos AEM devem ter como alvo uma única versão do AEM usando a propriedade `aemVersion` do arquétipo.
+>É uma prática recomendada usar a versão **mais recente** do [arquétipo](https://github.com/adobe/aem-project-archetype) para gerar um novo projeto para uma implementação real. Os projetos do AEM devem ter como alvo uma única versão do AEM usando a propriedade `aemVersion` do arquétipo.
 
 1. Baixe o ponto de partida para este tutorial pelo Git:
 
@@ -55,7 +55,7 @@ Há várias opções para criar um projeto de vários módulos Maven para AEM. E
    $ git checkout Angular/create-project-start
    ```
 
-2. A seguinte estrutura de pasta e arquivo representa o projeto AEM gerado pelo arquétipo Maven no sistema de arquivos local:
+2. A seguinte estrutura de pasta e arquivo representa o projeto do AEM que foi gerado pelo arquétipo Maven no sistema de arquivos local:
 
    ```plain
    |--- aem-guides-wknd-spa
@@ -73,12 +73,12 @@ Há várias opções para criar um projeto de vários módulos Maven para AEM. E
        |--- archetype.properties
    ```
 
-3. As seguintes propriedades foram usadas ao gerar o projeto AEM do [Arquétipo de projeto AEM](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
+3. As seguintes propriedades foram usadas ao gerar o projeto AEM a partir do [Arquétipo de projeto do AEM](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14):
 
    | Propriedade | Valor |
    |-----------------|---------------------------------------|
    | aemVersion | nuvem |
-   | appTitle | ANGULAR SPA WKND |
+   | appTitle | WKND SPA ANGULAR |
    | appId | wknd-spa-angular |
    | groupId | com.adobe.aem.guides |
    | frontendModule | angular |
@@ -87,11 +87,11 @@ Há várias opções para criar um projeto de vários módulos Maven para AEM. E
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projeto AEM a inicializar o projeto com uma [base de código de Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor de AEM SPA.
+   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor SPA do AEM.
 
 ## Criar o projeto
 
-Em seguida, compile, crie e implante o código do projeto em uma instância local do AEM usando Maven.
+Em seguida, compile, crie e implante o código do projeto em uma instância local do AEM usando o Maven.
 
 1. Verifique se uma instância do AEM está sendo executada localmente na porta **4502**.
 2. No terminal de linha de comando, verifique se o Maven está instalado:
@@ -136,17 +136,17 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
    [INFO] ------------------------------------------------------------------------
    ```
 
-   O perfil Maven ***autoInstallSinglePackage*** compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, este pacote é implantado em uma instância do AEM executada localmente na porta **4502** e com as credenciais de **admin:admin**.
+   O perfil Maven ***autoInstallSinglePackage*** compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, este pacote é implantado em uma instância do AEM em execução localmente na porta **4502** e com as credenciais de **admin:admin**.
 
 4. Navegue até **[!UICONTROL Gerenciador de Pacotes]** na sua instância do AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
 5. Você deve ver três pacotes para `wknd-spa-angular.all`, `wknd-spa-angular.ui.apps` e `wknd-spa-angular.ui.content`.
 
-   ![Pacotes SPA WKND](./assets/create-project/package-manager.png)
+   ![Pacotes de SPA do WKND](./assets/create-project/package-manager.png)
 
    Todo o código personalizado necessário para o projeto é incorporado a esses pacotes e instalado no tempo de execução do AEM.
 
-6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre os [Componentes principais do AEM podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre os [Componentes Principais do AEM podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
 
 ## Conteúdo do autor
 
@@ -154,13 +154,13 @@ Em seguida, abra o SPA inicial gerado pelo arquétipo e atualize parte do conte�
 
 1. Navegue até o console **[!UICONTROL Sites]**: [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
 
-   O SPA WKND inclui uma estrutura básica do site com um país, idioma e página inicial. Esta hierarquia é baseada nos valores padrão do arquétipo para `language_country` e `isSingleCountryWebsite`. Estes valores podem ser substituídos atualizando as [propriedades disponíveis](https://github.com/adobe/aem-project-archetype#available-properties) ao gerar um projeto.
+   O WKND SPA inclui uma estrutura básica do site com um país, idioma e página inicial. Esta hierarquia é baseada nos valores padrão do arquétipo para `language_country` e `isSingleCountryWebsite`. Estes valores podem ser substituídos atualizando as [propriedades disponíveis](https://github.com/adobe/aem-project-archetype#available-properties) ao gerar um projeto.
 
 2. Abra a página **[!DNL us]** > **[!DNL en]** > **[!DNL WKND SPA Angular Home Page]** selecionando a página e clicando no botão **[!UICONTROL Editar]** na barra de menus:
 
    ![console do site](./assets/create-project/open-home-page.png)
 
-3. Um componente **[!UICONTROL Texto]** já foi adicionado à página. É possível editar esse componente como qualquer outro componente no AEM.
+3. Um componente **[!UICONTROL Texto]** já foi adicionado à página. Você pode editar esse componente como qualquer outro componente no AEM.
 
    ![Atualizar componente de Texto](./assets/create-project/update-text-component.gif)
 
@@ -168,7 +168,7 @@ Em seguida, abra o SPA inicial gerado pelo arquétipo e atualize parte do conte�
 
    Observe que a experiência de criação é semelhante àquela de uma página tradicional do AEM Sites. Atualmente, um número limitado de componentes está disponível para uso. Mais informações são adicionadas durante o curso do tutorial.
 
-## Inspect o aplicativo de página única
+## Inspecionar o aplicativo de página única
 
 Em seguida, verifique se este é um aplicativo de página única com o uso das ferramentas de desenvolvedor do seu navegador.
 
@@ -176,9 +176,9 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
 
    ![Botão Exibir como Publicado](./assets/create-project/view-as-published.png)
 
-   Isso abrirá uma nova guia com o parâmetro de consulta `?wcmmode=disabled` que desliga efetivamente o editor de AEM: [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
+   Isso abrirá uma nova guia com o parâmetro de consulta `?wcmmode=disabled` que desativa efetivamente o editor do AEM: [http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled](http://localhost:4502/content/wknd-spa-angular/us/en/home.html?wcmmode=disabled)
 
-2. Exiba a fonte da página e observe que o conteúdo do texto **[!DNL Hello World]** ou qualquer outro conteúdo não foi encontrado. Em vez disso, você deve ver HTML como o seguinte:
+2. Exiba a fonte da página e observe que o conteúdo do texto **[!DNL Hello World]** ou qualquer outro conteúdo não foi encontrado. Em vez disso, você deve ver o HTML da seguinte maneira:
 
    ```html
    ...
@@ -191,7 +191,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
    ...
    ```
 
-   `clientlib-angular.min.js` é o SPA do Angular que é carregado na página e responsável pela renderização do conteúdo.
+   `clientlib-angular.min.js` é o SPA do Angular carregado na página e responsável pela renderização do conteúdo.
 
    *De onde vem o conteúdo?*
 
@@ -204,7 +204,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
 
 5. Em uma nova guia, abra [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
-   A solicitação `en.model.json` representa o modelo de conteúdo que direcionará o aplicativo. Inspect a saída JSON e você poderá encontrar o trecho que representa o(s) componente(s) **[!UICONTROL Texto]**.
+   A solicitação `en.model.json` representa o modelo de conteúdo que direcionará o aplicativo. Inspecione a saída JSON e você poderá encontrar o trecho que representa o(s) componente(s) **[!UICONTROL Texto]**.
 
    ```json
    ...
@@ -222,7 +222,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
    ...
    ```
 
-   No próximo capítulo, verificaremos como o conteúdo JSON é mapeado dos componentes AEM para os componentes SPA, a fim de formar a base da experiência do editor de AEM SPA.
+   No próximo capítulo, verificaremos como o conteúdo JSON é mapeado dos componentes do AEM para os componentes SPA, para formar a base da experiência do Editor SPA do AEM.
 
    >[!NOTE]
    >
@@ -230,10 +230,10 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
 
 ## Parabéns. {#congratulations}
 
-Parabéns, você acabou de criar seu primeiro projeto SPA AEM Editor!
+Parabéns, você acabou de criar seu primeiro projeto do Editor SPA do AEM.
 
 É bastante simples neste momento, mas nos próximos capítulos é adicionada mais funcionalidade.
 
 ### Próximas etapas {#next-steps}
 
-[Integrar o SPA](integrate-spa.md) - Saiba como o código-fonte do SPA está integrado ao Projeto AEM e entenda as ferramentas disponíveis para desenvolver rapidamente o SPA.
+[Integrar o SPA](integrate-spa.md) - Saiba como o código-fonte do SPA é integrado ao Projeto do AEM e entenda as ferramentas disponíveis para desenvolver rapidamente o SPA.

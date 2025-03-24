@@ -1,8 +1,8 @@
 ---
 title: Configurar contas e serviços para extensibilidade do Asset Compute
-description: O desenvolvimento de trabalhadores do Asset Compute exige acesso a contas e serviços, incluindo AEM as a Cloud Service, App Builder e armazenamento em nuvem fornecido pela Microsoft ou Amazon.
+description: O desenvolvimento de funcionários da Asset Compute exige acesso a contas e serviços, incluindo AEM as a Cloud Service, App Builder e armazenamento em nuvem fornecido pela Microsoft ou Amazon.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6264
 thumbnail: 40377.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
 duration: 212
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Este tutorial requer que os seguintes serviços sejam provisionados e acessíveis por meio da Adobe ID do aluno.
 
-Todos os serviços da Adobe devem ser acessíveis pela mesma organização de Adobe, usando sua Adobe ID.
+Todos os serviços da Adobe devem ser acessíveis pela mesma organização da Adobe, usando sua Adobe ID.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [App Builder](#app-builder)
@@ -39,15 +39,15 @@ Todos os serviços da Adobe devem ser acessíveis pela mesma organização de Ad
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-O acesso a um ambiente do AEM as a Cloud Service é necessário para configurar Perfis de processamento do AEM Assets para chamar o trabalhador de Asset compute personalizado.
+O acesso a um ambiente do AEM as a Cloud Service é necessário para configurar Perfis de processamento do AEM Assets para chamar o trabalhador personalizado do Asset Compute.
 
 Idealmente, um programa de sandbox ou um ambiente de desenvolvimento que não seja de sandbox está disponível para uso.
 
-Observe que um SDK do AEM local é insuficiente para concluir este tutorial, pois o SDK do AEM local não pode se comunicar com os microsserviços do Asset Compute. Em vez disso, é necessário um ambiente AEM as a Cloud Service verdadeiro.
+Observe que um AEM SDK local é insuficiente para concluir este tutorial, pois o AEM SDK local não pode se comunicar com os microsserviços da Asset Compute. Em vez disso, é necessário um ambiente AEM as a Cloud Service verdadeiro.
 
 ## App Builder{#app-builder}
 
-A estrutura [App Builder](https://developer.adobe.com/app-builder/) é usada para criar e implantar ações personalizadas em uma plataforma sem servidor Adobe Adobe I/O Runtime. Os projetos do Asset compute AEM são projetos da App Builder especialmente construídos que se integram ao AEM Assets por meio de Perfis de processamento, e fornecem a capacidade de acessar e processar binários de ativos.
+A estrutura [App Builder](https://developer.adobe.com/app-builder/) é usada para criar e implantar ações personalizadas na Adobe I/O Runtime, a plataforma sem servidor da Adobe. Os projetos do AEM Asset Compute são projetos do App Builder especialmente criados que se integram ao AEM Assets por meio de Perfis de processamento, e fornecem a capacidade de acessar e processar binários de ativos.
 
 Para obter acesso ao App Builder, inscreva-se para obter a visualização.
 
@@ -59,7 +59,7 @@ Para obter acesso ao App Builder, inscreva-se para obter a visualização.
 
 O armazenamento na nuvem é necessário para o desenvolvimento local de projetos do Asset Compute.
 
-Quando os trabalhadores do Asset Compute são implantados na Adobe I/O Runtime para uso direto pela AEM as a Cloud Service AEM, esse armazenamento em nuvem não é estritamente necessário, pois o fornece o armazenamento em nuvem do qual o ativo é lido e a representação gravada.
+Quando os funcionários da Asset Compute são implantados na Adobe I/O Runtime para uso direto pela AEM as a Cloud Service, esse armazenamento em nuvem não é estritamente necessário, pois a AEM fornece o armazenamento em nuvem do qual o ativo é lido e a representação gravada.
 
 ### Armazenamento de blobs do Microsoft Azure{#azure-blob-storage}
 
@@ -76,7 +76,7 @@ _Click-through do provisionamento do Armazenamento Azure Blob (Sem áudio)_
 1. Toque em __+ Adicionar__ para criar uma nova conta de Armazenamento de Blobs
 1. Crie um novo __Grupo de recursos__ conforme necessário, por exemplo: `aem-as-a-cloud-service`
 1. Forneça um __nome da conta de armazenamento__, por exemplo: `aemguideswkndassetcomput`
-   + O __nome da conta de armazenamento__ usado para [configurar o armazenamento na nuvem](../develop/environment-variables.md) na Ferramenta de Desenvolvimento de Assets compute local
+   + O __nome da conta de armazenamento__ usado para [configurar o armazenamento na nuvem](../develop/environment-variables.md) na Ferramenta de Desenvolvimento Asset Compute local
    + As __chaves de acesso__ associadas à conta de armazenamento também são necessárias ao [configurar o armazenamento na nuvem](../develop/environment-variables.md).
 1. Deixe tudo como padrão e toque no botão __Revisar + criar__
    + Opcionalmente, selecione o __local__ próximo a você.

@@ -1,7 +1,7 @@
 ---
 title: Introdução a temas no Asset Share Commons
 description: Materiais para o entendimento funcional e técnico do Assets Share Commons
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Asset Distribution
 role: Developer
@@ -10,7 +10,7 @@ last-substantial-update: 2022-06-22T00:00:00Z
 doc-type: Tutorial
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
 duration: 734
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 1%
@@ -81,4 +81,4 @@ Baixar [Tema Personalizado da Biblioteca do Cliente](assets/asc-theme-demo.zip)
 ## Recursos adicionais{#additional-resources}
 
 * [Downloads da versão do Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [Downloads da versão ACS AEM 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Downloads de versão do ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

@@ -5,13 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -24,9 +24,9 @@ O AEM Forms fornece várias opções de envio prontas para uso que satisfazem a 
 
 Para escrever um serviço de envio personalizado, as seguintes etapas foram seguidas
 
-## Criar projeto AEM
+## Criar projeto do AEM
 
-Se você já tiver um as a Cloud Service AEM Forms existente, [vá para a gravação do serviço de envio personalizado](#Write-the-custom-submit-service)
+Se você já tiver um projeto existente do AEM Forms as a Cloud Service, poderá [pular para a gravação do serviço de envio personalizado](#Write-the-custom-submit-service)
 
 * Crie uma pasta chamada cloudmanager na unidade c.
 * Navegar até esta pasta recém-criada
@@ -35,7 +35,7 @@ Se você já tiver um as a Cloud Service AEM Forms existente, [vá para a grava�
 
 ## Escrever o serviço de envio personalizado{#Write-the-custom-submit-service}
 
-Inicie o IntelliJ e abra o projeto AEM. Crie uma nova classe java chamada **HandleRegistrationFormSubmission** conforme mostrado na captura de tela abaixo
+Inicie o IntelliJ e abra o projeto do AEM. Crie uma nova classe java chamada **HandleRegistrationFormSubmission** conforme mostrado na captura de tela abaixo
 ![custom-submit-service](./assets/custom-submit-service.png)
 
 O código a seguir foi gravado para implementar o serviço
@@ -107,7 +107,7 @@ O valor do elemento **submitService** deve corresponder ao **serviceName = &quot
 ## Implante o código na instância local do AEM Forms
 
 Antes de enviar as alterações para o repositório do Cloud Manager, é recomendável implantar o código na instância do autor local pronta para nuvem para testar o código. Verifique se a instância do autor está em execução.
-Para implantar o código na instância do autor pronta para nuvem, navegue até a pasta raiz do projeto AEM e execute o seguinte comando
+Para implantar o código na instância do autor pronta para nuvem, navegue até a pasta raiz do projeto do AEM e execute o seguinte comando
 
 ```
 mvn clean install -PautoInstallSinglePackage
@@ -118,7 +118,7 @@ Isso implantará o código como um único pacote na instância do autor
 ## Envie o código ao Cloud Manager e Implante o código
 
 Depois de verificar o código na instância local, envie o código para a instância da nuvem.
-Envie as alterações para o repositório Git local e, em seguida, para o repositório do cloud manager. Você pode consultar os [artigos sobre configuração do Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [envio do projeto AEM para o repositório do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implantação no ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
+Envie as alterações para o repositório Git local e, em seguida, para o repositório do cloud manager. Você pode consultar os [artigos sobre configuração do Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [envio do projeto do AEM para o repositório do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [implantação no ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Depois que o pipeline for executado com sucesso, você poderá associar a ação de envio do seu formulário ao manipulador de envio personalizado, conforme mostrado na captura de tela abaixo
 ![ação-envio](./assets/configure-submit-action.png)

@@ -1,7 +1,7 @@
 ---
 title: Como limpar o cache da CDN
 description: Saiba como limpar ou remover a resposta HTTP em cache do CDN da AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Saiba como limpar ou remover a resposta HTTP em cache do CDN da AEM as a Cloud Service. Usando o recurso de autoatendimento chamado **Limpar Token de API**, você pode limpar o cache de um recurso específico, de um grupo de recursos e de todo o cache.
 
-Neste tutorial, você aprenderá a configurar e usar o Token da API de Limpeza para limpar o cache CDN do site de amostra [AEM WKND](https://github.com/adobe/aem-guides-wknd) usando o recurso de autoatendimento.
+Neste tutorial, você aprenderá a configurar e usar o Token da API de Limpeza para limpar o cache CDN do site de exemplo [WKND](https://github.com/adobe/aem-guides-wknd) do AEM usando o recurso de autoatendimento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
@@ -43,9 +43,9 @@ Vamos saber como configurar o token da API de limpeza para limpar o cache do CDN
 
 ### Configurar a regra CDN
 
-O token da API de limpeza é criado ao configurar a regra CDN no código do projeto AEM.
+O token da API de limpeza é criado ao configurar a regra CDN no código do projeto do AEM.
 
-1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto AEM. Por exemplo, o arquivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto [WKND.
+1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto [WKND.
 
 1. Adicionar a seguinte regra CDN ao arquivo `cdn.yaml`:
 
@@ -71,7 +71,7 @@ data:
 
 Na regra acima, `purgeKey1` e `purgeKey2` são adicionados desde o início para suportar a rotação de segredos sem interrupções. No entanto, você pode começar com apenas `purgeKey1` e adicionar `purgeKey2` mais tarde ao girar os segredos.
 
-1. Salve, confirme e envie as alterações para o repositório upstream de Adobe.
+1. Salve, confirme e envie as alterações para o repositório upstream do Adobe.
 
 ### Criar variável de ambiente do Cloud Manager
 
@@ -112,7 +112,7 @@ Por fim, implante a regra CDN configurada no ambiente do AEM as a Cloud Service 
 
 ## Usar o token da API de limpeza
 
-Para limpar o cache do CDN, chame o URL de domínio específico do serviço AEM com o token de API de limpeza. A sintaxe para limpar o cache é a seguinte:
+Para limpar o cache do CDN, chame o URL de domínio específico do serviço do AEM com o token da API de limpeza. A sintaxe para limpar o cache é a seguinte:
 
 ```
 PURGE <URL> HTTP/1.1
@@ -126,7 +126,7 @@ Em que:
 
 - **PURGE`<URL>`**: o método `PURGE` é seguido pelo caminho de URL do recurso que você deseja limpar.
 - **Host:`<AEM_SERVICE_SPECIFIC_DOMAIN>`**: especifica o domínio do serviço AEM.
-- **X-AEM-Purge-Key:`<PURGE_API_TOKEN>`**: um cabeçalho personalizado que contém o valor do Token da API de Limpeza.
+- **X-AEM-Purge-Key:`<PURGE_API_TOKEN>`**: um cabeçalho personalizado que contém o valor do token da API de limpeza.
 - **X-AEM-Purge:`<PURGE_TYPE>`**: um cabeçalho personalizado que especifica o tipo de operação de limpeza. O valor pode ser `hard`, `soft` ou `all`. A tabela a seguir descreve cada tipo de expurgação:
 
   | Tipo de Expurgação | Descrição |

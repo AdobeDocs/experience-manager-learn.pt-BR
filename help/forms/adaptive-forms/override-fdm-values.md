@@ -3,7 +3,7 @@ title: Substituir as propriedades do modelo de dados de formulário usando a con
 description: O AEM Forms 6.5.13 apresentou a capacidade de substituir as propriedades do modelo de dados de formulário para facilitar o teste de um modelo de dados de formulário em relação a diferentes pontos de extremidade.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -11,7 +11,7 @@ jira: KT-10537
 exl-id: 570de1e6-7221-4b8d-b226-a43317bfc166
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%

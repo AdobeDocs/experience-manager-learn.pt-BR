@@ -2,7 +2,7 @@
 title: Extensões dos fragmentos de conteúdo do AEM
 description: Saiba como criar e implantar extensões de fragmento de conteúdo do AEM as a Cloud Service
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Extensibilidade de fragmentos de conteúdo do AEM
 
-A interface do usuário de fragmentos de conteúdo do AEM é uma interface extensível e poderosa para gerenciar, criar, gerenciar e editar fragmentos de conteúdo. Há vários pontos de extensão disponíveis para personalizar a interface do usuário de acordo com suas necessidades. Diferentes pontos de extensão estão disponíveis com base na interface do usuário que você está estendendo.
+A interface do usuário de fragmentos de conteúdo do AEM é uma interface extensível poderosa para gerenciar a criação, o gerenciamento e a edição de fragmentos de conteúdo. Há vários pontos de extensão disponíveis para personalizar a interface do usuário de acordo com suas necessidades. Diferentes pontos de extensão estão disponíveis com base na interface do usuário que você está estendendo.
 
 ## Pontos de extensão do Console de fragmentos de conteúdo
 
@@ -102,7 +102,7 @@ O Editor de fragmento de conteúdo no AEM (Adobe Experience Manager) é um compo
 
 ![Editor de fragmentos de conteúdo](./assets/overview/cfe.png)
 
-O Editor de fragmentos de conteúdo do AEM é a interface do usuário extensível para editar fragmentos de conteúdo. [As extensões do Editor de Fragmento de Conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) usando o modelo do App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
+O Editor de fragmentos de conteúdo do AEM é a interface extensível para editar fragmentos de conteúdo. [As extensões do Editor de Fragmento de Conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) usando o modelo do App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Os seguintes pontos de extensão do Editor de fragmentos de conteúdo estão disponíveis:
 
@@ -192,7 +192,7 @@ Os seguintes pontos de extensão do Editor de fragmentos de conteúdo estão dis
 
 ## Exemplos de extensão
 
-Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface do usuário para AEM! Esse recurso foi projetado para fornecer demonstrações práticas e insights sobre a extensão da interface do usuário do Adobe Experience Manager (AEM). Se você é um desenvolvedor que busca aprimorar a funcionalidade do AEM, esses exemplos de código servem como uma referência valiosa.
+Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface do usuário do AEM. Esse recurso foi projetado para fornecer demonstrações práticas e insights sobre a extensão da interface do usuário do Adobe Experience Manager (AEM). Quer você seja um desenvolvedor que deseja aprimorar a funcionalidade do AEM, esses exemplos de código servem como uma referência valiosa.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
@@ -219,15 +219,15 @@ Bem-vindo a uma coleção de exemplos de código de extensibilidade da interface
         <div class="card" style="height: 100%">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./examples/console-image-generation-and-image-upload.md" title="Geração de imagens com base em OpenAI e upload para a extensão AEM" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="Geração de imagens com base em OpenAI e upload para a extensão AEM">
+                    <a href="./examples/console-image-generation-and-image-upload.md" title="Geração de imagens com base em OpenAI e upload para a extensão do AEM" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./examples/assets/digital-image-generation/card.png" alt="Geração de imagens com base em OpenAI e upload para a extensão do AEM">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Geração de imagens com base em OpenAI e upload para a extensão AEM">Geração de imagem OpenAPI</a></p>
-                    <p class="is-size-6">Explore um exemplo de extensão da barra de ação que gera uma imagem usando OpenAI, faz o upload para AEM e atualiza a propriedade da imagem no Fragmento de conteúdo selecionado.</p>
+                    <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Geração de imagens com base em OpenAI e upload para a extensão do AEM">Geração de imagem OpenAPI</a></p>
+                    <p class="is-size-6">Explore um exemplo de extensão da barra de ação que gera uma imagem usando OpenAI, faz o upload para o AEM e atualiza a propriedade da imagem no Fragmento de conteúdo selecionado.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exibir o exemplo</span>
                     </a>

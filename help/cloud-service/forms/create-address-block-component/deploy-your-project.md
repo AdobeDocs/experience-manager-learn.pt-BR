@@ -1,15 +1,15 @@
 ---
 title: Criando componente de endereço
-description: Criação do novo componente principal de endereço no AEM Forms as a Cloud Service
+description: Criação de um novo componente principal de endereço no AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Implante seu projeto
 
-Antes de começar a implantar o projeto no as a Cloud Service do AEM Forms, é recomendável implantar o projeto na instância do AEM Forms pronta para nuvem local.
+Antes de começar a implantar o projeto no AEM Forms as a Cloud Service, é recomendável implantar o projeto na instância do AEM Forms pronta para nuvem local.
 
-## Sincronizar alterações com o projeto AEM
+## Sincronizar alterações com seu projeto do AEM
 
 Inicie o IntelliJ e navegue até a pasta adaptiveForm na pasta ``ui.apps``, conforme mostrado abaixo
 ![intellij](assets/intellij.png)

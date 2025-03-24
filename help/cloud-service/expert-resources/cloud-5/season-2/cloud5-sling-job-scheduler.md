@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Sling Job Scheduler
-description: Agendamento de trabalho do AEM na nuvem
-version: Cloud Service
+description: Agendamento de trabalhos do AEM na nuvem
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343473.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 8784d77f-1c70-4694-bd08-79b71adbda48
 duration: 309
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 2%

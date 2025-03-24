@@ -1,7 +1,7 @@
 ---
 title: Integração do AEM Sites ao Adobe Analytics com a extensão de tags da Adobe Analytics
-description: Integre o AEM Sites com o Adobe Analytics, usando a camada Dados do cliente Adobe orientada por eventos para coletar dados sobre a atividade do usuário em um site criado com o Adobe Experience Manager. Saiba como usar as regras de tag para acompanhar esses eventos e enviar dados para um conjunto de relatórios do Adobe Analytics.
-version: Cloud Service
+description: Integre o AEM Sites ao Adobe Analytics, usando a camada Dados do cliente da Adobe orientada por eventos para coletar dados sobre a atividade do usuário em um site criado com o Adobe Experience Manager. Saiba como usar as regras de tag para acompanhar esses eventos e enviar dados para um conjunto de relatórios do Adobe Analytics.
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,7 +12,7 @@ badgeIntegration: label="Integração" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 duration: 490
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 1%
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Integrar o AEM Sites e o Adobe Analytics
 
-Saiba como integrar o AEM Sites e o Adobe Analytics à extensão de tags da Adobe Analytics, usando os recursos integrados da [Camada de dados do cliente Adobe AEM com os Componentes principais do](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) para coletar dados sobre uma página no Adobe Experience Manager Sites. [As marcas no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e na [extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) são usadas para criar regras para enviar dados de página para o Adobe Analytics.
+Saiba como integrar o AEM Sites e o Adobe Analytics à extensão de tags da Adobe Analytics, usando os recursos integrados da [Camada de dados do cliente Adobe com os Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) para coletar dados sobre uma página no Adobe Experience Manager Sites. [As marcas no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e na [extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) são usadas para criar regras para enviar dados de página para o Adobe Analytics.
 
 ## O que você vai criar {#what-build}
 
 ![Acompanhamento de dados da página](assets/collect-data-analytics/analytics-page-data-tracking.png)
 
-Neste tutorial, você acionará uma regra de tag com base em um evento da Camada de dados do cliente Adobe. Além disso, adicione condições para quando a regra deve ser acionada e envie os valores de **Nome da página** e **Modelo da página** de uma página AEM para a Adobe Analytics.
+Neste tutorial, você acionará uma regra de tag com base em um evento da Camada de dados de clientes Adobe. Além disso, adicione condições para quando a regra deve ser acionada e envie os valores de **Nome da página** e **Modelo de página** de uma página do AEM para a Adobe Analytics.
 
 ### Objetivos {#objective}
 
@@ -39,20 +39,20 @@ Neste tutorial, você acionará uma regra de tag com base em um evento da Camada
 
 Os seguintes são obrigatórios:
 
-* **Propriedade de marca** em Experience Platform
+* **Propriedade de marca** no Experience Platform
 * Servidor de rastreamento e ID do conjunto de relatórios de teste/desenvolvimento do **Adobe Analytics**. Consulte a documentação a seguir para [criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
 * Extensão do navegador do [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html). Capturas de tela deste tutorial capturadas do navegador Chrome.
-* (Opcional) Site AEM com a [Camada de Dados do Cliente Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial usa o site [WKND](https://wknd.site/us/en.html) voltado ao público, mas você pode usar seu próprio site.
+* (Opcional) Site do AEM com a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial usa o site [WKND](https://wknd.site/us/en.html) voltado ao público, mas você pode usar seu próprio site.
 
 >[!NOTE]
 >
-> Precisa de ajuda para integrar a propriedade de tag e o site do AEM? [Ver esta série de vídeos](../experience-platform/data-collection/tags/overview.md).
+> Precisa de ajuda para integrar a propriedade de tag ao site da AEM? [Ver esta série de vídeos](../experience-platform/data-collection/tags/overview.md).
 
 ## Alternar ambiente de tag para o site da WKND
 
-O [WKND](https://wknd.site/us/en.html) é um site voltado para o público criado com base em [um projeto de código aberto](https://github.com/adobe/aem-guides-wknd) projetado como uma referência e [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) para uma implementação de AEM.
+O [WKND](https://wknd.site/us/en.html) é um site voltado para o público criado com base em [um projeto de código aberto](https://github.com/adobe/aem-guides-wknd) projetado como uma referência e [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) para uma implementação do AEM.
 
-Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador de Experience Platform para **alternar** o [Site WKND](https://wknd.site/us/en.html) ativo para *sua propriedade de marca*. Entretanto, você pode usar seu próprio site AEM se ele já tiver a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador da Experience Platform para **alternar** o [Site WKND](https://wknd.site/us/en.html) ativo para *sua propriedade de marca*. No entanto, você pode usar seu próprio site do AEM se ele já tiver a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 1. Faça logon no Experience Platform e [crie uma propriedade de Marca](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (caso ainda não o tenha feito).
 1. Certifique-se de que uma biblioteca [de JavaScript de marca inicial tenha sido criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promovida para o [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) de marca.
@@ -61,11 +61,11 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
    ![Copiar Código de Inserção da Propriedade de Marca](assets/collect-data-analytics/launch-environment-copy.png)
 
 1. No navegador, abra uma nova guia e navegue até o [Site da WKND](https://wknd.site/us/en.html)
-1. Abra a extensão do navegador Experience Platform Debugger
+1. Abra a extensão do navegador do Experience Platform Debugger
 
    ![Experience Platform Debugger](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
-1. Navegue até **Marcas de Experience Platform** > **Configuração** e, em **Códigos Inseridos Injetados**, substitua o código inserido existente por *seu* código inserido copiado da etapa 3.
+1. Navegue até **Marcas do Experience Platform** > **Configuração** e, em **Códigos Incorporados Inseridos**, substitua o código incorporado existente pelo *seu* código incorporado copiado da etapa 3.
 
    ![Substituir código de inserção](assets/collect-data-analytics/platform-debugger-replace-embed.png)
 
@@ -75,7 +75,7 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
 
 ## Verificar a camada de dados do cliente Adobe no site WKND
 
-O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é compilado com Componentes Principais de AEM e tem a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) por padrão. Em seguida, verifique se a Camada de dados do cliente Adobe está ativada.
+O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é compilado com os Componentes Principais do AEM e tem a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) por padrão. Em seguida, verifique se a Camada de dados de clientes Adobe está ativada.
 
 1. Navegue até [WKND Site](https://wknd.site/us/en.html).
 1. Abra as ferramentas de desenvolvedor do navegador e navegue até o **Console**. Execute o seguinte comando:
@@ -86,7 +86,7 @@ O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é com
 
    O código acima retorna o estado atual da Camada de dados de clientes Adobe.
 
-   ![estado da Camada de Dados de Adobe](assets/collect-data-analytics/adobe-data-layer-state.png)
+   ![Estado da Camada de Dados do Adobe](assets/collect-data-analytics/adobe-data-layer-state.png)
 
 1. Expanda a resposta e inspecione a entrada `page`. Você deve ver um schema de dados como o seguinte:
 
@@ -108,13 +108,13 @@ O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é com
 
    >[!NOTE]
    >
-   > Se você não vir o objeto JavaScript `adobeDataLayer`? Verifique se a [Camada de Dados do Cliente Adobe foi habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) no site.
+   > Se você não vir o objeto JavaScript `adobeDataLayer`? Verifique se a [Camada de Dados de Clientes Adobe foi habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) no site.
 
 ## Criar uma regra de Página carregada
 
-A Camada de Dados de Clientes Adobe é uma camada de dados **orientada por eventos**. Quando a camada de dados da Página AEM é carregada, ela aciona um evento `cmp:show`. Crie uma regra que seja acionada quando o evento `cmp:show` for acionado a partir da camada de dados da página.
+A Camada de Dados de Clientes Adobe é uma camada de dados **orientada por eventos**. Quando a camada de dados Página do AEM é carregada, ela aciona um evento `cmp:show`. Crie uma regra que seja acionada quando o evento `cmp:show` for acionado a partir da camada de dados da página.
 
-1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site AEM.
+1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site do AEM.
 1. Navegue até a seção **Regras** na interface do usuário da Propriedade de Marca e clique em **Criar nova regra**.
 
    ![Criar regra](assets/collect-data-analytics/analytics-create-rule.png)
@@ -177,25 +177,25 @@ A Camada de Dados de Clientes Adobe é uma camada de dados **orientada por event
 
    O objeto `event` é passado do método `trigger()` chamado no evento personalizado. Aqui, o `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
 
-1. Salve as alterações e execute uma [compilação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da marca para promover o código para o [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no site do AEM.
+1. Salve as alterações e execute uma [compilação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da marca para promover o código ao [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no site do AEM.
 
    >[!NOTE]
    >
-   > Pode ser útil usar o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para alternar o código incorporado para um ambiente de **Desenvolvimento**.
+   > Pode ser útil usar o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para alternar o código de inserção para um ambiente de **Desenvolvimento**.
 
-1. Navegue até o site AEM e abra as ferramentas do desenvolvedor para visualizar o console. Atualize a página e você verá que as mensagens do console foram registradas:
+1. Navegue até o site do AEM e abra as ferramentas do desenvolvedor para visualizar o console. Atualize a página e você verá que as mensagens do console foram registradas:
 
 ![Mensagens de Console Carregadas pela Página](assets/collect-data-analytics/page-show-event-console.png)
 
 ## Criar elementos de dados
 
-Em seguida, crie vários Elementos de dados para capturar valores diferentes da Camada de dados do cliente Adobe. Como visto no exercício anterior, é possível acessar as propriedades da camada de dados diretamente pelo código personalizado. A vantagem de usar elementos de dados é que eles podem ser reutilizados nas regras de tag.
+Em seguida, crie vários Elementos de dados para capturar valores diferentes da Camada de dados de clientes Adobe. Como visto no exercício anterior, é possível acessar as propriedades da camada de dados diretamente pelo código personalizado. A vantagem de usar elementos de dados é que eles podem ser reutilizados nas regras de tag.
 
 Os elementos de dados são mapeados para as propriedades `@type`, `dc:title` e `xdm:template`.
 
 ### Tipo de recurso do componente
 
-1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site AEM.
+1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site do AEM.
 1. Navegue até a seção **Elementos de Dados** e clique em **Criar Novo Elemento de Dados**.
 1. Para o campo **Nome**, insira o **Tipo de Recurso do Componente**.
 1. Para o campo **Tipo de elemento de dados**, selecione **Código personalizado**.
@@ -254,7 +254,7 @@ Os elementos de dados são mapeados para as propriedades `@type`, `dc:title` e `
 
 Em seguida, adicione a extensão do Analytics à propriedade de tag para enviar dados a um conjunto de relatórios.
 
-1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site AEM.
+1. Navegue até o Experience Platform e para a propriedade de tag integrada ao site do AEM.
 1. Ir para **Extensões** > **Catálogo**
 1. Localize a extensão **Adobe Analytics** e clique em **Instalar**
 
@@ -274,7 +274,7 @@ Em seguida, adicione a extensão do Analytics à propriedade de tag para enviar 
 
 1. Marque a caixa para habilitar **Usar Activity Map**.
 
-   ![Habilitar Activity Map de Uso](assets/track-clicked-component/analytic-track-click.png)
+   ![Habilitar o Activity Map de Uso](assets/track-clicked-component/analytic-track-click.png)
 
 1. Em **Geral** > **Servidor de Rastreamento**, insira seu servidor de rastreamento, por exemplo, `tmd.sc.omtrdc.net`. Insira seu Servidor de Rastreamento SSL se o site suporta o `https://`
 
@@ -316,7 +316,7 @@ Atualmente, a regra **Página carregada** simplesmente gera uma instrução de c
 
 1. No painel principal, selecione um **eVar** disponível e defina como o valor do Elemento de dados **Modelo de página**. Use o ícone Elementos de Dados ![ícone Elementos de dados](assets/collect-data-analytics/cylinder-icon.png) para selecionar o elemento **Modelo de Página**.
 
-   ![Definir como Modelo de Página de eVar](assets/collect-data-analytics/set-evar-page-template.png)
+   ![Definir como Modelo de Página do eVar](assets/collect-data-analytics/set-evar-page-template.png)
 
 1. Role para baixo, em **Configurações Adicionais**, defina **Nome da Página** como o elemento de dados **Nome da Página**:
 
@@ -345,10 +345,10 @@ Atualmente, a regra **Página carregada** simplesmente gera uma instrução de c
 
 ## Validar o sinal de Exibição de página e a chamada do Analytics
 
-Agora que a regra **Página carregada** envia o beacon do Analytics, você poderá ver as variáveis de rastreamento do Analytics usando o Depurador Experience Platform.
+Agora que a regra **Página carregada** envia o beacon do Analytics, você poderá ver as variáveis de rastreamento do Analytics usando o Experience Platform Debugger.
 
 1. Abra o [Site WKND](https://wknd.site/us/en.html) em seu navegador.
-1. Clique no ícone Depurador ![ícone do Experience Platform Debugger](assets/collect-data-analytics/experience-cloud-debugger.png) para abrir o Depurador de Experience Platform.
+1. Clique no ícone Depurador ![ícone do Experience Platform Debugger](assets/collect-data-analytics/experience-cloud-debugger.png) para abrir o Experience Platform Debugger.
 1. Verifique se o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito anteriormente, e se o **Log do console** está marcado.
 1. Abra o menu do Analytics e verifique se o conjunto de relatórios está definido como *seu* conjunto de relatórios. O Nome da página também deve ser preenchido:
 
@@ -370,14 +370,14 @@ Agora que a regra **Página carregada** envia o beacon do Analytics, você poder
 
    >[!NOTE]
    >
-   > Se você não vir nenhum log de console, verifique se **Log de console** está marcado em **Tags de Experience Platform** no Depurador de Experience Platform.
+   > Se você não visualizar nenhum log de console, verifique se a opção **Log de console** está marcada em **Tags do Experience Platform** no Experience Platform Debugger.
 
 1. Navegue para uma página de artigo como [Austrália Ocidental](https://wknd.site/us/en/magazine/western-australia.html). Observe que o Nome da página e o Tipo de modelo são alterados.
 
 ## Parabéns.
 
-Você acabou de usar a Camada de dados do cliente Adobe orientada por eventos e as Tags no Experience Platform para coletar dados da página de dados de um site AEM e enviá-los para o Adobe Analytics.
+Você acabou de usar a Camada de dados e as Tags do cliente da Adobe orientadas por eventos no Experience Platform para coletar dados de página de dados de um site da AEM e enviá-los para a Adobe Analytics.
 
 ### Próximas etapas
 
-Dê uma olhada no tutorial a seguir para saber como usar a camada de Dados do cliente Adobe orientada por eventos para [rastrear cliques de componentes específicos em um site do Adobe Experience Manager](track-clicked-component.md).
+Confira o tutorial a seguir para saber como usar a camada de Dados do cliente do Adobe orientada por eventos para [rastrear cliques de componentes específicos em um site do Adobe Experience Manager](track-clicked-component.md).

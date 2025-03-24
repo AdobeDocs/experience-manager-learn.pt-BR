@@ -1,8 +1,8 @@
 ---
-title: Solução de problemas de extensibilidade do Asset Compute para o AEM Assets
-description: A seguir há um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores de Asset compute personalizados para o AEM Assets.
+title: Solução de problemas de extensibilidade do Asset Compute para AEM Assets
+description: A seguir há um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores personalizados do Asset Compute para o AEM Assets.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Solução de problemas de extensibilidade do Asset Compute
 
-A seguir há um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores de Asset compute personalizados para o AEM Assets.
+A seguir há um índice de problemas e erros comuns, juntamente com as resoluções, que podem ser encontrados ao desenvolver e implantar trabalhadores personalizados do Asset Compute para o AEM Assets.
 
 ## Desenvolver{#develop}
 
@@ -35,14 +35,14 @@ A seguir há um índice de problemas e erros comuns, juntamente com as resoluç�
 
 ## Ferramenta de desenvolvimento{#development-tool}
 
-### Arquivo Console.json ausente do projeto do Asset Compute{#missing-console-json}
+### Arquivo Console.json ausente no projeto do Asset Compute{#missing-console-json}
 
 + __Erro:__ Erro: arquivos necessários ausentes na validação (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) em setupAssetCompute assíncrono (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
-+ __Causa:__ O arquivo `console.json` está ausente da raiz do projeto do Asset compute
-+ __Solução:__ baixe um novo `console.json` do projeto Adobe I/O
-   1. Em console.adobe.io, abra o projeto Adobe I/O que o projeto Asset Compute está configurado para usar
++ __Causa:__ O arquivo `console.json` está ausente da raiz do projeto do Asset Compute
++ __Solução:__ baixe um novo `console.json` do seu projeto do Adobe I/O
+   1. Em console.adobe.io, abra o projeto do Adobe I/O para o qual o projeto do Asset Compute está configurado para usar
    1. Toque no botão __Baixar__ na parte superior direita
-   1. Salve o arquivo baixado na raiz do projeto do Asset Compute usando o nome de arquivo `console.json`
+   1. Salve o arquivo baixado na raiz do seu projeto do Asset Compute usando o nome de arquivo `console.json`
 
 ### Recuo YAML incorreto em manifest.yml{#incorrect-yaml-indentation}
 
@@ -74,7 +74,7 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 
 + __Erro:__ Notificação &quot;Não Autorizada&quot; na Ferramenta de Desenvolvimento do Asset Compute
 + __Causa:__ `devToolToken` está ausente ou é inválido
-+ __Solução:__ feche a janela do navegador da Ferramenta de Desenvolvimento do Asset Compute, encerre todos os processos da Ferramenta de Desenvolvimento iniciados pelo comando `aio app run` e reinicie a Ferramenta de Desenvolvimento (usando `aio app run`).
++ __Solução:__ feche a janela do navegador da Ferramenta de Desenvolvimento da Asset Compute, encerre todos os processos da Ferramenta de Desenvolvimento iniciados pelo comando `aio app run` e reinicie a Ferramenta de Desenvolvimento (usando `aio app run`).
 
 ### Não foi possível remover os arquivos de origem{#unable-to-remove-source-files}
 
@@ -84,7 +84,7 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 
   ![Armazenamento de Blobs do Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
-## Testar{#test}
+## Teste{#test}
 
 ### Nenhuma representação gerada durante a execução do teste{#test-no-rendition-generated}
 
@@ -98,7 +98,7 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 
 + __Erro:__ Falha: a representação &#39;rendition.xxx&#39; não foi a esperada.
 + __Causa:__ o trabalhador gerou uma representação que não era a mesma que a `rendition.<extension>` fornecida no caso de teste.
-   + Se o arquivo esperado `rendition.<extension>` não for criado exatamente da mesma maneira que a representação gerada localmente no caso de teste, o teste pode falhar, pois pode haver alguma diferença nos bits. Por exemplo, se o trabalhador do Asset Compute alterar o contraste usando APIs e o resultado esperado for criado ajustando o contraste no Adobe Photoshop CC, os arquivos poderão parecer iguais, mas variações secundárias nos bits poderão ser diferentes.
+   + Se o arquivo esperado `rendition.<extension>` não for criado exatamente da mesma maneira que a representação gerada localmente no caso de teste, o teste pode falhar, pois pode haver alguma diferença nos bits. Por exemplo, se o trabalhador do Asset Compute alterar o contraste usando APIs e o resultado esperado for criado ajustando o contraste no Adobe Photoshop CC, os arquivos poderão ter a mesma aparência, mas pequenas variações nos bits poderão ser diferentes.
 + __Solução:__ revise a saída da representação do teste navegando até `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, e compare-a com o arquivo de representação esperado no caso de teste. Para criar um ativo esperado exato:
    + Use a Ferramenta de desenvolvimento para gerar uma representação, validar se ela está correta e usá-la como o arquivo de representação esperado
    + Ou valide o arquivo gerado pelo teste em `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, confirme se ele está correto e use-o como o arquivo de representação esperado
@@ -113,7 +113,7 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 
 ### Os pontos de interrupção não estão pausando{#breakpoints-no-pausing}
 
-+ __Erro__: ao executar o trabalho do Asset Compute a partir da Ferramenta de Desenvolvimento habilitada para depuração, o Código VS não pausa nos pontos de interrupção.
++ __Erro__: ao executar o trabalho do Asset Compute a partir da Ferramenta de Desenvolvimento que pode ser depurada, o Código VS não pausa nos pontos de interrupção.
 
 #### Depurador de código VS não anexado{#vs-code-debugger-not-attached}
 
@@ -123,11 +123,11 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 #### Depurador de código VS anexado após o início da execução do trabalho{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Causa:__ o depurador de código do VS não foi anexado antes de tocar em __Executar__ na Ferramenta de desenvolvimento.
-+ __Solução:__ verifique se o depurador foi anexado revisando o Console de Depuração do Código VS (Exibir > Console de Depuração) e execute novamente o trabalhador do Asset Compute na Ferramenta de Desenvolvimento.
++ __Solução:__ certifique-se de que o depurador foi anexado revisando o Console de Depuração do Código VS (Exibir > Console de Depuração) e, em seguida, execute novamente o Asset Compute Worker a partir da Ferramenta de Desenvolvimento.
 
 ### O trabalhador atinge o tempo limite durante a depuração{#worker-times-out-while-debugging}
 
-+ __Erro__: o Console de Depuração relata &quot;O tempo limite da ação será de -XXX milissegundos&quot; ou a pré-visualização de representação da [Ferramenta de Desenvolvimento do Asset Compute](./develop/development-tool.md) gira indefinidamente ou
++ __Erro__: o Console de Depuração relata &quot;O tempo limite da ação será de -XXX milissegundos&quot; ou a pré-visualização da representação ](./develop/development-tool.md) da Ferramenta de Desenvolvimento do Asset Compute gira indefinidamente ou[
 + __Causa__: o tempo limite do trabalhador conforme definido em [manifest.yml](./develop/manifest.md) foi excedido durante a depuração.
 + __Solução__: aumente temporariamente o tempo limite do trabalhador no [manifest.yml](./develop/manifest.md) ou acelere as atividades de depuração.
 

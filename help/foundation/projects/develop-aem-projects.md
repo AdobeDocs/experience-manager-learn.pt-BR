@@ -1,7 +1,7 @@
 ---
 title: Desenvolver projetos no AEM
-description: Um tutorial de desenvolvimento que ilustra como desenvolver projetos no AEM. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
-version: 6.4, 6.5
+description: Um tutorial de desenvolvimento que ilustra como desenvolver para projetos do AEM. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar novos projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Projects, Workflow
 doc-type: Tutorial
 topic: Development
@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Desenvolver projetos no AEM
 
-Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL AEM Projects]. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar projetos dentro do AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
+Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL AEM Projects]. Neste tutorial, criaremos um modelo de projeto personalizado que pode ser usado para criar projetos no AEM para gerenciar fluxos de trabalho e tarefas de criação de conteúdo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -28,7 +28,7 @@ Este é um tutorial de desenvolvimento que ilustra como desenvolver para [!DNL A
 
 [[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) é um recurso do AEM criado para facilitar o gerenciamento e o agrupamento de todos os fluxos de trabalho e tarefas associados à criação de conteúdo como parte de uma implementação do AEM Sites ou do Assets.
 
-Projetos AEM vem com vários [modelos de projeto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Ao criar um projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações de AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um modelo de amostra.
+O AEM Projects vem com vários [modelos de projeto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Ao criar um projeto, os autores podem escolher entre esses modelos disponíveis. Grandes implementações do AEM com requisitos comerciais exclusivos desejarão criar modelos de projeto personalizados, personalizados para atender às suas necessidades. Ao criar um modelo de projeto personalizado, os desenvolvedores podem configurar o painel do projeto, entrar em fluxos de trabalho personalizados e criar funções de negócios adicionais para um projeto. Examinaremos a estrutura de um modelo de projeto e criaremos um modelo de amostra.
 
 ![Cartão de Projeto Personalizado](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Este tutorial guiará o código necessário para criar um modelo de projeto pers
 * [Pacote de Tutorial Concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de Código Completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Este tutorial presume algum conhecimento básico sobre as [práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com a [configuração do projeto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Todos os códigos mencionados devem ser usados como referência e só devem ser implantados em uma [instância de AEM de desenvolvimento local](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Este tutorial presume algum conhecimento básico das [práticas de desenvolvimento do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e alguma familiaridade com a [configuração do projeto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Todos os códigos mencionados devem ser usados como referência e só devem ser implantados em uma [instância de desenvolvimento local do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Estrutura de um modelo de projeto
 
@@ -90,7 +90,7 @@ Um dos motivos mais atraentes para criar um modelo de projeto personalizado é q
 
 ## Criação de um modelo de projeto {#creating-project-template}
 
-Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. Na instância local do AEM, abra [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Como estamos principalmente copiando/configurando nós, usaremos o CRXDE Lite. Na instância do AEM local, abra o [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Comece criando uma pasta abaixo de `/apps/&lt;your-app-folder&gt;` chamada `projects`. Crie outra pasta abaixo de `templates`.
 
@@ -264,7 +264,7 @@ Agora podemos testar nosso Modelo de projeto criando um projeto.
 
 ## Por que o fluxo de trabalho?
 
-Tradicionalmente, os workflows do AEM que se centralizam em um processo de aprovação usavam as etapas do fluxo de trabalho do Participante. A Caixa de entrada do AEM inclui detalhes sobre Tarefas e Fluxo de trabalho e integração aprimorada com Projetos AEM. Esses recursos tornam o uso das etapas do processo Criar tarefa do projeto uma opção mais atraente.
+Tradicionalmente, os workflows do AEM que se centram em um processo de aprovação usavam as etapas do fluxo de trabalho do Participante. A Caixa de entrada do AEM inclui detalhes sobre tarefas e fluxo de trabalho e integração aprimorada com projetos do AEM. Esses recursos tornam o uso das etapas do processo Criar tarefa do projeto uma opção mais atraente.
 
 ### Por que tarefas?
 
@@ -322,12 +322,12 @@ A última etapa do fluxo de trabalho usa a etapa de processo Ativar página/ativ
    >
    >Se estiver usando o AEM 6.4+, a localização do Fluxo de trabalho foi alterada. Clique [aqui para obter mais detalhes.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
-   Se estiver usando AEM 6.4+, o modelo de fluxo de trabalho será criado em `/conf/global/settings/workflow/models`. Repita as etapas acima com o diretório /conf e adicione uma subpasta chamada `aem-guides` e mova o `content-approval-workflow` para baixo dela.
+   Se estiver usando o AEM 6.4+, o modelo de fluxo de trabalho será criado em `/conf/global/settings/workflow/models`. Repita as etapas acima com o diretório /conf e adicione uma subpasta chamada `aem-guides` e mova o `content-approval-workflow` para baixo dela.
 
    ![Local de definição de fluxo de trabalho moderno](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Localização do modelo de fluxo de trabalho no 6.4+
 
-1. Introduzido no AEM 6.3 é a capacidade de adicionar Estágios de fluxo de trabalho a um determinado fluxo de trabalho. Os estágios serão exibidos para o usuário na Caixa de entrada da guia Informações do fluxo de trabalho. Ele mostrará ao usuário o estágio atual no workflow, bem como os estágios anteriores e posteriores.
+1. Introduzida no AEM 6.3 é a capacidade de adicionar Estágios de fluxo de trabalho a um determinado fluxo de trabalho. Os estágios serão exibidos para o usuário na Caixa de entrada da guia Informações do fluxo de trabalho. Ele mostrará ao usuário o estágio atual no workflow, bem como os estágios anteriores e posteriores.
 
    Para configurar os estágios, abra a caixa de diálogo Propriedades da página no Sidekick. A quarta guia é rotulada como &quot;Estágios&quot;. Adicione os seguintes valores para configurar os três estágios desse workflow:
 
@@ -341,7 +341,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
 
    ![barra de progresso do fluxo de trabalho](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   A barra de progresso do fluxo de trabalho conforme vista da Caixa de entrada AEM.
+   A barra de progresso do fluxo de trabalho conforme vista da Caixa de entrada do AEM.
 
    Opcionalmente, é possível carregar uma **Imagem** nas Propriedades da Página, que são usadas como miniatura do Fluxo de Trabalho quando os usuários a selecionam. As dimensões da imagem devem ser de 319x319 pixels. Adicionar uma **Descrição** às Propriedades da página também aparecerá quando um usuário selecionar o fluxo de trabalho.
 
@@ -478,7 +478,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
        "Send Back for Revision"
    ```
 
-   Como esse é o roteiro de Aprovação normal, a prioridade da tarefa é definida como Medium. Além disso, concedemos ao grupo de Aprovadores 5 dias para concluir a Tarefa. O responsável é deixado em branco na guia Tarefa, pois atribuiremos isso dinamicamente na guia Configurações avançadas. Fornecemos ao grupo de Aprovadores duas rotas possíveis ao concluir esta tarefa: **&quot;Aprovar e Publish&quot;** se eles aprovarem o conteúdo e ele puder ser publicado e **&quot;Enviar de volta para revisão&quot;** se houver problemas que o editor original precise corrigir. O aprovador pode deixar comentários que o editor original verá se o workflow foi retornado a ele.
+   Como esse é o roteiro de Aprovação normal, a prioridade da tarefa é definida como Medium. Além disso, concedemos ao grupo de Aprovadores 5 dias para concluir a Tarefa. O responsável é deixado em branco na guia Tarefa, pois atribuiremos isso dinamicamente na guia Configurações avançadas. Fornecemos ao grupo de Aprovadores duas rotas possíveis ao concluir esta tarefa: **&quot;Aprovar e Publicar&quot;** se eles aprovarem o conteúdo e ele puder ser publicado e **&quot;Enviar de volta para revisão&quot;** se houver problemas que o editor original precise corrigir. O aprovador pode deixar comentários que o editor original verá se o workflow foi retornado a ele.
 
 Anteriormente neste tutorial, criamos um Modelo de projeto que incluía uma Função de aprovadores. Cada vez que um novo Projeto é criado a partir deste Modelo, um Grupo específico do projeto é criado para a função Aprovadores. Assim como uma Etapa do participante, uma Tarefa só pode ser atribuída a um usuário ou grupo. Queremos atribuir esta tarefa ao grupo de projeto que corresponde ao Grupo de aprovadores. Todos os fluxos de trabalho iniciados em um Projeto terão metadados que mapeiam as Funções do projeto para o grupo específico do Projeto.
 
@@ -754,4 +754,4 @@ A configuração do fluxo de trabalho é uma área de um modelo de projeto que e
 
 * [Baixar pacote de tutorial concluído](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Repositório de Código Completo no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentação de projetos do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)
+* [Documentação dos Projetos AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
 duration: 90
 exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 2%
@@ -83,7 +83,7 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 
 ## Criar recursos no CRX
 
-* Faça logon no seu SDK AEM local.
+* Faça logon no AEM SDK local.
 * Crie um recurso chamado `fetchchoices` (você pode nomear este nó como quiser) do tipo `cq:Page` no nó de conteúdo.
 * Salve as alterações
 * Crie um nó chamado `jcr:content` do tipo `cq:PageContent` e salve as alterações
@@ -105,15 +105,15 @@ http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/fo
 
 O caminho `/content/fetchchoices/jcr:content` é o caminho do recurso e a extensão `.json` é a especificada no servlet
 
-## Sincronizar o projeto AEM
+## Sincronizar seu projeto do AEM
 
-1. Abra o projeto AEM no seu editor favorito. Usei o IntelliJ para isso.
+1. Abra o projeto do AEM no seu editor favorito. Usei o IntelliJ para isso.
 1. Criar uma pasta chamada `fetchchoices` em `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
 1. Clique com o botão direito do mouse na pasta `fetchchoices` e selecione `repo | Get Command` (Este item de menu está configurado em um capítulo anterior deste tutorial).
 
 Isso deve sincronizar esse nó do AEM com o projeto AEM local.
 
-A estrutura do projeto AEM deve ficar assim
+A estrutura do projeto do AEM deve ficar assim
 ![resolvedor de recursos](assets/mapping-servlet-resource.png)
 Atualize o filter.xml na pasta aem-banking-application\ui.content\src\main\content\META-INF\vault com a seguinte entrada
 

@@ -1,7 +1,7 @@
 ---
-title: Como configurar regras de Filtro de tráfego incluindo regras WAF
-description: Saiba como configurar para criar, implantar, testar e analisar os resultados das regras de Filtro de tráfego, incluindo regras WAF.
-version: Cloud Service
+title: Como configurar regras de Filtro de tráfego, incluindo regras do WAF
+description: Saiba como configurar o para criar, implantar, testar e analisar os resultados das regras de Filtro de tráfego, incluindo regras do WAF.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,16 +12,16 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
 
 ---
 
-# Como configurar regras de Filtro de tráfego incluindo regras WAF
+# Como configurar regras de Filtro de tráfego, incluindo regras do WAF
 
-Saiba **como configurar** regras de filtro de tráfego, incluindo regras WAF. Leia sobre como criar, implantar, testar e analisar resultados.
+Saiba **como configurar** regras de filtro de tráfego, incluindo regras do WAF. Leia sobre como criar, implantar, testar e analisar resultados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -29,16 +29,16 @@ Saiba **como configurar** regras de filtro de tráfego, incluindo regras WAF. Le
 
 O processo de configuração envolve o seguinte:
 
-- _criando regras_ com uma estrutura de projeto AEM apropriada e um arquivo de configuração.
+- _criando regras_ com uma estrutura de projeto e um arquivo de configuração apropriados do AEM.
 - _implantando regras_ usando o pipeline de configuração do Adobe Cloud Manager.
 - _testando regras_ usando várias ferramentas para gerar tráfego.
 - _analisando os resultados_ usando logs de CDN e ferramentas de painel do AEMCS.
 
-### Criar regras no projeto AEM
+### Criar regras no seu projeto do AEM
 
 Para criar regras, siga estas etapas:
 
-1. No nível superior do seu projeto AEM, crie uma pasta `config`.
+1. No nível superior do seu projeto do AEM, crie uma pasta `config`.
 
 1. Na pasta `config`, crie um novo arquivo chamado `cdn.yaml`.
 
@@ -59,7 +59,7 @@ data:
 
 Veja um exemplo do arquivo `cdn.yaml` no Projeto do AEM Guides WKND Sites:
 
-![Arquivo e pasta de regras do projeto AEM WKND](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
+![Arquivo e pasta de regras de projeto do WKND AEM](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
 ### Implantar regras por meio do Cloud Manager {#deploy-rules-through-cloud-manager}
 
@@ -136,4 +136,4 @@ Neste tutorial, vamos usar a pilha ELK. Siga as instruções do [contêiner ELK 
 
 ## Próxima etapa
 
-Saiba como declarar regras de filtro de tráfego, incluindo regras WAF, no capítulo [Exemplos e análise de resultados](./examples-and-analysis.md), usando o Projeto de sites WKND do AEM.
+Saiba como declarar regras de filtro de tráfego, incluindo regras do WAF no capítulo [Exemplos e análise de resultados](./examples-and-analysis.md), usando o Projeto de sites WKND do AEM.

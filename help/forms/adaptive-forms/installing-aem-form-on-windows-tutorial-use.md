@@ -3,14 +3,14 @@ title: Etapas simplificadas para instalar o AEM Forms no Windows
 description: Etapas rápidas e fáceis para instalar o AEM Forms no Windows
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 113
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Nunca clique duas vezes no jar AEM Quick Start, se pretender usar o AEM Forms.
+>Nunca clique duas vezes no jar de Início rápido do AEM, se você pretende usar o AEM Forms.
 >
 >Além disso, verifique se não há espaços no caminho da pasta AEM Forms Installation.
 >
@@ -86,4 +86,4 @@ Embora recomendemos seguir a [documentação oficial](https://helpx.adobe.com/br
 1. Salve as alterações.
 
 Parabéns!! Agora você instalou e configurou o AEM Forms em seu sistema.
-Dependendo das suas necessidades, você pode configurar o [Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ou o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) no servidor
+Dependendo das suas necessidades, você pode configurar o [Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ou o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) no seu servidor

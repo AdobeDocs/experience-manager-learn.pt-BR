@@ -2,29 +2,29 @@
 title: Visão geral do Dynamic Media com o AEM Assets
 description: Esta série de vídeos oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo do Experience Manager Assets. Nossa estrutura e o conjunto de componentes permitem que os profissionais de marketing personalizem e entreguem experiências interativas de multimídia em todos os dispositivos.
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# Utilização do Dynamic Media com o AEM Assets {#understanding-aem-dynamic-media}
+# Uso do Dynamic Media com o AEM Assets {#understanding-aem-dynamic-media}
 
 Esta série de vídeos em várias partes oferece uma visão geral de como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. O Dynamic Media permite gerenciar e publicar experiências digitais dinâmicas — um recurso exclusivo do Experience Manager Assets. Nossa estrutura e o conjunto de componentes permitem que os profissionais de marketing personalizem e entreguem experiências interativas de multimídia em todos os dispositivos.
 
-## Demonstração ao vivo do Dynamic Media
+## Demonstração do Dynamic Media ao vivo
 
-[![Demonstração ao vivo do AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![Demonstração do AEM Assets Dynamic Media ao vivo](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-Explore as possibilidades do Adobe Dynamic Media com nossa [**Demonstração ao vivo**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), onde as soluções de ponta ganham vida. Saiba como o [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) simplifica fluxos de trabalho e eleva o gerenciamento de conteúdo e descubra as [**Experiências interativas**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) que cativam públicos em todos os canais. [Veja como o Dynamic Media pode transformar sua estratégia de conteúdo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
+Explore as possibilidades do Adobe Dynamic Media com nossa [**Demonstração em tempo real**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), onde as soluções de última geração ganham vida. Saiba como o [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) simplifica fluxos de trabalho e eleva o gerenciamento de conteúdo e descubra as [**Experiências interativas**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) que cativam públicos em todos os canais. [Veja como o Dynamic Media pode transformar sua estratégia de conteúdo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)!
 
 ## Visão geral do Dynamic Media
 
@@ -34,7 +34,7 @@ Explore as possibilidades do Adobe Dynamic Media com nossa [**Demonstração ao 
 >
 >A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu.
 
-Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. A Dynamic Media opera em uma única metodologia de Ativo principal, na qual você faz upload de um ativo de imagem ou de vídeo que pode ser solicitado para preencher um conjunto ilimitado de variações consumíveis ou representações derivadas necessárias. Incluído:
+Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando o Adobe Experience Manager Dynamic Media como um serviço de veiculação de conteúdo. O Dynamic Media opera em uma única metodologia de Ativo principal, na qual você faz upload de um ativo de imagem ou vídeo que pode ser solicitado para preencher um conjunto ilimitado de variações consumíveis ou representações derivadas necessárias. Incluído:
 
 * Explicação de um único ativo principal para entrega de produto URL
 * Opções de processamento de imagem
@@ -48,9 +48,9 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando 
 
 >[!NOTE]
 >
->A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu. Este vídeo faz referência aos conceitos descritos na Parte 1 do vídeo (Visão geral da Dynamic Media).
+>A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu. Este vídeo faz referência aos conceitos descritos na Parte 1 do vídeo (Visão geral do Dynamic Media).
 
-Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experience Manager Dynamic Media e pode ser facilmente usado no AEM Sites, com um componente, para otimizar de forma simples e automática com base na largura da página responsiva. Crie facilmente um banner de imagem interativo e gere uma cópia de URL para usar em qualquer Sistema de gerenciamento de conteúdo.
+Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experience Manager Dynamic Media e pode ser facilmente usado no AEM Sites, com um componente, para ser simples e cortado automaticamente para otimizar com base na largura de página responsiva. Crie facilmente um banner de imagem interativo e gere uma cópia de URL para usar em qualquer Sistema de gerenciamento de conteúdo.
 
 * Flexibilidade de componentes do AEM Sites Dynamic Media
 * Download local com predefinições de imagem
@@ -62,7 +62,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experienc
 
 >[!NOTE]
 >
->A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu. Este vídeo faz referência aos conceitos descritos na Parte 1 do vídeo (Visão geral da Dynamic Media).
+>A funcionalidade demonstrada aqui está disponível com o modo de execução do Dynamic Media DMS7, nosso modo de execução atualmente compatível, não necessariamente o modo de execução DMHybrid, que o DMS7 substituiu. Este vídeo faz referência aos conceitos descritos na Parte 1 do vídeo (Visão geral do Dynamic Media).
 
 Este vídeo descreve o processo simples de criação de uma coleção de ativos de mídia do visualizador de mídia mista, incluindo um Conjunto de rotação, Vídeo e coleção de imagens de produtos. Adicione conteúdo ao Conjunto de mídias mistas e crie um visualizador personalizado para escolher no URL de cópia final ou no componente AEM Sites.
 
@@ -88,13 +88,13 @@ Este vídeo descreve como as Predefinições de imagem são criadas e o que é u
 
 Este vídeo descreve como ir além do redimensionamento de imagens para aproveitar os recursos do próprio arquivo de origem - transparência no plano de fundo, caminhos de recorte e cortes e texto como variáveis - com modificadores de URL do Dynamic Media.
 
-* Uso de modificadores de URL no campo Dynamic Media Modifier
+* Uso de modificadores de URL no campo Modificador do Dynamic Media
 * Alteração da cor de fundo em imagens com transparência
 * Recorte para um caminho de imagem
 * Recortar para um caminho de imagem
 * Criação de um modelo de texto a partir de um arquivo do Photoshop
 
-## Gerenciamento do tamanho do arquivo JPEG
+## Gerenciamento de tamanho de arquivo do JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 

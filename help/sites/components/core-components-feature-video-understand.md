@@ -1,9 +1,9 @@
 ---
 title: Compreensão dos componentes principais
-description: Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Criados com práticas recomendadas e padrões do Adobe, os Componentes principais fornecem um conjunto de linha de base de funcionalidade para qualquer implementação do Sites.
+description: Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Criados com as práticas recomendadas e os padrões da Adobe, os Componentes principais fornecem um conjunto de linha de base de funcionalidade para qualquer implementação do Sites.
 feature: Core Components
 doc-type: Feature Video
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4676
 thumbnail: 18926.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 097216b7-b345-4fcb-bab3-e660d74252a6
 duration: 656
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 42%
@@ -26,7 +26,7 @@ ht-degree: 42%
 >abstract="Nesta guia, você pode ver o conteúdo que ajudará você a criar sites modernos compatíveis com o AEM as a Cloud Service. A chave para isso é usar os Componentes principais"
 >additional-url="https://video.tv.adobe.com/v/18926" text="Visão geral dos Componentes principais"
 
-Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Criados com práticas recomendadas e padrões do Adobe, os Componentes principais fornecem um conjunto de linha de base de funcionalidade para qualquer implementação do Sites.
+Os Componentes principais do AEM são um conjunto de componentes padrão a ser usado com o Adobe Experience Manager. Criados com as práticas recomendadas e os padrões da Adobe, os Componentes principais fornecem um conjunto de linha de base de funcionalidade para qualquer implementação do Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
 

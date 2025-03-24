@@ -1,7 +1,7 @@
 ---
 title: Integrar o Workfront e o AEM Assets usando o conector aprimorado
 description: Saiba mais sobre as noções básicas da integração avançada de conectores do Adobe Workfront e do Experience Manager Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, User
@@ -13,7 +13,7 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 # Integrar o Workfront e o AEM Assets ao conector aprimorado
 
-![Série de especialistas em AEM](./assets/banner.png)
+![Série para especialistas da AEM](./assets/banner.png)
 
-Junte-se aos especialistas da Adobe Workfront e da Experience Manager Assets nesta série de vídeos em quatro partes, em que eles demonstram e discutem sobre os detalhes da integração do Workfront e do AEM Assets usando o conector aprimorado.
+Junte-se aos especialistas da Adobe em Workfront e Experience Manager Assets nesta série de vídeos em quatro partes, onde eles demonstram e discutem sobre os detalhes da integração do Workfront e do AEM Assets usando o conector aprimorado.
 
-Esta série de quatro partes segue um grupo de especialistas em Adobe - de gerentes de produtos a consultores e parceiros de Adobe - discutindo:
+Esta série de especialistas em quatro partes segue um grupo de especialistas da Adobe - de gerentes de produtos a consultores e parceiros da Adobe - discutindo:
 
-1. [Execução das configurações iniciais no Workfront e AEM](./setup.md)
-2. [Configuração da sincronização de metadados entre formulários personalizados do Workfront e AEM](./custom-forms.md)
-3. [Uso de tags AEM, pastas vinculadas a projetos, links de ativos do Adobe e esquemas de metadados de pastas para maximizar o valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
-4. [Uso do fluxo de trabalho avançado de AEM para simplificar os processos empresariais no AEM e no Workfront e em outras configurações avançadas](./advanced-settings-and-workflows.md)
+1. [Execução das configurações iniciais de instalação no Workfront e no AEM](./setup.md)
+2. [Configuração da sincronização de metadados entre formulários personalizados do Workfront e o AEM](./custom-forms.md)
+3. [Uso de tags do AEM, pastas vinculadas a projetos, links de ativos do Adobe e esquemas de metadados de pastas para maximizar o valor](./aem-tags-project-linked-folders-and-folder-metadata.md)
+4. [Uso de fluxo de trabalho avançado do AEM para simplificar os processos de negócios no AEM e no Workfront, além de outras configurações avançadas](./advanced-settings-and-workflows.md)
 
 <table>
   <td>
@@ -70,12 +70,12 @@ Esta série de quatro partes segue um grupo de especialistas em Adobe - de geren
              src="./assets/aem-tags.png">
       </a>
       <div>
-         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>Marcas do AEM, pastas vinculadas do projeto e metadados da pasta</strong></a>
+         <a href="./aem-tags-project-linked-folders-and-folder-metadata.md"><strong>Marcas do AEM, pastas vinculadas ao projeto e metadados da pasta</strong></a>
          <br/><em>Parte 3/4</em> 
       </div>
       <p>
         <br/>
-            Saiba como direcionar a taxonomia do AEM a partir do Workfront, usar pastas vinculadas a projetos e dados para metadados da pasta de ativos do AEM.
+            Saiba como direcionar a taxonomia do AEM a partir do Workfront, usar pastas vinculadas a projetos e dados para metadados de pastas de ativos do AEM.
       </p>
    </td>   
    <!-- Advanced workflows -->
@@ -90,7 +90,7 @@ Esta série de quatro partes segue um grupo de especialistas em Adobe - de geren
       </div>
       <p>
         <br/>
-            Saiba mais sobre as configurações avançadas do conector aprimorado do Workfront para AEM, gerenciar a sincronização de dados usando workflows avançados.
+            Saiba mais sobre as configurações avançadas do conector aprimorado do Workfront para AEM, gerenciar a sincronização de dados usando fluxos de trabalho avançados.
       </p>
    </td>
   </tr>  

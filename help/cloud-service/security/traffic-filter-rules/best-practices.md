@@ -1,7 +1,7 @@
 ---
-title: Práticas recomendadas para regras de Filtro de tráfego, incluindo regras WAF
-description: Saiba mais sobre as práticas recomendadas para regras de Filtro de tráfego, incluindo regras WAF.
-version: Cloud Service
+title: Práticas recomendadas para regras de Filtro de tráfego, incluindo regras do WAF
+description: Saiba mais sobre as práticas recomendadas para regras de Filtro de tráfego, incluindo regras do WAF.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,16 +12,16 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# Práticas recomendadas para regras de filtro de tráfego, incluindo regras WAF
+# Práticas recomendadas para regras de filtro de tráfego, incluindo regras do WAF
 
-Saiba mais sobre as práticas recomendadas para regras de filtro de tráfego, incluindo regras WAF. É importante observar que as práticas recomendadas descritas neste artigo não são exaustivas e não se destinam a substituir suas próprias políticas e procedimentos de segurança.
+Saiba mais sobre as práticas recomendadas para regras de filtro de tráfego, incluindo regras do WAF. É importante observar que as práticas recomendadas descritas neste artigo não são exaustivas e não se destinam a substituir suas próprias políticas e procedimentos de segurança.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
@@ -38,7 +38,7 @@ Saiba mais sobre as práticas recomendadas para regras de filtro de tráfego, in
 
 ## Práticas recomendadas para regras de filtro de tráfego
 
-Ative as regras de filtro de tráfego abaixo para seu projeto AEM. No entanto, os valores desejados para as propriedades `rateLimit` e `clientCountry` devem ser determinados em colaboração com a equipe de segurança.
+Ative as regras de filtro de tráfego abaixo para seu projeto do AEM. No entanto, os valores desejados para as propriedades `rateLimit` e `clientCountry` devem ser determinados em colaboração com a equipe de segurança.
 
 ```yaml
 kind: CDN
@@ -91,9 +91,9 @@ data:
 
 ## Práticas recomendadas para regras do WAF
 
-Depois que o WAF é licenciado e ativado para o seu programa, os sinalizadores de correspondência de tráfego do WAF aparecem em gráficos e registros de solicitações, mesmo que você não os tenha declarado em uma regra. Portanto, você está sempre ciente do tráfego mal-intencionado potencialmente novo e pode criar regras conforme necessário. Observe os sinalizadores do WAF que não são refletidos nas regras declaradas e considere declará-los.
+Depois que o WAF é licenciado e ativado para o seu programa, os sinalizadores de correspondência de tráfego do WAF aparecem em gráficos e logs de solicitação, mesmo que você não os tenha declarado em uma regra. Portanto, você está sempre ciente do tráfego mal-intencionado potencialmente novo e pode criar regras conforme necessário. Examine os sinalizadores do WAF que não são refletidos nas regras declaradas e considere declará-los.
 
-Considere as regras do WAF abaixo para o seu projeto AEM. No entanto, os valores desejados para as propriedades `action` e `wafFlags` devem ser determinados em colaboração com a equipe de segurança.
+Considere as regras do WAF abaixo para seu projeto do AEM. No entanto, os valores desejados para as propriedades `action` e `wafFlags` devem ser determinados em colaboração com a equipe de segurança.
 
 ```yaml
 kind: CDN

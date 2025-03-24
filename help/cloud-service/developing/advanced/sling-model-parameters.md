@@ -1,14 +1,14 @@
 ---
 title: Parametrizar modelos do Sling a partir do HTL
-description: Saiba como transmitir parâmetros de HTL para um Modelo Sling em AEM.
-version: Cloud Service
+description: Saiba como transmitir parâmetros de HTL para um modelo Sling no AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Parametrizar modelos do Sling a partir do HTL
 
-O Adobe Experience Manager (AEM) oferece uma estrutura robusta para a criação de aplicativos web dinâmicos e adaptáveis. Um de seus recursos avançados é a capacidade de parametrizar modelos Sling, melhorando sua flexibilidade e reutilização. Este tutorial guiará você pela criação de um modelo Sling com parâmetros e seu uso em HTL (Linguagem de modelo de HTML) para renderizar o conteúdo dinâmico.
+O Adobe Experience Manager (AEM) oferece uma estrutura robusta para a criação de aplicativos web dinâmicos e adaptáveis. Um de seus recursos avançados é a capacidade de parametrizar modelos Sling, melhorando sua flexibilidade e reutilização. Este tutorial guiará você pela criação de um modelo Sling com parâmetros e seu uso no HTL (HTML Template Language) para renderizar conteúdo dinâmico.
 
 ## Script HTL
 
@@ -126,4 +126,4 @@ Com os parâmetros `"Hello"` e `"World"`, o script HTL gera a seguinte saída:
 </p>
 ```
 
-Isso demonstra como os modelos Sling parametrizados em AEM podem ser influenciados com base nos parâmetros de entrada fornecidos por HTL.
+Isso demonstra como os modelos Sling parametrizados no AEM podem ser influenciados com base nos parâmetros de entrada fornecidos por HTL.

@@ -1,7 +1,7 @@
 ---
 title: Webhooks e eventos do AEM
-description: Saiba como receber eventos de AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
-version: Cloud Service
+description: Saiba como receber Eventos do AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -21,24 +21,24 @@ ht-degree: 0%
 
 # Webhooks e eventos do AEM
 
-Saiba como receber eventos de AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
+Saiba como receber eventos do AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-Neste exemplo, utilizar um _webhook hospedado_ fornecido pelo Adobe permite receber eventos AEM sem a necessidade de configurar seu próprio webhook. Este webhook fornecido pelo Adobe está hospedado em [Glitch](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web propício à criação e implantação de aplicativos Web. No entanto, a opção de usar seu próprio webhook também está disponível, se preferir.
+Neste exemplo, o uso de um _webhook_ hospedado fornecido pela Adobe permite receber eventos do AEM sem a necessidade de configurar seu próprio webhook. Este webhook fornecido pela Adobe está hospedado em [Glitch](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web propício à criação e implantação de aplicativos Web. No entanto, a opção de usar seu próprio webhook também está disponível, se preferir.
 
 ## Pré-requisitos
 
 Para concluir este tutorial, você precisa:
 
-- Ambiente AEM as a Cloud Service com [evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
+- Ambiente AEM as a Cloud Service com [Evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment).
 
-- [Projeto do Adobe Developer Console configurado para AEM Eventos](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+- [Projeto do Adobe Developer Console configurado para AEM Events](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
 
 ## Acessar webhook
 
-Para acessar o webhook fornecido pelo Adobe, siga estas etapas:
+Para acessar o webhook fornecido pela Adobe, siga estas etapas:
 
 - Verifique se você pode acessar o [Falha - webhook hospedado](https://lovely-ancient-coaster.glitch.me/) em uma nova guia do navegador.
 
@@ -52,11 +52,11 @@ Para acessar o webhook fornecido pelo Adobe, siga estas etapas:
 
 ## Configurar webhook no projeto do Adobe Developer Console
 
-Para receber eventos de AEM no URL do webhook acima, siga estas etapas:
+Para receber Eventos do AEM no URL do webhook acima, siga estas etapas:
 
 - Na [Adobe Developer Console](https://developer.adobe.com), navegue até o projeto e clique em para abri-lo.
 
-- Na seção **Produtos e serviços**, clique nas reticências `...` ao lado do cartão de eventos desejado que deve enviar eventos AEM para o webhook e selecione **Editar**.
+- Na seção **Produtos e serviços**, clique nas reticências `...` ao lado do cartão de eventos desejado que deve enviar eventos do AEM para o webhook e selecione **Editar**.
 
   ![Edição de projeto do Adobe Developer Console](../assets/examples/webhook/adobe-developer-console-project-edit.png)
 
@@ -73,9 +73,9 @@ Para receber eventos de AEM no URL do webhook acima, siga estas etapas:
   ![Falha - solicitação de desafio](../assets/examples/webhook/glitch-challenge-request.png)
 
 
-## Acionar eventos de AEM
+## Acionar eventos do AEM
 
-Para acionar eventos de AEM do seu ambiente do AEM as a Cloud Service que foi registrado no projeto do Adobe Developer Console acima, siga estas etapas:
+Para acionar eventos do AEM a partir do ambiente do AEM as a Cloud Service que foi registrado no projeto do Adobe Developer Console acima, siga estas etapas:
 
 - Acesse e faça logon no ambiente de criação do AEM as a Cloud Service via [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -83,7 +83,7 @@ Para acionar eventos de AEM do seu ambiente do AEM as a Cloud Service que foi re
 
 ## Revisar detalhes do evento
 
-Depois de concluir as etapas acima, você deve ver os eventos de AEM sendo entregues ao webhook. Procure a solicitação POST na página do webhook Falha.
+Depois de concluir as etapas acima, você deve ver os Eventos da AEM sendo entregues ao webhook. Procure a solicitação POST na página do webhook Falha.
 
 ![Falha - Solicitação POST](../assets/examples/webhook/glitch-post-request.png)
 
@@ -91,7 +91,7 @@ Estes são os principais detalhes da solicitação POST:
 
 - caminho: `/webhook/${YOUR-WEBHOOK-URL}`, por exemplo `/webhook/AdobeTM-aem-eventing`
 
-- cabeçalhos: cabeçalhos de solicitação enviados pelo Adobe I/O Events, por exemplo:
+- cabeçalhos: cabeçalhos de solicitação enviados pela Adobe I/O Events, por exemplo:
 
 ```json
 {
@@ -117,7 +117,7 @@ Estes são os principais detalhes da solicitação POST:
 }
 ```
 
-- body/payload: corpo da solicitação enviado pelos Eventos Adobe I/O, por exemplo:
+- body/payload: corpo da solicitação enviado pela Adobe I/O Events, por exemplo:
 
 ```json
 {
@@ -151,7 +151,7 @@ Estes são os principais detalhes da solicitação POST:
 }
 ```
 
-Você pode ver que os detalhes do evento AEM têm todas as informações necessárias para processar o evento no webhook. Por exemplo, o tipo de evento (`type`), a origem do evento (`source`), a ID do evento (`event_id`), a hora do evento (`time`) e os dados do evento (`data`).
+Você pode ver que os detalhes do evento do AEM têm todas as informações necessárias para processar o evento no webhook. Por exemplo, o tipo de evento (`type`), a origem do evento (`source`), a ID do evento (`event_id`), a hora do evento (`time`) e os dados do evento (`data`).
 
 ## Recursos adicionais
 

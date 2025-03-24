@@ -1,8 +1,8 @@
 ---
-title: Estender um Componente principal | Introdução ao Editor de SPA AEM e React
-description: Saiba como estender o Modelo JSON para um Componente principal existente a ser usado com o Editor de SPA AEM. AEM Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor de SPA. Saiba como usar o padrão de delegação para estender os Modelos e recursos do Sling Resource Merger.
+title: Estender um Componente principal | Introdução ao AEM SPA Editor e React
+description: Saiba como estender o Modelo JSON para um Componente principal existente a ser usado com o Editor SPA do AEM. Entender como adicionar propriedades e conteúdo a um componente existente é uma técnica poderosa para expandir os recursos de uma implementação do Editor SPA do AEM. Saiba como usar o padrão de delegação para estender os Modelos e recursos do Sling Resource Merger.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Estender um Componente principal {#extend-component}
 
-Saiba como estender um Componente principal existente para ser usado com o Editor de SPA AEM. AEM Entender como estender um componente existente é uma técnica poderosa para personalizar e expandir os recursos de uma implementação do Editor de SPA.
+Saiba como estender um Componente principal existente para ser usado com o Editor SPA do AEM. Entender como estender um componente existente é uma técnica poderosa para personalizar e expandir os recursos de uma implementação do Editor SPA do AEM.
 
 ## Objetivo
 
@@ -36,11 +36,11 @@ Este capítulo ilustra o código adicional necessário para adicionar uma propri
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). AEM Pressupõe-se que, neste ponto do tutorial, os usuários tenham uma sólida compreensão do recurso Editor de SPA.
+Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Presume-se que, neste ponto do tutorial, os usuários tenham uma sólida compreensão do recurso Editor SPA do AEM.
 
 ## Herança com o supertipo de recurso do Sling {#sling-resource-super-type}
 
-Para estender um conjunto de componentes existente, use uma propriedade chamada `sling:resourceSuperType` na definição do componente.  `sling:resourceSuperType`é uma [propriedade](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) que pode ser definida na definição de um componente AEM que aponte para outro componente. Isso define explicitamente o componente para herdar toda a funcionalidade do componente identificado como o `sling:resourceSuperType`.
+Para estender um conjunto de componentes existente, use uma propriedade chamada `sling:resourceSuperType` na definição do componente.  `sling:resourceSuperType`é uma [propriedade](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) que pode ser definida na definição de um componente do AEM que aponta para outro componente. Isso define explicitamente o componente para herdar toda a funcionalidade do componente identificado como o `sling:resourceSuperType`.
 
 Se quisermos estender o componente `Image` em `wknd-spa-react/components/image`, precisamos atualizar o código no módulo `ui.apps`.
 
@@ -239,11 +239,11 @@ Nosso componente `Banner` requer um campo de texto extra na caixa de diálogo pa
 
    Observe que não foi necessário definir as guias para **Ativo** ou **Metadados**. Eles são herdados pela propriedade `sling:resourceSuperType`.
 
-   Antes de podermos visualizar a caixa de diálogo, precisamos implementar o Componente SPA e a função `MapTo`.
+   Antes de podermos visualizar a caixa de diálogo, precisamos implementar o Componente de SPA e a função `MapTo`.
 
-## Implementar o componente de SPA {#implement-spa-component}
+## Implementar o componente SPA {#implement-spa-component}
 
-Para usar o componente Banner com o Editor de SPA, é necessário criar um novo componente SPA que será mapeado para `wknd-spa-react/components/banner`. Isso é feito no módulo `ui.frontend`.
+Para usar o componente Banner com o Editor de SPA, um novo componente de SPA deve ser criado para ser mapeado para `wknd-spa-react/components/banner`. Isso é feito no módulo `ui.frontend`.
 
 1. No módulo `ui.frontend`, crie uma nova pasta para `Banner` em `ui.frontend/src/components/Banner`.
 1. Crie um novo arquivo chamado `Banner.js` abaixo da pasta `Banner`. Preencha-o com o seguinte:
@@ -296,9 +296,9 @@ Para usar o componente Banner com o Editor de SPA, é necessário criar um novo 
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   Este componente SPA mapeia para o componente AEM `wknd-spa-react/components/banner` criado anteriormente.
+   Este componente de SPA mapeia para o componente do AEM `wknd-spa-react/components/banner` criado anteriormente.
 
-1. Atualize `import-components.js` em `ui.frontend/src/components/import-components.js` para incluir o novo componente SPA `Banner`:
+1. Atualize `import-components.js` em `ui.frontend/src/components/import-components.js` para incluir o novo componente de SPA `Banner`:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -315,13 +315,13 @@ Para usar o componente Banner com o Editor de SPA, é necessário criar um novo 
 
 1. Atualize a política do Modelo SPA para adicionar o componente `Banner` como um **componente permitido**.
 
-1. Navegue até uma página SPA e adicione o componente `Banner` a uma das páginas SPA:
+1. Navegue até uma página de SPA e adicione o componente `Banner` a uma das páginas de SPA:
 
    ![Adicionar componente de banner](assets/extend-component/add-banner-component.png)
 
    >[!NOTE]
    >
-   > A caixa de diálogo permitirá que você salve um valor para **Texto do banner**, mas esse valor não é refletido no componente SPA. Para habilitar, precisamos estender o Modelo Sling para o componente.
+   > A caixa de diálogo permitirá que você salve um valor para **Texto do banner**, mas esse valor não é refletido no componente de SPA. Para habilitar, precisamos estender o Modelo Sling para o componente.
 
 ## Adicionar interface Java {#java-interface}
 
@@ -461,7 +461,7 @@ Em seguida, implemente o Modelo Sling para a interface `BannerModel`.
 
 ## Tudo junto na prática {#put-together}
 
-1. Retorne ao AEM e abra a página SPA que tem o componente `Banner`.
+1. Retorne ao AEM e abra a página de SPA que tem o componente `Banner`.
 1. Atualize o componente `Banner` para incluir **Texto do banner**:
 
    ![Texto do banner](assets/extend-component/banner-text-dialog.png)

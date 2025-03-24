@@ -3,14 +3,14 @@ title: Uso da API de lote para gerar documentos de comunicação interativa
 description: Ativos de amostra para geração de documentos de canal de impressão usando a API em lote
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 77
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Este artigo fornece ativos de amostra para gerar documentos de Comunicações in
 * Baixe e extraia o conteúdo do [arquivo zip](assets/jsonfile.zip). O arquivo zip contém a pasta denominada `jsonfile`, que contém o arquivo `beneficiaries.json`. Esse arquivo tem os dados para gerar três documentos.
 
 * Solte a pasta `jsonfile` na pasta de entrada da sua pasta monitorada.
-* Quando a pasta for selecionada para processamento, verifique a pasta de resultados da pasta monitorada. Você deve ver arquivos de 3 PDF gerados
+* Quando a pasta for selecionada para processamento, verifique a pasta de resultados da pasta monitorada. Você deve ver 3 arquivos PDF gerados
 
 ## Geração de lote usando solicitações REST
 

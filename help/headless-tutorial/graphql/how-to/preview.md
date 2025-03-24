@@ -1,7 +1,7 @@
 ---
 title: Visualização do fragmento de conteúdo
-description: Saiba como usar a visualização do Fragmento de conteúdo para todos os autores para ver rapidamente como as alterações de conteúdo afetam suas experiências AEM Headless.
-version: Cloud Service
+description: Saiba como usar a visualização do Fragmento de conteúdo para todos os autores para ver rapidamente como as alterações de conteúdo afetam suas experiências do AEM Headless.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Visualização do fragmento de conteúdo
 
-Aplicativos AEM headless oferecem suporte à pré-visualização de criação integrada. A experiência de visualização vincula o editor de Fragmento de conteúdo do autor do AEM ao seu aplicativo personalizado (endereçável via HTTP), permitindo um deep link no aplicativo que renderiza o Fragmento de conteúdo que está sendo visualizado.
+Os aplicativos AEM Headless oferecem suporte à pré-visualização de criação integrada. A experiência de visualização vincula o editor de Fragmento de conteúdo do autor do AEM ao seu aplicativo personalizado (endereçável via HTTP), permitindo um deep link no aplicativo que renderiza o Fragmento de conteúdo que está sendo visualizado.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Para usar a visualização do Fragmento de conteúdo, várias condições devem ser atendidas:
 
 1. O aplicativo deve ser implantado em um URL acessível aos autores
-1. O aplicativo deve ser configurado para se conectar ao serviço AEM Author (em vez do serviço AEM Publish)
+1. O aplicativo deve ser configurado para se conectar ao serviço de Autor do AEM (em vez do serviço de Publicação do AEM)
 1. O aplicativo deve ser projetado com URLs ou rotas que possam usar [caminho ou ID do fragmento de conteúdo](#url-expressions) para selecionar os fragmentos de conteúdo a serem exibidos para visualização na experiência do aplicativo.
 
 ## Visualizar URLs
@@ -37,11 +37,11 @@ As URLs de visualização, usando [expressões de URL](#url-expressions), estão
 
 ![URL de Visualização do Modelo de Fragmento de Conteúdo](./assets/preview/cf-model-preview-url.png)
 
-1. Fazer logon no serviço de Autor do AEM como administrador
+1. Faça logon no serviço de Autor do AEM como Administrador
 1. Navegue até __Ferramentas > Geral > Modelos de fragmento de conteúdo__
 1. Selecione o __Modelo de fragmento de conteúdo__ e selecione __Propriedades__ na barra de ação superior.
 1. Insira a URL de visualização para o Modelo de fragmento de conteúdo usando [expressões de URL](#url-expressions)
-   + O URL de visualização deve apontar para uma implantação do aplicativo que se conecta ao serviço de Autor de AEM.
+   + O URL de visualização deve apontar para uma implantação do aplicativo que se conecta ao serviço de Autor do AEM.
 
 ### Expressões de URL
 

@@ -1,7 +1,7 @@
 ---
-title: Configurar a inclusão dinâmica do Sling para AEM
-description: Uma apresentação em vídeo da instalação e uso do Apache Sling Dynamic Include com AEM Dispatcher em execução no Apache HTTP Web Server.
-version: 6.4, 6.5
+title: Configurar a inclusão dinâmica do Sling no AEM
+description: Uma apresentação em vídeo da instalação e uso do Apache Sling Dynamic Include com o AEM Dispatcher em execução no Apache HTTP Web Server.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurar [!DNL Sling Dynamic Include]
 
-Uma apresentação em vídeo sobre a instalação e uso do [!DNL Apache Sling Dynamic Include] com o [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) em execução no [!DNL Apache HTTP Web Server].
+Uma apresentação em vídeo da instalação e uso do [!DNL Apache Sling Dynamic Include] com o [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) em execução em [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 

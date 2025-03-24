@@ -1,7 +1,7 @@
 ---
 title: Logs comuns do AEM Dispatcher
 description: Consulte as entradas de log comuns na Dispatcher e saiba o que significam e como abordá-las.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Isso significa que a instância do AEM tinha um soquete aberto que podia ser acessado e o tempo limite de resposta foi excedido. Isso significa que a instância do AEM estava muito lenta ou não estava funcionando e o Dispatcher atingiu as configurações de tempo limite definidas na seção de renderização do farm. Aumente a configuração de tempo limite ou deixe a instância do AEM em bom funcionamento.
+Isso significa que a instância do AEM tinha um soquete aberto que podia ser acessado e o tempo limite de resposta foi excedido. Significa que sua instância do AEM estava muito lenta ou não estava íntegra e que o Dispatcher atingiu as configurações de tempo limite definidas na seção de renderização do farm. Aumente a configuração de tempo limite ou deixe a instância do AEM em bom funcionamento.
 
 ## Nível de armazenamento em cache
 
@@ -167,7 +167,7 @@ Thu Sep 27 17:35:11 2018 D pid 18936 Vanity URL file (/tmp/vanity_urls) not foun
 Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42:4503/libs/granite/dispatcher/content/vanityUrls.html: remote server returned: HTTP/1.1 404 Not Found
 ```
 
-Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração com a instalação do pacote no renderizador AEM.
+Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração com a instalação do pacote no renderizador do AEM.
 
 Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
@@ -201,6 +201,6 @@ Exemplo de entrada de log:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-A página foi buscada pelo método GET http para o conteúdo `/content/we-retail/us/en.html` e levou 24034 milissegundos. A parte em que desejamos prestar atenção está no final de `publishfarm/0`. Você verá que ele direcionou e correspondeu a `publishfarm`. A solicitação foi obtida da renderização 0. Isso significa que essa página teve que ser solicitada ao AEM e depois armazenada em cache. Agora vamos solicitar esta página novamente e ver o que acontece com o log.
+Foi realizada uma busca na página usando o método GET http para o conteúdo `/content/we-retail/us/en.html` e levou 24034 milissegundos. A parte em que desejamos prestar atenção está no final de `publishfarm/0`. Você verá que ele direcionou e correspondeu a `publishfarm`. A solicitação foi obtida da renderização 0. Isso significa que essa página teve que ser solicitada ao AEM e depois armazenada em cache. Agora vamos solicitar esta página novamente e ver o que acontece com o log.
 
 [Próximo -> Arquivos somente leitura](./immutable-files.md)

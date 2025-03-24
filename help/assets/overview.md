@@ -1,14 +1,14 @@
 ---
 title: Vídeos e tutoriais do AEM Assets
-description: Assista aos nossos vídeos para obter suporte e assistência aos ativos AEM.
+description: Assista aos nossos vídeos para obter suporte e assistência do AEM Asset.
 sub-product: Experience Manager Assets
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 {{edge-delivery-services}}
 
-O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de ativos digitais da plataforma AEM que permite que os usuários criem, gerenciem e compartilhem ativos digitais (imagens, vídeos, documentos e clipes de áudio) num repositório baseado na web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Assets.
+O Adobe Experience Manager (AEM) Assets é uma ferramenta de gerenciamento de ativos digitais da AEM Platform que permite que os usuários criem, gerenciem e compartilhem ativos digitais (imagens, vídeos, documentos e clipes de áudio) num repositório baseado na web. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -48,7 +48,7 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Usando o Aplicativo de Desktop AEM</strong>
+      <strong>Usando o Aplicativo de Desktop do AEM</strong>
       </a>
    </div>
    <p>
@@ -91,4 +91,4 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Sites](/help/sites/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
-* [Tutoriais da Fundação AEM](/help/foundation/overview.md)
+* [Tutoriais do AEM Foundation](/help/foundation/overview.md)

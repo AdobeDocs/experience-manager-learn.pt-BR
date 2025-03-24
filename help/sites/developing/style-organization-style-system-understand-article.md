@@ -2,14 +2,14 @@
 title: Noções básicas das práticas recomendadas do sistema de estilos com o AEM Sites
 description: Um artigo detalhado explicando as práticas recomendadas para a implementação do Sistema de estilos com o Adobe Experience Manager Sites.
 feature: Style System
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
 duration: 328
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Revise o conteúdo em [Entendendo como codificar para o Sistema de Estilos](style-system-technical-video-understand.md), para garantir uma compreensão das convenções semelhantes ao BEM usadas pelo Sistema de Estilos AEM.
+>Revise o conteúdo em [Noções básicas sobre como codificar o Sistema de Estilos](style-system-technical-video-understand.md), para garantir uma compreensão das convenções semelhantes ao BEM usadas pelo Sistema de Estilos do AEM.
 
 Há dois tipos ou estilos principais que são implementados para o Sistema de Estilos do AEM:
 
@@ -33,7 +33,7 @@ Os **Estilos de layout** afetam muitos elementos de um componente para criar uma
 
 ## Práticas recomendadas de organização de estilo {#style-organization-best-practices}
 
-Ao definir os nomes de estilo disponíveis para autores de AEM, é melhor:
+Ao definir os nomes de estilo disponíveis para autores do AEM, é melhor:
 
 * Nomear estilos usando um vocabulário compreendido pelos autores
 * Minimizar o número de opções de estilo
@@ -41,17 +41,17 @@ Ao definir os nomes de estilo disponíveis para autores de AEM, é melhor:
 * Expor apenas combinações de estilo que tenham efeito
    * Se combinações ineficazes forem expostas, certifique-se de que pelo menos não tenham um efeito negativo
 
-À medida que o número de combinações de estilo possíveis disponíveis para autores de AEM aumenta, mais permutas existem que devem ser de controle de qualidade e validadas em relação aos padrões da marca. Muitas opções também podem confundir os autores, pois pode não ficar claro qual opção ou combinação é necessária para produzir o efeito desejado.
+À medida que o número de combinações de estilos possíveis disponíveis para os autores do AEM aumenta, mais permutas existem que devem ser de controle de qualidade e validadas em relação aos padrões da marca. Muitas opções também podem confundir os autores, pois pode não ficar claro qual opção ou combinação é necessária para produzir o efeito desejado.
 
 ### Nomes de estilo vs classes CSS {#style-names-vs-css-classes}
 
-Nomes de estilo, ou as opções apresentadas a autores de AEM, e os nomes de classe CSS de implementação são dissociados no AEM.
+Os nomes de estilo ou as opções apresentadas aos autores do AEM e os nomes de classe CSS de implementação são dissociados no AEM.
 
 Isso permite que as opções de estilo sejam rotuladas em um vocabulário claro e compreendido pelos autores do AEM, mas permite que os desenvolvedores de CSS nomeiem as classes CSS de uma maneira semântica e inovadora. Por exemplo:
 
-Um componente deve ter as opções de cores com as cores **primárias** e **secundárias** da marca. No entanto, os autores do AEM conhecem as cores como **verdes** e **amarelas**, em vez da linguagem de design primária e secundária.
+Um componente deve ter as opções para ser colorido com as cores **principal** e **secundária** da marca. No entanto, os autores do AEM conhecem as cores como **verde** e **amarelo**, em vez do idioma de design primário e secundário.
 
-O Sistema de Estilos AEM pode expor esses estilos de exibição de cores usando rótulos amigáveis para autor **Verde** e **Amarelo**, enquanto permite que os desenvolvedores CSS usem a nomenclatura semântica de `.cmp-component--primary-color` e `.cmp-component--secondary-color` para definir a implementação de estilo real no CSS.
+O Sistema de Estilos do AEM pode expor esses estilos de exibição de cores usando rótulos amigáveis para autor **Verde** e **Amarelo**, enquanto permite que os desenvolvedores de CSS usem a nomeação semântica de `.cmp-component--primary-color` e `.cmp-component--secondary-color` para definir a implementação de estilo real no CSS.
 
 O nome do Estilo de **Verde** está mapeado para `.cmp-component--primary-color` e **Amarelo** para `.cmp-component--secondary-color`.
 
@@ -93,7 +93,7 @@ Se as regras de estilo padrão se aplicam com mais frequência do que não a tod
 
 >[!NOTE]
 >
->Observe que o estilo de layout Padrão NÃO tem um nome de estilo de Exibição. No entanto, o autor pode selecionar uma opção de Exibição na ferramenta de seleção Sistema de Estilos AEM.
+>Observe que o Estilo de layout padrão NÃO tem um nome de Estilo de exibição, no entanto, o autor pode selecionar uma opção de Exibição na ferramenta de seleção Sistema de Estilos do AEM.
 >
 >Isso em violação das práticas recomendadas:
 >
@@ -117,7 +117,7 @@ Se as regras de estilo padrão se aplicam com mais frequência do que não a tod
 
 O **Estilo de layout promocional** é usado para promover conteúdo de alto valor no site e é posicionado horizontalmente para ocupar uma faixa de espaço na página da Web e deve ser estilizável por cores de marca, com o estilo de layout Promocional padrão usando texto preto.
 
-Para isso, um **estilo de layout** de **Promo** e os **estilos de exibição** de **Verde** e **Amarelo** estão configurados no Sistema de Estilos AEM para o componente de Teaser.
+Para isso, um **estilo de layout** de **Promo** e os **estilos de exibição** de **Verde** e **Amarelo** estão configurados no Sistema de Estilos do AEM para o componente de Teaser.
 
 #### Padrão promocional
 
@@ -158,7 +158,7 @@ Para isso, um **estilo de layout** de **Promo** e os **estilos de exibição** d
 
 O estilo de layout **Promo alinhado à direita** é uma variação do estilo Promo que inverte o local da imagem e do texto (imagem à direita, texto à esquerda).
 
-O alinhamento direito, em seu núcleo, é um estilo de exibição, ele pode ser inserido no Sistema de estilo AEM como um Estilo de exibição selecionado em conjunto com o estilo de layout Promo. Isso viola as práticas recomendadas do:
+O alinhamento direito, em sua essência, é um estilo de exibição. Ele pode ser inserido no Sistema de estilos do AEM como um Estilo de exibição selecionado em conjunto com o Estilo de layout Promo. Isso viola as práticas recomendadas do:
 
 **Expor apenas combinações de estilo que tenham efeito**
 
@@ -273,7 +273,7 @@ CSS para colorir o texto do estilo de layout **Herói** com a cor primária (ver
 ## Recursos adicionais {#additional-resources}
 
 * [Documentação do Sistema de Estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [Criando bibliotecas de clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Criando bibliotecas de Clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Site de documentação do BEM (Block Element Modifier)](https://getbem.com/)
 * [MENOS Site de documentação](https://lesscss.org/)
 * [jQuery](https://jquery.com/)

@@ -1,7 +1,7 @@
 ---
 title: Introdução ao AEM Sites - Arquétipo de projeto
-description: Introdução ao AEM Sites - Arquétipo de projeto. O tutorial do WKND é um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager. O tutorial aborda a implementação de um site AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial aborda tópicos fundamentais como configuração de projetos, arquétipos maven, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes.
-version: 6.5, Cloud Service
+description: Introdução ao AEM Sites - Arquétipo de projeto. O tutorial do WKND é um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager. O tutorial aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial aborda tópicos fundamentais como configuração de projetos, arquétipos maven, Componentes principais, Modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 18%
@@ -23,9 +23,9 @@ ht-degree: 18%
 
 {{edge-delivery-services-and-page-editor}}
 
-Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um site AEM para uma marca fictícia de estilo de vida, a WKND.
+Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND.
 
-Este tutorial começa usando o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) para gerar um novo projeto.
+Este tutorial começa usando o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) para gerar um novo projeto.
 
 O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e tem compatibilidade retroativa com o **AEM 6.5.14+**. O site é implementado usando:
 
@@ -40,20 +40,20 @@ O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e tem c
 
 ## Ambiente de desenvolvimento local {#local-dev-environment}
 
-Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Capturas de tela e vídeos são capturados usando o SDK do AEM as a Cloud Service em execução em um ambiente macOS com o [Visual Studio Code](https://code.visualstudio.com/) como o IDE. Os comandos e o código devem ser independentes do sistema operacional local, a menos que indicado de outra forma.
+Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Capturas de tela e vídeos são capturados usando o AEM as a Cloud Service SDK em execução em um ambiente macOS com o [Visual Studio Code](https://code.visualstudio.com/) como IDE. Os comandos e o código devem ser independentes do sistema operacional local, a menos que indicado de outra forma.
 
 ### Software necessário
 
 Devem ser instalados:
 
-* [Instância **Autor** do AEM local](https://experience.adobe.com/#/downloads) (Cloud Service SDK ou 6.5.14+)
+* [Instância de **Autor** do AEM local](https://experience.adobe.com/#/downloads) (Cloud Service SDK ou 6.5.14+)
 * [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 * [Node.js](https://nodejs.org/en/) (LTS - Suporte a Longo Prazo)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 * [Visual Studio Code](https://code.visualstudio.com/) ou IDE equivalente
-   * [Sincronização AEM com VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Ferramenta usada em todo o tutorial
+   * [Sincronização do AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Ferramenta usada em todo o tutorial
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Devem ser instalados:
 
 ## GitHub {#github}
 
-O código deste tutorial pode ser encontrado no GitHub no repositório do Guia AEM:
+O código deste tutorial pode ser encontrado no GitHub, no repositório do Guia do AEM:
 
 **[GitHub: Projeto de Sites WKND](https://github.com/adobe/aem-guides-wknd)**
 
@@ -71,4 +71,4 @@ Além disso, cada parte do tutorial tem sua própria ramificação no GitHub. Um
 
 ## Próximas etapas {#next-steps}
 
-O que você está esperando? Inicie o tutorial navegando até o capítulo [Configuração do projeto](project-setup.md) e saiba como gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de projeto AEM.
+O que você está esperando? Inicie o tutorial navegando até o capítulo [Configuração do projeto](project-setup.md) e saiba como gerar um novo projeto do Adobe Experience Manager usando o Arquétipo de projeto do AEM.

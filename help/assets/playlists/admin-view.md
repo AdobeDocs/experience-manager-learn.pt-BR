@@ -1,7 +1,7 @@
 ---
 title: Administrador do AEM Assets exibe listas de reprodução de vídeo
-description: Saiba como aproveitar os recursos do as a Cloud Service Admin do AEM Assets com esta coleção de listas de reprodução de vídeo projetadas para aprimorar as habilidades de seu produto.
-version: Cloud Service
+description: Saiba como aproveitar os recursos de administração do AEM Assets as a Cloud Service com esta coleção de listas de reprodução de vídeo projetadas para aprimorar as habilidades de seu produto.
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 33e0ded0cdcb5d8ed146fdc59c6f37495cd251eb
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ![Modo de exibição de Administrador do AEM Assets](./assets/admin-view.png){align="center"}
 
-Explore essas listas de reprodução para dominar a visualização as a Cloud Service Admin do AEM Assets — que abrange configuração, otimização, uso e integração contínua com fluxos de trabalho criativos. Obtenha os insights necessários para ter sucesso com o AEM Assets as a Cloud Service.
+Explore essas listas de reprodução para dominar a visualização do AEM Assets as a Cloud Service Admin — que abrange configuração, otimização, uso e integração contínua com fluxos de trabalho criativos. Obtenha os insights necessários para ter sucesso com o AEM Assets as a Cloud Service.
 
 ## Configurar visualização de administração
 
-Comece com as definições e configurações essenciais para que o AEM Assets as a Cloud Service perfeitamente para sua equipe e seus projetos.
+Comece com as definições e configurações essenciais para fazer com que o AEM Assets as a Cloud Service funcione perfeitamente para sua equipe e projetos.
 
 <!-- CARDS
 
@@ -38,8 +38,8 @@ Comece com as definições e configurações essenciais para que o AEM Assets as
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Configurar acesso administrativo ao Experience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurar acesso administrativo ao Experience Manager"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Configuração do acesso administrativo ao Experience Manager" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configuração do acesso administrativo ao Experience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -47,7 +47,7 @@ Comece com as definições e configurações essenciais para que o AEM Assets as
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configurar acesso administrativo ao Experience Manager">Configurar o Acesso Administrativo ao Experience Manager</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configuração do acesso administrativo ao Experience Manager">Configurar o Acesso Administrativo ao Experience Manager</a>
                     </p>
                     <p class="is-size-6">Saiba como os usuários se autenticam usando o Adobe IMS para o AEM as a Cloud Service e como os usuários do Adobe IMS, grupos de usuários e perfis de produtos são usados para controlar o acesso ao AEM e seus recursos e funcionalidades.</p>
                 </div>
@@ -208,7 +208,7 @@ Navegue pela interface do administrador como um profissional — aprenda as ferr
 
 ## Conectar fluxos de trabalho criativos com o AEM Assets
 
-Libere a colaboração sem problemas integrando o AEM Assets as a Cloud Service às suas ferramentas criativas, garantindo fluxos de trabalho coesos e eficientes.
+Desbloqueie uma colaboração tranquila integrando o AEM Assets as a Cloud Service com suas ferramentas criativas, garantindo fluxos de trabalho coesos e eficientes.
 
 <!-- CARDS
 
@@ -222,8 +222,8 @@ Libere a colaboração sem problemas integrando o AEM Assets as a Cloud Service 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-create-renditions-content-automation" title="Criar representações personalizadas com automação de conteúdo do AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_13985b4766ee5b638f540f60e2a52fb024471662e.jpeg?width=400&format=pjpg&optimize=medium" alt="Criar representações personalizadas com automação de conteúdo do AEM"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-create-renditions-content-automation" title="Criar representações personalizadas com a automação de conteúdo do AEM" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_13985b4766ee5b638f540f60e2a52fb024471662e.jpeg?width=400&format=pjpg&optimize=medium" alt="Criar representações personalizadas com a automação de conteúdo do AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ Libere a colaboração sem problemas integrando o AEM Assets as a Cloud Service 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-create-renditions-content-automation" target="_blank" rel="referrer" title="Criar representações personalizadas com automação de conteúdo do AEM">Criar representações personalizadas com automação de conteúdo do AEM</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-create-renditions-content-automation" target="_blank" rel="referrer" title="Criar representações personalizadas com a automação de conteúdo do AEM">Criar representações personalizadas com a automação de conteúdo do AEM</a>
                     </p>
                     <p class="is-size-6">Descubra como usar o complemento de Automação de conteúdo para integrar o Adobe Experience Manager Assets as a Cloud Service com as APIs de serviço do Adobe Creative Cloud e obter um processamento de ativos eficiente.</p>
                 </div>
@@ -245,8 +245,8 @@ Libere a colaboração sem problemas integrando o AEM Assets as a Cloud Service 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" title="Usar operações de criação com a automação de conteúdo do AEM Assets" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="Usar operações de criação com a automação de conteúdo do AEM Assets"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" title="Usar as operações do Creative com a Automação de conteúdo do AEM Assets" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="Usar as operações do Creative com a Automação de conteúdo do AEM Assets"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -254,9 +254,9 @@ Libere a colaboração sem problemas integrando o AEM Assets as a Cloud Service 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" target="_blank" rel="referrer" title="Usar operações de criação com a automação de conteúdo do AEM Assets">Usar operações de criação com a Automação de conteúdo do AEM Assets</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" target="_blank" rel="referrer" title="Usar as operações do Creative com a Automação de conteúdo do AEM Assets">Usar as operações do Creative com a Automação de Conteúdo do AEM Assets</a>
                     </p>
-                    <p class="is-size-6">Saiba como usar o complemento de Automação de conteúdo para executar operações de Creative Cloud no Adobe Experience Manager Assets.</p>
+                    <p class="is-size-6">Saiba como usar o complemento de Automação de conteúdo para executar operações do Creative Cloud no Adobe Experience Manager Assets.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assistir</span>

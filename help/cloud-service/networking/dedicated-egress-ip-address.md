@@ -1,7 +1,7 @@
 ---
 title: Endereço IP de saída exclusivo
-description: Saiba como configurar e usar o endereço IP de saída dedicado, que permite que as conexões de saída do AEM se originem de um IP dedicado.
-version: Cloud Service
+description: Saiba como configurar e usar o endereço IP de saída dedicado, que permite que as conexões de saída do AEM sejam originárias de IP dedicado.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Endereço IP de saída exclusivo
 
-Saiba como configurar e usar o endereço IP de saída dedicado, que permite que as conexões de saída do AEM se originem de um IP dedicado.
+Saiba como configurar e usar o endereço IP de saída dedicado, que permite que as conexões de saída do AEM sejam originárias de IP dedicado.
 
 ## O que é o endereço IP de saída dedicado?
 
@@ -174,7 +174,7 @@ Com o endereço IP de saída dedicado criado, agora é possível configurá-lo u
 
    A assinatura HTTP da configuração de endereço IP de saída dedicado difere apenas da [porta de saída flexível](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment), pois ela também oferece suporte à configuração `nonProxyHosts` opcional.
 
-   `nonProxyHosts` declara um conjunto de hosts para o qual a porta 80 ou 443 deve ser roteada através dos intervalos de endereços IP compartilhados padrão em vez do IP de saída dedicado. `nonProxyHosts` pode ser útil, pois a geração de tráfego por meio de IPs compartilhados é otimizada automaticamente pelo Adobe.
+   `nonProxyHosts` declara um conjunto de hosts para o qual a porta 80 ou 443 deve ser roteada através dos intervalos de endereços IP compartilhados padrão em vez do IP de saída dedicado. `nonProxyHosts` pode ser útil, pois a geração de tráfego por meio de IPs compartilhados é otimizada automaticamente pela Adobe.
 
    Para cada mapeamento `portForwards`, a rede avançada define a seguinte regra de encaminhamento:
 
@@ -226,7 +226,7 @@ As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas p
 
 ### HTTP/HTTPS
 
-Ao criar conexões HTTP/HTTPS do AEM, ao usar o endereço IP de saída dedicado, as conexões HTTP/HTTPS são automaticamente enviadas por proxy do AEM usando o endereço IP de saída dedicado. Nenhum código ou configuração adicional é necessário para oferecer suporte a conexões HTTP/HTTPS.
+Ao criar conexões HTTP/HTTPS do AEM, ao usar o endereço IP de saída dedicado, as conexões HTTP/HTTPS são automaticamente enviadas por proxy da AEM usando o endereço IP de saída dedicado. Nenhum código ou configuração adicional é necessário para oferecer suporte a conexões HTTP/HTTPS.
 
 #### Exemplos de código
 
@@ -266,7 +266,7 @@ As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexão SQL usando JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexão SQL usando JDBC DataSourcePool</a></strong></div>
       <p>
-            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC do AEM.
+            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC da AEM.
       </p>
     </td>   
    <td>
@@ -280,7 +280,7 @@ As conexões com serviços externos são então chamadas por meio do `AEM_PROXY_
       <a  href="./examples/email-service.md"><img alt="VPN (Virtual Private Network)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Serviço de email</a></strong></div>
       <p>
-        Exemplo de configuração OSGi usando AEM para se conectar a serviços de email externos.
+        Exemplo de configuração OSGi usando o AEM para conectar-se a serviços de email externos.
       </p>
     </td>   
 </tr></table>

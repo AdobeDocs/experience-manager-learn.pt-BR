@@ -3,14 +3,14 @@ title: Exibição do código QR no Formulário adaptável
 description: Exibir código QR em um formulário adaptável
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
 exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
-source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%

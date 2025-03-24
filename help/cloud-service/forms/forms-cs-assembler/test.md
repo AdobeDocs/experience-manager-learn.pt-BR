@@ -4,12 +4,12 @@ description: Execute o ExecuteAssemblerService.java para testar a solução
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: 5139aa84-58d5-40e3-936a-0505bd407ee8
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 ## Teste de montagem de arquivos PDF
 
 * Copie e cole suas credenciais de serviço no arquivo de recurso service_token.json no projeto.
-* Abra o arquivo AssemblePDFFiles.java e especifique a pasta na qual deseja salvar os arquivos de PDF gerados
+* Abra o arquivo AssemblePDFFiles.java e especifique a pasta na qual deseja salvar os arquivos PDF gerados
 * Abra ExecuteAssemblerService.java. Defina o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
 * Remova o comentário das linhas apropriadas para testar a montagem de dois ou mais arquivos PDF
 * Execute o ExecuteAssemblerService.java como aplicativo java
@@ -38,7 +38,7 @@ ht-degree: 0%
 ### Testar utilitários PDFA
 
 * Copie e cole suas credenciais de serviço no arquivo de recurso service_token.json no projeto.
-* Abra o arquivo PDFAUtilities.java e especifique a pasta na qual deseja salvar os arquivos de PDF gerados.
+* Abra o arquivo PDFAUtilities.java e especifique a pasta na qual deseja salvar os arquivos PDF gerados.
 * Abra ExecuteAssemblerService.java. Defina o valor da variável _AEM_FORMS_CS_ para apontar para sua instância.
 * Remova o comentário das linhas apropriadas para testar operações de PDFA.
 * Execute o ExecuteAssemblerService.java como aplicativo java.
@@ -46,6 +46,6 @@ ht-degree: 0%
 
 
 >[!NOTE]
-> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para superar isso, forneça as [permissões apropriadas ao usuário técnico da conta no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para passar por isso, certifique-se de fornecer as [permissões apropriadas ao usuário da conta técnica no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
 **Usuários do AEM Forms** é a função que usei neste curso.

@@ -2,14 +2,14 @@
 title: Noções básicas sobre multilocação e desenvolvimento simultâneo
 description: Saiba mais sobre os benefícios, desafios e técnicas para gerenciar uma implementação de vários locatários com o Adobe Experience Manager Assets.
 feature: Connected Assets
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 437
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Quando várias equipes estão implantando seu código nos mesmos ambientes de AEM, há práticas que elas devem seguir para garantir que as equipes possam trabalhar da maneira mais independente possível, sem pisar nos dedos das outras equipes. Embora nunca possam ser totalmente eliminadas, essas técnicas minimizarão as dependências entre equipes. Para que um modelo de desenvolvimento simultâneo seja bem-sucedido, é essencial uma boa comunicação entre as equipes de desenvolvimento.
+Quando várias equipes estão implantando seu código nos mesmos ambientes do AEM, há práticas que elas devem seguir para garantir que as equipes possam trabalhar da maneira mais independente possível, sem pisar nos dedos das outras equipes. Embora nunca possam ser totalmente eliminadas, essas técnicas minimizarão as dependências entre equipes. Para que um modelo de desenvolvimento simultâneo seja bem-sucedido, é essencial uma boa comunicação entre as equipes de desenvolvimento.
 
-Além disso, quando várias equipes de desenvolvimento trabalham no mesmo ambiente AEM, provavelmente há algum grau de multilocação em jogo. Muito tem sido escrito sobre as considerações práticas da tentativa de oferecer suporte a vários locatários em um ambiente AEM, especialmente sobre os desafios enfrentados ao gerenciar governança, operações e desenvolvimento. Este documento explora alguns dos desafios técnicos relacionados à implementação do AEM em um ambiente de vários locatários, mas muitas dessas recomendações serão aplicadas a qualquer organização com várias equipes de desenvolvimento.
+Além disso, quando várias equipes de desenvolvimento trabalham no mesmo ambiente do AEM, provavelmente há algum grau de multilocação em jogo. Muito tem sido escrito sobre as considerações práticas da tentativa de oferecer suporte a vários locatários em um ambiente AEM, especialmente sobre os desafios enfrentados ao gerenciar governança, operações e desenvolvimento. Este documento explora alguns dos desafios técnicos relacionados à implementação do AEM em um ambiente de vários locatários, mas muitas dessas recomendações se aplicarão a qualquer organização com várias equipes de desenvolvimento.
 
-É importante observar desde já que, embora o AEM possa suportar vários sites e até mesmo várias marcas sendo implantadas em um único ambiente, ele não oferece uma verdadeira multilocação. Algumas configurações de ambiente e recursos de sistema serão sempre compartilhados em todos os locais implantados em um ambiente. Este documento fornece orientação para minimizar os impactos desses recursos compartilhados e oferece sugestões para simplificar a comunicação e a colaboração nessas áreas.
+É importante observar desde já que, embora o AEM possa oferecer suporte a vários sites e até mesmo a várias marcas sendo implantadas em um único ambiente, ele não oferece uma verdadeira multilocação. Algumas configurações de ambiente e recursos de sistema serão sempre compartilhados em todos os locais implantados em um ambiente. Este documento fornece orientação para minimizar os impactos desses recursos compartilhados e oferece sugestões para simplificar a comunicação e a colaboração nessas áreas.
 
 ## Benefícios e desafios {#benefits-and-challenges}
 
@@ -76,7 +76,7 @@ Alguns exemplos de código que geralmente em um módulo principal incluem:
    * Filtros de servlet
    * Mapeamentos ResourceResolver
    * Pipelines do Sling Transformer
-   * Handlers de erros (ou use o ACS AEM Commons Error Page Handler1)
+   * Manipuladores de erros (ou use o Manipulador de página de erros ACS AEM Commons1)
    * Servlets de autorização para armazenamento em cache sensível a permissões
 * Classes de utilitário
 * Lógica de negócios principal
@@ -110,7 +110,7 @@ Como é um caminho de sistema global e não específico de um site, o servlet a 
 
 ### Sobreposições {#overlays}
 
-Geralmente, as sobreposições são usadas para estender ou substituir a funcionalidade AEM predefinida, mas o uso de uma sobreposição afeta todo o aplicativo AEM (ou seja, todas as alterações de funcionalidade sobrepostas são disponibilizadas para todos os locatários). Isso seria ainda mais complicado se os locatários tivessem requisitos diferentes para a sobreposição. Idealmente, os grupos empresariais devem trabalhar em conjunto para chegar a um acordo sobre a funcionalidade e a aparência dos consoles administrativos do AEM.
+As sobreposições são usadas com frequência para estender ou substituir a funcionalidade predefinida do AEM, mas o uso de uma sobreposição afeta todo o aplicativo do AEM (ou seja, todas as alterações de funcionalidade sobrepostas são disponibilizadas para todos os locatários). Isso seria ainda mais complicado se os locatários tivessem requisitos diferentes para a sobreposição. Idealmente, os grupos funcionais devem trabalhar em conjunto para chegar a um acordo sobre a funcionalidade e a aparência dos consoles administrativos do AEM.
 
 Se não for possível chegar a um consenso entre as várias unidades de negócios, uma solução possível seria simplesmente não usar sobreposições. Em vez disso, crie uma cópia personalizada da funcionalidade e exponha-a por um caminho diferente para cada locatário. Isso permite que cada locatário tenha uma experiência do usuário completamente diferente, mas essa abordagem também aumenta o custo da implementação e dos esforços de atualização subsequentes.
 
@@ -120,7 +120,7 @@ O AEM usa iniciadores de fluxos de trabalho para acionar automaticamente a execu
 
 ### URLs personalizadas {#vanity-urls}
 
-O AEM fornece funcionalidade de URL personalizado que pode ser definida por página. A preocupação com essa abordagem em um cenário de vários locatários é que o AEM não garante a exclusividade entre os URLs personalizados configurados dessa maneira. Se dois usuários diferentes configurarem o mesmo caminho personalizado para páginas diferentes, um comportamento inesperado poderá ser encontrado. Por esse motivo, recomendamos usar as regras mod_rewrite nas instâncias do Apache Dispatcher, que permitem um ponto central de configuração em conjunto com as regras somente de saída do Resource Resolver.
+O AEM fornece funcionalidade de URL personalizado que pode ser definida por página. A preocupação com essa abordagem em um cenário de vários locatários é que a AEM não garante a exclusividade entre os URLs personalizados configurados dessa maneira. Se dois usuários diferentes configurarem o mesmo caminho personalizado para páginas diferentes, um comportamento inesperado poderá ser encontrado. Por esse motivo, recomendamos usar as regras mod_rewrite nas instâncias do Apache Dispatcher, que permitem um ponto central de configuração em conjunto com as regras somente de saída do Resource Resolver.
 
 ### Grupos de componentes {#component-groups}
 
@@ -134,15 +134,15 @@ Embora uma boa arquitetura e canais de comunicação abertos possam ajudar a evi
 
 ### Recursos compartilhados {#shared-resources}
 
-O AEM é executado em uma única JVM; qualquer aplicativo AEM implantado inerentemente compartilha recursos entre si, além de recursos já consumidos na execução normal do AEM. Dentro do próprio espaço JVM, não há separação lógica de threads, e os recursos finitos disponíveis para AEM, como memória, CPU e E/S de disco também são compartilhados. Qualquer locatário que consuma recursos inevitavelmente afetará outros locatários do sistema.
+O AEM é executado em uma única JVM; qualquer aplicativo AEM implantado compartilha recursos entre si inerentemente, além de recursos já consumidos na execução normal do AEM. No próprio espaço JVM, não há separação lógica de threads, e os recursos finitos disponíveis para o AEM, como memória, CPU e E/S de disco também são compartilhados. Qualquer locatário que consuma recursos inevitavelmente afetará outros locatários do sistema.
 
 ### Desempenho {#performance}
 
-Se não seguir as práticas recomendadas para o AEM, é possível desenvolver aplicativos que consumam recursos além do que é considerado normal. Exemplos disso são o acionamento de muitas operações pesadas de fluxo de trabalho (como Atualizar ativo do DAM), o uso de operações de push-on-modify do MSM em muitos nós ou o uso de consultas JCR dispendiosas para renderizar conteúdo em tempo real. Elas inevitavelmente terão um impacto no desempenho de outros aplicativos de locatários.
+Se não seguir as práticas recomendadas da AEM, será possível desenvolver aplicativos que consumam recursos além do que é considerado normal. Exemplos disso são o acionamento de muitas operações pesadas de fluxo de trabalho (como Atualizar ativo do DAM), o uso de operações de push-on-modify do MSM em muitos nós ou o uso de consultas JCR dispendiosas para renderizar conteúdo em tempo real. Elas inevitavelmente terão um impacto no desempenho de outros aplicativos de locatários.
 
 ### Logs {#logging}
 
-O AEM fornece interfaces prontas para uso para uma configuração robusta de logger que pode ser usada para o nosso benefício em cenários de desenvolvimento compartilhados. Ao especificar registradores separados para cada marca, por nome de pacote, podemos alcançar um certo grau de separação de registros. Embora as operações em todo o sistema, como replicação e autenticação, ainda sejam registradas em um local central, o código personalizado não compartilhado pode ser registrado separadamente, facilitando os esforços de monitoramento e depuração da equipe técnica de cada marca.
+A AEM fornece interfaces prontas para uso para uma configuração robusta de agente de log, que pode ser usada a nosso favor em cenários de desenvolvimento compartilhados. Ao especificar registradores separados para cada marca, por nome de pacote, podemos alcançar um certo grau de separação de registros. Embora as operações em todo o sistema, como replicação e autenticação, ainda sejam registradas em um local central, o código personalizado não compartilhado pode ser registrado separadamente, facilitando os esforços de monitoramento e depuração da equipe técnica de cada marca.
 
 ### Backup e restauração {#backup-and-restore}
 

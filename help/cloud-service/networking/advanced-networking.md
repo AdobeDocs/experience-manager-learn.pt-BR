@@ -1,7 +1,7 @@
 ---
 title: Rede avançada
 description: Saiba mais sobre as opções avançadas de rede da AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
 duration: 85
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 2%
@@ -29,7 +29,7 @@ O AEM as a Cloud Service fornece recursos avançados de rede que permitem o gere
 
 A rede avançada da AEM é composta de três opções para gerenciar a conectividade com serviços externos. Um programa Cloud Manager e seus ambientes AEM as a Cloud Service só podem usar um único tipo de configuração avançada de rede por vez, portanto, verifique se o tipo mais apropriado está selecionado.
 
-|                                   | HTTP/HTTPS em portas padrão | HTTP/HTTPS em portas fora do padrão | Conexões não HTTP/HTTPS | IP de saída dedicado | Lista &quot;Hosts sem proxy&quot; | Conectar-se a serviços protegidos por VPN | Limitar o tráfego de Publish do AEM por IP |
+|                                   | HTTP/HTTPS em portas padrão | HTTP/HTTPS em portas fora do padrão | Conexões não HTTP/HTTPS | IP de saída dedicado | Lista &quot;Hosts sem proxy&quot; | Conectar-se a serviços protegidos por VPN | Limitar o tráfego de publicação do AEM por IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Nenhuma rede avançada__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Saída de porta flexível__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -80,7 +80,7 @@ Verifique se a [configuração avançada de rede](#advanced-networking) apropria
       <a  href="./examples/email-service.md"><img alt="VPN (Virtual Private Network)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Serviço de email</a></strong></div>
       <p>
-        Exemplo de configuração OSGi usando AEM para se conectar a serviços de email externos.
+        Exemplo de configuração OSGi usando o AEM para se conectar a serviços de email externos.
       </p>
     </td>  
     <td>
@@ -94,7 +94,7 @@ Verifique se a [configuração avançada de rede](#advanced-networking) apropria
       <a  href="./examples/sql-datasourcepool.md"><img alt="Conexão SQL usando JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Conexão SQL usando JDBC DataSourcePool</a></strong></div>
       <p>
-            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC do AEM.
+            Exemplo de código Java™ conectando-se a bancos de dados SQL externos configurando o pool de fontes de dados JDBC da AEM.
       </p>
     </td>   
     </tr><tr>
@@ -113,10 +113,10 @@ Verifique se a [configuração avançada de rede](#advanced-networking) apropria
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Restrições de acesso VPN baseadas em caminho para AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restrições de acesso à VPN baseada em caminho para AEM Publish</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Restrições de acesso à VPN baseada em caminho para publicação no AEM" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restrições de acesso a VPN com base em caminho para a Publicação do AEM</a></strong></div>
       <p>
-            Exigir acesso VPN para caminhos específicos no AEM Publish.
+            Exigir acesso VPN para caminhos específicos na Publicação do AEM.
       </p>
     </td>
 </tr>

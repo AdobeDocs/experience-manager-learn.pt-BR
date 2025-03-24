@@ -2,7 +2,7 @@
 title: Adicionar botão personalizado à barra de ferramentas do Editor de Rich Text (RTE)
 description: Saiba como adicionar um botão personalizado à barra de ferramentas do Editor de Rich Text (RTE) no Editor de fragmento de conteúdo do AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Botões personalizados podem ser adicionados à **barra de ferramentas do RTE** 
 
 Usando o método `getCustomButtons()` do ponto de extensão `rte`, um ou vários botões personalizados podem ser adicionados à **barra de ferramentas RTE**. Também é possível adicionar ou remover botões RTE padrão como _Copiar, Colar, Negrito e Itálico_ usando os métodos `getCoreButtons()` e `removeButtons)`, respectivamente.
 
-Este exemplo mostra como inserir uma nota ou dica realçada usando o botão personalizado da barra de ferramentas _Adicionar Dica_. O conteúdo realçado da nota ou dica tem uma formatação especial aplicada por meio de elementos HTML e as classes CSS associadas. O conteúdo do espaço reservado e o código de HTML são inseridos usando o método de retorno de chamada `onClick()` de `getCustomButtons()`.
+Este exemplo mostra como inserir uma nota ou dica realçada usando o botão personalizado da barra de ferramentas _Adicionar Dica_. O conteúdo realçado da nota ou dica tem uma formatação especial aplicada por meio de elementos HTML e as classes CSS associadas. O conteúdo do espaço reservado e o código HTML são inseridos usando o método de retorno de chamada `onClick()` de `getCustomButtons()`.
 
 ## Ponto de extensão
 
 Este exemplo estende o ponto de extensão `rte` para adicionar um botão personalizado à barra de ferramentas do RTE no Editor de Fragmentos de Conteúdo.
 
-| IU do AEM estendida | Ponto de extensão |
+| Interface do usuário estendida do AEM | Ponto de extensão |
 | ------------------------ | --------------------- | 
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra de Ferramentas do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
@@ -51,10 +51,10 @@ O código mostra como adicionar o botão personalizado com um ícone e registrar
 
 + A definição do botão da barra de ferramentas do RTE na função `getCustomButtons()` com `id, tooltip and icon` atributos.
 + O manipulador de cliques do botão, na função `onClick()`.
-+ A função de manipulador de cliques recebe o objeto `state` como argumento para obter o conteúdo do RTE no formato de HTML ou texto. No entanto, neste exemplo, não é usado.
-+ A função de manipulador de cliques retorna uma matriz de instruções. Esta matriz tem um objeto com atributos `type` e `value`. Para inserir o conteúdo, o trecho de código HTML de `value` atributos, o atributo `type` usa o `insertContent`. Se houver um caso de uso para substituir o conteúdo, caso de uso do tipo de instrução `replaceContent`.
++ A função de manipulador de cliques recebe o objeto `state` como argumento para obter o conteúdo do RTE no formato de texto ou HTML. No entanto, neste exemplo, não é usado.
++ A função de manipulador de cliques retorna uma matriz de instruções. Esta matriz tem um objeto com atributos `type` e `value`. Para inserir o conteúdo, o trecho de código HTML dos atributos `value`, o atributo `type` usa o `insertContent`. Se houver um caso de uso para substituir o conteúdo, caso de uso do tipo de instrução `replaceContent`.
 
-O valor `insertContent` é uma sequência de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. As classes CSS `cmp-contentfragment__element-tip` usadas para exibir o valor não estão definidas no widget, mas são implementadas na experiência online em que este campo Fragmento de Conteúdo é exibido.
+O valor `insertContent` é uma cadeia de caracteres HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. As classes CSS `cmp-contentfragment__element-tip` usadas para exibir o valor não estão definidas no widget, mas são implementadas na experiência online em que este campo Fragmento de Conteúdo é exibido.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

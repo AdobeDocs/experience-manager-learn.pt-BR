@@ -1,8 +1,8 @@
 ---
 title: Exportar fragmento de conteúdo para XML
-description: Saiba como um fragmento de conteúdo pode ser exportado do editor de fragmento de conteúdo do AEM
+description: Saiba como um fragmento de conteúdo pode ser exportado do editor de fragmentos de conteúdo do AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Os botões de cabeçalho podem existir como um único botão ou como um botão c
 
 Este exemplo estende o ponto de extensão `headerBar` para adicionar um botão personalizado ao Editor de Fragmento de Conteúdo.
 
-| IU do AEM estendida | Ponto de extensão |
+| Interface do usuário estendida do AEM | Ponto de extensão |
 | ------------------------ | --------------------- | 
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menu de cabeçalho](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 

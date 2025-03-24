@@ -1,15 +1,15 @@
 ---
 title: Criar kit de boas-vindas
-description: Crie uma página de sites AEM com links para baixar ativos com base nos dados de formulário enviados.
+description: Crie uma página de sites do AEM com links para baixar ativos com base nos dados de formulário enviados.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: 7aba25d1-0d4d-4c49-8132-f844a288e8f3
 duration: 19
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Kit de boas-vindas
 
-Este tutorial ajuda a criar uma página AEM com links para baixar vários ativos com base nos dados de formulário enviado. Você pode usar o código de amostra para gerar um kit de boas-vindas a fim de permitir que novos clientes baixem documentos relevantes ou gerem uma página de AEM com links para baixar os documentos solicitados.
+Este tutorial ajuda a criar uma página do AEM com links para baixar vários ativos com base nos dados de formulário enviado. Você pode usar o código de amostra para gerar um kit de boas-vindas a fim de permitir que novos clientes baixem documentos relevantes ou gerem uma página do AEM com links para baixar os documentos solicitados.
 
 ## Pré-requisitos
 

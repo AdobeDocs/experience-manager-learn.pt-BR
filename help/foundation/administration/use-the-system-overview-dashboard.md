@@ -1,7 +1,7 @@
 ---
 title: Usar o painel de visão geral do sistema no AEM
 description: Em versões anteriores do AEM, os administradores precisavam examinar vários locais para obter uma imagem completa da instância do AEM. A Visão geral do sistema tem como objetivo resolver isso fornecendo uma visualização de alto nível da configuração, do hardware e da integridade da instância do AEM, tudo a partir de um único painel.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Operations
 doc-type: Technical Video
 topic: Administration
@@ -9,7 +9,7 @@ role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A [!UICONTROL Visão Geral do Sistema] do Adobe Experience Manager (AEM) fornece
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. A Visão Geral do Sistema pode ser acessada de: **Início do AEM** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
+1. A Visão Geral do Sistema pode ser acessada de: **AEM Start** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
 
    Diretamente em **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 

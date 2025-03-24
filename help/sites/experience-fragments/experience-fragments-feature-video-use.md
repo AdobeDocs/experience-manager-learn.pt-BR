@@ -7,13 +7,13 @@ topic: Content Management
 role: Architect, Developer, Admin, User
 level: Beginner
 doc-type: Feature Video
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-194
 thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
@@ -35,4 +35,4 @@ Com Fragmentos de experiência, os profissionais de marketing podem:
 * Reutilizar uma experiência em canais (canais próprios e pontos de contato de terceiros)
 * Criar variações de uma experiência para casos de uso específicos
 * Manter variações sincronizadas com o uso da Live Copy
-* Experiências do Social Post com o Facebook e o Pinterest prontas para uso
+* Experiências de publicação social no Facebook e no Pinterest prontas para uso

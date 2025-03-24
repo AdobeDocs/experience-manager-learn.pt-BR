@@ -2,14 +2,14 @@
 title: 'Dispatcher: noções básicas sobre armazenamento em cache'
 description: Entenda como o módulo Dispatcher opera seu cache.
 topic: Administration, Performance
-version: 6.5
+version: Experience Manager 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 407
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Quando cada solicitação passa pelo Dispatcher, as solicitações seguem as reg
 
 >[!NOTE]
 >
->Intencionalmente, mantemos a carga de trabalho publicada separada da carga de trabalho do autor, pois quando o Apache procura um arquivo no DocumentRoot, ele não sabe de qual instância AEM ele veio. Portanto, mesmo que o cache esteja desativado no farm do autor, se DocumentRoot do autor for o mesmo que o publicador, ele fornecerá arquivos do cache quando presentes. Isso significa que você fornecerá arquivos de autor para do cache publicado e proporcionará uma experiência de combinação de combinações realmente horrível para seus visitantes.
+>Intencionalmente, mantemos a carga de trabalho publicada separada da carga de trabalho do autor, pois quando o Apache procura um arquivo na DocumentRoot, ele não sabe de qual instância do AEM ele veio. Portanto, mesmo que o cache esteja desativado no farm do autor, se DocumentRoot do autor for o mesmo que o publicador, ele fornecerá arquivos do cache quando presentes. Isso significa que você fornecerá arquivos de autor para do cache publicado e proporcionará uma experiência de combinação de combinações realmente horrível para seus visitantes.
 >
 >Manter diretórios DocumentRoot separados para diferentes conteúdos publicados também é uma péssima ideia. Você terá que criar vários itens em cache novamente, que não diferem entre sites como clientlibs, além de ter que configurar um agente de limpeza de replicação para cada DocumentRoot configurado. Aumentar a quantidade de liberação sobre a cabeça com cada ativação de página. Conte com o namespace de arquivos e seus caminhos completos em cache e evite várias DocumentRoot&#39;s para sites publicados.
 
@@ -132,11 +132,11 @@ As regras de cache incluem instruções que incluem o arquivo `/etc/httpd/conf.d
 ```
 
 Em um cenário de criação, o conteúdo é alterado o tempo todo e de propósito. Você só deseja armazenar em cache itens que não serão alterados com frequência.
-Temos regras para armazenar em cache `/libs` porque elas fazem parte da instalação básica do AEM e seriam alteradas até que você instalasse um Service Pack, Cumulative Fix Pack, Atualização ou Hotfix. Portanto, armazenar esses elementos em cache faz muito sentido e realmente tem grandes benefícios da experiência do autor dos usuários finais que usam o site.
+Temos regras para armazenar em cache `/libs` porque elas fazem parte da instalação do AEM de linha de base e seriam alteradas até que você instalasse um Service Pack, Cumulative Fix Pack, Atualização ou Hotfix. Portanto, armazenar esses elementos em cache faz muito sentido e realmente tem grandes benefícios da experiência do autor dos usuários finais que usam o site.
 
 >[!NOTE]
 >
->Lembre-se de que essas regras também armazenam em cache <b>`/apps`</b>, é aqui que reside o código de aplicativo personalizado. Se você estiver desenvolvendo seu código nesta instância, será muito confuso quando você salvar o arquivo e não verá se reflete na interface do usuário, pois ele serve uma cópia em cache. A intenção aqui é que, se você implantar seu código no AEM, também não seja frequente, e parte de suas etapas de implantação deve ser limpar o cache do autor. Novamente, o benefício é enorme, tornando seu código que pode ser armazenado em cache mais rápido para os usuários finais.
+>Lembre-se de que essas regras também armazenam em cache <b>`/apps`</b>, é aqui que reside o código de aplicativo personalizado. Se você estiver desenvolvendo seu código nesta instância, será muito confuso quando você salvar o arquivo e não verá se reflete na interface do usuário, pois ele serve uma cópia em cache. A intenção aqui é que, se você implantar seu código no AEM, também não seja frequente, e parte das etapas de implantação deve fazer parte da limpeza do cache do autor. Novamente, o benefício é enorme, tornando seu código que pode ser armazenado em cache mais rápido para os usuários finais.
 
 ## ServeOnStale (também conhecido como Serve on Stale / SOS)
 
@@ -157,7 +157,7 @@ Essa configuração pode ser definida em qualquer farm, mas faz sentido aplicá-
 
 >[!NOTE]
 >
->Um dos comportamentos normais do módulo Dispatcher é que, se uma solicitação tiver um parâmetro de consulta no URI (normalmente mostrado como `/content/page.html?myquery=value`), ela ignorará o armazenamento em cache do arquivo e irá diretamente para a instância do AEM. Essa solicitação é considerada uma página dinâmica e não deve ser armazenada em cache. Isso pode causar efeitos negativos na eficiência do cache.
+>Um dos comportamentos normais do módulo Dispatcher é que, se uma solicitação tiver um parâmetro de consulta no URI (geralmente mostrado como `/content/page.html?myquery=value`), ela ignorará o armazenamento em cache do arquivo e irá diretamente para a instância do AEM. Essa solicitação é considerada uma página dinâmica e não deve ser armazenada em cache. Isso pode causar efeitos negativos na eficiência do cache.
 
 Consulte este [artigo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrando como parâmetros de consulta importantes podem afetar o desempenho do site.
 
@@ -232,7 +232,7 @@ Então aqui está a fonte html de cada pesquisa:
 Se você visitou `/search.html?q=fruit` primeiro, ele armazenaria em cache o html com os resultados mostrando frutos.
 
 Depois você visita `/search.html?q=vegetables` segundo, mas mostraria resultados de fruto.
-Isso ocorre porque o parâmetro de consulta de `q` está sendo ignorado em relação ao armazenamento em cache.  Para evitar esse problema, você precisará anotar as páginas que renderizam HTML diferente com base nos parâmetros de consulta e negar o armazenamento em cache para eles.
+Isso ocorre porque o parâmetro de consulta de `q` está sendo ignorado em relação ao armazenamento em cache.  Para evitar esse problema, você precisará anotar as páginas que renderizam diferentes HTML com base em parâmetros de consulta e negar o armazenamento em cache para eles.
 
 Exemplo:
 
@@ -254,7 +254,7 @@ As páginas que usam parâmetros de consulta por meio do JavaScript ainda funcio
 
 É bastante óbvio que o Dispatcher armazena em cache `.html` páginas e clientlibs (ou seja, `.js`, `.css`), mas você sabia que também pode armazenar em cache cabeçalhos de resposta específicos junto com o conteúdo em um arquivo com o mesmo nome, mas com a extensão de arquivo `.h`. Isso permite que a próxima resposta não seja apenas ao conteúdo, mas aos cabeçalhos de resposta que devem acompanhá-lo do cache.
 
-O AEM pode lidar com mais do que apenas a codificação UTF-8
+O AEM pode lidar com mais do que apenas codificação UTF-8
 
 Às vezes, os itens têm cabeçalhos especiais que ajudam a controlar os detalhes de codificação do TTL de cache e os carimbos de data e hora da última modificação.
 
@@ -278,7 +278,7 @@ Este é um exemplo de um farm com os cabeçalhos para armazenar em cache especif
 ```
 
 
-No exemplo, eles configuraram o AEM para servir cabeçalhos que o CDN procura para saber quando invalidar seu cache. Isso significa que agora o AEM pode ditar corretamente quais arquivos são invalidados com base nos cabeçalhos.
+No exemplo, eles configuraram o AEM para servir cabeçalhos que o CDN procura para saber quando invalidar seu cache. Ou seja, agora o AEM pode ditar corretamente quais arquivos são invalidados com base nos cabeçalhos.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ No exemplo, eles configuraram o AEM para servir cabeçalhos que o CDN procura pa
 
 ## Invalidar automaticamente o período de carência
 
-Nos sistemas AEM que têm muita atividade de autores que fazem muitas ativações de página, você pode ter uma condição de corrida em que ocorrem invalidações repetidas. Solicitações de liberação muito repetidas não são necessárias e você pode integrar alguma tolerância para não repetir uma liberação até que o período de carência tenha sido eliminado.
+Em sistemas AEM que têm muita atividade de autores que fazem muitas ativações de página, você pode ter uma condição de corrida em que ocorrem invalidações repetidas. Solicitações de liberação muito repetidas não são necessárias e você pode integrar alguma tolerância para não repetir uma liberação até que o período de carência tenha sido eliminado.
 
 ### Exemplo de como isso funciona:
 

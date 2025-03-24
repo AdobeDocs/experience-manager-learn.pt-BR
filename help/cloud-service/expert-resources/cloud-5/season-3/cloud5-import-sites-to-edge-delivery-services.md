@@ -1,7 +1,7 @@
 ---
-title: Importar sites para o AEM Sites com Edge Delivery Services
+title: Importar sites para o AEM Sites com o Edge Delivery Services
 description: Saiba mais sobre a ferramenta Importador, que facilita a importação de sites para o AEM Sites com o Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Admin, Developer, Leader, User
@@ -13,16 +13,16 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 jira: KT-15844
 exl-id: 82b607e9-8f2e-4e81-b3ee-a50a660be9a0
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 2%
 
 ---
 
-# Importar sites para o AEM Sites com Edge Delivery Services
+# Importar sites para o AEM Sites com o Edge Delivery Services
 
-Este vídeo discute as práticas recomendadas para usar e personalizar a ferramenta Importador para facilitar a importação de sites existentes para o AEM Sites com Edge Delivery Services. Com Varun Mitra, Arquiteto De Nuvem.
+Este vídeo discute as práticas recomendadas para usar e personalizar a ferramenta Importador para facilitar a importação de sites existentes para o AEM Sites com o Edge Delivery Services. Com Varun Mitra, Arquiteto De Nuvem.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431603/?learn=on)
 

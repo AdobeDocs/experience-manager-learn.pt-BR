@@ -1,7 +1,7 @@
 ---
 title: Conexões SQL usando APIs Java™
 description: Saiba como se conectar a bancos de dados SQL do AEM as a Cloud Service usando APIs SQL Java™ e portas de saída.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -151,7 +151,7 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## Dependências do driver MySQL
 
-A AEM as a Cloud Service geralmente exige que você forneça drivers de banco de dados Java™ para oferecer suporte às conexões. Normalmente, o melhor modo de obter o fornecimento dos drivers é incorporar os artefatos do pacote OSGi que contêm esses drivers ao projeto AEM por meio do pacote `all`.
+A AEM as a Cloud Service geralmente exige que você forneça drivers de banco de dados Java™ para oferecer suporte às conexões. Normalmente, a melhor maneira de obter os drivers é incorporar os artefatos do pacote OSGi que contêm esses drivers ao projeto do AEM por meio do pacote `all`.
 
 ### Reator pom.xml
 

@@ -1,7 +1,7 @@
 ---
 title: Reagir à edição do aplicativo usando o Editor universal
 description: Saiba como editar o conteúdo de uma amostra do aplicativo React usando o Editor universal.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 69ed610e-2eff-43b3-98f9-3dc40594e879
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Este tutorial aborda os seguintes tópicos:
 
 - Uma breve visão geral do Universal Editor
 - Configuração do ambiente de desenvolvimento local
-   - **SDK do AEM**: fornece o conteúdo armazenado nos Fragmentos de conteúdo para o aplicativo React usando APIs do GraphQL.
+   - **AEM SDK**: fornece o conteúdo armazenado nos Fragmentos de conteúdo para o aplicativo React usando APIs do GraphQL.
    - **Aplicativo React**: uma interface de usuário simples que exibe o conteúdo do AEM.
-   - **Serviço do Editor Universal**: uma _cópia local do serviço do Editor Universal_ que associa o Editor Universal e o SDK do AEM.
+   - **Serviço do Editor Universal**: uma _cópia local do serviço do Editor Universal_ que associa o Editor Universal e o AEM SDK.
 - Como instrumentar o aplicativo React para editar o conteúdo usando o Editor universal
 - Como editar o conteúdo do aplicativo React usando o Editor universal
 

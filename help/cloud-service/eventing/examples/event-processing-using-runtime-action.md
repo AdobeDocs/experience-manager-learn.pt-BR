@@ -1,7 +1,7 @@
 ---
-title: Processamento de eventos AEM usando a ação do Adobe I/O Runtime
-description: Saiba como processar eventos AEM recebidos usando a ação do Adobe I/O Runtime.
-version: Cloud Service
+title: Processamento de eventos do AEM usando a ação do Adobe I/O Runtime
+description: Saiba como processar eventos AEM recebidos usando a Ação do Adobe I/O Runtime.
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,32 +12,32 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
-# Processamento de eventos AEM usando a ação do Adobe I/O Runtime
+# Processamento de eventos do AEM usando a ação do Adobe I/O Runtime
 
-Saiba como processar eventos AEM recebidos usando a Ação [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/). Este exemplo aprimora o exemplo anterior [Ação do Adobe I/O Runtime e Eventos AEM](runtime-action.md). Verifique se você o concluiu antes de continuar com este.
+Saiba como processar Eventos AEM recebidos usando a Ação [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/). Este exemplo aprimora o exemplo anterior [Ação do Adobe I/O Runtime e Eventos do AEM](runtime-action.md). Verifique se você o concluiu antes de continuar com este.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-Neste exemplo, o processamento de eventos armazena os dados originais do evento e o evento recebido como uma mensagem de atividade no armazenamento do Adobe I/O Runtime. No entanto, se o evento for do tipo _Fragmento de conteúdo modificado_, ele também chamará o serviço de autor do AEM para encontrar os detalhes de modificação. Por fim, exibe os detalhes do evento em um aplicativo de página única (SPA).
+Neste exemplo, o processamento de eventos armazena os dados originais do evento e o evento recebido como uma mensagem de atividade no armazenamento do Adobe I/O Runtime. No entanto, se o evento for do tipo _Fragmento de conteúdo modificado_, ele também chamará o serviço de autor do AEM para encontrar os detalhes da modificação. Por fim, exibe os detalhes do evento em um aplicativo de página única (SPA).
 
 ## Pré-requisitos
 
 Para concluir este tutorial, você precisa:
 
-- Ambiente AEM as a Cloud Service com [evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Além disso, o projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) de amostra deve ser implantado nele.
+- Ambiente AEM as a Cloud Service com [Evento AEM habilitado](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Além disso, o projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) de amostra deve ser implantado nele.
 
 - Acesso ao [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalada no computador local.
 
-- Projeto inicializado localmente a partir do exemplo anterior [Ação do Adobe I/O Runtime e Eventos AEM](./runtime-action.md#initialize-project-for-local-development).
+- Projeto inicializado localmente do exemplo anterior [Ação do Adobe I/O Runtime e Eventos do AEM](./runtime-action.md#initialize-project-for-local-development).
 
 ## Ação do processador de eventos AEM
 
@@ -162,7 +162,7 @@ Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módu
   ...
   ```
 
-  Consulte o [tutorial sobre credenciais de serviço do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para saber mais. Além disso, os [Arquivos de Configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
+  Consulte o [tutorial do AEM Service Credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para saber mais sobre ele. Além disso, os [Arquivos de Configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
 
 - O módulo `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` armazena os dados originais do evento, a mensagem de atividade e os detalhes de modificação (se houver) no armazenamento do Adobe I/O Runtime.
 
@@ -248,8 +248,8 @@ if (params.challenge) {
 ## Recursos adicionais
 
 - A pasta `src/dx-excshell-1/actions/model` contém arquivos `aemEvent.js` e `errors.js`, que são usados pela ação para analisar o evento recebido e manipular erros, respectivamente.
-- A pasta `src/dx-excshell-1/actions/load-processed-aem-events` contém o código de ação. Essa ação é usada pelo SPA para carregar os Eventos AEM processados do armazenamento Adobe I/O Runtime.
-- A pasta `src/dx-excshell-1/web-src` contém o código SPA, que exibe os Eventos AEM processados.
+- A pasta `src/dx-excshell-1/actions/load-processed-aem-events` contém o código de ação. Essa ação é usada pelo SPA para carregar os Eventos do AEM processados do armazenamento do Adobe I/O Runtime.
+- A pasta `src/dx-excshell-1/web-src` contém o código SPA, que exibe os Eventos do AEM processados.
 - O arquivo `src/dx-excshell-1/ext.config.yaml` contém parâmetros e configurações de ação.
 
 ## Conceito e principais pontos
@@ -257,5 +257,5 @@ if (params.challenge) {
 Os requisitos de processamento de eventos diferem de projeto para projeto. No entanto, os principais argumentos deste exemplo são:
 
 - O processamento do evento pode ser feito usando a Ação do Adobe I/O Runtime.
-- A Ação em tempo de execução pode se comunicar com sistemas como seus aplicativos internos, soluções de terceiros e soluções de Adobe.
+- A Ação em tempo de execução pode se comunicar com sistemas como aplicativos internos, soluções de terceiros e soluções da Adobe.
 - A ação de tempo de execução serve como ponto de entrada para um processo de negócios projetado em torno de uma alteração de conteúdo.

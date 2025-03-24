@@ -1,7 +1,7 @@
 ---
 title: Conexões HTTP/HTTPS em portas fora do padrão para saída de porta flexível
 description: Saiba como fazer solicitações HTTP/HTTPS do AEM as a Cloud Service para serviços Web externos em execução em portas não padrão para Saída flexível de porta.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Conexões HTTP/HTTPS em portas fora do padrão para saída de porta flexível
 
-As conexões HTTP/HTTPS em portas fora do padrão (não 80/443) devem ser enviadas por proxy do AEM as a Cloud Service, no entanto, elas não precisam de regras `portForwards` especiais e podem usar o `AEM_PROXY_HOST` da rede avançada AEM e uma porta de proxy reservada `AEM_HTTP_PROXY_PORT` ou `AEM_HTTPS_PROXY_PORT`, dependendo se o destino é HTTP/HTTPS.
+As conexões HTTP/HTTPS em portas fora do padrão (não 80/443) devem ser enviadas por proxy do AEM as a Cloud Service, no entanto, elas não precisam de regras `portForwards` especiais e podem usar o `AEM_PROXY_HOST` da rede avançada da AEM e uma porta de proxy reservada `AEM_HTTP_PROXY_PORT` ou `AEM_HTTPS_PROXY_PORT`, dependendo se o destino é HTTP/HTTPS.
 
 ## Suporte avançado a rede
 

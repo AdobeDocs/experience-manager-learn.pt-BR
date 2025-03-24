@@ -1,16 +1,16 @@
 ---
-title: Converta PDF em PDF/A.
+title: Converta o PDF em PDF/A.
 description: Criar e validar arquivos PDF/A no Forms CA usando os endpoints HTTP
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 3%
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 # Criar e validar documentos do PDF/A
 
-PDF/A é uma versão padronizada em ISO do Portable Document Format (PDF), especializada para uso no arquivamento e na preservação de documentos eletrônicos a longo prazo. PDF/A difere de PDF proibindo recursos inadequados para arquivamento de longo prazo, como vinculação de fontes (em oposição à incorporação de fontes) e criptografia.
+PDF/A é uma versão padrão ISO do Portable Document Format (PDF), especializada em arquivamento e preservação de longo prazo de documentos eletrônicos. O PDF/A difere do PDF por proibir recursos inadequados para arquivamento de longo prazo, como vinculação de fontes (em vez de incorporação de fontes) e criptografia.
 
 ## Converter para PDF/A
 
-O código a seguir foi usado para converter PDF em PDF/A
+O código a seguir foi usado para converter o PDF em PDF/A
 
 ```java
 package com.aemformscs.documentservices;
@@ -95,7 +95,7 @@ public class PDFAUtilities {
 
 ## Validar PDF/A
 
-O código a seguir é usado para validar um determinado PDF para conformidade com PDF/A.
+O código a seguir é usado para validar um determinado PDF para fins de conformidade com o PDF/A.
 
 ```java
 public void validatePDFA(String postURL) {

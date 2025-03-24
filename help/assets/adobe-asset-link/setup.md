@@ -1,8 +1,8 @@
 ---
 title: Configuração do Adobe Asset Link
-description: Saiba como configurar o Adobe Asset Link sem custo, que conecta seus aplicativos Creative Cloud, incluindo Photoshop, Illustrator, InDesign XD e ao Adobe Experience Manager Assets.
+description: Saiba como configurar o Adobe Asset Link sem custo, que conecta seus aplicativos da Creative Cloud, incluindo Photoshop, Illustrator, InDesign e XD à Adobe Experience Manager Assets.
 feature: Adobe Asset Link
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: Admin, User
 level: Beginner
@@ -11,7 +11,7 @@ thumbnail: 338824.jpg
 doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
 duration: 2418
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 # Configuração do Adobe Asset Link
 
-Dê um impacto rápido à sua organização, facilitando a colaboração de equipes de criação e marketing em ativos no processo de criação de conteúdo. Se você estiver na TI, saiba como configurar rapidamente o Adobe Asset Link sem custo, que conecta seus aplicativos Creative Cloud, incluindo Photoshop, Illustrator, InDesign XD e ao Adobe Experience Manager Assets.
+Dê um impacto rápido à sua organização, facilitando a colaboração de equipes de criação e marketing em ativos no processo de criação de conteúdo. Se você estiver na TI, saiba como configurar rapidamente o Adobe Asset Link sem custo, que conecta seus aplicativos da Creative Cloud, incluindo Photoshop, Illustrator, InDesign e XD à Adobe Experience Manager Assets.
 
 ## Configuração do Asset Link para o AEM as a Cloud Service
 
-Saiba como configurar o Adobe Asset Link para o AEM as a Cloud Service, configurar direitos de usuário e o AEM as a Cloud Service e como instalar e usar o Adobe Asset Link.
+Saiba como configurar o Adobe Asset Link para o AEM as a Cloud Service, configurar direitos de usuário e o AEM as a Cloud Service, e como instalar e usar o Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
-Não exibido no vídeo acima, o Adobe Asset Link pode ser adicionado através da opção __Pacote gerenciado__ do gerenciador de pacotes Creative Cloud:
+Não mostrado no vídeo acima, o Adobe Asset Link pode ser adicionado por meio da opção __Pacote gerenciado__ do gerenciador de pacotes da Creative Cloud:
 
-1. Escolha o __CEP do Link de Ativo do Adobe__ na etapa __Escolher Plug-ins__
+1. Escolha o __CEP do Adobe Asset Link__ na etapa __Escolher Plug-ins__
 2. Na __Etapa de opção__, selecione __Habilitar instalação de autoatendimento__ e __Permitir que não administradores atualizem e instalem aplicativos__ para permitir que não administradores tenham privilégios para gerenciar aplicativos e plug-ins do Creative Cloud.
 
 ## Configuração do Asset Link para o Managed Services e No local
 
-Saiba como configurar o Adobe Asset Link para AEM 6 em execução no Adobe Managed Services ou no local, configurando os direitos de usuário e o AEM as a Cloud Service, e como instalar e usar o Adobe Asset Link.
+Saiba como configurar o Adobe Asset Link para o AEM 6 em execução no Adobe Managed Services ou no local, configurar os direitos de usuário e o AEM as a Cloud Service e como instalar e usar o Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338823?quality=12&learn=on)
 

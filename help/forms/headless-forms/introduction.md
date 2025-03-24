@@ -1,15 +1,15 @@
 ---
-title: Uso do formulário adaptável headless no SPA
-description: Implemente um formulário de contato headless no SPA
+title: Uso do formulário adaptável headless em SPA
+description: Implementar um formulário entre em contato conosco headless em SPA
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: 7b457ce8-f11a-4e2b-8548-6ac3910cb61e
 duration: 24
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Este artigo abordará as várias APIs headless fornecidas para permitir listar, 
 
 Este artigo supõe que você tenha um aplicativo de página única existente e gostaria de listar e exibir os formulários adaptáveis headless em seu site de spa.
 
-A captura de tela a seguir mostra um formulário entre em contato conosco sendo incorporado no SPA
+A captura de tela a seguir mostra um formulário Fale conosco sendo incorporado no SPA
 
 ![contact-us-form](./assets/contact-us-form.png)
 

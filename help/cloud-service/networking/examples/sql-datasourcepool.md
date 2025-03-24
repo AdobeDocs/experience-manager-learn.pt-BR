@@ -1,7 +1,7 @@
 ---
 title: Conexões SQL usando DataSourcePool do JDBC
-description: Saiba como se conectar aos bancos de dados SQL do AEM as a Cloud Service usando as portas DataSourcePool e saída JDBC do AEM.
-version: Cloud Service
+description: Saiba como se conectar a bancos de dados SQL do AEM as a Cloud Service usando as portas JDBC DataSourcePool e de saída da AEM.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Conexões SQL usando DataSourcePool do JDBC
 
-As conexões com bancos de dados SQL (e outros serviços não HTTP/HTTPS) devem ser enviadas por proxy do AEM, incluindo aquelas feitas usando o serviço OSGi DataSourcePool do AEM para gerenciar as conexões.
+As conexões com bancos de dados SQL (e outros serviços não HTTP/HTTPS) devem ser enviadas por proxy da AEM, incluindo aquelas feitas usando o serviço OSGi DataSourcePool da AEM para gerenciar as conexões.
 
 ## Suporte avançado a rede
 
@@ -60,7 +60,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Exemplo de código
 
-Este exemplo de código Java™ é de um serviço OSGi que faz uma conexão com um banco de dados MySQL externo por meio do serviço OSGi DataSourcePool do AEM.
+Este exemplo de código Java™ é de um serviço OSGi que faz uma conexão com um banco de dados MySQL externo por meio do serviço OSGi DataSourcePool da AEM.
 A configuração de fábrica OSGi de DataSourcePool especifica uma porta (`30001`) que é mapeada por meio da regra `portForwards` na operação [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) para o host e a porta externos, `mysql.example.com:3306`.
 
 ```json
@@ -134,7 +134,7 @@ public class JdbcExternalServiceImpl implements ExternalService {
 
 ## Dependências do driver MySQL
 
-A AEM as a Cloud Service geralmente exige que você forneça drivers de banco de dados Java™ para oferecer suporte às conexões. Normalmente, o melhor modo de obter o fornecimento dos drivers é incorporar os artefatos do pacote OSGi que contêm esses drivers ao projeto AEM por meio do pacote `all`.
+A AEM as a Cloud Service geralmente exige que você forneça drivers de banco de dados Java™ para oferecer suporte às conexões. Normalmente, a melhor maneira de obter os drivers é incorporar os artefatos do pacote OSGi que contêm esses drivers ao projeto do AEM por meio do pacote `all`.
 
 ### Reator pom.xml
 

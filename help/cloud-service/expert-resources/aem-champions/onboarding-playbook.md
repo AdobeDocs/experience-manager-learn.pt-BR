@@ -1,7 +1,7 @@
 ---
-title: Dicas e truques do especialista em AEM - Manual de integração do Cloud Manager
-description: Confira estas dicas para integração com o Cloud Manager e o manual de integração do campeão e especialista em AEM, Rakesh Pasupuleti.
-version: Cloud Service
+title: Dicas e truques do AEM Champion - Manual de integração do Cloud Manager
+description: Confira estas dicas para integração com o Cloud Manager e o manual de integração do especialista e defensor da AEM, Rakesh Pasupuleti.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
 role: Admin, Architect
@@ -11,14 +11,14 @@ last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13228
 exl-id: d1745cea-906b-46fa-adcc-7da6e7ee95db
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
-# Dicas e truques do especialista em AEM - Manual de integração do Cloud Manager
+# Dicas e truques do AEM Champion - Manual de integração do Cloud Manager
 
 O manual de integração ajudará você a assumir o controle como um novo administrador e desenvolvedor do AEM as a Cloud Service. Na planilha que pode ser baixada, nós o guiaremos pelas atividades que você deve realizar nas primeiras três semanas do trabalho, ao iniciar a jornada de integração.
 

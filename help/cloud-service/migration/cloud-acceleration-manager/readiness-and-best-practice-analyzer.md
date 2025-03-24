@@ -1,7 +1,7 @@
 ---
 title: Analisador de práticas recomendadas e disponibilidade
 description: Saiba como o Analisador de práticas recomendadas pode ajudar a preparar seu aplicativo para ser movido para o Experience Manager as a Cloud Service
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Migration
 topic: Migration, Upgrade
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-8659
 thumbnail: 336690.jpeg
 exl-id: b8905917-c385-4a79-99df-9a0fad98dc87
 duration: 232
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: Depurar um trabalhador do Asset Compute
 description: Os trabalhadores do Asset Compute podem ser depurados de várias maneiras, desde declarações de log de depuração simples, ao código VS anexado como um depurador remoto, até logs de ativação no Adobe I/O Runtime iniciados pelo AEM as a Cloud Service.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6285
 thumbnail: 40383.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Os trabalhadores do Asset Compute podem ser depurados de várias maneiras, desde
 
 ## Logs
 
-A forma mais básica de depuração de trabalhadores de Asset compute usa instruções `console.log(..)` tradicionais no código de trabalho. O objeto JavaScript `console` é um objeto global implícito, portanto não há necessidade de importá-lo ou solicitá-lo, pois ele está sempre presente em todos os contextos.
+A forma mais básica de depuração de trabalhadores do Asset Compute usa instruções `console.log(..)` tradicionais no código do trabalhador. O objeto JavaScript `console` é um objeto global implícito, portanto não há necessidade de importá-lo ou solicitá-lo, pois ele está sempre presente em todos os contextos.
 
 Estas instruções de log estão disponíveis para revisão de forma diferente com base em como o worker do Asset Compute é executado:
 
@@ -42,11 +42,11 @@ Estas instruções de log estão disponíveis para revisão de forma diferente c
 >
 >Use o Microsoft Visual Studio Code 1.48.0 ou posterior para compatibilidade com wskdebug
 
-O módulo [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm oferece suporte à anexação de um depurador a trabalhadores do Asset Compute, incluindo a capacidade de definir pontos de interrupção no Código VS e percorrer o código.
+O módulo [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm oferece suporte à anexação de um depurador aos trabalhadores do Asset Compute, incluindo a capacidade de definir pontos de interrupção no Código VS e percorrer o código.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383?quality=12&learn=on)
 
-_Click-through de depuração de um trabalhador de Asset compute usando wskdebug (Sem áudio)_
+_Click-through de depuração de um trabalhador do Asset Compute usando wskdebug (Sem áudio)_
 
 1. Verifique se os módulos [wskdebug](../set-up/development-environment.md#wskdebug) e [ngrok](../set-up/development-environment.md#ngork) npm estão instalados
 1. Verifique se o [Docker Desktop e as imagens do Docker de suporte](../set-up/development-environment.md#docker) estão instalados e em execução
@@ -93,7 +93,7 @@ _Click-through de depuração de um trabalhador de Asset compute usando wskdebug
 
 ## Acessar logs do Adobe I/O Runtime{#aio-app-logs}
 
-[O AEM as a Cloud Service aproveita os trabalhadores do Asset Compute por meio do Processamento de Perfis](../deploy/processing-profiles.md), invocando-os diretamente no Adobe I/O Runtime. Como essas invocações não envolvem desenvolvimento local, suas execuções não podem ser depuradas usando ferramentas locais, como Asset Compute Development Tool ou wskdebug. Em vez disso, a CLI do Adobe I/O pode ser usada para buscar registros do operador executado em um espaço de trabalho específico no Adobe I/O Runtime.
+[O AEM as a Cloud Service aproveita os trabalhadores do Asset Compute por meio do Processamento de Perfis](../deploy/processing-profiles.md), invocando-os diretamente no Adobe I/O Runtime. Como essas invocações não envolvem desenvolvimento local, suas execuções não podem ser depuradas usando ferramentas locais, como a Ferramenta de desenvolvimento do Asset Compute ou wskdebug. Em vez disso, a CLI do Adobe I/O pode ser usada para buscar registros do trabalhador executado em um espaço de trabalho específico no Adobe I/O Runtime.
 
 1. Verifique se as [variáveis de ambiente específicas do espaço de trabalho](../deploy/runtime.md) estão definidas via `AIO_runtime_namespace` e `AIO_runtime_auth`, com base no espaço de trabalho que requer depuração.
 1. Na linha de comando, execute `aio app logs`

@@ -2,7 +2,7 @@
 title: Enviar anexos de formulário adaptáveis
 description: Enviar anexos de formulário adaptáveis usando o componente de envio de email
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ kt: kt-8049
 exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 
 
-Um caso de uso comum é o envio de anexos de formulário adaptáveis usando o componente de envio de email em um fluxo de trabalho AEM.
+Um caso de uso comum é o envio de anexos de formulário adaptáveis usando o componente de envio de email em um fluxo de trabalho do AEM.
 Em geral, os clientes compactam os anexos do formulário ou os enviam como arquivos individuais usando o componente de envio de email.
 
 ## Enviar os anexos de formulário em um arquivo zip

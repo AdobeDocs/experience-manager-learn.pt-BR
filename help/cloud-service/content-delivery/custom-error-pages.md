@@ -1,7 +1,7 @@
 ---
 title: Páginas de erro personalizadas
 description: Saiba como implementar páginas de erro personalizadas para seu site hospedado pela AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Brand Experiences, Configuring, Developing
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-12-04T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
-source-git-commit: 97680d95d4cd3cb34956717a88c15a956286c416
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Neste tutorial, você aprenderá:
 
 - Páginas de erro padrão
 - De onde as páginas de erro são servidas
-   - Tipo de serviço AEM - autor, publicação, visualização
-   - CDN gerenciada por Adobe
+   - Tipo de serviço do AEM - autor, publicação, visualização
+   - CDN gerenciada pela Adobe
 - Opções para personalizar páginas de erro
    - Diretiva Apache ErrorDocument
-   - ACS AEM Commons - Error Page Handler
+   - ACS AEM Commons - Manipulador de página de erro
    - Páginas de erro da CDN
 
 ## Páginas de erro padrão
@@ -46,12 +46,12 @@ Páginas de erro são exibidas quando:
 
 A AEM as a Cloud Service fornece _páginas de erro padrão_ para os cenários acima. É uma página genérica e não corresponde à sua marca.
 
-A página de erro padrão _é servida_ do _tipo de serviço AEM_(autor, publicação, visualização) ou da _CDN gerenciada por Adobe_. Consulte a tabela abaixo para obter mais detalhes.
+A página de erro padrão _é servida_ do _tipo de serviço do AEM_(autor, publicação, visualização) ou da _CDN gerenciada pela Adobe_. Consulte a tabela abaixo para obter mais detalhes.
 
 | Página de erro exibida em | Detalhes |
 |---------------------|:-----------------------:|
-| Tipo de serviço AEM - autor, publicação, visualização | Quando a solicitação de página é fornecida pelo tipo de serviço AEM e qualquer um dos cenários de erro acima ocorre, a página de erro é fornecida pelo tipo de serviço AEM. Por padrão, a página de erro 5XX é substituída pela página de erro CDN gerenciada por Adobe, a menos que o cabeçalho `x-aem-error-pass: true` esteja definido. |
-| CDN gerenciada por Adobe | Quando o CDN gerenciado por Adobe _não pode alcançar o tipo de serviço AEM_ (servidor de origem), a página de erro é disponibilizada pelo CDN gerenciado por Adobe. **É um evento improvável, mas que vale a pena planejar.** |
+| Tipo de serviço do AEM - autor, publicação, visualização | Quando a solicitação de página é atendida pelo tipo de serviço do AEM e qualquer um dos cenários de erro acima ocorre, a página de erro é atendida pelo tipo de serviço do AEM. Por padrão, a página de erro 5XX é substituída pela página de erro da CDN gerenciada pela Adobe, a menos que o cabeçalho `x-aem-error-pass: true` seja definido. |
+| CDN gerenciada pela Adobe | Quando a CDN gerenciada pela Adobe _não consegue acessar o tipo de serviço do AEM_ (servidor de origem), a página de erro é disponibilizada pela CDN gerenciada pela Adobe. **É um evento improvável, mas que vale a pena planejar.** |
 
 >[!NOTE]
 >
@@ -59,11 +59,11 @@ A página de erro padrão _é servida_ do _tipo de serviço AEM_(autor, publica�
 >Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibem a página de erro genérico.
 
 
-Por exemplo, as páginas de erro padrão veiculadas pelo tipo de serviço AEM e pelo CDN gerenciado por Adobe são as seguintes:
+Por exemplo, as páginas de erro padrão veiculadas no tipo de serviço do AEM e no CDN gerenciado pela Adobe são as seguintes:
 
 ![Páginas de Erro Padrão do AEM](./assets/aem-default-error-pages.png)
 
-No entanto, você pode _personalizar o tipo de serviço do AEM e as páginas de erro da CDN_ gerenciadas por Adobe para corresponder à sua marca e fornecer uma melhor experiência ao usuário.
+No entanto, você pode _personalizar o tipo de serviço do AEM e as páginas de erro da CDN gerenciadas pela Adobe_ para corresponder à sua marca e fornecer uma melhor experiência ao usuário.
 
 ## Opções para personalizar páginas de erro
 
@@ -71,22 +71,22 @@ As seguintes opções estão disponíveis para personalizar páginas de erro:
 
 | Aplicável a | Nome da opção | Descrição |
 |---------------------|:-----------------------:|:-----------------------:|
-| Tipos de serviço do AEM - publicar e visualizar | Diretiva ErrorDocument | Use a diretiva [ErrorDocument](https://httpd.apache.org/docs/2.4/custom-error.html) no arquivo de configuração do Apache para especificar o caminho para a página de erro personalizada. Aplicável somente aos tipos de serviço AEM: publicar e visualizar. |
-| Tipos de serviço do AEM - autor, publicação, visualização | ACS AEM Commons Error Page Handler | Use o [Manipulador de página de erro ACS AEM](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) para personalizar o erro em todos os tipos de serviço AEM. |
-| CDN gerenciada por Adobe | Páginas de erro da CDN | Use as páginas de erro do CDN para personalizar as páginas de erro quando o CDN gerenciado por Adobe não puder alcançar o tipo de serviço AEM (servidor de origem). |
+| Tipos de serviço do AEM - publicar e visualizar | Diretiva ErrorDocument | Use a diretiva [ErrorDocument](https://httpd.apache.org/docs/2.4/custom-error.html) no arquivo de configuração do Apache para especificar o caminho para a página de erro personalizada. Aplicável somente aos tipos de serviço do AEM - publicar e visualizar. |
+| Tipos de serviço do AEM - autor, publicação, visualização | Manipulador de página de erro ACS AEM Commons | Use o [Manipulador de página de erro do ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html) para personalizar o erro em todos os tipos de serviço do AEM. |
+| CDN gerenciada pela Adobe | Páginas de erro da CDN | Use as páginas de erro do CDN para personalizar as páginas de erro quando o CDN gerenciado pela Adobe não puder acessar o tipo de serviço do AEM (servidor de origem). |
 
 
 ## Pré-requisitos
 
-Neste tutorial, você aprenderá a personalizar páginas de erro usando a diretiva _ErrorDocument_, o _Manipulador de página de erro AEM ACS_ e as _Páginas de erro CDN_. Para seguir este tutorial, você precisa:
+Neste tutorial, você aprenderá a personalizar páginas de erro usando a diretiva _ErrorDocument_, as opções _ACS AEM Commons Error Page Handler_ e _CDN Error Pages_. Para seguir este tutorial, você precisa:
 
 - O [ambiente de desenvolvimento local do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) ou o ambiente do AEM as a Cloud Service. A opção _Páginas de Erro de CDN_ é aplicável ao ambiente do AEM as a Cloud Service.
 
-- O [projeto WKND AEM](https://github.com/adobe/aem-guides-wknd) para personalizar páginas de erro.
+- O [projeto WKND do AEM](https://github.com/adobe/aem-guides-wknd) para personalizar páginas de erro.
 
 ## Configuração
 
-- Clonar e implantar o projeto AEM WKND no ambiente de desenvolvimento local do AEM seguindo as etapas abaixo:
+- Clonar e implantar o projeto WKND do AEM no ambiente de desenvolvimento local do AEM seguindo as etapas abaixo:
 
   ```
   # For local AEM development environment
@@ -95,19 +95,19 @@ Neste tutorial, você aprenderá a personalizar páginas de erro usando a direti
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Para o ambiente do AEM as a Cloud Service, implante o projeto WKND AEM executando o [pipeline de pilha completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Consulte o exemplo de [pipeline de não produção](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
+- Para o ambiente AEM as a Cloud Service, implante o projeto WKND do AEM executando o [pipeline de pilha completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Consulte o exemplo de [pipeline de não produção](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
 
 - Verifique se as páginas do site WKND são renderizadas corretamente.
 
-## Diretiva do Apache ErrorDocument para personalizar páginas de erro fornecidas por AEM{#errordocument}
+## Diretiva ErrorDocument Apache para personalizar páginas de erro fornecidas pela AEM{#errordocument}
 
-Para personalizar páginas de erro veiculadas por AEM, use a diretiva do Apache `ErrorDocument`.
+Para personalizar as páginas de erro fornecidas pelo AEM, use a diretiva do Apache `ErrorDocument`.
 
 No AEM as a Cloud Service, a opção de diretiva do Apache `ErrorDocument` só é aplicável aos tipos de serviço de publicação e visualização. Não é aplicável ao tipo de serviço do autor, pois o Apache + Dispatcher não faz parte da arquitetura de implantação.
 
 Vamos analisar como o projeto [AEM WKND](https://github.com/adobe/aem-guides-wknd) usa a diretiva do Apache `ErrorDocument` para exibir páginas de erro personalizadas.
 
-- O módulo `ui.content.sample` contém as [páginas de erro](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors` da marca. Revise-as no seu ambiente [AEM](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) local ou AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors`.
+- O módulo `ui.content.sample` contém as [páginas de erro](https://github.com/adobe/aem-guides-wknd/tree/main/ui.content.sample/src/main/content/jcr_root/content/wknd/language-masters/en/errors) @ `/content/wknd/language-masters/en/errors` da marca. Revise-as no seu ambiente [AEM local](http://localhost:4502/sites.html/content/wknd/language-masters/en/errors) ou AEM as a Cloud Service `https://author-p<ID>-e<ID>.adobeaemcloud.com/ui#/aem/sites.html/content/wknd/language-masters/en/errors`.
 
 - O arquivo `wknd.vhost` do módulo `dispatcher` contém:
    - A [diretiva ErrorDocument](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L139-L143) que aponta para as [páginas de erro](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/variables/custom.vars#L7-L8) acima.
@@ -150,19 +150,19 @@ Vamos analisar como o projeto [AEM WKND](https://github.com/adobe/aem-guides-wkn
 
 ## ACS AEM Commons-Error Page Handler para personalizar páginas de erro fornecidas pelo AEM{#acs-aem-commons}
 
-Para personalizar as páginas de erro do AEM em _todos os tipos de serviço do AEM_, você pode usar a opção [Manipulador de página de erro do AcS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html).
+Para personalizar as páginas de erro fornecidas pelo AEM em _todos os tipos de serviço do AEM_, você pode usar a opção [Manipulador de página de erro do ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html).
 
 . Para obter instruções detalhadas passo a passo, consulte a seção [Como Usar](https://adobe-consulting-services.github.io/acs-aem-commons/features/error-handler/index.html#how-to-use).
 
 ## Páginas de erro CDN para personalizar páginas de erro fornecidas pela CDN{#cdn-error-pages}
 
-Para personalizar páginas de erro fornecidas pelo CDN gerenciado por Adobe, use a opção de páginas de erro do CDN.
+Para personalizar páginas de erro fornecidas pelo CDN gerenciado pela Adobe, use a opção de páginas de erro do CDN.
 
-Vamos implementar páginas de erro de CDN para personalizar páginas de erro quando o CDN gerenciado por Adobe não puder alcançar o tipo de serviço AEM (servidor de origem).
+Vamos implementar páginas de erro de CDN para personalizar páginas de erro quando o CDN gerenciado pela Adobe não puder acessar o tipo de serviço do AEM (servidor de origem).
 
 >[!IMPORTANT]
 >
-> A CDN _gerenciada por Adobe não pode alcançar o tipo de serviço AEM_ (servidor de origem) é um **evento improvável**, mas vale a pena planejar para.
+> A _CDN gerenciada pela Adobe não pode acessar o tipo de serviço do AEM_ (servidor de origem) é um **evento improvável**, mas vale a pena planejar para.
 
 As etapas de alto nível para implementar páginas de erro de CDN são:
 
@@ -175,9 +175,9 @@ As etapas de alto nível para implementar páginas de erro de CDN são:
 
 ### Visão geral das páginas de erro do CDN
 
-A página de erro CDN é implementada como um aplicativo de página única (SPA) pelo CDN gerenciado por Adobe. O documento de HTML do SPA entregue pelo CDN gerenciado por Adobe contém o trecho de HTML mínimo. O conteúdo da página de erro personalizada é gerado dinamicamente usando um arquivo JavaScript. O arquivo JavaScript deve ser desenvolvido e hospedado em um local acessível publicamente pelo cliente.
+A página de erro CDN é implementada como um Aplicativo de página única (SPA) pelo CDN gerenciado pela Adobe. O documento SPA HTML entregue pela CDN gerenciada pela Adobe contém o trecho mínimo básico do HTML. O conteúdo da página de erro personalizada é gerado dinamicamente usando um arquivo JavaScript. O arquivo JavaScript deve ser desenvolvido e hospedado em um local acessível publicamente pelo cliente.
 
-O snippet de HTML entregue pelo CDN gerenciado por Adobe tem a seguinte estrutura:
+O trecho do HTML entregue pela CDN gerenciada pela Adobe tem a seguinte estrutura:
 
 ```html
 <!DOCTYPE html>
@@ -198,7 +198,7 @@ O snippet de HTML entregue pelo CDN gerenciado por Adobe tem a seguinte estrutur
 
 O trecho HTML contém os seguintes espaços reservados:
 
-1. **jsUrl**: o URL absoluto do arquivo JavaScript para renderizar o conteúdo da página de erro, criando elementos HTML dinamicamente.
+1. **jsUrl**: a URL absoluta do arquivo JavaScript para renderizar o conteúdo da página de erro criando elementos HTML dinamicamente.
 1. **cssUrl**: a URL absoluta do arquivo CSS para o estilo do conteúdo da página de erro.
 1. **icoUrl**: a URL absoluta do favicon.
 
@@ -206,7 +206,7 @@ O trecho HTML contém os seguintes espaços reservados:
 
 ### Desenvolver uma página de erro personalizada
 
-Vamos desenvolver o conteúdo específico da página de erro de marca WKND como um Aplicativo de página única (SPA).
+Vamos desenvolver o conteúdo da página de erro de marca específico do WKND como um Aplicativo de página única (SPA).
 
 Para fins de demonstração, vamos usar o [React](https://react.dev/). No entanto, você pode usar qualquer estrutura ou biblioteca do JavaScript.
 
@@ -346,7 +346,7 @@ Em seguida, configure a regra CDN (errorPages) e faça referência aos arquivos 
 
 Vamos configurar a regra de CDN `errorPages` que usa os arquivos estáticos acima para renderizar o conteúdo da página de erro de CDN.
 
-1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto AEM. Por exemplo, o arquivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto [WKND.
+1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto [WKND.
 
 1. Adicionar a seguinte regra CDN ao arquivo `cdn.yaml`:
 
@@ -367,7 +367,7 @@ Vamos configurar a regra de CDN `errorPages` que usa os arquivos estáticos acim
          jsUrl: https://aemcdnerrorpageresources.blob.core.windows.net/static-files/error.js # The PUBLIC URL of the JavaScript file
    ```
 
-1. Salve, confirme e envie as alterações para o repositório upstream de Adobe.
+1. Salve, confirme e envie as alterações para o repositório upstream do Adobe.
 
 ### Implantar a regra CDN
 
@@ -385,13 +385,13 @@ Por fim, implante a regra CDN configurada no ambiente do AEM as a Cloud Service 
 
 Para testar as páginas de erro do CDN, siga as etapas abaixo:
 
-- No navegador, navegue até o URL do Publish do AEM as a Cloud Service, anexe o `cdnstatus?code=404` ao URL, por exemplo, [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) ou acesse usando o [URL de domínio personalizado](https://wknd.enablementadobe.com/cdnstatus?code=404)
+- No navegador, navegue até o URL de publicação do AEM as a Cloud Service e anexe o `cdnstatus?code=404` ao URL, por exemplo, [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404), ou acesse usando o [URL de domínio personalizado](https://wknd.enablementadobe.com/cdnstatus?code=404)
 
   ![WKND - Página de Erro da CDN](./assets/wknd-cdn-error-page.png)
 
 - Os códigos compatíveis são: 403, 404, 406, 500 e 503.
 
-- Verifique a guia de rede do navegador para ver se os arquivos estáticos são carregados do Armazenamento de Blobs do Azure. O documento HTML entregue pelo CDN gerenciado por Adobe contém o conteúdo mínimo básico e o arquivo JavaScript cria dinamicamente o conteúdo da página de erro de marca.
+- Verifique a guia de rede do navegador para ver se os arquivos estáticos são carregados do Armazenamento de Blobs do Azure. O documento do HTML entregue pela CDN gerenciada pela Adobe contém o conteúdo mínimo básico e o arquivo do JavaScript cria dinamicamente o conteúdo da página de erro de marca.
 
   ![Guia Rede da Página de Erro da CDN](./assets/wknd-cdn-error-page-network-tab.png)
 

@@ -5,22 +5,22 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: f4a18f02-61a2-4fa3-bfbb-41bf696cd2a8
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-
 # Criar um modelo do Sling para o componente
 
-Um Modelo Sling no AEM é uma estrutura baseada em Java usada para simplificar o desenvolvimento da lógica de back-end para componentes. Ele permite que os desenvolvedores mapeiem dados de recursos AEM (nós JCR) para objetos Java usando anotações, fornecendo uma maneira limpa e eficiente de lidar com dados dinâmicos para componentes.
+Um Modelo Sling no AEM é uma estrutura baseada em Java usada para simplificar o desenvolvimento da lógica de back-end para componentes. Ele permite que os desenvolvedores mapeiem dados de recursos do AEM (nós JCR) para objetos Java usando anotações, fornecendo uma maneira limpa e eficiente de lidar com dados dinâmicos para componentes.
 Essa classe, ChannelsDownImpl, é uma implementação da interface CountryDropDown em um projeto AEM (Adobe Experience Manager). Ele fornece um componente suspenso em que os usuários podem selecionar um país com base em seu continente selecionado. Os dados suspensos são carregados dinamicamente de um arquivo JSON armazenado no AEM DAM (Digital Asset Manager).
 
 **Campos na Classe**
@@ -30,7 +30,7 @@ Injetado das propriedades do componente usando @ValueMapValue com um valor padr�
 * **request**: representa a solicitação HTTP atual. Útil para acessar informações específicas do contexto.
 * **continente**: armazena o continente selecionado para a lista suspensa (por exemplo, &quot;ásia&quot;, &quot;europa&quot;).
 Inserido na caixa de diálogo de propriedades do componente, com um valor padrão de &quot;asia&quot; se nenhum for fornecido.
-* **resourceResolver**:usado para acessar e manipular recursos no repositório AEM.
+* **resourceResolver**:usado para acessar e manipular recursos no repositório do AEM.
 * **jsonData**: um JSONObject que armazena os dados analisados do arquivo JSON correspondente ao continente selecionado.
 
 **Métodos na classe**

@@ -1,7 +1,7 @@
 ---
-title: Planejamento da interface do usuário com o Adobe XD | Criação rápida de sites no AEM
+title: Planejamento da interface do usuário com o Adobe XD | Criação rápida de site do AEM
 description: Saiba como os Kits de interface do usuário do Adobe XD podem ser usados para projetar e acelerar a implementação do Adobe Experience Manager Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Neste capítulo, dois arquivos Adobe XD são inspecionados, um para o [Modelo de
 Etapas de alto nível:
 
 1. Baixe o [Arquivo XD de Modelo de Site Padrão](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
-1. Inspect o kit de interface do usuário no Adobe XD.
+1. Inspecione o kit de interface no Adobe XD.
 1. Simular a entrega dos designs a um desenvolvedor front-end.
 
 ## Kit de interface do usuário do WKND {#wknd-ui-kit}
@@ -56,7 +56,7 @@ Etapas de alto nível:
 Etapas de alto nível:
 
 1. Baixe o [Arquivo XD do Artigo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
-1. Inspect os designs do modelo de Artigo WKND.
+1. Inspecione os designs do modelo de Artigo WKND.
 
 ## Parabéns. {#congratulations}
 

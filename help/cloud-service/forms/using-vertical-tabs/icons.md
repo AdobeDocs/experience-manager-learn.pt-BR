@@ -5,14 +5,14 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
 exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
-source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Ao seguir este artigo, você poderá colocar os ícones como mostrado abaixo
 
 ## Pré-requisitos
 
-Para seguir este artigo, você precisa se familiarizar com o Git, criar e implantar um projeto AEM usando o Cloud Manager, configurar um pipeline de front-end no AEM Cloud Manager e um pouco de CSS. Se você não estiver familiarizado com os tópicos mencionados acima, siga o artigo [uso de temas para estilizar os componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder).
+Para seguir este artigo, você precisa se familiarizar com o Git, criar e implantar um projeto do AEM usando o Cloud Manager, configurar um pipeline de front-end no AEM Cloud Manager e um pouco de CSS. Se você não estiver familiarizado com os tópicos mencionados acima, siga o artigo [uso de temas para estilizar os componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder).
 
 ## Adicionar ícones ao tema
 

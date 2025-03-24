@@ -2,7 +2,7 @@
 title: Colunas de grade personalizadas no Console de fragmentos de conteúdo
 description: Saiba como uma coluna de grade personalizada pode ser adicionada ao Console de fragmentos de conteúdo.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Colunas de grade personalizadas podem ser adicionadas ao Console de Fragmentos d
 
 Este exemplo se estende ao ponto de extensão `contentFragmentGrid` para adicionar uma coluna personalizada ao Console de Fragmentos de Conteúdo.
 
-| IU do AEM estendida | Ponto de extensão |
+| Interface do usuário estendida do AEM | Ponto de extensão |
 | ------------------------ | --------------------- | 
 | [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colunas da Grade](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
@@ -208,7 +208,7 @@ Se outros dados forem necessários para preencher a coluna personalizada, as sol
 
 >[!IMPORTANT]
 >
-> Verifique se a instância do Autor AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens em que o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
+> Verifique se a instância do Autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens nas quais o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
 >
 > Como alternativa, a extensão pode chamar uma [ação do AppBuilder](../../runtime-action.md) personalizada que faz a solicitação ao AEM Author em nome da extensão.
 

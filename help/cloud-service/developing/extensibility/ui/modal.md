@@ -2,7 +2,7 @@
 title: Extensão modal da interface do usuário do AEM
 description: Saiba como criar um modal de extensão da interface do usuário do AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
 duration: 127
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![Extensão modal da interface do usuário do AEM](./assets/modal/modal.png){align="center"}
 
-O modal de extensão da interface do usuário do AEM fornece uma maneira de anexar a interface do usuário personalizada a extensões da interface do usuário do AEM.
+O modal de extensão da interface do usuário do AEM fornece uma maneira de anexar a interface do usuário personalizada às extensões da interface do usuário do AEM.
 
 Os modais são aplicativos do React, com base no [Espectro do React](https://react-spectrum.adobe.com/react-spectrum/), e podem criar qualquer interface personalizada exigida pela extensão, incluindo, mas não limitado a:
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Fechar o modal
 
-![Botão de fechamento modal da extensão da interface do usuário do AEM](./assets/modal/close.png){align="center"}
+![Botão de fechamento modal da extensão da interface do AEM](./assets/modal/close.png){align="center"}
 
 Os modais devem fornecer seu próprio controle de fechamento. Isso é feito chamando `guestConnection.host.modal.close()`.
 

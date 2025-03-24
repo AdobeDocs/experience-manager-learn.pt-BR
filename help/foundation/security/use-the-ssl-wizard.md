@@ -1,7 +1,7 @@
 ---
-title: Usar o assistente SSL no AEM
-description: Assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância AEM para execução em HTTPS.
-version: 6.5, Cloud Service
+title: Usar o Assistente de SSL no AEM
+description: Assistente de configuração SSL do Adobe Experience Manager para facilitar a configuração de uma instância do AEM para execução em HTTPS.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-13839
 doc-type: Technical Video
 topic: Security
@@ -10,14 +10,14 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 564
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
-# Usar o assistente SSL no AEM
+# Usar o Assistente de SSL no AEM
 
 Saiba como configurar o SSL no Adobe Experience Manager para que ele seja executado em HTTPS usando o assistente SSL integrado.
 
@@ -32,7 +32,7 @@ Saiba como configurar o SSL no Adobe Experience Manager para que ele seja execut
 
 ## Usando o Assistente de configuração de SSL
 
-Navegue até __AEM Author > Tools > Security > SSL Configuration__ e abra o __Assistente de Configuração do SSL__.
+Navegue até __AEM Author > Tools > Security > SSL Configuration__ e abra o __Assistente de Configuração SSL__.
 
 ![Assistente de Configuração SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
@@ -72,7 +72,7 @@ Para atualizar o _nome do host_ e a _porta_, use a etapa do assistente do __Cone
 1. Para verificar o SSL, clique no botão __Ir para URL HTTPS__.
 1. Se estiver usando um certificado autoassinado, você verá um erro `Your connection is not private`.
 
-   ![Instalação do SSL - Verificar AEM em HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+   ![Configuração de SSL - Verificar AEM sobre HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
 ## Chave privada e certificado autoassinados
 
