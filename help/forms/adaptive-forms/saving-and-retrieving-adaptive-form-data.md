@@ -5,10 +5,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 711
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -277,7 +277,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Criar biblioteca do cliente {#create-client-library}
 
-A Biblioteca cliente AEM gerencia todo o código javascript do lado do cliente. Neste artigo, criei um javascript simples para buscar os dados do Formulário adaptável usando a API do guide bridge. Depois que os dados do formulário adaptável forem obtidos, a chamada de POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Isso é usado quando você deseja atualizar os dados. O restante da funcionalidade é manipulada no código associado ao evento de clique da classe .savebutton. Se o parâmetro guid estiver presente no URL, precisaremos executar a operação de atualização, caso contrário, será uma operação de inserção.
+A Biblioteca do cliente da AEM gerencia todo o código javascript do lado do cliente. Neste artigo, criei um javascript simples para buscar os dados do Formulário adaptável usando a API do guide bridge. Depois que os dados do formulário adaptável forem obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Isso é usado quando você deseja atualizar os dados. O restante da funcionalidade é manipulada no código associado ao evento de clique da classe .savebutton. Se o parâmetro guid estiver presente no URL, precisaremos executar a operação de atualização, caso contrário, será uma operação de inserção.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -419,7 +419,7 @@ Para testar esse recurso na sua instância do AEM Forms, siga as etapas a seguir
 * [Baixe e descompacte o DemoAssets.zip no seu sistema local](assets/demoassets.zip)
 * Implante e inicie os pacotes techmarketingdemos.jar e mysqldriver.jar usando o console da Web Felix.
 *** Importe o aemformstutorial.sql usando o MYSQL Workbench. Isso criará o esquema e as tabelas necessárias no banco de dados
-* Importe o StoreAndRetrieve.zip usando o gerenciador de pacotes AEM. Este pacote contém o modelo de formulário adaptável, a biblioteca de cliente de componentes da página e o formulário adaptável de amostra e a configuração da fonte de dados.
+* Importe StoreAndRetrieve.zip usando o gerenciador de pacotes do AEM. Este pacote contém o modelo de formulário adaptável, a biblioteca de cliente de componentes da página e o formulário adaptável de amostra e a configuração da fonte de dados.
 * Faça logon no configMgr. Procure por &quot;Fonte de dados agrupada da conexão Apache Sling&quot;. Abra a entrada de origem de dados associada a aemformstutorial e insira o nome de usuário e a senha específicos para sua instância de banco de dados.
 * Abra o formulário adaptável
 * Preencha alguns detalhes e clique no botão &quot;Salvar e continuar mais tarde&quot;

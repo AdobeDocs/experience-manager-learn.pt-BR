@@ -2,14 +2,14 @@
 title: Armazenamento de dados do formulário adaptável
 description: Armazenamento de dados do formulário adaptável no DataBase como parte do fluxo de trabalho do AEM
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 146
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Armazenamento de envios de formulários adaptáveis no banco de dados
 
 Há várias maneiras de armazenar os dados do formulário enviado no banco de dados de sua escolha. Uma fonte de dados JDBC pode ser usada para armazenar os dados diretamente no banco de dados. Um pacote OSGI personalizado pode ser gravado para armazenar os dados no banco de dados. Este artigo usa a etapa de processo personalizada no fluxo de trabalho do AEM para armazenar os dados.
-O caso de uso é acionar um fluxo de trabalho de AEM em um envio de formulário adaptável, e uma etapa no fluxo de trabalho armazena os dados enviados na base de dados.
+O caso de uso é acionar um fluxo de trabalho do AEM em um envio de Formulário adaptável, e uma etapa no fluxo de trabalho armazena os dados enviados na base de dados.
 
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Especifique os detalhes do banco de dados usando o configMgr
 * [Baixe o arquivo Zip e extraia o conteúdo no disco rígido](assets/article-assets.zip)
 
-   * Implante o arquivo jar usando o [console da Web AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
+   * Implante o arquivo jar usando o [console da Web do AEM](http://localhost:4502/system/console/bundles). Esse arquivo jar contém o código para armazenar os dados do formulário no banco de dados.
 
-   * Importe os dois arquivos zip para [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso fornecerá a você a [amostra do fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e a [amostra do formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta de carga útil no repositório crx. Observe como o [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho do AEM no envio e na configuração do arquivo de dados(data.xml)
+   * Importe os dois arquivos zip para o [AEM usando o gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp). Isso fornecerá a você a [amostra do fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e a [amostra do formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) que acionará o fluxo de trabalho no envio do formulário. Observe os argumentos do processo na etapa do fluxo de trabalho. Esses argumentos indicam o nome do formulário e o nome do arquivo de dados que conterá os dados do formulário adaptável. O arquivo de dados é armazenado na pasta de carga útil no repositório crx. Observe como o [formulário adaptável](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) está configurado para acionar o fluxo de trabalho do AEM no envio e na configuração do arquivo de dados(data.xml)
 
    * Pré-visualize e preencha o formulário e envie. Você deve ver uma nova linha criada no banco de dados
 

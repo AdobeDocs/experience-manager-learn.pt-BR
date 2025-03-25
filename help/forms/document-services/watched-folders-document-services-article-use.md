@@ -2,14 +2,14 @@
 title: Uso de pastas monitoradas no AEM Forms
 description: Configurar e usar pastas monitoradas no AEM Forms
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Uso de pastas monitoradas no AEM Forms{#using-watched-folders-in-aem-forms}
 
-Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo PDF) na Pasta monitorada, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script.
+Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo do PDF) na Pasta monitorada, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script.
 
 Para saber mais sobre como criar uma pasta monitorada, [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
@@ -26,7 +26,7 @@ As Pastas monitoradas são usadas para gerar documentos em modo de lote. Usando 
 
 Este artigo abordará o caso de uso de mesclagem de dados com um modelo usando o serviço de saída por meio do mecanismo de pastas monitoradas.
 
-O serviço de saída é um serviço OSGi que faz parte dos Serviços de documento AEM. O serviço de saída é compatível com vários formatos de saída e recursos de design de saída do AEM Forms Designer. O serviço de saída pode converter modelos XFA e dados XML para gerar documentos de impressão em vários formatos.
+O serviço de saída é um serviço OSGi que faz parte dos Serviços de documento da AEM. O serviço de saída é compatível com vários formatos de saída e recursos de design de saída do AEM Forms Designer. O serviço de saída pode converter modelos XFA e dados XML para gerar documentos de impressão em vários formatos.
 
 Para saber mais sobre o serviço de saída, [clique aqui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Para configurar a pasta monitorada no seu sistema, siga as etapas abaixo:

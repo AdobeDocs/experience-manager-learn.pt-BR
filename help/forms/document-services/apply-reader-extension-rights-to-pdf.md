@@ -1,7 +1,7 @@
 ---
 title: Aplicar direitos de uso ao pdf carregado
 description: Aplicar direitos de uso ao pdf
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Reader Extensions
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Aplicação de extensões do Reader
 
-As extensões do Reader permitem manipular os direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões do Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Adobe Reader pode executar as operações habilitadas para esse documento.
+As extensões do Reader permitem manipular direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões do Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos do PDF com direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento do PDF com direitos ativados no Adobe Reader pode executar as operações ativadas para esse documento.
 
 Para realizar esse caso de uso, precisamos fazer o seguinte:
-* [Adicionar o certificado de Extensões Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ao usuário `fd-service`.
+* [Adicionar o certificado de Extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ao usuário `fd-service`.
 
 ## Criar serviço OSGi personalizado
 
@@ -207,7 +207,7 @@ Para testar isso no servidor local, siga as seguintes etapas:
 1. [Baixe e instale o Pacote ares.ares.core-ares](assets/ares.ares.core-ares.jar). Ele tem o serviço personalizado e o servlet para aplicar os direitos de uso e transmitir o pdf de volta.
 1. [Importe as bibliotecas do cliente e o envio personalizado](assets/applyaresdemo.zip)
 1. [Importar o formulário adaptável](assets/applyaresform.zip)
-1. Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;**ares**&quot;.
+1. Adicionar o certificado de extensões do Reader ao usuário &quot;fd-service&quot;. Verifique se o alias é &quot;**ares**&quot;.
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
-1. Selecione os direitos apropriados e faça upload do arquivo PDF
-1. Clique em Enviar para obter o PDF estendido do Reader
+1. Selecione os direitos apropriados e faça upload do arquivo do PDF
+1. Clique em Enviar para obter o Reader Extended PDF

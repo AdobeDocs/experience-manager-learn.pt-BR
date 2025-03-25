@@ -1,16 +1,16 @@
 ---
-title: Acionar fluxo de trabalho de AEM no envio do formulário HTML5 - Manipular o envio do formulário
-description: Saiba como acionar o fluxo de trabalho do AEM quando o formulário HTML5 é enviado e armazenar os dados enviados no repositório.
+title: Acionar o fluxo de trabalho do AEM no envio do formulário do HTML5 - Manipular o envio do formulário
+description: Saiba como acionar o fluxo de trabalho do AEM quando o formulário do HTML5 é enviado e armazenar os dados enviados no repositório.
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
 duration: 116
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 # Armazenar dados enviados
 
 A próxima etapa é armazenar os dados enviados no repositório do autor do AEM. O servlet montado em `/bin/startworkflow` salva os dados enviados.
-Um inicializador de fluxo de trabalho de AEM é configurado para disparar sempre que um novo recurso do tipo `nt:file` for criado no nó &lt;node_to_store_submit_data>. Esse fluxo de trabalho criará um PDF não interativo ou estático ao mesclar os dados enviados com o modelo xdp. O pdf gerado é então atribuído a um usuário para análise e aprovação.
+Um iniciador de fluxo de trabalho do AEM é configurado para disparar sempre que um novo recurso do tipo `nt:file` for criado no nó &lt;node_to_store_submit_data>. Esse fluxo de trabalho criará um PDF não interativo ou estático ao mesclar os dados enviados com o modelo xdp. O pdf gerado é então atribuído a um usuário para análise e aprovação.
 
 Para armazenar os dados enviados no nó &lt;node_to_store_submit_data>, usamos o serviço OSGi `GetResolver`, que nos permite salvar os dados enviados usando o usuário do sistema `fd-service` disponível em cada instalação do AEM Forms.
 

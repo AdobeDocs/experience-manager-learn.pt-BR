@@ -2,14 +2,14 @@
 title: Melhorias no editor de formulários no AEM Forms
 description: O AEM 6.3 apresenta vários novos recursos e melhorias nesta versão para simplificar a experiência de criação de formulários e documentos adaptáveis. As melhorias ajudam a reduzir o tempo de comercialização e permitem que os usuários empresariais trabalhem com formulários e documentos
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
 duration: 522
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%

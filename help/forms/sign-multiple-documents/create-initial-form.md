@@ -2,7 +2,7 @@
 title: Criar o formulário inicial para acionar o processo
 description: Crie o formulário inicial para acionar a notificação por email para iniciar o processo de assinatura.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Intermediate
@@ -10,16 +10,16 @@ jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
 duration: 35
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 # Criar formulário inicial
 
-O formulário inicial (Formulário de Refinanciamento) é usado para assinar vários formulários acionando o fluxo de trabalho AEM **Assinar vários Forms**. Você pode inserir valores de sua escolha, mas garantir que os seguintes campos sejam adicionados ao formulário.
+O formulário inicial (Formulário de Refinanciamento) é usado para assinar vários formulários acionando o fluxo de trabalho do AEM **Assinar vários Forms**. Você pode inserir valores de sua escolha, mas garantir que os seguintes campos sejam adicionados ao formulário.
 
 | Tipo de campo | Nome | Propósito | Oculto | Valor padrão |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |

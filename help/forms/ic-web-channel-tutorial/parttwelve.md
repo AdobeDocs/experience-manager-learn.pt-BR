@@ -3,14 +3,14 @@ title: Configuração da entrega do documento de canal da Web
 description: Esta é a parte final de um tutorial em várias etapas para criar seu primeiro documento de comunicações interativas. Nesta parte, analisamos a entrega de documentos de canal da Web por email.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

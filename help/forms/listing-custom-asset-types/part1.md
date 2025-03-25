@@ -3,7 +3,7 @@ title: Registro de tipos de ativos personalizados
 description: Habilitação de tipos de ativos personalizados para listagem no Portal do AEM Forms
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
 last-substantial-update: 2019-07-11T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Habilitação de tipos de ativos personalizados para listagem no Portal do AEM F
 
 >[!NOTE]
 >
->Verifique se o AEM 6.3 com SP1 e o AEM Forms Add On correspondente estão instalados. Esse recurso só funciona com o AEM Forms 6.3 SP1 e superior
+>Verifique se o AEM 6.3 com SP1 e o complemento do AEM Forms correspondente estão instalados. Esse recurso só funciona com o AEM Forms 6.3 SP1 e superior
 
 ## Especificar caminho base {#specify-base-path}
 
@@ -52,10 +52,10 @@ Ao especificar a propriedade do caminho para **&quot;/content/dam&quot;**, você
 
 Adicionamos uma nova guia (Listagem de ativos) no componente de pesquisa e lista. Essa guia listará tipos de ativos prontos para uso e tipos de ativos adicionais que você configurar. Por padrão, os seguintes tipos de ativos são listados
 
-1. Adaptive Forms
+1. Formulários adaptáveis
 1. Modelos de formulário
 1. PDF forms
-1. Documento(PDF estáticos)
+1. Documento (PDFs estáticos)
 
 **Etapas para registrar o tipo de ativo personalizado**
 

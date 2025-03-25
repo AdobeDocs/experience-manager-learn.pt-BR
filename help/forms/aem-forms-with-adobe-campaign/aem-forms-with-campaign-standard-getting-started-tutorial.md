@@ -2,7 +2,7 @@
 title: Integrar o AEM Forms e o Adobe Campaign Standard
 description: Integre o AEM Forms com o Adobe Campaign Standard usando o modelo de dados do formulário do AEM Forms para buscar informações de perfil da campanha do ACS etc.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 44
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Para integrar o AEM Forms com ACS, você precisará seguir as seguintes etapas:
 
 * [Configure o acesso à API na sua instância do ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * Criar JSON Web Token.
-* Troque o JSON Web Token pelo serviço Adobe Identity Management por um token de acesso.
+* Troque o JSON Web Token pelo Adobe Identity Management Service por um token de acesso.
 * Inclua esse Token de acesso no Cabeçalho HTTP de autorização, juntamente com a X-API-Key em cada solicitação para a instância ACS.
 
 Para começar, siga as instruções a seguir

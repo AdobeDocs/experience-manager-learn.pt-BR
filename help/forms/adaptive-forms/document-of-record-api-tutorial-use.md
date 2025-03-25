@@ -2,14 +2,14 @@
 title: Utilização da API para gerar um documento de registro com o AEM Forms
 description: Gerar documento de registro (DOR) de forma programática
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -77,9 +77,9 @@ Para experimentar isso em seu sistema local, siga as etapas a seguir
 
 **Dicas de Solução de Problemas**
 
-o PDF não é exibido na nova guia do navegador:
+O PDF não é exibido na nova guia do navegador:
 
 1. Verifique se você não está bloqueando os pop-ups do seu navegador
-1. Verifique se você está iniciando o servidor AEM como administrador (pelo menos no Windows)
+1. Verifique se você está iniciando o servidor do AEM como administrador (pelo menos no Windows)
 1. Verifique se o pacote &#39;DevelopingWithServiceUser&#39; está no *estado ativo*
 1. [Verifique se o usuário do sistema](http://localhost:4502/useradmin) &#39; fd-service&#39; tem permissões de Leitura, Modificação e Criação no seguinte nó `/content/usergenerated/content/aemformsenablement`

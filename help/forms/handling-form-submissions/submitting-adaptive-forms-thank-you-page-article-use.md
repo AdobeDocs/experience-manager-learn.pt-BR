@@ -3,7 +3,7 @@ title: Enviando Para A Página De Agradecimento
 description: Exibir uma página de agradecimento ao enviar o Formulário adaptável
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 51
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
@@ -30,13 +30,13 @@ Na captura de tela abaixo, estamos enviando o formulário adaptável para a pág
 
 ![Página de agradecimento](assets/thankyoupage.gif)
 
-Também é possível enviar para o endpoint externo por meio do POST. Para fazer isso, basta marcar a caixa de seleção &quot;habilitar solicitação post&quot; e fornecer o URL para o endpoint externo. Ao enviar o formulário, você recebe uma página de agradecimento e o ponto de extremidade POST é chamado simultaneamente.
+Também é possível enviar para o endpoint externo via POST. Para fazer isso, basta marcar a caixa de seleção &quot;habilitar solicitação post&quot; e fornecer o URL para o endpoint externo. Ao enviar seu formulário, você recebe uma página de agradecimento e o terminal POST é chamado simultaneamente.
 
 ![Capturar configuração](assets/capture.gif)
 
 Para testar esse recurso no servidor, siga as instruções mencionadas abaixo:
 
-* Importar o [arquivo de ativos associado a este artigo para AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
+* Importar o [arquivo de ativos associado a este artigo para o AEM usando o gerenciador de pacotes](assets/submittingtorestendpoint.zip)
 * Aponte seu navegador para o [Formulário de solicitação de folga](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Preencha o campo obrigatório e envie o formulário
 * Você deve receber a página de agradecimento com suas informações preenchidas na página

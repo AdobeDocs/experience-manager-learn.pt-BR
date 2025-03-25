@@ -2,14 +2,14 @@
 title: Gerar PDF a partir do envio de formulário HTM5
 description: Gerar PDF a partir do envio de formulário para dispositivos móveis
 feature: Mobile Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 132
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Gerar PDF a partir do envio de formulário HTM5 {#generate-pdf-from-htm-form-submission}
 
-Este artigo o guiará pelas etapas relativas à geração de pdf a partir do envio de um formulário HTML5(também conhecido como Forms móvel). Esta demonstração também explicará as etapas necessárias para adicionar uma imagem ao formulário HTML5 e mesclar a imagem no pdf final.
+Este artigo guiará você pelas etapas relativas à geração de PDF a partir do envio de um formulário do HTML5(também conhecido como Forms móvel). Esta demonstração também explicará as etapas necessárias para adicionar uma imagem ao formulário HTML5 e mesclar a imagem no pdf final.
 
 
 Para unir os dados enviados ao modelo xdp, fazemos o seguinte
@@ -79,7 +79,7 @@ $("#file1").click();
 });
 ```
 
-[Perfil Personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Usar o perfil personalizado facilita a manipulação de objetos DOM HTML do formulário móvel. Um elemento de arquivo oculto é adicionado ao HTML.jsp. Quando o usuário clica em &quot;Adicionar sua foto&quot;, acionamos o evento de clique do elemento do arquivo. Isso permite que o usuário navegue e selecione a fotografia a ser anexada. Em seguida, usamos o objeto FileReader do javascript para obter a string codificada em base64 da imagem. A cadeia de caracteres da imagem base64 é armazenada no campo de texto do formulário. Quando o formulário é enviado, extraímos esse valor e o inserimos no elemento img do XML. Esse XML é usado para mesclar com o xdp para gerar o pdf final.
+[Perfil Personalizado](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). Usar o perfil personalizado facilita a manipulação de objetos DOM do HTML do formulário móvel. Um elemento de arquivo oculto é adicionado ao HTML.jsp. Quando o usuário clica em &quot;Adicionar sua foto&quot;, acionamos o evento de clique do elemento do arquivo. Isso permite que o usuário navegue e selecione a fotografia a ser anexada. Em seguida, usamos o objeto FileReader do javascript para obter a string codificada em base64 da imagem. A cadeia de caracteres da imagem base64 é armazenada no campo de texto do formulário. Quando o formulário é enviado, extraímos esse valor e o inserimos no elemento img do XML. Esse XML é usado para mesclar com o xdp para gerar o pdf final.
 
 O perfil personalizado usado para este artigo foi disponibilizado para você como parte dos ativos deste artigo.
 
@@ -116,8 +116,8 @@ Para testar esse recurso em seu próprio servidor, siga as seguintes etapas:
 
 * [Baixe e instale o pacote associado a este artigo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Verifique se a URL de envio e o perfil de Renderização de HTML estão definidos corretamente ao visualizar a página de propriedades do [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Verifique se a URL de envio e o perfil de Renderização do HTML estão definidos corretamente ao visualizar a página de propriedades do [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Visualizar o XDP como html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* Adicione uma imagem ao formulário e envie. Você deve ter PDF de volta com a imagem nele.
+* Adicione uma imagem ao formulário e envie. Você deve recuperar a PDF com a imagem nela.

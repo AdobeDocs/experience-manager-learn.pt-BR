@@ -2,7 +2,7 @@
 title: Criar serviço OSGi
 description: Criar serviço OSGi para armazenar os formulários a serem assinados
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6886.jpg
 jira: KT-6886
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -131,7 +131,7 @@ public String getFormData(String guid) {
 
 ## Atualizar Status da Assinatura
 
-A conclusão com êxito da cerimônia de assinatura aciona um fluxo de trabalho de AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados para a linha identificada pela guid e ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável é preenchido com esses dados e o valor do elemento de dados assinado nos dados xml é usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa de processo personalizada.
+A conclusão com êxito da cerimônia de assinatura aciona um fluxo de trabalho do AEM associado ao formulário. A primeira etapa do fluxo de trabalho é uma etapa do processo que atualiza o status no banco de dados para a linha identificada pela guid e ID do cliente. Também definimos o valor do elemento assinado nos dados do formulário como Y para indicar que o formulário foi preenchido e assinado. O formulário adaptável é preenchido com esses dados e o valor do elemento de dados assinado nos dados xml é usado para exibir a mensagem apropriada. O código updateSignatureStatus é chamado da etapa de processo personalizada.
 
 
 ```java

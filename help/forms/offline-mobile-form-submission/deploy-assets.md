@@ -1,9 +1,9 @@
 ---
-title: Acionar o fluxo de trabalho de AEM no envio do formulário HTML5 - Colocando o caso de uso em funcionamento
+title: Acionar o fluxo de trabalho do AEM no envio do formulário do HTML5 - Colocando o caso de uso em funcionamento
 description: Implante os ativos de amostra no sistema local
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-16133
 exl-id: 79935ef0-bc73-4625-97dd-767d47a8b8bb
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 90
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Adicione a seguinte entrada no serviço Mapeador de usuários do Apache Sling Se
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 ```
 
-* Você pode armazenar os envios de formulários em uma pasta diferente especificando o nome da pasta na configuração de Credenciais do Servidor AEM usando o [configMgr](http://localhost:4502/system/console/configMg). Se você alterar a pasta, crie um inicializador na pasta para acionar o fluxo de trabalho **ReviewSubmittedPDF**
+* Você pode armazenar os envios de formulários em uma pasta diferente especificando o nome da pasta na configuração de Credenciais do AEM Server usando o [configMgr](http://localhost:4502/system/console/configMg). Se você alterar a pasta, crie um inicializador na pasta para acionar o fluxo de trabalho **ReviewSubmittedPDF**
 
 ![config-author](assets/author-config.png)
 * [Importe o xdp de exemplo e o pacote de fluxo de trabalho usando o gerenciador de pacotes](assets/xdp-form-and-workflow.zip).
@@ -49,7 +49,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
 * [Instalar o pacote MobileFormToWorkflow](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* Especifique o nome de usuário/senha para a instância do autor e um **local existente em seu repositório AEM** para armazenar os dados enviados nas credenciais do Servidor AEM usando o [configMgr](http://localhost:4503/system/console/configMgr). Você pode deixar o URL do endpoint no servidor de fluxo de trabalho AEM como está. Esse é o endpoint que extrai e armazena os dados do envio no nó especificado.
+* Especifique o nome de usuário/senha para a instância do autor e um **local existente em seu repositório do AEM** para armazenar os dados enviados nas credenciais do AEM Server usando o [configMgr](http://localhost:4503/system/console/configMgr). Você pode deixar o URL do endpoint no servidor do fluxo de trabalho do AEM como está. Esse é o endpoint que extrai e armazena os dados do envio no nó especificado.
   ![publish-config](assets/publish-config.png)
 
 * [Implantar o pacote Desenvolvendo com Usuário de Serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
@@ -64,13 +64,13 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * [Edite as propriedades avançadas de w9.xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/w9.xdp). Verifique se o url de envio e o perfil de renderização estão definidos corretamente, conforme mostrado abaixo.
   ![propriedades-avançadas-xdp](assets/mobile-form-properties.png)
 
-* Publish, o w9.xdp
+* Publicar o w9.xdp
 * Faça logon para publicar a instância
 * [Visualizar o formulário w9](http://localhost:4503/content/dam/formsanddocuments/w9.xdp/jcr:content)
 * Preencha vários campos e clique no botão na barra de ferramentas para baixar o PDF interativo.
-* Preencha o PDF baixado usando o Acrobat e pressione o botão enviar.
+* Preencha o PDF baixado usando o Acrobat e clique no botão Enviar.
 * Você deve receber uma mensagem de sucesso
-* Fazer logon na instância do autor do AEM como administrador
+* Faça logon na instância do autor do AEM como administrador
 * [Verificar a Caixa de Entrada do AEM](http://localhost:4502/aem/inbox)
 * Você deve ter um item de trabalho para revisar o PDF enviado
 

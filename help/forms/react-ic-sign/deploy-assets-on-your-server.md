@@ -2,7 +2,7 @@
 title: Implantar os ativos de amostra no servidor
 description: Fazer com que o caso de uso funcione no servidor local
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: f12f83fa-673a-454c-aa52-6ea769a182b7
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Os ativos/configurações a seguir foram implantados em um servidor de publicação do AEM Forms.
 
-* [Pacote Adobe Sign Wrapper](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
+* [Pacote do Adobe Sign Wrapper](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Modelo de comunicação interativa de amostra](assets/waiver-interactive-communication.zip)
 * [Implantar o pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
@@ -57,8 +57,8 @@ Abra o arquivo EmergencyContact.js e altere o URL no método de busca para corre
  
 ```
 
-Para habilitar a realização de chamadas de POST para o endpoint AEM a partir do aplicativo REACT, será necessário especificar as entradas apropriadas no campo Origens permitidas na configuração da Política de compartilhamento de recursos entre origens do Adobe Granite.
+Para permitir fazer chamadas POST para o endpoint do AEM a partir do aplicativo REACT, será necessário especificar as entradas apropriadas no campo Origens permitidas na configuração da Política de compartilhamento de recursos entre origens do Adobe Granite.
 
 ![configuração de cors](assets/cors-settings.png)
 
-Consulte [noções básicas sobre o CORS com AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obter mais detalhes sobre as opções de configuração do CORS.
+Consulte [noções básicas sobre o CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obter mais detalhes sobre as opções de configuração do CORS.

@@ -2,7 +2,7 @@
 title: Listas suspensas em cascata
 description: Preencha as listas suspensas com base em uma seleção de lista suspensa anterior.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9724
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -66,7 +66,7 @@ A integração de dados do AEM Forms fornece uma interface de usuário intuitiva
 
 ## Criar formulário adaptável
 
-Integre as GET do modelo de dados de formulário ao seu formulário adaptável para preencher as listas suspensas.
+Integre as invocações do GET do modelo de dados de formulário ao seu formulário adaptável para preencher as listas suspensas.
 Crie um formulário adaptável com duas listas suspensas. Um para listar os países e um para listar os estados/províncias dependendo do país selecionado.
 
 ### Lista suspensa Preencher países

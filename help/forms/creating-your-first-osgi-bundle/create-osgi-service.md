@@ -2,14 +2,14 @@
 title: Criação do seu primeiro serviço OSGi com o AEM Forms
 description: Crie seu primeiro serviço OSGi com o AEM Forms
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 87
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -88,9 +88,9 @@ A anotação `@Reference` faz parte dos serviços declarativos OSGi e é usada p
 * Abrir **janela do prompt de comando**
 * Navegue até `c:\aemformsbundles\mysite\core`
 * Executar o comando `mvn clean install -PautoInstallBundle`
-* O comando acima criará e implantará automaticamente o pacote na instância do AEM em execução em localhost:4502
+* O comando acima criará e implantará automaticamente o pacote em sua instância do AEM em execução em localhost:4502
 
-O pacote também estará disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [console da Web Felix.](http://localhost:4502/system/console/bundles)
+O pacote também estará disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [Felix web console.](http://localhost:4502/system/console/bundles)
 
 ## Uso do serviço
 
@@ -109,7 +109,7 @@ O pacote de exemplo contendo a página JSP pode ser [baixado daqui](assets/learn
 
 Importe e instale o pacote no AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 
-Use o carteiro para fazer uma chamada de POST e fornecer os parâmetros de entrada, conforme mostrado na captura de tela abaixo
+Use o carteiro para fazer uma chamada de POST e fornecer os parâmetros de entrada conforme mostrado na captura de tela abaixo
 ![carteiro](assets/test-service-postman.JPG)
 
 ## Próximas etapas

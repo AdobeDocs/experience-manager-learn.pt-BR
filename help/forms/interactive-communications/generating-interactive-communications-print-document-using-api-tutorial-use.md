@@ -3,14 +3,14 @@ title: Gerar documento de comunicações interativas para canal de impressão us
 description: Usar pasta monitorada para gerar documentos de canal de impressão
 feature: Interactive Communication
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -115,7 +115,7 @@ Verifique se esse usuário do sistema tem permissões de leitura no nó a seguir
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importe os seguintes pacotes para o AEM usando o gerenciador de pacotes. Este pacote contém o seguinte:
+* Importe o(s) seguinte(s) pacote(s) para o AEM usando o gerenciador de pacotes. Este pacote contém o seguinte:
 
 
 * [Exemplo de documento de comunicações interativas](assets/retirementstatementprint.zip)
@@ -142,7 +142,7 @@ Verifique se esse usuário do sistema tem permissões de leitura no nó a seguir
 
 * Solte o arquivo accountnumbers.xml na pasta C:\RenderPrintChannel\input.
 
-* Os arquivos de PDF gerados são gravados no saveLocation conforme especificado no script ecma.
+* Os arquivos PDF gerados são gravados no saveLocation conforme especificado no script ecma.
 
 >[!NOTE]
 >

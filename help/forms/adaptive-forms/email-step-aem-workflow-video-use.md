@@ -1,22 +1,22 @@
 ---
-title: Utilização da etapa Enviar e-mail do Forms Workflow
+title: Etapa de envio de e-mail do Forms Workflow
 description: A etapa Enviar email foi introduzida no AEM Forms 6.4. Usando esta etapa, podemos criar processos de negócios ou fluxo de trabalho que permitirão enviar emails com ou sem anexos. O vídeo a seguir mostra as etapas para configurar o componente de envio de email
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 21e58bbc-c1d6-4d41-a4d4-f522a3a5d4a7
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
-# Utilização da etapa Enviar e-mail do Forms Workflow {#using-send-email-step-of-forms-workflow}
+# Etapa de envio de e-mail do Forms Workflow {#using-send-email-step-of-forms-workflow}
 
 A etapa Enviar email foi introduzida no AEM Forms 6.4. Usando esta etapa, podemos criar processos de negócios ou fluxo de trabalho que permitirão enviar emails com ou sem anexos. O vídeo a seguir mostra as etapas para configurar o componente de envio de email.
 
@@ -25,8 +25,8 @@ A etapa Enviar email foi introduzida no AEM Forms 6.4. Usando esta etapa, podemo
 Como parte deste artigo, guiaremos você pelo seguinte caso de uso:
 
 1. Um usuário preenche o Formulário de solicitação de folga
-1. No envio do formulário, o fluxo de trabalho de AEM é acionado
-1. O fluxo de trabalho do AEM utiliza o componente Enviar email para enviar um email com o DoR como um anexo
+1. No envio do formulário, o fluxo de trabalho do AEM é acionado
+1. O fluxo de trabalho do AEM usa o componente Enviar email para enviar um email com o DoR como um anexo
 
 Antes de usar a etapa Enviar Email, configure o Serviço de Email Day CQ do [configMgr](http://localhost:4502/system/console/configMgr). Forneça os valores específicos do seu ambiente
 
@@ -54,7 +54,7 @@ Consulte a etapa do processo do fluxo de trabalho. O código personalizado assoc
 
 >[!NOTE]
 >
->No AEM Forms 6.5 e superior, você não precisa desse código personalizado para criar propriedades de metadados. Use o recurso de variáveis no fluxo de trabalho do AEM
+>No AEM Forms 6.5 e superior, você não precisa desse código personalizado para criar propriedades de metadados. Use o recurso de variáveis no AEM Workflow
 
 Verifique se a guia Anexos do componente Enviar email está configurada de acordo com a captura de tela abaixo
 ![Guia Enviar Anexo de Email](assets/sendemailcomponentconfigure.jpg)O valor &quot;DOR.pdf&quot; deve corresponder ao valor especificado no Caminho do Documento de Registro especificado nas opções de envio do formulário adaptável.

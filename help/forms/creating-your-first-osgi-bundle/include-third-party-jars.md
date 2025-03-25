@@ -1,7 +1,7 @@
 ---
 title: Incluindo jars de terceiros
-description: Saiba como usar o arquivo jar de terceiros no projeto AEM
-version: 6.4,6.5
+description: Saiba como usar o arquivo jar de terceiros no seu projeto do AEM
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -11,16 +11,16 @@ last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# Incluir pacotes de terceiros em seu projeto AEM
+# Incluir pacotes de terceiros em seu projeto do AEM
 
-Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no projeto AEM.Para o propósito deste artigo, incluiremos o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
+Neste artigo, abordaremos as etapas envolvidas na inclusão do pacote OSGi de terceiros no projeto do AEM. Para o propósito deste artigo, incluiremos o [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) no nosso projeto do AEM.  Se o OSGi estiver disponível no repositório Maven, inclua a dependência do pacote no arquivo POM.xml do projeto.
 
 >[!NOTE]
 > Pressupõe-se que o jar de terceiros seja um pacote OSGi
@@ -48,7 +48,7 @@ Se o pacote OSGi estiver no sistema de arquivos, crie uma pasta chamada **localj
 
 ## Criar a estrutura de pastas
 
-Estamos adicionando este pacote ao nosso projeto AEM **AEMFormsProcessStep** que reside na pasta **c:\aemformsbundles**
+Estamos adicionando este pacote ao nosso projeto do AEM **AEMFormsProcessStep**, que reside na pasta **c:\aemformsbundles**
 
 * Abra o **filter.xml** da pasta C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault do seu projeto
 Anote o atributo raiz do elemento de filtro.

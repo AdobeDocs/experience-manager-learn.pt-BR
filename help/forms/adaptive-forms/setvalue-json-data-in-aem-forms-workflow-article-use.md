@@ -1,15 +1,15 @@
 ---
 title: Configuração do valor do elemento de dados Json no fluxo de trabalho do AEM Forms
-description: Como um formulário adaptável é roteado para diferentes usuários no fluxo de trabalho do AEM, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base no valor desse campo oculto, as regras de negócios podem ser criadas para ocultar/desativar painéis ou campos apropriados.
+description: Como um Formulário adaptável é roteado para diferentes usuários no Fluxo de trabalho do AEM, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base no valor desse campo oculto, as regras de negócios podem ser criadas para ocultar/desativar painéis ou campos apropriados.
 feature: Adaptive Forms
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configuração do valor do elemento de dados JSON no fluxo de trabalho do AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Como um formulário adaptável é roteado para diferentes usuários no fluxo de trabalho do AEM, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base no valor desse campo oculto, as regras de negócios podem ser criadas para ocultar/desativar painéis ou campos apropriados.
+Como um Formulário adaptável é roteado para diferentes usuários no Fluxo de trabalho do AEM, há requisitos para ocultar ou desativar determinados campos ou painéis com base na pessoa que revisa o formulário. Para atender a esses casos de uso, normalmente definimos um valor de um campo oculto. Com base no valor desse campo oculto, as regras de negócios podem ser criadas para ocultar/desativar painéis ou campos apropriados.
 
 ![Definindo o valor de um elemento em dados json](assets/capture-3.gif)
 

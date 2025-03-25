@@ -2,14 +2,14 @@
 title: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao criar formulários adaptáveis
 description: Convenções de nomenclatura e práticas recomendadas a serem seguidas ao criar formulários adaptáveis
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
 duration: 57
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Práticas recomendadas
 
-Os formulários Adobe Experience Manager (AEM) podem ajudar você a transformar transações complexas em experiências digitais simples e atraentes. O documento a seguir descreve algumas práticas recomendadas adicionais que precisam ser seguidas ao desenvolver o Adaptive Forms. Este documento deve ser usado em conjunto com [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Os formulários do Adobe Experience Manager (AEM) podem ajudá-lo a transformar transações complexas em experiências digitais simples e atraentes. O documento a seguir descreve algumas práticas recomendadas adicionais que precisam ser seguidas ao desenvolver o Adaptive Forms. Este documento deve ser usado em conjunto com [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenções de nomenclatura
 

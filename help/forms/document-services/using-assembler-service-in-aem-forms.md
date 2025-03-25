@@ -2,14 +2,14 @@
 title: Usando o serviço Assembler no AEM Forms
 description: Uso do Serviço de Assembler no AEM Forms para montar vários arquivos pdf
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Usando o serviço Assembler no AEM Forms{#using-assembler-service-in-aem-forms}
 
-Este artigo fornece os ativos para demonstrar a capacidade de arrastar e soltar vários arquivos PDF no navegador e salvar o arquivo pdf montado no seu sistema de arquivos. Veja a seguir o código do servlet que monta os arquivos pdf carregados por meio do navegador.
+Este artigo fornece os ativos para demonstrar a capacidade de arrastar e soltar vários arquivos PDF no navegador e salvar o arquivo pdf montado em seu sistema de arquivos. Veja a seguir o código do servlet que monta os arquivos pdf carregados por meio do navegador.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -101,7 +101,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-Para que esse recurso funcione no servidor AEM
+Para que esse recurso funcione no AEM Server
 
 * Baixe o [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) no sistema local.
 * Carregue e instale o pacote usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
@@ -109,7 +109,7 @@ Para que esse recurso funcione no servidor AEM
 * Baixar [Desenvolvimento com o Conjunto de Usuários de Serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Implante e inicie os pacotes usando o [felix web console](http://localhost:4502/system/console/bundles)
 * Aponte seu navegador para [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Arraste e solte alguns arquivos de PDF
+* Arraste e solte alguns arquivos do PDF
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Para que esse recurso funcione no servidor AEM
 >
 >**Avisos para esta demonstração**
 >
-> * O código não lida com documentos PDF baseados em XFA
+> * O código não lida com documentos do PDF baseados em XFA
 >
 > * Certifique-se de arrastar e soltar somente arquivos PDF
 >

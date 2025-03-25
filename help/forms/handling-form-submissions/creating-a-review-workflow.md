@@ -3,7 +3,7 @@ title: Criação de um fluxo de trabalho para revisar os dados enviados
 description: Criação do modelo de fluxo de trabalho do AEM usando componentes de fluxo de trabalho do AEM Forms para revisar dados enviados.
 feature: Workflow
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-4271
 thumbnail: 40242.jpg
 topic: Development
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 1046
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Criação de um fluxo de trabalho para revisar os dados enviados
 
-Os workflows geralmente são usados para rotear dados enviados para revisão e aprovação. Os workflows são criados usando o editor de workflow no AEM. Os fluxos de trabalho podem ser acionados no envio do Formulário adaptável.
+Os workflows geralmente são usados para rotear dados enviados para revisão e aprovação. Os fluxos de trabalho são criados usando o editor de fluxo de trabalho no AEM. Os fluxos de trabalho podem ser acionados no envio do Formulário adaptável.
 
 ## Pré-requisitos
 

@@ -2,7 +2,7 @@
 title: Autenticação de dois fatores do SMS
 description: Adicione uma camada extra de segurança para ajudar a confirmar a identidade de um usuário quando ele quiser executar determinadas atividades
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6317
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -59,13 +59,13 @@ O modelo de dados do formulário preenchido pode ser [baixado daqui](assets/sms-
 
 ## Criar formulário adaptável
 
-Integre as invocações POST do Modelo de dados de formulário ao formulário adaptável para verificar o número do celular inserido pelo usuário no formulário. Você pode criar seu próprio formulário adaptável e usar a invocação de POST do modelo de dados de formulário para enviar e verificar o código OTP de acordo com seus requisitos.
+Integre as invocações POST do Modelo de dados de formulário ao seu formulário adaptável para verificar o número de telefone celular inserido pelo usuário no formulário. Você pode criar seu próprio formulário adaptável e usar a invocação POST do modelo de dados de formulário para enviar e verificar o código OTP de acordo com seus requisitos.
 
 Se quiser usar os ativos de amostra com suas chaves de API, siga as seguintes etapas:
 
-* [Baixar o modelo de dados de formulário](assets/sms-2fa-fdm.zip) e importar para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Baixe o modelo de dados de formulário](assets/sms-2fa-fdm.zip) e importe para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * Baixe o formulário adaptável de exemplo pode ser [baixado daqui](assets/sms-2fa-verification-af.zip). Este formulário de amostra usa as invocações de serviço do modelo de dados de formulário fornecido como parte deste artigo.
-* Importar o formulário para o AEM da [Interface do usuário do Forms e do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importar o formulário para o AEM da [Forms e da Interface do Usuário do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abra o formulário no modo de edição. Abra o editor de regras do seguinte campo
 
 ![sms-send](assets/check-sms.PNG)

@@ -3,13 +3,13 @@ title: Armazenamento e recuperação de dados de formulário do banco de dados M
 description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas no armazenamento e na recuperação de dados de formulário
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
 duration: 90
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Criar biblioteca do cliente
 
-A Biblioteca cliente AEM gerencia todo o código JavaScript do lado do cliente. Neste artigo, criei uma JavaScript simples para buscar os dados do Formulário adaptável usando a API de ponte do guia. Depois que os dados do formulário adaptável forem obtidos, a chamada de POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, precisaremos executar a operação de atualização, caso contrário, será uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento de clique da classe .savebutton.
+A Biblioteca do cliente da AEM gerencia todo o código JavaScript do lado do cliente. Neste artigo, criei uma JavaScript simples para buscar os dados do Formulário adaptável usando a API de ponte do guia. Depois que os dados do formulário adaptável forem obtidos, a chamada POST é feita ao servlet para inserir ou atualizar os dados do formulário adaptável no banco de dados. A função getALLUrlParams retorna os parâmetros no URL. Se o parâmetro guid estiver presente no URL, precisaremos executar a operação de atualização, caso contrário, será uma operação de inserção. O restante da funcionalidade é tratado no código associado ao evento de clique da classe .savebutton.
 
 >[!NOTE]
 >

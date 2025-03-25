@@ -3,14 +3,14 @@ title: Gerar documento de canal de impressão mesclando dados
 description: Saiba como gerar documento de canal de impressão mesclando dados contidos no fluxo de entrada
 feature: Interactive Communication
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -65,7 +65,7 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### Criar implementação WorkflowProcess
 
-O trecho de código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no fluxo de trabalho AEM é associada a essa implementação. Esta implementação espera três argumentos de processo que são descritos abaixo:
+O trecho de código de implementação workflowProcess é mostrado abaixo. Esse código é executado quando a etapa do processo no fluxo de trabalho do AEM é associada a esta implementação. Esta implementação espera três argumentos de processo que são descritos abaixo:
 
 * Nome do caminho de DataFile especificado ao configurar o Formulário adaptável
 * Nome do modelo de canal de impressão
@@ -167,16 +167,16 @@ Para testar isso no servidor, siga as seguintes etapas:
 * Verifique se você adicionou a seguinte entrada na configuração do serviço do mapeador de usuário do Apache Sling Service
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Baixe e descompacte os ativos relacionados a este artigo no seu sistema de arquivos](assets/prefillservice.zip)
-* [Importe os seguintes pacotes usando o Gerenciador de pacotes AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importe os seguintes pacotes usando o Gerenciador de pacotes do AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Implante o seguinte usando o Console Web AEM Felix](http://localhost:4502/system/console/bundles)
+* [Implante o seguinte usando o Console da Web AEM Felix](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar Este pacote contém o código mencionado neste artigo.
 
 * [Abrir ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Verifique se o formulário adaptável está configurado para enviar ao Fluxo de trabalho do AEM conforme mostrado abaixo
+* Verifique se o formulário adaptável está configurado para enviar para o fluxo de trabalho do AEM, conforme mostrado abaixo
   ![imagem](assets/generateic.PNG)
 * [Configure o modelo de fluxo de trabalho.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifique se a etapa do processo e os componentes de email de envio estão configurados de acordo com o seu ambiente
 * [Visualizar o ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Preencha alguns detalhes e envie

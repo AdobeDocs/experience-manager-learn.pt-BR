@@ -1,26 +1,26 @@
 ---
-title: Configuração do DataSource com o Salesforce no AEM Forms 6.3 e 6.4
+title: Configuração da fonte de dados com o Salesforce no AEM Forms 6.3 e 6.4
 description: Integração do AEM Forms com o Salesforce usando o modelo de dados de formulário
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
 last-substantial-update: 2020-02-14T00:00:00Z
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
-# Configuração do DataSource com o Salesforce no AEM Forms 6.3 e 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
+# Configuração da fonte de dados com o Salesforce no AEM Forms 6.3 e 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
 
 ## Pré-requisitos {#prerequisites}
 
-Neste artigo, abordamos o processo de criação do Data Source com Salesforce
+Neste artigo, abordamos o processo de criação do Data Source com o Salesforce
 
 Pré-requisitos para este tutorial:
 
@@ -39,7 +39,7 @@ Pré-requisitos para este tutorial:
 
    * Se estiver usando o** AEM Forms 6.4**, o URL de retorno de chamada será https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
-Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta na qual o AEM está sendo executado.
+Neste exemplo, gbedekar -w7-1:6443 é o nome do meu servidor e a porta em que o AEM está sendo executado.
 
 Depois de criar o Aplicativo Conectado, anote a **Chave do Consumidor e a Chave Secreta**. Você precisa delas ao criar a fonte de dados no AEM Forms.
 
@@ -73,13 +73,13 @@ A próxima etapa é criar o Data Source no AEM Forms. Siga as etapas a seguir de
 * Manipulador de autenticação: portador de autorização
 * Clique em &quot;Conectar ao OAUTH&quot;. Se tudo correr bem, você não deve ver nenhum erro
 
-Depois de criar seu Modelo de dados de formulário usando o Salesforce, você poderá criar a Integração de dados de formulário usando o Data Source que acabou de criar. A documentação oficial para criar a Integração de dados de formulário está [aqui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Depois de criar o modelo de dados de formulário usando o Salesforce, você pode criar a Integração de dados de formulário usando o Source de dados recém-criado. A documentação oficial para criar a Integração de dados de formulário está [aqui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 
 Você também precisará configurar o Serviço de Leitura e Gravação para o objeto de cliente potencial. Consulte as capturas de tela na parte inferior desta página.
 
-Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Forms com base nesse modelo e usar os métodos de envio do modelo de dados de formulário para criar um cliente potencial no SFDC.
+Depois de criar o Modelo de dados de formulário, você pode criar o Forms adaptável com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar um cliente potencial no SFDC.
 
 ## AEM Forms 6.4 {#aem-forms-1}
 
@@ -106,17 +106,17 @@ Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Fo
    * Manipulador de autenticação: portador de autorização
    * Clique no botão &quot;Conectar ao OAuth&quot;. Caso veja algum erro, revise as etapas anteriores para garantir que todas as informações foram inseridas com precisão.
 
-Depois de criar o Data Source usando o SalesForce, você poderá criar a Integração de dados de formulário usando o Data Source que acabou de criar. O link da documentação para isso está [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Depois de criar o Data Source usando o Salesforce, você pode criar a Integração de dados de formulário usando o Data Source que acabou de criar. O link da documentação para isso está [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 
 Você também precisará configurar o Serviço de Leitura e Gravação para o objeto de cliente potencial. Consulte as capturas de tela na parte inferior desta página.
 
-Depois de criar o modelo de dados de formulário, você pode criar o Adaptive Forms com base nesse modelo e usar os métodos de envio do modelo de dados de formulário para criar um cliente potencial no SFDC.
+Depois de criar o Modelo de dados de formulário, você pode criar o Forms adaptável com base nesse modelo e usar os métodos de envio do Modelo de dados de formulário para criar um cliente potencial no SFDC.
 
 >[!NOTE]
 >
->Verifique se o URL no arquivo swagger corresponde à sua região. Por exemplo, o url no arquivo swagger de amostra é &quot;na46.salesforce.com&quot;, pois a conta foi criada na América do Norte. A maneira mais fácil é fazer logon em sua conta do Salesforce e verificar o URL.
+>Verifique se o URL no arquivo swagger corresponde à sua região. Por exemplo, o url no arquivo swagger de amostra é &quot;na46.salesforce.com&quot;, pois a conta foi criada na América do Norte. A maneira mais fácil é fazer logon em sua conta do Salesforce e verificar o url.
 
 ![sfdc1](assets/sfdc1.gif)
 

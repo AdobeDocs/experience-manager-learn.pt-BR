@@ -2,7 +2,7 @@
 title: Montagem de anexos de formulário
 description: Montagem de anexos de formulário na ordem especificada
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6406
 thumbnail: kt-6406.jpg
 topic: Development
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Criar DDX a partir dos nomes dos anexos
 
-Em seguida, precisamos criar o documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço do Assembler para montar documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos XFA antes de serem montados. Observe que os elementos de origem de PDF estão na ordem correta, conforme especificado nos argumentos do processo.
+Em seguida, precisamos criar o documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) que é usado pelo serviço do Assembler para montar documentos. Veja a seguir o DDX que foi criado a partir dos argumentos do processo. O elemento NoForms permite nivelar documentos XFA antes de serem montados. Observe que os elementos de origem do PDF estão na ordem correta, conforme especificado nos argumentos do processo.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -132,11 +132,11 @@ Veja a seguir a estrutura da pasta de carga útil após os anexos de formulário
 
 ![estrutura de carga](assets/payload-structure.JPG)
 
-### Para que esse recurso funcione no servidor AEM
+### Para que esse recurso funcione no AEM Server
 
 * Baixe o [Formulário de anexos de formulário](assets/assemble-form-attachments-af.zip) no sistema local.
 * Importe o formulário da página[Forms e Documentos](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Baixe o [fluxo de trabalho](assets/assemble-form-attachments.zip) e importe para AEM usando o gerenciador de pacotes.
+* Baixe o [fluxo de trabalho](assets/assemble-form-attachments.zip) e importe para a AEM usando o gerenciador de pacotes.
 * Baixar o [pacote personalizado](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Implante e inicie o pacote usando o [console da Web](http://localhost:4502/system/console/bundles)
 * Aponte seu navegador para [Formulário AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)

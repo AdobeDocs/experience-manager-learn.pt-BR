@@ -3,13 +3,13 @@ title: AEM Forms com esquema e dados JSON[Part2]
 description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
 duration: 110
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Para armazenar os dados enviados no banco de dados, gravaremos um servlet para extrair os dados vinculados e o nome e o armazenamento do formulário. O código completo para lidar com o envio do formulário e armazenar o afBoundData no banco de dados é fornecido abaixo.
 
-Criamos um envio personalizado para lidar com o envio do formulário. Neste post.POST.jsp do envio personalizado, encaminhamos a solicitação para nosso servlet.
+Criamos um envio personalizado para lidar com o envio do formulário. No post.POST.jsp deste envio personalizado, encaminhamos a solicitação para nosso servlet.
 
 Para saber mais sobre envio personalizado, leia este [artigo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 

@@ -3,7 +3,7 @@ title: Implantar a amostra
 description: Execute o caso de uso em sua instância local do AEM Forms
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6602
 thumbnail: 6602.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 duration: 186
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -54,7 +54,7 @@ O exemplo usa duas bibliotecas de clientes. Importe estas [bibliotecas de client
 
 ## Importar o modelo de formulário adaptável personalizado
 
-Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importar o [modelo personalizado para AEM](assets/custom-template-with-page-component.zip)
+Os formulários de amostra usados nesta demonstração são baseados em um modelo personalizado. Importar o [modelo personalizado para o AEM](assets/custom-template-with-page-component.zip)
 
 ## Importar os exemplos de formulários adaptáveis
 

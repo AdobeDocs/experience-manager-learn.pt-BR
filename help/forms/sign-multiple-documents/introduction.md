@@ -2,7 +2,7 @@
 title: Introdução
 description: Demonstração em vídeo do caso de uso de assinar vários formulários
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 330165.jpg
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 211
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 3%
@@ -28,10 +28,10 @@ O vídeo a seguir o orienta pelo caso de uso de assinatura de vários formulári
 
 Este curso pressupõe o seguinte:
 
-* Você tem acesso ao servidor AEM 6.4 ou 6.5 com o pacote complementar do Forms instalado e configurado
+* Você tem acesso ao servidor do AEM 6.4 ou 6.5 com o pacote complementar do Forms instalado e configurado
 * AEM configurado com o Acrobat Sign
 * Acesso ao servidor SMTP
-* Alguma experiência com AEM/AEM Forms
+* Alguma experiência com o AEM/AEM Forms
 
 Ao seguir este tutorial e instalar os ativos fornecidos, você terá uma solução de trabalho para assinar vários formulários.
 

@@ -1,15 +1,15 @@
 ---
 title: Preencha previamente o HTML5 Forms usando o atributo de dados.
-description: Preencha formulários HTML5 buscando dados da fonte de back-end.
+description: Preencha os formulários do HTML5 buscando dados da fonte de back-end.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
 duration: 94
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -44,12 +44,12 @@ Quando o XDP está sendo renderizado, você também pode transmitir alguns parâ
 O JSP gravado terá acesso ao parâmetro name por meio do request.getParameter(&quot;name&quot;) . Em seguida, você pode passar o valor desse parâmetro para o processo de back-end para buscar os dados necessários.
 Para que esse recurso funcione em seu sistema, siga as etapas mencionadas abaixo:
 
-* [Baixar e importar os ativos para AEM usando o gerenciador de pacotes](assets/prepopulatemobileform.zip)
+* [Baixe e importe os ativos para a AEM usando o gerenciador de pacotes](assets/prepopulatemobileform.zip)
 O pacote instalará o seguinte
 
    * CustomProfile
    * XDP de exemplo
-   * Exemplo de endpoint de POST que retornará dados para preencher o formulário
+   * Exemplo de terminal POST que retornará dados para preencher o formulário
 
 >[!NOTE]
 >

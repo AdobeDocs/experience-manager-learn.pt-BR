@@ -2,14 +2,14 @@
 title: Entrega do documento de comunicação interativa - AEM Forms do canal da Web
 description: Entrega de documento de canal da Web por link no email
 feature: Interactive Communication
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 50858100-3d0c-42bd-87b8-f626212669e2
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 60
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -46,4 +46,4 @@ Representação visual do código da linha 7
 
 Atributo de solicitação definido para o serviço de leitura do modal de dados de formulário
 
-[Exemplo de Pacote AEM](assets/webchanneldelivery.zip).
+[Pacote de Exemplo do AEM](assets/webchanneldelivery.zip).

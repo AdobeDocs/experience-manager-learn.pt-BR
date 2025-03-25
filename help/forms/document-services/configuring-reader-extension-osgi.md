@@ -3,14 +3,14 @@ title: Configuração de extensões do Reader no OSGi do AEM Forms
 description: Adicionar a credencial Reader Extensions ao armazenamento de confiança no OSGi do AEM Forms
 feature: Reader Extensions
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Administration
 role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Adicionar credencial de extensões do Reader{#configuring-reader-extension-osgi}
 
-O serviço DocAssurance pode aplicar direitos de uso a documentos PDF. Para aplicar direitos de uso a documentos do PDF, configure os certificados.
+O serviço DocAssurance pode aplicar direitos de uso a documentos do PDF. Para aplicar direitos de uso a documentos do PDF, configure os certificados.
 
 ## Criar armazenamento de chaves para o usuário do serviço fd
 

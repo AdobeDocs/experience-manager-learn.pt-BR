@@ -3,14 +3,14 @@ title: Usar o serviço de modelo de dados de formulário como etapa no fluxo de 
 description: A partir do AEM Forms 6.4, agora podemos usar o Modelo de dados de formulário como parte do fluxo de trabalho do AEM. O vídeo a seguir aborda as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM.
 feature: Workflow
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 205
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Para testar esse recurso no servidor, siga as instruções abaixo
 
 * Configure o tomcat com o arquivo SampleRest.war como descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
-* [Importe os ativos para o AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip). O pacote contém o seguinte:
+* [Importe os ativos para a AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip). O pacote contém o seguinte:
 
    * Modelo de fluxo de trabalho que usa a etapa FDM.
    * Modelo de dados de formulário usado na etapa do FDM.

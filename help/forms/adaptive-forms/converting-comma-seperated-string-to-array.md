@@ -2,7 +2,7 @@
 title: Conversão da string separada por vírgula em uma matriz de strings no AEM Forms Workflow
 description: quando seu modelo de dados de formulário tiver uma matriz de cadeias de caracteres como um dos parâmetros de entrada, será necessário massagear os dados gerados a partir da ação de envio de um Formulário adaptável antes de chamar a ação de envio do modelo de dados de formulário.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Quando o formulário é baseado em um modelo de dados de formulário que tem uma
 
 ## Criar uma etapa do processo
 
-Uma etapa do processo é usada em um fluxo de trabalho AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizada executa o serviço OSGi.
+Uma etapa do processo é usada em um fluxo de trabalho do AEM quando queremos que nosso fluxo de trabalho execute uma determinada lógica. A etapa do processo pode ser associada a um script ECMA ou a um serviço OSGi. Nossa etapa de processo personalizada executa o serviço OSGi.
 
 Os dados enviados estão no formato a seguir. O valor do elemento businessUnits é uma string separada por vírgulas, que precisa ser convertida em uma matriz de string.
 

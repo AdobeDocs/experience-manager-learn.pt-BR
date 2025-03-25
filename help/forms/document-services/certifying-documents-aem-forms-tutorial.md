@@ -1,15 +1,15 @@
 ---
 title: Certificar documento no AEM Forms
-description: Utilização do serviço Docassurance para certificar documentos de PDF no AEM Forms
+description: Utilização do serviço Docassurance para certificar documentos do PDF no AEM Forms
 feature: Document Security
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Certificar documento no AEM Forms
 
-Um Documento certificado fornece aos destinatários do documento de PDF e dos formulários garantias adicionais de sua autenticidade e integridade.
+Um Documento certificado fornece aos destinatários de documentos e formulários da PDF garantias adicionais de sua autenticidade e integridade.
 
 Para certificar um documento, você pode usar o Acrobat DC no desktop ou os Serviços de documento da AEM Forms como parte de um processo automatizado em um servidor.
 
@@ -40,7 +40,7 @@ Siga as etapas mencionadas abaixo para adicionar o certificado ao keystore no AE
 
 ## Criação do serviço OSGI
 
-Você pode criar seu próprio pacote OSGi e usar o AEM Forms Client SDK para implementar um serviço para certificar documentos PDF. Os links a seguir seriam úteis para escrever seu próprio pacote OSGi
+Você pode criar seu próprio pacote OSGi e usar o AEM Forms Client SDK para implementar um serviço para certificar documentos do PDF. Os links a seguir seriam úteis para escrever seu próprio pacote OSGi
 
 * [Criando seu primeiro pacote OSGi](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [Usar API de serviço de documento](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
@@ -61,7 +61,7 @@ Ou você pode usar o pacote de amostra incluído como parte deste tutorial de at
 * [Importar exemplo de formulário adaptável](assets/certify-pdf-af.zip)
 * [Importe e instale o envio personalizado](assets/custom-submit-certify.zip)
 * [Abrir o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
-* Carregar documento de PDF que precisa ser certificado
+* Carregar documento do PDF que precisa ser certificado
   **opcional** - especifique o campo de assinatura que deseja usar ao certificar o documento
 * Clique em enviar.
-* O PDF certificado deverá ser devolvido a você.
+* O PDF certificado deve ser devolvido a você.

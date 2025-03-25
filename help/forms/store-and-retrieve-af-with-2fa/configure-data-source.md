@@ -3,7 +3,7 @@ title: Configurar o Data Source
 description: Criar DataSource apontando para o banco de dados MySQL
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6541
 thumbnail: 6541.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
 duration: 64
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 # Configurar o Data Source
 
 Há muitas maneiras pelas quais o AEM permite a integração com um banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração de DataSource agrupada da conexão Apache Sling por meio do [configMgr](http://localhost:4502/system/console/configMgr).
-A primeira etapa é baixar e implantar os [drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados para AEM.
+A primeira etapa é baixar e implantar os [drivers MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados no AEM.
 Em seguida, defina as propriedades da Fonte de dados agrupada da conexão do Sling específicas para seu banco de dados. A captura de tela a seguir mostra as configurações usadas para este tutorial. O esquema de banco de dados é fornecido a você como parte deste tutorial de ativos.
 
 >[!NOTE]

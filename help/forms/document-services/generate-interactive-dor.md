@@ -1,7 +1,7 @@
 ---
 title: Gerar DoR interativa com dados de Formulário adaptável
 description: Mesclar dados de formulário adaptáveis com o modelo XDP para gerar PDF baixável
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Baixar DoR interativa
 
-Um caso de uso comum é o de ser capaz de baixar uma DoR interativa com os dados do Formulário adaptável. A DoR baixada será concluída usando o Adobe Acrobat ou o Adobe Reader.
+Um caso de uso comum é o de ser capaz de baixar uma DoR interativa com os dados do Formulário adaptável. O DoR baixado será concluído usando o Adobe Acrobat ou o Adobe Reader.
 
 ## O formulário adaptável não se baseia no esquema XSD
 
@@ -82,8 +82,8 @@ Você pode usar qualquer uma das ferramentas online gratuitas para [gerar XSD](h
 
 ### Criar formulário adaptável
 
-Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Essa biblioteca cliente tem o código para fazer uma chamada de POST para o servlet que retorna o PDF para o aplicativo de chamada.
-O código a seguir é acionado ao clicar no _PDF de Download_
+Crie um formulário adaptável com base no XSD da etapa anterior. Associe o formulário para usar a biblioteca do cliente &quot;irs&quot;. Esta biblioteca cliente tem o código para fazer uma chamada POST para o servlet que retorna o PDF para o aplicativo de chamada.
+O código a seguir é acionado ao clicar em _Baixar PDF_
 
 ```javascript
 $(document).ready(function() {
@@ -225,11 +225,11 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Importar o artigo Assets (formulário adaptável, modelos XDP e XSD)](assets/generate-interactive-dor-sample-assets.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Preencha alguns dos campos de formulário.
-1. Clique em Baixar PDF para obter o PDF. Talvez seja necessário aguardar alguns segundos para baixar o PDF.
+1. Clique em Baixar o PDF para obter a PDF. Talvez seja necessário aguardar alguns segundos para que o PDF seja baixado.
 
 >[!NOTE]
 >
->Ao abrir o PDF baixado usando o visualizador de pdf do navegador, você não verá os dados no pdf. Abra o PDF baixado usando Adobe Acrobat ou Adobe Reader.
+>Ao abrir o PDF baixado usando o visualizador de pdf do navegador, você não verá os dados no pdf. Abra o PDF baixado usando o Adobe Acrobat ou o Adobe Reader.
 
 
 >[!NOTE]

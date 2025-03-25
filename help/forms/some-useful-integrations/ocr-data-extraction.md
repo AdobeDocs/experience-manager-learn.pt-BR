@@ -2,7 +2,7 @@
 title: Extração de dados OCR
 description: Extrair dados de documentos emitidos pelo governo para preencher formulários.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6679
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -98,17 +98,17 @@ A biblioteca do cliente pode ser baixada [daqui.](assets/drivers-license-client-
 
 ## Criar formulário adaptável
 
-Integre as invocações POST do modelo de dados de formulário ao formulário adaptável para extrair dados do documento carregado pelo usuário no formulário. Você pode criar seu próprio formulário adaptável e usar a invocação POST do modelo de dados de formulário para enviar a cadeia de caracteres codificada base64 do documento carregado.
+Integre as invocações POST do Modelo de dados de formulário ao seu formulário adaptável para extrair dados do documento carregado pelo usuário no formulário. Você pode criar seu próprio formulário adaptável e usar a invocação POST do modelo de dados de formulário para enviar a cadeia de caracteres codificada base64 do documento carregado.
 
 ## Implantar no servidor
 
 Se quiser usar os ativos de amostra com sua chave de API, siga as seguintes etapas:
 
-* [Baixe a fonte de dados](assets/drivers-license-source.zip) e importe para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
-* [Baixar o modelo de dados de formulário](assets/drivers-license-fdm.zip) e importar para AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Baixe a fonte de dados](assets/drivers-license-source.zip) e importe para a AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
+* [Baixe o modelo de dados de formulário](assets/drivers-license-fdm.zip) e importe para o AEM usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp)
 * [Baixar a biblioteca do cliente](assets/drivers-license-client-lib.zip)
 * Baixe o formulário adaptável de exemplo pode ser [baixado daqui](assets/adaptive-form-dl.zip). Este formulário de amostra usa as invocações de serviço do modelo de dados de formulário fornecido como parte deste artigo.
-* Importar o formulário para o AEM da [Interface do usuário do Forms e do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importar o formulário para o AEM da [Forms e da Interface do Usuário do Documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Abrir o formulário no modo de edição [nto.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Especifique sua Chave de API como o valor padrão no campo apikey e salve as alterações
 * Abra o editor de regras para o campo String Base 64. Observe a invocação do serviço quando o valor desse campo for alterado.

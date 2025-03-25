@@ -2,7 +2,7 @@
 title: Criar perfil da campanha no envio do formulário adaptável
 description: Este artigo explicará as etapas necessárias para criar um perfil no Adobe Campaign Standard em um envio de formulário adaptável. Esse processo usa o mecanismo de envio personalizado para lidar com o envio do Formulário adaptável.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
 duration: 182
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Este artigo explicará as etapas necessárias para criar um perfil no Adobe Camp
 
 Este tutorial guiará as etapas de criação de perfil do Campaign no envio de formulários adaptáveis. Para realizar esse caso de uso, precisamos fazer o seguinte
 
-* Crie um serviço AEM (CampaignService) para criar um perfil do Adobe Campaign Standard usando a API REST
+* Crie um Serviço AEM (CampaignService) para criar um Perfil Adobe Campaign Standard usando a API REST
 * Criar uma ação de envio personalizada para lidar com o envio do Formulário adaptável
 * Chame o método createProfile do CampaignService
 
 ## Criar serviço AEM {#create-aem-service}
 
-Crie um serviço AEM para criar um perfil do Adobe Campaign. Esse serviço AEM buscará as credenciais do Adobe Campaign da configuração do OSGI. Depois que as credenciais da campanha são obtidas, o token de acesso é gerado e, usando a chamada HTTP Post do token de acesso, é feita para criar o perfil no Adobe Campaign. Veja a seguir o código para criar o perfil.
+Crie um serviço do AEM para criar um perfil do Adobe Campaign. Esse serviço do AEM buscará as credenciais do Adobe Campaign da configuração do OSGI. Depois que as credenciais da campanha são obtidas, o token de acesso é gerado e, usando a chamada HTTP Post do token de acesso, é feita para criar o perfil no Adobe Campaign. Veja a seguir o código para criar o perfil.
 
 ```java
 package aemformwithcampaign.core.services.impl;

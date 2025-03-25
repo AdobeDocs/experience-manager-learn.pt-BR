@@ -1,15 +1,16 @@
 ---
-title: Acionar fluxo de trabalho de AEM no envio do formulário HTML5 - Manipular o envio do PDF
-description: Lidar com o envio do formulário HTML5/PDF
+title: Acionar o fluxo de trabalho do AEM no envio do formulário do HTML5 - Lidar com o envio do PDF
+description: Lidar com o envio do formulário do HTML5/PDF
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+exl-id: ef8ed87d-37c1-4d01-8df6-7a78c328703d
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 1%
@@ -18,14 +19,14 @@ ht-degree: 1%
 
 # Tratar Envio De Formulário
 
-Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio do formulário PDF ou HTML5. Esse servlet faz uma solicitação HTTP POST para um servlet em execução em uma instância de autor AEM responsável por salvar os dados enviados como um nó `nt:file` no repositório do autor do AEM.
+Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio de formulários PDF ou HTML5. Este servlet faz uma solicitação POST HTTP em um servlet em execução em uma instância de autor do AEM responsável por salvar os dados enviados como um nó `nt:file` no repositório do autor do AEM.
 
-A seguir está o código do servlet que processa o envio do formulário PDF/HTML. Neste servlet, fazemos uma chamada de POST para um servlet montado em **/bin/startworkflow** em uma instância de Autor AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
+A seguir está o código do servlet que lida com o envio do formulário do PDF/HTML5. Neste servlet, fazemos uma chamada POST para um servlet montado em **/bin/startworkflow** em uma instância de autor do AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
 
 
-## Servlet Publish para AEM
+## Servlet de publicação do AEM
 
-O código a seguir lida com o envio do formulário PDF/HTML 5. Esse código é executado na instância de publicação.
+O código a seguir lida com o envio do formulário do PDF/HTML5. Esse código é executado na instância de publicação.
 
 ```java
 package com.aemforms.mobileforms.core.servlets;

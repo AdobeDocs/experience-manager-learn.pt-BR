@@ -2,14 +2,14 @@
 title: Uso de APIs de geolocalização no Forms adaptável
 description: Preencha campos de endereço no seu formulário usando as APIs de localização geográfica
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -87,7 +87,7 @@ O JSON retornado pela API é analisado para definir os campos do Formulário ada
 >
 >Para fins de teste, você pode usar o protocolo HTTP com localhost no URL.
 >
->Para o servidor de produção, será necessário habilitar o SSL para o servidor AEM para obter esse recurso.
+>Para o servidor de produção, será necessário habilitar o SSL para que o AEM Server obtenha esse recurso.
 >
 >A amostra associada a este artigo foi testada com o endereço dos EUA. Se você quiser usar esse recurso em outras localizações geográficas, talvez seja necessário ajustar a análise JSON.
 

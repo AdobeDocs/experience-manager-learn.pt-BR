@@ -1,22 +1,22 @@
 ---
-title: Utilização Do Modelo De Dados De Formulário Para Dados Binários Do Post
-description: Publicação de dados binários no DAM do AEM usando o modelo de dados de formulário
+title: Utilização Do Modelo De Dados De Formulário Para Publicar Dados Binários
+description: Publicação de dados binários no AEM DAM usando o modelo de dados de formulário
 feature: Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
 last-substantial-update: 2021-01-09T00:00:00Z
 duration: 95
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# Utilização Do Modelo De Dados De Formulário Para Dados Binários Do Post{#using-form-data-model-to-post-binary-data}
+# Utilização Do Modelo De Dados De Formulário Para Publicar Dados Binários{#using-form-data-model-to-post-binary-data}
 
 A partir do AEM Forms 6.4, agora podemos chamar o Serviço de modelo de dados de formulário como uma etapa no fluxo de trabalho do AEM. Este artigo o guiará por um caso de uso de exemplo para publicar um Documento de registro usando o Serviço de modelo de dados de formulário.
 
@@ -24,7 +24,7 @@ O caso de uso é o seguinte:
 
 1. Um usuário preenche e envia o Formulário adaptável.
 1. O formulário adaptável é configurado para gerar o Documento de registro.
-1. No envio desses formulários adaptáveis, o fluxo de trabalho do AEM é acionado, e ele usará o serviço de invocar modelo de dados de formulário para POST do documento de registro para o AEM DAM.
+1. No envio desses formulários adaptáveis, o fluxo de trabalho do AEM é acionado. Ele usará o serviço de invocar modelo de dados de formulário para POSTAR o documento de registro no AEM DAM.
 
 ![posttodam](assets/posttodamshot1.png)
 
@@ -42,7 +42,7 @@ Entrada do serviço
 
 >[!NOTE]
 >
->Dicas de solução de problemas - Se, por algum motivo, o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando [aqui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação do AEM, que por padrão são admin/admin.
+>Dicas de solução de problemas - Se, por algum motivo, o DOR.pdf não for criado no DAM, redefina as configurações de autenticação da fonte de dados clicando [aqui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Essas são as configurações de autenticação da AEM, que por padrão são admin/admin.
 
 Para testar esse recurso no servidor, siga as etapas mencionadas abaixo:
 
@@ -50,7 +50,7 @@ Para testar esse recurso no servidor, siga as etapas mencionadas abaixo:
 
 1. [Baixe e implante o conjunto setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Esse conjunto OSGI personalizado é usado para criar a propriedade de metadados e definir seu valor a partir dos dados de formulário enviados.
 
-1. [Importe os ativos](assets/postdortodam.zip) associados a este artigo para o AEM usando o gerenciador de pacotes.Você obterá o seguinte
+1. [Importe os ativos](assets/postdortodam.zip) associados a este artigo para a AEM usando o gerenciador de pacotes.Você obterá o seguinte
 
    1. Modelo de fluxo de trabalho
    1. Formulário adaptável configurado para enviar ao fluxo de trabalho do AEM

@@ -3,13 +3,13 @@ title: AEM Forms com esquema e dados JSON [Part4]
 description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas na criação do Formulário adaptável com esquema JSON e na consulta dos dados enviados.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
 duration: 99
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -69,7 +69,7 @@ O resultado dessa consulta é retornado para preencher a tabela na interface do 
 Para executar esse exemplo em seu sistema local, execute as seguintes etapas
 
 1. [Verifique se você seguiu todas as etapas mencionadas aqui](part2.md)
-1. [Importe o Dashboardv2.zip usando o Gerenciador de Pacotes AEM.](assets/dashboardv2.zip) Este pacote contém todos os pacotes necessários, definições de configuração, envio personalizado e página de exemplo para consulta de dados.
+1. [Importe o Dashboardv2.zip usando o Gerenciador de Pacotes do AEM.](assets/dashboardv2.zip) Este pacote contém todos os pacotes necessários, definições de configuração, envio personalizado e página de exemplo para consulta de dados.
 1. Criar um formulário adaptável usando a amostra de esquema json
 1. Configurar o formulário adaptável para enviar para a ação de envio personalizada &quot;customsubmithelpx&quot;
 1. Preencha o formulário e envie

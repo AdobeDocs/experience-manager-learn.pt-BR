@@ -1,8 +1,8 @@
 ---
 title: Criar um formulário da Web a ser apresentado ao usuário para assinatura
-description: Crie um pacote AEM para expor os métodos de sinal do Acrobat necessários para o caso de uso.
+description: Crie um pacote do AEM para expor os métodos de assinatura do Acrobat necessários para o caso de uso.
 feature: Adaptive Forms,Acrobat Sign
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ jira: KT-13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 15364571-070c-4497-a256-f0483d6f9585
 duration: 118
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Criar um invólucro para a API REST do Acrobat Sign
 
-Um pacote personalizado de AEM foi desenvolvido para criar e retornar o formulário web ao usuário final
+Um pacote AEM personalizado foi desenvolvido para criar e retornar o formulário web ao usuário final
 
 * [Criar documento transitório](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). O documento carregado por meio desta chamada é chamado de transitório, pois está disponível somente por 7 dias após o upload. A ID do documento transitório retornada pode ser usada nas chamadas de API onde o arquivo carregado precisa ser referenciado. A solicitação de documento transitório é uma solicitação de várias partes que consiste em três partes: nome do arquivo, tipo MIME e fluxo de arquivos. Você só pode carregar um arquivo por vez nesta solicitação.
 * [Criar formulário Web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Este é um ponto de extremidade primário usado para criar um novo formulário Web. O formulário web foi criado em um estado ATIVO para hospedar imediatamente o formulário web.

@@ -2,7 +2,7 @@
 title: Uso de fragmentos no serviço de saída com a pasta monitorada
 description: Gerar documentos pdf com fragmentos residentes no repositório crx
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 # Geração de documento pdf com fragmentos usando o script ECMA{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-Neste artigo, usaremos o serviço de saída para gerar arquivos pdf usando fragmentos xdp. O xdp principal e os fragmentos residem no repositório crx. É importante imitar a estrutura de pastas do sistema de arquivos no AEM. Por exemplo, se estiver usando um fragmento na pasta de fragmentos do xdp, você deve criar uma pasta chamada **fragmentos** na pasta base no AEM. A pasta base conterá o modelo base xdp. Por exemplo, se você tiver a seguinte estrutura em seu sistema de arquivos
+Neste artigo, usaremos o serviço de saída para gerar arquivos pdf usando fragmentos xdp. O xdp principal e os fragmentos residem no repositório crx. É importante imitar a estrutura de pastas do sistema de arquivos no AEM. Por exemplo, se estiver usando um fragmento na pasta de fragmentos do xdp, você deve criar uma pasta chamada **fragmentos** na pasta base do AEM. A pasta base conterá o modelo base xdp. Por exemplo, se você tiver a seguinte estrutura em seu sistema de arquivos
 * c:\xdptemplates - Conterá o modelo base xdp
 * c:\xdptemplates\fragments - Essa pasta conterá fragmentos e o modelo principal fará referência ao fragmento conforme mostrado abaixo
   ![fragment-xdp](assets/survey-fragment.png).
@@ -35,7 +35,7 @@ A seguir está a estrutura de pastas da amostra xdp que usa 2 fragmentos
 * Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída. Nesta amostra, estamos usando fragmentos que residem no repositório crx.
 
 
-O script ECMA a seguir foi usado para gerar PDF. Observe o uso de ResourceResolver e ResourceResolverHelper no código. O ResourceResolver é necessário, pois esse código está sendo executado fora de qualquer contexto de usuário.
+O script ECMA a seguir foi usado para gerar o PDF. Observe o uso de ResourceResolver e ResourceResolverHelper no código. O ResourceResolver é necessário, pois esse código está sendo executado fora de qualquer contexto de usuário.
 
 ```java
 var inputMap = processorContext.getInputMap();

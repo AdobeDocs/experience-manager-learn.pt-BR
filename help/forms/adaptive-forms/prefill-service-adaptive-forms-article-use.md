@@ -2,14 +2,14 @@
 title: Preencher o serviço no Adaptive Forms
 description: Preencha previamente os formulários adaptáveis buscando dados das fontes de dados de back-end.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
 duration: 129
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Para preencher previamente um formulário adaptável usando o serviço de preenc
 
 No trecho de código abaixo, temos uma classe que implementa a interface DataXMLProvider. Obtemos acesso ao usuário conectado e buscamos as informações de perfil do usuário conectado. Em seguida, criamos um documento XML com um elemento de nó raiz chamado &quot;dados&quot; e anexamos elementos apropriados a esse nó de dados. Depois que o documento XML é construído, o fluxo de entrada do documento XML é retornado.
 
-Essa classe é então transformada em um pacote OSGi e implantada no AEM. Depois que o pacote é implantado, esse serviço de preenchimento prévio está disponível para ser usado como serviço de preenchimento do seu Formulário adaptável.
+Essa classe é transformada em um pacote OSGi e implantada no AEM. Depois que o pacote é implantado, esse serviço de preenchimento prévio está disponível para ser usado como serviço de preenchimento do seu Formulário adaptável.
 
 >[!NOTE]
 >
@@ -148,5 +148,5 @@ Para testar esse recurso no servidor, execute o seguinte procedimento
 
 >[!NOTE]
 >
->Se você ativou a depuração do com.aem.prefill.core.PrefillAdaptiveForm, o arquivo de dados xml gerado é gravado na pasta de instalação do servidor AEM.
+>Se você ativou a depuração do com.aem.prefill.core.PrefillAdaptiveForm, o arquivo de dados xml gerado é gravado na pasta de instalação do servidor do AEM.
 

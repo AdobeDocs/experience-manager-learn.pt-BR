@@ -2,14 +2,14 @@
 title: Marcação e armazenamento do AEM Forms DoR no DAM
 description: Este artigo abordará o caso de uso de armazenamento e marcação do DoR gerado pelo AEM Forms no AEM DAM. A marcação do documento é feita com base nos dados de formulário enviado.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 191
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -25,12 +25,12 @@ Uma tarefa comum dos clientes é armazenar e marcar o Documento de registro (DoR
 O caso de uso é o seguinte:
 
 * Um usuário preenche o Formulário adaptável. No formulário adaptável, o estado civil do usuário (ex Solteiro) e o status de emprego (Ex Aposentado) são capturados.
-* No envio do formulário, um fluxo de trabalho de AEM é acionado. Esse fluxo de trabalho marca o documento com o estado civil (Único) e o status empregatício (Aposentado) e armazena o documento no DAM.
+* No envio do formulário, um fluxo de trabalho do AEM é acionado. Esse fluxo de trabalho marca o documento com o estado civil (Único) e o status empregatício (Aposentado) e armazena o documento no DAM.
 * Depois que o documento for armazenado no DAM, o administrador poderá pesquisar o documento por essas tags. Por exemplo, a pesquisa em Único ou Aposentado buscaria os DoRs apropriados.
 
 Para atender a esse caso de uso, uma etapa de processo personalizada foi escrita. Nesta etapa, buscamos os valores dos elementos de dados apropriados nos dados enviados. Em seguida, construímos o bloco da tag usando esse valor. Por exemplo, se o valor do elemento de estado civil for &quot;Único&quot;, o título da tag se tornará **Pico:StatusEmprego/Único. **Usando a API do TagManager, localizamos a tag e a aplicamos ao DoR.
 
-Este é o código completo para marcar e armazenar o documento de registro no DAM do AEM.
+Este é o código completo para marcar e armazenar o documento de registro no AEM DAM.
 
 ```java
 package com.aemforms.setvalue.core;
@@ -168,7 +168,7 @@ Para fazer com que esse exemplo funcione em seu sistema, siga as etapas listadas
 
 * Clique em Criar | Fazer upload do arquivo Faça upload da tag-and-store-in-dam-adaptive-form.zip
 
-* [Importe os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) usando o gerenciador de pacotes AEM
+* [Importe os ativos do artigo](assets/tag-and-store-in-dam-assets.zip) usando o gerenciador de pacotes do AEM
 * Abra o [formulário de amostra no modo de visualização](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Preencha todos os campos** e envie o formulário.
 * [Navegue até Pasta de pico no DAM](http://localhost:4502/assets.html/content/dam/Peak). Você deve ver DoR na pasta Pico. Verifique as propriedades do documento. Ele deve ser marcado adequadamente.
 Parabéns! Você instalou com êxito a amostra no seu sistema

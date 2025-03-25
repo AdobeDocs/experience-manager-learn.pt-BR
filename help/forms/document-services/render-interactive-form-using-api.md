@@ -2,14 +2,14 @@
 title: Renderização do PDF interativo usando os serviços da Forms no AEM Forms
 description: Utilização da API de serviço do Forms no AEM Forms para renderizar o PDF interativo
 feature: Forms Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 9b2ef4c9-8360-480d-9165-f56a959635fb
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 75
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Utilização da API de serviço do Forms no AEM Forms para renderizar o PDF inte
 
 Neste artigo, analisaremos o seguinte serviço
 
-* FormsService - Este é um serviço muito versátil que permite exportar/importar dados de e para o arquivo PDF e também gerar pdf interativo mesclando dados xml no modelo xdp
+* FormsService — é um serviço muito versátil que permite exportar/importar dados de e para um arquivo do PDF e também gerar PDF interativo mesclando dados xml com um modelo xdp
 
 O [javadoc oficial para a API do AEM Forms está listado aqui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
@@ -46,17 +46,17 @@ Linha 1: local da pasta que contém o modelo xdp
 
 Linha 2-4: Criar PDFFormRenderOptions e definir suas propriedades
 
-Linha 7: gerar PDF interativo usando a operação de serviço renderPDFForm do FormsService
+Linha 7: gerar o PDF interativo usando a operação de serviço renderPDFForm do FormsService
 
 Linha 11: retorna o pdf interativo gerado para o aplicativo de chamada
 
 **Para testar o pacote de exemplo em seu sistema**
 1. [Baixe e instale o DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Baixe e instale o Pacote de amostra de serviços de documento usando o Felix Web Console](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Baixe e instale o pacote usando o gerenciador de pacotes AEM](assets/downloadinteractivepdffrommobileform.zip)
+1. [Baixe e instale o pacote usando o gerenciador de pacotes da AEM](assets/downloadinteractivepdffrommobileform.zip)
 
 1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
-1. Pesquisar por filtro CSRF do Adobe Granite
+1. Pesquisar filtro CSRF do Adobe Granite
 1. Adicione o seguinte caminho nas seções excluídas e salve
 1. /bin/generateinteractivepdf
 1. Pesquise por _Serviço Mapeador de Usuários do Apache Sling Service_ e clique em para abrir as propriedades

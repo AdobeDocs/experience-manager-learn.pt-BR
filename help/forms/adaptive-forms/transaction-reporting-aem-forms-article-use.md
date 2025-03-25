@@ -2,14 +2,14 @@
 title: Utilização do relatório de transações no AEM Forms
 description: Os relatórios de transações no AEM Forms permitem manter uma contagem de todas as transações ocorridas desde uma data especificada na implantação do AEM Forms.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Na captura de tela acima de Documento processado é o número de documentos gera
 
 Uma transação permanece no buffer por um período especificado (Tempo do Buffer de Liberação + Tempo de replicação reversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
+Ações como enviar um formulário do PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
 
 Se você estiver visualizando o relatório de transações na instância do autor, verifique se a replicação inversa está configurada em todas as instâncias de publicação.
 

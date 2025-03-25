@@ -1,9 +1,9 @@
 ---
-title: Erro ao abrir a interface do usuário do agente no envio do POST
+title: Abrindo a interface do agente no envio do POST
 description: Esta é a parte 11 do tutorial em várias etapas para criar seu primeiro documento de comunicações interativas para o canal de impressão. Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio do formulário.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6168
 thumbnail: 40122.jpg
 topic: Development
@@ -11,14 +11,14 @@ role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-# Erro ao abrir a interface do usuário do agente no envio do POST
+# Abrindo a interface do agente no envio do POST
 
 Nesta parte, iniciaremos a interface do agente para criar correspondência ad-hoc no envio do formulário.
 
@@ -67,4 +67,4 @@ Para testar esse recurso no servidor
 
 >[!NOTE]
 >
->Certifique-se de que o parâmetro de entrada da operação Obter do modelo de dados de formulário esteja vinculado ao Atributo de solicitação chamado &quot;accountnumber&quot; para que isso funcione. Se você alterar o nome do valor de vinculação para qualquer outro nome, verifique se a alteração é refletida na linha 25 do POST.jsp
+>Certifique-se de que o parâmetro de entrada da operação Obter do modelo de dados de formulário esteja vinculado ao Atributo de solicitação chamado &quot;accountnumber&quot; para que isso funcione. Se você alterar o nome do valor de vinculação para qualquer outro nome, verifique se a alteração foi refletida na linha 25 do POST.jsp

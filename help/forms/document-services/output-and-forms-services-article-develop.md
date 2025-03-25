@@ -2,14 +2,14 @@
 title: Desenvolvimento com serviços de saída e Forms no AEM Forms
 description: Saiba mais sobre como desenvolver com a API de serviço de saída e Forms no AEM Forms.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 duration: 122
-source-git-commit: 12af84e3d9be24fabb01a64eced6279749668599
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Saiba mais sobre como desenvolver com a API de serviço de saída e Forms no AEM
 Neste artigo, analisaremos o seguinte
 
 * [Serviço de saída](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado.
-* [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - Este é um serviço muito versátil que permite renderizar o xdp como pdf e exportar/importar dados de e para o arquivo PDF.
+* [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - Este é um serviço muito versátil que permite renderizar o xdp como pdf e exportar/importar dados de e para um arquivo do PDF.
 
 
-O trecho de código a seguir exporta dados do arquivo PDF
+O trecho de código a seguir exporta dados do arquivo do PDF
 
 ```java
 javax.servlet.http.Part pdfPart = request.getPart("pdffile");
@@ -43,20 +43,20 @@ A Linha 2 extrai o saveLocation da solicitação
 
 A linha 5 obtém o FormsService
 
-O Line 6 exporta o xmlData do Arquivo PDF
+A linha 6 exporta os xmlData do arquivo PDF
 
 **Para testar o pacote de exemplo em seu sistema**
 
-[Baixe e instale o pacote usando o gerenciador de pacotes AEM](assets/using-output-and-form-service-api.zip)
+[Baixe e instale o pacote usando o gerenciador de pacotes da AEM](assets/using-output-and-form-service-api.zip)
 
 
 
 
-incluir na lista de permissões **Depois de instalar o pacote, você terá que copiar os seguintes URLs no Filtro CSRF do Adobe Granite.**
+incluir na lista de permissões **Depois de instalar o pacote, você terá que copiar as seguintes URLs no Filtro CSRF do Adobe Granite.**
 
 1. Siga as etapas mencionadas abaixo para incluir na lista de permissões os caminhos mencionados acima.
 1. [Logon no configMgr](http://localhost:4502/system/console/configMgr)
-1. Pesquisar por filtro CSRF do Adobe Granite
+1. Pesquisar filtro CSRF do Adobe Granite
 1. Adicione os 3 caminhos a seguir nas seções excluídas e salve
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
@@ -67,12 +67,12 @@ incluir na lista de permissões **Depois de instalar o pacote, você terá que c
 
 ## Teste das amostras
 
-Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite que você faça solicitações do POST ao seu servidor.
+Há várias maneiras de testar o código de amostra. O mais rápido e fácil é usar o aplicativo Postman. O Postman permite fazer solicitações POST no servidor.
 
 * Instale o aplicativo Postman no sistema.
 * Inicie o aplicativo e insira o URL apropriado
-* Verifique se selecionou &quot;POST&quot; na lista suspensa
-* Certifique-se de especificar &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especifique o nome de usuário e a senha do Servidor AEM
+* Verifique se você selecionou &quot;POST&quot; na lista suspensa
+* Certifique-se de especificar &quot;Autorização&quot; como &quot;Autenticação básica&quot;. Especifique o nome de usuário e a senha do AEM Server
 * Especifique os parâmetros da solicitação na guia do corpo
 * Clique no botão Enviar
 
@@ -81,7 +81,7 @@ O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serv
 ## Utilização do OutputService para mesclar dados com o modelo xdp
 
 * Usar o Serviço de saída para mesclar dados com um documento xdp ou pdf para gerar um PDF nivelado
-* **POST URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
+* **POSTAR URL**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Solicitar Parâmetros -**
 
    * **xdp_or_pdf_file** : o arquivo xdp ou pdf com o qual você deseja mesclar dados
@@ -92,8 +92,8 @@ O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serv
 
 #### Importar dados
 
-* Usar FormsService importData para importar dados no arquivo PDF
-* **POST URL** - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* Usar FormsService importData para importar dados para o arquivo do PDF
+* **POSTAR URL** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 
 * **Solicitar Parâmetros:**
 
@@ -103,8 +103,8 @@ O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serv
 
 #### Exportar dados
 
-* Usar a API FormsService exportData para exportar dados do Arquivo PDF
-* **POST URL** - http://localhost:4502/content/AemFormsSamples/exportdata.html
+* Usar a API FormsService exportData para exportar dados do arquivo do PDF
+* **POSTAR URL** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Solicitar Parâmetros:**
 
    * **pdffile** : o arquivo pdf do qual você deseja exportar dados
@@ -114,7 +114,7 @@ O pacote contém 4 amostras. Os parágrafos a seguir explicam quando usar o serv
 
 * Renderizar modelo XDP como pdf estático/dinâmico
 * Use a API renderPDFForm do FormsService para renderizar o modelo xdp como PDF
-* **POST URL** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
+* **POSTAR URL** - http://localhost:4502/content/AemFormsSamples/renderxdp?xdpName=f1040.xdp
 * Parâmetro de solicitação:
    * xdpName: Nome do arquivo xdp a ser renderizado como pdf
 

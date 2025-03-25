@@ -1,15 +1,16 @@
 ---
-title: Acionar o fluxo de trabalho de AEM no envio do formulário HTML5
+title: Acionar o fluxo de trabalho do AEM no envio do formulário HTML5
 description: Lidar com o envio do formulário HTML5
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: 5fbc0cb9-5b55-4269-9172-039414db89cc
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -18,12 +19,12 @@ ht-degree: 1%
 
 # Tratar Envio De Formulário
 
-Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio do formulário HTML5. Esse servlet faz uma solicitação HTTP POST para um servlet em execução em uma instância de autor AEM responsável por salvar os dados enviados como um nó `nt:file` no repositório do autor do AEM.
+Nesta parte, criaremos um servlet simples que é executado no AEM Publish para lidar com o envio de formulários do HTML5. Este servlet faz uma solicitação POST HTTP em um servlet em execução em uma instância de autor do AEM responsável por salvar os dados enviados como um nó `nt:file` no repositório do autor do AEM.
 
-Veja a seguir o código do servlet que processa o envio do formulário HTML5. Neste servlet, fazemos uma chamada de POST para um servlet montado em **/bin/startworkflow** em uma instância de Autor AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
+A seguir está o código do servlet que lida com o envio do formulário HTML5. Neste servlet, fazemos uma chamada POST para um servlet montado em **/bin/startworkflow** em uma instância de autor do AEM. Esse servlet salva os dados do formulário no repositório do autor do AEM.
 
 
-## Servlet Publish para AEM
+## Servlet de publicação do AEM
 
 O código a seguir lida com o envio do formulário HTML5. Esse código é executado na instância de publicação.
 

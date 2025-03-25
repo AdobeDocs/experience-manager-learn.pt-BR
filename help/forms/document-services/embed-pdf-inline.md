@@ -1,7 +1,7 @@
 ---
 title: Exibir documento de registro em linha
 description: Mescle dados de formulário adaptáveis com o modelo XDP e exiba o PDF em linha usando a API de pdf incorporada da Document Cloud.
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Nomeie a caixa de seleção viewPDF.
 Configure o componente de pdf incorporado como mostrado na captura de tela abaixo
 ![pdf incorporado](assets/embed-pdf-configuration.png)
 
-**Incorporar Chave de API de PDF** - Esta é a chave que você pode usar para incorporar o pdf. Essa chave só funcionará com localhost. Você pode criar [sua própria chave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associá-la a outro domínio.
+**Incorporar Chave de API do PDF** - Esta é a chave que você pode usar para incorporar o pdf. Essa chave só funcionará com localhost. Você pode criar [sua própria chave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associá-la a outro domínio.
 
 **Ponto de extremidade retornando o pdf** - Este é o servlet personalizado que mesclará os dados com o modelo xdp e retornará o pdf.
 
@@ -235,4 +235,4 @@ Ele tem o servlet para unir os dados ao modelo XDP e transmitir o pdf de volta.
 1. [Importar o formulário e o modelo adaptáveis](assets/embed-pdf-form-and-xdp.zip)
 1. [Visualizar formulário adaptável](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Preencha alguns dos campos de formulário
-1. Vá até a guia View PDF. Marque a caixa de seleção exibir pdf. Você deve ver um pdf exibido no formulário preenchido com os dados do formulário adaptável
+1. Vá até a guia Exibir PDF. Marque a caixa de seleção exibir pdf. Você deve ver um pdf exibido no formulário preenchido com os dados do formulário adaptável

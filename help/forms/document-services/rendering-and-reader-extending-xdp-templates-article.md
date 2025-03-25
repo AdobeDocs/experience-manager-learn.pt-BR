@@ -1,7 +1,7 @@
 ---
-title: Renderização de XDP em PDF com direitos de uso
+title: Renderização de XDP no PDF com direitos de uso
 description: Aplicar direitos de uso ao pdf
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -9,26 +9,26 @@ level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 150
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# Renderização de XDP em PDF com direitos de uso{#rendering-xdp-into-pdf-with-usage-rights}
+# Renderização de XDP no PDF com direitos de uso{#rendering-xdp-into-pdf-with-usage-rights}
 
-Um caso de uso comum é renderizar o xdp no PDF e aplicar extensões Reader ao PDF renderizado.
+Um caso de uso comum é renderizar o xdp no PDF e aplicar extensões do Reader ao PDF renderizado.
 
-Por exemplo, no portal de formulários do AEM Forms, Quando um usuário clica em XDP, podemos renderizar o XDP como PDF e o leitor estende o PDF.
+Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em XDP, podemos renderizar o XDP como PDF e estender o PDF com o Reader.
 
 
 Para realizar esse caso de uso, precisamos fazer o seguinte.
 
-* Adicione o certificado Reader Extensions ao usuário &quot;fd-service&quot;. As etapas para adicionar a credencial de extensões do Reader estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Adicione o certificado de Extensões da Reader ao usuário &quot;fd-service&quot;. As etapas para adicionar a credencial Reader Extensions estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
-* Você também pode consultar o vídeo em [configurando credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* Você também pode consultar o vídeo em [configurar credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
 * Crie um serviço OSGi personalizado que renderiza e aplica direitos de uso. O código para fazer isso está listado abaixo
@@ -122,7 +122,7 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## Criar servlet para transmitir o PDF {#create-servlet-to-stream-the-pdf}
+## Criar servlet para transmitir a PDF {#create-servlet-to-stream-the-pdf}
 
 A próxima etapa é criar um servlet com um método GET para retornar o PDF estendido do leitor para o usuário. Nesse caso, o usuário é solicitado a salvar o PDF em seu sistema de arquivos. Isso ocorre porque o PDF é renderizado como PDF dinâmico e os visualizadores de pdf que acompanham os navegadores não manipulam pdf dinâmicos.
 
@@ -201,8 +201,8 @@ Para testar isso no servidor local, siga as etapas a seguir
 1. [Baixe e instale o pacote AEMFormsDocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 
 1. [Baixar o html de modelo de portal personalizado](assets/render-and-extend-template.zip)
-1. [Baixe e importe os ativos relacionados a este artigo para o AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
+1. [Baixe e importe os ativos relacionados a este artigo para a AEM usando o gerenciador de pacotes](assets/renderandextendxdp.zip)
    * Este pacote tem portal de exemplo e arquivo xdp
-1. Adicionar certificado de extensões Reader ao usuário &quot;fd-service&quot;
+1. Adicionar o certificado de extensões do Reader ao usuário &quot;fd-service&quot;
 1. Aponte seu navegador para a [página da Web do portal](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Clique no ícone pdf para renderizar o arquivo xdp como um arquivo pdf com direitos de uso aplicados.

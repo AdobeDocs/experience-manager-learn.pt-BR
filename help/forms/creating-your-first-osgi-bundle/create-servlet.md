@@ -2,14 +2,14 @@
 title: Criar seu primeiro servlet no AEM Forms
 description: Crie seu primeiro servlet sling para mesclar dados com o modelo de formulário.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Para criar seu projeto, siga as seguintes etapas:
 * Executar o comando `mvn clean install -PautoInstallBundle`
 * O comando acima cria e implanta automaticamente o pacote na instância do AEM em execução em localhost:4502
 
-O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [console da Web Felix.](http://localhost:4502/system/console/bundles)
+O pacote também está disponível no seguinte local `C:\AEMFormsBundles\mysite\core\target`. O pacote também pode ser implantado no AEM usando o [Felix web console.](http://localhost:4502/system/console/bundles)
 
 
 ## Testar o resolvedor de servlet

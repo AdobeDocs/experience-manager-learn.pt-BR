@@ -1,9 +1,9 @@
 ---
 title: Fluxo de trabalho de solicitação de folga paga simples
-description: Ocultar e mostrar painéis de formulário adaptáveis no fluxo de trabalho do AEM
+description: Ocultar e mostrar painéis de formulário adaptável no fluxo de trabalho do AEM
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 9342bd2f-2ba9-42ee-9224-055649ac3c90
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 592
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: Criar fluxo de trabalho principal para acionar o Processo de assinatura
 description: Criar workflow para armazenar os formulários para assinatura no banco de dados
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6887.jpg
 jira: KT-6887
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -25,7 +25,7 @@ O fluxo de trabalho principal é acionado quando o usuário envia o formulário 
 
 **Armazenar Forms para Assinar** é uma etapa de processo personalizada.
 
-A motivação para implementar uma etapa de processo personalizada é estender um fluxo de trabalho de AEM. O código a seguir implementa uma etapa de processo personalizada. O código extrai os nomes dos formulários a serem assinados e passa os dados de formulário enviados para o método `insertData` no serviço SignMultipleForms. O método `insertData` insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
+A motivação para implementar uma etapa de processo personalizada é estender um workflow do AEM. O código a seguir implementa uma etapa de processo personalizada. O código extrai os nomes dos formulários a serem assinados e passa os dados de formulário enviados para o método `insertData` no serviço SignMultipleForms. O método `insertData` insere as linhas no banco de dados identificado pela fonte de dados **aemformstutorial**.
 
 O código nesta etapa de processo personalizada faz referência ao serviço `SignMultipleForms`.
 

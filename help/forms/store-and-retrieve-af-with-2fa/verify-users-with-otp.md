@@ -3,7 +3,7 @@ title: Verificar usuários com OTP
 description: Verifique o número do celular associado ao número do aplicativo usando OTP.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6594
 thumbnail: 6594.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Experienced
 exl-id: d486d5de-efd9-4dd3-9d9c-1bef510c6073
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

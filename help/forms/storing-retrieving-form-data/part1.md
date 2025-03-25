@@ -1,14 +1,14 @@
 ---
 title: Armazenamento e recuperação de dados de formulário do banco de dados MySQL - Configurar o Data Source
 description: Tutorial em várias partes para orientá-lo pelas etapas envolvidas no armazenamento e na recuperação de dados de formulário
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
 exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Configurar o Data Source
 
-Há muitas maneiras com as quais o AEM permite a integração com o banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração de DataSource agrupada da conexão Apache Sling por meio do [configMgr](http://localhost:4502/system/console/configMgr).
+Há muitas maneiras pelas quais o AEM permite a integração com o banco de dados externo. Uma das práticas mais comuns e padrão de integração de banco de dados é usar as propriedades de configuração de DataSource agrupada da conexão Apache Sling por meio do [configMgr](http://localhost:4502/system/console/configMgr).
 A primeira etapa é baixar e implantar os [drivers MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) apropriados no AEM.
 Crie a fonte de dados agrupada da conexão Apache Sling e forneça as propriedades conforme especificado na captura de tela abaixo. O esquema de banco de dados é fornecido a você como parte deste tutorial de ativos.
 

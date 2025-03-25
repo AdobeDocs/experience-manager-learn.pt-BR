@@ -3,7 +3,7 @@ title: Criar o formulário adaptável principal
 description: Crie os formulários adaptáveis para capturar as informações do candidato e o formulário adaptável para recuperar o formulário adaptável salvo
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6552
 thumbnail: 6552.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Este formulário está associado às bibliotecas de clientes **bootboxjs540,stor
 
 * Os formulários de amostra são baseados no [modelo de formulário adaptável personalizado](assets/custom-template-with-page-component.zip) que precisa ser importado para o AEM para que os formulários de amostra sejam renderizados corretamente.
 
-* O [Formulário StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) concluído pode ser baixado e importado para a instância do AEM.
+* O [Formulário StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) concluído pode ser baixado e importado para sua instância do AEM.
 
 * O fluxo de trabalho do [AEM associado a este formulário](assets/workflow-model-store-af-with-attachments.zip) precisa ser importado para a instância do AEM para que o formulário funcione.
 

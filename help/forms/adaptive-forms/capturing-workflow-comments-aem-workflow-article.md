@@ -1,22 +1,22 @@
 ---
-title: Captura de comentários do fluxo de trabalho no Forms Workflow adaptável
-description: Captura de comentários do workflow no workflow para AEM
+title: Captura de comentários do fluxo de trabalho no Adaptive Forms Workflow
+description: Captura de comentários do workflow no AEM Workflow
 feature: Workflow
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
 last-substantial-update: 2020-10-10T00:00:00Z
 duration: 73
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
-# Captura de comentários do fluxo de trabalho no Forms Workflow adaptável{#capturing-workflow-comments-in-adaptive-forms-workflow}
+# Captura de comentários do fluxo de trabalho no Adaptive Forms Workflow{#capturing-workflow-comments-in-adaptive-forms-workflow}
 
 >[Aplicável somente ao AEM Forms 6.4. No AEM Forms 6.5, use o recurso de variáveis para obter esse caso de uso]
 
@@ -24,7 +24,7 @@ Uma solicitação comum é a capacidade de incluir os comentários inseridos pel
 
 Para atender a esse requisito, é fornecido um pacote OSGi de amostra que pode ser usado para capturar comentários e armazenar esses comentários como uma propriedade de metadados do fluxo de trabalho.
 
-A captura de tela a seguir mostra como usar a etapa do processo no [Fluxo de trabalho do AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentários e armazená-los como propriedade de metadados. O &quot;Comentários do fluxo de trabalho de captura&quot; é o nome da classe java que precisa ser usada na etapa do processo. É necessário passar o nome da propriedade de metadados que conterá os comentários. Na captura de tela abaixo, managerComments é a propriedade de metadados que armazenará os comentários.
+A captura de tela a seguir mostra como usar a etapa do processo no [Fluxo de Trabalho do AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) para capturar comentários e armazená-los como propriedade de metadados. O &quot;Comentários do fluxo de trabalho de captura&quot; é o nome da classe java que precisa ser usada na etapa do processo. É necessário passar o nome da propriedade de metadados que conterá os comentários. Na captura de tela abaixo, managerComments é a propriedade de metadados que armazenará os comentários.
 
 ![comentários do fluxo de trabalho1](assets/workflowcomments1.gif)
 
