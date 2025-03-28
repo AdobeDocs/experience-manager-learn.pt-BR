@@ -12,9 +12,9 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: b7cd1bb9584359e8bf8a168f8c062be54399f5ac
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -272,7 +272,7 @@ Saiba mais sobre as APIs RESTful, como [API HTTP do Assets](https://experiencele
 {target = _self}
 
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview
-  {title = Invoke API using Server-to-Server authentication}
+  {title = Using Content Services for Headless App}
   {description = Learn how to build a native mobile app that fetches content from AEM using Content Services RESTful APIs.}
   {image = ./assets/RESTful-Content-Service.png}
 * https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview
@@ -282,12 +282,12 @@ Saiba mais sobre as APIs RESTful, como [API HTTP do Assets](https://experiencele
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Invoke API using Server-to-Server authentication">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Using Content Services for Headless App">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Chamar API usando autenticação de servidor para servidor" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="Chamar API usando autenticação de servidor para servidor"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" title="Uso do Content Services para aplicativos headless" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/RESTful-Content-Service.png" alt="Uso do Content Services para aplicativos headless"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -295,7 +295,7 @@ Saiba mais sobre as APIs RESTful, como [API HTTP do Assets](https://experiencele
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Chamar API usando autenticação de servidor para servidor">Invocar API usando autenticação de Servidor para Servidor</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" title="Uso do Content Services para aplicativos headless">Usando os Serviços de Conteúdo para o Aplicativo Headless</a>
                     </p>
                     <p class="is-size-6">Saiba como criar um aplicativo móvel nativo que busque conteúdo do AEM usando as APIs RESTful do Content Services.</p>
                 </div>
