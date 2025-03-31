@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Saiba como chamar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service usando a autenticação baseada em usuário de um aplicativo Web personalizado que usa o OAuth Web App.
 
-A autenticação do Aplicativo Web OAuth é ideal para aplicativos Web com componentes de front-end e _back-end_ que precisam **acessar APIs do AEM em nome de um usuário**. Ele usa o tipo de concessão OAuth 2.0 _authorization_code_ para obter um token de acesso em nome do usuário para acessar as APIs do AEM. Para obter mais informações, consulte [Diferença entre as credenciais de servidor para servidor do OAuth e de aplicativo da Web do OAuth/aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials).
+A autenticação do Aplicativo Web OAuth é ideal para aplicativos Web com componentes de front-end e _back-end_ que precisam **acessar APIs do AEM em nome de um usuário**. Ele usa o tipo de concessão OAuth 2.0 _authorization_code_ para obter um token de acesso em nome do usuário para acessar as APIs do AEM. Para obter mais informações, consulte [Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 >[!AVAILABILITY]
 >

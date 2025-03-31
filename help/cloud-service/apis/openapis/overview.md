@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -59,15 +59,18 @@ As APIs do AEM baseadas em OpenAPI oferecem suporte à autenticação OAuth 2.0,
 
 - **Credencial de aplicativo de página única do OAuth**: projetada para SPAs em execução no navegador, que precisa acessar APIs em nome de um usuário sem um servidor back-end. Ele usa o tipo de concessão _authorization_code_ e depende de mecanismos de segurança do lado do cliente usando PKCE (Chave de Prova para Troca de Código) para proteger o fluxo do código de autorização. Para obter mais informações, consulte [Credencial de aplicativo de página única do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
 
-## Diferença entre credenciais de servidor para servidor do OAuth e do aplicativo da Web do OAuth/aplicativo de página única{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+## Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
-| | Servidor para servidor do OAuth | Autenticação de usuário OAuth (aplicativo web) |
-| --- | --- | --- |
-| Finalidade de autenticação | Projetado para interações máquina a máquina. | Projetado para interações orientadas pelo usuário. |
-| Comportamento do token | Emite tokens de acesso que representam o próprio aplicativo cliente. | Emite tokens de acesso em nome de um usuário autenticado. |
-| Casos de uso | Serviços de back-end que precisam de acesso à API sem interação com o usuário. | Aplicativos web com componentes de front-end e back-end acessando APIs em nome dos usuários. |
-| Considerações sobre segurança | Armazene credenciais confidenciais (`client_id`, `client_secret`) com segurança em sistemas back-end. | O usuário se autentica e recebe seu próprio token de acesso temporário. Armazene credenciais confidenciais (`client_id`, `client_secret`) com segurança em sistemas back-end. |
-| Tipo de concessão | _credenciais_do_cliente_ | _authorization_code_ |
+A tabela a seguir resume as diferenças entre os três métodos de autenticação OAuth compatíveis com APIs do AEM baseadas em OpenAPI:
+
+|  | Servidor OAuth para servidor | OAuth Web App | Aplicativo de página única (SPA) OAuth |
+| --- | --- | --- | --- |
+| **Finalidade da Autenticação** | Projetado para interações máquina a máquina. | Projetado para interações orientadas pelo usuário em um aplicativo Web com um _back-end_. | Projetado para interações orientadas pelo usuário em um _aplicativo JavaScript do lado do cliente_. |
+| **Comportamento do token** | Emite tokens de acesso que representam o próprio aplicativo cliente. | Emite tokens de acesso em nome de um usuário autenticado _via back-end_. | Emite tokens de acesso em nome de um usuário autenticado _por meio de um fluxo somente de front-end_. |
+| **Casos de uso** | Serviços de back-end que precisam de acesso à API sem interação com o usuário. | Aplicativos web com componentes de front-end e back-end acessando APIs em nome dos usuários. | Aplicativos de front-end puro (JavaScript) que acessam APIs em nome de usuários sem um back-end. |
+| **Considerações sobre segurança** | Armazene credenciais confidenciais (`client_id`, `client_secret`) com segurança em sistemas back-end. | Após a autenticação do usuário, ele recebe seu próprio _token de acesso temporário por meio de uma chamada de back-end_. Armazene com segurança as credenciais confidenciais (`client_id`, `client_secret`) nos sistemas de back-end para trocar o código de autorização pelo token de acesso. | Após a autenticação do usuário, ele recebe seu próprio _token de acesso temporário por meio de uma chamada de front-end_. Não usa `client_secret`, pois não é seguro armazenar em aplicativos front-end. Depende do PKCE para trocar o código de autorização por um token de acesso. |
+| **Tipo de Concessão** | _credenciais_do_cliente_ | _authorization_code_ | _authorization_code_ com **PKCE** |
+| **Tipo de Credencial do Adobe Developer Console** | Servidor OAuth para servidor | OAuth Web App | Aplicativo de página única OAuth |
 
 ## Acesso às APIs do Adobe e conceitos relacionados{#accessing-adobe-apis-and-related-concepts}
 

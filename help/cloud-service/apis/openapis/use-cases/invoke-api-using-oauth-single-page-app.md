@@ -11,13 +11,13 @@ jira: KT-17430
 thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2104'
 ht-degree: 0%
 
 ---
-
 
 # Chamar APIs do AEM baseadas em OpenAPI usando o aplicativo de página única OAuth
 
@@ -25,7 +25,7 @@ Saiba como invocar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service usa
 
 A autenticação de aplicativo de página única do OAuth é ideal para aplicativos baseados em JavaScript em execução no navegador. Se eles não têm um servidor de back-end ou precisam buscar tokens de acesso para interagir com as APIs do AEM em nome de um usuário.
 
-O fluxo PKCE estende o tipo de concessão OAuth 2.0 _authorization_code_, aumentando a segurança ao impedir a interceptação do código de autorização. Para obter mais informações, consulte a [Diferença entre as credenciais de servidor para servidor do OAuth e de aplicativo da Web do OAuth/aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials).
+O fluxo PKCE estende o tipo de concessão OAuth 2.0 _authorization_code_, aumentando a segurança ao impedir a interceptação do código de autorização. Para obter mais informações, consulte a seção [Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 >[!AVAILABILITY]
 >
