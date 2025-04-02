@@ -12,9 +12,9 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -93,24 +93,25 @@ Por exemplo, quando a invocação da API do autor do AEM Assets recebe o erro [4
 
 Para adicionar Perfis de produto para uma API do AEM, clique em **Editar perfis de produto** na seção **APIs** do projeto ADC, selecione o Perfil de Produto desejado na caixa de diálogo **Configurar API** e salve as alterações.
 
-    ![Editar perfis de produto](../assets/how-to/edit-product-profiles.png)
+![Editar perfis de produto](../assets/how-to/edit-product-profiles.png)
 
 Selecione o Perfil de Produto desejado (por exemplo, **Administradores do AEM - autor - Programa XXX - Ambiente XXX**) associado aos serviços necessários e salve as alterações.
 
-    ![Selecionar Perfil de Produto](../assets/how-to/select-product-profile.png)
+![Selecionar Perfil de Produto](../assets/how-to/select-product-profile.png)
 
 Observe que o **Perfil de Produto de Administradores do AEM - Autor - Programa XXX - Ambiente XXX** está associado ao serviço de **Administradores do AEM** e ao serviço de **Usuários da API AEM Assets**. Sem esse último, o Perfil do produto não aparecerá na lista de Perfis de produto disponíveis.
 
-    ![Serviços de Perfil de Produto](../assets/how-to/product-profile-services.png)
+![Serviços de Perfil de Produto](../assets/how-to/product-profile-services.png)
 
 A solicitação **PATCH** para atualizar os metadados do ativo agora deve funcionar sem problemas.
 
-    ![Solicitação PATCH](../assets/how-to/patch-request.png)
+![Solicitação PATCH](../assets/how-to/patch-request.png)
 
 
 >[!TAB Remover Perfis de Produto]
 
 Para remover Perfis de Produto de uma API do AEM, clique em **Editar perfis de produto** na seção **APIs** do projeto ADC, desmarque o Perfil de Produto desejado na caixa de diálogo **Configurar API** e salve as alterações.
+
 ![Desmarcar Perfil de Produto](../assets/how-to/deselect-product-profile.png)
 
 >[!ENDTABS]
