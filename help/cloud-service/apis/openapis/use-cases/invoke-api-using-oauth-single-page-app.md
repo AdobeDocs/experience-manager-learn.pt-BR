@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 7212bec910320847e9375dd1956a8cf76df1d579
+source-git-commit: 3d42029f193f293631585314983956618d707244
 workflow-type: tm+mt
-source-wordcount: '2104'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -569,6 +569,7 @@ Neste tutorial, você aprendeu a chamar APIs do AEM baseadas em OpenAPI no AEM a
 
 ## Recursos adicionais{#additional-resources}
 
+- [APIs do Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 - [Guia de Implementação de Autenticação do Usuário](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/)
 - [Solicitação de autorização](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#authorize-request)
 - [Buscando tokens de acesso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#fetching-access-tokens)
