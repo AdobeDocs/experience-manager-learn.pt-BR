@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 22d3c0058c04a1d812a95a47472f96efaa597513
+source-git-commit: 7212bec910320847e9375dd1956a8cf76df1d579
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 0%
@@ -62,7 +62,9 @@ O projeto Adobe Developer Console (ADC) está configurado para habilitar a auten
 >
 >O Projeto ADC NÃO fornece um _client_secret_. Em vez disso, o SPA gera um _code_verifier_ e _code_Challenge_ para trocar com segurança o código de autorização por um _token de acesso_. Ele elimina a necessidade de armazenar um segredo do cliente no lado do cliente, melhorando a segurança.
 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+
 
 
 O diagrama a seguir ilustra o fluxo funcional do WKND SPA _obtendo token de acesso específico do usuário para invocar APIs do AEM baseadas em OpenAPI_:
