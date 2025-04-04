@@ -12,9 +12,9 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: a98ca7ddc155190b63664239d604d11ad470fdf5
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,10 @@ Normalmente, esses cabeçalhos de cache são definidos nas configurações do AE
 
 ## Comportamento de cache padrão
 
-Revise o comportamento padrão de armazenamento em cache para Publicação e Autor do AEM quando um [Arquétipo de projeto do AEM](./enable-caching.md#default-caching-behavior) baseado no AEM for implantado.
+O armazenamento em cache das respostas HTTP no CDN da AEM as a Cloud Service é controlado pelos seguintes cabeçalhos de resposta HTTP da origem `Cache-Control`, `Surrogate-Control` ou `Expires`.  As respostas de origem que contêm `private`, `no-cache` ou `no-store` em `Cache-Control` não são armazenadas em cache.
+
+Revise o [comportamento padrão de armazenamento em cache](./enable-caching.md#default-caching-behavior) para Publicação e Autor do AEM quando um projeto do AEM baseado no Arquétipo de Projetos AEM for implantado.
+
 
 ## Desativar armazenamento em cache
 
@@ -53,10 +56,14 @@ Essa opção é a abordagem recomendada para desabilitar o armazenamento em cach
 <LocationMatch "$URL$ || $URL_REGEX$">
     # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
     Header unset Cache-Control
+    Header unset Surroagate-Control
     Header unset Expires
 
-    # Instructs the CDN to not cache the response.
-    Header set Cache-Control "private"
+    # Instructs the Browser and the CDN to not cache the response.
+    Header always set Cache-Control "private"
+
+    # Instructs only the CDN to not cache the response.
+    Header always set Surrogate-Control "private"
 </LocationMatch>
 ```
 
@@ -75,8 +82,8 @@ Observe que, para ignorar o cache CSS existente, uma alteração no arquivo CSS 
        Header unset Cache-Control
        Header unset Expires
    
-       # Instructs the CDN to not cache the response.
-       Header set Cache-Control "private"
+       # Instructs the Browser and the CDN to not cache the response.
+       Header always set Cache-Control "private"
    </LocationMatch>
    ```
 
