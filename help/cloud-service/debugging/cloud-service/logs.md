@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 229
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 0363505b426d6e4733c57409e17e9d69f7a567c7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -167,14 +167,7 @@ __Pod cm-p12345-e56789-aem-author-abcdefg-2222__
 
 ## Níveis de log recomendados{#log-levels}
 
-As orientações gerais da Adobe sobre os níveis de log por ambiente AEM as a Cloud Service são:
-
-+ Desenvolvimento local (AEM SDK): `DEBUG`
-+ Desenvolvimento: `DEBUG`
-+ Estágio: `WARN`
-+ Produção: `ERROR`
-
-Ao definir o nível de log mais apropriado para cada tipo de ambiente com o AEM as a Cloud Service, os níveis de log são mantidos no código
+A orientação geral da Adobe sobre os níveis de log por ambiente AEM as a Cloud Service é manter as configurações de log padrão do AEM (com o nível de log padrão de `INFO`). A Adobe recomenda que o código personalizado também seja instrumentado com instruções de log, o que permite executá-lo com o nível de log de `INFO`. Os níveis de log são mantidos no código
 
 + As configurações de log do Java são mantidas nas configurações do OSGi
 + Níveis de log do Apache Web Server e Dispatcher no projeto do Dispatcher
