@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
@@ -27,6 +27,9 @@ Saiba como configurar o ambiente do AEM as a Cloud Service para habilitar o aces
 >
 >As APIs do AEM baseadas em OpenAPI estão disponíveis como parte de um programa de acesso antecipado. Se você estiver interessado em acessá-las, recomendamos enviar um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) com uma descrição do seu caso de uso.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+
 O processo de configuração de alto nível envolve as seguintes etapas:
 
 1. Modernização do ambiente do AEM as a Cloud Service.
@@ -35,14 +38,14 @@ O processo de configuração de alto nível envolve as seguintes etapas:
 1. Configurar projeto ADC
 1. Configure a instância do AEM para habilitar a comunicação do Projeto ADC.
 
-## Modernização do ambiente do AEM as a Cloud Service
+## Modernização do ambiente do AEM as a Cloud Service{#modernization-of-aem-as-a-cloud-service-environment}
 
 A modernização do ambiente do AEM as a Cloud Service é uma atividade única por ambiente que envolve as seguintes etapas:
 
 - Atualize para o AEM versão **2024.10.18459.20241031T210302Z** ou posterior.
 - Adicione novos Perfis de produto a ele se o ambiente tiver sido criado antes da versão 2024.10.18459.20241031T210302Z.
 
-### Atualizar instância do AEM
+### Atualizar instância do AEM{#update-aem-instance}
 
 Para atualizar a instância do AEM, na seção _Ambientes_ do Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), selecione o ícone _reticências_ ao lado do nome do ambiente e selecione a opção **Atualizar**.
 
@@ -54,7 +57,7 @@ Em seguida, clique no botão **Enviar** e execute o Pipeline de Pilha Completa _
 
 No meu caso, o Pipeline de Pilha Completa é nomeado como **Dev :: Fullstack-Deploy**, e o ambiente do AEM é chamado **wknd-program-dev**. Seus nomes podem ser diferentes.
 
-### Adicionar novos perfis de produto
+### Adicionar novos perfis de produto{#add-new-product-profiles}
 
 Para adicionar novos Perfis de produto à instância do AEM, na seção _Ambientes_ do Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), selecione o ícone _reticências_ ao lado do nome do ambiente e selecione a opção **Adicionar Perfis de Produto**.
 
@@ -88,7 +91,7 @@ Por padrão, o **Serviço de Usuários da API do AEM Assets** não está associa
 >
 >A etapa acima é crítica para habilitar a autenticação de servidor para servidor para a API do AEM Assets. Sem essa associação, a API do AEM Assets não pode ser usada com o método de autenticação de servidor para servidor.
 
-## Criar projeto do Adobe Developer Console (ADC)
+## Criar projeto do Adobe Developer Console (ADC){#adc-project}
 
 O projeto ADC é usado para adicionar as APIs desejadas, configurar sua autenticação e associar a conta de autenticação ao Perfil do produto.
 
@@ -110,7 +113,7 @@ Para criar um projeto ADC:
 
    ![Editar nome do projeto](./assets/setup/edit-project-name.png)
 
-## Configurar projeto ADC
+## Configurar projeto ADC{#configure-adc-project}
 
 Depois de criar o projeto ADC, é necessário adicionar as APIs do AEM desejadas, configurar sua autenticação e associar a conta de autenticação ao Perfil do produto.
 
@@ -144,7 +147,7 @@ Depois de criar o projeto ADC, é necessário adicionar as APIs do AEM desejadas
 
 Se você escolher o método de autenticação do **Aplicativo Web OAuth** ou do **Aplicativo de Página Única** do OAuth, a associação do Perfil de Produto não será solicitada, mas o URI de redirecionamento do aplicativo será necessário. O URI de redirecionamento do aplicativo é usado para redirecionar o usuário para o aplicativo após a autenticação com um código de autorização. Os tutoriais de casos de uso relevantes descrevem essas configurações específicas de autenticação.
 
-## Configure a instância do AEM para habilitar a comunicação do Projeto ADC
+## Configure a instância do AEM para habilitar a comunicação do Projeto ADC{#configure-aem-instance}
 
 Para habilitar a ClientID do projeto ADC para comunicação com a instância do AEM, é necessário configurar a instância do AEM.
 
