@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
 duration: 50
-source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+source-git-commit: ed8749f312dc5ad18e047163bcae28d6753b6f8c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -17,7 +17,6 @@ ht-degree: 0%
 ---
 
 # Criar formulário adaptável com base no esquema JSON
-
 
 A capacidade de criar Forms adaptável com base no esquema JSON foi introduzida com a versão AEM Forms 6.3. Os detalhes sobre a criação do Forms adaptável com esquema JSON são explicados em detalhes neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
 
@@ -31,8 +30,6 @@ A captura de tela a seguir mostra os dados do formulário enviado armazenados no
 >
 >Certifique-se de que seu arquivo de esquema json esteja nomeado corretamente. Por exemplo, ele precisa ser nomeado no seguinte formato &lt;name>schema.json. Portanto, seu arquivo de esquema pode ser hipoteca.esquema.json ou crédito.esquema.json.
 
-
 ![armazenamento de dados](assets/datastored.gif)
-
 
 [Exemplos de esquemas JSON que podem ser usados para criar o Forms adaptável.](assets/samplejsonschemas.zip). Baixe e descompacte o arquivo zip para obter os esquemas JSON
