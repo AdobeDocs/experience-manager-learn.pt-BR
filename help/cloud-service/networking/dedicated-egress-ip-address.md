@@ -11,9 +11,9 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1370'
 ht-degree: 1%
 
 ---
@@ -226,7 +226,7 @@ As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas p
 
 ### HTTP/HTTPS
 
-Ao criar conexões HTTP/HTTPS do AEM, ao usar o endereço IP de saída dedicado, as conexões HTTP/HTTPS são automaticamente enviadas por proxy da AEM usando o endereço IP de saída dedicado. Nenhum código ou configuração adicional é necessário para oferecer suporte a conexões HTTP/HTTPS.
+Ao criar conexões HTTP/HTTPS do AEM, ao usar o endereço IP de saída dedicado, as conexões HTTP/HTTPS são automaticamente enviadas por proxy da AEM usando o endereço IP de saída dedicado. Nenhum código ou configuração adicional é necessário para oferecer suporte a conexões HTTP/HTTPS, além da configuração de rede avançada de endereço IP de saída dedicado.
 
 #### Exemplos de código
 
