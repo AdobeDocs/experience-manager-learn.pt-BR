@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
+source-git-commit: 4cdab2b243af74a8075ae65e8f24e7f56ef2a23b
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O processo de configuração de alto nível envolve as seguintes etapas:
 1. Modernização do ambiente do AEM as a Cloud Service.
 1. Ative o acesso às APIs do AEM.
 1. Criar projeto do Adobe Developer Console (ADC).
-1. Configurar projeto ADC
+1. Configurar projeto ADC.
 1. Configure a instância do AEM para habilitar a comunicação do Projeto ADC.
 
 ## Modernização do ambiente do AEM as a Cloud Service{#modernization-of-aem-as-a-cloud-service-environment}
