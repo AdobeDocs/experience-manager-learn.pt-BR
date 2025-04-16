@@ -8,9 +8,9 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
+source-git-commit: 46d65df60ce7a4cda7ff3aa3fb21c1ee60f59bc6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless 
 </tr>
 </table>
 
-## Tutoriais por estrutura
+## Tutoriais
 
 Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM pode ir além de um caso de uso headless puro, com opções de criação em contexto e gerenciamento de experiência.
 
@@ -137,6 +137,19 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <p>
   </td>
   <td>
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <img alt="React - Editar Conteúdo via Editor Universal" src="./assets/react-universal-editor.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+        <strong>Reagir - Editar Conteúdo via Editor Universal</strong>
+      </a>
+    </div>
+    <p>
+    <em>Use o Editor Universal para editar o conteúdo de um aplicativo React.</em>
+    <p>
+  </td>  
+  <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <img alt="React - Editor remoto" src="./assets/react-remote.png" />
     </a>
@@ -149,6 +162,8 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <em>Crie no contexto uma parte de um aplicativo React hospedado remotamente.</em>
     </p>
   </td>
+</tr>
+<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="React - Editor SPA" src="./assets/react-spa-editor.png" />
@@ -162,8 +177,6 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <em>Use o editor de SPA do AEM para gerenciar a experiência completa do aplicativo React.</em>
     <p>
   </td>
-</tr>
-<tr>  
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <img alt="Android - Serviços de conteúdo" src="./assets/android.png" />
@@ -190,6 +203,5 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <em>Crie um aplicativo Node.js usando tokens de desenvolvedor e de serviço para autenticar.</em>
     <p>
   </td>
-  <td></td>
 </tr>
 </table>
