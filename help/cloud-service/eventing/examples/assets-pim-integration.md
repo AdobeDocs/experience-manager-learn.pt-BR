@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Para receber Eventos do AEM Assets e executar a Ação do Adobe I/O Runtime cria
 
 Para habilitar a ClientID da credencial do servidor para servidor OAuth do projeto ADC para comunicação com a instância do AEM, é necessário configurar a instância do AEM.
 
-Isso é feito definindo a configuração no arquivo `config.yaml` no Projeto AEM. Em seguida, implante o arquivo `config.yaml` usando o Pipeline de configuração na Cloud Manager.
+Isso é feito definindo a configuração no arquivo `api.yaml` no Projeto AEM. Em seguida, implante o arquivo `api.yaml` usando o Pipeline de configuração na Cloud Manager.
 
-- No AEM Project, localize ou crie o arquivo `config.yaml` da pasta `config`.
+- No AEM Project, localize ou crie o arquivo `api.yaml` da pasta `config`.
 
-  ![Localizar configuração YAML](../assets/examples/assets-pim-integration/locate-config-yaml.png)
+  ![Localizar API YAML](../assets/examples/assets-pim-integration/locate-api-yaml.png)
 
-- Adicione a configuração a seguir ao arquivo `config.yaml`.
+- Adicione a configuração a seguir ao arquivo `api.yaml`.
 
   ```yaml
   kind: "API"
@@ -134,9 +134,9 @@ Isso é feito definindo a configuração no arquivo `config.yaml` no Projeto AEM
 
 - Confirme as alterações de configuração no repositório Git e envie as alterações para o repositório remoto.
 
-- Implante as alterações acima usando o Pipeline de configuração no Cloud Manager. Observe que o arquivo `config.yaml` também pode ser instalado em um RDE, usando ferramentas de linha de comando.
+- Implante as alterações acima usando o Pipeline de configuração no Cloud Manager. Observe que o arquivo `api.yaml` também pode ser instalado em um RDE, usando ferramentas de linha de comando.
 
-  ![Implantar config.yaml](../assets/examples/assets-pim-integration/config-pipeline.png)
+  ![Implantar API YAML](../assets/examples/assets-pim-integration/config-pipeline.png)
 
 ### Desenvolver ação em tempo de execução
 

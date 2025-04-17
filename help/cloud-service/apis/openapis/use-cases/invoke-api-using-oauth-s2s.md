@@ -1,6 +1,6 @@
 ---
-title: Invoque APIs de AEM baseadas em OpenAPI usando a autenticação OAuth Server-to-Server
-description: Aprenda a invocar APIs de AEM baseadas em OpenAPI em AEM como Cloud Service de aplicativos personalizados usando a autenticação OAuth Server-to-Server.
+title: Chamar APIs do AEM baseadas em OpenAPI usando a autenticação de servidor para servidor OAuth
+description: Saiba como chamar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados usando a autenticação de servidor para servidor do OAuth.
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,28 +12,24 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1687'
 ht-degree: 1%
 
 ---
 
-# Invoque APIs de AEM baseadas em OpenAPI usando a autenticação OAuth Server-to-Server
+# Chamar APIs do AEM baseadas em OpenAPI usando a autenticação de servidor para servidor OAuth
 
-Aprenda a invocar APIs de AEM baseadas em OpenAPI em AEM como uma Cloud Service de aplicativos personalizados usando _a autenticação OAuth Server-to-Server_ .
+Saiba como invocar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service a partir de aplicativos personalizados usando a autenticação de _servidor para servidor do OAuth_.
 
-A autenticação de Servidor para Servidor OAuth é ideal para serviços de back-end que precisam de acesso à API sem usuário interação. Usa o tipo de concessão do OAuth 2.0 _client_credentials_ para autenticar o aplicativo do cliente.
-
->[!AVAILABILITY]
->
->As APIs de AEM baseadas em OpenAPI estão disponíveis como parte de um programa de acesso antecipado. Se você estiver interessado em acessá-los, recomendamos que envie aem-apis@adobe.com](mailto:aem-apis@adobe.com) por e-mail [com uma descrição do seu caso de uso.
+A autenticação de servidor para servidor OAuth é ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário. Ele usa o tipo de concessão OAuth 2.0 _client_credentials_ para autenticar o aplicativo cliente.
 
 ## O que você aprende{#what-you-learn}
 
-Nesta tutorial, você aprende a:
+Neste tutorial, você aprenderá a:
 
-- Configure um projeto do Adobe Systems Developer Console (ADC) para acessar o Assets API Autor usando _a autenticação_ OAuth Server-to-Server.
+- Configure um projeto do Adobe Developer Console (ADC) para acessar a API do Assets Author usando a _autenticação de Servidor para Servidor do OAuth_.
 
 - Desenvolva um aplicativo NodeJS de amostra que chame a API do autor do Assets para recuperar metadados de um ativo específico.
 
@@ -127,23 +123,23 @@ Antes de desenvolver o aplicativo, vamos revisar [entregar o ponto de extremidad
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
 ```
 
-Para recuperar a metadados de um ativo específico, você precisa dos valores e `assetId` da `bucket` variável. É `bucket` o AEM nome instância sem o Adobe Systems nome de domínio (.adobeaemcloud.com), por exemplo, `author-p63947-e1420428`.
+Para recuperar os metadados de um ativo específico, você precisa dos valores `bucket` e `assetId`. O `bucket` é o nome da instância do AEM sem o nome de domínio do Adobe (.adobeaemcloud.com), por exemplo, `author-p63947-e1420428`.
 
-É `assetId` o UUID do JCR do ativo com o `urn:aaid:aem:` prefixo, por exemplo, `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`. Há várias maneiras de obter o `assetId`seguinte:
+O `assetId` é a JCR UUID do ativo com o prefixo `urn:aaid:aem:`, por exemplo, `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`. Há várias maneiras de obter o `assetId`:
 
-- Anexe a extensão AEM ativo caminho `.json` para obter a metadados de ativo. Por exemplo, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` e procure a `jcr:uuid` propriedade.
+- Anexe a extensão `.json` do caminho de ativos do AEM para obter os metadados dos ativos. Por exemplo, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` e procure a propriedade `jcr:uuid`.
 
-- Alternativamente, você pode obter o `assetId` inspecionando o ativo no inspetor de elementos do navegador. Look para o `data-id="urn:aaid:aem:..."` atributo.
+- Como alternativa, obtenha o `assetId` ao inspecionar o ativo no inspetor de elementos do navegador. Procure o atributo `data-id="urn:aaid:aem:..."`.
 
-  ![ativo do Inspect](../assets/s2s/inspect-asset.png)
+  ![Inspecionar ativo](../assets/s2s/inspect-asset.png)
 
 ### Chame a API usando o navegador
 
-Antes de desenvolver o aplicativo, vamos chamar a API usando o **recurso Try it** na documentação](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) da [API.
+Antes de desenvolver o aplicativo, vamos invocar a API usando o recurso **Experimentar** na [documentação sobre APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
-1. Abra a [documentação](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) Assets Autor API no navegador.
+1. Abra a [Documentação da API do Assets Author](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) no navegador.
 
-1. Expanda a _seção de Metadados_ e clique na opção **metadados de Entregas da ativo** especificada.
+1. Expanda a seção _Metadados_ e clique na opção **Fornece os metadados do ativo especificado**.
 
 1. No painel direito, clique no botão **Experimente**.
    ![Documentação da API](../assets/s2s/api-documentation.png)
@@ -378,7 +374,7 @@ As principais chamadas do código do aplicativo NodeJS de amostra são:
    ...
    ```
 
-1. **Invocação** da API: chama o Assets API Autor para recuperar metadados para um ativo específico, fornecendo o token de acesso para autorização.
+1. **Invocação de API**: invoca a API do autor do Assets para recuperar metadados para um ativo específico fornecendo o token de acesso para autorização.
 
    ```javascript
    // Function to retrieve metadata for a specific asset from AEM
@@ -412,21 +408,21 @@ As principais chamadas do código do aplicativo NodeJS de amostra são:
 
 ## Sob o capô
 
-Após a chamada da API bem-sucedida, um usuário que representa a credencial de servidor para servidor do ADC Project é criada no serviço AEM Autor, juntamente com os grupos de usuário que correspondem à configuração do Perfil do produto e dos serviços. A _conta técnica usuário_ está associada ao grupo de usuários perfil e _serviços_ do produto, que tem as permissões necessárias para _LER_ os ativo metadados.
+Após a invocação bem-sucedida da API, um usuário que representa a credencial OAuth de servidor para servidor do projeto ADC é criado no serviço do autor do AEM, juntamente com os grupos de usuários que correspondem à configuração do Perfil do produto e dos Serviços. O _usuário da conta técnica_ está associado ao Perfil de Produto e ao grupo de usuários _Serviços_, que tem as permissões necessárias para _LER_ os metadados do ativo.
 
-Para verificar a conta técnica usuário e a criação grupo de usuários, seguir estas etapas:
+Para verificar a criação do usuário da conta técnica e do grupo de usuários, siga estas etapas:
 
-- No projeto ADC, navegue até a configuração de credencial de servidor para servidor **do** OAuth. Observe o valor de Email **da** conta técnica.
+- No ADC Project, navegue até a configuração de credencial **OAuth Server-to-Server**. Anote o valor de **Email de Conta Técnica**.
 
-  ![Email da conta técnica](../assets/s2s/technical-account-email.png)
+  ![Email da Conta Técnica](../assets/s2s/technical-account-email.png)
 
-- No serviço Autor AEM, navegue até os usuários > > segurança > Ferramentas Ferramentas **** e o pesquisa do valor de E-mail **da** conta técnica. ********
+- No serviço de Autor do AEM, navegue até **Ferramentas** > **Segurança** > **Usuários** e procure o valor **Email de Conta Técnica**.
 
-  ![Usuário da conta técnica](../assets/s2s/technical-account-user.png)
+  ![Usuário da Conta Técnica](../assets/s2s/technical-account-user.png)
 
-- Clique na usuário de conta técnica para visualização os detalhes do usuário curtir **Grupos** associação. Como mostrado abaixo, a conta técnica usuário está associada aos **Ativos AEM Usuários colaboradores - autor - Programa XXX - Meio ambiente XXX** e **Usuários colaboradores Ativos AEM - Grupos de usuário de serviços** .
+- Clique no usuário da conta técnica para exibir os detalhes do usuário, como a associação de **Grupos**. Como mostrado abaixo, o usuário da conta técnica está associado aos **Usuários do AEM Assets Collaborator - autor - Programa XXX - Ambiente XXX** e aos **Usuários do AEM Assets Collaborator - Serviços** grupos de usuários.
 
-  ![Associação de usuário da conta técnica](../assets/s2s/technical-account-user-membership.png)
+  ![Associação de Usuário da Conta Técnica](../assets/s2s/technical-account-user-membership.png)
 
 - Observe que o usuário da conta técnica está associado ao **Perfil de produto Usuários do AEM Assets Collaborator - autor - Programa XXX - Ambiente XXX**. O Perfil de Produto está associado aos **Serviços de Usuários da API do AEM Assets** e **Usuários do AEM Assets Collaborator**.
 
@@ -440,17 +436,17 @@ Para verificar a conta técnica usuário e a criação grupo de usuários, segui
 
 Para _LER_ os metadados do ativo, o usuário da conta técnica criado para a credencial OAuth de servidor para servidor tem as permissões necessárias por meio do grupo de usuários Serviços (por exemplo, Usuários do AEM Assets Collaborator - Serviço).
 
-No entanto, para _Criar, Atualizar, Excluir_ (CUD) ao ativo metadados, o usuário de conta técnico requer permissões adicionais. É possível verificar isso invocando a API com uma não-solicitação GET (por exemplo, PATCH, DELETE) e observar a resposta de erro 403.
+No entanto, para _Criar, Atualizar, Excluir_ (CUD) os metadados de ativos, o usuário da conta técnica requer permissões adicionais. Você pode verificá-la chamando a API com uma solicitação diferente de GET (por exemplo, PATCH, DELETE) e observar a resposta ao erro 403.
 
-Vamos invocar o _PATCH_ solicitação para atualizar a ativo metadados e observar a resposta de erro 403.
+Vamos invocar a solicitação _PATCH_ para atualizar os metadados do ativo e observar a resposta de erro 403.
 
-- Abra a [documentação](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) Assets Autor API no navegador.
+- Abra a [Documentação da API do Assets Author](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) no navegador.
 
 - Insira os seguintes valores:
 
   | Seção | Parâmetro | Valor |
   | --- | --- | --- |
-  | **Balde** |  | O AEM instância nome sem o Adobe Systems nome de domínio (.adobeaemcloud.com), por exemplo. `author-p63947-e1420428` |
+  | **Balde** |  | O nome da instância do AEM sem o nome de domínio do Adobe (.adobeaemcloud.com), por exemplo, `author-p63947-e1420428`. |
   | **Segurança** | Token de portador | Use o token de acesso da credencial servidor para servidor OAuth do projeto ADC. |
   | **Segurança** | X-Api-Key | Use o valor `ClientID` da credencial OAuth Server-to-Server do projeto ADC. |
   | **Corpo** |  | `[{ "op": "add", "path": "foo","value": "bar"}]` |

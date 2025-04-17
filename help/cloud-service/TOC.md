@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 380bd2b3121db5810e4d295a5f7f9d1139d22402
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 15%
+source-wordcount: '1385'
+ht-degree: 18%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 15%
 + [Visão geral](./overview.md)
 + Avaliações do AEM {#aem-trials}
    + [Imagens](./aem-trials/images.md)
-+ Listas de Reprodução{#playlists}
++ Listas de reprodução{#playlists}
    + [Desenvolvimento do AEM](./playlists/development.md)
 + Introdução ao AEM as a Cloud Service{#introduction}
    + [O que é o AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
@@ -27,10 +27,10 @@ ht-degree: 15%
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Estratégia e liderança de pensamento{#strategy}
       + [Experience Manager - modelos e arquétipos de governança e equipe](./introduction/experience-manager-governance-and-staffing-models.md)
-+ Integrações do Experience Cloud{#integrations}
++ Integrações da Experience Cloud{#integrations}
    + [Integrações](./integrations/experience-cloud.md)
-   + [Adobe Target](./integrations/target.md)
-+ Tecnologia Subjacente {#underlying-technology}
+   + [AEM Headless e Target](./integrations/target.md)
++ Tecnologia subjacente {#underlying-technology}
    + [Arquitetura do AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Repositório de conteúdo Java](./underlying-technology/introduction-jcr.md)
@@ -48,7 +48,7 @@ ht-degree: 15%
    + [Atividade](./cloud-manager/activity.md)
    + [Nomes de Domínio Personalizados](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [Restauração de conteúdo](./cloud-manager/content-restore.md)
-   + Operações de Desenvolvimento{#devops}
+   + Dev Ops{#devops}
       + [Implantação de código](./cloud-manager/devops/deploy-code.md)
       + [Mesclar projetos](./cloud-manager/devops/merge-projects.md)
       + [Configurar pipelines](./cloud-manager/devops/configure-pipelines.md)
@@ -56,18 +56,18 @@ ht-degree: 15%
       + [Analisar resultados do teste](./cloud-manager/devops/analyze-test-results.md)
       + [Configurações do Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [Análise de log da CDN](./cloud-manager/devops/cdn-log-analysis.md)
-+ Configuração do Ambiente de Desenvolvimento Local {#local-development-environment-set-up}
++ Configuração do ambiente de desenvolvimento local {#local-development-environment-set-up}
    + [Visão geral](./local-development-environment/overview.md)
    + [Ferramentas de desenvolvimento](./local-development-environment/development-tools.md)
    + [AEM SDK local](./local-development-environment/aem-runtime.md)
    + [Ferramentas locais do Dispatcher](./local-development-environment/dispatcher-tools.md)
-+ Desenvolvendo{#developing}
++ Desenvolvimento{#developing}
    + Extensibilidade{#extensibility}
       + App Builder{#app-builder}
          + [Gerar token de acesso JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Gerar token de acesso de servidor para servidor](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Verificação de webhook do Github](./developing/extensibility/app-builder/github-webhook-verification.md)
-      + Extensibilidade da Interface do Usuário{#ui}
+      + Extensibilidade da interface{#ui}
          + [Visão geral](./developing/extensibility/ui/overview.md)
          + [Projeto do Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Inicializar aplicativo](./developing/extensibility/ui/app-initialization.md)
@@ -87,7 +87,7 @@ ht-degree: 15%
                + [Widgets do RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
                + [Medalhas RTE](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
                + [Campos personalizados](./developing/extensibility/ui/content-fragments/examples/editor-custom-field.md)
-   + Conceitos básicos de desenvolvimento{#basics}
+   + Noções básicas de desenvolvimento{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Ambiente de desenvolvimento local](./developing/basics/local-development-environment.md)
       + [Arquétipo de projeto do AEM](./developing/basics/aem-project-archetype.md)
@@ -105,7 +105,7 @@ ht-degree: 15%
       + [Ciclo de vida do componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Noções básicas de configurações do OSGi](./developing/osgi-services/configurations.md)
       + [Configurações do OSGi usando o OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avançado{#advanced}
+   + Avançado {#advanced}
       + [Armazenando Variantes de Página em Cache](./developing/advanced/variant-caching.md)
       + [Proteção CSRF](./developing/advanced/csrf-protection.md)
       + [Namespaces personalizados](./developing/advanced/custom-namespaces.md)
@@ -119,21 +119,21 @@ ht-degree: 15%
       + [Como configurar](./developing/rde/how-to-setup.md)
       + [Como usar](./developing/rde/how-to-use.md)
       + [Ciclo de vida de desenvolvimento](./developing/rde/development-life-cycle.md)
-   + Editor Universal{#universal-editor}
-      + Edição do aplicativo React{#react-app-editing}
+   + Editor universal{#universal-editor}
+      + Edição de aplicativo React{#react-app-editing}
          + [Visão geral](./developing/universal-editor/react-app/overview.md)
          + [Configuração de desenvolvimento local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Aplicativo React do instrumento](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [JavaDocs da API do AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
-+ Depurando o AEM{#debugging}
-   + Depurando o AEM SDK{#debugging-aem-sdk}
++ Depuração do AEM{#debugging}
+   + Depuração do AEM SDK{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Depuração remota](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [Console da Web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Ferramentas do Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Outras ferramentas](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Depurando o AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Depuração do AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Visão geral](./debugging/cloud-service/overview.md)
       + [Logs](./debugging/cloud-service/logs.md)
       + [Build e implantação](./debugging/cloud-service/build-and-deployment.md)
@@ -160,7 +160,7 @@ ht-degree: 15%
    + [CDN do Adobe - além do armazenamento em cache](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Páginas de erro personalizadas](./content-delivery/custom-error-pages.md)
    + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
-+ Armazenando em cache{#caching}
++ Armazenamento em cache{#caching}
    + [Visão geral](./caching/overview.md)
    + [Serviço de publicação do AEM](./caching/publish.md)
    + [Serviço de autor do AEM](./caching/author.md)
@@ -169,7 +169,7 @@ ht-degree: 15%
       + [Ativar armazenamento em cache](./caching/how-to/enable-caching.md)
       + [Desativar armazenamento em cache](./caching/how-to/disable-caching.md)
       + [Limpar cache](./caching/how-to/purge-cache.md)
-+ Acessando o AEM{#accessing}
++ Acesso ao AEM{#accessing}
    + [Visão geral](./accessing/overview.md)
    + [Usuários do Adobe IMS](./accessing/adobe-ims-users.md)
    + [Grupos de usuários do Adobe IMS](./accessing/adobe-ims-user-groups.md)
@@ -192,7 +192,7 @@ ht-degree: 15%
       + [Serviço de e-mail](./networking/examples/email-service.md)
 + Segurança {#security}
    + [Bloqueio de ataques de DoS/DDoS usando regras de filtro de tráfego](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Regras de Filtro de Tráfego incluindo regras WAF{#traffic-filter-and-waf-rules}
+   + Regras de Filtro de tráfego, incluindo regras do WAF{#traffic-filter-and-waf-rules}
       + [Visão geral](./security/traffic-filter-rules/overview.md)
       + [Como configurar](./security/traffic-filter-rules/how-to-setup.md)
       + [Exemplos e análise de resultados](./security/traffic-filter-rules/examples-and-analysis.md)
@@ -254,7 +254,7 @@ ht-degree: 15%
       + [11 - Encaminhar para o Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Implantar no ambiente de desenvolvimento](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [13 - Atualização do arquétipo maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
-   + Criar Formulário Adaptável{#create-first-af}
+   + Criar formulário adaptável{#create-first-af}
       + [Introdução](./forms/create-first-af/introduction.md)
       + [Criar tema](./forms/create-first-af/create-theme.md)
       + [Criar modelo](./forms/create-first-af/create-template.md)
@@ -284,23 +284,23 @@ ht-degree: 15%
       + [Criar elementos de dados](./forms/form-data-analytics/data-elements.md)
       + [Criar regras](./forms/form-data-analytics/rules.md)
       + [Testar a solução](./forms/form-data-analytics/test.md)
-   + Criando Componente da Lista Suspensa de Países{#countries-drop-down}
+   + Criação do componente de lista suspensa de países{#countries-drop-down}
       + [Introdução](./forms/countries-drop-down/introduction.md)
       + [Criar o componente](./forms/countries-drop-down/component.md)
       + [Criar caixa de diálogo](./forms/countries-drop-down/dialog.md)
       + [Criar modelo do Sling](./forms/countries-drop-down/slingmodel.md)
       + [Criar e testar](./forms/countries-drop-down/build.md)
-   + Criando Variações de Botão{#style-system}
+   + Criar variações de botão{#style-system}
       + [Introdução](./forms/style-system/introduction.md)
       + [Definir política](./forms/style-system/style-policy.md)
       + [Definir variações](./forms/style-system/create-variations.md)
       + [Testar variações](./forms/style-system/build.md)
-   + Usando guias verticais{#using-vertical-tabs}
+   + Uso de guias verticais{#using-vertical-tabs}
       + [1. Introdução](./forms/using-vertical-tabs/introduction.md)
       + [2. Criar formulário](./forms/using-vertical-tabs/create-af.md)
       + [3. Navegação](./forms/using-vertical-tabs/navigation.md)
       + [4. Adicionar ícones](./forms/using-vertical-tabs/icons.md)
-   + Usando o serviço de saída e formulários {#forms-cs-output-and-forms-service}
+   + Uso do serviço de formulários e saída{#forms-cs-output-and-forms-service}
       + [Gerar PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Geração de documentos no AEM Forms CS{#doc-gen-formscs}
       + [Introdução](./forms/doc-gen-forms-cs/introduction.md)
@@ -310,13 +310,13 @@ ht-degree: 15%
       + [Mesclar dados com modelo](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Testar a solução](./forms/doc-gen-forms-cs/test.md)
       + [Desafio](./forms/doc-gen-forms-cs/challenge.md)
-   + Usando a API de Serviços de documento da Forms{#forms-document-services-api}
+   + Uso da API de serviços de documento da Forms{#forms-document-services-api}
       + [Introdução](./forms/forms-document-services/introduction.md)
       + [Configurar OpenAPI](./forms/forms-document-services/using-open-api.md)
       + [Gerar token de acesso](./forms/forms-document-services/generate-access-token.md)
       + [Aplicar direitos de uso](./forms/forms-document-services/make-api-calls.md)
       + [Código de exemplo](./forms/forms-document-services/sample-project.md)
-   + Geração de documentos usando a API em lote {#formscs-batch-api}
+   + Geração de documentos usando a API em lote{#formscs-batch-api}
       + [Introdução](./forms/formscs-batch-api/introduction.md)
       + [Configurar armazenamento do Azure](./forms/formscs-batch-api/configure-azure-storage.md)
       + [Criar configuração em lote do USC](./forms/formscs-batch-api/configure-usc-batch.md)
@@ -335,13 +335,13 @@ ht-degree: 15%
       + [Introdução](./forms/forms-cs-with-marketo/part1.md)
       + [Criar Source de dados](./forms/forms-cs-with-marketo/part2.md)
       + [Criar modelo de dados do formulário](./forms/forms-cs-with-marketo/part3.md)
-   + Armazenar Envios de Formulário com Marcas de Índice Blob{#store-submiited-data-with-metadata-tags}
+   + Armazenar envios de formulário com tags de índice Blob{#store-submiited-data-with-metadata-tags}
       + [Introdução](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Estender componente do grupo de opções](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [Criar configuração OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Criar tags de índice](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Criar envio personalizado](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
-   + Preencher formulário baseado no componente principal{#prefill-core-component-based-form}
+   + Preencher previamente o formulário baseado no componente principal{#prefill-core-component-based-form}
       + [Introdução](./forms/prefill-core-component-form/introduction.md)
       + [Serviço de preenchimento prévio de gravação](./forms/prefill-core-component-form/pre-fill-service.md)
       + [Testar a solução](./forms/prefill-core-component-form/test-solution.md)
@@ -351,7 +351,7 @@ ht-degree: 15%
       + [Armazenar dados de formulário no Armazenamento do Azure](./forms/forms-cs-azure-portal/create-af.md)
       + [Preencher formulário previamente](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envios de consultas](./forms/forms-cs-azure-portal/query-submitted-data.md)
-   + Salvar e Retomar preenchimento de formulário{#prefill-azure-storage}
+   + Salvar e retomar o preenchimento do formulário{#prefill-azure-storage}
       + [1- Introdução](./forms/prefill-azure-storage/introduction.md)
       + [2- Criar componente de página](./forms/prefill-azure-storage/page-component.md)
       + [3- Criar modelo de formulário adaptável](./forms/prefill-azure-storage/associate-page-component.md)
@@ -405,13 +405,13 @@ ht-degree: 15%
       + [Configurar o manifest.yml](./asset-compute/develop/manifest.md)
       + [Desenvolver um trabalhador](./asset-compute/develop/worker.md)
       + [Usar a Ferramenta de desenvolvimento](./asset-compute/develop/development-tool.md)
-   + Teste e Depuração{#test-debug}
+   + Teste e depuração{#test-debug}
       + [Testar um trabalhador](./asset-compute/test-debug/test.md)
       + [Depurar um trabalhador](./asset-compute/test-debug/debug.md)
    + Implantar{#deploy}
       + [Implantar no Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrar ao AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avançado{#advanced}
+   + Avançado {#advanced}
       + [Trabalhadores de metadados](./asset-compute/advanced/metadata.md)
    + [Resolução de problemas](./asset-compute/troubleshooting.md)
 
@@ -422,7 +422,7 @@ ht-degree: 15%
    + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [Autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Recursos de especialistas {#expert-resources}
-   + Campeões da AEM {#aem-champions}
+   + AEM Champions {#aem-champions}
       + [Manual de integração do Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Tipos de ambiente do Cloud Manager](./expert-resources/aem-champions/environment-types.md)
       + [Interface do usuário do Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
