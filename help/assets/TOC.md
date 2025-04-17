@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 15%
+source-wordcount: '454'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 15%
    + [Visualização do Assets](playlists/assets-view.md)
    + [Exibição do administrador](playlists/admin-view.md)
 
-+ Configurando{#configuring}
++ Configuração{#configuring}
    + [Pastas de linha de base](configuring/baseline-folders.md)
    + [Permissões da linha de base](configuring/baseline-permissions.md)
    + [Marcação com tags](configuring/tagging.md)
@@ -34,7 +34,7 @@ ht-degree: 15%
    + [Processamento de perfis](configuring/processing-profiles.md)
    + [Workflows de início automático](configuring/auto-start-workflows.md)
 
-+ Criação {#authoring}
++ Criação  {#authoring}
    + [Alternar visualizações](./authoring/switch-views.md)
    + [Navegação](./authoring/navigation.md)
    + [Operações básicas](./authoring/basic-operations.md)
@@ -42,7 +42,7 @@ ht-degree: 15%
    + [Representações](./authoring/renditions.md)
    + [Relacionar e não relacionar](./authoring/relate-unrelate.md)
 
-+ Collaboration{#collaboration}
++ Colaboração{#collaboration}
    + [Observar](./collaboration/watch.md)
    + [Linha do tempo e caixa de entrada](./collaboration/timeline-and-inbox.md)
    + [Comentários e anotações](./collaboration/comments-and-annotations.md)
@@ -77,7 +77,7 @@ ht-degree: 15%
    + [Tags inteligentes para vídeos](metadata/video-smart-tags.md)
    + [Importar e exportar metadados](metadata/metadata-import-export.md)
 
-+ Content Hub{#content-hub}
++ Centro de conteúdo{#content-hub}
    + [Visão geral](./content-hub/overview.md)
    + [Configurar](./content-hub/set-up.md)
    + [Configurar ](./content-hub/configure.md)
@@ -86,6 +86,8 @@ ht-degree: 15%
    + [Variantes de imagem usando o Adobe Express](./content-hub/image-variants.md)
    + [Coleções](./content-hub/collections.md)
    + [Compartilhamento](./content-hub/share.md)
+   + Casos de uso{#use-cases}
+      + [Gerenciar ativos](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Plug-in do Sidekick](./edge-delivery-services/sidekick-plugin.md)
@@ -149,13 +151,13 @@ ht-degree: 15%
       + [Transmissão adaptável DASH](dynamic-media/dynamic-media-dash.md)
       + [Vídeo de recorte inteligente do Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Reprodutor de vídeo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + Visualizadores {#viewers}
+   + Espectadores {#viewers}
       + [Espectadores](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizadores de imagem panorâmica e vertical](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizadores com o Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Usando com o AEM Sites {#dm-with-aem-sites}
+   + Utilização do com o AEM Sites {#dm-with-aem-sites}
       + [Fragmentos de experiência](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
@@ -175,11 +177,11 @@ ht-degree: 15%
       + [Download do Assets no aplicativo Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [APIs IPS do Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
-+ Integração com o Workfront{#workfront}
++ Integração do Workfront{#workfront}
    + Conector aprimorado{#enhanced-connector}
       + [Noções básicas do conector aprimorado](./workfront/enhanced-connector/basics.md)
       + [Pastas de projeto](./workfront/enhanced-connector/project-folders.md)
-      + Série Especialistas da AEM{#aem-experts-series}
+      + Série AEM Experts{#aem-experts-series}
          + [Visão geral](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurar](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Formulários do Workfront e metadados do AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
