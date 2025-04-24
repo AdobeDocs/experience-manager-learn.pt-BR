@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,6 @@ O [!DNL Visual Studio Code] é uma ótima opção para desenvolvedores de front-
 
 * [**Baixar**](https://code.visualstudio.com/Download) **Código Visual Studio**
 * **[repositório](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Ferramenta semelhante a FTP para conteúdo JCR
-* **[aemfed](https://aemfed.io/)** - Acelere seu fluxo de trabalho de front-end no AEM
 * **[AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Extensão com suporte para a comunidade&#42; para o Visual Studio Code
 * **[Projeto WKND](https://github.com/adobe/aem-guides-wknd)** - Exemplo de projeto AEM mostrado neste vídeo.
 
@@ -189,8 +188,7 @@ O [!DNL Visual Studio Code] é uma ótima opção para desenvolvedores de front-
 * 00:53 - Criar e implantar código-fonte com Maven
 * 04:03 - Enviar alterações de código com a ferramenta de linha de comando do Repo
 * 08:29 - Extrair alterações de código com a ferramenta de linha de comando do Repo
-* 10:40 - Alterações no código de push com a ferramenta aemfed
-* 14:24 - Solução de problemas, Reconstrução de bibliotecas de clientes
+* 10:32 - Solução de problemas, Reconstrução de bibliotecas de clientes
 
 ### [!DNL CRXDE Lite]
 
