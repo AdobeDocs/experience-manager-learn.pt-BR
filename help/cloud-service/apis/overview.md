@@ -12,10 +12,10 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: b7cd1bb9584359e8bf8a168f8c062be54399f5ac
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ O AEM oferece as seguintes APIs para interagir com seus tipos de serviço de aut
 
 | Tipo de API do AEM | Descrição | Disponibilidade | Caso de uso | Exemplos de API |
 | --- | --- | --- | --- | --- |
-| APIs do AEM baseadas em OpenAPI | APIs padronizadas e legíveis por máquina para Assets, Sites e Forms. | **Somente AEM as a Cloud Service** | Desenvolvimento de API First, aplicativos modernos | [API do Autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de Pastas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API do AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/), [Forms Acrobat Services](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) e outros |
+| APIs do AEM baseadas em OpenAPI | APIs padronizadas e legíveis por máquina para Assets, Sites e Forms. | **Somente AEM as a Cloud Service** | Desenvolvimento de API First, aplicativos modernos | [API do Autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de Pastas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API do AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [Forms Acrobat Services](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) e outros |
 | APIs RESTful | Endpoints REST tradicionais para interação com recursos do AEM. | AEM 6.X, AEM as a Cloud Service | Operações CRUD, aplicativos modernos | [API HTTP do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST do fluxo de trabalho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [Exportador JSON para Serviços de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) e outros |
 | APIs do GraphQL | Otimizado para recuperar conteúdo estruturado com eficiência com consultas flexíveis. | AEM 6.X, AEM as a Cloud Service | CMS headless, SPAs, aplicativos móveis | [API GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
 | APIs tradicionais (não RESTful) | APIs mais antigas, como JCR, Modelos Sling, Construtor de consultas e outras. | AEM 6.X, AEM as a Cloud Service | Integrações herdadas, compatibilidade com versões anteriores | [API do Construtor de Consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) e outras |
@@ -110,8 +110,8 @@ Saiba mais sobre as APIs do AEM baseadas em OpenAPI e os conceitos importantes d
                     <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo NodeJS personalizado usando a autenticação de servidor para servidor do OAuth.</p>
                 </div>
                 <a href="./openapis/use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -133,8 +133,8 @@ Saiba mais sobre as APIs do AEM baseadas em OpenAPI e os conceitos importantes d
                     <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo web personalizado usando a autenticação do OAuth Web App.</p>
                 </div>
                 <a href="./openapis/use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -156,8 +156,8 @@ Saiba mais sobre as APIs do AEM baseadas em OpenAPI e os conceitos importantes d
                     <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo de página única (SPA) personalizado usando o fluxo de PKCE do OAuth 2.0.</p>
                 </div>
                 <a href="./openapis/use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -208,8 +208,8 @@ Saiba mais sobre as APIs do GraphQL e como usá-las na [Introdução ao AEM Head
                     <p class="is-size-6">Saiba como criar um Aplicativo de página única (SPA) que busca conteúdo do AEM usando APIs do GraphQL.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#example-single-page-app" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -231,8 +231,8 @@ Saiba mais sobre as APIs do GraphQL e como usá-las na [Introdução ao AEM Head
                     <p class="is-size-6">Saiba como criar um aplicativo móvel que busque conteúdo do AEM usando APIs do GraphQL.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/mobile#example-mobile-apps" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -254,8 +254,8 @@ Saiba mais sobre as APIs do GraphQL e como usá-las na [Introdução ao AEM Head
                     <p class="is-size-6">Saiba como criar um componente da Web que busque conteúdo do AEM usando APIs do GraphQL.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/web-component#example-web-component" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -300,8 +300,8 @@ Saiba mais sobre as APIs RESTful, como [API HTTP do Assets](https://experiencele
                     <p class="is-size-6">Saiba como criar um aplicativo móvel nativo que busque conteúdo do AEM usando as APIs RESTful do Content Services.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -323,8 +323,8 @@ Saiba mais sobre as APIs RESTful, como [API HTTP do Assets](https://experiencele
                     <p class="is-size-6">Saiba como invocar APIs RESTful usando autenticação JSON Web Token (JWT).</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>

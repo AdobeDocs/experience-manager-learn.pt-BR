@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -51,9 +51,9 @@ As APIs do AEM baseadas em OpenAPI oferecem suporte à autenticação OAuth 2.0,
 
 - **Credencial do servidor para servidor OAuth**: ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário. Ele usa o tipo de concessão _client_credentials_, permitindo o gerenciamento de acesso seguro no nível do servidor. Para obter mais informações, consulte [Credencial do servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
 
-- **Credencial do Aplicativo Web OAuth**: adequada para aplicativos Web com componentes de front-end e _back-end_ que acessam APIs do AEM em nome dos usuários. Ela usa o tipo de concessão _authorization_code_, em que o servidor de back-end gerencia segredos e tokens de forma segura. Para obter mais informações, consulte [Credencial do aplicativo Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-web-app-credential).
+- **Credencial do Aplicativo Web OAuth**: adequada para aplicativos Web com componentes de front-end e _back-end_ que acessam APIs do AEM em nome dos usuários. Ela usa o tipo de concessão _authorization_code_, em que o servidor de back-end gerencia segredos e tokens de forma segura. Para obter mais informações, consulte [Credencial do aplicativo Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential).
 
-- **Credencial de aplicativo de página única do OAuth**: projetada para SPAs em execução no navegador, que precisa acessar APIs em nome de um usuário sem um servidor back-end. Ele usa o tipo de concessão _authorization_code_ e depende de mecanismos de segurança do lado do cliente usando PKCE (Chave de Prova para Troca de Código) para proteger o fluxo do código de autorização. Para obter mais informações, consulte [Credencial de aplicativo de página única do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
+- **Credencial de aplicativo de página única do OAuth**: projetada para SPAs em execução no navegador, que precisa acessar APIs em nome de um usuário sem um servidor back-end. Ele usa o tipo de concessão _authorization_code_ e depende de mecanismos de segurança do lado do cliente usando PKCE (Chave de Prova para Troca de Código) para proteger o fluxo do código de autorização. Para obter mais informações, consulte [Credencial de aplicativo de página única do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
 
 ## Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 

@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Para concluir este tutorial, você precisa:
 
 - O projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) de amostra deve ser implantado nele.
 
-- Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - Instale o [Node.js](https://nodejs.org/en/) no computador local para executar o aplicativo NodeJS de amostra.
 
@@ -117,7 +117,7 @@ Para fins de teste, você pode usar o [Postman](https://www.postman.com/), [curl
 
 ### Revise a API
 
-Antes de desenvolver o aplicativo, vamos revisar [entregar o ponto de extremidade de metadados](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/../assets/author/#operation/getAssetMetadata) do ativo especificado pela _API do Autor do Assets_. A sintaxe da API é:
+Antes de desenvolver o aplicativo, vamos revisar [entregar o ponto de extremidade de metadados](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) do ativo especificado pela _API do Autor do Assets_. A sintaxe da API é:
 
 ```http
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
@@ -471,4 +471,4 @@ No Projeto ADC, você adicionou as APIs do AEM, configurou o tipo de autenticaç
 
 ## Recursos adicionais
 
-- [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+- [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)

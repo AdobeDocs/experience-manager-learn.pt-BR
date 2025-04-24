@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '2213'
 ht-degree: 0%
@@ -428,7 +428,7 @@ Para concluir este tutorial, você precisa:
 
 - O projeto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) de amostra deve ser implantado nele.
 
-- Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - Instale o [Node.js](https://nodejs.org/en/) no computador local para executar o aplicativo NodeJS de amostra.
 
@@ -648,7 +648,7 @@ Você pode usar o tutorial como referência para integrar as APIs do AEM baseada
 
 ## Recursos adicionais
 
-- [Guia de Implementação de Autenticação do Usuário](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/)
-- [Solicitação de autorização](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#authorize-request)
-- [Buscando tokens de acesso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#fetching-access-tokens)
-- [Atualizando tokens de acesso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/#refreshing-access-tokens)
+- [Guia de Implementação de Autenticação do Usuário](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation)
+- [Solicitação de autorização](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#authorize-request)
+- [Buscando tokens de acesso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#fetching-access-tokens)
+- [Atualizando tokens de acesso](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/ims#refreshing-access-tokens)
