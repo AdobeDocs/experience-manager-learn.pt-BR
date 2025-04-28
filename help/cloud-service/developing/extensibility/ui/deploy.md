@@ -11,9 +11,9 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 1049f605eb1c3b68e70e34d4cdad31858b076858
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,22 @@ Para implantar uma nova versão de uma extensão, ela deve primeiro ser revogada
 1. Fazer logon no [Adobe Exchange](https://exchange.adobe.com/)
 1. Navegue até __Gerenciar__ > __Aplicativos App Builder__
 1. __Revogar__ a extensão a ser atualizada
+
+Após revogar a extensão, ela ainda estará visível com o status de revogada no Gerenciador de extensões. Para removê-lo completamente, você precisa remover o projeto.
+
+O botão para remover o projeto está na parte superior direita:
+
+![Botão Excluir](./assets/deploy/extension-delete-button.png){align="center"}
+
+Até que a extensão não seja revogada, não será possível excluir o projeto:
+
+![Não é possível excluir o projeto](./assets/deploy/extension-can-not-delete-project.png){align="center"}
+
+Quando a extensão é revogada, o projeto pode ser removido:
+
+![Não é possível excluir o projeto](./assets/deploy/extension-delete-procject.png){align="center"}
+
+Após remover o projeto, a extensão não fica mais visível no Extension Manager.
 
 ### Implantar a extensão
 
