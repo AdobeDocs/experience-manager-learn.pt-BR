@@ -1,7 +1,9 @@
 ---
 title: Arquivo de informativos mensais do Experience League.
 description: Baixe versões arquivadas do informativo.
-source-git-commit: 8ae09d66b856a15f48977aeef7580b65368014e2
+hidefromtoc: true
+hide: true
+source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
