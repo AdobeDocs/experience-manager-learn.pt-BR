@@ -12,9 +12,9 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 7cd9efb62d1afdcc089e1e6260d6cf2fc5495afe
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '999'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ O AEM oferece as seguintes APIs para interagir com seus tipos de serviço de aut
 
 | Tipo de API do AEM | Descrição | Disponibilidade | Caso de uso | Exemplos de API |
 | --- | --- | --- | --- | --- |
-| APIs do AEM baseadas em OpenAPI | APIs padronizadas e legíveis por máquina para Assets, Sites e Forms. | **Somente AEM as a Cloud Service** | Desenvolvimento de API First, aplicativos modernos | [API do Autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de Pastas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API do AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [Forms Acrobat Services](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) e outros |
+| APIs do AEM baseadas em OpenAPI | APIs padronizadas e legíveis por máquina para Assets, Sites e Forms. | **Somente AEM as a Cloud Service** | Desenvolvimento de API First, aplicativos modernos | [API do Autor do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/), [API de Pastas](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/), [API do AEM Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), [API de Serviços de Documentos do Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) e outros |
 | APIs RESTful | Endpoints REST tradicionais para interação com recursos do AEM. | AEM 6.X, AEM as a Cloud Service | Operações CRUD, aplicativos modernos | [API HTTP do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), [API REST do fluxo de trabalho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-program-interaction#using-the-workflow-rest-api), [Exportador JSON para Serviços de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/json-exporter) e outros |
 | APIs do GraphQL | Otimizado para recuperar conteúdo estruturado com eficiência com consultas flexíveis. | AEM 6.X, AEM as a Cloud Service | CMS headless, SPAs, aplicativos móveis | [API GraphQL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments) |
 | APIs tradicionais (não RESTful) | APIs mais antigas, como JCR, Modelos Sling, Construtor de consultas e outras. | AEM 6.X, AEM as a Cloud Service | Integrações herdadas, compatibilidade com versões anteriores | [API do Construtor de Consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api) e outras |
