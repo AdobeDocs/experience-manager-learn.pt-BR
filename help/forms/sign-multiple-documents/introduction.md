@@ -22,7 +22,7 @@ ht-degree: 3%
 Se você estiver solicitando uma hipoteca ou abrindo uma nova conta bancária, será necessário preencher e assinar vários formulários. A integração entre o AEM Forms e o Acrobat Sign facilita o preenchimento e a assinatura de vários formulários.
 O vídeo a seguir o orienta pelo caso de uso de assinatura de vários formulários.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444973?quality=12&learn=on&captions=por_br)
 
 ## Pré-requisitos
 
