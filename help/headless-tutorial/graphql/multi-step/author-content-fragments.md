@@ -71,14 +71,14 @@ Os fragmentos de conteúdo são armazenados em pastas no AEM Assets. Para criar 
    * Título*: **Inglês**
    * Nome: **en**
 
-   Uma prática recomendada é configurar projetos para suporte multilíngue. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   Uma prática recomendada é configurar projetos para suporte multilíngue. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=pt-BR).
 
 
 ## Criar um fragmento de conteúdo {#create-content-fragment}
 
 >[!TIP]
 >
->Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para criar e criar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para criar e criar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=pt-BR).
 
 Em seguida, vários Fragmentos de conteúdo são criados com base nos modelos **Equipe** e **Pessoa**.
 
@@ -152,7 +152,7 @@ Em seguida, preencha os fragmentos recém-criados com dados.
 
 >[!TIP]
 >
->Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para publicar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Para usuários locais do AEM SDK: utilize a interface do usuário do AEM Assets para publicar fragmentos de conteúdo, em vez da interface do usuário de fragmentos de conteúdo descrita abaixo. Para obter instruções detalhadas, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=pt-BR#publishing-and-referencing-a-fragment).
 
 Após a revisão e verificação, publique o `Content Fragments` criado
 
@@ -173,5 +173,5 @@ No próximo capítulo, [Explorar APIs do GraphQL](explore-graphql-api.md), você
 
 ## Documentação relacionada
 
-* [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
+* [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=pt-BR)
 * [Variações - Criação dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=pt-BR)

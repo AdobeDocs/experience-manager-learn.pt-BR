@@ -32,7 +32,7 @@ Ao seguir este artigo, você poderá colocar os ícones como mostrado abaixo
 
 ## Pré-requisitos
 
-Para seguir este artigo, você precisa se familiarizar com o Git, criar e implantar um projeto do AEM usando o Cloud Manager, configurar um pipeline de front-end no AEM Cloud Manager e um pouco de CSS. Se você não estiver familiarizado com os tópicos mencionados acima, siga o artigo [uso de temas para estilizar os componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder).
+Para seguir este artigo, você precisa se familiarizar com o Git, criar e implantar um projeto do AEM usando o Cloud Manager, configurar um pipeline de front-end no AEM Cloud Manager e um pouco de CSS. Se você não estiver familiarizado com os tópicos mencionados acima, siga o artigo [uso de temas para estilizar os componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components#rename-env-file-theme-folder).
 
 ## Adicionar ícones ao tema
 

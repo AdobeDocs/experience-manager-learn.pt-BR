@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Integrar o AEM Sites e o Adobe Analytics
 
-Saiba como integrar o AEM Sites e o Adobe Analytics à extensão de tags da Adobe Analytics, usando os recursos integrados da [Camada de dados do cliente Adobe com os Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) para coletar dados sobre uma página no Adobe Experience Manager Sites. [As marcas no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e na [extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) são usadas para criar regras para enviar dados de página para o Adobe Analytics.
+Saiba como integrar o AEM Sites e o Adobe Analytics à extensão de tags da Adobe Analytics, usando os recursos integrados da [Camada de dados do cliente Adobe com os Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR) para coletar dados sobre uma página no Adobe Experience Manager Sites. [As marcas no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) e na [extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=pt-BR) são usadas para criar regras para enviar dados de página para o Adobe Analytics.
 
 ## O que você vai criar {#what-build}
 
@@ -40,9 +40,9 @@ Neste tutorial, você acionará uma regra de tag com base em um evento da Camada
 Os seguintes são obrigatórios:
 
 * **Propriedade de marca** no Experience Platform
-* Servidor de rastreamento e ID do conjunto de relatórios de teste/desenvolvimento do **Adobe Analytics**. Consulte a documentação a seguir para [criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* Extensão do navegador do [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html). Capturas de tela deste tutorial capturadas do navegador Chrome.
-* (Opcional) Site do AEM com a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Este tutorial usa o site [WKND](https://wknd.site/us/en.html) voltado ao público, mas você pode usar seu próprio site.
+* Servidor de rastreamento e ID do conjunto de relatórios de teste/desenvolvimento do **Adobe Analytics**. Consulte a documentação a seguir para [criar um conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=pt-BR).
+* Extensão do navegador do [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=pt-BR). Capturas de tela deste tutorial capturadas do navegador Chrome.
+* (Opcional) Site do AEM com a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#installation-activation). Este tutorial usa o site [WKND](https://wknd.site/us/en.html) voltado ao público, mas você pode usar seu próprio site.
 
 >[!NOTE]
 >
@@ -52,10 +52,10 @@ Os seguintes são obrigatórios:
 
 O [WKND](https://wknd.site/us/en.html) é um site voltado para o público criado com base em [um projeto de código aberto](https://github.com/adobe/aem-guides-wknd) projetado como uma referência e [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) para uma implementação do AEM.
 
-Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador da Experience Platform para **alternar** o [Site WKND](https://wknd.site/us/en.html) ativo para *sua propriedade de marca*. No entanto, você pode usar seu próprio site do AEM se ele já tiver a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+Em vez de configurar um ambiente AEM e instalar a base de código WKND, você pode usar o depurador da Experience Platform para **alternar** o [Site WKND](https://wknd.site/us/en.html) ativo para *sua propriedade de marca*. No entanto, você pode usar seu próprio site do AEM se ele já tiver a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#installation-activation).
 
-1. Faça logon no Experience Platform e [crie uma propriedade de Marca](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (caso ainda não o tenha feito).
-1. Certifique-se de que uma biblioteca [de JavaScript de marca inicial tenha sido criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promovida para o [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) de marca.
+1. Faça logon no Experience Platform e [crie uma propriedade de Marca](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=pt-BR) (caso ainda não o tenha feito).
+1. Certifique-se de que uma biblioteca [de JavaScript de marca inicial tenha sido criada](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=pt-BR#create-a-library) e promovida para o [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) de marca.
 1. Copie o código de inserção do JavaScript do ambiente de tag em que sua biblioteca foi publicada.
 
    ![Copiar Código de Inserção da Propriedade de Marca](assets/collect-data-analytics/launch-environment-copy.png)
@@ -75,7 +75,7 @@ Em vez de configurar um ambiente AEM e instalar a base de código WKND, você po
 
 ## Verificar a camada de dados do cliente Adobe no site WKND
 
-O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é compilado com os Componentes Principais do AEM e tem a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) por padrão. Em seguida, verifique se a Camada de dados de clientes Adobe está ativada.
+O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é compilado com os Componentes Principais do AEM e tem a [Camada de Dados de Clientes Adobe habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#installation-activation) por padrão. Em seguida, verifique se a Camada de dados de clientes Adobe está ativada.
 
 1. Navegue até [WKND Site](https://wknd.site/us/en.html).
 1. Abra as ferramentas de desenvolvedor do navegador e navegue até o **Console**. Execute o seguinte comando:
@@ -104,11 +104,11 @@ O [projeto de referência WKND](https://github.com/adobe/aem-guides-wknd) é com
 
    Para enviar dados de página para o Adobe Analytics, vamos usar as propriedades padrão como `dc:title`, `xdm:language` e `xdm:template` da camada de dados.
 
-   Para obter mais informações, reveja o [Esquema de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) dos Esquemas de dados dos Componentes principais.
+   Para obter mais informações, reveja o [Esquema de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#page) dos Esquemas de dados dos Componentes principais.
 
    >[!NOTE]
    >
-   > Se você não vir o objeto JavaScript `adobeDataLayer`? Verifique se a [Camada de Dados de Clientes Adobe foi habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation) no site.
+   > Se você não vir o objeto JavaScript `adobeDataLayer`? Verifique se a [Camada de Dados de Clientes Adobe foi habilitada](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#installation-activation) no site.
 
 ## Criar uma regra de Página carregada
 
@@ -177,11 +177,11 @@ A Camada de Dados de Clientes Adobe é uma camada de dados **orientada por event
 
    O objeto `event` é passado do método `trigger()` chamado no evento personalizado. Aqui, o `component` é a página atual derivada da camada de dados `getState` no evento personalizado.
 
-1. Salve as alterações e execute uma [compilação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) na propriedade da marca para promover o código ao [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no site do AEM.
+1. Salve as alterações e execute uma [compilação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=pt-BR) na propriedade da marca para promover o código ao [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) usado no site do AEM.
 
    >[!NOTE]
    >
-   > Pode ser útil usar o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) para alternar o código de inserção para um ambiente de **Desenvolvimento**.
+   > Pode ser útil usar o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=pt-BR) para alternar o código de inserção para um ambiente de **Desenvolvimento**.
 
 1. Navegue até o site do AEM e abra as ferramentas do desenvolvedor para visualizar o console. Atualize a página e você verá que as mensagens do console foram registradas:
 

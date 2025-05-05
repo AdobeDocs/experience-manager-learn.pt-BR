@@ -63,8 +63,8 @@ Como os Modelos básicos são normalmente projetados no Photoshop, mas implantad
 
 Os projetos de modelo podem ser relativamente simples ou extremamente complexos, dependendo das regras de negócios e das necessidades do aplicativo. Os modelos básicos são chamados a partir do Servidor de imagens, no entanto, devido à flexibilidade do ambiente do Dynamic Media Classic, é possível até aninhar modelos dentro de outros modelos, permitindo criar imagens razoavelmente complexas que podem ser vinculadas por variáveis comumente nomeadas.
 
-- Saiba mais sobre [Noções básicas do modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Saiba como criar um [Modelo básico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Saiba mais sobre [Noções básicas do modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=pt-BR).
+- Saiba como criar um [Modelo básico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=pt-BR#creating_a_template).
 
 ## Criação de um modelo básico
 
@@ -186,7 +186,7 @@ Para adicionar um efeito, clique em **Adicionar Efeito** e escolha um efeito no 
 
 Os efeitos de sombra são deslocados horizontal ou verticalmente em relação à camada, enquanto os efeitos de brilho são aplicados uniformemente em todas as direções. Os efeitos internos atuam sobre as partes opacas da camada, enquanto os efeitos externos afetam apenas as áreas transparentes.
 
-Saiba mais sobre[Adicionando efeitos de camada](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Saiba mais sobre[Adicionando efeitos de camada](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=pt-BR#using-shadow-and-glow-effects-on-layers).
 
 ### Adição de parâmetros
 
@@ -223,7 +223,7 @@ Este é o fluxo de trabalho para criar parâmetros:
 >
 >Não é possível adicionar um parâmetro porque você não vê a propriedade? Basta alterar a propriedade da camada em relação ao padrão (movendo, redimensionando, ocultando etc.). Agora você deve ver essa propriedade exposta.
 
-Saiba mais sobre [Parâmetros do modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+Saiba mais sobre [Parâmetros do modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=pt-BR).
 
 ## Criação de um modelo com camadas de texto
 
@@ -312,7 +312,7 @@ Vocês podem ver a frase Chocolate Mint Sandal — esse é o próprio texto.
 - Você pode ver um valor de RGB: \red56\green53\blue4 — essa é a cor do texto.
 - Embora o tamanho da fonte seja 20, você não verá o número 20. Entretanto, você verá um comando \fs40 — por alguma razão estranha, RTF mede fontes como pontos médios. Assim, \fs40 é o tamanho da fonte!
 
-Você tem informações suficientes para criar seus parâmetros, no entanto, há uma referência completa de todos os comandos RTF na documentação do Servidor de imagens. Visite a [Documentação do Servidor de Imagens](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Você tem informações suficientes para criar seus parâmetros, no entanto, há uma referência completa de todos os comandos RTF na documentação do Servidor de imagens. Visite a [Documentação do Servidor de Imagens](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html?lang=pt-BR#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Adicionar parâmetros às camadas de texto
 
@@ -330,7 +330,7 @@ Estas são as etapas para adicionar parâmetros às camadas de texto.
 >
 >Para adicionar parâmetros à cor do texto, adicione separadamente parâmetros para vermelho, verde e azul. Por exemplo, se o RTF for `\red56\green53\blue46`, você adicionaria parâmetros vermelhos, verdes e azuis separados para os valores 56, 53 e 46. Na URL, você alteraria a cor chamando todos os três: `&$red=56&$green=53&$blue=46`.
 
-Saiba como [Criar Parâmetros de Texto Dinâmicos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Saiba como [Criar Parâmetros de Texto Dinâmicos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=pt-BR#creating-dynamic-text-parameters).
 
 ## Publicação e criação de URLs de modelo
 
@@ -344,7 +344,7 @@ Não há nada de especial em uma Predefinição de imagem para um modelo. Se voc
 
 Será necessário executar uma publicação para ver suas alterações enviadas ao vivo para o Servidor de imagens. Lembre-se do que precisa ser publicado: as várias camadas de ativos de imagem, as fontes para texto dinâmico e o próprio modelo. Semelhante a outros ativos de mídia avançada do Dynamic Media Classic, como Conjuntos de imagens e Conjuntos de rotação, um Modelo básico é uma construção artificial — é um item de linha no banco de dados que faz referência às imagens e fontes usando uma série de comandos do Servidor de imagens. Assim, quando você publica o modelo, tudo o que você está fazendo é atualizar os dados no Servidor de imagens.
 
-Saiba mais sobre [Publicando seu Modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Saiba mais sobre [Publicando seu Modelo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html?lang=pt-BR).
 
 ### Construção do URL de modelo
 

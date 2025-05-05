@@ -34,5 +34,5 @@ Consulte a [documentação do AEM para obter uma visão geral completa dos recur
 ## Recursos adicionais {#additional-resources}
 
 * [Documentação do Editor de páginas do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
-* [Editando a documentação de conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia do usuário de criação do Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Editando a documentação de conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=pt-BR)
+* [Guia do usuário de criação do Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=pt-BR)

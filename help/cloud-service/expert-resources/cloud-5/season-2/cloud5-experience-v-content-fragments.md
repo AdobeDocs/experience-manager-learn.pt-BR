@@ -25,8 +25,8 @@ Uma comparação entre as diferenças entre um fragmento de experiência e um fr
 ## Conteúdo abordado neste vídeo
 
 + [Trabalhando Com Fragmentos De Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html?lang=pt-BR)
-+ [Uso de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)
-+ [Documentação do fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html)
++ [Uso de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR)
++ [Documentação do fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html?lang=pt-BR)
 
 ## Recursos adicionais
 

@@ -43,7 +43,7 @@ Os trabalhadores do Asset Compute implementam o contrato de API do trabalhador d
 1. O trabalhador do Asset Compute salva os dados binários da nova representação em `rendition.path`.
 1. Os dados binários gravados em `rendition.path` são transportados via Asset Compute SDK para o Serviço de Autor do AEM e expostos como __(4a)__ uma representação de texto e __(4b)__ persistem no nó de metadados do ativo.
 
-O diagrama acima articula as preocupações do desenvolvedor do Asset Compute e o fluxo lógico para a invocação do trabalhador do Asset Compute. Para os curiosos, os [detalhes internos de execução do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) estão disponíveis, no entanto, somente os contratos públicos de API do Asset Compute SDK podem ser dependentes.
+O diagrama acima articula as preocupações do desenvolvedor do Asset Compute e o fluxo lógico para a invocação do trabalhador do Asset Compute. Para os curiosos, os [detalhes internos de execução do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html?lang=pt-BR) estão disponíveis, no entanto, somente os contratos públicos de API do Asset Compute SDK podem ser dependentes.
 
 ## Anatomia de um trabalhador
 

@@ -28,4 +28,4 @@ O Adobe Experience Manager Sites permite que um autor gerencie a largura de um c
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de layout responsiva](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [Documentação de layout responsiva](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=pt-BR)

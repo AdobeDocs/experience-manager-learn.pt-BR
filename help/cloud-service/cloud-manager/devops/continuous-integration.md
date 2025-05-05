@@ -23,7 +23,7 @@ ht-degree: 86%
 >id="aemcloud_devops_cicd"
 >title="Integração contínua e Cloud Manager"
 >abstract="Entenda as práticas recomendadas e a integração contínua usando o Adobe Cloud Manager."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="Configurar seu pipeline de CI/CD"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=pt-BR#non-production-pipelines" text="Configurar seu pipeline de CI/CD"
 
 Entenda as práticas recomendadas e a integração contínua usando o Adobe Cloud Manager.
 

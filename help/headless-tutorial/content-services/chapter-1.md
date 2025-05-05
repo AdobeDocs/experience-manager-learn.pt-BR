@@ -23,7 +23,7 @@ A versão mais recente dos componentes principais de WCM de AEM e AEM é sempre 
 * Componentes principais do WCM no AEM 2.4.0 ou posterior
    * Incluído abaixo no [Pacote de Conteúdo de Aplicativo Móvel AEM da WKND](#wknd-mobile-application-packages)
 
-Antes de iniciar este tutorial, verifique se as seguintes instâncias de AEM estão [instaladas e em execução em sua máquina local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
+Antes de iniciar este tutorial, verifique se as seguintes instâncias de AEM estão [instaladas e em execução em sua máquina local](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
 * **Autor do AEM** na **porta 4502**
 * **AEM Publish** em **porta 4503**

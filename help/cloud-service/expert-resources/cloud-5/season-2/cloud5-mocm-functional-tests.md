@@ -24,7 +24,7 @@ O AEM as a Cloud Service conclui muitos testes funcionais por padrão com seu ap
 
 ## Conteúdo abordado neste vídeo
 
-+ [Teste funcional](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
++ [Teste funcional](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html?lang=pt-BR)
 + [Testes de fumaça AEM](https://github.com/adobe/aem-test-samples/)
 + [Clientes de teste do AEM](https://github.com/adobe/aem-testing-clients/)
 

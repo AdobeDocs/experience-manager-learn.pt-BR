@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Etapa de processo personalizada
 
-Uma etapa de processo personalizada foi implementada para criar o arquivo zip que contém os anexos de formulário. Se você não estiver familiarizado com a criação de um pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Uma etapa de processo personalizada foi implementada para criar o arquivo zip que contém os anexos de formulário. Se você não estiver familiarizado com a criação de um pacote OSGi, [siga estas instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=pt-BR).
 
 O código na etapa de processo personalizada faz o seguinte:
 

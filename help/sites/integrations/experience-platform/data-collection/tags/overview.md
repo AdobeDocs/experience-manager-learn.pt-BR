@@ -51,6 +51,6 @@ Os itens a seguir são obrigatórios ao integrar as Tags da coleção de dados d
 
 ## Recursos adicionais {#additional-resources}
 
-+ [Integrações de Experience Platform com aplicativos Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [Visão geral das tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementando o Experience Cloud em sites com marcas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Integrações de Experience Platform com aplicativos Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=pt-BR)
++ [Visão geral das tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
++ [Implementando o Experience Cloud em sites com marcas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=pt-BR)

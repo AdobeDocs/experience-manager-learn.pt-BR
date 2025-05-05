@@ -39,4 +39,4 @@ O AEM Sites fornece vários métodos para publicar e desfazer a publicação de 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Publicando Documentação de Páginas](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Publicando Documentação de Páginas](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html?lang=pt-BR)

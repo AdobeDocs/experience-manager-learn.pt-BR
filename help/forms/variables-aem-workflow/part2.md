@@ -36,6 +36,6 @@ Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 
 * [Baixar e importar os ativos para a AEM usando o gerenciador de pacotes](assets/jsonandstringvariable.zip)
 * [Explore o modelo de fluxo de trabalho](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) para entender as variáveis usadas no fluxo de trabalho
-* [Configurar o Serviço de email](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Configurar o Serviço de email](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Abrir o Formulário Adaptável](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Preencha os detalhes e envie o formulário

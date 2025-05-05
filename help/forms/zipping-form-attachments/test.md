@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Etapas necessárias para testar as duas abordagens
 
-* Configure o [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) para enviar emails do servidor AEM Forms
+* Configure o [Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=pt-BR#configuring-the-mail-service) para enviar emails do servidor AEM Forms
 * Implante o pacote [formattachments](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) usando o [felix web console](http://localhost:4502/system/console/bundles)
 
 ## Enviar arquivo zip como um anexo de email

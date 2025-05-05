@@ -42,7 +42,7 @@ Os componentes do Fragmento de conteúdo podem ser estilizados usando o Sistema 
 
 O AEM Content Services facilita a criação de pontos de extremidade HTTP baseados em página do AEM que renderizam conteúdo em um formato JSON normalizado.
 
-O vídeo acima usa o [Componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR) para expor Fragmentos de Conteúdo individuais. O [Componente de Lista de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) é um novo componente que permite ao autor definir uma consulta que preencherá dinamicamente a página com uma lista de Fragmentos de Conteúdo. O componente de Lista de fragmentos de conteúdo é preferido quando vários fragmentos de conteúdo precisam ser expostos.
+O vídeo acima usa o [Componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR) para expor Fragmentos de Conteúdo individuais. O [Componente de Lista de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html?lang=pt-BR) é um novo componente que permite ao autor definir uma consulta que preencherá dinamicamente a página com uma lista de Fragmentos de Conteúdo. O componente de Lista de fragmentos de conteúdo é preferido quando vários fragmentos de conteúdo precisam ser expostos.
 
 *Exemplo de carga JSON do ponto de extremidade dos Serviços de Conteúdo:*\
 **[atletas.json](assets/athletes.json)**

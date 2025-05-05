@@ -38,4 +38,4 @@ Saiba como configurar o treinamento de Tags inteligentes no AEM Assets, usando o
 
 ## Recursos adicionais
 
-* O AEM 6.4 exige o [Service Pack mais recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* O AEM 6.4 exige o [Service Pack mais recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR#aem-64).

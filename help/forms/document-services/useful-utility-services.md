@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Pré-requisitos
 
 
-Será necessário implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e iniciar o pacote.
+Será necessário implantar [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=pt-BR) e iniciar o pacote.
 
 
-Se você for salvar documentos no repositório do CRX usando este serviço utilitário, siga o [artigo sobre desenvolvimento com usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Forneça as [permissões necessárias](http://localhost:4502/useradmin) nas pastas apropriadas do CRX para o usuário do serviço fd.
+Se você for salvar documentos no repositório do CRX usando este serviço utilitário, siga o [artigo sobre desenvolvimento com usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=pt-BR#adaptive-forms). Forneça as [permissões necessárias](http://localhost:4502/useradmin) nas pastas apropriadas do CRX para o usuário do serviço fd.

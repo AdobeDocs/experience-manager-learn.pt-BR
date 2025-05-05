@@ -20,13 +20,13 @@ ht-degree: 2%
 
 Se você já tiver configurado o ambiente de desenvolvimento, ignore esta parte do tutorial.
 
-[Criar projeto Maven](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
+[Criar projeto Maven](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
 
-[Instalar IntelliJ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - Você pode ignorar a adição do módulo de fontes para este tutorial.
+[Instalar IntelliJ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - Você pode ignorar a adição do módulo de fontes para este tutorial.
 
-[Inicializar Git](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
+[Inicializar Git](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
 
-[Sincronizar IntelliJ com a instância pronta para nuvem local do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
+[Sincronizar IntelliJ com a instância pronta para nuvem local do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
 
 ## Próximas etapas
 

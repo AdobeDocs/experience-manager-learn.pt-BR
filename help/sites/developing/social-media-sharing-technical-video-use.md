@@ -35,12 +35,12 @@ Este vídeo explora os seguintes recursos do componente de Compartilhamento em R
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-O [externalizador do AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve ser configurado no AEM Author e no AEM Publish, para mapear o modo de execução de publicação para o domínio de acesso público usado para acessar o AEM Publish.
+O [externalizador do AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/externalizer.html) deve ser configurado no AEM Author e no AEM Publish, para mapear o modo de execução de publicação para o domínio de acesso público usado para acessar o AEM Publish.
 
-Neste vídeo, usamos `/etc/hosts` para falsificar *www.example.com* para resolver para localhost e usamos uma [configuração básica do AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para permitir que o www.example.com mostre o AEM Publish.
+Neste vídeo, usamos `/etc/hosts` para falsificar *www.example.com* para resolver para localhost e usamos uma [configuração básica do AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=pt-BR) para permitir que o www.example.com mostre o AEM Publish.
 
 ## Materiais de suporte {#supporting-materials}
 
 * [Baixar os Componentes principais do AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 * [Baixar We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Instalação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* [Instalação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=pt-BR)

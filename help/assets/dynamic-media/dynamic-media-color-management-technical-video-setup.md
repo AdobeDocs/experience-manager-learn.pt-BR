@@ -125,4 +125,4 @@ Este é o modelo XML para o nó de configuração do gerenciamento de cores. Ess
 
 ## Recursos adicionais{#additional-resources}
 
-* [Configurando o Gerenciamento de Cores do Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurando o Gerenciamento de Cores do Dynamic Media](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

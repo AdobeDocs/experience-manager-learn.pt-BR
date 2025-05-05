@@ -22,7 +22,7 @@ Atribuir a tarefa de fluxo de trabalho AEM Forms ao gerente do remetente.
 
 Ao usar o Formulário adaptável no fluxo de trabalho do AEM, você atribuiria dinamicamente uma tarefa ao gerente do remetente do formulário. Para realizar esse caso de uso, teremos que configurar o AEM com Ldap.
 
-As etapas necessárias para configurar o AEM com LDAP estão explicadas em [detalhe aqui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+As etapas necessárias para configurar o AEM com LDAP estão explicadas em [detalhe aqui.](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Para os fins deste artigo, estou anexando arquivos de configuração usados na configuração do AEM com o Adobe Ldap. Esses arquivos estão incluídos no pacote que pode ser importado usando o gerenciador de pacotes.
 

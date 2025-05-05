@@ -23,7 +23,7 @@ ht-degree: 45%
 >id="aemcloud_devops_testresult"
 >title="Análise dos resultados do teste"
 >abstract="Explore quaisquer erros de compilação em seu código e se esse código segue ou não as práticas recomendadas do AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use" text="Entender os resultados de teste"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=pt-BR#how-to-use" text="Entender os resultados de teste"
 
 Explore quaisquer erros de compilação no código e se esse código segue ou não as práticas recomendadas para o AEM as a Cloud Service
 

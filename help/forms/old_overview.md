@@ -175,11 +175,11 @@ O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar
 
 ## Recursos adicionais
 
-* [Experience League - Explorar AEM](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager)
-* [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [Documentação de Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
-* [Documentação de Implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
+* [Experience League - Explorar AEM](https://experienceleague.adobe.com/pt-br?lang=pt-BR#recommended/solutions/experience-manager)
+* [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=pt-BR)
+* [Documentação de Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=pt-BR)
+* [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=pt-BR)
+* [Documentação de Implantação do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=pt-BR)
 * [Tutorials do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorials do AEM Assets](/help/assets/overview.md)
 * [Tutorials do AEM Forms](/help/forms/overview.md)

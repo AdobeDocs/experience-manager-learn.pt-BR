@@ -42,6 +42,6 @@ Agora, os autores podem criar rápida e facilmente projetos de tradução em vá
 
 ## Recursos adicionais {#additional-resources}
 
-* [Tradução de conteúdo para sites multilíngues](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Práticas recomendadas de tradução](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [Tradução de conteúdo para sites multilíngues](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/translation.html)
+* [https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [Práticas recomendadas de tradução](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/tc-bp.html)

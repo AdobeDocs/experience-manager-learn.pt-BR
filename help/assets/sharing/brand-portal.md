@@ -71,12 +71,12 @@ Da mesma forma, especificando:
 #### Habilitar hierarquia de pastas
 
 Agora, os administradores podem configurar como as pastas são exibidas para usuários não administradores (Editores, Visualizadores e Usuários convidados) no logon.
-A configuração [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) foi adicionada em Configurações Gerais, no painel de ferramentas administrativas. Se a configuração for:
+A configuração [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/br/experience-manager/brand-portal/using/brand-portal-general-configuration.html) foi adicionada em Configurações Gerais, no painel de ferramentas administrativas. Se a configuração for:
 
 * Ativada, a árvore de pastas que começa na pasta raiz fica visível para usuários não administradores. Assim, concedendo a eles uma experiência de navegação semelhante aos administradores.
 * Desativado, somente as pastas compartilhadas são exibidas na landing page.
 
-A funcionalidade [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (quando habilitada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de hierarquias diferentes. Ao fazer logon, os usuários não administradores agora veem as pastas principais virtuais (e ancestrais) das pastas compartilhadas.
+A funcionalidade [Habilitar Hierarquia de Pasta](https://helpx.adobe.com/br/experience-manager/brand-portal/using/brand-portal-general-configuration.html) (quando habilitada) ajuda a diferenciar as pastas com os mesmos nomes compartilhados de hierarquias diferentes. Ao fazer logon, os usuários não administradores agora veem as pastas principais virtuais (e ancestrais) das pastas compartilhadas.
 
 As pastas compartilhadas são organizadas nos respectivos diretórios em pastas virtuais. Você pode reconhecer essas pastas virtuais com um ícone de cadeado.
 
@@ -101,7 +101,7 @@ Os códigos de vídeo do Dynamic Media podem ser baixados de:
 
 ### Publicação agendada no Brand Portal
 
-O fluxo de trabalho de publicação do Assets (e pastas) da instância do Autor do [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) no Brand Portal pode ser agendado para data/hora posterior.
+O fluxo de trabalho de publicação do Assets (e pastas) da instância do Autor do [AEM (6.4.2.0)](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) no Brand Portal pode ser agendado para data/hora posterior.
 
 Da mesma forma, os ativos publicados podem ser removidos do portal em uma data (hora) posterior, agendando o fluxo de trabalho Cancelar publicação da Brand Portal.
 
@@ -112,7 +112,7 @@ As organizações podem personalizar o URL do portal tendo um prefixo alternativ
 Observe que somente o prefixo do URL do Brand Portal pode ser personalizado, e não o URL inteiro.
 Por exemplo, uma organização com o domínio existente `wknd.brand-portal.adobe.com` pode obter a criação de `wkndinc.brand-portal.adobe.com` mediante solicitação.
 
-No entanto, a instância do Autor do AEM pode ser [configurada](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da ID do locatário e não com a URL do alias do locatário (alternativo).
+No entanto, a instância do Autor do AEM pode ser [configurada](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) somente com a URL da ID do locatário e não com a URL do alias do locatário (alternativo).
 
 **Caso de uso**: as organizações podem atender às suas necessidades de marca, obtendo a URL do portal personalizada, em vez de aderir à URL fornecida pela Adobe.
 
@@ -128,7 +128,7 @@ O AEM Brand Portal permite o acesso de visitantes ao portal. Um usuário convida
 
 Os usuários do Brand Portal podem aproveitar os downloads rápidos baseados no Aspera para obter velocidades até 25 vezes mais rápidas e uma experiência de download contínua, independentemente da sua localização no mundo. Para baixar os ativos mais rapidamente do Brand Portal ou do link compartilhado, os usuários precisam selecionar a opção Habilitar aceleração de download na caixa de diálogo de download, desde que a aceleração de download esteja habilitada em sua organização.
 
-* [Guia para acelerar downloads do Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [Guia para acelerar downloads do Brand Portal](https://helpx.adobe.com/br/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Servidor de Teste Aspera Connect](https://test-connect.asperasoft.com/)
 
 ### Relatório de logon do usuário
@@ -159,7 +159,7 @@ Seis novas configurações são adicionadas para que os administradores ativem/d
 
 ### O Adobe I/O hospeda a interface do usuário para configurar integrações oAuth
 
-O Brand Portal usa a interface do Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+O Brand Portal usa a interface do Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) para criar um aplicativo JWT, que permite configurar integrações oAuth para permitir a integração do AEM Assets com o Brand Portal. Anteriormente, a interface para configurar integrações OAuth era hospedada em `https://marketing.adobe.com/developer/`. Para saber mais sobre a integração do AEM Assets com o Brand Portal para publicação de ativos e coleções no Brand Portal, consulte [Configurar a integração do AEM Assets com o Brand Portal](https://helpx.adobe.com/br/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2018{#brand-portal-features-and-enhancements-632}
 
@@ -206,9 +206,9 @@ Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand
 ## Recursos adicionais{#additional-resources}
 
 * [Novidades no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#introduction)
-* [Agentes de replicação do autor do AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
-* [Guia de Download Acelerado](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
+* [Agentes de replicação do autor do AEM](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Guia de Download Acelerado](https://helpx.adobe.com/br/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
+* [Documentação do AEM Assets Brand Portal Adobe](https://helpx.adobe.com/br/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentação do AEM Assets Dynamic Media Adobe](https://experienceleague.adobe.com/pt-br/docs)
 * [Baixar Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Servidor de Teste Aspera Connect](https://test-connect.asperasoft.com/)

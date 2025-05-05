@@ -69,7 +69,7 @@ Embora recomendemos seguir a [documentação oficial](https://helpx.adobe.com/br
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Essas duas propriedades são necessárias para que os serviços de documento funcionem
 * Salve o arquivo sling.properties
-* [Baixar o pacote de complemento de formulários apropriado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [Baixar o pacote de complemento de formulários apropriado](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR)
 * Instale o pacote complementar de formulários usando o [gerenciador de pacotes](http://localhost:4502/crx/packmgr/index.jsp).
 * Depois de instalar o pacote complementar, siga as etapas a seguir
 
@@ -86,4 +86,4 @@ Embora recomendemos seguir a [documentação oficial](https://helpx.adobe.com/br
 1. Salve as alterações.
 
 Parabéns!! Agora você instalou e configurou o AEM Forms em seu sistema.
-Dependendo das suas necessidades, você pode configurar o [Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ou o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) no seu servidor
+Dependendo das suas necessidades, você pode configurar o [Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=pt-BR) ou o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=pt-BR) no seu servidor

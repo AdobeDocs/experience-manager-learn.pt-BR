@@ -34,7 +34,7 @@ A captura de tela a seguir mostra um formulário Fale conosco sendo incorporado 
 
 * Execução da instância do AEM Forms 6.5.16
 
-* [Habilitar formulários headless na sua instância de autor e publicação](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [Habilitar formulários headless na sua instância de autor e publicação](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=pt-BR)
 
 ## Próximas etapas
 

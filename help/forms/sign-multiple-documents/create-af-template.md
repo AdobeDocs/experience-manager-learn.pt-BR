@@ -25,7 +25,7 @@ Criaremos um novo modelo de formulário adaptável para a finalidade deste tutor
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[Siga este artigo para entender o processo de criação de um modelo de formulário adaptável e um componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[Siga este artigo para entender o processo de criação de um modelo de formulário adaptável e um componente de página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=pt-BR#storing-and-retrieving-form-data)
 
 
 ## Ativos

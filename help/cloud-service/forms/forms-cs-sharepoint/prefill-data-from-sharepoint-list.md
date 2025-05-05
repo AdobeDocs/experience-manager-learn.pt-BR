@@ -24,7 +24,7 @@ Na versão anterior do AEM Form(6.5), o código personalizado tinha que ser grav
 
 Este artigo explica as etapas necessárias para preencher/preencher previamente o formulário adaptável com dados obtidos da lista do SharePoint usando o serviço de preenchimento do modelo de dados de formulário.
 
-Este artigo supõe que você tenha [configurado com êxito um formulário adaptável para enviar dados à lista do SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Este artigo supõe que você tenha [configurado com êxito um formulário adaptável para enviar dados à lista do SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=pt-BR#connect-af-sharepoint-list)
 
 A seguir estão os dados na lista do SharePoint
 ![lista do sharepoint](assets/list-data.png)

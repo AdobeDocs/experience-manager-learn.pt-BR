@@ -42,19 +42,19 @@ A tabela a seguir descreve como impedir e mitigar ataques de DoS e DDoS:
             <td>Firewall de aplicativo da Web (WAF)</td>
             <td>Uma solução de segurança projetada para proteger aplicativos da Web contra vários tipos de ataques.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licença de Proteção WAF-DDoS</a></td>
+            <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licença de Proteção WAF-DDoS</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> ou <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF via contrato AMS.</td>
             <td>Seu WAF preferido</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
             <td>O ModSecurity (também conhecido como módulo Apache "mod_security") é uma solução de código aberto e entre plataformas que fornece proteção contra uma variedade de ataques contra aplicativos web.<br/> No AEM as a Cloud Service, isso só é aplicável ao serviço de Publicação do AEM, pois não há um Apache Web Server e um AEM Dispatcher na frente do serviço de Autor do AEM.</td>
-            <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Ativar ModSecurity </a></td>
+            <td colspan="3"><a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Ativar ModSecurity </a></td>
         </tr>
         <tr>
             <td>Regras de filtro de tráfego</td>
             <td>As regras de filtro de tráfego podem ser usadas para bloquear ou permitir solicitações na camada CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Exemplo de regras de filtro de tráfego</a></td>
+            <td><a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Exemplo de regras de filtro de tráfego</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">AWS</a> ou <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a> regra limitando recursos.</td>
             <td>Sua solução preferida</td>
         </tr>

@@ -32,7 +32,7 @@ A seguir está a estrutura de pastas da amostra xdp que usa 2 fragmentos
 ![formulários&amp;documento](assets/fragment-folder-structure-ui.png)
 
 
-* Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída. Nesta amostra, estamos usando fragmentos que residem no repositório crx.
+* Serviço de saída - Normalmente, esse serviço é usado para mesclar dados xml com modelo xdp ou pdf para gerar pdf nivelado. Para obter mais detalhes, consulte o [javadoc](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) para o Serviço de saída. Nesta amostra, estamos usando fragmentos que residem no repositório crx.
 
 
 O script ECMA a seguir foi usado para gerar o PDF. Observe o uso de ResourceResolver e ResourceResolverHelper no código. O ResourceResolver é necessário, pois esse código está sendo executado fora de qualquer contexto de usuário.

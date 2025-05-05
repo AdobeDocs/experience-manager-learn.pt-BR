@@ -104,4 +104,4 @@ O Dynamic Media Video agora é compatível com a capacidade de selecionar uma mi
 
 ## Recursos adicionais{#additional-resources}
 
-[Configurando o Dynamic Media no modo Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurando o Dynamic Media no modo Scene7](https://helpx.adobe.com/br/experience-manager/6-5/assets/using/config-dms7.html)

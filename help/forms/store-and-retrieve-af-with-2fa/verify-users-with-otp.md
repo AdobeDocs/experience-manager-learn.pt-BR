@@ -49,11 +49,11 @@ Use o [editor do swagger](https://editor.swagger.io/) para criar seu arquivo do 
 
 ## Criar Source de dados
 
-Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [usar uma fonte de dados baseada em REST usando o arquivo swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. A fonte de dados preenchida é fornecida como parte dos ativos deste curso.
+Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [usar uma fonte de dados baseada em REST usando o arquivo swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=pt-BR) na configuração dos serviços em nuvem. A fonte de dados preenchida é fornecida como parte dos ativos deste curso.
 
 ## Criar modelo de dados do formulário
 
-A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Um modelo de dados de formulário depende de fontes de dados para o intercâmbio de dados.
+A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR). Um modelo de dados de formulário depende de fontes de dados para o intercâmbio de dados.
 O modelo de dados do formulário preenchido pode ser [baixado daqui](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)

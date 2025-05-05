@@ -49,4 +49,4 @@ Ações como enviar um formulário do PDF, usar a interface do usuário do agent
 
 Se você estiver visualizando o relatório de transações na instância do autor, verifique se a replicação inversa está configurada em todas as instâncias de publicação.
 
-Para saber mais sobre o relatório de transações [clique aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Para saber mais sobre o relatório de transações [clique aqui](https://helpx.adobe.com/br/experience-manager/6-4/forms/using/transaction-reports-overview.html)

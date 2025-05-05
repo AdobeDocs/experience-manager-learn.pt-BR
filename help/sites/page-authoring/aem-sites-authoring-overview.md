@@ -29,4 +29,4 @@ O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação e
 ## Recursos adicionais {#additional-resources}
 
 * [Editando a Documentação do Conteúdo da Página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
-* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR)

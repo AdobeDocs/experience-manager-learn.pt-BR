@@ -28,7 +28,7 @@ Você precisará do seguinte:
 
 * Uma instância de trabalho do pacote AEM com o complemento Forms instalado.
 
-* [Ambiente de desenvolvimento configurado de acordo com este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [Ambiente de desenvolvimento configurado de acordo com este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=pt-BR)
 
 * AEM Forms Designer
 

@@ -25,12 +25,12 @@ O site do AEM é onde o conteúdo do site é armazenado e criado. A experiência
 
 ![Novo site do AEM para Edge Delivery Services e Universal Editor](./assets/2-new-aem-site/new-site.png)
 
-Siga as [etapas detalhadas descritas na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) para criar um novo site do AEM.  Abaixo está uma lista resumida das etapas, incluindo os valores usados neste tutorial.
+Siga as [etapas detalhadas descritas na documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) para criar um novo site do AEM.  Abaixo está uma lista resumida das etapas, incluindo os valores usados neste tutorial.
 1. **Criar um novo site** no AEM Author. Este tutorial usa a seguinte nomeação de site:
    * Título do site: `WKND (Universal Editor)`
    * Nome do site: `aem-wknd-eds-ue`
 
-      * O valor do nome do site deve corresponder ao nome do caminho do site [adicionado a `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
+      * O valor do nome do site deve corresponder ao nome do caminho do site [adicionado a `paths.json`](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
 
 2. **Importe o modelo mais recente** do [modelo de site de criação do Edge Delivery Services com AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Nomeie o site** para corresponder ao nome do repositório GitHub e defina a URL do GitHub como a URL do repositório.

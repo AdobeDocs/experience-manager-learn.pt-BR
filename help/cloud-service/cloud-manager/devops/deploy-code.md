@@ -23,7 +23,7 @@ ht-degree: 68%
 >id="aemcloud_devops_deploycode"
 >title="Implantação do código"
 >abstract="Integrar o repositório git do Cloud Manager com um repositório git externo e implantar um projeto no AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Mesclar projetos"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=pt-BR#cloud-manager" text="Mesclar projetos"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=pt-BR" text="Implantação de código com o Cloud Manager"
 
 Integrar o repositório git do Cloud Manager com um repositório git externo e implantar um projeto no AEM as a Cloud Service

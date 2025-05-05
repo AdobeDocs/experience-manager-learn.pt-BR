@@ -39,7 +39,7 @@ Para habilitar os recursos do ContextHub e vincular às bibliotecas JavaScript d
 
 ## Configuração do site e segmentos do ContextHub {#site-configuration-and-contexthub-segments}
 
-O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do Javascript para [determinar segmentos resolvidos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Habilite os segmentos do ContextHub para seu site em [[!UICONTROL Navegador de Configuração]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=pt-BR).
+O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do Javascript para [determinar segmentos resolvidos](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Habilite os segmentos do ContextHub para seu site em [[!UICONTROL Navegador de Configuração]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=pt-BR).
 
 ## Criar segmentos {#create-segments}
 
@@ -53,7 +53,7 @@ Atribuir o caminho de configuração da nuvem, o caminho de segmentação e o ca
 
 Você pode ler mais sobre o ContextHub e a segmentação abaixo:
 
-* [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [Adicionando o Context Hub à página e Acessando Lojas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
-* [Noções sobre segmentação](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
-* [Configuração de segmentação com o ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
+* [ContextHub](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/contexthub.html)
+* [Adicionando o Context Hub à página e Acessando Lojas](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [Noções sobre segmentação](https://helpx.adobe.com/br/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
+* [Configuração de segmentação com o ContextHub](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/segmentation.html)

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-Neste capítulo, vamos explorar a relação entre um componente de página base e modelos editáveis. Saiba como criar um modelo de Artigo sem estilo com base em alguns modelos do [Adobe XD](https://helpx.adobe.com/support/xd.html). No processo de criação do modelo, os Componentes principais e as configurações de política avançadas dos Modelos editáveis são abordados.
+Neste capítulo, vamos explorar a relação entre um componente de página base e modelos editáveis. Saiba como criar um modelo de Artigo sem estilo com base em alguns modelos do [Adobe XD](https://helpx.adobe.com/br/support/xd.html). No processo de criação do modelo, os Componentes principais e as configurações de política avançadas dos Modelos editáveis são abordados.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -74,7 +74,7 @@ Nesta parte do tutorial, você cria um novo Modelo de página de artigo que pode
 
 ## Planejamento da interface do usuário com o Adobe XD {#adobexd}
 
-Normalmente, o planejamento de um novo site começa com modelos e designs estáticos. O [Adobe XD](https://helpx.adobe.com/support/xd.html) é uma ferramenta de design que cria uma experiência de usuário. Em seguida, vamos inspecionar um Kit de interface do usuário e modelos para ajudar a planejar a estrutura do Modelo de página de artigo.
+Normalmente, o planejamento de um novo site começa com modelos e designs estáticos. O [Adobe XD](https://helpx.adobe.com/br/support/xd.html) é uma ferramenta de design que cria uma experiência de usuário. Em seguida, vamos inspecionar um Kit de interface do usuário e modelos para ajudar a planejar a estrutura do Modelo de página de artigo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,7 +82,7 @@ Normalmente, o planejamento de um novo site começa com modelos e designs estát
 
 >[!NOTE]
 >
-> Um Kit de Interface do Usuário dos [Componentes Principais do AEM também está disponível](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) como ponto de partida para projetos personalizados.
+> Um Kit de Interface do Usuário dos [Componentes Principais do AEM também está disponível](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=pt-BR) como ponto de partida para projetos personalizados.
 
 ## Criar o modelo da página de artigo
 
@@ -160,7 +160,7 @@ Etapas de alto nível para o vídeo acima:
 
 ## Atualizar o cabeçalho e o rodapé com fragmentos de experiência {#experience-fragments}
 
-Uma prática comum ao criar conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragmentos de experiência, permitem que os usuários combinem vários componentes para criar um único componente que pode ser referenciado. Os Fragmentos de experiência têm a vantagem de oferecer suporte ao gerenciamento de vários sites e à [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=en).
+Uma prática comum ao criar conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR). Fragmentos de experiência, permitem que os usuários combinem vários componentes para criar um único componente que pode ser referenciado. Os Fragmentos de experiência têm a vantagem de oferecer suporte ao gerenciamento de vários sites e à [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-BR).
 
 O Arquétipo de projeto AEM gerou um Cabeçalho e Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
@@ -262,7 +262,7 @@ Use a ferramenta CRXDE-Lite em uma instância de AEM local para visualizar a est
 
    Há apenas dois scripts HTL, `customfooterlibs.html` e `customheaderlibs.html` abaixo do componente página. *Como este componente renderiza a página?*
 
-   A propriedade `sling:resourceSuperType` aponta para `core/wcm/components/page/v2/page`. Esta propriedade permite que o componente de página da WKND herde **all** a funcionalidade do componente de página, dos Componentes principais. Este é o primeiro exemplo de algo chamado de [Padrão de Componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Mais informações podem ser encontradas [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   A propriedade `sling:resourceSuperType` aponta para `core/wcm/components/page/v2/page`. Esta propriedade permite que o componente de página da WKND herde **all** a funcionalidade do componente de página, dos Componentes principais. Este é o primeiro exemplo de algo chamado de [Padrão de Componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=pt-BR#ProxyComponentPattern). Mais informações podem ser encontradas [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=pt-BR).
 
 1. Inspect é outro componente dentro dos componentes WKND, o componente `Breadcrumb` de: `/apps/wknd/components/breadcrumb`. Observe que a mesma propriedade `sling:resourceSuperType` pode ser encontrada, mas desta vez ela aponta para `core/wcm/components/breadcrumb/v2/breadcrumb`. Este é outro exemplo de como usar o padrão do componente Proxy para incluir um Componente principal. Na verdade, todos os componentes na base de código WKND são proxies de componentes principais AEM (exceto para o componente de demonstração personalizada HelloWorld ). É uma prática recomendada reutilizar o máximo possível da funcionalidade dos Componentes principais *antes* de gravar o código personalizado.
 

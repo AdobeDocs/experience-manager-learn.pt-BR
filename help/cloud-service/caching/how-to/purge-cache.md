@@ -104,7 +104,7 @@ Por fim, implante a regra CDN configurada no ambiente do AEM as a Cloud Service 
 
 1. Na Cloud Manager, navegue até a seção **Pipelines**.
 
-1. Crie um novo pipeline ou selecione o pipeline existente que implanta apenas os arquivos **Config**. Para obter etapas detalhadas, consulte [Criar um pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Crie um novo pipeline ou selecione o pipeline existente que implanta apenas os arquivos **Config**. Para obter etapas detalhadas, consulte [Criar um pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Clique no botão **Executar** para implantar a regra CDN.
 

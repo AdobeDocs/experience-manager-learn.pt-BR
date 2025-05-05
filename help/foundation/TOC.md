@@ -51,7 +51,7 @@ ht-degree: 14%
    + [Proteção contra Ataques CRS DoS ModSecurity](./security/modsecurity-crs-dos-attack-protection.md)
    + [Conexões HTTPS com APIs com certificados privados](./security/call-internal-apis-having-private-certificate.md)
    + [Autenticação TLS mútuo (mTLS) do AEM](./security/mutual-tls-authentication.md)
-   + [Migração de credenciais JWT para OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [Migração de credenciais JWT para OAuth](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Fluxo de trabalho {#workflow}
    + [Usar o Editor de fluxo de trabalho](./workflow/use-the-workflow-editor.md)
    + [Usar fluxo de trabalho](./workflow/use-workflow.md)

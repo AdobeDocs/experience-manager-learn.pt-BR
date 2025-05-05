@@ -25,7 +25,7 @@ Uma etapa frequentemente ignorada no desenvolvimento de software, os testes de u
 ## Conteúdo abordado neste vídeo
 
 + Visão geral das verificações automatizadas
-+ [Regras de qualidade do código personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
++ [Regras de qualidade do código personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=pt-BR)
 
 ## Recursos adicionais
 

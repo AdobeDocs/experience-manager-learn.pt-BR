@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Conteúdo localizado com o AEM Headless
 
-O AEM fornece uma [estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo do AEM, como Páginas, Fragmentos de experiência, Assets e Forms. Depois que o conteúdo [headless for traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR) e publicado, ele estará pronto para consumo por aplicativos headless.
+O AEM fornece uma [estrutura de integração de tradução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=pt-BR) para conteúdo headless, permitindo que os Fragmentos de conteúdo e ativos de suporte sejam facilmente traduzidos para uso em localidades. Essa é a mesma estrutura usada para traduzir outro conteúdo do AEM, como Páginas, Fragmentos de experiência, Assets e Forms. Depois que o conteúdo [headless for traduzido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=pt-BR) e publicado, ele estará pronto para consumo por aplicativos headless.
 
 ## Estrutura de pastas do Assets{#assets-folder-structure}
 
-Verifique se os fragmentos de conteúdo localizados no AEM seguem a [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Verifique se os fragmentos de conteúdo localizados no AEM seguem a [estrutura de localização recomendada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=pt-BR#recommended-structure).
 
 ![Pastas localizadas de ativos da AEM](./assets/localized-content/asset-folders.jpg)
 

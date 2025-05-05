@@ -27,8 +27,8 @@ Pré-requisitos para este tutorial:
 * Role até o final desta página, baixe o arquivo Swagger e salve-o no disco rígido.
 * AEM Forms com SSL ativado
 
-   * [Documentação oficial para habilitar o SSL no AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [Documentação oficial para habilitar o SSL no AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [Documentação oficial para habilitar o SSL no AEM 6.3](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [Documentação oficial para habilitar o SSL no AEM 6.4](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Você precisa ter uma conta do Salesforce
 * É necessário criar um Aplicativo Conectado. A documentação oficial do Salesforce para criar o aplicativo está listada [aqui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
@@ -73,7 +73,7 @@ A próxima etapa é criar o Data Source no AEM Forms. Siga as etapas a seguir de
 * Manipulador de autenticação: portador de autorização
 * Clique em &quot;Conectar ao OAUTH&quot;. Se tudo correr bem, você não deve ver nenhum erro
 
-Depois de criar o modelo de dados de formulário usando o Salesforce, você pode criar a Integração de dados de formulário usando o Source de dados recém-criado. A documentação oficial para criar a Integração de dados de formulário está [aqui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Depois de criar o modelo de dados de formulário usando o Salesforce, você pode criar a Integração de dados de formulário usando o Source de dados recém-criado. A documentação oficial para criar a Integração de dados de formulário está [aqui](https://helpx.adobe.com/br/aem-forms/6-3/data-integration.html).
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 
@@ -106,7 +106,7 @@ Depois de criar o Modelo de dados de formulário, você pode criar o Forms adapt
    * Manipulador de autenticação: portador de autorização
    * Clique no botão &quot;Conectar ao OAuth&quot;. Caso veja algum erro, revise as etapas anteriores para garantir que todas as informações foram inseridas com precisão.
 
-Depois de criar o Data Source usando o Salesforce, você pode criar a Integração de dados de formulário usando o Data Source que acabou de criar. O link da documentação para isso está [aqui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Depois de criar o Data Source usando o Salesforce, você pode criar a Integração de dados de formulário usando o Data Source que acabou de criar. O link da documentação para isso está [aqui](https://helpx.adobe.com/br/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Certifique-se de configurar o Modelo de dados de formulário para incluir o serviço POST para criar um objeto Lead no SFDC.
 

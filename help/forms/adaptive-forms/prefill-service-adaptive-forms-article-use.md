@@ -20,7 +20,7 @@ ht-degree: 0%
 
 É possível preencher previamente os campos de um formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. Há várias maneiras de preencher previamente os campos de formulários adaptáveis. Neste artigo, analisaremos o preenchimento prévio de formulários adaptáveis usando o serviço de preenchimento prévio do AEM Forms.
 
-Para saber mais sobre vários métodos para preencher formulários adaptáveis, [siga esta documentação](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Para saber mais sobre vários métodos para preencher formulários adaptáveis, [siga esta documentação](https://helpx.adobe.com/br/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Para preencher previamente um formulário adaptável usando o serviço de preenchimento prévio, você deve criar uma classe que implemente a interface `com.adobe.forms.common.service.DataXMLProvider`. O método `getDataXMLForDataRef` terá a lógica de criar e retornar dados que o formulário adaptável consumirá para preencher previamente os campos. Neste método, você pode buscar os dados de qualquer fonte e retornar o fluxo de entrada do documento de dados. O código de exemplo a seguir busca as informações de perfil do usuário conectado e constrói um documento XML cujo fluxo de entrada é retornado para ser consumido pelos formulários adaptáveis.
 

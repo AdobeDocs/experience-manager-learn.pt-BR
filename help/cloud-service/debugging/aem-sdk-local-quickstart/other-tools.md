@@ -83,7 +83,7 @@ A Explicar consulta está localizada em:
 
 ![Depurador do QueryBuilder](./assets/other-tools/query-debugger.png)
 
-O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda você a depurar e entender consultas de pesquisa usando a sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) do AEM.
+O depurador do QueryBuilder é uma ferramenta baseada na Web que ajuda você a depurar e entender consultas de pesquisa usando a sintaxe [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR) do AEM.
 
 O QueryBuilder Debugger está localizado em:
 

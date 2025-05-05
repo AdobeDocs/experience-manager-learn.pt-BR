@@ -30,7 +30,7 @@ O Navegador do Repositório __SOMENTE__ está disponível em ambientes AEM as a 
 
 Para acessar o Navegador do repositório no AEM as a Cloud Service:
 
-1. Verifique se o usuário tem [o acesso necessário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
+1. Verifique se o usuário tem [o acesso necessário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=pt-BR#access-prerequisites)
 1. Fazer logon no [Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Selecione o programa que contém o ambiente AEM as a Cloud Service a ser depurado
 1. Abra o [Developer Console](./developer-console.md) correspondente ao ambiente do AEM as a Cloud Service para depurar
@@ -45,4 +45,4 @@ O Navegador do Repositório é aberto para a camada de serviço selecionada (Aut
 
 ## Acesso de publicação e visualização
 
-Por padrão, o acesso a Publicar ou Visualizar é limitado, reduzindo os recursos disponíveis no Navegador do repositório. [Para exibir todos os recursos em Publicar (ou Visualizar), adicione usuários a uma função de Administradores de Publicação (ou Visualização).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+Por padrão, o acesso a Publicar ou Visualizar é limitado, reduzindo os recursos disponíveis no Navegador do repositório. [Para exibir todos os recursos em Publicar (ou Visualizar), adicione usuários a uma função de Administradores de Publicação (ou Visualização).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=pt-BR#navigate-the-hierarchy)

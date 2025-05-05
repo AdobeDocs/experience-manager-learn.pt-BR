@@ -25,7 +25,7 @@ Esta é a captura de tela do arquivo xml que contém vários registros.
 
 ![xml-de-vários-registros](assets/multi-record-xml.PNG)
 
-O xml de dados tem 2 registros. Cada registro é representado pelo elemento form1. Este xml foi passado para o método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html); obtemos a lista de documentos pdf (um por registro)
+O xml de dados tem 2 registros. Cada registro é representado pelo elemento form1. Este xml foi passado para o método OutputService [generatePDFOutputBatch](https://helpx.adobe.com/br/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html); obtemos a lista de documentos pdf (um por registro)
 A assinatura do método generatePDFOutputBatch usa os seguintes parâmetros
 
 * templates - Mapa contendo o template, identificado por uma chave

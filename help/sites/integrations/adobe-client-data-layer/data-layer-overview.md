@@ -26,7 +26,7 @@ A Camada de dados de clientes Adobe apresenta um método padrão para coletar e 
 
 >[!NOTE]
 >
-> Deseja ativar a Camada de dados de clientes Adobe no site AEM? [Veja as instruções aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Deseja ativar a Camada de dados de clientes Adobe no site AEM? [Veja as instruções aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR#installation-activation).
 
 ## Explorar a camada de dados
 

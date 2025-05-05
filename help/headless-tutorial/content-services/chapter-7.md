@@ -202,7 +202,7 @@ Após cada etapa, puxe para atualizar o aplicativo móvel e verifique a atualiza
 
 Para saber mais sobre o AEM Content Services e o AEM as a Headless CMS, visite Adobe outra documentação e materiais de ativação:
 
-* [Usando Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+* [Usando Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR)
 * [Guia do Usuário dos Componentes principais do WCM no AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Biblioteca de componentes principais WCM do AEM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [Projeto GitHub dos Componentes principais do WCM no AEM](https://github.com/adobe/aem-core-wcm-components)

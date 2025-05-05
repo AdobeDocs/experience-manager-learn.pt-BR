@@ -24,7 +24,7 @@ As etapas a seguir são necessárias para gravar a classe java e implantar a cla
 
 ## Criar projeto Maven
 
-A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe apropriado. As etapas detalhadas estão listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Depois de importar o projeto maven para o eclipse, você estará pronto para começar a escrever seu primeiro componente OSGi que pode ser usado na etapa de processo.
+A primeira etapa é criar um projeto maven usando o Arquétipo Maven Adobe apropriado. As etapas detalhadas estão listadas neste [artigo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=pt-BR). Depois de importar o projeto maven para o eclipse, você estará pronto para começar a escrever seu primeiro componente OSGi que pode ser usado na etapa de processo.
 
 
 ### Criar classe que implementa WorkflowProcess
@@ -143,7 +143,7 @@ O serviço QueryBuilder é usado para consultar nós do tipo nt:file na pasta at
 
 #### Criar e implantar
 
-[Crie o pacote conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Crie o pacote conforme descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=pt-BR)
 [Verifique se o pacote está implantado e no estado ativo](http://localhost:4502/system/console/bundles)
 
 ## Próximas etapas

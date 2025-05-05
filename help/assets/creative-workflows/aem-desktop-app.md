@@ -36,4 +36,4 @@ Use o aplicativo de desktop do AEM para simplificar o acesso a qualquer ativo ge
 
 ## Recursos adicionais
 
-+ [Baixe o Aplicativo de Desktop AEM mais recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Baixe o Aplicativo de Desktop AEM mais recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=pt-BR)

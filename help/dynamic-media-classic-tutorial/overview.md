@@ -42,7 +42,7 @@ Neste guia, discutiremos os seguintes recursos principais do Dynamic Media Class
 - **Vídeo.** Carregue os vídeos finais, publique-os e baixe-os progressivamente em visualizadores de vídeo configuráveis.
 - **Imagens inteligentes.Tecnologia do** que aproveita os recursos de IA do Adobe Sensei e funciona com &quot;Predefinições de imagem&quot; existentes para aprimorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
-Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=pt-BR).
 
 ## A interface do usuário (UI) do Dynamic Media Classic
 
@@ -72,4 +72,4 @@ _INTERFACE DO USUÁRIO DO Dynamic Media Classic_
 >
 >Marque a caixa de seleção **Publish Após o carregamento** na caixa de diálogo Carregar para publicar ativos automaticamente após o carregamento.
 
-Saiba mais sobre [Navegação na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Saiba mais sobre [Navegação na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=pt-BR).

@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Personalizar a camada de dados do cliente da Adobe com componentes do AEM {#customize-data-layer}
 
-Saiba como personalizar a Camada de dados de clientes Adobe com conteúdo de Componentes AEM personalizados. Saiba como usar APIs fornecidas pelos [Componentes principais do AEM para estender](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizar a camada de dados.
+Saiba como personalizar a Camada de dados de clientes Adobe com conteúdo de Componentes AEM personalizados. Saiba como usar APIs fornecidas pelos [Componentes principais do AEM para estender](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=pt-BR) e personalizar a camada de dados.
 
 ## O que você vai criar
 
 ![Camada de dados de byline](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-Neste tutorial, vamos explorar várias opções para estender a Camada de dados de clientes Adobe atualizando o [componente de linha de guia](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html) da WKND. O componente _Subtítulo_ é um **componente personalizado** e as lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
+Neste tutorial, vamos explorar várias opções para estender a Camada de dados de clientes Adobe atualizando o [componente de linha de guia](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=pt-BR) da WKND. O componente _Subtítulo_ é um **componente personalizado** e as lições aprendidas neste tutorial podem ser aplicadas a outros componentes personalizados.
 
 ### Objetivos {#objective}
 
@@ -173,7 +173,7 @@ Para inserir dados sobre o componente na camada de dados, primeiro vamos atualiz
 
 ## Atualizar o HTL do byline {#htl}
 
-Em seguida, atualize o `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (HTML Template Language) é o modelo usado para renderizar o HTML do componente.
+Em seguida, atualize o `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=pt-BR). HTL (HTML Template Language) é o modelo usado para renderizar o HTML do componente.
 
 Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é usado para expor sua camada de dados. O JavaScript fornecido pelos Componentes principais do AEM procura esse atributo de dados. O valor desse atributo de dados é preenchido com a Cadeia de Caracteres JSON retornada pelo método `getData()` do Modelo Sling de byline e inserida na camada de Dados do cliente do Adobe.
 

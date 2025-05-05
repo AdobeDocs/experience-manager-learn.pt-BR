@@ -37,8 +37,8 @@ Uma predefinição de imagem tem um cifrão ($) em ambos os lados do nome e segu
 >
 >Crie uma predefinição de imagem por tamanho de imagem exclusivo no site. Por exemplo, se você precisar de uma imagem de 350 X 350 para a página de detalhes do produto, uma imagem de 120 X 120 para as páginas de navegação/pesquisa e uma imagem de 90 X 90 para um item de venda cruzada/em destaque, você precisará de três Predefinições de imagem, independentemente de ter 500 imagens ou 500.000.
 
-- Saiba mais sobre [Predefinições de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Saiba como [Criar uma Predefinição de Imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Saiba mais sobre [Predefinições de imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=pt-BR).
+- Saiba como [Criar uma Predefinição de Imagem](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=pt-BR#creating-an-image-preset).
 
 ## Predefinições e nitidez da imagem
 
@@ -60,7 +60,7 @@ O gráfico a seguir mostra três níveis de nitidez. Da direita para a esquerda 
 
 O Dynamic Media Classic permite três tipos de nitidez: Nitidez simples, Modo de reamostragem e Tirar nitidez da máscara.
 
-Saiba mais sobre [Opções de nitidez do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Saiba mais sobre [Opções de nitidez do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=pt-BR#sharpening_an_image).
 
 ## Recursos adicionais
 

@@ -61,7 +61,7 @@ Os PDFs XFA dinâmicos podem alterar seu layout em tempo de execução, de modo 
 * Os formulários dinâmicos são compatíveis com scripts do lado do cliente que alteram o layout e a paginação do formulário. Por exemplo, o Purchase Order.xdp se expandirá e paginará para acomodar uma quantidade infinita de dados se você salvá-lo como um formulário dinâmico
 * Os formulários dinâmicos suportam todas as propriedades do formulário no tempo de execução, enquanto os formulários estáticos suportam apenas um subconjunto
 
-* [Consulte este documento para entender as diferenças entre formulários pdf estáticos e dinâmicos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [Consulte este documento para entender as diferenças entre formulários pdf estáticos e dinâmicos](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=pt-BR#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >

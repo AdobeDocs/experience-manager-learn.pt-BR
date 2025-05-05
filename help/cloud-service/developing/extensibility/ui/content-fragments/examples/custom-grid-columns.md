@@ -208,7 +208,7 @@ Se outros dados forem necessários para preencher a coluna personalizada, as sol
 
 >[!IMPORTANT]
 >
-> Verifique se a instância do Autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens nas quais o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
+> Verifique se a instância do Autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=pt-BR) das origens nas quais o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
 >
 > Como alternativa, a extensão pode chamar uma [ação do AppBuilder](../../runtime-action.md) personalizada que faz a solicitação ao AEM Author em nome da extensão.
 

@@ -208,7 +208,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 ## Simular distribuição de conteúdo {#content-distribution}
 
-Em um ambiente de Cloud Service verdadeiro, o conteúdo é distribuído do Serviço de Autor para o Serviço de Publicação usando a [Distribuição de Conteúdo de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e o Pipeline do Adobe. O [Adobe Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) é um microsserviço isolado disponível apenas no ambiente de nuvem.
+Em um ambiente de Cloud Service verdadeiro, o conteúdo é distribuído do Serviço de Autor para o Serviço de Publicação usando a [Distribuição de Conteúdo de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e o Pipeline do Adobe. O [Adobe Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=pt-BR#content-distribution) é um microsserviço isolado disponível apenas no ambiente de nuvem.
 
 Durante o desenvolvimento, pode ser desejável simular a distribuição de conteúdo usando o serviço local de Autor e Publicação. Isso pode ser feito ativando os agentes de replicação herdados.
 
@@ -271,7 +271,7 @@ Para interromper um tempo de execução local do AEM, o serviço de Autor ou Pub
 
 ## Tarefas opcionais de configuração de tempo de execução do AEM local
 
-+ As __variáveis de ambiente de configuração OSGi e as variáveis secretas__ são [especialmente definidas para o tempo de execução local do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), em vez de gerenciá-las usando a interface de linha de comando aio.
++ As __variáveis de ambiente de configuração OSGi e as variáveis secretas__ são [especialmente definidas para o tempo de execução local do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#local-development), em vez de gerenciá-las usando a interface de linha de comando aio.
 
 ## Quando atualizar o Quickstart Jar
 

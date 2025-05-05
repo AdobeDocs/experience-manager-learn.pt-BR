@@ -21,7 +21,7 @@ O Adobe Experience Manager (AEM) tem várias opções para definir endpoints hea
 
 >[!TIP]
 >
->Esta coleção de tutoriais foi criada para aqueles que preferem **aprender fazendo**. Se preferir aprender conceitos desde o início, confira a [Jornada de desenvolvedores headless do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Esse conjunto de tutoriais e a jornada se complementam.
+>Esta coleção de tutoriais foi criada para aqueles que preferem **aprender fazendo**. Se preferir aprender conceitos desde o início, confira a [Jornada de desenvolvedores headless do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=pt-BR). Esse conjunto de tutoriais e a jornada se complementam.
 
 ## Tutoriais por API
 
@@ -41,11 +41,11 @@ O Adobe Experience Manager (AEM) tem várias opções para definir endpoints hea
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR">
     <img alt="Autenticação baseada em token" src="./assets/token-auth-icon.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR">
     <strong>Autenticação do token</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ O Adobe Experience Manager (AEM) tem várias opções para definir endpoints hea
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR">
       <img alt="Content Services" src="./assets/content-services.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR">
         <strong>Serviços de conteúdo</strong>
       </a>
     </div>
@@ -76,11 +76,11 @@ Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=pt-BR">
       <img alt="Exemplo do iOS" src="./assets/ios-example.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html?lang=pt-BR">
     <strong>Exemplo de SwiftUI para iOS</strong>
     </a>
     </div>
@@ -89,11 +89,11 @@ Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=pt-BR">
     <img alt="Exemplo do Android" src="./assets/android-example.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html?lang=pt-BR">
     <strong>Exemplo do Android™</strong>
     </a>
     </div>
@@ -102,11 +102,11 @@ Aplicativos de exemplo são uma ótima maneira de explorar os recursos headless 
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=pt-BR">
       <img alt="Exemplo do React" src="./assets/react-example.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html?lang=pt-BR">
         <strong>React Exemplo</strong>
       </a>
     </div>
@@ -137,11 +137,11 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
       <img alt="React - Editar Conteúdo via Editor Universal" src="./assets/react-universal-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
+      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview">
         <strong>Reagir - Editar Conteúdo via Editor Universal</strong>
       </a>
     </div>
@@ -150,11 +150,11 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <p>
   </td>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=pt-BR">
     <img alt="React - Editor remoto" src="./assets/react-remote.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=pt-BR">
     <strong>React - Editor remoto</strong>
     </a>
     </div>
@@ -165,11 +165,11 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
 </tr>
 <tr>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR">
       <img alt="React - Editor SPA" src="./assets/react-spa-editor.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR">
         <strong>React - Editor SPA</strong>
       </a>
     </div>
@@ -178,11 +178,11 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR">
     <img alt="Android - Serviços de conteúdo" src="./assets/android.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR">
     <strong>Android - Serviços de Conteúdo</strong>
     </a>
     </div>
@@ -191,11 +191,11 @@ Navegue pelos seguintes tutoriais com base na tecnologia usada. Saiba como o AEM
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR">
       <img alt="Node.js - Autenticação" src="./assets/node-js.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR">
         <strong>Node.js - Autenticação</strong>
       </a>
     </div>

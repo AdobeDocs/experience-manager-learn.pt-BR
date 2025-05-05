@@ -27,7 +27,7 @@ Saiba mais sobre a modernização de repositórios, conteúdo mutável e imutáv
 
 ![Modernizador de repositório](./assets/repository-modernizer.png)
 
-Como parte da refatoração de sua base de código, use a [ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) para reestruturar uma base de código 6.x para uma estrutura mais moderna.
+Como parte da refatoração de sua base de código, use a [ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=pt-BR) para reestruturar uma base de código 6.x para uma estrutura mais moderna.
 
 ## Atividades principais
 

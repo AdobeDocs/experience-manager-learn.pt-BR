@@ -147,7 +147,7 @@ A seguir estão vários recursos do Adobe que fornecem mais informações e APIs
 
 ### Documentação
 
-+ [Documentação de serviço do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)
++ [Documentação de serviço do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=pt-BR)
 + [readme da Ferramenta de desenvolvimento do Asset Compute](https://github.com/adobe/asset-compute-devtool)
 + [exemplos de trabalhadores do Asset Compute](https://github.com/adobe/asset-compute-example-workers)
 

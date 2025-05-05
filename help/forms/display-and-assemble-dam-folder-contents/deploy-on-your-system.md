@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Siga as etapas listadas abaixo para que esse caso de uso funcione em sua instância local do AEM.
 
-* [Implante o Pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contido no arquivo zip.
+* [Implante o Pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=pt-BR) contido no arquivo zip.
 
 * Adicione a seguinte entrada no Serviço de Mapeador de Usuários do Apache Sling Service **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** usando o [configMgr](http://localhost:4502/system/console/configMgr).
 

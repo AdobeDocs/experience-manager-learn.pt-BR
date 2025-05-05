@@ -28,7 +28,7 @@ Saiba como os fragmentos de conteúdo podem ser localizados e traduzidos com o A
 
 Fragmentos de conteúdo são um tipo de conteúdo reconhecido que o AEM extrai para ser enviado a um serviço de tradução externo. Vários casos de uso são compatíveis imediatamente:
 
-1. Um Fragmento do conteúdo pode ser [selecionado diretamente no console do Assets para cópia e tradução de idioma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. Um Fragmento do conteúdo pode ser [selecionado diretamente no console do Assets para cópia e tradução de idioma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=pt-BR).
 2. Os fragmentos de conteúdo referenciados em uma página do Sites são copiados para a pasta de idioma apropriada e extraídos para tradução quando a página do Sites é selecionada para cópia de idioma.
 3. Os ativos de mídia incorporados em um fragmento de conteúdo podem ser extraídos e traduzidos.
 4. As coleções de ativos associadas a um fragmento de conteúdo podem ser extraídas e traduzidas.

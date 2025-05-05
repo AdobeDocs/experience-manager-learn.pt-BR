@@ -77,15 +77,15 @@ Este capítulo usa o [recurso Sistema de Estilos](https://experienceleague.adobe
 
 ## Fundo {#background}
 
-O [Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite que desenvolvedores e editores de modelo criem várias variações visuais de um componente. Os autores podem decidir qual estilo usar ao compor uma página. O Sistema de estilos é usado no restante do tutorial para obter vários estilos únicos ao usar os Componentes principais em uma abordagem de código baixo.
+O [Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=pt-BR) permite que desenvolvedores e editores de modelo criem várias variações visuais de um componente. Os autores podem decidir qual estilo usar ao compor uma página. O Sistema de estilos é usado no restante do tutorial para obter vários estilos únicos ao usar os Componentes principais em uma abordagem de código baixo.
 
 A ideia geral com o Sistema de estilos é que os autores podem escolher vários estilos de como um componente deve ser exibido. Os &quot;estilos&quot; são apoiados por classes CSS adicionais que são inseridas na div externa de um componente. Nas bibliotecas de clientes, as regras CSS são adicionadas com base nessas classes de estilo para que o componente altere a aparência.
 
-Você pode encontrar [documentação detalhada para o Sistema de Estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [ para entender o Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Você pode encontrar [documentação detalhada para o Sistema de Estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [ para entender o Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=pt-BR).
 
 ## Estilo do Sublinhado - Título {#underline-style}
 
-O [Componente de Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) foi encaminhado por proxy para o projeto em `/apps/wknd/components/title` como parte do módulo **ui.apps**. Os estilos padrão de elementos de cabeçalho (`H1`, `H2`, `H3`...) já foram implementados no módulo **ui.frontend**.
+O [Componente de Título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=pt-BR) foi encaminhado por proxy para o projeto em `/apps/wknd/components/title` como parte do módulo **ui.apps**. Os estilos padrão de elementos de cabeçalho (`H1`, `H2`, `H3`...) já foram implementados no módulo **ui.frontend**.
 
 Os [designs do Artigo da WKND](assets/pages-templates/wknd-article-design.xd) contêm um estilo exclusivo para o componente de Título com um sublinhado. Em vez de criar dois componentes ou modificar a caixa de diálogo de componentes, o Sistema de estilos pode ser usado para permitir que os autores adicionem uma opção de estilo sublinhado.
 
@@ -195,7 +195,7 @@ Em seguida, implemente o estilo Underline usando o módulo **ui.frontend** do pr
 
 ## Estilo do bloco de aspas - Texto {#text-component}
 
-Em seguida, repita etapas semelhantes para aplicar um estilo exclusivo ao [Componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). O componente de Texto foi enviado por proxy para o projeto em `/apps/wknd/components/text` como parte do módulo **ui.apps**. Os estilos padrão de elementos de parágrafo já foram implementados no **ui.frontend**.
+Em seguida, repita etapas semelhantes para aplicar um estilo exclusivo ao [Componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR). O componente de Texto foi enviado por proxy para o projeto em `/apps/wknd/components/text` como parte do módulo **ui.apps**. Os estilos padrão de elementos de parágrafo já foram implementados no **ui.frontend**.
 
 Os [designs do Artigo da WKND](assets/pages-templates/wknd-article-design.xd) contêm um estilo exclusivo para o componente de Texto com um bloco de aspas:
 

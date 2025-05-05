@@ -26,5 +26,5 @@ O componente de Imagem, parte dos Componentes principais do Experience Manager, 
 
 ## Recursos adicionais
 
-* [Documentação dos Componentes Principais da Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=en#dynamic-media)
-* [Referência a comando do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api)
+* [Documentação dos Componentes Principais da Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR#dynamic-media)
+* [Referência a comando do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR#image-serving-api)

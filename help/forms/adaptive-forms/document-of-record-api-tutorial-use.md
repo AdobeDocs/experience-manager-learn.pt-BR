@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Gerar documento de registro (DOR) de forma programática
 
-Este artigo ilustra o uso do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar programaticamente o **Documento de Registro**. [Documento de Registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) é uma versão PDF dos dados capturados no Formulário adaptável.
+Este artigo ilustra o uso do `com.adobe.aemds.guide.addon.dor.DoRService API` para gerar programaticamente o **Documento de Registro**. [Documento de Registro](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) é uma versão PDF dos dados capturados no Formulário adaptável.
 
 1. Veja a seguir o trecho de código. A primeira linha obtém o serviço DOR.
 1. Defina as DoROptions.

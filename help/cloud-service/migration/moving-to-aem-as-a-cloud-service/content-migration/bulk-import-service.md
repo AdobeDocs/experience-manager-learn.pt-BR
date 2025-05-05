@@ -33,7 +33,7 @@ O Serviço de importação em massa é usado para transferir arquivos armazenado
 
 >[!TIP]
 >
-> As fontes de entrada neste vídeo mostram apenas o Armazenamento de blobs do Azure e o Amazon S3; no entanto, as fontes disponíveis continuam a crescer com o tempo. Para obter uma lista completa das fontes de entrada com suporte, consulte as opções disponíveis no produto ou na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> As fontes de entrada neste vídeo mostram apenas o Armazenamento de blobs do Azure e o Amazon S3; no entanto, as fontes disponíveis continuam a crescer com o tempo. Para obter uma lista completa das fontes de entrada com suporte, consulte as opções disponíveis no produto ou na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=pt-BR#bulk-upload).
 
 ## Principais atividades
 
@@ -43,6 +43,6 @@ O Serviço de importação em massa é usado para transferir arquivos armazenado
 
 ## Outros recursos
 
-+ [Opções de configuração do serviço de importação em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [Sessão do Adobe Developers Live sobre assimilação de ativos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [Opções de configuração do serviço de importação em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=pt-BR#configure-bulk-ingestor-tool)
++ [Sessão do Adobe Developers Live sobre assimilação de ativos](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=pt-BR)
 

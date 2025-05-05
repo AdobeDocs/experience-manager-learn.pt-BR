@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O template é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas de telefone, demonstrativos de cartão de crédito para vários clientes.
 
-[Saiba mais sobre a API de geração de lote](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[Saiba mais sobre a API de geração de lote](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html?lang=pt-BR)
 
 Este artigo fornece ativos de amostra para gerar documentos de Comunicações interativas usando a API em lote.
 
@@ -45,7 +45,7 @@ Este artigo fornece ativos de amostra para gerar documentos de Comunicações in
 
 ## Geração de lote usando solicitações REST
 
-Você pode invocar a [API de lote](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) por meio de solicitações REST. É possível expor endpoints REST para que outros aplicativos chamem a API para gerar documentos.
+Você pode invocar a [API de lote](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/index.html) por meio de solicitações REST. É possível expor endpoints REST para que outros aplicativos chamem a API para gerar documentos.
 Os ativos de amostra fornecidos expõem o endpoint REST para gerar documentos de Comunicação interativa. O servlet aceita os seguintes parâmetros:
 
 * fileName - Local do arquivo de dados no sistema de arquivos.

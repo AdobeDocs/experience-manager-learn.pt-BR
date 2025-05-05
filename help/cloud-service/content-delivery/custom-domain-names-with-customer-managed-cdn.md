@@ -41,7 +41,7 @@ As etapas de alto nível são:
    - CDN do cliente - para configurar o CDN do cliente e adicionar certificados SSL e detalhes de domínio, como AWS CloudFront, CDN do Azure ou Akamai.
    - Serviço de hospedagem de DNS (Sistema de Nomes de Domínio) - para adicionar registros DNS ao seu domínio personalizado, como Azure DNS ou AWS Route 53.
 - Acesso ao [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) para implantar a regra CDN de validação do Cabeçalho HTTP no ambiente do AEM as a Cloud Service.
-- O site [AEM WKND](https://github.com/adobe/aem-guides-wknd) de exemplo está implantado no ambiente AEM as a Cloud Service do tipo [programa de produção](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- O site [AEM WKND](https://github.com/adobe/aem-guides-wknd) de exemplo está implantado no ambiente AEM as a Cloud Service do tipo [programa de produção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Se você não tiver acesso a serviços de terceiros, _colabore com a equipe de segurança ou hospedagem para concluir as etapas_.
 

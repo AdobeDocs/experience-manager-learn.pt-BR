@@ -39,7 +39,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </tr><tr><td><strong>Princípios principais</strong></td>
 <td><ul>
 <li>Centrado no conteúdo</li>
-<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modelo de dados estruturado, baseado em formulário.</a></li>
+<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=pt-BR" target="_blank">modelo de dados estruturado, baseado em formulário.</a></li>
 <li>Design e layout independentes.</li>
 <li>O canal é responsável pela apresentação do conteúdo do fragmento de conteúdo (layout e design)</li>
 </ul>
@@ -54,7 +54,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </tr><tr><td><strong>Detalhes técnicos</strong></td>
 <td><ul>
 <li>Implementado como um <strong>dam:Asset</strong></li>
-<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">Modelo de fragmento de conteúdo</a></li>
+<li>Definido por um <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=pt-BR" target="_blank">Modelo de fragmento de conteúdo</a></li>
 </ul>
 </td>
 <td><ul>
@@ -72,25 +72,25 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 <td><ul>
 <li>As variações são específicas de canal ou contexto</li>
 <li>As variações são mantidas em sincronia por meio da AEM Live Copy</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">Os blocos de construção</a> permitem a reutilização de conteúdo em variações</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR" target="_blank">Os blocos de construção</a> permitem a reutilização de conteúdo em variações</li>
 </ul>
 </td>
 </tr><tr><td><strong>Recursos</strong></td>
 <td><ul>
 <li>Variações</li>
 <li>Versões</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank">Sincronização</a> de conteúdo entre variações</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">Diferença visual</a> de versões de Fragmento de conteúdo</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank">Anotações</a> de elementos de texto multilinha</li>
-<li>Resumo <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank">inteligente</a> de elementos de texto multilinha.</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/creating-translation-projects-for-content-fragments.html?lang=en" target="_blank">Tradução/localização</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=pt-BR#synchronizing-with-master" target="_blank">Sincronização</a> de conteúdo entre variações</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=pt-BR#comparing-fragment-versions" target="_blank">Diferença visual</a> de versões de Fragmento de conteúdo</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=pt-BR#annotating-a-content-fragment" target="_blank">Anotações</a> de elementos de texto multilinha</li>
+<li>Resumo <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=pt-BR#summarizing-text" target="_blank">inteligente</a> de elementos de texto multilinha.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/creating-translation-projects-for-content-fragments.html?lang=pt-BR" target="_blank">Tradução/localização</a></li>
 </ul>
 </td>
 <td><ul>
 <li>Variações</li>
 <li>Variações como Live Copies</li>
 <li>Versões</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en#building-blocks" target="_blank">Blocos de construção</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR#building-blocks" target="_blank">Blocos de construção</a></li>
 <li>Anotações</li>
 <li>Layout e visualização responsivos</li>
 <li>Tradução/localização</li>
@@ -102,15 +102,15 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 <td><ul>
 <li>Exportação JSON via <a href="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR">APIs do AEM Headless GraphQL</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR" target="_blank">Componente Fragmento de Conteúdo dos Componentes Principais do AEM</a> para uso no AEM Sites, AEM Screens ou em Fragmentos de Experiência.</li>
-<li>Exportação JSON via <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> para consumo de terceiros</li>
+<li>Exportação JSON via <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR" target="_blank">AEM Content Services</a> para consumo de terceiros</li>
 <li>Exportação JSON para o Adobe Target para ofertas direcionadas</li>
 <li>JSON por meio de APIs AEM HTTP Assets para consumo de terceiros</li>
 </ul>
 </td>
 <td><ul>
 <li>Componente de Fragmento de experiência do AEM para uso no AEM Sites, AEM Screens ou outros Fragmentos de experiência.</li>
-<li>Exportar como <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">HTML simples</a> para uso por sistemas de terceiros</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">Exportação do HTML para o Adobe Target</a> para ofertas direcionadas</li>
+<li>Exportar como <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR" target="_blank">HTML simples</a> para uso por sistemas de terceiros</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=pt-BR" target="_blank">Exportação do HTML para o Adobe Target</a> para ofertas direcionadas</li>
 <li>Exportação JSON para o Adobe Target para ofertas direcionadas</li>
 </ul>
 </td>
@@ -131,12 +131,12 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </td>
 </tr><tr><td><strong>Documentação</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guia do usuário de fragmentos de conteúdo do AEM</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en" target="_blank">Uso de fragmentos de conteúdo no AEM</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guia do usuário de fragmentos de conteúdo do AEM</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=pt-BR" target="_blank">Uso de fragmentos de conteúdo no AEM</a></li>
 </ul>
 </td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">Documentação do Adobe sobre Fragmentos de experiência</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR" target="_blank">Documentação do Adobe sobre Fragmentos de experiência</a></li>
 </ul>
 </td>
 </tr></tbody></table>
@@ -172,16 +172,16 @@ O diagrama a seguir ilustra a arquitetura geral dos fragmentos de conteúdo do A
 
 ## Recurso de suporte para fragmentos de conteúdo
 
-+ [Guia do Usuário de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [Guia do Usuário de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Introdução ao Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=pt-BR)
-+ [Usando fragmentos de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
++ [Usando fragmentos de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=pt-BR)
 + [Componente Fragmento de Conteúdo dos Componentes Principais do AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)
-+ [Usando fragmentos de conteúdo e o AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
-+ [Introdução aos Serviços de Conteúdo da AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
++ [Usando fragmentos de conteúdo e o AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
++ [Introdução aos Serviços de Conteúdo da AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=pt-BR)
 
 ## Recurso de suporte para Fragmentos de experiência
 
-+ [Documentação do Adobe sobre Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en)
-+ [Noções básicas sobre os Fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
-+ [Usando Fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
++ [Documentação do Adobe sobre Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR)
++ [Noções básicas sobre os Fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR)
++ [Usando Fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR)
 + [Usando Fragmentos de experiência do AEM com o Adobe Target](https://medium.com/adobetech/experience-fragments-and-adobe-target-d8d74381b9b2)

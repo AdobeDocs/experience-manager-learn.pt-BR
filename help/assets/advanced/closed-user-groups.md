@@ -45,6 +45,6 @@ Tanto o CUG (Grupos de usuários fechados) quanto as ACLs (Listas de controle de
 
 ## Links de suporte {#supporting-links}
 
-* [Gerenciamento de Assets e grupos de usuários fechados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
-* [Criando um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
+* [Gerenciamento de Assets e grupos de usuários fechados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=pt-BR#closed-user-group)
+* [Criando um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=pt-BR)
 * [Documentação de grupo de usuários fechado do Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

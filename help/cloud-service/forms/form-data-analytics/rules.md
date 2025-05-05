@@ -22,7 +22,7 @@ ht-degree: 1%
 
 # Definir a regra
 
-Na propriedade Tags, criamos duas novas [regras](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Erro de validação de campo e FormSubmit**).
+Na propriedade Tags, criamos duas novas [regras](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=pt-BR) (**Erro de validação de campo e FormSubmit**).
 
 ![formulário-adaptável](assets/rules.png)
 
@@ -54,7 +54,7 @@ Na regra de Envio de Formulário, o valor do elemento de dados _&#x200B;**Applic
 As variáveis Adobe Analytics - Set são configuradas da seguinte maneira.
 ![formulário-envio-regra-conjunto-variáveis](assets/form-submit-set-variable.png)
 
-Quando estiver pronto para testar seu código de marcas,[publique as alterações feitas nas marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) usando o fluxo de publicação.
+Quando estiver pronto para testar seu código de marcas,[publique as alterações feitas nas marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=pt-BR) usando o fluxo de publicação.
 
 ## Próximas etapas
 

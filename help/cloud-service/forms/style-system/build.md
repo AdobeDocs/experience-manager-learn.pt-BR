@@ -49,4 +49,4 @@ Depois que o projeto de tema for criado com sucesso, você estará pronto para t
 
 ## Enviar as alterações
 
-Se você estiver satisfeito com as alterações, poderá enviar as alterações para sua instância da nuvem usando o [pipeline de front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Se você estiver satisfeito com as alterações, poderá enviar as alterações para sua instância da nuvem usando o [pipeline de front-end](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)

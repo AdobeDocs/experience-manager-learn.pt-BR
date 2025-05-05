@@ -22,7 +22,7 @@ ht-degree: 1%
 ## Pré-requisitos
 
 * Última instância do AEM Forms as a Cloud Service.
-* Todos os [perfis de produto necessários são adicionados ao ambiente.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+* Todos os [perfis de produto necessários são adicionados ao ambiente.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 * Ative o acesso da API do AEM ao perfil do produto, conforme mostrado abaixo
   ![perfil_do_produto1](assets/product-profiles1.png)
@@ -53,9 +53,9 @@ Copie a ID do cliente, o segredo do cliente e os escopos
 
 ## Configurar instância do AEM para habilitar a comunicação do Projeto ADC
 
-Se você já tiver um projeto do AEM Forms, [siga estas instruções](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) para habilitar a credencial de servidor para servidor OAuth do projeto do Adobe Developer Console para comunicação com a instância do AEM
+Se você já tiver um projeto do AEM Forms, [siga estas instruções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) para habilitar a credencial de servidor para servidor OAuth do projeto do Adobe Developer Console para comunicação com a instância do AEM
 
-Se você não tiver um projeto do AEM Forms, crie um [Projeto do AEM Forms seguindo esta documentação.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) e habilite a credencial ClientID do servidor para servidor OAuth do Adobe Developer Console Project para se comunicar com a instância do AEM [usando esta documentação.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+Se você não tiver um projeto do AEM Forms, crie um [Projeto do AEM Forms seguindo esta documentação.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) e habilite a credencial ClientID do servidor para servidor OAuth do Adobe Developer Console Project para se comunicar com a instância do AEM [usando esta documentação.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
 
 
 ## Próximas etapas

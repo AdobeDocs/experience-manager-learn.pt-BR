@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Integrar o AEM Headless e o Target
 
-Saiba como integrar o AEM Headless com o Adobe Target, exportando fragmentos de conteúdo do AEM para o Adobe Target e usando-os para personalizar experiências headless usando o alloy.js do Adobe Experience Platform Web SDK. O [Aplicativo WKND React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) é usado para explorar como uma atividade personalizada do Target usando Ofertas de fragmentos de conteúdo podem ser adicionadas à experiência, para promover uma aventura WKND.
+Saiba como integrar o AEM Headless com o Adobe Target, exportando fragmentos de conteúdo do AEM para o Adobe Target e usando-os para personalizar experiências headless usando o alloy.js do Adobe Experience Platform Web SDK. O [Aplicativo WKND React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=pt-BR) é usado para explorar como uma atividade personalizada do Target usando Ofertas de fragmentos de conteúdo podem ser adicionadas à experiência, para promover uma aventura WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
@@ -42,13 +42,13 @@ O tutorial aborda as etapas envolvidas na configuração do AEM e do Adobe Targe
 
 Uma configuração do Adobe IMS que facilita a autenticação entre o AEM e o Adobe Target.
 
-Consulte [a documentação](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) para obter instruções passo a passo sobre como criar uma configuração do Adobe IMS.
+Consulte [a documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/integrations/target#adobe-target-cloud-service) para obter instruções passo a passo sobre como criar uma configuração do Adobe IMS.
 
 ## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
 Um Adobe Target Cloud Service é criado no AEM para facilitar a exportação de fragmentos de conteúdo para o Adobe Target.
 
-Consulte [a documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) para obter instruções passo a passo sobre como criar uma Adobe Target Cloud Service.
+Consulte [a documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=pt-BR) para obter instruções passo a passo sobre como criar uma Adobe Target Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ A atividade do Adobe Target direcionada ao local `wknd-adventure-promo` agora po
 
 ## ID da sequência de dados do Experience Platform{#datastream-id}
 
-Uma ID de [Sequência de Dados do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) é necessária para que os aplicativos do AEM Headless interajam com o Adobe Target usando o [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Uma ID de [Sequência de Dados do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=pt-BR) é necessária para que os aplicativos do AEM Headless interajam com o Adobe Target usando o [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=pt-BR).
 
 +++Expandir para obter instruções passo a passo
 
@@ -184,7 +184,7 @@ Uma ID de [Sequência de Dados do Adobe Experience Platform](https://experiencel
       + O Ambiente de Destino pode ser definido no Adobe Target em __Administração > Hosts__.
    + Namespace de ID de terceiros de destino: __Deixe em branco__
 1. Selecione __Salvar__
-1. No lado direito, copie a __ID da sequência de dados__ para uso na chamada de configuração do [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+1. No lado direito, copie a __ID da sequência de dados__ para uso na chamada de configuração do [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=pt-BR).
 
 +++
 
@@ -194,7 +194,7 @@ Uma ID de [Sequência de Dados do Adobe Experience Platform](https://experiencel
 
 ## Adicionar personalização a um aplicativo AEM Headless{#code}
 
-Este tutorial explora a personalização de um aplicativo React simples usando Ofertas de fragmentos de conteúdo no Adobe Target via [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Essa abordagem pode ser usada para personalizar qualquer experiência da Web com base no JavaScript.
+Este tutorial explora a personalização de um aplicativo React simples usando Ofertas de fragmentos de conteúdo no Adobe Target via [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR). Essa abordagem pode ser usada para personalizar qualquer experiência da Web com base no JavaScript.
 
 As experiências móveis da Android™ e da iOS podem ser personalizadas seguindo padrões semelhantes usando a [SDK móvel da Adobe](https://developer.adobe.com/client-sdks/documentation/).
 
@@ -230,7 +230,7 @@ As experiências móveis da Android™ e da iOS podem ser personalizadas seguind
    $ npm run start
    ```
 
-1. Instale o [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) como um pacote NPM.
+1. Instale o [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=pt-BR#option-3%3A-using-the-npm-package) como um pacote NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

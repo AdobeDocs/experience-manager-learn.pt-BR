@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Alternar Exibições
 
-Saiba como alternar com eficiência entre a [exibição do Assets e a exibição do Administrador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) no AEM Assets as a Cloud Service, garantindo um gerenciamento perfeito de ativos.
+Saiba como alternar com eficiência entre a [exibição do Assets e a exibição do Administrador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=pt-BR#persona-based-experiences) no AEM Assets as a Cloud Service, garantindo um gerenciamento perfeito de ativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)

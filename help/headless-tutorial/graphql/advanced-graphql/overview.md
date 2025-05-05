@@ -27,7 +27,7 @@ Conclua a [instalação rápida do AEM as a Cloud Service](../quick-setup/cloud-
 
 >[!CAUTION]
 >
->Se você não tiver acesso ao ambiente do AEM as a Cloud Service, poderá concluir a [instalação rápida do AEM Headless usando o SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html) local. No entanto, é importante observar que algumas páginas da interface do usuário do produto, como a navegação por Fragmentos de conteúdo, são diferentes.
+>Se você não tiver acesso ao ambiente do AEM as a Cloud Service, poderá concluir a [instalação rápida do AEM Headless usando o SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=pt-BR) local. No entanto, é importante observar que algumas páginas da interface do usuário do produto, como a navegação por Fragmentos de conteúdo, são diferentes.
 
 
 
@@ -49,7 +49,7 @@ O vídeo a seguir fornece uma visão geral de alto nível dos conceitos abordado
 
 >[!CAUTION]
 >
->Este vídeo (aos 2:25) menciona a instalação do editor de consultas GraphiQL por meio do Gerenciador de pacotes para explorar consultas do GraphQL. No entanto, em versões mais recentes do AEM as Cloud Service, um **GraphiQL Explorer** integrado é fornecido, portanto, a instalação do pacote não é necessária. Consulte [Usando o GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) para obter mais informações.
+>Este vídeo (aos 2:25) menciona a instalação do editor de consultas GraphiQL por meio do Gerenciador de pacotes para explorar consultas do GraphQL. No entanto, em versões mais recentes do AEM as Cloud Service, um **GraphiQL Explorer** integrado é fornecido, portanto, a instalação do pacote não é necessária. Consulte [Usando o GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=pt-BR) para obter mais informações.
 
 
 ## Configuração do projeto
@@ -79,7 +79,7 @@ Observe que `WKND Shared Endpoint` já foi criado. Para criar um ponto de extrem
 
 >[!NOTE]
 >
-> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Depois de salvar o endpoint, você verá um modal sobre como visitar o Console de segurança, que permite ajustar as configurações de segurança se desejar configurar o acesso ao endpoint. No entanto, as permissões de segurança em si estão fora do escopo deste tutorial. Para obter mais informações, consulte a [documentação do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
 
 ### Revisar a estrutura de conteúdo WKND e a pasta raiz de idioma
 

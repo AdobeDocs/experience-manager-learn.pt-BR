@@ -256,7 +256,7 @@ As práticas recomendadas definidas nesta seção referem-se ao &quot;style-Java
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação do Sistema de Estilos](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [Documentação do Sistema de Estilos](https://helpx.adobe.com/br/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [Criando bibliotecas de Clientes AEM](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Site de documentação do BEM (Block Element Modifier)](https://getbem.com/)
 * [MENOS Site de documentação](https://lesscss.org/)

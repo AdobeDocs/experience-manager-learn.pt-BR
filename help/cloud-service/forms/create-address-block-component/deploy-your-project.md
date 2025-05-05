@@ -44,4 +44,4 @@ O componente de Endereço agora pode ser usado em um Formulário adaptável
 
 ## Implantar o projeto no ambiente de nuvem
 
-Se tudo estiver bem no seu ambiente de desenvolvimento local, a próxima etapa é implantar na instância da nuvem [usando o cloud manager.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)
+Se tudo estiver bem no seu ambiente de desenvolvimento local, a próxima etapa é implantar na instância da nuvem [usando o cloud manager.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)

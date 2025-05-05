@@ -60,7 +60,7 @@ Implante atualizações de um tema em um ambiente do AEM usando o pipeline de fr
 
 Etapas de alto nível para o vídeo:
 
-1. Criar um novo repositório Git [no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Criar um novo repositório Git [no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=pt-BR)
 1. Adicione o projeto de fontes de tema ao repositório Git do Cloud Manager:
 
    ```shell
@@ -71,7 +71,7 @@ Etapas de alto nível para o vídeo:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configure um [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) no Cloud Manager para implantar o código de front-end.
+1. Configure um [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=pt-BR) no Cloud Manager para implantar o código de front-end.
 1. Execute o pipeline de front-end para implantar atualizações ao ambiente do AEM de destino.
 
 ### Exemplo de acordos de recompra

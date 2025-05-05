@@ -34,6 +34,6 @@ A Visão geral da Live Copy e o Gerenciador de configurações de blueprint são
 
 ## Recursos adicionais {#additional-resources}
 
-* [Console de Visão Geral da Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Criando e sincronizando Live Copies](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [Práticas recomendadas do MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Console de Visão Geral da Live Copy](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Criando e sincronizando Live Copies](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [Práticas recomendadas do MSM](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

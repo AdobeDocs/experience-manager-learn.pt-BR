@@ -195,7 +195,7 @@ Por fim, envie essas alterações para o repositório Git do Adobe do seu progra
 
 ## Cuidado - _Botão Habilitar pipeline de front-end_
 
-A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) do [Seletor de Painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra o botão **Habilitar Pipeline de Front-End** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar Pipeline de Front-End** substituirá as **configurações do Sling** acima. Verifique se **você não clicou** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
+A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) do [Seletor de Painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) mostra o botão **Habilitar Pipeline de Front-End** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar Pipeline de Front-End** substituirá as **configurações do Sling** acima. Verifique se **você não clicou** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
 
 ![Botão Habilitar pipeline de front-end](assets/enable-front-end-Pipeline-button.png)
 

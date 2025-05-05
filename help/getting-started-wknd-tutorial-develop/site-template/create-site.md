@@ -25,13 +25,13 @@ Como parte da Criação rápida de sites, use o Assistente de criação de sites
 
 ## Pré-requisitos {#prerequisites}
 
-As etapas deste capítulo ocorrerão em um ambiente Adobe Experience Manager as a Cloud Service. Verifique se você tem acesso administrativo ao ambiente do AEM. É recomendável usar um [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) ao concluir este tutorial.
+As etapas deste capítulo ocorrerão em um ambiente Adobe Experience Manager as a Cloud Service. Verifique se você tem acesso administrativo ao ambiente do AEM. É recomendável usar um [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=pt-BR) e [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) ao concluir este tutorial.
 
-Os ambientes do [Programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) também podem ser usados para este tutorial; no entanto, verifique se as atividades deste tutorial não afetarão o trabalho que está sendo executado nos ambientes de destino, pois este tutorial implanta conteúdo e código no ambiente de destino do AEM.
+Os ambientes do [Programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=pt-BR) também podem ser usados para este tutorial; no entanto, verifique se as atividades deste tutorial não afetarão o trabalho que está sendo executado nos ambientes de destino, pois este tutorial implanta conteúdo e código no ambiente de destino do AEM.
 
-O [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) pode ser usado para partes deste tutorial. Alguns aspectos deste tutorial que dependem dos serviços em nuvem, como a [implantação de temas com o pipeline de front-end do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), não podem ser executados no AEM SDK.
+O [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=pt-BR) pode ser usado para partes deste tutorial. Alguns aspectos deste tutorial que dependem dos serviços em nuvem, como a [implantação de temas com o pipeline de front-end do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=pt-BR), não podem ser executados no AEM SDK.
 
-Revise a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para obter mais detalhes.
+Revise a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR) para obter mais detalhes.
 
 ## Objetivo {#objective}
 
@@ -76,7 +76,7 @@ A maioria dos tutoriais será realizada usando o **Serviço do autor**.
 
 >[!NOTE]
 >
-> Problemas para acessar o Experience Manager? Revise a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> Problemas para acessar o Experience Manager? Revise a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR)
 
 ## Baixar o modelo de site básico
 

@@ -34,7 +34,7 @@ Neste tutorial, implementaremos um caso de uso simples que permite que os preenc
 
 Para implementar o caso de uso acima no AEM Forms CS, você precisará do seguinte
 
-* [instância pronta para nuvem do AEM Forms CS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [instância pronta para nuvem do AEM Forms CS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=pt-BR#set-up-aem-author-instance)
 * [Conta de portal do Azure](https://portal.azure.com/)
 * [Conta SendGrid](https://sendgrid.com/)
 

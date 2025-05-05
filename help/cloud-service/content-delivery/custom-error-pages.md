@@ -80,7 +80,7 @@ As seguintes opções estão disponíveis para personalizar páginas de erro:
 
 Neste tutorial, você aprenderá a personalizar páginas de erro usando a diretiva _ErrorDocument_, as opções _ACS AEM Commons Error Page Handler_ e _CDN Error Pages_. Para seguir este tutorial, você precisa:
 
-- O [ambiente de desenvolvimento local do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) ou o ambiente do AEM as a Cloud Service. A opção _Páginas de Erro de CDN_ é aplicável ao ambiente do AEM as a Cloud Service.
+- O [ambiente de desenvolvimento local do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) ou o ambiente do AEM as a Cloud Service. A opção _Páginas de Erro de CDN_ é aplicável ao ambiente do AEM as a Cloud Service.
 
 - O [projeto WKND do AEM](https://github.com/adobe/aem-guides-wknd) para personalizar páginas de erro.
 
@@ -95,7 +95,7 @@ Neste tutorial, você aprenderá a personalizar páginas de erro usando a direti
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Para o ambiente AEM as a Cloud Service, implante o projeto WKND do AEM executando o [pipeline de pilha completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Consulte o exemplo de [pipeline de não produção](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
+- Para o ambiente AEM as a Cloud Service, implante o projeto WKND do AEM executando o [pipeline de pilha completa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Consulte o exemplo de [pipeline de não produção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
 
 - Verifique se as páginas do site WKND são renderizadas corretamente.
 
@@ -375,7 +375,7 @@ Por fim, implante a regra CDN configurada no ambiente do AEM as a Cloud Service 
 
 1. Na Cloud Manager, navegue até a seção **Pipelines**.
 
-1. Crie um novo pipeline ou selecione o pipeline existente que implanta apenas os arquivos **Config**. Para obter etapas detalhadas, consulte [Criar um pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Crie um novo pipeline ou selecione o pipeline existente que implanta apenas os arquivos **Config**. Para obter etapas detalhadas, consulte [Criar um pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Clique no botão **Executar** para implantar a regra CDN.
 
@@ -401,6 +401,6 @@ Neste tutorial, você aprendeu sobre as páginas de erro padrão, de onde as pá
 
 ## Recursos adicionais
 
-- [Configurando Páginas de Erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [Configurando Páginas de Erro da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [Cloud Manager - Configurar pipelines](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [Cloud Manager - Configurar pipelines](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

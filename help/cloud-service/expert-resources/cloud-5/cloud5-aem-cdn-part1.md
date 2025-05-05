@@ -26,7 +26,7 @@ Isso é um aprofundamento da CDN fornecida como parte da AEM as a Cloud Service,
 
 ## Conteúdo abrangido pela primeira parte desta série
 
-+ AEM CDN [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ AEM CDN [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=pt-BR)
 + Recursos do Web Application Firewall (WAF)
 + Restrições de IP
 + Proteções DDOS

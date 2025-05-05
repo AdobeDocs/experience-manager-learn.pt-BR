@@ -22,7 +22,7 @@ ht-degree: 1%
 Nesta seção, discutiremos como configurar o Adobe Experience Manager Sites com o Adobe Target para diferentes cenários. Com base em seu cenário e requisitos organizacionais.
 
 * **Adicionar Biblioteca JavaScript do Adobe Target (obrigatório para todos os cenários)**
-Para sites hospedados no AEM, você pode adicionar bibliotecas do Target ao seu site usando as [tags na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). As tags oferecem uma forma simples de implantar e gerenciar todas as tags necessárias para potencializar experiências de cliente relevantes.
+Para sites hospedados no AEM, você pode adicionar bibliotecas do Target ao seu site usando as [tags na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR). As tags oferecem uma forma simples de implantar e gerenciar todas as tags necessárias para potencializar experiências de cliente relevantes.
 * **Adicionar os Cloud Service do Adobe Target (necessário para o cenário de Fragmentos de experiência)**
 Para clientes do AEM, que gostariam de usar as ofertas de Fragmento de experiência para criar uma atividade no Adobe Target, será necessário integrar o Adobe Target ao AEM usando os Cloud Service herdados. Essa integração é necessária para enviar Fragmentos de experiência do AEM para o Target como ofertas HTML/JSON e manter as ofertas em sincronia com o AEM. *Esta integração é necessária para a implementação do cenário 1.*
 
@@ -58,7 +58,7 @@ A instância de autor e publicação do AEM é necessária para concluir este tu
 
 #### Configurar instâncias do Publish e do autor do AEM
 
-1. Obtenha uma cópia do [AEM Quickstart Jar e uma licença.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. Obtenha uma cópia do [AEM Quickstart Jar e uma licença.](https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Crie uma estrutura de pastas no seu computador da seguinte maneira:
    ![Estrutura de pastas](assets/implementation/aem-setup-1.png)
 3. Renomeie o Quickstart jar como `aem-author-p4502.jar` e coloque-o sob o diretório `/author`. Adicione o arquivo `license.properties` abaixo do diretório `/author`.

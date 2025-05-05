@@ -47,4 +47,4 @@ O recurso Diferença de página também pode ser usado para identificar a difere
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de comparação da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentação de comparação da página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=pt-BR)

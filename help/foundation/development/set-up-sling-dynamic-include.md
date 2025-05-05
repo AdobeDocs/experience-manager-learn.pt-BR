@@ -54,7 +54,7 @@ Uma apresentação em vídeo da instalação e uso do [!DNL Apache Sling Dynamic
    -->
    ```
 
-1. (Opcional) Repita a última etapa para permitir que os componentes em [conteúdo bloqueado (inicial) de modelos editáveis](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) também sejam distribuídos via [!DNL SDI]. O motivo para a configuração adicional é que o conteúdo bloqueado de modelos editáveis é veiculado a partir de `/conf` em vez de `/content`.
+1. (Opcional) Repita a última etapa para permitir que os componentes em [conteúdo bloqueado (inicial) de modelos editáveis](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/page-templates-editable.html) também sejam distribuídos via [!DNL SDI]. O motivo para a configuração adicional é que o conteúdo bloqueado de modelos editáveis é veiculado a partir de `/conf` em vez de `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +148,7 @@ Uma apresentação em vídeo da instalação e uso do [!DNL Apache Sling Dynamic
 
 >[!NOTE]
 >
->Se você estiver usando [!DNL Sling Dynamic Includes] para veicular inclusões de borda (ESI), certifique-se de armazenar em cache [cabeçalhos de resposta relevantes no cache do dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Os possíveis cabeçalhos incluem o seguinte:
+>Se você estiver usando [!DNL Sling Dynamic Includes] para veicular inclusões de borda (ESI), certifique-se de armazenar em cache [cabeçalhos de resposta relevantes no cache do dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#CachingHTTPResponseHeaders). Os possíveis cabeçalhos incluem o seguinte:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Disposição de conteúdo&quot;

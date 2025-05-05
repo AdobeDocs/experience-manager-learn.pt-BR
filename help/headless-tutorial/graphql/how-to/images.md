@@ -30,9 +30,9 @@ O tipo `ImageRef` tem quatro opções de URL para referências de conteúdo:
 + `_dynamicUrl` é a URL para a entrega otimizada para a Web do ativo de imagem.
    + O `_dynamicUrl` não inclui uma origem AEM, portanto, o domínio (Autor do AEM ou Serviço de Publicação do AEM) deve ser fornecido pelo aplicativo cliente.
 + `_authorUrl` é a URL completa para o ativo de imagem no Autor do AEM
-   + O [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
+   + O [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=pt-BR) pode ser usado para fornecer uma experiência de visualização do aplicativo headless.
 + `_publishUrl` é a URL completa para o ativo de imagem na Publicação do AEM
-   + A [Publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) geralmente é de onde a implantação de produção do aplicativo headless exibe imagens.
+   + A [Publicação do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=pt-BR) geralmente é de onde a implantação de produção do aplicativo headless exibe imagens.
 
 O `_dynamicUrl` é a URL recomendada para usar na entrega de ativos de imagem e deve substituir o uso de `_path`, `_authorUrl` e `_publishUrl` sempre que possível.
 
@@ -50,7 +50,7 @@ O `_dynamicUrl` é a URL recomendada para usar na entrega de ativos de imagem e 
 
 Verifique se o campo Fragmento de Conteúdo que contém a referência de imagem é do tipo de dados __referência de conteúdo__.
 
-Os tipos de campo são revisados no [Modelo de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), selecionando o campo e inspecionando a guia __Propriedades__ à direita.
+Os tipos de campo são revisados no [Modelo de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=pt-BR), selecionando o campo e inspecionando a guia __Propriedades__ à direita.
 
 ![Modelo de fragmento de conteúdo com referência de conteúdo a uma imagem](./assets/images/content-fragment-model.jpeg)
 

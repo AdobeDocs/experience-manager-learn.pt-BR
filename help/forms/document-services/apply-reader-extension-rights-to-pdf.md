@@ -21,7 +21,7 @@ ht-degree: 0%
 As extensões do Reader permitem manipular direitos de uso em documentos do PDF. Os direitos de uso pertencem à funcionalidade que está disponível no Acrobat, mas não no Adobe Reader. A funcionalidade controlada pelas extensões do Reader inclui a capacidade de adicionar comentários a um documento, preencher formulários e salvar o documento. Os documentos do PDF com direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento do PDF com direitos ativados no Adobe Reader pode executar as operações ativadas para esse documento.
 
 Para realizar esse caso de uso, precisamos fazer o seguinte:
-* [Adicionar o certificado de Extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ao usuário `fd-service`.
+* [Adicionar o certificado de Extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=pt-BR) ao usuário `fd-service`.
 
 ## Criar serviço OSGi personalizado
 

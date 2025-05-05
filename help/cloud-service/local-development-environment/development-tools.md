@@ -100,7 +100,7 @@ Se você estiver usando o Homebrew, siga as instruções de __Instalar usando o 
 
 ## Instalar o Git
 
-O [Git](https://git-scm.com/) é o sistema de gerenciamento de controle do código-fonte usado pelo [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) e, portanto, é necessário para o desenvolvimento.
+O [Git](https://git-scm.com/) é o sistema de gerenciamento de controle do código-fonte usado pelo [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html?lang=pt-BR) e, portanto, é necessário para o desenvolvimento.
 
 >[!BEGINTABS]
 
@@ -180,7 +180,7 @@ A [CLI do Adobe I/O](https://github.com/adobe/aio-cli) ou `aio` fornece acesso d
 
 + Logs finais dos serviços do AEM as a Cloud Services
 + Gerenciar pipelines do Cloud Manager a partir da CLI
-+ Implantar em [AEM Rapid Development Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
++ Implantar em [AEM Rapid Development Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=pt-BR)
 
 ### Instalar a CLI do Adobe I/O
 
@@ -217,7 +217,7 @@ Comece a [executar comandos](https://github.com/adobe/aio-cli-plugin-cloudmanage
 
 ### Configurar o plug-in do Ambiente de desenvolvimento rápido do AEM{#rde}
 
-O plug-in Ambiente de desenvolvimento rápido da AEM permite que a CLI do aio interaja com os [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) da AEM as a Cloud Service através do comando `aio aem:rde`.
+O plug-in Ambiente de desenvolvimento rápido da AEM permite que a CLI do aio interaja com os [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=pt-BR) da AEM as a Cloud Service através do comando `aio aem:rde`.
 
 1. Execute `aio plugins:install @adobe/aio-cli-plugin-aem-rde` para instalar o [plug-in do AEM Rapid Development Environments](https://github.com/adobe/aio-cli-plugin-aem-rde).
 
@@ -254,9 +254,9 @@ O Visual Studio Code é a escolha ideal para desenvolvedores front-end que criam
 
 ### Eclipse
 
-O __[Eclipse IDE](https://www.eclipse.org/ide/)__ é um IDE popular para desenvolvimento em Java, e oferece suporte ao plug-in __[Ferramentas de Desenvolvedor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ fornecido pelo Adobe, fornecendo uma GUI no IDE para criação e para sincronizar conteúdo JCR com uma instância local do AEM.
+O __[Eclipse IDE](https://www.eclipse.org/ide/)__ é um IDE popular para desenvolvimento em Java, e oferece suporte ao plug-in __[Ferramentas de Desenvolvedor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=pt-BR)__ fornecido pelo Adobe, fornecendo uma GUI no IDE para criação e para sincronizar conteúdo JCR com uma instância local do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Baixar o Eclipse](https://www.eclipse.org/ide/)
-+ [Baixar as Ferramentas de Desenvolvimento do Eclipse](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
++ [Baixar as Ferramentas de Desenvolvimento do Eclipse](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=pt-BR)

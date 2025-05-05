@@ -23,7 +23,7 @@ ht-degree: 0%
 O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
 
 O vídeo a seguir explica as etapas necessárias para incorporar um formulário adaptável ou HTML5 em uma página da Web.
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) para obter os pré-requisitos, as práticas recomendadas etc.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=pt-BR) para obter os pré-requisitos, as práticas recomendadas etc.
 >[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 Você pode baixar os arquivos de exemplo usados no vídeo [daqui](assets/embedding-af-web-page.zip)

@@ -25,10 +25,10 @@ Por exemplo, no portal de formulários do AEM Forms, quando um usuário clica em
 
 Para realizar esse caso de uso, precisamos fazer o seguinte.
 
-* Adicione o certificado de Extensões da Reader ao usuário &quot;fd-service&quot;. As etapas para adicionar a credencial Reader Extensions estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Adicione o certificado de Extensões da Reader ao usuário &quot;fd-service&quot;. As etapas para adicionar a credencial Reader Extensions estão listadas [aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=pt-BR)
 
 
-* Você também pode consultar o vídeo em [configurar credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* Você também pode consultar o vídeo em [configurar credenciais de extensões do Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=pt-BR)
 
 
 * Crie um serviço OSGi personalizado que renderiza e aplica direitos de uso. O código para fazer isso está listado abaixo

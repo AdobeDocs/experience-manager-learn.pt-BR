@@ -358,7 +358,7 @@ O modelo Byline Sling depende de várias APIs Java™ fornecidas pela AEM. Essas
    </dependency>
    ```
 
-   A [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contém todas as APIs do Java™ públicas expostas pelo AEM. O `aem-sdk-api` é usado por padrão ao compilar este projeto. A versão é mantida no pom do reator pai da raiz do projeto em `aem-guides-wknd/pom.xml`.
+   A [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR) contém todas as APIs do Java™ públicas expostas pelo AEM. O `aem-sdk-api` é usado por padrão ao compilar este projeto. A versão é mantida no pom do reator pai da raiz do projeto em `aem-guides-wknd/pom.xml`.
 
 1. Localizar a dependência de `uber-jar` - **AEM 6.5/6.4 Somente**
 
@@ -374,7 +374,7 @@ O modelo Byline Sling depende de várias APIs Java™ fornecidas pela AEM. Essas
 
    O `uber-jar` é incluído somente quando o perfil `classic` é chamado, ou seja, `mvn clean install -PautoInstallSinglePackage -Pclassic`. Novamente, isso é exclusivo para este projeto. Em um projeto real, gerado pelo Arquétipo de Projeto do AEM, o `uber-jar` será o padrão se a versão do AEM especificada for 6.5 ou 6.4.
 
-   O [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contém todas as APIs do Java™ públicas expostas pelo AEM 6.x. A versão é mantida no pom do reator pai da raiz do projeto `aem-guides-wknd/pom.xml`.
+   O [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=pt-BR#experience-manager-api-dependencies) contém todas as APIs do Java™ públicas expostas pelo AEM 6.x. A versão é mantida no pom do reator pai da raiz do projeto `aem-guides-wknd/pom.xml`.
 
 1. Localizar a dependência de `core.wcm.components.core`:
 

@@ -33,7 +33,7 @@ Exemplo de entrada de log:
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
-Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_en' on how to use attributes 
+Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_br' on how to use attributes 
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
@@ -130,7 +130,7 @@ Exemplo de entrada de log:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Significa que a busca do nível de renderização vs do cache foi medida. Você deseja atingir 80% ou mais do cache e deve seguir a ajuda [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html):
+Significa que a busca do nível de renderização vs do cache foi medida. Você deseja atingir 80% ou mais do cache e deve seguir a ajuda [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=pt-BR):
 
 Para obter este número o mais alto possível.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Esse erro ocorre quando você configura o Dispatcher para usar o filtro automático dinâmico para permitir Vanity URLs, mas não conclui a configuração com a instalação do pacote no renderizador do AEM.
 
-Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Para corrigir isso, instale o pacote de recursos url personalizado na instância do AEM e permita que seja preparado pelo usuário anônimo. Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=pt-BR)
 
 Uma configuração de Vanity URL de trabalho é semelhante ao seguinte:
 

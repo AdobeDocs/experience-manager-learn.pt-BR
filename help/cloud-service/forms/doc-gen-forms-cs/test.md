@@ -38,6 +38,6 @@ O projeto inclui os seguintes arquivos na pasta de recursos:
 * Execute o aplicativo Main.java as java
 
 >[!NOTE]
-> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para passar por isso, certifique-se de fornecer as [permissões apropriadas ao usuário da conta técnica no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> Na primeira vez que você executa o programa java, receberá o erro HTTP 403. Para passar por isso, certifique-se de fornecer as [permissões apropriadas ao usuário da conta técnica no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR#configure-access-in-aem).
 
 **Usuários do AEM Forms** é a função que usei neste curso.

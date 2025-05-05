@@ -26,7 +26,7 @@ Você pode usar o modelo sightly para formatar os dados a serem exibidos nas col
 
 ## Modelo do Sightly
 
-A seguir está o template sightly. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface do usuário do coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com o AEM.
+A seguir está o template sightly. O código no modelo exibe o ícone dependendo da renda. Os ícones estão disponíveis como parte da [biblioteca de ícones da interface do usuário do coral](https://helpx.adobe.com/br/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) que vem com o AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -80,7 +80,7 @@ return val;
 
 >[!NOTE]
 >
->Este artigo supõe que você tenha instalado o [formulário de exemplo](assets/review-workflow.zip) e o [formulário de exemplo](assets/snap-form.zip) do [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) nesta série.
+>Este artigo supõe que você tenha instalado o [formulário de exemplo](assets/review-workflow.zip) e o [formulário de exemplo](assets/snap-form.zip) do [artigo anterior](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html?lang=pt-BR) nesta série.
 
 * [Fazer logon no crx como usuário administrador](http://localhost:4502/crx/de/index.jsp)
 * [importar modelo do sightly](assets/sightly-template.zip)

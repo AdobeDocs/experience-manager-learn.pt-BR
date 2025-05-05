@@ -167,5 +167,5 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
 ## Recursos adicionais{#additional-resources}
 
 * [Integração do AEM com marcas na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR)
-* [Executando o Adobe Experience Manager no modo Scene7 do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
-* [Integrando Visualizadores do Dynamic Media com a Adobe Analytics usando marcas](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
+* [Executando o Adobe Experience Manager no modo Scene7 do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=pt-BR)
+* [Integrando Visualizadores do Dynamic Media com a Adobe Analytics usando marcas](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=pt-BR)

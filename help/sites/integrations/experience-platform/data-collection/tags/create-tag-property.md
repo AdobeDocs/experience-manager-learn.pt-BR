@@ -42,7 +42,7 @@ Para criar uma propriedade de tag, conclua as etapas a seguir.
 
 ## Criar uma nova regra
 
-Abra a propriedade de Marca recém-criada clicando no seu nome na exibição **Propriedades da Marca**. Além disso, no cabeçalho _Minha atividade recente_, você deve ver que a extensão principal foi adicionada a ela. A extensão de tag principal é a extensão padrão e fornece tipos de evento fundamentais, como carregamento de página, navegador, formulário e outros tipos de evento. Consulte a [Visão geral da extensão principal](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html) para obter mais informações.
+Abra a propriedade de Marca recém-criada clicando no seu nome na exibição **Propriedades da Marca**. Além disso, no cabeçalho _Minha atividade recente_, você deve ver que a extensão principal foi adicionada a ela. A extensão de tag principal é a extensão padrão e fornece tipos de evento fundamentais, como carregamento de página, navegador, formulário e outros tipos de evento. Consulte a [Visão geral da extensão principal](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=pt-BR) para obter mais informações.
 
 As regras permitem especificar o que deve acontecer quando o visitante interagir com o site AEM. Para simplificar, vamos registrar duas mensagens no console do navegador para demonstrar como a integração de tags de coleta de dados pode injetar código do JavaScript no site do AEM sem atualizar o código do projeto AEM.
 
@@ -93,4 +93,4 @@ A etapa acima conclui a criação da propriedade Tag simples, que tem uma regra 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Criar uma Propriedade de Marca](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [Criar uma Propriedade de Marca](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=pt-BR)

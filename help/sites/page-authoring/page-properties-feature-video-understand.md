@@ -60,6 +60,6 @@ Neste vídeo, os seguintes elementos de propriedade da página são abordados:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editando a Documentação de Propriedades da Página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Editando a Documentação do Conteúdo da Página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Editando a Documentação de Propriedades da Página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html?lang=pt-BR)
+* [Editando a Documentação do Conteúdo da Página](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=pt-BR)
+* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR)

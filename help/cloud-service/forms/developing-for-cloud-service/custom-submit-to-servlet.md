@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Criar manipulador de envio personalizado
 
-Crie sua ação de envio personalizada na pasta `apps/bankingapplication` da mesma forma que criaria nas [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Para fins deste tutorial, crio uma pasta chamada SubmitToAEMServlet no nó `apps/bankingapplication` no repositório do CRX.
+Crie sua ação de envio personalizada na pasta `apps/bankingapplication` da mesma forma que criaria nas [versões anteriores do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=pt-BR). Para fins deste tutorial, crio uma pasta chamada SubmitToAEMServlet no nó `apps/bankingapplication` no repositório do CRX.
 
 O código a seguir no post.POST.jsp simplesmente encaminha a solicitação para o servlet montado em /bin/formstutorial. Este é o mesmo servlet que foi criado na etapa anterior
 

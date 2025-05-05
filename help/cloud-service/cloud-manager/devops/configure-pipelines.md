@@ -23,7 +23,7 @@ ht-degree: 74%
 >id="aemcloud_devops_configurepipeline"
 >title="Configurar pipelines"
 >abstract="Explore os diferentes tipos de pipelines no Cloud Manager e como configurá-los para ter um projeto bem-sucedido."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#config-pipeline-video" text="Configuração de pipeline no Cloud Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=pt-BR#config-pipeline-video" text="Configuração de pipeline no Cloud Manager"
 
 Explore os diferentes tipos de pipelines no Cloud Manager e como configurá-los para ter um projeto bem-sucedido.
 

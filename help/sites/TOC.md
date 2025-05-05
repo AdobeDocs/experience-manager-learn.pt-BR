@@ -78,7 +78,7 @@ ht-degree: 17%
 + IA gerativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
+   + [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Tradução de fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 17%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
+   + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolvendo{#developing}
@@ -120,7 +120,7 @@ ht-degree: 17%
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR){target=_blank}
-   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR){target=_blank}
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
    + [Pontos de interrupção responsivos](developing/responsive-breakpoints.md)
    + [Desenvolvimento com o sistema de estilo](developing/style-system-technical-video-understand.md)
@@ -131,7 +131,7 @@ ht-degree: 17%
    + [Compartilhamento em redes sociais](developing/social-media-sharing-technical-video-use.md)
    + [Personalização de ícones de componentes](developing/component-icons-technical-video-develop.md)
 + Personalização {#personalization}
-   + [Integração com o Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [Integração com o Adobe Target](https://helpx.adobe.com/br/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Configurar fragmentos de experiência e o Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiência com o Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -144,7 +144,7 @@ ht-degree: 17%
    + [Mapas do site](./seo/sitemaps.md)
 + Aplicativos de Página Única {#spa-editor}
    + [Uso do Editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR){target=_blank}
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)

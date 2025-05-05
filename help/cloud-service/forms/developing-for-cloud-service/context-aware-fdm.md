@@ -27,7 +27,7 @@ As etapas a seguir são necessárias para criar a configuração da nuvem com re
 
 ## Criar variáveis de Ambiente
 
-As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Elas são fornecidas para o ambiente de tempo de execução e podem ser usados nas configurações do OSGi. [As variáveis de ambiente podem ser valores específicos ou segredos do ambiente, com base no que está sendo alterado.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Elas são fornecidas para o ambiente de tempo de execução e podem ser usados nas configurações do OSGi. [As variáveis de ambiente podem ser valores específicos ou segredos do ambiente, com base no que está sendo alterado.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=pt-BR)
 
 
 

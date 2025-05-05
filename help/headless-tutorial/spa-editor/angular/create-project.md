@@ -87,7 +87,7 @@ Há várias opções para criar um projeto de vários módulos do Maven para o A
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor SPA do AEM.
+   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM.
 
 ## Criar o projeto
 

@@ -35,7 +35,7 @@ Verifique se a configuração avançada de rede [apropriada](../advanced-network
 
 A cadeia de conexão da configuração do OSGi usa:
 
-+ Valor `AEM_PROXY_HOST` por meio da [variável de ambiente de configuração OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como o host da conexão
++ Valor `AEM_PROXY_HOST` por meio da [variável de ambiente de configuração OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` como o host da conexão
 + `30001` que é o valor `portOrig` para o mapeamento de encaminhamento de porta do Cloud Manager `30001` → `mysql.example.com:3306`
 
 Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL são fornecidos melhor por meio de variáveis de configuração OSGi, definidas usando a CLI AIO ou as APIs do Cloud Manager.

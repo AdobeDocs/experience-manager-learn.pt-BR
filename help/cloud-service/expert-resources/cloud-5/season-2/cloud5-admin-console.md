@@ -24,7 +24,7 @@ Você já se perguntou por que cada item faz no contexto do AEM na Admin Console
 
 ## Conteúdo abordado neste vídeo
 
-+ [Entender a Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Entender a Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=pt-BR)
 + [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html)
 
 ## Recursos adicionais

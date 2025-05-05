@@ -53,13 +53,13 @@ Use o [editor swagger](https://editor.swagger.io/) para criar seu arquivo swagge
 
 ## Criar fontes de dados
 
-Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar a fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) na configuração dos serviços em nuvem. Use os [arquivos swagger](assets/geonames-swagger-files.zip) para criar suas fontes de dados.
+Para integrar o AEM/AEM Forms com aplicativos de terceiros, precisamos [criar a fonte de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=pt-BR) na configuração dos serviços em nuvem. Use os [arquivos swagger](assets/geonames-swagger-files.zip) para criar suas fontes de dados.
 Você precisará criar duas fontes de dados (uma para buscar todos os países e outra para obter elementos secundários)
 
 
 ## Criar modelo de dados do formulário
 
-A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Baseie o modelo de dados do formulário nas fontes de dados criadas na etapa anterior. Modelo de dados de formulário com 2 fontes de dados
+A integração de dados do AEM Forms fornece uma interface de usuário intuitiva para criar e trabalhar com [modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR). Baseie o modelo de dados do formulário nas fontes de dados criadas na etapa anterior. Modelo de dados de formulário com 2 fontes de dados
 
 ![fdm](assets/geonames-fdm.png)
 

@@ -21,9 +21,9 @@ Um dos principais pontos fortes do conceito de imagem principal do Dynamic Media
 
 Ao final desta seção do tutorial, você saberá como:
 
-- Recorte imagens no Dynamic Media Classic e salve como novos arquivos mestres ou como imagens virtuais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
-- Salve as Imagens ajustadas virtuais e use-as no lugar dos ativos principais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
-- Criar Destinos de Zoom nas imagens para exibir seus destaques. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Recorte imagens no Dynamic Media Classic e salve como novos arquivos mestres ou como imagens virtuais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=pt-BR).
+- Salve as Imagens ajustadas virtuais e use-as no lugar dos ativos principais. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html?lang=pt-BR).
+- Criar Destinos de Zoom nas imagens para exibir seus destaques. [Saiba mais](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=pt-BR).
 
 ## Cortar
 
@@ -42,8 +42,8 @@ O Dynamic Media Classic tem algumas ferramentas de edição de imagens convenien
 
 É possível acessar a ferramenta Corte demarcado no Dynamic Media Classic na página Detalhes de um ativo ou clicando no botão **Editar**. Você pode usar a ferramenta para recortar de duas maneiras:
 
-- O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como [Cortar manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Aparar. Use essa opção para remover espaços em branco extras em torno da imagem, calculando o número de pixels que não correspondem a ela. Saiba como [Cortar por corte](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- O modo de corte padrão no qual você arrasta as alças da janela de corte ou digita valores na caixa Tamanho. Saiba como [Cortar manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=pt-BR#select-an-area-to-crop).
+- Aparar. Use essa opção para remover espaços em branco extras em torno da imagem, calculando o número de pixels que não correspondem a ela. Saiba como [Cortar por corte](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=pt-BR#crop-to-remove-white-space-around-an-image).
 
 ### _Corte Manual_
 
@@ -134,7 +134,7 @@ O processo é muito fácil. Clique no recurso, dê a ele um nome descritivo e sa
 
 Outro fator ao decidir se os Destinos de zoom devem ser usados é a escolha do visualizador. Nem todos os tipos de visualizador podem exibir Destinos de zoom (por exemplo, o visualizador Fly-out não os suporta).
 
-Saiba como [Criar Destinos de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Saiba como [Criar Destinos de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=pt-BR#creating-and-editing-zoom-targets).
 
 ![imagem](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 

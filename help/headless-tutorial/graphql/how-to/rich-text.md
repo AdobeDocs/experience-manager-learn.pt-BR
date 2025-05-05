@@ -63,7 +63,7 @@ Marque a caixa **Traduzível** se o conteúdo deve ser localizado. Somente Rich 
 
 Ao criar uma consulta do GraphQL, os desenvolvedores podem escolher tipos de resposta diferentes de `html`, `plaintext`, `markdown` e `json` de um campo de várias linhas.
 
-Os desenvolvedores podem usar a [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) no editor de fragmento de conteúdo para mostrar todos os valores do fragmento de conteúdo atual que podem ser retornados usando a API do GraphQL.
+Os desenvolvedores podem usar a [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR) no editor de fragmento de conteúdo para mostrar todos os valores do fragmento de conteúdo atual que podem ser retornados usando a API do GraphQL.
 
 ## Consulta persistente do GraphQL
 

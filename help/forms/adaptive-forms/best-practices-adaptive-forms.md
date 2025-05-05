@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Práticas recomendadas
 
-Os formulários do Adobe Experience Manager (AEM) podem ajudá-lo a transformar transações complexas em experiências digitais simples e atraentes. O documento a seguir descreve algumas práticas recomendadas adicionais que precisam ser seguidas ao desenvolver o Adaptive Forms. Este documento deve ser usado em conjunto com [este documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Os formulários do Adobe Experience Manager (AEM) podem ajudá-lo a transformar transações complexas em experiências digitais simples e atraentes. O documento a seguir descreve algumas práticas recomendadas adicionais que precisam ser seguidas ao desenvolver o Adaptive Forms. Este documento deve ser usado em conjunto com [este documento](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenções de nomenclatura
 

@@ -24,8 +24,8 @@ Criar e exibir incidente em [!DNL ServiceNow] usando Modelo de Dados de Formulá
 ## Pré-requisitos
 
 * Conta de [!DNL ServiceNow].
-* Familiarizar-se com [criação de fontes de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* Familiarizar-se com o [Modelo de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* Familiarizar-se com [criação de fontes de dados](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=pt-BR)
+* Familiarizar-se com o [Modelo de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR)
 
 ## Assets de amostra
 

@@ -26,7 +26,7 @@ Um exemplo rápido de como você pode usar o validador do Dispatcher nos fluxos 
 ## Conteúdo abordado neste vídeo
 
 + Visão geral do Dispatcher e do SDK
-+ [Ferramentas do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
++ [Ferramentas do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=pt-BR)
 + Solução de problemas de erros
 + Usar logs e modos de execução do dispatcher para depuração
 

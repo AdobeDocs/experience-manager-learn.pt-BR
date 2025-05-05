@@ -24,7 +24,7 @@ Os ativos/configurações a seguir foram implantados em um servidor de publicaç
 * [Pacote do Adobe Sign Wrapper](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Modelo de comunicação interativa de amostra](assets/waiver-interactive-communication.zip)
-* [Implantar o pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* [Implantar o pacote DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=pt-BR)
 * Adicione a seguinte entrada no serviço Mapeador de usuários do Apache Sling Service usando o OSGi configMgr
   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -61,4 +61,4 @@ Para permitir fazer chamadas POST para o endpoint do AEM a partir do aplicativo 
 
 ![configuração de cors](assets/cors-settings.png)
 
-Consulte [noções básicas sobre o CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) para obter mais detalhes sobre as opções de configuração do CORS.
+Consulte [noções básicas sobre o CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR) para obter mais detalhes sobre as opções de configuração do CORS.

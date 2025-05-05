@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Clique no ícone do Assets e aplique o filtro para exibir ativos do tipo &quot;Fragmentos de documento&quot;. Arraste e solte o fragmento do documento RetiradaReceitaOutlook na área de destino do Painel esquerdo.
 
-* Você pode consultar [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) ao adicionar fragmento de documento a áreas de conteúdo.
+* Você pode consultar [esta página](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=pt-BR) ao adicionar fragmento de documento a áreas de conteúdo.
 
 ## Adição do Gráfico de Receita Mensal Estimada {#adding-estimated-monthly-income-chart}
 

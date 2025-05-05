@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Testar um trabalhador do Asset Compute
 
-O projeto do Asset Compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+O projeto do Asset Compute define um padrão para criar e executar facilmente [testes de trabalhadores do Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=pt-BR).
 
 ## Anatomia de um teste do trabalhador
 

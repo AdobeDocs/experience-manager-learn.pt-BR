@@ -28,4 +28,4 @@ A AEM Assets fornece uma estrutura de relatórios de nível empresarial que pode
 
 >[!IMPORTANT]
 >
->O AEM 6.5 fornece a capacidade de configurar [relatórios de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), permitindo que os administradores definam o que é rastreado e incluído nos relatórios.
+>O AEM 6.5 fornece a capacidade de configurar [relatórios de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=pt-BR#prerequisite-for-reporting), permitindo que os administradores definam o que é rastreado e incluído nos relatórios.

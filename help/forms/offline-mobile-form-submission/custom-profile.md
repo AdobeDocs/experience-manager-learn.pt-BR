@@ -127,7 +127,7 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 
 ### Renderizar PDF interativo
 
-O código a seguir usa a [API de Serviço do Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para renderizar o PDF interativo com os dados do formulário para dispositivos móveis.
+O código a seguir usa a [API de Serviço do Forms](https://helpx.adobe.com/br/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) para renderizar o PDF interativo com os dados do formulário para dispositivos móveis.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

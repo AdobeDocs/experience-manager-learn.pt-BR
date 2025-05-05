@@ -48,8 +48,8 @@ O URL para o Conjunto de imagens acima pode aparecer como:
 
 ![imagem](assets/media-sets/image-set-url-1.png)
 
-- Saiba mais sobre Conjuntos de imagens com o [Início rápido para Conjuntos de imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Saiba como [Criar um Conjunto de Imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Saiba mais sobre Conjuntos de imagens com o [Início rápido para Conjuntos de imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html?lang=pt-BR).
+- Saiba como [Criar um Conjunto de Imagens](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html?lang=pt-BR#creating-an-image-set).
 
 ### Conjunto de amostras
 
@@ -67,8 +67,8 @@ O URL do Conjunto de amostras acima pode aparecer como:
 
 ![imagem](assets/media-sets/image-set_url.png)
 
-- Saiba mais sobre Conjuntos de amostras com o [Início rápido para Conjuntos de amostras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Saiba como [Criar um conjunto de amostras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Saiba mais sobre Conjuntos de amostras com o [Início rápido para Conjuntos de amostras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html?lang=pt-BR).
+- Saiba como [Criar um conjunto de amostras](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html?lang=pt-BR#creating-a-swatch-set).
 
 ### Grupo de rotação
 
@@ -84,8 +84,8 @@ O URL do Spin Set acima pode aparecer como:
 
 ![imagem](assets/media-sets/spin-set.png)
 
-- Saiba mais sobre Conjuntos de rotação com o [Início rápido para Conjuntos de rotação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Saiba como [Criar um conjunto de rotação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- Saiba mais sobre Conjuntos de rotação com o [Início rápido para Conjuntos de rotação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html?lang=pt-BR).
+- Saiba como [Criar um conjunto de rotação](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html?lang=pt-BR#creating-a-spin-set).
 
 ## Conjunto de mix de mídia
 
@@ -99,13 +99,13 @@ O URL para o Conjunto de mídias mistas acima pode aparecer como:
 
 ![imagem](assets/media-sets/image-set-url-1.png)
 
-- Saiba mais sobre Conjuntos de mídia mista com o [Início rápido para Conjuntos de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Saiba mais sobre Conjuntos de mídia mista com o [Início rápido para Conjuntos de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html?lang=pt-BR).
 
-- Saiba como [Criar um conjunto de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Saiba como [Criar um conjunto de mídia mista](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html?lang=pt-BR#creating-a-mixed-media-set).
 
 Para exibir uma imagem para zoom, um conjunto ou um vídeo em seu site, você o chama em um &quot;visualizador&quot; do Dynamic Media Classic. O Dynamic Media Classic inclui visualizadores para ativos de mídia avançada, como Conjuntos de amostras, Conjuntos de rotação, vídeo e muitos outros.
 
-Saiba mais sobre [Visualizadores para AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+Saiba mais sobre [Visualizadores para AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=pt-BR).
 
 ## Predefinições de conjunto de lotes
 
@@ -124,7 +124,7 @@ As Predefinições de conjunto de lotes são aplicadas somente durante o upload;
 
 Depois que as predefinições forem criadas, o Administrador da empresa poderá escolher se elas estarão ativas ou inativas. Ativo significa que elas aparecerão na página de upload em **Opções de trabalho**, enquanto predefinições inativas permanecerão ocultas.
 
-Saiba como [Criar uma predefinição de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Saiba como [Criar uma predefinição de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=pt-BR#creating-a-batch-set-preset).
 
 ### Uso de predefinições de conjunto de lotes ao fazer upload
 
@@ -135,4 +135,4 @@ Veja como usar as Predefinições de conjunto de lotes ao fazer upload após sua
 3. Abra a opção **Predefinições de conjunto de lotes** e marque ou desmarque a predefinição para usá-la com o carregamento.
 4. Quando o upload estiver concluído, procure os conjuntos concluídos na pasta.
 
-Saiba mais sobre [Predefinições de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Saiba mais sobre [Predefinições de conjunto de lotes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=pt-BR#batch-set-presets).

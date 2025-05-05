@@ -1302,11 +1302,11 @@ Se você instalar um AEM Author e um Publish imediatamente, a topologia será um
 
 Se um cliente solicitar esse conteúdo enquanto isso, o Dispatcher solicitará e armazenará conteúdo obsoleto.
 
-Uma configuração mais confiável está enviando a solicitação de invalidação dos sistemas Publish _após_, quando eles receberam o conteúdo. O artigo &quot;[Invalidação do Dispatcher Cache de uma Instância de Publicação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descreve os detalhes.
+Uma configuração mais confiável está enviando a solicitação de invalidação dos sistemas Publish _após_, quando eles receberam o conteúdo. O artigo &quot;[Invalidação do Dispatcher Cache de uma Instância de Publicação](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descreve os detalhes.
 
 **Referências**
 
-[helpx.adobe.com - Invalidando o Dispatcher Cache de uma Instância de Publicação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com - Invalidando o Dispatcher Cache de uma Instância de Publicação](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### Cabeçalho HTTP e Cache de cabeçalho
 
@@ -1454,7 +1454,7 @@ Ter um docroot comum também tinha outro recurso agradável. Quando algo deu err
 
 * [apache.org - Mod Rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - Mapeamento de Recursos](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [helpx.adobe.com - Mapeamento de Recursos](https://helpx.adobe.com/br/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### Reparação de erros
 
@@ -1506,11 +1506,11 @@ E é claro, você pode aplicar sua própria combinação das três abordagens.
 
 **Opção 2**. &quot;Não armazenar em cache&quot; geralmente é uma má ideia. Se você for para esse lado, verifique se a quantidade de tráfego e o número de recursos confidenciais excluídos são pequenos. Ou certifique-se de ter algum cache na memória instalado no sistema Publish, para que os sistemas Publish possam lidar com a carga resultante - mais sobre isso na Parte III desta série.
 
-**Opção 3**. &quot;Armazenamento em cache sensível a permissões&quot; é uma abordagem interessante. O Dispatcher está armazenando um recurso em cache, mas antes de enviá-lo, ele pergunta ao sistema AEM se pode fazer isso. Isso cria uma solicitação extra do Dispatcher para o Publish, mas geralmente poupa o sistema Publish de renderizar novamente uma página se ela já estiver armazenada em cache. No entanto, essa abordagem requer alguma implementação personalizada. Encontre detalhes aqui no artigo [Cache sensível a permissões](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Opção 3**. &quot;Armazenamento em cache sensível a permissões&quot; é uma abordagem interessante. O Dispatcher está armazenando um recurso em cache, mas antes de enviá-lo, ele pergunta ao sistema AEM se pode fazer isso. Isso cria uma solicitação extra do Dispatcher para o Publish, mas geralmente poupa o sistema Publish de renderizar novamente uma página se ela já estiver armazenada em cache. No entanto, essa abordagem requer alguma implementação personalizada. Encontre detalhes aqui no artigo [Cache sensível a permissões](https://helpx.adobe.com/br/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Referências**
 
-* [helpx.adobe.com - Cache sensível a permissões](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
+* [helpx.adobe.com - Cache sensível a permissões](https://helpx.adobe.com/br/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### Definindo o período de carência
 
@@ -1635,7 +1635,7 @@ Se você procurar no diretório de cache do Dispatcher, verá arquivos temporár
 
 **Referências**
 
-[helpx.adobe.com - Invalidando Páginas em Cache do AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+[helpx.adobe.com - Invalidando Páginas em Cache do AEM](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Blindagem do sistema Publish
 
@@ -1690,7 +1690,7 @@ Mas nós propomos que você considere restringir o espaço do URL o mais cedo po
 
 [apache.org- diretiva sethandler](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - Configurando o Acesso ao Filtro de Conteúdo](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - Configurando o Acesso ao Filtro de Conteúdo](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### Filtrar usando expressões regulares e globais
 
@@ -1843,7 +1843,7 @@ Em seguida, você pode nomear e agrupar as regras de acordo e fornecer ao leitor
 
 **Referências**
 
-[helpx.adobe.com - Criação de Padrões para Propriedades glob](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[helpx.adobe.com - Criação de Padrões para Propriedades glob](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### Especificação de protocolo
 
@@ -1906,17 +1906,17 @@ Liste os URLs que você deseja recuperar imediatamente após a invalidação.
 
 ## Recursos adicionais
 
-Uma boa visão geral e introdução ao cache do Dispatcher: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Uma boa visão geral e introdução ao cache do Dispatcher: [https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher.html)
 
-Documentação do Dispatcher com todas as diretivas explicadas: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html)
+Documentação do Dispatcher com todas as diretivas explicadas: [https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Algumas perguntas frequentes: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/br/experience-manager/using/dispatcher-faq.html)
+Algumas perguntas frequentes: [https://helpx.adobe.com/br/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/br/experience-manager/using/dispatcher-faq.html)
 
 Gravação de um webinário sobre otimização do Dispatcher - altamente recomendado: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 Apresentação &quot;O poder subestimado da invalidação de conteúdo&quot;, conferência &quot;adaptTo()&quot; em Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
-Invalidar páginas em cache do AEM: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+Invalidar páginas em cache do AEM: [https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## Próxima etapa
 

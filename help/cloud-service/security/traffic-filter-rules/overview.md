@@ -29,11 +29,11 @@ Saiba mais sobre as **regras de filtro de tráfego**, incluindo sua subcategoria
 
 Reduzir o risco de violações de segurança é a principal prioridade de qualquer organização. O AEM CS oferece o recurso de regras de filtro de tráfego, incluindo regras do WAF, para proteger sites e aplicativos.
 
-As regras de filtro de tráfego são implantadas no [CDN interno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) e são avaliadas antes que a solicitação atinja a infraestrutura da AEM. Com esse recurso, você pode melhorar significativamente a segurança do seu site, garantindo que somente solicitações legítimas tenham permissão para acessar a infraestrutura do AEM.
+As regras de filtro de tráfego são implantadas no [CDN interno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=pt-BR) e são avaliadas antes que a solicitação atinja a infraestrutura da AEM. Com esse recurso, você pode melhorar significativamente a segurança do seu site, garantindo que somente solicitações legítimas tenham permissão para acessar a infraestrutura do AEM.
 
 Este tutorial o orienta pelo processo de criação, implantação, teste e análise dos resultados das regras de filtro de tráfego, incluindo as regras do WAF.
 
-Você pode ler mais sobre as regras de filtro de tráfego em [este artigo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
+Você pode ler mais sobre as regras de filtro de tráfego em [este artigo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=pt-BR).
 
 >[!IMPORTANT]
 >

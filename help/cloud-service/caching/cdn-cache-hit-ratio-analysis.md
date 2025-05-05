@@ -26,7 +26,7 @@ O conteúdo armazenado em cache na CDN reduz a latência experimentada pelos usu
 Saiba como analisar os **logs de CDN** fornecidos pela AEM as a Cloud Service e obter insights, como **taxa de acertos de cache** e **principais URLs de _MISS_ e _PASS_ tipos de cache**, para fins de otimização.
 
 
-Os logs CDN estão disponíveis no formato JSON, que contém vários campos, incluindo `url`, `cache`. Para obter mais informações, consulte o [Formato de Log da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). O campo `cache` fornece informações sobre o _estado do cache_ e seus valores possíveis são HIT, MISS ou PASS. Vamos analisar os detalhes de valores possíveis.
+Os logs CDN estão disponíveis no formato JSON, que contém vários campos, incluindo `url`, `cache`. Para obter mais informações, consulte o [Formato de Log da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=pt-BR#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). O campo `cache` fornece informações sobre o _estado do cache_ e seus valores possíveis são HIT, MISS ou PASS. Vamos analisar os detalhes de valores possíveis.
 
 | Estado de Cache </br> Valor Possível | Descrição |
 |------------------------------------|:-----------------------------------------------------:|
@@ -66,8 +66,8 @@ Para obter insights, como a taxa de acertos do cache e os principais URLs dos ti
 Para analisar os logs de CDN, este tutorial apresenta três opções:
 
 1. **Elasticsearch, Logstash e Kibana (ELK)**: a [ferramenta do painel ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) pode ser instalada localmente.
-1. **Splunk**: a [ferramenta do painel Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) requer acesso ao Splunk e ao [encaminhamento de logs do AEMCS habilitado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) para assimilar os logs de CDN.
-1. **Jupyter Notebook**: ele pode ser acessado remotamente como parte do [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sem instalar software adicional para clientes que possuem Adobe Experience Platform licenciado.
+1. **Splunk**: a [ferramenta do painel Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) requer acesso ao Splunk e ao [encaminhamento de logs do AEMCS habilitado](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) para assimilar os logs de CDN.
+1. **Jupyter Notebook**: ele pode ser acessado remotamente como parte do [Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sem instalar software adicional para clientes que possuem Adobe Experience Platform licenciado.
 
 ### Opção 1: usar ferramentas de painel ELK
 
@@ -149,7 +149,7 @@ Para identificar os detalhes principais, vamos usar o projeto [AEMCS-CDN-Log-Ana
 
 Para aqueles que preferem não instalar o software localmente (ou seja, a ferramenta do painel ELK da seção anterior), há outra opção, mas ela requer uma licença para a Adobe Experience Platform.
 
-O [Jupyter Notebook](https://jupyter.org/) é um aplicativo web de código aberto que permite criar documentos que contêm código, texto e visualização. Ele é usado para transformação de dados, visualização e modelagem estatística. Ele pode ser acessado remotamente [como parte do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
+O [Jupyter Notebook](https://jupyter.org/) é um aplicativo web de código aberto que permite criar documentos que contêm código, texto e visualização. Ele é usado para transformação de dados, visualização e modelagem estatística. Ele pode ser acessado remotamente [como parte do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Baixando o arquivo de Bloco de Anotações Python Interativo
 

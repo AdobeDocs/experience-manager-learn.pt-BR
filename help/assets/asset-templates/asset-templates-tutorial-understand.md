@@ -39,7 +39,7 @@ Este tutorial em vídeo aborda a definição de um arquivo InDesign e todas as c
 
    * **Clique com o botão direito do mouse em** e selecione **Ajuste > Opções de Ajuste de Quadro... > Ajuste de Conteúdo > Preencher Quadro Proporcionalmente**
 
-   [Saiba mais sobre as opções de Ajuste de Quadro](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), e qual é a escolha certa para o seu caso de uso.
+   [Saiba mais sobre as opções de Ajuste de Quadro](https://helpx.adobe.com/br/indesign/using/frames-objects.html#fitting_objects_to_frames), e qual é a escolha certa para o seu caso de uso.
 
 5. Copie para baixo o cabeçalho (Logotipo e Nome da empresa) do Modelo mestre em Página e Página por meio de Colar no local.
 

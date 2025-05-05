@@ -32,7 +32,7 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 ## 1. Instalar o AEM SDK {#aem-sdk}
 
-Esta instalação usa o [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) para explorar as APIs GraphQL da AEM. Esta seção fornece um guia rápido para instalar o AEM SDK e executá-lo no modo Autor. Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+Esta instalação usa o [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR&#aem-as-a-cloud-service-sdk) para explorar as APIs GraphQL da AEM. Esta seção fornece um guia rápido para instalar o AEM SDK e executá-lo no modo Autor. Um guia mais detalhado para configurar um ambiente de desenvolvimento local [pode ser encontrado aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Esta instalação usa o [AEM as a Cloud Service SDK](https://experienceleague.ad
 
 O conteúdo de amostra do **site de Referência WKND** é usado para acelerar o tutorial. A WKND é uma marca fictícia de estilo de vida, geralmente usada com treinamento em AEM.
 
-O site WKND inclui configurações necessárias para expor um [ponto de extremidade do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Em uma implementação real, siga as etapas documentadas para [incluir os pontos de extremidade do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) no projeto do cliente. Um [CORS](#cors-config) também foi empacotado como parte do Site WKND. Uma configuração do CORS é necessária para conceder acesso a um aplicativo externo. Mais informações sobre o [CORS](#cors-config) podem ser encontradas abaixo.
+O site WKND inclui configurações necessárias para expor um [ponto de extremidade do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=pt-BR). Em uma implementação real, siga as etapas documentadas para [incluir os pontos de extremidade do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=pt-BR) no projeto do cliente. Um [CORS](#cors-config) também foi empacotado como parte do Site WKND. Uma configuração do CORS é necessária para conceder acesso a um aplicativo externo. Mais informações sobre o [CORS](#cors-config) podem ser encontradas abaixo.
 
 1. Baixe o Pacote do AEM compilado mais recente para o Site WKND: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -98,7 +98,7 @@ O site WKND inclui configurações necessárias para expor um [ponto de extremid
 
 >[!NOTE]
 >
-> Se estiver usando um ambiente do Cloud Service, consulte a documentação para saber como [implantar uma base de código como o site de Referência WKND em um ambiente do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version).
+> Se estiver usando um ambiente do Cloud Service, consulte a documentação para saber como [implantar uma base de código como o site de Referência WKND em um ambiente do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#coding-against-the-right-aem-version).
 
 ## 3. Baixe e execute o aplicativo WKND React {#sample-app}
 

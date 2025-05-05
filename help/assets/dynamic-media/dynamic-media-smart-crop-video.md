@@ -26,4 +26,4 @@ O Corte inteligente do Dynamic Media para vídeo usa o Adobe Sensei para rastrea
 
 >[!NOTE]
 >
->O vídeo acima presume que o serviço AEM está sendo executado no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com Dynamic Media podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>O vídeo acima presume que o serviço AEM está sendo executado no modo Dynamic Media S7. [As instruções sobre como configurar o AEM com Dynamic Media podem ser encontradas aqui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=pt-BR)

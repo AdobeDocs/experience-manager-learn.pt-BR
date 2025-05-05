@@ -35,7 +35,7 @@ Configurar um ambiente de desenvolvimento local é o primeiro passo ao desenvolv
 
 Quando nos referimos a uma instância local do AEM, estamos falando de uma cópia do Adobe Experience Manager que está em execução na máquina pessoal de um desenvolvedor. ***Todos*** o desenvolvimento do AEM deve começar gravando e executando código em uma instância do AEM local.
 
-Se você nunca usou o AEM, dois modos básicos de execução podem ser instalados: ***Autor*** e ***Publicar***. O ***Author*** [runmode](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) é o ambiente que os profissionais de marketing digital usam para criar e gerenciar conteúdo. Ao desenvolver o na maioria das vezes, você está implantando o código em uma instância de autor. Isso permite criar páginas e adicionar e configurar componentes. O AEM Sites é um CMS de criação do WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
+Se você nunca usou o AEM, dois modos básicos de execução podem ser instalados: ***Autor*** e ***Publicar***. O ***Author*** [runmode](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=pt-BR) é o ambiente que os profissionais de marketing digital usam para criar e gerenciar conteúdo. Ao desenvolver o na maioria das vezes, você está implantando o código em uma instância de autor. Isso permite criar páginas e adicionar e configurar componentes. O AEM Sites é um CMS de criação do WYSIWYG e, portanto, a maioria do CSS e do JavaScript pode ser testada em relação a uma instância de criação.
 
 Também é um código de teste *crítico* em relação a uma instância de ***Publicação*** local. A instância de ***Publicação*** é o ambiente do AEM com o qual os visitantes do site interagem. Embora a instância de ***Publicação*** seja a mesma pilha de tecnologia que a instância de ***Autor***, há algumas distinções importantes entre configurações e permissões. O código deve ser testado em relação a uma instância local ***Publish*** antes de ser promovido para ambientes de nível superior.
 
@@ -83,7 +83,7 @@ Uma alternativa para clicar duas vezes no arquivo JAR é iniciar o AEM a partir 
 $ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
 ```
 
-Aqui, as `-X` são opções JVM e `-D` são propriedades de estrutura adicionais. Para obter mais informações, consulte [Implantando e Mantendo uma instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR) e [Outras opções disponíveis no arquivo Quickstart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
+Aqui, as `-X` são opções JVM e `-D` são propriedades de estrutura adicionais. Para obter mais informações, consulte [Implantando e Mantendo uma instância do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR) e [Outras opções disponíveis no arquivo Quickstart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html?lang=pt-BR#further-options-available-from-the-quickstart-file).
 
 ## Instalar o Apache Maven
 
@@ -137,12 +137,12 @@ Quando, usando um IDE, verifique `classic` na guia Perfil Maven.
 
 ### IDE [!DNL Eclipse]
 
-O **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** é um dos IDEs mais populares para desenvolvimento em Java™, em grande parte porque é de código aberto e ***gratuito***! O Adobe fornece um plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, para [!DNL Eclipse] para permitir um desenvolvimento mais fácil com uma interface gráfica para sincronizar o código com uma instância AEM local. O IDE [!DNL Eclipse] é recomendado para desenvolvedores novos no AEM em grande parte devido ao suporte de GUI do [!DNL AEM Developer Tools].
+O **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** é um dos IDEs mais populares para desenvolvimento em Java™, em grande parte porque é de código aberto e ***gratuito***! O Adobe fornece um plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=pt-BR)**, para [!DNL Eclipse] para permitir um desenvolvimento mais fácil com uma interface gráfica para sincronizar o código com uma instância AEM local. O IDE [!DNL Eclipse] é recomendado para desenvolvedores novos no AEM em grande parte devido ao suporte de GUI do [!DNL AEM Developer Tools].
 
 #### Instalação e configuração
 
 1. Baixe e instale o IDE [!DNL Eclipse] para [!DNL Java™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
-1. Siga as instruções para instalar o plug-in [!DNL AEM Developer Tools]: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
+1. Siga as instruções para instalar o plug-in [!DNL AEM Developer Tools]: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=pt-BR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=pt-BR)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
@@ -192,7 +192,7 @@ O [!DNL Visual Studio Code] é uma ótima opção para desenvolvedores de front-
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) é uma exibição baseada em navegador do repositório do AEM. O [!DNL CRXDE Lite] está incorporado no AEM e permite que um desenvolvedor execute tarefas de desenvolvimento padrão, como editar arquivos, definir componentes, caixas de diálogo e modelos. [!DNL CRXDE Lite] ***não*** pretende ser um ambiente de desenvolvimento completo, mas é efetivo como uma ferramenta de depuração. O [!DNL CRXDE Lite] é útil para estender ou simplesmente entender o código do produto fora da sua base de código. O [!DNL CRXDE Lite] fornece uma exibição poderosa do repositório e uma maneira eficaz de testar e gerenciar permissões.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html?lang=pt-BR) é uma exibição baseada em navegador do repositório do AEM. O [!DNL CRXDE Lite] está incorporado no AEM e permite que um desenvolvedor execute tarefas de desenvolvimento padrão, como editar arquivos, definir componentes, caixas de diálogo e modelos. [!DNL CRXDE Lite] ***não*** pretende ser um ambiente de desenvolvimento completo, mas é efetivo como uma ferramenta de depuração. O [!DNL CRXDE Lite] é útil para estender ou simplesmente entender o código do produto fora da sua base de código. O [!DNL CRXDE Lite] fornece uma exibição poderosa do repositório e uma maneira eficaz de testar e gerenciar permissões.
 
 [!DNL CRXDE Lite] deve ser usado com outros IDEs para testar e depurar o código, mas nunca como a ferramenta de desenvolvimento principal. Ele tem suporte limitado à sintaxe, nenhum recurso de preenchimento automático e integração limitada com sistemas de gerenciamento de controle de origem.
 

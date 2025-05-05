@@ -471,4 +471,4 @@ Agora você explorou como os cabeçalhos e rodapés são gerenciados e desenvolv
 
 Esse padrão fornece uma abordagem flexível e manutenível para a implementação de componentes de navegação em todo o site.
 
-Para obter mais práticas recomendadas e técnicas avançadas, consulte a [documentação do Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para obter mais práticas recomendadas e técnicas avançadas, consulte a [documentação do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

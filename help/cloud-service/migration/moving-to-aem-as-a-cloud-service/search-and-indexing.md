@@ -29,7 +29,7 @@ Saiba mais sobre os índices de pesquisa do AEM as a Cloud Service, como convert
 
 Como parte da refatoração de sua base de código, use a [ferramenta de conversão de índice](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) para converter definições de índice Oak personalizadas em definições de índice compatíveis com AEM as a Cloud Service.
 
-Revise a [documentação do conversor de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) para obter o conjunto completo e atual de recursos do Conversor de Índice.
+Revise a [documentação do conversor de índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=pt-BR) para obter o conjunto completo e atual de recursos do Conversor de Índice.
 
 ## Atividades principais
 

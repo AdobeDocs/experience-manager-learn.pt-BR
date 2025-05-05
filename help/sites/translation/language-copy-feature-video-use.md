@@ -24,5 +24,5 @@ Com o aprimoramento da tradução do site do Assistente de criação de cópia d
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação do Assistente de Cópia de Idioma](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-wizard.html)
-* [Práticas recomendadas do MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Documentação do Assistente de Cópia de Idioma](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/tc-wizard.html)
+* [Práticas recomendadas do MSM](https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

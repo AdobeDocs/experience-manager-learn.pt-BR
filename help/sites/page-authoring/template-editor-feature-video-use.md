@@ -41,4 +41,4 @@ URL de Modelos Editáveis (instância AEM local): [http://localhost:4502/libs/wc
 ## Recursos adicionais {#additional-resources}
 
 * [Modelos de Página Editáveis - Documentação](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=pt-BR)
-* [Criando Modelos de Página - Documentação](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [Criando Modelos de Página - Documentação](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=pt-BR)

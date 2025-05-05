@@ -40,7 +40,7 @@ As seguintes ferramentas devem ser instaladas localmente:
 
 O aplicativo Android funciona com as seguintes opções de implantação do AEM. Todas as implantações exigem que o [WKND Site v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) esteja instalado.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
 
 O aplicativo do Android foi projetado para se conectar a um ambiente de __Publicação do AEM__. No entanto, ele poderá obter conteúdo do Autor do AEM se a autenticação for fornecida na configuração do aplicativo do Android.
 
@@ -75,7 +75,7 @@ O aplicativo do Android foi projetado para se conectar a um ambiente de __Public
 
 ### Conexão com ambientes do AEM
 
-Se a conexão com um ambiente de autor do AEM [autorização](https://github.com/adobe/aem-headless-client-java#using-authorization) for necessária. O [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) fornece a capacidade de usar a [autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Para usar o criador de cliente de atualização de autenticação baseada em token em `AdventureLoader.java` e `AdventuresLoader.java`:
+Se a conexão com um ambiente de autor do AEM [autorização](https://github.com/adobe/aem-headless-client-java#using-authorization) for necessária. O [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) fornece a capacidade de usar a [autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR). Para usar o criador de cliente de atualização de autenticação baseada em token em `AdventureLoader.java` e `AdventuresLoader.java`:
 
 ```java
 /* Comment out basicAuth

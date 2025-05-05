@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Este guia o guiará pela criação de uma etapa de processo personalizada para preencher as variáveis de lista do tipo Lista de matriz com anexos e nomes de anexos no Adobe Experience Manager. Essas variáveis são essenciais para o componente de fluxo de trabalho Enviar email.
 
-Se você não estiver familiarizado com a criação de um pacote OSGi, siga estas [instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Se você não estiver familiarizado com a criação de um pacote OSGi, siga estas [instruções](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=pt-BR).
 
 O código na etapa de processo personalizada executa as seguintes ações:
 

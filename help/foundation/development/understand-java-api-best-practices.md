@@ -85,18 +85,18 @@ Novas abstrações, como [!DNL Content Fragments] e [!DNL Experience Fragments],
 
 ### APIs de consulta
 
-O AEM oferece suporte a vários idiomas de consulta. Os três idiomas principais são [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath e [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+O AEM oferece suporte a vários idiomas de consulta. Os três idiomas principais são [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath e [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR).
 
 A preocupação mais importante é manter uma linguagem de consulta consistente em toda a base de código, para reduzir a complexidade e os custos de compreensão.
 
 Todas as linguagens de consulta têm efetivamente os mesmos perfis de desempenho, já que [!DNL Apache Oak] as compila para JCR-SQL2 para execução de consulta final, e o tempo de conversão para JCR-SQL2 é insignificante em comparação ao próprio tempo de consulta.
 
-A API preferida é o [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html), que é a abstração de mais alto nível e fornece uma API robusta para construção, execução e recuperação de resultados para consultas, além de fornecer o seguinte:
+A API preferida é o [AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR), que é a abstração de mais alto nível e fornece uma API robusta para construção, execução e recuperação de resultados para consultas, além de fornecer o seguinte:
 
 * Construção de consulta simples e parametrizada (parâmetros de consulta modelados como um Mapa)
 * [APIs Java™ e HTTP nativas](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
-* [AEM Query Debugger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)
-* [Predicados do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html) com suporte a requisitos de consulta comuns
+* [AEM Query Debugger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR)
+* [Predicados do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-predicate-reference.html?lang=pt-BR) com suporte a requisitos de consulta comuns
 
 * API extensível, permitindo o desenvolvimento de [predicados de consulta](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) personalizados
 * JCR-SQL2 e XPath podem ser executados diretamente por meio de [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) e [APIs JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), retornando resultados como [[!DNL Sling] Recursos](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) ou [Nós JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectivamente.
@@ -132,7 +132,7 @@ A API preferida é o [AEM Query Builder](https://experienceleague.adobe.com/docs
    * [Agendador](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 
-* [Usuários do serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [Usuários do serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=pt-BR)
 
 ## APIs JCR
 
@@ -154,7 +154,7 @@ Embora o JCR seja o repositório de conteúdo do AEM, suas APIs NÃO são o mét
 
 ### Usos comuns de APIs JCR
 
-* [Gerenciamento do controle de acesso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [Gerenciamento do controle de acesso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=pt-BR)
 * [Gerenciamento autorizado (usuários/grupos)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * Observação JCR (escutando eventos JCR)
 * Criação de estruturas de nó profundo

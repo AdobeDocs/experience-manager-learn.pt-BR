@@ -55,7 +55,7 @@ Nos farms de configuração de linha de base do AMS, você encontrará nossas in
 ```
 
 
-Ao criar as regras para o que armazenar em cache ou não, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Ao criar as regras para o que armazenar em cache ou não, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache)
 
 
 ## Autor em cache
@@ -336,6 +336,6 @@ Este é um exemplo de uma configuração de linha de base para quais elementos a
 
 Queremos tornar nosso site publicado ganancioso quanto possível e armazenar tudo em cache.
 
-Se houver elementos que interrompem a experiência quando armazenados em cache, você poderá adicionar regras para remover a opção para armazenar esse item em cache. Como você vê no exemplo acima, os tokens csrf nunca devem ser armazenados em cache e foram excluídos. Mais detalhes sobre como a gravação dessas regras podem ser encontrados [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Se houver elementos que interrompem a experiência quando armazenados em cache, você poderá adicionar regras para remover a opção para armazenar esse item em cache. Como você vê no exemplo acima, os tokens csrf nunca devem ser armazenados em cache e foram excluídos. Mais detalhes sobre como a gravação dessas regras podem ser encontrados [aqui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache)
 
 [Próximo -> Uso e noções básicas sobre variáveis](./variables.md)
