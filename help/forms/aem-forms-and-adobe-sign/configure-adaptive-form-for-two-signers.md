@@ -22,7 +22,7 @@ ht-degree: 8%
 
 O vídeo explica as várias etapas necessárias para configurar um formulário adaptável com dois signatários.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327746?quality=12&learn=on&captions=por_br)
 
 As Assets relacionadas a este vídeo podem ser baixadas nos links a seguir
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como a opção Localizar imagem semelhante da AEM Assets facilita a localização da melhor imagem para suas necessidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438482/?learn=on&captions=por_br)

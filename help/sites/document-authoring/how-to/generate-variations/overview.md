@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Introdução ao Gerar variações no Edge Delivery Services e entender como ele pode ser útil para profissionais de marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438559/?learn=on&captions=por_br)

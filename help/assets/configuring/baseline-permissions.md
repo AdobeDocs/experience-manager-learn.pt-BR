@@ -23,4 +23,4 @@ ht-degree: 0%
 
 O gerenciamento do acesso do usuário às [pastas de ativos da linha de base](./baseline-folders.md) é um aspecto crítico na governança e garante que os processos possam ter suporte adequado.
 
->[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327051?quality=12&learn=on&captions=por_br)

@@ -29,7 +29,7 @@ Crie duas pastas chamadas (FormTemplates e BankingApplication).Fique à vontade 
 
 Para sincronizar esses ativos no seu projeto do AEM usando o IntelliJ e a ferramenta Repo, assista ao vídeo a seguir
 
->[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448627?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

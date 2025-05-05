@@ -23,7 +23,7 @@ ht-degree: 12%
 
 Saiba como receber notificações sempre que um ativo, pasta ou coleção monitorada for alterada no AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439630/?learn=on&captions=por_br)
 
 >[!TIP]
 >

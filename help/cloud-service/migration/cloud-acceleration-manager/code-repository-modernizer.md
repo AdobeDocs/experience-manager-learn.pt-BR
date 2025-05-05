@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como o Modernizador do repositório de código atualiza automaticamente os projetos existentes do AEM Maven para serem compatíveis com o AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444666?quality=12&learn=on&captions=por_br)

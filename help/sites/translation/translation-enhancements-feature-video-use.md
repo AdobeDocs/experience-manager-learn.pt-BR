@@ -22,7 +22,7 @@ A estrutura de tradução robusta da AEM permite que o conteúdo do AEM seja tra
 
 ## Aprimoramentos de tradução no AEM 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34333?quality=12&learn=on&captions=por_br)
 
 As melhorias de tradução do AEM 6.5 incluem:
 
@@ -36,7 +36,7 @@ As melhorias de tradução do AEM 6.5 incluem:
 
 ## Aprimoramentos de tradução no AEM 6.4
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30845?quality=12&learn=on&captions=por_br)
 
 Agora, os autores podem criar rápida e facilmente projetos de tradução em vários idiomas diretamente do administrador do Sites ou do administrador do Projects, configurar esses projetos para promover inicializações automaticamente e até definir agendamentos para automação.
 

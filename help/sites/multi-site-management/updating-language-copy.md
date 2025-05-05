@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como atualizar, revisar e aprovar alterações em uma Cópia de idioma com a ajuda de inicializações.
 
->[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41633?quality=12&learn=on&captions=por_br)

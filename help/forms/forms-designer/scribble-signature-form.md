@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Vídeo curto que descreve como adicionar uma assinatura à AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437325/?learn=on&captions=por_br)

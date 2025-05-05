@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Entenda a relação entre uma Live Copy e seu Blueprint no AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41576?quality=12&learn=on&captions=por_br)

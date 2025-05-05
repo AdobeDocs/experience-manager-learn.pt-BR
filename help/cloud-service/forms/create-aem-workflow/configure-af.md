@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Configurar o formulário adaptável para acionar o fluxo de trabalho de revisão
 
->[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446508?quality=12&learn=on&captions=por_br)

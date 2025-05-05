@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A [!UICONTROL Visão Geral do Sistema] do Adobe Experience Manager (AEM) fornece uma exibição de alto nível da configuração, do hardware e da integridade da instância do AEM, tudo a partir de um único painel.
 
->[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35618?quality=12&learn=on&captions=por_br)
 
 1. A Visão Geral do Sistema pode ser acessada de: **AEM Start** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Visão Geral do Sistema]**
 

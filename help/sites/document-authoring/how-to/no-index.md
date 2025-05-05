@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como impedir que páginas da Web criadas com o uso da criação de documentos do AEM sejam indexadas por mecanismos de pesquisa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438119/?learn=on&captions=por_br)

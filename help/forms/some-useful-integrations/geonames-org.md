@@ -23,7 +23,7 @@ Uma lista suspensa em cascata é uma série de controles DropDownList dependente
 
 ## Demonstração do caso de uso
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437313?quality=12&learn=on&captions=por_br)
 
 Para fins deste tutorial, usei a [API REST Geonames](https://www.geonames.org/export/web-services.html) para demonstrar esse recurso.
 Há várias organizações que fornecem esse tipo de serviço e, desde que tenham APIs REST bem documentadas, é possível integrar facilmente ao AEM Forms usando o recurso de integração de dados

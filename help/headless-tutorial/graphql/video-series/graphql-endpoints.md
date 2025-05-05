@@ -28,4 +28,4 @@ Neste vídeo, você vai:
 + Saiba como executar consultas do GraphQL em relação aos endpoints
 + Entender como publicar endpoints do GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445028?quality=12&learn=on&captions=por_br)

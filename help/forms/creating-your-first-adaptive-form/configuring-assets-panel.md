@@ -23,10 +23,10 @@ Configurar o layout do Accordion para o painel Assets.O layout do Accordion forn
 
 **Configurar Painel do Assets**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326888?quality=12&learn=on&captions=por_br)
 
 **Definir título do resumo**
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33080?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

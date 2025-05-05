@@ -23,4 +23,4 @@ ht-degree: 11%
 
 Explore como o AEM cria e mantém versões de ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37146?quality=12&learn=on&captions=por_br)

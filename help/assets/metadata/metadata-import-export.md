@@ -25,7 +25,7 @@ Saiba como usar os recursos de importação e exportação de metadados do Adobe
 
 ## Exportação de metadados {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34887?quality=12&learn=on&captions=por_br)
 
 >[!TIP]
 >

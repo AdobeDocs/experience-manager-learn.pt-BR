@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como o [plug-in do AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) pode ser usado para incorporar ativos gerenciados em experiências de alto impacto entregues por meio do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435827/?learn=on&captions=por_br)

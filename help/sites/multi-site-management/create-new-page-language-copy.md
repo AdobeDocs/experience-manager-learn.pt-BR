@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como criar uma página em uma Cópia de idioma existente e, em seguida, traduzir o conteúdo para outra Cópia de idioma.
 
->[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41551?quality=12&learn=on&captions=por_br)

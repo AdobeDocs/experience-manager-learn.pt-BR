@@ -47,11 +47,11 @@ Os dados do formulário adaptável são armazenados no elemento de dados, como m
 
 **Mapeando uma variável XML com esquema. Use esse recurso com o AEM Forms 6.5.1 em diante**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35383?quality=12&learn=on&captions=por_br)
 
 #### Uso da variável no envio de email
 
->[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35384?quality=12&learn=on&captions=por_br)
 
 Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 

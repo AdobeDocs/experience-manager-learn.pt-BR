@@ -22,7 +22,7 @@ ht-degree: 0%
 
 O fluxo de trabalho do AEM fornece uma maneira de colaborar, gerenciar e processar conteúdo no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418843?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

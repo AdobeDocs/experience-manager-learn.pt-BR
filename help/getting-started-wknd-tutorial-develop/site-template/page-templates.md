@@ -66,7 +66,7 @@ Uma prática comum ao criar conteúdo global, como cabeçalho ou rodapé, é usa
 
 O modelo de site gerou um Cabeçalho e Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447804?quality=12&learn=on&captions=por_br)
 
 Etapas de alto nível para o vídeo abaixo:
 
@@ -78,7 +78,7 @@ Etapas de alto nível para o vídeo abaixo:
 
 Em seguida, crie uma nova página usando o modelo Página de artigo da revista. Crie o conteúdo da página para corresponder aos modelos de site. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343316?quality=12&learn=on&captions=por_br)
 
 Use o [texto fornecido](./assets/page-templates/la-skateparks-copy.txt) para preencher o corpo do artigo.
 

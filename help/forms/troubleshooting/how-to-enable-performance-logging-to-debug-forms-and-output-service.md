@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo mostra o processo de habilitação do log de desempenho no AEM Forms para depurar problemas relacionados ao serviço de saída e Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439720?quality=12&learn=on&captions=por_br)

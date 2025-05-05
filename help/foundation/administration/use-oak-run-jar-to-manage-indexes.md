@@ -35,21 +35,21 @@ O comando index de [!DNL oak-run.jar] consolida vários recursos para gerenciar 
 
 ## Estatísticas de índice
 
->[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34875?quality=12&learn=on&captions=por_br)
 
 * `oak-run.jar` descarta todas as definições de índice, estatísticas de índice importantes e conteúdo de índice para análise offline.
 * A coleta de estatísticas de índice é segura para ser executada em instâncias do AEM em uso.
 
 ## Verificação de consistência do índice
 
->[!VIDEO](https://video.tv.adobe.com/v/21476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36850?quality=12&learn=on&captions=por_br)
 
 * `oak-run.jar` determina rapidamente se os índices Lucene Oak estão corrompidos.
 * A verificação de consistência é segura para ser executada na instância do AEM em uso para os níveis de verificação de consistência 1 e 2.
 
 ## Indexação TarMK Online com [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
 
->[!VIDEO](https://video.tv.adobe.com/v/21479?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36852?quality=12&learn=on&captions=por_br)
 
 * A indexação online de [!DNL TarMK] usando [!DNL oak-run.jar] é mais rápida que a configuração `reindex=true` no nó `oak:queryIndexDefinition`. Apesar desse aumento de desempenho, a indexação online usando o [!DNL oak-run.jar] ainda requer uma janela de manutenção para executar a indexação.
 
@@ -57,13 +57,13 @@ O comando index de [!DNL oak-run.jar] consolida vários recursos para gerenciar 
 
 ## Indexação offline do TarMK com oak-run.jar
 
->[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36851?quality=12&learn=on&captions=por_br)
 
 * A indexação offline de [!DNL TarMK] usando [!DNL oak-run.jar] é a abordagem de indexação baseada em [!DNL oak-run.jar] mais simples para [!DNL TarMK], pois requer um único comando [!DNL oak-run.jar]. No entanto, requer que a instância do AEM seja desligada.
 
 ## Indexação fora de banda TarMK com oak-run.jar
 
->[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341016?quality=12&learn=on&captions=por_br)
 
 * A indexação fora de banda em [!DNL TarMK] usando [!DNL oak-run.jar] minimiza o impacto da indexação em instâncias AEM em uso.
 * A indexação fora de banda é a abordagem de indexação recomendada para instalações do AEM em que o tempo de reindexação excede as janelas de manutenção disponíveis.

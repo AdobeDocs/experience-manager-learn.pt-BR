@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Saiba como criar campos personalizados no Editor de fragmento de conteúdo do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437639?learn=on&captions=por_br)
 
 As extensões da interface do usuário do AEM devem ser desenvolvidas usando a estrutura [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), pois essa estrutura mantém uma aparência consistente com o restante do AEM, além de ter uma ampla biblioteca de funcionalidades pré-criadas, reduzindo o tempo de desenvolvimento.
 

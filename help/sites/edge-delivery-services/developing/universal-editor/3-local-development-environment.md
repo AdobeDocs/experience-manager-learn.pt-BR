@@ -27,7 +27,7 @@ As ferramentas e os processos de desenvolvimento de um projeto de site do Edge D
 
 Este vídeo fornece uma visão geral da topologia de desenvolvimento para um projeto de site do Edge Delivery Services que é editável com o Universal Editor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443983/?learn=on&enablevpops&captions=por_br)
 
 +++Consulte detalhes adicionais da topologia de desenvolvimento
 

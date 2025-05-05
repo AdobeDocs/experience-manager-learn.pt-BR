@@ -30,10 +30,10 @@ O modelo do AEM Assets permite que os profissionais de marketing criem, gerencie
 
 Este vídeo aborda os conceitos e as etapas para gerar ativos prontos para impressão no AEM, usando o Adobe InDesign, o Adobe InDesign Server e o AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/25170?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35387?quality=12&learn=on&captions=por_br)
 
 ## Visão geral técnica {#technical-overview}
 
 Este vídeo fornece uma visão geral mais técnica da funcionalidade de Modelo de declaração do AEM Assets e como o AEM facilita a composição de AEM Assets e conteúdo por meio do InDesign para criar experiências de impressão avançadas e atraentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33789?quality=12&learn=on&captions=por_br)

@@ -23,7 +23,7 @@ ht-degree: 4%
 
 O vídeo explica as várias etapas necessárias para configurar um formulário adaptável com um único signatário.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327735?quality=12&learn=on&captions=por_br)
 
 As Assets relacionadas a este vídeo podem ser baixadas no link a seguir
 

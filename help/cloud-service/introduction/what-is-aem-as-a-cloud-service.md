@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore o que são AEM as a Cloud Service e Edge Delivery Services e o valor que eles agregam.
 
->[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346164?quality=12&learn=on&captions=por_br)

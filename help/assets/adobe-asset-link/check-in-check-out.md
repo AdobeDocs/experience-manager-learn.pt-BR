@@ -23,4 +23,4 @@ ht-degree: 0%
 
 O Adobe Asset permite que você faça check-out do AEM Assets diretamente do aplicativo criativo no qual você está trabalhando, e é possível fazer edições imediatamente. Você pode facilmente devolver ativos ao AEM Assets com o controle de versão e comentários adequados depois de terminar de editá-los no aplicativo Creative Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38644?quality=12&learn=on&captions=por_br)

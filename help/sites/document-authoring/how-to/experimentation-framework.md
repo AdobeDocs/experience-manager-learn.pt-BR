@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Explore a estrutura de experimentação que permite aos profissionais de marketing testar quais variações de conteúdo são mais eficazes na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437859/?learn=on&captions=por_br)

@@ -30,7 +30,7 @@ Esta série de vídeos aborda as opções de entrega para usar Fragmentos de con
 
 ## Uso de fragmentos de conteúdo em páginas da Web {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34844?quality=12&learn=on&captions=por_br)
 
 Os Fragmentos de conteúdo podem ser usados em páginas do AEM Sites ou, de maneira semelhante, em Fragmentos de experiência, usando o [componente de Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR) do AEM WCM Core Components.
 
@@ -38,7 +38,7 @@ Os componentes do Fragmento de conteúdo podem ser estilizados usando o Sistema 
 
 ## Exposição de fragmentos de conteúdo como JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34845?quality=12&learn=on&captions=por_br)
 
 O AEM Content Services facilita a criação de pontos de extremidade HTTP baseados em página do AEM que renderizam conteúdo em um formato JSON normalizado.
 
@@ -49,7 +49,7 @@ O vídeo acima usa o [Componente de Fragmento de Conteúdo](https://experiencele
 
 ## Uso da API HTTP do Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41128?quality=12&learn=on&captions=por_br)
 
 Introduzido pela primeira vez no AEM 6.5, é o suporte aprimorado para Fragmentos de conteúdo com a API HTTP do Assets. Isso oferece uma maneira fácil para os desenvolvedores executarem operações de Criar, Ler, Atualizar e Excluir (CRUD) em relação aos Fragmentos de conteúdo.
 

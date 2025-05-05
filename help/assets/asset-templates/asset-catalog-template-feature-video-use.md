@@ -20,7 +20,7 @@ ht-degree: 0%
 
 O aprimoramento de catálogo do AEM 6.4 fornece a capacidade de criar páginas de catálogo usando modelos de ativos do AEM e o InDesign Server.  Um usuário pode criar uma página de catálogo usando o modelo do InDesign e mapear propriedades do produto a campos editáveis, que podem ser usados posteriormente para criar páginas semelhantes para diferentes produtos.
 
->[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34876?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

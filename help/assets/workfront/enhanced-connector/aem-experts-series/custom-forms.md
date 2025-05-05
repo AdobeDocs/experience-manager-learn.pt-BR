@@ -26,6 +26,6 @@ ht-degree: 1%
 
 Saiba como configurar o Workfront e o AEM Assets para gerenciar e sincronizar metadados de ativos usando formulários personalizados do Workfront e esquemas de metadados do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431492?quality=12&learn=on&captions=por_br)
 
 _Segunda parte de uma [série de especialistas em quatro partes do conector aprimorado do Workfront para Experience Manager](./overview.md)_

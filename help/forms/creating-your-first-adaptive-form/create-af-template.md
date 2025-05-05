@@ -22,7 +22,7 @@ Cada formulário adaptável é baseado em um modelo de formulário adaptável. O
 O modelo criado aqui é a base para nosso formulário adaptável a partir de agora.
 O vídeo a seguir mostra o processo básico de criação do modelo de formulário adaptável
 
->[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326694?quality=12&learn=on&captions=por_br)
 
 Consulte a [documentação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=pt-BR) para obter mais detalhes
 

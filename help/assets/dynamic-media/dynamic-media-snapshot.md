@@ -22,7 +22,7 @@ ht-degree: 3%
 
 O Dynamic Media Snapshot é uma ferramenta de demonstração visual projetada para ilustrar o potencial do Dynamic Media na entrega otimizada e dinâmica de imagens. Experimente com imagens de teste ou URLs do Dynamic Media para observar visualmente a saída de vários modificadores de imagem do Dynamic Media e otimizações de Imagem inteligente para o tamanho do arquivo (com entrega de WebP e AVIF), rede e Proporção de pixels do dispositivo (DPR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445568/?learn=on&captions=por_br)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Iniciar Instantâneo do Dynamic Media</span>

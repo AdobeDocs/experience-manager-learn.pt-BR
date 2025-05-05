@@ -24,7 +24,7 @@ ht-degree: 5%
 
 O controle de versão da página ajuda os autores de conteúdo a rastrear as alterações associadas a uma página criando uma versão da página e fornece uma opção para visualizar uma versão, restaurar uma versão e comparar uma versão com a versão atual de uma página.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36843?quality=12&learn=on&captions=por_br)
 
 O controle de versão cria um instantâneo de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 * Criar uma nova versão para uma página

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 A definição de pastas de linha de base no AEM Assets ajuda a estabelecer uma arquitetura de conteúdo sólida e uma base para o gerenciamento de ativos digitais.
 
->[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37332?quality=12&learn=on&captions=por_br)

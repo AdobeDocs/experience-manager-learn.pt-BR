@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Capture os ativos do candidato usando o painel repetível com um layout Acordeão.
 
->[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445183?quality=12&learn=on&captions=por_br)

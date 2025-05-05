@@ -27,4 +27,4 @@ ht-degree: 86%
 
 Entenda as práticas recomendadas e a integração contínua usando o Adobe Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345854?quality=12&learn=on&captions=por_br)

@@ -21,4 +21,4 @@ ht-degree: 10%
 
 Saiba como o Metadata Forms pode ser configurado de forma rápida e fácil para adaptar os metadados de ativos disponíveis no AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452052?quality=12&learn=on&captions=por_br)

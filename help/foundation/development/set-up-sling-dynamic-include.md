@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Uma apresentação em vídeo da instalação e uso do [!DNL Apache Sling Dynamic Include] com o [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) em execução em [!DNL Apache HTTP Web Server].
 
->[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34697?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

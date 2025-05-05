@@ -31,7 +31,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="Pesquisa de terceiros" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="Pesquisa de terceiros" src="https://video.tv.adobe.com/v/3452607?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Trabalhadores da Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Trabalhadores da Edge" src="https://video.tv.adobe.com/v/3448126?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publish, cancelar publicação de eventos no Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, cancelar publicação de eventos no Edge Delivery Services" src="https://video.tv.adobe.com/v/3446661?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Índices de consulta e fórmulas do Excel em Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Índices de consulta e fórmulas do Excel em Edge Delivery Services" src="https://video.tv.adobe.com/v/3453768?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Traga sua própria CDN do Cloud Flare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Traga sua própria CDN do Cloud Flare" src="https://video.tv.adobe.com/v/3452541?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ Cada temporada varia em duração e é lançada em um cronograma fixo. Os tópic
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="Integrar o AEM Assets com a criação de documentos" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="Integrar o AEM Assets com a criação de documentos" src="https://video.tv.adobe.com/v/3448945?format=jpeg&captions=por_br"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">

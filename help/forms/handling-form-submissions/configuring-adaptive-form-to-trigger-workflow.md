@@ -39,8 +39,8 @@ O formulário de amostra usado neste fluxo de trabalho é baseado em um modelo d
 * O exemplo de formulário adaptável é colocado em uma pasta chamada [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 O vídeo a seguir explica como configurar um Formulário adaptável para acionar um fluxo de trabalho do AEM
->[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329441?quality=12&learn=on&captions=por_br)
 
 O vídeo a seguir mostra a carga do fluxo de trabalho e outros detalhes no repositório crx
 
->[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329449?quality=12&learn=on&captions=por_br)

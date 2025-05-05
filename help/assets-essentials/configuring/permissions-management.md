@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como o gerenciamento de permissões do AEM Assets permite que as organizações controlem o acesso aos ativos, protejam a marca e garantam a conformidade.
 
->[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345463?quality=12&learn=on&captions=por_br)

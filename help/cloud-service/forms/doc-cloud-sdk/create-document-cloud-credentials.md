@@ -27,4 +27,4 @@ ht-degree: 0%
 
 Siga o vídeo para criar seu projeto do Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/333220?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440097?quality=12&learn=on&captions=por_br)

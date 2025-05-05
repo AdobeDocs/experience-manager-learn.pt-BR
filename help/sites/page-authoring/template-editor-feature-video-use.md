@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Os modelos editáveis permitem que autores especializados criem e atualizem modelos de página e gerenciem configurações de política avançadas com o Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449616?quality=12&learn=on&captions=por_br)
 
 Modelos editáveis são a recomendação para criar um novo AEM Sites.
 

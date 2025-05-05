@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Um guia de profundidade sobre como obter um token de logon para integrações do Cloud Service e alguns casos de uso para fazer isso.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448642?quality=12&learn=on&captions=por_br)
 
 ## Conteúdo abordado neste vídeo
 

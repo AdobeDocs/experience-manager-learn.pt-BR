@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Use a AEM Sidekick no Edge Delivery Services para ativar o conteúdo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441291/?learn=on&captions=por_br)

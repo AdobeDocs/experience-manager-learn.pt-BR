@@ -28,4 +28,4 @@ Neste vídeo, você vai:
 + Saiba como criar, atualizar e executar consultas do GraphQL
 + Entender os benefícios das consultas persistentes em relação às consultas do lado do cliente
 
->[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447382?quality=12&learn=on&captions=por_br)

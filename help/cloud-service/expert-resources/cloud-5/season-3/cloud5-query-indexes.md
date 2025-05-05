@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Explore índices de consulta e como gravar fórmulas do Excel para manipular e classificar conjuntos de dados com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453768/?learn=on&captions=por_br)
 
 ## Recursos adicionais
 

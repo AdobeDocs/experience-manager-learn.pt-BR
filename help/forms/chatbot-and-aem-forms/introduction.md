@@ -26,7 +26,7 @@ Para o propósito deste tutorial, mesclaremos os dados capturados no ChatBot com
 
 O vídeo a seguir demonstra o caso de uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441797?learn=on&captions=por_br)
 
 ## Pré-requisitos
 

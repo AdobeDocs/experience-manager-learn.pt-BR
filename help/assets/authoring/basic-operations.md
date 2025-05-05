@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba mais sobre as operações básicas do AEM Assets, incluindo como criar pastas, bem como fazer upload, copiar, mover e excluir ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37156?quality=12&learn=on&captions=por_br)

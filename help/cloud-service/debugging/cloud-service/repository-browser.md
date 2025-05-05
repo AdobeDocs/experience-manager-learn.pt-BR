@@ -22,7 +22,7 @@ ht-degree: 0%
 
 O Navegador do repositório é uma ferramenta poderosa que oferece visibilidade do armazenamento interno de dados do AEM, permitindo uma depuração fácil do ambiente do AEM as a Cloud Service. O Navegador do repositório é compatível com uma exibição somente leitura dos recursos e propriedades do AEM nos ambientes de Produção, Preparo e Desenvolvimento, bem como dos serviços Author, Publish e Preview.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447059?quality=12&learn=on&captions=por_br)
 
 O Navegador do Repositório __SOMENTE__ está disponível em ambientes AEM as a Cloud Service (use o [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) para depurar o AEM SDK local).
 

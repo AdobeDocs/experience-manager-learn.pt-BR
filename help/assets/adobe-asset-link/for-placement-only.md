@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Explore como criar e usar uma representação Somente para posicionamento (FPO) para o AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38602?quality=12&learn=on&captions=por_br)

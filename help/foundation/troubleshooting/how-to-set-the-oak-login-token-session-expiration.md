@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para definir a expiração da sessão do token de logon do Oak.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418255?quality=12&learn=on&captions=por_br)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para capturar despejos de heap de uma JVM em um servidor Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418291?quality=12&learn=on&captions=por_br)

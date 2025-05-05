@@ -20,7 +20,7 @@ ht-degree: 1%
 
 O console Componentes fornece aos desenvolvedores e administradores um local central para gerenciar todos os vários componentes em uma implementação do Sites. O vídeo a seguir detalha os recursos do console Componentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33792?quality=12&learn=on&captions=por_br)
 
 O console Componentes oferece a seguinte funcionalidade:
 

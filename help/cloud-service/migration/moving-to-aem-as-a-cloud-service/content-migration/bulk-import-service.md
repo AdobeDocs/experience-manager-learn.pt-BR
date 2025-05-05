@@ -23,7 +23,7 @@ Saiba como o Serviço de importação em massa do AEM as a Cloud Services pode s
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453284?quality=12&learn=on&captions=por_br)
 
 ## Uso do Serviço de importação em massa
 

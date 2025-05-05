@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Saiba como aprimorar o gerenciamento de ativos no AEM as a Cloud Service usando Tags bloqueadas para evitar a aplicação de Tags inteligentes culturalmente sensíveis, irrelevantes ou controversas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426839/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448505/?learn=on&captions=por_br)

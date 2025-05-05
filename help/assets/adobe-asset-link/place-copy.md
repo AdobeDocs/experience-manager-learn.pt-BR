@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como usar ativos do AEM Assets usando a operação Inserir cópia.
 
->[!VIDEO](https://video.tv.adobe.com/v/34049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38620?quality=12&learn=on&captions=por_br)

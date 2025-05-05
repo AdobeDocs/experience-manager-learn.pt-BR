@@ -27,4 +27,4 @@ ht-degree: 74%
 
 Explore os diferentes tipos de pipelines no Cloud Manager e como configurá-los para ter um projeto bem-sucedido.
 
->[!VIDEO](https://video.tv.adobe.com/v/330539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345840?quality=12&learn=on&captions=por_br)

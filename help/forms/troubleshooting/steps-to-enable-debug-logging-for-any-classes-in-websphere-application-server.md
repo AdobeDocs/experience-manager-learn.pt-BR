@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para habilitar o log de depuração para qualquer classe no Servidor de Aplicativos Websphere.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418368?quality=12&learn=on&captions=por_br)

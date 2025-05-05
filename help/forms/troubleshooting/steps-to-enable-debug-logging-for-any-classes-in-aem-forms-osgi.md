@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para habilitar o log de depuração para qualquer classe no AEM Forms OSGi.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418249?quality=12&learn=on&captions=por_br)

@@ -21,7 +21,7 @@ ht-degree: 2%
 
 O Adobe Experience Manager 6.4 recria o fluxo de trabalho de personalização entre o AEM e o Target. As experiências criadas no AEM agora podem ser entregues diretamente ao Adobe Target como ofertas do HTML. Ele permite que os profissionais de marketing testem e personalizem conteúdo em diferentes canais sem problemas.
 
->[!VIDEO](https://video.tv.adobe.com/v/22380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34849?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Extraia o DoR e envie-o como um anexo de email no fluxo de trabalho do Power Automate.
 O vídeo a seguir explica as etapas necessárias para extrair o DoR dos dados enviados
->[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415825?quality=12&learn=on&captions=por_br)

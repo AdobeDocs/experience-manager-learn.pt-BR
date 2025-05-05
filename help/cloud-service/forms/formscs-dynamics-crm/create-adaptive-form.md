@@ -22,4 +22,4 @@ ht-degree: 0%
 
 O vídeo a seguir mostra as etapas para criar e configurar o Formulário adaptável para criar e exibir objetos de cliente potencial.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449313?quality=12&learn=on&captions=por_br)

@@ -34,7 +34,7 @@ As Tags Inteligentes personalizadas para imagens exigem a configuração de [Tag
 
 Saiba como configurar o treinamento de Tags inteligentes no AEM Assets, usando o Serviço de conteúdo inteligente e o Adobe I/O. Tags inteligentes personalizadas para imagens
 
->[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35806?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais
 

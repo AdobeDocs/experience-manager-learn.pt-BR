@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como o AEM permite comparar e sincronizar facilmente o campo de RTE nas variações de Fragmento de conteúdo. Ao comparar e sincronizar essas variações, é possível garantir mensagens consistentes em todos os canais que usam o fragmento de conteúdo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437551/?learn=on&captions=por_br)

@@ -23,4 +23,4 @@ ht-degree: 18%
 
 Um tema contém detalhes de estilo para componentes e painéis, e você pode reutilizar um tema em diferentes formulários. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica o tema ao formulário, o estilo especificado é refletido nos componentes correspondentes do formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424878?quality=12&learn=on&captions=por_br)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para capturar as informações necessárias para solucionar problemas relacionados ao DDX no serviço Forms Assembler.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439186?quality=12&learn=on&captions=por_br)

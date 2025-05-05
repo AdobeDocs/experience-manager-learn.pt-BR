@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Usando o painel Adobe Asset Link, você pode acessar detalhes do arquivo para ativos no AEM Assets, por exemplo, miniatura, metadados básicos e versões no painel. Saiba como criar, visualizar e comparar versões de arquivos.
 
->[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38632?quality=12&learn=on&captions=por_br)

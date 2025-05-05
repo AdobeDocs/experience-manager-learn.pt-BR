@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo aborda o processo de invalidação do cache CDN por meio do Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418225?quality=12&learn=on&captions=por_br)

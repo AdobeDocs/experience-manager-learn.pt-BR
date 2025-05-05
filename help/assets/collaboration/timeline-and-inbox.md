@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Familiarize-se com os principais consoles da Web no AEM Assets usados para colaboração.
 
->[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36845?quality=12&learn=on&captions=por_br)

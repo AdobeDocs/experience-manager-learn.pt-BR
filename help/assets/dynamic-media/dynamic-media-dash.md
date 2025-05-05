@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como o protocolo de transmissão adaptável DASH do AEM Assets Dynamic Media garante que os vídeos entregues se adaptem à largura de banda disponível e garantam uma experiência de reprodução ininterrupta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429072/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443622/?learn=on&captions=por_br)

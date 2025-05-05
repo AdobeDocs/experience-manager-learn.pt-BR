@@ -27,7 +27,7 @@ Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 >
 >Este vídeo demonstra o uso de URLs relativos no mapa de site. Os mapas de site [devem usar URLs absolutas](https://sitemaps.org/protocol.html). Consulte [Configurações](#absolute-sitemap-urls) para saber como habilitar URLs absolutos, pois isso não é abordado no vídeo abaixo.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454366?quality=12&learn=on&captions=por_br)
 
 ## Configurações
 

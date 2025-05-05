@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como os campos de Conteúdo do fragmento de conteúdo oferecem suporte à referência a vários tipos de conteúdo do AEM, como Fragmentos de experiência e Páginas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436767/?learn=on&captions=por_br)

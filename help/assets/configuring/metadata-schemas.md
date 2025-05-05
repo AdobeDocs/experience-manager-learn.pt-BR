@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Os esquemas de metadados definem a interface que os usuários interagem com os metadados de ativos no AEM e sua definição e aplicação aos ativos são essenciais para o gerenciamento de ativos digitais.
 
->[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37305?quality=12&learn=on&captions=por_br)

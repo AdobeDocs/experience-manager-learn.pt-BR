@@ -24,7 +24,7 @@ ht-degree: 0%
 Um aplicativo conectado é uma estrutura que permite que um aplicativo externo se integre ao Salesforce usando APIs e protocolos padrão, como SAML, OAuth e OpenID Connect. Os aplicativos conectados usam esses protocolos para autenticar, autorizar e fornecer logon único (SSO) para aplicativos externos.
 <!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447262?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >Crie uma conta na [Salesforce Developer Edition](https://developer.salesforce.com/signup), pois as APIs REST são habilitadas por padrão na edição do desenvolvedor.

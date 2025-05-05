@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A Exibição de calendário da AEM rastreia projetos e tarefas em uma exibição de calendário para facilitar o gerenciamento e o agendamento de projetos. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34597?quality=12&learn=on&captions=por_br)
 
 A Exibição de calendário ajuda a gerenciar melhor projetos e tarefas com os seguintes recursos:
 

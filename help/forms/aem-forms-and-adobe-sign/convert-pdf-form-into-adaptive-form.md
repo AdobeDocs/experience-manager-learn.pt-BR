@@ -24,7 +24,7 @@ O serviço AEM Forms Automated forms conversion, desenvolvido pela Adobe Sensei,
 
 O vídeo a seguir explica as etapas necessárias para converter o formulário de PDF em formulário adaptável usando o serviço de Automated forms conversion
 
->[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327717?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

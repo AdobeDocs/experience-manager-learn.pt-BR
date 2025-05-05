@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Saiba como manter e organizar suas páginas da Web no Adobe Experience Manager usando a marcação.
 
->[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36823?quality=12&learn=on&captions=por_br)

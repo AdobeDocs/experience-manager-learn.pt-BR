@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Explore os modelos do Dynamic Media, um ativo de imagem combinável, suas práticas recomendadas e como atender à demanda para entrega de conteúdo personalizado. Saiba como criar e gerenciar modelos e como usá-los para fornecer conteúdo personalizado em escala.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451732/?learn=on&enablevpops&captions=por_br)

@@ -23,7 +23,7 @@ Ao acessar os registros do AEM SDK, o Jar de início rápido local do AEM SDK ou
 
 ## Logs do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38153?quality=12&learn=on&captions=por_br)
 
 Os registros atuam como linha de frente para depurar aplicativos do AEM, mas dependem do logon adequado no aplicativo AEM implantado. A Adobe recomenda manter as configurações de desenvolvimento local e de registro em log do AEM as a Cloud Service Dev o mais semelhantes possível, pois normaliza a visibilidade do registro no ambiente de inicialização rápida local do AEM SDK e nos ambientes de desenvolvimento do AEM as a Cloud Service, reduzindo a confusão e a reimplantação da configuração.
 

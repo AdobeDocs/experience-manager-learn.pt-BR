@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como compartilhar ativos e coleções com membros da equipe no AEM Assets Content Hub, promovendo o trabalho em equipe eficaz e o compartilhamento seguro de ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435685/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445360/?learn=on&captions=por_br)

@@ -29,7 +29,7 @@ Em setembro de 2019, a Brand Portal apresenta com mais destaque a Origem de ativ
 
 A origem de ativos da Brand Portal é usada para coletar ativos de agências e equipes de terceiros, sincronizando-os continuamente com o Experience Manager Author para análise e uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32894?quality=12&learn=on&captions=por_br)
 
 O *Experience Manager Author 6.5 SP2 (6.5.2) ou superior é necessário para usar a Origem de Ativos*
 
@@ -37,7 +37,7 @@ Revise [Habilitar o Experience Manager Author para a Origem de Ativos](https://e
 
 ## Recursos e aprimoramentos do Brand Portal de fevereiro de 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41130?quality=12&learn=on&captions=por_br)
 
 A versão de fevereiro de 2019 do Brand Portal se concentra em melhorias na pesquisa de texto e nas solicitações dos principais clientes.
 
@@ -165,7 +165,7 @@ O Brand Portal usa a interface do Adobe I/O [https://legacy-oauth.cloud.adobe.io
 
 Novos recursos com funcionalidade aprimorada voltada para o alinhamento do Brand Portal com o AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41130?quality=12&learn=on&captions=por_br)
 
 ### Melhorias na navegação
 

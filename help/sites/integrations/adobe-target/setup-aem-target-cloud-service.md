@@ -25,7 +25,7 @@ O vídeo a seguir fornece uma apresentação sobre como conectar o AEM as a Clou
 
 Essa integração permite que o serviço de Autor do AEM se comunique diretamente com o Adobe Target e envie Fragmentos de experiência do AEM para o Target como ofertas.  Essa integração *não* adiciona o Adobe Target JavaScript (AT.js) às páginas da Web do AEM Sites AEM, para que integrem as tags do [e do usando a extensão do Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329017?quality=12&learn=on&captions=por_br)
 
 >[!CAUTION]
 >

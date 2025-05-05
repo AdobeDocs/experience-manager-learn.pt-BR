@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Saiba como usar os públicos do Adobe Target para direcionar o público-alvo correto com o conteúdo relevante na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437760/?learn=on&captions=por_br)

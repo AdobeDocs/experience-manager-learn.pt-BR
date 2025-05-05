@@ -31,11 +31,11 @@ Para cumprir o requisito acima, usamos um campo oculto chamado **initialstep** n
 
 **Configurar o formulário para acionar o fluxo de trabalho do AEM**
 
->[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33086?quality=12&learn=on&captions=por_br)
 
 **Apresentação do fluxo de trabalho**
 
->[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33091?quality=12&learn=on&captions=por_br)
 
 **Modo de exibição do emissor do formulário de Solicitação de folga**
 

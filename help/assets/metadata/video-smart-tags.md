@@ -23,4 +23,4 @@ ht-degree: 0%
 
 O Experience Manager Assets aproveita o Adobe Sensei para marcar ativos de vídeo de forma inteligente com palavras-chave que descrevem elementos-chave do vídeo, permitindo que eles sejam facilmente descobertos usando a pesquisa por palavras-chave por usuários do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340534?quality=12&learn=on&captions=por_br)

@@ -26,7 +26,7 @@ Este artigo usa o banco de dados MySQL para armazenar os metadados da instância
 
 O vídeo a seguir demonstra o caso de uso:
 
->[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441445?quality=12&learn=on&captions=por_br)
 
 ## Pré-requisitos
 

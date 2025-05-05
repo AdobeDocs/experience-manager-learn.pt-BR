@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Contos das trincheiras - explore como integrar serviços de entrega de borda com o Google Maps e como otimizar o desempenho com integrações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440994/?learn=on&enablevpops&captions=por_br)

@@ -25,4 +25,4 @@ ht-degree: 4%
 
 Um aprofundamento em como os redirecionamentos funcionam na criação de documentos e em como os autores podem configurar facilmente redirecionamentos sem conhecimento técnico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438548/?learn=on&captions=por_br)

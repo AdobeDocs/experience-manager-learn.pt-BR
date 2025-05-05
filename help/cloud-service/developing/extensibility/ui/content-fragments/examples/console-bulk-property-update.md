@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Extensão de exemplo de atualização de propriedade em massa
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454456?quality=12&learn=on&captions=por_br)
 
 Este exemplo de extensão do Console do Fragmento de Conteúdo do AEM é uma extensão de [barra de ação](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) que atualiza em massa uma propriedade de Fragmento de Conteúdo para um valor comum.
 

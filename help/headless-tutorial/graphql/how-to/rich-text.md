@@ -533,7 +533,7 @@ Um exemplo completo de como escrever um renderizador de referências personaliza
 
 ## Exemplo completo
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449705?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

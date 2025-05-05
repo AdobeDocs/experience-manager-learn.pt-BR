@@ -22,4 +22,4 @@ ht-degree: 0%
 
 A Caixa de entrada do AEM facilita maior colaboração e visibilidade em tarefas e fluxo de trabalho. A Exibição de calendário da Caixa de entrada rastreia projetos e tarefas em uma exibição baseada em tempo para facilitar o gerenciamento e o agendamento do projeto. Com a exibição de Calendário, o usuário teria uma visibilidade geral sobre os projetos e tarefas que estão em andamento, planejados, com vencimento em breve e vencidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417769?quality=12&learn=on&captions=por_br)

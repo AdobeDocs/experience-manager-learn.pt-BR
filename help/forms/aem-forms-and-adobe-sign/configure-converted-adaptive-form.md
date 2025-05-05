@@ -24,7 +24,7 @@ Depois de converter o formulário de PDF em Formulário adaptável, geralmente �
 
 O vídeo a seguir explica as etapas necessárias para configurar o formulário para a experiência de assinatura no local
 
->[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327708?quality=12&learn=on&captions=por_br)
 
 ## Parabéns
 

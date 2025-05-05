@@ -59,4 +59,4 @@ Por exemplo, podemos usar as funções de redução para exibir o número de tra
 
 O vídeo a seguir mostra as etapas envolvidas no uso de funções de redução.
 
->[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38220?quality=12&learn=on&captions=por_br)

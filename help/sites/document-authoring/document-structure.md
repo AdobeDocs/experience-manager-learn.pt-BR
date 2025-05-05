@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore como a criação de documentos é organizada usando o conteúdo padrão, blocos e muito mais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438815/?learn=on&captions=por_br)

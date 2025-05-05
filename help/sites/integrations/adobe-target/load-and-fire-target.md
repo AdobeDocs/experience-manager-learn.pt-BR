@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Saiba como carregar, transmitir parâmetros para solicitação de página e acionar uma chamada do Target na página do site usando uma regra de tags. As informações da página da Web são recuperadas e passadas como parâmetros usando a Camada de dados do cliente da Adobe, que permite coletar e armazenar dados sobre a experiência do visitante em uma página da Web e, em seguida, facilitar o acesso a esses dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329000?quality=12&learn=on&captions=por_br)
 
 ## Regra de carregamento de página
 

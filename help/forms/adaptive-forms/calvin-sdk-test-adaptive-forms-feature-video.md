@@ -20,7 +20,7 @@ ht-degree: 1%
 
 O AEM 6.3 Forms apresenta o recurso para permitir que os usuários criem casos de teste no AEM para Adaptive Forms usando o Calvin SDK criado com base na estrutura hobbes.js.
 
->[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35612?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

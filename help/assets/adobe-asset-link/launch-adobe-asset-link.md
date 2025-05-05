@@ -23,4 +23,4 @@ ht-degree: 0%
 
 O Adobe Asset Link fortalece a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. É possível acessar o conteúdo armazenado no Adobe Experience Manager Assets (AEM Assets), sem sair dos aplicativos de desktop da Creative Cloud com os quais você está mais familiarizado. Saiba como iniciar o painel Adobe Asset Link no aplicativo de desktop da Creative Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/33733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38681?quality=12&learn=on&captions=por_br)

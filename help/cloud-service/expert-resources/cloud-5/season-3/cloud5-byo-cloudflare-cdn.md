@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Saiba como configurar seu próprio CDN do Cloud Flare no Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428100/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452541/?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais
 

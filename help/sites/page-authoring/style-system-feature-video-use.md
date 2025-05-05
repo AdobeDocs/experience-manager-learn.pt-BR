@@ -24,7 +24,7 @@ ht-degree: 3%
 
 O sistema de estilos da Adobe Experience Manager permite variações visuais de componentes sem desenvolvimento de back-end, permitindo uma melhor reutilização dos componentes do AEM e uma criação de conteúdo mais versátil e eficiente. O Sistema de estilos, quando usado em conjunto com os Componentes principais do AEM, o editor de modelos e o layout responsivo, oferece recursos avançados para compor rapidamente experiências ricas.
 
->[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30843?quality=12&learn=on&captions=por_br)
 
 Este vídeo demonstra como o Sistema de estilos pode ser aproveitado para criar aparências visuais dramaticamente diferentes para um único componente, usando apenas CSS.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A etapa Enviar email foi introduzida no AEM Forms 6.4. Usando esta etapa, podemos criar processos de negócios ou fluxo de trabalho que permitirão enviar emails com ou sem anexos. O vídeo a seguir mostra as etapas para configurar o componente de envio de email.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34847?quality=12&learn=on&captions=por_br)
 
 Como parte deste artigo, guiaremos você pelo seguinte caso de uso:
 

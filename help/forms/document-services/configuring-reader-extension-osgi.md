@@ -37,7 +37,7 @@ A credencial de extensões do leitor está associada ao usuário do serviço de 
 
 Siga o vídeo para adicionar as credenciais ao usuário do serviço fd
 
->[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447292?quality=12&learn=on&captions=por_br)
 
 
 O comando para listar os detalhes do arquivo pfx é. O comando a seguir presume que você esteja no mesmo diretório do arquivo pfx.

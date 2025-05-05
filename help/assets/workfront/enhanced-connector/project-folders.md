@@ -29,4 +29,4 @@ Saiba mais sobre Pastas de projeto ao usar o conector aprimorado do Adobe Workfr
 + Mapeamento de metadados de pasta
 + Herança de metadados da pasta
 
->[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454764?quality=12&learn=on&captions=por_br)

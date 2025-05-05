@@ -24,7 +24,7 @@ ht-degree: 2%
 
 O Timewarp é um recurso do Adobe Experience Manager Sites que fornece aos autores uma maneira rápida de revisar o estado de uma página em um momento específico no passado.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418846?quality=12&learn=on&captions=por_br)
 
 ## Mais recursos {#more-resources}
 

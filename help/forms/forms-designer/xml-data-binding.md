@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Vídeo curto que descreve como vincular um formulário do AEM a um Source de dados XML
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439831/?learn=on&captions=por_br)

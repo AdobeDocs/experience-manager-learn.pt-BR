@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como visualizar ou gerenciar a herança em um site ou executar operações de implantação usando o console Visão geral da Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326737?quality=12&learn=on&captions=por_br)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Os recursos de marca d&#39;água do AEM as a Cloud Service permitem que representações de imagens personalizadas tenham marcas d&#39;água usando qualquer imagem PNG.
 
->[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329457?quality=12&learn=on&captions=por_br)

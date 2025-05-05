@@ -36,7 +36,7 @@ O comportamento padrão desse formulário seria exibir todos os painéis à esqu
 
 Para alterar esse comportamento padrão, é necessário fazer o seguinte
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438636?quality=12&learn=on&captions=por_br)
 
 
 Adicione o seguinte código ao evento de clique do botão **Próximo** usando o editor de código
@@ -57,7 +57,7 @@ O código acima ajudará você a navegar entre as guias e os painéis secundári
 
 Use o editor de estilos para ocultar o título dos painéis secundários das guias.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439132?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

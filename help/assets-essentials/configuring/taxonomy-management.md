@@ -22,4 +22,4 @@ ht-degree: 6%
 
 Saiba como gerenciar a taxonomia de tags na visualização do AEM Assets Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447371/?learn=on&captions=por_br)

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Saiba mais sobre a modernização de repositórios, conteúdo mutável e imutável, estrutura de pacotes e a ferramenta de CLI do repositório modernizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454797?quality=12&learn=on&captions=por_br)
 
 ## Ferramenta Modernizador de repositório
 

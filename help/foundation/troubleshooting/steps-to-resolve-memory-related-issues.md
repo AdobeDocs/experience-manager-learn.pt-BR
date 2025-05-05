@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as Etapas para resolver problemas relacionados à Memória no AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418356?quality=12&learn=on&captions=por_br)

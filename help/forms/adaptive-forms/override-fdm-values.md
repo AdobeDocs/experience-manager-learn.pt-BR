@@ -32,4 +32,4 @@ O vídeo a seguir demonstra o recurso e o caso de uso
 
 >[!NOTE]
 >O recurso demonstrado neste vídeo requer o AEM Forms 6.5.13
->[!VIDEO](https://video.tv.adobe.com/v/343762?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411985?quality=12&learn=on&captions=por_br)

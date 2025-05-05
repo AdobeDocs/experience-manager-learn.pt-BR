@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Os aplicativos AEM Headless oferecem suporte à pré-visualização de criação integrada. A experiência de visualização vincula o editor de Fragmento de conteúdo do autor do AEM ao seu aplicativo personalizado (endereçável via HTTP), permitindo um deep link no aplicativo que renderiza o Fragmento de conteúdo que está sendo visualizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449593?quality=12&learn=on&captions=por_br)
 
 Para usar a visualização do Fragmento de conteúdo, várias condições devem ser atendidas:
 

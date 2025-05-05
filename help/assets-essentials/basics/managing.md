@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Aprenda os conceitos básicos para criar uma estrutura de pastas, operações básicas como mover, copiar e renomear e coleções.
 
->[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417885?quality=12&learn=on&captions=por_br)

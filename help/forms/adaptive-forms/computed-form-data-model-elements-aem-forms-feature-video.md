@@ -28,8 +28,8 @@ A captura de tela a seguir mostra os elementos calculados Status andZip e monthS
 
 ## Criando elemento calculado de salário mensal
 
->[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35629?quality=12&learn=on&captions=por_br)
 
 ### Criando elemento calculado StateAndZip
 
->[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35630?quality=12&learn=on&captions=por_br)

@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Explore como usar modelos de prompt para Gerar variações na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441335/?learn=on&captions=por_br)
 

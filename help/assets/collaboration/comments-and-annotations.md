@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como usar comentários e anotações no AEM para se comunicar e colaborar em ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36923?quality=12&learn=on&captions=por_br)

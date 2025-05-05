@@ -76,7 +76,7 @@ Nesta parte do tutorial, você cria um novo Modelo de página de artigo que pode
 
 Normalmente, o planejamento de um novo site começa com modelos e designs estáticos. O [Adobe XD](https://helpx.adobe.com/br/support/xd.html) é uma ferramenta de design que cria uma experiência de usuário. Em seguida, vamos inspecionar um Kit de interface do usuário e modelos para ajudar a planejar a estrutura do Modelo de página de artigo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36143?quality=12&learn=on&captions=por_br)
 
 **Baixe o [Arquivo de Design do Artigo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Há três áreas principais de [Modelos Editáveis](https://experienceleague.ado
 
 Em seguida, crie um modelo no AEM que corresponda à estrutura dos modelos. Isso ocorre em uma instância local de AEM. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36142?quality=12&learn=on&captions=por_br)
 
 Etapas de alto nível para o vídeo acima:
 
@@ -164,7 +164,7 @@ Uma prática comum ao criar conteúdo global, como cabeçalho ou rodapé, é usa
 
 O Arquétipo de projeto AEM gerou um Cabeçalho e Rodapé. Em seguida, atualize os Fragmentos de experiência para corresponder aos modelos. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447494?quality=12&learn=on&captions=por_br)
 
 Etapas de alto nível para o vídeo acima:
 
@@ -210,7 +210,7 @@ Etapas de alto nível para o vídeo acima:
 
 Em seguida, crie uma página usando o modelo Página de artigo. Crie o conteúdo da página para corresponder aos modelos de site. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446447?quality=12&learn=on&captions=por_br)
 
 Etapas de alto nível para o vídeo acima:
 

@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Para clientes com o Dynamic Media e o Adobe Analytics, agora é possível rastrear o uso dos Visualizadores do Dynamic Media no site usando a Extensão do visualizador do Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32898?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

@@ -36,13 +36,13 @@ Esta série de vídeos aborda o ciclo de vida de criação dos fragmentos de con
 
 ## Definição de Modelos de fragmentos de conteúdo {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34841?quality=12&learn=on&captions=por_br)
 
 Os modelos de fragmentos de conteúdo do AEM, os esquemas de dados dos fragmentos de conteúdo, devem ser habilitados por meio do [[!UICONTROL Navegador de configuração]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=pt-BR) do AEM, que permite a definição dos modelos de fragmento de conteúdo com base na configuração.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34842?quality=12&learn=on&captions=por_br)
 
 As configurações do AEM são aplicadas às hierarquias de pastas do AEM Assets para permitir que os modelos de fragmento de conteúdo sejam criados como fragmentos de conteúdo. Os fragmentos de conteúdo são compatíveis com uma experiência de criação avançada baseada em formulário, permitindo que o conteúdo seja modelado como uma coleção de elementos.
 
@@ -53,7 +53,7 @@ Os fragmentos de conteúdo podem ter várias variantes, cada uma abordando um ca
 
 ## Download de fragmentos de conteúdo {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34843?quality=12&learn=on&captions=por_br)
 
 Os fragmentos de conteúdo do AEM podem ser baixados do AEM Author como um arquivo Zip contendo variantes, elementos e metadados.
 
@@ -62,7 +62,7 @@ Os fragmentos de conteúdo do AEM podem ser baixados do AEM Author como um arqui
 
 ## Recursos editoriais de Fragmento de conteúdo {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39655?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

@@ -23,6 +23,6 @@ ht-degree: 2%
 
 Saiba como publicar ativos e suas representações do AEM Author para o AEM Publish.
 
->[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344744?quality=12&learn=on&captions=por_br)
 
 _Verifique se a implantação do AEM Assets tem um serviço de Publicação do AEM licenciado antes de publicar os ativos._

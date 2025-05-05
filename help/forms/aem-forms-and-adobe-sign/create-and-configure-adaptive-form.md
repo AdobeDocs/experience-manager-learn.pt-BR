@@ -22,7 +22,7 @@ ht-degree: 3%
 
 O vídeo a seguir destaca as etapas necessárias para criar e configurar um formulário adaptável para gerar o DoR automaticamente. O vídeo também o orienta pelas etapas necessárias para configurar o formulário adaptável para acionar um fluxo de trabalho de AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327814?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

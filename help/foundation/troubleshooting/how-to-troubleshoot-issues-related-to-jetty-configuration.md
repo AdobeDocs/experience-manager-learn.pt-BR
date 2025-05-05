@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para solucionar problemas relacionados à configuração do Jetty no AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335470?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418333?quality=12&learn=on&captions=por_br)

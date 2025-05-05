@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como estabelecer e gerenciar relações entre ativos no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346828?quality=12&learn=on&captions=por_br)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo aborda o processo de criação de um conjunto de carrossel com o AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418231?quality=12&learn=on&captions=por_br)

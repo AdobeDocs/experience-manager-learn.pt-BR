@@ -23,4 +23,4 @@ ht-degree: 3%
 
 As tags são uma ferramenta integral para gerenciar ativos na hierarquia de pastas da Assets. Estabelecer uma taxonomia de marcação é essencial para permitir que os usuários descubram e analisem ativos e organizem ativos no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37315?quality=12&learn=on&captions=por_br)

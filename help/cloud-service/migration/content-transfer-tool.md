@@ -22,7 +22,7 @@ ht-degree: 2%
 
 A ferramenta Transferência de conteúdo é a maneira recomendada para migrar o conteúdo de uma versão local ou hospedada pelo AMS do AEM para um ambiente AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327071?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais {#additional-resources}
 

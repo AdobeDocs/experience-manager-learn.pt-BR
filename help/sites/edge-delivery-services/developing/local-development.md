@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Como configurar um ambiente de desenvolvimento local para desenvolvimento do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434736/?learn=on&captions=por_br)
 
 
 ## Etapas descritas em vídeo

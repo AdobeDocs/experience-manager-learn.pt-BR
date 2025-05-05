@@ -30,7 +30,7 @@ Quando estiver criando uma variável do tipo JSON para capturar os dados enviado
 
 Você pode mapear o esquema com a variável do tipo JSON no modelo de fluxo de trabalho. Em seguida, você pode usar o navegador de esquemas para mapear os elementos do esquema com as variáveis de sequência/número no modelo de fluxo de trabalho
 
->[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35381?quality=12&learn=on&captions=por_br)
 
 Para fazer com que os ativos funcionem em seu sistema, siga as seguintes etapas:
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Crie um projeto do Adobe Developer Console que defina seu acesso a outros serviços da Adobe e gerencie suas implantações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3442019?quality=12&learn=on&captions=por_br)
 
 >[!IMPORTANT]
 >

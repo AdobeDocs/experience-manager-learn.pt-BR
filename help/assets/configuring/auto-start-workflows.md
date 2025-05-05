@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Os fluxos de trabalho de início automático estendem o processamento de ativos no AEM as a Cloud Service, chamando automaticamente o fluxo de trabalho personalizado após o upload ou o reprocessamento depois que o processamento de ativos é concluído.
 
->[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326765?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

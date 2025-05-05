@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Um modelo de formulário adaptável é um modelo de página do AEM especializado, com determinadas propriedades e estrutura de conteúdo usada para criar o formulário adaptável. O modelo tem layouts, estilos e estrutura básica de conteúdo inicial pré-configurados. Cada formulário adaptável é baseado em um modelo.
 
->[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446154?quality=12&learn=on&captions=por_br)

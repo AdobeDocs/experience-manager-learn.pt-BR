@@ -21,7 +21,7 @@ ht-degree: 0%
 
 O AEM Assets Dynamic Media integra pontos de acesso de ativos aos fragmentos de experiência por meio de visualizadores de mídia interativa. Os profissionais de marketing podem criar o fragmento de experiência com texto, imagens e links para preencher o pop-up personalizado e associar esse pop-up a pontos de acesso em banners, carrosséis ou vídeos.
 
->[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35638?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

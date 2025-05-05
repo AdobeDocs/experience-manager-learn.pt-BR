@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo passa pelo processo de inicialização manual se a inicialização do banco de dados não estiver funcionando.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436274?quality=12&learn=on&captions=por_br)

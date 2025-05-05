@@ -20,11 +20,11 @@ ht-degree: 1%
 
 As miniaturas de vídeo personalizadas do AEM Assets fornecem aos autores a capacidade de selecionar uma miniatura apropriada em um conjunto de miniaturas geradas. O número de miniaturas geradas para um vídeo pode ser facilmente personalizado.
 
->[!VIDEO](https://video.tv.adobe.com/v/16467?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33787?quality=12&learn=on&captions=por_br)
 
 ## Personalização da miniatura do vídeo
 
->[!VIDEO](https://video.tv.adobe.com/v/18867?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33790?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

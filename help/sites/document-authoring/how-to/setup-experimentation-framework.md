@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Saiba como configurar a estrutura de experimentação na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438933/?learn=on&captions=por_br)

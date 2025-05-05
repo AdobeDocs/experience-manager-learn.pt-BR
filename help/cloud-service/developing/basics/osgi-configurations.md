@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como definir e implantar a configuração OSGi no AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330559?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345876?quality=12&learn=on&captions=por_br)

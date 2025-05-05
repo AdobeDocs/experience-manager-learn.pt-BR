@@ -21,4 +21,4 @@ ht-degree: 0%
 
 As legendas ocultas são geradas automaticamente depois que um arquivo de vídeo é carregado no AEM Assets com Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446392/?learn=on&captions=por_br)

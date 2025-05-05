@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Entenda como gerenciar a herança entre uma Live Copy e seu Blueprint no nível do componente.
 
->[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41601?quality=12&learn=on&captions=por_br)

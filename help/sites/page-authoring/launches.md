@@ -24,4 +24,4 @@ ht-degree: 1%
 
 Os lançamentos no AEM Sites fornecem uma maneira de criar e revisar o conteúdo do site para uma versão futura. Durante a criação do lançamento, o site de produção pode continuar evoluindo e mudando a cada dia, como aconteceria normalmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346842?quality=12&learn=on&captions=por_br)

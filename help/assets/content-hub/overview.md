@@ -69,7 +69,7 @@ Esses vídeos abordam os principais recursos do AEM Assets Content Hub — desde
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/content-hub/configure" title="Configurar " target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439311/?format=jpeg&nocache=1744751768916" alt="Configurar "
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439316/?format=jpeg&nocache=1744751768916&captions=por_br" alt="Configurar "
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +92,7 @@ Esses vídeos abordam os principais recursos do AEM Assets Content Hub — desde
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/content-hub/add-assets" title="Adicionar ativos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="Adicionar ativos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450287/?format=jpeg&nocache=1744751769952&captions=por_br" alt="Adicionar ativos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +161,7 @@ Esses vídeos abordam os principais recursos do AEM Assets Content Hub — desde
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/content-hub/collections" title="Coleções" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1744751769136" alt="Coleções"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445305/?format=jpeg&nocache=1744751769136&captions=por_br" alt="Coleções"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ Esses vídeos abordam os principais recursos do AEM Assets Content Hub — desde
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/content-hub/share" title="Compartilhamento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1744751769933" alt="Compartilhamento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445360/?format=jpeg&nocache=1744751769933&captions=por_br" alt="Compartilhamento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

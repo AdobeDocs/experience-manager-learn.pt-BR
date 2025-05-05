@@ -22,7 +22,7 @@ ht-degree: 0%
 
 O Corte inteligente do Dynamic Media para vídeo usa o Adobe Sensei para rastrear de forma inteligente o ponto de interesse no vídeo, garantindo que os vídeos tenham melhor aparência em todos os tamanhos de tela.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326473?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

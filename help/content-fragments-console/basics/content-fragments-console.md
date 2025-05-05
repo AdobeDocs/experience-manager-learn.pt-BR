@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba mais sobre os recursos básicos e as funcionalidades do console de criação dos fragmentos de conteúdo do AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449336?quality=12&learn=on&captions=por_br)

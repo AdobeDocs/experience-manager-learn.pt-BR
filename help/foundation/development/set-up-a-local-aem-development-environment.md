@@ -161,7 +161,7 @@ A **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** é um IDE poderoso para d
 1. Baixe e instale o [!DNL IntelliJ IDEA]: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. Instalar [!DNL Repo] (ferramenta de linha de comando): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39744?quality=12&learn=on&captions=por_br)
 
 * 00:00 - Importar projeto Maven
 * 05:47 - Criar e implantar código-fonte com Maven

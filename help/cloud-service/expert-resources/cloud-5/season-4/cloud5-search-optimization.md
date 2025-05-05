@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Obtenha sua pontuação mínima para 100 compras usando consulta e otimização de pesquisa ao lidar com um grande número de registros. Trabalhe com técnicas para otimizar o índice de consulta, aprimorar a funcionalidade de pesquisa e dividir índices de consulta para obter a melhor otimização de desempenho
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440983/?learn=on&enablevpops&captions=por_br)

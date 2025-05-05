@@ -21,4 +21,4 @@ ht-degree: 9%
 
 Saiba como o Conversor de índice converte automaticamente as definições de índice do AEM existentes para serem compatíveis com o AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443778?quality=12&learn=on&captions=por_br)

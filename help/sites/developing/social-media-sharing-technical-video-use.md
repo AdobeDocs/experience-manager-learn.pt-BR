@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Explore a configuração e o uso do componente de Compartilhamento em redes sociais.
 
->[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30842?quality=12&learn=on&captions=por_br)
 
 Este vídeo explora os seguintes recursos do componente de Compartilhamento em Redes Sociais (parte dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)) usando o site de exemplo [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 

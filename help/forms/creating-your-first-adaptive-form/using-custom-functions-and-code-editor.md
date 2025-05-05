@@ -28,15 +28,15 @@ Normalmente, uma biblioteca do cliente consiste em arquivos CSS e Javascript. Es
 
 ## Função para preencher a lista suspensa {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326880?quality=12&learn=on&captions=por_br)
 
 ### Definir título de resumo do painel {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33080?quality=12&learn=on&captions=por_br)
 
 #### Painel Validar {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33079?quality=12&learn=on&captions=por_br)
 
 Este é o código usado para validar campos do painel
 

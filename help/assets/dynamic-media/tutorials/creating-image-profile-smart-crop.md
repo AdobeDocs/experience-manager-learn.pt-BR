@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Este vídeo aborda as etapas para criar um Perfil de imagem de corte inteligente no AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418219?quality=12&learn=on&captions=por_br)

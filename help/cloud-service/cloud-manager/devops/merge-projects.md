@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como vários projetos podem ser mesclados em um único para implantação no AEM as a Cloud Service usando o Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345861?quality=12&learn=on&captions=por_br)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como fazer upload de ativos, aplicar tags e entender o fluxo de trabalho de aprovação no Adobe Experience Manager Assets Content Hub.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450287/?learn=on&captions=por_br)

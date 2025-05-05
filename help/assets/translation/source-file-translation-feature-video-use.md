@@ -25,7 +25,7 @@ O Adobe Experience Manager (AEM) Assets permite identificar ativos que compartil
 
 ## Gerenciamento de arquivos do Source de ativos de vários sites {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34691?quality=12&learn=on&captions=por_br)
 
 O Assets relacionado ajuda os usuários a gerenciar ativos melhores e entre links com características, propriedades e fluxos de trabalho compartilhados:
 

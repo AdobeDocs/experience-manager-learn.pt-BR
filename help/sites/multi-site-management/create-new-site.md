@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como criar um site de país a partir de Cópias de idioma existentes usando o assistente Criar site.
 
->[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41543?quality=12&learn=on&captions=por_br)

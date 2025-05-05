@@ -33,12 +33,12 @@ Há dois repositórios de conteúdo com suporte para [criação de documentos](.
 
 Configure o SharePoint como o repositório de conteúdo para usar com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446033/?learn=on&captions=por_br)
 
 >[!TAB Unidade Google]
 
 Configure o Google Drive como o repositório de conteúdo para usar com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434725/?learn=on&captions=por_br)
 
 >[!ENDTABS]

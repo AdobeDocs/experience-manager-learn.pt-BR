@@ -85,4 +85,4 @@ Se tiver problemas para criar as funções personalizadas, sinta-se à vontade p
 ## Uso das funções personalizadas
 
 O vídeo a seguir mostra as etapas envolvidas no uso da função personalizada no editor de regras de um formulário adaptável
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445846?quality=12&learn=on&captions=por_br)

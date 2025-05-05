@@ -20,7 +20,7 @@ ht-degree: 2%
 
 A parte dois do uso da CDN do AEM e aprofundamento em várias opções.
 
->[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448413?quality=12&learn=on&captions=por_br)
 
 ## Conteúdo abordado na parte dois desta série
 

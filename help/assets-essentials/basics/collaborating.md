@@ -23,4 +23,4 @@ ht-degree: 3%
 
 Saiba como colaborar no gerenciamento de ativos usando comentários, anotações e tarefas.
 
->[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443993?quality=12&learn=on&captions=por_br)

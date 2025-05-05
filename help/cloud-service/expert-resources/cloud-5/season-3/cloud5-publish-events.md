@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Explore eventos que são acionados ao publicar e desfazer a publicação no Edge Delivery Services, bem como casos de uso e exemplos para usar esses eventos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446661?learn=on&captions=por_br)
 
 ## Recursos adicionais
 

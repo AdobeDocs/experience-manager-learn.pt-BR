@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Nesta parte, criaremos o fragmento do documento para manter o nome e o endereço do recipient.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34878?quality=12&learn=on&captions=por_br)
 
 Os fragmentos de documento contêm o conteúdo de texto de documentos de comunicação interativa. Esse conteúdo de texto pode ser um texto estático ou inserido dos valores subjacentes dos elementos do modelo de dados. Por exemplo **Dear _{name}_**, onde Dear é texto estático e name é o nome do elemento do modelo de dados de formulário. No tempo de execução, isso resolverá para **Dear Gloria Rios**&#x200B;ou **Dear John Jacobs**, dependendo do valor do elemento name.
 

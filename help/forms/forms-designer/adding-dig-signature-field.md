@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Vídeo curto que descreve como adicionar assinaturas digitais ao AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/3427623/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439531/?learn=on&captions=por_br)

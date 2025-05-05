@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Crie um modelo de fluxo de trabalho usando componentes de fluxo de trabalho do AEM Forms. use o componente Or-Split para ramificar o fluxo de trabalho com base no valor da variável state.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453196?quality=12&learn=on&captions=por_br)

@@ -29,11 +29,11 @@ Para criar gráficos de várias séries no AEM Forms, você precisa criar um Mod
 
 ## Criar Modelo de Dados de Formulário para Gráficos Multissérie
 
->[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33042?quality=12&learn=on&captions=por_br)
 
 ### Configurar Gráficos de Série de Linha
 
->[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33045?quality=12&learn=on&captions=por_br)
 
 Para testar isso em seu sistema, siga as etapas a seguir
 

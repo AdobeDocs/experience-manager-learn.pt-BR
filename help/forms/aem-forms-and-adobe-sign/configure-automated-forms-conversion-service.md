@@ -40,7 +40,7 @@ Você precisa do seguinte para usar o Automated forms conversion Service:
 
 * O vídeo explica as etapas necessárias para conectar sua instância do AEM Forms local ao serviço do Automated forms conversion na Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327725?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

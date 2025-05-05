@@ -22,7 +22,7 @@ ht-degree: 1%
 
 O Adobe apresenta um aplicativo de desktop para Dynamic Media Classic que fornece uma experiência semelhante a um navegador e uma interface funcionalmente equivalente que não depende do Adobe Flash Player.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327762?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

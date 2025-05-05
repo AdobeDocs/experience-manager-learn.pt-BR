@@ -22,5 +22,5 @@ ht-degree: 0%
 
 Saiba como acessar arquivos e coleções do AEM Assets de forma rápida e fácil no painel Link de ativos.
 
->[!VIDEO](https://video.tv.adobe.com/v/33884?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38664?quality=12&learn=on&captions=por_br)
 

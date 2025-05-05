@@ -26,7 +26,7 @@ Para usar uma API de lote, crie uma configuração de lote e execute uma execuç
 >Certifique-se de que o usuário do AEM pertence ao grupo ```forms-users``` para fazer chamadas de API.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343703?quality=12&learn=on&captions=por_br)
 
 ## Criar configuração em lote
 

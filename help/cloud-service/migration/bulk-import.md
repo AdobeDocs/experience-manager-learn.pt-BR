@@ -29,11 +29,11 @@ A ferramenta Importação em massa no AEM as a Cloud Service permite que os admi
 
 Saiba como importar vários arquivos para o AEM Assets usando a [Exibição de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=pt-BR) [Importação em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=pt-BR), com o Dropbox servindo como um exemplo de provedor de armazenamento na nuvem para oferecer um processo de integração claro e fácil de seguir.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3451964/?learn=on&captions=por_br)
 
 >[!TAB Modo de exibição de administrador]
 
->[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341393?quality=12&learn=on&captions=por_br)
 
 >[!TIP]
 >

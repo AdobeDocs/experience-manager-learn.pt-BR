@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Saiba como salvar os modelos de prompt personalizados para Gerar variações na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428317/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437509/?learn=on&captions=por_br)
 

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Explore como o Adobe lida com a confiança e a privacidade para gerar variações na criação de documentos do Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440019/?learn=on&captions=por_br)

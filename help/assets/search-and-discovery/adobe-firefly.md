@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Saiba como o Adobe Experience Manager Assets, integrado ao Adobe Firefly, transforma resultados de pesquisa vazios em uma experiência produtiva de geração de ativos, permitindo que os usuários encontrem e façam upload de ativos com facilidade, diretamente no fluxo de trabalho.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429070/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438262/?learn=on&captions=por_br)
 
 
 >[!TIP]

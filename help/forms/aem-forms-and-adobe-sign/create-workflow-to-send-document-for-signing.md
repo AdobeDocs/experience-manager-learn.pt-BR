@@ -23,7 +23,7 @@ ht-degree: 2%
 Crie um fluxo de trabalho de AEM usando o componente de documento de assinatura. Utilize o DoR gerado automaticamente para enviar assinaturas usando o componente de assinatura.
 O vídeo explica as várias etapas necessárias para criar um fluxo de trabalho eficaz para enviar documentos para assinatura.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327822?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

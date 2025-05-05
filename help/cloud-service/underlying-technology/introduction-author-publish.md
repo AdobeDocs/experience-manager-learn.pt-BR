@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Uma introdução aos níveis de Autor e Publicação como parte da arquitetura no Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37066?quality=12&learn=on&captions=por_br)

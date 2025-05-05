@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Envie uma notificação por email a um remetente de formulário adaptável com o Microsoft Power Automate extraindo valores de campo do envio do formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431486?quality=12&learn=on&captions=por_br)

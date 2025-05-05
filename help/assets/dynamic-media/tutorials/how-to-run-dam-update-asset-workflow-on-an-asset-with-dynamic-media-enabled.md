@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo aborda o processo de execução do fluxo de trabalho Atualizar ativo do DAM em um ativo com o Dynamic Media ativado.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418273?quality=12&learn=on&captions=por_br)

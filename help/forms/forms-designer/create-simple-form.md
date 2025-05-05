@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Parte 1 - Adicionar títulos, imagens, campos de texto e campos de data
 
->[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439731/?learn=on&captions=por_br)
 
 Parte 2 - Adicionar e criar objetos personalizados e fragmentos de formulário
 
->[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439586/?learn=on&captions=por_br)
 
 Acessar conteúdo de ajuda
 
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437238/?learn=on&captions=por_br)
 

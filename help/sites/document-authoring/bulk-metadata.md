@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como os metadados em massa são tratados na criação de documentos e como os autores podem atualizar metadados em massa sem conhecimento técnico especializado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438417/?learn=on&captions=por_br)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como filtrar, pesquisar e baixar ativos no AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443999?quality=12&learn=on&captions=por_br)

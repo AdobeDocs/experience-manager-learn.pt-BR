@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Vídeo curto que aborda a interface do usuário do AEM Forms Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429493/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439806/?learn=on&captions=por_br)

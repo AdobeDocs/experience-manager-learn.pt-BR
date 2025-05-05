@@ -31,7 +31,7 @@ Além do armazenamento em cache do conteúdo, o Adobe CDN oferece vários recurs
 
 Estes recursos são do **autoatendimento**. Configurado no arquivo `cdn.yaml` do seu projeto do AEM e implantado usando o pipeline de configuração do Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440275?quality=12&learn=on&captions=por_br)
 
 ## Configuração do tráfego no CDN
 

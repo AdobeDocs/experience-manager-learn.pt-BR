@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Saiba como o Console de fragmentos de conteúdo e o Editor do AEM facilitam a compreensão e o gerenciamento do conteúdo referenciado.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423642/?learn=on&captions=por_br)

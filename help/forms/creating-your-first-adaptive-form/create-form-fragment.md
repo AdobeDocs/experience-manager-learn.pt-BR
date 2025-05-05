@@ -21,7 +21,7 @@ ht-degree: 3%
 Um fragmento é uma parte reutilizável de um formulário. Por exemplo, um fragmento pode incluir um bloco de endereço ou texto legal. O uso de fragmentos simplifica e acelera a criação e a manutenção de um grande número de formulários.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/37325?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326682?quality=12&learn=on&captions=por_br)
 
 
 

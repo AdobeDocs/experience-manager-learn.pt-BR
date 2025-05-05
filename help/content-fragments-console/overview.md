@@ -38,7 +38,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./basics/content-fragments-console.md" title="Visão geral do console"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                src="https://video.tv.adobe.com/v/3449336?format=jpeg&captions=por_br"
                 alt="Visão geral do console">
             </a>
           </figure>
@@ -104,7 +104,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./search/fast-filtering.md" title="Filtragem rápida"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Rápido
+                src="https://video.tv.adobe.com/v/3436701?format=jpeg&captions=por_br" alt="Rápido
                 filtragem">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./editor/non-asset-content-references.md" title="Não ativo
               referências de conteúdo" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436767?format=jpeg&captions=por_br"
                 alt="Referências de conteúdo não relacionado a ativos">
             </a>
           </figure>
@@ -206,7 +206,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./editor/rte-variant-compare.md" title="Comparação de variantes de RTE"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="RTE
+                src="https://video.tv.adobe.com/v/3437551?format=jpeg&captions=por_br" alt="RTE
                 comparação de variantes">
             </a>
           </figure>
@@ -240,7 +240,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./editor/language-copies.md" title="Cópias de idioma"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436961?format=jpeg&captions=por_br"
                 alt="Cópias de idioma">
             </a>
           </figure>
@@ -274,7 +274,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./search/references.md" title="Referências"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                src="https://video.tv.adobe.com/v/3423642?format=jpeg&captions=por_br"
                 alt="Referências">
             </a>
           </figure>

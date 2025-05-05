@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para executar testes de carga da interface do usuário usando amostras de FormsIVS e OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441480?quality=12&learn=on&captions=por_br)

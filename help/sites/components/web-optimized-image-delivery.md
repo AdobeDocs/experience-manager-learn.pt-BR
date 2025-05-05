@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como habilitar a entrega de imagens otimizadas para a Web nos sites do AEM as a Cloud Service usando os Componentes principais do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449997?quality=12&learn=on&captions=por_br)

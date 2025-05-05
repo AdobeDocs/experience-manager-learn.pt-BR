@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Saiba como a Ferramenta de transferência de conteúdo ajuda a migrar o conteúdo do AEM 6.3+ para o AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454752?quality=12&learn=on&captions=por_br)
 
 ## Uso da ferramenta Transferência de conteúdo
 

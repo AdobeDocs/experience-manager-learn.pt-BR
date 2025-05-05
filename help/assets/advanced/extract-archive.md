@@ -23,4 +23,4 @@ ht-degree: 5%
 
 Saiba como dominar o eficiente gerenciamento de ativos digitais no AEM Assets com nosso vídeo informativo, que exibe o recurso Extrair ZIP para organizar e carregar facilmente suas hierarquias de ativos diretamente no DAM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426368/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447147/?learn=on&captions=por_br)

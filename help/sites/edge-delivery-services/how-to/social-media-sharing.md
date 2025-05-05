@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como otimizar seu conteúdo para compartilhamento em redes sociais usando o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425974/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439442/?learn=on&captions=por_br)

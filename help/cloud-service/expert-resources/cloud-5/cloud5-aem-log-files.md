@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Veja em detalhes como acessar logs no AEM as a Cloud Service, incluindo como acessá-los por meio da interface do usuário, bem como de APIs.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448483?quality=12&learn=on&captions=por_br)
 
 ## Conteúdo abordado neste vídeo
 

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 O painel de pesquisa do administrador do Assets permite que os ativos sejam pesquisados usando critérios personalizados no Omnisearch.
 
->[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40075?quality=12&learn=on&captions=por_br)

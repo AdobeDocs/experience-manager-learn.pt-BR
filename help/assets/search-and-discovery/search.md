@@ -23,4 +23,4 @@ ht-degree: 9%
 
 Saiba como usar o Omnisearch da AEM para descobrir ativos rapidamente.
 
->[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37028?quality=12&learn=on&captions=por_br)

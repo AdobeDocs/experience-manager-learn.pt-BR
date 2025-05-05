@@ -23,7 +23,7 @@ Adicionaremos uma tabela ao painel Receita. Configure as linhas da tabela e use 
 
 **Adicionar e Configurar o Componente de Tabela**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326907?quality=12&learn=on&captions=por_br)
 
 
 
@@ -44,7 +44,7 @@ Adicionaremos uma tabela ao painel Receita. Configure as linhas da tabela e use 
 ## Criar regra para calcular o total geral {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326896?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

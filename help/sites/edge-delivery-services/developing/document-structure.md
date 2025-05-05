@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Explore como um documento do Edge Delivery Services é montado usando seções, conteúdo padrão e muito mais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445194/?learn=on&captions=por_br)

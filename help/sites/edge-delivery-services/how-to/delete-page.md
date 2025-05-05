@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como excluir uma página no Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438095/?learn=on&captions=por_br)

@@ -32,4 +32,4 @@ Uma solicitação GET para esse URL exclusivo informará o status da execução 
 
 O vídeo a seguir demonstra o acionamento da configuração do lote
 
->[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343710?quality=12&learn=on&captions=por_br)

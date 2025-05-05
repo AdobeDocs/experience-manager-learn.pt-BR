@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Saiba como integrar o AEM Headless com o Adobe Target, exportando fragmentos de conteúdo do AEM para o Adobe Target e usando-os para personalizar experiências headless usando o alloy.js do Adobe Experience Platform Web SDK. O [Aplicativo WKND React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=pt-BR) é usado para explorar como uma atividade personalizada do Target usando Ofertas de fragmentos de conteúdo podem ser adicionadas à experiência, para promover uma aventura WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422157/?quality=12&learn=on&captions=por_br)
 
 O tutorial aborda as etapas envolvidas na configuração do AEM e do Adobe Target:
 
@@ -50,7 +50,7 @@ Um Adobe Target Cloud Service é criado no AEM para facilitar a exportação de 
 
 Consulte [a documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=pt-BR) para obter instruções passo a passo sobre como criar uma Adobe Target Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422652/?quality=12&learn=on&captions=por_br)
 
 
 ## Configurar pastas de ativos{#configure-asset-folders}
@@ -71,7 +71,7 @@ O Adobe Target Cloud Service, configurado em uma configuração sensível ao con
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416504/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422660/?quality=12&learn=on&captions=por_br)
 
 ## Permissão para a integração do AEM Target{#permission}
 
@@ -90,7 +90,7 @@ A integração do Adobe Target, que se manifesta como um projeto developer.adobe
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416505/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441978/?quality=12&learn=on&captions=por_br)
 
 ## Exportar fragmentos de conteúdo para o Target{#export-content-fragments}
 
@@ -121,7 +121,7 @@ Os fragmentos de conteúdo que existem na [hierarquia de pastas configurada do A
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416506/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422676/?quality=12&learn=on&captions=por_br)
 
 ## Atividade do Target usando ofertas de fragmento de conteúdo{#activity}
 
@@ -160,7 +160,7 @@ A atividade do Adobe Target direcionada ao local `wknd-adventure-promo` agora po
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416507/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444786/?quality=12&learn=on&captions=por_br)
 
 ## ID da sequência de dados do Experience Platform{#datastream-id}
 
@@ -190,7 +190,7 @@ Uma ID de [Sequência de Dados do Adobe Experience Platform](https://experiencel
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3416500/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422179/?quality=12&learn=on&captions=por_br)
 
 ## Adicionar personalização a um aplicativo AEM Headless{#code}
 

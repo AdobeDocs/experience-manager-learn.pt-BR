@@ -24,7 +24,7 @@ ht-degree: 7%
 
 O Adobe Experience Manager Sites permite que um autor gerencie a largura de um componente com base na largura do dispositivo para facilitar um design de site responsivo. Com o Modo de layout e o Contêiner de layout, os usuários podem criar conteúdo responsivo para diferentes dispositivos e visualizar a experiência do usuário final, sem sair da interface do usuário do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37177?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais {#additional-resources}
 

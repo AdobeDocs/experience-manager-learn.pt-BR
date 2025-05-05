@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Bem-vindo à nuvem série 5 da engenharia da AEM. Um dos principais problemas na fase de implementação de qualquer produto é ter amostras de código suficientes e/ou demonstrações em tempo real dessas amostras, ferramentas ou APIs. O objetivo desta série é fornecer informações úteis sobre o AEM as a Cloud Service em 5 minutos ou menos.
 
->[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447828?quality=12&learn=on&captions=por_br)

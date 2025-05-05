@@ -25,7 +25,7 @@ ht-degree: 1%
 
 O AEM Sites fornece várias opções para publicar e desfazer a publicação de conteúdo. Este vídeo explora os vários métodos e seus recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36848?quality=12&learn=on&captions=por_br)
 
 O AEM Sites fornece vários métodos para publicar e desfazer a publicação de conteúdo, com base no fluxo de trabalho do autor.
 

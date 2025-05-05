@@ -23,4 +23,4 @@ ht-degree: 1%
 Uma conta de armazenamento do Azure contém todos os seus objetos de dados de Armazenamento do Azure, incluindo blobs, compartilhamentos de arquivos, filas, tabelas e discos. A conta de armazenamento fornece um namespace exclusivo para seus dados de Armazenamento do Azure, que é acessível de qualquer lugar do mundo por HTTP ou HTTPS. Os dados em sua conta de armazenamento são duráveis e altamente disponíveis, seguros e amplamente dimensionáveis.
 O vídeo a seguir o orienta pelo processo de configuração da conta de armazenamento do Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343724?quality=12&learn=on&captions=por_br)

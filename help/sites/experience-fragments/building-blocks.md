@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Os blocos são um sub-recurso dos Fragmentos de experiência. Os blocos permitem que os autores de conteúdo reutilizem componentes em diferentes variações de Fragmentos de experiência.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418841?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

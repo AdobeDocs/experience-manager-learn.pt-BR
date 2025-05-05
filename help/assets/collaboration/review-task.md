@@ -23,4 +23,4 @@ ht-degree: 12%
 
 Explore como a Tarefa de revisão do AEM Assets facilita os fluxos de trabalho de revisão e aprovação mais comuns.
 
->[!VIDEO](https://video.tv.adobe.com/v/32050?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36766?quality=12&learn=on&captions=por_br)

@@ -23,14 +23,14 @@ ht-degree: 6%
 
 As Tags inteligentes da AEM Assets para imagens aumentam a pesquisa da AEM Assets adicionando automaticamente tags de metadados derivadas a ativos de imagem, melhorando a experiência de criação ao facilitar e agilizar a localização da imagem correta.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444059?quality=12&learn=on&captions=por_br)
 
 ## Configurar para o AEM 6.x{#set-up}
 
 >[!NOTE]
 > As Tags inteligentes para imagens são provisionadas automaticamente para o AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444170?quality=12&learn=on&captions=por_br)
 
 Antes de usar o Serviço de conteúdo inteligente, é necessário criar uma integração no Adobe I/O:
 

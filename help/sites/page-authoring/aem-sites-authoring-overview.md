@@ -24,7 +24,7 @@ ht-degree: 13%
 
 O vídeo a seguir fornece uma visão geral dos conceitos básicos de criação em um ambiente de criação do AEM para o AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36847?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais {#additional-resources}
 

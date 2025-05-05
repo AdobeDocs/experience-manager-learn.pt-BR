@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Saiba mais sobre a integração com o AEM as a Cloud Service, desde a fase de contrato até a configuração de ambientes, usando o Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431501?quality=12&learn=on&captions=por_br)
 
 ## Cloud Manager e Admin Console
 

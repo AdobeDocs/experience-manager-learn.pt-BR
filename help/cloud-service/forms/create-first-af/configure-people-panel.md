@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adicione o fragmento de detalhes do cônjuge ao painel Gente.
 
->[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425108?quality=12&learn=on&captions=por_br)

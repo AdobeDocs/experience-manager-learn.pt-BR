@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Uma introdução a ferramentas e técnicas comuns usadas para depurar uma implementação de tags. Saiba como usar o console do desenvolvedor do navegador e a extensão do Depurador de Experience Platform para identificar e solucionar problemas de aspectos principais de uma implementação de tags.
 
->[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327408?quality=12&learn=on&captions=por_br)
 
 ## Depuração do lado do cliente por meio do objeto Satellite
 

@@ -26,7 +26,7 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 
 ## Comparação de versões de página {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36794?quality=12&learn=on&captions=por_br)
 
 **Alterações no HTML**
 

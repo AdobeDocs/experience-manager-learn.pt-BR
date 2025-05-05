@@ -26,7 +26,7 @@ O Editor de páginas do site do AEM é uma ferramenta poderosa para criar e edit
 
 O vídeo a seguir destaca alguns dos principais recursos do Editor de páginas.
 
->[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37196?quality=12&learn=on&captions=por_br)
 
 
 Consulte a [documentação do AEM para obter uma visão geral completa dos recursos do Editor de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=pt-BR).

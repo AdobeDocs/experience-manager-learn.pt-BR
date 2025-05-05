@@ -21,7 +21,7 @@ ht-degree: 4%
 
 Saiba como a pesquisa de terceiros pode ser integrada melhor ao Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452607?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais
 

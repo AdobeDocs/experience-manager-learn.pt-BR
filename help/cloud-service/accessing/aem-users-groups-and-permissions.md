@@ -28,7 +28,7 @@ ht-degree: 74%
 
 O Adobe Experience Manager se baseia em usuários, grupos de usuários e perfis de produtos do Adobe IMS para fornecer aos usuários acesso personalizável ao AEM. Saiba como definir grupos e permissões do AEM, que se baseiam nos [grupos de usuários fornecidos pela AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/security/security#built-in-users-and-groups), e como eles trabalham em conjunto com abstrações do Adobe IMS para fornecer acesso fácil e personalizável ao AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327383?quality=12&learn=on&captions=por_br)
 
 ## Recursos adicionais
 

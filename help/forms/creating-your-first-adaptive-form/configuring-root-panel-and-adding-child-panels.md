@@ -22,7 +22,7 @@ ht-degree: 2%
 Adicione painéis secundários ao painel raiz.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326916?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >Ao adicionar painéis secundários ao painel raiz, **Verifique se você está no modo de edição. O botão Editar está localizado no canto superior direito do navegador.**

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba mais sobre o suporte a ativos 3D no AEM Assets as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420690/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423678/?learn=on&captions=por_br)

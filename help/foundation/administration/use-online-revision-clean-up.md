@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Uma breve introdução à Limpeza de revisão online que atenua a necessidade de limpezas frequentes de revisão offline.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30974?quality=12&learn=on&captions=por_br)
 
 ## Materiais de suporte
 

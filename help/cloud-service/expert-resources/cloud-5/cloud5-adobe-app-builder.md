@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Amol Anand entra em cena para nos fornecer o resultado das integrações com o Adobe App Builder e onde e quando usá-lo.
 
->[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409144?quality=12&learn=on&captions=por_br)
 
 ## Conteúdo abordado neste vídeo
 

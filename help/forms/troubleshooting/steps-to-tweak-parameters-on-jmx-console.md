@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para ajustar parâmetros no console JMX.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438406?quality=12&learn=on&captions=por_br)

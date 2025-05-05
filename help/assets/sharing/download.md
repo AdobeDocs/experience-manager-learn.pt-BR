@@ -23,4 +23,4 @@ ht-degree: 5%
 
 Saiba como baixar ativos e suas execuções no computador local para uso e compartilhamento.
 
->[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39510?quality=12&learn=on&captions=por_br)

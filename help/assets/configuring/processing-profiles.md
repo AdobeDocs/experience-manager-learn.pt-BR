@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Os perfis de processamento definem as representações que serão criadas para ativos no AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40083?quality=12&learn=on&captions=por_br)

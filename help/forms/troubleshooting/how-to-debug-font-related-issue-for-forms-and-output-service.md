@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo aborda o processo de captura de materiais de apoio para depurar problemas relacionados a Fontes com conversões de Forms e Serviço de saída.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439909?quality=12&learn=on&captions=por_br)

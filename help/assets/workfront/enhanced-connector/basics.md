@@ -31,4 +31,4 @@ Saiba mais sobre as noções básicas do conector aprimorado do Adobe Workfront 
 + Ativos de versão
 + Publicar ativos automaticamente
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454300?quality=12&learn=on&captions=por_br)

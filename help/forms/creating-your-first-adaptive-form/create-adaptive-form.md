@@ -22,7 +22,7 @@ Criaremos o formulário adaptável com base no modelo criado na lição anterior
 
 **Criar o primeiro formulário adaptável**
 
->[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327846?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

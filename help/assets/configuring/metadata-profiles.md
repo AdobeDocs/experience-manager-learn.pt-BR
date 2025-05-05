@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Os perfis de metadados permitem a aplicação automática de metadados padrão em ativos nas pastas de ativos, ajudando a reduzir a carga do gerenciamento de metadados sobre os usuários do AEM e aumentando a consistência dos metadados.
 
->[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37282?quality=12&learn=on&captions=por_br)

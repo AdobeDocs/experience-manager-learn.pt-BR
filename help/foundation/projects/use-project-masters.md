@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Os Projetos Mestres simplificam muito o gerenciamento de usuários e equipes com o [!DNL AEM Projects].
 
->[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418847?quality=12&learn=on&captions=por_br)
 
 Agora, os administradores podem criar um **[!DNL Master Project]** e atribuir usuários a funções/permissões como parte de uma Equipe do Projeto. Os projetos podem ser criados a partir de um projeto mestre e herdam automaticamente a associação Equipe. Isso oferece várias vantagens:
 

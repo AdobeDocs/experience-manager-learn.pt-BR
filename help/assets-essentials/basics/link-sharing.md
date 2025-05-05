@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Saiba como o Link de compartilhamento do AEM Assets permite que os usuários compartilhem ativos com participantes internos e externos, minimizando o risco de compartilhar ativos ou informações incorretos.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345010?quality=12&learn=on&captions=por_br)

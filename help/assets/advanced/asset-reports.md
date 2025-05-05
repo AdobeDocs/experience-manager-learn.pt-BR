@@ -23,7 +23,7 @@ ht-degree: 0%
 
 A AEM Assets fornece uma estrutura de relatórios de nível empresarial que pode ser dimensionada para repositórios grandes por meio de uma experiência do usuário intuitiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418844?quality=12&learn=on&captions=por_br)
 
 
 >[!IMPORTANT]

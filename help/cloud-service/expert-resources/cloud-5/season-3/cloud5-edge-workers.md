@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Explore a importância dos profissionais de borda no AEM Sites e no Edge Delivery Services e como integrá-los aos seus sistemas de back-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427589?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448126?learn=on&captions=por_br)
 
 ## Recursos adicionais
 

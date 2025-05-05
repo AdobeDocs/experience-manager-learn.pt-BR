@@ -30,7 +30,7 @@ Bem-vindo a um tutorial em várias partes projetado para desenvolvedores novos n
 
 O objetivo deste tutorial em várias partes é ensinar ao desenvolvedor como implementar um site usando os padrões e as tecnologias mais recentes do Adobe Experience Manager (AEM). Após concluir este tutorial, um desenvolvedor deve entender a base básica da plataforma e os padrões de design comuns no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36068?quality=12&learn=on&captions=por_br)
 
 ## Opções para iniciar um projeto do Sites
 

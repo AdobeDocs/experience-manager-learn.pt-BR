@@ -23,4 +23,4 @@ ht-degree: 0%
 
 O AEM Forms CS tem um novo recurso para armazenar seus dados de fluxo de trabalho, como variáveis, anexos etc., em uma conta de armazenamento externa. Este vídeo mostra como armazenar seus dados de fluxo de trabalho no armazenamento do Azure
 
->[!VIDEO](https://video.tv.adobe.com/v/339610?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342969?quality=12&learn=on&captions=por_br)

@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Use o aplicativo de desktop do AEM para simplificar o acesso a qualquer ativo gerenciado no AEM no desktop, para qualquer aplicativo e formato de arquivo.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32782?quality=12&learn=on&captions=por_br)
 
 + Descubra ativos no AEM por meio da navegação e pesquisa usando um aplicativo de desktop dedicado
 + O gerenciamento otimizado de largura de banda permite o upload e o download de muitos ativos grandes

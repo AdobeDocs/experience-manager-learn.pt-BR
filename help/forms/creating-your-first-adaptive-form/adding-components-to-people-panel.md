@@ -23,15 +23,15 @@ Configure o painel Pessoas adicionando o fragmento de detalhes do cônjuge. Uma 
 
 **Configurar o Painel de Pessoas no AEM Forms 6.3 e 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326924?quality=12&learn=on&captions=por_br)
 
 **Configurar o Painel de Pessoas no AEM Forms 6.5 e posterior**
 
->[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326940?quality=12&learn=on&captions=por_br)
 
 **Regras de Detalhes do Cônjuge**
 
->[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326932?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

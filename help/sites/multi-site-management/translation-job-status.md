@@ -22,4 +22,4 @@ ht-degree: 16%
 
 Entenda os diferentes status associados a um trabalho de tradução ou a um item no trabalho.
 
->[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41559?quality=12&learn=on&captions=por_br)

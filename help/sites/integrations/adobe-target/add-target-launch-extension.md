@@ -26,7 +26,7 @@ Para acompanhar este vídeo, você já deve ter [tags integradas no Adobe Experi
 
 Saiba como habilitar o Adobe Target para o site da AEM usando tags.
 
->[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329008?quality=12&learn=on&captions=por_br)
 
 ## Próximas etapas
 

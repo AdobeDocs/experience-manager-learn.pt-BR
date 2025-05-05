@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Saiba como criar e organizar as páginas do site de sua organização no AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418850?quality=12&learn=on&captions=por_br)

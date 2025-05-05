@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adicione o componente Tabela ao painel de renda para capturar as fontes de renda do candidato.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425126?quality=12&learn=on&captions=por_br)

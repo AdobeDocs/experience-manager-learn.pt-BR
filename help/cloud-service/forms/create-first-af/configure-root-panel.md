@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adicione painéis secundários ao painel raiz e configure o layout dos painéis secundários.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447281?quality=12&learn=on&captions=por_br)

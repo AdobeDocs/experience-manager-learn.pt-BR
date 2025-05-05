@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Normalmente, a barra de ferramentas é adicionada no nível do contêiner de formulário. A barra de ferramentas pode conter botões para navegar até os painéis anteriores e seguintes do formulário, enviar o formulário, salvar os dados do formulário etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424953?quality=12&learn=on&captions=por_br)

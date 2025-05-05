@@ -25,4 +25,4 @@ Saiba como migrar outras soluções da Adobe para as novas credenciais de servid
 Embora as credenciais da Conta de serviço (JWT) tenham sido marcadas como obsoletas, elas continuarão a funcionar até 27 de janeiro de 2025. Portanto, você deve migrar seu aplicativo ou integração para usar a nova credencial OAuth de servidor para servidor antes de 27 de janeiro de 2025. Para obter mais informações, consulte o [guia de migração](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449243/?learn=on&captions=por_br)
