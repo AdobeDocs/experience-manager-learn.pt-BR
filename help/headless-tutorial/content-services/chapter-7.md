@@ -27,7 +27,7 @@ O uso do [Android](https://developer.android.com/) não é muito importante, e o
 
 O Android é usado como tutorial devido à capacidade de executar um Android Emulator no Windows, macOs e Linux, sua popularidade e que pode ser escrito como Java, uma linguagem bem compreendida pelos desenvolvedores do AEM.
 
-*O objetivo do tutorial para o aplicativo móvel do Android é&#x200B;**não**instruir como criar aplicativos do Android Mobile ou transmitir práticas recomendadas de desenvolvimento do Android AEM, mas sim ilustrar como o Content Services pode ser consumido de um aplicativo móvel.*
+*O objetivo do tutorial para o aplicativo móvel do Android é&#x200B;**não**&#x200B;instruir como criar aplicativos do Android Mobile ou transmitir práticas recomendadas de desenvolvimento do Android AEM, mas sim ilustrar como o Content Services pode ser consumido de um aplicativo móvel.*
 
 ### Como o AEM Content Services orienta a experiência do aplicativo móvel
 

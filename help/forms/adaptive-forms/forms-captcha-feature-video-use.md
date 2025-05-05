@@ -43,17 +43,17 @@ Adicionar e usar um CAPTCHA com o AEM Adaptive Forms.
 >Navegue até a id do pacote no sistema de arquivos na instância do autor
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copie os arquivos HMAC e mestre
+>* Copie os arquivos HMAC e mestre
 >
-Abra o [felix web console](http://localhost:4502/system/console/bundles) na sua instância de publicação. Pesquise por pacote com.adobe.granite.crypto.file. Observe a id do pacote
+>Abra o [felix web console](http://localhost:4502/system/console/bundles) na sua instância de publicação. Pesquise por pacote com.adobe.granite.crypto.file. Observe a id do pacote
 >
-Navegue até a id do pacote no sistema de arquivos da instância de publicação
+>Navegue até a id do pacote no sistema de arquivos da instância de publicação
 >
-* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* exclua os arquivos HMAC e master existentes.
-* cole os arquivos HMAC e mestres copiados da instância do autor
+>* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
+>* exclua os arquivos HMAC e master existentes.
+>* cole os arquivos HMAC e mestres copiados da instância do autor
 >
-Reinicie o servidor de publicação do AEM
+>Reinicie o servidor de publicação do AEM
 
 ## Materiais de suporte {#supporting-materials}
 

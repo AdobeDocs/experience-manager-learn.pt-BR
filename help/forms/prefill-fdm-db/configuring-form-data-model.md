@@ -58,8 +58,8 @@ A primeira etapa na criação do modelo de dados de formulário RDBMS é configu
 * ![obter-serviço](assets/get-service.png)
 >[!NOTE]
 > O serviço get espera um valor mapeado para a coluna empID da entidade nova. Há várias maneiras de transmitir esse valor e, neste tutorial, a empID é passada pelo parâmetro de solicitação chamado empID.
-* Clique em _Concluído_ para salvar os argumentos para o serviço get
-* Clique em _Concluído_ para salvar as alterações no modelo de dados de formulário
+>* Clique em _Concluído_ para salvar os argumentos para o serviço get
+>* Clique em _Concluído_ para salvar as alterações no modelo de dados de formulário
 
 ## Adicionar associação entre 2 entidades
 

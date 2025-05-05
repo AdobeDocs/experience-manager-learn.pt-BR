@@ -59,7 +59,7 @@ Quando um ativo no AEM é excluído, a referência ao registro de armazenamento 
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-#### [Manutenção do Log de Auditoria](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [Manutenção do Log de Auditoria] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 Eventos AEM qualificados para registro de auditoria geram muitos dados arquivados. Esses dados podem crescer rapidamente com o tempo devido a replicações, uploads de ativos e outras atividades do sistema.
 

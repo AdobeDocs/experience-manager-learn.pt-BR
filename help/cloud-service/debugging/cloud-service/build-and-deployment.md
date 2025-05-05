@@ -207,6 +207,7 @@ Para validar esse problema, é a causa do comportamento com falha:
 1. Determinando que pelo menos um pacote de conteúdo faça parte da implantação, grava em `/var`.
 1. Verifique se a fila de distribuição primária (em negrito) está bloqueada em:
    + Autor do AEM > Ferramentas > Implantação > Distribuição
+
      ![Fila de distribuição bloqueada](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. Ao falhar na implantação subsequente, baixe os logs &quot;Implantar em&quot; da Cloud Manager usando o botão Baixar log:
 

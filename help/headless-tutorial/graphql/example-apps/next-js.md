@@ -263,15 +263,15 @@ O aplicativo Next.js usa duas páginas para apresentar os dados de aventura.
 
 + `src/pages/index.js`
 
-  Usa getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) do [Next.js para chamar `getAllAdventures()` e exibe cada aventura como um cartão.
+  Usa getServerSideProps() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) do Next.js para chamar `getAllAdventures()` e exibe cada aventura como um cartão.
 
   O uso do `getServerSiteProps()` permite a Renderização no Servidor desta página Next.js.
 
 + `src/pages/adventures/[...slug].js`
 
-  Uma [Rota Dinâmica Next.js](https://nextjs.org/docs/routing/dynamic-routes) que exibe os detalhes de uma única aventura. Essa rota dinâmica busca previamente os dados de cada aventura usando getStaticProps()](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) do [Next.js por meio de uma chamada para `getAdventureBySlug(slug, queryVariables)` usando o parâmetro `slug` transmitido por meio da seleção de aventura na página `adventures/index.js` e `queryVariables` para controlar o formato, a largura e a qualidade da imagem.
+  Uma [Rota Dinâmica Next.js](https://nextjs.org/docs/routing/dynamic-routes) que exibe os detalhes de uma única aventura. Essa rota dinâmica busca previamente os dados de cada aventura usando getStaticProps() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) do Next.js por meio de uma chamada para `getAdventureBySlug(slug, queryVariables)` usando o parâmetro `slug` transmitido por meio da seleção de aventura na página `adventures/index.js` e `queryVariables` para controlar o formato, a largura e a qualidade da imagem.
 
-  A rota dinâmica pode obter previamente os detalhes de todas as aventuras usando getStaticPaths()](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) do [Next.js e preenchendo todas as permutas de rotas possíveis com base na lista completa de aventuras retornadas pela consulta do GraphQL `getAdventurePaths()`
+  A rota dinâmica pode obter previamente os detalhes de todas as aventuras usando getStaticPaths() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) do Next.js e preenchendo todas as permutas de rotas possíveis com base na lista completa de aventuras retornadas pela consulta do GraphQL `getAdventurePaths()`
 
   O uso de `getStaticPaths()` e `getStaticProps(..)` permitiu a Geração de Site Estático dessas páginas Next.js.
 

@@ -35,7 +35,7 @@ Inicie seu projeto aem-banking no IntelliJ. Crie um servlet chamado GetFieldChoi
 
 ## Servlet de amostra
 
-O seguinte servlet está associado ao tipo de recurso Sling: _**azure/fetchchoices**_
+O seguinte servlet está associado ao tipo de recurso Sling: _&#x200B;**azure/fetchchoices**&#x200B;_
 
 
 

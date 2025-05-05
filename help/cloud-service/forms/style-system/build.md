@@ -29,7 +29,7 @@ O terceiro botão terá o estilo padrão aplicado.
 
 ## Criar o projeto de tema
 
-A próxima etapa é criar o projeto de tema. Navegue até a pasta raiz do projeto de tema e execute o comando _**npm run build**_, conforme mostrado na captura de tela abaixo.
+A próxima etapa é criar o projeto de tema. Navegue até a pasta raiz do projeto de tema e execute o comando _&#x200B;**npm run build**&#x200B;_, conforme mostrado na captura de tela abaixo.
 
 ![tema de compilação](assets/build-theme.png)
 

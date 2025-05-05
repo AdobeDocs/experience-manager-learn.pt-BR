@@ -23,4 +23,4 @@ ht-degree: 0%
 * Baixe e implante o pacote usando o console da Web OSGi[Pacote de serviços de documento personalizados](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Baixe e implante o pacote usando o console da Web OSGi [Desenvolvimento com o Conjunto de Usuários de Serviço](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Baixe e implante o pacote usando o console OSGi da Web[importe dados do arquivo pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Adicione a entrada _**DevelopingWithServiceUser.core:getresourceresolver=data**_ no console de configuração OSGi do _**Serviço Mapeador do Usuário do Apache Sling Service**_
+* Adicione a entrada _&#x200B;**DevelopingWithServiceUser.core:getresourceresolver=data**&#x200B;_ no console de configuração OSGi do _&#x200B;**Serviço Mapeador do Usuário do Apache Sling Service**&#x200B;_

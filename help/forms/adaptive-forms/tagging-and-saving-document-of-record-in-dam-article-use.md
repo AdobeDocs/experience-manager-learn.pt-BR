@@ -28,7 +28,7 @@ O caso de uso é o seguinte:
 * No envio do formulário, um fluxo de trabalho do AEM é acionado. Esse fluxo de trabalho marca o documento com o estado civil (Único) e o status empregatício (Aposentado) e armazena o documento no DAM.
 * Depois que o documento for armazenado no DAM, o administrador poderá pesquisar o documento por essas tags. Por exemplo, a pesquisa em Único ou Aposentado buscaria os DoRs apropriados.
 
-Para atender a esse caso de uso, uma etapa de processo personalizada foi escrita. Nesta etapa, buscamos os valores dos elementos de dados apropriados nos dados enviados. Em seguida, construímos o bloco da tag usando esse valor. Por exemplo, se o valor do elemento de estado civil for &quot;Único&quot;, o título da tag se tornará **Pico:StatusEmprego/Único. **Usando a API do TagManager, localizamos a tag e a aplicamos ao DoR.
+Para atender a esse caso de uso, uma etapa de processo personalizada foi escrita. Nesta etapa, buscamos os valores dos elementos de dados apropriados nos dados enviados. Em seguida, construímos o bloco da tag usando esse valor. Por exemplo, se o valor do elemento de estado civil for &quot;Único&quot;, o título da tag se tornará **Pico:StatusEmprego/Único. &#x200B;** Usando a API do TagManager, localizamos a tag e a aplicamos ao DoR.
 
 Este é o código completo para marcar e armazenar o documento de registro no AEM DAM.
 

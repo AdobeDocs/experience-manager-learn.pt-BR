@@ -35,9 +35,9 @@ Normalmente, você instalaria o pacote de terceiros, pacote esse *está disponí
 
 Por exemplo:
 
-- Os [Componentes Principais do AEM WCM](https://github.com/adobe/aem-core-wcm-components) **pacote** foram adicionados como uma dependência no arquivo ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` do [projeto WKND. Aqui, o escopo `provided` é usado, pois o conjunto de componentes principais WCM do AEM é fornecido pelo tempo de execução do AEM. Se o pacote não for fornecido pelo tempo de execução do AEM, você usaria o escopo `compile` e esse é o escopo padrão.
+- Os [Componentes Principais do AEM WCM](https://github.com/adobe/aem-core-wcm-components) **pacote** foram adicionados como uma dependência no arquivo [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` do projeto WKND. Aqui, o escopo `provided` é usado, pois o conjunto de componentes principais WCM do AEM é fornecido pelo tempo de execução do AEM. Se o pacote não for fornecido pelo tempo de execução do AEM, você usaria o escopo `compile` e esse é o escopo padrão.
 
-- [WKND Compartilhado](https://github.com/adobe/aem-guides-wknd-shared) **pacote** é adicionado como uma dependência no arquivo ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` do [projeto WKND.
+- [WKND Compartilhado](https://github.com/adobe/aem-guides-wknd-shared) **pacote** é adicionado como uma dependência no arquivo [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` do projeto WKND.
 
 
 

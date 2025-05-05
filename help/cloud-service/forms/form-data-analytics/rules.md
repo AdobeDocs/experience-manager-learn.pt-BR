@@ -31,7 +31,7 @@ Na propriedade Tags, criamos duas novas [regras](https://experienceleague.adobe.
 
 A regra **Erro de validação de campo** é acionada sempre que há erro de validação no campo de formulário adaptável. Por exemplo, em nosso formulário, se o número de telefone ou o email não estiver no formato esperado, uma mensagem de erro de validação será exibida.
 
-A regra Erro de Validação de Campo é configurada definindo o evento como _**Adobe Experience Manager Forms-Error**_ conforme mostrado na captura de tela
+A regra Erro de Validação de Campo é configurada definindo o evento como _&#x200B;**Adobe Experience Manager Forms-Error**&#x200B;_ conforme mostrado na captura de tela
 
 
 
@@ -45,11 +45,11 @@ O Adobe Analytics - Definir variáveis é configurado da seguinte maneira
 
 A regra de Envio de formulário é acionada toda vez que um Formulário adaptável é enviado com êxito.
 
-A regra de Envio de Formulário é configurada usando o evento _**Adobe Experience Manager Forms - Enviar**_
+A regra de Envio de Formulário é configurada usando o evento _&#x200B;**Adobe Experience Manager Forms - Enviar**&#x200B;_
 
 ![regra de envio de formulário](assets/form-submit-rule.png)
 
-Na regra de Envio de Formulário, o valor do elemento de dados _**ApplicantsStateOfResidence**_ é mapeado para prop5 e o valor do elemento de dados FormTitle é mapeado para prop8.
+Na regra de Envio de Formulário, o valor do elemento de dados _&#x200B;**ApplicantsStateOfResidence**&#x200B;_ é mapeado para prop5 e o valor do elemento de dados FormTitle é mapeado para prop8.
 
 As variáveis Adobe Analytics - Set são configuradas da seguinte maneira.
 ![formulário-envio-regra-conjunto-variáveis](assets/form-submit-set-variable.png)

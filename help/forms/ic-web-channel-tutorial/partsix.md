@@ -37,7 +37,7 @@ Nesta parte, criaremos a Comunicação interativa para o canal da Web.
    1. Desmarque a caixa de seleção Print channel. Não estamos criando o documento para o canal de impressão.
    1. Web: selecione esta opção para gerar o documento para o canal Web
    1. Comunicação Interativa: Modelo: **global>RetirementAccountStatement** t(Este é o modelo criado na etapa anterior)
-   1. Tema:** Tema de referência ->Canvas 2.0**
+   1. Tema:**&#x200B; Tema de referência ->Canvas 2.0**
 
 1. Toque em Criar
 1. Você pode clicar em Concluído ou Editar para fechar a caixa de diálogo.

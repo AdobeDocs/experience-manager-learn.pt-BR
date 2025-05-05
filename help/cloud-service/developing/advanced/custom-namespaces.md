@@ -33,7 +33,7 @@ Os namespaces personalizados são a parte opcional de uma propriedade JCR que pr
 
 Os namespaces podem ser usados para denotar o escopo e a intenção de uma propriedade. A criação de um namespace personalizado, geralmente o nome da sua empresa, ajuda a identificar claramente os nós ou propriedades específicos da sua implementação do AEM e contém dados específicos da sua empresa.
 
-Os namespaces personalizados são gerenciados nos scripts [Inicialização do Repositório de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e são implantados no AEM as a Cloud Service como configurações OSGi - e adicionados ao projeto [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) `ui.config` do seu projeto do AEM.
+Os namespaces personalizados são gerenciados nos scripts [Inicialização do Repositório de Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e são implantados no AEM as a Cloud Service como configurações OSGi - e adicionados ao projeto [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) `ui.config` do seu projeto do AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 

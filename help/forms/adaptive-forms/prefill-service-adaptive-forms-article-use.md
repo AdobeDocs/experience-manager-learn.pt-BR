@@ -139,7 +139,7 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 
 Para testar esse recurso no servidor, execute o seguinte procedimento
 
-* Verifique se as informações de perfil](http://localhost:4502/security/users.html) do [usuário logado estão preenchidas. O exemplo procura as propriedades FirstName, LastName e Email do usuário conectado.
+* Verifique se as informações de perfil[&#128279;](http://localhost:4502/security/users.html) do usuário logado estão preenchidas. O exemplo procura as propriedades FirstName, LastName e Email do usuário conectado.
 * [Baixe e extraia o conteúdo do arquivo zip no seu computador](assets/prefillservice.zip)
 * Implante o pacote prefill.core-1.0.0-SNAPSHOT usando o [console da Web do AEM](http://localhost:4502/system/console/bundles)
 * Importe o formulário adaptável usando a opção Criar | Carregamento de Arquivo da [seção FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)

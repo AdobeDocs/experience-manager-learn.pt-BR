@@ -220,6 +220,7 @@ Entretanto, se você quiser descobrir você mesmo, precisará de uma calculadora
 
    - Cada conta de transmissão de vídeo tem dezenas de predefinições prontas para uso e, se você criar suas próprias predefinições personalizadas, também as verá aqui.
    - Você pode filtrar por tipo usando o menu suspenso. As predefinições são divididas em Computador, Dispositivo móvel e Tablet.
+
      ![imagem](assets/video-overview/video-overview-4.jpg)
 
 2. A coluna Ativo permite escolher se deseja exibir todas as predefinições durante o upload ou apenas aquelas escolhidas. Se você estiver nos EUA, convém desmarcar as predefinições PAL europeias e, se estiver no Reino Unido/EMEA, desmarque as predefinições NTSC.

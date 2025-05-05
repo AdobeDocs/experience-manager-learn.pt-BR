@@ -92,7 +92,7 @@ A primeira etapa é inspecionar as dependências do Maven para oferecer suporte 
 1. Apache Sling Mocks
 1. Estrutura de teste AEM Mocks (by io.wcm)
 
-As dependências de teste **JUnit5**, **Mockito e **AEM Mocks** são adicionadas automaticamente ao projeto durante a instalação usando o [arquétipo AEM Maven](project-setup.md).
+As dependências de teste **JUnit5**, **Mockito e &#x200B;** AEM Mocks** são adicionadas automaticamente ao projeto durante a instalação usando o [arquétipo AEM Maven](project-setup.md).
 
 1. Para exibir essas dependências, abra o POM do Reator Pai em **aem-guides-wknd/pom.xml**, navegue até `<dependencies>..</dependencies>` e exiba as dependências para JUnit, Mockito, Apache Sling Mocks e AEM Mock Tests de io.wcm em `<!-- Testing -->`.
 1. Verifique se `io.wcm.testing.aem-mock.junit5` está definido como **4.1.0**:
@@ -219,7 +219,7 @@ O TDD no contexto do AEM requer um nível de conhecimento e é melhor adotado po
 
 A maioria dos códigos escritos para o AEM depende de APIs JCR, Sling ou AEM, que, por sua vez, exigem o contexto de um AEM em execução para ser executado corretamente.
 
-Como os testes de unidade são executados na criação, fora do contexto de uma instância do AEM em execução, esse contexto não existe. Para facilitar isso, o AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) do [wcm.io cria um contexto de simulação que permite que essas APIs _na maioria_ atuem como se estivessem em execução no AEM.
+Como os testes de unidade são executados na criação, fora do contexto de uma instância do AEM em execução, esse contexto não existe. Para facilitar isso, o AEM Mocks[&#128279;](https://wcm.io/testing/aem-mock/usage.html) do wcm.io cria um contexto de simulação que permite que essas APIs _na maioria_ atuem como se estivessem em execução no AEM.
 
 1. Crie um contexto AEM usando **wcm.io&#39;s** `AemContext` em **BylineImplTest.java** adicionando-o como uma extensão JUnit decorada com `@ExtendWith` ao arquivo **BylineImplTest.java**. A extensão cuida de todas as tarefas de inicialização e limpeza necessárias. Crie uma variável de classe para `AemContext` que possa ser usada para todos os métodos de teste.
 
@@ -463,7 +463,7 @@ Lembre-se de que esse método deve retornar uma lista de ocupações classificad
 
    ![Obter passagem de Ocupações](assets/unit-testing/testgetoccupations-pass.png)
 
-   *passagens de {testGetOccupations()*
+   *passagens de &lbrace;testGetOccupations()*
 
 ## Testando isEmpty() {#testing-is-empty}
 

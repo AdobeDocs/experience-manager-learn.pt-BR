@@ -28,6 +28,7 @@ ht-degree: 0%
    * Localizar o arquivo `resources/credentials/server_credentials.json`
    * Abra-o e **atualize as credenciais** específicas do seu ambiente.
    * Certifique-se de que inclua valores válidos para:
+
      `clientId`, `clientSecret`,`adobeIMSV3TokenEndpointURL` e
      `scopes`
 

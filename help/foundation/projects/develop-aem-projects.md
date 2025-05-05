@@ -69,7 +69,7 @@ Um exemplo de assistente personalizado pode ser encontrado para o Modelo de proj
 
 ### Gadgets {#gadgets}
 
-Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os Blocos de Projeto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. **Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
+Não há propriedades adicionais nesse nó, mas os filhos do nó gadgets controlam quais Blocos de projeto preenchem o painel do projeto quando um novo projeto é criado. [Os Blocos de Projeto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (também conhecidos como gadgets ou pods) são cartões simples que preenchem o local de trabalho de um Projeto. Uma lista completa de blocos ootb pode ser encontrada em: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Os proprietários do projeto sempre podem adicionar/remover blocos após a criação de um projeto.
 
 ### Funções {#roles}
 
@@ -77,7 +77,7 @@ Há três [Funções padrão](https://experienceleague.adobe.com/en/docs/experie
 
 ### Fluxos de trabalhos {#workflows}
 
-Um dos motivos mais atraentes para criar um modelo de projeto personalizado é que ele oferece a capacidade de configurar os fluxos de trabalho disponíveis para uso com o projeto. Eles podem usar workflows OOTB ou personalizados. Abaixo do nó **workflows**, deve haver um nó **models** (também `nt:unstructured`) e nós filhos abaixo de especificar os modelos de fluxo de trabalho disponíveis. A propriedade **modelId **aponta para o modelo de fluxo de trabalho em /etc/workflow e a propriedade **wizard** aponta para a caixa de diálogo usada ao iniciar o fluxo de trabalho. Uma vantagem significativa dos Projetos é a capacidade de adicionar uma caixa de diálogo personalizada (assistente) para capturar metadados específicos de negócios no início do fluxo de trabalho que podem impulsionar outras ações dentro do fluxo de trabalho.
+Um dos motivos mais atraentes para criar um modelo de projeto personalizado é que ele oferece a capacidade de configurar os fluxos de trabalho disponíveis para uso com o projeto. Eles podem usar workflows OOTB ou personalizados. Abaixo do nó **workflows**, deve haver um nó **models** (também `nt:unstructured`) e nós filhos abaixo de especificar os modelos de fluxo de trabalho disponíveis. A propriedade **modelId &#x200B;** aponta para o modelo de fluxo de trabalho em /etc/workflow e a propriedade **wizard** aponta para a caixa de diálogo usada ao iniciar o fluxo de trabalho. Uma vantagem significativa dos Projetos é a capacidade de adicionar uma caixa de diálogo personalizada (assistente) para capturar metadados específicos de negócios no início do fluxo de trabalho que podem impulsionar outras ações dentro do fluxo de trabalho.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -290,7 +290,7 @@ A primeira etapa é criar uma Tarefa para concluir a edição de um conteúdo. P
 
 Quando a primeira tarefa for concluída, o destinatário terá três opções para rotear o workflow:
 
-**Normal **- o roteamento normal cria uma tarefa atribuída ao grupo Aprovador do projeto para análise e aprovação. A prioridade da tarefa é Normal e o prazo é de cinco dias a partir de quando ela é criada.
+**Normal &#x200B;**- o roteamento normal cria uma tarefa atribuída ao grupo Aprovador do projeto para análise e aprovação. A prioridade da tarefa é Normal e o prazo é de cinco dias a partir de quando ela é criada.
 
 **Atrasar** - o roteamento apressado também cria uma tarefa atribuída ao grupo de Aprovadores do projeto. A prioridade da tarefa é Alta e o prazo é de apenas um dia.
 
@@ -391,7 +391,7 @@ Localização do modelo de fluxo de trabalho no 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. Na etapa anterior, referenciamos um script de tarefa de pré-criação. Criaremos esse script agora no qual definiremos o Destinatário da tarefa com base no valor de um valor de metadados de fluxo de trabalho &quot;**destinatário**&quot;. O valor **&quot;destinatário&quot;** é definido quando o fluxo de trabalho é iniciado. Também leremos os metadados do fluxo de trabalho para escolher dinamicamente a prioridade da tarefa lendo o valor &quot;**taskPriority&quot;** dos metadados do fluxo de trabalho, bem como o **&quot;taskDueDate&quot; **para definir dinamicamente quando a primeira tarefa vencer.
+1. Na etapa anterior, referenciamos um script de tarefa de pré-criação. Criaremos esse script agora no qual definiremos o Destinatário da tarefa com base no valor de um valor de metadados de fluxo de trabalho &quot;**destinatário**&quot;. O valor **&quot;destinatário&quot;** é definido quando o fluxo de trabalho é iniciado. Também leremos os metadados do fluxo de trabalho para escolher dinamicamente a prioridade da tarefa lendo o valor &quot;**taskPriority&quot;** dos metadados do fluxo de trabalho, bem como o **&quot;taskDueDate&quot; &#x200B;** para definir dinamicamente quando a primeira tarefa vencer.
 
    Para fins organizacionais, criamos uma pasta abaixo da pasta do aplicativo para armazenar todos os scripts relacionados ao projeto: **/apps/aem-guides/projects-tasks/projects/scripts**. Crie um arquivo abaixo desta pasta chamado **&quot;start-task-config.ecma&quot;**. &#42;Observe que o caminho para o arquivo start-task-config.ecma corresponde ao caminho definido na guia Configurações Avançadas na Etapa 4.
 
@@ -522,7 +522,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Arraste e solte um componente ** Sem operação ** na ramificação mais à direita (ramificação 3). O componente de Nenhuma operação não executa nenhuma ação e avançará imediatamente, representando o desejo do editor original de ignorar a etapa de aprovação. Tecnicamente, podemos deixar essa Ramificação sem etapas do fluxo de trabalho, mas, como prática recomendada, adicionaremos uma etapa Sem operação. Isso deixa claro para outros desenvolvedores qual é a finalidade da Ramificação 3.
+1. Arraste e solte um componente **&#x200B; Sem operação &#x200B;** na ramificação mais à direita (ramificação 3). O componente de Nenhuma operação não executa nenhuma ação e avançará imediatamente, representando o desejo do editor original de ignorar a etapa de aprovação. Tecnicamente, podemos deixar essa Ramificação sem etapas do fluxo de trabalho, mas, como prática recomendada, adicionaremos uma etapa Sem operação. Isso deixa claro para outros desenvolvedores qual é a finalidade da Ramificação 3.
 
    Clique duas vezes na etapa do fluxo de trabalho e configure o Título e a Descrição:
 

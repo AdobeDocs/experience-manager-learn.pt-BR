@@ -48,7 +48,7 @@ Certifique-se de especificar as permissões apropriadas e a data final apropriad
 
 ## Fornecer o token SAS de blob e o URI de armazenamento
 
-Para tornar o código mais genérico, as duas propriedades podem ser configuradas usando a configuração OSGi, como mostrado abaixo. O _**aemformstutorial**_ é o nome da conta de armazenamento, _**formsubmissions**_ é o contêiner no qual os dados serão armazenados.
+Para tornar o código mais genérico, as duas propriedades podem ser configuradas usando a configuração OSGi, como mostrado abaixo. O _&#x200B;**aemformstutorial**&#x200B;_ é o nome da conta de armazenamento, _&#x200B;**formsubmissions**&#x200B;_ é o contêiner no qual os dados serão armazenados.
 Verifique se você tem / no final do URI de armazenamento e se o token SAS começa com?
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 

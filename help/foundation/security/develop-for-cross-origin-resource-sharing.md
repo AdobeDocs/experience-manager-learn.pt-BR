@@ -31,7 +31,7 @@ Neste vídeo:
 
 * **www.example.com** mapeia para localhost via `/etc/hosts`
 * **aem-publish.local** mapeia para localhost via `/etc/hosts`
-* SimpleHTTPServer (um wrapper do SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de [[!DNL Python]) está servindo a página do HTML pela porta 8000.
+* SimpleHTTPServer (um wrapper do SimpleHTTPServer[&#128279;](https://docs.python.org/2/library/simplehttpserver.html) de [!DNL Python]) está servindo a página do HTML pela porta 8000.
    * _Não está mais disponível no Mac App Store. Usar similar, como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] está em execução em [!DNL Apache HTTP Web Server] 2.4 e solicitação de proxy reverso para `aem-publish.local` para `localhost:4503`.
 

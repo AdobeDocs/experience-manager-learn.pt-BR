@@ -28,7 +28,7 @@ A forma mais básica de depuração de trabalhadores do Asset Compute usa instru
 
 Estas instruções de log estão disponíveis para revisão de forma diferente com base em como o worker do Asset Compute é executado:
 
-+ De `aio app run`, os logs são impressos no padrão e os ](../develop/development-tool.md) Logs de Ativação da [Ferramenta de Desenvolvimento
++ De `aio app run`, os logs são impressos no padrão e os [&#128279;](../develop/development-tool.md) Logs de Ativação da Ferramenta de Desenvolvimento
   ![aio app run console.log(...)](./assets/debug/console-log__aio-app-run.png)
 + De `aio app test`, logs são impressos em `/build/test-results/test-worker/test.log`
   ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
@@ -98,6 +98,7 @@ _Click-through de depuração de um trabalhador do Asset Compute usando wskdebug
 1. Verifique se as [variáveis de ambiente específicas do espaço de trabalho](../deploy/runtime.md) estão definidas via `AIO_runtime_namespace` e `AIO_runtime_auth`, com base no espaço de trabalho que requer depuração.
 1. Na linha de comando, execute `aio app logs`
    + Se o espaço de trabalho estiver com tráfego intenso, expanda o número de logs de ativação por meio do sinalizador `--limit`:
+
      `$ aio app logs --limit=25`
 1. Os logs de ativações mais recentes (até o `--limit` fornecido) são retornados como a saída do comando para revisão.
 

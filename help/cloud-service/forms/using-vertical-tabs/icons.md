@@ -134,7 +134,7 @@ Implante o componente de guias verticais atualizado na instância da nuvem.
 Implante o tema atualizado usando o pipeline de front-end.
 Crie uma variação de estilo para os componentes de guia vertical, como mostrado abaixo
 ![variação de estilo](assets/verticaltab-style-variation.png)
-Criamos uma variação de estilo chamada Marketing que está associada à classe css _**cmp-verticaltabs—marketing**_.
+Criamos uma variação de estilo chamada Marketing que está associada à classe css _&#x200B;**cmp-verticaltabs—marketing**&#x200B;_.
 Crie um formulário adaptável com um componente de guia vertical. Associe o componente de guia vertical à variação de estilo de marketing.
 Adicione algumas guias às guias verticais e nomeie-as para corresponder às imagens definidas no mapa de ícones, como página inicial, família.
 ![ícone da página inicial](assets/tab-name.png)

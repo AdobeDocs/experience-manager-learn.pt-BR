@@ -87,7 +87,7 @@ O estilo padrão é geralmente o estilo mais usado do componente e a exibição 
 
 Dependendo da semelhança de estilo padrão, o CSS pode ser aplicado diretamente no `.cmp-teaser` (sem modificadores) ou em um `.cmp-teaser--default`.
 
-Se as regras de estilo padrão se aplicam com mais frequência do que não a todas as variações, é melhor usar `.cmp-teaser` como as classes CSS do estilo padrão, já que todas as variações devem herdá-las implicitamente, assumindo que as convenções do tipo BEM são seguidas. Caso contrário, eles devem ser aplicados por meio do modificador padrão, como `.cmp-teaser--default`, que por sua vez precisa ser adicionado ao campo Classes CSS Padrão](#component-styles-configuration) da configuração de estilo do componente [, caso contrário, essas regras de estilo terão que ser substituídas em cada variação.
+Se as regras de estilo padrão se aplicam com mais frequência do que não a todas as variações, é melhor usar `.cmp-teaser` como as classes CSS do estilo padrão, já que todas as variações devem herdá-las implicitamente, assumindo que as convenções do tipo BEM são seguidas. Caso contrário, eles devem ser aplicados por meio do modificador padrão, como `.cmp-teaser--default`, que por sua vez precisa ser adicionado ao campo Classes CSS Padrão[&#128279;](#component-styles-configuration) da configuração de estilo do componente , caso contrário, essas regras de estilo terão que ser substituídas em cada variação.
 
 É possível até mesmo atribuir um estilo &quot;nomeado&quot; como o estilo padrão, por exemplo, o estilo Hero `(.cmp-teaser--hero)` definido abaixo, no entanto, é mais claro implementar o estilo padrão contra as implementações de classe CSS `.cmp-teaser` ou `.cmp-teaser--default`.
 

@@ -127,7 +127,7 @@ A Ferramenta de Desenvolvimento do Asset Compute pode entrar em um estado em que
 
 ### O trabalhador atinge o tempo limite durante a depuração{#worker-times-out-while-debugging}
 
-+ __Erro__: o Console de Depuração relata &quot;O tempo limite da ação será de -XXX milissegundos&quot; ou a pré-visualização da representação ](./develop/development-tool.md) da Ferramenta de Desenvolvimento do Asset Compute gira indefinidamente ou[
++ __Erro__: o Console de Depuração relata &quot;O tempo limite da ação será de -XXX milissegundos&quot; ou a pré-visualização da representação [&#128279;](./develop/development-tool.md) da Ferramenta de Desenvolvimento do Asset Compute gira indefinidamente ou
 + __Causa__: o tempo limite do trabalhador conforme definido em [manifest.yml](./develop/manifest.md) foi excedido durante a depuração.
 + __Solução__: aumente temporariamente o tempo limite do trabalhador no [manifest.yml](./develop/manifest.md) ou acelere as atividades de depuração.
 

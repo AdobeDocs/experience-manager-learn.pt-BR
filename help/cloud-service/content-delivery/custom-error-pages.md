@@ -346,7 +346,7 @@ Em seguida, configure a regra CDN (errorPages) e faça referência aos arquivos 
 
 Vamos configurar a regra de CDN `errorPages` que usa os arquivos estáticos acima para renderizar o conteúdo da página de erro de CDN.
 
-1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto [WKND.
+1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto WKND.
 
 1. Adicionar a seguinte regra CDN ao arquivo `cdn.yaml`:
 

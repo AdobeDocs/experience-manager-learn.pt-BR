@@ -155,9 +155,11 @@ Em seguida, crie uma tabela para criar uma representação visual de como os usu
 1. Vamos analisar a página por seu tipo de modelo. Selecione a métrica de modelo de página dos componentes e arraste e solte a métrica Modelo de página na dimensão Nome da página. Agora é possível exibir o nome da página detalhado por seu tipo de modelo.
 
    * **Antes**
+
      ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Depois**
+
      ![Métricas do eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Para entender como os usuários interagem com os botões do CTA quando estão nas páginas do site da WKND, é necessário detalhar ainda mais adicionando a métrica ID de botão (eVar8).
@@ -245,8 +247,10 @@ Em seguida, vamos baixar o Modelo de classificação para a variável Button Id 
 1. No localizador de componentes, pesquise por **Botões do WKND CTA** e arraste e solte a dimensão **Botões do WKND CTA (Id de Botão)** na métrica Id de Botão e substitua-a.
 
    * **Antes**
+
      ![Botão do Workspace Antes](assets/create-analytics-workspace/wknd-button-before.png)
    * **Depois**
+
      Botão ![Workspace Depois](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. É possível observar que a métrica da ID do botão que continha a ID do botão de um botão de Chamada para ação (CTA) agora é substituída por um nome correspondente fornecido no modelo de classificação.
