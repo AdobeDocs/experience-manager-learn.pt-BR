@@ -1,15 +1,15 @@
 ---
-title: Vídeos e tutoriais do AEM Sites
-description: O Adobe Experience Manager (AEM) Sites é uma plataforma de gerenciamento de experiência líder. Este guia do usuário contém vídeos e tutoriais sobre os vários recursos e funcionalidades do AEM Sites.
+title: Vídeos e Tutorials do AEM Sites
+description: Navegue por vídeos e tutoriais sobre os recursos e as funcionalidades do Adobe Experience Manager Sites. O AEM Sites é uma plataforma líder em gerenciamento de experiência.
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 5bd752ec257763e6d5da99c3da4b44fa9a43fd25
+source-git-commit: 85472bce41e7d2911bcb15d1ec70be2b094012fc
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
@@ -52,7 +52,7 @@ Saiba mais sobre cada um dos três caminhos a serem criados com o AEM Sites por 
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional Sites - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
@@ -62,7 +62,7 @@ Saiba mais sobre cada um dos três caminhos a serem criados com o AEM Sites por 
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with EDS.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
@@ -120,7 +120,7 @@ Saiba mais sobre cada um dos três caminhos a serem criados com o AEM Sites por 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - tutoriais" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - tutoriais" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/headless.png" alt="Headless/API-First - tutoriais"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -129,11 +129,11 @@ Saiba mais sobre cada um dos três caminhos a serem criados com o AEM Sites por 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - tutoriais">Headless/API-First - tutoriais</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - tutoriais">Headless/API-First - tutoriais</a>
                     </p>
                     <p class="is-size-6">Saiba como criar aplicativos headless alimentados por conteúdo do AEM. Os tutoriais abrangem estruturas como iOS, Android™ e React — escolha o que se encaixa na sua pilha.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
@@ -145,10 +145,10 @@ Saiba mais sobre cada um dos três caminhos a serem criados com o AEM Sites por 
 
 ## Recursos adicionais
 
-* [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/home)
-* [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
+* [Documentação de criação do AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
+* [Documentação de desenvolvimento do AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [Documentação de administração do AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/home)
+* [Documentação de implantação do AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
 * [Tutoriais do AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriais do AEM Assets](/help/assets/overview.md)
 * [Tutoriais do AEM Forms](/help/forms/overview.md)
