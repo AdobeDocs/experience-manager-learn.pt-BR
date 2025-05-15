@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -88,6 +88,10 @@ A etapa de configuração do Projeto ADC é _repetida_ das [APIs do AEM baseadas
 1. Em seguida, na caixa de diálogo _Configurar API_, selecione a opção de autenticação de **Servidor para Servidor** e clique em **Avançar**. A autenticação de servidor para servidor é ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário.
 
    ![Selecionar autenticação](../assets/s2s/select-authentication.png)
+
+   >[!TIP]
+   >
+   >Se você não vir a opção de autenticação de servidor para servidor, significa que o usuário que está configurando a integração não é adicionado como Desenvolvedor ao Perfil do produto ao qual o Serviço está associado. Consulte [Habilitar autenticação de Servidor para Servidor](../setup.md#enable-server-to-server-authentication) para obter mais informações.
 
 1. Renomeie a credencial para facilitar a identificação (se necessário) e clique em **Avançar**. Para fins de demonstração, o nome padrão é usado.
 
