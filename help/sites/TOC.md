@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 17aa4aeb053a0bc0beca5e005185c49cf7a06a67
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 17%
+source-wordcount: '594'
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 # Vídeos e Tutorials do AEM Sites {#sites}
 
 + [Visão geral](overview.md)
-+ Criação de documento {#document-authoring}
++ Criação de documentos {#document-authoring}
    + [Visão geral](document-authoring/overview.md)
    + [Configurar](document-authoring/set-up.md)
    + [Pré-visualizar e publicar](document-authoring/preview-and-publish.md)
@@ -41,7 +41,7 @@ ht-degree: 17%
       + [Migração de site usando o Importador](./document-authoring/how-to/migration-using-importer.md)
       + [Personalização do importador](./document-authoring/how-to/customizing-importer.md)
       + [Importação em massa usando o Importador](./document-authoring/how-to/bulk-importing-using-importer.md)
-      + Gerar Variações{#generate-variations}
+      + Gerar variações{#generate-variations}
          + [Visão geral](./document-authoring/how-to/generate-variations/overview.md)
          + [Configurar Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
          + [Modelos de prompt](./document-authoring/how-to/generate-variations/prompt-templates.md)
@@ -73,12 +73,12 @@ ht-degree: 17%
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
    + [Lançamentos](page-authoring/launches.md)
-   + Aprender com colegas {#expert-advice}
+   + Aprenda com seus colegas {#expert-advice}
       + [Dicas de Hierarquia do Site](page-authoring/expert-advice/site-hierarchy.md)
 + IA gerativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
+   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entrega de fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Tradução de fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,10 +86,10 @@ ht-degree: 17%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR){target=_blank}
+   + [Fragmentos de conteúdo vs. Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
-   + Desenvolvendo{#developing}
+   + Desenvolvimento{#developing}
       + [Pré-requisitos](edge-delivery-services/developing/prerequisites.md)
       + [Modelo do AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Repositório de conteúdo](edge-delivery-services/developing/content-repository.md)
@@ -120,7 +120,7 @@ ht-degree: 17%
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR){target=_blank}
-   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR){target=_blank}
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Extensão das propriedades da página](developing/page-properties-technical-video-develop.md)
    + [Pontos de interrupção responsivos](developing/responsive-breakpoints.md)
    + [Desenvolvimento com o sistema de estilo](developing/style-system-technical-video-understand.md)
@@ -131,7 +131,7 @@ ht-degree: 17%
    + [Compartilhamento em redes sociais](developing/social-media-sharing-technical-video-use.md)
    + [Personalização de ícones de componentes](developing/component-icons-technical-video-develop.md)
 + Personalização {#personalization}
-   + [Integração com o Adobe Target](https://helpx.adobe.com/br/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [Integração com o Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Configurar fragmentos de experiência e o Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Uso de fragmentos de experiência com o Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurar ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -142,9 +142,9 @@ ht-degree: 17%
    + [Console de componentes](components/components-console-feature-video-use.md)
 + SEO {#seo}
    + [Mapas do site](./seo/sitemaps.md)
-+ Aplicativos de Página Única {#spa-editor}
++ Aplicativos de página única {#spa-editor}
    + [Uso do Editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR){target=_blank}
+   + [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Gerenciamento de vários sites {#multi-site-management}
    + [Introdução à cópia de idioma](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
@@ -170,13 +170,13 @@ ht-degree: 17%
       + [Gerar FPIDs](integrations/platform/fpid.md)
       + [Web SDK](integrations/platform/web-sdk.md)
       + [Analytics usando o Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
-   + Marcas no Adobe Experience Platform {#experience-platform-data-collection-tags}
+   + Tags no Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
       + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [Conectar o AEM e a propriedade de tag usando IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [Criar Cloud Service de Tags do AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Depuração de uma implementação de tags](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
-   + Camada de dados de clientes Adobe {#adobe-client-data-layer}
+   + Camada de dados de clientes da Adobe {#adobe-client-data-layer}
       + [Utilização da camada de dados de clientes Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizar a camada de dados do cliente da Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analytics {#analytics}
@@ -192,8 +192,9 @@ ht-degree: 17%
       + [Criar atividade do Target usando ofertas de fragmento de experiência](integrations/adobe-target/create-target-activity.md)
       + [Personalization usando o Visual Experience Composer](integrations/adobe-target/personalization-using-vec.md)
       + [Personalization de experiência completa de página da Web](integrations/adobe-target/personalization-web-page.md)
-+ Aprender com colegas {#expert-resources}
++ Aprenda com seus colegas {#expert-resources}
    + [Visão geral](expert-resources/learn-from-your-peers-overview.md)
+   + [Criação Do Guia De Criação No AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Avaliação de maturidade da AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenção do site](expert-resources/site-maintenance.md)
    + [Dicas e truques do AEM Champion: Sessão 1](expert-resources/champion-tips-1.md)
