@@ -60,5 +60,5 @@ A seguir estão os URLs de amostra do Servidor de imagens do Dynamic Media usado
 
 ## APIs do servidor de imagem do Dynamic Media
 
-* [API de disponibilização e renderização de imagens do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
+* [API de disponibilização e renderização de imagens do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference)
 * [Visualização do Dynamic Media Snapshot](https://snapshot.scene7.com/)
