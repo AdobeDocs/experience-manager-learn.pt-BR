@@ -30,7 +30,7 @@ Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sit
 
 ## Visão geral das alterações de configuração no projeto de pilha completa do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453614?quality=12&learn=on&captions=por_br)
 
 ## Pré-requisitos {#prerequisites}
 
