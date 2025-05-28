@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: b395b3b84e63fe6c24e597d1628f4aed5ba47469
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sit
 
 ## Visão geral das alterações de configuração no projeto de pilha completa do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3453614?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -94,7 +94,7 @@ Há três alterações de configuração relacionadas ao projeto e uma alteraç�
            }),
        new CopyWebpackPlugin({
            patterns: [
-               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site' }
+               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './theme' }
            ]
        })
    ...
@@ -195,7 +195,7 @@ Por fim, envie essas alterações para o repositório Git do Adobe do seu progra
 
 ## Cuidado - _Botão Habilitar pipeline de front-end_
 
-A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) do [Seletor de Painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) mostra o botão **Habilitar Pipeline de Front-End** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar Pipeline de Front-End** substituirá as **configurações do Sling** acima. Verifique se **você não clicou** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
+A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) do [Seletor de Painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra o botão **Habilitar Pipeline de Front-End** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar Pipeline de Front-End** substituirá as **configurações do Sling** acima. Verifique se **você não clicou** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
 
 ![Botão Habilitar pipeline de front-end](assets/enable-front-end-Pipeline-button.png)
 
