@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como o Assistente de IA do AEM simplifica a descoberta de conhecimento sobre o produto e automatiza a criação de tíquetes de suporte.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461921/?learn=on&enablevpops&captions=por_br)

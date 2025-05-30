@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore como os Modelos do Dynamic Media permitem que os profissionais de marketing criem conteúdo ao vivo e personalizável para campanhas personalizadas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459241/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462357/?learn=on&enablevpops&captions=por_br)

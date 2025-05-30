@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como a Geração de experiência permite que profissionais de marketing adaptem conteúdo a vários perfis, canais e regiões geográficas enquanto mantêm o controle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459245/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462406/?learn=on&enablevpops&captions=por_br)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como o BambooHR usou a IA para identificar e corrigir backlinks corrompidos, resultando em um aumento de 4% no tráfego orgânico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461992/?learn=on&enablevpops&captions=por_br)
