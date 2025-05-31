@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Saiba como usar o Dynamic Media no AEM para criar representações virtuais, gerenciar a transparência e automatizar o processamento de imagens para reutilização de conteúdo escalável.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459589/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463050/?learn=on&enablevpops&captions=por_br)
 
 
 ## Exemplo de ativos do Dynamic Media
