@@ -22,4 +22,4 @@ ht-degree: 0%
 
 O AEM Champion Brett Birschbach compartilha as práticas recomendadas para a criação de um guia de criação ao vivo no Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463138/?learn=on&enablevpops&captions=por_br)
