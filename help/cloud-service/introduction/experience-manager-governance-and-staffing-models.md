@@ -134,4 +134,4 @@ Veja a seguir exemplos de funções para um cenário de cliente leve e pesado:
 
 Para um debate mais aprofundado sobre modelos e arquétipos de governança e recrutamento, ouça este painel de debate de uma hora: [Arquétipos de função e criação de uma estrutura operacional para [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=pt-BR).

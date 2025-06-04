@@ -29,7 +29,7 @@ O console de fragmento de conteúdo no AEM (Adobe Experience Manager) é uma int
 
 ![Console de fragmentos de conteúdo](./assets/overview/cfc.png)
 
-O [Console de fragmentos de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) é a interface extensível para listar e gerenciar fragmentos de conteúdo. [As extensões do console de fragmentos de conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) usando o modelo `@adobe/aem-cf-admin-ui-ext-tpl` do App Builder.
+O [Console de fragmentos de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) é a interface extensível para listar e gerenciar fragmentos de conteúdo. [As extensões do console de fragmentos de conteúdo do AEM são criadas](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) usando o modelo `@adobe/aem-cf-admin-ui-ext-tpl` do App Builder.
 
 Os seguintes pontos de extensão do console de fragmentos de conteúdo estão disponíveis:
 

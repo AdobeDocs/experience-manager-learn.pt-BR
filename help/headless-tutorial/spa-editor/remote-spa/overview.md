@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Boas vindas ao tutorial em várias partes para desenvolvedores que desejam ampliar um SPA remoto existente baseado em React (ou Next.js) com conteúdo editável do AEM por meio do editor de SPA do AEM.
 
-Este tutorial baseia-se no [aplicativo em GraphQL da WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), um aplicativo em React que consome conteúdo de fragmentos de conteúdo do AEM nas APIs em GraphQL do AEM. No entanto, ele não fornece nenhuma criação com contexto de conteúdo de SPA.
+Este tutorial baseia-se no [aplicativo em GraphQL da WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo em React que consome conteúdo de fragmentos de conteúdo do AEM nas APIs em GraphQL do AEM. No entanto, ele não fornece nenhuma criação com contexto de conteúdo de SPA.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -47,7 +47,7 @@ O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e consi
 
 Este tutorial requer o seguinte:
 
-+ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=pt-BR)
 + [Node.js v18](https://nodejs.org/pt)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
@@ -65,7 +65,7 @@ Este tutorial pressupõe que você possui:
 
 >[!NOTE]
 >
-> **Precisa de ajuda para configurar o seu ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Precisa de ajuda para configurar o seu ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
 ## &#x200B;1. Configurar o AEM para o editor de SPA
 

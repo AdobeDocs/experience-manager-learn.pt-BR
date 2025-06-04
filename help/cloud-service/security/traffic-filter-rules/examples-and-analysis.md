@@ -163,7 +163,7 @@ No entanto, desta vez, você deve ver as **Solicitações bloqueadas** e os valo
 
 Vamos **prevenir ataques de DoS**, bloqueando solicitações de um endereço IP que envia 100 solicitações por segundo, fazendo com que ele seja bloqueado por 5 minutos.
 
-- Adicione a seguinte [regra de filtro de tráfego de limite de taxa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) no arquivo `/config/cdn.yaml` do projeto da WKND.
+- Adicione a seguinte [regra de filtro de tráfego de limite de taxa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=pt-BR#ratelimit-structure) no arquivo `/config/cdn.yaml` do projeto da WKND.
 
 ```yaml
 kind: CDN
@@ -264,7 +264,7 @@ Observe como os painéis **Distribuição de sinalizadores do WAF** e **Principa
 
 Agora, vamos adicionar uma regra do WAF que contém a propriedade `wafFlags` como parte da propriedade `action` e **bloquear as solicitações simuladas de ataque**.
 
-Da perspectiva da sintaxe, as regras do WAF são semelhantes às vistas anteriormente, mas a propriedade `action` faz referência a um ou mais valores `wafFlags`. Para saber mais sobre `wafFlags`, consulte a seção [Lista de sinalizadores do WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Da perspectiva da sintaxe, as regras do WAF são semelhantes às vistas anteriormente, mas a propriedade `action` faz referência a um ou mais valores `wafFlags`. Para saber mais sobre `wafFlags`, consulte a seção [Lista de sinalizadores do WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=pt-BR#waf-flags-list).
 
 - Adicione a seguinte regra no arquivo `/config/cdn.yaml` do projeto da WKND. Observe que a regra `block-waf-flags` inclui alguns dos wafFlags que apareciam nas ferramentas do painel quando atacados com tráfego mal-intencionado simulado. Na verdade, é uma boa prática ao longo do tempo analisar os logs para determinar quais novas regras devem ser declaradas, à medida que o cenário de ameaças evolui.
 
@@ -352,7 +352,7 @@ Familiarize-se com as [práticas recomendadas](./best-practices.md) para reduzir
 
 ## Recursos adicionais
 
-[Sintaxe das regras de filtro de tráfego](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[Sintaxe das regras de filtro de tráfego](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=pt-BR#rules-syntax)
 
-[Formato de log da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[Formato de log da CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=pt-BR#cdn-log-format)
 

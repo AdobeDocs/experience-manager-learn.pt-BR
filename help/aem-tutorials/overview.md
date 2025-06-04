@@ -22,7 +22,7 @@ O Adobe Experience Manager (AEM) é a plataforma de gerenciamento de experiênci
 + [AEM Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/overview)
 + [AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/forms/overview)
 + [AEM as Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/overview)
-+ [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html)
++ [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/overview.html?lang=pt-BR)
 + [Tutoriais do AEM Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/overview)
 
 ## Tutoriais do AEM em várias etapas

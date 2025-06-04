@@ -23,7 +23,7 @@ ht-degree: 100%
 
 O console de fragmentos de conteúdo do Adobe Experience Manager facilita o gerenciamento e a criação de fragmentos de conteúdo. Saiba como aproveitar ao máximo o console de fragmentos de conteúdo com esses vídeos.
 
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) para obter detalhes completos sobre o console de fragmentos de conteúdo e seus recursos.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) para obter detalhes completos sobre o console de fragmentos de conteúdo e seus recursos.
 
 ## Vídeos
 

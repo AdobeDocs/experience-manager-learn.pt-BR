@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Entenda como configurar a criação de documentos, permitindo que os criadores do AEM editem e publiquem documentos com o Microsoft Word ou o Google Docs.
 
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para mais detalhes sobre a configuração da criação de documentos.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR) para mais detalhes sobre a configuração da criação de documentos.
 
 ## Introdução à criação de documentos
 

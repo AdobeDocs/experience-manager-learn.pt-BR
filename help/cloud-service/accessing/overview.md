@@ -50,7 +50,7 @@ Os usuários que acessam o serviço do AEM Author devem ser organizados em grupo
 
 ## Perfis de produtos do Adobe IMS
 
-Os [perfis de produtos do Adobe IMS](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html), gerenciados no [Adobe Admin Console](https://adminconsole.adobe.com), são a mecânica que fornece aos [usuários do Adobe IMS](#adobe-ims-users) acesso para fazer logon no serviço do AEM Author com um nível básico de acesso.
+Os [perfis de produtos do Adobe IMS](https://helpx.adobe.com/br/enterprise/using/manage-permissions-and-roles.html), gerenciados no [Adobe Admin Console](https://adminconsole.adobe.com), são a mecânica que fornece aos [usuários do Adobe IMS](#adobe-ims-users) acesso para fazer logon no serviço do AEM Author com um nível básico de acesso.
 
 + O perfil de produto __Usuários do AEM__ concede aos usuários acesso somente de leitura ao AEM por meio da associação ao grupo de colaboradores do AEM.
 + O perfil de produto __Administradores do AEM__ concede aos usuários acesso administrativo total ao AEM.
@@ -74,5 +74,5 @@ Um guia resumido para configurar usuários, grupos de usuários e perfis de prod
 A documentação a seguir apresenta informações e questões específicas do [Adobe Admin Console](https://adminconsole.adobe.com). Ajuda a entender melhor e a usar o Adobe Admin Console para gerenciar usuários e acessos em todos os produtos da Experience Cloud.
 
 + [Visão geral da identidade no Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/identity.html)
-+ [Funções de administrador no Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
-+ [Funções de desenvolvedor no Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)
++ [Funções de administrador no Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-roles.html)
++ [Funções de desenvolvedor no Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/manage-developers.html)

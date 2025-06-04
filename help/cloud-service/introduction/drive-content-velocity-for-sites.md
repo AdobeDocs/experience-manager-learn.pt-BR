@@ -180,4 +180,4 @@ Estas são algumas das possíveis armadilhas a serem evitadas:
 
 Para um debate mais detalhado sobre a velocidade do conteúdo, ouça este [painel de debate](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) de uma hora com Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e Anuradha Pentareddy, da Adobe.
 
-Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Saiba mais sobre estratégia e liderança de pensamento na central de [Sucesso do cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=pt-BR).

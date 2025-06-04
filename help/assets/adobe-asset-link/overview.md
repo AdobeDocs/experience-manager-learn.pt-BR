@@ -55,7 +55,7 @@ O Adobe Asset Link permite a vinculação direta do InDesign no Adobe Asset Link
 
 >[!NOTE]
 >
->Use somente a sua Enterprise ID ou Federated ID da Adobe Creative Cloud. Certifique-se de [configurar o AEM para o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Use somente a sua Enterprise ID ou Federated ID da Adobe Creative Cloud. Certifique-se de [configurar o AEM para o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 Você pode inserir um ativo no layout do InDesign por meio de uma das opções abaixo:
 
