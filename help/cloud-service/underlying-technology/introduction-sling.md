@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Uma introdução ao [!DNL Sling], uma estrutura da web [!DNL RESTful] de código aberto que faz parte da pilha de tecnologias subjacente do Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37067?quality=12&learn=on&captions=por_br)

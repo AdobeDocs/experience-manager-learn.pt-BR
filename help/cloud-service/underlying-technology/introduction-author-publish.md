@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Uma introdução às camadas do Author e do Publish como parte da arquitetura do Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37066?quality=12&learn=on&captions=por_br)

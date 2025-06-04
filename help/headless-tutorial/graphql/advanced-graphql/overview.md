@@ -45,7 +45,7 @@ Este tutorial aborda os seguintes tópicos:
 
 O vídeo a seguir fornece uma visão geral de alto nível dos conceitos abordados neste tutorial. O tutorial inclui a definição de Modelos de fragmento de conteúdo com tipos de dados mais avançados, o aninhamento de fragmentos de conteúdo e a persistência de consultas do GraphQL no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446132?quality=12&learn=on&captions=por_br)
 
 >[!CAUTION]
 >

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 O Adobe Asset Link permite que os usuários da criação naveguem, pesquisem, e façam check-out e check-in de ativos armazenados no AEM Assets por meio do painel no aplicativo do InDesign, Photoshop e Illustrator. Conheça a interface do painel do Adobe Asset Link e seus recursos.
 
->[!VIDEO](https://video.tv.adobe.com/v/33734?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38673?quality=12&learn=on&captions=por_br)

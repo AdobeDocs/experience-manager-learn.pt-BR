@@ -27,7 +27,7 @@ Enquanto os processos personalizados de fluxo de trabalho do AEM eram usados par
 
 ## O que você fará
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417757?quality=12&learn=on&captions=por_br)
 
 Este tutorial aborda a criação de um trabalhador simples do Asset Compute que cria uma representação de um ativo, recortando o ativo original em um círculo e aplicando opções de contraste e brilho configuráveis. Embora esse trabalhador seja básico, este tutorial usa-o para explorar a criação, o desenvolvimento e a implantação de um trabalhador personalizado do Asset Compute para uso com o AEM as a Cloud Service.
 

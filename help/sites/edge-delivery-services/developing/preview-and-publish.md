@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Visualize e publique conteúdo com o Edge Delivery Services por meio do [AEM Sidekick](./sidekick.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434714/?learn=on&captions=por_br)

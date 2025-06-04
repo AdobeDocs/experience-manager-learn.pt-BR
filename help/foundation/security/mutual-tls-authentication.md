@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem autenticação mTLS (Mutual Transport Layer Security).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447864?quality=12&learn=on&captions=por_br)
 
 A autenticação mTLS ou TLS bidirecional melhora a segurança do protocolo TLS, exigindo que **o cliente e o servidor se autentiquem**. Essa autenticação é feita usando certificados digitais. Normalmente, é usada em cenários em que a segurança e a verificação de identidade fortes são críticas.
 

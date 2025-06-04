@@ -51,7 +51,7 @@ A extensão Adobe Asset Link da Adobe Creative Cloud para corporações estende 
 
 O Adobe Asset Link permite a vinculação direta do InDesign no Adobe Asset Link e no AEM. Com a possibilidade de vinculação direta do InDesign, você pode inserir (__Inserir vinculado__ ou __Inserir cópia__) ou arrastar e soltar ativos digitais no InDesign a partir do AEM por meio do painel do Adobe Asset Link. Além disso, ele introduz a representação *Somente para inserção+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37236?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >

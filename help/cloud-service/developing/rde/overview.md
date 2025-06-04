@@ -27,7 +27,7 @@ Este vídeo descreve:
 - O que são RDEs?
 - Como eles ajudam a acelerar o desenvolvimento nos ciclos de implantação?
 
->[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453603?quality=12&learn=on&captions=por_br)
 
 ## Próxima etapa
 
