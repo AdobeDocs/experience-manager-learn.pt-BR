@@ -13,14 +13,14 @@ jira: KT-14646
 thumbnail: 3425973.jpeg
 exl-id: 2dd47e31-bd65-4b4e-a8ce-97d77d954067
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exclusão de páginas
+# Excluir páginas
 
 Saiba como excluir uma página no Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438095/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)

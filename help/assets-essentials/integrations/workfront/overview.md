@@ -14,15 +14,15 @@ last-substantial-update: 2022-10-13T00:00:00Z
 doc-type: Catalog
 exl-id: b8d9b213-867e-457d-932d-1fedc4e1b1d7
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Integrar o Adobe Workfront e o AEM Assets Essentials
 
-Saiba como integrar o Workfront e o AEM Assets Essentials para simplificar o gerenciamento de fluxos de trabalho criativos.
+Saiba como integrar o Workfront e o AEM Assets Essentials para simplificar o gerenciamento de fluxos de trabalho de criação.
 
 Para integrar o Workfront ao AEM Assets Essentials, siga estas etapas:
 

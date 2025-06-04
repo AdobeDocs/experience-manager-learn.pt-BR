@@ -1,6 +1,6 @@
 ---
-title: Estrutura de documento do Edge Delivery Services
-description: Explore como um documento do Edge Delivery Services é montado usando seções, conteúdo padrão e muito mais.
+title: Estrutura de documentos no Edge Delivery Services
+description: Saiba como um documento do Edge Delivery Services é montado com seções, conteúdo padrão e muito mais.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425716.jpeg
 duration: 194
 exl-id: f6e9822b-1803-4aff-aac4-714146568f91
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Estrutura do documento
 
-Explore como um documento do Edge Delivery Services é montado usando seções, conteúdo padrão e muito mais.
+Saiba como um documento do Edge Delivery Services é montado com seções, conteúdo padrão e muito mais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445194/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)

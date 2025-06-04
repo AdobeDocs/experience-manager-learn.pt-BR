@@ -1,6 +1,6 @@
 ---
-title: Cache do AEM as a Cloud Service
-description: Visão geral do cache do AEM as a Cloud Service.
+title: Armazenamento em cache do AEM as a Cloud Service
+description: Visão geral do armazenamento em cache do AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Dispatcher, Developer Tools
 topic: Performance
@@ -13,23 +13,23 @@ thumbnail: KT-13858.jpeg
 exl-id: e76ed4c5-3220-4274-a315-a75e549f8b40
 duration: 36
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Cache do AEM as a Cloud Service
+# Armazenamento em cache do AEM as a Cloud Service
 
-No AEM as a Cloud Service, entender o armazenamento em cache é fundamental. O armazenamento em cache envolve o armazenamento e a reutilização de dados obtidos anteriormente para melhorar a eficiência do sistema e reduzir os tempos de carga. Esse mecanismo acelera significativamente a entrega de conteúdo, aumenta o desempenho do site e otimiza a experiência do usuário.
+No AEM as a Cloud Service, é fundamental entender o armazenamento em cache. O armazenamento em cache envolve o armazenamento e a reutilização de dados obtidos anteriormente para melhorar a eficiência do sistema e reduzir os tempos de carga. Esse mecanismo acelera significativamente a entrega de conteúdo, aumenta o desempenho do site e otimiza a experiência do usuário.
 
-O AEM as a Cloud Service tem várias camadas de armazenamento em cache e estratégias diferentes entre os serviços de Autor e Publicação.
+O AEM as a Cloud Service tem várias camadas de armazenamento em cache e estratégias diferentes entre os serviços de criação e publicação.
 
 ![Visão geral do armazenamento em cache do AEM as a Cloud Service](./assets/overview/all.png){align="center"}
 
-## Cache do AEM
+## Armazenamento em cache do AEM
 
-O AEM as a Cloud Service tem uma estratégia de armazenamento em cache multicamadas robusta e configurável, incluindo um CDN, AEM Dispatcher e, opcionalmente, um CDN gerenciado pelo cliente. O armazenamento em cache entre camadas pode ser ajustado para otimizar o desempenho, garantindo que o AEM forneça apenas as melhores experiências. O AEM tem diferentes preocupações com o armazenamento em cache para os serviços de Autor e Publicação. Explore as estratégias de armazenamento em cache para cada serviço abaixo.
+O AEM as a Cloud Service tem uma estratégia de armazenamento em cache multicamadas robusta e configurável, incluindo uma CDN, AEM Dispatcher e, opcionalmente, uma CDN gerenciada pelo cliente. O armazenamento em cache entre camadas pode ser ajustado para otimizar o desempenho, garantindo que o AEM proporcione apenas as melhores experiências. O AEM tem um foco diferente em relação ao armazenamento em cache para os serviços de criação e publicação. Familiarize-se com as estratégias de armazenamento em cache de cada serviço abaixo.
 
 
 <div class="columns is-multiline" style="margin-top: 2rem">
@@ -37,7 +37,7 @@ O AEM as a Cloud Service tem uma estratégia de armazenamento em cache multicama
     <div class="card is-padded-small is-padded-big-mobile" style="height: 100%">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./publish.md" title="Serviço de publicação do AEM" tabindex="-1">
+            <a href="./publish.md" title="Serviço do AEM Publish" tabindex="-1">
               <img class="is-bordered-r-small" src="./assets/overview/publish-card.png" alt="Armazenamento em cache do serviço de publicação do AEM">
             </a>
           </figure>
@@ -45,9 +45,9 @@ O AEM as a Cloud Service tem uma estratégia de armazenamento em cache multicama
         <div class="card-content is-padded-small">
           <div class="content">
             <p class="headline is-size-6 has-text-weight-bold"><a href="./publish.md" title="Armazenamento em cache do serviço de publicação do AEM">Armazenamento em cache do serviço de publicação do AEM</a></p>
-            <p class="is-size-6">O serviço de Publicação do AEM usa um CDN gerenciado e o AEM Dispatcher para otimizar as experiências da Web do usuário final.</p>
+            <p class="is-size-6">O serviço de publicação do AEM usa uma CDN gerenciada e o AEM Dispatcher para otimizar as experiências da web do usuário final.</p>
             <a href="./publish.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+              <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
             </a>
           </div>
         </div>
@@ -57,17 +57,17 @@ O AEM as a Cloud Service tem uma estratégia de armazenamento em cache multicama
         <div class="card is-padded-small is-padded-big-mobile" style="height: 100%">
             <div class="card-image">
             <figure class="image is-16by9">
-                <a href="./author.md" title="Armazenamento em cache do serviço do Autor do AEM" tabindex="-1">
-                <img class="is-bordered-r-small" src="./assets/overview/author-card.png" alt="Armazenamento em cache do serviço do Autor do AEM">
+                <a href="./author.md" title="Armazenamento em cache do serviço de criação do AEM" tabindex="-1">
+                <img class="is-bordered-r-small" src="./assets/overview/author-card.png" alt="Armazenamento em cache do serviço de criação do AEM">
                 </a>
             </figure>
             </div>
             <div class="card-content is-padded-small">
             <div class="content">
-                <p class="headline is-size-6 has-text-weight-bold"><a href="./author.md" title="Armazenamento em cache do serviço do Autor do AEM">Armazenamento em cache do serviço do Autor do AEM</a></p>
-                <p class="is-size-6">O serviço AEM Author usa uma CDN gerenciada para fornecer experiências de criação otimizadas.</p>
+                <p class="headline is-size-6 has-text-weight-bold"><a href="./author.md" title="Armazenamento em cache do serviço de criação do AEM">Armazenamento em cache do serviço de criação do AEM</a></p>
+                <p class="is-size-6">O serviço de criação do AEM usa uma CDN gerenciada para fornecer experiências de criação otimizadas.</p>
                 <a href="./author.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
             </div>

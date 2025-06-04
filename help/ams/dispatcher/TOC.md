@@ -7,9 +7,9 @@ version: Experience Manager 6.5
 feature: Dispatcher
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '60'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 5%
 
 + [Visão geral](./overview.md)
 + Dispatcher{#dispatcher}
-   + [Manual do Dispatcher - Visão geral](./dispatcher/overview.md)
-   + [O que é &quot;A Dispatcher&quot;](./dispatcher/what-is-the-dispatcher.md)
-   + [Layout básico do arquivo](./dispatcher/basic-file-layout.md)
+   + [Manual do Dispatcher: visão geral](./dispatcher/overview.md)
+   + [O que é o Dispatcher?](./dispatcher/what-is-the-dispatcher.md)
+   + [Layout básico dos arquivos](./dispatcher/basic-file-layout.md)
    + [Explicação dos arquivos de configuração](./dispatcher/explanation-config-files.md)
-   + [Noções básicas sobre armazenamento em cache](./dispatcher/understanding-cache.md)
-   + [Uso e noções básicas sobre variáveis](./dispatcher/variables.md)
-   + [Liberação do Dispatcher](./dispatcher/disp-flushing.md)
+   + [Entenda o armazenamento em cache](./dispatcher/understanding-cache.md)
+   + [Noções básicas e uso das variáveis](./dispatcher/variables.md)
+   + [Limpeza do Dispatcher](./dispatcher/disp-flushing.md)
    + [URL do Vanity](./dispatcher/disp-vanity-url.md)
-   + [Logon comum](./dispatcher/common-logs.md)
-   + [Arquivos somente leitura](./dispatcher/immutable-files.md)
+   + [Registro em log comum](./dispatcher/common-logs.md)
+   + [Arquivos somente de leitura](./dispatcher/immutable-files.md)
    + [Verificação de integridade do Dispatcher](./dispatcher/health-check.md)
-   + [Symlinks GIT](./dispatcher/git-symlinks.md)
+   + [GIT Symlinks](./dispatcher/git-symlinks.md)

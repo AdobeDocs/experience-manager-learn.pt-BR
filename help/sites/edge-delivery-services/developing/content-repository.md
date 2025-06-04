@@ -13,32 +13,32 @@ thumbnail: 3425712.jpeg
 duration: 409
 exl-id: 290184ea-88cb-401e-b784-77c8322c77de
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Repositório de conteúdo
 
-Para integrar o Adobe Experience Manager (AEM) com o Edge Delivery Services, comece configurando o [SharePoint](#sharepoint) ou a [Google Drive](#google-drive) como seu repositório de conteúdo. Ambas as plataformas funcionam bem com o AEM, permitindo uma gestão e entrega de conteúdo tranquilas. Escolha aquele que se alinha às suas preferências e siga as etapas para colocá-lo em funcionamento com o AEM e o Edge Delivery Services.
+Para integrar o Adobe Experience Manager (AEM) ao Edge Delivery Services, comece configurando o [SharePoint](#sharepoint) ou o [Google Drive](#google-drive) como o seu repositório de conteúdo. Ambas as plataformas funcionam bem com o AEM, facilitando a gestão e a entrega de conteúdo. Escolha a opção mais alinhada às suas preferências e siga as etapas para executá-la com o AEM e o Edge Delivery Services.
 
-## Opções de criação de documento
+## Opções de criação de documentos
 
-Há dois repositórios de conteúdo com suporte para [criação de documentos](../../document-authoring/set-up.md), [SharePoint](#sharepoint) e [Unidade Google](#google-drive).
+Há dois repositórios de conteúdo que permitem a [criação de documentos](../../document-authoring/set-up.md): [SharePoint](#sharepoint) e [Google Drive](#google-drive).
 
 >[!BEGINTABS]
 
 >[!TAB SharePoint]
 
-Configure o SharePoint como o repositório de conteúdo para usar com o Edge Delivery Services.
+Configure o SharePoint como o repositório de conteúdo a ser usado com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446033/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
->[!TAB Unidade Google]
+>[!TAB Google Drive]
 
-Configure o Google Drive como o repositório de conteúdo para usar com o Edge Delivery Services.
+Configure o Google Drive como o repositório de conteúdo a ser usado com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434725/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
 >[!ENDTABS]

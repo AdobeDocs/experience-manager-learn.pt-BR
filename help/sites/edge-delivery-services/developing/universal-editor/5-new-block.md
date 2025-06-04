@@ -1,6 +1,6 @@
 ---
 title: Criar um bloco
-description: Crie um bloco para um site da Edge Delivery Services que seja editável com o Universal Editor.
+description: Crie um bloco para um site do Edge Delivery Services que seja editável com o editor universal.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,37 +11,37 @@ jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Criar um novo bloco
 
-Este capítulo aborda o processo de criação de um novo bloco de teaser editável para um site do Edge Delivery Services usando o Editor universal.
+Este capítulo aborda o processo de criação de um novo bloco de teaser editável para um site do Edge Delivery Services por meio do editor universal.
 
 ![Novo bloco de teaser](./assets//5-new-block/teaser-block.png)
 
-O bloco, chamado `teaser`, mostra os seguintes elementos:
+O bloco, chamado de `teaser`, exibe os seguintes elementos:
 
 - **Imagem**: uma imagem visualmente envolvente.
-- **Conteúdo do texto**:
-   - **Título**: um título convincente para chamar a atenção.
-   - **Corpo de texto**: conteúdo descritivo que fornece contexto ou detalhes, incluindo termos e condições opcionais.
-   - **Botão de chamada para ação (CTA)**: um link criado para solicitar interação do usuário e orientá-lo para maior engajamento.
+- **Conteúdo em texto**:
+   - **Título**: um título que chame a atenção.
+   - **Corpo do texto**: conteúdo descritivo que fornece o contexto ou detalhes, incluindo termos e condições opcionais.
+   - **Botão de chamariz (CTA)**: um link criado para solicitar uma interação do usuário e aumentar seu engajamento.
 
-O conteúdo do bloco `teaser` é editável no Universal Editor, garantindo facilidade de uso e reutilização em todo o site.
+O conteúdo do bloco `teaser` é editável no editor universal, garantindo facilidade de uso e reusabilidade em todo o site.
 
-Observe que o bloco `teaser` é semelhante ao bloco `hero` do modelo; portanto, o bloco `teaser` serve apenas como um exemplo simples para ilustrar conceitos de desenvolvimento.
+Observe que o bloco `teaser` é semelhante ao bloco `hero` do modelo padronizado; portanto, o bloco `teaser` serve apenas como um exemplo simples para ilustrar conceitos de desenvolvimento.
 
-## Criar uma nova ramificação Git
+## Criar uma nova ramificação do Git
 
-Para manter um fluxo de trabalho limpo e organizado, crie uma nova ramificação para cada tarefa de desenvolvimento específica. Isso ajuda a evitar problemas com a implantação de código incompleto ou não testado na produção.
+Para manter um fluxo de trabalho limpo e organizado, crie uma nova ramificação para cada tarefa de desenvolvimento específica. Isso ajuda a evitar problemas com a implantação de um código incompleto ou não testado na produção.
 
 1. **Iniciar a partir da ramificação principal**: trabalhar a partir do código de produção mais atualizado garante uma base sólida.
-2. **Buscar alterações remotas**: buscar as atualizações mais recentes do GitHub garante que o código mais atual esteja disponível antes de iniciar o desenvolvimento.
-   - Exemplo: após mesclar as alterações da ramificação `wknd-styles` no `main`, obtenha as atualizações mais recentes.
+2. **Buscar alterações remotas**: obter as atualizações mais recentes do GitHub garante que o código mais atual esteja disponível antes de iniciar o desenvolvimento.
+   - Exemplo: obter as atualizações mais recentes após mesclar as alterações da ramificação `wknd-styles` no `main`.
 3. **Criar uma nova ramificação**:
 
 ```bash
@@ -51,11 +51,11 @@ $ git fetch origin
 $ git checkout -b teaser origin/main  
 ```
 
-Depois que a ramificação `teaser` for criada, você estará pronto para começar a desenvolver o bloco de teaser.
+Depois de criar a ramificação `teaser`, é possível começar a desenvolver o bloco de teaser.
 
-## Bloquear pasta
+## Pasta do bloco
 
-Crie uma nova pasta chamada `teaser` no diretório `blocks` do projeto. Esta pasta contém os arquivos JSON, CSS e JavaScript do bloco, organizando os arquivos do bloco em um local:
+Crie uma nova pasta chamada `teaser` no diretório `blocks` do projeto. Essa pasta contém os arquivos JSON, CSS e JavaScript do bloco, organizando os arquivos do bloco em um mesmo local:
 
 ```
 # ~/Code/aem-wknd-eds-ue
@@ -63,17 +63,17 @@ Crie uma nova pasta chamada `teaser` no diretório `blocks` do projeto. Esta pas
 /blocks/teaser
 ```
 
-O nome da pasta de blocos atua como a ID do bloco e é usado para fazer referência ao bloco em todo o desenvolvimento.
+O nome da pasta de blocos atua como a ID do bloco e é usado para fazer referência ao bloco durante todo o desenvolvimento.
 
-## Bloquear JSON
+## Bloco JSON
 
 O bloco JSON define três aspectos principais do bloco:
 
-- **Definição**: registra o bloco como um componente editável no Editor Universal, vinculando-o a um modelo de bloco e, opcionalmente, a um filtro.
-- **Modelo**: especifica os campos de criação do bloco e como esses campos são renderizados como Edge Delivery Services HTML semântico.
-- **Filtro**: configura as regras de filtragem para restringir a quais contêineres o bloco pode ser adicionado por meio do Editor Universal. A maioria dos blocos não é contêiner, mas suas IDs são adicionadas aos filtros de outros blocos de contêiner.
+- **Definição**: registra o bloco como um componente editável no editor universal, vinculando-o a um modelo de bloco e, opcionalmente, a um filtro.
+- **Modelo**: especifica os campos de criação do bloco e como esses campos são renderizados como HTML semântico do Edge Delivery Services.
+- **Filtro**: configura as regras de filtragem para restringir a quais containers o bloco pode ser adicionado por meio do editor universal. A maioria dos blocos não é composto de containers, mas suas IDs são adicionadas aos filtros de outros blocos de container.
 
-Crie um novo arquivo em `/blocks/teaser/_teaser.json` com a seguinte estrutura inicial, na ordem exata. Se as chaves estiverem fora de ordem, elas talvez não sejam criadas corretamente.
+Crie um novo arquivo em `/blocks/teaser/_teaser.json` com a estrutura inicial a seguir, na mesma ordem. Se as chaves estiverem fora de ordem, elas podem não ser criadas corretamente.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -85,63 +85,63 @@ Crie um novo arquivo em `/blocks/teaser/_teaser.json` com a seguinte estrutura i
 }
 ```
 
-### Bloquear modelo
+### Modelo de bloco
 
-O modelo de bloco é uma parte crítica da configuração do bloco, pois define:
+O modelo de bloco é uma parte crucial da configuração do bloco, pois ele define:
 
-1. A experiência de criação definindo os campos disponíveis para edição.
+1. A experiência de criação, definindo os campos disponíveis para edição.
 
-   ![Campos do Editor Universal](./assets/5-new-block/fields-in-universal-editor.png)
+   ![Campos do editor universal](./assets/5-new-block/fields-in-universal-editor.png)
 
-2. Como os valores do campo são renderizados no Edge Delivery Services HTML.
+2. Como os valores dos campos são renderizados no HTML do Edge Delivery Services.
 
-Aos modelos é atribuído um `id` que corresponde à definição do [bloco](#block-definition) e inclui uma matriz `fields` para especificar os campos editáveis.
+É atribuído aos modelos um `id` que corresponde à [definição do bloco](#block-definition) e inclui uma matriz `fields` para especificar os campos editáveis.
 
 Cada campo na matriz `fields` tem um objeto JSON que inclui as seguintes propriedades necessárias:
 
-| propriedade JSON | Descrição |
+| Propriedade JSON | Descrição |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
 | `component` | O [tipo de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), como `text`, `reference` ou `aem-content`. |
-| `name` | O nome do campo, mapeando para a propriedade do JCR em que o valor está armazenado no AEM. |
-| `label` | O rótulo exibido para autores no Editor universal. |
+| `name` | O nome do campo que está mapeado para a propriedade JCR na qual o valor é armazenado no AEM. |
+| `label` | O rótulo exibido para autores no editor universal. |
 
-Para obter uma lista abrangente de propriedades, incluindo opcionais, reveja a [documentação de campos do Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
+Para obter uma lista abrangente de propriedades, incluindo as opcionais, confira a [documentação de campos do editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
 
-#### Design de bloco
+#### Design do bloco
 
 ![Bloco de teaser](./assets/5-new-block/block-design.png)
 
 O bloco de teaser inclui os seguintes elementos editáveis:
 
 1. **Imagem**: representa o conteúdo visual do teaser.
-2. **Conteúdo de texto**: inclui o título, o texto do corpo e o botão de frase de chamariz, e fica em um retângulo branco.
-   - O **título** e o **corpo de texto** podem ser criados por meio do mesmo editor de rich text.
-   - O **CTA** pode ser criado por meio de um campo `text` para o **rótulo**, e um campo `aem-content` para o **link**.
+2. **Conteúdo em texto**: inclui o título, o corpo do texto e o botão de chamariz, inseridos em um retângulo branco.
+   - O **título** e o **corpo do texto** podem ser criados por meio do mesmo editor de rich text.
+   - O **botão de chamariz** pode ser criado por meio de um campo `text` para o **rótulo** e através de um campo `aem-content` para o **link**.
 
-O design do bloco de teaser é dividido nesses dois componentes lógicos (imagem e conteúdo de texto), garantindo uma experiência de criação estruturada e intuitiva para os usuários.
+O design do bloco de teaser é dividido entre esses dois componentes lógicos (imagem e conteúdo de texto), garantindo uma experiência de criação estruturada e intuitiva para os usuários.
 
-### Bloquear campos
+### Campos do bloco
 
-Defina os campos necessários para o bloco: imagem, texto alternativo da imagem, texto, rótulo do CTA e link do CTA.
+Defina os campos necessários para o bloco: imagem, texto alternativo da imagem, texto, rótulo e link do botão de chamariz.
 
 >[!BEGINTABS]
 
->[!TAB Do jeito certo]
+>[!TAB A maneira correta]
 
-**Esta guia ilustra a maneira correta de modelar o bloco do teaser.**
+**Esta guia ilustra a forma correta de modelar o bloco de teaser.**
 
-O teaser consiste em duas áreas lógicas: imagem e texto. Para simplificar o código necessário para exibir o Edge Delivery Services HTML como a experiência da Web desejada, o modelo de bloco deve refletir essa estrutura.
+O teaser consiste em duas áreas lógicas: imagem e texto. Para simplificar o código necessário para exibir o HTML do Edge Delivery Services como a experiência da web desejada, o modelo de bloco deve refletir essa estrutura.
 
-- Agrupe o **imagem** e o **texto alternativo de imagem** usando o [recolhimento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
-- Agrupe os campos de conteúdo de texto usando o [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) e o [recolhimento de campos para o CTA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Agrupe a **imagem** e o **texto alternativo da imagem** por meio da opção de [recolher o campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Agrupe os campos de conteúdo de texto por meio do [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) e do [recolhimento de campos para o botão de chamariz](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
-Se você não estiver familiarizado com [recolhimento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) ou [inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference), revise a documentação vinculada antes de continuar, pois elas são essenciais para criar um modelo de bloco bem estruturado.
+Se você não tiver familiaridade com o [recolhimento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), o [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) ou a [inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference), consulte a documentação vinculada antes de continuar, pois esses elementos são essenciais para criar um modelo de bloco bem estruturado.
 
 No exemplo abaixo:
 
-- [Inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) é usada para criar automaticamente um elemento HTML `<img>` a partir do campo `image`. O recolhimento de campo é usado com os campos `image` e `imageAlt` para criar um elemento HTML `<img>`. O atributo `src` é definido como o valor do campo `image`, enquanto o atributo `alt` é definido como o valor do campo `imageAlt`.
-- `textContent` é um nome de grupo usado para categorizar campos. Deve ser semântico, mas pode ser qualquer item exclusivo deste bloco. Isso informa o Editor Universal a renderizar todos os campos com esse prefixo dentro do mesmo elemento `<div>` na saída final do HTML.
-- O recolhimento de campo também é aplicado no grupo `textContent` para a chamada à ação (CTA). O CTA é criado como um `<a>` via [inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). O campo `cta` é usado para definir o atributo `href` do elemento `<a>`, e o campo `ctaText` fornece o conteúdo de texto para o link dentro das marcas `<a ...>`.
+- A [inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) é usada para criar automaticamente um elemento HTML `<img>` a partir do campo `image`. O recolhimento de campo é usado nos campos `image` e `imageAlt` para criar um elemento HTML `<img>`. O atributo `src` é definido como o valor do campo `image`, enquanto o atributo `alt` é definido como o valor do campo `imageAlt`.
+- `textContent` é o nome de um grupo usado para categorizar campos. Ele deve ser semântico, mas pode ser qualquer item exclusivo desse bloco. Isso solicita ao editor universal que renderize todos os campos com esse prefixo dentro do mesmo elemento `<div>` na saída final em HTML.
+- O recolhimento de campo também é aplicado no grupo `textContent` para o botão de chamariz (CTA). O CTA é criado como um `<a>` por meio da [inferência de tipo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). O campo `cta` é usado para definir o atributo `href` do elemento `<a>`, enquanto que o campo `ctaText` fornece o conteúdo de texto do link dentro das tags `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -192,9 +192,9 @@ No exemplo abaixo:
 }
 ```
 
-Esse modelo define as entradas de criação no Universal Editor para o bloco.
+Este modelo define as entradas de criação do bloco no editor universal.
 
-O Edge Delivery Services HTML resultante desse bloco coloca a imagem na primeira div e os campos do grupo de elementos `textContent` na segunda div.
+O HTML do Edge Delivery Services resultante desse bloco coloca a imagem na primeira div e os campos do grupo de elementos `textContent` na segunda div.
 
 ```html
 <div>
@@ -215,15 +215,15 @@ O Edge Delivery Services HTML resultante desse bloco coloca a imagem na primeira
 </div>        
 ```
 
-Como demonstrado [no próximo capítulo](./7a-block-css.md), essa estrutura do HTML simplifica o estilo do bloco como uma unidade coesa.
+Como demonstrado [no próximo capítulo](./7a-block-css.md), essa estrutura de HTML simplifica a estilização do bloco como uma unidade coesa.
 
-Para entender as consequências de não usar o recolhimento de campo e o agrupamento de elementos, consulte a guia **Da maneira errada** acima.
+Para entender as consequências de não usar o recolhimento de campo e o agrupamento de elementos, consulte a guia **A maneira errada** acima.
 
->[!TAB Do jeito errado]
+>[!TAB A maneira errada]
 
-**Esta guia ilustra uma maneira não ideal de modelar o bloco de teaser e é apenas uma justaposição à maneira correta.**
+**Esta guia ilustra uma maneira não ideal de modelar o bloco de teaser, sendo apenas uma justaposição ao jeito correto.**
 
-Pode parecer tentador definir cada campo como um campo autônomo no modelo de bloco sem usar [recolhimento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) e [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping). No entanto, esse descuido complica a estilização do bloco como uma unidade coesa.
+Pode parecer interessante definir cada campo como independente no modelo de bloco sem usar [recolhimento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) e [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping). No entanto, isso dificulta a estilização do bloco como uma unidade coesa.
 
 Por exemplo, o modelo de teaser pode ser definido **sem** recolhimento de campos ou agrupamento de elementos da seguinte maneira:
 
@@ -276,7 +276,7 @@ Por exemplo, o modelo de teaser pode ser definido **sem** recolhimento de campos
 }
 ```
 
-O Edge Delivery Services HTML do bloco renderiza o valor de cada campo em um `div` separado, complicando a compreensão do conteúdo, o aplicativo de estilo e os ajustes de estrutura do HTML para atingir o design desejado.
+O HTML do Edge Delivery Services do bloco renderiza o valor de cada campo em um `div` separado, dificultando a compreensão do conteúdo, a aplicação de estilos e os ajustes da estrutura do HTML para atingir o design desejado.
 
 ```html
 <div>
@@ -304,28 +304,28 @@ O Edge Delivery Services HTML do bloco renderiza o valor de cada campo em um `di
 </div>        
 ```
 
-Cada campo é isolado em seu próprio `div`, tornando difícil estilizar a imagem e o conteúdo do texto como unidades coesas. É possível atingir o design desejado com esforço e criatividade, mas usar o [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) para agrupar campos de conteúdo de texto e o [recolhimento de campos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) para adicionar valores criados como atributos de elemento é mais simples, mais fácil e semanticamente correto.
+Cada campo é isolado em seu próprio `div`, tornando difícil estilizar a imagem e o conteúdo do texto como unidades coesas. É possível atingir o design desejado com esforço e criatividade, mas usar o [agrupamento de elementos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) para agrupar campos de conteúdo em texto e o [recolhimento de campos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) para adicionar valores criados como atributos de elemento é mais simples, mais fácil e semanticamente correto.
 
-Consulte a guia **Write Way** acima para saber como modelar melhor o bloco do teaser.
+Consulte a guia **A maneira correta** acima para saber como modelar melhor o bloco de teaser.
 
 >[!ENDTABS]
 
 
-### Definição de bloco
+### Definição do bloco
 
-A definição de bloco registra o bloco no Editor Universal. Veja a seguir um detalhamento das propriedades JSON usadas na definição do bloco:
+A definição do bloco registra-o no editor universal. Confira a seguir um detalhamento das propriedades JSON usadas na definição do bloco:
 
-| propriedade JSON | Descrição |
+| Propriedade JSON | Descrição |
 |---------------|-------------|
-| `definition.title` | O título do bloco como ele é exibido nos blocos **Adicionar** do Editor Universal. |
+| `definition.title` | O título do bloco conforme exibido nos blocos **Adicionar** do editor universal. |
 | `definition.id` | Um identificador exclusivo para o bloco, usado para controlar seu uso em `filters`. |
-| `definition.plugins.xwalk.page.resourceType` | Define o tipo de recurso Sling para renderizar o componente no Editor universal. Sempre use um tipo de recurso `core/franklin/components/block/v#/block`. |
-| `definition.plugins.xwalk.page.template.name` | O nome do bloco. Ele deve estar em minúsculas e hifenizado para corresponder ao nome da pasta do bloco. Esse valor também é usado para rotular a instância do bloco no Editor universal. |
-| `definition.plugins.xwalk.page.template.model` | Vincula esta definição à sua definição `model`, que controla os campos de criação exibidos para o bloco no Editor Universal. O valor aqui deve corresponder a um valor de `model.id`. |
-| `definition.plugins.xwalk.page.template.classes` | Propriedade opcional, cujo valor é adicionado ao atributo `class` do elemento de bloco do HTML. Isso permite variantes do mesmo bloco. O valor `classes` pode se tornar editável ao [adicionar um campo de classes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) ao [modelo](#block-model) do bloco. |
+| `definition.plugins.xwalk.page.resourceType` | Define o tipo de recurso do Sling para renderizar o componente no editor universal. Sempre use um tipo de recurso `core/franklin/components/block/v#/block`. |
+| `definition.plugins.xwalk.page.template.name` | O nome do bloco. Deve estar em minúsculas e ser hifenizado para corresponder ao nome da pasta do bloco. Esse valor também é usado para rotular a instância do bloco no editor universal. |
+| `definition.plugins.xwalk.page.template.model` | Vincula esta definição à sua definição de `model`, que controla os campos de criação exibidos para o bloco no editor universal. O valor aqui deve corresponder a um valor de `model.id`. |
+| `definition.plugins.xwalk.page.template.classes` | Propriedade opcional, cujo valor é adicionado ao atributo `class` do elemento do HTML do bloco. Isso permite variantes do mesmo bloco. O valor `classes` pode tornar-se editável ao [adicionar um campo de classes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) ao [modelo](#block-model) do bloco. |
 
 
-Este é um exemplo de JSON para a definição de bloco:
+Este é um exemplo de JSON para a definição do bloco:
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -356,14 +356,14 @@ Este é um exemplo de JSON para a definição de bloco:
 
 Neste exemplo:
 
-- O bloco é denominado &quot;Teaser&quot; e usa o modelo `teaser` que determina quais campos estão disponíveis para edição no Editor Universal.
-- O bloco inclui conteúdo padrão para o campo `textContent_text`, que é uma área de rich text para o título e o corpo de texto, e `textContent_cta` e `textContent_ctaText` para o link e rótulo da CTA (chamada para ação). Os nomes de campos do modelo que contêm conteúdo inicial correspondem aos nomes de campos definidos na [matriz de campos do modelo de conteúdo](#block-model);
+- O bloco é denominado “Teaser” e usa o modelo `teaser`, que determina quais campos estão disponíveis para edição no editor universal.
+- O bloco inclui conteúdo padrão para o campo `textContent_text`, que é uma área de rich text para o título e o corpo do texto, e `textContent_cta` e `textContent_ctaText` para o link e o rótulo do CTA (chamada para ação). Os nomes de campos do modelo com um conteúdo inicial correspondem aos nomes de campos definidos na [matriz de campos do modelo de conteúdo](#block-model);
 
-Essa estrutura garante que o bloco seja configurado no Editor universal com os campos, o modelo de conteúdo e o tipo de recurso adequados para renderização.
+Essa estrutura garante que o bloco seja configurado no editor universal com os campos, o modelo de conteúdo e o tipo de recurso adequados para renderização.
 
-### Bloquear filtros
+### Filtros do bloco
 
-A matriz `filters` do bloco define, para [blocos de contêiner](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), quais outros blocos podem ser adicionados ao contêiner. Os filtros definem uma lista de IDs de bloco (`model.id`) que podem ser adicionadas ao contêiner.
+A matriz `filters` do bloco define, para [blocos de container](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), quais outros blocos podem ser adicionados ao container. Os filtros definem uma lista de IDs de blocos (`model.id`) que podem ser adicionados ao container.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -375,11 +375,11 @@ A matriz `filters` do bloco define, para [blocos de contêiner](https://experien
 }
 ```
 
-O componente de teaser não é um [bloco de contêiner](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), o que significa que não é possível adicionar outros blocos a ele. Como resultado, sua matriz `filters` é deixada vazia. Em vez disso, adicione a ID do teaser à lista de filtros do bloco de seção para que o teaser possa ser adicionado a uma seção.
+O componente de teaser não é um [bloco de container](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), o que significa que não é possível adicionar outros blocos a ele. Como resultado, sua matriz `filters` é deixada em branco. Em vez disso, adicione a ID do teaser à lista de filtros do bloco de seção, para que o teaser possa ser adicionado a uma seção.
 
-![Bloquear filtros](./assets/5-new-block/filters.png)
+![Filtros do bloco](./assets/5-new-block/filters.png)
 
-Blocos fornecidos pela Adobe, como o bloco de seção, armazenam filtros na pasta `models` do projeto. Para ajustar, localize o arquivo JSON para o bloco fornecido pela Adobe (por exemplo, `/models/_section.json`) e adicione a ID do teaser (`teaser`) à lista de filtros. A configuração sinaliza ao Editor universal que o componente de teaser pode ser adicionado ao bloco do container da seção.
+Blocos fornecidos pela Adobe, como o bloco de seção, armazenam filtros na pasta `models` do projeto. Para ajustar, localize o arquivo JSON do bloco fornecido pela Adobe (por exemplo, `/models/_section.json`) e adicione a ID do teaser (`teaser`) à lista de filtros. A configuração sinaliza ao editor universal que o componente de teaser pode ser adicionado ao bloco de container da seção.
 
 [!BADGE /models/_section.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -406,11 +406,11 @@ Blocos fornecidos pela Adobe, como o bloco de seção, armazenam filtros na past
 }
 ```
 
-A ID de definição de bloco de teaser de `teaser` foi adicionada à matriz `components`.
+A ID de definição do bloco de teaser de `teaser` foi adicionada à matriz `components`.
 
-## Implante seus arquivos JSON
+## Limpe os seus arquivos JSON
 
-Verifique se você [vincula com frequência](./3-local-development-environment.md#linting) suas alterações para garantir que elas sejam limpas e consistentes. A impressão com frequência ajuda a detectar problemas antecipadamente e reduz o tempo geral de desenvolvimento. O comando `npm run lint:js` também vincula arquivos JSON e captura todos os erros de sintaxe.
+Certifique-se de [limpar com frequência](./3-local-development-environment.md#linting) as alterações no seu código para garantir que ele esteja limpo e consistente. A limpeza periódica ajuda a detectar problemas antecipadamente e reduz o tempo geral de desenvolvimento. O comando `npm run lint:js` também limpa arquivos JSON e capta todos os erros de sintaxe.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -418,17 +418,17 @@ Verifique se você [vincula com frequência](./3-local-development-environment.m
 $ npm run lint:js
 ```
 
-## Criar o JSON do projeto
+## Compilar o JSON do projeto
 
-Após configurar os arquivos JSON de bloco (por exemplo, `blocks/teaser/_teaser.json`, `models/_section.json`), eles são automaticamente compilados nos arquivos `component-models.json`, `component-definitions.json` e `component-filters.json` do projeto. Esta compilação é manipulada automaticamente por um gancho de pré-confirmação [Husky](https://typicode.github.io/husky/) incluído no [modelo de projeto AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+Após configurar os arquivos JSON do bloco (por exemplo, `blocks/teaser/_teaser.json`, `models/_section.json`), eles são automaticamente compilados nos arquivos `component-models.json`, `component-definitions.json` e `component-filters.json` do projeto. Essa compilação é tratada automaticamente por um gancho de pré-confirmação [Husky](https://typicode.github.io/husky/) incluso no [modelo de projeto XWalk padronizado do AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-As compilações também podem ser acionadas manual ou programaticamente usando os scripts NPM [build JSON](./3-local-development-environment.md#build-json-fragments) do projeto.
+As compilações também podem ser acionadas de forma manual ou programática, usando-se os scripts NPM de [compilação de JSON](./3-local-development-environment.md#build-json-fragments) do projeto.
 
-## Implantar o JSON de bloco
+## Implantar o JSON do bloco
 
-Para disponibilizar o bloco no Editor Universal, o projeto deve ser confirmado e enviado para a ramificação de um repositório GitHub, neste caso, a ramificação `teaser`.
+Para disponibilizar o bloco no editor universal, o projeto precisa ser confirmado e enviado a uma ramificação de um repositório do GitHub, neste caso, a ramificação `teaser`.
 
-O nome exato da ramificação que o Universal Editor usa pode ser ajustado, por usuário, através do URL do Universal Editor.
+O nome exato da ramificação usado pelo editor universal pode ser ajustado, por usuário, por meio do URL do editor universal.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -439,4 +439,4 @@ $ git commit -m "Add teaser block JSON files so it is available in Universal Edi
 $ git push origin teaser
 ```
 
-Quando o Editor Universal é aberto com o parâmetro de consulta `?ref=teaser`, o novo bloco `teaser` aparece na paleta de blocos. Observe que o bloco não tem estilo; ele renderiza os campos do bloco como HTML semântico, estilizado somente por meio do [CSS global](./4-website-branding.md#global-css).
+Quando o editor universal é aberto com o parâmetro de consulta `?ref=teaser`, o novo bloco `teaser` aparece na paleta de blocos. Observe que o bloco não tem estilo; ele renderiza os campos do bloco como HTML semântico, estilizado somente por meio do [CSS global](./4-website-branding.md#global-css).

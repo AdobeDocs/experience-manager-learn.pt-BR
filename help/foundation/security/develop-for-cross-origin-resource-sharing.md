@@ -1,6 +1,6 @@
 ---
-title: Desenvolver para CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens) com a AEM
-description: Um pequeno exemplo de como aproveitar o CORS para acessar conteúdo do AEM de um aplicativo externo da Web por meio do JavaScript do lado do cliente.
+title: Desenvolver para o compartilhamento de recursos entre origens (CORS) com o AEM
+description: Um exemplo breve de como utilizar o CORS para acessar conteúdo do AEM a partir de um aplicativo da web externo por meio do JavaScript do lado do cliente.
 version: Experience Manager 6.4, Experience Manager 6.5
 topic: Security, Development
 role: Developer
@@ -10,40 +10,40 @@ doc-type: Technical Video
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 duration: 333
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Desenvolver para o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)
+# Desenvolver para o compartilhamento de recursos entre origens (CORS)
 
-Um pequeno exemplo de como aproveitar o [!DNL CORS] para acessar o conteúdo do AEM a partir de um aplicativo web externo por meio do JavaScript do lado do cliente. Este exemplo usa a configuração OSGi do CORS para habilitar o acesso ao CORS no AEM. A abordagem de configuração do OSGi é viável quando:
+Um exemplo breve de como utilizar o [!DNL CORS] para acessar conteúdo do AEM a partir de um aplicativo da web externo por meio do JavaScript do lado do cliente. Este exemplo usa a configuração de OSGi do CORS para habilitar o acesso ao CORS no AEM. A abordagem à configuração de OSGi é viável quando:
 
-* Uma única origem está acessando o conteúdo de publicação do AEM
-* O acesso ao CORS é necessário para o AEM Author
+* Apenas uma origem está acessando o conteúdo do ambiente de publicação do AEM
+* O acesso ao CORS é exigido pelo ambiente de criação do AEM
 
-Se o acesso de várias origens ao AEM Publish for necessário, consulte [esta documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=pt-BR#dispatcher-configuration).
+Se o acesso de várias origens ao ambiente de publicação do AEM for necessário, consulte [esta documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors#dispatcher-configuration).
 
->[!VIDEO](https://video.tv.adobe.com/v/33349?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
 Neste vídeo:
 
-* **www.example.com** mapeia para localhost via `/etc/hosts`
-* **aem-publish.local** mapeia para localhost via `/etc/hosts`
-* SimpleHTTPServer (um wrapper do SimpleHTTPServer[&#128279;](https://docs.python.org/2/library/simplehttpserver.html) de [!DNL Python]) está servindo a página do HTML pela porta 8000.
-   * _Não está mais disponível no Mac App Store. Usar similar, como [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] está em execução em [!DNL Apache HTTP Web Server] 2.4 e solicitação de proxy reverso para `aem-publish.local` para `localhost:4503`.
+* **www.example.com** é mapeado para o localhost via `/etc/hosts`
+* **aem-publish.local** é mapeado para o localhost via `/etc/hosts`
+* SimpleHTTPServer (um wrapper do SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) de [[!DNL Python]) está servindo a página HTML pela porta 8000.
+   * _Não está mais disponível na App Store do Mac. Use um recurso semelhante, como o [Jeeves](https://apps.apple.com/br/app/jeeves-local-http-server/id980824182?mt=12)._
+* O [!DNL AEM Dispatcher] está em execução no [!DNL Apache HTTP Web Server] 2.4 e há uma solicitação de proxy reverso de `aem-publish.local` para `localhost:4503`.
 
-Para obter mais detalhes, consulte [Noções básicas sobre o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens) no AEM](./understand-cross-origin-resource-sharing.md).
+Para mais detalhes, consulte [Entenda o compartilhamento de recursos entre origens (CORS) no AEM](./understand-cross-origin-resource-sharing.md).
 
-## www.example.com HTML e JAVASCRIPT
+## HTML e JavaScript de www.example.com
 
-Esta página da Web tem lógica de que
+Esta página da web segue esta lógica:
 
-1. Ao clicar no botão
-1. Faz uma solicitação [!DNL AJAX GET] para `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera o `jcr:title` da resposta JSON
+1. Clicar no botão
+1. Cria uma solicitação [!DNL AJAX GET] para `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera o formulário `jcr:title` da resposta de JSON
 1. Injeta o `jcr:title` no DOM
 
 ```xml
@@ -77,9 +77,9 @@ Esta página da Web tem lógica de que
 </html>
 ```
 
-## Configuração de fábrica do OSGi
+## Configuração de OSGi de fábrica
 
-A fábrica de Configuração OSGi para [!DNL Cross-Origin Resource Sharing] está disponível via:
+A configuração de OSGi de fábrica para [!DNL Cross-Origin Resource Sharing] está disponível via:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -101,9 +101,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuração do Dispatcher {#dispatcher-configuration}
 
-### Permitir cabeçalhos de solicitação CORS
+### Permitir cabeçalhos de solicitação do CORS
 
-Para permitir que os [cabeçalhos de solicitação HTTP necessários sejam transmitidos para o AEM para processamento](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#specifying-the-http-headers-to-pass-through-clientheaders), eles devem ser permitidos na configuração `/clientheaders` do Dispatcher.
+Para permitir que os [cabeçalhos de solicitação HTTP necessários sejam transmitidos para o AEM para processamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#specifying-the-http-headers-to-pass-through-clientheaders), eles precisam ser permitidos na configuração `/clientheaders` do Dispatcher.
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Para permitir que os [cabeçalhos de solicitação HTTP necessários sejam trans
 
 ### Armazenamento em cache de cabeçalhos de resposta do CORS
 
-Para permitir o armazenamento em cache e a veiculação de cabeçalhos CORS no conteúdo em cache, adicione a seguinte configuração [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#caching-http-response-headers) ao arquivo `dispatcher.any` de Publicação do AEM.
+Para permitir o armazenamento em cache e a veiculação de cabeçalhos do CORS no conteúdo em cache, adicione a seguinte configuração [/cache /headers](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#caching-http-response-headers) ao arquivo `dispatcher.any` do ambiente de publicação do AEM.
 
 ```
 /publishfarm {
@@ -140,15 +140,15 @@ Para permitir o armazenamento em cache e a veiculação de cabeçalhos CORS no c
 }
 ```
 
-**Reinicie o aplicativo do servidor Web** depois de fazer alterações no arquivo `dispatcher.any`.
+**Reinicie o aplicativo do servidor da web** depois de fazer alterações no arquivo `dispatcher.any`.
 
-Provavelmente, é necessário limpar totalmente o cache para garantir que os cabeçalhos sejam armazenados em cache de maneira adequada na próxima solicitação após uma atualização de configuração `/cache /headers`.
+Provavelmente será necessário limpar totalmente o cache para garantir que os cabeçalhos sejam armazenados em cache de maneira adequada na próxima solicitação após uma atualização da configuração `/cache /headers`.
 
-## Materiais de suporte {#supporting-materials}
+## Materiais de apoio {#supporting-materials}
 
-* [Jeeves para macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatível com Windows/macOS/Linux)
+* [Jeeves para macOS](https://apps.apple.com/br/app/jeeves-local-http-server/id980824182?mt=12)
+* [SimpleHTTPServer em Python](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatível com Windows, macOS e Linux)
 
-* [Noções básicas sobre o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens) no AEM](./understand-cross-origin-resource-sharing.md)
-* [Compartilhamento de Recursos entre Origens (W3C)](https://www.w3.org/TR/cors/)
-* [Controle de Acesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [Entenda o compartilhamento de recursos entre origens (CORS) no AEM](./understand-cross-origin-resource-sharing.md)
+* [Compartilhamento de recursos entre origens (W3C)](https://www.w3.org/TR/cors/)
+* [Controle de acesso de HTTP (Mozilla MDN)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Guides/CORS)

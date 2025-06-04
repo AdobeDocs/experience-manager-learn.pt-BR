@@ -11,51 +11,51 @@ jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Desenvolver um bloco com opções
 
-Este tutorial se baseia no tutorial do Edge Delivery Services e do Universal Editor, orientando você pelo processo de adicionar opções de bloco a um bloco. Ao definir opções de bloco, você pode personalizar a aparência e a funcionalidade de um bloco, permitindo que diferentes variações atendam a várias necessidades de conteúdo. Isso permite maior flexibilidade e reutilização no sistema de design do site.
+Este tutorial baseia-se no tutorial do Edge Delivery Services e do editor universal, guiando o usuário pelo processo de adicionar opções a um bloco. Ao definir opções de bloco, você pode personalizar a aparência e a funcionalidade de um bloco, permitindo que diferentes variações supram várias necessidades de conteúdo. Isso permite uma maior flexibilidade e reusabilidade no sistema de design do seu site.
 
-![Opção de bloqueio lado a lado](./assets/block-options/main.png){align="center"}
+![Opção de bloco lado a lado](./assets/block-options/main.png){align="center"}
 
-Neste tutorial, você adicionará opções de bloco ao bloco Teaser, permitindo que os autores escolham entre duas opções de exibição: **Padrão** e **Lado a lado**. A opção **Padrão** exibe a imagem acima e atrás do texto, enquanto a opção **Lado a lado** exibe a imagem e o texto lado a lado.
+Neste tutorial, você adicionará opções ao bloco de teaser, permitindo que os criadores escolham entre duas opções de exibição: **Padrão** e **Lado a lado**. A opção **Padrão** exibe a imagem acima e atrás do texto, enquanto a opção **Lado a lado** exibe a imagem e o texto lado a lado.
 
 ## Casos de uso comuns
 
-Casos de uso comuns para o uso de **Opções de Bloqueio** no desenvolvimento do **Edge Delivery Services** e do **Universal Editor** incluem, mas não estão limitados a:
+Os casos de uso comuns das **Opções de bloco** no desenvolvimento do **Edge Delivery Services** e do **editor universal** incluem, mas não se limitam a:
 
-1. **Variações de layout:** Alterne facilmente entre os layouts. Por exemplo, horizontal vs. vertical ou grade vs. lista.
-2. **Variações de estilo:** alterne facilmente entre temas ou tratamentos visuais. Por exemplo, modo claro vs. escuro ou texto grande vs. pequeno.
-3. **Controle de exibição de conteúdo:** alterna a visibilidade dos elementos ou alterna entre estilos de conteúdo (compacto vs. detalhado).
+1. **Variações de layout:** alterne facilmente entre os layouts. Por exemplo, horizontal versus vertical ou grade versus lista.
+2. **Variações de estilo:** alterne facilmente entre temas ou tratamentos visuais. Por exemplo, modo claro versus escuro ou texto grande versus pequeno.
+3. **Controle de exibição de conteúdo:** alterne a visibilidade dos elementos ou alterne entre estilos de conteúdo (compacto versus detalhado).
 
 Essas opções oferecem flexibilidade e eficiência na criação de blocos dinâmicos e adaptáveis.
 
-Este tutorial demonstra o caso de uso de variações de layout, em que o bloco Teaser pode ser exibido em dois layouts diferentes: **Padrão** e **Lado a lado**.
+Este tutorial demonstra o caso de uso de variações de layout, em que o bloco de teaser pode ser exibido em dois layouts diferentes: **Padrão** e **Lado a lado**.
 
-## Bloquear modelo
+## Modelo de bloco
 
-Para adicionar opções de bloco ao bloco Teaser, abra o fragmento JSON em `/block/teaser/_teaser.json` e adicione um novo campo à definição do modelo. Este campo define sua propriedade `name` como `classes`, que é um campo protegido usado pelo AEM para armazenar opções de bloco, que são aplicadas ao Edge Delivery Services HTML do bloco.
+Para adicionar opções ao bloco de teaser, abra seu fragmento de JSON em `/block/teaser/_teaser.json` e adicione um novo campo à definição do modelo. Esse campo define sua propriedade `name` como `classes`, que é um campo protegido usado pelo AEM para armazenar opções de bloco, que são aplicadas ao HTML do Edge Delivery Services do bloco.
 
-### Configurações de campo
+### Configurações de campos
 
-As guias abaixo ilustram várias maneiras de configurar opções de bloco no modelo de bloco, incluindo a seleção única com uma única classe CSS, a seleção única com várias classes CSS e a seleção múltipla com várias classes CSS. Este tutorial [implementa a abordagem mais simples](#field-configuration-for-this-tutorial) usada em **select com uma única classe CSS**.
+As guias abaixo ilustram várias maneiras de configurar opções de bloco no modelo de bloco, incluindo a seleção única com uma classe de CSS, a seleção única com várias classes de CSS e a seleção múltipla com várias classes de CSS. Este tutorial [implementa a abordagem mais simples](#field-configuration-for-this-tutorial) usada em **Seleção com uma classe de CSS**.
 
 >[!BEGINTABS]
 
->[!TAB Selecionar com classe CSS única]
+>[!TAB Seleção com uma única classe de CSS]
 
-Este tutorial demonstra como usar um tipo de entrada `select` (lista suspensa) para permitir que os autores escolham uma única opção de bloco, que é aplicada como uma única classe CSS correspondente.
+Este tutorial demonstra como usar um tipo de entrada `select` (lista suspensa) para permitir que os criadores escolham uma opção de bloco, que é aplicada como uma classe de CSS correspondente.
 
-![Selecionar com classe CSS única](./assets/block-options/tab-1.png){align="center"}
+![Seleção com uma única classe de CSS](./assets/block-options/tab-1.png){align="center"}
 
-#### Bloquear modelo
+#### Modelo de bloco
 
-A opção **Padrão** é representada por uma cadeia de caracteres vazia (`""`), enquanto a opção **Lado a Lado** usa `"side-by-side"`. O **nome** e o **valor** da opção não precisam ser iguais, mas o **valor** determina as classes CSS aplicadas ao HTML do bloco. Por exemplo, o valor da opção **Lado a Lado** poderia ser `layout-10` em vez de `side-by-side`. No entanto, é melhor usar nomes semanticamente significativos para classes CSS, garantindo clareza e consistência nos valores de opção.
+A opção **Padrão** é representada por uma string vazia (`""`), enquanto a opção **Lado a lado** usa `"side-by-side"`. O **nome** e o **valor** da opção não precisam ser iguais, mas o **valor** determina as classes de CSS aplicadas ao HTML do bloco. Por exemplo, o valor da opção **Lado a lado** pode ser `layout-10` em vez de `side-by-side`. No entanto, é melhor usar nomes semanticamente significativos para classes de CSS, garantindo clareza e consistência nos valores da opção.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -83,11 +83,11 @@ A opção **Padrão** é representada por uma cadeia de caracteres vazia (`""`),
 ...
 ```
 
-#### Bloquear HTML
+#### HTML do bloco
 
-Quando o autor seleciona uma opção, o valor correspondente é adicionado como uma classe CSS ao HTML do bloco:
+Quando o criador seleciona uma opção, o valor correspondente é adicionado como uma classe de CSS ao HTML do bloco:
 
-- Se **Padrão** estiver selecionado:
+- Se **Padrão** for selecionado:
 
   ```html
   <div class="block teaser">
@@ -95,7 +95,7 @@ Quando o autor seleciona uma opção, o valor correspondente é adicionado como 
   </div>
   ```
 
-- Se **Lado a lado** estiver selecionado:
+- Se **Lado a lado** for selecionado:
 
   ```html
   <div class="block teaser side-by-side">
@@ -103,20 +103,20 @@ Quando o autor seleciona uma opção, o valor correspondente é adicionado como 
   </div>
   ```
 
-Isso permite que um estilo diferente e um JavaScript condicional sejam aplicados, dependendo da abertura escolhida.
+Permite que um estilo diferente e um JavaScript condicional sejam aplicados, dependendo da abertura escolhida.
 
 
->[!TAB Selecionar com várias classes CSS]
+>[!TAB Seleção com várias classes de CSS]
 
-**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções avançadas de bloqueio.**
+**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções de bloco avançadas.**
 
-O tipo de entrada `select` permite que os autores escolham uma única opção de bloco, que pode, opcionalmente, mapear para várias classes CSS. Para fazer isso, liste as classes CSS como valores delimitados por espaço.
+O tipo de entrada `select` permite que os criadores escolham uma única opção de bloco, que pode, opcionalmente, ser mapeado para várias classes de CSS. Para isso, liste as classes de CSS como valores delimitados por espaço.
 
-![Selecionar com várias classes CSS](./assets/block-options/tab-2.png){align="center"}
+![Seleção com várias classes de CSS](./assets/block-options/tab-2.png){align="center"}
 
-#### Bloquear modelo
+#### Modelo de bloco
 
-Por exemplo, a opção **Lado a Lado** pode suportar variações em que a imagem aparece à esquerda (`side-by-side left`) ou à direita (`side-by-side right`).
+Por exemplo, a opção **Lado a lado** pode permitir variações nas quais a imagem aparece à esquerda (`side-by-side left`) ou à direita (`side-by-side right`).
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -148,11 +148,11 @@ Por exemplo, a opção **Lado a Lado** pode suportar variações em que a imagem
 ...
 ```
 
-#### Bloquear HTML
+#### HTML do bloco
 
-Quando o autor seleciona uma opção, o valor correspondente é aplicado como um conjunto de classes CSS separadas por espaços no HTML do bloco:
+Quando o autor seleciona uma opção, o valor correspondente é aplicado como um conjunto de classes de CSS separadas por espaços no HTML do bloco:
 
-- Se **Padrão** estiver selecionado:
+- Se **Padrão** for selecionado:
 
   ```html
   <div class="block teaser">
@@ -160,7 +160,7 @@ Quando o autor seleciona uma opção, o valor correspondente é aplicado como um
   </div>
   ```
 
-- Se **Lado a lado com Imagem à esquerda** estiver selecionado:
+- Se **Lado a lado com a imagem à esquerda** for selecionado:
 
   ```html
   <div class="block teaser side-by-side left">
@@ -168,7 +168,7 @@ Quando o autor seleciona uma opção, o valor correspondente é aplicado como um
   </div>
   ```
 
-- Se **Lado a lado com a Imagem à direita** estiver selecionado:
+- Se **Lado a lado com a imagem à direita** for selecionado:
 
   ```html
   <div class="block teaser side-by-side right">
@@ -176,20 +176,20 @@ Quando o autor seleciona uma opção, o valor correspondente é aplicado como um
   </div>
   ```
 
-Isso permite que estilos e JavaScript condicionais diferentes sejam aplicados, dependendo da opção escolhida.
+Permite que estilos diferentes e um JavaScript condicional sejam aplicados, dependendo da opção escolhida.
 
 
->[!TAB Multisseleção com várias classes CSS]
+>[!TAB Seleção múltipla com várias classes de CSS]
 
-**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções avançadas de bloqueio.**
+**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções de bloco avançadas.**
 
 O tipo de entrada `"component": "multiselect"` permite que o autor selecione várias opções simultaneamente. Isso permite permutas complexas da aparência do bloco ao combinar várias opções de design.
 
-![Multisseleção com várias classes CSS](./assets/block-options/tab-3.png){align="center"}
+![Seleção múltipla com várias classes de CSS](./assets/block-options/tab-3.png){align="center"}
 
-### Bloquear modelo
+### Modelo de bloco
 
-Por exemplo, a **Imagem lado a lado**, **Imagem à esquerda** e **Imagem à direita** podem oferecer suporte a variações em que a imagem está posicionada à esquerda (`side-by-side left`) ou à direita (`side-by-side right`).
+Por exemplo, a **Lado a lado**, **Imagem à esquerda** e **Imagem à direita** podem permitir variações nas quais a imagem é posicionada à esquerda (`side-by-side left`) ou à direita (`side-by-side right`).
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -221,11 +221,11 @@ Por exemplo, a **Imagem lado a lado**, **Imagem à esquerda** e **Imagem à dire
 ...
 ```
 
-#### Bloquear HTML
+#### HTML do bloco
 
-Quando o autor seleciona várias opções, os valores correspondentes são aplicados como classes CSS separadas por espaço no HTML do bloco:
+Quando o criador seleciona várias opções, os valores correspondentes são aplicados como classes de CSS separadas por espaço no HTML do bloco:
 
-- Se **Lado a lado** e **Imagem à esquerda** estiverem selecionados:
+- Se **Lado a lado** e **Imagem à esquerda** forem selecionados:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side left">
@@ -233,7 +233,7 @@ Quando o autor seleciona várias opções, os valores correspondentes são aplic
   </div>
   ```
 
-- Se **Lado a lado** e **Imagem à direita** estiverem selecionados:
+- Se **Lado a lado** e **Imagem à direita** forem selecionados:
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side right">
@@ -241,28 +241,28 @@ Quando o autor seleciona várias opções, os valores correspondentes são aplic
   </div>
   ```
 
-Embora a seleção múltipla ofereça flexibilidade, ela introduz complexidade no gerenciamento de permutas de design. Sem restrições, seleções conflitantes podem levar a experiências quebradas ou fora da marca.
+Embora a seleção múltipla ofereça flexibilidade, ela aumenta a complexidade do gerenciamento de permutas de design. Sem restrições, seleções conflitantes podem levar a experiências corrompidas ou não condizentes com a marca.
 
 Por exemplo:
 
-- **Imagem à esquerda** ou **Imagem à direita** sem selecionar **Lado a lado** aplica-as implicitamente ao **Padrão**, que sempre define a imagem como um plano de fundo, portanto, o alinhamento à esquerda e à direita é irrelevante.
+- **Imagem à esquerda** ou **Imagem à direita** sem selecionar **Lado a lado** aplica implicitamente o **Padrão**, que sempre define a imagem como um plano de fundo, portanto, o alinhamento à esquerda e à direita é irrelevante.
 - A seleção de **Imagem à esquerda** e **Imagem à direita** é contraditória.
-- Selecionar **lado a lado** sem **Imagem à esquerda** ou **Imagem à direita** pode ser considerado ambíguo, pois a posição da imagem não está especificada.
+- Selecionar **Lado a lado** sem **Imagem à esquerda** ou **Imagem à direita** pode ser considerado ambíguo, pois a posição da imagem não é especificada.
 
-Para evitar problemas e confusão do autor ao usar a seleção múltipla, verifique se as opções estão bem planejadas e se todas as permutas foram testadas. A seleção múltipla funciona melhor para aprimoramentos simples e não conflitantes, como &quot;grande&quot; ou &quot;destaque&quot;, em vez de opções de alteração de layout.
+Para evitar problemas e confusão do autor ao usar a seleção múltipla, verifique se as opções foram bem planejadas e se todas as permutas foram testadas. A seleção múltipla funciona melhor para aprimoramentos simples e não conflitantes, como “grande” ou “destaque”, em vez de opções de alteração de layout.
 
 
 >[!TAB Opção padrão]
 
-**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções avançadas de bloqueio.**
+**Esta abordagem não é usada neste tutorial, mas ilustra um método alternativo e opções de bloco avançadas.**
 
-As opções de bloco podem ser definidas como padrão ao adicionar uma nova instância de bloco a uma página no Universal Editor. Isso é feito definindo o valor padrão da propriedade `classes` na definição do [bloco](../5-new-block.md#block-definition).
+As opções de bloco podem ser definidas como padrão ao adicionar uma nova instância de bloco a uma página no editor universal. Para isso, é necessário definir o valor padrão da propriedade `classes` na [definição do bloco](../5-new-block.md#block-definition).
 
-#### Definição de bloco
+#### Definição do bloco
 
-No exemplo abaixo, a opção padrão é definida como **Lado a Lado** atribuindo a propriedade `value` do campo `classes` a `side-by-side`. A entrada da opção de bloco correspondente no modelo de bloco é opcional.
+No exemplo abaixo, a opção padrão é definida como **Lado a Lado**, atribuindo-se a propriedade `value` do campo `classes` a `side-by-side`. A entrada da opção de bloco correspondente no modelo de bloco é opcional.
 
-Você também pode definir várias entradas para o mesmo bloco, cada uma com um nome e classe diferentes. Isso permite que o Editor Universal exiba entradas de blocos distintos, cada um pré-configurado com uma opção de bloco específica. Embora esses apareçam como blocos separados no editor, a base de código contém um único bloco que é renderizado dinamicamente com base na opção selecionada.
+Você também pode definir várias entradas para o mesmo bloco, cada uma com um nome e uma classe diferentes. Isso permite que o editor universal exiba entradas de blocos distintas, cada uma pré-configurada com uma opção de bloco específica. Embora apareçam como blocos separados no editor, a base de código contém um bloco que é renderizado dinamicamente com base na opção selecionada.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -295,12 +295,12 @@ Você também pode definir várias entradas para o mesmo bloco, cada uma com um 
 >[!ENDTABS]
 
 
-### Configuração de campo para este tutorial
+### Configuração de campos para este tutorial
 
 
-Neste tutorial, usaremos a abordagem select with single CSS class descrita acima na primeira guia, que permite duas opções de bloco discreto: **Padrão** e **Lado a lado**.
+Neste tutorial, usaremos a abordagem “Seleção com uma única classe de CSS” descrita acima na primeira guia, que permite duas opções de bloco diferentes: **Padrão** e **Lado a lado**.
 
-Na definição do modelo no fragmento JSON do bloco, adicione um único campo de seleção para opções de bloco. Esse campo permite que os autores escolham entre o layout padrão e um layout lado a lado.
+Na definição do modelo no fragmento do JSON do bloco, adicione um campo de seleção para as opções de bloco. Esse campo permite que os autores escolham entre o layout padrão e o lado a lado.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -369,13 +369,13 @@ Na definição do modelo no fragmento JSON do bloco, adicione um único campo de
 }
 ```
 
-## Atualizar bloco no Editor Universal
+## Atualizar bloco no editor universal
 
-Para disponibilizar a entrada das opções de bloco atualizadas no Universal Editor, implante as alterações de código JSON no GitHub, crie uma nova página, adicione e crie o bloco Teaser com a opção **Lado a Lado** e publique a página para visualização. Depois de publicada, carregue a página no ambiente de desenvolvimento local para codificação.
+Para disponibilizar a entrada das opções de bloco atualizadas no editor universal, implante as alterações de código JSON no GitHub, crie uma nova página, adicione e crie o bloco de teaser com a opção **Lado a lado**, e publique a página para visualização. Depois de publicada, carregue a página no ambiente de desenvolvimento local para codificação.
 
-### Enviar alterações para o GitHub
+### Enviar alterações ao GitHub
 
-Para disponibilizar a entrada das opções de bloco atualizadas no Universal Editor para definir opções de bloco e desenvolver em relação ao HTML resultante, o projeto deve ser vinculado e as alterações enviadas para uma ramificação GitHub — neste caso, a ramificação `block-options`.
+Para disponibilizar a entrada das opções de bloco atualizadas no editor universal a fim de definir as opções de bloco e desenvolver em relação ao HTML resultante, o projeto precisa ser limpo, e as alterações enviadas a uma ramificação do GitHub (neste caso, a ramificação `block-options`).
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -390,31 +390,31 @@ $ git push origin teaser
 
 ### Criar uma página de teste
 
-No serviço de Autor do AEM, crie uma nova página para adicionar o bloco Teaser para desenvolvimento. Seguindo a convenção do capítulo [Criar um bloco](../6-author-block.md) do [Tutorial do desenvolvedor do Edge Delivery Services e do Universal Editor](../0-overview.md), crie uma página de teste em uma página `branches`, nomeando-a com o nome da ramificação Git em que você está trabalhando— neste caso, `block-options`.
+No serviço do AEM Author, crie uma nova página para adicionar o bloco de teaser para desenvolvimento. Seguindo a convenção do capítulo [Criar um bloco](../6-author-block.md) do [Tutorial do Edge Delivery Services e do editor universal para desenvolvedores](../0-overview.md), crie uma página de teste em uma página `branches`, dando-lhe o nome da ramificação do Git em que você está trabalhando (neste caso, `block-options`).
 
 ### Criar o bloco
 
-Edite a nova página **Opções de Bloco** no Editor Universal e adicione o bloco **Teaser**. Adicione o parâmetro de consulta `?ref=block-options` à URL para carregar a página usando o código da ramificação GitHub `block-options`,
+Edite a nova página **Opções de bloco** no editor universal e adicione o bloco de **teaser**. Adicione o parâmetro de consulta `?ref=block-options` ao URL para carregar a página com o código da ramificação do GitHub `block-options`,
 
-A caixa de diálogo de bloqueio agora inclui uma lista suspensa de **Opções de Teaser** com **Padrão** e **Lado a Lado** seleções. Escolha **Lado a Lado** e conclua a criação do conteúdo restante.
+A caixa de diálogo do bloco agora inclui uma lista suspensa de **Opções de teaser**, com as opções **Padrão** e **Lado a lado**. Escolha **Lado a lado** e conclua a criação de conteúdo restante.
 
-![Teaser com caixa de diálogo de bloco de opções](./assets/block-options/block-dialog.png){align="center"}
+![Teaser com caixa de diálogo de opções de bloco](./assets/block-options/block-dialog.png){align="center"}
 
-Opcionalmente, adicione dois blocos **Teaser**: um definido como **Padrão** e o outro como **Lado a Lado**. Isso permite que você visualize as duas opções lado a lado durante o desenvolvimento e garante que a implementação do **Lado a Lado** não afete a opção **Padrão**.
+Opcionalmente, adicione dois blocos de **teaser**: um definido como **Padrão** e o outro como **Lado a lado**. Isso permite que você visualize as duas opções lado a lado durante o desenvolvimento e garante que a implementação da opção **Lado a lado** não afete a opção **Padrão**.
 
 ### Publicar para visualização
 
-Depois que o bloco Teaser for adicionado à página, [publique a página para visualização](../6-author-block.md) usando o botão **Publicar** e escolhendo publicar em **Visualizar** no Universal Editor.
+Depois que o bloco de teaser for adicionado à página, [publique a página para visualização](../6-author-block.md), usando o botão **Publicar** e escolhendo publicar em **Visualizar** no editor universal.
 
-## Bloquear HTML
+## HTML do bloco
 
-Para iniciar o desenvolvimento de bloco, comece revisando a estrutura DOM exposta pela pré-visualização do Edge Delivery Services. O DOM é aprimorado com o JavaScript e estilizado com CSS, fornecendo a base para a criação e personalização do bloco.
+Para iniciar o desenvolvimento do bloco, revise primeiro a estrutura do DOM exposta pela visualização do Edge Delivery Services. O DOM é aprimorado com o JavaScript e estilizado com o CSS, servindo de base para a criação e personalização do bloco.
 
 >[!BEGINTABS]
 
->[!TAB DOM a decorar]
+>[!TAB DOM a ser decorado]
 
-O código a seguir é o DOM do bloco Teaser, com a opção de bloco **Lado a lado** selecionada, que é o destino a ser decorado usando JavaScript e CSS.
+O código a seguir é o DOM do bloco de teaser, com a opção de bloco **Lado a lado** selecionada, que é o destino a ser decorado com JavaScript e CSS.
 
 ```html{highlight="7"}
 ...
@@ -453,23 +453,23 @@ O código a seguir é o DOM do bloco Teaser, com a opção de bloco **Lado a lad
 
 >[!TAB Como encontrar o DOM]
 
-Para localizar o DOM a ser decorado, abra a página com o bloco no ambiente de desenvolvimento local, selecione o bloco usando as ferramentas de desenvolvedor do navegador da Web e inspecione o DOM. Isso permitirá identificar os elementos relevantes para decorar.
+Para localizar o DOM a ser decorado, abra a página com o bloco no seu ambiente de desenvolvimento local, selecione o bloco com as ferramentas de desenvolvedor do navegador da web e inspecione o DOM. Isso permitirá identificar os elementos relevantes a serem decorados.
 
-![Inspecionar DOM de bloco](./assets/block-options/dom.png){align="center"}
+![Inspecionar DOM do bloco](./assets/block-options/dom.png){align="center"}
 
 >[!ENDTABS]
 
-## Bloquear CSS
+## CSS do bloco
 
-Edite `blocks/teaser/teaser.css` para adicionar estilos CSS específicos para a opção **Lado a Lado**. Esse arquivo contém o CSS padrão do bloco.
+Edite `blocks/teaser/teaser.css` para adicionar estilos de CSS específicos para a opção **Lado a lado**. Esse arquivo contém o CSS padrão do bloco.
 
-Para modificar estilos da opção **Lado a Lado**, adicione uma nova regra CSS com escopo no arquivo `teaser.css` que segmente blocos de teaser configurados com a classe `side-by-side`.
+Para modificar os estilos da opção **Lado a lado**, adicione uma nova regra de CSS com escopo no arquivo `teaser.css` para direcionar os blocos de teaser configurados com a classe `side-by-side`.
 
 ```css
 .block.teaser.side-by-side { ... }
 ```
 
-Como alternativa, você pode usar o Aninhamento de CSS para obter uma versão mais concisa:
+Alternativamente, você pode usar o aninhamento de CSS para obter uma versão mais concisa:
 
 ```css
 .block.teaser {
@@ -481,9 +481,9 @@ Como alternativa, você pode usar o Aninhamento de CSS para obter uma versão ma
 }
 ```
 
-Na regra `&.side-by-side`, adicione as propriedades CSS necessárias para estilizar o bloco quando a classe `side-by-side` for aplicada.
+Na regra `&.side-by-side`, adicione as propriedades de CSS necessárias para estilizar o bloco quando a classe `side-by-side` for aplicada.
 
-Uma abordagem comum é redefinir os estilos padrão aplicando `all: initial` aos seletores compartilhados e adicionando os estilos necessários para a variante `side-by-side`. Se a maioria dos estilos for compartilhada entre opções, substituir propriedades específicas pode ser mais fácil. No entanto, se vários seletores precisarem de alterações, redefinir todos os estilos e reaplicar apenas os necessários poderá tornar o código mais claro e mais sustentável.
+Uma abordagem comum é redefinir os estilos padrão, aplicando-se `all: initial` aos seletores compartilhados e adicionando-se os estilos necessários para a variante `side-by-side`. Se a maioria dos estilos for compartilhada entre as opções, pode ser mais fácil substituir propriedades específicas. No entanto, se vários seletores precisarem de alterações, redefinir todos os estilos e reaplicar apenas os necessários poderá tornar o código mais claro e mais gerenciável.
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
 ```css
@@ -660,11 +660,11 @@ Uma abordagem comum é redefinir os estilos padrão aplicando `all: initial` aos
 ```
 
 
-## Bloquear JavaScript
+## JavaScript do bloco
 
-Identificar as opções ativas para o bloco é simples, verificando as classes aplicadas ao elemento do bloco. Neste exemplo, precisamos ajustar onde os estilos `.image-wrapper` são aplicados dependendo da opção ativa.
+Identificar a(s) opção(ões) de bloco ativa(s) é simples, bastando verificar as classes aplicadas ao elemento de bloco. Neste exemplo, precisamos ajustar onde os estilos `.image-wrapper` são aplicados de acordo com a opção ativa.
 
-A função `getOptions` retorna uma matriz de classes aplicada ao bloco, excluindo `block` e `teaser` (já que todos os blocos têm a classe `block` e todos os blocos Teaser têm a classe `teaser`). As classes restantes na matriz indicam as opções ativas. Se a matriz estiver vazia, a opção padrão será aplicada.
+A função `getOptions` retorna uma matriz de classes aplicada ao bloco, excluindo `block` e `teaser` (já que todos os blocos têm a classe `block` e todos os blocos de teaser têm a classe `teaser`). As classes restantes na matriz indicam as opções ativas. Se a matriz estiver vazia, a opção padrão será aplicada.
 
 ```javascript
 function getOptions(block) {
@@ -685,7 +685,7 @@ if (getOptions(block).includes('side-by-side')) {
 }
 ```
 
-O arquivo JavaScript completo atualizado para o bloco de teaser com as opções Padrão e Lado a Lado é o seguinte:
+O arquivo de JavaScript completo atualizado para o bloco de teaser com as opções “Padrão” e “Lado a lado” é o seguinte:
 
 [!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -756,13 +756,13 @@ export default function decorate(block) {
 
 ## Visualização do desenvolvimento
 
-À medida que o CSS e o JavaScript são adicionados, o ambiente de desenvolvimento local da CLI do AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se a imagem do teaser aumenta ou diminui o zoom.
+À medida que o CSS e o JavaScript são adicionados, o ambiente de desenvolvimento local da CLI do AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se o zoom da imagem do teaser aumenta ou diminui.
 
-![Visualização de desenvolvimento local de teaser usando CSS e JS](./assets/block-options//local-development-preview.png)
+![Visualização do desenvolvimento local do teaser com CSS e JS](./assets/block-options//local-development-preview.png)
 
-## Implante seu código
+## Limpar o seu código
 
-Certifique-se de [lint frequente](../3-local-development-environment.md#linting) suas alterações de código para mantê-lo limpo e consistente. A impressão regular ajuda a detectar problemas antecipadamente, reduzindo o tempo geral de desenvolvimento. Lembre-se, você não pode mesclar seu trabalho de desenvolvimento na ramificação `main` até que todos os problemas de listas sejam resolvidos!
+Certifique-se de [limpar com frequência](../3-local-development-environment.md#linting) as alterações no seu código para garantir que ele esteja limpo e seja consistente. A limpeza periódica ajuda a detectar problemas antecipadamente, reduzindo o tempo geral de desenvolvimento. Lembre-se de que você não pode mesclar o seu trabalho de desenvolvimento com a ramificação `main` até que todos os problemas de limpeza sejam resolvidos.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -770,9 +770,9 @@ Certifique-se de [lint frequente](../3-local-development-environment.md#linting)
 $ npm run lint
 ```
 
-## Visualizar no Editor Universal
+## Visualizar no editor universal
 
-Para exibir as alterações no Editor universal do AEM, adicione, confirme e envie-as para a ramificação do repositório Git usada pelo Editor universal. Isso garante que a implementação em bloco não interrompa a experiência de criação.
+Para exibir as alterações no editor universal do AEM, adicione, confirme e envie-as à ramificação do repositório do Git usada pelo editor universal. Isso garante que a implementação do bloco não interrompa a experiência de criação.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -783,13 +783,13 @@ $ git commit -m "CSS and JavaScript implementation for Teaser block option Side-
 $ git push origin block-options
 ```
 
-Agora, as alterações ficam visíveis no Editor Universal ao usar o parâmetro de consulta `?ref=block-options`.
+Agora, as alterações ficam visíveis no editor universal ao usar o parâmetro de consulta `?ref=block-options`.
 
-![Teaser no Editor Universal](./assets/block-options/universal-editor-preview.png){align="center"}
+![Teaser no editor universal](./assets/block-options/universal-editor-preview.png){align="center"}
 
 
-## Parabéns.
+## Parabéns!
 
-Agora você explorou as opções de bloco no Edge Delivery Services e no Universal Editor, fornecendo as ferramentas para personalizar e simplificar a edição de conteúdo com maior flexibilidade. Comece a aplicar essas opções em seus projetos para melhorar a eficiência e manter a consistência.
+Você explorou as opções de bloco no Edge Delivery Services e no editor universal, e agora dispõe das ferramentas para personalizar e simplificar a edição de conteúdo com mais flexibilidade. Comece a aplicar essas opções nos seus projetos para melhorar a eficiência e manter a consistência.
 
-Para obter mais práticas recomendadas e técnicas avançadas, consulte a [documentação do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para ver mais práticas recomendadas e técnicas avançadas, consulte a [documentação do editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

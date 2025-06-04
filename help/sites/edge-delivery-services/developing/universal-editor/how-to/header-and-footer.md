@@ -1,6 +1,6 @@
 ---
-title: Cabeçalho e Rodapé
-description: Saiba como o cabeçalho e os rodapés são desenvolvidos no Edge Delivery Services e no Universal Editor.
+title: Cabeçalho e rodapé
+description: Saiba como o cabeçalho e os rodapés são desenvolvidos no Edge Delivery Services e no editor universal.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -11,9 +11,9 @@ jira: KT-17470
 duration: 300
 exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 ![Cabeçalho e rodapé](./assets/header-and-footer/hero.png){align="center"}
 
-Os cabeçalhos e rodapés desempenham uma função exclusiva no Edge Delivery Services (EDS), pois estão vinculados diretamente aos elementos HTML `<header>` e `<footer>`. Diferentemente do conteúdo de página normal, eles são gerenciados separadamente e podem ser atualizados de forma independente sem a necessidade de limpar todo o cache da página. Enquanto sua implementação estiver no projeto de código como blocos em `blocks/header` e `blocks/footer`, os autores poderão editar seu conteúdo por meio de páginas dedicadas do AEM que podem conter qualquer combinação de blocos.
+Os cabeçalhos e rodapés desempenham uma função exclusiva no Edge Delivery Services (EDS), pois estão vinculados diretamente aos elementos de HTML `<header>` e `<footer>`. Diferentemente do conteúdo normal da página, eles são gerenciados separadamente e podem ser atualizados de forma independente, sem a necessidade de limpar todo o cache da página. Embora sua implementação fique no projeto de código como blocos em `blocks/header` e `blocks/footer`, os criadores podem editar seu conteúdo por meio de páginas dedicadas do AEM que podem conter qualquer combinação de blocos.
 
 ## Bloco de cabeçalho
 
 ![Bloco de cabeçalho](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-O cabeçalho é um bloco especial vinculado ao elemento `<header>` do Edge Delivery Services HTML.
-O elemento `<header>` é entregue vazio e preenchido via XHR (AJAX) em uma página separada do AEM.
+O cabeçalho é um bloco especial vinculado ao elemento de HTML `<header>` do Edge Delivery Services.
+O elemento `<header>` é entregue em branco e preenchido via XHR (AJAX) em uma página separada do AEM.
 Isso permite que o cabeçalho seja gerenciado independentemente do conteúdo da página e atualizado sem exigir uma limpeza completa do cache de todas as páginas.
 
 O bloco de cabeçalho é responsável por solicitar o fragmento de página do AEM que contém o conteúdo do cabeçalho e renderizá-lo no elemento `<header>`.
@@ -58,45 +58,45 @@ export default async function decorate(block) {
 }
 ```
 
-A função `loadFragment()` faz uma solicitação XHR (AJAX) para `${navPath}.plain.html` que retorna uma representação EDS HTML do HTML da página do AEM que existe na marca `<main>` da página, processa seu conteúdo com qualquer bloco que ele possa conter e retorna a árvore DOM atualizada.
+A função `loadFragment()` faz uma solicitação XHR (AJAX) a `${navPath}.plain.html`, que retorna uma representação de EDS HTML do HTML da página do AEM que existe na tag `<main>` da página, processa seu conteúdo com qualquer bloco que possa conter e retorna a árvore de DOM atualizada.
 
 ## Criar a página de cabeçalho
 
-Antes de desenvolver o bloco de cabeçalho, primeiro crie seu conteúdo no Editor universal para ter algo para desenvolver.
+Antes de desenvolver o bloco de cabeçalho, crie seu conteúdo no editor universal para ter algo para desenvolver.
 
-O conteúdo do cabeçalho reside em uma página dedicada do AEM chamada `nav`.
+O conteúdo do cabeçalho fica em uma página dedicada do AEM denominada `nav`.
 
 ![Página de cabeçalho padrão](./assets/header-and-footer/header-page.png){align="center"}
 
 Para criar o cabeçalho:
 
-1. Abrir a página `nav` no Editor Universal
-1. Substitua o botão padrão por um **Bloco de imagem** contendo o logotipo WKND
-1. Atualize o menu de navegação no **Bloco de texto** ao:
-   - Adicionar os links de navegação desejados
-   - Criação de itens de subnavegação onde necessário
-   - Definindo todos os links para a home page (`/`) por enquanto
+1. Abra a página `nav` no editor universal
+1. Substitua o botão padrão por um **Bloco de imagem** que contém o logotipo WKND
+1. Atualize o menu de navegação no **Bloco de texto** da seguinte forma:
+   - Adicione os links de navegação desejados
+   - Crie itens de subnavegação onde forem necessários
+   - Defina todos os links para a página inicial (`/`) por enquanto
 
-![Bloco de cabeçalho do autor no Editor Universal](./assets/header-and-footer/header-author.png){align="center"}
+![Criar bloco de cabeçalho no editor universal](./assets/header-and-footer/header-author.png){align="center"}
 
 ### Publicar para visualização
 
 Com a página de cabeçalho atualizada, [publique a página para visualização](../6-author-block.md).
 
-Como o conteúdo do cabeçalho reside em sua própria página (a página `nav`), você deve publicar essa página especificamente para que as alterações de cabeçalho tenham efeito. Publicar outras páginas que usam o cabeçalho não atualizará o conteúdo do cabeçalho no Edge Delivery Services.
+Como o conteúdo do cabeçalho fica em sua própria página (a página `nav`), é necessário publicar essa página especificamente, para que as alterações do cabeçalho tenham efeito. Publicar outras páginas que usam o cabeçalho não atualizará o conteúdo do cabeçalho no Edge Delivery Services.
 
-## Bloquear HTML
+## HTML do bloco
 
-Para iniciar o desenvolvimento de bloco, comece revisando a estrutura DOM exposta pela pré-visualização do Edge Delivery Services. O DOM é aprimorado com o JavaScript e estilizado com CSS, fornecendo a base para a criação e personalização do bloco.
+Para iniciar o desenvolvimento do bloco, revise primeiro a estrutura do DOM exposta pela visualização do Edge Delivery Services. O DOM é aprimorado com o JavaScript e estilizado com o CSS, servindo de base para a criação e personalização do bloco.
 
-Como o cabeçalho é carregado como um fragmento, precisamos examinar a HTML retornada pela solicitação XHR depois de inserida no DOM e decorada via `loadFragment()`. Isso pode ser feito inspecionando o DOM nas ferramentas do desenvolvedor do navegador.
+Como o cabeçalho é carregado como um fragmento, precisamos examinar o HTML retornado pela solicitação XHR depois de inserida no DOM e decorada via `loadFragment()`. Para isso, é possível inspecionar o DOM nas ferramentas do desenvolvedor do navegador.
 
 
 >[!BEGINTABS]
 
->[!TAB DOM a decorar]
+>[!TAB DOM a ser decorado]
 
-A seguir, está o HTML da página de cabeçalho depois que ela é carregada usando o `header.js` fornecido e inserida no DOM:
+Confira abaixo o HTML da página de cabeçalho depois que ela é carregada com o `header.js` fornecido e injetada no DOM:
 
 ```html
 <header class="header-wrapper">
@@ -141,16 +141,16 @@ A seguir, está o HTML da página de cabeçalho depois que ela é carregada usan
 
 >[!TAB Como encontrar o DOM]
 
-Para localizar e inspecionar o elemento `<header>` da página nas ferramentas de desenvolvedor do navegador da Web.
+Para localizar e inspecionar o elemento `<header>` da página nas ferramentas do desenvolvedor do navegador da web.
 
-![Cabeçalho DOM](./assets/header-and-footer/header-dom.png){align="center"}
+![Cabeçalho do DOM](./assets/header-and-footer/header-dom.png){align="center"}
 
 >[!ENDTABS]
 
 
-## Bloquear JavaScript
+## JavaScript do bloco
 
-O arquivo `/blocks/header/header.js` do [modelo de projeto AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fornece JavaScript para navegação, incluindo menus suspensos e uma exibição móvel responsiva.
+O arquivo `/blocks/header/header.js` do [modelo de projeto XWalk padronizado do AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fornece o JavaScript para navegação, incluindo menus suspensos e uma exibição responsiva para dispositivos móveis.
 
 Embora o script `header.js` geralmente seja altamente personalizado para corresponder ao design de um site, é essencial manter as primeiras linhas em `decorate()`, que recuperam e processam o fragmento da página de cabeçalho.
 
@@ -165,23 +165,23 @@ export default async function decorate(block) {
   ...
 ```
 
-O código restante pode ser modificado para atender às necessidades do projeto.
+O código restante pode ser modificado para suprir as necessidades do projeto.
 
-Dependendo dos requisitos do cabeçalho, o código da chapa pode ser ajustado ou removido. Neste tutorial, usaremos o código fornecido e o aprimoraremos adicionando um hiperlink ao redor da primeira imagem criada, vinculando-o à página inicial do site.
+Dependendo dos requisitos do cabeçalho, o código padronizado pode ser ajustado ou removido. Neste tutorial, usaremos o código fornecido, aprimorando-o por meio da adição de um hiperlink ao redor da primeira imagem criada e vinculando-o à página inicial do site.
 
-O código do modelo processa o fragmento da página de cabeçalho, supondo que ele consista de três seções na seguinte ordem:
+O código do modelo processa o fragmento de página de cabeçalho, presumindo que ele consiste em três seções na seguinte ordem:
 
-1. **Seção da marca** - Contém o logotipo e é estilizado com a classe `.nav-brand`.
-2. **Seções seção** - Define o menu principal do site e é estilizado com `.nav-sections`.
-3. **Seção de ferramentas** - Inclui elementos como pesquisa, logon/logout e perfil, estilizado com `.nav-tools`.
+1. **Seção da marca**: contém o logotipo e é estilizada com a classe `.nav-brand`.
+2. **Seção de seções**: define o menu principal do site e é estilizada com `.nav-sections`.
+3. **Seção de ferramentas**: inclui elementos como pesquisa, logon/logoff e perfil, estilizada com `.nav-tools`.
 
-Para criar um hiperlink da imagem do logotipo para a página inicial, atualizamos o JavaScript de bloco da seguinte maneira:
+Para criar um hiperlink da imagem do logotipo para a página inicial, atualizamos o JavaScript do bloco da seguinte maneira:
 
 >[!BEGINTABS]
 
->[!TAB JavaScript Atualizado]
+>[!TAB JavaScript atualizado]
 
-O código atualizado que ajusta a imagem do logotipo com um link para a página inicial do site (`/`) é mostrado abaixo:
+O código atualizado que envolve a imagem do logotipo com um link para a página inicial do site (`/`) é mostrado abaixo:
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -214,9 +214,9 @@ export default async function decorate(block) {
 }
 ```
 
->[!TAB JavaScript Original]
+>[!TAB JavaScript original]
 
-Abaixo está a `header.js` original gerada a partir do modelo:
+Confira abaixo o `header.js` original gerado a partir do modelo:
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -250,13 +250,13 @@ export default async function decorate(block) {
 >[!ENDTABS]
 
 
-## Bloquear CSS
+## CSS do bloco
 
-Atualize o `/blocks/header/header.css` para estilizá-lo de acordo com a marca da WKND.
+Atualize o `/blocks/header/header.css` para estilizá-lo de acordo com a marca WKND.
 
-Adicionaremos o CSS personalizado na parte inferior do `header.css` para facilitar a visualização e o entendimento das alterações no tutorial. Embora esses estilos pudessem ser integrados diretamente nas regras CSS do modelo, mantê-los separados ajuda a ilustrar o que foi modificado.
+Adicionaremos o CSS personalizado na parte inferior do `header.css` para facilitar a visualização e o entendimento das alterações no tutorial. Embora esses estilos possam ser integrados diretamente às regras de CSS do modelo, mantê-los separados ajuda a ilustrar o que foi modificado.
 
-Como estamos adicionando nossas novas regras após o conjunto original, vamos envolvê-las com um seletor de CSS `header .header.block nav` para garantir que elas tenham precedência sobre as regras de modelo.
+Como estamos adicionando as novas regras após o conjunto original, vamos envolvê-las com um seletor de CSS `header .header.block nav` para garantir que elas tenham prioridade sobre as regras do modelo.
 
 [!BADGE /blocks/header/header.css]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -322,13 +322,13 @@ header .header.block nav {
 
 ## Visualização do desenvolvimento
 
-À medida que o CSS e o JavaScript são desenvolvidos, o ambiente de desenvolvimento local da CLI do AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se a imagem do teaser aumenta ou diminui o zoom.
+À medida que o CSS e o JavaScript são desenvolvidos, o ambiente de desenvolvimento local da CLI do AEM recarrega as alterações automaticamente, permitindo uma visualização rápida e fácil de como o código afeta o bloco. Passe o mouse sobre a CTA e verifique se o zoom da imagem do teaser aumenta ou diminui.
 
-![Visualização de desenvolvimento local do cabeçalho usando CSS e JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![Visualização do desenvolvimento local do cabeçalho com CSS e JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-## Implante seu código
+## Limpar o seu código
 
-Certifique-se de [lint frequente](../3-local-development-environment.md#linting) suas alterações de código para mantê-lo limpo e consistente. A impressão regular ajuda a detectar problemas antecipadamente, reduzindo o tempo geral de desenvolvimento. Lembre-se, você não pode mesclar seu trabalho de desenvolvimento na ramificação `main` até que todos os problemas de listas sejam resolvidos!
+Certifique-se de [limpar com frequência](../3-local-development-environment.md#linting) as alterações no seu código para que esteja limpo e seja consistente. A limpeza periódica ajuda a detectar problemas antecipadamente, reduzindo o tempo geral de desenvolvimento. Lembre-se de que você não pode mesclar o seu trabalho de desenvolvimento com a ramificação `main` até que todos os problemas de limpeza sejam resolvidos.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -336,9 +336,9 @@ Certifique-se de [lint frequente](../3-local-development-environment.md#linting)
 $ npm run lint
 ```
 
-## Visualizar no Editor Universal
+## Visualizar no editor universal
 
-Para exibir as alterações no Editor universal do AEM, adicione, confirme e envie-as para a ramificação do repositório Git usada pelo Editor universal. Isso garante que a implementação em bloco não interrompa a experiência de criação.
+Para exibir as alterações no editor universal do AEM, adicione, confirme e envie-as à ramificação do repositório do Git usada pelo editor universal. Isso garante que a implementação do bloco não interrompa a experiência de criação.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -349,41 +349,41 @@ $ git commit -m "CSS and JavaScript implementation for Header block"
 $ git push origin header-and-footer
 ```
 
-Agora, as alterações ficam visíveis no Editor Universal ao usar o parâmetro de consulta `?ref=header-and-footer`.
+Agora, as alterações ficam visíveis no editor universal ao usar o parâmetro de consulta `?ref=header-and-footer`.
 
-![Cabeçalho no Editor Universal](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
+![Cabeçalho no editor universal](./assets/header-and-footer/header-universal-editor-preview.png){align="center"}
 
 ## Rodapé
 
-Assim como o cabeçalho, o conteúdo do rodapé é criado em uma página dedicada do AEM; nesse caso, a página Rodapé (`footer`). O rodapé segue o mesmo padrão de ser carregado como um fragmento e decorado com CSS e JavaScript.
+Assim como o cabeçalho, o conteúdo do rodapé é criado em uma página dedicada do AEM; neste caso, a página de rodapé (`footer`). O rodapé segue o mesmo padrão de ser carregado como um fragmento e decorado com CSS e JavaScript.
 
 >[!BEGINTABS]
 
 >[!TAB Rodapé]
 
-O rodapé deve ser implementado com um layout de três colunas que contém:
+O rodapé deve ser implementado com um layout de três colunas, contendo:
 
-- Uma coluna da esquerda com uma promoção (imagem e texto)
-- Uma coluna do meio com links de navegação
-- Uma coluna à direita com links de redes sociais
-- Uma linha na parte inferior abrangendo as três colunas com os direitos autorais
+- Uma coluna à esquerda com uma promoção (imagem e texto)
+- Uma coluna no meio com links de navegação
+- Uma coluna à direita com links para redes sociais
+- Uma linha na parte inferior, abrangendo as três colunas, com os direitos autorais
 
 ![Visualizações do rodapé](./assets/header-and-footer/footer-preview.png){align="center"}
 
 >[!TAB Conteúdo do rodapé]
 
-Use o bloco de colunas na página Rodapé para criar o efeito de três colunas.
+Use o bloco de colunas na página de rodapé para criar o efeito de três colunas.
 
 | Coluna 1 | Coluna 2 | Coluna 3 |
 | ---------|----------------|---------------|
 | Imagem | Cabeçalho 3 | Cabeçalho 3 |
 | Texto | Lista de links | Lista de links |
 
-![Cabeçalho DOM](./assets/header-and-footer/footer-author.png){align="center"}
+![DOM do cabeçalho](./assets/header-and-footer/footer-author.png){align="center"}
 
 >[!TAB Código do rodapé]
 
-O CSS abaixo estimula o bloco de rodapé com um layout de três colunas, espaçamento consistente e tipografia. A implementação do rodapé usa somente a JavaScript fornecida pelo modelo.
+O CSS abaixo define o estilo do bloco de rodapé com um layout de três colunas, espaçamento consistente e tipografia. A implementação do rodapé usa somente o JavaScript fornecido pelo modelo.
 
 [!BADGE /blocks/footer/footer.css]{type=Neutral tooltip="Nome do arquivo da amostra de código abaixo."}
 
@@ -460,15 +460,15 @@ footer {
 
 >[!ENDTABS]
 
-## Parabéns.
+## Parabéns!
 
-Agora você explorou como os cabeçalhos e rodapés são gerenciados e desenvolvidos no Edge Delivery Services e no Universal Editor. Você aprendeu como eles são:
+Agora, você já sabe como os cabeçalhos e rodapés são gerenciados e desenvolvidos no Edge Delivery Services e no editor universal. Você aprendeu que eles são:
 
-- Criado em páginas dedicadas do AEM separadas do conteúdo principal
-- Carregado de forma assíncrona como fragmentos para permitir atualizações independentes
-- Decorado com JavaScript e CSS para criar experiências de navegação responsivas
-- Integrado perfeitamente ao Universal Editor para facilitar o gerenciamento de conteúdo
+- Criados em páginas dedicadas do AEM separadamente do conteúdo principal
+- Carregados de forma assíncrona como fragmentos para permitir atualizações independentes
+- Decorados com JavaScript e CSS para criar experiências de navegação responsivas
+- Integrados perfeitamente ao editor universal para facilitar o gerenciamento de conteúdo
 
-Esse padrão fornece uma abordagem flexível e manutenível para a implementação de componentes de navegação em todo o site.
+Esse padrão fornece uma abordagem flexível e passível de manutenção à implementação de componentes de navegação em todo o site.
 
-Para obter mais práticas recomendadas e técnicas avançadas, consulte a [documentação do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Para ver mais práticas recomendadas e técnicas avançadas, consulte a [documentação do editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

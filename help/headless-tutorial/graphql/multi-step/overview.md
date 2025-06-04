@@ -1,6 +1,6 @@
 ---
-title: Tutorial prático da introdução ao AEM Headless - GraphQL
-description: Um tutorial completo que ilustra como criar e expor conteúdo usando as APIs do AEM GraphQL.
+title: Introdução ao tutorial prático do AEM Headless - GraphQL
+description: Um tutorial completo que ilustra como criar e expor conteúdo usando APIs GraphQL do AEM.
 doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
@@ -13,30 +13,30 @@ last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
 source-git-commit: 888b00396f1d5d0b2dcb6895affdadf2907162fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Introdução ao AEM Headless - GraphQL
 
-Um tutorial completo que ilustra como criar e expor conteúdo usando as APIs do GraphQL do AEM e consumi-lo por um aplicativo externo, em um cenário de CMS headless.
+Um tutorial completo que ilustra como criar e expor conteúdo usando as APIs GraphQL do AEM, a fim de ser consumido por um aplicativo externo em um cenário de CMS headless.
 
-Este tutorial explora como as APIs GraphQL do AEM e os recursos headless podem ser usados para potencializar as experiências encontradas em um aplicativo externo.
+Este tutorial explora como as APIs GraphQL e os recursos headless do AEM podem ser usados para potencializar as experiências exibidas em um aplicativo externo.
 
 Este tutorial aborda os seguintes tópicos:
 
 * Criar uma configuração de projeto
 * Criar modelos de fragmento de conteúdo para modelar dados
 * Crie fragmentos de conteúdo com base nos modelos criados anteriormente.
-* Explore como os fragmentos de conteúdo no AEM podem ser consultados usando a ferramenta de desenvolvimento GraphiQL integrada.
-* Para armazenar ou criar consultas persistentes do GraphQL no AEM
-* Consumir consultas persistentes do GraphQL de um aplicativo React de amostra
+* Descubra como consultar os fragmentos de conteúdo no AEM usando a ferramenta de desenvolvimento GraphiQL integrada.
+* Para armazenar ou criar consultas persistentes de GraphQL no AEM
+* Consumir consultas persistentes de GraphQL de um aplicativo React de amostra
 
 ## Pré-requisitos {#prerequisites}
 
-São necessários os seguintes itens para seguir este tutorial:
+Os seguintes elementos são necessários para seguir este tutorial:
 
 * Habilidades básicas em HTML e JavaScript
 * As seguintes ferramentas devem ser instaladas localmente:
@@ -46,14 +46,14 @@ São necessários os seguintes itens para seguir este tutorial:
 
 ### Ambiente do AEM
 
-Para concluir este tutorial, é recomendável ter acesso de administrador do AEM a um ambiente do AEM as a Cloud Service.
+Para concluir este tutorial, é recomendável que você tenha acesso de admin do AEM a um ambiente do AEM as a Cloud Service.
 
-## Vamos começar!
+## Vamos começar.
 
-Inicie o tutorial com [Definindo Modelos de Fragmento de Conteúdo](content-fragment-models.md).
+Inicie o tutorial com o tema [Definir modelos de fragmento de conteúdo](content-fragment-models.md).
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis no [AEM Guides - Projeto GitHub do WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis nos [Guias do AEM - Projeto GitHub de GraphQL do WKND](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Se você encontrar um problema com o tutorial ou o código, deixe um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se você encontrar um problema com o tutorial ou o código, abra um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

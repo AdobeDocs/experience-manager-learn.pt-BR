@@ -13,20 +13,20 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configurar um ambiente de desenvolvimento do local
+# Configurar um ambiente de desenvolvimento local
 
-Como configurar um ambiente de desenvolvimento local para desenvolvimento do Edge Delivery Services.
+Como configurar um ambiente de desenvolvimento local do Edge Delivery Services para desenvolvimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434736/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
-## Etapas descritas em vídeo
+## Etapas descritas no vídeo
 
 1. Instalar a CLI do AEM
 
@@ -34,14 +34,14 @@ Como configurar um ambiente de desenvolvimento local para desenvolvimento do Edg
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Altere o diretório para o diretório do seu projeto, que é um repositório Git criado a partir do modelo [AEM padronizado](https://github.com/adobe/aem-boilerplate).
+1. Alterar o diretório para o caminho do seu projeto, que leva a um repositório do Git criado a partir do modelo [padronizado do AEM](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git
    $ cd my-project
    ```
 
-1. Execute a AEM CLI para iniciar a instância local do AEM.
+1. Executar a CLI do AEM para iniciar a instância local do AEM.
 
    ```
    $ pwd
@@ -60,4 +60,4 @@ Como configurar um ambiente de desenvolvimento local para desenvolvimento do Edg
    opening default browser: http://localhost:3000/
    ```
 
-1. Abra http://localhost:3000/ no navegador da Web para ver o site da AEM.
+1. Abrir http://localhost:3000/ no navegador da web para ver o seu site do AEM.

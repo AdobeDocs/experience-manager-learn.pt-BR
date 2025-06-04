@@ -1,6 +1,6 @@
 ---
-title: Como otimizar o compartilhamento de redes sociais no Edge Delivery Services
-description: Saiba como otimizar seu conteúdo para compartilhamento em redes sociais usando o Edge Delivery Services.
+title: Como otimizar o compartilhamento em redes sociais no Edge Delivery Services
+description: Saiba como otimizar o seu conteúdo para compartilhamento em redes sociais com o Edge Delivery Services.
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ jira: KT-14647
 thumbnail: 3425974.jpeg
 exl-id: 0e4158c4-3605-43c2-9c0f-3b7ab8ca5b91
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Compartilhamento em redes sociais
 
-Saiba como otimizar seu conteúdo para compartilhamento em redes sociais usando o Edge Delivery Services.
+Saiba como otimizar o seu conteúdo para compartilhamento em redes sociais com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439442/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425974/?learn=on)

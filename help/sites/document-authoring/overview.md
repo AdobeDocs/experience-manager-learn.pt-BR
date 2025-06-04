@@ -1,6 +1,6 @@
 ---
-title: Vídeos de criação de documentos
-description: Saiba como configurar a criação de documentos no AEM.
+title: Vídeos sobre criação de documentos
+description: Saiba como ajustar e configurar a criação de documentos no AEM.
 version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
@@ -12,17 +12,17 @@ duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Vídeos de criação de documentos
+# Vídeos sobre criação de documentos
 
-Entenda como configurar a criação de documentos, permitindo que os autores do AEM editem e publiquem documentos usando o Microsoft Word ou o Google Docs.
+Entenda como configurar a criação de documentos, permitindo que os criadores do AEM editem e publiquem documentos com o Microsoft Word ou o Google Docs.
 
-Revise a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR) para obter detalhes completos sobre a configuração da criação de documentos.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html) para mais detalhes sobre a configuração da criação de documentos.
 
 ## Introdução à criação de documentos
 
@@ -33,10 +33,10 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="set-up.md" title="Configuração de criação de documento"
+            <a href="set-up.md" title="Configuração de criação de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438867/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
                 alt="Visão geral da criação de documentos">
             </a>
           </figure>
@@ -46,7 +46,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="set-up.md" title="Configurando a criação de documentos">Configurar criação de documento</a>
+              <a href="set-up.md" title="Configurar criação de documentos">Configurar criação de documentos</a>
             </p>
             <p class="is-size-6">Saiba como configurar a criação de documentos.</p>
             <a href="set-up.md" class="spectrum-Button
@@ -65,11 +65,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="preview-and-publish.md" title="Visualização e publicação de conteúdo"
+            <a href="preview-and-publish.md" title="Visualizar e publicar conteúdo"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441345/?format=jpeg&captions=por_br"
-                alt="Visualização e publicação de conteúdo">
+                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
+                alt="Visualizar e publicar conteúdo">
             </a>
           </figure>
         </div>
@@ -78,9 +78,9 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="preview-and-publish.md" title="Visualização e publicação de conteúdo">Visão geral do editor</a>
+              <a href="preview-and-publish.md" title="Visualizar e publicar conteúdo">Visão geral do editor</a>
             </p>
-            <p class="is-size-6">Uma breve visão geral da visualização e publicação de conteúdo usando o AEM Sidekick.</p>
+            <p class="is-size-6">Uma visão geral breve da visualização e publicação de conteúdo com o AEM Sidekick.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -100,18 +100,18 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="document-structure.md" title="Estrutura do documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438815/?format=jpeg&captions=por_br" alt="Estrutura do documento">
+                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Estrutura do documento">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minuto</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Estrutura do documento">Estrutura do documento</a>
+              <a href="document-structure.md" title="Estrutura do documento">Estrutura dos documentos</a>
             </p>
-            <p class="is-size-6">Explore a estrutura dos documentos.</p>
+            <p class="is-size-6">Familiarize-se com a estrutura dos documentos.</p>
             <a href="document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -131,18 +131,18 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="default-content-and-sections.md" title="Conteúdo e seções padrão"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437980/?format=jpeg&captions=por_br" alt="Conteúdo e seções padrão">
+                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="Conteúdo e seções padrão">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minuto</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="Conteúdo e seções padrão">Alternância de novo editor</a>
+              <a href="default-content-and-sections.md" title="Conteúdo e seções padrão">Novo botão do editor</a>
             </p>
-            <p class="is-size-6">Explore os conceitos de criação do documento de conteúdo padrão e as seções.</p>
+            <p class="is-size-6">Familiarize-se com os conceitos de conteúdo e seções padrão na criação do documentos.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -161,7 +161,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="Blocos e blocos automáticos" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3439509/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
                 alt="Blocos e blocos automáticos">
             </a>
           </figure>
@@ -169,12 +169,12 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minuto</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="blocks-and-autoblocks.md" title="Blocos e autoblocos">
-                Blocos e autoblocos</a>
+              <a href="blocks-and-autoblocks.md" title="Blocos e blocos automáticos">
+                Blocos e blocos automáticos</a>
             </p>
-            <p class="is-size-6">Explore os conceitos na criação de documentos de blocos e bloqueios automáticos.</p>
+            <p class="is-size-6">Familiarize-se com os conceitos de blocos e blocos automáticos na criação de documentos.</p>
             <a href="blocks-and-autoblocks.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
@@ -194,18 +194,18 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="redirects.md" title="Redirecionamentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438548/?format=jpeg&captions=por_br" alt="Redirecionamentos">
+                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redirecionamentos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minuto</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="redirects.md" title="Redirecionamentos">Criar redirecionamentos</a>
             </p>
-            <p class="is-size-6">Saiba como os redirecionamentos são criados usando a criação de documentos.</p>
+            <p class="is-size-6">Saiba como redirecionamentos são criados na criação de documentos.</p>
             <a href="redirects.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -225,7 +225,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="bulk-metadata.md" title="Metadados em massa"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438417/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
                 alt="Metadados em massa">
             </a>
           </figure>
@@ -233,12 +233,12 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minuto</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Metadados em massa">Idioma
-                cópias</a>
+              <a href="bulk-metadata.md" title="Metadados em massa">Cópias
+                em outros idiomas</a>
             </p>
-            <p class="is-size-6">Explore como os metadados em massa são tratados na criação de documentos.</p>
+            <p class="is-size-6">Saiba como os metadados em massa são tratados na criação de documentos.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -255,22 +255,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="page-metadata.md" title="Metadados de página"
+            <a href="page-metadata.md" title="Metadados das páginas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438072/?format=jpeg&captions=por_br"
-                alt="Metadados de página">
+                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
+                alt="Metadados das páginas">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="page-metadata.md" title="Metadados de página">Metadados da página</a>
+              <a href="page-metadata.md" title="Metadados das páginas">Metadados das páginas</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos gerencia metadados de página.</p>
+            <p class="is-size-6">Saiba como a criação de documentos gerencia os metadados das páginas.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -287,22 +287,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="author-authentication.md" title="Autenticação do autor"
+            <a href="author-authentication.md" title="Autenticação do criador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438183/?format=jpeg&captions=por_br"
-                alt="Autenticação do autor">
+                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
+                alt="Autenticação do criador">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="author-authentication.md" title="Autenticação do autor">Autenticação do autor</a>
+              <a href="author-authentication.md" title="Autenticação do criador">Autenticação do criador</a>
             </p>
-            <p class="is-size-6">Saiba como configurar a autenticação do autor.</p>
+            <p class="is-size-6">Saiba como configurar a autenticação do criador.</p>
             <a href="author-authentication.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -327,7 +327,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="./how-to/responsive-navigation.md" title="Navegação responsiva"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438171/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
                 alt="Navegação responsiva">
             </a>
           </figure>
@@ -335,11 +335,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/responsive-navigation.md" title="Navegação responsiva">Navegação responsiva</a>
             </p>
-            <p class="is-size-6">Explore como a criação de documentos pode definir a navegação responsiva.</p>
+            <p class="is-size-6">Saiba como a criação de documentos pode definir uma navegação responsiva.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -356,22 +356,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-audit.md" title="Auditoria de Documentos"
+            <a href="./how-to/document-audit.md" title="Auditoria de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437716/?format=jpeg&captions=por_br"
-                alt="Auditoria de Documentos">
+                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
+                alt="Auditoria de documentos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Auditoria de Documentos">Auditoria de documentos</a>
+              <a href="./how-to/document-audit.md" title="Auditoria de documentos">Auditoria de documentos</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com a auditoria de documentos.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata a auditoria de documentos.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -388,22 +388,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-permissions.md" title="Permissões de documento"
+            <a href="./how-to/document-permissions.md" title="Permissões de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438106/?format=jpeg&captions=por_br"
-                alt="Permissões de documento">
+                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
+                alt="Permissões de documentos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-permissions.md" title="Permissões de documento">Permissões de documento </a>
+              <a href="./how-to/document-permissions.md" title="Permissões de documentos">Permissões de documentos </a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com permissões de documento.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata as permissões de documentos.</p>
             <a href="./how-to/document-permissions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -420,22 +420,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-versions.md" title="Versões do documento"
+            <a href="./how-to/document-versions.md" title="Versões dos documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438801/?format=jpeg&captions=por_br"
-                alt="Versões do documento">
+                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
+                alt="Versões dos documentos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-versions.md" title="Versões do documento">Versões do documento</a>
+              <a href="./how-to/document-versions.md" title="Versões dos documentos">Versões dos documentos</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com versões de documentos.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata as versões dos documentos.</p>
             <a href="./how-to/document-versions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -452,22 +452,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-workflows.md" title="Fluxos de trabalho de documento"
+            <a href="./how-to/document-workflows.md" title="Fluxos de trabalho de documentos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438295/?format=jpeg&captions=por_br"
-                alt="Fluxos de trabalho de documento">
+                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
+                alt="Fluxos de trabalho de documentos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-workflows.md" title="Fluxos de trabalho de documento">Fluxos de trabalho de documentos</a>
+              <a href="./how-to/document-workflows.md" title="Fluxos de trabalho de documentos">Fluxos de trabalho de documentos</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com fluxos de trabalho de documentos.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata os fluxos de trabalho de documentos.</p>
             <a href="./how-to/document-workflows.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -484,22 +484,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/iframes.md" title="Utilização de iFrames"
+            <a href="./how-to/iframes.md" title="Usar iFrames"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438394/?format=jpeg&captions=por_br"
-                alt="Utilização de iFrames">
+                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
+                alt="Usar iFrames">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/iframes.md" title="Utilização de iFrames">Usando iFrames</a>
+              <a href="./how-to/iframes.md" title="Usar iFrames">Usar iFrames</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com vídeos e iFrames.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata vídeos e iFrames.</p>
             <a href="./how-to/iframes.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -516,22 +516,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/image-alt-text.md" title="Usar texto alternativo"
+            <a href="./how-to/image-alt-text.md" title="Usar textos alternativos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438680/?format=jpeg&captions=por_br"
-                alt="Usar texto alternativo">
+                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
+                alt="Usar textos alternativos">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Usar texto alternativo">Texto alternativo de imagem de criação</a>
+              <a href="./how-to/image-alt-text.md" title="Usar textos alternativos">Criar textos alternativos de imagens</a>
             </p>
-            <p class="is-size-6">Saiba como a criação de documentos lida com o texto alternativo da imagem.</p>
+            <p class="is-size-6">Saiba como a criação de documentos trata textos alternativos de imagens.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -548,22 +548,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/no-index.md" title="Impedindo Indexação"
+            <a href="./how-to/no-index.md" title="Prevenir indexação"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438119/?format=jpeg&captions=por_br"
-                alt="Impedindo Indexação">
+                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
+                alt="Prevenir indexação">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/no-index.md" title="Impedindo Indexação">Impedir indexação do mecanismo de pesquisa</a>
+              <a href="./how-to/no-index.md" title="Prevenir indexação">Prevenir indexação por mecanismos de pesquisa</a>
             </p>
-            <p class="is-size-6">Saiba como impedir a indexação por mecanismos de pesquisa.</p>
+            <p class="is-size-6">Saiba como prevenir a indexação por mecanismos de pesquisa.</p>
             <a href="./how-to/no-index.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -583,7 +583,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438907/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
                 alt="Dynamic Media">
             </a>
           </figure>
@@ -591,11 +591,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
             </p>
-            <p class="is-size-6">Saiba como usar o Dynamic Media para a entrega otimizada de imagens.</p>
+            <p class="is-size-6">Saiba como usar o Dynamic Media para uma entrega otimizada de imagens.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -612,22 +612,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/migration-using-importer.md" title="Migração de site usando o Importador"
+            <a href="./how-to/migration-using-importer.md" title="Migração de sites com o importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3443701/?format=jpeg&captions=por_br"
-                alt="Migração de site usando o Importador">
+                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
+                alt="Migração de sites com o importador">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/migration-using-importer.md" title="Migração de site usando o Importador">Migração de sites usando o Importador</a>
+              <a href="./how-to/migration-using-importer.md" title="Migração de sites com o importador">Migração de sites com o importador</a>
             </p>
-            <p class="is-size-6">Saiba como migrar sites para o Edge Delivery Services usando a ferramenta AEM Importer.</p>
+            <p class="is-size-6">Saiba como migrar sites para o Edge Delivery Services com a ferramenta de importador do AEM.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -644,22 +644,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/customizing-importer.md" title="Personalização do importador"
+            <a href="./how-to/customizing-importer.md" title="Personalizar o importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3444250/?format=jpeg&captions=por_br"
-                alt="Personalização do importador">
+                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
+                alt="Personalizar o importador">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">3 minutos</p>
+              class="is-size-6">Três minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/customizing-importer.md" title="Personalização do importador">Personalizando o importador</a>
+              <a href="./how-to/customizing-importer.md" title="Personalizar o importador">Personalizar o importador</a>
             </p>
-            <p class="is-size-6">Saiba como personalizar a ferramenta AEM Importer para migração de site.</p>
+            <p class="is-size-6">Saiba como personalizar o importador do AEM para migrar sites.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -676,22 +676,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/bulk-importing-using-importer.md" title="Importação em massa usando o Importador"
+            <a href="./how-to/bulk-importing-using-importer.md" title="Importar em massa com o importador"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3445890/?format=jpeg&captions=por_br"
-                alt="Importação em massa usando o Importador">
+                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
+                alt="Importar em massa com o importador">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">3 minutos</p>
+              class="is-size-6">Três minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/bulk-importing-using-importer.md" title="Importação em massa usando o Importador">Importação em massa usando o Importador</a>
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importar em massa com o importador">Importar em massa com o importador</a>
             </p>
-            <p class="is-size-6">Saiba como importar páginas da Web em massa usando a ferramenta AEM Importer durante a migração do site.</p>
+            <p class="is-size-6">Saiba como importar páginas da web em massa com o importador do AEM ao migrar sites.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -704,7 +704,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
     </div>                
   </div>
 
-### Gerar vídeos de variações
+### Vídeos sobre a geração de variações
 
 <div class="columns is-multiline">
     <!-- Intro Generate Variation -->
@@ -716,7 +716,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="./how-to/generate-variations/overview.md" title="Gerar variações"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441335/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
                 alt="Gerar variações">
             </a>
           </figure>
@@ -724,11 +724,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/overview.md" title="Gerar variações">Gerar Variações</a>
+              <a href="./how-to/generate-variations/overview.md" title="Gerar variações">Gerar variações</a>
             </p>
-            <p class="is-size-6">Introdução ao Gerar variações no Edge Delivery Services e entender como ele pode ser útil para profissionais de marketing.</p>
+            <p class="is-size-6">Introdução à geração de variações no Edge Delivery Services. Noções básicas de como ela pode ser útil para profissionais de marketing.</p>
             <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -745,22 +745,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/configure-sidekick.md" title="Gerar variações - Configurar Sidekick"
+            <a href="./how-to/generate-variations/configure-sidekick.md" title="Gerar variações: configurar o Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436993/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Configurar Sidekick">
+                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                alt="Gerar variações: configurar o Sidekick">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="Gerar variações - Configurar Sidekick">Gerar Variações - Configurar Sidekick</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="Gerar variações: configurar o Sidekick">Gerar variações: configurar o Sidekick</a>
             </p>
-            <p class="is-size-6">Explore como configurar o sidekick para Gerar variações na criação de documentos do Edge Delivery Services.</p>
+            <p class="is-size-6">Saiba como configurar o Sidekick para gerar variações na criação de documentos do Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -777,22 +777,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/prompt-templates.md" title="Gerar variações - Modelos de prompt"
+            <a href="./how-to/generate-variations/prompt-templates.md" title="Gerar variações: modelos de prompt"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441335/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Modelos de prompt">
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                alt="Gerar variações: modelos de prompt">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/prompt-templates.md" title="Gerar variações - Modelos de prompt">Gerar Variações - Modelos de prompt</a>
+              <a href="./how-to/generate-variations/prompt-templates.md" title="Gerar variações: modelos de prompt">Gerar variações: modelos de prompt</a>
             </p>
-            <p class="is-size-6">Saiba como usar modelos de prompt para Gerar variações.</p>
+            <p class="is-size-6">Saiba como usar modelos de prompt ao gerar variações.</p>
             <a href="./how-to/generate-variations/prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -809,22 +809,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações - Modelos de prompt personalizados"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações: modelos de prompt personalizados"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438504/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Modelos de prompt personalizados">
+                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                alt="Gerar variações: modelos de prompt personalizados">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações - Modelos de prompt personalizados">Gerar Variações - Modelos de prompt personalizados</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações: modelos de prompt personalizados">Gerar variações: modelos de prompt personalizados</a>
             </p>
-            <p class="is-size-6">Aprenda a criar os modelos de prompt personalizados para Gerar variações.</p>
+            <p class="is-size-6">Saiba como criar modelos de prompt personalizados ao gerar variações.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -841,22 +841,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações - Salvar modelos de prompt personalizados"
+            <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações: salvar modelos de prompt personalizados"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437509/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Salvar modelos de prompt personalizados">
+                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                alt="Gerar variações: salvar modelos de prompt personalizados">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações - Salvar modelos de prompt personalizados">Gerar variações - Salvar modelos de prompt personalizados</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Gerar variações: salvar modelos de prompt personalizados">Gerar variações: salvar modelos de prompt personalizados</a>
             </p>
-            <p class="is-size-6">Aprenda a salvar os modelos de prompt personalizados para Gerar variações.</p>
+            <p class="is-size-6">Saiba como salvar modelos de prompt personalizados ao gerar variações.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -873,22 +873,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-target-audiences.md" title="Gerar variações - Uso de públicos da Adobe Target"
+            <a href="./how-to/generate-variations/using-target-audiences.md" title="Gerar variações: usar públicos-alvo do Adobe Target"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437760/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Uso de públicos da Adobe Target">
+                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
+                alt="Gerar variações: usar públicos-alvo do Adobe Target">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-target-audiences.md" title="Gerar variações - Uso de públicos da Adobe Target">Gerar variações - Usando públicos da Adobe Target</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="Gerar variações: usar públicos-alvo do Adobe Target">Gerar variações: usar públicos-alvo do Adobe Target</a>
             </p>
-            <p class="is-size-6">Saiba como usar os públicos-alvo do Adobe Target para direcionar o público-alvo correto para suas variações de conteúdo.</p>
+            <p class="is-size-6">Saiba como usar públicos-alvo do Adobe Target para direcionar o público-alvo correto nas suas variações de conteúdo.</p>
             <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -905,22 +905,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Gerar variações - Uso de públicos-alvo de arquivos CSV"
+            <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Gerar variações: usar públicos-alvo de arquivos CSV"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436892/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Uso de públicos-alvo de arquivos CSV">
+                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
+                alt="Gerar variações: usar públicos-alvo de arquivos CSV">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Gerar variações - Uso de públicos-alvo de arquivos CSV">Gerar variações - Usando públicos-alvo de arquivos CSV</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Gerar variações: usar públicos-alvo de arquivos CSV">Gerar variações: usar públicos-alvo de arquivos CSV</a>
             </p>
-            <p class="is-size-6">Saiba como usar arquivos CSV de público-alvo para direcionar o público-alvo correto para suas variações de conteúdo.</p>
+            <p class="is-size-6">Saiba como usar públicos-alvo de arquivos CSV para direcionar o público-alvo correto nas suas variações de conteúdo.</p>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -937,20 +937,20 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Gerar variações - Usar Adobe Firefly"
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Gerar variações: usar o Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438361/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Usar Adobe Firefly">
+                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
+                alt="Gerar variações: usar o Adobe Firefly">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Gerar variações - Usar Adobe Firefly">Gerar Variações - Usar Adobe Firefly</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Gerar variações: usar o Adobe Firefly">Gerar variações: usar o Adobe Firefly</a>
             </p>
             <p class="is-size-6">Saiba como usar o Adobe Firefly para criar imagens usadas nas variações de conteúdo.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
@@ -969,22 +969,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/actions.md" title="Gerar variações - Ações em uma variação gerada"
+            <a href="./how-to/generate-variations/actions.md" title="Gerar variações: ações em uma variação gerada"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437285/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Ações em uma variação gerada">
+                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
+                alt="Gerar variações: ações em uma variação gerada">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutos</p>
+              class="is-size-6">Um minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/actions.md" title="Gerar variações - Ações em uma variação gerada">Gerar Variações - Ações em uma variação gerada</a>
+              <a href="./how-to/generate-variations/actions.md" title="Gerar variações: ações em uma variação gerada">Gerar variações: ações em uma variação gerada</a>
             </p>
-            <p class="is-size-6">Explore as ações que podem ser usadas em uma variação de conteúdo gerada.</p>
+            <p class="is-size-6">Familiarize-se com as ações que podem ser usadas em uma variação de conteúdo gerada.</p>
             <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1001,22 +1001,22 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/trust-privacy.md" title="Gerar variações - Confiança e privacidade"
+            <a href="./how-to/generate-variations/trust-privacy.md" title="Gerar variações: confiança e privacidade"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440019/?format=jpeg&captions=por_br"
-                alt="Gerar variações - Confiança e privacidade">
+                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
+                alt="Gerar variações: confiança e privacidade">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="Gerar variações - Confiança e privacidade">Gerar variações - Confiança e Privacidade</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="Gerar variações: confiança e privacidade">Gerar variações: confiança e privacidade</a>
             </p>
-            <p class="is-size-6">Explorar como o Adobe lida com confiança e privacidade para gerar variações.</p>
+            <p class="is-size-6">Saiba como o Adobe trata a confiança e a privacidade ao gerar variações.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1036,7 +1036,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="./how-to/experimentation-framework.md" title="Visão geral da estrutura de experimentação"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437859/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
                 alt="Visão geral da estrutura de experimentação">
             </a>
           </figure>
@@ -1044,11 +1044,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/experimentation-framework.md" title="Visão geral da estrutura de experimentação">Visão geral da estrutura de experimentação</a>
             </p>
-            <p class="is-size-6">Explore a estrutura de experimentação que permite aos profissionais de marketing testar quais variações de conteúdo são mais eficazes.</p>
+            <p class="is-size-6">Familiarize-se com a estrutura de experimentação, que permite que profissionais de marketing testem quais variações de conteúdo são mais eficazes.</p>
             <a href="./how-to/experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1065,20 +1065,20 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/setup-experimentation-framework.md" title="Configuração da estrutura de experimentação"
+            <a href="./how-to/setup-experimentation-framework.md" title="Configurar estrutura de experimentação"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438933/?format=jpeg&captions=por_br"
-                alt="Configuração da estrutura de experimentação">
+                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
+                alt="Configurar estrutura de experimentação">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Configuração da estrutura de experimentação">Configurando a estrutura de experimentação</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Configurar estrutura de experimentação">Configurar estrutura de experimentação</a>
             </p>
             <p class="is-size-6">Saiba como configurar a estrutura de experimentação na criação de documentos do Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
@@ -1100,7 +1100,7 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
             <a href="./how-to/experimentation-add-metadata.md" title="Adicionar metadados para experimentação"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440110/?format=jpeg&captions=por_br"
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
                 alt="Adicionar metadados para experimentação">
             </a>
           </figure>
@@ -1108,11 +1108,11 @@ Revise a [documentação](https://experienceleague.adobe.com/docs/experience-man
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">2 minutos</p>
+              class="is-size-6">Dois minutos</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-add-metadata.md" title="Adicionar metadados para experimentação">Adicionando metadados para experimentação</a>
+              <a href="./how-to/experimentation-add-metadata.md" title="Adicionar metadados para experimentação">Adicionar metadados para experimentação</a>
             </p>
-            <p class="is-size-6">Explore a adição de metadados para experimentação</p>
+            <p class="is-size-6">Saiba como adicionar metadados para experimentação</p>
             <a href="./how-to/experimentation-add-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

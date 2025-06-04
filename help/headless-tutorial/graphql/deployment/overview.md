@@ -1,6 +1,6 @@
 ---
 title: Implantações do AEM Headless
-description: Saiba mais sobre as várias considerações de implantação para aplicativos AEM Headless.
+description: Saiba mais sobre as várias considerações de implantação para aplicativos do AEM Headless.
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -12,33 +12,33 @@ last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Implantações do AEM Headless
 
-As implantações de clientes do AEM Headless assumem muitas formas; SPA hospedado na AEM, SPA externo, site, aplicativo móvel ou até mesmo processo de servidor para servidor.
+As implantações de clientes do AEM Headless assumem muitas formas; SPA hospedado no AEM, SPA externo, site, aplicativo móvel ou até mesmo processo de servidor para servidor.
 
-Dependendo do cliente e de como ele é implantado, as implantações do AEM Headless têm considerações diferentes.
+Dependendo do cliente e de como ele é implantado, as implantações do AEM Headless implicam considerações diferentes.
 
 ## Arquitetura de serviço do AEM
 
-Antes de explorar as considerações sobre implantação, é fundamental compreender a arquitetura lógica da AEM, bem como a separação e as funções dos níveis de serviço da AEM as a Cloud Service. A AEM as a Cloud Service é composta de dois serviços lógicos:
+Antes de ver as considerações de implantação, é fundamental compreender a arquitetura lógica do AEM, bem como a separação e as funções dos níveis de serviço do AEM as a Cloud Service. O AEM as a Cloud Service consiste em dois serviços lógicos:
 
 + O __AEM Author__ é o serviço no qual as equipes criam, colaboram e publicam fragmentos de conteúdo (e outros ativos).
-+ __Publicação do AEM__ é o serviço que publicou Os fragmentos de conteúdo (e outros ativos) são replicados para consumo geral.
-+ __Visualização do AEM__ é o serviço que imita a Publicação do AEM no comportamento, mas tem conteúdo publicado nele para fins de visualização ou revisão. A Visualização do AEM destina-se a públicos-alvo internos, e não à entrega de conteúdo em geral. O uso da Visualização do AEM é opcional, com base no fluxo de trabalho desejado.
++ O __AEM Publish__ é o serviço no qual os fragmentos de conteúdo (e outros ativos) publicados são replicados para consumo geral.
++ O __AEM Preview__ é o serviço que imita o comportamento do AEM Publish, mas o conteúdo é publicado nele para fins de visualização ou revisão. O AEM Preview destina-se a públicos-alvo internos, não à entrega de conteúdo geral. O uso do AEM Preview é opcional, dependendo do fluxo de trabalho desejado.
 
 ![Arquitetura de serviço do AEM](./assets/overview/aem-service-architecture.png)
 
 Arquitetura típica de implantação headless do AEM as a Cloud Service_
 
-Os clientes do AEM Headless que operam em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo publicado e aprovado. Os clientes que interagem com o AEM Author precisam ter cuidado especial, pois o AEM Author é seguro por padrão, exigindo autorização para todas as solicitações, e também pode ter trabalho em andamento ou conteúdo não aprovado.
+Os clientes do AEM Headless que operam em uma capacidade de produção normalmente interagem com o AEM Publish, que contém o conteúdo publicado e aprovado. Os clientes que interagem com o AEM Author precisam ter cuidado especial, pois o AEM Author é seguro por padrão, exigindo autorização para todas as solicitações, e também pode ter trabalhos em andamento ou conteúdo não aprovado.
 
-## Implantações de clientes headless
+## Implantações headless de clientes
 
 <div class="columns is-multiline">
     <!-- Single-page App (SPA) -->
@@ -56,7 +56,7 @@ Os clientes do AEM Headless que operam em uma capacidade de produção normalmen
                    <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="Aplicativo de página única (SPA)">Aplicativo de página única (SPA)</a></p>
                    <p class="is-size-6">Saiba mais sobre as considerações de implantação para aplicativos de página única (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                    </a>
                </div>
            </div>
@@ -67,17 +67,17 @@ Os clientes do AEM Headless que operam em uma capacidade de produção normalmen
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="./web-component.md" title="Componente da Web/JS" tabindex="-1">
-                   <img class="is-bordered-r-small" src="./assets/web-component/web-component-card.png" alt="Componente da Web/JS">
+               <a href="./web-component.md" title="Componente da web/JS" tabindex="-1">
+                   <img class="is-bordered-r-small" src="./assets/web-component/web-component-card.png" alt="Componente da web/JS">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Componente da Web/JS">Componente da Web/JS</a></p>
-               <p class="is-size-6">Saiba mais sobre as considerações de implantação para componentes da Web e consumidores headless do JavaScript baseados em navegador.</p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Componente da web/JS">Componente da web/JS</a></p>
+               <p class="is-size-6">Saiba mais sobre as considerações de implantação para componentes da web e consumidores headless do JavaScript baseados em navegadores.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
            </div>
        </div>
@@ -98,7 +98,7 @@ Os clientes do AEM Headless que operam em uma capacidade de produção normalmen
                <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Aplicativos móveis">Aplicativo móvel</a></p>
                <p class="is-size-6">Saiba mais sobre as considerações de implantação para aplicativos móveis.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
            </div>
        </div>
@@ -119,7 +119,7 @@ Os clientes do AEM Headless que operam em uma capacidade de produção normalmen
                <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="Aplicativos de servidor para servidor">Aplicativo de servidor para servidor</a></p>
                <p class="is-size-6">Saiba mais sobre as considerações de implantação para aplicativos de servidor para servidor</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                </a>
            </div>
        </div>
