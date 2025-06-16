@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2213'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Mapear componentes de SPA para componentes do AEM {#map-components}
+
+{{spa-editor-deprecation}}
 
 Saiba como mapear componentes do Angular para componentes do Adobe Experience Manager (AEM) com o AEM SPA Editor JS SDK. O mapeamento de componentes permite que os usuários façam atualizações dinâmicas em componentes SPA no Editor SPA do AEM, de modo semelhante à criação tradicional no AEM.
 
@@ -74,7 +77,7 @@ O conceito básico é mapear um componente de SPA para um componente do AEM. Com
 
 ## Inspecione o componente de Texto
 
-O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
+O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
 
 Vamos ver como o componente funciona.
 
@@ -434,7 +437,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    O componente **Contêiner de Layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=pt-BR#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
+   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
 
 3. Retorne a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Adicione componentes adicionais de **Imagem** e tente redimensioná-los usando a opção **Layout**:
 
@@ -454,7 +457,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    ![Criação final de amostra de capítulo](assets/map-components/final-page.png)
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu a mapear componentes de SPA para Componentes do AEM e implementou um novo componente `Image`. Você também pode explorar os recursos responsivos do **Contêiner de layout**.
 

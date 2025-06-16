@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # Criar projeto {#spa-editor-project}
+
+{{spa-editor-deprecation}}
 
 Saiba como gerar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo React integrado ao AEM SPA Editor.
 
@@ -64,7 +67,7 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
    >
    > Se estiver direcionado para o AEM 6.5.5+, substitua `aemVersion="cloud"` por `aemVersion="6.5.5"`. Se for para 6.4.8+, use `aemVersion="6.4.8"`.
 
-   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
+   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
 
    Uma lista completa de propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -89,7 +92,7 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
        |--- .gitignore
    ```
 
-   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o módulo `ui.frontend`, que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na [documentação do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
+   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o módulo `ui.frontend`, que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na [documentação do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 ## Implantar e criar o projeto
 
@@ -224,7 +227,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
    >
    > Pode ser útil instalar uma extensão de navegador para formatar automaticamente a saída JSON.
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro projeto do Editor SPA do AEM.
 

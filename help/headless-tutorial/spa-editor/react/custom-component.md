@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 82466e0e-b573-440d-b806-920f3585b638
 duration: 323
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Criar um componente de clima personalizado {#custom-component}
+
+{{spa-editor-deprecation}}
 
 Saiba como criar um componente de clima personalizado para ser usado com o Editor SPA do AEM. Saiba como desenvolver caixas de diálogo de criação e Modelos Sling para estender o modelo JSON e preencher um componente personalizado. A [API de Clima Aberto](https://openweathermap.org) e o [componente de Clima Aberto do React](https://www.npmjs.com/package/react-open-weather) são usados.
 
@@ -48,7 +51,7 @@ Um componente do AEM é definido como um nó e propriedades. No projeto, esses n
 
 >[!NOTE]
 >
-> Uma atualização rápida das [noções básicas dos componentes do AEM pode ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=pt-BR).
+> Uma atualização rápida das [noções básicas dos componentes do AEM pode ser útil](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. No IDE de sua escolha, abra a pasta `ui.apps`.
 2. Navegue até `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` e crie uma nova pasta chamada `open-weather`.
@@ -148,7 +151,7 @@ Um componente do AEM é definido como um nó e propriedades. No projeto, esses n
 
 ## Criar o modelo do Sling
 
-Os Modelos do Sling são objetos POJO (Plain Old Java Objects) orientados por anotações que facilitam o mapeamento de dados do JCR para variáveis Java. Os [Modelos do Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=pt-BR#sling-models) geralmente funcionam para encapsular uma lógica de negócios complexa do lado do servidor para Componentes do AEM.
+Os Modelos do Sling são objetos POJO (Plain Old Java Objects) orientados por anotações que facilitam o mapeamento de dados do JCR para variáveis Java. Os [Modelos do Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=en#sling-models) geralmente funcionam para encapsular uma lógica de negócios complexa do lado do servidor para Componentes do AEM.
 
 No contexto do Editor SPA, os Modelos Sling expõem o conteúdo de um componente por meio do modelo JSON por meio de um recurso que usa o [Exportador de Modelo Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=pt-BR).
 
@@ -386,7 +389,7 @@ Em seguida, crie o componente `Open Weather` usando o Editor SPA do AEM.
 
    Os valores JSON são gerados pelo Modelo Sling. Esses valores JSON são passados para o componente React como props.
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu a criar um componente AEM personalizado para ser usado com o Editor SPA. Você também aprendeu como caixas de diálogo, propriedades JCR e Modelos Sling interagem para produzir o modelo JSON.
 

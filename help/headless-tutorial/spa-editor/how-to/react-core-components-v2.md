@@ -11,33 +11,34 @@ thumbnail: kt-10900.jpeg
 doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Como usar os componentes editáveis do AEM React v2
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 O AEM fornece os [Componentes editáveis do AEM React v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components), um SDK baseado em Node.js que permite a criação de componentes do React, que oferecem suporte à edição de componentes no contexto usando o AEM SPA Editor.
 
-+ [npm módulo](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-+ [Projeto do Github](https://github.com/adobe/aem-react-editable-components)
-+ [Documentação do Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=pt-BR)
+* [npm módulo](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Projeto do Github](https://github.com/adobe/aem-react-editable-components)
+* [Documentação do Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html)
 
 
 Para obter mais detalhes e amostras de código para os Componentes editáveis do AEM React v2, consulte a documentação técnica:
 
-+ [Integração com a documentação do AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
-+ [Documentação de componente editável](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-+ [Documentação de ajuda](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
+* [Integração com a documentação do AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
+* [Documentação de componente editável](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
+* [Documentação de ajuda](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## Páginas do AEM
 
-Os Componentes editáveis do AEM React funcionam com os aplicativos Editor de SPA ou SPA React remoto. O conteúdo que preenche os componentes editáveis do React deve ser exposto por meio de páginas do AEM que estendem o [componente de página do SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=pt-BR). Os componentes do AEM, que são mapeados para componentes editáveis do React, devem implementar a [estrutura do Exportador de Componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=pt-BR) da AEM - como os [Componentes WCM principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+Os Componentes editáveis do AEM React funcionam com os aplicativos Editor de SPA ou SPA React remoto. O conteúdo que preenche os componentes editáveis do React deve ser exposto por meio de páginas do AEM que estendem o [componente de página do SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). Os componentes do AEM, que são mapeados para componentes editáveis do React, devem implementar a [estrutura do Exportador de Componentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) da AEM - como os [Componentes WCM principais do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
 
 
 ## Dependências
@@ -46,8 +47,7 @@ Certifique-se de que o aplicativo React está em execução no Node.js 14+.
 
 O conjunto mínimo de dependências para o aplicativo React usar os Componentes Editáveis do AEM React v2 são: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` e `@adobe/aem-spa-page-model-manager`.
 
-
-+ `package.json`
+* `package.json`
 
 ```json
 {
@@ -75,7 +75,7 @@ Ao usar os Componentes editáveis do AEM React com um aplicativo React baseado n
 
 Vincule o aplicativo React com um ModelManager inicializado e renderize o aplicativo React. O aplicativo React deve conter uma instância do componente `<Page>` exportado de `@adobe/aem-react-editable-components`. O componente `<Page>` tem lógica para criar dinamicamente componentes React com base no `.model.json` fornecido pelo AEM.
 
-+ `src/index.js`
+* `src/index.js`
 
 ```javascript
 import { Constants, ModelManager } from '@adobe/aem-spa-page-model-manager';
@@ -107,7 +107,7 @@ O `<Page>` é passado como a representação da página do AEM como JSON, atrav�
 
 O `<Page>` é transmitido à representação da página do AEM como JSON, por meio do `ModelManager`. O componente `<Page>` cria dinamicamente componentes React para cada objeto no JSON ao corresponder o valor `resourceType` do objeto JS com um componente React que se registra no tipo de recurso por meio da invocação `MapTo(..)` do componente. Por exemplo, seria usado o seguinte para instanciar uma instância
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...
@@ -181,7 +181,7 @@ Os componentes editáveis podem ser reutilizados e incorporados uns aos outros. 
 1. O conteúdo JSON do AEM para o componente de incorporação deve conter o conteúdo para atender aos componentes incorporados. Isso é feito criando uma caixa de diálogo para o componente AEM que coleta os dados necessários.
 1. A instância &quot;não editável&quot; do componente React deve ser incorporada, em vez da instância &quot;editável&quot; que está encapsulada com `<EditableComponent>`. O motivo é que, se o componente incorporado tiver o invólucro `<EditableComponent>`, o Editor de SPA tentará vestir o componente interno com o cromo de edição (caixa de flutuação azul), em vez do componente de incorporação externo.
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...

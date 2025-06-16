@@ -11,8 +11,9 @@ level: Beginner
 doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 # Criar o seu primeiro SPA do Angular no AEM {#introduction}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Boas-vindas a esse tutorial de várias partes, projetado para iniciantes no desenvolvimento com o recurso do **Editor de SPA** do Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um aplicativo do Angular para uma marca fictícia de estilo de vida, a WKND. O aplicativo do Angular foi desenvolvido e projetado para ser implantado com o editor de SPA do AEM, que mapeia componentes do Angular para componentes do AEM. O SPA concluído e implantado no AEM pode ser criado dinamicamente com as ferramentas tradicionais de edição em linha do AEM.
 
@@ -66,9 +67,9 @@ Um ambiente de desenvolvimento local é necessário para concluir este tutorial.
 
 >[!NOTE]
 >
-> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
+> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **Novo no AEM 6.5?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
+> **Primeira vez usando o AEM 6.5?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
 
 ## Próximas etapas {#next-steps}
 

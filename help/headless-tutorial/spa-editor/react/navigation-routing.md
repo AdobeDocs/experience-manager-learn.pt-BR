@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Adicionar navegação e roteamento {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Saiba como várias exibições no SPA podem ser compatíveis, mapeando para Páginas do AEM com o SPA Editor SDK. A navegação dinâmica é implementada usando o Roteador React e os Componentes principais do React.
 
@@ -30,7 +33,7 @@ Saiba como várias exibições no SPA podem ser compatíveis, mapeando para Pág
 
 ## O que você vai criar
 
-Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=pt-BR).
+Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
@@ -324,6 +327,6 @@ Em seguida, verifique como o Roteador React está integrado ao SPA e experimente
 
    Isso pode ajudar a ilustrar a diferença entre o roteamento de SPA e os links de página da Web regulares.
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu como várias exibições no SPA podem ser compatíveis, mapeando para Páginas do AEM com o SPA Editor SDK. A navegação dinâmica foi implementada com o Roteador React e adicionada ao componente `Header`.

@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -19,6 +20,8 @@ ht-degree: 1%
 ---
 
 # Projeto do SPA Editor {#create-project}
+
+{{spa-editor-deprecation}}
 
 Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular integrado ao AEM SPA Editor.
 
@@ -87,7 +90,7 @@ Há várias opções para criar um projeto de vários módulos do Maven para o A
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM.
+   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor SPA do AEM.
 
 ## Criar o projeto
 
@@ -146,7 +149,7 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
 
    Todo o código personalizado necessário para o projeto é incorporado a esses pacotes e instalado no tempo de execução do AEM.
 
-6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre os [Componentes Principais do AEM podem ser encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+6. Você também deve ver vários pacotes para `spa.project.core` e `core.wcm.components`. Essas são dependências incluídas automaticamente pelo arquétipo. Mais informações sobre os [Componentes Principais do AEM podem ser encontradas aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
 
 ## Conteúdo do autor
 
@@ -228,7 +231,7 @@ Em seguida, verifique se este é um aplicativo de página única com o uso das f
    >
    > Pode ser útil instalar uma extensão de navegador para formatar automaticamente a saída JSON.
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você acabou de criar seu primeiro projeto do Editor SPA do AEM.
 

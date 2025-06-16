@@ -12,8 +12,9 @@ doc-type: Tutorial
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
 last-substantial-update: 2022-08-25T00:00:00Z
 duration: 71
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 100%
 
@@ -21,7 +22,7 @@ ht-degree: 100%
 
 # Crie o seu primeiro SPA do React no AEM {#overview}
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 Boas-vindas a esse tutorial de várias partes, projetado para iniciantes no desenvolvimento com o recurso do **Editor de SPA** do Adobe Experience Manager (AEM). Este tutorial em várias partes aborda a implementação de um aplicativo em React para uma marca fictícia de estilo de vida, a WKND. O aplicativo em React foi desenvolvido e projetado para ser implantado com o editor de SPA do AEM, que mapeia componentes em React para componentes do AEM. O SPA concluído e implantado no AEM pode ser criado dinamicamente com as ferramentas tradicionais de edição em linha do AEM.
 
@@ -61,7 +62,7 @@ Um ambiente de desenvolvimento local é necessário para concluir este tutorial.
 
 >[!NOTE]
 >
-> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
+> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
 > **Primeira vez usando o AEM 6.5?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
 

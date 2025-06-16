@@ -12,7 +12,8 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -21,7 +22,9 @@ ht-degree: 1%
 
 # Componentes fixos editáveis
 
-Os componentes editáveis do React podem ser &quot;fixos&quot; ou codificados nas visualizações do SPA. Isso permite que os desenvolvedores coloquem componentes compatíveis com o Editor de SPA nas visualizações de SPA e que os usuários criem o conteúdo dos componentes no Editor de AEM SPA.
+{{spa-editor-deprecation}}
+
+Os componentes editáveis do React podem ser &quot;fixos&quot; ou codificados nas visualizações de SPA. Isso permite que os desenvolvedores coloquem componentes compatíveis com o Editor de SPA nas visualizações de SPA e que os usuários criem o conteúdo dos componentes no Editor de SPA do AEM.
 
 ![Componentes fixos](./assets/spa-fixed-component/intro.png)
 
@@ -31,12 +34,12 @@ Neste capítulo, substituímos o título do modo de exibição de Página Inicia
 
 Para adicionar um componente __Fixo__ à exibição Início:
 
-+ Crie um componente de Título editável personalizado e registre-o no tipo de recurso do Título do projeto
-+ Inserir o componente de Título editável na visualização inicial do SPA
+* Crie um componente de Título editável personalizado e registre-o no tipo de recurso do Título do projeto
+* Coloque o componente de Título editável na visualização Início do SPA
 
 ### Criar um componente editável do Título do React
 
-Na exibição Início do SPA, substitua o texto codificado `<h2>Current Adventures</h2>` por um componente de Título editável personalizado. Antes que o componente de Título possa ser usado, é necessário:
+Na exibição Início do SPA, substitua o texto codificado `<h2>Current Adventures</h2>` por um componente Título editável personalizado. Antes que o componente de Título possa ser usado, é necessário:
 
 1. Criar um componente personalizado do React Title
 1. Decorar o componente Título personalizado usando métodos de `@adobe/aem-react-editable-components` para torná-lo editável.
@@ -44,7 +47,7 @@ Na exibição Início do SPA, substitua o texto codificado `<h2>Current Adventur
 
 Para fazer isso:
 
-1. Abrir projeto SPA remoto em `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` no IDE
+1. Abrir projeto SPA Remoto em `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` no IDE
 1. Criar um componente React em `react-app/src/components/editable/core/Title.js`
 1. Adicione o código a seguir a `Title.js`.
 
@@ -91,7 +94,7 @@ Para fazer isso:
    export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
 
-   Observe que este componente do React ainda não é editável usando o Editor SPA AEM. Este componente básico se tornará editável na próxima etapa.
+   Observe que este componente do React ainda não é editável usando o AEM SPA Editor. Este componente básico se tornará editável na próxima etapa.
 
    Leia os comentários do código para obter detalhes sobre a implementação.
 
@@ -132,7 +135,7 @@ Para fazer isso:
    export default EditableTitle;
    ```
 
-   Este componente do React `EditableTitle` envolve o componente do React `Title`, envolvendo-o e decorando-o para ser editável no Editor de SPA AEM.
+   Este componente do React `EditableTitle` envolve o componente do React `Title`, envolvendo-o e decorando-o para ser editável no AEM SPA Editor.
 
 ### Usar o componente EditableTitle do React
 
@@ -175,25 +178,25 @@ O arquivo `Home.js` deve ser semelhante a:
    ![Barra de ação do componente de título](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Crie o componente de Título:
-   + Título: __Aventuras WKND__
-   + Tipo/Tamanho: __H2__
+   1. Título: __Aventuras WKND__
+   1. Tipo/Tamanho: __H2__
 
-     ![Caixa de diálogo do componente de Título](./assets/spa-fixed-component/title-dialog.png)
+      ![Caixa de diálogo do componente de Título](./assets/spa-fixed-component/title-dialog.png)
 
 1. Toque em __Concluído__ para salvar
-1. Visualizar as alterações no Editor SPA do AEM
+1. Visualizar as alterações no AEM SPA Editor
 1. Atualize o Aplicativo WKND em execução localmente em [http://localhost:3000](http://localhost:3000) e veja as alterações de título criadas refletidas imediatamente.
 
-   ![Componente de título no SPA](./assets/spa-fixed-component/title-final.png)
+   ![Componente de título em SPA](./assets/spa-fixed-component/title-final.png)
 
-## Parabéns.
+## Parabéns!
 
 Você adicionou um componente fixo e editável ao aplicativo WKND! Agora você sabe como:
 
-+ Criação de um componente fixo, mas editável, para o SPA
-+ Criar o componente fixo no AEM
-+ Ver o conteúdo criado no SPA remoto
+* Criação de um componente fixo, mas editável, para o SPA
+* Criar o componente fixo no AEM
+* Ver o conteúdo criado no SPA remoto
 
 ## Próximas etapas
 
-As próximas etapas são para [adicionar um componente de contêiner AEM ResponsiveGrid](./spa-container-component.md) ao SPA que permita que o autor adicione componentes editáveis ao SPA!
+As próximas etapas são para [adicionar um componente de contêiner do AEM ResponsiveGrid](./spa-container-component.md) ao SPA, o que permite que o autor adicione componentes editáveis ao SPA.

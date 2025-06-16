@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 0%
@@ -19,6 +20,8 @@ ht-degree: 0%
 ---
 
 # Adicionar navegação e roteamento {#navigation-routing}
+
+{{spa-editor-deprecation}}
 
 Saiba como várias exibições no SPA são compatíveis usando as Páginas do AEM e o SDK do Editor de SPA. A navegação dinâmica é implementada usando rotas do Angular e adicionada a um componente de Cabeçalho existente.
 
@@ -30,7 +33,7 @@ Saiba como várias exibições no SPA são compatíveis usando as Páginas do AE
 
 ## O que você vai criar
 
-Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de páginas do AEM e usa o modelo JSON fornecido pelo [Componente Principal de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=pt-BR).
+Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de páginas do AEM e usa o modelo JSON fornecido pelo [Componente Principal de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegação implementada](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -113,7 +116,7 @@ Nos capítulos anteriores, o componente `HeaderComponent` foi adicionado como um
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   O componente `Header` do AEM herdará toda a funcionalidade do [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=pt-BR) por meio da propriedade `sling:resourceSuperType`.
+   O componente `Header` do AEM herdará toda a funcionalidade do [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) por meio da propriedade `sling:resourceSuperType`.
 
 ## Adicionar o componente de cabeçalho ao modelo SPA {#add-header-template}
 
@@ -723,7 +726,7 @@ Agora que a navegação foi implementada, inspecione o roteamento no AEM.
 
 5. Experimente os deep links navegando diretamente para: [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html). Observe que o botão Voltar do navegador continua funcionando.
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você aprendeu como várias exibições no SPA podem ser compatíveis, mapeando para Páginas do AEM com o SPA Editor SDK. A navegação dinâmica foi implementada com o roteamento Angular e adicionada ao componente `Header`.
 
