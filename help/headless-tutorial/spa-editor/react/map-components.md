@@ -53,7 +53,7 @@ O conceito básico é mapear um componente de SPA para um componente do AEM. Com
 
 ## Inspecione o componente de Texto
 
-O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
+O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
 
 Vamos ver como o componente funciona.
 
@@ -224,7 +224,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    O componente **Contêiner de Layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
+   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=pt-BR#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
 
 2. Retorne a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Adicione componentes adicionais de **Imagem** e tente redimensioná-los usando a opção **Layout**:
 

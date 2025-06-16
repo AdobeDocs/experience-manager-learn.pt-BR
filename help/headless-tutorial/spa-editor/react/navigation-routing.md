@@ -33,7 +33,7 @@ Saiba como várias exibições no SPA podem ser compatíveis, mapeando para Pág
 
 ## O que você vai criar
 
-Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=pt-BR).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
