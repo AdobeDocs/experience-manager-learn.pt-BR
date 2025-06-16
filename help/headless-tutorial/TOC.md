@@ -8,9 +8,9 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '341'
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+workflow-type: tm+mt
+source-wordcount: '317'
 ht-degree: 100%
 
 ---
@@ -72,20 +72,11 @@ ht-degree: 100%
    + [Instalar GraphiQL no AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Exemplos {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
-      + [Next.js](./graphql/example-apps/next-js.md)
       + [Componente da Web](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + Editor SPA{#spa-editor}
-   + React{#react}
-      + [Visão geral](./spa-editor/react/overview.md)
-      + [1 — Criar projeto](./spa-editor/react/create-project.md)
-      + [2 — Integrar o SPA](./spa-editor/react/integrate-spa.md)
-      + [3 — Mapear componentes SPA](./spa-editor/react/map-components.md)
-      + [4 — Navegação e roteamento](./spa-editor/react/navigation-routing.md)
-      + [5 — Componente personalizado](./spa-editor/react/custom-component.md)
-      + [6 — Estender componente](./spa-editor/react/extend-component.md)
    + Angular{#angular}
       + [Visão geral](./spa-editor/angular/overview.md)
       + [1 — Projeto do editor de SPA](./spa-editor/angular/create-project.md)
