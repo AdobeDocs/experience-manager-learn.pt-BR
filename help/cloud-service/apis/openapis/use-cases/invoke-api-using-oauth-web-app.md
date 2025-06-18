@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2262'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Saiba como chamar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service usan
 
 A autenticação do Aplicativo Web OAuth é ideal para aplicativos Web com componentes de front-end e _back-end_ que precisam **acessar APIs do AEM em nome de um usuário**. Ele usa o tipo de concessão OAuth 2.0 _authorization_code_ para obter um token de acesso em nome do usuário para acessar as APIs do AEM. Para obter mais informações, consulte [Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
-## O que você aprende{#what-you-learn}
+## O que você aprenderá{#what-you-learn}
 
 Neste tutorial, você aprenderá a:
 
@@ -49,7 +49,7 @@ O aplicativo WKND PIM é um aplicativo da Web de amostra projetado para gerencia
 
 O projeto Adobe Developer Console (ADC) é configurado para acessar a API do autor do Assets usando a autenticação do aplicativo web OAuth. Ele fornece o _client_id_ e o _client_secret_ necessários ao aplicativo Web WKND-PIM para iniciar o fluxo de concessão do _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442762?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 O diagrama a seguir ilustra o fluxo funcional do aplicativo Web WKND-PIM _obtendo tokens de acesso específicos do usuário para interagir com a API do Assets Author_.
@@ -430,7 +430,7 @@ Para concluir este tutorial, você precisa:
 
 - Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Instale o [Node.js](https://nodejs.org/en/) no computador local para executar o aplicativo NodeJS de amostra.
+- Instale o [Node.js](https://nodejs.org/pt) no computador local para executar o aplicativo NodeJS de amostra.
 
 - Instale um [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy) no computador local para criar um proxy HTTP SSL local usando um certificado autoassinado.
 
@@ -460,6 +460,10 @@ A etapa de configuração do Projeto ADC é _repetida_ das [APIs do AEM baseadas
 1. Na caixa de diálogo _Adicionar API_, filtre por _Experience Cloud_, selecione o cartão **API do AEM Assets Author** e clique em **Avançar**.
 
    ![Adicionar API do AEM](../assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >Se o **cartão de API do AEM** desejado estiver desabilitado e _Por que isso está desabilitado?As informações do_ mostram a mensagem **Licença necessária**, uma das razões pode ser que você NÃO tenha modernizado seu ambiente do AEM as a Cloud Service. Consulte [Modernização do ambiente do AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment) para obter mais informações.
 
 1. Em seguida, na caixa de diálogo _Configurar API_, selecione a opção de autenticação **Autenticação de Usuário** e clique em **Avançar**.
 
@@ -493,7 +497,7 @@ Siga as instruções do artigo [Configurar APIs do AEM baseadas em OpenAPI](../s
 
 Por padrão, o projeto WKND Sites não tem o esquema de metadados de ativos necessário para exibir os atributos do produto. Vamos criar e aplicar o esquema de metadados de ativos a uma pasta de ativos na instância do AEM.
 
-1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
+1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
 
    ![Navegar até a pasta](../assets/web-app/navigate-to-folder.png)
 

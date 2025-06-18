@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 11%
 
 ---
 
@@ -40,7 +40,7 @@ O processo de configuração de alto nível envolve as seguintes etapas:
 A modernização do ambiente do AEM as a Cloud Service é uma atividade única por ambiente que envolve as seguintes etapas:
 
 - Atualize para o AEM versão **2024.10.18459.20241031T210302Z** ou posterior.
-- Adicione novos Perfis de produto a ele se o ambiente tiver sido criado antes da versão 2024.10.18459.20241031T210302Z.
+- Adicione novos Perfis de produto a ele, se o ambiente tiver sido criado antes da versão 2024.10.18459.20241031T210302Z.
 
 ### Atualizar instância do AEM{#update-aem-instance}
 
@@ -94,7 +94,7 @@ Por exemplo, para habilitar a autenticação de servidor para servidor para a AP
 
 ![Associar Desenvolvedor ao Perfil de Produto](./assets/setup/associate-developer-to-product-profile.png)
 
-Após essa associação, a _API do Autor de Ativos_ do ADC Project pode configurar a autenticação de Servidor para Servidor desejada e associar a conta de autenticação do projeto ADC (criada na próxima etapa) ao Perfil do Produto.
+Após essa associação, a _API de Autor de Ativos_ do ADC Project pode configurar a autenticação de Servidor para Servidor desejada e associar a conta de autenticação do ADC Project (criado na próxima etapa) ao Perfil de Produto.
 
 >[!IMPORTANT]
 >
@@ -133,6 +133,10 @@ Depois de criar o projeto ADC, é necessário adicionar as APIs do AEM desejadas
 1. Na caixa de diálogo _Adicionar API_, filtre por _Experience Cloud_ e selecione a API do AEM desejada. Por exemplo, neste caso, a _API do autor do ativo_ está selecionada.
 
    ![Adicionar API do AEM](./assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >    Se o **cartão de API do AEM** desejado estiver desabilitado e _Por que isso está desabilitado?As informações do_ mostram a mensagem **Licença necessária**, uma das razões pode ser que você NÃO tenha modernizado seu ambiente do AEM as a Cloud Service. Consulte [Modernização do ambiente do AEM as a Cloud Service](#modernization-of-aem-as-a-cloud-service-environment) para obter mais informações.
 
 1. Em seguida, na caixa de diálogo _Configurar API_, selecione a opção de autenticação desejada. Por exemplo, neste caso, a opção de autenticação **Servidor para Servidor** está selecionada.
 
@@ -198,7 +202,7 @@ Isso é feito definindo a configuração da API em um arquivo YAML e implantando
 
 ## Próximas etapas
 
-Depois que a instância do AEM for configurada para habilitar a comunicação do Projeto ADC, você poderá começar a usar as APIs do AEM baseadas em OpenAPI. Saiba como usar as APIs do AEM baseadas em OpenAPI usando diferentes métodos de autenticação OAuth:
+Depois que a instância do AEM for configurada para habilitar a comunicação do Projeto ADC, você poderá começar a usar as APIs do AEM baseadas em OpenAPI. Saiba como usar as APIs do AEM baseadas em OpenAPI, usando diferentes métodos de autenticação por OAuth:
 
 <!-- CARDS
 {target = _self}
@@ -222,8 +226,8 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Chamar API usando autenticação de servidor para servidor" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Chamar API usando autenticação de servidor para servidor"
+                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Invocar API com autenticação de servidor para servidor" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Invocar API com autenticação de servidor para servidor"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,9 +235,9 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Chamar API usando autenticação de servidor para servidor">Invocar API usando autenticação de Servidor para Servidor</a>
+                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Invocar API com autenticação de servidor para servidor">Invocar API com autenticação de servidor para servidor</a>
                     </p>
-                    <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo NodeJS personalizado usando a autenticação de servidor para servidor do OAuth.</p>
+                    <p class="is-size-6">Saiba como invocar as APIs do AEM baseadas em OpenAPI de um aplicativo NodeJS personalizado por meio da autenticação OAuth de servidor para servidor.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -245,8 +249,8 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Chamar API usando autenticação do Aplicativo Web" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Chamar API usando autenticação do Aplicativo Web"
+                    <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Invocar API com autenticação para aplicativos web" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Invocar API com autenticação para aplicativos web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -254,9 +258,9 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Chamar API usando autenticação do Aplicativo Web">Invocar API usando autenticação de Aplicativo Web</a>
+                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Invocar API com autenticação para aplicativos web">Invocar API com autenticação para aplicativos web</a>
                     </p>
-                    <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo web personalizado usando a autenticação do OAuth Web App.</p>
+                    <p class="is-size-6">Saiba como invocar as APIs do AEM baseadas em OpenAPI de um aplicativo web personalizado por meio da autenticação OAuth para aplicativos web.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
@@ -268,8 +272,8 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Chamar API usando autenticação de aplicativo de página única" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Chamar API usando autenticação de aplicativo de página única"
+                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Invocar API com autenticação para aplicativos de página única" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Invocar API com autenticação para aplicativos de página única"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -277,7 +281,7 @@ Depois que a instância do AEM for configurada para habilitar a comunicação do
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Chamar API usando autenticação de aplicativo de página única">Invocar API usando autenticação de Aplicativo de Página Única</a>
+                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Invocar API com autenticação para aplicativos de página única">Invocar API com autenticação para aplicativos de página única</a>
                     </p>
                     <p class="is-size-6">Saiba como chamar APIs do AEM baseadas em OpenAPI de um aplicativo de página única (SPA) personalizado usando o fluxo de PKCE do OAuth 2.0.</p>
                 </div>

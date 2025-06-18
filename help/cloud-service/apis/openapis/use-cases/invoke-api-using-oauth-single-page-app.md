@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ A autenticação de aplicativo de página única do OAuth é ideal para aplicati
 
 O fluxo PKCE estende o tipo de concessão OAuth 2.0 _authorization_code_, aumentando a segurança ao impedir a interceptação do código de autorização. Para obter mais informações, consulte a seção [Diferença entre credenciais de servidor para servidor do OAuth vs. aplicativo da Web vs. aplicativo de página única](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
-## O que você aprende{#what-you-learn}
+## O que você aprenderá{#what-you-learn}
 
 Neste tutorial, você aprenderá a:
 
@@ -59,7 +59,7 @@ O projeto Adobe Developer Console (ADC) está configurado para habilitar a auten
 >O Projeto ADC NÃO fornece um _client_secret_. Em vez disso, o SPA gera um _code_verifier_ e _code_Challenge_ para trocar com segurança o código de autorização por um _token de acesso_. Ele elimina a necessidade de armazenar um segredo do cliente no lado do cliente, melhorando a segurança.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456969?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -356,7 +356,7 @@ Para concluir este tutorial, você precisa:
 
 - Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Instale o [Node.js](https://nodejs.org/en/) no computador local para executar o aplicativo NodeJS de amostra.
+- Instale o [Node.js](https://nodejs.org/pt) no computador local para executar o aplicativo NodeJS de amostra.
 
 ### Etapas de desenvolvimento{#development-steps}
 
@@ -384,6 +384,10 @@ A etapa de configuração do Projeto ADC é _repetida_ das [APIs do AEM baseadas
 1. Na caixa de diálogo _Adicionar API_, filtre por _Experience Cloud_, selecione o cartão **Gerenciamento de Conteúdo de Sites do AEM CS** e clique em **Avançar**.
 
    ![Adicionar API do AEM](../assets/spa/add-aem-sites-api.png)
+
+   >[!TIP]
+   >
+   >Se o **cartão de API do AEM** desejado estiver desabilitado e _Por que isso está desabilitado?As informações do_ mostram a mensagem **Licença necessária**, uma das razões pode ser que você NÃO tenha modernizado seu ambiente do AEM as a Cloud Service. Consulte [Modernização do ambiente do AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment) para obter mais informações.
 
 1. Em seguida, na caixa de diálogo _Configurar API_, selecione a opção de autenticação **Autenticação de Usuário** e clique em **Avançar**.
 

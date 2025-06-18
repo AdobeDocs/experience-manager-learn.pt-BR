@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1776'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Saiba como invocar APIs do AEM baseadas em OpenAPI no AEM as a Cloud Service a p
 
 A autenticação de servidor para servidor OAuth é ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário. Ele usa o tipo de concessão OAuth 2.0 _client_credentials_ para autenticar o aplicativo cliente.
 
-## O que você aprende{#what-you-learn}
+## O que você aprenderá{#what-you-learn}
 
 Neste tutorial, você aprenderá a:
 
@@ -52,7 +52,7 @@ Para concluir este tutorial, você precisa:
 
 - Acesso à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
-- Instale o [Node.js](https://nodejs.org/en/) no computador local para executar o aplicativo NodeJS de amostra.
+- Instale o [Node.js](https://nodejs.org/pt) no computador local para executar o aplicativo NodeJS de amostra.
 
 ## Etapas de desenvolvimento
 
@@ -84,6 +84,10 @@ A etapa de configuração do Projeto ADC é _repetida_ das [APIs do AEM baseadas
 1. Na caixa de diálogo _Adicionar API_, filtre por _Experience Cloud_, selecione o cartão **API do AEM Assets Author** e clique em **Avançar**.
 
    ![Adicionar API do AEM](../assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >Se o **cartão de API do AEM** desejado estiver desabilitado e _Por que isso está desabilitado?As informações do_ mostram a mensagem **Licença necessária**, uma das razões pode ser que você NÃO tenha modernizado seu ambiente do AEM as a Cloud Service. Consulte [Modernização do ambiente do AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment) para obter mais informações.
 
 1. Em seguida, na caixa de diálogo _Configurar API_, selecione a opção de autenticação de **Servidor para Servidor** e clique em **Avançar**. A autenticação de servidor para servidor é ideal para serviços de back-end que precisam de acesso à API sem interação com o usuário.
 
