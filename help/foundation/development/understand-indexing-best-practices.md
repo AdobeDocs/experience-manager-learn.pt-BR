@@ -13,7 +13,7 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Saiba mais sobre as práticas recomendadas de indexação no Adobe Experience Ma
 - O AEM as a Cloud Service só oferece suporte a índices Oak Lucene.
 - A configuração do índice deve ser gerenciada na base de código do projeto do AEM e implantada usando os pipelines de CI/CD do Cloud Manager.
 - Se vários índices estiverem disponíveis para uma determinada consulta, o **índice com o menor custo estimado será usado**.
-- Se nenhum índice estiver disponível para uma determinada consulta, a árvore de conteúdo será percorrida para encontrar o conteúdo correspondente. No entanto, o limite padrão via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` é percorrer apenas 10.0000 nós.
+- Se nenhum índice estiver disponível para uma determinada consulta, a árvore de conteúdo será percorrida para encontrar o conteúdo correspondente. No entanto, o limite padrão via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` é percorrer apenas 100.000 nós.
 - Os resultados de uma consulta são **filtrados por último** para garantir que o usuário atual tenha acesso de leitura. Isso significa que os resultados da consulta podem ser menores que o número de nós indexados.
 - A reindexação do repositório após as alterações de definição de índice requer tempo e depende do tamanho do repositório.
 
@@ -41,7 +41,7 @@ Para ter uma funcionalidade de pesquisa eficiente e correta que não afete o des
 
 - Entenda os requisitos de pesquisa e verifique se os índices OOTB podem dar suporte aos requisitos de pesquisa. Use a **Ferramenta de Desempenho de Consulta**, disponível em [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS via Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Defina uma consulta ideal, use o [fluxograma de otimização de consultas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=pt-BR) como referência.
+- Defina uma consulta ideal, use o [fluxograma de otimização de consultas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) como referência.
 
 - Se os índices OOTB não forem compatíveis com os requisitos de pesquisa, você terá duas opções. No entanto, examine as [Dicas para Criar Índices Eficientes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Personalizar o índice OOTB: opção preferencial, pois é fácil de manter e atualizar.
@@ -253,7 +253,7 @@ A ferramenta [Analisador de Definição de Índice](https://oakutils.appspot.com
 
 ### Ferramenta de desempenho de consulta
 
-A _Ferramenta de Desempenho de Consulta_ do OOTB, disponível em [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS por meio da Developer Console ou do `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`, ajuda a **analisar o desempenho da consulta** e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=pt-BR) para definir a consulta ideal.
+A _Ferramenta de Desempenho de Consulta_ do OOTB, disponível em [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS por meio da Developer Console ou do `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`, ajuda a **analisar o desempenho da consulta** e a [Folha de características de consulta JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) para definir a consulta ideal.
 
 ### Dicas e ferramentas para solução de problemas
 
@@ -274,6 +274,6 @@ A maioria dos itens abaixo é aplicável ao AEM 6.X e para fins de solução de 
 Consulte a seguinte documentação para obter mais informações:
 
 - [Consultas e indexação do Oak](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
-- [Práticas recomendadas de consulta e indexação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [Práticas recomendadas de consulta e indexação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
 - [Práticas recomendadas para consultas e indexação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 
