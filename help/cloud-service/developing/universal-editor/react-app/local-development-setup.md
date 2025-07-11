@@ -1,5 +1,5 @@
 ---
-title: Configuração de desenvolvimento local
+title: Configuração do desenvolvimento local
 description: Saiba como configurar um ambiente de desenvolvimento local para o Universal Editor para poder editar o conteúdo de um aplicativo React de amostra.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
@@ -12,20 +12,20 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
 workflow-type: tm+mt
 source-wordcount: '787'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# Configuração de desenvolvimento local
+# Configuração do desenvolvimento local
 
 Saiba como configurar um ambiente de desenvolvimento local para editar o conteúdo de um aplicativo React usando o AEM Universal Editor.
 
 ## Pré-requisitos
 
-São necessários os seguintes itens para seguir este tutorial:
+Os seguintes elementos são necessários para seguir este tutorial:
 
 - Habilidades básicas em HTML e JavaScript.
 - As seguintes ferramentas devem ser instaladas localmente:
@@ -33,15 +33,15 @@ São necessários os seguintes itens para seguir este tutorial:
    - [Git](https://git-scm.com/downloads)
    - Um editor de código IDE, como o [Visual Studio Code](https://code.visualstudio.com/)
 - Baixe e instale o seguinte:
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
-   - [Serviço do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do Universal Editor, ela tem um subconjunto de recursos e pode ser baixada do Portal de Distribuição de Software.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
+   - [Serviço do Universal Editor](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do Universal Editor, ela tem um subconjunto de recursos e pode ser baixada do Portal de Distribuição de Software.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): um proxy HTTP SSL local simples usando um certificado autoassinado para desenvolvimento local. O Editor universal do AEM requer o URL HTTPS do aplicativo React para carregá-lo no editor.
 
 ## Configuração local
 
 Siga as etapas abaixo para configurar o ambiente de desenvolvimento local:
 
-### AEM SDK
+### SDK do AEM
 
 Para fornecer o conteúdo para o aplicativo WKND Teams React, instale os seguintes pacotes no AEM SDK local.
 
@@ -98,9 +98,9 @@ Para configurar o serviço Editor Universal **local**, siga as etapas abaixo:
 
    ```bash
    # The port on which the Universal Editor service runs
-   EXPRESS_PORT=8000
+   UES_PORT=8000
    # Disable SSL verification
-   NODE_TLS_REJECT_UNAUTHORIZED=0
+   UES_TLS_REJECT_UNAUTHORIZED=false
    ```
 
 1. Iniciar o serviço Editor Universal local.
