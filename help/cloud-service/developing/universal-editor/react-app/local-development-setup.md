@@ -33,8 +33,8 @@ Os seguintes elementos são necessários para seguir este tutorial:
    - [Git](https://git-scm.com/downloads)
    - Um editor de código IDE, como o [Visual Studio Code](https://code.visualstudio.com/)
 - Baixe e instale o seguinte:
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
-   - [Serviço do Universal Editor](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do Universal Editor, ela tem um subconjunto de recursos e pode ser baixada do Portal de Distribuição de Software.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
+   - [Serviço do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do Universal Editor, ela tem um subconjunto de recursos e pode ser baixada do Portal de Distribuição de Software.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): um proxy HTTP SSL local simples usando um certificado autoassinado para desenvolvimento local. O Editor universal do AEM requer o URL HTTPS do aplicativo React para carregá-lo no editor.
 
 ## Configuração local
