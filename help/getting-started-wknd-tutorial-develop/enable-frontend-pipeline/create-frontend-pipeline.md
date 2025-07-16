@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Neste capítulo, criamos e executamos um pipeline de front-end no Adobe Cloud Ma
 
 Este é um tutorial em várias partes e presume-se que as etapas descritas no [Projeto de Atualização de AEM Padrão](./update-project.md) foram concluídas.
 
-Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=pt-BR#role-definitions) e [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
+Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ## Renomear pipeline existente
 
@@ -49,7 +49,7 @@ Renomeie o pipeline existente de __Implantar em Desenvolvimento__ para __Implant
 
 Além disso, na guia __Código Source__, verifique se os valores de campo do Repositório e da Ramificação Git estão corretos e se a ramificação tem suas alterações de contrato de pipeline de front-end.
 
-![Pipeline de configuração de código Source](assets/fullstack-wknd-source-code-config.png)
+![Pipeline de configuração de código do Source](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Criar um pipeline de front-end
@@ -103,7 +103,7 @@ E __o mais importante__ para o campo __Localização do Código__, o valor é `/
 
 
 
-## Parabéns. {#congratulations}
+## Parabéns! {#congratulations}
 
 Parabéns, você criou, executou e verificou o pipeline de front-end que só cria e implanta o módulo &quot;ui.frontend&quot; do projeto do WKND Sites. Agora, sua equipe de front-end pode iterar rapidamente sobre o design do site e o comportamento do front-end, fora do ciclo de vida completo do projeto do AEM.
 
