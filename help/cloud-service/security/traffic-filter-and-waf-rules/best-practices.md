@@ -38,7 +38,7 @@ Conheça as práticas recomendadas para configurar regras de filtro de tráfego,
 
 ## Práticas recomendadas para regras de filtro de tráfego
 
-- Use as [regras de filtro de tráfego padrão](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules) recomendadas pela Adobe como uma linha de base, que inclui regras para borda, proteção de origem e restrições baseadas em OFAC.
+- Use as [regras de filtro de tráfego padrão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules) recomendadas pela Adobe como uma linha de base, que inclui regras para borda, proteção de origem e restrições baseadas em OFAC.
 - Revise alertas e registros regularmente para identificar padrões de abuso ou configuração incorreta.
 - Ajuste valores limite para limites de taxa com base nos padrões de tráfego e no comportamento do usuário do seu aplicativo.
 
@@ -55,9 +55,9 @@ Conheça as práticas recomendadas para configurar regras de filtro de tráfego,
 
 ## Práticas recomendadas para regras do WAF
 
-- Comece com as [regras WAF recomendadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules) da Adobe, que incluem regras para bloquear IPs inválidos conhecidos, detectar ataques de DDoS e mitigar o abuso de bot.
+- Comece com as [regras WAF recomendadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules) da Adobe, que incluem regras para bloquear IPs inválidos conhecidos, detectar ataques de DDoS e mitigar o abuso de bot.
 - O sinalizador do WAF `ATTACK` deve alertá-lo sobre possíveis ameaças. Verifique se não há falsos positivos antes de passar para `block`.
-- Se as regras recomendadas da WAF não cobrirem ameaças específicas, considere criar regras personalizadas com base nos requisitos exclusivos de seu aplicativo. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação.
+- Se as regras recomendadas da WAF não cobrirem ameaças específicas, considere criar regras personalizadas com base nos requisitos exclusivos de seu aplicativo. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação.
 
 ## Regras de execução
 
@@ -132,6 +132,6 @@ Saiba como implementar regras de filtro de tráfego e regras do WAF no AEM as a 
 ## Recursos adicionais
 
 - [Regras De Filtro De Tráfego, Incluindo Regras Do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
-- [Noções básicas sobre prevenção De DoS/DoS no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
-- [Bloqueando ataques DeS e DeS com regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
+- [Noções básicas sobre prevenção De DoS/DoS no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
+- [Bloqueando ataques DeS e DeS com regras de filtro de tráfego](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
 

@@ -52,7 +52,7 @@ Os conjuntos de regras ajudam os clientes a impedir ameaças comuns e sofisticad
 
 As regras padrão de filtro de tráfego são úteis para aplicar políticas específicas da empresa, como limites de taxa ou bloqueio de regiões específicas, bem como para bloquear o tráfego com base em propriedades de solicitação e cabeçalhos, como endereço IP, caminho ou agente do usuário.
 As regras de filtro de tráfego do WAF, por outro lado, fornecem proteção proativa abrangente para explorações da Web e vetores de ataque conhecidos e têm inteligência avançada para limitar falsos positivos (ou seja, bloquear o tráfego legítimo).
-Para definir ambos os tipos de regras, use a sintaxe YAML, consulte [Sintaxe de regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obter mais detalhes.
+Para definir ambos os tipos de regras, use a sintaxe YAML, consulte [Sintaxe de regras de filtro de tráfego](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obter mais detalhes.
 
 ## Quando e por que usá-los
 
