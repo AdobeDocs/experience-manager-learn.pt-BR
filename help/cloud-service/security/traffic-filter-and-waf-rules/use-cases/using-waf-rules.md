@@ -63,7 +63,7 @@ Vamos analisar três regras recomendadas do WAF que devem ser adicionadas ao arq
 
 Esta regra **bloqueia** solicitações que parecem suspeitas *e* originadas de endereços IP sinalizados como mal-intencionados. Como ambos os critérios são atendidos, podemos ter certeza de que o risco de falsos positivos (bloqueio do tráfego legítimo) é muito baixo. Os IPs inválidos conhecidos são identificados com base em feeds de inteligência de ameaças e outras fontes.
 
-O sinalizador WAF `ATTACK-FROM-BAD-IP` é usado para identificar essas solicitações. Ele agrega vários sinalizadores WAF [listados aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
+O sinalizador WAF `ATTACK-FROM-BAD-IP` é usado para identificar essas solicitações. Ele agrega vários sinalizadores WAF [listados aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
 
 ```yaml
 kind: "CDN"
@@ -224,7 +224,7 @@ Para refinar as regras, considere as seguintes etapas:
 
 - **Monitorar padrões de tráfego**: Use os logs CDN e o painel ELK para monitorar padrões de tráfego e identificar quaisquer anomalias ou picos no tráfego. Preste atenção aos painéis _Distribuição de sinalizadores do WAF_ e _Principais ataques_ no painel ELK para entender os tipos de ataques que estão sendo detectados.
 - **Ajustar wafFlags**: se `ATTACK` sinalizadores estiverem sendo acionados com muita frequência ou
-se você precisar ajustar o vetor de ataque, poderá criar regras personalizadas com sinalizadores WAF específicos. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação. Considere primeiro experimentar novas regras personalizadas no modo `log`.
+se você precisar ajustar o vetor de ataque, poderá criar regras personalizadas com sinalizadores WAF específicos. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação. Considere primeiro experimentar novas regras personalizadas no modo `log`.
 - **Mover para regras de bloqueio**: depois de validar os padrões de tráfego e ajustar os sinalizadores do WAF, você pode considerar mover para regras de bloqueio.
 
 ## Resumo
@@ -320,5 +320,5 @@ Para cenários mais avançados, você pode explorar os seguintes casos de uso qu
 
 ## Recursos adicionais
 
-- [Regras de início recomendadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [lista de sinalizadores do WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [Regras de início recomendadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [lista de sinalizadores do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
