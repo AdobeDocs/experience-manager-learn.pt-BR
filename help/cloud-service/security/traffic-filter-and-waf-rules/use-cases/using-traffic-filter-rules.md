@@ -10,17 +10,20 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 7%
 
 ---
 
-
 # Proteção de sites da AEM usando regras padrão de filtro de tráfego
 
 Saiba como proteger sites da AEM contra DoS (Negação de Serviço), DDoS (Negação de Serviço Distribuída) e abuso de bot usando _regras recomendadas pela Adobe_ **regras padrão de filtro de tráfego** no AEM as a Cloud Service.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
 
 ## Objetivos de aprendizagem
 
@@ -388,6 +391,4 @@ Para cenários mais avançados, você pode explorar os seguintes casos de uso qu
 
 ## Recursos adicionais
 
-- [Regras de início recomendadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
-
-
+- [Regras de início recomendadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)

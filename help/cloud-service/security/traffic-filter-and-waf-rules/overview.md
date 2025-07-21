@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
 
 ---
-
 
 # Visão geral - Proteção de sites da AEM
 
@@ -27,6 +27,9 @@ Você também aprenderá sobre as diferenças entre o filtro de tráfego padrão
 >[!IMPORTANT]
 >
 > As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção de WAF-DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
 
 ## Introdução à segurança de tráfego no AEM as a Cloud Service
 
@@ -52,7 +55,7 @@ Os conjuntos de regras ajudam os clientes a impedir ameaças comuns e sofisticad
 
 As regras padrão de filtro de tráfego são úteis para aplicar políticas específicas da empresa, como limites de taxa ou bloqueio de regiões específicas, bem como para bloquear o tráfego com base em propriedades de solicitação e cabeçalhos, como endereço IP, caminho ou agente do usuário.
 As regras de filtro de tráfego do WAF, por outro lado, fornecem proteção proativa abrangente para explorações da Web e vetores de ataque conhecidos e têm inteligência avançada para limitar falsos positivos (ou seja, bloquear o tráfego legítimo).
-Para definir ambos os tipos de regras, use a sintaxe YAML, consulte [Sintaxe de regras de filtro de tráfego](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obter mais detalhes.
+Para definir ambos os tipos de regras, use a sintaxe YAML, consulte [Sintaxe de regras de filtro de tráfego](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax) para obter mais detalhes.
 
 ## Quando e por que usá-los
 

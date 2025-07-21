@@ -11,7 +11,8 @@ last-substantial-update: 2025-06-04T00:00:00Z
 badgeLicense: label="Requer uma licença" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 7%
@@ -27,6 +28,9 @@ Os ataques sofisticados são caracterizados por altas taxas de solicitação, pa
 >[!IMPORTANT]
 >
 > As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção de WAF-DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Objetivos de aprendizagem
 
@@ -59,7 +63,7 @@ Vamos analisar três regras recomendadas do WAF que devem ser adicionadas ao arq
 
 Esta regra **bloqueia** solicitações que parecem suspeitas *e* originadas de endereços IP sinalizados como mal-intencionados. Como ambos os critérios são atendidos, podemos ter certeza de que o risco de falsos positivos (bloqueio do tráfego legítimo) é muito baixo. Os IPs inválidos conhecidos são identificados com base em feeds de inteligência de ameaças e outras fontes.
 
-O sinalizador WAF `ATTACK-FROM-BAD-IP` é usado para identificar essas solicitações. Ele agrega vários sinalizadores WAF [listados aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
+O sinalizador WAF `ATTACK-FROM-BAD-IP` é usado para identificar essas solicitações. Ele agrega vários sinalizadores WAF [listados aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
 
 ```yaml
 kind: "CDN"
@@ -220,7 +224,7 @@ Para refinar as regras, considere as seguintes etapas:
 
 - **Monitorar padrões de tráfego**: Use os logs CDN e o painel ELK para monitorar padrões de tráfego e identificar quaisquer anomalias ou picos no tráfego. Preste atenção aos painéis _Distribuição de sinalizadores do WAF_ e _Principais ataques_ no painel ELK para entender os tipos de ataques que estão sendo detectados.
 - **Ajustar wafFlags**: se `ATTACK` sinalizadores estiverem sendo acionados com muita frequência ou
-se você precisar ajustar o vetor de ataque, poderá criar regras personalizadas com sinalizadores WAF específicos. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação. Considere primeiro experimentar novas regras personalizadas no modo `log`.
+se você precisar ajustar o vetor de ataque, poderá criar regras personalizadas com sinalizadores WAF específicos. Veja uma lista completa de [sinalizadores do WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) na documentação. Considere primeiro experimentar novas regras personalizadas no modo `log`.
 - **Mover para regras de bloqueio**: depois de validar os padrões de tráfego e ajustar os sinalizadores do WAF, você pode considerar mover para regras de bloqueio.
 
 ## Resumo
@@ -316,5 +320,5 @@ Para cenários mais avançados, você pode explorar os seguintes casos de uso qu
 
 ## Recursos adicionais
 
-- [Regras de início recomendadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [lista de sinalizadores do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [Regras de início recomendadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [lista de sinalizadores do WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
