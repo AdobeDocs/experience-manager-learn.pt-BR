@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 0%
+source-wordcount: '533'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,17 @@ ht-degree: 0%
 
 Saiba como receber eventos do AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449753?quality=12&learn=on&captions=por_br)
 
-Neste exemplo, o uso de um _webhook_ hospedado fornecido pela Adobe permite receber eventos do AEM sem a necessidade de configurar seu próprio webhook. Este webhook fornecido pela Adobe está hospedado em [Glitch](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web propício à criação e implantação de aplicativos Web. No entanto, a opção de usar seu próprio webhook também está disponível, se preferir.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+
+
+>[!IMPORTANT]
+>
+>Os pontos de extremidade de demonstração ao vivo deste tutorial foram hospedados anteriormente em [Falha](https://glitch.com/). A partir de julho de 2025, o Glitch descontinuou seu serviço de hospedagem e os endpoints não estão mais acessíveis.
+>>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
+>>Obrigado por sua compreensão e paciência.
+
+Use seu próprio webhook até que os endpoints de demonstração ao vivo estejam disponíveis novamente.
 
 ## Pré-requisitos
 
@@ -155,4 +163,4 @@ Você pode ver que os detalhes do evento do AEM têm todas as informações nece
 
 ## Recursos adicionais
 
-- [O código de origem do webhook com falha](https://glitch.com/edit/#!/adorável-montanha-russa-antiga) está disponível para referência.
+- O código-fonte do [Webhook de eventos do AEM](../assets/examples/webhook/aemeventing-webhook.tgz) está disponível para sua referência.

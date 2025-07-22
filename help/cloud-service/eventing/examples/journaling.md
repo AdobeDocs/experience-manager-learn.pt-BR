@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 0%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,13 @@ O registro em log é um método de recebimento para consumir Eventos da AEM, e u
 
 No projeto do Adobe Developer Console, cada registro de evento é ativado automaticamente para registro em log, permitindo uma integração perfeita.
 
-Neste exemplo, o uso de um _aplicativo Web hospedado_ fornecido pela Adobe permite buscar o primeiro lote de eventos do AEM no diário sem a necessidade de configurar seu aplicativo. Este aplicativo Web fornecido pela Adobe está hospedado em [Glitch](https://glitch.com/), uma plataforma conhecida por oferecer um ambiente baseado na Web propício à criação e implantação de aplicativos Web. No entanto, a opção de usar seu próprio aplicativo também está disponível, se preferir.
+>[!IMPORTANT]
+>
+>Os pontos de extremidade de demonstração ao vivo deste tutorial foram hospedados anteriormente em [Falha](https://glitch.com/). A partir de julho de 2025, o Glitch descontinuou seu serviço de hospedagem e os endpoints não estão mais acessíveis.
+>>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
+>>Obrigado por sua compreensão e paciência.
+
+Use seu próprio aplicativo até que os endpoints de demonstração ao vivo estejam disponíveis novamente.
 
 ## Pré-requisitos
 
@@ -82,7 +88,5 @@ Para simplificar, esse aplicativo Web hospedado busca somente o primeiro lote de
   ![Carga Concluída do Evento AEM](../assets/examples/journaling/complete-journal-data.png)
 
 ## Recursos adicionais
-
-- [O código de origem do webhook com falha](https://glitch.com/edit/#!/indigo-speckle-antler) está disponível para referência. É um aplicativo simples do React que usa componentes do [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) para renderizar a interface.
 
 - A [API do Adobe I/O Events Journaling](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fornece informações detalhadas sobre a API, como primeiro, próximo e último lote de eventos, paginação e muito mais.
