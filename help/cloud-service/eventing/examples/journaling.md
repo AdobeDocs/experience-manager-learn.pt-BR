@@ -32,8 +32,8 @@ No projeto do Adobe Developer Console, cada registro de evento é ativado automa
 >[!IMPORTANT]
 >
 >Os pontos de extremidade de demonstração ao vivo deste tutorial foram hospedados anteriormente em [Falha](https://glitch.com/). A partir de julho de 2025, o Glitch descontinuou seu serviço de hospedagem e os endpoints não estão mais acessíveis.
->>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
->>Obrigado por sua compreensão e paciência.
+>&#x200B;>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
+>&#x200B;>Obrigado por sua compreensão e paciência.
 
 Use seu próprio aplicativo até que os endpoints de demonstração ao vivo estejam disponíveis novamente.
 
