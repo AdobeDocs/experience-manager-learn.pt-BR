@@ -13,7 +13,7 @@ jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
 source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Os ataques sofisticados são caracterizados por altas taxas de solicitação, pa
 > As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção do WAF contra DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469435/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Metas de aprendizagem
 
