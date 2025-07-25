@@ -1,6 +1,6 @@
 ---
-title: Monitoramento de solicitações confidenciais
-description: Saiba como monitorar solicitações confidenciais registrando-as usando regras de filtro de tráfego no AEM as a Cloud Service.
+title: Monitorar solicitações sensíveis
+description: Saiba como monitorar solicitações sensíveis, registrando-as com regras de filtro de tráfego no AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -11,39 +11,39 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
-# Monitoramento de solicitações confidenciais
+# Monitorar solicitações sensíveis
 
-Saiba como monitorar solicitações confidenciais registrando-as usando regras de filtro de tráfego no AEM as a Cloud Service.
+Saiba como monitorar solicitações sensíveis, registrando-as com regras de filtro de tráfego no AEM as a Cloud Service.
 
-O registro permite observar padrões de tráfego sem afetar os usuários finais ou serviços, sendo uma primeira etapa essencial antes de implementar regras de bloqueio.
+Os logs permitem observar padrões de tráfego sem afetar os usuários finais ou os serviços, sendo uma primeira etapa essencial antes de implementar regras de bloqueio.
 
-Este tutorial demonstra como **registrar solicitações de caminhos de logon e logout da WKND** no serviço de Publicação do AEM.
+Este tutorial demonstra como **registrar solicitações de caminhos de logon e logoff da WKND** no serviço do AEM Publish.
 
 ## Por que e quando registrar solicitações
 
-O registro de solicitações específicas é uma prática de alto risco e alto valor para entender como os usuários e os agentes potencialmente mal-intencionados estão interagindo com o aplicativo AEM. É especialmente útil antes de aplicar as regras de bloqueio, oferecendo confiança para refinar sua postura de segurança sem interromper o tráfego legítimo.
+O registro de solicitações específicas é uma prática de baixo risco e alto valor que ajuda a entender como os usuários e agentes potencialmente maliciosos estão interagindo com o seu aplicativo do AEM. Ele é útil principalmente antes de aplicar as regras de bloqueio, proporcionando confiança para refinar a sua postura de segurança sem interromper o tráfego legítimo.
 
-Cenários comuns para registro incluem:
+Exemplos de casos comuns de registro:
 
-- Validando o impacto e o alcance de uma regra antes de promovê-la para o modo `block`.
-- Monitoramento de caminhos de logon/logout e endpoints de autenticação para padrões incomuns ou tentativas de força bruta.
-- Rastreamento de acesso de alta frequência a endpoints da API para possível abuso ou atividade de DoS.
-- Estabelecer linhas de base para o comportamento de bot antes de aplicar controles mais rigorosos.
-- Em caso de incidentes de segurança, forneça dados forenses para entender a natureza do ataque e os recursos afetados.
+- Validar o impacto e o alcance de uma regra antes de promovê-la para o modo `block`.
+- Monitorar caminhos de logon/logoff e pontos de acesso de autenticação em busca de padrões incomuns ou tentativas de força bruta.
+- Rastrear acessos de alta frequência a pontos de acesso da API em busca de possíveis abusos ou atividades de DoS.
+- Estabelecer linhas de base para o comportamento de bots antes de aplicar controles mais rigorosos.
+- Em caso de incidentes de segurança, fornecer dados forenses para entender a natureza do ataque e os recursos afetados.
 
 ## Pré-requisitos
 
-Antes de continuar, verifique se você concluiu a configuração necessária, conforme descrito no [tutorial Como configurar o filtro de tráfego e as regras do WAF](../setup.md). Além disso, você clonou e implantou o [Projeto do AEM WKND Sites](https://github.com/adobe/aem-guides-wknd) no seu ambiente AEM.
+Antes de continuar, certifique-se de ter realizado a configuração necessária, conforme descrito no tutorial [Como configurar as regras de filtro de tráfego e do WAF](../setup.md). Além disso, certifique-se de ter clonado e implantado o [Projeto de sites da WKND no AEM](https://github.com/adobe/aem-guides-wknd) no seu ambiente do AEM.
 
-## Exemplo: registrar solicitações de logon e logout da WKND
+## Exemplo: registrar solicitações de logon e logoff da WKND
 
-Neste exemplo, você cria uma regra de filtro de tráfego para registrar solicitações feitas nos caminhos de logon e logout da WKND no serviço de publicação do AEM. Ele ajuda a monitorar as tentativas de autenticação e identificar possíveis problemas de segurança.
+Neste exemplo, você cria uma regra de filtro de tráfego para registrar solicitações feitas nos caminhos de logon e logoff da WKND no serviço do AEM Publish. Ela ajuda a monitorar as tentativas de autenticação e identificar possíveis problemas de segurança.
 
 - Adicione a regra a seguir ao arquivo `/config/cdn.yaml` do projeto da WKND.
 
@@ -70,15 +70,15 @@ data:
 
 - Confirme e envie as alterações ao repositório do Git do Cloud Manager.
 
-- Implante as alterações no ambiente do AEM usando o pipeline de configuração do Cloud Manager [criado anteriormente](../setup.md#deploy-rules-using-adobe-cloud-manager).
+- Implante as alterações no ambiente do AEM, usando o pipeline de configuração do Cloud Manager [criado anteriormente](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
-- Teste a regra entrando e saindo do site WKND do programa (por exemplo, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). Você pode usar `asmith/asmith` como nome de usuário e senha.
+- Para testar a regra, faça logon e logoff no site da WKND do seu programa (por exemplo, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). Você pode usar `asmith/asmith` como nome de usuário e senha.
 
   ![Logon na WKND](../assets/how-to/wknd-login.png)
 
 ## Análise
 
-Vamos analisar os resultados da regra `publish-auth-requests` baixando os logs de CDN do AEMCS da Cloud Manager e usando a [Ferramenta de Análise de Logs da CDN do AEMCS](../setup.md#setup-the-elastic-dashboard-tool).
+Vamos analisar os resultados da regra `publish-auth-requests`, baixando os logs da CDN do AEMCS do Cloud Manager e usando as [Ferramentas de análise de logs da CDN do AEMCS](../setup.md#setup-the-elastic-dashboard-tool).
 
 - No cartão **Ambientes** do [Cloud Manager](https://my.cloudmanager.adobe.com/), baixe os logs de CDN do serviço AEMCS **Publish**.
 

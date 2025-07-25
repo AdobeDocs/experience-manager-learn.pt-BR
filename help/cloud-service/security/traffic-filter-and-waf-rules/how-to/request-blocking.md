@@ -1,6 +1,6 @@
 ---
-title: Restrição do acesso
-description: Saiba como restringir o acesso bloqueando solicitações específicas usando regras de filtro de tráfego no AEM as a Cloud Service.
+title: Restringir o acesso
+description: Saiba como restringir o acesso, bloqueando solicitações específicas com regras de filtro de tráfego no AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -11,36 +11,36 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18312
 thumbnail: null
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# Restrição do acesso
+# Restringir o acesso
 
-Saiba como restringir o acesso bloqueando solicitações específicas usando regras de filtro de tráfego no AEM as a Cloud Service.
+Saiba como restringir o acesso, bloqueando solicitações específicas com regras de filtro de tráfego no AEM as a Cloud Service.
 
-Este tutorial demonstra como **bloquear solicitações a caminhos internos de IPs públicos** no serviço de Publicação do AEM.
+Este tutorial demonstra como **bloquear solicitações para caminhos internos de IPs públicos** no serviço do AEM Publish.
 
 ## Por que e quando bloquear solicitações
 
-O bloqueio de tráfego ajuda a aplicar as políticas de segurança organizacional, impedindo o acesso a recursos ou URLs confidenciais em determinadas condições. Em comparação ao registro, o bloqueio é uma ação mais rígida e deve ser usado quando você estiver confiante de que o tráfego de fontes específicas não é autorizado ou não é desejado.
+O bloqueio do tráfego ajuda a aplicar as políticas de segurança da organização, impedindo o acesso a recursos ou URLs sensíveis em determinadas condições. Em comparação com o registro em log, o bloqueio é uma ação mais rígida e deve ser usado quando você tiver a certeza de que o tráfego de fontes específicas não é autorizado ou não é desejado.
 
-Cenários comuns em que o bloqueio é apropriado incluem:
+Exemplos de casos comuns em que o bloqueio é apropriado:
 
-- Restringindo o acesso a `internal` ou `confidential` páginas somente a intervalos IP internos (por exemplo, atrás de uma VPN corporativa).
-- Bloqueio de tráfego de bot, scanners automatizados ou agentes de ameaça identificados por IP ou geolocalização.
-- Impedindo o acesso a endpoints obsoletos ou inseguros durante migrações em etapas.
-- Limitar o acesso a ferramentas de criação ou rotas de administrador nos níveis de Publicação.
+- Restringir o acesso a páginas `internal` ou `confidential` somente a intervalos IP internos (por exemplo, por trás de uma VPN corporativa).
+- Bloquear o tráfego de bot, leitores automatizados ou agentes de ameaças identificados por IP ou geolocalização.
+- Impedir o acesso a pontos de acesso obsoletos ou desprotegidos durante migrações em etapas.
+- Limitar o acesso a ferramentas de criação ou rotas do administrador nos níveis de publicação.
 
 ## Pré-requisitos
 
-Antes de continuar, verifique se você concluiu a configuração necessária, conforme descrito no [tutorial Como configurar o filtro de tráfego e as regras do WAF](../setup.md). Além disso, você clonou e implantou o [Projeto do AEM WKND Sites](https://github.com/adobe/aem-guides-wknd) no seu ambiente AEM.
+Antes de continuar, certifique-se de ter realizado a configuração necessária, conforme descrito no tutorial [Como configurar as regras de filtro de tráfego e do WAF](../setup.md). Além disso, certifique-se de ter clonado e implantado o [Projeto de sites da WKND no AEM](https://github.com/adobe/aem-guides-wknd) no seu ambiente do AEM.
 
 ## Exemplo: bloquear caminhos internos de IPs públicos
 
-Neste exemplo, você configura uma regra para bloquear o acesso externo a uma página WKND interna, como `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html`, de endereços IP públicos. Somente usuários dentro de um intervalo IP confiável (como uma VPN corporativa) podem acessar esta página.
+Neste exemplo, você configura uma regra para bloquear o acesso externo a uma página interna da WKND, como `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html`, a partir de endereços IP públicos. Somente usuários dentro de um intervalo de IPs confiáveis (como uma VPN corporativa) podem acessar essa página.
 
 Você pode criar a sua própria página interna (por exemplo, `demo-page.html`) ou usar o [pacote anexado](../assets/how-to/demo-internal-pages-package.zip).
 
@@ -68,7 +68,7 @@ data:
 
 - Confirme e envie as alterações ao repositório do Git do Cloud Manager.
 
-- Implante as alterações no ambiente do AEM usando o pipeline de configuração do Cloud Manager [criado anteriormente](../setup.md#deploy-rules-using-adobe-cloud-manager).
+- Implante as alterações no ambiente do AEM, usando o pipeline de configuração do Cloud Manager [criado anteriormente](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
 - Teste a regra, acessando a página interna do site da WKND, como, por exemplo `https://publish-pXXXX-eYYYY.adobeaemcloud.com/content/wknd/internal/demo-page.html`, ou usando o comando CURL abaixo:
 
@@ -82,6 +82,6 @@ data:
 
 Para analisar os resultados da regra `block-internal-paths`, siga as mesmas etapas descritas no [tutorial de configuração](../setup.md#cdn-logs-ingestion)
 
-Você deve ver as **Solicitações bloqueadas** e os valores correspondentes nas colunas IP do cliente (cli_ip), host, URL, ação (waf_action) e nome da regra (waf_match).
+Você deve ver as **Solicitações bloqueadas** e os valores correspondentes nas colunas de IP do cliente (cli_ip), host, URL, ação (waf_action) e nome da regra (waf_match).
 
 ![Solicitação bloqueada do painel da ferramenta ELK](../assets/how-to/elk-tool-dashboard-blocked.png)
