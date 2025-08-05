@@ -92,7 +92,7 @@ Esses vídeos abordam os principais recursos do Centro de conteúdo do AEM Asset
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/content-hub/add-assets" title="Adicionar ativos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="Adicionar ativos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450287/?format=jpeg&nocache=1744751769952&captions=por_br" alt="Adicionar ativos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
