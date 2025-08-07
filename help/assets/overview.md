@@ -5,9 +5,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '177'
+source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+workflow-type: tm+mt
+source-wordcount: '128'
 ht-degree: 100%
 
 ---
@@ -36,54 +36,6 @@ Saiba o que é o AEM Assets e como ele pode ser usado para atingir as metas come
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
-
-<div id="staff-picks-section">
-
-## Escolhas da equipe
-
-<table>
-<td>
-   <a href="./creative-workflows/aem-desktop-app.md">
-   <img alt="Tags inteligentes aprimoradas" src="./assets/overview/desktop-app.png" />
-   </a>
-   <div>
-      <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Usar o aplicativo para desktop do AEM</strong>
-      </a>
-   </div>
-   <p>
-      <em>Acessar ativos no AEM diretamente da área de trabalho</em>
-   </p>
-</td>
-<td>
-   <a href="../assets-essentials/overview.md">
-   <img alt="AEM Assets Essentials" src="../assets-essentials/assets/overview/getting-started.png"/>
-   </a>
-   <div>
-      <a href="../assets-essentials/overview.md">
-      <strong>Introdução ao Assets Essentials</strong>
-      </a>
-   </div>
-   <p>
-      <em>Acelere a criação de experiências, do conceito e design à entrega.</em>
-   <p>
-</td>
-<td>
-   <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Visão geral do Dynamic Media" src="./assets/overview/dynamic-media.png" />
-   </a>
-   <div>
-      <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Visão geral do Dynamic Media</strong>
-      </a>
-   </div>
-   <p>
-      <em>Gerenciar e acessar conteúdo de mídia com o Dynamic Media</em>
-   <p>
-</td>
-</table>
-
-</div>
 
 ## Recursos adicionais
 
