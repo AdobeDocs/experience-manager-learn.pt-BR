@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Saiba mais sobre as práticas recomendadas para publicação e otimização de vídeo no AEM Dynamic Media, incluindo transmissão adaptável, recorte inteligente para diferentes tamanhos de tela, predefinições do visualizador personalizado e suporte para legendas, faixas de áudio e marcadores de capítulo. Ele enfatiza como melhorar a experiência do visualizador, a acessibilidade e o impacto de marketing em todos os dispositivos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470634/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470683/?learn=on&enablevpops&captions=por_br)
 
 ## Recursos de suporte
 
