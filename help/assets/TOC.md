@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '459'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 100%
 + Centro de conteúdo{#content-hub}
    + [Visão geral](./content-hub/overview.md)
    + [Configurar](./content-hub/set-up.md)
-   + [Configurar ](./content-hub/configure.md)
+   + [Configurar](./content-hub/configure.md)
    + [Adicionar ativos](./content-hub/add-assets.md)
    + [Baixar ativos](./content-hub/download-assets.md)
    + [Variantes de imagem usando o Adobe Express](./content-hub/image-variants.md)
@@ -114,9 +114,10 @@ ht-degree: 100%
 + Fluxos de trabalho criativos{#creative-workflows}
    + [Integração do Adobe Express](./creative-workflows/adobe-express.md)
    + [Adobe Express e AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
-   + [Aplicativo de desktop do AEM ](./creative-workflows/aem-desktop-app.md)
+   + [Aplicativo de desktop do AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
+   + [Figma](./creative-workflows/figma.md)
 
 + Adobe Asset Link{#adobe-asset-link}
    + [Configurar](./adobe-asset-link/setup.md)
