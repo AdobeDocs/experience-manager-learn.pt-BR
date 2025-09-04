@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18720
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: c8a4f0bf-1f80-4494-abe6-9fbc138e4039
+source-git-commit: d81c657daa0b572076a4dcc0813d204e4bea77b0
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 0%
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
-
 
 # Experimentação (teste A/B)
 
@@ -34,11 +34,17 @@ Neste tutorial, você configura o teste A/B para o **Acampamento na Austrália O
 
 As variações são exibidas na página inicial da WKND, permitindo medir o desempenho e determinar qual versão gera melhor engajamento e conversões.
 
-Visite o [site de Ativação do WKND](https://wknd.enablementadobe.com/us/en.html) para ver o teste A/B em ação.
+![Teste A/B](../assets/use-cases/experiment/view-ab-test-variations.png)
+
+### Demonstração ao vivo
+
+Visite o [site de Ativação do WKND](https://wknd.enablementadobe.com/us/en.html) para ver o teste A/B em ação. No vídeo abaixo, você vê todas as três variações de **Camping na Austrália Ocidental** exibidas na página inicial por meio de navegadores diferentes.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3473005/?learn=on&enablevpops)
 
 ## Pré-requisitos
 
-Antes de prosseguir com este caso de uso de experimentação, verifique se você concluiu o seguinte:
+Antes de prosseguir com o caso de uso de experimentação, verifique se você concluiu o seguinte:
 
 - [Integrar o Adobe Target](../setup/integrate-adobe-target.md): permite que sua equipe crie e gerencie conteúdo personalizado centralmente no AEM e ative-o como ofertas no Adobe Target.
 - [Integrar marcas no Adobe Experience Platform](../setup/integrate-adobe-tags.md): permite que sua equipe gerencie e implante o JavaScript para personalização e coleta de dados sem precisar reimplantar o código AEM.
@@ -250,7 +256,7 @@ Para ver o teste A/B em ação, visite o [site de Ativação da WKND](https://wk
 
 ## Recursos adicionais
 
-- [Visão geral do Teste A/B](https://experienceleague.adobe.com/pt-br/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home)
-- [Visão geral das sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview)
-- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/vec/visual-experience-composer)
+- [Visão geral do Teste A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Visão geral das sequências de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
