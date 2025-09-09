@@ -28,7 +28,7 @@ O `manifest.yml`, localizado na raiz do projeto do Asset Compute, descreve todos
 
 Os trabalhadores são definidos como entradas de ação do Adobe I/O Runtime em `actions` e são compostos de um conjunto de configurações.
 
-Os trabalhadores que acessam outras integrações do Adobe I/O devem definir a propriedade `annotations -> require-adobe-auth` como `true`, pois este [expõe as credenciais do Adobe I/O do trabalhador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) por meio do objeto `params.auth`. Normalmente, isso é necessário quando o trabalhador chama APIs do Adobe I/O, como a Adobe Photoshop ou APIs do Lightroom, e pode ser alternado por trabalhador.
+Os trabalhadores que acessam outras integrações do Adobe I/O devem definir a propriedade `annotations -> require-adobe-auth` como `true`, pois este [expõe as credenciais do Adobe I/O do trabalhador](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=pt-BR#access-adobe-apis) por meio do objeto `params.auth`. Normalmente, isso é necessário quando o trabalhador chama APIs do Adobe I/O, como a Adobe Photoshop ou APIs do Lightroom, e pode ser alternado por trabalhador.
 
 1. Abra e revise o trabalhador gerado automaticamente `manifest.yml`. Projetos que contêm vários trabalhadores do Asset Compute devem definir uma entrada para cada trabalhador na matriz `actions`.
 
@@ -51,7 +51,7 @@ packages:
 
 Cada trabalhador pode configurar os [limites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) para seu contexto de execução no Adobe I/O Runtime. Esses valores devem ser ajustados para fornecer o dimensionamento ideal para o trabalhador, com base no volume, na taxa e no tipo de ativos que ele calculará, bem como no tipo de trabalho que realizará.
 
-Revise a [orientação de dimensionamento do Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) antes de definir limites. Os trabalhadores do Asset Compute podem ficar sem memória ao processar ativos, resultando na morte da execução do Adobe I/O Runtime. Portanto, verifique se o trabalhador está dimensionado adequadamente para lidar com todos os ativos candidatos.
+Revise a [orientação de dimensionamento do Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=pt-BR#sizing-workers) antes de definir limites. Os trabalhadores do Asset Compute podem ficar sem memória ao processar ativos, resultando na morte da execução do Adobe I/O Runtime. Portanto, verifique se o trabalhador está dimensionado adequadamente para lidar com todos os ativos candidatos.
 
 1. Adicione uma seção `inputs` à nova entrada de ações `wknd-asset-compute`. Isso permite o ajuste do desempenho geral e da alocação de recursos do trabalhador do Asset Compute.
 

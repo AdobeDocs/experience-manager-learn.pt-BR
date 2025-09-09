@@ -27,7 +27,7 @@ O Universal Editor fornece uma maneira poderosa de habilitar a edição em conte
 ## Pré-requisitos
 
 * As etapas anteriores deste tutorial foram concluídas, especificamente [Criar um aplicativo React que usa OpenAPIs de entrega de fragmento de conteúdo do AEM](./4-react-app.md)
-* Um conhecimento prático de [como usar e implementar o Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+* Um conhecimento prático de [como usar e implementar o Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 ## Objetivos
 
@@ -39,14 +39,14 @@ Saiba como:
 
 ## Instrumentação do Editor universal
 
-O Universal Editor requer [atributos HTML e metatags](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) para identificar o conteúdo editável e estabelecer a conexão entre a interface do usuário e o conteúdo AEM.
+O Universal Editor requer [atributos HTML e metatags](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) para identificar o conteúdo editável e estabelecer a conexão entre a interface do usuário e o conteúdo AEM.
 
 ### Adicionar tags do Editor universal
 
 Primeiro, adicione as metatags necessárias para identificar o aplicativo React como compatível com o Universal Editor.
 
 1. Abra o `public/index.html` no seu aplicativo React.
-1. Adicione as [metatags do Editor Universal e o script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) na seção `<head>` do aplicativo React:
+1. Adicione as [metatags do Editor Universal e o script CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) na seção `<head>` do aplicativo React:
 
    ```html
    <!DOCTYPE html>
@@ -88,7 +88,7 @@ Primeiro, adicione as metatags necessárias para identificar o aplicativo React 
 Agora adicione atributos do Editor universal para tornar o componente Equipes editável.
 
 1. Abra `src/components/Teams.js`.
-1. Atualize o componente `Team` para incluir [atributos de dados do Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types):
+1. Atualize o componente `Team` para incluir [atributos de dados do Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types):
 
    Ao definir o atributo `data-aue-resource`, verifique se o caminho AEM para o fragmento de conteúdo, conforme retornado pela entrega de fragmentos de conteúdo do AEM com APIs OpenAPI, é pós-fixado com o subcaminho para a variação de Fragmento de conteúdo; neste caso, `/jcr:content/data/master`.
 
@@ -214,7 +214,7 @@ Agora adicione atributos do Editor universal para tornar o componente Equipes ed
 Da mesma forma, adicione atributos do Editor universal ao componente Pessoa.
 
 1. Abra `src/components/Person.js`.
-1. Atualize o componente para incluir [atributos de dados do Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types):
+1. Atualize o componente para incluir [atributos de dados do Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types):
 
    Ao definir o atributo `data-aue-resource`, verifique se o caminho AEM para o fragmento de conteúdo, conforme retornado pela entrega de fragmentos de conteúdo do AEM com APIs OpenAPI, é pós-fixado com o subcaminho para a variação de Fragmento de conteúdo; neste caso, `/jcr:content/data/master`.
 

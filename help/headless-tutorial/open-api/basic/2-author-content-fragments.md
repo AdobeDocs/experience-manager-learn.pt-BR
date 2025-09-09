@@ -50,7 +50,7 @@ O AEM é compatível com a organização de pastas &quot;simples&quot;, o que si
    * Título: **inglês**
    * Nome: **en**
 
-   Uma pasta de idioma raiz é criada para posicionar o projeto de forma a oferecer suporte aos recursos de localização nativos do AEM. Uma prática recomendada é configurar projetos para suporte multilíngue, mesmo que você não precise de localização hoje. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+   Uma pasta de idioma raiz é criada para posicionar o projeto de forma a oferecer suporte aos recursos de localização nativos do AEM. Uma prática recomendada é configurar projetos para suporte multilíngue, mesmo que você não precise de localização hoje. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=pt-BR).
 
 1. Crie duas subpastas na nova pasta **Meu Projeto > Inglês** com os seguintes valores:
 

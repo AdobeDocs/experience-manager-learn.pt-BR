@@ -35,5 +35,5 @@ O Adobe Experience Manager recria o fluxo de trabalho de personalização entre 
 
 ## Recursos adicionais {#additional-resources}
 
-* [Documentação de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
+* [Documentação de Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=pt-BR)
 * [Uso de Fragmentos de experiência](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)
