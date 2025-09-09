@@ -113,9 +113,9 @@ Para obter o aplicativo React:
 >   Este aplicativo React está parcialmente implementado. Siga as etapas deste tutorial para concluir a implementação. Os arquivos do JavaScript que precisam de trabalho de implementação têm o comentário a seguir. Certifique-se de adicionar/atualizar o código nesses arquivos com o código especificado neste tutorial.
 >
 >
->  //*******************************
->  >  // TODO: implemente isso seguindo as etapas do Tutorial do AEM Headless
->  >  //*******************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
+>  &#x200B;>  // TODO: implemente isso seguindo as etapas do Tutorial do AEM Headless
+>  &#x200B;>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 
 ## Anatomia do aplicativo React
