@@ -8,16 +8,16 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # Tutorial de práticas recomendadas do Dynamic Media Classic
 
-Este guia tem como objetivo ajudar os usuários atuais e novos do Dynamic Media Classic a entenderem melhor o que podem fazer com sua poderosa solução de mídia avançada da Adobe. Faremos isso ao:
+Este guia tem como objetivo ajudar os usuários atuais e novos do Dynamic Media Classic a entender melhor o que eles podem fazer com sua poderosa solução de mídia avançada da Adobe. Faremos isso ao:
 
 - Apresentando o Dynamic Media Classic, descrevendo o que é ele e fornecendo uma visão geral de seus principais recursos e interface do usuário (UI).
 - Explicar o fluxo de trabalho geral de Criar, Autor e Entrega que você seguirá ao trabalhar com ativos na solução.
@@ -40,9 +40,9 @@ Neste guia, discutiremos os seguintes recursos principais do Dynamic Media Class
 
 - **Dynamic Imaging.** O termo genérico para edição, formatação e dimensionamento em tempo real e zoom e panorâmica interativos; observação de cores e texturas; rotação de 360 graus; modelos de imagem; e visualizadores multimídia.
 - **Vídeo.** Carregue os vídeos finais, publique-os e baixe-os progressivamente em visualizadores de vídeo configuráveis.
-- **Imagens inteligentes.Tecnologia do** que aproveita os recursos de IA do Adobe Sensei e funciona com &quot;Predefinições de imagem&quot; existentes para aprimorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
+- **Imagens inteligentes.Tecnologia do** que funciona com &quot;Predefinições de imagem&quot; existentes para aprimorar o desempenho da entrega de imagens, otimizando automaticamente o formato de imagem, o tamanho e a qualidade com base nos recursos do navegador do cliente.
 
-Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=pt-BR).
+Para descobrir recursos adicionais da solução, visite a [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## A interface do usuário (UI) do Dynamic Media Classic
 
@@ -64,12 +64,12 @@ _INTERFACE DO USUÁRIO DO Dynamic Media Classic_
 
 >[!IMPORTANT]
 >
->Ao lado de cada ID de ativo há a opção **Marcar para Publish**. Quando o botão está ativado (verde), isso indica que o ativo está marcado para publicação.
+>Ao lado de cada ID de ativo há a opção **Marcar para publicação**. Quando o botão está ativado (verde), isso indica que o ativo está marcado para publicação.
 
 ![imagem](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Marque a caixa de seleção **Publish Após o carregamento** na caixa de diálogo Carregar para publicar ativos automaticamente após o carregamento.
+>Marque a caixa de seleção **Publicar após o carregamento** na caixa de diálogo Carregar para publicar ativos automaticamente após o carregamento.
 
-Saiba mais sobre [Navegação na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=pt-BR).
+Saiba mais sobre [Navegação na interface do usuário do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

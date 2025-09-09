@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
-workflow-type: ht
-source-wordcount: '317'
-ht-degree: 100%
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,14 @@ ht-degree: 100%
 # Introdução ao AEM Headless{#getting-started-with-aem-headless}
 
 + [Visão geral do AEM Headless](./overview.md)
++ OpenAPI {#open-api}
+   + Tutoriais básicos {#basic}
+      + [Visão geral](./open-api/basic/overview.md)
+      + [1 - Definir modelos de fragmento de conteúdo](./open-api/basic/1-content-fragment-models.md)
+      + [2 — Criar fragmentos de conteúdo](./open-api/basic/2-author-content-fragments.md)
+      + [3 - Explorar APIs OpenAPI](./open-api/basic/3-explore-openapis.md)
+      + [4 - Criar um aplicativo React](./open-api/basic/4-react-app.md)
+      + [5 - Integração do editor universal](./open-api/basic/5-universal-editor.md)
 + GraphQL {#graphql}
    + [Portal do desenvolvedor do AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR){target=_blank}
    + [Visão geral](./graphql/overview.md)
