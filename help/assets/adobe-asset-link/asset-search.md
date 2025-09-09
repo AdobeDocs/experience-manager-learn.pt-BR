@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Com o painel Adobe Asset Link, os usuários criativos podem pesquisar ativos armazenados no AEM Assets usando palavras-chave ou realizar uma pesquisa em um local específico. Além das opções básicas de pesquisa, o Adobe Asset Link também permite usar um ativo para pesquisar resultados visualmente semelhantes no AEM Assets. A pesquisa visual exibe resultados com características estéticas relacionadas à imagem de destino.
 
->[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38593?quality=12&learn=on&captions=por_br)

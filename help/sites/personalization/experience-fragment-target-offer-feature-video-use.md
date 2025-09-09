@@ -20,7 +20,7 @@ ht-degree: 1%
 
 O Adobe Experience Manager recria o fluxo de trabalho de personalização entre o AEM e o Target. As experiências criadas no AEM agora podem ser entregues diretamente ao Adobe Target como ofertas do HTML. Ele permite que os profissionais de marketing testem e personalizem conteúdo em diferentes canais sem problemas.
 
->[!VIDEO](https://video.tv.adobe.com/v/22383?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34848?quality=12&learn=on&captions=por_br)
 
 >[!NOTE]
 >
