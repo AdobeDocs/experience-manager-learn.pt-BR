@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 700
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: 01f51a3556cfbcc22bbe31c4c05c11caaab71708
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 1%
 
 ---
 
-# Criação de fragmentos de conteúdo
+# Fragmentos de conteúdo do autor
 
 Neste capítulo, você cria e edita novos Fragmentos de conteúdo com base nos [Modelos de fragmento de conteúdo de Equipe e Pessoa](./1-content-fragment-models.md). Esses fragmentos de conteúdo serão o conteúdo consumido pelo aplicativo React usando a entrega de fragmentos de conteúdo do AEM com APIs OpenAPI.
 
@@ -50,7 +50,7 @@ O AEM é compatível com a organização de pastas &quot;simples&quot;, o que si
    * Título: **inglês**
    * Nome: **en**
 
-   Uma pasta de idioma raiz é criada para posicionar o projeto de forma a oferecer suporte aos recursos de localização nativos do AEM. Uma prática recomendada é configurar projetos para suporte multilíngue, mesmo que você não precise de localização hoje. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=pt-BR).
+   Uma pasta de idioma raiz é criada para posicionar o projeto de forma a oferecer suporte aos recursos de localização nativos do AEM. Uma prática recomendada é configurar projetos para suporte multilíngue, mesmo que você não precise de localização hoje. Consulte [a seguinte página de documentos para obter mais informações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 
 1. Crie duas subpastas na nova pasta **Meu Projeto > Inglês** com os seguintes valores:
 
