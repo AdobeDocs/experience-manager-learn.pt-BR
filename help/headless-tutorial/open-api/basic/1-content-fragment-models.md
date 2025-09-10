@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 430
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: a3d2a88232cae941647464be8e215a47c85bc0ab
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 3%
 
 ---
 
-# Definição de Modelos de fragmentos de conteúdo
+# Criar modelos de fragmentos de conteúdo
 
 Neste capítulo, saiba como modelar conteúdo e criar um esquema com **Modelos de fragmento de conteúdo** e sobre os diferentes tipos de dados que definem um Modelo de fragmento de conteúdo.
 
@@ -160,5 +160,5 @@ No próximo capítulo, [Criação de modelos de fragmento de conteúdo](2-author
 
 ## Documentação relacionada
 
-* [Modelos de fragmentos do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=pt-BR)
+* [Modelos de fragmentos do conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
 
