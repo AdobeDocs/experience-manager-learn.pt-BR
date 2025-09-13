@@ -45,7 +45,7 @@ Visite o [site de Ativação WKND](https://wknd.enablementadobe.com/us/en.html) 
 
 - **Página da revista**: quando os usuários leem _três ou mais_ artigos, eles são categorizados como **Leitores da revista** público-alvo e veem uma seção principal personalizada na página da revista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474006/?learn=on&enablevpops&captions=por_br)
 
 >[!TIP]
 >
