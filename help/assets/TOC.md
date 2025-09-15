@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 4a4334047f600cd64a6f6be82974f280b786d0c1
+source-git-commit: 16b106d88d51d68819470758abd536ad42b019db
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '461'
 ht-degree: 99%
 
 ---
@@ -71,6 +71,7 @@ ht-degree: 99%
    + [Marcas d&#39;água](./advanced/watermarks.md)
 
 + Gerenciamento avançado de metadados{#metadata}
+   + [Metadados GenAI](metadata/genai-metadata.md)
    + [Metadados em cascata](metadata/cascade-metadata-feature-video-use.md)
    + [Tags inteligentes para imagens](metadata/image-smart-tags.md)
    + [Tags inteligentes personalizadas para imagens](metadata/custom-smart-tags.md)
@@ -165,7 +166,7 @@ ht-degree: 99%
       + [Componentes principais do Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
    + Tutoriais {#tutorials}
-      + [Criação de conjuntos de carrossel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+      + [Criação de conjuntos para carrossel](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Criação de conjuntos de imagem](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Criação de predefinições de imagem](dynamic-media/tutorials/creating-image-presets.md)
       + [Criação de perfis de imagem de corte inteligente](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
