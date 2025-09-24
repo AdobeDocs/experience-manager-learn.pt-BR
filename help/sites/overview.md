@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
+source-git-commit: 999bbe542e5c71ae537f93a4c89acf6d304a4292
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -25,7 +25,7 @@ O AEM Sites fornece três maneiras de criar e entregar experiências. Quer você
 
 1. As experiências do **Edge Delivery Services** usam o Edge Network da Adobe para fornecer conteúdo com alta velocidade e baixa latência. O serviço otimiza automaticamente o conteúdo para o dispositivo de consumo, os mecanismos de pesquisa e os agentes GenAI. Os autores criam conteúdo usando o Adobe Universal Editor ou a criação baseada em documento.
 1. As experiências **Headless/API-first** usam o AEM Publish para fornecer conteúdo como JSON sobre APIs HTTP para aplicativos móveis, aplicativos de página única (SPAs) ou outros clientes headless. Os autores criam conteúdo usando o Editor de fragmento de conteúdo ou o Editor universal.
-1. As experiências **AEM** tradicionais usam o AEM Publish para fornecer conteúdo como páginas da Web do HTML. Os autores criam conteúdo usando o Editor de páginas do AEM Author. Essa opção é mais adequada para projetos existentes ou já migrados.
+1. As experiências **AEM** tradicionais usam o AEM Publish para fornecer conteúdo como páginas da Web do HTML. Os autores criam conteúdo usando o Editor de páginas do autor do AEM. Essa opção é mais adequada para projetos existentes ou já migrados.
 
 Todas as três opções são abordagens fortes e a melhor opção depende do seu caso de uso e das necessidades organizacionais. Cada abordagem permite que as equipes forneçam experiências personalizadas e envolventes em velocidade e escala em qualquer canal ou dispositivo.
 
@@ -67,12 +67,12 @@ Explore as três abordagens para criar com o AEM Sites em mais detalhes. Os tuto
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
