@@ -20,7 +20,7 @@ ht-degree: 0%
 
 O Experience Hub é o ponto de partida central para trabalhar com o Adobe Experience Manager. Ele reúne em um só lugar todas as ferramentas, ambientes e recursos necessários, facilitando a navegação, o gerenciamento e a realização mais rápida do trabalho. Em vez de alternar entre vários logons ou marcadores, a Experience Hub fornece um único ponto de entrada simplificado, ajudando você a se concentrar na criação, no fornecimento e na otimização de experiências.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475251/?learn=on&enablevpops&captions=por_br)
 
 A introdução é simples: acesse [experience.adobe.com](https://experience.adobe.com), faça logon com sua Adobe ID e selecione **Experience Manager** no menu de navegação. A partir daí, você é levado para a Experience Hub, onde você pode acessar rapidamente tudo o que precisa para trabalhar com o AEM.
 
