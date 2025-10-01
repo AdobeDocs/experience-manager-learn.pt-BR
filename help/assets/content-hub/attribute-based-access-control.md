@@ -24,4 +24,4 @@ Saiba como configurar e controlar o acesso a ativos no AEM Assets Content Hub us
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops)
 
-[Baixe a planilha de definição de controle de acesso baseado em atributo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control) da documentação de controle de acesso baseado em atributo do AEM Assets Content Hub.
+[Baixe a planilha de definição de controle de acesso baseado em atributo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control) da documentação de controle de acesso baseado em atributo do AEM Assets Content Hub.
