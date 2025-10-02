@@ -1,5 +1,5 @@
 ---
-title: Mapas do site
+title: Mapas dos sites
 description: Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 version: Experience Manager as a Cloud Service
 feature: Core Components
@@ -12,14 +12,14 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: d2714443fa644ba17afdfbed5e6da8091425aeab
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Mapas do site
+# Mapas dos sites
 
 Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 
@@ -27,7 +27,7 @@ Saiba como ajudar a impulsionar seu SEO criando mapas de site para o AEM Sites.
 >
 >Este vídeo demonstra o uso de URLs relativos no mapa de site. Os mapas de site [devem usar URLs absolutas](https://sitemaps.org/protocol.html). Consulte [Configurações](#absolute-sitemap-urls) para saber como habilitar URLs absolutos, pois isso não é abordado no vídeo abaixo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454366?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configurações
 
@@ -52,7 +52,7 @@ A captura de tela abaixo ilustra uma configuração semelhante, mas para `http:/
 
 Define a [configuração de fábrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) para a frequência (usando [expressões cron](https://cron.help/)) em que os mapas de site são gerados/novamente e armazenados em cache no AEM.
 
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.author`
 
 ```json
 {
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Recursos
 
-+ [Documentação do AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=pt-BR)
++ [Documentação do AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentação do Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentação do Mapa do Site do Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentação do arquivo de índice do Mapa de Site](https://www.sitemaps.org/protocol.html#index) do Sitemap.org
