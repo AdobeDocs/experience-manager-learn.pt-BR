@@ -208,7 +208,7 @@ Esses vídeos abordam os principais recursos do Centro de conteúdo do AEM Asset
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="Controle de acesso baseado em atributos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="Controle de acesso baseado em atributos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475419/?format=jpeg&nocache=1759339175804&captions=por_br" alt="Controle de acesso baseado em atributos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
