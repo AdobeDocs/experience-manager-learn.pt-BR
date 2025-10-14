@@ -11,9 +11,9 @@ last-substantial-update: 2024-03-14T00:00:00Z
 jira: KT-14911
 exl-id: 1055c45c-7f04-4f8e-bca8-a4a085a718c8
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -25,4 +25,4 @@ Gerar variações no Adobe Experience Manager é uma ferramenta dinâmica que ot
 
 ## Usar a função de gerar variações na criação do AEM
 
-+ __Criação de documentos__: saiba como usar a opção de gerar variações para criar documentos dinâmicos e personalizados, transformando os seus sites baseados em documentos em experiências mais atraentes e envolventes. [Exibir documentação](https://www.aem.live/docs/sidekick-generate-variations)
++ __Criação de documentos :__Saiba como utilizar a função Gerar variações para criar documentos dinâmicos e personalizados, elevando seus sites baseados em documentos a experiências mais atraentes e envolventes. [Exibir documentação](https://www.aem.live/docs/sidekick-generate-variations)
