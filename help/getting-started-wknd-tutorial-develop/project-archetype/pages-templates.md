@@ -324,7 +324,7 @@ Geralmente, especialmente no início de um projeto AEM, é valioso manter as con
 Por enquanto, os modelos são tratados como outras partes do código e sincronizam o **Modelo de página de artigo** como parte do projeto.
 Até agora, o código é enviado do projeto AEM para uma instância local de AEM. O **Modelo de Página de Artigo** foi criado diretamente em uma instância local do AEM, portanto, é necessário **importar** o modelo para o projeto AEM. O módulo **ui.content** está incluído no projeto AEM para essa finalidade específica.
 
-As próximas etapas são realizadas no VSCode IDE usando o plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview). Mas eles podem estar usando qualquer IDE que você tenha configurado para **importar** ou importar conteúdo de uma instância local do AEM.
+As próximas etapas são realizadas no VSCode IDE usando o plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&ssr=false#overview). Mas eles podem estar usando qualquer IDE que você tenha configurado para **importar** ou importar conteúdo de uma instância local do AEM.
 
 1. No, o VSCode abre o projeto `aem-guides-wknd`.
 

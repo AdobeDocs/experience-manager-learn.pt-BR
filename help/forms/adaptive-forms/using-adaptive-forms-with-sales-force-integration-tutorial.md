@@ -31,7 +31,7 @@ Pré-requisitos para este tutorial:
    * [Documentação oficial para habilitar o SSL no AEM 6.4](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Você precisa ter uma conta do Salesforce
-* É necessário criar um Aplicativo Conectado. A documentação oficial do Salesforce para criar o aplicativo está listada [aqui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* É necessário criar um Aplicativo Conectado. A documentação oficial do Salesforce para criar o aplicativo está listada [aqui](https://help.salesforce.com/articleView?id=connected_app_create.htm&type=0).
 * Fornecer escopos OAuth apropriados para o aplicativo (selecionei todos os escopos OAuth disponíveis para fins de teste)
 * Forneça a URL de retorno de chamada. No meu caso, o URL de retorno de chamada era
 

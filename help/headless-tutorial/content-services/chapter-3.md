@@ -66,6 +66,6 @@ No painel **Propriedades**, verifique se ele tem uma propriedade `cq:model` que 
 
 ## Próxima etapa
 
-É recomendável instalar o pacote de conteúdo do [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) no AEM Author por meio do [Gerenciador de Pacotes ](http://localhost:4502/crx/packmgr/index.jsp) do AEM. Este pacote contém as configurações e o conteúdo descritos neste e nos capítulos anteriores do tutorial.
+É recomendável instalar o pacote de conteúdo do [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) no AEM Author por meio do [Gerenciador de Pacotes &#x200B;](http://localhost:4502/crx/packmgr/index.jsp) do AEM. Este pacote contém as configurações e o conteúdo descritos neste e nos capítulos anteriores do tutorial.
 
 * [Capítulo 4 - Definição de modelos de serviços de conteúdo do AEM](./chapter-4.md)

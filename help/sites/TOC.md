@@ -56,9 +56,9 @@ ht-degree: 99%
       + [Configurar estrutura de experimentação](./document-authoring/how-to/setup-experimentation-framework.md)
       + [Metadados para experimentação](./document-authoring/how-to/experimentation-add-metadata.md)
 + Criação de páginas {#page-authoring}
-   + [Criação  ](page-authoring/aem-sites-authoring-overview.md)
+   + [Criação  &#x200B;](page-authoring/aem-sites-authoring-overview.md)
    + [Navegação](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Estrutura do site ](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Estrutura do site &#x200B;](page-authoring/content-hierarchy-feature-video-use.md)
    + [Criação de páginas](page-authoring/creating-page-feature-video-use.md)
    + [Criação de páginas](page-authoring/page-authoring-overview-feature-video-use.md)
    + [Editor de página](page-authoring/page-editor-feature-video-use.md)
@@ -71,7 +71,7 @@ ht-degree: 99%
    + [Publicação](page-authoring/publication-management-feature-video-use.md)
    + [Modelos editáveis](page-authoring/template-editor-feature-video-use.md)
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
-   + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
+   + [Timewarp  &#x200B;](page-authoring/timewarp-feature-video-use.md)
    + [Lançamentos](page-authoring/launches.md)
    + Aprenda com os seus colegas {#expert-advice}
       + [Dicas de hierarquia do site](page-authoring/expert-advice/site-hierarchy.md)

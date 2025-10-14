@@ -180,7 +180,7 @@ Um atributo de dados especial `data-cmp-data-layer` em cada componente do AEM é
 1. Abra o projeto `aem-guides-wknd` no IDE. Navegue até o módulo `ui.apps`.
 1. Abra o arquivo `byline.html` em `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
 
-   ![HTML de Linha ](assets/adobe-client-data-layer/byline-html-template.png)
+   ![HTML de Linha &#x200B;](assets/adobe-client-data-layer/byline-html-template.png)
 
 1. Atualize `byline.html` para incluir o atributo `data-cmp-data-layer`:
 

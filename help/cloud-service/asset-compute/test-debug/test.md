@@ -85,7 +85,7 @@ Este caso de teste declara que a entrada parametrizada (`params.json`) para o ar
    + Verifique se o [Docker Desktop](../set-up/development-environment.md#docker) e as imagens do Docker de suporte estão instalados e iniciados
    + Encerrar todas as instâncias da Ferramenta de desenvolvimento em execução
 
-![Teste - Êxito ](./assets/test/success-parameterized/result.png)
+![Teste - Êxito &#x200B;](./assets/test/success-parameterized/result.png)
 
 ## Gravação de um caso de teste de verificação de erro
 

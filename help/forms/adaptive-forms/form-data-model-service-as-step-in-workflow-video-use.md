@@ -37,5 +37,5 @@ Para testar esse recurso no servidor, siga as instruções abaixo
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
 * Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o [fluxo de trabalho do aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
-![ fluxo de trabalho ](assets/fdm-as-service-step-workflow.PNG).
+![&#x200B; fluxo de trabalho &#x200B;](assets/fdm-as-service-step-workflow.PNG).
 O fluxo de trabalho utiliza o componente Ou divisão para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, a aplicação será encaminhada para a cavery

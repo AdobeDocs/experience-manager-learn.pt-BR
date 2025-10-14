@@ -182,7 +182,7 @@ function getColorName(colorsFamily, color) {
 
 Com o código do trabalhador concluído, ele pode ser executado usando a Ferramenta de desenvolvimento Asset Compute local.
 
-Como nosso projeto do Asset Compute contém dois trabalhadores (a [representação de círculo](../develop/worker.md) anterior e este `metadata-colors` trabalhador), a [definição de perfil da ](../develop/development-tool.md) da Ferramenta de Desenvolvimento do Asset Compute lista perfis de execução para ambos os trabalhadores. A segunda definição de perfil aponta para o novo trabalhador `metadata-colors`.
+Como nosso projeto do Asset Compute contém dois trabalhadores (a [representação de círculo](../develop/worker.md) anterior e este `metadata-colors` trabalhador), a [definição de perfil da &#x200B;](../develop/development-tool.md) da Ferramenta de Desenvolvimento do Asset Compute lista perfis de execução para ambos os trabalhadores. A segunda definição de perfil aponta para o novo trabalhador `metadata-colors`.
 
 ![Representação de metadados XML](./assets/metadata/metadata-rendition.png)
 

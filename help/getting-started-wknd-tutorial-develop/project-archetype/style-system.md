@@ -81,7 +81,7 @@ O [Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manage
 
 A ideia geral com o Sistema de estilos é que os autores podem escolher vários estilos de como um componente deve ser exibido. Os &quot;estilos&quot; são apoiados por classes CSS adicionais que são inseridas na div externa de um componente. Nas bibliotecas de clientes, as regras CSS são adicionadas com base nessas classes de estilo para que o componente altere a aparência.
 
-Você pode encontrar [documentação detalhada para o Sistema de Estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [ para entender o Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=pt-BR).
+Você pode encontrar [documentação detalhada para o Sistema de Estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [&#x200B; para entender o Sistema de Estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=pt-BR).
 
 ## Estilo do Sublinhado - Título {#underline-style}
 

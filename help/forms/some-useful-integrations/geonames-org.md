@@ -91,6 +91,6 @@ Você pode baixar os seguintes ativos para começar a criar a amostra de lista s
 Os arquivos concluídos do Swagger podem ser baixados de [aqui](assets/geonames-swagger-files.zip)
 Os arquivos swagger descrevem a seguinte API REST
 * [Obter Todos os Países](https://secure.geonames.org/countryInfoJSON?username=yourusername)
-* [Obter Filhos do objeto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obter Filhos do objeto Geoname](https://secure.geonames.org/children?formatted=true&geonameId=6252001&username=yourusername)
 
 O [Modelo de Dados de Formulário concluído pode ser baixado daqui](assets/geonames-api-form-data-model.zip)

@@ -42,7 +42,7 @@ Também é um código de teste *crítico* em relação a uma instância de ***Pu
 ### Etapas
 
 1. Verifique se o Java™ está instalado.
-   * Preferir o [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) para AEM 6.5+
+   * Preferir o [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) para AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) para versões do AEM anteriores ao AEM 6.5
 1. Obtenha uma cópia do [AEM QuickStart Jar e um [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR).
 1. Crie uma estrutura de pastas no seu computador da seguinte maneira:

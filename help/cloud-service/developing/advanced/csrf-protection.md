@@ -45,7 +45,7 @@ Para usar essa abordagem, adicione `granite.csrf.standalone` como uma dependênc
 
 ## Envio de formulário personalizado com proteção CSRF
 
-Se o uso da biblioteca [`granite.csrf.standalone` do cliente ](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF ao envio de um formulário. O exemplo a seguir mostra como adicionar um token CSRF ao envio de um formulário.
+Se o uso da biblioteca [`granite.csrf.standalone` do cliente &#x200B;](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF ao envio de um formulário. O exemplo a seguir mostra como adicionar um token CSRF ao envio de um formulário.
 
 Este trecho de código demonstra como, quando um formulário é enviado, o token CSRF pode ser buscado no AEM e adicionado a uma entrada de formulário chamada `:cq_csrf_token`. Como o token CSRF tem uma vida útil curta, é melhor recuperar e definir o token CSRF imediatamente antes do envio do formulário, garantindo sua validade.
 
@@ -74,7 +74,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 
 ## Buscar com proteção CSRF
 
-Se o uso da biblioteca [`granite.csrf.standalone` do cliente ](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF a um XHR ou buscar solicitações. O exemplo a seguir mostra como adicionar um token CSRF a um XHR criado com a busca.
+Se o uso da biblioteca [`granite.csrf.standalone` do cliente &#x200B;](#csrf-client-library) não for compatível com seu caso de uso, você poderá adicionar manualmente um token CSRF a um XHR ou buscar solicitações. O exemplo a seguir mostra como adicionar um token CSRF a um XHR criado com a busca.
 
 Este trecho de código demonstra como buscar um token CSRF do AEM e adicioná-lo ao cabeçalho de solicitação HTTP `CSRF-Token` de uma solicitação de busca. Como o token CSRF tem uma vida útil curta, é melhor recuperar e definir o token CSRF imediatamente antes de fazer a solicitação de busca, garantindo sua validade.
 

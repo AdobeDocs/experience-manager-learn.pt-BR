@@ -61,7 +61,7 @@ Estas são as razões para esse tipo de configuração,
 
 Os servidores Apache são baratos e fáceis de provisionar, por que não forçar a expansão desse nível um pouco mais. Por que não ter dois ou mais Dispatchers na frente de cada servidor do Publish?
 
-Configuração de &quot;Expansão&quot; do ![ - Tem algumas áreas de aplicativo, mas também limitações e limitações](assets/chapter-2/scale-out-setup.png)
+Configuração de &quot;Expansão&quot; do ![&#x200B; - Tem algumas áreas de aplicativo, mas também limitações e limitações](assets/chapter-2/scale-out-setup.png)
 
 Configuração de &quot;Expansão&quot; do *- Tem algumas áreas de aplicativo, mas também limitações e limitações*
 

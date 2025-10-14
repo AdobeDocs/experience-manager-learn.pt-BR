@@ -131,7 +131,7 @@ Os fragmentos de conteúdo e fragmentos de experiência do Adobe Experience Mana
 </td>
 </tr><tr><td><strong>Documentação</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guia do usuário de fragmentos de conteúdo do AEM</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js" target="_blank">Guia do usuário de fragmentos de conteúdo do AEM</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=pt-BR" target="_blank">Uso de fragmentos de conteúdo no AEM</a></li>
 </ul>
 </td>
@@ -172,7 +172,7 @@ O diagrama a seguir ilustra a arquitetura geral dos fragmentos de conteúdo do A
 
 ## Recurso de suporte para fragmentos de conteúdo
 
-+ [Guia do Usuário de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
++ [Guia do Usuário de Fragmentos de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR&topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Introdução ao Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=pt-BR)
 + [Usando fragmentos de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=pt-BR)
 + [Componente Fragmento de Conteúdo dos Componentes Principais do AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)

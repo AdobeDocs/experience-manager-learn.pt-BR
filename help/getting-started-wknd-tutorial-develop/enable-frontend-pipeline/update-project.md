@@ -34,7 +34,7 @@ Neste capítulo, fazemos alterações de configuração no __projeto do WKND Sit
 
 ## Pré-requisitos {#prerequisites}
 
-Este é um tutorial de várias partes e presume-se que você tenha revisado o [ Módulo&#39;ui.frontend&#39;](./review-uifrontend-module.md).
+Este é um tutorial de várias partes e presume-se que você tenha revisado o [&#x200B; Módulo&#39;ui.frontend&#39;](./review-uifrontend-module.md).
 
 
 ## Alterações no projeto de pilha completa do AEM

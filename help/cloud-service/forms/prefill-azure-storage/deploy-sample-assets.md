@@ -27,7 +27,7 @@ Para que esse caso de uso funcione em seu sistema, implante os seguintes ativos 
 
 * [Instalar o Modelo de Dados de Formulário SendGrid](./assets/send-grid-form-data-model.zip). Será necessário fornecer sua chave de API e o endereço &quot;SendGrid verificado&quot; para que este modelo de dados de formulário funcione. Testar o modelo de dados de formulário no editor de modelo de dados de formulário
 
-* [Instalar o Modelo de Dados de Formulário ](./assets/azure-storage-fdm.zip) com suporte do Azure. Será necessário fornecer suas credenciais da conta de Armazenamento do Azure para que o modelo de dados de formulário funcione. Teste o modelo de dados de formulário no editor de modelo de dados de formulário.
+* [Instalar o Modelo de Dados de Formulário &#x200B;](./assets/azure-storage-fdm.zip) com suporte do Azure. Será necessário fornecer suas credenciais da conta de Armazenamento do Azure para que o modelo de dados de formulário funcione. Teste o modelo de dados de formulário no editor de modelo de dados de formulário.
 
 * [Importar a amostra de formulário adaptável](./assets/credit-applications-af.zip)
 * [Importar a biblioteca do cliente](./assets/client-lib.zip)
