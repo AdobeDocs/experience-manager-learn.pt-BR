@@ -25,13 +25,13 @@ Como parte da criação rápida de sites, use o assistente de criação de sites
 
 ## Pré-requisitos {#prerequisites}
 
-As etapas deste capítulo serão realizadas em um ambiente do Adobe Experience Manager as a Cloud Service. Verifique se você tem acesso administrativo ao ambiente do AEM. É recomendável usar um [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e um [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) para realizar este tutorial.
+As etapas deste capítulo serão realizadas em um ambiente do Adobe Experience Manager as a Cloud Service. Verifique se você tem acesso administrativo ao ambiente do AEM. É recomendável usar um [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=pt-BR) e um [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) para realizar este tutorial.
 
-Ambientes do [Programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) também podem ser usados para este tutorial; no entanto, certifique-se de que as atividades deste tutorial não afetem o trabalho que está sendo executado nos ambientes de destino, pois este tutorial implanta um conteúdo e um código no ambiente de destino do AEM.
+Ambientes do [Programa de produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=pt-BR) também podem ser usados para este tutorial; no entanto, certifique-se de que as atividades deste tutorial não afetem o trabalho que está sendo executado nos ambientes de destino, pois este tutorial implanta um conteúdo e um código no ambiente de destino do AEM.
 
-O [SDK do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime) pode ser usado para partes deste tutorial. Alguns aspectos deste tutorial que dependem dos serviços em nuvem, como a [implantação de temas com o pipeline de front-end do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), não podem ser executados no SDK do AEM.
+O [SDK do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime) pode ser usado para partes deste tutorial. Alguns aspectos deste tutorial que dependem dos serviços em nuvem, como a [implantação de temas com o pipeline de front-end do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=pt-BR), não podem ser executados no SDK do AEM.
 
-Consulte a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) para mais detalhes.
+Consulte a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR) para mais detalhes.
 
 ## Objetivo {#objective}
 
@@ -76,7 +76,7 @@ A maioria dos tutoriais será realizada com o **Serviço de criação**.
 
 >[!NOTE]
 >
-> Problemas ao acessar o Experience Manager? Consulte a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> Problemas ao acessar o Experience Manager? Consulte a [documentação de integração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=pt-BR)
 
 ## Baixar o modelo de site básico
 

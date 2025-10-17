@@ -23,7 +23,7 @@ ht-degree: 100%
 
 {{edge-delivery-services-and-page-editor}}
 
-Neste capítulo, vamos abordar a relação entre um componente de página básica e modelos editáveis. Saiba como criar um modelo de artigo não estilizado com base em alguns modelos do [Adobe XD](https://helpx.adobe.com/support/xd.html). Durante o processo de criação do modelo, falaremos sobre os componentes principais e as configurações de política avançadas de modelos editáveis.
+Neste capítulo, vamos abordar a relação entre um componente de página básica e modelos editáveis. Saiba como criar um modelo de artigo não estilizado com base em alguns modelos do [Adobe XD](https://helpx.adobe.com/br/support/xd.html). Durante o processo de criação do modelo, falaremos sobre os componentes principais e as configurações de política avançadas de modelos editáveis.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -74,7 +74,7 @@ Nesta parte do tutorial, você criará um novo modelo de página de artigo que p
 
 ## Planejamento da IU com o Adobe XD {#adobexd}
 
-Normalmente, o planejamento de um novo site começa com simulações e designs estáticos. O [Adobe XD](https://helpx.adobe.com/support/xd.html) é uma ferramenta de design que cria uma experiência do usuário. Em seguida, vamos inspecionar um kit da IU e modelos para ajudar a planejar a estrutura do modelo de página de artigo.
+Normalmente, o planejamento de um novo site começa com simulações e designs estáticos. O [Adobe XD](https://helpx.adobe.com/br/support/xd.html) é uma ferramenta de design que cria uma experiência do usuário. Em seguida, vamos inspecionar um kit da IU e modelos para ajudar a planejar a estrutura do modelo de página de artigo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,13 +82,13 @@ Normalmente, o planejamento de um novo site começa com simulações e designs e
 
 >[!NOTE]
 >
-> Um kit da IU dos [Componentes principais do AEM também está disponível](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) como ponto de partida para projetos personalizados.
+> Um kit da IU dos [Componentes principais do AEM também está disponível](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=pt-BR) como ponto de partida para projetos personalizados.
 
 ## Criar o modelo de página de artigo
 
 Ao criar uma página, é necessário selecionar um modelo, que serve de base para a criação da página. O modelo define a estrutura da página resultante, o conteúdo inicial e os componentes permitidos.
 
-Há três áreas principais nos [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Há três áreas principais nos [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=pt-BR):
 
 1. **Estrutura**: define os componentes que fazem parte do modelo. Não podem ser editados por criadores de conteúdo.
 1. **Conteúdo inicial**: define os componentes com os quais o modelo começa; podem ser editados e/ou excluídos por criadores de conteúdo
@@ -160,7 +160,7 @@ Principais etapas do vídeo acima:
 
 ## Atualizar o cabeçalho e o rodapé com fragmentos de experiência {#experience-fragments}
 
-Uma prática comum ao criar um conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Os fragmentos de experiência permitem que os usuários combinem vários componentes para criar um componente unificado que pode ser referenciado. Os fragmentos de experiência têm a vantagem de permitir o gerenciamento de vários sites e a [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-br).
+Uma prática comum ao criar um conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR). Os fragmentos de experiência permitem que os usuários combinem vários componentes para criar um componente unificado que pode ser referenciado. Os fragmentos de experiência têm a vantagem de permitir o gerenciamento de vários sites e a [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-br).
 
 O arquétipo de projeto do AEM gerou um cabeçalho e um rodapé. Em seguida, atualize os fragmentos de experiência para corresponderem às simulações. Siga as etapas do vídeo abaixo:
 
@@ -262,7 +262,7 @@ Use a ferramenta CRXDE-Lite em uma instância do AEM local para exibir a estrutu
 
    Há apenas dois scripts HTL, `customfooterlibs.html` e `customheaderlibs.html`, abaixo do componente de página. *Como esse componente renderiza a página?*
 
-   A propriedade `sling:resourceSuperType` aponta para `core/wcm/components/page/v2/page`. Essa propriedade permite que o componente de página da WKND herde **toda** a funcionalidade do componente de página dos componentes principais. Este é o primeiro exemplo de algo chamado de [Padrão de componente de proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Mais informações podem ser encontradas [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   A propriedade `sling:resourceSuperType` aponta para `core/wcm/components/page/v2/page`. Essa propriedade permite que o componente de página da WKND herde **toda** a funcionalidade do componente de página dos componentes principais. Este é o primeiro exemplo de algo chamado de [Padrão de componente de proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=pt-BR#ProxyComponentPattern). Mais informações podem ser encontradas [aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=pt-BR).
 
 1. Inspecione outro componente dentro dos componentes da WKND, o componente `Breadcrumb` de: `/apps/wknd/components/breadcrumb`. Observe que a mesma propriedade `sling:resourceSuperType` pode ser encontrada, mas desta vez ela aponta para `core/wcm/components/breadcrumb/v2/breadcrumb`. Este é outro exemplo de como usar o padrão de componente de proxy para incluir um componente principal. Na verdade, todos os componentes na base de código da WKND são proxies dos componentes principais do AEM (exceto o componente de demonstração personalizada “Olá, mundo”). É uma prática recomendada reutilizar o máximo possível da funcionalidade dos componentes principais *antes* de gravar o código personalizado.
 
@@ -312,7 +312,7 @@ Use a ferramenta CRXDE-Lite em uma instância do AEM local para exibir a estrutu
 
    O outro motivo para dividir o HTL em vários scripts é permitir que os componentes de proxy substituam scripts individuais para implementar uma lógica de negócios personalizada. Os scripts HTL `customfooterlibs.html` e `customheaderlibs.html` são criados para que a finalidade explícita seja substituída pela implementação de projetos.
 
-   Você pode saber mais sobre como o modelo editável influencia a renderização da página de conteúdo [neste artigo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
+   Você pode saber mais sobre como o modelo editável influencia a renderização da página de conteúdo [neste artigo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=pt-BR).
 
 1. Inspecione outro componente principal, como a navegação estrutural, em `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualize o script `breadcrumb.html` para entender como a marcação do componente de navegação estrutural é gerada.
 

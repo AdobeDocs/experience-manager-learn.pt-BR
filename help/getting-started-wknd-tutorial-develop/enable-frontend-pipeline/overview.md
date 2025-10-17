@@ -35,10 +35,10 @@ No entanto, após a conversão do projeto do site da WKND no AEM, os desenvolved
 
 >[!IMPORTANT]
 >
->De modo geral, o pipeline de front-end é normalmente usado com a [Criação rápida de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=pt-br). Há um tutorial relacionado, [Introdução ao AEM Sites: criação rápida de sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html), para saber mais sobre isso. Neste tutorial e nos vídeos associados, você verá referências a ele, a fim de garantir que diferenças sutis sejam destacadas e haja uma comparação direta ou indireta para explicar conceitos cruciais.
+>De modo geral, o pipeline de front-end é normalmente usado com a [Criação rápida de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/overview.html?lang=pt-br). Há um tutorial relacionado, [Introdução ao AEM Sites: criação rápida de sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=pt-BR), para saber mais sobre isso. Neste tutorial e nos vídeos associados, você verá referências a ele, a fim de garantir que diferenças sutis sejam destacadas e haja uma comparação direta ou indireta para explicar conceitos cruciais.
 
 
-Um [tutorial em várias etapas](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html) relacionado aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND, usando o recurso de criação rápida de sites. Também é útil revisar o [Fluxo de trabalho de temas](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html) para entender o funcionamento do pipeline de front-end.
+Um [tutorial em várias etapas](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/overview.html?lang=pt-BR) relacionado aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND, usando o recurso de criação rápida de sites. Também é útil revisar o [Fluxo de trabalho de temas](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=pt-BR) para entender o funcionamento do pipeline de front-end.
 
 ## Visão geral, benefícios e considerações sobre o pipeline de front-end
 
@@ -51,9 +51,9 @@ Um [tutorial em várias etapas](https://experienceleague.adobe.com/docs/experien
 
 ## Pré-requisitos
 
-A etapa de implantação deste tutorial ocorre em um Adobe Cloud Manager. Verifique se você tem uma função de __Gerente de implantação__. Consulte [Definições de função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) do Cloud Manager.
+A etapa de implantação deste tutorial ocorre em um Adobe Cloud Manager. Verifique se você tem uma função de __Gerente de implantação__. Consulte [Definições de função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=pt-BR#role-definitions) do Cloud Manager.
 
-Use o [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e o [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) para realizar este tutorial.
+Use o [Programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR) e o [Ambiente de desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) para realizar este tutorial.
 
 ## Próximas etapas {#next-steps}
 

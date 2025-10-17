@@ -100,7 +100,7 @@ Confira abaixo as etapas de alto nível executadas no vídeo acima.
 
 ## HTL (linguagem de modelo em HTML) e caixas de diálogo {#htl-dialogs}
 
-A linguagem de modelo em HTML, ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)**, é uma linguagem de modelo leve do lado do servidor usada por componentes do AEM para renderizar conteúdo.
+A linguagem de modelo em HTML, ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=pt-BR)**, é uma linguagem de modelo leve do lado do servidor usada por componentes do AEM para renderizar conteúdo.
 
 As **caixas de diálogo** definem as configurações disponíveis que podem ser ajustadas para um componente.
 
@@ -262,7 +262,7 @@ Em seguida, vamos fazer algumas atualizações no modelo do Sling `HelloWorldMod
 
    A instância do modelo `HelloWorld` agora está disponível no HTL por meio da variável `model`, usando o `HelloWord`. Essas invocações de métodos podem usar uma sintaxe de método encurtada; por exemplo: `${model.getTitle()}` pode ser encurtado para `${model.title}`.
 
-   Da mesma forma, todos os scripts HTL são inseridos com [objetos globais](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html), que podem ser acessados por meio da mesma sintaxe dos objetos de modelo do Sling.
+   Da mesma forma, todos os scripts HTL são inseridos com [objetos globais](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=pt-BR), que podem ser acessados por meio da mesma sintaxe dos objetos de modelo do Sling.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
@@ -285,7 +285,7 @@ Em seguida, vamos fazer algumas atualizações no modelo do Sling `HelloWorldMod
 
 As bibliotecas do lado do cliente, `clientlibs` para abreviar, fornecem um mecanismo para organizar e gerenciar os arquivos CSS e JavaScript necessários para uma implementação do AEM Sites. As bibliotecas do lado do cliente são a maneira padrão de incluir o CSS e o JavaScript em uma página no AEM.
 
-O módulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um projeto do [webpack](https://webpack.js.org/) desacoplado que está integrado ao processo de compilação. Isso permite o uso de bibliotecas de front-end famosas, como Sass, LESS e TypeScript. O módulo `ui.frontend` será abordados mais detalhadamente no [capítulo de bibliotecas do lado do cliente](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+O módulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR) é um projeto do [webpack](https://webpack.js.org/) desacoplado que está integrado ao processo de compilação. Isso permite o uso de bibliotecas de front-end famosas, como Sass, LESS e TypeScript. O módulo `ui.frontend` será abordados mais detalhadamente no [capítulo de bibliotecas do lado do cliente](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Em seguida, atualize os estilos de CSS do componente `HelloWorld`.
 

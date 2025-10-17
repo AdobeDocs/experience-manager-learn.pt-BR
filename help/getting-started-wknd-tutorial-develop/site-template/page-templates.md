@@ -62,7 +62,7 @@ Uma solução completa de [modelo de revista](assets/page-templates/WKND-Magazin
 
 ## Atualizar o cabeçalho e o rodapé com fragmentos de experiência {#experience-fragments}
 
-Uma prática comum ao criar um conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Os fragmentos de experiência permitem que os usuários combinem vários componentes para criar um componente unificado que pode ser referenciado. Os fragmentos de experiência têm a vantagem de permitir o gerenciamento de vários sites e a [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Uma prática comum ao criar um conteúdo global, como cabeçalho ou rodapé, é usar um [Fragmento de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=pt-BR). Os fragmentos de experiência permitem que os usuários combinem vários componentes para criar um componente unificado que pode ser referenciado. Os fragmentos de experiência têm a vantagem de permitir o gerenciamento de vários sites e a [localização](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=pt-BR#localized-site-structure).
 
 O modelo de site gerou um cabeçalho e um rodapé. Em seguida, atualize os fragmentos de experiência para corresponderem às simulações. Siga as etapas do vídeo abaixo:
 

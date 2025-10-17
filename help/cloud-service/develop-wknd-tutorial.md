@@ -29,7 +29,7 @@ A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AE
 
 O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e oferece compatibilidade retroativa com o **AEM 6.5+** e o **AEM 6.4.2+**.
 
-**[Veja o tutorial aqui!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[Veja o tutorial aqui!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)**
 
 ## Implantar a WKND no AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 

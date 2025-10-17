@@ -69,7 +69,7 @@ Confira o código de linha de base no qual o tutorial se baseia:
 
 ## O que você criará {#what-build}
 
-Este capítulo usará o [recurso do sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) para criar variações dos componentes **Título** e **Texto** usados na página “Artigo”.
+Este capítulo usará o [recurso do sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=pt-BR) para criar variações dos componentes **Título** e **Texto** usados na página “Artigo”.
 
 ![Estilos disponíveis para o título](assets/style-system/styles-added-title.png)
 
@@ -77,15 +77,15 @@ Este capítulo usará o [recurso do sistema de estilos](https://experienceleague
 
 ## Fundo {#background}
 
-O [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permite que desenvolvedores e editores de modelos criem várias variações visuais de um componente. Os criadores podem decidir qual estilo usar ao compor uma página. O sistema de estilos é usado no restante do tutorial para obter vários estilos únicos ao usar os componentes principais em uma abordagem de código baixo.
+O [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=pt-BR) permite que desenvolvedores e editores de modelos criem várias variações visuais de um componente. Os criadores podem decidir qual estilo usar ao compor uma página. O sistema de estilos é usado no restante do tutorial para obter vários estilos únicos ao usar os componentes principais em uma abordagem de código baixo.
 
 A ideia geral do sistema de estilos é que os criadores possam escolher vários estilos de exibição para um componente. Os “estilos” são apoiados por classes CSS adicionais, que são inseridas na div externa de um componente. Nas bibliotecas de clientes, as regras de CSS são adicionadas com base nessas classes de estilo, para que a aparência do componente seja alterada.
 
-Você pode encontrar a [documentação detalhada do sistema de estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [ para entender o sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Você pode encontrar a [documentação detalhada do sistema de estilos aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=pt-BR). Também há um excelente vídeo técnico [ para entender o sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=pt-BR).
 
 ## Estilo de sublinhado: título {#underline-style}
 
-O [Componente de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) foi encaminhado por proxy para o projeto em `/apps/wknd/components/title` como parte do módulo **ui.apps**. Os estilos padrão de elementos de cabeçalho (`H1`, `H2`, `H3`...) já foram implementados no módulo **ui.frontend**.
+O [Componente de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=pt-BR) foi encaminhado por proxy para o projeto em `/apps/wknd/components/title` como parte do módulo **ui.apps**. Os estilos padrão de elementos de cabeçalho (`H1`, `H2`, `H3`...) já foram implementados no módulo **ui.frontend**.
 
 Os [designs do artigo da WKND](assets/pages-templates/wknd-article-design.xd) contêm um estilo exclusivo para o componente de título com um sublinhado. Em vez de criar dois componentes ou modificar a caixa de diálogo de componentes, o sistema de estilos pode ser usado para permitir que os criadores adicionem uma opção de estilo de sublinhado.
 
@@ -195,7 +195,7 @@ Em seguida, implemente o estilo de sublinhado com o módulo **ui.frontend** do p
 
 ## Estilo de bloco de aspas: texto {#text-component}
 
-Em seguida, repita etapas semelhantes para aplicar um estilo exclusivo ao [componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). O componente de texto foi enviado por proxy para o projeto em `/apps/wknd/components/text` como parte do módulo **ui.apps**. Os estilos padrão de elementos de parágrafo já foram implementados no **ui.frontend**.
+Em seguida, repita etapas semelhantes para aplicar um estilo exclusivo ao [componente de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR). O componente de texto foi enviado por proxy para o projeto em `/apps/wknd/components/text` como parte do módulo **ui.apps**. Os estilos padrão de elementos de parágrafo já foram implementados no **ui.frontend**.
 
 Os [designs do artigo da WKND](assets/pages-templates/wknd-article-design.xd) contêm um estilo exclusivo para o componente de texto com um bloco de aspas:
 

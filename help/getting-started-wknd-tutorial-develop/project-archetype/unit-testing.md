@@ -79,7 +79,7 @@ Usamos as práticas recomendadas do AEM e empregamos:
 
 ## Teste de unidade e Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-O [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) integra a execução de testes de unidade e a [geração de relatórios de cobertura do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) ao seu pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada de teste de unidade do código do AEM.
+O [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) integra a execução de testes de unidade e a [geração de relatórios de cobertura do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=pt-BR) ao seu pipeline de CI/CD para ajudar a incentivar e promover a prática recomendada de teste de unidade do código do AEM.
 
 Embora o código dos testes de unidade seja uma boa prática para qualquer base de código, ao usar o Cloud Manager, é importante aproveitar seus recursos de geração de relatórios e testes de qualidade do código, que oferecem testes de unidade para execução pelo Cloud Manager.
 

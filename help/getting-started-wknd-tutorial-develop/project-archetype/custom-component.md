@@ -374,7 +374,7 @@ O modelo do Sling de linha de identificação depende de várias APIs de Java™
 
    O `uber-jar` é incluído somente quando o perfil `classic` é chamado, ou seja, `mvn clean install -PautoInstallSinglePackage -Pclassic`. Novamente, isso é exclusivo deste projeto. Em um projeto real, gerado a partir do arquétipo de projeto do AEM, o `uber-jar` será o padrão, se a versão do AEM especificada for 6.5 ou 6.4.
 
-   O [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contém todas as APIs de Java™ públicas expostas pelo AEM 6.x. A versão é mantida no POM do reator primário da raiz do projeto `aem-guides-wknd/pom.xml`.
+   O [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=pt-BR#experience-manager-api-dependencies) contém todas as APIs de Java™ públicas expostas pelo AEM 6.x. A versão é mantida no POM do reator primário da raiz do projeto `aem-guides-wknd/pom.xml`.
 
 1. Localizar a dependência de `core.wcm.components.core`:
 
