@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 99%
       + [Configurar estrutura de experimentação](./document-authoring/how-to/setup-experimentation-framework.md)
       + [Metadados para experimentação](./document-authoring/how-to/experimentation-add-metadata.md)
 + Criação de páginas {#page-authoring}
-   + [Criação  &#x200B;](page-authoring/aem-sites-authoring-overview.md)
+   + [Criação](page-authoring/aem-sites-authoring-overview.md)
    + [Navegação](page-authoring/basic-handling-sites-feature-video-use.md)
-   + [Estrutura do site &#x200B;](page-authoring/content-hierarchy-feature-video-use.md)
+   + [Estrutura do site](page-authoring/content-hierarchy-feature-video-use.md)
    + [Criação de páginas](page-authoring/creating-page-feature-video-use.md)
    + [Criação de páginas](page-authoring/page-authoring-overview-feature-video-use.md)
    + [Editor de página](page-authoring/page-editor-feature-video-use.md)
@@ -71,14 +71,14 @@ ht-degree: 99%
    + [Publicação](page-authoring/publication-management-feature-video-use.md)
    + [Modelos editáveis](page-authoring/template-editor-feature-video-use.md)
    + [Sistema de estilos](page-authoring/style-system-feature-video-use.md)
-   + [Timewarp  &#x200B;](page-authoring/timewarp-feature-video-use.md)
+   + [Timewarp](page-authoring/timewarp-feature-video-use.md)
    + [Lançamentos](page-authoring/launches.md)
    + Aprenda com os seus colegas {#expert-advice}
       + [Dicas de hierarquia do site](page-authoring/expert-advice/site-hierarchy.md)
 + IA generativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
+   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entregar fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduzir fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 99%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR){target=_blank}
+   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolver{#developing}
@@ -111,7 +111,7 @@ ht-degree: 99%
          + Guia{#how-to}
             + [Opções de bloco](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [Cabeçalho e rodapé](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
-            + [Visualização da extensão local](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
+            + [Prévia da extensão local](./edge-delivery-services/developing/universal-editor/how-to/local-extension-preview.md)
    + Guia{#how-to}
       + [Feeds RSS](edge-delivery-services/how-to/rss.md)
       + [Compartilhamento em redes sociais](edge-delivery-services/how-to/social-media-sharing.md)
@@ -119,7 +119,7 @@ ht-degree: 99%
 + Desenvolver {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
-   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
+   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview){target=_blank}
    + [Introdução ao editor de SPA e ao React do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Estender propriedades da página](developing/page-properties-technical-video-develop.md)

@@ -1,6 +1,6 @@
 ---
 title: Configuração do desenvolvimento local
-description: Saiba como configurar um ambiente de desenvolvimento local para o Universal Editor para poder editar o conteúdo de um aplicativo React de amostra.
+description: Saiba como configurar um ambiente de desenvolvimento local para o editor universal a fim de editar o conteúdo de um aplicativo React de amostra.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
@@ -13,29 +13,29 @@ jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
 source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Configuração do desenvolvimento local
 
-Saiba como configurar um ambiente de desenvolvimento local para editar o conteúdo de um aplicativo React usando o AEM Universal Editor.
+Saiba como configurar um ambiente de desenvolvimento local para editar o conteúdo de um aplicativo React com o editor universal do AEM.
 
 ## Pré-requisitos
 
 Os seguintes elementos são necessários para seguir este tutorial:
 
-- Habilidades básicas em HTML e JavaScript.
+- Habilidades básicas de HTML e JavaScript.
 - As seguintes ferramentas devem ser instaladas localmente:
    - [Node.js](https://nodejs.org/en/download/)
    - [Git](https://git-scm.com/downloads)
-   - Um editor de código IDE, como o [Visual Studio Code](https://code.visualstudio.com/)
+   - Um IDE ou editor de código, como o [Visual Studio Code](https://code.visualstudio.com/)
 - Baixe e instale o seguinte:
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
-   - [Serviço do Universal Editor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do Universal Editor, ela tem um subconjunto de recursos e pode ser baixada do Portal de Distribuição de Software.
-   - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): um proxy HTTP SSL local simples usando um certificado autoassinado para desenvolvimento local. O Editor universal do AEM requer o URL HTTPS do aplicativo React para carregá-lo no editor.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
+   - [Serviço do editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do editor universal que contém um subconjunto de recursos e pode ser baixada do portal de distribuição de softwares.
+   - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): um proxy HTTP SSL local simples que usa um certificado autoassinado para desenvolvimento local. O editor universal do AEM requer o URL HTTPS do aplicativo React para carregá-lo no editor.
 
 ## Configuração local
 
@@ -43,18 +43,18 @@ Siga as etapas abaixo para configurar o ambiente de desenvolvimento local:
 
 ### SDK do AEM
 
-Para fornecer o conteúdo para o aplicativo WKND Teams React, instale os seguintes pacotes no AEM SDK local.
+Para fornecer o conteúdo do aplicativo React WKND Teams, instale os seguintes pacotes no SDK do AEM local.
 
-- [Equipes do WKND - Pacote de Conteúdo](./assets/basic-tutorial-solution.content.zip): contém os modelos de fragmento de conteúdo, fragmentos de conteúdo e consultas persistentes do GraphQL.
-- [Equipes do WKND - Pacote de Configuração](./assets/basic-tutorial-solution.ui.config.zip): contém as configurações de Compartilhamento de Recursos entre Origens (CORS) e Manipulador de Autenticação de Token. O CORS facilita que propriedades da Web que não sejam da AEM façam chamadas do lado do cliente baseadas em navegador para as APIs do GraphQL da AEM, e o Manipulador de autenticação de token é usado para autenticar cada solicitação para o AEM.
+- [WKND Teams: pacote de conteúdo](./assets/basic-tutorial-solution.content.zip): contém os modelos de fragmento de conteúdo, fragmentos de conteúdo e consultas persistentes do GraphQL.
+- [WKND Teams: pacote de configuração](./assets/basic-tutorial-solution.ui.config.zip): contém as configurações de compartilhamento de recursos entre origens (CORS, na sigla em inglês) e do tratador de autenticação de tokens. O CORS facilita que propriedades da web que não forem do AEM façam chamadas do lado do cliente baseadas no navegador para as APIs do GraphQL do AEM, enquanto o tratador de autenticação de tokens é usado para autenticar cada solicitação recebida pelo AEM.
 
-  ![Equipes da WKND - Pacotes](./assets/wknd-teams-packages.png)
+  ![WKND Teams - Pacotes](./assets/wknd-teams-packages.png)
 
-### aplicativo React
+### Aplicativo React
 
-Para configurar o aplicativo WKND Teams React, siga as etapas abaixo:
+Para configurar o aplicativo React WKND Teams, siga as etapas abaixo:
 
-1. Clonar o [aplicativo WKND Teams React](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) da ramificação de solução `basic-tutorial`.
+1. Clone o [aplicativo React WKND Teams](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) a partir da ramificação da solução `basic-tutorial`.
 
    ```bash
    $ git clone -b solution/basic-tutorial git@github.com:adobe/aem-guides-wknd-graphql.git
@@ -74,17 +74,17 @@ Para configurar o aplicativo WKND Teams React, siga as etapas abaixo:
    $ npm start
    ```
 
-1. Abra o aplicativo WKND Teams React no navegador em [http://localhost:3000](http://localhost:3000). Ele exibe uma lista de membros da equipe e seus detalhes. O conteúdo do aplicativo React é fornecido pelo AEM SDK local usando APIs do GraphQL (`/graphql/execute.json/my-project/all-teams`), que você pode verificar usando a guia de rede do navegador.
+1. Abra o aplicativo React WKND Teams no navegador, em [http://localhost:3000](http://localhost:3000). Ele exibe uma lista de membros da equipe e seus detalhes. O conteúdo do aplicativo React é fornecido pelo SDK do AEM local, usando as APIs do GraphQL (`/graphql/execute.json/my-project/all-teams`), que você pode verificar por meio da guia de rede do navegador.
 
-   ![Equipes da WKND - Aplicativo React](./assets/wknd-teams-react-app.png)
+   ![WKND Teams: aplicativo React](./assets/wknd-teams-react-app.png)
 
-### Serviço de Editor Universal
+### Serviço do editor universal
 
-Para configurar o serviço Editor Universal **local**, siga as etapas abaixo:
+Para configurar o serviço do editor universal **local**, siga as etapas abaixo:
 
-1. Baixe a versão mais recente do serviço Universal Editor do [Portal de Distribuição de Software](https://experience.adobe.com/downloads).
+1. Baixe a versão mais recente do serviço do editor universal do [Portal de distribuição de softwares](https://experience.adobe.com/downloads).
 
-   ![Distribuição de Software - Serviço de Editor Universal](./assets/universal-editor-service.png)
+   ![Distribuição de softwares: serviço do editor universal](./assets/universal-editor-service.png)
 
 1. Extraia o arquivo zip baixado e copie o arquivo `universal-editor-service.cjs` para um novo diretório chamado `universal-editor-service`.
 
@@ -103,14 +103,14 @@ Para configurar o serviço Editor Universal **local**, siga as etapas abaixo:
    UES_TLS_REJECT_UNAUTHORIZED=false
    ```
 
-1. Iniciar o serviço Editor Universal local.
+1. Inicie o serviço do editor universal local.
 
    ```bash
    $ cd universal-editor-service
    $ node universal-editor-service.cjs
    ```
 
-O comando acima inicia o serviço do Editor Universal na porta `8000` e você deve ver a seguinte saída:
+O comando acima inicia o serviço do editor universal na porta `8000`, e você deverá ver a seguinte saída:
 
 ```bash
 Either no private key or certificate was set. Starting as HTTP server
@@ -119,11 +119,11 @@ Universal Editor Service listening on port 8000 as HTTP Server
 
 ### Proxy HTTP SSL local
 
-O Editor universal do AEM exige que o aplicativo React seja distribuído por HTTPS. Vamos configurar um proxy HTTP SSL local que use um certificado autoassinado para desenvolvimento local.
+O editor universal do AEM exige que o aplicativo React seja distribuído por HTTPS. Vamos configurar um proxy HTTP SSL local que usa um certificado autoassinado para desenvolvimento local.
 
-Siga as etapas abaixo para configurar o proxy HTTP SSL local e servir o serviço do AEM SDK e Universal Editor por HTTPS:
+Siga as etapas abaixo para configurar o proxy HTTP SSL local e fornecer o SDK do AEM SDK e o serviço do editor universal por HTTPS:
 
-1. Instalar o pacote `local-ssl-proxy` globalmente.
+1. Instale o pacote `local-ssl-proxy` globalmente.
 
    ```bash
    $ npm install -g local-ssl-proxy
@@ -131,8 +131,8 @@ Siga as etapas abaixo para configurar o proxy HTTP SSL local e servir o serviço
 
 1. Inicie duas instâncias do proxy HTTP SSL local para os seguintes serviços:
 
-   - Proxy HTTP SSL local do AEM SDK na porta `8443`.
-   - Proxy HTTP SSL local do serviço do Universal Editor na porta `8001`.
+   - Proxy HTTP SSL local do SDK do AEM na porta `8443`.
+   - Proxy HTTP SSL local do serviço do editor universal na porta `8001`.
 
    ```bash
    # AEM SDK local SSL HTTP proxy on port 8443
@@ -144,9 +144,9 @@ Siga as etapas abaixo para configurar o proxy HTTP SSL local e servir o serviço
 
 ### Atualizar o aplicativo React para usar HTTPS
 
-Para habilitar o HTTPS para o aplicativo WKND Teams React, siga as etapas abaixo:
+Para habilitar o HTTPS para o aplicativo React WKND Teams, siga as etapas abaixo:
 
-1. Pare o React pressionando `Ctrl + C` no terminal.
+1. Pare o React, pressionando `Ctrl + C` no terminal.
 1. Atualize o arquivo `package.json` para incluir a variável de ambiente `HTTPS=true` no script `start`.
 
    ```json
@@ -156,14 +156,14 @@ Para habilitar o HTTPS para o aplicativo WKND Teams React, siga as etapas abaixo
    }
    ```
 
-1. Atualize o `REACT_APP_HOST_URI` no arquivo `.env.development` para usar o protocolo HTTPS e a porta do proxy HTTP SSL local do AEM SDK.
+1. Atualize o `REACT_APP_HOST_URI` no arquivo `.env.development` para usar o protocolo HTTPS e a porta do proxy HTTP SSL local do SDK do AEM.
 
    ```bash
    REACT_APP_HOST_URI=https://localhost:8443
    ...
    ```
 
-1. Atualize o arquivo `../src/proxy/setupProxy.auth.basic.js` para usar configurações de SSL relaxadas usando a opção `secure: false`.
+1. Atualize o arquivo `../src/proxy/setupProxy.auth.basic.js` para usar as configurações de SSL relaxadas, usando a opção `secure: false`.
 
    ```javascript
    ...
@@ -189,29 +189,29 @@ Para habilitar o HTTPS para o aplicativo WKND Teams React, siga as etapas abaixo
 
 ## Verificar a configuração
 
-Depois de configurar o ambiente de desenvolvimento local usando as etapas acima, vamos verificar a configuração.
+Depois de configurar o ambiente de desenvolvimento local por meio das etapas acima, vamos verificar a configuração.
 
 ### Verificação local
 
-Verifique se os seguintes serviços estão sendo executados localmente em HTTPS. Talvez seja necessário aceitar o aviso de segurança no navegador para o certificado autoassinado:
+Verifique se os seguintes serviços estão sendo executados localmente em HTTPS. Talvez seja necessário aceitar o aviso de segurança no navegador referente ao certificado autoassinado:
 
-1. Aplicativo WKND Teams React em [https://localhost:3000](https://localhost:3000)
-1. AEM SDK em [https://localhost:8443](https://localhost:8443)
-1. Serviço de Editor Universal em [https://localhost:8001](https://localhost:8001)
+1. Aplicativo React WKND Teams em [https://localhost:3000](https://localhost:3000)
+1. SDK do AEM em [https://localhost:8443](https://localhost:8443)
+1. Serviço do editor universal em [https://localhost:8001](https://localhost:8001)
 
-### Carregar o aplicativo WKND Teams React no Editor universal
+### Carregar o aplicativo React WKND Teams no editor universal
 
-Vamos carregar o aplicativo WKND Teams React no Editor universal para verificar a configuração:
+Vamos carregar o aplicativo React WKND Teams no editor universal para verificar a configuração:
 
-1. Abra o Editor universal https://experience.adobe.com/#/aem/editor no navegador. Se solicitado, faça logon usando sua Adobe ID.
+1. Abra o editor universal (https://experience.adobe.com/#/aem/editor) no seu navegador. Se solicitado, faça logon com o seu Adobe ID.
 
-1. Insira a URL do aplicativo WKND Teams React no campo de entrada URL do site do Editor Universal e clique em `Open`.
+1. Insira o URL do aplicativo React WKND Teams no campo de inserção de URL do site do editor universal e clique em `Open`.
 
-   ![Editor Universal - URL do Site](./assets/universal-editor-site-url.png)
+   ![Editor universal: URL do site](./assets/universal-editor-site-url.png)
 
-1. O aplicativo WKND Teams React é carregado no Universal Editor **mas você ainda não pode editar o conteúdo**. É necessário instrumentar o aplicativo React para habilitar a edição de conteúdo usando o Editor universal.
+1. O aplicativo React WKND Teams será carregado no editor universal, **mas você ainda não poderá editar o conteúdo**. É necessário instrumentar o aplicativo React para habilitar a edição de conteúdo com o editor universal.
 
-   ![Editor Universal - Aplicativo WKND Teams React](./assets/universal-editor-wknd-teams.png)
+   ![Editor universal: aplicativo React WKND Teams](./assets/universal-editor-wknd-teams.png)
 
 
 ## Próxima etapa
