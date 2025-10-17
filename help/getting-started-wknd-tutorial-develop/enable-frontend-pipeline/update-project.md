@@ -30,7 +30,7 @@ Neste capítulo, faremos alterações nas configurações do __projeto do site d
 
 ## Visão geral das alterações nas configurações do projeto de pilha completa do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453614?captions=por_br&quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 

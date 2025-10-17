@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Saiba como usar uma abordagem de código baixo para criar o seu primeiro site no Adobe Experience Manager com a criação rápida de sites e um modelo de site predefinido. Use componentes e modelos prontos para uso para criar e publicar um site rapidamente. Use um fluxo de trabalho de temas do Adobe XD para aplicar estilos e personalizações específicos da marca apenas com CSS e JavaScript. Recomendado para novos projetos e desenvolvedores.
 
->[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343268?captions=por_br&quality=12&learn=on)
 
 * [Kit da IU do Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
 * [Modelo de site do AEM](https://github.com/adobe/aem-site-template-basic)

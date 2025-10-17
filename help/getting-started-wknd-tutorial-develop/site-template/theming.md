@@ -39,7 +39,7 @@ Este é um tutorial em várias partes, e presume-se que as etapas descritas no c
 
 Em seguida, faça alterações nas fontes do tema, de modo que o site corresponda à aparência da marca da WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453625?captions=por_br&quality=12&learn=on)
 
 Etapas de alto nível do vídeo:
 

@@ -41,7 +41,7 @@ Neste capítulo, dois arquivos do Adobe XD serão inspecionados, um para o [Mode
 
 ## Kit da IU do modelo de site padrão {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448435?captions=por_br&quality=12&learn=on)
 
 Etapas de alto nível:
 
@@ -51,7 +51,7 @@ Etapas de alto nível:
 
 ## Kit da IU da WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36143?captions=por_br&quality=12&learn=on)
 
 Etapas de alto nível:
 

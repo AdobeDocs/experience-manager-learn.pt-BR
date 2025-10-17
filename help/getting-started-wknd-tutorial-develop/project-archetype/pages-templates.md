@@ -76,7 +76,7 @@ Nesta parte do tutorial, você criará um novo modelo de página de artigo que p
 
 Normalmente, o planejamento de um novo site começa com simulações e designs estáticos. O [Adobe XD](https://helpx.adobe.com/br/support/xd.html) é uma ferramenta de design que cria uma experiência do usuário. Em seguida, vamos inspecionar um kit da IU e modelos para ajudar a planejar a estrutura do modelo de página de artigo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36143?captions=por_br&quality=12&learn=on)
 
 **Baixe o [arquivo de design de artigo da WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Há três áreas principais nos [Modelos editáveis](https://experienceleague.ad
 
 Em seguida, crie um modelo no AEM que corresponda à estrutura das simulações. Isso ocorre em uma instância local do AEM. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36142?captions=por_br&quality=12&learn=on)
 
 Principais etapas do vídeo acima:
 
@@ -164,7 +164,7 @@ Uma prática comum ao criar um conteúdo global, como cabeçalho ou rodapé, é 
 
 O arquétipo de projeto do AEM gerou um cabeçalho e um rodapé. Em seguida, atualize os fragmentos de experiência para corresponderem às simulações. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447494?captions=por_br&quality=12&learn=on)
 
 Principais etapas do vídeo acima:
 
@@ -210,7 +210,7 @@ Principais etapas do vídeo acima:
 
 Em seguida, crie uma página com o modelo de página de artigo. Crie o conteúdo da página para corresponder às simulações do site. Siga as etapas do vídeo abaixo:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446447?captions=por_br&quality=12&learn=on)
 
 Principais etapas do vídeo acima:
 
