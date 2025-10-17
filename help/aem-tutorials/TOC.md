@@ -4,10 +4,10 @@ user-guide-title: Tutoriais do AEM
 sub-product: Experience Manager
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '68'
-ht-degree: 100%
+source-git-commit: fd0bfd908ee272c9013d0b766d490fcad69ba050
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 51%
 
 ---
 
@@ -24,7 +24,9 @@ ht-degree: 100%
 + [Guias do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/overview){target=_blank}
 + Tutoriais em várias etapas {#multi}
    + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
-   + [Introdução ao React e o editor de SPA do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview){target=_blank}
-   + [Introdução ao AEM e ao Adobe Target](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
-   + [Tutorial do AEM 6.x Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview){target=_blank}
-   + [Tutorial do cache do Dispatcher do AEM 6.x](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/dispatcher-tutorial/overview){target=_blank}
+   + [Introdução à entrega de fragmentos de conteúdo do AEM com APIs OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview){target=_blank}
+   + [Reagir à edição do aplicativo usando o Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview){target=_blank}
+   + [Introdução ao Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview){target=_blank}
+   + [Introdução ao RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview){target=_blank}
+   + [Introdução às APIs do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview){target=_blank}
+   + [Protegendo sites da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview){target=_blank}
