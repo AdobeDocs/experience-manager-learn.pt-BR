@@ -11,16 +11,16 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 11%
+source-wordcount: '386'
+ht-degree: 9%
 
 ---
 
 # Visão geral da personalização
 
-Saiba como o AEM as a Cloud Service (AEMCS) se integra ao Adobe Target e ao Adobe Experience Platform (AEP). Descubra como fornecer experiências personalizadas usando testes A/B, direcionando usuários com base em seu comportamento ou personalizando conteúdo usando perfis de clientes.
+Saiba como o AEM as a Cloud Service (AEMCS) se integra ao Adobe Target e ao Adobe Experience Platform (AEP) para fornecer experiências personalizadas. Usando fragmentos de experiência como conteúdo personalizado, descubra como executar testes A/B, direcionar usuários com base no comportamento em tempo real ou personalizar conteúdo usando perfis unificados de clientes criados a partir de dados em vários sistemas.
 
 ## Pré-requisitos
 
@@ -38,14 +38,14 @@ Para demonstrar vários cenários de personalização, este tutorial usa a amost
 
 ## Introdução
 
-Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud Service para personalização. Comece integrando o Adobe Target e as tags para permitir a personalização no lado do cliente usando o AEP Web SDK. Essas etapas fundamentais permitem que suas páginas do AEM sejam compatíveis com experimentação, direcionamento de público-alvo e personalização em tempo real.
+Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud Service para personalização. Comece integrando o Adobe Target e as tags para permitir a personalização no lado do cliente usando a Web SDK. Essas etapas fundamentais permitem que suas páginas do AEM sejam compatíveis com experimentação, direcionamento de público-alvo e personalização em tempo real.
 
 <!-- CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
   {title = Integrate Adobe Target}
-  {description = Integrate AEMCS with Adobe Target to activate personalized content as Adobe Target offers.}
+  {description = Integrate AEMCS with Adobe Target to activate personalized content, such as Experience Fragments, as offers.}
   {image = ./assets/setup/integrate-target.png}
   {cta = Integrate Target}
 
@@ -54,6 +54,7 @@ Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud
   {description = Integrate AEMCS with Tags to inject the Web SDK and custom JavaScript for data collection and personalization.}
   {image = ./assets/setup/integrate-tags.png}
   {cta = Integrate Tags}
+  
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -72,7 +73,7 @@ Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./setup/integrate-adobe-target.md" target="_self" rel="referrer" title="Integrar o Adobe Target">Integrar o Adobe Target</a>
                     </p>
-                    <p class="is-size-6">Integre o AEM CS com o Adobe Target para ativar o conteúdo personalizado como ofertas do Adobe Target.</p>
+                    <p class="is-size-6">Integre o AEM CS com o Adobe Target para ativar conteúdo personalizado, como Fragmentos de experiência, como ofertas.</p>
                 </div>
                 <a href="./setup/integrate-adobe-target.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Integrar o Target</span>
@@ -117,7 +118,7 @@ Explore os seguintes casos de uso comuns de personalização compatíveis com o 
 
 * ./use-cases/experimentation.md
     {title = Experimentation (A/B Testing)}
-    {description = Learn how to test different content variations in AEMCS using Adobe Target for A/B testing.}
+    {description = Learn how to test different content variations on an AEMCS website using Adobe Target for A/B testing.}
     {image = ./assets/use-cases/experiment/experimentation.png}
     {cta = Learn Experimentation}
 
@@ -126,6 +127,12 @@ Explore os seguintes casos de uso comuns de personalização compatíveis com o 
     {description = Learn how to personalize content based on user behavior using Adobe Experience Platform and Adobe Target.}
     {image = ./assets/use-cases/behavioral-targeting/behavioral-targeting.png}
     {cta = Learn Behavioral Targeting}
+
+* ./use-cases/known-user-personalization.md
+    {title = Known-user personalization}
+    {description = Learn how to personalize content based on known user data by stitching information from multiple systems into a complete customer profile.}
+    {image = ./assets/use-cases/known-user-personalization/known-user-personalization.png}
+    {cta = Learn Known-user personalization}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -144,7 +151,7 @@ Explore os seguintes casos de uso comuns de personalização compatíveis com o 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./use-cases/experimentation.md" target="_self" rel="referrer" title="Experimentação (teste A/B)">Experimentação (Teste A/B)</a>
                     </p>
-                    <p class="is-size-6">Saiba como testar diferentes variações de conteúdo no AEM CS usando o Adobe Target para testes A/B.</p>
+                    <p class="is-size-6">Saiba como testar diferentes variações de conteúdo em um site do AEM CS usando o Adobe Target para testes A/B.</p>
                 </div>
                 <a href="./use-cases/experimentation.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender experimentação</span>
@@ -171,6 +178,29 @@ Explore os seguintes casos de uso comuns de personalização compatíveis com o 
                 </div>
                 <a href="./use-cases/behavioral-targeting.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Aprender Direcionamento comportamental</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Known-user personalization">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./use-cases/known-user-personalization.md" title="Personalização de usuário conhecido" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/use-cases/known-user-personalization/known-user-personalization.png" alt="Personalização de usuário conhecido"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./use-cases/known-user-personalization.md" target="_self" rel="referrer" title="Personalização de usuário conhecido">Personalização de usuário conhecido</a>
+                    </p>
+                    <p class="is-size-6">Saiba como personalizar o conteúdo com base em dados de usuários conhecidos, compilando informações de vários sistemas em um perfil de cliente completo.</p>
+                </div>
+                <a href="./use-cases/known-user-personalization.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais sobre a personalização de usuário conhecido</span>
                 </a>
             </div>
         </div>

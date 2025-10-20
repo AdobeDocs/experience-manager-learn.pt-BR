@@ -10,9 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
 workflow-type: tm+mt
-source-wordcount: '4180'
+source-wordcount: '4185'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ Visite o [site de Ativação WKND](https://wknd.enablementadobe.com/us/en.html) 
 
 - **Página da revista**: quando os usuários leem _três ou mais_ artigos, eles são categorizados como **Leitores da revista** público-alvo e veem uma seção principal personalizada na página da revista.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474006/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -58,7 +59,7 @@ Antes de continuar com o caso de uso de direcionamento comportamental, verifique
 - [Integrar o Adobe Target](../setup/integrate-adobe-target.md): permite que as equipes criem e gerenciem conteúdo personalizado centralmente no AEM e o ativem como ofertas no Adobe Target.
 - [Integrar marcas no Adobe Experience Platform](../setup/integrate-adobe-tags.md): permite que as equipes gerenciem e implantem o JavaScript para personalização e coleta de dados sem precisar reimplantar o código AEM.
 
-Familiarize-se também com os conceitos do [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home) e do [Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/home), como esquema, sequência de dados, públicos-alvo, identidades e perfis.
+Familiarize-se também com os conceitos do [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) e do [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home), como esquema, sequência de dados, públicos-alvo, identidades e perfis.
 
 Embora seja possível criar públicos-alvo simples no Adobe Target, o Adobe Experience Platform (AEP) fornece a abordagem moderna para criar e gerenciar públicos-alvo e criar perfis completos de clientes usando várias fontes de dados, como dados comportamentais e transacionais.
 
@@ -86,7 +87,7 @@ O processo de configuração de direcionamento comportamental envolve etapas no 
 
 4. **Verificar a implementação de direcionamento comportamental nas páginas do AEM**
 
-As várias soluções da AEP são usadas para coletar, gerenciar e coletar dados comportamentais para criar públicos-alvo. Esses públicos são ativados no Adobe Target. Usando atividades no Adobe Target, experiências personalizadas são entregues aos usuários.
+As várias soluções da AEP são usadas para coletar, gerenciar e coletar dados comportamentais para criar públicos-alvo. Esses públicos são ativados no Adobe Target. Usando atividades no Adobe Target, experiências personalizadas são entregues aos usuários que correspondem aos critérios dos públicos.
 
 ## Etapas do Adobe Experience Platform
 
@@ -658,9 +659,9 @@ O primeiro público-alvo usa a avaliação do **Edge** para personalização em 
 
 ## Recursos adicionais
 
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home)
-- [Visão geral das sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview)
-- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/vec/visual-experience-composer)
-- [Segmentação do Edge](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Tipos de público-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/types/overview)
-- [conexão com o Adobe Target](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Visão geral das sequências de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
+- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Segmentação do Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Tipos de público-alvo](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
+- [conexão com o Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
