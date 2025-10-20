@@ -76,7 +76,7 @@ Antes de prosseguir com o caso de uso de personalização de usuário conhecido,
 - [Integrar o Adobe Target](../setup/integrate-adobe-target.md): permite que as equipes criem e gerenciem conteúdo personalizado centralmente no AEM e o ativem como ofertas no Adobe Target.
 - [Integrar marcas no Adobe Experience Platform](../setup/integrate-adobe-tags.md): permite que as equipes gerenciem e implantem o JavaScript para personalização e coleta de dados sem precisar reimplantar o código AEM.
 
-Familiarize-se também com os conceitos do [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) e do [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home), como Esquema, Conjunto de Dados, Sequência de Dados, Públicos-alvo, Identidades e Perfis.
+Familiarize-se também com os conceitos do [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home) e do [Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/home), como Esquema, Conjunto de Dados, Sequência de Dados, Públicos-alvo, Identidades e Perfis.
 
 Neste tutorial, você aprenderá sobre a identificação de identidades e criará um perfil do cliente no Adobe Experience Platform. Assim, combinando os dados comportamentais com os dados transacionais para criar um perfil de cliente completo.
 
@@ -1184,9 +1184,9 @@ Parabéns! Você é um especialista em fornecer a experiência de personalizaç�
 
 ## Recursos adicionais
 
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Visão geral das sequências de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
-- [Segmentação do Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Tipos de público-alvo](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
-- [conexão com o Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home)
+- [Visão geral das sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview)
+- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/vec/visual-experience-composer)
+- [Segmentação do Edge](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Tipos de público-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/types/overview)
+- [conexão com o Adobe Target](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
