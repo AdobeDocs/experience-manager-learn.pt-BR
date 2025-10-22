@@ -1,6 +1,7 @@
 ---
 title: Tutorial de desenvolvedor do Edge Delivery Services e do editor universal
 description: Aprenda os conceitos básicos do desenvolvimento de um novo site usando o editor universal do AEM, bem como a entrega por meio do Edge Delivery Services.
+short-description: Um tutorial do desenvolvedor para criar sites do AEM que combinam criação avançada com Universal Editor e entrega com velocidade surpreendente usando o Edge Delivery Services. Saiba como criar um novo projeto, configurar um ambiente de desenvolvimento local e criar blocos personalizados.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,10 +11,10 @@ doc-type: Catalog
 jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
-source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: ht
-source-wordcount: '620'
-ht-degree: 100%
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 94%
 
 ---
 
@@ -100,7 +101,7 @@ Saiba como configurar o ambiente de desenvolvimento local para habilitar o desen
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configurar um ambiente de desenvolvimento local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443983/?format=jpeg&nocache=1753811862249&captions=por_br" alt="Configurar um ambiente de desenvolvimento local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configurar um ambiente de desenvolvimento local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

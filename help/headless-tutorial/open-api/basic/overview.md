@@ -1,6 +1,7 @@
 ---
 title: Tutorial da OpenAPI do AEM Headless | Entrega de fragmento de conteúdo
 description: Um tutorial completo que ilustra como criar e expor conteúdo usando as APIs de entrega de fragmentos de conteúdo baseadas em OpenAPI do AEM.
+short-description: Um tutorial que ilustra como criar e expor conteúdo do AEM usando a entrega de fragmentos de conteúdo com APIs OpenAPI e consumi-lo em um aplicativo externo para cenários CMS headless.
 doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
@@ -11,10 +12,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+exl-id: 1bb7c415-58f8-4f6c-a0bc-38bdbdb521cf
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 22%
+source-wordcount: '393'
+ht-degree: 20%
 
 ---
 
@@ -56,7 +58,7 @@ Inicie o tutorial com o tema [Definir modelos de fragmento de conteúdo](1-conte
 
 O código-fonte e os pacotes de conteúdo estão disponíveis no [repositório GitHub dos tutoriais do AEM Headless](https://github.com/adobe/aem-tutorials).
 
-A ramificação [`main` contém o código-fonte final &#x200B;](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
+A ramificação [`main` contém o código-fonte final ](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
 Instantâneos do código ao final de cada etapa estão disponíveis como tags Git.
 
 * Início do capítulo 4 - Aplicativo React: [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic//headless/open-api/basic)
