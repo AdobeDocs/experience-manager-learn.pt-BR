@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 + IA generativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
+   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entregar fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduzir fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 100%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR){target=_blank}
+   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolver{#developing}
@@ -119,7 +119,7 @@ ht-degree: 100%
 + Desenvolver {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
-   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
+   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview){target=_blank}
    + [Introdução ao editor de SPA e ao React do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Estender propriedades da página](developing/page-properties-technical-video-develop.md)
@@ -147,23 +147,23 @@ ht-degree: 100%
    + [Usar o editor de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Introdução ao editor de SPA e ao React do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Gerenciamento de vários sites {#multi-site-management}
-   + [Introdução a cópias em outros idiomas](./multi-site-management/language-copy-overview.md)
+   + [Introdução à cópia no idioma de destino](./multi-site-management/language-copy-overview.md)
    + [Live Copy e blueprint](./multi-site-management/live-copy-and-blueprint.md)
    + [Criar uma Live Copy](./multi-site-management/create-live-copy.md)
    + [Gerenciar a herança da Live Copy de um componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gerenciar a herança da Live Copy de uma página](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Visão geral do console de Live Copy](./multi-site-management/live-copy-overview-console.md)
-   + [Criar uma cópia em outro idioma](./multi-site-management/create-language-copy.md)
+   + [Criar uma cópia no idioma de destino](./multi-site-management/create-language-copy.md)
    + [Projetos de tradução](./multi-site-management/manage-translation-projects.md)
    + [Criar um projeto de tradução multilíngue](./multi-site-management/create-multinational-translational-project.md)
    + [Tarefas de tradução](./multi-site-management/create-translation-job.md)
-   + [Atualizar uma cópia em outro idioma com lançamentos](./multi-site-management/updating-language-copy.md)
-   + [Criar uma página de cópia em outro idioma](./multi-site-management/create-new-page-language-copy.md)
+   + [Atualizar uma cópia no idioma de destino com lançamentos](./multi-site-management/updating-language-copy.md)
+   + [Criar uma página de cópia no idioma de destino](./multi-site-management/create-new-page-language-copy.md)
    + [Status da tarefa de tradução](./multi-site-management/translation-job-status.md)
-   + [Criar um site nacional a partir da cópia em outro idioma](./multi-site-management/create-new-site.md)
+   + [Criar um site nacional a partir da cópia no idioma de destino](./multi-site-management/create-new-site.md)
 + Tradução {#translation}
    + [Usar o gerenciador de vários sites](translation/multi-site-manager-feature-video-use.md)
-   + [Usar cópia em outro idioma](translation/language-copy-feature-video-use.md)
+   + [Usar cópia no idioma de destino](translation/language-copy-feature-video-use.md)
    + [Configurar regras de tradução](translation/translation-rules-editor-technical-video-setup.md)
    + [Aprimoramentos da tradução](translation/translation-enhancements-feature-video-use.md)
 + Integrações {#integrations}

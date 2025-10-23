@@ -58,7 +58,7 @@ Inicie o tutorial com o tema [Definir modelos de fragmento de conteúdo](1-conte
 
 O código-fonte e os pacotes de conteúdo estão disponíveis no [repositório GitHub dos tutoriais do AEM Headless](https://github.com/adobe/aem-tutorials).
 
-A ramificação [`main` contém o código-fonte final &#x200B;](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
+A ramificação [`main` contém o código-fonte final ](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) para este tutorial.
 Instantâneos do código ao final de cada etapa estão disponíveis como tags Git.
 
 * Início do capítulo 4 - Aplicativo React: [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic//headless/open-api/basic)

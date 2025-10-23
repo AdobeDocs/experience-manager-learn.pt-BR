@@ -101,7 +101,7 @@ Saiba como configurar o ambiente de desenvolvimento local para habilitar o desen
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configurar um ambiente de desenvolvimento local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443983/?captions=por_br&format=jpeg&nocache=1753811862249" alt="Configurar um ambiente de desenvolvimento local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configurar um ambiente de desenvolvimento local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
