@@ -131,7 +131,7 @@ Uma apresentação em vídeo da instalação e uso do [!DNL Apache Sling Dynamic
 
    >[!TIP]
    >
-   > Deixar o `*` à direita na regra glob `*.nocache.html*` acima pode resultar em [problemas nas solicitações para sub-recursos](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Deixar o `*` à direita na regra glob `*.nocache.html*` acima pode resultar em [problemas nas solicitações para sub-recursos](https://github.com/AdobeDocs/experience-manager-learn.pt-BR/issues/16).
 
    ```shell
    /cache {
