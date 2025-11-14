@@ -99,7 +99,7 @@ Há _vários métodos de autenticação_ compatíveis com a biblioteca Node.js [
 
 | | Autenticação básica | [Token de desenvolvimento local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [S2S do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Aplicativo Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [SPA do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| É compatível? | &amp;verificar; | &amp;verificar; | &amp;verificar; | &amp;cruz; | &amp;cruz; | &amp;cruz; |
+| É compatível? | &verificar; | &verificar; | &verificar; | &cruz; | &cruz; | &cruz; |
 | Propósito | Desenvolvimento local | Desenvolvimento local | Produção | N/A | N/A | N/A |
 
 Para configurar o aplicativo de amostra, siga as etapas abaixo:
