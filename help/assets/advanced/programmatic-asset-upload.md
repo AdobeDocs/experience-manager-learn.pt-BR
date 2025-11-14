@@ -50,7 +50,7 @@ A biblioteca Node.js [aem-upload](https://github.com/adobe/aem-upload) abstrai o
 
 >[!CAUTION]
 >
->NÃO há equivalente da biblioteca [aem-upload](https://github.com/adobe/aem-upload) em Java. O aplicativo cliente deve ser gravado em Node.js para usar a abordagem _upload binário direto_. Para obter informações adicionais, consulte a página [APIs e operações do Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
+>NÃO há equivalente da biblioteca [aem-upload](https://github.com/adobe/aem-upload) em Java. O aplicativo cliente deve ser gravado em Node.js para usar a abordagem _upload binário direto_. Para obter informações adicionais, consulte a página [APIs e operações do Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
 
 ## Aplicativo de amostra
 
@@ -97,7 +97,7 @@ Antes de executar o aplicativo de amostra, você deve configurá-lo com os detal
 
 Há _vários métodos de autenticação_ compatíveis com a biblioteca Node.js [aem-upload](https://github.com/adobe/aem-upload). A tabela a seguir resume os _métodos de autenticação_ com suporte e sua finalidade.
 
-| | Autenticação básica | [Token de desenvolvimento local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Credenciais de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [S2S do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Aplicativo Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [SPA do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
+| | Autenticação básica | [Token de desenvolvimento local](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Credenciais de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [S2S do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Aplicativo Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [SPA do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
 | É compatível? | &verificar; | &verificar; | &verificar; | &cruz; | &cruz; | &cruz; |
 | Propósito | Desenvolvimento local | Desenvolvimento local | Produção | N/A | N/A | N/A |
@@ -176,7 +176,7 @@ Para obter as credenciais do serviço, é necessário usar o Developer Console *
 
 1. Atualize a variável de ambiente `AEM_SERVICE_CREDENTIALS_FILE` com o caminho para o arquivo service-credentials.json.
 
-1. Verifique se o usuário da credencial de serviço tem as permissões necessárias para carregar ativos no ambiente do AEM as a Cloud Service. Para obter mais informações, consulte [Configurar acesso na página AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem).
+1. Verifique se o usuário da credencial de serviço tem as permissões necessárias para carregar ativos no ambiente do AEM as a Cloud Service. Para obter mais informações, consulte [Configurar acesso na página AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem).
 
 >[!ENDTABS]
 
