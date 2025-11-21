@@ -5,7 +5,7 @@ user-guide-description: Uma coleção de vídeos e tutoriais com os fundamentos 
 sub-product: Experience Manager
 index: y
 source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 

@@ -52,7 +52,7 @@ ht-degree: 94%
       + [1 — Criar modelos de fragmento de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 — Criar fragmentos de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
       + [3 — Explorar a API GraphQL do AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
-      + [4 — Consultas persistentes do GraphQL &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [4 — Consultas persistentes do GraphQL ](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 — Integração de aplicativo cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Primeiro tutorial do Headless{#headless-first}
       + [Visão geral](./graphql/headless-first-tutorial/overview.md)
