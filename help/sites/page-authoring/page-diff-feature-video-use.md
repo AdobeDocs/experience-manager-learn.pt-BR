@@ -41,7 +41,7 @@ Os recursos de diferença de página do AEM Sites mostram uma visualização rá
 
 ## Comparação de páginas de inicialização {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477343?captions=por_br&quality=12&learn=on)
 
 O recurso Diferença de página também pode ser usado para identificar a diferença entre blueprints e livecopies, e blueprints e cópias de idioma.
 

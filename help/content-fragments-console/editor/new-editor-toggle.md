@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como a opção Novo editor permite alternar entre o novo editor de Fragmento de conteúdo padrão e o editor clássico sem esforço.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477321/?captions=por_br&learn=on)

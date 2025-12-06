@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Uma breve introdução ao editor de fragmento de conteúdo do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477332/?captions=por_br&learn=on)

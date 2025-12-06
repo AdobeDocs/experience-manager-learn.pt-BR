@@ -71,7 +71,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./basics/content-fragment-editor.md" title="Visão geral do editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477332?captions=por_br&format=jpeg"
                 alt="Visão geral do editor">
             </a>
           </figure>
@@ -138,7 +138,7 @@ Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-m
             <a href="./editor/new-editor-toggle.md" title="Novo botão de alternância de editor"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Botão
+                src="https://video.tv.adobe.com/v/3477321?captions=por_br&format=jpeg" alt="Botão
                 de alternância do novo editor">
             </a>
           </figure>
