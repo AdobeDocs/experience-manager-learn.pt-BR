@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+source-git-commit: 6acf7f1d5c91b29a64b372b678f04b7cb880039b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '566'
 ht-degree: 98%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 98%
 + IA generativa {#generative-ai}
    + [Gerar variações](./generative-ai/generate-variations.md)
 + Fragmentos de conteúdo {#content-fragments}
-   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
+   + [Console de Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Criação de fragmentos de conteúdo](content-fragments/content-fragments-feature-video-use.md)
    + [Entregar fragmentos de conteúdo](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduzir fragmentos de conteúdo](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,7 +86,7 @@ ht-degree: 98%
 + Fragmentos de experiência {#experience-fragments}
    + [Uso de Fragmentos de experiência](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocos de construção](experience-fragments/building-blocks.md)
-   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR){target=_blank}
+   + [Fragmentos de conteúdo versus fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Visão geral](./edge-delivery-services/overview.md)
    + Desenvolver{#developing}
@@ -98,6 +98,7 @@ ht-degree: 98%
       + [Estrutura do documento](edge-delivery-services/developing/document-structure.md)
       + [Desenvolvimento local](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + [Pipeline de configuração](edge-delivery-services/developing/cloud-manager-configuration-pipeline.md)
       + Editor universal {#universal-editor}
          + [Visão geral](./edge-delivery-services/developing/universal-editor/0-overview.md)
          + [Novo projeto de código](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
@@ -119,7 +120,7 @@ ht-degree: 98%
 + Desenvolver {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Arquétipo de projeto do AEM](developing/aem-project-archetype.md)
-   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
+   + [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
    + [Introdução ao AEM Headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview){target=_blank}
    + [Introdução ao editor de SPA e ao React do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Estender propriedades da página](developing/page-properties-technical-video-develop.md)
@@ -171,7 +172,7 @@ ht-degree: 98%
       + [Gerar FPIDs](integrations/platform/fpid.md)
       + [SDK da web](integrations/platform/web-sdk.md)
       + [Analytics com o SDK da web da Platform](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Tags na Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Visão geral](integrations/experience-platform/data-collection/tags/overview.md)
       + [Criar uma propriedade de tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +187,9 @@ ht-degree: 98%
       + [Rastrear componente clicado com o Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analisar dados com o Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Visão geral](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [Instalação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [Casos de uso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [Visão geral](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Instalação](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Casos de uso](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Aprenda com os seus colegas {#expert-resources}
    + [Visão geral](expert-resources/learn-from-your-peers-overview.md)
    + [Guia de criação no AEM Sites](expert-resources/authoring-guide-in-sites.md)
