@@ -1,6 +1,6 @@
 ---
 title: Manuseio básico no AEM Sites
-description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console Sites como base.
+description: O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Ele usa o console do Sites como base.
 feature: Page Editor, Editable Templates
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4495
@@ -11,10 +11,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
 duration: 269
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 9%
+ht-degree: 15%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 9%
 
 {{edge-delivery-services-and-page-editor}}
 
-O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console Sites como base.
+O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Ele usa o console do Sites como base.
 
->[!VIDEO](https://video.tv.adobe.com/v/37002?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
 Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
@@ -34,7 +34,9 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
      | Console | Propósito |
      |---|---|
-     | Ativos | Esses consoles permitem importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM | Communities | Esse console permite criar e gerenciar sites da comunidade para envolvimento e capacitação | Commerce | Isso permite gerenciar produtos, catálogos de produtos e pedidos relacionados aos sites do Commerce |
+     | Ativos | Esses consoles permitem importar e gerenciar ativos digitais como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM |
+     | Communities | Esse console permite criar e gerenciar sites da comunidade para envolvimento e capacitação |
+     | Commerce | Isso permite gerenciar produtos, catálogos de produtos e pedidos relacionados aos sites do Commerce |
      | Fragmentos de experiência | Um fragmento de experiência é uma experiência independente que pode ser reutilizada em vários canais e que apresenta variações, evitando o trabalho de copiar e colar repetidamente as experiências ou partes das experiências |
      | Forms | Esse console permite criar, gerenciar e processar formulários e documentos |
      | Personalização | Esse console fornece uma estrutura de ferramentas para a criação de conteúdo direcionado e a apresentação de experiências personalizadas |
@@ -42,6 +44,7 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
      | Sites | O console Sites permite criar, exibir e gerenciar sites em execução na sua instância do AEM. Por meio desses consoles, você pode criar, editar, copiar, mover e excluir páginas do site, iniciar fluxos de trabalho e publicar páginas |
 
    * Ferramentas - Representado por um martelo
+
 * Omni Search
 * Alternador de soluções
 * Ajuda
@@ -60,5 +63,5 @@ Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 
 ## Recursos adicionais {#additional-resources}
 
-* [Editando a Documentação do Conteúdo da Página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
-* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR)
+* [Documentação de edição do conteúdo da página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=pt-BR)
+* [Guia de início rápido para a criação de páginas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Saiba como adicionar um botão personalizado à barra de ferramentas do Editor d
 
 Botões personalizados podem ser adicionados à **barra de ferramentas do RTE** no Editor de Fragmentos de Conteúdo usando o ponto de extensão `rte`. Este exemplo mostra como adicionar um botão personalizado chamado _Adicionar dica_ à barra de ferramentas do RTE e modificar o conteúdo dentro do RTE.
 
-Usando o método `getCustomButtons()` do ponto de extensão `rte`, um ou vários botões personalizados podem ser adicionados à **barra de ferramentas RTE**. Também é possível adicionar ou remover botões RTE padrão como _Copiar, Colar, Negrito e Itálico_ usando os métodos `getCoreButtons()` e `removeButtons)`, respectivamente.
+Usando o método `rte` do ponto de extensão `getCustomButtons()`, um ou vários botões personalizados podem ser adicionados à **barra de ferramentas RTE**. Também é possível adicionar ou remover botões RTE padrão como _Copiar, Colar, Negrito e Itálico_ usando os métodos `getCoreButtons()` e `removeButtons)`, respectivamente.
 
 Este exemplo mostra como inserir uma nota ou dica realçada usando o botão personalizado da barra de ferramentas _Adicionar Dica_. O conteúdo realçado da nota ou dica tem uma formatação especial aplicada por meio de elementos HTML e as classes CSS associadas. O conteúdo do espaço reservado e o código HTML são inseridos usando o método de retorno de chamada `onClick()` de `getCustomButtons()`.
 
@@ -36,7 +36,7 @@ Este exemplo mostra como inserir uma nota ou dica realçada usando o botão pers
 Este exemplo estende o ponto de extensão `rte` para adicionar um botão personalizado à barra de ferramentas do RTE no Editor de Fragmentos de Conteúdo.
 
 | Interface do usuário estendida do AEM | Ponto de extensão |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra de Ferramentas do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Exemplo de extensão

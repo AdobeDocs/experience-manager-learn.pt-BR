@@ -4,15 +4,15 @@ description: Saiba como se conectar a bancos de dados SQL do AEM as a Cloud Serv
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Verifique se a configuração avançada de rede [apropriada](../advanced-network
 
 ## Configuração OSGi
 
-Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL são fornecidos melhor por meio de [variáveis de configuração OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values), definidas usando a CLI AIO ou as APIs do Cloud Manager.
+Como os segredos não devem ser armazenados no código, o nome de usuário e a senha da conexão SQL são fornecidos melhor por meio de [variáveis de configuração OSGi secretas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), definidas usando a CLI AIO ou as APIs do Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 

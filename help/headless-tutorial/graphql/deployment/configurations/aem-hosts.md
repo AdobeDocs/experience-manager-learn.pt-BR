@@ -4,15 +4,15 @@ description: Saiba como configurar hosts do AEM no aplicativo AEM Headless.
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
 duration: 496
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1610'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ let { data, error } = useAdventureByPath('/content/dam/wknd-shared/en/adventures
 
 +++
 
-+++ iOS™ example
++++ iOS™ example 
 
 Este exemplo, com base no [exemplo de aplicativo AEM Headless iOS™](../../example-apps/ios-swiftui-app.md), ilustra como as solicitações de API do AEM GraphQL podem ser configuradas para se conectar a diferentes hosts do AEM com base nas [variáveis de configuração específicas da compilação](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3).
 

@@ -1,12 +1,12 @@
 ---
 title: Vídeos e tutoriais da AEM Foundation
 description: Assista aos nossos vídeos e tutoriais para obter ajuda com o Adobe Experience Manager Foundation.
-role: Leader, Architect, Developer, Admin, User
+role: Leader, Developer, Admin, User
 level: Beginner
 doc-type: Catalog
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 

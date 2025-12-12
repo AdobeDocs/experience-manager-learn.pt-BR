@@ -3,7 +3,7 @@ title: Configurar o AEM para o Editor de SPA e o SPA remoto
 description: Um projeto do AEM é necessário para definir os requisitos de configuração e conteúdo de suporte para permitir que o Editor de SPA do AEM crie um SPA remoto.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7631
 thumbnail: kt-7631.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Criar um projeto do AEM
 
-Crie um projeto do AEM em que as configurações e o conteúdo da linha de base sejam gerenciados. Este projeto será gerado dentro da pasta `remote-spa-tutorial` do projeto `aem-guides-wknd-graphql` clonado.
+Crie um projeto do AEM em que as configurações e o conteúdo da linha de base sejam gerenciados. Este projeto será gerado dentro da pasta `aem-guides-wknd-graphql` do projeto `remote-spa-tutorial` clonado.
 
 _Sempre usar a versão mais recente do [Arquétipo do AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -214,7 +214,7 @@ O Mapeamento do Sling afeta o AEM em execução em `http` e `localhost`, portant
 
 ## Políticas de segurança do Compartilhamento de recursos entre origens
 
-Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR).
+Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. No IDE, abra o subprojeto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
@@ -354,7 +354,7 @@ Lembre-se de que alteramos o tipo desta página para o de uma **Página de SPA R
 
 Essa configuração só deve ser definida na página do AEM que corresponde à raiz do SPA. Todas as páginas do AEM abaixo dessa página herdam o valor.
 
-## Parabéns
+## Parabéns!
 
 Agora você preparou as configurações do AEM e as implantou no autor local do AEM! Agora você sabe como:
 

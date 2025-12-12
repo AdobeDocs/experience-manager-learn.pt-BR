@@ -1,10 +1,10 @@
 ---
-title: Implementação de redirecionamentos de URL sem pipeline
+title: Implementar redirecionamentos de URL sem pipeline
 description: Saiba como implementar redirecionamentos de URL sem pipeline no AEM as a Cloud Service para permitir que a equipe de marketing gerencie os redirecionamentos sem precisar de um desenvolvedor.
 version: Experience Manager as a Cloud Service
 feature: Operations, Dispatcher
 topic: Development, Content Management, Administration
-role: Architect, Developer, User
+role: Developer, User
 level: Beginner, Intermediate
 doc-type: Article
 duration: 0
@@ -12,16 +12,16 @@ last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
 exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Implementação de redirecionamentos de URL sem pipeline
+# Implementar redirecionamentos de URL sem pipeline
 
-Saiba como implementar [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) no AEM as a Cloud Service para permitir que a equipe de marketing gerencie os redirecionamentos sem precisar de um desenvolvedor.
+Saiba como implementar [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) no AEM as a Cloud Service para permitir que a equipe de marketing gerencie os redirecionamentos sem precisar de um desenvolvedor.
 
 Há várias opções para gerenciar redirecionamentos de URL no AEM. Para obter mais informações, consulte [redirecionamentos de URL](url-redirection.md).
 
@@ -37,11 +37,11 @@ Para concluir este tutorial, você precisa:
 
 ## Caso de uso do tutorial
 
-Para o propósito da demonstração, vamos supor que a equipe de marketing da WKND esteja lançando uma nova campanha de esqui. Eles gostariam de criar URLs curtos para as páginas de aventura de esqui e gerenciá-los por conta própria como gerenciam o conteúdo. Eles decidiram usar a abordagem [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para gerenciar os redirecionamentos de URL.
+Para o propósito da demonstração, vamos supor que a equipe de marketing da WKND esteja lançando uma nova campanha de esqui. Eles gostariam de criar URLs curtos para as páginas de aventura de esqui e gerenciá-los por conta própria como gerenciam o conteúdo. Eles decidiram usar a abordagem [redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) para gerenciar os redirecionamentos de URL.
 
 Com base nos requisitos da equipe de marketing, os redirecionamentos de URL que precisam ser criados são os seguintes.
 
-| URL do Source | URL de direcionamento |
+| URL de origem | URL de direcionamento |
 |------------|------------|
 | /ski | /us/en/adventures.html |
 | /ski/northamerica | /us/en/adventures/downhill-skiing-wyoming.html |
@@ -134,7 +134,7 @@ RewriteRule ^(.*)$ ${<MAPALIAS>:$1|/} [L,R=301]
 ...
 ```
 
-### Exemplo de configurações
+### Exemplos de configurações
 
 Vamos analisar as configurações do Dispatcher para cada uma das opções de gerenciamento de redirecionamento de URL mencionadas [acima](#manage-redirects).
 
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >O termo *sem pipeline* é usado para enfatizar que as configurações são *implantadas apenas uma vez* e a equipe de marketing pode gerenciar os redirecionamentos de URL atualizando o arquivo de texto.
 
-Para implantar as configurações, use o pipeline de [pilha completa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) ou [configuração da camada da Web](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) na [Cloud Manager](https://my.cloudmanager.adobe.com/).
+Para implantar as configurações, use o pipeline de [pilha completa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) ou [configuração da camada da Web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) na [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
 ![Implantar via pipeline de pilha completa](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ A equipe de marketing pode gerenciar os redirecionamentos de URL como pares de v
 
 ## Recursos adicionais
 
-- [Redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [Redirecionamentos de URL](url-redirection.md)

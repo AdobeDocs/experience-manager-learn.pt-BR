@@ -4,14 +4,15 @@ description: Conheça as práticas recomendadas para configurar regras de filtro
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18310
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: ht
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
@@ -134,4 +135,3 @@ Saiba como implementar regras de filtro de tráfego e regras do WAF no AEM as a 
 - [Regras de filtro de tráfego, incluindo regras do WAF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)
 - [Entenda a prevenção de DoS/DDoS no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understanding-dos-and-prevention-approaches)
 - [Bloquear ataques de DoS e DDoS por meio de regras de filtro de tráfego](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)
-

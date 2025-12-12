@@ -4,7 +4,7 @@ description: Saiba como habilitar o ModSecurity para proteger o seu site contra 
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect
+role: Admin, Developer
 level: Experienced
 jira: KT-10385
 thumbnail: KT-10385.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 Saiba como habilitar o ModSecurity para proteger o seu site contra ataques de negação de serviço (DoS), usando o **Conjunto de Regras Principais (CRS) do OWASP ModSecurity** no Dispatcher do Adobe Experience Manager (AEM) Publish.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452130?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Visão geral
 
@@ -240,11 +240,11 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## Implantar
 
-Implante as configurações do Dispatcher validadas localmente, usando o pipeline [Camada da web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=pt-BR&#web-tier-config) ou [Pilha completa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=pt-BR&#full-stack-code) do Cloud Manager. Você também pode usar o [Ambiente de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=pt-BR) para obter um tempo de resposta mais rápido.
+Implante as configurações do Dispatcher validadas localmente, usando o pipeline [Camada da web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) ou [Pilha completa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code) do Cloud Manager. Você também pode usar o [Ambiente de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) para obter um tempo de resposta mais rápido.
 
 ## Verificar
 
-Para verificar a proteção contra DoS, neste exemplo, vamos enviar mais de 50 solicitações (25 limites de solicitação vezes duas ocorrências) em um intervalo de 60 segundos. No entanto, essas solicitações devem passar pela [CDN integrada](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) do AEM as a Cloud Service ou por qualquer [outra CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=pt-BR&#point-to-point-CDN) que esteja à frente do seu site.
+Para verificar a proteção contra DoS, neste exemplo, vamos enviar mais de 50 solicitações (25 limites de solicitação vezes duas ocorrências) em um intervalo de 60 segundos. No entanto, essas solicitações devem passar pela [CDN integrada](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) do AEM as a Cloud Service ou por qualquer [outra CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) que esteja à frente do seu site.
 
 Uma técnica para obter a passagem pela CDN é adicionar um parâmetro de consulta com um **novo valor aleatório em cada solicitação de página do site**.
 

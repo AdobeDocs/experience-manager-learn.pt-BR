@@ -8,8 +8,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Os serviços de conteúdo do AEM permitem as mesmas abstrações de conteúdo us
 
 Um tutorial completo que ilustra como criar e expor conteúdo com o AEM, e consumi-lo por meio de um aplicativo móvel nativo, em um cenário sem cabeçalho do CMS.
 
->[!VIDEO](https://video.tv.adobe.com/v/33074?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 Este tutorial explora como os serviços de conteúdo do AEM podem ser usados para impulsionar a experiência de um aplicativo móvel que exibe informações de eventos (música, shows, arte etc.) com curadoria da equipe da WKND.
 

@@ -4,7 +4,7 @@ description: Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem 
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 jira: KT-13881
 thumbnail: KT-13881.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Saiba como fazer chamadas HTTPS do AEM para APIs da Web que exigem autenticação mTLS (Mutual Transport Layer Security).
 
->[!VIDEO](https://video.tv.adobe.com/v/3447864?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 A autenticação mTLS ou TLS bidirecional melhora a segurança do protocolo TLS, exigindo que **o cliente e o servidor se autentiquem**. Essa autenticação é feita usando certificados digitais. Normalmente, é usada em cenários em que a segurança e a verificação de identidade fortes são críticas.
 
@@ -122,7 +122,7 @@ Para importar o certificado do AEM, siga as etapas abaixo:
 
    ![Chave privada e certificado do AEM importados](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Se o provedor de API estiver usando um certificado de CA autoassinado, importe o certificado recebido para o TrustStore do AEM. Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=pt-BR#httpclient-and-load-aem-truststore-material).
+Se o provedor de API estiver usando um certificado de CA autoassinado, importe o certificado recebido para o TrustStore do AEM. Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
 
 Da mesma forma, se o AEM estiver usando um certificado de CA autoassinado, solicite ao provedor da API que o importe.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - Se o provedor de API estiver usando um certificado de CA autoassinado, obtenha o AEM TrustStore global, o método `getAEMTrustStore(...)` fará isso.
 - Crie um objeto de `SSLContextBuilder`, consulte [Detalhes da API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html) do Java™.
 - Carregue o KeyStore do AEM do usuário no `SSLContextBuilder` usando o método `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
-- A senha do keystore é a senha que foi definida ao criar o keystore. Ela deve estar armazenada na configuração OSGi, consulte [Valores de configuração do segredo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values).
+- A senha do keystore é a senha que foi definida ao criar o keystore. Ela deve estar armazenada na configuração OSGi, consulte [Valores de configuração do segredo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
 
 ## Evite alterações no JVM Keystore
 
@@ -227,6 +227,6 @@ No entanto, esse método não está alinhado com as melhores práticas de segura
 
 ## Pacote de solução
 
-O projeto Node.js de amostra rebaixado no vídeo pode ser baixado [aqui](assets/internal-api-call/REST-APIs.zip).
+O projeto Node.js de exemplo demonstrado no vídeo pode ser baixado [aqui](assets/internal-api-call/REST-APIs.zip).
 
-O código do servlet do AEM está disponível na ramificação `tutorial/web-api-invocation` do Projeto do site do WKND, [consulte](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+O código do servlet do AEM está disponível na ramificação `tutorial/web-api-invocation` do projeto de site da WKND; [confira](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

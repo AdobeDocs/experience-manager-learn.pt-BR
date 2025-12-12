@@ -4,14 +4,14 @@ description: Saiba mais sobre as considerações de implantação para implanta�
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -82,7 +82,7 @@ Neste exemplo, o SPA é implantado em um domínio Netlify (`https://main--sparkl
 
 1. O SPA é disponibilizado a partir de um domínio Netlify, mas faz uma chamada XHR para as APIs do AEM GraphQL em um domínio diferente. Esta solicitação entre sites requer que o [CORS](./configurations/cors.md) seja configurado no AEM para permitir que a solicitação do domínio Netlify acesse seu conteúdo.
 
-   ![Solicitação de SPA atendida de hosts SPA e AEM &#x200B;](assets/spa/cors-requirement.png)
+   ![Solicitação de SPA atendida de hosts SPA e AEM ](assets/spa/cors-requirement.png)
 
 2. Inspecionando a solicitação XHR para a API GraphQL do AEM, o `Access-Control-Allow-Origin` está presente, indicando ao navegador da Web que o AEM permite que a solicitação deste domínio Netlify acesse seu conteúdo.
 
@@ -119,8 +119,8 @@ O Adobe fornece um exemplo de aplicativo de página única codificado no React.
                     <p class="is-size-6">Os exemplos de aplicativos são uma ótima maneira de conhecer os recursos sem cabeçalho do Adobe Experience Manager (AEM). Este aplicativo React demonstra como consultar conteúdo usando as APIs GraphQL do AEM usando consultas persistentes.</p>
                 </div>
                 <a href="../example-apps/react-app.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>

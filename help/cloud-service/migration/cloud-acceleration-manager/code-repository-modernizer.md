@@ -4,16 +4,16 @@ description: Saiba como o Modernizador do repositório de código atualiza autom
 version: Experience Manager as a Cloud Service
 feature: Migration
 topic: Migration, Upgrade
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-8663
 thumbnail: 336694.jpeg
 exl-id: df5e0e46-0255-4a77-b85d-b6520c871879
 duration: 183
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como o Modernizador do repositório de código atualiza automaticamente os projetos existentes do AEM Maven para serem compatíveis com o AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444666?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)

@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Colunas de grade personalizadas podem ser adicionadas ao Console de Fragmentos d
 Este exemplo se estende ao ponto de extensão `contentFragmentGrid` para adicionar uma coluna personalizada ao Console de Fragmentos de Conteúdo.
 
 | Interface do usuário estendida do AEM | Ponto de extensão |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colunas da Grade](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Exemplo de extensão
@@ -208,7 +208,7 @@ Se outros dados forem necessários para preencher a coluna personalizada, as sol
 
 >[!IMPORTANT]
 >
-> Verifique se a instância do Autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=pt-BR) das origens nas quais o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
+> Verifique se a instância do Autor do AEM está configurada para permitir [solicitações entre origens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) das origens nas quais o aplicativo AppBuilder está sendo executado. As origens permitidas incluem `https://localhost:9080`, a origem do Estágio do AppBuilder e a origem da Produção do AppBuilder.
 >
 > Como alternativa, a extensão pode chamar uma [ação do AppBuilder](../../runtime-action.md) personalizada que faz a solicitação ao AEM Author em nome da extensão.
 

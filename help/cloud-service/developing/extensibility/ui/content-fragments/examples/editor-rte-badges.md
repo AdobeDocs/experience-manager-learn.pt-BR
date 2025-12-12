@@ -12,10 +12,10 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ O caso de uso mais comum para selos RTE é usá-los em conjunto com [widgets RTE
 
 Normalmente, os emblemas em associação com os widgets são usados para adicionar o conteúdo dinâmico que tem uma dependência de sistema externa, mas _os autores de conteúdo não podem modificar_ o conteúdo dinâmico inserido para manter a integridade. Elas só podem ser removidas como um item inteiro.
 
-As **medalhas** são adicionadas ao **RTE** no Editor de Fragmento de Conteúdo usando o ponto de extensão `rte`. Usando o método `getBadges()` do ponto de extensão `rte`, uma ou várias medalhas são adicionadas.
+As **medalhas** são adicionadas ao **RTE** no Editor de Fragmento de Conteúdo usando o ponto de extensão `rte`. Usando o método `rte` do ponto de extensão `getBadges()`, uma ou várias medalhas são adicionadas.
 
 Este exemplo mostra como adicionar um widget chamado _Atendimento ao cliente das reservas de grandes grupos_ para localizar, selecionar e adicionar os detalhes do atendimento ao cliente específicos da aventura WKND, como **Nome do representante** e **Número de telefone**, em um conteúdo RTE. Usando a funcionalidade de medalhas, o **Número de Telefone** tornou-se **não editável**, mas os autores de conteúdo WKND podem editar o Nome de Representante.
 
@@ -44,7 +44,7 @@ Para simplificar as coisas, este exemplo usa a estrutura [Adobe React Spectrum](
 Este exemplo se estende ao ponto de extensão `rte` para adicionar um selo ao RTE no Editor de Fragmento de Conteúdo.
 
 | Interface do usuário estendida do AEM | Pontos de extensão |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Editor de fragmento de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Selos do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) e [Widgets do Editor de Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Exemplo de extensão

@@ -1,12 +1,12 @@
 ---
 title: Armazenamento em cache de variantes de página com o AEM as a Cloud Service
-description: Saiba como configurar e usar o AEM as a cloud service para suportar o armazenamento em cache de variantes de página.
-role: Architect, Developer
+description: Saiba como configurar e usar o AEM as a cloud service para oferecer suporte ao armazenamento em cache de variantes de página.
+role: Developer
 topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Armazenamento em cache de variantes de página
 
-Saiba como configurar e usar o AEM as a cloud service para suportar o armazenamento em cache de variantes de página.
+Saiba como configurar e usar o AEM as a cloud service para oferecer suporte ao armazenamento em cache de variantes de página.
 
 ## Exemplo de casos de uso
 
@@ -31,7 +31,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 + Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível de CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`), que é passado para o Dispatcher.
 
-+ Uma regra de regravação do Apache modifica o caminho da solicitação para incluir o valor do cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish forneça conteúdo diferente com base no seletor e no dispatcher, para armazenar em cache uma página por variante.
++ Uma regra de regravação do Apache modifica o caminho da solicitação para incluir o valor do cabeçalho no URL da página como um Seletor do Apache Sling (por exemplo, `/page.variant=NY.html`). Isso permite que o AEM Publish disponibilize conteúdo diferente com base no seletor e no Dispatcher para armazenar em cache uma página por variante.
 
 + A resposta enviada pelo AEM Dispatcher deve conter um cabeçalho de resposta HTTP `Vary: x-aem-variant`. Isso instrui o CDN a armazenar cópias de cache diferentes para valores de cabeçalho diferentes.
 
@@ -49,11 +49,11 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Uso
 
-1. Para demonstrar o recurso, usaremos como exemplo a implementação do [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
+1. Para demonstrar o recurso, usaremos como exemplo a implementação do [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 1. Implemente um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) no AEM para definir o cookie `x-aem-variant` na resposta HTTP, com um valor de variante.
 
-1. A CDN do AEM transforma automaticamente o cookie `x-aem-variant` em um cabeçalho HTTP de mesmo nome.
+1. A CDN da AEM transforma automaticamente o cookie `x-aem-variant` em um cabeçalho HTTP de mesmo nome.
 
 1. Adicione uma regra mod_rewrite do Apache Web Server ao projeto `dispatcher`, que modifica o caminho da solicitação para incluir o seletor de variantes.
 
@@ -134,7 +134,7 @@ Saiba como configurar e usar o AEM as a cloud service para suportar o armazename
 
 ## Limitações da variante
 
-+ A CDN do AEM pode gerenciar até 200 variações. Isso significa que o cabeçalho `x-aem-variant` pode ter até 200 valores únicos. Para obter mais informações, reveja os [limites de configuração da CDN](https://docs.fastly.com/en/guides/resource-limits).
++ A CDN da AEM pode gerenciar até 200 variações. Isso significa que o cabeçalho `x-aem-variant` pode ter até 200 valores únicos. Para obter mais informações, reveja os [limites de configuração da CDN](https://docs.fastly.com/en/guides/resource-limits).
 
 + Tenha cuidado para garantir que a chave de variante escolhida nunca exceda esse número.  Por exemplo, uma ID de usuário não é uma boa chave, pois facilmente excederia 200 valores para a maioria dos sites, enquanto os estados/territórios em um país são mais adequados se houver menos de 200 estados nesse país.
 

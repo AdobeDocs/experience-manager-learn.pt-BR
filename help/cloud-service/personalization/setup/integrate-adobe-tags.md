@@ -4,19 +4,19 @@ description: Saiba como integrar o AEM as a Cloud Service com tags na Adobe Expe
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture, Content Management
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18719
 thumbnail: null
-source-git-commit: 70665c019f63df1e736292ad24c47624a3a80d49
+exl-id: 71cfb9f5-57d9-423c-bd2a-f6940cc0b4db
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 1%
 
 ---
-
 
 # Integrar tags na Adobe Experience Platform
 
@@ -127,5 +127,5 @@ Para confirmar se a configuração de Tags está funcionando corretamente, você
 
 ## Recursos adicionais
 
-- [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/pt-br/docs/experience-platform/debugger/home)
-- [Visão geral das tags](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home)
+- [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+- [Visão geral das tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)

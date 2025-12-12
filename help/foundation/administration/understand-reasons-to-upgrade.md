@@ -4,12 +4,12 @@ description: Um detalhamento de alto nível de recursos principais para clientes
 version: Experience Manager 6.5
 topic: Upgrade
 feature: Release Information
-role: Leader, Architect, Developer, Admin, User
+role: Leader, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2576'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Um detalhamento de alto nível de recursos principais para clientes que consider
 
 ## Principais recursos para atualizar para o AEM 6.5
 
-+ [Notas de versão do Adobe Experience Manager 6.5](https://helpx.adobe.com/br/experience-manager/6-5/release-notes.html)
++ [Notas de versão do Adobe Experience Manager 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
 
 ### Melhorias na base
 
@@ -82,7 +82,7 @@ O [Cloud Manager](https://adobe.ly/2HODmsv), uma exclusividade dos clientes do A
 
 Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alguns desses recursos foram introduzidos em versões anteriores e melhorias incrementais foram adicionadas em cada versão.
 
-+ [Notas de versão do AEM Foundation](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/wcm-platform.html)
++ [Notas de versão do AEM Foundation](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
 ***✔<sup>+</sup> aprimoramentos significativos no recurso nesta versão.***
 
@@ -126,7 +126,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">Suporte a Índice oak-run.jar</a>:</strong> Reindexação, coleta de estatísticas e verificação de consistência aprimoradas dos índices Oak.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">Suporte a Índice oak-run.jar</a>:</strong> Reindexação, coleta de estatísticas e verificação de consistência aprimoradas dos índices Oak.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -136,7 +136,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">Índices de Pesquisa Personalizados</a>: </strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">Índices de Pesquisa Personalizados</a>: </strong>
                 Capacidade de adicionar definições de índice personalizadas para otimizar o desempenho da consulta e a relevância da pesquisa.</td>
             <td> </td>
             <td>✔</td>
@@ -147,7 +147,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpeza de Revisão Online</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Limpeza de Revisão Online</a>:</strong>
                 Faça a manutenção do repositório sem tempo de inatividade do servidor.</td>
             <td> </td>
             <td> </td>
@@ -158,7 +158,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">Armazenamento de repositório TarMK ou MongoMK</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">Armazenamento de repositório TarMK ou MongoMK</a>:</strong>
                 <br> Opções para usar o armazenamento de TarMK (versão de última geração do TarPM) baseado em arquivos simples e com bom desempenho
                 <br> ou dimensione horizontalmente com um repositório com suporte de MongoDB com MongoMK.</td>
             <td> </td>
@@ -170,7 +170,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">Desempenho e estabilidade do MongoMK</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">Desempenho e estabilidade do MongoMK</a>:</strong>
             Aprimoramentos contínuos foram feitos no MongoMK desde sua introdução ao AEM 6.0.</td>
             <td> </td>
             <td> </td>
@@ -181,7 +181,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore">DataStore do Amazon S3</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore">DataStore do Amazon S3</a>:</strong>
             Aproveite a solução de armazenamento em nuvem expansível para armazenar ativos binários.</td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>
@@ -214,7 +214,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Painel de Operações</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Painel de Operações</a>:</strong>
  Faça manutenção, monitore a integridade do servidor e analise o desempenho no AEM.</td>
             <td></td>
             <td>✔</td>
@@ -225,7 +225,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Melhorias de Atualização</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Melhorias de Atualização</a>:</strong>
             As melhorias de atualização permitem atualizações mais fáceis e rápidas no local do AEM.</td>
             <td> </td>
             <td> </td>
@@ -276,7 +276,7 @@ Veja abaixo uma matriz dos principais recursos básicos oferecidos pelo AEM. Alg
 
 Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM. Alguns desses recursos foram introduzidos em versões anteriores e melhorias incrementais foram adicionadas em cada versão.
 
-+ [Notas de versão de segurança](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/wcm-platform.html#Security)
++ [Notas de versão de segurança](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
 ***✔indica que foram feitos aprimoramentos significativos no recurso nesta versão.***
 
@@ -297,7 +297,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
     </thead>
     <tbody>
         <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">Usuários de Serviço</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">Usuários de Serviço</a></strong>
             <br> Compartimentaliza as permissões para evitar o uso desnecessário de privilégios de Administrador.</td>
         <td></td>
         <td>✔</td>
@@ -308,7 +308,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gerenciamento de Repositório de Chaves</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gerenciamento de Repositório de Chaves</a></strong>
             <br> Repositório de confiança global, certificados e chaves, todos gerenciados no repositório.</td>
         <td></td>
         <td>✔</td>
@@ -319,7 +319,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>proteção</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>proteção</strong></a>
             <br> Proteção contra falsificação de solicitação entre sites pronta para uso.</td>
         <td></td>
         <td></td>
@@ -330,7 +330,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>suporte</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>suporte</strong></a>
             <br> Suporte ao Compartilhamento de Recursos entre Origens para maior flexibilidade dos aplicativos.</td>
         <td></td>
         <td></td>
@@ -354,7 +354,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP como uma Configuração OSGi</a><br>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP como uma Configuração OSGi</a><br>
  </strong>Simplifica o gerenciamento e as atualizações da autenticação LDAP.</td>
         <td></td>
         <td>✔</td>
@@ -376,7 +376,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">Melhorias do CUG</a><br>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">Melhorias do CUG</a><br>
  </strong>A implementação do Grupo fechado de usuários foi regravada para solucionar problemas de desempenho e escalabilidade.</td>
         <td></td>
         <td></td>
@@ -398,7 +398,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Suporte a Token Encapsulado</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Suporte a Token Encapsulado</a></strong>
             <br> Não é mais necessário que as sessões "adesivas" suportem autenticação horizontal em instâncias de publicação.</td>
         <td> </td>
         <td> </td>
@@ -409,7 +409,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Suporte à autenticação do Adobe IMS</a><br>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Suporte à autenticação do Adobe IMS</a><br>
  </strong>Exclusivo do Adobe Managed Services (AMS), gerencie centralmente o acesso às instâncias do AEM Author por meio do Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
@@ -426,7 +426,7 @@ Veja abaixo uma matriz dos principais recursos de segurança oferecidos pelo AEM
 
 Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Alguns desses recursos foram introduzidos em versões anteriores e melhorias incrementais foram adicionadas em cada versão.
 
-+ [notas de versão do AEM Sites](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/sites.html)
++ [notas de versão do AEM Sites](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
 ***✔<sup>+</sup> aprimoramentos significativos no recurso nesta versão.***
 
@@ -458,7 +458,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">Criação Responsiva de Site</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">Criação Responsiva de Site</a>:</strong>
                 O modo de layout permite que os editores redimensionem componentes com base nas larguras do dispositivo para sites responsivos.</td>
             <td></td>
             <td></td>
@@ -480,7 +480,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/core-components/user-guide.html" target="_blank">Componentes Principais</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">Componentes Principais</a>:</strong>
             Acelere o desenvolvimento de sites. Disponível no GitHub para programação de lançamento frequente e flexibilidade.</td>
             <td> </td>
             <td> </td>
@@ -491,7 +491,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">Editor de SPA</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">Editor de SPA</a>:</strong>
             Crie experiências da Web atraentes e autorais usando estruturas de Aplicativo de página única (SPA) criadas no React.</td>
             <td> </td>
             <td> </td>
@@ -513,7 +513,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Gerenciador de Vários Sites (MSM)</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Gerenciador de Vários Sites (MSM)</a>:</strong>
             Gerenciar vários sites que compartilham conteúdo em comum (ou seja, vários idiomas, várias marcas).</td>
             <td>✔</td>
             <td>✔</td>
@@ -524,7 +524,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Conversão de Conteúdo</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Conversão de Conteúdo</a>:</strong>
             A estrutura Plug and Play integra-se aos principais serviços de tradução de terceiros do setor.</td>
             <td></td>
             <td></td>
@@ -535,7 +535,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
             Estrutura de contexto de cliente de última geração para personalização de conteúdo.</td>
             <td></td>
             <td>✔</td>
@@ -546,7 +546,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Inicializações</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Inicializações</a>:</strong>
             Desenvolva conteúdo para uma versão futura sem interromper a criação diária.</td>
             <td>✔</td>
             <td>✔</td>
@@ -601,7 +601,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Integração do Adobe Target</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Integração do Adobe Target</a>:</strong>
             Assistente passo a passo para criar experiências direcionadas e criar bibliotecas de ofertas reutilizáveis.</td>
             <td> </td>
             <td> </td>
@@ -612,7 +612,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Integração do Adobe Campaign</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Integração do Adobe Campaign</a>:</strong>
             Fácil integração com a solução de campanha de email de última geração.</td>
             <td> </td>
             <td>✔</td>
@@ -645,7 +645,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">comércio eletrônico</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">comércio eletrônico</a>:</strong>
             Ofereça experiências de compra personalizadas e com marca em pontos de contato da Web, dispositivos móveis e sociais.
             </td>
             <td>✔</td>
@@ -657,7 +657,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/communities/using/overview.html" target="_blank">Comunidades</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">Comunidades</a>:</strong>
             Fóruns, comentários encadeados, calendários de eventos e muitos outros recursos permitem um engajamento profundo com os visitantes do site.</td>
             <td>✔</td>
             <td>✔</td>
@@ -674,7 +674,7 @@ Abaixo está uma matriz dos principais recursos do Sites oferecidos pelo AEM. Al
 
 Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. Alguns desses recursos foram introduzidos em versões anteriores e melhorias incrementais foram adicionadas em cada versão.
 
-+ [notas de versão do AEM Assets](https://helpx.adobe.com/br/experience-manager/6-5/release-notes/assets.html)
++ [notas de versão do AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
 ***✔indica que foram feitos aprimoramentos significativos no recurso nesta versão.***
 
@@ -695,7 +695,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Interface Otimizada para Toque</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Interface Otimizada para Toque</a>:</strong>
             Gerencie ativos em um desktop ou em dispositivos habilitados para toque.</td>
             <td> </td>
             <td>✔</td>
@@ -706,7 +706,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/metadata.html" target="_blank">Gerenciamento avançado de metadados</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html" target="_blank">Gerenciamento avançado de metadados</a>:</strong>
             Modelos de metadados, Editor de esquema de metadados e Edição de metadados em massa.</td>
             <td> </td>
             <td>✔</td>
@@ -717,7 +717,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Tarefa</a> e Gerenciamento de Fluxo de Trabalho:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Tarefa</a> e Gerenciamento de Fluxo de Trabalho:</strong>
             Fluxos de trabalho e tarefas pré-criados para revisão e aprovação de ativos digitais que usam os projetos do AEM.</td>
             <td> </td>
             <td>✔</td>
@@ -739,7 +739,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API HTTP do Assets</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API HTTP do Assets</a>:</strong>
             Interagir programaticamente com ativos via HTTP e JSON.</td>
             <td> </td>
             <td> </td>
@@ -750,7 +750,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">Compartilhamento de links</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">Compartilhamento de links</a>:</strong>
             Compartilhamento ad-hoc simples de ativos digitais sem a necessidade de fazer logon.</td>
             <td> </td>
             <td> </td>
@@ -761,7 +761,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/brand-portal/using/brand-portal.html" target="_blank">Brand Portal</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html" target="_blank">Brand Portal</a>:</strong>
             Solução SAAS do Cloud Service para compartilhamento e distribuição ininterruptos de ativos digitais.</td>
             <td> </td>
             <td> </td>
@@ -772,7 +772,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Assets Conectado</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Assets Conectado</a>:</strong>
             As instâncias do AEM Sites podem acessar e usar facilmente ativos de uma instância diferente do AEM Assets.</td>
             <td> </td>
             <td> </td>
@@ -783,7 +783,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">Insights de ativos</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">Insights de ativos</a>:</strong>
             Aproveite o Adobe Analytics para capturar a interação do cliente de ativos digitais e visualizar no AEM.</td>
             <td> </td>
             <td> </td>
@@ -794,7 +794,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">Assets Multilíngue</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">Assets Multilíngue</a>:</strong>
             Compatibilidade de tradução de metadados de ativos automaticamente com raízes de idioma.</td>
             <td> </td>
             <td> </td>
@@ -805,7 +805,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">Marcas Inteligentes e Moderação</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">Marcas Inteligentes e Moderação</a>:</strong>
             Aproveite a IA do Adobe para marcar imagens automaticamente com metadados úteis.</td>
             <td> </td>
             <td></td>
@@ -827,7 +827,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/indesign.html" target="_blank">Integração do Adobe InDesign Server</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Integração do Adobe InDesign Server</a>:</strong>
             Gerar catálogos de produtos. Crie folhetos, folhetos e anúncios impressos com base em modelos do InDesign.</td>
             <td> </td>
             <td> </td>
@@ -850,7 +850,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de Imagens do Adobe</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Biblioteca de Imagens do Adobe</a>:</strong>
                 <br> Bibliotecas de PDF Photoshop e Acrobat usadas para manipulação de arquivos de alta qualidade.</td>
             <td> </td>
             <td> </td>
@@ -872,7 +872,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Integração do Adobe Stock</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Integração do Adobe Stock</a>:</strong>
             Acesse e use imagens do Adobe Stock diretamente do AEM de maneira contínua.</td>
             <td> </td>
             <td> </td>
@@ -907,7 +907,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imagens</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imagens</a>:</strong>
             Fornecer imagens dinamicamente em diferentes tamanhos e formatos, incluindo o Recorte inteligente.</td>
             <td> </td>
             <td></td>
@@ -918,7 +918,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/video-profiles.html" target="_blank">Vídeo</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/video-profiles.html" target="_blank">Vídeo</a>:</strong>
             Codificação avançada de vídeo e transmissão adaptável de vídeo</td>
             <td> </td>
             <td>✔</td>
@@ -929,7 +929,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/interactive-images.html" target="_blank">Mídia interativa</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/interactive-images.html" target="_blank">Mídia interativa</a>:</strong>
             Crie banners interativos e vídeos com conteúdo clicável para exibir as principais ofertas.
             </td>
             <td> </td>
@@ -941,7 +941,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Conjuntos (<a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/image-sets.html" target="_blank">Imagem</a>, <a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">Rotação</a>, <a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">Mídia Mista</a>):</strong>
+            <td><strong>Conjuntos (<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">Imagem</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">Rotação</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">Mídia Mista</a>):</strong>
             Permitir que os usuários ampliem, desloquem, girem e simulem uma experiência de visualização de 360 graus.</td>
             <td> </td>
             <td>✔</td>
@@ -963,7 +963,7 @@ Abaixo está uma matriz dos principais recursos do Assets oferecidos pelo AEM. A
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Entrega</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Entrega</a>:</strong>
             Opções flexíveis para vinculação ou incorporação de conteúdo e entrega do Dynamic Media pelo protocolo HTTP/2.</td>
             <td> </td>
             <td>✔</td>
@@ -1010,7 +1010,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">Editor Adaptável do Forms</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">Editor Adaptável do Forms</a>:</strong>
             Crie formulários envolventes, responsivos e adaptáveis com base nas configurações do dispositivo e do navegador.</td>
             <td> </td>
             <td>✔</td>
@@ -1021,7 +1021,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html" target="_blank">Documento de Registro</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html" target="_blank">Documento de Registro</a>:</strong>
             Crie um documento para garantir o armazenamento a longo prazo de uma experiência de captura de dados ou versão pronta para impressão.</td>
             <td> </td>
             <td>✔</td>
@@ -1032,7 +1032,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/themes.html" target="_blank">Editor de Temas</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html" target="_blank">Editor de Temas</a>:</strong>
             Crie temas reutilizáveis para estilizar componentes e painéis de um formulário.</td>
             <td> </td>
             <td> </td>
@@ -1043,7 +1043,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/template-editor.html" target="_blank">Editor de Modelos</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html" target="_blank">Editor de Modelos</a>:</strong>
             Padronizar e implementar práticas recomendadas para formulários adaptáveis.</td>
             <td> </td>
             <td> </td>
@@ -1054,7 +1054,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Integração do Acrobat Sign</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Integração do Acrobat Sign</a>:</strong>
             Permitir a implantação de cenários de assinatura baseados em formulários integrados do Acrobat Sign.</td>
             <td> </td>
             <td> </td>
@@ -1065,7 +1065,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">Gerenciamento de Correspondências</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">Gerenciamento de Correspondências</a>:</strong>
             Com o AEM Forms, você pode criar, gerenciar e fornecer correspondências personalizadas e interativas para o cliente.
             </td>
             <td> </td>
@@ -1077,7 +1077,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">Integração de Dados de Terceiros</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">Integração de Dados de Terceiros</a>:</strong>
             Com a Integração de dados, os dados são obtidos de diferentes fontes de dados com base nas entradas do usuário em um formulário. No envio do formulário, os dados capturados são gravados nas fontes de dados.
             </td>
             <td> </td>
@@ -1089,7 +1089,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">Fluxo de trabalho (no OSGi) para Processamento do Forms</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">Fluxo de trabalho (no OSGi) para Processamento do Forms</a>:</strong>
             Implantação simplificada de processos de aprovação de formulários.</td>
             <td> </td>
             <td> </td>
@@ -1111,7 +1111,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">Gerenciador de Formulários</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">Gerenciador de Formulários</a>:</strong>
             Local único para gerenciar todos os formulários/documentos/correspondências, como ativar análises, tradução, testes A/B, revisões e publicações.
             </td>
             <td> </td>
@@ -1123,7 +1123,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">Aplicativo AEM Forms</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">Aplicativo AEM Forms</a>:</strong>
             Permitir o processamento de formulários online/offline em um aplicativo no iOS, Android ou Windows.</td>
             <td> </td>
             <td>✔</td>
@@ -1134,7 +1134,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/adaptive-document.html" target="_blank">Comunicações Interativas</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/adaptive-document.html" target="_blank">Comunicações Interativas</a>:</strong>
             Crie comunicações avançadas, como declarações direcionadas com elementos interativos, como gráficos (anteriormente conhecidos como Documentos adaptáveis).</td>
             <td> </td>
             <td> </td>
@@ -1156,7 +1156,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">Segurança de documentos do AEM Forms</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">Segurança de documentos do AEM Forms</a>:</strong>
             Acesso e autorização seguros de documentos do PDF e do Office.
             </td>
             <td> </td>
@@ -1168,7 +1168,7 @@ Abaixo está uma matriz dos principais recursos complementares do AEM Forms ofer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/br/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">Testando Estruturas</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">Testando Estruturas</a>:</strong>
             Use a estrutura Calvin e o plug-in Chrome para suportar e depurar formulários adaptáveis.</td>
             <td> </td>
             <td> </td>

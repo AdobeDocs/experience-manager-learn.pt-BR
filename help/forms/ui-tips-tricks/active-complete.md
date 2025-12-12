@@ -11,7 +11,7 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 21%
@@ -45,7 +45,7 @@ Defina as propriedades de CSS para o estado padrão conforme mostrado abaixo
 | Texto | Espessura da Fonte | Negrito |
 | Texto | Cor | #FFF |
 | Texto | Altura da Linha | 3 |
-| Texto | Alinhamento do Texto | À esquerda |
+| Texto | Alinhamento do Texto | Esquerda |
 | Fundo | Cor | #056dae |
 
 Salve as alterações
@@ -60,7 +60,7 @@ Verifique se você está no estado Ativo e estilize as seguintes propriedades de
 | Texto | Espessura da Fonte | Negrito |
 | Texto | Cor | #FFF |
 | Texto | Altura da Linha | 3 |
-| Texto | Alinhamento do Texto | À esquerda |
+| Texto | Alinhamento do Texto | Esquerda |
 | Fundo | Cor | #056dae |
 
 Estilize a imagem de plano de fundo conforme mostrado na captura de tela abaixo
@@ -81,7 +81,7 @@ Verifique se você está no estado visitado e estilize as seguintes propriedades
 | Texto | Espessura da Fonte | Negrito |
 | Texto | Cor | #FFF |
 | Texto | Altura da Linha | 3 |
-| Texto | Alinhamento do Texto | À esquerda |
+| Texto | Alinhamento do Texto | Esquerda |
 | Fundo | Cor | #056dae |
 
 Estilize a imagem de plano de fundo conforme mostrado na captura de tela abaixo

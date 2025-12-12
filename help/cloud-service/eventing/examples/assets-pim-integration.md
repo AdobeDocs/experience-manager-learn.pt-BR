@@ -1,10 +1,10 @@
 ---
-title: Eventos do AEM Assets para integração do PIM
+title: Eventos do AEM Assets para integração com o PIM
 description: Saiba como integrar o AEM Assets e os sistemas de Gerenciamento de informações de produtos (PIM) para atualizações de metadados de ativos.
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 761
@@ -12,14 +12,14 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1518'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Eventos do AEM Assets para integração do PIM
+# Eventos do AEM Assets para integração com o PIM
 
 >[!IMPORTANT]
 >
@@ -57,8 +57,8 @@ Para concluir este tutorial, você precisa:
 
 As etapas de desenvolvimento de alto nível são:
 
-1. [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [Habilitar o acesso às APIs do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [Modernização do ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [Habilitar o acesso às APIs do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Criar um projeto no Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Inicializar o projeto para desenvolvimento local](./runtime-action.md#initialize-project-for-local-development)
 1. Configurar o projeto no ADC
@@ -69,7 +69,7 @@ As etapas de desenvolvimento de alto nível são:
 1. Criar e aplicar o esquema de metadados de ativos
 1. Verificação do upload de ativos e da atualização de metadados
 
-Para obter detalhes sobre as etapas 1 a 2, consulte o [guia Invocar APIs do AEM baseadas em OpenAPI](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) e, para as etapas 3 a 4, consulte o [exemplo de Ação do Adobe I/O Runtime e Eventos do AEM](./runtime-action.md#). Para as etapas 5 a 9, consulte as seções a seguir.
+Para obter detalhes sobre as etapas 1 a 2, consulte o [guia Invocar APIs do AEM baseadas em OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) e, para as etapas 3 a 4, consulte o [exemplo de Ação do Adobe I/O Runtime e Eventos do AEM](./runtime-action.md#). Para as etapas 5 a 9, consulte as seções a seguir.
 
 ### Configurar o projeto no Adobe Developer Console (ADC)
 
@@ -293,7 +293,7 @@ Consulte o arquivo [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-p
 
 Por padrão, o projeto WKND Sites não tem o esquema de metadados do ativo para exibir os metadados específicos do PIM, como SKU, Nome do fornecedor etc. Vamos criar e aplicar o esquema de metadados de ativos a uma pasta de ativos na instância do AEM.
 
-1. Faça logon na instância do AEM as a Cloud Service Asset e esteja na [Exibição do Asset](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Faça logon na instância do AEM as a Cloud Service Asset e esteja na [Exibição do Asset](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![exibição do AEM Assets](../assets/examples/assets-pim-integration/aem-assets-view.png)
 

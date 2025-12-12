@@ -1,10 +1,10 @@
 ---
-title: Processamento de eventos do AEM usando a ação do Adobe I/O Runtime
+title: Processamento de Eventos do AEM usando a ação do Adobe I/O Runtime
 description: Saiba como processar eventos AEM recebidos usando a Ação do Adobe I/O Runtime.
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 558
@@ -12,14 +12,14 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Processamento de eventos do AEM usando a ação do Adobe I/O Runtime
+# Processamento de Eventos do AEM usando a ação do Adobe I/O Runtime
 
 Saiba como processar Eventos AEM recebidos usando a Ação [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/). Este exemplo aprimora o exemplo anterior [Ação do Adobe I/O Runtime e Eventos do AEM](runtime-action.md). Verifique se você o concluiu antes de continuar com este.
 
@@ -162,7 +162,7 @@ Para executar as tarefas mencionadas acima, vamos desenvolver os seguintes módu
   ...
   ```
 
-  Consulte o [tutorial do AEM Service Credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR) para saber mais sobre ele. Além disso, os [Arquivos de Configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
+  Consulte o [tutorial do AEM Service Credentials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) para saber mais sobre ele. Além disso, os [Arquivos de Configuração do App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) para gerenciar segredos e parâmetros de ação.
 
 - O módulo `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` armazena os dados originais do evento, a mensagem de atividade e os detalhes de modificação (se houver) no armazenamento do Adobe I/O Runtime.
 

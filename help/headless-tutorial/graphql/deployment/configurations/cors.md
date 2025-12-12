@@ -4,16 +4,16 @@ description: Saiba como configurar o CORS (Cross-origin resource sharing, compar
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2024-03-22T00:00:00Z
 duration: 185
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ A ativação do CORS no serviço do AEM Author é diferente dos serviços do AEM
 
 A fábrica de configuração OSGi do AEM CORS define os critérios de permissão para aceitar solicitações HTTP CORS.
 
-| O cliente se conecta ao | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O cliente se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requer a configuração OSGi do CORS | ✔ | ✘ | ✘ |
 
@@ -59,7 +59,7 @@ As principais propriedades de configuração são:
 + `supportedheaders` inclui `"Authorization"`, pois as solicitações ao AEM Author devem ser autorizadas.
 + `supportscredentials` está definido como `true`, pois a solicitação ao AEM Author deve ser autorizada.
 
-[Saiba mais sobre a configuração OSGi do CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
+[Saiba mais sobre a configuração OSGi do CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 
 O exemplo a seguir suporta o uso de consultas persistentes do AEM GraphQL no AEM Author. Para usar consultas GraphQL definidas pelo cliente, adicione uma URL de ponto de extremidade GraphQL em `allowedpaths` e `POST` a `supportedmethods`.
 
@@ -100,7 +100,7 @@ O exemplo a seguir suporta o uso de consultas persistentes do AEM GraphQL no AEM
 
 + [Um exemplo da configuração OSGi pode ser encontrado no projeto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
-## Publicação no AEM
+## AEM Publish
 
 A ativação do CORS nos serviços de publicação (e pré-visualização) do AEM é diferente do serviço do AEM Author. O serviço de Publicação do AEM exige que uma configuração do AEM Dispatcher seja adicionada à configuração do Dispatcher do AEM Publish. A Publicação do AEM não usa uma [configuração OSGi](#osgi-configuration).
 
@@ -113,7 +113,7 @@ Ao configurar o CORS na publicação do AEM, verifique:
 
 O Dispatcher do serviço de Publicação (e Visualização) do AEM deve ser configurado para ser compatível com o CORS.
 
-| O cliente se conecta ao | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O cliente se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requer a configuração do Dispatcher CORS | ✘ | ✔ | ✔ |
 

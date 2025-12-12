@@ -4,14 +4,14 @@ description: Saiba como configurar e usar saída de porta flexível para suporta
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Um Programa Cloud Manager só pode ter um tipo de infraestrutura de rede __únic
 
 >[!MORELIKETHIS]
 >
-> Leia a [documentação avançada de configuração de rede](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) do AEM as a Cloud Service para obter mais detalhes sobre saída de porta flexível.
+> Leia a [documentação avançada de configuração de rede](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) do AEM as a Cloud Service para obter mais detalhes sobre saída de porta flexível.
 
 
 ## Pré-requisitos
@@ -45,7 +45,7 @@ Os itens a seguir são necessários ao definir ou configurar a saída de porta f
 + A ID do programa Cloud Manager
 + As IDs de ambiente do Cloud Manager
 
-Para obter mais detalhes [revise como instalar, configurar e obter credenciais da API do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), para usá-las para fazer uma chamada de API do Cloud Manager.
+Para obter mais detalhes [revise como instalar, configurar e obter credenciais da API do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), para usá-las para fazer uma chamada de API do Cloud Manager.
 
 Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. Os comandos `curl` fornecidos pressupõem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o caractere de quebra de linha `\` por `^`.
 
@@ -87,7 +87,7 @@ A saída flexível da porta pode ser ativada usando as APIs do Cloud Manager. As
 
 1. Primeiro, determine a região em que a Rede avançada está configurada usando a operação [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) da API do Cloud Manager. O `region name` é necessário para fazer chamadas de API do Cloud Manager subsequentes. Normalmente, a região em que o ambiente de Produção reside é usada.
 
-   Encontre a região do seu ambiente do AEM as a Cloud Service em [Cloud Manager](https://my.cloudmanager.adobe.com) nos [detalhes do ambiente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usado na API do Cloud Manager.
+   Encontre a região do seu ambiente do AEM as a Cloud Service em [Cloud Manager](https://my.cloudmanager.adobe.com) nos [detalhes do ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usado na API do Cloud Manager.
 
    __solicitação HTTP de listRegions__
 
@@ -221,7 +221,7 @@ Ao fazer chamadas HTTP/HTTPS para serviços externos em portas fora do padrão, 
 
 >[!TIP]
 >
-> Consulte a documentação de saída de porta flexível do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consulte a documentação de saída de porta flexível do AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Exemplos de código
 

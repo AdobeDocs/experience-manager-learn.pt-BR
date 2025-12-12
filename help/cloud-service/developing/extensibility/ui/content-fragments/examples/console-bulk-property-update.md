@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
 duration: 1362
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Extensão de exemplo de atualização de propriedade em massa
 
->[!VIDEO](https://video.tv.adobe.com/v/3454456?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
 Este exemplo de extensão do Console do Fragmento de Conteúdo do AEM é uma extensão de [barra de ação](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) que atualiza em massa uma propriedade de Fragmento de Conteúdo para um valor comum.
 
@@ -42,7 +42,7 @@ O fluxo funcional da extensão de exemplo é o seguinte:
 Este exemplo estende o ponto de extensão `actionBar` para adicionar um botão personalizado ao Console de fragmentos de conteúdo.
 
 | Interface do usuário estendida do AEM | Ponto de extensão |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de Ações](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 
@@ -171,7 +171,7 @@ Neste aplicativo de exemplo, há um componente modal do React (`BulkPropertyUpda
 É importante observar que qualquer interação com o AEM a partir da extensão deve ser delegada a uma [ação Adobe I/O Runtime do AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que é um processo separado sem servidor em execução no [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 O uso de ações do Adobe I/O Runtime para se comunicar com o AEM é para evitar problemas de conectividade com o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens).
 
-Quando o formulário Atualização de propriedade em massa é enviado, um `onSubmitHandler()` personalizado invoca a ação do Adobe I/O Runtime, transmitindo o host (domínio) atual do AEM e o token de acesso do usuário do AEM, que, por sua vez, chama a [API de Fragmento de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=pt-BR) para atualizar os fragmentos de conteúdo.
+Quando o formulário Atualização de propriedade em massa é enviado, um `onSubmitHandler()` personalizado invoca a ação do Adobe I/O Runtime, transmitindo o host (domínio) atual do AEM e o token de acesso do usuário do AEM, que, por sua vez, chama a [API de Fragmento de conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para atualizar os fragmentos de conteúdo.
 
 Quando a resposta da ação do Adobe I/O Runtime é recebida, o modal é atualizado para exibir os resultados da operação de atualização de propriedade em massa.
 

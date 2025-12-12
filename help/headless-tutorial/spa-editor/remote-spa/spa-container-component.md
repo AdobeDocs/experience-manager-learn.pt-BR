@@ -3,7 +3,7 @@ title: Adicionar componentes editáveis do contêiner React a um SPA remoto
 description: Saiba como adicionar componentes editáveis do contêiner a um SPA remoto que permite que os autores do AEM arrastem e soltem componentes neles.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 1%
@@ -266,7 +266,7 @@ A implementação do componente de Imagem editável deve ser semelhante a:
 Os componentes do React `EditableText` e `EditableImage` recém-criados são referenciados no SPA e são dinamicamente instanciados com base no JSON retornado pelo AEM. Para garantir que esses componentes estejam disponíveis para o SPA, crie instruções de importação para eles em `Home.js`
 
 1. Abra o projeto SPA no IDE
-1. Abrir o arquivo `src/Home.js`
+1. Abra o arquivo `src/Home.js`
 1. Adicionar instruções de importação para `AEMText` e `AEMImage`
 
    ```javascript

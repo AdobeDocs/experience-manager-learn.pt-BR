@@ -4,16 +4,16 @@ description: Saiba mais sobre as considerações de implantação para implanta�
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10797
 thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ As implantações do [Componente Web](https://developer.mozilla.org/en-US/docs/W
 
 A configuração de implantação a seguir deve estar em vigor para implantações de Componente web/JS.
 
-| O componente Web/aplicativo JS se conecta a → | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O componente Web/aplicativo JS se conecta a → | Autor do AEM | AEM Publish | Visualização do AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtros do Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Compartilhamento de recursos entre origens (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |

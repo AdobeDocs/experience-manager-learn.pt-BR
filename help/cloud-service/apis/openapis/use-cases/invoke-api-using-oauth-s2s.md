@@ -4,7 +4,7 @@ description: Saiba como chamar APIs do AEM baseadas em OpenAPI no AEM as a Cloud
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 jira: KT-16516
@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 1%
@@ -417,7 +417,7 @@ As principais chamadas do código do aplicativo NodeJS de amostra são:
    ...
    ```
 
-## Sob o capô
+## Nos bastidores
 
 Após a invocação bem-sucedida da API, um usuário que representa a credencial OAuth de servidor para servidor do projeto ADC é criado no serviço do autor do AEM, juntamente com os grupos de usuários que correspondem à configuração do Perfil do produto e dos Serviços. O _usuário da conta técnica_ está associado ao Perfil de Produto e ao grupo de usuários _Serviços_, que tem as permissões necessárias para _LER_ os metadados do ativo.
 

@@ -3,7 +3,7 @@ title: 'Bootstrap: o SPA remoto para o editor de SPA'
 description: Saiba como inicializar um SPA remoto para compatibilidade com o AEM SPA Editor.
 topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7633
 thumbnail: kt-7633.jpeg
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
 duration: 327
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ $ npm install @adobe/aem-react-editable-components
 Várias variáveis de ambiente devem ser expostas ao SPA remoto para que ele saiba como interagir com o AEM.
 
 * Abrir projeto SPA Remoto em `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` no IDE
-* Abrir o arquivo `.env.development`
+* Abra o arquivo `.env.development`
 * No arquivo, preste atenção específica às chaves e atualize conforme necessário:
 
   ```
@@ -70,7 +70,7 @@ Várias variáveis de ambiente devem ser expostas ao SPA remoto para que ele sai
       * Obrigatório para uso com o AEM Author
       * Possivelmente necessário para uso com o AEM Publish (se o conteúdo estiver protegido)
       * O desenvolvimento no AEM SDK é compatível com contas locais via Autenticação básica. Este é o método usado neste tutorial.
-      * Ao integrar com o AEM as a Cloud Service, use [tokens de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR)
+      * Ao integrar com o AEM as a Cloud Service, use [tokens de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
    * `REACT_APP_BASIC_AUTH_USER`: o __nome de usuário__ do AEM pelo SPA para autenticar ao recuperar o conteúdo do AEM.
    * `REACT_APP_BASIC_AUTH_PASS`: a __senha__ do AEM pelo SPA para autenticar ao recuperar o conteúdo do AEM.
 
@@ -81,7 +81,7 @@ Com as dependências npm de SPA do AEM disponíveis para o aplicativo, inicializ
 O [ModelManager](https://github.com/adobe/aem-spa-page-model-manager/blob/master/src/ModelManager.ts) é responsável pela conexão com o AEM para recuperar o conteúdo editável.
 
 1. Abra o projeto do SPA remoto no IDE
-1. Abrir o arquivo `src/index.js`
+1. Abra o arquivo `src/index.js`
 1. Adicionar importação `ModelManager` e inicializá-la antes da invocação `root.render(..)`,
 
    ```javascript
@@ -129,7 +129,7 @@ Ao criar um SPA editável, é melhor configurar um [proxy interno no SPA](https:
        * @returns true if the SPA request should be re-routed to AEM
        */
        const toAEM = function(path, req) {
-           return path.startsWith('/content') || 
+           return path.startsWith('/content') ||
                path.startsWith('/graphql') ||
                path.endsWith('.model.json')
        }
@@ -191,7 +191,7 @@ Ao criar um SPA editável, é melhor configurar um [proxy interno no SPA](https:
    1. Ele adiciona cabeçalhos CORS a todas as solicitações para permitir acesso ao conteúdo AEM, conforme definido por `res.header("Access-Control-Allow-Origin", REACT_APP_HOST_URI);`
       * Se isso não for adicionado, ocorrerão erros CORS ao carregar o conteúdo do AEM no SPA.
 
-1. Abrir o arquivo `src/setupProxy.js`
+1. Abra o arquivo `src/setupProxy.js`
 1. Revise a linha que aponta para o arquivo de configuração de proxy `setupProxy.spa-editor.auth.basic`:
 
    ```
@@ -223,7 +223,7 @@ Para resolver esse problema, faça com que um recurso estático hospedado pelo S
 
    _Ao implantar no AEM as a Cloud Service, você precisa fazer o mesmo para os `.env` arquivos correspondentes._
 
-1. Abrir o arquivo `src/App.js`
+1. Abra o arquivo `src/App.js`
 1. Importe o URI público de SPA das variáveis de ambiente de SPA
 
    ```javascript

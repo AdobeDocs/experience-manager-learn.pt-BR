@@ -4,7 +4,7 @@ description: Saiba como receber Eventos do AEM em um webhook e revisar os detalh
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 358
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 00301753eae983a17160b783a9b166537baf5ee0
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 Saiba como receber eventos do AEM em um webhook e revisar os detalhes do evento, como carga, cabeçalhos e metadados.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3449753?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
 
 >[!IMPORTANT]

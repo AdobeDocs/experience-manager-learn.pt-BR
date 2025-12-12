@@ -4,7 +4,7 @@ description: Saiba como direcionar o uso de tags do AEM em ativos por meio de da
 version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 jira: KT-9720
 thumbnail: 340333.jpeg
@@ -14,16 +14,16 @@ badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
 duration: 2633
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 0%
+source-wordcount: '122'
+ht-degree: 17%
 
 ---
 
-# Tags do AEM, pastas vinculadas ao projeto e metadados da pasta
+# Tags do AEM, pastas vinculadas ao projeto e metadados das pastas
 
-![Série para especialistas da AEM](./assets/banner.png)
+![Série com especialistas no AEM](./assets/banner.png)
 
 Saiba como direcionar o uso de tags do AEM em ativos por meio de dados do Workfront, configurar e usar pastas vinculadas a projetos e dados do Workfront para esquemas de metadados de pastas de ativos do AEM.
 
@@ -33,4 +33,4 @@ _Parte três de uma [série de especialistas em quatro partes do conector aprimo
 
 ## Correções
 
-+ __@ 4:34 e 6:20__ a sintaxe das marcas AEM está incorreta. O vídeo exibe `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` ou mais geralmente `["namespace:tag/childtag"]`.
++ A sintaxe das marcas AEM __@ 4:34 e 6 :20__está incorreta. O vídeo exibe `we-retail:apparel/footwear`. A sintaxe correta é `["we-retail:apparel/footwear"]` ou mais geralmente `["namespace:tag/childtag"]`.

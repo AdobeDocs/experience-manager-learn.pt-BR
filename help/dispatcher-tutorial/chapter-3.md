@@ -1,16 +1,16 @@
 ---
 title: Capítulo 3 - Tópicos avançados de armazenamento em cache do Dispatcher
-description: Esta é a Parte 3 de uma série de três partes do armazenamento em cache no AEM. Onde as duas primeiras partes se concentraram no armazenamento em cache http simples no Dispatcher e quais limitações existem. Esta parte discute algumas ideias sobre como superar essas limitações.
+description: Esta é a Parte 3 de uma série de três partes para armazenamento em cache no AEM. Onde as duas primeiras partes se concentraram no armazenamento em cache http simples no Dispatcher e quais limitações existem. Já esta parte aborda algumas ideias de como superar essas limitações.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
 duration: 1353
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '6172'
+source-wordcount: '6173'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Visão geral
 
-Esta é a Parte 3 de uma série de três partes para armazenamento em cache no AEM. Onde as duas primeiras partes se concentraram no armazenamento em cache http simples no Dispatcher e quais limitações existem. Esta parte discute algumas ideias sobre como superar essas limitações.
+Esta é a Parte 3 de uma série de três partes para armazenamento em cache no AEM. Onde as duas primeiras partes se concentraram no armazenamento em cache http simples no Dispatcher e quais limitações existem. Já esta parte aborda algumas ideias de como superar essas limitações.
 
 ## Armazenamento em cache em geral
 
@@ -38,7 +38,7 @@ Neste capítulo, queremos ampliar ainda mais nossa visão do armazenamento em ca
 Você precisará fazer compensações nessas áreas,
 
 * Desempenho e latência
-* Consumo de recursos / Carga de CPU / Uso de disco
+* Consumo de recursos / Carga CPU / Uso de disco
 * Precisão / Moeda / Persistência / Segurança
 * Simplicidade/complexidade/custo/capacidade de manutenção/prontidão para erros
 
@@ -52,9 +52,9 @@ Estas dimensões estão interligadas num sistema bastante complexo. Não há um 
 
 A entrega de uma página de um servidor para o navegador de um cliente passa por uma variedade de sistemas e subsistemas. Se você observar com cuidado, há vários dados de hops que precisam ser levados da origem para o escoamento, sendo que cada um deles é um possível candidato ao armazenamento em cache.
 
-![Fluxo de dados de um aplicativo CMS típico](assets/chapter-3/data-flow-typical-cms-app.png)
+![Fluxo de dados de um aplicativo típico do CMS](assets/chapter-3/data-flow-typical-cms-app.png)
 
-*Fluxo de dados de um aplicativo CMS típico*
+*Fluxo de dados de um aplicativo típico do CMS*
 
 <br> 
 
@@ -82,7 +82,7 @@ O modelo agora é a base para a renderização da marcação de um componente. P
 
 #### Dispatcher, CDN e outros proxies
 
-Off (Desativado) vai a HTML-Page renderizada para o Dispatcher. Já discutimos, que o principal objetivo do Dispatcher é armazenar em cache páginas HTML e outros recursos da Web (apesar do nome). Antes que os recursos cheguem ao navegador, ele pode passar um proxy reverso, que pode armazenar em cache e um CDN, que também é usado para armazenamento em cache. O cliente pode ficar em um escritório, o que concede acesso à Web somente por meio de um proxy - e esse proxy pode decidir armazenar em cache também para salvar o tráfego.
+Desativado, vai a página de HTML renderizada para a Dispatcher. Já discutimos, que o principal objetivo do Dispatcher é armazenar em cache páginas do HTML e outros recursos da Web (apesar do nome). Antes que os recursos cheguem ao navegador, ele pode passar um proxy reverso, que pode armazenar em cache e um CDN, que também é usado para armazenamento em cache. O cliente pode ficar em um escritório, o que concede acesso à Web somente por meio de um proxy - e esse proxy pode decidir armazenar em cache também para salvar o tráfego.
 
 #### Cache do navegador
 
@@ -98,13 +98,13 @@ Para dar uma ideia aproximada de quais fatores você pode considerar,
 
 **Tempo de vida** - Se os objetos tiverem um tempo de vida inerente curto (os dados de tráfego podem ter um tempo de vida menor do que os dados meteorológicos), talvez não valha a pena armazenar em cache.
 
-**Custo de Produção -** Quão caro (em termos de ciclos de CPU e E/S) é a reprodução e a entrega de um objeto. Se for barato, o armazenamento em cache pode não ser necessário.
+**Custo de Produção -** Quão caro (em termos de ciclos do CPU e E/S) é a reprodução e a entrega de um objeto. Se for barato, o armazenamento em cache pode não ser necessário.
 
 **Tamanho** - Objetos grandes exigem mais recursos para serem armazenados em cache. Isso poderia ser um fator limitante e deve ser ponderado em relação aos benefícios.
 
 **Frequência de acesso** - Se os objetos forem acessados raramente, o armazenamento em cache poderá não ser efetivo. Eles simplesmente ficariam obsoletos ou seriam invalidados antes de serem acessados pela segunda vez do cache. Esses itens apenas bloqueariam os recursos de memória.
 
-**Acesso compartilhado** - Os dados usados por mais de uma entidade devem ser armazenados em cache mais acima da cadeia. Na verdade, a cadeia de armazenamento em cache não é uma cadeia, mas uma árvore. Um pedaço de dados no repositório pode ser usado por mais de um modelo. Esses modelos, por sua vez, podem ser usados por mais de um script de renderização para gerar fragmentos de HTML. Esses fragmentos são incluídos em várias páginas que são distribuídas a vários usuários com seus caches privados no navegador. Então &quot;compartilhar&quot; não significa compartilhar apenas entre pessoas, mas entre softwares. Se você quiser encontrar um cache potencial &quot;compartilhado&quot;, basta rastrear a árvore até a raiz e encontrar um ancestral comum; é aqui que você deve armazenar em cache.
+**Acesso compartilhado** - Os dados usados por mais de uma entidade devem ser armazenados em cache mais acima da cadeia. Na verdade, a cadeia de armazenamento em cache não é uma cadeia, mas uma árvore. Um pedaço de dados no repositório pode ser usado por mais de um modelo. Esses modelos, por sua vez, podem ser usados por mais de um script de renderização para gerar fragmentos do HTML. Esses fragmentos são incluídos em várias páginas que são distribuídas a vários usuários com seus caches privados no navegador. Então &quot;compartilhar&quot; não significa compartilhar apenas entre pessoas, mas entre softwares. Se você quiser encontrar um cache potencial &quot;compartilhado&quot;, basta rastrear a árvore até a raiz e encontrar um ancestral comum; é aqui que você deve armazenar em cache.
 
 **Distribuição geoespacial** - Se seus usuários estiverem distribuídos pelo mundo, usar uma rede distribuída de caches pode ajudar a reduzir a latência.
 
@@ -118,14 +118,14 @@ Novamente - o armazenamento em cache é difícil. Vamos compartilhar algumas reg
 
 #### Evite o armazenamento em cache duplo
 
-Cada uma das camadas introduzidas no último capítulo fornece algum valor na cadeia de armazenamento em cache. Economizando ciclos de computação ou aproximando os dados do consumidor. Não é errado armazenar em cache dados em vários estágios da cadeia, mas você deve sempre considerar quais são os benefícios e os custos do próximo estágio. O armazenamento em cache de uma página inteira no sistema Publish geralmente não fornece nenhum benefício, pois isso já é feito no Dispatcher.
+Cada uma das camadas introduzidas no último capítulo fornece algum valor na cadeia de armazenamento em cache. Economizando ciclos de computação ou aproximando os dados do consumidor. Não é errado armazenar em cache dados em vários estágios da cadeia, mas você deve sempre considerar quais são os benefícios e os custos do próximo estágio. O armazenamento em cache de uma página inteira no sistema de publicação geralmente não fornece nenhum benefício, pois isso já é feito no Dispatcher.
 
 #### Misturar estratégias de invalidação
 
 Existem três estratégias básicas de invalidação:
 
 * **TTL, Time to Live:** Um objeto expira após um período fixo (por exemplo, &quot;daqui a 2 horas&quot;)
-* **Data de Expiração:** O objeto expira em uma hora definida no futuro (por exemplo, &quot;17h de 10 de junho de 2019&quot;)
+* **Data de Expiração:** O objeto expira em uma hora definida no futuro (por exemplo, &quot;17:00 PM de 17 de junho de 2019&quot;):00
 * **Baseado em evento:** o objeto é invalidado explicitamente por um evento que ocorreu na plataforma (por exemplo, quando uma página é alterada e ativada)
 
 Agora, você pode usar diferentes estratégias em diferentes camadas de cache, mas há algumas &quot;tóxicas&quot;.
@@ -196,9 +196,9 @@ No entanto, nem todos os caches podem propagar as datas. E pode se tornar desagr
 
 <br> 
 
-Um esquema comum no mundo do AEM também é usar a invalidação baseada em eventos nos caches internos (por exemplo, caches na memória em que os eventos podem ser processados em tempo quase real) e caches baseados em TTL na parte externa - onde talvez você não tenha acesso à invalidação explícita.
+Além disso, um esquema comum no mundo do AEM é usar a invalidação baseada em eventos nos caches internos (por exemplo, caches na memória em que os eventos podem ser processados em tempo quase real) e caches baseados em TTL na parte externa - em que talvez você não tenha acesso a invalidação explícita.
 
-No mundo do AEM, você teria um cache na memória para objetos comerciais e fragmentos de HTML nos sistemas Publish, ou seja, invalidado, quando os recursos subjacentes mudam e você propaga esse evento de alteração para o dispatcher, que também funciona com base em eventos. À frente disso, você teria, por exemplo, um CDN com base em TTL.
+No mundo do AEM, você teria um cache na memória para objetos de negócios e fragmentos do HTML nos sistemas de publicação, ou seja, invalidado, quando os recursos subjacentes mudam e você propaga esse evento de alteração para o dispatcher, que também funciona com base em eventos. À frente disso, você teria, por exemplo, um CDN com base em TTL.
 
 Ter uma camada de cache (curto) baseado em TTL na frente de um Dispatcher poderia suavizar efetivamente um pico que normalmente ocorreria após uma invalidação automática.
 
@@ -226,7 +226,7 @@ Você pode conectar-se ao estágio do processo de renderização para adicionar 
 
 #### Respeitar o controle de acesso
 
-As técnicas descritas aqui são bastante poderosas e um _must-have_ na caixa de ferramentas de cada desenvolvedor de AEM. Mas não se empolgue muito, use-os sabiamente. Armazenar um objeto em um cache e compartilhá-lo com outros usuários em solicitações de acompanhamento realmente significa contornar o controle de acesso. Isso geralmente não é um problema em sites voltados ao público, mas pode ser, quando um usuário precisa fazer logon antes de obter acesso.
+As técnicas descritas aqui são bastante poderosas e um _must-have_ na caixa de ferramentas de cada desenvolvedor do AEM. Mas não se empolgue muito, use-os sabiamente. Armazenar um objeto em um cache e compartilhá-lo com outros usuários em solicitações de acompanhamento realmente significa contornar o controle de acesso. Isso geralmente não é um problema em sites voltados ao público, mas pode ser, quando um usuário precisa fazer logon antes de obter acesso.
 
 Considere armazenar uma marcação HTML do menu principal de sites em um cache de memória para compartilhá-la entre várias páginas. Na verdade, esse é um exemplo perfeito para armazenar HTML parcialmente renderizado, pois criar uma navegação geralmente é caro, pois requer percorrer muitas páginas.
 
@@ -260,7 +260,7 @@ São muitas regras, mas vale a pena segui-las. Mesmo que você seja experiente e
 
 Esta série trata da compreensão de conceitos e do poder para criar uma arquitetura que melhor se adapta ao seu caso de uso.
 
-Não estamos a promover qualquer instrumento em particular. Mas dê dicas de como avaliá-los. Por exemplo, o AEM tem um cache interno simples com um TTL fixo desde a versão 6.0. Você deve usá-lo? Provavelmente não na publicação em que um cache baseado em eventos se segue na cadeia (dica: O Dispatcher). Mas pode ser por uma escolha decente para um Autor. Há também um cache HTTP pelo Adobe ACS commons que pode ser útil considerar.
+Não estamos a promover qualquer instrumento em particular. Mas dê dicas de como avaliá-los. Por exemplo, o AEM tem um cache interno simples com um TTL fixo desde a versão 6.0. Você deve usá-lo? Provavelmente não na publicação em que um cache baseado em eventos se segue na cadeia (dica: O Dispatcher). Mas pode ser por uma escolha decente para um Autor. Também há um cache HTTP do Adobe ACS commons que pode ser importante considerar.
 
 Ou você cria o seu próprio, com base em uma estrutura de cache madura como o [Ehcache](https://www.ehcache.org). Isso pode ser usado para armazenar em cache objetos Java e marcação renderizada (`String` objetos).
 
@@ -287,7 +287,7 @@ O armazenamento em cache preventivo significa recriar a entrada com conteúdo no
 
 O aquecimento do cache está intimamente relacionado ao armazenamento preemptivo em cache. Embora você não usaria esse termo para um sistema ativo. E tem menos restrições de tempo do que a primeira. Você não faz o rearmazenamento em cache imediatamente após a invalidação, mas preenche o cache gradualmente quando o tempo permitir.
 
-Por exemplo, você retira um trecho Publish/Dispatcher do balanceador de carga para atualizá-lo. Antes de reintegrá-la, você rastreia automaticamente as páginas acessadas com mais frequência para colocá-las no cache novamente. Quando o cache estiver &quot;quente&quot;, preenchido adequadamente, você reintegra o trecho no balanceador de carga.
+Por exemplo, você remove um trecho Publicar/Dispatcher do balanceador de carga para atualizá-lo. Antes de reintegrá-la, você rastreia automaticamente as páginas acessadas com mais frequência para colocá-las no cache novamente. Quando o cache estiver &quot;quente&quot;, preenchido adequadamente, você reintegra o trecho no balanceador de carga.
 
 Ou talvez você reintegre o trecho de uma só vez, mas controle o tráfego para esse trecho para que ele tenha a chance de aquecer seus caches pelo uso regular.
 
@@ -315,7 +315,7 @@ Isso está relacionado à invalidação baseada em eventos. De quais dados origi
 
 Quais objetos dependem do que os outros são originais em cada aplicativo. Forneceremos alguns exemplos sobre como implementar uma estratégia de dependência posteriormente.
 
-### Armazenamento em cache de fragmento de HTML
+### Armazenamento em cache de fragmentos do HTML
 
 ![Reutilizando um fragmento renderizado em páginas diferentes](assets/chapter-3/re-using-rendered-fragment.png)
 
@@ -323,7 +323,7 @@ Quais objetos dependem do que os outros são originais em cada aplicativo. Forne
 
 <br> 
 
-O armazenamento em cache de fragmentos de HTML é uma ferramenta poderosa. A ideia é armazenar em cache a marcação HTML que foi gerada por um componente em um cache de memória. Vocês podem perguntar, por que eu deveria fazer isso? Estou armazenando a marcação da página inteira em cache no dispatcher de qualquer maneira, incluindo a marcação desse componente. Nós concordamos. Você faz isso, mas uma vez por página. Você não está compartilhando essa marcação entre as páginas.
+O armazenamento em cache de fragmentos do HTML é uma ferramenta poderosa. A ideia é armazenar em cache a marcação do HTML gerada por um componente em um cache de memória. Vocês podem perguntar, por que eu deveria fazer isso? Estou armazenando a marcação da página inteira em cache no dispatcher de qualquer maneira, incluindo a marcação desse componente. Nós concordamos. Você faz isso, mas uma vez por página. Você não está compartilhando essa marcação entre as páginas.
 
 Imagine que você esteja renderizando uma navegação na parte superior de cada página. A marcação tem a mesma aparência em cada página. Mas você a está renderizando várias vezes para cada página, que não está na Dispatcher. E lembre-se: após a invalidação automática, todas as páginas precisam ser renderizadas. Então, basicamente, você está executando o mesmo código com os mesmos resultados centenas de vezes.
 
@@ -337,7 +337,7 @@ Há duas gentilezas maravilhosas desse esquema que facilmente se perdem:
 
 2. A invalidação também é muito fácil. Sempre que algo mudar em seu site, você deseja invalidar essa entrada de cache. A reconstrução é relativamente barata, pois precisa ser executada apenas uma vez e depois é reutilizada por todas as centenas de páginas.
 
-Isso é um grande alívio para os servidores da Publish.
+Isso é um grande alívio para seus servidores de publicação.
 
 ### Implementação de caches de fragmentos
 
@@ -403,7 +403,7 @@ Recomendamos que você analise cuidadosamente a documentação da SDI. Há algum
 * [docs.oracle.com - Como gravar marcas JSP personalizadas](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
 * [Dominik Süß - Criando e usando filtros de componente](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
 * [sling.apache.org - Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* [helpx.adobe.com - Configurando Inclusões Dinâmicas de Sling no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
+* [helpx.adobe.com - Configurando Inclusões Dinâmicas do Sling no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Armazenamento em cache do modelo
@@ -503,9 +503,9 @@ Um erro comum, visto com muita frequência, é que o teste de desempenho inclui 
 
 Se você estiver promovendo seu aplicativo para o sistema ativo, a carga será completamente diferente do que você testou.
 
-No sistema em tempo real, o padrão de acesso não é um número tão pequeno de páginas igualmente distribuídas que você tem nos testes (página inicial e poucas páginas de conteúdo). O número de páginas é muito maior e as solicitações são distribuídas de forma muito desigual. E, é claro, as páginas ativas não podem ser 100% atendidas pelo cache: há solicitações de invalidação provenientes do sistema Publish que invalidam automaticamente uma grande parte de seus preciosos recursos.
+No sistema em tempo real, o padrão de acesso não é um número tão pequeno de páginas igualmente distribuídas que você tem nos testes (página inicial e poucas páginas de conteúdo). O número de páginas é muito maior e as solicitações são distribuídas de forma muito desigual. E, é claro, as páginas ativas não podem ser atendidas 100% do cache: há solicitações de invalidação provenientes do sistema de publicação que invalidam automaticamente uma grande parte de seus preciosos recursos.
 
-Ah, sim - e quando você estiver reconstruindo seu cache do Dispatcher, você descobrirá que o sistema do Publish também se comporta de forma bem diferente, dependendo se você solicita apenas algumas páginas - ou um número maior. Mesmo que todas as páginas sejam similarmente complexas, seu número desempenha um papel. Lembra o que dissemos sobre o armazenamento em cache encadeado? Se você sempre solicitar o mesmo pequeno número de páginas, as chances são boas de que os blocos correspondentes com os dados brutos estejam no cache dos discos rígidos ou que os blocos sejam armazenados em cache pelo sistema operacional. Além disso, há uma boa chance de o Repositório ter armazenado em cache o segmento correspondente em sua memória principal. Portanto, a nova renderização é significativamente mais rápida do que quando você tinha outras páginas se removendo agora e depois de vários caches.
+Ah, sim - e quando você estiver reconstruindo o cache do Dispatcher, descobrirá que o sistema de publicação também se comporta de forma bem diferente, dependendo se você solicita apenas algumas páginas - ou um número maior. Mesmo que todas as páginas sejam similarmente complexas, seu número desempenha um papel. Lembra o que dissemos sobre o armazenamento em cache encadeado? Se você sempre solicitar o mesmo pequeno número de páginas, as chances são boas de que os blocos correspondentes com os dados brutos estejam no cache dos discos rígidos ou que os blocos sejam armazenados em cache pelo sistema operacional. Além disso, há uma boa chance de o Repositório ter armazenado em cache o segmento correspondente em sua memória principal. Portanto, a nova renderização é significativamente mais rápida do que quando você tinha outras páginas se removendo agora e depois de vários caches.
 
 O armazenamento em cache é difícil, assim como o teste de um sistema que depende do armazenamento em cache. Então, o que você pode fazer para ter um cenário real mais preciso?
 
@@ -513,7 +513,7 @@ Acreditamos que seria necessário realizar mais de um teste e fornecer mais de u
 
 Se você já tiver um site existente, meça o número de solicitações e como elas são distribuídas. Tente modelar um teste que use uma distribuição semelhante de solicitações. Adicionar alguma aleatoriedade não poderia doer. Não é necessário simular um navegador que carregaria recursos estáticos, como JS e CSS. Esses recursos não são realmente importantes. Eventualmente, eles são armazenados em cache no navegador ou no Dispatcher e não somam a carga significativamente. Mas as imagens referenciadas são importantes. Encontre também a distribuição nos arquivos de log antigos e modele um padrão de solicitação semelhante.
 
-Agora, faça um teste com o Dispatcher sem armazenar em cache. Esse é o seu pior cenário. Descubra em que pico de carga seu sistema está ficando instável sob estas piores condições. Você também pode piorar, tirando alguns Dispatcher / Publish pernas, se você quiser.
+Agora, faça um teste com o Dispatcher sem armazenar em cache. Esse é o seu pior cenário. Descubra em que pico de carga seu sistema está ficando instável sob estas piores condições. Você também pode piorar, tirando alguns trechos do Dispatcher/Publish, se desejar.
 
 Em seguida, faça o mesmo teste com todas as configurações de cache necessárias para &quot;ativado&quot;. Aumente lentamente suas solicitações paralelas para aquecer o cache e ver quanto seu sistema pode suportar sob essas condições de melhor caso.
 
@@ -523,4 +523,4 @@ Você pode variar o último cenário aumentando as solicitações de invalidaç�
 
 Isso é um pouco mais complexo do que apenas um teste de carga linear, mas oferece muito mais confiança em sua solução.
 
-Você pode se esquivar do esforço. Mas pelo menos faça um teste do pior caso no sistema Publish com um número maior de páginas (igualmente distribuídas) para ver os limites do sistema. Certifique-se de interpretar o número do melhor cenário e provisionar seus sistemas com espaço suficiente.
+Você pode se esquivar do esforço. Mas pelo menos faça um teste do pior caso no sistema de publicação com um número maior de páginas (igualmente distribuídas) para ver os limites do sistema. Certifique-se de interpretar o número do melhor cenário e provisionar seus sistemas com espaço suficiente.

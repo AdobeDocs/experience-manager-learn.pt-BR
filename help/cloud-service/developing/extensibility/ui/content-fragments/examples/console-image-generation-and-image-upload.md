@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
 duration: 1438
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -53,7 +53,7 @@ O fluxo funcional da extensão de exemplo é o seguinte:
 Este exemplo estende o ponto de extensão `actionBar` para adicionar um botão personalizado ao Console de fragmentos de conteúdo.
 
 | Interface do usuário estendida do AEM | Ponto de extensão |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console de fragmentos de conteúdo](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barra de Ações](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 ## Exemplo de extensão
@@ -223,7 +223,7 @@ Neste aplicativo de exemplo, há um componente modal do React (`GenerateImageMod
 É importante observar que qualquer interação com o AEM a partir da extensão deve ser delegada a uma [ação Adobe I/O Runtime do AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), que é um processo separado sem servidor em execução no [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 O uso de ações do Adobe I/O Runtime para se comunicar com o AEM é para evitar problemas de conectividade com o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens).
 
-Quando o formulário _Gerar Imagem_ é enviado, um `onSubmitHandler()` personalizado invoca a ação do Adobe I/O Runtime, transmitindo a descrição da imagem, o host (domínio) do AEM atual e o token de acesso do AEM do usuário. A ação chama a API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) do OpenAI para gerar uma imagem usando a descrição da imagem enviada. Em seguida, usando a classe `DirectBinaryUpload` do módulo de nó [Upload do AEM](https://github.com/adobe/aem-upload), ele carrega a imagem gerada para o AEM e, por fim, usa a [API de Fragmento de Conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=pt-BR) para atualizar os fragmentos de conteúdo.
+Quando o formulário _Gerar Imagem_ é enviado, um `onSubmitHandler()` personalizado invoca a ação do Adobe I/O Runtime, transmitindo a descrição da imagem, o host (domínio) do AEM atual e o token de acesso do AEM do usuário. A ação chama a API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) do OpenAI para gerar uma imagem usando a descrição da imagem enviada. Em seguida, usando a classe [ do módulo de nó ](https://github.com/adobe/aem-upload)Upload do AEM`DirectBinaryUpload`, ele carrega a imagem gerada para o AEM e, por fim, usa a [API de Fragmento de Conteúdo do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) para atualizar os fragmentos de conteúdo.
 
 Quando a resposta da ação Adobe I/O Runtime é recebida, o modal é atualizado para exibir os resultados da operação de geração de imagem.
 
@@ -482,7 +482,7 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->Na função `buildAssetDetailsURL()`, o valor da variável `aemAssetdetailsURL` presume que o [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=pt-BR#overview) está habilitado. Se você desabilitou o Unified Shell, deve remover o `/ui#/aem` do valor da variável.
+>Na função `buildAssetDetailsURL()`, o valor da variável `aemAssetdetailsURL` presume que o [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) está habilitado. Se você desabilitou o Unified Shell, deve remover o `/ui#/aem` do valor da variável.
 
 
 ### Ação do Adobe I/O Runtime

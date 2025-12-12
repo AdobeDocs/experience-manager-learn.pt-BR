@@ -4,7 +4,7 @@ description: Saiba como limpar ou remover a resposta HTTP em cache do CDN da AEM
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Saiba como limpar ou remover a resposta HTTP em cache do CDN da AEM as a Cloud S
 
 Neste tutorial, você aprenderá a configurar e usar o Token da API de Limpeza para limpar o cache CDN do site de exemplo [WKND](https://github.com/adobe/aem-guides-wknd) do AEM usando o recurso de autoatendimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436933?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
 ## Invalidação de cache versus limpeza explícita
 
@@ -45,7 +45,7 @@ Vamos saber como configurar o token da API de limpeza para limpar o cache do CDN
 
 O token da API de limpeza é criado ao configurar a regra CDN no código do projeto do AEM.
 
-1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml[&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) do projeto WKND.
+1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml[ do projeto ](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
 
 1. Adicionar a seguinte regra CDN ao arquivo `cdn.yaml`:
 

@@ -4,7 +4,7 @@ description: Saiba como gerenciar permissões para o Perfil de produto e grupos 
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Article
 jira: KT-17429
@@ -12,7 +12,7 @@ thumbnail: KT-17429.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 3230a8e7-6342-4497-9163-1898700f29a4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Para atualizar as permissões do grupo de usuários de serviços (por exemplo, `
 
 - Confirme e envie as alterações para o repositório.
 
-- Implante as alterações na instância do AEM usando o [pipeline de pilha completa do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Implante as alterações na instância do AEM usando o [pipeline de pilha completa do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - Você também pode verificar as permissões do grupo de usuários usando a exibição **Permissões**. Navegue até **Ferramentas** > **Segurança** > **Permissões** na instância do AEM.
 

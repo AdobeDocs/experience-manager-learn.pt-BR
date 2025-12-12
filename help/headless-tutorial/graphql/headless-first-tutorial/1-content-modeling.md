@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -33,7 +33,7 @@ Em seguida, demonstraremos a criação de fragmentos de conteúdo dos modelos, f
 
 Além disso, exploraremos a definição de endpoints do AEM GraphQL. O GraphQL recupera dados do AEM com eficiência, e definiremos e configuraremos endpoints para expor os dados desejados. As consultas persistentes otimizarão o desempenho e o armazenamento em cache.
 
-Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades para ativar Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir endpoints e consultas persistentes do AEM GraphQL. Vamos começar!
+Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas práticas. No final, você terá as habilidades para ativar Fragmentos de conteúdo, criar Modelos de fragmento, gerar Fragmentos e definir endpoints e consultas persistentes do AEM GraphQL. Vamos começar.
 
 ## Configuração sensível ao contexto
 
@@ -44,7 +44,7 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
    Forneça um __título__ e __nome__ e verifique as __Consultas GraphQL persistidas__ e os __Modelos de fragmentos de conteúdo__.
 
 
-## Modelos de fragmentos do conteúdo
+## Modelos de fragmentos de conteúdo
 
 1. Navegue até __Ferramentas > Modelos de fragmento de conteúdo__ e selecione a pasta com o nome da configuração criada na etapa 1.
 
@@ -55,10 +55,10 @@ Ao longo do tutorial, forneceremos explicações, exemplos de código e dicas pr
    | Tipo de dados | Nome | Obrigatório | Opções |
    |----------|------|----------|---------|
    | Referência de conteúdo | Ativo | sim | Adicione uma imagem padrão se desejar. Exemplo: /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
-   | Texto em linha única | Título | sim |
-   | Texto em linha única | Pré-título | não |
+   | Texto em linha única | Título | sim | |
+   | Texto em linha única | Pré-título | não | |
    | Texto multilinha | Descrição | não | Verificar se o tipo padrão é rich text |
-   | Lista discriminada | Estilo | sim | Renderizar como lista suspensa. As opções são Herói -> Herói e Destaque -> Destaque |
+   | Enumeração | Estilo | sim | Renderizar como lista suspensa. As opções são Herói -> Herói e Destaque -> Destaque |
 
    ![Modelo de teaser](./assets/1/teaser-model.png)
 

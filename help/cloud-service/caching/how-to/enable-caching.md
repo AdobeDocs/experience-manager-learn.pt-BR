@@ -4,7 +4,7 @@ description: Saiba como habilitar o armazenamento em cache de respostas HTTP no 
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-17T00:00:00Z
@@ -12,10 +12,10 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
 duration: 174
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
+source-wordcount: '631'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,11 @@ Quando as configurações personalizadas NÃO estiverem presentes, os valores pa
 
 ![Comportamento de cache padrão](../assets/how-to/aem-publish-default-cache-headers.png){width="800" zoomable="yes"}
 
-Revise a [Publicação do AEM - Vida padrão do cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html?lang=pt-BR#cdn-cache-life) e [Autor do AEM - Vida padrão do cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?lang=pt-BR&#default-cache-life) para obter mais informações.
+Revise a [Publicação do AEM - Vida padrão do cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/publish.html#cdn-cache-life) e [Autor do AEM - Vida padrão do cache](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/author.html?#default-cache-life) para obter mais informações.
 
 Em resumo, o AEM as a Cloud Service armazena em cache a maioria dos tipos de conteúdo (HTML, JSON, JS, CSS e Assets) no AEM Publish e alguns tipos de conteúdo (JS, CSS) no AEM Author.
 
-## Ativar armazenamento em cache
+## Habilitar armazenamento em cache
 
 Para alterar o comportamento padrão de armazenamento em cache, você pode atualizar os cabeçalhos de cache de duas maneiras.
 
@@ -99,7 +99,7 @@ Para aumentar a vida do navegador da Web e do cache da CDN do **tipo de conteúd
    ```
 
    Os arquivos vhost no diretório `dispatcher/src/conf.d/enabled_vhosts` são **symlinks** para os arquivos no diretório `dispatcher/src/conf.d/available_vhosts`. Portanto, se não houver, crie symlinks.
-1. Implante as alterações do vhost no ambiente do AEM as a Cloud Service desejado usando o [Pipeline de Configuração da Camada da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=pt-BR&#web-tier-config-pipelines) ou os [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=pt-BR#deploy-apache-or-dispatcher-configuration) do Cloud Manager.
+1. Implante as alterações do vhost no ambiente do AEM as a Cloud Service desejado usando o [Pipeline de Configuração da Camada da Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou os [Comandos RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration) do Cloud Manager.
 
 No entanto, para ter valores diferentes para a vida útil do navegador da Web e do cache CDN, você pode usar o cabeçalho `Surrogate-Control` no exemplo acima. Da mesma forma que para expirar o cache em uma data e hora específicas, você pode usar o cabeçalho `Expires`. Além disso, usando os atributos `stale-while-revalidate` e `stale-if-error`, você pode controlar o tratamento de estado obsoleto do conteúdo da resposta. O projeto WKND do AEM tem uma [configuração de cache de CDN de tratamento de estado obsoleto de referência](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 

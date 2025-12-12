@@ -4,7 +4,7 @@ description: Saiba como chamar APIs do AEM baseadas em OpenAPI no AEM as a Cloud
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 0%
@@ -49,7 +49,7 @@ O aplicativo WKND PIM é um aplicativo da Web de amostra projetado para gerencia
 
 O projeto Adobe Developer Console (ADC) é configurado para acessar a API do autor do Assets usando a autenticação do aplicativo web OAuth. Ele fornece o _client_id_ e o _client_secret_ necessários ao aplicativo Web WKND-PIM para iniciar o fluxo de concessão do _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442762?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 O diagrama a seguir ilustra o fluxo funcional do aplicativo Web WKND-PIM _obtendo tokens de acesso específicos do usuário para interagir com a API do Assets Author_.
@@ -497,7 +497,7 @@ Siga as instruções do artigo [Configurar APIs do AEM baseadas em OpenAPI](../s
 
 Por padrão, o projeto WKND Sites não tem o esquema de metadados de ativos necessário para exibir os atributos do produto. Vamos criar e aplicar o esquema de metadados de ativos a uma pasta de ativos na instância do AEM.
 
-1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
+1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
 
    ![Navegar até a pasta](../assets/web-app/navigate-to-folder.png)
 

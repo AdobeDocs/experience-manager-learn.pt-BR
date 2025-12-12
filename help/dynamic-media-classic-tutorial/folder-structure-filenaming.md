@@ -1,5 +1,5 @@
 ---
-title: Determine a estrutura de pastas e a convenção de nomenclatura de arquivos
+title: Determinar a estrutura de pastas e a convenção de nomenclatura de arquivos
 description: A nomeação de arquivos talvez seja a decisão mais importante que você tomará ao implementar o Dynamic Media Classic. A estrutura de pastas também é importante. Saiba por que é tão importante e as possíveis abordagens a serem seguidas para a estrutura de pastas e os nomes de arquivos.
 feature: Dynamic Media Classic
 topic: Content Management
@@ -8,14 +8,14 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Determine a estrutura de pastas e a convenção de nomenclatura de arquivos {#folder-structure-filenaming}
+# Determinar a estrutura de pastas e a convenção de nomenclatura de arquivos {#folder-structure-filenaming}
 
 Antes de começar a carregar todo o seu conteúdo, é recomendável considerar a estrutura de pastas que você usará e, em particular, a convenção de nomenclatura de arquivos. Isso provavelmente economizará tempo e terá que refazer as tarefas mais tarde. É melhor coordenar essas decisões em todos os grupos.
 
@@ -77,7 +77,7 @@ Este é um sistema muito simples, e bom se você tem necessidades modestas. No e
 | AA123 | Alternar visualizações | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | Exibições coloridas | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |         | Amostras | AA123_BLU_SW.tif | AA123_BLU_SW |
-|         | Conjunto de imagens ou Conjunto de amostras |                                             | AA123 ou AA123_SET | — |
+|         | Conjunto de imagens ou Conjunto de amostras |                                             | AA123 ou AA123_SET |
 
 Ao lidar com coleções definidas, como Conjuntos de imagens e Conjuntos de amostras, o próprio conjunto também deve ter um nome exclusivo. Nesse caso, o conjunto pode receber o SKU base como seu nome ou o SKU com uma extensão &quot;_SET&quot;.
 

@@ -4,7 +4,7 @@ description: Saiba como recuperar o conjunto inicial de eventos do AEM do journa
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 280
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 1%
@@ -32,8 +32,8 @@ No projeto do Adobe Developer Console, cada registro de evento é ativado automa
 >[!IMPORTANT]
 >
 >Os pontos de extremidade de demonstração ao vivo deste tutorial foram hospedados anteriormente em [Falha](https://glitch.com/). A partir de julho de 2025, o Glitch descontinuou seu serviço de hospedagem e os endpoints não estão mais acessíveis.
->&#x200B;>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
->&#x200B;>Obrigado por sua compreensão e paciência.
+>Estamos trabalhando ativamente na migração das demonstrações para uma plataforma alternativa. O conteúdo do tutorial permanece preciso e os links atualizados serão fornecidos em breve.
+>Obrigado por sua compreensão e paciência.
 
 Use seu próprio aplicativo até que os endpoints de demonstração ao vivo estejam disponíveis novamente.
 

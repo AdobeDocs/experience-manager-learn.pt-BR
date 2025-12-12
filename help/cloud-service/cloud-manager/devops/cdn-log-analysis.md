@@ -4,7 +4,7 @@ description: Saiba mais sobre a ferramenta de análise de logs de CDN do AEM Clo
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
-role: Developer, Architect, Admin
+role: Developer, Admin
 level: Beginner
 doc-type: Tutorial
 duration: 219
@@ -12,10 +12,10 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Saiba mais sobre a _Ferramenta de Análise de Log da CDN do AEM Cloud Service_ fornecida pela Adobe e como ela ajuda a obter insights sobre o desempenho da CDN e a implementação do AEM.
  
->[!VIDEO](https://video.tv.adobe.com/v/3446110?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## Visão geral
 
@@ -44,11 +44,11 @@ Com essa ferramenta, você pode obter monitoramento em tempo real e detecção p
 
 Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-criados para pilhas Splunk e ELK.
 
-- **Taxa de Acertos do Cache do CDN**: fornece informações sobre a taxa de acertos do cache total e a contagem total de solicitações por status HIT, PASS e MISS. Ele também fornece os principais URLs de HIT, PASS e MISS.
+- **Taxa de ocorrência do cache da CDN**: fornece insights sobre a taxa de ocorrências do cache total e a contagem total de solicitações por status HIT, PASS e MISS. Ele também fornece os principais URLs de HIT, PASS e MISS.
 
   ![Taxa de acertos do cache do CDN](assets/CHR-dashboard.png)
 
-- **Painel de Tráfego da CDN**: fornece informações sobre o tráfego por meio da taxa de solicitação de CDN e Origem, taxas de erro 4xx e 5xx e solicitações não armazenadas em cache. Ele também fornece o máximo de solicitações CND e Origin por segundo por endereço IP de cliente e mais insights para otimizar as configurações de CDN.
+- **Painel de tráfego da CDN**: fornece insights sobre o tráfego por meio da taxa de solicitação da CDN e da origem, taxas de erro 4xx e 5xx e solicitações não armazenadas em cache. Ele também fornece o máximo de solicitações CND e Origin por segundo por endereço IP de cliente e mais insights para otimizar as configurações de CDN.
 
   ![Painel de Tráfego da CDN](assets/Traffic-dashboard.png)
 
@@ -56,7 +56,7 @@ Para iniciar rapidamente a análise de registro, o Adobe fornece painéis pré-c
 
   ![Painel do WAF](assets/WAF-Dashboard.png)
 
-## Integração do Splunk
+## Integração com o Splunk
 
 Para organizações que usam o [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) e que habilitaram o encaminhamento de logs do AEMCS para suas instâncias do Splunk, é possível importar rapidamente os painéis pré-criados. Essa configuração facilita a análise de registro acelerada, fornecendo insights acionáveis para otimizar as implementações do AEM e mitigar as ameaças à segurança, como ataques de DOS.
 

@@ -4,7 +4,7 @@ description: Saiba como instrumentar o aplicativo React para editar o conteúdo 
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 421
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: 252d7045ba43c0998e9bb98fa86c399812ce92e9
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 100%
@@ -178,7 +178,7 @@ export default App;
 
 ## Instrumentar os componentes do React
 
-Para editar o conteúdo do aplicativo React WKND Teams, como _título da equipe e descrição da equipe_, é necessário instrumentar os componentes do React. Instrumentação significa adicionar atributos de dados relevantes (`data-aue-*`) aos elementos HTML que você deseja tornar editáveis com o editor universal. Para mais informações sobre atributos de dados, consulte [Atributos e tipos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Para editar o conteúdo do aplicativo React WKND Teams, como _título da equipe e descrição da equipe_, é necessário instrumentar os componentes do React. Instrumentação significa adicionar atributos de dados relevantes (`data-aue-*`) aos elementos HTML que você deseja tornar editáveis com o editor universal. Para mais informações sobre atributos de dados, consulte [Atributos e tipos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Definir elementos editáveis
 

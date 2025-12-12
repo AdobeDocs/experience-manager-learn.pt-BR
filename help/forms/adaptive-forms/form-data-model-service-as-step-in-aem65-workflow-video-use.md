@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 duration: 239
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 A partir do AEM Forms 6.4, agora podemos usar o Serviço de modelo de dados de formulário como parte do fluxo de trabalho do AEM. O vídeo a seguir aborda as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM
 
+>[!NOTE]
+>
 >O recurso demonstrado neste vídeo requer o AEM Forms 6.5.1
 
 
@@ -38,5 +40,6 @@ Para testar esse recurso no servidor, siga as instruções abaixo
    * Formulário adaptável para acionar o fluxo de trabalho no envio.
 * Abra o [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Preencha os detalhes e envie. No envio do formulário, o [fluxo de trabalho do aplicativo de empréstimo](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) é acionado.
 
-![&#x200B; fluxo de trabalho &#x200B;](assets/invokefdm651.PNG).
+![workflow](assets/invokefdm651.PNG).
+
 O fluxo de trabalho utiliza o componente Ou divisão para rotear o aplicativo para o administrador se a pontuação de crédito for superior a 500. Se a pontuação de crédito for inferior a 500, a aplicação será encaminhada para cavery.

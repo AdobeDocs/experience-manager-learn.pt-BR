@@ -3,7 +3,7 @@ title: Configuração rápida do Editor de SPA e SPA Remoto
 description: Saiba como começar a usar um SPA remoto e um Editor SPA do AEM em 15 minutos!
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7629
 thumbnail: 333181.jpg
@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '730'
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ _Apresentação em vídeo da configuração rápida_
 
 Este tutorial requer o seguinte:
 
-+ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=pt-BR)
++ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
 + [Node.js v18](https://nodejs.org/pt)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
@@ -87,8 +87,8 @@ Este tutorial tem uma dependência no projeto __WKND 2.1.0+__ (para conteúdo).
 
 Para executar uma configuração rápida, são fornecidos aqui pacotes AEM com a configuração e o conteúdo finais do AEM do tutorial.
 
-1. [Download &#x200B;](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Download &#x200B;](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
+1. [Download ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Download ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
 1. Faça logon no Gerenciador de Pacotes do AEM SDK em [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) com as credenciais `admin`.
 1. __Carregar__ o `wknd-app.all.x.x.x.zip` baixado na etapa 1
 1. Toque no botão __Instalar__ para a entrada `wknd-app.all.x.x.x.zip`

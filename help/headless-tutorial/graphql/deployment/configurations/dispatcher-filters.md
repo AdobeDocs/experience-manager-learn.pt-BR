@@ -4,16 +4,16 @@ description: Saiba como configurar os filtros do AEM Publish Dispatcher para usa
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
 duration: 48
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ O Adobe Experience Manager as a Cloud Service usa os filtros do AEM Publish Disp
 
 A configuração do filtro AEM Publish Dispatcher define os padrões de URL permitidos para acessar o AEM e deve incluir o prefixo de URL para o endpoint da consulta persistente do AEM.
 
-| O cliente se conecta ao | Autor do AEM | Publicação no AEM | Visualização do AEM |
+| O cliente se conecta ao | Autor do AEM | AEM Publish | Visualização do AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Requer a configuração de filtros do Dispatcher | ✘ | ✔ | ✔ |
 

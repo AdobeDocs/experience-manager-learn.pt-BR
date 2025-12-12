@@ -1,13 +1,13 @@
 ---
 title: Formas com o AEM Forms
 description: Parte 1 da integração do Acroforms com o AEM Forms. Criação de um formulário adaptável usando o Acroform e mesclagem de dados para obter uma PDF.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="Integração" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 144
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Acroforms são formulários criados usando o Acrobat. Você pode criar um novo f
 >
 >Se você estiver enviando um documento baseado em XFA, será necessário nivelar o documento e as tags de assinatura da Acrobat Sign precisarão estar presentes como texto estático no documento.
 
-[Documento de Marcas de Texto do Acrobat Sign](https://helpx.adobe.com/br/sign/using/text-tag.html)
+[Documento de Marcas de Texto do Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

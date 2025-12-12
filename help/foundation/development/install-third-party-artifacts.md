@@ -4,7 +4,7 @@ description: Saiba como instalar artefatos de terceiros que *não estão dispon�
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,7 +12,7 @@ last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
 exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Os **artefatos de terceiros** podem ser:
 
 - [Pacote OSGi](https://www.osgi.org/resources/architecture/): um pacote OSGi é um arquivo morto Java™ que contém classes, recursos e um manifesto Java que descreve o pacote e suas dependências.
 - [Java jar](https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html): um arquivo de repositório Java™ que contém classes e recursos Java.
-- [Pacote](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): um pacote é um arquivo zip que contém o conteúdo do repositório no formato de serialização do sistema de arquivos.
+- [Pacote](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager#what-are-packages): um pacote é um arquivo zip que contém o conteúdo do repositório no formato de serialização do sistema de arquivos.
 
 ## Cenário padrão
 
@@ -35,9 +35,9 @@ Normalmente, você instalaria o pacote de terceiros, pacote esse *está disponí
 
 Por exemplo:
 
-- Os [Componentes Principais do AEM WCM](https://github.com/adobe/aem-core-wcm-components) **pacote** foram adicionados como uma dependência no arquivo [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) `pom.xml` do projeto WKND. Aqui, o escopo `provided` é usado, pois o conjunto de componentes principais WCM do AEM é fornecido pelo tempo de execução do AEM. Se o pacote não for fornecido pelo tempo de execução do AEM, você usaria o escopo `compile` e esse é o escopo padrão.
+- Os [Componentes Principais do AEM WCM](https://github.com/adobe/aem-core-wcm-components) **pacote** foram adicionados como uma dependência no arquivo [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) do `pom.xml`projeto WKND. Aqui, o escopo `provided` é usado, pois o conjunto de componentes principais WCM do AEM é fornecido pelo tempo de execução do AEM. Se o pacote não for fornecido pelo tempo de execução do AEM, você usaria o escopo `compile` e esse é o escopo padrão.
 
-- [WKND Compartilhado](https://github.com/adobe/aem-guides-wknd-shared) **pacote** é adicionado como uma dependência no arquivo [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) `pom.xml` do projeto WKND.
+- [WKND Compartilhado](https://github.com/adobe/aem-guides-wknd-shared) **pacote** é adicionado como uma dependência no arquivo [ ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773) do `pom.xml`projeto WKND.
 
 
 
@@ -57,7 +57,7 @@ Os motivos podem ser:
 
 Para seguir este tutorial, você precisa:
 
-- Instalação do [ambiente de desenvolvimento local do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) ou do [Ambiente de Desenvolvimento Rápido(RDE)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+- Instalação do [ambiente de desenvolvimento local do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) ou do [Ambiente de Desenvolvimento Rápido(RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 - O [projeto WKND do AEM](https://github.com/adobe/aem-guides-wknd) _para adicionar o pacote ou jar ou o pacote de terceiros_ e verificar as alterações.
 
@@ -158,7 +158,7 @@ Vamos usar o serviço OSGi `HelloWorldService` do `my-example-bundle` no projeto
    - O `systemPath` é o caminho para o arquivo `my-example-bundle` no módulo `all` do projeto WKND do AEM.
    - O `${maven.multiModuleProjectDirectory}` é uma propriedade Maven que aponta para o diretório raiz do projeto de vários módulos.
 
-- No arquivo `core/pom.xml` do módulo `core` do projeto WKND do AEM, adicione `my-example-bundle` como uma dependência.
+- No arquivo `core` do módulo `core/pom.xml` do projeto WKND do AEM, adicione `my-example-bundle` como uma dependência.
 
   ```xml
   ...
@@ -188,7 +188,7 @@ A ramificação [tutorial/install-3rd-party-bundle](https://github.com/adobe/aem
 
 Os pacotes OSGi que não estão disponíveis no repositório Maven público podem ser instalados em um projeto do AEM seguindo estas etapas:
 
-- Copie o pacote OSGi para o diretório `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` do módulo `all`. Essa etapa é necessária para empacotar e implantar o pacote na instância do AEM.
+- Copie o pacote OSGi para o diretório `all` do módulo `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install`. Essa etapa é necessária para empacotar e implantar o pacote na instância do AEM.
 
 - Atualize os arquivos `pom.xml` dos módulos raiz e principal para adicionar o pacote OSGi como uma dependência com o escopo `system` e `systemPath` apontando para o arquivo de pacote. Essa etapa é necessária para compilar o projeto.
 
@@ -278,7 +278,7 @@ Vamos usar o `MyHelloWorldService` do `my-example-jar` no projeto WKND do AEM.
    - O `systemPath` é o caminho para o arquivo `my-example-jar` no módulo `all` do projeto WKND do AEM.
    - O `${maven.multiModuleProjectDirectory}` é uma propriedade Maven que aponta para o diretório raiz do projeto de vários módulos.
 
-- No arquivo `core/pom.xml` do módulo `core` do projeto WKND do AEM, faça duas alterações:
+- No arquivo `core` do módulo `core/pom.xml` do projeto WKND do AEM, faça duas alterações:
 
    - Adicione o `my-example-jar` como uma dependência.
 
@@ -333,7 +333,7 @@ Vamos usar o `MyHelloWorldService` do `my-example-jar` no projeto WKND do AEM.
 
 A ramificação [tutorial/install-3rd-party-jar](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) do projeto WKND do AEM tem as alterações acima para sua referência.
 
-Em cenários em que o arquivo jar do Java _está disponível no repositório Maven público, mas NÃO é um pacote OSGi_, você pode seguir as etapas acima, exceto o escopo `system` de `<dependency>`, e os elementos `systemPath` não são obrigatórios.
+Em cenários em que o arquivo jar do Java _está disponível no repositório Maven público, mas NÃO é um pacote OSGi_, você pode seguir as etapas acima, exceto o escopo `<dependency>` de `system`, e os elementos `systemPath` não são obrigatórios.
 
 ### Principais aprendizados{#key-learnings-jar}
 
@@ -343,7 +343,7 @@ Os jars do Java que não são pacotes OSGi e podem ou não estar disponíveis no
 
 As seguintes etapas só serão necessárias se o jar do Java não estiver disponível no repositório Maven público:
 
-- Copie o jar do Java para o diretório `resource/jar` do módulo `all`.
+- Copie o jar do Java para o diretório `all` do módulo `resource/jar`.
 
 - Atualize os arquivos `pom.xml` da raiz e do módulo principal para adicionar o jar Java como uma dependência com o escopo `system` e `systemPath` apontando para o arquivo jar.
 
@@ -397,7 +397,7 @@ A primeira etapa é adicionar o pacote ao módulo `all` do projeto WKND do AEM.
 
 Os pacotes do AEM que não estão disponíveis no repositório Maven público podem ser instalados em um projeto do AEM seguindo estas etapas:
 
-- Copie o pacote para o diretório `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` do módulo `all`. Essa etapa é necessária para empacotar e implantar o pacote na instância do AEM.
+- Copie o pacote para o diretório `all` do módulo `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install`. Essa etapa é necessária para empacotar e implantar o pacote na instância do AEM.
 
 
 ## Resumo
