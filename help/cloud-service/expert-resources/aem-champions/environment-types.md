@@ -26,5 +26,5 @@ Dê uma olhada nessas dicas de seu colega técnico, Rakesh Pasupuleti. Rakesh é
 
 ## Recursos adicionais {#additional-resources}
 
-* [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) - Documentação sobre o gerenciamento de ambientes no AEM as a Cloud Service
-* [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html) - Documentação sobre RDEs no AEM as a Cloud Service
+* [Gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) - Documentação sobre o gerenciamento de ambientes no AEM as a Cloud Service
+* [Ambientes de desenvolvimento rápido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=pt-BR) - Documentação sobre RDEs no AEM as a Cloud Service

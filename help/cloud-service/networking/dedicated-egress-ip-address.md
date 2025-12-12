@@ -30,7 +30,7 @@ Um Programa Cloud Manager só pode ter um tipo de infraestrutura de rede __únic
 
 >[!MORELIKETHIS]
 >
-> Leia a [documentação avançada de configuração de rede](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) da AEM as a Cloud Service para obter mais detalhes sobre o endereço IP de saída dedicado.
+> Leia a [documentação avançada de configuração de rede](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) da AEM as a Cloud Service para obter mais detalhes sobre o endereço IP de saída dedicado.
 
 ## Pré-requisitos
 
@@ -44,7 +44,7 @@ Os seguintes itens são necessários ao configurar um endereço IP de saída ded
 + A ID do programa Cloud Manager
 + As IDs de ambiente do Cloud Manager
 
-Para obter mais detalhes [revise como instalar, configurar e obter credenciais da API do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), para usá-las para fazer uma chamada de API do Cloud Manager.
+Para obter mais detalhes [revise como instalar, configurar e obter credenciais da API do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), para usá-las para fazer uma chamada de API do Cloud Manager.
 
 Este tutorial usa `curl` para fazer as configurações da API do Cloud Manager. Os comandos `curl` fornecidos pressupõem uma sintaxe Linux/macOS. Se estiver usando o prompt de comando do Windows, substitua o caractere de quebra de linha `\` por `^`.
 
@@ -86,7 +86,7 @@ O endereço IP de saída dedicado pode ser ativado usando as APIs do Cloud Manag
 
 1. Primeiro, determine a região na qual a Rede Avançada é necessária, usando a operação [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) da API do Cloud Manager. O `region name` é necessário para fazer chamadas de API do Cloud Manager subsequentes. Normalmente, a região em que o ambiente de Produção reside é usada.
 
-   Encontre a região do seu ambiente do AEM as a Cloud Service em [Cloud Manager](https://my.cloudmanager.adobe.com) nos [detalhes do ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usado na API do Cloud Manager.
+   Encontre a região do seu ambiente do AEM as a Cloud Service em [Cloud Manager](https://my.cloudmanager.adobe.com) nos [detalhes do ambiente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). O nome da região exibido no Cloud Manager pode ser [mapeado para o código de região](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) usado na API do Cloud Manager.
 
    __solicitação HTTP de listRegions__
 
@@ -221,7 +221,7 @@ As solicitações HTTP/HTTPS do AEM em portas padrão (80/443) são permitidas p
 
 >[!TIP]
 >
-> Consulte a documentação de endereço IP de saída dedicado da AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consulte a documentação de endereço IP de saída dedicado da AEM as a Cloud Service para [o conjunto completo de regras de roteamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS

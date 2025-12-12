@@ -256,7 +256,7 @@ Para ver o teste A/B em ação, visite o [site de Ativação da WKND](https://wk
 
 ## Recursos adicionais
 
-- [Visão geral do Teste A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Visão geral das sequências de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Visão geral do Teste A/B](https://experienceleague.adobe.com/pt-br/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home)
+- [Visão geral das sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview)
+- [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/vec/visual-experience-composer)

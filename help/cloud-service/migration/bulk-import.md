@@ -27,7 +27,7 @@ A ferramenta Importação em massa no AEM as a Cloud Service permite que os admi
 
 >[!TAB exibição do Assets]
 
-Saiba como importar vários arquivos para o AEM Assets usando a [Exibição de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importação em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), com o Dropbox servindo como um exemplo de provedor de armazenamento na nuvem para oferecer um processo de integração claro e fácil de seguir.
+Saiba como importar vários arquivos para o AEM Assets usando a [Exibição de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=pt-BR) [Importação em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=pt-BR), com o Dropbox servindo como um exemplo de provedor de armazenamento na nuvem para oferecer um processo de integração claro e fácil de seguir.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
@@ -37,7 +37,7 @@ Saiba como importar vários arquivos para o AEM Assets usando a [Exibição de a
 
 >[!TIP]
 >
-> As fontes de entrada neste vídeo mostram apenas o Armazenamento de blobs do Azure e o Amazon S3; no entanto, as fontes disponíveis continuam a crescer com o tempo. Para obter uma lista completa das fontes de entrada com suporte, consulte as opções disponíveis no produto ou na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> As fontes de entrada neste vídeo mostram apenas o Armazenamento de blobs do Azure e o Amazon S3; no entanto, as fontes disponíveis continuam a crescer com o tempo. Para obter uma lista completa das fontes de entrada com suporte, consulte as opções disponíveis no produto ou na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=pt-BR#bulk-upload).
 
 ## Programar importação em massa
 

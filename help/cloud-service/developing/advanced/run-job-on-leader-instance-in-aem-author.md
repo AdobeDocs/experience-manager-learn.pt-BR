@@ -136,7 +136,7 @@ Isso geralmente é problemático se o trabalho for responsável por alterar o es
 
 Se você quiser que o trabalho seja executado apenas uma vez no serviço AEM Author, adicione a [configuração da fila de trabalhos](#how-to-run-a-job-on-the-leader-instance) descrita abaixo.
 
-Você pode verificá-lo revisando os logs do serviço de Autor do AEM no [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Você pode verificá-lo revisando os logs do serviço de Autor do AEM no [Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Trabalho processado por todas as instâncias](./assets/run-job-once/job-processed-by-all-instances.png)
 

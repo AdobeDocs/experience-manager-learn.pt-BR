@@ -90,7 +90,7 @@ Para atualizar as permissões do grupo de usuários de serviços (por exemplo, `
 
 - Confirme e envie as alterações para o repositório.
 
-- Implante as alterações na instância do AEM usando o [pipeline de pilha completa do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Implante as alterações na instância do AEM usando o [pipeline de pilha completa do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - Você também pode verificar as permissões do grupo de usuários usando a exibição **Permissões**. Navegue até **Ferramentas** > **Segurança** > **Permissões** na instância do AEM.
 

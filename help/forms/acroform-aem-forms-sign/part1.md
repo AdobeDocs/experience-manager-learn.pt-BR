@@ -34,7 +34,7 @@ Acroforms são formulários criados usando o Acrobat. Você pode criar um novo f
 >
 >Se você estiver enviando um documento baseado em XFA, será necessário nivelar o documento e as tags de assinatura da Acrobat Sign precisarão estar presentes como texto estático no documento.
 
-[Documento de Marcas de Texto do Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento de Marcas de Texto do Acrobat Sign](https://helpx.adobe.com/br/sign/using/text-tag.html)
 
 >[!NOTE]
 >

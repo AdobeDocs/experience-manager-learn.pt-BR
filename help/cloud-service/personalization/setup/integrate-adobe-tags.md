@@ -127,5 +127,5 @@ Para confirmar se a configuração de Tags está funcionando corretamente, você
 
 ## Recursos adicionais
 
-- [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
-- [Visão geral das tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+- [visão geral do Adobe Experience Platform Debugger](https://experienceleague.adobe.com/pt-br/docs/experience-platform/debugger/home)
+- [Visão geral das tags](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home)

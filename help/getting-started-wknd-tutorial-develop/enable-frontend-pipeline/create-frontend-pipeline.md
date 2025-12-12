@@ -38,7 +38,7 @@ Neste capítulo, vamos criar e executar um pipeline de front-end no Adobe Cloud 
 
 Este é um tutorial em várias partes, e presume-se que as etapas descritas em [Atualizar um projeto padrão do AEM](./update-project.md) tenham sido concluídas.
 
-Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions), bem como [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Verifique se você tem [privilégios para criar e implantar pipelines no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=pt-BR#role-definitions), bem como [acesso a um ambiente do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
 
 ## Renomear pipeline existente
 

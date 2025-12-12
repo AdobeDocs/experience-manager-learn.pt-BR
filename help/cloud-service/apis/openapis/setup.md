@@ -210,11 +210,11 @@ Vamos seguir as etapas para configurar a instância do AEM para habilitar a comu
 
 1. Confirme as alterações de configuração e envie as alterações para o repositório Git remoto ao qual o pipeline do Cloud Manager está conectado.
 
-1. Implante as alterações acima usando o [Pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) na Cloud Manager.
+1. Implante as alterações acima usando o [Pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) na Cloud Manager.
 
    ![Implantar YAML](./assets/setup/config-pipeline.png)
 
-Observe que o arquivo `api.yaml` também pode ser instalado em um [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [usando ferramentas de linha de comando](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Isso é útil para testar as alterações de configuração antes de implantá-las no ambiente de produção.
+Observe que o arquivo `api.yaml` também pode ser instalado em um [RDE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/overview), [usando ferramentas de linha de comando](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Isso é útil para testar as alterações de configuração antes de implantá-las no ambiente de produção.
 
 ## Próximas etapas
 

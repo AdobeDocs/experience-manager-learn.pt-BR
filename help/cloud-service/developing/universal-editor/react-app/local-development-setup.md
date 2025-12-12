@@ -33,7 +33,7 @@ Os seguintes elementos são necessários para seguir este tutorial:
    - [Git](https://git-scm.com/downloads)
    - Um IDE ou editor de código, como o [Visual Studio Code](https://code.visualstudio.com/)
 - Baixe e instale o seguinte:
-   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contém o Quickstart Jar usado para executar o AEM Author e Publish localmente para fins de desenvolvimento.
    - [Serviço do editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-cloud/software-distribution/home): uma cópia local do serviço do editor universal que contém um subconjunto de recursos e pode ser baixada do portal de distribuição de softwares.
    - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): um proxy HTTP SSL local simples que usa um certificado autoassinado para desenvolvimento local. O editor universal do AEM requer o URL HTTPS do aplicativo React para carregá-lo no editor.
 

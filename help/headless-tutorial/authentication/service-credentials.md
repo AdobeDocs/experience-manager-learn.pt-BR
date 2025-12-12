@@ -23,7 +23,7 @@ ht-degree: 0%
 
 As integrações com o Adobe Experience Manager (AEM) as a Cloud Service devem ser capazes de autenticar com segurança no serviço do AEM. O Developer Console da AEM concede acesso às Credenciais de serviço, que são usadas para facilitar aplicativos, sistemas e serviços externos para interagir programaticamente com os serviços de Autor ou Publicação do AEM por HTTP.
 
-O AEM integra-se com outros produtos da Adobe usando o [S2S OAuth gerenciado pela Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integrações personalizadas com contas de serviço, as credenciais do JWT são usadas e gerenciadas no AEM Developer Console.
+O AEM integra-se com outros produtos da Adobe usando o [S2S OAuth gerenciado pela Adobe Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Para integrações personalizadas com contas de serviço, as credenciais do JWT são usadas e gerenciadas no AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -232,7 +232,7 @@ Quando a conta técnica do usuário do AEM existir no AEM (após a primeira soli
 1. Localize o usuário do AEM com o __Nome de Logon__ identificado na Etapa 1 e abra suas __Propriedades__
 1. Navegue até a guia __Grupos__ e adicione o grupo __Usuários DAM__ (que têm acesso de gravação aos ativos)
 
-   + [Consulte a lista de grupos de usuários fornecidos pela AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) para adicionar o usuário do serviço para obter as permissões ideais. Se nenhum grupo de usuários fornecido pela AEM for suficiente, crie o seu próprio grupo e adicione as permissões apropriadas.
+   + [Consulte a lista de grupos de usuários fornecidos pela AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR#built-in-users-and-groups) para adicionar o usuário do serviço para obter as permissões ideais. Se nenhum grupo de usuários fornecido pela AEM for suficiente, crie o seu próprio grupo e adicione as permissões apropriadas.
 
 1. Toque em __Salvar e fechar__
 

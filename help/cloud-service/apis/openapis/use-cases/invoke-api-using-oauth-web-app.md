@@ -497,7 +497,7 @@ Siga as instruções do artigo [Configurar APIs do AEM baseadas em OpenAPI](../s
 
 Por padrão, o projeto WKND Sites não tem o esquema de metadados de ativos necessário para exibir os atributos do produto. Vamos criar e aplicar o esquema de metadados de ativos a uma pasta de ativos na instância do AEM.
 
-1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
+1. Faça logon na instância do AEM as a Cloud Service Asset. Usando a [Exibição de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/authoring/switch-views), navegue até a pasta `/content/dam/wknd-shared/en`.
 
    ![Navegar até a pasta](../assets/web-app/navigate-to-folder.png)
 

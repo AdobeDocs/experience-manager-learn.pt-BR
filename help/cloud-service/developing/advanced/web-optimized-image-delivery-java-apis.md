@@ -26,14 +26,14 @@ Saiba como usar as APIs Java™ de entrega de imagens otimizadas para a Web da A
 O AEM as a Cloud Service oferece suporte à [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR), que gera automaticamente representações otimizadas de imagens da Web de ativos. A entrega de imagens otimizadas para a Web pode ser usada em três abordagens principais:
 
 1. [Usar Componentes WCM do AEM Core](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
-2. Criar componente personalizado que [estende o componente de imagem do Componente WCM do AEM Core](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html#tackling-the-image-problem)
+2. Criar componente personalizado que [estende o componente de imagem do Componente WCM do AEM Core](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=pt-BR#tackling-the-image-problem)
 3. Crie um componente personalizado que usa a API Java™ do Asset Delivery para gerar URLs de imagem otimizados para a Web.
 
 Este artigo aborda o uso de APIs Java™ de imagem otimizadas para a Web em um componente personalizado, de maneira que permita que as APIs baseadas em código funcionem no AEM as a Cloud Service e no AEM SDK.
 
 ## APIs Java™
 
-A [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) é um serviço OSGi que gera URLs de entrega otimizadas para a Web para ativos de imagem. `AssetDelivery.getDeliveryURL(...)` as opções permitidas estão [documentadas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
+A [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) é um serviço OSGi que gera URLs de entrega otimizadas para a Web para ativos de imagem. `AssetDelivery.getDeliveryURL(...)` as opções permitidas estão [documentadas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 O Serviço OSGi `AssetDelivery` só é satisfeito durante a execução no AEM as a Cloud Service. No AEM SDK, as referências ao serviço OSGi `AssetDelivery` retornam `null`. É melhor usar condicionalmente o URL otimizado para a Web ao ser executado no AEM as a Cloud Service e usar um URL de imagem de fallback no AEM SDK. Normalmente, a representação da Web do ativo é um fallback suficiente.
 

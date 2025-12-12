@@ -32,7 +32,7 @@ Para testar esse recurso no servidor, siga as instruções abaixo
   >
   >No AEM Forms 6.5 e versões superiores, esse recurso está disponível imediatamente, conforme [descrevemos aqui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Configure o tomcat com o arquivo SampleRest.war como descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
+* Configure o tomcat com o arquivo SampleRest.war como descrito [aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=pt-BR). O arquivo war implantado no Tomcat tem o código para retornar a pontuação de crédito do candidato. A pontuação de crédito é um número aleatório entre 200 e 800
 
 * [Importe os ativos para a AEM usando o gerenciador de pacotes](assets/invoke-fdm-as-service-step.zip). O pacote contém o seguinte:
 
