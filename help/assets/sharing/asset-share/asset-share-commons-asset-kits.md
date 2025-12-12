@@ -23,6 +23,6 @@ ht-degree: 0%
 
 Saiba como usar o [kit de ativos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) do Asset Share Common para gerar páginas da Web compartilháveis sob medida que listam ativos de pastas ou coleções do AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453454?captions=por_br&quality=12&learn=on)
 
 O _[Kit de ativos](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) está disponível somente no Asset Share Commons 2.5.4+_

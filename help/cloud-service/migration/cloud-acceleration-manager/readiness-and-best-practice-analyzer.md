@@ -21,4 +21,4 @@ ht-degree: 17%
 
 Saiba como o Analisador de práticas recomendadas pode ajudar você a migrar do AEM no local ou do Adobe Managed Services para o Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446458?captions=por_br&quality=12&learn=on)

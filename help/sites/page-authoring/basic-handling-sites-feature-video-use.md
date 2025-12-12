@@ -24,7 +24,7 @@ ht-degree: 15%
 
 O vídeo a seguir fornece uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Ele usa o console do Sites como base.
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37002?captions=por_br&quality=12&learn=on)
 
 Neste vídeo, os seguintes recursos ou funcionalidades são abordados:
 

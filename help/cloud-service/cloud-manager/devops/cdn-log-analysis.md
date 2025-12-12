@@ -23,7 +23,7 @@ ht-degree: 11%
 
 Saiba mais sobre a _Ferramenta de Análise de Log da CDN do AEM Cloud Service_ fornecida pela Adobe e como ela ajuda a obter insights sobre o desempenho da CDN e a implementação do AEM.
  
->[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446110?captions=por_br&quality=12&learn=on)
 
 ## Visão geral
 

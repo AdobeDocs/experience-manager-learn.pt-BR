@@ -22,7 +22,7 @@ ht-degree: 0%
 A partir do AEM Forms 6.4, agora podemos usar o Modelo de dados de formulário como parte do fluxo de trabalho do AEM. O vídeo a seguir aborda as etapas necessárias para configurar a etapa Modelo de dados de formulário no fluxo de trabalho do AEM
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33259?captions=por_br&quality=12&learn=on)
 
 Para testar esse recurso no servidor, siga as instruções abaixo
 

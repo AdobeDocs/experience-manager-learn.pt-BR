@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Veja como a IA de conteúdo permite criar variações de conteúdo envolventes de maneira rápida e eficiente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461882/?captions=por_br&learn=on&enablevpops)

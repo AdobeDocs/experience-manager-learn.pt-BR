@@ -19,4 +19,4 @@ ht-degree: 0%
 
 O vídeo a seguir fornece uma visão geral dos conceitos básicos de gerenciamento de vários sites no AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36847?captions=por_br&quality=12&learn=on)

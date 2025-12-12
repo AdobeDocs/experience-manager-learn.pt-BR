@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Emily Kellman compartilha como Adobe.com usou o recurso Gerar variações para aumentar a velocidade do conteúdo, reduzir linhas do tempo e aumentar as conversões.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462709/?captions=por_br&learn=on&enablevpops)

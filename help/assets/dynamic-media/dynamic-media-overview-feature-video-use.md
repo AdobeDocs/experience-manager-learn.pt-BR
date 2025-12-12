@@ -28,7 +28,7 @@ Explore as possibilidades do Adobe Dynamic Media com nossa [**Demonstração em 
 
 ## Visão geral do Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34947?captions=por_br&quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado e acessado usando 
 
 ## Uso com o AEM Sites
 
->[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34951?captions=por_br&quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Este vídeo descreve como o conteúdo de mídia é gerenciado no Adobe Experienc
 
 ## Criar uma coleção de mídia mista
 
->[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34959?captions=por_br&quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Este vídeo descreve o processo simples de criação de uma coleção de ativos 
 
 ## Predefinições de imagem
 
->[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34502?captions=por_br&quality=12&learn=on)
 
 Este vídeo descreve como as Predefinições de imagem são criadas e o que é uma predefinição de imagem, um encurtador de URL para uma série de argumentos do Servidor de imagens que operam em uma imagem sempre que um URL a solicita. Conheça técnicas valiosas para estender e editar Predefinições de imagem.
 
@@ -84,7 +84,7 @@ Este vídeo descreve como as Predefinições de imagem são criadas e o que é u
 
 ## Modificadores avançados de URL
 
->[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34498?captions=por_br&quality=12&learn=on)
 
 Este vídeo descreve como ir além do redimensionamento de imagens para aproveitar os recursos do próprio arquivo de origem - transparência no plano de fundo, caminhos de recorte e cortes e texto como variáveis - com modificadores de URL do Dynamic Media.
 
@@ -96,7 +96,7 @@ Este vídeo descreve como ir além do redimensionamento de imagens para aproveit
 
 ## Gerenciamento de tamanho de arquivo do JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35034?captions=por_br&quality=12&learn=on)
 
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Compare a qualidade da imagem jpeg com o tamanho do arquivo resultante (em quilo
 
 ## Legendas ocultas
 
->[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34408?captions=por_br&quality=12&learn=on)
 
 Adicione facilmente as Legendas ocultas ao vídeo do Dynamic Media, anexando o URL de cópia para apontar para um documento adicional do arquivo de Legendas ocultas, um arquivo de sidecar web.VTT, contendo as informações de CC de qualquer vídeo.
 

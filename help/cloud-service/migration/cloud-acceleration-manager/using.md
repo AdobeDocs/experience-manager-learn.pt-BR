@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Uma apresentação narrada do uso das ferramentas do Cloud Acceleration Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454675?captions=por_br&quality=12&learn=on)

@@ -25,7 +25,7 @@ Saiba como limpar ou remover a resposta HTTP em cache do CDN da AEM as a Cloud S
 
 Neste tutorial, você aprenderá a configurar e usar o Token da API de Limpeza para limpar o cache CDN do site de exemplo [WKND](https://github.com/adobe/aem-guides-wknd) do AEM usando o recurso de autoatendimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436933?captions=por_br&quality=12&learn=on)
 
 ## Invalidação de cache versus limpeza explícita
 

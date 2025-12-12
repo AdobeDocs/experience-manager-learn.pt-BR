@@ -23,7 +23,7 @@ ht-degree: 1%
 Saiba como carregar ativos para o ambiente do AEM as a Cloud Service usando o aplicativo cliente que usa a biblioteca Node.js [aem-upload](https://github.com/adobe/aem-upload).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3476952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3476957?captions=por_br&quality=12&learn=on)
 
 
 ## O que você aprenderá

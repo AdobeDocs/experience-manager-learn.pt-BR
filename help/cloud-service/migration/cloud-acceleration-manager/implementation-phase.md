@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Revise e entenda as principais fases de implementação ou migração para o AEM as a Cloud Service usando o Cloud Acceleration Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336691?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438284?captions=por_br&quality=12&learn=on)

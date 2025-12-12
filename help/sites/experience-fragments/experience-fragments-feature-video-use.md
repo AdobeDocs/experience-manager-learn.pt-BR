@@ -26,7 +26,7 @@ ht-degree: 2%
 
 Os Fragmentos de experiência permitem que os autores de conteúdo reutilizem conteúdo em canais, incluindo páginas de sites e sistemas de terceiros.
 
->[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445612?captions=por_br&quality=12&learn=on)
 
 Um Fragmento de experiência é um conjunto agrupado de componentes que, quando combinados, criam uma experiência. Por exemplo, um *Título*, *Imagem*, *Descrição* e o *Botão do Call to action* podem ser combinados para formar uma experiência de teaser.
 

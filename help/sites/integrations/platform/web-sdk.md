@@ -190,7 +190,7 @@ Usando a extensão do Adobe Experience Platform Debugger [Chrome](https://chrome
 + Versão da biblioteca SDK da Web da plataforma, ID da sequência de dados
 + Objeto XDM como parte do atributo `events` no Experience Platform Web SDK
 
->[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454501?captions=por_br&quality=12&learn=on)
 
 ## Criar conjunto de dados - Experience Platform
 

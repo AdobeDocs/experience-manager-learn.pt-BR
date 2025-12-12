@@ -24,4 +24,4 @@ ht-degree: 13%
 
 Saiba como personalizar o AEM Importer para maximizar a eficiência e a precisão durante uma migração de site para a criação de documentos com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429596/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444250/?captions=por_br&learn=on)

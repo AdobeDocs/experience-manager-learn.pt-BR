@@ -30,7 +30,7 @@ Os ataques sofisticados são caracterizados por altas taxas de solicitação, pa
 > As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção do WAF contra DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469435/?captions=por_br&quality=12&learn=on)
 
 ## Metas de aprendizagem
 

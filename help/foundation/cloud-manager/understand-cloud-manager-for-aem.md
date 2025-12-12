@@ -39,19 +39,19 @@ Para obter uma visão geral completa, reveja o [Guia do Usuário do Cloud Manage
 
 Os [Programas do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=pt-BR) representam conjuntos de ambientes do AEM que dão suporte a conjuntos lógicos de iniciativas de negócios, normalmente correspondendo a um Service level agreement (SLA) adquirido. Por exemplo, um programa pode representar os recursos do AEM que dão suporte aos sites públicos globais, enquanto que outro programa representa um DAM central interno.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34268?captions=por_br&quality=12&learn=on)
 
 ## Ambientes {#environments}
 
 [Os ambientes do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html?lang=pt-BR) são compostos de instâncias do AEM Author, do AEM Publish e do Dispatcher. Diferentes ambientes oferecem suporte a funções e podem ser envolvidos usando diferentes Pipelines de CI/CD (descritos abaixo). Os ambientes do Cloud Manager normalmente têm um ambiente de Produção e um ambiente de Preparo.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34272?captions=por_br&quality=12&learn=on)
 
 ## Relatórios {#reports}
 
 Os [Relatórios do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=pt-BR) fornecem uma exibição dos ambientes do programa e das instâncias do AEM através de um conjunto de gráficos que relatam e rastreiam várias métricas para cada instância do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34276?captions=por_br&quality=12&learn=on)
 
 ## Pipeline de produção CI/CD {#cicd-production-pipeline}
 
@@ -65,19 +65,19 @@ Os [Relatórios do Cloud Manager](https://experienceleague.adobe.com/docs/experi
 
 A configuração [Pipeline de Produção CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=pt-BR) define o gatilho que inicia o pipeline e os parâmetros que controlam a implantação de produção e os parâmetros de teste de desempenho.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327605?captions=por_br&quality=12&learn=on)
 
 ### Execução de pipeline
 
 O [Pipeline de Produção CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=pt-BR) é usado para compilar e implantar código através de Preparo no ambiente de Produção, diminuindo o tempo de implantação.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327612?captions=por_br&quality=12&learn=on)
 
 ## Pipelines CI/CD de não produção {#cicd-non-production-pipeline}
 
 [Os pipelines CI/CD de não produção](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=pt-BR) estão divididos em duas categorias, Pipelines de qualidade do código e Pipelines de implantação. A qualidade do código canaliza todo o código de uma ramificação (branch) do Git para criar e ser avaliado em relação à verificação de qualidade do código do Cloud Manager. Os pipelines de implantação oferecem suporte à implantação automatizada do código do repositório Git para qualquer ambiente não relacionado à produção, ou seja, qualquer ambiente do AEM provisionado que não seja Estágio ou Produção.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327619?captions=por_br&quality=12&learn=on)
 
 ## Atividade {#activity}
 
@@ -85,4 +85,4 @@ O Cloud Manager fornece uma visualização consolidada da atividade de um Progra
 
 O Cloud Manager também se integra a um nível por usuário com [Notificações do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html?lang=pt-BR), fornecendo uma exibição onipresente em eventos e ações de interesse.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34280?captions=por_br&quality=12&learn=on)
