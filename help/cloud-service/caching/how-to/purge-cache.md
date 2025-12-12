@@ -45,7 +45,7 @@ Vamos saber como configurar o token da API de limpeza para limpar o cache do CDN
 
 O token da API de limpeza é criado ao configurar a regra CDN no código do projeto do AEM.
 
-1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml[ do projeto ](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
+1. Abra o arquivo `cdn.yaml` na pasta `config` principal do seu projeto do AEM. Por exemplo, o arquivo cdn.yaml[&#x200B; do projeto &#x200B;](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml)WKND.
 
 1. Adicionar a seguinte regra CDN ao arquivo `cdn.yaml`:
 

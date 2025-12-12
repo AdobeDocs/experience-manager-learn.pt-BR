@@ -106,7 +106,7 @@ Em princípio, se todos os arquivos forem armazenados em cache e, portanto, arma
 
 Para entender a Dispatcher mais detalhadamente, revisitemos a estrutura de um URL de amostra simples.  Vamos analisar o exemplo abaixo,
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http` denota o protocolo
 

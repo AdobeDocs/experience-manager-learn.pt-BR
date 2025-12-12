@@ -597,7 +597,7 @@ e fornecem parâmetros de consulta:
 
 | Nome do parâmetro de consulta | Consultar valor de parâmetro |
 |----------------------|-----------------------|
-| `resource` | Qualquer caminho JCR, ou subcaminho, que seja o manipulador de autenticação SAML escuta em, conforme definido na [propriedade ](#configure-saml-2-0-authentication-handler) da configuração OSGi do Manipulador de autenticação do Adobe Granite SAML 2.0`path`. |
+| `resource` | Qualquer caminho JCR, ou subcaminho, que seja o manipulador de autenticação SAML escuta em, conforme definido na [propriedade &#x200B;](#configure-saml-2-0-authentication-handler) da configuração OSGi do Manipulador de autenticação do Adobe Granite SAML 2.0`path`. |
 | `saml_request_path` | O caminho do URL ao qual o usuário deve ser direcionado após a autenticação SAML bem-sucedida. |
 
 Por exemplo, este link do HTML acionará o fluxo de logon do SAML e, se bem-sucedido, levará o usuário para `/content/wknd/us/en/protected/page.html`. Esses parâmetros de consulta podem ser definidos de forma programática, conforme necessário.
@@ -618,7 +618,7 @@ e fornecendo os dados do formulário:
 
 | Nome dos dados do formulário | Valor dos dados de formulário |
 |----------------------|-----------------------|
-| `resource` | Qualquer caminho JCR, ou subcaminho, que seja o manipulador de autenticação SAML escuta em, conforme definido na [propriedade ](#configure-saml-2-0-authentication-handler) da configuração OSGi do Manipulador de autenticação do Adobe Granite SAML 2.0`path`. |
+| `resource` | Qualquer caminho JCR, ou subcaminho, que seja o manipulador de autenticação SAML escuta em, conforme definido na [propriedade &#x200B;](#configure-saml-2-0-authentication-handler) da configuração OSGi do Manipulador de autenticação do Adobe Granite SAML 2.0`path`. |
 | `saml_request_path` | O caminho do URL ao qual o usuário deve ser direcionado após a autenticação SAML bem-sucedida. |
 
 

@@ -249,7 +249,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 ### AMS Farm Inclui
 
-![<FILENAME>_farms.any incluirá arquivos .any secundários para concluir uma configuração de farm.  Nesta imagem, você pode ver que um farm incluirá cada cache de arquivos de seção de nível superior, cabeçalhos de clientes, filtros, renderizações e arquivos vhosts .any](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
+![&lt;FILENAME>_farms.any incluirá arquivos .any secundários para concluir uma configuração de farm.  Nesta imagem, você pode ver que um farm incluirá cada cache de arquivos de seção de nível superior, cabeçalhos de clientes, filtros, renderizações e arquivos vhosts .any](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
 
 Quando qualquer arquivo FILENAME_farm.any do diretório `/etc/httpd/conf.dispatcher.d/available_farms/` for vinculado ao diretório `/etc/httpd/conf.dispatcher.d/enabled_farms/`, ele será usado na configuração em execução.
 
