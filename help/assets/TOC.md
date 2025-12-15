@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: bf996405c360c77475d9f76d5de9bcd4fde3c163
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 97%
 
 ---
 
@@ -144,6 +144,7 @@ ht-degree: 98%
    + [Visão geral do Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Aplicativo de desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Imagens {#images}
+      + [Sintaxe de URL e predefinições de imagem](dynamic-media/dynamic-media-urls-and-image-presets.md)
       + [Automação de imagens](dynamic-media/dynamic-media-image-automation.md)
       + [Modelos do Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantâneo do Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
@@ -176,7 +177,7 @@ ht-degree: 98%
       + [Processamento de ativos](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [Configuração de um servidor de visualização seguro](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
       + [Geração de URLs e códigos incorporados](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
-      + [Acionamento de um trabalho de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+      + [Acionamento de um processo de exportação](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalidação do cache da CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Uso de componentes principais do Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Excluir configuração do Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
