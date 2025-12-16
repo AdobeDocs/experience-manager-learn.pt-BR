@@ -21,6 +21,6 @@ ht-degree: 0%
 
 Explore a sintaxe do URL do AEM Assets Dynamic Media e saiba como maximizar seu valor usando Predefinições de imagem. Melhore os recursos de gerenciamento de ativos e a eficiência do fluxo de trabalho.
 
->[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3477941/?captions=por_br&learn=on&enablevpops)
 
 Assista a este vídeo curto sobre [como criar predefinições de imagens no AEM Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
