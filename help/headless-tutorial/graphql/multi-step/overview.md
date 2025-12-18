@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: e7f556737cdf6a92c0503d3b4a52eef1f71c8330
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 91%
+source-wordcount: '240'
+ht-degree: 80%
 
 ---
 
@@ -50,10 +50,11 @@ Para concluir este tutorial, é recomendável ter acesso de administrador do AEM
 
 ## Vamos começar.
 
-Inicie o tutorial com o tema [Definir modelos de fragmento de conteúdo](content-fragment-models.md).
+Inicie o tutorial com [definindo Modelos de fragmento de conteúdo](content-fragment-models.md).
 
 ## Projeto do GitHub
 
-O código-fonte e os pacotes de conteúdo estão disponíveis nos [Guias do AEM - Projeto GitHub de GraphQL do WKND](https://github.com/adobe/aem-guides-wknd-graphql).
+O código-fonte e os pacotes de conteúdo estão disponíveis na pasta `basic-tutorial` no [AEM Guides - Projeto GitHub do WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial).
+
 
 Se você encontrar um problema com o tutorial ou o código, abra um [problema do GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
