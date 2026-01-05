@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f4f177f2745cb03c81011679b9d88eaadeb9cae3
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1891'
 ht-degree: 9%
 
 ---
@@ -179,7 +179,9 @@ Se você escolher o método de autenticação do **Aplicativo Web OAuth** ou do 
 
 ## Configure a instância do AEM para habilitar a comunicação do Projeto ADC{#configure-aem-instance}
 
-Em seguida, é necessário configurar a instância do AEM para habilitar a comunicação do projeto ADC acima. Com essa configuração, o ClientID do projeto ADC NÃO pode se comunicar com a instância do AEM e resulta em um erro 403 Proibido. Pense nessa configuração como uma regra de firewall para permitir que somente as ClientIDs permitidas se comuniquem com a instância do AEM.
+Em seguida, é necessário configurar a instância do AEM para habilitar a comunicação do projeto ADC acima.
+
+Sem essa configuração, o ClientID do projeto ADC NÃO pode se comunicar com a instância do AEM e resulta em um erro 403 Proibido. Pense nessa configuração como uma regra de firewall para permitir que somente as ClientIDs permitidas se comuniquem com a instância do AEM.
 
 Vamos seguir as etapas para configurar a instância do AEM para habilitar a comunicação do projeto ADC acima.
 
@@ -210,11 +212,16 @@ Vamos seguir as etapas para configurar a instância do AEM para habilitar a comu
 
 1. Confirme as alterações de configuração e envie as alterações para o repositório Git remoto ao qual o pipeline do Cloud Manager está conectado.
 
-1. Implante as alterações acima usando o [Pipeline de configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) na Cloud Manager.
+1. Implante as alterações acima usando o [Pipeline de configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline) na Cloud Manager.
 
    ![Implantar YAML](./assets/setup/config-pipeline.png)
 
-Observe que o arquivo `api.yaml` também pode ser instalado em um [RDE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/overview), [usando ferramentas de linha de comando](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Isso é útil para testar as alterações de configuração antes de implantá-las no ambiente de produção.
+Observe que o arquivo `api.yaml` também pode ser instalado em um [RDE](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview), [usando ferramentas de linha de comando](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Isso é útil para testar as alterações de configuração antes de implantá-las no ambiente de produção.
+
+>[!CAUTION]
+>
+>O arquivo YAML (`api.yaml`) é a única maneira de configurar a instância do AEM para habilitar a comunicação com o Projeto ADC. Outros métodos, como o uso de variáveis de ambiente, não são compatíveis com essa configuração.
+
 
 ## Próximas etapas
 
