@@ -12,10 +12,10 @@ badgeLicense: label="Exige uma licença" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '1386'
+ht-degree: 98%
 
 ---
 
@@ -27,10 +27,10 @@ Os ataques sofisticados são caracterizados por altas taxas de solicitação, pa
 
 >[!IMPORTANT]
 >
-> As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção do WAF contra DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
+> As regras de filtro de tráfego do WAF exigem uma licença adicional de Segurança estendida (antes chamada de Proteção WAF-DDoS) ou Segurança estendida para a área de saúde (antes chamada de Segurança aprimorada). As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469435/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Metas de aprendizagem
 

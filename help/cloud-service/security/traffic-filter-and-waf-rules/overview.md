@@ -11,10 +11,10 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 100%
+source-wordcount: '1195'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Você também aprenderá as diferenças entre o filtro de tráfego padrão e as 
 
 >[!IMPORTANT]
 >
-> As regras de filtro de tráfego do WAF exigem uma licença adicional de **Proteção do WAF contra DDoS** ou **Segurança aprimorada**. As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
+> As regras de filtro de tráfego do WAF exigem uma licença adicional de Segurança estendida (antes chamada de Proteção WAF-DDoS) ou Segurança estendida para a área de saúde (antes chamada de Segurança aprimorada). As regras de filtro de tráfego padrão estão disponíveis para clientes do Sites e do Forms por padrão.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
