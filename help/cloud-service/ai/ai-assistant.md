@@ -20,6 +20,6 @@ ht-degree: 6%
 
 Saiba como o [Assistente de IA do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) simplifica os fluxos de trabalho do Adobe Experience Manager. Buscar recursos, conhecer as práticas recomendadas, solucionar problemas e até criar tíquetes de suporte - é o seu companheiro inteligente no AEM. Aumente a produtividade com orientação, insights e suporte alimentados por IA, tudo em um só lugar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475363/?captions=por_br&learn=on&enablevpops)
 
 *Para acessar o Assistente do AEM AI, verifique se você configurou o acesso em seu ambiente do AEM seguindo o [guia de instalação](./setup.md#aem-ai-assistant).*
