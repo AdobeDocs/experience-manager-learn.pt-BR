@@ -28,7 +28,7 @@ Saiba como configurar o acesso ao Assistente de IA no Adobe Experience Manager u
 
 ### Agentes no AEM
 
-Para usar Agentes no AEM, primeiro você deve ter o acesso [AEM AI Assistant](#aem-ai-assistant) configurado. Os agentes no AEM devem ser provisionados pela Adobe. Para solicitar acesso aos Agentes na AEM, entre em contato com o representante da Adobe ou com o [Suporte da Adobe](https://experienceleague.adobe.com/en/support).
+Para usar Agentes no AEM, primeiro você deve ter o acesso [AEM AI Assistant](#aem-ai-assistant) configurado. Os agentes no AEM devem ser provisionados pela Adobe. Para solicitar acesso aos Agentes na AEM, entre em contato com o representante da Adobe ou com o [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/support).
 
 ## Playground
 
