@@ -48,7 +48,7 @@ O Experience Manager as a Cloud Service fornece recursos avançados de IA para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="Configurar IA no AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1767634731991" alt="Configurar IA no AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474071/?captions=por_br&format=jpeg&nocache=1767634731991" alt="Configurar IA no AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ O Experience Manager as a Cloud Service fornece recursos avançados de IA para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Agentes no AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1767634731999" alt="Agentes no AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475363/?captions=por_br&format=jpeg&nocache=1767634731999" alt="Agentes no AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
