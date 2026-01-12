@@ -22,6 +22,6 @@ ht-degree: 0%
 
 O Adobe Snapshot é uma ferramenta de demonstração visual criada para ilustrar o poder do Dynamic Media na entrega otimizada e dinâmica de imagens. Experimente com imagens de teste ou URLs do Dynamic Media para observar visualmente a saída de vários modificadores de imagem do Dynamic Media, cortes inteligentes e otimizações de Imagem inteligente para o tamanho do arquivo (com entrega de WebP e AVIF).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445568/?captions=por_br&learn=on)
 
 [Iniciar Instantâneo do Adobe](https://snapshot.scene7.com/)
