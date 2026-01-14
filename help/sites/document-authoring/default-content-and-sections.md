@@ -1,7 +1,7 @@
 ---
 title: Conteúdo e seções padrão
 description: Aprofunde-se nos conceitos de criação do documento de conteúdo e seções padrão.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,10 +12,10 @@ jira: KT-14468
 thumbnail: 3425702.jpeg
 duration: 91
 exl-id: 17c7919e-3216-4f71-a553-bc5b2e1b6014
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Aprofunde-se sobre os conceitos de criação do documento de conteúdo e seções padrão e como eles ajudam a criar um site melhor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437980/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)

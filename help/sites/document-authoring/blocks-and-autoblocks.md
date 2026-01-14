@@ -1,7 +1,7 @@
 ---
 title: Bloqueio e bloqueios automáticos na criação de documentos
 description: Como blocos e bloqueios automáticos são usados na criação de documentos.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,17 +12,17 @@ jira: KT-14468
 thumbnail: 3425702.jpeg
 duration: 119
 exl-id: a24123aa-486a-429d-bf36-b5f2873bb55a
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Blocos e autoblocos
+# Blocos e blocos automáticos
 
 {{edge-delivery-services}}
 
 Explore como os blocos e bloqueios automáticos são usados na criação de documentos e como eles podem melhorar o site e a experiência de criação.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439509/?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
