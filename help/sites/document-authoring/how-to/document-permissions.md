@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Saiba como conceder permissões a documentos com criação de documentos do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438106/?captions=por_br&learn=on)

@@ -25,4 +25,4 @@ ht-degree: 8%
 
 Saiba como adicionar texto alternativo a imagens em páginas criadas usando a criação de documentos do AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438680/?captions=por_br&learn=on)

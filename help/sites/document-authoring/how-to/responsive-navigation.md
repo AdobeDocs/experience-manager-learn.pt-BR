@@ -25,4 +25,4 @@ ht-degree: 16%
 
 Saiba como executar uma navegação responsiva na criação de documentos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438171/?captions=por_br&learn=on)

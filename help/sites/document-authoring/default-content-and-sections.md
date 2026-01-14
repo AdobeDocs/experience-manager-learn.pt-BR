@@ -25,4 +25,4 @@ ht-degree: 17%
 
 Aprofunde-se sobre os conceitos de criação do documento de conteúdo e seções padrão e como eles ajudam a criar um site melhor.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437980/?captions=por_br&learn=on)

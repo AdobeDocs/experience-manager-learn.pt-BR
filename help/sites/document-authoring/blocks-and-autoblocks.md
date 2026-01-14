@@ -25,4 +25,4 @@ ht-degree: 7%
 
 Explore como os blocos e bloqueios automáticos são usados na criação de documentos e como eles podem melhorar o site e a experiência de criação.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439509/?captions=por_br&learn=on)
