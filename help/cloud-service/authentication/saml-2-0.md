@@ -56,7 +56,7 @@ O fluxo típico de uma integração do AEM Publish SAML é o seguinte:
 
 ## Apresentação da configuração
 
->[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455338?captions=por_br&quality=12&learn=on)
 
 Este vídeo mostra a configuração da integração do SAML 2.0 com o AEM como um serviço de Cloud Service Publish e o uso do Okta como IDP.
 
