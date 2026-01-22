@@ -111,7 +111,7 @@ O certificado público do IDP é adicionado ao armazenamento global de confianç
 1. Deixe __o certificado de mapa para o usuário__ em branco.
 1. Selecione __Enviar__.
 1. O certificado recém-adicionado aparece acima do certificado Adicionar na __seção de arquivos__ CRT.
-1. Observe o alias ____, pois esse valor é usado na configuração[ OSGi do ](#saml-2-0-authentication-handler-osgi-configuration)manipulador SAML 2.0 Authentication.
+1. Observe o alias ____, pois esse valor é usado na configuração[&#x200B; OSGi do &#x200B;](#saml-2-0-authentication-handler-osgi-configuration)manipulador SAML 2.0 Authentication.
 1. Selecione __Salvar &amp;Fechar__.
 
 O Global Trust Store é configurado com o certificado público do IDP em AEM Autor, mas como o SAML só é usado em AEM Publish, o Global Trust Store deve ser replicado para AEM Publish para que o certificado público de IDP seja acessível lá.
@@ -330,7 +330,7 @@ O AEM usa os seguintes atributos de usuário, que podem ser preenchidos por meio
 1. Atualize os valores conforme necessário ao seu projeto. Consulte o glossário __de configuração do__ MANIPULADOR OSGi Authentication do SAML 2.0 acima para obter a configuração propriedade descrições. As `path` árvores de conteúdo devem ser protegidas por Grupos de usuários fechados (CUGs) e necessitam de autenticação e esse manipulador de autenticação deve ser responsável pela proteção.
 1. Recomenda-se, mas não é obrigatório, usar OSGi ambiente variáveis e segredos, quando os valores podem mudar de sincronizar com o ciclo de lançamento, ou quando os valores forem diferentes entre tipos e níveis de serviço ambiente semelhantes. Os valores padrão podem ser definidos usando a `$[env:..;default=the-default-value]"` sintaxe como mostrado acima.
 
-As configurações osGi por ambiente (`config.publish.dev``config.publish.stage`e `config.publish.prod`) podem ser definidas com atributos específicos se a configuração saml varia entre ambientes.
+As configurações osGi por ambiente (`config.publish.dev` `config.publish.stage`e `config.publish.prod`) podem ser definidas com atributos específicos se a configuração saml varia entre ambientes.
 
 ### Usar criptografia
 
@@ -425,7 +425,7 @@ Ao testar a autenticação SAML no AEM SDK local (`localhost:4503`), o IDP pode 
 }
 ```
 
-As configurações osGi por ambiente (`config.publish.dev``config.publish.stage`e `config.publish.prod`) podem ser definidas com atributos específicos se elas `alloworigin` variam e `allowedpaths` variam entre ambientes.
+As configurações osGi por ambiente (`config.publish.dev` `config.publish.stage`e `config.publish.prod`) podem ser definidas com atributos específicos se elas `alloworigin` variam e `allowedpaths` variam entre ambientes.
 
 ## Configurar AEM Dispatcher para permitir POSTs HTTP SAML
 
@@ -543,7 +543,7 @@ Quando essa migração é habilitada, ela é realizada durante usuário autentic
 
 Para instância, se antes da migração `user1` for um usuário local e for membro de grupo `group1`local, após a migração ocorrerão as seguintes alterações:
 `user1` torna-se um usuário externo. O atributo `rep:externalId` é adicionado ao perfil dele.
-`user1`torna-se membro de grupo externos: `group1;idp`não é mais membro direto de grupo locais: `user1``group1` é um membro do grupo local: `group1;idp`.`group1`
+`user1`torna-se membro de grupo externos: `group1;idp`não é mais membro direto de grupo locais: `user1` `group1` é um membro do grupo local: `group1;idp`.`group1`
 
 `user1` é, então, um membro do grupo local: `group1` embora a herança
 
