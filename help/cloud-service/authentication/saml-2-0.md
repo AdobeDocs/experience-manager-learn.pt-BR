@@ -68,7 +68,7 @@ As seguintes condições são necessárias ao configurar a autenticação SAML 2
 + AEM Acesso de administrador ao AEM as a Cloud Service ambiente
 + Acesso de administrador ao IDP
 + Opcionalmente, o acesso a um chaveiro público/privado usado para criptografar cargas SAML
-+ AEM Sites páginas (ou árvores página), publicadas em AEM Publish e [protegidas por Grupos fechados de usuários (CUGs)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ AEM Sites páginas (ou árvores página), publicadas em AEM Publish e [protegidas por Grupos fechados de usuários (CUGs)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 O SAML 2.0 é compatível somente para autenticar usos em AEM Publish ou Visualização. Para gerenciar a autenticação do AEM Author usando e o IDP, [integre o IDP ao Adobe IMS](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
 
@@ -334,7 +334,7 @@ As configurações osGi por ambiente (`config.publish.dev` `config.publish.stage
 
 ### Usar criptografia
 
-Ao [criptografar a asserção](#encrypting-the-authnrequest-and-saml-assertion) AuthnRequest e SAML, as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias`e `keyStorePassword`. Isso `keyStorePassword` contém um senha portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas sim injetado usando [valores de configuração secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Ao [criptografar a asserção](#encrypting-the-authnrequest-and-saml-assertion) AuthnRequest e SAML, as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias`e `keyStorePassword`. Isso `keyStorePassword` contém um senha portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas sim injetado usando [valores de configuração secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values)
 
 +++Opcionalmente, atualize a configuração do OSGi para usar criptografia
 
@@ -367,7 +367,7 @@ Ao [criptografar a asserção](#encrypting-the-authnrequest-and-saml-assertion) 
 
 + `useEncryption` definido como `true`
 + `spPrivateKeyAlias` contém o alias de entrada do keystore para a chave privada usada pela integração SAML.
-+ `keyStorePassword` contém uma [configuração secreta osGi variável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) contendo os `authentication-service` senha do reposicionamento de chaves do usuário.
++ `keyStorePassword` contém uma [configuração secreta osGi variável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values) contendo os `authentication-service` senha do reposicionamento de chaves do usuário.
 
 +++
 
@@ -453,7 +453,7 @@ A Associação de Grupo Dinâmica é um recurso no [Apache Jackrabbit Oak](https
 ### Como ativar a associação de grupo dinâmico para usuários de SAML em novos ambientes
 
 Para melhorar significativamente grupo desempenho da avaliação em novos AEM como ambientes Cloud Service, o ativação do recurso Associação de Grupo Dinâmico é recomendado em novos ambientes.
-Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para fazer isso, adicione a seguinte propriedade ao arquivo de configuração OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
