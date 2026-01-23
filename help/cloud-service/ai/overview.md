@@ -7,10 +7,10 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 9a2b7ee23132b5eac60f3eb2fd416fa26d0312db
+source-git-commit: 51dafa4f3f89c1b3057b411cdf142fec04ab797e
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 15%
+source-wordcount: '176'
+ht-degree: 18%
 
 ---
 
@@ -48,7 +48,7 @@ O Experience Manager as a Cloud Service fornece recursos avançados de IA para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="Configurar IA no AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474071/?captions=por_br&format=jpeg&nocache=1767634731991" alt="Configurar IA no AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1769184550491" alt="Configurar IA no AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,12 +66,35 @@ O Experience Manager as a Cloud Service fornece recursos avançados de IA para a
             </div>
         </div>
     </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AEM AI Assistant">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="./ai-assistant.md" title="Assistente de IA do AEM" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1769184550481" alt="Assistente de IA do AEM"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="./ai-assistant.md" target="_blank" rel="referrer" title="Assistente de IA do AEM">Assistente do AEM AI</a>
+                    </p>
+                    <p class="is-size-6">Saiba como o Assistente de IA fornece conhecimento e suporte sobre produtos no AEM.</p>
+                </div>
+                <a href="./ai-assistant.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assista</span>
+                    </a>
+            </div>
+        </div>
+    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Agents in AEM">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Agentes no AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475363/?captions=por_br&format=jpeg&nocache=1767634731999" alt="Agentes no AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3478455/?format=jpeg&nocache=1769184550500" alt="Agentes no AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +117,7 @@ O Experience Manager as a Cloud Service fornece recursos avançados de IA para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../sites/generative-ai/generate-variations.md" title="Gerar variações" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1767634732009" alt="Gerar variações"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1769184550510" alt="Gerar variações"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
