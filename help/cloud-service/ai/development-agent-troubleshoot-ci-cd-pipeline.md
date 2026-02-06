@@ -25,7 +25,7 @@ O Agente de Desenvolvimento do AEM ajuda equipes técnicas, incluindo desenvolve
 
 >[!TIP]
 >
-> Consulte também [Visão Geral dos Agentes no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) para obter uma lista completa dos Agentes disponíveis no AEM as a Cloud Service, suas funcionalidades e como obter acesso a eles.
+> Consulte também [Visão Geral dos Agentes no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) para obter uma lista completa dos Agentes disponíveis no AEM as a Cloud Service, suas funcionalidades e como obter acesso a eles.
 
 
 ## Visão geral
@@ -41,9 +41,9 @@ Para simplificar, este tutorial apresenta uma falha de teste de unidade no arqui
 Para seguir este tutorial, você precisa:
 
 - Assistente de IA e agentes no AEM ativados. Consulte [Configurar IA no AEM](./setup.md) para obter detalhes e observe que os playgrounds mencionados neste artigo não terão recursos do Agente de Desenvolvimento do AEM.
-- Acesso ao Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/) com uma função de Desenvolvedor ou Gerente de Programa. Consulte [definições de função](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions) para obter mais informações.
+- Acesso ao Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/) com uma função de Desenvolvedor ou Gerente de Programa. Consulte [definições de função](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles#role-definitions) para obter mais informações.
 - Um ambiente do AEM as a Cloud Service
-- Acesso aos agentes no AEM através do [programa Beta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
+- Acesso aos agentes no AEM através do [programa Beta](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)
 - O [Projeto do WKND Sites](https://github.com/adobe/aem-guides-wknd) foi clonado em seu computador local
 
 ### Recursos atuais do agente de desenvolvimento do AEM
@@ -122,7 +122,7 @@ Este tutorial usa a ramificação `tutorial/dev-agent/unit-test-failure` do proj
 
 ### Criar e configurar um pipeline de qualidade de código
 
-Este tutorial usa um pipeline de Qualidade de código (não produção) para acionar a falha do pipeline para a solução de problemas. Consulte [Introdução aos pipelines de CI/CD](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction) para obter mais informações sobre pipelines de qualidade do código.
+Este tutorial usa um pipeline de Qualidade de código (não produção) para acionar a falha do pipeline para a solução de problemas. Consulte [Introdução aos pipelines de CI/CD](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#introduction) para obter mais informações sobre pipelines de qualidade do código.
 
 - No Cloud Manager, navegue até a seção **Pipelines** e selecione **Adicionar** > **Adicionar pipeline de não produção**.
 - Na caixa de diálogo **Adicionar pipeline de não produção**, configure o seguinte:
@@ -210,17 +210,17 @@ O projeto de sites WKND inclui exemplos adicionais de problemas de código com f
 
 ![Comparar ramificações](./assets/dev-agent/compare-branches.png)
 
-Consulte também os [Pedidos de amostra](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) para obter mais ideias sobre como usar o Agente de Desenvolvimento do AEM.
+Consulte também os [Pedidos de amostra](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview#sample-prompts) para obter mais ideias sobre como usar o Agente de Desenvolvimento do AEM.
 
 ## Resumo
 
 Neste tutorial, você aprendeu a usar o AEM Development Agent para solucionar problemas e corrigir um pipeline de CI/CD com falha usando o Assistente de IA. Você também aprendeu como o Agentic AI acelera os fluxos de trabalho técnicos, fornecendo insights acionáveis e alterações de código.
 
-Comece a usar o Agente de Desenvolvimento da AEM e outros Agentes no AEM para acelerar seus fluxos de trabalho. Consulte [Visão geral dos Agentes no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) para obter mais informações.
+Comece a usar o Agente de Desenvolvimento da AEM e outros Agentes no AEM para acelerar seus fluxos de trabalho. Consulte [Visão geral dos Agentes no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview) para obter mais informações.
 
 ## Recursos adicionais
 
 - [IA no Experience Manager](./overview.md)
-- [Visão geral dos agentes no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
-- [Visão geral do agente de desenvolvimento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
-- [Visão geral dos agentes no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [Visão geral dos agentes no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
+- [Visão geral do agente de desenvolvimento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/development/overview)
+- [Visão geral dos agentes no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/overview)
