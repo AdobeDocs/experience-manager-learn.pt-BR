@@ -23,7 +23,7 @@ ht-degree: 42%
 >id="aemcloud_adobeims_productprofiles"
 >title="Perfis de produtos do Adobe IMS"
 >abstract="Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros. Saiba mais sobre os perfis de produto do Adobe IMS."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gerenciamento de produtos e acesso do usuário no Admin Console"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR#introduction" text="Gerenciamento de produtos e acesso do usuário no Admin Console"
 
 Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros.
 
@@ -31,4 +31,4 @@ Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um 
 
 ## Recursos adicionais
 
-+ [Gerenciando Produtos e o Acesso de Usuários na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Gerenciando Produtos e o Acesso de Usuários na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR#managing-products-and-user-access-in-admin-console)
