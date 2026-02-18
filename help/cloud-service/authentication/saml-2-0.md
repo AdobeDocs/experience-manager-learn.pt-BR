@@ -68,7 +68,7 @@ Os seguintes itens são necessários ao configurar a autenticação SAML 2.0:
 + Acesso do administrador do AEM ao ambiente do AEM as a Cloud Service
 + Acesso de administrador ao IDP
 + Opcionalmente, acesso a um par de chaves público/privado usado para criptografar cargas SAML
-+ Páginas do AEM Sites (ou árvores de páginas), publicadas no AEM Publish e [protegidas por Grupos de Usuários Fechados (CUGs)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Páginas do AEM Sites (ou árvores de páginas), publicadas no AEM Publish e [protegidas por Grupos de Usuários Fechados (CUGs)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 O SAML 2.0 é compatível apenas com usos de autenticação para Publicação ou Pré-visualização do AEM. Para gerenciar a autenticação do AEM Author usando e o IDP, [integre o IDP ao Adobe IMS](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
 
@@ -334,7 +334,7 @@ As configurações de OSGi por ambiente (`config.publish.dev`, `config.publish.s
 
 ### Usar criptografia
 
-Ao [criptografar a solicitação AuthnRequest e a instrução SAML](#encrypting-the-authnrequest-and-saml-assertion), as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword`. O `keyStorePassword` contém uma senha, portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas inserido usando [valores de configuração secreta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Ao [criptografar a solicitação AuthnRequest e a instrução SAML](#encrypting-the-authnrequest-and-saml-assertion), as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword`. O `keyStorePassword` contém uma senha, portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas inserido usando [valores de configuração secreta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values)
 
 +++Opcionalmente, atualize a configuração do OSGi para usar criptografia
 
@@ -367,7 +367,7 @@ Ao [criptografar a solicitação AuthnRequest e a instrução SAML](#encrypting-
 
 + `useEncryption` definido como `true`
 + `spPrivateKeyAlias` contém o alias de entrada do keystore para a chave privada usada pela integração SAML.
-+ `keyStorePassword` contém uma [variável de configuração de segredo OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) contendo a senha do armazenamento de chaves do usuário `authentication-service`.
++ `keyStorePassword` contém uma [variável de configuração de segredo OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values) contendo a senha do armazenamento de chaves do usuário `authentication-service`.
 
 +++
 
@@ -453,7 +453,7 @@ A Associação de Grupo Dinâmica é um recurso no [Apache Jackrabbit Oak](https
 ### Como habilitar a Associação de Grupo Dinâmico para Usuários SAML em novos ambientes
 
 Para melhorar significativamente o desempenho da avaliação de grupo em novos ambientes do AEM as a Cloud Service, a ativação do recurso Associação de grupo dinâmico é recomendada em novos ambientes.
-Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para fazer isso, adicione a seguinte propriedade ao arquivo de configuração OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
@@ -623,7 +623,7 @@ public void postSyncUserProcess(
 
 **Importante:** para modificar propriedades de usuário no repositório, a implementação do gancho requer:
 + Uma referência `SlingRepository` inserida via `@Reference`
-+ Um [usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado com as permissões apropriadas (configurado no &quot;Aditamento do Serviço do Mapeador de Usuários do Apache Sling Service&quot;)
++ Um [usuário do serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado com as permissões apropriadas (configurado no &quot;Aditamento do Serviço do Mapeador de Usuários do Apache Sling Service&quot;)
 + Gerenciamento adequado de sessão com blocos try-catch-finally
 
 ### Implementação de um gancho SAML personalizado
@@ -809,7 +809,7 @@ O artefato `aem-sdk-api` contém todas as interfaces SAML do Adobe Granite neces
 
 #### Etapa 4: Configurar o usuário de serviço (se estiver modificando o repositório)
 
-Se o gancho SAML precisar modificar as propriedades do usuário no repositório (como mostrado no exemplo `postSyncUserProcess`), um [usuário de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) deve ser configurado:
+Se o gancho SAML precisar modificar as propriedades do usuário no repositório (como mostrado no exemplo `postSyncUserProcess`), um [usuário de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) deve ser configurado:
 
 1. Criar um mapeamento de usuário de serviço no projeto em `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -852,8 +852,8 @@ Implante o gancho SAML personalizado no AEM as a Cloud Service:
 + **Testando**: teste os ganchos personalizados completamente em ambientes inferiores antes de implantar na produção
 + **Vários ganchos**: várias implementações de gancho SAML podem ser configuradas; todos os ganchos correspondentes serão executados. Use a propriedade `service.ranking` no componente OSGi para controlar a ordem de execução (valores de classificação mais altos são executados primeiro). Para reutilizar um gancho SAML em várias configurações de fábrica do Manipulador de autenticação SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), crie várias configurações de gancho (configurações de fábrica OSGi), cada uma com um `idpIdentifier` diferente que corresponda ao respectivo Manipulador de autenticação SAML
 + **Segurança**: Validar e limpar todos os dados de asserções SAML antes de usá-los na lógica comercial
-+ **Acesso ao repositório**: Ao modificar propriedades de usuário em `postSyncUserProcess`, sempre use um [usuário de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) com as permissões apropriadas em vez de sessões administrativas
-+ **Permissões de usuário do serviço**: conceder permissões mínimas necessárias ao [usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por exemplo, somente `jcr:read` e `rep:write` em `/home/users`, sem direitos administrativos completos)
++ **Acesso ao repositório**: Ao modificar propriedades de usuário em `postSyncUserProcess`, sempre use um [usuário de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) com as permissões apropriadas em vez de sessões administrativas
++ **Permissões de usuário do serviço**: conceder permissões mínimas necessárias ao [usuário do serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por exemplo, somente `jcr:read` e `rep:write` em `/home/users`, sem direitos administrativos completos)
 + **Gerenciamento de sessão**: sempre use blocos try-catch-finally para garantir que as sessões de repositório estejam fechadas corretamente, mesmo que ocorram exceções
 + **Tempo de sincronização do usuário**: o gancho `postSyncUserProcess` é executado depois que o usuário é sincronizado com o OAK, portanto, é garantido que o objeto do usuário exista no repositório nesse ponto
 
