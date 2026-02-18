@@ -7,10 +7,10 @@ role: Admin
 level: Beginner
 jira: KT-5000
 thumbnail: 39156.jpg
-last-substantial-update: 2026-02-06T00:00:00Z
+last-substantial-update: 2026-02-18T00:00:00Z
 exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
 duration: 312
-source-git-commit: fa6f5b0019ae0f965c7ff2738bb942dd30185662
+source-git-commit: b30dc712c04284eabb06be46af40dd753f8a51e0
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 42%
@@ -23,12 +23,12 @@ ht-degree: 42%
 >id="aemcloud_adobeims_productprofiles"
 >title="Perfis de produtos do Adobe IMS"
 >abstract="Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros. Saiba mais sobre os perfis de produto do Adobe IMS."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR#introduction" text="Gerenciamento de produtos e acesso do usuário no Admin Console"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gerenciamento de produtos e acesso do usuário no Admin Console"
 
 Os perfis de produtos do Adobe IMS permitem que os usuários façam logon em um serviço do AEM Author e fornecem uma linha de base de acesso, dependendo do perfil de produto do qual eles são membros.
 
->[!VIDEO](https://video.tv.adobe.com/v/327580?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
 
 ## Recursos adicionais
 
-+ [Gerenciando Produtos e o Acesso de Usuários na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR#managing-products-and-user-access-in-admin-console)
++ [Gerenciando Produtos e o Acesso de Usuários na documentação do Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
