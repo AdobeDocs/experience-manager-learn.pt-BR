@@ -10,10 +10,10 @@ jira: KT-20288
 thumbnail: KT-20288.png
 last-substantial-update: 2026-02-09T00:00:00Z
 exl-id: 287894ea-9cc1-4c27-ac7e-967ad46f4789
-source-git-commit: effacd58725dab502f6fb6a4750646c1ea956de2
+source-git-commit: 08dd5006ebf4ebd94e8bc60594f8f1541feb810f
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 3%
+source-wordcount: '603'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +23,29 @@ Saiba como localizar e remover APIs obsoletas no AEM as a Cloud Service.
 
 ## Visão geral
 
-O **Centro de Ações** da AEM as a Cloud Service notifica você sobre _APIs obsoletas_ em seu projeto. Para garantir que seu aplicativo esteja seguro e com desempenho e que você possa continuar implantando o código usando os pipelines do Cloud Manager, remova as APIs obsoletas do seu projeto.
+Para garantir que seu aplicativo esteja seguro e com desempenho e que você possa continuar implantando o código usando os pipelines do Cloud Manager, remova as APIs obsoletas do seu projeto.
 
 Neste tutorial, você aprenderá a localizar e remover APIs obsoletas do ambiente do AEM as a Cloud Service usando o [Plug-in Maven do AEM Analyzer](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
+
+## Notificações sobre APIs obsoletas
+
+O uso e a atenção às APIs obsoletas para corrigi-las são relatados regularmente. Vamos analisar alguns exemplos.
+
+- O **Centro de Ações** da AEM as a Cloud Service notifica você sobre _APIs obsoletas_ em seu projeto.
+  ![APIs obsoletas no Centro de Ações](./assets/deprecated-apis/actions-center-deprecated-apis.png)
+
+- A etapa **Verificação de código** do pipeline do Cloud Manager relata APIs obsoletas no seu projeto, revise o relatório **Detalhes de download** para ver a lista completa de APIs obsoletas.
+  ![APIs obsoletas na verificação de código](./assets/deprecated-apis/code-scanning-summary.png)
+
+- A etapa **Preparação de Artefato** do pipeline do Cloud Manager relata APIs obsoletas em seu projeto, **Log de download** e procure _Avisos do analisador_ no arquivo de log.
+
+  ```
+  2026-02-20 15:40:48.376 Analyser warnings have been found 
+  2026-02-20 15:40:48.376 The analyser found the following warnings for author and publish : 
+  2026-02-20 15:40:48.376 [region-deprecated-api] com.adobe.aem.guides:aem-guides-wknd.core:4.0.5-SNAPSHOT: Usage of deprecated package found : org.apache.commons.lang : Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. Deprecated since 2021-04-30 For removal : 2021-12-31 (com.adobe.aem.guides:aem-guides-wknd.all:4.0.5-SNAPSHOT)
+  2026-02-20 15:40:56.458 Convert Merge Analyse finished.
+  ```
+
 
 ## Como encontrar APIs obsoletas
 
@@ -39,7 +59,7 @@ Siga estas etapas para encontrar APIs obsoletas no projeto do AEM as a Cloud Ser
 
      ```xml
      ...
-     <aemanalyser.version>1.6.14</aemanalyser.version> <!-- Latest released version as of 09-Feb-2026 -->
+     <aemanalyser.version>1.6.16</aemanalyser.version> <!-- Latest released version as of 20-Feb-2026 -->
      ...
      <!-- AEM Analyser Plugin -->
      <plugin>
@@ -55,7 +75,7 @@ Siga estas etapas para encontrar APIs obsoletas no projeto do AEM as a Cloud Ser
 
      ```xml
      ...
-     <aem.sdk.api>2026.2.24288.20260204T121510Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 09-Feb-2026 -->
+     <aem.sdk.api>2026.2.24464.20260214T050318Z-260100</aem.sdk.api> <!-- Latest available AEM SDK version as of 20-Feb-2026 -->
      ...
      ```
 
@@ -117,10 +137,10 @@ O AEM Analyzer relata **o que** está obsoleto e fornece a **recomendação** so
 
 | Tipo de aviso do analisador | O que ele indica | Ação recomendada | Referência |
 | --------------------- | ----------------- | ------------------ | --------- |
-| API do AEM obsoleta | A API deve ser removida do AEM as a Cloud Service | Substituir o uso pela API pública compatível | [Diretrizes para remoção da API](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Pacote ou classe do AEM obsoleto | Não há mais suporte para pacote ou classe | Refatorar código para usar a alternativa recomendada | [APIs obsoletas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
-| Biblioteca de terceiros obsoleta | A biblioteca não será compatível com SDKs futuros | Atualizar a dependência e o uso de refatoração | [Diretrizes gerais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Padrões Sling/OSGi obsoletos | Anotações ou APIs herdadas detectadas | Migrar para APIs modernas do Sling e OSGi | [Remoção de padrões Sling/OSGi](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| API do AEM obsoleta | A API deve ser removida do AEM as a Cloud Service | Substituir o uso pela API pública compatível | [Diretrizes para remoção da API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Pacote ou classe do AEM obsoleto | Não há mais suporte para pacote ou classe | Refatorar código para usar a alternativa recomendada | [APIs obsoletas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
+| Biblioteca de terceiros obsoleta | A biblioteca não será compatível com SDKs futuros | Atualizar a dependência e o uso de refatoração | [Diretrizes gerais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Padrões Sling/OSGi obsoletos | Anotações ou APIs herdadas detectadas | Migrar para APIs modernas do Sling e OSGi | [Remoção de padrões Sling/OSGi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
 | Remoção planejada (data futura) | A API ainda funciona, mas a remoção é imposta posteriormente | Agendar limpeza antes de aplicar o pipeline | [Notas de versão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/home) |
 
 ### Orientação prática
@@ -134,4 +154,4 @@ A correção antecipada de APIs obsoletas mantém o projeto **seguro para atuali
 ## Recursos adicionais
 
 - [Plug-in Maven do AEM Analyzer](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
-- [Recursos e APIs obsoletos e removidos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
+- [Recursos e APIs obsoletos e removidos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
