@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
+source-git-commit: 146cb524c9ff10d6e4a836c0c14bdcabb553ef5d
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 97%
 
 + Pesquisa e descoberta{#search-and-discovery}
    + [Pesquisar](./search-and-discovery/search.md)
-   + [Pesquisa contextual](./search-and-discovery/contextual-search.md)
+   + [Pesquisa com IA](./search-and-discovery/ai-search.md)
    + [Integração com o Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Coleções](./search-and-discovery/collections.md)
    + [Impulsionar pesquisa](./search-and-discovery/search-boost.md)
@@ -207,4 +207,4 @@ ht-degree: 97%
 + Implantação{#deployment}
    + [Multilocação e desenvolvimento simultâneo](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets-essentials/overview){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=pt-BR){target=_blank}
