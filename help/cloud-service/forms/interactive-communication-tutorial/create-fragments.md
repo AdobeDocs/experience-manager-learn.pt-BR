@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Saiba como desenvolver fragmentos reutilizáveis para documentos de comunicação interativa. Otimize os layouts e garanta a vinculação de dados dinâmicos para as seções de endereço do cliente e corpo da carta. Aprimorar o design de documentos com controles de formatação, posicionamento e margem.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480059/?captions=por_br&learn=on&enablevpops)
 
 ## Próximas etapas
 

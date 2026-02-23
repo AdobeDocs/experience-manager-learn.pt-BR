@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Descubra como criar modelos de comunicação interativa para padronizar as comunicações de saída. Esses modelos garantem consistência, governança e alinhamento da marca nas comunicações com o cliente. Saiba mais sobre o processo de criação, edição e habilitação de modelos para uso futuro, usando ferramentas como o IC Web Designer e a Biblioteca de objetos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480029/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480047/?captions=por_br&learn=on&enablevpops)
 
 ## Próximas etapas
 
