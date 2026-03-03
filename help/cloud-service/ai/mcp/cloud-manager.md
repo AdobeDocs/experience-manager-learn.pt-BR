@@ -20,4 +20,4 @@ ht-degree: 0%
 
 O Cloud Manager MCP Server permite que os desenvolvedores do AEM executem pipelines, depurem falhas e acessem ferramentas do Cloud Manager diretamente no IDE - sem alternância de contexto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480347/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
