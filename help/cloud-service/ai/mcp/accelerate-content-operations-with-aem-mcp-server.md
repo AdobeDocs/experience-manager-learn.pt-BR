@@ -8,19 +8,21 @@ doc-type: tutorial
 duration: null
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20474
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+exl-id: 843209cb-2f31-466c-b5b1-a9fb26965bc0
+source-git-commit: 6a0eb6e8f5fa9d7152f46d6b8054dc89ff656507
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-
 # Acelere as operações de conteúdo do AEM usando o servidor MCP de conteúdo
 
 Use o **Servidor MCP de Conteúdo** de um IDE alimentado por IA, como o [IDE de Cursor](https://www.cursor.com/), para trabalhar com conteúdo do AEM em linguagem natural, sem código de API de baixo nível ou navegação pela interface do usuário.
 
 Neste tutorial, você _revisa_ detalhes do fragmento de conteúdo Adventure, _atualiza_ um fragmento (por exemplo, o preço de uma aventura) e _verifica_ a alteração no [aplicativo WKND Adventures React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app) de seu IDE em um _ambiente AEM inferior_ (RDE ou Desenvolvimento) sem sair do fluxo do MCP.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480895/?learn=on&enablevpops)
 
 ## Visão geral
 
@@ -92,7 +94,7 @@ Em seguida, configure o [Aplicativo WKND Adventures React](https://github.com/ad
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Implante o projeto [WKND Site](https://github.com/adobe/aem-guides-wknd) no RDE. Para obter etapas detalhadas, consulte [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
+1. Implante o projeto [WKND Site](https://github.com/adobe/aem-guides-wknd) no RDE. Para obter etapas detalhadas, consulte [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-aem-artifacts-using-the-aem-rde-plugin).
 
 1. Abra a pasta `react-app` no IDE.
 
