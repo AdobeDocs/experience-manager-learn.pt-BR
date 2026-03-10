@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 411
-source-git-commit: 99e3cadc71ca4e26f9e4034085788dfc5407d1bb
+source-git-commit: dce730466f7004798dd57d7c030dccf5c15a9513
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1797'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 7%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
->title="AEM Runtime local"
+>title="Tempo de execução local do AEM local"
 >abstract="O Adobe Experience Manager (AEM) pode ser executado localmente usando o Quickstart Jar do SDK do AEM as a Cloud Service. Isso permite que desenvolvedores implantem e testem códigos, configurações e conteúdo personalizados antes de enviá-los ao controle de origem e implantá-los em um ambiente do AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR" text="SDK do AEM as a Cloud Service"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Baixar SDK do AEM as a Cloud Service"
@@ -35,8 +35,8 @@ Observe que `~` é usado como abreviação para o Diretório do Usuário. No Win
 
 O Experience Manager é um aplicativo Java™ e, portanto, requer o Oracle Java™ SDK para oferecer suporte às ferramentas de desenvolvimento.
 
-1. [Baixe e instale o Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) mais recente
-1. Verifique se o Oracle Java™ 11 SDK está instalado executando o comando:
+1. [Baixe e instale o Java™ JDK 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+21*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=11) mais recente
+1. Verifique se o JDK do Oracle Java™ 21 está instalado executando o comando:
 
 >[!BEGINTABS]
 
@@ -60,7 +60,9 @@ $ java --version
 
 >[!ENDTABS]
 
-![Java](./assets/aem-runtime/java.png)
+>[!CAUTION]
+>
+>Se você estiver executando uma versão mais antiga do AEM SDK, talvez precise [baixar o JDK do Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=java*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=11). No entanto, é prática recomendada usar a versão mais recente do AEM SDK.
 
 ## Baixar o AEM as a Cloud Service SDK
 
@@ -88,7 +90,7 @@ O Serviço de autor local do AEM fornece aos desenvolvedores uma experiência lo
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfigurar.
 
    Você *não pode* iniciar o AEM como Cloud Service Quickstart Jar [clicando duas vezes](#troubleshooting-double-click).
-1. Acesse o Serviço de Autor do AEM local em [http://localhost:4502](http://localhost:4502) em um navegador da Web
+1. Acesse o Serviço de Autor do AEM local em [http://localhost:4502](http://localhost:4502) em um navegador da Web. Ao iniciar pela primeira vez, talvez seja necessário aguardar alguns minutos para que a instalação seja concluída. Normalmente, uma guia do navegador é aberta automaticamente.
 
 >[!BEGINTABS]
 
@@ -133,7 +135,13 @@ O Serviço de publicação local do AEM fornece aos desenvolvedores a experiênc
       + Forneça a senha do administrador como `admin`. Qualquer senha de administrador é aceitável, no entanto, é recomendável usar o padrão para desenvolvimento local para reduzir a necessidade de reconfigurar.
 
    Você *não pode* iniciar o AEM como Cloud Service Quickstart Jar [clicando duas vezes](#troubleshooting-double-click).
-1. Acesse o Serviço de Publicação do AEM local em [http://localhost:4503](http://localhost:4503) em um navegador da Web
+
+1. Você pode clonar e implantar seu projeto do AEM ou um exemplo de [Projeto do AEM WKND Sites](https://github.com/adobe/aem-guides-wknd) no tempo de execução local do AEM usando os seguintes comandos:
+
+```shell
+$ cd <your-aem-project-directory or aem-guides-wknd>
+$ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
+```
 
 >[!BEGINTABS]
 
@@ -166,6 +174,40 @@ $ java -jar aem-publish-p4503.jar
 
 >[!ENDTABS]
 
+## Simular distribuição de conteúdo {#content-distribution}
+
+Em um ambiente de Cloud Service verdadeiro, o conteúdo é distribuído do Serviço de Autor para o Serviço de Publicação usando a [Distribuição de Conteúdo de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e o Pipeline do Adobe. O [Adobe Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) é um microsserviço isolado disponível apenas no ambiente de nuvem.
+
+Durante o desenvolvimento, pode ser desejável simular a distribuição de conteúdo usando o serviço local de Autor e Publicação. Isso pode ser feito ativando os agentes de replicação herdados.
+
+>[!NOTE]
+>
+> Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
+
+1. Faça logon no serviço **Author** e navegue até [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
+1. Clique em **Agente Padrão (publicação)** para abrir o agente de Replicação padrão.
+1. Clique em **Editar** para abrir a configuração do agente.
+1. Na guia **Configurações**, atualize os seguintes campos:
+
+   + **Habilitado** - verificar verdadeiro
+   + **Id de usuário agente** - Deixe este campo vazio
+
+   ![Configuração do Agente de Replicação - Configurações](assets/aem-runtime/settings-config.png)
+
+1. Na guia **Transporte**, atualize os seguintes campos:
+
+   + **URI** - `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
+   + **Usuário** - `admin`
+   + **Senha** - `admin`
+
+   ![Configuração do Agente de Replicação - Transporte](assets/aem-runtime/transport-config.png)
+
+1. Clique em **Ok** para salvar a configuração e habilitar o Agente de Replicação **Padrão**.
+1. Agora é possível fazer alterações no conteúdo no serviço do Autor e publicá-las no serviço de Publicação.
+
+   ![Publicar página](assets/aem-runtime/publish-page-changes.png)
+
+1. Você pode exibir o conteúdo publicado em `http://localhost:4503/<your-page-path>.html`. Normalmente, não é necessário fazer logon no serviço de Publicação para visualizar o conteúdo publicado. No entanto, se você encontrar problemas ou revisar logs, configurações etc., poderá fazer logon no serviço de Publicação em [http://localhost:4503/libs/granite/core/content/login.html](http://localhost:4503/libs/granite/core/content/login.html).
 
 ## Configurar serviços locais do AEM no modo de pré-lançamento
 
@@ -206,39 +248,6 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 >[!ENDTABS]
 
-## Simular distribuição de conteúdo {#content-distribution}
-
-Em um ambiente de Cloud Service verdadeiro, o conteúdo é distribuído do Serviço de Autor para o Serviço de Publicação usando a [Distribuição de Conteúdo de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e o Pipeline do Adobe. O [Adobe Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=pt-BR#content-distribution) é um microsserviço isolado disponível apenas no ambiente de nuvem.
-
-Durante o desenvolvimento, pode ser desejável simular a distribuição de conteúdo usando o serviço local de Autor e Publicação. Isso pode ser feito ativando os agentes de replicação herdados.
-
->[!NOTE]
->
-> Os agentes de replicação só estão disponíveis para uso no JAR do Quickstart local e fornecem apenas uma simulação da distribuição de conteúdo.
-
-1. Faça logon no serviço **Author** e navegue até [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
-1. Clique em **Agente Padrão (publicação)** para abrir o agente de Replicação padrão.
-1. Clique em **Editar** para abrir a configuração do agente.
-1. Na guia **Configurações**, atualize os seguintes campos:
-
-   + **Habilitado** - verificar verdadeiro
-   + **Id de usuário agente** - Deixe este campo vazio
-
-   ![Configuração do Agente de Replicação - Configurações](assets/aem-runtime/settings-config.png)
-
-1. Na guia **Transporte**, atualize os seguintes campos:
-
-   + **URI** - `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
-   + **Usuário** - `admin`
-   + **Senha** - `admin`
-
-   ![Configuração do Agente de Replicação - Transporte](assets/aem-runtime/transport-config.png)
-
-1. Clique em **Ok** para salvar a configuração e habilitar o Agente de Replicação **Padrão**.
-1. Agora é possível fazer alterações no conteúdo no serviço do Autor e publicá-las no serviço de Publicação.
-
-![Publicar página](assets/aem-runtime/publish-page-changes.png)
-
 ## Modos de inicialização do Quickstart Jar
 
 O nome do Quickstart Jar, `aem-<tier>_<environment>-p<port number>.jar` especifica como ele será iniciado. Depois que o AEM é iniciado em um nível específico, é criado ou publicado, ele não pode ser alterado para o nível alternativo. Para fazer isso, a pasta `crx-Quickstart` gerada durante a primeira execução deve ser excluída e o Quickstart Jar deve ser executado novamente. O ambiente e as portas podem ser alterados, no entanto, eles exigem a interrupção/início da instância local do AEM.
@@ -271,7 +280,7 @@ Para interromper um tempo de execução local do AEM, o serviço de Autor ou Pub
 
 ## Tarefas opcionais de configuração de tempo de execução do AEM local
 
-+ As __variáveis de ambiente de configuração OSGi e as variáveis secretas__ são [especialmente definidas para o tempo de execução local do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#local-development), em vez de gerenciá-las usando a interface de linha de comando aio.
++ As __variáveis de ambiente de configuração OSGi e as variáveis secretas__ são [especialmente definidas para o tempo de execução local do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), em vez de gerenciá-las usando a interface de linha de comando aio.
 
 ## Quando atualizar o Quickstart Jar
 
@@ -364,9 +373,9 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-Isso ocorre porque o AEM as a Cloud Service requer o Java™ SDK 11 e você está executando uma versão diferente, provavelmente o Java™ 8. Para resolver esse problema, baixe e instale o [Oracle Java™ SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14).
+Isso ocorre porque o AEM as a Cloud Service requer o Java™ JDK 21 e você está executando uma versão diferente, provavelmente o Java™ 11 ou 8. Para resolver esse problema, baixe e instale o [Oracle Java™ JDK 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Java*+21*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=11).
 
-Depois que o Oracle Java™ 11 SDK estiver instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
+Depois que o JDK do Oracle Java™ 21 estiver instalado, verifique se essa é a versão ativa executando o comando na linha de comando:
 
 >[!BEGINTABS]
 
