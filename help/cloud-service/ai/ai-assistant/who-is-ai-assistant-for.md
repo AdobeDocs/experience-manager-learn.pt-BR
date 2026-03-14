@@ -20,5 +20,5 @@ ht-degree: 0%
 
 O AI Assistant melhora a produtividade em várias funções no Adobe Experience Manager. Os autores de conteúdo simplificam a criação e a entrega de conteúdo, as equipes técnicas simplificam os fluxos de trabalho e a solução de problemas, e os gerentes tomam decisões informadas mais rapidamente. Com recursos como orientação passo a passo, respostas instantâneas e prompts pré-construídos, o Assistente de IA garante que as equipes trabalhem com eficiência e se mantenham à frente. Assista para saber como o Assistente de IA oferece suporte às suas funções e metas de equipe.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481163/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481168/?captions=por_br&learn=on&enablevpops)
 
