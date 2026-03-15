@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **Importante:** para modificar propriedades de usuário no repositório, a implementação do gancho requer:
 
 + Uma referência `SlingRepository` inserida via `@Reference`
-+ Um [usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado com as permissões apropriadas (configurado no &quot;Aditamento do Serviço do Mapeador de Usuários do Apache Sling Service&quot;)
++ Um [usuário do serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configurado com as permissões apropriadas (configurado no &quot;Aditamento do Serviço do Mapeador de Usuários do Apache Sling Service&quot;)
 + Gerenciamento adequado de sessão com blocos try-catch-finally
 
 ## Implementar um gancho SAML personalizado
@@ -267,7 +267,7 @@ O artefato `aem-sdk-api` contém todas as interfaces SAML do Adobe Granite neces
 
 ### Configurar usuário do serviço (opcional)
 
-Se o gancho SAML precisar modificar o conteúdo no repositório JCR do AEM, como as propriedades do usuário (conforme mostrado no exemplo `postSyncUserProcess`), um [usuário de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) deve ser configurado:
+Se o gancho SAML precisar modificar o conteúdo no repositório JCR do AEM, como as propriedades do usuário (conforme mostrado no exemplo `postSyncUserProcess`), um [usuário de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) deve ser configurado:
 
 1. Criar um mapeamento de usuário de serviço no projeto em `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json`:
 
@@ -310,7 +310,7 @@ Implante o gancho SAML personalizado no AEM as a Cloud Service:
 + **Testando**: teste os ganchos personalizados completamente em ambientes inferiores antes de implantar na produção
 + **Vários ganchos**: várias implementações de gancho SAML podem ser configuradas; todos os ganchos correspondentes serão executados. Use a propriedade `service.ranking` no componente OSGi para controlar a ordem de execução (valores de classificação mais altos são executados primeiro). Para reutilizar um gancho SAML em várias configurações de fábrica do Manipulador de autenticação SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), crie várias configurações de gancho (configurações de fábrica OSGi), cada uma com um `idpIdentifier` diferente que corresponda ao respectivo Manipulador de autenticação SAML
 + **Segurança**: Validar e limpar todos os dados de asserções SAML antes de usá-los na lógica comercial
-+ **Acesso ao repositório**: Ao modificar propriedades de usuário em `postSyncUserProcess`, sempre use um [usuário de serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) com as permissões apropriadas em vez de sessões administrativas
-+ **Permissões de usuário do serviço**: conceder permissões mínimas necessárias ao [usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por exemplo, somente `jcr:read` e `rep:write` em `/home/users`, sem direitos administrativos completos)
++ **Acesso ao repositório**: Ao modificar propriedades de usuário em `postSyncUserProcess`, sempre use um [usuário de serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) com as permissões apropriadas em vez de sessões administrativas
++ **Permissões de usuário do serviço**: conceder permissões mínimas necessárias ao [usuário do serviço](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (por exemplo, somente `jcr:read` e `rep:write` em `/home/users`, sem direitos administrativos completos)
 + **Gerenciamento de sessão**: sempre use blocos try-catch-finally para garantir que as sessões de repositório estejam fechadas corretamente, mesmo que ocorram exceções
 + **Tempo de sincronização do usuário**: o gancho `postSyncUserProcess` é executado depois que o usuário é sincronizado com o OAK, portanto, é garantido que o objeto do usuário exista no repositório nesse ponto

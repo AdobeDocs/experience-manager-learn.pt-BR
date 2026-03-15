@@ -66,7 +66,7 @@ Os seguintes itens são necessários ao configurar a autenticação SAML 2.0:
 + Acesso do administrador do AEM ao ambiente do AEM as a Cloud Service
 + Acesso de administrador ao IDP
 + Opcionalmente, acesso a um par de chaves público/privado usado para criptografar cargas SAML
-+ Páginas do AEM Sites (ou árvores de páginas), publicadas no AEM Publish e [protegidas por Grupos de Usuários Fechados (CUGs)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Páginas do AEM Sites (ou árvores de páginas), publicadas no AEM Publish e [protegidas por Grupos de Usuários Fechados (CUGs)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 O SAML 2.0 é compatível apenas com usos de autenticação para Publicação ou Pré-visualização do AEM. Para gerenciar a autenticação do AEM Author usando e o IDP, [integre o IDP ao Adobe IMS](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
 
@@ -74,7 +74,7 @@ O SAML 2.0 é compatível apenas com usos de autenticação para Publicação ou
 
 O SAML 2.0 é compatível com o AEM as a Cloud Service, incluindo a Visualização do AEM. No entanto, as configurações SAML no AEM dependem das configurações OSGi, e tanto o AEM Preview quanto o AEM Publish compartilham a mesma resolução de modo de execução OSGi (`config.publish`). Como resultado, não é possível criar arquivos de configurações SAML separados para Pré-visualização e Publicação.
 
-Em vez disso, use os [valores de configuração específicos do ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) nas configurações do OSGi e [defina os valores de variáveis apropriados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) para os ambientes de visualização e do Publish.
+Em vez disso, use os [valores de configuração específicos do ambiente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) nas configurações do OSGi e [defina os valores de variáveis apropriados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) para os ambientes de visualização e do Publish.
 
 ## Instalar certificado público do IDP no AEM
 
@@ -337,7 +337,7 @@ As configurações de OSGi por ambiente (`config.publish.dev`, `config.publish.s
 
 ### Usar criptografia
 
-Ao [criptografar a declaração AuthnRequest e SAML](#encrypting-the-authnrequest-and-saml-assertion), as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword`. O `keyStorePassword` contém uma senha, portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas sim injetado usando [valores de configuração secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values)
+Ao [criptografar a declaração AuthnRequest e SAML](#encrypting-the-authnrequest-and-saml-assertion), as seguintes propriedades são necessárias: `useEncryption`, `spPrivateKeyAlias` e `keyStorePassword`. O `keyStorePassword` contém uma senha, portanto, o valor não deve ser armazenado no arquivo de configuração OSGi, mas sim injetado usando [valores de configuração secretos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values)
 
 +++Opcionalmente, atualize a configuração do OSGi para usar criptografia
 
@@ -370,7 +370,7 @@ Ao [criptografar a declaração AuthnRequest e SAML](#encrypting-the-authnreques
 
 + `useEncryption` definido como `true`
 + `spPrivateKeyAlias` contém o alias de entrada do keystore para a chave privada usada pela integração SAML.
-+ `keyStorePassword` contém uma [variável de configuração de segredo OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) contendo a senha do armazenamento de chaves do usuário `authentication-service`.
++ `keyStorePassword` contém uma [variável de configuração de segredo OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#secret-configuration-values) contendo a senha do armazenamento de chaves do usuário `authentication-service`.
 
 +++
 
@@ -456,7 +456,7 @@ A Associação de Grupo Dinâmico é um recurso do [Apache Jackrabbit Oak](https
 ### Como habilitar a Associação de Grupo Dinâmico para Usuários SAML em novos ambientes
 
 Para melhorar significativamente o desempenho da avaliação de grupo em novos ambientes do AEM as a Cloud Service, a ativação do recurso Associação de grupo dinâmico é recomendada em novos ambientes.
-Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Essa também é uma etapa necessária quando a sincronização de dados é ativada. Mais detalhes [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
 Para fazer isso, adicione a seguinte propriedade ao arquivo de configuração OSGI:
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
