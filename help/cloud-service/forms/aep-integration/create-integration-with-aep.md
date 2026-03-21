@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Saiba como criar e gerenciar perfis no Adobe Experience Platform por meio de envios ao AEM Forms. Essa integração simplifica o gerenciamento de dados e melhora as experiências do usuário.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481508/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481514/?captions=por_br&learn=on&enablevpops)
