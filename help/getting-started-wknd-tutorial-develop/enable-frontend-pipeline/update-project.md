@@ -8,12 +8,12 @@ role: Developer, Admin
 level: Intermediate
 jira: KT-10689
 mini-toc-levels: 1
-index: y
+index: true
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Neste capítulo, faremos alterações nas configurações do __projeto do site d
 
 ## Visão geral das alterações nas configurações do projeto de pilha completa do AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/3453614?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -195,7 +195,7 @@ Por fim, envie essas alterações ao repositório do Git da Adobe do seu program
 
 ## Cuidado: botão de _Habilitar pipeline de front-end_
 
-A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) do [Seletor do painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=pt-BR) mostra o botão **Habilitar pipeline de front-end** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar pipeline de front-end** substituirá as **configurações do Sling** acima. Certifique-se de **não clicar** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
+A opção [Site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) do [Seletor do painel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra o botão **Habilitar pipeline de front-end** ao selecionar a raiz ou a página do site. Clicar no botão **Habilitar pipeline de front-end** substituirá as **configurações do Sling** acima. Certifique-se de **não clicar** nesse botão depois de implantar as alterações acima por meio da execução do pipeline do Cloud Manager.
 
 ![Botão de habilitar pipeline de front-end](assets/enable-front-end-Pipeline-button.png)
 

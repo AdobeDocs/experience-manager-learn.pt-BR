@@ -1,5 +1,5 @@
 ---
-title: Filtrar aplicativo Angular
+title: Filtragem do aplicativo Angular
 description: Um aplicativo Angular simples que filtra aventuras WKND modeladas com Fragmentos de conteúdo.
 version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
@@ -13,14 +13,14 @@ hide: true
 hidefromtoc: true
 exl-id: c238dd83-65d3-4b04-b90e-19ed250b8e36
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Filtrar aplicativo Angular
+# Filtragem do aplicativo Angular
 
 Explore a capacidade das APIs do AEM Headless GraphQL de filtrar dados usando um aplicativo [Angular](https://angular.io/). Este aplicativo Angular cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
 

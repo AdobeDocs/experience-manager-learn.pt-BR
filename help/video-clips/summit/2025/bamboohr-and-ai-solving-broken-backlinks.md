@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 3b3ef9c2-f4e0-45fa-a2a4-3e7130b4d6ce
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como o BambooHR usou a IA para identificar e corrigir backlinks corrompidos, resultando em um aumento de 4% no tráfego orgânico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461992/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)

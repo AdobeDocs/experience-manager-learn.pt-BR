@@ -14,14 +14,14 @@ recommendations: noCatalog, noDisplay
 hidefromtoc: true
 exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
 duration: 22
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Filtrar o aplicativo SvelteKit
+# Filtragem do aplicativo SvelteKit
 
 Explore a capacidade das APIs do AEM Headless GraphQL de listar dados usando um aplicativo [SvelteKit](https://kit.svelte.dev/). Este aplicativo SvelteKit cria uma lista de aventuras WKND, que podem ser selecionadas para exibir os detalhes da aventura.
 

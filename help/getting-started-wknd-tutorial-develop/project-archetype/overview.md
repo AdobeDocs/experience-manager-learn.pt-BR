@@ -7,12 +7,12 @@ topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-index: y
+index: true
 doc-type: Tutorial
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: display, noCatalog
 duration: 74
-source-git-commit: b612e2e36af8f56661a07577e979959c650564ee
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 100%
@@ -25,16 +25,16 @@ ht-degree: 100%
 
 Boas-vindas a esse tutorial em várias partes projetado para desenvolvedores iniciantes no Adobe Experience Manager (AEM). Este tutorial aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND.
 
-Este tutorial começa com o uso do [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) para gerar um novo projeto.
+Este tutorial começa com o uso do [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) para gerar um novo projeto.
 
 O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e conta com compatibilidade retroativa com o **AEM 6.5.14+**. O site é implementado usando:
 
-* [Arquétipo de projeto do AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+* [Arquétipo de projeto do AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=pt-BR)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelos editáveis](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=pt-BR)
-* [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=pt-BR)
+* [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Estimativa de 1 a 2 horas para passar por cada parte do tutorial.*
 

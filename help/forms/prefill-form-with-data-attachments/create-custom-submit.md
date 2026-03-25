@@ -10,7 +10,7 @@ topic: Integrations
 jira: KT-14794
 exl-id: c4257567-76bd-417e-a1a2-38a0647767d9
 duration: 147
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 1%
@@ -40,8 +40,8 @@ Para atender ao caso de uso, um serviço de envio personalizado foi criado para 
 }
 ```
 
-O elemento _&#x200B;**contractcopy**&#x200B;_ representa um componente de anexo de arquivo e é usado para capturar anexos enviados com o formulário.
-Para poder preencher previamente o formulário adaptável com os dados e seus anexos, os anexos enviados serão salvos no portal do Azure e o elemento de dados do objeto contractcopy nos dados enviados será atualizado com a url do anexo salvo.
+O elemento _**contractcopy**_ representa um componente de anexo de arquivo e é usado para capturar anexos enviados com o formulário.
+Para poder preencher previamente o formulário adaptável com os dados e seus anexos, os anexos enviados serão salvos no portal do Azure e o elemento de dados do objeto contractcopy nos dados enviados será atualizado com o url do anexo salvo.
 O serviço de envio personalizado extrai e armazena os anexos no portal do Azure.  Os dados enviados atualizados serão assim
 
 
@@ -62,9 +62,7 @@ O serviço de envio personalizado extrai e armazena os anexos no portal do Azure
     },
     "Message": "We would like to renew our annual contract "
 }
-``
 ```
-
 
 [O manipulador de envio personalizado de exemplo para o formulário adaptável baseado nos componentes principais está disponível aqui](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). O envio personalizado a seguir foi gravado para lidar com o envio do formulário
 

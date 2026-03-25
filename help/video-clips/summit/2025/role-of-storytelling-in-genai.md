@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: f3902c6e-7f32-49ce-982a-76d264b87fd0
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Descubra como os princípios de narrativa na música country estão relacionados com o design de ferramentas GenAI para experiências digitais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462014/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)

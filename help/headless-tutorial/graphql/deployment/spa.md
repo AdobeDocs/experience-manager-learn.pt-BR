@@ -11,7 +11,7 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 5%
@@ -82,7 +82,7 @@ Neste exemplo, o SPA é implantado em um domínio Netlify (`https://main--sparkl
 
 1. O SPA é disponibilizado a partir de um domínio Netlify, mas faz uma chamada XHR para as APIs do AEM GraphQL em um domínio diferente. Esta solicitação entre sites requer que o [CORS](./configurations/cors.md) seja configurado no AEM para permitir que a solicitação do domínio Netlify acesse seu conteúdo.
 
-   ![Solicitação de SPA atendida de hosts SPA e AEM &#x200B;](assets/spa/cors-requirement.png)
+   ![Solicitação de SPA atendida de hosts SPA e AEM ](assets/spa/cors-requirement.png)
 
 2. Inspecionando a solicitação XHR para a API GraphQL do AEM, o `Access-Control-Allow-Origin` está presente, indicando ao navegador da Web que o AEM permite que a solicitação deste domínio Netlify acesse seu conteúdo.
 
@@ -94,7 +94,8 @@ Neste exemplo, o SPA é implantado em um domínio Netlify (`https://main--sparkl
 
 O Adobe fornece um exemplo de aplicativo de página única codificado no React.
 
-<!-- CARDS 
+<!-- 
+CARDS
 
 * ../example-apps/react-app.md
 

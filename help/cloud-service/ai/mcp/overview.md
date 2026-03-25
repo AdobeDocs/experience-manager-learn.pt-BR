@@ -9,7 +9,7 @@ duration: 0
 last-substantial-update: 2026-03-04T00:00:00Z
 jira: KT-20473
 exl-id: 7f2e4e37-6440-423e-9ba9-9228fe03600b
-source-git-commit: ac44a73d2b63dba5292393730c712aec68ddea6c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Saiba como usar os _Servidores MCP (Model Context Protocol)_ do AEM a partir de 
 
 ## Lista de servidores MCP do AEM
 
-Todos os Servidores MCP do AEM estão disponíveis em `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Usando MCP com AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obter mais informações.
+Todos os Servidores MCP do AEM estão disponíveis em `https://mcp.adobeaemcloud.com/adobe/mcp/`. Consulte [Usando MCP com AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) para obter mais informações.
 
 - **Conteúdo** (`/content`) — Acesso total para criar, ler, atualizar e excluir páginas, fragmentos e ativos.
 - **Conteúdo (somente leitura)** (`/content-readonly`) — Somente leitura para listar e obter páginas, fragmentos e ativos (sem alterações).
@@ -71,11 +71,12 @@ Simplificando, o **Host** é o seu aplicativo baseado no IDE ou no Chat, o **Cli
 ## Configurar
 
 Os servidores MCP AEM foram projetados para funcionar com um conjunto definido de aplicativos compatíveis com MCP.
-Para configurar os Servidores MCP do AEM em seu aplicativo IDE ou baseado em Chat preferido, consulte [Aplicativos MCP suportados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obter mais informações.
+Para configurar os Servidores MCP do AEM em seu aplicativo IDE ou baseado em Chat preferido, consulte [Aplicativos MCP suportados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service#supported-mcp-applications) para obter mais informações.
 
 ## Casos de uso
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./accelerate-content-operations-with-aem-mcp-server.md    

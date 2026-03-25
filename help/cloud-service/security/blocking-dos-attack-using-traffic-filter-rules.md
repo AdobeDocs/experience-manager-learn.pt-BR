@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 93%
@@ -50,7 +50,8 @@ Vamos analisar algumas medidas adicionais e recomendadas que os clientes podem t
 
 Confira os tutoriais a seguir para saber como configurar as regras recomendadas pela Adobe para bloquear ataques.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./traffic-filter-and-waf-rules/setup.md

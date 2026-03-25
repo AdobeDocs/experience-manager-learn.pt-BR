@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
-index: y
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+index: true
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 94%
@@ -52,7 +52,7 @@ ht-degree: 94%
       + [1 — Criar modelos de fragmento de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 — Criar fragmentos de conteúdo](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
       + [3 — Explorar a API GraphQL do AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
-      + [4 — Consultas persistentes do GraphQL &#x200B;](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [4 — Consultas persistentes do GraphQL ](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 — Integração de aplicativo cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Primeiro tutorial do Headless{#headless-first}
       + [Visão geral](./graphql/headless-first-tutorial/overview.md)

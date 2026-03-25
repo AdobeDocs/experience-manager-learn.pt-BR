@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 7%
@@ -44,7 +44,8 @@ Personalização de experiência em ação no [site de Habilitação do WKND](ht
 >
 > Explorar a demonstração ao vivo primeiro ajuda você a entender o valor e os recursos de cada técnica de personalização antes de investir tempo na configuração e na implementação.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./live-demo.md
@@ -85,7 +86,8 @@ Personalização de experiência em ação no [site de Habilitação do WKND](ht
 
 Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud Service para personalização. Comece integrando o Adobe Target e as tags para permitir a personalização no lado do cliente usando a Web SDK. Essas etapas fundamentais permitem que suas páginas do AEM sejam compatíveis com experimentação, direcionamento de público-alvo e personalização em tempo real.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./setup/integrate-adobe-target.md
@@ -158,7 +160,8 @@ Antes de explorar casos de uso específicos, primeiro configure o AEM as a Cloud
 
 Explore os seguintes casos de uso comuns de personalização compatíveis com o AEM, o Adobe Target e o Adobe Experience Platform.
 
-<!-- CARDS
+<!-- 
+CARDS
 {target = _self}
 
 * ./use-cases/experimentation.md

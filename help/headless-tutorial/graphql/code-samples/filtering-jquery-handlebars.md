@@ -1,6 +1,6 @@
 ---
-title: Filtrando com jQuery e Handlebars
-description: Uma implementação do JavaScript usando jQuery e Handlebars que filtra as Aventuras WKND para exibição. .
+title: Filtragem com jQuery e Handlebars
+description: Uma implementação do JavaScript usando jQuery e Handlebars que filtra as Aventuras de WKND para exibição.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -14,14 +14,14 @@ hide: true
 hidefromtoc: true
 exl-id: 75ffd84a-62b1-480f-b05f-3664f54bb171
 duration: 26
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Filtrando com jQuery e Handlebars
+# Filtragem com jQuery e Handlebars
 
 Explore a capacidade das APIs do AEM Headless GraphQL de filtrar dados usando um aplicativo JavaScript que usa o [jQuery](https://jquery.com/) e o [Handlebars](https://handlebarsjs.com/). Este aplicativo cria uma lista de Aventuras WKND filtráveis por Tipo de atividade.
 

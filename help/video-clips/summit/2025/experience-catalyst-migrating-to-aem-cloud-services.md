@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: da9a0a9b-000b-4dd6-895e-8b20ade31664
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Veja como o Experience Catalyst usa a IA para migrar um site do WordPress para o AEM Cloud Services sem esforço.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461981/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459228/?learn=on&enablevpops)

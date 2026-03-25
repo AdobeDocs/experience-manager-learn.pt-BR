@@ -9,12 +9,12 @@ topic-tags: forms, adaptive_forms
 topic: Integrations
 discoiquuid: aec562a4-4405-4e6f-9ad5-7477fa1d078f
 targetaudience: target-audience advanced
-index: y
+index: true
 internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
 duration: 628
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 Utilização do Acrobat Sign com o AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/34603?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Este vídeo aborda o processo de configuração do serviço de nuvem da Acrobat Sign e a adição de vários campos de assinatura a um Formulário adaptável AEM.*
+*Este vídeo aborda o processo de configuração do serviço de nuvem da Acrobat Sign e a adição de vários campos de assinatura a um Formulário adaptável do AEM.*
 
 >[!NOTE]
 >
