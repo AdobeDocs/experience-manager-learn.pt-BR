@@ -23,4 +23,4 @@ Este vídeo aborda as etapas para criar Predefinições de imagem no Dynamic Med
 
 >[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
 
-Conheça as práticas recomendadas para criar URLs de mídia dinâmica e predefinições de imagem no AEM Assets e entenda como tudo funciona! [Assista ao vídeo aqui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
+Conheça as práticas recomendadas para criar URLs de mídia dinâmica e predefinições de imagem no AEM Assets e entenda como tudo funciona! [Assista ao vídeo aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-urls-and-image-presets).
