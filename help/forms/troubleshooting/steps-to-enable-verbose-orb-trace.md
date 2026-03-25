@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para habilitar o rastreamento ORB detalhado.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335526?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439076?captions=por_br&quality=12&learn=on)

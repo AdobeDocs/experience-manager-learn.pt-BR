@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo mostra as etapas para alterar o valor da entropia.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437683?captions=por_br&quality=12&learn=on)

@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Saiba como tornar os sites mais rápidos com o Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453452/?captions=por_br&learn=on)
 
 Revise a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obter detalhes completos sobre o Edge Delivery Services e seus recursos.
 
@@ -109,7 +109,7 @@ CARDS
             <a href="./developing/prerequisites.md" title="Pré-requisitos"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434589/?captions=por_br&format=jpeg"
                 alt="Pré-requisitos">
             </a>
           </figure>
@@ -141,7 +141,7 @@ CARDS
             <a href="./developing/aem-boilerplate.md" title="Usar modelo padrão"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurar
+                src="https://video.tv.adobe.com/v/3434616/?captions=por_br&format=jpeg" alt="Configurar
                 padrão">
             </a>
           </figure>
@@ -173,7 +173,7 @@ CARDS
             <a href="./developing/content-repository.md" title="Vincular Google Drive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Vincular Google Drive">
+                src="https://video.tv.adobe.com/v/3434725/?captions=por_br&format=jpeg" alt="Vincular Google Drive">
             </a>
           </figure>
         </div>
@@ -203,7 +203,7 @@ CARDS
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Vincular SharePoint" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446033/?captions=por_br&format=jpeg"
                 alt="Vincular SharePoint">
             </a>
           </figure>
@@ -235,7 +235,7 @@ CARDS
             <a href="./developing/preview-and-publish.md" title="Visualizar e publicar conteúdo"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Visualizar e publicar conteúdo">
+                src="https://video.tv.adobe.com/v/3434714/?captions=por_br&format=jpeg" alt="Visualizar e publicar conteúdo">
             </a>
           </figure>
         </div>
@@ -266,7 +266,7 @@ CARDS
             <a href="./developing/sidekick.md" title="Usar o Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441291/?captions=por_br&format=jpeg"
                 alt="Usar o Sidekick">
             </a>
           </figure>
@@ -298,7 +298,7 @@ CARDS
             <a href="./developing/document-structure.md" title="Estrutura do documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445194/?captions=por_br&format=jpeg"
                 alt="Estrutura do documento">
             </a>
           </figure>
@@ -330,7 +330,7 @@ CARDS
             <a href="./developing/local-development.md" title="Desenvolvimento local"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434736/?captions=por_br&format=jpeg"
                 alt="Desenvolvimento local">
             </a>
           </figure>
@@ -362,7 +362,7 @@ CARDS
             <a href="./developing/git.md" title="Integrar ao Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441831/?captions=por_br&format=jpeg"
                 alt="Integrar ao Git">
             </a>
           </figure>
@@ -399,7 +399,7 @@ CARDS
             <a href="./how-to/rss.md" title="Criar feeds RSS"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438004/?captions=por_br&format=jpeg"
                 alt="Criar feeds RSS">
             </a>
           </figure>
@@ -431,7 +431,7 @@ CARDS
             <a href="./how-to/social-media-sharing.md" title="Compartilhamento em redes sociais"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439442/?captions=por_br&format=jpeg"
                 alt="Compartilhamento em redes sociais">
             </a>
           </figure>
@@ -463,7 +463,7 @@ CARDS
             <a href="./how-to/delete-page.md" title="Excluir páginas"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438095/?captions=por_br&format=jpeg"
                 alt="Excluir páginas">
             </a>
           </figure>

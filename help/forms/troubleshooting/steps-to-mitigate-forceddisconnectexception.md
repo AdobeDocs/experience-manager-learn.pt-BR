@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Este vídeo aborda as possíveis causas e etapas para atenuar ForcedDisconnectException*
 
->[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438724?captions=por_br&quality=12&learn=on)

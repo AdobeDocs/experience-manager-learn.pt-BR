@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como os metadados impulsionam workflows, pesquisa e insights e como a automação pode enriquecer metadados para se alinhar aos padrões da marca.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459218/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461970/?captions=por_br&learn=on&enablevpops)

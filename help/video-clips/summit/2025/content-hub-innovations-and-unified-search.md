@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore os novos recursos do Content Hub, incluindo o controle de acesso baseado em atributos, páginas de aterrissagem de marca e pesquisa unificada em todas as plataformas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461815/?captions=por_br&learn=on&enablevpops)

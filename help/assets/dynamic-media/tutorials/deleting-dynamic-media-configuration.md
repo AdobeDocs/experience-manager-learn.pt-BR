@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Este vídeo aborda as etapas para excluir uma configuração do AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335363?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418267?captions=por_br&quality=12&learn=on)
