@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Modelos de página {#page-templates}
 
-Neste capítulo, vamos abordar a relação entre um modelo de página e uma página. Vamos criar um modelo não estilizado de artigo de revista com base em algumas simulações do [AdobeXD](https://www.adobe.com/products/xd.html). No processo de criação do modelo, os componentes principais e as configurações de política avançadas serão abordados.
+Neste capítulo, vamos abordar a relação entre um modelo de página e uma página. Vamos criar um modelo não estilizado de artigo de revista com base em algumas simulações do [AdobeXD](https://www.adobe.com/br/products/xd.html). No processo de criação do modelo, os componentes principais e as configurações de política avançadas serão abordados.
 
 ## Pré-requisitos {#prerequisites}
 

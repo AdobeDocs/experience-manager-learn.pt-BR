@@ -21,13 +21,13 @@ ht-degree: 100%
 
 # Planejamento da IU com o Adobe XD {#ui-planning-adobe-xd}
 
-Na maioria dos casos, o planejamento de um novo site começa com simulações e designs estáticos. O [Adobe XD](https://www.adobe.com/products/xd.html) é a melhor ferramenta de design do setor para criar experiências do usuário. A Adobe recomenda o planejamento da implementação do Sites por meio do uso de simulações da IU com o Adobe XD ou outra ferramenta.
+Na maioria dos casos, o planejamento de um novo site começa com simulações e designs estáticos. O [Adobe XD](https://www.adobe.com/br/products/xd.html) é a melhor ferramenta de design do setor para criar experiências do usuário. A Adobe recomenda o planejamento da implementação do Sites por meio do uso de simulações da IU com o Adobe XD ou outra ferramenta.
 
 ## Pré-requisitos {#prerequisites}
 
 Este é um tutorial em várias partes, e presume-se que as etapas descritas no capítulo anterior tenham sido concluídas. Este capítulo é simplesmente uma seção de observação e aprendizagem; nenhuma ação é necessária para poder prosseguir com os capítulos seguintes.
 
-Para acompanhar os vídeos, você precisará estar com o [Adobe XD](https://www.adobe.com/products/xd/pricing/free-trial.html) instalado; uma [avaliação gratuita está disponível](https://www.adobe.com/products/xd/pricing/free-trial.html).
+Para acompanhar os vídeos, você precisará estar com o [Adobe XD](https://www.adobe.com/br/products/xd/pricing/free-trial.html) instalado; uma [avaliação gratuita está disponível](https://www.adobe.com/br/products/xd/pricing/free-trial.html).
 
 ## Objetivo
 
@@ -62,7 +62,7 @@ Etapas de alto nível:
 
 Parabéns, você aprendeu como os kits da IU do Adobe XD podem ser usados para mapear e planejar uma implementação do AEM Sites.
 
-[Kits da IU adicionais estão disponíveis](https://www.adobe.com/products/xd/features/ui-kits.html) para inspeção e download.
+[Kits da IU adicionais estão disponíveis](https://www.adobe.com/br/products/xd/features/ui-kits.html) para inspeção e download.
 
 ### Próximas etapas {#next-steps}
 

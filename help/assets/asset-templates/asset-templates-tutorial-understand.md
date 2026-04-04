@@ -76,5 +76,5 @@ Arquivo de modelo do InDesign e imagens de suporte
 
 Baixar [arquivo de modelo do InDesign e imagens de suporte](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Download da avaliação do InDesign CC](https://creative.adobe.com/products/download/indesign)
-* A avaliação do InDesign Server pode ser baixada do [site de pré-lançamento do Adobe](https://www.adobeprerelease.com/) ou do [CC Enterprise, os clientes podem entrar em contato com o Executivo de Contas para solicitar uma licença de avaliação do InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+* [Download da avaliação do InDesign CC](https://creative.adobe.com/br/products/download/indesign)
+* A avaliação do InDesign Server pode ser baixada do [site de pré-lançamento do Adobe](https://www.adobeprerelease.com/) ou do [CC Enterprise, os clientes podem entrar em contato com o Executivo de Contas para solicitar uma licença de avaliação do InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
