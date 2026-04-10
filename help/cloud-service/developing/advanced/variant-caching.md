@@ -6,16 +6,18 @@ topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
 duration: 149
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 0f9480bb52765daa01c5372a117a441adb03bb9d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 1%
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
 # Armazenamento em cache de variantes de página
 
-Saiba como configurar e usar o AEM as a cloud service para oferecer suporte ao armazenamento em cache de variantes de página.
+As experiências da Web geralmente precisam adaptar o conteúdo para públicos diferentes, seja por localização geográfica, personalização ou experimentação. Neste tutorial, você aprenderá a configurar o Adobe Experience Manager (AEM) as a Cloud Service para armazenar em cache com eficiência e atender a várias variantes de página usando o cookie `x-aem-variant`, garantindo flexibilidade e alto desempenho em escala.
+
+Em um alto nível, a abordagem envolve a configuração do código do seu projeto um cookie `x-aem-variant` específico do visitante (por exemplo, com base na localização), que é então transformado em um cabeçalho de solicitação no CDN. Esse valor é incorporado ao URL da solicitação por meio de uma regra de regravação do dispatcher, permitindo que o AEM renderize a variante correta e, ao mesmo tempo, permita que o CDN e o dispatcher armazenem em cache uma versão separada da página para cada variante.
 
 ## Exemplo de casos de uso
 
@@ -27,7 +29,7 @@ Saiba como configurar e usar o AEM as a cloud service para oferecer suporte ao a
 
 + Identifique a chave da variante e o número de valores que ela pode ter. No nosso exemplo, variamos de acordo com o estado dos EUA, portanto, o número máximo é 50. É pequeno o suficiente para não causar problemas com os limites de variante na CDN. [Revise a seção de limitações de variantes](#variant-limitations).
 
-+ O código AEM deve definir o cookie __&quot;x-aem-variant&quot;__ para o estado preferido do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial.
++ O código do projeto deve definir o cookie __&quot;x-aem-variant&quot;__ para o estado preferido do visitante (por exemplo, `Set-Cookie: x-aem-variant=NY`) na resposta HTTP correspondente da solicitação HTTP inicial. A AEM e a CDN gerenciada pela Adobe não determinam ou definem automaticamente `x-aem-variant`. Se esse cabeçalho/cookie estiver presente, é porque seu aplicativo o definiu. Esse cabeçalho pode ser definido por meio de um AEM Servlet personalizado ou um Filtro de Servlet do AEM (como mostrado na amostra de código abaixo).
 
 + Solicitações subsequentes do visitante enviam esse cookie (por exemplo, `"Cookie: x-aem-variant=NY"`) e o cookie é transformado no nível de CDN em um cabeçalho predefinido (ou seja, `x-aem-variant:NY`), que é passado para o Dispatcher.
 
@@ -49,13 +51,13 @@ Saiba como configurar e usar o AEM as a cloud service para oferecer suporte ao a
 
 ## Uso
 
-1. Para demonstrar o recurso, usaremos como exemplo a implementação do [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).
+1. Para demonstrar o recurso, usaremos como exemplo a implementação do [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 1. Implemente um [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) no AEM para definir o cookie `x-aem-variant` na resposta HTTP, com um valor de variante.
 
 1. A CDN da AEM transforma automaticamente o cookie `x-aem-variant` em um cabeçalho HTTP de mesmo nome.
 
-1. Adicione uma regra mod_rewrite do Apache Web Server ao projeto `dispatcher`, que modifica o caminho da solicitação para incluir o seletor de variantes.
+1. Adicione uma regra `mod_rewrite` do Apache Web Server ao projeto `dispatcher`, que modifica o caminho da solicitação para incluir o seletor de variantes.
 
 1. Implante o filtro e reescreva as regras usando o Cloud Manager.
 
