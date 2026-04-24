@@ -11,9 +11,9 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 794a0109e4b28b452c462c5cab37e2d094ab4897
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ Para implementar Permissões orientadas por metadados, um desenvolvedor deve imp
        "status",
        "brand"
      ],
-     "restrictionContentPropertyNames":[],
+     "restrictionContentPropertyNames":[
+       "dam:rightsManaged"
+     ],
      "enabled":true
    }
    ```
@@ -108,9 +110,8 @@ Os benefícios das permissões orientadas por metadados incluem:
 > É importante observar:
 > 
 > - As propriedades são avaliadas em relação às restrições usando __Igualdade de cadeia de caracteres__ (`=`) (outros tipos de dados ou operadores ainda não têm suporte, para propriedades maiores que (`>`) ou de Data)
-> - Para permitir vários valores para uma propriedade de restrição, restrições adicionais podem ser adicionadas à Entrada de Controle de Acesso selecionando a mesma propriedade na lista suspensa &quot;Selecionar Tipo&quot; e inserindo um novo Valor de Restrição (por exemplo, `status=approved`, `status=wip`) e clicando em &quot;+&quot; para adicionar a restrição à entrada
-> ![Permitir Valores Múltiplos](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - Há suporte para __restrições AND__, por meio de várias restrições em uma única Entrada de Controle de Acesso com diferentes nomes de propriedade (por exemplo, `status=approved`, `brand=Adobe`) que será avaliada como uma condição AND, ou seja, o grupo de usuários selecionado receberá acesso de leitura aos ativos com `status=approved AND brand=Adobe`
+> - Para permitir vários valores para uma propriedade de restrição, restrições adicionais podem ser adicionadas à Entrada de Controle de Acesso selecionando a mesma propriedade na lista suspensa &quot;Selecionar Tipo&quot; e inserindo um novo Valor de Restrição (por exemplo, `status=approved`, `status=wip`) e clicando em &quot;+&quot; para adicionar a restrição à entrada> ![Permitir Valores Múltiplos](./assets/metadata-driven-permissions/allow-multiple-values.png)
+> - Há suporte para __restrições AND__, por meio de várias restrições em uma única Entrada de Controle de Acesso com diferentes nomes de propriedade (por exemplo, `status=approved`, `brand=Adobe`) que será avaliada como uma condição AND, ou seja, o grupo de usuários selecionado receberá acesso de leitura a ativos com `status=approved AND brand=Adobe`
 > ![Permitir Várias Restrições](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
 > - Há suporte para __restrições OR__ ao adicionar uma nova Entrada de Controle de Acesso com uma restrição de propriedade de metadados que estabelecerá uma condição OR para as entradas. Por exemplo, uma única entrada com restrição `status=approved` e uma única entrada com `brand=Adobe` serão avaliadas como `status=approved OR brand=Adobe`
 > ![Permitir Várias Restrições](./assets/metadata-driven-permissions/allow-multiple-aces.png)
