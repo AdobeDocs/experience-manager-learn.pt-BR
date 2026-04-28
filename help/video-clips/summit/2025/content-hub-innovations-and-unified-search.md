@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore Content Hub&#39;s new features, including attribute-based access control, branded landing pages, and unified search across platforms.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461815/?captions=por_br&learn=on&enablevpops)
