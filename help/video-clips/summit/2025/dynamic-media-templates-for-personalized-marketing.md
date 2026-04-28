@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: e875feab-bf5b-47ab-b3be-ee0c2e418f50
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Explore como os Modelos do Dynamic Media permitem que os profissionais de marketing criem conteúdo ao vivo e personalizável para campanhas personalizadas.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462357/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459241/?learn=on&enablevpops)

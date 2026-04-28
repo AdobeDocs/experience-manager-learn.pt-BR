@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 0%
+source-wordcount: '1721'
+ht-degree: 2%
 
 ---
 
@@ -31,15 +31,15 @@ Saiba como várias exibições no SPA podem ser compatíveis, mapeando para Pág
 1. Saiba como usar o [Roteador de reação](https://reacttraining.com/react-router) para navegar entre diferentes exibições do SPA.
 1. Use os Componentes principais do AEM React para implementar uma navegação dinâmica orientada pela hierarquia de páginas do AEM.
 
-## O que você vai criar
+## O que você criará
 
-Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=pt-BR).
+Este capítulo adicionará a navegação a um SPA no AEM. O menu de navegação é orientado pela hierarquia de páginas do AEM e usará o modelo JSON fornecido pelo [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navegação adicionada](assets/navigation-routing/navigation-added.png)
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Componentes de Mapa](map-components.md). No entanto, basta seguir um projeto do AEM habilitado para SPA implantado em uma instância do AEM local para que você possa seguir.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Componentes de Mapa](map-components.md). No entanto, basta seguir um projeto do AEM habilitado para SPA implantado em uma instância do AEM local para que você possa seguir.
 
 ## Adicionar a navegação ao modelo {#add-navigation-template}
 
@@ -73,9 +73,9 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
    Em **Propriedades**:
 
    * Defina a **Raiz de Navegação** como `/content/wknd-spa-react/us/en`.
-   * Defina os **Excluir Níveis de Raiz** para **1**.
-   * Desmarcar **Coletar todas as páginas secundárias**.
-   * Defina a **Profundidade da Estrutura de Navegação** como **3**.
+   * Defina os **Níveis exclusão de raiz** como **1**.
+   * Desmarque **Coletar todas as páginas secundárias**.
+   * Defina a **Profundidade da estrutura de navegação** como **3**.
 
    ![Configurar Política de Navegação](assets/navigation-routing/navigation-policy.png)
 

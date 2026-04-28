@@ -12,10 +12,10 @@ doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,7 @@ Vídeo de visão geral do conteúdo de criação para um aplicativo de página �
 
 O Editor de SPA do AEM fornece aos autores a capacidade de editar conteúdo para um Aplicativo de página única ou SPA. Os desenvolvedores que usam a estrutura do React criam um SPA e, em seguida, mapeiam áreas do SPA para componentes do AEM, permitindo que os autores usem ferramentas de edição conhecidas do AEM Sites. O vídeo abaixo demonstra alguns dos recursos de edição em contexto com o site de amostra WKND SPA. O projeto WKND SPA inclui uma implementação do React.
 
->[!VIDEO](https://video.tv.adobe.com/v/34846?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -43,4 +43,4 @@ Baixe e instale o [pacote SPA do WKND](https://github.com/adobe/aem-guides-wknd-
 
 Para obter um tutorial detalhado sobre o desenvolvimento com o Editor SPA, consulte:
 
-* [Introdução ao AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=pt-BR)
+* [Introdução ao editor de SPA no AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)

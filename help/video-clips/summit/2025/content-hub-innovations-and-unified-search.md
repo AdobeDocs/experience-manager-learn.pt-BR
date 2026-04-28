@@ -1,6 +1,6 @@
 ---
-title: Inovações e pesquisa unificada da Content Hub
-description: Explore os novos recursos do Content Hub, incluindo o controle de acesso baseado em atributos, páginas de aterrissagem de marca e pesquisa unificada em todas as plataformas.
+title: Content Hub Innovations and Unified Search
+description: Explore Content Hub's new features, including attribute-based access control, branded landing pages, and unified search across platforms.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager, Experience Manager Assets
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: eac1d731-6860-4af4-aba4-bc93abb40073
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---
 
-# Inovações e pesquisa unificada da Content Hub
+# Content Hub Innovations and Unified Search
 
-Explore os novos recursos do Content Hub, incluindo o controle de acesso baseado em atributos, páginas de aterrissagem de marca e pesquisa unificada em todas as plataformas.
+Explore Content Hub&#39;s new features, including attribute-based access control, branded landing pages, and unified search across platforms.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461815/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)

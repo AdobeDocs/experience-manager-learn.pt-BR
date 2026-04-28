@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '667'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Boas vindas ao tutorial em várias partes para desenvolvedores que desejam ampli
 
 Este tutorial baseia-se no [aplicativo em GraphQL da WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR), um aplicativo em React que consome conteúdo de fragmentos de conteúdo do AEM nas APIs em GraphQL do AEM. No entanto, ele não fornece nenhuma criação com contexto de conteúdo de SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444852?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Sobre o tutorial
 
@@ -48,13 +48,13 @@ O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e consi
 
 Este tutorial requer o seguinte:
 
-+ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=pt-BR)
++ [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
 + [Node.js v18](https://nodejs.org/pt)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip ou superior](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Código-fonte de aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
++ [aem-guides-wknd-graphql código-fonte](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Este tutorial pressupõe que você possui:
 
@@ -66,15 +66,15 @@ Este tutorial pressupõe que você possui:
 
 >[!NOTE]
 >
-> **Precisa de ajuda para configurar o seu ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
+> **Precisa de ajuda para configurar seu ambiente de desenvolvimento local?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 
-## &#x200B;1. Configurar o AEM para o editor de SPA
+## &#x200B;1. Configuração do AEM para o Editor SPA
 
 As configurações do AEM são necessárias para integrar o SPA ao editor de SPA do AEM. Essas configurações são gerenciadas e implantadas por meio de um projeto do AEM. Neste capítulo, saiba quais configurações são necessárias e como defini-las.
 
 + [Saiba como configurar o AEM para o editor de SPA](./aem-configure.md)
 
-## &#x200B;2. Inicializar o SPA
+## &#x200B;2. Bootstrap, o SPA
 
 Para que o editor de SPA do AEM integre um SPA a seu contexto de criação, é necessário adicionar alguns elementos ao SPA.
 
@@ -86,7 +86,7 @@ Primeiro, aprenda a adicionar um “componente fixo” editável ao SPA. Isso il
 
 + [Saiba mais sobre componentes fixos editáveis](./spa-fixed-component.md)
 
-## &#x200B;4. Componentes de container editáveis
+## &#x200B;4. Componentes de contêiner editáveis
 
 Em seguida, aprenda a adicionar um “componente de container” editável ao SPA. Isso ilustra como um(a) desenvolvedor(a) pode inserir um componente de container no SPA. Os componentes de container permitem que os criadores insiram o componente permitido e ajustem o layout dos componentes.
 

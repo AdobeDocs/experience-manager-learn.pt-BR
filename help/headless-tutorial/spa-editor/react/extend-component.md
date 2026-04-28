@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 0%
+source-wordcount: '1115'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,7 @@ Saiba como estender um Componente principal existente para ser usado com o Edito
 2. Entenda o básico da Herança de componentes com o uso de `sling:resourceSuperType`.
 3. Saiba como aproveitar o [Padrão de delegação](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para Modelos do Sling para reutilizar a lógica e a funcionalidade existentes.
 
-## O que você vai criar
+## O que você criará
 
 Este capítulo ilustra o código adicional necessário para adicionar uma propriedade extra a um componente `Image` padrão para atender aos requisitos de um novo componente `Banner`. O componente `Banner` contém todas as mesmas propriedades que o componente `Image` padrão, mas inclui uma propriedade adicional para que os usuários preencham o **Texto do banner**.
 
@@ -39,7 +39,7 @@ Este capítulo ilustra o código adicional necessário para adicionar uma propri
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Presume-se que, neste ponto do tutorial, os usuários tenham uma sólida compreensão do recurso Editor SPA do AEM.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Presume-se que, neste ponto do tutorial, os usuários tenham uma sólida compreensão do recurso Editor SPA do AEM.
 
 ## Herança com o supertipo de recurso do Sling {#sling-resource-super-type}
 

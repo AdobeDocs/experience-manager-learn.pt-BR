@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
 duration: 202
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -62,52 +62,52 @@ O mapeamento de solicitações de SPA quando o SPA é aberto por meio do AEM SPA
 Primeiro, crie o segmento de página `adventure` intermediário:
 
 1. Faça logon no AEM Author
-1. Navegue até __Sites > Aplicativo WKND > us > en > Página inicial do aplicativo WKND__
-   1. Essa página do AEM é mapeada como a raiz do SPA, portanto, é aqui que começamos a criar a estrutura da página do AEM para outras rotas de SPA.
-1. Toque em __Criar__ e selecione __Página__
-1. Selecione o modelo da __Página de SPA Remota__ e toque em __Avançar__
-1. Preencher as propriedades da página
-   1. __Título__: Aventura
+1. Navigate to __Sites > WKND App > us > en > WKND App Home Page__
+   1. This AEM page is mapped as the root of the SPA, so this is where we begin building out the AEM page structure for other SPA routes.
+1. Tap __Create__ and select __Page__
+1. Select the __Remote SPA Page__ template, and tap __Next__
+1. Fill out the Page Properties
+   1. __Title__: Adventure
    1. __Nome__: `adventure`
-      1. Esse valor define o URL da página do AEM e, portanto, deve corresponder ao segmento de rota do SPA.
+      1. This value defines the AEM page&#39;s URL, and therefore must match the SPA&#39; route segment.
 1. Toque em __Concluído__
 
-Em seguida, crie as páginas do AEM que correspondem a cada um dos URLs do SPA que exigem áreas editáveis.
+Then, create the AEM pages that correspond to each of the SPA&#39;s URLs that require editable areas.
 
-1. Navegue até a nova página __Aventura__ no Administrador do Site
-1. Toque em __Criar__ e selecione __Página__
-1. Selecione o modelo da __Página de SPA Remota__ e toque em __Avançar__
-1. Preencher as propriedades da página
-   1. __Título__: Campo de Surf em Bali
+1. Navigate into the new __Adventure__ page in the Site Admin
+1. Tap __Create__ and select __Page__
+1. Select the __Remote SPA Page__ template, and tap __Next__
+1. Fill out the Page Properties
+   1. __Title__: Bali Surf Camp
    1. __Nome__: `bali-surf-camp`
-      1. Esse valor define o URL da página do AEM e, portanto, deve corresponder ao último segmento da rota do SPA
+      1. This value defines the AEM page&#39;s URL, and therefore must match the SPA&#39; route&#39;s last segment
 1. Toque em __Concluído__
-1. Repita as etapas 3 a 6 para criar a página __Beervana in Portland__, com:
-   1. __Título__: Beervana em Portland
+1. Repeat the steps 3-6 to create the __Beervana in Portland__ page, with:
+   1. __Title__: Beervana in Portland
    1. __Nome__: `beervana-in-portland`
-      1. Esse valor define o URL da página do AEM e, portanto, deve corresponder ao último segmento da rota do SPA
+      1. This value defines the AEM page&#39;s URL, and therefore must match the SPA&#39; route&#39;s last segment
 
-Essas duas páginas do AEM contêm o respectivo conteúdo criado para suas rotas de SPA correspondentes. Se outras rotas de SPA exigirem criação, as novas Páginas do AEM deverão ser criadas na URL do SPA na página raiz da página do SPA Remoto (`/content/wknd-app/us/en/home`) no AEM.
+These two AEM pages hold the respective-authored content for their matching SPA routes. If other SPA routes require authoring, new AEM Pages must be created at their SPA&#39;s URL under the Remote SPA page&#39;s root page (`/content/wknd-app/us/en/home`) in AEM.
 
-## Atualizar o aplicativo WKND
+## Update the WKND App
 
-Vamos colocar o componente `<ResponsiveGrid...>` criado no [último capítulo](./spa-container-component.md), em nosso componente SPA `AdventureDetail`, criando um contêiner editável.
+Let&#39;s place the `<ResponsiveGrid...>` component created in the [last chapter](./spa-container-component.md), into our `AdventureDetail` SPA component, creating an editable container.
 
-### Coloque o componente SPA ResponsiveGrid
+### Place the ResponsiveGrid SPA component
 
-Colocar o `<ResponsiveGrid...>` no componente `AdventureDetail` cria um contêiner editável nessa rota. O truque é porque várias rotas usam o componente `AdventureDetail` para renderizar, devemos ajustar dinamicamente o atributo `<ResponsiveGrid...>'s pagePath`. O `pagePath` deve ser derivado para apontar para a página do AEM correspondente, com base na aventura que a instância da rota exibe.
+Placing the `<ResponsiveGrid...>` in the `AdventureDetail` component creates an editable container in that route. The trick is because multiple routes use the `AdventureDetail` component to render, we must dynamically adjust the  `<ResponsiveGrid...>'s pagePath` attribute. The `pagePath` must be derived to point to the corresponding AEM page, based on the adventure the route&#39;s instance displays.
 
-1. Abrir e editar `react-app-/src/components/AdventureDetail.js`
-1. Importe o componente `ResponsiveGrid` e coloque-o acima do componente `<h2>Itinerary</h2>`.
-1. Defina os seguintes atributos no componente `<ResponsiveGrid...>`. Observe que o atributo `pagePath` adiciona a `slug` atual, que mapeia para a página de aventura de acordo com o mapeamento definido acima.
+1. Open and edit `react-app-/src/components/AdventureDetail.js`
+1. Import the `ResponsiveGrid` component and place it above the `<h2>Itinerary</h2>` component.
+1. Set the following attributes on the `<ResponsiveGrid...>` component. Note the `pagePath` attribute adds the current `slug` which maps to the adventure page per the mapping defined above.
    1. `pagePath = '/content/wknd-app/us/en/home/adventure/${slug}'`
    1. `itemPath = 'root/responsivegrid'`
 
-   Isso instrui o componente `ResponsiveGrid` a recuperar seu conteúdo do recurso AEM:
+   This instructs the `ResponsiveGrid` component to retrieve its content from the AEM resource:
 
    1. `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-Atualizar `AdventureDetail.js` com as seguintes linhas:
+Update `AdventureDetail.js` with the following lines:
 
 ```javascript
 ...
@@ -143,20 +143,20 @@ O arquivo `AdventureDetail.js` deve ser semelhante a:
 
 ![AdventureDetail.js](./assets/spa-dynamic-routes/adventure-detail-js.png)
 
-## Criar o contêiner no AEM
+## Author the Container in AEM
 
-Com o `<ResponsiveGrid...>` em vigor e seu `pagePath` definido dinamicamente com base na aventura que está sendo renderizada, tentamos criar conteúdo nele.
+With the `<ResponsiveGrid...>` in place, and its `pagePath` dynamically set based on the adventure being rendered, we try authoring content in it.
 
 1. Faça logon no AEM Author
 1. Navegue até __Sites > Aplicativo WKND > us > en__
-1. __Editar__ a __Página inicial do Aplicativo WKND__
-   1. Navegue até a rota __Campo de Surf de Bali__ no SPA para editá-la
-1. Selecione __Visualizar__ no seletor de modo no canto superior direito
-1. Toque no cartão __Campo de Surf de Bali__ no SPA para navegar até sua rota
-1. Selecione __Editar__ no seletor de modo
-1. Localize a área editável __Contêiner de layout__ logo acima do __Itinerário__
-1. Abra a __barra lateral do Editor de páginas__ e selecione a __exibição de Componentes__
-1. Arraste alguns dos componentes habilitados para o __Contêiner de layout__
+1. __Edit__ the __WKND App Home Page__ page
+   1. Navigate to the __Bali Surf Camp__ route in the SPA to edit it
+1. Select __Preview__ from the mode-selector in the top-right
+1. Tap on the __Bali Surf Camp__ card in the SPA to navigate to its route
+1. Select __Edit__ from the mode-selector
+1. Locate the __Layout Container__ editable area right above the __Itinerary__
+1. Open the __Page Editor&#39;s side bar__, and select the __Components view__
+1. Drag some of the enabled components into the __Layout Container__
    1. Imagem
    1. Texto
    1. Título

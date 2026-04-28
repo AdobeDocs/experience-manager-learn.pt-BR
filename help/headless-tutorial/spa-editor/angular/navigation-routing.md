@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 0%
+source-wordcount: '2845'
+ht-degree: 2%
 
 ---
 
@@ -31,15 +31,15 @@ Saiba como várias exibições no SPA são compatíveis usando as Páginas do AE
 2. Saiba como usar o [roteamento de Angular](https://angular.io/guide/router) para navegar entre diferentes exibições do SPA.
 3. Implemente uma navegação dinâmica orientada pela hierarquia de páginas do AEM.
 
-## O que você vai criar
+## O que você criará
 
-Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de páginas do AEM e usa o modelo JSON fornecido pelo [Componente Principal de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=pt-BR).
+Este capítulo adiciona um menu de navegação a um componente `Header` existente. O menu de navegação é orientado pela hierarquia de páginas do AEM e usa o modelo JSON fornecido pelo [Componente Principal de Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navegação implementada](assets/navigation-routing/final-navigation-implemented.gif)
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
 
 ### Obter o código
 
@@ -116,7 +116,7 @@ Nos capítulos anteriores, o componente `HeaderComponent` foi adicionado como um
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   O componente `Header` do AEM herdará toda a funcionalidade do [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=pt-BR) por meio da propriedade `sling:resourceSuperType`.
+   O componente `Header` do AEM herdará toda a funcionalidade do [Componente principal de navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) por meio da propriedade `sling:resourceSuperType`.
 
 ## Adicionar o componente de cabeçalho ao modelo SPA {#add-header-template}
 
@@ -153,9 +153,9 @@ Nos capítulos anteriores, o componente `HeaderComponent` foi adicionado como um
    Em **[!UICONTROL Propriedades]**:
 
    * Defina a **[!UICONTROL Raiz de Navegação]** como `/content/wknd-spa-angular/us/en`.
-   * Defina os **[!UICONTROL Excluir Níveis de Raiz]** para **1**.
+   * Defina os **[!UICONTROL Níveis exclusão de raiz]** como **1**.
    * Desmarcar **[!UICONTROL Coletar todas as páginas secundárias]**.
-   * Defina a **[!UICONTROL Profundidade da Estrutura de Navegação]** como **3**.
+   * Defina a **[!UICONTROL Profundidade da estrutura de navegação]** como **3**.
 
    ![Configurar Política de Cabeçalho](assets/navigation-routing/header-policy.png)
 

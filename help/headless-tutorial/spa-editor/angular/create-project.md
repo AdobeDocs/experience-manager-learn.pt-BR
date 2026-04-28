@@ -1,5 +1,5 @@
 ---
-title: Projeto do SPA Editor | Introdução ao AEM SPA Editor e Angular
+title: Projeto do Editor de SPA | Introdução ao Editor de SPA e Angular do AEM
 description: Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de partida para um aplicativo do Angular integrado ao AEM SPA Editor.
 feature: SPA Editor, AEM Project Archetype
 version: Experience Manager as a Cloud Service
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 1%
+source-wordcount: '1148'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ Saiba como usar um projeto Maven do Adobe Experience Manager (AEM) como ponto de
 1. Entenda a estrutura de um novo projeto do Editor SPA do AEM criado a partir de um arquétipo Maven.
 2. Implante o projeto inicial em uma instância local do AEM.
 
-## O que você vai criar
+## O que você criará
 
 Neste capítulo, um novo projeto do AEM é implantado, com base no [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype). O projeto do AEM é inicializado com um ponto de partida muito simples para o SPA do Angular. O projeto usado neste capítulo servirá de base para uma implementação da SPA da WKND e será desenvolvido em capítulos futuros.
 
@@ -40,7 +40,7 @@ Neste capítulo, um novo projeto do AEM é implantado, com base no [Arquétipo d
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Verifique se uma nova instância do Adobe Experience Manager, iniciada no modo **author**, está em execução localmente.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Verifique se uma nova instância do Adobe Experience Manager, iniciada no modo **author**, está em execução localmente.
 
 ## Obter o projeto
 
@@ -90,7 +90,7 @@ Há várias opções para criar um projeto de vários módulos do Maven para o A
 
    >[!NOTE]
    >
-   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM.
+   > Observe a propriedade `frontendModule=angular`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) inicial a ser usada com o Editor SPA do AEM.
 
 ## Criar o projeto
 
@@ -139,9 +139,9 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
    [INFO] ------------------------------------------------------------------------
    ```
 
-   O perfil Maven ***autoInstallSinglePackage*** compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, este pacote é implantado em uma instância do AEM em execução localmente na porta **4502** e com as credenciais de **admin:admin**.
+   O perfil Maven ***autoInstallSinglePackage*** compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, este pacote é implantado em uma instância do AEM em execução localmente na porta **4502** e com as credenciais de **administrador:admin**.
 
-4. Navegue até **[!UICONTROL Gerenciador de Pacotes]** na sua instância do AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
+4. Navegue até o **[!UICONTROL Gerenciador de Pacotes]** na sua instância do AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
 5. Você deve ver três pacotes para `wknd-spa-angular.all`, `wknd-spa-angular.ui.apps` e `wknd-spa-angular.ui.content`.
 

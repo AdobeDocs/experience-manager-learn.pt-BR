@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2123'
-ht-degree: 0%
+source-wordcount: '2357'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ Este capítulo detalha a API do modelo JSON do AEM e mostra como o conteúdo JSO
 1. Inspecione como um componente do React usa propriedades dinâmicas transmitidas pelo AEM.
 1. Saiba como usar os [Componentes principais do React AEM](https://github.com/adobe/aem-react-core-wcm-components-examples) prontos para uso.
 
-## O que você vai criar
+## O que você criará
 
 Este capítulo inspeciona como o componente de SPA `Text` fornecido é mapeado para o componente `Text` do AEM. Os Componentes principais do React, como o componente de SPA `Image`, são usados no SPA e criados no AEM. Os recursos prontos para uso das políticas do **Contêiner de layout** e **Editor de modelos** também podem ser usados para criar um modo de exibição um pouco mais variado na aparência.
 
@@ -41,11 +41,11 @@ Este capítulo inspeciona como o componente de SPA `Text` fornecido é mapeado p
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Integrar o SPA](integrate-spa.md). No entanto, basta seguir um projeto do AEM habilitado para SPA.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Integrar o SPA](integrate-spa.md). No entanto, basta seguir um projeto do AEM habilitado para SPA.
 
 ## Abordagem de mapeamento
 
-O conceito básico é mapear um componente de SPA para um componente do AEM. Componentes do AEM, executar no lado do servidor, exportar conteúdo como parte da API do modelo JSON. O conteúdo JSON é consumido pelo SPA, executando no lado do cliente no navegador. Um mapeamento 1:1 entre componentes de SPA e um componente do AEM é criado.
+O conceito básico é mapear um componente de SPA para um componente do AEM. Componentes do AEM, executar no lado do servidor, exportar conteúdo como parte da API do modelo JSON. O conteúdo JSON é consumido pelo SPA, executando no lado do cliente no navegador. Um mapeamento 1:1 entre componentes SPA e um componente AEM foi criado.
 
 ![Visão geral de alto nível do mapeamento de um componente do AEM para um componente do React](./assets/map-components/high-level-approach.png)
 
@@ -53,7 +53,7 @@ O conceito básico é mapear um componente de SPA para um componente do AEM. Com
 
 ## Inspecione o componente de Texto
 
-O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
+O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
 
 Vamos ver como o componente funciona.
 
@@ -224,7 +224,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    O componente **Contêiner de Layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=pt-BR#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
+   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
 
 2. Retorne a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Adicione componentes adicionais de **Imagem** e tente redimensioná-los usando a opção **Layout**:
 
@@ -254,7 +254,7 @@ Parabéns, você aprendeu a mapear componentes SPA para componentes AEM e usou o
 
 ## (Bônus) Configurações persistentes para o controle de origem {#bonus-configs}
 
-Em muitos casos, especialmente no início de um projeto do AEM, é valioso manter as configurações, como modelos e políticas de conteúdo relacionadas, no controle de origem. Isso garante que todos os desenvolvedores trabalhem com o mesmo conjunto de conteúdo e configurações e possa garantir consistência adicional entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
+Em muitos casos, especialmente no início de um projeto do AEM, é valioso manter as configurações, como modelos e políticas de conteúdo relacionadas, no controle de origem. Isso garante que todos os desenvolvedores trabalhem com o mesmo conjunto de conteúdo e configurações, garantindo mais consistência entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
 
 As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), mas pode ser usando qualquer ferramenta e qualquer IDE que você tenha configurado para **extrair** ou **importar** conteúdo de uma instância local do AEM.
 
@@ -264,7 +264,7 @@ As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AE
 
 2. Expanda o módulo **ui.content** no Gerenciador de projetos e navegue até `/conf/wknd-spa-react/settings/wcm/templates`.
 
-3. **Clique com o botão direito do mouse** na pasta `templates` e selecione **Importar do AEM Server**:
+3. **Clique com o botão direito do mouse** na pasta `templates` e selecione **Importar do servidor do AEM**:
 
    ![Modelo de importação do VSCode](./assets/map-components/import-aem-servervscode.png)
 
@@ -283,7 +283,7 @@ As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AE
     </workspaceFilter>
    ```
 
-   O arquivo `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe o `mode="merge"` em cada filtro que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código **não** substitua o conteúdo. Consulte a [documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
+   O arquivo `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe o `mode="merge"` em cada filtro que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os criadores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação do código **não** substitua o conteúdo. Consulte a [documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para mais detalhes sobre como trabalhar com elementos de filtro.
 
    Compare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.
 
@@ -389,7 +389,7 @@ Antes de pular para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    require('./Image.css');
    ```
 
-1. Abra o arquivo `ui.frontend/src/components/import-components.js` e adicione uma referência ao novo componente `Image`:
+1. Open the file `ui.frontend/src/components/import-components.js` and add a reference to the new `Image` component:
 
    ```js
    import './Page/Page';
@@ -399,24 +399,24 @@ Antes de pular para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    import './Image/Image'; //add reference to Image component
    ```
 
-1. Em `import-components.js`, comente a Imagem do Componente Principal do React:
+1. In `import-components.js` comment out the React Core Component Image:
 
    ```js
    //MapTo('wknd-spa-react/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
    ```
 
-   Isso garantirá que nosso componente de Imagem personalizado seja usado no lugar.
+   This will ensure that our custom Image component is used instead.
 
-1. Na raiz do projeto, implante o código SPA no AEM usando o Maven:
+1. From the root of the project deploy the SPA code to AEM using Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Inspecione o SPA no AEM. Todos os componentes de Imagem na página devem continuar a funcionar. Inspecione a saída renderizada e você deverá ver a marcação para o componente de Imagem personalizado em vez do Componente principal de Reação.
+1. Inspect the SPA in AEM. Any Image components on the page should continue to work. Inspect the rendered output and you should see the markup for our custom Image component instead of the React Core Component.
 
-   *Marcação de componente de Imagem personalizada*
+   *Custom Image component markup*
 
    ```html
    <div class="Image">
@@ -424,7 +424,7 @@ Antes de pular para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    </div>
    ```
 
-   *Marcação da imagem do componente principal do React*
+   *React Core Component Image markup*
 
    ```html
    <div class="cmp-image cq-dd-image">
@@ -432,4 +432,4 @@ Antes de pular para o código SPA, inspecione o modelo JSON fornecido pelo AEM.
    </div>
    ```
 
-   Esta é uma boa introdução à extensão e implementação de seus próprios componentes.
+   This is a good introduction to extending and implementing your own components.

@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
 duration: 327
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 2%
+source-wordcount: '1244'
+ht-degree: 3%
 
 ---
 
@@ -70,7 +70,7 @@ Várias variáveis de ambiente devem ser expostas ao SPA remoto para que ele sai
       * Obrigatório para uso com o AEM Author
       * Possivelmente necessário para uso com o AEM Publish (se o conteúdo estiver protegido)
       * O desenvolvimento no AEM SDK é compatível com contas locais via Autenticação básica. Este é o método usado neste tutorial.
-      * Ao integrar com o AEM as a Cloud Service, use [tokens de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR)
+      * Ao integrar com o AEM as a Cloud Service, use [tokens de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
    * `REACT_APP_BASIC_AUTH_USER`: o __nome de usuário__ do AEM pelo SPA para autenticar ao recuperar o conteúdo do AEM.
    * `REACT_APP_BASIC_AUTH_PASS`: a __senha__ do AEM pelo SPA para autenticar ao recuperar o conteúdo do AEM.
 

@@ -1,6 +1,6 @@
 ---
-title: Pesquisa semântica e descoberta baseada em intenção
-description: Descubra como a pesquisa semântica e a descoberta baseada em intenções revolucionam a localização de ativos, mesmo com erros de digitação, sinônimos ou em vários idiomas.
+title: Semantic Search and Intent-Based Discovery
+description: Discover how semantic search and intent-based discovery revolutionize finding assets, even with typos, synonyms, or in multiple languages.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager, Experience Manager Assets
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: c726c62a-d3a9-471f-8091-4fb00010a7d9
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
 
-# Pesquisa semântica e descoberta baseada em intenção
+# Semantic Search and Intent-Based Discovery
 
-Descubra como a pesquisa semântica e a descoberta baseada em intenções revolucionam a localização de ativos, mesmo com erros de digitação, sinônimos ou em vários idiomas.
+Discover how semantic search and intent-based discovery revolutionize finding assets, even with typos, synonyms, or in multiple languages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459220/?learn=on&enablevpops)

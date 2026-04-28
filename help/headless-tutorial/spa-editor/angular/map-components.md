@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 0%
+source-wordcount: '2475'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +33,7 @@ Este capítulo detalha a API do modelo JSON do AEM e mostra como o conteúdo JSO
 2. Entenda a diferença entre os componentes de **Contêiner** e os componentes de **Conteúdo**.
 3. Crie um novo componente do Angular que mapeie para um componente existente do AEM.
 
-## O que você vai criar
+## O que você criará
 
 Este capítulo verificará como o componente de SPA `Text` fornecido é mapeado para o componente `Text` do AEM. Um novo componente de SPA `Image` é criado e pode ser usado no SPA e criado no AEM. Os recursos prontos das políticas do **Contêiner de layout** e **Editor de modelos** também serão usados para criar um modo de exibição um pouco mais variado na aparência.
 
@@ -41,7 +41,7 @@ Este capítulo verificará como o componente de SPA `Text` fornecido é mapeado 
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment).
 
 ### Obter o código
 
@@ -69,7 +69,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## Abordagem de mapeamento
 
-O conceito básico é mapear um componente de SPA para um componente do AEM. Componentes do AEM, executar no lado do servidor, exportar conteúdo como parte da API do modelo JSON. O conteúdo JSON é consumido pelo SPA, executando no lado do cliente no navegador. Um mapeamento 1:1 entre componentes de SPA e um componente do AEM é criado.
+O conceito básico é mapear um componente de SPA para um componente do AEM. Componentes do AEM, executar no lado do servidor, exportar conteúdo como parte da API do modelo JSON. O conteúdo JSON é consumido pelo SPA, executando no lado do cliente no navegador. Um mapeamento 1:1 entre componentes SPA e um componente AEM foi criado.
 
 ![Visão geral de alto nível do mapeamento de um componente do AEM para um componente do Angular](./assets/map-components/high-level-approach.png)
 
@@ -77,7 +77,7 @@ O conceito básico é mapear um componente de SPA para um componente do AEM. Com
 
 ## Inspecione o componente de Texto
 
-O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
+O [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece um componente `Text` que é mapeado para o [componente de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) do AEM. Este é um exemplo de um componente **conteúdo**, no qual ele renderiza *conteúdo* do AEM.
 
 Vamos ver como o componente funciona.
 
@@ -94,26 +94,26 @@ Vamos ver como o componente funciona.
 
    `text` e `richText` são propriedades adicionais expostas ao componente de SPA.
 
-### Inspecionar o componente de Texto
+### Inspect the Text component
 
-1. Abra um novo terminal e navegue até a pasta `ui.frontend` dentro do projeto. Execute `npm install` e depois `npm start` para iniciar o **servidor de desenvolvimento do webpack**:
+1. Open a new terminal and navigate to the `ui.frontend` folder inside the project. Run `npm install` and then `npm start` to start the **webpack dev server**:
 
    ```shell
    $ cd ui.frontend
    $ npm run start:mock
    ```
 
-   O módulo `ui.frontend` está configurado atualmente para usar o [modelo JSON simulado](./integrate-spa.md#mock-json).
+   The `ui.frontend` module is currently set up to use the [mock JSON model](./integrate-spa.md#mock-json).
 
-2. Você deve ver uma nova janela de navegador aberta para [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
+2. You should see a new browser window open to [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
 
-   ![Servidor de desenvolvimento do Webpack com conteúdo fictício](assets/map-components/initial-start.png)
+   ![Webpack dev server with mock content](assets/map-components/initial-start.png)
 
-3. No IDE de sua escolha, abra o Projeto AEM para o WKND SPA. Expanda o módulo `ui.frontend` e abra o arquivo **text.component.ts** em `ui.frontend/src/app/components/text/text.component.ts`:
+3. In the IDE of your choice open up the AEM Project for the WKND SPA. Expand the `ui.frontend` module and open the file **text.component.ts** under `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![Código Source do Componente Angular do Text.js](assets/map-components/vscode-ide-text-js.png)
+   ![Text.js Angular Component Source Code](assets/map-components/vscode-ide-text-js.png)
 
-4. A primeira área a ser inspecionada é o `class TextComponent` na linha ~35:
+4. The first area to inspect is the `class TextComponent` at ~line 35:
 
    ```js
    export class TextComponent {
@@ -132,11 +132,11 @@ Vamos ver como o componente funciona.
    }
    ```
 
-   O decorador [@Input()](https://angular.io/api/core/Input) é usado para declarar campos cujos valores são definidos por meio do objeto JSON mapeado, revisado anteriormente.
+   [@Input()](https://angular.io/api/core/Input) decorator is used to declare fields who&#39;s values are set via the mapped JSON object, reviewed earlier.
 
-   `@HostBinding('innerHtml') get content()` é um método que expõe o conteúdo do texto criado a partir do valor de `this.text`. Caso o conteúdo seja rich text (determinado pelo sinalizador `this.richText`), a segurança interna do Angular é ignorada. O [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) da Angular é usado para &quot;limpar&quot; o HTML bruto e evitar vulnerabilidades de script entre sites. O método está associado à propriedade `innerHtml` usando o decorador [@HostBinding](https://angular.io/api/core/HostBinding).
+   `@HostBinding('innerHtml') get content()` is a method that exposes the authored text content from the value of `this.text`. In the case that the content is rich text (determined by the `this.richText` flag) Angular&#39;s built-in security is bypassed. Angular&#39;s [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) is used to &quot;scrub&quot; the raw HTML and prevent Cross Site Scripting vulnerabilities. The method is bound to the `innerHtml` property using the [@HostBinding](https://angular.io/api/core/HostBinding) decorator.
 
-5. Em seguida, verifique o `TextEditConfig` em ~line 24:
+5. Next inspect the `TextEditConfig` at ~line 24:
 
    ```js
    const TextEditConfig = {
@@ -437,7 +437,7 @@ Vamos analisar mais detalhadamente o Contêiner de layout.
 
    O componente **Contêiner de Layout** tem um `sling:resourceType` de `wcm/foundation/components/responsivegrid` e é reconhecido pelo Editor SPA usando a propriedade `:type`, exatamente como os componentes `Text` e `Image`.
 
-   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=pt-BR#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
+   Os mesmos recursos de redimensionamento de um componente usando o [Modo de layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) estão disponíveis com o Editor de SPA.
 
 3. Retorne a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Adicione componentes adicionais de **Imagem** e tente redimensioná-los usando a opção **Layout**:
 
@@ -469,7 +469,7 @@ Você sempre pode exibir o código concluído em [GitHub](https://github.com/ado
 
 ## Bônus - Configurações persistentes para o controle de origem {#bonus}
 
-Em muitos casos, especialmente no início de um projeto do AEM, é valioso manter as configurações, como modelos e políticas de conteúdo relacionadas, no controle de origem. Isso garante que todos os desenvolvedores trabalhem com o mesmo conjunto de conteúdo e configurações e possa garantir consistência adicional entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
+Em muitos casos, especialmente no início de um projeto do AEM, é valioso manter as configurações, como modelos e políticas de conteúdo relacionadas, no controle de origem. Isso garante que todos os desenvolvedores trabalhem com o mesmo conjunto de conteúdo e configurações, garantindo mais consistência entre os ambientes. Quando um projeto atinge um determinado nível de maturidade, a prática de gerenciar modelos pode ser transferida para um grupo especial de usuários avançados.
 
 As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), mas pode ser usando qualquer ferramenta e qualquer IDE que você tenha configurado para **extrair** ou **importar** conteúdo de uma instância local do AEM.
 
@@ -479,7 +479,7 @@ As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AE
 
 2. Expanda o módulo **ui.content** no Gerenciador de projetos e navegue até `/conf/wknd-spa-angular/settings/wcm/templates`.
 
-3. **Clique com o botão direito do mouse** na pasta `templates` e selecione **Importar do AEM Server**:
+3. **Clique com o botão direito do mouse** na pasta `templates` e selecione **Importar do servidor do AEM**:
 
    ![Modelo de importação do VSCode](assets/map-components/import-aem-servervscode.png)
 
@@ -498,6 +498,6 @@ As próximas etapas ocorrerão usando o IDE do Visual Studio Code e o [VSCode AE
     </workspaceFilter>
    ```
 
-   O arquivo `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe o `mode="merge"` em cada filtro que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os autores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação de código **não** substitua o conteúdo. Consulte a [documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para obter mais detalhes sobre como trabalhar com elementos de filtro.
+   O arquivo `filter.xml` é responsável por identificar os caminhos dos nós instalados com o pacote. Observe o `mode="merge"` em cada filtro que indica que o conteúdo existente não será modificado, somente o novo conteúdo será adicionado. Como os criadores de conteúdo podem estar atualizando esses caminhos, é importante que uma implantação do código **não** substitua o conteúdo. Consulte a [documentação do FileVault](https://jackrabbit.apache.org/filevault/filter.html) para mais detalhes sobre como trabalhar com elementos de filtro.
 
    Compare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` para entender os diferentes nós gerenciados por cada módulo.

@@ -14,7 +14,7 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: 5a799ef6-9770-4cf1-a288-80a9bbb26faf
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Saiba como o Assistente de IA do AEM simplifica a descoberta de conhecimento sobre o produto e automatiza a criação de tíquetes de suporte.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461921/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)

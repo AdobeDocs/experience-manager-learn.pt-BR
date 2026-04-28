@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 0%
+source-wordcount: '1278'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ $ cd remote-spa-tutorial
 
 ## Criar um projeto do AEM
 
-Crie um projeto do AEM em que as configurações e o conteúdo da linha de base sejam gerenciados. Este projeto será gerado dentro da pasta `aem-guides-wknd-graphql` do projeto `remote-spa-tutorial` clonado.
+Crie um projeto do AEM em que as configurações e o conteúdo da linha de base sejam gerenciados. Este projeto será gerado dentro da pasta `remote-spa-tutorial` do projeto `aem-guides-wknd-graphql` clonado.
 
 _Sempre usar a versão mais recente do [Arquétipo do AEM](https://github.com/adobe/aem-project-archetype)._
 
@@ -214,12 +214,12 @@ O Mapeamento do Sling afeta o AEM em execução em `http` e `localhost`, portant
 
 ## Políticas de segurança do Compartilhamento de recursos entre origens
 
-Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR).
+Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
 
 1. No IDE, abra o subprojeto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`
 1. Criar um arquivo chamado `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json`
-1. Adicione o seguinte ao arquivo:
+1. Add the following to the file:
 
    ```
    {
@@ -257,22 +257,22 @@ Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA 
 
 O arquivo `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.json` deve ser semelhante a:
 
-![Configuração do CORS do Editor de SPA](./assets/aem-project/cors-configuration.png)
+![SPA Editor CORS configuration](./assets/aem-project/cors-configuration.png)
 
-Os principais elementos de configuração são:
+The key configuration elements are:
 
-* `alloworigin` especifica quais hosts têm permissão para recuperar conteúdo do AEM.
-   * `localhost:3000` foi adicionado para oferecer suporte ao SPA executado localmente
-   * `https://external-hosted-app` atua como um espaço reservado a ser substituído pelo domínio em que o SPA Remoto está hospedado.
-* `allowedpaths` especifique quais caminhos no AEM são cobertos por esta configuração do CORS. O padrão permite acesso a todo o conteúdo no AEM, no entanto, isso pode ser controlado apenas para os caminhos específicos que o SPA pode acessar, por exemplo: `/content/wknd-app`.
+* `alloworigin` specifies which hosts are allowed to retrieve content from AEM.
+   * `localhost:3000` is added to support the SPA running locally
+   * `https://external-hosted-app` acts as a placeholder to be replaced with the domain that Remote SPA is hosted on.
+* `allowedpaths` specify which paths in AEM are covered by this CORS configuration. The default allows access to all content in AEM, however this can be scoped to only the specific paths the SPA can access, for example: `/content/wknd-app`.
 
-## Definir página do AEM como modelo de página do SPA remoto
+## Set AEM Page as Remote SPA Page Template
 
-O Arquétipo de projeto do AEM gera um projeto preparado para a integração do AEM com um SPA remoto, mas requer um pequeno, mas importante ajuste à estrutura de página do AEM gerada automaticamente. A página do AEM gerada automaticamente deve ter seu tipo alterado para **Página do SPA Remoto**, em vez de uma **página do SPA**.
+The AEM Project Archetype generates a project primed for AEM&#39;s integration with a Remote SPA, but requires a small, but important adjustment to auto-generated AEM page structure. The auto-generated AEM page must have its type changed to **Remote SPA page**, rather than a **SPA page**.
 
-1. No IDE, abra o subprojeto `ui.content`
-1. Abrir para `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml`
-1. Atualizar este `.content.xml` arquivo com:
+1. In your IDE, open the `ui.content` subproject
+1. Open to `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml`
+1. Update this `.content.xml` file with:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -302,26 +302,26 @@ O Arquétipo de projeto do AEM gera um projeto preparado para a integração do 
    </jcr:root>
    ```
 
-As alterações principais são atualizações no nó `jcr:content`:
+The key changes are updates to the `jcr:content` node&#39;s:
 
-* `cq:template` a `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
-* `sling:resourceType` a `wknd-app/components/remotepage`
+* `cq:template` to `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
+* `sling:resourceType` to `wknd-app/components/remotepage`
 
 O arquivo `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` deve ser semelhante a:
 
-![Atualizações de .content.xml na página inicial](./assets/aem-project/home-content-xml.png)
+![Home page .content.xml updates](./assets/aem-project/home-content-xml.png)
 
-Essas alterações permitem que essa página, que atua como a raiz do SPA no AEM, carregue o SPA remoto no Editor de SPA.
+These changes allow this page, which acts are the SPA&#39;s root in AEM, to load the Remote SPA in SPA Editor.
 
 >[!NOTE]
 >
->Se este projeto foi implantado anteriormente no AEM, certifique-se de excluir a página do AEM como **Sites > Aplicativo WKND > us > en > Página Inicial do Aplicativo WKND**, pois o projeto `ui.content` está definido como **mesclar** nós, em vez de **atualizar**.
+>If this project was previously deployed to AEM, make sure to delete the AEM page as **Sites > WKND App > us > en > WKND App Home Page**, as the `ui.content`  project is set to **merge** nodes, rather than **update**.
 
-Esta página também pode ser removida e recriada como uma Página de SPA Remoto no próprio AEM. No entanto, como essa página é criada automaticamente no projeto `ui.content`, é melhor atualizá-la na base de código.
+This page could also be removed and re-created as a Remote SPA Page in AEM itself, however since this page is auto-created in the `ui.content` project it is best to update it in the code base.
 
-## Implantar o projeto do AEM no AEM SDK
+## Deploy the AEM Project to AEM SDK
 
-1. Verifique se o serviço do Autor do AEM está em execução na porta 4502
+1. Ensure that AEM Author service is running on port 4502
 1. Na linha de comando, navegue até a raiz do projeto AEM Maven.
 1. Use o Maven para implantar o projeto no serviço de autor local do AEM SDK
 

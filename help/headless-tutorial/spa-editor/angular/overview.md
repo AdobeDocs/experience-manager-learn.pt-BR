@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
 duration: 123
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
+workflow-type: tm+mt
+source-wordcount: '734'
+ht-degree: 88%
 
 ---
 
@@ -35,9 +35,9 @@ O objetivo deste tutorial em várias partes é ensinar um desenvolvedor a implem
 
 O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e conta com compatibilidade retroativa com o **AEM 6.5.4+** e o **AEM 6.4.8+**. O SPA é implementado por meio de:
 
-* [Arquétipo de projeto do AEM Maven](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview)
-* [Editor de SPA do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/spas/spa-walkthrough#content-editing-experience-with-spa)
-* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
+* [Arquétipo de projeto do Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Editor SPA do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/spas/spa-walkthrough#content-editing-experience-with-spa)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Angular](https://angular.io/)
 
 *Estimativa de 1 a 2 horas para passar por cada parte do tutorial.*
@@ -59,7 +59,7 @@ Antes de iniciar este tutorial, você precisará do seguinte:
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 * [Node.js](https://nodejs.org/pt) e [npm](https://www.npmjs.com/)
 
-*Embora não seja obrigatório, é vantajoso ter uma compreensão básica do [desenvolvimento de componentes tradicionais do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).*
+*Embora não seja obrigatório, é vantajoso ter uma compreensão básica sobre o [desenvolvimento de componentes tradicionais de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
 
 ## Ambiente de desenvolvimento local {#local-dev-environment}
 
@@ -67,13 +67,13 @@ Um ambiente de desenvolvimento local é necessário para concluir este tutorial.
 
 >[!NOTE]
 >
-> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
+> **Novo no AEM as a Cloud Service?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR).
 >
-> **Primeira vez usando o AEM 6.5?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
+> **Novo no AEM 6.5?** Consulte o [guia a seguir para configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR).
 
 ## Próximas etapas {#next-steps}
 
-O que você está esperando? Para começar o tutorial, navegue até o capítulo [Projeto do editor de SPA](create-project.md) e saiba como gerar um projeto habilitado para o editor de SPA por meio do arquétipo de projeto do AEM.
+O que você está esperando?! Inicie o tutorial navegando até o capítulo [Projeto do editor de SPA](create-project.md) e saiba como gerar um projeto habilitado para o editor de SPA usando o Arquétipo de projeto do AEM.
 
 ## Compatibilidade retroativa {#compatibility}
 

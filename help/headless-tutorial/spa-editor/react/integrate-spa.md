@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
 duration: 409
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 0%
+source-wordcount: '1964'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Entenda como o código-fonte de um Aplicativo de página única (SPA) escrito no
 2. Saiba como usar um servidor de desenvolvimento de webpack para desenvolvimento front-end dedicado.
 3. Explore o uso de um **proxy** e de um arquivo estático **mock** para desenvolvimento em relação à API de modelo JSON do AEM.
 
-## O que você vai criar
+## O que você criará
 
 Neste capítulo, você fará várias pequenas alterações no SPA para entender como ele é integrado ao AEM.
 Este capítulo adicionará um componente `Header` simples ao SPA. No processo de criação deste componente **estático** `Header`, várias abordagens para o desenvolvimento de SPA do AEM são usadas.
@@ -42,7 +42,7 @@ Este capítulo adicionará um componente `Header` simples ao SPA. No processo de
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Criar projeto](create-project.md). No entanto, basta seguir um projeto AEM habilitado para SPA para que você possa trabalhar.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Este capítulo é uma continuação do capítulo [Criar projeto](create-project.md). No entanto, basta seguir um projeto AEM habilitado para SPA para que você possa trabalhar.
 
 ## Abordagem de integração {#integration-approach}
 
@@ -54,17 +54,17 @@ O módulo `ui.frontend` é um projeto [webpack](https://webpack.js.org/) que con
 
 *Uma descrição detalhada da integração de SPA.*
 
-Informações adicionais sobre a compilação de front-end podem ser [encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=pt-BR).
+Informações adicionais sobre a compilação de front-end podem ser [encontradas aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
 ## Inspecione a integração de SPA {#inspect-spa-integration}
 
-Em seguida, inspecione o módulo `ui.frontend` para entender o SPA que foi gerado automaticamente pelo [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=pt-BR).
+Em seguida, inspecione o módulo `ui.frontend` para entender o SPA que foi gerado automaticamente pelo [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. No IDE de sua escolha, abra o projeto do AEM. Este tutorial usará o [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#microsoft-visual-studio-code).
+1. No IDE de sua escolha, abra o projeto do AEM. Este tutorial usará o [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - Projeto AEM WKND SPA](./assets/integrate-spa/vscode-ide-openproject.png)
 
-1. Expanda e inspecione a pasta `ui.frontend`. Abrir o arquivo `ui.frontend/package.json`
+1. Expanda e inspecione a pasta `ui.frontend`. Abra o arquivo `ui.frontend/package.json`
 
 1. Em `dependencies` você deve ver vários relacionados a `react` incluindo `react-scripts`
 
@@ -80,7 +80,7 @@ Em seguida, inspecione o módulo `ui.frontend` para entender o SPA que foi gerad
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   Os módulos acima compõem o [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html?lang=pt-BR) e fornecem a funcionalidade para tornar possível mapear Componentes SPA para Componentes AEM.
+   Os módulos acima compõem o [AEM SPA Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) e fornecem a funcionalidade para tornar possível mapear Componentes SPA para Componentes AEM.
 
    Também estão incluídos [Componentes do AEM WCM - Implementação do React Core](https://github.com/adobe/aem-react-core-wcm-components-base) e [Componentes do AEM WCM - Editor de spa - Implementação do React Core](https://github.com/adobe/aem-react-core-wcm-components-spa). Esses são um conjunto de componentes reutilizáveis da interface do usuário que mapeiam para componentes prontos para uso do AEM. Elas foram projetadas para serem usadas como estão e estilizadas para atender às necessidades do seu projeto.
 
@@ -268,7 +268,7 @@ Um [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) pode s
 
    >[!NOTE]
    >
-   > Devido aos requisitos de segurança do AEM, será necessário fazer logon na instância local do AEM (http://localhost:4502) no mesmo navegador, mas em uma guia diferente.
+   > Devido aos requisitos de segurança do AEM, será necessário fazer logon na instância do AEM local (http://localhost:4502) no mesmo navegador, mas em uma guia diferente.
 
 1. Retorne ao IDE e crie um arquivo chamado `Header.css` na pasta `src/components/Header`.
 1. Preencha o `Header.css` com o seguinte:

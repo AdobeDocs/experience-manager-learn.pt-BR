@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
 duration: 250
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 1%
+source-wordcount: '1105'
+ht-degree: 15%
 
 ---
 
@@ -30,17 +30,17 @@ Saiba como gerar um projeto Maven do Adobe Experience Manager (AEM) como ponto d
 1. Gere um projeto ativado do Editor SPA usando o Arquétipo de projeto do AEM.
 2. Implante o projeto inicial em uma instância local do AEM.
 
-## O que você vai criar {#what-build}
+## O que você criará {#what-build}
 
 Neste capítulo, um novo projeto do AEM é gerado, com base no [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype). O projeto do AEM é inicializado com um ponto de partida muito simples para o SPA do React.
 
-**O que é um projeto Maven?** - [Apache Maven](https://maven.apache.org/) é uma ferramenta de gerenciamento de software para compilar projetos. *Todas as implementações do Adobe Experience Manager* usam projetos Maven para compilar, gerenciar e implantar código personalizado sobre o AEM.
+**O que é um projeto Maven?** - O [Apache Maven](https://maven.apache.org/) é uma ferramenta de gerenciamento de software para compilar projetos. *Todas as implementações do Adobe Experience Manager* usam projetos Maven para compilar, gerenciar e implantar código personalizado sobre o AEM.
 
 **O que é um arquétipo Maven?** - Um [Arquétipo Maven](https://maven.apache.org/archetype/index.html) é um modelo ou padrão para gerar novos projetos. O arquétipo do Projeto AEM nos permite gerar um novo projeto com um namespace personalizado e incluir uma estrutura de projeto que segue as práticas recomendadas, acelerando consideravelmente nosso projeto.
 
 ## Pré-requisitos
 
-Revise as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Verifique se uma nova instância do Adobe Experience Manager, iniciada no modo **author**, está em execução localmente.
+Consulte as ferramentas e instruções necessárias para configurar um [ambiente de desenvolvimento local](overview.md#local-dev-environment). Verifique se uma nova instância do Adobe Experience Manager, iniciada no modo **author**, está em execução localmente.
 
 ## Criar o projeto {#create}
 
@@ -67,11 +67,11 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
    >
    > Se estiver direcionado para o AEM 6.5.5+, substitua `aemVersion="cloud"` por `aemVersion="6.5.5"`. Se for para 6.4.8+, use `aemVersion="6.4.8"`.
 
-   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
+   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
 
    Uma lista completa de propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 
-1. A seguinte pasta e estrutura de arquivo são geradas pelo arquétipo Maven no sistema de arquivos local:
+1. As seguintes pasta e estrutura de arquivos são geradas pelo arquétipo do Maven no sistema de arquivos local:
 
    ```plain
    |--- aem-guides-wknd-spa.react/
@@ -92,26 +92,26 @@ Revise as ferramentas e instruções necessárias para configurar um [ambiente d
        |--- .gitignore
    ```
 
-   Cada pasta representa um módulo Maven individual. Neste tutorial, trabalharemos principalmente com o módulo `ui.frontend`, que é o aplicativo React. Mais detalhes sobre módulos individuais podem ser encontrados na [documentação do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
+   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
-## Implantar e criar o projeto
+## Implantar e compilar o projeto
 
 Em seguida, compile, crie e implante o código do projeto em uma instância local do AEM usando o Maven.
 
 1. Verifique se uma instância do AEM está sendo executada localmente na porta **4502**.
-1. Na linha de comando, navegue até o diretório de projeto `aem-guides-wknd-spa.react`.
+1. From the command line navigate into the `aem-guides-wknd-spa.react` project directory.
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    ```
 
-1. Execute o seguinte comando para criar e implantar o projeto inteiro no AEM:
+1. Execute o seguinte comando para compilar e implantar o projeto inteiro no AEM:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   A build levará cerca de um minuto e deve terminar com a seguinte mensagem:
+   The build will take around a minute and should end with the following message:
 
    ```shell
    ...
@@ -135,17 +135,17 @@ Em seguida, compile, crie e implante o código do projeto em uma instância loca
    [INFO] ------------------------------------------------------------------------
    ```
 
-   O perfil Maven `autoInstallSinglePackage` compila os módulos individuais do projeto e implanta um único pacote na instância do AEM. Por padrão, esse pacote é implantado em uma instância do AEM em execução localmente na porta **4502** e com as credenciais de `admin:admin`.
+   O perfil do Maven `autoInstallSinglePackage` compila os módulos individuais do projeto e implanta um pacote unificado na instância do AEM. Por padrão, esse pacote é implantado em uma instância do AEM em execução localmente na porta **4502** e com as credenciais de `admin:admin`.
 
-1. Navegue até **Gerenciador de Pacotes** na sua instância do AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
+1. Navegue até o **Gerenciador de Pacotes** na sua instância do AEM local: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
 
-1. Você deve ver vários pacotes com o prefixo `aem-guides-wknd-spa.react`.
+1. You should see multiple packages prefixed with `aem-guides-wknd-spa.react`.
 
    ![Pacotes de SPA do WKND](assets/create-project/package-manager.png)
 
-   *Gerenciador de pacotes do AEM*
+   *AEM Package Manager*
 
-   Todo o código personalizado necessário para o projeto é incorporado a esses pacotes e instalado no ambiente do AEM.
+   All of the custom code needed for the project is bundled into these packages and installed on the AEM environment.
 
 ## Conteúdo do autor
 
@@ -155,7 +155,7 @@ Em seguida, abra o SPA inicial gerado pelo arquétipo e atualize parte do conte�
 
    O WKND SPA inclui uma estrutura básica do site com um país, idioma e página inicial. Esta hierarquia é baseada nos valores padrão do arquétipo para `language_country` e `isSingleCountryWebsite`. Estes valores podem ser substituídos atualizando as [propriedades disponíveis](https://github.com/adobe/aem-project-archetype#available-properties) ao gerar um projeto.
 
-2. Abra a página **us** > **en** > **Página Inicial do WKND SPA React** selecionando a página e clicando no botão **Editar** na barra de menus:
+2. Open the **us** > **en** > **WKND SPA React Home Page** page by selecting the page and clicking the **Edit** button in the menu bar:
 
    ![console do site](./assets/create-project/open-home-page.png)
 

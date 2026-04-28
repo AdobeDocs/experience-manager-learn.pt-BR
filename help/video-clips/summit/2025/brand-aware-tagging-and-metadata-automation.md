@@ -1,6 +1,6 @@
 ---
-title: Marcação com reconhecimento de marca e automação de metadados
-description: Descubra como a marcação sensível à marca automatiza a geração de metadados, aprimorando a pesquisa e a descoberta para gerentes de conteúdo.
+title: Brand-Aware Tagging and Metadata Automation
+description: Discover how brand-aware tagging automates metadata generation, enhancing search and discovery for content managers.
 cloud: Experience Cloud
 solution: Experience Manager Assets, Experience Manager Sites
 feature-set: Experience Manager Assets, Experience Manager Sites
@@ -14,15 +14,15 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: a9ed4c09-307c-42f1-9d3c-37481b305bf2
-source-git-commit: 30b98e82e78120bf9fb13c9d41780af4c07665d8
+source-git-commit: f95907146983d2315d48f793d38ebb1172a7bae4
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
-# Marcação com reconhecimento de marca e automação de metadados
+# Brand-Aware Tagging and Metadata Automation
 
-Descubra como a marcação sensível à marca automatiza a geração de metadados, aprimorando a pesquisa e a descoberta para gerentes de conteúdo.
+Discover how brand-aware tagging automates metadata generation, enhancing search and discovery for content managers.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459244/?learn=on&enablevpops)
