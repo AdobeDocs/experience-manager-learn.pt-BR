@@ -47,7 +47,7 @@ Antes de iniciar este tutorial, você precisará do seguinte:
 * Conhecimento básico de HTML, CSS e JavaScript
 * Familiaridade básica com [React](https://reactjs.org/tutorial/tutorial.html)
 
-*Embora não seja obrigatório, é vantajoso ter uma compreensão básica sobre o [desenvolvimento de componentes tradicionais de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
+*Embora não seja obrigatório, é vantajoso ter uma compreensão básica sobre o [desenvolvimento de componentes tradicionais de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).*
 
 ## Ambiente de desenvolvimento local {#local-dev-environment}
 

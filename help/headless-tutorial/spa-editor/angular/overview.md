@@ -35,7 +35,7 @@ O objetivo deste tutorial em várias partes é ensinar um desenvolvedor a implem
 
 O tutorial foi projetado para funcionar com o **AEM as a Cloud Service** e conta com compatibilidade retroativa com o **AEM 6.5.4+** e o **AEM 6.4.8+**. O SPA é implementado por meio de:
 
-* [Arquétipo de projeto do Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Arquétipo de projeto do Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 * [Editor SPA do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/spas/spa-walkthrough#content-editing-experience-with-spa)
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Angular](https://angular.io/)
@@ -59,7 +59,7 @@ Antes de iniciar este tutorial, você precisará do seguinte:
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 * [Node.js](https://nodejs.org/pt) e [npm](https://www.npmjs.com/)
 
-*Embora não seja obrigatório, é vantajoso ter uma compreensão básica sobre o [desenvolvimento de componentes tradicionais de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
+*Embora não seja obrigatório, é vantajoso ter uma compreensão básica sobre o [desenvolvimento de componentes tradicionais de sites do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR).*
 
 ## Ambiente de desenvolvimento local {#local-dev-environment}
 

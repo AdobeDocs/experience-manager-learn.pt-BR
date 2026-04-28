@@ -214,7 +214,7 @@ O Mapeamento do Sling afeta o AEM em execução em `http` e `localhost`, portant
 
 ## Políticas de segurança do Compartilhamento de recursos entre origens
 
-Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Em seguida, configure o AEM para proteger o conteúdo para que somente esse SPA possa acessar o conteúdo do AEM. Configure o Compartilhamento de Recursos entre Origens [no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR).
 
 1. No IDE, abra o subprojeto Maven `ui.config`
 1. Navegar `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`

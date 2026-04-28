@@ -67,7 +67,7 @@ Consulte as ferramentas e instruções necessárias para configurar um [ambiente
    >
    > Se estiver direcionado para o AEM 6.5.5+, substitua `aemVersion="cloud"` por `aemVersion="6.5.5"`. Se for para 6.4.8+, use `aemVersion="6.4.8"`.
 
-   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
+   Observe a propriedade `frontendModule=react`. Isso instrui o Arquétipo de Projetos AEM a inicializar o projeto com uma [base de código React](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=pt-BR) inicial a ser usada com o Editor SPA do AEM. Propriedades como `appTitle`, `appId`, `artifactId` e `groupId` são usadas para identificar o projeto e a finalidade.
 
    Uma lista completa de propriedades disponíveis para configurar um projeto [pode ser encontrada aqui](https://github.com/adobe/aem-project-archetype#available-properties).
 
@@ -92,7 +92,7 @@ Consulte as ferramentas e instruções necessárias para configurar um [ambiente
        |--- .gitignore
    ```
 
-   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+   Each folder represents an individual Maven module. In this tutorial we will primarily be working with the `ui.frontend` module, which is the React app. More details about individual modules can be found in the [AEM Project Archetype documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
 ## Implantar e compilar o projeto
 
