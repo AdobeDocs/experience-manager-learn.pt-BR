@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 2eb26576a0308d8b74c2d1ce7db61c148936d076
+source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 93%
+source-wordcount: '1642'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,12 @@ ht-degree: 93%
       + [Visão geral](./ai/mcp/overview.md)
       + [Acelere as operações de conteúdo do AEM com o servidor MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Cloud Manager MCP Server](./ai/mcp/cloud-manager.md)
+   + Desenvolvimento assistido por IA {#ai-assisted-development}
+      + [Visão geral](./ai/ai-assited-development/overview.md)
+      + Configurar{#setup}
+         + [Habilidades do agente](./ai/ai-assited-development/setup/agent-skills.md)
+      + Casos de uso{#use-cases}
+         + [Desenvolvimento de componentes](./ai/ai-assited-development/use-cases/component-development.md)
 + Integrações da Experience Cloud{#integrations}
    + [Integrações](./integrations/experience-cloud.md)
    + [AEM headless e Target](./integrations/target.md)
@@ -55,7 +61,7 @@ ht-degree: 93%
    + [Serviços de criação e publicação](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Plug-in do AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=pt-BR){target=_blank}
+   + [Plug-in do AEM Assets para Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programas](./cloud-manager/programs.md)
    + [Ambientes](./cloud-manager/environments.md)
@@ -142,7 +148,7 @@ ht-degree: 93%
          + [Visão geral](./developing/universal-editor/react-app/overview.md)
          + [Configuração do desenvolvimento local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrumentalizar aplicativo em React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [JavaDocs da API do SDK do AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [JavaDocs da API do AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Depurar o AEM{#debugging}
    + Depurar o SDK do AEM{#debugging-aem-sdk}
       + [Visão geral](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -187,7 +193,7 @@ ht-degree: 93%
    + [Armazenamento em cache](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [CDN da Adobe: além do armazenamento em cache](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Páginas de erro personalizadas](./content-delivery/custom-error-pages.md)
-   + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=pt-BR){target=_blank}
+   + [Redirecionamentos de URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Armazenamento em cache{#caching}
    + [Visão geral](./caching/overview.md)
    + [Serviço do AEM Publish](./caching/publish.md)
@@ -272,7 +278,7 @@ ht-degree: 93%
       + [Ferramenta de migração de fluxo de trabalho de ativos](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navegar pelo Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Usar o Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=pt-BR){target=_blank}
++ [Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
 + Forms{#forms}
    + Desenvolvimento no Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Introdução](./forms/developing-for-cloud-service/getting-started.md)
@@ -332,8 +338,8 @@ ht-degree: 93%
    + Usar guias verticais{#using-vertical-tabs}
       + [&#x200B;1. Introdução](./forms/using-vertical-tabs/introduction.md)
       + [&#x200B;2. Criar formulário](./forms/using-vertical-tabs/create-af.md)
-      + [&#x200B;3. Navegar](./forms/using-vertical-tabs/navigation.md)
-      + [&#x200B;4. Adicionar ícones](./forms/using-vertical-tabs/icons.md)
+      + [&#x200B;3. Navegação](./forms/using-vertical-tabs/navigation.md)
+      + [&#x200B;4. Adição de ícones](./forms/using-vertical-tabs/icons.md)
    + Usar serviço de formulários e saída{#forms-cs-output-and-forms-service}
       + [Gerar PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Criar perfil no AEP no envio de formulários{#aep-integration}
@@ -346,7 +352,7 @@ ht-degree: 93%
       + [&#x200B;3. Criar modelo](./forms/interactive-communication-tutorial/create-template.md)
       + [&#x200B;4. Criar fragmentos](./forms/interactive-communication-tutorial/create-fragments.md)
       + [&#x200B;5. Criar documento IC](./forms/interactive-communication-tutorial/create-ic-document.md)
-      + [&#x200B;6. Gerar o documento IC](./forms/interactive-communication-tutorial/test-document-generation.md)
+      + [&#x200B;6. Gerar documento IC](./forms/interactive-communication-tutorial/test-document-generation.md)
    + Geração de documentos no AEM Forms CS{#doc-gen-formscs}
       + [Introdução](./forms/doc-gen-forms-cs/introduction.md)
       + [Criar credenciais de serviço](./forms/doc-gen-forms-cs/service-credentials.md)
@@ -457,11 +463,11 @@ ht-degree: 93%
    + [Resolução de problemas](./asset-compute/troubleshooting.md)
 
 + Tutoriais em várias etapas{#multi-step-tutorials}
-   + [Desenvolvimento no AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR){target=_blank}
+   + [Desenvolvimento do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR){target=_blank}
-   + [Editor de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
-   + [Autenticação baseada em tokens](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR){target=_blank}
+   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [AEM SITES e ADOBE TARGET](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/aem-target-tutorial/overview){target=_blank}
+   + [Autenticação baseada em token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Recursos de especialistas {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Manual de estratégia de integração do Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
