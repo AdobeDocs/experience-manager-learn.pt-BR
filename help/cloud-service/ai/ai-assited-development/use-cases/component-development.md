@@ -24,7 +24,7 @@ Saiba como desenvolver um componente do AEM usando as Habilidades do AEM Agent c
 
 Nesta apresentação, você usa a linguagem natural em um IDE alimentado por IA (por exemplo, Cursor) para desenvolver um componente **Banner promocional** no [Projeto de sites WKND](https://github.com/adobe/aem-guides-wknd). O agente de codificação aplica a `create-component` Habilidade do AEM Agent para gerar a implementação.
 
->[!VIDEO](https://video.tv.adobe.com/v/3484952/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484957/?captions=por_br&learn=on&enablevpops)
 
 ## Pré-requisitos
 
