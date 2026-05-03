@@ -121,7 +121,7 @@ CARDS
 
 ## Recursos adicionais
 
-- [Desenvolvimento local com ferramentas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desenvolvimento local com ferramentas de IA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Habilidades do Adobe para agentes de codificação de IA](https://github.com/adobe/skills)
 
