@@ -3,7 +3,7 @@ title: Desenvolvimento de componentes usando as habilidades do agente do AEM
 description: Saiba como desenvolver um componente do AEM usando as Habilidades do agente do AEM como parte do desenvolvimento assistido por IA.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
-role: Developer, Architect
+role: Developer
 level: Beginner
 doc-type: Article
 duration: 0
@@ -11,7 +11,7 @@ last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20901
 thumbnail: KT-20901.png
 exl-id: bd9b74e8-81ab-4d42-bd0a-5443248b5770
-source-git-commit: f93359e731b6c3fa549e9499ef693042eba3aad7
+source-git-commit: 6f303c8fbec523227716fe0bc1bff8fceffad1f9
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Saiba como desenvolver um componente do AEM usando as Habilidades do AEM Agent c
 
 Nesta apresentação, você usa a linguagem natural em um IDE alimentado por IA (por exemplo, Cursor) para desenvolver um componente **Banner promocional** no [Projeto de sites WKND](https://github.com/adobe/aem-guides-wknd). O agente de codificação aplica a `create-component` Habilidade do AEM Agent para gerar a implementação.
 
->[!VIDEO](https://video.tv.adobe.com/v/3484957/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484952/?learn=on&enablevpops)
 
 ## Pré-requisitos
 
@@ -107,7 +107,7 @@ Ele **não** substitui um arquivo `AGENTS.md` existente.
 
 ## Recursos adicionais
 
-- [Desenvolvimento local com ferramentas de IA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desenvolvimento local com ferramentas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Habilidades do Adobe para agentes de codificação de IA](https://github.com/adobe/skills)
 

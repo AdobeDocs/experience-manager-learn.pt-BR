@@ -3,20 +3,20 @@ title: Desenvolvimento assistido por IA
 description: Saiba mais sobre o desenvolvimento assistido por IA que usa um IDE alimentado por IA ou agentes de codificação juntamente com AGENTS.md, Habilidades do agente e servidores MCP para ajudar a produzir código pronto para produção de alta qualidade para projetos no AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Developer Tools
-role: Developer, Architect
+role: Developer
 level: Beginner
 doc-type: Article
 duration: 0
 last-substantial-update: 2026-04-24T00:00:00Z
 jira: KT-20899
 thumbnail: KT-20899.pngKT-20899
-source-git-commit: e3ef450cfe9005ba940ff1897c216681654341b3
+exl-id: 19b7ab0b-2f47-434a-a141-17701f432fac
+source-git-commit: 6f303c8fbec523227716fe0bc1bff8fceffad1f9
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolvimento assistido por IA
 
@@ -69,10 +69,10 @@ Os servidores MCP expõem ferramentas e dados ao agente de codificação por mei
 
 Para o **desenvolvimento local** em relação ao AEM SDK e Dispatcher, instale estes **servidores MCP locais** do portal [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3):
 
-- **AEM Quickstart Local MCP server**: Exposes live runtime data from a local AEM SDK instance to support troubleshooting and development. For more information, see [AEM Quickstart MCP Server](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
-- **Dispatcher Local MCP server**: Enables runtime validation and inspection of a local Dispatcher instance. For more information, see [Dispatcher MCP Server](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
+- **Servidor MCP local do AEM Quickstart**: expõe os dados de tempo de execução em tempo real de uma instância local do AEM SDK para oferecer suporte à solução de problemas e ao desenvolvimento. Para obter mais informações, consulte [AEM Quickstart MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#aem-quickstart-mcp-server).
+- **Servidor MCP local do Dispatcher**: habilita a validação e a inspeção em tempo de execução de uma instância do Dispatcher local. Para obter mais informações, consulte [Dispatcher MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools#dispatcher-mcp-server).
 
-For Adobe-hosted AEM MCP servers (for example, content, read-only content, and Cloud Manager), see [MCP Servers in AEM](../mcp/overview.md).
+Para servidores MCP hospedados pela Adobe (por exemplo, conteúdo, conteúdo somente leitura e Cloud Manager), consulte [Servidores MCP no AEM](../mcp/overview.md).
 
 ## Configurar
 
@@ -102,12 +102,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Configurar habilidades do agente do AEM">Set up AEM Agent Skills</a>
+                        <a href="./setup/agent-skills.md" target="_self" rel="referrer" title="Configurar habilidades do agente do AEM">Configurar habilidades do agente do AEM</a>
                     </p>
                     <p class="is-size-6">Saiba como configurar as Habilidades do agente do AEM para o desenvolvimento assistido por IA.</p>
                 </div>
                 <a href="./setup/agent-skills.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Install AEM Agent Skills</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Instalar habilidades do AEM Agent</span>
                 </a>
             </div>
         </div>
@@ -157,7 +157,7 @@ CARDS
 
 ## Recursos adicionais
 
-- [Local development with AI Tools](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
+- [Desenvolvimento local com ferramentas de IA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/local-development-with-ai-tools)
 
 - [Habilidades do Adobe para agentes de codificação de IA](https://github.com/adobe/skills)
 
